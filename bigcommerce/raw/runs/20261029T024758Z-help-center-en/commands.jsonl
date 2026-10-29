@@ -1,0 +1,24 @@
+{"intent":"Help Center article Available-Payment-Gateways (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Available-Payment-Gateways?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Connecting-with-PayPal (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Connecting-with-PayPal?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Store-Profile-Settings (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Store-Profile-Settings?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Store-Settings (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Store-Settings?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Physical-Dimension-Settings (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Physical-Dimension-Settings?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Starting-a-Bigcommerce-Trial (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Starting-a-Bigcommerce-Trial?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Invoices (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Invoices?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article How-do-I-make-a-payment-on-my-account (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/How-do-I-make-a-payment-on-my-account?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Account-Dashboard (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Account-Dashboard?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article How-do-I-upgrade-my-stores-plan (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/How-do-I-upgrade-my-stores-plan?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Selling-Everywhere-with-Channel-Manager (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Selling-Everywhere-with-Channel-Manager?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article International-Enhancements-for-Multi-Storefront (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/International-Enhancements-for-Multi-Storefront?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Getting-Started-with-Localization-on-Multi-Storefronts (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Getting-Started-with-Localization-on-Multi-Storefronts?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Multi-Storefront-Payment-Methods (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Multi-Storefront-Payment-Methods?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Storefront-Checkout-Configurations (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Storefront-Checkout-Configurations?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Tax-Overview (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Tax-Overview?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Automatic-Tax-Setup (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Automatic-Tax-Setup?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Manual-Tax-Setup (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Manual-Tax-Setup?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Avalara-AvaTax (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Avalara-AvaTax?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center article Managing-Currencies (English)","do":"goto","url":"https://support.bigcommerce.com/s/article/Managing-Currencies?language=en_US","readyTimeout":30000,"settleMs":5000}
+{"intent":"Help Center search: BigCommerce Payments","do":"goto","url":"https://support.bigcommerce.com/s/global-search/BigCommerce%20Payments?language=en_US","readyTimeout":30000,"settleMs":6000}
+{"intent":"Help Center search: merchant of record","do":"goto","url":"https://support.bigcommerce.com/s/global-search/merchant%20of%20record?language=en_US","readyTimeout":30000,"settleMs":6000}
+{"intent":"Help Center search: business verification","do":"goto","url":"https://support.bigcommerce.com/s/global-search/business%20verification?language=en_US","readyTimeout":30000,"settleMs":6000}
+{"do":"close"}

@@ -1,0 +1,584 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Quick Start":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Starting a Trial":
+                - /url: /s/article/Starting-a-Bigcommerce-Trial
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Features":
+                    - /url: "#features"
+                - listitem:
+                  - link "Creating a Trial Store":
+                    - /url: "#creating"
+                - listitem:
+                  - link "First Login":
+                    - /url: "#login"
+                - listitem:
+                  - link "Existing Accounts":
+                    - /url: "#add-to-existing"
+                - listitem:
+                  - link "Launching Your Store":
+                    - /url: "#launch-store"
+                - listitem:
+                  - link "Cancelling":
+                    - /url: "#cancelling"
+                - listitem:
+                  - link "Troubleshooting":
+                    - /url: "#troubleshooting"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Logging In":
+                - /url: /s/article/Logging-Into-Your-Store
+            - listitem:
+              - link "2FA":
+                - /url: /s/article/Setting-Up-2FA
+            - listitem:
+              - link "Control Panel":
+                - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+            - listitem:
+              - link "Previewing Store":
+                - /url: /s/article/Previewing-a-Store-Before-Launch
+            - listitem:
+              - link "Platform Limits":
+                - /url: /s/article/Platform-Limits
+            - listitem:
+              - link "Backing Up Your Store":
+                - /url: /s/article/Backing-Up-Your-Store
+            - listitem:
+              - link "The App Marketplace":
+                - /url: /s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel
+        - listitem:
+          - link "Migrating Your Store":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Getting Help":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Starting a BigCommerce Trial" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Features":
+      - /url: "#features"
+  - listitem:
+    - link "Creating a trial store":
+      - /url: "#creating"
+  - listitem:
+    - link "First login":
+      - /url: "#login"
+  - listitem:
+    - link "Adding a new store to an existing account":
+      - /url: "#add-to-existing"
+  - listitem:
+    - link "Launching your store":
+      - /url: "#launch-store"
+  - listitem:
+    - link "Cancelling a trial store":
+      - /url: "#cancelling"
+  - listitem:
+    - link "Troubleshooting failed trial creation":
+      - /url: "#troubleshooting"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph:
+  - text: Your BigCommerce trial store gives you 15-day access to almost all of our features, including some that are only available on specific BigCommerce plans. Start your free 15-day trial today from the
+  - link "BigCommerce homepage":
+    - /url: https://www.bigcommerce.com/
+  - text: or by logging into the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: if you already have a BigCommerce store.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To add a new trial to an
+    - link "existing account":
+      - /url: "#add-to-existing"
+    - text: ", you must be the"
+    - link "store owner":
+      - /url: /s/article/Store-Owner
+    - text: .
+- link:
+  - /url: "#features"
+- heading "Features" [level=3]
+- paragraph:
+  - text: To help you in setting up your entire store and have it ready to start selling the moment you choose to launch,
+  - link "customer groups":
+    - /url: /s/article/Customer-Groupshttps://support.bigcommerce.com/s/article/Customer-Groups
+  - text: and the
+  - link "Abandoned Cart Saver":
+    - /url: /s/article/Using-the-Abandoned-Cart-Saver
+  - text: are available on your 15-day trial. These features are only available on certain BigCommerce plans.
+- paragraph:
+  - text: Once you decide to upgrade to a paid store, any features not available on your plan will become unavailable unless you upgrade to the appropriate plan. Review our
+  - link "pricing page":
+    - /url: https://www.bigcommerce.com/essentials/pricing/
+  - text: for more information on BigCommerce plans and their features. BigCommerce does not take any payment until you are ready to upgrade.
+- paragraph:
+  - text: The following features will be unavailable on your trial store. They are only available after
+  - link "upgrading your plan":
+    - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - text: ", if that store plan supports them:"
+- list:
+  - listitem:
+    - text: Adding a
+    - link "custom domain":
+      - /url: /s/article/Changing-Domains
+    - text: to your store
+  - listitem:
+    - text: Installing a
+    - link "third-party SSL certificate":
+      - /url: /s/article/Installing-a-Third-Party-SSL
+  - listitem:
+    - link "301 Redirects":
+      - /url: /s/article/MSF-301-Redirects
+  - listitem:
+    - link "Product filtering":
+      - /url: /s/article/Product-Filtering-Settings
+  - listitem:
+    - link "Payment gateways":
+      - /url: /s/article/Available-Payment-Gateways
+    - text: and
+    - link "alternative payment methods":
+      - /url: /s/article/Intro-to-APMs
+  - listitem:
+    - link "Stored payment methods":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+  - listitem:
+    - text: Sending
+    - link "transactional":
+      - /url: /s/article/Customizing-Emails
+    - text: and
+    - link "abandoned cart":
+      - /url: /s/article/Using-the-Abandoned-Cart-Saver
+    - text: emails to shoppers (see the
+    - link "FAQ":
+      - /url: "#faq"
+    - text: for more information)
+- link:
+  - /url: "#creating"
+- heading "Creating a Trial Store" [level=3]
+- paragraph:
+  - text: If you are new to BigCommerce, create a trial store by going to the
+  - link "BigCommerce homepage":
+    - /url: https://www.bigcommerce.com/essentials/
+  - text: and clicking
+  - strong: Try for free
+  - text: in the upper right. If you have an existing BigCommerce account, add your new store from the
+  - link "Account Dashboard":
+    - /url: "#add-to-existing"
+  - text: .
+- paragraph:
+  - img "Try for free button on the BigCommerce homepage"
+- paragraph: Fill out the form by providing your name, email address, a password, store name, the size of your business, and the region your store should be hosted. Note that the store name can be changed at any time after starting your trial.
+- text: 
+- paragraph:
+  - strong: Once you have selected a hosting region for your trial store, it cannot be changed.
+  - text: To ensure optimal site speed and performance, select the region nearest to your prospective customers.
+- paragraph:
+  - img "The BigCommerce new trial store form"
+- paragraph:
+  - text: When you're ready, click
+  - strong: Start your free trial
+  - text: . Before you can
+  - link "log into your new store":
+    - /url: /s/article/Logging-Into-Your-Store
+  - text: ", you’ll need to enter a security code sent to your email address."
+- link:
+  - /url: "#login"
+- heading "First Login" [level=3]
+- paragraph:
+  - text: On your first login to your store’s
+  - link "control panel":
+    - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+  - text: ", you'll be prompted to answer some questions about your business in order to personalize an onboarding checklist."
+- paragraph:
+  - img "Onboarding questions in the BigCommerce control panel"
+- paragraph: After submitting your answers, you will be taken to your store’s dashboard, which will list the next steps to get your store up and running.
+- paragraph:
+  - img "The onboarding checklist in the dashboard"
+- paragraph:
+  - text: You can work on other store setup tasks before completing the onboarding checklist by navigating to other areas of the control panel. To return to the checklist on the dashboard, click
+  - link "Home":
+    - /url: https://login.bigcommerce.com/deep-links/dashboard
+    - strong: Home
+  - text: .
+- paragraph:
+  - text: See our
+  - link "Store Launch Guide":
+    - /url: /s/article/Getting-Started-Introduction
+  - text: for more information on preparing your store for launch. If you're more interested in getting your trial up and running quickly for testing, refer to our
+  - link "Quickstart Guide":
+    - /url: /s/article/Quickstart-Guide
+  - text: .
+- link:
+  - /url: "#add-to-existing"
+- heading "Adding a New Trial Store to an Existing Account" [level=3]
+- paragraph:
+  - text: If you already have a paid store or trial, you can add a new trial to your existing account directly from your
+  - link "BigCommerce Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: . Note that only the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: can access the Account Dashboard.
+- paragraph:
+  - text: To reach the dashboard from within the
+  - link "control panel":
+    - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+  - text: ", click your"
+  - strong: store name
+  - text: in the top left and select
+  - emphasis: Manage store account
+  - text: . The BigCommerce Account Dashboard can also be accessed directly by going to
+  - link "manage.bigcommerce.com":
+    - /url: https://manage.bigcommerce.com/
+  - text: .
+- paragraph:
+  - img "Store name and Manage store account highlighted"
+- paragraph:
+  - text: Once you're in the account dashboard, click
+  - strong: New Store
+  - text: .
+- paragraph:
+  - img "The New Store button in the BigCommerce Account Dashboard"
+- paragraph:
+  - text: Enter details about the new trial store, then click
+  - strong: Save
+  - text: . After a few seconds, your new trial store will be created. From here, you can log into the new store's control panel or view its details.
+- paragraph:
+  - img "Once your new trial is created, you can log in or view its details"
+- text: 
+- paragraph:
+  - strong: New store login issues.
+  - text: If you are unable to log into your newly created trial store,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: .
+- link:
+  - /url: "#launch-store"
+- heading "Launching Your Store" [level=3]
+- paragraph:
+  - text: All BigCommerce trials are not visible to the public when they are created. This keeps search engines and other bots from indexing your store and people from browsing your store before it is ready. However, store admins and select visitors can view the storefront before launch. For more details, see
+  - link "Previewing a Store Before Launch":
+    - /url: /s/article/Previewing-a-Store-Before-Launch
+  - text: .
+- paragraph:
+  - text: When you’re ready to make your store live, go to
+  - link "Channels":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - strong: Channels
+  - text: and select
+  - strong: Make active
+  - text: from the
+  - strong: Action
+  - text: menu (
+  - strong: ⋯
+  - text: ) next to your storefront.
+- paragraph:
+  - img "Select Make active for your storefront to make your store go live."
+- link:
+  - /url: "#cancelling"
+- heading "Cancelling a Trial Store" [level=3]
+- paragraph: There is no action needed to cancel a trial store. The trial will automatically expire after the 15-day trial period. You will never be billed for a trial store.
+- paragraph: After your trial expires, BigCommerce will keep your store data for a period of 30 days before it is automatically deleted. If you want to restore your trial store before it is deleted, log in to the store and reactivate it by upgrading to a paid plan.
+- paragraph:
+  - text: To start a new trial on an account with no stores available,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: for assistance. If you have active stores on the same account as your deleted trial store, it will no longer appear in the account’s list of stores on the login page.
+- link:
+  - /url: "#troubleshooting"
+- heading "Troubleshooting Failed Trial Creation" [level=3]
+- list:
+  - listitem:
+    - link "Common causes for trial failure":
+      - /url: "#common-causes"
+  - listitem:
+    - link "Common errors":
+      - /url: "#common-errors"
+- heading "COMMON CAUSES FOR TRIAL FAILURE" [level=4]
+- paragraph: The trial store form may fail to send if there is an issue with your device or the data you provided. If you are unable to create a new trial, review the potential causes below to determine if it is responsible for your issue.
+- list:
+  - listitem: If you have an active VPN on your device, make sure you disable it before filling out and submitting your form. This is the most common reason for failed trial creation.
+  - listitem: Make sure that you are entering your actual business information in the form instead of placeholder data.
+  - listitem: If you have an existing BigCommerce account, you must enter the same email and password you currently use if you are creating a new trial with the form.
+  - listitem: Complete all steps from a single device. For example, if you begin the trial creation process on your mobile device and then switch to a laptop to finish, the trial creation will fail.
+- paragraph:
+  - text: If you are having issues with logging in to your trial store after creating it successfully, see the “Troubleshooting” section of
+  - link "Logging in to Your Store":
+    - /url: /s/article/Logging-Into-Your-Store
+  - text: for guidance.
+- heading "COMMON ERRORS" [level=4]
+- table:
+  - rowgroup:
+    - row "Error message or behavior Resolution":
+      - cell "Error message or behavior":
+        - strong: Error message or behavior
+      - cell "Resolution":
+        - strong: Resolution
+    - row "You receive a “We can’t find your account or store. If you signed up recently, try logging in again later. If the problem continues, contact support” error while logging in after creating a trial. This indicates that an account was created, but the trial store failed to provision. Contact our support team to resolve the issue.":
+      - cell "You receive a “We can’t find your account or store. If you signed up recently, try logging in again later. If the problem continues, contact support” error while logging in after creating a trial."
+      - cell "This indicates that an account was created, but the trial store failed to provision. Contact our support team to resolve the issue.":
+        - text: This indicates that an account was created, but the trial store failed to provision.
+        - link "Contact our support team":
+          - /url: https://support.bigcommerce.com/s/#contact
+        - text: to resolve the issue.
+    - row "You receive “An error had occurred while creating your trial. Please try again” after attempting to create your trial store. There may be a mismatch with the country, date, or time settings between your browser and your store information. Check if one of the common causes could be the source of the issue and try again.":
+      - cell "You receive “An error had occurred while creating your trial. Please try again” after attempting to create your trial store."
+      - cell "There may be a mismatch with the country, date, or time settings between your browser and your store information. Check if one of the common causes could be the source of the issue and try again.":
+        - text: There may be a mismatch with the country, date, or time settings between your browser and your store information. Check if one of the
+        - link "common causes":
+          - /url: "#common-causes"
+        - text: could be the source of the issue and try again.
+    - row "You receive a “We’re sorry, we are unable to create your trial store. Error account_support” error while creating your trial store. There was an issue with your trial store data. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.":
+      - cell "You receive a “We’re sorry, we are unable to create your trial store. Error account_support” error while creating your trial store."
+      - cell "There was an issue with your trial store data. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.":
+        - text: There was an issue with your trial store data. Check if one of the
+        - link "common causes":
+          - /url: "#common-causes"
+        - text: could be the source of the issue and try again, or
+        - link "contact our support team":
+          - /url: https://support.bigcommerce.com/s/#contact
+        - text: if it persists.
+    - row "You receive “An error occurred please contact support” while creating your trial store. There was an issue with your trial store data or your device. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.":
+      - cell "You receive “An error occurred please contact support” while creating your trial store."
+      - cell "There was an issue with your trial store data or your device. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.":
+        - text: There was an issue with your trial store data or your device. Check if one of the
+        - link "common causes":
+          - /url: "#common-causes"
+        - text: could be the source of the issue and try again, or
+        - link "contact our support team":
+          - /url: https://support.bigcommerce.com/s/#contact
+        - text: if it persists.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: How do I create a new trial if I already have a BigCommerce account?
+- paragraph:
+  - text: Create your new store from the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: by following the steps in
+  - link "Adding a New Trial Store to an Existing Account":
+    - /url: "#add-to-existing"
+  - text: .
+- paragraph:
+  - strong: Do I need to follow the onboarding checklist in the dashboard?
+- paragraph:
+  - text: The checklist presents recommended store setup tasks based on the information you provided during trial creation, but you are not required to follow each step in order to launch your store. If you want to handle setup differently or you are already familiar with launching a BigCommerce store, click
+  - strong: take me to the dashboard
+  - text: at the bottom of the checklist.
+- paragraph:
+  - img "The take me to the dashboard link that hides onboarding steps and displays the trial dashboard"
+- paragraph:
+  - strong: I just created a new trial store, but I can’t log in. What should I do?
+- paragraph:
+  - text: If your login credentials aren’t working with your newly created trial store,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: .
+- paragraph:
+  - strong: Can I process live payments on a trial store?
+- paragraph:
+  - text: No, you cannot enable
+  - link "payment gateways":
+    - /url: /s/article/Available-Payment-Gateways
+  - text: or
+  - link "alternative payment methods":
+    - /url: /s/article/Intro-to-APMs
+  - text: until you have purchased a paid plan. However, you can test your trial store’s checkout page by enabling
+  - link "offline payments":
+    - /url: /s/article/Offline-Payment-Methods
+  - text: or the
+  - link "BigCommerce test payment gateway":
+    - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+  - text: .
+- paragraph:
+  - strong: Why aren’t shoppers receiving emails from my trial store?
+- paragraph:
+  - text: During your trial period,
+  - link "transactional":
+    - /url: /s/article/Customizing-Emails
+  - text: and
+  - link "abandoned cart":
+    - /url: /s/article/Using-the-Abandoned-Cart-Saver
+  - text: emails are sent to the store owner when the corresponding storefront event is triggered, such as creating a customer account or placing an order. You can use the
+  - strong: Trial email recipients
+  - text: setting in
+  - link "Settings › Security & Privacy":
+    - /url: http://login.bigcommerce.com/deep-links/settings/security
+    - strong: Settings
+    - text: ›
+    - strong: Security & Privacy
+  - text: to designate additional control panel users as recipients.
+- paragraph:
+  - img "The Trial email recipients setting with the store owner selected as a recipient"
+- paragraph:
+  - text: When you
+  - link "upgrade to a paid plan":
+    - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - text: ", your storefront emails will be sent to shoppers automatically when triggered."
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Changing Your Store's Plan":
+      - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - listitem:
+    - link "Getting Started with the Control Panel":
+      - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+  - listitem:
+    - link "Logging into Your Store":
+      - /url: /s/article/Logging-Into-Your-Store
+  - listitem:
+    - link "Previewing a Store Before Launch":
+      - /url: /s/article/Previewing-a-Store-Before-Launch
+  - listitem:
+    - link "Store Launch Guide":
+      - /url: /s/article/Getting-Started-Introduction
+  - listitem:
+    - link "Store Owner User Role and Permissions":
+      - /url: /s/article/Store-Owner
+  - listitem:
+    - link "The Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Starting a BigCommerce Trial
+- iframe

@@ -1,0 +1,432 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Channel Manager":
+            - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+          - list:
+            - listitem:
+              - link "Channel types":
+                - /url: "#types"
+            - listitem:
+              - link "Availability":
+                - /url: "#availability"
+            - listitem:
+              - link "Requirements":
+                - /url: "#requirements"
+            - listitem:
+              - link "Creating and Managing":
+                - /url: "#manage"
+            - listitem:
+              - link "FAQ":
+                - /url: "#faq"
+        - listitem:
+          - link "Getting Started with Localization":
+            - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+        - listitem:
+          - link "Multi-Storefront | International Enhancements":
+            - /url: /s/article/International-Enhancements-for-Multi-Storefront
+        - listitem:
+          - link "Multi-Storefront Payment Methods":
+            - /url: /s/article/Multi-Storefront-Payment-Methods
+      - list:
+        - listitem:
+          - link "Storefronts":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Catalyst":
+                - /url: /s/article/Catalyst
+            - listitem:
+              - link "BigCommerce for WordPress":
+                - /url: /s/article/BigCommerce-for-WordPress
+            - listitem:
+              - link "DEITY Falcon":
+                - /url: /s/article/Deity
+        - listitem:
+          - link "Marketplaces":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Ads and Social":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Point of Sale":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Selling Everywhere with Channel Manager" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Channel types":
+      - /url: "#types"
+  - listitem:
+    - link "Channel availability":
+      - /url: "#availability"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Creating and managing channels":
+      - /url: "#manage"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: "Channel Manager is where you can discover, connect to, and manage all the different sales and marketing channels available for your store. Extending your reach beyond your BigCommerce storefront can create new sales opportunities and help promote your brand. Channel Manager provides a centralized area in your control panel where you can:"
+- list:
+  - listitem:
+    - strong: Discover new channels.
+    - text: The partners and solutions featured in Channel Manager all represent best-in-class functionality and worked closely with BigCommerce to ensure you receive all the channel's benefits and functionality without ever leaving your control panel. Channels/channel providers sometimes offer special benefits or promotions for signing up in Channel Manager.
+  - listitem:
+    - strong: Manage channel status.
+    - text: Check the status of all connected channels in one place. Turn off existing channels and/or enable new ones.
+  - listitem:
+    - strong: Configure channel settings.
+    - text: Set up or change channel-specific settings for things like catalog syncing, account details, and preferences.
+- paragraph:
+  - img "Channel Manager main page showing the default storefront and some connected marketplaces"
+- link:
+  - /url: "#types"
+- heading "Channel types" [level=3]
+- paragraph: "There are five channel types:"
+- list:
+  - listitem:
+    - strong: Storefronts
+    - text: — This channel type lists all of your storefront channels, including your default storefront, additional native (Stencil) storefronts, and headless storefronts.
+  - listitem:
+    - strong: Marketplaces
+    - text: — This type of channel makes your product available for purchase on a separate platform. Orders from marketplace channels come into your control panel the same way storefront orders do.
+  - listitem:
+    - strong: Point of Sale
+    - text: — These apps are used to connect and sync your store with popular third-party POS systems. Stock numbers are synchronized between the two systems.
+  - listitem:
+    - strong: Ads and Social
+    - text: — This type of channel is used to advertise your brand and/or products on different platforms. Unlike marketplaces, marketing feeds are not a direct order source but drive awareness, traffic, and sales via promotion and advertising on other platforms.
+  - listitem:
+    - strong: Affiliate and Influencer
+    - text: — This channel type includes apps that connect you with affiliate and influencer partners to help you reach new customers on various social platforms and web publications.
+- link:
+  - /url: "#availability"
+- heading "Channel Availability" [level=3]
+- paragraph: The channels that you see available to set up in Channel Manager are based on your store’s country and currency settings.
+- list:
+  - listitem:
+    - text: If you don’t see a particular channel, it could be because that channel is not available in your
+    - link "country":
+      - /url: /s/article/Store-Profile-Settings
+    - text: ", or for your store’s"
+    - link "default currency":
+      - /url: /s/article/Managing-Currencies
+    - text: .
+  - listitem: If your store isn’t eligible for any offerings of a particular channel category, then that category panel won’t appear in your control panel.
+  - listitem:
+    - text: Some channels are installed as apps in the
+    - link "App Marketplace":
+      - /url: https://www.bigcommerce.com/apps/
+    - text: . For this reason, you should be logged in as the
+    - link "store owner":
+      - /url: /s/article/Store-Owner
+    - text: . Only the store owner has the ability to install apps.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- paragraph:
+  - text: The
+  - strong: Create Channels
+  - text: ","
+  - strong: Edit Channels
+  - text: ", and"
+  - strong: Delete Channels
+  - link "permissions":
+    - /url: /s/article/User-Permissions
+  - text: are necessary to use Channel Manager. The
+  - link "Store Owner":
+    - /url: /s/article/Selling-Everywhere-with-Channel-Manager?language=en_US
+  - text: can assign these permissions to other users.
+- link:
+  - /url: "#manage"
+- heading "Creating and Managing Channels" [level=3]
+- paragraph:
+  - text: To add a channel to your store, go to
+  - link "Channels › Channel Manager":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - strong: Channels
+    - text: ›
+    - strong: Channel Manager
+  - text: and click
+  - strong: Create Channel
+  - text: . In the list of available channels, click
+  - strong: Connect
+  - text: next to the channel you want to set up.
+- paragraph:
+  - img "Ads and social channels"
+- paragraph:
+  - text: The individual requirements and setup processes are different for each channel. Some channels are set up by installing an app from the
+  - link "App Marketplace":
+    - /url: https://www.bigcommerce.com/apps/
+  - text: ", while others are native, built-in integrations. See the following docs for more details and setup instructions:"
+- list:
+  - listitem:
+    - text: Storefronts
+    - list:
+      - listitem:
+        - text: BigCommerce (see
+        - link "Multi-Storefront":
+          - /url: /s/article/Multi-Storefront
+        - text: )
+      - listitem:
+        - link "Catalyst":
+          - /url: /s/article/Catalyst
+      - listitem:
+        - link "Deity Falcon":
+          - /url: /s/article/Deity
+  - listitem:
+    - text: Ads and Social
+    - list:
+      - listitem:
+        - link "Google":
+          - /url: /s/article/Google-Shopping
+      - listitem:
+        - 'link "Meta: Facebook and Instagram"':
+          - /url: /s/article/Feedonomics-for-Meta
+      - listitem:
+        - link "Microsoft Ads and Listings":
+          - /url: /s/article/Setting-Up-Microsoft-Ads-and-Listings
+      - listitem:
+        - link "Buy Buttons":
+          - /url: /s/article/Buy-Buttons-app
+  - listitem:
+    - text: Point of Sale (POS)
+    - list:
+      - listitem:
+        - text: See the
+        - link "App Marketplace":
+          - /url: https://www.bigcommerce.com/apps/categories/pos-in-store/point-of-sale/
+        - text: for available POS integrations
+  - listitem:
+    - text: Marketplaces
+    - list:
+      - listitem:
+        - link "Amazon":
+          - /url: /s/article/Amazon
+      - listitem:
+        - link "Walmart":
+          - /url: /s/article/Setting-Up-Walmart
+      - listitem:
+        - link "eBay":
+          - /url: /s/article/eBay
+  - listitem:
+    - text: Influencer and Affiliate
+    - list:
+      - listitem:
+        - link "impact.com":
+          - /url: https://www.bigcommerce.com/apps/impact-partnership-cloud/
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: While there are sales and marketing channel apps available in the App Marketplace with similar functionality, they are not represented or managed in Channel Manager.
+- heading "Managing a Channel" [level=4]
+- paragraph:
+  - text: If you need to change or edit any settings for a channel (such as settings you set up when you first connected the channel), you can do this from the Channel Manager overview page. Click the
+  - strong: ⋯
+  - text: next to the channel and select
+  - strong: Edit Settings
+  - text: .
+- paragraph:
+  - img "Edit settings"
+- heading "Disconnecting a Channel" [level=4]
+- paragraph:
+  - text: If you decide you no longer want to use a particular channel, from the Channel Manager overview page, click the ⋯ next to it and select
+  - strong: Disconnect
+  - text: .
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Why don’t I see a certain channel?
+- paragraph:
+  - text: The channels that you see in Channel Manager are automatically shown based on your store’s country and currency settings. If you don’t see a particular channel, that could be because it is not available in your
+  - link "country":
+    - /url: /s/article/Store-Profile-Settings
+  - text: ", or for your store’s"
+  - link "default currency":
+    - /url: /s/article/Managing-Currencies
+  - text: . Some channels are only available to US stores using USD currency. See our support documentation for the channel for requirements.
+- paragraph: If you’re sure your settings are compatible but you still aren’t seeing a certain channel, please contact our support team.
+- paragraph:
+  - strong: Why am I receiving an error message of "Loading Data Error"?
+- paragraph:
+  - text: If you encounter this error when accessing Channel Manager, ensure your user account has the Create Channels, Edit Channels, and Delete Channels
+  - link "permissions":
+    - /url: /s/article/User-Permissions
+  - text: .
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Channel Manager in my store":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager/
+    - text: Go to
+    - strong: Channel Manager
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Setting Up Walmart":
+      - /url: /s/article/Selling-Everywhere-with-Channel-Manager?language=en_US
+  - listitem:
+    - link "Facebook Shop":
+      - /url: /s/article/Selling-on-Facebook-Shop-Pages
+  - listitem:
+    - link "Selling on Amazon":
+      - /url: /s/article/Amazon
+  - listitem:
+    - link "Selling on eBay":
+      - /url: /s/article/Selling-Everywhere-with-Channel-Manager?language=en_US
+  - listitem:
+    - link "Setting Up Wish":
+      - /url: /s/article/Selling-Everywhere-with-Channel-Manager?language=en_US
+  - listitem:
+    - link "Setting Up TikTok For Business":
+      - /url: /s/article/Setting-Up-TikTok
+  - listitem:
+    - link "Feedonomics for Google":
+      - /url: /s/article/Feedonomics-for-Google
+  - listitem:
+    - link "Feedonomics for Meta":
+      - /url: /s/article/Feedonomics-for-Meta
+  - listitem:
+    - link "Setting Up Microsoft Ads and Listings":
+      - /url: /s/article/Setting-Up-Microsoft-Ads-and-Listings
+  - listitem:
+    - link "Sell on Instagram":
+      - /url: /s/article/Sell-on-Instagram
+  - listitem:
+    - link "Buy Buttons":
+      - /url: /s/article/Buy-Buttons-app
+  - listitem:
+    - link "Setting Up Deity Falcon":
+      - /url: /s/article/Deity
+  - listitem:
+    - link "Using BigCommerce for WordPress":
+      - /url: /s/article/BigCommerce-for-WordPress
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Selling Everywhere with Channel Manager
+- iframe

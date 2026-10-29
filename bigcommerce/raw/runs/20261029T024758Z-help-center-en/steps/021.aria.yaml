@@ -1,0 +1,219 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- heading "Search Results" [level=1]
+- heading "Searchable objects from navigation bar" [level=2]
+- list "Searchable objects from navigation bar":
+  - listitem:
+    - link "All":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Articles":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Discussions":
+      - /url: javascript:void(0);
+    - button "Help"
+  - listitem:
+    - link "Groups":
+      - /url: javascript:void(0);
+- button "Collapse List" [expanded]
+- heading "Articles" [level=2]:
+  - link "Articles":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- text: • Sorted by
+- button "Relevance Change sort order"
+- link "View More Articles search results":
+  - /url: javascript:void(0)
+- list:
+  - listitem:
+    - heading "Connecting with BigCommerce Payments" [level=3]:
+      - link "Connecting with BigCommerce Payments":
+        - /url: /s/article/Connecting-with-BigCommerce-Payments
+        - text: Connecting with
+        - mark: BigCommerce
+        - mark: Payments
+    - list:
+      - listitem: "000036351"
+      - listitem: Last Modified Oct 6, 2026, 2:57 PM
+    - text: solution powered by PayPal, enables
+    - mark: BigCommerce
+    - text: merchants to seamlessly accept various
+    - mark: payment
+    - mark: methods
+    - text: ...
+    - mark: BigCommerce
+    - mark: Payments
+  - listitem:
+    - heading "Cancelling Your Store or Paid Features" [level=3]:
+      - link "Cancelling Your Store or Paid Features":
+        - /url: /s/article/How-do-I-cancel-my-Bigcommerce-store
+    - list:
+      - listitem: "000035659"
+      - listitem: Last Modified Oct 12, 2026, 8:48 PM
+    - text: your store data. If you have a
+    - mark: payment
+    - mark: gateway
+    - text: ", contact their support team about cancelling your"
+  - listitem:
+    - heading "Using the App Marketplace" [level=3]:
+      - link "Using the App Marketplace":
+        - /url: /s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel
+    - list:
+      - listitem: "000034859"
+      - listitem: Last Modified Sep 4, 2026, 3:45 PM
+    - text: extend the core functionality of
+    - mark: BigCommerce
+    - text: . They can give you extra analytics, integrate with
+  - listitem:
+    - heading "Available Payment Gateways" [level=3]:
+      - link "Available Payment Gateways":
+        - /url: /s/article/Available-Payment-Gateways
+        - text: Available
+        - mark: Payment
+        - mark: Gateways
+    - list:
+      - listitem: "000036070"
+      - listitem: Last Modified Oct 2, 2026, 8:37 PM
+    - text: The list of
+    - mark: payment
+    - mark: gateways
+    - text: available to
+    - mark: BigCommerce
+    - text: stores, 3D Secure, authorize only...Available
+    - mark: Payment
+    - mark: Gateways
+    - text: ...Embedded Providers:embedded-providers;Open Providers:open-providers;Alternative
+    - mark: Payment
+  - listitem:
+    - heading "Connecting with Bolt" [level=3]:
+      - link "Connecting with Bolt":
+        - /url: /s/article/Connecting-with-Bolt-Payments
+    - list:
+      - listitem: "000035688"
+      - listitem: Last Modified Apr 13, 2026, 3:21 PM
+    - text: boosts sales and installs in your
+    - mark: BigCommerce
+    - text: store in just minutes. It powers
+    - mark: payment
+    - text: integrations
+- heading "Discussions" [level=2]:
+  - link "Discussions":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- link "View More Discussions search results":
+  - /url: javascript:void(0)
+- text: "Sort by:"
+- combobox "Sort by:": Top Questions
+- status
+- list "feed items":
+  - listitem:
+    - article:
+      - link "Klarna working pretty well so far -- Others' experiences?":
+        - /url: /s/question/0D51300003cil9rCAA/klarna-working-pretty-well-so-far-others-experiences
+        - paragraph: Klarna working pretty well so far -- Others' experiences?
+      - text: Ecommerce & Business · Warren Dent · April 7, 2017 at 5:50 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 2.96K Number of Upvotes 9 Number of Comments 33
+  - listitem:
+    - article:
+      - link "Broken currency is driving me nuts":
+        - /url: /s/question/0D54O00006n17y4SAA/broken-currency-is-driving-me-nuts
+        - paragraph: Broken currency is driving me nuts
+      - text: Currency · Jody Ellis · February 14, 2021 at 2:21 PM Number of Views 1.35K Number of Upvotes 0 Number of Comments 32
+  - listitem:
+    - article:
+      - link "Feedback or experiences with Amazon Pay?":
+        - /url: /s/question/0D51B000044dlXqSAI/feedback-or-experiences-with-amazon-pay
+        - paragraph: Feedback or experiences with Amazon Pay?
+      - text: Apps & Integrations · Adam Daley · December 23, 2017 at 1:53 AM Number of Views 1.79K Number of Upvotes 2 Number of Comments 29
+  - listitem:
+    - article:
+      - link "Cart Estimate Shipping":
+        - /url: /s/question/0D513000034CBVGCA4/cart-estimate-shipping
+        - paragraph: Cart Estimate Shipping
+      - text: ShippingZoneState · Richard Allen · January 26, 2015 at 9:59 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 4.63K Number of Upvotes 0 Number of Comments 27
+  - listitem:
+    - article:
+      - link "Abandoned Cart Issue with 3rd Party E-Mail Providers":
+        - /url: /s/question/0D51B00003vuHLMSA2/abandoned-cart-issue-with-3rd-party-email-providers
+        - paragraph: Abandoned Cart Issue with 3rd Party E-Mail Providers
+      - text: Marketing · Caron White · October 11, 2017 at 11:05 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 1.85K Number of Upvotes 4 Number of Comments 20
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Search Results | BigCommerce Payments
+- iframe

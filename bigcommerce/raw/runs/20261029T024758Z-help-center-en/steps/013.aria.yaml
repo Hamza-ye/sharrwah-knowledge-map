@@ -1,0 +1,582 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Channel Manager":
+            - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+        - listitem:
+          - link "Getting Started with Localization":
+            - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+          - list:
+            - listitem:
+              - link "Create Storefronts":
+                - /url: "#creating-storefront"
+            - listitem:
+              - link "Localization Settings":
+                - /url: "#localizing-settings"
+            - listitem:
+              - link "Domains":
+                - /url: "#domain"
+            - listitem:
+              - link "Currency":
+                - /url: "#currency"
+            - listitem:
+              - link "Merchandising Strategy":
+                - /url: "#merchandising-strategy"
+            - listitem:
+              - link "Products":
+                - /url: "#localizing-products"
+            - listitem:
+              - link "Promotions and Emails":
+                - /url: "#promotions-comms"
+            - listitem:
+              - link "Looking Ahead":
+                - /url: "#looking-ahead"
+        - listitem:
+          - link "Multi-Storefront | International Enhancements":
+            - /url: /s/article/International-Enhancements-for-Multi-Storefront
+        - listitem:
+          - link "Multi-Storefront Payment Methods":
+            - /url: /s/article/Multi-Storefront-Payment-Methods
+      - list:
+        - listitem:
+          - link "Storefronts":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Catalyst":
+                - /url: /s/article/Catalyst
+            - listitem:
+              - link "BigCommerce for WordPress":
+                - /url: /s/article/BigCommerce-for-WordPress
+            - listitem:
+              - link "DEITY Falcon":
+                - /url: /s/article/Deity
+        - listitem:
+          - link "Marketplaces":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Ads and Social":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Point of Sale":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Getting Started with Localization on Multi-Storefronts" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Creating a storefront":
+      - /url: "#creating-storefront"
+  - listitem:
+    - link "Localizing settings":
+      - /url: "#localizing-settings"
+  - listitem:
+    - link "Domains":
+      - /url: "#domains"
+  - listitem:
+    - link "Currency":
+      - /url: "#currency"
+  - listitem:
+    - link "Customizing your merchandising strategy":
+      - /url: "#merchandising-strategy"
+  - listitem:
+    - link "Localizing products":
+      - /url: "#localizing-products"
+  - listitem:
+    - link "Localizing promotions and store communications":
+      - /url: "#promotions-comms"
+  - listitem:
+    - link "Looking ahead":
+      - /url: "#looking-ahead"
+- paragraph: Grow your international business with tools to sell cross-border, as well as deliver localized shopping experience to customers by using Multi-Storefront (MSF). With the ability to support separate storefronts per region while managing your store from a single dashboard, our international enhancements for MSF make it easy to take your brand globally.
+- paragraph: Merchants selling in different regions need to be able to customize settings per storefronts in order to provide shoppers with local units of measurement, currencies, and localized content. This is equally applicable for businesses already established in multiple countries and selling domestically into those countries, as it is for domestic businesses starting to expand into neighboring countries.
+- paragraph: By unlocking this functionality via the APIs that power our control panel and the Stencil framework, we give you the flexibility to choose the right path for your business, whether that’s using Stencil or headless storefronts.
+- link:
+  - /url: "#creating-storefront"
+- heading "Creating a Storefront" [level=3]
+- paragraph: When a new storefront is created, you will be able to select a default shopper-facing language for that storefront.
+- paragraph:
+  - img "Popup for the storefront name and default language"
+- paragraph: This language is used to provide default content translations for theme, checkout page, system messages on storefront, and payment error messages. This setting also provides translations for default order statuses, return reasons and actions, and other areas.
+- paragraph:
+  - text: For more information on creating a storefront, see
+  - link "Creating an International Storefront":
+    - /url: /s/article/International-Enhancements-for-Multi-Storefront
+  - text: and our general documentation on
+  - link "creating storefronts":
+    - /url: /s/article/Multi-Storefront
+  - text: .
+- link:
+  - /url: "#localizing-settings"
+- heading "Localizing Settings" [level=3]
+- paragraph: There are several settings in the BigCommerce dashboard that you can customize for each storefront to display unique content. We will give a quick overview of these settings, and provide additional resources to help you in leveraging them on your storefronts to offer a rich domestic shopping experience.
+- list:
+  - listitem:
+    - link "Contact information and search engine optimization":
+      - /url: "#contact-info-seo"
+  - listitem:
+    - link "Localization":
+      - /url: "#localization-settings"
+- heading "Contact Information and Search Engine Optimization" [level=4]
+- paragraph: Store profile settings can be localized on each of the storefronts to include a localized storefront shopper-facing store name, address, email, and phone number.
+- paragraph:
+  - img "Storefront contact information, which is unique to the storefront"
+- paragraph: SEO settings can be set per each of the storefronts to set localized home page title, meta keywords and meta description for search engines.
+- paragraph:
+  - img "SEO settings that are unique to the storefront"
+- paragraph:
+  - text: For more information on contact information fields and homepage SEO settings, see
+  - link "Store Profile Settings":
+    - /url: /s/article/Store-Profile-Settings
+  - text: and
+  - link "SEO Fields":
+    - /url: /s/article/SEO-Fields
+  - text: .
+- heading "Localization" [level=4]
+- paragraph: Localization settings can be customized on each storefront to set the country, language, physical dimensions, date, and timezone. This allows your storefront to present itself as a domestic store based in the country that you are planning to sell to.
+- paragraph:
+  - img "Localization settings for default country and language, physical dimensions, and date and timezone."
+- paragraph: The selected default language determines default content translations for theme, checkout page, system messages on storefront, payment error messages, default order statuses, and return reasons and actions.
+- paragraph:
+  - text: Stores with multiple languages enabled configure their global country, language, physical dimensions, and date and timezone settings under
+  - strong: Settings › Localization
+  - text: . See
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: to learn more. For older stores, see
+  - link "Store Profile":
+    - /url: /s/article/Store-Profile-Settings
+  - text: for more information on Locale settings, and
+  - link "Store Settings":
+    - /url: /s/article/Store-Settings
+  - text: for physical dimensions and date and timezone settings.
+- paragraph:
+  - text: Learn more about localization settings from the
+  - link "International Enhancements for Multi-Storefront":
+    - /url: /s/article/International-Enhancements-for-Multi-Storefront
+  - text: documentation.
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: The selected country determines tax and shipping zone settings. This functionality is still in development for International Enhancements for Multi-Storefront.
+- link:
+  - /url: "#domains"
+- heading "Domains" [level=3]
+- paragraph: Maximize your search engine rankings when deciding on how to structure your website and your domain strategy by choosing a localized domain for your storefront.
+- paragraph:
+  - text: You can connect a localized domain (such as “cats.fr”) or subdomain (such as “fr.cats.com”) to a storefront by navigating to the storefront in
+  - link "Channel Manager":
+    - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+  - text: ", and selecting"
+  - strong: Domains
+  - text: in the side navigation. See our documentation on
+  - link "Multi-Storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: for more information on domains and SSL certificates for storefronts.
+- paragraph:
+  - img "An applied domain to a storefront, with an SSL certificate needed to be added."
+- paragraph:
+  - text: Using a subfolder domain (such as "cats.com/nl") is available on headless storefronts. See
+  - link "Domain Settings for Headless Storefronts":
+    - /url: /s/article/Domain-Settings-for-Headless-Storefronts
+  - text: and
+  - link "Sites":
+    - /url: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/sites
+  - text: in our Developer Docs for more information on configuring the necessary sites and routes.
+- link:
+  - /url: "#currency"
+- heading "Currency" [level=3]
+- paragraph: Allow shoppers to pay in their local currency in order to increase conversion and make the shopping experience feel as local as possible.
+- paragraph:
+  - img "Managing multiple currencies, with the storefront's default currency selected."
+- paragraph: You can set the default currency for each storefront from the list of enabled currencies on your store, which is displayed to shoppers whenever they visit a given storefront.
+- paragraph:
+  - img "https://storage.googleapis.com/bigcommerce-production-dev-center/Knowledge%20Base/Omni/Multi-storefront/msf-currency-select.png"
+- paragraph:
+  - text: Shoppers will see prices in the default storefront currency, with the ability to change the currency to any other one enabled on the store level. See
+  - link "Using Multiple Currencies":
+    - /url: /s/article/Using-Multiple-Currencies
+  - text: for more information on display and transactional currencies, multicurrency, and how this feature works.
+- link:
+  - /url: "#merchandising-strategy"
+- heading "Customizing Your Merchandising Strategy" [level=3]
+- paragraph: Shoppers are more likely to purchase from stores that they feel are tailored to them through the use of local language and dialect, region-specific promotions, and other features. Align your merchandising strategy to meet your shoppers’ diverse needs on each storefront by customizing your store’s design, content web pages, and product categories.
+- list:
+  - listitem:
+    - link "Localizing the theme and checkout":
+      - /url: "#theme-checkout"
+  - listitem:
+    - link "Widgets":
+      - /url: "#widgets"
+  - listitem:
+    - link "Categories":
+      - /url: "#localize-categories"
+  - listitem:
+    - link "Web pages":
+      - /url: "#web-pages"
+- heading "Localizing the Theme and Checkout" [level=4]
+- paragraph:
+  - text: The
+  - link "Cornerstone theme":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - text: and checkout page are automatically translated to enable a localized experience, based on the selected default language on each storefront. However, you can customize your theme’s files and the checkout json file manually to fine tune your content for your customers.
+- paragraph:
+  - img "An example of a translated checkout page"
+- paragraph:
+  - text: See the Dev Center for more information on
+  - link "localizing theme files":
+    - /url: https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/stores#localizing-theme-files
+  - text: and
+  - link "localizing the checkout":
+    - /url: https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/stores#localizing-checkout
+  - text: ", as additional customization will require developer work outside of the BigCommerce control panel."
+- heading "Widgets" [level=4]
+- paragraph:
+  - text: Create localized content blocks on your store by using widgets via
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: . Widgets can be assigned to a specific storefront, allowing you to create banners and slideshows that will only display on certain storefronts and their pages.
+- paragraph:
+  - img "Configuring widgets in Page Builder"
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: Legacy
+  - link "marketing banners":
+    - /url: /s/article/Creating-Editing-Banners
+  - text: and
+  - link "home page carousel":
+    - /url: /s/article/Carousel
+  - text: are not part of Page Builder and only apply to the default storefront. Use widgets to add design elements such as text blocks, videos, slideshows, images, and hero banners to additional storefronts.
+- heading "Categories" [level=4]
+- paragraph: As part of our multi-storefront functionality, each storefront has its own category navigation, allowing you to create localized categories and subcategories to enhance the local shopping experience.
+- paragraph:
+  - img "Example of categories under different storefronts"
+- paragraph:
+  - text: While editing your categories, you can customize the category url, add a description with the
+  - link "WYSIWYG editor":
+    - /url: /s/article/Using-the-WYSIWYG-Editor
+  - text: ", upload a category image, and configure its SEO fields to target shoppers on that specific storefront."
+- paragraph:
+  - text: You can also select a different category page layout template than the default one to better fit the needs of specific locale or language. See
+  - link "Product Categories":
+    - /url: /s/article/Product-Categories
+  - text: for more information on managing and assigning categories to products, and our
+  - link "Multi-Storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: documentation for channel-specific behavior.
+- heading "Web Pages" [level=4]
+- paragraph: You can create web pages that will show only on its associated storefront, using the storefront’s local language. Customize the page name, content, and its URL to create an inclusive experience for customers.
+- paragraph:
+  - img "Example of a web page using translated content."
+- paragraph:
+  - text: Additionally SEO fields can be edited on each page, such as the page title, meta keywords, meta description, and search keywords to ensure that web pages are indexed by search engines in each storefront’s local language. See
+  - link "Adding Web Pages":
+    - /url: /s/article/Web-Pages
+  - text: for more information on the various options and fields available while creating pages.
+- link:
+  - /url: "#localizing-products"
+- heading "Localizing Products" [level=3]
+- paragraph: Shoppers are more likely to build trust in a brand if products are localized in their own language and have cultural sensitive accuracy. With the ability to customize product details, product filtering, and pricing per storefront, we allow you to control how your products and overall brand are viewed by local shoppers.
+- list:
+  - listitem:
+    - link "Products":
+      - /url: "#product-fields"
+  - listitem:
+    - link "Product filtering":
+      - /url: "#product-filtering"
+  - listitem:
+    - link "Pricing":
+      - /url: "#localize-pricing"
+- heading "Products" [level=4]
+- paragraph: When editing products, you can select a storefront and localize various product fields so that they use the storefront’s language and preferred content, instead of the product’s original, global content.
+- paragraph:
+  - img "Example of a product detail page using translated product fields."
+- paragraph: "Available fields include:"
+- list:
+  - listitem: Name
+  - listitem: Description
+  - listitem: Categories
+  - listitem: Images
+  - listitem: Variant options names and values
+  - listitem: Modifier options names and values
+  - listitem: Featured on this storefront
+  - listitem: Search keywords
+  - listitem: Warranty information
+  - listitem: Availability message for preorders
+  - listitem: Page title
+  - listitem: Meta description
+  - listitem: Product URL
+  - listitem: Custom fields*
+- paragraph:
+  - text: "*Overrides to custom field names and values"
+  - strong: will not
+  - text: update
+  - link "product filter":
+    - /url: /s/article/Product-Filtering-Settings
+  - text: facets. However, filter names can be updated on the storefront-level using contextual filters.
+- paragraph:
+  - text: For more information on customizing product details per storefront, see
+  - link "International Enhancements for Multi-Storefront":
+    - /url: /s/article/International-Enhancements-for-Multi-Storefront
+  - text: .
+- paragraph:
+  - text: See
+  - link "Adding Products (v3)":
+    - /url: /s/article/Adding-Products-v3
+  - text: for more information on product fields, and our
+  - link "Guide to v3 Products":
+    - /url: /s/article/Introduction-to-Products
+  - text: for an overview on configuring your catalog.
+- heading "Product Filtering" [level=4]
+- paragraph: You can localize the display names of product filters and filter settings on each storefront. Filtering values will be automatically translated, based on the selected default language on the specific storefront.
+- paragraph:
+  - img "Example of product filters with translated display names"
+- paragraph:
+  - text: See
+  - link "Product Filtering":
+    - /url: /s/article/Product-Filtering-Settings
+  - text: for more information on using this feature.
+- heading "Pricing" [level=4]
+- paragraph: You can set different prices per storefront by using price lists. By creating a channel-specific price list, you can set different prices in the same currency per different storefronts. For example, by having separate price lists for Spain and for France, merchants can set different prices in EUR for Spain and for France by assigning each price list to its related storefront.
+- paragraph:
+  - text: Price lists can also be assigned to a
+  - link "customer group":
+    - /url: /s/article/Customer-Groups
+  - text: or a combination of a storefront and customer group.
+- paragraph:
+  - img "Example of assigning a price list to a customer group and storefront"
+- paragraph:
+  - text: See
+  - link "Using Price Lists":
+    - /url: /s/article/Price-Lists
+  - text: for more information on how this feature works.
+- link:
+  - /url: "#promotions-comms"
+- heading "Localizing Promotions and Store Communications" [level=3]
+- paragraph: Promotions can vary by cultural, seasonal, regulatory, legal and brand strategy differences. For example, coupons can be embarrassing in some Southeast Asian countries. This is why having the ability to tailor transactional email and abandoned cart templates, set availability for promotions on storefronts, and providing translated order statuses and return reasons and actions is vital for continuing to provide a localized shopping experience to customers after check out.
+- list:
+  - listitem:
+    - link "Promotions":
+      - /url: "#localize-promos"
+  - listitem:
+    - link "Emails":
+      - /url: "#localize-emails"
+  - listitem:
+    - link "Order status":
+      - /url: "#order-status"
+  - listitem:
+    - link "Return reasons and actions":
+      - /url: "#return-reasons"
+- heading "Promotions" [level=4]
+- paragraph: You can create localized promotions for each storefront by assigning the promotion to only selected storefront channels and customizing the shopper-facing content within the promotion to match the storefront’s language.
+- paragraph:
+  - img "Example of assigning a promotion to a storefront"
+- paragraph:
+  - text: See
+  - link "Automatic and Coupon Promotions (Standard Editor)":
+    - /url: /s/article/Automatic-and-Coupon-Promotions-Standard-Editor
+  - text: for more information on viewing and creating promotions.
+- heading "Emails" [level=4]
+- paragraph: You can localize transactional email templates and abandoned cart emails per storefront, allowing you to communicate with shoppers in the storefront’s local language. Additionally, you can control which emails are sent out to shoppers.
+- paragraph:
+  - img "Example of editing a transactional email template specifically for a storefront"
+- paragraph:
+  - text: By default, the content within each email template will be automatically translated, based on the selected default language of the storefront. However, you can manually edit templates for additional customization. See
+  - link "Customizing Emails":
+    - /url: /s/article/Customizing-Emails
+  - text: and
+  - link "Using the Abandoned Cart Saver":
+    - /url: /s/article/Using-the-Abandoned-Cart-Saver
+  - text: for more information.
+- heading "Order Status" [level=4]
+- paragraph:
+  - text: The default
+  - link "order statuses":
+    - /url: /s/article/Order-Statuses
+  - text: in your BigCommerce store will be automatically translated per storefront, based on the selected default language for the storefront.
+- paragraph:
+  - img "All of the default order statuses"
+- text: 
+- paragraph:
+  - strong: Watch out!
+  - text: Do not customize your store’s order status labels, as this breaks the translation automation.
+- heading "Return Reasons and Actions" [level=4]
+- paragraph:
+  - text: You can click to enable returns for your store. The default values for return reasons and actions will be automatically translated per storefront, based on the selected default language for the storefront. See
+  - link "Processing Returns":
+    - /url: /s/article/Processing-Returns
+  - text: for more information on using this feature.
+- paragraph:
+  - img "Example of the default return reasons"
+- text: 
+- paragraph:
+  - strong: Watch out!
+  - text: Do not customize your store’s return reasons and actions, as this breaks the translation automation.
+- link:
+  - /url: "#looking-ahead"
+- heading "Looking Ahead" [level=3]
+- paragraph:
+  - text: As these International Enhancements for Multi-Storefront are built on our previous localization features, such as the
+  - link "Locale setting":
+    - /url: /s/article/Store-Profile-Settings
+  - text: for stores, we will be adding support for other areas of the control panel. and expanding our localization functionality. We look forward to helping you grow your business with quickly provisioned regional storefronts that offer customers a local shopping experience while allowing you to refine your brand’s vision.
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Channel Manager in my store":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - text: Go to
+    - strong: Channel Manager
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "International Enhancements for Multi-Storefront":
+      - /url: /s/article/International-Enhancements-for-Multi-Storefront
+  - listitem:
+    - link "Multi-Storefront":
+      - /url: /s/article/Multi-Storefront
+  - listitem:
+    - link "Store Profile Settings":
+      - /url: /s/article/Store-Profile-Settings
+  - listitem:
+    - link "SEO Fields":
+      - /url: /s/article/SEO-Fields
+  - listitem:
+    - link "Domain Settings for Headless Storefronts":
+      - /url: /s/article/Domain-Settings-for-Headless-Storefronts
+  - listitem:
+    - link "Using Multiple Currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+  - listitem:
+    - link "Sites":
+      - /url: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/sites
+    - text: (Developer Docs)
+  - listitem:
+    - link "Localizing Stores":
+      - /url: https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/stores
+    - text: (Developer Docs)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Getting Started with Localization on Multi-Storefronts
+- iframe

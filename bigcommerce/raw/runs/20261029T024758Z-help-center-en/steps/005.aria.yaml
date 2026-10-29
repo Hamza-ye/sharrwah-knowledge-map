@@ -1,0 +1,423 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Shipping Overview":
+                - /url: /s/article/Shipping-Overview
+            - listitem:
+              - link "Shipping Setup":
+                - /url: /s/article/Shipping-Setup
+            - listitem:
+              - link "Shipping Partners":
+                - /url: /s/article/Available-Shipping-Partners
+            - listitem:
+              - link "Shipping Error Message":
+                - /url: /s/article/How-do-I-change-the-Unable-to-Ship-to-this-Location-message-on-checkout
+            - listitem:
+              - link "Shipping Methods":
+                - /url: /s/article/Shipping-Methods
+            - listitem:
+              - link "Shipping Zones":
+                - /url: /s/article/Shipping-Zones
+          - list:
+            - listitem:
+              - text: Shipping Quotes
+              - list:
+                - listitem:
+                  - link "Flat-Rate Quotes":
+                    - /url: /s/article/Flat-Rate-Shipping
+                - listitem:
+                  - link "Real-Time Quotes":
+                    - /url: /s/article/Setting-Up-a-Real-Time-Shipping-Quote-Shipping-Method
+                - listitem:
+                  - link "Free Shipping":
+                    - /url: /s/article/Free-Shipping
+                - listitem:
+                  - link "Dimension Settings and Shipping Calculations":
+                    - /url: /s/article/Physical-Dimension-Settings
+                  - list:
+                    - listitem:
+                      - link "Requirements":
+                        - /url: "#requirements"
+                    - listitem:
+                      - link "Physical Dimension Settings":
+                        - /url: "#settings"
+                    - listitem:
+                      - link "How Shipments are Calculated":
+                        - /url: "#how"
+                    - listitem:
+                      - link "Example Scenario":
+                        - /url: "#example"
+                    - listitem:
+                      - link "FAQ":
+                        - /url: "#faq"
+                - listitem:
+                  - link "ShipperHQ":
+                    - /url: /s/article/ShipperHQ
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Physical Dimension Settings and the Shipping Calculator" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Physical dimension settings":
+      - /url: "#settings"
+  - listitem:
+    - link "How shipments are calculated":
+      - /url: "#how"
+  - listitem:
+    - link "Example scenario":
+      - /url: "#example"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Different shipping providers and the services they offer have different weight and dimension limits. If these limits are exceeded, the quote can fail, or include extra fees or charges.
+- paragraph:
+  - text: Before we can start
+  - link "troubleshooting faulty or missing real-time quotes":
+    - /url: /s/article/Troubleshooting-Missing-or-Inaccurate-Real-Time-Shipping-Quotes
+  - text: ", we need an overview of the different settings for displaying and factoring your products’ dimensions, as well as a basic understanding of how our system calculates the size and weight of a shipment."
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To view and manage physical dimension settings, you must have the
+    - strong: Manage Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+- link:
+  - /url: "#settings"
+- heading "Physical Dimension Settings" [level=3]
+- paragraph:
+  - text: Your store’s physical dimension settings are located in
+  - link "Settings › Website":
+    - /url: http://login.bigcommerce.com/deep-links/settings/website
+    - strong: Settings
+    - text: ›
+    - strong: Website
+  - text: .
+- text: 
+- paragraph:
+  - strong: "Localized Store Experiences:"
+  - text: Dimension settings are available for all of our supported languages. For more information on the default language store setting, see
+  - link "Store Profile Settings":
+    - /url: /s/article/Store-Profile-Settings
+  - text: .
+- paragraph:
+  - img "Physical dimension settings for weight and length, plus fields for decimal and thousands token, number of decimal places, and factoring dimension"
+- list:
+  - listitem:
+    - strong: Weight Measurements
+    - text: — determines the weight measurement used when calculating the weight of physical products in your store. Available options are Pounds, Ounces, Kilograms, Grams, and Tonnes.
+  - listitem:
+    - strong: Length Measurements
+    - text: — determines the length measurement used when calculating the dimensions of physical products in your store. Available options are Inches or Centimeters.
+  - listitem:
+    - strong: Decimal Token
+    - text: — determines the token or character to use as the decimal separator for your product’s dimensions.
+  - listitem:
+    - strong: Thousands Token
+    - text: — determines the token or character to use as the thousands separator for your product’s dimensions.
+  - listitem:
+    - strong: Decimal Places
+    - text: — determines the number of decimal places to show when displaying dimensions in your store.
+  - listitem:
+    - strong: Factoring Dimension
+    - text: — determines the dimension that will be added up per product when
+    - link "calculating":
+      - /url: "#how"
+    - text: "shipping quotes. If Product Depth is selected, then shipping quotes would be based on these dimensions:"
+    - list:
+      - listitem:
+        - strong: Width
+        - text: = maximum width out of all products in the order
+      - listitem:
+        - strong: Height
+        - text: = maximum height out of all products in the order
+      - listitem:
+        - strong: Depth
+        - text: = the sum of all depths of the products in the order when added together
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: Stores with multiple languages enabled configure their physical dimensions under
+  - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- link:
+  - /url: "#how"
+- heading "How Shipments are Calculated" [level=3]
+- paragraph: "There are two key points to know about the BigCommerce shipping calculator:"
+- list:
+  - listitem:
+    - strong: "1."
+    - text: Shipments are calculated as if every item in the order is going into a
+    - strong: single box
+    - text: ", or as if every item is being"
+    - strong: packed individually
+    - text: (
+    - link "UPS":
+      - /url: /s/article/UPS
+    - text: and
+    - link "FedEx":
+      - /url: /s/article/How-do-I-setup-FedEx-to-integrate-with-my-store
+    - text: only).
+- paragraph:
+  - text: There is one exception to this rule. If an item in the order has a product-level fixed shipping cost, then the weight and dimensions of that item are
+  - strong: not included
+  - text: when requesting a real-time quote. For more details on product-level shipping, see the “Fulfillment” section in our
+  - link "Guide to v3 Products":
+    - /url: /s/article/Introduction-to-Products
+  - text: .
+- list:
+  - listitem:
+    - strong: "2."
+    - text: Our shipping calculator stacks items in a
+    - strong: single column
+    - text: .
+- paragraph:
+  - text: This is where the
+  - strong: Factoring Dimension
+  - text: in your store’s
+  - link "Physical Dimension Settings":
+    - /url: "#settings"
+  - text: becomes important. Typically, the narrowest dimension between width, height, and depth should be set as the
+  - strong: Factoring Dimension
+  - text: ", and all products should be consistent (for example, depth is always the narrowest side)."
+- text: 
+- paragraph:
+  - strong: Pro Tip!
+  - text: If you need more advanced shipping functionality,
+  - link "ShipperHQ":
+    - /url: /s/article/ShipperHQ
+  - text: may be able to help.
+  - link "Check it out":
+    - /url: https://www.bigcommerce.com/apps/shipperhq/
+  - text: in the App Marketplace for a full listing of its features.
+- link:
+  - /url: "#example"
+- heading "Example Scenario" [level=3]
+- paragraph: "A merchant has a music store and sells two products, records and compact discs (CDs). The size and weight of each product is as follows:"
+- list:
+  - listitem: Records measure 10” x 10” x 1” (Width x Height x Depth) and weigh 0.2 lbs.
+  - listitem: CDs measure 5” x 5” x 1” and weigh 0.1 lbs.
+- paragraph: A merchant receives an order for 2 records and 12 CDs.
+- paragraph: Applying the rules we learned in the previous section, this is how the shipping calculator determines the size of the box to be shipped. In this case, we’ve adjusted our UPS and FedEx settings to include all items in the order in one box.
+- list:
+  - listitem:
+    - text: The
+    - strong: largest width
+    - text: is the records, so that’s 10” for width.
+  - listitem:
+    - text: The
+    - strong: largest height
+    - text: is also the records, so that’s also 10” for height
+  - listitem:
+    - text: The
+    - strong: summed up depth
+    - text: of all the products is 14”.
+    - list:
+      - listitem: (2 records at 1” each, plus 12 CDs at 1” each)
+  - listitem:
+    - text: The
+    - strong: summed up weight
+    - text: of all the items is 1.6 lbs.
+    - list:
+      - listitem: (2 records at 0.2 lbs each, plus 12 CDs at 0.1 lbs each)
+- paragraph:
+  - text: The resulting package measures
+  - strong: 10” x 10” x 14”
+  - text: and weighs
+  - strong: 1.6 lbs
+  - text: ". The inside of the package looks like this — notice that most of the box is empty space:"
+- paragraph:
+  - img "Example package as calculated by the Shipping page"
+- paragraph: A human or a more advanced shipping calculator would know that we could create 4 columns of CDs on top of the records to make a box that doesn’t need to be so deep.
+- paragraph:
+  - img "Example package optimized for efficiency of space"
+- paragraph:
+  - text: In this configuration, the box is
+  - strong: 10” x 10” x 5”
+  - text: ", and would result in a lower quote. In both of these cases, the dimensional weight (also known as cubic or volumetric weight) of the package would be greater than its actual weight."
+- paragraph: This is a mild scenario — as you can imagine, the more the dimensions of products in an order differ from each other, the more likely it is there will be empty space when the box is calculated, making it unnecessarily large and resulting in a higher quote.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: How can I change the currency symbol and decimal format of my store’s prices?
+- paragraph:
+  - text: Your store’s currency display settings can be changed by editing your enabled currencies in
+  - link "Settings › Currencies":
+    - /url: http://login.bigcommerce.com/deep-links/settings/currencies
+    - strong: Settings
+    - text: ›
+    - strong: Currencies
+  - text: . For more information, see our article on
+  - link "Managing Currencies":
+    - /url: /s/article/Managing-Currencies
+  - text: .
+- paragraph:
+  - strong: Can I apply physical dimension settings on a per-product basis?
+- paragraph: No, settings like measurement units and factoring dimension are applied globally. However, you can include measurements in different units within a product’s description.
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Setting Up Real Time Shipping Quotes":
+      - /url: /s/article/Setting-Up-a-Real-Time-Shipping-Quote-Shipping-Method
+  - listitem:
+    - link "Troubleshooting Real Time Shipping Quotes":
+      - /url: /s/article/Troubleshooting-Missing-or-Inaccurate-Real-Time-Shipping-Quotes
+  - listitem:
+    - link "ShipperHQ":
+      - /url: /s/article/ShipperHQ
+  - listitem:
+    - link "Localization Settings":
+      - /url: /s/article/Localization-Settings
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Physical Dimension Settings and the Shipping Calculator
+- iframe

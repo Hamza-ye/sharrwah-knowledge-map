@@ -1,0 +1,300 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+Store Settings
+Store Profile
+Store Settings
+Requirements
+Setup
+General
+Orders
+Products
+Marketing
+Domain
+Advanced
+API and MCP
+FAQ
+"Maintenance" Mode
+Domain and Email
+Checkout and Payments
+Shipping
+Tax
+Security
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Store Settings
+What We'll Cover
+Requirements
+Setup
+General
+Orders
+Products
+Marketing
+Domain
+Advanced
+API and MCP
+FAQ
+The Settings page is a centralized location for many key functions of your store. From here, you can configure and manage multiple features ranging from your store’s basic information, to payment and shipping methods, up through more advanced tools, such as API accounts.
+This article provides an overview of the groupings and individual sections of the Settings page, as well as links to related articles containing more detail.
+Requirements
+To view and manage your store’s settings, the Manage Settingspermission must be enabled on your user account.
+Depending on the area being managed, you may need additional permissions. See the relevant linked articles for specific requirements.
+Setup
+Store profile
+Localization
+Currencies
+Payments
+Locations
+Pick up methods
+Shipping
+Tax
+STORE PROFILE
+Provide basic information about your business, such as the store name, contact information, default country, and the default storefront language under Settings › Store profile. For more information, see Store Profile Settings.
+Look different? Stores with multiple languages enabled configure their default country and storefront language under Settings › Localization. For more information, see Localization Settings.
+LOCALIZATION SETTINGS
+Stores with multiple languages enabled configure their default country, storefront language, physical dimensions, and date and timezone under Settings › Localization. For more information, see Localization Settings.
+CURRENCIES
+Configure which currencies appear on your store, their exchange rates, storefront channels, and display settings under Settings › Currencies. For instructions on enabling currencies in your store, see Managing Currencies. To learn more about how multicurrency works in your store, see Using Multiple Currencies.
+PAYMENTS
+Manage payment integration connections, offline payment methods, and select digital wallets under Settings › Payments.
+For more information, see:
+Available Payment Gateways
+Introduction to Alternative Payment Methods
+Offline Payment Methods
+LOCATIONS
+Manage Buy Online, Pick up in Store (BOPIS) physical location details under Settings › Locations. For more information, see Multi-Location.
+PICK UP METHODS
+Configure Buy Online, Pick up in Store (BOPIS) pick up methods and assign to locations under Settings › Pick up methods. For more information, see Multi-Location.
+SHIPPING
+Enter your shipping origin address as well as configure and manage shipping zones, methods, and rates under Settings › Shipping.
+For more information, see:
+Shipping Setup
+Shipping Zones
+Shipping Methods
+Setting Up Real Time Shipping Quotes
+TAX
+Configure your store’s tax settings, zones and basic rates, or connect an automatic tax service under Settings › Tax.
+For more information, see:
+Tax Overview
+Basic Tax Setup
+Automatic Tax Setup
+General
+Website
+Display
+Image
+Share
+Date & Timezone
+URL structure
+Search
+Security & privacy
+Miscellaneous
+WEBSITE
+Configure your physical dimension settings, default SEO metadata, sitewide HTTPS, and robots.txt file under Settings › Website.
+Physical Dimension Settings
+Physical dimension settings allow you to specify the measurement units your store uses for product weight and volume, choose the display style for decimals, and assign a factoring dimension for calculating shipping costs. For more information, see Physical Dimension Settings and the Shipping Calculator.
+Look different? Stores with multiple languages enabled configure their physical dimensions under Settings › Localization. For more information, see Localization Settings.
+Search Engine Optimization
+Under Search engine optimization settings, enter the SEO metadata for your store’s homepage as well as your custom domain’s www redirect preference. For more information, see SEO Fields.
+Multi-Storefront: If you have Multi-Storefront (MSF) enabled on your store, the storefront SEO settings found in Channel Manager will take priority and override global SEO store settings. This allows each storefront to have its own SEO strategy.
+HTTPS
+By default, BigCommerce stores have sitewide HTTPS already enabled. For more information, see Sitewide HTTPS.
+Search Engine Robots
+The robots.txt file is a tool that helps improve your SEO and reduce server load by providing instructions to search engine and AI bot crawlers on when and where they can crawl your site. For more information, see Robots.txt File.
+DISPLAY
+Configure your storefront, control panel, category, and product display settings under Settings › Display.
+Display Settings
+Manage the general display behavior of multiple areas of the storefront, such as the cart page, customer account pages, and product listings. For more information, see Display Settings.
+Control Panel
+Configure the display options for the control panel text editor and product thumbnails in your product list.
+For more information, see:
+Using the WYSIWYG Editor
+Product List
+Category Settings
+The Category Settings section allows you to manage which products are displayed on category pages, how they are sorted, and the display depth in your store’s navigation menu. For more information, see the “Category Settings” section of Product Categories.
+Product Settings
+Configure options for product attributes, including pricing presentation, SKU, weight, customer rating visibility, and more. For more information, see Product Display Settings.
+IMAGE
+Image settings allows you to set image sizes and related settings for Blueprint themes. To navigate to your store's Image settings go to Settings › Images. For a complete list of Blueprint image settings, see Blueprint Themes.
+Don't see the Images tabs? Stencil themes control product image sizes in Page Builder. Stores with a Stencil theme enabled won't see the Images tab.
+SHARE
+Under Settings › Share, manage the displayed social media icons on product and blog pages as well as enable or disable Pinterest Rich Pins.
+For more information, see:
+Adding Social Media Links
+Advertising with Pinterest
+Looking to connect to a sales or marketing channel? Channel Manager allows you to connect and manage different sales and marketing channels. For more details, including the available options, see Selling Everywhere with Channel Manager.
+DATE & TIMEZONE
+Manage the internal time tracking used in your store's control panel under Settings › Date & Timezone. These settings affect time-related features, such as order timestamps and promotion start or end dates. For more information, see Date and Timezone Settings.
+Look different? Stores with multiple languages enabled configure their date and timezone under Settings › Localization. For more information, see Localization Settings.
+URL STRUCTURE
+Adjust your store’s URL structures for products, categories, and web pages under Settings › URL Structure. For more information, see the “URL Structure” section of SEO Fields.
+SEARCH
+Configure the built-in storefront search results sort order and search logic under Settings › Search. For more information see Configuring Store Search.
+Stores using Stencil themes can customize the search results page appearance in Page Builder. Additional options are also available for themes based on Cornerstone.
+Stores using a legacy Blueprint theme will see additional search display settings. For more information on these settings, see Blueprint Themes.
+SECURITY & PRIVACY
+Manage various aspects of your store such as shopper password complexity, inactivity thresholds, reCAPTCHA, and privacy under Settings › Security & Privacy.
+For a detailed overview of the security settings available for your store, see Security and Privacy Settings.
+MISCELLANEOUS
+Various additional store settings can be accessed under Settings › Miscellaneous.
+Email Settings
+Manage several email related features, including product reviews, order invoice forwarding, custom SMTP settings, system notification address, and Abandoned Cart Saver.
+For information on the supported features, see:
+Managing Reviews
+Order Notifications
+Email in BigCommerce
+Using the Abandoned Cart Saver
+Advanced Store Settings
+Enable and disable cart and checkout availability on your storefront using the Allow Purchasing checkbox under Advanced Store Settings. For more information on product purchasability and availability, see Managing Product Availability.
+Order Settings
+Set your store’s starting order number, controlling the values of the next and subsequent orders. For more information, see Understanding Order IDs.
+Product review rate limiting
+Manage the allowed frequency of customer product reviews. For more information, see Managing Reviews.
+Orders
+Order notifications
+Returns
+Statuses
+ORDER NOTIFICATIONS
+Manage customer order status update emails and merchant order notifications under Settings › Order notifications.
+For more information, see:
+Customer Order Notifications
+Order Notifications
+RETURNS
+Manage return system settings under Settings › Returns. For more information, see Processing Returns.
+STATUSES
+Customize your order status labels under Settings › Statuses. For more information, see Order Statuses.
+Products
+Inventory
+Gift wrapping
+Comments
+INVENTORY
+Manage product and variant stock behavior, stock level display, backorder display, and stock-level email notifications under Settings › Inventory.
+For more information, see:
+Inventory Tracking
+Backorders
+GIFT WRAPPING
+Create and manage gift wrapping options under Settings › Gift wrapping. For more information, see Offering Gift Wrapping.
+COMMENTS
+Enable or disable the built-in product reviews feature and control whether reviews are restricted to confirmed purchases under Settings › Comments. For more information, see Managing Reviews.
+Marketing
+Promotions and coupons
+PROMOTIONS AND COUPONS
+Manage promotions and coupon settings under Settings › Promotions and coupons.
+Information about the settings and their use can be found in the “Promotions and Coupons Settings” section of Automatic and Coupon Promotions (Standard Editor).
+Domain
+Domain name
+301 Redirects
+Email & DNS records
+SSL Certificates
+DOMAIN NAME
+Purchase domain names and manage existing domains in the Account Dashboard by navigating to Settings › Domain name.
+For more information, see:
+Purchasing a Domain
+Changing Domains
+301 REDIRECTS
+View, manage, import, and export 301 redirects under Settings › 301 Redirects. For more information, see 301 Redirects.
+EMAIL & DNS RECORDS
+Stores on a BigCommerce subdomain, have purchased a domain through BigCommerce, or have pointed a custom domain to BigCommerce via nameservers; add and configure DNS records for your store's domain under Settings › Email & DNS records. For more information, see Managing DNS.
+SSL CERTIFICATES
+Purchase BigCommerce SSL certificates, generate Certificate Signing Requests (CSRs), and install third-party certificates in the Account Dashboard by navigating to Settings › SSL certificates.
+For more information, see:
+BigCommerce SSL Certificates
+Installing a Third-Party SSL Certificate
+Advanced
+Accounting
+Data solutions
+Checkout
+Account sign up form
+Export templates
+Store logs
+File access (WebDAV)
+Users
+Early access
+ACCOUNTING
+Connect your store with select accounting integrations to sync order, product, and customer data under Settings › Accounting.
+DATA SOLUTIONS
+Connect and manage storefront tracking services, data warehouses, business intelligence platforms, and customer data platforms under Settings › Data solutions. For more information, see Data Solutions.
+CHECKOUT
+Configure checkout-related settings such as the checkout type, customer account behavior, checkout fields display, and the order confirmation page experience under Settings › Checkout. For more information, see Optimized One-Page Checkout.
+ACCOUNT SIGN UP FORM
+Manage the signup and address form fields that display on your store’s checkout and customer account pages under Settings › Account sign up form. For more information, see Adding and Editing Fields in the Account Signup Form.
+EXPORT TEMPLATES
+View the built-in export templates and manage custom templates used by the legacy Import/Export tool under Settings › Export templates. For more information, see Legacy Product Import/Export | Exporting Your Products.
+STORE LOGS
+Access logging of storefront and control panel events under Settings › Store logs. For more information, see Using Store Logs.
+FILE ACCESS (WEBDAV)
+View your user account’s WebDAV login information under Settings › File access (WebDAV). For more information, see File Access (WebDAV).
+USERS
+Manage control panel user accounts and permissions under Settings › Users. For more information, see User Roles and Permissions.
+EARLY ACCESS
+Features that are available for all stores that may not yet be development complete can appear under Settings › Early access. See the feature’s dedicated article for more information.
+API and MCP
+Storefront API playground
+Store-level API accounts
+Account-level API accounts
+MCP
+STOREFRONT API PLAYGROUND
+Access the BigCommerce GraphQL playground by navigating to Settings › Storefront API Playground.
+STORE-LEVEL API ACCOUNTS
+View and manage store-level API accounts for authenticating with BigCommerce's Admin API, Stencil CLI, and webhooks under Settings › Store-level API accounts. For more information, see Managing API Accounts and Webhooks.
+ACCOUNT-LEVEL API ACCOUNTS
+View and manage account-level API accounts for authenticating API calls on account or partner entities by navigating to Settings › Account-level API accounts. For more information, see Managing API Accounts and Webhooks.
+MCP
+Enable and view MCP server setup details under Settings › MCP. For more information, see MCP Server for Tools and AI Agents.
+FAQ
+If a setting is not available in the control panel, can I adjust it somewhere else?
+For Stencil themes, there may be a setting found within the Theme Styles menu of Page Builder. Note that some desired changes may require theme customization. To connect with a developer, visit the BigCommerce Partner Directory, or submit a request directly to a small business agency.
+Do this in my store
+Go to Settings in my store
+Additional Resources
+The Account Dashboard
+User Roles and Permissions
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Store Settings

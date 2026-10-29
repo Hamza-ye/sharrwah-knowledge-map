@@ -1,0 +1,771 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Tax Overview":
+                - /url: /s/article/Tax-Overview
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Tax Settings":
+                    - /url: "#tax-settings"
+                - listitem:
+                  - link "Tax Services":
+                    - /url: "#tax-services"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Basic Tax":
+                - /url: /s/article/Manual-Tax-Setup
+            - listitem:
+              - link "Automatic Tax Setup":
+                - /url: /s/article/Automatic-Tax-Setup
+            - listitem:
+              - link "Avalara AvaTax":
+                - /url: /s/article/Avalara-AvaTax
+            - listitem:
+              - link "Product-Specific Rates":
+                - /url: /s/article/Changing-Tax-Rates-on-a-Product
+            - listitem:
+              - link "Tax-Exempt Customers":
+                - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Tax Overview" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Store tax settings":
+      - /url: "#tax-settings"
+  - listitem:
+    - link "Tax services":
+      - /url: "#tax-services"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: As with offline commerce, governments require online merchants to collect sales tax on orders where applicable. In BigCommerce, you can set up your tax configuration using a basic tax setup as well as connect with a third-party tax provider.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To manage tax settings, you must have the
+    - strong: Manage Tax Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+- link:
+  - /url: "#tax-settings"
+- heading "Store Tax Settings" [level=3]
+- list:
+  - listitem:
+    - link "Configure tax options":
+      - /url: "#options"
+  - listitem:
+    - link "Shopper tax behavior":
+      - /url: "#behavior"
+  - listitem:
+    - link "Configure tax display settings":
+      - /url: "#display"
+  - listitem:
+    - link "Configure tax properties":
+      - /url: "#properties"
+- paragraph: Your store’s tax settings allow you to configure options that control how taxes are calculated and displayed on storefronts and in the control panel. These settings apply to basic tax setup and work in conjunction with automatic tax providers.
+- paragraph:
+  - text: To get started, go to
+  - link "Settings › Tax":
+    - /url: https://login.bigcommerce.com/deep-links/settings/tax/
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", then scroll down and click"
+  - strong: Edit
+  - text: next to
+  - strong: Store tax settings
+  - text: .
+- paragraph:
+  - img "Edit button highlighted for Tax Settings."
+- heading "Configure Tax Options" [level=4]
+- paragraph:
+  - img "Tax label and pricing settings."
+- list:
+  - listitem:
+    - strong: Tax label
+    - text: — general name displayed to customers on carts, checkout, orders, and invoices when
+    - link "display options":
+      - /url: "#display"
+    - text: are set to
+    - strong: Show as one summarized line item
+  - listitem:
+    - strong: Prices entered with tax
+    - text: — choose how prices are entered in the control panel for items where tax would apply, such as products, shipping costs, and gift wrapping
+    - list:
+      - listitem:
+        - strong: Yes, I will enter prices inclusive of tax
+        - text: — prices are entered with tax included in their value
+      - listitem:
+        - strong: No, I will enter prices exclusive of tax
+        - text: — prices are entered without taxes
+- paragraph: "When prices are entered including tax, the following settings will also apply:"
+- list:
+  - listitem:
+    - strong: When calculating the taxes on sales made outside the pricing tax zone
+    - text: — choose how taxes are calculated for shoppers outside of your pricing tax zone
+    - list:
+      - listitem:
+        - strong: Update item prices to reflect applicable tax rates
+        - text: — when a shopper enters an address, taxes are recalculated based on the rates applied to the tax zone for their location
+        - list:
+          - listitem:
+            - text: for example, if a 10%
+            - link "tax rate":
+              - /url: /s/article/Manual-Tax-Setup
+            - text: is applied to the pricing tax zone and a shopper enters an address within a zone with a 8% tax rate, prices will update to reflect the 8% tax rate
+      - listitem:
+        - strong: Keep item prices as entered
+        - text: — maintains “pretty” pricing, in which product prices remain as entered in the control panel and
+        - strong: will not
+        - text: recalculate based on the rates applied to the tax zone for the shopper’s location
+  - listitem:
+    - strong: The zone and rates that apply to your tax inclusive pricing
+    - text: — choose which
+    - link "tax zone":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: is used as the pricing tax zone
+    - list:
+      - listitem: prices entered into the control will have their taxes calculated by the rates assigned to the zone selected from the drop-down menu
+- text: 
+- paragraph:
+  - strong: Your entered prices should match your price display setting.
+  - link "Displaying prices":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: with tax differently than how they are entered can result in unintended price values.
+- paragraph:
+  - img "Fallback tax and tax document submission settings."
+- list:
+  - listitem:
+    - strong: Fallback tax
+    - text: — chose how taxes are calculated when your
+    - link "automatic tax provider":
+      - /url: /s/article/Automatic-Tax-Setup
+    - text: cannot be reached or returns an invalid response
+    - list:
+      - listitem:
+        - strong: Use a flat rate of 10% tax
+        - text: — a flat rate of 10% is used
+      - listitem:
+        - strong: Use my basic tax settings
+        - text: — zones and rates set up using
+        - link "basic tax":
+          - /url: /s/article/Manual-Tax-Setup
+        - text: will be used
+        - list:
+          - listitem: if basic tax has not been set up, the fallback tax rate will be 0%
+          - listitem:
+            - text: tax-exempt customers will be charged tax unless they are also
+            - link "exempted through basic tax":
+              - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+      - listitem:
+        - strong: Disable fallback tax
+        - text: — no fallback tax method will be used. Shoppers are prevented from checking out when your automatic tax service cannot be reached or returns an invalid response.
+  - listitem:
+    - strong: Tax document submission
+    - text: — choose when tax documents are submitted to your tax provider.
+    - list:
+      - listitem:
+        - strong: Submit tax documents at order creation
+        - text: — tax documents are submitted when an order is created, regardless of payment status
+      - listitem:
+        - strong: Submit tax documents at payment capture
+        - text: — tax documents are submitted when payment is captured (either automatically or
+        - link "manually":
+          - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+        - text: ).
+        - list:
+          - listitem:
+            - text: Orders using
+            - link "offline payment methods":
+              - /url: /s/article/Offline-Payment-Methods
+            - strong: will not
+            - text: have tax documents submitted.
+- paragraph:
+  - text: Note that tax documents will be voided if you choose to submit tax documents at payment capture, and an order is moved from a
+  - strong: paid
+  - text: order status status into an
+  - strong: unpaid
+  - text: order status. See
+  - link "Order Statuses":
+    - /url: /s/article/Order-Statuses
+  - text: for more information.
+- text: 
+- paragraph:
+  - strong: Be careful!
+  - text: If you have opted to submit tax documents at payment capture, orders using offline payment methods will not have tax documents submitted.
+- paragraph:
+  - img "Tax calculation and tax class settings."
+- list:
+  - listitem:
+    - strong: Tax calculation
+    - text: — choose which address is used to determine a shopper’s
+    - link "tax zone":
+      - /url: /s/article/Manual-Tax-Setup
+    - list:
+      - listitem:
+        - strong: By billing address
+        - text: — taxes are calculated by the address entered in the billing step at checkout
+      - listitem:
+        - strong: By destination address
+        - text: — taxes are calculated by the address entered in the shipping step at checkout. If products are shipped to
+        - link "multiple addresses":
+          - /url: /s/article/Offering-Shipping-to-Multiple-Addresses
+        - text: ", taxes are calculated separately per address"
+      - listitem:
+        - strong: By shipping origin
+        - text: — taxes are calculated by the address entered as the
+        - link "shipping origin":
+          - /url: /s/article/Shipping-Setup
+  - listitem:
+    - strong: Shipping tax class
+    - text: — choose the
+    - link "tax class":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: that is used for
+    - link "shipping charges":
+      - /url: /s/article/Shipping-Setup
+    - text: when
+    - link "basic tax":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: applies. The
+    - strong: Shipping
+    - text: tax class is selected by default.
+  - listitem:
+    - strong: Handling tax class
+    - text: — choose the tax class that is used for
+    - link "handling charges":
+      - /url: /s/article/Handling-Fees
+    - text: when basic tax applies. The
+    - strong: Shipping
+    - text: tax class is selected by default.
+  - listitem:
+    - strong: Gift wrapping tax class
+    - text: — choose the tax class that is used for
+    - link "gift wrapping charges":
+      - /url: /s/article/Gift-Wrapping
+    - text: when basic tax applies. The
+    - strong: Gift Wrapping
+    - text: tax class is selected by default.
+  - listitem:
+    - strong: Fees tax class
+    - text: — this field is not currently active and is reserved for future use.
+- text: 
+- paragraph:
+  - strong: How are digital products taxed?
+  - link "Digital products":
+    - /url: /s/article/Creating-Downloadable-Products
+  - text: are always taxed based on the order’s billing address, regardless of the address type selected.
+- heading "Shopper Tax Behavior" [level=4]
+- paragraph: Under Shopper tax behavior, configure how tax is estimated and displayed to shoppers before they enter an address at checkout.
+- paragraph:
+  - img "Shopper tax behavior settings."
+- list:
+  - listitem:
+    - strong: Assign shoppers to tax zone
+    - text: — choose to use geolocation or an assigned tax zone to estimate and
+    - link "display taxes":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: to shoppers. This setting only works with tax zones you have set up in your store, and does not override any
+    - link "tax zone settings":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: you have set up for customer groups.
+    - list:
+      - listitem:
+        - strong: Use geolocation to assign a tax zone until shoppers enter a destination address
+        - text: — when selected, a tax zone is assigned to shoppers based on their GeoIP
+        - list:
+          - listitem:
+            - text: if an appropriate zone does not exist, a zone is assigned based on the selection under
+            - strong: Tax zone used when geolocation is not identifiable or enabled
+      - listitem:
+        - strong: Use default shopper tax zone until shoppers enter a destination address
+        - text: — when selected, a tax zone is assigned to shoppers based on the selection under
+        - strong: Tax zone used when geolocation is not identifiable or enabled
+  - listitem:
+    - strong: Tax zone used when geolocation is not identifiable or enabled
+    - text: — choose a tax zone to apply to shoppers when
+    - strong: Use default shopper tax zone until shoppers enter a destination address
+    - text: is selected, no relevant tax zone exists, or a shopper’s GeoIP is not identifiable
+- text: 
+- paragraph:
+  - strong: Using the geolocation feature requires the GeoIP of your shoppers.
+  - text: This may impact your compliance with
+  - link "General Data Protection Regulation":
+    - /url: /s/article/General-Data-Protection-Regulation
+  - text: (GDPR) and
+  - link "California Consumer Privacy Act":
+    - /url: /s/article/Intro-to-CCPA
+  - text: (CCPA) privacy regulations, and may require you to obtain additional consent from shoppers.
+- heading "Configure Tax Display Settings" [level=4]
+- paragraph:
+  - text: Under
+  - strong: Configure tax display settings
+  - text: ", you can control how prices display in the control panel and invoices. You can also control how tax charges display on cart and checkout pages, in the control panel, and on invoices."
+- paragraph:
+  - text: For more information on how to configure tax display settings for prices displayed on product listing pages, product detail pages, cart, and checkout see
+  - link "Basic Tax Setup":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: .
+- paragraph:
+  - img "Configure tax display settings."
+- list:
+  - listitem:
+    - strong: Prices within control panel
+    - text: — select whether line items and subtotals in the control panel display including or excluding tax
+  - listitem:
+    - strong: Prices on invoices
+    - text: — select whether line items and subtotals on the
+    - link "storefront order details":
+      - /url: /s/article/Customer-Account-Creation
+    - text: page and
+    - link "emailed":
+      - /url: /s/article/Customer-Order-Notifications
+    - text: and
+    - link "printed":
+      - /url: /s/article/Invoices
+    - text: order invoices display prices including tax, excluding tax, or use the
+    - link "tax zone display settings":
+      - /url: /s/article/Manual-Tax-Setup
+    - list:
+      - listitem:
+        - link "tax zones":
+          - /url: /s/article/Manual-Tax-Setup
+        - text: must be configured for the Use tax zone display settings option to function
+  - listitem:
+    - strong: Tax charges in cart and checkout
+    - text: — select how the list of applied taxes should display on cart and checkout pages
+    - list:
+      - listitem:
+        - strong: Show as one summarized line item
+        - text: — taxes display as a single, combined total described by the name entered under Tax label
+      - listitem:
+        - strong: Show each tax rate individually
+        - text: — taxes display with separate line items for each tax rate applied and described by the Tax rate name
+  - listitem:
+    - strong: Tax charges on orders and invoices
+    - text: — select how the list of applied taxes should display on the storefront order details page and emailed and printed order invoices
+    - list:
+      - listitem:
+        - strong: Show as one summarized line item
+        - text: — taxes display as a single, combined total described by the name entered under Tax label
+      - listitem:
+        - strong: Show each tax rate individually
+        - text: — taxes display with separate line items for each tax rate applied and described by the Tax rate name
+- heading "Configure Tax Properties" [level=4]
+- paragraph:
+  - text: The
+  - strong: Configure tax properties
+  - text: setting allows you to add and edit tax properties that appear under
+  - strong: Tax Configuration
+  - text: when editing products.
+- paragraph: Tax properties are additional pieces of data which are passed to your automatic tax provider whenever a tax quote is generated in the cart or checkout for a particular product. This allows for industry specific tax rules, configured within the automatic tax provider’s dashboard, to be applied whenever tax is calculated for shoppers.
+- paragraph:
+  - text: For more information on locating tax property fields when editing products, see
+  - link "Automatic Tax Setup":
+    - /url: /s/article/Automatic-Tax-Setup
+  - text: .
+- text: 
+- paragraph:
+  - strong: How are tax properties different from tax codes?
+  - text: A tax code is a single code that tax providers use to invoke specific rules when calculating tax on a product. In contrast, tax properties are fields that contain information about product specifics. Tax providers use these fields to factor product specifics, such as alcohol percentage or net volume, into their calculations.
+- paragraph:
+  - text: To create a tax property, click
+  - strong: + Add tax property
+  - text: . You can delete tax properties by clicking the
+  - strong: trash can icon
+  - text: to the right of the property.
+- paragraph:
+  - img "Tax property fields."
+- list:
+  - listitem:
+    - strong: Display name
+    - text: — display name for the type of tax property to be applied to selected products. This text may be visible to shoppers, depending on your theme, settings, and tax jurisdiction.
+  - listitem:
+    - strong: Code
+    - text: — the tax code associated with the tax property. Contact your tax provider for more information on supported values and functions.
+  - listitem:
+    - strong: Description
+    - text: — optional internal tooltip text for
+    - link "users":
+      - /url: /s/article/User-Permissions
+    - text: . This appears on the product edit page next to the tax property field.
+- paragraph:
+  - img "Description tooltip on the product edit page."
+- link:
+  - /url: "#tax-services"
+- heading "Tax Services" [level=3]
+- paragraph:
+  - text: You can configure and manage tax setup using
+  - link "basic tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: ", as well as through a"
+  - link "third-party tax service":
+    - /url: /s/article/Automatic-Tax-Setup
+  - text: to help automate tax calculation and document submission.
+- paragraph: Basic tax and automatic tax services apply to prices at different points throughout the customer experience and differ in how they calculate prices and taxes.
+- list:
+  - listitem:
+    - link "When tax services apply":
+      - /url: "#when-apply"
+  - listitem:
+    - link "How prices and tax are calculated":
+      - /url: "#calculation"
+  - listitem:
+    - link "Tax rounding":
+      - /url: "#rounding"
+- heading "When Tax Services Apply" [level=4]
+- paragraph:
+  - text: Regardless if basic tax or an automatic tax service is enabled, basic tax will
+  - strong: always
+  - text: apply on product listing and product display pages.
+- paragraph:
+  - text: If
+  - link "tax calculation":
+    - /url: "#tax-calculation"
+  - text: is based on the billing or destination address, basic tax will also apply to prices and taxes displayed on the cart and checkout pages until an address has been provided by the shopper.
+- paragraph: Once a shopper enters their address, or if tax calculation is based on your shipping origin, whichever tax service is enabled will apply to prices and taxes displayed on all pages and order invoices.
+- paragraph:
+  - img "Tax flowchart."
+- heading "How Prices and Tax are Calculated" [level=4]
+- paragraph:
+  - text: How prices are displayed and how taxes are calculated will depend on
+  - link "your tax settings":
+    - /url: "#options"
+  - text: and the tax service you are using.
+- paragraph:
+  - text: If
+  - link "prices are entered":
+    - /url: "#prices-entered"
+  - text: excluding tax, taxes are added to the order subtotal on the cart and checkout pages. This occurs automatically if
+  - link "tax calculation":
+    - /url: "#tax-calculation"
+  - text: is based on your shipping origin. If tax calculation is based on the billing or destination address, taxes are added to the order subtotal once the shopper enters an address.
+- paragraph:
+  - text: Depending on your
+  - link "Shopper tax behavior":
+    - /url: "#behavior"
+    - strong: Shopper tax behavior
+  - text: setting, shoppers that have not yet entered an address may see estimated taxes added to the order subtotal on the checkout page. Once the shopper enters an address, the tax amount may change.
+- paragraph:
+  - img "Example of taxes displaying as a separate line item."
+- paragraph:
+  - text: If prices are entered including tax, taxes are initially calculated using basic tax and based on the
+  - link "pricing tax zone":
+    - /url: "#pricing-zone"
+  - text: . Once a shopper enters an address, the applied tax is subtracted from the price, then taxes are reapplied with the rates associated with their address.
+- paragraph:
+  - text: When basic tax is enabled,
+  - link "your settings":
+    - /url: "#outside-zone"
+  - text: may allow for prices to change when a shopper enters an address.
+- paragraph: When an automatic tax service is enabled, prices will remain static when a shopper enters an address. That is, regardless of the tax rate, only the tax value included in the price will change. Your tax provider may have a setting in their dashboard that allows you to change this behavior.
+- paragraph:
+  - img "Example of taxes included in total."
+- heading "Tax Rounding" [level=4]
+- paragraph:
+  - text: Basic tax calculation is always performed at the item line level and rounds tax values to the decimal place
+  - link "set for your currency":
+    - /url: /s/article/Managing-Currencies
+  - text: . If your order management system calculates tax at the order level, you will see tax value discrepancies.
+- paragraph:
+  - text: For example, many stores have their currency set to two decimal places. A 10% tax rate applied to a $55.05 product is $5.505, rounded to $5.51. Adding a $44.95 product, with $4.495 tax rounded to $4.50 results in a
+  - strong: $100
+  - text: subtotal and
+  - strong: $10.01
+  - text: tax value.
+- table:
+  - rowgroup:
+    - row "Amount Tax Rate Tax Before Rounding Tax After Rounding":
+      - cell
+      - cell "Amount":
+        - strong: Amount
+      - cell "Tax Rate":
+        - strong: Tax Rate
+      - cell "Tax Before Rounding":
+        - strong: Tax Before Rounding
+      - cell "Tax After Rounding":
+        - strong: Tax After Rounding
+    - row "Line Item 1 $50.05 10% $5.505 $5.51":
+      - cell "Line Item 1":
+        - strong: Line Item 1
+      - cell "$50.05"
+      - cell "10%"
+      - cell "$5.505"
+      - cell "$5.51"
+    - row "Line Item 2 $44.95 10% $4.495 $4.50":
+      - cell "Line Item 2":
+        - strong: Line Item 2
+      - cell "$44.95"
+      - cell "10%"
+      - cell "$4.495"
+      - cell "$4.50"
+    - row "Total $100 $10.01":
+      - cell "Total":
+        - strong: Total
+      - cell "$100"
+      - cell
+      - cell
+      - cell "$10.01":
+        - strong: $10.01
+- paragraph:
+  - text: In comparison, a 10% tax rate and $100 subtotal calculated at the order level would result in a
+  - strong: $10
+  - text: tax value.
+- table:
+  - rowgroup:
+    - row "Amount Tax Rate Tax Before Rounding Tax After Rounding":
+      - cell
+      - cell "Amount":
+        - strong: Amount
+      - cell "Tax Rate":
+        - strong: Tax Rate
+      - cell "Tax Before Rounding":
+        - strong: Tax Before Rounding
+      - cell "Tax After Rounding":
+        - strong: Tax After Rounding
+    - row "Subtotal $100 10% $10 $10":
+      - cell "Subtotal":
+        - strong: Subtotal
+      - cell "$100"
+      - cell "10%"
+      - cell "$10"
+      - cell "$10"
+    - row "Total $100 $10":
+      - cell "Total":
+        - strong: Total
+      - cell "$100"
+      - cell
+      - cell
+      - cell "$10":
+        - strong: $10
+- paragraph:
+  - text: Some automatic tax services, such as
+  - link "Avalara AvaTax":
+    - /url: /s/article/Avalara-AvaTax
+  - text: ", can be configured to round tax at the item line level or at the order level. Contact your provider for more information on the settings available to you."
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Can I make certain customers tax-exempt?
+- paragraph:
+  - text: Yes. If you are using a basic tax setup, you can place customers within a
+  - link "customer group":
+    - /url: /s/article/Customer-Groups
+  - text: and configure your tax zones to apply (or not apply) to specific groups. The customer groups feature is limited to
+  - link "select BigCommerce plans":
+    - /url: /s/article/Pricing
+  - link:
+    - /url: /s/article/Pricing
+  - text: .
+- paragraph:
+  - text: If you are using an automatic tax setup, you can use the
+  - strong: Tax Exempt Code
+  - text: field to identify tax-exempt customers. See
+  - link "Making Customers Tax-Exempt":
+    - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+  - text: for more information.
+- paragraph:
+  - strong: My sales tax amount is off by a cent. Is something wrong?
+- paragraph:
+  - text: Basic tax calculation is done at the item line level. This can cause discrepancies when compared with tax calculated at the order level. See
+  - link "Tax Rounding":
+    - /url: "#rounding"
+  - text: for more information.
+- paragraph:
+  - strong: Why are some shoppers not seeing prices displayed with the correct tax estimation even though geolocation is enabled?
+- paragraph: The shopper’s geolocation may be unavailable, or you may need to configure the required tax zone.
+- paragraph:
+  - strong: Can I use the geolocation feature for price display and still comply with privacy laws?
+- paragraph:
+  - text: Before you enable geolocation on your store, check with the rules set forth in the
+  - link "California Consumer Privacy Act":
+    - /url: /s/article/Intro-to-CCPA
+  - text: (CCPA) and
+  - link "General Data Protection Regulation":
+    - /url: /s/article/General-Data-Protection-Regulation
+  - text: (GDPR) to ensure your store will comply with laws regarding personal information.
+- heading "Do this in my store" [level=3]
+- link "Go to Tax in my store":
+  - /url: http://login.bigcommerce.com/deep-links/settings/tax
+  - text: Go to
+  - strong: Tax
+  - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Basic Tax Setup":
+      - /url: /s/article/Manual-Tax-Setup
+  - listitem:
+    - link "Automatic Tax Setup":
+      - /url: /s/article/Automatic-Tax-Setup
+  - listitem:
+    - link "Making Customers Tax-Exempt":
+      - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+  - listitem:
+    - link "Changing Product-Specific Tax Rates":
+      - /url: /s/article/Changing-Tax-Rates-on-a-Product
+  - listitem:
+    - link "Avalara AvaTax":
+      - /url: /s/article/Avalara-AvaTax
+  - listitem:
+    - link "Guide to CCPA":
+      - /url: /s/article/Intro-to-CCPA
+  - listitem:
+    - link "General Data Protection Regulation (GDPR)":
+      - /url: /s/article/General-Data-Protection-Regulation
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Tax Overview
+- iframe

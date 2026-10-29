@@ -1,0 +1,195 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+Store Settings
+Domain and Email
+Checkout and Payments
+Shipping
+Tax
+Tax Overview
+Basic Tax
+Automatic Tax Setup
+How It Works
+Requirements
+Enabling
+Targeting
+Options
+Assigning Jurisdiction
+Product Tax Code and Property
+Customer Tax Exempt Code
+Verifying Rates
+Fallback rates
+FAQ
+Avalara AvaTax
+Product-Specific Rates
+Tax-Exempt Customers
+Security
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Automatic Tax Setup
+What We'll Cover
+How it works
+Requirements
+Enabling an automatic tax service
+Provider targeting
+Provider options
+Assigning local tax jurisdiction
+Adding a tax provider tax code and tax properties to a product
+Adding a tax-exempt code to a customer
+Verifying tax rates
+Fallback tax rates
+FAQ
+BigCommerce has integrated with popular tax service providers like Avalara, Vertex, TaxJar, and TaxCloud to support automatic tax calculation in the cart and at checkout, as well as handle tax document submission to your tax provider.
+If your products or business have complex tax requirements, using an automated service can save you the time it takes to look up your tax obligations required by each individual state for each individual product in your catalog and provide peace of mind that a third-party professional organization is monitoring proper tax collection and filing.
+Need help with taxes? The instructions in this article assume you already know the tax requirements necessary for running your business online. We highly recommend contacting your accountant or local tax authority to ensure you are charging tax properly for your store. Note that our support team is not qualified to give tax advice.
+How It Works
+Automatic tax calculation and document submission will apply to orders from a selected list of supported regions. An order will be handled by the automatic tax provider when both the order origin and destination are in the selected list of regions.
+For everywhere else, basic tax calculation is used. See Basic Tax Setup for more information on configuring basic taxes for your store.
+Requirements
+To access Tax in the control panel, you must have the Manage Tax Settingspermission enabled on your user account.
+To install and launch an automatic tax provider, you must be logged in as the Store Owner or have the Install applications and Launch applicationspermissions enabled on your user account.
+To add a Tax Provider Tax Code to products, you must have the Manage Products and Edit Products permissions enabled on your user account.
+To add a Tax-Exempt Code to customers, you must have the Manage Customers and Edit Customers permissions enabled on your user account.
+Enabling an Automatic Tax Service Provider
+Go to Settings › Tax, then click Add tax service in the top right.
+Click Install next to the service you want to use. You’ll be asked to enter your existing tax provider account information. If you don’t already have an existing account, you’ll be guided through the process of setting up a new one.
+Once installed, you must select the regions where the automatic tax provider is enabled for tax calculation. This is done on the automatic tax provider's settings page.
+Provider Targeting
+After you have enabled an automatic tax provider, you will need to configure its Provider Targeting settings to only include the countries and subdivisions (such as states or provinces) you want the provider to calculate tax for. Basic Tax is then used for all regions that are not targeted by the provider.
+If you want your provider to calculate tax everywhere, you can check the “Select all” option under Country. Conversely, to disable your automatic tax provider and use basic tax, uncheck every box under Country and Subdivisions.
+Provider Options
+The Provider options section contains options for submitting order data to your provider and specifying tax code overrides for specific item types.
+Enable order data submission to your provider by checking the box next to Please submit my order data so that I can use solution tax reporting and returns features. You may also need to adjust settings in your tax provider’s account dashboard. Contact their support team for assistance.
+If you have connected your tax provider account to an ERP, we recommend disabling this feature to prevent duplicate reporting.
+The code fields below the order data checkbox allow you to override the tax code of the specified item type when generating a tax quote. Contact your tax provider for more information on how they support tax codes.
+Note: The Fees code field is not currently active and is reserved for future use.
+Assigning Local Tax Jurisdiction
+If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your tax provider's account dashboard or control panel.
+If you're using Avalara AvaTax, see About Local Jurisdictions in Avalara’s Knowledge Center.
+If you're using Vertex, see Vertex support.
+If you're using TaxJar, see Add or remove states from your dashboard in TaxJar support.
+If you're using TaxCloud, see TaxCloud support.
+Adding a Tax Provider Tax Code and Tax Properties to a Product
+A Tax Provider Tax Code can be assigned to products one-at-a-time via the BigCommerce control panel, or in bulk using the legacy product Import/Export tool. Tax properties can be assigned in the control panel or via the API.
+To assign a code or property to a product in the control panel:
+1. Go to Products › View and click on a Product Name to edit the product.
+2. Scroll down to the Pricing section and click on Show Advanced Pricing to expand the section. Enter your code in the Tax Provider Tax Code field, and fill in any applicable tax property fields.
+3.Save your changes.
+Note: The Tax Provider Tax Code field is utilized by all automatic tax service providers. If you switch providers, this field does not change. If your new provider uses different codes, you will need to update this field on affected products.
+Adding a Tax-Exempt Code to a Customer
+A Tax Exempt Code can be assigned to customers one-at-a-time via the control panel, or in bulk using a CSV file customer import.
+To assign a code to a customer in the control panel:
+1. Go to Customers › View and click on a Customer Name to edit the customer.
+2. Under Customer Details, enter your code in the Tax Exempt Code field.
+3.Save your changes.
+Note: The Tax-Exempt Code field is utilized by all automatic tax service providers. If you switch providers, this field does not change. If your new provider uses different codes, you will need to update this field on affected products.
+Verifying Tax Rates
+You can use the tax calculation tools offered by your tax provider to confirm proper tax rates are being calculated for a particular region.
+Avalara Sales Tax Calculator
+TaxJar Sales Tax Calculator
+TaxCloud Help Center
+BigCommerce Support can assist with ensuring your automatic tax provider is enabled, your storefront tax display settings are configured properly, and that your tax provider codes are properly applied to products and customers. Some aspects of your automatic tax configuration (like setting up local jurisdictions) require access to your tax provider account or control panel, in which case you may need to reach out to your tax provider's support channels for assistance troubleshooting incorrect or missing rates.
+Avalara Knowledge Center
+Vertex Customer Support
+TaxJar Support
+TaxCloud Help Center
+Fallback Tax Rates
+If an automatic tax provider cannot be reached, was unable to validate the customer's address, or if the shipping origin address in a store's shipping settings has not been set up, then there are three ways to handle the order:
+A "fallback" flat tax rate of 10% is applied to the order.
+You can use your basic tax configuration to calculate tax. This may provide more accurate tax calculations than the flat 10% rate and may help save time on remedying orders with incorrect tax.
+You can disable fallback tax completely, and the customer will not be able to complete checkout. This is helpful if you prefer to not take the order rather than manually adjust orders or issue refunds for incorrect tax.
+If an order uses fallback tax, it will be noted in the Viewing Orders.
+Go to Settings › Tax to change your Fallback Tax setting.
+Check BigCommerce Status to be informed of any identified issues with automatic tax providers.
+FAQ
+General
+Price display
+TaxJar
+Troubleshooting
+General
+Can I use more than one automatic tax provider?
+No, only one automatic tax provider may be enabled at any one time on a store.
+Can I use an automatic tax provider for some countries/regions and Basic Tax for others?
+Yes, see Provider Targeting.
+How does provider targeting work when a shopper has multiple shipping addresses?
+When a shopper uses multiple shipping addresses at checkout, the tax provider will calculate tax for all addresses on the order based on the first shipping address.
+For example, if you have enabled provider targeting in the US only, and a shopper has placed an order with multiple shipping addresses, and the first address is in the US, then tax will be calculated using this tax provider app for all shipping addresses attached to the order. If the first address is outside the US, then Basic Tax will be used for all addresses attached to the order.
+Can I assign a tax code to individual variants?
+Yes. In the setup area of your tax provider's dashboard or control panel, you can assign tax codes to your BigCommerce variants by using their Product Code/SKU. Product tax codes cannot be added to variants via the BigCommerce control panel or through import.
+How do I disable my automatic tax provider?
+In Settings › Tax, click Edit next to your provider. Under Provider targeting, uncheck any boxes that are checked in the Country or Subdivisions menus, then click Save.
+Your store will default to using basic tax.
+Price Display
+Can I show tax inclusive/exclusive pricing with automatic tax?
+Yes. You can set up how you want to display pricing under Tax Display Settings. There are separate settings for the control panel, invoices, and the storefront.
+Can I show prices inclusive of tax to some countries and exclusive of tax for others?
+Yes, you can set this up using the price display settings in your tax zones. Although tax zone display is configured in Basic Tax settings, it will also apply to your automatic tax provider when enabled.
+TaxJar
+Are there any additional requirements to connect with TaxJar?
+In order to enable TaxJar in your control panel for automatic tax calculation, you must be on their Professional plan or higher. For more information, see TaxJar's Pricing page.
+What if I'm already using the TaxJar app for tax document submission?
+The TaxJar app has been updated to also allow for automatic tax calculation at cart and checkout. Existing users of the TaxJar app may need to re-install the app before TaxJar is available to set up as an automatic tax provider in your control panel's tax settings.
+Troubleshooting
+My sales tax amount is off by a cent. Is something wrong?
+By default, automatic tax calculation is done at the item line level. Resulting line item amounts higher than half a cent are rounded up to the nearest cent (for example, $4.495 rounds up to $4.50). This can cause a discrepancy when compared with tax calculated at the subtotal level.
+However, Avalara AvaTax can be configured to round tax at the item line level or the order level.
+Why are the tax documents on some of my orders being voided?
+If you choose to submit tax documents at payment capture, they will be voided if the order is moved back into an unpaid status. See Order Statuses for more information on paid and unpaid order statuses.
+Do this in my store
+Go to Tax in my store
+Additional Resources
+Basic Tax Setup
+Guide to Legacy Product Import/Export
+Importing and Exporting Customers
+Avalara AvaTax
+Tax Overview
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Automatic Tax Setup

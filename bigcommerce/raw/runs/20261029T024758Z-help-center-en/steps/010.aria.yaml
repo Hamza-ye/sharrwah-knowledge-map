@@ -1,0 +1,537 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Users":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Billing":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Pricing":
+                - /url: /s/article/Pricing
+            - listitem:
+              - link "Account Dashboard":
+                - /url: /s/article/Account-Dashboard
+            - listitem:
+              - link "Changing Plans":
+                - /url: /s/article/How-do-I-upgrade-my-stores-plan
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Account Dashboard":
+                    - /url: "#dashboard"
+                - listitem:
+                  - link "Upgrading":
+                    - /url: "#upgrading"
+                - listitem:
+                  - link "Downgrading":
+                    - /url: "#downgrading"
+                - listitem:
+                  - link "Changing Billing Frequency":
+                    - /url: "#billing-frequency"
+                - listitem:
+                  - link "Billing Cycle":
+                    - /url: "#billing-cycle"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "About Invoices":
+                - /url: /s/article/How-do-I-make-a-payment-on-my-account
+            - listitem:
+              - link "Cancelling":
+                - /url: /s/article/How-do-I-cancel-my-Bigcommerce-store
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Changing Your Store's Plan" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Accessing your store in the Account Dashboard":
+      - /url: "#dashboard"
+  - listitem:
+    - link "Upgrading your plan":
+      - /url: "#upgrading"
+  - listitem:
+    - link "Downgrading your plan":
+      - /url: "#downgrading"
+  - listitem:
+    - link "Changing your billing frequency":
+      - /url: "#billing-frequency"
+  - listitem:
+    - link "Locating your billing cycle":
+      - /url: "#billing-cycle"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: BigCommerce offers plans that grow to fit your business's needs, whether you're just starting out, or are ready for advanced features such as stored payment methods, product filtering, or price lists. On our self-serve plans, you can choose a monthly billing cycle, or save with an annual billing cycle.
+- paragraph:
+  - text: As your business grows, you may want to take advantage of the
+  - link "advanced features":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: offered as part of our Growth and Scale plans, or save by switching from monthly to annual billing. If you are interested in upgrading to the Performance plan,
+  - link "contact our sales team":
+    - /url: https://bigcommerce.com/contact-sales/
+  - text: .
+- paragraph:
+  - text: BigCommerce makes it easy for stores on our
+  - link "self-serve plans":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: to upgrade, downgrade, and change billing frequency directly in the Account Dashboard.
+- text: 
+- paragraph:
+  - strong: Using a “Powered By” store?
+  - text: If you were onboarded to BigCommerce through a partner, you must change your store plan through the account provider.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: Only the
+    - link "store owner":
+      - /url: /s/article/Store-Owner
+    - text: can access the
+    - link "Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+    - text: .
+  - listitem:
+    - text: To change your plan or billing frequency in the Account Dashboard, your store must be on a
+    - link "Core, Growth, or Scale plan":
+      - /url: https://www.bigcommerce.com/pricing/
+    - text: .
+    - list:
+      - listitem:
+        - link "Trial stores":
+          - /url: /s/article/Starting-a-Bigcommerce-Trial
+        - text: may also manually perform plan upgrades.
+- link:
+  - /url: "#dashboard"
+- heading "Accessing Your Store in the Account Dashboard" [level=3]
+- paragraph:
+  - text: To view and manage your store plan and billing frequency in the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: ", navigate to"
+  - link "manage.bigcommerce.com":
+    - /url: http://manage.bigcommerce.com
+  - text: and log into your account.
+- paragraph:
+  - text: If you are already logged into the control panel as the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: ", click your"
+  - strong: store name
+  - text: and select
+  - emphasis: Manage store account
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Store name and Manage store account highlighted"
+- paragraph:
+  - text: On the Account Dashboard home page, click on the
+  - strong: store name
+  - text: to view the current plan details.
+- paragraph:
+  - img "Store name highlighted in the Account Dashboard"
+- link:
+  - /url: "#upgrading"
+- heading "Upgrading Your Plan" [level=3]
+- paragraph:
+  - text: If you have a trial store, or your store is currently on a Core or Growth plan, you can upgrade directly from the
+  - link "Account Dashboard":
+    - /url: "#dashboard"
+  - text: . Under
+  - strong: Plan summary
+  - text: ", click"
+  - strong: Upgrade
+  - text: or
+  - strong: Upgrade plan
+  - text: .
+- paragraph:
+  - img "Upgrade plan highlighted"
+- paragraph: On the next page, choose an available plan and select whether the new plan will be billed monthly or annually. After selecting a plan, you will proceed to the checkout page.
+- paragraph:
+  - text: If you are interested in upgrading to the Performance plan,
+  - link "contact our sales team":
+    - /url: https://bigcommerce.com/contact-sales/
+  - text: .
+- text: 
+- paragraph:
+  - strong: Did you know?
+  - text: You can save
+  - strong: 25% off
+  - text: your monthly plan pricing by switching to annual billing. For details, see the
+  - link "BigCommerce pricing page":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: .
+- paragraph:
+  - img "Upgrade plan page"
+- paragraph:
+  - text: On the checkout page, confirm your billing details and complete the payment using the method on file or enter new payment details. After acknowledging the
+  - link "Terms of Service":
+    - /url: https://www.bigcommerce.com/terms
+  - text: ", click"
+  - strong: Place Order
+  - text: .
+- paragraph:
+  - text: If you need assistance,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: . You will need your
+  - link "Support PIN":
+    - /url: /s/article/What-is-my-support-PIN-and-where-do-I-find-it
+  - text: .
+- text: 
+- paragraph:
+  - strong: Self-serve plan upgrades are processed immediately.
+  - text: If you are updating your subscription in the middle of your existing billing period, you will be charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the
+  - link "next cycle’s invoice":
+    - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - text: .
+- link:
+  - /url: "#downgrading"
+- heading "Downgrading Your Plan" [level=3]
+- list:
+  - listitem:
+    - link "Downgrade eligibility":
+      - /url: "#downgrade-eligibility"
+  - listitem:
+    - link "Downgrading self-serve plans":
+      - /url: "#downgrade-plan"
+  - listitem:
+    - link "Downgrading a Performance plan":
+      - /url: "#downgrade-performance"
+- heading "DOWNGRADE ELIGIBILITY" [level=4]
+- paragraph:
+  - text: Before downgrading your plan, review each plan’s
+  - link "features and fees":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: ", and confirm your store’s eligibility."
+- paragraph:
+  - text: Self-serve plan downgrade eligibility is based on your store’s Inclusive GMV, which is the store’s trailing 12-month sales volume after a 10% reduction. For more information on Inclusive GMV calculations, fees, and viewing your sales volume, see
+  - link "About BigCommerce Pricing":
+    - /url: /s/article/Pricing
+  - text: .
+- list:
+  - listitem:
+    - text: To downgrade from the Growth plan to Core, your GMV must be
+    - strong: below $30,000
+    - text: .
+  - listitem:
+    - text: To downgrade from the Scale plan to Growth, your GMV must be
+    - strong: below $100,000
+    - text: .
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: After downgrading, if your trailing 12-month Inclusive GMV exceeds your new plan’s threshold, your store will be automatically upgraded at the start of your next billing period. Keep this in mind if your sales volume is near the plan threshold.
+- heading "DOWNGRADING SELF-SERVE PLANS" [level=4]
+- paragraph:
+  - text: If your store is currently on a Growth or Scale plan, you can downgrade directly from the
+  - link "Account Dashboard":
+    - /url: "#dashboard"
+  - text: . Under
+  - strong: Plan summary
+  - text: ", click"
+  - strong: Downgrade plan
+  - text: .
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: To ensure that a downgrade processes before your next
+  - link "billing cycle":
+    - /url: "#billing-cycle"
+  - text: ", we require plan downgrades to be submitted"
+  - strong: at least 2 business days
+  - text: before your next billing date.
+- paragraph:
+  - img "Downgrade plan highlighted in Account Dashboard"
+- paragraph:
+  - text: On the next page, choose an available plan and select whether you will be billed monthly or annually. After reviewing the features that will be lost by moving to a lower plan, click
+  - strong: Confirm downgrade
+  - text: .
+- paragraph:
+  - text: Note that downgrades are
+  - strong: not immediate
+  - text: and will take effect at the start of your next
+  - link "billing cycle":
+    - /url: "#faq"
+  - text: . This means when switching from annual to monthly billing, your change may not take effect for up to
+  - strong: 11 months
+  - text: .
+- paragraph:
+  - img "Downgrade plan page"
+- paragraph:
+  - text: If you need assistance,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: . You will need your
+  - link "Support PIN":
+    - /url: /s/article/What-is-my-support-PIN-and-where-do-I-find-it
+  - text: .
+- heading "DOWNGRADING A PERFORMANCE PLAN" [level=4]
+- paragraph: Stores on a Performance plan that include a dedicated Customer Success Manager (CSM) should contact their CSM to discuss any plan changes.
+- paragraph:
+  - text: All other Performance plan stores should
+  - link "create a Billing case":
+    - /url: /s/article/Creating-Viewing-Support-Cases
+  - text: .
+- link:
+  - /url: "#billing-frequency"
+- heading "Changing Your Billing Frequency" [level=3]
+- paragraph:
+  - text: Self-serve plans allow you to switch between monthly and annual billing frequency directly from the
+  - link "Account Dashboard":
+    - /url: "#dashboard"
+  - text: . Under
+  - strong: Plan summary
+  - text: ", click"
+  - strong: Change billing frequency
+  - text: .
+- text: 
+- paragraph:
+  - strong: Did you know?
+  - text: You can save
+  - strong: 25% off
+  - text: your monthly plan pricing by switching to annual billing. For details, see the
+  - link "BigCommerce pricing page":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: .
+- paragraph:
+  - img "Change billing frequency highlighted in Account Dashboard"
+- paragraph:
+  - text: In the popup window, select your new frequency and click
+  - strong: Confirm change
+  - text: .
+- paragraph:
+  - text: Note that frequency changes are
+  - strong: not immediate
+  - text: and will take effect at the start of your next
+  - link "billing cycle":
+    - /url: "#billing-cycle"
+  - text: . This means switching from annual to monthly billing may not take effect for up to
+  - strong: 11 months
+  - text: .
+- paragraph:
+  - img "Change billing frequency window"
+- link:
+  - /url: "#billing-cycle"
+- heading "Locating Your Billing Cycle" [level=3]
+- paragraph: You can locate your store’s billing period by viewing a past invoice.
+- paragraph:
+  - text: First,
+  - link "log into the Account Dashboard":
+    - /url: "#dashboard"
+  - text: and on the home page, click on the
+  - strong: store name
+  - text: "to view the store details. In the browser’s URL bar, make a note of your store ID. It is the number at the end of the URL in the example below:"
+- paragraph:
+  - emphasis: https://manage.bigcommerce.com/account/stores/1234567890
+- paragraph:
+  - text: Next, click
+  - strong: Account
+  - text: in the upper left, then select
+  - emphasis: Invoices
+  - text: .
+- paragraph:
+  - img "Invoices highlighted in the Account drop-down menu"
+- paragraph:
+  - text: Click
+  - strong: Download
+  - text: next to a recent invoice with a positive value under
+  - strong: Total (USD)
+  - text: . If you have several recent invoices, we recommend downloading them all.
+- paragraph:
+  - text: Open the downloaded invoices and look for your store’s
+  - strong: most recent
+  - text: plan line item. The value under
+  - strong: Store ID
+  - text: should match the number previously noted and a plan charge such as
+  - emphasis: Core Store Yearly
+  - text: ", or"
+  - emphasis: Scale Store Monthly
+  - text: will appear under
+  - strong: Charge Name
+  - text: .
+- paragraph:
+  - text: Your billing period is the timeframe noted under
+  - strong: Service Period
+  - text: . For example, this invoice covers the period
+  - strong: 2026-03-31
+  - text: "-"
+  - strong: 2027-03-30
+  - text: . This means the annual cycle ends
+  - strong: 2027-03-30
+  - text: and the new billing period begins
+  - strong: 2027-03-31.
+- paragraph:
+  - img "Service Period highlighted on an invoice"
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: When upgrading plans, why is there a prorated charge?
+- paragraph:
+  - text: Upgrades are processed immediately to allow you to access the new plan’s features without any delay. At the time of the upgrade, you are charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the
+  - link "next cycle’s invoice":
+    - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - text: .
+- paragraph: For an annual plan, this means the prorated amount will cover the difference between the upgrade date and the start of the next year’s cycle.
+- paragraph: For example, if your billing cycle ends in November and you upgrade in April, you will be charged a prorated amount for the difference between plans for April through November.
+- paragraph:
+  - text: For an upgrade from the Growth plan to the Scale plan (299 - 79), this would be a prorated charge of around
+  - strong: $1,760
+  - text: (220 x 8).
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "About BigCommerce Pricing":
+      - /url: /s/article/Pricing
+  - listitem:
+    - link "About Your BigCommerce Invoice":
+      - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - listitem:
+    - link "Creating and Viewing Support Cases":
+      - /url: /s/article/Creating-Viewing-Support-Cases
+  - listitem:
+    - link "Finding Your Support PIN":
+      - /url: /s/article/What-is-my-support-PIN-and-where-do-I-find-it
+  - listitem:
+    - link "The Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+  - listitem:
+    - link "BigCommerce Pricing":
+      - /url: https://www.bigcommerce.com/pricing/
+    - text: (bigcommerce.com)
+  - listitem:
+    - link "Fees and Billing":
+      - /url: https://www.commerce.com/terms/fees-and-billing/
+    - text: (commerce.com)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Changing Your Store's Plan
+- iframe

@@ -1,0 +1,969 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Store Profile":
+                - /url: /s/article/Store-Profile-Settings
+            - listitem:
+              - link "Store Settings":
+                - /url: /s/article/Store-Settings
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Setup":
+                    - /url: "#setup-settings"
+                - listitem:
+                  - link "General":
+                    - /url: "#general-settings"
+                - listitem:
+                  - link "Orders":
+                    - /url: "#orders-settings"
+                - listitem:
+                  - link "Products":
+                    - /url: "#products-settings"
+                - listitem:
+                  - link "Marketing":
+                    - /url: "#marketing-settings"
+                - listitem:
+                  - link "Domain":
+                    - /url: "#domain-settings"
+                - listitem:
+                  - link "Advanced":
+                    - /url: "#advanced-settings"
+                - listitem:
+                  - link "API and MCP":
+                    - /url: "#api-mcp-settings"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "\"Maintenance\" Mode":
+                - /url: /s/article/Maintenance-Mode
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Store Settings" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Setup":
+      - /url: "#setup-settings"
+  - listitem:
+    - link "General":
+      - /url: "#general-settings"
+  - listitem:
+    - link "Orders":
+      - /url: "#orders-settings"
+  - listitem:
+    - link "Products":
+      - /url: "#products-settings"
+  - listitem:
+    - link "Marketing":
+      - /url: "#marketing-settings"
+  - listitem:
+    - link "Domain":
+      - /url: "#domain-settings"
+  - listitem:
+    - link "Advanced":
+      - /url: "#advanced-settings"
+  - listitem:
+    - link "API and MCP":
+      - /url: "#api-mcp-settings"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph:
+  - text: The
+  - link "Settings":
+    - /url: http://login.bigcommerce.com/deep-links/settings-list
+    - strong: Settings
+  - text: page is a centralized location for many key functions of your store. From here, you can configure and manage multiple features ranging from your store’s basic information, to payment and shipping methods, up through more advanced tools, such as API accounts.
+- paragraph: This article provides an overview of the groupings and individual sections of the Settings page, as well as links to related articles containing more detail.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To view and manage your store’s settings, the
+    - strong: Manage Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: must be enabled on your user account.
+  - listitem: Depending on the area being managed, you may need additional permissions. See the relevant linked articles for specific requirements.
+- link:
+  - /url: "#setup-settings"
+- heading "Setup" [level=3]
+- list:
+  - listitem:
+    - link "Store profile":
+      - /url: "#store-profile"
+  - listitem:
+    - link "Localization":
+      - /url: "#localization-settings"
+  - listitem:
+    - link "Currencies":
+      - /url: "#currency-settings"
+  - listitem:
+    - link "Payments":
+      - /url: "#payment-settings"
+  - listitem:
+    - link "Locations":
+      - /url: "#location-settings"
+  - listitem:
+    - link "Pick up methods":
+      - /url: "#shipping-settings"
+  - listitem:
+    - link "Shipping":
+      - /url: "#shipping-settings"
+  - listitem:
+    - link "Tax":
+      - /url: "#tax-settings"
+- heading "STORE PROFILE" [level=4]
+- paragraph:
+  - text: Provide basic information about your business, such as the store name, contact information, default country, and the default storefront language under
+  - strong: Settings › Store profile
+  - text: . For more information, see
+  - link "Store Profile Settings":
+    - /url: /s/article/Store-Profile-Settings
+  - text: .
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: Stores with multiple languages enabled configure their default country and storefront language under
+  - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- heading "LOCALIZATION SETTINGS" [level=4]
+- paragraph:
+  - text: Stores with multiple languages enabled configure their default country, storefront language, physical dimensions, and date and timezone under
+  - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- heading "CURRENCIES" [level=4]
+- paragraph:
+  - text: Configure which currencies appear on your store, their exchange rates, storefront channels, and display settings under
+  - strong: Settings › Currencies.
+  - text: For instructions on enabling currencies in your store, see
+  - link "Managing Currencies":
+    - /url: /s/article/Managing-Currencies
+  - text: . To learn more about how multicurrency works in your store, see
+  - link "Using Multiple Currencies":
+    - /url: /s/article/Using-Multiple-Currencies
+  - text: .
+- heading "PAYMENTS" [level=4]
+- paragraph:
+  - text: Manage payment integration connections, offline payment methods, and select digital wallets under
+  - strong: Settings › Payments
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Available Payment Gateways":
+      - /url: /s/article/Available-Payment-Gateways
+  - listitem:
+    - link "Introduction to Alternative Payment Methods":
+      - /url: /s/article/Intro-to-APMs
+  - listitem:
+    - link "Offline Payment Methods":
+      - /url: /s/article/Offline-Payment-Methods
+- heading "LOCATIONS" [level=4]
+- paragraph:
+  - text: Manage Buy Online, Pick up in Store (BOPIS) physical location details under
+  - strong: Settings › Locations
+  - text: . For more information, see
+  - link "Multi-Location":
+    - /url: /s/article/Multi-Location
+  - text: .
+- heading "PICK UP METHODS" [level=4]
+- paragraph:
+  - text: Configure Buy Online, Pick up in Store (BOPIS) pick up methods and assign to locations under
+  - strong: Settings › Pick up methods
+  - text: . For more information, see
+  - link "Multi-Location":
+    - /url: /s/article/Multi-Location
+  - text: .
+- heading "SHIPPING" [level=4]
+- paragraph:
+  - text: Enter your shipping origin address as well as configure and manage shipping zones, methods, and rates under
+  - strong: Settings › Shipping
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Shipping Setup":
+      - /url: /s/article/Shipping-Setup
+  - listitem:
+    - link "Shipping Zones":
+      - /url: /s/article/Shipping-Zones
+  - listitem:
+    - link "Shipping Methods":
+      - /url: /s/article/Shipping-Methods
+  - listitem:
+    - link "Setting Up Real Time Shipping Quotes":
+      - /url: /s/article/Setting-Up-a-Real-Time-Shipping-Quote-Shipping-Method
+- heading "TAX" [level=4]
+- paragraph:
+  - text: Configure your store’s tax settings, zones and basic rates, or connect an automatic tax service under
+  - strong: Settings › Tax
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Tax Overview":
+      - /url: /s/article/Tax-Overview
+  - listitem:
+    - link "Basic Tax Setup":
+      - /url: /s/article/Manual-Tax-Setup
+  - listitem:
+    - link "Automatic Tax Setup":
+      - /url: /s/article/Automatic-Tax-Setup
+- link:
+  - /url: "#general-settings"
+- heading "General" [level=3]
+- list:
+  - listitem:
+    - link "Website":
+      - /url: "#website-settings"
+  - listitem:
+    - link "Display":
+      - /url: "#display-settings"
+  - listitem:
+    - link "Image":
+      - /url: "#image-settings"
+  - listitem:
+    - link "Share":
+      - /url: "#share-settings"
+  - listitem:
+    - link "Date & Timezone":
+      - /url: "#date-time"
+  - listitem:
+    - link "URL structure":
+      - /url: "#url-structure"
+  - listitem:
+    - link "Search":
+      - /url: "#search-setting"
+  - listitem:
+    - link "Security & privacy":
+      - /url: "#security"
+  - listitem:
+    - link "Miscellaneous":
+      - /url: "#misc-settings"
+- heading "WEBSITE" [level=4]
+- paragraph:
+  - text: Configure your physical dimension settings, default SEO metadata, sitewide HTTPS, and robots.txt file under
+  - strong: Settings › Website.
+- paragraph:
+  - strong: Physical Dimension Settings
+- paragraph:
+  - text: Physical dimension settings allow you to specify the measurement units your store uses for product weight and volume, choose the display style for decimals, and assign a factoring dimension for calculating shipping costs. For more information, see
+  - link "Physical Dimension Settings and the Shipping Calculator":
+    - /url: /s/article/Physical-Dimension-Settings
+  - text: .
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: Stores with multiple languages enabled configure their physical dimensions under
+  - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- paragraph:
+  - strong: Search Engine Optimization
+- paragraph:
+  - text: Under Search engine optimization settings, enter the SEO metadata for your store’s homepage as well as your custom domain’s www redirect preference. For more information, see
+  - link "SEO Fields":
+    - /url: /s/article/SEO-Fields
+  - text: .
+- text: 
+- paragraph:
+  - strong: "Multi-Storefront:"
+  - text: If you have
+  - link "Multi-Storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: (MSF) enabled on your store, the storefront SEO settings found in Channel Manager will take priority and override global SEO store settings. This allows each storefront to have its own SEO strategy.
+- paragraph:
+  - strong: HTTPS
+- paragraph:
+  - text: By default, BigCommerce stores have sitewide HTTPS already enabled. For more information, see
+  - link "Sitewide HTTPS":
+    - /url: /s/article/Site-Wide-HTTPS
+  - text: .
+- paragraph:
+  - strong: Search Engine Robots
+- paragraph:
+  - text: The robots.txt file is a tool that helps improve your SEO and reduce server load by providing instructions to search engine and AI bot crawlers on when and where they can crawl your site. For more information, see
+  - link "Robots.txt File":
+    - /url: /s/article/Understanding-the-Robots-txt-File
+  - text: .
+- heading "DISPLAY" [level=4]
+- paragraph:
+  - text: Configure your storefront, control panel, category, and product display settings under
+  - strong: Settings › Display.
+- paragraph:
+  - strong: Display Settings
+- paragraph:
+  - text: Manage the general display behavior of multiple areas of the storefront, such as the cart page, customer account pages, and product listings. For more information, see
+  - link "Display Settings":
+    - /url: /s/article/Display-Settings
+  - text: .
+- paragraph:
+  - strong: Control Panel
+- paragraph: Configure the display options for the control panel text editor and product thumbnails in your product list.
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Using the WYSIWYG Editor":
+      - /url: /s/article/Using-the-WYSIWYG-Editor
+  - listitem:
+    - link "Product List":
+      - /url: /s/article/Product-List
+- paragraph:
+  - strong: Category Settings
+- paragraph:
+  - text: The Category Settings section allows you to manage which products are displayed on category pages, how they are sorted, and the display depth in your store’s navigation menu. For more information, see the “Category Settings” section of
+  - link "Product Categories":
+    - /url: /s/article/Product-Categories
+  - text: .
+- paragraph:
+  - strong: Product Settings
+- paragraph:
+  - text: Configure options for product attributes, including pricing presentation, SKU, weight, customer rating visibility, and more. For more information, see
+  - link "Product Display Settings":
+    - /url: /s/article/Product-Display-Settings
+  - text: .
+- heading "IMAGE" [level=4]
+- paragraph:
+  - text: Image settings allows you to set image sizes and related settings for Blueprint themes. To navigate to your store's Image settings go to
+  - strong: Settings
+  - text: ›
+  - strong: Images
+  - text: . For a complete list of Blueprint image settings, see
+  - link "Blueprint Themes":
+    - /url: /s/article/Blueprint-Themes
+  - text: .
+- text: 
+- paragraph:
+  - strong: Don't see the Images tabs?
+  - text: Stencil themes control product image sizes in
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: . Stores with a Stencil theme enabled won't see the Images tab.
+- heading "SHARE" [level=4]
+- paragraph:
+  - text: Under
+  - strong: Settings › Share
+  - text: ", manage the displayed social media icons on product and blog pages as well as enable or disable Pinterest Rich Pins."
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Adding Social Media Links":
+      - /url: /s/article/Social-Media-Links
+  - listitem:
+    - link "Advertising with Pinterest":
+      - /url: /s/article/Advertising-with-Pinterest
+- text: 
+- paragraph:
+  - strong: Looking to connect to a sales or marketing channel?
+  - text: Channel Manager allows you to connect and manage different sales and marketing channels. For more details, including the available options, see
+  - link "Selling Everywhere with Channel Manager":
+    - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+  - text: .
+- heading "DATE & TIMEZONE" [level=4]
+- paragraph:
+  - text: Manage the internal time tracking used in your store's control panel under
+  - strong: Settings › Date & Timezone
+  - text: . These settings affect time-related features, such as order timestamps and promotion start or end dates. For more information, see
+  - link "Date and Timezone Settings":
+    - /url: /s/article/Date-and-Timezone-Settings
+  - text: .
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: Stores with multiple languages enabled configure their date and timezone under
+  - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- heading "URL STRUCTURE" [level=4]
+- paragraph:
+  - text: Adjust your store’s URL structures for products, categories, and web pages under
+  - strong: Settings › URL Structure
+  - text: . For more information, see the “URL Structure” section of
+  - link "SEO Fields":
+    - /url: /s/article/SEO-Fields
+  - text: .
+- heading "SEARCH" [level=4]
+- paragraph:
+  - text: Configure the built-in storefront search results sort order and search logic under
+  - strong: Settings
+  - text: ›
+  - strong: Search
+  - text: . For more information see
+  - link "Configuring Store Search":
+    - /url: /s/article/Store-Search
+  - text: .
+- paragraph:
+  - text: Stores using Stencil themes can customize the search results page appearance in
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: . Additional options are also available for themes based on
+  - link "Cornerstone":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - text: .
+- text: 
+- paragraph:
+  - strong: Stores using a legacy Blueprint theme will see additional search display settings.
+  - text: For more information on these settings, see
+  - link "Blueprint Themes":
+    - /url: /s/article/Blueprint-Themes
+  - text: .
+- heading "SECURITY & PRIVACY" [level=4]
+- paragraph:
+  - text: Manage various aspects of your store such as shopper password complexity, inactivity thresholds, reCAPTCHA, and privacy under
+  - strong: Settings › Security & Privacy
+  - text: .
+- paragraph:
+  - text: For a detailed overview of the security settings available for your store, see
+  - link "Security and Privacy Settings":
+    - /url: /s/article/Security-and-Privacy-Settings
+  - text: .
+- heading "MISCELLANEOUS" [level=4]
+- paragraph:
+  - text: Various additional store settings can be accessed under
+  - strong: Settings
+  - text: ›
+  - strong: Miscellaneous
+  - text: .
+- paragraph:
+  - strong: Email Settings
+- paragraph: Manage several email related features, including product reviews, order invoice forwarding, custom SMTP settings, system notification address, and Abandoned Cart Saver.
+- paragraph: "For information on the supported features, see:"
+- list:
+  - listitem:
+    - link "Managing Reviews":
+      - /url: /s/article/Managing-Reviews
+  - listitem:
+    - link "Order Notifications":
+      - /url: /s/article/Order-Notifications
+  - listitem:
+    - link "Email in BigCommerce":
+      - /url: /s/article/Email-in-BigCommerce
+  - listitem:
+    - link "Using the Abandoned Cart Saver":
+      - /url: /s/article/Using-the-Abandoned-Cart-Saver
+- paragraph:
+  - strong: Advanced Store Settings
+- paragraph:
+  - text: Enable and disable cart and checkout availability on your storefront using the
+  - emphasis: Allow Purchasing
+  - text: checkbox under
+  - strong: Advanced Store Settings
+  - text: . For more information on product purchasability and availability, see
+  - link "Managing Product Availability":
+    - /url: /s/article/Product-Availability
+  - text: .
+- paragraph:
+  - strong: Order Settings
+- paragraph:
+  - text: Set your store’s starting order number, controlling the values of the next and subsequent orders. For more information, see
+  - link "Understanding Order IDs":
+    - /url: /s/article/Order-ID
+  - text: .
+- paragraph:
+  - strong: Product review rate limiting
+- paragraph:
+  - text: Manage the allowed frequency of customer product reviews. For more information, see
+  - link "Managing Reviews":
+    - /url: /s/article/Managing-Reviews
+  - text: .
+- link:
+  - /url: "#orders-settings"
+- heading "Orders" [level=3]
+- list:
+  - listitem:
+    - link "Order notifications":
+      - /url: "#order-notifications"
+  - listitem:
+    - link "Returns":
+      - /url: "#returns-settings"
+  - listitem:
+    - link "Statuses":
+      - /url: "#statuses-settings"
+- heading "ORDER NOTIFICATIONS" [level=4]
+- paragraph:
+  - text: Manage customer order status update emails and merchant order notifications under
+  - strong: Settings › Order notifications
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Customer Order Notifications":
+      - /url: /s/article/Customer-Order-Notifications
+  - listitem:
+    - link "Order Notifications":
+      - /url: /s/article/Order-Notifications
+- heading "RETURNS" [level=4]
+- paragraph:
+  - text: Manage return system settings under
+  - strong: Settings › Returns
+  - text: . For more information, see
+  - link "Processing Returns":
+    - /url: /s/article/Processing-Returns
+  - text: .
+- heading "STATUSES" [level=4]
+- paragraph:
+  - text: Customize your order status labels under
+  - strong: Settings › Statuses
+  - text: . For more information, see
+  - link "Order Statuses":
+    - /url: /s/article/Order-Statuses
+  - text: .
+- link:
+  - /url: "#products-settings"
+- heading "Products" [level=3]
+- list:
+  - listitem:
+    - link "Inventory":
+      - /url: "#inventory-settings"
+  - listitem:
+    - link "Gift wrapping":
+      - /url: "#gift-wrapping-settings"
+  - listitem:
+    - link "Comments":
+      - /url: "#comments-settings"
+- heading "INVENTORY" [level=4]
+- paragraph:
+  - text: Manage product and variant stock behavior, stock level display, backorder display, and stock-level email notifications under
+  - strong: Settings › Inventory
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Inventory Tracking":
+      - /url: /s/article/Inventory-Tracking
+  - listitem:
+    - link "Backorders":
+      - /url: /s/article/Backorders
+- heading "GIFT WRAPPING" [level=4]
+- paragraph:
+  - text: Create and manage gift wrapping options under
+  - strong: Settings › Gift wrapping
+  - text: . For more information, see
+  - link "Offering Gift Wrapping":
+    - /url: /s/article/Gift-Wrapping
+  - text: .
+- heading "COMMENTS" [level=4]
+- paragraph:
+  - text: Enable or disable the built-in product reviews feature and control whether reviews are restricted to confirmed purchases under
+  - strong: Settings › Comments
+  - text: . For more information, see
+  - link "Managing Reviews":
+    - /url: /s/article/Managing-Reviews
+  - text: .
+- link:
+  - /url: "#marketing-settings"
+- heading "Marketing" [level=3]
+- list:
+  - listitem:
+    - link "Promotions and coupons":
+      - /url: "#promotion-settings"
+- heading "PROMOTIONS AND COUPONS" [level=4]
+- paragraph:
+  - text: Manage promotions and coupon settings under
+  - strong: Settings
+  - text: ›
+  - strong: Promotions and coupons
+  - text: . Information about the settings and their use can be found in the “Promotions and Coupons Settings” section of
+  - link "Automatic and Coupon Promotions (Standard Editor)":
+    - /url: /s/article/Automatic-and-Coupon-Promotions-Standard-Editor
+  - text: .
+- link:
+  - /url: "#domain-settings"
+- heading "Domain" [level=3]
+- list:
+  - listitem:
+    - link "Domain name":
+      - /url: "#domain-name-settings"
+  - listitem:
+    - link "301 Redirects":
+      - /url: "#301-redirects"
+  - listitem:
+    - link "Email & DNS records":
+      - /url: "#email-dns"
+  - listitem:
+    - link "SSL Certificates":
+      - /url: "#ssl-certs"
+- heading "DOMAIN NAME" [level=4]
+- paragraph:
+  - text: Purchase domain names and manage existing domains in the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: by navigating to
+  - strong: Settings › Domain name
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "Purchasing a Domain":
+      - /url: /s/article/Purchasing-a-Domain
+  - listitem:
+    - link "Changing Domains":
+      - /url: /s/article/Changing-Domains
+- heading "301 REDIRECTS" [level=4]
+- paragraph:
+  - text: View, manage, import, and export 301 redirects under
+  - strong: Settings › 301 Redirects
+  - text: . For more information, see
+  - link "301 Redirects":
+    - /url: /s/article/MSF-301-Redirects
+  - text: .
+- heading "EMAIL & DNS RECORDS" [level=4]
+- paragraph:
+  - text: Stores on a BigCommerce subdomain, have purchased a domain through BigCommerce, or have pointed a custom domain to BigCommerce via nameservers; add and configure DNS records for your store's domain under
+  - strong: Settings › Email & DNS records
+  - text: . For more information, see
+  - link "Managing DNS":
+    - /url: /s/article/Managing-DNS
+  - text: .
+- heading "SSL CERTIFICATES" [level=4]
+- paragraph:
+  - text: Purchase BigCommerce SSL certificates, generate Certificate Signing Requests (CSRs), and install third-party certificates in the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: by navigating to
+  - strong: Settings › SSL certificates
+  - text: .
+- paragraph: "For more information, see:"
+- list:
+  - listitem:
+    - link "BigCommerce SSL Certificates":
+      - /url: /s/article/BigCommerce-SSL-Certificate
+  - listitem:
+    - link "Installing a Third-Party SSL Certificate":
+      - /url: /s/article/Installing-a-Third-Party-SSL
+- link:
+  - /url: "#advanced-settings"
+- heading "Advanced" [level=3]
+- list:
+  - listitem:
+    - link "Accounting":
+      - /url: "#accounting-settings"
+  - listitem:
+    - link "Data solutions":
+      - /url: "#data-solutions-settings"
+  - listitem:
+    - link "Checkout":
+      - /url: "#checkout-settings"
+  - listitem:
+    - link "Account sign up form":
+      - /url: "#account-form-settings"
+  - listitem:
+    - link "Export templates":
+      - /url: "#export-templates"
+  - listitem:
+    - link "Store logs":
+      - /url: "#store-logs"
+  - listitem:
+    - link "File access (WebDAV)":
+      - /url: "#webdav-settings"
+  - listitem:
+    - link "Users":
+      - /url: "#users-settings"
+  - listitem:
+    - link "Early access":
+      - /url: "#early-access-settings"
+- heading "ACCOUNTING" [level=4]
+- paragraph:
+  - text: Connect your store with select accounting integrations to sync order, product, and customer data under
+  - strong: Settings › Accounting
+  - text: .
+- heading "DATA SOLUTIONS" [level=4]
+- paragraph:
+  - text: Connect and manage storefront tracking services, data warehouses, business intelligence platforms, and customer data platforms under
+  - strong: Settings › Data solutions
+  - text: . For more information, see
+  - link "Data Solutions":
+    - /url: /s/article/Data-Solutions
+  - text: .
+- heading "CHECKOUT" [level=4]
+- paragraph:
+  - text: Configure checkout-related settings such as the checkout type, customer account behavior, checkout fields display, and the order confirmation page experience under
+  - strong: Settings › Checkout
+  - text: . For more information, see
+  - link "Optimized One-Page Checkout":
+    - /url: /s/article/Optimized-Single-Page-Checkout
+  - text: .
+- heading "ACCOUNT SIGN UP FORM" [level=4]
+- paragraph:
+  - text: Manage the signup and address form fields that display on your store’s checkout and customer account pages under
+  - strong: Settings › Account sign up form
+  - text: . For more information, see
+  - link "Adding and Editing Fields in the Account Signup Form":
+    - /url: /s/article/Editing-Form-Fields
+  - text: .
+- heading "EXPORT TEMPLATES" [level=4]
+- paragraph:
+  - text: View the built-in export templates and manage custom templates used by the legacy Import/Export tool under
+  - strong: Settings › Export templates
+  - text: . For more information, see
+  - link "Legacy Product Import/Export | Exporting Your Products":
+    - /url: /s/article/Exporting-Products
+  - text: .
+- heading "STORE LOGS" [level=4]
+- paragraph:
+  - text: Access logging of storefront and control panel events under
+  - strong: Settings › Store logs
+  - text: . For more information, see
+  - link "Using Store Logs":
+    - /url: /s/article/Using-Store-Logs
+  - text: .
+- heading "FILE ACCESS (WEBDAV)" [level=4]
+- paragraph:
+  - text: View your user account’s WebDAV login information under
+  - strong: Settings › File access (WebDAV)
+  - text: . For more information, see
+  - link "File Access (WebDAV)":
+    - /url: /s/article/File-Access-WebDAV
+  - text: .
+- heading "USERS" [level=4]
+- paragraph:
+  - text: Manage control panel user accounts and permissions under
+  - strong: Settings › Users
+  - text: . For more information, see
+  - link "User Roles and Permissions":
+    - /url: /s/article/User-Permissions
+  - text: .
+- heading "EARLY ACCESS" [level=4]
+- paragraph:
+  - text: Features that are available for all stores that may not yet be development complete can appear under
+  - strong: Settings › Early access
+  - text: . See the feature’s dedicated article for more information.
+- link:
+  - /url: "#api-mcp-settings"
+- heading "API and MCP" [level=3]
+- list:
+  - listitem:
+    - link "Storefront API playground":
+      - /url: "#storefront-api-playground"
+  - listitem:
+    - link "Store-level API accounts":
+      - /url: "#store-api-accounts"
+  - listitem:
+    - link "Account-level API accounts":
+      - /url: "#account-api-accounts"
+  - listitem:
+    - link "MCP":
+      - /url: "#mcp-settings"
+- heading "STOREFRONT API PLAYGROUND" [level=4]
+- paragraph:
+  - text: Access the BigCommerce GraphQL playground by navigating to
+  - strong: Settings › Storefront API Playground
+  - text: .
+- heading "STORE-LEVEL API ACCOUNTS" [level=4]
+- paragraph:
+  - text: View and manage store-level API accounts for authenticating with BigCommerce's Admin API, Stencil CLI, and webhooks under
+  - strong: Settings › Store-level API accounts
+  - text: . For more information, see
+  - link "Managing API Accounts and Webhooks":
+    - /url: /s/article/Store-API-Accounts
+  - text: .
+- heading "ACCOUNT-LEVEL API ACCOUNTS" [level=4]
+- paragraph:
+  - text: View and manage account-level API accounts for authenticating API calls on account or partner entities by navigating to
+  - strong: Settings › Account-level API accounts
+  - text: . For more information, see
+  - link "Managing API Accounts and Webhooks":
+    - /url: /s/article/Store-API-Accounts
+  - text: .
+- heading "MCP" [level=4]
+- paragraph:
+  - text: Enable and view MCP server setup details under
+  - strong: Settings › MCP
+  - text: . For more information, see
+  - link "MCP Server for Tools and AI Agents":
+    - /url: /s/article/MCP-Server-for-Tools-and-AI-Agents
+  - text: .
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: If a setting is not available in the control panel, can I adjust it somewhere else?
+- paragraph:
+  - text: For
+  - link "Stencil themes":
+    - /url: /s/article/The-Stencil-Theme-Platform
+  - text: ", there may be a setting found within the"
+  - strong: Theme Styles
+  - text: menu of
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: . Note that some desired changes may require theme customization. To connect with a developer, visit the
+  - link "BigCommerce Partner Directory":
+    - /url: https://partners.bigcommerce.com/directory/
+  - text: ", or submit a request directly to a"
+  - link "small business agency":
+    - /url: https://www.bigcommerce.com/small-business-agencies/
+  - text: .
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Settings in my store":
+    - /url: http://login.bigcommerce.com/deep-links/settings-list
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "The Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+  - listitem:
+    - link "User Roles and Permissions":
+      - /url: /s/article/User-Permissions
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Store Settings
+- iframe

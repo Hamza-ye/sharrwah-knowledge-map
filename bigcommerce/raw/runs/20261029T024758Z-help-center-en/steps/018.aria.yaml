@@ -1,0 +1,1035 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Tax Overview":
+                - /url: /s/article/Tax-Overview
+            - listitem:
+              - link "Basic Tax":
+                - /url: /s/article/Manual-Tax-Setup
+              - list:
+                - listitem:
+                  - link "Terminology":
+                    - /url: "#terms"
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Getting Started":
+                    - /url: "#getting-started"
+                - listitem:
+                  - link "Tax Classes":
+                    - /url: "#tax-class"
+                - listitem:
+                  - link "Tax Zones":
+                    - /url: "#tax-zone"
+                - listitem:
+                  - link "Tax Rates":
+                    - /url: "#tax-rate"
+                - listitem:
+                  - link "Common Situations":
+                    - /url: "#examples"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Automatic Tax Setup":
+                - /url: /s/article/Automatic-Tax-Setup
+            - listitem:
+              - link "Avalara AvaTax":
+                - /url: /s/article/Avalara-AvaTax
+            - listitem:
+              - link "Product-Specific Rates":
+                - /url: /s/article/Changing-Tax-Rates-on-a-Product
+            - listitem:
+              - link "Tax-Exempt Customers":
+                - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Basic Tax Setup" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Terminology":
+      - /url: "#terms"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Getting started":
+      - /url: "#getting-started"
+  - listitem:
+    - link "Tax classes":
+      - /url: "#tax-class"
+  - listitem:
+    - link "Tax zones":
+      - /url: "#tax-zone"
+  - listitem:
+    - link "Tax rates":
+      - /url: "#tax-rate"
+  - listitem:
+    - link "Common tax situations":
+      - /url: "#examples"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph:
+  - text: Part of running a business is calculating and collecting sales tax. Tax collection requirements will differ depending on your local, state, and federal laws, and we recommend using an
+  - link "automatic tax setup":
+    - /url: /s/article/Automatic-Tax-Setup
+  - text: if you are in a supported area.
+- paragraph: "However, you may want to use the basic tax setup for a variety of reasons, including:"
+- list:
+  - listitem: your location is outside of our automatic tax providers’ supported areas
+  - listitem:
+    - text: in combination with an automatic tax provider, using
+    - link "provider targeting":
+      - /url: /s/article/Automatic-Tax-Setup
+  - listitem:
+    - text: as
+    - link "fallback tax":
+      - /url: /s/article/Tax-Overview
+  - listitem: if you have simple tax liability
+- paragraph: The basic tax setup allows for you to define the tax rates for the different regional zones that you are required to collect in. The sales tax will be applied at checkout after the customer has entered their address.
+- paragraph:
+  - text: Below, we’ve provided detailed instructions on setting up tax zones (where you charge) and tax rates (how much you charge). Be sure to use this in conjunction with your store’s
+  - link "tax settings":
+    - /url: /s/article/Tax-Overview/#tax-settings
+  - text: .
+- text: 
+- paragraph:
+  - strong: Need help with taxes?
+  - text: The instructions in this article assume you already know the tax requirements necessary for running your business online. We highly recommend contacting your accountant or local tax authority to ensure you are charging tax properly for your store.
+  - strong: Note that our support team is not qualified to give tax advice.
+- link:
+  - /url: "#terms"
+- heading "Terminology" [level=3]
+- paragraph: "Before you start setting up basic taxes, you will need to determine the following:"
+- list:
+  - listitem:
+    - strong: What do you need to charge tax on?
+    - text: It can be different product types, shipping, or services like gift wrapping. This will determine your
+    - strong: tax classes
+    - text: .
+  - listitem:
+    - strong: Where do you need to charge taxes?
+    - text: It can be countries, states, cities, and even counties. This will determine your
+    - strong: tax zones
+    - text: .
+  - listitem:
+    - strong: Who do you need to charge for taxes?
+    - text: Do you anticipate any tax-exempt customers? This will determine if you need to create a tax-exempt
+    - strong: customer group
+    - text: .
+  - listitem:
+    - strong: What rates do you need to charge?
+    - text: This determines the
+    - strong: tax rates
+    - text: ", which are assigned by zone and tax class."
+  - listitem:
+    - strong: How do you want prices to be displayed with taxes?
+    - text: This is usually based on your customer’s location and their local preferences, such as displaying prices exclusive of tax for US customers and inclusive of tax for Australian customers.
+- heading "Example Case" [level=4]
+- paragraph: "Here is an example of a hypothetical store’s tax settings. They need to:"
+- list:
+  - listitem: Charge only on orders placed with a Tennessee billing address
+  - listitem: Use tax-exclusive pricing (pricing is shown without tax added in)
+  - listitem:
+    - text: "Set up tax rates on two different product types:"
+    - list:
+      - listitem: 4% on perishable goods
+      - listitem: 7% on non-perishable goods
+  - listitem: Set up a 0% tax rate for tax-exempt customers
+- paragraph: "They would need to use the following setup to address each of these aspects:"
+- list:
+  - listitem:
+    - strong: Charge only on orders placed with a Tennessee billing address
+    - text: — set up a Tennessee
+    - link "tax zone":
+      - /url: "#tax-zone"
+  - listitem:
+    - strong: Use tax-exclusive pricing
+    - text: — select “Display prices exclusive of tax” on the Tennessee zone's
+    - link "tax display settings":
+      - /url: "#zone-price-display"
+  - listitem:
+    - strong: Different tax rates between perishable and non-perishable goods
+    - text: — set up a “perishable goods” tax class and a “non-perishable goods”
+    - link "tax class":
+      - /url: "#tax-class"
+    - text: ", then set the"
+    - link "tax rate":
+      - /url: "#tax-rate"
+    - text: for both classes in the Tennessee zone.
+  - listitem:
+    - strong: Set up 0% rate for tax-exempt customers
+    - text: — set up a
+    - link "tax-exempt customer group":
+      - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+    - text: with all rates set to 0%
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To view and manage tax settings, you must have the
+    - strong: Manage Tax Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To view and edit products, you must have the
+    - strong: Manage Products
+    - text: ","
+    - strong: Edit Products
+    - text: ","
+    - strong: Product Options
+    - text: ", and"
+    - strong: Manage Brands
+    - text: permissions enabled on your user account.
+  - listitem:
+    - text: To view and manage customer accounts and
+    - link "customer groups":
+      - /url: /s/article/Customer-Groups
+    - text: ", you must have the"
+    - strong: Read Channels
+    - text: ","
+    - strong: Manage Customers
+    - text: ","
+    - strong: Edit Customers
+    - text: ","
+    - strong: Manage Categories
+    - text: ", and"
+    - strong: Customer Groups
+    - text: permissions enabled on your user account.
+    - list:
+      - listitem:
+        - text: Customer groups are only available for stores on a
+        - link "Growth plan or higher":
+          - /url: https://www.bigcommerce.com/essentials/pricing/
+        - text: .
+- link:
+  - /url: "#getting-started"
+- heading "Getting Started" [level=3]
+- paragraph:
+  - text: Once you have an idea of the tax requirements you need, you can begin setting up tax. Go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", and click"
+  - strong: Edit
+  - text: next to
+  - emphasis: Basic Tax
+  - text: .
+- paragraph:
+  - img "The Edit button highlighted next to Basic Tax"
+- paragraph: We recommend beginning your tax setup in the following order. Keep in mind that you can always test your orders and tweak your settings if needed.
+- paragraph:
+  - strong: "1."
+  - text: Create all
+  - link "tax classes":
+    - /url: "#tax-class"
+  - text: you need for your different product types. Once created, they will show up in other parts of the tax configurations.
+- paragraph:
+  - strong: "2."
+  - text: Create and configure your
+  - link "tax zones":
+    - /url: "#tax-zone"
+  - text: ", then specify the"
+  - link "tax rates":
+    - /url: "#tax-rate"
+  - text: for each zone.
+- paragraph:
+  - strong: "3."
+  - text: We recommend doing a
+  - link "test order":
+    - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+  - text: for each tax scenario you need to address to make sure everything is working as intended.
+- link:
+  - /url: "#tax-class"
+- heading "Tax Classes" [level=3]
+- paragraph: Tax classes are classifications for products and other line items that may need different tax rates charged. For example, your state may require you to tax perishable goods and non-perishable goods at different rates, or you may be required to tax shipping or gift wrapping.
+- paragraph: This is achieved by creating different tax classes for each group. Any tax classes you create are added to all of your zones, where you can assign them the appropriate rate. Any unused classes in a zone can be set to a rate of 0%.
+- paragraph:
+  - text: To view, add, or edit tax classes, click
+  - strong: Edit
+  - text: next to
+  - emphasis: Basic Tax
+  - text: ", then click on the"
+  - strong: Tax classes
+  - text: tab.
+- paragraph:
+  - img "The Edit button highlighted next to Basic Tax"
+- paragraph: We've included some tax classes automatically. If you are selling products that require different tax rates, such as perishable and non-perishable goods, you can create those tax classes here.
+- paragraph:
+  - img "Tax class labels, including the default tax class."
+- paragraph:
+  - text: To create a new tax class, click the
+  - strong: +
+  - text: button. You can also delete tax classes by clicking the
+  - strong: "-"
+  - text: button. However, we recommend keeping all tax classes and just
+  - link "assigning them a rate":
+    - /url: "#tax-rate"
+  - text: of 0% if you won't be using them.
+- heading "Assigning Tax Classes to Products" [level=4]
+- paragraph: Once the tax classes are configured, you will need to update your products to indicate which tax class they belong to. For example, you would update your perishable products to your newly created “Perishable Goods” tax class.
+- paragraph:
+  - text: BigCommerce automatically assigns all products to the
+  - strong: Default Tax Class
+  - text: . To assign a different tax class,
+  - link "edit the product":
+    - /url: /s/article/Adding-Products-v3
+  - text: . Click
+  - strong: Pricing
+  - text: on the left side navigation, then select a class from the
+  - strong: Tax Class
+  - text: drop-down menu.
+- paragraph:
+  - img "Selecting the default tax class while editing a product"
+- paragraph:
+  - text: If you have several products, we recommend
+  - link "updating them in bulk":
+    - /url: https://support.bigcommerce.com/s/article/Editing-Existing-Products-via-Import#importing
+  - text: by editing the
+  - strong: Tax Class
+  - text: column in the CSV import file.
+- heading "Shipping and Gift Wrapping Tax Classes" [level=4]
+- paragraph:
+  - text: By default, your store will have
+  - strong: Shipping
+  - text: and
+  - strong: Gift Wrapping
+  - text: tax classes. These are for merchants who are required to collect taxes on shipping or gift wrapping. Even if you are not collecting tax for these,
+  - strong: do not delete them
+  - text: .
+- paragraph:
+  - text: If you are
+  - strong: not
+  - text: required to collect taxes on these,
+  - link "set the tax rate":
+    - /url: "#tax-rate"
+  - text: to 0% in all of your zones.
+- paragraph:
+  - text: In your store's
+  - link "tax settings":
+    - /url: /s/article/Tax-Overview
+  - text: ", there are fields for specifying the"
+  - strong: Shipping tax class
+  - text: ","
+  - strong: Handling tax class
+  - text: ", and"
+  - strong: Gift Wrapping tax class
+  - text: . Ensure that these field values are set to their corresponding tax classes. If they are set to something else, your shipping, handling, and gift wrapping taxes will be charged at the rate specified for that other class.
+- paragraph:
+  - img "example of shipping, handling, and gift wrapping tax classes"
+- paragraph: Once you have set up your tax classes, they will appear in the tax zones you create in the next step.
+- link:
+  - /url: "#tax-zone"
+- heading "Tax Zones" [level=3]
+- list:
+  - listitem:
+    - link "Default zone":
+      - /url: "#default-tax-zone"
+  - listitem:
+    - link "Adding zones":
+      - /url: "#adding-zones"
+  - listitem:
+    - link "Tax zone display settings":
+      - /url: "#zone-price-display"
+  - listitem:
+    - link "Editing and copying zones":
+      - /url: "#editing-copying-zones"
+  - listitem:
+    - link "Deleting zones":
+      - /url: "#deleting-zones"
+- paragraph:
+  - text: To charge different rates for different geographic locations, you will create one or more
+  - strong: tax zones
+  - text: . A tax zone specifies the geographical area where a group of tax rates apply. Set whether the tax zone geographical area applies to a customer’s billing address, shipping or pickup address, or your store’s shipping origin address in your
+  - link "tax settings":
+    - /url: /s/article/Tax-Overview
+  - text: .
+- paragraph:
+  - img "tax setting for calculating taxes based on shipping, billing or store address"
+- paragraph:
+  - text: To view your tax zones, go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", click"
+  - strong: Edit
+  - text: next to
+  - emphasis: Basic Tax
+  - text: ", then click on the"
+  - strong: Tax Rates and zones
+  - text: tab.
+- paragraph:
+  - img "screenshot of tax zones overview page"
+- paragraph: "You will see any current tax zones and an overview of their settings:"
+- list:
+  - listitem:
+    - strong: Zone type
+    - text: — how the zone is defined. Zones can be based on country, state, or postal code.
+  - listitem:
+    - strong: Price display
+    - text: — whether the zone’s price display setting is tax inclusive or tax exclusive
+  - listitem:
+    - strong: Status
+    - text: — whether the zone is currently active on the store or not
+- heading "Default Zone" [level=4]
+- paragraph:
+  - text: All stores contain a
+  - strong: Default Zone
+  - text: ", which applies a 0% tax rate to any regions not set up in another zone."
+  - strong: Do not set up tax rates in this zone.
+  - text: Unless you have nexus everywhere in the world, you will want to keep this as an “everywhere I don’t need to charge taxes in” zone.
+- heading "Adding Zones" [level=4]
+- paragraph:
+  - text: To add a new tax zone, click
+  - strong: Add a Tax Zone
+  - text: .
+- paragraph:
+  - img "Highlighted Add a Tax Zone button."
+- paragraph: On the next page, complete the fields to set up the geographical area, which customers the zone applies to, and display settings for your new zone.
+- paragraph:
+  - img "screenshot of fields to fill in when adding a new tax zone"
+- list:
+  - listitem:
+    - strong: Tax zone name
+    - text: — set the name internal of this tax zone. We recommend naming it after the geographic region it represents.
+  - listitem:
+    - strong: This tax zone is based on one or more
+    - text: — select whether the zone represents one or more countries, subdivisions (such as state or province), or postal codes. Postal codes can be used together in a zone for city or county taxes.
+  - listitem:
+    - strong: Tax zone applies to
+    - text: — apply to all customers or limit to one or more customer groups. To include guest customers, assign a
+    - link "default customer group":
+      - /url: /s/article/Customer-Groups
+    - text: . Only available for stores on a
+    - link "Growth plan or higher":
+      - /url: https://www.bigcommerce.com/essentials/pricing/
+    - text: .
+  - listitem:
+    - strong: Enable this tax zone
+    - text: — toggle this checkbox to enable or disable the tax zone
+- heading "Tax Zone Display Settings" [level=4]
+- text: 
+- paragraph:
+  - strong: Using an automatic tax provider?
+  - text: Tax zone display settings configured here will still apply in your store if an automatic tax provider is enabled.
+- paragraph: While adding or editing a tax zone, you can configure how the pricing will display on your storefront.
+- paragraph:
+  - text: If you have
+  - link "geolocation":
+    - /url: https://support.bigcommerce.com/s/article/Tax-Overview#behavior
+  - text: enabled or a shopper enters their address, the prices displayed in product listing, product detail, cart, and checkout pages will use the
+  - link "tax display settings":
+    - /url: https://support.bigcommerce.com/s/article/Tax-Overview#display
+  - text: of the relevant tax zone.
+- paragraph:
+  - text: Note that you must set up all of the required tax zones for geolocation to correctly display prices to shoppers on your storefront. See
+  - link "Tax Overview":
+    - /url: https://support.bigcommerce.com/s/article/Tax-Overview#behavior
+  - text: for more information and recommendations.
+- paragraph:
+  - img "inclusive/exclusive pricing display setting and options to display both pricing on category and brand pages"
+- list:
+  - listitem:
+    - strong: How are prices displayed on your storefront
+    - text: — select to display prices as either inclusive or exclusive of tax
+  - listitem:
+    - strong: Show prices both including and excluding tax
+    - text: — select to display both inclusive and exclusive pricing on product listing pages (such as category and brand pages) and product detail pages (product pages). While this setting is optional, it can be valuable for pricing transparency to shoppers.
+- paragraph:
+  - text: Once you’ve finished with modifying the settings, click
+  - strong: Save
+  - text: to add or update the tax zone.
+- text: 
+- paragraph:
+  - strong: Responsive Tax Display Settings
+  - text: — If you’ve selected to use tax zone display settings for “Prices on Invoices” in
+  - link "Tax Settings":
+    - /url: /s/article/Tax-Overview/#tax-settings
+  - text: ", order invoices will reflect the display settings for the tax zone that the customer falls under. This means that customers will see their invoices formatted to match the tax display on the cart and checkout. For example, a US customer will see prices exclusive of tax on invoices, whereas a UK customer will see prices inclusive of tax, provided that the store has these settings enabled in their respective tax zones."
+- heading "Editing and Copying Zones" [level=4]
+- paragraph:
+  - text: To edit a tax zone, click on the
+  - strong: Action
+  - text: menu next to the zone, then select
+  - strong: Edit settings
+  - text: . You can make a copy of a tax zone and its rates by selecting
+  - strong: Duplicate zone
+  - text: . This can be useful when you are setting up multiple tax zones that will be similar to each other.
+- paragraph:
+  - img "Select Copy on the Action menu to make a copy of the tax zone."
+- heading "Deleting Zones" [level=4]
+- paragraph:
+  - text: To delete tax zones, check the box next to its name, then click the
+  - strong: Trash
+  - text: icon in the top navigation. Click
+  - strong: OK
+  - text: to confirm, and the zones will be removed.
+- paragraph:
+  - text: Note that the
+  - strong: Default zone
+  - text: ", used for any location outside of your other tax zones, cannot be deleted."
+- paragraph:
+  - img "Select the zone, then click the trash can icon to delete the zone"
+- paragraph:
+  - text: You can also select
+  - strong: Delete
+  - text: from the
+  - strong: Action
+  - text: menu.
+- paragraph:
+  - img "Select Delete from the Action menu."
+- link:
+  - /url: "#tax-rate"
+- heading "Tax Rates" [level=3]
+- paragraph: Once a tax zone is created, you can add rates to it. Tax rates are the percentages at which products or services are taxed. You may charge multiple tax rates within a zone. For example, if you have a city zone, you may need to set up a set of city-based tax rates in addition to a set of state-based tax rates.
+- paragraph:
+  - img "example of city and state tax rates in one tax zone"
+- paragraph:
+  - text: After you have created a tax zone, click the
+  - strong: Tax rates
+  - text: tab to add, delete, or edit tax rates. You can also select
+  - strong: Edit rates
+  - text: from the
+  - strong: Action
+  - text: menu next to a particular zone when viewing the list of tax zones.
+- paragraph:
+  - img "Select Edit Rates."
+- paragraph:
+  - text: When adding or editing a rate, you will need to specify a
+  - strong: Tax rate name
+  - text: and enter a rate for each tax class. Name the tax rate something that represents which tax you are charging, like
+  - emphasis: City Tax
+  - text: or
+  - emphasis: Federal Tax
+  - text: . If you do not need to charge tax for a particular tax class, enter
+  - strong: "0"
+  - text: for the rate.
+- paragraph:
+  - img "screenshot of tax rate fields"
+- heading "Tax Calculation Priority" [level=4]
+- paragraph:
+  - text: In some circumstances, you will need to apply multiple rates to a single tax zone. For example, you may need to charge both city and state, or both provincial and federal sales taxes. If you have a tax zone that has more than one rate, you need to set the
+  - strong: Calculation Priority
+  - text: .
+- paragraph:
+  - text: Tax rates in a zone that share the same priority will be added together. Tax rates in a zone that have different priorities will be compounded in order of priority, where the lowest number has the highest priority. So for example, if you had to charge a GST rate on top of a PST rate, you would give PST a priority of
+  - strong: "0"
+  - text: and GST a priority of
+  - strong: "1"
+  - text: .
+- paragraph:
+  - img "screenshot of calculation priority field for tax rate"
+- paragraph:
+  - text: Tax rates can be deleted using the same methods for
+  - link "deleting tax zones":
+    - /url: "#deleting-zones"
+  - text: — by selecting the rate, then clicking the
+  - strong: Trash
+  - text: icon in the top navigation, or by selecting
+  - strong: Delete
+  - text: from the
+  - strong: Action menu.
+- link:
+  - /url: "#examples"
+- heading "Common Tax Situations" [level=3]
+- list:
+  - listitem:
+    - link "State/Province with a single tax rate":
+      - /url: "#single-rate"
+  - listitem:
+    - link "Country with a single inclusive tax rate":
+      - /url: "#inclusive-rate"
+  - listitem:
+    - link "State/Province with multiple tax rates":
+      - /url: "#multiple-rates"
+  - listitem:
+    - link "Zone based on postal codes":
+      - /url: "#postal-codes"
+  - listitem:
+    - link "Using wildcards":
+      - /url: "#wildcards"
+- paragraph: Below we've included a few examples of how to set up zones, classes, and rates for everyday situations.
+- heading "State/Province with a Single Tax Rate" [level=4]
+- paragraph: First, we'll create a zone based on a state with a single tax rate. In our example, we're using Texas.
+- paragraph:
+  - strong: "1."
+  - text: In the basic tax settings area, click on the
+  - strong: Tax rates and zones
+  - text: tab, then click
+  - strong: Add a tax zone
+  - text: .
+- paragraph:
+  - img "Click Add a Tax Zone."
+- paragraph:
+  - strong: "2."
+  - text: Name the zone "Texas", then select
+  - strong: This tax zone is based on one or more Subdivisions
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Select
+  - strong: United States
+  - text: in the
+  - strong: Countries
+  - text: box, then select
+  - strong: Texas
+  - text: in the
+  - strong: Subdivisions
+  - text: box. Select
+  - strong: Display prices exclusive of tax
+  - text: ", as this is the normal expectation for US customers. Adjust any other settings to your preference, then click"
+  - strong: Save
+  - text: .
+- paragraph:
+  - strong: "4."
+  - text: Once you’ve saved the new tax zone, click
+  - strong: Add a tax rate
+  - text: on the
+  - strong: Tax rates
+  - text: tab.
+- paragraph:
+  - img "Click Add a Tax Rate."
+- paragraph:
+  - strong: "5."
+  - text: Name the tax rate, then type in the percentages for the appropriate tax classes. In this case, we only want to charge tax on products (not gift wrapping or shipping), so we will enter "8.25" into the field for
+  - strong: Default tax class
+  - text: and "0" for the other tax class rates.
+- paragraph:
+  - strong: "6."
+  - strong: Save
+  - text: your changes. Your Texas zone is set up successfully.
+- heading "Country With a Single Inclusive Tax Rate" [level=4]
+- paragraph:
+  - text: For this example, we will create a zone based on a country with a single tax rate that displays pricing on the storefront with all applicable taxes included. With tax zones of this type, you will often see tax settings such as a
+  - link "default tax address":
+    - /url: /s/article/Tax-Overview
+  - text: used to offer a comprehensive shopper experience from the storefront homepage to order status emails. In the example below, we’re using the United Kingdom as our country.
+- paragraph:
+  - strong: "1."
+  - text: In the basic tax settings area, click on the
+  - strong: Tax rates and zones
+  - text: tab, then click
+  - strong: Add a tax zone
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: Name the zone "United Kingdom", then select
+  - strong: This tax zone is based on one or more countries
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Select
+  - strong: United Kingdom
+  - text: in the
+  - strong: Countries
+  - text: box, then select
+  - strong: Display prices inclusive of tax
+  - text: . Adjust any other settings to your preference, then click
+  - strong: Save
+  - text: .
+- paragraph:
+  - strong: "4."
+  - text: Once you’ve saved the new tax zone, click
+  - strong: Add a tax rate
+  - text: on the
+  - strong: Tax rates
+  - text: tab.
+- paragraph:
+  - strong: "5."
+  - text: Name the tax rate, then enter in the appropriate percentages for your tax classes. To only charge tax on products (not gift wrapping or shipping), we will enter “20” for the
+  - strong: Default tax class
+  - text: and “0” for the other tax class rates.
+- paragraph:
+  - strong: "6."
+  - strong: Save
+  - text: your changes. At checkout, taxes will now display as included in product prices for UK customers.
+- heading "State/Province with Multiple Tax Rates" [level=4]
+- paragraph: In our next example, we'll create a zone based on a province with multiple tax rates. In this example, we're using Quebec, which has both a federal and provincial tax.
+- paragraph:
+  - strong: "1."
+  - text: In the basic tax settings area, click on the
+  - strong: Tax rates and zones
+  - text: tab, then click
+  - strong: Add a tax zone
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: Name the zone "Quebec", then select
+  - strong: This tax zone is based on one or more Subdivisions
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Select “Canada” from the
+  - strong: Countries
+  - text: box, then “Quebec” under
+  - strong: Subdivisions
+  - text: . Select
+  - strong: Display prices exclusive of tax
+  - text: ", as this is the normal expectation for Canadian customers. Adjust any other settings to your preference, then click"
+  - strong: Save
+  - text: .
+- paragraph:
+  - strong: "4."
+  - strong: Save
+  - text: the new tax zone, then click
+  - strong: Add a tax rate
+  - text: on the
+  - strong: Tax rates
+  - text: tab.
+- paragraph:
+  - strong: "5."
+  - text: Give the tax an appropriate name. For this example, we will name the federal tax rate
+  - strong: "\"GST\""
+  - text: (Goods and Services Tax). To only tax products, enter "5" for
+  - strong: Default Tax Class
+  - text: and "0" for the other tax class rates.
+- paragraph:
+  - img "Fill in the default tax class for GST tax rate."
+- paragraph:
+  - strong: "6."
+  - text: Leave the
+  - strong: Calculation priority
+  - text: set at "0", as we want this rate calculated first.
+  - strong: Save
+  - text: your changes.
+- paragraph:
+  - strong: "7."
+  - text: Click
+  - strong: Add a tax rate
+  - text: to add a second tax rate for provincial taxes.
+- paragraph:
+  - strong: "8."
+  - text: For this example, name the provincial tax rate
+  - strong: "\"QST\""
+  - text: (Quebec Sales Tax). Enter "9.975" for
+  - strong: Default tax class
+  - text: and "0" for the other tax class rates.
+- paragraph:
+  - img "Fill in the default tax class for QST tax rate."
+- paragraph:
+  - strong: "9."
+  - text: Set the
+  - strong: Calculation priority
+  - text: to "1", so that it is calculated after the federal tax (GST) rate.
+  - strong: Save
+  - text: your changes.
+- heading "Zone Based on Postal Codes" [level=4]
+- paragraph: Finally, we'll create a zone with a single tax rate, based on postal codes. In this example, we're using Florida, which has different tax rates based on your location within the state. Even though we are only creating a single 7.75% zone in this example, in practice, you'll want to create a zone for each different rate.
+- paragraph:
+  - strong: "1."
+  - text: In the basic tax settings area, click on the
+  - strong: Tax rates and zones
+  - text: tab, then click
+  - strong: Add a tax zone
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: Name the zone. In this example, it is named "Florida 7.75%". Select
+  - strong: This tax zone is based on one or more postal or Postal codes
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Select
+  - strong: United States
+  - text: from the
+  - strong: Countries
+  - text: drop-down, then type in the postal codes that apply to your specified tax rate into the
+  - strong: Postal Codes
+  - text: "box. Type each postal code on a new line, as illustrated below:"
+- paragraph:
+  - img "example of using postal codes to define the tax zone."
+- paragraph:
+  - strong: "4."
+  - text: Select
+  - strong: Display prices exclusive of tax
+  - text: ", as this is the normal expectation for US customers. Adjust any other settings to your preference, then click"
+  - strong: Save
+  - text: .
+- paragraph:
+  - strong: "5."
+  - text: Once you’ve saved the new tax zone, click
+  - strong: Add a tax rate
+  - text: on the
+  - strong: Tax rates
+  - text: tab.
+- paragraph:
+  - strong: "6."
+  - text: Give the tax an appropriate name. In our example, we're naming it “Florida 7.75% Postal Codes”. Enter the percentages for each of the tax class rates. For this example, enter "7.75" for
+  - strong: Default tax class
+  - text: ", and \"0\" for the other tax class rates."
+- paragraph:
+  - img "example of tax zone defined with zip codes, with default tax rate."
+- paragraph:
+  - strong: "7."
+  - text: Once finished, click
+  - strong: Save
+  - text: .
+- heading "Using Wildcards" [level=4]
+- paragraph: The Postal Codes field supports the use of the wildcards * and ?.
+- paragraph: Using an asterisk (*) will capture all numbers from its position in the postal code all the way to the right. For example, entering 335* will capture all postal codes ranging from 33500 through 33599.
+- paragraph:
+  - text: Using a question mark (?) will capture numbers 0-9
+  - strong: only
+  - text: in the position that the question mark is placed. For example, entering 335?1 will capture 33501 through 33591.
+- paragraph: "To capture all variations of a specific postal code, such as for ZIP+4 postal codes, enter the base code on one line, then the base code with an asterisk on the next line, like so:"
+- list:
+  - listitem: "53927"
+  - listitem: 53927*
+  - listitem: "53934"
+  - listitem: 53934*
+  - listitem: "53910"
+  - listitem: 53910*
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: How many tax zones can I create?
+- paragraph: There is no limit to the number of tax zones you can create on your store.
+- paragraph:
+  - strong: How many postal codes can I add to a tax zone?
+- paragraph:
+  - text: The
+  - strong: Postal codes
+  - text: field is limited to
+  - strong: 200 characters
+  - text: . If you need to add more, we recommend
+  - link "creating additional tax zones":
+    - /url: "#adding-zones"
+  - text: .
+- paragraph:
+  - strong: Do I have to create zones for everywhere I don’t charge tax?
+- paragraph:
+  - text: No. There is a zone called “Default Zone (everywhere else).
+  - strong: Do not create tax rates for this zone.
+  - text: This ensures that, by default, locations that you haven’t set up a zone for will not be charged taxes.
+- paragraph:
+  - strong: Why am I unable to select customer groups when specifying which groups a tax zone applies to?
+- paragraph:
+  - text: When
+  - link "assigning customer groups to a tax zone":
+    - /url: "#adding-zones"
+  - text: ", up to 1,000 customer groups are displayed in the list. If you see a “You have exceeded the limit of customer groups for this option.” message, your store has over 1,000 customer groups."
+- paragraph:
+  - text: Existing customer group selections are still applied to the tax zone, but updates are not able to be made within the control panel. To update the zone, reduce the number of customer groups below 1,000 or use the
+  - link "Tax Zones API":
+    - /url: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-zones
+  - text: .
+- paragraph:
+  - img "Alert advising to use Tax Zones API."
+- paragraph:
+  - strong: How do I collect a combination of local, state, and federal tax rates?
+- paragraph:
+  - text: You may need to charge additional rates for a local jurisdiction in addition to a county, state, provincial or federal tax.
+  - strong: However, an order will only be charged the rates of the zone it most closely corresponds to.
+  - text: In other words, if a customer’s postal code matches your city zone, it will take the city zone rates but not your state zone rates, even if the city is within that state.
+- paragraph:
+  - text: To charge a combination of city and state rates, you will need to set up
+  - strong: all applicable rates
+  - text: within each zone. So if customers within a certain city need to be charged both city and state rates, you will add both.
+- paragraph: "For example, if you are based in Dallas, Texas and had to charge both city and state taxes, you would create the following zones and rates:"
+- list:
+  - listitem:
+    - text: Texas (zone)
+    - list:
+      - listitem: State tax (rate)
+  - listitem:
+    - text: Dallas (zone)
+    - list:
+      - listitem: State tax (rate)
+      - listitem: City tax (rate)
+- paragraph: "This way, a customer based in Texas outside of Dallas will be charged the Texas zone rates: a state tax. A customer based inside of Dallas will be charged the Dallas zone rates: the state and city tax."
+- table:
+  - rowgroup:
+    - row "Example of Texas state zone with a single state tax rate Example of Dallas city tax zone, with two tax rates (city and state taxes).":
+      - cell "Example of Texas state zone with a single state tax rate":
+        - strong:
+          - strong:
+            - img "Example of Texas state zone with a single state tax rate"
+      - cell "Example of Dallas city tax zone, with two tax rates (city and state taxes).":
+        - img "Example of Dallas city tax zone, with two tax rates (city and state taxes)."
+- paragraph:
+  - strong: Can I restore my basic tax setup to its original values?
+- paragraph:
+  - text: Yes, this can be done from the
+  - strong: General
+  - text: tab in the basic tax settings area. Click the
+  - strong: Reset Configuration
+  - text: button to restore tax classes, rates, and zones to their default values.
+- paragraph:
+  - img "Reset basic tax configuration to default values."
+- paragraph:
+  - strong: My sales tax amount is off by a cent. Is something wrong?
+- paragraph:
+  - text: Basic tax calculation is done at the item line level. This can cause discrepancies when compared with tax calculated at the order level. See
+  - link "Tax Overview":
+    - /url: /s/article/Tax-Overview
+  - text: for more information.
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Tax Overview":
+      - /url: /s/article/Tax-Overview
+  - listitem:
+    - link "Automatic Tax Setup":
+      - /url: /s/article/Automatic-Tax-Setup
+  - listitem:
+    - link "Creating a Test Order":
+      - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+  - listitem:
+    - link "Checkout Errors":
+      - /url: /s/article/Checkout-Errors
+  - listitem:
+    - link "State Sales Tax Map":
+      - /url: https://www.taxjar.com/states/
+    - text: (TaxJar)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Basic Tax Setup
+- iframe

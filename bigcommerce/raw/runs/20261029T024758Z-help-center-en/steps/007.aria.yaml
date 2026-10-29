@@ -1,0 +1,494 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Mobile App":
+            - /url: /s/article/BigCommerce-Mobile-App
+      - list:
+        - listitem:
+          - link "Orders":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Troubleshooting Orders":
+                - /url: /s/article/Troubleshooting-Orders
+          - list:
+            - listitem:
+              - text: Viewing Orders
+              - list:
+                - listitem:
+                  - link "Order Statuses":
+                    - /url: /s/article/Order-Statuses
+                - listitem:
+                  - link "Order IDs":
+                    - /url: /s/article/Order-ID
+                - listitem:
+                  - link "Viewing Orders":
+                    - /url: /s/article/Orders
+            - listitem:
+              - text: Managing Orders
+              - list:
+                - listitem:
+                  - link "Backorders":
+                    - /url: /s/article/Backorders
+                - listitem:
+                  - link "Draft Orders":
+                    - /url: /s/article/Creating-a-Draft-Order
+                - listitem:
+                  - link "Manual Orders":
+                    - /url: /s/article/Creating-a-Manual-Order
+                - listitem:
+                  - link "Editing Orders":
+                    - /url: /s/article/Editing-an-Order
+                - listitem:
+                  - link "Invoices":
+                    - /url: /s/article/Invoices
+                  - list:
+                    - listitem:
+                      - link "Requirements":
+                        - /url: "#requirements"
+                    - listitem:
+                      - link "Default Preview":
+                        - /url: "#default"
+                    - listitem:
+                      - link "Printing":
+                        - /url: "#single"
+                    - listitem:
+                      - link "Printing in Bulk":
+                        - /url: "#bulk"
+                    - listitem:
+                      - link "Customizing":
+                        - /url: "#custom"
+                    - listitem:
+                      - link "FAQ":
+                        - /url: "#faq"
+                - listitem:
+                  - link "Importing and Exporting Orders":
+                    - /url: /s/article/Importing-Exporting-Orders
+                - listitem:
+                  - link "Capturing Funds":
+                    - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+                - listitem:
+                  - link "Order Actions":
+                    - /url: /s/article/Using-Order-Actions
+                - listitem:
+                  - link "Packing Slips":
+                    - /url: /s/article/Printing-Packing-Slips
+                - listitem:
+                  - link "Refunds":
+                    - /url: /s/article/Processing-Refunds
+                - listitem:
+                  - link "Returns":
+                    - /url: /s/article/Processing-Returns
+                - listitem:
+                  - link "Shipments":
+                    - /url: /s/article/Shipments
+                - listitem:
+                  - link "Shipping Labels":
+                    - /url: /s/article/Shipping-Labels
+            - listitem:
+              - text: Order Notifications
+              - list:
+                - listitem:
+                  - link "Order Notifications":
+                    - /url: /s/article/Order-Notifications
+                - listitem:
+                  - link "Customer Order Notifications":
+                    - /url: /s/article/Customer-Order-Notifications
+        - listitem:
+          - link "Customers":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "BigCommerce for WordPress":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Editing and Printing Invoices" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Default email preview":
+      - /url: "#default"
+  - listitem:
+    - link "Printing a single invoice":
+      - /url: "#single"
+  - listitem:
+    - link "Printing invoices in bulk":
+      - /url: "#bulk"
+  - listitem:
+    - link "Customizing the invoice email":
+      - /url: "#custom"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Invoice emails are automatically sent to your customers when they complete checkout to confirm their order was successfully placed. However, you can also print a physical copy for your own records or to include in your shipments. BigCommerce uses a default template that you can customize to suit your needs.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To view orders and print invoices, you must have the
+    - strong: Manage Orders
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To view and edit store email templates, you must have the
+    - strong: Read Channels
+    - text: and
+    - strong: Store Design
+    - text: permissions enabled on your user account.
+- link:
+  - /url: "#default"
+- heading "Default Email Preview" [level=3]
+- paragraph: "The default email sent to customers contains the following elements:"
+- paragraph:
+  - img "Invoice Email Example"
+- list:
+  - listitem:
+    - strong: Email title
+    - text: — a greeting message
+  - listitem:
+    - strong: Order number
+    - text: — number assigned to to the order
+  - listitem:
+    - strong: Shipping or pickup address
+    - text: — if a
+    - link "shipping method":
+      - /url: /s/article/Shipping-Methods
+    - text: is selected, the
+    - strong: Ship to
+    - text: address will display here. If a
+    - link "pickup location":
+      - /url: /s/article/Multi-Location
+    - text: is selected, that address and pickup instructions will display instead.
+  - listitem:
+    - strong: Product details
+    - text: — product image, name, price, and quantity. If applicable, product SKU,
+    - link "brand":
+      - /url: /s/article/Managing-Brands
+    - text: ","
+    - link "selected options":
+      - /url: /s/article/Product-Options-v3
+    - text: ","
+    - link "pre-order information":
+      - /url: /s/article/Product-Availability
+    - text: ", and"
+    - link "custom fields":
+      - /url: /s/article/Custom-Fields
+    - text: will also display here.
+  - listitem:
+    - strong: Order details
+    - text: — order total, including any shipping costs, fees, and taxes. The selected payment method and shipping method are also listed.
+  - listitem:
+    - strong: Billing address
+    - text: — the payee’s name and address. If
+    - link "order comments":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+    - text: are enabled, they will display below this section.
+- paragraph:
+  - text: For information on making changes to the default template, see
+  - link "Customizing the invoice email":
+    - /url: "#custom"
+  - text: .
+- link:
+  - /url: "#single"
+- heading "Printing a Single Invoice" [level=3]
+- paragraph: You can print the invoice of a single order in the control panel.
+- paragraph:
+  - text: Go to
+  - link "Orders › View":
+    - /url: http://login.bigcommerce.com/deep-links/orders
+    - strong: Orders › View
+  - text: and click the
+  - strong: Action
+  - text: menu to the right of the order you want to print an invoice for, then select
+  - strong: Print invoice
+  - text: .
+- paragraph: The invoice will open in a new tab and your browser’s print dialog box will appear. Adjust any desired settings, then print your invoice.
+- paragraph:
+  - img "Select Print Invoice from the action dropdown to the right of an order"
+- link:
+  - /url: "#bulk"
+- heading "Printing Invoices in Bulk" [level=3]
+- paragraph: It is also possible to print multiple order invoices at a time.
+- paragraph:
+  - text: Go to
+  - link "Orders › View":
+    - /url: http://login.bigcommerce.com/deep-links/orders
+    - strong: Orders › View
+  - text: and check the box to the left of all orders you want to print an invoice for.
+- paragraph:
+  - text: From the
+  - strong: Choose an action
+  - text: drop-down menu, click
+  - strong: Print invoices for selected
+  - text: ", then click"
+  - strong: Confirm
+  - text: .
+- paragraph: The invoices will open in a new tab and your browser’s print dialog box will appear. Adjust any desired settings, then print your invoices.
+- paragraph:
+  - img "Check the orders you want to delete, click Print Invoices for Select, then click Confirm"
+- link:
+  - /url: "#custom"
+- heading "Customizing the Invoice Email" [level=3]
+- paragraph:
+  - text: The default template can be adjusted by going to
+  - strong:
+    - link "Marketing › Transactional Emails":
+      - /url: http://login.bigcommerce.com/deep-links/marketing/transactional-emails
+  - text: .
+- paragraph:
+  - text: If you have
+  - link "more than one storefront":
+    - /url: /s/article/Single-Storefront-vs-Multi-Storefront
+  - text: ", you can customize each storefront’s templates independently by selecting the desired storefront from the drop-down menu at the top of the page. If you want to customize all storefront templates or have a single-storefront store, leave the menu selection on"
+  - strong: Global (storefront defaults)
+  - text: .
+- paragraph:
+  - text: Click the
+  - strong: Action
+  - text: menu next to
+  - emphasis: Order Email
+  - text: and select
+  - strong: Edit Template
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Edit Template highlighted."
+- paragraph:
+  - text: Under the
+  - strong: Phrases
+  - text: tab, you can customize the text used in the template. This allows you to quickly update certain aspects of the template with little to no coding.
+- paragraph:
+  - strong: Phrase names
+  - text: are identifiers placed into the template code (accessible in the
+  - strong: Content
+  - text: section of the
+  - strong: Code
+  - text: tab). These output a text string, the
+  - strong: Phrase value
+  - text: ", in the subject and body of the resulting email. Phrase names are not visible to shoppers."
+- paragraph:
+  - text: To make changes to an outputted string, edit the text in a
+  - strong: Phrase value
+  - text: field, then click
+  - strong: Save
+  - text: .
+- paragraph:
+  - img "Phrase tab."
+- paragraph:
+  - text: Additional phrases can be added by clicking
+  - strong: + Add new
+  - text: at the bottom of the page. Once created, the
+  - strong: Phrase name
+  - text: would need to be added to the template’s
+  - strong: Content
+  - text: on the
+  - strong: Code
+  - text: tab.
+- paragraph:
+  - text: For more ways to add branding and personalization to your emails, see
+  - link "Customizing Emails":
+    - /url: /s/article/Customizing-Emails
+  - text: .
+- paragraph:
+  - text: For more information on email templates, see our Dev Center articles
+  - link "Email Templates Overview":
+    - /url: https://docs.bigcommerce.com/docs/store-operations/emails
+  - text: and
+  - link "Email Object Reference":
+    - /url: https://docs.bigcommerce.com/docs/store-operations/emails/object-reference#invoice
+  - text: .
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Can I change the subject line of the email?
+- paragraph:
+  - text: Yes, the subject line text can be customized. See
+  - link "Customizing the Invoice Email":
+    - /url: "#custom"
+  - text: for details.
+- paragraph:
+  - strong: Do I have to use the built-in email template?
+- paragraph:
+  - text: No. The invoice email can be turned off by clicking the
+  - strong: Action
+  - text: menu to the right of the
+  - emphasis: Order Email
+  - text: template and selecting
+  - strong: Disable
+  - text: from the drop-down menu.
+- paragraph:
+  - text: If you do not have another invoicing solution already set up, the customer
+  - strong: will not
+  - text: receive a notification after completing an order. The
+  - link "App Marketplace":
+    - /url: https://www.bigcommerce.com/apps/categories/marketing/email-marketing/
+  - text: offers several solutions for invoice, abandoned cart, and order status emails.
+- paragraph:
+  - strong: Can I display taxes, such as state and local, as individual line items in the invoice email?
+- paragraph:
+  - text: If you have more than one
+  - link "tax rate":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: for a location, you can control how they display on invoice emails in your store’s
+  - link "Tax Settings":
+    - /url: /s/article/Tax-Overview
+  - text: .
+- paragraph:
+  - strong: Is there a way to preview emails before they are sent to customers?
+- paragraph:
+  - text: To preview the email template, click the
+  - strong: Action
+  - text: menu next to
+  - emphasis: Order Email
+  - text: and select
+  - strong: Edit Template
+  - text: from the drop-down menu, then click on the
+  - strong: Preview
+  - text: tab.
+- paragraph:
+  - text: You can also receive an example invoice in your email inbox by clicking
+  - strong: Send test email
+  - text: at the top left of the page. An email with example customer, product, and shipping details will be sent to the
+  - link "Administrator's email address":
+    - /url: /s/article/Store-Settings
+  - text: .
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Customizing Emails":
+      - /url: /s/article/Customizing-Emails
+  - listitem:
+    - link "Creating a Test Order":
+      - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+  - listitem:
+    - link "Email Templates Overview":
+      - /url: https://docs.bigcommerce.com/docs/store-operations/emails
+    - text: (Dev Center)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Editing and Printing Invoices
+- iframe

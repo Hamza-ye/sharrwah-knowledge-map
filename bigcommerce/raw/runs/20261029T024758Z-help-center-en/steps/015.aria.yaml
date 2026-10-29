@@ -1,0 +1,453 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Currency Setup":
+                - /url: /s/article/Managing-Currencies
+            - listitem:
+              - link "Multicurrency":
+                - /url: /s/article/Using-Multiple-Currencies
+            - listitem:
+              - link "Recurring Billing":
+                - /url: /s/article/Setting-up-Recurring-Billing
+            - listitem:
+              - link "Test Orders":
+                - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+          - list:
+            - listitem:
+              - text: Checkout
+              - list:
+                - listitem:
+                  - link "Optimized One-Page Checkout":
+                    - /url: /s/article/Optimized-Single-Page-Checkout
+                - listitem:
+                  - link "Address Autocomplete":
+                    - /url: /s/article/Address-Autocomplete
+                - listitem:
+                  - link "Form Fields":
+                    - /url: /s/article/Editing-Form-Fields
+                - listitem:
+                  - link "Stored Credit Cards":
+                    - /url: /s/article/Enabling-Stored-Payment-Methods
+                - listitem:
+                  - link "Gift Certificates":
+                    - /url: /s/article/Gift-Certificates
+                - listitem:
+                  - link "Gift Wrapping":
+                    - /url: /s/article/Gift-Wrapping
+                - listitem:
+                  - link "Order-level Fees":
+                    - /url: /s/article/Handling-Fees
+                - listitem:
+                  - link "Persistent Cart":
+                    - /url: /s/article/Persistent-Cart
+                - listitem:
+                  - link "Storefront Checkout Configurations":
+                    - /url: /s/article/Storefront-Checkout-Configurations
+                  - list:
+                    - listitem:
+                      - link "Checkout Comparison":
+                        - /url: "#comparison"
+                    - listitem:
+                      - link "FAQ":
+                        - /url: "#faq"
+            - listitem:
+              - text: Payment Methods
+              - list:
+                - listitem:
+                  - link "Available Payment Gateways":
+                    - /url: /s/article/Available-Payment-Gateways
+                - listitem:
+                  - link "Offline Payments":
+                    - /url: /s/article/Offline-Payment-Methods
+            - listitem:
+              - text: Troubleshooting
+              - list:
+                - listitem:
+                  - link "Understanding Checkout Errors":
+                    - /url: /s/article/Checkout-Errors
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Storefront Checkout Configurations" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Checkout comparison":
+      - /url: "#comparison"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Choosing a checkout configuration that matches your business needs can help enhance the shopper experience and improve conversion rates. Depending on your storefront setup, there are several different checkout configurations options available to you.
+- paragraph:
+  - img "Chart showing checkout configurations for Stencil and headless storefronts."
+- paragraph: Use this article to guide you and your development team in selecting the best configuration for your store’s checkout environment.
+- link:
+  - /url: "#comparison"
+- heading "Checkout Comparison" [level=3]
+- paragraph: This section compares the various checkout configurations available for storefronts, and highlights the benefits and potential limits associated with each checkout option.
+- paragraph:
+  - text: We recommend determining which type of storefront you will be using (
+  - link "Stencil":
+    - /url: /s/article/The-Stencil-Theme-Platform
+  - text: versus
+  - link "headless":
+    - /url: https://docs.bigcommerce.com/docs/storefront/headless
+  - text: or
+  - link "composable":
+    - /url: https://docs.bigcommerce.com/docs/storefront
+  - text: ), before reviewing the available checkout configurations so you can select the one that best matches your store’s technical requirements.
+- table:
+  - rowgroup:
+    - 'row "Checkout Option Stencil Storefront Headless or Composable Storefront Checkout URL: mystore.com/checkout Checkout URL: checkout.mystore.com/checkout Checkout URL: checkout.mystore.com"':
+      - columnheader "Checkout Option"
+      - columnheader "Stencil Storefront"
+      - columnheader "Headless or Composable Storefront"
+      - 'columnheader "Checkout URL: mystore.com/checkout"'
+      - 'columnheader "Checkout URL: checkout.mystore.com/checkout"'
+      - 'columnheader "Checkout URL: checkout.mystore.com"'
+  - rowgroup:
+    - row "Optimized One-Page Checkout ✓ ✗ ✓ ✗ ✗":
+      - cell "Optimized One-Page Checkout":
+        - link "Optimized One-Page Checkout":
+          - /url: "#oopc"
+      - cell "✓"
+      - cell "✗"
+      - cell "✓"
+      - cell "✗"
+      - cell "✗"
+    - row "Open Checkout ✓ ✗ ✓ ✗ ✗":
+      - cell "Open Checkout":
+        - link "Open Checkout":
+          - /url: "#open-checkout"
+      - cell "✓"
+      - cell "✗"
+      - cell "✓"
+      - cell "✗"
+      - cell "✗"
+    - row "Redirected Checkout ✗ ✓ ✗ ✓ ✗":
+      - cell "Redirected Checkout":
+        - link "Redirected Checkout":
+          - /url: "#redirected-checkout"
+      - cell "✗"
+      - cell "✓"
+      - cell "✗"
+      - cell "✓"
+      - cell "✗"
+    - row "Embedded Checkout ✗ ✓ ✗ ✗ ✓":
+      - cell "Embedded Checkout":
+        - link "Embedded Checkout":
+          - /url: "#embedded-checkout"
+      - cell "✗"
+      - cell "✓"
+      - cell "✗"
+      - cell "✗"
+      - cell "✓"
+    - row "Custom Headless Checkout ✗ ✓ ✓ ✗ ✗":
+      - cell "Custom Headless Checkout":
+        - link "Custom Headless Checkout":
+          - /url: "#custom-headless"
+      - cell "✗"
+      - cell "✓"
+      - cell "✓"
+      - cell "✗"
+      - cell "✗"
+- heading "Optimized One-Page Checkout (OOPC)" [level=4]
+- list:
+  - listitem:
+    - link "Out-of-the-box checkout":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+    - text: for native BigCommerce storefronts
+  - listitem: Optimized to drive high conversion rates
+  - listitem: Minor styling and display customizations
+  - listitem:
+    - text: Checkout URL — mystore.com/
+    - strong: checkout
+    - list:
+      - listitem: The checkout page is a URL path that comes after the storefront root domain
+- heading "Open Checkout" [level=4]
+- list:
+  - listitem:
+    - link "Customize the native BigCommerce storefront checkout":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/open-checkouts/guide
+    - text: for greater control over your checkout experience
+  - listitem: Acts as a starter kit for a custom checkout, without the need to build a checkout from scratch
+  - listitem: Built with React and compiles into a static JavaScript bundle
+  - listitem:
+    - text: Checkout URL — mystore.com/
+    - strong: checkout
+    - list:
+      - listitem: The checkout page is a URL path that comes after the storefront root domain
+- heading "Redirected Checkout" [level=4]
+- list:
+  - listitem:
+    - text: Redirects shoppers from your
+    - link "Headless":
+      - /url: https://docs.bigcommerce.com/docs/storefront/headless
+    - text: or
+    - link "Composable":
+      - /url: https://docs.bigcommerce.com/docs/storefront
+    - text: storefront to your BigCommerce storefront checkout page
+  - listitem: Unlocks the full BigCommerce checkout experience, including hosted wallets
+  - listitem: Customize your checkout layout through Stencil framework or Checkout SDK
+  - listitem:
+    - text: Checkout URL —
+    - strong: checkout
+    - text: .mystore.com/
+    - strong: checkout
+  - listitem:
+    - text: The BigCommerce storefront domain must be served from a subdomain of the root domain
+    - list:
+      - listitem: The checkout page is a URL path that comes after the storefront root domain
+- heading "Embedded Checkout" [level=4]
+- list:
+  - listitem: The BigCommerce storefront checkout page is embedded via an iframe, keeping shoppers on your headless storefront
+  - listitem:
+    - text: Recommended for simple headless setups, such as
+    - link "BigCommerce for Wordpress":
+      - /url: /s/article/BigCommerce-for-WordPress
+  - listitem:
+    - text: Supported by many
+    - link "payment gateways":
+      - /url: /s/article/Available-Payment-Gateways
+    - text: ", but not compatible with all digital wallets"
+  - listitem:
+    - text: Minor
+    - link "styling and display customizations":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+  - listitem:
+    - text: Checkout URL —
+    - strong: checkout
+    - text: .mystore.com
+    - list:
+      - listitem: The BigCommerce storefront domain must be served from a subdomain of the root domain
+      - listitem: The embedded checkout page’s URL is not visible to shoppers
+- heading "Custom Headless Checkout" [level=4]
+- list:
+  - listitem:
+    - text: Full control over your headless storefront checkout using
+    - link "BigCommerce Cart and Checkout APIs":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/guide/graphql-storefront
+  - listitem: Keeps shoppers on your headless storefront without the need for a redirect
+  - listitem:
+    - text: Processes payments using the
+    - link "Payments API":
+      - /url: https://docs.bigcommerce.com/docs/store-operations/payments
+  - listitem:
+    - text: Checkout URL — mystore.com/
+    - strong: checkout
+    - list:
+      - listitem: The checkout page is a URL path that comes after the storefront root domain
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Do I need a developer?
+- paragraph:
+  - text: A developer is
+  - strong: highly recommended
+  - text: if you want to explore custom checkouts or headless storefronts. You can find a list of BigCommerce certified developers in our
+  - link "Partner Directory":
+    - /url: https://partners.bigcommerce.com/directory/
+  - text: .
+- paragraph:
+  - strong: Are the different checkout configurations limited to certain plans?
+- paragraph: No, the checkout configurations listed above are available to all store plans.
+- paragraph:
+  - strong: Why does the Redirected and Embedded checkout URL need to be a subdomain of the storefront root domain?
+- paragraph: Shoppers will encounter security errors and the checkout page will not load properly if the headless storefront domain doesn’t match the BigCommerce storefront domain.
+- paragraph:
+  - text: You can configure your store’s
+  - link "checkout domain":
+    - /url: /s/article/Domain-Settings-for-Headless-Storefronts
+  - text: in Channel Manager or by upserting the URL
+  - link "via API":
+    - /url: https://docs.bigcommerce.com/docs/rest-management/channels/site-checkout-url#upsert-a-site%CA%BCs-checkout-url
+  - text: .
+- paragraph:
+  - strong: What checkout configurations are available for stores using Multi-Storefront?
+- paragraph:
+  - text: Stores with
+  - link "more than one storefront":
+    - /url: /s/article/Single-Storefront-vs-Multi-Storefront
+  - text: can use any of the checkout configurations listed above. In addition, several checkout settings can be configured
+  - link "uniquely per storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: .
+- paragraph:
+  - strong: Can I control the www redirect for my headless channel's unique checkout URL?
+- paragraph:
+  - text: Yes, you can manage the setting via the
+  - strong: Storefront SEO
+  - link "API endpoint":
+    - /url: https://docs.bigcommerce.com/docs/rest-management/settings/storefront-seo#update-storefront-seo-settings
+  - text: .
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Optimized One-Page Checkout":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+  - listitem:
+    - link "Optimized One-Page Checkout":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/optimized-one-page-checkout
+    - text: (Dev Center)
+  - listitem:
+    - link "Checkout Customizability":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout
+    - text: (Dev Center)
+  - listitem:
+    - link "Installing an Open Source Checkout":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/open-checkouts/guide
+    - text: (Dev Center)
+  - listitem:
+    - link "Getting Started with Checkout SDK":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/checkout-sdk
+    - text: (Dev Center)
+  - listitem:
+    - link "Embedded Checkout Overview":
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/embedded-checkout
+    - text: (Dev Center)
+  - listitem:
+    - 'link "GraphQL Storefront API: Carts and Checkout"':
+      - /url: https://docs.bigcommerce.com/docs/storefront/cart-checkout/guide/graphql-storefront
+    - text: (Dev Center)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Storefront Checkout Configurations
+- iframe

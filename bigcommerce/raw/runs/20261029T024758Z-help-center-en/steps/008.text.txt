@@ -1,0 +1,188 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+Users
+Billing
+Pricing
+Account Dashboard
+Changing Plans
+About Invoices
+Requirements
+Account Dashboard
+Viewing
+Line Items
+Paying
+Troubleshooting
+FAQ
+Cancelling
+TD Bank
+About Your BigCommerce Invoice
+What We'll Cover
+Requirements
+Accessing the Account Dashboard
+Viewing invoices
+Invoice line Items
+Paying an invoice
+Troubleshooting payment errors
+FAQ
+Your BigCommerce invoices can be found in the Account Dashboard. They contain line items for your BigCommerce store plan, Open Payment Provider and plan overage fees, additional storefront charges, and Unified Billing apps subscriptions. Generated invoices are sent to the email address listed as your Billing Contact.
+Requirements
+To access the Account Dashboard, you must be the store owner.
+Accessing the Account Dashboard
+To view invoices and make payments in the Account Dashboard, navigate to manage.bigcommerce.com and log into your account.
+If you are already logged into the control panel as the store owner, click your store name and select Manage store account from the drop-down menu.
+Note: If you are unable to log into the control panel and your website is displaying a “Store Unavailable - This store is currently unavailable due to maintenance. It should be available again shortly” message, your store may be down due to unpaid invoices. To add a new payment method and pay any overdue charges, see Paying an Invoice.
+Viewing Invoices
+In the Account Dashboard, click Account and select Invoices from the drop-down menu.
+Using a “Powered By” store? If you were onboarded to BigCommerce through a partner, you will not have an invoice section in the Account Dashboard and will not receive invoices from BigCommerce.
+Click Download next to an invoice to save it as a PDF file on your device. Open the file to view or print for your records.
+If your store was migrated from our legacy billing system, older invoices can be found by clicking Archived Invoices.
+Invoice Line Items
+Plan line items
+Additional storefront line items
+Fee line items
+App subscription line items
+Credit line items
+Statement of Account
+Related Transactions
+The specific line items that appear on your invoice are determined by factors such as your store plan, the payment gateways you have enabled, and your installed apps. These factors also influence invoice frequency.
+Every store will receive invoices for their store’s plan, whether monthly or annually. Additional charges may also appear in the same invoice or a separate invoice. For example, a store may be invoiced annually, but receive monthly invoices for an app subscription.
+Line item information is organized into the following columns on the invoice:
+Store ID — The numeric ID of the store related to the line item.
+For steps on locating your store’s ID, see “Locating Your Billing Cycle” on Changing Your Store's Plan.
+Charge Name — The description of the line item.
+Service Period — The timeframe relevant to the line item.
+For a store plan, this indicates the monthly or yearly billing cycle.
+UOM — The unit of measurement or explanation of values in the Qty field.
+Qty — The number of units related to the line item.
+For fees, this indicates the amount subject to the specific fee.
+Gross Charge — The amount before discounts.
+Discount Amt — The amount of any applied discounts.
+Net Charge — The amount after subtracting the Discount Amt from the Gross Charge.
+PLAN LINE ITEMS
+Whether your store is billed monthly or annually, you will receive an invoice each billing cycle.
+Example monthly plan invoice
+Example yearly plan invoice
+ADDITIONAL STOREFRONT LINE ITEMS
+When you purchase an additional storefront for your store, it is added to your invoice as a line item. Multiple non-default storefronts are combined into a single Additional Storefront line item.
+Each storefront uses the same billing cycle as your store plan. See “Purchasing a Storefront Seat” in Enabling Multi-Storefront to learn more.
+FEE LINE ITEMS
+Open Payment Provider and plan overage fees are billed monthly in arrears as separate line items. For more information on these fees and their calculations, see About BigCommerce Pricing.
+APP SUBSCRIPTION LINE ITEMS
+BigCommerce partners participating in Unified Billing use BigCommerce Payment APIs to charge for app purchases and subscriptions. These app charges will appear on your BigCommerce invoices.
+CREDIT LINE ITEMS
+In some instances a credit may be applied to your invoice. These line items will appear as a negative value and are not a charge. They are subtracted from your Net Charge amount when calculating your total due.
+STATEMENT OF ACCOUNT
+The Statement of Account section on the second page of your invoice lists all invoices currently open on your account.
+RELATED TRANSACTIONS
+The Transactions related to this Invoice section on the last page of your invoice details payment attempts made towards your line item charges. These attempts are usually made automatically using the payment method on file in the Account Dashboard.
+If the payment was not successful or your store is located in India, the payment must be made manually. For payment steps, see Paying an Invoice.
+Paying an Invoice
+Merchants in India must pay their invoice manually. If your business is located in India, you will be sent an email reminder on your billing date with a link to complete your payment.
+BigCommerce store charges are automatically paid using the payment method on file in the Account Dashboard. However, there may be instances where the payment fails, requiring invoices to be paid manually.
+BigCommerce staff will never ask for your payment information. Our support team cannot edit the payment method in your account. Use the steps below to enter your payment information and pay an invoice.
+1. Log into the Account Dashboard by navigating to manage.bigcommerce.com.
+2. In the Account Dashboard, click Account and select Payment method from the drop-down menu.
+3. Click Edit to select and enter new payment details. The methods available to pay your invoice can vary depending on your store’s plan and region.
+4. Click Save. Note that this method will now be used to automatically pay charges for future billing cycles.
+5. Click Pay Now to complete the payment. If you encounter any issues, see Troubleshooting Payment Errors.
+Did you know? Using PayPal to pay your BigCommerce subscription can help prevent interruption of service due to an expired credit or debit card. PayPal may offer flexible payment options for settling your PayPal invoice. Contact their team to see what options may be available to you.
+Troubleshooting Payment Errors
+Billing address mismatch
+MAX 7 error
+Card blocked for too many failed attempts
+Other errors
+BILLING ADDRESS MISMATCH
+If the billing address associated with your card does not match your BigCommerce account's address, the payment will fail. To update your account address, use the steps below.
+In the BigCommerce Account Dashboard, click Account and select Account details from the drop-down menu, then click Edit to the right of the contact listed as the billing contact.
+MAX 7 ERROR
+A “MAX 7” error occurs when the geographic distance between your billing address and the location you are attempting to make a payment from is too great. For example, attempting to pay an invoice while in a different country or using a VPN can result in a MAX 7 error.
+Our system uses your device's IP address to determine the zip code of your location when attempting to make a payment. To avoid this error, only attempt to process the payment while in the same zip code as your billing address.
+CARD BLOCKED FOR TOO MANY FAILED ATTEMPTS
+Multiple failed payment attempts will cause your card to be blocked for 24 - 48 hours. If this occurs, you will not be able to use that card for payment until it has been unblocked.
+OTHER ERRORS
+If you have further issues with an error not listed or wish to pay an invoice for a closed account and are unable to log in to the Account Dashboard, contact our support team or create a Billing Case.
+FAQ
+Can I remove the past-due payment notification from my control panel after I have paid the invoice?
+The past-due notification is automatically removed from the control panel. This usually occurs the day after your payment is received and verified.
+I switched from a monthly to an annual billing cycle. Why am I not being billed for the full year?
+The annual billing cycle begins on the date of your store account creation rather than the plan change date. After switching the billing frequency, your first invoice covers the difference from the date of upgrade to the creation anniversary date.
+For example, if your account was created in January and the plan is changed in May, the first annual charge is prorated for May through January. In January, you will then be charged for a full year.
+I just upgraded my store plan. Why is there a prorated charge?
+Plan upgrades are processed immediately to allow you to access the new plan’s features without any delay. At the time of the upgrade, you are charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the next cycle’s invoice.
+For an annual plan, this means the prorated amount will cover the difference between the upgrade date and the start of the next year’s cycle.
+For example, if your billing cycle ends in November and you upgrade in April, you will be charged a prorated amount for the difference between plans for April through November.
+For an upgrade from the Growth plan to the Scale plan (299 - 79), this would be a prorated charge of around $1,760 (220 x 8).
+Purchasing a storefront seat also incurs a prorated charge. Additional storefronts use the same billing cycle as your store plan. You will be charged the price of the storefront for the remainder of the current cycle, and then you will be billed for the full amount on the next cycle’s invoice.
+Why am I seeing app purchases and subscriptions on my BigCommerce invoice?
+BigCommerce partners participating in Unified Billing use BigCommerce Payment APIs to charge for app purchases and subscriptions.
+This allows app purchases and subscriptions to be charged to the payment method on file in your Account Dashboard, using BigCommerce’s PCI compliant payment system.
+While payments are processed using BigCommerce’s payment systems, you should still contact the app developer if you have any questions or need troubleshooting assistance. You can find their contact information by clicking Contact Partner on the app’s listing page in the App Marketplace.
+I cancelled my app subscription after a free trial period, why do I have a prorated charge on my invoice?
+For app subscriptions charged via Unified Billing, if you cancel a subscription after a free trial period ends, you will be charged a prorated amount for the time between the trial end date and cancellation date. This prorated charge will appear on the next invoice following your store’s billing cycle.
+For example, if an app’s free trial period ends on 1/15, but the subscription was cancelled on 1/17, a prorated charge for two days would be applied to the store’s next invoice.
+Why am I not getting monthly or yearly payment warning notifications in my email?
+Confirm that your billing contact email address in the Account Dashboard is correct.
+If the contact email is correct, check your email spam folder or search your inbox for an email with the subject line “Upcoming Annual/Monthly Plan charge for your BigCommerce Account”.
+To help ensure you receive emails from BigCommerce, add accounts@bigcommerce.com and noreply@bigcommerce.com to your contacts or allowed senders list.
+What happens if I don't pay my invoice by its due date?
+While unpaid invoices will ultimately cause your storefront and control panel to become unavailable, no action is taken on your store until your invoice is 28 days past due. This grace period allows your store to continue operating while billing related issues are being resolved.
+Additional Resources
+About BigCommerce Pricing
+Changing Your Store's Plan
+Creating and Viewing Support Cases
+Store Owner User Role and Permissions
+The Account Dashboard
+BigCommerce Pricing (bigcommerce.com)
+Fees and Billing (commerce.com)
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+About Your BigCommerce Invoice

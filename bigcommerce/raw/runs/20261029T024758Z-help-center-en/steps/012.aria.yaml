@@ -1,0 +1,925 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Channel Manager":
+            - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+        - listitem:
+          - link "Getting Started with Localization":
+            - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+        - listitem:
+          - link "Multi-Storefront | International Enhancements":
+            - /url: /s/article/International-Enhancements-for-Multi-Storefront
+          - list:
+            - listitem:
+              - link "Requirements":
+                - /url: "#requirements"
+            - listitem:
+              - link "Creating Storefronts":
+                - /url: "#setup"
+            - listitem:
+              - link "Settings":
+                - /url: "#localization"
+            - listitem:
+              - link "Product Overrides":
+                - /url: "#product-overrides"
+            - listitem:
+              - link "FAQ":
+                - /url: "#faq"
+        - listitem:
+          - link "Multi-Storefront Payment Methods":
+            - /url: /s/article/Multi-Storefront-Payment-Methods
+      - list:
+        - listitem:
+          - link "Storefronts":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Catalyst":
+                - /url: /s/article/Catalyst
+            - listitem:
+              - link "BigCommerce for WordPress":
+                - /url: /s/article/BigCommerce-for-WordPress
+            - listitem:
+              - link "DEITY Falcon":
+                - /url: /s/article/Deity
+        - listitem:
+          - link "Marketplaces":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Ads and Social":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Point of Sale":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "International Enhancements for Multi-Storefront" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "How it works":
+      - /url: "#how"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Creating an international storefront":
+      - /url: "#setup"
+  - listitem:
+    - link "Localization settings":
+      - /url: "#localization"
+  - listitem:
+    - link "Customizing product details per storefront (product overrides)":
+      - /url: "#product-overrides"
+  - listitem:
+    - link "Image management per storefront":
+      - /url: "#image-management"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- text: 
+- paragraph:
+  - strong: "Limited Availability:"
+  - text: This feature may not yet be available for all stores, and available functionality in stores may vary.
+- paragraph: From international brands with branches in multiple countries and regions to domestic businesses expanding to offer sophisticated cross-border shopping, shipping, and fulfillment, merchants selling in different regions need to be able to customize their settings on a per storefront basis. This means providing shoppers with local units of measurement, payments, currencies, shipping options, tax calculations, and localized content.
+- link:
+  - /url: "#how"
+- heading "How it Works" [level=3]
+- paragraph: "When creating a storefront, you can select a default shopper-facing language, and assign localized store profile information and SEO settings. With the Localization settings found in the left navigation, you can assign:"
+- list:
+  - listitem:
+    - strong: Default country
+  - listitem:
+    - strong: Default and additional languages
+  - listitem:
+    - strong: Physical dimensions
+  - listitem:
+    - strong: Date and timezone
+- paragraph: "While adding or editing products, you can select a storefront and customize the following fields to use the storefront’s default language and preferred content:"
+- table:
+  - rowgroup:
+    - row "Name Description Categories Images Variant options Modifier options Featured on this storefront Search keywords Warranty information Availability Pre-order message Page title Meta description Product URL Custom fields":
+      - cell "Name Description Categories Images Variant options Modifier options Featured on this storefront Search keywords":
+        - list:
+          - listitem:
+            - strong: Name
+          - listitem:
+            - strong: Description
+          - listitem:
+            - strong: Categories
+          - listitem:
+            - strong: Images
+          - listitem:
+            - strong: Variant options
+          - listitem:
+            - strong: Modifier options
+          - listitem:
+            - strong: Featured on this storefront
+          - listitem:
+            - strong: Search keywords
+      - cell "Warranty information Availability Pre-order message Page title Meta description Product URL Custom fields":
+        - list:
+          - listitem:
+            - strong: Warranty information
+          - listitem:
+            - strong: Availability
+          - listitem:
+            - strong: Pre-order message
+          - listitem:
+            - strong: Page title
+          - listitem:
+            - strong: Meta description
+          - listitem:
+            - strong: Product URL
+          - listitem:
+            - strong: Custom fields
+- paragraph: These customizations will only apply to the product as it appears on the selected storefront. All other fields will use the global values you have set for the product.
+- text: 
+- paragraph:
+  - strong: New to BigCommerce and Multi-Storefront?
+  - text: See
+  - link "Getting Started with Localization on Multi-Storefronts":
+    - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+  - text: for more information on Multi-Storefront features and creating localized storefront experiences.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To use
+    - link "product overrides":
+      - /url: "#product-overrides"
+    - text: in the control panel, your store must be on a Performance plan.
+    - list:
+      - listitem:
+        - text: You can create product overrides
+        - link "via the API":
+          - /url: https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/msf-international-enhancements/overview
+        - text: regardless of your store’s plan.
+  - listitem:
+    - text: The store must meet the
+    - link "requirements and limitations":
+      - /url: /s/article/Enabling-Multi-Storefront
+    - text: for Multi-Storefront.
+  - listitem:
+    - text: Stores using
+    - link "B2B Edition":
+      - /url: /s/article/B2B-Edition
+    - text: must
+    - link "request product override":
+      - /url: "#B2B"
+    - text: functionality.
+  - listitem:
+    - text: The relevant permissions for
+    - link "creating storefronts":
+      - /url: /s/article/Enabling-Multi-Storefront
+    - text: ","
+    - link "configuring localization settings":
+      - /url: /s/article/Localization-Settings
+    - text: ", and"
+    - link "editing products":
+      - /url: /s/article/Adding-Products-v3
+    - text: must be enabled in your user account.
+- text: 
+- paragraph:
+  - strong: Functionality may not appear immediately after meeting the Multi-Storefront requirements.
+  - text: Store provisioning of International Enhancements for Multi-Storefront may take
+  - strong: up to 24 hours
+  - text: after the eligibility checklist is passed. See
+  - link "Enabling Multi-Storefront":
+    - /url: /s/article/Enabling-Multi-Storefront
+  - text: for more information.
+- link:
+  - /url: "#setup"
+- heading "Creating an International Storefront" [level=3]
+- paragraph: Follow the steps below to create a new storefront.
+- paragraph:
+  - strong: "1."
+  - text: Go to
+  - link "Channels › Channel Manager":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - strong: Channels
+    - text: ›
+    - strong: Channel Manager
+  - text: ", and click"
+  - strong: Add new
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: Under Storefronts, click the
+  - strong: Create
+  - text: button next to
+  - emphasis: BigCommerce
+  - text: .
+- paragraph:
+  - img "Click Create next to the BigCommerce storefront option."
+- paragraph:
+  - strong: "3."
+  - text: Fill in your storefront name, and select the base language for shopper-facing content. Click
+  - strong: Create
+  - text: when ready.
+- paragraph:
+  - img "Fill in the storefront name and storefront language for shoppers"
+- paragraph:
+  - strong: "4."
+  - text: "Proceed with setting up your storefront by reviewing the following areas:"
+- list:
+  - listitem:
+    - strong: Theme
+    - text: — View the
+    - link "Theme Marketplace":
+      - /url: /s/article/The-Bigcommerce-Themes-Marketplace
+    - text: and select a new theme, or launch
+    - link "Page Builder":
+      - /url: /s/article/Page-Builder
+    - text: with your current theme.
+  - listitem:
+    - strong: Categories
+    - text: — Create
+    - link "channel-specific categories":
+      - /url: /s/article/Product-Categories
+    - text: for your products.
+  - listitem:
+    - strong: Products
+    - text: — Assign products to channel-specific categories and manage availability.
+  - listitem:
+    - strong: Web pages
+    - text: — Create
+    - link "content pages":
+      - /url: /s/article/Web-Pages
+    - text: unique to the storefront.
+  - listitem:
+    - strong: Emails
+    - text: — Determine which store emails to send for each storefront and customize
+    - link "email templates":
+      - /url: /s/article/Multi-Storefront
+    - text: .
+  - listitem:
+    - strong: Domain
+    - text: — Assign and manage the storefront's domain, and add a
+    - link "third-party SSL certificate":
+      - /url: /s/article/Multi-Storefront
+    - text: .
+  - listitem:
+    - strong: Settings and launch
+    - text: — Configure key storefront settings, such as contact information, search settings, and customer privacy, and make the storefront available to shoppers.
+- paragraph:
+  - text: See
+  - link "Configuring Storefronts":
+    - /url: /s/article/Configuring-Storefronts
+  - text: for more information on storefront settings and navigation.
+- text: 
+- paragraph:
+  - strong: Did you know?
+  - text: You can also set
+  - link "abandoned cart emails":
+    - /url: /s/article/Using-the-Abandoned-Cart-Saver
+  - text: ","
+  - link "product filters":
+    - /url: /s/article/Product-Filtering-Settings
+  - text: ", and"
+  - link "gift certificates":
+    - /url: /s/article/Gift-Certificates
+  - text: per storefront, allowing you to offer a full-service localized shopping experience.
+- link:
+  - /url: "#localization"
+- heading "Localization Settings" [level=3]
+- list:
+  - listitem:
+    - link "Locale":
+      - /url: "#locale"
+  - listitem:
+    - link "Physical dimensions":
+      - /url: "#dimensions"
+  - listitem:
+    - link "Date and timezone":
+      - /url: "#date-timezone"
+- paragraph:
+  - link "Localization settings":
+    - /url: /s/article/Localization-Settings
+  - text: are located in the left navigation when viewing a storefront. From here, you can set the default country and language, physical dimension format for products, and date and timezone for the storefront.
+- paragraph:
+  - img "Localization settings"
+- paragraph:
+  - text: When configuring your storefront for a multi-region experience, ensure that
+  - emphasis: Use global
+  - text: is unchecked for each of these settings. If the related checkbox is enabled, the setting will use “global” storefront settings, which are configured outside of Channel Manager. For example, the locale settings in the storefront (default country and language) would use the locale settings found in
+  - link "Settings › Localization":
+    - /url: http://login.bigcommerce.com/deep-links/settings/localization
+    - strong: Settings
+    - text: ›
+    - strong: Localization
+  - text: .
+- paragraph:
+  - img "Uncheck"
+- heading "LOCALE" [level=4]
+- paragraph:
+  - text: The locale settings determine your storefront's country and customer-facing languages. It is similar to the locale setting found in
+  - link "Settings › Localization":
+    - /url: http://login.bigcommerce.com/deep-links/settings/localization
+    - strong: Settings
+    - text: ›
+    - strong: Localization
+  - text: .
+- paragraph:
+  - img "Locale settings under Localization when viewing a storefront"
+- list:
+  - listitem:
+    - strong: Default country
+    - text: — The country your storefront is run from.
+    - list:
+      - listitem: This determines which payment and shipping providers will be available for use with your store
+  - listitem:
+    - strong: Languages
+    - text: —Your storefront’s default language and any additional languages you have configured..
+    - list:
+      - listitem:
+        - text: Supported languages automatically translate system messages,
+        - link "checkout payment error messages":
+          - /url: https://support.bigcommerce.com/s/article/Optimized-Single-Page-Checkout
+        - text: ", and"
+        - link "transactional":
+          - /url: https://support.bigcommerce.com/s/article/Customizing-Emails
+        - text: and
+        - link "abandoned cart emails":
+          - /url: https://support.bigcommerce.com/s/article/Using-the-Abandoned-Cart-Saver
+        - text: . Themes, apps, and other integrations can use this setting to localize shopper-facing content.
+      - listitem:
+        - text: You can manually add translations for dynamic content, like product descriptions and categories, to each storefront language. See the “Storefront Languages” section of
+        - link "Localization Settings":
+          - /url: /s/article/Localization-Settings
+        - text: to learn more.
+- heading "PHYSICAL DIMENSIONS" [level=4]
+- paragraph: The physical dimensions settings found in the Localization settings allow you to specify the measurement units your storefront uses for product weight and volume, choose the display style for decimals, and assign a factoring dimension for calculating shipping costs.
+- paragraph:
+  - text: Click
+  - strong: Show format settings
+  - text: to expand the fields. If you are not familiar with the standard format for the default country assigned to the storefront, click
+  - strong:
+    - text: Set standard formats for
+    - emphasis: "[default country]"
+  - text: to automatically assign these values.
+- paragraph:
+  - img "The Show format settings and Set standard formats options for physical dimensions"
+- paragraph: Keep in mind that the length and weight entered for a product will be autocorrected to the format set here; there is no need to edit your products' dimensions to manually convert them. This is an intended feature for comprehensive multi-region support.
+- paragraph:
+  - img "Physical dimension settings in storefront localization settings."
+- list:
+  - listitem:
+    - strong: Weight measurements
+    - text: — Determines the weight measurement used when calculating the weight of physical products in your storefront.
+    - list:
+      - listitem:
+        - text: Available options are
+        - emphasis: Pounds
+        - text: ","
+        - emphasis: Ounces
+        - text: ","
+        - emphasis: Kilograms
+        - text: ","
+        - emphasis: Grams
+        - text: ", and"
+        - emphasis: Tonnes
+        - text: .
+  - listitem:
+    - strong: Length measurements
+    - text: — Determines the length measurement used when calculating the dimensions of physical products in your storefront.
+    - list:
+      - listitem:
+        - text: Available options are
+        - emphasis: Inches
+        - text: or
+        - emphasis: Centimeters
+        - text: .
+  - listitem:
+    - strong: Decimal token
+    - text: — Determines the token or character to use as the decimal separator for your product’s dimensions.
+  - listitem:
+    - strong: Thousands token
+    - text: — Determines the token or character to use as the thousands separator for your product’s dimensions.
+  - listitem:
+    - strong: Decimal places
+    - text: — Determines the number of decimal places to show when displaying dimensions in your store.
+  - listitem:
+    - strong: Factoring dimension
+    - text: — Determines the dimension that will be added up per product when
+    - link "calculating":
+      - /url: /s/article/Physical-Dimension-Settings
+    - text: shipping quotes.
+    - list:
+      - listitem:
+        - text: Available options are
+        - emphasis: Product depth
+        - text: ","
+        - emphasis: Product height
+        - text: ", or"
+        - emphasis: Product width
+        - text: .
+      - listitem:
+        - text: If
+        - emphasis: Product depth
+        - text: "is selected, then a cart uses the following dimension factoring when calculating shipping quotes:"
+      - listitem:
+        - strong: Width
+        - text: = The width of the product with the largest value in the order.
+      - listitem:
+        - strong: Height
+        - text: = The height of the product with the largest value in the order.
+      - listitem:
+        - strong: Depth
+        - text: = The sum of all depths of the products in the order.
+- heading "DATE AND TIMEZONE" [level=4]
+- paragraph: The date and timezone settings found in the Localization settings allow you to control the internal time tracking used in your store's dashboard. This helps you keep a record of when orders come in and how dates are displayed. This is also how the store tracks when to end a discount or coupon offer if they had a time limit.
+- paragraph:
+  - text: Click
+  - strong: Show format settings
+  - text: to expand the fields. If you are not familiar with the standard format for the default country assigned to the storefront, click
+  - strong: Set standard formats for [default country]
+  - text: to automatically assign these values.
+- paragraph:
+  - img "The Date and Timezone settings for the storefront"
+- list:
+  - listitem:
+    - strong: Store local timezone
+    - text: — The timezone where the storefront is located, which determines times used when applying timestamps to orders and store logs.
+  - listitem:
+    - strong: Enable daylight savings time correction?
+    - text: — If checked, this setting adds an additional hour to your timezone.
+    - list:
+      - listitem: This is a manual setting and should be enabled only when observing Daylight Savings Time. Disable this setting when you are no longer observing Daylight Savings Time.
+  - listitem:
+    - strong: Date format
+    - text: — The format used when displaying dates on your storefront.
+  - listitem:
+    - strong: Extended date and time format
+    - text: — The format used when displaying dates in the control panel.
+- link:
+  - /url: "#product-overrides"
+- heading "Customizing Product Details per Storefront (Product Overrides)" [level=3]
+- paragraph: Once you have configured your storefront settings for localization, the next step is customizing your products to appeal to the targeted audience for your localized storefront. Whether this is translating your product details into a new language or tailoring the product description to attract shoppers of a certain brand, the ability to override global product content allows you to fine-tune products on an individual storefront level.
+- paragraph:
+  - text: To edit a product, go to
+  - link "Products › All products":
+    - /url: http://login.bigcommerce.com/deep-links/products
+    - strong: Products
+    - text: ›
+    - strong: All products
+  - text: and locate the product you would like to edit, then click the product’s name or select
+  - emphasis: Edit
+  - text: from the
+  - strong: Action
+  - text: menu (
+  - strong: ⋯
+  - text: ).
+- paragraph:
+  - img "Click on the action menu, then select Edit."
+- paragraph:
+  - text: Click on the channel drop-down to select the desired storefront. By default,
+  - emphasis: Global (all channels)
+  - text: will be selected.
+- paragraph:
+  - img "Example of selecting a storefront when editing a product"
+- paragraph: "After selecting a storefront, the page will update to only show the product fields available for display customization on a storefront level. These include:"
+- list:
+  - listitem:
+    - strong: Basic information
+    - text: — Edit the product name.
+  - listitem:
+    - strong: Description
+    - text: — Edit the product description.
+  - listitem:
+    - strong: Categories
+    - text: — Use the storefront’s category tree to select localized categories or
+    - link "create new categories":
+      - /url: /s/article/Product-Categories
+    - text: to assign the product.
+  - listitem:
+    - strong: Images
+    - text: —
+    - link "Manage images and their attributes":
+      - /url: "#image-management"
+    - text: by assigning images, selecting the thumbnail image, changing image sort order, and editing image alt text.
+  - listitem:
+    - strong: Variant options
+    - text: — Edit the display name of any applied variant options and values.
+  - listitem:
+    - strong: Modifier options
+    - text: — Edit the display name of any applied modifier options and values.
+  - listitem:
+    - strong: Storefront details
+    - text: — Select whether the product should be
+    - link "featured":
+      - /url: /s/article/Product-Panels
+    - text: on this storefront, and edit the product’s search keywords, warranty information, and availability.
+  - listitem:
+    - strong: Purchasability
+    - text: — Edit the
+    - link "pre-order message":
+      - /url: /s/article/Product-Availability
+    - text: .
+  - listitem:
+    - strong: SEO
+    - text: — Edit the page title, meta description, and product URL.
+  - listitem:
+    - strong: Custom fields*
+    - text: — Edit field names, values, and visibility.
+- paragraph:
+  - text: "*Overrides to custom field names and values"
+  - strong: will not
+  - text: update
+  - link "product filter":
+    - /url: /s/article/Product-Filtering-Settings
+  - text: facets. However, filter names can be updated on the storefront-level using contextual filters.
+- paragraph:
+  - text: There will be a
+  - strong: green dot
+  - text: icon to indicate that a field is not using its global settings, along with a notification at the top with the number of channel specific fields currently in use.
+- paragraph:
+  - img "Example of product fields that have been overridden, along with the top notification"
+- paragraph:
+  - text: To revert a storefront-specific field back to its global setting, click on the
+  - strong: Action
+  - text: menu (
+  - strong: ⋯
+  - text: ) and select
+  - emphasis: Inherit global value
+  - text: .
+- paragraph:
+  - img "Click Inherit Global Value to revert from product override content."
+- paragraph:
+  - text: You cannot apply or remove options on the storefront level. If you want to offer an exclusive version of a product on a storefront, featuring a unique set of options, we recommend making a
+  - link "duplicate of the product":
+    - /url: /s/article/Product-List
+  - text: with the desired options, then assigning the product only to that storefront.
+- link:
+  - /url: "#image-management"
+- heading "Image Management per Storefront" [level=3]
+- list:
+  - listitem:
+    - link "Adding, deleting, and assigning images":
+      - /url: "#add-assign"
+  - listitem:
+    - link "Managing images in a collection":
+      - /url: "#manage-images"
+- paragraph:
+  - text: The
+  - strong: Images
+  - text: "section of the Add/Edit Product page allows you to customize images and attributes per storefront. It contains two main components: the image collection and image folde"
+  - strong: r
+  - text: .
+- paragraph: While viewing a product’s global defaults or a specific storefront’s settings, the image collection is the main display. It contains the images that shoppers see on the storefront, the featured thumbnail, and image alt texts.
+- paragraph:
+  - img "An image collection."
+- paragraph: The image folder is a pop-up window containing every image that is attached to the product, regardless of channel. From this window you can add new images to the product, assign them to storefront channels, or delete them from the product entirely.
+- paragraph: Images within the folder are not visible to customers unless they are assigned to a storefront image collection.
+- heading "ADDING, DELETING, AND ASSIGNING IMAGES" [level=4]
+- paragraph:
+  - text: To add, delete, and assign images, open the image folder by clicking the
+  - strong: plus
+  - text: icon (
+  - strong: +
+  - text: ) on an image collection.
+- paragraph:
+  - img "The plus icon highlighted."
+- paragraph:
+  - text: If the product does not have any existing images, click the
+  - strong: Add
+  - text: button.
+- paragraph:
+  - img "The Add button highlighted."
+- paragraph:
+  - text: Add new images to the folder using the options at the top of the window. Drag and drop your file directly on the designated area or click
+  - strong: Upload
+  - text: to select it from a file folder on your device. If you are adding an image from the web, click
+  - strong: Add from URL
+  - text: to enter the image’s URL. The image folder supports
+  - strong: JPG
+  - text: ","
+  - strong: JPEG
+  - text: ","
+  - strong: GIF
+  - text: ", and"
+  - strong: WEBP
+  - text: file types and a maximum file size of
+  - strong: 8MB
+  - text: .
+- paragraph:
+  - img "The add image area highlighted."
+- paragraph:
+  - text: Once added, images will appear in the table at the bottom of the window. Change the number of images displayed per page in the window from the drop-down list and use the
+  - strong: left
+  - text: and
+  - strong: right arrows
+  - text: to navigate between pages.
+- paragraph:
+  - text: To delete an image from the product completely, including
+  - strong: all
+  - text: image collections, click the
+  - strong: trash can
+  - text: icon next to an image, or select multiple images and click the
+  - strong: Delete
+  - text: button. If you want to keep the image for future use, you can
+  - link "remove it":
+    - /url: "#manage-images"
+  - text: from storefront image collections, which leaves it in the image folder.
+- paragraph:
+  - text: To assign images to the current channel’s image collection, check the box next to the desired images, then click
+  - strong: Assign & Save
+  - text: .
+- paragraph:
+  - text: If you want to assign images to a different storefront, save your changes, then save the product. Select the desired storefront from the channel drop-down, click the
+  - strong: plus
+  - text: icon (
+  - strong: +
+  - text: ) on the image collection, and assign the images.
+- paragraph:
+  - img "The image list with several areas highlighted."
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: You must also click
+  - strong: Save
+  - text: on the product page for any changes within the image folder to take effect.
+- heading "MANAGING IMAGES IN A COLLECTION" [level=4]
+- paragraph: Once images have been assigned to the global default or a storefront channel, you can manage them from that channel’s image collection.
+- paragraph:
+  - text: Select the channel from the channel drop-down and scroll down to the
+  - strong: Images
+  - text: section.
+- paragraph:
+  - text: Click an image thumbnail along the bottom to manage its details. You can enter an optional description in the
+  - strong: Alt text
+  - text: field, click
+  - strong: Make thumbnail
+  - text: to set it as the thumbnail image, or click
+  - strong: Remove
+  - text: to remove the image from this collection. Note that this
+  - strong: does not
+  - text: remove the image from other channel’s collections or from the image folder.
+- paragraph:
+  - img "Image collection with several areas highlighted."
+- paragraph:
+  - text: Click and drag a thumbnail to change the display order on product pages. When you are ready, click
+  - strong: Save
+  - text: .
+- paragraph:
+  - text: Note that global defaults and storefront channel-specific image collections are managed independently of each other. Any changes at the global level
+  - strong: will not
+  - text: affect channel-specific image collections (those marked with a green dot). For example, if you assign a new image to the global image collection, you must also assign it to any channel-specific collections you want it to appear in.
+- text: 
+- paragraph:
+  - strong: Reverting to global values?
+  - text: Selecting
+  - emphasis: Inherit global value
+  - text: from the action menu will delete the channel-specific collection and revert to the global values. Any new changes to the channel-specific collection will once again sever the collection from being affected by the default.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Can I assign multiple languages to a single storefront?
+- paragraph:
+  - text: Yes, you can configure multiple storefront languages and add custom translations from your storefront’s
+  - link "localization settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- paragraph:
+  - strong: Can I assign payment providers, payment methods, or accounts per storefront?
+- paragraph:
+  - text: Yes. With
+  - link "Multi-Storefront Payment Methods":
+    - /url: /s/article/Multi-Storefront-Payment-Methods
+  - text: ", you can manage channel visibility for payment provider configurations."
+- paragraph:
+  - strong: Can I create discounts and coupons for a localized storefront?
+- paragraph:
+  - text: Yes, you can create automatic and coupon promotions per storefront by using
+  - link "Automatic and Coupon Promotions (Standard Editor)":
+    - /url: /s/article/Automatic-and-Coupon-Promotions-Standard-Editor
+  - text: .
+- paragraph:
+  - strong: Can I create localized widgets per storefront?
+- paragraph:
+  - text: Yes, you can add widgets via Page Builder that are unique to a storefront. For additional storefronts, we recommend replacing banners and the home page carousel with widgets, as they only work on a default BigCommerce storefront. See the “Adding Widgets“ section of
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: for more information.
+- paragraph:
+  - strong: Can order statuses be localized per storefront?
+- paragraph:
+  - text: Yes, the default
+  - link "order statuses":
+    - /url: /s/article/Order-Statuses
+  - text: will be automatically translated per storefront, based on the language selected as a default language per given storefront. If you have customized your order statuses, they will not be automatically translated.
+- paragraph:
+  - strong: Can return reasons and actions be localized per storefront?
+- paragraph:
+  - text: Yes, the default values for return reasons and actions will be automatically translated per storefront, based on the default language selected per given storefront If you have customized your reasons and actions, they will not be automatically translated. See
+  - link "Processing Returns":
+    - /url: /s/article/Processing-Returns
+  - text: for more information.
+- paragraph:
+  - strong: If my store is using B2B Edition, can I create a localized storefront Buyer Portal experience?
+- paragraph:
+  - text: By default, you can localize storefront-specific text in the
+  - link "Buyer Portal":
+    - /url: /s/article/B2B-Edition-Buyer-Functions
+  - text: by using
+  - link "Translation settings":
+    - /url: /s/article/B2B-Edition-Settings
+  - text: . Additionally,
+  - link "product overrides":
+    - /url: "#product-overrides"
+  - text: "can be extended to your B2B Edition account upon request, allowing you to display localized product information in the following front-end and back-end areas of B2B Edition:"
+- list:
+  - listitem:
+    - strong: Front End (Buyer Portal)
+    - list:
+      - listitem: User-specific and Company-wide order details
+      - listitem: Draft quotes created by buyers
+      - listitem: Purchasable quotes submitted by sales representatives
+      - listitem: Shopping Lists
+      - listitem: Product results in the Quick Order tab
+  - listitem:
+    - strong: Back End (B2B Edition Control Panel)
+    - list:
+      - listitem:
+        - text: New and existing
+        - link "quotes":
+          - /url: /s/article/B2B-Edition-Quotes
+      - listitem: Company order details
+      - listitem:
+        - text: Line items in
+        - link "invoice details":
+          - /url: /s/article/B2B-Edition-Sales-Representative-Functions
+- paragraph:
+  - text: To request support for product overrides in your B2B Edition account,
+  - link "contact our Sales team":
+    - /url: https://www.bigcommerce.com/contact-sales/
+  - text: .
+- paragraph:
+  - strong: Can I offer different shipping methods per storefront?
+- paragraph:
+  - text: Static shipping quotes, excluding free shipping, and real-time shipping quotes can be toggled on or off
+  - link "per storefront":
+    - /url: /s/article/Configuring-Storefronts
+  - text: ", giving you the ability to provide distinct shipping methods tailored to a geographical region or customer segment."
+- paragraph: The out of delivery zone message can also be customized per storefront.
+- paragraph:
+  - strong: Why don’t I see the option to add multiple languages in my control panel?
+- paragraph:
+  - text: If the setting to
+  - emphasis: Enable automatic translation based on shopper’s browser language
+  - text: is enabled, it hides the storefront-specific language and translation settings. When you disable the setting and
+  - strong: Save
+  - text: your changes, your localization settings will refresh.
+- paragraph:
+  - img "The checkbox to use the shopper’s browser language for translation"
+- paragraph:
+  - text: Additionally, the multi-language settings are not available if you have more than
+  - strong: 100,000 products
+  - text: in your catalog.
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Channel Manager in my store":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - text: Go to
+    - strong: Channel Manager
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Getting Started with Localization on Multi-Storefronts":
+      - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+  - listitem:
+    - link "Introduction to Multi-Storefront":
+      - /url: /s/article/Multi-Storefront
+  - listitem:
+    - link "Localization Settings":
+      - /url: /s/article/Localization-Settings
+  - listitem:
+    - link "International Enhancements for Multi-Storefront":
+      - /url: https://docs.bigcommerce.com/developer/docs/admin/catalog-and-inventory/msf-international-enhancements/overview
+    - text: (Developer Docs)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: International Enhancements for Multi-Storefront
+- iframe

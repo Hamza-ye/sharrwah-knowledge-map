@@ -1,0 +1,191 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Channel Manager
+Getting Started with Localization
+Multi-Storefront | International Enhancements
+Multi-Storefront Payment Methods
+How It Works
+Requirements
+Supported Providers
+Setup
+FAQ
+Storefronts
+Catalyst
+BigCommerce for WordPress
+DEITY Falcon
+Marketplaces
+Ads and Social
+Point of Sale
+Marketing
+Data Solutions
+Account
+TD Bank
+Multi-Storefront Payment Methods
+What We'll Cover
+How it works
+Requirements
+Supported providers
+Setup
+FAQ
+Multi-storefront payment settings allow you to configure the payment methods that appear on each of your different storefronts. This is useful for multi-brand, multi-segment, or multi-region use cases where you might want to show unique payment methods per storefront, or the same payment methods with settings unique to each storefront.
+How It Works
+A payment provider can have multiple payment configurations, which allows the same payment provider to be set up multiple times using different merchant accounts, currencies, and settings in a single store. Once created, payment configurations are manually assigned to their intended channels. Configurations are unassigned by default, preventing them from appearing on unintended storefronts.
+To help explain how they might be used, below are some possible use cases for payment configurations:
+Multi-region
+Use one merchant account with one payment provider to service multiple geographies in multiple currencies.
+Use multiple merchant accounts with one payment provider to service multiple geographies in multiple currencies.
+Use one merchant account per provider with multiple payment providers to service multiple geographies in multiple currencies.
+Multi-brand
+Use one merchant with one payment provider to service multiple brands in the same geography with the same currency.
+Use multiple merchant accounts with one payment provider to service multiple brands in the same geography with the same currency.
+Use multiple merchant accounts with multiple payment providers to service multiple brands in multiple currencies.
+Multi-segment
+Use one merchant account with one payment provider to service multiple segments in the same geography in the same currency.
+Use multiple merchant accounts with multiple payment providers to service multiple segments in the same geography in the same currency.
+Requirements
+Your store must be using Multi-Storefront.
+To create multiple payment configurations of the same currency for a provider, you must have more than one channel set up on your store.
+Your store must be using the latest released version of a supported payment provider.
+Review your payment provider’s documentation to determine which version your store is using.
+Bolt One-Click Checkout is not supported.
+To manage payment methods and configurations, the Manage Payments and Edit Channelspermissions must be enabled on your user account.
+Supported Providers
+All offline payment methods and the latest versions of the following payment providers are fully supported, meaning they can have multiple payment configurations per provider, per currency:
+Access Worldpay
+Adyen
+Afterpay
+Amazon Pay
+Authorize.net
+Bankful
+Barclaycard Smartpay Advance
+BitPay
+BlueSnap Direct
+Braintree
+Chase Merchant Services
+Checkout.com
+Clearpay
+Cybersource V2
+Electronic Payments Exchange (EPX)
+eWay Australia*
+eWay Rapid
+First Data Payeezy*
+Global Payments*
+Heartland Payment Systems
+Klarna Payments
+Mercado Pago
+Moneris
+Nexi XPay
+NMI
+Paymetric*
+PayPal
+Quadpay*
+Opayo by Elavon
+Optty
+Serve First Solutions
+Sezzle
+Shopkeep*
+Stripe
+Tilopay
+USAePay
+Vantiv/Worldpay eComm
+Vantiv/Worldpay Core
+Windcave
+Worldpay B2B Payments
+Zip
+* These gateways have been deprecated and are no longer available for new stores. You may not be able to reconnect them if they are disconnected.
+The following payment providers are partially supported, meaning they can only have one payment configuration per provider, per currency:
+Affirm
+Commonwealth Bank
+Clover Payments
+QuickBooks Payments
+Square
+Setup
+Adding new payment configurations
+Managing storefront channel visibility
+To get started, go to Settings › Payments.
+Multi-storefront payment settings are enabled from the banner at the top of the page by clicking Switch to the new Payment Settings page. You can switch back to the previous experience at any time.
+Once enabled, the page will show all of your currently connected payment methods and their respective payment configurations.
+Adding New Payment Configurations
+Create a new configuration by clicking Add Payment Configuration. If your provider supports multiple accounts, you can repeat these steps to add additional configurations per currency.
+On the next page, select a currency from the drop-down list, click the Embedded or Open tab, then expand Offline Payment Methods, Online Payment Methods, or Digital Wallets.
+What is an Open Payment Provider fee? For stores on self-serve plans, orders processed using offline payment methods and payment providers that are not on our Embedded Payment Provider list are assessed an Open Payment Provider fee. Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.
+Click Add next to your desired payment method.
+On the payment configuration page, you can update the selected currency and specify a Configuration name. Enter any required account credentials, such as API keys, and set up any desired provider-specific settings.
+For individual provider setup information, see Available Payment Gateways, which contains a list of payment gateways and links to their documentation.
+When you’re done, click Save.
+Configuration name vs Display name:Configuration name is an internal label to help you identify different payment configurations in the control panel and does not display on the storefront. Display name is a method or provider-specific setting and is displayed on the storefront checkout page. Use clear display names such as “Credit/Debit Cards” or “Local Payment Methods” on payment provider settings to guide customers as they complete checkout.
+Managing Storefront Channel Visibility
+After creating configurations, you will see them listed on the payments settings page.
+Note that configurations are not automatically visible on storefronts, but instead are manually assigned. This prevents them from mistakenly appearing on unintended channels.
+To assign a payment configuration to a storefront, click Manage Channel Visibility and select it from the drop-down list.
+On the payment configurations pop-up window, check the box next to the ones you want to appear on this storefront, then click Assign.
+On the Payments page, you can view which storefronts a configuration is assigned to by clicking the Visible on # channel(s) drop-down under the configuration name.
+Edit or delete a configuration from the options on the Action menu (⋯).
+You can also view payment configurations and manage their visibility directly through individual storefront channel settings by going to Channels › Channel Manager › [Storefront name] › Payments.
+FAQ
+If I enable the Multi-storefront Payments page, am I able to switch back to the previous experience?
+Yes, to return to the legacy version of the Payments page, click the Switch back button displayed in the banner at the top of Settings › Payments.
+However, before you can switch back, you must delete any additional configurations so that only one configuration exists per currency, per provider.
+Why is the Switch back button grayed out when trying to return to the legacy Payments page?
+The previous experience only supports one payment configuration per currency, per provider. Ensure that you have deleted all additional configurations before attempting to switch back.
+Can I assign more than one configuration of the same provider and currency to a channel?
+No. While some providers allow for multiple configurations using the same currency, you cannot assign more than one to the same channel.
+For example, if you have two Authorize.net configurations for USD, they both cannot be assigned to the same storefront channel. You can, however, assign them to different channels.
+Why is a payment configuration not appearing on my storefront?
+By default, payment configurations are not automatically assigned to any channels and must be manually assigned. This prevents them from appearing on unintended storefronts by mistake.
+Ensure that you’ve assigned the configuration to the correct channel, then empty your storefront cart and test again.
+Do this in my store
+Go to Payments in my store
+Additional Resources
+Available Payment Gateways
+International Enhancements for Multi-Storefront
+Multi-Storefront
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Multi-Storefront Payment Methods

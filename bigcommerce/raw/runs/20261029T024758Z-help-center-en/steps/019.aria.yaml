@@ -1,0 +1,696 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Tax Overview":
+                - /url: /s/article/Tax-Overview
+            - listitem:
+              - link "Basic Tax":
+                - /url: /s/article/Manual-Tax-Setup
+            - listitem:
+              - link "Automatic Tax Setup":
+                - /url: /s/article/Automatic-Tax-Setup
+            - listitem:
+              - link "Avalara AvaTax":
+                - /url: /s/article/Avalara-AvaTax
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Setup":
+                    - /url: "#connecting-account"
+                - listitem:
+                  - link "BigCommerce Settings":
+                    - /url: "#settings"
+                - listitem:
+                  - link "Assigning Local Tax Jurisdiction":
+                    - /url: "#jurisdiction"
+                - listitem:
+                  - link "Cross-Border and VAT/GST":
+                    - /url: "#cross-border"
+                - listitem:
+                  - link "Verifying Tax Rates":
+                    - /url: "#verify"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Product-Specific Rates":
+                - /url: /s/article/Changing-Tax-Rates-on-a-Product
+            - listitem:
+              - link "Tax-Exempt Customers":
+                - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Avalara AvaTax" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Setting up Avalara AvaTax":
+      - /url: "#connecting-account"
+  - listitem:
+    - link "BigCommerce settings":
+      - /url: "#settings"
+  - listitem:
+    - link "Assigning local tax jurisdiction":
+      - /url: "#jurisdiction"
+  - listitem:
+    - link "Cross-border tax and VAT/GST collection":
+      - /url: "#cross-border"
+  - listitem:
+    - link "Verifying tax rates":
+      - /url: "#verify"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Avalara AvaTax makes setting up and calculating sales tax for your store easier to manage by determining sales tax rates at checkout automatically, providing sales tax reporting, and allowing you to set up tax-exempt customers and specific product codes and tax properties quickly.
+- paragraph:
+  - text: See
+  - link "Automatic Tax Setup":
+    - /url: /s/article/Automatic-Tax-Setup
+  - text: for more information about using automatic tax providers.
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: This article covers the most current version of Avalara AvaTax. If your control panel shows a different version, feel free to
+  - link "reach out to our Community":
+    - /url: https://support.bigcommerce.com/s/community
+  - text: or
+  - link "contact our Support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: for assistance.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To set up Avalara Avatax, a supported country must be selected as the default country under
+    - link "Store Profile settings":
+      - /url: /s/article/Store-Profile-Settings
+    - text: .
+    - list:
+      - listitem: Avalara AvaTax can be set up by stores in all countries, except Brazil and India.
+  - listitem:
+    - text: To access Tax in the control panel, you must have the
+    - strong: Manage Tax Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To install and launch Avalara AvaTax, you must be logged in as the
+    - link "Store Owner":
+      - /url: /s/article/Store-Owner
+    - text: or have the
+    - strong: Install applications
+    - text: and
+    - strong: Launch applications
+    - link "permissions":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To conduct
+    - link "cross-border business":
+      - /url: "#cross-border"
+    - text: ", you will need to specify the countries you'll be collecting tax and specify the Importer of Record for those countries."
+- text: 
+- paragraph:
+  - strong: Do I have to pay to use Avalara AvaTax?
+  - text: When you sign up through BigCommerce, you will be able to subscribe to AvaTax at a fixed rate tied to your store’s plan. Enterprise merchants will need to
+  - link "contact Avalara":
+    - /url: https://help.avalara.com/Contact_Avalara
+  - text: to discuss pricing.
+- link:
+  - /url: "#connecting-account"
+- heading "Setting Up Avalara AvaTax" [level=3]
+- paragraph:
+  - text: To get started with Avalara AvaTax, go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: and click
+  - strong: Install
+  - text: next to Avalara AvaTax. You will need to be logged in as the store owner in order to install the app.
+- paragraph:
+  - text: You can also install AvaTax from the
+  - link "App Marketplace":
+    - /url: /s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel
+  - text: or by clicking the
+  - strong: Add tax service
+  - text: button located in the top right corner.
+- paragraph:
+  - img "Install button highlighted on the Avalara AvaTax panel"
+- paragraph:
+  - text: Click
+  - strong: Install
+  - text: ", then"
+  - strong: Confirm
+  - text: to authorize adding the app to your store.
+- paragraph:
+  - text: If you already have an Avalara account,
+  - link "contact your account manager":
+    - /url: https://account.avalara.com/
+  - text: to connect to BigCommerce. Otherwise, fill in your company details, create your Avalara account, and complete the onboarding process.
+- paragraph:
+  - img "Create a new Avalara account or connect an existing one"
+- text: 
+- paragraph:
+  - strong: What if I have nexus in more than one state?
+  - text: If you are responsible for collecting sales tax in multiple states, you will need to set up your
+  - link "local jurisdictions":
+    - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Local_jurisdictions.html
+  - text: on your Avalara account.
+- paragraph:
+  - text: Log into your
+  - link "Avalara AvaTax account":
+    - /url: https://home.avalara.com/
+  - text: to update your company profile and add other Avalara products, such as Avalara Returns and Cross-Border. The page will show options for adding exemptions to the various goods and services you provide, and you'll also have the opportunity to enable or disable document submission for tax reporting and returns.
+- paragraph: After you start taking orders, you can review transactions for information such as applied tax codes, entity use codes, invoice and reporting currency, and a line item breakdown of the order's tax summary.
+- paragraph:
+  - img "Screenshot of the landing page for the Avalara app"
+- paragraph:
+  - text: At this point, the store is set up for basic automatic tax calculations. To adjust your Automatic Tax Calculation, log in to your
+  - link "Avalara AvaTax account":
+    - /url: https://home.avalara.com
+  - text: to set up local jurisdictions, tax exemptions, and more.
+- link:
+  - /url: "#settings"
+- heading "BigCommerce Settings" [level=3]
+- paragraph:
+  - text: To update or test your connection, override tax codes, and toggle sending order data, go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax/configured-providers
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: in the BigCommerce control panel and click
+  - strong: Edit
+  - text: next to Avalara AvaTax.
+- paragraph:
+  - img "Edit button highlighted for the Avalara app on the Tax page in BigCommerce."
+- paragraph: The upper section displays the provider connection status, account info, and buttons to update or test your connection.
+- paragraph:
+  - img "Avalara settings showing connection status, account number, and buttons to update and test connection."
+- paragraph:
+  - text: Under
+  - strong: Provider targeting
+  - text: ", you will need to check the box next to the countries and subdivisions (such as states or provinces) that you want Avalara AvaTax to calculate tax for."
+  - link "Basic Tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: is used for any regions that are not selected.
+- paragraph:
+  - text: If you want Avalara AvaTax to calculate tax everywhere, check the box next to
+  - strong: Select all
+  - text: under
+  - strong: Country
+  - text: .
+- paragraph:
+  - img "Provider targeting section with selection for one or more countries."
+- paragraph:
+  - text: Under
+  - strong: Provider Options
+  - text: ", you can toggle"
+  - strong: Please submit my order data so that I can use solution tax reporting and returns features
+  - text: . When enabled, Avalara will
+  - link "store transaction records":
+    - /url: https://knowledge.avalara.com/bundle/frz1659702260835_frz1659702260835/page/eeu1665475419649.html
+  - text: . Disable this if your provider account is also connected to an ERP. This prevents duplicate reporting on tax liabilities from occurring.
+- paragraph:
+  - text: You also have fields to optionally override gift wrapping, handling, shipping, and default taxable codes. See Avalara’s
+  - link "Avalara tax codes":
+    - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Avalara_tax_codes.html
+  - text: to learn more.
+- paragraph:
+  - img "Fields to enter optional Avalara tax codes and a toggle to submit order data."
+- link:
+  - /url: "#jurisdiction"
+- heading "Assigning Local Tax Jurisdiction" [level=3]
+- paragraph:
+  - text: If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your Avalara account. To learn more about setting up local jurisdictions, see
+  - link "Local jurisdictions":
+    - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Local_jurisdictions.html
+  - text: on Avalara’s support site.
+- link:
+  - /url: "#cross-border"
+- heading "Cross-Border Tax and VAT/GST Collection" [level=3]
+- paragraph:
+  - link "Cross-Border by Avalara":
+    - /url: https://www.avalara.com/us/en/products/industry-solutions/cross-border-solutions.html
+  - text: helps merchants that sell internationally calculate the duty and import tax assessed at the border for their shipped products and process payment for those fees at checkout.
+  - link "Contact Avalara":
+    - /url: https://help.avalara.com/Contact_Avalara
+  - text: to add their cross-border solution to your account.
+- paragraph: Avalara AvaTax will calculate VAT/GST if your business has transactions into European Union member states or any other country around the world that charges VAT/GST. However, you must specify which countries you'll be collecting VAT/GST from, whether they have a permanent establishment, and whether they are the Importer of Record.
+- paragraph:
+  - text: A
+  - strong: permanent establishment
+  - text: is a fixed place of business which generally gives rise to VAT liability in a particular jurisdiction. Examples that typically qualify as a permanent establishment include a branch, a factory, a warehouse, or a place of management. See Avalara's
+  - link "Change the importer of record and establishment settings":
+    - /url: https://knowledge.avalara.com/bundle/bth1663401247640_bth1663401247640/page/Change_establishment_and_importer_of_record_Settings.html
+  - text: to learn more.
+- paragraph:
+  - text: The
+  - strong: Importer of Record
+  - text: is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued. Furthermore, the Importer of Record is the responsible party for the payment of customs duties, tariffs, and fees related to the imported goods. See Avalara's
+  - link "Importer of record setting":
+    - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Importer_of_record_setting.html
+  - text: to learn more.
+- heading "Setting up Avalara for VAT/GST Collection" [level=4]
+- paragraph: Follow the below steps to select countries you'll be shipping to, whether those countries have a permanent establishment and whether they are the Importer of Record.
+- paragraph:
+  - strong: "1."
+  - text: Log in to your
+  - link "Avalara AvaTax account":
+    - /url: https://home.avalara.com/
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: On the navigation bar, click
+  - strong: Settings
+  - text: ", then select"
+  - strong: Where you collect tax
+  - text: .
+- paragraph:
+  - img "Click \"Where you collect tax\" link"
+- paragraph:
+  - strong: "3."
+  - text: Click the
+  - strong: VAT/GST
+  - text: tab, then
+  - strong: Add a country or territory where you collect VAT/GST
+  - text: .
+- paragraph:
+  - img "Click to add a country or territory where you collect VAT/GST"
+- paragraph:
+  - strong: "4."
+  - text: Select all the countries that you will ship to and collect taxes from, then click
+  - strong: Add selected countries
+  - text: .
+- paragraph:
+  - strong: "5."
+  - text: For each country, select if you have a permanent establishment and if you're the importer of record in those countries. See Avalara's
+  - link "Update where you collect and pay tax":
+    - /url: https://help.avalara.com/Avalara_AvaTax_Update/Update_where_you_collect_and_pay_tax
+  - text: to learn more about these settings.
+- paragraph:
+  - img "Select all of the countries that you will ship to and collect taxes in."
+- link:
+  - /url: "#verify"
+- heading "Verifying Tax Rates" [level=3]
+- paragraph:
+  - text: You can use
+  - link "Avalara's sales tax calculator and rate lookup tool":
+    - /url: https://www.avalara.com/taxrates/en/calculator.html
+  - text: to confirm proper tax rates are being calculated for US regions. If there is any inconsistency between the rate reported at Avalara's calculator and what is reported in your store checkout, please
+  - link "contact our support team for further investigation":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: .
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- list:
+  - listitem:
+    - link "General":
+      - /url: "#general"
+  - listitem:
+    - link "Calculations":
+      - /url: "#calculations"
+  - listitem:
+    - link "Products":
+      - /url: "#products"
+  - listitem:
+    - link "Troubleshooting":
+      - /url: "#troubleshooting"
+- heading "General" [level=4]
+- paragraph:
+  - strong: Where do I find my Company Code?
+- paragraph: You create your company code. It can be whatever you want (like a number, an abbreviation, or an acronym). It is required.
+- paragraph:
+  - strong: Can I use my AvaTax Account in multiple stores?
+- paragraph:
+  - text: Yes. On your Avalara AvaTax account, you will add a company. See
+  - link "Add a Company":
+    - /url: https://knowledge.avalara.com/bundle/xdj1659609961557/page/ARA_Add_a_Company.html
+  - text: from Avalara's help center for instructions. Once it is set up on your AvaTax account, go to your other store and log in with your Avalara credentials during tax setup. A list of your companies will display during the setup, select the company you want to associate with that store.
+- paragraph:
+  - strong: Can I make customers tax exempt with AvaTax?
+- paragraph:
+  - text: Yes, see our article on
+  - link "creating tax-exempt customers":
+    - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+  - text: using an automatic tax provider. You will need to assign the appropriate entity/use letter code to your customers.
+- paragraph:
+  - strong: Does Avalara support recent updates to UK VAT policy?
+- paragraph:
+  - text: Avalara AvaTax supports VAT, which includes UK VAT. For more information on configuring VAT with Avalara, see Avalara's
+  - link "Update where you collect and pay tax":
+    - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Update_where_you_collect_and_pay_tax.html
+  - text: or contact Avalara's support team. For more information on how these changes affect stores with UK customers, see our product blog post on
+  - 'link "UK VAT Changes in 2021: What You Need to Know"':
+    - /url: https://support.bigcommerce.com/s/blog-article/aAn4O000000CdHCSA0/uk-vat-changes-in-2021-what-you-need-to-know
+  - text: .
+- paragraph:
+  - strong: How do I disable Avalara AvaTax?
+- paragraph:
+  - text: In
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", click"
+  - strong: Edit
+  - text: next to
+  - strong: Avalara AvaTax
+  - text: . Under
+  - strong: Provider targeting
+  - text: ", uncheck any boxes that are checked in the"
+  - strong: Country
+  - text: or
+  - strong: Subdivisions
+  - text: menus, then click
+  - strong: Save
+  - text: .
+- paragraph:
+  - text: Your store will default to using
+  - link "basic tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: .
+- heading "Calculations" [level=4]
+- paragraph:
+  - strong: Can sales tax be calculated on international transactions through the AvaTax app?
+- paragraph: Avalara AvaTax will calculate VAT/GST for transactions into EU member states and any other country that charges VAT/GST, as long as the country has been enabled for VAT/GST collection.
+- paragraph:
+  - strong: How can I adjust how rounding works with Avalara?
+- paragraph:
+  - text: Avalara can round tax amounts at the line-level or document-level. See
+  - link "Change how AvaTax Update rounds the tax amount":
+    - /url: https://help.avalara.com/Avalara_AvaTax_Update/Change_how_AvaTax_Update_rounds_the_tax_amount
+  - text: from Avalara's help center for instructions.
+- paragraph:
+  - strong: How does Avalara calculate VAT for businesses selling in Northern Ireland?
+- paragraph:
+  - text: As a part of the Brexit Withdrawal Agreement, the UK and EU agreed that Northern Ireland would take up a dual status within the EU and UK VAT customs union and market for goods only. Avalara now automatically associates businesses and customers transacting in Northern Ireland to the
+  - strong: XI
+  - text: country code to correctly calculate sales tax.
+- paragraph:
+  - text: See
+  - link "Northern Ireland ISO code update for businesses selling into Northern Ireland":
+    - /url: https://knowledge.avalara.com/bundle/hvp1668662778044_hvp1668662778044/page/ACTION_NEEDED_Northern_Ireland_ISO_code_update_for_businesses_selling_into_Northern_Ireland.html
+  - text: in Avalara's help center for more information on VAT in Northern Ireland.
+- paragraph:
+  - strong: Is sales tax calculated if an order has an unsupported country as its shipping origin or destination, such as Brazil or India?
+- paragraph:
+  - text: To use Avalara for tax calculation, a supported country must be selected as the default country under
+  - link "Store Profile settings":
+    - /url: /s/article/Store-Profile-Settings
+  - text: . The cart and checkout will show $0 for tax, and the Order View Detail will show “No Tax”.
+- paragraph:
+  - text: For shipping destinations, countries not available or not selected under
+  - link "Provider targeting":
+    - /url: "#settings"
+    - strong: Provider targeting
+  - text: will use
+  - link "basic tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: .
+- paragraph:
+  - text: Alternatively, you can choose to use an
+  - link "automatic tax provider":
+    - /url: /s/article/Automatic-Tax-Setup
+  - text: that supports these locations.
+- paragraph:
+  - strong: Can I use Avalara AvaTax for some countries/regions and Basic Tax for others?
+- paragraph:
+  - text: Yes. In
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", click"
+  - strong: Edit
+  - text: next to Avalara AvaTax. For the locations you want to use
+  - link "basic tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: ", uncheck any boxes in the"
+  - strong: Country
+  - text: and
+  - strong: Subdivisions
+  - text: menus under
+  - strong: Provider targeting
+  - text: ", then click"
+  - strong: Save
+  - text: .
+- heading "Products" [level=4]
+- paragraph:
+  - strong: How do I assign Avalara product tax codes and tax properties to products?
+- paragraph:
+  - text: Avalara product tax codes can be assigned to products one at a time via the control panel, or in bulk via a
+  - link "product import":
+    - /url: /s/article/Legacy-Import-Export-Overview
+  - text: using a CSV file. Tax properties can be added to applicable products one at a time in the control panel and via
+  - link "the API":
+    - /url: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-properties
+  - text: . See our article on
+  - link "charging product-specific tax rates":
+    - /url: /s/article/Changing-Tax-Rates-on-a-Product
+  - text: with automatic tax for more information.
+- paragraph:
+  - strong: Can I assign Avalara product tax codes to variants?
+- paragraph: "Yes, Avalara product tax codes can be assigned to variants by importing or adding them manually in your Avalara AvaTax account. If you plan on importing your SKUs, you'll need to create a CSV file with the following three columns:"
+- list:
+  - listitem:
+    - strong: Item
+    - text: — the SKU code from BigCommerce for the variant
+  - listitem:
+    - strong: ItemDescription
+    - text: — a comment associated with an item that describes the product, service, or charge. The same value can be used for both Item and ItemDescription. Duplicate descriptions are allowed.
+  - listitem:
+    - strong: TaxCode
+    - text: — the
+    - link "Avalara Product Tax code":
+      - /url: https://taxcode.avatax.avalara.com/
+    - text: for the variant
+- paragraph:
+  - text: It’s important to note that there is a maximum of 100,000 items per import. If you must map more than 100,000 SKU codes to Avalara Product Tax Codes, you will need to perform multiple imports. It is also possible to create, read, update, and delete items in AvaTax using their
+  - link "API":
+    - /url: https://developer.avalara.com/api-reference/avatax/rest/v2/methods/Items/
+  - text: .
+- paragraph:
+  - text: To assign an Avalara product tax code to a variant, log into your
+  - link "Avalara account":
+    - /url: https://home.avalara.com/
+  - text: . On the navigation bar, click
+  - strong: Settings
+  - text: ", then select"
+  - strong: What you sell
+  - text: . From here you can add items one-by-one or import items in bulk using a CSV file. See Avalara's
+  - link "Import and map items to tax codes":
+    - /url: https://help.avalara.com/Avalara_AvaTax_Update/Import_and_map_items_to_tax_codes
+  - text: to learn more.
+- heading "Troubleshooting" [level=4]
+- paragraph:
+  - strong: Why was a 10% tax rate applied? That is not correct.
+- paragraph:
+  - text: A fallback tax rate of 10% is applied when there is a failure to connect to Avalara's automatic tax calculation service. It can also happen if a shipping origin address hasn't been set up in the
+  - link "Shipping page":
+    - /url: /s/article/Shipping-Setup
+  - text: ", or when the customer's address could not be validated. Check the Shipping page and ensure there is a valid address set as a Shipping Origin. Check"
+  - link "status.bigcommerce.com":
+    - /url: http://status.bigcommerce.com/
+  - text: to see if there are any service performance issues with Avalara's service.
+- paragraph:
+  - text: Optionally, instead of the flat 10% rate, you can choose to use your store's basic tax configuration as the fallback rate, or disable fallback tax completely (the customer will not be able to check out if the automatic tax provider is unreachable). Go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax/configured-providers
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: and click
+  - strong: Edit
+  - text: to change your Fallback Tax setting.
+- paragraph:
+  - strong: What if my taxes aren’t being calculated correctly?
+- paragraph:
+  - text: You can check the status of servers that handle tax calculation by going to
+  - link "status.bigcommerce.com":
+    - /url: http://status.bigcommerce.com/
+  - text: "to see if there are any service performance issues with Avalara's service. If there are no issues with performance, check the following:"
+- list:
+  - listitem: If the tax rate is not calculating as you expect, login to Avatax and go to Settings to confirm you have selected the correct jurisdictions. If these are all correct, contact Avalara's support.
+  - listitem: Compare the tax between your Avatax account and BigCommerce. If these are different, contact BigCommerce support to report it.
+  - listitem:
+    - text: Check that you have set up a
+    - link "Store Profile country":
+      - /url: /s/article/Store-Profile-Settings
+    - text: in one of the supported countries.
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Tax Overview":
+      - /url: /s/article/Tax-Overview
+  - listitem:
+    - link "Automatic Tax Setup":
+      - /url: /s/article/Automatic-Tax-Setup
+  - listitem:
+    - link "Basic Tax Setup":
+      - /url: /s/article/Manual-Tax-Setup
+  - listitem:
+    - link "Making Customers Tax-Exempt":
+      - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+  - listitem:
+    - link "Charging Product-Specific Tax Rates":
+      - /url: /s/article/Changing-Tax-Rates-on-a-Product
+  - listitem:
+    - link "Guide to Legacy Product Import/Export":
+      - /url: /s/article/Legacy-Import-Export-Overview
+  - listitem:
+    - link "Importing and Exporting Customers":
+      - /url: /s/article/Importing-Exporting-Customers
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Avalara AvaTax
+- iframe

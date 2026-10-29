@@ -1,0 +1,195 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- heading "Search Results" [level=1]
+- heading "Searchable objects from navigation bar" [level=2]
+- list "Searchable objects from navigation bar":
+  - listitem:
+    - link "All":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Articles":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Discussions":
+      - /url: javascript:void(0);
+    - button "Help"
+  - listitem:
+    - link "Groups":
+      - /url: javascript:void(0);
+- button "Collapse List" [expanded]
+- heading "Articles" [level=2]:
+  - link "Articles":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- text: • Sorted by
+- button "Relevance Change sort order"
+- link "View More Articles search results":
+  - /url: javascript:void(0)
+- list:
+  - listitem:
+    - heading "ACH (Automated Clearing House) Direct Debit" [level=3]:
+      - link "ACH (Automated Clearing House) Direct Debit":
+        - /url: /s/article/ACH-Direct-Debit
+    - list:
+      - listitem: "000035896"
+      - listitem: Last Modified Sep 2, 2026, 6:09 PM
+    - mark: businesses
+    - text: . ACH eliminates payment failures due to expired cards or exceeded transaction limits, and
+  - listitem:
+    - heading "Feedonomics for Pinterest" [level=3]:
+      - link "Feedonomics for Pinterest":
+        - /url: /s/article/Feedonomics-for-Pinterest
+    - list:
+      - listitem: "000036353"
+      - listitem: Last Modified Sep 29, 2026, 1:46 PM
+    - mark: business
+    - text: goals is a feature available on the Retail version of Feedonomics Surface. Moving from
+  - listitem:
+    - heading "Connecting with TD Online Mart" [level=3]:
+      - link "Connecting with TD Online Mart":
+        - /url: /s/article/Connecting-with-TD-Online-Mart
+    - list:
+      - listitem: "000034946"
+      - listitem: Last Modified Jun 1, 2026, 1:40 PM
+    - text: with Apple Pay, fraud mitigation tools to help protect your
+    - mark: business
+    - text: ", and the benefit of same"
+  - listitem:
+    - heading "Connecting with Cybersource" [level=3]:
+      - link "Connecting with Cybersource":
+        - /url: /s/article/Connecting-with-Cybersource
+    - list:
+      - listitem: "000036008"
+      - listitem: Last Modified Jul 10, 2026, 3:01 PM
+    - mark: businesses
+    - text: to accept online payments worldwide. What is an Open Payment Provider fee? For stores on
+  - listitem:
+    - heading "Connecting with Braintree" [level=3]:
+      - link "Connecting with Braintree":
+        - /url: /s/article/Connecting-with-Braintree
+    - list:
+      - listitem: "000035927"
+      - listitem: Last Modified Sep 22, 2026, 8:06 PM
+    - text: and grow your
+    - mark: business
+    - text: ": local payment methods and PayPal Pay Later to expand your global"
+- heading "Discussions" [level=2]:
+  - link "Discussions":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- link "View More Discussions search results":
+  - /url: javascript:void(0)
+- text: "Sort by:"
+- combobox "Sort by:": Top Questions
+- status
+- list "feed items":
+  - listitem:
+    - article:
+      - link "PayPal security upgrade - is action needed?":
+        - /url: /s/question/0D51300003XjReCCAV/paypal-security-upgrade-is-action-needed
+        - paragraph: PayPal security upgrade - is action needed?
+      - text: Setup & Management · Michael Ioco · February 16, 2017 at 7:17 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 3.11K Number of Upvotes 0 Number of Comments 9
+  - listitem:
+    - article:
+      - link "why can we not opt out of 2 step verification!":
+        - /url: /s/question/0D54O000063ej0ESAQ/why-can-we-not-opt-out-of-2-step-verification
+        - paragraph: why can we not opt out of 2 step verification!
+      - text: My Account · Paul Heywood · September 5, 2019 at 12:31 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 1.3K Number of Upvotes 0 Number of Comments 6
+  - listitem:
+    - article:
+      - link "Verify domain with Facebook Business":
+        - /url: /s/question/0D51B000048MZYQSA4/verify-domain-with-facebook-business
+        - paragraph: Verify domain with Facebook Business
+      - text: Apps & Integrations · Laszlo Bozzay · January 25, 2018 at 8:40 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 4.6K Number of Upvotes 0 Number of Comments 4
+  - listitem:
+    - article:
+      - link "Need to restore access to domain email (davepaulo.com)":
+        - /url: /s/question/0D5UG00000xhsHm0AI/need-to-restore-access-to-domain-email-davepaulocom
+        - paragraph: Need to restore access to domain email (davepaulo.com)
+      - text: My Account · Dave Paulo · July 1, 2026 at 3:18 PM Number of Views 149 Number of Upvotes 0 Number of Comments 5
+  - listitem:
+    - article:
+      - link "I need help to untick the billing address same as shipping address in optimized checkout.":
+        - /url: /s/question/0D54O00006ApKPCSA3/i-need-help-to-untick-the-billing-address-same-as-shipping-address-in-optimized-checkout
+        - paragraph: I need help to untick the billing address same as shipping address in optimized checkout.
+      - text: Themes & Design · Gina Sibley · November 10, 2019 at 10:36 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 1.4K Number of Upvotes 1 Number of Comments 3
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Search Results | business verification
+- iframe

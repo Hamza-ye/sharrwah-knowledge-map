@@ -1,0 +1,1057 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Currency Setup":
+                - /url: /s/article/Managing-Currencies
+            - listitem:
+              - link "Multicurrency":
+                - /url: /s/article/Using-Multiple-Currencies
+            - listitem:
+              - link "Recurring Billing":
+                - /url: /s/article/Setting-up-Recurring-Billing
+            - listitem:
+              - link "Test Orders":
+                - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+          - list:
+            - listitem:
+              - text: Checkout
+              - list:
+                - listitem:
+                  - link "Optimized One-Page Checkout":
+                    - /url: /s/article/Optimized-Single-Page-Checkout
+                - listitem:
+                  - link "Address Autocomplete":
+                    - /url: /s/article/Address-Autocomplete
+                - listitem:
+                  - link "Form Fields":
+                    - /url: /s/article/Editing-Form-Fields
+                - listitem:
+                  - link "Stored Credit Cards":
+                    - /url: /s/article/Enabling-Stored-Payment-Methods
+                - listitem:
+                  - link "Gift Certificates":
+                    - /url: /s/article/Gift-Certificates
+                - listitem:
+                  - link "Gift Wrapping":
+                    - /url: /s/article/Gift-Wrapping
+                - listitem:
+                  - link "Order-level Fees":
+                    - /url: /s/article/Handling-Fees
+                - listitem:
+                  - link "Persistent Cart":
+                    - /url: /s/article/Persistent-Cart
+                - listitem:
+                  - link "Storefront Checkout Configurations":
+                    - /url: /s/article/Storefront-Checkout-Configurations
+            - listitem:
+              - text: Payment Methods
+              - list:
+                - listitem:
+                  - link "Available Payment Gateways":
+                    - /url: /s/article/Available-Payment-Gateways
+                  - list:
+                    - listitem:
+                      - link "Embedded Providers":
+                        - /url: "#embedded-providers"
+                    - listitem:
+                      - link "Open Providers":
+                        - /url: "#open-providers"
+                    - listitem:
+                      - link "Alternative Payment Methods":
+                        - /url: "#apm"
+                    - listitem:
+                      - link "Accelerated Checkout":
+                        - /url: "#accelerated-checkout"
+                    - listitem:
+                      - link "FAQ":
+                        - /url: "#faq"
+                - listitem:
+                  - link "Offline Payments":
+                    - /url: /s/article/Offline-Payment-Methods
+            - listitem:
+              - text: Troubleshooting
+              - list:
+                - listitem:
+                  - link "Understanding Checkout Errors":
+                    - /url: /s/article/Checkout-Errors
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Available Payment Gateways" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Embedded Payment Providers":
+      - /url: "#embedded-providers"
+  - listitem:
+    - link "Open Payment Providers":
+      - /url: "#open-providers"
+  - listitem:
+    - link "Alternative payment methods and digital wallets":
+      - /url: "#apm"
+  - listitem:
+    - link "Accelerated Checkout solutions":
+      - /url: "#accelerated-checkout"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: BigCommerce supports a broad range of payment gateway integrations, serving numerous countries and currencies.
+- paragraph: Select gateways support Alternative Payment Methods (APMs) like Alipay, Klarna, and SEPA along with leading digital wallets such as Amazon Pay, Apple Pay, and Google Pay. These options allow you to offer increased payment flexibility and popular regional methods.
+- paragraph: Accelerated Checkout solutions, Fastlane by PayPal and Stripe Link, provide shoppers with low-friction, passwordless checkout experiences that reduce cart abandonment and improve conversion.
+- link:
+  - /url: "#embedded-providers"
+- heading "Embedded Payment Providers" [level=3]
+- paragraph:
+  - text: Processing payments through BigCommerce gateway integrations on the
+  - link "Embedded Payment Provider list":
+    - /url: https://www.bigcommerce.com/payments/embedded-payment-providers/
+  - strong: do not
+  - text: incur
+  - link "Open Payment Provider fees":
+    - /url: /s/article/Pricing
+  - text: . Note that custom integrations to processors on the Embedded Payment Provider list, including those connected via third-party apps, will incur Open Payment Provider fees.
+- paragraph: See each gateway’s documentation for details such as requirements, limitations, setup instructions, supported countries and currencies, and additional features.
+- text: 
+- paragraph:
+  - strong: Using a “Powered By” store?
+  - text: If you were onboarded to BigCommerce through a partner, you may not have access to all listed payment gateways.
+- list:
+  - listitem:
+    - strong: Manual Capture
+    - text: — Authorized payments can be
+    - link "captured manually":
+      - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+    - text: at a later date.
+  - listitem:
+    - strong: 3D Secure
+    - text: — An
+    - link "additional security layer":
+      - /url: /s/article/3D-Secure
+    - text: that helps prevent unauthorized transactions.
+  - listitem:
+    - strong: Multicurrency
+    - text: — Supports
+    - link "multiple transactional currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+    - text: .
+  - listitem:
+    - strong: Stored Payment Methods
+    - text: — Payment details
+    - link "can be stored":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+    - text: for future transactions.
+  - listitem:
+    - strong: Recurring Payments
+    - text: —
+    - link "Recurring or subscription payments":
+      - /url: /s/article/Setting-up-Recurring-Billing
+    - text: are supported.
+  - listitem:
+    - strong: MSF Payments
+    - text: — Supports
+    - link "multiple payment configurations":
+      - /url: /s/article/Multi-Storefront-Payment-Methods
+    - text: .
+- table:
+  - rowgroup:
+    - row "Payment Gateway Manual Capture 3D Secure Multicurrency Stored Payment Methods Recurring Payments MSF Payments":
+      - cell "Payment Gateway":
+        - strong: Payment Gateway
+      - cell "Manual Capture":
+        - strong: Manual Capture
+      - cell "3D Secure":
+        - strong: 3D Secure
+      - cell "Multicurrency":
+        - strong: Multicurrency
+      - cell "Stored Payment Methods":
+        - strong: Stored Payment Methods
+      - cell "Recurring Payments":
+        - strong: Recurring Payments
+      - cell "MSF Payments":
+        - strong: MSF Payments
+    - row "Access Worldpay ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "Access Worldpay":
+        - link "Access Worldpay":
+          - /url: /s/article/Connecting-with-Access-Worldpay
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Adyen ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "Adyen":
+        - link "Adyen":
+          - /url: /s/article/Connecting-with-Adyen
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Affirm ✔ ✔":
+      - cell "Affirm":
+        - link "Affirm":
+          - /url: /s/article/Connecting-with-Affirm
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Afterpay ✔ ✔ ✔":
+      - cell "Afterpay":
+        - link "Afterpay":
+          - /url: /s/article/Connecting-with-Afterpay
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Amazon Pay ✔ ✔ ✔ ✔":
+      - cell "Amazon Pay":
+        - link "Amazon Pay":
+          - /url: /s/article/Connecting-with-Amazon-Pay
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Bankful ✔ ✔":
+      - cell "Bankful":
+        - link "Bankful":
+          - /url: /s/article/Connecting-with-Bankful
+      - cell
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Bank of New Zealand ✔ ✔ ✔ ✔":
+      - cell "Bank of New Zealand":
+        - link "Bank of New Zealand":
+          - /url: /s/article/Connecting-with-Bank-of-New-Zealand
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell "✔"
+      - cell
+    - row "BigCommerce Payments ✔ ✔ ✔ ✔ ✔":
+      - cell "BigCommerce Payments":
+        - link "BigCommerce Payments":
+          - /url: /s/article/Connecting-with-BigCommerce-Payments
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+    - row "BlueSnap Direct ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "BlueSnap Direct":
+        - link "BlueSnap Direct":
+          - /url: /s/article/Connecting-with-BlueSnap-Direct
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Braintree ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "Braintree":
+        - link "Braintree":
+          - /url: /s/article/Connecting-with-Braintree
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Checkout.com ✔ ✔ ✔ ✔ ✔":
+      - cell "Checkout.com":
+        - link "Checkout.com":
+          - /url: /s/article/Connecting-with-Checkoutcom
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "Clearpay ✔":
+      - cell "Clearpay":
+        - link "Clearpay":
+          - /url: /s/article/Connecting-with-Clearpay
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row "Heartland Payment Systems ✔ ✔":
+      - cell "Heartland Payment Systems":
+        - link "Heartland Payment Systems":
+          - /url: /s/article/Connecting-with-Heartland-Payment-Systems
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Klarna Payments ✔ ✔ ✔":
+      - cell "Klarna Payments":
+        - link "Klarna Payments":
+          - /url: /s/article/Connecting-with-Klarna-Payments
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "PayPal ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "PayPal":
+        - link "PayPal":
+          - /url: /s/article/Connecting-with-PayPal
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Sezzle ✔ ✔ ✔":
+      - cell "Sezzle":
+        - link "Sezzle":
+          - /url: /s/article/Connecting-with-Sezzle
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Stripe UPE ✔ ✔ ✔ ✔ ✔":
+      - cell "Stripe UPE":
+        - link "Stripe UPE":
+          - /url: /s/article/Connecting-Stripe-Payment-Gateway
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "Stripe OCS ✔ ✔ ✔ ✔ ✔":
+      - cell "Stripe OCS":
+        - link "Stripe OCS":
+          - /url: /s/article/Connecting-with-Stripe-OCS
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "TD Online Mart ✔ ✔ ✔ ✔ ✔":
+      - cell "TD Online Mart":
+        - link "TD Online Mart":
+          - /url: /s/article/Connecting-with-TD-Online-Mart
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+    - row "Worldpay B2B Payments ✔ ✔ ✔":
+      - cell "Worldpay B2B Payments":
+        - link "Worldpay B2B Payments":
+          - /url: /s/article/Connecting-with-Worldpay-B2B
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "Worldpay Ecomm ✔ ✔":
+      - cell "Worldpay Ecomm":
+        - link "Worldpay Ecomm":
+          - /url: /s/article/Connecting-with-Worldpay-Ecomm-Payment-Gateway
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Worldpay Core ✔ ✔":
+      - cell "Worldpay Core":
+        - link "Worldpay Core":
+          - /url: /s/article/Worldpay-Core-Payment-Gateway
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Zip ✔ ✔ ✔":
+      - cell "Zip":
+        - link "Zip":
+          - /url: /s/article/Connecting-with-Zip
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+- heading "APP PAYMENT PROCESSORS" [level=4]
+- paragraph:
+  - text: In addition to the above payment gateway integrations, the following app payment processors are also
+  - link "Embedded Payment Providers":
+    - /url: http://bigcommerce.com/pricing/
+  - text: ":"
+- table:
+  - rowgroup:
+    - row "Acumatica Payments Payfabric (Global Payments)":
+      - cell "Acumatica Payments":
+        - link "Acumatica Payments":
+          - /url: https://www.bigcommerce.com/apps/acumatica-payments/
+      - cell "Payfabric (Global Payments)":
+        - link "Payfabric":
+          - /url: https://www.bigcommerce.com/apps/payfabric/
+        - text: (Global Payments)
+    - row "Bankful Sezzle":
+      - cell "Bankful":
+        - link "Bankful":
+          - /url: https://www.bigcommerce.com/apps/bankful-payments/
+      - cell "Sezzle":
+        - link "Sezzle":
+          - /url: https://www.bigcommerce.com/apps/sezzle/
+    - row "Fortis Worldpay WPG":
+      - cell "Fortis":
+        - link "Fortis":
+          - /url: https://www.bigcommerce.com/apps/fortis/
+      - cell "Worldpay WPG":
+        - link "Worldpay WPG":
+          - /url: https://www.bigcommerce.com/apps/worldpay-wpg/
+    - row "Klarna Checkout":
+      - cell "Klarna Checkout":
+        - link "Klarna Checkout":
+          - /url: https://www.bigcommerce.com/apps/klarna-checkout/
+      - cell
+- link:
+  - /url: "#open-providers"
+- heading "Open Payment Providers" [level=3]
+- paragraph:
+  - text: Processing payments through methods outside of the
+  - link "Embedded Payment Provider list":
+    - /url: "#embedded-providers"
+  - strong: will incur
+  - link "Open Payment Provider fees":
+    - /url: /s/article/Pricing
+  - text: for stores on self-serve plans. Performance plan stores operating under contracted terms are not subject to this fee.
+- paragraph: See each gateway’s documentation for details such as requirements, limitations, setup instructions, supported countries and currencies, and additional features.
+- text: 
+- paragraph:
+  - strong: Using a “Powered By” store?
+  - text: If you were onboarded to BigCommerce through a partner, you may not have access to all listed payment gateways.
+- list:
+  - listitem:
+    - strong: Manual Capture
+    - text: — Authorized payments can be
+    - link "captured manually":
+      - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+    - text: at a later date.
+  - listitem:
+    - strong: 3D Secure
+    - text: — An
+    - link "additional security layer":
+      - /url: /s/article/3D-Secure
+    - text: that helps prevent unauthorized transactions.
+  - listitem:
+    - strong: Multicurrency
+    - text: — Supports
+    - link "multiple transactional currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+    - text: .
+  - listitem:
+    - strong: Stored Payment Methods
+    - text: — Payment details
+    - link "can be stored":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+    - text: for future transactions.
+  - listitem:
+    - strong: Recurring Payments
+    - text: —
+    - link "Recurring or subscription payments":
+      - /url: /s/article/Setting-up-Recurring-Billing
+    - text: are supported.
+  - listitem:
+    - strong: MSF Payments
+    - text: — Supports
+    - link "multiple payment configurations":
+      - /url: /s/article/Multi-Storefront-Payment-Methods
+    - text: .
+- table:
+  - rowgroup:
+    - row "Payment Gateway Manual Capture 3D Secure Multicurrency Stored Payment Methods Recurring Payments MSF Payments":
+      - cell "Payment Gateway":
+        - strong: Payment Gateway
+      - cell "Manual Capture":
+        - strong: Manual Capture
+      - cell "3D Secure":
+        - strong: 3D Secure
+      - cell "Multicurrency":
+        - strong: Multicurrency
+      - cell "Stored Payment Methods":
+        - strong: Stored Payment Methods
+      - cell "Recurring Payments":
+        - strong: Recurring Payments
+      - cell "MSF Payments":
+        - strong: MSF Payments
+    - row "Authorize.net ✔ ✔ ✔ ✔ ✔":
+      - cell "Authorize.net":
+        - link "Authorize.net":
+          - /url: /s/article/Connecting-with-Authorize-net
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Barclaycard Smartpay Advance ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "Barclaycard Smartpay Advance":
+        - link "Barclaycard Smartpay Advance":
+          - /url: /s/article/Connecting-with-Barclaycard-Smartpay-Advance
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "BitPay ✔ ✔":
+      - cell "BitPay":
+        - link "BitPay":
+          - /url: /s/article/Connecting-with-BitPay
+      - cell
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Chase Merchant Services ✔ ✔ ✔ ✔ ✔":
+      - cell "Chase Merchant Services":
+        - link "Chase Merchant Services":
+          - /url: /s/article/Connecting-with-Chase-Merchant-Services
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Clover Payments ✔":
+      - cell "Clover Payments":
+        - link "Clover Payments":
+          - /url: /s/article/Connecting-with-Clover-Payments
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Commonwealth Bank ✔ ✔ ✔ ✔":
+      - cell "Commonwealth Bank":
+        - link "Commonwealth Bank":
+          - /url: /s/article/Connecting-with-Commonwealth-Bank
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell "✔"
+      - cell
+    - row "Cybersource ✔ ✔ ✔ ✔ ✔ ✔":
+      - cell "Cybersource":
+        - link "Cybersource":
+          - /url: /s/article/Connecting-with-Cybersource
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+    - row "Electronic Payment Exchange (EPX) ✔ ✔":
+      - cell "Electronic Payment Exchange (EPX)":
+        - link "Electronic Payment Exchange (EPX)":
+          - /url: /s/article/Connecting-with-Electronic-Payment-Exchange
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Eway Rapid ✔ ✔":
+      - cell "Eway Rapid":
+        - link "Eway Rapid":
+          - /url: /s/article/eWAY-Rapid-Payment-Gateway
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Mercado Pago ✔ ✔ ✔":
+      - cell "Mercado Pago":
+        - link "Mercado Pago":
+          - /url: /s/article/Connecting-with-Mercado-Pago
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "Moneris ✔ ✔ ✔":
+      - cell "Moneris":
+        - link "Moneris":
+          - /url: /s/article/Connecting-with-Moneris
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "MyVirtualMerchant ✔ ✔":
+      - cell "MyVirtualMerchant":
+        - link "MyVirtualMerchant":
+          - /url: /s/article/Connecting-with-MyVirtualMerchant
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+      - cell "✔"
+      - cell
+    - row "Nexi XPay ✔ ✔ ✔ ✔ ✔":
+      - cell "Nexi XPay":
+        - link "Nexi XPay":
+          - /url: /s/article/Connecting-with-Nexi-XPay
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "NMI ✔ ✔":
+      - cell "NMI":
+        - link "NMI":
+          - /url: /s/article/Connecting-with-NMI
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Opayo by Elavon ✔ ✔ ✔ ✔ ✔":
+      - cell "Opayo by Elavon":
+        - link "Opayo by Elavon":
+          - /url: /s/article/Connecting-with-Opayo-by-Elavon
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "Optty ✔ ✔":
+      - cell "Optty":
+        - link "Optty":
+          - /url: /s/article/Connecting-with-Optty
+      - cell
+      - cell
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+    - row "QuickBooks Payments ✔ ✔":
+      - cell "QuickBooks Payments":
+        - link "QuickBooks Payments":
+          - /url: /s/article/Connecting-Quickbooks-Payments
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Serve First ✔":
+      - cell "Serve First":
+        - link "Serve First":
+          - /url: /s/article/Connecting-with-Serve-First
+      - cell "✔"
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+    - row "Square ✔ ✔ ✔ ✔":
+      - cell "Square":
+        - link "Square":
+          - /url: /s/article/Connecting-Square-Payments-V2
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell
+      - cell "✔"
+    - row "Tilopay ✔ ✔ ✔ ✔ ✔":
+      - cell "Tilopay":
+        - link "Tilopay":
+          - /url: /s/article/Connecting-with-Tilopay
+      - cell "✔"
+      - cell "✔"
+      - cell "✔"
+      - cell
+      - cell "✔"
+      - cell "✔"
+    - row "USAePay ✔":
+      - cell "USAePay":
+        - link "USAePay":
+          - /url: /s/article/Connecting-with-USAePay
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell
+      - cell "✔"
+    - row "Windcave ✔ ✔* ✔ ✔":
+      - cell "Windcave":
+        - link "Windcave":
+          - /url: /s/article/Connecting-with-Windcave
+      - cell "✔"
+      - cell "✔*"
+      - cell "✔"
+      - cell
+      - cell
+      - cell "✔"
+- paragraph: "*See article for details."
+- heading "OFFLINE PAYMENT METHODS" [level=4]
+- paragraph:
+  - text: In addition to the above payment gateway integrations, orders processed using
+  - link "offline payment methods":
+    - /url: /s/article/Offline-Payment-Methods
+  - text: are also subject to the Open Payment Provider fee.
+- table:
+  - rowgroup:
+    - row "Bank deposit Money order":
+      - cell "Bank deposit"
+      - cell "Money order"
+    - row "Cash on delivery Pay in-store":
+      - cell "Cash on delivery"
+      - cell "Pay in-store"
+    - row "Check*":
+      - cell "Check*"
+      - cell
+- paragraph:
+  - text: "*"
+  - link "B2B Edition":
+    - /url: /s/article/B2B-Edition
+  - text: adopts the Check offline payment method to enable the Purchase Order (PO) payment method. Note that Performance plan stores operating under contracted terms are not subject to the Open Payment Provider fee.
+- link:
+  - /url: "#apm"
+- heading "Alternative Payment Methods and Digital Wallets" [level=3]
+- paragraph: Alternative Payment Methods (APMs) are payment options that often do not require a major credit card scheme such as Visa or Mastercard. Shoppers in many regions prefer local APMs at checkout, making them a valuable tool for international selling.
+- paragraph: "Offered through a supporting payment gateway, APMs can include payment types such as:"
+- list:
+  - listitem: bank transfers
+  - listitem: “buy now, pay later” (BNPL)
+  - listitem: cash payments
+  - listitem: digital wallets
+  - listitem: direct debit
+  - listitem: mobile payments
+- paragraph: Digital wallet APMs allow shoppers to complete purchases by signing into a third-party account, bypassing the need to create a separate account or re-enter payment information. This streamlines the checkout experience, boosts conversion rates, and provides a better mobile shopping experience.
+- paragraph:
+  - text: Note that the Amazon Pay, Apple Pay, and Google Pay digital wallets have a unique setup experience and are found under the
+  - strong: Digital Wallets
+  - text: section of
+  - strong: Settings › Payments
+  - text: .
+- paragraph:
+  - text: For a full list of available APMs, digital wallets, and their supported gateways, see
+  - link "Introduction to Alternative Payment Methods":
+    - /url: /s/article/Intro-to-APMs
+  - text: .
+- link:
+  - /url: "#accelerated-checkout"
+- heading "Accelerated Checkout Solutions" [level=3]
+- paragraph: Accelerated Checkout solutions remove friction from checkout by offering a passwordless checkout experience. When using an Accelerated Checkout, shoppers are prompted to securely save their information with the provider.
+- paragraph: Once they have an account, shoppers receive a one-time passcode to their mobile device whenever they enter their email address at checkout, and the Accelerated Checkout solution automatically fills in their address and payment information for a single-click checkout.
+- paragraph: Since Accelerated Checkout profiles are supported on any online store using the solution, offering this payment option can assure shoppers that their payments will be speedy and secure. This can encourage repeat purchases and increase your conversion rate.
+- paragraph: "The following Accelerated Checkout solutions are available in BigCommerce:"
+- list:
+  - listitem:
+    - strong: Stripe Link
+    - text: — Supported by the Stripe payment gateways; offer a streamlined checkout experience for any shopper with a Link profile.
+  - listitem:
+    - strong: Fastlane by PayPal
+    - text: —
+    - link "Fastlane by PayPal":
+      - /url: /s/article/Fastlane-by-PayPal
+    - text: provides merchants with a fast, passwordless checkout solution for guest shoppers.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Where do I manage my funds?
+- paragraph:
+  - text: You will control and direct funds in your merchant account with your merchant service provider. Usually, this is where you will connect to your bank account or
+  - link "perform refunds":
+    - /url: /s/article/Processing-Refunds
+  - text: external to BigCommerce.
+- paragraph:
+  - strong: What is a hosted payment gateway?
+- paragraph: Hosted payment gateways navigate shoppers away from your checkout to the payment service provider’s page. After entering their payment details and completing the transaction, they are redirected back to your storefront.
+- paragraph: "Hosted payment gateways:"
+- list:
+  - listitem: Afterpay
+  - listitem: Amazon Pay
+  - listitem: BitPay
+  - listitem: Klarna
+  - listitem: Mercado Pago
+  - listitem: Opayo
+  - listitem: Optty
+  - listitem: Serve First
+  - listitem: Sezzle
+- paragraph:
+  - text: Note that hosted gateways are not compatible with
+  - link "Embedded Checkout":
+    - /url: https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/embedded-checkout/overview
+  - text: on headless storefronts. In addition, most APMs and digital wallets do not support Embedded Checkout as they redirect shoppers to a hosted payment page.
+- paragraph: "APMs and digital wallets that support Embedded Checkout:"
+- list:
+  - listitem: Google Pay
+  - listitem: PayPal Pay Later
+- paragraph:
+  - strong: Do any payment gateways support Level 2 and Level 3 data?
+- paragraph:
+  - text: Yes, several gateways support the use of Level 2 and Level 3 data. For more information, see
+  - link "Using Level 2 and Level 3 Data in BigCommerce":
+    - /url: /s/article/Using-Level-2-and-Level-3-Data-in-BigCommerce
+  - text: .
+- paragraph:
+  - strong: Do any payment gateways support the selling of regulated products, such as firearms, e-cigs, or CBD?
+- paragraph:
+  - text: The following gateways
+  - strong: may
+  - text: allow the sale of regulated items. Before selling any items, check with your payment gateway to make sure your products are permitted in their terms of service.
+- list:
+  - listitem:
+    - link "Bankful":
+      - /url: https://bankful.com/
+  - listitem:
+    - link "NMI":
+      - /url: https://www.nmi.com/
+  - listitem:
+    - link "Sezzle":
+      - /url: https://sezzle.com/
+  - listitem:
+    - link "USA ePay":
+      - /url: https://help.usaepay.info/
+    - text: "*"
+  - listitem:
+    - link "Worldpay":
+      - /url: https://worldpay.payment-processors.com/
+- paragraph:
+  - text: "*You must use"
+  - link "Paysafe":
+    - /url: https://www.paysafe.com/us-en/
+  - text: as your Merchant Services Provider (MSP).
+- paragraph:
+  - strong: Are there other payment processors outside of payment gateways?
+- paragraph:
+  - text: Yes, you can find additional payment processors on our
+  - link "App Marketplace":
+    - /url: https://www.bigcommerce.com/apps/categories/payments-security/payment-processors-gateways/
+  - text: . Note that Open Payment Provider fees may apply. For more details, see
+  - link "About BigCommerce Pricing":
+    - /url: /s/article/Pricing
+  - text: .
+- paragraph:
+  - strong: How will I know if changes are made to my payment methods in the control panel?
+- paragraph:
+  - text: When a payment method is enabled, disabled, or has settings updated, a notification will appear in the
+  - link "control panel dashboard":
+    - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+  - text: .
+- paragraph:
+  - img "Notifications in the control panel dashboard"
+- paragraph:
+  - text: You can also see records of changes to your payment methods in the
+  - link "Staff Action Logs":
+    - /url: /s/article/Using-Store-Logs
+  - text: .
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "3D Secure":
+      - /url: /s/article/3D-Secure
+  - listitem:
+    - link "Enabling Stored Payment Methods":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+  - listitem:
+    - link "Introduction to Alternative Payment Methods":
+      - /url: /s/article/Intro-to-APMs
+  - listitem:
+    - link "Manually Capturing Transactions (Authorize Only)":
+      - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+  - listitem:
+    - link "Multi-Storefront Payment Methods":
+      - /url: /s/article/Multi-Storefront-Payment-Methods
+  - listitem:
+    - link "Optimized One-Page Checkout":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+  - listitem:
+    - link "Recurring Billing":
+      - /url: /s/article/Setting-up-Recurring-Billing
+  - listitem:
+    - link "Using Multiple Currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+  - listitem:
+    - link "BigCommerce Embedded Payment Providers":
+      - /url: https://www.bigcommerce.com/payments/embedded-payment-providers/
+    - text: (bigcommerce.com)
+  - listitem:
+    - link "BigCommerce Pricing and Plan Information":
+      - /url: https://www.bigcommerce.com/pricing/
+    - text: (bigcommerce.com)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Available Payment Gateways
+- iframe

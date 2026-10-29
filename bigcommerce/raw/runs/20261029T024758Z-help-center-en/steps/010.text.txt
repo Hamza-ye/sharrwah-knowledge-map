@@ -1,0 +1,144 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+Users
+Billing
+Pricing
+Account Dashboard
+Changing Plans
+Requirements
+Account Dashboard
+Upgrading
+Downgrading
+Changing Billing Frequency
+Billing Cycle
+FAQ
+About Invoices
+Cancelling
+TD Bank
+Changing Your Store's Plan
+What We'll Cover
+Requirements
+Accessing your store in the Account Dashboard
+Upgrading your plan
+Downgrading your plan
+Changing your billing frequency
+Locating your billing cycle
+FAQ
+BigCommerce offers plans that grow to fit your business's needs, whether you're just starting out, or are ready for advanced features such as stored payment methods, product filtering, or price lists. On our self-serve plans, you can choose a monthly billing cycle, or save with an annual billing cycle.
+As your business grows, you may want to take advantage of the advanced features offered as part of our Growth and Scale plans, or save by switching from monthly to annual billing. If you are interested in upgrading to the Performance plan, contact our sales team.
+BigCommerce makes it easy for stores on our self-serve plans to upgrade, downgrade, and change billing frequency directly in the Account Dashboard.
+Using a “Powered By” store? If you were onboarded to BigCommerce through a partner, you must change your store plan through the account provider.
+Requirements
+Only the store owner can access the Account Dashboard.
+To change your plan or billing frequency in the Account Dashboard, your store must be on a Core, Growth, or Scale plan.
+Trial stores may also manually perform plan upgrades.
+Accessing Your Store in the Account Dashboard
+To view and manage your store plan and billing frequency in the Account Dashboard, navigate to manage.bigcommerce.com and log into your account.
+If you are already logged into the control panel as the store owner, click your store name and select Manage store account from the drop-down menu.
+On the Account Dashboard home page, click on the store name to view the current plan details.
+Upgrading Your Plan
+If you have a trial store, or your store is currently on a Core or Growth plan, you can upgrade directly from the Account Dashboard. Under Plan summary, click Upgrade or Upgrade plan.
+On the next page, choose an available plan and select whether the new plan will be billed monthly or annually. After selecting a plan, you will proceed to the checkout page.
+If you are interested in upgrading to the Performance plan, contact our sales team.
+Did you know? You can save 25% off your monthly plan pricing by switching to annual billing. For details, see the BigCommerce pricing page.
+On the checkout page, confirm your billing details and complete the payment using the method on file or enter new payment details. After acknowledging the Terms of Service, click Place Order.
+If you need assistance, contact our support team. You will need your Support PIN.
+Self-serve plan upgrades are processed immediately. If you are updating your subscription in the middle of your existing billing period, you will be charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the next cycle’s invoice.
+Downgrading Your Plan
+Downgrade eligibility
+Downgrading self-serve plans
+Downgrading a Performance plan
+DOWNGRADE ELIGIBILITY
+Before downgrading your plan, review each plan’s features and fees, and confirm your store’s eligibility.
+Self-serve plan downgrade eligibility is based on your store’s Inclusive GMV, which is the store’s trailing 12-month sales volume after a 10% reduction. For more information on Inclusive GMV calculations, fees, and viewing your sales volume, see About BigCommerce Pricing.
+To downgrade from the Growth plan to Core, your GMV must be below $30,000.
+To downgrade from the Scale plan to Growth, your GMV must be below $100,000.
+Note: After downgrading, if your trailing 12-month Inclusive GMV exceeds your new plan’s threshold, your store will be automatically upgraded at the start of your next billing period. Keep this in mind if your sales volume is near the plan threshold.
+DOWNGRADING SELF-SERVE PLANS
+If your store is currently on a Growth or Scale plan, you can downgrade directly from the Account Dashboard. Under Plan summary, click Downgrade plan.
+Note: To ensure that a downgrade processes before your next billing cycle, we require plan downgrades to be submitted at least 2 business days before your next billing date.
+On the next page, choose an available plan and select whether you will be billed monthly or annually. After reviewing the features that will be lost by moving to a lower plan, click Confirm downgrade.
+Note that downgrades are not immediate and will take effect at the start of your next billing cycle. This means when switching from annual to monthly billing, your change may not take effect for up to 11 months.
+If you need assistance, contact our support team. You will need your Support PIN.
+DOWNGRADING A PERFORMANCE PLAN
+Stores on a Performance plan that include a dedicated Customer Success Manager (CSM) should contact their CSM to discuss any plan changes.
+All other Performance plan stores should create a Billing case.
+Changing Your Billing Frequency
+Self-serve plans allow you to switch between monthly and annual billing frequency directly from the Account Dashboard. Under Plan summary, click Change billing frequency.
+Did you know? You can save 25% off your monthly plan pricing by switching to annual billing. For details, see the BigCommerce pricing page.
+In the popup window, select your new frequency and click Confirm change.
+Note that frequency changes are not immediate and will take effect at the start of your next billing cycle. This means switching from annual to monthly billing may not take effect for up to 11 months.
+Locating Your Billing Cycle
+You can locate your store’s billing period by viewing a past invoice.
+First, log into the Account Dashboard and on the home page, click on the store name to view the store details. In the browser’s URL bar, make a note of your store ID. It is the number at the end of the URL in the example below:
+https://manage.bigcommerce.com/account/stores/1234567890
+Next, click Account in the upper left, then select Invoices.
+Click Download next to a recent invoice with a positive value under Total (USD). If you have several recent invoices, we recommend downloading them all.
+Open the downloaded invoices and look for your store’s most recent plan line item. The value under Store ID should match the number previously noted and a plan charge such as Core Store Yearly, or Scale Store Monthly will appear under Charge Name.
+Your billing period is the timeframe noted under Service Period. For example, this invoice covers the period 2026-03-31 - 2027-03-30. This means the annual cycle ends 2027-03-30 and the new billing period begins 2027-03-31.
+FAQ
+When upgrading plans, why is there a prorated charge?
+Upgrades are processed immediately to allow you to access the new plan’s features without any delay. At the time of the upgrade, you are charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the next cycle’s invoice.
+For an annual plan, this means the prorated amount will cover the difference between the upgrade date and the start of the next year’s cycle.
+For example, if your billing cycle ends in November and you upgrade in April, you will be charged a prorated amount for the difference between plans for April through November.
+For an upgrade from the Growth plan to the Scale plan (299 - 79), this would be a prorated charge of around $1,760 (220 x 8).
+Additional Resources
+About BigCommerce Pricing
+About Your BigCommerce Invoice
+Creating and Viewing Support Cases
+Finding Your Support PIN
+The Account Dashboard
+BigCommerce Pricing (bigcommerce.com)
+Fees and Billing (commerce.com)
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Changing Your Store's Plan

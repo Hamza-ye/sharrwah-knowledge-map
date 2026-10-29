@@ -1,0 +1,512 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Channel Manager":
+            - /url: /s/article/Selling-Everywhere-with-Channel-Manager
+        - listitem:
+          - link "Getting Started with Localization":
+            - /url: /s/article/Getting-Started-with-Localization-on-Multi-Storefronts
+        - listitem:
+          - link "Multi-Storefront | International Enhancements":
+            - /url: /s/article/International-Enhancements-for-Multi-Storefront
+        - listitem:
+          - link "Multi-Storefront Payment Methods":
+            - /url: /s/article/Multi-Storefront-Payment-Methods
+          - list:
+            - listitem:
+              - link "How It Works":
+                - /url: "#howitworks"
+            - listitem:
+              - link "Requirements":
+                - /url: "#requirements"
+            - listitem:
+              - link "Supported Providers":
+                - /url: "#supported-providers"
+            - listitem:
+              - link "Setup":
+                - /url: "#setup"
+            - listitem:
+              - link "FAQ":
+                - /url: "#faq"
+      - list:
+        - listitem:
+          - link "Storefronts":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Catalyst":
+                - /url: /s/article/Catalyst
+            - listitem:
+              - link "BigCommerce for WordPress":
+                - /url: /s/article/BigCommerce-for-WordPress
+            - listitem:
+              - link "DEITY Falcon":
+                - /url: /s/article/Deity
+        - listitem:
+          - link "Marketplaces":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Ads and Social":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Point of Sale":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Multi-Storefront Payment Methods" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "How it works":
+      - /url: "#howitworks"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Supported providers":
+      - /url: "#supported-providers"
+  - listitem:
+    - link "Setup":
+      - /url: "#setup"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Multi-storefront payment settings allow you to configure the payment methods that appear on each of your different storefronts. This is useful for multi-brand, multi-segment, or multi-region use cases where you might want to show unique payment methods per storefront, or the same payment methods with settings unique to each storefront.
+- paragraph:
+  - img "Payments page displaying the Multi-storefront payment methods experience."
+- link:
+  - /url: "#howitworks"
+- heading "How It Works" [level=3]
+- paragraph: A payment provider can have multiple payment configurations, which allows the same payment provider to be set up multiple times using different merchant accounts, currencies, and settings in a single store. Once created, payment configurations are manually assigned to their intended channels. Configurations are unassigned by default, preventing them from appearing on unintended storefronts.
+- paragraph: "To help explain how they might be used, below are some possible use cases for payment configurations:"
+- heading "Multi-region" [level=4]
+- list:
+  - listitem: Use one merchant account with one payment provider to service multiple geographies in multiple currencies.
+  - listitem: Use multiple merchant accounts with one payment provider to service multiple geographies in multiple currencies.
+  - listitem: Use one merchant account per provider with multiple payment providers to service multiple geographies in multiple currencies.
+- heading "Multi-brand" [level=4]
+- list:
+  - listitem: Use one merchant with one payment provider to service multiple brands in the same geography with the same currency.
+  - listitem: Use multiple merchant accounts with one payment provider to service multiple brands in the same geography with the same currency.
+  - listitem: Use multiple merchant accounts with multiple payment providers to service multiple brands in multiple currencies.
+- heading "Multi-segment" [level=4]
+- list:
+  - listitem: Use one merchant account with one payment provider to service multiple segments in the same geography in the same currency.
+  - listitem: Use multiple merchant accounts with multiple payment providers to service multiple segments in the same geography in the same currency.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: Your store must be using
+    - link "Multi-Storefront":
+      - /url: /s/article/Multi-Storefront
+    - text: .
+  - listitem:
+    - text: To create
+    - link "multiple payment configurations":
+      - /url: "#supported-providers"
+    - text: of the same currency for a provider, you must have more than one channel set up on your store.
+  - listitem:
+    - text: Your store must be using the latest released version of a
+    - link "supported payment provider":
+      - /url: "#supported-providers"
+    - text: .
+    - list:
+      - listitem:
+        - text: Review your
+        - link "payment provider’s documentation":
+          - /url: /s/article/Available-Payment-Gateways
+        - text: to determine which version your store is using.
+      - listitem:
+        - text: Bolt One-Click Checkout is
+        - strong: not
+        - text: supported.
+  - listitem:
+    - text: To manage payment methods and configurations, the
+    - strong: Manage Payments
+    - text: and
+    - strong: Edit Channels
+    - link "permissions":
+      - /url: /s/article/User-Permissions
+    - text: must be enabled on your user account.
+- link:
+  - /url: "#supported-providers"
+- heading "Supported Providers" [level=3]
+- paragraph:
+  - text: All
+  - link "offline payment methods":
+    - /url: /s/article/Offline-Payment-Methods
+  - text: and the latest versions of the following payment providers are fully supported, meaning they can have
+  - strong: multiple payment configurations per provider, per currency
+  - text: ":"
+- table:
+  - rowgroup:
+    - row "Access Worldpay Adyen Afterpay Amazon Pay Authorize.net Bankful Barclaycard Smartpay Advance BitPay BlueSnap Direct Braintree Chase Merchant Services Checkout.com Clearpay Cybersource V2 Electronic Payments Exchange (EPX) eWay Australia* eWay Rapid First Data Payeezy* Global Payments* Heartland Payment Systems Klarna Payments Mercado Pago Moneris Nexi XPay NMI Paymetric* PayPal Quadpay* Opayo by Elavon Optty Serve First Solutions Sezzle Shopkeep* Stripe Tilopay USAePay Vantiv/Worldpay eComm Vantiv/Worldpay Core Windcave Worldpay B2B Payments Zip":
+      - cell "Access Worldpay Adyen Afterpay Amazon Pay Authorize.net Bankful Barclaycard Smartpay Advance BitPay BlueSnap Direct Braintree Chase Merchant Services Checkout.com Clearpay Cybersource V2":
+        - list:
+          - listitem: Access Worldpay
+          - listitem: Adyen
+          - listitem: Afterpay
+          - listitem: Amazon Pay
+          - listitem: Authorize.net
+          - listitem: Bankful
+          - listitem: Barclaycard Smartpay Advance
+          - listitem: BitPay
+          - listitem: BlueSnap Direct
+          - listitem: Braintree
+          - listitem: Chase Merchant Services
+          - listitem: Checkout.com
+          - listitem: Clearpay
+          - listitem: Cybersource V2
+      - cell "Electronic Payments Exchange (EPX) eWay Australia* eWay Rapid First Data Payeezy* Global Payments* Heartland Payment Systems Klarna Payments Mercado Pago Moneris Nexi XPay NMI Paymetric* PayPal Quadpay*":
+        - list:
+          - listitem: Electronic Payments Exchange (EPX)
+          - listitem: eWay Australia*
+          - listitem: eWay Rapid
+          - listitem: First Data Payeezy*
+          - listitem: Global Payments*
+          - listitem: Heartland Payment Systems
+          - listitem: Klarna Payments
+          - listitem: Mercado Pago
+          - listitem: Moneris
+          - listitem: Nexi XPay
+          - listitem: NMI
+          - listitem: Paymetric*
+          - listitem: PayPal
+          - listitem: Quadpay*
+      - cell "Opayo by Elavon Optty Serve First Solutions Sezzle Shopkeep* Stripe Tilopay USAePay Vantiv/Worldpay eComm Vantiv/Worldpay Core Windcave Worldpay B2B Payments Zip":
+        - list:
+          - listitem: Opayo by Elavon
+          - listitem: Optty
+          - listitem: Serve First Solutions
+          - listitem: Sezzle
+          - listitem: Shopkeep*
+          - listitem: Stripe
+          - listitem: Tilopay
+          - listitem: USAePay
+          - listitem: Vantiv/Worldpay eComm
+          - listitem: Vantiv/Worldpay Core
+          - listitem: Windcave
+          - listitem: Worldpay B2B Payments
+          - listitem: Zip
+- paragraph: "* These gateways have been deprecated and are no longer available for new stores. You may not be able to reconnect them if they are disconnected."
+- paragraph:
+  - text: The following payment providers are partially supported, meaning they can only have
+  - strong: one payment configuration per provider, per currency
+  - text: ":"
+- list:
+  - listitem: Affirm
+  - listitem: Commonwealth Bank
+  - listitem: Clover Payments
+  - listitem: QuickBooks Payments
+  - listitem: Square
+- link:
+  - /url: "#setup"
+- heading "Setup" [level=3]
+- list:
+  - listitem:
+    - link "Adding new payment configurations":
+      - /url: "#add-new"
+  - listitem:
+    - link "Managing storefront channel visibility":
+      - /url: "#manage-configurations"
+- paragraph:
+  - text: To get started, go to
+  - link "Settings › Payments":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - strong: Settings
+    - text: ›
+    - strong: Payments
+  - strong: .
+- paragraph:
+  - text: Multi-storefront payment settings are enabled from the banner at the top of the page by clicking
+  - strong: Switch to the new Payment Settings page
+  - text: . You can switch back to the previous experience at any time.
+- paragraph:
+  - img "Banner with button to switch to the new payments page highlighted."
+- paragraph: Once enabled, the page will show all of your currently connected payment methods and their respective payment configurations.
+- heading "Adding New Payment Configurations" [level=4]
+- paragraph:
+  - text: Create a new configuration by clicking
+  - strong: Add Payment Configuration
+  - text: . If your provider
+  - link "supports multiple accounts":
+    - /url: "#supported-providers"
+  - text: ", you can repeat these steps to add additional configurations per currency."
+- paragraph:
+  - img "Add Payment Configuration button highlighted."
+- paragraph:
+  - text: On the next page, select a currency from the drop-down list, click the
+  - strong: Embedded
+  - text: or
+  - strong: Open
+  - text: tab, then expand
+  - strong: Offline Payment Methods
+  - text: ","
+  - strong: Online Payment Methods
+  - text: ", or"
+  - strong: Digital Wallets
+  - text: .
+- paragraph:
+  - img "Currency drop-down, Embedded and Open tabs, and Additional Providers lists highlighted."
+- text: 
+- paragraph:
+  - strong: What is an Open Payment Provider fee?
+  - text: For stores on
+  - link "self-serve plans":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: ", orders processed using offline payment methods and payment providers that are not on our"
+  - link "Embedded Payment Provider list":
+    - /url: /s/article/Available-Payment-Gateways
+  - text: are assessed an Open Payment Provider fee. Orders processed through Embedded Payment Providers and Performance plan stores operating under contracted terms are not subject to this fee.
+- paragraph:
+  - text: Click
+  - strong: Add
+  - text: next to your desired payment method.
+- paragraph:
+  - img "Add button highlighted next to a payment provider."
+- paragraph:
+  - text: On the payment configuration page, you can update the selected currency and specify a
+  - strong: Configuration name
+  - text: . Enter any required account credentials, such as API keys, and set up any desired provider-specific settings.
+- paragraph:
+  - img "Currency drop-down and Configuration name field within payment method settings."
+- paragraph:
+  - text: For individual provider setup information, see
+  - link "Available Payment Gateways":
+    - /url: /s/article/Available-Payment-Gateways
+  - text: ", which contains a list of payment gateways and links to their documentation."
+- paragraph:
+  - text: When you’re done, click
+  - strong: Save
+  - text: .
+- text: 
+- paragraph:
+  - strong: "Configuration name vs Display name:"
+  - emphasis: Configuration name
+  - text: is an internal label to help you identify different payment configurations in the control panel and does not display on the storefront.
+  - emphasis: Display name
+  - text: is a method or provider-specific setting and is displayed on the storefront checkout page. Use clear display names such as “Credit/Debit Cards” or “Local Payment Methods” on payment provider settings to guide customers as they complete checkout.
+- heading "Managing Storefront Channel Visibility" [level=4]
+- paragraph: After creating configurations, you will see them listed on the payments settings page.
+- paragraph:
+  - text: Note that configurations
+  - strong: are not
+  - text: automatically visible on storefronts, but instead are manually assigned. This prevents them from mistakenly appearing on unintended channels.
+- paragraph:
+  - text: To assign a payment configuration to a storefront, click
+  - strong: Manage Channel Visibility
+  - text: and select it from the drop-down list.
+- paragraph:
+  - img "Manage Channel Visibility drop-down highlighted."
+- paragraph:
+  - text: On the payment configurations pop-up window, check the box next to the ones you want to appear on this storefront, then click
+  - strong: Assign
+  - text: .
+- paragraph:
+  - img "Configuration checkboxes and Assign button highlighted on the configuration assignment popup window."
+- paragraph:
+  - text: On the Payments page, you can view which storefronts a configuration is assigned to by clicking the
+  - strong: "Visible on # channel(s)"
+  - text: drop-down under the configuration name.
+- paragraph:
+  - img "Channel visibility drop-down highlighted."
+- paragraph:
+  - text: Edit or delete a configuration from the options on the
+  - strong: Action
+  - text: menu (
+  - strong: ⋯
+  - text: ).
+- paragraph:
+  - img "Configuration Action menu highlighted."
+- paragraph:
+  - text: You can also view payment configurations and manage their visibility directly through individual storefront channel settings by going to
+  - strong: Channels
+  - text: ›
+  - strong: Channel Manager
+  - text: ›
+  - strong: "[Storefront name]"
+  - text: ›
+  - strong: Payments
+  - text: .
+- paragraph:
+  - img "Channel Payments list."
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: If I enable the Multi-storefront Payments page, am I able to switch back to the previous experience?
+- paragraph:
+  - text: Yes, to return to the legacy version of the Payments page, click the
+  - strong: Switch back
+  - text: button displayed in the banner at the top of
+  - strong: Settings
+  - text: ›
+  - strong: Payments
+  - text: .
+- paragraph:
+  - text: However, before you can switch back, you
+  - strong: must
+  - text: delete any additional configurations so that only one configuration exists per currency, per provider.
+- paragraph:
+  - img "Switch back button highlighted."
+- paragraph:
+  - strong: Why is the Switch back button grayed out when trying to return to the legacy Payments page?
+- paragraph:
+  - text: The previous experience only supports one payment configuration per currency, per provider. Ensure that you have deleted
+  - strong: all
+  - text: additional configurations before attempting to switch back.
+- paragraph:
+  - strong: Can I assign more than one configuration of the same provider and currency to a channel?
+- paragraph: No. While some providers allow for multiple configurations using the same currency, you cannot assign more than one to the same channel.
+- paragraph: For example, if you have two Authorize.net configurations for USD, they both cannot be assigned to the same storefront channel. You can, however, assign them to different channels.
+- paragraph:
+  - strong: Why is a payment configuration not appearing on my storefront?
+- paragraph: By default, payment configurations are not automatically assigned to any channels and must be manually assigned. This prevents them from appearing on unintended storefronts by mistake.
+- paragraph:
+  - text: Ensure that you’ve
+  - link "assigned the configuration":
+    - /url: "#manage-configurations"
+  - text: to the correct channel, then empty your storefront cart and test again.
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Payments in my store":
+    - /url: http://login.bigcommerce.com/deep-links/manage/settings/payment
+    - text: Go to
+    - strong: Payments
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Available Payment Gateways":
+      - /url: /s/article/Available-Payment-Gateways
+  - listitem:
+    - link "International Enhancements for Multi-Storefront":
+      - /url: /s/article/International-Enhancements-for-Multi-Storefront
+  - listitem:
+    - link "Multi-Storefront":
+      - /url: /s/article/Multi-Storefront
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Multi-Storefront Payment Methods
+- iframe

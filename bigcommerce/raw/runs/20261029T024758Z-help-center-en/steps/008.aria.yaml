@@ -1,0 +1,599 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Users":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Billing":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Pricing":
+                - /url: /s/article/Pricing
+            - listitem:
+              - link "Account Dashboard":
+                - /url: /s/article/Account-Dashboard
+            - listitem:
+              - link "Changing Plans":
+                - /url: /s/article/How-do-I-upgrade-my-stores-plan
+            - listitem:
+              - link "About Invoices":
+                - /url: /s/article/How-do-I-make-a-payment-on-my-account
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Account Dashboard":
+                    - /url: "#dashboard"
+                - listitem:
+                  - link "Viewing":
+                    - /url: "#viewing"
+                - listitem:
+                  - link "Line Items":
+                    - /url: "#line-items"
+                - listitem:
+                  - link "Paying":
+                    - /url: "#paying"
+                - listitem:
+                  - link "Troubleshooting":
+                    - /url: "#errors"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Cancelling":
+                - /url: /s/article/How-do-I-cancel-my-Bigcommerce-store
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "About Your BigCommerce Invoice" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Accessing the Account Dashboard":
+      - /url: "#dashboard"
+  - listitem:
+    - link "Viewing invoices":
+      - /url: "#viewing"
+  - listitem:
+    - link "Invoice line Items":
+      - /url: "#line-items"
+  - listitem:
+    - link "Paying an invoice":
+      - /url: "#paying"
+  - listitem:
+    - link "Troubleshooting payment errors":
+      - /url: "#errors"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Your BigCommerce invoices can be found in the Account Dashboard. They contain line items for your BigCommerce store plan, Open Payment Provider and plan overage fees, additional storefront charges, and Unified Billing apps subscriptions. Generated invoices are sent to the email address listed as your Billing Contact.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To access the
+    - link "Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+    - text: ", you must be the"
+    - link "store owner":
+      - /url: /s/article/Store-Owner
+    - text: .
+- link:
+  - /url: "#dashboard"
+- heading "Accessing the Account Dashboard" [level=3]
+- paragraph:
+  - text: To view invoices and make payments in the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: ", navigate to"
+  - link "manage.bigcommerce.com":
+    - /url: http://manage.bigcommerce.com
+  - text: and log into your account.
+- paragraph:
+  - text: If you are already logged into the control panel as the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: ", click your"
+  - strong: store name
+  - text: and select
+  - emphasis: Manage store account
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Store name and Manage store account highlighted"
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: If you are unable to log into the control panel and your website is displaying a “Store Unavailable - This store is currently unavailable due to maintenance. It should be available again shortly” message, your store may be down due to unpaid invoices. To add a new payment method and pay any overdue charges, see
+  - link "Paying an Invoice":
+    - /url: "#paying"
+  - text: .
+- link:
+  - /url: "#viewing"
+- heading "Viewing Invoices" [level=3]
+- paragraph:
+  - text: In the Account Dashboard, click
+  - strong: Account
+  - text: and select
+  - emphasis: Invoices
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Invoices highlighted in Account drop-down menu"
+- text: 
+- paragraph:
+  - strong: Using a “Powered By” store?
+  - text: If you were onboarded to BigCommerce through a partner, you will not have an invoice section in the Account Dashboard and will not receive invoices from BigCommerce.
+- paragraph:
+  - text: Click
+  - strong: Download
+  - text: next to an invoice to save it as a PDF file on your device. Open the file to view or print for your records.
+- paragraph:
+  - text: If your store was migrated from our legacy billing system, older invoices can be found by clicking
+  - strong: Archived Invoices
+  - text: .
+- paragraph:
+  - img "Download and Archived Invoices highlighted"
+- link:
+  - /url: "#line-items"
+- heading "Invoice Line Items" [level=3]
+- list:
+  - listitem:
+    - link "Plan line items":
+      - /url: "#plan-line-items"
+  - listitem:
+    - link "Additional storefront line items":
+      - /url: "#storefront-line-items"
+  - listitem:
+    - link "Fee line items":
+      - /url: "#fee-line-items"
+  - listitem:
+    - link "App subscription line items":
+      - /url: "#app-line-items"
+  - listitem:
+    - link "Credit line items":
+      - /url: "#credit-line-items"
+  - listitem:
+    - link "Statement of Account":
+      - /url: "#statement-account"
+  - listitem:
+    - link "Related Transactions":
+      - /url: "#transaction-line-items"
+- paragraph: The specific line items that appear on your invoice are determined by factors such as your store plan, the payment gateways you have enabled, and your installed apps. These factors also influence invoice frequency.
+- paragraph: Every store will receive invoices for their store’s plan, whether monthly or annually. Additional charges may also appear in the same invoice or a separate invoice. For example, a store may be invoiced annually, but receive monthly invoices for an app subscription.
+- paragraph: "Line item information is organized into the following columns on the invoice:"
+- paragraph:
+  - img "BigCommerce Invoice with a Core store annual line item"
+- list:
+  - listitem:
+    - strong: Store ID
+    - text: — The numeric ID of the store related to the line item.
+    - list:
+      - listitem:
+        - text: For steps on locating your store’s ID, see “Locating Your Billing Cycle” on
+        - link "Changing Your Store's Plan":
+          - /url: /s/article/How-do-I-upgrade-my-stores-plan
+        - text: .
+  - listitem:
+    - strong: Charge Name
+    - text: — The description of the line item.
+  - listitem:
+    - strong: Service Period
+    - text: — The timeframe relevant to the line item.
+    - list:
+      - listitem: For a store plan, this indicates the monthly or yearly billing cycle.
+  - listitem:
+    - strong: UOM
+    - text: — The unit of measurement or explanation of values in the
+    - strong: Qty
+    - text: field.
+  - listitem:
+    - strong: Qty
+    - text: — The number of units related to the line item.
+    - list:
+      - listitem: For fees, this indicates the amount subject to the specific fee.
+  - listitem:
+    - strong: Gross Charge
+    - text: — The amount before discounts.
+  - listitem:
+    - strong: Discount Amt
+    - text: — The amount of any applied discounts.
+  - listitem:
+    - strong: Net Charge
+    - text: — The amount after subtracting the
+    - strong: Discount Amt
+    - text: from the
+    - strong: Gross Charge
+    - text: .
+- heading "PLAN LINE ITEMS" [level=4]
+- paragraph: Whether your store is billed monthly or annually, you will receive an invoice each billing cycle.
+- paragraph:
+  - emphasis: Example monthly plan invoice
+- paragraph:
+  - img "BigCommerce Invoice with a Scale store monthly line item"
+- paragraph:
+  - emphasis: Example yearly plan invoice
+- paragraph:
+  - img "BigCommerce Invoice with a Core store annual line item"
+- heading "ADDITIONAL STOREFRONT LINE ITEMS" [level=4]
+- paragraph:
+  - text: When you purchase an additional storefront for your store, it is added to your invoice as a line item. Multiple non-default storefronts are combined into a single
+  - emphasis: Additional Storefront
+  - text: line item.
+- paragraph:
+  - text: Each storefront uses the same billing cycle as your store plan. See “Purchasing a Storefront Seat” in
+  - link "Enabling Multi-Storefront":
+    - /url: /s/article/Enabling-Multi-Storefront
+  - text: to learn more.
+- paragraph:
+  - img "BigCommerce Invoice with GMV Overage Fee and Open Payment Provider Fee line items"
+- heading "FEE LINE ITEMS" [level=4]
+- paragraph:
+  - text: Open Payment Provider and plan overage fees are billed monthly in arrears as separate line items. For more information on these fees and their calculations, see
+  - link "About BigCommerce Pricing":
+    - /url: /s/article/Pricing
+  - text: .
+- paragraph:
+  - img "BigCommerce Invoice with GMV Overage Fee and Open Payment Provider Fee line items"
+- heading "APP SUBSCRIPTION LINE ITEMS" [level=4]
+- paragraph:
+  - text: BigCommerce partners
+  - link "participating in Unified Billing":
+    - /url: https://www.bigcommerce.com/apps/categories/?compatibleWith=unified-billing
+  - text: use BigCommerce Payment APIs to charge for app purchases and subscriptions. These app charges will appear on your BigCommerce invoices.
+- paragraph:
+  - img "BigCommerce Invoice with app subscription line item"
+- heading "CREDIT LINE ITEMS" [level=4]
+- paragraph:
+  - text: In some instances a credit may be applied to your invoice. These line items will appear as a negative value and are not a charge. They are subtracted from your
+  - strong: Net Charge
+  - text: amount when calculating your total due.
+- paragraph:
+  - img "BigCommerce Invoice with credit line items"
+- heading "STATEMENT OF ACCOUNT" [level=4]
+- paragraph:
+  - text: The
+  - strong: Statement of Account
+  - text: section on the second page of your invoice lists all invoices currently open on your account.
+- paragraph:
+  - img "BigCommerce Invoice with Statement of Account entries"
+- heading "RELATED TRANSACTIONS" [level=4]
+- paragraph:
+  - text: The
+  - strong: Transactions related to this Invoice
+  - text: section on the last page of your invoice details payment attempts made towards your line item charges. These attempts are usually made automatically using the payment method on file in the Account Dashboard.
+- paragraph:
+  - text: If the payment was not successful or your store is located in India, the payment must be made manually. For payment steps, see
+  - link "Paying an Invoice":
+    - /url: "#paying"
+  - text: .
+- paragraph:
+  - img "BigCommerce Invoice with transaction line item"
+- link:
+  - /url: "#paying"
+- heading "Paying an Invoice" [level=3]
+- text: 
+- paragraph:
+  - strong: Merchants in India must pay their invoice manually.
+  - text: If your business is located in India, you will be sent an email reminder on your billing date with a link to complete your payment.
+- paragraph: BigCommerce store charges are automatically paid using the payment method on file in the Account Dashboard. However, there may be instances where the payment fails, requiring invoices to be paid manually.
+- text: 
+- paragraph:
+  - strong: BigCommerce staff will never ask for your payment information.
+  - text: Our support team cannot edit the payment method in your account. Use the steps below to enter your payment information and pay an invoice.
+- paragraph:
+  - strong: "1."
+  - text: Log into the Account Dashboard by navigating to
+  - link "manage.bigcommerce.com":
+    - /url: http://manage.bigcommerce.com
+  - text: .
+- paragraph:
+  - strong: "2."
+  - text: In the Account Dashboard, click
+  - strong: Account
+  - text: and select
+  - emphasis: Payment method
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Payment method highlighted in Account drop-down menu"
+- paragraph:
+  - strong: "3."
+  - text: Click
+  - strong: Edit
+  - text: to select and enter new payment details. The methods available to pay your invoice can vary depending on your store’s plan and region.
+- paragraph:
+  - img "Edit payment methods"
+- paragraph:
+  - strong: "4."
+  - text: Click
+  - strong: Save
+  - text: . Note that this method will now be used to automatically pay charges for future billing cycles.
+- paragraph:
+  - strong: "5."
+  - text: Click
+  - strong: Pay Now
+  - text: to complete the payment. If you encounter any issues, see
+  - link "Troubleshooting Payment Errors":
+    - /url: "#errors"
+  - text: .
+- text: 
+- paragraph:
+  - strong: Did you know?
+  - text: Using PayPal to pay your BigCommerce subscription can help prevent interruption of service due to an expired credit or debit card. PayPal may offer flexible payment options for settling your PayPal invoice.
+  - link "Contact their team":
+    - /url: https://www.paypal.com/us/cshelp/contact-us
+  - text: to see what options may be available to you.
+- link:
+  - /url: "#errors"
+- heading "Troubleshooting Payment Errors" [level=3]
+- list:
+  - listitem:
+    - link "Billing address mismatch":
+      - /url: "#address-mismatch"
+  - listitem:
+    - link "MAX 7 error":
+      - /url: "#max-7"
+  - listitem:
+    - link "Card blocked for too many failed attempts":
+      - /url: "#too-many-attempts"
+  - listitem:
+    - link "Other errors":
+      - /url: "#other-errors"
+- heading "BILLING ADDRESS MISMATCH" [level=4]
+- paragraph: If the billing address associated with your card does not match your BigCommerce account's address, the payment will fail. To update your account address, use the steps below.
+- paragraph:
+  - text: In the BigCommerce Account Dashboard, click
+  - strong: Account
+  - text: and select
+  - emphasis: Account details
+  - text: from the drop-down menu, then click
+  - strong: Edit
+  - text: to the right of the contact listed as the billing contact.
+- heading "MAX 7 ERROR" [level=4]
+- paragraph: A “MAX 7” error occurs when the geographic distance between your billing address and the location you are attempting to make a payment from is too great. For example, attempting to pay an invoice while in a different country or using a VPN can result in a MAX 7 error.
+- paragraph: Our system uses your device's IP address to determine the zip code of your location when attempting to make a payment. To avoid this error, only attempt to process the payment while in the same zip code as your billing address.
+- heading "CARD BLOCKED FOR TOO MANY FAILED ATTEMPTS" [level=4]
+- paragraph:
+  - text: Multiple failed payment attempts will cause your card to be blocked for
+  - strong: 24 - 48 hours
+  - text: . If this occurs, you will not be able to use that card for payment until it has been unblocked.
+- heading "OTHER ERRORS" [level=4]
+- paragraph:
+  - text: If you have further issues with an error not listed or wish to pay an invoice for a closed account and are unable to
+  - link "log in to the Account Dashboard":
+    - /url: "#dashboard"
+  - text: ","
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: or
+  - link "create a Billing Case":
+    - /url: /s/article/Creating-Viewing-Support-Cases
+  - text: .
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Can I remove the past-due payment notification from my control panel after I have paid the invoice?
+- paragraph: The past-due notification is automatically removed from the control panel. This usually occurs the day after your payment is received and verified.
+- paragraph:
+  - strong: I switched from a monthly to an annual billing cycle. Why am I not being billed for the full year?
+- paragraph:
+  - text: The
+  - link "annual billing cycle":
+    - /url: https://www.bigcommerce.com/pricing
+  - text: begins on the date of your store account creation rather than the plan change date. After switching the billing frequency, your first invoice covers the difference from the date of upgrade to the creation anniversary date.
+- paragraph: For example, if your account was created in January and the plan is changed in May, the first annual charge is prorated for May through January. In January, you will then be charged for a full year.
+- paragraph:
+  - strong: I just upgraded my store plan. Why is there a prorated charge?
+- paragraph: Plan upgrades are processed immediately to allow you to access the new plan’s features without any delay. At the time of the upgrade, you are charged the price difference between plans for the remainder of the current cycle. You will be billed the new plan’s full amount on the next cycle’s invoice.
+- paragraph: For an annual plan, this means the prorated amount will cover the difference between the upgrade date and the start of the next year’s cycle.
+- paragraph: For example, if your billing cycle ends in November and you upgrade in April, you will be charged a prorated amount for the difference between plans for April through November.
+- paragraph:
+  - text: For an upgrade from the Growth plan to the Scale plan (299 - 79), this would be a prorated charge of around
+  - strong: $1,760
+  - text: (220 x 8).
+- text: 
+- paragraph:
+  - strong: Purchasing a storefront seat also incurs a prorated charge.
+  - text: Additional storefronts use the same billing cycle as your store plan. You will be charged the price of the storefront for the remainder of the current cycle, and then you will be billed for the full amount on the next cycle’s invoice.
+- paragraph:
+  - strong: Why am I seeing app purchases and subscriptions on my BigCommerce invoice?
+- paragraph:
+  - text: BigCommerce partners
+  - link "participating in Unified Billing":
+    - /url: https://www.bigcommerce.com/apps/categories/?compatibleWith=unified-billing
+  - text: use BigCommerce Payment APIs to charge for app purchases and subscriptions.
+- paragraph:
+  - text: This allows app purchases and subscriptions to be charged to the payment method on file in your
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: ", using BigCommerce’s"
+  - link "PCI compliant":
+    - /url: https://security.bigcommerce.com/
+  - text: payment system.
+- paragraph:
+  - text: While payments are processed using BigCommerce’s payment systems, you should still contact the app developer if you have any questions or need troubleshooting assistance. You can find their contact information by clicking
+  - strong: Contact Partner
+  - text: on the app’s listing page in the App Marketplace.
+- paragraph:
+  - strong: I cancelled my app subscription after a free trial period, why do I have a prorated charge on my invoice?
+- paragraph: For app subscriptions charged via Unified Billing, if you cancel a subscription after a free trial period ends, you will be charged a prorated amount for the time between the trial end date and cancellation date. This prorated charge will appear on the next invoice following your store’s billing cycle.
+- paragraph:
+  - text: For example, if an app’s free trial period ends on
+  - strong: 1/15
+  - text: ", but the subscription was cancelled on"
+  - strong: 1/17
+  - text: ", a prorated charge for"
+  - strong: two days
+  - text: would be applied to the store’s next invoice.
+- paragraph:
+  - strong: Why am I not getting monthly or yearly payment warning notifications in my email?
+- paragraph:
+  - text: Confirm that your billing contact email address in the
+  - link "Account Dashboard":
+    - /url: /s/article/Account-Dashboard
+  - text: is correct.
+- paragraph: If the contact email is correct, check your email spam folder or search your inbox for an email with the subject line “Upcoming Annual/Monthly Plan charge for your BigCommerce Account”.
+- paragraph:
+  - text: To help ensure you receive emails from BigCommerce, add
+  - strong: accounts@bigcommerce.com
+  - text: and
+  - strong: noreply@bigcommerce.com
+  - text: to your contacts or allowed senders list.
+- paragraph:
+  - strong: What happens if I don't pay my invoice by its due date?
+- paragraph:
+  - text: While unpaid invoices will ultimately cause your storefront and control panel to become unavailable, no action is taken on your store until your invoice is
+  - strong: 28 days
+  - text: past due. This grace period allows your store to continue operating while billing related issues are being resolved.
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "About BigCommerce Pricing":
+      - /url: /s/article/Pricing
+  - listitem:
+    - link "Changing Your Store's Plan":
+      - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - listitem:
+    - link "Creating and Viewing Support Cases":
+      - /url: /s/article/Creating-Viewing-Support-Cases
+  - listitem:
+    - link "Store Owner User Role and Permissions":
+      - /url: /s/article/Store-Owner
+  - listitem:
+    - link "The Account Dashboard":
+      - /url: /s/article/Account-Dashboard
+  - listitem:
+    - link "BigCommerce Pricing":
+      - /url: https://www.bigcommerce.com/pricing/
+    - text: (bigcommerce.com)
+  - listitem:
+    - link "Fees and Billing":
+      - /url: https://www.commerce.com/terms/fees-and-billing/
+    - text: (commerce.com)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: About Your BigCommerce Invoice
+- iframe

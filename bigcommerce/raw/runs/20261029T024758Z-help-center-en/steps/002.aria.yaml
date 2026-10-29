@@ -1,0 +1,1125 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Connecting with PayPal" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Setting up PayPal":
+      - /url: "#setup"
+  - listitem:
+    - link "Settings":
+      - /url: "#settings"
+  - listitem:
+    - link "PayPal Pay Later":
+      - /url: "#pay-later"
+  - listitem:
+    - link "Fastlane by PayPal":
+      - /url: "#fastlane"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: The PayPal payment gateway is a unified payments integration that allows you to accept payments in over 100 currencies from 325 million active customers across 200 markets.
+- paragraph: "PayPal offers several features to optimize checkout conversion and grow your business:"
+- list:
+  - listitem:
+    - link "local payment methods":
+      - /url: "#apm"
+    - text: and
+    - link "PayPal Pay Later":
+      - /url: "#pay-later"
+    - text: to expand your global customer base and encourage larger purchases
+  - listitem:
+    - link "Fastlane by PayPal":
+      - /url: "#fastlane"
+    - text: provides guest shoppers a fast, passwordless checkout solution
+  - listitem: stored credit cards and PayPal accounts
+  - listitem: real-time Account Updater to automatically refresh stored card information when it expires
+  - listitem: risk management tools to prevent fraud and minimize chargebacks
+  - listitem: Level 2 and 3 data collection for commercial transactions
+- text: 
+- paragraph:
+  - strong: This article contains information for the standalone PayPal payment gateway.
+  - text: For information about the PayPal alternative payment method, see
+  - link "PayPal":
+    - /url: /s/article/PayPal
+  - text: .
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: Your store’s
+    - link "checkout type":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+    - text: must be
+    - emphasis: Optimized One-Page Checkout
+    - text: or
+    - emphasis: Custom Checkout
+    - text: .
+  - listitem:
+    - text: To set up and manage PayPal, you must have the
+    - strong: Manage Payments
+    - text: and
+    - strong: Manage Settings
+    - link "permissions":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: Your store must be in a supported country.
+    - list:
+      - listitem:
+        - text: All countries
+        - link "supported by PayPal":
+          - /url: https://www.paypal.com/webapps/mpp/country-worldwide
+        - text: are supported by BigCommerce, except India and Israel.
+  - listitem:
+    - text: You must have an existing or create a new
+    - link "PayPal business account":
+      - /url: https://www.paypal.com/unifiedonboarding/entry
+    - text: .
+- link:
+  - /url: "#setup"
+- heading "Setting up PayPal" [level=3]
+- paragraph:
+  - strong: "1."
+  - text: To connect PayPal with your store, go to
+  - link "Settings › Payments":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - strong: Settings
+    - text: ›
+    - strong: Payments
+  - text: ", scroll down and expand"
+  - strong: Online payment methods
+  - text: ", then click"
+  - strong: Set up
+  - text: next to PayPal.
+- paragraph:
+  - img "PayPal setup button in the control panel"
+- paragraph:
+  - strong: "2."
+  - text: On the
+  - strong: PayPal
+  - text: settings tab, click
+  - strong: Connect with PayPal
+  - text: to log into your existing PayPal business account or create a new one.
+- text: 
+- paragraph:
+  - strong: "Existing PayPal accounts and Starting Order Number:"
+  - text: If you are connecting an existing PayPal account that has past transactions, you will need to change your store's
+  - link "Starting Order Number":
+    - /url: /s/article/Order-ID
+  - text: . For more information, see our
+  - link "FAQ":
+    - /url: "#duplicate-invoice"
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Click
+  - strong: Grant Permission
+  - text: to allow BigCommerce to connect to your PayPal account and return to the BigCommerce control panel.
+- paragraph:
+  - strong: "4."
+  - text: Configure your
+  - link "desired settings":
+    - /url: "#settings"
+  - text: ", then click"
+  - strong: Save
+  - text: to complete setup.
+- link:
+  - /url: "#settings"
+- heading "Settings" [level=3]
+- paragraph: Once you have connected PayPal to your store, you can configure the integration and customize your customer’s payment experience.
+- list:
+  - listitem:
+    - link "Account information":
+      - /url: "#account-info"
+  - listitem:
+    - link "PayPal wallet":
+      - /url: "#paypal-wallet"
+  - listitem:
+    - link "PayPal Pay Later messaging":
+      - /url: "#pay-later-messaging"
+  - listitem:
+    - link "Credit/debit card":
+      - /url: "#credit-debit-cards"
+  - listitem:
+    - link "Fastlane by PayPal":
+      - /url: "#fastlane-setting"
+  - listitem:
+    - link "3D Secure":
+      - /url: "#3ds-settings"
+  - listitem:
+    - link "Stored credit cards":
+      - /url: "#stored-credit-cards"
+  - listitem:
+    - link "Wallet button experience":
+      - /url: "#wallet-button-experience"
+  - listitem:
+    - link "Post purchase":
+      - /url: "#post-purchase"
+  - listitem:
+    - link "PayPal sandbox":
+      - /url: "#sandbox"
+- heading "ACCOUNT INFORMATION" [level=4]
+- paragraph:
+  - img "Account information section of PayPal settings"
+- list:
+  - listitem:
+    - strong: Account connected
+    - text: — Displays the PayPal business account connected to your store.
+  - listitem:
+    - strong: Transaction type
+    - text: — Select
+    - emphasis: Authorize and capture
+    - text: to automatically charge customers or
+    - emphasis: Authorize only
+    - text: to manually capture funds.
+    - list:
+      - listitem:
+        - text: To learn more, see
+        - link "Manually Capturing Transactions (Authorize Only)":
+          - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+        - text: .
+  - listitem:
+    - strong: Enable Stored PayPal Accounts
+    - text: — When enabled, customers can
+    - link "save their PayPal account credentials":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+    - text: to streamlate future purchases.
+    - list:
+      - listitem:
+        - text: Your store must be on a
+        - link "Growth plan or higher":
+          - /url: https://www.bigcommerce.com/pricing/
+        - text: .
+      - listitem:
+        - text: Your store must use a supported
+        - link "country and currency combination":
+          - /url: https://developer.paypal.com/docs/checkout/advanced/eligibility/
+        - text: .
+      - listitem:
+        - text: Note that enabling stored PayPal accounts will disable
+        - link "Pay Later":
+          - /url: "#pay-later"
+        - text: .
+- heading "PAYPAL WALLET" [level=4]
+- paragraph:
+  - img "PayPal Wallet section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Enable PayPal Checkout
+    - text: — Check to add PayPal a button to product, cart, and checkout pages.
+    - list:
+      - listitem:
+        - emphasis: PayPal
+        - text: will also appear as a payment option on the payment step of checkout.
+      - listitem: When enabled, shoppers will be able to pay using their PayPal account.
+      - listitem:
+        - text: PayPal buttons on product pages may need to be
+        - link "enabled in your theme":
+          - /url: "#quick-payment"
+        - text: ", if supported."
+  - listitem:
+    - strong: Enable Pay Later button
+    - text: — Check to add a
+    - link "Pay Later button":
+      - /url: "#pay-later"
+    - text: to product, cart, and checkout pages.
+    - list:
+      - listitem:
+        - text: Control whether the button proceeds to or bypasses the checkout page through the
+        - link "Wallet button experience options":
+          - /url: "#wallet-button"
+        - text: .
+      - listitem: Enabled by default for new stores.
+      - listitem:
+        - text: Note that Pay Later is disabled if
+        - link "Enable Stored PayPal Accounts":
+          - /url: "#account-info"
+          - emphasis: Enable Stored PayPal Accounts
+        - text: is checked.
+        - list:
+          - listitem: PayPal Business Accounts that have Billing Agreements enabled with PayPal are unable to use PayPal Pay Later method.
+- heading "PAYPAL PAY LATER MESSAGING" [level=4]
+- paragraph:
+  - text: You can customize the appearance and location of PayPal Pay Later storefront messaging. For more information, see
+  - link "PayPal Pay Later":
+    - /url: "#pay-later"
+  - text: .
+- paragraph:
+  - img "Pay Later Messaging section in PayPal settings"
+- heading "CREDIT/DEBIT CARD" [level=4]
+- paragraph:
+  - img "Credit-debit card section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Enable credit/debit card payments through PayPal
+    - text: — Check to enable credit/debit card payments at checkout.
+    - list:
+      - listitem:
+        - text: Your store must use a supported
+        - link "country and currency combination":
+          - /url: https://developer.paypal.com/docs/checkout/advanced/eligibility/
+        - text: .
+      - listitem: If you have multiple payment gateways set up for a currency, we recommend only using one to accept credit/debit payments.
+  - listitem:
+    - strong: Display name
+    - text: — Enter how the payment method is labeled at checkout, customer invoices, and order details.
+  - listitem:
+    - strong: Require card security code (CVV) for Manual orders
+    - text: — Check to require CVV/CVV2/CVSD code during
+    - link "manual order creation":
+      - /url: /s/article/Manual-Orders
+    - text: in the BigCommerce control panel.
+    - list:
+      - listitem: Note that this setting must be enabled to process manual orders using credit cards through PayPal.
+- heading "FASTLANE BY PAYPAL" [level=4]
+- paragraph: Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+- paragraph:
+  - text: To learn more about Fastlane, its requirements, and setup instructions, see
+  - link "Fastlane by PayPal":
+    - /url: /s/article/Fastlane-by-PayPal
+  - text: .
+- paragraph:
+  - img "Fastlane by PayPal section in PayPal settings"
+- heading "3D SECURE" [level=4]
+- paragraph:
+  - img "#D Secure section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Use 3D Secure
+    - text: – Check to enable
+    - link "3D Secure":
+      - /url: /s/article/3D-Secure
+    - text: ", a payment processing security feature that requires customers to enter a password that is tied to their credit card when making a purchase."
+    - list:
+      - listitem:
+        - text: Note that when enabled, 3d Secure will also apply to
+        - link "Fastlane by PayPal":
+          - /url: /s/article/Fastlane-by-PayPal
+        - text: .
+  - listitem:
+    - strong: Strong Customer Authentication When Required
+    - text: — Selecting this option only enforces Strong Customer Authentication (SCA) based on local regulations.
+  - listitem:
+    - strong: Strong Customer Authentication Always
+    - text: — Selecting this option enforces SCA on all credit/debit card and Fastlane by PayPal transactions.
+- heading "STORED CREDIT CARDS" [level=4]
+- paragraph:
+  - img "Stored credit cards section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Enable stored credit cards
+    - text: — Check to allow customers with a
+    - link "storefront account":
+      - /url: /s/article/Customer-Account-Creation
+    - text: to
+    - link "securely save their card information":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+    - text: for future purchases.
+    - list:
+      - listitem:
+        - text: Your store must be on a
+        - link "Growth plan or higher":
+          - /url: https://www.bigcommerce.com/pricing/
+        - text: .
+      - listitem:
+        - text: Your store must use a supported
+        - link "country and currency combination":
+          - /url: https://developer.paypal.com/docs/checkout/advanced/eligibility/
+        - text: .
+      - listitem:
+        - strong: Enable real-time account updater
+        - text: — When stored credit cards are enabled, check to enable
+        - link "real-time account updater":
+          - /url: https://www.paypal.com/us/cshelp/article/what-is-real-time-account-updater-and-what-do-i-need-to-do-to-prepare-my-integration--ts2271
+        - text: ", an optional paid service that automatically updates stored card information, such as new numbers, new expiration dates, and closed accounts."
+        - list:
+          - listitem: Your store must be located in the United States.
+          - listitem:
+            - text: Real-time account updater must first be activated in your PayPal account
+            - link "Payment Preferences":
+              - /url: https://www.paypal.com/businessmanage/account/paymentPreferences
+            - text: .
+          - listitem: Only stored Mastercard and Visa cards with United States billing addresses are supported.
+          - listitem:
+            - text: Real-time account updater cannot be used with
+            - link "stored PayPal accounts":
+              - /url: "#account-info"
+            - text: .
+      - listitem:
+        - strong: Enable automated card delete
+        - text: — When real-time account updater is enabled, check to automatically delete closed customer cards from a customer’s list of saved payment methods.
+- heading "WALLET BUTTON EXPERIENCE" [level=4]
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: PayPal wallet is limited to
+  - strong: 10 shipping options
+  - text: during checkout, including
+  - link "BOPIS options":
+    - /url: https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview
+  - text: . If you offer
+  - strong: more than 10 shipping and pickup options
+  - text: ", select"
+  - emphasis: Redirect to checkout
+  - text: instead.
+- paragraph:
+  - img "Wallet button experience section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Pay Now
+    - text: — Check to allow shoppers to bypass the checkout page when they click any PayPal button including PayPal Checkout, Pay Later, and Venmo.
+    - list:
+      - listitem: The shopper is redirected to the PayPal modal window to select a shipping method based on the shipping address in their PayPal account and complete payment.
+      - listitem: After completing payment, shoppers are taken directly to the order confirmation page.
+      - listitem: Pay Now is enabled by default for new stores.
+  - listitem:
+    - strong: Redirect to checkout
+    - text: — Check to redirect shoppers to the checkout page when they click any PayPal button including PayPal Checkout, Pay Later, and Venmo.
+- heading "POST PURCHASE" [level=4]
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: Post purchase features are only available for stores located in Australia, Canada, France, Germany, Italy, Spain, the United Kingdom, or the United States and are enabled by default.
+- paragraph:
+  - img "Post purchase section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Sync order transaction statuses with PayPal
+    - text: — Shares order actions and statuses in PayPal with BigCommerce.
+  - listitem:
+    - strong: Sync shipping and item info with PayPal
+    - text: — Shares shipping and product details with PayPal.
+    - list:
+      - listitem:
+        - text: This setting can help to shorten fund hold times, lowers your minimum account reserve, and enables
+        - link "Seller Protection":
+          - /url: https://www.paypal.com/us/legalhub/paypal/seller-protection
+        - text: against chargebacks and claims.
+      - listitem:
+        - strong: Let PayPal provide package tracking to customers
+        - text: — When
+        - emphasis: Sync shipping and item info with PayPal is enabled
+        - text: ", check to provide customers who pay with PayPal and use the"
+        - link "PayPal app":
+          - /url: https://www.paypal.com/us/digital-wallet
+        - text: with automatic live shipping updates on packages.
+  - listitem:
+    - strong: Send order IDs to PayPal
+    - text: — Associates a PayPal transaction to a BigCommerce order, allowing customers to provide their order ID during post-purchase communications.
+    - list:
+      - listitem: Note that PayPal requires order IDs to be unique.
+      - listitem:
+        - text: If the provided order ID has been used for a prior transaction, PayPal will
+        - link "decline payments":
+          - /url: "#duplicate-invoice"
+        - text: .
+- heading "PAYPAL SANDBOX" [level=4]
+- paragraph: The PayPal sandbox can be used to test transactions on your store without using a live PayPal account.
+- paragraph:
+  - text: To get started, click
+  - strong: Connect PayPal Sandbox
+  - text: and log into your PayPal sandbox account. Note that this account is separate from your PayPal business account. If you don’t have one already, you’ll need to
+  - link "create one":
+    - /url: https://developer.paypal.com/tools/sandbox/accounts/
+  - text: .
+- paragraph:
+  - img "PayPal sandbox section in PayPal settings"
+- list:
+  - listitem:
+    - strong: Enable test mode on store
+    - text: — Check to use PayPal’s sandbox to test transactions on your store.
+    - list:
+      - listitem:
+        - text: To return to processing live transactions, uncheck the box and click
+        - strong: Save
+        - text: .
+- paragraph:
+  - text: If you need to switch to a different PayPal sandbox account, click
+  - strong: Change PayPal sandbox account
+  - text: .
+- link:
+  - /url: "#pay-later"
+- heading "PayPal Pay Later" [level=3]
+- paragraph: PayPal Pay Later lets customers buy now and pay over time. This feature means that the shopper will owe the money to PayPal while you, the merchant, always get paid. PayPay Pay Later also includes messaging banners that inform your customers of the installment options available at checkout. This can encourage larger purchases and increase your average order value (AOV).
+- paragraph:
+  - text: Note that PayPal Pay Later is displayed as
+  - emphasis: PayPal Pay in 4
+  - text: for AU stores,
+  - emphasis: PayPal Pay in 4X
+  - text: for FR stores,
+  - emphasis: PayPal Pay in 3
+  - text: for UK, IT, and ES stores, and
+  - emphasis: PayPal Ratenzahlung
+  - text: for DE stores.
+- paragraph:
+  - img "Example Pay Later messaging banner"
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#pay-later-requirements"
+  - listitem:
+    - link "Pay Later button":
+      - /url: "#pay-later-button"
+  - listitem:
+    - link "Customizing Pay Later messaging":
+      - /url: "#customize-messaging"
+- heading "REQUIREMENTS" [level=4]
+- list:
+  - listitem:
+    - strong: Store requirements
+    - list:
+      - listitem: Your store must be located in Australia, France, Germany, Italy, Spain, the United Kingdom, or the United States.
+      - listitem:
+        - text: Note that some activities involving PayPal Pay Later in the United Kingdom are regulated.
+        - list:
+          - listitem:
+            - text: Before activating PayPal Pay Later buttons on your website, speak to
+            - link "PayPal Business customer support":
+              - /url: https://www.paypal.com/uk/business
+            - text: or your PayPal Customer Success Manager for more information and to obtain the 4-digit code to unlock PayPal Pay Later for your store.
+      - listitem:
+        - text: "Your store must use a supported country and currency combination:"
+        - list:
+          - listitem: US (USD)
+          - listitem: UK (GBP)
+          - listitem: DE (EUR)
+          - listitem: ES (EUR)
+          - listitem: FR (EUR)
+          - listitem: IT (EUR)
+          - listitem: AU (AUD)
+  - listitem:
+    - strong: Shopper requirements
+    - list:
+      - listitem: Shoppers must use an address in Australia, France, Germany, Italy, Spain, the United Kingdom, or the United States.
+      - listitem:
+        - text: The shopper’s order value must be within PayPal’s supported range for their selected currency.
+        - list:
+          - listitem:
+            - text: See “Pay Later Offers” in PayPal’s
+            - link "documentation":
+              - /url: https://developer.paypal.com/studio/checkout/pay-later
+            - text: for each currency’s order value range.
+- heading "PAY LATER BUTTON" [level=4]
+- paragraph:
+  - text: When
+  - emphasis: Enable Pay Later button
+  - link "is checked":
+    - /url: "#paypal-wallet"
+  - text: ", a"
+  - strong: PayPal Pay Later
+  - text: button will display on product, cart, and checkout pages allowing your shoppers to quickly pay using Pay Later. While the dedicated button offers a convenient option, shoppers can still select PayPal Pay Later at checkout.
+- paragraph:
+  - text: You can control whether the button proceeds to or bypasses the checkout page through the
+  - link "options":
+    - /url: "#wallet-button-experience"
+  - text: under
+  - strong: Wallet button experience
+  - text: .
+- paragraph:
+  - img "Pay Later button on cart page."
+- paragraph:
+  - text: If you are using
+  - link "Cornerstone":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - strong: 6.13.0
+  - text: or newer, you can adjust the color, shape, and text of the PayPal Pay Later button on storefront product pages, cart page, the top of the checkout page, and the Payment step of checkout. These settings can be found in
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: under
+  - strong: Theme Styles › Payment buttons
+  - text: .
+- paragraph:
+  - img "Payment buttons section of Theme Styles"
+- paragraph: If you are using a different theme, check your theme’s documentation to see if it supports payment button customization.
+- heading "CUSTOMIZING PAY LATER MESSAGING" [level=4]
+- paragraph:
+  - text: The
+  - strong: PayPal Pay Later Messaging
+  - link "settings section":
+    - /url: "#pay-later-messaging"
+  - text: allows you to select which pages the messaging will appear on, as well as customize the PayPal logo type, text color, and text size to match your theme design. In the preview pane, view changes to your banners in real-time for desktops and mobile devices, and in dark mode.
+- paragraph:
+  - img "PayPal Pay Later Messaging settings and preview pane."
+- paragraph: Note that the banner location in the preview pane provides a demonstration of how the banner may look on a specific page. The actual location will vary, depending on your theme.
+- text: 
+- paragraph:
+  - strong: Not seeing the PayPal Pay Later messaging settings?
+  - text: If you do not meet all of the eligibility
+  - link "requirements":
+    - /url: "#pay-later-requirements"
+  - text: ", the messaging settings will not be displayed. Instead, you will see a list of requirements that still need to be met on your store before this feature will be available for use."
+- link:
+  - /url: "#fastlane"
+- heading "Fastlane by PayPal" [level=3]
+- paragraph: Fastlane by PayPal provides merchants with a fast, passwordless checkout solution for guest shoppers. With Fastlane, shoppers create a payment profile after making a credit card or PayPal payment, then use that profile on future orders to complete checkout with a single click.
+- paragraph:
+  - img "The toggle on the checkout page for shoppers to create a Fastlane profile for one-click checkouts."
+- paragraph:
+  - text: See
+  - link "Fastlane by PayPal":
+    - /url: /s/article/Fastlane-by-PayPal
+  - text: to learn more about Fastlane’s requirements and setup instructions.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- list:
+  - listitem:
+    - link "General":
+      - /url: "#general"
+  - listitem:
+    - link "Pricing and fees":
+      - /url: "#pricing"
+  - listitem:
+    - link "Account eligibility":
+      - /url: "#account"
+  - listitem:
+    - link "Transactions":
+      - /url: "#transactions"
+  - listitem:
+    - link "Refunds":
+      - /url: "#refunds"
+  - listitem:
+    - link "Additional features":
+      - /url: "#features"
+  - listitem:
+    - link "Troubleshooting and payment disputes":
+      - /url: "#troubleshooting"
+- heading "GENERAL" [level=4]
+- paragraph:
+  - strong: What is PayPal Commerce Platform?
+- paragraph: PayPal Commerce Platform, also known as PayPal Complete Payments (PPCP), is another name for PayPal's dedicated payment gateway, used to distinguish it from other PayPal solutions supported by BigCommerce. In most instances, it is simply referred to as PayPal.
+- paragraph:
+  - strong: Why am I being asked to update the PayPal integration?
+- paragraph:
+  - text: After enabling certain features in your PayPal settings, an
+  - strong: Update
+  - text: button may appear at the top of the tab, along with a list of features dependent on the update. This button refreshes the integration and enables the new features on your storefront.
+- paragraph:
+  - img "Connect PayPal Sandbox button"
+- paragraph:
+  - strong: I connected the wrong PayPal account. How do I switch my configuration to the correct account?
+- paragraph: To switch PayPal accounts, you must disconnect your current configuration and reconnect the PayPal integration.
+- paragraph:
+  - text: To disconnect PayPal, go to
+  - link "Settings › Payments":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - strong: Settings
+    - text: ›
+    - strong: Payments
+  - text: and select the appropriate currency from the drop-down list. Expand
+  - strong: Online payment methods
+  - text: ", then click the toggle switch next to"
+  - strong: PayPal
+  - text: .
+- paragraph:
+  - img "Toggle switch next to PayPal"
+- paragraph:
+  - text: Once disconnected, go back through the PayPal
+  - link "setup flow":
+    - /url: "#setup"
+  - text: and connect the desired account.
+- heading "PRICING AND FEES" [level=4]
+- paragraph:
+  - strong: What fees are associated with PayPal?
+- paragraph:
+  - text: PayPal has no monthly fees, but charges a per-transaction fee based on your region. Additionally, the
+  - link "Real-time Account Updater":
+    - /url: "#stored-credit-cards"
+  - text: is a paid feature in your PayPal business account. To learn more, go to
+  - link "PayPal Merchant Fees":
+    - /url: https://www.paypal.com/us/webapps/mpp/merchant-fees
+  - text: and locate the rates in your region.
+- heading "ACCOUNT ELIGIBILITY" [level=4]
+- paragraph:
+  - strong: What currencies and countries does PayPal support?
+- paragraph: "You can review a list of supported currencies and countries in PayPal’s documentation:"
+- list:
+  - listitem:
+    - link "Supported currencies":
+      - /url: https://developer.paypal.com/api/rest/reference/currency-codes/
+  - listitem:
+    - link "Supported countries":
+      - /url: https://developer.paypal.com/api/rest/reference/country-codes/
+- paragraph:
+  - strong: What items are restricted for merchants to sell?
+- paragraph:
+  - text: You can review a list of restricted items on PayPal’s
+  - link "Acceptable Use Policy":
+    - /url: https://www.paypal.com/us/legalhub/paypal/acceptableuse-full
+  - text: .
+- heading "TRANSACTIONS" [level=4]
+- paragraph:
+  - strong: After I create an account, what is the waiting period before I can process transactions?
+- paragraph: Once you link your PayPal account to BigCommerce, you can begin transacting right away.
+- paragraph:
+  - strong: How long until the funds are transferred to my bank?
+- paragraph:
+  - text: Funds are deposited immediately into your PayPal account. You can request a withdrawal to your bank at any time, using an
+  - link "Instant Transfer":
+    - /url: https://www.paypal.com/us/cshelp/article/what-bank-accounts-and-debit-cards-are-eligible-for-instant-transfer-help397
+  - text: or Standard Transfer (1-3 business days).
+- paragraph:
+  - strong: Does PayPal send email notifications to me or my customers?
+- paragraph: Yes, both you and your customers will receive emails when transactions are received and for disputes or chargebacks.
+- heading "REFUNDS" [level=4]
+- paragraph:
+  - strong: How soon after a transaction can I perform a refund?
+- paragraph: Once a payment is captured, there is no delay before you can issue a refund.
+- paragraph:
+  - strong: Are there any fees for chargebacks/refunds?
+- paragraph:
+  - text: You can read about PayPal’s policies on
+  - link "chargebacks and refunds":
+    - /url: https://www.paypal.com/us/legalhub/paypal/useragreement-full#refunds-reversals-chargebacks
+  - text: in the PayPal User Agreement.
+- heading "ADDITIONAL FEATURES" [level=4]
+- paragraph:
+  - strong: Are there any fraud filtering options available?
+- paragraph:
+  - text: You can review PayPal’s
+  - link "Seller Protection Policy":
+    - /url: https://www.paypal.com/us/legalhub/paypal/seller-protection
+  - text: for Merchants to understand how they help protect your online sales, minimize claims and chargebacks and help prevent merchant fraud.
+- paragraph:
+  - strong: Does PayPal support delayed or manual capture payments?
+- paragraph:
+  - text: Yes, PayPal supports manual capture when using the
+  - emphasis: Authorize only
+  - link "Transaction type":
+    - /url: "#account-info"
+  - text: .
+- paragraph:
+  - strong: Does PayPal support multicurrency?
+- paragraph:
+  - text: Yes, multicurrency is supported. To learn more about adding and configuring currencies, see
+  - link "Managing Currencies":
+    - /url: /s/article/Managing-Currencies
+  - text: .
+- paragraph:
+  - strong: Can I connect a single PayPal account to multiple BigCommerce storefront channels?
+- paragraph:
+  - text: Yes, PayPal supports
+  - link "Multi-Storefront":
+    - /url: /s/article/Multi-Storefront-Payment-Methods
+  - text: . You can either connect a single PayPal account to multiple channels or create multiple PayPal accounts and assign them to their respective storefront channels. There is no limit to the amount of PayPal configurations that can be created per currency.
+- paragraph:
+  - strong: Does PayPal support stored cards and recurring payments?
+- paragraph:
+  - text: Yes, PayPal supports stored credit cards and PayPal accounts for streamlined checkout with subsequent orders. Note that this feature is only available to stores on a
+  - link "Growth plan or higher":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: .
+- paragraph:
+  - text: PayPal is compatible with the
+  - link "Payments API":
+    - /url: https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/payments/overview
+  - text: ", and can be used in conjunction with"
+  - link "subscription/recurring billing apps":
+    - /url: https://www.bigcommerce.com/apps/categories/payments-security/recurring-billing-subscriptions/
+  - text: or custom development to create subscription models with stored credit cards. Real-time Account Updater further enhances the recurring billing experience by ensuring that expired and recently changed stored card information is up-to-date.
+- paragraph:
+  - strong: Can I display PayPal Pay Later messaging banners on my storefront without enabling the Pay Later button?
+- paragraph:
+  - text: Yes. The
+  - link "Pay Later button":
+    - /url: "#paypal-wallet"
+  - text: and
+  - link "Pay Later messaging":
+    - /url: "#pay-later-messaging"
+  - text: are separate features that operate independently of each other. While the button provides a quick and easy way to access Pay Later, shoppers can still choose the option at checkout.
+- paragraph:
+  - strong: How do I add payment buttons to my product pages?
+- paragraph:
+  - text: If you are using
+  - link "Cornerstone":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - text: 6.6.1 or newer and have not
+  - link "customized your theme files":
+    - /url: /s/article/Stencil-Themes
+  - text: ", you can enable payment buttons for PayPal Checkout and"
+  - link "Venmo":
+    - /url: /s/article/Venmo
+  - text: on product pages. In
+  - link "Page Builder":
+    - /url: /s/article/Page-Builder
+  - text: navigate to
+  - strong: Theme Styles › Products
+  - text: ", scroll down to"
+  - emphasis: Display settings
+  - text: and check the box next to
+  - emphasis: Show quick payment buttons
+  - text: .
+- paragraph:
+  - img "The Show quick payment buttons setting"
+- paragraph:
+  - text: If you are using a different theme, or you have customized your Cornerstone theme files, your theme will require
+  - link "additional customization":
+    - /url: https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/checkout-enhancements/wallet-buttons
+  - text: in order to support product page payment buttons.
+- paragraph:
+  - text: For assistance with applying these customizations to your theme files, we recommend reaching out to a BigCommerce Partner by visiting our
+  - link "Partner Directory":
+    - /url: https://partners.bigcommerce.com/directory/
+  - text: or submitting an
+  - link "Agency Design Request":
+    - /url: https://www.bigcommerce.com/partners/agency-design-request/
+  - text: .
+- paragraph:
+  - strong: Can I customize the appearance of my PayPal payment buttons?
+- paragraph:
+  - text: If you are using
+  - link "Cornerstone":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - strong: 6.13.0 or newer
+  - text: ", you can configure your theme’s"
+  - link "Payment buttons settings":
+    - /url: /s/article/Cornerstone-Theme-Manual
+  - text: to customize your PayPal Checkout, PayPal Pay Later, and Venmo buttons on storefront product pages, cart page, the top of the checkout page, and the Payment step of checkout.
+- paragraph:
+  - strong: How can I place payment buttons at the top of my checkout page?
+- paragraph:
+  - text: You can place payment buttons at the top of checkout by checking
+  - emphasis: Show wallet buttons at the top of checkout
+  - text: located under
+  - link "Settings › Checkout":
+    - /url: http://login.bigcommerce.com/deep-links/settings/checkout
+    - strong: Settings
+    - text: ›
+    - strong: Checkout
+  - text: . Note that buttons will appear above the Customer step for guest shoppers only.
+- paragraph:
+  - strong: What is the customer experience with PayPal’s package tracking service?
+- paragraph: Customers who use the PayPal app will be able to track packages in the app and receive push notifications with live shipping updates. This will be provided automatically for customers who shop at your store and pay with PayPal. Customers can also add packages manually by entering a tracking number.
+- paragraph:
+  - strong: Can I turn off package tracking and still sync order details, to retain benefits like shorter hold times and seller protection eligibility?
+- paragraph: Yes, you can. Package tracking is offered as a separate, optional benefit that can be turned toggled off/on without affecting any other setting.
+- paragraph:
+  - strong: Which alternative payment methods (APMs) are available with PayPal?
+- paragraph: "The following payment methods can be enabled in PayPal. The appropriate payment method will display to the shopper on checkout based on the shopper's IP address and transaction currency. Keep in mind the following considerations:"
+- list:
+  - listitem:
+    - text: Alternative payment method transactions are
+    - emphasis: Authorize and capture
+    - text: only, regardless of the
+    - link "Transaction type":
+      - /url: "#account-info"
+    - text: option selected for PayPal.
+    - list:
+      - listitem: Delayed capture is not supported.
+  - listitem:
+    - link "Recurring or subscription payments":
+      - /url: /s/article/Enabling-Stored-Payment-Methods
+    - text: are not supported..
+- paragraph: To learn more about the prerequisites and setup steps for an APM, click the corresponding link in the list below.
+- table:
+  - rowgroup:
+    - row "Apple Pay Bancontact BLIK EPS Google Pay iDEAL MyBank OXXO Przelewy24 Ratepay SEPA Direct Debit Venmo":
+      - cell "Apple Pay Bancontact BLIK EPS Google Pay iDEAL":
+        - list:
+          - listitem:
+            - link "Apple Pay":
+              - /url: /s/article/Apple-Pay
+          - listitem:
+            - link "Bancontact":
+              - /url: /s/article/Bancontact
+          - listitem:
+            - link "BLIK":
+              - /url: /s/article/BLIK
+          - listitem:
+            - link "EPS":
+              - /url: /s/article/EPS
+          - listitem:
+            - link "Google Pay":
+              - /url: /s/article/Google-Pay
+          - listitem:
+            - link "iDEAL":
+              - /url: /s/article/iDEAL
+      - cell "MyBank OXXO Przelewy24 Ratepay SEPA Direct Debit Venmo":
+        - list:
+          - listitem:
+            - link "MyBank":
+              - /url: /s/article/MyBank
+          - listitem:
+            - link "OXXO":
+              - /url: /s/article/OXXO
+          - listitem:
+            - link "Przelewy24":
+              - /url: /s/article/Przelewy24
+          - listitem:
+            - link "Ratepay":
+              - /url: /s/article/Ratepay
+          - listitem:
+            - link "SEPA Direct Debit":
+              - /url: /s/article/SEPA-Direct-Debit
+          - listitem:
+            - link "Venmo":
+              - /url: /s/article/Venmo
+- paragraph:
+  - strong: Does PayPal support Level 2 and Level 3 data fields?
+- paragraph:
+  - text: Yes, Level 2 and Level 3 data fields are supported for corporate and purchase credit card transactions placed by commercial shoppers. See PayPal's
+  - link "documentation":
+    - /url: https://developer.paypal.com/docs/checkout/advanced/customize/processing/
+  - text: for more information on supported card networks and data field mapping. Note that Level 2 and Level 3 cost optimization benefits are not applicable to debit cards.
+- paragraph:
+  - strong: Which Level 2 and Level 3 data fields are collected by PayPal?
+- paragraph:
+  - text: See PayPal’s
+  - link "documentation":
+    - /url: https://developer.paypal.com/docs/checkout/advanced/customize/processing/
+  - text: for a list of required fields in order for transactions to be processed as Level 2 or Level 3. However, the card network and cardholder issuing bank are the final authority on determining whether a transaction qualifies for Level 2 or Level 3 processing.
+- heading "TROUBLESHOOTING AND PAYMENT DISPUTES" [level=4]
+- paragraph:
+  - strong: What does the “Something’s gone wrong” error message mean?
+- paragraph:
+  - text: In some instances, payment issues are indicated through a generic error message that displays at checkout. Additional details are not able to be displayed if the processor doesn’t provide them when the payment fails. For a list of common errors and troubleshooting steps, see PayPal’s
+  - link "Why was my payment declined?":
+    - /url: https://www.paypal.com/us/cshelp/article/why-was-my-payment-declined-help419
+- paragraph:
+  - text: If a shopper receives this error when using a quick pay button at the top of the checkout or on product or cart pages, you may need to adjust the
+  - link "button behavior":
+    - /url: "#wallet-button-experience"
+  - text: . When
+  - emphasis: Pay Now
+  - text: is selected, PayPal wallet is limited to 10 shipping options during checkout, including
+  - link "BOPIS options":
+    - /url: https://docs.bigcommerce.com/developer/docs/integrations/platform-solutions/buy-online-pick-up-in-store/overview
+  - text: . If you offer more than 10 shipping and pickup options, select
+  - emphasis: Redirect to checkout
+  - text: instead.
+- paragraph:
+  - strong: How are payment disputes handled?
+- paragraph:
+  - text: Log in to your PayPal account and visit the
+  - link "Resolution Center":
+    - /url: https://www.paypal.com/resolutioncenter
+  - text: .
+- paragraph:
+  - strong: How do I resolve "The requested action could not be performed, semantically incorrect, or failed business validation" errors?
+- paragraph:
+  - text: These errors in the
+  - link "store logs":
+    - /url: /s/article/Using-Store-Logs
+  - text: are generally due to issues with your account credentials. To resolve, you must disconnect your current configuration and reconnect the PayPal integration.
+- paragraph:
+  - text: Go to
+  - link "Settings › Payments":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - strong: Settings
+    - text: ›
+    - strong: Payments
+  - text: and select the appropriate currency from the drop-down list. Click
+  - strong: Online Payment Methods
+  - text: ", then click the toggle switch next to"
+  - strong: PayPal
+  - text: .
+- paragraph:
+  - img "Toggle switch next to PayPal"
+- paragraph:
+  - text: Once disconnected, go back through the PayPal
+  - link "setup flow":
+    - /url: "#setup"
+  - text: and connect the desired account.
+- paragraph:
+  - strong: What does the “Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires that Invoice Id be unique for each transaction” error message mean?
+- paragraph:
+  - text: If you are starting a new BigCommerce store and are connecting an existing PayPal account that has past transactions, you will need to change your store's
+  - link "Starting Order Number":
+    - /url: /s/article/Order-ID
+  - text: . By default, the store's starting order number is "100".
+- paragraph: If you have an existing PayPal Invoice ID of "100", transactions will fail with an error message like "Duplicate Invoice ID detected. To avoid a potential duplicate transaction your account setting requires Invoice ID to be unique for each transaction."
+- paragraph: To avoid this, you'll need to update your store’s Starting Order Number to a number higher than any of your existing PayPal Invoice IDs.
+- paragraph: Once resolved, the issue should not affect any customers thereafter. If one of your customers has received the above error (prior to you resolving it), they will need to clear their cart and start over before they can successfully check out.
+- paragraph:
+  - strong: Why aren't my guest customers able to see the PayPal Checkout, PayPal Pay Later button, and Pay Later messaging on the cart page?
+- paragraph:
+  - text: If the PayPal Checkout, Pay Later button, and messaging is missing for guest customers only, it could be due to your store's customer settings in
+  - link "Settings › Checkout":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - strong: Settings
+    - text: ›
+    - strong: Checkout
+  - text: . Guest customers will not be able to access PayPal from the cart if either
+  - emphasis: Customers must have or create an account to check out
+  - text: or
+  - emphasis: Require existing accounts to sign in
+  - text: is enabled. See
+  - link "Optimized One-Page Checkout":
+    - /url: /s/article/Optimized-Single-Page-Checkout
+  - text: for more information.
+- paragraph:
+  - strong: Why are the PayPal Pay Later messaging settings not appearing in my control panel?
+- paragraph:
+  - text: If your store does not meet the
+  - link "requirements":
+    - /url: "#https://docs.google.com/document/d/1UHeArGN2CaHypCKLzTPC4ZH4O0iVYuHejfu9u5YA5h8/edit#pay-later-requirements"
+  - text: or is using a theme that does not support PayPal Pay Later messaging banners, such as an older
+  - link "Stencil theme":
+    - /url: /s/article/Stencil-Themes
+  - text: or a
+  - link "Blueprint theme":
+    - /url: /s/article/Blueprint-Themes
+  - text: ", Pay Later messaging settings will not display."
+- paragraph:
+  - strong: How do I contact PayPal’s Support team?
+- paragraph:
+  - text: Visit PayPal’s
+  - link "Contact Us":
+    - /url: https://www.paypal.com/us/cshelp/contact-us
+  - text: page to get in touch with PayPal’s Support team.
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Payments in my store":
+    - /url: http://login.bigcommerce.com/deep-links/settings/payment
+    - text: Go to
+    - strong: Payments
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Fastlane by PayPal":
+      - /url: /s/article/Fastlane-by-PayPal
+  - listitem:
+    - link "Introduction to Alternative Payment Methods":
+      - /url: /s/article/Intro-to-APMs
+  - listitem:
+    - link "Managing Currencies":
+      - /url: /s/article/Managing-Currencies
+  - listitem:
+    - link "Manually Capturing Transactions (Authorize Only)":
+      - /url: /s/article/Manually-Capturing-Transactions-Authorize-Only
+  - listitem:
+    - link "Optimized One-Page Checkout":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+  - listitem:
+    - link "Processing Refunds":
+      - /url: /s/article/Processing-Refunds
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Connecting with PayPal
+- iframe

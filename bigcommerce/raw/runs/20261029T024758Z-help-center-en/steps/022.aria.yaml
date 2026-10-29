@@ -1,0 +1,209 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- heading "Search Results" [level=1]
+- heading "Searchable objects from navigation bar" [level=2]
+- list "Searchable objects from navigation bar":
+  - listitem:
+    - link "All":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Articles":
+      - /url: javascript:void(0);
+  - listitem:
+    - link "Discussions":
+      - /url: javascript:void(0);
+    - button "Help"
+  - listitem:
+    - link "Groups":
+      - /url: javascript:void(0);
+- button "Collapse List" [expanded]
+- status:
+  - text: "Information: Showing results for \""
+  - link "merchant of record":
+    - /url: javascript:void(0);
+  - text: "\" and spell-corrected terms."
+- heading "Articles" [level=2]:
+  - link "Articles":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- text: • Sorted by
+- button "Relevance Change sort order"
+- link "View More Articles search results":
+  - /url: javascript:void(0)
+- list:
+  - listitem:
+    - heading "Avalara AvaTax" [level=3]:
+      - link "Avalara AvaTax":
+        - /url: /s/article/Avalara-AvaTax
+    - list:
+      - listitem: "000035989"
+      - listitem: Last Modified Jun 22, 2026, 3:19 PM
+    - text: enabled, Avalara will store transaction
+    - mark: records
+    - text: . Disable this if your provider account is also
+  - listitem:
+    - heading "Changing Domains" [level=3]:
+      - link "Changing Domains":
+        - /url: /s/article/Changing-Domains
+    - list:
+      - listitem: "000034988"
+      - listitem: Last Modified Aug 17, 2026, 5:50 PM
+    - text: DCV
+    - mark: records
+    - text: Managing
+    - mark: records
+    - text: in your DNS host Changing from a BigCommerce subdomain to a custom...
+    - mark: Records
+    - text: :host-records;Adding Custom Domains:bcsub-new;Changing Custom Domains:changing-domains;Changing BigCommerce
+  - listitem:
+    - heading "Cloudflare for Performance and Security" [level=3]:
+      - link "Cloudflare for Performance and Security":
+        - /url: /s/article/Cloudflare-for-Performance-and-Security
+    - list:
+      - listitem: "000034966"
+      - listitem: Last Modified May 6, 2026, 1:37 PM
+    - text: settings, you will need to add or update the DNS
+    - mark: records
+    - text: in your Cloudflare account to use a
+  - listitem:
+    - heading "Email in BigCommerce" [level=3]:
+      - link "Email in BigCommerce":
+        - /url: /s/article/Email-in-BigCommerce
+    - list:
+      - listitem: "000035271"
+      - listitem: Last Modified Sep 23, 2025, 9:09 PM
+    - text: . Forwarding Email Your forwarding accounts are located in Settings › Email & DNS
+    - mark: records
+    - text: . Under the Mail
+  - listitem:
+    - heading "Browser Security Warnings" [level=3]:
+      - link "Browser Security Warnings":
+        - /url: /s/article/Browser-Security-Warnings
+    - list:
+      - listitem: "000035298"
+      - listitem: Last Modified Dec 5, 2024, 8:41 PM
+    - text: your domain to BigCommerce using an A
+    - mark: record
+    - text: . A
+    - mark: records
+    - text: point to a particular IP address, and your
+- heading "Discussions" [level=2]:
+  - link "Discussions":
+    - /url: javascript:void(0);
+- paragraph: 5+ Results
+- link "View More Discussions search results":
+  - /url: javascript:void(0)
+- text: "Sort by:"
+- combobox "Sort by:": Top Questions
+- status
+- list "feed items":
+  - listitem:
+    - article:
+      - link "Do older BigCommerce Enterprise stores need Cloudflare O2O to use newer Cloudflare features?":
+        - /url: /s/question/0D5UG00000zjNyY0AU/do-older-bigcommerce-enterprise-stores-need-cloudflare-o2o-to-use-newer-cloudflare-features
+        - paragraph: Do older BigCommerce Enterprise stores need Cloudflare O2O to use newer Cloudflare features?
+      - text: Apps & Integrations · Gina Sibley · August 4, 2026 at 7:04 PM Number of Views 207 Number of Upvotes 0 Number of Comments 12
+  - listitem:
+    - article:
+      - link "2099 - Cardholder Authentication Required":
+        - /url: /s/question/0D54O00007S5glhSAB/2099-cardholder-authentication-required
+        - paragraph: 2099 - Cardholder Authentication Required
+      - text: Setup & Management · Ian Fenton · April 27, 2022 at 3:06 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 4.12K Number of Upvotes 0 Number of Comments 5
+  - listitem:
+    - article:
+      - link "Yeah! New analytics app is here…(and it's free!)":
+        - /url: /s/question/0D51B00004bQ7DTSA0/yeah-new-analytics-app-is-hereand-its-free
+        - paragraph: Yeah! New analytics app is here…(and it's free!)
+      - text: Apps & Integrations · Christine Preston · August 22, 2018 at 9:05 AM Question has answers marked as Best, Company Verified, or both Answered Number of Views 1.16K Number of Upvotes 4 Number of Comments 3
+  - listitem:
+    - article:
+      - link "Refund API returns unexpected tax values when using merchant override amount":
+        - /url: /s/question/0D5UG00000x0t4R0AQ/refund-api-returns-unexpected-tax-values-when-using-merchant-override-amount
+        - paragraph: Refund API returns unexpected tax values when using merchant override amount
+      - text: Apps & Integrations · Mayank Patel · June 22, 2026 at 7:15 AM Number of Views 185 Number of Upvotes 1 Number of Comments 3
+  - listitem:
+    - article:
+      - link "Transactional email, Order notification Formatting":
+        - /url: /s/question/0D54O000070N9z4SAC/transactional-email-order-notification-formatting
+        - paragraph: Transactional email, Order notification Formatting
+      - text: Setup & Management · Richard Werner · July 7, 2021 at 9:09 PM Question has answers marked as Best, Company Verified, or both Answered Number of Views 969 Number of Upvotes 0 Number of Comments 2
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Search Results | merchant of record
+- iframe

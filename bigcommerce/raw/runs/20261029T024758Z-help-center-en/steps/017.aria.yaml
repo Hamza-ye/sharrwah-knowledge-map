@@ -1,0 +1,693 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Tax Overview":
+                - /url: /s/article/Tax-Overview
+            - listitem:
+              - link "Basic Tax":
+                - /url: /s/article/Manual-Tax-Setup
+            - listitem:
+              - link "Automatic Tax Setup":
+                - /url: /s/article/Automatic-Tax-Setup
+              - list:
+                - listitem:
+                  - link "How It Works":
+                    - /url: "#how"
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Enabling":
+                    - /url: "#enable"
+                - listitem:
+                  - link "Targeting":
+                    - /url: "#provider-targeting"
+                - listitem:
+                  - link "Options":
+                    - /url: "#provider-options"
+                - listitem:
+                  - link "Assigning Jurisdiction":
+                    - /url: "#jurisdiction"
+                - listitem:
+                  - link "Product Tax Code and Property":
+                    - /url: "#product-tax-code"
+                - listitem:
+                  - link "Customer Tax Exempt Code":
+                    - /url: "#tax-exempt-customer"
+                - listitem:
+                  - link "Verifying Rates":
+                    - /url: "#verify"
+                - listitem:
+                  - link "Fallback rates":
+                    - /url: "#fallback"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Avalara AvaTax":
+                - /url: /s/article/Avalara-AvaTax
+            - listitem:
+              - link "Product-Specific Rates":
+                - /url: /s/article/Changing-Tax-Rates-on-a-Product
+            - listitem:
+              - link "Tax-Exempt Customers":
+                - /url: /s/article/How-do-I-have-customers-with-a-tax-exempt-status
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Automatic Tax Setup" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "How it works":
+      - /url: "#how"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Enabling an automatic tax service":
+      - /url: "#enable"
+  - listitem:
+    - link "Provider targeting":
+      - /url: "#provider-targeting"
+  - listitem:
+    - link "Provider options":
+      - /url: "#provider-options"
+  - listitem:
+    - link "Assigning local tax jurisdiction":
+      - /url: "#jurisdiction"
+  - listitem:
+    - link "Adding a tax provider tax code and tax properties to a product":
+      - /url: "#product-tax-code"
+  - listitem:
+    - link "Adding a tax-exempt code to a customer":
+      - /url: "#tax-exempt-customer"
+  - listitem:
+    - link "Verifying tax rates":
+      - /url: "#verify"
+  - listitem:
+    - link "Fallback tax rates":
+      - /url: "#fallback"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph:
+  - text: BigCommerce has integrated with popular tax service providers like
+  - link "Avalara":
+    - /url: https://www.avalara.com/us/en/index.html
+  - text: ","
+  - link "Vertex":
+    - /url: https://www.vertexinc.com/
+  - text: ","
+  - link "TaxJar":
+    - /url: https://www.taxjar.com/
+  - text: ", and"
+  - link "TaxCloud":
+    - /url: https://taxcloud.com/
+  - text: to support automatic tax calculation in the cart and at checkout, as well as handle tax document submission to your tax provider.
+- paragraph: If your products or business have complex tax requirements, using an automated service can save you the time it takes to look up your tax obligations required by each individual state for each individual product in your catalog and provide peace of mind that a third-party professional organization is monitoring proper tax collection and filing.
+- text: 
+- paragraph:
+  - strong: Need help with taxes?
+  - text: The instructions in this article assume you already know the tax requirements necessary for running your business online. We highly recommend contacting your accountant or local tax authority to ensure you are charging tax properly for your store.
+  - strong: Note that our support team is not qualified to give tax advice.
+- link:
+  - /url: "#how"
+- heading "How It Works" [level=3]
+- paragraph:
+  - text: Automatic tax calculation and document submission will apply to orders from a
+  - link "selected list of supported regions":
+    - /url: "#provider-targeting"
+  - text: . An order will be handled by the automatic tax provider when both the order origin and destination are in the selected list of regions.
+- paragraph:
+  - text: For everywhere else, basic tax calculation is used. See
+  - link "Basic Tax Setup":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: for more information on configuring basic taxes for your store.
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To access Tax in the control panel, you must have the
+    - strong: Manage Tax Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To install and launch an automatic tax provider, you must be logged in as the
+    - link "Store Owner":
+      - /url: /s/article/Store-Owner
+    - text: or have the
+    - strong: Install applications
+    - text: and
+    - strong: Launch applications
+    - link "permissions":
+      - /url: /s/article/User-Permissions
+    - text: enabled on your user account.
+  - listitem:
+    - text: To add a
+    - link "Tax Provider Tax Code":
+      - /url: "#product-tax-code"
+      - strong: Tax Provider Tax Code
+    - text: to products, you must have the
+    - strong: Manage Products
+    - text: and
+    - strong: Edit Products
+    - text: permissions enabled on your user account.
+  - listitem:
+    - text: To add a
+    - link "Tax-Exempt Code":
+      - /url: "#product-tax-code"
+      - strong: Tax-Exempt Code
+    - text: to customers, you must have the
+    - strong: Manage Customers
+    - text: and
+    - strong: Edit Customers
+    - text: permissions enabled on your user account.
+- link:
+  - /url: "#enable"
+- heading "Enabling an Automatic Tax Service Provider" [level=3]
+- paragraph:
+  - text: Go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", then click"
+  - strong: Add tax service
+  - text: in the top right.
+- paragraph:
+  - img "The Add tax service button highlighted on the Tax settings page"
+- paragraph:
+  - text: Click
+  - strong: Install
+  - text: next to the service you want to use. You’ll be asked to enter your existing tax provider account information. If you don’t already have an existing account, you’ll be guided through the process of setting up a new one.
+- paragraph:
+  - text: Once installed, you must
+  - link "select the regions":
+    - /url: "#provider-targeting"
+  - text: where the automatic tax provider is enabled for tax calculation. This is done on the automatic tax provider's settings page.
+- link:
+  - /url: "#provider-targeting"
+- heading "Provider Targeting" [level=3]
+- paragraph:
+  - text: After you have enabled an automatic tax provider, you will need to configure its
+  - strong: Provider Targeting
+  - text: settings to only include the countries and subdivisions (such as states or provinces) you want the provider to calculate tax for.
+  - link "Basic Tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: is then used for all regions that are not targeted by the provider.
+- paragraph:
+  - text: If you want your provider to calculate tax everywhere, you can check the “Select all” option under
+  - strong: Country
+  - text: . Conversely, to disable your automatic tax provider and use basic tax, uncheck every box under
+  - strong: Country
+  - text: and
+  - strong: Subdivisions
+  - text: .
+- paragraph:
+  - img "The provider targeting settings showing United States selected in a list of countries."
+- link:
+  - /url: "#provider-options"
+- heading "Provider Options" [level=3]
+- paragraph:
+  - text: The
+  - strong: Provider options
+  - text: section contains options for submitting order data to your provider and specifying tax code overrides for specific item types.
+- paragraph:
+  - text: Enable order data submission to your provider by checking the box next to
+  - strong: Please submit my order data so that I can use solution tax reporting and returns features
+  - text: . You may also need to adjust settings in your tax provider’s account dashboard. Contact their support team for assistance.
+- paragraph: If you have connected your tax provider account to an ERP, we recommend disabling this feature to prevent duplicate reporting.
+- paragraph:
+  - img "Please submit my order data so that I can use solution tax reporting and returns features checkbox in the control panel."
+- paragraph: The code fields below the order data checkbox allow you to override the tax code of the specified item type when generating a tax quote. Contact your tax provider for more information on how they support tax codes.
+- paragraph:
+  - strong: "Note:"
+  - text: The
+  - strong: Fees code
+  - text: field is not currently active and is reserved for future use.
+- paragraph:
+  - img "Tax code override fields."
+- link:
+  - /url: "#jurisdiction"
+- heading "Assigning Local Tax Jurisdiction" [level=3]
+- paragraph: If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your tax provider's account dashboard or control panel.
+- list:
+  - listitem:
+    - text: If you're using Avalara AvaTax, see
+    - link "About Local Jurisdictions":
+      - /url: https://knowledge.avalara.com/bundle/dqa1657870670369_dqa1657870670369/page/Local_jurisdictions.html
+    - text: in
+    - link "Avalara’s Knowledge Center":
+      - /url: https://knowledge.avalara.com/
+    - text: .
+  - listitem:
+    - text: If you're using Vertex, see
+    - link "Vertex support":
+      - /url: https://www.vertexinc.com/support-services/customer-support
+    - text: .
+  - listitem:
+    - text: If you're using TaxJar, see
+    - link "Add or remove states from your dashboard":
+      - /url: https://support.taxjar.com/article/116-add-or-remove-states-from-your-dashboard
+    - text: in
+    - link "TaxJar support":
+      - /url: https://support.taxjar.com/
+    - text: .
+  - listitem:
+    - text: If you're using TaxCloud, see
+    - link "TaxCloud support":
+      - /url: https://support.taxcloud.com/
+    - text: .
+- link:
+  - /url: "#product-tax-code"
+- heading "Adding a Tax Provider Tax Code and Tax Properties to a Product" [level=3]
+- paragraph:
+  - text: A
+  - strong: Tax Provider Tax Code
+  - text: can be assigned to products one-at-a-time via the BigCommerce control panel, or in bulk using the
+  - link "legacy product Import/Export tool":
+    - /url: /s/article/Legacy-Import-Export-Overview
+  - text: . Tax properties can be assigned in the control panel or via
+  - link "the API":
+    - /url: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-properties
+  - text: .
+- paragraph: "To assign a code or property to a product in the control panel:"
+- paragraph:
+  - strong: "1."
+  - text: Go to
+  - link "Products › View":
+    - /url: http://login.bigcommerce.com/deep-links/products
+    - strong: Products
+    - text: ›
+    - strong: View
+  - text: and click on a
+  - strong: Product Name
+  - text: to edit the product.
+- paragraph:
+  - strong: "2."
+  - text: Scroll down to the
+  - strong: Pricing
+  - text: section and click on
+  - strong: Show Advanced Pricing
+  - text: to expand the section. Enter your code in the
+  - strong: Tax Provider Tax Code
+  - text: field, and fill in any applicable tax property fields.
+- paragraph:
+  - img "Example of the tax provider tax code field and a tax property"
+- paragraph:
+  - strong: "3."
+  - strong: Save
+  - text: your changes.
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: The
+  - strong: Tax Provider Tax Code
+  - text: field is utilized by all automatic tax service providers. If you switch providers, this field does not change. If your new provider uses different codes, you will need to update this field on affected products.
+- link:
+  - /url: "#tax-exempt-customer"
+- heading "Adding a Tax-Exempt Code to a Customer" [level=3]
+- text: A
+- strong: Tax Exempt Code
+- text: can be assigned to customers one-at-a-time via the control panel, or in bulk using a
+- link "CSV file customer import":
+  - /url: /s/article/Importing-Exporting-Customers
+- text: .
+- paragraph: "To assign a code to a customer in the control panel:"
+- paragraph:
+  - strong: "1."
+  - text: Go to
+  - link "Customers › View":
+    - /url: http://login.bigcommerce.com/deep-links/customers
+    - strong: Customers
+    - text: ›
+    - strong: View
+  - text: and click on a
+  - strong: Customer Name
+  - text: to edit the customer.
+- paragraph:
+  - strong: "2."
+  - text: Under
+  - strong: Customer Details
+  - text: ", enter your code in the"
+  - strong: Tax Exempt Code
+  - text: field.
+- paragraph:
+  - strong: "3."
+  - strong: Save
+  - text: your changes.
+- paragraph:
+  - img "Tax Exempt Code field highlighted on the customer details page"
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: The
+  - strong: Tax-Exempt Code
+  - text: field is utilized by all automatic tax service providers. If you switch providers, this field does not change. If your new provider uses different codes, you will need to update this field on affected products.
+- link:
+  - /url: "#verify"
+- heading "Verifying Tax Rates" [level=3]
+- paragraph: You can use the tax calculation tools offered by your tax provider to confirm proper tax rates are being calculated for a particular region.
+- list:
+  - listitem:
+    - link "Avalara Sales Tax Calculator":
+      - /url: https://www.avalara.com/taxrates/en/calculator.html
+  - listitem:
+    - link "TaxJar Sales Tax Calculator":
+      - /url: https://www.taxjar.com/sales-tax-calculator/
+  - listitem:
+    - link "TaxCloud Help Center":
+      - /url: https://support.taxcloud.com/article/75-how-do-i-confirm-a-rate-or-tax-code-with-taxcloud
+- paragraph:
+  - text: BigCommerce Support can assist with ensuring your automatic tax provider is enabled, your storefront
+  - link "tax display settings":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: are configured properly, and that your tax provider codes are properly applied to products and customers. Some aspects of your automatic tax configuration (like
+  - link "setting up local jurisdictions":
+    - /url: "#jurisdiction"
+  - text: ) require access to your tax provider account or control panel, in which case you may need to reach out to your tax provider's support channels for assistance troubleshooting incorrect or missing rates.
+- list:
+  - listitem:
+    - link "Avalara Knowledge Center":
+      - /url: https://knowledge.avalara.com/
+  - listitem:
+    - link "Vertex Customer Support":
+      - /url: https://www.vertexinc.com/support-services/customer-support
+  - listitem:
+    - link "TaxJar Support":
+      - /url: https://support.taxjar.com/
+  - listitem:
+    - link "TaxCloud Help Center":
+      - /url: https://support.taxcloud.com/
+- link:
+  - /url: "#fallback"
+- heading "Fallback Tax Rates" [level=3]
+- paragraph:
+  - text: If an automatic tax provider cannot be reached, was unable to validate the customer's address, or if the
+  - link "shipping origin address":
+    - /url: /s/article/Shipping-Setup
+  - text: "in a store's shipping settings has not been set up, then there are three ways to handle the order:"
+- list:
+  - listitem: A "fallback" flat tax rate of 10% is applied to the order.
+  - listitem:
+    - text: You can use your
+    - link "basic tax configuration":
+      - /url: /s/article/Manual-Tax-Setup
+    - text: to calculate tax. This may provide more accurate tax calculations than the flat 10% rate and may help save time on remedying orders with incorrect tax.
+  - listitem: You can disable fallback tax completely, and the customer will not be able to complete checkout. This is helpful if you prefer to not take the order rather than manually adjust orders or issue refunds for incorrect tax.
+- paragraph:
+  - text: If an order uses fallback tax, it will be noted in the
+  - link "Viewing Orders":
+    - /url: /s/article/Orders
+  - text: .
+- paragraph:
+  - text: Go to
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: to change your
+  - strong: Fallback Tax
+  - text: setting.
+- paragraph:
+  - text: Check
+  - link "BigCommerce Status":
+    - /url: https://status.bigcommerce.com
+  - text: to be informed of any identified issues with automatic tax providers.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- list:
+  - listitem:
+    - link "General":
+      - /url: "#general"
+  - listitem:
+    - link "Price display":
+      - /url: "#price_display"
+  - listitem:
+    - link "TaxJar":
+      - /url: "#taxjar"
+  - listitem:
+    - link "Troubleshooting":
+      - /url: "#troubleshooting"
+- heading "General" [level=4]
+- paragraph:
+  - strong: Can I use more than one automatic tax provider?
+- paragraph: No, only one automatic tax provider may be enabled at any one time on a store.
+- paragraph:
+  - strong: Can I use an automatic tax provider for some countries/regions and Basic Tax for others?
+- paragraph:
+  - text: Yes, see
+  - link "Provider Targeting":
+    - /url: "#provider-targeting"
+  - text: .
+- paragraph:
+  - strong: How does provider targeting work when a shopper has multiple shipping addresses?
+- paragraph: When a shopper uses multiple shipping addresses at checkout, the tax provider will calculate tax for all addresses on the order based on the first shipping address.
+- paragraph:
+  - text: For example, if you have enabled provider targeting in the US only, and a shopper has placed an order with multiple shipping addresses, and the first address is in the US, then tax will be calculated using this tax provider app for all shipping addresses attached to the order. If the first address is outside the US, then
+  - link "Basic Tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: will be used for all addresses attached to the order.
+- paragraph:
+  - strong: Can I assign a tax code to individual variants?
+- paragraph: Yes. In the setup area of your tax provider's dashboard or control panel, you can assign tax codes to your BigCommerce variants by using their Product Code/SKU. Product tax codes cannot be added to variants via the BigCommerce control panel or through import.
+- paragraph:
+  - strong: How do I disable my automatic tax provider?
+- paragraph:
+  - text: In
+  - link "Settings › Tax":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax
+    - strong: Settings
+    - text: ›
+    - strong: Tax
+  - text: ", click"
+  - strong: Edit
+  - text: next to your provider. Under
+  - strong: Provider targeting
+  - text: ", uncheck any boxes that are checked in the"
+  - strong: Country
+  - text: or
+  - strong: Subdivisions
+  - text: menus, then click
+  - strong: Save
+  - text: .
+- paragraph:
+  - text: Your store will default to using
+  - link "basic tax":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: .
+- heading "Price Display" [level=4]
+- paragraph:
+  - strong: Can I show tax inclusive/exclusive pricing with automatic tax?
+- paragraph:
+  - text: Yes. You can set up how you want to display pricing under
+  - link "Tax Display Settings":
+    - /url: http://login.bigcommerce.com/deep-links/settings/tax/settings
+  - text: . There are separate settings for the control panel, invoices, and the storefront.
+- paragraph:
+  - strong: Can I show prices inclusive of tax to some countries and exclusive of tax for others?
+- paragraph:
+  - text: Yes, you can set this up using the price display settings in your
+  - link "tax zones":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: . Although tax zone display is configured in
+  - link "Basic Tax settings":
+    - /url: /s/article/Manual-Tax-Setup
+  - text: ", it will also apply to your automatic tax provider when enabled."
+- heading "TaxJar" [level=4]
+- paragraph:
+  - strong: Are there any additional requirements to connect with TaxJar?
+- paragraph:
+  - text: In order to enable TaxJar in your control panel for automatic tax calculation, you must be on their Professional plan or higher. For more information, see
+  - link "TaxJar's Pricing page":
+    - /url: https://www.taxjar.com/pricing
+  - text: .
+- paragraph:
+  - strong: What if I'm already using the TaxJar app for tax document submission?
+- paragraph: The TaxJar app has been updated to also allow for automatic tax calculation at cart and checkout. Existing users of the TaxJar app may need to re-install the app before TaxJar is available to set up as an automatic tax provider in your control panel's tax settings.
+- heading "Troubleshooting" [level=4]
+- paragraph:
+  - strong: My sales tax amount is off by a cent. Is something wrong?
+- paragraph: By default, automatic tax calculation is done at the item line level. Resulting line item amounts higher than half a cent are rounded up to the nearest cent (for example, $4.495 rounds up to $4.50). This can cause a discrepancy when compared with tax calculated at the subtotal level.
+- paragraph:
+  - text: However,
+  - link "Avalara AvaTax":
+    - /url: /s/article/Avalara-AvaTax
+  - text: can be configured to round tax at the item line level or the order level.
+- paragraph:
+  - strong: Why are the tax documents on some of my orders being voided?
+- paragraph:
+  - text: If you choose to submit tax documents at payment capture, they will be voided if the order is moved back into an unpaid status. See
+  - link "Order Statuses":
+    - /url: /s/article/Order-Statuses
+  - text: for more information on paid and unpaid order statuses.
+- heading "Do this in my store" [level=3]
+- link "Go to Tax in my store":
+  - /url: http://login.bigcommerce.com/deep-links/settings/tax/configured-providers
+  - text: Go to
+  - strong: Tax
+  - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Basic Tax Setup":
+      - /url: /s/article/Manual-Tax-Setup
+  - listitem:
+    - link "Guide to Legacy Product Import/Export":
+      - /url: /s/article/Legacy-Import-Export-Overview
+  - listitem:
+    - link "Importing and Exporting Customers":
+      - /url: /s/article/Importing-Exporting-Customers
+  - listitem:
+    - link "Avalara AvaTax":
+      - /url: /s/article/Avalara-AvaTax
+  - listitem:
+    - link "Tax Overview":
+      - /url: /s/article/Tax-Overview
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Automatic Tax Setup
+- iframe

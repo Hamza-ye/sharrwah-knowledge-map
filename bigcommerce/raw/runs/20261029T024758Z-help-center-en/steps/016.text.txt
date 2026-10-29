@@ -1,0 +1,199 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+Store Settings
+Domain and Email
+Checkout and Payments
+Shipping
+Tax
+Tax Overview
+Requirements
+Tax Settings
+Tax Services
+FAQ
+Basic Tax
+Automatic Tax Setup
+Avalara AvaTax
+Product-Specific Rates
+Tax-Exempt Customers
+Security
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Tax Overview
+What We'll Cover
+Requirements
+Store tax settings
+Tax services
+FAQ
+As with offline commerce, governments require online merchants to collect sales tax on orders where applicable. In BigCommerce, you can set up your tax configuration using a basic tax setup as well as connect with a third-party tax provider.
+Requirements
+To manage tax settings, you must have the Manage Tax Settingspermission enabled on your user account.
+Store Tax Settings
+Configure tax options
+Shopper tax behavior
+Configure tax display settings
+Configure tax properties
+Your store’s tax settings allow you to configure options that control how taxes are calculated and displayed on storefronts and in the control panel. These settings apply to basic tax setup and work in conjunction with automatic tax providers.
+To get started, go to Settings › Tax, then scroll down and click Edit next to Store tax settings.
+Configure Tax Options
+Tax label — general name displayed to customers on carts, checkout, orders, and invoices when display options are set to Show as one summarized line item
+Prices entered with tax — choose how prices are entered in the control panel for items where tax would apply, such as products, shipping costs, and gift wrapping
+Yes, I will enter prices inclusive of tax — prices are entered with tax included in their value
+No, I will enter prices exclusive of tax — prices are entered without taxes
+When prices are entered including tax, the following settings will also apply:
+When calculating the taxes on sales made outside the pricing tax zone — choose how taxes are calculated for shoppers outside of your pricing tax zone
+Update item prices to reflect applicable tax rates — when a shopper enters an address, taxes are recalculated based on the rates applied to the tax zone for their location
+for example, if a 10% tax rate is applied to the pricing tax zone and a shopper enters an address within a zone with a 8% tax rate, prices will update to reflect the 8% tax rate
+Keep item prices as entered — maintains “pretty” pricing, in which product prices remain as entered in the control panel and will not recalculate based on the rates applied to the tax zone for the shopper’s location
+The zone and rates that apply to your tax inclusive pricing — choose which tax zone is used as the pricing tax zone
+prices entered into the control will have their taxes calculated by the rates assigned to the zone selected from the drop-down menu
+Your entered prices should match your price display setting.Displaying prices with tax differently than how they are entered can result in unintended price values.
+Fallback tax — chose how taxes are calculated when your automatic tax provider cannot be reached or returns an invalid response
+Use a flat rate of 10% tax — a flat rate of 10% is used
+Use my basic tax settings — zones and rates set up using basic tax will be used
+if basic tax has not been set up, the fallback tax rate will be 0%
+tax-exempt customers will be charged tax unless they are also exempted through basic tax
+Disable fallback tax — no fallback tax method will be used. Shoppers are prevented from checking out when your automatic tax service cannot be reached or returns an invalid response.
+Tax document submission — choose when tax documents are submitted to your tax provider.
+Submit tax documents at order creation — tax documents are submitted when an order is created, regardless of payment status
+Submit tax documents at payment capture — tax documents are submitted when payment is captured (either automatically or manually).
+Orders using offline payment methodswill not have tax documents submitted.
+Note that tax documents will be voided if you choose to submit tax documents at payment capture, and an order is moved from a paid order status status into an unpaid order status. See Order Statuses for more information.
+Be careful! If you have opted to submit tax documents at payment capture, orders using offline payment methods will not have tax documents submitted.
+Tax calculation — choose which address is used to determine a shopper’s tax zone
+By billing address — taxes are calculated by the address entered in the billing step at checkout
+By destination address — taxes are calculated by the address entered in the shipping step at checkout. If products are shipped to multiple addresses, taxes are calculated separately per address
+By shipping origin — taxes are calculated by the address entered as the shipping origin
+Shipping tax class — choose the tax class that is used for shipping charges when basic tax applies. The Shipping tax class is selected by default.
+Handling tax class — choose the tax class that is used for handling charges when basic tax applies. The Shipping tax class is selected by default.
+Gift wrapping tax class — choose the tax class that is used for gift wrapping charges when basic tax applies. The Gift Wrapping tax class is selected by default.
+Fees tax class — this field is not currently active and is reserved for future use.
+How are digital products taxed?Digital products are always taxed based on the order’s billing address, regardless of the address type selected.
+Shopper Tax Behavior
+Under Shopper tax behavior, configure how tax is estimated and displayed to shoppers before they enter an address at checkout.
+Assign shoppers to tax zone — choose to use geolocation or an assigned tax zone to estimate and display taxes to shoppers. This setting only works with tax zones you have set up in your store, and does not override any tax zone settings you have set up for customer groups.
+Use geolocation to assign a tax zone until shoppers enter a destination address — when selected, a tax zone is assigned to shoppers based on their GeoIP
+if an appropriate zone does not exist, a zone is assigned based on the selection under Tax zone used when geolocation is not identifiable or enabled
+Use default shopper tax zone until shoppers enter a destination address — when selected, a tax zone is assigned to shoppers based on the selection under Tax zone used when geolocation is not identifiable or enabled
+Tax zone used when geolocation is not identifiable or enabled — choose a tax zone to apply to shoppers when Use default shopper tax zone until shoppers enter a destination address is selected, no relevant tax zone exists, or a shopper’s GeoIP is not identifiable
+Using the geolocation feature requires the GeoIP of your shoppers. This may impact your compliance withGeneral Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA) privacy regulations, and may require you to obtain additional consent from shoppers.
+Configure Tax Display Settings
+Under Configure tax display settings, you can control how prices display in the control panel and invoices. You can also control how tax charges display on cart and checkout pages, in the control panel, and on invoices.
+For more information on how to configure tax display settings for prices displayed on product listing pages, product detail pages, cart, and checkout see Basic Tax Setup.
+Prices within control panel — select whether line items and subtotals in the control panel display including or excluding tax
+Prices on invoices — select whether line items and subtotals on the storefront order details page and emailed and printed order invoices display prices including tax, excluding tax, or use the tax zone display settings
+tax zones must be configured for the Use tax zone display settings option to function
+Tax charges in cart and checkout — select how the list of applied taxes should display on cart and checkout pages
+Show as one summarized line item — taxes display as a single, combined total described by the name entered under Tax label
+Show each tax rate individually — taxes display with separate line items for each tax rate applied and described by the Tax rate name
+Tax charges on orders and invoices — select how the list of applied taxes should display on the storefront order details page and emailed and printed order invoices
+Show as one summarized line item — taxes display as a single, combined total described by the name entered under Tax label
+Show each tax rate individually — taxes display with separate line items for each tax rate applied and described by the Tax rate name
+Configure Tax Properties
+The Configure tax properties setting allows you to add and edit tax properties that appear under Tax Configuration when editing products.
+Tax properties are additional pieces of data which are passed to your automatic tax provider whenever a tax quote is generated in the cart or checkout for a particular product. This allows for industry specific tax rules, configured within the automatic tax provider’s dashboard, to be applied whenever tax is calculated for shoppers.
+For more information on locating tax property fields when editing products, see Automatic Tax Setup.
+How are tax properties different from tax codes? A tax code is a single code that tax providers use to invoke specific rules when calculating tax on a product. In contrast, tax properties are fields that contain information about product specifics. Tax providers use these fields to factor product specifics, such as alcohol percentage or net volume, into their calculations.
+To create a tax property, click + Add tax property. You can delete tax properties by clicking the trash can icon to the right of the property.
+Display name — display name for the type of tax property to be applied to selected products. This text may be visible to shoppers, depending on your theme, settings, and tax jurisdiction.
+Code — the tax code associated with the tax property. Contact your tax provider for more information on supported values and functions.
+Description — optional internal tooltip text for users. This appears on the product edit page next to the tax property field.
+Tax Services
+You can configure and manage tax setup using basic tax, as well as through a third-party tax service to help automate tax calculation and document submission.
+Basic tax and automatic tax services apply to prices at different points throughout the customer experience and differ in how they calculate prices and taxes.
+When tax services apply
+How prices and tax are calculated
+Tax rounding
+When Tax Services Apply
+Regardless if basic tax or an automatic tax service is enabled, basic tax will always apply on product listing and product display pages.
+If tax calculation is based on the billing or destination address, basic tax will also apply to prices and taxes displayed on the cart and checkout pages until an address has been provided by the shopper.
+Once a shopper enters their address, or if tax calculation is based on your shipping origin, whichever tax service is enabled will apply to prices and taxes displayed on all pages and order invoices.
+How Prices and Tax are Calculated
+How prices are displayed and how taxes are calculated will depend on your tax settings and the tax service you are using.
+If prices are entered excluding tax, taxes are added to the order subtotal on the cart and checkout pages. This occurs automatically if tax calculation is based on your shipping origin. If tax calculation is based on the billing or destination address, taxes are added to the order subtotal once the shopper enters an address.
+Depending on your Shopper tax behavior setting, shoppers that have not yet entered an address may see estimated taxes added to the order subtotal on the checkout page. Once the shopper enters an address, the tax amount may change.
+If prices are entered including tax, taxes are initially calculated using basic tax and based on the pricing tax zone. Once a shopper enters an address, the applied tax is subtracted from the price, then taxes are reapplied with the rates associated with their address.
+When basic tax is enabled, your settings may allow for prices to change when a shopper enters an address.
+When an automatic tax service is enabled, prices will remain static when a shopper enters an address. That is, regardless of the tax rate, only the tax value included in the price will change. Your tax provider may have a setting in their dashboard that allows you to change this behavior.
+Tax Rounding
+Basic tax calculation is always performed at the item line level and rounds tax values to the decimal place set for your currency. If your order management system calculates tax at the order level, you will see tax value discrepancies.
+For example, many stores have their currency set to two decimal places. A 10% tax rate applied to a $55.05 product is $5.505, rounded to $5.51. Adding a $44.95 product, with $4.495 tax rounded to $4.50 results in a $100 subtotal and $10.01 tax value.
+AmountTax RateTax Before RoundingTax After Rounding
+Line Item 1$50.0510%$5.505$5.51
+Line Item 2$44.9510%$4.495$4.50
+Total$100$10.01
+In comparison, a 10% tax rate and $100 subtotal calculated at the order level would result in a $10 tax value.
+AmountTax RateTax Before RoundingTax After Rounding
+Subtotal$10010%$10$10
+Total$100$10
+Some automatic tax services, such as Avalara AvaTax, can be configured to round tax at the item line level or at the order level. Contact your provider for more information on the settings available to you.
+FAQ
+Can I make certain customers tax-exempt?
+Yes. If you are using a basic tax setup, you can place customers within a customer group and configure your tax zones to apply (or not apply) to specific groups. The customer groups feature is limited to select BigCommerce plans.
+If you are using an automatic tax setup, you can use the Tax Exempt Code field to identify tax-exempt customers. See Making Customers Tax-Exempt for more information.
+My sales tax amount is off by a cent. Is something wrong?
+Basic tax calculation is done at the item line level. This can cause discrepancies when compared with tax calculated at the order level. See Tax Rounding for more information.
+Why are some shoppers not seeing prices displayed with the correct tax estimation even though geolocation is enabled?
+The shopper’s geolocation may be unavailable, or you may need to configure the required tax zone.
+Can I use the geolocation feature for price display and still comply with privacy laws?
+Before you enable geolocation on your store, check with the rules set forth in the California Consumer Privacy Act (CCPA) and General Data Protection Regulation (GDPR) to ensure your store will comply with laws regarding personal information.
+Do this in my store
+Go to Tax in my store
+Additional Resources
+Basic Tax Setup
+Automatic Tax Setup
+Making Customers Tax-Exempt
+Changing Product-Specific Tax Rates
+Avalara AvaTax
+Guide to CCPA
+General Data Protection Regulation (GDPR)
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Tax Overview

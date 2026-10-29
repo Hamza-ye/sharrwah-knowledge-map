@@ -1,0 +1,154 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+Store Settings
+Store Profile
+How It Works
+Requirements
+Contact Information
+Locale
+FAQ
+Store Settings
+"Maintenance" Mode
+Domain and Email
+Checkout and Payments
+Shipping
+Tax
+Security
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Store Profile Settings
+What We'll Cover
+How it works
+Requirements
+Contact information
+Locale
+FAQ
+The store profile provides basic information about your business, which the store uses for various features. It can affect which payment gateways are available, how your contact information appears on order invoices, and the name of your store in your BigCommerce account. Due to the wide scope of how this information is used, it is important to fill out these fields accurately for your store.
+How It Works
+When you create a new store, the basic contact information you provide, such as the store name and email address, is added to the store profile. You can manage store information globally from Settings › Store profile, or you can add unique information to individual storefronts from Channels › Channel Manager by clicking the storefront’s name and going to Storefront settings › Contact information.
+If your store has 100,00 or more products or you have not enabled multi-language, you can also manage locale information for your store, such as the country where your store is located and the default language used for storefront content. These settings allow you to access region-specific payment methods and also automatically translate storefront content in supported languages.
+Requirements
+To view and manage store profile settings, the Manage Settingspermission must be enabled on your user account.
+Contact Information
+Go to Settings › Store profile to update or change your store's contact information. If you are using Multi-Storefront, go to Channels › Channel Manager, click on the name of your storefront, and navigate to Storefront settings › Contact information.
+Store display name — The name of your store as you want it to appear in all emails, invoices, order confirmation page, the header of your store, and on your BigCommerce account.
+A blank space either before or after the store name cannot be used.
+Address — The physical address of your store or place of business; appears on printed invoices and in the footer of most themes.
+This field does not support HTML, and the following special characters cannot be used: < > { } ( ) \ / '
+Address type — Specifies whether the above address is a home or commercial office, retail store, or warehouse.
+Email — The email address used by all emails sent by the store, such as invoices and order status updates.
+This should be an email using the same domain as your store, not a third-party email service like Yahoo, Gmail, or AOL. See Customer Order Notifications for more details.
+Phone — The phone number as you wish it to appear on your storefront.
+If left blank, no phone number will appear.
+Pro Tip! Stores with a visible contact number get higher conversion rates; we recommend adding your store's phone number to your homepage and contact page.
+Locale
+The Locale settings determine your store's country and customer-facing language.
+Look different? Stores with multiple languages enabled, including those with Catalyst storefronts, configure their default country and storefront language under Settings › Localization. For more information, see Localization Settings.
+Default country — The country your store is run from, which determines the payment methods that are available for use with your store.
+Default language — The language used on the storefront; includes system messages (such as out of stock messages), checkout payment error messages, and transactional and abandoned cart emails.
+If you are using a theme based on Cornerstone 5.7.0 or higher, its language will update as well.
+Enable automatic translation based on shopper's browser language — Language is selected according to shopper's browser settings.
+This overrides your selection in the Default language dropdown.
+FAQ
+Which countries support seamless translation in the storefront?
+If you create a new store based in one of the following countries, the store's content will be in your country's native language by default. All other countries and languages require theme lang file customization.
+Danish / Dansk (da)
+Dutch; Flemish / Nederlands (nl)
+English (en)
+French / Français (fr)
+French; Belgium / Français de Belgique (fr-BE)
+French; Canada / Français de Canada (fr-CA)
+German / Deutsch (de)
+Italian / Italiano (it)
+Japanese / 日本語 (ja)
+Polish (pl)
+Portuguese / Português (pt)
+Spanish; Castilian / Español/Castellano (es)
+Spanish Latin America / Español Latinoamérica (es-419)
+Spanish; Argentina / Español rioplatense (es-AR)
+Spanish; Chile / Español chileno (es-CL)
+Spanish; Colombia / Español colombiano (es-CO)
+Spanish Costa Rica (es-CR)
+Spanish; Mexico / Español mexicano (es-MX)
+Spanish; Peru / Español peruano (es-PE)
+Swedish / Svenska (sv)
+Why does certain content in my store remain untranslated after selecting a different default language?
+When a new store is created, sample content is generated that cannot be automatically refreshed if the store's default language is changed. These must be manually translated in order to match the changed default language.
+Content that does not automatically change includes:
+Payment methods
+Static shipping quotes
+Out of delivery zone messages
+Products
+Categories
+Pre-order messages
+Return reasons and actions
+Account signup fields
+Can I specify a dialect when selecting my store's default language?
+Yes, some languages have multiple dialects available. However, not all dialects are supported for seamless translation in the storefront.
+If there is no content available for a selected dialect, such as Canadian French (fr-CA), the parent language will be used instead, such as French (fr) in our example.
+Are system notifications sent to my Store Profile email address?
+Unless otherwise specified, system notifications are sent to the email address in the Administrator Email field, located in Settings › Miscellaneous.
+How do I verify my store's email address?
+When updating the email address in the Email field, a verification email is sent to the new address from accounts@bigcommerce.com. A notification will appear in the store profile until verification is complete or the 24 hour expiration window closes.
+Click the Verify email button in the email. If you are not currently logged into your control panel, you will be taken to the login page first. Once verified, the updated store email address will take effect.
+Why am I receiving a "Failed to update store profile." error message?
+If you receive the "Failed to update store profile" error, check your Store display name and remove spaces from the beginning or end, and any extra spaces between words.
+Do this in my store
+Go to Store Profile in my store
+Additional Resources
+Customer Order Notifications
+Optimized One-Page Checkout
+Using the Abandoned Cart Saver
+Cornerstone Theme Manual
+Localization Settings
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Store Profile Settings

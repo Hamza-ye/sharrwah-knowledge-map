@@ -1,0 +1,183 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Products
+Store Setup
+Store Settings
+Domain and Email
+Checkout and Payments
+Shipping
+Tax
+Tax Overview
+Basic Tax
+Automatic Tax Setup
+Avalara AvaTax
+Requirements
+Setup
+BigCommerce Settings
+Assigning Local Tax Jurisdiction
+Cross-Border and VAT/GST
+Verifying Tax Rates
+FAQ
+Product-Specific Rates
+Tax-Exempt Customers
+Security
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Avalara AvaTax
+What We'll Cover
+Requirements
+Setting up Avalara AvaTax
+BigCommerce settings
+Assigning local tax jurisdiction
+Cross-border tax and VAT/GST collection
+Verifying tax rates
+FAQ
+Avalara AvaTax makes setting up and calculating sales tax for your store easier to manage by determining sales tax rates at checkout automatically, providing sales tax reporting, and allowing you to set up tax-exempt customers and specific product codes and tax properties quickly.
+See Automatic Tax Setup for more information about using automatic tax providers.
+Look different? This article covers the most current version of Avalara AvaTax. If your control panel shows a different version, feel free to reach out to our Community or contact our Support team for assistance.
+Requirements
+To set up Avalara Avatax, a supported country must be selected as the default country under Store Profile settings.
+Avalara AvaTax can be set up by stores in all countries, except Brazil and India.
+To access Tax in the control panel, you must have the Manage Tax Settingspermission enabled on your user account.
+To install and launch Avalara AvaTax, you must be logged in as the Store Owner or have the Install applications and Launch applicationspermissions enabled on your user account.
+To conduct cross-border business, you will need to specify the countries you'll be collecting tax and specify the Importer of Record for those countries.
+Do I have to pay to use Avalara AvaTax? When you sign up through BigCommerce, you will be able to subscribe to AvaTax at a fixed rate tied to your store’s plan. Enterprise merchants will need to contact Avalara to discuss pricing.
+Setting Up Avalara AvaTax
+To get started with Avalara AvaTax, go to Settings › Tax and click Install next to Avalara AvaTax. You will need to be logged in as the store owner in order to install the app.
+You can also install AvaTax from the App Marketplace or by clicking the Add tax service button located in the top right corner.
+Click Install, then Confirm to authorize adding the app to your store.
+If you already have an Avalara account, contact your account manager to connect to BigCommerce. Otherwise, fill in your company details, create your Avalara account, and complete the onboarding process.
+What if I have nexus in more than one state? If you are responsible for collecting sales tax in multiple states, you will need to set up your local jurisdictions on your Avalara account.
+Log into your Avalara AvaTax account to update your company profile and add other Avalara products, such as Avalara Returns and Cross-Border. The page will show options for adding exemptions to the various goods and services you provide, and you'll also have the opportunity to enable or disable document submission for tax reporting and returns.
+After you start taking orders, you can review transactions for information such as applied tax codes, entity use codes, invoice and reporting currency, and a line item breakdown of the order's tax summary.
+At this point, the store is set up for basic automatic tax calculations. To adjust your Automatic Tax Calculation, log in to your Avalara AvaTax account to set up local jurisdictions, tax exemptions, and more.
+BigCommerce Settings
+To update or test your connection, override tax codes, and toggle sending order data, go to Settings › Tax in the BigCommerce control panel and click Edit next to Avalara AvaTax.
+The upper section displays the provider connection status, account info, and buttons to update or test your connection.
+Under Provider targeting, you will need to check the box next to the countries and subdivisions (such as states or provinces) that you want Avalara AvaTax to calculate tax for. Basic Tax is used for any regions that are not selected.
+If you want Avalara AvaTax to calculate tax everywhere, check the box next to Select all under Country.
+Under Provider Options, you can toggle Please submit my order data so that I can use solution tax reporting and returns features. When enabled, Avalara will store transaction records. Disable this if your provider account is also connected to an ERP. This prevents duplicate reporting on tax liabilities from occurring.
+You also have fields to optionally override gift wrapping, handling, shipping, and default taxable codes. See Avalara’s Avalara tax codes to learn more.
+Assigning Local Tax Jurisdiction
+If you have nexus in multiple states or local jurisdictions, the additional jurisdictions need to be adjusted from within your Avalara account. To learn more about setting up local jurisdictions, see Local jurisdictions on Avalara’s support site.
+Cross-Border Tax and VAT/GST Collection
+Cross-Border by Avalara helps merchants that sell internationally calculate the duty and import tax assessed at the border for their shipped products and process payment for those fees at checkout. Contact Avalara to add their cross-border solution to your account.
+Avalara AvaTax will calculate VAT/GST if your business has transactions into European Union member states or any other country around the world that charges VAT/GST. However, you must specify which countries you'll be collecting VAT/GST from, whether they have a permanent establishment, and whether they are the Importer of Record.
+A permanent establishment is a fixed place of business which generally gives rise to VAT liability in a particular jurisdiction. Examples that typically qualify as a permanent establishment include a branch, a factory, a warehouse, or a place of management. See Avalara's Change the importer of record and establishment settings to learn more.
+The Importer of Record is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued. Furthermore, the Importer of Record is the responsible party for the payment of customs duties, tariffs, and fees related to the imported goods. See Avalara's Importer of record setting to learn more.
+Setting up Avalara for VAT/GST Collection
+Follow the below steps to select countries you'll be shipping to, whether those countries have a permanent establishment and whether they are the Importer of Record.
+1. Log in to your Avalara AvaTax account.
+2. On the navigation bar, click Settings, then select Where you collect tax.
+3. Click the VAT/GST tab, then Add a country or territory where you collect VAT/GST.
+4. Select all the countries that you will ship to and collect taxes from, then click Add selected countries.
+5. For each country, select if you have a permanent establishment and if you're the importer of record in those countries. See Avalara's Update where you collect and pay tax to learn more about these settings.
+Verifying Tax Rates
+You can use Avalara's sales tax calculator and rate lookup tool to confirm proper tax rates are being calculated for US regions. If there is any inconsistency between the rate reported at Avalara's calculator and what is reported in your store checkout, please contact our support team for further investigation.
+FAQ
+General
+Calculations
+Products
+Troubleshooting
+General
+Where do I find my Company Code?
+You create your company code. It can be whatever you want (like a number, an abbreviation, or an acronym). It is required.
+Can I use my AvaTax Account in multiple stores?
+Yes. On your Avalara AvaTax account, you will add a company. See Add a Company from Avalara's help center for instructions. Once it is set up on your AvaTax account, go to your other store and log in with your Avalara credentials during tax setup. A list of your companies will display during the setup, select the company you want to associate with that store.
+Can I make customers tax exempt with AvaTax?
+Yes, see our article on creating tax-exempt customers using an automatic tax provider. You will need to assign the appropriate entity/use letter code to your customers.
+Does Avalara support recent updates to UK VAT policy?
+Avalara AvaTax supports VAT, which includes UK VAT. For more information on configuring VAT with Avalara, see Avalara's Update where you collect and pay tax or contact Avalara's support team. For more information on how these changes affect stores with UK customers, see our product blog post on UK VAT Changes in 2021: What You Need to Know.
+How do I disable Avalara AvaTax?
+In Settings › Tax, click Edit next to Avalara AvaTax. Under Provider targeting, uncheck any boxes that are checked in the Country or Subdivisions menus, then click Save.
+Your store will default to using basic tax.
+Calculations
+Can sales tax be calculated on international transactions through the AvaTax app?
+Avalara AvaTax will calculate VAT/GST for transactions into EU member states and any other country that charges VAT/GST, as long as the country has been enabled for VAT/GST collection.
+How can I adjust how rounding works with Avalara?
+Avalara can round tax amounts at the line-level or document-level. See Change how AvaTax Update rounds the tax amount from Avalara's help center for instructions.
+How does Avalara calculate VAT for businesses selling in Northern Ireland?
+As a part of the Brexit Withdrawal Agreement, the UK and EU agreed that Northern Ireland would take up a dual status within the EU and UK VAT customs union and market for goods only. Avalara now automatically associates businesses and customers transacting in Northern Ireland to the XI country code to correctly calculate sales tax.
+See Northern Ireland ISO code update for businesses selling into Northern Ireland in Avalara's help center for more information on VAT in Northern Ireland.
+Is sales tax calculated if an order has an unsupported country as its shipping origin or destination, such as Brazil or India?
+To use Avalara for tax calculation, a supported country must be selected as the default country under Store Profile settings. The cart and checkout will show $0 for tax, and the Order View Detail will show “No Tax”.
+For shipping destinations, countries not available or not selected under Provider targeting will use basic tax.
+Alternatively, you can choose to use an automatic tax provider that supports these locations.
+Can I use Avalara AvaTax for some countries/regions and Basic Tax for others?
+Yes. In Settings › Tax, click Edit next to Avalara AvaTax. For the locations you want to use basic tax, uncheck any boxes in the Country and Subdivisions menus under Provider targeting, then click Save.
+Products
+How do I assign Avalara product tax codes and tax properties to products?
+Avalara product tax codes can be assigned to products one at a time via the control panel, or in bulk via a product import using a CSV file. Tax properties can be added to applicable products one at a time in the control panel and via the API. See our article on charging product-specific tax rates with automatic tax for more information.
+Can I assign Avalara product tax codes to variants?
+Yes, Avalara product tax codes can be assigned to variants by importing or adding them manually in your Avalara AvaTax account. If you plan on importing your SKUs, you'll need to create a CSV file with the following three columns:
+Item — the SKU code from BigCommerce for the variant
+ItemDescription — a comment associated with an item that describes the product, service, or charge. The same value can be used for both Item and ItemDescription. Duplicate descriptions are allowed.
+TaxCode — the Avalara Product Tax code for the variant
+It’s important to note that there is a maximum of 100,000 items per import. If you must map more than 100,000 SKU codes to Avalara Product Tax Codes, you will need to perform multiple imports. It is also possible to create, read, update, and delete items in AvaTax using their API.
+To assign an Avalara product tax code to a variant, log into your Avalara account. On the navigation bar, click Settings, then select What you sell. From here you can add items one-by-one or import items in bulk using a CSV file. See Avalara's Import and map items to tax codes to learn more.
+Troubleshooting
+Why was a 10% tax rate applied? That is not correct.
+A fallback tax rate of 10% is applied when there is a failure to connect to Avalara's automatic tax calculation service. It can also happen if a shipping origin address hasn't been set up in the Shipping page, or when the customer's address could not be validated. Check the Shipping page and ensure there is a valid address set as a Shipping Origin. Check status.bigcommerce.com to see if there are any service performance issues with Avalara's service.
+Optionally, instead of the flat 10% rate, you can choose to use your store's basic tax configuration as the fallback rate, or disable fallback tax completely (the customer will not be able to check out if the automatic tax provider is unreachable). Go to Settings › Tax and click Edit to change your Fallback Tax setting.
+What if my taxes aren’t being calculated correctly?
+You can check the status of servers that handle tax calculation by going to status.bigcommerce.com to see if there are any service performance issues with Avalara's service. If there are no issues with performance, check the following:
+If the tax rate is not calculating as you expect, login to Avatax and go to Settings to confirm you have selected the correct jurisdictions. If these are all correct, contact Avalara's support.
+Compare the tax between your Avatax account and BigCommerce. If these are different, contact BigCommerce support to report it.
+Check that you have set up a Store Profile country in one of the supported countries.
+Additional Resources
+Tax Overview
+Automatic Tax Setup
+Basic Tax Setup
+Making Customers Tax-Exempt
+Charging Product-Specific Tax Rates
+Guide to Legacy Product Import/Export
+Importing and Exporting Customers
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Avalara AvaTax

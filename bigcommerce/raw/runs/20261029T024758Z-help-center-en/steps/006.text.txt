@@ -1,0 +1,159 @@
+Help center
+Contact
+Preferred Language
+EN
+Log in
+[Search]
+Contact
+System Status
+All Systems Operational
+Refreshedless than 1 minute ago
+Get Help
+Ask the Community
+Get answers from experts
+Live Chat
+YourSupport PINis required
+Phone Support
+YourSupport PINis required
+Email Support
+YourSupport PINis required
+Common Questions
+no items
+Phone Support
+Help Center
+Community
+Getting Started
+Quick Start
+Starting a Trial
+Requirements
+Features
+Creating a Trial Store
+First Login
+Existing Accounts
+Launching Your Store
+Cancelling
+Troubleshooting
+FAQ
+Logging In
+2FA
+Control Panel
+Previewing Store
+Platform Limits
+Backing Up Your Store
+The App Marketplace
+Migrating Your Store
+Getting Help
+Products
+Store Setup
+B2B
+Design and Content
+Manage Store
+Channel Manager
+Marketing
+Data Solutions
+Account
+TD Bank
+Starting a BigCommerce Trial
+What We'll Cover
+Requirements
+Features
+Creating a trial store
+First login
+Adding a new store to an existing account
+Launching your store
+Cancelling a trial store
+Troubleshooting failed trial creation
+FAQ
+Your BigCommerce trial store gives you 15-day access to almost all of our features, including some that are only available on specific BigCommerce plans. Start your free 15-day trial today from the BigCommerce homepage or by logging into the Account Dashboard if you already have a BigCommerce store.
+Requirements
+To add a new trial to an existing account, you must be the store owner.
+Features
+To help you in setting up your entire store and have it ready to start selling the moment you choose to launch, customer groups and the Abandoned Cart Saver are available on your 15-day trial. These features are only available on certain BigCommerce plans.
+Once you decide to upgrade to a paid store, any features not available on your plan will become unavailable unless you upgrade to the appropriate plan. Review our pricing page for more information on BigCommerce plans and their features. BigCommerce does not take any payment until you are ready to upgrade.
+The following features will be unavailable on your trial store. They are only available after upgrading your plan, if that store plan supports them:
+Adding a custom domain to your store
+Installing a third-party SSL certificate
+301 Redirects
+Product filtering
+Payment gateways and alternative payment methods
+Stored payment methods
+Sending transactional and abandoned cart emails to shoppers (see the FAQ for more information)
+Creating a Trial Store
+If you are new to BigCommerce, create a trial store by going to the BigCommerce homepage and clicking Try for free in the upper right. If you have an existing BigCommerce account, add your new store from the Account Dashboard.
+Fill out the form by providing your name, email address, a password, store name, the size of your business, and the region your store should be hosted. Note that the store name can be changed at any time after starting your trial.
+Once you have selected a hosting region for your trial store, it cannot be changed. To ensure optimal site speed and performance, select the region nearest to your prospective customers.
+When you're ready, click Start your free trial. Before you can log into your new store, you’ll need to enter a security code sent to your email address.
+First Login
+On your first login to your store’s control panel, you'll be prompted to answer some questions about your business in order to personalize an onboarding checklist.
+After submitting your answers, you will be taken to your store’s dashboard, which will list the next steps to get your store up and running.
+You can work on other store setup tasks before completing the onboarding checklist by navigating to other areas of the control panel. To return to the checklist on the dashboard, click Home.
+See our Store Launch Guide for more information on preparing your store for launch. If you're more interested in getting your trial up and running quickly for testing, refer to our Quickstart Guide.
+Adding a New Trial Store to an Existing Account
+If you already have a paid store or trial, you can add a new trial to your existing account directly from your BigCommerce Account Dashboard. Note that only the store owner can access the Account Dashboard.
+To reach the dashboard from within the control panel, click your store name in the top left and select Manage store account. The BigCommerce Account Dashboard can also be accessed directly by going to manage.bigcommerce.com.
+Once you're in the account dashboard, click New Store.
+Enter details about the new trial store, then click Save. After a few seconds, your new trial store will be created. From here, you can log into the new store's control panel or view its details.
+New store login issues. If you are unable to log into your newly created trial store, contact our support team.
+Launching Your Store
+All BigCommerce trials are not visible to the public when they are created. This keeps search engines and other bots from indexing your store and people from browsing your store before it is ready. However, store admins and select visitors can view the storefront before launch. For more details, see Previewing a Store Before Launch.
+When you’re ready to make your store live, go to Channels and select Make active from the Action menu (⋯) next to your storefront.
+Cancelling a Trial Store
+There is no action needed to cancel a trial store. The trial will automatically expire after the 15-day trial period. You will never be billed for a trial store.
+After your trial expires, BigCommerce will keep your store data for a period of 30 days before it is automatically deleted. If you want to restore your trial store before it is deleted, log in to the store and reactivate it by upgrading to a paid plan.
+To start a new trial on an account with no stores available, contact our support team for assistance. If you have active stores on the same account as your deleted trial store, it will no longer appear in the account’s list of stores on the login page.
+Troubleshooting Failed Trial Creation
+Common causes for trial failure
+Common errors
+COMMON CAUSES FOR TRIAL FAILURE
+The trial store form may fail to send if there is an issue with your device or the data you provided. If you are unable to create a new trial, review the potential causes below to determine if it is responsible for your issue.
+If you have an active VPN on your device, make sure you disable it before filling out and submitting your form. This is the most common reason for failed trial creation.
+Make sure that you are entering your actual business information in the form instead of placeholder data.
+If you have an existing BigCommerce account, you must enter the same email and password you currently use if you are creating a new trial with the form.
+Complete all steps from a single device. For example, if you begin the trial creation process on your mobile device and then switch to a laptop to finish, the trial creation will fail.
+If you are having issues with logging in to your trial store after creating it successfully, see the “Troubleshooting” section of Logging in to Your Store for guidance.
+COMMON ERRORS
+Error message or behaviorResolution
+You receive a “We can’t find your account or store. If you signed up recently, try logging in again later. If the problem continues, contact support” error while logging in after creating a trial.This indicates that an account was created, but the trial store failed to provision. Contact our support team to resolve the issue.
+You receive “An error had occurred while creating your trial. Please try again” after attempting to create your trial store.There may be a mismatch with the country, date, or time settings between your browser and your store information. Check if one of the common causes could be the source of the issue and try again.
+You receive a “We’re sorry, we are unable to create your trial store. Error account_support” error while creating your trial store.There was an issue with your trial store data. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.
+You receive “An error occurred please contact support” while creating your trial store.There was an issue with your trial store data or your device. Check if one of the common causes could be the source of the issue and try again, or contact our support team if it persists.
+FAQ
+How do I create a new trial if I already have a BigCommerce account?
+Create your new store from the Account Dashboard by following the steps in Adding a New Trial Store to an Existing Account.
+Do I need to follow the onboarding checklist in the dashboard?
+The checklist presents recommended store setup tasks based on the information you provided during trial creation, but you are not required to follow each step in order to launch your store. If you want to handle setup differently or you are already familiar with launching a BigCommerce store, click take me to the dashboard at the bottom of the checklist.
+I just created a new trial store, but I can’t log in. What should I do?
+If your login credentials aren’t working with your newly created trial store, contact our support team.
+Can I process live payments on a trial store?
+No, you cannot enable payment gateways or alternative payment methods until you have purchased a paid plan. However, you can test your trial store’s checkout page by enabling offline payments or the BigCommerce test payment gateway.
+Why aren’t shoppers receiving emails from my trial store?
+During your trial period, transactional and abandoned cart emails are sent to the store owner when the corresponding storefront event is triggered, such as creating a customer account or placing an order. You can use the Trial email recipients setting in Settings › Security & Privacy to designate additional control panel users as recipients.
+When you upgrade to a paid plan, your storefront emails will be sent to shoppers automatically when triggered.
+Additional Resources
+Changing Your Store's Plan
+Getting Started with the Control Panel
+Logging into Your Store​
+Previewing a Store Before Launch
+Store Launch Guide
+Store Owner User Role and Permissions
+The Account Dashboard
+Don't see what you're looking for? Ask the Community
+Ask a Question
+Looking for actionable advice to improve your site?
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+Share your site
+Community Guide
+Community Ideas
+Community Code of Conduct
+Community Terms of Use
+Become a Partner
+Become an Affiliate
+Contact Support
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+Twitter
+Facebook
+Linkedin
+Youtube
+Pinterest
+Instagram
+Starting a BigCommerce Trial

@@ -1,0 +1,654 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Users":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Billing":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Pricing":
+                - /url: /s/article/Pricing
+            - listitem:
+              - link "Account Dashboard":
+                - /url: /s/article/Account-Dashboard
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Accessing":
+                    - /url: "#login"
+                - listitem:
+                  - link "Updating Details":
+                    - /url: "#update-account"
+                - listitem:
+                  - link "Viewing Store Details":
+                    - /url: "#store-details"
+                - listitem:
+                  - link "Viewing OPP Summary":
+                    - /url: "#opp-summary"
+                - listitem:
+                  - link "Updating Payment Method":
+                    - /url: "#update-payment"
+                - listitem:
+                  - link "Creating Stores":
+                    - /url: "#stores"
+                - listitem:
+                  - link "Transferring Ownership":
+                    - /url: "#transferring-ownership"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Changing Plans":
+                - /url: /s/article/How-do-I-upgrade-my-stores-plan
+            - listitem:
+              - link "About Invoices":
+                - /url: /s/article/How-do-I-make-a-payment-on-my-account
+            - listitem:
+              - link "Cancelling":
+                - /url: /s/article/How-do-I-cancel-my-Bigcommerce-store
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "The Account Dashboard" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Accessing the Account Dashboard":
+      - /url: "#login"
+  - listitem:
+    - link "Updating account details":
+      - /url: "#update-account"
+  - listitem:
+    - link "Viewing store details":
+      - /url: "#store-details"
+  - listitem:
+    - link "Viewing your Open Payment Provider fee summary":
+      - /url: "#opp-summary"
+  - listitem:
+    - link "Updating your payment method":
+      - /url: "#update-payment"
+  - listitem:
+    - link "Creating additional stores":
+      - /url: "#stores"
+  - listitem:
+    - link "Transferring ownership":
+      - /url: "#transferring-ownership"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph:
+  - text: The Account Dashboard is where store owners manage their BigCommerce account. From the Dashboard you can
+  - link "manage account details":
+    - /url: "#update-account"
+  - text: ","
+  - link "change your store’s plan":
+    - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - text: ","
+  - link "update payment methods":
+    - /url: "#update-payment"
+  - text: ", view your"
+  - link "Open Payment Provider fee summary":
+    - /url: "#opp-summary"
+  - text: ","
+  - link "view and pay invoices":
+    - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - text: ","
+  - link "purchase":
+    - /url: /s/article/Purchasing-a-Domain
+  - text: and
+  - link "manage domains":
+    - /url: /s/article/Changing-Domains
+  - text: ", and"
+  - link "purchase and manage SSL certificates":
+    - /url: /s/article/BigCommerce-SSL-Certificate
+  - text: .
+- paragraph:
+  - img "The Account Dashboard"
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To access the Account Dashboard, you must be the
+    - link "store owner":
+      - /url: /s/article/Store-Owner
+    - text: .
+- link:
+  - /url: "#login"
+- heading "Accessing the Account Dashboard" [level=3]
+- paragraph:
+  - text: To access the Account Dashboard, navigate to
+  - link "manage.bigcommerce.com":
+    - /url: https://manage.bigcommerce.com
+  - text: and log into your account.
+- paragraph:
+  - text: If you are already logged into the control panel as the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: ", click your"
+  - strong: store name
+  - text: and select
+  - emphasis: Manage store account
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Store name and Manage store account highlighted"
+- paragraph:
+  - text: As the store owner, you always have access to the Account Dashboard, even if you are unable to log into your store’s
+  - link "control panel":
+    - /url: /s/article/Getting-Started-with-the-New-Control-Panel
+  - text: .
+- paragraph: If you have more than one account, you can switch between them by using the drop-down menu in the upper right.
+- paragraph:
+  - img "Account drop-down menu"
+- link:
+  - /url: "#update-account"
+- heading "Updating Account Details" [level=3]
+- paragraph:
+  - text: To update your company name, VAT information, and manage contacts, click
+  - strong: Account
+  - text: and select
+  - emphasis: Account details
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Account details highlighted in Account drop-down menu"
+- heading "UPDATING PRIMARY AND BILLING CONTACTS" [level=4]
+- paragraph:
+  - text: Your primary and billing contacts are listed under
+  - strong: Contacts
+  - text: . As the main contact, the primary contact receives most communications and can
+  - link "view all cases and associated issues":
+    - /url: /s/article/Creating-Viewing-Support-Cases
+  - text: on the account. The billing contact receives
+  - link "account invoices":
+    - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - text: and any other billing related communications.
+- paragraph:
+  - text: To create a new contact for the account, click
+  - strong: Add Contact
+  - text: .
+- paragraph:
+  - img "Add contact highlighted in the Account Dashboard"
+- paragraph:
+  - text: Click
+  - strong: Edit
+  - text: next to a contact to open the drop-down menu. For any contact in your list, you can select
+  - emphasis: Edit contact
+  - text: and update their details.
+- paragraph:
+  - text: For unassigned contacts, you can replace the existing primary contact by selecting
+  - emphasis: Set primary contact
+  - text: . Replace the existing billing contact by selecting
+  - emphasis: Set billing contact
+  - text: . Remove the contact by selecting
+  - emphasis: Delete
+  - text: .
+- paragraph:
+  - img "Edit drop-down menu"
+- link:
+  - /url: "#store-details"
+- heading "Viewing Store Details" [level=3]
+- list:
+  - listitem:
+    - link "Plan summary":
+      - /url: "#details-plan-summary"
+  - listitem:
+    - link "Store history":
+      - /url: "#details-store-history"
+  - listitem:
+    - link "Details":
+      - /url: "#details-details"
+  - listitem:
+    - link "Cancel store":
+      - /url: "#details-cancel"
+- paragraph:
+  - text: To view details about the store(s) on your account, including plan information, sales volume, and domain details, click
+  - strong: Account
+  - text: and select
+  - emphasis: Store details
+  - text: from the drop-down menu.
+- paragraph: If you have more than one store, you can switch between them using the drop-down menu at the top of the page.
+- paragraph:
+  - img "Store change drop-down at the top of the store details page"
+- heading "PLAN SUMMARY" [level=4]
+- paragraph:
+  - text: The
+  - strong: Plan summary
+  - text: section displays your current store plan, plan price, and the plan’s sales volume cap. When applicable, links to upgrade or downgrade your plan, as well as change your billing frequency are also displayed.
+- paragraph:
+  - img "Plan summary on the store details page"
+- paragraph:
+  - text: For more information on BigCommerce plans and pricing, see our
+  - link "pricing page":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: . For more details on plan changes, see
+  - link "Changing Your Store's Plan":
+    - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - text: .
+- heading "STORE HISTORY" [level=4]
+- paragraph:
+  - text: The
+  - strong: Store history
+  - text: section displays your store’s trailing 12-month sales volume as well as the previous month’s volume and Open Payment Provider fee summary.
+- paragraph:
+  - img "Store history on the store details page"
+- paragraph:
+  - text: For more information, see “Viewing Sales Volume” on
+  - link "About BigCommerce Pricing":
+    - /url: /s/article/Pricing
+  - text: .
+- heading "DETAILS" [level=4]
+- paragraph:
+  - text: The
+  - strong: Details
+  - text: section displays your store’s domain information, including your current domain and
+  - link "storefront's permanent address":
+    - /url: /s/article/Finding-Your-Web-Address
+  - text: .
+- paragraph:
+  - img "Details on the store details page"
+- paragraph:
+  - text: For information about updating and managing your store’s domain, see
+  - link "Changing Domains":
+    - /url: /s/article/Changing-Domains
+  - text: . For details on purchasing a custom domain, see
+  - link "Purchasing a Domain":
+    - /url: /s/article/Purchasing-a-Domain
+  - text: .
+- heading "CANCEL STORE" [level=4]
+- paragraph:
+  - text: If your store is on a
+  - link "Core, Growth, or Scale plan":
+    - /url: https://www.bigcommerce.com/pricing/
+  - text: ", you can submit a cancellation request directly from the"
+  - strong: Cancel store
+  - text: section.
+- paragraph:
+  - img "Cancel store on the store details page"
+- paragraph:
+  - text: For cancellation requirements and considerations, see
+  - link "Cancelling Your Store or Paid Features":
+    - /url: /s/article/How-do-I-cancel-my-Bigcommerce-store
+  - text: .
+- text: 
+- paragraph:
+  - strong: "Note:"
+  - text: To ensure that your cancellation processes before the next billing cycle begins, we require cancellation requests to be submitted
+  - strong: at least 2 business days
+  - text: before your next billing date.
+- link:
+  - /url: "#opp-summary"
+- heading "Viewing Your Open Payment Provider Fee Summary" [level=3]
+- paragraph:
+  - text: To view a breakdown of GMV processed through each payment method, including any revenue subject to the Open Payment Provider fee, click
+  - strong: Account
+  - text: and select
+  - emphasis: OPP Summary
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Opp Summary highlighted in Account drop-down menu"
+- paragraph:
+  - text: For more information, see “Viewing your Open Payment Provider Fee Summary” on
+  - link "About BigCommerce Pricing":
+    - /url: /s/article/Pricing
+  - text: .
+- link:
+  - /url: "#update-payment"
+- heading "Updating Your Payment Method" [level=3]
+- paragraph:
+  - link "BigCommerce invoice charges":
+    - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - text: "are automatically paid using the payment method on file. To update your payment details:"
+- paragraph:
+  - strong: "1."
+  - text: Click
+  - strong: Account
+  - text: and select
+  - emphasis: Payment method
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Payment method highlighted in Account drop-down menu"
+- paragraph:
+  - strong: "2."
+  - text: Click
+  - strong: Edit
+  - text: to select and enter new payment details. The methods available to pay your invoice can vary depending on your store’s plan and region.
+- paragraph:
+  - img "Edit payment methods"
+- paragraph:
+  - strong: "3."
+  - text: Click
+  - strong: Save
+  - text: . This method will now be used to automatically pay charges for future billing cycles.
+- paragraph:
+  - text: If you encounter any issues when attempting to add a payment method or pay an invoice,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: or
+  - link "create a Billing Case":
+    - /url: /s/article/Creating-Viewing-Support-Cases
+  - text: . Note that our support team
+  - strong: cannot
+  - text: edit the payment method in your account and will
+  - strong: never
+  - text: ask for your payment information.
+- link:
+  - /url: "#stores"
+- heading "Creating Additional Stores" [level=3]
+- paragraph: Multiple stores can be created under the same account, allowing you to manage them efficiently. These stores share the same contact and billing information.
+- paragraph:
+  - text: On the Account Dashboard home page, click
+  - strong: New Store
+  - text: and fill out the form on the next page.
+- paragraph:
+  - img "New Store highlighted in the Account Dashboard"
+- paragraph:
+  - text: The new store will be set to a 15-day trial. You can
+  - link "upgrade to a paid plan":
+    - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - text: at any time during the 15-day trial period.
+- paragraph:
+  - text: If you encounter issues creating a new store, see the troubleshooting steps under “Troubleshooting Failed Trial Creation” on
+  - link "Starting a BigCommerce Trial":
+    - /url: /s/article/Starting-a-Bigcommerce-Trial
+  - text: .
+- link:
+  - /url: "#transferring-ownership"
+- heading "Transferring Ownership" [level=3]
+- paragraph: Store ownership can be transferred to another user, whether through a sale or an organizational change.
+- paragraph: "Before transferring ownership, you will need to update contact and billing information for various external aspects of your store:"
+- list:
+  - listitem: Your domain registrar (if purchased from a third-party registrar)
+  - listitem:
+    - text: The
+    - link "domain contacts":
+      - /url: /s/article/Purchasing-a-Domain
+    - text: (if purchased from BigCommerce)
+  - listitem: Email host accounts connected to your domain
+  - listitem:
+    - link "Payment gateway":
+      - /url: /s/article/Available-Payment-Gateways
+    - text: accounts
+  - listitem:
+    - link "Real-time shipping quote":
+      - /url: /s/article/Setting-Up-a-Real-Time-Shipping-Quote-Shipping-Method
+    - text: integration accounts
+  - listitem:
+    - link "Automatic tax provider":
+      - /url: /s/article/Automatic-Tax-Setup
+    - text: accounts
+  - listitem:
+    - text: Accounts with apps from the
+    - link "App Marketplace":
+      - /url: /s/article/How-do-I-access-and-install-the-new-single-click-apps-within-my-Bigcommerce-store-control-panel
+  - listitem: External data management or order management systems
+  - listitem: Any other systems that interact with your store
+- paragraph:
+  - text: Once you are ready to transfer ownership, create a
+  - link "user account":
+    - /url: /s/article/Users
+  - text: for the new owner, and then
+  - link "update their user role":
+    - /url: /s/article/Store-Owner
+  - text: to
+  - emphasis: Store Owner
+  - text: .
+- paragraph: "The new store owner can then:"
+- list:
+  - listitem:
+    - text: Update the
+    - link "account details":
+      - /url: "#update-account"
+    - text: and
+    - link "payment method":
+      - /url: "#update-payment"
+    - text: as needed.
+  - listitem:
+    - text: Remove any unneeded
+    - link "permissions":
+      - /url: /s/article/User-Permissions
+    - text: from the old owner’s user account or set it as
+    - emphasis: Inactive
+    - text: .
+- paragraph:
+  - text: As the final step,
+  - link "contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: so that we can update the owner in our systems.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: How do I change my password?
+- paragraph:
+  - text: If you are already logged into your store's control panel as the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: ", click the"
+  - strong: profile
+  - text: icon and select
+  - emphasis: Password
+  - text: from the drop-down menu.
+- paragraph:
+  - img "Password highlighted in Profile drop-down menu"
+- paragraph:
+  - text: On the
+  - strong: Password
+  - text: page, enter your current password and new password, then click
+  - strong: Save
+  - text: ". Note that your new password must contain:"
+- list:
+  - listitem: at least 12 characters.
+  - listitem: one or more uppercase letters.
+  - listitem: one or more special characters or symbols.
+  - listitem: one or more lowercase letters.
+  - listitem: one or more numbers.
+- paragraph: After changing your password, you’ll be logged out of the control panel and must enter your new password to log back in.
+- paragraph:
+  - strong: My password is incorrect, how can I reset it?
+- paragraph:
+  - text: If you are unable to log in and need to reset your account password, go to
+  - link "https://login.bigcommerce.com/login":
+    - /url: https://login.bigcommerce.com/login
+  - text: and click
+  - strong: Forgot password
+  - text: . Enter the email address associated with the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: user account and click
+  - strong: Email reset link
+  - text: .
+- paragraph:
+  - text: Check your email spam folder or search your inbox for an email with the subject line “Instructions for resetting your password”. To help ensure you receive emails from BigCommerce, add
+  - strong: accounts@bigcommerce.com
+  - text: and
+  - strong: noreply@bigcommerce.com
+  - text: to your contacts or allowed senders list.
+- paragraph:
+  - strong: After changing my password, why am I still unable to log into the Account Dashboard?
+- paragraph:
+  - text: If you are still unable to log into the Account Dashboard, ensure that the email address is associated with the
+  - link "store owner":
+    - /url: /s/article/Store-Owner
+  - text: user account. Only the store owner can access the Account Dashboard.
+- paragraph:
+  - text: On the login screen, delete any autofilled credentials in the
+  - emphasis: Email
+  - text: and
+  - emphasis: Password
+  - text: fields and try manually entering them. The pre-filled details saved by your browser or password tool may be incorrect. You can also try logging into your account in an incognito or private browser window.
+- paragraph:
+  - strong: Where can I find my Support PIN in the Account Dashboard?
+- paragraph:
+  - text: The Support PIN is located within the
+  - strong: Help
+  - text: drop-down, at the top right of the Account Dashboard.
+- paragraph:
+  - img "Support PIN location in the BigCommerce Account Dashboard"
+- paragraph:
+  - strong: Does BigCommerce send Form 1099-K for US taxes?
+- paragraph: No, Form 1099-K is issued by your payments provider(s).
+- paragraph:
+  - strong: Why was I logged out of the Account Dashboard?
+- paragraph:
+  - text: The Account Dashboard automatically logs you out after
+  - strong: 15 minutes
+  - text: of inactivity. Note that the timeout window cannot be adjusted.
+- paragraph:
+  - strong: What does the "We're having trouble updating your VAT Information. Please try again later" error message mean?
+- paragraph:
+  - text: This error can occur when there is an issue validating the VAT number with the issuing country.
+  - link "Contact our support team":
+    - /url: https://support.bigcommerce.com/s/#contact
+  - text: or
+  - link "create a Billing Case":
+    - /url: /s/article/Creating-Viewing-Support-Cases
+  - text: . Provide your VAT Number and Issuing Country in your case details.
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "About BigCommerce Pricing":
+      - /url: /s/article/Pricing
+  - listitem:
+    - link "About Your BigCommerce Invoice":
+      - /url: /s/article/How-do-I-make-a-payment-on-my-account
+  - listitem:
+    - link "Changing Your Store's Plan":
+      - /url: /s/article/How-do-I-upgrade-my-stores-plan
+  - listitem:
+    - link "Store Owner User Role and Permissions":
+      - /url: /s/article/Store-Owner
+  - listitem:
+    - link "Users":
+      - /url: /s/article/Users
+  - listitem:
+    - link "User Roles and Permissions":
+      - /url: /s/article/User-Permissions
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: The Account Dashboard
+- iframe

@@ -1,0 +1,486 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Store Profile":
+                - /url: /s/article/Store-Profile-Settings
+              - list:
+                - listitem:
+                  - link "How It Works":
+                    - /url: "#how"
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Contact Information":
+                    - /url: "#settings"
+                - listitem:
+                  - link "Locale":
+                    - /url: "#locale"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Store Settings":
+                - /url: /s/article/Store-Settings
+            - listitem:
+              - link "\"Maintenance\" Mode":
+                - /url: /s/article/Maintenance-Mode
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Store Profile Settings" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "How it works":
+      - /url: "#how"
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Contact information":
+      - /url: "#contact-info"
+  - listitem:
+    - link "Locale":
+      - /url: "#locale"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: The store profile provides basic information about your business, which the store uses for various features. It can affect which payment gateways are available, how your contact information appears on order invoices, and the name of your store in your BigCommerce account. Due to the wide scope of how this information is used, it is important to fill out these fields accurately for your store.
+- link:
+  - /url: "#how"
+- heading "How It Works" [level=3]
+- paragraph:
+  - text: When you
+  - link "create a new store":
+    - /url: /s/article/Starting-a-Bigcommerce-Trial
+  - text: ", the basic contact information you provide, such as the store name and email address, is added to the store profile. You can manage store information globally from"
+  - link "Settings › Store profile":
+    - /url: https://login.bigcommerce.com/deep-links/settings/store-profile
+    - strong: Settings
+    - text: ›
+    - strong: Store profile
+  - text: ", or you can add unique information to"
+  - link "individual storefronts":
+    - /url: /s/article/Multi-Storefront
+  - text: from
+  - link "Channels › Channel Manager":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - strong: Channels
+    - text: ›
+    - strong: Channel Manager
+  - text: by clicking the storefront’s name and going to
+  - strong: Storefront settings
+  - text: ›
+  - strong: Contact information
+  - text: .
+- paragraph:
+  - text: If your store has
+  - strong: 100,00 or more products
+  - text: or you have not
+  - link "enabled multi-language":
+    - /url: /s/article/Localization-Settings
+  - text: ", you can also"
+  - link "manage locale information":
+    - /url: "#locale"
+  - text: for your store, such as the country where your store is located and the default language used for storefront content. These settings allow you to access region-specific payment methods and also automatically translate storefront content in
+  - link "supported languages":
+    - /url: "#faq"
+  - text: .
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- list:
+  - listitem:
+    - text: To view and manage store profile settings, the
+    - strong: Manage Settings
+    - link "permission":
+      - /url: /s/article/User-Permissions
+    - text: must be enabled on your user account.
+- link:
+  - /url: "#contact-info"
+- heading "Contact Information" [level=3]
+- paragraph:
+  - text: Go to
+  - link "Settings › Store profile":
+    - /url: https://login.bigcommerce.com/deep-links/settings/store-profile
+    - strong: Settings
+    - text: ›
+    - strong: Store profile
+  - text: to update or change your store's contact information. If you are using
+  - link "Multi-Storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: ", go to"
+  - link "Channels › Channel Manager":
+    - /url: http://login.bigcommerce.com/deep-links/channel-manager
+    - strong: Channels
+    - text: ›
+    - strong: Channel Manager
+  - text: ", click on the name of your storefront, and navigate to"
+  - strong: Storefront settings
+  - text: ›
+  - strong: Contact information
+  - text: .
+- paragraph:
+  - img "Contact Information in Store Profile Settings"
+- list:
+  - listitem:
+    - strong: Store display name
+    - text: — The name of your store as you want it to appear in all emails, invoices, order confirmation page, the header of your store, and on your BigCommerce account.
+    - list:
+      - listitem:
+        - text: A blank space either before or after the store name
+        - strong: cannot
+        - text: be used.
+  - listitem:
+    - strong: Address
+    - text: — The physical address of your store or place of business; appears on printed invoices and in the footer of most themes.
+    - list:
+      - listitem:
+        - text: This field does
+        - strong: not
+        - text: "support HTML, and the following special characters cannot be used:"
+        - strong: "< > { } ( ) \\ / '"
+  - listitem:
+    - strong: Address type
+    - text: — Specifies whether the above address is a home or commercial office, retail store, or warehouse.
+  - listitem:
+    - strong: Email
+    - text: — The email address used by all emails sent by the store, such as invoices and order status updates.
+    - list:
+      - listitem:
+        - text: This should be an email using the same domain as your store, not a third-party email service like Yahoo, Gmail, or AOL. See
+        - link "Customer Order Notifications":
+          - /url: /s/article/Customer-Order-Notifications
+        - text: for more details.
+  - listitem:
+    - strong: Phone
+    - text: — The phone number as you wish it to appear on your storefront.
+    - list:
+      - listitem: If left blank, no phone number will appear.
+- text: 
+- paragraph:
+  - strong: Pro Tip!
+  - text: Stores with a visible contact number get higher conversion rates; we recommend adding your store's phone number to your homepage and contact page.
+- link:
+  - /url: "#locale"
+- heading "Locale" [level=3]
+- paragraph: The Locale settings determine your store's country and customer-facing language.
+- text: 
+- paragraph:
+  - strong: Look different?
+  - text: Stores with multiple languages enabled, including those with
+  - link "Catalyst storefronts":
+    - /url: /s/article/Creating-a-Catalyst-Storefront
+  - text: ", configure their default country and storefront language under"
+  - link "Settings › Localization":
+    - /url: http://login.bigcommerce.com/deep-links/settings/localization
+    - strong: Settings › Localization
+  - text: . For more information, see
+  - link "Localization Settings":
+    - /url: /s/article/Localization-Settings
+  - text: .
+- paragraph:
+  - img "Locale in Store Profile Settings"
+- list:
+  - listitem:
+    - strong: Default country
+    - text: — The country your store is run from, which determines the payment methods that are available for use with your store.
+  - listitem:
+    - strong: Default language
+    - text: — The language used on the storefront; includes system messages (such as
+    - link "out of stock messages":
+      - /url: /s/article/Inventory-Tracking
+    - text: ),
+    - link "checkout payment error messages":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+    - text: ", and"
+    - link "transactional":
+      - /url: /s/article/Customizing-Emails
+    - text: and
+    - link "abandoned cart emails":
+      - /url: /s/article/Using-the-Abandoned-Cart-Saver
+    - text: .
+    - list:
+      - listitem:
+        - text: If you are using a theme based on
+        - strong: Cornerstone 5.7.0 or higher
+        - text: ", its language will update as well."
+  - listitem:
+    - strong: Enable automatic translation based on shopper's browser language
+    - text: — Language is selected according to shopper's browser settings.
+    - list:
+      - listitem:
+        - text: This overrides your selection in the
+        - strong: Default language
+        - text: dropdown.
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: Which countries support seamless translation in the storefront?
+- paragraph:
+  - text: If you create a new store based in one of the following countries, the store's content will be in your country's native language by default. All other countries and languages require theme
+  - link "lang file customization":
+    - /url: https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/stores
+  - text: .
+- table:
+  - rowgroup:
+    - row "Danish / Dansk (da) Dutch; Flemish / Nederlands (nl) English (en) French / Français (fr) French; Belgium / Français de Belgique (fr-BE) French; Canada / Français de Canada (fr-CA) German / Deutsch (de) Italian / Italiano (it) Japanese / 日本語 (ja) Polish (pl) Portuguese / Português (pt) Spanish; Castilian / Español/Castellano (es) Spanish Latin America / Español Latinoamérica (es-419) Spanish; Argentina / Español rioplatense (es-AR) Spanish; Chile / Español chileno (es-CL) Spanish; Colombia / Español colombiano (es-CO) Spanish Costa Rica (es-CR) Spanish; Mexico / Español mexicano (es-MX) Spanish; Peru / Español peruano (es-PE) Swedish / Svenska (sv)":
+      - cell "Danish / Dansk (da) Dutch; Flemish / Nederlands (nl) English (en) French / Français (fr) French; Belgium / Français de Belgique (fr-BE) French; Canada / Français de Canada (fr-CA) German / Deutsch (de) Italian / Italiano (it) Japanese / 日本語 (ja) Polish (pl)":
+        - list:
+          - listitem: Danish / Dansk (da)
+          - listitem: Dutch; Flemish / Nederlands (nl)
+          - listitem: English (en)
+          - listitem: French / Français (fr)
+          - listitem: French; Belgium / Français de Belgique (fr-BE)
+          - listitem: French; Canada / Français de Canada (fr-CA)
+          - listitem: German / Deutsch (de)
+          - listitem: Italian / Italiano (it)
+          - listitem: Japanese / 日本語 (ja)
+          - listitem: Polish (pl)
+      - cell "Portuguese / Português (pt) Spanish; Castilian / Español/Castellano (es) Spanish Latin America / Español Latinoamérica (es-419) Spanish; Argentina / Español rioplatense (es-AR) Spanish; Chile / Español chileno (es-CL) Spanish; Colombia / Español colombiano (es-CO) Spanish Costa Rica (es-CR) Spanish; Mexico / Español mexicano (es-MX) Spanish; Peru / Español peruano (es-PE) Swedish / Svenska (sv)":
+        - list:
+          - listitem: Portuguese / Português (pt)
+          - listitem: Spanish; Castilian / Español/Castellano (es)
+          - listitem: Spanish Latin America / Español Latinoamérica (es-419)
+          - listitem: Spanish; Argentina / Español rioplatense (es-AR)
+          - listitem: Spanish; Chile / Español chileno (es-CL)
+          - listitem: Spanish; Colombia / Español colombiano (es-CO)
+          - listitem: Spanish Costa Rica (es-CR)
+          - listitem: Spanish; Mexico / Español mexicano (es-MX)
+          - listitem: Spanish; Peru / Español peruano (es-PE)
+          - listitem: Swedish / Svenska (sv)
+- paragraph:
+  - strong: Why does certain content in my store remain untranslated after selecting a different default language?
+- paragraph: When a new store is created, sample content is generated that cannot be automatically refreshed if the store's default language is changed. These must be manually translated in order to match the changed default language.
+- paragraph: "Content that does not automatically change includes:"
+- list:
+  - listitem:
+    - link "Payment methods":
+      - /url: /s/article/Online-Payment-Methods
+  - listitem:
+    - link "Static shipping quotes":
+      - /url: /s/article/Shipping-Methods
+  - listitem:
+    - link "Out of delivery zone messages":
+      - /url: /s/article/How-do-I-change-the-Unable-to-Ship-to-this-Location-message-on-checkout
+  - listitem:
+    - link "Products":
+      - /url: /s/article/Adding-Products-v3
+  - listitem:
+    - link "Categories":
+      - /url: /s/article/Product-Categories
+  - listitem:
+    - link "Pre-order messages":
+      - /url: /s/article/Product-Availability
+  - listitem:
+    - link "Return reasons and actions":
+      - /url: /s/article/Processing-Returns
+  - listitem:
+    - link "Account signup fields":
+      - /url: /s/article/Editing-Form-Fields
+- paragraph:
+  - strong: Can I specify a dialect when selecting my store's default language?
+- paragraph: Yes, some languages have multiple dialects available. However, not all dialects are supported for seamless translation in the storefront.
+- paragraph:
+  - text: If there is no content available for a selected dialect, such as Canadian French (
+  - strong: fr-CA
+  - text: ), the parent language will be used instead, such as French (
+  - strong: fr
+  - text: ) in our example.
+- paragraph:
+  - strong: Are system notifications sent to my Store Profile email address?
+- paragraph:
+  - text: Unless otherwise specified, system notifications are sent to the email address in the
+  - emphasis: Administrator Email
+  - text: field, located in
+  - link "Settings › Miscellaneous":
+    - /url: https://login.bigcommerce.com/deep-links/settings/store/misc
+    - strong: Settings › Miscellaneous
+  - text: .
+- paragraph:
+  - strong: How do I verify my store's email address?
+- paragraph:
+  - text: When updating the email address in the
+  - emphasis: Email
+  - text: field, a verification email is sent to the new address from
+  - emphasis: accounts@bigcommerce.com
+  - text: . A notification will appear in the store profile until verification is complete or the 24 hour expiration window closes.
+- paragraph:
+  - img "The verification notice in Store Profile Settings"
+- paragraph:
+  - text: Click the
+  - strong: Verify email
+  - text: button in the email. If you are not currently logged into your control panel, you will be taken to the login page first. Once verified, the updated store email address will take effect.
+- paragraph:
+  - strong: Why am I receiving a "Failed to update store profile." error message?
+- paragraph:
+  - text: If you receive the "Failed to update store profile" error, check your
+  - emphasis: Store display name
+  - text: and remove spaces from the beginning or end, and any extra spaces between words.
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Store Profile in my store":
+    - /url: https://login.bigcommerce.com/deep-links/settings/store-profile
+    - text: Go to
+    - strong: Store Profile
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Customer Order Notifications":
+      - /url: /s/article/Customer-Order-Notifications
+  - listitem:
+    - link "Optimized One-Page Checkout":
+      - /url: /s/article/Optimized-Single-Page-Checkout
+  - listitem:
+    - link "Using the Abandoned Cart Saver":
+      - /url: /s/article/Using-the-Abandoned-Cart-Saver
+  - listitem:
+    - link "Cornerstone Theme Manual":
+      - /url: /s/article/Cornerstone-Theme-Manual
+  - listitem:
+    - link "Localization Settings":
+      - /url: /s/article/Localization-Settings
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Store Profile Settings
+- iframe

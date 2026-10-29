@@ -1,0 +1,446 @@
+- banner:
+  - link:
+    - /url: javascript:void(0);
+  - list:
+    - listitem: Help center
+  - link "Contact":
+    - /url: javascript:void(0);
+  - text: Preferred Language
+  - combobox "Preferred Language": EN
+  - status
+  - img "Avatar"
+  - link "Log in":
+    - /url: /s/login/
+  - textbox "Search"
+  - button "Submit"
+  - paragraph: Contact
+  - heading "System Status" [level=4]
+  - heading "All Systems Operational" [level=5]
+  - paragraph: Refreshed less than 1 minute ago
+  - heading "Get Help" [level=4]
+  - button "Ask the Community"
+  - paragraph: Get answers from experts
+  - heading "Live Chat" [level=5]
+  - paragraph: Your Support PIN is required
+  - iframe
+  - heading "Phone Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Email Support" [level=5]
+  - paragraph: Your Support PIN is required
+  - heading "Common Questions" [level=4]
+  - paragraph: no items
+  - link "Phone Support":
+    - /url: javascript:void(0);
+- link "Help Center":
+  - /url: javascript:void(0);
+- text: › Community
+- navigation:
+  - list:
+    - listitem:
+      - link "Getting Started":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Products":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Store Setup":
+        - /url: javascript:void(0);
+      - list:
+        - listitem:
+          - link "Store Settings":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Domain and Email":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Checkout and Payments":
+            - /url: javascript:void(0);
+          - list:
+            - listitem:
+              - link "Currency Setup":
+                - /url: /s/article/Managing-Currencies
+              - list:
+                - listitem:
+                  - link "Requirements":
+                    - /url: "#requirements"
+                - listitem:
+                  - link "Adding":
+                    - /url: "#add"
+                - listitem:
+                  - link "Default Currency":
+                    - /url: "#default"
+                - listitem:
+                  - link "FAQ":
+                    - /url: "#faq"
+            - listitem:
+              - link "Multicurrency":
+                - /url: /s/article/Using-Multiple-Currencies
+            - listitem:
+              - link "Recurring Billing":
+                - /url: /s/article/Setting-up-Recurring-Billing
+            - listitem:
+              - link "Test Orders":
+                - /url: /s/article/Testing-Shipping-Tax-and-Payment-Settings
+          - list:
+            - listitem:
+              - text: Checkout
+              - list:
+                - listitem:
+                  - link "Optimized One-Page Checkout":
+                    - /url: /s/article/Optimized-Single-Page-Checkout
+                - listitem:
+                  - link "Address Autocomplete":
+                    - /url: /s/article/Address-Autocomplete
+                - listitem:
+                  - link "Form Fields":
+                    - /url: /s/article/Editing-Form-Fields
+                - listitem:
+                  - link "Stored Credit Cards":
+                    - /url: /s/article/Enabling-Stored-Payment-Methods
+                - listitem:
+                  - link "Gift Certificates":
+                    - /url: /s/article/Gift-Certificates
+                - listitem:
+                  - link "Gift Wrapping":
+                    - /url: /s/article/Gift-Wrapping
+                - listitem:
+                  - link "Order-level Fees":
+                    - /url: /s/article/Handling-Fees
+                - listitem:
+                  - link "Persistent Cart":
+                    - /url: /s/article/Persistent-Cart
+                - listitem:
+                  - link "Storefront Checkout Configurations":
+                    - /url: /s/article/Storefront-Checkout-Configurations
+            - listitem:
+              - text: Payment Methods
+              - list:
+                - listitem:
+                  - link "Available Payment Gateways":
+                    - /url: /s/article/Available-Payment-Gateways
+                - listitem:
+                  - link "Offline Payments":
+                    - /url: /s/article/Offline-Payment-Methods
+            - listitem:
+              - text: Troubleshooting
+              - list:
+                - listitem:
+                  - link "Understanding Checkout Errors":
+                    - /url: /s/article/Checkout-Errors
+        - listitem:
+          - link "Shipping":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Tax":
+            - /url: javascript:void(0);
+        - listitem:
+          - link "Security":
+            - /url: javascript:void(0);
+    - listitem:
+      - link "B2B":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Design and Content":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Manage Store":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Channel Manager":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Marketing":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Data Solutions":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "Account":
+        - /url: javascript:void(0);
+    - listitem:
+      - link "TD Bank":
+        - /url: javascript:void(0);
+- heading "Managing Currencies" [level=1]
+- heading "What We'll Cover" [level=2]
+- list:
+  - listitem:
+    - link "Requirements":
+      - /url: "#requirements"
+  - listitem:
+    - link "Adding a currency":
+      - /url: "#add"
+  - listitem:
+    - link "Changing your default currency":
+      - /url: "#default"
+  - listitem:
+    - link "FAQ":
+      - /url: "#faq"
+- paragraph: Your store’s currency settings influence how your product prices appear on the storefront, which payment methods are available at checkout, and how shipping, tax, and discounts are calculated on orders. Displaying product prices and the checkout in your customers’ local currencies provides a more familiar shopping experience and can increase conversion when expanding your store to a new region.
+- paragraph:
+  - text: In this article, you’ll learn how to add currencies to your store, update your store’s default currency, and manage how prices appear on your storefront when a specific currency is selected. For more information on how multicurrency works in BigCommerce, see
+  - link "Using Multiple Currencies":
+    - /url: /s/article/Using-Multiple-Currencies
+  - text: .
+- link:
+  - /url: "#requirements"
+- heading "Requirements" [level=3]
+- paragraph:
+  - text: In order to manage the currency settings in your store, you must have the
+  - strong: Manage Settings
+  - link "permission":
+    - /url: /s/article/User-Permissions
+  - text: enabled on your user account. This is enabled by default for users with the
+  - strong: Store Administrator
+  - text: or
+  - link "Store Owner":
+    - /url: /s/article/Store-Owner
+    - strong: Store Owner
+  - text: role.
+- paragraph:
+  - text: To learn more about the requirements for offering multiple transactional currencies in your store, see
+  - link "Using Multiple Currencies":
+    - /url: /s/article/Using-Multiple-Currencies
+  - text: .
+- link:
+  - /url: "#add"
+- heading "Adding a Currency" [level=3]
+- list:
+  - listitem:
+    - link "Setup":
+      - /url: "#setup"
+  - listitem:
+    - link "Currency display configurations":
+      - /url: "#display-config"
+  - listitem:
+    - link "Transactions":
+      - /url: "#transactions"
+  - listitem:
+    - link "Additional display settings":
+      - /url: "#currency-display"
+- heading "Setup" [level=4]
+- paragraph: When you first create your store, your default currency is assigned based on your location. You can enable additional currencies to display prices and allow transactions where your frequent customers live.
+- paragraph: If a currency code is already set up, it will not be available in the list of currency codes when setting up a new currency. Existing currencies can be edited at any time. Use the following steps to add a currency.
+- text: 
+- paragraph:
+  - strong: "Localized Store Experiences:"
+  - text: Local currency tokens are available for display in all of our supported languages. For more information on the default language store setting, see
+  - link "Store Profile Settings":
+    - /url: /s/article/Store-Profile-Settings
+  - text: .
+- paragraph:
+  - strong: "1."
+  - text: Go to
+  - link "Settings › Currencies":
+    - /url: http://login.bigcommerce.com/deep-links/settings/currencies
+    - strong: Settings
+    - text: ›
+    - strong: Currencies
+  - text: ", then click"
+  - strong: Add new currency
+  - text: .
+- paragraph:
+  - img "Click the Add new currency button to enable a currency for the store"
+- paragraph:
+  - strong: "2."
+  - text: Select the currency code that corresponds to the currency you want to set up, then click
+  - strong: Next
+  - text: .
+- paragraph:
+  - strong: "3."
+  - text: Configure your currency’s
+  - link "display":
+    - /url: "#display-config"
+  - text: and
+  - link "transactional":
+    - /url: "#transactions"
+  - text: settings.
+- paragraph:
+  - strong: "4."
+  - strong: Save
+  - text: your changes.
+- heading "Currency Display Configurations" [level=4]
+- list:
+  - listitem:
+    - strong: Display Name
+    - text: — used to identify his currency on the storefront. For example, Canadian Dollar.
+  - listitem:
+    - strong: Default to [Currency Code] in these countries
+    - text: — visitors in these countries will have this currency selected by default. For example, Canada.
+- paragraph:
+  - img "Fields to specify how the currency is named on the storefront and which countries should default to this currency"
+- heading "Transactions" [level=4]
+- list:
+  - listitem:
+    - strong: Transacting currency
+    - text: — determines if the currency will be transactional or display-only. To learn more about the difference between display and transactional currencies, see our article on
+    - link "Using Multiple Currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+  - listitem:
+    - strong: Exchange rate
+    - text: — Currencies that are display-only have the option of having their exchange rate be static or dynamic. Transactional currencies use static conversion rates, while display-only currencies can use either static or dynamic conversion rates.
+    - list:
+      - listitem:
+        - strong: Static
+        - text: — Set the exchange rate to automatically convert your prices and shipping quotes for this currency. The rate is measured against your configured default currency. For example, 1 USD equals 1.3475 CAD. Click
+        - strong: Get current rate
+        - text: to retrieve the current exchange rate.
+      - listitem:
+        - strong: Dynamic
+        - text: — BigCommerce will automatically check and update the exchange rate for this currency every 4 hours.
+- paragraph:
+  - img "Specify whether this should be a display or a transactional currency"
+- heading "Additional Display Settings" [level=4]
+- paragraph: The currency display settings affect how your store’s prices will appear when the currency is selected. The example price gives you a preview of any changes made to these settings.
+- list:
+  - listitem:
+    - strong: Symbol
+    - text: — the symbol or word for the currency. For example, $.
+  - listitem:
+    - strong: Symbol placement
+    - text: — display the symbol to the left ($10) or the right (10$) of the price
+  - listitem:
+    - strong: Decimal token
+    - text: — the symbol used to indicate a decimal point
+  - listitem:
+    - strong: Thousand token
+    - text: — the symbol that denotes groups of thousands
+  - listitem:
+    - strong: Decimal places
+    - text: — the number of decimal places that display for prices in this currency. You can display up to four decimal places.
+- paragraph:
+  - img "Customize how your currency displays on the storefront"
+- link:
+  - /url: "#default"
+- heading "Changing Your Default Currency" [level=3]
+- paragraph:
+  - text: To change your store's default currency, you will first need to add the currency that you want to be the new default, if it’s not already present in your store. Once this is done, go to
+  - link "Settings › Currencies":
+    - /url: http://login.bigcommerce.com/deep-links/settings/currencies
+    - strong: Settings
+    - text: ›
+    - strong: Currencies
+  - text: ", and click"
+  - strong: Action
+  - text: ›
+  - strong: Set as default
+  - text: next to the desired currency. You can also do this while editing the currency.
+- paragraph:
+  - img "Set as default highlighted on the Managing Currencies page"
+- link:
+  - /url: "#faq"
+- heading "FAQ" [level=3]
+- paragraph:
+  - strong: How do I set up a storefront-specific default currency with multi-storefront?
+- paragraph:
+  - text: By default, a
+  - link "multi-storefront":
+    - /url: /s/article/Multi-Storefront
+  - text: store will use the default currency enabled in
+  - strong: Settings
+  - text: ›
+  - strong: Currencies
+  - text: . To assign a storefront-specific default currency, go to
+  - strong: Channel Manager
+  - text: and click a storefront name to access its settings page. In
+  - strong: Currencies
+  - text: ", click on the Action menu and select"
+  - strong: Set as Channel default currency
+  - text: .
+- paragraph:
+  - img "Go to the storefront's Currency settings and select Set as Channel default currency."
+- paragraph:
+  - strong: How do I assign currencies to my storefront channels?
+- paragraph:
+  - text: If you have
+  - link "multiple storefronts":
+    - /url: /s/article/Multi-Storefront
+  - text: ", you can select the currencies that appear for each storefront. Open the"
+  - strong: Channels
+  - text: menu next to a currency and select
+  - strong: Manage channels
+  - text: . Select the desired storefronts for the currency and click
+  - strong: Apply
+  - text: .
+- paragraph:
+  - img "The Manage Channels modal for a currency, with two storefronts selected"
+- heading "Do this in my store" [level=3]
+- paragraph:
+  - link "Go to Currencies in my store":
+    - /url: http://login.bigcommerce.com/deep-links/settings/currencies
+    - text: Go to
+    - strong: Currencies
+    - text: in my store
+- heading "Additional Resources" [level=3]
+- list:
+  - listitem:
+    - link "Using Multiple Currencies":
+      - /url: /s/article/Using-Multiple-Currencies
+  - listitem:
+    - link "Store Profile Settings":
+      - /url: /s/article/Store-Profile-Settings
+  - listitem:
+    - link "Multi-Storefront":
+      - /url: /s/article/Multi-Storefront
+  - listitem:
+    - link "List of currency symbols":
+      - /url: http://en.wikipedia.org/wiki/Currency_symbol
+    - text: (Wikipedia)
+  - listitem:
+    - link "Currency decimal points":
+      - /url: http://en.wikipedia.org/wiki/Decimal_mark#Hindu.E2.80.93Arabic_numeral_system
+    - text: (Wikipedia)
+- heading "Don't see what you're looking for? Ask the Community" [level=4]
+- button "Ask a Question"
+- heading "Looking for actionable advice to improve your site?" [level=2]
+- paragraph: Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+- link "Share your site":
+  - /url: https://support.bigcommerce.com/s/group/0F91300000029zxCAA/critique-my-site
+- contentinfo:
+  - list:
+    - listitem:
+      - link "Community Guide":
+        - /url: /s/article/BigCommerce-Community-Guide
+    - listitem:
+      - link "Community Ideas":
+        - /url: /s/ideas
+    - listitem:
+      - link "Community Code of Conduct":
+        - /url: /s/article/Community-Code-of-Conduct
+    - listitem:
+      - link "Community Terms of Use":
+        - /url: /s/article/Community-Terms-of-Use
+  - list:
+    - listitem:
+      - link "Become a Partner":
+        - /url: https://www.bigcommerce.com/partners/
+    - listitem:
+      - link "Become an Affiliate":
+        - /url: https://www.bigcommerce.com/partners/affiliates/
+    - listitem:
+      - link "Contact Support":
+        - /url: https://support.bigcommerce.com/contact
+  - link:
+    - /url: "#"
+  - paragraph: ©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+  - list:
+    - listitem:
+      - link "Twitter":
+        - /url: http://twitter.com/Bigcommerce
+    - listitem:
+      - link "Facebook":
+        - /url: http://www.facebook.com/Bigcommerce
+    - listitem:
+      - link "Linkedin":
+        - /url: http://www.linkedin.com/company/bigcommerce
+    - listitem:
+      - link "Youtube":
+        - /url: http://www.youtube.com/BigcommerceDotCom
+    - listitem:
+      - link "Pinterest":
+        - /url: http://pinterest.com/bigcommerce/
+    - listitem:
+      - link "Instagram":
+        - /url: https://www.instagram.com/bigcommerce/
+- status
+- text: Managing Currencies
+- iframe
