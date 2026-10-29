@@ -193,3 +193,14 @@ revisit	S02-V-1096	f	left gap S02-SA-G08 (why names it); new leads S02-SA-530, S
 revisit	S02-V-1097	f	left gap S02-SA-G14 (why names it); new leads S02-SA-530, S02-SA-532, S02-SA-533 name no notification to the merchant (placed or noted with the revisit of S02-V-1092); S02-SA-438 stays in S02-V-886 and S02-V-890, S02-SA-439 in S02-V-699 and S02-V-701; absence S02-SA-N02 stays cited in S02-V-886
 revisit	S02-V-731	f	left gap S02-SA-G12 (why names it); new leads S02-SA-536 and S02-SA-537 (the markets module's contacts section) name contact information, not the store's address: joined S02-V-720 (S02-VP-68, a market, a reading); S02-SA-421 and S02-SA-425 stay in S02-V-734 (locations)
 revisit	S02-V-869	f	left gap S02-SA-G11 (why names it); new leads S02-SA-530 and S02-SA-533 name the market's countries, which define it ((e), RD2's), not the store's country per market; S02-SA-532 names no country (placed or noted with the revisit of S02-V-1092); S02-SA-426 to S02-SA-430 stay noted, S02-SA-440 in S02-V-676 and S02-V-680
+revisit	S02-V-843	f	gap S02-BC-G14 replaced by S02-BC-G18; S02-BC-372 placed under S02-VP-57/58, S02-BC-382 to S02-BC-384 under S02-VP-61/62, S02-BC-373 noted, S02-BC-351 stays in S02-V-842
+revisit	S02-V-961	f	gap S02-BC-G14 replaced by S02-BC-G18 beside S02-V-842 (S02-BC-351); other leads placed or noted as for S02-V-843
+place	S02-BC-368	f	joined S02-V-832, S02-V-834 and S02-V-980
+place	S02-BC-369	f	joined S02-V-834, the seller, by its identifier's control
+place	S02-BC-370	f	joined S02-V-832 and S02-V-834
+place	S02-BC-371	f	joined S02-V-832 and S02-V-834; new row S02-V-1128 (S02-VP-58, the platform, a reading)
+place	S02-BC-375	f	joined S02-V-983 and S02-V-1106
+place	S02-BC-376	f	joined S02-V-983
+place	S02-BC-377	f	joined S02-V-983
+place	S02-BC-378	f	joined S02-V-984, by its scope (a reading)
+place	S02-WC-524	f	joined S02-V-893 and S02-V-896
