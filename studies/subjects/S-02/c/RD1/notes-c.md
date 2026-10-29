@@ -69,3 +69,12 @@ Problems with the method:
 2. "A platform that doesn't state a key counts as not giving it, whatever the kinds" and the 28 October guard on readings of what a page doesn't show pull apart where a gap is closed by such a reading (S02-VP-16). I followed the guard.
 3. A rewritten row's note is replaced, and the brief forbids reading notes, so earlier notes on rewritten rows may be lost. Each rewritten row carries a new note.
 4. Rows left as they were, because their states didn't change, still cite superseded gaps: S02-VP-07's point row (S02-WC-G03), S02-VP-16's point row (S02-BC-G15), and S02-VP-10's "the merchant's country" and 'the business type' (S02-WC-G07). Their letters and causes stand. Two rows whose states didn't change were rewritten: S02-VP-07 'all financial services deactivated', because it named S02-V-087 as a gap, and S02-VP-15 'every store', so that the point's one founder question names the two deciders that became founder decisions.
+
+By the coordinator's rulings on C-R3a's problems (29 October 2026):
+- S02-V-087 is keyed 'at any time', the same answer as BigCommerce's: nothing must hold before the change. The key 'Your settings have been saved.' and its row are dropped, so the unknown entry above for it no longer stands.
+- 'at any time' is written again. WooCommerce now gives it (observed, S02-WC-523), beside BigCommerce (stated, S02-BC-251). It stays vendor choice (Shopify and BigCommerce differ), and its founder item is unchanged.
+- These rows now cite the gap in force:
+  - S02-VP-07's point row: S02-WC-G09;
+  - S02-VP-16's point row: S02-BC-369, which answered S02-BC-G15;
+  - S02-VP-10's "the merchant's country" and 'the business type': S02-WC-G12.
+- G09's open marks and the S02-VP-16 override stand as written.
