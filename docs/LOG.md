@@ -84,3 +84,18 @@ Dated record of the work: what was decided, what was measured.
   (name, address, email, phone), default country, language and formats can be its own, and one payment provider can
   be set up with several merchant accounts assigned per channel; more storefronts need a paid plan. Automatic tax
   applies where the merchant targets a provider by country and subdivision, Basic Tax elsewhere.
+- WooCommerce: a test store on this machine (Docker; WordPress 7.1.4, since WooCommerce 11.2.1 asks for 7.0) reached
+  through a Cloudflare quick tunnel (Claude Code's auto mode refused to start the tunnel until the founder allowed its
+  command). WooCommerce's set-up filled "Where is your store located?" with Yemen, where WordPress.com places this
+  browser, but its list matched no entry for Yemen; choosing another country brings "It looks like you're located in
+  Yemen. Are you sure you want to create a store in ...? Setting up your store in the wrong country may lead to ...
+  Tax and duty obligations, Payment issues, Shipping issues", which does not stop the set-up. The set-up saves the
+  country (`woocommerce_default_country`, country and state in one option) and sets currency and units from it; its
+  free features follow the country (WooPayments for the US, the UK and the UAE, not for Saudi Arabia, Oman, Yemen or
+  Egypt). Settings > Payments has a "Business location" of its own, held per user (`woocommerce_payments_nox_profile`,
+  else the store's country), and WooPayments' `supported` follows it, not the store's country: true for the US, the
+  UK, the UAE and Japan, false for Saudi Arabia, Oman, Yemen and Egypt. Changing the store's Country / State with two
+  orders and two tax rates saved with only "Your settings have been saved."; currency, rates and orders stayed as they
+  were. WooPayments' own code reads its account country from the account data WooPayments' server returns
+  (`wcpay_account_data`, United States when there is none). WordPress.com answered the store owner's connection with
+  "Confirm you are human", so a WooPayments account and its verification wait for the founder.
