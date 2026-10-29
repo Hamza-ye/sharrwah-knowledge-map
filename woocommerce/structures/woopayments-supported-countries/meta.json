@@ -1,0 +1,15 @@
+{
+  "structure": "woocommerce/woopayments-supported-countries",
+  "platform": "woocommerce",
+  "surface": "code",
+  "source": {
+    "run_id": "20261029T023950Z-plugin-code",
+    "file": "woocommerce-payments.11.2.0.zip: woocommerce-payments/includes/class-wc-payments-utils.php, WC_Payments_Utils::supported_countries()",
+    "sha256_of_block": "2d0767e32a17dec97892f4f11797d5364cdf49ea1416257d0f362a49e0f685c3"
+  },
+  "shape": "PHP array Country_Code::<NAME> => __( '<name>', 'woocommerce-payments' )",
+  "counts": {
+    "countries": 39
+  },
+  "items": "items.jsonl: one country per line, in the order the code lists them; code from the Country_Code constants"
+}
