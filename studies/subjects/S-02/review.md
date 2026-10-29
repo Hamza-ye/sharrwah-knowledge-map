@@ -268,3 +268,37 @@ Read on the working tree at 4a08c8dd: `register.tsv` and `decisions.md` at 47847
 22. **The page says "the others work from the currency's rate", which takes in BigCommerce without evidence** (`decisions.md` D7, "What the platforms do"). The register's own list of per-currency rates names Salla, Zid and WooCommerce (S02-D7 (e): S02-SA-103, S02-ZD-020, S02-WC-027). BigCommerce's RD3 slice has no statement containing "exchange rate". Name the three, or cite BigCommerce. **optional**
 
 **Re-check counts:** of the 19 findings, 16 resolved, 3 partly resolved (3, 16 and 19) and 0 not resolved. Three new findings: 20 and 21 `must fix`, 22 `optional`.
+
+## Last check
+
+Read on the working tree: `register.tsv` and `decisions.md` at fe86177f, `yemen-row.tsv` at 2d5cabab, `scenario-walk.tsv` at 9157bcf3, and `designs.tsv` at 99d8e60b with its captured sources. Notes files and `note` columns were left out. `register_items.py`: 142 items, 0 unanswered, 0 answered twice. `check_register.py`: 803 citations, 0 problems. Each of the 17 quotes in `designs.tsv` was compared, whitespace-normalised, with its captured file at its locator, and all 17 were found there. The context the readings cite beyond their quotes also holds:
+- Unicode TR35 line 1089: the `rg` key takes a subdivision, "(Usage of anything other than zzzz would be unusual, though.)";
+- line 989: currency codes, with regions and periods held in supplemental data;
+- Stripe's tax registration: `active_from` and `expires_at`;
+- Java line 34: "Currencies are identified by their ISO 4217 currency codes";
+- TigerBeetle line 32: ledgers "only stored ... as a numeric identifier".
+
+- **16. resolved.** D7's `question` now says "Three parts, each answered on its own", and the page gives three answer lines: the two amounts (a redesign), where the rate is held (one module), and which markets carry their own currency (a setting).
+- **19. resolved.** E4 now says "The store's own currency may change, as the seller's setting; records made before a change keep their amounts in the currency of their day ... and are not converted". The walk's E4 first-market row (now line 52) rests its `a setting` on that.
+- **20. resolved.** D9 now asks "should a currency be able to name a currency area within its code, so that prices, stored amounts and reports tell two areas sharing one code apart by currency, not only by market?". Its option (b) is "What S02-D7, S02-E1, S02-D4 and S02-D5 already give", and the page's need says the two rates are already D7's.
+- **21. resolved.** The designs were read and captured (11 sources, 17 rows). D8 and D9 now weigh them, each by its kind, and say "Where the sources cut against (c)". Both recommend (b) now, with room kept for (c). D8's uses follow their quotes:
+  - Stripe "keys a dated tax registration on a state";
+  - area codes "are added, deprecated, aliased and sometimes reused" (Unicode);
+  - levels "differ between countries" (OpenStreetMap: "only correspond approximately");
+  - the postal area is "optional" (Google);
+  - Unicode's currency default on a subdivision is "unusual";
+  - "not difficult to refactor a regular property into a temporal one" (Fowler).
+
+  D9's uses of Unicode, Java, Stripe and TigerBeetle also follow their quotes. The one exception is finding 23.
+- **22. resolved.** The page now says "Salla, Zid and WooCommerce work from the currency's rate".
+
+### New findings
+
+23. **Two uses of the designs say a little more than their sources** (`register.tsv` S02-D9 `recommendation`; `decisions.md` D9; `scenario-walk.tsv` line 15).
+    - D9 lists "ISO 4217's lists, one code per currency" (the page: "the ISO 4217 lists") among the sources that identify a currency by its code alone. The SIX quotes at lines 86 and 122 don't say that. `designs.tsv` line 12 holds it only as a reading, and notes that the standard's own clause wasn't fetched (iso.org refused). D9 should mark it as a reading or leave it out; its point stands on Unicode, Java and Stripe.
+    - The walk's line 15 says "none of the designs it weighs does" key payment services or currency on an area. The register itself notes the exception: "Unicode keys a currency default on one, and calls that unusual".
+
+    **optional**
+24. **D8's area is still described as read from the address, where the recommendation now holds it apart** (`register.tsv` S02-D8 `question`; `yemen-row.tsv` line 44). The question still says the area is "(read from the business record's address)", and the Yemen row's (c) needs "The seller's area read from the business record's address". The recommendation now holds it "as a dated field of its own ... not only read from the postal address, whose area is optional and at the postal level (Google's PostalAddress)". The Yemen row's `yes` still holds, since the first market's addresses name a governorate, district and city (line 20: YA-195, YA-139). Only the wording should be aligned. **optional**
+
+**Last-check counts:** findings 16, 19, 20, 21 and 22 are all resolved. Two new findings, 23 and 24, both `optional`; no new `must fix`. All 19 earlier findings and 20 to 22 are now resolved.
