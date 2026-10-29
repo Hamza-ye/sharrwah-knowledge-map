@@ -1,0 +1,4 @@
+{"intent":"The capture inbox: BigCommerce mail of the last hour","do":"goto","url":"https://mail.google.com/mail/u/0/#search/bigcommerce+newer_than%3A1h","readyTimeout":20000,"settleMs":4000}
+{"intent":"Open the newest BigCommerce verification code mail","do":"text","text":"Your BigCommerce verification code","readyTimeout":15000,"settleMs":3000}
+{"intent":"Open the newest BigCommerce verification code mail (its row)","do":"click","css":"tr.zA","readyTimeout":15000,"settleMs":3000}
+{"do":"close"}

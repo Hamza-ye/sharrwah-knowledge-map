@@ -1,0 +1,155 @@
+- link "Skip to content":
+  - /url: ""
+- link "Using Gmail with screen readers":
+  - /url: ""
+- heading [level=1]:
+  - banner:
+    - button "Main menu" [expanded]:
+      - img
+    - link "Gmail":
+      - /url: "#inbox"
+    - search:
+      - heading "Search" [level=2]
+      - table:
+        - rowgroup:
+          - row "bigcommerce newer_than:1h":
+            - cell "bigcommerce newer_than:1h":
+              - textbox "Search mail": bigcommerce newer_than:1h
+      - button "Advanced search options":
+        - img
+      - button "Clear search":
+        - img
+      - button "Search mail" [disabled]:
+        - img
+    - button "Support":
+      - img
+    - button "Settings":
+      - img
+    - button "Try Gemini"
+    - link "Upgrade"
+    - button "Google apps"
+    - 'button "Google Account: Hamza (7amza.it@gmail.com)"'
+- alert
+- navigation:
+  - button "Compose"
+  - heading "Labels" [level=2]
+  - link "Inbox 17 unread":
+    - /url: https://mail.google.com/mail/u/0/#inbox
+    - text: Inbox
+  - text: "17"
+  - link "Starred":
+    - /url: https://mail.google.com/mail/u/0/#starred
+  - link "Snoozed":
+    - /url: https://mail.google.com/mail/u/0/#snoozed
+  - link "Sent":
+    - /url: https://mail.google.com/mail/u/0/#sent
+  - link "Drafts 8 unread":
+    - /url: https://mail.google.com/mail/u/0/#drafts
+    - text: Drafts
+  - text: "8"
+  - link "Spam 43 unread":
+    - /url: https://mail.google.com/mail/u/0/#spam
+    - text: Spam
+  - text: "43"
+  - link "Purchases has menu":
+    - /url: https://mail.google.com/mail/u/0/#category/purchases
+    - text: Purchases
+  - link "Social has menu":
+    - /url: https://mail.google.com/mail/u/0/#category/social
+    - text: Social
+  - link "Updates 46 unread has menu":
+    - /url: https://mail.google.com/mail/u/0/#category/updates
+    - text: Updates
+  - text: "46"
+  - link "Forums has menu":
+    - /url: https://mail.google.com/mail/u/0/#category/forums
+    - text: Forums
+  - link "Promotions 6 unread has menu":
+    - /url: https://mail.google.com/mail/u/0/#category/promotions
+    - text: Promotions
+  - text: "6"
+  - button "More labels": More
+  - heading "Labels"
+  - button "Create new label"
+  - heading "Labels" [level=2]
+  - link "[Imap]/Trash has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/%5BImap%5D/Trash
+    - text: "[Imap]/Trash"
+  - link "Books has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Books
+    - text: Books
+  - link "Facebook has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Facebook
+    - text: Facebook
+  - link "Google invoice has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Google+invoice
+    - text: Google invoice
+  - link "Junk has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Junk
+    - text: Junk
+  - link "Moaad 105 unread has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Moaad
+    - text: Moaad
+  - text: "105"
+  - link "nmcp 15 unread has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/nmcp
+    - text: nmcp
+  - text: "15"
+  - link "Server invoices has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Server+invoices
+    - text: Server invoices
+  - link "Yemen International Bank has menu":
+    - /url: https://mail.google.com/mail/u/0/#label/Yemen+International+Bank
+    - text: Yemen International Bank
+  - button "More labels": More
+- main:
+  - toolbar "search refinement":
+    - button "From":
+      - text: From
+      - img
+    - button "Any time":
+      - text: Any time
+      - img
+    - button "Has attachment"
+    - button "To":
+      - text: To
+      - img
+    - button "Is unread"
+    - button "Advanced search"
+  - button "Select":
+    - checkbox
+  - button "Refresh"
+  - button "More email options"
+  - button "Showing most relevant"
+  - button "Show more messages": 1–1 of 1
+  - button "Previous results" [disabled]
+  - button "Next results" [disabled]
+  - button "Input tools on/off (Ctrl-Shift-K)"
+  - button "Select input tool"
+  - heading "Conversations" [level=2]
+  - grid:
+    - rowgroup:
+      - row "unread, BigCommerce Accounts, Your BigCommerce verification code, 4:20 AM, BigCommerce Logo. Your BigCommerce verification code. ‌ ‌ ‌ ‌ ‌ ‌. Hello 7amza.it+bc-na@gmail.com,. To keep your account secure, we use two-step ....":
+        - gridcell
+        - gridcell "unread, BigCommerce Accounts, Your BigCommerce verification code, 4:20 AM, BigCommerce Logo. Your BigCommerce verification code. ‌ ‌ ‌ ‌ ‌ ‌. Hello 7amza.it+bc-na@gmail.com,. To keep your account secure, we use two-step ....":
+          - checkbox "unread, BigCommerce Accounts, Your BigCommerce verification code, 4:20 AM, BigCommerce Logo. Your BigCommerce verification code. ‌ ‌ ‌ ‌ ‌ ‌. Hello 7amza.it+bc-na@gmail.com,. To keep your account secure, we use two-step ...."
+        - gridcell "Not starred":
+          - button "Not starred"
+        - gridcell "Important according to Google magic., Sent only to me":
+          - switch "Important according to Google magic., Sent only to me" [checked]
+        - gridcell "BigCommerce Accounts"
+        - gridcell "Inbox Your BigCommerce verification code - BigCommerce Logo. Your BigCommerce verification code. ‌ ‌ ‌ ‌ ‌ ‌. Hello 7amza.it+bc-na@gmail.com,. To keep your account secure, we use two-step ...":
+          - link "Inbox Your BigCommerce verification code - BigCommerce Logo. Your BigCommerce verification code. ‌ ‌ ‌ ‌ ‌ ‌. Hello 7amza.it+bc-na@gmail.com,. To keep your account secure, we use two-step ..."
+        - gridcell
+        - gridcell "Thu, Oct 29, 2026, 4:20 AM": 4:20 AM
+        - gridcell
+- complementary "Side panel":
+  - tablist:
+    - tab "Calendar"
+    - tab "Keep"
+    - tab "Tasks"
+    - tab "Contacts"
+    - separator [disabled]
+    - tab "Get Add-ons"
+- button "Hide side panel":
+  - img
