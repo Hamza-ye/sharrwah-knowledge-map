@@ -1,0 +1,693 @@
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:25 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  access-control-allow-origin: https://app.makeswift.com
+  Age: 3217
+  Cache-Control: public, max-age=0, must-revalidate
+  content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+  etag: W/"w7bkocl30vysxu"
+  link: <https://www.commerce.com/en/terms/>; rel="alternate"; hreflang="en", <https://www.commerce.com/terms/>; rel="alternate"; hreflang="en-US", <https://www.commerce.com/da-DK/terms/>; rel="alternate"; hreflang="da-DK", <https://www.commerce.com/de-AT/terms/>; rel="alternate"; hreflang="de-AT", <https://www.commerce.com/de-DE/terms/>; rel="alternate"; hreflang="de-DE", <https://www.commerce.com/en-AU/terms/>; rel="alternate"; hreflang="en-AU", <https://www.commerce.com/en-GB/terms/>; rel="alternate"; hreflang="en-GB", <https://www.commerce.com/en-SG/terms/>; rel="alternate"; hreflang="en-SG", <https://www.commerce.com/es-ES/terms/>; rel="alternate"; hreflang="es-ES", <https://www.commerce.com/es-MX/terms/>; rel="alternate"; hreflang="es-MX", <https://www.commerce.com/fr-FR/terms/>; rel="alternate"; hreflang="fr-FR", <https://www.commerce.com/it-IT/terms/>; rel="alternate"; hreflang="it-IT", <https://www.commerce.com/nl-NL/terms/>; rel="alternate"; hreflang="nl-NL", <https://www.commerce.com/no-NO/terms/>; rel="alternate"; hreflang="no-NO", <https://www.commerce.com/sv-SE/terms/>; rel="alternate"; hreflang="sv-SE", <https://www.commerce.com/terms/>; rel="alternate"; hreflang="x-default"
+  Server: cloudflare
+  Set-Cookie: NEXT_LOCALE=en-US; Path=/; SameSite=lax
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%228c2e422a-8c8b-4d32-b4f4-a499b9865bea%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Atrue%2C%22consent_preferences_performance%22%3Atrue%2C%22consent_preferences_targeting%22%3Atrue%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0002%22%2C%22C0003%22%2C%22C0004%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:25 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: originUrl=www.commerce.com; Path=/; Expires=Fri, 29 Oct 2027 02:46:25 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%228c2e422a-8c8b-4d32-b4f4-a499b9865bea%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0002%22%2C%22C0003%22%2C%22C0004%22%5D%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:25 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: ajs_anonymous_id=8c2e422a-8c8b-4d32-b4f4-a499b9865bea; Path=/; Expires=Fri, 29 Oct 2027 02:46:25 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: segmentAnonId=8c2e422a-8c8b-4d32-b4f4-a499b9865bea; Path=/; Expires=Fri, 29 Oct 2027 02:46:25 GMT; Domain=commerce.com; SameSite=lax
+  set-cookie: __cf_bm=uPBZhcKFrpunwIshBFmS1e.XgzVGgMrV.c97gy048h8-1793241983.2669954-1.0.1.1-wkyWwk1Y_TNkREACrbk648oj7mW.NmxPf.yHXUMHTvPHrKFuFEZXKDoWYC.Dx6DnWoUNYNcW9LiBm.CofjI5W0zud7Fky9jIbUXiyTY_gzm71MqFyyEnBHivuX.Zd0X9; HttpOnly; SameSite=None; Secure; Path=/; Domain=commerce.com; Expires=Thu, 29 Oct 2026 03:16:25 GMT
+  strict-transport-security: max-age=63072000
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  vary: accept-encoding
+  x-matched-path: /en-US/terms
+  x-nextjs-prerender: 1
+  x-nextjs-stale-time: 300
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::gcqmb-1793241983384-a992d8ab08f6
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed97b6c10f9f2-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:46:25 URL:https://www.commerce.com/terms/ [1624451] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 301 Moved Permanently
+  Date: Thu, 29 Oct 2026 02:46:27 GMT
+  Content-Type: text/plain
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: s-maxage=600, stale-while-revalidate
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  location: https://www.commerce.com/terms/
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-vercel-id: bom1::nwn67-1793241987189-1ecacd43d320
+  cf-cache-status: DYNAMIC
+  BC-Ray: 1
+  set-cookie: __cf_bm=c6QH4ghQywt.wCRkZMWrmuxLTr8KDESISbBXJySGFMI-1793241987.1247654-1.0.1.1-KSj2kI9d_s9IzZFYExiTywT1RBOFOw5O3Jz3WXweWl_9AY_RKOcMvXBP2Axel5Y9KSU0xhKQZ8.qKe8u1jo.JCHFpbS5B3Jv.O7Toe7XdDvMY9xsvN8eP5Q8X237S3Bx; HttpOnly; SameSite=None; Secure; Path=/; Domain=bigcommerce.com; Expires=Thu, 29 Oct 2026 03:16:27 GMT
+  CF-RAY: a51ed993bbb6f9d7-MCT
+  alt-svc: h3=":443"; ma=86400
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:29 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  access-control-allow-origin: https://app.makeswift.com
+  Age: 3221
+  Cache-Control: public, max-age=0, must-revalidate
+  content-security-policy: frame-ancestors 'self' https://app.makeswift.com
+  etag: W/"w7bkocl30vysxu"
+  link: <https://www.commerce.com/en/terms/>; rel="alternate"; hreflang="en", <https://www.commerce.com/terms/>; rel="alternate"; hreflang="en-US", <https://www.commerce.com/da-DK/terms/>; rel="alternate"; hreflang="da-DK", <https://www.commerce.com/de-AT/terms/>; rel="alternate"; hreflang="de-AT", <https://www.commerce.com/de-DE/terms/>; rel="alternate"; hreflang="de-DE", <https://www.commerce.com/en-AU/terms/>; rel="alternate"; hreflang="en-AU", <https://www.commerce.com/en-GB/terms/>; rel="alternate"; hreflang="en-GB", <https://www.commerce.com/en-SG/terms/>; rel="alternate"; hreflang="en-SG", <https://www.commerce.com/es-ES/terms/>; rel="alternate"; hreflang="es-ES", <https://www.commerce.com/es-MX/terms/>; rel="alternate"; hreflang="es-MX", <https://www.commerce.com/fr-FR/terms/>; rel="alternate"; hreflang="fr-FR", <https://www.commerce.com/it-IT/terms/>; rel="alternate"; hreflang="it-IT", <https://www.commerce.com/nl-NL/terms/>; rel="alternate"; hreflang="nl-NL", <https://www.commerce.com/no-NO/terms/>; rel="alternate"; hreflang="no-NO", <https://www.commerce.com/sv-SE/terms/>; rel="alternate"; hreflang="sv-SE", <https://www.commerce.com/terms/>; rel="alternate"; hreflang="x-default"
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%228c2e422a-8c8b-4d32-b4f4-a499b9865bea%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_strictly_necessary%22%3Atrue%2C%22consent_preferences_functional%22%3Atrue%2C%22consent_preferences_performance%22%3Atrue%2C%22consent_preferences_targeting%22%3Atrue%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0003%22%2C%22C0002%22%2C%22C0004%22%5D%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:28 GMT; Domain=commerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%228c2e422a-8c8b-4d32-b4f4-a499b9865bea%22%2C%22traits%22%3A%7B%22consent_preferences_consent_model%22%3A%22opt-out%22%2C%22consent_preferences_display_banner%22%3Atrue%2C%22consent_preferences_display_preferences_center%22%3Afalse%2C%22consent_preferences_user_has_preferences%22%3Afalse%2C%22consent_preferences_consent_active_groups%22%3A%5B%22C0001%22%2C%22C0003%22%2C%22C0002%22%2C%22C0004%22%5D%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:28 GMT; Domain=commerce.com; SameSite=lax
+  strict-transport-security: max-age=63072000
+  vary: rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch
+  vary: accept-encoding
+  x-matched-path: /en-US/terms
+  x-nextjs-prerender: 1
+  x-nextjs-stale-time: 300
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::575nr-1793241988921-f1c5edcae485
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed99e78baf9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:46:29 URL:https://www.commerce.com/terms/ [1624451] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:31 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 2189
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:30 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: originUrl=www.bigcommerce.com; Path=/; Expires=Fri, 29 Oct 2027 02:46:30 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:30 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: ajs_anonymous_id=7fbe5a8d-3ea8-4235-acbb-7428873bba8f; Path=/; Expires=Fri, 29 Oct 2027 02:46:30 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: segmentAnonId=7fbe5a8d-3ea8-4235-acbb-7428873bba8f; Path=/; Expires=Fri, 29 Oct 2027 02:46:30 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/[[...path]]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::ltbgq-1793241990543-6eb11dceb802
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9a89c92f9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:46:31 URL:https://www.bigcommerce.com/pricing/ [1561647] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:32 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 1680
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:32 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:32 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/[[...path]]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::qdkct-1793241992273-64cd562a8f53
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9b36d9ff9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:46:32 URL:https://www.bigcommerce.com/payments/ [986343] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:34 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 1167
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:33 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:33 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/[[...path]]
+  x-powered-by: Next.js
+  x-vercel-cache: HIT
+  x-vercel-id: bom1::iad1::ltbgq-1793241993862-e7838ba8f45e
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9bd6eeff9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+2026-10-29 05:46:34 URL:https://www.bigcommerce.com/solutions/international/ [851795] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/index.html.tmp" [1]
+  HTTP/1.1 404 Not Found
+  Date: Thu, 29 Oct 2026 02:46:35 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 22198
+  Cache-Control: public, max-age=0, must-revalidate
+  BC-Ray: 1
+  content-security-policy: frame-ancestors 'self' app.makeswift.com
+  document-policy: js-profiling
+  vary: accept-encoding
+  referrer-policy: no-referrer-when-downgrade
+  Server: cloudflare
+  Set-Cookie: c_consent=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%2C%22geo%22%3A%7B%22country%22%3A%22Oman%22%2C%22region%22%3A%22Masqa%C5%A3%22%7D%2C%22gpc%22%3Afalse%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:35 GMT; Domain=bigcommerce.com; SameSite=lax
+  Set-Cookie: c_user=%7B%22anonymousId%22%3A%227fbe5a8d-3ea8-4235-acbb-7428873bba8f%22%2C%22traits%22%3A%7B%7D%7D; Path=/; Expires=Fri, 29 Oct 2027 02:46:35 GMT; Domain=bigcommerce.com; SameSite=lax
+  strict-transport-security: max-age=2592000; includeSubDomains
+  x-matched-path: /en-US/[[...path]]
+  x-powered-by: Next.js
+  x-vercel-cache: STALE
+  x-vercel-id: bom1::iad1::pndzp-1793241995397-020f57126ce8
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9c6ef28f9d1-MCT
+  alt-svc: h3=":443"; ma=86400
+https://www.bigcommerce.com/product/multi-storefront/:
+2026-10-29 05:46:35 ERROR 404: Not Found.
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:38 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::b4zld-1793241997653-82454620bd9d
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/settings/store-locale/get-settings-locale.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/settings/store-locale/llms.txt>; rel="describedby", </_astro/inline.ekAnMbKsXWQQSGYV.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=YkOioBKk4okI5malH%2BKXNDLqQp%2F2Am6aB4fT0cbWf7Q66l9tsYcCfsTFHHXy1GPiuU2NMN4SyWbR4zMEJEbRXULmIQw%2BsthVWC2JjynTkOK%2FvhTaZ4bTqiAcE%2Bw%2BtdYFbjsln8pglIfcpA%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=rND5YdL_WhpWA._VYsnzDdvEd0NFPd60ZhMgaYhL1II-1793241997.7018952-1.0.1.1-VVO7MaaAv7fOBw7OZa1dfRQLQZ9wYtEVQr54iDR1q99DpjKQCHJvX3yVy4dxfMFLX81jzY2K41zKVHGT4yQ27xej9NxKxTS5Nx79KwNc9paYfQiwTYTydVsikwHAlj.H; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:38 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9d42e66f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:39 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-locale/get-settings-locale [943084] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-settings-locale.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:41 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::bfjcn-1793242000474-998003cd5664
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/settings/store-profile/llms.txt>; rel="describedby", </_astro/inline.EUV0oPknfbWNPka_.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=4Q1JNFEp6M7OYtMII2v%2FgZtzwg3Oxu4RlTtQpZjk2433Jc%2BmCFv0OV9OJ4RT9pmSkN%2FPvGPp8lzyZHR6lv2nQG7Eh%2Fz%2FSc6odlR1OCNHTrtSrZDzOUCjm8YvqUPVLCbagQ1vKO6GaHYq%2FA%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=0Dt9TjzAptm7l3ujXcLJRE4k8E2J_10SACc0T1i27_0-1793242000.5011935-1.0.1.1-ClS7mhsq9GJfUQLmI8pVlYuj_5wijZZ.I_OWv23o0nndPhawaARc7tyb972KcnR7nZYahu7Gm4a9CMgdJXE7JwObD0DevJbC9tmCOvu6uJZJdmmbO9MW9tPOJnBUFt5n; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:41 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9e6acd3f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:42 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile [932150] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-settings-store-profile.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:44 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::gcqmb-1793242003352-ce9181aa9012
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/settings/units-of-measurement/get-settings-measurement-units.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/settings/units-of-measurement/llms.txt>; rel="describedby", </_astro/inline.27kZJ0_tNgokj98l.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=c7OqpuGUGpRdC4Q2czGas0hc%2FCkCwj6ALTIgbpW4MTfKBdZo25FPyljwEREk%2F16ENEMAVql8CL7sw%2BuoChU0ZfPPTwtmc4YO2Ttvq1eIBwT0Zoo9RbY5DigChW8A6TKEJe7mcXEuwJPaCg%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=_e_EFXe213kL5CoFJV1J6tDdRh7liqGkyIengdyJFas-1793242003.3893948-1.0.1.1-X_Ulo2TEyKSzJIwsDF4r94jnCuSqFGno9bo0N9b_K926QZRWX0NS6l7HDNYMnxjC4E_9TFHykICSmj04ome3QjxRvswCiIBVWYAtV2FszqGbwbPQQ5dEPXDoLKtKIR1w; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:44 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51ed9f8bb08f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:45 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/units-of-measurement/get-settings-measurement-units [964592] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-settings-measurement-units.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:46 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::l62hb-1793242006323-f13f320fdae5
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/store-information/v2/get-store-information.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/store-information/v2/llms.txt>; rel="describedby", </_astro/inline.AtiD5D6_-97xC_Vi.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=TW5WrnJF%2F5Mmu4tgeRKUyPWrKwuHPEKLrLCjm8192Ibbi4b%2B34FJRDsptoCk4bYYim306tDV6iHzb19sfAq5lLpG2T81Id1Cx%2FIb4r4FV11ouvzz%2B%2BKue5%2FwVZWBRnrfMj5QHVyls6IdFw%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=8SM33tm3Oxp9mSerLiLzThoZn27QVwntMAd40zqapU4-1793242006.350087-1.0.1.1-lQyoqzHDOkK0ugtvUuDcTD.YBVmMCP.Zdz4STexXm5oVBu6GMVAgBljBRuXZlt1eVdXskCU.ccXR.6lnj_EfaxOCbJQ6J4lkWrOZRSKdVpgMOUMW64eaePUZGvdnkdIr; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:46 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda0b3a9ff9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:48 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/store-information/v2/get-store-information [1036759] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-store-information.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:49 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::s5xgj-1793242009191-55ab274b7756
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/tax/tax-settings/get-tax-settings.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/tax/tax-settings/llms.txt>; rel="describedby", </_astro/inline.X7wlKdRA-eQTYYd3.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=wjTEOhraF91%2FPt83MGJIL4lueiPw2FOyPGWUYUHGkEsyswhSB41I%2BKt4LF1Z2DwJ0kQKcYpCyuXSaAYq4nLr7Bp565lahMYtZRgEzRHLI5axKIC58RRbX91L%2FS7HfCbkAf%2BKBXOV3%2Be7Vg%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=qa32edUeshIB0NMKjnbL0tlSAJhKKL1sgeI1V5wKakM-1793242009.2146015-1.0.1.1-f57s9IkqCREuGeFJRrA_qIxESpBBsJnxMvG4_.Ui0f0m4VZpU4TULm265eL7pBQL7I_.v874L8kPGXI7DmCqUm_YzK.k2TPfzpFHWs69Jt7.6utUW2tCsn.cslHUYw_w; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:49 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda1d2937f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:51 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-settings/get-tax-settings [937949] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-tax-settings.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:52 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::pndzp-1793242012269-84b0041b5fe1
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/tax/tax-zones/get-tax-zones.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/tax/tax-zones/llms.txt>; rel="describedby", </_astro/inline.8Zhdq0AFlivUX4S0.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=z2%2BEs4Xfdrtv6BWi56NmvS9i14pbbUN%2FmP69at2vOGYCm7lBxci8q40bSAHfUbDKt7e9ewWDauFt%2B5QoZ29KPpRcXbRmwTtsxt3w0J24OSdxxyg62SQLZwKg4zRYt5nEcuIQxvOJ5gJlYQ%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=LhQFh3tkUas8SVF07co2KUwK.ik78vW4oyLspcAO8oc-1793242012.3007011-1.0.1.1-tNZRWpO1hpeljZucPVB1OI.px5O8lay5Dc7QrTARYwcFXjTWyObPOx0A4XHK71a6ZgZn6qkW.HjsDKj_TxjGek0wZnos9fTg0we1OverRU_u44wxTO.22Yey2E2xuyeL; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:52 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda306a81f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:54 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-zones/get-tax-zones [944055] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-tax-zones.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:55 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::575nr-1793242015079-ce1803b796cf
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/tax/tax-rates/get-tax-rates.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/tax/tax-rates/llms.txt>; rel="describedby", </_astro/inline.P9s95vaKxu2d4ozl.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=b2NfmuE8Qg0wx3VWenhcpjvdQ2MlFHZEZlveE2EdpBqFIxnUi8cm2lHwmFvK2sdSortx9MLuvLjYGIiKio4SSwnoQ6o99JJv1mFJBQa4dfyICAoj4p8tVHTeU9WTdCAxnMHVfnJiUsqUeQ%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=ws.mpyrTNkpLf2DSq.lwU8aZ1bA9ugo.tXz37BzwcO8-1793242015.1079915-1.0.1.1-YuKsn9xhvO6rFEXtKfhfNWfln3WUA_gEV4koDKhbrwNEJP3.t1CItB3_mmSKSJJrctbVCwG.dz3pjeYrFkPxaIDS8qHn2TkuX9LxpseyGaLsmihP0CY3C6_KmypUfr2R; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:55 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda41f88ef9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:57 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-rates/get-tax-rates [938984] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-tax-rates.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:46:58 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::575nr-1793242018114-df75c6950a21
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/tax/tax-properties/get-tax-properties.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/tax/tax-properties/llms.txt>; rel="describedby", </_astro/inline.27kZJ0_tNgokj98l.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ZKdiIvbi0Cwd7d8k7fhCZIXbHoeVjbgUQF6XctXEYzPRvVHjzZGi8J%2FFQfrcFHeigSe9uAHxgqvpdEEAyecQ9%2FN%2BoGGZHIuX%2Fk6kiZoT3FhfE9SdMZCsdAF0j4cUDoP4Tb2KreNeloHKNg%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=imZ.1YQGWzHP2XpNuXdbG5HbIz7jLmNABufI5ofZ7Gg-1793242018.1308215-1.0.1.1-n3G8uc2Cp0br62xksB.H5JTnWXnMjr7kPQKQamRDF5fSD2Y2.9KImYNfYklMV8_Wkk_4LZPM9q_nyiRLJs0xBTq_nyC4r62WrpIB1JeP2g7tfuorkHq03hSCPstTj1N1; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:16:58 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda54ea1ef9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:46:59 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/tax/tax-properties/get-tax-properties [958197] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-tax-properties.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:01 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::gcqmb-1793242020908-d43c81ceaf3f
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/channels/create-channel.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/channels/llms.txt>; rel="describedby", </_astro/inline.FIgFJwFBIjCtt0DC.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </_astro/inline.f_t4Dy-xMsO2h3p6.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=%2B4wjKv4tVXYgaRupVjwc8BUyOFk7hIayNWeUOevZ9l76fEM6aVedeQl6NTMpIZPISncvyDuXAEzLPcIAW2A3GD4%2F2W5dweQ5taafHP9xC8YNKVrZzz%2BYMQAylBn3C0XrGiKQJKp8iwx3GA%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=UJ9IEa8vhwiS2gxk7Xh1KfT3R6cu9Z5po6uIwLkcKRA-1793242020.9519005-1.0.1.1-MUGCU0NvqGe7lyEAf3q5mkRimMdHqtlKFIotYCxLUgmlpKtSRYx_DE3FUTrpDigKorkTFF.zbxclVaSXVsxBxjt_HubrHmjitePWZ.QXPCwRoyJs4vQ9O8ck.AV_rJr4; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:01 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda665811f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:03 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels/create-channel [1019493] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/create-channel.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:04 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::575nr-1793242024355-932a501598f4
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/channels/get-channels.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/channels/llms.txt>; rel="describedby", </_astro/inline.XZPfbzACRwhpWPPw.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </_astro/inline.f_t4Dy-xMsO2h3p6.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=8Om5sy%2FhgSRGQq42yWB%2FSnKAyKFO6Y%2FU7GyyBQwVxVlhodgLHH3q%2BRNyjgKQ9rlSwDzLYLvFulySQrjFnbsgcNtt0mKwGIsxJ6514%2BFlxitQhA3i%2FRFoYu%2FJmCQsHmhCJI1I3k3cTN8frw%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=.4JokoI7qvGeCMnHAwvEzEXF3G..fyxPyDVEorHAEbA-1793242024.369161-1.0.1.1-W01pc5kCqskcUZBkWAwt21X3v0BDXDz3WAWpdgkfLJS2KuIxRtESw61A2n.QxoPEYtIrc0B5vQyELW7onZ1lrBNYeDM0h2avtMpFE5KGZnEByAMbuMUiueMCbJNCe_Th; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:04 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda7be8cbf9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:06 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/channels/get-channels [1046832] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-channels.tmp" [1]
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:07 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::pndzp-1793242027302-516d64471583
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/management/sites/create-site.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/management/sites/llms.txt>; rel="describedby", </_astro/inline.KMFOQ6rvTGYA7E4Z.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </_astro/inline.f_t4Dy-xMsO2h3p6.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=w02nwOyPXV08%2BZgx6TAhk5AUxycc60WOfqh4Tj%2Fzv6u%2Fw7dtFvf4YbjZ5RarAS9hfOOvFeZDfEjOzCuloXqZcXEx6eE61b8Y6Et%2BbblfQXnSdKcwwDMDldSvpVYrRYyIN3W7cROQpralhw%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=fCOjHqXBgWDRaabbfwhIxJaGrWGPi5xVhHM3hQckfb0-1793242027.3278794-1.0.1.1-0rIIIiJUOnv0bH8a_WZ0qXKDR3tWh9j7jkYcUt3Xly1NyvguxXOjYCz5oGhR9QYRbqLw5gsX2BRq0bv.351T9oxvAIidgaeQLOZ1OSxzHaa2H6RxAfx1jw_nJdn80ADO; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:07 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51eda8e5ae0f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:09 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/sites/create-site [1044359] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/create-site.tmp" [1]
+  HTTP/1.1 308 Permanent Redirect
+  Date: Thu, 29 Oct 2026 02:47:10 GMT
+  Content-Length: 0
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, s-maxage=300, stale-while-revalidate=86400
+  cf-placement: remote-ORD
+  content-security-policy: default-src 'none'; frame-ancestors 'none'
+  location: /developer/api-reference/rest/admin/payments/methods/v3/get-payment-methods
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Nz6fArO6VPPLVsLAVrEE6EmwdaRMvo0TdbuiaEJxJJdVsOcmXD6eWBwfRZtCHd2tXGE3fUS7QJ7Uj7mKWmNGMwBTsbLbSC%2BWQ7i00JS8AO4bMOcUZkGEuPepOQt6szT%2FkAhXOyg%2F5hMs1g%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=P.WtzDuB7Mr8xoRPSVbXrLqpKrViObtcL0gmqA9ydkg-1793242030.3005888-1.0.1.1-sBMOcWucL3Omi3DJ99Z.yyLBfNXVFbXwVLTdDJIwvtXGpE.zRsBHONfCHgFSruqFvES_6yKX9aaV_9albwEzBMCzKiYtgCxTyvm1xEa9f_PXRFgINEL_mNHZlTJhgswX; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:10 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  x-content-type-options: nosniff
+  x-vercel-cache: MISS
+  x-vercel-id: bom1::dgq9f-1793242030274-76b6e9f282ab
+  cf-cache-status: DYNAMIC
+  BC-Ray: 1
+  CF-RAY: a51edaa0ed55f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:12 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::58t7s-1793242031875-ebd77ae0aab9
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/api-reference/rest/admin/payments/methods/v3/get-payment-methods.md>; rel="alternate"; type="text/markdown", </developer/api-reference/rest/admin/payments/methods/v3/llms.txt>; rel="describedby", </_astro/inline.7ejcv8bfyb-FbuHQ.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=GkDjnlX9%2Fo0Y3UkT7afjM9tNjN93s%2F0Y4urhKoXF%2FrNLvT121jcXXy9%2BnEg1q2QMXx0QHXPiGkDQJI1t%2FvbTMjIGe6KE8wtB1wzOPWyPvo2QKxBck2BvQd9TekzuOF5r%2F32C2w%2FbI25VNg%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=kl5_EHN_uYb.urmZBOtlw6X8N1_UMHVj_CdKdCqXte8-1793242031.9071264-1.0.1.1-66qTW6kOIkBATChrm5SPfojudu6osAt8ShQzxcADslL0AQCQIDFd7WbFBH4_VhdheG49lfA2Q3cOX6xqz8gqjSnIp4s1oMOx2aVcD_TZqsfUy8VZzfvQXsp4EHYXSDgk; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:12 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51edaaaeea0f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:13 URL:https://docs.bigcommerce.com/developer/api-reference/rest/admin/payments/methods/v3/get-payment-methods [1014877] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/get-payment-methods.tmp" [1]
+  HTTP/1.1 307 Temporary Redirect
+  Date: Thu, 29 Oct 2026 02:47:15 GMT
+  Content-Length: 0
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, s-maxage=300, stale-while-revalidate=86400
+  cf-placement: remote-ORD
+  content-security-policy: default-src 'none'; frame-ancestors 'none'
+  location: /developer/docs/integrations/channels/introduction
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=UAF%2FOzT51c8h%2FFmlSwyvI5GDtnO4T3xCr%2Ba50zo4kBKnzSASrAfg98cppc4mpd3FUwkhli0bJWjTTk3sbhMRbY5xOGt93rnPkUoC3l0MJMZZiL9Ieb25z0uyvHIAIxK%2BhG1xXUtpzqSAYA%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=k9OpvwrsgsjfBknZ8PJfs5mNW7ijbPYVZHXSJYLbs2o-1793242034.903722-1.0.1.1-f8vF1etRweSIffEMid9SC.uV.qP0cNZb5YHL9kU4XNxkZlQfRRQXWA5nyrZSlYwxdzLyRbPQmI_iUZxWJq16pr8En_USLv7RFVjoRMzpPfwzCn9bzHTlHwHvdIzJ80WL; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:15 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  x-content-type-options: nosniff
+  x-vercel-cache: MISS
+  x-vercel-id: bom1::nwn67-1793242034882-916903f42a0d
+  cf-cache-status: DYNAMIC
+  BC-Ray: 1
+  CF-RAY: a51edabdb855f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:17 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::mf7gd-1793242036471-5df9cf49e9bb
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/docs/integrations/channels/introduction.md>; rel="alternate"; type="text/markdown", </developer/docs/integrations/channels/llms.txt>; rel="describedby", </_astro/inline.TtZ2cnIHx_DaPu6q.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </_astro/inline.f_t4Dy-xMsO2h3p6.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=L1I%2BVd65TEsOYcISMHgn6tmY4NqMUWx4M5VKvPdV7iFdlfxKJHzD4ePKqx3g0v4PxxLa9%2BwvClsEdahG8RHFydtduxfotVsvSBPBJlooVFhqRHwrZNS66pphP6Lo1xtjVP0s1VONPke74A%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=3Xy.hTOtvYdDxTwZxhJdQ8JNYQqdezxFblICk7YUpvI-1793242036.5080655-1.0.1.1-E9QNxDIUlCEaghGykExTVHwAFchhlxA9ccwDrv.9WtK93HlMeGUE1__JUniEhw4H5PlsIp1Qq59PW3YQUJphP1CbBp.aNc2jgfiMJ8wSxnVDSM8dYy.vqvU4kdQpQxdh; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:17 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  cf-cache-status: DYNAMIC
+  Content-Encoding: gzip
+  CF-RAY: a51edac7a882f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:18 URL:https://docs.bigcommerce.com/developer/docs/integrations/channels/introduction [266748] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/channels.tmp" [1]
+  HTTP/1.1 307 Temporary Redirect
+  Date: Thu, 29 Oct 2026 02:47:20 GMT
+  Content-Length: 0
+  Connection: keep-alive
+  Cache-Control: public, max-age=0, s-maxage=300, stale-while-revalidate=86400
+  cf-placement: remote-ORD
+  content-security-policy: default-src 'none'; frame-ancestors 'none'
+  location: /developer/docs/integrations/channels/guide/building-channel-apps
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=Mg1FI%2FQEfEB%2Bz770z3rseGKLdzVYwVmin5WSkboyFs2YGIweqnW5rl4vednrljz94siVUFRdXN5gU8UHZmB1xCTXBqjriZ272mWMhB2%2BlnPJQzAt8vIr%2FBiTdotKIyr7vnM2kRvd7yOjDA%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=JSw5z6wJgbjFYF36kozwWcDK8BDuDevE5V8Pr8J4D6k-1793242039.3002057-1.0.1.1-XekA4G5jEuL8PUc1GcJI7EiGhYaLIx6ifQQ0EcNLMjVt2qvS90XRxFR_RW_qfFvxDlBSfyUUl4hEUkA2zlFhh2lQ6_rHumAQ1ka9M.xmcFktkQ_6hJZ1z73uluAbYSYV; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:20 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  x-content-type-options: nosniff
+  x-vercel-cache: MISS
+  x-vercel-id: bom1::mf7gd-1793242039277-d4766d7012de
+  cf-cache-status: DYNAMIC
+  BC-Ray: 1
+  CF-RAY: a51edad93f23f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+  HTTP/1.1 200 OK
+  Date: Thu, 29 Oct 2026 02:47:21 GMT
+  Content-Type: text/html; charset=utf-8
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Age: 6967
+  Cache-Control: public, max-age=0, must-revalidate, s-maxage=300
+  cf-cache-status: DYNAMIC
+  cf-placement: remote-ORD
+  x-vercel-id: bom1::b4zld-1793242041149-c21226a69ba3
+  BC-Ray: 1
+  content-security-policy: default-src 'self'; script-src 'self' 'strict-dynamic' 'unsafe-eval' 'sha256-lHT4DAx2WlKOUoz8Pnsv4hBB6WQQWpSMnN7i1SYcCTQ=' 'sha256-68wJ/luxfaKYUwjSQz+IHY+2YCM4J0fE+XLBiRsLHQg=' 'sha256-yPw5wPQkejJJ8owozmkqrhQ/E33R+fuN0gmcjwalrjM=' 'sha256-BhOH4JYGbqMwyJUjQ+YtFP1woqWD5SmDlYGLY7ohj+Q=' 'sha256-2SSrtxZne8ueracWiLty5w/ARsGBMkP3nOEViOT2/E8=' 'sha256-6I6GONbRuC68NHvseg/qBpObhQuWIBSmA9Ed8yvia1I=' 'sha256-oTD7RVNcsu+KEX0dMyirP5hXAZXHS4g2hJjOjwnUlFQ=' 'sha256-lNYK35yC2927xgoIEWWVmPEk3d9fXC86Qu4WuabJ/zM=' 'sha256-XCQ59CKMt/spo5RFfpvO7Ffa/CpW32ptN0w8oyMF9zU=' 'sha256-+FExMi1VGsWY7iAukMo1x4xrBibi1AtHE629+io6ykI=' 'sha256-xIb/Pa7FUshAu4ihwjchYcQpyCI8eS8kt40GpOAYCz8=' 'sha256-OUQRxSLiAdojnatL1JBUyjRPihkavzuRhf4ZQIJ/XvU=' 'sha256-BEYJ6q5nVBkf3NAODH4PJcZM8txLQc+qUE1Qduzi6/o=' 'sha256-1BvDVWLr3QCC20uHhUDi27eDFVJpk1uMQJGIWKUks2I=' 'sha256-gb6dNSVZKu5ARVoUjTW1x8JnToWeIcP2K0lB6J49wPA=' 'sha256-LfHuA3jcK+pohDVdahiCYv0T6EAfCGshcETBCyjz6QA=' 'sha256-xmq6Do90QW431/ikiN9/DrK/FLtyoVvHl/BelyMm7uI=' 'sha256-YhtBJMvq3uw/TCvBwMALaGn+2eGYiWvN54ohqAJpntI=' 'sha256-Y8t0ntteBwH+PqGKUyjWW3CAk+BNJKSoQc0xZ68FjhM=' 'sha256-H7wv8QNwNKVnzjrw9qBetlt5e06skkB52q18BJXmpg4=' 'sha256-Uq8FyP9qOF+gDNl9a/4GbEYyMqAXh8Wno07kUl3jZGw=' 'sha256-GUmTrYX6bAU/x57BRE6Omf8NQ2puNAsm4BpQrgwmHuY='; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' data: blob: https: wss:; media-src 'self' data: blob: https:; frame-src 'self' data: https:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self' https:; frame-ancestors 'self' https://*.buildwithfern.com
+  content-security-policy-report-only: style-src 'self' https:
+  last-modified: Wed, 28 Oct 2026 23:09:21 GMT
+  link: </developer/docs/integrations/channels/guide/building-channel-apps.md>; rel="alternate"; type="text/markdown", </developer/docs/integrations/channels/guide/llms.txt>; rel="describedby", </_astro/inline.eAjT-rsuCy9X8xoo.css>; rel="preload"; as="style", </_astro/inline.MP8NhjIJEBMcHU6O.css>; rel="preload"; as="style", </_astro/inline.SWIXErqwrC2-MfGs.css>; rel="preload"; as="style", </_astro/inline.GDhUfoHa4vumqL_D.css>; rel="preload"; as="style", </_astro/inline.f_t4Dy-xMsO2h3p6.css>; rel="preload"; as="style", </.well-known/api-catalog>; rel="api-catalog"
+  nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+  permissions-policy: camera=(self), microphone=(self), geolocation=()
+  referrer-policy: strict-origin-when-cross-origin
+  report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=bn3YsvxRgAL%2B7eYkLXGpP1XYn%2FJ2pnWrF7%2BtB8i08QsILpGqYw2r4iAH%2FWMNFAYWErFih8DS1XDncGxoQ5ddmkTUa6w%2BUkOTR9kTESdoeoYKoiahy9gxD13BxI%2BAfK3kfTEE1X%2BRqjyyPg%3D%3D"}]}
+  Server: cloudflare
+  Set-Cookie: __cf_bm=Rm0OWTlAKn7TxFWg9eHU26ArNfrPQFVlOWdKnX5JYgc-1793242041.1779666-1.0.1.1-CZswkpRqw0ahuVIqU.HsqFxARvcV0tZzpMHajsOfT5toHDqNatSRwbFMzGgSqyA8i41a5zjIgNcfR4Ks1exuWnF7GpHW2Beylfdh4XRw.cno2eN.za9Q_zO.quZP0nGe; HttpOnly; SameSite=None; Secure; Path=/; Domain=ferndocs.com; Expires=Thu, 29 Oct 2026 03:17:21 GMT
+  strict-transport-security: max-age=2592000; includeSubDomains
+  vary: Accept
+  vary: accept-encoding
+  x-content-type-options: nosniff
+  x-fern-renderer: static
+  x-vercel-cache: MISS
+  Content-Encoding: gzip
+  CF-RAY: a51edae4e913f9e7-MCT
+  alt-svc: h3=":443"; ma=86400
+Cookie coming from docs.bigcommerce.com attempted to set domain to ferndocs.com
+2026-10-29 05:47:22 URL:https://docs.bigcommerce.com/developer/docs/integrations/channels/guide/building-channel-apps [342773] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/tmp/guide.tmp" [1]
+FINISHED --2026-10-29 05:47:22--
+Total wall clock time: 1m 0s
+Downloaded: 19 files, 1.8M in 16s (118 KB/s)
