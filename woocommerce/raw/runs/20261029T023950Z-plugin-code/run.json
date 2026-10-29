@@ -1,0 +1,7 @@
+{
+  "run_id": "20261029T023950Z-plugin-code", "platform": "woocommerce", "label": "plugin-code", "kind": "fetch", "started": "2026-10-29T02:39:51Z", "ended": "2026-10-29T02:40:50Z",
+  "tool": "GNU Wget 1.21.4 built on linux-gnu.", "user_agent": "Mozilla/5.0 (X11; Linux x86_64) other-product-class-capture/0.1 (read-only evidence capture)", "wait_seconds": 1,
+  "url_count": 6, "urls_sha256": "ef0d1ba99ab354c5fb6b441b227d0a1c1ada6977578e514cbd75b4b9393dc64a",
+  "wget_exit": 0, "network": {"via": "downloads.wordpress.org answered no /cdn-cgi/trace"},
+  "script": {"path": "capture/fetch.sh", "sha256": "c45c04d5d6ec3f5e95153aa6491bbb948819b76b2badbbbd3d95c933fe7b4479"}
+}

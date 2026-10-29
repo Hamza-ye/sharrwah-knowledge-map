@@ -1,0 +1,93 @@
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:39:52 GMT
+  Content-Type: application/octet-stream
+  Content-Length: 18060641
+  Connection: close
+  Content-Disposition: attachment; filename=woocommerce.11.2.1.zip
+  Last-Modified: Fri, 09 Oct 2026 15:47:55 GMT
+  Access-Control-Allow-Methods: GET, HEAD
+  Access-Control-Allow-Origin: *
+  Expires: Thu, 29 Oct 2026 03:39:52 GMT
+  Cache-Control: max-age=3600
+  Alt-Svc: clear
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+  X-nc: HIT dca 4
+  Accept-Ranges: bytes
+2026-10-29 05:40:28 URL:https://downloads.wordpress.org/plugin/woocommerce.11.2.1.zip [18060641/18060641] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/woocommerce.11.2.1.zip.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:40:30 GMT
+  Content-Type: application/octet-stream
+  Content-Length: 6372219
+  Connection: close
+  Content-Disposition: attachment; filename=woocommerce-payments.11.2.0.zip
+  Last-Modified: Thu, 08 Oct 2026 13:50:25 GMT
+  Access-Control-Allow-Methods: GET, HEAD
+  Access-Control-Allow-Origin: *
+  Expires: Thu, 29 Oct 2026 03:40:30 GMT
+  Cache-Control: max-age=3600
+  Alt-Svc: clear
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+  X-nc: HIT dca 6
+  Accept-Ranges: bytes
+2026-10-29 05:40:39 URL:https://downloads.wordpress.org/plugin/woocommerce-payments.11.2.0.zip [6372219/6372219] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/woocommerce-payments.11.2.0.zip.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:40:41 GMT
+  Content-Type: application/octet-stream
+  Content-Length: 2504509
+  Connection: close
+  Content-Disposition: attachment; filename=woocommerce-services.3.7.3.zip
+  Last-Modified: Wed, 14 Oct 2026 15:53:56 GMT
+  Access-Control-Allow-Methods: GET, HEAD
+  Access-Control-Allow-Origin: *
+  Expires: Thu, 29 Oct 2026 03:40:41 GMT
+  Cache-Control: max-age=3600
+  Alt-Svc: clear
+  X-Remembering: Eric Binnion <https://friendsofericbinnion.wordpress.com/>
+  X-nc: EXPIRED dca 4
+  Accept-Ranges: bytes
+2026-10-29 05:40:45 URL:https://downloads.wordpress.org/plugin/woocommerce-services.3.7.3.zip [2504509/2504509] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/woocommerce-services.3.7.3.zip.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:40:47 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding
+  Access-Control-Allow-Origin: *
+  X-Frame-Options: SAMEORIGIN
+  Content-Encoding: gzip
+  Alt-Svc: clear
+  X-nc: EXPIRED dca 2
+2026-10-29 05:40:47 URL:https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request%5Bslug%5D=woocommerce [107879] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/index.html?action=plugin_information&request[slug]=woocommerce.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:40:48 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding
+  Access-Control-Allow-Origin: *
+  X-Frame-Options: SAMEORIGIN
+  Content-Encoding: gzip
+  Alt-Svc: clear
+  X-nc: MISS dca 2
+2026-10-29 05:40:48 URL:https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request%5Bslug%5D=woocommerce-payments [83510] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/index.html?action=plugin_information&request[slug]=woocommerce-payments.tmp" [1]
+  HTTP/1.1 200 OK
+  Server: nginx
+  Date: Thu, 29 Oct 2026 02:40:50 GMT
+  Content-Type: application/json
+  Transfer-Encoding: chunked
+  Connection: keep-alive
+  Vary: Accept-Encoding
+  Access-Control-Allow-Origin: *
+  X-Frame-Options: SAMEORIGIN
+  Content-Encoding: gzip
+  Alt-Svc: clear
+  X-nc: MISS dca 2
+2026-10-29 05:40:50 URL:https://api.wordpress.org/plugins/info/1.2/?action=plugin_information&request%5Bslug%5D=woocommerce-services [79604] -> "/home/hamza/projects/sharrwah-review-records/other-product-class/woocommerce/raw/runs/20261029T023950Z-plugin-code/tmp/index.html?action=plugin_information&request[slug]=woocommerce-services.tmp" [1]
+FINISHED --2026-10-29 05:40:50--
+Total wall clock time: 59s
+Downloaded: 6 files, 26M in 48s (546 KB/s)
