@@ -9,3 +9,5 @@ C-RD1-2	RD1	S02-VP-11; S02-VP-12; S02-VP-13; S02-VP-14; S02-VP-15; S02-VP-16; S0
 C-R	RD2; RD3	S02-VP-57; S02-VP-63; S02-VP-61; S02-VP-62; S02-VP-86; S02-VP-69; S02-VP-70; S02-VP-26; S02-VP-27; S02-VP-28; S02-VP-29	11	done
 C-R2a	RD2; RD3	S02-VP-26; S02-VP-27; S02-VP-28; S02-VP-29; S02-VP-55; S02-VP-65; S02-VP-67; S02-VP-68	8	done
 C-R2b	RD3	S02-VP-71; S02-VP-72; S02-VP-75; S02-VP-77; S02-VP-80; S02-VP-85; S02-VP-86; S02-VP-87; S02-VP-89	9	done
+C-R3a	RD1	phase C again on the keys the BigCommerce and WooCommerce round touched: S02-VP-01, 05, 06, 07, 10, 11, 12, 15, 16, 18	running
+C-R3b	RD3	phase C again on the keys the BigCommerce and WooCommerce round touched: S02-VP-41, 42, 57, 58, 61, 62, 63, 64, 77, 91	running
