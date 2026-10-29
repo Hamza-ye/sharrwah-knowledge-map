@@ -4,9 +4,9 @@
 
 ## The register's shape
 
-The register has 41 rows:
+The register has 42 rows (41 at the first draft; the second pass added S02-D8):
 - 11 drivers (S02-R1 to S02-R11);
-- 7 founder decisions: RD1 has 3 (D1 to D3), RD2 has 2 (D4, D5) and RD3 has 2 (D6, D7), all within the brief's four per root decision;
+- 8 founder decisions: RD1 has 4 (D1 to D3, and D8 from a product gap), RD2 has 2 (D4, D5) and RD3 has 2 (D6, D7), all within the brief's four per root decision;
 - 8 moved rows (S02-M1 to S02-M8), one for each of S-03, S-04, S-05, S-07, S-08, S-09, S-10 and S-11;
 - 10 follows-by-rule rows (S02-F1 to S02-F10). RD2 has no key bound per market and none kept open, so it has two such rows;
 - 5 engineering constraints (S02-E1 to S02-E5).
@@ -48,7 +48,7 @@ Read per row: D1 has 6, D2 7, D3 10, D4 16, D5 8, D6 34 and D7 4; M1 has 9, M2 1
 6. **Follows-by-rule rows list their keys in `vp_id`,** as `vp_id|key`. The brief names no column for them, and `method/register_items.py` counts any name in `answers_items` that isn't a founder item as an error.
 7. **S02-E5 is a reading.** It says which market carries S-01's holding arrangement: the seller's own country, through the business entity that takes the payment.
    - The frame asks S-02 to say this, but no founder item covers it.
-   - So it is an engineering constraint the founder may veto, not a decision.
+   - So it was drafted as an engineering constraint. Since the second pass (the coordinator's ruling), its status is "for the founder: a reading of their decision of 26 October, to confirm", and it names the other reading.
 8. **No market in a recommendation.** Recommendations name platforms, never a market or a market's facts. Market names appear only as phase C's keys, in `answers_items` and in the follows rows' `vp_id`, as data.
 9. **Kinds and causes.** The kinds in `alternatives` come from `variants.tsv`, for the variants each option cites. The causes come from `c/<RD>/answers.tsv`.
 
@@ -64,4 +64,85 @@ Read per row: D1 has 6, D2 7, D3 10, D4 16, D5 8, D6 34 and D7 4; M1 has 9, M2 1
    My first draft of D2 read both as staff acting under a contract; I corrected it, and D2 now cites them apart.
 5. **D6's size.** D6 answers 34 items, which ask one question of 18 settings. Apart from currency (D7), I found no setting among them whose later change costs more in kind once the interface exists.
 6. **Inconsistent labels.** Phase C labelled some moved items with their subject and not others, so call 3 is mine. The review should check it.
-7. **Length.** `decisions.md` is about 2,900 words, within six pages.
+7. **Length.** `decisions.md` is about 3,000 words over 205 lines, within six pages, after the second pass.
+
+## Second pass, 29 October
+
+The second pass applied the coordinator's rulings on the draft, the product gaps from the Yemen row, and four fixes from the scenario walk. I first checked that `register.tsv`, `decisions.md` and this file were unchanged since 3275770b; they were.
+
+### The rulings
+
+1. **Payouts.** Sharrwah sets no payout currency: each provider pays out on its own terms (S02-R4).
+   - S02-D7 and S02-E4, and `decisions.md`'s D7 and E4, now give the store's own currency to gift cards and the store's own reports only.
+   - S02-E2 names which payment providers a seller may connect (S-04's), each paying out on its own terms. S02-M2 says Sharrwah holds no payout term.
+   - S02-BC-224 is now labelled as a provider's own term where it is cited (S02-D7, S02-M2). I dropped it from S02-E4, which it no longer supports.
+   - S02-SH-183 and S02-SH-035 are cited in S02-D7 as providers' own terms.
+2. **S02-E5.** The reading stays, and it now names the other reading: the markets a store sells into, as Shopify assigns entities to markets (S02-SH-280). Its status is "for the founder: a reading of their decision of 26 October, to confirm". `decisions.md` says the same.
+
+### The product gaps, checked against the references
+
+**Where I read them:**
+- `yemen-row.tsv`, the `product_gap` column: gap 1 at line 14, gap 2 at line 13, gap 3 at line 35.
+- In `notes-yemen-row.md`, I read only lines 23 to 26 and 77 to 80. The file has no section headed "The product gaps". The gaps are a bold paragraph under "How to read the row" (lines 23 to 26), and its third problem (lines 77 to 80) says where the references would show them.
+
+**Gaps 1 and 2: a seller's area within a country, and a move between such areas.**
+- **For payment services, the coordinator's finding holds.** Payment rules key below the country only on places with country codes of their own: S02-SH-027, S02-SH-583, S02-SH-642, S02-WC-008, S02-WC-009, S02-WC-010, S02-WC-042, S02-WC-051 and S02-WC-052. The same holds for two features (S02-SH-026, S02-SH-484).
+- **For a seller's rules in general, it does not.** Some rules key on areas that have no country code of their own:
+  - Shopify keys the tax on its own fee on the seller's province (S02-SH-513, S02-VP-15).
+  - Shopify keys the store's own taxes on its province or state (S02-SH-515, S02-SH-931, S02-VP-16), and WooCommerce Tax on the store address's state-level location (S02-WC-118).
+  - Shopify keys a feature's eligibility on whether the seller's fulfilment locations sit in one province, or in one part of a country and not both (S02-SH-485, S02-SH-486, S02-VP-17).
+- Phase C keyed these statements by country, so the area doesn't show in its keys.
+- **So the references meet the key itself,** an area within a country, for tax and one feature. None keys payment services, the currency or the exchange rate on such an area, and none runs a move's checks when it changes.
+- **The result:** one founder decision, S02-D8, which is RD1's fourth. Its options include not providing for the need. Its recommendation rests on the references' own area keys, not on the market the need came from.
+
+**Gap 3: one currency code over two currency areas. The references meet it.**
+- Shopify holds an exchange rate per market, set manually or automatically (S02-SH-568, S02-SH-531). Salla holds a scope-specific exchange rate (S02-SA-302, shipped).
+- Both draw markets for an area within a country (S02-SH-103, S02-SA-051).
+- Zid and WooCommerce hold a rate per currency instead (S02-ZD-020, S02-WC-027).
+- **Where it follows:** into S02-D7, which adds option (e) and holds the rate per market, kept on each order, and into S02-D4.
+- **What moved:** whether an amount's currency names its area beyond its code, in money records. That went to S-09, in S02-M6, which says what S-02 holds for it. There is no new decision.
+
+### The scenario walk's four fixes
+
+1. **S02-E2 against S02-D1.** S02-E2 now takes the order or market it answers for, keyed on the business serving it, and each order records the business that served it (S02-SH-280, S02-SH-147). Each rule says whether it reads the store's main business or the order's.
+   - S02-D1's cost (a second business is a setting) holds only with that order record. Its `cost_later` now says so.
+   - S02-D3's cost (one module) holds with that record, and its `cost_later` says so too.
+2. **S02-D3's closes** is narrowed to a second copy of the seller's own country. It now names what it does not close:
+   - where stock is held (S02-ZD-120, S-10);
+   - each owner's residence for documents (S02-SA-134, S-07);
+   - a provider account's country (S02-BC-128, S-04);
+   - an area within the country (S02-D8).
+3. **S02-D6 and S02-E1** now state the rule per kind of setting:
+   - a one-value setting takes the most specific value;
+   - a set may combine across the markets a buyer matches (S02-SH-109);
+   - a product narrows a set.
+
+   Under that rule, "nothing a reference shows is closed" holds. I changed S02-D5 to match: a buyer matches at most one market of each kind, not one market. The walk didn't name S02-D5, but without the change it would contradict S02-E1.
+4. **Payouts in S02-E4 and S02-D7:** as ruling 1.
+
+I also aligned the questions of S02-D3 and S02-D7 with the changed recommendations.
+
+### Rows changed, for the walk's re-run
+
+| Row | What changed |
+| --- | --- |
+| S02-D1 | cost_later |
+| S02-D3 | question, recommendation, closes, cost_later, evidence |
+| S02-D5 | question, recommendation |
+| S02-D6 | recommendation, closes, evidence |
+| S02-D7 | question, alternatives, recommendation, trade_off, evidence |
+| S02-D8 | new |
+| S02-M2 | recommendation, evidence |
+| S02-M6 | vp_id, question, recommendation, depends_on, evidence |
+| S02-E1 | recommendation, evidence |
+| S02-E2 | recommendation, evidence |
+| S02-E4 | recommendation, evidence |
+| S02-E5 | recommendation, status |
+
+No other row changed.
+
+### Checks after the second pass
+
+- `register_items.py`: 142 founder items; 0 unanswered, 0 answered twice, 0 names unknown.
+- `check_register.py`: 770 citations checked, 0 problems.
+- A scan of every row's question, recommendation, closes, trade-off and cost found no market's name.
