@@ -1,0 +1,2 @@
+{"intent":"Reload the trial page so the founder fills it by hand (the scripted form was refused: create-store 427 {\"pass\":false})","do":"goto","url":"https://www.bigcommerce.com/start-your-trial/","readyTimeout":5000,"settleMs":3000}
+{"do":"close"}
