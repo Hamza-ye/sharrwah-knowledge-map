@@ -1655,6 +1655,58 @@ Rows: replaced S02-V-228 (S02-VP-11, without S02-BC-385) and S02-V-237 (S02-VP-1
 
 Check, after the rulings: on a fresh copy holding only `b/RD1`, `merge_slices.py` merged 19 points and 314 rows. `check_subject.py` (3,116 statements, 97 gaps) gave no line of level `error`, 17 warnings on the length of phase A's quotes, and 14 reviews: 12 on quotes found only in a page's source, which are the coordinator's, and 2 on RD2's and RD3's statements, whose folders the copy leaves out. None names S02-V-228, S02-V-237, S02-BC-369, S02-BC-371 or S02-BC-385. RD1 has no row in its `unplaced.tsv`, and no open task in `second_pass_list.py --check`.
 
+## Second pass, RD1-S10
+
+Part RD1-S10: the WooPayments round's tasks under RD1, from A2-WC-R2 (other-product-class 0d79b794, folder `woocommerce/`): 2 revisits (S02-V-044, S02-V-314) and 1 place task (S02-WC-537 under (a)). The new statements are observations of the same test store (WordPress 7.1.4, WooCommerce 11.2.1, WooPayments 11.2.0, WooCommerce Tax 3.7.3), with a WooPayments test account (acct_1UVpISFsC4iMV32G, test mode) and, later, live accounts (status restricted). Each row keeps the account, test or live, and the run and step, in its scope or evidence. RD1's files were as committed (HEAD 9eefdb01, after c96cb71b) when this part began.
+
+### Revisit S02-V-044 (woocommerce, S02-VP-01, what fills the store's country), again (part RD1-S10)
+
+S02-V-044, was gap S02-WC-G10: replaced with gap S02-WC-G13, in place of S02-WC-G10. S02-WC-G13 asks where Automattic holds the merchant's country of residence that the Terms read to name the contracting entity (S02-WC-013 to S02-WC-015). The leads give G10's other half: where the WooPayments account's country is held.
+
+Leads placed under (a):
+- S02-WC-537, S02-WC-539, S02-WC-540 and S02-WC-541, under (a): joined S02-V-042 (the WooPayments account's country: 'Be sure to select the correct country for your account, as it cannot be changed later.'). S02-WC-537 is also this part's place task. The account's answer, GET /wc/v3/payments/accounts, gave '"country":"US"' for the test account, before and after the store's Country / State changes (S02-WC-537; run 20261029T090147Z-wpcom-connect-en, steps 13, 17, 22, 27 and 32). The store's database holds it in wp_options' wcpay_account_data: 's:7:"country";s:2:"US"' for the test account (S02-WC-539; run 20261029T090847Z-db-after-test-account); 'AE' for a live account made with business location United Arab Emirates (S02-WC-540; run 20261029T102416Z-db-live-account-ae); and 'GB' for one made with business location United Kingdom (S02-WC-541; run 20261029T102848Z-db-live-account-gb), both restricted. Their identifiers say whose country it is ('the WooPayments test account', 'a live WooPayments account', 'wcpay_account_data'), so the key passes the role test. The database row stores the account's field, as S02-WC-521 and S02-WC-522 joined the settings they store (call 1).
+
+Lead noted under (a):
+- S02-WC-538 (a): 'We’ll use these details to enable payments for your store. This information can’t be changed after your account is created.' (Set up WooPayments > Activate payments > Let’s get your store ready to accept payments; the test store with the test account, business location United States (US); run 20261029T090147Z-wpcom-connect-en, step 37): its words name 'these details' and 'This information', not a country, address or jurisdiction; the business location is in its scope only (rule 2's role test; the coordinator's ruling on RD1-S9's call 1)
+
+The earlier leads stay where they are: S02-WC-521 in S02-V-039; S02-WC-522 in S02-V-041. x_words took 'wcpay_account_data' under S02-VP-01.
+
+### Revisit S02-V-314 (woocommerce, S02-VP-07, what must hold before the store's country changes) (part RD1-S10)
+
+S02-V-314, gap S02-WC-G09: removed. The work list names no gap for the point: S02-WC-537 answers S02-WC-G09, since the account kept its country when the store's changed (the coordinator, 29 October). Every answer the leads give under (b) is one the platform's rows already hold.
+
+Lead placed under (b):
+- S02-WC-536: joined S02-V-087 (S02-VP-07, 'Your settings have been saved.'). It is the only message of 'Settings > General > Save changes (Country / State changed to Saudi Arabia, with a WooPayments test account)' (its identifier; test account acct_1UVpISFsC4iMV32G in test mode, two orders and two tax rates; run 20261029T090147Z-wpcom-connect-en, step 16). The change went through with a WooPayments account on the store too, so no account had to be removed before it. This is a reading, as for S02-WC-523 (RD1-S9's call 6, which stands). It also joined S02-V-085 (S02-VP-06, the seller), since the save is a control in the store's admin (rule 4). S02-V-087's note says S02-V-314 is removed.
+
+Leads noted under (b):
+- S02-WC-537 (b): the test account's '"country":"US"' (GET /wc/v3/payments/accounts), the same before and after the store's Country / State changes (run 20261029T090147Z-wpcom-connect-en, steps 13, 17, 22, 27 and 32): it shows what the change left as it was, the account's country, which answers S02-WC-G09; it names no party that sets, checks or changes the store's country, and no condition before it changes, as S02-WC-524 to S02-WC-526 (part RD1-S9); placed under (a), above
+- S02-WC-538 (b): 'This information can’t be changed after your account is created.' (as under (a), above): its words don't say the information is the store's country, or the account's; the business location is in its scope only (the role test; the coordinator's ruling on RD1-S9's call 1) (call 2)
+- S02-WC-542 (b): '{"success":true}', the answer of POST /wc-admin/settings/payments/woopayments/onboarding/reset for a live account, status restricted, before verification (its identifier and scope; run 20261029T101705Z-stripe-onboarding-us-en, steps 5 to 19, and 20 to 33): its words name no party, country or condition; that the reset account was replaced by one in another country is in S02-WC-540 and S02-WC-541, not in its words (the role test) (call 3)
+
+The earlier leads stay where they are: S02-WC-523 in S02-V-087 and S02-V-085; S02-WC-524 to S02-WC-527 noted under (b) above in this file. S02-WC-516 and S02-WC-528, under (c), were placed earlier.
+
+### Rows replaced, removed, added and joined (part RD1-S10)
+
+Replaced: S02-V-044 (S02-VP-01, gap S02-WC-G10, now gap S02-WC-G13); S02-V-042 (S02-VP-01), rewritten only to mend a slip in the evidence its join added. Removed: S02-V-314 (S02-VP-07, gap S02-WC-G09, now answered). Added: none. Joined: S02-V-042 (S02-VP-01: S02-WC-537, S02-WC-539, S02-WC-540, S02-WC-541); S02-V-087 (S02-VP-07: S02-WC-536); S02-V-085 (S02-VP-06: S02-WC-536). S02-V-087's note took a line saying S02-V-314 is removed.
+
+### Candidates for a new point (part RD1-S10)
+
+None. The statements placed fit S02-VP-01, S02-VP-06 and S02-VP-07; those noted answer none of their bullet's questions in their own words.
+
+### Searches and rechecks (part RD1-S10)
+
+No point was raised, so no earlier platform's rows were searched for. This part read WooCommerce's full rows S02-V-042, S02-V-043, S02-V-044, S02-V-086, S02-V-087 and S02-V-314, and gaps S02-WC-G09, S02-WC-G10 and S02-WC-G13. S02-V-042's `answers` holds for S02-WC-537 and S02-WC-539 to S02-WC-541, since their identifiers name the WooPayments account's country field. S02-V-087's and S02-V-085's `answers` hold for S02-WC-536 as for S02-WC-523, the first as a reading.
+
+### Calls (part RD1-S10)
+
+1. S02-WC-539 to S02-WC-541, the store's wcpay_account_data, join S02-V-042 (the WooPayments account's country) with S02-WC-537 (the account's answer). The store's database row holds the account's field, as RD1-S9 joined S02-WC-521 and S02-WC-522 to the settings they store. Read as a record of its own, they would be a new row under S02-VP-01.
+2. S02-WC-538 is noted under (a) and (b) by the role test: 'these details' and 'This information' name no country. Read as the onboarding form's details, with its business location among them (its scope), it would join S02-V-086 under S02-VP-06 (no one changes it once the account is created).
+3. S02-WC-542 is noted under (b). Read with its identifier (the admin's reset of a restricted account's onboarding) and with S02-WC-540 and S02-WC-541, it would give WooCommerce a second answer under S02-VP-06, beside S02-V-086. That answer, a reading, is that the seller replaces the account's country by resetting a restricted account and onboarding again.
+
+### Check (part RD1-S10)
+
+This part ran the check on a fresh copy holding only `b/RD1`. `merge_slices.py` merged 19 points and 313 rows. `check_subject.py` (3,123 statements, 98 gaps) gave no line of level `error`: S02-V-044 no longer names S02-WC-G10, and S02-V-314, which named S02-WC-G09, is gone. It gave 17 warnings, on the length of phase A's quotes, and 14 reviews: 12 on quotes found only in a page's source, which are the coordinator's, and 2 on RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. RD1 has no row in its `unplaced.tsv`, and no open task in `second_pass_list.py --check`.
+
 # RD2
 
 ## RD2-1: shopify, bullets (e) and (g)
