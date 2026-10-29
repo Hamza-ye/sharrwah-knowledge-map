@@ -305,3 +305,24 @@ Rows changed against 2fe09a43:
 - **Key order only:** S02-D2 (answers_items), S02-F4 and S02-F10 (vp_id).
 
 Checks: `register_items.py` lists 143 founder items, 0 unanswered, 0 answered twice and 0 names unknown. `check_register.py` checks 810 citations and finds 0 problems.
+
+## Seventh pass, 29 October: S02-D2 after the WooPayments round
+
+This pass placed the WooPayments round (A2-WC-R2, other-product-class 0d79b794; phase C's C-R4) in S02-D2. I first checked that the three files were unchanged since df60b42e; they were. Phase C changed no cause or founder item.
+
+**What the new statements show:**
+- The account's details "can't be changed after your account is created" (S02-WC-538).
+- An account kept `"country":"US"` through four changes of the store's country (S02-WC-537).
+- A restricted live account was reset and replaced by new accounts in AE and then GB (S02-WC-542, S02-WC-540, S02-WC-541).
+- The store's own country changed with a WooPayments account present (S02-WC-536).
+
+**What changed in S02-D2:**
+- **closes:** says the lock holds per account, and that a move makes a new account for the new country, this decision's own pattern of a new record. The store country's change is now observed with an account present, so it is no longer only a reading.
+- **Option (c):** gives WooPayments' new account in another country, with the four statements.
+- **Option (a):** adds S02-WC-536.
+- **evidence:** adds S02-WC-536 to S02-WC-542.
+- **The recommendation is unchanged.** The evidence supports it.
+
+`decisions.md`'s D2 now says that the store country changed with a WooPayments account present, and that the account keeps its own country while a move makes a new one.
+
+Rows changed against df60b42e: S02-D2 (alternatives, closes, evidence).

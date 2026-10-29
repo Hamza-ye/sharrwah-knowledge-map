@@ -916,3 +916,19 @@ The founder was asleep, and nothing was decided for them. Each step was drafted 
    - Neither gap stopped a decision. Each is fixed when a subject needs that evidence.
 3. **The pipeline for late evidence ran end to end in under two hours:** gap-closing, `round_tasks.py`, phase B, `refresh`, phase C, and the register's bookkeeping.
 
+**Later the same morning: WooPayments with an account (10:45 to 11:15 UTC).** The founder's local agent pushed test and live WooPayments accounts, other-product-class at `0d79b794`, with notes that are leads, not evidence. Only what a change of country does once an account exists could change a decision: S02-D2 cites S02-WC-182 as a confirmed fact.
+
+| Part | What | Requests | Millions |
+| --- | --- | --- | --- |
+| A2-WC-R2 | G09 answered and G10 narrowed into G13; 7 statements | 42 | 4.7 |
+| RD1-S10 | Phase B's 3 tasks | 8 | 2.4 |
+| C-R4 | Phase C on S02-VP-01, 06 and 07: no cause changed | 5 | 1.5 |
+| REG-1 | D2's reason worded per account | 3 | 1.9 |
+| **All** | | | **10.5** |
+
+**What it showed:**
+- An account kept its country through four changes of the store's (S02-WC-537), and its form says "This information can’t be changed after your account is created" (S02-WC-538).
+- A restricted live account was reset and replaced by one in another country (S02-WC-542).
+- So the lock holds per account, and a move makes a new account: D2's own pattern. Its recommendation stands, and its reason is now worded per account.
+- Stripe's verification by country, also captured, is held for S-07.
+
