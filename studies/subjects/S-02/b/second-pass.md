@@ -111,3 +111,25 @@ The round places what A2-SA-R, A2-ZD-R and A3-ZD-R recorded (parts RD1-S7, RD1-S
 - **S02-ZD-G33 cites S02-ZD-N17,** which the audit contradicts. What G33 says stands: the Business address list holds none of the five. The audit's row says the list isn't all the countries Zid holds. The gap is closed for S-02 and goes to S-07 (`gap-assessment.tsv`), so its text is left as it is.
 - **`xwords` added duplicates.** It no longer adds a word the platform's list already holds, and the one duplicate under S02-VP-11 is removed.
 - **S02-SA-499, S02-SA-500 and S02-SA-515** (the UAE store's prices in AED) had no task. They would read as S02-SA-501 does under ruling 8. Phase C may cite them under S02-VP-14 as it may any statement, so no part is run for them.
+
+## The coordinator's rulings in the BigCommerce and WooCommerce round (29 October 2026)
+
+Parts RD1-S9 and RD3-S14 placed what gap-closing's A2-BC-R and A2-WC-R found in the founder's local agent's captures (other-product-class at `3f2438f3`). No part raised a candidate for a new point.
+
+**RD1-S9's calls:**
+- **S02-BC-385 is noted, not placed.** It was joined to S02-V-228 (VP-11) on its scope alone. Its own words name no decider of payment services, and placement rests on what a statement's words name (the role test).
+- **The Default Zone (S02-BC-371) is noted under (c), not an answer under S02-VP-16.** It applies a rate to buyers' regions, which makes it a tax zone, and VP-16's note keeps tax zones out (S02-BC-129, rule 1). S02-V-237 takes the answer S02-BC-369 supports, the statement that settled S02-BC-G15, marked as a reading of one store under four default countries.
+- **Call 2 gives way to that ruling.** It had noted S02-BC-369 where the statement could answer as "every store".
+- **The other seven calls stand.** Each is a reading marked in its row, and none moves a point's answer beyond what the statements say:
+  - the billing contact behind S02-V-281;
+  - S02-BC-376 and 377 joined to S02-V-284;
+  - WooCommerce's `woocommerce_default_country` tied to the store through S02-WC-113;
+  - a save that went through, read as no condition (S02-V-087);
+  - S02-V-255 kept apart from S02-V-254;
+  - Stripe's tool noted;
+  - `storeCountry` as a row of its own.
+
+**RD3-S14's calls stand.**
+- **Rows resting on readings:** S02-V-1128 (the platform's Default Zone, under VP-58) and S02-BC-378's join both rest on readings, each marked in its row.
+- **Payment configurations:** they are placed per channel under VP-61 and VP-62, not under currency.
+- **Countries read as the buyer's:** the Importer of Record's countries are read as the buyer's country, since BigCommerce's markets are channels.
