@@ -816,3 +816,54 @@ Phase C is complete for all three root decisions, and the full check finds no er
 - test 2's "particular law" counted only where a regulator and its rule are named.
 
 **What comes next changed order.** The register is drafted first (`briefs/D-register.md`), so that the Yemen row and the scenario walk test a handful of decisions, not 142 founder items. Agents draft steps 2 to 4, and the coordinator checks each (`frame.md`, "How it runs").
+
+## 15. S-02's end: the register, the Yemen row, the scenario walk, designs beyond the references, and the review (29 October)
+
+The founder was asleep, and nothing was decided for them. Each step was drafted by an agent from its brief and checked by the coordinator before the next built on it.
+
+**What ran:**
+
+| Part | What | Requests | Millions |
+| --- | --- | --- | --- |
+| REG-1 | The register, in four passes. The draft asked 142 founder items as 7 decisions and moved 57; the coordinator's rulings, the walk's fixes and D8 followed; then the review's findings and D9; then the designs read | 86 | 27.5 |
+| YR-1 | The Yemen row, then three updates for each change to the register | 66 | 13.2 |
+| SW-1 | The scenario walk, then three re-walks of the items each pass changed | 53 | 15.2 |
+| OS-1 | Designs beyond the references for D8 and D9: 11 sources, captured | 43 | 4.4 |
+| RV-1 | The independent review, its re-check, and a last check | 70 | 15.3 |
+| **All** | | | **75.6** |
+
+**What the tests changed.** On 28 October the founder was told how we'd know the tests work: how many decisions a test changes, how many scenarios end as settings, and the cost per decision.
+- **Decisions changed:** every one of the seven drafted decisions and all five constraints changed at least once, and two decisions were added.
+  - **The walk:**
+    - a second business per store was a redesign under E2's key, not D1's "setting";
+    - four options were closed with no reason (D3 twice, D6, E4);
+    - the register contradicted itself in four places.
+  - **The Yemen row:** three needs no platform meets. Two became D8, and the third became D9 after the review.
+  - **The review:** seven must-fix findings, then two more on the fixes. Among them:
+    - gap 3 was called met by a rate per market that the platforms don't hold for an area within a country (S02-SH-104, S02-SA-103);
+    - D4's closure didn't reach customer groups;
+    - D5's closure contradicted nesting;
+    - D8 and D9 cited the rule for designs beyond the references without reading any.
+  - **The designs read:** they changed D8's and D9's recommendations from building the room now to (b) now, with room kept. The standards and platforms read identify a currency by its code alone, and key no payment rule on an area.
+- **Scenarios:** of the walk's final 51, 41 cost a setting, 9 one module, and 1 a redesign. The redesign is a country requiring data held there, a hypothesis for S-08. The first walk had 3 redesigns and 4 premature closures in 39 rows.
+- **Cost per decision:** about 8.4 million agent tokens for each of the nine decisions, for the end's tests.
+
+**The coordinator's rulings, before the review:**
+- **Payouts.** Under the founder's Decisions 2 to 12, each provider pays out on its own terms. So the store's currency serves gift cards and its own reports, and Sharrwah sets no payout currency (D7, E2, E4).
+- **E5 is a reading of the founder's own decision of 26 October.** It goes to the founder to confirm, not to engineering to propose.
+
+**Lessons:**
+1. **The register's checks pass while its claims fail.**
+   - `register_items.py` and `check_register.py` were clean at every pass.
+   - The walk and the review found what they can't see: claims that contradict each other or the evidence. So the tests come after the checks, never in their place.
+2. **A fix can bring its own error.** The second pass called gap 3 met. It read S02-SH-568 without S02-SH-104, and took S02-SA-302, an order field, for a rate per market. Only the review after the fixes caught it. So the review runs after the fixes, and re-checks them.
+3. **The coordinator's own lead was wrong.**
+   - The message to REG-1 said no reference keys a seller's rule below the country. The coordinator's search had read only the statements' identifiers, not their text.
+   - REG-1 was asked to verify it, and found Shopify's and WooCommerce's tax keys by province and state (S02-SH-513, S02-SH-931, S02-WC-118).
+   - A coordinator's lead to an agent is a lead to verify, like the local agent's notes.
+4. **Designs beyond the references change recommendations.** PLAN.md section 6 asks for them where a recommendation goes past the references. Read late here, they turned two recommendations from building room now to keeping it. From the next subject on, the register's brief has them read before a recommendation that goes past the references is drafted.
+5. **Resuming an agent for a later pass is cheap,** about 1.5 to 5 million for each pass on average. Each pass is a short message naming the rows that changed.
+6. **Brief and tool fixes:**
+   - the briefs' `--print RD` usage was wrong, and is now `--print RD1` (D, F, G);
+   - two checkers were added, `check_yemen_row.py` and `check_scenario_walk.py`, whose first versions were too strict for rows that need nothing in particular and for a constraint on two root decisions.
+7. **No restart overnight.** None from 23:47 UTC on 28 October to about 03:00 UTC on 29 October, while the main session kept working and a check-in was always set. The two restarts of 28 October both came while it was idle. That is consistent with idleness playing a part, but it isn't proof.

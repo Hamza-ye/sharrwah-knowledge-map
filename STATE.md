@@ -1,6 +1,6 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 28 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 29 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
@@ -13,12 +13,11 @@
 
 **Open gate:** G3, after each subject. S-02 is under way.
 
-**Waiting on the founder:**
-- **Three answer lines of 28 October,** in the reply on how decisions are tested. Nothing stops for them: S-02's market model is drafted and tested either way.
-  - The architecture alongside the subjects, in the tested form: yes or no. It decides whether isolation between stores, the core data model, extension by apps, and identity and permissions follow the market model.
-  - Building ahead: agree or not. With the vision recorded, engineering keeps options open for the founder's markets wherever a retrofit would be costly, and brings the founder only the expensive ones.
-  - Quality targets, when the founder can: rough numbers of stores and orders in years 1 and 3, and which quality wins when two conflict. They set the numbers in the test scenarios.
-- **The questions in [`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md)** that only a platform can answer. They are optional, and nothing waits on them.
+**Waiting on the founder,** all on one page, [`reports/S-02.md`](reports/S-02.md):
+- **The three answer lines of 28 October:** the architecture alongside the subjects, in the tested form; building ahead; and quality targets. S-03 waits on the first, since it sets how S-03 runs.
+- **S-02's nine decisions, for gate G3** ([`decisions.md`](studies/subjects/S-02/decisions.md)). D1 to D7 come from the five references. D8 and D9 are needs only the Yemen row shows, weighed against established designs.
+- **E5, to confirm:** what "market" meant in the founder's decision of 26 October. E1 to E4 are engineering's, for the founder's veto.
+- **Optional:** the questions only a platform can answer ([`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), section 5), and the ISO standards' pages that iso.org refused to the capture.
 
 *Settled on 28 October:*
 - **The founder's evidence is in.** The founder's local agent took Salla and Zid as far as they can be taken:
@@ -94,22 +93,30 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **What the logs show:** the platform moved the idle session onto a new VM. It wasn't memory, and it wasn't the disk.
   - **The disk** is now at 76% of the allowance, from 86%, after 4.2 GB of obsolete copies and caches were deleted.
 
+**S-02's end (29 October, overnight; [`method-report.md`](studies/subjects/S-02/method-report.md), section 15).** Agents drafted each step from its brief, and the coordinator checked each before the next built on it. Nothing was decided for the founder.
+- **The register** ([`register.tsv`](studies/subjects/S-02/register.tsv)):
+  - the 142 founder items, asked as nine decisions: 85 items in D1 to D7, and D8 and D9 from the Yemen row's product gaps;
+  - 57 items moved to the subjects that own them;
+  - five engineering constraints.
+
+  Both checks are clean: every item answered or moved once, and 803 citations.
+- **The Yemen row** ([`yemen-row.tsv`](studies/subjects/S-02/yemen-row.tsv)): 49 rows, each fact checked against its quote and read with `corrections.md`.
+- **The scenario walk** ([`scenario-walk.tsv`](studies/subjects/S-02/scenario-walk.tsv)): 51 scenarios. 41 cost a setting and 9 one module. 1 is a redesign: data held in-country, a hypothesis for S-08.
+- **Designs beyond the references,** for D8 and D9 ([`designs.tsv`](studies/subjects/S-02/designs.tsv)): 11 sources, captured in `evidence/designs/`. They changed both recommendations.
+- **The independent review** ([`review.md`](studies/subjects/S-02/review.md)): 24 findings, 9 of them must fix. All are resolved after its re-checks.
+- **No container restart** since 23:47 UTC on 28 October.
+
 **Earlier:**
 - **Phase B's first pass is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 7): 73 variation points, each with a row for every platform, 671 rows, in [`variation-points.tsv`](studies/subjects/S-02/variation-points.tsv) and [`variants.tsv`](studies/subjects/S-02/variants.tsv). The full check gives no error.
 - **The absence audit is complete** (section 8): 24 claims; 19 confirmed, 3 partly contradicted, 2 contradicted; 122 statements added. Two capture requests are narrowed ([H-002](handoffs/H-002-observed-sa-onboarding-countries.md), [H-007](handoffs/H-007-observed-sh-store-country-sign-up.md)), and three tools fixed to see held evidence they had missed.
 - **Gap-closing (phase A2) is complete** ([`method-report.md`](studies/subjects/S-02/method-report.md), section 9; [`a2-parts.tsv`](studies/subjects/S-02/a2-parts.tsv)): 22 parts, 121 rows, 118 of them given statements and 83 with no gap left; 1,165 statements; 337 million. Its live pages are captured, and every quote is found; twelve are ruled on after review. 49 gaps remain: 15 for the local agent, in H-008 (new) and H-002 and H-005 (extended); 34 for the founder.
 - **The render fault:** the browser in this session failed some sites' scripts, so BigCommerce's Help Center and Zid's sites rendered empty or as an error text; agents read zid.eg's Terms from a source that held the Saudi Terms. The tools now fetch each request outside the browser, open what a click shows, and tell a page's source from what it shows. 32 pages are held again as they render; Zid's audit of G03 was redone (for Egypt, the contract is with Zid Egypt, under Egyptian law). Every capture run now has its README.
-- **Cost:** 1,436 million agent tokens by 22:09 UTC on 28 October, past the budget plus a quarter (875 million). The cost came to the founder at 09:55 on 27 October ([the frame's budget](studies/subjects/S-02/frame.md#budget)). The capture round cost 55 million; reading Salla's and Zid's captures cost 22 million. S-02 is projected at about 1.5 to 1.6 billion. The work goes on on the founder's Max x20 plan. The coordinating session's own tokens: 777 million since S-02 began.
+- **Cost:** 1,582 million agent tokens at 02:55 UTC on 29 October, inside the projection of 1,500 to 1,600 million. S-02's end cost 75.6 million of it. The coordinating session's own tokens since S-02 began: 930 million ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
 
 **Next:**
-1. **The register's draft** (running; [`briefs/D-register.md`](studies/subjects/S-02/briefs/D-register.md)): each founder question asked once, with its options, what the references show, an engineering recommendation, what it closes, and the cost of changing course later. It decides nothing.
-2. **Then, in the plan's order:** the Yemen row and the scenario walk test the register's recommendations, and the independent review tries to break all three. Then the founder's page for the morning.
-3. **Then the report for G3,** with the quote check and the cost against the budget, once the founder has answered.
-   - **If the founder says yes to the architecture track** (the answer lines of 28 October), its seven questions become one decision, the market model:
-     - what a market can be made of;
-     - how a setting resolves: the store's value, then the market's, then the buyer's context;
-     - which settings can vary.
-   - That decision is drafted with its options, tested against scenarios from the founder's markets, attacked by an agent that didn't draft it, and tried in a spike. Yemen is one scenario among them.
-4. BigCommerce and WooCommerce, when the founder's local agent pushes them: their 10 gaps that could change a decision are read; 13 are closed ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)).
+1. **The founder's answers** to [`reports/S-02.md`](reports/S-02.md): the three answer lines, the nine decisions, and E5. Each answer goes in `founder-decisions.tsv`, and the register records it.
+2. **Then S-02 closes,** with this file, its report, and PR #8's merge on the founder's word.
+3. **S-03 starts** as the founder's answer on the tested form says. If yes, decisions come first, under the four tests. If no, S-03 runs by the plan's steps.
+4. **BigCommerce and WooCommerce,** when the founder's local agent pushes them: their ten gaps that could change a decision are read ([`gap-assessment.tsv`](studies/subjects/S-02/gap-assessment.tsv)).
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.
