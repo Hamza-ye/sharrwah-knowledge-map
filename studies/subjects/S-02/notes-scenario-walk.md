@@ -2,7 +2,7 @@
 
 **What this is:** the scenario walk of `PLAN.md` section 6, step 7, done from the brief `briefs/F-scenario-walk.md`. Each of S-02's seven decisions for the founder (S02-D1 to S02-D7) and five engineering constraints (S02-E1 to S02-E5) goes through three scenarios: a second market, the company based elsewhere, and the first market dropped. The rows are in `scenario-walk.tsv`: 39 rows, 12 items × 3 scenarios, with two second-market rows for S02-D1 and S02-D3 and two company-elsewhere rows for S02-E2. The walk tests the recommendations. It chooses nothing.
 
-**Re-walked twice:** after the register's second pass (f4d3d4c6), and after the independent review and the register's third pass (47847720). The table now holds 49 rows. Where they differ, the last section, "Re-walk after the review", supersedes the sections before it.
+**Re-walked three times:** after the register's second pass (f4d3d4c6), after the independent review and the register's third pass (47847720), and after its fourth pass (fe86177f). The table now holds 51 rows. Where they differ, a later section supersedes an earlier one.
 
 ## What was read
 
@@ -319,3 +319,16 @@ The source shown is each statement's first citation, as the slice prints it. A U
 - **S02-E2:** a setting (Egypt) · a setting, and **a redesign** (hypothetical: data held in-country, S-08's) · a setting.
 - **S02-E3:** a setting (Kuwait) · a setting · a setting.
 - **S02-E4:** a setting (Kuwait) · a setting · a setting, on a marked assumption.
+
+## Re-walk after the register's fourth pass
+
+The fourth pass (fe86177f) changed four items, and I replaced their rows; every other row is unchanged. The check reports 51 rows, 1 redesign, 0 flagged and 0 problems.
+- **S02-D8** now recommends (b), keeping room for (c), so its second-market row splits in two:
+  - tax keyed on an area at another level: a setting;
+  - a payment or currency rule keyed on an area: one module.
+- **S02-D9** recommends (b) in the same way, and also splits in two:
+  - two areas under one code sold at two rates, through area markets: a setting;
+  - telling them apart by currency in amounts and reports: one module, on the marked assumption that S-09 has amounts refer to a currency record.
+- **Not flagged `one market`:** the room for (c) in S02-D8 and S02-D9 traces only to the first market, but constrains nothing. Both recommendations, (b), now come out the same without the first market.
+- **S02-D7's three parts** each cost a setting in every scenario.
+- **S02-E4** now says the store's currency may change, and that past records keep theirs. The assumption marked on its first-market-dropped row is therefore E4's own rule.
