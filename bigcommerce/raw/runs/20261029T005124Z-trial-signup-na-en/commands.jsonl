@@ -1,0 +1,11 @@
+{"intent":"Read the tab the founder left (the reCAPTCHA he ticked)","do":"evaluate","js":"({filled:[...document.querySelectorAll(\"input\")].filter(i=>i.type!==\"hidden\").map(i=>i.name+\"=\"+(i.type===\"password\"?i.value.length:i.value)), captcha:[...document.querySelectorAll(\"textarea[name=g-recaptcha-response]\")].map(t=>t.value.length)})","readyTimeout":2000,"settleMs":500}
+{"intent":"First Name: a test name","do":"fill","role":"textbox","name":"First Name *","value":"Test","readyTimeout":2000,"settleMs":500}
+{"intent":"Last Name: a test name","do":"fill","role":"textbox","name":"Last Name *","value":"Capture","readyTimeout":2000,"settleMs":500}
+{"intent":"Email: a plus-address of the capture inbox","do":"fill","role":"textbox","name":"Email Address *","value":"7amza.it+bc-na@gmail.com","readyTimeout":2000,"settleMs":500}
+{"intent":"Password (BIGCOMMERCE_TRIAL_PASSWORD in .env)","do":"fill","role":"textbox","name":"Password *","value_env":"BIGCOMMERCE_TRIAL_PASSWORD","readyTimeout":2000,"settleMs":500}
+{"intent":"Store name: marked as a test","do":"fill","role":"textbox","name":"Store name (You can change this at any time) *","value":"Capture Test Store NA","readyTimeout":2000,"settleMs":500}
+{"intent":"Business size: not selling yet","do":"select","role":"combobox","name":"What size is your online business? *","value":"I haven't started selling yet","readyTimeout":2000,"settleMs":500}
+{"intent":"Hosting region: North America (the default)","do":"select","role":"combobox","name":"Where should your store be hosted? *","value":"North America","readyTimeout":2000,"settleMs":500}
+{"intent":"Bring the reCAPTCHA box into view for the founder","do":"scroll","role":"button","name":"Create your store","readyTimeout":2000,"settleMs":500}
+{"intent":"Create your store (the founder ticked the reCAPTCHA by hand; he authorized this sign-up)","do":"click","role":"button","name":"Create your store","settleMs":10000,"readyTimeout":90000}
+{"do":"close"}
