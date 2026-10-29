@@ -1,0 +1,1 @@
+{"do":"stopped-at-confirm","control":"reCAPTCHA \"I'm not a robot\" (sa=trial_submit), then Create your store","step":9,"evidence":"step 9: after Create your store the form states \"reCAPTCHA is required\"; frame 2 is the reCAPTCHA Enterprise checkbox, frame 8 an image challenge (\"Select all squares with bicycles\"). A CAPTCHA is ticked by the founder, not by this capture."}

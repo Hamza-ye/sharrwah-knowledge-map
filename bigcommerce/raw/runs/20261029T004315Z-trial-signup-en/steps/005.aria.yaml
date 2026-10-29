@@ -1,0 +1,98 @@
+- paragraph:
+  - text: By clicking “Accept All”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts.
+  - link "View privacy policy.":
+    - /url: https://www.bigcommerce.com/privacy/
+  - link "View cookies list.":
+    - /url: https://www.bigcommerce.com/cookies/
+- button "Cookies Settings"
+- button "Reject All"
+- button "Accept All"
+- link "BigCommerce logo":
+  - /url: /
+  - img "BigCommerce logo"
+- heading "A real store, not a demo, ready today." [level=2]
+- paragraph: Share a few details and we'll have your store ready to customize in minutes.
+- form "trial-form":
+  - text: First Name *
+  - textbox "First Name *": Test
+  - text: Last Name *
+  - textbox "Last Name *": Capture
+  - text: Phone Number (optional)
+  - textbox "Phone Number (optional)"
+  - text: Email Address *
+  - textbox "Email Address *": 7amza.it+bc-na@gmail.com
+  - text: Password *
+  - textbox "Password *": ONWLx7TjU9O6am@7
+  - paragraph: "Password requirements:"
+  - list:
+    - listitem: "✓ At least one special character(!@#$%^&*?{}[]+-|;:)"
+    - listitem: ✓ At least 12 characters
+    - listitem: ✓ One number
+    - listitem: ✓ One uppercase and one lowercase character
+  - text: Store name (You can change this at any time) *
+  - textbox "Store name (You can change this at any time) *"
+  - text: What size is your online business? *
+  - combobox "What size is your online business? *":
+    - option [selected]
+    - option "I haven't started selling yet"
+    - option "Less than $250k"
+    - option "$250k-1M"
+    - option "$1M-5M"
+    - option "$5M-20M"
+    - option "$20M-100M"
+    - option "$100M-250M"
+    - option "More than $250M"
+    - option "I'm not sure"
+  - img
+  - text: Where should your store be hosted? *
+  - combobox "Where should your store be hosted? *":
+    - option
+    - option "North America" [selected]
+    - option "Europe"
+    - option "Asia-Pacific"
+  - img
+  - paragraph: To ensure optimal performance and speed for your store, select the region nearest to your prospective customers.
+  - checkbox "I consent to receive communications and marketing from the Commerce Family of Companies."
+  - text: I consent to receive communications and marketing from the Commerce Family of Companies.
+  - iframe
+  - button "Create your store"
+- paragraph: Due to a change in our policy, trial stores can no longer process live payments. Starting Wednesday, October 14th at 12:00 PM CDT, this store will only support offline payment methods and test payments.
+- paragraph
+- paragraph: To continue processing live payments without interruption, a paid plan is required by Wednesday, October 14th at 12:00 PM CDT. For questions about plans or upgrading, please contact support.
+- paragraph:
+  - text: By providing your email, you are agreeing to our
+  - link "terms of service.":
+    - /url: https://www.commerce.com/terms/
+- paragraph
+- paragraph:
+  - text: This site is protected by reCAPTCHA Enterprise and the Google
+  - link "privacy policy":
+    - /url: https://policies.google.com/privacy
+  - text: and
+  - link "terms of service":
+    - /url: https://policies.google.com/terms
+  - text: apply.
+- contentinfo:
+  - link "BigCommerce Logo":
+    - /url: https://www.bigcommerce.com/
+    - img "BigCommerce Logo"
+  - list
+  - text: © Copyright 2003 - 2026 BigCommerce Pty. Ltd.
+  - link "Privacy Policy":
+    - /url: https://www.commerce.com/privacy/
+  - text: "|"
+  - link "Website Terms of Use":
+    - /url: https://www.commerce.com/website-terms/
+  - text: "|"
+  - link "Master Services Agreement":
+    - /url: https://www.commerce.com/terms/
+  - text: "|"
+  - link "Legal Archives":
+    - /url: https://www.commerce.com/legal-archives/
+  - text: "|"
+  - link "Sitemap":
+    - /url: https://www.bigcommerce.com/sitemap/
+  - text: "|"
+  - link "Cookie Settings":
+    - /url: https://www.bigcommerce.com/start-your-trial/#
+- alert

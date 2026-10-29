@@ -1,0 +1,8 @@
+- dialog:
+  - text: Select all squares with
+  - strong: bicycles
+  - text: If there are none, click skip
+  - button "Get a new challenge"
+  - button "Get an audio challenge"
+  - button "Help"
+  - button "Skip"

@@ -1,0 +1,11 @@
+{"intent":"Open BigCommerce's free trial page","do":"goto","url":"https://www.bigcommerce.com/start-your-trial/","settleMs":4000}
+{"intent":"First Name: a test name","do":"fill","role":"textbox","name":"First Name *","value":"Test","readyTimeout":3000}
+{"intent":"Last Name: a test name","do":"fill","role":"textbox","name":"Last Name *","value":"Capture","readyTimeout":3000}
+{"intent":"Email: a plus-address of the capture inbox","do":"fill","role":"textbox","name":"Email Address *","value":"7amza.it+bc-na@gmail.com","readyTimeout":3000}
+{"intent":"Password (BIGCOMMERCE_TRIAL_PASSWORD in .env)","do":"fill","role":"textbox","name":"Password *","value_env":"BIGCOMMERCE_TRIAL_PASSWORD","readyTimeout":3000}
+{"intent":"Store name: marked as a test","do":"fill","role":"textbox","name":"Store name (You can change this at any time) *","value":"Capture Test Store NA","readyTimeout":3000}
+{"intent":"Business size: not selling yet","do":"select","role":"combobox","name":"What size is your online business? *","value":"I haven't started selling yet","readyTimeout":3000}
+{"intent":"Hosting region: North America (the default)","do":"select","role":"combobox","name":"Where should your store be hosted? *","value":"North America","readyTimeout":3000}
+{"intent":"Create your store (the founder authorized this sign-up; the form states that providing the email agrees to the terms of service)","do":"click","role":"button","name":"Create your store","settleMs":8000,"readyTimeout":60000}
+{"do":"stopped-at-confirm","control":"reCAPTCHA \"I'm not a robot\" (sa=trial_submit), then Create your store","step":9,"evidence":"step 9: after Create your store the form states \"reCAPTCHA is required\"; frame 2 is the reCAPTCHA Enterprise checkbox, frame 8 an image challenge (\"Select all squares with bicycles\"). A CAPTCHA is ticked by the founder, not by this capture."}
+{"do":"close"}
