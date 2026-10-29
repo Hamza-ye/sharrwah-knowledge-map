@@ -7,7 +7,7 @@ It checks:
 - that each `decision_id` is a founder decision or an engineering constraint of SUBJECT_DIR/register.tsv, and that each
   of those is walked through the brief's three scenarios: a second market, the company based in another country, and
   the first market dropped (told apart by their words: "second market", "based in" or "company", "dropped");
-- that `root_decision` is one of the frame's (RD1, RD2, ...);
+- that `root_decision` is one of the frame's (RD1, RD2, ...), or several, `;`-separated;
 - that `cost` is a setting, one module or a redesign, and `flag` is premature, one market or empty;
 - that a row which closes an option gives its reason, one of the brief's three (a confirmed fact, the founder's
   choice, an engineering cost greater than the option's value), or is flagged premature;
@@ -62,7 +62,8 @@ def main(subj):
         d = r.get("decision_id", "")
         if d not in walked:
             problems.append(f"{where}: not a founder decision or engineering constraint of the register")
-        if r.get("root_decision") not in roots:
+        # A constraint that rests on more than one root decision names each, ";"-separated
+        if not set(x.strip() for x in r.get("root_decision", "").split(";")) <= roots:
             problems.append(f"{where}: root decision '{r.get('root_decision')}' is not one of {sorted(roots)}")
         kinds = [name for name, words in SCENARIOS if words.search(r.get("scenario", ""))]
         if not kinds:
