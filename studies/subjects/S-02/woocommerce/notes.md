@@ -419,3 +419,29 @@ These bear on S02-WC-G10 and S02-WC-G11.
 ### Check (A2-WC-R)
 - `python3 -I method/quote_check.py --batch` on the 26 new citations (S02-WC-C639 to S02-WC-C664), 2026-10-29: 26 found.
 - `python3 -I method/check_subject.py` on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-wc-r/check/S-02`, output in `.../check/out`), 2026-10-29: 535 statements, 12 gaps; 656 quotes found and 8 found in the page's source only; no error. The one warning (S02-WC-C024) and the 8 review lines (S02-WC-C117 to C119, C266 to C270) are earlier parts' citations.
+
+## Gap-closing (phase A2), part A2-WC-R2: the founder's local agent's WooPayments captures (2026-10-29)
+
+Two gaps only: S02-WC-G09 (S02-VP-07) and S02-WC-G10 (S02-VP-01); and the check of S02-WC-182, which S02-D2 cites. Source: other-product-class at `0d79b794ff33b310ba34ca6c14acc8a2b9f0a3e4`, folder `woocommerce/`. The agent's README, run notes and GAPS.md were used as leads only; every statement cites a run file or a snapshot.
+
+### Read, in order
+- `woocommerce/index/runs.tsv`, `index/run-notes.tsv` (leads).
+- Run `20261029T090147Z-wpcom-connect-en`: `actions.jsonl` (steps 10 to 48), `answers.jsonl`; `steps/016.text.txt`, `021`, `026`, `031` (Settings > General after each save), `018`, `023`, `028`, `033` (WooPayments' settings page after each save), `037` (Activate payments); answers: `index.php/b30bddea….json` (GET /wc/v3/payments/accounts, steps 13, 17, 22, 27, 32), `a9c086cc….json` (onboarding, the same steps), `945d58c5….json` (providers, step 35), `78ac95a3….json` (onboarding, step 34).
+- Snapshot `20261029T090847Z-db-after-test-account`: `options.tsv` (wcpay_account_data, woocommerce_default_country, active_plugins and the plugin versions map).
+- Run `20261029T101705Z-stripe-onboarding-us-en`: `actions.jsonl` (35 steps), `answers.jsonl`; answers: `ad0da46e….json` (account, step 5), `c955e577….json` (reset and business location, steps 6, 7, 20, 21, 33, 34), `17ddcdec….json` (account, step 19), `e276e469….json` (account, step 32).
+- Snapshots `20261029T102003Z-db-live-account-us`, `20261029T102416Z-db-live-account-ae`, `20261029T102848Z-db-live-account-gb`: `options.tsv` (wcpay_account_data, woocommerce_default_country, wcpay_onboarding_test_mode).
+- Searches, plain and with `--with market markets country countries` (2026-10-29): `"can’t be changed" "cannot be changed" "account country" wcpay_account_data "onboarding/reset"`. Besides the runs above, they listed the Startup Guide (fetch.warc.gz@51106, the source of S02-WC-182's words), the testing and fees pages (@319293, @666838, "account country" in fees and test cards), the Stripe requirements tool's steps, and two unrelated strings of the release's `woocommerce.pot`. None states a change of an account's country.
+
+### What was found, by gap
+- **S02-WC-G09 (S02-VP-07), answered by S02-WC-537.** With a WooPayments test account (country US), two orders and two tax rates, Country / State was saved as Saudi Arabia, Yemen, United Kingdom (UK) and United States (US) — California, each with "Your settings have been saved." alone (S02-WC-536). The account's answer at each read-back is the same file as before the change: country US, payments_enabled true (S02-WC-537); the onboarding answer is also unchanged. WooPayments' settings page after each change holds no word "country". Observed with a test account only.
+- **S02-WC-G10 (S02-VP-01), narrowed into S02-WC-G13.** The account's country is held in the store's option `wcpay_account_data`, beside a `fetched` time (S02-WC-539), and in the account's answer (S02-WC-537). Live accounts made with the business location UAE and UK hold AE and GB while `woocommerce_default_country` stays US:CA (S02-WC-540, S02-WC-541). The form that makes the account asks "Where is your business located?" under "This information can’t be changed after your account is created." (S02-WC-538). Automattic's record of the residence its Terms read stays open (S02-WC-G13).
+- **S02-WC-182.** The runs show, with the account present: the form's notice that the information can't be changed (S02-WC-538); a change of the store's country leaving the account's country as it was (S02-WC-537); and, on live accounts with status restricted, WooPayments' onboarding reset answering success, after which a new account, with a new account_id, took another country (S02-WC-542). No run changed the country on an existing account.
+
+### Problems with the method
+- The reset was called on its REST route by the run (actions.jsonl, step 6), not through an admin control; the route is among the onboarding links WooPayments' providers answer gives. Whether a reset is offered once an account is verified or has taken payments wasn't observed.
+- The account's answer and the onboarding answer are deduplicated by content: one file serves several steps, and `answers.jsonl` names the steps it served. That one file serves the steps before and after the change is what shows the answer unchanged.
+- The country changes were made with a test account; no live account was present during a change of the store's country.
+
+### Check (A2-WC-R2)
+- `python3 -I method/quote_check.py --batch` on the 22 new citations (S02-WC-C665 to S02-WC-C686), 2026-10-29: 22 found.
+- `python3 -I method/check_subject.py` on a copy holding only `bullets.tsv` and this folder (`/tmp/claude-0/-home-user/9f45def8-b710-5f9c-84f3-6a0fa7e617c8/scratchpad/s02-a2-wc-r2/check/S-02`, output in `.../check/out`), 2026-10-29: 542 statements, 13 gaps; 678 quotes found and 8 found in the page's source only; no error. The one warning (S02-WC-C024) and the 8 review lines (S02-WC-C117 to C119, C266 to C270) are earlier parts' citations.
