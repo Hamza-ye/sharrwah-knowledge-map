@@ -1,0 +1,46 @@
+{
+  "run_id": "20261029T025746Z-store-country-restore-en",
+  "platform": "bigcommerce",
+  "label": "store-country-restore-en",
+  "kind": "browser",
+  "started": "2026-10-29T02:57:47.974Z",
+  "extra": {
+    "store": "w5pamplexj",
+    "commands_file": "/tmp/other-product-class-journeys/store-country-restore-en-cmds.jsonl"
+  },
+  "script": {
+    "path": "capture/runs/journey-repl.mjs",
+    "sha256": "3f65bbf741958b079677d0f65d89d5799fd3546ee2ec4f78d31cbd8c9c6dd958"
+  },
+  "ended": "2026-10-29T02:58:45.843Z",
+  "network": {
+    "via": "browser <host>/cdn-cgi/trace",
+    "hosts": {
+      "www.bigcommerce.com": {
+        "ip": "176.123.29.24",
+        "loc": "YE",
+        "colo": "MCT",
+        "http": "http/3"
+      },
+      "support.bigcommerce.com": {
+        "ip": "176.123.23.62",
+        "loc": "YE",
+        "colo": "MCT",
+        "http": "http/3"
+      }
+    },
+    "ip": "176.123.29.24",
+    "loc": "YE",
+    "colo": "MCT",
+    "http": "http/3"
+  },
+  "context": "capture profile",
+  "browser_version": "154.0.8037.57",
+  "playwright_core": "1.63.0",
+  "node": "v23.0.0",
+  "cdp": "http://127.0.0.1:9250",
+  "viewport": {
+    "width": 1440,
+    "height": 900
+  }
+}

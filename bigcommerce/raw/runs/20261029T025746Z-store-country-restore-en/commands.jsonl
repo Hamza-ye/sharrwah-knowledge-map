@@ -1,0 +1,5 @@
+{"intent":"Localization","do":"goto","url":"https://store-w5pamplexj.mybigcommerce.com/manage/microapps/localization-settings-ui","readyTimeout":60000,"settleMs":5000}
+{"intent":"Default country: Oman, as the store was made","do":"fill","role":"combobox","name":"Default country","value":"Oman","readyTimeout":3000,"settleMs":1000}
+{"intent":"Choose Oman","do":"press","key":"Enter","readyTimeout":3000,"settleMs":1000}
+{"intent":"Save","do":"click","role":"button","name":"Save","readyTimeout":10000,"settleMs":5000}
+{"do":"close"}
