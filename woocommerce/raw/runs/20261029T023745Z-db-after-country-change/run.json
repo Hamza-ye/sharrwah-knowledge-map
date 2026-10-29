@@ -1,0 +1,5 @@
+{
+  "run_id": "20261029T023745Z-db-after-country-change", "platform": "woocommerce", "label": "db-after-country-change", "kind": "db", "started": "2026-10-29T02:37:45Z",
+  "ended": "2026-10-29T02:37:46Z", "tool": "mariadb-dump (MariaDB 11.4.13-MariaDB-ubu2404)", "database": "wordpress",
+  "script": {"path": "capture/woocommerce/db_snapshot.sh", "sha256": "7c3e62767b1b8f4fdc444767ff150861b4490817b3f5ac5acddc64eaf8721878"}
+}
