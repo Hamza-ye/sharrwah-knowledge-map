@@ -119,3 +119,12 @@ revisit	S02-V-095	b	by the coordinator's ruling on RD1-S7's call 1: replaced wit
 reread	S02-SA-256	c	placed: new row S02-V-311 (S02-VP-14), the merchant's country, the UAE, as the path en-ae ties the page (a reading, rule 4 under (c), 27 October)
 reread	S02-SA-295	c	placed: new row S02-V-312 (S02-VP-11), the merchant's country, Saudi Arabia, as the Saudi path ties the page (a reading, rule 4 under (c), 27 October)
 reread	S02-SA-501	c	placed: new row S02-V-313 (S02-VP-18), the store's country (kyc_country AE) for the currency AED, scoped to the one store, beside S02-V-168's gap (the coordinator's ruling on RD1-S7's call 8)
+revisit	S02-V-250	b	replaced with gap S02-BC-G16, in place of S02-BC-G09; S02-BC-378 joined S02-V-099 (S02-VP-06, the seller); S02-BC-380 noted; the earlier leads stay where they are
+revisit	S02-V-226	c	replaced with the same gap, S02-BC-G06, still open; S02-BC-385 joined S02-V-228 (S02-VP-11, the store's location, by its scope); S02-BC-218 to S02-BC-220 stay noted
+revisit	S02-V-237	c	replaced with an answer, every store, the Default Zone (S02-BC-371); gap S02-BC-G15 settled by gap-closing, gone; S02-BC-368, S02-BC-369, S02-BC-372, S02-BC-373, S02-BC-374 noted; S02-BC-247, S02-BC-249, S02-BC-250 stay noted
+revisit	S02-V-281	c	replaced with an answer, the account's billing contact's address (S02-BC-359 to S02-BC-365, a reading); gap S02-BC-G10 settled by gap-closing, gone; S02-BC-366, S02-BC-367 noted; earlier leads stay
+revisit	S02-V-286	c	replaced with gap S02-BC-G17, in place of S02-BC-G11; S02-BC-376 and S02-BC-377 joined S02-V-284 (the store's default country, a reading); S02-BC-375 and S02-BC-378 noted; the earlier leads stay
+revisit	S02-V-044	a	replaced with gap S02-WC-G10, in place of S02-WC-G01; S02-WC-521 joined S02-V-039 (Country / State, woocommerce_default_country); S02-WC-522 joined S02-V-041 (the Payments settings' business location, per user)
+revisit	S02-V-087	b	replaced with an answer, the change saved on a store with orders and tax rates (S02-WC-523, a reading); gap S02-WC-G09 added beside it; S02-WC-523 also joined S02-V-085 (S02-VP-06, the seller); S02-WC-524 to S02-WC-527 noted
+revisit	S02-V-255	b	replaced with an answer, the set-up's geolocation notice, the platform (S02-WC-530, S02-WC-529); gap S02-WC-G11 added beside it; S02-WC-531 noted; the earlier leads stay
+revisit	S02-V-288	c	replaced with gap S02-WC-G12, in place of S02-WC-G07; S02-WC-531 to S02-WC-535 noted (Stripe's tool is not stated to be WooPayments'); S02-WC-263 stays in S02-V-194

@@ -1458,3 +1458,135 @@ Each row joined was compared with its own platform's statements already in it (r
 ### Check (part RD1-S8)
 
 This part ran the check on a copy holding only `b/RD1`. `merge_slices.py` merged 19 points and 311 rows. `check_subject.py` (3,073 statements, 90 gaps) gave no line of level `error`; the five errors RD1-S7's check gave, on Zid's rows naming a gap narrowed into another (S02-V-038, S02-V-077, S02-V-170, S02-V-173, S02-V-291), are gone. It gave 17 warnings, on the length of phase A's quotes (Shopify's and WooCommerce's citations), and 33 reviews: 19 on points with no phase C row yet, 12 on quotes found only in a page's source (WooCommerce's and Zid's citations), which are the coordinator's, and 2 on RD2's and RD3's statements, whose folders the copy leaves out. None names this part's rows or statements. In its `unplaced.tsv`, RD1 has no row: this part's place tasks and its revisits' leads are gone from it. In `second_pass_list.py --check`, RD1 has no open revisit, reread or note task.
+
+## Second pass, RD1-S9
+
+Part RD1-S9: the BigCommerce and WooCommerce round's tasks under RD1 (bullets a to d), from A2-BC-R and A2-WC-R (other-product-class 3f2438f3, folders `bigcommerce/` and `woocommerce/`): 9 revisits and 12 place tasks. BigCommerce's new statements are observations of the free trial store w5pamplexj (Capture Test Store NA: online payments off, one storefront, hosted in North America; default country Oman as made, and Saudi Arabia during the plan checkout). WooCommerce's are observations of a test store (WordPress 7.1.4, WooCommerce 11.2.1, WooPayments 11.2.0, WooCommerce Tax 3.7.3), whose WooPayments onboarding stopped before an account existed. Each row keeps the store, its plan or versions, and the run and step, in its scope or evidence.
+
+### Revisit S02-V-250 (bigcommerce, S02-VP-05, who checks the store's country) (part RD1-S9)
+
+S02-V-250, was gap S02-BC-G09: replaced with gap S02-BC-G16, in place of S02-BC-G09. S02-BC-G16 asks who checks the store's default country, and what set it when the store was made. No lead names a party that checks.
+
+Lead placed under (b):
+- S02-BC-378: joined S02-V-099 (S02-VP-06, who changes the store's country: the seller). 'Localization updated' answered each save under 'Settings › Localization: Default country saved (PUT v3/settings/store/locale)' (its identifier), the default country saved as United States, Oman, United Kingdom and Saudi Arabia in turn (store w5pamplexj; run 20261029T012951Z-store-settings-en, steps 40, 50, 55 and 60). A control in the store's admin, so the seller changes it (rule 4). It changes a value already set, so it isn't joined under S02-VP-04 (who sets) too, as RD1-S8 placed S02-ZD-468 (its call 1). It names no party that checks and no condition, so it is under neither S02-VP-05 nor S02-VP-07.
+
+Lead noted under (b):
+- S02-BC-380 (b): the free trial form's request, '"name":"Capture Test Store NA","projectedAnnualRevenue":"I'm not sure","region":"NA","plan_sku":"STORE-TRIAL-15DAY"' (the sign-up of store w5pamplexj; run 20261029T011432Z-trial-signup-ye-hand-en, step 1): the fields the merchant sent hold no country, and 'region' is where the store is hosted ('hosted in North America', its scope), which rule 1 keeps out; it names no party that sets, checks or changes the store's country. What set the country when the store was made is S02-BC-G16's
+
+The earlier leads stay where they are: S02-BC-277 in S02-V-089 (S02-VP-05); S02-BC-282 in S02-V-099 (S02-VP-06); S02-BC-212, S02-BC-259, S02-BC-273, S02-BC-274 and S02-BC-283 noted under (b) above in this file. S02-BC-213, S02-BC-214, S02-BC-258, S02-BC-271, S02-BC-379 and S02-BC-381, under RD1's other bullets, are placed or noted under their own tasks or earlier.
+
+### Revisit S02-V-226 (bigcommerce, S02-VP-10, documents and checks) (part RD1-S9)
+
+S02-V-226, gap S02-BC-G06: replaced with the same gap, which the work list names as still open. S02-BC-G06 asks which documents or checks a merchant provides to verify the store or the business, and what decides them. The new lead names neither.
+
+Lead placed under (c):
+- S02-BC-385: joined S02-V-228 (S02-VP-11, the platform's own payment service: 'Your store must be located in the United Kingdom or the United States.'). 'When you connect BigCommerce Payments, a brand new PayPal platform account dedicated to your BigCommerce store is created. The BigCommerce Payments account is automatically linked to your PayPal Business account.' (Connecting with BigCommerce Payments: Setting up BigCommerce Payments) says how the store can use the service. Its words name no decider. Its scope, 'stores with BigCommerce Payments (a store located in the United Kingdom or the United States, S02-BC-081)', names the store's location, the requirement S02-BC-081 gives on the same page (rule 5) (call 1).
+
+The earlier leads stay noted under (c): S02-BC-218, S02-BC-219 and S02-BC-220. S02-BC-221 and S02-BC-222, under (b), stay noted. S02-BC-386 is outside RD1's slice, and left.
+
+### Revisit S02-V-237 (bigcommerce, S02-VP-16, the store's taxes), again (part RD1-S9)
+
+S02-V-237, was gap S02-BC-G15: the work list names no gap for the point, so gap-closing settled S02-BC-G15, and the gap goes. Replaced with an answer, every store: 'All stores contain a Default Zone, which applies a 0% tax rate to any regions not set up in another zone.' (S02-BC-371, Basic Tax Setup: Default Zone). Its own words apply the Default Zone to all stores, and neither it nor its scope names a country, a site or a region (rule 4).
+
+Leads noted under (c):
+- S02-BC-368 (c): 'Configure your own tax classes, rates and zones. Basic tax will be used if your tax service is not targeted to a given country/subdivision, or is unavailable during a purchase.' (Settings › Tax: Tax rules: Basic Tax (Enabled); store w5pamplexj, default country United States; run 20261029T012951Z-store-settings-en, step 43): which tax is used follows the tax service's targeting to a country or subdivision, whose words don't say it is the store's own; outside rule 1's table (in S02-VP-16's note)
+- S02-BC-369 (c): '- heading "All tax services" [level=2]' (Settings › Tax › Add tax service: Avalara recommended; CereTax, TaxCloud Simple Sales Tax, TaxJar, Vertex and CCH® SureTax®), the same page and the same answer of GET /internalapi/v1/tax/providers with the default country saved as United States, Oman, United Kingdom and Saudi Arabia in turn (store w5pamplexj; run 20261029T012951Z-store-settings-en, steps 45, 51, 56 and 61): it names no decider, and its scope names four countries of one store, so it isn't every store (rule 4) (call 2)
+- S02-BC-372 (c): Avalara AvaTax calculates VAT/GST 'if your business has transactions into European Union member states or any other country around the world that charges VAT/GST. However, you must specify which countries you'll be collecting VAT/GST from, whether they have a permanent establishment, and whether they are the Importer of Record.' (stores with Avalara AvaTax): the countries the business has transactions into and collects from are markets it sells into, not the store's own country (rule 1); outside rule 1's table (in S02-VP-16's note)
+- S02-BC-373 (c): 'The Importer of Record is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued.' (stores with Avalara AvaTax): a definition of the party responsible for duties on imports, with no decider (rule 4)
+- S02-BC-374 (c): the shipping origin address, '{"data":{"city":"","country_code":"US",' (GET /internalapi/v1/shipping/origin/address, read on Settings › Tax and Settings › Shipping; store w5pamplexj; the same answer at steps 43 to 62 of run 20261029T012951Z-store-settings-en, the default country saved as United States, Oman, United Kingdom and Saudi Arabia in turn): a place the store ships from, which rule 1 keeps out; it names no decider of the store's taxes (rule 4)
+
+The earlier leads stay noted under (c): S02-BC-247, S02-BC-249 and S02-BC-250. S02-BC-246, S02-BC-248 and S02-BC-370 are outside RD1's slice, and left. x_words took 'Default Zone' under S02-VP-16.
+
+### Revisit S02-V-281 (bigcommerce, S02-VP-15, taxes on the platform's fees), again (part RD1-S9)
+
+S02-V-281, was gap S02-BC-G10: the work list names no gap for the point, so gap-closing settled S02-BC-G10, and the gap goes. Replaced with an answer, 'Taxes $69.60' (S02-BC-359 to S02-BC-365): the Taxes line of the Core plan's annual upgrade checkout ($348.00) on store w5pamplexj, one statement for each amount, with the billing contact's city and country in its scope. $0.00 for Muscat (OM), Los Angeles, CA (US), Toronto (CA), Tokyo (JP), Singapore (SG), New Delhi (IN), Riyadh (SA), Dubai (AE) and Sana'a (YE); $34.80 for Sydney (AU); $69.60 for London (GB); $22.96 for Austin, TX, $30.89 for New York, NY and $36.71 for Seattle, WA (US); $66.12 for Berlin (DE). The default country stayed Saudi Arabia throughout (their scope; run 20261029T015915Z-plan-upgrade-en). The decider is the store's own country, with its city, as the account's billing contact holds it: the account's address, which S02-V-262 holds under (a) ('click Edit to the right of the contact listed as the billing contact', S02-BC-282). A reading: the statements give the line for each billing contact, and their words don't say what decides it (call 3). It stands beside S02-V-236 (every store: 'All fees are exclusive of all applicable governmental fees, charges, or taxes').
+
+Leads noted under (c):
+- S02-BC-366 (c): 'All prices shown in US Dollars. Purchases in Australia will be assessed GST.' (Choose a Plan, on store w5pamplexj, default country Oman as made; run 20261029T015915Z-plan-upgrade-en, step 4): the GST's decider is where the purchase is, outside rule 1's table (in S02-VP-15's note); the prices' currency names no decider, and its scope names the store's country, so it isn't every store (rule 4) (call 3)
+- S02-BC-367 (c): 'Country [Oman]', the account's billing contact as BigCommerce had filled it (Account › Contacts › Edit Contact; run 20261029T015915Z-plan-upgrade-en, step 6): the record S02-V-281's reading rests on, but its words name no thing bound to it (rule 2); placed under (a), below
+
+The earlier leads stay where they are: S02-BC-232 and S02-BC-234 in S02-V-236; S02-BC-280 in S02-V-282, and S02-BC-281 in S02-V-234 and S02-V-283 (S02-VP-14); S02-BC-233, S02-BC-278, S02-BC-279 and S02-BC-283 noted under (c) above in this file. S02-BC-270, S02-BC-275, S02-BC-276, S02-BC-277, S02-BC-282 and S02-BC-294, under RD1's other bullets, are placed or noted earlier. S02-BC-284 and S02-BC-295 are outside RD1's slice, and left.
+
+### Revisit S02-V-286 (bigcommerce, S02-VP-18, the store's defaults), again (part RD1-S9)
+
+S02-V-286, was gap S02-BC-G11: replaced with gap S02-BC-G17, in place of S02-BC-G11. S02-BC-G17 asks whether a store made with a default country whose standard formats differ from the shared set (16 of 245 countries, such as the United States) takes them when it is made.
+
+Leads placed under (c):
+- S02-BC-376, S02-BC-377: joined S02-V-284 (the store's default country decides the standard formats that 'Set standard formats for [country]' sets). The endpoint of 'Set standard formats for <country>' (their identifier) gives a set for each country: for Oman, KGS and Centimeters with 'jS M Y' at '+00:00' (S02-BC-376); for the United States, Ounces and Inches with 'M jS Y' (S02-BC-377); 229 of 245 countries share Oman's set, in 14 distinct sets (S02-BC-376's scope; run 20261029T040218Z-standard-formats-all-en). The button sets them 'for your store’s default country' (S02-BC-285), so that the default country decides which set it takes is a reading (call 4).
+
+Leads noted under (c):
+- S02-BC-375 (c): '1,234.00 KGS/Centimeters', the store's physical dimensions as it was made, beside the button 'Set standard formats for Oman' (its identifier; store w5pamplexj, default country Oman as made; run 20261029T012951Z-store-settings-en, step 4): the values are Oman's standard set (S02-BC-376), which 228 other countries share, so its words don't show what set them when the store was made; that is S02-BC-G17's
+- S02-BC-378 (c): 'Localization updated', on the save of the default country as United States, after which the physical dimensions were 'still 1,234.00 KGS/Centimeters' and the date and timezone 'still 24th Jul 2020 @ 3:49 AM, (GMT +00:00)' (its scope; run 20261029T012951Z-store-settings-en, step 40): the save left the store's units and date formats as they were; it names no decider of the store's defaults (rule 4), and is a lead to S02-BC-G17
+
+The earlier leads stay where they are: S02-BC-243 in S02-V-239; S02-BC-253 and S02-BC-285 in S02-V-284; S02-BC-288 to S02-BC-291 in S02-V-285; S02-BC-244 noted under (c) above in this file. S02-BC-251 and S02-BC-293, under RD1's other bullets, are placed or noted earlier. S02-BC-245, S02-BC-286, S02-BC-287 and S02-BC-292 are outside RD1's slice, and left.
+
+### Revisit S02-V-044 (woocommerce, S02-VP-01, what fills the store's country), again (part RD1-S9)
+
+S02-V-044, was gap S02-WC-G01: replaced with gap S02-WC-G10, in place of S02-WC-G01. S02-WC-G10 asks where Automattic holds the merchant's country of residence that the Terms read to name the contracting entity, and where the WooPayments account's country is held once an account exists. The test store made no account.
+
+Leads placed under (a):
+- S02-WC-521: joined S02-V-039 (the store's Country / State): 'woocommerce_default_country on US:CA', the row of wp_options on the test store after the set-up (run 20261029T023002Z-db-after-setup). Its key is the id the Country / State setting has ("'id' => 'woocommerce_default_country'", S02-WC-113), which 'The country and state or province, if any, in which your business is located.' describes there (call 5).
+- S02-WC-522: joined S02-V-041 (the Payments settings' business location): user 1's row of wp_usermeta, 'woocommerce_payments_nox_profile' with 'business_country_code' OM (the business location saved as Oman at run 20261029T020454Z-store-setup-en, step 102): the key the code reads for the business location ('$user_nox_meta['business_country_code']', S02-WC-222), held per user.
+
+S02-WC-014 and S02-WC-015, noted under (a) above in this file beside S02-V-044's earlier gap, stay as they are.
+
+### Revisit S02-V-087 (woocommerce, S02-VP-07, what must hold before the store's country changes), again (part RD1-S9)
+
+S02-V-087, was gap S02-WC-G03: replaced with an answer, 'Your settings have been saved.' (S02-WC-523). It was the only message when the store's Country / State was changed to Saudi Arabia and saved, on the test store with two orders and two tax rates (its identifier; run 20261029T023051Z-country-change-en, step 23). The change went through with orders and tax rates on the store, so neither had to be removed before it. A reading: the message names no condition (call 6). S02-V-314 (added): gap S02-WC-G09, in place of S02-WC-G03, beside it. It asks for any condition on the change once a WooPayments account exists, and what the change then carries to the account and to the Payments settings.
+
+Lead placed under (b):
+- S02-WC-523: the answer above; also joined S02-V-085 (S02-VP-06, who changes the store's country: the seller), since 'Settings > General > Save changes' is a control in the store's admin (rule 4). It changes a value already set, so it isn't joined under S02-VP-04 too.
+
+Leads noted under (b):
+- S02-WC-524 (b): 'Currency [United States (US) dollar ($) — USD]', the general settings' currency after the change of Country / State to Saudi Arabia (run 20261029T023051Z-country-change-en, step 23): what the change left as it was; it names no party that sets, checks or changes the store's country, and no condition before it changes
+- S02-WC-525 (b): '{"id":1,"country":"US","state":"CA","postcode":"","city":"","rate":"7.2500","name":"CA sales tax (TEST)"', a tax rate read back after each change of Country / State (steps 24, 28, 32 and 36): as S02-WC-524
+- S02-WC-526 (b): '"id":14,"parent_id":0,"status":"pending","currency":"USD"', an order read back after each change (steps 24, 28, 32 and 36): as S02-WC-524
+- S02-WC-527 (b): the WooPayments onboarding's state with the business location Oman, after each change of Country / State to Saudi Arabia, Yemen, United Kingdom and United States (US) — California, '"messages":{"not_supported":"WooPayments is not supported in the selected business location."}' (steps 24, 28, 32 and 36): it names the business location, not the store's Country / State, as what WooPayments' support follows, and no party or condition that (b) asks for; placed under (c), below
+
+S02-WC-516 and S02-WC-528, under (c), have their own tasks or were placed earlier. x_words took 'Country / State' under S02-VP-07.
+
+### Revisit S02-V-255 (woocommerce, S02-VP-05, who checks the store's country), again (part RD1-S9)
+
+S02-V-255, was gap S02-WC-G06: replaced with an answer, 'It looks like you’re located in Yemen . Are you sure you want to create a store in United States (US) — California ?' (S02-WC-530, S02-WC-529). The core profiler showed the notice when the country chosen for the store wasn't where the visitor was geolocated, through the set-up's request to 'https://public-api.wordpress.com/geo/' (S02-WC-529) (run 20261029T020454Z-store-setup-en, steps 73 and 74). So the platform's set-up checks the country chosen for the store, which the profiler's 'Where is your store located?' holds (S02-V-274), against the visitor's location, and asks the merchant to confirm it. A check in the platform's code is the platform's (rule 4). It stands beside the platform's check of the location's form (S02-V-254), Stripe's verification (S02-V-084) and WooCommerce's work with Stripe (S02-V-098) (call 7). S02-V-315 (added): gap S02-WC-G11, in place of S02-WC-G06, beside them. It asks whether Stripe's verification checks the country answered at WooPayments' onboarding against the documents it asks for.
+
+Lead noted under (b):
+- S02-WC-531 (b): '{"id":"business_verification","path":"\/woopayments\/onboarding\/business_verification","required_steps":["wpcom_connection"],"status":"not_started"' (WooPayments onboarding on the test store, business location United States (US); run 20261029T020454Z-store-setup-en, step 87): the business verification step waits on the WordPress.com connection and wasn't started; it names no party that checks the store's country (S02-WC-G11)
+
+The earlier leads stay where they are: S02-WC-257, S02-WC-258, S02-WC-260 and S02-WC-261 in S02-V-084; S02-WC-511 in S02-V-098; S02-WC-262 in S02-V-254; S02-WC-259 in S02-V-082 (S02-VP-04); S02-WC-512 noted under (b) above in this file. x_words took 'create a store in' under S02-VP-05.
+
+### Revisit S02-V-288 (woocommerce, S02-VP-10, documents and checks), again (part RD1-S9)
+
+S02-V-288, was gap S02-WC-G07: replaced with gap S02-WC-G12, in place of S02-WC-G07. S02-WC-G12 asks which documents or checks WooPayments' own business verification asks for in each country. No lead gives them.
+
+Leads noted under (c):
+- S02-WC-531 (c): the business verification step, '"required_steps":["wpcom_connection"],"status":"not_started"' (as under (b), above): a step not reached, which names no document or check, and no decider (rule 4)
+- S02-WC-532 (c): '"context":{"fields":[],"sub_steps":[],"self_assessment":[],"has_test_account":false,"has_sandbox_account":false}' (the business verification's context before the WordPress.com connection; run 20261029T020454Z-store-setup-en, step 87): no fields, so no document or check, and no decider (rule 4)
+- S02-WC-533 (c): 'individual.ssn_last_4 Must be the last 4 digits of a 9 digit U.S. Social Security number (SSN). Card payments and Payouts will be paused immediately if not provided.' (Stripe's Required verification information tool, as a visitor: platform country United States (US), dashboard type none, account country United States (US); run 20261029T032517Z-stripe-requirements-en, step 23): Stripe's requirements for a connected account, under settings its words don't say are WooPayments', so they aren't stated to be what a WooCommerce merchant provides (rule 2's role test) (call 8)
+- S02-WC-534 (c): 'Trade license documents.company_license.files — Card payments, Payouts, and Transfers will be paused immediately if not provided.' (the same tool, account country United Arab Emirates (AE), business type company; step 28): as S02-WC-533
+- S02-WC-535 (c): 'Account country only supports recipient service agreements.' (the same tool, account country Saudi Arabia (SA), business type individual; step 31): as S02-WC-533
+
+S02-WC-263 stays in S02-V-194.
+
+### Place tasks, BigCommerce and WooCommerce round: bigcommerce (a) and (b) (part RD1-S9)
+
+Placed:
+- S02-BC-367 (a): joined S02-V-262 (S02-VP-01, your BigCommerce account's address). 'Country [Oman]' is the field of 'Account › Contacts › Edit Contact (the account's billing contact)' (its identifier), the contact S02-BC-282 names for the account's address ('click Edit to the right of the contact listed as the billing contact'), as BigCommerce had filled it on store w5pamplexj, made with default country Oman (run 20261029T015915Z-plan-upgrade-en, step 6).
+- S02-BC-378 and S02-BC-379 (a): joined S02-V-260 (S02-VP-01, Default country — The country your store is run from). S02-BC-379, 'Determines available payment options.', is the help of 'Settings › Localization › Country: Default country' (its identifier), with the value [Oman] (step 4); S02-BC-378, 'Localization updated', answered each save under 'Settings › Localization: Default country saved (PUT v3/settings/store/locale)', the default country saved as United States, Oman, United Kingdom and Saudi Arabia, and restored to Oman (run 20261029T012951Z-store-settings-en; run 20261029T025746Z-store-country-restore-en). The save goes through the endpoint whose body holds store\_country (S02-V-048), but S02-BC-378's words don't name the key, so it isn't joined there (call 9).
+- S02-BC-381 (a): a new row, S02-V-316 (S02-VP-01): '"storeCountry":"Oman"', the control panel's config (GET /internalapi/v1/controlpanel/config) at its first load after the sign-up (run 20261029T011432Z-trial-signup-ye-hand-en, step 10). 'storeCountry' is the words 'store' and 'Country' joined, the same words as Shopify's 'store country' (S02-SH-246), so its basis is `term;answers`. Its key and endpoint are not those of store\_country (S02-V-048), Get Store Information's country (S02-V-257) or the Default country field (S02-V-260), so it is its own row, as RD1-S8 kept 'business_location' of two Zid endpoints apart (its call 5) (call 9).
+
+Noted:
+- S02-BC-374 (a): the shipping origin address, '{"data":{"city":"","country_code":"US",' (GET /internalapi/v1/shipping/origin/address, read on Settings › Tax and Settings › Shipping; store w5pamplexj, the same answer with the default country saved as United States, Oman, United Kingdom and Saudi Arabia): a place the store ships from, which rule 1 keeps out of the store's own country
+- S02-BC-375 (a): '1,234.00 KGS/Centimeters', the store's physical dimensions as it was made (Settings › Localization; step 4): units, not a country, address or jurisdiction (rule 2); the button its identifier names, 'Set standard formats for Oman', names the default country that S02-V-260 holds, and no field of its own
+- S02-BC-380 (a): the free trial form's request, '"name":"Capture Test Store NA","projectedAnnualRevenue":"I'm not sure","region":"NA","plan_sku":"STORE-TRIAL-15DAY"' (run 20261029T011432Z-trial-signup-ye-hand-en, step 1): it holds no country; 'region' is where the store is hosted ('hosted in North America', its scope), which rule 1 keeps out
+- S02-BC-385 (b): 'When you connect BigCommerce Payments, a brand new PayPal platform account dedicated to your BigCommerce store is created. The BigCommerce Payments account is automatically linked to your PayPal Business account.': a PayPal account made for the store and linked to the merchant's; it names no party that sets, checks or changes the store's country (rule 2); placed under (c) in S02-V-228, above
+
+x_words took 'storeCountry; billing contact' under S02-VP-01.
+
+### Place tasks, BigCommerce and WooCommerce round: bigcommerce and woocommerce (c) (part RD1-S9)
+
+Placed:
+- S02-BC-379 (c): joined S02-V-287 (S02-VP-12, other payment providers: 'Default country — The country your store is run from, which determines the payment methods that are available for use with your store.'). 'Determines available payment options.' is the help the store's admin shows under 'Settings › Localization › Country: Default country' (its identifier), with the value [Oman] on store w5pamplexj (run 20261029T012951Z-store-settings-en, step 4): the default country, in the decider's role. BigCommerce's terms.tsv gives the same words as the definition of 'Default country'.
+- S02-WC-527 and S02-WC-528 (c): joined S02-V-199 (S02-VP-11, the platform's own payment service: 'The Business location at the top of the page is not set to one of our supported countries.'). With the business location Oman, the onboarding's state gave 'WooPayments is not supported in the selected business location.' after each change of the store's Country / State to Saudi Arabia, Yemen, United Kingdom and United States (US) — California (S02-WC-527; run 20261029T023051Z-country-change-en, steps 24, 28, 32 and 36). After the business location was set to US, it gave '"supported":true', the store's Country / State still United States (US) — California (S02-WC-528; step 37). The business location (S02-V-041 under (a)) decides, in the decider's role; the store's Country / State, changed four times, left the answer as it was.
+
+Noted:
+- S02-WC-525 (c): '{"id":1,"country":"US","state":"CA","postcode":"","city":"","rate":"7.2500","name":"CA sales tax (TEST)"', the store's tax rate read back after each change of Country / State to Saudi Arabia, Yemen, United Kingdom and United States (US) — California (run 20261029T023051Z-country-change-en, steps 24, 28, 32 and 36): the change left the rate as it was; it names no decider of the store's taxes (rule 4)
