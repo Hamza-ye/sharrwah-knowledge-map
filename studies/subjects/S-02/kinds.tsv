@@ -2236,6 +2236,13 @@ S02-WC-532	observed	run 20261029T020454Z-store-setup-en records a store, dashboa
 S02-WC-533	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
 S02-WC-534	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
 S02-WC-535	observed	run 20261029T032517Z-stripe-requirements-en records a store, dashboard or session
+S02-WC-536	observed	run 20261029T090147Z-wpcom-connect-en records a store, dashboard or session
+S02-WC-537	observed	run 20261029T090147Z-wpcom-connect-en records a store, dashboard or session
+S02-WC-538	observed	run 20261029T090147Z-wpcom-connect-en records a store, dashboard or session
+S02-WC-539	observed	run 20261029T090847Z-db-after-test-account records a store, dashboard or session
+S02-WC-540	observed	run 20261029T102416Z-db-live-account-ae records a store, dashboard or session
+S02-WC-541	observed	run 20261029T102848Z-db-live-account-gb records a store, dashboard or session
+S02-WC-542	observed	run 20261029T101705Z-stripe-onboarding-us-en records a store, dashboard or session
 S02-WC-N01	shipped	a file of the WooCommerce release
 S02-WC-N02	shipped	a file of the WooCommerce release
 S02-WC-N03	shipped	a file of the WooCommerce release

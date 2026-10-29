@@ -26,3 +26,4 @@ RD1-S8	RD1	a; b; c; d	zid; salla	the Salla and Zid round's tasks under RD1 that 
 RD3-S13	RD3	f	salla	the Salla and Zid round's Salla tasks under RD3: the rows whose why begins 'Salla and Zid round' and whose platform is salla, from A2-SA-R (observed-sa b0bd0b16)	10	31	done
 RD1-S9	RD1	a; b; c; d	bigcommerce; woocommerce	the BigCommerce and WooCommerce round's tasks under RD1: the rows whose why begins 'BigCommerce and WooCommerce round', from A2-BC-R and A2-WC-R (other-product-class 3f2438f3)	21		done
 RD3-S14	RD3	f; g	bigcommerce; woocommerce	the BigCommerce and WooCommerce round's tasks under RD3: the rows whose why begins 'BigCommerce and WooCommerce round', from A2-BC-R and A2-WC-R (other-product-class 3f2438f3)	11		done
+RD1-S10	RD1	a; b; c; d	woocommerce	the WooPayments round's tasks under RD1: the rows whose why begins 'WooPayments round', from A2-WC-R2 (other-product-class 0d79b794)	3		running
