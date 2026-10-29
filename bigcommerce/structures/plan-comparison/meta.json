@@ -1,0 +1,25 @@
+{
+  "structure": "bigcommerce/plan-comparison",
+  "platform": "bigcommerce",
+  "surface": "account dashboard (Choose a Plan)",
+  "source": {
+    "run_id": "20261029T015915Z-plan-upgrade-en",
+    "step": 4,
+    "url": "https://manage.bigcommerce.com/account/stores/1003524922/upgrade",
+    "held_as": "bigcommerce/raw/runs/20261029T015915Z-plan-upgrade-en/steps/004.html",
+    "sha256_of_table": "ef04bee7576bf93d81c9c57f580a249fd06255adfa34b9573d0d06f03ee848db"
+  },
+  "shape": "an HTML table: a header row (Get access to these features, Core, Growth, Scale, Performance), then a row per feature; a cell holds text or a mark drawn as an image ([image]); every [image] is the same mark (one SVG drawing, 39 cells); a cell without it is empty",
+  "columns": [
+    "Get access to these features",
+    "Core",
+    "Growth",
+    "Scale",
+    "Performance"
+  ],
+  "counts": {
+    "rows": 19
+  },
+  "items": "items.jsonl: one feature per line in table order; feature is the row header as the accessibility tree names it, feature_text the cell as drawn (with its tooltip)",
+  "prices_above_the_table": "Core $39 monthly or $29/mo billed annually; Growth $105 or $79; Scale $399 or $299; Performance by quote; \"All prices in US Dollars. Billed annually.\" (step 4 text)"
+}
