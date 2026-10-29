@@ -21,3 +21,33 @@ Points S02-VP-01 to S02-VP-10, written 28 October 2026 across two restarts; each
 8. Gap rows that mark no key: S02-V-075 and S02-V-087 (S02-VP-07), S02-V-226 (S02-VP-10). Their platforms have only gap rows, so they are open on every key; `check` notes them but reports no problem.
 9. A row phase B could add. Salla's dashboard code sends SA where the merchant record holds no kyc_country (S02-SA-441), a statement of S02-VP-01's row S02-V-301. As a row of S02-VP-04 it would make Salla give `the platform` and change market, pattern to vendor choice.
 10. S02-VP-01 keys. The vocabulary for (a) is used by meaning (`a country field`, `the store's address`, `the account`), with the platform's own words where it doesn't hold: `the store's location`, `مقر المتجر (the store's seat)`, `the store's currency`. Salla's `the store's address` rests on reading its tax-invoice company address (S02-SA-277) as the store's. Salla's `the account` rests on reading the merchant's personal information (S02-SA-296) as what its account holds. Without either reading, the result is vendor choice in place of no difference.
+
+## C-RD1-2
+
+Points S02-VP-11 to S02-VP-19, all (c). Each point's keys that take a founder item share one question, the point's one decision.
+
+**Keys whose cause is unknown**
+- S02-VP-15, `the billing address`: Shopify's billing address decides the taxes on its bills (S02-SH-251, S02-SH-271); Salla and Zid don't state it; BigCommerce is open (S02-V-281, S02-BC-G10). If BigCommerce's billing address decides the tax on its fees, the pairs differ as a pattern; if not, the global pair differ, a vendor choice.
+- S02-VP-15, `the legal business's address`: Shopify only (S02-SH-203); BigCommerce open on the same gap, with the same two outcomes.
+- S02-VP-16, `the store's country`: Salla, Zid, Shopify and WooCommerce give it; BigCommerce has only a gap on the point (S02-V-237, S02-BC-G15). If BigCommerce's store country decides its stores' taxes, no difference; if not, market, named rule, by Zid's tax regulation for online stores (S02-ZD-097) and Salla's ZATCA integration (S02-SA-358).
+- S02-VP-16, `a business entity`: Shopify only, by observations of single stores (S02-SH-318, S02-SH-1044); BigCommerce open on the same gap: an entity there makes a pattern, with like with like then to weigh, none a vendor choice.
+
+**Points a blocked_by row would change**
+- S02-VP-15, by S02-V-281 (S02-BC-G10): BigCommerce's invoice to a store with the account's VAT information, or BigCommerce's answer, showing what decides the tax on its own fees: the billing address, the legal business's address, or neither.
+- S02-VP-16, by S02-V-237 (S02-BC-G15): BigCommerce's answer, or a test store's Settings > Tax before and after a change of the store's country, showing whether the store's country, or a business entity, decides its stores' tax obligations.
+
+**Readings the causes rest on, for the coordinator's check**
+- S02-VP-13, `every store`: market, named rule, reading Salla's terms' 'authority and powers of the Saudi Central Bank' over the transfer of every store's funds (S02-SA-211) as a particular regulator's rule; read otherwise, vendor choice, a founder decision sharing the point's item.
+- S02-VP-16, `the merchant's country`: market, named rule by the IRS's Form 1099-K (S02-WC-070, S02-WC-071), named as the reason for WooCommerce's giving; the pair that differs is Salla and Zid.
+- S02-VP-19, `the merchant's country`: market, named rule by the GDPR, the ePrivacy Directive and the UK's PECR (S02-SH-717, S02-SH-953, S02-SH-954) and Egypt's Personal Data Protection Law No. 151 of 2020 (S02-ZD-384).
+- S02-VP-19, `every store`: business model, reading S02-WC-073 and S02-WC-074, a controller per service and per the location of the individual using it, as WooCommerce's statement of what it does; without it, unknown. Phase B's every-store readings of S02-V-218 and S02-V-219 are kept: without them the pairs would differ, a vendor choice, also a founder decision.
+- The WooPayments account country (S02-V-042) is keyed `the store's country` wherever a row names it (S02-V-198, S02-V-294, S02-V-201, S02-V-205), as phase B reads it, a record that holds the store's own country; WooCommerce's own definition of it, the registered country (S02-WC-005), is S02-V-197's key under S02-VP-11. Keyed the other way, S02-VP-12, S02-VP-13 and S02-VP-14 would each gain a key WooCommerce alone gives.
+- Keys given through rule 4 alone, a page or section tied to one country: Salla's `the merchant's country` under S02-VP-11 (S02-SA-295) and S02-VP-14 (S02-SA-256); without rule 4 the Saudi pair would differ on it.
+- Keys given by one observed store only: Salla's `the store's country` under S02-VP-18 (S02-SA-501); Zid's under S02-VP-14 and S02-VP-15 (S02-ZD-476 to S02-ZD-483); Shopify's `a business entity` under S02-VP-16 and S02-VP-17.
+
+**Problems with the method**
+1. Under (c) the vocabulary keeps `the store's country`, a field or record, apart from `the merchant's country`, where the merchant is. Salla's help names a country's stores where Zid's names its merchants (S02-SA-139 against S02-ZD-111; S02-SA-140 against S02-ZD-118; S02-SA-150 against S02-ZD-175), so the Saudi pair differ on both keys under S02-VP-11, S02-VP-12 and S02-VP-13 by these words; neither set of statements shows which record each platform reads.
+2. A platform that doesn't state a key counts as not giving it, whatever the other's kinds, so one store's observation set against another platform's silence makes a vendor choice: S02-VP-18's `the store's country` (Salla's S02-SA-501 against Zid's silence) and S02-VP-15's (Zid's checkout against Salla's). The 28 October ruling guards readings of absence, not these.
+3. A platform with few rows on a point makes differences by its silence: BigCommerce has one row under S02-VP-17, a beta's (S02-V-238), and its not stating `the store's country` there makes that key a vendor choice.
+4. A gap that asks about a key its platform already gives can't be marked open, though it asks about another part of X: S02-SA-G18 (the default language, beside the currency Salla's store holds) and S02-BC-G11 under S02-VP-18, S02-ZD-G32 under S02-VP-15. `check` notes each as marking no key.
+5. Deciders that aren't countries take no key here: plans (S02-SA-197, S02-BC-083), an industry risk level (S02-BC-223), a payment processor or gateway that is X itself (S02-SH-184, S02-BC-125). The (c) vocabulary names records of a country and 'the platform's own word for another decider'; the brief doesn't say whether these count, and keyed, each would be one platform's vendor choice.
