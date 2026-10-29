@@ -234,6 +234,9 @@ You asked whether the model should start from two platforms rather than all five
 - **Q1's force-fits** came from reconciling several vocabularies at once.
 - **Depth is uneven.** Shopify and Salla are read in full; Zid and BigCommerce only at declaration level, and Q1 never matched them.
 - **Your rule of 24 October** puts Shopify and Salla first.
+- **Shopify alone would frame the class its own way.** It has the stage for most regional needs, as slots: 13 of its concerns live only in its app store (Q1's `where` statements), among them shipment tracking and carriers, product reviews, loyalty, accounting, mobile app builders, and international domains.
+  - Salla builds two of those into its own core, product reviews and its loyalty program. It leaves others, such as accounting and app makers, to apps, as Shopify does.
+  - So nothing would be lost on Shopify alone. But the question your intent gives engineering, which shape is better where the class differs, would be pre-answered by one platform's choice. With Salla in the anchor, both shapes are visible from the start.
 
 This is also how domain analysis works: the model is built from representative systems, then checked and extended against others. The guard against the anchor pulling too hard:
 - every concern of every platform lands somewhere;
