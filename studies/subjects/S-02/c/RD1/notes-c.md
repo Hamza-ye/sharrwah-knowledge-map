@@ -78,3 +78,16 @@ By the coordinator's rulings on C-R3a's problems (29 October 2026):
   - S02-VP-16's point row: S02-BC-369, which answered S02-BC-G15;
   - S02-VP-10's "the merchant's country" and 'the business type': S02-WC-G12.
 - G09's open marks and the S02-VP-16 override stand as written.
+
+## C-R4
+
+The WooPayments round (A2-WC-R2, other-product-class at 0d79b794; phase B's RD1-S10), 29 October 2026.
+- S02-VP-07: keys --keep dropped the open marks of S02-V-314, whose gap S02-WC-G09 is answered by S02-WC-537. WooCommerce went from open to not stated on the five keys G09 held open. I wrote them again by the brief's tests, and their causes are unchanged:
+  - the two Zid wallet keys stay unknown, blocked by S02-V-075 (Salla's only row);
+  - 'all financial services deactivated', 'outside of the verification process' and 'additional verification' stay vendor choice, since Shopify and BigCommerce differ.
+- 'at any time' was rewritten to cite S02-WC-536 and to drop S02-V-314. Its states and cause are unchanged.
+- The point row's WooCommerce letter stays unknown. It now cites S02-WC-523, S02-WC-536 and S02-WC-537 in place of S02-WC-G09.
+- No founder item changes.
+- S02-VP-01: S02-V-044 now names S02-WC-G13, which asks where Automattic holds the merchant's country of residence that its Terms read. That is the part of G10 that was open on 'the billing address', so the mark stands. WooCommerce's states are unchanged: 'the billing address' is open, and 'the account' is given (S02-V-042, now with S02-WC-537 and S02-WC-539 to S02-WC-541).
+- S02-VP-06: S02-V-085's S02-WC-536 keeps 'the seller'. Nothing changed.
+- Scope: S02-V-087 holds a save with no WooPayments account and one with a test account (test mode, S02-WC-536), and no save with a live account. WooCommerce's not stating the balance keys rests on that scope. This changes no cause while Salla's S02-V-075 is open, since Salla and Zid decide those keys.
