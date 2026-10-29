@@ -11,13 +11,14 @@
 - **G2 is answered:** "evidence" for all ten subjects, so each runs on the evidence, in the order of [`studies/subjects/subjects.tsv`](studies/subjects/subjects.tsv).
 - **PR #7** (the reset, G1's close and S-01's review) is merged into `main` on the founder's word of 26 October.
 
-**Open gate:** G3, after each subject. S-02 is under way.
+**The founder's intent (29 October 2026).** Sharrwah is a merchant platform of the class that Shopify represents worldwide and Salla and Zid in the region. Its extent comes from the class, not from the launch, and what fills a slot in a market never defines the platform (`founder-decisions.tsv`; the handoff and the go, verbatim, in `founder-messages/`; the review, [`reports/intent-review.md`](reports/intent-review.md)).
+- **The founder decides** the items on their list (`PLAN.md`, section 3). Everything else is engineering's, and each ruling is listed for the founder's veto.
+- **The plan** now puts the class's model before architecture (`PLAN.md`, Stage 4A). The subjects continue beside it, as the analysis of where the class varies by market.
+- **Architecture** starts once the extent's report has come to the founder (gate GM). The extent's budget is 250 million agent tokens.
 
-**Waiting on the founder,** all on one page, [`reports/S-02.md`](reports/S-02.md):
-- **The three answer lines of 28 October:** the architecture alongside the subjects, in the tested form; building ahead; and quality targets. S-03 waits on the first, since it sets how S-03 runs.
-- **S-02's nine decisions, for gate G3** ([`decisions.md`](studies/subjects/S-02/decisions.md)). D1 to D7 come from the five references. D8 and D9 are needs only the Yemen row shows, weighed against established designs.
-- **E5, to confirm:** what "market" meant in the founder's decision of 26 October. E1 to E4 are engineering's, for the founder's veto.
-- **Optional:** the questions only a platform can answer ([`reports/S-02-evidence-requests.md`](reports/S-02-evidence-requests.md), section 5), and the ISO standards' pages that iso.org refused to the capture.
+**Open gate:** GM, after the class's model's extent. S-02 has reached its end. Under the intent, its nine decisions are engineering's rulings, listed for the founder's veto.
+
+**Waiting on the founder:** nothing until the extent's report. The founder may veto any ruling at any time.
 
 *Settled on 28 October:*
 - **The founder's evidence is in.** The founder's local agent took Salla and Zid as far as they can be taken:
@@ -116,8 +117,15 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** 1,638 million agent tokens at 11:15 UTC on 29 October, with the WooPayments round's 10.5. That is 1,582 at the end of the night, inside the projection of 1,500 to 1,600, and 45.5 for BigCommerce's and WooCommerce's round. The coordinating session's own tokens since S-02 began: 975 million ([the frame's budget](studies/subjects/S-02/frame.md#budget)).
 
 **Next:**
-1. **The founder's answers** to [`reports/S-02.md`](reports/S-02.md): the three answer lines, the nine decisions, and E5. Each answer goes in `founder-decisions.tsv`, and the register records it.
-2. **Then S-02 closes,** with this file, its report, and PR #8's merge on the founder's word.
-3. **S-03 starts** as the founder's answer on the tested form says. If yes, decisions come first, under the four tests. If no, S-03 runs by the plan's steps.
+1. **An independent reading of the plan change** for contradictions. Its findings are fixed before anything builds on it.
+2. **S-02's register re-statused** under the intent. E5 is ruled; [`reports/S-02.md`](reports/S-02.md) is replaced by [`reports/intent-review.md`](reports/intent-review.md).
+3. **A fresh coordinating session** runs Stage 4A. It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
+   1. the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
+   2. the review of its output, which checks every placement against all of Q1's statements;
+   3. the conventions and a checker;
+   4. the other domains and platforms;
+   5. Q3's check for what the model misses;
+   6. the extent's report, and the orientation page updated before it reaches the founder.
+4. **After GM:** architecture and the model's detail, area by area, beside the subjects.
 
 **To resume:** read `PLAN.md`, this file and `founder-decisions.tsv`.

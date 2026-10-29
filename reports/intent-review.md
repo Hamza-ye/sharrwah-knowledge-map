@@ -177,6 +177,8 @@ Everything else stays in the platforms' own words, with the reading marked.
 
 ## 10. The text as it would be recorded
 
+*Recorded on the founder's go of 29 October, with the founder's edits, in `founder-decisions.tsv`. Rows 1 to 3 cite the handoff and the go, both saved verbatim in `founder-messages/`.*
+
 You agreed with each point above, so these are the rows I'd write on your go. Each row's basis is your messages of 29 October.
 
 **Row 1, Sharrwah's intent.** Your text verbatim, and then the lines added on review:
@@ -225,6 +227,8 @@ Each change goes in its section, with a dated line in section 11 saying what it 
 4. **Re-status S-02's register:** the nine decisions become engineering's rulings, listed for your veto, with E5 ruled. [`reports/S-02.md`](S-02.md) is marked replaced by this page.
 5. **Commit and push,** and update PR #8.
 
+**The model's check for what it misses** runs at the end of the extent, before its report comes to you. Q3's reconciliation places each of the Knowledge Map's 179 questions and the 81 payment rows against the model's capabilities. A row the model doesn't cover is a candidate miss, checked against the evidence before it enters. At close-out, Q3 is run again against the register only where the register has changed what it covers. `PLAN.md` Stage 5 changes to match.
+
 **Then I open a fresh coordinating session,** and you follow it there (your answer). It runs the class's model: the dry run, the review of its output, then the rest. It starts from `CLAUDE.md`, `PLAN.md`, `STATE.md` and `founder-decisions.tsv`, as the reset's cold-start test showed it can. This session stops once it has handed over.
 
 ## 13. Two platforms first
@@ -234,7 +238,8 @@ You asked whether the model should start from two platforms rather than all five
 - **Q1's force-fits** came from reconciling several vocabularies at once.
 - **Depth is uneven.** Shopify and Salla are read in full; Zid and BigCommerce only at declaration level, and Q1 never matched them.
 - **Your rule of 24 October** puts Shopify and Salla first.
-- **Shopify alone would frame the class its own way.** It has the stage for most regional needs, as slots: 13 of its concerns live only in its app store (Q1's `where` statements), among them shipment tracking and carriers, product reviews, loyalty, accounting, mobile app builders, and international domains.
+- **Shopify alone would frame the class its own way.** It has the stage for most regional needs, as slots. For 13 of its concerns, Q1's `where` statements name only its app store: among them shipment tracking and carriers, product reviews, loyalty, accounting, mobile app builders, and international domains.
+  - *Corrected on the founder's reading:* that count reads only Q1's `where` column. Q1's other statements put some of these in Shopify's own plans: order tracking, AI product descriptions and local domains. The brief has every placement read, and the dry run's review checks exactly this.
   - Salla builds two of those into its own core, product reviews and its loyalty program. It leaves others, such as accounting and app makers, to apps, as Shopify does.
   - So nothing would be lost on Shopify alone. But the question your intent gives engineering, which shape is better where the class differs, would be pre-answered by one platform's choice. With Salla in the anchor, both shapes are visible from the start.
 
@@ -244,21 +249,19 @@ This is also how domain analysis works: the model is built from representative s
 - the reviewer looks for forced fits and splits them.
 
 
-## 14. Why the platforms differ: a hypothesis to test later
+## 14. Why the platforms differ: a hypothesis each area's design tests
 
-**Your hypothesis.** Shopify leaves many things to apps because it is mature and global: no one market's concerns can live in its core. Salla was built around Saudi Arabia, and its later markets meet Saudi-shaped features.
+*Changed on the founder's go:* this is a hypothesis that each area's design tests against the model, not a rule set now. As first worded, it would have put D9 in one market's module. But the room S-02 recommends for D9 is in the core: how every amount names its currency.
 
-**Where it holds, and where it doesn't:**
-- **For capabilities tied to one market,** such as a country's e-invoicing, local payment methods or local couriers, it fits. Established practice for software sold in many countries keeps a global core and puts each country's specifics in modules outside it. SAP's country versions, the localization packs of other enterprise systems, and keeping locale-specific logic out of the core are all examples. S-02 shows one Saudi-shaped constraint in Salla: one country per market, because its taxes follow the market's country (D5).
-- **For capabilities tied to no market,** such as product reviews or loyalty, the global explanation doesn't apply. Shopify leaves them to apps, and Salla builds them into its core. There, Shopify's ecosystem business model and a younger platform filling gaps are the likelier readings. The plan's test form calls these causes "business model" and "market pattern". It counts "maturity" only where a platform marks it, as with beta or sunset.
+**The hypothesis.** Shopify leaves many things to apps because it is mature and global, so no one market's concerns can live in its core. Salla was built around Saudi Arabia, and its later markets meet Saudi-shaped features.
 
-**What it changes now:** nothing.
-- The extent records placements without causes.
-- Its cells keep each statement's scope, so the capabilities tied to a country will show.
-- The anchor of Shopify and Salla keeps both shapes visible.
+**What the evidence and practice say so far:**
+- **Capabilities tied to one market,** such as a country's e-invoicing, local payment methods or local couriers: the hypothesis fits.
+  - Software sold in many countries usually keeps a global core, with each country's specifics in modules outside it: SAP's country versions, and the localization packs of other enterprise systems.
+  - S-02 shows one Saudi-shaped constraint in Salla: one country per market, because its taxes follow the market's country (D5).
+- **Capabilities tied to no market,** such as product reviews or loyalty: the global explanation doesn't apply. There, Shopify's ecosystem business model and a younger platform filling gaps are the likelier readings.
+- **A need one market shows can still reach the core.** The room the platform keeps for it may sit there, as D9's does: how every amount names its currency. The core holds the general mechanism, and the market's setup fills it.
 
-**What it sets for later,** as engineering's rule when each area's design is decided:
-- **A capability tied to a market** goes outside the core, in that market's module, whoever builds it.
-- **A capability tied to no market** is decided on its value to the product.
-
-Outside the core doesn't mean third-party: Sharrwah can build its own market modules on a global core. That is the shape the intent describes: what fills a slot is that market's setup.
+**How it is tested:**
+- **When:** at each area's design, against the model. A capability's own scope, in its cells, shows whether the platforms tie it to a market.
+- **What decides:** where the shapes differ, the design weighs the hypothesis with the area's evidence and states its reason (the intent: "which shape is better where they differ" is engineering's). Nothing is placed by the hypothesis alone.
