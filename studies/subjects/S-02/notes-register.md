@@ -326,3 +326,68 @@ This pass placed the WooPayments round (A2-WC-R2, other-product-class 0d79b794; 
 `decisions.md`'s D2 now says that the store country changed with a WooPayments account present, and that the account keeps its own country while a move makes a new one.
 
 Rows changed against df60b42e: S02-D2 (alternatives, closes, evidence).
+
+## Eighth pass, 29 October: the founder's intent
+
+This pass applied the founder's standing decision of 29 October, "Sharrwah's intent" (`founder-decisions.tsv`, at 9cba3217). I first checked that the three files were unchanged since 82b8a5fc, the D2 pass; they were.
+
+The founder now decides only the items on their list: markets; first merchants; plans and prices; agreements and partners; the company, its legal structure and licences; spending; and whether Sharrwah's own company runs a service. Everything else is engineering's, listed for the founder's veto. None of S-02's nine decisions is on that list.
+
+### What changed
+
+- **S02-D1 to S02-D9:**
+  - Each status is now "engineering's ruling (the founder's intent, 29 October), listed for the founder's veto".
+  - Each recommendation stands as the ruling, and `answer` stays empty.
+  - The kind stays "founder decision", since the brief's kinds and the checkers use it.
+- **S02-D8 and S02-D9** carry the intent's product-gap rule. The room is kept as recommended, and building the extension (D8) or naming an area (D9) goes with the setup of the market that needs it; it never defines the platform.
+- **S02-E5** is now a ruling.
+  - The founder asked that "market" in their decision of 26 October be read as the class's evidence shows it (founder-messages/2026-10-29-intent-handoff.md, line 39).
+  - The class binds payment processing to the business entity, and assigns entities to the markets sold into (S02-SH-280). So who holds sellers' money is a setting of the business that takes the payment, and each market reaches it through the business assigned to it.
+  - Its status names the intent.
+- **S02-E1 to S02-E4:** status "engineering's ruling, listed for the founder's veto".
+- **S02-E2:** "If the founder takes S02-D8" now reads "With S02-D8's room".
+- **The moved rows:**
+  - Rows whose subjects decide something on the founder's list each gain one line saying it goes to the founder when that subject runs: S02-M1 (the contracting company, its legal structure and agreements), S02-M2 (payment partners; whether Sharrwah's own company runs payments), S02-M4 (the markets served), S02-M6 (the bill's currency, as part of prices), S02-M7 (carrier and fulfilment partners; whether Sharrwah runs shipping) and S02-M8 (plans and prices).
+  - S02-M3 (tax) and S02-M5 (privacy) gain no line.
+  - Beyond that one line, I corrected "on S02-D1 and S02-D3 (for the founder)" to "(engineering's rulings)" in the moved rows, and in S02-M2 "as S02-E5 reads it, for the founder to confirm" to "as S02-E5 rules". Left as they were, they would contradict the rulings.
+- **`decisions.md`** is reframed as engineering's rulings for the founder's veto:
+  - the title and opening cite the intent's row, and say why there is a veto line instead of an answer;
+  - every "Answer: (open)" is now "Veto: (none)", eleven in all, D7's three parts included;
+  - "Recommendation (engineering's)" is now "Ruling (engineering's)";
+  - the product-gap section carries the intent's rule;
+  - the moved section names what goes to the founder;
+  - E5 is the ruling.
+
+### Rows changed against 82b8a5fc
+
+| Row | What changed |
+| --- | --- |
+| S02-D1 | status |
+| S02-D2 | status |
+| S02-D3 | status |
+| S02-D4 | status |
+| S02-D5 | status |
+| S02-D6 | status |
+| S02-D7 | status |
+| S02-D8 | recommendation, status |
+| S02-D9 | recommendation, status |
+| S02-M1 | recommendation |
+| S02-M2 | recommendation |
+| S02-M3 | recommendation |
+| S02-M4 | recommendation |
+| S02-M5 | recommendation |
+| S02-M6 | recommendation |
+| S02-M7 | recommendation |
+| S02-M8 | recommendation |
+| S02-E1 | status |
+| S02-E2 | recommendation, status |
+| S02-E3 | status |
+| S02-E4 | status |
+| S02-E5 | recommendation, evidence, status |
+
+No other row changed.
+
+### Checks
+
+- `register_items.py`: 143 founder items; 0 unanswered, 0 answered twice, 0 names unknown.
+- `check_register.py`: 817 citations checked, 0 problems.
