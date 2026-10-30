@@ -1,7 +1,11 @@
 # Inspection of the held pass: its brief, selection, entries, batches and scripts (30 October 2026)
 
 **What this is:** an inspection, before it runs, of the held pass (`PLAN.md`, Stage 4A): `briefs/H-held.md`; the coordinator's selection `held/selection.tsv` (237 rows); the entries `held/<platform>/entries.tsv` (14,889) built by `method/held_entries.py build`; `held/batches.tsv` (22 batches); and the scripts `method/held_entries.py` and `method/held_vs_read.py`. The inspector wrote none of them and changed no file except this one.
-- Commands ran from the repository's root at `ab8d98ff`. The branch moved to `1d213be6` while the inspection ran. `git diff --stat ab8d98ff 1d213be6` touches none of the files above. It adds `method/held_amend.py`, the coordinator's converter from placements to evidence, which B-4, B-6 and C-2 read because it shows what will be done with the output.
+- Commands ran from the repository's root at `ab8d98ff`, and every line number below is at that commit unless a finding names another.
+- The branch moved to `4908c977` while the inspection ran:
+  - of the files above, only `method/held_vs_read.py` changed. It gained a ledger count (`ledgers()`), after the lines cited here, which shift by one;
+  - `9d1369d3` added `method/held_amend.py`, the coordinator's converter from placements to evidence. B-4, B-6 and C-2 read it because it shows what will be done with the output;
+  - `04aefe93` added "What a place of its own is" to `B-extent.md`'s conventions, which B-3 reads.
 - The evidence was read at observed-sh `19a5f6435`, observed-sa `b0bd0b16` and other-product-class `0d79b79`, through their guides first. The WooCommerce release was read at `/home/user/woocommerce-release/11.2.1/woocommerce`.
 - Tests that write ran on copies of `studies/class-model/` in the scratchpad, with `CLASS_MODEL_DIR` set.
 
@@ -122,7 +126,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 **S-7. Two reasons presuppose a maker.**
 - *Found:*
   - **Salla `shipping-carriers`:** its reason is "the shipping companies a store is offered, Salla's own among them" (line 160).
-    - All 25 of its entries carry `type: salla`: Aramex, Smsa, Dhl, Aymakan, Redbox and the rest (`show --structure shipping-carriers`).
+    - 15 of its 25 entries carry `type: salla`: 9 carriers, among them Aramex, Smsa, Dhl, Aymakan, Redbox and iMile. 10 carry `type: app` (`show --structure shipping-carriers`). The entries don't say what `type: salla` means: a carrier Salla integrates, or one it provides.
     - One carrier's name carries Salla's brand: "سلة - جي اند تي اكسبريس".
     - `B-extent.md` (line 115): "A product's name that carries the platform's brand doesn't name its maker."
   - **Shopify `play-publisher-apps`:** its reason is "Shopify's own Android apps" (line 58).
@@ -207,7 +211,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
   | Salla `portal-menu-definitions` | 218 | 160 | menu items with their routes, permissions and feature gates, nested in `props` |
   | Salla `docs-event-lists` | 231 | 108 | list rows whose text is in `item`, which `SKIP` drops too (E-4), and table rows in `cells` |
 
-  Three of the four `yes` structures with no entries at all are in this table, and E-1 is the fourth. Shopify `admin-roles` and `plan-comparison-admin` also give none, rightly: their items are read.
+  Six `yes` structures give no entries at all. Three are in this table, and one is E-1's. The other two, Shopify `admin-roles` and `plan-comparison-admin`, give none rightly: their items are read.
 - *Fix:*
   - Drop the `WORDS` test. Drop instead a rendering that is empty, or made only of layout keys (`role`, `kind`, `tag`, `type`, `class`, and `id` where it is opaque).
   - Render a nested dict's words (`props.title`, `cells.*`) into the text.
@@ -308,7 +312,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 **E-10. Sampled against their items and sources, and found faithful:**
 - Zid `store-plan-policies`: its 633 entries are the 633 keys of `user.store.subscription.policies_v2` in its source answer.
 - Zid `dashboard-page-index`, `dashboard-route-manifest` and `store-permissions`.
-- BigCommerce `channel-catalog`, against `steps/002.frame-0.aria.yaml` of its run, and `payment-gateways`.
+- BigCommerce `channel-catalog`, against `steps/002.frame-0.aria.yaml` of its run, and `payment-gateways`, whose first table's 23 gateways are the 23 of `steps/001.html`.
 - WooCommerce `options`: 237 of the 576 rows of `options.tsv` match the rule.
 - Shopify `dev-changelog` (768 entries, as `meta.json` counts) and `admin-router` (1,364 items, 1,364 renderings, no merge).
 - No `items.jsonl` line fails to parse. One rendering merges by case alone: "Settings" and "settings".
@@ -330,7 +334,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 **B-1. The brief's own list of `supports` departs from `B-extent.md` in ways that move counts.**
 - *Found:* the brief restates the values (lines 32 to 36) and sends the agent to `B-extent.md`'s two sections (line 25). Where the two differ, an agent follows the list in front of it. Line numbers of `B-extent.md` are at `ab8d98ff`.
   - **`core` includes any "permission"** (line 32). `B-extent.md` (line 134, the dry run's S7) says "A partner's permission shows an interface for apps", and only the staff permission is `core`. `check_class_part.py` applies S7 as `shows` (line 383).
-    - Selected structures that list partners' and apps' access: Shopify `collaborator-access-permissions` (18 entries), `partner-api-client-permissions` (2), `app-install-consent` (29), and the partner side of `dev-dashboard-scopes` (99).
+    - Selected structures that list the access a partner or an app requests: Shopify `collaborator-access-permissions` (18 entries), `partner-api-client-permissions` (2) and `app-install-consent` (29). An API's access scopes, such as `dev-dashboard-scopes`' (99), are another case: the platform's own API, `core` for its own feature by the dry run's C1 (line 132).
     - The class checker's guard reads a statement's note ("partner can request"), which a held entry lacks (C-2).
   - **`own-service`** is "only where the entry names the platform's company as the maker or provider" (line 33). `B-extent.md` (line 115) adds three things:
     - "or a company of its group";
@@ -344,7 +348,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 - *Fix:* replace lines 32 to 36 with:
 
   > `supports` takes `B-extent.md`'s values exactly as "Cells and evidence" and its conventions define them. This pass's entries are statements in that sense. In particular:
-  > - a partner's or an app's permission or access is `shows` (the dry run's S7), and the staff permission is `core`. This covers Shopify's collaborator permissions, its Partner API permission sets and an app's install consent, and Salla's partner access requests;
+  > - a permission or access a partner or an app requests is `shows` (the dry run's S7), and the staff permission is `core`. This covers Shopify's collaborator permissions, its Partner API permission sets and an app's install consent, and Salla's partner access requests. An API's own access scope is `core` for its own feature (C1);
   > - `own-service` needs the entry to name the platform's company, or a company of its group, as the maker or provider of a separate product, app, extension or service. A brand in a product's name, a field's value or a capture's label doesn't name a maker;
   > - a statement that makes the merchant or the buyer responsible is `shows`, never `outside`;
   > - a released flag supports `core`, with its plans or store as its scope;
@@ -375,7 +379,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
   - Line 37 makes `new` an entry that gives a thing "a place of its own: an admin section or route". Line 43 says "A sub-page, sub-route or setting of a thing the model holds is that capability's entry, not a new one."
   - Almost every route or section sits under something the model holds: the admin, Settings or a section.
   - Example: BigCommerce `BC-E-00035`, "group: Advanced; section: Early access; description: Try new tools, beta functionality, and upcoming features". It is a settings section, a place of its own, and `class_slice.py caps --terms "early access; feature preview; beta; preview"` finds no capability for it. One agent writes `new:Early access`. Another places it on CM-ACC-006, "Store details and general settings", as a sub-page of Settings.
-  - The working tree holds an uncommitted addition to `B-extent.md`'s conventions, "What a place of its own is" (after `inspection-Q3M.md`, Q3M-6). It says "A place whose thing a capability already holds, as its cells' readings show, is that capability's evidence, not a new one". That is narrower than line 43.
+  - Since `04aefe93`, `B-extent.md`'s conventions define "What a place of its own is" (after `inspection-Q3M.md`, Q3M-6). They say "A place whose thing a capability already holds, as its cells' readings show, is that capability's evidence, not a new one". That is narrower than line 43, which the brief still holds.
 - *Fix:* replace the first sentence of line 43 with:
 
   > A sub-page, sub-route or setting is a capability's entry when it is that capability's own thing or a part of it: its list, detail, edit or settings page, or one of its settings. A section or route that only sits under a container (Settings, Apps, a menu, the admin), and whose own thing no capability holds as the cells' readings show, is `new`. Name its parent in your notes. A field, a toggle or a line of text inside a page is never a place of its own.
@@ -437,7 +441,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 
 **B-8. The basis line, the reading list, and two commands.**
 - *Found:*
-  - **The basis line** (line 7) reads "reaches it by reading, not by search (the founder, 30 October)". The founder's decision (`founder-decisions.tsv`, row 33) says "read through their own reading guides and indexes, not by search alone", and "Search (method/held_index.py, method/corpus_search.py) follows the guides".
+  - **The basis line** (line 7) reads "reaches it by reading, not by search (the founder, 30 October)". The founder's decision (`founder-decisions.tsv`, line 33) says "read through their own reading guides and indexes, not by search alone", and "Search (method/held_index.py, method/corpus_search.py) follows the guides".
   - **The reading list:** the decision lists `docs/OPERATING.md` and `index/`, and, for other-product-class, each platform folder's `index/` and `structures/REGISTER.tsv`.
     - The brief (lines 19 and 20) leaves out `index/` on every platform, and the register for Zid, BigCommerce and WooCommerce. Those agents then read no description of their structures except `meta.json`.
     - `OPERATING.md` is for running captures. This pass sends no capture request, and the brief could say so.
@@ -492,7 +496,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 ### Must fix
 
 **C-1. `check` passes rows the brief forbids.**
-- *Found:* on a scratch copy (`CLASS_MODEL_DIR`), I wrote `placements-BC-1.tsv` with 15 careless lines among 127 `out` lines. `check --platform bigcommerce --batch BC-1` refused only three things:
+- *Found:* on a scratch copy (`CLASS_MODEL_DIR`), I wrote 17 careless lines into `placements-BC-1.tsv` in two rounds, with `out` lines for the other entries. `check --platform bigcommerce --batch BC-1` refused only three things:
   - a comma-separated id list;
   - an entry placed twice;
   - the header of a copy saved with a byte-order mark and CRLF line ends.
@@ -550,7 +554,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 
 **K-1. A 900-entry batch outgrows the context this project keeps.**
 - *Found:*
-  - `STATE.md` (line 153) and `method-report.md` (sections 4 and 7) keep a context under about 200,000 tokens, since a request costs about its whole context.
+  - This project keeps a context under about 200,000 tokens (`STATE.md`, line 153; `method-report.md`, section 7), or 250,000 at most (section 4), since a request costs about its whole context.
   - Printing each batch's entries once, at `show`'s width (an assumption: 3.5 characters a token for Latin text, 2 for Arabic):
 
     | Batch | SH-6 | SA-3 | SA-4 | SH-4 | SH-1 | SH-3 |
@@ -579,7 +583,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 - *Cuts that lose no evidence,* with the counts measured:
   - **Smaller batches (K-1):** the same entries in 300-entry batches cost about 160 million by the same assumptions, since a batch's cost grows with the square of its context's length.
   - **One entry per thing, not per store or answer set:**
-    - Shopify `shop-request-details` renders `set: 0`, `set: 1` and so on, a capture's index, into its text. So its 736 entries hold about 100 distinct section and key pairs;
+    - Shopify `shop-request-details` renders `set: 0`, `set: 1` and so on into its text. `set` is the capture's index of the answer an item comes from (each label's `sets.jsonl`). So its 736 entries hold about 100 distinct section and key pairs;
     - Salla `dashboard-features` repeats, for other stores, 236 of its 241 entries' feature names already read.
 
     Render the per-store values as the scope of one entry.
@@ -599,7 +603,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 
 **K-4. No effort level is stated, and there is no dry run.**
 - *Found:*
-  - The founder's decision of 30 October (`founder-decisions.tsv`, row 32): "No agent runs at `medium` or `low` for reading evidence, reviewing, or making an engineering judgement: `high`, `xhigh` or `max`. … Whether a level misses is judged by the quality and completeness of its results."
+  - The founder's decision of 30 October (`founder-decisions.tsv`, line 32): "No agent runs at `medium` or `low` for reading evidence, reviewing, or making an engineering judgement: `high`, `xhigh` or `max`. … Whether a level misses is judged by the quality and completeness of its results."
   - Neither the brief nor `batches.tsv` names a level.
   - The pass has no dry run, though the brief is new and the extent's own brief had one (`PLAN.md`, Stage 4A).
 - *Fix:*
@@ -611,7 +615,7 @@ Severity: **must fix** means an agent following the brief would write wrong plac
 ## Part 6. What the pass leaves unread, and how a second stage should read it
 
 **U-1 (should fix). The unread admin pages, help and docs, and a route to them by cell.**
-- *Found:* `held-vs-read.tsv` gives, per group, the addresses held readable, and how many of them the model read:
+- *Found:* `held-vs-read.tsv` gives, per group, the addresses held readable, and how many of them the model read. The figures are at `ab8d98ff`. Since `ae35dd97`, which reads archives held in parts, `help.shopify.com/manual` counts 5,438 held and 124 read.
 
   | Platform | Admin pages and answers | Help and docs |
   | --- | --- | --- |
@@ -665,9 +669,9 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. The tests that 
    - the merges by case alone, and the lines that fail to parse.
 3. **The citations of selected structures:** for every citation that names a line, from the concern map and the landed subjects, the line at the cited commit against the line at the head, and whether the quote is on it.
 4. **A rebuild:** `build --platform shopify` on a scratch copy, with the help-notes rule fixed.
-5. **The checker on fixtures:** `check --platform bigcommerce --batch BC-1` on scratch placements (15 careless lines; then a copy with a byte-order mark and CRLF line ends), and `method/held_amend.py plan --platform bigcommerce` on the same placements.
+5. **The checker on fixtures:** `check --platform bigcommerce --batch BC-1` on scratch placements (17 careless lines in two rounds; then a copy with a byte-order mark and CRLF line ends), and `method/held_amend.py plan --platform bigcommerce` on the same placements.
 6. **Items against their sources:**
-   - BigCommerce: `plan-comparison`'s items against `source.html` and `steps/004.aria.yaml`; `settings-list` against `steps/002.frame-0.aria.yaml`; `channel-catalog` against its step;
+   - BigCommerce: `plan-comparison`'s items against `source.html` and `steps/004.aria.yaml`; `settings-list` against `steps/002.frame-0.aria.yaml`; `channel-catalog` against its step; `payment-gateways`' first table against `steps/001.html`;
    - Zid: `store-plan-policies` against its answer;
    - WooCommerce: `options` against `options.tsv`, and the nested lists of `payments-providers` and `core-profiler-free-extensions`;
    - Salla: `com-plans`' text; `docs-event-lists`' names against the concern map's citations and the other entries; `settings-center`'s keys against `dashboard-translations`;
@@ -681,9 +685,9 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. The tests that 
 ## What I didn't check
 
 - I placed no entry, beyond the fixtures, and judged no placement against the model beyond the examples cited.
-- I verified the items of 11 structures against their sources ("What I ran", item 6), not every structure's.
+- I verified the items of about a dozen structures against their sources ("What I ran", item 6), not every structure's.
 - I named WooCommerce's release lists (S-4) from their files. I didn't extract them or count their entries beyond the settings ids.
 - I didn't read `docs/OPERATING.md` in either observed repository, nor `index/` beyond the ledgers' names and the head of `ledger-summary.tsv`.
 - The cost figures in K-1 and K-3 are assumptions from this project's measured rates and a characters-per-token ratio. They were not measured on a held batch.
 - `method/held_amend.py`, and the changes to `class_slice.py` and `check_class_part.py`, came after the inspected commit. I read them for what the coordinator will do with the output, and tested `held_amend.py plan` once.
-- While I ran, the working tree held the coordinator's uncommitted changes: `briefs/B-extent.md`'s "What a place of its own is", `briefs/Q3-misses.md`, three scripts, and `inspection-Q3M.md`. B-3 cites the first as uncommitted. I changed none of them.
+- While I ran, the coordinator changed and committed other files (`04aefe93` to `4908c977`): `briefs/B-extent.md`, `briefs/Q3-misses.md`, `PLAN.md`, `held-vs-read.md` and `.tsv`, `method/held_vs_read.py` and others. I read only what this file cites from them, and changed none of them.
