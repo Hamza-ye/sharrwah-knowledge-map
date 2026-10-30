@@ -330,15 +330,29 @@ def release_items(kind):
                 m = re.search(r"'id'\s*=>\s*'([^']+)'", l)
                 if not m:
                     continue
-                near = L[max(0, i - 8): i + 10]
+                # the setting's own array( ... ): its fields sit at the id's depth, between the array( that opens it and the
+                # ) that closes it, so a neighbour's title or type is never read as its own (WC-7's agent found 51 so)
+                depth = len(l) - len(l.lstrip("\t "))
+                start = i
+                while start > 0 and not (re.search(r"array\(\s*$", L[start - 1]) and len(L[start - 1]) - len(L[start - 1].lstrip("\t ")) < depth):
+                    start -= 1
+                    if i - start > 40:
+                        break
+                end = i
+                while end + 1 < len(L) and end - i < 40:
+                    x = L[end + 1]
+                    if x.strip().startswith(")") and len(x) - len(x.lstrip("\t ")) < depth:
+                        break
+                    end += 1
+                own = [x for x in L[start: end + 1] if len(x) - len(x.lstrip("\t ")) == depth]
                 o = {"tab": tab, "id": m.group(1)}
                 for k in ("title", "desc", "desc_tip"):
-                    for x in near:
-                        if re.search(rf"'{k}'\s*=>", x) and tr(x):
+                    for x in own:
+                        if re.search(rf"^\s*'{k}'\s*=>", x) and tr(x):
                             o[k] = tr(x)
                             break
-                for x in near:
-                    t = re.search(r"'type'\s*=>\s*'([^']+)'", x)
+                for x in own:
+                    t = re.search(r"^\s*'type'\s*=>\s*'([^']+)'", x)
                     if t:
                         o["type"] = t.group(1)
                         break
