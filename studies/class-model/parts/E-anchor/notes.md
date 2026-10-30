@@ -413,3 +413,124 @@ A reading, and the weakest call in this batch. I put it under CM-CHN-001 by conv
 - **CM-POS-001's parent** stays CM-CHN-001, by convention 6: both anchor platforms' admin identifiers name the point of sale a channel (Shopify's apps/point-of-sale-channel, Salla's /channel/sallapoint), though Shopify's help puts it under selling in person. The final review weighs it.
 - **SH-C-144** (POS UI extensions, domain E naming F) is a lead for domain F's app-extension capabilities; F's cells don't cite it. Listed for the final review.
 
+
+## Batch 6: area MKS, SH-C-032, SH-C-106, SH-C-107, SH-C-108, SH-C-109, SH-C-110, SH-C-111, SH-C-112, SH-C-113, SA-C-008
+
+Capabilities CM-MKS-001 to CM-MKS-009 are new, with a Shopify and a Salla cell each. Area MKS had no capability, so no concern joined an existing one. Every reading below is a reading; the landings, cells and rulings cite the keys.
+
+### How the area is cut, and the grains chosen
+
+- **Markets is a root, CM-MKS-001,** with five children: CM-MKS-002 (rollouts), CM-MKS-003 (merchant of record for cross-border selling), CM-MKS-004 (local domains and visitor geolocation), CM-MKS-006 (prices in the buyer's currency), which holds CM-MKS-007 (currency conversion and exchange rates).
+- **Prices in the buyer's currency are under Markets, by the grouping the two platforms share.**
+  - Shopify sets a currency per market in Markets (SH-S-0547; admin route markets for SH-C-108 and SH-C-109, SH-S-6354, SH-S-6356).
+  - Salla sets "the default currency and the other supported currencies for the market" (SA-S-0159), and its automatic exchange-rate option is in its markets product-price setting (the key markets/product_prices of SA-S-0117).
+  - **Where the groupings differ:** Salla's Currencies settings are at general/currencies (SA-S-1724), not under Markets, and Shopify's help files multi-currency and conversion fees under store-currency (the paths of SH-S-0366 and SH-S-0363). A reviewer may prefer a root currency tree: CM-MKS-005 as the parent of CM-MKS-006 and -007.
+- **The store currency, CM-MKS-005, is a root.** Shopify's admin keeps it apart from Markets (account setup, SH-S-0671; SH-C-107's where is its help on store currency). Salla's default currency is in the store's settings (SA-S-0154).
+- **The store's languages, CM-MKS-008, are a root.** Both platforms give languages a settings section of their own (Shopify SH-S-1501, Salla SA-S-1723). Shopify's market customizations name languages (SH-S-0541) and Salla's market page names none, so they are not nested under Markets. Translation, the translation log and Salla's message translation are in the same capability: on both platforms they sit with the languages (Salla's /manage/languages/logs, SA-S-1896; Shopify's translations scopes beside the locales ones).
+- **The backup region (SH-C-113) is not a capability.** It has no admin section, API group, plan line or app category of its own: it is set in Settings > General (SH-S-6358) and has a webhook topic. So it lands in CM-MKS-001, whose Shopify cell cites it.
+- **CM-MKS-002 (rollouts) follows Shopify's grouping.** Its help is at manual/markets/rollouts (SH-S-0576), and its staff permissions are "Markets > Catalogs > View rollouts" and the like (SH-I-0967 to SH-I-0969, not cited). It is Shopify's own place: an admin route, an entitlement, a scope and webhooks. Salla's side is a store-design plan line (below).
+- **CM-MKS-003 is under Markets by Shopify's grouping,** its routes managed and :id/managed being in section Markets (SH-S-7130, SH-S-7131). Salla's side is a partners page.
+- **CM-MKS-004 is under Markets,** since a market has a web presence (SH-S-7458). **An alternative for the reviewer:** nest it under CM-SFR-008 (store domains), since Assign local domains is about domains. I kept one capability for local domains and geolocation, the grain of SH-C-111 and of Q1's M-087. A reviewer may split the Geolocation apps category off; SH-C-111 would then land in the parent.
+- **The currency grain.** Q1's M-044 joins SH-C-107, SH-C-108 and SH-C-109 with SA-C-163, a match with three concerns on one side: a difference of grain. Shopify's three concerns land in three capabilities, CM-MKS-005, -006 and -007.
+- **CM-MKS-009, countries, cities and districts reference data,** is added for SA-C-166, which batch 7 lands. It is Salla's alone: its own API folders and its countries scope.
+
+### Joins on role (readings)
+
+- **CM-MKS-002:** Shopify's rollout, "a scheduled set of changes to your online store's main theme, checkout and accounts pages, discounts, product catalogs" (SH-S-0576), against Salla's Plus plan line جدولة نشر النسخ, scheduling the publishing of theme versions (SA-S-2034). Both schedule a change to the live store's theme; Salla's is narrower.
+- **CM-MKS-003:** Global-e becoming the merchant of record under Managed Markets (SH-S-0563), against Salla's المدفوعات و البيع بالنيابة (MoR) in the target market (SA-S-5129). In both, a party other than the merchant takes on the merchant of record's role for sales abroad. **Salla's statement doesn't say who that party is**, so its cell is shows and extension-point (SA-S-5130), not outside.
+- **CM-MKS-004:** Shopify's country selector, so "your store displays their local currency" (SH-S-7288), against Salla's currency shown by the customer's geographic location (SA-S-0154). No Salla statement gives a market a domain.
+- **CM-MKS-005:** Shopify's store currency (SH-S-0361) against Salla's default currency in the store's settings (SA-S-0154). Salla doesn't define it.
+
+### Homonyms and terms kept apart
+
+- **"Geolocation"** names different things on the two platforms:
+  - Shopify's Geolocation apps (SH-S-2681; help "Using the Geolocation app", SH-I-2153) send buyers to their market;
+  - Salla's app category Geolocation / الموقع الجغرافي (SA-S-1226, titled تحديد دقيق للمواقع), with its map services (google-maps-service and others), serves customer addresses. It is cited in domain D's CM-CUS-009 and not here. U-079 is ruled apart.
+- **"Market selection"** (SA-S-1730, markets/browse_product_method) is cited in CM-MKS-001. It is also among SA-C-026's (branches, domain B) platform terms. No statement says what it selects.
+
+### Strained fits
+
+- **SH-C-111 in CM-MKS-004:** its MarketWebPresence (SH-S-7458), "which defines its SEO strategy", is also cited in CM-CNT-007 (SEO) as core: batch 3's lead.
+- **SH-C-032 in CM-MKS-008, and SH-C-108 in CM-MKS-006:** Q1 placed the App Store category Currency and translation apps (SH-I-1916) in both concerns. It is cited in both capabilities, as extension-point, since the category names both.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-CNT-007, Shopify (batch 3's cell):** I added SH-C-111/boundary/SH-S-7458 as core. The cell's derived placement is now core;extension-point. Its reading, and batch 3's gap note, still say that no statement shows SEO built into Shopify's admin. The added statement is an API object, not an admin setting; the reading should name it.
+- **SA-C-090 in CM-SFR-001 (batch 2's row, landings.tsv line 12):** its plan line SA-S-2034 is now cited in CM-MKS-002. By S1 it is strained; the checker flags it.
+- **U-076 has two rulings.** Domain F's part ruled SH-C-110 against SA-C-304 apart, on the basis that scope.tsv gives SH-C-110 domain E without F under also. Here, SA-C-304 names E under also, so CM-MKS-003 may cite it, and the ruling follows the cells: joined:CM-MKS-003. Each part ruled by its own rule. The coordinator reconciles; nothing in F's cells changes.
+- No problem on earlier batches' rows from the checker.
+
+### Concerns read under `also`, and other domains' statements
+
+- **SA-C-304** (domain F, also E): SA-S-5129 is cited in CM-MKS-003 as shows and SA-S-5130 as extension-point. Domain F's CM-PTN-007 cites them as shows and extension-point too, so neither supports core in two domains. Q1's decides gap on SA-C-304 is "observation needed".
+- **SA-C-065** (domain D, also E): read for U-079, and not cited.
+- **SA-C-164** (domain C, also E): read for U-028, and not cited. SA-S-0067 says payments through Salla's gateway are received in riyals, which is the settlement currency, not a conversion.
+- **SA-C-160** (domain C, not naming E): SA-S-0145 defines a market as "the country or region you target selling to", for its tax registration. **Not cited.** SA-S-0157 carries Salla's definition of Markets.
+- **SA-C-090** (landed in CM-SFR-001): SA-S-2034, cited in CM-MKS-002.
+
+### Rulings
+
+- U-065:
+  - SH-C-032 against SA-C-008: joined:CM-MKS-008.
+  - SH-C-106 against SA-C-008: apart. Markets and languages are separate roots.
+- U-076 (SH-C-110 against SA-C-304): joined:CM-MKS-003.
+- U-079 (SH-C-111 against SA-C-065): apart.
+- U-028 (SH-C-109 against SA-C-164): apart.
+
+### For batch 7 (SA-C-163, SA-C-165, SA-C-166)
+
+**Landings.** My Salla cells already cite these concerns' statements:
+- **SA-C-165** in CM-MKS-001, by M-043. Its SA-S-0159 is cited in CM-MKS-006, in the same tree, so the fit is clean. SH-C-106's landing is written as a definition join only because SA-C-165 hadn't landed; it can then be rewritten as match:M-043.
+- **SA-C-163** is coarser than my currency capabilities. Its statements are cited in four of them:
+  - its default currency in CM-MKS-005, a root;
+  - its Currencies settings, plan line, permission and flags in CM-MKS-006;
+  - currency-exchange and the automatic exchange rate in CM-MKS-007;
+  - the currency shown by location (SA-S-0154) in CM-MKS-004, and also in CM-MKS-005 and -006.
+  
+  By M-044 its natural place is CM-MKS-006. It is **strained** wherever it lands, since CM-MKS-005 is another tree. Once it lands, SH-C-107, SH-C-108 and SH-C-109 can be rewritten as match:M-044.
+- **SA-C-166** in CM-MKS-009, single (Q1's M-082 is with WooCommerce only).
+
+**Ruling pairs whose Salla side batch 7 lands:**
+- U-033, SH-C-106 against SA-C-165: CM-MKS-001 cites both sides (SH-S-0540, SA-S-0157), so joined:CM-MKS-001.
+- U-065, SH-C-106 against SA-C-165: joined:CM-MKS-001, the same keys.
+- U-065, SH-C-032 against SA-C-165: apart on my cells. CM-MKS-008 cites SH-C-032 and none of SA-C-165, and CM-MKS-001's Salla cell names no language.
+
+### Gaps that change what a cell can claim
+
+- **CM-MKS-003, Salla:** no statement says who acts as merchant of record in Salla's programme, or whether Salla offers it in its admin.
+- **CM-MKS-005, Salla:** the default currency isn't defined (what it prices or reports in).
+- **CM-MKS-007, Salla:** no statement says whether a merchant can set a rate by hand, or who supplies the rate.
+- **CM-MKS-008, Shopify:** no statement names the maker of the Translate & Adapt app (SH-I-2163), so it is shows.
+- **CM-MKS-004, Shopify:** no statement names the maker of the Geolocation app (SH-I-2153).
+- **CM-MKS-009:** SA-C-166's decides gap is "page not read": who keeps the lists isn't held. Shopify is none-held, so the definition isn't stated on Shopify's side.
+- **Responsible and reason gaps:** SH-C-032, -107, -108, -111, -112 and -113 are "stated only in general terms" or "searched, not found"; SA-C-008, -163 and -165 are "page not read". Each cell's reading names its own.
+
+### Qualities and slot fillers
+
+- **Qualities:**
+  - Salla: 40 languages (SA-S-2074), +33 currencies for payment (SA-S-1970), and more than 15 currencies in the payments integration (SA-S-0012). Q1's note records the difference between the two currency counts.
+  - Shopify: "Add language (136 languages)" (SH-I-2098), a placed inventory entry no statement covers.
+- **Slot fillers:**
+  - Global-e, in CM-MKS-003: SH-S-0563, and SH-S-0127 with its Canada, UK and US scope.
+  - Adyen, in CM-MKS-006: SH-S-0545.
+
+### What the checker flagged
+
+`0 problems, 29 flags`. Mine:
+- **cells.tsv line 80 (CM-MKS-009, Shopify, none-held, 70 matches):** the matches are Shopify Payments', Balance's, Capital's and Tax's country eligibility, unsupported countries, regions in eligibility rules, and a legal entity's country code. None is a list of countries, cities or districts that the store reads.
+- **SA-S-2034 in CM-MKS-002 and CM-SFR-001:** a join on role (above). SA-C-090's strain is for the coordinator.
+- **SA-S-0154 in CM-MKS-004, -005 and -006:** one sentence names both the default currency in the settings and the currency shown by location. It is cited where each part bears; SA-C-163's strain is batch 7's.
+- **SH-S-7458 in CM-CNT-007 and CM-MKS-004:** SH-C-111 is strained (above).
+- **SH-I-1916 in CM-MKS-006 and CM-MKS-008:** SH-C-032 and SH-C-108 are strained (above).
+- **M-044's concerns in more than one tree:** a difference of grain (above).
+- **landings.tsv line 12 (SA-C-090):** batch 2's row, for the coordinator.
+- **CM-MKS-009 has no concern landed in its tree:** SA-C-166 lands there in batch 7.
+
+The other flags are batches 1 to 5's, answered in their notes.
+
+## The coordinator's corrections after batch 6 (30 October)
+
+- **SA-C-090 is `strained`:** batch 6 cites its plan line SA-S-2034 in CM-MKS-002 (S1).
+- **CM-CNT-007's Shopify cell** now reads `core` as well as `extension-point`: batch 6 cites MarketWebPresence (SH-S-7458), Shopify's own API object that defines a market's SEO strategy. Batch 3's note that no statement shows Shopify's own SEO holds only for the admin's titles and meta descriptions.
+- **U-076 is ruled differently** by F's part (`apart`, from F's cells) and by this batch (`joined:CM-MKS-003`, since SA-C-304 names E under `also`). Each domain rules from its own cells; the merge flags the pair for one answer at the final review.
+
