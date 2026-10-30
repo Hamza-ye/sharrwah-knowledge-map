@@ -1,0 +1,31 @@
+cap_id	platform	supports	key	why
+CM-SFR-001	woocommerce	core	WC-C-111/where/WC-S-0418	onboarding task Choose your theme
+CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0194	admin API resource wc-admin > themes
+CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0200	admin API resource onboarding/themes
+CM-SFR-001	woocommerce	shows	WC-I-0612	plugin page feature Create beautiful, enticing storefronts
+CM-SFR-002	woocommerce	core	WC-C-111/where/WC-S-0419	onboarding task Customize your store
+CM-SFR-003	woocommerce	extension-point	WC-C-111/where/WC-S-0695	Marketplace category Themes
+CM-SFR-003	woocommerce	extension-point	WC-C-017/where/WC-S-0923	the Marketplace connects developers and merchants
+CM-SFR-003	woocommerce	own-service	WC-C-050/responsible/WC-S-0644	Automattic names Woo themes among its Paid Services
+CM-SFR-003	woocommerce	shows	WC-C-017/responsible/WC-S-0834	refund for themes bought from the Marketplace
+CM-SFR-004	woocommerce	extension-point	WC-C-087/where/WC-S-5466	extensions extend the blocks' front-end with JavaScript
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0703	Marketplace category Store content and customizations
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0744	subcategory Store page enhancements
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0742	subcategory Product images and media
+CM-SFR-005	woocommerce	core	WC-C-111/boundary/WC-S-0178	own route wc/private > /patterns
+CM-SFR-012	woocommerce	core	WC-C-079/where/WC-S-0914	Store API: public endpoints for customer-facing cart, checkout and product functionality
+CM-SFR-012	woocommerce	core	WC-C-079/where/WC-S-0941	namespace wc/store
+CM-SFR-012	woocommerce	core	WC-C-079/boundary/WC-S-0081	routes registered under wc/store/v1
+CM-SFR-012	woocommerce	core	WC-C-079/boundary/WC-S-0148	route /batch
+CM-SFR-012	woocommerce	core	WC-C-079/decides/WC-S-0915	unauthenticated, no access to sensitive store data
+CM-SFR-012	woocommerce	extension-point	WC-C-079/boundary/WC-S-0916	applications extend certain endpoints
+CM-SFR-012	woocommerce	extension-point	WC-C-079/boundary/WC-S-0773	guide Extending the Store API
+CM-SFR-013	woocommerce	extension-point	WC-C-107/where/WC-S-0743	subcategory Search and navigation
+CM-CNT-002	woocommerce	core	WC-C-064/boundary/WC-S-0675	product custom fields API
+CM-CNT-003	woocommerce	shows	WC-C-072/where/WC-S-0022	settings section Advanced > Page setup
+CM-CNT-007	woocommerce	extension-point	WC-C-110/where/WC-S-0760	Marketplace category Marketing > SEO and SEM
+CM-CNT-007	woocommerce	shows	WC-I-0617	plugin page feature Rise to the top of search results
+CM-CNT-008	woocommerce	shows	WC-C-071/responsible/WC-S-5408	merchant must maintain return and refund policies
+CM-CHN-001	woocommerce	extension-point	WC-C-110/where/WC-S-0759	Marketplace category Marketing > Sales channels
+CM-CHN-004	woocommerce	shows	WC-C-110/boundary/WC-S-5494	Google for WooCommerce syncs product data to Google Merchant Center
+CM-CHN-004	woocommerce	shows	WC-C-110/decides/WC-S-5492	products without the required fields aren't synced

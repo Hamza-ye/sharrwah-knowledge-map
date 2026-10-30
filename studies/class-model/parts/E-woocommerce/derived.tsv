@@ -1,0 +1,28 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHN-001	woocommerce	statements	extension-point	Extensions > Marketing > Sales channels		WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	
+CM-CHN-002	woocommerce	none-held					
+CM-CHN-003	woocommerce	none-held					
+CM-CHN-004	woocommerce	statements	not-stated		WC-C-110/boundary/WC-S-5494=Google for WooCommerce | WC-C-110/decides/WC-S-5492=Google for WooCommerce	WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	
+CM-CHN-005	woocommerce	none-held					
+CM-CHN-006	woocommerce	none-held					
+CM-CNT-001	woocommerce	none-held					
+CM-CNT-002	woocommerce	statements	core			WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-CNT-003	woocommerce	statements	not-stated	Advanced > Page setup		WC-C-072/responsible:stated only in general terms;WC-C-072/reason:searched, not found	
+CM-CNT-004	woocommerce	none-held					
+CM-CNT-005	woocommerce	none-held					
+CM-CNT-006	woocommerce	none-held					
+CM-CNT-007	woocommerce	statements	extension-point	Extensions > Marketing > SEO and SEM		WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	
+CM-CNT-008	woocommerce	statements	not-stated		WC-C-071/responsible/WC-S-5408=Ecommerce Services (Terms 8.j)	WC-C-071/reason:searched, not found	
+CM-SFR-001	woocommerce	statements	core	Choose your theme		WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
+CM-SFR-002	woocommerce	statements	core	Customize your store		WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
+CM-SFR-003	woocommerce	statements	extension-point;own-service	Getting started | Themes		WC-C-017/reason:searched, not found;WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found;WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
+CM-SFR-004	woocommerce	statements	extension-point	Front-end extensibility		WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found	
+CM-SFR-005	woocommerce	statements	core;extension-point	Extensions > Store content and customizations | Extensions > Store content and customizations > Product images and media | Extensions > Store content and customizations > Store page enhancements		WC-C-107/responsible:stated only in general terms;WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
+CM-SFR-006	woocommerce	none-held					
+CM-SFR-007	woocommerce	none-held					
+CM-SFR-008	woocommerce	none-held					
+CM-SFR-009	woocommerce	none-held					
+CM-SFR-010	woocommerce	none-held					
+CM-SFR-011	woocommerce	none-held					
+CM-SFR-012	woocommerce	statements	core;extension-point	WooCommerce Store API | wc/store		WC-C-079/responsible:stated only in general terms;WC-C-079/reason:searched, not found	general
+CM-SFR-013	woocommerce	statements	extension-point	Extensions > Store content and customizations > Search and navigation		WC-C-107/responsible:stated only in general terms	
