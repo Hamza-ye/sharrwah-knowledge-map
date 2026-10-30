@@ -642,8 +642,6 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - an omission review, from the evidence's side, comes after it.
 
   **What this change removes or weakens:** nothing. It adds two steps before the final review, at about 80 to 180 million agent tokens in all, an assumption to be measured on the first batches. The final review, by risk and from the model's side, stays as it was, and reads the omission review's findings.
-
-
 - **30 October 2026, the evidence map** (the founder's context: "Evidence is a critical part of this work. We need confidence not only in what is already held, but also in how agents identify, plan, and execute further evidence capture when needed", the framing left to the coordinator). A fix to the method within this plan, listed at the next report. Changed in section 6, Evidence:
   - an evidence map, from the repositories' own denominators and ledgers, is every reader's entry point;
   - coverage is judged at three levels, each with its remedy.
