@@ -279,7 +279,7 @@ salla	SA-C-118	C		tabby_installment; tamara_installment: buy now, pay later (PAY
 salla	SA-C-119	C		PayPal; stc pay; Mokafaa Al Rajhi: wallets connected by the merchant (PAY); M-032
 salla	SA-C-120	C		moyasar; hyperpay; tap; pay-tabs: external gateways (PAY); M-025
 salla	SA-C-121	C		Payment Restrictions; payments-rules (PAY)
-salla	SA-C-122	C	A	نظام الحماية من الاحتيال; sift: fraud protection on payments (PAY); M-088
+salla	SA-C-122	C	A	نظام الحماية من الاحتيال; sift: fraud protection on payments (PAY); M-088; also A: its anti-fraud analysis across Salla's stores (SA-S-5052) is A's CM-TRU-008 (the coordinator, after C-anchor batch 7)
 salla	SA-C-123	C		Transactions; payments-operations: refund, void, reverse (PAY); M-034
 salla	SA-C-124	C	B	Settlements; Drop shipping: amounts withheld from the merchant's wallet (PAY)
 salla	SA-C-125	B	C	Recurring Payments API; subscription.created: subscriptions sold by stores; the API goes with what it charges for (SEL); M-074

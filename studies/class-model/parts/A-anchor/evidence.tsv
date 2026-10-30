@@ -531,3 +531,4 @@ CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0142	the UAE store's legal entity, 
 CM-PLN-001	salla	shows	SA-C-180/where/SA-S-2213	Salla policy page /policies/nd96; its text, not held, a plan discount campaign (reading from context)
 CM-ACC-006	salla	core	SA-C-231/boundary/SA-S-5147	the store details the merchant can update: identity, customer service channels, the Business platform certificate, social accounts, the store app (the coordinator, from batch 7's lead)
 CM-TRU-008	salla	core	SA-C-232/decides/SA-S-0110	cash on delivery hidden from customers banned in Salla's other stores: Salla using what it knows across its stores to protect a store (the coordinator, a reading, after batch 7)
+CM-TRU-008	salla	core	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system analysing customers' data across Salla's stores (the coordinator, a reading, from C-anchor batch 7's lead)

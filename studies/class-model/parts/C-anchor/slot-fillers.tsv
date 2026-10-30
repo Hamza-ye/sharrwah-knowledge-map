@@ -41,7 +41,6 @@ CM-PAY-015	salla	Deema	SA-C-118/decides/SA-S-0064
 CM-PAY-011	salla	Moyasar (ميسر)	SA-C-120/where/SA-S-0069
 CM-PAY-011	salla	HyperPay (هايبر باي)	SA-C-120/where/SA-S-0069
 CM-PAY-011	salla	Tap (تاب)	SA-C-120/decides/SA-S-0100
-CM-PAY-016	salla	SARIE (سريع)	SA-C-117/decides/SA-S-1957
 CM-PAY-017	shopify	MB WAY	SH-C-080/decides/SH-S-7025
 CM-PAY-017	shopify	Bizum	SH-C-080/decides/SH-S-7026
 CM-PAY-017	salla	KNET	SA-C-110/decides/SA-S-0065
@@ -71,3 +70,4 @@ CM-PAY-027	shopify	Melio	SH-C-098/responsible/SH-S-7200
 CM-PAY-027	shopify	Melio	SH-C-098/responsible/SH-S-0499
 CM-PAY-002	shopify	Payment Network Rules	SH-C-173/decides/SH-S-0108
 CM-PAY-028	salla	هيئة الزكاة والضريبة	SA-C-210/decides/SA-S-2148
+CM-PAY-030	salla	SARIE (سريع)	SA-C-117/decides/SA-S-1957

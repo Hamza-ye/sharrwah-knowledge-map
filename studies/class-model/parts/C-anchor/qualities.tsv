@@ -20,8 +20,6 @@ CM-PAY-017	shopify	MB WAY rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 3
 CM-PAY-017	shopify	Bizum rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-080/decides/SH-S-7026
 CM-PAY-018	shopify	USDC rates	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-081/decides/SH-S-7028
 CM-PAY-019	shopify	Payment customization functions per store, maximum	You can activate a maximum of 25 payment customization functions on each store.	SH-C-083/decides/SH-S-0590
-CM-PAY-016	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123
-CM-PAY-016	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125
 CM-PAY-020	shopify	Credit card authorization period	provides an authorization period of 7 days.	SH-C-084/decides/SH-S-0391
 CM-PAY-020	shopify	Extended authorization periods	Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.	SH-C-084/decides/SH-S-0393
 CM-PAY-021	shopify	In-person card rates	2.6% + 10¢; 2.5% + 10¢; 2.4% + 10¢; 2.3% + 10¢ (Basic, Grow, Advanced, Plus)	SH-C-086/decides/SH-S-7027
@@ -40,3 +38,5 @@ CM-PAY-005	salla	Payout bank account, Kuwait	- الحساب لدى بنك كوي
 CM-PAY-005	salla	Payout bank account type, Kuwait	يقبل الحساب البنكي التجاري فقط - اما الحسابات البنكية الشخصية فهي غير مقبولة .	SA-C-112/decides/SA-S-0140
 CM-PAY-005	salla	Transfer day, digital stores	للمتاجر الرقمية: تُصدر الفواتير يوم الأربعاء، وتُحوَّل المدفوعات يوم الأحد.	SA-C-111/decides/SA-S-0103
 CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعات كل 24 ساعة	SA-C-111/decides/SA-S-0202
+CM-PAY-029	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123
+CM-PAY-029	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125

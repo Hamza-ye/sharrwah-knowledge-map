@@ -491,3 +491,89 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gi
 - **Seven cells' readings** name batch 6's rows: Salla's CM-PAY-001, -003, -005, -012 and -014, Shopify's CM-PAY-002 and -026. CM-PAY-014's Salla cell now holds a released flag, so it is no longer not-stated.
 - **SA-S-3185, the released flag sbc-registration,** is `core` in CM-PAY-003 on its name; the final review weighs whether it belongs to A's CM-TRU-010.
 
+
+## Batch 7: PAY, Payments, payouts and money (fifth of six)
+
+Concerns: SA-C-115, SA-C-116, SA-C-117, SA-C-118, SA-C-119, SA-C-120, SA-C-121, SA-C-122, SA-C-123, SA-C-124, SA-C-126. Four capabilities added, CM-PAY-029 to CM-PAY-032; seven concerns land in existing capabilities (one of them, SA-C-122, in ORD's CM-ORD-006), four in the new ones. Every capability was first searched in every domain with `caps` (terms: cash on delivery, الدفع عند الاستلام, COD, bank transfer, التحويل البنكي, سريع, sarie, payment link, رابط الدفع, checkout link, send invoice, quick payment, الدفع السريع, settlement, settlements, تسوية, التسويات, dropshipping, drop shipping, wallet, المحفظة, balance, الرصيد, app billing, app charges, usage charge, withhold, fraud, الاحتيال, risk, sift, عميل غير جاد, loyalty, points, مكافأة, الراجحي, reward, الولاء, نقاط). What it found and kept apart: B's CM-CAT-010 (sourcing by dropshipping apps), F's CM-APP-003 (the platform bills the merchant for an app) and CM-PTN-003 (partner payouts), A's CM-PLN-006 (the store balance) and CM-TRU-008, D's CM-CUS-006, CM-LOY-001 and CM-LOY-004, C's CM-ORD-008 (order invoices), CM-CHK-008 (quick checkout) and CM-PAY-004 (the processors' settlement). Both platforms' cells are written for the four new capabilities.
+
+### Where each concern landed, and the grains
+
+- **SA-C-115 and SA-C-116 in a new CM-PAY-029, cash on delivery; SA-C-117 in a new CM-PAY-030, bank transfer; both children of CM-PAY-016** (M-033). A Q1 match with several concerns on one side is a difference of grain, and Salla gives each method a place of its own: cash on delivery its setting shipping/shipping.cod (SA-S-1765) and its plan lines الدفع عند الاستلام and تعيين شروط الدفع عند الاستلام; bank transfer its plan lines التحويل البنكي and نظام المدفوعات الفورية عبر سريع and its staff permission bank_accounts_management. **SA-C-115 and SA-C-116 share one capability:** Q1 splits them by who collects, and that split is what the placements show (core: Salla transfers the balance from its labels' carriers, SA-S-0122; outside: "لا تتولى سلة تحصيل مبالغ الدفع عند الاستلام", SA-S-0120, settled between merchant and carrier, SA-S-0121). Neither gives cash on delivery through the platform's labels a place apart from cash on delivery as such. Shopify's cells cite only SH-S-0322, which names COD and bank transfers among the manual methods, so both are not-stated.
+- **SA-C-118 in CM-PAY-015** (M-031) and **SA-C-123 in CM-PAY-020** (M-034), whose Salla cells batches 4 and 5 wrote from these concerns' keys; nothing was left uncited.
+- **SA-C-119 in CM-PAY-012, digital wallets** (M-032), not CM-PAY-013. It is coarser than PayPal: PayPal (CM-PAY-013), stc pay direct (CM-PAY-012) and Mokafaa Al Rajhi. A match landing in the parent of its other side's capability passes the checker's family rule. **Mokafaa Al Rajhi** (مكافأة الراجحي, its plan line SA-S-1966 and released flag SA-S-3140) is cited as core in CM-PAY-001. It is a payment method in Salla's payment group (aldfaa), and no statement calls it a wallet. It isn't D's loyalty programme: D's notes keep it apart as a payment method under "Reward". That it pays with loyalty points rests only on the inventory identifier mokafaa_alrajhi_loyalty (SA-I-1697), a reading.
+- **SA-C-120 in CM-PAY-011** (M-025). I added its seven unreleased gateway flags (bayan-pay, qpay, benefit, omannet, iyzico, my-fatoorah, paylink) as shows, and SA-S-0099 under responsible as outside.
+- **SA-C-121 in CM-PAY-019**, by role, as SH-C-083's landing joined it (U-022).
+- **SA-C-122 in CM-ORD-006**, by role, as the coordinator directed if it is the same thing. Both flag orders for the merchant's decision: Shopify's analysis lets the merchant review orders before fulfilling (SH-S-0747); Salla's system asks the merchant to confirm carrying out a suspicious order and makes the merchant answer for the cardholder's complaint (SA-S-5051). Added to CM-ORD-006's Salla cell: the released flag sift (core); the plan line قيود الدفع والحماية من الاحتيال under SA-C-122's key (core; batch 4 cites it core in CM-PAY-019 under SA-C-121's key, since the one plan line names both); and, as shows, SA-S-0104 (fraud protection among Salla Payments' shopping-experience services), SA-S-5052 (the tag عميل غير جاد from Salla's AI anti-fraud analysis across its stores) and SA-S-5053 (its reason). CM-ORD-006 has no PAY capability of its own for fraud, so SA-S-1971 counts once.
+- **SA-C-124 in a new CM-PAY-031,** amounts withheld from the merchant's wallet for app partners. It has a place of its own: the API folder Settlements and the scope settlements (إدارة المبالغ المحجوزة). Its API statements say apps do the work (SA-S-0178, SA-S-0179), so they are extension-point. Salla's own transfer under the policy the merchant accepts on installing (SA-S-5054) is core. The capability also cites, as core, SA-C-145's managed settlement for shipping apps (SA-S-5065, SA-S-5066: Salla withholds the labels' amounts from the wallet balance and settles with the carrier). That is a join on role within Salla, a reading. SA-C-145 lands in a later SHP batch, and that batch should read its landing as strained if it lands outside CM-PAY-031. No parent, since the wallet itself is A's CM-PLN-006.
+- **SA-C-126 in a new CM-PAY-032,** payment links, under CM-ORD-001. Salla sends the link from the order's actions (SA-S-5143), and its plan line sits in the payment group (SA-S-1968). I chose the parent from the admin place, a reading. Shopify's cell is none-held.
+
+### Joins on role (readings)
+
+- **SA-C-122 in CM-ORD-006** (above): SH-C-059/where/SH-S-0747 against SA-C-122/decides/SA-S-1971 and SA-C-122/responsible/SA-S-5051.
+- **SA-C-121 in CM-PAY-019:** SH-C-083/where/SH-S-0589 against SA-C-121/reason/SA-S-5050, as batch 4 read it.
+- **Within Salla, CM-PAY-031:** the dropshipping apps' settlements (SA-C-124) and the shipping apps' managed settlement (SA-C-145) are one role: an app's amounts are withheld from the merchant's wallet and settled by Salla.
+
+### Homonyms
+
+- **"Settlement" (تسوية):** Salla's settlements for app partners (CM-PAY-031, SA-S-0178, SA-S-5066) against the processors' settlement of transactions (CM-PAY-004; Shopify SH-S-0082, Salla SA-S-0081, SA-S-0088), cash on delivery settled between merchant and carrier (SA-S-0121, CM-PAY-029), payout settlement times (SH-S-0340) and the MoR's settlements (SA-S-5129, not cited).
+- **"Withhold":** an app's amounts withheld from the merchant's wallet (CM-PAY-031) against reserves held back from payouts (CM-PAY-006, Salla none-held; the checker lists SA-S-1564 as a candidate there), Shopify withholding payments to Partners (SH-S-0758, SH-S-0759, F) and the merchant's tax withholding.
+- **"Bank account":** the account shown to customers for bank transfers (CM-PAY-030, SA-S-0095) against the payout account tied to store verification (CM-PAY-005, SA-C-112).
+- **"Cash on delivery balance":** the wallet's cash-on-delivery summary (SA-S-0106) against the e-payments balance (CM-PAY-005).
+- **"Quick payment" (الدفع السريع (المباشر), quick_payment_direct):** a permission in Salla Point's group, held in SA-C-126. It is shows in CM-PAY-032, since no statement says it sends payment links. It isn't the quick checkout of CM-CHK-008 (الشراء السريع).
+- **"Invoice":** Shopify's draft-order invoices (SH-S-7225) against a payment link. No statement says the invoice holds a link to pay.
+
+### Strained fits
+
+- **SA-C-121 in CM-PAY-019:** its plan line SA-S-2145, held also by SA-C-122, is cited in CM-ORD-006.
+- **SA-C-122 in CM-ORD-006:** SA-S-0104 is cited in CM-PAY-007 and CM-PAY-014 (under SA-C-113), SA-S-2145 in CM-PAY-019 and SA-S-5052 in D's CM-CUS-006. Salla's plan puts the system in its payment group; Shopify's help puts it under orders.
+- **SA-C-124 in CM-PAY-031:** its category, endpoint and policy (SA-S-1193, SA-S-0179, SA-S-5054) are cited in B's CM-CAT-010.
+
+### Statements shared with other domains
+
+- **SA-S-5052 (عميل غير جاد), for the coordinator:** it is shows in D's CM-CUS-006 and now shows in CM-ORD-006, under SA-C-122's key. It names Salla's AI anti-fraud system analysing customer data across Salla's stores, so it is a lead for A's CM-TRU-008, the platform's use of customer data across merchants. Citing it there is the coordinator's to do; I haven't.
+- SA-C-124's SA-S-1193 and SA-S-0179 are extension-point in B's CM-CAT-010 and here. SA-S-5054 is shows there and core here, and only core here, so the merge's two-domain test isn't met.
+- SA-S-1564 (the scope settlements) is held also by SA-C-191 (domain F, app scopes). It is cited here under SA-C-124's key.
+
+### Rulings
+
+- **U-021 (SH-C-059 against SA-C-122): `joined:CM-ORD-006`.** **U-022 (SH-C-083 against SA-C-121): `joined:CM-PAY-019`.** **U-023 (SH-C-078 against SA-C-119): `joined:CM-PAY-012`,** completing the candidate with batch 6's row.
+- **U-018 (SH-C-055 against SA-C-126): `apart`.** No Shopify statement held names a payment link. The pair against SA-C-040 is batch 2's `joined:CM-ORD-005`.
+- **U-043 (SH-C-182 against SA-C-118 and SA-C-119): `apart`,** two rows. scope.tsv gives SH-C-182 domain A with no also.
+- **U-016 (SH-C-141 and SH-C-185 against SA-C-124): `apart`,** two rows. scope.tsv gives SH-C-141 domain E and SH-C-185 domain B, neither naming C. The pairs against SA-C-098 are domain D's.
+
+### Left for batch 8
+
+- **U-028 (SH-C-069 against SA-C-164), U-038 (SH-C-173 against SA-C-172), U-064 and M-077 (SA-C-210), U-027's pairs against SA-C-177, M-038 (SA-C-128):** as batches 3, 5 and 6 left them.
+- **SA-C-127 (charity stores' gateways):** CM-PAY-011's Salla cell now holds every SA-C-120 flag. SA-S-0206 and SA-S-5057 (Apple Pay for charities) are still uncited and may go in CM-PAY-011 or CM-PAY-012.
+
+### For the coordinator, on earlier rows
+
+- **CM-PAY-016's Salla cell** cites SA-C-115's, SA-C-116's and SA-C-117's keys from before its children existed. Its qualities (the 1000 SAR maximum and the 20 SAR minimum) and its slot filler SARIE (سريع) now also sit on CM-PAY-029 and CM-PAY-030. To count each once, the parent's copies could go, and its reading could name the children.
+- **CM-PAY-009, Salla none-held:** SA-C-122's SA-S-5051 says "قد يُخصم مبلغ العملية من حسابك إذا ثبتت صحة الشكوى", which bears on a cardholder's dispute. I left it in CM-ORD-006 rather than rewrite batch 4's none-held cell.
+- **CM-PAY-013's note** says SA-C-119 lands in a Salla batch; it landed in the parent CM-PAY-012. **CM-ORD-006's Salla reading** says SA-S-5052 "is not cited here"; it now is, as shows. **CM-PAY-011's Salla reading** says SA-C-120's other flags are left; they are now cited.
+- No earlier row was found wrong.
+
+### Gaps
+
+- SA-C-115 responsible (who holds the cash-on-delivery amounts collected through Salla's labels before payout), SA-C-116 reason, SA-C-117 responsible and reason, SA-C-118, SA-C-119 and SA-C-120 reason, SA-C-121 responsible, SA-C-123 responsible and reason, SA-C-126 responsible and reason: all "page not read".
+- No statement says which wallet Salla's settlements are withheld from (CM-PAY-031), nor what quick_payment_direct does (CM-PAY-032).
+- No Shopify statement held names a payment link (CM-PAY-032) or a settlement for app partners (CM-PAY-031), and none gives cash on delivery or bank transfer a place of its own (CM-PAY-029, CM-PAY-030, not-stated).
+
+### Qualities
+
+- CM-PAY-029 Salla: the 1000 SAR maximum with Salla's labels (SA-S-0123) and the 20 SAR minimum cart (SA-S-0125), copied from CM-PAY-016 (above).
+
+### Checker
+
+The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gives "0 problems, 42 flags for the reviewer". The flags on CHK, ORD and the own-service rows are earlier batches', answered in their sections. Mine:
+- **CM-PAY-031 Shopify, none-held, 36 matches:** processor settlement, payouts, chargebacks, Partner payouts, tax withholding, suppliers, Dropshipping apps and Shopify Collective. All are answered in the cell's reading.
+- **CM-PAY-032 Shopify, none-held, 1 match (SH-S-7225):** "send invoices" with draft orders, which isn't stated to carry a link to pay. It is answered in the cell's reading and in U-018.
+- **CM-PAY-006 Salla, none-held, lists SA-C-124/boundary/SA-S-1564:** the settlements scope, an app partner's hold, not the payment service's reserve (Homonyms).
+`uncited --domain C` lists none of this batch's concerns' statements.
+
+## The coordinator's corrections after batch 7 (30 October)
+
+- **CM-PAY-016's copies** of its children's cash-on-delivery qualities and SARIE slot filler are removed; CM-PAY-029 and -030 hold them.
+- **CM-PAY-009's Salla cell** holds SA-S-5051: the merchant answers for a card owner's complaint, and the amount may be deducted from its account if the complaint is proven. Salla's own service carries the chargeback, `core`, a reading.
+- **Three readings** name batch 7's rows: Salla's CM-ORD-006 and CM-PAY-011, and CM-PAY-013's note.
+- **SA-S-5052** is cited as `core` in A's CM-TRU-008, network protection across stores; SA-C-122 names A under `also`.

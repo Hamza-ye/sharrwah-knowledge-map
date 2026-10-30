@@ -1016,3 +1016,5 @@ No problem was found on earlier batches' rows.
 - **SH-C-012 and SH-C-180** are written as Q1's matches M-005 and M-060. The Salla readings of CM-TRU-003, -005, -009, -010, -013 and CM-PLN-001 name batch 7's rows.
 - **The leads to other domains are cited there:** SA-S-5022 in E's CM-CNT-008; SA-S-0028, SA-S-5112 and SA-S-5113 in F; SA-S-5147 in CM-ACC-006 here.
 - **The part is complete:** 43 capabilities. A's WooCommerce, Zid and BigCommerce parts follow.
+
+- **SA-S-5052** (Salla's tag for a customer who isn't serious, from its anti-fraud analysis across its stores) is cited in CM-TRU-008's Salla cell as `core`, a reading, its concern SA-C-122 now naming A (the coordinator, after C-anchor batch 7).

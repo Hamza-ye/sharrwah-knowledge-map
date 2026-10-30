@@ -1173,3 +1173,65 @@ CM-PAY-012	salla	shows	SA-C-110/decides/SA-S-1963	plan line stc pay الدفع �
 CM-PAY-012	salla	shows	SA-C-110/reason/SA-S-0128	stc pay connected within Salla Payments to reduce problems and delays
 CM-PAY-014	salla	core	SA-C-110/decides/SA-S-3123	released flag checkout-save-cards, in the answering store
 CM-PAY-017	salla	shows	SA-C-110/decides/SA-S-3132	flag knet under SA-C-110, core in CM-PAY-011 under SA-C-120
+CM-PAY-029	shopify	shows	SH-C-079/decides/SH-S-0322	cash on delivery (COD) named among manual payment methods
+CM-PAY-029	salla	core	SA-C-115/where/SA-S-1765	setting Cash on delivery at shipping/shipping.cod
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-1958	plan line الدفع عند الاستلام (سلة بلس)
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-2027	plan line تعيين شروط الدفع عند الاستلام (سلة بلس)
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-3148	flag cod, released and enabled in the answering store
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-3038	flag cod-branded-route, released and enabled in the answering store
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-3264	released flag cash-on-delivery-settings (plus, pro, special)
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-0126	cash on delivery per carrier, its fee raised or lowered
+CM-PAY-029	salla	core	SA-C-115/boundary/SA-S-0106	the wallet's cash-on-delivery summary and its fees
+CM-PAY-029	salla	core	SA-C-115/decides/SA-S-0122	Salla transfers the balance from its labels' carriers on Sundays and Wednesdays
+CM-PAY-029	salla	shows	SA-C-115/decides/SA-S-0123	1000 SAR maximum where the carrier is one of Salla's labels
+CM-PAY-029	salla	shows	SA-C-115/decides/SA-S-0125	not shown for a cart under 20 SAR
+CM-PAY-029	salla	shows	SA-C-115/reason/SA-S-0124	the settings control when cash on delivery shows, to cut cancellations
+CM-PAY-029	salla	shows	SA-C-115/decides/SA-S-0062	through Salla's discounted labels coming soon in the UAE
+CM-PAY-029	salla	core	SA-C-116/where/SA-S-0061	UAE: the option in shipping pricing, with the commission agreed with the carrier
+CM-PAY-029	salla	shows	SA-C-116/decides/SA-S-0061	the same sentence, under decides
+CM-PAY-029	salla	shows	SA-C-116/decides/SA-S-2027	the conditions plan line, under SA-C-116
+CM-PAY-029	salla	outside	SA-C-116/responsible/SA-S-0120	Salla doesn't collect cash on delivery with the merchant's own carrier
+CM-PAY-029	salla	outside	SA-C-116/responsible/SA-S-0121	settled directly between the merchant and the carrier
+CM-PAY-029	salla	shows	SA-C-116/decides/SA-S-0121	the same sentence, under decides
+CM-PAY-029	salla	shows	SA-C-116/boundary/SA-S-0084	UAE: amounts followed through the carrier, not the wallet
+CM-PAY-030	shopify	shows	SH-C-079/decides/SH-S-0322	bank transfers named among manual payment methods
+CM-PAY-030	salla	core	SA-C-117/where/SA-S-0095	the bank account among the payment methods, shown to customers at checkout
+CM-PAY-030	salla	shows	SA-C-117/boundary/SA-S-0095	the same sentence, under boundary
+CM-PAY-030	salla	core	SA-C-117/decides/SA-S-1956	plan line التحويل البنكي (سلة بلس)
+CM-PAY-030	salla	core	SA-C-117/decides/SA-S-1957	plan line نظام المدفوعات الفورية عبر سريع (سلة بلس)
+CM-PAY-030	salla	core	SA-C-117/decides/SA-S-2435	staff permission bank_accounts_management
+CM-PAY-030	salla	shows	SA-C-117/decides/SA-S-2645	partner permission bank_accounts_management, إدارة الحسابات البنكية
+CM-PAY-030	salla	core	SA-C-117/decides/SA-S-3149	flag bank, released and enabled in the answering store
+CM-PAY-030	salla	shows	SA-C-117/boundary/SA-S-1059	API folder Payments, core in CM-PAY-001 under SA-C-110
+CM-PAY-031	salla	extension-point	SA-C-124/boundary/SA-S-1028	API folder Settlements
+CM-PAY-031	salla	extension-point	SA-C-124/boundary/SA-S-1564	access scope settlements, إدارة المبالغ المحجوزة
+CM-PAY-031	salla	extension-point	SA-C-124/boundary/SA-S-0178	the endpoint lets an app withhold an amount from the merchant's wallet
+CM-PAY-031	salla	extension-point	SA-C-124/decides/SA-S-0179	instant settlement allowed only for dropshipping applications
+CM-PAY-031	salla	core	SA-C-124/responsible/SA-S-5054	the merchant authorizes Salla to transfer the amounts of its dealings in the partner's app
+CM-PAY-031	salla	shows	SA-C-124/reason/SA-S-5055	to ease financial dealings between merchant and App Store partners
+CM-PAY-031	salla	shows	SA-C-124/where/SA-S-1193	App Store category Drop shipping, extension-point in domain B's CM-CAT-010
+CM-PAY-031	salla	core	SA-C-145/responsible/SA-S-5065	installing a shipping app authorizes Salla to withhold label amounts from the wallet balance
+CM-PAY-031	salla	core	SA-C-145/responsible/SA-S-5066	Salla settles with the carrier after deducting its commission
+CM-PAY-032	salla	core	SA-C-126/decides/SA-S-1968	plan line إرسال رابط الدفع للعميل (سلة بلس)
+CM-PAY-032	salla	core	SA-C-126/where/SA-S-5143	the payment link sent from the order's actions
+CM-PAY-032	salla	core	SA-C-126/boundary/SA-S-5144	notification setting for an alert when the payment link is sent
+CM-PAY-032	salla	shows	SA-C-126/decides/SA-S-2451	staff permission quick_payment_direct, beside Salla Point's
+CM-PAY-032	salla	shows	SA-C-126/decides/SA-S-2661	partner permission الدفع السريع (المباشر), group Salla Point
+CM-PAY-001	salla	core	SA-C-119/decides/SA-S-1966	plan line مكافأة الراجحي (سلة بلس), payment group aldfaa
+CM-PAY-001	salla	core	SA-C-119/decides/SA-S-3140	released flag mokafaa-alrajhi (plus, pro, special)
+CM-PAY-011	salla	outside	SA-C-120/responsible/SA-S-0099	payments collected through the gateway instead of Salla Payments, under responsible
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3107	flag bayan-pay, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3133	flag qpay, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3134	flag benefit, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3135	flag omannet, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3153	flag iyzico, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3154	flag my-fatoorah, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3155	flag paylink, not released
+CM-PAY-012	salla	shows	SA-C-119/decides/SA-S-0129	stc pay through Salla's gateway: Salla's fees, the direct connection stopped
+CM-PAY-013	salla	shows	SA-C-119/boundary/SA-S-0199	PayPal connected from طرق الدفع, under boundary (UAE)
+CM-ORD-006	salla	core	SA-C-122/decides/SA-S-3054	released flag sift (plus, pro, special)
+CM-ORD-006	salla	core	SA-C-122/decides/SA-S-2145	plan line قيود الدفع والحماية من الاحتيال (سلة برو)
+CM-ORD-006	salla	shows	SA-C-122/where/SA-S-0104	fraud protection among the shopping experience fee's services from Salla Payments
+CM-ORD-006	salla	shows	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system across its stores
+CM-ORD-006	salla	shows	SA-C-122/reason/SA-S-5053	to keep Salla a safe shopping environment for merchants and customers
+CM-PAY-009	salla	core	SA-C-122/responsible/SA-S-5051	the merchant answers for a card owner's complaint, and the transaction amount may be deducted from its account if the complaint is proven: Salla's service carries the chargeback (the coordinator, a reading, from batch 7's lead)
