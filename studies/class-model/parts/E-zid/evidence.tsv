@@ -1,0 +1,98 @@
+cap_id	platform	supports	key	why
+CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-1073	dashboard section تصميم المتجر: design, logo and icon
+CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-0447	product line E-store
+CM-SFR-001	zid	core	ZD-C-113/decides/ZD-S-0489	staff permission manage.store.front.customization
+CM-SFR-001	zid	core	ZD-I-0327	plan line Responsive Design in Store Design
+CM-SFR-001	zid	core	ZD-I-0328	plan line Various Ready-Made Templates in Store Design
+CM-SFR-001	zid	core	ZD-C-113/decides/ZD-S-1076	built-in footer text صنع بواسطة زد, editable
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1075	theme customization on Professional and Enterprise plans
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1002	plan line CSS interface customization, growth and pro
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1001	plan line SDK Template Design (Up to 2), pro
+CM-SFR-002	zid	core	ZD-I-0329	plan line Customize Colors & Fonts in Store Design
+CM-SFR-003	zid	core	ZD-C-076/where/ZD-S-0895	Theme Market defined: a platform owned by Zid
+CM-SFR-003	zid	core	ZD-C-076/decides/ZD-S-0363	plan Rise: access to themes store
+CM-SFR-003	zid	core	ZD-C-076/decides/ZD-S-0896	store returns to a free theme Zid provides
+CM-SFR-003	zid	extension-point	ZD-C-076/responsible/ZD-S-0897	partner is the provider of a partner's theme
+CM-SFR-003	zid	extension-point	ZD-C-076/boundary/ZD-S-0899	Partner Share of the merchant's payment
+CM-SFR-003	zid	own-service	ZD-C-076/responsible/ZD-S-0898	Zid owns the IP of its own themes
+CM-SFR-005	zid	extension-point	ZD-I-0436	App Market category تحسين واجهة المتجر (ZD-C-070, F)
+CM-SFR-005	zid	extension-point	ZD-I-0450	App Market category المحتوى المرئي والقصص (ZD-C-070, F)
+CM-SFR-006	zid	core	ZD-I-0332	plan line Store - Landing Page in Store Design
+CM-SFR-008	zid	core	ZD-C-096/where/ZD-S-0948	domains list from the dashboard's settings
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0949	free domain request on Growth and Professional
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0950	plan line Custom Domain Linking, launch, growth, pro
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0492	staff permission manage.store.custom.domain
+CM-SFR-008	zid	core	ZD-C-096/boundary/ZD-S-0952	zid.store subdomains Zid gives the store
+CM-SFR-008	zid	shows	ZD-C-096/responsible/ZD-S-0951	merchant responsible for buying and activating the domain
+CM-SFR-012	zid	core	ZD-C-075/where/ZD-S-0049	API group API's > Checkout
+CM-SFR-012	zid	core	ZD-C-075/where/ZD-S-0046	API group API's > Authentication
+CM-SFR-012	zid	core	ZD-C-113/boundary/ZD-S-0051	API group API's > Storefront, page Store Scripts
+CM-SFR-012	zid	core	ZD-C-075/boundary/ZD-S-0894	Role header Customer, operations as a customer
+CM-SFR-012	zid	core	ZD-I-0047	API group API's > Products
+CM-SFR-012	zid	core	ZD-I-0048	API group API's > Categories
+CM-SFR-012	zid	core	ZD-I-0050	API group API's > Account
+CM-SFR-012	zid	core	ZD-I-0052	API group API's > Countries
+CM-SFR-013	zid	core	ZD-I-0326	plan line Search Bar in Store Design
+CM-SFR-013	zid	core	ZD-I-0330	plan line Filtering in Store Design
+CM-SFR-013	zid	core	ZD-I-0331	plan line Filter Criteria & Options in Store Design
+CM-CNT-002	zid	core	ZD-C-100/decides/ZD-S-0963	plan line Custom Fields for products or orders (ZD-C-100, C)
+CM-CNT-003	zid	core	ZD-I-0539	staff permission manage.store.front.pages
+CM-CNT-003	zid	core	ZD-C-039/boundary/ZD-S-0783	API page API's > Storefront [Pages]
+CM-CNT-004	zid	core	ZD-C-093/where/ZD-S-1040	dashboard route المتجر الإلكتروني > المدونة
+CM-CNT-004	zid	core	ZD-C-093/where/ZD-S-0936	own API Merchant APIs > Blogs > Posts
+CM-CNT-004	zid	core	ZD-C-093/boundary/ZD-S-0937	own API GET /v2/blogs/posts/
+CM-CNT-004	zid	core	ZD-I-0036	own API group Blogs > Settings
+CM-CNT-004	zid	core	ZD-I-0037	own API group Blogs > Categories
+CM-CNT-004	zid	core	ZD-I-0040	own API group Blogs > Tags
+CM-CNT-004	zid	core	ZD-I-0041	own API group Blogs > Storefront > Posts
+CM-CNT-004	zid	core	ZD-C-093/decides/ZD-S-1042	blog only on Growth and Professional plans
+CM-CNT-004	zid	shows	ZD-C-093/where/ZD-S-1041	merchant sent to a Blog platform to register or sign in
+CM-CNT-004	zid	shows	ZD-C-093/boundary/ZD-S-1043	the app supports Tech Station's and Zid's themes only
+CM-CNT-004	zid	shows	ZD-C-093/reason/ZD-S-1044	reason: articles in the store draw search-engine visits
+CM-CNT-005	zid	core	ZD-C-113/decides/ZD-S-1074	plan line القائمة الرئيسية, Professional and Enterprise
+CM-CNT-007	zid	core	ZD-I-0300	plan line Store SEO Customization (ZD-C-106, D)
+CM-CNT-007	zid	extension-point	ZD-I-0463	App Market category SEO وتحسين الظهور (ZD-C-070, F)
+CM-CNT-008	zid	core	ZD-C-039/where/ZD-S-0779	settings page الصفحات القانونية
+CM-CNT-008	zid	core	ZD-C-039/decides/ZD-S-0780	kinds of legal pages: privacy, terms, returns, complaints, licences
+CM-CNT-008	zid	shows	ZD-C-039/decides/ZD-S-0781	stores should make their consumer policies clear
+CM-CNT-008	zid	shows	ZD-C-039/responsible/ZD-S-0782	merchant should post a privacy policy
+CM-CNT-009	zid	core	ZD-C-102/where/ZD-S-0967	settings page إعادة توجيه الروابط
+CM-CNT-009	zid	shows	ZD-C-102/reason/ZD-S-0968	reason: many redirects when moving from another platform
+CM-CHN-001	zid	core	ZD-C-109/where/ZD-S-0985	dashboard section منصات البيع, activate and link
+CM-CHN-001	zid	extension-point	ZD-I-0452	App Market category قنوات البيع (ZD-C-070, F)
+CM-CHN-002	zid	core	ZD-C-109/where/ZD-S-0985	dashboard route to activate Mazeed under منصات البيع
+CM-CHN-002	zid	core	ZD-C-024/where/ZD-S-0702	dashboard route منصات البيع > مزيد (ZD-C-024, also E)
+CM-CHN-002	zid	core	ZD-C-109/boundary/ZD-S-0991	store's products added to Mazeed automatically
+CM-CHN-002	zid	core	ZD-I-0368	Starter plan card: products on mazeed marketplace
+CM-CHN-002	zid	own-service	ZD-C-109/responsible/ZD-S-0989	Zid, through Mazeed, the seller's legal representative
+CM-CHN-002	zid	shows	ZD-C-109/where/ZD-S-0984	Mazeed defined: merchants sell, customers shop
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0986	needs a Zid store on a plan
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0987	activity not prohibited under Saudi regulations
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0988	open to all Zid stores, Gulf merchants included
+CM-CHN-002	zid	shows	ZD-C-109/responsible/ZD-S-0990	merchant ships and delivers the order
+CM-CHN-002	zid	shows	ZD-C-109/boundary/ZD-S-0992	Zid may see the merchant's customers' data
+CM-CHN-002	zid	shows	ZD-C-109/reason/ZD-S-0993	reason: assessing and improving Mazeed
+CM-CHN-002	zid	shows	ZD-C-024/where/ZD-S-0703	Mazeed's own payment gateway, in the app only (ZD-C-024)
+CM-CHN-003	zid	core	ZD-C-110/where/ZD-S-0458	product line Marketplaces: Amazon, Trendyol, Jahez
+CM-CHN-003	zid	core	ZD-C-110/boundary/ZD-S-0995	order field is_marketplace_order
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1060	Zid's share of Amazon sales by plan
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1062	connection app not on Zid Lite plan
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1061	fees from the wallet, 500 SAR balance cap
+CM-CHN-003	zid	core	ZD-C-110/boundary/ZD-S-1065	integration syncs data through APIs
+CM-CHN-003	zid	shows	ZD-C-110/reason/ZD-S-0995	customer data masked on marketplace orders
+CM-CHN-003	zid	shows	ZD-C-110/responsible/ZD-S-1058	merchant needs an Amazon Sellers account
+CM-CHN-003	zid	shows	ZD-C-110/responsible/ZD-S-1059	compliance with GDPR, CCPA, PCI-DSS
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-1063	Amazon in Saudi Arabia and the UAE
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-1064	Jahez joining conditions, Mazeed activated
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-0994	Jahez: no change through Mazeed
+CM-CHN-003	zid	shows	ZD-C-110/boundary/ZD-S-1066	Jahez orders shipped under Jahez's courier
+CM-CHN-006	zid	core	ZD-C-116/decides/ZD-S-0500	staff permission manage.store.ecosystem.mobileapps
+CM-CHN-006	zid	extension-point	ZD-C-116/where/ZD-S-1082	app reached from Zid's App Market
+CM-CHN-006	zid	extension-point	ZD-I-0437	App Market category تطبيقات الجوال للمتجر (ZD-C-070, F)
+CM-CHN-006	zid	outside	ZD-C-116/where/ZD-S-1081	store app created by عناقيد التطبيقات
+CM-CHN-006	zid	outside	ZD-C-116/responsible/ZD-S-1085	عناقيد التطبيقات uploads the app to its account
+CM-CHN-006	zid	shows	ZD-C-116/where/ZD-S-1006	help-centre topic: mobile app requirements
+CM-CHN-006	zid	shows	ZD-C-116/decides/ZD-S-1083	one-year subscription
+CM-CHN-006	zid	shows	ZD-C-116/responsible/ZD-S-1084	merchant creates Apple and Google developer accounts
+CM-CHN-006	zid	shows	ZD-C-116/boundary/ZD-S-1086	store's contents managed from one dashboard
+CM-CHN-006	zid	shows	ZD-C-116/reason/ZD-S-1087	reason: brand on Apple's and Google's stores

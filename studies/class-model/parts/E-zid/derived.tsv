@@ -1,0 +1,29 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHN-001	zid	statements	core;extension-point	منصات البيع		ZD-C-070/reason:searched, not found	general
+CM-CHN-002	zid	statements	core;own-service	بوابة الدفع في مزيد | لوحة التحكم > منصات البيع > مزيد | مزيد (definition) | منصات البيع			general
+CM-CHN-003	zid	statements	core	Marketplaces	ZD-C-110/decides/ZD-S-0994=جاهز | ZD-C-110/decides/ZD-S-1060=النمو; الانطلاقة; الاحترافية | ZD-C-110/decides/ZD-S-1062=باقة زد لايت | ZD-C-110/decides/ZD-S-1063=السعودية; الإمارات | ZD-C-110/decides/ZD-S-1064=احد مدن المملكة	ZD-C-110/responsible:stated only in general terms	general
+CM-CHN-004	zid	none-held					
+CM-CHN-005	zid	none-held					
+CM-CHN-006	zid	statements	core;extension-point;outside	تطبيق الجوال | سوق التطبيقات في زد | عناقيد التطبيقات	ZD-C-116/decides/ZD-S-0500=staff permission	ZD-C-070/reason:searched, not found	staff permission
+CM-CNT-001	zid	none-held					
+CM-CNT-002	zid	statements	core		ZD-C-100/decides/ZD-S-0963=compare-plans: starter, launch, growth, pro	ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	compare-plans: starter, launch, growth, pro
+CM-CNT-003	zid	statements	core			ZD-C-039/reason:searched, not found;ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general
+CM-CNT-004	zid	statements	core	Blog | Merchant APIs > Blogs > Posts | المتجر الإلكتروني > المدونة	ZD-C-093/decides/ZD-S-1042=باقة النمو; الباقة الاحترافية	ZD-C-093/responsible:stated only in general terms	general
+CM-CNT-005	zid	statements	core		ZD-C-113/decides/ZD-S-1074=الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	الباقة الاحترافية; باقة الأعمال الكبيرة
+CM-CNT-006	zid	none-held					
+CM-CNT-007	zid	statements	core;extension-point			ZD-C-070/reason:searched, not found;ZD-C-106/responsible:stated only in general terms;ZD-C-106/boundary:searched, not found;ZD-C-106/reason:searched, not found	general
+CM-CNT-008	zid	statements	core	الاعدادات > المتجر > الصفحات القانونية		ZD-C-039/reason:searched, not found	general
+CM-CNT-009	zid	statements	core	لوحة التحكم > الإعدادات > إعادة توجيه الروابط		ZD-C-102/decides:observation needed;ZD-C-102/responsible:stated only in general terms;ZD-C-102/boundary:searched, not found	general
+CM-SFR-001	zid	statements	core	E-store | تصميم المتجر	ZD-C-113/decides/ZD-S-0489=staff permission	ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general
+CM-SFR-002	zid	statements	core		ZD-C-113/decides/ZD-S-1001=compare-plans: starter, launch, growth, pro | ZD-C-113/decides/ZD-S-1002=compare-plans: starter, launch, growth, pro | ZD-C-113/decides/ZD-S-1075=الباقة الإحترافية; باقة الاعمال الكبيرة	ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general
+CM-SFR-003	zid	statements	core;extension-point;own-service	سوق الثيمات (definition)	ZD-C-076/decides/ZD-S-0363=plan Rise	ZD-C-076/reason:searched, not found	general
+CM-SFR-004	zid	none-held					
+CM-SFR-005	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-SFR-006	zid	statements	core			ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general
+CM-SFR-007	zid	none-held					
+CM-SFR-008	zid	statements	core	قائمة النطاقات	ZD-C-096/decides/ZD-S-0492=staff permission | ZD-C-096/decides/ZD-S-0949=النمو; الباقة الاحترافية | ZD-C-096/decides/ZD-S-0950=compare-plans: starter, launch, growth, pro	ZD-C-096/reason:searched, not found	general
+CM-SFR-009	zid	none-held					
+CM-SFR-010	zid	none-held					
+CM-SFR-011	zid	none-held					
+CM-SFR-012	zid	statements	core	API's > Authentication | API's > Checkout		ZD-C-075/decides:searched, not found;ZD-C-075/responsible:stated only in general terms;ZD-C-075/reason:searched, not found;ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general
+CM-SFR-013	zid	statements	core			ZD-C-113/responsible:stated only in general terms;ZD-C-113/reason:searched, not found	general

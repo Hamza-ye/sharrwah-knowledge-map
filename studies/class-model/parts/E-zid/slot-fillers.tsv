@@ -1,0 +1,14 @@
+cap_id	platform	filler	key
+CM-CHN-002	zid	أنظمة المملكة العربية السعودية (Saudi Arabia's regulations), on prohibited activities	ZD-C-109/decides/ZD-S-0987
+CM-CHN-003	zid	Amazon	ZD-C-110/where/ZD-S-0458
+CM-CHN-003	zid	Trendyol	ZD-C-110/where/ZD-S-0458
+CM-CHN-003	zid	Jahez	ZD-C-110/where/ZD-S-0458
+CM-CHN-003	zid	أمازون البائعين (Amazon Sellers), an account the merchant needs	ZD-C-110/responsible/ZD-S-1058
+CM-CHN-003	zid	Amazon, in Saudi Arabia and the UAE	ZD-C-110/decides/ZD-S-1063
+CM-CHN-003	zid	جاهز (Jahez), its joining conditions	ZD-C-110/decides/ZD-S-1064
+CM-CHN-003	zid	GDPR	ZD-C-110/responsible/ZD-S-1059
+CM-CHN-003	zid	CCPA	ZD-C-110/responsible/ZD-S-1059
+CM-CHN-003	zid	PCI-DSS	ZD-C-110/responsible/ZD-S-1059
+CM-CHN-006	zid	عناقيد التطبيقات, building the store's app	ZD-C-116/where/ZD-S-1081
+CM-CHN-006	zid	عناقيد التطبيقات, uploading the app to its own account	ZD-C-116/responsible/ZD-S-1085
+CM-CHN-006	zid	Apple and Google (app stores), the merchant's developer accounts	ZD-C-116/responsible/ZD-S-1084
