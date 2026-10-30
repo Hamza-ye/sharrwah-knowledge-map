@@ -466,3 +466,266 @@ My scratch tools are in `/tmp/claude-0/-home-user-sharrwah-knowledge-map/b5f6fd5
 - **Token counts.** They are estimates; no tokenizer is available here.
 - **A drafter's run on a batch, the coordinator's pass, and the amend parts.** None exists yet.
 - **`review_select.py` on real points files.** None exists yet, so I read its code instead.
+
+## Re-inspection
+
+**What this is.** The coordinator took all 20 findings and rewrote the brief and the script at `f3cc5be5`, changing `review_select.py` and `R-extent.md` for M7 and O12. I read the rewrite as I read the first version. For each finding: is it resolved? And does the rewrite bring anything new that presupposes an answer, leaves the drafter a decision that isn't theirs, or breaks?
+
+**The state I tested against.**
+- The rewrite is at `f3cc5be5`. Another agent was writing C-zid's next batch in the working tree, and my runs read it.
+- HEAD then moved to `55bc535d` (C-zid batch 2: Zid's cells for 32 payment capabilities). The brief, the script, the subjects' files and the review files are the same there. I re-measured P-1 at `55bc535d`, and M6's figures for it are from that commit.
+- Domain C still isn't merged.
+- I read the new brief (74 lines) and script (666 lines) whole, and the diffs of `review_select.py` and `R-extent.md`.
+- I also read the two sections of `B-extent.md` the brief now sends the drafter to (B-extent.md:109–145).
+
+### Summary
+
+- **The first inspection's 20 findings:** 18 resolved, 2 partly resolved (M1 and M6), none unresolved.
+- **New findings:** 4 must fix and 11 optional.
+- **Still open: 5 must fix and 11 optional.** Three of the must-fix findings block the batches: N2, N3 and what remains of M6. Two block only the coordinator's pass after the batches: N1 and N4.
+
+The must-fix findings still open:
+1. **M6, what remains.** P-1 still holds all of S-01. Its `show` is about 69k to 81k tokens, and reading its top leads' cells whole would add about 119k more.
+2. **N1.** "After the batches" sends a conflict under a founder's decision to the founder without the condition it puts on an engineering ruling. So a cell found wrong under a founder's row would also go to the founder, and `check --final` accepts that.
+3. **N2.** The new `placement` definition misfires on a cell that already places the third party beside `core`. 225 of 979 cells do.
+4. **N3.** The brief and the script's help name this inspection, which holds readings of particular points' landings and conflicts. CLAUDE.md lets a drafter read what the brief names.
+5. **N4.** No outcome fits a conflict the evidence doesn't settle, and `check --final` then forces one that does.
+
+### The first inspection's findings
+
+**M1, partly resolved.**
+- The drafter now records each conflict's rows and sets `landed` or `conflict` (P-points.md:35–36). The coordinator settles the fact first (:66).
+- `check` refuses a conflict that names a row outside the point's register. Tested: `count (rows: S01-D9): x` on S01-VP-01 is refused.
+- What remains is the coordinator's routing to the founder: see N1.
+
+**M2, resolved.**
+- `count` and `placement` follow the model's rules, and they can no longer both apply, because they now require different placements of the cell (:28–29).
+- Terms that state duties support no placement.
+- `open` capabilities are compared like any other.
+- Each platform is compared with the cell its variants answer in (:27).
+- `lead:` now tests every landing capability (land_points.py:642–645).
+
+The new definitions bring N2 and N9.
+
+**M3, resolved** (:33). Its worked case still trips N2: CM-MKS-007's BigCommerce cell is `core;outside`, with `outside` resting on Stripe.
+
+**M4, resolved.**
+- S02-VP-61 now ranks CM-PAY-017, "Local payment methods", second and CM-PAY-019 fourth, and the corpus noise is gone (`show --points S02-VP-61`).
+- By the script's own ranking, a lead resting on the page route alone now tops 2 of the 98 points, down from 13. Page-only leads fill 41 of the 457 top-five slots, down from 155.
+- Term leads now rank with the others, and they don't flood the top. Only three points have a top lead resting on terms alone: S02-VP-67, S02-VP-86 and S02-VP-87. Each lead is plausibly the point's thing.
+- The two page-only top leads left belong to S02-VP-77 and S02-VP-91. Both rest on one Salla article about bookings, and `show` reports nothing traced on the other four platforms. That is the honest result.
+
+**M5, resolved.** `cell CAP PLATFORM` prints a cell whole, with every evidence row. `show` prints each lead's basis as full keys. I tested both on CM-ACC-002, CM-PAY-004 and CM-MKS-003.
+
+**M6, partly resolved.** Measured at the new defaults (width 160, 20 variants):
+- **S-02's six batches:** `show` is 89k to 136k characters, about 26k to 47k tokens each. That is comfortably small.
+- **P-1:** `show` is 219,427 characters at `55bc535d`, about 69k to 81k tokens (199,906 at `f3cc5be5`, before Zid's payment cells). P-1 still holds all 23 of S-01's points.
+- **`cell`:** a call costs 0.5k to 3k tokens, and `show` now clips readings at 160 characters (land_points.py:452, :657), so drafters will call it often. Reading the top lead's cell whole on each platform the subject holds means 102 cells for P-1, about 119k tokens by my proxy (96k before Zid's payment cells). 15 of those cells are BigCommerce's, absent until C's merge, and they will add more.
+- **The rest of the reading** is about 13k: the B-extent sections (2k), the architecture plan's section 3 (1k), the brief (3k), the help (1k) and `founder-decisions.tsv` (6k).
+
+A reading: a P-1 drafter who reads every top-lead cell passes 200k. One who reads half ends near 170k to 185k, counting about 30k for its own writing and the session's prompt.
+
+**Fix:** split P-1 in two: S01-VP-01 to 10 (bullet a), and 11 to 23 (bullets b and c). Or give `cell` a compact form: placements and evidence keys, with the readings clipped.
+
+**M7, resolved.**
+- The `outcome` field, its forms and `check --final` work (tested).
+- `review_select.py` selects every drafted conflict with its outcome, including those showing "no outcome" (run on a fixture).
+
+What remains is in N5, N6 and N12.
+
+**M8, resolved.** Every case M8 listed is now caught. What remains is in N7 and N13.
+
+**O1 to O12, resolved:**
+- **O1:** evidence is now keyed by the full key; an `index:` statement traces within its own concern; and the concern route counts beside `cited` (land_points.py:129–133, :253–257, :313–321).
+- **O2:** S-02's Shopify statements now trace 116 of 901 (it was 74), and S-01's Salla statements 64 of 145 (it was 51). Tracing fell where corpus files no longer give page leads: S-02's Salla statements trace 62 of 364 (it was 76). The "nothing traced" line covers that.
+- **O3:** with `--variants 20`, one variant is hidden across all seven batches.
+- **O4:** "After the batches" names M9, the follows-by-rule rows and the moved rows (:69–71).
+- **O5:** `premise` is widened (:31).
+- **O6:** the brief adds `reach`, and leaves the cause and binding time in the subject's analysis (:7, :23). See N8.
+- **O7:** the brief adds the slot-filler note (:39). See N15.
+- **O8:** the file is opened as `utf-8-sig`; short and long rows are reported and skipped; a wrong header stops the batch (all tested).
+- **O9:** `batch_problems` checks that every point is in exactly one batch, and the patterns use `S\d\d`.
+- **O10:** parts are read in `PART_ORDER`, with a warning when a merged domain has a newer commit. The warning fires now, rightly, for A-anchor, A-woocommerce and D-amend, whose cells, evidence or landings changed after the merge at `765de7c2`. See N10.
+- **O11:** head terms are parsed and annotations stripped.
+- **O12:** a `none` point now goes to the domain of its basis's first concern. On a fixture, S01-VP-12, with `concern:SA-C-114`, went to share 2. But a `none` point whose basis holds no `concern:` item still goes to share 4, as S01-VP-13 did. See N13.
+
+### New findings: must fix
+
+**N1. The routing to the founder lacks the condition the routing for engineering has.** Must fix before the coordinator's pass; the batches can run without it.
+- The coordinator first settles the fact (P-points.md:66). The engineering bullet then applies only "where the subject's evidence is wrong, or read wrongly" (:68).
+- The founder's bullet has no such condition: "under a founder's decision, the conflict goes to the founder" (:69).
+- Read as written, a conflict settled as a cell error under S01-D1 is amended in the model (:67) and also goes to the founder. That is the question of fact M1 was about.
+- `check --final` accepts `to the founder: GM item 4 (the coordinator)` on a `count (rows: model)` conflict. It also accepts `re-ruled: S01-D1, listed for veto` on a founder's row (both tested; see N5).
+
+**Fix.**
+- Write "where the subject's evidence is wrong, or read wrongly, under a founder's decision, ...".
+- Say that a conflict whose only consequence is an amendment to the model doesn't go to the founder.
+
+**N2. `placement` misfires on a cell that already places the third party.** Must fix before the batches.
+- The new definition reads: "the cell is `core` or `own-service`, and the subject's statements show a third party doing it" (:29).
+- 225 of the 979 cells with statements hold `core` or `own-service` together with `outside` or `extension-point`, among them CM-PAY-001 to 006 on Shopify.
+- **A worked case: S01-V-001, "Global-e holds the funds"** (`variants.tsv`:2).
+  - The variant answers in CM-MKS-003. Its Shopify cell is `core;outside`.
+  - The `outside` placement rests on Global-e, including SH-C-110/responsible/SH-S-0565, "funds held in a Global-e account" (`cell CM-MKS-003 shopify`).
+  - By the new definition this is a placement conflict, yet the cell already holds what the variant says.
+- M3's Stripe case on CM-MKS-007 is the same.
+- My own fix for M2 proposed this wording, without allowing for cells with several placements.
+
+**Fix:** add "and the cell doesn't already place that party `outside` or `extension-point` on that platform".
+
+**N3. The brief and the script's help name this inspection.** Must fix before the batches.
+- P-points.md:3 reads: "This brief was inspected before it ran (`studies/class-model/inspection-P.md`)". The help's first lines name it too (land_points.py:3).
+- CLAUDE.md lets an agent working from a brief read "your brief and what it names".
+- This file holds readings of particular points in the batches:
+  - S01-VP-01's Salla answer, and CM-PAY-004 against CM-PAY-005;
+  - S02-VP-08 on CM-ACC-002;
+  - S02-VP-42's Stripe on CM-MKS-007;
+  - S02-VP-61's CM-PAY-017 and CM-PAY-019;
+  - and, in this section, S01-V-001 on CM-MKS-003.
+- A drafter who reads it is steered to landings and conflicts before reading the evidence.
+
+**Fix:** take the pointer out of the brief and the docstring. Or write "Don't read `inspection-P.md`: it discusses particular points".
+
+**N4. No outcome fits a conflict the evidence doesn't settle.** Must fix before the coordinator's pass; the batches can run without it.
+- The outcome forms all assume a settled fact (P-points.md:74; land_points.py:70–72).
+- `check --final` requires an outcome for every conflict (:640–641).
+- Some conflicts have no fitting form: those whose sides rest on a source neither side holds whole, or on a page a run could capture.
+- PLAN.md section 6, Evidence, routes such a gap to a capture request in `handoffs/`. And the brief's own rule is "Nothing gets settled that the evidence didn't settle" (:45).
+
+**Fix:** add the form `kept open: <what would settle it>`, naming the handoff where a run can capture it, and have `--final` accept it.
+
+### New findings: optional
+
+**N5. `--final` doesn't test an outcome against the rows its conflict names.**
+- **Evidence:** these pass (tested):
+  - `re-ruled: S01-D1, listed for veto`, which is engineering re-ruling a founder's decision;
+  - `to the founder` on a `rows: model` conflict;
+  - `carried to S-03` with no S-03 moved row among the conflict's rows.
+- **Fix:**
+  - allow `re-ruled: <row>` only for an engineering row the conflict names;
+  - allow `to the founder` only where a founder's row is named;
+  - allow `to the founder with plans` only for S02-M9;
+  - allow `carried to S-NN` only for a row moved to S-NN;
+  - allow `re-applied` only for a follows-by-rule row.
+
+**N6. The drafter's check accepts an outcome.**
+- **Evidence:** a draft holding `dismissed: ... (the coordinator)` passes `check` (tested).
+- **Fix:** without `--final`, require `outcome` to be empty.
+
+**N7. A `|` inside a conflict's text is read as the start of a new conflict.**
+- **Evidence:** cells' terms hold " | ", for example "Wallet | الأسئلة الشائعة", and quoting them breaks the row (land_points.py:614; tested).
+- **Fix:** split only where a type and "(rows:" follow. Or tell the drafter not to use `|`.
+
+**N8. `reach` has no criterion that six drafters can apply the same way, and it is pinned to a draft's numbering.**
+- **Evidence:**
+  - 37 of S-02's 75 points are named by a row the architecture plan's section 3 cites as a cross-cutting decision: D1, E1 and E2 under item 4, D6 under item 6, and D9 under item 3. "Binds every area through" one of these decisions can be read to cover all 37, or only a few.
+  - `REACH` accepts items 1 to 6 of a plan that stays a draft until GM (land_points.py:68).
+- **Fix:**
+  - mark a point cross-cutting only where the point's own thing is held in every area (every amount, every contract, every store's country), not where its value is merely held through the configuration or country mechanism;
+  - name the decision, not its number;
+  - mark `reach` as a reading.
+
+**N9. The `core` list at line 28 drops "a plan line that includes it".**
+- **Evidence:**
+  - B-extent.md:114 includes it.
+  - "Convention 12" refers to a document the drafter doesn't read.
+- **Fix:** point to B-extent's list without restating it, and gloss convention 12 in a phrase.
+
+**N10. The merge warning comes with no instruction.**
+- **Evidence:**
+  - A drafter can't merge, and the brief doesn't say to stop.
+  - The warning also fires on notes-only commits, and it misses uncommitted changes (land_points.py:85–91, :113–120).
+- **Fix:** add "if `show` warns, stop and tell the coordinator".
+
+**N11. The route numbers are weights, and a statement counts once for each concern-map key it matches.**
+- **Evidence:**
+  - S01-VP-01 shows "cited SH24" for CM-PAY-004, from 7 Shopify statements.
+  - A passage the concern map split into several statements weighs several times (land_points.py:313–317, :361–369).
+- **Fix:** count a statement once per capability and route, and print counts beside the scores.
+
+**N12. A conflict the coordinator finds on a point drafted `landed` has no form.**
+- **Evidence:** the brief says "The drafted conflict and status stay as written" (:74).
+- **Fix:** the coordinator appends its own conflict, marked "(the coordinator)", with its outcome, and the review selects it.
+
+**N13. A `none` point's basis is checked only by its shape.**
+- **Evidence:**
+  - a key no statement has, such as `SH-C-999/where/SH-S-9999`, passes (land_points.py:601; tested);
+  - a basis item whose route isn't listed also passes (:605–607);
+  - a `none` point whose basis holds no `concern:` item goes to the review's share 4 (`review_select.py`, `point_part`; tested).
+- **Fix:**
+  - require a `none` point's keys to exist in the concern map;
+  - require each basis item to have its route;
+  - for a `none` point with no `concern:` item, fall back to its subject's domain.
+
+**N14. `rows: model` asks the drafter to judge a side.**
+- **Evidence:** the brief allows `rows: model` "where only the cells are in question" (:35). Choosing it means judging that the subject's side isn't in question, which is deciding which side is right, and the same line forbids that.
+- **Fix:** name the rows that rest on the subject's side, and `model` for the model's side. Name both, unless one side truly isn't compared.
+
+**N15. No command lists a capability's slot fillers.**
+- **Evidence:** the note at :39 sends the drafter to `merged/slot-fillers.tsv` (17,377 characters). That file lacks C's fillers until the merge; they are in C's parts.
+- **Fix:** have `cell` print the capability's slot fillers.
+
+### What I tested, and how
+
+My scratch tools are in `/tmp/claude-0/-home-user-sharrwah-knowledge-map/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/tools/`: `rank2.py`, `traced2.py`, `cellsize.py`, `make_fixture2.py` and `mutate2.py`. Each imports the rewritten `land_points.py` unchanged.
+
+**Commands I ran:**
+- `batches`, which reports no problem;
+- `show` on all seven batches;
+- the `leads` ranking on all 98 points;
+- `cell` on five cells;
+- the merge-age warnings, each checked against its part's diff since `765de7c2`.
+
+**`check`: the baseline.** It lands all 98 points on their top lead, with the basis and routes as the script computes them. It prints "# 98 points in P-1, ..., P-7, 0 problems", with 105 `lead:` lines.
+
+**`check`: 62 changes to P-1:**
+- **41 caught**, as they should be.
+- **14 accepted, rightly:**
+  - `reach` item 3, and a term-only `none` point;
+  - `rows: model`, `rows: S01-D1`, and both together;
+  - conflicts joined with or without spaces, and a `;` inside a conflict's text;
+  - `premise` before `structure` on a `none` point;
+  - `model amended` after a premise conflict;
+  - `--final` with its outcome;
+  - a byte-order mark, CRLF line ends and blank lines.
+- **1 refused, wrongly:** a `|` quoted inside a conflict's text (N7).
+- **6 passed, wrongly:**
+  - a key in the basis for a route that isn't listed, and a key no statement has on a `none` point (N13);
+  - an outcome written in a draft (N6);
+  - `carried to S-03` with nothing after it;
+  - `to the founder` on a model-only conflict (N1, N5);
+  - `re-ruled` naming a founder's row (N5).
+
+I ran the last three again under `--final`, which accepts them too.
+
+**`review_select.py select`,** run in a fixture directory with `merged/`, `parts/`, `seed/`, `scope.tsv` and `q3/` linked read-only:
+- it selected both drafted conflicts, one with its outcome and one showing "no outcome";
+- it sent the `none` point with a C concern to share 2, and the term-only `none` point to share 4;
+- it wrote only inside the fixture.
+
+**What I couldn't test:**
+- C merged, so I couldn't test BigCommerce's cells in C, which P-1 will read (Zid's payment cells arrived at `55bc535d`);
+- a drafter's run, and the coordinator's pass;
+- exact token counts, which are estimates, as before.
+
+## The coordinator's response to the re-inspection (30 October 2026)
+
+All five must-fix findings and all eleven optional ones are taken, as the re-inspection proposes:
+- **M6:** S-01 runs in two batches, P-1 (points 1 to 10) and P-2 (11 to 23); S-02's six follow as P-3 to P-8. `show` for P-1 is about 116,000 characters and for P-2 about 105,000.
+- **N1:** the founder bullet now carries the engineering bullet's condition, and a conflict whose only consequence is an amendment goes to no one else. `check --final` refuses `to the founder` unless a founder's row is among the conflict's rows.
+- **N2:** `placement` holds only where the cell doesn't already place that party `outside` or `extension-point` on that platform.
+- **N3:** the brief and the script's help no longer name this inspection.
+- **N4:** a `kept open: <what would settle it>` outcome, routed to a capture request where a run can capture it.
+- **N5:** each outcome is tested against the rows its conflict names: `re-ruled` an engineering row named, `to the founder` a founder's row, `to the founder with plans` S02-M9, `carried to S-NN` a row moved there, `re-applied` a follows-by-rule row.
+- **N6:** a draft's outcome must be empty; `--final` is the coordinator's check.
+- **N7:** a conflict splits only where `| <word> (rows:` follows, so a `|` inside its text stays there and a mistyped type is still caught.
+- **N8:** `reach` is a reading, with a criterion (the point's own thing held in every area), and names the decision in the architecture plan's words.
+- **N9:** the brief points to `B-extent.md`'s rules as written there, and glosses the kind `open`.
+- **N10:** the warning tells the drafter to stop and tell the coordinator; it reads only the model's four data files, and uncommitted changes too.
+- **N11:** each subject statement counts once for each capability and route, and `show` prints the counts beside the score.
+- **N12:** a conflict the coordinator finds on a landed point is added after the drafted ones, marked, and the point's status becomes `conflict`.
+- **N13:** a `none` point's keys must exist in the concern map; each basis item needs its route.
+- **N14:** a conflict names the rows on the subject's side and `model` for the model's side, both unless one side isn't compared.
+- **N15:** `cell` lists the capability's slot fillers.
+
+The coordinator's fixture tests (34 cases, the scratchpad's `ptest/mut.py`) all behave as expected, among them the five outcome-to-row rules, a `|` inside a conflict's text, `kept open`, and a draft holding an outcome.

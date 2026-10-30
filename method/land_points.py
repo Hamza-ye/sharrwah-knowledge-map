@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """The subjects' variation points on the class's model (PLAN.md, Stage 4A, "The subjects' points"; the brief
-studies/class-model/briefs/P-points.md; its inspection, studies/class-model/inspection-P.md).
+studies/class-model/briefs/P-points.md).
 
   batches
         the batches the landing runs in, each with its points. Every point of each subject is in one batch.
@@ -8,22 +8,25 @@ studies/class-model/briefs/P-points.md; its inspection, studies/class-model/insp
         what landing a point reads, in one view: its question and terms; the register rows that name it, with
         their answer or recommendation and status; the subject's own analysis of it (S-02's answers per key,
         S-01's analysis); its variants per platform, with how many of each platform's statements trace to the
-        concern map; then its leads, ranked, each with the basis it rests on and its cells' placements and
-        readings, clipped (read a cell whole with `cell`)
+        concern map; then its leads, ranked, each with the statements behind each route, the basis it rests on,
+        and its cells' placements and readings, clipped (read a cell whole with `cell`)
   leads [--subjects S-01,S-02] [--points ID[,ID...]] [--top N]
         the ranked leads alone
   cell CAP_ID PLATFORM
-        one cell whole: what it holds, its placements, terms and reading, and each evidence row (supports, key, why)
+        one cell whole: what it holds, its placements, terms and reading, each evidence row (supports, key, why),
+        and the capability's slot fillers
   check [--batch NAME] [--final]
         a batch's file, studies/class-model/points/<batch>.tsv, against the subjects and the model; without
-        --batch, every batch's file. --final, after the coordinator's pass, also requires an outcome for each
-        conflict. Then, for each landed point and each platform whose statements the subject holds, where none of
-        the point's capabilities holds a cell with statements on that platform: a lead to read, not a conflict.
+        --batch, every batch's file. A draft's outcomes are empty. --final, for the coordinator's pass, requires an
+        outcome for each conflict, and each outcome of a form its conflict's rows allow. Then, for each landed
+        point and each platform whose statements the subject holds, where none of the point's capabilities holds
+        a cell with statements on that platform: a lead to read, not a conflict.
 
-A lead is never an answer. Its routes, and what each weighs in the ranking:
+A lead is never an answer. Its routes, and what a statement weighs in the ranking (each statement counted once for
+each capability and route):
   cited    a cell cites the concern map's statement the subject's statement comes from, by its concern and its
-           citation (3 a statement)
-  concern  that statement's concern lands in the capability (2 a statement)
+           citation (3)
+  concern  that statement's concern lands in the capability (2)
   page     the subject read its statement on a page that the concern map's statements of a concern also cite, at
            another locator, and the concern lands in the capability (1 over the page's number of concerns). A page
            with more than three concerns, or a collection file (.json, .jsonl, .js), gives no page lead: it is a
@@ -48,16 +51,17 @@ OUT = os.path.join(MODEL, "points")
 # The subjects whose points land now: S-01 and S-02 have ended. Each later subject's points land as it ends
 # (PLAN.md, Stage 4A), with its batches added here.
 SUBJECTS = ("S-01", "S-02")
-# Each batch small enough that a drafter's context stays well under 200,000 tokens (inspection-P.md, M6), with
-# each "what X takes its value per" beside its "who sets X".
+# Each batch small enough that a drafter's context stays well under 200,000 tokens, with each "what X takes its
+# value per" beside its "who sets X".
 BATCHES = {
-    "P-1": ("S-01", list(range(1, 24))),
-    "P-2": ("S-02", list(range(1, 13))),
-    "P-3": ("S-02", list(range(13, 20)) + list(range(26, 30))),
-    "P-4": ("S-02", list(range(41, 55))),
-    "P-5": ("S-02", list(range(55, 69))),
-    "P-6": ("S-02", list(range(69, 77)) + [78, 79, 84]),
-    "P-7": ("S-02", [77, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92]),
+    "P-1": ("S-01", list(range(1, 11))),
+    "P-2": ("S-01", list(range(11, 24))),
+    "P-3": ("S-02", list(range(1, 13))),
+    "P-4": ("S-02", list(range(13, 20)) + list(range(26, 30))),
+    "P-5": ("S-02", list(range(41, 55))),
+    "P-6": ("S-02", list(range(55, 69))),
+    "P-7": ("S-02", list(range(69, 77)) + [78, 79, 84]),
+    "P-8": ("S-02", [77, 80, 81, 82, 83, 85, 86, 87, 88, 89, 90, 91, 92]),
 }
 HEAD = ["subject", "vp_id", "question", "cap_ids", "reach", "route", "basis", "reading", "register", "conflict",
         "status", "outcome"]
@@ -65,13 +69,21 @@ ROUTES = ("cited", "concern", "page", "terms")
 WEIGHT = {"cited": 3, "concern": 2, "page": 1, "terms": 1}
 CONFLICTS = ("count", "placement", "structure", "premise")
 STATUS = ("landed", "conflict")
-REACH = re.compile(r"^(capability|cross-cutting: architecture plan, section 3, item [1-6])$")
+# The decisions that cut across every area, as the architecture plan's section 3 names them.
+CROSS = ("how stores are kept apart", "identity and permissions", "money records and currency",
+         "markets and the seller's country", "events and extension points", "configuration")
+REACH = re.compile(r"^(capability|cross-cutting: (" + "|".join(re.escape(c) for c in CROSS) + r"))$")
 CONFLICT = re.compile(r"^(count|placement|structure|premise) \(rows: ([^)]+)\): (\S.*)$")
-OUTCOME = re.compile(r"^(model amended: \S+/\S+ \S.*|re-ruled: \S.*, listed for veto|carried to S-\d\d\b.*|"
-                     r"re-applied: \S.*|to the founder: \S.*|to the founder with plans: \S.*|dismissed: \S.*) "
-                     r"\(the coordinator\)$")
+CONFLICT_SPLIT = re.compile(r"\s*\|\s*(?=[\w-]+ \(rows:)")      # a | inside a conflict's text stays in it
+OUTCOMES = ("model amended", "re-ruled", "to the founder with plans", "to the founder", "carried to", "re-applied",
+            "dismissed", "kept open")
+OUTCOME = re.compile(r"^(model amended: \S+/\S+ \S.*|re-ruled: (\S+), listed for veto|carried to (S-\d\d): \S.*|"
+                     r"re-applied: (\S+)|to the founder: \S.*|to the founder with plans: \S.*|dismissed: \S.*|"
+                     r"kept open: \S.*) \(the coordinator\)$")
+OUTCOME_SPLIT = re.compile(r"\s*\|\s*(?=(?:" + "|".join(re.escape(o) for o in OUTCOMES) + r")\b)")
 VP = re.compile(r"S\d\d-VP-\d+")
 KEY = re.compile(r"^[A-Z]{2}-(C-\d{3}/[a-z]+/[A-Z]{2}-[SI]-\d{4}|I-\d{4})$")
+DATA = ("capabilities.tsv", "landings.tsv", "cells.tsv", "evidence.tsv")
 
 
 def split(s):
@@ -82,13 +94,16 @@ def semi(s):
     return [x.strip() for x in (s or "").split(";") if x.strip()]
 
 
-def git_time(path):
+def git(*args):
     try:
-        out = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%ct", "--", path], capture_output=True,
-                             text=True, timeout=30).stdout.strip()
-        return int(out) if out else 0
+        return subprocess.run(["git", "-C", ROOT, *args], capture_output=True, text=True, timeout=30).stdout.strip()
     except Exception:
-        return 0
+        return ""
+
+
+def git_time(paths):
+    out = git("log", "-1", "--format=%ct", "--", *paths)
+    return int(out) if out else 0
 
 
 # --- the model: merged where merged, a domain's parts in their order where it isn't ---------------------------
@@ -105,18 +120,20 @@ def model():
     land = {(r["platform"], r["concern_id"]): r["cap_id"] for r in rows(os.path.join(merged, "landings.tsv"))}
     cells = {(r["cap_id"], r["platform"]): r for r in rows(os.path.join(merged, "cells.tsv"))}
     evrows = rows(os.path.join(merged, "evidence.tsv"))
+    fillers = rows(os.path.join(merged, "slot-fillers.tsv"))
     done = {r["domain"] for r in caps.values()}
     base = os.path.join(MODEL, "parts")
     parts = [d for d in (os.listdir(base) if os.path.isdir(base) else []) if "-" in d]
     order = {p: i for i, p in enumerate(PART_ORDER)}
     parts.sort(key=lambda d: (d.split("-")[0], order.get(d.split("-", 1)[1], 99)))
-    mt = git_time(os.path.relpath(merged, ROOT))
+    mt = git_time([os.path.relpath(os.path.join(merged, f), ROOT) for f in DATA])
     for d in parts:
         dom = d.split("-")[0]
         if dom in done:
-            if mt and git_time(os.path.relpath(os.path.join(base, d), ROOT)) > mt:
-                print(f"warning: {d} has a commit newer than merged/: merge again before landing on domain {dom}",
-                      file=sys.stderr)
+            data = [os.path.relpath(os.path.join(base, d, f), ROOT) for f in DATA]
+            if (mt and git_time(data) > mt) or git("status", "--porcelain", "--", *data):
+                print(f"warning: {d}'s model files changed after the last merge: stop, and tell the coordinator to "
+                      f"merge again before landing on domain {dom}", file=sys.stderr)
             continue
         for r in rows(os.path.join(base, d, "capabilities.tsv")):
             caps.setdefault(r["cap_id"], dict(r, domain=dom))
@@ -126,14 +143,18 @@ def model():
         for r in rows(os.path.join(base, d, "cells.tsv")):
             cells[(r["cap_id"], r["platform"])] = dict(r, placed_as=placed.get((r["cap_id"], r["platform"]), ""))
         evrows += rows(os.path.join(base, d, "evidence.tsv"))
+        fillers += rows(os.path.join(base, d, "slot-fillers.tsv"))
     ev_by_key = collections.defaultdict(set)          # a statement's key -> the capabilities whose cells cite it
     ev_by_cell = collections.defaultdict(list)        # (cap, platform) -> evidence rows
     for r in evrows:
         ev_by_key[r["key"]].add(r["cap_id"])
         ev_by_cell[(r["cap_id"], r["platform"])].append(r)
+    by_cap = collections.defaultdict(list)
+    for r in fillers:
+        by_cap[r.get("cap_id", "")].append(r)
     kinds = {r["cap_id"]: r for r in rows(os.path.join(merged, "kinds.tsv"))}
     _model = dict(caps=caps, land=land, cells=cells, ev_by_key=ev_by_key, ev_by_cell=ev_by_cell, kinds=kinds,
-                  merged=done)
+                  merged=done, fillers=by_cap)
     return _model
 
 
@@ -174,18 +195,21 @@ _cmap = {}
 
 
 def cmap(platform):
-    """cite id -> [(concern, key)]; (page, locator) -> cite ids; page -> concerns; every concern's id."""
+    """cite id -> [(concern, key)]; (page, locator) -> cite ids; page -> concerns; every concern's id; every key."""
     if platform in _cmap:
         return _cmap[platform]
     d = os.path.join(CMAP, "platforms", platform)
     by_cite = collections.defaultdict(list)
+    keys = set()
     for r in rows(os.path.join(d, "statements.tsv")):
         k = f"{r['concern_id']}/{r['placement']}/{first_cite(r['cite_ids'])}"
+        keys.add(k)
         for c in split(r["cite_ids"]):
             by_cite[c].append((r["concern_id"], k))
     for r in rows(os.path.join(d, "inventory.tsv")):
         cs = split(r.get("concern_ids", ""))
         if cs and not r.get("out_of_scope_reason", "").strip():
+            keys.add(r["inv_id"])
             for c in cs:
                 by_cite[r["inv_id"]].append((c, r["inv_id"]))
     by_loc, by_page = collections.defaultdict(set), collections.defaultdict(set)
@@ -196,12 +220,16 @@ def cmap(platform):
         by_loc[(src, norm_loc(r["locator"]))].add(r["cite_id"])
         by_page[src].update(c for c, _ in by_cite[r["cite_id"]])
     concerns = {r["concern_id"] for r in rows(os.path.join(d, "concerns.tsv"))}
-    _cmap[platform] = (by_cite, by_loc, by_page, concerns)
+    _cmap[platform] = (by_cite, by_loc, by_page, concerns, keys)
     return _cmap[platform]
 
 
 def all_concerns():
     return set().union(*(cmap(p)[3] for p in PLATFORMS))
+
+
+def all_keys():
+    return set().union(*(cmap(p)[4] for p in PLATFORMS))
 
 
 # --- the subjects ----------------------------------------------------------------------------------------------
@@ -236,6 +264,25 @@ def subject(s):
     return _subj[s]
 
 
+def register_rows(s):
+    return {r["id"]: r for r in rows(os.path.join(SUBJ, s, "register.tsv"))}
+
+
+def owner(r):
+    """Whose a register row is: founder, engineering, moved (with its subject, if named), rule, or other."""
+    kind, status = r.get("kind", ""), r.get("status", "")
+    if kind == "moved":
+        m = re.search(r"moved to (S-\d\d)", status)
+        return ("moved", m.group(1) if m else None)
+    if kind == "follows by rule":
+        return ("rule", None)
+    if "engineering" in status:
+        return ("engineering", None)
+    if re.search(r"by the founder|founder's, in force|Decision 1's answer", status):
+        return ("founder", None)
+    return ("other", None)
+
+
 def subject_of(vp):
     m = re.match(r"S(\d\d)-VP-\d+$", vp)
     return f"S-{m.group(1)}" if m else None
@@ -249,7 +296,7 @@ def trace(s, platform, sid, depth=0):
     if sid not in stmts:
         return []
     frm, cids = stmts[sid]
-    by_cite, by_loc, by_page, _ = cmap(platform)
+    by_cite, by_loc, by_page, _, _ = cmap(platform)
     m = re.match(r"index:([A-Z]{2}-C-\d+):(\S+)", frm)
     if m:
         con, cite = m.groups()
@@ -294,17 +341,23 @@ def point_terms(vp_row):
 
 
 def point_leads(s, vp):
-    """capability -> route -> platform -> weight; capability -> basis items; pages per capability;
-    statements and traced statements per platform; the point's terms."""
+    """capability -> route -> platform -> the subject's statements on that route (each once); a page statement's
+    weight; capability -> basis items; pages per capability; statements and traced statements per platform; the
+    point's terms."""
     m = model()
     vps, var, _, _ = subject(s)
-    leads = collections.defaultdict(lambda: collections.defaultdict(collections.Counter))
+    hit = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(set)))
+    pw = collections.defaultdict(dict)                 # (cap, platform) -> statement -> page weight
     basis = collections.defaultdict(set)
     pages = collections.defaultdict(set)
     n, traced = collections.Counter(), collections.Counter()
+    seen = set()
     for v in var.get(vp, []):
         p = v["platform"]
         for sid in split(v["stmt_ids"]):
+            if (p, sid) in seen:
+                continue
+            seen.add((p, sid))
             n[p] += 1
             hs = trace(s, p, sid)
             if hs:
@@ -313,17 +366,18 @@ def point_leads(s, vp):
                 if h[0] == "statement":
                     _, con, k = h
                     for c in (m["ev_by_key"].get(k, ()) if k else ()):
-                        leads[c]["cited"][p] += WEIGHT["cited"]
+                        hit[c]["cited"][p].add(sid)
                         basis[c].add(k)
                     cap = m["land"].get((p, con))
                     if cap:
-                        leads[cap]["concern"][p] += WEIGHT["concern"]
+                        hit[cap]["concern"][p].add(sid)
                         basis[cap].add(f"concern:{con}")
                 else:
                     _, con, src, cnt = h
                     cap = m["land"].get((p, con))
                     if cap:
-                        leads[cap]["page"][p] += WEIGHT["page"] / cnt
+                        hit[cap]["page"][p].add(sid)
+                        pw[(cap, p)][sid] = max(pw[(cap, p)].get(sid, 0), 1 / cnt)
                         basis[cap].add(f"concern:{con}")
                         pages[cap].add((src, cnt))
     row = next(r for r in vps if r["vp_id"] == vp)
@@ -331,17 +385,21 @@ def point_leads(s, vp):
     cellterms = collections.defaultdict(list)
     for (cid, _p), r in m["cells"].items():
         cellterms[cid].append(r.get("terms", ""))
+    termhits = collections.defaultdict(set)
     for cid, r in m["caps"].items():
         h = fold(" ".join([r.get("capability", ""), r.get("note", "")] + cellterms.get(cid, [])))
         for t in terms:
             if hits(fold(t), h):
-                leads[cid]["terms"]["-"] += WEIGHT["terms"]
+                termhits[cid].add(t)
                 basis[cid].add(f"term:{t}")
-    return leads, basis, pages, n, traced, terms
-
-
-def score(d):
-    return sum(sum(cnt.values()) for cnt in d.values())
+    score = {}
+    for c in set(hit) | set(termhits):
+        sc = 0.0
+        for rt, byp in hit[c].items():
+            for p, ss in byp.items():
+                sc += sum(pw[(c, p)].values()) if rt == "page" else WEIGHT[rt] * len(ss)
+        score[c] = sc + WEIGHT["terms"] * len(termhits[c])
+    return dict(hit=hit, termhits=termhits, score=score, basis=basis, pages=pages, n=n, traced=traced, terms=terms)
 
 
 def placements(cid):
@@ -358,15 +416,15 @@ def cap_line(cid):
     return f"{cid} [{dom} {r.get('area', '')}] {r.get('capability', '')[:90]} | {kind} | {placements(cid)}"
 
 
-def route_line(d):
+def route_line(L, c):
     out = []
-    for rt in ROUTES:
-        if rt in d:
-            if rt == "terms":
-                out.append(f"terms {int(d[rt]['-'])}")
-            else:
-                out.append(f"{rt} " + ",".join(f"{PREFIX[p]}{d[rt][p]:.3g}" for p in PLATFORMS if d[rt][p]))
-    return "; ".join(out)
+    for rt in ROUTES[:3]:
+        byp = L["hit"][c].get(rt) if c in L["hit"] else None
+        if byp:
+            out.append(f"{rt} " + ",".join(f"{PREFIX[p]}{len(byp[p])}" for p in PLATFORMS if byp.get(p)))
+    if L["termhits"].get(c):
+        out.append(f"terms {len(L['termhits'][c])}")
+    return f"score {L['score'][c]:.3g}: " + "; ".join(out) + " (statements, each once; terms, each once)"
 
 
 def clip(s, n):
@@ -374,8 +432,8 @@ def clip(s, n):
     return s if n <= 0 or len(s) <= n else s[:n] + " …"
 
 
-def ranked(leads, top):
-    return sorted(leads, key=lambda c: (-score(leads[c]), c))[:top]
+def ranked(L, top):
+    return sorted(L["score"], key=lambda c: (-L["score"][c], c))[:top]
 
 
 def cmd_leads(a):
@@ -387,11 +445,12 @@ def cmd_leads(a):
             vp = r["vp_id"]
             if want and vp not in want:
                 continue
-            leads, basis, pages, n, traced, terms = point_leads(s, vp)
+            L = point_leads(s, vp)
             print(f"## {vp}\t{r['question']}\n   register: {', '.join(reg.get(vp, [])) or '(none)'}"
-                  f"\n   statements traced: " + ", ".join(f"{PREFIX[p]} {traced[p]}/{n[p]}" for p in PLATFORMS if n[p]))
-            for c in ranked(leads, a.top):
-                print(f"   {cap_line(c)}\n      ({route_line(leads[c])})")
+                  f"\n   statements traced: " + ", ".join(f"{PREFIX[p]} {L['traced'][p]}/{L['n'][p]}"
+                                                       for p in PLATFORMS if L["n"][p]))
+            for c in ranked(L, a.top):
+                print(f"   {cap_line(c)}\n      ({route_line(L, c)})")
             print()
 
 
@@ -405,9 +464,9 @@ def cmd_show(a):
         r = next((x for x in vps if x["vp_id"] == vp), None)
         if not r:
             sys.exit(f"{vp}: no such point")
-        leads, basis, pages, n, traced, terms = point_leads(s, vp)
-        print(f"## {vp}\t{r['question']}\n   terms: {clip('; '.join(terms), a.width)}")
-        regs = {x["id"]: x for x in rows(os.path.join(SUBJ, s, "register.tsv"))}
+        L = point_leads(s, vp)
+        print(f"## {vp}\t{r['question']}\n   terms: {clip('; '.join(L['terms']), a.width)}")
+        regs = register_rows(s)
         for rid in reg.get(vp, []):
             x = regs[rid]
             ans = x.get("recommendation") or x.get("answer") or ""
@@ -431,7 +490,7 @@ def cmd_show(a):
             vs = byp.get(p, [])
             if not vs:
                 continue
-            print(f"   {p}: {len(vs)} variants, {traced[p]} of {n[p]} statements traced to the concern map")
+            print(f"   {p}: {len(vs)} variants, {L['traced'][p]} of {L['n'][p]} statements traced to the concern map")
             for v in vs[:a.variants]:
                 k = len(split(v["stmt_ids"]))
                 extra = "".join([f"; absences {v['absence_ids']}" if v["absence_ids"] else "",
@@ -440,17 +499,17 @@ def cmd_show(a):
             if len(vs) > a.variants:
                 print(f"      (+{len(vs) - a.variants} more: studies/subjects/{s}/variants.tsv)")
         print("   leads:")
-        for c in ranked(leads, a.top):
-            b = sorted(basis[c], key=lambda x: (x.startswith("term:"), x.startswith("concern:"), x))
-            print(f"   {cap_line(c)}\n      ({route_line(leads[c])})\n      basis: {'; '.join(b[:8])}"
+        for c in ranked(L, a.top):
+            b = sorted(L["basis"][c], key=lambda x: (x.startswith("term:"), x.startswith("concern:"), x))
+            print(f"   {cap_line(c)}\n      ({route_line(L, c)})\n      basis: {'; '.join(b[:8])}"
                   + (f" (+{len(b) - 8} more)" if len(b) > 8 else ""))
-            for src, cnt in sorted(pages[c])[:3]:
+            for src, cnt in sorted(L["pages"][c])[:3]:
                 print(f"      page: {clip(src, 110)} ({cnt} concerns)")
             for p in PLATFORMS:
                 cell = m["cells"].get((c, p))
                 if cell and cell.get("held") != "none-held":
                     print(f"      {PREFIX[p]} {cell.get('placed_as') or '-'}: {clip(cell.get('reading', ''), a.width)}")
-        none = [p for p in PLATFORMS if n[p] and not traced[p]]
+        none = [p for p in PLATFORMS if L["n"][p] and not L["traced"][p]]
         if none:
             print(f"   nothing traced on {', '.join(none)}: search for it (class_slice.py caps, search) before you land")
         print()
@@ -466,13 +525,15 @@ def cmd_cell(a):
     cell = m["cells"].get((cid, p))
     if not cell:
         print(f"   {p}: no cell")
-        return
-    print(f"   {p}: held {cell.get('held')}; placed {cell.get('placed_as') or '-'}\n   terms: {cell.get('terms', '')}")
-    if cell.get("searched"):
-        print(f"   searched: {cell['searched']}")
-    print(f"   reading: {cell.get('reading', '')}")
-    for e in m["ev_by_cell"].get((cid, p), []):
-        print(f"   {e['supports']}\t{e['key']}\t{e['why']}")
+    else:
+        print(f"   {p}: held {cell.get('held')}; placed {cell.get('placed_as') or '-'}\n   terms: {cell.get('terms', '')}")
+        if cell.get("searched"):
+            print(f"   searched: {cell['searched']}")
+        print(f"   reading: {cell.get('reading', '')}")
+        for e in m["ev_by_cell"].get((cid, p), []):
+            print(f"   {e['supports']}\t{e['key']}\t{e['why']}")
+    for f in m["fillers"].get(cid, []):
+        print(f"   slot filler on {f.get('platform', '')}: {' · '.join(v for k, v in f.items() if k not in ('cap_id', 'platform', 'part') and v)}")
 
 
 # --- batches and the check ---------------------------------------------------------------------------------------
@@ -528,6 +589,33 @@ def read_batch(path, probs, b):
     return out
 
 
+def outcome_problems(w, o, rids, regs):
+    """An outcome against the register rows its conflict names (the brief, "After the batches")."""
+    mm = OUTCOME.match(o)
+    if not mm:
+        return [f"{w}: outcome '{o[:50]}' is not one of the coordinator's forms, marked (the coordinator)"]
+    own = {r: owner(regs[r]) for r in rids if r in regs}
+    if o.startswith("re-ruled:"):
+        r = mm.group(2)
+        if r not in own or own[r][0] != "engineering":
+            return [f"{w}: re-ruled names {r}, which isn't an engineering row its conflict names"]
+    elif o.startswith("to the founder with plans:"):
+        if "S02-M9" not in rids:
+            return [f"{w}: to the founder with plans is for a conflict on S02-M9"]
+    elif o.startswith("to the founder:"):
+        if not any(v[0] == "founder" for v in own.values()):
+            return [f"{w}: to the founder needs a founder's row among its conflict's rows"]
+    elif o.startswith("carried to"):
+        sub = mm.group(3)
+        if not any(v[0] == "moved" and v[1] in (None, sub) for v in own.values()):
+            return [f"{w}: carried to {sub} needs a row moved there among its conflict's rows"]
+    elif o.startswith("re-applied:"):
+        r = mm.group(4)
+        if r not in own or own[r][0] != "rule":
+            return [f"{w}: re-applied names {r}, which isn't a follows-by-rule row its conflict names"]
+    return []
+
+
 def cmd_check(a):
     m = model()
     probs = batch_problems()
@@ -547,7 +635,7 @@ def cmd_check(a):
         for vp in pts:
             if seen[(s, vp)] != 1:
                 probs.append(f"{b} {vp}: landed {seen[(s, vp)]} times, not once")
-    known = all_concerns()
+    known, keys = all_concerns(), all_keys()
     for b, r in have:
         s, vp = r["subject"], r["vp_id"]
         w = f"{b} {vp}"
@@ -556,6 +644,7 @@ def cmd_check(a):
             probs.append(f"{w}: not a point of batch {b}")
             continue
         vps, var, reg, _ = subject(s)
+        regs = register_rows(s)
         row = next(x for x in vps if x["vp_id"] == vp)
         if r["question"] != row["question"]:
             probs.append(f"{w}: question differs from the subject's")
@@ -571,7 +660,7 @@ def cmd_check(a):
                 probs.append(f"{w}: {c} is no capability of the model")
         caps = [c for c in cs if c != "none" and c in m["caps"]]
         if not REACH.match(r["reach"]):
-            probs.append(f"{w}: reach is capability, or cross-cutting: architecture plan, section 3, item N")
+            probs.append(f"{w}: reach is capability, or cross-cutting: <one of {'; '.join(CROSS)}>")
         routes = semi(r["route"])
         for rt in routes:
             if rt not in ROUTES:
@@ -592,36 +681,46 @@ def cmd_check(a):
                 kinds["concern"] += ok
                 if not ok:
                     probs.append(f"{w}: basis {x}: not a concern landed in {', '.join(caps) or 'the model'}")
+                elif caps and not {"concern", "page"} & set(routes):
+                    probs.append(f"{w}: basis {x} has no route concern or page")
             elif x.startswith("term:"):
                 ok = fold(x[5:]) in terms
                 kinds["term"] += ok
                 if not ok:
                     probs.append(f"{w}: basis {x}: not among the point's terms")
+                elif caps and "terms" not in routes:
+                    probs.append(f"{w}: basis {x} has no route terms")
             else:
-                ok = x in ckeys if caps else bool(KEY.match(x))
+                ok = (x in ckeys) if caps else (bool(KEY.match(x)) and x in keys)
                 kinds["key"] += ok
                 if not ok:
-                    probs.append(f"{w}: basis {x}: not a key a cell of {', '.join(caps) or 'the model'} cites")
+                    probs.append(f"{w}: basis {x}: not a key a cell of {', '.join(caps) or 'the concern map'} holds")
+                elif caps and "cited" not in routes:
+                    probs.append(f"{w}: basis {x} has no route cited")
         for rt, need in (("cited", "key"), ("concern", "concern"), ("page", "concern"), ("terms", "term")):
             if rt in routes and not kinds[need]:
                 probs.append(f"{w}: route {rt} has no basis item of its form ({need})")
         if not r["reading"].strip():
             probs.append(f"{w}: reading empty")
-        regs = reg.get(vp, [])
-        if r["register"] != "; ".join(regs):
-            probs.append(f"{w}: register should be '{'; '.join(regs)}'")
+        rlist = reg.get(vp, [])
+        if r["register"] != "; ".join(rlist):
+            probs.append(f"{w}: register should be '{'; '.join(rlist)}'")
         con = r["conflict"].strip()
-        parts = [x.strip() for x in re.split(r"\s*\|\s*", con)] if con and con != "none" else []
+        parts = [x.strip() for x in CONFLICT_SPLIT.split(con)] if con and con != "none" else []
         if not con:
             probs.append(f"{w}: conflict empty (none, or <type> (rows: ...): <what>)")
+        rows_of = []
         for x in parts:
             mm = CONFLICT.match(x)
             if not mm:
                 probs.append(f"{w}: conflict '{x[:50]}' is not <type> (rows: <ids> or model): <what>, "
                              f"type one of {CONFLICTS}")
+                rows_of.append([])
                 continue
-            for rid in [y.strip() for y in mm.group(2).split(",") if y.strip()]:
-                if rid != "model" and rid not in regs:
+            rids = [y.strip() for y in mm.group(2).split(",") if y.strip()]
+            rows_of.append(rids)
+            for rid in rids:
+                if rid != "model" and rid not in rlist:
                     probs.append(f"{w}: conflict names {rid}, which isn't one of the point's register rows")
         st = r["status"]
         if st not in STATUS:
@@ -631,14 +730,14 @@ def cmd_check(a):
         if cs == ["none"] and not any(x.startswith("structure") for x in parts):
             probs.append(f"{w}: a point no capability holds has a structure conflict")
         out = r["outcome"].strip()
-        outs = [x.strip() for x in re.split(r"\s*\|\s*", out)] if out else []
-        for x in outs:
-            if not OUTCOME.match(x):
-                probs.append(f"{w}: outcome '{x[:50]}' is not one of the coordinator's forms, marked (the coordinator)")
-        if outs and len(outs) != len(parts):
-            probs.append(f"{w}: {len(outs)} outcomes for {len(parts)} conflicts")
-        if a.final and parts and not outs:
-            probs.append(f"{w}: no outcome for its conflicts (--final)")
+        outs = [x.strip() for x in OUTCOME_SPLIT.split(out)] if out else []
+        if outs and not a.final:
+            probs.append(f"{w}: a draft's outcome is empty: the coordinator writes it, and checks with --final")
+        if a.final:
+            if parts and len(outs) != len(parts):
+                probs.append(f"{w}: {len(outs)} outcomes for {len(parts)} conflicts (--final)")
+            for o, rids in zip(outs, rows_of):
+                probs += outcome_problems(w, o, rids, regs)
         for p in PLATFORMS:
             held = any(split(v["stmt_ids"]) for v in var.get(vp, []) if v["platform"] == p)
             if held and caps and not any((m["cells"].get((c, p)) or {}).get("held") == "statements" for c in caps):
