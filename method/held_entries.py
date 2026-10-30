@@ -712,6 +712,57 @@ def cmd_show(a):
 
 
 PARTNER = re.compile(r"collaborator|partner-api|app-install|stores-access-requests|portal-app-scopes", re.I)
+# The companies of each platform's group, as its CM-ACC-002 cell names them: a group company is never a filler, and a
+# line that names one as a third party is read again (the dry run's review, R1).
+GROUP = {"bigcommerce": ["Commerce.com", "Commerce Software", "Feedonomics", "Makeswift"],
+         "shopify": ["Shopify Inc", "Shopify Technology", "Shopify Commerce Singapore", "Shopify International"],
+         "salla": ["شركة منصة سلة", "شركة تطبيق سلة", "شركة سلة القابضة", "Salla Holding"],
+         "woocommerce": ["WooCommerce, Inc", "WooCommerce Ireland", "Automattic"],
+         "zid": ["شركة القدرة التقنية", "Al-Qudrah Al-Taqniyah", "Zid Egypt", "زد مصر"]}
+BRAND = {"shopify": "Shopify", "salla": "Salla", "zid": "Zid", "bigcommerce": "BigCommerce", "woocommerce": "WooCommerce|Woo"}
+# a plan's or a provider's mark that a thing is included: scope, or a statement of the marked thing, never a quality
+MARKS = {"✔", "✓", "✔️", "yes", "available", "included", "true", "نعم", "متاح", "متوفر", "مشمول"}
+QUOTE = re.compile(r"(?<!\w)['‘]([^'’\n]{8,}?)['’](?!\w)")
+
+
+def quote_norm(s):
+    return fold(s.replace("’", "'").replace("‘", "'"))
+
+
+def structure_text(platform, structure, cache={}):
+    """The text a reading may quote besides its entry: the structure's own files, and the page or answer its meta.json
+    names as its source (with the step's text beside an HTML or ARIA capture)."""
+    if (platform, structure) in cache:
+        return cache[(platform, structure)]
+    repo, root, sub = REPOS[platform]
+    base = folder(platform, structure)
+    paths = [f for f in glob.glob(os.path.join(base, "**", "*"), recursive=True)
+             if os.path.isfile(f) and (os.path.basename(f).startswith("source") or f.endswith((".jsonl", ".txt")))]
+    for m in glob.glob(os.path.join(base, "**", "meta.json"), recursive=True):
+        try:
+            src = json.load(open(m, encoding="utf-8")).get("source") or {}
+        except Exception:
+            continue
+        for k in ("held_as", "answer"):
+            v = src.get(k) if isinstance(src, dict) else None
+            if isinstance(v, str):
+                paths.append(os.path.join(root, v))
+                paths.append(os.path.join(root, re.sub(r"\.(?:frame-\d+\.)?(?:html|aria\.yaml)$", ".text.txt", v)))
+    out = []
+    for f in dict.fromkeys(paths):
+        if os.path.isfile(f) and os.path.getsize(f) < 30_000_000:
+            out.append(quote_norm(open(f, encoding="utf-8", errors="replace").read()))
+    cache[(platform, structure)] = "\n".join(out)
+    return cache[(platform, structure)]
+
+
+def run_text(platform, cache={}):
+    """Every page text the platform's runs hold (steps/*.text.txt), where a reading's quote from a run step is found."""
+    if platform not in cache:
+        repo, root, sub = REPOS[platform]
+        fs = glob.glob(os.path.join(root, sub, "raw", "runs", "*", "steps", "*.text.txt"))
+        cache[platform] = "\n".join(quote_norm(open(f, encoding="utf-8", errors="replace").read()) for f in fs)
+    return cache[platform]
 
 
 def cmd_check(a):
@@ -721,6 +772,8 @@ def cmd_check(a):
     order = {i: n for n, i in enumerate(ids)}
     caps = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "capabilities.tsv"))}
     cap_names = {fold(r["capability"].split(":")[0].split("(")[0]) for r in caps.values()} | {fold(c) for c in caps}
+    cells = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "cells.tsv")) if r["platform"] == a.platform}
+    changes = collections.defaultdict(list)
     path = os.path.join(HELD, a.platform, f"placements-{a.batch}.tsv")
     if not os.path.exists(path):
         sys.exit(f"no {os.path.relpath(path, ROOT)}")
@@ -785,6 +838,37 @@ def cmd_check(a):
         for t in [x.strip() for x in r["terms"].split(";") if x.strip()]:
             if not all(fold(t) in fold(es[x]["text"]) for x in ok if x in es):
                 problems.append(f"{w}: term {t!r} is not in the text of each of its entries")
+        for fl in [x.strip() for x in r["filler"].split(";") if x.strip()]:
+            named = re.sub(r"^(?:the )?law of ", "", re.sub(r"\s*\([^)]*\)", "", fl), flags=re.I).strip()
+            if not all(fold(named) in fold(es[x]["text"]) for x in ok if x in es):
+                problems.append(f"{w}: filler {fl!r} is not named in the text of each of its entries: a party known only from a source goes in reading")
+            if any(fold(g) in fold(fl) for g in GROUP.get(a.platform, ())):
+                problems.append(f"{w}: filler {fl!r} is a company of the platform's group (CM-ACC-002): never a filler")
+        for q in [x.strip() for x in r["quality"].split(";") if x.strip()]:
+            what, _, val = q.partition(":")
+            if fold(val or what).strip(" .") in MARKS:
+                problems.append(f"{w}: quality {q!r} is a mark of inclusion: it is the line's scope, or a statement of the marked thing, never a quality")
+        if ok and ok[0] in es:
+            e0 = es[ok[0]]
+            for qt in QUOTE.findall(r["reading"]):
+                qn = quote_norm(qt)
+                if "..." in qt or "…" in qt:
+                    qn = max((quote_norm(x) for x in re.split(r"\.\.\.|…", qt)), key=len)
+                if qn and qn not in quote_norm(e0["text"]) and qn not in structure_text(a.platform, e0["structure"]) and qn not in run_text(a.platform):
+                    notes.append(f"line {i}: the quote '{clip(qt, 70)}' is found nowhere held, in the entry, its structure's sources or the platform's run pages: copy it exactly")
+            if any(x in ss for x in ("extension-point", "outside")) and any(fold(g) in fold(e0["text"]) for g in GROUP.get(a.platform, ())):
+                notes.append(f"line {i}: {'/'.join(ss)} on an entry that names a company of the platform's group: own-service? (rule 4)")
+            if "core" in ss and re.search(rf"\b(?:{BRAND[a.platform]})\s+[A-Z]\w+", e0["text"]):
+                notes.append(f"line {i}: core on a product named with the platform's brand, which names no maker: is it core by what the entry shows? (rule 4)")
+            if re.search(r"\w\*(?=[\s;,)]|$)", e0["text"]):
+                notes.append(f"line {i}: the entry marks a footnote (*): the footnote is part of the entry (rule 1)")
+        if r["placement"] == "capability" and r["cap_id"] in cells:
+            c = cells[r["cap_id"]]
+            if c["held"] != "statements":
+                changes[(r["cap_id"], "holds nothing: becomes held")].append(i)
+            for x in ss:
+                if x != "shows" and x not in set((c.get("placed_as") or "").split(";")):
+                    changes[(r["cap_id"], f"gains {x}")].append(i)
         if not r["reading"].strip():
             problems.append(f"{w}: reading says why, as a reading")
         for x in ok:
@@ -807,8 +891,12 @@ def cmd_check(a):
         for k, names in new_names.items():
             if fold(names[0]) not in nt:
                 problems.append(f"notes-{a.batch}.md doesn't name the new thing {names[0]!r}")
-    for n in notes[:60]:
+    for (c, what), ls in sorted(changes.items()):
+        print(f"CHANGES {c}@{a.platform} {what}, by line{'s' if len(ls) > 1 else ''} {', '.join(map(str, ls))}: read each again")
+    for n in notes[:120]:
         print("NOTE", n)
+    if len(notes) > 120:
+        print(f"NOTE ... and {len(notes) - 120} more")
     for k, names in sorted(new_names.items()):
         print(f"NEW {names[0]}: {len(names)} lines")
     for p in problems[:200]:
