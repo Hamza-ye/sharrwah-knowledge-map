@@ -395,7 +395,7 @@ woocommerce	WC-C-043	A	G	Transferring Information outside the EEA and UK (TRU); 
 woocommerce	WC-C-044	A	D	Data Processing Agreement (TRU); M-060
 woocommerce	WC-C-045	A	D	Accounts & Privacy; Personal data retention (TRU); M-059
 woocommerce	WC-C-046	E	D	MaxMind Geolocation; Default customer location (MKS); M-087
-woocommerce	WC-C-047	C	D	Address autocomplete; Preferred address autocomplete provider: addresses at checkout (CHK)
+woocommerce	WC-C-047	D	C	Address autocomplete; Preferred address autocomplete provider: addresses at checkout (CHK); moved to D by the coordinator after C-woocommerce batch 1: address autocomplete is D's CM-CUS-009, map and location services for addresses, which cites all its statements
 woocommerce	WC-C-048	C		built in partnership with Stripe: processor dependence (PAY); M-037
 woocommerce	WC-C-049	A	F	WordPress.com account; Jetpack connection: the account for Woo services (ACC)
 woocommerce	WC-C-050	F	E	Developed by Woo; where Extensions > Developed by Woo (APP); also E: its statement on who makes Woo's themes (WC-S-0644) bears on the theme marketplace (the coordinator, after E-woocommerce batch 1)

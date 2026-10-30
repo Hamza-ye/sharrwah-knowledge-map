@@ -1,0 +1,2 @@
+platform	concern_id	cap_id	join	join_evidence	fit	reading
+woocommerce	WC-C-047	CM-CUS-009	role	WC-C-047/decides/WC-S-5379;SA-C-065/decides/SA-S-3119	clean	Moved from domain C after C-woocommerce batch 1 (the coordinator). A join on role, a reading: WooCommerce's address autocomplete, predictive address search through a chosen provider (WC-S-5379, WC-S-5380), plays the part of Salla's map services for addresses (google-maps-service, SA-S-3119). D-woocommerce cites its statements in CM-CUS-009, and nowhere else, so the fit is clean.

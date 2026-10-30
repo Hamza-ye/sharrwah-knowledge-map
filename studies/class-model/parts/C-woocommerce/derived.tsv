@@ -1,0 +1,25 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHK-001	woocommerce	statements	core	Advanced > Page setup		WC-C-072/responsible:stated only in general terms;WC-C-072/reason:searched, not found;WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found	general
+CM-CHK-002	woocommerce	statements	core			WC-C-072/responsible:stated only in general terms;WC-C-072/reason:searched, not found	general
+CM-CHK-003	woocommerce	none-held					
+CM-CHK-004	woocommerce	statements	extension-point	Extensions > Store content and customizations > Cart and checkout features | Front-end extensibility		WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found;WC-C-107/responsible:stated only in general terms	
+CM-CHK-005	woocommerce	none-held					
+CM-CHK-006	woocommerce	statements	extension-point			WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found	
+CM-CHK-007	woocommerce	none-held					
+CM-CHK-008	woocommerce	statements	extension-point;own-service	Extensions > Official payments > Wallets & express checkouts | Is WooPayments required to take payments with WooCommerce? | Payments > Settings > Express checkouts | PaymentsController (Payments menu item)	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries	WC-C-005/reason:searched, not found;WC-C-015/reason:searched, not found	general
+CM-CHK-009	woocommerce	statements	extension-point		WC-C-107/boundary/WC-S-5486=Checkout Field Editor | WC-C-107/reason/WC-S-5488=Checkout Field Editor	WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found;WC-C-107/responsible:stated only in general terms	
+CM-ORD-001	woocommerce	statements	core;extension-point	Background | Extensions > Shipping, delivery and fulfillment > Inventory and order management | Extensions > Store management > Order management | WooCommerce > Orders | custom order tables		WC-C-033/responsible:stated only in general terms;WC-C-061/reason:searched, not found;WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found;WC-C-109/responsible:stated only in general terms;WC-C-109/reason:searched, not found	general
+CM-ORD-002	woocommerce	statements	core			WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found	general
+CM-ORD-003	woocommerce	statements	core		WC-C-002/boundary/WC-S-5004=Direct bank transfer (bacs)	WC-C-002/responsible:stated only in general terms;WC-C-002/reason:searched, not found;WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found	general
+CM-ORD-004	woocommerce	statements	core			WC-C-068/responsible:stated only in general terms;WC-C-068/reason:searched, not found;WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found	general
+CM-ORD-005	woocommerce	statements	core			WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found	general
+CM-ORD-006	woocommerce	statements	outside;own-service	Does WooPayments use Stripe Radar? | Is WooPayments required to take payments with WooCommerce? | WooPayments: Fraud Protection	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries	WC-C-013/responsible:stated only in general terms;WC-C-115/responsible:page not read;WC-C-115/boundary:observation needed	general
+CM-ORD-007	woocommerce	none-held					
+CM-ORD-008	woocommerce	none-held					
+CM-ORD-009	woocommerce	none-held					
+CM-ORD-010	woocommerce	none-held					
+CM-ORD-011	woocommerce	none-held					
+CM-ORD-012	woocommerce	statements	core			WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found	general
+CM-ORD-013	woocommerce	statements	core			WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found;WC-C-091/reason:searched, not found	general
+CM-ORD-014	woocommerce	none-held					
+CM-PAY-019	woocommerce	statements	extension-point			WC-C-087/responsible:stated only in general terms;WC-C-087/reason:searched, not found	

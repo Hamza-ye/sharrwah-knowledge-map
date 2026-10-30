@@ -71,3 +71,10 @@ CM-PAY-027	shopify	Melio	SH-C-098/responsible/SH-S-0499
 CM-PAY-002	shopify	Payment Network Rules	SH-C-173/decides/SH-S-0108
 CM-PAY-028	salla	هيئة الزكاة والضريبة	SA-C-210/decides/SA-S-2148
 CM-PAY-030	salla	SARIE (سريع)	SA-C-117/decides/SA-S-1957
+CM-TAX-003	shopify	Global-e	SH-C-101/decides/SH-S-0564
+CM-TAX-003	salla	هيئة الزكاة والضريبة والجمارك (ZATCA)	SA-C-160/responsible/SA-S-5073
+CM-TAX-006	shopify	Sovos Compliance, LLC	SH-C-104/responsible/SH-S-0602
+CM-TAX-007	salla	هيئة الزكاة والضريبة والجمارك (ZATCA)	SA-C-161/boundary/SA-S-0148
+CM-TAX-008	shopify	customs authorities	SH-C-105/decides/SH-S-0537
+CM-TAX-009	shopify	Internal Revenue Service (IRS)	SH-C-099/decides/SH-S-0502
+CM-TAX-009	shopify	US tax laws on Payment Settlement Entities (Form 1099-K)	SH-C-099/decides/SH-S-0502

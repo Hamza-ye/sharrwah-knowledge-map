@@ -41,3 +41,8 @@ CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعا�
 CM-PAY-029	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123	
 CM-PAY-029	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125	
 CM-PAY-005	salla	Currency in which Salla Payments receives payments	عند تفعيل التاجر لبوابة دفع سلة، يتم استقبال جميع المدفوعات بالريال السعودي.	SA-C-164/decides/SA-S-0067	
+CM-TAX-002	shopify	uptime	Shopify makes no guarantees to you in relation to the availability or uptime of Shopify Tax	SH-C-100/responsible/SH-S-0598	
+CM-TAX-002	shopify	destinations calculated	Calculations using Shopify Tax are available only for certain transactions, where the order's destination is a location in the United States, European Union, United Kingdom, or Canada.	SH-C-100/decides/SH-S-0514	
+CM-TAX-006	shopify	end of service	Automated filing with Shopify Tax is ending. Automated filing files your returns for sales made through December 31, 2026.	SH-C-104/decides/SH-S-0525	
+CM-TAX-006	shopify	enrollment	Automated filing is closed to new enrollment. Only stores that are already enrolled can use it.	SH-C-104/decides/SH-S-0521	
+CM-TAX-003	salla	registration threshold	إذا كان دخلك أكبر أو يساوي 375 ألف ريال في السنة فأنت ملزم بالتسجيل، أما إذا كان أقل من ذلك فالتسجيل اختياري.	SA-C-160/responsible/SA-S-5073	هيئة الزكاة والضريبة والجمارك

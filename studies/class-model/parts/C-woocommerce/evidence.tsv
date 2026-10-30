@@ -1,1 +1,81 @@
 cap_id	platform	supports	key	why
+CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0162	Store API endpoint /checkout
+CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0163	Store API endpoint /checkout/{id}, checkout-order
+CM-CHK-001	woocommerce	core	WC-C-072/decides/WC-S-0928	setting Enable guest checkout (recommended)
+CM-CHK-001	woocommerce	core	WC-C-087/decides/WC-S-5431	feature cart_checkout_blocks, Optimize for faster checkout, not experimental
+CM-CHK-001	woocommerce	shows	WC-C-072/where/WC-S-0022	settings section Advanced > Page setup
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0149	Store API endpoint /cart
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0150	Store API endpoint /cart/add-item
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0155	Store API endpoint /cart/items
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0156	Store API endpoint /cart/items/{key}
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0158	Store API endpoint /cart/remove-item
+CM-CHK-002	woocommerce	core	WC-C-072/boundary/WC-S-0160	Store API endpoint /cart/update-item
+CM-CHK-004	woocommerce	extension-point	WC-C-087/where/WC-S-5466	extensions extend the blocks' front-end with JavaScript
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0780	guide Getting started with Cart and Checkout extensibility
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0782	guide Available slots
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0789	guide Inner block types
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0788	guide Available Filters
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0790	filters on Cart line items
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0791	filters on the Checkout and place order button
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0793	filters on Order summary items
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0794	filters on the Totals footer item
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0783	guide Checkout flow and events
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0787	guide DOM events
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0786	guide Checkout Utilities
+CM-CHK-004	woocommerce	extension-point	WC-C-087/boundary/WC-S-0451	interface IntegrationInterface
+CM-CHK-004	woocommerce	extension-point	WC-C-107/where/WC-S-0740	Marketplace category Cart and checkout features
+CM-CHK-006	woocommerce	extension-point	WC-C-087/boundary/WC-S-0778	guide Marking a cart item as a child of another cart item
+CM-CHK-006	woocommerce	extension-point	WC-C-087/boundary/WC-S-0779	guide Updating the cart on-demand
+CM-CHK-006	woocommerce	extension-point	WC-C-087/boundary/WC-S-0154	Store API endpoint /cart/extensions
+CM-CHK-008	woocommerce	extension-point	WC-C-005/where/WC-S-0707	Marketplace category Wallets & express checkouts
+CM-CHK-008	woocommerce	own-service	WC-C-015/where/WC-S-5337	Express checkouts section of Payments > Settings, enabling WooPay
+CM-CHK-008	woocommerce	own-service	WC-C-006/where/WC-S-0621	WooPayments owns the Payments menu item once onboarded
+CM-CHK-008	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-CHK-008	woocommerce	shows	WC-C-015/decides/WC-S-5339	WooPay and Link by Stripe as express checkout methods
+CM-CHK-009	woocommerce	extension-point	WC-C-087/boundary/WC-S-0454	function woocommerce_register_additional_checkout_field
+CM-CHK-009	woocommerce	extension-point	WC-C-087/boundary/WC-S-0781	guide Additional checkout fields
+CM-CHK-009	woocommerce	extension-point	WC-C-087/boundary/WC-S-0796	guide Removing checkout fields
+CM-CHK-009	woocommerce	shows	WC-C-107/boundary/WC-S-5486	Checkout Field Editor works with the legacy checkout only
+CM-CHK-009	woocommerce	shows	WC-C-107/reason/WC-S-5488	block-based checkout will soon include native field customization
+CM-ORD-001	woocommerce	core	WC-C-070/where/WC-S-0041	admin menu WooCommerce > Orders
+CM-ORD-001	woocommerce	core	WC-C-070/decides/WC-S-5406	post type shop_order and its capability type
+CM-ORD-001	woocommerce	core	WC-C-070/decides/WC-S-0039	WooCommerce menu requires edit_others_shop_orders
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0092	REST resource wc/v3 orders
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0137	REST resource wc/v4 orders
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0666	orders API: create, view, update, delete, batch
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0164	Store API endpoint /order/{id}
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0261	webhook topic order.created
+CM-ORD-001	woocommerce	core	WC-C-070/boundary/WC-S-0262	webhook topic order.updated
+CM-ORD-001	woocommerce	core	WC-C-033/where/WC-S-0631	HPOS: dedicated tables for orders
+CM-ORD-001	woocommerce	core	WC-C-033/where/WC-S-5368	the four custom order tables
+CM-ORD-001	woocommerce	core	WC-C-033/decides/WC-S-5369	option woocommerce_custom_orders_table_enabled
+CM-ORD-001	woocommerce	core	WC-C-033/decides/WC-S-0630	HPOS released, enabled by default for new installations
+CM-ORD-001	woocommerce	shows	WC-C-033/reason/WC-S-0629	orders traditionally stored as WordPress post types
+CM-ORD-001	woocommerce	extension-point	WC-C-109/where/WC-S-0749	Marketplace category Order management
+CM-ORD-001	woocommerce	extension-point	WC-C-061/where/WC-S-0714	Marketplace category Inventory and order management
+CM-ORD-002	woocommerce	core	WC-C-070/boundary/WC-S-0667	order actions API, as on the Edit Order screen
+CM-ORD-003	woocommerce	core	WC-I-0317	order status Pending payment
+CM-ORD-003	woocommerce	core	WC-I-0318	order status Processing
+CM-ORD-003	woocommerce	core	WC-I-0319	order status On hold
+CM-ORD-003	woocommerce	core	WC-I-0320	order status Completed
+CM-ORD-003	woocommerce	core	WC-I-0323	order status Failed
+CM-ORD-003	woocommerce	core	WC-I-0324	order status Draft (checkout-draft)
+CM-ORD-003	woocommerce	shows	WC-C-002/boundary/WC-S-5004	bank transfer orders set On hold through a filter
+CM-ORD-004	woocommerce	core	WC-I-0321	order status Cancelled
+CM-ORD-004	woocommerce	shows	WC-C-068/decides/WC-S-5401	pending order cancelled when the stock hold ends
+CM-ORD-005	woocommerce	core	WC-C-070/boundary/WC-S-0666	orders API creates orders
+CM-ORD-006	woocommerce	own-service	WC-C-013/where/WC-S-0862	WooPayments offers configurable fraud protection rules
+CM-ORD-006	woocommerce	own-service	WC-C-115/decides/WC-S-0865	Radar rules managed by the WooPayments team
+CM-ORD-006	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-ORD-006	woocommerce	outside	WC-C-115/where/WC-S-0864	Stripe Radar's machine learning protects against risky transactions
+CM-ORD-006	woocommerce	shows	WC-C-013/boundary/WC-S-0863	a blocked order is set to Pending Payment
+CM-ORD-012	woocommerce	core	WC-C-070/boundary/WC-S-0263	webhook topic order.deleted
+CM-ORD-012	woocommerce	core	WC-C-070/boundary/WC-S-0264	webhook topic order.restored
+CM-ORD-012	woocommerce	core	WC-C-070/boundary/WC-S-0666	orders API deletes orders
+CM-ORD-013	woocommerce	core	WC-C-070/boundary/WC-S-0668	order notes API
+CM-ORD-013	woocommerce	core	WC-C-070/boundary/WC-S-0090	REST resource wc/v3 order-notes
+CM-ORD-013	woocommerce	core	WC-C-070/boundary/WC-S-0134	REST resource wc/v4 order-notes
+CM-ORD-013	woocommerce	shows	WC-C-091/boundary/WC-S-5443	a withdrawal request adds an order note
+CM-PAY-019	woocommerce	extension-point	WC-C-087/boundary/WC-S-0784	guide Filtering payment methods in the Checkout block
+CM-CHK-008	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-ORD-006	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services

@@ -668,3 +668,80 @@ No earlier row was found wrong, and the checker prints no problem on earlier bat
 ### Checker
 
 The batch check (`--concerns SA-C-127,SA-C-128,SA-C-164,SA-C-172,SA-C-177,SA-C-210 --areas PAY`) gives "0 problems, 42 flags for the reviewer", the same 42 that batch 7 answered. None is on this batch's rows. `uncited --domain C` lists none of this batch's concerns' statements. As the last batch of PAY, but not of the part (TAX, SHP and RET follow), I ran the batch check, not the whole-part check.
+
+
+## Batch 9: TAX, Taxes, duties and invoicing
+
+Concerns: SH-C-099, SH-C-100, SH-C-101, SH-C-102, SH-C-103, SH-C-104, SH-C-105, SA-C-160, SA-C-161, SA-C-162. TAX had no capability before this batch: nine added, CM-TAX-001 to CM-TAX-009, and every concern lands in one of them. Before adding them I searched every domain with `caps` (terms: tax, ضريبة, ضرائب, VAT, duties, zatca, الزكاة, 1099, tax form, tax document, e-invoic, فوترة, الفوترة الإلكترونية, customs, جمارك, الجمارك, import tax, exemption, إعفاء, tax registration, registration, filing, tax return, tax app, Avalara, هيئة الزكاة, الرقم الضريبي, VAT number, reverse charge, tax-inclusive, duty, import). What it found and kept apart: A's CM-PLN-007 (taxes on the platform's own charges, with Shopify's "Tax registration" for its bills, SH-S-0279) and CM-PLN-004, -006; C's CM-ORD-008 (order invoices); E's CM-MKS-003 (merchant of record, Managed Markets, which handles duties and taxes for the store); B's CM-CAT-013 (product pricing, whose reading leaves Salla's product tax pricing, SA-S-1752, to C); and words matched inside other words (taxonomy, customs in "custom", import in data import). None is the same thing as a concern here.
+
+### Where each concern landed, and the grains
+
+- **CM-TAX-001, taxes on the store's sales, the parent of the area:** SH-C-100 and SA-C-160 by `match:M-040`. Both platforms put the area's other subjects under one tax section: Shopify's Taxes and duties, whose routes add, ioss, vat-number-validation, providers and duties are paths of the Taxes section (SH-S-7124 to SH-S-7129), and Salla's one settings link Taxes at /taxes-and-duties (SA-S-1686). SH-C-100 lands in the parent because it holds both the store's tax settings and default rates and Shopify Tax.
+- **CM-TAX-002, the platform's automated tax calculation service (Shopify Tax), a child,** at the grain WooCommerce's own split shows (M-040's granularity: WC-C-054 against WC-C-055). Shopify gives it a plan line, an entitlement, built-in-feature pages and its own terms. Salla's cell is none-held: its rates are entered by the merchant (SA-S-0144, SA-S-0182).
+- **CM-TAX-003, tax registrations, a child:** SH-C-101, `single`. Salla's cell cites SA-C-160's keys (the tax-number plan line SA-S-2125 and the ZATCA registration terms SA-S-5073), so U-030's pair is joined here.
+- **CM-TAX-004, third-party tax services, a child:** SH-C-103, `single`. Salla's cell holds only the unreleased flag avalara-tax (SA-S-3511): not-stated.
+- **CM-TAX-005, VAT number validation, tax exemptions and VAT invoices, a child:** SH-C-102, `single` (Q1's M-041 is with WooCommerce only). One capability at Shopify's grain: its plan line "VAT validation, exemptions, and invoicing" holds the three, and its help centre groups VAT validation and VAT invoices under Shopify Tax's EU and UK features. Shopify's VAT invoices are held only as a help-centre title (SH-I-2331), so I didn't cite them in CM-ORD-008: nothing held says they are the order invoice, and CM-ORD-008's cells are unchanged. This answers batch 1's note that SH-I-2331 and ZATCA e-invoicing were TAX's.
+- **CM-TAX-006, automated tax filing, under CM-TAX-002:** SH-C-104, `single`. Shopify calls it "Automated filing with Shopify Tax", available only to US stores that use Shopify Tax (SH-S-0522). Its route and built-in feature are core, and the returns are filed by Sovos Compliance, LLC, the Tax Service Provider (outside, a slot filler). It is closed to new enrollment and ends with sales through December 31, 2026 (qualities).
+- **CM-TAX-007, e-invoicing with the tax authority:** SA-C-161, `single`. No parent: no statement held puts it under Salla's tax settings or its invoice settings. The plan line's parent_code mhfth-almtgr-oalfotr has no title held, and reading it as a word would be inference. It is installed as an app, and its flag has the type app, but no statement names the app's maker (a gap). The cell is core on the Pro plan line, the released flag, and SA-S-0148 and SA-S-0152, which name Salla as the one that uploads and manages the invoices.
+- **CM-TAX-008, duties and import taxes on cross-border orders, a child:** SH-C-105 and SA-C-162 by `match:M-042`. It is under CM-TAX-001 by both platforms' grouping (Shopify's Taxes section, path duties; Salla's /taxes-and-duties).
+- **CM-TAX-009, tax forms the platform issues to the merchant:** SH-C-099, `single` (Q1's M-039 is with WooCommerce only). These are Shopify's 1099-K and 1099-MISC forms. Its routes are in the admin section Banking (CM-PAY-023), but no statement puts the forms under it, so I gave it no parent. The 1099-K is filed by Shopify Payments as a Payment Settlement Entity (SH-S-0502, SH-S-0505). Salla's cell is none-held.
+
+### Joins on role (readings)
+
+- **CM-TAX-003:** Shopify's tax registration number and registration routes (SH-C-101/decides/SH-S-0533, SH-C-101/where/SH-S-7124) against Salla's tax number, الرقم الضريبي, in its plan line, and its ZATCA registration terms (SA-C-160/decides/SA-S-2125, SA-C-160/responsible/SA-S-5073). Both are the store's registration with the authority whose tax it collects. Salla's "سجل ضريبي" (SA-S-0144) is a market's tax record, its rate, not a registration.
+
+### Homonyms
+
+- **"Tax registration":** the store's registrations to collect tax (CM-TAX-003) against Shopify's Tax registration section for the merchant's tax ID on Shopify's own bills (SH-S-0279, A's CM-PLN-007).
+- **"Invoice" (فاتورة):** VAT invoices under Shopify Tax (CM-TAX-005), the store's tax invoices reported to ZATCA (CM-TAX-007), the order's invoice as the store issues and prints it (CM-ORD-008), and the platform's invoices to the merchant (A's CM-PLN-004). Shopify Tax's fee "is charged to you with your subscription invoice" (SH-S-0517) is the last of these, cited as shows in CM-TAX-002.
+- **"سجل ضريبي" (tax record):** Salla's per-market tax rate (CM-TAX-001), not a tax registration (CM-TAX-003).
+- **"Filing" and "reporting":** Shopify's filing of sales tax returns (CM-TAX-006) against its 1099-K reporting of the merchant's receipts (CM-TAX-009) and Salla's reporting of invoices to ZATCA (CM-TAX-007).
+
+### Strained fits
+
+None. The keys of a concern that are cited outside the capability it lands in are all in the same tree, under CM-TAX-001: SA-C-160's in CM-TAX-003 and -004, SH-C-100's in -002 and -004, SH-C-101's in -001 and -002, SH-C-103's in -001 and -002, and SH-C-105's SH-S-0564 in -003. CM-TAX-007 and CM-TAX-009, which have no parent, cite only their own concerns.
+
+### Statements shared with other domains
+
+- **SH-S-0527** (SH-C-137, domain E, which names C under also): marketplace facilitators collect and remit sales tax on marketplace sales, a heading of Shopify's automated filing. It is shows in CM-TAX-006.
+- **SH-S-0564** (Global-e provides the tax registration under Managed Markets) is outside in CM-TAX-003, under SH-C-101's and SH-C-105's keys. E's CM-MKS-003 cites it as outside under SH-C-110's key. Neither is core, so the merge won't flag it.
+- **SH-S-6130 to SH-S-6134, SH-S-6298 and SH-S-6299** are also held under F's SH-C-158 and SH-C-159 (access scopes). Here they are cited under SH-C-100's and SH-C-103's keys, as core (read_taxes, TaxSettings, TaxAppConfiguration) and extension-point (write_taxes for "a tax calculations app", the tax_services webhooks). F's parts may cite the same statements as core for the scopes mechanism.
+
+### Rulings
+
+- **U-030: SH-C-101 against SA-C-160, `joined:CM-TAX-003`,** on role (above). **SH-C-103 against SA-C-160, `joined:CM-TAX-004`.** This follows the cells: Salla's side is the unreleased flag avalara-tax, so whether Salla offers a third-party tax service isn't settled.
+- **U-031: SH-C-102 against SA-C-161, `apart`; SH-C-104 against SA-C-161, `apart`.** No capability cites both sides. Shopify's VAT invoices are only a title, and a filed return isn't an invoice reported one by one. A join on role, "the platform sends the store's tax data to the authority", is possible for SH-C-104, but neither platform's words name the other's object, so I didn't make one.
+
+### Left for later batches (SHP, RET)
+
+- **SA-C-146** (International Shipping Readiness: HS codes, customs; C, with E under also) is SHP's. Q1's M-042 notes that WooCommerce's WC-C-058 also holds product customs data, which Salla keeps in SA-C-146. SHP should land the customs data for a shipment there, not in CM-TAX-008.
+- **SA-S-5075:** customs fees on Salla's own labels (بوليصات سلة), settled from the wallet. It is core in CM-TAX-008 under SA-C-162's key. SHP's capability for the platform's own shipping labels may also cite it, as shows.
+- No unclear candidate of this batch has a side in SHP or RET.
+
+### Flags answered
+
+The batch check prints 46 flags: batch 8's 42, and four on this batch's none-held cells.
+- **CM-TAX-002 Salla (4 matches):** SA-S-2125, SA-S-0182 and SA-I-2511/SA-S-3511 are the merchant-entered rates and the unreleased Avalara flag, cited in CM-TAX-001 and CM-TAX-004. None says Salla computes the rates.
+- **CM-TAX-005 Salla (3):** the store's own tax number on its invoices (SA-S-2125, SA-S-0147) and its invoices uploaded to ZATCA (SA-S-0148). None is a buyer's VAT number or an exemption.
+- **CM-TAX-006 Salla (4):** acknowledgements (الإقرار) of terms and policies, not tax returns.
+- **CM-TAX-007 Shopify (8):** filing and reporting to tax authorities (SH-S-0504, SH-S-0096, CM-TAX-009; SH-S-0606, CM-TAX-006), registration (SH-S-0507, CM-TAX-003), Managed Markets' reason (SH-S-0634, E's SH-C-110: selling without registering for tax), and Saudi VAT on Shopify's own bills (SH-S-0277, SH-S-0278, SH-I-2355, A's CM-PLN-007). None reports the store's invoices to an authority.
+
+### Gaps
+
+- SH-C-101: boundary and reason, searched, not found, so no API or webhook for tax registrations is held. SH-C-102, SH-C-103 and SH-C-104: reason, searched, not found.
+- SA-C-160: reason, page not read. SA-C-161: responsible, page not read (the usage agreement on the ZATCA link). SA-C-162: responsible, page not read (Salla's shipping terms), so whether the buyer is charged duties at checkout isn't held.
+- Maker statements are missing for Salla's ZATCA app (CM-TAX-007) and for Shopify's Advanced tax platform add-on (CM-TAX-004, billed as Avalara add-on fees, SH-I-1325). No statement held says what the 1099-MISC reports (CM-TAX-009).
+- Avalara and Vertex appear only as the names of a billing charge category and help-centre titles (SH-I-1325, SH-I-2342, SH-I-2343), so I recorded neither as a slot filler.
+
+### Qualities and slot fillers
+
+- **Qualities:** CM-TAX-002 Shopify has two: no guarantee of Shopify Tax's uptime (SH-S-0598), and the destinations it calculates for (SH-S-0514). CM-TAX-006 Shopify has two: the end of automated filing (SH-S-0525) and its closure to new enrollment (SH-S-0521). CM-TAX-003 Salla has one: ZATCA's registration threshold of 375,000 riyals a year (SA-S-5073).
+- **Slot fillers:** Global-e (CM-TAX-003, scope Managed Markets); ZATCA, هيئة الزكاة والضريبة والجمارك (CM-TAX-003 and CM-TAX-007, Salla); Sovos Compliance, LLC (CM-TAX-006); customs authorities (CM-TAX-008); the IRS and the US tax laws on Payment Settlement Entities (CM-TAX-009, scope United States).
+
+### For the coordinator
+
+No row of an earlier batch is wrong by this batch's evidence. Batch 1's note (line 100) that ZATCA e-invoicing and SH-I-2331 are TAX's is now answered: CM-TAX-007 and CM-TAX-005. CM-CHK-009's Shopify reading, which names SH-S-0670 as TAX's, still holds: SH-S-0670 is core in CM-TAX-005.
+
+### Checker
+
+The batch check (`--concerns SH-C-099,SH-C-100,SH-C-101,SH-C-102,SH-C-103,SH-C-104,SH-C-105,SA-C-160,SA-C-161,SA-C-162 --areas TAX`) gives "0 problems, 46 flags for the reviewer". The four new flags are answered above. `uncited --domain C` lists none of this batch's concerns' statements.

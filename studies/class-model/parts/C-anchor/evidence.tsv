@@ -1398,3 +1398,30 @@ CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0502	US tax laws require Payment 
 CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0504	Shopify might also report the merchant's sales to local tax authorities
 CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0096	Shopify may file tax reports with tax authorities on Transactions
 CM-TAX-009	shopify	shows	SH-C-099/responsible/SH-S-0503	the merchant reports this income on its tax returns
+CM-TAX-009	shopify	shows	SH-C-099/responsible/SH-S-0502	the same sentence, under responsible
+CM-TAX-009	shopify	shows	SH-C-099/reason/SH-S-0502	the same sentence, under reason
+CM-TAX-009	shopify	core	SH-C-099/boundary/SH-S-0505	the same sentence, under boundary
+CM-TAX-004	shopify	extension-point	SH-C-100/boundary/SH-S-6130	webhook tax_services/create, under SH-C-100
+CM-TAX-004	shopify	extension-point	SH-C-100/boundary/SH-S-6131	webhook tax_services/update, under SH-C-100
+CM-TAX-004	shopify	extension-point	SH-C-100/boundary/SH-S-6298	write_taxes for a tax calculations app, under SH-C-100
+CM-TAX-004	shopify	extension-point	SH-C-100/boundary/SH-S-6299	the same, with the feature on, under SH-C-100
+CM-TAX-001	shopify	core	SH-C-100/boundary/SH-S-6133	read_customers or read_taxes accepted
+CM-TAX-001	shopify	core	SH-C-101/decides/SH-S-5271	tax-settings route gated by MANAGE_TAXES_SETTINGS, under SH-C-101
+CM-TAX-001	shopify	core	SH-C-101/where/SH-S-1492	Taxes and duties, under SH-C-101
+CM-TAX-003	shopify	shows	SH-C-101/responsible/SH-S-0037	merchant responsible for determining, collecting and remitting taxes
+CM-TAX-002	shopify	core	SH-C-101/decides/SH-S-5872	entitlement shopifyTax enabled, under SH-C-101
+CM-TAX-005	shopify	core	SH-C-102/decides/SH-S-0535	the same sentence, under decides
+CM-TAX-001	shopify	core	SH-C-103/decides/SH-S-5271	tax-settings route, under SH-C-103
+CM-TAX-002	shopify	shows	SH-C-103/decides/SH-S-5275	switch-tax-product behind a beta, under SH-C-103
+CM-TAX-001	shopify	core	SH-C-103/boundary/SH-S-6132	read_taxes, under SH-C-103
+CM-TAX-001	shopify	core	SH-C-103/boundary/SH-S-6133	read_customers or read_taxes, under SH-C-103
+CM-TAX-004	shopify	core	SH-C-103/boundary/SH-S-6134	read_taxes reads the TaxAppConfiguration object
+CM-TAX-004	shopify	extension-point	SH-C-103/decides/SH-S-0530	a tax app replaces Shopify's tax service, under decides
+CM-TAX-004	shopify	shows	SH-C-103/responsible/SH-S-0529	the same sentence, under responsible
+CM-TAX-002	shopify	core	SH-C-103/decides/SH-S-5872	entitlement shopifyTax enabled, under SH-C-103
+CM-TAX-006	shopify	shows	SH-C-104/responsible/SH-S-0041	Shopify not responsible for the merchant's tax obligations
+CM-TAX-008	shopify	core	SH-C-105/decides/SH-S-0538	collect an estimate of duties and import taxes at checkout, under decides
+CM-TAX-008	shopify	shows	SH-C-105/reason/SH-S-0538	the reason: customers avoid unexpected charges on delivery
+CM-TAX-003	shopify	outside	SH-C-105/responsible/SH-S-0564	Global-e provides the tax registration, under SH-C-105
+CM-TAX-001	salla	core	SA-C-160/where/SA-S-1062	Merchant API folder Taxes, under where
+CM-TAX-007	salla	shows	SA-C-161/where/SA-S-3219	flag zatca of type app, with an app_id and an install URL
