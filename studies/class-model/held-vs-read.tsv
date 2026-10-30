@@ -1,7 +1,7 @@
 platform	kind	group	held	read	unread	note
 shopify	pages	shopify.dev/docs	8586	25	8561	
 shopify	pages	admin.shopify.com/api	8277	0	8277	
-shopify	pages	help.shopify.com/manual	5143	123	5020	
+shopify	pages	help.shopify.com/manual	5438	124	5314	
 shopify	pages	admin.shopify.com/store	3475	0	3475	
 shopify	pages	themes.shopify.com/themes	1300	0	1300	
 shopify	pages	shopify.dev/changelog	827	0	827	
@@ -9,8 +9,8 @@ shopify	pages	admin.shopify.com/settings	331	0	331
 shopify	pages	changelog.shopify.com/posts	305	0	305	
 shopify	pages	apps.shopify.com/categories	168	0	168	
 shopify	pages	apps.shopify.com/collections	164	0	164	
+shopify	pages	help.shopify.com/partners	137	0	137	
 shopify	pages	themes.shopify.com/websites	133	0	133	
-shopify	pages	help.shopify.com/partners	131	0	131	
 shopify	pages	themes.shopify.com/designers	124	0	124	
 shopify	pages	apps.shopify.com/stories	107	0	107	
 shopify	pages	admin.shopify.com/content	63	0	63	
@@ -22,6 +22,7 @@ shopify	pages	partners.shopify.com/5236935	46	0	46
 shopify	pages	shopify.com/pos	44	0	44	
 shopify	pages	shopify.com/legal	68	25	43	
 shopify	pages	shopify.com/print-on-demand	39	0	39	
+shopify	pages	help.shopify.com/cdn	39	0	39	
 shopify	pages	admin.shopify.com/markets	39	0	39	
 shopify	pages	shopify.com/compare	38	0	38	
 shopify	pages	shopify.com/plus	32	0	32	
@@ -41,6 +42,7 @@ shopify	pages	admin.shopify.com/finance	15	0	15
 shopify	pages	admin.shopify.com/taxes	14	0	14	
 shopify	pages	admin.shopify.com/themes	13	0	13	
 shopify	pages	admin.shopify.com/pages	13	0	13	
+shopify	pages	cdn.shopify.com/static	12	0	12	
 shopify	pages	admin.shopify.com/draft_orders	12	0	12	
 shopify	pages	admin.shopify.com/collections	11	0	11	
 shopify	pages	admin.shopify.com/credit	11	0	11	
@@ -52,6 +54,7 @@ shopify	pages	admin.shopify.com/catalogs	10	0	10
 shopify	pages	admin.shopify.com/companies	10	0	10	
 shopify	pages	admin.shopify.com/gift_cards	10	0	10	
 shopify	pages	admin.shopify.com/organization	10	0	10	
+shopify	pages	help.shopify.com/affiliates	9	0	9	
 shopify	pages	shopify.com/careers	9	0	9	
 shopify	pages	shopify.com/accessibility	8	0	8	
 shopify	pages	shopify.com/bugbounty	8	0	8	
@@ -64,7 +67,6 @@ shopify	pages	admin.shopify.com/account_review	7	0	7
 shopify	pages	admin.shopify.com/signup	7	0	7	
 shopify	pages	shopify.dev/admin-graphql-direct-proxy	6	0	6	
 shopify	pages	shopify.dev/storefront-graphql-direct-proxy	6	0	6	
-shopify	pages	help.shopify.com/affiliates	6	0	6	
 shopify	pages	shopify.com/enterprise	6	0	6	
 shopify	pages	shopify.com/shipping	6	0	6	
 shopify	pages	shopifystatus.com/api	6	0	6	
@@ -87,7 +89,6 @@ shopify	pages	shopify.com/news	3	0	3
 shopify	pages	shopify.com/toolkit	3	0	3	
 shopify	pages	shopify.com/website	3	0	3	
 shopify	pages	apps.shopify.com/extensions	3	0	3	
-shopify	pages	help.shopify.com/cdn	3	0	3	
 shopify	pages	admin.shopify.com/subscribe	3	0	3	
 shopify	pages	admin.shopify.com/extensions-dev	3	0	3	
 shopify	pages	admin.shopify.com/shopify-payments	3	0	3	
@@ -100,6 +101,7 @@ shopify	pages	admin.shopify.com/challenges	3	0	3
 shopify	pages	accounts.shopify.com/activate	3	0	3	
 shopify	pages	partners.shopify.com/{id}	3	0	3	
 shopify	pages	shopify.com/pricing	2	0	2	
+shopify	pages	help.shopify.com	2	0	2	
 shopify	pages	shopify.com	2	0	2	
 shopify	pages	shopify.com/b2b-demo-store	2	0	2	
 shopify	pages	shopify.com/build-with-ai	2	0	2	
@@ -109,7 +111,8 @@ shopify	pages	shopify.com/sell	2	0	2
 shopify	pages	shopify.com/tech-flexes	2	0	2	
 shopify	pages	shopify.com/ucp	2	0	2	
 shopify	pages	apps.shopify.com/partners	2	0	2	
-shopify	pages	cdn.shopify.com/static	2	0	2	
+shopify	pages	help.shopify.com/contact	2	0	2	
+shopify	pages	cdn.shopify.com/s	2	0	2	
 shopify	pages	cdn.shopify.com/shopifycloud	2	0	2	
 shopify	pages	admin.shopify.com/checkouts	2	0	2	
 shopify	pages	admin.shopify.com/transaction	2	0	2	
@@ -361,7 +364,6 @@ shopify	pages	community.shopify.com/sitemap_19.xml	1	0	1
 shopify	pages	community.shopify.com/sitemap_20.xml	1	0	1	
 shopify	pages	community.shopify.com/sitemap_21.xml	1	0	1	
 shopify	pages	community.shopify.com/sitemap_22.xml	1	0	1	
-shopify	pages	help.shopify.com	1	0	1	
 shopify	pages	shopify.com/sitemap.xml	1	0	1	
 shopify	pages	shopifystatus.com	1	0	1	
 shopify	pages	shopify.com/about	1	0	1	
@@ -613,6 +615,7 @@ shopify	pages	changelog.shopify.com	1	0	1
 shopify	pages	shopify.com/llms.txt	1	0	1	
 shopify	pages	shopify.com/llms-full.txt	1	0	1	
 shopify	pages	admin.shopify.com/llms.txt	1	0	1	
+shopify	pages	cdn.shopify.com/assets	1	0	1	
 shopify	pages	accounts.shopify.com/lookup	1	0	1	
 shopify	pages	accounts.shopify.com	1	0	1	
 shopify	pages	flow.shopifyapps.com/flow-core	1	0	1	

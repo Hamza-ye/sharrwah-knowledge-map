@@ -16,13 +16,13 @@
 | … that what the model read cites | 47 | 31 | 1 | 0 | 0 |
 | … their items, and the items cited | 38,538; 3,384 | 10,161; 1,855 | 33,722; 0 | — | — |
 | Structures never cited, and their items | 78; 48,640 | 106; 23,598 | 7; 1,404 | 8; 637 | 7; 364 |
-| Addresses held readable (pages, admin pages, saved answers) | 30,913 | 8,641 | 1,039 | 381 | 175 |
-| … that what the model read cites | 175 | 102 | 203 | 156 | 120 |
+| Addresses held readable (pages, admin pages, saved answers) | 31,269 | 8,641 | 1,039 | 381 | 175 |
+| … that what the model read cites | 176 | 102 | 203 | 156 | 120 |
 | Cells of the merged model with nothing held | 74 of 347 | 95 | 154 | 175 | 160 |
 
 **How to read the measure:**
 - An item is a line of a structure's `items.jsonl`, in every label (store or language) it is held under, so one item held for three stores counts three times.
-- An address counts each held page, admin page, browser step and saved answer once. Those include the admin's own API answers, such as Shopify's 8,277 under `admin.shopify.com/api`. Not every address bears on the extent.
+- An address counts each held page, admin page, browser step and saved answer once. Those include the admin's own API answers, such as Shopify's 8,277 under `admin.shopify.com/api`. Not every address bears on the extent. Since `held_index.py` reads archives held in parts (30 October, after `inspection-Q3M.md`, Q3M-2), Shopify's count includes the help pages in them.
 - `held-vs-read.tsv` gives the groups behind each count.
 
 ## What is closed, and how
