@@ -150,3 +150,85 @@ I appended evidence rows only; **the cells' `reading` and `terms` are batch 1's 
 - **SH-C-029 and SH-C-139 are written as Q1's matches,** M-014 and M-056, now that batch 2 has landed their Salla sides. Batch 1 wrote them as `terms` only because the other side hadn't landed.
 - **The cells batch 2 added evidence to** (Salla's CM-SFR-001, -002, -003, -005, -007 and -008; Shopify's CM-SFR-002 and -011) now name its rows at the end of their readings.
 
+
+
+## Batch 3: area CNT, SH-C-027, SH-C-028, SH-C-030, SH-C-031, SH-C-034, SA-C-033, SA-C-081, SA-C-093
+
+Capabilities CM-CNT-001 to CM-CNT-008 are new, with a Shopify and a Salla cell each. No concern joined an existing capability: area CNT had none. Every reading below is a reading; the landings, cells and rulings cite the keys.
+
+### How the area is cut, and the grains chosen
+
+- **No root for Shopify's Content section.** Shopify's admin section Content (content:parent, SH-S-5119, gated by metaobjects.enabled, SH-S-5120) holds Files, Metaobjects, Menus and Blog posts. Salla has no such grouping: its information pages are at /channel/pages (SA-S-1831), its blog at /blog and /marketing/blog (SA-S-1698, SA-S-3555), its custom URLs at /manage/custom-urls (SA-S-1833), its SEO at /marketing/seo (SA-S-1822). A section that groups capabilities isn't itself something a store has, so each is a root. SH-S-5120 is cited only in CM-CNT-002, the metaobjects entitlement it names.
+- **CM-CNT-003 (store pages) holds CM-CNT-004 (blog).** Shopify's grouping puts them together: the staff permission Online store > Blog posts and pages (SH-I-0991), PAGES gating the blog's comments route (SH-S-5124), and read_online_store_pages on article events (SH-S-6062). Salla's differs: the blog is under marketing (SA-S-3555, plan line under أدوات التسويق, SA-S-2011), apart from information pages. I followed Shopify's, the one grouping that joins them. SH-C-030 (Pages and blog posts) is coarser, so it lands in the parent, clean.
+- **CM-CNT-005 (menus), CM-CNT-006 (custom URLs) and CM-CNT-008 (store policies) are roots.**
+  - SA-C-093 holds information pages, menus and custom URLs. It lands in CM-CNT-003, its first term, **strained**: its statements are cited in CM-CNT-005, -006 and -008 too.
+  - **CM-CNT-008 is a root by Shopify's grouping** (Settings > Policies, SH-S-7087, not under Content). On Salla the policies are information pages (SA-S-2100, SA-S-5034). A reviewer may nest CM-CNT-008 under CM-CNT-003, following Salla's grouping. SA-C-093 would stay strained, by menus and custom URLs.
+- **CM-CNT-006 is Salla's alone.** It has a place of its own on Salla: an admin link, an API folder (whose only operation, in the docs sidebar, is Import Custom URLs: context, not cited), a plan line, a staff permission and a flag. No statement defines a custom URL. Shopify's URL redirects aren't joined with it. Q1's M-015 note says the terms differ. Shopify's redirects have no statement of their own: they are named only in notes, SH-S-5123's routes redirects:list and redirects:new, and SH-S-6245's source page urlRedirectBulkDeleteAll. **This is a gap:** a Shopify statement keyed on its redirects routes or scope would let a reviewer place them, and a Salla statement defining custom URLs would settle whether they are the same thing.
+- **CM-CNT-007 (SEO)** is a root. Salla builds it; Shopify's statements show only the App Store category SEO apps (SH-I-1934).
+- **CM-CNT-001 (files) and CM-CNT-002 (custom data)** are Shopify's, with Salla none-held.
+
+### Joins on role (readings)
+
+- **CM-CNT-008:** Shopify's Policies (SH-S-7087; the merchant's refund, shipping and terms policies, SH-S-0014) against Salla's information pages that carry the store's policies (SA-S-2100) and the page marked as the return and exchange policy page (SA-S-5034). In both, it is the store's own policies, published to its buyers. U-012 is joined:CM-CNT-008.
+- **CM-CNT-007 joins on the shared term SEO,** not on role. Neither side defines it: Salla's plan line names the store's visibility on search engines (SA-S-2141), and Shopify's side is an App Store category's name.
+
+### Homonyms and terms kept apart
+
+- **"Custom fields" (Salla) against "metafields" and "custom data" (Shopify), U-005.** They are not joined.
+  - Salla's product custom fields (SA-S-2134, SA-C-020) and order custom fields (SA-S-1780, SA-S-2131, SA-C-042) are titles with no definition. scope.tsv reads SA-C-042's as fields the buyer fills at checkout.
+  - Shopify's metafields are shown only as data attached to resources (SH-S-5915, SH-S-7257).
+  - Both U-005 pairs are ruled apart.
+  - Salla's Meta Data scope (SA-S-1562), Twilight SDK Metadata folder (SA-S-1143), salla-metadata component (SA-S-1470, with a prop entity) and customer-metadata flag (SA-S-3169) are also undefined. They are leads, not cited: a statement defining Salla's metadata would settle whether it is custom data.
+- **"Custom URLs" (Salla) against "URL redirects" (Shopify):** kept apart (above).
+
+### Strained fits
+
+- **SA-C-093 in CM-CNT-003,** as above.
+- **For the coordinator: batch 1's SH-C-193 in CM-SFR-005 now has a statement cited in another tree.** CM-CNT-007 cites its SEO apps (SH-I-1934). Batch 1 left the SEO apps for area CNT. The checker flags the row (landings.tsv line 9): by S1 it is now strained, with a reading naming CM-CNT-007.
+
+### Rulings
+
+- U-063 (SH-C-193 against SA-C-033): joined:CM-CNT-007.
+- U-005 (SH-C-028 against SA-C-042; SH-C-028 against SA-C-020): apart, two rows. Both Salla concerns name E under also, so the ruling follows the cells, and CM-CNT-002's Salla cell is none-held.
+- U-012 (SH-C-034 against SA-C-093): joined:CM-CNT-008. SH-C-034 against SA-C-066: apart, because scope.tsv gives SA-C-066 domain A, not naming E.
+- No pair is left for a later batch: every candidate holding my concerns has both sides landed.
+
+### Matches
+
+- **M-015** holds SH-C-030, SH-C-031, SA-C-081 and SA-C-093. Its own granularity note says the platforms cut at different grains, so its concerns land in three trees:
+  - SH-C-030 and SA-C-093 in CM-CNT-003;
+  - SA-C-081 in its child CM-CNT-004;
+  - SH-C-031 in CM-CNT-005, written as `terms` (Menus, SH-S-1526, against store-menu, SA-S-3343, the terms M-015's basis names), since none of the match's other concerns is in CM-CNT-005's tree.
+
+### Concerns read under `also`, and other domains' statements
+
+- **Cited only in none-held readings, not as evidence:** SA-C-020 (domain B, also E) for its product custom fields, and SA-C-042 (domain C, also E) for its order custom fields.
+- **Not cited:**
+  - SA-C-066 (privacy pages, domain A, not naming E);
+  - SH-C-111's MarketWebPresence, "which defines its SEO strategy" (SH-S-7458). SH-C-111 is area MKS's, so it is left to the batch on MKS, which may cite it in CM-CNT-007's Shopify cell;
+  - SA-C-091's salla-menu component (SA-S-1469), a lead for CM-CNT-005's Salla cell. SA-C-091 is landed in CM-SFR-002, already strained; I left it uncited, since its readme is empty and the store-menu flag carries the cell.
+
+### Gaps that change what a cell can claim
+
+- **CM-CNT-001 and CM-CNT-002, Salla:** none-held. Salla's definition of a file library and of custom data isn't stated.
+- **CM-CNT-004, Salla:** Q1's boundary gap is "page not read". No blog API or webhook is held. The blog's flag store-blog is type app, with an install link in Salla's app store (SA-S-3389), but not released; no statement names the app's maker.
+- **CM-CNT-006, Shopify:** none-held. Salla's custom URLs aren't defined.
+- **CM-CNT-007, Shopify:** no statement shows SEO built into Shopify's admin, such as page titles or meta descriptions. The cell rests on the App Store category alone, so on Shopify's statements SEO is extension-point only.
+- **SH-C-030 and SH-C-031:** Q1's reason gaps are "searched, not found", and the responsible gaps of SH-C-027, -028, -030 and -031 are "stated only in general terms".
+- **SA-C-033, SA-C-081 and SA-C-093:** Q1's responsible gaps are "page not read".
+
+### What the checker flagged
+
+`0 problems, 8 flags`.
+- **cells.tsv line 23 (CM-SFR-011, Salla):** batch 1's flag, answered in its notes.
+- **cells.tsv line 29 (CM-CNT-001, Salla, none-held, 24 matches):** product images and GIF uploads (SA-C-020), review media (SA-C-030), marketing assets (SA-C-072), the storefront components salla-file-upload, salla-attachments and salla-attachment-view (SA-C-091), and the docs page Files and Folders Structure (SA-I-0135, a theme's files). None is a store's file library.
+- **cells.tsv line 31 (CM-CNT-002, Salla, none-held, 26 matches):** the custom fields and metadata statements above, and permission lists that match on custom_fields (SA-C-010's export logs). Not cited, for the reasons under homonyms.
+- **cells.tsv line 38 (CM-CNT-006, Shopify, none-held, 7 matches):** redirects in payments, billing, finance and agentic routes, and the help section on storefront redirection by market (SH-I-2152). None is a store's URLs.
+- **SA-S-2100 cited in CM-CNT-003 and CM-CNT-008:** the plan line's title is information pages, and its description says they introduce the brand and the policies (from about us to the return policy). The description doesn't narrow the title to policies, so both cite it. See the alternative of nesting CM-CNT-008 under CM-CNT-003, above.
+- **M-015's concerns in more than one tree:** a difference of grain (above).
+- **landings.tsv line 9 (SH-C-193 clean in CM-SFR-005, cited in CM-CNT-007):** batch 1's row, for the coordinator (above).
+- **CM-CNT-006 has no concern landed in its tree:** SA-C-093, the concern behind it, is coarser and lands in CM-CNT-003, strained. A reviewer may move SA-C-093 here; it would stay strained either way.
+
+## The coordinator's correction after batch 3 (30 October)
+
+- **SH-C-193 is `strained` in CM-SFR-005.** Batch 3 cites its SEO apps category (SH-I-1934) in CM-CNT-007, SEO, another tree, as batch 1's reading foresaw (S1).

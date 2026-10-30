@@ -167,3 +167,97 @@ CM-SFR-008	salla	shows	SA-C-301/where/SA-S-5116	Partners portal section Domains 
 CM-SFR-008	salla	shows	SA-C-301/decides/SA-S-5117	Partners portal feature domain-purchase, permission manage-domains
 CM-SFR-008	salla	shows	SA-C-301/boundary/SA-S-5118	Partners portal request partner-reports domains stats
 CM-SFR-011	shopify	core	SH-I-0069	API resource Storefront Web Components (SH-C-139)
+CM-CNT-001	shopify	core	SH-C-027/where/SH-S-1525	admin navigation Files
+CM-CNT-001	shopify	core	SH-I-0953	staff permission Content > Files
+CM-CNT-001	shopify	core	SH-C-027/decides/SH-S-5122	route file:list gated by VIEW_FILES
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-5986	own API scope read_files
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-6198	own API scope write_files
+CM-CNT-001	shopify	core	SH-C-027/decides/SH-S-6199	fileCreate needs the user's create files permission
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-6202	fileCreate uploads images
+CM-CNT-001	shopify	core	SH-C-027/reason/SH-S-7494	Shopify's Imagery service manages the store's images and videos
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-1500	settings page Metafields and metaobjects
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-0779	label Metafields
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-1524	admin navigation Metaobjects
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5120	Content section gated by metaobjects.enabled
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5625	metaobjects entitlement enabled in the captured stores
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5121	metaobject routes gated by metaobject permissions
+CM-CNT-002	shopify	core	SH-I-0946	staff permission Content > Metaobject definitions > View
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6056	own API scope read_metaobjects
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6236	own API scope write_metaobject_definitions
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6053	webhook topic metaobjects/create
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-5952	webhook topic metafield_definitions/create
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-7240	admin intent create metaobject_definition
+CM-CNT-002	shopify	core	SH-I-2499	App Store built-in feature Metafields and metaobjects
+CM-CNT-002	shopify	core	SH-C-028/reason/SH-S-7490	standard metafield definitions shared across all stores
+CM-CNT-002	shopify	extension-point	SH-C-028/boundary/SH-S-6237	apps read and write their own app-owned metaobjects
+CM-CNT-002	shopify	extension-point	SH-I-1902	App Store category Metafield apps
+CM-CNT-003	shopify	core	SH-I-0991	staff permission Online store > Blog posts and pages
+CM-CNT-003	shopify	core	SH-I-1100	staff permission PAGES
+CM-CNT-003	shopify	core	SH-I-0166	API resource Page
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-1030	own API scope read_online_store_pages
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-1031	own API scope write_online_store_pages
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-7241	admin intent create page
+CM-CNT-003	salla	core	SA-C-093/where/SA-S-1831	admin link Information pages /channel/pages
+CM-CNT-003	salla	core	SA-C-093/where/SA-S-3551	dashboard app @salla.sa/ui-merchant-channel
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2076	plan line الصفحات التعريفية
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2100	plan line إضافة صفحات تعريفية للمتجر
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2342	staff permission pages_browse
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2343	staff permission pages_management
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-3362	released flag store-pages
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-3386	released flag internal-pages
+CM-CNT-004	shopify	core	SH-C-030/where/SH-S-1527	admin navigation Blog posts
+CM-CNT-004	shopify	core	SH-C-030/where/SH-S-0917	label Blog
+CM-CNT-004	shopify	core	SH-C-030/decides/SH-S-5124	comments route gated by storefront.enabled and PAGES
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-7233	admin intent create article
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6062	article events need read_content or read_online_store_pages
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6178	articleCreate needs write_content or write_online_store_pages
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6148	Storefront API Article scope
+CM-CNT-004	shopify	extension-point	SH-I-1900	App Store category Blog apps
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1698	admin link Blog /blog
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-3555	dashboard app @salla.sa/ui-merchant-blog at /marketing/blog
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1703	setting Show blog in navigation
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1704	setting Likes and comments
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1705	setting Blog homepage SEO
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2011	plan line مدونة المتجر
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2345	staff permission blog_browse
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2346	staff permission blog_management
+CM-CNT-004	salla	shows	SA-C-081/decides/SA-S-3389	flag store-blog, type app, not released
+CM-CNT-005	shopify	core	SH-C-031/where/SH-S-1526	admin navigation Menus
+CM-CNT-005	shopify	core	SH-I-0944	staff permission Content > Menus
+CM-CNT-005	shopify	core	SH-C-031/decides/SH-S-5123	route menus:list gated by storefront.enabled and LINKS
+CM-CNT-005	shopify	core	SH-C-031/boundary/SH-S-6060	own API scope read_online_store_navigation
+CM-CNT-005	shopify	core	SH-C-031/boundary/SH-S-6244	own API scope write_online_store_navigation
+CM-CNT-005	shopify	extension-point	SH-I-1929	App Store category Navigation and menu apps
+CM-CNT-005	salla	core	SA-C-093/decides/SA-S-3343	released flag store-menu
+CM-CNT-006	salla	core	SA-C-093/where/SA-S-1833	admin link Custom URLs /manage/custom-urls
+CM-CNT-006	salla	core	SA-C-093/where/SA-S-3533	dashboard app @salla.sa/ui-merchant-manage, path custom-urls
+CM-CNT-006	salla	core	SA-C-093/boundary/SA-S-1069	Merchant API folder Custom URLs
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-2090	plan line إنشاء روابط مخصصة
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-2417	staff permission custom_urls_management
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-3359	released flag custom-urls
+CM-CNT-007	shopify	extension-point	SH-I-1934	App Store category SEO apps
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-1822	admin link SEO /marketing/seo/homepage
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-3535	dashboard app path seo and bulk-seo
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-1063	Merchant API folder SEO
+CM-CNT-007	salla	core	SA-C-033/boundary/SA-S-1562	own API scope Meta Data
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2141	plan line تحسين ظهور المتجر على محركات البحث
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2133	plan line AI-generated SEO at extra fees
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2358	staff permission seo_enhancement_browse
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2359	staff permission seo_enhancement_management
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3055	released flag seo-urls
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3346	released flag seo-meta-tag
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3492	released flag bulk-seo
+CM-CNT-007	salla	core	SA-C-033/reason/SA-S-5014	Salla provides automatic filling of SEO fields
+CM-CNT-007	salla	shows	SA-C-033/decides/SA-S-3489	flag ai-seo-generator, not released
+CM-CNT-007	salla	extension-point	SA-C-033/where/SA-S-1201	app category Site Optimization
+CM-CNT-007	salla	extension-point	SA-C-033/where/SA-S-1227	app category Site Optimization (تحسين الموقع)
+CM-CNT-008	shopify	core	SH-C-034/where/SH-S-7087	Settings > Policies
+CM-CNT-008	shopify	core	SH-C-034/where/SH-S-1503	title Policies
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7088	gated by MANAGE_POLICIES and the policies entitlement
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7089	route for a cancellation and return policy
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7291	entitlement policies in the captured stores
+CM-CNT-008	shopify	core	SH-C-034/boundary/SH-S-6019	own API scope read_legal_policies
+CM-CNT-008	shopify	core	SH-C-034/boundary/SH-S-6222	own API scope write_legal_policies
+CM-CNT-008	shopify	shows	SH-C-034/responsible/SH-S-0014	merchant agrees to provide refund, shipping and terms policies
+CM-CNT-008	salla	core	SA-C-093/decides/SA-S-2100	information pages carry the store's policies
+CM-CNT-008	salla	core	SA-C-093/reason/SA-S-5034	an information page marked as the return and exchange policy page
