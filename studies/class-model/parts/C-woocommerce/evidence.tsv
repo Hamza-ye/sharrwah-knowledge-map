@@ -251,3 +251,44 @@ CM-PAY-030	woocommerce	core	WC-C-002/where/WC-S-0603	direct bank/wire transfer
 CM-PAY-030	woocommerce	core	WC-C-002/decides/WC-S-5001	setting Enable bank transfer
 CM-PAY-030	woocommerce	core	WC-C-002/boundary/WC-S-5004	filter: bank transfer orders set On hold
 CM-PAY-019	woocommerce	extension-point	WC-C-001/boundary/WC-S-0784	the same guide, under WC-C-001's key
+CM-PAY-007	woocommerce	own-service	WC-C-012/decides/WC-S-5298	fees vary by business and customer country, currency, payment method
+CM-PAY-007	woocommerce	own-service	WC-C-012/where/WC-S-5297	Amazon Pay fee and its refund in the order timeline and fee breakdown
+CM-PAY-007	woocommerce	shows	WC-C-012/decides/WC-S-5299	transaction fees not refunded when the merchant refunds
+CM-PAY-007	woocommerce	shows	WC-C-012/responsible/WC-S-0649	terms: WooPayments has transaction fees and dispute fees
+CM-PAY-007	woocommerce	shows	WC-C-012/responsible/WC-S-0650	merchant responsible for fees and negative-balance losses
+CM-PAY-005	woocommerce	own-service	WC-C-012/boundary/WC-S-0534	WooPayments may debit the bank account to recover a negative balance
+CM-PAY-012	woocommerce	shows	WC-C-012/reason/WC-S-5300	Amazon Pay a wallet funded by cards, bank accounts and other methods
+CM-ORD-006	woocommerce	own-service	WC-C-013/reason/WC-S-5301	WooPayments shows a generic error so as not to reveal the rules
+CM-PAY-021	woocommerce	shows	WC-C-014/decides/WC-S-0869	available to qualified merchants in the listed countries
+CM-PAY-021	woocommerce	shows	WC-C-014/decides/WC-S-0870	card readers and Tap to Pay collect the country's default currency only
+CM-PAY-021	woocommerce	outside	WC-C-014/responsible/WC-S-0850	Stripe Terminal Services Terms and Purchase Terms apply
+CM-PAY-014	woocommerce	shows	WC-C-015/decides/WC-S-5338	WooPay available for U.S. merchants only
+CM-PAY-014	woocommerce	shows	WC-C-015/responsible/WC-S-0482	Automattic not a party to the transaction through WooPay
+CM-PAY-014	woocommerce	own-service	WC-C-042/decides/WC-S-5468	WooPayments setting Enable payments via saved cards: faster checkout
+CM-PAY-026	woocommerce	outside	WC-C-016/responsible/WC-S-0560	loans issued by Celtic Bank
+CM-PAY-026	woocommerce	shows	WC-C-016/decides/WC-S-0561	businesses reviewed daily for eligibility, contacted by email
+CM-PAY-026	woocommerce	shows	WC-C-016/boundary/WC-S-0861	repaid through a percentage of transactions
+CM-PAY-026	woocommerce	shows	WC-C-016/reason/WC-S-5302	withholding starts after seven days
+CM-PAY-004	woocommerce	shows	WC-C-020/responsible/WC-S-0507	Stripe's Connected Account Agreement holds the terms agreed at signup
+CM-PAY-004	woocommerce	outside	WC-C-048/where/WC-S-0504	a Stripe Express account connected to WooPayments
+CM-PAY-004	woocommerce	outside	WC-C-048/responsible/WC-S-0651	WooPayments is powered by Stripe
+CM-PAY-004	woocommerce	shows	WC-C-048/decides/WC-S-0477	an alternative processor may be integrated into WooPayments
+CM-PAY-004	woocommerce	shows	WC-C-048/decides/WC-S-0873	an existing Stripe account can't be used
+CM-PAY-004	woocommerce	shows	WC-C-048/decides/WC-S-5312	built with Stripe, no existing Stripe account connected
+CM-PAY-004	woocommerce	shows	WC-C-048/decides/WC-S-0508	opting out of Stripe's agreement ends WooPayments use
+CM-PAY-004	woocommerce	shows	WC-C-048/decides/WC-S-0509	on opting out the balance is still paid out
+CM-PAY-004	woocommerce	shows	WC-C-048/responsible/WC-S-0507	Stripe may update its Connected Account Agreement
+CM-PAY-004	woocommerce	shows	WC-C-048/boundary/WC-S-0506	no access to the Stripe Dashboard
+CM-PAY-004	woocommerce	outside	WC-C-048/boundary/WC-S-5311	some account details updated only in the Stripe Express dashboard
+CM-PAY-002	woocommerce	shows	WC-C-048/decides/WC-S-0472	terms: access terminated or refunds forced on a violation
+CM-PAY-022	woocommerce	outside	WC-C-042/where/WC-S-0554	WooPayments' tokens stored by its payment partner
+CM-PAY-022	woocommerce	shows	WC-C-098/boundary/WC-S-0360	privacy exporter WooCommerce Customer Payment Tokens
+CM-PAY-022	woocommerce	shows	WC-C-098/boundary/WC-S-0364	privacy eraser WooCommerce Customer Payment Tokens
+CM-PAY-009	woocommerce	own-service	WC-C-116/where/WC-S-5318	dispute alert on the order page under WooCommerce > Orders
+CM-PAY-009	woocommerce	own-service	WC-C-116/boundary/WC-S-5319	dispute notification email to the account's address
+CM-PAY-009	woocommerce	shows	WC-C-116/boundary/WC-S-5320	disputed amount and fee withdrawn, returned to the issuing bank
+CM-PAY-009	woocommerce	outside	WC-C-116/decides/WC-S-5322	outcome determined solely by the cardholder's bank
+CM-PAY-009	woocommerce	shows	WC-C-116/responsible/WC-S-0469	merchant responsible for disputes and chargebacks
+CM-PAY-009	woocommerce	shows	WC-C-116/responsible/WC-S-0649	terms: WooPayments has dispute fees
+CM-PAY-009	woocommerce	shows	WC-C-116/reason/WC-S-0867	not responding risks fines or card bans
+CM-PAY-009	woocommerce	outside	WC-C-116/reason/WC-S-5323	dispute fees imposed by card networks, passed through the processor

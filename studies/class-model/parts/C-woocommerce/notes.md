@@ -179,3 +179,98 @@ The cells are written; batch 3 lands its concerns and adds evidence rows, withou
 ### Renames proposed
 
 None. CM-PAY-016's name could add WooCommerce's term offline, and CM-PAY-002's WooPayments.
+
+## Batch 3: PAY, second batch (WC-C-012 to -016, -020, -042, -048, -098, -115, -116)
+
+Read: the brief; `model --domain C --areas PAY` (32 capabilities, batch 2's WooCommerce cells), CM-ORD-006 and CM-CHK-007 in `model`; the eleven concerns' statements, gaps and matches; the anchor's rulings and evidence on the pairs' other sides (SH-C-059, SA-C-122, SH-C-064 to -067, SH-C-074, SA-C-079, SA-C-114, SA-C-177, SA-C-095); E-woocommerce's U-074 rulings and its CM-POS-002 rows; where else the concerns' statements are cited (A's CM-PLN-005, CM-TRU-007, CM-TRU-010, CM-TRU-018; E's CM-POS-002); `caps --terms "privacy; personal data; share data; processor"`.
+
+### How it was cut
+
+- **No new capability.** All eleven concerns joined capabilities of the model: eight by their Q1 match, one by definition (WC-C-015), two on role (WC-C-020, WC-C-115). No cell was written; 41 evidence rows were added to batch 1's and 2's cells, with four qualities and six slot fillers.
+- **WC-C-012** → CM-PAY-007 (M-029), strained by the dry run's S1 across domains, as batch 2 marked WC-C-009: A's CM-PLN-005 cites WC-S-0538 under its key. Its negative balance recovered by debiting the bank account (WC-S-0534) goes to CM-PAY-005, and Amazon Pay as a wallet (WC-S-5300) to CM-PAY-012, both in the same tree.
+- **WC-C-013** → CM-ORD-006 (M-088, SA-C-122 landed there), clean; **WC-C-115** → CM-ORD-006 on role, clean. Both stay in ORD with batch 1's cell, not PAY, so batch 1's warning that they'd be strained in PAY doesn't arise.
+- **WC-C-014** → CM-PAY-021 (M-036), strained: E's CM-POS-002 cites five of its statements under its keys. WC-S-0481 (third-party POS terminals, as-is) is left to E's device capability.
+- **WC-C-015** → CM-PAY-014 by definition against Shop Pay (WC-S-0654, SH-S-0406), clean: its other statements are in the parent CM-CHK-008.
+- **WC-C-016** → CM-PAY-026 (M-038), clean.
+- **WC-C-020** → CM-PAY-004 on role, clean: its one statement is Stripe's Connected Account Agreement (WC-S-0507), `shows`, with Stripe a slot filler.
+- **WC-C-042** → CM-PAY-022 (M-035), strained: its setting Enable payments via saved cards (WC-S-5468) is cited in CM-PAY-014, under CM-CHK-008. Saving a card 'to check out much faster' is CM-PAY-014's definition (and Salla's checkout-save-cards there), not a store charging a saved method without checkout. The reviewer may prefer CM-PAY-022 for it; then the fit is clean.
+- **WC-C-048** → CM-PAY-004 (M-037), clean; the terms' power to terminate access or force refunds (WC-S-0472) goes to the parent CM-PAY-002 as `shows`.
+- **WC-C-098** → CM-PAY-022 (M-035), clean. Its privacy exporter and eraser (WC-S-0360, WC-S-0364) are cited `shows`: A's CM-TRU-007 cites them as core under WC-C-045's keys, for data requests, so `core` here would put one statement's core in two domains.
+- **WC-C-116** → CM-PAY-009 (M-030), clean.
+
+### Joins on role and by definition (readings)
+
+- CM-PAY-004 (WC-C-020): Stripe's Connected Account Agreement, accepted at WooPayments' signup, against Shopify's Payment Processor Terms (SH-S-0144) and Salla's payment services contract (SA-S-0081): the agreement under which the processing behind the service is done. Neither WooCommerce's nor Salla's text is held.
+- CM-ORD-006 (WC-C-115): Stripe Radar's screening of WooPayments' transactions against Shopify's fraud analysis (SH-S-0747, SH-S-0750) and Salla's fraud protection system (SA-S-1971).
+- CM-PAY-014 (WC-C-015), by definition: WooPay and Shop Pay both save the buyer's shipping and payment details for a faster checkout.
+
+### WordPress and Automattic (readings)
+
+- **WooPayments, Automattic's service:** the fees (CM-PAY-007), the negative balance's recovery (CM-PAY-005), the fraud rules' generic error (CM-ORD-006), the saved-cards setting (CM-PAY-014) and the dispute alert and email (CM-PAY-009) are `own-service`, each cell already citing the maker statements WC-S-0557 and WC-S-0459, as batch 2 did. The dispute alert sits on WooCommerce's own order page under WooCommerce > Orders (WC-S-5318), but it is WooPayments' notice: own-service, not core.
+- **Stripe, not WooPayments:** the processing account (a Stripe Express account, WC-S-0504), the Express dashboard where some account details are changed (WC-S-5311), the Connected Account Agreement (WC-S-0507) and Stripe Terminal's terms for in-person payments (WC-S-0850): `outside` or `shows`, Stripe a slot filler.
+- **Others named:** Celtic Bank issues the Stripe Capital loans (WC-S-0560, outside, slot filler); the cardholder's bank decides a dispute (WC-S-5322) and card networks impose the dispute fees (WC-S-5323): outside, slot fillers.
+- **WooCommerce core:** only the Payment Token API and its privacy exporter and eraser (CM-PAY-022).
+
+### Homonyms
+
+None new. 'account' is WooPayments' account, whose balance is CM-PAY-005's (WC-S-0534), and the Stripe Express account behind it (CM-PAY-004); neither is CM-PAY-023's business account. 'saved cards' in WooPayments (WC-S-5468, CM-PAY-014) and WooCommerce's payment tokens (WC-S-0943, CM-PAY-022) are both read with M-035; the cut between them follows each capability's definition, above.
+
+### Concerns read under `also`
+
+None beyond batch 2's. A's WC-C-018 cites WC-S-0552 and WC-S-0554 (CM-TRU-018), and WC-C-027 cites WC-S-0469 (CM-TRU-010); here WC-S-0554 and WC-S-0469 are cited under WC-C-042's and WC-C-116's own keys, as outside and shows.
+
+### Rulings
+
+- **U-021:** WC-C-013 and WC-C-115, each against SH-C-059 and SA-C-122: joined:CM-ORD-006 (four rows).
+- **U-026:** WC-C-015 against SH-C-074, joined:CM-PAY-014; against SA-C-079, joined:CM-CHK-008. nested:CM-PAY-014 would hold too, since WooPay lands in the child. The anchor ruled SH-C-074 against SA-C-079 nested:CM-PAY-014.
+- **U-027:** WC-C-020 against SH-C-065, SH-C-066, SH-C-067, SA-C-114 and SA-C-177: joined:CM-PAY-004 (five rows). The joins rest on agreements' names; the licensed entity isn't held on WooCommerce's side or Salla's.
+- **U-071:** WC-C-048 against SH-C-064, joined:CM-PAY-004 (M-037); against SA-C-235, apart (domain G's CM-OPS-001; no C cell cites it).
+- **U-074:** WC-C-014 against SA-C-095, joined:CM-PAY-021 (C's cells cite WC-S-0868 and SA-S-5040); against SH-C-143, apart (scope.tsv gives it E, not naming C). **For the coordinator:** E-woocommerce ruled both pairs joined:CM-POS-002 from E's cells. For SA-C-095 both domains join it. For SH-C-143 the domains differ, C apart and E joined: the merge's difference, by the coordinator's note after batch 2.
+
+### Earlier batches' cells whose readings are now out of date
+
+The coordinator updates them. Each still says batch 3 will add the rest:
+- **CM-ORD-006:** 'U-021 waits on them': U-021 is now ruled. Add: WooPayments shows a generic error so as not to reveal the rules (WC-S-5301, own-service).
+- **CM-PAY-002:** add shows: the terms' power to terminate access or force refunds (WC-S-0472, WC-C-048).
+- **CM-PAY-004:** 'batch 3 lands WC-C-020 and WC-C-048': add outside: the Stripe Express account (WC-S-0504, under WC-C-048), powered by Stripe (WC-S-0651, under WC-C-048), and account details changed only in the Stripe Express dashboard (WC-S-5311). Add shows: the Connected Account Agreement (WC-S-0507, under WC-C-020 and WC-C-048), an alternative processor that may be integrated (WC-S-0477), no existing Stripe account (WC-S-0873, WC-S-5312), opting out of Stripe's agreement (WC-S-0508, WC-S-0509) and no Stripe Dashboard (WC-S-0506, under WC-C-048). Who holds the funds, and under which licence, is still not held.
+- **CM-PAY-005:** add own-service: WooPayments may debit the bank account to recover a negative balance (WC-S-0534, WC-C-012).
+- **CM-PAY-007:** 'batch 3 lands WC-C-012 and adds the rest': add own-service: the fee factors (WC-S-5298) and Amazon Pay's fee and refund in the order timeline (WC-S-5297, scope Amazon Pay non-card payments). Add shows: transaction fees not refunded on refunds (WC-S-5299), transaction and dispute fees in the terms (WC-S-0649) and the merchant responsible for fees (WC-S-0650).
+- **CM-PAY-009:** add own-service: the alert on the order page (WC-S-5318) and the email (WC-S-5319). Add outside: the outcome decided solely by the cardholder's bank (WC-S-5322) and dispute fees imposed by card networks (WC-S-5323). Add shows: WC-S-5320, WC-S-0469, WC-S-0649 and WC-S-0867.
+- **CM-PAY-012:** 'Amazon Pay fees ... are for batch 3': WC-S-5300 is cited here as shows (Amazon Pay a wallet), and WC-S-5297 in CM-PAY-007.
+- **CM-PAY-014:** 'batch 3 lands WC-C-015 and rules U-026' and 'WC-S-5468 is left to batch 3': both are done. Add own-service: Enable payments via saved cards (WC-S-5468, WC-C-042). Add shows: U.S. merchants only (WC-S-5338) and Automattic not a party to the transaction (WC-S-0482).
+- **CM-PAY-021:** add shows: the countries (WC-S-0869) and the default currency only (WC-S-0870). Add outside: Stripe Terminal's terms (WC-S-0850).
+- **CM-PAY-022:** add outside: WooPayments' tokens stored by its payment partner (WC-S-0554, WC-C-042). Add shows: the privacy exporter and eraser (WC-S-0360, WC-S-0364).
+- **CM-PAY-026:** add outside: Celtic Bank (WC-S-0560). Add shows: the daily eligibility review (WC-S-0561), repayment by a percentage of transactions (WC-S-0861) and withholding after seven days (WC-S-5302). The reviewer may also read 'WooCommerce has partnered with Stripe to offer ... access' (WC-S-0559) as own-service, the company arranging the financing, beside batch 2's outside.
+
+### The checker's flags, answered
+
+- **own-service on statements that don't name the company** (WC-S-5298, WC-S-5297, WC-S-0534, WC-S-5301, WC-S-5468, WC-S-5318, WC-S-5319): each is a feature of WooPayments, from its docs or its settings guide (WC-S-5468's note: 'The WooPayments settings are under Payments > Settings'). Each cell already cites the maker statements WC-S-0557 and WC-S-0459.
+- **none-held cells matching this batch's statements:**
+  - CM-PAY-010: WC-C-013's fraud rules (CM-ORD-006) and WC-S-0650's negative balance (CM-PAY-005, -007). None is cover against chargebacks.
+  - CM-PAY-023 and CM-PAY-031: WooPayments' balance, payouts and Stripe account (CM-PAY-004, -005). None is a business account or a withholding for app partners.
+  - CM-CHK-007: WC-S-0534, 'Paused to recover a negative balance', is payouts, not an abandoned checkout.
+  - CM-CHK-005: WC-S-0552 is the PCI-validated payment fields, as batch 1 answered.
+  - CM-CHK-003: WC-S-0849, WooPay on the checkout page, as batch 1 answered.
+- The other flags are batch 1's and 2's, answered in their sections.
+
+### Uncited statements of the batch's concerns
+
+- Duplicates of a cited statement under another placement of the same concern: WC-C-013/decides/WC-S-0862, WC-C-014/boundary/WC-S-0868, WC-C-015/boundary/WC-S-0849, WC-C-042/boundary/WC-S-0554, WC-C-048/boundary/WC-S-0504, WC-C-098/decides and /boundary/WC-S-0943, WC-C-115/reason/WC-S-0864.
+- Left to domain A, which scope.tsv names under WC-C-042's also: WC-S-0552 (the payment fields in the partner's PCI DSS-validated environment, A's CM-TRU-018 under WC-C-018), WC-S-0480 (data shared with the payment processing third party) and WC-S-0501 (the Stripe account information Automattic receives), for A's data protection capabilities, such as CM-TRU-013 or CM-TRU-015.
+- Left to domain E: WC-C-014/responsible/WC-S-0481 (CM-POS-002).
+- Inventory entries, covered by statements: WC-I-0600, WC-I-0601, WC-I-0602, WC-I-0608, WC-I-0543, WC-I-0596, WC-I-0630, WC-I-0631, WC-I-0642, WC-I-0360, WC-I-0364, WC-I-0438.
+
+### Gaps
+
+- Who holds WooPayments' funds and under which licence: the Connected Account Agreement's text isn't held, and Q1's gaps on WC-C-020 (where, decides, boundary, reason: page not read) stand. CM-PAY-004 names Stripe as the processor only.
+- Who withdraws the disputed amount and the dispute fee (WC-S-5320 doesn't say), and who reviews eligibility for Stripe Capital (WC-S-0561): not stated.
+- WooPay's own maker, as batch 2 noted.
+- Q1's gaps: WC-C-013 responsible stated only in general terms; WC-C-115 responsible page not read and boundary observation needed; WC-C-014, -015, -042, -048 and -098 reason searched, not found; WC-C-098 responsible stated only in general terms.
+
+### Batch 1's and 2's rows
+
+The checker prints no problem on them. Their out-of-date readings are listed above.
+
+### Renames proposed
+
+None. CM-PAY-021's name could add WooCommerce's term In-Person Payments, and CM-PAY-022's payment tokens.

@@ -46,3 +46,7 @@ CM-TAX-002	shopify	destinations calculated	Calculations using Shopify Tax are av
 CM-TAX-006	shopify	end of service	Automated filing with Shopify Tax is ending. Automated filing files your returns for sales made through December 31, 2026.	SH-C-104/decides/SH-S-0525	
 CM-TAX-006	shopify	enrollment	Automated filing is closed to new enrollment. Only stores that are already enrolled can use it.	SH-C-104/decides/SH-S-0521	
 CM-TAX-003	salla	registration threshold	إذا كان دخلك أكبر أو يساوي 375 ألف ريال في السنة فأنت ملزم بالتسجيل، أما إذا كان أقل من ذلك فالتسجيل اختياري.	SA-C-160/responsible/SA-S-5073	هيئة الزكاة والضريبة والجمارك
+CM-SHP-002	shopify	shipping label discounts	Up to 87% off	SH-C-116/decides/SH-S-7045	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-SHP-002	salla	label starting price	وتبدأ من 23 ريال داخل المملكة	SA-C-140/responsible/SA-S-5059	
+CM-SHP-003	shopify	insurance coverage bought	shipping insurance for up to $5,000 USD of insurance coverage	SH-C-117/decides/SH-S-0720	orders shipped from the United States with Shopify shipping labels
+CM-SHP-003	shopify	insurance included	up to $200 USD of shipping insurance on each eligible shipment at no extra cost	SH-C-117/decides/SH-S-0722	

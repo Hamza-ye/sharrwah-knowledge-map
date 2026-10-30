@@ -3,3 +3,7 @@ CM-PAY-002	woocommerce	WooPayments account type in the UAE	Therefore, only the B
 CM-PAY-002	woocommerce	WooPayments for U.S. businesses: location	A business must be located in the 50 states, Washington D.C., or Puerto Rico to sign up with WooPayments as a U.S. business.	WC-C-010/decides/WC-S-5291
 CM-PAY-005	woocommerce	Payouts in a single-currency country	If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.	WC-C-007/decides/WC-S-0536
 CM-PAY-005	woocommerce	Payouts to debit cards outside the U.S.	what they will not do is send payouts to such cards.	WC-C-007/decides/WC-S-0532
+CM-PAY-021	woocommerce	In-Person Payments: countries	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States	WC-C-014/decides/WC-S-0869
+CM-PAY-021	woocommerce	In-Person Payments: currency	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.	WC-C-014/decides/WC-S-0870
+CM-PAY-014	woocommerce	WooPay: merchants' country	WooPay is currently available for U.S. merchants only.	WC-C-015/decides/WC-S-5338
+CM-PAY-026	woocommerce	Stripe Capital: start of repayment withholding	Rather, the withholding starts after seven days in order to ensure the loan payout is completed before payments begin.	WC-C-016/reason/WC-S-5302

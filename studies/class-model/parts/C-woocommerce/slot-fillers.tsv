@@ -20,3 +20,9 @@ CM-PAY-015	woocommerce	Afterpay	WC-C-004/decides/WC-S-5020
 CM-PAY-015	woocommerce	Klarna	WC-C-004/decides/WC-S-5020
 CM-PAY-026	woocommerce	Stripe (Stripe Capital)	WC-C-016/where/WC-S-0559
 CM-PAY-028	woocommerce	Xero	WC-C-109/boundary/WC-S-5491
+CM-PAY-009	woocommerce	the cardholder's bank (card issuer)	WC-C-116/decides/WC-S-5322
+CM-PAY-009	woocommerce	card networks	WC-C-116/reason/WC-S-5323
+CM-PAY-021	woocommerce	Stripe (Stripe Terminal)	WC-C-014/responsible/WC-S-0850
+CM-PAY-026	woocommerce	Celtic Bank	WC-C-016/responsible/WC-S-0560
+CM-PAY-004	woocommerce	Stripe	WC-C-048/where/WC-S-0504
+CM-PAY-004	woocommerce	Stripe (Connected Account Agreement)	WC-C-020/responsible/WC-S-0507
