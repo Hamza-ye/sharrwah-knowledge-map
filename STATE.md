@@ -137,7 +137,9 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **per-statement evidence,** with fixed tokens, keys and placement tests;
   - **rulings** on Q1's unclear candidates.
   Two scripts go with it: `method/class_slice.py`, which prints what a part reads, and `method/check_class_part.py`, which checks a part and derives each cell's places, scopes and gaps. The same inspector is re-inspecting the rewrite before anything runs.
-- **Cost so far:** the inspection 19.8 million agent tokens (95 requests), of the extent's 250 million.
+- **The re-inspection** (same file, "Re-inspection (30 October)"): 17 of the 19 findings resolved, 16 new (R1 to R16). The coordinator fixed the seven it set before the dry run, and four of those it set before the full run (R3, R6, R7, R13), and tested each fix on the inspector's own fixtures. Open before the full run: R10, splitting domain C's anchor by area.
+- **Running now:** the scope part (every concern to one domain, `studies/class-model/scope.tsv`), and the inspection of the dry run's review brief (`studies/class-model/briefs/R-dry-run.md`). `method/class_kinds.py` computes each capability's count and kind from the parts' cells.
+- **Cost so far:** the inspection 19.8 million agent tokens and the re-inspection 21.7 million, so 41.5 million of the extent's 250 million.
 
 **Next:**
 1. **A fresh coordinating session** runs Stage 4A (step 1.1 done; 1.2 under way). It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
