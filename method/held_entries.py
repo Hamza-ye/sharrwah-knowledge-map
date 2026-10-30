@@ -761,6 +761,8 @@ def run_text(platform, cache={}):
     if platform not in cache:
         repo, root, sub = REPOS[platform]
         fs = glob.glob(os.path.join(root, sub, "raw", "runs", "*", "steps", "*.text.txt"))
+        if platform in ("zid", "bigcommerce", "woocommerce"):     # their answers are tens of megabytes; Shopify's 1.7 GB
+            fs += [f for f in glob.glob(os.path.join(root, sub, "raw", "runs", "*", "answers", "**", "*.json"), recursive=True) if os.path.isfile(f)]
         cache[platform] = "\n".join(quote_norm(open(f, encoding="utf-8", errors="replace").read()) for f in fs)
     return cache[platform]
 
@@ -846,7 +848,8 @@ def cmd_check(a):
                 problems.append(f"{w}: filler {fl!r} is a company of the platform's group (CM-ACC-002): never a filler")
         for q in [x.strip() for x in r["quality"].split(";") if x.strip()]:
             what, _, val = q.partition(":")
-            if fold(val or what).strip(" .") in MARKS:
+            pieces = [fold(re.sub(r"\s*\([^)]*\)", "", x)).strip(" .") for x in (val or what).split(",")]
+            if pieces and all(x in MARKS for x in pieces if x) and any(pieces):
                 problems.append(f"{w}: quality {q!r} is a mark of inclusion: it is the line's scope, or a statement of the marked thing, never a quality")
         if ok and ok[0] in es:
             e0 = es[ok[0]]
@@ -877,6 +880,32 @@ def cmd_check(a):
             notes.append(f"own-service on {r['cap_id']}: {clip(es.get(ok[0], {}).get('text', ''), 160)}")
         if "core" in ss and ok and PARTNER.search(es.get(ok[0], {}).get("structure", "")):
             notes.append(f"core on a partner's or an app's permission ({es[ok[0]]['structure']}): the dry run's S7 makes it shows")
+    # per entry, over all its lines: a new thing with leads; a lead whose cell holds nothing that no line names; an app's
+    # embedded page with no CM-APP-007 line; a page index's container
+    idx = candidate_index(a.platform)
+    caps_of = collections.defaultdict(set)
+    lines_of = collections.defaultdict(list)
+    for i, l in enumerate(raw[1:], 2):
+        f = l.split("\t")
+        if len(f) == len(P_HEAD):
+            for x in [y.strip() for y in f[0].split(";") if y.strip()]:
+                caps_of[x].add(f[2]); lines_of[x].append(i)
+    keys = {x: re.search(r"pageKey: ([^;]+)", es[x]["text"]).group(1).strip() for x in ids if x in es and re.search(r"pageKey: ([^;]+)", es[x]["text"])}
+    for x in ids:
+        if x not in es or x not in caps_of:
+            continue
+        e, at = es[x], lines_of[x][0]
+        leads = candidates(e, idx)
+        if any(c.startswith("new:") for c in caps_of[x]) and leads:
+            notes.append(f"line {at}: a new thing whose entry has leads ({', '.join(c for c, _ in leads)}): read their cells first (rule 2)")
+        for c, w in leads[:1]:
+            if idx[4].get(c) == "holds nothing" and c not in caps_of[x]:
+                notes.append(f"line {at}: its first lead {c} ({', '.join(w)}) holds nothing on {a.platform}, and no line names it: is the entry also its thing? (rule 2)")
+        if re.search(r"apps/[^;\s]*embedded", e["text"]) and "CM-APP-007" not in caps_of[x]:
+            notes.append(f"line {at}: an app's embedded page with no CM-APP-007 line (rule 4)")
+        k = keys.get(x)
+        if k and any(v.startswith(k + ".") for v in keys.values()):
+            notes.append(f"line {at}: pageKey {k} holds other pages: a container (rule 3)")
     for k, names in new_names.items():
         if len(set(names)) > 1:
             problems.append(f"one new thing named several ways: {sorted(set(names))}: name it one way")
