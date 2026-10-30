@@ -69,7 +69,7 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 
 **Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched. The search ignores case, diacritics, hamza seats and tatweel, and reads ة as ه and ى as ي. A broken plural is another word, so search each Arabic term in its singular and its plural, with and without ال.
 
-**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`. Its `keys` are the statements of each side that stand for what the candidate asks about. Then `joined:<cap_id>` where one capability's cells cite keys of both sides; `nested:<cap_id>` where that capability cites one side's and a parent of it the other's, a finer part of a coarser thing; or `apart`, where no capability cites both. Where `scope.tsv` puts the candidate's other concern in another domain, the ruling is `apart`, with the basis "scope.tsv gives <concern> domain <X>". You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
+**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`. Its `keys` are the statements of each side that stand for what the candidate asks about. Then `joined:<cap_id>` where one capability's cells cite keys of both sides; `nested:<cap_id>` where that capability cites one side's and a parent of it the other's, a finer part of a coarser thing; or `apart`, where no capability cites both. Write one row per pair of concerns, with keys from those two concerns only. Where `scope.tsv` puts the other concern in another domain that names yours under `also`, a capability here may cite it, and the ruling follows the cells, with the basis naming its domain. Otherwise the ruling is `apart`, with the basis "scope.tsv gives <concern> domain <X>". You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
 
 ## The mapping parts
 
@@ -104,6 +104,24 @@ More than one value may apply to a cell, each resting on the statements that sup
 **Qualities and slot fillers,** each in its own file:
 - **a quality:** a limit, a certification, an uptime or a data location a platform states, on the capability it bears on. Its value is the statement's words. An unplaced inventory entry, such as a store limit's key, holds no value: record the key as the quality, write "not in the concern map" as its value, and name the structure that would hold it in your notes, as a gap;
 - **a slot filler:** a third party or a law that a statement names as doing the capability, or as setting its terms. It is each market's setup, not the platform's extent. Its market comes from the statement's scope. You don't judge whether the capability is a slot: the coordinator computes the kind.
+
+## Conventions from the dry run
+
+The dry run's review set these (`studies/class-model/review-dry-run-rulings.md`). They apply to every part.
+- **When something becomes a capability:** where at least one platform gives it a place of its own: an admin section or route, an API group, a plan line, or an app category. A single feature flag isn't enough.
+- **The platform's own API** (its folder, object, scope, webhook topic, or a mutation's requirement) for its own feature is `core`, a guide addressed to app developers included. It is `extension-point` where the API's statements say apps or partners do the work.
+- **A feature flag that isn't released** (`"released": false`) is `shows`. A released flag supports `core`, with its plan or store as its scope.
+- **A permission listed for staff and for partners:** cite the staff permission for `core`. A partner's permission shows an interface for apps.
+- **An admin route named for an application,** and gated only by the apps permission, is the app's page: `extension-point`.
+- **A placed inventory entry:** where no statement covers it, a cell may cite an entry Q1 placed in a concern, by its inventory id, such as `SH-I-0902`. `search` and `key` read them.
+- **A statement's title against its description:** its words as a whole decide. Where its description narrows its title, the description governs, the same way for every platform in a join.
+- **`parent`:** the platforms' own grouping puts the child under the parent, as a statement shows. Where their groupings differ, follow the one they share. Failing that, follow the anchor platforms' admin grouping, and put the other in the note.
+- **Strained:** a landed concern whose statements are cited in another tree of capabilities is `strained`, and its reading says where else it is cited.
+- **Names:** use every landed platform's terms, and avoid a word that means something else on one of them. A mapping part proposes a rename in its notes; the coordinator renames. Homonyms go in the capability's note.
+- **Another domain's statements:** a concern that names your domain under `also` may support a placement here. The merge flags a statement that supports `core` or `own-service` in two domains.
+- **Slot fillers:** a third party or a law a statement names as doing the capability or setting its terms. A flag's name isn't one.
+- **Gaps:** where a Q1 gap on a cell's concern changes what the cell can claim, its reading says so. For a capability its own platform names but never defines, the other platforms' `none-held` cells say the definition isn't stated.
+- **Maker evidence** is a statement naming the company. A note never counts.
 
 ## Rules
 

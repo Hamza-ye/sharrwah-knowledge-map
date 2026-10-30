@@ -8,8 +8,12 @@ Reads every part folder in studies/class-model/parts/ (or one domain's), with th
 - for each platform, its cell's `held` and the placements its evidence supports (`placed_as`), or `no cell`;
 - the count: how many platforms hold statements and place it in their core or as their own service;
 - the kind: `class` where the count is at least one; `slot` where every platform whose statements show it places it
-  only as an extension point or outside, with at least one such placement; otherwise `open`, for the dry run's review
-  to rule on (a count of 0 with some platform `not-stated`).
+  only as an extension point or outside; otherwise `open: third parties where stated`, where some platform places it
+  with third parties and another is `not-stated`, or `open: unplaced`, where every platform that shows it is
+  `not-stated` (`studies/class-model/review-dry-run-rulings.md`, convention 12). `open` is never folded into the others;
+- the scope a `class` holds under: `general` where some platform's own placement holds generally, else the scopes of
+  the statements that place it (a plan, a beta, an observed store).
+With fewer than five platforms mapped, a `class` stays a class, while a `slot` or an `open` is provisional.
 A platform with `none-held`, or no cell, is never counted as lacking the capability.
 Prints a summary per domain and kind, and writes the table (default: stdout as TSV with --out -).
 """
@@ -42,7 +46,7 @@ def main():
             cells[r["cap_id"], r["platform"]] = r
     out = []
     for cid in sorted(caps):
-        per, count, shows, third_only = {}, 0, 0, True
+        per, count, shows, third, scopes = {}, 0, 0, 0, []
         for p in PLATFORMS:
             c = cells.get((cid, p))
             if not c:
@@ -54,12 +58,21 @@ def main():
                 shows += 1
                 if placed & OWN:
                     count += 1
-                if not placed or not placed <= THIRD:
-                    third_only = False
-        kind = "class" if count >= 1 else ("slot" if shows and third_only else "open")
-        out.append([cid, caps[cid]["domain"], caps[cid]["area"], caps[cid]["capability"], caps[cid]["parent"], str(count), kind]
+                    scopes.append(c.get("own_scopes", "") or "general")
+                elif placed and placed <= THIRD:
+                    third += 1
+        if count >= 1:
+            kind = "class"
+        elif shows and third == shows:
+            kind = "slot"
+        elif third:
+            kind = "open: third parties where stated"
+        else:
+            kind = "open: unplaced"
+        scope = "" if kind != "class" else ("general" if "general" in scopes else " / ".join(scopes))
+        out.append([cid, caps[cid]["domain"], caps[cid]["area"], caps[cid]["capability"], caps[cid]["parent"], str(count), kind, scope]
                    + [per[p] for p in PLATFORMS])
-    head = ["cap_id", "domain", "area", "capability", "parent", "count", "kind"] + list(PLATFORMS)
+    head = ["cap_id", "domain", "area", "capability", "parent", "count", "kind", "class_scope"] + list(PLATFORMS)
     summary = {}
     for r in out:
         summary.setdefault(r[1], {}).setdefault(r[6], 0)

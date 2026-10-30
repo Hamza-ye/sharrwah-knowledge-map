@@ -46,7 +46,11 @@ Each source is graded by the Knowledge Map's source types, with what each can't 
 - **capture indexes (IDX):** a finding aid, never evidence;
 - **"further reference platform" (REF):** means a platform beyond the five, such as Adobe Commerce. It is read only where a decision needs one more comparison.
 
-**What the model must record for this.** Its brief already records the capabilities, cells, qualities and slot fillers. The data and events, and what decides each capability, come from the statements of each capability's concerns, so the merge derives them per capability: no part writes more. *To confirm with the dry run's review.*
+**What the model must record for this.** Its brief records the capabilities, cells, qualities and slot fillers. Each capability's data, events and deciding statements are derived by the merge in two grades (the dry run's review, S15; `studies/class-model/review-dry-run-rulings.md`, convention 10):
+- **exact:** the `boundary` and `decides` statements its cells cite;
+- **by landing:** the other statements of the concerns landed in it. This attribution is coarse: a coarse concern's statements go to its landing capability, though some belong to its children.
+
+Each area's design refines the coarse grade as it reads its capabilities in depth. No part writes more, so the extent's cost doesn't grow for it, and what is coarse is said plainly.
 
 ## 2. Who decides, and how each decision is made, recorded and checked
 

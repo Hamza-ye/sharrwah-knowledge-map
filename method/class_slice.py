@@ -66,6 +66,8 @@ def first_cite(cite_ids):
 
 
 def key(r):
+    if r.get("inv_id"):
+        return r["inv_id"]
     return f"{r['concern_id']}/{r['placement']}/{first_cite(r['cite_ids'])}"
 
 
@@ -101,6 +103,30 @@ def statements(platform):
     if platform not in _cache:
         _cache[platform] = rows(os.path.join(CMAP, "platforms", platform, "statements.tsv"))
     return _cache[platform]
+
+
+_inv = {}
+
+
+def inventory_items(platform):
+    """The inventory entries Q1 placed in a concern, as citable items: key = the inventory id, placement `inventory`.
+    A cell may cite one where no statement covers it (the dry run's rulings, C2)."""
+    if platform not in _inv:
+        out = []
+        for r in rows(os.path.join(CMAP, "platforms", platform, "inventory.tsv")):
+            cs = [x for x in re.split(r"[,;\s]+", r.get("concern_ids", "")) if x]
+            if not cs or r.get("out_of_scope_reason", "").strip():
+                continue
+            out.append({"inv_id": r["inv_id"], "concern_id": cs[0], "concern_ids": cs, "placement": "inventory",
+                        "structure": r["list"], "identifier": r["entry"], "statement": f"{r['list']}: {r['entry']}",
+                        "scope": "", "cite_ids": r["cite_id"], "note": ""})
+        _inv[platform] = out
+    return _inv[platform]
+
+
+def items(platform):
+    """Statements, then placed inventory entries: everything a cell may cite."""
+    return statements(platform) + inventory_items(platform)
 
 
 def concerns(platform):
@@ -186,7 +212,7 @@ def cmd_statements(a):
 def cmd_key(a):
     for k in a.keys:
         p = platform_of(k)
-        hit = [r for r in statements(p) if key(r) == k]
+        hit = [r for r in items(p) if key(r) == k]
         if not hit:
             print(f"{k}\tNOT FOUND")
         for r in hit:
@@ -196,14 +222,14 @@ def cmd_key(a):
 def cmd_search(a):
     terms = [fold(t) for t in a.terms.split(";") if t.strip()]
     n = 0
-    for r in statements(a.platform):
+    for r in items(a.platform):
         if a.placement and r["placement"] != a.placement:
             continue
         hay = fold(r["identifier"] + " " + r["statement"])
         if any(t in hay for t in terms):
             show_statement(r, a.width)
             n += 1
-    print(f"# {n} statements match")
+    print(f"# {n} statements and placed inventory entries match (an inventory entry's key is its id)")
 
 
 def cmd_matches(a):
@@ -256,7 +282,7 @@ def cmd_candidates(a):
         for r in rows(os.path.join(d, "cells.tsv")):
             cells.setdefault(r["cap_id"], {})[r["platform"]] = r
     dom = {r["concern_id"]: r for r in scope_rows()}
-    st = statements(a.platform)
+    st = items(a.platform)
     hay = [(r, fold(r["identifier"] + " " + r["statement"])) for r in st]
     for cid in sorted(caps):
         have = cells.get(cid, {})

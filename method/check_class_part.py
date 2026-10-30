@@ -15,7 +15,7 @@ import csv, os, re, sys
 
 csv.field_size_limit(10**9)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns
+from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns, items
 
 HEADS = {
     "capabilities.tsv": ["cap_id", "area", "capability", "parent", "note"],
@@ -48,7 +48,7 @@ def flag(m):
 def plat(token):
     """The platform of a concern id or statement key, or None."""
     for p, x in PREFIX.items():
-        if token.startswith(x + "-C-"):
+        if token.startswith(x + "-C-") or token.startswith(x + "-I-"):
             return p
     return None
 
@@ -88,7 +88,7 @@ def all_concerns():
 
 
 def stmt_index():
-    return {p: {key(r): r for r in statements(p)} for p in PLATFORMS}
+    return {p: {key(r): r for r in items(p)} for p in PLATFORMS}
 
 
 def statement_of(k, stm):
@@ -382,12 +382,14 @@ def check_part(d):
                 problem(f"{w}: none-held records the terms it searched, in each language")
             terms = {fold(t) for t in semi(r["searched"])}
             terms |= {fold(t) for p, ts in other_terms.get(k[0], {}).items() if p != k[1] for t in ts if len(t) > 3}
-            hits = [key(s) for s in statements(k[1]) if any(t in fold(s["identifier"] + " " + s["statement"]) for t in terms)]
+            hits = [key(s) for s in items(k[1]) if any(t in fold(s["identifier"] + " " + s["statement"]) for t in terms)]
             if hits:
                 flag(f"{w}: none-held, and {len(hits)} {k[1]} statements match its searched terms or the other platforms' terms for {k[0]}: {', '.join(hits[:8])}{' …' if len(hits) > 8 else ''}")
         if any(x["supports"] in PLACED for x, _ in e) and not r["reading"].strip():
             problem(f"{w}: a placement is a reading, and reading says why")
         core = [s for x, s in e if x["supports"] == "core"]
+        if core and all(re.search(r'"released":\s*false', s["statement"]) for s in core):
+            flag(f"{w}: core rests only on feature flags that aren't released: shows, by the dry run's rulings (C6)")
         if core and all(s["placement"] == "boundary" for s in core):
             flag(f"{w}: core rests only on boundary statements (API objects, scopes, topics): do they show {k[1]} itself doing it?")
         hay = [fold(s["identifier"] + " " + s["statement"]) for _, s in e]
@@ -401,7 +403,7 @@ def check_part(d):
         if r["cap_id"].startswith("moved:"):
             continue
         p = r["platform"]
-        if not any(s["concern_id"] == c for _, s in ev.get((r["cap_id"], p), [])):
+        if not any(c in s.get("concern_ids", [s["concern_id"]]) for _, s in ev.get((r["cap_id"], p), [])):
             if any(s["concern_id"] == c for s in statements(p)):
                 problem(f"landings.tsv line {r['_line']}: no evidence row of {r['cap_id']}'s {p} cell cites a statement of {c}")
 
@@ -425,6 +427,13 @@ def check_part(d):
         held = [x for x in ids(m["shopify"]) + ids(m["salla"]) + ids(m["woocommerce"]) if x in where_landed]
         if len(held) > 1 and any(x in landed for x in held) and len({root(where_landed[x]) for x in held}) > 1:
             flag(f"landings: {mid}'s concerns land in more than one tree: " + "; ".join(f"{x} in {where_landed[x]}" for x in held))
+    for c, r in landed.items():
+        if r["cap_id"].startswith("moved:") or r["cap_id"] not in caps:
+            continue
+        elsewhere = sorted({cap for k, caps_ in cited.items() if c in (statement_of(k, stm) or {}).get("concern_ids", [k.split("/")[0]])
+                            for cap in caps_ if root(cap) != root(r["cap_id"])})
+        if elsewhere and r["fit"] == "clean":
+            flag(f"landings.tsv line {r['_line']}: {c} is clean in {r['cap_id']}, and its statements are cited in another tree ({', '.join(elsewhere)}): strained, by the dry run's rulings (S1)")
     landed_roots = {root(c) for c in where_landed.values() if c in caps}
     for c in sorted(set(caps) - set(caps_prior)):
         if root(c) not in landed_roots:
@@ -503,8 +512,18 @@ def check_part(d):
                 problem(f"{w}: {k!r} is not a statement key")
         sh, sa, wc = ids(u["shopify"]), ids(u["salla"]), ids(u["woocommerce"])
         mine, theirs = (sh, sa) if kind == "anchor" else (wc, sh + sa)
-        km = [k for k in keys if k.split("/")[0] in mine]
-        kt = [k for k in keys if k.split("/")[0] in theirs]
+        def kc(k):
+            it = statement_of(k, stm)
+            return it.get("concern_ids", [it["concern_id"]]) if it else []
+        outside = [k for k in keys if statement_of(k, stm) and not set(kc(k)) & set(mine + theirs)]
+        if outside:
+            problem(f"{w}: keys {', '.join(outside)} aren't statements of {r['candidate_id']}'s concerns")
+        km = [k for k in keys if set(kc(k)) & set(mine)]
+        kt = [k for k in keys if set(kc(k)) & set(theirs)]
+        for side, ks in (("this part's", km), ("the other", kt)):
+            cs = {x for k in ks for x in kc(k) if x in (mine if side == "this part's" else theirs)}
+            if len(cs) > 1:
+                problem(f"{w}: keys of {len(cs)} concerns on {side} side ({', '.join(sorted(cs))}): one row per pair of concerns")
         cm = set().union(*[citing.get(k, set()) for k in km]) if km else set()
         ct = set().union(*[citing.get(k, set()) for k in kt]) if kt else set()
         ru = r["ruling"]
@@ -536,7 +555,7 @@ def check_part(d):
     def clean(v):
         return v.replace("\t", " ").replace("\n", " ")
     with open(os.path.join(d, "derived.tsv"), "w", encoding="utf-8", newline="") as f:
-        f.write("cap_id\tplatform\theld\tplaced_as\twhere\tscopes\tgaps\n")
+        f.write("cap_id\tplatform\theld\tplaced_as\twhere\tscopes\tgaps\town_scopes\n")
         for k in sorted(cells):
             r = cells[k]
             e = ev.get(k, [])
@@ -545,7 +564,10 @@ def check_part(d):
             scopes = sorted({f"{key(s)}={' '.join(s['scope'].split())}" for _, s in e if s["scope"].strip()})
             cs = sorted({s["concern_id"] for _, s in e})
             g = [x for c in cs for x in gaps.get(c, [])]
-            f.write("\t".join(clean(v) for v in [k[0], k[1], r["held"], ";".join(placed), " | ".join(where), " | ".join(scopes), ";".join(g)]) + "\n")
+            own = [s for x, s in e if x["supports"] in ("core", "own-service")]
+            own_scopes = "" if not own else ("general" if any(not s["scope"].strip() for s in own)
+                                               else " | ".join(sorted({" ".join(s["scope"].split()) for s in own})))
+            f.write("\t".join(clean(v) for v in [k[0], k[1], r["held"], ";".join(placed), " | ".join(where), " | ".join(scopes), ";".join(g), own_scopes]) + "\n")
     with open(os.path.join(d, "derived-qualities.tsv"), "w", encoding="utf-8", newline="") as f:
         f.write("cap_id\tplatform\tquality\tvalue\tkey\tscope\n")
         for r in part["qualities.tsv"]:
