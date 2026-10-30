@@ -315,3 +315,34 @@ That is more than twice section 15's 1.1 billion, which didn't hold the held pas
 | ZD-8 | permissions | 130 | 6.5 million | about 50,000 |
 
 Plans and settings cost more than assumed, permissions less. The 14,747 entries left come to about 710 million to 1.2 billion at the measured rates, about 1,374 million is spent, and the extent comes to **about 2.4 to 3.1 billion**. A list of permissions changes almost no cell beyond its pages' (ZD-8: none), while plans and settings change the most per batch.
+
+**Re-measured at about 23:45 UTC** (`method/count_tokens.py --since 2026-10-30T22:00`, over this session's transcript and its agents'). Since 22:00, 316.7 million tokens: the agents 231.7 million and the coordinator's own checks 85.0 million, over 202 requests that each read again a context of about 420,000 tokens. 1,901 entries were placed: Zid's last five batches, WooCommerce's last four, and Salla's SA-1 to SA-3 and SA-5 to SA-10 and SA-32. Zid, WooCommerce and BigCommerce are all placed. 12,846 entries are left: Salla's 5,232 and Shopify's 7,614.
+
+| Batch | Kind | Entries | Tokens | Per entry | Cells changed beyond earlier batches |
+| --- | --- | --- | --- | --- | --- |
+| SA-2 | the App Store's routes, the changelog, the plans page | 130 | 17.5 million | about 135,000 | 1 (`shows` only) |
+| SA-5 | the Special plan's page | 130 | 13.8 million | about 106,000 | 1 (`shows` only) |
+| SA-8 | dashboard routes | 104 | 15.5 million | about 149,000 | 1 (`shows` only) |
+| SA-9 | dashboard routes | 94 | 12.2 million | about 130,000 | none |
+| SA-10 | dashboard routes | 82 | 12.8 million | about 156,000 | none |
+| SA-32 | plan gates | 130 | 16.5 million | about 127,000 | none, and 3 new things |
+| SA-3 | the plans page | 130 | 8.5 million | about 65,000 | none |
+| SA-6 | the Special plan's page, in English | 112 | 5.0 million | about 45,000 | none |
+| ZD-13 | plan policies | 142 | 12.5 million | about 88,000 | none beyond earlier batches, and 2 new things |
+
+**What it changes.** Salla's lists cost 45,000 to 156,000 an entry, more than the kinds' assumed rates. After SA-1 they change almost no cell, since the concern map read most of what Salla's pages say. Their yield is their corrections and new things: three rulings, the plans pages' market differences, and five new things. The coordinator's checks were not projected forward before. At this context they cost about a third of the agents' tokens.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 23:45 UTC: 1,374 at 22:00 and 317 since | about 1,690 |
+| The held pass's other 12,846 entries, at the measured rates: Salla's 5,232 at 100,000 to 140,000 an entry; Shopify's 7,614 at 70,000 to 130,000 | 1,060 to 1,730 |
+| The coordinator's checks of those batches: 15 to 35 percent of the agents' tokens, lower once its context is compacted | 200 to 600 |
+| The second stage, the omission review, the final review and its corrections, the architecture plan's review (as above) | 340 to 490 |
+| **The extent, in all** | **about 3.3 to 4.5 billion** |
+
+**Re-planned to cost less:**
+- the coordinator checks with fewer requests and filtered output;
+- each route batch reads an app's bundle once, for all its routes and gates (from SA-11);
+- Shopify's batches are cut again by kind after the founder's pushes, and each kind is measured on its first batch.
+
+No higher plan is needed so far: no agent has been stopped by the usage limit.
