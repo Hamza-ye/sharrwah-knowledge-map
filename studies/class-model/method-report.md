@@ -229,4 +229,4 @@ That is a little under section 10's 890, and about three and a half times the bu
   - **The coordinator's first amendment ran while two S-02 drafters were reading the model.** Both stopped on the brief's warning and resumed from their drafts. From then on, amendments ran only between drafting rounds.
   - **The concern map understated counts wherever the evidence sat outside the pages Q1 placed:** runs, released code, and help articles. A final review that samples cells should expect more of the same.
   - **A commit message slipped:** `fe0503ed`'s says 38 conflicts, 30 amendments and 4 kept open for S-02; the counts above are the files'.
-- **Cost:** 8 drafting batches, about 147 million with the two inspections' 45.8. The coordinator's settlement ran in this session.
+- **Cost:** 129.5 million, measured by `method/count_tokens.py`: the brief's two inspections 45.8 and the eight drafting batches, with their resumptions, 83.7. The coordinator's settlement ran in this session.
