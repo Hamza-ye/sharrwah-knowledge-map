@@ -9,7 +9,7 @@
 
 ## Where to start, per repository
 
-**observed-sh, Shopify** (`/home/user/observed-sh`, at `19a5f6435`):
+**observed-sh, Shopify** (`/home/user/observed-sh`, at `9b047b08c`, which added `shopify/editions`):
 1. `README.md`, its "Starting points";
 2. `docs/READING.md`, for what each kind of file holds and how it reads;
 3. `docs/GAPS.md`, for what isn't held and why;

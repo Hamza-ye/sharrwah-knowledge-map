@@ -31,6 +31,7 @@ shopify	help-notes	yes	where:class=note note-plan|note note-staff-permissions|no
 shopify	help-section-children	no		where		the Help Center's table of contents: help pages' titles. Help titles are read in the second stage, by cell, on every platform, and sampled by the omission review: a help page isn't a place of its own (the coordinator, after inspection-H.md, S-6)
 shopify	inventory-adjustment-reasons	yes		decides		the inventory adjustment reasons
 shopify	merchant-changelog	yes	where:kind=link	where		what's new for merchants: each post, by its title and its page (held under changelog.shopify.com/posts)
+shopify	editions	yes	where:tag=h3	where		Shopify Editions, summer 2022 to fall 2026: each feature's heading, once, by the edition that announces it (the structure added at observed-sh 9b047b08c; the coverage measure's first new structure). The paragraph and help link under each heading are on its edition's page, the archive record its meta.json names
 shopify	mobile-app-navigation	yes		where		the mobile admin's navigation: its places
 shopify	mobile-app-settings-index	yes		where		the mobile admin's settings pages
 shopify	notification-templates	yes		where		the notifications the store sends: the items not cited

@@ -40,6 +40,7 @@ shopify	pages	admin.shopify.com/analytics	15	0	15
 shopify	pages	admin.shopify.com/balance	15	0	15	
 shopify	pages	admin.shopify.com/finance	15	0	15	
 shopify	pages	admin.shopify.com/taxes	14	0	14	
+shopify	pages	shopify.com/editions	13	0	13	
 shopify	pages	admin.shopify.com/themes	13	0	13	
 shopify	pages	admin.shopify.com/pages	13	0	13	
 shopify	pages	cdn.shopify.com/static	12	0	12	
@@ -73,7 +74,6 @@ shopify	pages	shopifystatus.com/api	6	0	6
 shopify	pages	themes.shopify.com/collections	6	0	6	
 shopify	pages	admin.shopify.com/extensibility	6	0	6	
 shopify	pages	admin.shopify.com/transfers	6	0	6	
-shopify	pages	shopify.com/editions	5	0	5	
 shopify	pages	shopify.com/international	5	0	5	
 shopify	pages	shopify.com/sitemap	5	0	5	
 shopify	pages	admin.shopify.com/bulk	5	0	5	
@@ -714,7 +714,7 @@ shopify	structure	admin-webhook-topics	1	1	0	items 99; items cited 99; added sin
 shopify	structure	notification-templates	1	1	0	items 227; items cited 68; added since read 0; read at b46731d0; seen 2026-10-07; status captured; The notifications the store sends, as the admin lists them: customer notifications in 13 groups after the Customer notification settings (Order processing, Loca
 shopify	structure	notification-template-previews	1	0	1	items 48; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Each notification's preview as the admin renders it with sample data: the template's name, its subject line and the email's text
 shopify	structure	dev-changelog	1	0	1	items 768; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Changelog feed with categories (795 items)
-shopify	structure	app-store-taxonomy	1	1	0	items 0; items cited 0; added since read 0; read at b46731d0; seen 2026-09-30; status captured; App store sitemaps: categories (161), built_in_features, category_features, extensions, collections
+shopify	structure	app-store-taxonomy	1	1	0	items 2795; items cited 161; added since read 0; read at b46731d0; seen 2026-09-30; status captured; App store sitemaps: categories (161), built_in_features, category_features, extensions, collections
 shopify	structure	theme-store	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Theme store sitemaps (165 child sitemaps)
 shopify	structure	theme-files	1	0	1	items 962; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Horizon as the store runs it: its 481 files (assets 125, blocks 95, config 2, layout 2, locales 57, sections 42, snippets 145, templates 13) with sizes and sha2
 shopify	structure	theme-check-rules	1	0	1	items 83; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; The checks the CLI's theme linter runs, as it lists them: 83 (45 errors, 38 warnings), each with its description, documentation link, ignored patterns and its o
@@ -743,7 +743,7 @@ shopify	structure	storefront-sitemap	1	0	1	items 0; items cited 0; added since r
 shopify	structure	storefront-agents-md	0	0	0	items 0; items cited 0; added since read 0; read at -; seen 2026-10-04; status not held; Agent instructions the store publishes for AI agents: the Shop skill, the Universal Commerce Protocol endpoints (/.well-known/ucp, /api/ucp/mcp), a typical agen
 shopify	structure	storefront-ucp-profile	1	1	0	items 0; items cited 0; added since read 0; read at b46731d0; seen 2026-10-04; status captured; UCP merchant profile: version, supported versions (each at its own URL), services (dev.ucp.shopping over mcp and embedded), capabilities (checkout, fulfillment,
 shopify	structure	storefront-ucp-mcp-tools	1	1	0	items 13; items cited 13; added since read 0; read at b46731d0; seen 2026-10-04; status captured; The store MCP endpoint's tools/list: 13 tools (get/create/update/complete/cancel checkout, get/create/update/cancel cart, get_order, search_catalog, lookup_cata
-shopify	structure	app-store-listing	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; An app listing as it states itself: sections as headed (highlights, Languages, Works with, Categories, Pricing plans, Reviews, Support, Launched, Data access wi
+shopify	structure	app-store-listing	1	0	1	items 113; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; An app listing as it states itself: sections as headed (highlights, Languages, Works with, Categories, Pricing plans, Reviews, Support, Launched, Data access wi
 shopify	structure	dev-dashboard-scopes	1	1	0	items 387; items cited 174; added since read 0; read at b46731d0; seen 2026-10-04; status captured; The access scopes as the Dev Dashboard lists them: an API type filter (All APIs, Admin API, Customer Account API, Storefront API, Shop API), then per resource i
 shopify	structure	play-publisher-apps	1	1	0	items 60; items cited 7; added since read 0; read at b46731d0; seen 2026-10-05; status captured; Google Play's developer link for Shopify Inc. (search pub:Shopify Inc.): Shopify's Android apps with category, rating, size and downloads (7 on 2026-10-05)
 shopify	structure	android-app-manifests	1	0	1	items 720; items cited 0; added since read 0; read at -; seen 2026-10-05; status captured; Each app as Play delivered it: manifest (activities, intent filters with schemes, hosts and paths, permissions, features), badging (labels per locale, SDK level
@@ -811,13 +811,14 @@ shopify	structure	plan-feature-set	1	0	1	items 0; items cited 0; added since rea
 shopify	structure	shop-request-details	1	1	0	items 4080; items cited 693; added since read 0; read at e49840729; seen 2026-09-21; status captured; What the admin states about each shop: its plan (name, displayName, shopifyPlus, trial, trialPeriod, partnerDevelopment; Advanced is 'unlimited'), resource limi
 shopify	structure	admin-permission-tree	1	1	0	items 142; items cited 20; added since read 0; read at e49840729; seen 2026-09-30; status captured; The staff permissions as the admin's code lists them: 21 categories in order (Home, Orders, Drafts, Products, Gift cards, Customers, Flow automations, Marketing
 shopify	structure	dev-access-lines	1	1	0	items 2884; items cited 424; added since read 0; read at e49840729; seen 2026-09-30; status captured; Every line where shopify.dev states access: 'Requires `read_products` access scope.', with its 'Also: The user must have … permission' and shop conditions on th
-shopify	structure	help-center	1	1	0	items 0; items cited 0; added since read 0; read at febbf6c98a1f2a464bb92bd97856b8ba070f3185; seen 2026-10-16; status captured; The Help Center as it organizes itself: the locale home and three areas (the routes manual.$, partners.$, affiliates.$); each page's place in its area's menu (p
+shopify	structure	help-center	1	1	0	items 5412; items cited 0; added since read 0; read at febbf6c98a1f2a464bb92bd97856b8ba070f3185; seen 2026-10-16; status captured; The Help Center as it organizes itself: the locale home and three areas (the routes manual.$, partners.$, affiliates.$); each page's place in its area's menu (p
 shopify	structure	help-pos-hardware-troubleshooter	1	0	1	items 209; items cited 0; added since read 0; read at -; seen 2026-10-17; status captured; The POS hardware troubleshooter as its route modules list it: 4 categories (Card readers, Barcode scanners, Receipt printers, Barcode printers), 23 devices, 122
 shopify	structure	help-locales	0	0	0	items 0; items cited 0; added since read 0; read at -; seen 2026-10-17; status backlogged; The Help Center's languages as its code lists them: 47 codes, each named in its own language (Arabic, Hebrew and Urdu with '(beta)'), sr served as sr-Latn; en a
+shopify	structure	editions	1	0	1	items 7233; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Shopify Editions: 'Everything new across Shopify. Every six months.' The index of editions and each edition's page: its title, its areas (e.g. Sidekick, Agentic
 shopify	runs	android	15	0	15	
 shopify	runs	android-apks	1	0	1	
 shopify	runs	cli	64	0	64	
-shopify	runs	fetch	78	0	78	
+shopify	runs	fetch	79	0	79	
 shopify	runs	import	1	1	0	
 shopify	runs	receiver	1	0	1	
 shopify	runs	session	265	7	258	
@@ -1430,8 +1431,8 @@ salla	structure	onboarding-status	1	0	1	items 0; items cited 0; added since read
 salla	structure	dashboard-nav-segments	1	0	1	items 157; items cited 0; added since read 0; read at -; seen 2026-10-08; status held; The navigation API's answer for each segment the dashboard asks, fetched until the answers name no segment not held: 157 segments (155 hold entries), with the m
 salla	structure	dashboard-app-routes	1	0	1	items 3692; items cited 0; added since read 0; read at -; seen 2026-10-08; status held; Every object literal with a `path` (React Router route objects and <Route> props) in the dashboard's 2,400 bundle and chunk files, in source order per file: 369
 salla	structure	dashboard-translations	1	1	0	items 140; items cited 0; added since read 11; read at 145f137,4ca2e896a729215f422a137a364e7e9488610ba3; seen 2026-10-08; status held (66 namespaces in each language, 132 of 140 answers, 64; The texts the dashboard's translation keys stand for, in Arabic and English: 69 namespaces the pages loaded (orders, products, settings, shipping, payments, mus
-salla	structure	com-plans	1	1	0	items 0; items cited 0; added since read 0; read at 145f137; seen 2026-10-08; status held (ar-sa, en-sa, ar-ae, en-ae); /en/plans answers 404; Salla's published plans: Monthly | Annual (16% off); Basic 'For new sellers & explorers' Free; Salla Plus 'For small businesses' SAR 990 / year (Saved SAR 198),
-salla	structure	com-specialplan	1	1	0	items 0; items cited 0; added since read 0; read at 145f137; seen 2026-10-08; status held (4); /en/specialplan answers 404; Salla's special plan page, as published per market and language
+salla	structure	com-plans	1	1	0	items 1604; items cited 44; added since read 0; read at 145f137; seen 2026-10-08; status held (ar-sa, en-sa, ar-ae, en-ae); /en/plans answers 404; Salla's published plans: Monthly | Annual (16% off); Basic 'For new sellers & explorers' Free; Salla Plus 'For small businesses' SAR 990 / year (Saved SAR 198),
+salla	structure	com-specialplan	1	1	0	items 1224; items cited 13; added since read 0; read at 145f137; seen 2026-10-08; status held (4); /en/specialplan answers 404; Salla's special plan page, as published per market and language
 salla	structure	portal-apps	1	0	1	items 16; items cited 0; added since read 0; read at -; seen 2026-10-08; status held; The portal's own registry of its micro-frontends: 16 apps, each with the addresses it serves as a regular expression: partners-mf (welcome, dashboard, account, 
 salla	structure	portal-importmap	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-08; status held; The portal's import map: 46 imports (45 on cdn.assets.salla.network)
 salla	structure	portal-app-routes	1	0	1	items 1445; items cited 0; added since read 0; read at -; seen 2026-10-08; status held; Every object literal with a `path` in the portal's 372 bundle and chunk files, in source order: 1445 objects in 14 apps (layout-mf, partners-mf, ui-partners-por
@@ -1538,12 +1539,12 @@ salla	structure	expert-service-categories	1	0	1	items 15; items cited 0; added s
 salla	structure	onboarding-missions	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (public-demo@en); What Salla asks a new store to do, as the dashboard loads it: a missions object
 salla	structure	theme-marketplace-summary	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (merchant@en); The theme marketplace as its front page states it: latest (8), partners (20), banners (3), preview_requests, popular, special, subscriptions, settings, cart, re
 salla	structure	help-articles	1	1	0	items 2938; items cited 0; added since read 0; read at 4ca2e896a729215f422a137a364e7e9488610ba3; seen 2026-10-12; status held (en 1,280 records and 1,280 texts, 5,411,832 B; ar 1,65; Every article the help centre publishes, as the page writes it: the record its payload carries (id, slug, title, date, last_update_at, featured, image, video, s
-salla	structure	com-policies	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (8 pages); What Salla states about itself and its terms, as text in document order: the usage agreement (اتفاقية الاستخدام, 623 lines, with the clauses that say where it d
-salla	structure	partners-legal	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (3 pages); What Salla states to a partner: the apps policy (158 lines), the themes policy (364) and the partners' privacy policy (219), as text in document order
+salla	structure	com-policies	1	0	1	items 2578; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (8 pages); What Salla states about itself and its terms, as text in document order: the usage agreement (اتفاقية الاستخدام, 623 lines, with the clauses that say where it d
+salla	structure	partners-legal	1	0	1	items 741; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (3 pages); What Salla states to a partner: the apps policy (158 lines), the themes policy (364) and the partners' privacy policy (219), as text in document order
 salla	structure	changelog-entries	1	0	1	items 20; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (real-merchant@ar); What Salla says it changed: 20 entries, each {id, category_id, category_name, type, title, brief, content (the entry's own HTML), release_date}
 salla	structure	changelog-categories	1	0	1	items 22; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (real-merchant@ar); The categories Salla files its changes under: 22, each {id, name}
-salla	structure	salla-complaints	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (home); What Salla's complaints surface states on its own page (نظام الشكاوى), 10 lines
-salla	structure	salla-academy	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (home@ar, courses@ar); What Salla's academy states on its home page (272 lines) and its courses page (152)
+salla	structure	salla-complaints	1	0	1	items 10; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (home); What Salla's complaints surface states on its own page (نظام الشكاوى), 10 lines
+salla	structure	salla-academy	1	0	1	items 424; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (home@ar, courses@ar); What Salla's academy states on its home page (272 lines) and its courses page (152)
 salla	structure	importer-sample-workbooks	1	0	1	items 24; items cited 0; added since read 0; read at -; seen 2026-10-12; status held (customers@demo-en, products@demo-en); The workbooks Salla hands a merchant to fill in: the customers template, whose columns are الإسم الأول، الإسم الأخير، البريد الإلكتروني، رقم الجوال، المدينة، ال
 salla	runs	cli	2	0	2	
 salla	runs	fetch	68	0	68	

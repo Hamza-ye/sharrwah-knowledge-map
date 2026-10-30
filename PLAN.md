@@ -79,6 +79,7 @@ It never takes the founder's decisions, and never treats the founder's words as 
 **Agents.** Each gets one bounded task from a written brief. Before a brief runs, a separate agent reads it for anything that presupposes the answer (inspection: Fagan 1976). After it runs, a separate agent reviews the result against its sources (independent verification: IEEE 1012).
 - **A review tries to refute** what it reviews, claim by claim, and reports counter-evidence and missing evidence, not agreement. The coordinator checks each finding against its evidence before applying it.
 - **A review also looks for what an entry never cites:** the concerns in the subject's reach, from the concern map, that the entry doesn't cite, and which of them bear on a decision.
+- **A brief quotes the rules it applies** from their source (B-extent.md, the coordinator's rulings, a founder's decision), rather than restating them in its own words. A rule it adds is marked as a ruling and listed for the founder's veto. Its inspection compares each rule of the brief with its source. The held pass's dry run showed why: 55% of its misses came from a brief that restated the model's rules loosely (`studies/class-model/held/review-H.md`).
 
 **The checkers** enforce the rules mechanically: `method/check_concern_map.py` on the concern map, `method/check_yemen_cases.py` on Stage 1, and `method/check_subject.py` on each subject. Between them:
 - quotes are verbatim;
@@ -365,6 +366,7 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
   - exists but isn't captured: a capture request, where the thing could change the model or a decision;
   - captured but not read: an agent reads it;
   - read but not placed, or placed wrongly: the review.
+- **Coverage is measured again at each gate,** and whenever a repository the model reads advances its commit. `method/held_vs_read.py` counts what is held against what the model reads, by structure, address and run, and the evidence map's counts are refreshed. A structure or capture that is new since the last measure joins the held pass's selection (`studies/class-model/held/selection.tsv`), and is read before the gate. So the model never rests on one snapshot of what is held. It once did: it was built from the concern map, finished on 12 October, and read nothing captured after it, until the founder's note of 30 October exposed the gap.
 - **Before a gap goes to anyone,** its route is checked against what is held. What a repository holds is read through its own reading guides and indexes first, then searched: its `README.md`, `docs/READING.md`, `docs/GAPS.md`, `docs/OPERATING.md`, `index/`, `structures/README.md` and `structures/REGISTER.tsv`, and in other-product-class each platform folder's `README.md`, `GAPS.md`, `index/` and `structures/REGISTER.tsv` (the founder, 30 October). Then:
   - if the page is held and readable, the gap is "page not read", for an agent;
   - if it is held but not readable, the reader is extended;
@@ -645,3 +647,8 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - coverage is judged at three levels, each with its remedy.
 
   The held pass's second stage and the omission review read it. Capture stays the exception: a request only where a gap could change the model or a decision. The coordinator names it, and the founder's local agent runs it, if the founder hands it on (the founder: "i am not trying to make your role or turn this into a capturing process"). A first brief for an agent to write a document per surface (`briefs/E-map.md`) was withdrawn before it ran, since the repositories' own guides already describe their evidence. **What this change removes or weakens:** nothing.
+- **30 October 2026, the coverage measured at each gate, and briefs that quote their rules** (the founder: "If my notes expose a failure, a genuine findings that the method can't address it, correct its root cause under the existing method"). Two fixes to the method within this plan, listed at the next report:
+  - **section 6, Evidence:** coverage is measured again at each gate and whenever a repository the model reads advances, and what is new joins the held pass. The root cause of the gap the founder's notes exposed was that the model rested on one snapshot of what was held, the concern map of 12 October, while the repositories kept growing;
+  - **section 3, Agents:** a brief quotes the rules it applies, marks a rule it adds as a ruling, and its inspection compares each rule with its source. This was the root cause of most of the held pass's dry-run misses.
+
+  **What this change removes or weakens:** nothing. The measure is a script and costs no agent tokens; the held pass grows by what is new.
