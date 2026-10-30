@@ -193,3 +193,98 @@ CM-STF-005	salla	core	SA-C-013/decides/SA-S-3355	flag support-access, released a
 CM-STF-005	salla	shows	SA-C-013/decides/SA-S-2621	support_access_requests, طلبات الدخول للمساعدة, in the permissions a partner can request (S7)
 CM-STF-005	salla	shows	SA-C-013/boundary/SA-S-5131	a service partner asks for store access from its service's page in the partner portal
 CM-STF-005	salla	shows	SA-C-013/responsible/SA-S-5008	the partner may not use the permissions the merchant granted beyond the agreed work
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-1487	Shopify's own settings page Plan (billing_plan)
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-1591	the admin's own section Plus
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5093	the admin's own route plus
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5091	route access_account/plus for an inactive account
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5107	the admin's own subscribe route
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5070	subscribe:plans route, gated by billing permissions
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5082	the plan route's eligibility: billing permissions and organization billing
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5071	reactivate:pick-plan route, gated by BILLING_SUBSCRIPTIONS
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5092	plus_inactive_account route's eligibility
+CM-PLN-001	shopify	core	SH-C-015/boundary/SH-S-7453	ShopPlan in Shopify's own Admin API: the plan tier, Basic, Advanced or Plus
+CM-PLN-001	shopify	core	SH-C-015/boundary/SH-S-7454	Shop.plan field of type ShopPlan
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-7001	plan table row Pay monthly: a price per plan
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-7002	plan table row Pay yearly: a price per plan
+CM-PLN-001	shopify	shows	SH-C-015/decides/SH-S-2076	plan.name basic on a trial store
+CM-PLN-001	shopify	shows	SH-C-015/responsible/SH-S-0234	the merchant pays the Subscription Fees of its subscription
+CM-PLN-001	salla	core	SA-C-004/where/SA-S-1679	Salla's own settings link Store plan (/plan)
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3528	plans flag naming basic, plus, pro and special, with the store's active one
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3395	enable-special-plan-purchase, not released
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3452	plan-free-trial, not released
+CM-PLN-001	salla	core	SA-C-004/reason/SA-S-5003	Salla's help: cancelling the plan is offered only where it allows a full refund
+CM-PLN-001	salla	core	SA-C-004/boundary/SA-S-5002	Salla's help: a plan refund goes back to the store balance
+CM-PLN-001	salla	shows	SA-C-004/responsible/SA-S-5001	the campaign terms for Salla's plans name Salla's company
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7148	page Switch to 3-year term under Billing (plus/renew)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7149	page Renew on a 3-year term (plus/renew/review)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7150	page Shopify Plus Terms (plus/terms)
+CM-PLN-002	shopify	core	SH-C-201/decides/SH-S-5084	self-renewals page gated by BILLING_SUBSCRIPTIONS and an organization flag
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7176	Shopify's own operation PlusContractDetails (contractmanagement)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7177	Shopify's own operation RenewalsQuery (contractmanagement)
+CM-PLN-002	shopify	core	SH-C-015/where/SH-S-5090	route subscription/pick_period/:plan/:period
+CM-PLN-002	shopify	core	SH-C-015/where/SH-S-5086	route pick_period for an inactive account
+CM-PLN-002	shopify	core	SH-C-015/decides/SH-S-7001	plan table row Pay monthly
+CM-PLN-002	shopify	core	SH-C-015/decides/SH-S-7002	plan table row Pay yearly
+CM-PLN-002	salla	core	SA-C-004/decides/SA-S-2085	plan line of سلة بلس: freezing the annual subscription up to 30 days
+CM-PLN-002	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help: the store balance renews the store plan automatically
+CM-PLN-002	salla	shows	SA-C-004/decides/SA-S-3438	renew-price-by-slug, not released
+CM-PLN-003	shopify	core	SH-C-018/where/SH-S-6314	the fees on Shopify's own billing page
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0273	transaction fees vary with the Shopify plan
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-7030	plan table row Third-party transaction fees: 2%, 1%, 0.6%, 0.2%
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0274	no third-party transaction fees on orders processed with Shopify Payments
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0276	no transaction fees on POS orders or manual payment methods
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0275	store credit and gift cards excluded on stores created from May 12, 2025
+CM-PLN-003	shopify	shows	SH-C-018/responsible/SH-S-0032	the merchant pays the fees on the value of sales through other providers
+CM-PLN-003	shopify	shows	SH-C-018/reason/SH-S-0272	the reason Shopify gives for the fees
+CM-PLN-003	salla	shows	SA-C-004/decides/SA-S-2198	plan line of سلة سبيشل: no platform commission on your sales
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-6312	Shopify's own settings page Billing
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-1485	organization settings page Billing
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-1549	the admin's own section Billing
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5087	billing:list, gated by billing permissions
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5088	issued invoice list
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5089	list of the next charges
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5074	billing history of an inactive account
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5072	invoice list of an inactive account
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5073	credit note export
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5076	billing profile of an inactive account, behind a beta
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-7170	staff permission VIEW_BILLING_DETAILS
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-0268	billing currencies set by the billing address's country
+CM-PLN-004	shopify	shows	SH-C-016/reason/SH-S-0266	why most bills are in US dollars
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0033	fees in US dollars unless indicated
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0034	Subscription Fees billed in advance every 30 days
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0075	30 days' notice before fees change
+CM-PLN-004	shopify	shows	SH-C-016/responsible/SH-S-0008	Shopify Inc. may act as billing agent for the contracting party
+CM-PLN-004	salla	core	SA-C-005/where/SA-S-1682	Salla's own settings link Balance & billing (/billing)
+CM-PLN-004	salla	core	SA-C-005/where/SA-S-3538	Salla's own dashboard app @salla.sa/ui-merchant-billing at /billing
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2064	plan line of سلة بلس: billing settings (إعدادات الفوترة)
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2393	staff permission wallet_and_invoices_management
+CM-PLN-004	salla	shows	SA-C-005/decides/SA-S-2610	wallet_and_invoices_management in the permissions a partner can request
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2391	staff permission store_setting_purchase_from_salla_store
+CM-PLN-004	salla	shows	SA-C-005/decides/SA-S-2608	purchase from Salla store in the permissions a partner can request
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-3441	released flag billing-native
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-3459	released flag payg-usage-billing, not enabled on the answering store
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-7171	staff permission Edit billing payment methods and pay invoices
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-5077	route deleting a billing payment method
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-5075	pay-bills route of an inactive account
+CM-PLN-005	shopify	core	SH-C-016/where/SH-S-5062	route completing an invoice's payment authentication
+CM-PLN-005	shopify	core	SH-C-016/where/SH-S-5064	route authenticating a bill's payment
+CM-PLN-005	shopify	shows	SH-C-016/decides/SH-S-0035	fees paid with an Authorized Payment Method; suspension after 28 days unpaid
+CM-PLN-005	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help: the store balance pays the plan's renewal, Salla store purchases and waybills
+CM-PLN-005	salla	core	SA-C-004/decides/SA-S-2083	plan line of سلة بلس: managing the subscription in Salla's iOS app with iTunes balance
+CM-PLN-006	salla	core	SA-C-005/where/SA-S-1876	Salla's own navigation link Wallet (/payments/wallet)
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-2062	plan line of سلة بلس: adding and withdrawing store balance
+CM-PLN-006	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help defines the store balance and what it pays for
+CM-PLN-006	salla	shows	SA-C-005/boundary/SA-S-0091	the store balance and the e-payments balance are separate
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0096	withdrawn balance transferred to the bank every Tuesday
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0092	withdrawing store balance requires verification
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0093	withdrawal fails while a complaint is open on the store
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0097	transfer delayed while a complaint is open on the store
+CM-PLN-006	salla	core	SA-C-004/boundary/SA-S-5002	a plan refund goes back to the store balance, for use within the platform
+CM-PLN-007	shopify	core	SH-C-017/where/SH-S-6313	taxes on Shopify's own billing page
+CM-PLN-007	shopify	core	SH-C-017/where/SH-S-0279	Tax registration section: entering a Tax ID number
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0036	Shopify's taxes calculated by the billing address
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0277	VAT on Shopify bills: 15% in Saudi Arabia, 5% in the UAE
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0278	a VAT number may exempt the Shopify bill from VAT in Saudi Arabia
+CM-PLN-007	shopify	shows	SH-C-017/responsible/SH-S-0235	the merchant is responsible for taxes on its subscription
+CM-PLN-007	salla	shows	SA-C-113/decides/SA-S-0105	VAT (15%) applied to the total of Salla's fees, in the e-payments summary
+CM-PLN-007	shopify	shows	SH-C-016/responsible/SH-S-0008	Shopify Inc. may remit taxes in some jurisdictions as billing agent

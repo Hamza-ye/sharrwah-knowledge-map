@@ -4,3 +4,8 @@ CM-ACC-005	shopify	plans that include it	Selling from multiple entities with Sho
 CM-STF-001	shopify	additional staff accounts per plan	Additional staff accounts: Not included, 5, 15, Unlimited	SH-C-009/decides/SH-S-7011
 CM-STF-001	salla	more users on سلة بلس	زيادة عدد المستخدمين *برسوم إضافية	SA-C-009/decides/SA-S-2078
 CM-STF-003	shopify	plans that include it	Custom user groups: Not included, Not included, Not included, Included	SH-C-010/decides/SH-S-7077
+CM-PLN-002	salla	longest freeze of the annual subscription	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا	SA-C-004/decides/SA-S-2085
+CM-PLN-004	shopify	notice before fees change	We will provide you with 30 days advanced notice prior to any changes in Fees	SH-C-016/decides/SH-S-0075
+CM-PLN-005	shopify	days before suspension for unpaid fees	If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.	SH-C-016/decides/SH-S-0035
+CM-PLN-006	salla	day withdrawn balance reaches the bank	يتم تحويل الرصيد المسحوب إلى حسابك البنكي كل يوم ثلاثاء.	SA-C-005/decides/SA-S-0096
+CM-PLN-001	salla	features per plan	"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}	SA-C-004/decides/SA-S-3528

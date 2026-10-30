@@ -259,3 +259,145 @@ Left, with the batch that lands the other side:
 - **CM-ACC-001's and CM-ACC-002's Salla cells** name batch 2's rows at the end of their readings.
 - **Batch 1's note that SA-C-170 has no statements is wrong:** it has two, its usage agreement (SA-S-0143) and SA-S-2208, which batch 2 cites.
 
+
+## Batch 3: PLN, Plans, entitlements and platform billing
+
+Concerns: SH-C-015, SH-C-016, SH-C-017, SH-C-018, SH-C-201, SA-C-004, SA-C-005. Seven capabilities, CM-PLN-001 to
+CM-PLN-007, in two trees: the plan (001, with 002 and 003) and the platform's billing (004, with 005, 006 and 007).
+Searched every domain first (`caps` with plan, باقة, subscription, اشتراك; billing, فوترة, invoice, فاتورة; balance,
+رصيد, wallet, محفظة; transaction fee, commission, عمولة, رسوم; tax, ضريبة, VAT; renew, تجديد, term, contract, عقد;
+entitlement, feature, beta, preview, مزايا; iOS, iTunes, آيتونز, mobile app). No domain holds the platform's own plans
+or billing: the nearest are F's app charges billed through the platform (CM-APP-003), partner billing (CM-PTN-004)
+and the plans' referral programme (CM-PTN-008), D's ads wallet (CM-MKT-020) and customer wallet (CM-LOY-001), and G's
+feature settings (CM-EVO-001) and mobile app for managing the store (CM-SRF-001), each a different thing.
+
+### How I cut, and why
+
+- **Plans (CM-PLN-001)** by Q1's M-007: Shopify's Plan, Plus and subscribe routes and its ShopPlan object; Salla's
+  Store plan and its plans flag.
+- **Entitlements are not a capability of their own.** I first wrote one (what each plan includes) and removed it
+  before the check, renumbering this batch's own capabilities. Reasons: every plan line and plan-scoped flag names a
+  capability of its own, in its own domain, so the cell would either cite other capabilities' plan lines (making
+  their concerns strained by S1: SH-C-003's SH-S-7073 and SA-C-009's SA-S-3084, which the first check showed) or rest
+  on nothing but the plans flag; and neither platform gives entitlements a place apart from the plan pages. What a
+  plan includes is therefore read in CM-PLN-001, with Salla's features_count per plan (SA-S-3528) as a quality there.
+  Shopify's route eligibility carries "entitlements" keys (such as "entitlements":["products"], SH-C-020's SH-S-5016),
+  but no held statement says they come from the plan; not cited. If the coordinator wants an entitlement capability,
+  it would need a statement defining it.
+- **Term and renewal (CM-PLN-002)** under the plan: Shopify gives the Plus contract and its renewals a place of their
+  own (plus/renew, plus/terms, contractmanagement: SH-C-201) and the plan's period a route (pick_period). It lands
+  SH-C-201 as single. Salla's cell cites the annual subscription's freeze (SA-S-2085) and the plan's automatic renewal
+  from the store balance (SA-S-0089).
+- **Platform fee on sales (CM-PLN-003)** under the plan: Shopify's third-party transaction fees, and Salla's سلة سبيشل
+  plan line "no platform commission on your sales". Both platforms show it as a plan line, the grouping they share;
+  Shopify also shows it on the bill (settings/billing, the Transaction fees charge category). Payment processing fees
+  are C's.
+- **Platform billing (CM-PLN-004)** by M-008, with three children: **paying the bills (CM-PLN-005)**, which Shopify
+  gives a permission and routes of its own (Edit billing payment methods and pay invoices; delete-payment-method;
+  pay-bills; payment authentication); **the prepaid store balance (CM-PLN-006)**, which Salla gives a navigation link
+  (Wallet), a plan line and help pages, and groups with billing (the plan-feature heading محفظة المتجر والفوترة,
+  SA-I-1061, and Settings > Balance & billing); and **taxes on the platform's own charges (CM-PLN-007)**, which
+  Shopify gives the billing page's Tax registration section. M-008's note already says Salla's concern also holds the
+  balance; it is a difference of grain, landed in the parent.
+- **Purchases from Salla's store** (store_setting_purchase_from_salla_store, الشراء من متجر سلة) and pay-as-you-go
+  usage billing (payg-usage-billing) are read in CM-PLN-004: each is a permission or a flag, not a place of its own.
+- **SH-C-017 lands as single,** not by M-009: M-009's other concern is WooCommerce's WC-C-057, which no part has
+  landed, and batch 1 found that the checker refuses a match until another of its concerns has. WooCommerce's part can
+  land WC-C-057 in CM-PLN-007 by M-009.
+
+### The coordinator's lead: SA-S-2083
+
+Salla's سلة بلس plan line "managing the subscription in Salla's iOS app with iTunes balance" is cited in CM-PLN-005,
+paying the platform's bills, as core (a plan line that includes it), with Apple's iTunes balance as the slot filler
+(reading: the means of payment there is Apple's; the statement names iTunes, not Apple, as a company, and no maker
+statement is needed since nobody makes the capability for Salla). It makes SA-C-004 strained: SA-C-004 lands in
+CM-PLN-001 and this statement is cited in the billing tree. The iOS app itself, as Salla's merchant app, is G's
+(CM-SRF-001 holds WooCommerce's mobile app for managing the store); if G's back-fill cites SA-S-2083 for Salla's
+merchant app as core, the merge will flag it in two domains, and one of the two should be shows.
+
+### Joins on role
+
+- **CM-PLN-003:** Shopify's third-party transaction fees, "fees relating to the value of sales made through your
+  Store when using all payment providers other than Shopify Payments" (SH-S-0032), varying by plan (SH-S-0273,
+  SH-S-7030), against Salla's "بدون عمولة منصة على مبيعاتك" (SA-S-2198). Both are a fee the platform takes on the
+  merchant's sales, set by plan. The difference: Shopify's is conditional on the payment provider; Salla's statement
+  only says one plan doesn't carry it, so its cell is shows, not-stated. SH-C-018 lands by role.
+- **CM-PLN-005:** what the platform's bills are paid from. Shopify charges a payment method on file (SH-S-7171,
+  SH-S-0035); Salla draws on the store balance (SA-S-0089) and, in the iOS app, iTunes balance (SA-S-2083).
+
+### Homonyms kept apart
+
+- **Balance:** Salla's store balance (رصيد المتجر, SA-C-005), prepaid and spent on Salla's services, against Shopify
+  Balance (SH-C-088, domain C), a money account receiving the merchant's sales (SH-S-0347, SH-S-0460). CM-PLN-006's
+  Shopify cell is none-held, which the checker flags (86 statements match "balance"): they are Shopify Balance, Shop
+  Pay Wallet and PayPal Wallet, none a balance that pays Shopify.
+- **Wallet:** Salla's Wallet page (/payments/wallet, SA-S-1876) holds both the store balance and the e-payments
+  balance (SA-S-0089's heading, SA-S-0091); only the store balance is here. Salla's customer wallet (محفظة العميل) is
+  D's CM-LOY-001.
+- **Commission (عمولة):** Salla's platform commission on sales (SA-S-2198) against affiliate commissions (SA-C-072,
+  SA-C-173, D's), app and partner commissions (SA-C-194, SA-C-195, SA-C-208, F's) and Salla's commission on shipping
+  settlements (SA-C-145). Only the first is cited here.
+
+### Strained fits
+
+- **SA-C-004** (in CM-PLN-001): SA-S-2083 is cited in CM-PLN-005 and SA-S-5002 (a plan refund goes back to the store
+  balance) in CM-PLN-006, both in the billing tree.
+- **SA-C-005** (in CM-PLN-004): SA-S-0089 (the store balance renews the plan automatically) is cited in CM-PLN-002,
+  in the plan tree. The checker flags SA-S-0089 and SA-S-5002 as cited in two trees; the strained fits answer them.
+  The two trees meet in Salla's own words: its balance pays its plan.
+
+### Concerns of other domains read under `also`
+
+Read and not cited: SH-C-019 (F, app charges on the Shopify bill: CM-APP-003's), SH-C-033 (E, domain fees),
+SA-C-195 (F, app billing and partner payouts). SH-C-016's charge categories (SH-I-1322 to SH-I-1358) list fees for
+apps, domains, themes, shipping, Shopify Fulfillment Network, POS and others; each category is evidence for the
+service it bills for, in that service's domain, and none is cited here.
+
+**SA-C-113** (domain C, not naming A) is cited once: its tooltip giving VAT at 15% on the total of the fees
+(SA-S-0105), in CM-PLN-007's Salla cell, as shows only, so that it supports no placement here and stays C's for its
+fees. The checker flags it. It is the only held statement of tax on Salla's own charges; none states tax on Salla's
+plan or bills.
+
+### Rulings, and the pairs left for later batches
+
+Ruled here:
+- **U-077** (SH-C-018 against SA-C-004): joined:CM-PLN-003.
+- **U-029** (SH-C-017 against SA-C-113): joined:CM-PLN-007. **For the coordinator:** the brief says a pair whose
+  other concern is in another domain that doesn't name A is apart, with the basis "scope.tsv gives SA-C-113 domain C";
+  the checker, following "a ruling follows the cells", refuses apart while CM-PLN-007 cites both sides. I first wrote
+  apart and the checker printed a problem. I kept the citation, since the brief also says never to leave a statement
+  uncited to keep a ruling apart, and wrote joined, with the domain in the basis. If the coordinator prefers apart, the
+  Salla cell would become none-held and SA-S-0105 would go uncited here.
+
+Left for later batches:
+- **The ONB batch** takes trials and the inactive and pending-termination states. This batch cites SH-C-015's and
+  SH-C-016's inactive-account routes (access_account/plus, reactivate:pick-plan, inactive-account pick_period,
+  invoices, billing history, pay-bills: SH-S-5091, SH-S-5071, SH-S-5086, SH-S-5072 to SH-S-5077) for the plan and
+  billing they reach, and Salla's unreleased plan-free-trial flag (SA-S-3452) in CM-PLN-001 as shows. If ONB cites
+  them for an account-state capability, the checker will flag them in two trees; the routes' own names put them in
+  the plan and billing (reading).
+- No unclear candidate of this batch's concerns waits on ONB or TRU.
+
+### What the checker flagged
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-anchor --concerns SH-C-015,SH-C-016,SH-C-017,SH-C-018,SH-C-201,SA-C-004,SA-C-005 --areas PLN`:
+0 problems, 6 flags.
+- *SA-S-0105 of SA-C-113, domain C without A:* answered above.
+- *CM-PLN-006 shopify none-held, 86 statements match:* the homonym Balance, answered above.
+- *SA-S-5002 and SA-S-0089 in two trees:* the strained fits, answered above.
+- *CM-STF-003 salla none-held* and *SH-S-0238 in CM-ACC-001 and CM-ACC-003:* batches 1 and 2's, answered there.
+
+No problem found on earlier batches' rows.
+
+### Problems and gaps
+
+- **Salla's commission on sales:** only the Special plan's line saying it carries none is held; no statement gives the
+  commission on other plans or its rate.
+- **Tax on Salla's plan or bills** isn't held; only VAT on the e-payments fees (SA-C-113).
+- **Shopify Plus's agreement** (term, renewal clauses) is "observation needed" (SH-C-201's responsible, boundary and
+  reason); the 3-year term is only a page title.
+- **Salla's billing** has no who-answers or reason statement (SA-C-005's responsible and reason are "page not read"),
+  and no statement names a card or other payment method for Salla's bills.
+- **Prices** (Shopify's Pay monthly and Pay yearly rows) and fee rates (Third-party transaction fees: 2%, 1%, 0.6%,
+  0.2%) are cited as evidence, not as qualities: the brief's qualities are limits, certifications, uptimes and data
+  locations.
