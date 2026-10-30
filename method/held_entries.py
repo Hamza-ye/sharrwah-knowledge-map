@@ -813,8 +813,8 @@ def cmd_check(a):
             if not ss or any(x not in SUPPORTS for x in ss) or len(ss) > 2 or len(set(ss)) != len(ss):
                 problems.append(f"{w}: supports is one value of {', '.join(SUPPORTS)}, or two different ones, `;`-separated")
             for x in ok:
-                if x in seen and any(c == r["cap_id"] or pl != "capability" for c, pl in seen[x]):
-                    problems.append(f"{w}: {x} placed again on the same capability, or placed otherwise too")
+                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl in seen[x]):
+                    problems.append(f"{w}: {x} placed again on the same capability, or placed out too")
         elif r["placement"] == "new":
             m = re.match(r"^new:(\S.*\S|\S)$", r["cap_id"])
             if not m:
@@ -827,8 +827,8 @@ def cmd_check(a):
             if not ss or any(x not in SUPPORTS for x in ss):
                 problems.append(f"{w}: a new thing says what the entry supports")
             for x in ok:
-                if x in seen:
-                    problems.append(f"{w}: {x} placed again")
+                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl in seen[x]):
+                    problems.append(f"{w}: {x} placed again as the same new thing, or placed out too")
         elif r["placement"] == "out":
             if any(r[k].strip() for k in ("cap_id", "supports", "scope", "terms", "filler", "quality")):
                 problems.append(f"{w}: out names no capability, supports nothing, and has no scope, terms, filler or quality")

@@ -105,3 +105,26 @@ All four are sections of the control panel's own Settings list (`bigcommerce/str
 
   Those substrings then match unrelated capabilities, such as CM-PAY-019, CM-OPS-001 and CM-API-005 on every entry naming BigCommerce. Most leads in this batch were noise for that reason. None was taken without reading the cell.
 - **Several values can't be separated within one quality piece.** `;` separates fillers and qualities, so a value by plan is written in one piece as "<what>: <value> (<plan>), ...".
+
+## Corrections after the review (the coordinator, 30 October 2026)
+
+The review (`held/review-H.md`, parts R1 to R3) and the coordinator's rulings (`held/review-H-rulings.md`) corrected this batch. 156 verdicts were applied as they stand, with the review's own values; the coordinator's hand pass did the rest. Line numbers below are the review's, at `ff50bbee`.
+- **`own-service`:** the 16 Feedonomics card lines (2 to 9, 14 to 21). The terms page names Feedonomics Holdings, LLC among Commerce's affiliates and subsidiaries (M-1). Feedonomics is no filler; each card's channel is.
+- **`core`:** the 44 gateway rows of tables 1 and 3, the platform's own integrations (M-4), and Amazon Pay's wallet line, set up in Settings › Payments.
+- **`shows`:** BigCommerce Payments' row: a product named with the platform's brand names no maker.
+- **`extension-point`:** the Tax section's recommended services, and the accounting software section (M-7).
+- **Moved:** MCP to CM-AIA-005, whose cell cites the same place; the sign-up form's address fields to CM-CUS-008; File access (WebDAV) to CM-CNT-001, not new.
+- **Lines added:**
+  - recurring payments on CM-SEL-001, for the 15 gateway rows that mark them;
+  - CM-PAY-016 for Bank deposit and Cash on delivery, under its offline methods;
+  - CM-B2B-001 for Check's footnote;
+  - the loyalty program, order settings and coupon limits that three descriptions name;
+  - Apple Pay and Amazon Pay as CM-PAY-012's fillers.
+- **New things with no place of their own:** `new:Extensions` on the five contracting rows (M-2: an Extension is a service a third party develops and Commerce provides, not an app its company makes), and `new:Professional Services` on the same rows.
+- **Marks:** every ✔ and `true` mark moved from `quality` to `reading`. Custom SSL's and Shipper HQ's plans are their scope.
+- **The misquote** 'outside the Embedded Payment Provider list' is corrected to the article's words on 22 lines.
+- **The plans' prices** (BC-E-f167af9a, added to the batch by the `meta:` rule): CM-PLN-001, with each plan's price as a quality, and CM-PLN-002, the billing period, which held nothing.
+- **Kept as placed, can't tell,** with what would settle each in the review's rows:
+  - whether Google's "AI-powered experiences" are CM-AIA-005's (R1);
+  - which PayPal the PayPal row is (R2);
+  - which capability "regional settings" is, and whether the security tab is sign-in security (R3).

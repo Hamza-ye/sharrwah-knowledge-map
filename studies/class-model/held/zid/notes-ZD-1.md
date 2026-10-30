@@ -107,3 +107,18 @@ The product feed's named platforms (Snapchat, TikTok, Google, Meta, X, OpenAI; r
 - **No rule for a container entry itself**, nor for a route's release badge (`new`, `beta`). See the entries above.
 - **Store-flag conditions and `scope`.** Several pages are listed only when a store flag is set. Since the entry states no plan or store, I left `scope` empty and put the condition in the reading. A rule would make the batches consistent.
 - **The script:** the checker printed no problem besides the missing notes, which this file supplies.
+
+## Corrections after the review (the coordinator, 30 October 2026)
+
+The review (`held/review-H.md`, parts R4, R5a and R5b) and the coordinator's rulings (`held/review-H-rulings.md`) corrected this batch. 46 verdicts were applied as they stand; the coordinator's hand pass did the rest. Line numbers below are the review's, at `33946dbc`.
+- **Zid Ads and Zid Voice (lines 13, 14):** `shows` on what each app does, since no maker and no gate are stated, and `core` on CM-APP-007 as the dashboard's page for an app (M-10).
+- **Scope:** every store condition the source lists a page under is the line's scope, in the source's identifiers (M-11): `not an NGO store` (the charity store), `showNewZones`, `hasNewGifting`, `not hasNewGifting`, `mustUseMarketsPricing`, `customerWallets`, `hasPos or subscription.is_trial`, and `suspended store`.
+- **Lines added:** the second capability a page names, on CM-NTF-002, CM-ACC-004 (twice), CM-ACC-007, CM-STF-002, CM-MKT-022, CM-MKT-002, CM-NTF-001 and CM-SHP-009; CM-INV-001 for the Inventory container; CM-PAY-012 for Mokafaa and Qitaf, whose points pay.
+- **Moved:** reset-password to CM-ACC-001.
+- **Readings corrected:** All analytics' permission (five named views); Zid Insights' missing maker statement; the POS reports and cashiers pages; where the registration's verification words are.
+- **Not taken:** "Saudi Arabia" as Mokafaa's scope, read from a run page (M-12). R5b's CM-SHP-002 line for line 104 already existed at line 103.
+- **Customer Referrals** stays new. Its parent is CM-LOY-004, since Zid's marketing page files it under loyalty and rewards (R5a), not CM-MKT-005.
+- **Kept as placed, can't tell,** with what would settle each in the review's rows:
+  - the online store's settings page and zones, shown only under `showNewZones`;
+  - the platform-switch and where-do-you-sell routes;
+  - who signs in by the impersonate token.
