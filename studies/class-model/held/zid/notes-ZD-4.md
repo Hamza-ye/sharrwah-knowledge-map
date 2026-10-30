@@ -108,3 +108,5 @@ None in this batch. Every route's item holds its `module` and `imports`, which t
   - WhatsApp's opt-out page sets 'Unsubscribe keywords' and an 'Unsubscribe confirmation message', 'You have been unsubscribed and will no longer receive automated messages.': the customers' consent to the store's messages, CM-CUS-007, no longer unsure;
   - the chargeback dispute page is titled 'Chargeback dispute response': the merchant contests the dispute, CM-PAY-009.
 - **Similar products** is decided as CM-MKT-023, product recommendations (`held/new.tsv`): 'Customize similar products' and a 'Similar products preview', the products shown beside a product on the storefront, which the merchant may choose. Not CM-MKT-021's offers.
+
+**The coordinator, after SA-2 (30 October 2026):** this batch's llms.txt line on CM-AIA-005 is `shows` now, and the entry takes CM-CNT-007 `core`. A store's llms.txt is a file the platform writes for AI platforms to read the store; it gives buyers no channel and no purchase, and Zid keeps it in its SEO section (`review-H-rulings.md`, the ruling after SA-2).

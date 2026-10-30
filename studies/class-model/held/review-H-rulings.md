@@ -48,3 +48,16 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
 - **A list of permissions** (after ZD-7): each permission is `core` on the capability it gates, as CM-STF-002's note keeps them; only a permission over the staff's permissions themselves goes on CM-STF-002.
 - **An offer the platform lists but states unavailable where it is listed is `shows`** (after WC-5). WooPayments' onboarding states 'WooPayments is not supported in the selected business location.' for EG, OM, SA and YE: there its line is `shows`, the location its scope, the statement in `reading`. Where it is supported (AE, GB, JP, US), its line is `own-service`. A suggestion category that no held location fills is `shows`: it names a topic, with no provider offering it.
 - **A released flag that is off by default with no toggle in the admin is `shows`** (after WC-6): WooCommerce's `disable_ui` true with `enabled_by_default` false, or left at its default, false (`FeaturesController.php`, line 229). The platform ships it but doesn't offer it to merchants to turn on. Order Fulfillments and Cart & Checkout Blocks are both defined so.
+- **A heading of the platform's public site** (after SA-2 and SA-5). M-13 makes a container with no capability `new` and `core` because it is "the platform's own admin place": the admin, the partners' portal or the app store, where a merchant, partner or developer works. A heading of the platform's public site, such as salla.com's header and footer, is the site's navigation.
+  - Where its links are one capability's pages, it takes that capability's line: الموارد, over the help centre, academy, community, blog and updates centre, is CM-ONB-003.
+  - Where they are several capabilities' pages (الحلول, القطاعات, عن سلة, أدوات التجار), it names only a grouping. It is `out`, and each link is placed on its own capability.
+  - A link to a marketing page for one business sector is `out` too. It names whom the platform markets to, and the sector's page isn't held.
+- **The platform's changelog is CM-ONB-003** (after SA-2 and SA-5). This is a reading. salla.com's footer lists its updates centre under الموارد with the help centre, academy and community: the platform's news and learning for its merchants.
+  - A changelog category that names only a grouping of posts (تحسينات المنصة) goes there too (M-13).
+  - A category or post that names a feature goes on the feature's capability.
+- **A store's llms.txt is CM-CNT-007's, and `shows` on CM-AIA-005** (after SA-2).
+  - CM-AIA-005 is buyers discovering and buying a store's products through AI chats and agents, on channels the platform or third parties operate.
+  - A store's llms.txt is a file the platform writes for AI platforms to read the store. It gives buyers no channel and no purchase. Both platforms that hold it keep it in their SEO pages: Zid in its SEO section, Salla at `marketing/seo/llms-txt`.
+  - So it is `core` on CM-CNT-007 where the platform writes it, and `shows` on CM-AIA-005 where its words name AI platforms or buyers' discovery through AI.
+  - The review's R4 had let ZD-1's `core` on CM-AIA-005 stand, and ZD-4 and ZD-12 kept to it. The coordinator corrects the three lines.
+  - Zid's and Salla's CM-AIA-005 cells are then held with no placement. Shopify's cell holds channels for agents, and BigCommerce's holds endpoints for agents.

@@ -122,3 +122,5 @@ The review (`held/review-H.md`, parts R4, R5a and R5b) and the coordinator's rul
   - the online store's settings page and zones, shown only under `showNewZones`;
   - the platform-switch and where-do-you-sell routes;
   - who signs in by the impersonate token.
+
+**The coordinator, after SA-2 (30 October 2026):** this batch's llms.txt line on CM-AIA-005 is `shows` now, and the entry takes CM-CNT-007 `core`. A store's llms.txt is a file the platform writes for AI platforms to read the store; it gives buyers no channel and no purchase, and Zid keeps it in its SEO section (`review-H-rulings.md`, the ruling after SA-2).
