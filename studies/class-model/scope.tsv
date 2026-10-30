@@ -314,7 +314,7 @@ salla	SA-C-174	E	F	publising-app-maker policy: publishing the store's mobile app
 salla	SA-C-175	F		سياسة الشروط والاستخدام – متجر تطبيقات سلة: App Store publishing policy (APP); M-067
 salla	SA-C-176	F		سياسة الانضمام إلى برنامج شركاء سلة: the partner's contract (PTN); M-071
 salla	SA-C-177	C	A	عقد خدمات الدفع: payment services contract (PAY)
-salla	SA-C-178	A		منصة الشكاوي: Salla's complaints platform (TRU)
+salla	SA-C-178	A	D	منصة الشكاوي: Salla's complaints platform (TRU); also D: it is the only source that says whose complaints Salla's complaints hold (the coordinator, from D-anchor batch 5)
 salla	SA-C-179	D		Self-service system; Complaints; نظام التذاكر (SUP)
 salla	SA-C-180	A		policy at /policies/nd96, content not reached: a Salla policy page (TRU)
 salla	SA-C-190	F		Salla OAuth 2.0; Authorization (API)

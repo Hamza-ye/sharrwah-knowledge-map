@@ -102,7 +102,7 @@ A large part runs as a series of batches, each by a fresh agent, so that no cont
 - **Write the cells your batch needs:** for every capability of your batch's areas, a cell for each of the part's platforms that has none yet. Add evidence to an existing cell where your concerns' statements bear on it.
 - **Rule on the unclear candidates of your batch's concerns** once both sides of a pair have landed. The batch that lands the second side rules on the pair; the first leaves it in its notes.
 - **Append to the part's files,** never rewrite an earlier batch's rows. Where your evidence shows an earlier batch's row no longer holds, such as a ruling or a fit, say so in your notes; the coordinator corrects it before the next batch, and the checker's problem on that row is the coordinator's, not yours. Number new capabilities past the highest in each area.
-- **A ruling follows the cells.** Never leave a statement uncited to keep a ruling `apart`.
+- **A ruling and a fit follow the cells.** Never leave a statement uncited to keep a ruling `apart` or a fit `clean`.
 - **Check your batch:** `python3 -I method/check_class_part.py <the part's folder> --concerns <your batch's concerns> --areas <your batch's areas>`. The last batch checks the whole part, without the options.
 
 ## Cells and evidence

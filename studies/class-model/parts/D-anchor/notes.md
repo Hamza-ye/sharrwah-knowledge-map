@@ -284,3 +284,84 @@ Concerns landed: SH-C-025, SH-C-026, SH-C-082, SH-C-187, SA-C-063, SA-C-064, SA-
 - The other flags are earlier batches', answered in their sections.
 
 - **After batch 4 (the coordinator):** CM-MKT-017, wishlist notifications, is now a child of CM-LOY-005, wishlists. `scope.tsv` names D under SH-C-189's `also`, so U-059's SH-C-189 pair stays `joined:CM-LOY-006` on the evidence.
+
+## Batch 5: SUP (customer service and feedback) and ANL (analytics and reports)
+
+Concerns landed: SH-C-145, SH-C-153, SH-C-154, SH-C-192, SA-C-030, SA-C-092, SA-C-099, SA-C-179, SA-C-207, SA-C-220. Capabilities CM-SUP-001 to CM-SUP-008 and CM-ANL-001 to CM-ANL-006, with both platforms' cells. SUP and ANL had no capabilities before this batch. Nine concerns landed in new capabilities; one, SA-C-092, joined an existing one (CM-MKT-009, by M-055).
+
+### Where each concern landed
+
+- CM-SUP-001, reviews and ratings with product questions: SH-C-154 (M-065, strained) and SA-C-030 (M-065).
+- CM-SUP-004, chat with customers: SH-C-153 and SA-C-099 (M-064).
+- CM-SUP-005, customer support and help desk tickets: SH-C-192 (role, strained) and SA-C-179 (role, strained).
+- CM-ANL-001, analytics and reports: SH-C-145 and SA-C-220 (M-058).
+- CM-ANL-006, analytics and reports through the API for apps: SA-C-207 (role).
+- CM-MKT-009, customer events and tracking pixels: SA-C-092 (M-055, strained).
+- No concern lands in CM-SUP-002 (a child of 001), CM-SUP-003, 006, 007 or 008, or in CM-ANL-002 to 005 (children of 001).
+
+### How I cut, and the grains
+
+- **Reviews (001) and review requests (002).** Salla gives review requests a settings route of its own (feedback/rating_message, Review requests), a plan line (إرسال رابط التقييم للعميل, plan سلة برو) and two released flags, and the plan line names a distinct function: sending the buyer a link to rate. Its other feedback settings (thank-you message, media in reviews, editing or deleting a review), its store rating and its review factors configure the reviews themselves, so they stay in 001, as batch 4 read sub-settings. Product questions stay in 001 too: they have only permissions and a plan line shared with reviews (الأسئلة والتقييمات), and M-065's granularity note says Salla's concern also holds them.
+- **Shopify's App Store categories, one capability each where nothing else holds them.** SH-C-192 is six categories: Support apps, Helpdesk apps, Support - Other, Chat apps, FAQ apps and Survey apps. Support and Helpdesk join Salla's ticket system (005); Chat apps join Shopify Inbox and Salla Chat (004); FAQ apps (006) and Survey apps (007) have no counterpart, and each is a capability because the category is a place of its own (the dry run's rule). Likewise SH-C-154's Social trust apps, Social proof apps and Social trust - Other make CM-SUP-003. No statement shows these categories nested (the names "Support - Other" and "Social trust - Other" suggest it, a reading), so none of them has a parent. A reviewer may make 004, 006 and 007 children of 005, and 001 and 003 children of a social-trust parent, on the categories' names; SH-C-192 and SH-C-154 would then be clean.
+- **Complaints (008) apart from tickets (005).** Salla gives complaints a link of their own (/manage/complaints) and a staff permission (complaint_management), and tickets a link (/tickets), a dashboard app and a plan line. Q1 put both in SA-C-179, which lands in 005 and is strained.
+- **ANL's children.** Analytics (001) is the parent, as both platforms group it: Shopify's navigation Analytics with Reports and Live View, its permission group Analytics with Analytics > Reports and Analytics > Overviews; Salla's list of links Store performance, Smart analytics and Reports, all under /reports. A child became a capability where a platform gives it a route of its own: reports (002: analytics:reports; /reports), overviews and store performance (003: analytics:overview; /reports/performance), Live View (004: analytics:live), smart analytics (005: /reports/smart-analysis). Salla's report types (sales, orders, customers, visits, loyalty, wishlists and others) have only permissions and plan lines that name kinds of report, so they stay in 002. Its analytics plan lines (sales, customers, visits, profits) stay in 001: Salla routes analytics (/reports/analysis) apart from its report pages, but gives them no link of their own.
+- **The home dashboard (003).** Shopify's staff permissions Home > Home and DASHBOARD (Q1 placed them in SH-C-010 and SH-C-145) and Salla's home permissions (الرئيسية: the month's and orders' summaries, alerts, sold-out products, placed in SA-C-220) are cited with the overview pages, as the store's summary: a reading.
+- **The API for apps (006) as a child of analytics:** a reading, since both platforms' statements name the store's analytics (ShopifyQL "for analytics"; "custom analytical reports ... displayed on the Salla store dashboard"). Analytics annotations and targets (Shopify's AnalyticsAnnotation, analyticsAnnotationCreate, analyticsTargetCreate) have only scopes and API objects, so they stay in 001.
+- **SA-C-092 in CM-MKT-009.** scope.tsv gives it area ANL, but its statements show events for apps that track (Device Mode and Cloud Mode Events, "which mode best fits your application's architecture", SA-S-5149), the same thing as Shopify's customer events by Q1's M-055, and batch 2 built CM-MKT-009 for that match and already cites six of its statements. So it lands there, by the match, as batches 2 and 4 foresaw. It is strained by SA-S-1387 in CM-LOY-005. I added five of its statements to CM-MKT-009's Salla cell as `shows` (SA-S-5148, SA-S-1339, SA-S-1348, SA-S-1356, SA-S-1382); the cell's reading, batch 2's, doesn't name them. **For the coordinator:** the reading could add "and the events of its products, accounts and promotions, delivered server to server in Cloud Mode (SA-S-5148)".
+
+### Joins on role, and weak joins
+
+- **CM-SUP-005, Shopify's Support and Helpdesk apps with Salla's ticket system** (U-041). Shopify defines neither category; Salla's plan line says the ticket system "يتيح للعميل رفع تذكرة أو متابعة حالة الطلب، مما يوفر وسيلة تواصل مباشرة وفعّالة بين العميل والتاجر" (SA-S-2095). The join rests on the category's name, help desk, against that definition: the weakest in this batch.
+- **CM-ANL-003, Shopify's Overviews with Salla's Store performance.** Neither defines its page beyond the name; both are routes under analytics, gated by their own permission (OVERVIEWS) or plan line (ملخص أداء المتجر).
+- **CM-ANL-006, Shopify's ShopifyQL for analytics with Salla's Report Builder.** Shopify's read_reports lets "your app ... read analytics and reporting data" (SH-S-5905); Salla's Report Creator lets developers "build custom analytical reports to be displayed on the Salla store dashboard" (SA-S-5146). Both are an API through which apps work with the store's analytics; Salla's says where the report shows, Shopify's doesn't. A reviewer may keep them apart, as two single capabilities.
+
+### Homonyms kept apart
+
+- **Reviews.** Shopify's admin section Reviews (SH-I-0832, which Q1 placed in SH-C-154) holds only the routes fraud_protect/terms and seller-protection/beta/terms (SH-S-7109, SH-S-7110, SH-C-073, domain A): it isn't product reviews, and isn't cited. Salla's ask_browse_review_shipping_companies (SA-C-150, domain C) rates shipping companies.
+- **Chat.** Shopify's admin section MobileChat (SH-I-0821, which Q1 placed in SH-C-153) begins with the route sidekick:mobile, Shopify's assistant, not customer chat; Shopify's 24/7 support by live chat (SH-S-7015, SH-C-155) is Shopify's support to merchants; Sell in AI chats (SH-S-7007, SH-C-140) is a sales channel. None is cited.
+- **Complaints.** Salla's Complaints (CM-SUP-008) against Shopify's complaint-handling system, P2B and financial complaints (SH-C-177, SH-C-178, domain A: merchants' complaints to Shopify), Salla's quality gateway (SA-C-150, domain C: the merchant's complaints about shipping companies) and Shopify Payments' disputes (chargebacks).
+- **FAQ.** Salla's help pages' heading الأسئلة الشائعة (Salla's answers to merchants) against a store's FAQ (CM-SUP-006); Salla's product questions (questions_management) are buyers' questions on a product, in CM-SUP-001.
+- **Live.** Salla's الطلب المباشر (direct ordering, SA-C-079) and its delivery statuses aren't Live View.
+- **Trust.** Salla's storefront component salla-trust-badges (SA-C-091, domain E) isn't defined, and isn't read as social trust.
+
+### Strained fits
+
+- SH-C-154 in CM-SUP-001: its Social trust, Social proof and Social trust - Other categories are cited in CM-SUP-003.
+- SH-C-192 in CM-SUP-005: its Chat, FAQ and Survey apps are cited in CM-SUP-004, 006 and 007.
+- SA-C-179 in CM-SUP-005: its complaints are cited in CM-SUP-008.
+- SA-C-092 in CM-MKT-009: its Product Added to Wishlist is cited in CM-LOY-005 (batch 4).
+
+### Rulings
+
+- U-041: joined:CM-SUP-005 (SH-C-192 × SA-C-179). WC-C-106's pairs are the WooCommerce part's.
+- U-070: apart (SH-C-020 × SA-C-220): scope.tsv gives SH-C-020 domain B, with G under also. B-anchor ruled the same pair apart.
+- M-055, M-058, M-064 and M-065 are matches, not candidates; no other candidate holds this batch's concerns.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-MKT-009's Salla reading** (batch 2): see above; my five added rows are `shows` and change no placement.
+- **Batch 1's lead on SA-S-1359** (Profile Updated, for CM-CUS-010): not taken. Salla's account events are tracking events for apps, in CM-MKT-009's tree; CM-CUS-010's Salla cell already shows the buyer signing in through Salla's own events (customer.login). Citing it would add a third tree to SA-C-092's landing.
+- **CM-LOY-005's Salla reading** (batch 4) says the wishlist reports aren't cited there "which are reports": they are now cited in CM-ANL-002 (report_customers_wishlist, SA-S-2340; customer-wishlists-reports, SA-S-3171). The row still holds.
+- **CM-MKT-008's Salla cell** (batch 3) names the reports of visit sources as found and not cited: report_source_visit (SA-S-2330) is now cited in CM-ANL-002. The row still holds.
+- **Q1's placements:** SH-I-0832 (Reviews) and SH-I-0821 (MobileChat) are placed in SH-C-154 and SH-C-153 by their section's name; their routes show other things (above). Not cited; Q1's own files are not this part's to change.
+
+### Concerns read under `also`, and other domains' statements
+
+- SA-C-150 (domain C, names D): the quality gateway for shipping complaints. Read for CM-SUP-008; nothing cited, since it is the merchant's complaints about shipping companies, not a buyer's about the store.
+- SA-C-178 (domain A, doesn't name D): Salla's complaints platform, where the customer opens a complaint (SA-S-5088), Salla mediates (SA-S-5087) and only the customer can close it (SA-S-5086). Not cited, though it would say whose complaints CM-SUP-008 holds; the cell's reading says so. A reviewer may add D to its `also`.
+- Not cited, other domains: Shopify's checkout targets purchase.checkout.chat.render and purchase.thank-you.chat.render (SH-I-1635, SH-I-1638), undefined; Shopify's Email & Customer Chat (SH-I-1977), which Q1 placed in SH-C-130 and SH-C-153: citing it in CM-SUP-004 made SH-C-130's clean landing in CM-MKT-007 read as strained, so I dropped it.
+
+### Gaps that limit the cells
+
+- Salla: responsible and reason pages not read for SA-C-030, SA-C-099, SA-C-179 and SA-C-220; SA-C-207's decides needs observation (the Partners portal's conditions for the Report Builder), its responsible is stated only in general terms and its reason page wasn't read. No statement defines Salla's Smart analytics, Store performance, store rating, review factors or Complaints beyond their names; the maker of the app behind the flag report-visit (apps.salla.sa/ar/app/165566897) isn't stated.
+- Shopify: SH-C-153's boundary and reason, SH-C-154's decides and reason, and the reason of SH-C-145 and SH-C-192 were searched and not found; responsible is stated only in general terms for SH-C-145 and SH-C-153. No statement defines any App Store category cited here, Live View, Overviews, or what a report is. No statement says who makes Shopify Inbox beyond its Google Play publisher.
+- No qualities. One slot filler: WhatsApp for CM-SUP-004, Salla (SA-S-5138, a channel through which Salla Chat manages inquiries). That WhatsApp does the chat is a reading; a reviewer may drop the row, as the statement adds "دون الحاجة لأدوات خارجية".
+
+### What the checker flagged, answered
+
+- **own-service on SH-C-153/where/SH-S-2758:** the statement's scope names Shopify Inc. as the Google Play publisher of the app Shopify Inbox: the company, as batch 2 read SH-S-2760. A reviewer may hold that the plan line's core covers it.
+- **none-held with matches:** CM-SUP-002 Shopify (Audiences, data transfer, privacy, blog tools, a permission and a help section), CM-SUP-003 Salla (the social media setting, undefined storefront components, a currency setting, Salla's marketing licence), CM-SUP-006 Salla (Salla's help-page FAQ headings), CM-SUP-008 Shopify (merchants' complaints to Shopify and payment disputes), CM-ANL-004 Salla (order statuses, delivery, direct ordering): each cell's reading says what was found and why it isn't cited.
+- **CM-SUP-003, 006, 007 and 008 have no concern landed in their tree:** each is a capability by a place of its own (an App Store category; Salla's link Complaints), and its concern lands in a sibling (SH-C-154 in 001, SH-C-192 and SA-C-179 in 005), strained for it.
+- The other flags are earlier batches', answered in their sections.
+
+- **After batch 5 (the coordinator):** SH-I-1977 (Email & Customer Chat) is cited back in CM-SUP-004 as `shows`, and SH-C-130's landing is `strained`: a statement is never left uncited to keep a fit clean. `scope.tsv` names D under SA-C-178's `also`. Batch 5's rows were saved in commit 7e1c2eb5, labelled for F-backfill-woocommerce.
