@@ -27,6 +27,9 @@ Commands:
                                                landed concerns, and each platform's cell (held, terms, the placements
                                                its evidence supports)
   homonyms                                     Q1's list of the same word naming different things
+  uncited   --domain D [--platform P] [--width N]
+                                               the statements of the domain's concerns that no evidence row of its parts
+                                               cites, by concern
 
 A statement's key is `concern_id/placement/first_cite_id`, unique on every platform's statements.tsv (`/` appears in no
 id or placement). Run with python3 -I from the repository's root.
@@ -239,6 +242,22 @@ def cmd_homonyms(a):
     print("\n".join(out).rstrip())
 
 
+def cmd_uncited(a):
+    cited = set()
+    for d in part_dirs(a.domain):
+        cited |= {r["key"] for r in rows(os.path.join(d, "evidence.tsv"))}
+    mine = [r for r in scope_rows() if r["domain"] == a.domain and (not a.platform or r["platform"] == a.platform)]
+    n = 0
+    for sr in mine:
+        left = [r for r in statements(sr["platform"]) if r["concern_id"] == sr["concern_id"] and key(r) not in cited]
+        if left:
+            print(f"# {sr['concern_id']}: {len(left)} uncited")
+            for r in left:
+                show_statement(r, a.width)
+            n += len(left)
+    print(f"# {n} statements of domain {a.domain}'s concerns uncited")
+
+
 def part_dirs(domain):
     base = os.path.join(MODEL, "parts")
     out = []
@@ -294,6 +313,7 @@ def main():
     s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
     s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
     sub.add_parser("homonyms")
+    s = sub.add_parser("uncited"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS); s.add_argument("--width", type=int, default=120)
     a = ap.parse_args()
     globals()["cmd_" + a.cmd](a)
 

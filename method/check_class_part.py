@@ -405,6 +405,31 @@ def check_part(d):
             if any(s["concern_id"] == c for s in statements(p)):
                 problem(f"landings.tsv line {r['_line']}: no evidence row of {r['cap_id']}'s {p} cell cites a statement of {c}")
 
+    # joins not made, for the reviewer: a statement this part cites that a capability of another tree also cites; a Q1
+    # match whose concerns landed in more than one tree; a capability of this part with nothing landed in its tree
+    def root(c):
+        seen = set()
+        while c in caps and caps[c]["parent"].strip() and c not in seen:
+            seen.add(c); c = caps[c]["parent"].strip()
+        return c
+    cited = {}
+    for pr in prior + [part]:
+        for r in pr["evidence.tsv"]:
+            if r["cap_id"] in caps:
+                cited.setdefault(r["key"], set()).add(r["cap_id"])
+    for k in sorted({r["key"] for r in part["evidence.tsv"]}):
+        cs = sorted(cited.get(k, ()))
+        if len({root(c) for c in cs}) > 1:
+            flag(f"evidence: {k} is cited by {', '.join(cs)}, in more than one tree of capabilities: one capability, or one the other's parent?")
+    for mid, m in matches.items():
+        held = [x for x in ids(m["shopify"]) + ids(m["salla"]) + ids(m["woocommerce"]) if x in where_landed]
+        if len(held) > 1 and any(x in landed for x in held) and len({root(where_landed[x]) for x in held}) > 1:
+            flag(f"landings: {mid}'s concerns land in more than one tree: " + "; ".join(f"{x} in {where_landed[x]}" for x in held))
+    landed_roots = {root(c) for c in where_landed.values() if c in caps}
+    for c in sorted(set(caps) - set(caps_prior)):
+        if root(c) not in landed_roots:
+            flag(f"capabilities: {c} has no concern landed in its tree of capabilities")
+
     # one cell per capability and platform
     caps_new = set(caps) - set(caps_prior)
     if kind == "anchor":

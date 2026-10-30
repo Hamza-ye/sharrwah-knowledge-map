@@ -67,9 +67,9 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 
 **Land every concern you take exactly once,** in `landings.tsv`: in the capability it is, or in the parent where it is coarser than the capabilities. A cell may cite statements of a concern landed elsewhere. A concern that belongs to another domain lands as `moved:<domain>`, with the reason, and the coordinator moves it.
 
-**Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched.
+**Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched. The search ignores case, diacritics, hamza seats and tatweel, and reads ة as ه and ى as ي. A broken plural is another word, so search each Arabic term in its singular and its plural, with and without ال.
 
-**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`: `joined:<cap_id>` where you land them together (in one capability, or one and its parent or child), or `apart`, with the basis and keys. You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
+**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`: `joined:<cap_id>` where you land them together (in one capability, or one and its parent or child), or `apart`, with the basis and keys. Where `scope.tsv` puts the candidate's other concern in another domain, the ruling is `apart`, with the basis "scope.tsv gives <concern> domain <X>". You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
 
 ## The mapping parts
 
@@ -92,7 +92,7 @@ Where the coordinator moves a concern into a domain whose parts have already run
 
 **Evidence:** one row per statement a cell cites, with what the statement `supports`. Every value but `shows` is a reading of the statement, and the cell's `reading` says why:
 - `core`: the platform itself does it for the merchant. The statement names its own admin section, setting, route or built-in behaviour, a plan line that includes it, or its own API for its own feature;
-- `own-service`: the statement names the platform's company, or a company of its group, as the maker or provider of a separate product, app, extension or service that does it, whatever channel sells it, its own marketplace included;
+- `own-service`: the statement names the platform's company, or a company of its group, as the maker or provider of a separate product, app, extension or service that does it, whatever channel sells it, its own marketplace included. A product's name that carries the platform's brand doesn't name its maker. Without a statement naming the company, place the cell by what its statements show, and note the missing maker statement as a gap. Never decide the maker from what you know;
 - `extension-point`: the statement shows third parties doing it through something the platform provides: an app-store or marketplace category, an extension target, a provider interface, or an API whose statements say apps or partners use it to do the work;
 - `outside`: the statement names a third party, not the merchant, the buyer or the platform's company, as the one that does it, with no interface of the platform named;
 - `shows`: the statement shows the platform has the capability, or gives its terms, and supports no placement. A statement that makes the merchant or buyer responsible is `shows`, never `outside`.

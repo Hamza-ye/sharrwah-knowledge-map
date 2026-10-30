@@ -278,3 +278,14 @@ Say that check 8 covers domain B's own concerns, and the `also` concerns' statem
 
 **Fix.** Add to check 7: "Where a candidate's concerns on one side are all in another domain, the ruling can only be `apart`: don't test it against the definitions. Test instead whether `scope.tsv` placed the candidate's concerns rightly, and list those cases for the coordinator." B-extent line 72 could also say what basis such a ruling gives: "`apart`: scope.tsv gives <concern> domain <X>".
 
+## The coordinator's check and rulings (30 October 2026)
+
+**The check.** I re-ran the two claims a fix depends on. The Arabic search: "فرع" finds 11 Salla statements and "فروع" 8, different ones; "الكمية" found 1 and "الكميه" 0. The checker writes `derived.tsv` into each part's folder by design. Both hold.
+
+**Rulings.** All ten must-fix findings are taken, as proposed, and optional findings 10 to 14 in part. Each is engineering's method ruling, listed at the next report.
+- **1, 2, 4, 5, 6, 7, 9 and 15:** as proposed, in the brief's rewrite.
+- **3:** the three tests go into the checker as flags for every part, not as a command in the brief: a statement cited by capabilities of two trees; a Q1 match whose concerns land in more than one tree; a capability with nothing landed in its tree. A tree is a capability with its parents and children, so siblings citing their coarse parent concern's statements aren't flagged.
+- **8:** the search now reads ة as ه and ى as ي. The brief says to search a broken plural as its own word. The running `B-anchor` part was told both, and the extent's brief now says them.
+- **6, beyond the review:** a product's name that carries the platform's brand doesn't name its maker. `own-service` needs a statement that does. This is in the extent's brief, and `B-anchor` was told.
+- **12 and 13:** the reviewer writes its own placement before reading the part's reasons. `class_slice.py uncited` lists the statements no cell cites.
+- **10, 11 and 14:** checks 9, 11 and 13 and the output's form take them.
