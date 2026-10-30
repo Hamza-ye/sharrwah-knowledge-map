@@ -24,6 +24,8 @@ reviewers' messages name. It writes studies/class-model/review/selection.tsv, on
   inventory entries;
 - q3: every candidate miss and unclear row of Q3's check, every beyond-the-class row the model doesn't answer, and a
   seeded tenth of its covered rows;
+- point: every subject's variation point whose landing on the model found a conflict (studies/class-model/points/;
+  the brief `briefs/P-points.md`), and a seeded tenth of the points landed without one;
 - sample: a seeded sample of each part's other cells, at least two or the fraction given, whichever is larger.
 """
 import argparse, glob, math, os, random, re, sys
@@ -169,6 +171,15 @@ def select(a):
             add_other("q3", (r["cap_ids"].split(";") or [""])[0], f"Q3's {r['set']}:{r['row_id']}: {r['result']}")
     for r in rnd.sample(covered, max(1, round(len(covered) * 0.1))) if covered else []:
         add_other("q3", (r["cap_ids"].split(";") or [""])[0], f"Q3's {r['set']}:{r['row_id']}: covered (a seeded tenth)")
+    pts = []
+    for path in sorted(glob.glob(os.path.join(MODEL, "points", "P-*.tsv"))):
+        pts += [(os.path.basename(path)[:-4], r) for r in rows(path)]
+    landed = [x for x in pts if x[1]["status"] == "landed"]
+    for b, r in pts:
+        if r["status"] != "landed":
+            add_other("point", (r["cap_ids"].split(";") or [""])[0], f"points/{b}.tsv {r['vp_id']}: {r['status']}: {' '.join(r['conflict'].split())[:160]}")
+    for b, r in rnd.sample(landed, max(1, round(len(landed) * 0.1))) if landed else []:
+        add_other("point", (r["cap_ids"].split(";") or [""])[0], f"points/{b}.tsv {r['vp_id']}: landed (a seeded tenth)")
     by_part = {}
     for k, r in cells.items():
         if k not in cell_items:
@@ -231,7 +242,7 @@ def check(a):
         if r["verdict"] == "wrong":
             if r["severity"] not in ("kind", "placement", "structure", "reading"):
                 problems.append(f"line {i}: a wrong item's severity is kind, placement, structure or reading")
-            if not re.match(r"^[A-Z]-[a-z-]+/[a-z-]+\.(tsv|md)|^scope\.tsv", r["correction"]):
+            if not re.match(r"^[A-Z]-[a-z-]+/[a-z-]+\.(tsv|md)|^scope\.tsv|^points/P-\d+\.tsv", r["correction"]):
                 problems.append(f"line {i}: a correction names <part>/<file>, the row and the new value")
         elif r["severity"] or r["correction"]:
             problems.append(f"line {i}: severity and correction are for wrong items")

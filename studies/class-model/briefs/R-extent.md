@@ -10,6 +10,7 @@
 - `studies/class-model/method-report.md`, sections 11 to 13: the coordinator's rules since;
 - the merged model, `studies/class-model/merged/` (with `flags.tsv`, the merge's questions), and the parts' own files and `notes.md` in `studies/class-model/parts/`, for the readings and the flags each part answered;
 - Q3's check, `studies/class-model/q3/check-*.tsv` and `notes-*.md`, and its brief `briefs/Q3-check.md`, for the items of reason `q3`;
+- the subjects' points on the model, `studies/class-model/points/P-*.tsv` and `notes-*.md`, with their brief `briefs/P-points.md` and `method/land_points.py show`, for the items of reason `point`;
 - the evidence, through `method/class_slice.py` (`key`, `statements`, `search`, `outscope`, `gaps`, `candidates`, `homonyms`, `model`, `caps`) and `method/q3.py where`; and the evidence repositories' guides (their `README.md` and `docs/READING.md`) where a statement's words are in doubt and its source needs reading at its commit.
 
 ## What each reason asks
@@ -31,6 +32,7 @@ An item is a cell (a capability on one platform) with every reason it was chosen
 - **coordinator:** a row the coordinator wrote or changed, or a line of a part's notes that names the coordinator (a correction, a move, a statement counted once, a lead cited, a row taken out). Check it as you would a part's row. The coordinator's reason is in the part's `notes.md`: search it for "the coordinator".
 - **lead:** a line of a part's notes that names the final review or the reviewer, or a capability whose cells cite only inventory entries. Answer the question the line raises; for the second, is it a capability, or does it fold into its parent?
 - **q3:** a row of Q3's check. Does its result hold on the model's cells and the concern map (search as `Q3-check.md` asks, with `q3.py where`)? Are its answerers and time those its rules give?
+- **point:** a subject's variation point landed on the model: every point whose landing found a conflict, and a seeded tenth of the rest. Does it land on the capability its question names (`land_points.py show`)? Is each conflict real, of the type given, with the status its rules give? Is a point landed without a conflict free of one?
 - **sample:** a cell chosen at random from its part. Check its placement, its evidence and its reading.
 
 For every item, check that each fact traces to its key, that a reading is marked as one, and that no statement the cell needs is left uncited. Read a statement's source at its commit only where its words are in doubt.
@@ -49,7 +51,7 @@ For every item, check that each fact traces to its key, that a reading is marked
 
 ## Output, in `studies/class-model/review/`
 
-- `coverage-<share>-<batch>.tsv`, tab-separated, a header row, no quoting: `item` · `verdict` (`holds`, `wrong` or `unclear`) · `severity` (for `wrong` only: `kind` where a kind or count changes, `structure` where a landing, a parent, a capability or a concern's domain changes, `placement` where a cell's placement changes, `reading` where only a reading or a note does) · `basis` (the keys you read, `;`-separated) · `correction` (for `wrong` only: `<part>/<file>`, the row by its `cap_id` and `platform`, its `concern_id` or its `key`, and the new value) · `what_would_settle_it` (for `unclear`).
+- `coverage-<share>-<batch>.tsv`, tab-separated, a header row, no quoting: `item` · `verdict` (`holds`, `wrong` or `unclear`) · `severity` (for `wrong` only: `kind` where a kind or count changes, `structure` where a landing, a parent, a capability or a concern's domain changes, `placement` where a cell's placement changes, `reading` where only a reading or a note does) · `basis` (the keys you read, `;`-separated) · `correction` (for `wrong` only: `<part>/<file>`, the row by its `cap_id` and `platform`, its `concern_id` or its `key`, and the new value; for a point, `points/<batch>.tsv`, the point's `vp_id` and the new value) · `what_would_settle_it` (for `unclear`).
 - `findings-<share>-<batch>.md`: each `wrong` and `unclear` item, with its evidence and the correction you propose; then any pattern across items (a convention read two ways, a kind of error that recurs); then problems with this brief.
 
 Check your coverage with `python3 -I method/review_select.py check --share <share> --batch <batch>` until it prints no problem.
