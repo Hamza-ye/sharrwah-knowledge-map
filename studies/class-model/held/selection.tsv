@@ -100,6 +100,7 @@ shopify	ui-extension-types	no				type packages
 shopify	web-route-manifests	no				the websites' own routes (help, docs, marketing), not the product's
 shopify	webhook-deliveries-cli	no				deliveries as received: detail
 shopify	webhook-sample-payloads	no				payload detail; the topics are read through the CLI's and the admin's topic lists
+shopify	admin-webhook-topics	yes		boundary		the topics a merchant can choose for a webhook made in the admin: the topics added since the concern map read the list (the coverage measure of 30 October: 3 lines added since b46731d0)
 salla	app-categories	yes	drop:search_options	where		the App Store's categories: the ones not cited
 salla	app-store-tabs	yes	nested:apps	where		how the dashboard's App Store groups what it offers
 salla	apps-route-manifest	yes		where		the App Store's routes
