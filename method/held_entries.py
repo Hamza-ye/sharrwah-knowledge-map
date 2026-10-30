@@ -708,6 +708,7 @@ def name_words(s):
 
 
 ID_FIELDS = {"path", "pagekey", "id", "parentid", "key", "route", "url", "href", "module", "slug", "gid", "handle"}
+PATH_FIELDS = {"path", "route"}
 
 
 def values_of(text):
@@ -716,6 +717,10 @@ def values_of(text):
     for part in text.split(";"):
         k, sep, v = part.partition(":")
         if sep and re.fullmatch(r"\s*[\w .-]{1,40}", k):
+            if k.strip().casefold() in PATH_FIELDS:
+                # a route's path is the platform's own words for its place: its segments, without parameters (:id, $storeId)
+                keep.append(re.sub(r"[/._-]+", " ", re.sub(r"[:$][\w-]+", " ", v)))
+                continue
             if k.strip().casefold() in ID_FIELDS:
                 continue
             part = v
@@ -875,6 +880,42 @@ def run_text(platform, cache={}):
     return cache[platform]
 
 
+RELEASE = {"woocommerce": "/home/user/woocommerce-release/11.2.1/woocommerce"}
+CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.-]+/)+[\w.-]+\.(?:json|jsonl|js|php|txt|tsv|html|yaml|md))")
+STATEMENT_ID = re.compile(r"\b(SH|SA|WC|ZD|BC)-S-\d{4}\b")
+
+
+def cited_text(platform, reading, cache={}):
+    """The text of what a reading cites by name: a held file by its path (from the platform's folder, its structures, or
+    the WooCommerce release), and a statement by its id (the concern map's statements, which the model cites)."""
+    from class_slice import citable, key, PREFIX
+    repo, root, sub = REPOS[platform]
+    bases = [os.path.join(root, sub), os.path.join(root, sub, "structures"), root]
+    if platform in RELEASE:
+        bases.append(RELEASE[platform])
+    out = []
+    for m in CITED_FILE.finditer(reading):
+        rel = m.group(1)
+        for b in bases:
+            f = os.path.normpath(os.path.join(b, rel))
+            if f.startswith(os.path.normpath(b)) and os.path.isfile(f) and os.path.getsize(f) < 30_000_000:
+                if f not in cache:
+                    cache[f] = quote_norm(open(f, encoding="utf-8", errors="replace").read())
+                out.append(cache[f])
+                break
+    ids = {m.group(0) for m in STATEMENT_ID.finditer(reading)}
+    if ids:
+        if "statements" not in cache:
+            st = {}
+            for p in PREFIX:
+                for x in citable(p):
+                    sid = key(x).rsplit("/", 1)[-1]
+                    st[sid] = quote_norm((x.get("identifier") or "") + " " + (x.get("statement") or ""))
+            cache["statements"] = st
+        out += [cache["statements"][i] for i in sorted(ids) if i in cache["statements"]]
+    return "\n".join(out)
+
+
 def cmd_check(a):
     problems, notes = [], []
     ids = batch_ids(a.batch)
@@ -968,8 +1009,9 @@ def cmd_check(a):
                 qn = quote_norm(qt)
                 if "..." in qt or "…" in qt:
                     qn = max((quote_norm(x) for x in re.split(r"\.\.\.|…", qt)), key=len)
-                if qn and qn not in quote_norm(e0["text"]) and qn not in structure_text(a.platform, e0["structure"]) and qn not in run_text(a.platform):
-                    notes.append(f"line {i}: the quote '{clip(qt, 70)}' is found nowhere held, in the entry, its structure's sources or the platform's run pages: copy it exactly")
+                if (qn and qn not in quote_norm(e0["text"]) and qn not in structure_text(a.platform, e0["structure"])
+                        and qn not in run_text(a.platform) and qn not in cited_text(a.platform, r["reading"])):
+                    notes.append(f"line {i}: the quote '{clip(qt, 70)}' is found nowhere held, in the entry, its structure's sources, the platform's run pages, or a file or statement the reading cites: copy it exactly")
             if any(x in ss for x in ("extension-point", "outside")) and any(fold(g) in fold(e0["text"]) for g in GROUP.get(a.platform, ())):
                 notes.append(f"line {i}: {'/'.join(ss)} on an entry that names a company of the platform's group: own-service? (rule 4)")
             if "core" in ss and re.search(rf"\b(?:{BRAND[a.platform]})\s+[A-Z]\w+", e0["text"]):
