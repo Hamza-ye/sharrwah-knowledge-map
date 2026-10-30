@@ -220,6 +220,7 @@ def check_part(d):
 
     caps_prior = {r["cap_id"]: r for p in prior for r in p["capabilities.tsv"]}
     caps = dict(caps_prior)
+    caps_new = set()
     for r in part["capabilities.tsv"]:
         w = f"capabilities.tsv line {r['_line']}"
         if kind.startswith("backfill"):
@@ -239,6 +240,7 @@ def check_part(d):
         if not r["capability"].strip():
             problem(f"{w}: no name")
         caps[r["cap_id"]] = r
+        caps_new.add(r["cap_id"])
     for r in part["capabilities.tsv"]:
         p = r["parent"].strip()
         if p and p not in caps:
@@ -362,9 +364,9 @@ def check_part(d):
         if not r["why"].strip():
             problem(f"{w}: why is empty")
         ev.setdefault(k, []).append((r, s))
-        sd = sdom.get(s["concern_id"])
-        if sd and sd["domain"] != domain and domain not in semi(sd["also"]):
-            flag(f"{w}: {r['key']} is a statement of {s['concern_id']}, which scope.tsv gives domain {sd['domain']} without naming {domain} under also")
+        its = [sdom[c] for c in s.get("concern_ids", [s["concern_id"]]) if c in sdom]
+        if its and not any(x["domain"] == domain or domain in semi(x["also"]) for x in its):
+            flag(f"{w}: {r['key']} is a statement of {', '.join(x['concern_id'] for x in its)}, which scope.tsv gives domain {', '.join(sorted({x['domain'] for x in its}))} without naming {domain} under also")
         if r["supports"] == "own-service":
             flag(f"{w}: own-service on {r['key']}: does the statement name {r['platform']}'s company as the maker or provider? ({r['why']})")
     other_terms = {}
@@ -534,7 +536,10 @@ def check_part(d):
             if not km or not kt:
                 problem(f"{w}: {ru} names keys of both sides of the candidate in keys")
             elif ru.startswith("joined:") and not (cap in cm and cap in ct):
-                problem(f"{w}: joined:{cap}, but {cap}'s cells don't cite keys of both sides")
+                if kind in ("woocommerce", "zid", "bigcommerce") and cap in caps_new:
+                    flag(f"{w}: joined:{cap}, a capability this part adds: it holds once its back-fill writes the other side's cell, and the merge re-tests it")
+                else:
+                    problem(f"{w}: joined:{cap}, but {cap}'s cells don't cite keys of both sides")
             elif ru.startswith("nested:") and not ((cap in cm and ancestors(cap) & ct) or (cap in ct and ancestors(cap) & cm)):
                 problem(f"{w}: nested:{cap}, but its keys aren't cited in {cap} on one side and in a parent of it on the other")
         elif ru == "apart":
