@@ -1,4 +1,14 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-AIA-001	salla	statements	core		SA-C-012/decides/SA-S-3158=plans: plus, pro | SA-C-012/decides/SA-S-3400=the answering store (merchant@en) | SA-C-012/decides/SA-S-3401=the answering store (merchant@en)	SA-C-012/responsible:page not read;SA-C-012/reason:page not read	the answering store (merchant@en)
+CM-AIA-001	shopify	statements	core			SH-C-202/responsible:searched, not found;SH-C-202/boundary:observation needed;SH-C-202/reason:searched, not found	general
+CM-AIA-002	salla	statements	core	@salla.sa/ui-merchant-ai-agent	SA-C-012/decides/SA-S-3187=plans: basic, plus, pro, special	SA-C-012/responsible:page not read;SA-C-012/reason:page not read	general
+CM-AIA-002	shopify	statements	core;extension-point;outside	Sidekick | help.shopify.com/en/manual/ai-powered-tools/sidekick.md | sidekick | sidekick:mobile	SH-C-152/decides/SH-S-7019=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 | SH-C-152/responsible/SH-S-0201=third-party subprocessor rows Anthropic PBC, Applied Compute Inc., Fireworks.ai and others (the cited rows)	SH-C-152/reason:searched, not found	general
+CM-AIA-003	salla	statements	core		SA-C-012/decides/SA-S-2133=plan: سلة برو | SA-C-012/decides/SA-S-3488=plans: plus, pro, special | SA-C-012/decides/SA-S-3489=plans: plus, pro, special	SA-C-012/responsible:page not read;SA-C-012/reason:page not read	plan: سلة برو
+CM-AIA-003	shopify	statements	core	apps.shopify.com/built-in-features/magic-blog-posts | apps.shopify.com/built-in-features/magic-product-descriptions		SH-C-202/responsible:searched, not found;SH-C-202/boundary:observation needed;SH-C-202/reason:searched, not found	general
+CM-AIA-004	salla	statements	core	Salla AI Connector	SA-C-012/decides/SA-S-3188=plans: plus, pro, special	SA-C-012/responsible:page not read;SA-C-012/reason:page not read	general
+CM-AIA-004	shopify	none-held					
+CM-AIA-005	salla	none-held					
+CM-AIA-005	shopify	statements	core;extension-point	1. Agentic Storefronts | Build commerce agents with UCP | agentic:legacy-redirect | agentic:parent	SH-C-140/boundary/SH-S-2530=store capture-plus (its UCP profile) | SH-C-140/decides/SH-S-0628=Participating Channels under the Agentic Storefronts terms | SH-C-140/decides/SH-S-0629=certain Participating Channels | SH-C-140/decides/SH-S-7007=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 | SH-C-140/responsible/SH-S-0623=Participating Channel: Google | SH-C-140/responsible/SH-S-0624=Participating Channel: Microsoft Copilot | SH-C-140/responsible/SH-S-0625=Participating Channel: Meta | SH-C-140/responsible/SH-S-0630=Participating Channels operated by Shopify partners	SH-C-020/reason:searched, not found;SH-C-140/reason:searched, not found	general
 CM-API-001	salla	statements	core			SA-C-190/responsible:stated only in general terms	general
 CM-API-001	shopify	statements	core				general
 CM-API-002	salla	statements	core	Salla OAuth 2.0		SA-C-190/responsible:stated only in general terms	general
@@ -41,6 +51,8 @@ CM-APP-009	salla	none-held
 CM-APP-009	shopify	statements	core	apps:development_enable | apps:development_list	SH-C-167/decides/SH-S-7054=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399	SH-C-010/reason:searched, not found;SH-C-167/boundary:searched, not found;SH-C-167/reason:searched, not found	general
 CM-APP-010	salla	statements	core;extension-point	Settings		SA-C-193/responsible:stated only in general terms;SA-C-193/reason:page not read;SA-C-194/reason:page not read;SA-C-199/responsible:stated only in general terms;SA-C-199/reason:page not read	general
 CM-APP-010	shopify	none-held					
+CM-AUT-001	salla	none-held					
+CM-AUT-001	shopify	statements	core;extension-point	apps/flow | flow_action | flow_trigger | help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md		SH-C-151/responsible:stated only in general terms;SH-C-151/reason:searched, not found	general
 CM-DVT-001	salla	statements	core	Dev Tools | Partners Agent Kit | Salla Apps Playbook		SA-C-203/responsible:stated only in general terms	general
 CM-DVT-001	shopify	statements	core				general
 CM-DVT-002	salla	statements	core	Salla CLI		SA-C-203/responsible:stated only in general terms	general

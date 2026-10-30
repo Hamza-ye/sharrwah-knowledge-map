@@ -379,7 +379,6 @@ CM-AIA-002	shopify	core	SH-I-1967	Sidekick in Shopify's own list of products
 CM-AIA-002	shopify	core	SH-I-2513	the App Store's built-in feature Sidekick, your AI cofounder
 CM-AIA-002	shopify	extension-point	SH-C-152/boundary/SH-S-2193	the extension template app_data (App data), for apps
 CM-AIA-002	shopify	extension-point	SH-C-152/boundary/SH-S-2257	the extension template app_action_link (App action link), for apps
-CM-AIA-002	shopify	extension-point	SH-I-1495	the extension target App action (app_action)
 CM-AIA-002	shopify	outside	SH-C-152/responsible/SH-S-0201	third-party subprocessors process personal data input to or included in a response by Sidekick
 CM-AIA-002	shopify	shows	SH-I-2144	the help center section Using Sidekick in the Shopify Balance app
 CM-AIA-002	salla	core	SA-C-012/where/SA-S-3577	the dashboard app @salla.sa/ui-merchant-ai-agent at /ai-agent

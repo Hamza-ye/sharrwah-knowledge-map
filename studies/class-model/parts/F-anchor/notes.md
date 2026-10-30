@@ -595,3 +595,163 @@ are the partner's view of the subscriptions, for the coordinator.
    also ("the ruling is apart") sits uneasily with its rule that a cell may cite such a statement "where the cell needs
    it": a `shows` citation in the cell makes the checker read the pair as joined. I chose apart and none-held.
 - **After batch 3:** U-047's pair (SH-C-171, SA-C-203) is `joined:CM-DVT-002`, since batch 3 cites SH-I-1990 there beside SA-C-203's keys. SH-C-171's landing is `strained` for the same citation. Both as batch 3's notes asked.
+
+## Batch 4: areas AUT and AIA (automation and workflows; AI and agentic commerce)
+
+Concerns landed: Shopify SH-C-151, SH-C-140, SH-C-152, SH-C-202; Salla SA-C-012. No capability existed in AUT or AIA, so all
+six are new: CM-AUT-001, CM-AIA-001 to CM-AIA-005. Every reading below is mine, from the statements its keys cite.
+
+### How I cut, and why
+
+1. **CM-AUT-001, workflow automation (Shopify Flow).** One capability: Flow's admin permissions (category AUTOMATIONS), its
+   product line Workflow Automation, its extension targets and its App Store category. The targets Flow trigger, Flow action,
+   Flow template and the trigger lifecycle callback are how apps reach Flow, not a capability apart: a single platform shows
+   them, and they have no place of their own beside Flow's.
+   - **Maker:** no statement names Shopify's company as Flow's maker. "Shopify Flow" is a brand in a product's name, and
+     Flow is installed from the Shopify App Store (SH-S-0753), so the cell claims no own-service. That is a gap.
+   - **The admin link apps/flow:** no statement gives its eligibility, so the dry run's C4 can't place it; it is `shows`.
+   - **Salla, none-held.** The seed's Salla leads for AUT are Auto assignment, Auto tags and Conditional Webhooks. Auto
+     assignment is SA-C-043 (domain C, F under also), Auto tags is SA-C-040 (domain C) and Conditional Webhooks is SA-C-192
+     (area API). Each is one feature's own automatic rule, not a tool where the merchant builds automations from triggers and
+     actions, so none is the same object as Flow (a reading). The coordinator may want an amend part to test whether an
+     order-rule capability belongs in C instead.
+2. **CM-AIA-001, AI tools for merchants: a parent, a grain I chose.** Salla's one concern SA-C-012 holds its AI Connector,
+   its AI agent app, its generators and other flags; Shopify cuts the same ground into Sidekick (SH-C-152) and Shopify Magic
+   (SH-C-202). SA-C-012 is the coarser side, so it lands in the parent.
+   - **The grouping (S2):** Shopify's help center keeps both Sidekick and Shopify Magic in its manual section ai-powered-tools.
+     SH-S-0736's identifier is the path ai-powered-tools/sidekick.md; SH-S-7488's citation is ai-powered-tools/shopify-magic.md.
+   - **Salla:** no Salla statement groups its AI features. Each is a flag, a setting or a dashboard app on its own; that is a
+     gap.
+   - **The children:** CM-AIA-002 (assistant), CM-AIA-003 (content generation) and CM-AIA-004 (AI connector). They keep
+     SA-C-012 clean, since every key it cites is in one tree.
+3. **CM-AIA-004 (AI connector) and CM-AIA-005 (agentic commerce) are apart.** Both platforms use the term MCP, but the
+   statements don't show the same object:
+   - **Shopify:** its UCP-compliant MCP servers serve commerce agents "that securely act on behalf of buyers" (SH-S-0714).
+   - **Salla:** its AI Connector is a setting in the merchant's settings, whose ChatGPT step adds "a custom MCP server from
+     Salla" (SA-S-5005). No statement says whom the assistant acts for, or what it reads or does.
+
+   I put CM-AIA-004 under CM-AIA-001 because its setting is the merchant's own (a reading). CM-AIA-005 is top-level, since
+   Shopify's grouping puts agentic commerce under apps (apps/agentic), not under its AI tools.
+4. **CM-AIA-005, one capability for Shopify's agentic commerce.** It covers Agentic Storefronts, Sell in AI chats, the
+   admin's Agentic section and UCP. They are one concern on one platform, and the terms of service tie them together
+   (SH-S-0071, SH-S-0621), so I kept the grain coarse.
+   - **The Agentic section:** it sits at apps/agentic, open only to APPLICATIONS or LIMITED_APPLICATIONS (SH-S-5028). By C4
+     I read it as an app's page, `extension-point`.
+   - **The plan line** Sell in AI chats, the UCP profile and Shopify's own channels are `core`.
+
+### Joins on role
+
+- **CM-AIA-002:** Shopify's Sidekick ("an AI-enabled commerce assistant in your Shopify admin", SH-C-152/where/SH-S-0736) is
+  joined with Salla's dashboard app @salla.sa/ui-merchant-ai-agent at /ai-agent (SA-C-012/where/SA-S-3577). The Salla side
+  also has the unreleased flag merchant-multi-agent-assistant (SA-S-3187). Salla names an AI agent and an assistant for the
+  merchant but defines neither, so the role is a reading of the names and the place, the merchant's dashboard.
+- **CM-AIA-001:** the landing of SA-C-012 is joined on role with Shopify's AI features in its admin (SH-S-7488).
+- **CM-AIA-003:** this is a join by terms, not role: "AI-generated product descriptions" (SH-S-7206) against
+  ai-description-generator (SA-S-3488).
+
+### Homonyms kept apart
+
+- **"Agent":** Shopify's "commerce agents" act on behalf of buyers (SH-C-140/where/SH-S-0714). Salla's "ai-agent" and
+  "multi-agent-assistant" are the merchant's (SA-C-012/where/SA-S-3577, SA-C-012/decides/SA-S-3187). The capability notes
+  of CM-AIA-002 and CM-AIA-005 say so.
+- **"MCP":** this case is not shown to be a homonym, only not shown to be the same: SH-C-140/where/SH-S-0714 and
+  SH-I-0073 (WebMCP Tools) against SA-C-012/boundary/SA-S-5005 and SA-C-012/decides/SA-S-3188. What would settle it is a
+  Salla statement on whom the AI Connector's assistant acts for.
+- **"Automations":** Shopify's Create marketing automations (SH-C-129, domain D, SH-S-7040) and the permission Marketing >
+  View, create, and delete marketing activities and automations (SH-I-0936) are marketing's own. I didn't cite them in
+  CM-AUT-001.
+
+### Strained fits
+
+None in this batch. Earlier I cited SH-I-1495 (App action) in CM-AIA-002. Q1 places that entry in SH-C-164 too, which
+batch 2 landed in CM-APP-006, so the citation made that landing strained. I dropped it: the cell rests on SH-C-152's own keys
+for App data and App action link.
+
+### Concerns read under also, and other concerns cited
+
+- **Read under also:** SA-C-043 (Auto assignment, domain C, F under also). I left it uncited (point 1 above).
+- **Cited from other domains:** none.
+- **Found but left uncited:**
+  - SA-C-100's ucp-embedded-checkout (SA-C-100/decides/SA-S-3124, unreleased): domain C, without F under also. The ruling is
+    apart and the cell none-held, as batch 3 did for such a case.
+  - SA-C-020's ai-driven-personalized-product, ai-bundles and product-ai-enhance (domain B): they bear on products, not on
+    this domain.
+  - SA-C-220's Smart analytics (domain D): the seed's lead for AIA, but its statements don't say it uses AI.
+- **Shared with SA-C-033 (SEO, domain E):** Salla's SEO plan line SA-S-2133 and the flag ai-seo-generator SA-S-3489 are
+  statements of SA-C-033 as well. CM-AIA-003 cites SA-C-012's keys, and cites the plan line as `core`. If domain E's parts
+  cite SA-C-033/decides/SA-S-2133 as `core`, the merge will flag one statement supporting core in two domains. The
+  generation of SEO text with AI is both an SEO feature and an AI tool; the coordinator decides which domain keeps the
+  `core`.
+
+### Rulings
+
+U-062 holds three Shopify concerns (SH-C-140, SH-C-152, SH-C-202) and two Salla concerns (SA-C-012, SA-C-100), so it needs
+six rows:
+
+| Pair | Ruling | Why |
+|---|---|---|
+| SH-C-140, SA-C-012 | apart | MCP, point 3 above |
+| SH-C-152, SA-C-012 | joined:CM-AIA-002 | |
+| SH-C-202, SA-C-012 | joined:CM-AIA-003 | |
+| SH-C-140, SA-C-100 | apart | scope.tsv gives SA-C-100 domain C |
+| SH-C-152, SA-C-100 | apart | the same |
+| SH-C-202, SA-C-100 | apart | the same |
+
+U-083 (SH-C-151 with WooCommerce's WC-C-110 and WC-C-113) holds no Salla concern, so the WooCommerce part rules on it.
+
+### What the checker flagged
+
+The whole part's check: **0 problems, 18 flags.** This batch's are lines 73, 81 and 83; the rest are earlier batches',
+answered in their sections.
+
+1. **Line 73, CM-AUT-001 for Salla, none-held with 156 matches.** The other platform's terms (Flow, workflow, trigger and
+   others) match broadly: login and wallet "automatically", kyc_new_workflow, roles, rules, Auto tags and Auto assignment.
+   None is a tool for building automations (point 1 above). none-held stands.
+2. **Line 81, CM-AIA-004 for Shopify, none-held with 2 matches** (SH-S-0714, SH-I-0073). These are Shopify's MCP for
+   buyers' agents, cited in CM-AIA-005 (point 3 above). none-held stands.
+3. **Line 83, CM-AIA-005 for Salla, none-held with 6 matches:**
+   - the audit log;
+   - the Partners policies' word المحادثات ("conversations" between partner and merchant);
+   - SA-C-100's ucp-embedded-checkout (SA-S-3124 and its entry SA-I-2124), of domain C;
+   - the AI Connector's ChatGPT step (SA-S-5005), in CM-AIA-004.
+
+   None shows buyers buying through AI. none-held stands.
+
+### For the coordinator
+
+- **SH-S-5028 is under two capabilities.** CM-APP-001 cites SH-C-156/decides/SH-S-5028, the apps list route, as `core`.
+  CM-AIA-005 cites SH-C-140/decides/SH-S-5028, the route agentic:list, as `extension-point`. Both statements have the same
+  first citation, SH-S-5028, which Q1's citations give as the admin router's line 14 (agentic:list). SH-C-156's note says the
+  same eligibility is on more apps routes. The two keys are different statements with the same eligibility text. Whether
+  CM-APP-001's citation should rest on an apps route's own cite is Q1's matter; neither row breaks the checker.
+- **Partners Agent Kit (SA-C-203/where/SA-S-1177, in CM-DVT-001):** the statement's own field "to" is
+  /ai-agent-kit/overview, so its route names an AI agent kit, as batch 3 asked. What it holds, and whether its agents are
+  commerce agents like Shopify's "Build commerce agents with UCP" (SH-S-0714), isn't stated. I left it in CM-DVT-001, which
+  holds developer tooling. A citation in AIA would make SA-C-203 strained.
+- **SA-I-0198, AI-Driven Solutions** (an extension-points entry of SA-C-194): the concern map doesn't say what it is,
+  possibly an App Store category. I left it uncited. If a statement shows it is an app category, it supports
+  `extension-point` in CM-AIA-001, and SA-C-194's landing becomes strained.
+
+### Gaps: statements needed and not held
+
+- **Shopify:**
+  - who makes Shopify Flow (no statement names the company);
+  - Flow's responsible statement (Q1: stated only in general terms);
+  - the eligibility of apps/flow;
+  - what the plan features Millions of tokens and Website builder (SH-I-1162, SH-I-1161, placed in SH-C-152) are;
+  - the interface through which Shopify Magic generates text (Q1: observation needed);
+  - the reasons for Sidekick's, Magic's, agentic commerce's and Flow's placements (searched, not found).
+- **Salla:**
+  - what the AI agent app at /ai-agent, salla_gpt, ai-product and suggested-by-moshamer do;
+  - whom the AI Connector's assistant acts for, and what it may read or change;
+  - the usage agreement's clause on AI tools, and the reason for their placement (Q1: page not read);
+  - any statement grouping Salla's AI features.
+
+### Problems with the brief or the evidence
+
+1. **One inventory entry in two concerns.** Q1 places SH-I-1495 (App action) in SH-C-152 and in SH-C-164. Citing it under
+   one concern strains a landing of the other: the checker reads an inventory id's concern from Q1's placements, not from
+   the cell. I avoided it by citing SH-C-152's own statement keys.
+2. **Batch 3's problem 2 comes back with SA-C-100.** The brief allows a cell to cite another domain's statement "where the
+   cell needs it". Its rule for a pair whose other concern is in a domain without F under also is that the ruling is apart.
+   The two still pull against each other, and I followed batch 3: none-held and apart.
