@@ -1,2 +1,8 @@
 cap_id	platform	filler	key
 CM-ORD-008	zid	Ministry of Commerce (وزارة التجارة)	ZD-C-052/responsible/ZD-S-0824
+CM-PAY-011	zid	Tap (تاب)	ZD-C-011/responsible/ZD-S-0611
+CM-PAY-011	zid	Paymob (باي موب)	ZD-C-011/decides/ZD-S-0605
+CM-PAY-011	zid	amwal pay (اموال باي)	ZD-C-011/decides/ZD-S-0606
+CM-PAY-012	zid	Apple (شركة أبل)	ZD-C-005/responsible/ZD-S-0568
+CM-PAY-015	zid	Tabby (تابي)	ZD-C-013/responsible/ZD-S-0625
+CM-PAY-015	zid	MIS pay (أم آي إس باي)	ZD-C-013/decides/ZD-S-0624

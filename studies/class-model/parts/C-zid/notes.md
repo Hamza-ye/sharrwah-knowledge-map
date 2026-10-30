@@ -75,3 +75,126 @@ The batch check printed 0 problems and 5 flags:
   - ZD-S-0970: A's CM-ACC-007 and C's CM-ORD-010.
   
   Both are answered above.
+
+## Batch 2: PAY, first half
+
+**Concerns:** ZD-C-001 to ZD-C-012. **Area:** PAY (32 capabilities, no new one). **What it holds:** 12 landings, all into existing capabilities (7 by terms, 5 by definition, none on role), 32 cells (Zid's, one per capability of PAY: 21 `statements`, 11 `none-held`), 169 evidence rows, 9 qualities, 6 slot fillers, no ruling (Zid has no Q1 matches or unclear candidates). I wrote every PAY cell, so several cite the statements of concerns that batch 3 lands (ZD-C-013 to ZD-C-016, ZD-C-023, ZD-C-037) or that a later batch lands (ZD-C-063). Batch 3 adds to those cells. Each row is a reading unless it quotes a statement.
+
+### How I landed them, and why
+
+- **ZD-C-001 Zid Pay activation → CM-PAY-003, definition.** The requirements go to the payment gateway, which approves the account, and a published product is needed before the request. Those are the checks before a store takes payments through the platform's service. The concern's plan line and contract are cited in CM-PAY-002, the parent.
+- **ZD-C-002 Transactions and refunds → CM-PAY-020, terms.** العمليات is Salla's Transactions, and refunding a transaction is acting on it, as Salla's endpoint does. **For batch 4:** refunds to the buyer are also CM-RET-002's. If you cite ZD-S-0538 to ZD-S-0541 or ZD-I-0521 there, ZD-C-002's fit becomes strained (the RET tree): tell the coordinator.
+- **ZD-C-003 Deposits and account statement → CM-PAY-005, definition**, and **ZD-C-004 Bank accounts → CM-PAY-005, definition.** The balance is deposited to the bank account on a schedule, and the bank account is the one that receives the deposits.
+- **ZD-C-005 Payment networks → CM-PAY-002, terms, strained.** Its mada, Visa and Mastercard are Salla Payments' plan lines. Its Apple Pay is in CM-PAY-012 and its KNET in CM-PAY-017, both in the same tree. It is strained because batch 1 cites ZD-S-0362 in CM-CHK-008 and ZD-S-0571 in CM-CHK-001.
+- **ZD-C-006 Transaction fees → CM-PAY-007, terms.**
+- **ZD-C-007 Chargebacks, fraud and held funds → CM-PAY-002, terms, strained.** It is coarser than the capabilities: chargebacks are CM-PAY-009 and reserves and holds CM-PAY-006, so it lands in their common parent. I cite ZD-S-0581 in CM-PAY-002 (suspension of the service), so that the landing's cell cites the concern. It is strained because batch 1 cites its Fraud Shield (ZD-S-0580, ZD-S-0374) in CM-ORD-006. Fraud Shield isn't CM-PAY-010: no statement says it covers chargebacks.
+- **ZD-C-008 Payment links → CM-PAY-032, terms** (روابط الدفع, the plural of Salla's رابط الدفع).
+- **ZD-C-009 Providers behind Zid Pay → CM-PAY-004, definition.**
+- **ZD-C-010 Zid Payments Open APIs → CM-PAY-004, definition, strained.** I read the PSPs as processors behind Zid's own service, Zid Payments, which is the English name of Zid's own gateway in the Rise plan line (ZD-S-0361). Q1 also put the Open APIs model (ZD-S-0595) in ZD-C-009. Two things don't fit:
+  - the Open APIs are a provider interface, cited as `extension-point`, and the anchor's CM-PAY-004 cells show none;
+  - the merchant_linked flow (ZD-S-0534, ZD-S-0535) onboards the merchant at the provider, with the merchant's own keys, which is how CM-PAY-011's gateways connect.
+
+  **For the reviewer:** split out a payment provider interface, or move it to CM-PAY-011 beside Shopify's Payments Apps API.
+- **ZD-C-011 Other payment gateways → CM-PAY-011, terms** (بوابات الدفع الأُخرى, Salla's بوابات الدفع الأخرى).
+- **ZD-C-012 Store payment methods → CM-PAY-001, terms** (طرق الدفع / Payment methods).
+
+### Zid Pay, a service of Zid's company
+
+- **The maker statement (a reading).** I read **ZD-S-0533** as Zid Pay's maker statement: "تمثل الشروط والأحكام المذكورة أدناه العقد المبرم بين مستخدمي زد باي وشركة زد". It names the company as the party that contracts the service with its users. ZD-S-0589 ("على منصة تابعة لزد") names Zid only as the owner of the platform the service runs on, so I take it as support, not as the maker statement on its own. ZD-S-0692 (ZD-C-023) also calls Zid Pay "منصة زد لحلول الدفع". It is cited only in CM-PAY-026, so that batch 3's ZD-C-023 isn't strained by a support row.
+- **Two placements.** Zid Pay is both:
+  - `core`, where a statement names Zid's own admin (المدفوعات, إدارة زد باي, العمليات, كشف الحساب), its plan lines, its staff permissions (manage.zidpay.setting, list.zidpay.transactions, refund.zidpay.transactions, list.zidpay.deposits) or its own Merchant API;
+  - `own-service`, where a statement of Zid Pay's terms names Zid Pay or Zid as doing the thing: reviewing deposits, deducting fees, holding funds, executing transactions.
+
+  By the coordinator's rule, the maker statement counts for each Zid Pay feature that a cell's own statements show. So `own-service` is in CM-PAY-002, 005, 006, 007 and 020, each resting on that cell's statements, with ZD-S-0533 named in the reading. This matches the anchor's Shopify Payments (`core`, with `own-service` from its terms' supplier entities).
+- **Batch 1's rows still hold, in my reading. No correction is needed.**
+  - CM-CHK-008 (ZD-S-0362) and CM-ORD-006 (ZD-S-0374, ZD-S-0580) are `core` on Zid's own plan cards and its own Payments product page. None of the three names Zid Pay. Fraud Shield is tied to Zid Pay only by Q1's placement of it in ZD-C-007, which is not a statement. If the coordinator reads Fraud Shield or Apple Pay as features of Zid Pay, `own-service` could be added on the same keys, with ZD-S-0533 as the maker statement.
+  - CM-CHK-001's ZD-S-0571 names Zid Pay, but it is a reason statement about the payment step. `shows` stays right: it places nothing about the checkout settings. I also cite it as `shows` in CM-PAY-002.
+- **Zid's other services** in this batch's cells:
+  - Zid Financing: `own-service` on ZD-S-0692, "خدمة إلكترونية تقدمها زد", a maker statement in its own words;
+  - COD collection under direct shipping, ZD-S-0641 and ZD-S-0636: Zid names itself as collecting. I placed them `core`, because no statement makes COD collection a separate service of Zid's company. Batch 3 may revisit this with ZD-C-015.
+
+### Joins on role
+
+None in landings. In cells, as readings:
+- CM-PAY-016: Zid's Starter card groups bank transfer and COD as "Basic payment methods", read as the anchor's manual payment methods;
+- CM-PAY-017: KNET inside Zid Pay, read as a local method through the platform's own service, as Salla's KNET through مدفوعات سلة.
+
+### Homonyms and false hits kept apart
+
+- **الحسابات البنكية.** Zid's (ZD-C-004) is the account that receives Zid Pay deposits (CM-PAY-005). Salla's إدارة الحسابات البنكية is the accounts shown for bank transfer (CM-PAY-030). Q1's split of ZD-C-004 says Zid's accounts serve both, but no statement of it says so, so ZD-C-004 isn't cited in CM-PAY-030.
+- **رصيد التاجر** in Zid Pay (ZD-S-0555) is the payout balance (CM-PAY-005), not the merchant wallet (A's CM-PLN-006).
+- **Plan "cards"** (ZD-I-03xx) are plan descriptions, not payment cards (the CM-PAY-024 hits).
+- **ZD-S-0625** matched "بي بال" across "تابي بالدفع". It isn't PayPal.
+- **The Arabic احتياطي** is read as reserve (CM-PAY-006).
+
+### Strained fits
+
+- ZD-C-005: CHK tree, through batch 1's citations.
+- ZD-C-007: ORD tree, through batch 1's CM-ORD-006, and landed in the parent.
+- ZD-C-010: a provider interface, beside CM-PAY-011's connection flow.
+
+### Statements of other domains cited
+
+- **Concerns that name C under `also`:** ZD-C-035/boundary/ZD-S-0757, `shows` in CM-PAY-003 (A's `core` in CM-ACC-004).
+- **Concerns that don't name C, each the only Zid statement on its point:**
+  - ZD-C-038/decides/ZD-S-0775 (Nafath for Zid Pay's activation; A's `core` in CM-TRU-002): `shows` in CM-PAY-003;
+  - ZD-C-108/where/ZD-S-0978 (the POS payment device; E's `core` in CM-POS-002): `shows` in CM-PAY-021;
+  - ZD-I-0440 and ZD-I-0443 (ZD-C-070, F: the App Market categories for accounting and ERP): `extension-point` in CM-PAY-028.
+- **Read, not cited:**
+  - ZD-C-017 (Zid Wallet, A): CM-PAY-023's reading names it, and leaves it to CM-PLN-006;
+  - ZD-C-111 (Zid Assurance, A): CM-PAY-010's reading. Its terms aren't held here.
+
+### Gaps
+
+- **CM-PAY-004:** the providers behind Zid Pay aren't named, and their licences aren't held (ZD-C-009/responsible, searched, not found). The agreement between Zid and a PSP on the Open APIs needs observation (ZD-C-010/responsible). So no slot filler is held.
+- **CM-PAY-005:** which licensed entity or bank holds collected funds before deposit needs observation (ZD-C-003/responsible). No API is held for deposits or bank accounts (ZD-C-003/boundary, ZD-C-004/boundary).
+- **CM-PAY-006 and CM-PAY-009:** no admin place, permission or API for disputes or holds (ZD-C-007/boundary). So CM-PAY-009's cell is `shows` only, and is derived `not-stated`.
+- **CM-PAY-007:** no API exposes the fees (ZD-C-006/boundary).
+- **CM-PAY-021:** who processes card payments at Zid's POS isn't stated. So the cell is `shows` only.
+- **CM-PAY-026:** the financing party isn't named.
+- **CM-PAY-032:** whether the link is sent to the buyer isn't stated. Its responsible placement is 'stated only in general terms'.
+
+### For batch 3 (the rest of PAY, then TAX)
+
+- **Cells already written** that cite your concerns' statements, so add to them, and don't write them again:
+  - CM-PAY-015 (ZD-C-013);
+  - CM-PAY-029 (ZD-C-014, ZD-C-015);
+  - CM-PAY-030 (ZD-C-016);
+  - CM-PAY-026 (ZD-C-023);
+  - CM-PAY-006 (ZD-C-037's ZD-S-0772);
+  - CM-PAY-002 (the cell where Shopify's prohibited businesses, SH-C-173, sit; ZD-C-037 most likely lands there);
+  - CM-PAY-019 (ZD-C-063, a later batch's concern).
+
+  Slot fillers already written: Tabby, MIS pay (CM-PAY-015). Not yet written: Tamara, Emkan, Madfu.
+- **Concerns with no cell of their own.** ZD-C-018 (wallet deduction from Zid Pay) and ZD-C-024 (Mazeed collections and dues) have no cell that fits them cleanly:
+  - ZD-C-018 moves part of the Zid Pay balance to the wallet (ZD-S-0663, ZD-S-0664). CM-PAY-005 (payouts) or a new capability are the candidates. It isn't CM-PAY-031 (an app's partner settlement). Read CM-PAY-023's reading;
+  - ZD-C-024's collections, payout schedule and holds (ZD-S-0704 to ZD-S-0709) bear on CM-PAY-005 and CM-PAY-006. The cells don't cite them yet.
+- **TAX:** CM-PAY-028's reading names ZD-S-0825 (ZD-C-052) as a hit not cited, because it is about invoices (CM-ORD-008). Fees in PAY are quoted "exclude VAT" (ZD-S-0575, ZD-S-0574), and the merchant mustn't charge VAT to the cardholder (ZD-S-0579, `shows` in CM-PAY-007). TAX may cite ZD-S-0579.
+- **Strained fits that may follow:** ZD-S-0636 and ZD-S-0641 are cited in CM-PAY-029. If batch 4 cites them in SHP (Zid Ship), ZD-C-015's fit is strained.
+
+### What the checker flagged, and answers
+
+The batch check printed 0 problems and 33 flags. Two problems on the first run were mine, and I fixed them:
+- ZD-C-007 landed in CM-PAY-002, whose cell cited none of its statements. I added ZD-S-0581.
+- A term in CM-PAY-028 wasn't in a cited statement. I removed it.
+
+Answers to the flags:
+- **`own-service`, "does the statement name zid's company as the maker or provider?"** (ZD-S-0533, ZD-S-0589, and the Zid Pay rows in CM-PAY-005, 006, 007 and 020):
+  - ZD-S-0533 names شركة زد as Zid Pay's contracting party, and is the maker statement (above);
+  - the other rows rest on statements naming Zid Pay (or زد, ZD-S-0543) as doing the thing, with ZD-S-0533 counted for each feature, as the coordinator's rule allows;
+  - for Zid Financing, ZD-S-0692 names Zid as the provider ("تقدمها زد"), and ZD-S-0699 rests on it.
+- **Another domain's statement:** ZD-S-0775, ZD-S-0978, ZD-I-0440 and ZD-I-0443, answered above, each cited where it is the only Zid evidence. None supports `core` or `own-service` here.
+- **More than one tree:** ZD-S-0362 (CM-CHK-008, CM-PAY-012) and ZD-S-0571 (CM-CHK-001, CM-PAY-002). They bear on both, and ZD-C-005 is marked strained for it.
+- **`none-held` with matching statements** (CM-PAY-010, 013, 014, 022, 023, 024, 025, 031). Each cell's reading names the hits and why they aren't the capability.
+- **Batch 1's flags reprinted** (cells.tsv lines 3, 5, 6, 17, 19: CM-CHK-002, CHK-004, CHK-005, ORD-007, ORD-009) are batch 1's, answered in its section. The checker printed no problem on batch 1's rows.
+
+### The coordinator, after batch 1
+
+- **ZD-C-112 is landed in D,** in CM-MKT-022, through D-amend (scope.tsv now gives it D, with C and F under `also`).
+- **ZD-S-0963** (Custom Fields: extra information "to products or orders") names two things, so it is `core` in C's CM-CHK-009 for orders and in E's CM-CNT-002 for products, as a statement naming several things counts in each. **ZD-S-0970** (working hours, and closing the store entirely for a time) likewise counts in C's CM-ORD-010 and A's CM-ACC-007.
+- **ZD-S-0964,** the List Product Settings operation, stays uncited: nothing held says what a product setting is, and its thing is a product's, not C's. It is left as a lead for the final review.
+- **CM-ORD-015** needs Shopify's, Salla's and WooCommerce's cells: C-backfill-zid writes them after the part's last batch.
+
+### The coordinator, after batch 2
+
+- **Zid Pay's maker statement is ZD-S-0533:** Zid Pay's terms are "العقد المبرم بين مستخدمي زد باي وشركة زد", the contract between Zid Pay's users and Zid's company, which names the company as the service's provider (the brief's "Maker evidence"). It counts for each feature of Zid Pay that a cell's own statements show. Batch 1's cells (CM-CHK-008's Apple Pay, CM-ORD-006's Fraud Shield) stand as they are: none of their statements names Zid Pay.
