@@ -8,7 +8,7 @@
 3. The parts' rows: `capabilities.tsv`, `landings.tsv`, `cells.tsv`, `evidence.tsv` and the side files in `studies/class-model/parts/B-*/`. Read their `reading` and `why` columns and their `notes.md` only after you have written your own reading of a cell (below).
 4. `architecture/plan.md`, line 49, for check 12.
 
-**Run the scripts on a copy.** The checker writes derived files into each part's folder, and you change nothing. So copy the model to your scratchpad (`cp -r studies/class-model "$S/model"`), and run every script with `CLASS_MODEL_DIR="$S/model"`:
+**Run the scripts on a copy.** The checker writes derived files into each part's folder, and you change nothing. So copy the model to your scratchpad (`cp -r studies/class-model "$S/class-model-copy"`), and run every script with `CLASS_MODEL_DIR="$S/class-model-copy"`. Name no folder of yours `model/`:
 - the checker on each copied part, in order (`B-anchor`, then `B-woocommerce`, then `B-backfill-woocommerce`);
 - then `method/class_kinds.py --domain B --out -`, and `class_slice.py model --domain B` and `uncited --domain B`.
 
