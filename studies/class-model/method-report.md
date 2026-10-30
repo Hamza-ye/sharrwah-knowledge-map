@@ -177,3 +177,12 @@ That is inside the projection of 30 October's milestone (700 million to a billio
 
 That is a little under section 10's 890, and about three and a half times the budget. No higher plan has been needed: the usage limit hasn't stopped an agent.
 
+## 14. The inspection of Q3's check and the final review (30 October, 09:20 to 09:40 UTC)
+
+- **10.0 million.** The inspector ran both briefs' scripts on the merged model and on fixtures it built, and found 11 must-fix faults (`inspection-Q3R.md`):
+  - **Q3's check:** covered had no grain; a held miss couldn't be told from a covered row; partly didn't say what its rest was; the time rules for the founder's decisions and for subjects contradicted the founder's decisions and the architecture plan; `wrong time` came from the model's own timing; `bundles` had drifted from Q3 as agreed;
+  - **the review:** Q3's check wasn't reviewed; the selection left out most cells where an error changes a count; "counted twice" and "ruled differently" asked for one answer where the conventions give two.
+- **What changed:** both briefs and both scripts were rewritten to the inspector's fixes, which were exact. `q3.py` gains `where` (which cells cite a statement, by its id), a `rest` column, one file per batch, and a check that computes `bundles` and `wrong time` and refuses a held miss on a key already cited. `review_select.py` groups the items by cell, adds the count-changing cells, the strained landings, the parts' leads, Q3's rows and every coordinator row and note, samples every part, splits each share into batches of 30, and checks the reviewers' coverage. Tested on the inspector's cases.
+- **The review's size:** 862 items before domain C is merged, about 1,100 after. At the mapping's rates it may cost about 150 to 200 million, against section 13's 90 for the review and its corrections; it is re-projected after its first batch. That would put the extent near the top of its range, about a billion. By the standing decision of 27 October, the budget never costs evidence; the figure goes to the founder with the next report.
+- **Lesson:** a brief the coordinator writes alone, without a run on real data, carries the coordinator's blind spots. An inspector who runs the scripts finds them, as in section 1.
+
