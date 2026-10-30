@@ -261,3 +261,114 @@ CM-CNT-008	shopify	core	SH-C-034/boundary/SH-S-6222	own API scope write_legal_po
 CM-CNT-008	shopify	shows	SH-C-034/responsible/SH-S-0014	merchant agrees to provide refund, shipping and terms policies
 CM-CNT-008	salla	core	SA-C-093/decides/SA-S-2100	information pages carry the store's policies
 CM-CNT-008	salla	core	SA-C-093/reason/SA-S-5034	an information page marked as the return and exchange policy page
+CM-CHN-001	shopify	core	SH-C-135/where/SH-S-1534	settings entry Sales channels
+CM-CHN-001	shopify	core	SH-C-135/where/SH-S-1496	admin section titled Sales channels
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-0956	own API scope read_channels
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6100	webhook channels/delete, read_publications
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6101	webhook collection_publications/create
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6104	webhook product_publications/create
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-1168	webhook topic collection_publications/create
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6283	write_publications and the user's permission to publish a product
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6284	write_publications and the user's permission to unpublish a product
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6281	write_publications and the user's permission to publish a collection
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-5020	products' publications routes need the PRODUCTS permission
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-7006	plan row Sell on social and marketplaces, Included on all four plans
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-0699	a sales channel app connects the store to surfaces outside Shopify
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-0700	sales channels such as Google, Meta and Amazon
+CM-CHN-001	shopify	extension-point	SH-C-135/decides/SH-S-0701	when a partner should create a sales channel
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-2254	extension target channel_config
+CM-CHN-001	shopify	extension-point	SH-C-135/boundary/SH-S-6105	app configured as a Sales Channel
+CM-CHN-001	shopify	extension-point	SH-I-1868	App Store category Sales channel apps
+CM-CHN-001	salla	core	SA-C-097/where/SA-S-1687	admin link Sales channels, /channels
+CM-CHN-001	salla	core	SA-C-097/where/SA-S-3551	dashboard app @salla.sa/ui-merchant-channel
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1606	webhook product.publish: product published in a new sales channel
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1598	webhook product.unpublish
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1596	webhook product.channels.changed: a product's display channels updated
+CM-CHN-001	salla	shows	SA-C-097/decides/SA-S-2962	flag instagram-api, not released
+CM-CHN-001	salla	shows	SA-C-097/decides/SA-S-3513	flag brand-sales-channels, not released
+CM-CHN-001	salla	shows	SA-C-097/reason/SA-S-5046	a channel shows disabled where not available to the store
+CM-CHN-002	shopify	own-service	SH-C-136/where/SH-S-0056	Shop is a Shopify application available to Eligible Merchants
+CM-CHN-002	shopify	own-service	SH-C-136/where/SH-S-2756	Shop app on Google Play, publisher Shopify Inc.
+CM-CHN-002	shopify	own-service	SH-C-136/responsible/SH-S-0244	Shop a Shopify Consumer Service; Shopify engaged by the customer
+CM-CHN-002	shopify	shows	SH-C-136/where/SH-S-0723	Shop defined: shopping destination and delivery tracking app
+CM-CHN-002	shopify	shows	SH-C-136/decides/SH-S-0724	available where Shopify Payments is supported
+CM-CHN-002	shopify	shows	SH-C-136/decides/SH-S-0725	needs Shopify Network Intelligence enabled
+CM-CHN-002	shopify	shows	SH-C-136/responsible/SH-S-0057	transaction completed on the merchant's store
+CM-CHN-002	shopify	shows	SH-C-136/boundary/SH-S-0847	API label Shop API
+CM-CHN-002	salla	core	SA-C-096/where/SA-S-1840	admin link Mahally, /channel/mahally
+CM-CHN-002	salla	core	SA-C-096/where/SA-S-3539	dashboard app @salla.sa/ui-merchant-mahally
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2067	Plus plan line منصة محلي under knoat-albyaa
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2009	Plus plan line كوبونات محلي
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2438	staff permission mahally_browse
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2439	staff permission mahally_edit
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-3238	released flag mahly, Plus, Pro and Special
+CM-CHN-002	salla	core	SA-C-096/boundary/SA-S-5044	orders from Mahally received as the store's own
+CM-CHN-002	salla	own-service	SA-C-094/where/SA-S-0002	Salla offers Mahally among connected products
+CM-CHN-002	salla	shows	SA-C-096/where/SA-S-0005	Mahally defined: discovery and sales channel
+CM-CHN-002	salla	shows	SA-C-096/responsible/SA-S-5043	agreeing to Mahally's privacy and usage terms
+CM-CHN-002	salla	shows	SA-C-096/reason/SA-S-5045	Mahally shows only products that can be bought
+CM-CHN-002	salla	shows	SA-C-096/decides/SA-S-3146	flag mahally-customer-wallet, not released
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7049	plan row Import unlimited orders from marketplaces, Included
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7050	plan row 50 synced marketplace orders per month, Free
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7051	plan row Over 50 synced marketplace orders, 1% up to $99/mo
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-1123	own API scope read_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-1124	own API scope write_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-6033	read_orders or read_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-6037	read_returns or read_marketplace_returns
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-5936	marketplace fulfillment orders scopes
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-6228	write_marketplace_orders and capture_payments_for_orders permission
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-6231	write_marketplace_returns and refund_orders permission
+CM-CHN-003	shopify	extension-point	SH-C-137/where/SH-S-6361	app route apps/shopify-marketplace-connect
+CM-CHN-003	shopify	shows	SH-C-137/where/SH-S-0727	connect the catalog to marketplaces and sync orders, listings, inventory
+CM-CHN-003	shopify	shows	SH-C-137/responsible/SH-S-0527	marketplace facilitators collect and remit sales tax
+CM-CHN-003	salla	core	SA-C-097/decides/SA-S-2195	Special plan line الربط بمنصات التسوّق العالمية
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-1577	admin section Listings
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-5197	admin route listings
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-5199	admin route mappings
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6090	webhook collection_listings/add, read_product_listings
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6093	webhook product_feeds/create
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6094	webhook product_feeds/full_sync
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-1047	own API scope write_product_feeds
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-1167	webhook topic collection_listings/update
+CM-CHN-004	shopify	shows	SH-C-138/decides/SH-S-5198	route listings:channel-mapping eligible to two betas
+CM-CHN-004	shopify	extension-point	SH-I-1876	App Store category Product feed apps
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3201	released flag google-merchant-feed
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3203	released flag facebook-catalog-feed
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3205	released flag snapchat-catalog-feed
+CM-CHN-005	shopify	core	SH-C-141/where/SH-S-0729	stores sell each other's products in Shopify
+CM-CHN-005	shopify	core	SH-C-141/decides/SH-S-0730	free with all Shopify plans, subject to eligibility
+CM-CHN-005	shopify	core	SH-C-141/decides/SH-S-7013	plan row Sell and source products with Shopify Collective
+CM-CHN-005	shopify	core	SH-C-141/boundary/SH-S-7467	transaction type SHOPIFY_COLLECTIVE_DEBIT
+CM-CHN-005	shopify	core	SH-C-141/boundary/SH-S-7468	transaction type SHOPIFY_COLLECTIVE_CREDIT
+CM-CHN-005	shopify	shows	SH-C-141/responsible/SH-S-7475	supplier agrees payment terms with each retailer
+CM-CHN-006	shopify	extension-point	SH-C-195/where/SH-S-2701	App Store category Mobile app builder apps
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6059	AndroidApplication and AppleApplication scopes enabled for apps
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6058	contact Shopify Support to enable the scope for your app
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6243	write scope enabled for an app by Shopify Support
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-1837	admin link Mobile app, /channel/mobile
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-3560	dashboard app @salla.sa/ui-merchant-app-maker
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-3579	dashboard app @salla.sa/app-maker-editor
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2068	Plus plan line صانع التطبيقات, extra fees, under knoat-albyaa
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2192	Special plan line تطبيق خاص بمتجرك
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2413	staff permission app_builder_management
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3330	released flag app-maker
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3331	released flag store-app-webview
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3333	released flag store-app-scopes
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3337	released flag app-editor-enhancements
+CM-CHN-006	salla	core	SA-C-174/decides/SA-S-5078	renewal needs a paid Salla plan
+CM-CHN-006	salla	own-service	SA-C-094/where/SA-S-0002	Salla offers an app maker among connected products
+CM-CHN-006	salla	extension-point	SA-C-094/where/SA-S-1204	app type App Maker in the extension-points list
+CM-CHN-006	salla	shows	SA-C-094/where/SA-S-0008	App Maker defined: a branded mobile commerce app
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3327	flag store-app-request, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3328	flag store-ios-app, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3329	flag store-android-app, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3160	flag app-maker-ai-components, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3332	flag mobile-laverne-theme, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3336	flag update-app-request-for-testing, not released
+CM-CHN-006	salla	shows	SA-C-094/responsible/SA-S-5035	merchant moves the app to its own Apple and Google accounts
+CM-CHN-006	salla	shows	SA-C-094/reason/SA-S-5036	move needed under Apple's and Google's IP policies
+CM-CHN-006	salla	shows	SA-C-094/boundary/SA-S-5037	subscription using the merchant's own developer accounts
+CM-CHN-006	salla	shows	SA-C-174/where/SA-S-2211	App Maker publishing policy page
+CM-CHN-006	salla	shows	SA-C-174/responsible/SA-S-5079	Salla's company disclaims liability for the merchant's breaches
+CM-CHN-006	salla	shows	SA-C-174/boundary/SA-S-5080	checkbox agreeing to the publishing policy
+CM-CHN-006	salla	shows	SA-C-174/reason/SA-S-5081	charity apps may be rejected or delayed for Apple's reasons
