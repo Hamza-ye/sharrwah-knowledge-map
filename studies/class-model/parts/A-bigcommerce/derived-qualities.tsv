@@ -1,0 +1,4 @@
+cap_id	platform	quality	value	key	scope
+CM-PLN-001	bigcommerce	GMV cap per plan (Core, Growth, Scale, Performance)	Up to $30K TTM Up to $100K TTM $33,333/mo* Custom	BC-C-030/decides/BC-S-0185	plans Core, Growth, Scale, Performance (columns of the plan comparison table)
+CM-PLN-001	bigcommerce	GMV at which Scale upgrades to Performance	Once TTM GMV reaches $2 million, the account will automatically upgrade to Performance.	BC-C-030/decides/BC-S-0187	Scale plan
+CM-PLN-004	bigcommerce	interest on late fees, EU and UK	If Service fees are not paid on the Billing Date, interest will accrue on such outstanding fees at the rate of 8% above the European Central Bank’s base rate per annum.	BC-C-030/decides/BC-S-0189	Customers domiciled within the European Union or the United Kingdom

@@ -1,1 +1,6 @@
 cap_id	platform	filler	key
+CM-ACC-002	bigcommerce	the law of New York (governing law in the Contracting Entity table for merchants resident in the United States)	BC-C-079/responsible/BC-S-0428
+CM-ACC-002	bigcommerce	the law of England and Wales (governing law for merchants resident in the United Kingdom)	BC-C-079/responsible/BC-S-0429
+CM-ACC-002	bigcommerce	the law of Ireland (governing law for merchants resident in the European Union)	BC-C-079/responsible/BC-S-0430
+CM-ACC-002	bigcommerce	the law of New South Wales, Australia (governing law for merchants resident in Australia)	BC-C-079/responsible/BC-S-0431
+CM-ACC-002	bigcommerce	the law of New York (governing law for merchants in any other jurisdiction)	BC-C-079/responsible/BC-S-0432
