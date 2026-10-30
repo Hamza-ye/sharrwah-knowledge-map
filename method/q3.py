@@ -133,7 +133,7 @@ def cmd_slice(a):
         if area not in shown:
             shown.add(area)
             own = [c for c in sorted(caps) if caps[c]["area"] == area]
-            why = "" if own else (" (domain H's areas hold none by design)" if seed_dom.get(area) == "H" else " (none merged: its domain may not be merged yet)")
+            why = "" if own else (" (domain H's areas hold none by design)" if seed_dom.get(area) == "H" else " (the model gives this area no capability of its own: its rows may land in another area's, found with class_slice.py caps)")
             print(f"# area {area}: {len(own)} capabilities{why}")
             for c in own:
                 print(line(c, caps, kinds))
