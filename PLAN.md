@@ -8,7 +8,7 @@ The coordinating session wrote this plan after the founder asked who would manag
 
 Sharrwah is one platform for many markets: a merchant platform of the class that Shopify represents worldwide and Salla and Zid in the region. Yemen is its first market, not its design target ([the founder's intent, 29 October](founder-decisions.tsv)).
 - **Its extent comes from the class, not from the launch.** What the class establishes, and the slots it leaves for outside parties, belong to the platform. What fills a slot in a market (its providers, partners and law) is that market's setup, and it never defines the platform.
-- **So the work first states the class's model, its extent,** from the evidence held. Architecture and the model's detail then grow together, area by area, beside the subjects. The decisions that would be expensive to change later are made on evidence within the model.
+- **So the work first states the class's model, its extent,** from the evidence held. Architecture then gets its own plan, and on the founder's go on it, architecture and the model's detail grow together beside the subjects. The decisions that would be expensive to change later are made on evidence within the model.
 - **Narrowing needs a reason.** Narrowing what the class establishes needs a founder decision or an engineering reason with evidence. Ordering it is ordinary engineering. Launch and today's resources decide when, never whether.
 
 - **One platform, many markets.** The platform is built once and each market is set up on it: product line engineering (Pohl, Böckle & van der Linden 2005).
@@ -25,7 +25,7 @@ Sharrwah is one platform for many markets: a merchant platform of the class that
 4. a decision register states, for each subject, what follows by engineering rule, engineering's rulings (each listed for the founder's veto) and what the founder decided or deferred;
 5. nothing in the register rests on a derived document, or on the founder's words taken as evidence of what a platform does.
 
-Architecture doesn't wait for this point: once the model's extent has come to the founder, it grows area by area beside the subjects (section 4, Stage 4A). At the shore, the first version's build is planned on the architecture written by then. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
+Architecture doesn't wait for this point. Its own plan comes to the founder with the model's extent at GM, and architecture starts on the founder's go on it, then grows beside the subjects (section 4, Stage 4A; the founder, 30 October). At the shore, the first version's build is planned on the architecture written by then. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
 
 ## 2. What changes from the run so far
 
@@ -41,7 +41,7 @@ Architecture doesn't wait for this point: once the model's extent has come to th
 **The founder decides what is genuinely theirs:**
 1. **What Sharrwah does,** by the founder's intent of 29 October: which markets, in what order and when, and which merchants Sharrwah goes after first; plans and prices; commercial agreements and partners; the company, its legal structure and licences; spending; and whether Sharrwah's own company operates a service in the merchant's business (payments, balances, financing, shipping, a marketplace, point of sale, data services, a buyer app), where and when. The platform's capabilities for each remain the class's: Sharrwah rules out nothing the class shows, and the platform keeps room for each, whoever provides it.
 2. **Company and legal questions:** legal entities, licences, whether Sharrwah holds funds, and partners. Where law is involved, these are decided with a lawyer.
-   - **The guard** (the founder, 18 October): no arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision, whether Sharrwah itself holds it or a payment company holds it in an account opened through Sharrwah. Building or switching on either arrangement, A or B, is the founder's decision too (Decision 1, 25 October). The platform keeps room for both (26 October), and keeping room isn't building.
+   - **The guard** (the founder, 18 October): no arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision, whether Sharrwah itself holds it or a payment company holds it in an account opened through Sharrwah. Building or switching on either arrangement, A or B, is the founder's decision too (Decision 1, 25 October). The platform keeps room for both (26 October), as the architecture plan defines keeping room (Stage 4A).
 3. **Spending,** in detail: stores on paid plans and consultations.
 4. **What only the founder can do:**
    - capturing from inside Yemen;
@@ -63,7 +63,7 @@ Nothing reaches the founder without a decision attached. Each item comes with it
 - by the founder's intent, everything not on the founder's list:
   - the class's model and its architecture;
   - which shape is better where the references differ;
-  - how the platform keeps room for what is not built yet. Keeping room means no commitment closes it; it doesn't mean designing it before its time.
+  - how the platform keeps room for what is not built yet. What keeping room means is stated in the architecture plan, by established practice, with S-02's D9 as its worked example (Stage 4A; the founder, 30 October).
 
   Each such ruling is listed at the next report, and the founder may veto it.
 
@@ -216,11 +216,21 @@ The founder's intent puts the class's model before architecture. The subjects co
 - **The kind and the count,** by one rule for all (section 6's kinds). A capability's count is how many of the five place it in their core or as their own service; a platform Q1 holds nothing for is not counted as lacking it. It is `class` where that count is at least one, and `slot` where every platform that shows it leaves it to third parties (an extension point) or says another party does it (outside). What fills a slot is `world`: a slot filler, never a capability. The dry run's review may refine the rule, which then applies to all.
 - **The subjects' points.** After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. Each later subject's points land as it ends.
 - **The check for what it misses.** At the end, Q3's reconciliation places the Knowledge Map's 179 questions and the 81 payment rows against the model. A row the model doesn't cover is a candidate miss, checked against the evidence.
-- **An independent review** of the whole extent, by an agent that made none of it. Then **the extent's report** goes to the founder at GM, with engineering's rulings for veto, after the orientation page is updated.
-- **Then the architecture and the model's detail, area by area,** beside the subjects, with spikes for the questions the model raises.
-  - **Where the references' shapes differ,** each area's design weighs which is better, and states why. It weighs the founder's quality order and regional fit (`founder-decisions.tsv`, 28 and 29 October), and tests the hypothesis in [`reports/intent-review.md`](reports/intent-review.md), section 14.
-  - **Until the founder gives scale numbers,** engineering assumes scale bands and states them.
-  - **An area's architecture that would bind a question a subject not yet run covers,** such as S-09's currency of records or S-03's contracting company, keeps that variation point open until the subject has run.
+- **An independent review** of the whole extent, by an agent that made none of it. Then **the extent's report** goes to the founder at GM, with the architecture plan and engineering's rulings for veto, after the orientation page is updated.
+- **The architecture plan** (the founder, 30 October), in `architecture/plan.md`. It is written by established practice before architecture starts, reviewed by an agent that made none of it, and brought to the founder at GM with the extent's report. Architecture starts on the founder's go on it. Its decisions stay engineering's, each listed for the founder's veto. It states:
+  - **what architecture needs to know, and where each part comes from:** the class's model, the subjects' registers, the founder's decisions and quality order, scale, established designs and engineering writing, and spikes;
+  - **who decides, and how each decision is made, recorded and checked;**
+  - **which areas come first, and which subjects must land before which area.** The model's areas index what the class does, while architecture's parts are cut by what changes together (Parnas 1972). So the plan says how one maps to the other, and which decisions cut across every area and come before any;
+  - **what keeping room means** (section 3), with S-02's D9 as its worked example: options kept by design at a stated cost (Baldwin & Clark 2000; Sullivan et al. 2001), variation points with their binding time (Pohl, Böckle & van der Linden 2005; Svahnberg, van Gurp & Bosch 2005), and checks that keep them open (Ford, Parsons & Kua 2017). It guards both failures: an option closed by a default nobody examined, and one built before it is worth its cost;
+  - **how the whole is evaluated,** not only each decision, against scenarios drawn from the founder's quality order (Kazman, Klein & Clements 2000).
+
+  It carries the rules already set:
+  - **where the references' shapes differ,** each design weighs which is better, and states why. It weighs the founder's quality order and regional fit (`founder-decisions.tsv`, 28 and 29 October), and tests the hypothesis in [`reports/intent-review.md`](reports/intent-review.md), section 14;
+  - **until the founder gives scale numbers,** engineering assumes scale bands and states them, with the decisions each band touches;
+  - **an area's architecture that would bind a question a subject not yet run covers,** such as S-09's currency of records or S-03's contracting company, keeps that variation point open until the subject has run.
+
+  Its practice: architecture processes and descriptions (ISO/IEC/IEEE 42020:2019 and 42010:2022), design by quality drivers (Cervantes & Kazman 2016), and decision records (Nygard 2011). Its first part, what architecture needs to know, is drafted with the dry run's conventions, so the extent records what architecture will need before the other domains run. **Budget:** about 30 million agent tokens, counted beside the extent's.
+- **Then, on the founder's go, architecture and the model's detail,** in the order the plan sets, beside the subjects, with spikes for the questions the model raises.
 - **Budget:** 250 million agent tokens for the extent (the founder, 29 October). Past a quarter over it, the cost comes to the founder as section 8 says, and the work goes on.
 
 ### Stage 5. Close-out
@@ -243,7 +253,7 @@ The founder's intent puts the class's model before architecture. The subjects co
 | G1 | After the pilot | Scale up, change the method, or re-frame |
 | G2 | After the subject list | Business scope (answered 26 October: "evidence" for all ten). Under the intent, nothing the class shows is ruled out |
 | G3 | After each subject | The decisions the subject raised that are on the founder's list (section 3); engineering's rulings come listed for veto |
-| GM | After the class's model's extent | A hold point, not a decision: the extent's report comes to the founder, with engineering's rulings for veto, and architecture starts only after it (the founder, 29 October) |
+| GM | After the class's model's extent | The extent's report, with engineering's rulings for veto, and the architecture plan: architecture starts on the founder's go on the plan (the founder, 29 and 30 October) |
 | G4 | At close-out | Accept the register and the class's model's extent (engineering's rulings on its detail come listed for veto), and plan the first version's build |
 
 G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (section 11).
@@ -254,7 +264,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 - **At G1, after the pilot:** whether the pilot's entry lets the founder decide, and the decisions the pilot raised.
 - **At G2 (answered):** business scope, marked on the subject list.
 - **At G3, after each subject:** that subject's decisions on the founder's list.
-- **At GM, after the model's extent:** its report.
+- **At GM, after the model's extent:** its report, and the go on the architecture plan.
 - **At G4:** accepting the register and the class's model's extent.
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
@@ -408,6 +418,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 
 ## 10. Sources
 
+- Baldwin, C., Clark, K. (2000). *Design Rules, Vol. 1: The Power of Modularity.* MIT Press. Modules as options: what a design keeps open, and at what cost.
 - Boehm, B. (1988). A spiral model of software development and enhancement. *IEEE Computer* 21(5). Risk-driven sequencing; the riskiest part first.
 - Cervantes, H., Kazman, R. (2016). *Designing Software Architectures: A Practical Approach.* Addison-Wesley. Attribute-Driven Design: options come from known design concepts.
 - Calder, M., Kolberg, M., Magill, E., Reiff-Marganiec, S. (2003). Feature interaction: a critical review and considered forecast. *Computer Networks* 41(1). Interactions between subjects.
@@ -417,9 +428,12 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - Czarnecki, K., Helsen, S., Eisenecker, U. (2005). Staged configuration through specialization and multilevel configuration of feature models. *Software Process: Improvement and Practice* 10(2). Who binds a variant, and when.
 - Fagan, M. (1976). Design and code inspections to reduce errors in program development. *IBM Systems Journal* 15(3). Inspection, used here on briefs.
 - Fairbanks, G. (2010). *Just Enough Software Architecture: A Risk-Driven Approach.* Marshall & Brainerd. Effort in proportion to risk.
+- Ford, N., Parsons, R., Kua, P. (2017). *Building Evolutionary Architectures.* O'Reilly. Fitness functions: checks that keep an architectural property from eroding.
 - Gotel, O., Finkelstein, A. (1994). An analysis of the requirements traceability problem. *First International Conference on Requirements Engineering.* Tracing each result to its source.
 - IEEE 1012, Standard for System, Software, and Hardware Verification and Validation. Independent review.
 - ISO/IEC/IEEE 15026-2:2022, Systems and software engineering, Assurance case. Claims, arguments and evidence: every claim a fact, a reading or an assumption.
+- ISO/IEC/IEEE 42010:2022, Software, systems and enterprise, Architecture description. Stakeholders, concerns, viewpoints and views, and decisions with their rationale.
+- ISO/IEC/IEEE 42020:2019, Software, systems and enterprise, Architecture processes. Architecture governance, management, conceptualization, evaluation and elaboration.
 - Kang, K., Cohen, S., Hess, J., Novak, W., Peterson, A. (1990). *Feature-Oriented Domain Analysis (FODA) Feasibility Study.* CMU/SEI-90-TR-21. Domain analysis from existing systems, which is what Q1 is.
 - Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004, Software Engineering Institute. Change scenarios that test whether an architecture's decisions hold as conditions change.
 - Mill, J. S. (1843). *A System of Logic.* The methods of agreement and difference.
@@ -430,6 +444,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - Poppendieck, M., Poppendieck, T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley. Deciding at the last responsible moment.
 - Rahm, E., Bernstein, P. (2001). A survey of approaches to automatic schema matching. *VLDB Journal* 10(4). Why matching on names alone fails.
 - Schmid, K. (2002). A comprehensive product line scoping approach and its validation. *ICSE 2002.* Scoping by what will be built.
+- Sullivan, K., Griswold, W., Cai, Y., Hallen, B. (2001). The structure and value of modularity in software design. *ESEC/FSE 2001.* Real options applied to Parnas's modules.
 - Svahnberg, M., van Gurp, J., Bosch, J. (2005). A taxonomy of variability realization techniques. *Software: Practice and Experience* 35(8). How a variation point is realized, by when it is bound.
 
 ## 11. Changes
@@ -569,14 +584,25 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Section 9:** the orientation page.
 
   **What this change removes or weakens,** with the risk each part controlled:
-  - **The founder's "scope" and "building ahead"** kept engineering from narrowing or overbuilding unseen. Reassigned: narrowing needs a reason with evidence, keeping room means no commitment closes an option, and each engineering ruling comes to the founder for veto.
+  - **The founder's "scope" and "building ahead"** kept engineering from narrowing or overbuilding unseen. Reassigned: narrowing needs a reason with evidence, keeping room means no commitment closes an option (taken out on 30 October: the architecture plan defines keeping room), and each engineering ruling comes to the founder for veto.
   - **"Everything else is decided while building"** kept the analysis small. Weakened: the class's extent is modelled, breadth first. The risk that the model grows without bound is held by depth only area by area, and by its budget.
   - **G3 on every founder item** made each decision visible. Weakened to the founder's list; the rest comes as rulings for veto.
   - **Q3 once, at close-out,** kept the rows from steering the analysis. Moved: the rows check the model only after its extent is built from the evidence, and the extent's parts don't read them, so they still can't steer it.
   - **The product gap as the founder's design decision** put one market's needs before the founder. Reassigned: building it goes with that market's setup, the founder's; how the platform keeps room for it is engineering's.
   - **"Its business model" in the founder's scope** is replaced by the founder's list: plans and prices, partners, and Sharrwah's own services.
-  - **The design after the shore, "under its own plan",** kept architecture from binding questions not yet analysed. Weakened: architecture grows area by area after GM. An area's architecture keeps open any variation point a subject not yet run covers.
+  - **The design after the shore, "under its own plan",** kept architecture from binding questions not yet analysed. Weakened: architecture grows area by area after GM. An area's architecture keeps open any variation point a subject not yet run covers. Vetoed by the founder on 30 October (below).
   - **Vendor choices that are expensive to change** went to the founder (step 5). Reassigned: engineering rules, listed for veto. This is what made S-02's 142 founder items.
   - **Q1's 84 unclear matches,** retired unreviewed on 12 October, become engineering's rulings, each join on role a reading the coordinator checks. The 88 matches become joins, not hints.
   - **Fixed after an independent reading of this change** (`reports/plan-change-check.md`): the leftovers it found in sections 2, 3, 5 and 6.
+- **30 October 2026, the founder's veto and change** (`founder-decisions.tsv`, 30 October; `founder-messages/2026-10-30-architecture-plan.md`). Changed:
+  - **Section 4, Stage 4A:** architecture gets its own plan, written by established practice, reviewed independently, and brought to the founder at GM with the extent's report. Architecture starts on the founder's go on it.
+  - **Section 5:** GM brings the extent's report and the architecture plan, for the founder's go.
+  - **Section 3, and the intent's row:** line (3) is taken out. What keeping room means is stated in the architecture plan, with S-02's D9 as its worked example.
+  - **Section 1:** architecture starts on the go on its plan.
 
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **Architecture starting at GM without a further go** kept the work moving. Weakened by one founder go, on a plan the founder reads with the extent's report. Accepted by the founder. In return, it restores the control the fold of 29 October had weakened: architecture under its own plan.
+  - **Line (3)'s "it doesn't mean designing it before its time"** held against building options before they are worth their cost. Reassigned: the architecture plan's definition guards both failures, an option closed by a default nobody examined and one built too early.
+  - **Until the architecture plan exists, nothing defines keeping room.** Accepted: no architecture is designed before the go on the plan, and the extent commits to no design.
+
+  **What the coordinator missed.** The fold listed its own weakening of "under its own plan" without proposing what would replace it, and line (3) was the coordinator's wording, not tested against practice before it went to the founder. From now on, a weakening the coordinator lists comes with its replacement or goes to the founder as a question, and wording proposed for the founder's decisions is checked against established practice first.

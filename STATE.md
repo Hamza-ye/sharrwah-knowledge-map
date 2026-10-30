@@ -14,11 +14,12 @@
 **The founder's intent (29 October 2026).** Sharrwah is a merchant platform of the class that Shopify represents worldwide and Salla and Zid in the region. Its extent comes from the class, not from the launch, and what fills a slot in a market never defines the platform (`founder-decisions.tsv`; the handoff and the go, verbatim, in `founder-messages/`; the review, [`reports/intent-review.md`](reports/intent-review.md)).
 - **The founder decides** the items on their list (`PLAN.md`, section 3). Everything else is engineering's, and each ruling is listed for the founder's veto.
 - **The plan** now puts the class's model before architecture (`PLAN.md`, Stage 4A). The subjects continue beside it, as the analysis of where the class varies by market.
-- **Architecture** starts once the extent's report has come to the founder (gate GM). The extent's budget is 250 million agent tokens.
+- **Architecture** has its own plan, written by established practice, which comes to the founder with the extent's report at gate GM. Architecture starts on the founder's go on that plan (30 October). The extent's budget is 250 million agent tokens, and the plan's about 30 million.
+- **The founder's change of 30 October** (`founder-decisions.tsv`): line (3) is taken out of the intent's row. What keeping room means is stated in the architecture plan, by established practice, with S-02's D9 as its worked example.
 
-**Open gate:** GM, after the class's model's extent. S-02 has reached its end. Under the intent, its nine decisions are engineering's rulings, listed for the founder's veto.
+**Open gate:** GM, after the class's model's extent: its report, and the founder's go on the architecture plan. S-02 has reached its end. Under the intent, its nine decisions are engineering's rulings, listed for the founder's veto.
 
-**Waiting on the founder:** nothing until the extent's report. The founder may veto any ruling at any time.
+**Waiting on the founder:** nothing until GM. The founder may veto any ruling at any time.
 
 *Settled on 28 October:*
 - **The founder's evidence is in.** The founder's local agent took Salla and Zid as far as they can be taken:
@@ -132,11 +133,12 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
    1. the orientation page, updated to the founder's intent and checked for its links and quotes, since the frame has changed (`PLAN.md`, section 9);
    2. the inspection of `B-extent.md`, which changed after its last inspection; then the anchor's dry run on catalogue and inventory, with WooCommerce mapped onto it;
    3. the review of its output, which checks every placement against all of Q1's statements;
-   4. the conventions and a checker;
+   4. the conventions and a checker, with the architecture plan's first part, what architecture needs to know, drafted alongside so the extent records it (`PLAN.md`, Stage 4A);
    5. the other domains and platforms; the merge, with each capability's kind and count, and S-01's and S-02's variation points landed on the model;
    6. Q3's check for what the model misses, then an independent review of the whole extent;
-   7. the extent's report, and the orientation page updated before it reaches the founder.
-2. **After GM:** architecture and the model's detail, area by area, beside the subjects.
+   7. the architecture plan finished (`architecture/plan.md`), and reviewed by an agent that made none of it;
+   8. the extent's report and the architecture plan, with the orientation page updated before they reach the founder at GM.
+2. **On the founder's go on the architecture plan:** architecture and the model's detail, in the order the plan sets, beside the subjects.
 
 **For later:** "depth over speed" isn't decided. It was the coordinator's reading, not the founder's decision, and it comes back when a second market is near (`founder-messages/2026-10-29-intent-handoff.md`).
 
