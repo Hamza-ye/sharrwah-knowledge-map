@@ -275,3 +275,79 @@ CM-TAX-007	zid	shows	ZD-C-053/decides/ZD-S-0828	linking with the cashier availab
 CM-TAX-007	zid	shows	ZD-C-053/boundary/ZD-S-0830	the merchant creates a device activation code in Fatoora
 CM-TAX-007	zid	shows	ZD-C-053/reason/ZD-S-0831	the aim: compliance with e-invoicing phase two
 CM-TAX-008	zid	core	ZD-C-060/responsible/ZD-S-0842	refused customs duties charged to the merchant from the Zid wallet (Global Shipping)
+CM-SHP-001	zid	core	ZD-C-062/where/ZD-S-0855	shipping settings: restrictions per product or region, carrier priority, free shipping
+CM-SHP-001	zid	core	ZD-C-060/where/ZD-S-0836	admin route لوحة التحكم > اللوجستيات > طرق الشحن
+CM-SHP-001	zid	core	ZD-C-062/where/ZD-S-0024	Merchant API folder Shipping, List Store Shipping Methods
+CM-SHP-001	zid	core	ZD-C-062/boundary/ZD-S-0102	access scope shipping.read on GET delivery-options
+CM-SHP-001	zid	core	ZD-C-063/where/ZD-S-0857	admin route قيود الشحن والدفع, naming shipping restrictions
+CM-SHP-001	zid	core	ZD-C-063/decides/ZD-S-0858	plans on which قيود الشحن و الدفع is available
+CM-SHP-001	zid	shows	ZD-C-062/boundary/ZD-S-0856	field delivery_option_id
+CM-SHP-001	zid	shows	ZD-C-033/decides/ZD-S-0745	a country's currency activated activates shipping to it
+CM-SHP-002	zid	core	ZD-C-060/where/ZD-S-0835	direct shipping, activated from the dashboard, fees from the merchant's wallet
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0838	label prices differ with the Zid plan
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0365	plan card Rise: shipping rates from 11 SAR
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0380	plan card Professional: shipping rates from 8.5 SAR
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0468	staff permission manage.zidship.settings
+CM-SHP-002	zid	core	ZD-I-0504	staff permission view.zidship.reports, an entry no statement covers
+CM-SHP-002	zid	core	ZD-I-0522	staff permission manage.zidship.payments, an entry no statement covers
+CM-SHP-002	zid	core	ZD-I-0188	plan line Shipping Label Printing
+CM-SHP-002	zid	core	ZD-I-0204	plan line Cancel & Edit Shipping Labels
+CM-SHP-002	zid	core	ZD-I-0205	plan line Automatic Label Generation
+CM-SHP-002	zid	core	ZD-I-0209	plan line Prepaid Label Packages
+CM-SHP-002	zid	core	ZD-I-0220	plan line Batch Print Shipping Papers
+CM-SHP-002	zid	core	ZD-I-0210	plan line Merchant Pickup Service
+CM-SHP-002	zid	core	ZD-I-0259	plan line Schedule Order Pickups - Zid Ship
+CM-SHP-002	zid	core	ZD-I-0217	plan line Multiple Shipping Types
+CM-SHP-002	zid	extension-point	ZD-C-060/boundary/ZD-S-0844	fulfillment and shipping apps integrated with ZidShip, a fee per transaction
+CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0839	Zid an intermediary, not a carrier; compensation by the carriers' policies
+CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0841	each shipping service under its carrier's terms
+CM-SHP-002	zid	outside	ZD-C-060/boundary/ZD-S-0843	the approved carrier measures the shipment's weight
+CM-SHP-002	zid	shows	ZD-C-060/decides/ZD-S-0837	plan line Zid Logistics: One Contract for 35 Carriers; core in CM-SHP-015
+CM-SHP-002	zid	shows	ZD-I-0416	Zid Ship's terms and conditions
+CM-SHP-009	zid	core	ZD-I-0496	staff permission manage.zidship.orders, Manage shipping orders
+CM-SHP-009	zid	core	ZD-I-0270	plan line Export Order Fulfillment List
+CM-SHP-009	zid	shows	ZD-C-080/boundary/ZD-S-1011	order set to ready, linked carriers told; cited in CM-ORD-003
+CM-SHP-011	zid	extension-point	ZD-C-061/where/ZD-S-0412	App Market category الشحن والتخزين
+CM-SHP-011	zid	extension-point	ZD-I-0542	shipping apps' type Shipping and fulfillment company
+CM-SHP-011	zid	extension-point	ZD-C-061/decides/ZD-S-0847	shipping and fulfillment apps must be public
+CM-SHP-011	zid	extension-point	ZD-C-060/boundary/ZD-S-0844	fulfillment and shipping apps integrated with ZidShip
+CM-SHP-011	zid	outside	ZD-C-085/responsible/ZD-S-0920	outsourcing services store and prepare; Zid doesn't store
+CM-SHP-015	zid	core	ZD-C-061/decides/ZD-S-0848	shipping activated through licensed logistics companies from within the site (KSA, Gulf)
+CM-SHP-015	zid	core	ZD-C-061/decides/ZD-S-0849	custom connection with a carrier under the merchant's own contract
+CM-SHP-015	zid	core	ZD-C-060/decides/ZD-S-0837	plan line one contract for 35 carriers
+CM-SHP-015	zid	core	ZD-I-0207	plan line Choose Delivery Carriers
+CM-SHP-015	zid	core	ZD-I-0373	plan card Integration with shipping companies via Zid logistics
+CM-SHP-015	zid	extension-point	ZD-C-061/where/ZD-S-0846	Shipping apps integrate logistics and shipping services
+CM-SHP-015	zid	extension-point	ZD-C-061/where/ZD-S-0412	App Market category الشحن والتخزين
+CM-SHP-015	zid	extension-point	ZD-I-0543	shipping apps' type Shipping company only
+CM-SHP-015	zid	extension-point	ZD-C-061/boundary/ZD-S-0853	shipping apps' billing cycle
+CM-SHP-015	zid	extension-point	ZD-C-061/boundary/ZD-S-0854	Shipping Apps fee per transaction
+CM-SHP-015	zid	outside	ZD-C-061/responsible/ZD-S-0851	the logistics companies provide the service; Zid not liable
+CM-SHP-015	zid	shows	ZD-C-061/responsible/ZD-S-0850	merchant and logistics companies' agreements; Zid not a party
+CM-SHP-015	zid	shows	ZD-C-060/reason/ZD-S-0845	reason: one contract instead of each carrier
+CM-SHP-017	zid	shows	ZD-I-0160	help-centre section تتبع الشحنات under Zid Logistics
+CM-SHP-020	zid	core	ZD-I-0214	plan line International Shipping / شحن دولي
+CM-SHP-020	zid	shows	ZD-C-060/responsible/ZD-S-0842	Global Shipping customs duties from the Zid wallet; core in CM-TAX-008
+CM-SHP-020	zid	shows	ZD-I-0411	Global Shipping terms
+CM-SHP-021	zid	shows	ZD-C-115/decides/ZD-S-0470	staff permission manage.store.ecosystem.packaging, Manage packaging
+CM-SHP-022	zid	core	ZD-C-060/responsible/ZD-S-0840	Zid claims compensation from the carrier for a lost shipment
+CM-SHP-022	zid	outside	ZD-C-060/responsible/ZD-S-0840	the carrier decides the claim and its value
+CM-RET-001	zid	core	ZD-C-081/decides/ZD-S-0909	plan line Full & Partial Returns, every plan
+CM-RET-002	zid	core	ZD-C-002/where/ZD-S-0538	refund to the customer from المدفوعات > العمليات; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-I-0521	staff permission refund.zidpay.transactions; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-C-002/decides/ZD-S-0540	permission to refund fully or partly; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-C-081/boundary/ZD-S-1014	refund methods follow the order's payment method
+CM-RET-002	zid	own-service	ZD-C-002/decides/ZD-S-0541	refund needs balance in the Zid Pay account; Zid Pay's maker statement ZD-S-0533
+CM-RET-002	zid	extension-point	ZD-C-002/boundary/ZD-S-0055	refund request sent to the provider's URL
+CM-RET-002	zid	extension-point	ZD-C-002/boundary/ZD-S-0085	provider webhook type refund_status_changed
+CM-RET-002	zid	shows	ZD-C-002/decides/ZD-S-0539	no refund after 30 days
+CM-RET-002	zid	shows	ZD-C-028/boundary/ZD-S-0725	unpaid includes refunded; cited in CM-ORD-015
+CM-RET-003	zid	core	ZD-C-081/where/ZD-S-0005	Merchant API folder Reverse Orders
+CM-RET-003	zid	core	ZD-C-081/boundary/ZD-S-0911	POST reverse-orders, scope orders.read_write
+CM-RET-003	zid	core	ZD-C-081/boundary/ZD-S-0912	Reverse Orders operation Upload bank transfer receipt
+CM-RET-003	zid	core	ZD-C-081/decides/ZD-S-0910	plan line Returned Orders, pro plan
+CM-RET-003	zid	core	ZD-C-081/decides/ZD-S-1013	return label cost from the Zid wallet, up to 7 boxes
+CM-RET-003	zid	core	ZD-I-0208	plan line Choose Return Carriers
+CM-RET-003	zid	extension-point	ZD-I-0447	App Market category المرتجعات والاستبدال
+CM-RET-003	zid	outside	ZD-C-081/where/ZD-S-1012	manual return: label from the merchant's own carrier, not Zid
+CM-RET-003	zid	outside	ZD-C-081/boundary/ZD-S-1015	SMSA and Aramex support returns

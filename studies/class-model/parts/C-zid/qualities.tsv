@@ -9,3 +9,5 @@ CM-PAY-029	zid	COD limit	COD Limit: Up to $1000 (3750 SAR).	ZD-C-015/decides/ZD-
 CM-PAY-019	zid	payment options in a restriction	متاح لك إضافة 3 خيارات دفع ضمن خيارات الدفع.	ZD-C-063/decides/ZD-S-0859
 CM-PAY-015	zid	MIS pay order limits	تقدم لك أم آي إس باي خدمة الدفع بالأقساط وتقسيم قيمة مدفوعات العملاء على 3 دفعات شهرية بدون رسوم تأخير و بحد أدنى للطلب 200 ريال و حد أعلى 2000 ريال.	ZD-C-013/decides/ZD-S-0624
 CM-PAY-005	zid	Mazeed dues: transfer day, age and minimum	تحول شركة زد المبالغ المستحقة في يوم (30) من كل شهر ميلادي إلى حساب التاجر البنكي بشرط أن يكون قد مر على العمليات الشرائية 7 أيام كحد أدنى من تاريخ الشراء، والا تقل المبالغ المحولة عن 500 ريال كحد أدنى.	ZD-C-024/decides/ZD-S-0704
+CM-RET-003	zid	boxes returnable from an order	ويمكن استرجاع حتى 7 صناديق من إجمالي الطلب.	ZD-C-081/decides/ZD-S-1013
+CM-RET-002	zid	refund window	لا يمكن استرداد المبلغ للعميل بعد مرور 30 يوم من تاريخ الشراء	ZD-C-002/decides/ZD-S-0539

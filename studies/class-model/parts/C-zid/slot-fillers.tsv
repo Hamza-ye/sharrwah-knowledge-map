@@ -14,3 +14,5 @@ CM-PAY-002	zid	the Central Bank's approval, required of merchants providing fina
 CM-TAX-003	zid	اللائحة الضريبية للمتاجر الإلكترونية (Saudi stores)	ZD-C-051/reason/ZD-S-0820
 CM-TAX-007	zid	هيئة الزكاة والضريبة والجمارك (ZATCA)	ZD-C-053/boundary/ZD-S-0829
 CM-ORD-008	zid	هيئة الزكاة والضريبة والجمارك (ZATCA), its requirements and regulations	ZD-C-054/reason/ZD-S-1009
+CM-RET-003	zid	SMSA (سمسا), branch drop-off	ZD-C-081/boundary/ZD-S-1015
+CM-RET-003	zid	Aramex (أرامكس), branch drop-off	ZD-C-081/boundary/ZD-S-1015
