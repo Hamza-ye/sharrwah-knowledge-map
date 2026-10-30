@@ -3517,6 +3517,7 @@ CM-OPS-001	salla	shows	SA-C-235/responsible/SA-S-0044	Salla exempt from liabilit
 CM-OPS-001	shopify	core	SH-C-181/where/SH-S-0673	each pod has a pair of data centers, one active, the other a recovery site	G-anchor
 CM-OPS-001	shopify	core	SH-C-181/reason/SH-S-0674	each shard fully isolated so a failure couldn't spiral into a platform outage	G-anchor
 CM-OPS-002	salla	core	SA-C-234/where/SA-S-0047	a line of the status page's component list: Merchant APIs - Operational	G-anchor
+CM-OPS-001	shopify	core	SH-C-181/where/SH-S-0672	a pod is a set of shops on a fully isolated set of datastores (the coordinator, after A-anchor batch 6)	G-anchor
 CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0057	Products > Product Import	G-woocommerce
 CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0058	Products > Product Export	G-woocommerce
 CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0426	onboarding task Import your products	G-woocommerce
