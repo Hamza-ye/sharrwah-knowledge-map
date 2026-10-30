@@ -57,7 +57,7 @@ shopify	signup-onboarding-questions	yes		where		the onboarding question after a 
 shopify	signup-router	yes		where		the sign-up app's routes: its places
 shopify	theme-editor-templates	yes		where		the theme editor's templates: the storefront's page types
 shopify	tinker-tools	yes		where		the Tinker app's tool catalog
-shopify	tracking-carriers	yes		where		the carriers Shopify offers for tracking: a list of what it connects through an interface of its own
+shopify	tracking-carriers	yes		where		the carriers the return form's tracking field lists
 shopify	translatable-resources	yes		decides		what a store can translate and adapt: the items not cited
 shopify	ui-extension-targets	yes		boundary		the places apps extend: the targets not cited
 shopify	admin-betas	no				the beta flags' names are hashed in the bundle (cb257434 and the like): nothing to place
@@ -239,7 +239,7 @@ bigcommerce	settings-list	yes	drop:address	where		the control panel's Settings, 
 bigcommerce	tax-services	yes		where		the automatic tax services a store is offered: what the platform connects
 bigcommerce	localization-countries	no				the countries a store can choose as its default: market data, the subjects'
 bigcommerce	standard-formats	no				the units, number formats, date formats and time zone per country: market data, the subjects'. Read by the second stage for Q3's miss M-04 and the cells that need it
-woocommerce	core-profiler-free-extensions	yes	nested:bundles,plugins	where		the free features the set-up offers, by country, bundle and plugin
+woocommerce	core-profiler-free-extensions	yes	nested:bundles,plugins	where		the free extensions the set-up offers to install, by country, bundle and plugin
 woocommerce	options	yes	rows:woocommerce/raw/runs/20261029T023745Z-db-after-country-change/options.tsv:^(woocommerce|wcpay|wc_|_wc)	decides		the store's settings as WooCommerce keeps them, after set-up and a change of country: every WooCommerce and WooPayments option
 woocommerce	payments-providers	yes	nested:providers,offline_methods,suggestions,payment_methods;drop:onboarding,management,links,_links,plugin,tags,supports,_suggestion_id,image,icon,images	where		the payment providers WooCommerce lists for a business location, with their offline methods and suggestions, by location
 woocommerce	release-admin-menus	yes	release:admin-menus	where		WooCommerce's admin menus, as its release adds them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
