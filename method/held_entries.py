@@ -624,15 +624,29 @@ def candidate_index(platform):
                 terms[t].add(r["cap_id"])
     for r in rows(os.path.join(MODEL, "merged", "capabilities.tsv")):
         names[r["cap_id"]] = r["capability"]
-    return by_tok, terms, names
+    # An identifier that many of the platform's entries share (Zid's routes all hold "$storeId") leads nowhere.
+    df = collections.Counter()
+    es = entries(platform)
+    for e in es:
+        df.update({t.casefold() for t in TOKEN.findall(e["text"])})
+    common = {t for t, n in df.items() if n > max(25, len(es) // 50)}
+    # Each lead's cell on this platform: what it holds now, so an agent sees where a placement would change a cell.
+    state = {}
+    for r in rows(os.path.join(MODEL, "merged", "cells.tsv")):
+        if r["platform"] == platform:
+            state[r["cap_id"]] = (r.get("placed_as") or "shows") if r["held"] == "statements" else "holds nothing"
+    return by_tok, terms, names, common, state
 
 
 def candidates(e, idx):
-    by_tok, terms, names = idx
+    by_tok, terms, names, common, _ = idx
     score = collections.Counter()
     why = collections.defaultdict(set)
     for t in set(TOKEN.findall(e["text"])):
-        for c in by_tok.get(t.casefold(), ()):
+        cs = by_tok.get(t.casefold(), ())
+        if t.casefold() in common or len(cs) > 3:
+            continue
+        for c in cs:
             score[c] += 2
             why[c].add(t)
     ft = " " + fold(e["text"]) + " "
@@ -676,7 +690,7 @@ def cmd_show(a):
             if idx:
                 cs = candidates(e, idx)
                 if cs:
-                    print("       leads: " + "; ".join(f"{c} {clip(idx[2].get(c, ''), 50)} (by {', '.join(w)})" for c, w in cs))
+                    print("       leads: " + "; ".join(f"{c} {clip(idx[2].get(c, ''), 50)} [cell: {idx[4].get(c, 'none')}] (by {', '.join(w)})" for c, w in cs))
 
 
 PARTNER = re.compile(r"collaborator|partner-api|app-install|stores-access-requests|portal-app-scopes", re.I)
