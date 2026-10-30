@@ -560,7 +560,14 @@ def check_part(d):
         else:
             problem(f"{w}: ruling must be joined:<cap_id>, nested:<cap_id> or apart")
     if BATCH["concerns"] is not None:
-        need_r = {cid for cid in need_r if set(ids(uc[cid]["shopify"]) + ids(uc[cid]["salla"]) + ids(uc[cid]["woocommerce"])) & BATCH["concerns"]}
+        # a batch rules on a pair once both its sides have landed: the batch that lands the second side
+        def both_landed(cid):
+            u = uc[cid]
+            if kind == "anchor":
+                return any(x in where_landed for x in ids(u["shopify"])) and any(x in where_landed for x in ids(u["salla"]))
+            return True
+        need_r = {cid for cid in need_r if set(ids(uc[cid]["shopify"]) + ids(uc[cid]["salla"]) + ids(uc[cid]["woocommerce"])) & BATCH["concerns"]
+                  and both_landed(cid)}
     for cid in sorted(need_r - got_r):
         problem(f"rulings.tsv: no ruling on {cid}, which holds concerns whose join this part decides")
 

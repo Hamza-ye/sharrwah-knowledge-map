@@ -1,2 +1,12 @@
 cap_id	platform	filler	key
 CM-CUS-008	salla	الهيئة العامة للنقل	SA-C-065/responsible/SA-S-5020
+CM-MKT-007	shopify	SendGrid (a Twilio Company)	SH-C-130/responsible/SH-S-0054
+CM-MKT-007	shopify	Twilio	SH-C-130/responsible/SH-S-0051
+CM-MKT-010	salla	Google Ads	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	Snapchat	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	TikTok	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	Twitter	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	Facebook	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	Pinterest	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	AdRoll	SA-C-074/decides/SA-S-2149
+CM-MKT-010	salla	Sweply	SA-C-073/boundary/SA-S-5135
