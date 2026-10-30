@@ -606,19 +606,25 @@ def cmd_batches(a):
     for p in PLATFORMS:
         es = [e for e in entries(p) if e["entry_id"] not in taken]
         k = len(glob.glob(os.path.join(HELD, "batches", f"{PREFIX[p]}-*.txt")))
-        cur = []
+        cut, cur = [], []
         for i, e in enumerate(es):
             cur.append(e)
             last = i == len(es) - 1
             nxt = es[i + 1] if not last else None
             boundary = last or nxt["structure"] != e["structure"] or nxt["section"] != e["section"]
-            if last or (boundary and len(cur) >= a.size * 0.5) or len(cur) >= a.size * 1.3:
-                k += 1
-                b = f"{PREFIX[p]}-{k}"
-                with open(os.path.join(HELD, "batches", f"{b}.txt"), "w", encoding="utf-8") as fh:
-                    fh.write("\n".join(x["entry_id"] for x in cur) + "\n")
-                lines.append([b, p, str(len(cur)), ",".join(dict.fromkeys(x["structure"] for x in cur))])
+            if last or (boundary and len(cur) >= a.size * a.min) or len(cur) >= a.size * 1.3:
+                cut.append(cur)
                 cur = []
+        # a short tail would pay a batch's whole start for a few entries: it joins the batch before it
+        if len(cut) > 1 and len(cut[-1]) < a.size * a.min / 2:
+            tail = cut.pop()
+            cut[-1] = cut[-1] + tail
+        for cur in cut:
+            k += 1
+            b = f"{PREFIX[p]}-{k}"
+            with open(os.path.join(HELD, "batches", f"{b}.txt"), "w", encoding="utf-8") as fh:
+                fh.write("\n".join(x["entry_id"] for x in cur) + "\n")
+            lines.append([b, p, str(len(cur)), ",".join(dict.fromkeys(x["structure"] for x in cur))])
     path = os.path.join(HELD, "batches.tsv")
     new = not os.path.exists(path) or not taken
     with open(path, "w" if new else "a", encoding="utf-8") as fh:
@@ -1113,7 +1119,9 @@ def main():
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("registers"); s.add_argument("--platform", choices=PLATFORMS, required=True); s.set_defaults(f=cmd_registers)
     s = sub.add_parser("build"); s.add_argument("--platform", choices=PLATFORMS); s.set_defaults(f=cmd_build)
-    s = sub.add_parser("batches"); s.add_argument("--size", type=int, default=300); s.set_defaults(f=cmd_batches)
+    s = sub.add_parser("batches"); s.add_argument("--size", type=int, default=300)
+    s.add_argument("--min", type=float, default=0.5, help="a batch ends where a structure or section ends once it holds this share of --size")
+    s.set_defaults(f=cmd_batches)
     s = sub.add_parser("show"); s.add_argument("--platform", choices=PLATFORMS, required=True)
     s.add_argument("--batch"); s.add_argument("--structure"); s.add_argument("--from", type=int); s.add_argument("--to", type=int)
     s.add_argument("--width", type=int, default=1200); s.add_argument("--meta", action="store_true")
