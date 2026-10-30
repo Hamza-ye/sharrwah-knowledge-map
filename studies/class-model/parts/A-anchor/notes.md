@@ -138,3 +138,124 @@ Left, with the batch that lands the other side:
 
 - **CM-ACC-009 is removed.** The store management app on mobile devices is domain G's CM-SRF-001, the mobile app for managing the store, which already has a cell for every platform and cites Salla's plan line SA-S-2082 as `core`. Kept here, the line would have counted in two domains for one capability. No concern landed in CM-ACC-009, so nothing else moves; SA-C-001 stays `strained`, its plan line now cited in G's tree. Salla's subscription line in the iOS app (SA-S-2083), cited here as `shows`, is the PLN batch's to weigh.
 
+
+## Batch 2: ACC's last two Salla concerns, and STF, Staff, roles and permissions
+
+Concerns: SA-C-170, SA-C-230 (ACC); SH-C-009, SH-C-010, SH-C-011, SA-C-009, SA-C-013 (STF).
+Result: 5 capabilities (CM-STF-001 to CM-STF-005), 7 landings (2 in batch 1's capabilities, 5 in new ones), 10
+cells, 59 evidence rows (56 in STF, and 3 added to batch 1's cells CM-ACC-001 and CM-ACC-002), 3 qualities, 2 rulings.
+`caps` across every domain found no staff, role, user-group, staff-target or collaborator capability elsewhere
+(the nearest: F's CM-PTN-002, the partner's own account and its employees, which is the partner's side, not the
+store's).
+
+### ACC: SA-C-170 and SA-C-230
+
+- **SA-C-230 lands in CM-ACC-002 by `match:M-001`**, as batch 1 left it. Its statements were already cited there; I
+  added the footer's 2026 line (SA-S-0020). SA-S-0010 (Salla's headquarters, Mecca) is left uncited: a headquarters
+  isn't the contracting party or the governing law. The coordinator may now set SH-C-002's join to `match:M-001`.
+- **SA-C-170 lands in CM-ACC-001, joined on role, `strained`.** Batch 1's notes say SA-C-170 has no statements; it has
+  two: the agreement's page in the sitemap (salla.com/terms, SA-S-2208) and the registration step that binds the
+  merchant to the usage policy (SA-S-0143). The second has the same role as Shopify's SH-S-0229 ("signing up for a
+  Shopify Account" binds the merchant to the Terms), which batch 1 cites in CM-ACC-001. So both are cited there as
+  shows. Strained, my judgment: the concern is the whole merchant agreement, and its party clause, which would be
+  CM-ACC-002's, is "page not read". The reviewer may prefer a capability of its own for the merchant agreement; no
+  platform gives it an admin place, only a legal page, so I didn't make one.
+- **For the coordinator (batch 1's rows):** CM-ACC-001's Salla cell's `terms` and `reading` don't yet name SA-C-170's
+  statements (اتفاقية الاستخدام, سياسة الاستخدام على منصة سلة; SA-S-0143, SA-S-2208), and CM-ACC-002's Salla
+  reading doesn't name SA-S-0020 and still says "which batch 2 lands". I appended evidence only, as the brief asks.
+
+### STF: how I cut, and why
+
+- **CM-STF-001, staff accounts** (SH-C-009, SA-C-009, by M-004), and its child **CM-STF-002, roles and permissions**
+  (SH-C-010, by M-004). Grain: M-004 holds two Shopify concerns against one Salla concern. Both platforms give roles
+  a route of their own under staff (Shopify settings:organizations:accounts:roles, SH-S-5234, under
+  settings:organizations:accounts, SH-S-5233; Salla /users/roles, SA-S-1851, under /users, SA-S-1849), so roles are a
+  child of staff accounts, and SA-C-009, the coarser concern, lands in the parent.
+- **CM-STF-003, user groups** (child of CM-STF-001): Shopify gives it a route (SH-S-5237) and a plan line (Custom user
+  groups, SH-S-7077), so it is a capability by the dry run's convention. No concern lands in it; its statements are
+  SH-C-010's, a sibling in the same tree, so SH-C-010 stays clean.
+- **CM-STF-004, staff targets** (child of CM-STF-001): Salla's link Employees targets (/users/targets, SA-S-1853) is
+  a route of its own. No concern lands in it; it is SA-C-009's, landed in the parent. Nothing held defines it.
+- **CM-STF-005, third-party access to the merchant's admin** (SH-C-011, SA-C-013), joined on role (below). No parent:
+  Shopify routes collaborators under its users (SH-S-7151) and files the permission under USER_MANAGEMENT (SH-S-7167);
+  Salla serves support access from its manage pages (SA-S-3533), beside webhooks and migration. The groupings differ,
+  so, as batch 1 did for CM-ACC-004, I followed neither.
+- **What stays inside a coarser cell (my judgment):** the staff permissions ADD_REMOVE_STAFF, MANAGE_STAFF_PERMISSIONS
+  and STAFF_API_PERMISSION_MANAGEMENT ("Revoke access tokens"); the flags store-team and user-advance-management; the
+  store feature rbacEnabled (cited in CM-STF-002, my reading of "rbac" as role-based access control, so marked a
+  reading). Shopify's 20 built-in staff roles (inventory entries SH-I-0846 to SH-I-0865) aren't cited: SH-S-0247, the
+  Administrator role, already shows built-in roles, and the POS roles among them bear on E's point of sale.
+- **Staff of other features stay in their domains:** order assignment to staff (SA-C-043, domain C), Salla Point's
+  staff (SA-C-095, SA-S-2442, domain E), and the partner portal's Employees (SA-C-204, SA-S-1934, domain F).
+
+### Joins on role
+
+- **CM-STF-005** (U-010): Shopify's collaborators and Salla's support access requests. On both, a party outside the
+  store's staff asks for access to the merchant's admin, and the merchant grants and bounds it: Shopify's Terms let the
+  merchant allow Third Party Providers into parts of its Admin and control their access levels (SH-S-0239), with a
+  staff permission to manage the requests (SH-S-7167); Salla's partner asks from its service's page (SA-S-5131), the
+  staff permission is support_access_requests (SA-S-2404), and the partner may not use the permissions the merchant
+  granted beyond the agreed work (SA-S-5008). The differences: Salla's concern also names its own support's access,
+  which no held statement describes; Shopify's collaborator access is on every plan (SH-S-7012).
+- **CM-ACC-001** for SA-C-170 (above): each platform's agreement accepted when the account is opened.
+
+### Homonyms kept apart
+
+- **"groups":** Salla's Customer groups (SA-C-061, domain D's CM-CUS-002) are buyers' groups, not Shopify's Custom
+  user groups of staff. In CM-STF-003's note and the Salla cell.
+- **"Employees":** Salla's API folder Employees (SA-S-1066) is the store's staff; its partner portal's Employees link
+  (SA-C-204, SA-S-1934) is a partner's own staff, F's.
+
+### Strained fits
+
+- **SA-C-170** in CM-ACC-001 (above). Its statements are cited only there; it is strained for what doesn't fit, the
+  agreement's party clause, a gap.
+
+### Statements read and not cited
+
+- SH-C-009/boundary/SH-S-6142: the scope read_users or read_financial_kyc_information on FinanceAppAccessPolicy, a
+  finance app's object, not the store's staff.
+- SH-S-5291 and SH-S-5292 (hasOrgSettings): batch 1 cites them in CM-ACC-003 under SH-C-003's keys; citing them again
+  under SH-C-009's would put one statement in two trees.
+- SH-S-0245 (the organization administrator "can manage all users and roles", SH-C-003): cited by batch 1 in
+  CM-ACC-003 as shows. It bears on CM-STF-002 too; I didn't cite it twice. The coordinator may move it.
+- SA-C-013/where/SA-S-1933, the link Store management (/store-management, list 9): Q1 placed it in SA-C-013, but
+  nothing held ties the link to support access. It isn't Manage stores (/stores, SA-S-1680). Left uncited; the
+  reviewer may know which list it belongs to.
+- SA-C-009/boundary/SA-S-1066 is the same statement as SA-C-009/where/SA-S-1066, cited once.
+
+### Rulings, and the pairs left for later batches
+
+Ruled here: U-037 (joined:CM-ACC-001), U-010 (joined:CM-STF-005). M-001 is a match: SA-C-230 landed by it.
+
+Left, with the batch that lands the other side:
+- **U-036, SH-C-014 against SA-C-170** (ONB batch) and **SH-C-172 against SA-C-170** (TRU batch). SA-C-170 is in
+  CM-ACC-001, citing the registration step that binds the merchant to the usage policy (SA-S-0143). The policy's
+  text, which U-036 asks about (violations, termination), isn't held. If the later batch's capability cites no
+  SA-C-170 key, the pair is apart.
+
+### What the checker flagged
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-anchor --concerns SA-C-170,SA-C-230,SH-C-009,SH-C-010,SH-C-011,SA-C-009,SA-C-013 --areas ACC,STF`:
+0 problems, 2 flags.
+- *CM-STF-003 salla none-held, 27 statements match:* all are buyers' groups (Customer groups, customer-group,
+  تصنيف العملاء إلى مجموعات), coupon groups (coupon-group, إنشاء مجموعة كوبونات) and batch actions on orders or
+  customers (إدارة مجموعة طلبات كدفعة واحدة, إدارة مجموعة عملاء كدفعة واحدة). None is a group of staff.
+- *SH-S-0238 in CM-ACC-001 and CM-ACC-003:* batch 1's, answered in its section.
+
+### Problems and gaps
+
+- **Salla's built-in roles and its permission count** (the seed's "10 built-in roles; 192 permissions in 16 groups")
+  aren't held as statements: the permission list's group headings are unplaced inventory entries (SA-I-1244 to
+  SA-I-1440, "a group heading"), and no statement names a built-in role.
+- **Salla's staff-account limit:** only "more users, for extra fees" on سلة بلس (SA-S-2078) is held; no number.
+- **Who answers for staff** on Salla: SA-C-009/responsible is "page not read". Shopify's reasons for SH-C-009 and
+  SH-C-010 are "searched, not found".
+- **Staff targets** have no definition on either platform.
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **SH-C-002 is written as Q1's match M-001,** now that SA-C-230 has landed in CM-ACC-002.
+- **CM-ACC-001's and CM-ACC-002's Salla cells** name batch 2's rows at the end of their readings.
+- **Batch 1's note that SA-C-170 has no statements is wrong:** it has two, its usage agreement (SA-S-0143) and SA-S-2208, which batch 2 cites.
+
