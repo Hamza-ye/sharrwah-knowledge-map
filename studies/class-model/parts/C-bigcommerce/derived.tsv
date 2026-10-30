@@ -56,6 +56,33 @@ CM-PAY-029	bigcommerce	statements	not-stated
 CM-PAY-030	bigcommerce	none-held					
 CM-PAY-031	bigcommerce	none-held					
 CM-PAY-032	bigcommerce	none-held					
+CM-RET-001	bigcommerce	statements	core	Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general
+CM-RET-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/order-operations | /developer/api-reference/rest/admin/payments | /developer/api-reference/rest/admin/payments/transactions		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found;BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general
+CM-RET-003	bigcommerce	statements	not-stated	Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	
+CM-RET-004	bigcommerce	none-held					
+CM-SHP-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/management/shipping | Settings > Setup > Shipping | Shipping		BC-C-059/reason:searched, not found;BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found	general
+CM-SHP-002	bigcommerce	none-held					
+CM-SHP-003	bigcommerce	none-held					
+CM-SHP-004	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/integrations/shipping-provider | Shipping	BC-C-070/decides/BC-S-0377=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found;BC-C-071/decides:searched, not found;BC-C-071/responsible:stated only in general terms;BC-C-071/reason:searched, not found	general
+CM-SHP-005	bigcommerce	none-held					
+CM-SHP-006	bigcommerce	statements	not-stated	/developer/api-reference/rest/admin/management/pickup/pickup-methods		BC-C-006/decides:page not read;BC-C-006/responsible:stated only in general terms;BC-C-006/reason:searched, not found	
+CM-SHP-007	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/pickup | /developer/api-reference/rest/admin/management/pickup/pickup-methods | Buy online, pick up in store		BC-C-006/decides:page not read;BC-C-006/responsible:stated only in general terms;BC-C-006/reason:searched, not found	general
+CM-SHP-008	bigcommerce	none-held					
+CM-SHP-009	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/orders		BC-C-006/decides:page not read;BC-C-006/responsible:stated only in general terms;BC-C-006/reason:searched, not found;BC-C-019/decides:page not read;BC-C-019/responsible:stated only in general terms;BC-C-019/reason:searched, not found	general
+CM-SHP-010	bigcommerce	none-held					
+CM-SHP-011	bigcommerce	statements	extension-point	Shipping		BC-C-059/reason:searched, not found;BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found	
+CM-SHP-012	bigcommerce	none-held					
+CM-SHP-013	bigcommerce	statements	core			BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	general
+CM-SHP-014	bigcommerce	none-held					
+CM-SHP-015	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/shipping	BC-C-070/decides/BC-S-0377=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found;BC-C-071/decides:searched, not found;BC-C-071/responsible:stated only in general terms;BC-C-071/reason:searched, not found	general
+CM-SHP-016	bigcommerce	none-held					
+CM-SHP-017	bigcommerce	none-held					
+CM-SHP-018	bigcommerce	none-held					
+CM-SHP-019	bigcommerce	none-held					
+CM-SHP-020	bigcommerce	none-held					
+CM-SHP-021	bigcommerce	none-held					
+CM-SHP-022	bigcommerce	none-held					
+CM-SHP-023	bigcommerce	statements	core			BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found	general
 CM-TAX-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/tax		BC-C-072/responsible:stated only in general terms	general
 CM-TAX-002	bigcommerce	none-held					
 CM-TAX-003	bigcommerce	none-held					

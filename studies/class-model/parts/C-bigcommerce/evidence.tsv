@@ -141,3 +141,42 @@ CM-TAX-004	bigcommerce	shows	BC-C-073/reason/BC-S-0397	timeout protects the shop
 CM-TAX-004	bigcommerce	shows	BC-I-0075	API group Tax Provider API
 CM-PAY-008	bigcommerce	own-service	BC-C-065/where/BC-S-0354	maker: B2B Edition, BigCommerce's add-on (domain D's concern)
 CM-PAY-019	bigcommerce	own-service	BC-C-065/where/BC-S-0354	maker: B2B Edition, BigCommerce's add-on (domain D's concern)
+CM-RET-001	bigcommerce	core	BC-C-021/where/BC-S-0117	product line Refunds & returns, returns and refund workflows
+CM-RET-002	bigcommerce	core	BC-C-021/boundary/BC-S-0119	refund in the store control panel or the Refunds API
+CM-RET-002	bigcommerce	core	BC-C-021/boundary/BC-S-0118	webhook topic store/order/refund/created
+CM-RET-002	bigcommerce	core	BC-I-0255	per-channel topic store/channel/{channel_id}/order/refund/created
+CM-RET-002	bigcommerce	core	BC-C-021/boundary/BC-S-0120	Order V3 endpoints creating refunds against settled payments
+CM-RET-002	bigcommerce	core	BC-C-018/where/BC-S-0104	Order Operations payment actions such as refunds
+CM-RET-002	bigcommerce	core	BC-C-020/where/BC-S-0111	Transactions API: refund on externally processed transactions
+CM-RET-002	bigcommerce	core	BC-C-022/where/BC-S-0121	Payments API: process refunds
+CM-RET-003	bigcommerce	shows	BC-C-021/where/BC-S-0117	product line names flexible returns
+CM-SHP-001	bigcommerce	core	BC-C-070/where/BC-S-0374	Shipping V2 API: shipping zones and methods
+CM-SHP-001	bigcommerce	core	BC-C-070/decides/BC-S-0378	shipping zones in the control panel or the API
+CM-SHP-001	bigcommerce	core	BC-C-070/where/BC-S-0375	Settings > Setup > Shipping, shipping origin address
+CM-SHP-001	bigcommerce	core	BC-C-070/where/BC-S-0376	product line Shipping
+CM-SHP-001	bigcommerce	extension-point	BC-I-0495	App Marketplace category Shipping & Fulfillment
+CM-SHP-004	bigcommerce	core	BC-C-070/decides/BC-S-0377	plan line Real-time shipping quotes from carriers
+CM-SHP-004	bigcommerce	core	BC-C-071/boundary/BC-S-0382	BigCommerce checks its cache before calling the carrier
+CM-SHP-004	bigcommerce	extension-point	BC-C-071/where/BC-S-0379	endpoints consumed by BigCommerce for custom shipping integrations
+CM-SHP-004	bigcommerce	extension-point	BC-C-071/boundary/BC-S-0381	BigCommerce requests rates from a registered carrier's server
+CM-SHP-004	bigcommerce	shows	BC-C-071/decides/BC-S-0380	authentication determined by the carrier server
+CM-SHP-004	bigcommerce	shows	BC-C-070/where/BC-S-0376	product line names real-time rates
+CM-SHP-006	bigcommerce	shows	BC-C-006/where/BC-S-0044	pickup methods: in-store pickup or curbside delivery
+CM-SHP-007	bigcommerce	core	BC-C-006/where/BC-S-0043	Pickup API: in-store or curbside pickup fulfillment
+CM-SHP-007	bigcommerce	core	BC-C-006/where/BC-S-0044	Pickup Methods API: how customers collect their orders
+CM-SHP-007	bigcommerce	core	BC-I-0048	API group Pickup Options
+CM-SHP-007	bigcommerce	core	BC-I-0012	API group Storefront Pickup Options
+CM-SHP-007	bigcommerce	core	BC-C-006/where/BC-S-0045	product line Buy online, pick up in store
+CM-SHP-009	bigcommerce	core	BC-C-019/where/BC-S-0103	Orders V2 manages an order's shipments
+CM-SHP-009	bigcommerce	core	BC-C-019/boundary/BC-S-0109	scope store_order_fulfillment_manage, order fulfillments
+CM-SHP-009	bigcommerce	core	BC-C-019/boundary/BC-S-0110	webhook topic store/shipment/created
+CM-SHP-009	bigcommerce	core	BC-I-0202	webhook topic store/shipment/updated
+CM-SHP-009	bigcommerce	core	BC-I-0203	webhook topic store/shipment/deleted
+CM-SHP-009	bigcommerce	core	BC-C-006/boundary/BC-S-0046	scope store_fulfillment_methods_manage, order fulfillment methods
+CM-SHP-011	bigcommerce	extension-point	BC-I-0495	App Marketplace category Shipping & Fulfillment
+CM-SHP-011	bigcommerce	shows	BC-C-070/where/BC-S-0376	product line names fulfillment integrations
+CM-SHP-013	bigcommerce	core	BC-C-027/boundary/BC-S-0164	checkout-js controls which shipping options shoppers see
+CM-SHP-015	bigcommerce	core	BC-C-070/where/BC-S-0374	Shipping V2 API: shipping carrier connections
+CM-SHP-015	bigcommerce	shows	BC-C-070/decides/BC-S-0377	names the carriers giving real-time rates
+CM-SHP-023	bigcommerce	core	BC-I-0410	plan line ShipperHQ shipping rules engine
+CM-SHP-015	bigcommerce	shows	BC-C-071/boundary/BC-S-0381	a registered shipping carrier's server

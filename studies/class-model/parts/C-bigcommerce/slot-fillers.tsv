@@ -33,3 +33,9 @@ CM-PAY-015	bigcommerce	Klarna	BC-C-027/where/BC-S-0161
 CM-PAY-015	bigcommerce	Afterpay	BC-C-027/where/BC-S-0161
 CM-PAY-015	bigcommerce	Affirm	BC-C-025/where/BC-S-0142
 CM-PAY-015	bigcommerce	Clearpay	BC-I-0442
+CM-SHP-004	bigcommerce	UPS	BC-C-070/decides/BC-S-0377
+CM-SHP-004	bigcommerce	USPS	BC-C-070/decides/BC-S-0377
+CM-SHP-004	bigcommerce	FedEx	BC-C-070/decides/BC-S-0377
+CM-SHP-004	bigcommerce	Australia Post	BC-C-070/decides/BC-S-0377
+CM-SHP-004	bigcommerce	Royal Mail	BC-C-070/decides/BC-S-0377
+CM-SHP-004	bigcommerce	Canada Post	BC-C-070/decides/BC-S-0377

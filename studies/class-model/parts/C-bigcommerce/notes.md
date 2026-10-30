@@ -157,3 +157,87 @@ The run on this batch (`--concerns BC-C-020,…,BC-C-073 --areas PAY,TAX`) gives
 - **Statements cited in more than one tree (6):** BC-S-0129, BC-S-0124 (BC-C-022, strained), BC-S-0134 (BC-C-024, strained), BC-S-0161 (BC-C-027, strained), BC-S-0354 (D's, as maker in CM-PAY-008 and CM-PAY-019), BC-I-0476 (BC-C-073, strained). Each is a statement that names several things, or a maker statement.
 
 The rest of the flags are batch 1's, answered in its section: the CHK and ORD `none-held` cells, and CM-ORD-005's core on a boundary statement. Batch 1's rows show no new problem.
+
+## Batch 3: SHP and RET
+
+**Concerns:** BC-C-006, BC-C-019, BC-C-021, BC-C-070, BC-C-071. **Areas:** SHP (22 capabilities, 23 with this batch's), RET (4). **What it holds:** 1 new capability (CM-SHP-023), 5 landings (all into existing capabilities: 3 clean, 2 strained), 27 cells (BigCommerce's, one per capability of SHP and RET: 12 `statements`, 15 `none-held`), 39 evidence rows, no quality, 6 slot fillers, no ruling (BigCommerce has no unclear candidates). Each row is a reading unless it quotes a statement.
+
+### How I cut, and why
+
+- **BC-C-070 Shipping → CM-SHP-001, terms, clean.** Shipping zones and shipping methods, in the control panel or the API (BC-S-0378, BC-S-0374), and the page Settings > Setup > Shipping (BC-S-0375). Its plan line Real-time shipping quotes (BC-S-0377) is in CM-SHP-004, the carrier connections (BC-S-0374) in CM-SHP-015, its ShipperHQ plan line in CM-SHP-023: all in the CM-SHP-001 tree. Its app category Shipping & Fulfillment (BC-I-0495, placed by Q1 in BC-C-059, BC-C-070 and BC-C-071) is also in F's CM-APP-002 as `extension-point`; an inventory entry, so the fit stays clean, as batch 1 kept it for BC-I-0480.
+- **BC-C-071 Shipping providers → CM-SHP-004, definition, clean.** The Shipping Providers API is the requests BigCommerce makes "to a registered shipping carrierʼs server to check connection options and retrieve rates" (BC-S-0381): rates the carrier calculates, Shopify's 3rd-party calculated shipping rates (SH-S-7048). The provider API's group Provider APIs (BC-I-0073) is held under BC-C-071 and BC-C-073 (tax) together, so I left it uncited.
+- **BC-C-006 Pickup → CM-SHP-007, terms, strained.** In-store and curbside pickup (BC-S-0043, BC-S-0044) and the product line Buy online, pick up in store (BC-S-0045). I read curbside delivery as pickup, since BC-S-0044 names it among the ways "customers can collect their orders": CM-SHP-008 (the store's own delivery) is `none-held`. Strained: BC-S-0047 (partner solutions as the source of truth for locations and inventories) is cited as `outside` in B's CM-INV-001 and CM-INV-005 by B-bigcommerce; it names locations and inventory, not pickup, and isn't cited here.
+- **BC-C-019 Order fulfillment and shipments → CM-SHP-009, terms, strained.** Its shipment topics (BC-S-0110, BC-I-0202, BC-I-0203) and fulfilment scope (BC-S-0109). BC-S-0103 ("shipments, and shipping address quotes") is cited here under BC-C-019's key, as batch 1 asked; batch 1 cites it under BC-C-018's in the CM-ORD-001 tree. The scope store_fulfillment_methods_manage (BC-S-0046, Q1 placed it in BC-C-006 and BC-C-019) is in CM-SHP-009, because its words are "order fulfillment methods", wider than pickup; what a fulfillment method is isn't defined.
+- **BC-C-021 Refunds → CM-RET-002, terms, clean.** All its statements are in the CM-RET-001 tree, which is under CM-ORD-001. The product line Refunds & returns (BC-S-0117) is `core` in CM-RET-001, whose name it is, and `shows` in CM-RET-003: it names returns, but no return request, return shipment or exchange is held.
+
+### The new capability
+
+- **CM-SHP-023, Shipping rules engine** (parent CM-SHP-001), on the plan line ShipperHQ shipping rules engine (BC-I-0410). A plan line is a place of its own, the dry run's test that made CM-CHK-010 a capability after batch 1. `caps --terms "shipping rules; rules engine; ShipperHQ; قواعد الشحن; shipping rule"` found nothing in any domain. No statement defines the engine, so I couldn't join it by definition to CM-SHP-004 or CM-SHP-013. **For the coordinator:** if a definition is captured, it may join one of them. ShipperHQ is named only in the line's name, so it isn't a slot filler (a flag's name isn't one), and no statement names a maker.
+
+### Batch 1's and batch 2's open points
+
+- **BC-S-0103 (BC-C-018 and BC-C-019).** It's cited in CM-SHP-009 under BC-C-019's key. **For the coordinator: BC-C-018's landing in CM-ORD-001 (clean) becomes strained,** since its statement is now cited in the CM-SHP-001 tree as well. The checker doesn't flag it, because it reads the two keys as different statements.
+- **The refunds BC-S-0104 (BC-C-018), BC-S-0111 (BC-C-020) and BC-S-0121 (BC-C-022)** are cited as `core` in CM-RET-002: each names refunds among captures, voids and charges. CM-RET-002's tree is CM-ORD-001's (CM-RET-001's parent), as is CM-PAY-020's, so by the checker's tree rule **BC-C-018's and BC-C-020's fits aren't strained by these**, and BC-C-022's is already strained. If the coordinator reads CM-PAY-020 or CM-RET-001 as a tree of its own, BC-C-020's landing becomes strained.
+- **BC-S-0164 (BC-C-027)** is cited as `core` in CM-SHP-013 (delivery customization, a join on role): its words are which shipping options shoppers see. **BC-C-027's landing in CM-PAY-012 was already strained, and now CM-SHP-013 strains it too.**
+- **BC-S-0120** (Order V3 refunds) is cited in CM-RET-002 here; batch 2 named it only in CM-PAY-031's reading.
+- **BC-S-0101** (Route's package protection, BC-C-017, cited in CM-CHK-004) is named in CM-SHP-003's and CM-SHP-021's `none-held` readings, not cited.
+
+### Joins on role
+
+- CM-SHP-013: a custom checkout based on checkout-js controlling "which shipping options shoppers see" in the wallets' interfaces (BC-S-0164), read as Shopify's Delivery Customization (SH-S-6186). It's narrower (the wallets' interfaces only) and is written in a custom checkout, not an app.
+
+### Homonyms kept apart
+
+- **Shipping providers (not a homonym, a different grain):** BigCommerce's Shipping Providers API (BC-C-071) is the registered carriers' servers that BigCommerce calls for rates, so it lands in CM-SHP-004 by definition. WooCommerce's section Shipping > Shipping providers (WC-S-0020) is in CM-SHP-015, read by C-woocommerce as the carriers the store ships with. Both name carriers; I cite BC-S-0381 as `shows` in CM-SHP-015 (its "registered shipping carrier"), in the same CM-SHP-001 tree, so the landing stays clean.
+- **Route:** the partner Route (BC-S-0101), the headless storefronts' sites and routes (BC-S-0231, E), and Salla's Shipping Routes (CM-SHP-016) are different things. CM-SHP-005 and CM-SHP-016 are `none-held`.
+- **Delivery:** webhook delivery (F) and content delivery (A, E) aren't the store's delivery of orders (CM-SHP-008).
+
+### Strained fits
+
+BC-C-006 and BC-C-019, as above and in their `reading`. For earlier batches, BC-C-018 becomes strained (above).
+
+### Services of BigCommerce's company
+
+No cell of this batch places a service of BigCommerce's company: no `own-service` row. No statement names BigCommerce's company as the maker of a shipping, pickup or refunds service.
+
+### Concerns read under `also`
+
+BC-C-005 (B, Inventory locations): its statements are locations and stock per location (BC-S-0037 to BC-S-0042), not pickup or fulfilment, and are uncited here. BC-S-0037 ("track product inventory") is named in CM-SHP-017's `none-held` reading. BC-C-028 (A) and BC-C-074 (E) bear on nothing in SHP or RET.
+
+### Statements of other domains
+
+None cited. BC-I-0495 is placed by Q1 in this batch's concerns (and in F's BC-C-059). BC-I-0492 (Product & Shipping Protection, F's BC-C-059) is named in CM-SHP-003's reading only: it's protection offered to the buyer at checkout, as Route's package protection is, not insurance on shipments sent with the platform's labels, which is CM-SHP-003's definition. **For the coordinator:** if the class should count shipping protection sold to the buyer (BigCommerce's app category and Route's extension; Shopify's Third-Party Shipping Insurance may be read the same way), it would be a capability of its own; I didn't add one, since no concern of this batch is it and the app category is F's.
+
+### Qualities and slot fillers
+
+- **No quality.** BigCommerce's rate cache (BC-S-0382) is a behaviour, not a limit.
+- **Slot fillers:** the six carriers BC-S-0377 names for real-time rates (UPS, USPS, FedEx, Australia Post, Royal Mail, Canada Post) in CM-SHP-004, scoped by the statement to the four plans. "and more" isn't listed.
+
+### Gaps
+
+- BC-C-006/decides, BC-C-019/decides and BC-C-021/decides are "page not read": no Help Center article or control panel page for pickup, shipments or refunds is held. So CM-SHP-007, CM-SHP-009 and CM-RET-002 rest on APIs, scopes, topics and product lines. A shipment's tracking (CM-SHP-017), returns (CM-RET-003) and refunds to store credit may be on those pages.
+- BC-C-070/boundary is "searched, not found": no shipping webhook topic or scope is held.
+- BC-C-071/decides is "searched, not found": what checkout does when a carrier's rate request fails.
+- The plan line ShipperHQ shipping rules engine (BC-I-0410) has no definition and no per-plan value outside a note.
+
+### What the checker flagged
+
+**This batch** (`--concerns BC-C-006,BC-C-019,BC-C-070,BC-C-071,BC-C-021 --areas SHP,RET`): **0 problems, 54 flags.** **The whole part** (no options): **0 problems, 54 flags.** The coordinator's back-fill problem from batch 1 no longer appears. This batch's flags:
+- **`none-held` cells whose terms match statements (12):** CM-RET-004 and CM-SHP-002, 003, 005, 008, 010, 014, 016, 017, 020, 021 and 022. Each cell's `reading` names the hits and why none is the capability.
+- **CM-SHP-013: `core` rests only on a boundary statement.** BC-S-0164 is a checkout-js function, BigCommerce's own checkout code, controlling the shipping options shown. That `core` is a reading.
+- **BC-S-0164 is cited in more than one tree** (CM-PAY-012, CM-SHP-013): it names wallets and shipping options; BC-C-027 is strained (above).
+
+The other 40 flags are batch 1's and batch 2's, answered in their sections. Earlier batches' rows show no problem.
+
+### The capabilities the part added
+
+The back-fill after BigCommerce writes their Shopify, Salla, WooCommerce and Zid cells:
+- **CM-CHK-010, Persistent cart** (CHK, parent CM-CHK-002; the coordinator, after batch 1).
+- **CM-SHP-023, Shipping rules engine** (SHP, parent CM-SHP-001; this batch).
+
+### The coordinator, after batch 3
+
+- **The part is complete:** 20 landings and 93 BigCommerce cells, two capabilities added (CM-CHK-010, Persistent cart, by the coordinator; CM-SHP-023, the shipping rules engine), and the whole-part check prints no problem.
+- **BC-C-018's landing in CM-ORD-001 is strained:** BC-S-0103 is also cited in CM-SHP-009 under BC-C-019's key, which the checker reads as another statement. BC-C-027's reading names its second tree, CM-SHP-013.
+- **A lead for the final review:** shipping protection sold to the buyer, on the app category Product & Shipping Protection (BC-I-0492, domain F) and Route's package protection (BC-S-0101). It isn't CM-SHP-003, insurance on the platform's own labels, and no concern of this part is it, so no capability was added: the review asks whether the class holds it, and where.
+- **The back-fill after BigCommerce** writes CM-CHK-010's and CM-SHP-023's Shopify, Salla, WooCommerce and Zid cells (C-backfill-bigcommerce).
