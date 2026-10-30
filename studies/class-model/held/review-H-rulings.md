@@ -66,3 +66,8 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - The UAE pages show none of these. Their table has five rows: it lacks Salla's discounted labels, Salla Ads, Mahally and the VAT line with the Zakat authority.
   - So a line only the Saudi pages hold takes السعودية in its scope, beside its plans. One only the UAE pages hold takes الامارات. These are the words of Salla's footer, 'مدعوم في: السعودية الامارات'.
   - SA-2's rule 5 had read the pages as the same text but for the currency.
+- **A card line in a page's two languages is one thing** (after SA-4). Where the English and Arabic lines are one element, by their place or by the layer the English one is named for, they take the capability of the words that name the thing more exactly:
+  - 'Run discount promotions' is 'إنشاء كوبونات تخفيض', coupons (CM-MKT-002);
+  - 'Custom pricing that matches your needs' is 'رسوم دفع مرنة تدعم توسُّع أعمالك', the payment service's fees (CM-PAY-007).
+
+  A thing that only one language names takes its own line, since either language is the platform's statement. An example is SA-4's 'multiple stores' and 'teams', which the Arabic card doesn't name.
