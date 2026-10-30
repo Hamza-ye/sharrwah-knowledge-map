@@ -206,12 +206,12 @@ def cmd_matches(a):
         cs = set(ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"]))
         if cs & want:
             print(f"{r['match_id']}\tshopify: {r['shopify']}\tsalla: {r['salla']}\twoocommerce: {r['woocommerce']}"
-                  f"\n    basis: {clip(r['basis'], 300)}\n    granularity: {clip(r['granularity'], 300)}\n    note: {clip(r['note'], 300)}")
+                  f"\n    basis: {clip(r['basis'], 0)}\n    granularity: {clip(r['granularity'], 0)}\n    note: {clip(r['note'], 0)}")
     for r in rows(os.path.join(CMAP, "unclear-matches.tsv")):
         cs = set(ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"]))
         if cs & want:
             print(f"{r['candidate_id']}\tshopify: {r['shopify']}\tsalla: {r['salla']}\twoocommerce: {r['woocommerce']}"
-                  f"\n    why_unclear: {clip(r['why_unclear'], 300)}\n    what_would_settle_it: {clip(r['what_would_settle_it'], 300)}")
+                  f"\n    why_unclear: {clip(r['why_unclear'], 0)}\n    what_would_settle_it: {clip(r['what_would_settle_it'], 0)}")
     print("# Q1's matches and unclear candidates cover Shopify, Salla and WooCommerce only; Zid and BigCommerce were never matched")
 
 

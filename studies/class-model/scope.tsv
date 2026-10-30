@@ -211,7 +211,7 @@ salla	SA-C-011	D		Notifications; SMS log; store_notification_settings_management
 salla	SA-C-012	F	B;E	Salla AI Connector; salla-mcp; ai-description-generator: AI tools for merchants (AIA); M-079
 salla	SA-C-013	A	F	support_access_requests; support-access: partner and support access to a store (STF)
 salla	SA-C-014	A		مدير حساب مخصص; support-plan; help.salla.sa: the platform's support to merchants (ONB); M-066
-salla	SA-C-020	B		Products; product.created; where Products (CAT); M-011
+salla	SA-C-020	B	D;E	Products; product.created; where Products (CAT); M-011; also D and E for its product filters, sorting, recommendations and custom fields (the coordinator, from B-anchor's notes)
 salla	SA-C-021	B		Product Options; Product Variants; where Categories & options (CAT); M-011
 salla	SA-C-022	B		Categories; category.created; where Categories (CAT); M-011
 salla	SA-C-023	B		Brands; brand.created; where Brand settings (CAT); M-011
