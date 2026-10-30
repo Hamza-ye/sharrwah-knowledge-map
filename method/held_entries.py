@@ -122,8 +122,10 @@ def says_something(o):
 
 
 def name_of(o):
+    # a country, a package or a variant names a list's element too, so a nested entry carries it (inspection-H2, MF-5)
     if isinstance(o, dict):
-        for k in ("name", "title", "label", "key", "slug", "handle", "id", "path", "url"):
+        for k in ("name", "title", "label", "key", "slug", "handle", "id", "path", "url", "display_name", "location",
+                  "store_country", "duration_code"):
             v = o.get(k)
             if isinstance(v, dict):
                 v = v.get("en") or next(iter(v.values()), "")
@@ -231,11 +233,24 @@ def items_of(platform, structure, rs):
         files = sorted(glob.glob(os.path.join(base, "**", "items.jsonl"), recursive=True))
         for f in files:
             label = os.path.relpath(os.path.dirname(f), base)
+            here = []
             for i, l in enumerate(open(f, encoding="utf-8", errors="replace"), 1):
                 try:
-                    out.append((label, os.path.relpath(f, root), i, "", json.loads(l)))
+                    here.append((label, os.path.relpath(f, root), i, "", json.loads(l)))
                 except Exception:
                     continue
+            # a group given only as the position of the item it sits under is that item's name (inspection-H2, SF-8)
+            at = {x[4].get("position"): x[4] for x in here if isinstance(x[4], dict) and isinstance(x[4].get("position"), int)}
+            def called(p):
+                props = p.get("props") if isinstance(p.get("props"), dict) else {}
+                return next((str(v).strip() for v in (name_of(p), p.get("text"), p.get("aria_label"), props.get("title"))
+                             if isinstance(v, str) and v.strip()), "")
+            for x in here:
+                o = x[4]
+                for k in ("parent", "within"):
+                    if isinstance(o, dict) and isinstance(o.get(k), int) and not isinstance(o.get(k), bool) and o[k] in at and called(at[o[k]]):
+                        o[k] = called(at[o[k]])
+            out += here
         if not files:
             for f in sorted(glob.glob(os.path.join(base, "**", "*.json"), recursive=True)):
                 if os.path.basename(f) == "meta.json":
