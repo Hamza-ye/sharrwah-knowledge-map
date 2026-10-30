@@ -1,1 +1,68 @@
 cap_id	platform	supports	key	why
+CM-SFR-001	bigcommerce	core	BC-C-042/where/BC-S-0236	its own Themes API: backup, restore, download and activate themes
+CM-SFR-001	bigcommerce	core	BC-C-042/boundary/BC-S-0242	own access scope store_themes_manage, view and modify themes
+CM-SFR-001	bigcommerce	core	BC-C-042/boundary/BC-S-0243	own webhook topic: a channel's theme published
+CM-SFR-001	bigcommerce	core	BC-C-038/decides/BC-S-0221	plan line Online storefront, on all four plans
+CM-SFR-002	bigcommerce	core	BC-C-042/where/BC-S-0238	Stencil, BigCommerce's Handlebars-based theme engine
+CM-SFR-002	bigcommerce	core	BC-C-042/where/BC-S-0237	its own API associating a Stencil theme's custom templates with products, categories, brands and pages
+CM-SFR-003	bigcommerce	shows	BC-C-042/decides/BC-S-0239	licence for each licensed Design theme, one store per licence purchased
+CM-SFR-003	bigcommerce	outside	BC-C-042/responsible/BC-S-0240	the designer licensor supports a design theme, not Commerce
+CM-SFR-003	bigcommerce	outside	BC-C-042/responsible/BC-S-0241	themes developed by external developers; Commerce does not update them
+CM-SFR-004	bigcommerce	extension-point	BC-C-044/decides/BC-S-0249	after install, an app freely updates its own scripts
+CM-SFR-004	bigcommerce	core	BC-C-044/where/BC-S-0248	Script Manager in the storefront's channel settings, the control panel counterpart of the Scripts API
+CM-SFR-004	bigcommerce	core	BC-C-044/where/BC-S-0247	its own Scripts API adds client-side code to a storefront page
+CM-SFR-004	bigcommerce	core	BC-C-044/boundary/BC-S-0250	own webhook topic: script created for a channel
+CM-SFR-005	bigcommerce	core	BC-C-043/where/BC-S-0244	its own Widgets API: widget templates, widgets, regions and placements
+CM-SFR-005	bigcommerce	core	BC-C-043/where/BC-S-0245	page widgets of its Content API divide pages into regions, layouts, dropzones and widgets
+CM-SFR-005	bigcommerce	shows	BC-C-043/where/BC-S-0246	Beta Page Widgets: publish or overwrite page content
+CM-SFR-005	bigcommerce	shows	BC-C-043/decides/BC-S-0077	closed beta, not available by default (Page Widgets API)
+CM-SFR-006	bigcommerce	own-service	BC-C-051/responsible/BC-S-0285	Makeswift, Inc., the contracting entity for the Makeswift visual editor / builder
+CM-SFR-006	bigcommerce	own-service	BC-C-051/where/BC-S-0284	Makeswift, BigCommerce's visual page builder, integrates with Catalyst
+CM-SFR-006	bigcommerce	shows	BC-C-051/boundary/BC-S-0286	Makeswift site API key for a Makeswift-enabled Catalyst storefront
+CM-SFR-007	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create banners
+CM-SFR-008	bigcommerce	core	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting endpoints add custom domains
+CM-SFR-008	bigcommerce	shows	BC-C-047/where/BC-S-0262	store information returns the store's domain
+CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0423	plan line Free sitewide HTTPS and dedicated SSL, on all four plans
+CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0422	its own Storefront Security settings
+CM-SFR-010	bigcommerce	core	BC-C-078/boundary/BC-S-0424	own webhook topic: a channel's security settings updated
+CM-SFR-010	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications for security and compliance
+CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0281	Catalyst, BigCommerce's headless storefront framework
+CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0282	Catalyst (Storefront Framework), BigCommerce's product page
+CM-SFR-011	bigcommerce	core	BC-I-0534	product line Headless commerce
+CM-SFR-012	bigcommerce	core	BC-C-053/where/BC-S-0293	its own Storefront API queries products, customers and carts from the storefront
+CM-SFR-012	bigcommerce	core	BC-C-053/where/BC-S-0292	its own storefront API tokens authenticate GraphQL Storefront API requests
+CM-SFR-012	bigcommerce	core	BC-C-053/boundary/BC-S-0294	own access scope store_storefront_api
+CM-SFR-012	bigcommerce	shows	BC-C-053/reason/BC-S-0295	reason: GraphQL returns several resources in one call
+CM-SFR-012	bigcommerce	core	BC-C-050/boundary/BC-S-0283	Catalyst implements the GraphQL Storefront API
+CM-SFR-013	bigcommerce	core	BC-C-011/where/BC-S-0065	product line Product filtering, customizable filtering
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0066	its own settings Search Filters
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0067	its own settings Storefront Search
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0068	plan line Product filtering
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0069	facets and rating or in-stock filters only on Pro or Enterprise
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0070	merchant marks facets visible in Product Filtering settings
+CM-SFR-013	bigcommerce	core	BC-C-011/boundary/BC-S-0071	own webhook topic: a channel's storefront search settings updated
+CM-SFR-013	bigcommerce	core	BC-C-047/where/BC-S-0263	Settings APIs manage the control panel's search filters
+CM-SFR-014	bigcommerce	core	BC-C-040/where/BC-S-0231	its own Sites API: sites and routes for headless storefront channels
+CM-SFR-014	bigcommerce	core	BC-C-040/boundary/BC-S-0232	own access scope store_sites, sites and routes
+CM-SFR-014	bigcommerce	core	BC-C-040/boundary/BC-S-0233	own webhook topic: a channel's site updated, created or deleted
+CM-SFR-014	bigcommerce	core	BC-I-0263	own webhook topic: a channel's route updated
+CM-CNT-002	bigcommerce	core	BC-C-049/where/BC-S-0276	its own API for store metafields, custom metadata on store resources
+CM-CNT-002	bigcommerce	core	BC-C-049/where/BC-S-0277	store metafields attached to the store itself
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0278	own access scope store_metafield_write
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0279	own access scope store_metafield_write_all
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0280	own webhook topic store/metafield/created
+CM-CNT-003	bigcommerce	core	BC-C-045/where/BC-S-0251	its own Pages API: a page on a channel's site
+CM-CNT-003	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages content pages
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0254	own access scope store_v2_content, store content
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0255	own webhook topic: page created for a channel
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0256	its GraphQL Storefront API retrieves site content per channel
+CM-CNT-003	bigcommerce	shows	BC-C-045/reason/BC-S-0257	reason: site content for headless storefronts, such as theme widgets
+CM-CNT-003	bigcommerce	extension-point	BC-I-0482	App Marketplace category CMS & Hosting
+CM-CNT-004	bigcommerce	core	BC-C-045/decides/BC-S-0253	plan line Built-in blog, on all four plans
+CM-CNT-004	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages blog posts and blog tags
+CM-CNT-007	bigcommerce	core	BC-C-047/decides/BC-S-0266	its own settings Storefront SEO
+CM-CNT-007	bigcommerce	core	BC-C-047/where/BC-S-0263	Settings APIs manage the control panel's SEO settings
+CM-CNT-008	bigcommerce	shows	BC-C-086/responsible/BC-S-0472	the merchant must keep a privacy policy readily accessible to its users
+CM-CNT-009	bigcommerce	core	BC-C-041/where/BC-S-0234	its own Redirects API: 301 redirects for storefronts
+CM-CNT-009	bigcommerce	core	BC-C-041/boundary/BC-S-0235	own webhook topic store/redirects/updated
+CM-CNT-009	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages redirects

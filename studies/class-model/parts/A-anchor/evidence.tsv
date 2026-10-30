@@ -326,3 +326,120 @@ CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3451	flag support-plan, released and
 CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3403	flag intercom-complains, released and enabled
 CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3404	flag intercom-campaign-complains, released and enabled
 CM-STF-005	salla	core	SA-C-014/boundary/SA-S-5132	support's temporary access requests appear on /manage/support-access, granted only on approval
+CM-TRU-001	shopify	core	SH-C-007/where/SH-S-1484	Security, Shopify's own settings page
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-5238	organization accounts:security route, gated by MFA management, SAML, SCIM
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-5243	the same eligibility on the organization-settings security route
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-7165	staff permission AUTHENTICATION_MANAGEMENT, External login services
+CM-TRU-001	shopify	core	SH-C-007/where/SH-S-2512	Sign in with passkey on Shopify's sign-in page
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-0260	two-step authentication required to use Shopify Payments
+CM-TRU-001	shopify	core	SH-I-1747	sign-up option Continue with email
+CM-TRU-001	shopify	core	SH-I-1753	sign-up option Continue with Google
+CM-TRU-001	shopify	core	SH-I-1754	sign-up option Continue with Apple
+CM-TRU-001	shopify	core	SH-I-1751	sign-up option Continue with Facebook
+CM-TRU-001	shopify	core	SH-I-1755	sign-up option Continue with WhatsApp
+CM-TRU-001	shopify	shows	SH-C-007/responsible/SH-S-0230	the merchant keeps the password secure
+CM-TRU-001	shopify	shows	SH-C-007/reason/SH-S-0261	turning off two-step authentication exposes the account
+CM-TRU-001	salla	core	SA-C-234/reason/SA-S-5115	two-factor authentication mandatory at sign-in to the dashboard
+CM-TRU-001	salla	shows	SA-C-001/decides/SA-S-3182	flag store-two-factor-authentication, not released (C6)
+CM-TRU-001	salla	shows	SA-C-001/decides/SA-S-3365	flag biometric-verification, not released (C6)
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-5254	Shopify's own route profile-assessment
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-1608	admin section Trust
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-1594	admin section ProfileAssessment
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-7180	operation RemediationQuery of profile_assessment
+CM-TRU-002	shopify	core	SH-C-008/decides/SH-S-0264	required when applying for Shopify Capital or Credit
+CM-TRU-002	shopify	core	SH-C-008/decides/SH-S-0265	account features restricted until verification is complete
+CM-TRU-002	shopify	shows	SH-C-008/responsible/SH-S-0263	the store owner usually completes the request
+CM-TRU-002	shopify	shows	SH-C-008/reason/SH-S-0262	against impersonation and account takeover; financial regulations
+CM-TRU-002	salla	shows	SA-C-006/boundary/SA-S-0132	Absher SMS to the store owner's number in store verification
+CM-TRU-002	salla	shows	SA-C-232/boundary/SA-S-0132	the same step, held under SA-C-232
+CM-TRU-002	salla	shows	SA-C-006/decides/SA-S-0138	beneficial owners' data of owners and managers in verification
+CM-TRU-002	salla	shows	SA-C-232/decides/SA-S-0138	the same requirement, held under SA-C-232
+CM-TRU-003	shopify	core	SH-C-012/where/SH-S-5206	Shopify's own route merchant-audit-log, path audit
+CM-TRU-003	shopify	core	SH-C-012/where/SH-S-1581	admin section MerchantAuditLog
+CM-TRU-003	shopify	core	SH-C-012/decides/SH-S-5239	organization activity-log route, VIEW_ALL_AUDIT_EVENTS
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-5938	webhook topic for each auditable Admin API request
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-1157	topic audit_events/admin_api_activity
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-0947	access scope read_audit_events
+CM-TRU-003	shopify	shows	SH-C-012/decides/SH-S-5207	route gated by STAFF_AUDIT_LOG_VIEW and a beta
+CM-TRU-003	salla	core	SA-C-010/where/SA-S-1889	Activity history link, /logs/audit
+CM-TRU-003	salla	core	SA-C-010/where/SA-S-3548	dashboard app @salla.sa/ui-merchant-logs, /logs
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2123	plan line سجل العمليات, plan سلة برو
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2421	staff permission audit_logs_management (S7)
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2966	flag advance-audit-log, released, plans plus, pro, special (C6)
+CM-TRU-003	salla	core	SA-C-010/reason/SA-S-5010	سجل العمليات: the page of the store's daily operations to review
+CM-TRU-003	salla	shows	SA-C-010/decides/SA-S-2638	audit_logs_management in the permissions a partner can request (S7)
+CM-TRU-004	shopify	core	SH-C-051/where/SH-S-6317	Bot protection, Shopify's own settings page
+CM-TRU-004	shopify	core	SH-C-051/where/SH-S-1556	admin section CommerceProtection
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-5112	route commerce-protection, PRODUCTS and productProtection
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-7074	plan table row Bot protection: Plus only
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-0744	available only on Shopify Plus
+CM-TRU-004	shopify	shows	SH-C-051/decides/SH-S-0746	activated through Shopify Plus Support
+CM-TRU-004	shopify	shows	SH-C-051/reason/SH-S-0745	blocks known bots from the checkout
+CM-TRU-004	shopify	shows	SH-C-051/where/SH-S-6318	help's steps link to the Online Store page
+CM-TRU-004	shopify	shows	SH-C-051/decides/SH-S-5595	feature productProtection false in the captured stores
+CM-TRU-005	shopify	core	SH-I-0019	the API's resource category Privacy
+CM-TRU-005	shopify	shows	SH-C-149/responsible/SH-S-0663	the merchant complies with privacy and data protection laws
+CM-TRU-005	shopify	shows	SH-C-148/responsible/SH-S-0646	Shopify alone doesn't guarantee GDPR compliance
+CM-TRU-005	salla	shows	SA-C-066/decides/SA-S-0169	the store's privacy policy complies with the PDPL
+CM-TRU-005	salla	shows	SA-C-066/decides/SA-S-0170	the law covers data of the Kingdom's citizens and residents
+CM-TRU-005	salla	shows	SA-C-066/responsible/SA-S-0030	published apps collect no sensitive data without permission
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-1502	Customer privacy, Shopify's own settings page
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-0662	privacy settings customised per country and region
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-5031	route customer-privacy:consent-banner
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-5253	route customer-privacy-policy-modal, MANAGE_POLICIES
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-0835	Customer Privacy API
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-6089	access scope read_privacy_settings
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-5956	read_privacy_settings, or content or pages scopes
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-6275	access scope write_privacy_settings
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-1044	read_privacy_settings in the scopes list
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-7210	automated privacy features included in the plan, on by default
+CM-TRU-006	shopify	extension-point	SH-I-1915	app-store category Cookie consent apps
+CM-TRU-006	shopify	shows	SH-C-148/boundary/SH-S-0224	API Terms: apps integrate with the Consent Tracking API
+CM-TRU-006	shopify	shows	SH-C-148/reason/SH-S-7286	privacy laws vary by region
+CM-TRU-006	shopify	shows	SH-C-148/responsible/SH-S-0067	the merchant obtains consents when using the Pixel Manager
+CM-TRU-006	salla	core	SA-C-066/boundary/SA-S-5023	registration window: registering is consent to the privacy policy
+CM-TRU-006	salla	shows	SA-C-066/decides/SA-S-3372	flag website-cookies, not released (C6)
+CM-TRU-006	salla	shows	SA-C-066/reason/SA-S-5024	the buyer sees and acknowledges the policy before registering
+CM-TRU-007	shopify	core	SH-C-149/where/SH-S-6362	the Customers page in the admin
+CM-TRU-007	shopify	core	SH-C-149/decides/SH-S-7154	staff permission ERASE_CUSTOMER_DATA, Erase personal data
+CM-TRU-007	shopify	core	SH-C-149/decides/SH-S-7155	staff permission REQUEST_CUSTOMER_DATA, Request data
+CM-TRU-007	shopify	core	SH-C-149/responsible/SH-S-0666	Shopify processes the erasure request for the merchant
+CM-TRU-007	shopify	core	SH-C-149/responsible/SH-S-0664	Shopify erases personal data such as name and address
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-5957	access scope read_customer_data_erasure
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-6179	write_customer_data_erasure; the user must have erase access
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-0974	write_customer_data_erasure in the scopes list
+CM-TRU-007	shopify	shows	SH-C-149/responsible/SH-S-0665	the merchant contacts others it shared the data with
+CM-TRU-007	salla	core	SA-C-066/decides/SA-S-3175	flag customer-data-export, released (C6)
+CM-TRU-007	salla	shows	SA-C-066/decides/SA-S-3174	flag customer-account-deletion, not released (C6)
+CM-TRU-008	shopify	core	SH-C-147/where/SH-S-6326	the setting in Shopify's own Customer privacy settings
+CM-TRU-008	shopify	core	SH-C-147/decides/SH-S-0045	the merchant may disable the setting powering Enhanced Services
+CM-TRU-008	shopify	core	SH-C-147/responsible/SH-S-0046	Shopify uses customer data across stores and merchants
+CM-TRU-008	shopify	shows	SH-C-147/responsible/SH-S-0192	Shopify as Data Controller for Enhanced Services
+CM-TRU-008	shopify	shows	SH-C-147/boundary/SH-S-0425	managed payment methods use SNI
+CM-TRU-008	shopify	shows	SH-C-147/where/SH-S-0725	a Shop feature needs SNI enabled
+CM-TRU-009	shopify	core	SH-C-172/where/SH-S-7258	the AUP's report of a user violating it
+CM-TRU-009	shopify	core	SH-C-172/decides/SH-S-0173	notice, self-remediation, product-level first, account action last
+CM-TRU-009	shopify	shows	SH-C-172/responsible/SH-S-0166	the AUP's main rule
+CM-TRU-009	shopify	shows	SH-C-172/responsible/SH-S-0167	nothing illegal where you do business
+CM-TRU-009	shopify	shows	SH-C-172/boundary/SH-S-0076	the Terms incorporate the AUP
+CM-TRU-009	shopify	shows	SH-C-172/decides/SH-S-0031	Shopify may refuse or remove Materials
+CM-TRU-009	shopify	shows	SH-C-172/reason/SH-S-0172	disputes originate with regulators and IP rights holders
+CM-TRU-009	shopify	shows	SH-I-2134	help section Resolving terms violations
+CM-TRU-009	salla	core	SA-C-232/where/SA-S-0116	Salla's own route /manage/violation, المخالفات
+CM-TRU-009	salla	core	SA-C-232/decides/SA-S-0115	the violations page: correct the violation within 24 hours
+CM-TRU-009	salla	shows	SA-C-232/decides/SA-S-0031	merchants may not use apps against the regulations
+CM-TRU-010	shopify	core	SH-C-175/where/SH-S-7257	Disclosures product metafield for required warnings
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0011	the merchant is the seller; not a marketplace
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0236	the merchant answers for its store, goods and transactions
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0012	regulatory compliance and legal disclosures included
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0013	Shopify is not the merchant of record
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0668	the merchant's own steps for regulated products
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0669	the merchant follows recall requirements
+CM-TRU-010	shopify	shows	SH-C-175/decides/SH-S-0667	research import and export laws per jurisdiction
+CM-TRU-010	shopify	shows	SH-I-2125	help section Consumer protection laws
+CM-TRU-010	shopify	shows	SH-I-2160	help section on the GPSR
+CM-TRU-010	shopify	shows	SH-I-2124	help section Alcohol products
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0160	customer-service information required by e-commerce laws
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0118	e-commerce certificate mandatory under the Ministry's rules
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0306	products from unsupported regions prohibited
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0307	orders shipping to unsupported regions prohibited

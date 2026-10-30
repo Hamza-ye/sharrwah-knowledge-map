@@ -5,7 +5,7 @@ CM-OPS-001	bigcommerce	core	BC-C-082/decides/BC-S-0450	infrastructure segmented 
 CM-OPS-001	bigcommerce	shows	BC-C-083/where/BC-S-0455	uptime record during Cyber Week
 CM-OPS-001	bigcommerce	shows	BC-C-057/reason/BC-S-0316	rate limits stated as safeguards for platform reliability
 CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0288	BigCommerce provides hosting for Catalyst projects
-CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting API
+CM-OPS-003	bigcommerce	shows	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting API; core in E's CM-SFR-008, store domains, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-OPS-003	bigcommerce	core	BC-C-028/responsible/BC-S-0169	BigCommerce a PCI DSS service provider as a shared hosting provider
 CM-OPS-003	bigcommerce	outside	BC-C-083/responsible/BC-S-0457	third parties provide hosting services essential to the Services
 CM-OPS-003	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon hosts customer and catalog data, feed data, logs

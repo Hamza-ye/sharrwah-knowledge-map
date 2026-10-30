@@ -614,7 +614,7 @@ bigcommerce	BC-C-048	E		Store Locale; Store Translations (MKS)
 bigcommerce	BC-C-049	E	B	Metafields; Metafield Ownership (CNT)
 bigcommerce	BC-C-050	E		Catalyst; Headless commerce (SFR)
 bigcommerce	BC-C-051	E		Makeswift visual editor (SFR)
-bigcommerce	BC-C-052	E	G	Infrastructure Hosting; Native Hosting of storefronts (SFR)
+bigcommerce	BC-C-052	G	E	Infrastructure Hosting; Native Hosting of storefronts (SFR); moved to G by the coordinator after E-bigcommerce batch 1: Native Hosting is hosting of the store, G's CM-OPS-003, whose BigCommerce cell cites its statements
 bigcommerce	BC-C-053	E	F	GraphQL Storefront API; Storefront API tokens: the storefront's own API (SFR)
 bigcommerce	BC-C-054	F		GraphQL Admin API (API)
 bigcommerce	BC-C-055	F	A	GraphQL Account API; Account resource scopes (API)

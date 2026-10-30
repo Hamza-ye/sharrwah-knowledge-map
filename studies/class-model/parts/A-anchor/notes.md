@@ -528,3 +528,174 @@ Left for the TRU batches:
 - **SA-C-167 and SH-C-016 are `strained`:** batch 4 cites SA-S-0141 in CM-ONB-001, and SH-I-2350 (placed by Q1 in SH-C-016 and SH-C-014) in CM-ONB-002, other trees (S1). Both citations bear on their capabilities, so both stay.
 - **CM-STF-005's Salla reading** names the row batch 4 added (SA-S-5132).
 
+
+## Batch 5: TRU, Security, privacy, trust and audit (the first of three batches on it)
+
+Concerns: SH-C-007, SH-C-008, SH-C-012, SH-C-051, SH-C-147, SH-C-148, SH-C-149, SH-C-172, SH-C-174, SH-C-175. Result:
+10 capabilities (CM-TRU-001 to CM-TRU-010), 10 landings (9 in new capabilities, SH-C-174 in batch 1's CM-ACC-008), 20
+cells, 117 evidence rows (two of them added to CM-ACC-008's Shopify cell), 2 qualities, 5 slot fillers, 6 rulings.
+Every capability has a Shopify and a Salla cell, so batches 6 and 7 find them ready.
+
+### How I cut, and why
+
+- **CM-TRU-001, sign-in security.** Shopify gives it Settings > Security and the organization's accounts:security
+  routes (SH-S-1484, SH-S-5238); Salla states two-factor sign-in to the dashboard as mandatory (SA-S-5115). No parent
+  (my judgment): Shopify's route is under the organization's accounts, for every user, and Salla's heading under platform
+  security (SA-C-234), so neither grouping puts it under CM-ACC-001. The sign-up page's options (Continue with Google,
+  Apple, Facebook, WhatsApp, email) are inventory entries cited as core; I wrote no slot fillers for them, since a button
+  naming a company doesn't say the company does the sign-in (reading).
+- **CM-TRU-002, identity verification of the people behind a store.** Shopify gives it a route and sections of its own
+  (profile-assessment, Trust, ProfileAssessment). Salla's only held statements are steps of its store verification
+  (Absher SMS to the owner, SA-S-0132; beneficial owners' data, SA-S-0138), cited as shows so that the verification counts
+  once, in domain C. Shopify Payments' KYC (SH-C-068) shares the ProfileAssessment section (its platform_terms); domain C
+  should check that its verification capability doesn't cite SH-C-008's route keys as well.
+- **CM-TRU-003, the audit log,** Q1's M-005. Salla's Logs section also holds the export log, domain G's CM-MIG-004 (G
+  cites SA-S-2122, SA-S-2423, SA-S-2640, SA-S-3234); I cite only the audit rows, and SA-S-3548, the Logs app at /logs,
+  which G doesn't cite. The webhook audit_events/admin_api_activity stays here: it is Shopify's own API for this feature.
+- **CM-TRU-004, bot protection,** Shopify only so far (Settings > Bot protection, a Plus plan line).
+- **Privacy, Q1's M-059, at two grains.** Salla keeps cookies, export and deletion in SA-C-066; Shopify splits SH-C-148
+  from SH-C-149. So CM-TRU-005 is the parent, for SA-C-066 (batch 7, by match:M-059 once it lands), with CM-TRU-006
+  (privacy settings, cookie consent, the consent API) and CM-TRU-007 (data requests and erasure) for Shopify's two. The
+  parent's cells hold the statements on the merchant's privacy duties as a whole and the API category Privacy (SH-I-0019,
+  placed by Q1 in both Shopify concerns).
+- **CM-TRU-008, Shopify Network Intelligence (Enhanced Services),** under CM-TRU-006 because Shopify puts its setting in
+  the Customer privacy settings (SH-S-6326). More than a flag (my judgment, for the convention on when something is a
+  capability): it has its own section of the Terms (9.2 Enhanced Services), its own controller role in the DPA
+  (SH-S-0192), and other features depend on it (Shop, managed payment methods). The reviewer may judge it a setting of
+  CM-TRU-006 instead and land SH-C-147 there.
+- **CM-TRU-009, acceptable use and enforcement.** Salla's /manage/violation gives it a place; Shopify's AUP and its report
+  form. The store states that enforcement leads to stay in CM-ONB-002: SH-C-172's restricted-access, appeal and
+  termination statements are held under SH-C-014 too and cited there by batch 4, so I don't cite them again.
+- **SH-C-174 lands in CM-ACC-008,** whose Shopify cell already rests on its keys; I add its two remaining platform-wide
+  restrictions (products from, and orders to, unsupported regions: SH-S-0306, SH-S-0307). No sanctions capability: no
+  statement gives sanctions screening a place of its own, and Salla holds no sanctions term (Q1's U-035). Its Shopify
+  Payments sanctions clauses (SH-S-0122, SH-S-0131), the processors' KYC/AML duties (SH-S-0099, SH-S-0100) and the
+  sanctions account hold (SH-S-0353, which doesn't say whose account) are left uncited for domain C's Payments
+  eligibility, and the app developer's export classification (SH-S-0296) for domain F. They are statements of a domain A
+  concern, so domain C and F cite them, if at all, under also-less keys: the coordinator may want SH-C-174's `also` to
+  name C.
+- **CM-TRU-010, the merchant's legal compliance as the seller,** Q1's M-086. Shopify's help Compliance section and its
+  product disclosures give it a place. Salla's cell holds the e-commerce laws' requirements (SA-S-0160, SA-S-0118) as
+  shows. The help sections naming laws (GPSR, the European Price Indication Directive, CPSC eFiling, TSE in Germany) are
+  inventory entries, not statements, so I wrote no slot fillers for them; three are cited as shows.
+
+### Joins on role
+
+- **CM-TRU-001:** Shopify's two-step authentication against Salla's المصادقة الثنائية (two-factor), each a second step at
+  sign-in to the admin (SH-S-0260, SH-S-5238; SA-S-5115, SA-S-3182). Q1's U-006.
+- **CM-TRU-002:** Shopify's identity verification, completed by the store owner (SH-S-0263), against Salla's Absher check
+  of the store owner and its beneficial owners' data (SA-S-0132, SA-S-0138): the platform checks the identity of the
+  people behind the store. Q1's U-007.
+- **CM-TRU-006:** Shopify's consent banner and privacy settings against Salla's website-cookies flag and its consent to
+  the privacy policy at buyers' registration (SA-S-3372, SA-S-5023).
+- **CM-TRU-007:** Shopify's Request data and Erase personal data against Salla's flags customer-data-export and
+  customer-account-deletion, on the flags' names only.
+- **CM-TRU-009:** Shopify's AUP report and enforcement against Salla's violations page (SA-S-0116, SA-S-0115).
+- **CM-TRU-010:** Shopify's Your Responsibilities against Salla's e-commerce law requirements (SA-S-0160, SA-S-0118).
+- **CM-ACC-008:** SH-C-174's unsupported regions against SA-C-167's markets (batch 1's join; SH-C-174 now lands there).
+- SH-C-012 lands by `terms` (audit), not `match:M-005`, because SA-C-010 hasn't landed; the coordinator may set M-005
+  once batch 7 lands it.
+
+### Homonyms kept apart
+
+- **"Log"** (Q1's U-044): WooCommerce's and BigCommerce's store logs (domain G's CM-OPS-005) are a logger's entries, not
+  an audit of admin actions. In CM-TRU-003's note.
+- **"Rate limit"** (Q1's U-045): API rate limits on Shopify and Salla (domain F) against WooCommerce's checkout limit;
+  bot protection is neither. In CM-TRU-004's note.
+- **Bot protection against reCAPTCHA:** Salla's reCAPTCHA verification (SA-S-1715, SA-S-3100) guards buyers' sign-in and
+  registration, domain D's CM-CUS-012, not the checkout.
+- **"Consent":** customers' marketing consent is domain D's CM-CUS-007; CM-TRU-006 is visitors' privacy and cookie consent.
+- **"Complaint"** (Q1's U-040, for batch 7): Salla's complaints platform (منصة الشكاوى, SA-C-178, buyers complaining
+  about stores to Salla) is not domain D's CM-SUP-008 (Complaints / إدارة الشكاوى, the merchant handling its own
+  customers' complaints, at /manage/complaints). Batch 6 or 7 should search `caps` for complaints before adding one.
+
+### Strained fits
+
+- **SH-C-147** in CM-TRU-008: SH-S-0725 (a Shop feature needs SNI) is also cited in domain E's CM-CHN-002.
+- **SH-C-148** in CM-TRU-006: SH-S-0067 (Pixel Manager consents) is also cited in domain D's CM-MKT-009; SH-S-5031, one
+  eligibility statement Q1 holds for several routes, is cited in domains D and E for theirs.
+- **SH-C-149** in CM-TRU-007: its topic customers/data_request (SH-S-1197) is domain F's CM-API-011, not cited here.
+- **SH-C-172** in CM-TRU-009: its restricted-access, appeal and suspension statements are CM-ONB-002's; SH-S-0031 is also
+  in domain B's CM-CAT-001.
+- **SH-C-174** in CM-ACC-008: SH-S-0304 is also in CM-ONB-001; SH-S-0297 in domain F's CM-PTN-002.
+- **SH-C-175** in CM-TRU-010: SH-S-0236 is also in domain B's CM-CAT-001.
+
+### Concerns of other domains read under `also`
+
+- **SA-C-234** (domain G, platform security): its two-factor heading SA-S-5115 is CM-TRU-001's Salla core; G doesn't cite
+  it. SA-C-234 lands in G's CM-OPS-002, so G's landing is now strained by it.
+- **SA-C-006** (domain C, Store Verification): SA-S-0132 and SA-S-0138, cited as shows in CM-TRU-002 under both SA-C-006's
+  and SA-C-232's keys, as batch 4 did for a statement held under two concerns. Its SA-S-0118 is cited in CM-TRU-010 under
+  SA-C-231's key only.
+- **SH-C-161** (domain F, privacy webhooks) is CM-API-011's; SH-C-160 (protected customer data) and SH-C-042 (customer
+  identity providers) weren't needed.
+
+### Rulings, and the pairs left for later batches
+
+Ruled here: U-006 twice (SH-C-007 against SA-C-001 and against SA-C-234, both joined:CM-TRU-001); U-007 (joined:CM-TRU-002,
+following the cells for SA-C-006); U-034 (joined:CM-ACC-008); U-036 for SH-C-172 against SA-C-170 (apart: SA-C-170's
+held statements are the registration step and the agreement's page, cited in CM-ACC-001, and the usage policy's text
+isn't held); U-045 for SH-C-051 against SA-C-201 (apart: scope.tsv gives SA-C-201 domain F).
+
+Left for batch 7 (Salla's TRU concerns):
+- **U-035, SH-C-174 against SA-C-232:** SH-C-174 is in CM-ACC-008; if no CM-ACC-008 cell cites an SA-C-232 key, apart.
+- **U-036, SH-C-172 against SA-C-232:** CM-TRU-009's Salla cell cites SA-C-232's SA-S-0116 and SA-S-0115, so joined:CM-TRU-009
+  by the cells. **SH-C-014 against SA-C-232:** CM-ONB-002 cites SA-S-0115 too, so joined:CM-ONB-002 as batch 4 said.
+- **U-007's other side, SH-C-008 against SA-C-232** isn't a candidate pair (U-007 holds SA-C-006 only), but CM-TRU-002
+  cites SA-C-232's keys, so landing SA-C-232 elsewhere makes it strained.
+- **U-039, SH-C-175 against SA-C-231:** CM-TRU-010's Salla cell cites SA-C-231's SA-S-0160 and SA-S-0118, so
+  joined:CM-TRU-010 wherever SA-C-231 lands.
+- **U-040, SH-C-172 against SA-C-178:** CM-TRU-009 cites no SA-C-178 key yet; Shopify's report form (SH-S-7258) and
+  "Report an issue with a merchant" (SH-I-1374, not cited) are the side to weigh against Salla's complaints platform.
+- **U-044, SH-C-012 against SA-C-010:** CM-TRU-003 cites both sides, so joined:CM-TRU-003 once SA-C-010 lands (by
+  match:M-005). SA-C-010 will be strained: its export-log statements are cited in domain G's CM-MIG-004.
+- **M-059:** SA-C-066 lands in CM-TRU-005 by match. Its cells there and in CM-TRU-006 and CM-TRU-007 already cite it.
+- **M-060 (batch 6's SH-C-180, batch 7's SA-C-171):** the merchant as controller (SA-S-0168) and Shopify as controller for
+  Enhanced Services (SH-S-0192, cited in CM-TRU-008) bear on data-protection roles. Placing that capability under
+  CM-TRU-005 keeps them in one tree.
+- U-080 (SH-C-175 against WC-C-091) and M-084's and M-086's WooCommerce concerns are WooCommerce's part's.
+
+### What the checker flagged
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-anchor --concerns SH-C-007,SH-C-008,SH-C-012,SH-C-051,SH-C-147,SH-C-148,SH-C-149,SH-C-172,SH-C-174,SH-C-175 --areas TRU`:
+0 problems, 13 flags.
+- *CM-TRU-004 salla none-held, 24 statements match:* reCAPTCHA at buyers' sign-in (SA-S-1715, SA-S-3100, SA-S-3368,
+  domain D's CM-CUS-012), the PDPL's protection of data (SA-S-0168, SA-S-0169), payment restrictions and fraud protection
+  (قيود الدفع والحماية من الاحتيال, نظام الحماية من الاحتيال: SA-S-2145, SA-S-1971, SA-S-0104, SA-S-5050, domain C), store
+  content protection (SA-S-2035), the affiliate and theme-publishing plan lines (SA-S-2144, SA-S-2034) and partners'
+  confidentiality (SA-S-5097, SA-S-0029). None blocks bots from the checkout.
+- *CM-TRU-006 salla: core rests only on boundary statements:* SA-S-5023 is Salla's help describing the store's own
+  registration window, not an API object; Q1 placed it under boundary because the window is where the store meets the
+  buyer.
+- *CM-TRU-008 salla none-held, 5 statements match:* SA-S-5052 and SA-S-0110 (answered in the cell), SA-S-0168 (the
+  controller's obligations), and the flag ai-driven-personalized-product (SA-S-3377, SA-I-2377), which names
+  personalization of products and doesn't say whose data or across which stores.
+- *SA-S-3182 and SA-S-3365 in CM-ACC-001 and CM-TRU-001:* see below.
+- *SA-S-0115 in CM-ONB-002 and CM-TRU-009:* intended, as batch 4 foresaw: the violation is this capability's subject,
+  the suspension CM-ONB-002's.
+- *SH-C-014 clean in CM-ONB-002, its statements cited in CM-TRU-009:* SH-I-2134, the help section "Resolving terms
+  violations", is placed by Q1 in SH-C-014 and SH-C-172; batch 4 doesn't cite it. See below.
+- *CM-STF-003, CM-PLN-006, SA-S-5002, SA-S-0089, SA-S-0141, SH-S-0238:* earlier batches', answered there.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-ACC-001's Salla cell (batch 1)** cites the two-factor and biometric flags (SA-S-3182, SA-S-3365) as shows. Their
+  subject is CM-TRU-001's, as batch 1 foresaw: drop them from CM-ACC-001 (and its reading), or keep both and the flag.
+  CM-ACC-001's note ("Sign-in security ... is the TRU batch's") can now name CM-TRU-001.
+- **CM-ACC-008 (batch 1):** its Shopify reading should name the two rows I added (SH-S-0306, SH-S-0307), and its note
+  ("Shopify's sanctions concern (SH-C-174) ... the TRU batch's to land") that SH-C-174 has landed there.
+- **SH-C-014 (batch 4)** is now strained by SH-I-2134, cited in CM-TRU-009 (S1); or drop SH-I-2134 there if its subject is
+  judged the store's state rather than the violation.
+- **CM-ONB-002's Salla reading (batch 4)** says SA-C-232 is the TRU batch's to land; CM-TRU-009 now cites SA-S-0115 as core.
+
+### Problems and gaps
+
+- **Salla's usage policy** (سياسة الاستخدام على منصة سلة, SA-I-2613) isn't held as text, so Salla's acceptable-use rules,
+  and any sanctions or restricted-country rules (U-035's "what would settle it"), aren't held.
+- **Shopify's boundaries:** SH-C-007/boundary, SH-C-008/boundary and SH-C-051/boundary are "searched, not found";
+  SH-C-174/where and /boundary are "observation needed" (where the sanctions restriction applies, and its screening
+  interface).
+- **Salla's privacy and erasure:** only flags are held for data export and account deletion, with no statement of what
+  they do; no cookie banner, per-region privacy setting or erasure process is held.
+- **Salla's identity verification** apart from store verification isn't held; nor is a Salla statement on bot protection.
+- **Makers:** none needed; every placement here rests on the platforms' own pages, routes and APIs.

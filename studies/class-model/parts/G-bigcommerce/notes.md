@@ -77,3 +77,7 @@
 - **BigCommerce's store import and export** is unheld in the concern map: no control panel route, API resource or plan line. Whether BigCommerce has it isn't stated. A capture of its Help Center on import and export would settle it.
 - **No status page** is held for BigCommerce. Q1 records no gap for it, since no concern covers it.
 - **BC-I-0539, Performance & reliability,** is a product line name only. What the line covers isn't held.
+
+## The coordinator's correction after E-bigcommerce batch 1 (30 October)
+
+- **BC-S-0287 counts once:** `core` in E's CM-SFR-008, store domains, whose BigCommerce cell rests on it, and `shows` here. CM-OPS-003's BigCommerce cell stays `core` on BC-S-0288 and BC-S-0169. Native Hosting (BC-C-052) now lands here, through `G-amend`.
