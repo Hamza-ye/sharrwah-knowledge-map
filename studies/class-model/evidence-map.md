@@ -82,3 +82,4 @@ A thing is `absent` only where a complete list the platform publishes leaves it 
 **Found in the held pass:**
 - BigCommerce's `settings-list` structure pairs each section with the next one's address. Its source step holds the right one (handoff H-009).
 - Shopify's beta flags are held under hashed names, so nothing can be placed from them.
+- Zid's `dashboard-page-index` holds 119 of its source's 137 page objects. Its extractor drops those with a conditional or computed title or path, and two simple ones (`dashboard`, `settings.general`) (ZD-1's notes). Each dropped page's route is in `dashboard-route-manifest`, which ZD-1 to ZD-4 read, so the model loses nothing and no request goes out. The items also leave out each page's permission, sidebar badge and listing condition: `source.js` holds them.
