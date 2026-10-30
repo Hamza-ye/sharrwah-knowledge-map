@@ -204,21 +204,24 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 ### Stage 4A. The class's model (from 29 October 2026)
 
 The founder's intent puts the class's model before architecture. The subjects continue beside it, as the analysis of where the class varies by market. Each subject's variation points land in the model's areas.
-- **The seed.** The Knowledge Map's 41 areas are the index (`studies/class-model/seed/`). The extent's parts don't read its questions: those wait for Q3's check, so they can't steer the model. Its kinds are computed from the model's cells, and its source types grade sources from outside the references in each area's design.
-- **The extent, in two passes,** from Q1's evidence (`studies/class-model/briefs/B-extent.md`):
-  - **the anchor:** Shopify and Salla, the deepest evidence, one domain per part, grouped as the two platforms group things;
-  - **the mapping:** WooCommerce, then Zid, then BigCommerce, each mapped onto the anchor, adding what it alone shows.
+- **The seed.** The Knowledge Map's 41 areas are the index (`studies/class-model/seed/`). The extent's parts don't read its questions: those wait for Q3's check, so they can't steer the model. Its kinds are computed from the model's cells, and its source types grade the sources the architecture plan draws on, with what each can't tell (the founder, 30 October).
+- **The extent,** from Q1's evidence (`studies/class-model/briefs/B-extent.md`):
+  - **the scope:** before any part runs, every concern of the five platforms is assigned to one domain, A to G;
+  - **per domain, the anchor:** Shopify and Salla, the deepest evidence, grouped as the two platforms group things;
+  - **then the mapping:** WooCommerce, then Zid, then BigCommerce, one part per platform and domain, each mapped onto the domain's model so far and adding what it alone shows;
+  - **then the back-fill:** the cells that capabilities added later left missing for the platforms mapped before, so the order of the mapping doesn't bias the counts.
 
   Every concern of every platform lands once, so the model stays the union of the class.
 - **The brief is inspected before it runs,** as section 3 asks: `B-extent.md` changed after its last inspection.
 - **A dry run first.** The anchor on one domain, then one platform mapped onto it, reviewed on its output against the evidence by an agent that made none of it. The review checks every placement against all of Q1's statements for the concern, not its `where` rows alone. The conventions and a checker come from it, before the other domains run.
-- **The parts and the merge.** The anchor runs one part per domain the references show (A to G of the seed; H, beyond the references, takes no capabilities), the mapping one part per platform. The coordinator merges the parts, checks that each concern lands once, and computes each capability's kind and count from its cells.
+- **The parts and the merge.** The anchor runs one part per domain the references show (A to G of the seed; H, beyond the references, takes no capabilities), the mapping one part per platform and domain. The coordinator merges the parts, checks that each concern lands once, and computes each capability's kind and count from its cells.
 - **The kind and the count,** by one rule for all (section 6's kinds). A capability's count is how many of the five place it in their core or as their own service; a platform Q1 holds nothing for is not counted as lacking it. It is `class` where that count is at least one, and `slot` where every platform that shows it leaves it to third parties (an extension point) or says another party does it (outside). What fills a slot is `world`: a slot filler, never a capability. The dry run's review may refine the rule, which then applies to all.
-- **The subjects' points.** After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. Each later subject's points land as it ends.
+- **The subjects' points.** After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. Each later subject's points land as it ends. Where a point and the model conflict, the point is reopened with its evidence, not forced to fit (the founder, 30 October). An engineering ruling is ruled again on that evidence, and listed for the founder's veto. A founder's own decision, such as S-01's Decision 1, isn't reopened by engineering: the conflict comes to the founder with its evidence.
 - **The check for what it misses.** At the end, Q3's reconciliation places the Knowledge Map's 179 questions and the 81 payment rows against the model. A row the model doesn't cover is a candidate miss, checked against the evidence.
-- **An independent review** of the whole extent, by an agent that made none of it. Then **the extent's report** goes to the founder at GM, with the architecture plan and engineering's rulings for veto, after the orientation page is updated.
+- **An independent review** of the whole extent, by an agent that made none of it. Then **the extent's report** goes to the founder at GM, with the architecture plan, the Knowledge Map's page rebuilt from the model, and engineering's rulings for veto, after the orientation page is updated.
+- **The Knowledge Map's page, rebuilt** (the founder, 30 October): the founder's view of the extent. A script generates it from the model's files, so it can't drift from them: the areas and capabilities, which platforms establish each and where, each linked to its cells at a pinned commit, and Q3's check. A cell with nothing held reads as nothing held, never as absent. The page at `e4d5cee` stays as the seed.
 - **The architecture plan** (the founder, 30 October), in `architecture/plan.md`. It is written by established practice before architecture starts, reviewed by an agent that made none of it, and brought to the founder at GM with the extent's report. Architecture starts on the founder's go on it. Its decisions stay engineering's, each listed for the founder's veto. It states:
-  - **what architecture needs to know, and where each part comes from:** the class's model, the subjects' registers, the founder's decisions and quality order, scale, established designs and engineering writing, and spikes;
+  - **what architecture needs to know, and where each part comes from:** the class's model, the subjects' registers, the founder's decisions and quality order, scale, established designs and engineering writing, and spikes. Each source is graded by the Knowledge Map's source types, with what each can't tell (`studies/class-model/seed/km-source-types.tsv`; the founder, 30 October), reconciled with section 6's kinds of evidence;
   - **who decides, and how each decision is made, recorded and checked;**
   - **which areas come first, and which subjects must land before which area.** The model's areas index what the class does, while architecture's parts are cut by what changes together (Parnas 1972). So the plan says how one maps to the other, and which decisions cut across every area and come before any;
   - **what keeping room means** (section 3), with S-02's D9 as its worked example: options kept by design at a stated cost (Baldwin & Clark 2000; Sullivan et al. 2001), variation points with their binding time (Pohl, Böckle & van der Linden 2005; Svahnberg, van Gurp & Bosch 2005), and checks that keep them open (Ford, Parsons & Kua 2017). It guards both failures: an option closed by a default nobody examined, and one built before it is worth its cost;
@@ -253,7 +256,7 @@ The founder's intent puts the class's model before architecture. The subjects co
 | G1 | After the pilot | Scale up, change the method, or re-frame |
 | G2 | After the subject list | Business scope (answered 26 October: "evidence" for all ten). Under the intent, nothing the class shows is ruled out |
 | G3 | After each subject | The decisions the subject raised that are on the founder's list (section 3); engineering's rulings come listed for veto |
-| GM | After the class's model's extent | The extent's report, with engineering's rulings for veto, and the architecture plan: architecture starts on the founder's go on the plan (the founder, 29 and 30 October) |
+| GM | After the class's model's extent | The extent's report, with the Knowledge Map's page rebuilt from the model and engineering's rulings for veto, and the architecture plan: architecture starts on the founder's go on the plan (the founder, 29 and 30 October) |
 | G4 | At close-out | Accept the register and the class's model's extent (engineering's rulings on its detail come listed for veto), and plan the first version's build |
 
 G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (section 11).
@@ -264,7 +267,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 - **At G1, after the pilot:** whether the pilot's entry lets the founder decide, and the decisions the pilot raised.
 - **At G2 (answered):** business scope, marked on the subject list.
 - **At G3, after each subject:** that subject's decisions on the founder's list.
-- **At GM, after the model's extent:** its report, and the go on the architecture plan.
+- **At GM, after the model's extent:** its report, with the Knowledge Map's page rebuilt from the model, and the go on the architecture plan.
 - **At G4:** accepting the register and the class's model's extent.
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
@@ -606,3 +609,14 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Until the architecture plan exists, nothing defines keeping room.** Accepted: no architecture is designed before the go on the plan, and the extent commits to no design.
 
   **What the coordinator missed.** The fold listed its own weakening of "under its own plan" without proposing what would replace it, and line (3) was the coordinator's wording, not tested against practice before it went to the founder. From now on, a weakening the coordinator lists comes with its replacement or goes to the founder as a question, and wording proposed for the founder's decisions is checked against established practice first.
+- **30 October 2026, the extent's method, after its brief's inspection** (`studies/class-model/inspection-B.md`). A fix to the method within this plan, listed at the next report. Changed in Stage 4A: a scope step comes first; the mapping runs one part per platform and domain, onto the domain's model so far; a back-fill writes the cells that later capabilities left missing.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **A mapping part per platform read the whole merged anchor,** so a Zid or BigCommerce concern could meet a capability of any domain (inspection A's N4). Weakened: a mapping part reads its domain's model. Replaced: the scope step assigns every concern before any part runs, and a part that finds a concern belongs elsewhere lands it as moved, for the coordinator to move.
+- **30 October 2026, the founder's answers before GM** (`founder-decisions.tsv`, 30 October; `founder-messages/2026-10-30-before-gm.md`). Changed:
+  - **Stage 4A, the subjects' points:** a conflict between a point and the model is reopened with its evidence, not forced to fit. Where the point is the founder's own decision, engineering doesn't reopen it: the conflict comes to the founder with its evidence. That follows the founder's handoff of 29 October: "Don't: reopen Decision 1 or the guard".
+  - **Stage 4A, the architecture plan:** its sources are graded by the Knowledge Map's source types.
+  - **Stage 4A and section 5, GM:** the Knowledge Map's page, rebuilt from the model's files, comes with the extent's report.
+  - **Outside this plan:** S-02's register records no veto, and moves RD2's plan items to the founder's plans.
+
+  **What this change removes or weakens:** nothing. It adds a page at GM, which a script generates from the model's files, and it makes the landing of the subjects' points stricter.

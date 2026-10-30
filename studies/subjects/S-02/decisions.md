@@ -1,4 +1,6 @@
-# S-02, what a market is: engineering's rulings, for the founder's veto (draft)
+# S-02, what a market is: engineering's rulings, for the founder's veto
+
+*The founder vetoed none of D1 to D9 or E1 to E5 on 30 October (`founder-decisions.tsv`), and moved RD2's plan items to their plans (below).*
 
 **What this page is:** the draft of S-02's register (`register.tsv`), for you. Phase C left 143 items: 85 are settled here as seven rulings (D1 to D7), and 58 go to the subjects that decide them. D8 and D9 are needs the Yemen row found that no platform meets. Each ruling gives what the platforms do, engineering's ruling and why, what it rules out, and what changing course later costs.
 
@@ -23,7 +25,7 @@
 
 **Changing course later: a redesign,** if the country is a store field and a second business comes later. With the business record, a second business is a setting, since each order records the business that served it (E2).
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ### D2. When a seller moves country
 
@@ -37,7 +39,7 @@
 
 **Changing course later: one module** with D1's business record; a redesign without it.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ### D3. What follows the seller's country
 
@@ -51,7 +53,7 @@
 
 **Changing course later: one module,** since each order records its business (E2). A redesign if features keep countries of their own.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 **What follows by rule (RD1):** as all five do, the seller sets the store's country and address, and where the seller is decides terms, payment services, fees and features. Bound per seller's country by rule: the store's taxes, the privacy law, and whether one contracting company serves every store there (S-03 decides). Kept open: which countries are kept out, who else checks a business, and a balance cleared before a move (none at launch, under Decision 1). Left to the build: permissions and address fields for a move. **Moved:** 47 items, to S-03, S-04, S-05, S-07, S-08, S-09 and S-11.
 
@@ -69,7 +71,7 @@
 
 **Changing course later: a redesign,** if markets hold only countries and a later kind must come; one module if conditions have kinds from the start.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ### D5. How markets overlap
 
@@ -83,9 +85,9 @@
 
 **Changing course later: one module.**
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
-**What follows by rule (RD2):** every store has a main market, which the platform makes and whose places may change; the seller makes the others. Left to the build: how many markets a plan allows, which kinds it offers, and who may remove one.
+**What follows by rule (RD2):** every store has a main market, which the platform makes and whose places may change; the seller makes the others. Left to the build: who may remove one. How many markets a plan allows, and which kinds it offers, are Sharrwah's plans and prices, on the founder's list: they come to the founder with plans (the founder, 30 October). The model lets a plan set both (D4, D5), as the class shows.
 
 **Moved:** to S-07, whether a market may hold only countries Sharrwah serves.
 
@@ -105,7 +107,7 @@
 
 **Changing course later: a setting,** on the recommendation; a redesign if settings start store-only and markets come later.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ### D7. Currency and prices per market
 
@@ -120,9 +122,9 @@
 **What it rules out:** money records that keep one currency only.
 
 **Changing course later, and your veto, by part:**
-- **Two amounts on every record:** a redesign, if orders keep one currency and markets later sell in their own. **Veto:** (none)
-- **Where the rate is held,** per market or per currency: one module. **Veto:** (none)
-- **Which markets carry their own currency:** a setting, once both amounts are kept. **Veto:** (none)
+- **Two amounts on every record:** a redesign, if orders keep one currency and markets later sell in their own. **Veto:** none (the founder, 30 October)
+- **Where the rate is held,** per market or per currency: one module. **Veto:** none (the founder, 30 October)
+- **Which markets carry their own currency:** a setting, once both amounts are kept. **Veto:** none (the founder, 30 October)
 
 **What follows by rule (RD3):** as all five do, the seller sets each market's settings; tax, shipping, payment methods, the address form and the currency shown follow the buyer's country; one currency, tax setup and set of units hold for the store. Set per market by rule or pattern: returns, messages to buyers, the address form, and a tax partner such as Avalara. Kept open: business entities per market (D1 leaves room); returns, privacy, analytics and notifications per market. Left to the build: who besides the seller sets each setting. **Moved:** a merchant of record and store closures to S-03; currency conversion by providers to S-04; couriers' cash on delivery and fulfilment services' locations to S-10.
 
@@ -146,7 +148,7 @@ The Yemen row found these needs, written without the market's name. Each was che
 
 **Changing course later: one module,** given E2's entry point and the dated area field; only past records kept without an area can't be recovered. A redesign only if E2 or D1 is declined.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ### D9. Two currency areas under one currency code
 
@@ -167,7 +169,7 @@ The Yemen row found these needs, written without the market's name. Each was che
 
 **Changing course later: one module** if amounts in money records refer to a currency record; **a redesign** if a bare currency code is stored in every amount, since every money record, rate and report would then have to learn the area.
 
-**Veto:** (none)
+**Veto:** none (the founder, 30 October)
 
 ## What moved to other subjects
 

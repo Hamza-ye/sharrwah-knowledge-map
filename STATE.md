@@ -16,8 +16,13 @@
 - **The plan** now puts the class's model before architecture (`PLAN.md`, Stage 4A). The subjects continue beside it, as the analysis of where the class varies by market.
 - **Architecture** has its own plan, written by established practice, which comes to the founder with the extent's report at gate GM. Architecture starts on the founder's go on that plan (30 October). The extent's budget is 250 million agent tokens, and the plan's about 30 million.
 - **The founder's change of 30 October** (`founder-decisions.tsv`): line (3) is taken out of the intent's row. What keeping room means is stated in the architecture plan, by established practice, with S-02's D9 as its worked example.
+- **The founder's answers before GM (30 October)** (`founder-decisions.tsv`; verbatim in `founder-messages/2026-10-30-before-gm.md`):
+  - **S-02:** no veto on D1 to D9 or E1 to E5. RD2's plan items (how many markets a plan allows, which kinds it offers) are plans and prices, and come to the founder with plans: register row S02-M9.
+  - **When the subjects' points land on the model,** a conflict is reopened with its evidence, not forced to fit. A founder's own decision isn't reopened by engineering: the conflict goes to the founder.
+  - **The architecture plan** grades its sources by the Knowledge Map's source types.
+  - **At GM,** the Knowledge Map's page comes too, rebuilt by script from the model's files.
 
-**Open gate:** GM, after the class's model's extent: its report, and the founder's go on the architecture plan. S-02 has reached its end. Under the intent, its nine decisions are engineering's rulings, listed for the founder's veto.
+**Open gate:** GM, after the class's model's extent: its report with the Knowledge Map's page rebuilt from the model, and the founder's go on the architecture plan. S-02 has reached its end; the founder vetoed none of its rulings.
 
 **Waiting on the founder:** nothing until GM. The founder may veto any ruling at any time.
 
