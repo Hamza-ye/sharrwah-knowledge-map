@@ -133,6 +133,7 @@ Your batch holds 50 to 200 entries. Your context should stay under about 200,000
 - **A run of entries of one kind** (a list of carriers, gateways or permissions) is decided once, from its first entries and its source, then each entry's text is read for a difference. Routes and settings are placed one by one, since a section's routes are many capabilities' (rule 3).
 - **Where you split a structure with the batch before yours,** read that batch's placements for it first (`held/<platform>/placements-<batch>.tsv`), and keep to them where the things are the same. If it hasn't run yet, say so in your notes; the coordinator aligns the two.
 - **Write placements as you go,** never at the end.
+- **Keep your working files in a folder of your own,** named for your batch, inside the scratchpad directory your system prompt names (such as `<scratchpad>/ZD-6/`), never in its root: other agents share it, and a batch overwrote another's file there.
 
 ## Output, in `studies/class-model/held/<platform>/`
 
