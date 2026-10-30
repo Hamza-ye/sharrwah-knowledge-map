@@ -842,3 +842,93 @@ The batch check (`--concerns SH-C-060,SH-C-114,SH-C-115,SH-C-116,SH-C-117,SH-C-1
 
 - **SH-C-122's landing is clean, not strained.** SH-I-2119, the help-centre section Customizing payment methods and delivery options at checkout, names both payment methods and delivery options, so it is cited in CM-PAY-019 and CM-SHP-013, as a statement naming several things counts in each (method report, section 11). By the same rule SH-C-083's landing in CM-PAY-019 stays clean, and so does SA-C-162's in CM-TAX-008: SA-S-5075 names the customs and extra international fees on Salla's labels, so it is `core` in CM-TAX-008, where its words belong, and `shows` in CM-SHP-002.
 - **For batch 11:** SH-C-114, SH-C-116 and SH-C-121 are written `single` because their Q1 matches (M-045, M-047, M-046) had no other side landed. Once batch 11 lands their Salla sides, it rewrites them as `match:`.
+
+## Batch 11: SHP, Shipping, delivery and fulfilment (second of three)
+
+Concerns: SH-C-124, SH-C-125, SH-C-126, SA-C-139, SA-C-140, SA-C-141, SA-C-142, SA-C-143, SA-C-144, SA-C-145, SA-C-146. Six capabilities added, CM-SHP-015 to CM-SHP-020, each with a Shopify and a Salla cell; four concerns land in batch 10's capabilities (SA-C-140, SA-C-142, SA-C-144, SA-C-145) and seven in new ones. Before adding them I searched every domain with `caps` (terms: carrier, carriers, shipping company, shipping companies, شركة شحن, شركات الشحن; tracking, track, order tracking, تتبع, التتبع, Apple Wallet; delivery promise, promise, وعد, وعود, delivery date; pickup point, pickup points, delivery option generator, option generator, نقاط الاستلام, نقطة استلام; shipping route, routes, مسارات, مسار; international shipping, HS code, customs, harmonized, الشحن الدولي, التنسيق الجمركي, الجمركي, جمرك; shipping app, AWB, App Functions, تطبيق الشحن). What it found and kept apart: C's CM-SHP-001 to -014, CM-PAY-029 (cash on delivery), CM-PAY-031 (amounts withheld for app partners), CM-TAX-008 (duties); B's CM-INV-001 (inventory tracking); D's CM-MKT-009 (tracking pixels); F's CM-APP-005 (functions, which holds Salla's App Functions); G's CM-OPS-001 (SA-S-0162). None is the same thing as a new capability here.
+
+### Where each concern landed, and the grains
+
+- **SA-C-142 in CM-SHP-001, by `match:M-045`; SA-C-140 in CM-SHP-002, by `match:M-047`.** Batch 10 had written both Salla cells from their statements; I added the few left uncited (SA-C-142's folder Shipping Zones under boundary, core; SA-C-140's Shipping & delivery links and dashboard app, shows in CM-SHP-002).
+- **SA-C-144 (shipments) in CM-SHP-009, a join on role,** as batch 10 wrote CM-SHP-009's Salla cell (below). I added its Shipments folders, the scope shippings (shows) and its flags: unreleased special-shipping-details, shipping-carrier-pickup and shipping-management (shows); released shipping-customer-additional-info, addressee-shipping and shipping-indicator, cited `shows` because nothing held defines them and their names alone don't say they are about shipments (the dry run's convention reads a released flag as core, but only for the capability it is about; the coordinator may place them otherwise). order-print-multi-policy (released, plans plus, pro and special) is core in CM-SHP-002, a reading: "policy" is Salla's English for بوليصة, as shipping-policy-archive is أرشيف بوليصات سلة (SA-S-2636). Its return topics (order.shipment.return.cancelled, .created, .creating, SA-S-1575 to SA-S-1577) are left for batch 12's RET.
+- **SA-C-145 (shipping and fulfilment apps) in CM-SHP-001, `strained`,** coarser than the capabilities: its statements are cited in six capabilities of CM-SHP-001's tree (the landing's reading lists them). The AWB statements (Salla AWB, Generating AWB, and "Your shipping service appears directly in the Salla AWB creation screen", SA-S-0191) are extension-point in CM-SHP-002: carriers' apps issue Salla's labels. The Shipping App "for shipping companies" (SA-S-1185) and the category titled "+ 190 شركة شحن ودعم لوجستي" (SA-S-1221) are extension-point in CM-SHP-015. Its API folders, which batch 10 left (SA-S-1104 to SA-S-1118), are placed: Shipping Management core and APIs shows in CM-SHP-001; Shipments and Order Fulfilment core in CM-SHP-009; Shipping Companies core in CM-SHP-015; Shipping Routes core in CM-SHP-016; Salla AWB and Generating AWB in CM-SHP-002. The released flag storage-station (SA-S-3077) is shows in CM-SHP-001: undefined, and its name alone places it under no child. Strained because its App Functions statements (SA-S-0190, SA-S-1104, SA-S-1113) are F's CM-APP-005, which cites SA-S-0190 under SA-C-196; I left them uncited here by the rule "One thing, one domain". Its managed settlement (SA-S-5065, SA-S-5066) stays core in CM-PAY-031 and is shows in CM-SHP-002, since each names Salla's shipping labels (method report, section 11).
+- **CM-SHP-015, shipping carriers, under CM-SHP-001 (batch 10's suggestion):** SA-C-139 (carriers integrated in the dashboard) and SA-C-141 (the merchant's own carriers and contracts), both `single`. Q1 split them by the contract; I kept one capability, the contract a grain inside it, because no place of its own is held for either side: the API folder Shipping Companies, the plan line ربط خاص بـ 190+ شركة شحن and the place Shipping & delivery are in both concerns, and the own-contract side has only help pages (SA-S-5063, SA-S-5064) and a flag (multi-shipping-service-account), which convention 1 doesn't count. Labels bought through these carriers at the platform's rates stay CM-SHP-002. Shopify's side: its own carrier account connected with Shopify Shipping (SH-S-0616, core), and as shows its supported carriers (SH-S-0717), Tracking carriers (SH-I-2095) and the route Manage preferred carriers (SH-S-7133). The released carriers' flags are core, plan-scoped, and the unreleased ones shows; that each flag names a carrier is Q1's placement and, for some, the plan lines' carrier names (aymakan, redbox, saudi-post, jnt, dhl), a reading. SA-S-0162 (SA-C-235, G, C under also), the automatic assignment of an order to the next carrier by priority, is shows here and stays core in G's CM-OPS-001.
+- **CM-SHP-016, shipping routes, under CM-SHP-001:** SA-C-143, `single`. A place of its own (admin link /shipping/setting/routes, two API folders, a released flag), undefined in what is held. Shopify: none-held.
+- **CM-SHP-017, shipment tracking, under CM-SHP-009:** SH-C-126, `single`. Under CM-SHP-009 by Shopify's object, "the tracking information for a fulfillment" (SH-S-7459). Salla's cell cites the plan line تتبع الطلب عبر محفظة أبل (Apple Wallet) (SA-S-1995, SA-C-040's, as batch 2 and batch 10 left it), which is in Salla's plan group order management (adar-altlbat), not shipping; I followed Shopify's grouping, the only one a statement gives for tracking itself. SA-C-040 is already strained in CM-ORD-001; this citation adds CM-SHP-017 to where else it is cited.
+- **CM-SHP-018, delivery promises, under CM-SHP-001:** SH-C-125, `single` for M-049 (SA-C-147 lands in batch 12). I wrote Salla's cell from SA-C-147's statements (its folder Shipping Delivery Promises, core; the unreleased flag delivery-promises, shows). Shopify's route shop-promise-examples is open to a beta only (SH-S-5033), cited shows, as an unreleased flag is; the route's own statement and the scopes and topic are core.
+- **CM-SHP-019, delivery option generators and shipping to pickup points, under CM-SHP-001:** SH-C-124, `single`. Parent by the route Shipping to pickup points in section Shipping (SH-S-7138), unlike CM-SHP-013 and CM-SHP-014, which have no admin route. One capability, not two: the route and the generator share the term pickup point, and the concern holds both. Salla: none-held.
+- **CM-SHP-020, international shipping readiness and customs data, under CM-SHP-001:** SA-C-146, `single`. Not CM-TAX-008 (batch 9's question): SA-C-146's statements name a code identifying shipments for export (SA-S-0167) and Salla's own service fee on international shipping, charged to the buyer at checkout (SA-S-0163, SA-S-5152), not duties or import taxes, so none of them is cited in CM-TAX-008, and CM-TAX-008's statements (SA-S-5074, SA-S-5075, SA-S-0146) stay there. The rule of section 11 (core where its words belong, shows elsewhere) applies to no statement here: none is cited in both. Shopify's cell is shows only (SH-I-2158, help-centre section International shipping, placed in SH-C-114), so it is not-stated.
+
+### Joins on role (readings)
+
+- **SA-C-144 in CM-SHP-009 (U-073):** Shopify's fulfillments and Salla's shipments, as batch 10's reading: the act Shopify's permission names Fulfill and ship, recorded on the order's fulfillment orders (SH-S-6169, SH-S-0921); Salla's shipments created and cancelled for an order and first updated by the carrier (SA-S-1579, SA-S-1637).
+- **CM-SHP-015's own-contract side:** Shopify's "your own Third-Party Shipping Provider account" connected with Shopify Shipping (SH-S-0616) and Salla's ربط عقد أرامكس الخاص بك, priced by "عقدك مع مزود الشحن" (SA-S-5063): both connect a carrier account or contract the merchant holds itself. A reading; no Shopify concern lands in CM-SHP-015.
+
+### Homonyms
+
+- **"Carriers" on Shopify:** its supported carriers for labels (SH-S-0717, CM-SHP-002), its carrier services that calculate rates (CarrierService, Manage preferred carriers, CM-SHP-004) and its Tracking carriers list (SH-I-2095, CM-SHP-017): cited as shows in CM-SHP-015 only.
+- **track:** Salla's flag track (SA-S-3081) sits among the carriers' flags (SA-C-139), a carrier's name in Q1's placement, not tracking.
+- **"Routes" / "routing":** batch 10's list holds; Salla's Shipping Routes now have their own capability, CM-SHP-016, apart from Shopify's order routing (CM-SHP-005).
+- **Pickup:** Shopify's pickup points (CM-SHP-019), its local pickup at the store's locations (CM-SHP-007), Salla's pickup from the store's branch (CM-SHP-007) and the carrier's branch in Salla's economy shipping (SA-S-2020). Nothing held says whose location a Shopify pickup point is (batch 10 said a carrier's; I find no statement for it).
+
+### Strained fits
+
+- **SA-C-145 in CM-SHP-001:** above.
+- **Kept clean, answered:** SA-C-141 in CM-SHP-015. Its SA-S-0061 and SA-S-0084 are also SA-C-116's and are cited in CM-PAY-029 under SA-C-116's keys; each names both a cash-on-delivery setting and the merchant's own carrier contract or courier, so it counts in each (the coordinator's rule after batch 10). The checker didn't flag it. SH-C-124: SH-S-0683 and SH-S-7281, as batch 10 answered for SH-C-122.
+
+### Statements shared with other domains
+
+- **SA-S-0162** (SA-C-235, G): shows in CM-SHP-015, core in G's CM-OPS-001.
+- **SA-S-0190, SA-S-1104, SA-S-1113** (SA-C-145's App Functions): left to F's CM-APP-005, uncited here.
+- **SH-C-125's statements** are also placed by Q1 in SH-C-145 (SH-S-5033, the beta eligibility, on the analytics route promise_summary) and in SH-C-158 and SH-C-159 (the scopes and topic). The checker flags none of them; they are core here only for delivery promises.
+
+### Rulings
+
+- **U-020: SH-C-060 against SA-C-143, `apart`.** No statement held says what a Salla shipping route does, or that it assigns an order to a location.
+- **U-072, nine pairs:** SH-C-115 against SA-C-139, SA-C-141 and SA-C-145, each `joined:CM-SHP-015`, since CM-SHP-015's cells cite SH-C-115's SH-S-0616 and each Salla side (SA-S-5058, SA-S-5063, SA-S-1185). The rates that carriers calculate at checkout (CM-SHP-004) still have no Salla side. SH-C-119 against SA-C-145, `joined:CM-SHP-011` (batch 10's role join, SA-S-1192); against SA-C-139 and SA-C-141, `apart`. SH-C-120 against SA-C-145, `nested:CM-SHP-012` (SA-S-1192 in its parent CM-SHP-011); against SA-C-139 and SA-C-141, `apart`.
+- **U-073, four pairs:** SH-C-118 against SA-C-144 and SA-C-145, `joined:CM-SHP-009` (SA-S-1579; the folder Order Fulfilment, SA-S-1111). SH-C-126 against SA-C-144 and SA-C-145, `nested:CM-SHP-017`: CM-SHP-017 cites SH-C-126, and its parent CM-SHP-009 cites both Salla sides; no statement of either shows tracking itself.
+- **U-032** (SA-C-146 against WooCommerce's WC-C-058) has no Shopify side: WooCommerce's part rules on it.
+
+### For batch 12
+
+- **SA-C-147** lands in CM-SHP-018 by `match:M-049`; its Salla cell is written. **SA-C-148** lands in CM-SHP-006 by `match:M-046`. **SA-C-149** (packaging) and **SA-C-150**: no capability of this batch holds them; SA-S-5069 (تأمين تغليف احترافي) is packaging, not insurance (batch 10).
+- **RET:** SA-C-144's return topics, order.shipment.return.cancelled, .created and .creating (SA-S-1575 to SA-S-1577), are uncited, for RET's capability; once cited there, SA-C-144's fit in CM-SHP-009 is to be read again (S1). Pairs whose other side batch 12 lands: none of this batch's candidates.
+- **Local delivery:** SA-S-0084 (SA-C-141, UAE) names "مندوب متجرك الخاص", the store's own courier; batch 12 may cite it in CM-SHP-008 when it lands SA-C-148.
+- **The whole part's check:** `uncited --domain C` leaves, for this batch's concerns, only SA-C-144's three return topics and SA-C-145's four App Functions keys (F's).
+
+### Flags answered
+
+The batch check prints 61 flags; those on this batch's rows or caused by them:
+- **SA-S-5065 and SA-S-5066 in two trees (CM-PAY-031, CM-SHP-002):** each names Salla's shipping labels and the wallet amounts withheld for them, so each counts in both (section 11): core in CM-PAY-031, shows in CM-SHP-002. SA-C-145's landing is strained for its App Functions statements, above.
+- **CM-SHP-019 Salla none-held (4 matches):** SA-S-2609 (the permission خيارات الشحن والتوصيل, CM-SHP-001) and SA-S-2193 with its inventory entry SA-I-1193 (a plan description naming shipping options) are shipping options in general, not pickup points or generated options; SA-S-2608 (الشراء من متجر سلة) is unrelated.
+- **CM-CHK-004 Salla none-held, now matching SA-S-0163:** the international shipping gateway fee added to the buyer at checkout, cited in CM-SHP-020; it is Salla's fee on international shipping, not what CM-CHK-004 holds. The cell is batch 1's; the coordinator may read it again.
+- **CM-SHP-004 Salla (6 matches):** batch 10's answer holds; SA-S-0061 under SA-C-141 is cited in CM-SHP-015 as the commission of an own-contract carrier, not a calculated rate.
+- **CM-SHP-012 Salla (8 matches):** batch 10's answer holds; SA-S-1221 is now cited in CM-SHP-001 and CM-SHP-015, carriers' apps.
+
+### Gaps
+
+- Salla: SA-C-139 and SA-C-141, reason, page not read; SA-C-142, SA-C-143 and SA-C-144, responsible and reason, page not read. Shopify: SH-C-124, reason, searched, not found; SH-C-125 and SH-C-126, responsible, stated only in general terms, and reason, searched, not found.
+- No statement held defines: Salla's shipping routes; a delivery promise on either platform; Shopify's pickup points and what a delivery option generator returns; Salla's flags storage-station, shipping-customer-additional-info, addressee-shipping and shipping-indicator; where Salla's HS code is entered. No statement names the maker of each carrier's app on Salla beyond "for shipping companies" (SA-S-1185). No Shopify statement held lists the carriers its labels use.
+
+### Qualities and slot fillers
+
+- **Qualities:** none new. The counts of carriers in Salla's plan lines (100+, 190+) are not limits.
+- **Slot fillers, CM-SHP-015 Salla:** سمسا, البريد السعودي, DHL Express, أي مكان and J&T Express (SA-S-2019), مندوبي, ريدبوكس and سمسا (SA-S-2020), scope plan Salla Plus, under SA-C-139's keys; أرامكس, scope UAE (SA-S-5063), and امباور, scope Kuwait (SA-S-5064). The carriers' flags' names aren't slot fillers (the dry run's convention).
+
+### For the coordinator
+
+- **Rewrite the Shopify joins:** SH-C-114 (CM-SHP-001) as `match:M-045`, now that SA-C-142 has landed there; SH-C-116 (CM-SHP-002) as `match:M-047`, now that SA-C-140 has. SH-C-121 waits for SA-C-148 (M-046) and SH-C-125 for SA-C-147 (M-049), both batch 12.
+- **CM-ORD-009's parent, by convention 6:** the platforms' groupings differ. Shopify's statements put its packing slip and document template routes in its section Shipping (SH-S-7100, SH-S-7101), gated by MANAGE_DELIVERY_SETTINGS and by fulfillmentBatchingEligible (SH-S-5261), the feature that also gates Batches (CM-SHP-010); Salla's plan line طباعة ملخص الطلب (SA-S-1988) is in its plan group order management (parent_code adar-altlbat), beside إنشاء طلب يدوي. No grouping is shared, and only Shopify gives an admin route, so by the anchor platforms' admin grouping I propose parent **CM-SHP-001** (section Shipping, what SH-S-7100 states), with Salla's order-management grouping in the note. CM-SHP-009 would be the parent only on a reading (a packing slip goes with the fulfilment; the shared gate with Batches), which no statement states.
+- **SH-S-0616** is core in CM-SHP-002 (batch 10) and in CM-SHP-015 (this batch), both in CM-SHP-001's tree: by section 11 its words ("connect your own Third-Party Shipping Provider account") belong to CM-SHP-015; CM-SHP-002's row could become shows.
+- **Earlier rows:** no earlier row is wrong by this batch's evidence. Batch 10's reading that Shopify's pickup points are a carrier's (its Homonyms) rests on no statement held.
+
+### Checker
+
+The batch check (`--concerns SH-C-124,SH-C-125,SH-C-126,SA-C-139,SA-C-140,SA-C-141,SA-C-142,SA-C-143,SA-C-144,SA-C-145,SA-C-146 --areas SHP`) gives "0 problems, 61 flags for the reviewer". The first run gave two problems, both in this batch's cell terms (a term not in a cited statement), fixed.
+
+### The coordinator, after batch 11
+
+- **SH-C-114 and SH-C-116 now land by `match:M-045` and `match:M-047`,** their Salla sides having landed in this batch. SH-C-121 (M-046) and SH-C-125 (M-049) wait for batch 12. SH-C-099 and SH-C-102 stay `single`: their matches' other sides (WC-C-021, M-039; WC-C-118, M-041) land in C-woocommerce, which writes the match, and a part's checker sees only its own landings.
+- **CM-ORD-009's parent is CM-SHP-001,** as batch 11 proposed, by convention 6: Shopify's packing slip routes sit in its admin section Shipping (SH-S-7100), while Salla's print order summary is a plan line in its order-management group (SA-S-1988), not an admin grouping.
+- **SH-S-0616** (the merchant's own carrier account used with Shopify Shipping) stays `core` in both CM-SHP-002 and CM-SHP-015: it names both the labels and the carrier account, and one domain's two capabilities may each cite a statement that names both.
+- **Salla's released flags cited `shows`** where nothing held defines them (in CM-SHP-009) change no placement: the cell is `core` on its other statements.
