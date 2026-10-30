@@ -428,3 +428,109 @@ CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3432	released flag influencers-packa
 CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3193	flag influencer-marketplace-soon, not released
 CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3242	flag celebrity-marketing, not released
 CM-MKT-015	salla	shows	SA-C-076/boundary/SA-S-5137	five statuses of campaign orders, for influencers in Salla's Partners
+CM-LOY-001	shopify	core	SH-C-026/where/SH-S-7085	admin route store_credit_account transactions, section Customers
+CM-LOY-001	shopify	core	SH-C-026/where/SH-S-7086	admin route store_credit_account/edit, section Customers
+CM-LOY-001	shopify	core	SH-C-026/decides/SH-S-5147	staff permission CREATE_STORE_CREDIT_ACCOUNT_TRANSACTIONS on edit balance
+CM-LOY-001	shopify	core	SH-C-026/decides/SH-S-5148	staff permission VIEW_STORE_CREDIT_ACCOUNT_TRANSACTIONS
+CM-LOY-001	shopify	core	SH-C-026/decides/SH-S-7215	built-in feature: issue and accept store credit needs new customer accounts
+CM-LOY-001	shopify	core	SH-C-026/boundary/SH-S-6128	access scope read_store_credit_account_transactions
+CM-LOY-001	shopify	core	SH-C-026/boundary/SH-S-6129	access scope read_store_credit_accounts
+CM-LOY-001	shopify	core	SH-C-026/boundary/SH-S-6297	access scope write_store_credit_account_transactions
+CM-LOY-001	shopify	core	SH-C-026/boundary/SH-S-5924	customer access scope customer_read_store_credit_account_transactions
+CM-LOY-001	shopify	core	SH-C-026/boundary/SH-S-5925	customer access scope customer_read_store_credit_accounts
+CM-LOY-001	shopify	core	SH-I-0887	staff permission Refund to store credit
+CM-LOY-001	shopify	shows	SH-C-026/responsible/SH-S-0676	merchant legally responsible for store credit issuance
+CM-LOY-001	shopify	shows	SH-C-026/responsible/SH-S-0677	merchant responsible for amounts offered as Store Credit
+CM-LOY-001	shopify	shows	SH-C-018/decides/SH-S-0275	store credit as a payment method on an order
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-1695	link Customer wallet, /wallet
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-1820	link Customer wallet, /marketing/customer_wallet
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-3590	dashboard app @salla.sa/ui-merchant-wallet
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-1766	settings route wallet/max-credit-usage
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-1768	settings route wallet/notifications
+CM-LOY-001	salla	core	SA-C-063/where/SA-S-1034	Merchant API folder Customer Wallet
+CM-LOY-001	salla	core	SA-C-063/boundary/SA-S-1568	access scope customer-wallets
+CM-LOY-001	salla	core	SA-C-063/boundary/SA-S-1647	event wallet.action, an operation on the customer wallet
+CM-LOY-001	salla	core	SA-C-063/decides/SA-S-2006	plan line محفظة العميل, plan سلة بلس
+CM-LOY-001	salla	core	SA-C-063/decides/SA-S-3147	feature customer-wallet, released, plans special, pro, plus
+CM-LOY-001	salla	core	SA-C-063/decides/SA-S-3321	feature wallet-payment-offer-combination, released
+CM-LOY-001	salla	shows	SA-C-063/decides/SA-S-3146	feature mahally-customer-wallet, not released
+CM-LOY-001	salla	shows	SA-I-1694	store payment method customer_wallet
+CM-LOY-001	salla	shows	SA-C-063/where/SA-S-0183	deposit works only with the Customer Wallet application installed; maker not stated
+CM-LOY-002	shopify	core	SH-C-025/where/SH-S-5170	admin route gift-card:root, path gift_cards
+CM-LOY-002	shopify	core	SH-C-025/where/SH-S-1514	its own Gift cards navigation
+CM-LOY-002	shopify	core	SH-C-025/where/SH-S-5013	admin route gift_cards/products/new
+CM-LOY-002	shopify	core	SH-C-025/decides/SH-S-5171	staff permission GIFT_CARDS and entitlement giftCards.enabled
+CM-LOY-002	shopify	core	SH-C-025/decides/SH-S-5172	staff permission CREATE_AND_EDIT_GIFT_CARDS
+CM-LOY-002	shopify	core	SH-C-025/decides/SH-S-5747	entitlement giftCards enabled on the stores answering
+CM-LOY-002	shopify	core	SH-C-025/decides/SH-S-7043	plan line Sell gift cards, included on every plan
+CM-LOY-002	shopify	core	SH-C-025/boundary/SH-S-6000	access scope read_gift_cards
+CM-LOY-002	shopify	core	SH-C-025/boundary/SH-S-6211	access scope write_gift_cards
+CM-LOY-002	shopify	core	SH-C-025/boundary/SH-S-5999	access scope read_gift_card_transactions
+CM-LOY-002	shopify	core	SH-C-025/boundary/SH-S-6210	access scope write_gift_card_transactions
+CM-LOY-002	shopify	core	SH-C-025/boundary/SH-S-6001	gift card scopes requested from Shopify Support
+CM-LOY-002	shopify	extension-point	SH-I-1823	App Store category Gift card apps
+CM-LOY-002	shopify	extension-point	SH-I-1489	extension type Redeemable (redeemable_payments)
+CM-LOY-002	shopify	shows	SH-C-025/responsible/SH-S-0676	merchant legally responsible; Shopify merely provides software
+CM-LOY-002	shopify	shows	SH-C-025/responsible/SH-S-0677	merchant responsible for amounts loaded on the Gift Card
+CM-LOY-002	shopify	shows	SH-C-025/responsible/SH-S-0678	merchant supervises the funds flow of Gift Cards
+CM-LOY-002	salla	core	SA-C-063/where/SA-S-1767	settings route wallet/gift-card
+CM-LOY-002	salla	shows	SA-C-063/decides/SA-S-3497	feature wallet-gift-card, not released
+CM-LOY-003	salla	core	SA-C-063/where/SA-S-1713	settings route coupons/cashback-eligibility
+CM-LOY-003	salla	core	SA-C-063/where/SA-S-3589	dashboard app @salla.sa/ui-merchant-offers, path holds /marketing/cashback
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-2007	plan line عروض الكاش باك, plan سلة بلس
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-2365	staff permission browse_cashback_offers, group التسويق
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-2366	staff permission manage_cashback_offers
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-2367	staff permission delete_cashback_offers
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-3314	feature cashback-accessibility, released
+CM-LOY-003	salla	core	SA-C-063/decides/SA-S-3315	feature order-summary-cashback, released
+CM-LOY-003	salla	core	SA-C-063/reason/SA-S-5019	system takes cashback back from the wallet when the order is cancelled
+CM-LOY-003	salla	shows	SA-C-063/decides/SA-S-2582	browse_cashback_offers in the permissions a partner can request (S7)
+CM-LOY-003	salla	shows	SA-C-063/decides/SA-S-2583	manage_cashback_offers in the permissions a partner can request (S7)
+CM-LOY-003	salla	shows	SA-C-063/decides/SA-S-2584	delete_cashback_offers in the permissions a partner can request (S7)
+CM-LOY-004	shopify	extension-point	SH-C-187/where/SH-S-2581	App Store category Customer loyalty apps
+CM-LOY-004	shopify	extension-point	SH-I-1820	App Store category Loyalty and reward apps
+CM-LOY-004	shopify	extension-point	SH-I-1818	App Store category Customer loyalty - Other
+CM-LOY-004	shopify	shows	SH-C-187/responsible/SH-S-0058	third-party services are between the merchant and the third party
+CM-LOY-004	shopify	own-service	SH-C-082/where/SH-S-0437	Shop Cash, a Shopify-funded rewards program for Shop app customers
+CM-LOY-004	shopify	shows	SH-C-082/decides/SH-S-0439	Shop Cash available except Hong Kong, Mexico and the UAE
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1696	link Loyalty program, /loyalty-program
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1823	link Loyalty program, /marketing/loyalty
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-3606	dashboard app @salla.sa/ui-merchant-loyalty
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1731	settings route loyalty-program/general
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1732	settings route loyalty-program/points-settings
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1733	settings route loyalty-program/prize-promotion, Rewards banner
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1734	settings route loyalty-program/markets-activation
+CM-LOY-004	salla	core	SA-C-064/where/SA-S-1070	Merchant API folder Loyalty Points
+CM-LOY-004	salla	core	SA-C-064/boundary/SA-S-1141	API folder Loyalty
+CM-LOY-004	salla	core	SA-C-064/decides/SA-S-2016	plan line نظام ولاء العملاء, plan سلة بلس
+CM-LOY-004	salla	core	SA-C-064/decides/SA-S-2362	staff permission loyalty_system_management, group التسويق
+CM-LOY-004	salla	core	SA-C-064/decides/SA-S-3235	feature loyalty-system, released
+CM-LOY-004	salla	core	SA-C-064/decides/SA-S-3236	feature loyalty-system-v2, released
+CM-LOY-004	salla	shows	SA-C-064/decides/SA-S-2579	loyalty_system_management in the permissions a partner can request (S7)
+CM-LOY-004	salla	shows	SA-C-064/decides/SA-S-3237	feature loyalty-free-product-pos, not released
+CM-LOY-005	shopify	extension-point	SH-I-1821	App Store category Wishlist apps
+CM-LOY-005	salla	core	SA-C-091/boundary/SA-S-1140	Wishlist API folder of Salla's Twilight SDK
+CM-LOY-005	salla	shows	SA-C-092/boundary/SA-S-1387	event Product Added to Wishlist: customer adds a product to wishlist
+CM-LOY-005	salla	shows	SA-C-032/where/SA-S-1761	settings route Wishlist Notifications names the wishlist
+CM-LOY-006	shopify	extension-point	SH-I-1824	App Store category Gift wrap and message apps
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-1697	link Gifting, /gift-system
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-1825	link Gifting, /marketing/gift
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-3607	dashboard app @salla.sa/ui-merchant-gift
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-3536	dashboard app whose path holds /marketing/gift
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-1727	settings route gift-system/selected-markets
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-1728	settings route gift-system/product-types
+CM-LOY-006	salla	core	SA-C-077/where/SA-S-1729	settings route gift-system/messages-cards
+CM-LOY-006	salla	core	SA-C-077/decides/SA-S-2406	staff permission gift_system_management, group إعدادات المتجر
+CM-LOY-006	salla	core	SA-C-077/decides/SA-S-3223	feature buy-as-gift, released
+CM-LOY-006	salla	core	SA-C-077/boundary/SA-S-1448	storefront component salla-gifting
+CM-LOY-006	salla	extension-point	SA-C-077/boundary/SA-S-1663	communication-app event order.gift.placed
+CM-LOY-006	salla	shows	SA-C-077/decides/SA-S-2623	gift_system_management in the permissions a partner can request (S7)
+CM-LOY-007	salla	core	SA-C-078/where/SA-S-1826	link Reorder Reminder, /marketing/reorder-reminders
+CM-LOY-007	salla	core	SA-C-078/where/SA-S-3536	dashboard app whose path holds /marketing/reorder-reminders
+CM-LOY-007	salla	core	SA-C-078/decides/SA-S-2370	staff permission reorder_reminders_browse
+CM-LOY-007	salla	core	SA-C-078/decides/SA-S-2371	staff permission reorder_reminders_management
+CM-LOY-007	salla	core	SA-C-078/decides/SA-S-3251	feature reorder-reminders, released
+CM-LOY-007	salla	core	SA-C-078/reason/SA-S-5026	built-in rule: booking products can't have the reminder
+CM-LOY-007	salla	extension-point	SA-C-078/boundary/SA-S-1672	communication-app event customer.repurchase.reminder
+CM-LOY-007	salla	shows	SA-C-078/decides/SA-S-2587	reorder_reminders_browse in the permissions a partner can request (S7)
+CM-LOY-007	salla	shows	SA-C-078/decides/SA-S-2588	reorder_reminders_management in the permissions a partner can request (S7)

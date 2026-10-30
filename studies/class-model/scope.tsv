@@ -187,7 +187,7 @@ shopify	SH-C-185	B	E	Dropshipping apps; Print on demand apps; Wholesale apps: so
 shopify	SH-C-186	B	C	Subscription apps; selling_plan_groups/create; subscription_contracts/create (SEL); M-074
 shopify	SH-C-187	D	B	Customer loyalty apps; Wishlist apps; Donation apps (LOY); M-075; also B: its Donation apps category (SH-S-2583) is Shopify's only statement on donations, cited in domain B (the coordinator, from the dry run's structure review, S6)
 shopify	SH-C-188	B	D	Upsell and bundle apps; Product bundle apps; Pre-order apps; where product_configuration: bundles and pre-orders as ways of selling (SEL)
-shopify	SH-C-189	B		Custom product apps; Product variant apps; Product configuration (CAT)
+shopify	SH-C-189	B	D	Custom product apps; Product variant apps; Product configuration (CAT); also D: its Gift wrap and message apps category (SH-I-1824) is Shopify's only statement on gifting (the coordinator, from D-anchor batch 4)
 shopify	SH-C-190	B		Digital goods and service apps; Event booking apps; NFT and tokengating apps (SEL); M-076
 shopify	SH-C-191	C	G	Accounting apps; ERP apps: the store's finances in accounting systems (PAY); M-077
 shopify	SH-C-192	D		Helpdesk apps; FAQ apps; Chat apps (SUP)

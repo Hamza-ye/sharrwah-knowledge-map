@@ -195,3 +195,92 @@ Concerns landed: SA-C-032, SA-C-070, SA-C-071, SA-C-072, SA-C-073, SA-C-074, SA-
 - CM-MKT-014: SA-C-072/decides/SA-S-2578 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
 - CM-MKT-015: SA-C-076/decides/SA-S-2589 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
 - CM-MKT-015: SA-C-076/decides/SA-S-2590 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+
+## Batch 4: LOY (loyalty, wallet and gifting)
+
+Concerns landed: SH-C-025, SH-C-026, SH-C-082, SH-C-187, SA-C-063, SA-C-064, SA-C-077, SA-C-078. Capabilities CM-LOY-001 to CM-LOY-007, with both platforms' cells. LOY had no capabilities before this batch, so every concern landed in a new one; none joined an earlier batch's capability.
+
+### Where each concern landed
+
+- CM-LOY-001, store credit and customer wallet: SH-C-026 (role, with SA-C-063) and SA-C-063 (role; it holds the wallet, cashback and gift cards, so it lands in the parent).
+- CM-LOY-002, gift cards: SH-C-025 (M-013).
+- CM-LOY-004, loyalty programmes and rewards: SH-C-187 (M-075, strained), SA-C-064 (M-075), SH-C-082 Shop Cash (role, strained).
+- CM-LOY-006, gifting: SA-C-077 (role, with Shopify's Gift wrap and message apps).
+- CM-LOY-007, reorder reminders: SA-C-078 (single).
+- No concern lands in CM-LOY-003 (cashback, a child of 001, in SA-C-063's tree) or CM-LOY-005 (wishlists).
+
+### How I cut, and the grains
+
+- **The wallet as parent (001) of gift cards (002) and cashback (003).** Salla puts gift cards in its customer wallet's settings (wallet/gift-card, SA-S-1767) and its wallet's notifications are Wallet & Cashback Notifications (SA-S-1768); it credits cashback to the customer's wallet and takes it back from there (SA-S-5019). Shopify's admin keeps gift cards a section of their own (gift_cards) and store credit in its Customers section, but its one Gift Card and Store Credit Terms govern both (SH-S-0676, SH-S-0677). The parent follows Salla's grouping, which Shopify's terms don't contradict; a reading. A reviewer may prefer gift cards with no parent, as batch 1 did for customer accounts: SA-C-063 would then land strained.
+- **M-013 is a difference of grain:** SH-C-025 is gift cards alone, SA-C-063 the wallet with cashback and gift cards (the match's granularity note). SH-C-025 lands in the child by the match; SA-C-063 in the parent. Its cashback statements make the cashback child, since Salla gives cashback a plan line (عروض الكاش باك, SA-S-2007), a settings route (coupons/cashback-eligibility, SA-S-1713) and a path in its offers dashboard app (/marketing/cashback, SA-S-3589).
+- **Cashback's parent** follows the wallet, not Salla's offers dashboard app, which holds offers, conditional offers, banks and cashback (SA-S-3589) and which batch 3 followed for bank offers (CM-MKT-018 under CM-MKT-003). A reviewer may move CM-LOY-003 under CM-MKT-003; SA-S-5019 and SA-S-1768 are why I didn't.
+- **Salla's sub-settings stay in their capability:** the wallet's Maximum Credit Usage Limit and notifications, the loyalty program's Program details, Points settings, Rewards banner and Markets, and the gifting system's Selected markets, Product type customization and Messages & cards customization each configure the one thing they sit in, so none is a capability of its own (batch 1's reading of plan lines, applied to settings routes).
+- **SH-C-187 is three things:** loyalty and reward apps (CM-LOY-004), wishlist apps (CM-LOY-005) and donation apps (domain B's CM-SEL-007, which already cites SH-S-2583; scope.tsv names B under also for it). It lands in 004 by M-075, strained. No statement shows Shopify putting Wishlist apps under Customer loyalty apps, so 005 has no parent.
+- **Wishlists (005)** are a capability because Shopify gives them an App Store category (SH-I-1821). Its area is LOY, where its only landed concern's other parts sit, a reading; domain E's model may hold the storefront's wishlist through SA-C-091 (the Twilight SDK), and the coordinator may move it there. Batch 3's CM-MKT-017 (wishlist notifications) may become a child of 005: both cite SA-S-1761 (flagged below).
+- **Shop Cash (SH-C-082)** has a help page and a help-center section but no admin route, API group, plan line or app category, so it isn't a capability (the dry run's rule). It lands in 004 on role: "a Shopify-funded rewards program for Shop app customers" (SH-S-0437). Strained: it is Shopify's own programme across the Shop app (SH-C-136, domain E), not a store's, and nothing held says what its rewards are. A reviewer may hold that it belongs to domain E with the Shop app, or to CM-LOY-003 as cash back; no held statement says it is credited as cash.
+- **Donations** aren't a capability here: domain B's CM-SEL-007 holds them, citing SH-C-187's Donation apps and SA-C-020's quick donation. U-082 is ruled apart here for that reason.
+
+### Joins on role, and weak joins
+
+- **CM-LOY-001, Shopify store credit with Salla's customer wallet** (U-004, joined). Shopify's store credit is a payment method on an order (SH-C-018/decides/SH-S-0275) with a balance staff can edit (SH-S-5147, SH-S-7086); Salla's wallet has a Maximum Credit Usage Limit (SA-S-1766), a deposit operation (SA-S-0183), cashback credited to it (SA-S-5019) and is listed as a payment method, customer_wallet (SA-I-1694). Both a balance the store holds for a buyer, who pays with it. Q1 asked for a Salla statement defining the wallet as credit for future purchases; none is held, so the join rests on these.
+- **CM-LOY-004, Shop Cash with Salla's loyalty rewards:** above.
+- **CM-LOY-006, Salla's gifting with Shopify's Gift wrap and message apps** (SH-I-1824): rests on the category's name against Salla's Messages & cards customization (SA-S-1729) and its gift order event (SA-S-1663). The weakest join in this batch.
+- **CM-LOY-005** rests on the term wishlist on both sides; neither defines it beyond Salla's events ("Customer adds a product to wishlist", SA-S-1387).
+
+### Homonyms kept apart
+
+- **Wallet.** Salla's customer wallet (محفظة العميل, CM-LOY-001) against its store wallet (Wallet, /payments/wallet; محفظة متجرك, SA-C-005, Salla's billing of the merchant, domain A) and its ads wallet (CM-MKT-020); Shopify Balance (SH-C-088) is the merchant's money too. Salla's Apple Wallet order tracking (SA-S-1995, SA-C-040) is Apple's wallet.
+- **Gift.** Gift cards (CM-LOY-002, stored value) against gifting (CM-LOY-006, a product bought for someone else). Shopify's App Store categories Gift apps and Gifts - Other (SH-I-1822, SH-I-1825, placed in SH-C-025) don't say which they hold and aren't cited. Shopify Collabs' gifts (SH-S-0732) are a business's gifts to its creators (CM-MKT-014). Salla's flag salla-policies-free-shipping-gift (SA-S-3049, domain C) is a shipping policy.
+- **Reward.** Salla's مكافأة الراجحي (SA-S-1966, SA-C-119, a payment method, domain C), Shopify Balance's rewards (SH-S-5058) and the Cryptocurrency Credit Reward Program (SH-I-1368) aren't a store's rewards to its buyers; Shopify Credit's card cash back (SH-S-7064) isn't cashback to buyers.
+- **Reorder.** Salla's Reorder setting (orders/reorder, SA-S-1746, flag order-reorder, SA-C-040, domain C) lets a buyer repeat an order; its reorder reminders (CM-LOY-007) remind a buyer. Shopify's payment customization reorders payment methods (SH-S-0589), and its target admin.product-details.reorder.render (SH-I-1509) is undefined.
+- **Points.** Salla Point (سلة بوينت, SA-S-2094, SA-C-095) is point of sale, not loyalty points.
+
+### Strained fits
+
+- SH-C-187 in CM-LOY-004: its Wishlist apps (SH-I-1821) are cited in CM-LOY-005, and its Donation apps (SH-S-2583) in domain B's CM-SEL-007.
+- SH-C-082 in CM-LOY-004: Shopify's programme for the Shop app's buyers, not a store's loyalty programme (above).
+- Not marked strained, for the reviewer: SH-C-025's terms (SH-S-0676 to SH-S-0678) are cited under SH-C-026's keys in CM-LOY-001, its parent, so in its tree.
+
+### Rulings
+
+- U-004: joined:CM-LOY-001 (SH-C-026 × SA-C-063).
+- U-059: apart for SH-C-188 × SA-C-077 (none of SH-C-188's statements or entries names gifts); joined:CM-LOY-006 for SH-C-189 × SA-C-077. **For the coordinator:** SH-I-1824, Gift wrap and message apps, is an entry Q1 placed in SH-C-189, which scope.tsv gives domain B without naming D. The brief says such a pair is apart, and also that a ruling follows the cells and no statement is left uncited to keep a ruling apart. The checker reads the cells, so I ruled joined; the coordinator may instead drop SH-I-1824 from CM-LOY-006 (Shopify's cell would be none-held) and rule apart, or add D to SH-C-189's `also`. I first read SH-I-1824 as SH-C-188's; my rows now name SH-C-189.
+- U-060: joined:CM-LOY-005 for SH-C-187 × SA-C-032, the pair batch 3 left. CM-LOY-005 cites Shopify's Wishlist apps (SH-I-1821) and Salla's settings route Wishlist Notifications (SA-S-1761) as naming the wishlist. Batch 3 foresaw this ("apart, unless that batch's wishlist capability cites SA-C-032's wishlist notifications").
+- U-078: joined:CM-LOY-004 (SH-C-187 × SA-C-064). WC-C-105's pairs are the WooCommerce part's.
+- U-082: apart (SH-C-187 × SA-C-020): donations are domain B's CM-SEL-007, where B-anchor ruled the candidate joined.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-MKT-017's Shopify cell** (batch 3) names Wishlist apps (SH-I-1821) as found and not cited, "the batch that lands SH-C-187 places it": it is now cited in CM-LOY-005. That cell still holds: wishlist apps aren't notifications.
+- **CM-MKT-017's Salla reading** says Salla's wishlist itself (SA-C-091, SA-C-092, SA-C-196, SA-C-220) isn't cited there; CM-LOY-005 now cites SA-C-091's Wishlist API folder and SA-C-092's Product Added to Wishlist. SA-S-1761 is cited in both 017 and 005, so the checker asks whether one is the other's parent: I'd make CM-MKT-017 a child of CM-LOY-005 (a notification about the wishlist), a reading; the move is the coordinator's.
+- **SA-C-032's landing** (batch 3, CM-MKT-016, strained for 017) is now also cited in CM-LOY-005; its reading could name that tree too.
+- **Batch 3's note on bank offers** says cashback is SA-C-063's and isn't cited; CM-LOY-003 now cites the same dashboard app (SA-S-3589) under SA-C-063's key, for /marketing/cashback.
+
+### Concerns read under `also`, and other domains' statements
+
+- SH-C-188 (domain B, names D): read for U-059; nothing cited.
+- SA-C-020 (domain B, names D): read for U-082; nothing cited (domain B cites its donation statements).
+- SA-C-092 (domain D, batch 5): SA-S-1387, Product Added to Wishlist, cited as shows in CM-LOY-005. If batch 5 lands SA-C-092 in CM-MKT-009 by M-055, that landing reads it in another tree: strained.
+- SA-C-032 (domain D, batch 3): SA-S-1761 cited as shows in CM-LOY-005.
+- SH-C-018 (domain A, doesn't name D): SH-S-0275, store credit or gift cards as a payment method on an order, cited as shows in CM-LOY-001, because it is the only held statement that says store credit pays for an order. Flagged.
+- SA-C-091 (domain E, doesn't name D): SA-S-1140, the Twilight SDK's Wishlist API folder, cited as core in CM-LOY-005, because it is the only place of its own Salla gives the wishlist. Flagged. If domain E cites it as core too, the merge flags it, and one of the two should move it to shows.
+- SH-C-189 (domain B, doesn't name D): SH-I-1824, cited as extension-point in CM-LOY-006 (above). Flagged.
+- Not cited: Salla's storefront components for the wallet, gift card redeem, cashback banner and loyalty (salla-wallet, salla-gift-card-redeem, salla-cashback-banner, salla-loyalty and others, SA-C-091, domain E); Salla's wishlist reports (report_customers_wishlist, customer-wishlists-reports, SA-C-220, ANL, batch 5) and App Functions' wishlist events (SA-C-196, F); Shopify's notification templates Store credit, Store credit issued and Gift cards (SH-I-2013, SH-I-2014, SH-I-2010) and its checkout target Checkout::GiftCard::Render (SH-I-1603), which aren't placed in my concerns: batch 6 (NTF) may cite the templates; SA-C-200's copies of SA-S-1663 and SA-S-1672 (batch 6), which I cite under SA-C-077's and SA-C-078's keys.
+
+### Gaps that limit the cells
+
+- Salla: responsible not read for SA-C-063, SA-C-064, SA-C-077 and SA-C-078, and reason not read for SA-C-064 and SA-C-077 (Q1 gaps), so no cell says who answers for the wallet, loyalty, gifting or reminders. No statement held defines the wallet as credit, how cashback or points are earned or spent, gift cards beyond their settings route, or what a gift order holds. **Maker gap:** the deposit operation needs "the Customer Wallet application installed" (SA-S-0183), an application on apps.salla.sa whose maker no statement names; the cell cites it as shows, and own-service or extension-point can't be claimed. The plan lines محفظة العميل and نظام ولاء العملاء carry "*برسوم إضافية" (extra charge) on plan سلة بلس, with no amount stated.
+- Shopify: reason searched, not found for SH-C-025, SH-C-026, SH-C-082 and SH-C-187; Shop Cash's boundary searched, not found. No statement defines a loyalty programme, a wishlist or gift wrap and messages beyond the App Store categories' names, or says how a store takes part in Shop Cash. No statement names Shopify's company as the maker of anything here except, as a reading, Shop Cash's funding.
+- No qualities or slot fillers: no statement names a third party or a law doing or setting the terms of a LOY capability. Shopify's "Applicable Laws" (SH-S-0677, escrow where required) names no law.
+
+### What the checker flagged, answered
+
+- **own-service on SH-C-082/where/SH-S-0437:** "Shopify-funded" names Shopify as the funder of a programme for the Shop app's customers, a separate product; a reading. A reviewer may hold that it names the platform, and move it to core.
+- **Statements of other domains** (SH-S-0275, SA-S-1140, SH-I-1824): answered above.
+- **CM-LOY-005, Salla, core rests only on boundary statements:** the one core row is the Wishlist API folder of Salla's own Twilight SDK, the storefront's SDK, which I read as Salla's own API for its own feature (the dry run's convention). A reviewer may move it to shows, leaving the cell with shows only.
+- **SA-S-1761 in two trees** (CM-LOY-005 and CM-MKT-017): answered above; one should be the other's parent.
+- **CM-LOY-005 has no concern landed in its tree:** SH-C-187 lands in CM-LOY-004, and SA-C-091 is domain E's. It is a capability because Shopify gives it an App Store category.
+- **none-held with matches:** CM-LOY-003 Shopify (Shop Cash, cited in 004; Shopify Balance's rewards, the crypto credit reward terms and Shopify Credit's cash back, the merchant's own; Loyalty and reward apps, cited in 004; each named in the cell); CM-LOY-007 Shopify (payment customization, the undefined admin target, the payment reminder template; named in the cell).
+- The other flags are earlier batches', answered in their sections.
+
+- **After batch 4 (the coordinator):** CM-MKT-017, wishlist notifications, is now a child of CM-LOY-005, wishlists. `scope.tsv` names D under SH-C-189's `also`, so U-059's SH-C-189 pair stays `joined:CM-LOY-006` on the evidence.
