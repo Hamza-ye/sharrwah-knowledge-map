@@ -412,11 +412,18 @@ def check_part(d):
                 problem(f"{w}: term {t!r} is not in a cited statement or its concern's platform_terms")
 
     # every landed concern is cited in its capability's cell
+    # the cell a concern lands in may be an earlier part's, as an amendment's is: read its evidence there too
+    ev_prior = {}
+    for pr in prior:
+        for r in pr["evidence.tsv"]:
+            s = statement_of(r["key"], stm)
+            if s:
+                ev_prior.setdefault((r["cap_id"], r["platform"]), []).append((r, s))
     for c, r in landed.items():
         if r["cap_id"].startswith("moved:"):
             continue
         p = r["platform"]
-        if not any(c in s.get("concern_ids", [s["concern_id"]]) for _, s in ev.get((r["cap_id"], p), [])):
+        if not any(c in s.get("concern_ids", [s["concern_id"]]) for _, s in ev.get((r["cap_id"], p), []) + ev_prior.get((r["cap_id"], p), [])):
             if any(s["concern_id"] == c for s in statements(p)):
                 problem(f"landings.tsv line {r['_line']}: no evidence row of {r['cap_id']}'s {p} cell cites a statement of {c}")
 

@@ -1,0 +1,90 @@
+cap_id	platform	supports	key	why
+CM-CUS-001	zid	core	ZD-C-091/where/ZD-S-1036	dashboard section لوحة التحكم > العملاء
+CM-CUS-001	zid	core	ZD-C-091/where/ZD-S-0033	its own Merchant APIs group Customers (C1)
+CM-CUS-001	zid	core	ZD-I-0031	its own API group Customers > Customer Tags, placed in ZD-C-091 (C2)
+CM-CUS-001	zid	core	ZD-C-091/boundary/ZD-S-0932	its own endpoint, scope third_customers_read (C1)
+CM-CUS-001	zid	core	ZD-C-091/boundary/ZD-S-0066	its own webhook topic customer.create (C1)
+CM-CUS-001	zid	core	ZD-I-0067	its own webhook topic customer.update (C2)
+CM-CUS-001	zid	core	ZD-C-091/decides/ZD-S-0481	staff permission list.store.customers
+CM-CUS-001	zid	core	ZD-C-091/decides/ZD-S-0930	plan line Customer Information, all four plans
+CM-CUS-001	zid	core	ZD-I-0340	plan line Edit Customer Data, Customer Management (C2)
+CM-CUS-001	zid	extension-point	ZD-I-0461	App Market category إدارة العملاء (CRM), placed in ZD-C-070 (domain F)
+CM-CUS-001	zid	shows	ZD-C-091/responsible/ZD-S-0933	Zid uses customers' data as directed by the merchant
+CM-CUS-002	zid	core	ZD-I-0350	plan line Create Customer Groups (C2)
+CM-CUS-002	zid	core	ZD-I-0389	Growth plan card: Segment customers for exclusive offers (C2)
+CM-CUS-005	zid	core	ZD-C-091/decides/ZD-S-0931	plan line Block Customers, growth and pro
+CM-CUS-005	zid	core	ZD-I-0343	plan line Block Customers under Customer Management (C2)
+CM-CUS-009	zid	core	ZD-C-103/where/ZD-S-0969	merchant turns Google maps on from the dashboard settings
+CM-CUS-009	zid	core	ZD-I-0131	settings entry عام › تفعيل Google maps (C2)
+CM-CUS-010	zid	core	ZD-I-0069	its own webhook topic customer.login (C2)
+CM-CUS-010	zid	core	ZD-C-091/boundary/ZD-S-0066	customer.create: a new customer account is created (C1)
+CM-CUS-013	zid	core	ZD-I-0194	plan line WhatsApp Login, Basic Features (C2)
+CM-B2B-001	zid	core	ZD-I-0348	plan line Add Business Customers, Customer Management (C2)
+CM-LOY-001	zid	core	ZD-C-019/where/ZD-S-0666	dashboard place التسويق ← برامج الولاء ← محفظة العميل
+CM-LOY-001	zid	core	ZD-C-019/where/ZD-S-0030	its own API group Customer Wallets > Manager Customer Wallet (C1)
+CM-LOY-001	zid	core	ZD-C-019/boundary/ZD-S-0670	its own endpoint crediting a customer's wallet (C1)
+CM-LOY-001	zid	core	ZD-I-0113	its own scope third_customer_wallet_read (C2)
+CM-LOY-001	zid	core	ZD-C-019/decides/ZD-S-0667	on the Professional plan; an add-on below it
+CM-LOY-001	zid	shows	ZD-C-019/responsible/ZD-S-0669	balances are the merchant's future obligation
+CM-LOY-001	zid	shows	ZD-C-019/decides/ZD-S-0668	Zid Wallet as customers' payment option; same wallet not stated
+CM-LOY-003	zid	core	ZD-I-0028	its own API group Customer Wallets > Cashback Rules (C2)
+CM-LOY-003	zid	core	ZD-C-019/decides/ZD-S-0667	customer wallet and cashback on the Professional plan
+CM-LOY-004	zid	core	ZD-C-090/where/ZD-S-0027	its own API group Marketing > Loyalty Program (C1)
+CM-LOY-004	zid	core	ZD-C-090/boundary/ZD-S-0108	its own endpoint loyalty-status, loyalty_program.read (C1)
+CM-LOY-004	zid	core	ZD-C-090/decides/ZD-S-0929	plan line Loyalty Programs, pro only
+CM-LOY-004	zid	core	ZD-C-090/decides/ZD-S-0386	Professional plan card: complete loyalty program
+CM-LOY-004	zid	core	ZD-C-090/decides/ZD-S-1034	loyalty points on the Professional plan only
+CM-LOY-004	zid	core	ZD-C-090/decides/ZD-S-1035	loyalty points bought through add-ons
+CM-LOY-004	zid	core	ZD-I-0311	plan line Loyalty - Earned Points (C2)
+CM-LOY-004	zid	core	ZD-I-0312	plan line Loyalty - Points Redemption Methods (C2)
+CM-LOY-004	zid	core	ZD-I-0351	plan line Points-Earning Customers, placed in ZD-C-091 (C2)
+CM-LOY-004	zid	extension-point	ZD-I-0459	App Market category برامج الولاء والمكافآت, placed in ZD-C-070 (domain F)
+CM-LOY-005	zid	core	ZD-I-0339	plan line Customer Wishlist, Customer Management (C2)
+CM-LOY-006	zid	core	ZD-C-101/where/ZD-S-0966	merchant turns gifting on from the dashboard settings
+CM-LOY-006	zid	core	ZD-I-0133	settings entry عام › خاصية الإهداء (C2)
+CM-MKT-001	zid	core	ZD-I-0297	plan line Discounts / الخصومات, Marketing & Growth Tools (C2)
+CM-MKT-001	zid	extension-point	ZD-I-0449	App Market category العروض والترقيات, placed in ZD-C-070 (domain F)
+CM-MKT-002	zid	core	ZD-C-088/where/ZD-S-0025	its own API group Marketing > Coupons (C1)
+CM-MKT-002	zid	core	ZD-C-088/boundary/ZD-S-0103	its own endpoint coupons, coupons.read (C1)
+CM-MKT-002	zid	core	ZD-I-0106	its own scope third_coupons_write (C2)
+CM-MKT-002	zid	core	ZD-C-088/decides/ZD-S-0520	staff permission manage.store.coupons
+CM-MKT-002	zid	core	ZD-C-088/decides/ZD-S-0926	plan line Add Discount Coupons, all four plans
+CM-MKT-002	zid	core	ZD-I-0370	Starter plan card: Add discount coupons (C2)
+CM-MKT-002	zid	core	ZD-I-0302	plan line Multiple Coupons with Advanced Analytics (C2)
+CM-MKT-002	zid	core	ZD-I-0293	plan line Number of Discount Codes (C2)
+CM-MKT-003	zid	core	ZD-I-0489	staff permission manage.store.discount.rules, automatic discounts (C2)
+CM-MKT-005	zid	core	ZD-C-106/where/ZD-S-0457	its own product line Marketing Tools
+CM-MKT-005	zid	core	ZD-C-106/decides/ZD-S-0466	staff permission manage.store.marketing
+CM-MKT-005	zid	core	ZD-C-106/decides/ZD-S-0975	plan line Create New Campaign, growth and pro
+CM-MKT-005	zid	core	ZD-I-0309	plan line Campaign Title, Marketing & Growth Tools (C2)
+CM-MKT-005	zid	extension-point	ZD-I-0455	App Market category التسويق والنمو, placed in ZD-C-070 (domain F)
+CM-MKT-005	zid	shows	ZD-C-025/boundary/ZD-S-0717	Zid Agent's AI features include campaign management
+CM-MKT-006	zid	extension-point	ZD-I-0458	App Market category أتمتة التسويق والحملات, placed in ZD-C-070 (domain F)
+CM-MKT-007	zid	core	ZD-I-0301	plan line Marketing - SMS Content (C2)
+CM-MKT-007	zid	core	ZD-I-0304	plan line Bulk Customer Alerts, Marketing & Growth Tools (C2)
+CM-MKT-007	zid	extension-point	ZD-I-0462	App Market category البريد الإلكتروني والرسائل النصية, ZD-C-070 (domain F)
+CM-MKT-007	zid	extension-point	ZD-I-0456	App Market category التسويق عبر واتساب, ZD-C-070 (domain F)
+CM-MKT-007	zid	shows	ZD-C-098/reason/ZD-S-1046	promotional SMS from a sender name ending in AD, per هيئة الاتصالات
+CM-MKT-008	zid	extension-point	ZD-I-0457	App Market category تتبع الحملات والإسناد, ZD-C-070 (domain F)
+CM-MKT-013	zid	extension-point	ZD-I-0460	App Market category التسويق بالعمولة والمؤثرين, ZD-C-070 (domain F)
+CM-MKT-014	zid	core	ZD-C-106/decides/ZD-S-0974	plan line Add Marketing Affiliates, launch, growth and pro
+CM-MKT-014	zid	core	ZD-I-0514	staff permission manage.store.affiliate (C2)
+CM-MKT-014	zid	core	ZD-I-0296	plan line Affiliate Links (C2)
+CM-MKT-014	zid	core	ZD-I-0294	plan line Commission (C2)
+CM-MKT-014	zid	core	ZD-I-0295	plan line Affiliate Information (C2)
+CM-MKT-014	zid	core	ZD-I-0292	plan line Export Affiliate Data (C2)
+CM-MKT-016	zid	core	ZD-C-087/where/ZD-S-1028	dashboard place العملاء ← إشعارات المخزون
+CM-MKT-016	zid	core	ZD-C-087/boundary/ZD-S-1029	built-in: customers register; notified by email or WhatsApp
+CM-MKT-016	zid	core	ZD-C-087/where/ZD-S-0017	its own API group Products > Product Availability Notifications (C1)
+CM-MKT-016	zid	core	ZD-C-087/boundary/ZD-S-0925	its own stats endpoint, products.read (C1)
+CM-MKT-016	zid	core	ZD-C-087/decides/ZD-S-0924	plan line Product Availability Notification, growth and pro
+CM-MKT-016	zid	core	ZD-I-0248	plan line under Product & Inventory Management (C2)
+CM-MKT-018	zid	core	ZD-C-088/decides/ZD-S-1030	its own feature خصومات البنك, defined
+CM-MKT-018	zid	core	ZD-C-088/decides/ZD-S-0927	plan line Card Discount, growth and pro
+CM-MKT-018	zid	core	ZD-I-0225	plan line Card Discount under Payments (C2)
+CM-MKT-021	zid	extension-point	ZD-I-0451	App Market category البيع المتقاطع والإضافي, ZD-C-070 (domain F)
+CM-MKT-022	zid	core	ZD-C-082/decides/ZD-S-1018	Zid Alerts on by default to target abandoned carts
+CM-MKT-022	zid	core	ZD-C-082/boundary/ZD-S-1019	Zid Alerts' WhatsApp messages sent from Zid's number
+CM-MKT-022	zid	core	ZD-C-112/where/ZD-S-0452	product line Zid Voice: recover abandoned carts with a voice agent
+CM-MKT-022	zid	shows	ZD-C-112/decides/ZD-S-1069	Zid Voice's cart recovery: limited pilot
+CM-MKT-022	zid	extension-point	ZD-I-0454	App Market category استرداد السلال المتروكة, ZD-C-070 (domain F)

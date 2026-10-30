@@ -535,7 +535,7 @@ zid	ZD-C-085	B		Inventories; Product Stock (INV)
 zid	ZD-C-086	D	B	Product Reviews; Product Questions & Answers (SUP)
 zid	ZD-C-087	D	B	Product Availability Notifications; إشعارات المخزون (MKT)
 zid	ZD-C-088	D		Coupons; Discounts; where Merchant APIs > Marketing (MKT)
-zid	ZD-C-089	D	B	Bundle Offers; Add Dynamic Bundle; where Merchant APIs > Marketing (MKT)
+zid	ZD-C-089	B	D	Bundle Offers; Add Dynamic Bundle; where Merchant APIs > Marketing (MKT); moved to B by the coordinator after D-zid: Zid's own statements describe a product bundle (ZD-S-0928, ZD-S-1033), all cited as core in B's CM-SEL-006
 zid	ZD-C-090	D		Loyalty Program (LOY)
 zid	ZD-C-091	D		Customers; Customer Tags (CUS)
 zid	ZD-C-092	D		Customer Portal Tickets; بوابة خدمة العملاء الذاتية (SUP)
