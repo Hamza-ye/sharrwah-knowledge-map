@@ -999,7 +999,11 @@ def cmd_check(a):
             continue
         f = l.split("\t")
         w = f"placements-{a.batch}.tsv line {i}"
-        if len(f) != len(P_HEAD) or '"' in l:
+        # the scripts read with no quoting, but a spreadsheet or GitHub's table view takes a field that opens with a
+        # double quote as quoted, so the files hold none: a reading quotes with ' or “ ”
+        if '"' in l:
+            problems.append(f"{w}: holds a double quote (\"), which this file can't carry: quote with ' or “ ”"); continue
+        if len(f) != len(P_HEAD):
             problems.append(f"{w}: {len(P_HEAD)} tab-separated fields, no quoting (it has {len(f)})"); continue
         r = dict(zip(P_HEAD, f))
         pieces = [x.strip() for x in r["entry_id"].split(";")]
