@@ -15,6 +15,7 @@
 ## What an entry is, and where its other things go
 
 - **A thing an entry names counts in each capability it names** (M-6; R2, M4; R3, F4). A child's entry whose own words name the parent's thing (its section is the parent's term) takes the parent's line too. That is domain C's rule, "a statement that names several things counts in each".
+  - **Refined after the calibration** (30 October; `held/calibration.md`): the child takes the parent's line where it is a kind of the parent's thing, as Bank deposit, under OFFLINE PAYMENT METHODS, is an offline payment method (R2's case). A group the entry only sits under, whose title says where the entry is and not what it is (BigCommerce's `group: General`), gives it no line: the group is placed once, as a container (rule 3). Read as every section's group, the rule gave BigCommerce's settings lines that changed no cell: 7 at `high`, each of the General group's sections on store details (CM-ACC-006), and 14 at `xhigh`, over five groups.
 - **A mark is never a quality** (D4, within B-extent.md; R2, M3; R3, F2):
   - a plan's mark of inclusion (a check, "Available", "Included") is the line's scope;
   - a provider's feature mark (Recurring Payments ✔) is a statement of the marked feature's capability: a line there, `shows` unless the row says who does it, the provider its filler.

@@ -686,16 +686,23 @@ STOP_WORDS = set("the a an of and or to in on for its it is by with as from at b
 
 
 def name_words(s):
-    """A name's or a value's words, folded: an English word without its plural, an Arabic one without its article."""
+    """A name's or a value's words, folded: an English word without its plural; an Arabic one without its article, the
+    conjunction or preposition joined to it, and a feminine plural (والتقييمات and التقييم are one word)."""
     out = []
     for w in re.findall(r"[a-z]+|[\u0600-\u06ff]+", fold(s)):
-        if w in STOP_WORDS or len(w) < 3:
+        if w in STOP_WORDS:
             continue
         if w[0].isascii():
+            if len(w) < 3:
+                continue
             w = re.sub(r"ies$", "y", w)
             w = re.sub(r"(?<!s)s$", "", w)
         else:
-            w = re.sub(r"^ال", "", w)
+            w = re.sub(r"^(?:وال|بال|فال|كال|لل|ال)", "", w)
+            if len(w) > 4:
+                w = re.sub(r"ات$", "", w)
+            if len(w) < 3 or w in STOP_WORDS:
+                continue
         out.append(w)
     return out
 
