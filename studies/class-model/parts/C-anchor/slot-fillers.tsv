@@ -3,3 +3,21 @@ CM-CHK-008	shopify	Apple Pay	SH-C-078/where/SH-S-0419
 CM-CHK-008	shopify	Google Pay	SH-C-078/where/SH-S-0419
 CM-CHK-008	shopify	Amazon Pay	SH-C-078/where/SH-S-0419
 CM-CHK-008	shopify	PayPal	SH-C-078/where/SH-S-0419
+CM-PAY-004	shopify	Stripe, Inc.	SH-C-064/responsible/SH-S-0152
+CM-PAY-004	shopify	PayPal, Inc.	SH-C-064/responsible/SH-S-0153
+CM-PAY-004	shopify	Stripe Payments Canada, Ltd.	SH-C-064/responsible/SH-S-0154
+CM-PAY-004	shopify	Stripe Payments Mexico, S. de RL de CV.	SH-C-064/responsible/SH-S-0155
+CM-PAY-004	shopify	Adyen N.V.	SH-C-064/responsible/SH-S-0156
+CM-PAY-004	shopify	PayPal (Europe) S.à r.l. et Cie, S.C.A.	SH-C-064/responsible/SH-S-0157
+CM-PAY-004	shopify	Stripe Payments Europe, Limited	SH-C-064/responsible/SH-S-0158
+CM-PAY-004	shopify	Stripe Payments Europe, Limited	SH-C-064/responsible/SH-S-0159
+CM-PAY-004	shopify	AIHK Markets Limited	SH-C-064/responsible/SH-S-0160
+CM-PAY-004	shopify	Stripe Japan, Ltd.	SH-C-064/responsible/SH-S-0161
+CM-PAY-004	shopify	Stripe Payments Australia Pty Ltd.	SH-C-064/responsible/SH-S-0162
+CM-PAY-004	shopify	Stripe Payments Singapore Pte. Ltd.	SH-C-064/responsible/SH-S-0163
+CM-PAY-004	shopify	The Bridge entity (an affiliate of Stripe)	SH-C-064/responsible/SH-S-0151
+CM-PAY-004	shopify	Adyen N.V. (Acquirer)	SH-C-066/responsible/SH-S-0141
+CM-PAY-004	shopify	Retail Payment Activities Act (Canada)	SH-C-067/responsible/SH-S-0125
+CM-PAY-003	shopify	MasterCard (MATCH List)	SH-C-068/decides/SH-S-0098
+CM-PAY-006	shopify	Stripe, PayPal or Adyen, depending on region	SH-C-070/decides/SH-S-0354
+CM-PAY-004	shopify	Global-e	SH-C-065/responsible/SH-S-0566

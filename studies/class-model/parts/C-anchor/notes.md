@@ -167,3 +167,82 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas ORD`) gi
 - **CM-CHK-009's parent is CM-ORD-001,** by Salla's own grouping (convention 6): its links sit under /orders/ in the same admin list as All orders.
 - **For the PAY batches:** U-021 (SH-C-059 against SA-C-122, fraud protection): CM-ORD-006's Salla cell cites SA-C-122's SA-S-1971 as `core`. Where SA-C-122 is the same thing, it lands in CM-ORD-006; a payment capability of its own for fraud would count SA-S-1971 twice. SA-C-122 also holds SA-S-5052, the tag for a customer who isn't serious, from Salla's anti-fraud analysis across its stores, a lead for A's CM-TRU-008. U-018 (SH-C-055 against SA-C-126, payment links) is PAY's to rule. Partial payments (SA-S-3286, of SA-C-040) are left to PAY, and Apple Wallet order tracking (SA-S-1995) to SHP.
 
+
+## Batch 3: PAY, Payments, payouts and money (first of six)
+
+Concerns: SH-C-045, SH-C-062, SH-C-063, SH-C-064, SH-C-065, SH-C-066, SH-C-067, SH-C-068, SH-C-069, SH-C-070, SH-C-071. Eight capabilities, CM-PAY-001 to CM-PAY-008; all eleven concerns land in new ones, since the area had none and no capability of the part's model was the same thing. Every capability was first searched in every domain with `caps` (terms: payment, payments, payout, المدفوعات, الدفع, verification, KYC, توثيق, fee, رسوم, rates, reserve, processor, payment terms, net terms, bank account, حساب بنكي, settlement, تحويل; then acquirer, facilitator, underwriting, المستحقات, رصيد المدفوعات, payment provider, gateway, بوابة, بوابات الدفع, طرق الدفع, وسائل الدفع, Shopify Payments, مدفوعات سلة, processing, معالجة, حاسبة الرسوم, payment schedule, شروط الدفع, آجل, deferred, due). What the search found and kept apart: A's CM-TRU-002 (identity verification of the people behind a store), CM-TRU-018 (PCI), CM-PLN-003 (the platform's fee on sales through other providers), CM-PLN-004 to -007 (the platform's billing of the merchant, and Salla's prepaid store balance, CM-PLN-006), CM-ACC-004 (business entity); D's CM-LOY-001 and -002 (store credit, gift cards), CM-B2B-001 to -007; E's CM-POS-002, CM-MKS-003 (merchant of record, Global-e) and CM-MKS-007 (currency conversion); F's CM-APP-003 (app charges) and CM-PTN-003 (partner payouts). None is the same thing as a capability added here. Every Shopify and Salla cell is written for the eight.
+
+### How I cut, and the grains
+
+- **The tree.** CM-PAY-001, payment methods and providers (the store's payment settings), is the root. CM-PAY-002, the platform's own payment service, is its child; the service's own parts are CM-PAY-002's children: onboarding and verification (003), the processing, acquiring and fund holding behind it (004), payouts (005, with reserves and holds, 006, under it) and its processing fees (007). Payment terms (008) sits under CM-ORD-001.
+- **M-025, a difference of grain.** It joins Shopify's settings page (SH-C-062) and payments apps (SH-C-076) with Salla's external gateways (SA-C-120), and its granularity note puts Salla's Payments settings page in SA-C-110. So CM-PAY-001 is the settings page, where SH-C-062 lands, and its Salla cell cites SA-C-110's settings keys (the links Payments and Payment methods, the staff permissions, the API folder and the scope payments). **For batch 4 and the Salla batches:** SH-C-076 and SA-C-120 are finer, each a kind of provider the merchant connects; I leave it to them to add a child of CM-PAY-001 for third-party providers and gateways, and the children for wallets, instalments, PayPal, manual methods and the rest, rather than add capabilities none of my concerns is.
+- **CM-PAY-002 under CM-PAY-001,** by both platforms' grouping: Shopify's route payments:settings:shopify-payments sits in its payment settings (SH-S-5248); Salla's e-payments are activated from its Payment methods tab (SA-S-0051). The methods Salla Payments carries (Apple Pay, STC Pay, Google Pay, KNET, in SA-C-110's plan lines and flags) are left to the batch that lands wallets (SH-C-078, U-023 and U-024). I cite only mada, the card line and KNET as the service's own, as core in CM-PAY-002; the wallet batch may want them in a child.
+- **CM-PAY-004, one capability for four Shopify concerns.** SH-C-064 (processing and settlement), SH-C-065 (custody of funds), SH-C-066 (payment facilitation in the EU/EEA and UK) and SH-C-067 (regulated payment services in Canada) are all clauses of the Shopify Payments Terms and its Payment Processor List, with no admin place apart from those pages. Q1's U-027 asks one question of three of them against Salla's SA-C-114 and SA-C-177: who processes, holds the funds and under what licence. So one capability holds them, each statement keeping its country scope. The reviewer may want custody (SH-C-065) apart; I kept it here because the same terms give custody to the Payment Processors and Financial Services Providers that process (SH-S-0093, SH-S-0118). Whether this is a capability at all, rather than the terms of CM-PAY-002, is a question for the reviewer: Shopify's Payment Processor List is a page of its own (www.shopify.com/legal/processor-list), which I read as the dry run's place of its own.
+- **CM-PAY-003, onboarding and verification (M-003).** Under CM-PAY-002: Shopify's checks are for "the Payment Services" (SH-S-0132), and Salla's link Store Verification is /payments/kyc (SA-S-1881). Domain A's note on CM-TRU-002 asks that Salla's store verification count once, in domain C, and that this capability not cite SH-C-008's route keys: it doesn't. Shopify's route profile-assessment and section ProfileAssessment also sit under SH-C-068's keys; they are shows here, core in A.
+- **CM-PAY-005, payouts (M-027).** The payout bank account stays inside it: Shopify keeps it in SH-C-069 (read_shopify_payments_bank_accounts, the bank account requirements). Salla splits it (SA-C-112), and I cite SA-C-112's SA-S-0094 as core here. **For the Salla batches:** SA-C-111 lands here; SA-C-112 is finer, a part of payouts, and lands here too unless they make a child for the payout account.
+- **CM-PAY-006, reserves and holds,** under CM-PAY-005 because Q1 places SH-C-070's where on Shopify's Payouts route (SH-S-6325). That route is core in CM-PAY-005 and shows in CM-PAY-006.
+- **CM-PAY-007, fees (M-029),** not A's CM-PLN-003: Shopify's third-party transaction fees and Salla's platform commission are the platform's fee on sales, while these are the payment service's rates on the transactions it processes. Shopify's 1.25% premium where a third-party provider is used alongside (SH-S-0378) is shows here; A may want it in CM-PLN-003.
+- **CM-PAY-008, payment terms (SH-C-045), weighed against D's CM-B2B-001.** Shopify's API reference lists payment terms among its B2B resources (SH-I-0004, cited as shows), but its staff permissions put them in the categories ORDERS and DRAFT_ORDERS (SH-S-7152, SH-S-7153), and no statement held limits them to business buyers. So they stay in C, under CM-ORD-001 by the admin grouping. If the coordinator reads the API's grouping as the platform's own, the capability would go to D under CM-B2B-001, and SH-C-045 would land there as `moved:D`.
+
+### Joins
+
+No join on role. The landings use `single`, each naming its Q1 match in the reading: the checker wants a match's other concerns landed before a landing claims it, and M-025, M-026, M-003, M-027 and M-029 hold Salla concerns the Salla batches land later (M-028 and M-037 hold only WooCommerce's). **For the Salla batches:** SA-C-110 lands in CM-PAY-002 by M-026, SA-C-006 in CM-PAY-003 by M-003, SA-C-111 and SA-C-112 in CM-PAY-005 by M-027, SA-C-113 in CM-PAY-007 by M-029, and SA-C-120 under CM-PAY-001 by M-025. The coordinator may then change my landings' joins to the match.
+
+### Homonyms
+
+- **"Payment terms":** Shopify's payment terms on an order (SH-C-045) against Salla's تعيين شروط الدفع عند الاستلام, cash on delivery's conditions (SA-S-2027, SA-C-115 and SA-C-116), its وسائل الدفع الآجلة, buy now pay later (SA-S-0070, SA-C-118), and the merchant's postpaid shipping labels, الدفع الآجل لبوليصات سلة (SA-S-5061, SA-C-140). None is cited in CM-PAY-008.
+- **"Wallet":** Salla's link Wallet (/payments/wallet, SA-S-1876) is held in SA-C-005 (A's CM-PLN-006, the store balance, core) and in SA-C-111 (the e-payments balance). Salla says the two balances differ (SA-S-0079, SA-S-0083). Here it is shows. Neither is D's customer wallet (CM-LOY-001).
+- **"Payouts":** the payment service's payouts to the merchant (CM-PAY-005), not F's partner payouts (CM-PTN-003).
+- **"Settlements":** Salla's scope settlements (SA-S-1564) and its Settlements API (SA-C-124) are settlements withheld by dropshipping apps, not Shopify's "settlement" of transactions by its Payment Processors (SH-S-0082). Not cited.
+
+### Strained fits
+
+- SH-C-068 is strained in CM-PAY-003: its where statements, the route profile-assessment (SH-S-5254) and the section ProfileAssessment (SH-S-1594), are cited as core in domain A's CM-TRU-002 under SH-C-008's keys. Here they are shows.
+
+### Statements shared with other domains, cited here only as shows or outside
+
+- SH-S-5092 (route shopify-payments-accounts) is core in A's CM-PLN-001 and E's CM-MKS-003; SH-S-5080 (payments:settings:setup) is core in A's CM-ONB-002. Both are shows in CM-PAY-002.
+- SH-S-0009 (Shopify Payment Activities Inc., Canada) is shows in A's CM-ACC-002; it is own-service in CM-PAY-004. The merge flags core or own-service in two domains only, so this is not a double count.
+- SH-S-0123 (funds or data held under legal process) is outside in A's CM-TRU-017 and outside in CM-PAY-004.
+- SH-S-0565 (Global-e holds funds for Managed Markets orders) is outside in E's CM-MKS-003 and outside in CM-PAY-004, with SH-S-0566.
+- SH-S-0558 (fee values in the Terms) is shows in E's CM-MKS-007 and shows in CM-PAY-007.
+- SA-S-1876 (Wallet link) is core in A's CM-PLN-006 and shows in CM-PAY-005. SA-S-1583 (order.payment.updated) is core in CM-ORD-001 and shows in CM-PAY-002.
+- SA-S-3549 (dashboard app ui-merchant-payments) is core in CM-CHK-001 under SA-C-100's key and core in CM-PAY-001 under SA-C-110's: the app's path holds both /payments and /checkout. Both are in this domain; the coordinator may prefer one.
+- SA-S-0132 (Absher SMS) is shows here and in A's CM-TRU-002. SA-C-006's entity steps (SA-S-0133, SA-S-0142), core in A's CM-ACC-004, and SA-S-0141, core in A's CM-ONB-001, are not cited here.
+
+### Rulings
+
+- U-071, SH-C-064 against SA-C-235 (domain G, which names C under also): apart. Salla's statement is about affiliate commissions after payment-gateway updates (SA-S-0044), landed in G's CM-OPS-001.
+
+### Left for later batches
+
+- **U-027** (SH-C-065, SH-C-066, SH-C-067 against SA-C-114 and SA-C-177): the batch that lands SA-C-114 and SA-C-177 rules on its six pairs. CM-PAY-004's Salla cell cites SA-C-114's SA-S-0081 and SA-S-0088 and the agreement SA-I-2612 (SA-C-177's) as shows, so if they land in CM-PAY-004 the pairs are joined:CM-PAY-004.
+- **U-028** (SH-C-069 against SA-C-164, the settlement currency): SA-C-164's batch rules. Shopify's payout currencies are help-center titles in SH-C-069 (SH-I-2238, SH-I-2240, SH-I-2243), uncited; Multi-Currency Payouts' plan limit (SH-S-0365) is shows in CM-PAY-005.
+- **M-026, M-003, M-027, M-029** (above, Joins): the Salla side lands later.
+- **SH-C-063's SH-S-0022** (a PayPal Express Checkout account created on sign-up) is left uncited for the batch that lands PayPal (SH-C-077, M-032).
+- **Salla's SA-S-0104** (the shopping experience fee, which names saved cards, Apple Pay quick purchase and fraud protection) is cited here as shows in CM-PAY-007. Batch 2 left it for PAY in connection with fraud protection; it supports no placement there.
+- **From batch 2, still open:** U-018 (SH-C-055 against SA-C-126, payment links), U-021 (SH-C-059 against SA-C-122, fraud protection) and partial payments (SA-S-3286): their Salla concerns land in batches 7 and 8, which rule on them.
+
+### Gaps
+
+- No Salla statement held names who processes or acquires Salla Payments' transactions, who holds the funds or under which licence, nor the parties to the payment services contract (Q1's gaps on SA-C-114 and SA-C-177, all "page not read"). CM-PAY-004's Salla cell is therefore not-stated.
+- No Salla statement held names a Salla company as the provider of Salla Payments, so CM-PAY-002's Salla cell claims core only, from its own plan lines, links and definition. The maker statement is a gap.
+- No Shopify statement held defines what payment terms it offers (SH-C-045), and Q1's gaps on it are responsible (stated only in general terms) and reason (searched, not found).
+- Salla's Kuwait help pages differ on the transfer minimum: one dinar (SA-S-0086) and no minimum (SA-S-0087). Both are cited; the qualities hold the first.
+- Q1 gaps: SH-C-065, SH-C-066, SH-C-067 and SH-C-071 reason (searched, not found); SH-C-066 and SH-C-067 where (searched, not found) and SH-C-067 boundary (searched, not found), so no admin place is held for the payment facilitator or the Canadian regulated services.
+
+### Qualities
+
+- CM-PAY-002 Shopify: minimum age 18 for a Shopify Payments account (SH-S-0326).
+- CM-PAY-005 Shopify: a minimum payout amount in certain countries (SH-S-0339), a 3-5 business day pause on a new payout bank account (SH-S-0345). Salla: a 100 SAR minimum for a transfer (SA-S-0077), the UAE's Thursday transfers above 250 AED (SA-S-0080), Kuwait's next business day with a one-dinar minimum (SA-S-0086), and the deposit frequency by plan (Plus weekly, Pro every 48 hours, Special daily: SA-S-0071 to SA-S-0073).
+- CM-PAY-007 Shopify: online standard card rates per plan (SH-S-7021), online international rates (SH-S-7023), the 1.25% premium (SH-S-0378).
+
+### Checker
+
+The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gives "0 problems, 24 flags for the reviewer". The nine on CHK and ORD rows are batches 1 and 2's, answered in their sections. Mine:
+
+- **Own-service on Shopify's entity statements (13 flags: SH-S-0146 to SH-S-0149, SH-S-0080 twice, SH-S-0081 twice, SH-S-0129, SH-S-0139, SH-S-0140, SH-S-0125, SH-S-0009).** Each names a company of Shopify's group by its legal name (Shopify Inc., Shopify Payments (USA) Inc., Shopify International Limited, Shopify Commerce Singapore Pte. Ltd., Shopify Payments EU Limited, Shopify Payments UK Limited, Shopify Payment Activities Inc.) or "a Shopify affiliate" or "Shopify", as the supplier of the Payments Services, the Payment Facilitator or the registered Payment Service Provider. That is the maker-or-provider statement own-service asks for. The service itself is also core, by its admin section and routes.
+- **CM-PAY-006 Salla: none-held, 8 matches.** A frozen annual subscription (SA-S-2085), the scope settlements (SA-S-1564), partner policies' suspensions and a partner's frozen dues (SA-C-205, SA-C-206, SA-C-208), a theme publication step: none is a hold on the merchant's payouts. Answered in the cell's reading.
+- **CM-PAY-008 Salla: none-held, 2 matches.** Buy now pay later (SA-S-0070) and postpaid shipping labels (SA-S-5061), homonyms above.
+
+`uncited --domain C` lists for this batch's concerns only SH-C-063's SH-S-0022, left for PayPal on purpose.

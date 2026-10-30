@@ -326,3 +326,252 @@ CM-ORD-013	salla	core	SA-C-040/decides/SA-S-3262	released flag order-comment, pl
 CM-ORD-014	salla	core	SA-C-040/where/SA-S-1746	setting Reorder, orders/reorder
 CM-ORD-014	salla	core	SA-C-040/decides/SA-S-2128	plan line تكرار الطلب, plan سلة برو
 CM-ORD-014	salla	core	SA-C-040/decides/SA-S-3280	released flag order-reorder, plans pro, special
+CM-PAY-001	shopify	core	SH-C-062/where/SH-S-6320	admin link Payment providers, settings/payments
+CM-PAY-001	shopify	core	SH-C-062/where/SH-S-1488	settings page titled Payments
+CM-PAY-001	shopify	core	SH-C-062/where/SH-S-0374	activate or change a payment provider from the admin's Payments page
+CM-PAY-001	shopify	core	SH-C-062/decides/SH-S-0319	the buyer pays with any method the merchant activated
+CM-PAY-001	shopify	core	SH-C-062/decides/SH-S-5246	route payments:settings:index gated by MANAGE_PAYMENTS_SETTINGS
+CM-PAY-001	shopify	core	SH-I-0982	staff permission Finance > Manage other payment settings
+CM-PAY-001	shopify	core	SH-C-062/boundary/SH-S-7460	Admin API object PaymentSettings
+CM-PAY-001	shopify	shows	SH-C-062/decides/SH-S-0584	select gateways and providers available in your region
+CM-PAY-001	shopify	outside	SH-C-062/responsible/SH-S-0308	all supported methods rely on third-party providers to process transactions
+CM-PAY-001	shopify	outside	SH-C-062/decides/SH-S-0309	providers may charge extra fees and enforce rules on what may be sold
+CM-PAY-001	salla	core	SA-C-110/where/SA-S-1683	admin link Payments, /payments
+CM-PAY-001	salla	core	SA-C-110/where/SA-S-1875	admin link Payment methods, /payments
+CM-PAY-001	salla	core	SA-C-110/where/SA-S-3549	dashboard app ui-merchant-payments at /payments
+CM-PAY-001	salla	core	SA-C-110/decides/SA-S-2433	staff permission payment_method_browse, group المدفوعات
+CM-PAY-001	salla	shows	SA-C-110/decides/SA-S-2643	partner permission payment_method_browse, الاطلاع على طرق الدفع
+CM-PAY-001	salla	core	SA-C-110/decides/SA-S-2434	staff permission payment_methods_activation, group المدفوعات
+CM-PAY-001	salla	shows	SA-C-110/decides/SA-S-2644	partner permission payment_methods_activation, تفعيل وإلغاء تفعيل طرق الدفع
+CM-PAY-001	salla	core	SA-C-110/boundary/SA-S-1059	API folder Payments
+CM-PAY-001	salla	core	SA-C-110/boundary/SA-S-1554	access scope payments
+CM-PAY-001	salla	shows	SA-I-1643	partner access permission payment_method_browse
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-6321	admin link Payments, /payments
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-5252	admin route shopify-payments
+CM-PAY-002	shopify	core	SH-C-063/decides/SH-S-5248	route payments:settings:shopify-payments, permission SHOPIFY_PAYMENTS or MANAGE_PAYMENTS_SETTINGS
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-0382	the only payment gateway designed and operated by Shopify
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-0325	an integrated payment gateway offered by Shopify, for eligible merchants
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-0078	Shopify's integrated payments solution
+CM-PAY-002	shopify	core	SH-C-063/decides/SH-S-7020	plan row Shopify Payments, Included on every plan
+CM-PAY-002	shopify	core	SH-C-063/boundary/SH-S-6118	Admin API requirement read_shopify_payments
+CM-PAY-002	shopify	core	SH-C-063/boundary/SH-S-1068	access scope read_shopify_payments_accounts
+CM-PAY-002	shopify	core	SH-I-0024	API resource group Shopify Payments
+CM-PAY-002	shopify	own-service	SH-C-063/responsible/SH-S-0147	Shopify Payments (USA) Inc. for the United States
+CM-PAY-002	shopify	own-service	SH-C-063/responsible/SH-S-0146	Shopify Inc. for Canada
+CM-PAY-002	shopify	own-service	SH-C-063/responsible/SH-S-0148	Shopify International Limited for the EU, UK, UAE and others
+CM-PAY-002	shopify	own-service	SH-C-063/responsible/SH-S-0149	Shopify Commerce Singapore Pte. Ltd. for Asia-Pacific countries
+CM-PAY-002	shopify	own-service	SH-C-063/responsible/SH-S-0080	the Shopify entities are each a supplier of the Payments Services, not licensed as banks
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0323	usable if the business is in a supported country
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0107	used only in the Designated Country
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0369	only the store owner can activate or switch to Shopify Payments
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0327	business models Shopify Payments can't support
+CM-PAY-002	shopify	shows	SH-C-063/reason/SH-S-0320	no third-party provider or merchant account to set up
+CM-PAY-002	salla	core	SA-C-110/where/SA-S-0049	a service Salla offers to process payments in the store directly
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-1953	plan line تفعيل الدفع الإلكتروني, plan سلة بلس
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-1959	plan line الدفع عبر مدى, plan سلة بلس
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-1960	plan line الدفع عبر البطاقة الائتمانية (فيزا وماستر كارد), plan سلة بلس
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-0051	activate e-payments from the Payment methods tab
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-0065	KNET through Salla Payments for Kuwaiti stores, from the Salla Payments section
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-3150	released flag mada, enabled for the answering store
+CM-PAY-002	salla	core	SA-C-110/decides/SA-S-3151	released flag credit_card, enabled for the answering store
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0053	requirement: a store on Plus, Pro or Special (UAE)
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0055	requirement: payments activated by Salla's team (UAE)
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0107	free orders with Salla Payments, then a plan upgrade
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0068	agree to the selling policy when activating
+CM-PAY-002	salla	shows	SA-C-110/boundary/SA-S-1583	event order.payment.updated
+CM-PAY-003	shopify	core	SH-C-068/decides/SH-S-0132	pass Shopify's identity and KYC checks before using the Payment Services (EU/EEA, UK)
+CM-PAY-003	shopify	core	SH-C-068/decides/SH-S-0331	the business evaluated on first applying for Shopify Payments, risk monitored after
+CM-PAY-003	shopify	core	SH-C-068/boundary/SH-S-1122	access scope read_financial_kyc_information
+CM-PAY-003	shopify	core	SH-C-068/boundary/SH-S-5994	webhook topic finance_kyc_information/update
+CM-PAY-003	shopify	core	SH-C-068/boundary/SH-S-1226	webhook topic value finance_kyc_information/update
+CM-PAY-003	shopify	shows	SH-C-068/where/SH-S-5254	route profile-assessment, core in domain A's CM-TRU-002
+CM-PAY-003	shopify	shows	SH-C-068/where/SH-S-1594	section ProfileAssessment, core in domain A's CM-TRU-002
+CM-PAY-003	shopify	shows	SH-C-068/decides/SH-S-0332	an account declined, deactivated or restricted after review
+CM-PAY-003	shopify	shows	SH-C-068/decides/SH-S-0337	historical patterns across the merchant's businesses reviewed
+CM-PAY-003	shopify	outside	SH-C-068/decides/SH-S-0357	Shopify's banking partners may require more information, account on hold
+CM-PAY-003	shopify	outside	SH-C-068/decides/SH-S-0098	Payment Processors report the business to MasterCard's MATCH list
+CM-PAY-003	shopify	outside	SH-C-068/responsible/SH-S-0100	the Payment Processor processes personal data as controller for KYC/AML
+CM-PAY-003	shopify	shows	SH-C-068/reason/SH-S-0333	a higher standard than card networks' thresholds
+CM-PAY-003	salla	core	SA-C-006/where/SA-S-1881	admin link Store Verification, /payments/kyc
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-2410	staff permission business_certificate_management, group إعدادات المتجر
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-3101	released flag kyc_new_workflow, countries AE, SA, KW, QA, OM, BH
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-0134	Salla's team reviews the verification request (Saudi Arabia)
+CM-PAY-003	salla	core	SA-C-006/boundary/SA-S-0108	store verification required to activate this payment method
+CM-PAY-003	salla	core	SA-C-110/decides/SA-S-0056	the payments activation request reviewed during store verification (UAE)
+CM-PAY-003	salla	shows	SA-C-006/boundary/SA-S-0137	verification lets the store move on to activating e-payments (UAE)
+CM-PAY-003	salla	shows	SA-C-110/decides/SA-S-0054	requirement: store verification complete (UAE)
+CM-PAY-003	salla	shows	SA-C-006/boundary/SA-S-0132	Absher SMS to the store owner, shows in domain A's CM-TRU-002
+CM-PAY-004	shopify	core	SH-C-064/decides/SH-S-0389	Shopify Payments routes each payment to the processor most likely to authorize it
+CM-PAY-004	shopify	core	SH-C-064/decides/SH-S-0143	Payment Processor List: processors and terms per Designated Country
+CM-PAY-004	shopify	shows	SH-C-064/decides/SH-S-0084	Shopify decides which Payment Processor Accounts it facilitates
+CM-PAY-004	shopify	shows	SH-C-064/decides/SH-S-0085	Shopify may change the Payment Processors
+CM-PAY-004	shopify	shows	SH-C-064/decides/SH-S-0116	a substitute processor where one terminates
+CM-PAY-004	shopify	shows	SH-C-064/boundary/SH-S-0079	Shopify appointed agent to deliver instructions to the Payment Processors
+CM-PAY-004	shopify	shows	SH-C-064/boundary/SH-S-0144	the merchant bound by the Payment Processor Terms for its country
+CM-PAY-004	shopify	shows	SH-C-064/responsible/SH-S-0105	a Shopify Payments Account also registers Payment Processor Accounts
+CM-PAY-004	shopify	shows	SH-C-064/responsible/SH-S-0083	Shopify not a party to the Payment Processor Terms
+CM-PAY-004	shopify	outside	SH-C-064/where/SH-S-0082	processing and settlement carried out by Payment Processors and Financial Services Providers
+CM-PAY-004	shopify	outside	SH-C-064/where/SH-S-0086	the Payment Processor accepts, processes and settles transactions
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0152	Stripe, Inc., United States
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0153	PayPal, Inc., United States
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0154	Stripe Payments Canada, Ltd., Canada
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0155	Stripe Payments Mexico, Mexico
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0156	Adyen N.V., Austria row
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0157	PayPal (Europe), Austria row
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0158	Stripe Payments Europe, Austria row
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0159	Stripe Payments Europe, United Arab Emirates
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0160	AIHK Markets Limited, China (Mainland)
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0161	Stripe Japan, Japan
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0162	Stripe Payments Australia, Australia
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0163	Stripe Payments Singapore, Singapore
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0151	the Bridge entity, an affiliate of Stripe, all regions
+CM-PAY-004	shopify	outside	SH-C-064/responsible/SH-S-0383	Stripe is Shopify Payments' banking partner
+CM-PAY-004	shopify	shows	SH-C-062/decides/SH-S-0384	standalone Stripe not available where Shopify Payments is
+CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0093	the Payment Processor solely responsible for processing and settlement
+CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0118	funds in the Financial Services Provider's custody paid out on termination
+CM-PAY-004	shopify	outside	SH-C-065/decides/SH-S-0106	the Payment Processors may hold funds awaiting verification information
+CM-PAY-004	shopify	shows	SH-C-065/responsible/SH-S-0111	a lien and security interest for Shopify on the funds processed
+CM-PAY-004	shopify	own-service	SH-C-066/responsible/SH-S-0081	a Shopify affiliate acts as Payment Facilitator in certain countries
+CM-PAY-004	shopify	own-service	SH-C-066/responsible/SH-S-0129	Shopify registered as a Payment Facilitator, a supplier of the services
+CM-PAY-004	shopify	own-service	SH-C-066/responsible/SH-S-0139	Payment Facilitator entity Shopify Payments EU Limited, EU/EEA
+CM-PAY-004	shopify	own-service	SH-C-066/responsible/SH-S-0140	Payment Facilitator entity Shopify Payments UK Limited, United Kingdom
+CM-PAY-004	shopify	outside	SH-C-066/responsible/SH-S-0138	licensed services provided by the Acquirer in each jurisdiction
+CM-PAY-004	shopify	outside	SH-C-066/responsible/SH-S-0141	Acquirer Adyen N.V., EU/EEA and UK
+CM-PAY-004	shopify	shows	SH-C-066/responsible/SH-S-0130	Shopify acts as agent of the Acquirer
+CM-PAY-004	shopify	shows	SH-C-066/decides/SH-S-0137	Shopify may add, remove or replace an Acquirer
+CM-PAY-004	shopify	own-service	SH-C-067/responsible/SH-S-0125	Shopify Payment Activities Inc., registered Payment Service Provider, Canada
+CM-PAY-004	shopify	own-service	SH-C-067/responsible/SH-S-0009	Shopify Payment Activities Inc. the contracting party for regulated payment services, Canada
+CM-PAY-004	shopify	shows	SH-C-067/decides/SH-S-7264	Regulated Payment Services under the Retail Payment Activities Act, Canada
+CM-PAY-004	salla	shows	SA-C-114/responsible/SA-S-0081	payments settled and transferred under the payment services contract (UAE)
+CM-PAY-004	salla	shows	SA-C-114/responsible/SA-S-0088	payments settled and transferred under the payment services contract (Kuwait)
+CM-PAY-004	salla	shows	SA-I-2612	legal agreement عقد خدمات الدفع, its text not read
+CM-PAY-004	salla	shows	SA-C-110/where/SA-S-0049	Salla's service processes payments and completes operations with the banks, naming no processor or licence
+CM-PAY-005	shopify	core	SH-C-069/where/SH-S-7102	admin route payouts in section Payments
+CM-PAY-005	shopify	core	SH-C-069/where/SH-S-7103	route Shopify Payments activity report in section Finances
+CM-PAY-005	shopify	core	SH-C-069/decides/SH-S-5165	payout reconciliation report gated by VIEW_PAYOUTS
+CM-PAY-005	shopify	core	SH-I-0981	staff permission Finance > View Shopify Payments payouts
+CM-PAY-005	shopify	core	SH-C-069/boundary/SH-S-1069	access scope read_shopify_payments_payouts
+CM-PAY-005	shopify	core	SH-C-069/boundary/SH-S-6122	Admin API requirement read_shopify_payments_bank_accounts
+CM-PAY-005	shopify	core	SH-C-069/decides/SH-S-0342	the merchant chooses daily, weekly or monthly payouts
+CM-PAY-005	shopify	core	SH-C-069/decides/SH-S-0367	the payout bank account's requirements
+CM-PAY-005	shopify	shows	SH-C-069/decides/SH-S-0340	settlement times vary by country and risk level
+CM-PAY-005	shopify	shows	SH-C-069/decides/SH-S-0345	payouts paused when the payout destination changes
+CM-PAY-005	shopify	shows	SH-C-069/decides/SH-S-0365	Multi-Currency Payouts not on Basic, Grow or Shopify plans
+CM-PAY-005	shopify	shows	SH-C-069/decides/SH-S-0347	payouts to a Shopify Balance account up to 7 days earlier
+CM-PAY-005	shopify	outside	SH-C-069/decides/SH-S-0314	the bank's moving funds into the account is outside Shopify's control
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-2436	staff permission list_epayments, group المدفوعات
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-2063	plan line سجل المدفوعات الإلكترونية, plan سلة بلس
+CM-PAY-005	salla	core	SA-C-111/boundary/SA-S-0076	payments added to the e-payments balance, then eligible dues transferred to the bank account
+CM-PAY-005	salla	core	SA-C-111/boundary/SA-S-0050	the buyer's payment goes first to the e-payments balance
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0102	the transfer cycle sets when e-payments are transferred to the bank account
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0078	the merchant chooses its transfer cycle and saves it
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0101	a daily transfer not available on some plans
+CM-PAY-005	salla	core	SA-C-112/where/SA-S-0094	the bank account tied to store verification, used by Salla to transfer dues
+CM-PAY-005	salla	shows	SA-C-112/boundary/SA-S-0085	transfers sent to the bank account given in store verification (UAE)
+CM-PAY-005	salla	shows	SA-C-112/decides/SA-S-0098	account holder's name must match the verification data
+CM-PAY-005	salla	shows	SA-C-111/boundary/SA-S-0079	the e-payments balance differs from the store balance
+CM-PAY-005	salla	shows	SA-C-111/where/SA-S-1876	admin link Wallet, /payments/wallet, core in domain A's CM-PLN-006
+CM-PAY-005	salla	shows	SA-C-111/responsible/SA-S-0088	settled and transferred under the payment services contract (Kuwait)
+CM-PAY-006	shopify	core	SH-C-070/decides/SH-S-0348	a reserve: a temporary hold on transactions processed through Shopify Payments
+CM-PAY-006	shopify	core	SH-C-070/decides/SH-S-0351	each reserve has an expiry date and is reassessed
+CM-PAY-006	shopify	core	SH-C-070/decides/SH-S-0112	Shopify sets the terms of any Reserve Account
+CM-PAY-006	shopify	shows	SH-C-070/where/SH-S-6325	admin link Payouts, where Q1 places reserves
+CM-PAY-006	shopify	shows	SH-C-070/responsible/SH-S-0113	no interest and no right to direct the Reserve Account
+CM-PAY-006	shopify	shows	SH-C-070/boundary/SH-S-0349	reserve terms communicated by email
+CM-PAY-006	shopify	shows	SH-C-070/reason/SH-S-0350	reserves keep funds for disputes and refunds
+CM-PAY-006	shopify	shows	SH-C-068/decides/SH-S-0332	payout holds or reserves after a review
+CM-PAY-006	shopify	outside	SH-C-070/decides/SH-S-0355	the processor places a hold on the payout account on legal notice
+CM-PAY-006	shopify	outside	SH-C-070/decides/SH-S-0356	only the payment processor can remove that hold
+CM-PAY-006	shopify	outside	SH-C-070/decides/SH-S-0354	processors such as Stripe, PayPal or Adyen receive creditors' notices
+CM-PAY-007	shopify	core	SH-C-071/where/SH-S-7104	route Shopify Payments Fees in section Payments
+CM-PAY-007	shopify	core	SH-C-071/where/SH-S-7105	route Payment rates in the Shopify Payments settings
+CM-PAY-007	shopify	core	SH-C-071/decides/SH-S-7021	plan row Online standard card rates, per plan
+CM-PAY-007	shopify	core	SH-C-071/decides/SH-S-7022	plan row Online premium card rates, per plan
+CM-PAY-007	shopify	core	SH-C-071/decides/SH-S-7023	plan row Online international rates, per plan
+CM-PAY-007	shopify	core	SH-C-071/where/SH-S-6319	admin link to the Shopify Payments Terms of Service, which hold the fees
+CM-PAY-007	shopify	shows	SH-C-071/decides/SH-S-0378	standard rates plus a 1.25% premium with a third-party provider alongside
+CM-PAY-007	shopify	shows	SH-C-071/boundary/SH-S-0558	fee values in the Terms of Service
+CM-PAY-007	shopify	shows	SH-I-1330	billing charge category IC++ fees
+CM-PAY-007	shopify	outside	SH-C-071/responsible/SH-S-0110	Processing Fees collected by the Payment Processor on Shopify's behalf
+CM-PAY-007	salla	core	SA-C-113/decides/SA-S-1969	plan line حاسبة رسوم المدفوعات الإلكترونية, plan سلة بلس
+CM-PAY-007	salla	core	SA-C-113/decides/SA-S-2191	plan line رسوم مرنة لبوابة الدفع, plan سلة سبيشل
+CM-PAY-007	salla	core	SA-C-113/where/SA-S-5142	the wallet's e-payments summary: e-payment fees and shopping experience fees
+CM-PAY-007	salla	shows	SA-C-113/decides/SA-S-0082	e-payment fees calculated under the payment services contract (UAE)
+CM-PAY-007	salla	shows	SA-C-113/boundary/SA-S-0104	the shopping experience fee covers saved cards, Apple Pay quick buy, fraud protection
+CM-PAY-008	shopify	core	SH-C-045/decides/SH-S-7152	staff permission Set payment terms, category ORDERS
+CM-PAY-008	shopify	core	SH-C-045/decides/SH-S-7153	staff permission Set payment terms, category DRAFT_ORDERS
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6085	Admin API requirement read_payment_terms
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6268	Admin API requirement write_payment_terms, with orders or draft orders access
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6082	webhook topic payment_terms/create
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6084	webhook topic payment_terms/update
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6083	webhook topic payment_terms/delete
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6081	webhook topic payment_schedules/due
+CM-PAY-008	shopify	shows	SH-C-045/where/SH-S-0589	Payment Customization can set payment terms
+CM-PAY-008	shopify	shows	SH-I-0004	API resource group B2B, where Q1 placed the concern
+CM-PAY-005	shopify	core	SH-C-070/where/SH-S-6325	admin link Payouts, payments/payouts
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0326	at least 18 years old to set up an account
+CM-PAY-005	shopify	shows	SH-C-069/decides/SH-S-0339	a minimum payout amount in certain countries
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0077	transfers need dues of at least 100 SAR
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0080	UAE: transfers every Thursday above 250 AED
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0086	Kuwait: transfers the next business day, minimum 1 KWD
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0071	plan Plus: weekly deposit
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0072	plan Pro: deposit every 48 hours
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0073	plan Special: daily deposit
+CM-PAY-005	salla	shows	SA-C-111/decides/SA-S-0087	Kuwait: no minimum for a transfer
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-6269	Admin API requirement write_payment_terms, with orders or draft orders access
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-1041	access scope write_payment_terms
+CM-PAY-008	shopify	core	SH-C-045/boundary/SH-S-1304	webhook topic value payment_schedules/due
+CM-PAY-001	shopify	core	SH-C-062/decides/SH-S-0374	the same sentence, under decides
+CM-PAY-004	shopify	outside	SH-C-062/reason/SH-S-0383	the same sentence, under SH-C-062's reason
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-5251	admin route payments
+CM-PAY-002	shopify	core	SH-C-063/where/SH-S-1590	admin section Payments
+CM-PAY-002	shopify	core	SH-C-063/boundary/SH-S-0788	navigation label Shopify Payments
+CM-PAY-002	shopify	core	SH-C-063/boundary/SH-S-6119	Admin API requirement read_shopify_payments or read_shopify_payments_accounts
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-5092	route shopify-payments-accounts gated by MANAGE_PAYMENTS_SETTINGS, core in domains A and E
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-5080	route payments:settings:setup gated by SHOPIFY_PAYMENTS, core in domain A
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-5250	route worldfirst-setup behind a beta
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0088	the business must be in its Designated Country
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0325	the same sentence, under decides
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0328	the prohibited list varies by region
+CM-PAY-002	shopify	shows	SH-C-063/decides/SH-S-0124	Part II's regional terms by Designated Country
+CM-PAY-002	shopify	core	SH-C-063/reason/SH-S-0078	the same sentence, under reason
+CM-PAY-003	shopify	shows	SH-C-063/decides/SH-S-6120	read_shopify_payments or read_financial_kyc_information
+CM-PAY-005	shopify	core	SH-C-063/boundary/SH-S-6121	Admin API requirement read_shopify_payments_payouts among others
+CM-PAY-005	shopify	core	SH-C-069/boundary/SH-S-6121	the same requirement, under SH-C-069
+CM-PAY-004	shopify	shows	SH-C-063/boundary/SH-S-0144	the same sentence, under SH-C-063
+CM-PAY-004	shopify	outside	SH-C-064/where/SH-S-0316	credit card processing done by the payment provider
+CM-PAY-004	shopify	shows	SH-C-064/where/SH-S-0452	Shopify's centralized payment service tracks attempts with idempotency keys
+CM-PAY-004	shopify	shows	SH-C-064/boundary/SH-S-0453	a single request sent to Shopify's financial partners
+CM-PAY-004	shopify	shows	SH-C-064/boundary/SH-S-0451	circuit breakers per merchant country for card transactions
+CM-PAY-004	shopify	shows	SH-C-064/decides/SH-S-0117	termination on request of a Payment Network or Payment Processor
+CM-PAY-004	shopify	shows	SH-C-064/responsible/SH-S-0120	Shopify indemnifies the Payment Processors for some liabilities
+CM-PAY-004	shopify	shows	SH-C-064/boundary/SH-S-0105	the same sentence, under boundary
+CM-PAY-004	shopify	shows	SH-C-064/reason/SH-S-0577	processor routing improves authorization rates
+CM-PAY-004	shopify	shows	SH-C-065/where/SH-S-0105	the same sentence, under SH-C-065
+CM-PAY-004	shopify	outside	SH-C-065/where/SH-S-0118	the same sentence, under where
+CM-PAY-004	shopify	outside	SH-C-065/decides/SH-S-0123	the processor or Financial Services Provider may hold funds under legal process
+CM-PAY-004	shopify	own-service	SH-C-065/responsible/SH-S-0080	the Shopify entities, suppliers of the Payments Services, not licensed as banks
+CM-PAY-005	shopify	core	SH-C-065/boundary/SH-S-6122	the same requirement, under SH-C-065
+CM-PAY-005	shopify	core	SH-C-065/boundary/SH-S-1070	access scope read_shopify_payments_bank_accounts
+CM-PAY-006	shopify	outside	SH-C-065/decides/SH-S-0355	the same sentence, under SH-C-065
+CM-PAY-006	shopify	outside	SH-C-065/decides/SH-S-0356	the same sentence, under SH-C-065
+CM-PAY-006	shopify	core	SH-C-065/decides/SH-S-0112	the same sentence, under SH-C-065
+CM-PAY-006	shopify	shows	SH-C-065/decides/SH-S-0332	the same sentence, under SH-C-065
+CM-PAY-004	shopify	shows	SH-C-066/decides/SH-S-0136	assignment to a different Acquirer
+CM-PAY-004	shopify	shows	SH-C-066/decides/SH-S-0135	termination if the Payfac is de-registered or the Acquirer loses its licence
+CM-PAY-004	shopify	own-service	SH-C-066/boundary/SH-S-0081	the same sentence, under boundary
+CM-PAY-003	shopify	shows	SH-C-068/boundary/SH-S-5990	webhook topic finance_app_staff_member/delete, scope read_financial_kyc_information
+CM-PAY-003	shopify	shows	SH-C-068/boundary/SH-S-5991	webhook topic finance_app_staff_member/grant
+CM-PAY-003	shopify	shows	SH-C-068/boundary/SH-S-5992	webhook topic finance_app_staff_member/revoke
+CM-PAY-003	shopify	shows	SH-C-068/boundary/SH-S-5993	webhook topic finance_app_staff_member/update
+CM-PAY-003	shopify	outside	SH-C-068/decides/SH-S-0106	the Payment Processors may hold funds awaiting the information requested
+CM-PAY-003	shopify	outside	SH-C-068/responsible/SH-S-0099	each Payment Processor processes data as controller, including for KYC
+CM-PAY-003	shopify	shows	SH-C-068/responsible/SH-S-0180	government ID used for know-your-customer and anti-money-laundering laws
+CM-PAY-003	shopify	shows	SH-C-068/reason/SH-S-0334	merchants who harm customers make others look less trustworthy to banks
+CM-PAY-005	shopify	shows	SH-C-069/where/SH-S-6324	admin link Payments, settings/payments
+CM-PAY-005	shopify	shows	SH-C-069/where/SH-S-0788	navigation label Shopify Payments
+CM-PAY-005	shopify	outside	SH-C-069/responsible/SH-S-0118	funds in the Financial Services Provider's custody paid out
+CM-PAY-005	shopify	shows	SH-C-069/reason/SH-S-0578	the pause protects the account while Shopify verifies the new account
+CM-PAY-005	shopify	shows	SH-C-069/reason/SH-S-0341	funds may take 1-3 more days to show, out of Shopify's control
+CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0565	for Managed Markets orders, the money held in a Global-e account
+CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0566	Global-e holds the funds to remit costs to authorities
