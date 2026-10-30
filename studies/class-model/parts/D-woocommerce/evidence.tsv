@@ -1,0 +1,94 @@
+cap_id	platform	supports	key	why
+CM-CUS-001	woocommerce	core	WC-C-073/where/WC-S-0042	admin page WooCommerce > Customers
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0088	REST resource wc/v3 > customers
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0133	REST resource wc/v4 > customers
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0665	the customer API creates, views, updates and deletes customers
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0258	webhook topic customer.created
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0259	webhook topic customer.updated
+CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0260	webhook topic customer.deleted
+CM-CUS-001	woocommerce	core	WC-C-073/where/WC-S-0883	WooCommerce adds the user role Customer
+CM-CUS-001	woocommerce	core	WC-C-073/decides/WC-S-5419	add_role customer
+CM-CUS-003	woocommerce	core	WC-C-073/boundary/WC-S-0665	the customer API acts on a batch of customers
+CM-CUS-007	woocommerce	shows	WC-C-113/decides/WC-S-5500	customers' subscriber status set in MailPoet > Settings > WooCommerce
+CM-CUS-007	woocommerce	shows	WC-C-113/boundary/WC-S-5501	MailPoet's list of all WooCommerce customers
+CM-CUS-007	woocommerce	shows	WC-C-113/boundary/WC-S-5502	action fired before a subscription is stored
+CM-CUS-008	woocommerce	shows	WC-C-047/where/WC-S-0919	customers' billing and shipping addresses at checkout
+CM-CUS-009	woocommerce	core	WC-C-047/decides/WC-S-5379	setting Address autocomplete: Enable predictive address search
+CM-CUS-009	woocommerce	core	WC-C-047/decides/WC-S-5380	setting Preferred address autocomplete provider
+CM-CUS-009	woocommerce	extension-point	WC-C-047/where/WC-S-0919	third-party services provide address suggestions
+CM-CUS-009	woocommerce	extension-point	WC-C-047/boundary/WC-S-0445	provider interface WC_Address_Provider
+CM-CUS-010	woocommerce	core	WC-C-073/where/WC-S-0006	settings tab Accounts & Privacy
+CM-CUS-010	woocommerce	core	WC-C-073/decides/WC-S-0881	settings control customer account creation and guest checkout
+CM-CUS-010	woocommerce	core	WC-C-073/decides/WC-S-0928	setting Enable guest checkout
+CM-CUS-010	woocommerce	core	WC-C-073/boundary/WC-S-0146	REST resource wc/v4 > settings-account
+CM-CUS-010	woocommerce	core	WC-C-073/where/WC-S-0306	email New account
+CM-CUS-010	woocommerce	core	WC-C-073/where/WC-S-0305	email Reset password
+CM-CUS-010	woocommerce	extension-point	WC-C-106/where/WC-S-0723	Marketplace category Customer service > Customer Accounts
+CM-B2B-001	woocommerce	extension-point	WC-C-103/where/WC-S-0730	Marketplace category Merchandising > B2B
+CM-B2B-001	woocommerce	shows	WC-C-103/decides/WC-S-5471	Purchase Order Gateway accepts purchase orders; disable it in its settings
+CM-B2B-001	woocommerce	shows	WC-C-103/boundary/WC-S-5473	purchase order number stored on the order
+CM-MKT-001	woocommerce	extension-point	WC-C-105/where/WC-S-0718	Marketplace category Conversion > Promotions
+CM-MKT-002	woocommerce	core	WC-C-074/where/WC-S-0048	admin page WooCommerce > Coupons
+CM-MKT-002	woocommerce	core	WC-C-074/where/WC-S-0062	admin menu Marketing > Coupons
+CM-MKT-002	woocommerce	core	WC-C-074/decides/WC-S-5409	setting woocommerce_enable_coupons, default yes
+CM-MKT-002	woocommerce	core	WC-C-074/decides/WC-S-5410	post type shop_coupon with its capability type
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0086	REST resource wc/v3 > coupons
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0664	the coupons API for coupon codes
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0151	Store API route cart-apply-coupon
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0152	Store API route cart-coupons
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0153	Store API route cart-coupons-by-code
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0157	Store API route cart-remove-coupon
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0254	webhook topic coupon.created
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0255	webhook topic coupon.updated
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0256	webhook topic coupon.deleted
+CM-MKT-002	woocommerce	core	WC-C-074/boundary/WC-S-0257	webhook topic coupon.restored
+CM-MKT-005	woocommerce	core	WC-C-084/where/WC-S-0060	admin section Marketing
+CM-MKT-005	woocommerce	core	WC-C-084/where/WC-S-0061	admin page Marketing > Overview
+CM-MKT-005	woocommerce	core	WC-C-084/decides/WC-S-5425	page woocommerce-marketing, capability manage_woocommerce
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0186	API wc-admin > marketing
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0187	API marketing/overview
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0188	API marketing/recommendations
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0189	API marketing/channels
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0190	API marketing/campaigns
+CM-MKT-005	woocommerce	core	WC-C-084/boundary/WC-S-0191	API marketing/campaign-types
+CM-MKT-005	woocommerce	shows	WC-C-084/where/WC-S-0424	onboarding task Grow your business
+CM-MKT-005	woocommerce	extension-point	WC-C-110/where/WC-S-0705	Marketplace category Extensions > Marketing
+CM-MKT-006	woocommerce	extension-point	WC-C-110/where/WC-S-0756	Marketplace category Marketing > Automation
+CM-MKT-006	woocommerce	own-service	WC-C-113/where/WC-S-0944	MailPoet – Newsletters, Email Marketing, and Automation
+CM-MKT-006	woocommerce	own-service	WC-C-113/responsible/WC-S-0458	Woo services include MailPoet
+CM-MKT-007	woocommerce	own-service	WC-C-113/where/WC-S-0944	MailPoet – Newsletters, Email Marketing, and Automation
+CM-MKT-007	woocommerce	own-service	WC-C-113/responsible/WC-S-0458	Woo services include MailPoet
+CM-MKT-007	woocommerce	own-service	WC-C-113/responsible/WC-S-0459	WooCommerce, Inc. for Woo services outside the Designated Countries
+CM-MKT-007	woocommerce	shows	WC-C-113/decides/WC-S-5499	free up to 500 subscribers without an account or plan
+CM-MKT-007	woocommerce	shows	WC-C-113/where/WC-S-5498	MailPoet's sending service collects data on its servers
+CM-MKT-007	woocommerce	shows	WC-C-113/reason/WC-S-5503	send with MailPoet's Sending Service or a third party provider
+CM-MKT-007	woocommerce	extension-point	WC-C-110/where/WC-S-0761	Marketplace category Marketing > Email
+CM-MKT-008	woocommerce	core	WC-C-085/decides/WC-S-0935	feature order_attribution tracks and credits channels and campaigns
+CM-MKT-008	woocommerce	core	WC-C-085/where/WC-S-5426	meta box Order attribution on the order edit page
+CM-MKT-008	woocommerce	core	WC-C-085/boundary/WC-S-5428	action woocommerce_order_save_attribution_data
+CM-MKT-008	woocommerce	core	WC-C-085/decides/WC-S-5429	filter wc_order_attribution_allow_tracking
+CM-MKT-008	woocommerce	shows	WC-C-085/reason/WC-S-0890	attributes orders to traffic sources
+CM-MKT-008	woocommerce	shows	WC-C-085/where/WC-S-5427	cookies expire with each session
+CM-MKT-010	woocommerce	extension-point	WC-C-110/where/WC-S-0755	Marketplace category Marketing > Advertising and promotions
+CM-MKT-010	woocommerce	shows	WC-C-114/where/WC-S-0947	WooAds accesses ad platform data about the merchant's campaigns
+CM-MKT-010	woocommerce	shows	WC-C-114/boundary/WC-S-0949	data synced to WooAds by a Jetpack module
+CM-MKT-010	woocommerce	shows	WC-C-114/responsible/WC-S-0948	WooAds data not shared with third parties
+CM-MKT-016	woocommerce	core	WC-C-069/where/WC-S-0047	admin item Stock Notifications under WooCommerce > Notifications
+CM-MKT-016	woocommerce	core	WC-C-069/boundary/WC-S-5405	email Back in stock notification
+CM-MKT-016	woocommerce	core	WC-C-069/boundary/WC-S-5404	action on sign-up rate limit exceeded
+CM-MKT-016	woocommerce	shows	WC-C-069/decides/WC-S-5403	feature flag experimental, off by default
+CM-MKT-016	woocommerce	shows	WC-C-105/boundary/WC-S-5478	extension queues back-in-stock emails on restock
+CM-MKT-016	woocommerce	shows	WC-C-105/decides/WC-S-5476	no back-in-stock sign-up for hidden out-of-stock items
+CM-MKT-021	woocommerce	extension-point	WC-C-105/where/WC-S-0722	Marketplace category Conversion > Upsells and cross-sells
+CM-MKT-022	woocommerce	extension-point	WC-C-105/where/WC-S-0719	Marketplace category Conversion > Recovering orders
+CM-LOY-004	woocommerce	extension-point	WC-C-105/where/WC-S-0720	Marketplace category Conversion > Rewards and loyalty
+CM-LOY-004	woocommerce	shows	WC-C-105/boundary/WC-S-5479	Points & Rewards settings page of the extension
+CM-LOY-005	woocommerce	core	WC-C-097/where/WC-S-5455	ShopperListsController registers the shopper lists
+CM-LOY-005	woocommerce	core	WC-C-097/boundary/WC-S-0179	Store API route shopper-lists
+CM-LOY-005	woocommerce	core	WC-C-097/boundary/WC-S-0180	Store API route shopper-lists by slug
+CM-LOY-005	woocommerce	core	WC-C-097/boundary/WC-S-0181	Store API route shopper-list items
+CM-LOY-005	woocommerce	core	WC-C-097/boundary/WC-S-0182	Store API route shopper-list item by key
+CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5456	supported lists saved-for-later and wishlist
+CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5457	feature product_wishlist experimental, off by default
+CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5458	feature cart_save_for_later experimental, off by default
+CM-LOY-006	woocommerce	extension-point	WC-C-104/where/WC-S-0733	Marketplace category Merchandising > Gifts

@@ -1,0 +1,47 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-B2B-001	woocommerce	statements	extension-point	Extensions > Merchandising > B2B	WC-C-103/boundary/WC-S-5473=WooCommerce Purchase Order Gateway (version 1.5.12) | WC-C-103/decides/WC-S-5471=WooCommerce Purchase Order Gateway	WC-C-103/responsible:stated only in general terms;WC-C-103/reason:searched, not found	
+CM-B2B-002	woocommerce	none-held					
+CM-B2B-003	woocommerce	none-held					
+CM-CUS-001	woocommerce	statements	core	WooCommerce > Customers | WooCommerce user roles		WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found	general
+CM-CUS-002	woocommerce	none-held					
+CM-CUS-003	woocommerce	statements	core			WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found	general
+CM-CUS-004	woocommerce	none-held					
+CM-CUS-005	woocommerce	none-held					
+CM-CUS-006	woocommerce	none-held					
+CM-CUS-007	woocommerce	statements	not-stated				
+CM-CUS-008	woocommerce	statements	not-stated	Overview		WC-C-047/responsible:stated only in general terms;WC-C-047/reason:searched, not found	
+CM-CUS-009	woocommerce	statements	core;extension-point	Overview		WC-C-047/responsible:stated only in general terms;WC-C-047/reason:searched, not found	general
+CM-CUS-010	woocommerce	statements	core;extension-point	Accounts & Privacy | Extensions > Customer service > Customer Accounts | New account (WC_Email_Customer_New_Account) | Reset password (WC_Email_Customer_Reset_Password)		WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found;WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found	general
+CM-CUS-011	woocommerce	none-held					
+CM-CUS-012	woocommerce	none-held					
+CM-CUS-013	woocommerce	none-held					
+CM-CUS-014	woocommerce	none-held					
+CM-LOY-001	woocommerce	none-held					
+CM-LOY-002	woocommerce	none-held					
+CM-LOY-003	woocommerce	none-held					
+CM-LOY-004	woocommerce	statements	extension-point	Extensions > Conversion > Rewards and loyalty	WC-C-105/boundary/WC-S-5479=WooCommerce Points and Rewards	WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
+CM-LOY-005	woocommerce	statements	core	ShopperListsController		WC-C-097/responsible:stated only in general terms;WC-C-097/reason:searched, not found	general
+CM-LOY-006	woocommerce	statements	extension-point	Extensions > Merchandising > Gifts		WC-C-104/decides:stated only in general terms;WC-C-104/responsible:stated only in general terms;WC-C-104/reason:searched, not found	
+CM-LOY-007	woocommerce	none-held					
+CM-MKT-001	woocommerce	statements	extension-point	Extensions > Conversion > Promotions		WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
+CM-MKT-002	woocommerce	statements	core	Marketing > Coupons | WooCommerce > Coupons		WC-C-074/responsible:stated only in general terms;WC-C-074/reason:searched, not found	general
+CM-MKT-003	woocommerce	none-held					
+CM-MKT-004	woocommerce	none-held					
+CM-MKT-005	woocommerce	statements	core;extension-point	Extensions > Marketing | Grow your business | Marketing | Marketing > Overview		WC-C-084/responsible:stated only in general terms;WC-C-084/reason:searched, not found;WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	general
+CM-MKT-006	woocommerce	statements	extension-point;own-service	Extensions > Marketing > Automation | Marketing		WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	general
+CM-MKT-007	woocommerce	statements	extension-point;own-service	Extensions > Marketing > Email | Marketing | What data does our sending service collect?	WC-C-113/responsible/WC-S-0459=residents outside the Designated Countries | WC-C-113/where/WC-S-5498=MailPoet accounts created to send emails or to purchase a plan	WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	general
+CM-MKT-008	woocommerce	statements	core	Order attribution (meta box) | Principles of Order Attribution Tracking		WC-C-085/responsible:stated only in general terms	general
+CM-MKT-009	woocommerce	none-held					
+CM-MKT-010	woocommerce	statements	extension-point	Extensions > Marketing > Advertising and promotions | Information and data we collect from your store		WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found;WC-C-114/reason:searched, not found	
+CM-MKT-011	woocommerce	none-held					
+CM-MKT-012	woocommerce	none-held					
+CM-MKT-013	woocommerce	none-held					
+CM-MKT-014	woocommerce	none-held					
+CM-MKT-015	woocommerce	none-held					
+CM-MKT-016	woocommerce	statements	core	WooCommerce > Notifications	WC-C-105/boundary/WC-S-5478=Back In Stock Notifications | WC-C-105/decides/WC-S-5476=Back In Stock Notifications	WC-C-069/responsible:stated only in general terms;WC-C-069/reason:searched, not found;WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	general
+CM-MKT-017	woocommerce	none-held					
+CM-MKT-018	woocommerce	none-held					
+CM-MKT-019	woocommerce	none-held					
+CM-MKT-020	woocommerce	none-held					
+CM-MKT-021	woocommerce	statements	extension-point	Extensions > Conversion > Upsells and cross-sells		WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
+CM-MKT-022	woocommerce	statements	extension-point	Extensions > Conversion > Recovering orders		WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
