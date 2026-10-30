@@ -274,3 +274,9 @@ The checker prints no problem on them. Their out-of-date readings are listed abo
 ### Renames proposed
 
 None. CM-PAY-021's name could add WooCommerce's term In-Person Payments, and CM-PAY-022's payment tokens.
+
+### The coordinator, after batch 3
+
+- **The eleven readings above are updated** as the list asks, each addition marked "(the coordinator, after batch 3)". Every statement it names is cited in its cell with the support the reading gives it.
+- **Batch 4 is split in two.** Batch 4 maps TAX now, onto C's anchor, which is complete for TAX. Batch 5 maps SHP and RET once the anchor's last two batches have cut them, rules U-032 (WC-C-058 against SA-C-146, which the anchor's batch 11 lands) and checks the whole part.
+- **WC-S-0559** ("WooCommerce has partnered with Stripe to offer ... access"): it names WooCommerce as the partner, not Automattic as the maker or provider, so batch 2's `outside` stands (C5).
