@@ -1,1 +1,136 @@
 cap_id	platform	supports	key	why
+CM-ACC-001	shopify	core	SH-C-001/where/SH-S-2520	"Your store" on Shopify's own account destinations page
+CM-ACC-001	shopify	core	SH-C-001/where/SH-S-7184	Shopify's own operation listing the account's active stores (destinations)
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0019	the person signing up by opening an Account is the contracting party, the Store Owner
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0228	the Store Owner is responsible for the Account
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0238	one Store Owner per Shopify Store
+CM-ACC-001	shopify	shows	SH-C-001/decides/SH-S-0017	what Account registration requires of the merchant
+CM-ACC-001	shopify	shows	SH-C-001/boundary/SH-S-0229	signing up for a Shopify Account binds the merchant to the Terms
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1677	the settings link Your profile (/profile)
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1762	the profile sub-page Edit profile
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1763	the profile sub-page Registered devices
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1764	the profile sub-page Quick access
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-3534	Salla's dashboard app for sign-in, on /auth
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1061	Salla's own API folder Merchant
+CM-ACC-001	salla	core	SA-C-001/boundary/SA-S-1622	Salla's own webhook topic store.owner.changed, تغيير مالك المتجر
+CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2409	the staff permission account_setting_management
+CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-2626	account_setting_management in the permissions a partner can request: shows an interface for apps (S7)
+CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2086	سلة بلس plan line: saving recently opened accounts at sign-in
+CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-3182	flag store-two-factor-authentication, not released (C6)
+CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-3365	flag biometric-verification, not released (C6)
+CM-ACC-002	shopify	shows	SH-C-002/decides/SH-S-0001	the merchant contracts with the Shopify Contracting Party chosen by the store's billing address
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0002	Shopify Inc. for the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0003	Shopify Technology (USA) Inc. for the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0005	Shopify Commerce Singapore Pte. Ltd for Asia Pacific
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0007	Shopify International Limited for all other jurisdictions
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0241	help: Shopify International Limited contracts with merchants in EMEA and LATAM
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0242	help: Shopify Inc. contracts with merchants in the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0243	help: Shopify Commerce Singapore Pte. Ltd. contracts with merchants in APAC
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0009	Shopify Payment Activities Inc. for regulated payment services in Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0008	Shopify Inc. may act as billing agent for another Contracting Party
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0010	the Terms are governed by the laws of Ontario and of Canada
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0015	app-store terms: Salla owned by شركة تطبيق سلة لتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0016	partner terms: owned by شركة تطبيق سلّة لتقنية المعلومات, registered in Saudi Arabia
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0017	an agreement's definition: منصة سلة means شركة تطبيق سلة لتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0018	theme-store terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0019	affiliate terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-5121	migration-service terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-5001	campaign terms' definition of سلة: شركة منصة سلة للاتصالات وتقنية المعلومات, Saudi Arabia
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0011	footer: rights reserved to شركة سلة القابضة
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0001	Salla is a Saudi SaaS commerce platform
+CM-ACC-003	shopify	core	SH-C-003/where/SH-S-1481	Shopify's own settings page Organization
+CM-ACC-003	shopify	core	SH-C-003/where/SH-S-1589	the admin section OrganizationSettings
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5228	creating a store from Organization settings: STORE_CREATION and MANAGE_STORES
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5242	Organization settings' eligibility DIRECT_ACCESS
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5232	Organization settings' test drive, under TEST_DRIVE and MANAGE_TEST_DRIVE
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5292	store feature hasOrgSettings true, its stores as scope
+CM-ACC-003	shopify	shows	SH-C-003/decides/SH-S-5291	store feature hasOrgSettings false on other stores
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-7073	plan row Free expansion stores: Up to 9 on Plus
+CM-ACC-003	shopify	shows	SH-C-003/decides/SH-S-0245	the organization administrator role manages all organization settings (a partner organization's role list)
+CM-ACC-003	shopify	shows	SH-C-001/responsible/SH-S-0238	A Store Owner may have multiple Shopify Stores
+CM-ACC-003	salla	core	SA-C-003/where/SA-S-1680	the settings link Manage stores (/stores)
+CM-ACC-003	salla	core	SA-C-003/where/SA-S-3533	Salla's dashboard app serving /manage/stores
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-2088	سلة بلس plan line: managing the list of linked stores
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-3085	released flag multi-stores on the answering store
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-3450	released flag store-management on the answering store
+CM-ACC-003	salla	shows	SA-C-003/boundary/SA-S-5150	all accounts merged under one email, sign-in to the last store visited
+CM-ACC-003	salla	shows	SA-C-003/reason/SA-S-5151	the stated reason: moving between stores scatters focus
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7082	route Business entities in OrganizationSettings
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7080	route Switch business entity in Settings
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-6306	help names Settings > General
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-6307	help names Settings > Organization
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-0249	business entities managed and added from Organization
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5229	creating business details: ADD_LEGAL_ENTITIES and CENTRAL_LEGAL_ENTITIES
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5230	editing business details: VIEW_LEGAL_ENTITIES
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5231	the business entities route's eligibility
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7081	switching entity: staff permission SELECT_EXISTING_LEGAL_ENTITY
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5812	store feature centralLegalEntitiesEnabled true, its stores as scope
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7179	Shopify's own operation LegalEntityTypesByCountryCode
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7178	Shopify's own operation ValidationSchemaByContextQuery
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7189	entity type Individual for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7190	entity type Company for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7191	entity type Non-Profit for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7186	registered business name required for a YE company
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7187	government identifiers required for a YE company
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-0250	financial services deactivated before changing entity
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-0251	billing country must match an active entity's
+CM-ACC-004	shopify	shows	SH-C-004/responsible/SH-S-0248	definition: the registered business or individual the store operates as
+CM-ACC-004	shopify	shows	SH-C-004/responsible/SH-S-7192	the organization's LegalEntity record, type not set, YE
+CM-ACC-004	shopify	shows	SH-C-004/boundary/SH-S-0252	a market added for each entity
+CM-ACC-004	salla	core	SA-C-006/decides/SA-S-0142	Salla's own store set-up asks for the store's legal entity (UAE article)
+CM-ACC-004	salla	core	SA-C-006/decides/SA-S-0133	Salla's verification step: choose the entity type, فرد (Saudi article)
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-7083	route Business Entity Payments under Payments
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-5247	the route's eligibility: MANAGE_PAYMENTS_SETTINGS and a beta
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6309	help names Settings > Payments
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6310	help names Markets
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6311	help names Settings > Organization
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0255	available only with Shopify Payments
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0253	only for organizations on Plus and Enterprise
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0257	markets choose which entity processes a region's transactions
+CM-ACC-005	shopify	core	SH-C-005/boundary/SH-S-0258	each entity has its own Shopify Payments account, payout currency and bank account
+CM-ACC-005	shopify	shows	SH-C-005/reason/SH-S-0254	stated reason: several legal entities in one country or abroad
+CM-ACC-005	shopify	shows	SH-C-005/reason/SH-S-0256	stated benefit: domestic card processing per entity
+CM-ACC-006	shopify	core	SH-C-013/where/SH-S-1486	Shopify's own settings page General
+CM-ACC-006	shopify	core	SH-C-013/decides/SH-S-5131	settings:general gated by the staff permission PREFERENCES
+CM-ACC-006	shopify	core	SH-C-013/where/SH-S-0789	Shopify's own API group Store properties
+CM-ACC-006	shopify	core	SH-C-013/boundary/SH-S-1357	Shopify's own webhook topic shop/update
+CM-ACC-006	shopify	shows	SH-C-013/responsible/SH-S-0014	the merchant provides public contact information and policies
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1678	the settings link General (/general)
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1722	the General sub-page Store activity
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-3586	Salla's dashboard app serving /settings
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1054	Salla's own API folder Settings
+CM-ACC-006	salla	core	SA-C-002/boundary/SA-S-1545	access scope settings, Basic Information / البيانات الأساسية
+CM-ACC-006	salla	core	SA-C-002/boundary/SA-S-1565	access scope store-settings, Settings / الاعدادات
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2384	staff permission store_setting_browse
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2385	staff permission store_setting_edit_basic_info
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2386	staff permission store_setting_edit_setting
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2387	staff permission store_setting_edit_social_media_account
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2418	staff permission made_in_ksa_management
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2601	store_setting_browse in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2602	store_setting_edit_basic_info in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2603	store_setting_edit_setting in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2604	store_setting_edit_social_media_account in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2635	made_in_ksa_management in the permissions a partner can request (S7)
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-3353	released flag store-status on the answering store
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-3370	released flag made-in-ksa on the answering store
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2087	سلة بلس plan line: search in the store's settings
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2092	سلة بلس plan line: clearing the cache
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2097	سلة بلس plan line: customising the store's options
+CM-ACC-007	salla	core	SA-C-002/where/SA-S-1726	route general/maintenance-mode under General
+CM-ACC-007	salla	core	SA-C-002/decides/SA-S-2084	سلة بلس plan line: turning on the store's maintenance mode
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0298	Shopify can't support business involving certain regions
+CM-ACC-008	shopify	shows	SH-C-174/reason/SH-S-0289	definition of Unsupported Region, with its reasons
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0290	no transactions involving these regions
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0304	no Shopify account for those within unsupported regions
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0305	no access to storefronts and accounts there
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0299	list: Cuba
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0300	list: Iran
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0301	list: North Korea
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0302	list: Syria
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0303	list: Crimea, Donetsk and Luhansk
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-0003	primary markets: Saudi Arabia, then the GCC
+CM-ACC-008	salla	shows	SA-C-167/reason/SA-S-0004	GCC expansion is the next priority
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-0141	the store's country chosen at registration decides its documents
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-3101	verification workflow released for AE, SA, KW, QA, OM, BH
+CM-ACC-008	salla	shows	SA-I-1206	footer market السعودية
+CM-ACC-008	salla	shows	SA-I-1207	footer market الامارات
