@@ -768,3 +768,12 @@ CM-B2B-003	shopify	core	SH-C-044/decides/SH-S-7008	plan row Shopify B2B, catalog
 CM-B2B-003	shopify	core	SH-C-037/decides/SH-S-5534	entitlement markets.b2b.catalogs, limit 75000 on a Custom plan store
 CM-B2B-003	salla	shows	SA-C-098/boundary/SA-S-5047	set special prices for retail merchants in the wholesale market
 CM-NTF-002	salla	shows	SA-C-040/decides/SA-S-2492	order_notification (تلقي إشعارات بالطلبات الجديدة) in the permissions a partner can request (S7)
+CM-B2B-003	salla	core	S02-SA-155	a product hidden or shown in a market, with multiple markets on (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	salla	core	S02-SA-078	product prices set by hand for each market, on the product's page (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	salla	core	S02-SA-165	per-market product visibility (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	salla	core	S02-SA-281	per-market product lists (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	salla	core	S02-SA-082	per-market products (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	salla	core	S02-SA-024	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-CUS-009	shopify	core	S02-SH-240	Shopify's default address autocompletion, in the countries it lists (the coordinator, from the subjects' points: P-7 S02-VP-70 (the coordinator's own conflict))
+CM-NTF-004	shopify	core	S02-SH-871	the store's SMS Sender ID, from the store name in its contact details (the coordinator, from the subjects' points: P-8 S02-VP-82)
+CM-NTF-004	shopify	core	S02-SH-872	how the SMS Sender ID shows by country (the coordinator, from the subjects' points: P-8 S02-VP-82)

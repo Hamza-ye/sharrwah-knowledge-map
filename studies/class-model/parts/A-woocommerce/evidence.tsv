@@ -168,3 +168,17 @@ CM-TRU-021	woocommerce	own-service	WC-C-117/boundary/WC-S-0955	orders' data sync
 CM-TRU-021	woocommerce	own-service	WC-C-117/responsible/WC-S-0962	maker: Automattic provides services through Jetpack
 CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0961	Jetpack's JSON API module can expose order details with PII
 CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0960	Stripe gives Automattic access to payment data, not stored
+CM-ONB-001	woocommerce	core	S02-WC-294	the onboarding's own question 'Where is your store located?' (core profiler) (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)
+CM-ONB-001	woocommerce	core	S02-WC-322	WooCommerce Setup: confirm your store location (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)
+CM-ONB-001	woocommerce	core	S02-WC-295	the profiler checks the chosen country against the visitor's location (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)
+CM-ONB-001	woocommerce	core	S02-WC-530	the geolocation notice as shown: located in Yemen, a store created in the United States (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)
+CM-STF-002	woocommerce	extension-point	S02-WC-463	an extension or plugin adjusts what each role can do, without editing code (the coordinator, from the subjects' points: P-7 S02-VP-72)
+CM-STF-002	woocommerce	extension-point	S02-WC-464	the plugins suggested for roles and capabilities (the coordinator, from the subjects' points: P-7 S02-VP-72)
+CM-TRU-006	woocommerce	extension-point	S02-WC-415	another extension provides the consent banner, through WP Consent API (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)
+CM-TRU-006	woocommerce	shows	S02-WC-448	WooCommerce's order attribution reads the consent given through WP Consent API (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)
+CM-TRU-006	woocommerce	shows	S02-WC-450	order attribution waits on the consent category (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)
+CM-TRU-006	woocommerce	shows	S02-WC-402	order attribution and consent (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)
+CM-ACC-009	woocommerce	extension-point	S02-WC-496	third-party developers and hosting providers integrating their systems with WooCommerce's coming soon mode (the coordinator, from the subjects' points: P-8 S02-VP-81)
+CM-ACC-009	woocommerce	extension-point	S02-WC-498	the coming soon mode synced with other plugins (the coordinator, from the subjects' points: P-8 S02-VP-81)
+CM-ACC-009	woocommerce	extension-point	S02-WC-499	syncing with a maintenance mode plugin (the coordinator, from the subjects' points: P-8 S02-VP-81)
+CM-ACC-009	woocommerce	extension-point	S02-WC-508	the filter that excludes pages from coming soon mode (the coordinator, from the subjects' points: P-8 S02-VP-81)

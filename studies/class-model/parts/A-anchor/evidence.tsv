@@ -532,3 +532,4 @@ CM-PLN-001	salla	shows	SA-C-180/where/SA-S-2213	Salla policy page /policies/nd96
 CM-ACC-006	salla	core	SA-C-231/boundary/SA-S-5147	the store details the merchant can update: identity, customer service channels, the Business platform certificate, social accounts, the store app (the coordinator, from batch 7's lead)
 CM-TRU-008	salla	core	SA-C-232/decides/SA-S-0110	cash on delivery hidden from customers banned in Salla's other stores: Salla using what it knows across its stores to protect a store (the coordinator, a reading, after batch 7)
 CM-TRU-008	salla	core	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system analysing customers' data across Salla's stores (the coordinator, a reading, from C-anchor batch 7's lead)
+CM-ACC-008	salla	core	S02-SA-492	Salla's own onboarding turns away 'Other country': available in Saudi Arabia and the UAE (observed) (the coordinator, from the subjects' points: P-3 S02-VP-02, S02-VP-03)

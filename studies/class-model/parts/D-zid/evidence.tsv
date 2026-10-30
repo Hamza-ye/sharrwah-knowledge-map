@@ -181,3 +181,13 @@ CM-NTF-004	zid	shows	ZD-C-107/responsible/ZD-S-1052	restrictions and bans subjec
 CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1053	Meta decides restrictions on the number
 CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1056	Meta updates its prices quarterly
 CM-MKT-022	zid	core	ZD-I-0144	settings entry التواصل › تنبيهات زد, Zid Alerts (batch 2)
+CM-B2B-003	zid	core	S02-ZD-010	the markets feature: product prices and availability managed per geographic market (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-011	a price per market and channel, in the market's currency (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-019	per-market product availability (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-020	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-021	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-489	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-B2B-003	zid	core	S02-ZD-493	per-market products (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)
+CM-CUS-008	zid	core	S02-ZD-142	the checkout page's setting for how the customer's address is taken (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	zid	core	S02-ZD-143	the national address (SPL) turned on and required for shipments (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	zid	core	S02-ZD-144	the address fields (the coordinator, from the subjects' points: P-7 S02-VP-69)

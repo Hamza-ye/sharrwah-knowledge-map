@@ -446,3 +446,9 @@ CM-RET-004	woocommerce	core	WC-C-091/boundary/WC-S-5443	a matching request adds 
 CM-RET-004	woocommerce	shows	WC-C-091/responsible/WC-S-5442	does not guarantee compliance
 CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0314	customer email Order withdrawal request received; core in D's CM-NTF-001
 CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0315	staff email Order withdrawal request; core in D's CM-NTF-002
+CM-PAY-017	woocommerce	own-service	S02-WC-320	WooPayments' local payment methods, shown by the buyer's billing country and currency (the coordinator, from the subjects' points: P-6 S02-VP-61)
+CM-PAY-017	woocommerce	own-service	S02-WC-321	WooPayments' local payment methods and their countries (the coordinator, from the subjects' points: P-6 S02-VP-61)
+CM-PAY-017	woocommerce	own-service	WC-C-006/where/WC-S-0557	the maker statement for WooPayments (the coordinator, from the subjects' points: P-6 S02-VP-61)
+CM-PAY-015	woocommerce	own-service	S02-WC-318	Affirm, Afterpay and Klarna with WooPayments, for buyers in the account's country and currency (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)
+CM-PAY-015	woocommerce	shows	S02-WC-319	Affirm's requirement on the site's languages (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)
+CM-PAY-015	woocommerce	own-service	WC-C-006/where/WC-S-0557	the maker statement for WooPayments (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)

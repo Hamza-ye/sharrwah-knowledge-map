@@ -13,7 +13,7 @@ CM-ACC-006	salla	statements	core	@salla.sa/ui-merchant-utils | General | Setting
 CM-ACC-006	shopify	statements	core	Store properties | general		SH-C-013/reason:searched, not found	general
 CM-ACC-007	salla	statements	core	Maintenance mode	SA-C-002/decides/SA-S-2084=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read	general
 CM-ACC-007	shopify	none-held					
-CM-ACC-008	salla	statements	not-stated		SA-C-167/decides/SA-S-3101=countries: AE, SA, KW, QA, OM, BH	SA-C-167/where:page not read;SA-C-167/responsible:page not read;SA-C-167/boundary:observation needed	
+CM-ACC-008	salla	statements	core		S02-SA-492=a new account's onboarding (/persona/qna), the dashboard in English | SA-C-167/decides/SA-S-3101=countries: AE, SA, KW, QA, OM, BH	SA-C-167/where:page not read;SA-C-167/responsible:page not read;SA-C-167/boundary:observation needed	a new account's onboarding (/persona/qna), the dashboard in English
 CM-ACC-008	shopify	statements	not-stated			SH-C-174/where:observation needed;SH-C-174/boundary:observation needed	
 CM-ONB-001	salla	statements	core		SA-C-006/decides/SA-S-0141=الإمارات (article: إنشاء متجر جديد خارج السعودية - الإمارات)	SA-C-006/responsible:page not read;SA-C-167/where:page not read;SA-C-167/responsible:page not read;SA-C-167/boundary:observation needed	general
 CM-ONB-001	shopify	statements	core	I'm located in:		SH-C-006/boundary:searched, not found;SH-C-006/reason:searched, not found	general

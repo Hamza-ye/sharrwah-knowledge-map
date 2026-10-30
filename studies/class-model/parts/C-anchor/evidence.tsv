@@ -1876,3 +1876,6 @@ CM-PAY-006	salla	core	S01-SA-160	unverified stores' funds pending until verifica
 CM-PAY-006	salla	core	S01-SA-135	payment and settlement operations suspended until the store is verified (KSA) (the coordinator, from the subjects' points: P-2 S01-VP-18)
 CM-PAY-006	salla	core	S01-SA-161	verification required to withdraw the store's balance and transfer the electronic payments balance (Saudi Arabia) (the coordinator, from the subjects' points: P-2 S01-VP-18)
 CM-PAY-011	salla	outside	S01-SA-107	payments transferred by Mokafaa Al Rajhi to the merchant's own account with it, its commission by their agreement (the coordinator, from the subjects' points: P-1 S01-VP-03)
+CM-PAY-003	shopify	outside	S02-SH-582	WorldFirst verifies the identity and business before Shopify Payments, in China (the coordinator, from the subjects' points: P-3 S02-VP-05)
+CM-TAX-008	shopify	outside	S02-SH-295	Shopify partners with Avalara for duty calculation, at 0.5% (observed, in a market) (the coordinator, from the subjects' points: P-6 S02-VP-58)
+CM-TAX-008	shopify	outside	S02-SH-986	Avalara provides the duty calculation (the coordinator, from the subjects' points: P-6 S02-VP-58)

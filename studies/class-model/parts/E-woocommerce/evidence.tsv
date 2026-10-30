@@ -93,3 +93,5 @@ CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0125	own REST route data-cont
 CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0210	own admin API DataCountries
 CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-5461	own filter woocommerce_countries
 CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0602	option Default customer location, under where
+CM-MKS-008	woocommerce	core	S02-WC-423	its own code sets customer emails to the store's locale (the coordinator, from the subjects' points: P-5 S02-VP-43)
+CM-MKS-008	woocommerce	shows	S02-WC-325	the shop shown in the site's locale, set in WordPress (the coordinator, from the subjects' points: P-5 S02-VP-43)

@@ -58,7 +58,7 @@ CM-PAY-031	bigcommerce	none-held
 CM-PAY-032	bigcommerce	none-held					
 CM-RET-001	bigcommerce	statements	core	Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general
 CM-RET-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/order-operations | /developer/api-reference/rest/admin/payments | /developer/api-reference/rest/admin/payments/transactions		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found;BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general
-CM-RET-003	bigcommerce	statements	not-stated	Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	
+CM-RET-003	bigcommerce	statements	core	Processing Returns: Return Settings (Settings › Returns) | Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general
 CM-RET-004	bigcommerce	none-held					
 CM-SHP-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/management/shipping | Settings > Setup > Shipping | Shipping		BC-C-059/reason:searched, not found;BC-C-070/responsible:stated only in general terms;BC-C-070/boundary:searched, not found;BC-C-070/reason:searched, not found	general
 CM-SHP-002	bigcommerce	none-held					

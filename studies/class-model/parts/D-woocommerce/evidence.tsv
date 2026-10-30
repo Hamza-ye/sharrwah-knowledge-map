@@ -211,3 +211,9 @@ CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0307	staff email Payment gateway
 CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0315	staff email Order withdrawal request (WC_Email_Order_Withdrawal_Requested)
 CM-NTF-002	woocommerce	shows	WC-C-090/where/WC-S-0939	push notifications for the mobile apps: order notifications; core in G's CM-SRF-001, the mobile app, so it counts once (the coordinator, convention 8)
 CM-CUS-001	woocommerce	extension-point	WC-C-106/where/WC-S-0725	Marketplace category Customer service > Managing customers
+CM-CUS-008	woocommerce	core	S02-WC-142	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	woocommerce	core	S02-WC-143	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	woocommerce	core	S02-WC-145	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	woocommerce	core	S02-WC-151	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	woocommerce	core	S02-WC-156	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)
+CM-CUS-008	woocommerce	core	S02-WC-159	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)

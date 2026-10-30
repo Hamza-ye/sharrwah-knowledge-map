@@ -118,3 +118,8 @@ CM-POS-001	bigcommerce	extension-point	BC-C-069/where/BC-S-0371	product line POS
 CM-POS-001	bigcommerce	extension-point	BC-I-0491	App Marketplace category POS & In-Store
 CM-POS-001	bigcommerce	shows	BC-C-069/boundary/BC-S-0373	channel platform square of type pos
 CM-SFR-014	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's sites
+CM-MKS-001	bigcommerce	core	S02-BC-113	Multi-Storefront: separate storefronts per region, from one dashboard (the coordinator, from the subjects' points: P-4 S02-VP-26)
+CM-MKS-001	bigcommerce	core	S02-BC-164	selling to several countries, each with its own language, currency and payment methods, on Multi-Storefront (the coordinator, from the subjects' points: P-4 S02-VP-26)
+CM-MKS-001	bigcommerce	core	S02-BC-172	a storefront channel per locale-specific domain, for international selling (the coordinator, from the subjects' points: P-4 S02-VP-26)
+CM-MKS-001	bigcommerce	core	S02-BC-177	one storefront channel for the US and another for Switzerland (the coordinator, from the subjects' points: P-4 S02-VP-26)
+CM-MKS-004	bigcommerce	core	S02-BC-116	a localized domain or subdomain connected to a storefront in Channel Manager > Domains (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))
