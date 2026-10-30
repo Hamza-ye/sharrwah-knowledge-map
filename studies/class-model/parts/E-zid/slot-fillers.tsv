@@ -12,3 +12,5 @@ CM-CHN-003	zid	PCI-DSS	ZD-C-110/responsible/ZD-S-1059
 CM-CHN-006	zid	عناقيد التطبيقات, building the store's app	ZD-C-116/where/ZD-S-1081
 CM-CHN-006	zid	عناقيد التطبيقات, uploading the app to its own account	ZD-C-116/responsible/ZD-S-1085
 CM-CHN-006	zid	Apple and Google (app stores), the merchant's developer accounts	ZD-C-116/responsible/ZD-S-1084
+CM-POS-002	zid	الوكيل (the agent), the POS devices' warranty	ZD-C-108/responsible/ZD-S-0981
+CM-MKS-006	zid	كي نت (KNET), paid in Kuwaiti dinars	ZD-C-050/decides/ZD-S-0808

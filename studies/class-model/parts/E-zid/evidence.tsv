@@ -96,3 +96,42 @@ CM-CHN-006	zid	shows	ZD-C-116/decides/ZD-S-1083	one-year subscription
 CM-CHN-006	zid	shows	ZD-C-116/responsible/ZD-S-1084	merchant creates Apple and Google developer accounts
 CM-CHN-006	zid	shows	ZD-C-116/boundary/ZD-S-1086	store's contents managed from one dashboard
 CM-CHN-006	zid	shows	ZD-C-116/reason/ZD-S-1087	reason: brand on Apple's and Google's stores
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0979	plan line Mobile & Tablet POS App, all four plans
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0382	plan Professional: Completely free Zid POS - two cashiers
+CM-POS-001	zid	core	ZD-I-0382	plan card Rise: Free Zid POS on Basic Plan
+CM-POS-001	zid	core	ZD-I-0385	plan card Growth: One year free on Zid Cashier
+CM-POS-001	zid	core	ZD-I-0465	product line POS (Point of Sales)
+CM-POS-001	zid	core	ZD-I-0352	plan line Customer Display Screen, placed in Zid POS by Q1
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0506	staff permission pos.payment.methods
+CM-POS-001	zid	core	ZD-I-0490	staff permission pos.cashiers.page
+CM-POS-001	zid	core	ZD-I-0495	staff permission pos.cashier.usage
+CM-POS-001	zid	core	ZD-I-0497	staff permission pos.homepage
+CM-POS-001	zid	core	ZD-I-0528	staff permission pos.analytics
+CM-POS-001	zid	own-service	ZD-C-108/where/ZD-S-0977	زد كاشير: a service Zid provides
+CM-POS-001	zid	extension-point	ZD-I-0443	App Market category الربط مع الأنظمة (ERP/POS)
+CM-POS-001	zid	shows	ZD-C-108/boundary/ZD-S-0983	e-invoicing, Zid approved by the Authority
+CM-POS-001	zid	shows	ZD-I-0419	legal agreement الشروط والأحكام › زد كاشير
+CM-POS-002	zid	core	ZD-C-108/where/ZD-S-0978	POS app settings: link a payment device
+CM-POS-002	zid	outside	ZD-C-108/responsible/ZD-S-0981	the agent bears the devices' warranty
+CM-POS-002	zid	shows	ZD-C-108/boundary/ZD-S-0982	POS devices defined: sales, stock, settlement, all payment methods
+CM-POS-002	zid	shows	ZD-C-108/responsible/ZD-S-0980	Zid not responsible for installing POS devices
+CM-MKS-001	zid	core	ZD-C-034/where/ZD-S-0748	settings route الاعدادات > الأسواق
+CM-MKS-001	zid	core	ZD-C-034/decides/ZD-S-0749	number of markets by plan
+CM-MKS-001	zid	core	ZD-C-033/decides/ZD-S-0745	activating a country's currency turns on shipping to it
+CM-MKS-004	zid	core	ZD-C-050/decides/ZD-S-0807	plan line Geo-Based Currency Settings, by customer location
+CM-MKS-005	zid	core	ZD-C-050/where/ZD-S-0806	activate the store's main currency in settings
+CM-MKS-005	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns the default currency
+CM-MKS-005	zid	shows	ZD-C-050/decides/ZD-S-0808	payment in the store's base currency, SAR or KWD
+CM-MKS-006	zid	core	ZD-C-050/where/ZD-S-0806	add other currencies in settings
+CM-MKS-006	zid	core	ZD-C-034/decides/ZD-S-0750	a market's currency for showing prices
+CM-MKS-006	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns supported currencies
+CM-MKS-006	zid	core	ZD-C-050/decides/ZD-S-0808	prices shown in the chosen currency, paid in base currency
+CM-MKS-007	zid	core	ZD-C-050/decides/ZD-S-0810	prices converted at the exchange rate on a currency change
+CM-MKS-007	zid	core	ZD-C-050/boundary/ZD-S-0811	own order field order_currency.exchange_rate
+CM-MKS-007	zid	extension-point	ZD-C-050/boundary/ZD-S-0812	partners must convert the order total
+CM-MKS-007	zid	shows	ZD-C-050/decides/ZD-S-0809	amount paid converted at the gateway's exchange rate
+CM-MKS-008	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns supported and active languages
+CM-MKS-008	zid	core	ZD-I-0140	settings page لغة وعملات المتجر
+CM-MKS-009	zid	core	ZD-C-033/boundary/ZD-S-0035	own API group Countries and Cities
+CM-MKS-009	zid	core	ZD-C-033/boundary/ZD-S-0117	own scope countries_cities.read
+CM-MKS-009	zid	core	ZD-C-033/where/ZD-S-0744	own endpoint: countries with ID, name, ISO codes, flag
