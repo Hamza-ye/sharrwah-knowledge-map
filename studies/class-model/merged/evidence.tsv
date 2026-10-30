@@ -3333,6 +3333,9 @@ CM-PAY-011	salla	outside	S01-SA-107	payments transferred by Mokafaa Al Rajhi to 
 CM-PAY-003	shopify	outside	S02-SH-582	WorldFirst verifies the identity and business before Shopify Payments, in China (the coordinator, from the subjects' points: P-3 S02-VP-05)	C-anchor
 CM-TAX-008	shopify	outside	S02-SH-295	Shopify partners with Avalara for duty calculation, at 0.5% (observed, in a market) (the coordinator, from the subjects' points: P-6 S02-VP-58)	C-anchor
 CM-TAX-008	shopify	outside	S02-SH-986	Avalara provides the duty calculation (the coordinator, from the subjects' points: P-6 S02-VP-58)	C-anchor
+CM-PAY-003	shopify	shows	SH-C-174/decides/SH-S-0122	the Payments Services refused to a resident of a sanctioned country or embargoed region, or a blocked person: the merchant's eligibility (the coordinator, from Q3's check: pay:PAY-61)	C-anchor
+CM-PAY-003	shopify	shows	SH-C-174/decides/SH-S-0131	no owner or representative may be subject to trade sanctions, an onboarding condition (EU/EEA, UK) (the coordinator, from Q3's check: pay:PAY-61)	C-anchor
+CM-PAY-006	shopify	shows	SH-C-174/decides/SH-S-0353	sanctions among the reasons for an account hold (the coordinator, from Q3's check: pay:PAY-61)	C-anchor
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0162	Store API endpoint /checkout	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0163	Store API endpoint /checkout/{id}, checkout-order	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/decides/WC-S-0928	setting Enable guest checkout (recommended)	C-woocommerce

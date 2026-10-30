@@ -52,4 +52,8 @@ Rows: `pay:PAY-61` to `pay:PAY-81` (21). The rows are in `check-Q-14.tsv`. `q3.p
   - PAY-38 gained `engineering:build` for S02-D9.
 
   No row's `when` or time bombs changed, since both labels give `before build`.
-- **Shopify's sanctions conditions** (SH-C-174/decides/SH-S-0122, SH-S-0131, SH-S-0353), which no cell cites, are weighed with Q3's other amendments to the model.
+- **Shopify's sanctions conditions**, which no cell cited, are now cited as `shows` in `C-anchor`:
+  - SH-S-0122 and SH-S-0131, the Payments Services refused to residents of sanctioned or embargoed regions, blocked persons, and owners subject to trade sanctions, in CM-PAY-003@shopify (onboarding and verification);
+  - SH-S-0353, sanctions among the reasons for an account hold, in CM-PAY-006@shopify.
+
+  They state the merchant's eligibility, so they support no placement. CM-ACC-008's note leaves them to the payment cells. Each row is marked "(the coordinator, from Q3's check: pay:PAY-61)". PAY-61's answer stays the market's.

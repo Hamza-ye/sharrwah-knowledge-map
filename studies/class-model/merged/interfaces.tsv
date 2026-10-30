@@ -3661,6 +3661,8 @@ CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0331	help.shopify.com/en/manual/p
 CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0332	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
 CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0337	Review criteria, Transaction and operational patterns
 CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0357	Account holds after receiving orders
+CM-PAY-003	exact	decides	SH-C-174/decides/SH-S-0122	Part I, D. (after limitation of liability)
+CM-PAY-003	exact	decides	SH-C-174/decides/SH-S-0131	Part I, A. Onboarding, KYC and underwriting
 CM-PAY-003	exact	decides	WC-C-009/decides/WC-S-0516	“Know your customer”
 CM-PAY-003	exact	decides	WC-C-009/decides/WC-S-0558	How do I delete my WooPayments account?
 CM-PAY-003	exact	boundary	ZD-C-001/boundary/ZD-S-0534	Link Merchant webhook (merchant_linked)
@@ -3797,6 +3799,7 @@ CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0351	Extending, appealing, and re
 CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0354	Reasons for account holds, Creditor or legal action
 CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0355	Reasons for account holds, Creditor or legal action
 CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0356	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	decides	SH-C-174/decides/SH-S-0353	Reasons for account holds
 CM-PAY-006	exact	boundary	WC-C-008/boundary/WC-S-0528	WooPayments: Reserves (NOTE)
 CM-PAY-006	exact	boundary	WC-C-008/boundary/WC-S-0856	What types of reserves are there?
 CM-PAY-006	exact	decides	WC-C-008/decides/WC-S-0519	Reserves
