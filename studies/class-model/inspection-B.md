@@ -541,3 +541,18 @@ Every one holds.
 **A checker now, not after the dry run.** A first `method/check_class_part.py` runs the form, coverage and evidence tests (1 to 19 and 21) before the dry run, so each part checks itself before it hands back. The review adds what it finds.
 
 **Re-inspection.** The brief's change is large, so the same inspector re-reads the changed brief and the scripts before anything runs.
+
+## Re-inspection (30 October)
+
+Status: in progress, written as it goes.
+
+**What this is.** The same inspector re-reads brief B as rewritten at `92ec26fd`, with its two new scripts, `method/class_slice.py` and `method/check_class_part.py`. For each of the 19 findings above, it says whether the rewrite resolves it. It looks for new problems the fixes brought in, and it runs the scripts on domain B's concerns and on a synthetic part built in the scratchpad. As before, every judgement is a **Reading**, and every count comes from a script that was run.
+
+**Read, at `92ec26fd`:**
+- the brief, whole;
+- both scripts, whole;
+- the coordinator's check and rulings above;
+- `method/README.md`'s two new rows.
+
+The concern map, the seed and Q1 are unchanged since `93ebb15c` (`git diff 93ebb15c 92ec26fd` touches only the brief, the two scripts, `method/README.md`, `PLAN.md`, `STATE.md`, `founder-decisions.tsv`, a founder message and this file).
+

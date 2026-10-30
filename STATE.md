@@ -126,7 +126,13 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 **Stage 4A, in the fresh coordinating session (from 23:41 UTC on 29 October):**
 - **The evidence is set up** as "To resume" says: observed-sh and observed-sa cloned since 5 October, with `b46731d0` and `145f137` present; other-product-class cloned whole from the founder's repository, at `0d79b794`, so the mirror branch is no longer needed here (said to the founder); the WooCommerce release checked against its sha256 and unpacked. `method/check_surface.py` exits 0.
 - **The orientation page** is rebuilt for the intent and the work's place now, and published to the same URL (version 4); then updated for the founder's change of 30 October, folded at `7ad5cfda` by the session that folded the intent (version 5: GM brings the architecture plan for the founder's go, and line (3) is out). Its 241 links resolve at their commits, and its 41 quotes are found on their pinned lines (`method/check_report.py`, on a markdown rendering of the page).
-- **Step 1.2 has begun:** the inspection of `B-extent.md`, by an agent that wrote none of it, into `studies/class-model/inspection-B.md`.
+- **The brief's inspection** ([`inspection-B.md`](studies/class-model/inspection-B.md)): 19 findings, 13 must fix. The coordinator re-ran its counts, which all hold, and took all 19. The brief is rewritten:
+  - **a scope step** first: every concern of the five platforms in one domain (`studies/class-model/scope.tsv`);
+  - **per domain:** the anchor, then the mapping parts onto the model so far, then a back-fill;
+  - **per-statement evidence,** with fixed tokens, keys and placement tests;
+  - **rulings** on Q1's unclear candidates.
+  Two scripts go with it: `method/class_slice.py`, which prints what a part reads, and `method/check_class_part.py`, which checks a part and derives each cell's places, scopes and gaps. The same inspector is re-inspecting the rewrite before anything runs.
+- **Cost so far:** the inspection 19.8 million agent tokens (95 requests), of the extent's 250 million.
 
 **Next:**
 1. **A fresh coordinating session** runs Stage 4A (step 1.1 done; 1.2 under way). It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
