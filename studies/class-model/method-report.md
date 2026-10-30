@@ -252,3 +252,54 @@ That is a little under section 10's 890, and about three and a half times the bu
   - **An agent reads what a tool prints, in the order it prints it.** The leads printed in Python's set order, so the checker's first-lead note came and went between runs. Everything a script shows an agent is sorted now.
   - **A rule needs its own case named.** "The parent's thing where the entry's own words name it" was read as every section's group, BigCommerce's General, and gave lines that change no cell. M-6 now names its case: a child that is a kind of the parent's thing.
 - **Cost of this section's agents,** measured by `method/count_tokens.py`: 242.3 million (the review's inspection 25.4, the review 119.7, the second inspection 50.2, the calibration 47.0), after the dry run's 21.7. The coordinator's work ran in this session.
+
+## 18. The held pass's first batches, and the projection measured (30 October, 20:45 to 21:40 UTC)
+
+**The first batches under H-held.md's third version,** at `high`, each checked by the coordinator before the next pair ran:
+
+| Batch | Kind | Entries | Tokens | Per entry | Cells it would change, beyond earlier batches | New things |
+| --- | --- | --- | --- | --- | --- | --- |
+| ZD-4 | Zid's routes | 195 | 7.5 million | about 38,000 | 5, 4 of them from holding nothing | 1 |
+| WC-1 | WooCommerce's free extensions, by country | 75 | 5.7 million | about 76,000 | 7, 1 from holding nothing | 3 |
+| WC-2 | the same, for SA, OM, YE and the item labelled EG | 76 | 4.2 million | about 55,000 | none beyond WC-1: each country's scope | none beyond WC-1's |
+| ZD-5 | Zid's routes, more of their pages opened and read | 194 | 14.4 million | about 74,000 | 3 more from holding nothing | 2 |
+
+**What each check found,** each fixed before the next pair:
+- the routes had no leads at all, since a change to what the leads read had dropped a route's path; with its segments read again, 176 of ZD-4's 195 entries have leads;
+- the checker's quote test didn't reach the files a reading cites (the release, the dashboard's locales, a statement);
+- two calls on WC-1 that the coordinator corrected: Jetpack's 'Keep your store online' is no reliability line, and ShipStation's labels and fulfilment are `extension-point`, a third party's feature through WooCommerce's own extension (M-8);
+- two of ZD-4's readings, settled by the dashboard's locale strings;
+- WC-2's own find, confirmed in the run's answers: the structure's item labelled EG is the YE store's list again, since the request to set the country to EG was refused, so Egypt's list isn't held (`evidence-map.md`).
+
+**Where the tokens go.** A batch's cost is its requests times the context each request reads again. Every agent starts at about 49,000 tokens, the harness's own, and its reading of the brief, the rules, the guides and the previous batch adds 60,000 to 100,000 before it places an entry. ZD-4 made one request per four entries, WC-1 one per two and ZD-5 one per 2.4, with a mean context of about 150,000, 135,000 and 175,000. That start is a fixed cost per batch, so a long batch of a light kind costs least per entry, and the kind of list matters far more than the effort. Zid's routes cost 38,000 an entry where their pages were seldom opened (ZD-4) and 74,000 where many were (ZD-5); WooCommerce's cards 55,000 to 76,000; the calibration's pages with descriptions 190,000.
+
+**The projection, re-measured** (an assumption for the kinds not run yet; each kind is measured on its first batch, and the projection again with it):
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 21:30 UTC: 1,187 at 19:25, measured then, and 129 since (the second inspection 50.2, the calibration 47.0, the four batches 31.8) | about 1,320 |
+| The held pass's other batches, 15,245 entries, at the kind's rate: routes and navigation 4,976 at 38,000 to 74,000 an entry; help, changelog and editions 2,715 at 40,000 to 80,000; plans, policies and gates 2,547 at 50,000 to 80,000; settings 2,478 at 55,000 to 80,000; catalogs of providers and extensions 817 at 55,000 to 76,000; permissions and scopes 656 and developer surfaces 377 at 30,000 to 50,000; the other 679 at 40,000 to 60,000 | 650 to 1,150 |
+| Its second stage: the cells still holding nothing, read against the held pages, with Q3's 13 candidate misses | 100 to 200 |
+| The omission review | about 50 |
+| The final review, by risk, and its corrections | 180 to 230 |
+| The architecture plan's review | about 10 |
+| **The extent, in all** | **about 2.3 to 3.0 billion** |
+
+That is more than twice section 15's 1.1 billion, which didn't hold the held pass, and above the 1.8 to 2.4 billion the coordinator told the founder at 19:25, which had put the re-planned held pass at 250 to 500 million: the batches under the rewritten brief cost more per entry than that assumed. The plan had put the held pass and the omission review at 80 to 180 million, an assumption to be measured on the first batches (`PLAN.md`, section 11, 30 October): measured, they are about ten times that. By the founder's standing decision of 27 October the budget never costs evidence, and the figure goes to the founder.
+
+**Re-planned to read the same evidence at less cost:**
+- each batch is checked by the checker and the coordinator, not by a review at `max`, which cost five times the batches it read (section 17);
+- each batch follows the one before it on its structure, so a run of the same kind costs less: WC-2 followed WC-1's lines at 55,000 an entry against WC-1's 76,000;
+- effort stays `high`, as calibrated: `xhigh` cost 1.6 to 2.4 times as much and missed the same details;
+- version 3.1's cuts: a compact view of a lead's cell, no reading of the scripts' code, and leads for routes, so fewer searches;
+- the batches not yet run are cut again at about 100 entries, at most 130 (Salla's 63 run from 80 to 130): an entry's reading stays in the context every later request reads, so a batch's cost grows faster than its length, most where it reads pages, while each batch's start is a fixed cost;
+- the platforms where cells hold nothing most often run first: Zid, WooCommerce, Salla, then Shopify after the founder's pushes.
+
+**The yield so far:** about one cell changed per million tokens, from none (WC-2, the same cards as WC-1 in other countries) and 0.2 (ZD-5) to 2.5 (BC-1), besides the new things and each country's scope. It will fall as cells fill, and the second stage and the omission review then read less.
+
+**A higher plan:** none needed so far; the usage limit hasn't stopped an agent. Two agents at once run about 70 million tokens an hour, so the held pass takes about 9 to 16 hours of running. More at once would shorten that, not cost less; two stay, since each check so far found something the next batch needed.
+
+**Lessons:**
+- **The kind of list sets the cost, not the effort.** Light lists cost a fifth of pages with descriptions, at the same effort.
+- **A change to what the leads read is tested on each kind before it runs.** Leaving field names out of the term leads was right for settings and wrong for routes, whose path is their only words.
+- **Check every batch before the next.** Each of the first checks found something the next batch would have repeated.
