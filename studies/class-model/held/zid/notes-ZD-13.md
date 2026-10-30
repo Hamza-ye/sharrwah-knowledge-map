@@ -152,3 +152,15 @@ None found. I compared each of the 142 items with the answer's `user.store.subsc
 
 - None with the script.
 - One rule the brief leaves loose, as in ZD-11 and ZD-12: when a policy group's part takes the group's line. I followed ZD-11 and ZD-12 (every part that is a feature of the group's product), but kept the measures off it, as the earlier batches kept measures on CM-ANL-001 alone. In this batch, 98 of the 217 lines are on a group's capability (CM-STF-001, CM-PAY-002, CM-POS-001, CM-SHP-002). For 33 entries that is the only line. The other 65 sit beside the part's own line, and only those 65 rest on the group rule.
+
+## The coordinator's check (30 October 2026, after the batch)
+
+- **Two group lines are dropped:** CM-STF-001's lines on `users_management.action_audits` and `users_management.control_closing_store`. An audit log and closing the store aren't kinds of staff account, and a key's group isn't the entry's own words (M-6, refined). Each keeps its own line, CM-TRU-003 and CM-ACC-007.
+- **The other group lines stand.** Each part of `zidpay`, `zidpos` and `zidship` names a feature of that product, which the plan includes. Each part of `users_management` that stays names the team.
+- **The App Market's apps stand as `extension-point`** on CM-SHP-011 and CM-SHP-015. The plan gives access to third parties' apps, which do the work (M-3). ZD-12's `shipping.fulfillment_service` is different: the plan includes the service itself (M-9).
+- **The cells this batch changes stand:**
+  - CM-SHP-007: a buyer picking up an online order from a branch, as ZD-4's `store-pickup` route;
+  - CM-TRU-003: the team's audit log, as ZD-5's `team/logs`.
+- **New things:** employee attendance and employee commission, both Zid POS features of the Professional plan. They are decided with every platform's new things.
+- **Cost:** 12.5 million tokens over 68 requests, about 88,000 an entry. No cell changes beyond the earlier batches'.
+- **Zid's batches are all placed:** ZD-1 and ZD-4 to ZD-13, 1,551 entries. Its amendment waits for the new-thing decisions across platforms.
