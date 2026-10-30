@@ -1,0 +1,44 @@
+cap_id	platform	supports	key	why
+CM-CAT-001	bigcommerce	core	BC-C-001/where/BC-S-0017	its own Catalog API manages products (C1)
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0018	settings resource Catalog
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0019	settings resource Storefront Product
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0020	plan line Products, file storage, and bandwidth, on all four plans
+CM-CAT-001	bigcommerce	core	BC-C-001/boundary/BC-S-0021	its own API (C1): scope store_v2_products
+CM-CAT-001	bigcommerce	core	BC-C-001/boundary/BC-S-0022	its own API (C1): webhook store/product/created
+CM-CAT-001	bigcommerce	core	BC-I-0525	product line Catalog management, placed in BC-C-001 (C2)
+CM-CAT-001	bigcommerce	extension-point	BC-I-0480	app marketplace category Catalog & Order Management, placed in BC-C-001 (C2)
+CM-CAT-002	bigcommerce	core	BC-I-0022	its own API group Catalog - Product variants, placed in BC-C-001 (C1, C2)
+CM-CAT-002	bigcommerce	core	BC-I-0023	its own API group Catalog - Product variant options, placed in BC-C-001 (C1, C2)
+CM-CAT-002	bigcommerce	core	BC-I-0021	its own API group Catalog - Product modifiers, placed in BC-C-001 (C1, C2)
+CM-CAT-002	bigcommerce	core	BC-I-0162	its own API (C1): webhook store/option/updated, placed in BC-C-001 (C2)
+CM-CAT-002	bigcommerce	core	BC-I-0161	its own API (C1): webhook store/modifier/updated, placed in BC-C-001 (C2)
+CM-CAT-003	bigcommerce	core	BC-C-003/where/BC-S-0026	its own Catalog API manages categories (C1)
+CM-CAT-003	bigcommerce	core	BC-C-003/where/BC-S-0027	its own API (C1): category trees endpoints, counterparts of categories
+CM-CAT-003	bigcommerce	core	BC-C-003/decides/BC-S-0028	settings resource Storefront Category
+CM-CAT-003	bigcommerce	core	BC-C-003/boundary/BC-S-0021	its own API (C1): scope store_v2_products covers categories
+CM-CAT-003	bigcommerce	core	BC-C-003/boundary/BC-S-0029	its own API (C1): webhook store/category/created
+CM-CAT-005	bigcommerce	core	BC-C-002/where/BC-S-0024	its own API (C1): Catalog brands endpoints
+CM-CAT-005	bigcommerce	core	BC-C-002/boundary/BC-S-0021	its own API (C1): scope store_v2_products covers brands
+CM-CAT-005	bigcommerce	core	BC-C-002/boundary/BC-S-0025	its own API (C1): webhook store/brand/metafield/created
+CM-CAT-013	bigcommerce	core	BC-C-008/where/BC-S-0053	its own Pricing API: product pricing on BigCommerce-hosted storefronts (C1)
+CM-CAT-013	bigcommerce	shows	BC-C-008/boundary/BC-S-0054	the Storefront API has no scopes, authenticates by CORS
+CM-CAT-013	bigcommerce	core	BC-C-001/where/BC-S-0017	its own Catalog API manages bulk pricing rules (C1)
+CM-INV-001	bigcommerce	extension-point	BC-C-004/where/BC-S-0030	resources allow developers to create BigCommerce apps and in-house solutions
+CM-INV-001	bigcommerce	core	BC-C-004/where/BC-S-0031	its own Inventory API processes inventory adjustments (C1)
+CM-INV-001	bigcommerce	core	BC-C-004/decides/BC-S-0032	settings resource Inventory
+CM-INV-001	bigcommerce	core	BC-C-004/decides/BC-S-0033	settings resource Inventory Notifications
+CM-INV-001	bigcommerce	core	BC-C-004/boundary/BC-S-0034	its own API (C1): scope store_inventory
+CM-INV-001	bigcommerce	core	BC-C-004/boundary/BC-S-0035	its own API (C1): webhook stock_changed, manual merchant adjustments
+CM-INV-001	bigcommerce	core	BC-C-004/reason/BC-S-0036	built-in strict ordering of concurrent requests to avoid overselling
+CM-INV-001	bigcommerce	core	BC-I-0527	product line Inventory management, placed in BC-C-004 (C2)
+CM-INV-001	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold inventories as the source of truth
+CM-INV-004	bigcommerce	core	BC-I-0293	its own API (C1): webhook low_stock_reached, placed in BC-C-004 (C2)
+CM-INV-004	bigcommerce	core	BC-I-0294	its own API (C1): webhook out_of_stock_reached, placed in BC-C-004 (C2)
+CM-INV-005	bigcommerce	core	BC-C-005/where/BC-S-0037	Locations allow merchants to track inventory across locations
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0038	plan line Inventory locations, by plan
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0039	Enterprise plan: 100 locations
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0040	Aggregated stock, by request
+CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0041	its own API (C1): scope store_locations
+CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0042	its own API (C1): webhook store/inventory/location/created
+CM-INV-005	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold locations as the source of truth
+CM-SEL-002	bigcommerce	core	BC-C-001/boundary/BC-S-0023	files added to digital products via its control panel or WebDav

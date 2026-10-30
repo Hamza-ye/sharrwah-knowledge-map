@@ -1,0 +1,3 @@
+cap_id	platform	quality	value	key	scope
+CM-INV-005	bigcommerce	inventory locations on the Core, Growth, Scale and Performance plans	Up to 4 Up to 5 Up to 8 Custom	BC-C-005/decides/BC-S-0038	plans Core, Growth, Scale, Performance (columns of the plan comparison table)
+CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise plan: 100; can be customized by request	BC-C-005/decides/BC-S-0039	Enterprise plan

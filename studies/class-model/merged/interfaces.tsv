@@ -57,6 +57,11 @@ CM-CAT-001	by landing	boundary	WC-C-064/boundary/WC-S-0215	wc-analytics > Produc
 CM-CAT-001	by landing	boundary	WC-C-064/boundary/WC-S-0216	wc-analytics > ProductCategories
 CM-CAT-001	by landing	boundary	WC-C-064/boundary/WC-S-0217	wc-analytics > ProductVariations
 CM-CAT-001	by landing	boundary	WC-C-064/boundary/WC-S-0675	Product custom fields
+CM-CAT-001	exact	boundary	BC-C-001/boundary/BC-S-0021	store_v2_products
+CM-CAT-001	exact	boundary	BC-C-001/boundary/BC-S-0022	store/product/created
+CM-CAT-001	exact	decides	BC-C-001/decides/BC-S-0018	Settings V3: Catalog
+CM-CAT-001	exact	decides	BC-C-001/decides/BC-S-0019	Settings V3: Storefront Product
+CM-CAT-001	exact	decides	BC-C-001/decides/BC-S-0020	Products, file storage, and bandwidth
 CM-CAT-001	exact	boundary	SA-C-020/boundary/SA-S-1552	products
 CM-CAT-001	exact	boundary	SA-C-020/boundary/SA-S-1591	product.created
 CM-CAT-001	exact	decides	SA-C-020/decides/SA-S-1949	عدد لا محدود من المنتجات
@@ -82,6 +87,11 @@ CM-CAT-001	exact	boundary	WC-C-064/boundary/WC-S-0268	product.restored
 CM-CAT-001	exact	boundary	WC-C-064/boundary/WC-S-0269	product.published
 CM-CAT-001	exact	boundary	WC-C-064/boundary/WC-S-0670	Products
 CM-CAT-001	exact	decides	WC-C-064/decides/WC-S-5387	product (post type)
+CM-CAT-001	exact	boundary	ZD-C-083/boundary/ZD-S-0060	product.create
+CM-CAT-001	exact	boundary	ZD-C-083/boundary/ZD-S-0097	POST /v1/products/
+CM-CAT-001	exact	decides	ZD-C-083/decides/ZD-S-0496	list.store.products
+CM-CAT-001	exact	decides	ZD-C-083/decides/ZD-S-0915	Add Products
+CM-CAT-001	exact	decides	ZD-C-083/decides/ZD-S-0916	Product Management - Bulk Add Products
 CM-CAT-002	by landing	boundary	SA-C-021/boundary/SA-S-1025	Product Options
 CM-CAT-002	by landing	boundary	SA-C-021/boundary/SA-S-1600	product.option.updated
 CM-CAT-002	by landing	boundary	SH-C-189/boundary/SH-S-7284	9.9 Third Party Services and Third Party Partners
@@ -113,6 +123,9 @@ CM-CAT-003	by landing	decides	SH-C-021/decides/SH-S-5109	collection:bulk-edit
 CM-CAT-003	by landing	decides	SH-C-021/decides/SH-S-5349	entitlements.products
 CM-CAT-003	by landing	decides	SH-C-021/decides/SH-S-6279	write_products
 CM-CAT-003	by landing	decides	SH-C-021/decides/SH-S-6280	write_products
+CM-CAT-003	exact	boundary	BC-C-003/boundary/BC-S-0021	store_v2_products
+CM-CAT-003	exact	boundary	BC-C-003/boundary/BC-S-0029	store/category/created
+CM-CAT-003	exact	decides	BC-C-003/decides/BC-S-0028	Settings V3: Storefront Category
 CM-CAT-003	exact	boundary	SA-C-020/boundary/SA-S-1597	product.category.updated
 CM-CAT-003	exact	boundary	SA-C-022/boundary/SA-S-1550	categories
 CM-CAT-003	exact	boundary	SA-C-022/boundary/SA-S-1611	category.created
@@ -129,12 +142,19 @@ CM-CAT-003	exact	decides	SH-C-021/decides/SH-S-6278	write_products
 CM-CAT-003	exact	boundary	WC-C-064/boundary/WC-S-0095	wc/v3 > product-categories
 CM-CAT-003	exact	boundary	WC-C-064/boundary/WC-S-0168	wc/store/v1 > /products/categories
 CM-CAT-003	exact	boundary	WC-C-064/boundary/WC-S-0674	Product categories
+CM-CAT-003	exact	boundary	ZD-C-084/boundary/ZD-S-0070	category.create
+CM-CAT-003	exact	boundary	ZD-C-084/boundary/ZD-S-0099	POST /v1/managers/store/categories/nesting
+CM-CAT-003	exact	decides	ZD-C-084/decides/ZD-S-0498	list.store.categories
+CM-CAT-003	exact	decides	ZD-C-084/decides/ZD-S-0917	Product Categories
+CM-CAT-003	exact	decides	ZD-C-084/decides/ZD-S-1020	تحسين محركات البحث
 CM-CAT-004	exact	decides	SA-C-022/decides/SA-S-3506	google-taxonomy
 CM-CAT-004	exact	decides	SA-C-022/decides/SA-S-3507	salla-taxonomy
 CM-CAT-004	exact	boundary	SH-C-028/boundary/SH-S-6240	write_metaobjects
 CM-CAT-005	by landing	boundary	SA-C-023/boundary/SA-S-1056	Brands
 CM-CAT-005	by landing	boundary	SA-C-023/boundary/SA-S-1614	brand.updated
 CM-CAT-005	by landing	boundary	SA-C-023/boundary/SA-S-1615	brand.deleted
+CM-CAT-005	exact	boundary	BC-C-002/boundary/BC-S-0021	store_v2_products
+CM-CAT-005	exact	boundary	BC-C-002/boundary/BC-S-0025	store/brand/metafield/created
 CM-CAT-005	exact	boundary	SA-C-020/boundary/SA-S-1603	product.brand.updated
 CM-CAT-005	exact	boundary	SA-C-023/boundary/SA-S-1551	brands
 CM-CAT-005	exact	boundary	SA-C-023/boundary/SA-S-1613	brand.created
@@ -178,6 +198,7 @@ CM-CAT-011	exact	decides	SA-C-020/decides/SA-S-3461	size-guides
 CM-CAT-012	exact	boundary	WC-C-093/boundary/WC-S-5447	cost_of_goods_sold (REST product schema)
 CM-CAT-012	exact	decides	WC-C-093/decides/WC-S-0940	cost_of_goods_sold
 CM-CAT-012	exact	decides	WC-C-093/decides/WC-S-5445	cost_of_goods_sold
+CM-CAT-013	exact	boundary	BC-C-008/boundary/BC-S-0054	CORS
 CM-CAT-013	exact	boundary	SA-C-020/boundary/SA-S-1599	product.price.updated
 CM-CAT-013	exact	decides	SA-C-020/decides/SA-S-3515	metal-pricing
 CM-INV-001	by landing	boundary	SA-C-025/boundary/SA-S-1030	Product Quantity
@@ -224,6 +245,11 @@ CM-INV-001	by landing	decides	SH-C-023/decides/SH-S-6217	write_inventory_shipmen
 CM-INV-001	by landing	decides	SH-C-023/decides/SH-S-6218	write_inventory_shipments
 CM-INV-001	by landing	decides	SH-C-023/decides/SH-S-6219	write_inventory_shipments_received_items
 CM-INV-001	by landing	decides	SH-C-023/decides/SH-S-6220	write_inventory_transfers
+CM-INV-001	exact	boundary	BC-C-004/boundary/BC-S-0034	store_inventory
+CM-INV-001	exact	boundary	BC-C-004/boundary/BC-S-0035	store/channel/*/inventory/product/stock_changed
+CM-INV-001	exact	decides	BC-C-004/decides/BC-S-0032	Settings V3: Inventory
+CM-INV-001	exact	decides	BC-C-004/decides/BC-S-0033	Settings V3: Inventory Notifications
+CM-INV-001	exact	boundary	BC-C-006/boundary/BC-S-0047	partner solutions
 CM-INV-001	exact	boundary	SA-C-025/boundary/SA-S-1594	product.available
 CM-INV-001	exact	decides	SA-C-025/decides/SA-S-1975	تعديل الكميات
 CM-INV-001	exact	decides	SA-C-025/decides/SA-S-1976	إدارة المخزون
@@ -243,6 +269,7 @@ CM-INV-001	exact	decides	SH-C-023/decides/SH-S-5334	entitlements.inventory.purch
 CM-INV-001	exact	boundary	WC-C-068/boundary/WC-S-0240	wc-analytics > reports/stock (Reports/Stock/Controller)
 CM-INV-001	exact	boundary	WC-C-068/boundary/WC-S-0241	wc-analytics > reports/stock/stats (Reports/Stock/Stats/Controller)
 CM-INV-001	exact	decides	WC-C-068/decides/WC-S-5400	woocommerce_manage_stock
+CM-INV-001	exact	decides	ZD-C-085/decides/ZD-S-0918	Inventory Management
 CM-INV-002	exact	decides	SA-C-025/decides/SA-S-2252	product_browse_quantity_logs
 CM-INV-002	exact	decides	SA-C-025/decides/SA-S-2469	product_browse_quantity_logs
 CM-INV-002	exact	decides	SA-C-025/decides/SA-S-3472	product-quantity-log
@@ -280,6 +307,12 @@ CM-INV-005	by landing	decides	SH-C-024/decides/SH-S-5201	location:bin-details
 CM-INV-005	by landing	decides	SH-C-024/decides/SH-S-5762	entitlements.maximumLocations
 CM-INV-005	by landing	decides	SH-C-024/decides/SH-S-5763	entitlements.maximumLocations
 CM-INV-005	by landing	decides	SH-C-024/decides/SH-S-5764	entitlements.maximumLocations
+CM-INV-005	exact	boundary	BC-C-005/boundary/BC-S-0041	store_locations
+CM-INV-005	exact	boundary	BC-C-005/boundary/BC-S-0042	store/inventory/location/created
+CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0038	Inventory locations
+CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0039	Enterprise plan
+CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0040	Aggregated stock
+CM-INV-005	exact	boundary	BC-C-006/boundary/BC-S-0047	partner solutions
 CM-INV-005	exact	boundary	SA-C-026/boundary/SA-S-1043	Branches Allocations
 CM-INV-005	exact	boundary	SA-C-026/boundary/SA-S-1616	store.branch.created
 CM-INV-005	exact	decides	SA-C-026/decides/SA-S-2028	زيادة عدد الفروع *برسوم إضافية
@@ -295,6 +328,12 @@ CM-INV-005	exact	boundary	SH-C-024/boundary/SH-S-6025	read_locations
 CM-INV-005	exact	boundary	SH-C-024/boundary/SH-S-6206	write_locations
 CM-INV-005	exact	decides	SH-C-024/decides/SH-S-5200	location
 CM-INV-005	exact	decides	SH-C-024/decides/SH-S-7010	Inventory locations
+CM-INV-005	exact	boundary	ZD-C-085/boundary/ZD-S-0100	POST /v1/locations/
+CM-INV-005	exact	boundary	ZD-C-085/boundary/ZD-S-1024	جاهز
+CM-INV-005	exact	decides	ZD-C-085/decides/ZD-S-0372	Growth: All features of Rise package, plus:
+CM-INV-005	exact	decides	ZD-C-085/decides/ZD-S-0493	manage.store.inventory.addresses
+CM-INV-005	exact	decides	ZD-C-085/decides/ZD-S-1021	عدد المخازن
+CM-INV-005	exact	decides	ZD-C-085/decides/ZD-S-1022	عدد المخازن
 CM-INV-006	exact	decides	SA-C-025/decides/SA-S-2307	inventory_browse
 CM-INV-006	exact	decides	SA-C-025/decides/SA-S-2308	inventory_management
 CM-INV-006	exact	decides	SA-C-026/decides/SA-S-2303	inventory_transfer_create
@@ -315,6 +354,49 @@ CM-INV-007	exact	decides	SH-C-023/decides/SH-S-7156	VIEW_INVENTORY_PURCHASE_ORDE
 CM-INV-007	exact	decides	SH-C-023/decides/SH-S-7157	CREATE_AND_EDIT_INVENTORY_PURCHASE_ORDERS
 CM-INV-008	exact	decides	WC-C-068/decides/WC-S-5401	woocommerce_hold_stock_minutes
 CM-INV-008	exact	decides	WC-C-068/decides/WC-S-5402	woocommerce_hold_stock_minutes
+CM-INV-008	exact	decides	ZD-C-100/decides/ZD-S-0965	حجز المنتج 30 دقيقة
+CM-INV-009	exact	decides	ZD-C-085/decides/ZD-S-0919	Inventory Withdrawal Priority
+CM-INV-009	exact	decides	ZD-C-085/decides/ZD-S-1023	أولوية السحب من المخزون
+CM-MIG-001	exact	boundary	SA-C-027/boundary/SA-S-1057	Exports
+CM-MIG-001	exact	boundary	SA-C-027/boundary/SA-S-1566	exports
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-1997	تصدير الطلبات
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-2059	استيراد العملاء
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-2189	نقل البيانات بسلاسة
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-2257	import_export_management
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-2474	import_export_management
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3102	products-importer
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3165	import-customers
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3179	export-customers
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3224	impex
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3225	import-products
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3226	export-products
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3227	update-products
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3228	export-all-order-products
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3229	export-product-orders
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3230	import-order-status
+CM-MIG-001	exact	decides	SA-C-027/decides/SA-S-3519	products-competitor-import-banner
+CM-MIG-001	exact	decides	SH-C-020/decides/SH-S-5012	product:bulk-import
+CM-MIG-001	exact	decides	SH-C-020/decides/SH-S-5017	products:imports
+CM-MIG-002	exact	decides	SA-C-027/decides/SA-S-2263	custom_importer_management
+CM-MIG-002	exact	decides	SA-C-027/decides/SA-S-2264	custom_importer_view
+CM-MIG-002	exact	decides	SA-C-027/decides/SA-S-2480	custom_importer_management
+CM-MIG-002	exact	decides	SA-C-027/decides/SA-S-2481	custom_importer_view
+CM-MIG-002	exact	decides	SA-C-027/decides/SA-S-3103	custom-import
+CM-MIG-003	exact	decides	SA-C-027/decides/SA-S-3231	product-export-templates
+CM-MIG-003	exact	decides	SA-C-027/decides/SA-S-3232	order-export-templates
+CM-MIG-003	exact	decides	SA-C-027/decides/SA-S-3233	export-templates
+CM-MIG-004	exact	decides	SA-C-010/decides/SA-S-2122	سجل التصدير
+CM-MIG-004	exact	decides	SA-C-010/decides/SA-S-2423	export_logs_management
+CM-MIG-004	exact	decides	SA-C-010/decides/SA-S-2640	export_logs_management
+CM-MIG-004	exact	decides	SA-C-010/decides/SA-S-3234	export-logs
+CM-MIG-005	exact	boundary	SA-C-302/boundary/SA-S-5122	المادة (4): المزايا المتاحة ضمن الخدمة
+CM-MIG-005	exact	decides	SA-C-302/decides/SA-S-5120	المادة (2): شروط الاستفادة من الخدمة
+CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0162	3. تخصيص الإسناد التلقائي لشركات الشحن
+CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0194	Overview
+CM-OPS-002	by landing	boundary	SA-C-234/boundary/SA-S-0174	# Security Considerations
+CM-OPS-002	by landing	boundary	SA-C-234/boundary/SA-S-0176	## OAuth
+CM-OPS-002	by landing	boundary	SA-C-234/boundary/SA-S-1006	Security Considerations
+CM-OPS-002	by landing	decides	SA-C-234/decides/SA-S-0175	## APIs
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1100	APIs
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1641	subscription.updated
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1644	subscription.charge.failed
@@ -349,6 +431,7 @@ CM-SEL-001	exact	decides	WC-C-100/decides/WC-S-5351	Introduction to WooCommerce 
 CM-SEL-002	by landing	boundary	SA-C-024/boundary/SA-S-1029	Digitals Product
 CM-SEL-002	by landing	boundary	SH-C-190/boundary/SH-S-7284	9.9 Third Party Services and Third Party Partners
 CM-SEL-002	by landing	decides	SH-C-190/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-SEL-002	exact	boundary	BC-C-001/boundary/BC-S-0023	digital products
 CM-SEL-002	exact	decides	SA-C-024/decides/SA-S-1999	إرسال محتوى المنتجات الرقمية
 CM-SEL-002	exact	decides	SA-C-024/decides/SA-S-2261	browse_digital_codes_logs
 CM-SEL-002	exact	decides	SA-C-024/decides/SA-S-2478	browse_digital_codes_logs
@@ -364,6 +447,9 @@ CM-SEL-002	exact	boundary	WC-C-066/boundary/WC-S-0363	add_eraser: WooCommerce Cu
 CM-SEL-002	exact	decides	WC-C-066/decides/WC-S-5393	woocommerce_file_download_method
 CM-SEL-002	exact	decides	WC-C-066/decides/WC-S-5394	woocommerce_downloads_require_login
 CM-SEL-002	exact	decides	WC-C-066/decides/WC-S-5395	woocommerce_downloads_grant_access_after_payment
+CM-SEL-002	exact	boundary	ZD-C-043/boundary/ZD-S-0008	Merchant APIs > Products > Digital Vouchers
+CM-SEL-002	exact	boundary	ZD-C-043/boundary/ZD-S-0802	POST /v1/products/{product-id}/downloadables/generate-s3-presigned-url/
+CM-SEL-002	exact	decides	ZD-C-043/decides/ZD-S-0590	المنتجات الرقمية
 CM-SEL-003	exact	decides	SH-C-190/decides/SH-S-5095	blockchain
 CM-SEL-004	by landing	boundary	SA-C-031/boundary/SA-S-1023	Order Reservations
 CM-SEL-004	exact	decides	SA-C-031/decides/SA-S-1994	إدارة الحجوزات
@@ -384,6 +470,11 @@ CM-SEL-006	exact	decides	SA-C-020/decides/SA-S-3510	advance-bundle-product
 CM-SEL-006	exact	decides	SA-C-020/decides/SA-S-3522	bundle-section-products-limit
 CM-SEL-006	exact	boundary	SH-C-188/boundary/SH-S-1100	unauthenticated_read_bundles
 CM-SEL-006	exact	boundary	WC-C-104/boundary/WC-S-5474	bundled_by; bundled_items
+CM-SEL-006	exact	boundary	ZD-C-089/boundary/ZD-S-0106	GET /v1/managers/store/discounts/bundle-offers
+CM-SEL-006	exact	decides	ZD-C-089/decides/ZD-S-0475	manage.store.bundleoffers
+CM-SEL-006	exact	decides	ZD-C-089/decides/ZD-S-0928	Add Dynamic Bundle
+CM-SEL-006	exact	decides	ZD-C-089/decides/ZD-S-1031	باقة النمو
+CM-SEL-006	exact	decides	ZD-C-089/decides/ZD-S-1032	عدد القطع
 CM-SEL-007	exact	decides	SA-C-020/decides/SA-S-2399	quick_donation_management
 CM-SEL-007	exact	decides	SA-C-020/decides/SA-S-2616	quick_donation_management
 CM-SEL-007	exact	decides	SA-C-020/decides/SA-S-3118	quick-donation

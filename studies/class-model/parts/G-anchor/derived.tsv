@@ -1,0 +1,15 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-MIG-001	salla	statements	core	Exports | Import & export | Import customers	SA-C-027/decides/SA-S-1997=plan: سلة بلس | SA-C-027/decides/SA-S-2059=plan: سلة بلس | SA-C-027/decides/SA-S-2189=plan: سلة سبيشل | SA-C-027/decides/SA-S-3102=the answering store (merchant@en) | SA-C-027/decides/SA-S-3165=plans: plus, pro, special | SA-C-027/decides/SA-S-3179=plans: plus, pro, special | SA-C-027/decides/SA-S-3224=the answering store (merchant@en) | SA-C-027/decides/SA-S-3225=plans: plus, pro, special | SA-C-027/decides/SA-S-3226=plans: plus, pro, special | SA-C-027/decides/SA-S-3227=plans: plus, pro, special | SA-C-027/decides/SA-S-3228=plans: plus, pro, special | SA-C-027/decides/SA-S-3229=plans: plus, pro, special | SA-C-027/decides/SA-S-3230=plans: plus, pro, special | SA-C-027/decides/SA-S-3519=the answering store (merchant@en)	SA-C-027/responsible:page not read;SA-C-027/reason:page not read	general
+CM-MIG-001	shopify	statements	core;extension-point	product:bulk-import		SH-C-010/reason:searched, not found;SH-C-020/reason:searched, not found	general
+CM-MIG-002	salla	statements	core	@salla.sa/ui-merchant-importer | Advanced import	SA-C-027/decides/SA-S-3103=the answering store (merchant@en)	SA-C-027/responsible:page not read;SA-C-027/reason:page not read	general
+CM-MIG-002	shopify	none-held					
+CM-MIG-003	salla	statements	core	Export templates	SA-C-027/decides/SA-S-3231=plans: plus, pro, special | SA-C-027/decides/SA-S-3232=plans: plus, pro, special | SA-C-027/decides/SA-S-3233=plans: plus, pro, special	SA-C-027/responsible:page not read;SA-C-027/reason:page not read	general
+CM-MIG-003	shopify	none-held					
+CM-MIG-004	salla	statements	core	Export log	SA-C-010/decides/SA-S-2122=plan: سلة برو | SA-C-010/decides/SA-S-3234=plans: pro, special	SA-C-010/responsible:page not read;SA-C-010/boundary:page not read;SA-C-027/responsible:page not read;SA-C-027/reason:page not read	general
+CM-MIG-004	shopify	none-held					
+CM-MIG-005	salla	statements	own-service	partners.salla.com/en/legal-en/ (store migration terms)			general
+CM-MIG-005	shopify	statements	not-stated				
+CM-OPS-001	salla	statements	core		SA-C-235/responsible/SA-S-0044=العمولات في برنامج التسويق بالعمولة (privacy-affiliate-plans)	SA-C-234/responsible:page not read;SA-C-235/where:page not read;SA-C-235/decides:page not read;SA-C-235/reason:page not read	general
+CM-OPS-001	shopify	statements	core	A Pods Architecture To Allow Shopify To Scale, disaster recovery			general
+CM-OPS-002	salla	statements	core	status page component list		SA-C-234/responsible:page not read	general
+CM-OPS-002	shopify	none-held					

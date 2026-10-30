@@ -1,0 +1,61 @@
+cap_id	platform	supports	key	why
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1805	dashboard link Import & export, /products/imports, in the products list
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1847	dashboard link Import customers, /customers/imports, in the customers list
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1057	Merchant API folder Exports: its own API for its own feature (C1)
+CM-MIG-001	salla	core	SA-C-027/boundary/SA-S-1057	Merchant API folder Exports (C1)
+CM-MIG-001	salla	core	SA-C-027/boundary/SA-S-1566	access scope exports / التصدير, read and read_write (C1)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-2257	staff permission import_export_management, group المنتجات (S7)
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-2474	import_export_management (إدارة الاستيراد والتصدير) in the permissions a partner can request: an interface for apps (S7)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-1997	plan line تصدير الطلبات under orders management, plan سلة بلس
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-2059	plan line استيراد العملاء under customers, plan سلة بلس
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-2189	plan line نقل البيانات بسلاسة, plan سلة سبيشل: what data it moves isn't stated
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3224	flag impex, released, on the answering store (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3225	flag import-products, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3226	flag export-products, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3165	flag import-customers, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3179	flag export-customers, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3229	flag export-product-orders, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3230	flag import-order-status, released, plans plus, pro, special (C6)
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3227	flag update-products, released: what it updates isn't stated
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3102	flag products-importer, not released (C6)
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3228	flag export-all-order-products, not released (C6)
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3519	flag products-competitor-import-banner, not released (C6)
+CM-MIG-001	shopify	core	SH-C-020/where/SH-S-5011	admin route product:bulk-import, path bulk/import, section Products
+CM-MIG-001	shopify	core	SH-C-020/decides/SH-S-5012	the route's eligibility: web client, entitlement products, beta 78e33675
+CM-MIG-001	shopify	core	SH-C-020/decides/SH-S-5017	admin route products:imports: permission MANAGE_PRODUCTS, beta 78e33675
+CM-MIG-001	shopify	core	SH-I-0906	staff permission Products > Export (C2, S7)
+CM-MIG-001	shopify	core	SH-I-0923	staff permission Customers > Export (C2, S7)
+CM-MIG-001	shopify	core	SH-I-0881	staff permission Orders > Export (C2, S7)
+CM-MIG-001	shopify	core	SH-I-0898	staff permission Drafts > Export (C2, S7)
+CM-MIG-001	shopify	core	SH-I-0916	staff permission Gift cards > Export (C2, S7)
+CM-MIG-001	shopify	extension-point	SH-I-1878	App Store category Store data importer apps: third parties' apps
+CM-MIG-002	salla	core	SA-C-027/where/SA-S-1804	dashboard link Advanced import, /importer, in the products list
+CM-MIG-002	salla	core	SA-C-027/where/SA-S-3587	dashboard app @salla.sa/ui-merchant-importer, path /importer
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-2263	staff permission custom_importer_management, group المنتجات (S7)
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-2264	staff permission custom_importer_view, group المنتجات (S7)
+CM-MIG-002	salla	shows	SA-C-027/decides/SA-S-2480	custom_importer_management (إدارة الاستيراد المتقدم) in the permissions a partner can request (S7)
+CM-MIG-002	salla	shows	SA-C-027/decides/SA-S-2481	custom_importer_view (الاطلاع على الاستيراد المتقدم) in the permissions a partner can request (S7)
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-3103	flag custom-import, released and enabled on the answering store (C6)
+CM-MIG-003	salla	core	SA-C-027/where/SA-S-1787	dashboard link Export templates, /orders/exports, in the orders list
+CM-MIG-003	salla	core	SA-C-027/where/SA-S-1807	dashboard link Export templates, /products/exports, in the products list
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3233	flag export-templates, released, plans plus, pro, special (C6)
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3231	flag product-export-templates, released, plans plus, pro, special (C6)
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3232	flag order-export-templates, released, plans plus, pro, special (C6)
+CM-MIG-004	salla	core	SA-C-027/where/SA-S-1890	dashboard link Export log, /logs/export, in the logs list
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-2122	plan line سجل التصدير among the advanced features, plan سلة برو
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-2423	staff permission export_logs_management, group إعدادات المتجر (S7)
+CM-MIG-004	salla	shows	SA-C-010/decides/SA-S-2640	export_logs_management (سجل التصدير) in the permissions a partner can request (S7)
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-3234	flag export-logs, released, plans pro, special (C6)
+CM-MIG-005	salla	shows	SA-C-302/where/SA-S-5119	the service's terms page among partners.salla.com's legal pages (sitemap entry)
+CM-MIG-005	salla	own-service	SA-C-302/responsible/SA-S-5121	names شركة منصة سلة للاتصالات وتقنية المعلومات as owner of the Salla platform that offers the service
+CM-MIG-005	salla	own-service	SA-C-302/reason/SA-S-5123	the platform provides a service to ease moving from other e-commerce platforms
+CM-MIG-005	salla	shows	SA-C-302/decides/SA-S-5120	eligibility: sales of at least 20,000 SAR in the last 12 months
+CM-MIG-005	salla	shows	SA-C-302/boundary/SA-S-5122	the previous platform's remaining balance carried over to the merchant's Salla balance, for the platforms Salla specifies
+CM-MIG-005	shopify	shows	SH-I-2302	help-center section Migrating and integrating QuickBooks Desktop POS with Shopify POS
+CM-OPS-001	salla	core	SA-I-1197	plan line استقرار المنصة وجاهزيتها للذروة (placed in SA-C-234; C2)
+CM-OPS-001	salla	core	SA-C-235/boundary/SA-S-0162	assigns the order to the next shipping company, in the predefined priority, when the first doesn't deliver to the customer's area
+CM-OPS-001	salla	core	SA-C-235/boundary/SA-S-0194	Salla tells the store a communication failed, in the communication apps' flow
+CM-OPS-001	salla	shows	SA-C-235/responsible/SA-S-0044	Salla exempt from liability for technical faults beyond its control and payment-gateway updates (affiliate commissions)
+CM-OPS-001	shopify	core	SH-C-181/where/SH-S-0673	each pod has a pair of data centers, one active, the other a recovery site
+CM-OPS-001	shopify	core	SH-C-181/reason/SH-S-0674	each shard fully isolated so a failure couldn't spiral into a platform outage
+CM-OPS-002	salla	core	SA-C-234/where/SA-S-0047	a line of the status page's component list: Merchant APIs - Operational

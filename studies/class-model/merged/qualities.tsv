@@ -15,3 +15,11 @@ CM-INV-005	salla	store-branch limit	"name": "store-branch", "limit": 5	SA-C-026/
 CM-INV-005	salla	more branches	زيادة عدد الفروع *برسوم إضافية	SA-C-026/decides/SA-S-2028	B-anchor
 CM-INV-005	salla	max_inventory_types	"max_inventory_types": 5	SA-C-025/decides/SA-S-3504	B-anchor
 CM-INV-008	woocommerce	minutes stock is held for an unpaid order, by default	'default' => '60',	WC-C-068/decides/WC-S-5402	B-woocommerce
+CM-INV-005	zid	branches or warehouses on the Growth plan	Inventory management across 2 branches or warehouses	ZD-C-085/decides/ZD-S-0372	B-zid
+CM-INV-005	zid	warehouses on the Professional plan	الباقة الاحترافية متاح بها إضافة و تفعيل 5 مخازن وفي حال تم تفعيل زد كاشير يتاح لك زيادة مخزن واحد لكل جهاز.	ZD-C-085/decides/ZD-S-1021	B-zid
+CM-INV-005	zid	warehouses on the large-business plan	باقة الأعمال الكبيرة عدد المخازن لا محدود.	ZD-C-085/decides/ZD-S-1022	B-zid
+CM-INV-008	zid	how long the product is held while card payment is entered	سوف يتم حجز المنتج بشكل تلقائي لمدة 30 دقيقة	ZD-C-100/decides/ZD-S-0965	B-zid
+CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801	B-zid
+CM-INV-005	bigcommerce	inventory locations on the Core, Growth, Scale and Performance plans	Up to 4 Up to 5 Up to 8 Custom	BC-C-005/decides/BC-S-0038	B-bigcommerce
+CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise plan: 100; can be customized by request	BC-C-005/decides/BC-S-0039	B-bigcommerce
+CM-MIG-005	salla	eligibility: the merchant's sales in the last 12 months	يجب أن يكون التاجر قد حقق مبيعات لا تقل عن 20,000 ريال سعودي خلال آخر 12 شهرًا	SA-C-302/decides/SA-S-5120	G-anchor

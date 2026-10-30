@@ -331,3 +331,174 @@ CM-CAT-013	shopify	extension-point	SH-I-1897	App Store category Pricing quote ap
 CM-CAT-013	salla	core	SA-C-020/where/SA-S-1751	setting Automatic pricing, under products settings (S8)	B-backfill-woocommerce
 CM-CAT-013	salla	core	SA-C-020/boundary/SA-S-1599	Salla's own API for its own feature (C1): webhook product.price.updated (تم تحديث سعر المنتج) (S8)	B-backfill-woocommerce
 CM-CAT-013	salla	shows	SA-C-020/decides/SA-S-3515	feature metal-pricing, plans plus, pro, special, not released: Salla names the feature (C6, S8)	B-backfill-woocommerce
+CM-CAT-001	zid	core	ZD-C-083/where/ZD-S-0914	Zid's own API group Merchant APIs > Products > Managing Products (C1)	B-zid
+CM-CAT-001	zid	core	ZD-C-083/boundary/ZD-S-0097	Zid's own API (C1): POST /v1/products/ under scope products.read_write	B-zid
+CM-CAT-001	zid	core	ZD-C-083/boundary/ZD-S-0060	Zid's own API (C1): webhook product.create	B-zid
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0915	plan line Add Products / إضافة منتجات, all four plans	B-zid
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0916	plan line Product Management - Bulk Add Products, growth and pro	B-zid
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0496	staff permission list.store.products	B-zid
+CM-CAT-001	zid	core	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2)	B-zid
+CM-CAT-001	zid	core	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2)	B-zid
+CM-CAT-001	zid	core	ZD-I-0246	plan line Quick Bulk Edit, placed in ZD-C-083 (C2)	B-zid
+CM-CAT-002	zid	core	ZD-I-0012	Zid's own API group Products > Product Attributes, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-002	zid	core	ZD-I-0013	Zid's own API group Products > Product Attribute Presets, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-002	zid	core	ZD-I-0014	Zid's own API group Products > Product Variants, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-003	zid	core	ZD-C-084/where/ZD-S-0009	Zid's own API group Products > Product Categories (C1)	B-zid
+CM-CAT-003	zid	core	ZD-C-084/boundary/ZD-S-0099	Zid's own API (C1): categories nesting endpoint, scope third_categories_write	B-zid
+CM-CAT-003	zid	core	ZD-C-084/boundary/ZD-S-0070	Zid's own API (C1): webhook category.create	B-zid
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-0917	plan line Product Categories / تصنيف المنتجات, all four plans	B-zid
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-0498	staff permission list.store.categories	B-zid
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-1020	a category's search-engine feature not in the free plan	B-zid
+CM-CAT-005	zid	core	ZD-I-0010	Zid's own API group Products > Product Brands, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-007	zid	core	ZD-I-0016	Zid's own API group Products > Product Images, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-010	zid	extension-point	ZD-I-0446	App Market category إيجاد المنتجات (Dropshipping), placed in ZD-C-070 (C2)	B-zid
+CM-CAT-012	zid	shows	ZD-I-0253	plan line Product Cost Report, placed in ZD-C-105: products carry a cost	B-zid
+CM-CAT-013	zid	core	ZD-I-0227	plan line Custom Product Pricing, placed in ZD-C-083 (C2)	B-zid
+CM-CAT-013	zid	core	ZD-I-0238	plan line Update Product Prices, placed in ZD-C-083 (C2)	B-zid
+CM-CAT-014	zid	core	ZD-I-0011	Zid's own API group Products > Product Badge, placed in ZD-C-083 (C1, C2)	B-zid
+CM-CAT-015	zid	core	ZD-I-0249	plan line Barcode Printing, placed in ZD-C-083 (C2)	B-zid
+CM-INV-001	zid	core	ZD-I-0019	Zid's own API group Products > Product Stock, placed in ZD-C-085 (C1, C2)	B-zid
+CM-INV-001	zid	core	ZD-C-085/decides/ZD-S-0918	plan line Inventory Management / إدارة المخزون, growth and pro	B-zid
+CM-INV-001	zid	core	ZD-I-0241	plan line Export Full Quantities, placed in ZD-C-085 (C2)	B-zid
+CM-INV-001	zid	core	ZD-I-0247	plan line Product Management - Update Product Quantities, placed in ZD-C-085 (C2)	B-zid
+CM-INV-001	zid	core	ZD-I-0468	product line Inventory Management, placed in ZD-C-085 (C2)	B-zid
+CM-INV-002	zid	core	ZD-I-0244	plan line Inventory Management Logs, placed in ZD-C-085 (C2)	B-zid
+CM-INV-003	zid	core	ZD-I-0252	plan line Inventory Count / جرد المخزون, placed in ZD-C-085 (C2)	B-zid
+CM-INV-003	zid	core	ZD-I-0405	Professional plan card: inventory counting, placed in ZD-C-085 (C2)	B-zid
+CM-INV-005	zid	core	ZD-C-085/where/ZD-S-0023	Zid's own API (C1): Inventories group's Create Location	B-zid
+CM-INV-005	zid	core	ZD-C-085/boundary/ZD-S-0100	Zid's own API (C1): POST /v1/locations/	B-zid
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-0493	staff permission manage.store.inventory.addresses, Manage inventory locations	B-zid
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-0372	plan line: inventory across 2 branches or warehouses, Growth	B-zid
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-1021	Professional plan: 5 warehouses, one more per Zid Cashier device	B-zid
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-1022	large-business plan: unlimited warehouses	B-zid
+CM-INV-005	zid	core	ZD-I-0402	Professional plan card: 5 branches or warehouses, placed in ZD-C-085 (C2)	B-zid
+CM-INV-005	zid	core	ZD-C-085/boundary/ZD-S-1024	more than one stock location; the shipping company goes to the chosen one	B-zid
+CM-INV-005	zid	core	ZD-I-0243	plan line Sales by Inventory Location, placed in ZD-C-085 (C2)	B-zid
+CM-INV-005	zid	outside	ZD-C-085/responsible/ZD-S-0920	Zid doesn't store products; fulfillment services provide storage	B-zid
+CM-INV-006	zid	core	ZD-I-0254	plan line Transfer Inventory Between Branches, placed in ZD-C-085 (C2)	B-zid
+CM-INV-006	zid	core	ZD-I-0405	Professional plan card: inventory transfer, placed in ZD-C-085 (C2)	B-zid
+CM-INV-008	zid	core	ZD-C-100/decides/ZD-S-0965	built-in: the product held 30 minutes while card payment is entered	B-zid
+CM-INV-009	zid	core	ZD-C-085/decides/ZD-S-0919	plan line Inventory Withdrawal Priority, growth and pro	B-zid
+CM-INV-009	zid	core	ZD-I-0240	plan line Inventory Withdrawal Priority, placed in ZD-C-085 (C2)	B-zid
+CM-INV-009	zid	core	ZD-C-085/decides/ZD-S-1023	not in the free plans	B-zid
+CM-INV-010	zid	core	ZD-I-0257	plan line Display Products by Customer City, placed in ZD-C-085 (C2)	B-zid
+CM-INV-010	zid	core	ZD-I-0405	Professional plan card: display by customer city, placed in ZD-C-085 (C2)	B-zid
+CM-SEL-001	zid	extension-point	ZD-I-0438	App Market category الحجوزات والاشتراكات, placed in ZD-C-070 (C2)	B-zid
+CM-SEL-002	zid	core	ZD-C-043/where/ZD-S-0022	Zid's own API group Products > Digital Products, Create Downloadable Product (C1)	B-zid
+CM-SEL-002	zid	core	ZD-C-043/boundary/ZD-S-0008	Zid's own API group Products > Digital Vouchers (C1)	B-zid
+CM-SEL-002	zid	core	ZD-C-043/boundary/ZD-S-0802	Zid's own API (C1): downloadables pre-signed upload URL, products.read_write	B-zid
+CM-SEL-002	zid	core	ZD-C-043/where/ZD-S-0801	Zid's own API (C1): upload a file directly to Amazon S3 storage	B-zid
+CM-SEL-002	zid	shows	ZD-C-043/decides/ZD-S-0590	Zid Pay accepts some digital products on the provider's assessment	B-zid
+CM-SEL-004	zid	extension-point	ZD-I-0438	App Market category الحجوزات والاشتراكات, placed in ZD-C-070 (C2)	B-zid
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-0928	plan line Add Dynamic Bundle, growth and pro	B-zid
+CM-SEL-006	zid	core	ZD-I-0242	the plan line under Product & Inventory Management, placed in ZD-C-089 (C2)	B-zid
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-0475	staff permission manage.store.bundleoffers	B-zid
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-1031	the flexible bundle on the Growth plan	B-zid
+CM-SEL-006	zid	core	ZD-C-089/where/ZD-S-0026	Zid's own API group Marketing > Bundle Offers (C1)	B-zid
+CM-SEL-006	zid	core	ZD-C-089/boundary/ZD-S-0106	Zid's own API (C1): scope third_bundle_offers_read	B-zid
+CM-SEL-006	zid	shows	ZD-C-089/decides/ZD-S-1032	bundles rest on the number of pieces, not the cart's value	B-zid
+CM-SEL-006	zid	shows	ZD-C-089/reason/ZD-S-1033	bundles are not ordinary discounts	B-zid
+CM-INV-009	salla	core	SA-C-026/where/SA-S-1755	Salla's own setting Branch and warehouse priority order under products settings; joined on role with ZD-S-0919 (a reading)	B-backfill-zid
+CM-CAT-001	bigcommerce	core	BC-C-001/where/BC-S-0017	its own Catalog API manages products (C1)	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0018	settings resource Catalog	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0019	settings resource Storefront Product	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-C-001/decides/BC-S-0020	plan line Products, file storage, and bandwidth, on all four plans	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-C-001/boundary/BC-S-0021	its own API (C1): scope store_v2_products	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-C-001/boundary/BC-S-0022	its own API (C1): webhook store/product/created	B-bigcommerce
+CM-CAT-001	bigcommerce	core	BC-I-0525	product line Catalog management, placed in BC-C-001 (C2)	B-bigcommerce
+CM-CAT-001	bigcommerce	extension-point	BC-I-0480	app marketplace category Catalog & Order Management, placed in BC-C-001 (C2)	B-bigcommerce
+CM-CAT-002	bigcommerce	core	BC-I-0022	its own API group Catalog - Product variants, placed in BC-C-001 (C1, C2)	B-bigcommerce
+CM-CAT-002	bigcommerce	core	BC-I-0023	its own API group Catalog - Product variant options, placed in BC-C-001 (C1, C2)	B-bigcommerce
+CM-CAT-002	bigcommerce	core	BC-I-0021	its own API group Catalog - Product modifiers, placed in BC-C-001 (C1, C2)	B-bigcommerce
+CM-CAT-002	bigcommerce	core	BC-I-0162	its own API (C1): webhook store/option/updated, placed in BC-C-001 (C2)	B-bigcommerce
+CM-CAT-002	bigcommerce	core	BC-I-0161	its own API (C1): webhook store/modifier/updated, placed in BC-C-001 (C2)	B-bigcommerce
+CM-CAT-003	bigcommerce	core	BC-C-003/where/BC-S-0026	its own Catalog API manages categories (C1)	B-bigcommerce
+CM-CAT-003	bigcommerce	core	BC-C-003/where/BC-S-0027	its own API (C1): category trees endpoints, counterparts of categories	B-bigcommerce
+CM-CAT-003	bigcommerce	core	BC-C-003/decides/BC-S-0028	settings resource Storefront Category	B-bigcommerce
+CM-CAT-003	bigcommerce	core	BC-C-003/boundary/BC-S-0021	its own API (C1): scope store_v2_products covers categories	B-bigcommerce
+CM-CAT-003	bigcommerce	core	BC-C-003/boundary/BC-S-0029	its own API (C1): webhook store/category/created	B-bigcommerce
+CM-CAT-005	bigcommerce	core	BC-C-002/where/BC-S-0024	its own API (C1): Catalog brands endpoints	B-bigcommerce
+CM-CAT-005	bigcommerce	core	BC-C-002/boundary/BC-S-0021	its own API (C1): scope store_v2_products covers brands	B-bigcommerce
+CM-CAT-005	bigcommerce	core	BC-C-002/boundary/BC-S-0025	its own API (C1): webhook store/brand/metafield/created	B-bigcommerce
+CM-CAT-013	bigcommerce	core	BC-C-008/where/BC-S-0053	its own Pricing API: product pricing on BigCommerce-hosted storefronts (C1)	B-bigcommerce
+CM-CAT-013	bigcommerce	shows	BC-C-008/boundary/BC-S-0054	the Storefront API has no scopes, authenticates by CORS	B-bigcommerce
+CM-CAT-013	bigcommerce	core	BC-C-001/where/BC-S-0017	its own Catalog API manages bulk pricing rules (C1)	B-bigcommerce
+CM-INV-001	bigcommerce	extension-point	BC-C-004/where/BC-S-0030	resources allow developers to create BigCommerce apps and in-house solutions	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/where/BC-S-0031	its own Inventory API processes inventory adjustments (C1)	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/decides/BC-S-0032	settings resource Inventory	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/decides/BC-S-0033	settings resource Inventory Notifications	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/boundary/BC-S-0034	its own API (C1): scope store_inventory	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/boundary/BC-S-0035	its own API (C1): webhook stock_changed, manual merchant adjustments	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-C-004/reason/BC-S-0036	built-in strict ordering of concurrent requests to avoid overselling	B-bigcommerce
+CM-INV-001	bigcommerce	core	BC-I-0527	product line Inventory management, placed in BC-C-004 (C2)	B-bigcommerce
+CM-INV-001	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold inventories as the source of truth	B-bigcommerce
+CM-INV-004	bigcommerce	core	BC-I-0293	its own API (C1): webhook low_stock_reached, placed in BC-C-004 (C2)	B-bigcommerce
+CM-INV-004	bigcommerce	core	BC-I-0294	its own API (C1): webhook out_of_stock_reached, placed in BC-C-004 (C2)	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/where/BC-S-0037	Locations allow merchants to track inventory across locations	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0038	plan line Inventory locations, by plan	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0039	Enterprise plan: 100 locations	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/decides/BC-S-0040	Aggregated stock, by request	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0041	its own API (C1): scope store_locations	B-bigcommerce
+CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0042	its own API (C1): webhook store/inventory/location/created	B-bigcommerce
+CM-INV-005	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold locations as the source of truth	B-bigcommerce
+CM-SEL-002	bigcommerce	core	BC-C-001/boundary/BC-S-0023	files added to digital products via its control panel or WebDav	B-bigcommerce
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1805	dashboard link Import & export, /products/imports, in the products list	G-anchor
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1847	dashboard link Import customers, /customers/imports, in the customers list	G-anchor
+CM-MIG-001	salla	core	SA-C-027/where/SA-S-1057	Merchant API folder Exports: its own API for its own feature (C1)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/boundary/SA-S-1057	Merchant API folder Exports (C1)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/boundary/SA-S-1566	access scope exports / التصدير, read and read_write (C1)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-2257	staff permission import_export_management, group المنتجات (S7)	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-2474	import_export_management (إدارة الاستيراد والتصدير) in the permissions a partner can request: an interface for apps (S7)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-1997	plan line تصدير الطلبات under orders management, plan سلة بلس	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-2059	plan line استيراد العملاء under customers, plan سلة بلس	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-2189	plan line نقل البيانات بسلاسة, plan سلة سبيشل: what data it moves isn't stated	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3224	flag impex, released, on the answering store (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3225	flag import-products, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3226	flag export-products, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3165	flag import-customers, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3179	flag export-customers, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3229	flag export-product-orders, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	core	SA-C-027/decides/SA-S-3230	flag import-order-status, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3227	flag update-products, released: what it updates isn't stated	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3102	flag products-importer, not released (C6)	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3228	flag export-all-order-products, not released (C6)	G-anchor
+CM-MIG-001	salla	shows	SA-C-027/decides/SA-S-3519	flag products-competitor-import-banner, not released (C6)	G-anchor
+CM-MIG-001	shopify	core	SH-C-020/where/SH-S-5011	admin route product:bulk-import, path bulk/import, section Products	G-anchor
+CM-MIG-001	shopify	core	SH-C-020/decides/SH-S-5012	the route's eligibility: web client, entitlement products, beta 78e33675	G-anchor
+CM-MIG-001	shopify	core	SH-C-020/decides/SH-S-5017	admin route products:imports: permission MANAGE_PRODUCTS, beta 78e33675	G-anchor
+CM-MIG-001	shopify	core	SH-I-0906	staff permission Products > Export (C2, S7)	G-anchor
+CM-MIG-001	shopify	core	SH-I-0923	staff permission Customers > Export (C2, S7)	G-anchor
+CM-MIG-001	shopify	core	SH-I-0881	staff permission Orders > Export (C2, S7)	G-anchor
+CM-MIG-001	shopify	core	SH-I-0898	staff permission Drafts > Export (C2, S7)	G-anchor
+CM-MIG-001	shopify	core	SH-I-0916	staff permission Gift cards > Export (C2, S7)	G-anchor
+CM-MIG-001	shopify	extension-point	SH-I-1878	App Store category Store data importer apps: third parties' apps	G-anchor
+CM-MIG-002	salla	core	SA-C-027/where/SA-S-1804	dashboard link Advanced import, /importer, in the products list	G-anchor
+CM-MIG-002	salla	core	SA-C-027/where/SA-S-3587	dashboard app @salla.sa/ui-merchant-importer, path /importer	G-anchor
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-2263	staff permission custom_importer_management, group المنتجات (S7)	G-anchor
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-2264	staff permission custom_importer_view, group المنتجات (S7)	G-anchor
+CM-MIG-002	salla	shows	SA-C-027/decides/SA-S-2480	custom_importer_management (إدارة الاستيراد المتقدم) in the permissions a partner can request (S7)	G-anchor
+CM-MIG-002	salla	shows	SA-C-027/decides/SA-S-2481	custom_importer_view (الاطلاع على الاستيراد المتقدم) in the permissions a partner can request (S7)	G-anchor
+CM-MIG-002	salla	core	SA-C-027/decides/SA-S-3103	flag custom-import, released and enabled on the answering store (C6)	G-anchor
+CM-MIG-003	salla	core	SA-C-027/where/SA-S-1787	dashboard link Export templates, /orders/exports, in the orders list	G-anchor
+CM-MIG-003	salla	core	SA-C-027/where/SA-S-1807	dashboard link Export templates, /products/exports, in the products list	G-anchor
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3233	flag export-templates, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3231	flag product-export-templates, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-003	salla	core	SA-C-027/decides/SA-S-3232	flag order-export-templates, released, plans plus, pro, special (C6)	G-anchor
+CM-MIG-004	salla	core	SA-C-027/where/SA-S-1890	dashboard link Export log, /logs/export, in the logs list	G-anchor
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-2122	plan line سجل التصدير among the advanced features, plan سلة برو	G-anchor
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-2423	staff permission export_logs_management, group إعدادات المتجر (S7)	G-anchor
+CM-MIG-004	salla	shows	SA-C-010/decides/SA-S-2640	export_logs_management (سجل التصدير) in the permissions a partner can request (S7)	G-anchor
+CM-MIG-004	salla	core	SA-C-010/decides/SA-S-3234	flag export-logs, released, plans pro, special (C6)	G-anchor
+CM-MIG-005	salla	shows	SA-C-302/where/SA-S-5119	the service's terms page among partners.salla.com's legal pages (sitemap entry)	G-anchor
+CM-MIG-005	salla	own-service	SA-C-302/responsible/SA-S-5121	names شركة منصة سلة للاتصالات وتقنية المعلومات as owner of the Salla platform that offers the service	G-anchor
+CM-MIG-005	salla	own-service	SA-C-302/reason/SA-S-5123	the platform provides a service to ease moving from other e-commerce platforms	G-anchor
+CM-MIG-005	salla	shows	SA-C-302/decides/SA-S-5120	eligibility: sales of at least 20,000 SAR in the last 12 months	G-anchor
+CM-MIG-005	salla	shows	SA-C-302/boundary/SA-S-5122	the previous platform's remaining balance carried over to the merchant's Salla balance, for the platforms Salla specifies	G-anchor
+CM-MIG-005	shopify	shows	SH-I-2302	help-center section Migrating and integrating QuickBooks Desktop POS with Shopify POS	G-anchor
+CM-OPS-001	salla	core	SA-I-1197	plan line استقرار المنصة وجاهزيتها للذروة (placed in SA-C-234; C2)	G-anchor
+CM-OPS-001	salla	core	SA-C-235/boundary/SA-S-0162	assigns the order to the next shipping company, in the predefined priority, when the first doesn't deliver to the customer's area	G-anchor
+CM-OPS-001	salla	core	SA-C-235/boundary/SA-S-0194	Salla tells the store a communication failed, in the communication apps' flow	G-anchor
+CM-OPS-001	salla	shows	SA-C-235/responsible/SA-S-0044	Salla exempt from liability for technical faults beyond its control and payment-gateway updates (affiliate commissions)	G-anchor
+CM-OPS-001	shopify	core	SH-C-181/where/SH-S-0673	each pod has a pair of data centers, one active, the other a recovery site	G-anchor
+CM-OPS-001	shopify	core	SH-C-181/reason/SH-S-0674	each shard fully isolated so a failure couldn't spiral into a platform outage	G-anchor
+CM-OPS-002	salla	core	SA-C-234/where/SA-S-0047	a line of the status page's component list: Merchant APIs - Operational	G-anchor

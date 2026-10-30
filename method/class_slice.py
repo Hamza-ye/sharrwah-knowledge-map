@@ -211,7 +211,13 @@ def cmd_statements(a):
         if r["concern_id"] in want and (not a.placement or r["placement"] == a.placement):
             show_statement(r, a.width, a.full)
             n += 1
-    print(f"# {n} statements")
+    m = 0
+    if not a.placement or a.placement == "inventory":
+        for r in inventory_items(a.platform):
+            if set(r["concern_ids"]) & want:
+                show_statement(r, a.width, a.full)
+                m += 1
+    print(f"# {n} statements, and {m} inventory entries Q1 placed in these concerns (cite one by its id where no statement covers it)")
 
 
 def cmd_key(a):
@@ -402,7 +408,7 @@ def main():
     s = sub.add_parser("concerns"); s.add_argument("--platform", required=True, choices=PLATFORMS)
     s.add_argument("--domain"); s.add_argument("--all", action="store_true"); s.add_argument("--where", action="store_true")
     s = sub.add_parser("statements"); s.add_argument("--platform", required=True, choices=PLATFORMS)
-    s.add_argument("--concerns", required=True, nargs="+"); s.add_argument("--placement", choices=PLACEMENTS)
+    s.add_argument("--concerns", required=True, nargs="+"); s.add_argument("--placement", choices=PLACEMENTS + ("inventory",))
     s.add_argument("--width", type=int, default=200); s.add_argument("--full", action="store_true")
     s = sub.add_parser("key"); s.add_argument("keys", nargs="+")
     s = sub.add_parser("search"); s.add_argument("--platform", required=True, choices=PLATFORMS)
