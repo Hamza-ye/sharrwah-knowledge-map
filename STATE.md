@@ -123,9 +123,9 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 - **Cost:** agents 19.0 million (the extent brief's inspection 4.2, the plan-change reading 9.6, the register's re-status 5.2); the coordinating session 64.5 million. The coordinating session's own tokens since S-02 began: 1,052 million.
 - **PR #8** (S-02 and the intent) is ready to merge on the founder's word. The work continues on the same branch. Once PR #8 is merged, the branch restarts from `main` and Stage 4A goes in a new pull request.
 
-**Stage 4A, in the fresh coordinating session (from 23:20 UTC on 29 October):**
+**Stage 4A, in the fresh coordinating session (from 23:41 UTC on 29 October):**
 - **The evidence is set up** as "To resume" says: observed-sh and observed-sa cloned since 5 October, with `b46731d0` and `145f137` present; other-product-class cloned whole from the founder's repository, at `0d79b794`, so the mirror branch is no longer needed here (said to the founder); the WooCommerce release checked against its sha256 and unpacked. `method/check_surface.py` exits 0.
-- **The orientation page** is rebuilt for the intent and the work's place now, and published to the same URL (version 4). Its 233 links resolve at their commits, and its 41 quotes are found on their pinned lines (`method/check_report.py`, on a markdown rendering of the page).
+- **The orientation page** is rebuilt for the intent and the work's place now, and published to the same URL (version 4); then updated for the founder's change of 30 October, folded at `7ad5cfda` by the session that folded the intent (version 5: GM brings the architecture plan for the founder's go, and line (3) is out). Its 241 links resolve at their commits, and its 41 quotes are found on their pinned lines (`method/check_report.py`, on a markdown rendering of the page).
 - **Step 1.2 has begun:** the inspection of `B-extent.md`, by an agent that wrote none of it, into `studies/class-model/inspection-B.md`.
 
 **Next:**
