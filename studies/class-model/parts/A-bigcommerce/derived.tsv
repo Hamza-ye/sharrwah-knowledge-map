@@ -26,3 +26,24 @@ CM-STF-002	bigcommerce	none-held
 CM-STF-003	bigcommerce	none-held					
 CM-STF-004	bigcommerce	none-held					
 CM-STF-005	bigcommerce	none-held					
+CM-TRU-001	bigcommerce	none-held					
+CM-TRU-002	bigcommerce	none-held					
+CM-TRU-003	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/system-logs		BC-C-060/decides:page not read;BC-C-060/responsible:stated only in general terms;BC-C-060/boundary:searched, not found;BC-C-060/reason:searched, not found	general
+CM-TRU-004	bigcommerce	none-held					
+CM-TRU-005	bigcommerce	statements	not-stated			BC-C-086/reason:searched, not found	
+CM-TRU-006	bigcommerce	statements	core	/developer/api-reference/rest/storefront/consent	BC-C-037/decides/BC-S-0216=Catalyst storefronts | BC-C-037/responsible/BC-S-0217=Catalyst storefronts	BC-C-037/reason:searched, not found	general
+CM-TRU-007	bigcommerce	statements	not-stated			BC-C-081/reason:searched, not found	
+CM-TRU-008	bigcommerce	none-held					
+CM-TRU-009	bigcommerce	statements	not-stated			BC-C-085/where:searched, not found;BC-C-085/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-TRU-010	bigcommerce	statements	not-stated	Anti-Corruption, Export and Sanctions Compliance		BC-C-080/responsible:searched, not found;BC-C-080/reason:searched, not found;BC-C-085/where:searched, not found;BC-C-085/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-TRU-011	bigcommerce	statements	core	Protocol		BC-C-088/responsible:stated only in general terms	general
+CM-TRU-012	bigcommerce	none-held					
+CM-TRU-013	bigcommerce	statements	core	Exhibit B		BC-C-081/reason:searched, not found	general
+CM-TRU-014	bigcommerce	statements	core;outside	Amazon | Cloudflare | Data Transfer | Google		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found	general
+CM-TRU-015	bigcommerce	statements	core;outside	Amazon | Cloudflare | Google | Subprocessors		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found;BC-C-083/reason:searched, not found	general
+CM-TRU-016	bigcommerce	none-held					
+CM-TRU-017	bigcommerce	none-held					
+CM-TRU-018	bigcommerce	statements	core	PCI-compliant payments server | Tier 1 certifications		BC-C-078/responsible:stated only in general terms;BC-C-078/reason:searched, not found	general
+CM-TRU-019	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-TRU-020	bigcommerce	none-held					
+CM-TRU-021	bigcommerce	none-held					

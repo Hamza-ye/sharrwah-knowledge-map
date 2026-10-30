@@ -2,3 +2,8 @@ cap_id	platform	quality	value	key
 CM-PLN-001	bigcommerce	GMV cap per plan (Core, Growth, Scale, Performance)	Up to $30K TTM Up to $100K TTM $33,333/mo* Custom	BC-C-030/decides/BC-S-0185
 CM-PLN-001	bigcommerce	GMV at which Scale upgrades to Performance	Once TTM GMV reaches $2 million, the account will automatically upgrade to Performance.	BC-C-030/decides/BC-S-0187
 CM-PLN-004	bigcommerce	interest on late fees, EU and UK	If Service fees are not paid on the Billing Date, interest will accrue on such outstanding fees at the rate of 8% above the European Central Bank’s base rate per annum.	BC-C-030/decides/BC-S-0189
+CM-TRU-018	bigcommerce	PCI DSS validation	BigCommerce is a PCI DSS compliant service provider and validates annually all requirements (1-12) including as a shared hosting provider.	BC-C-028/responsible/BC-S-0169
+CM-TRU-018	bigcommerce	Tier 1 certifications	an ever-growing list of Tier 1 certifications including ISO, SOC, PCI, FIPS, RH-ISAC, GDPR, and CCPA	BC-C-078/where/BC-S-0421
+CM-TRU-014	bigcommerce	data location, Google (infrastructure hosting)	USA, Germany, or Australia	BC-C-082/where/BC-S-0446
+CM-TRU-014	bigcommerce	data location, Amazon (data hosting)	Hosting customer / product catalog data, feed data, logs, etc. USA	BC-C-082/where/BC-S-0447
+CM-TRU-014	bigcommerce	data location, Cloudflare (DDoS mitigation and CDN)	USA, with globally decentralized CDN	BC-C-082/where/BC-S-0448

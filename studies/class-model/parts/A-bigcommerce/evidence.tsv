@@ -47,3 +47,74 @@ CM-STF-001	bigcommerce	core	BC-C-061/where/BC-S-0333	its own GraphQL Account API
 CM-STF-001	bigcommerce	core	BC-C-061/boundary/BC-S-0335	its own scope account_users_write
 CM-STF-001	bigcommerce	core	BC-I-0375	its own scope account_users_read
 CM-STF-001	bigcommerce	core	BC-I-0377	its own scope account_users_delete
+CM-TRU-003	bigcommerce	core	BC-C-060/where/BC-S-0331	its own Staff Action Logs endpoint to audit staff users' actions in the control panel
+CM-TRU-005	bigcommerce	shows	BC-C-086/responsible/BC-S-0472	the merchant keeps a privacy policy on how it handles its users' personal information
+CM-TRU-006	bigcommerce	core	BC-C-037/where/BC-S-0215	its own Storefront Cookie Consent API for shoppers' consent preferences
+CM-TRU-006	bigcommerce	core	BC-C-037/decides/BC-S-0216	a storefront-level control panel setting controls cookie consent
+CM-TRU-006	bigcommerce	shows	BC-C-037/boundary/BC-S-0218	the consent API authenticates by CORS headers, no scopes
+CM-TRU-006	bigcommerce	shows	BC-C-037/responsible/BC-S-0217	store owners solely responsible for privacy-law compliance of the storefront
+CM-TRU-007	bigcommerce	shows	BC-C-081/boundary/BC-S-0444	shopper requests forwarded to merchants, not actioned by Commerce
+CM-TRU-009	bigcommerce	shows	BC-C-085/decides/BC-S-0465	Lawful Purposes Only: uses Commerce determines unlawful or offensive barred
+CM-TRU-009	bigcommerce	shows	BC-C-086/decides/BC-S-0470	Commerce may remove Stores or Materials it believes violate Laws or the Agreement
+CM-TRU-009	bigcommerce	shows	BC-I-0460	legal agreement Acceptable Use Policy
+CM-TRU-010	bigcommerce	shows	BC-C-080/where/BC-S-0435	the merchant's anti-corruption, export and sanctions representations
+CM-TRU-010	bigcommerce	shows	BC-C-080/responsible/BC-S-0437	the merchant ensures its parties and customers are not in sanctioned regions
+CM-TRU-010	bigcommerce	shows	BC-C-080/responsible/BC-S-0438	the merchant's risk-based compliance programme and sanctions screenings
+CM-TRU-010	bigcommerce	shows	BC-C-080/boundary/BC-S-0439	the merchant cooperates with Commerce on sanctions and ABAC laws
+CM-TRU-010	bigcommerce	shows	BC-C-085/responsible/BC-S-0466	the merchant verifies the legality of highly regulated products
+CM-TRU-010	bigcommerce	shows	BC-C-085/responsible/BC-S-0467	the merchant solely responsible that its products comply with laws
+CM-TRU-010	bigcommerce	shows	BC-C-085/boundary/BC-S-0468	Commerce not liable for regulatory changes affecting regulated products
+CM-TRU-010	bigcommerce	shows	BC-C-086/boundary/BC-S-0473	the merchant's own agreement with Your Users
+CM-TRU-011	bigcommerce	core	BC-C-088/where/BC-S-0478	Commerce complies with the DMCA for copyright infringement
+CM-TRU-011	bigcommerce	core	BC-C-088/decides/BC-S-0479	Commerce may remove or block Your Materials on notice of infringement
+CM-TRU-011	bigcommerce	core	BC-C-088/boundary/BC-S-0480	written notification to Commerce's Intellectual Property Agent
+CM-TRU-011	bigcommerce	core	BC-I-0463	legal agreement Infringing Materials Protocol
+CM-TRU-011	bigcommerce	shows	BC-C-088/reason/BC-S-0481	the protocol applied to other IP infringement allegations
+CM-TRU-013	bigcommerce	core	BC-C-081/where/BC-S-0440	the DPA's Exhibit B, Commerce.com Specific Data Processing Terms
+CM-TRU-013	bigcommerce	core	BC-C-081/decides/BC-S-0441	the Services not intended to process sensitive personal data
+CM-TRU-013	bigcommerce	core	BC-C-081/responsible/BC-S-0442	a Commerce Entity acts as Processor on the customer's instructions
+CM-TRU-013	bigcommerce	core	BC-C-081/responsible/BC-S-0443	Commerce as Processor of shoppers' information; the Merchant as Controller
+CM-TRU-013	bigcommerce	core	BC-I-0468	legal agreement Data Processing Addendum
+CM-TRU-013	bigcommerce	core	BC-I-0457	legal agreement Privacy Policy (Commerce.com Specific)
+CM-TRU-014	bigcommerce	core	BC-C-082/where/BC-S-0445	Commerce.com transfers, processes and stores Personal Data where it or its Subprocessors operate
+CM-TRU-014	bigcommerce	core	BC-C-082/where/BC-S-0449	Personal Data may be transmitted outside where collected, to the United States included
+CM-TRU-014	bigcommerce	core	BC-C-082/responsible/BC-S-0451	Commerce.com notifies if it can no longer meet the required protection
+CM-TRU-014	bigcommerce	core	BC-C-082/boundary/BC-S-0452	participant in the EU-U.S. Data Privacy Framework and its UK and Swiss Extensions
+CM-TRU-014	bigcommerce	core	BC-C-082/boundary/BC-S-0453	the EU Standard Contractual Clauses of 4 June 2021
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0446	Google: infrastructure hosting, USA, Germany or Australia
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon: data hosting of catalogue, feed data and logs, USA
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare: DDoS mitigation and CDN, USA with a decentralized CDN
+CM-TRU-015	bigcommerce	core	BC-C-083/where/BC-S-0454	Commerce.com's current Subprocessors set forth on its data-processors page
+CM-TRU-015	bigcommerce	core	BC-C-083/decides/BC-S-0456	the DPA is the general written authorization to engage Subprocessors
+CM-TRU-015	bigcommerce	core	BC-C-083/responsible/BC-S-0458	no PII to subprocessors without security, privacy and transfer assessments and an agreement
+CM-TRU-015	bigcommerce	shows	BC-C-083/responsible/BC-S-0457	third parties provide hosting services essential to the Services
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0446	Google, a subprocessor: infrastructure hosting
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon, a subprocessor: data hosting
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare, a subprocessor: DDoS mitigation, threat detection and CDN
+CM-TRU-015	bigcommerce	shows	BC-I-0550	subprocessor list entry: Atlassian
+CM-TRU-015	bigcommerce	shows	BC-I-0552	subprocessor list entry: Confluent
+CM-TRU-015	bigcommerce	shows	BC-I-0554	subprocessor list entry: Sentry I/O by Functional Software
+CM-TRU-015	bigcommerce	shows	BC-I-0555	subprocessor list entry: Snowflake
+CM-TRU-015	bigcommerce	shows	BC-I-0556	subprocessor list entry: The Functionary
+CM-TRU-015	bigcommerce	shows	BC-I-0557	subprocessor list entry: Sysdig
+CM-TRU-015	bigcommerce	shows	BC-I-0558	subprocessor list entry: Sumo Logic
+CM-TRU-015	bigcommerce	shows	BC-I-0559	subprocessor list entry: Relyance AI
+CM-TRU-015	bigcommerce	shows	BC-I-0560	subprocessor list entry: ServiceNow Cloud Observability
+CM-TRU-015	bigcommerce	shows	BC-I-0561	subprocessor list entry: Teleport (Gravitational Inc)
+CM-TRU-015	bigcommerce	shows	BC-I-0562	subprocessor list entry: EPAM
+CM-TRU-015	bigcommerce	shows	BC-I-0563	subprocessor list entry: Microsoft
+CM-TRU-015	bigcommerce	shows	BC-I-0564	subprocessor list entry: AgileBits, Inc.
+CM-TRU-015	bigcommerce	shows	BC-I-0565	subprocessor list entry: NewRelic
+CM-TRU-015	bigcommerce	shows	BC-I-0566	subprocessor list entry: Cube27
+CM-TRU-015	bigcommerce	shows	BC-I-0567	subprocessor list entry: Microsourcing
+CM-TRU-015	bigcommerce	shows	BC-I-0568	subprocessor list entry: FDX South Africa
+CM-TRU-015	bigcommerce	shows	BC-I-0569	subprocessor list entry: Noibu
+CM-TRU-018	bigcommerce	core	BC-C-028/where/BC-S-0165	the Payment Processing API uses BigCommerce's PCI-compliant payments server
+CM-TRU-018	bigcommerce	core	BC-C-028/responsible/BC-S-0167	Commerce responsible for cardholder data security to the extent it controls it
+CM-TRU-018	bigcommerce	core	BC-C-028/responsible/BC-S-0169	PCI DSS compliant service provider, validated annually, requirements 1-12
+CM-TRU-018	bigcommerce	core	BC-C-028/reason/BC-S-0171	a secure environment for customer data in the standard checkout
+CM-TRU-018	bigcommerce	shows	BC-C-028/decides/BC-S-0166	the condition: Commerce documentation followed, checkout unmodified
+CM-TRU-018	bigcommerce	shows	BC-C-028/responsible/BC-S-0168	the merchant determines its own PCI merchant requirements
+CM-TRU-018	bigcommerce	shows	BC-C-028/boundary/BC-S-0170	apps handling card data must be PCI compliant and submit SAQs
+CM-TRU-018	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications, PCI among them
+CM-TRU-019	bigcommerce	extension-point	BC-I-0490	App Marketplace category Payments & Security
