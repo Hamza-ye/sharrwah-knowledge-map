@@ -1,3 +1,6 @@
 cap_id	platform	quality	value	key	scope
 CM-ACC-003	shopify	free expansion stores per plan	Free expansion stores: Not included, Not included, Not included, Up to 9	SH-C-003/decides/SH-S-7073	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
 CM-ACC-005	shopify	plans that include it	Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan.	SH-C-005/decides/SH-S-0253	organizations on the Shopify Plus and Shopify Enterprise Commerce plan
+CM-STF-001	shopify	additional staff accounts per plan	Additional staff accounts: Not included, 5, 15, Unlimited	SH-C-009/decides/SH-S-7011	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-STF-001	salla	more users on سلة بلس	زيادة عدد المستخدمين *برسوم إضافية	SA-C-009/decides/SA-S-2078	plan: سلة بلس
+CM-STF-003	shopify	plans that include it	Custom user groups: Not included, Not included, Not included, Included	SH-C-010/decides/SH-S-7077	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399

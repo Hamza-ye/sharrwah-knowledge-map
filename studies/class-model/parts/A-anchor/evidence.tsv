@@ -134,3 +134,62 @@ CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-0141	the store's country chosen at 
 CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-3101	verification workflow released for AE, SA, KW, QA, OM, BH
 CM-ACC-008	salla	shows	SA-I-1206	footer market السعودية
 CM-ACC-008	salla	shows	SA-I-1207	footer market الامارات
+CM-ACC-001	salla	shows	SA-C-170/boundary/SA-S-0143	registering binds the merchant to the usage policy (سياسة الاستخدام على منصة سلة)
+CM-ACC-001	salla	shows	SA-C-170/where/SA-S-2208	the usage agreement's own page, salla.com/terms, in the sitemap
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0020	footer: rights reserved to شركة سلة القابضة © 2026
+CM-STF-001	shopify	core	SH-C-009/where/SH-S-1482	Shopify's own settings page Users
+CM-STF-001	shopify	core	SH-C-009/where/SH-S-1540	the admin's route section Account
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5003	route settings-account:invite, gated by the staff permission STAFF_MANAGEMENT_CREATE
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5004	route settings-account:edit, excluded where rbacEnabled or hasOrgSettings is on
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5233	route settings:organizations:accounts, open with hasOrgSettings or rbacEnabled
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5240	route settings:organizations:accounts:create, gated by INVITE_USERS
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-7164	staff permission ADD_REMOVE_STAFF, "Add and remove"
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-7011	plan line Additional staff accounts: Not included, 5, 15, Unlimited
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-0020	Terms: staff accounts, one or more by pricing plan
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-0021	Terms: the Store Owner sets staff accounts' permissions and level of access
+CM-STF-001	shopify	shows	SH-C-009/responsible/SH-S-0231	the Store Owner answers for its staff accounts' compliance
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-1146	Shopify's own access scope read_users
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6143	StaffMember needs read_users, for finance embedded apps or Plus or Advanced stores
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6145	read_users needs Shopify approval; StaffMember on Plus or Advanced
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6144	the REST User resource, for private and custom apps on Plus
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-7244	the admin's own server intent creating a user
+CM-STF-001	salla	core	SA-C-009/where/SA-S-1849	Salla's own settings link Staff members (/users)
+CM-STF-001	salla	core	SA-C-009/where/SA-S-3544	Salla's dashboard app ui-merchant-users on /users
+CM-STF-001	salla	core	SA-C-009/where/SA-S-1066	Salla's own API folder Employees
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2143	سلة برو plan line: adding staff accounts and managing their permissions
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2078	سلة بلس plan line: more users, for extra fees
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2426	staff permission users_browse
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2427	staff permission users_management
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-3084	flag user-advance-management, released, plans plus, pro, special (C6)
+CM-STF-001	salla	shows	SA-C-009/decides/SA-S-3083	flag store-team, not released (C6)
+CM-STF-002	shopify	core	SH-C-010/where/SH-S-1483	Shopify's own settings page Roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-0247	the built-in Administrator role manages all users and roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5234	route settings:organizations:accounts:roles, with the organization feature ROLES
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5235	route roles:list, by VIEW_ORGANIZATION_ROLES, VIEW_STORE_ROLES, POS or partner roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5236	route roles:create, by CREATE_UPDATE_*_ROLES
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-7163	staff permission MANAGE_STAFF_PERMISSIONS, "Edit permissions"
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-7166	staff permission STAFF_API_PERMISSION_MANAGEMENT, "Revoke access tokens"
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5307	store feature rbacEnabled true, its stores as scope
+CM-STF-002	shopify	shows	SH-C-010/decides/SH-S-5318	store feature rbacEnabled false on other stores
+CM-STF-002	shopify	core	SH-C-010/boundary/SH-S-7243	the admin's own server intent creating a role
+CM-STF-002	salla	core	SA-C-009/where/SA-S-1851	Salla's own link Roles & permissions (/users/roles)
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2079	سلة بلس plan line: إدارة الأدوار الوظيفية
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2428	staff permission roles_browse
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2429	staff permission roles_management
+CM-STF-003	shopify	core	SH-C-010/decides/SH-S-5237	route settings:organizations:accounts:groups, with the organization feature GROUPS
+CM-STF-003	shopify	core	SH-C-010/decides/SH-S-7077	plan line Custom user groups: included on Plus only
+CM-STF-004	salla	core	SA-C-009/where/SA-S-1853	Salla's own link Employees targets (/users/targets)
+CM-STF-005	shopify	core	SH-C-011/where/SH-S-7151	route settings:organizations:accounts:collaborator
+CM-STF-005	shopify	core	SH-C-011/decides/SH-S-7167	staff permission MANAGE_COLLABORATORS, "Manage requests", subcategory Collaborators
+CM-STF-005	shopify	core	SH-C-011/decides/SH-S-7012	plan line Invite third-party collaborators: included on every plan
+CM-STF-005	shopify	core	SH-C-011/boundary/SH-S-7466	Admin API AccountType COLLABORATOR
+CM-STF-005	shopify	shows	SH-C-011/decides/SH-S-0239	Terms: the merchant may let Third Party Providers into parts of its Admin and set their access
+CM-STF-005	shopify	shows	SH-C-011/decides/SH-S-0246	a collaborator reaches the stores an organization admin or owner gave it
+CM-STF-005	shopify	shows	SH-C-011/responsible/SH-S-0240	the relationship with a Third Party Provider is between it and the merchant
+CM-STF-005	shopify	shows	SH-C-011/reason/SH-S-7491	reason: two-step authentication against unauthorized store access, for collaborator accounts
+CM-STF-005	salla	core	SA-C-013/where/SA-S-3533	Salla's dashboard app ui-merchant-manage, on /manage/support-access
+CM-STF-005	salla	core	SA-C-013/decides/SA-S-2404	staff permission support_access_requests
+CM-STF-005	salla	core	SA-C-013/decides/SA-S-3355	flag support-access, released and enabled (C6)
+CM-STF-005	salla	shows	SA-C-013/decides/SA-S-2621	support_access_requests, طلبات الدخول للمساعدة, in the permissions a partner can request (S7)
+CM-STF-005	salla	shows	SA-C-013/boundary/SA-S-5131	a service partner asks for store access from its service's page in the partner portal
+CM-STF-005	salla	shows	SA-C-013/responsible/SA-S-5008	the partner may not use the permissions the merchant granted beyond the agreed work
