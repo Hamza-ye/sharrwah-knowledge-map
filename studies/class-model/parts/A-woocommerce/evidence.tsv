@@ -1,0 +1,80 @@
+cap_id	platform	supports	key	why
+CM-ACC-001	woocommerce	shows	WC-C-080/where/WC-S-0883	WooCommerce extends WordPress's existing Administrator role
+CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0459	WooCommerce, Inc. outside the Designated Countries
+CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0460	WooCommerce Ireland Ltd. in the Designated Countries
+CM-ACC-002	woocommerce	shows	WC-C-023/decides/WC-S-0457	the Designated Countries defined
+CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0461	four Automattic companies are we
+CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0458	the Woo services the terms cover
+CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0456	use as a business's representative
+CM-ACC-002	woocommerce	shows	WC-C-026/responsible/WC-S-0643	the Terms govern WordPress.com, WooCommerce.com and other services
+CM-ACC-002	woocommerce	shows	WC-C-026/responsible/WC-S-0488	laws of the state of California
+CM-ACC-002	woocommerce	shows	WC-C-026/responsible/WC-S-0489	courts of San Francisco County
+CM-ACC-002	woocommerce	shows	WC-C-026/decides/WC-S-5328	consumers' mandatory rights kept
+CM-ACC-003	woocommerce	shows	WC-C-094/reason/WC-S-5450	network-wide settings and super admin on multisite
+CM-ACC-003	woocommerce	shows	WC-C-070/boundary/WC-S-0089	REST resource network-orders
+CM-ACC-006	woocommerce	core	WC-C-081/where/WC-S-0044	admin menu WooCommerce > Settings
+CM-ACC-006	woocommerce	shows	WC-C-030/decides/WC-S-0880	general settings page: business address
+CM-ACC-008	woocommerce	shows	WC-C-028/decides/WC-S-0490	Services subject to US sanctions on who and from where
+CM-ACC-008	woocommerce	shows	WC-C-028/decides/WC-S-0491	list of comprehensively sanctioned countries
+CM-ACC-008	woocommerce	shows	WC-C-028/decides/WC-S-0648	Ecommerce Services not usable in embargoed countries
+CM-ACC-008	woocommerce	shows	WC-C-028/decides/WC-S-0493	access restricted or Agreement terminated
+CM-ACC-009	woocommerce	core	WC-C-082/where/WC-S-0009	settings section Site visibility
+CM-ACC-009	woocommerce	core	WC-C-082/decides/WC-S-0891	Coming soon mode controls who can visit before launch
+CM-ACC-009	woocommerce	core	WC-C-082/decides/WC-S-5421	woocommerce_coming_soon set to yes for new shops
+CM-ACC-009	woocommerce	core	WC-C-082/boundary/WC-S-5423	action on update of woocommerce_coming_soon
+CM-ACC-009	woocommerce	core	WC-C-082/where/WC-S-0423	onboarding task Launch your store
+CM-ACC-009	woocommerce	core	WC-C-082/boundary/WC-S-0248	wc-admin resource launch-your-store
+CM-ACC-009	woocommerce	shows	WC-C-082/reason/WC-S-5422	reason: options set for all shops
+CM-ACC-009	woocommerce	shows	WC-C-082/reason/WC-S-5424	coming-soon pages cached 60 seconds
+CM-ACC-010	woocommerce	own-service	WC-C-025/where/WC-S-0594	Automattic, the creators of WordPress.com and Jetpack
+CM-ACC-010	woocommerce	own-service	WC-C-049/decides/WC-S-5335	Ecommerce Services require a WordPress.com account
+CM-ACC-010	woocommerce	own-service	WC-C-049/boundary/WC-S-0464	Woo services may require a Jetpack connection
+CM-ACC-010	woocommerce	own-service	WC-C-049/boundary/WC-S-0555	WooPayments requires a connection to WordPress.com
+CM-ACC-010	woocommerce	own-service	WC-C-049/decides/WC-S-5334	WordPress.com account connected at WooPayments sign-up
+CM-ACC-010	woocommerce	own-service	WC-C-049/where/WC-S-5332	connection through the process Jetpack uses
+CM-ACC-010	woocommerce	own-service	WC-C-049/boundary/WC-S-0634	connection authenticates the site with WooCommerce Tax
+CM-ACC-010	woocommerce	shows	WC-C-049/where/WC-S-5333	Jetpack plugin not required
+CM-ACC-010	woocommerce	shows	WC-C-049/boundary/WC-S-5336	disconnecting stops WooPayments
+CM-ACC-010	woocommerce	shows	WC-C-049/responsible/WC-S-0851	Jetpack terms apply
+CM-ACC-010	woocommerce	shows	WC-C-049/reason/WC-S-0857	reason: requests attributed to the store
+CM-ACC-011	woocommerce	shows	WC-C-025/responsible/WC-S-0589	License: GPLv3
+CM-ACC-011	woocommerce	shows	WC-C-025/where/WC-S-0585	the open-source ecommerce platform for WordPress
+CM-ACC-011	woocommerce	shows	WC-C-025/where/WC-S-0463	Woo is open source
+CM-ACC-011	woocommerce	shows	WC-C-025/decides/WC-S-5327	irrevocable rights, unlimited permission to run
+CM-ACC-011	woocommerce	shows	WC-C-025/responsible/WC-S-0597	no warranty
+CM-ACC-011	woocommerce	shows	WC-C-025/reason/WC-S-0586	reason: ownership of content and data
+CM-ACC-011	woocommerce	shows	WC-C-025/where/WC-S-0594	developed by Automattic
+CM-STF-001	woocommerce	shows	WC-C-080/decides/WC-S-0884	users in the WordPress admin, Users > All Users
+CM-STF-002	woocommerce	core	WC-C-080/where/WC-S-0883	WooCommerce adds Shop Manager and Customer roles
+CM-STF-002	woocommerce	core	WC-C-080/decides/WC-S-5415	capabilities given to admin and shop manager at install
+CM-STF-002	woocommerce	core	WC-C-080/decides/WC-S-5416	core capabilities manage_woocommerce, create_customers, view_woocommerce_reports
+CM-STF-002	woocommerce	core	WC-C-080/decides/WC-S-5417	REST check: shop managers manage only customers
+CM-STF-002	woocommerce	core	WC-C-080/boundary/WC-S-5418	filter woocommerce_shop_manager_editable_roles
+CM-STF-002	woocommerce	shows	WC-C-080/decides/WC-S-0884	roles chosen in WordPress's Users screen
+CM-PLN-001	woocommerce	shows	WC-C-050/responsible/WC-S-0644	Paid Services include certain WordPress.com plans
+CM-PLN-004	woocommerce	own-service	WC-C-057/boundary/WC-S-0549	monthly invoice of WooPayments' fees and tax
+CM-PLN-004	woocommerce	own-service	WC-C-057/where/WC-S-5309	invoices for WooPayments fees under Payments > Documents
+CM-PLN-004	woocommerce	own-service	WC-C-023/responsible/WC-S-0458	WooPayments among Woo services
+CM-PLN-005	woocommerce	shows	WC-C-012/boundary/WC-S-0538	WooPayments' fees deducted from each payment
+CM-PLN-007	woocommerce	own-service	WC-C-057/decides/WC-S-0548	VAT/GST/CT added to WooPayments fees
+CM-PLN-007	woocommerce	own-service	WC-C-057/boundary/WC-S-0549	monthly invoice showing fees and tax
+CM-PLN-007	woocommerce	own-service	WC-C-057/where/WC-S-5309	VAT invoices under Payments > Documents
+CM-PLN-007	woocommerce	own-service	WC-C-023/responsible/WC-S-0458	WooPayments among Woo services
+CM-PLN-007	woocommerce	shows	WC-C-057/responsible/WC-S-0462	merchant responsible for taxes on the Services
+CM-PLN-007	woocommerce	shows	WC-C-057/responsible/WC-S-5316	self-accounting under reverse charge
+CM-ONB-003	woocommerce	own-service	WC-C-025/where/WC-S-0594	developed and supported by Automattic
+CM-ONB-003	woocommerce	own-service	WC-C-062/responsible/WC-S-0833	support for products sold on WooCommerce.com
+CM-ONB-003	woocommerce	own-service	WC-C-062/decides/WC-S-0646	a year of support with Paid Services
+CM-ONB-003	woocommerce	extension-point	WC-C-062/boundary/WC-S-0582	partners support users through WooCommerce's support system
+CM-ONB-003	woocommerce	extension-point	WC-C-062/boundary/WC-S-5345	Marketplace developers answer for their products
+CM-ONB-003	woocommerce	shows	WC-C-062/where/WC-S-5344	free core plugin: forum on WordPress.org
+CM-ONB-004	woocommerce	core	WC-C-081/where/WC-S-0063	admin page Setup Wizard
+CM-ONB-004	woocommerce	core	WC-C-081/where/WC-S-0429	onboarding task You created %s
+CM-ONB-004	woocommerce	core	WC-C-081/where/WC-S-0430	onboarding task You added store details
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0198	wc-admin onboarding/profile
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0199	wc-admin onboarding/tasks
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0196	wc-admin onboarding/free-extensions
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0197	wc-admin onboarding/product-types
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0200	wc-admin onboarding/themes
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0201	wc-admin onboarding/plugins
+CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0202	wc-admin onboarding products

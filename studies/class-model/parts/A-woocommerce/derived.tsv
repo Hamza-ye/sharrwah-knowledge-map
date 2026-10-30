@@ -1,0 +1,28 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ACC-001	woocommerce	statements	not-stated	WooCommerce user roles		WC-C-080/responsible:stated only in general terms;WC-C-080/reason:searched, not found	
+CM-ACC-002	woocommerce	statements	not-stated		WC-C-023/responsible/WC-S-0459=residents outside the Designated Countries | WC-C-023/responsible/WC-S-0460=residents of the Designated Countries	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found;WC-C-026/where:searched, not found;WC-C-026/boundary:searched, not found;WC-C-026/reason:searched, not found	
+CM-ACC-003	woocommerce	statements	not-stated		WC-C-094/reason/WC-S-5450=multisite	WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found;WC-C-094/responsible:stated only in general terms	
+CM-ACC-004	woocommerce	none-held					
+CM-ACC-005	woocommerce	none-held					
+CM-ACC-006	woocommerce	statements	core	WooCommerce > Settings		WC-C-030/responsible:stated only in general terms;WC-C-030/reason:searched, not found;WC-C-081/responsible:stated only in general terms;WC-C-081/reason:searched, not found	general
+CM-ACC-007	woocommerce	none-held					
+CM-ACC-008	woocommerce	statements	not-stated			WC-C-028/where:searched, not found;WC-C-028/boundary:searched, not found	
+CM-ACC-009	woocommerce	statements	core	Launch your store | Site visibility	WC-C-082/reason/WC-S-5424=coming-soon pages	WC-C-082/responsible:stated only in general terms	general
+CM-ACC-010	woocommerce	statements	own-service	Connecting to WordPress.com with WooPayments | Jetpack | readme.txt: Contribute and translate	WC-C-049/boundary/WC-S-5336=WooPayments | WC-C-049/decides/WC-S-5334=WooPayments | WC-C-049/where/WC-S-5332=WooPayments | WC-C-049/where/WC-S-5333=WooPayments	WC-C-025/boundary:searched, not found	general
+CM-ACC-011	woocommerce	statements	not-stated	8. Specific Service Terms: c. Woo | readme.txt: Contribute and translate | readme.txt: Description		WC-C-025/boundary:searched, not found	
+CM-ONB-001	woocommerce	none-held					
+CM-ONB-002	woocommerce	none-held					
+CM-ONB-003	woocommerce	statements	extension-point;own-service	Public forums | readme.txt: Contribute and translate	WC-C-062/boundary/WC-S-5345=products made by Marketplace developers | WC-C-062/where/WC-S-5344=the free, core WooCommerce plugin	WC-C-025/boundary:searched, not found;WC-C-062/reason:searched, not found	general
+CM-ONB-004	woocommerce	statements	core	Setup Wizard | You added store details | You created %s		WC-C-081/responsible:stated only in general terms;WC-C-081/reason:searched, not found	general
+CM-PLN-001	woocommerce	statements	not-stated			WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found	
+CM-PLN-002	woocommerce	none-held					
+CM-PLN-003	woocommerce	none-held					
+CM-PLN-004	woocommerce	statements	own-service	Payments > Documents	WC-C-057/where/WC-S-5309=EU and UK merchants	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found;WC-C-057/reason:searched, not found	general
+CM-PLN-005	woocommerce	statements	not-stated				
+CM-PLN-006	woocommerce	none-held					
+CM-PLN-007	woocommerce	statements	own-service	Payments > Documents	WC-C-057/decides/WC-S-0548=WooPayments | WC-C-057/responsible/WC-S-5316=VAT-registered businesses whose invoice shows VAT reverse charged | WC-C-057/where/WC-S-5309=EU and UK merchants	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found;WC-C-057/reason:searched, not found	general
+CM-STF-001	woocommerce	statements	not-stated			WC-C-080/responsible:stated only in general terms;WC-C-080/reason:searched, not found	
+CM-STF-002	woocommerce	statements	core	WooCommerce user roles		WC-C-080/responsible:stated only in general terms;WC-C-080/reason:searched, not found	general
+CM-STF-003	woocommerce	none-held					
+CM-STF-004	woocommerce	none-held					
+CM-STF-005	woocommerce	none-held					

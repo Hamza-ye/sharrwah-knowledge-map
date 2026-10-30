@@ -1,2 +1,4 @@
 cap_id	platform	quality	value	key
 CM-CHK-002	shopify	Add-to-cart limit, default recommended limit	If you've made less than 250 sales, then the default recommended limit for your store is set to 50.	SH-C-046/decides/SH-S-7484
+CM-ORD-001	shopify	App access to orders, default window	By default, your app has access to orders placed in the last 60 days.	SH-C-054/boundary/SH-S-5932
+CM-ORD-001	salla	Number of orders, plan سلة بلس	عدد لا محدود من الطلبات	SA-C-040/decides/SA-S-1950

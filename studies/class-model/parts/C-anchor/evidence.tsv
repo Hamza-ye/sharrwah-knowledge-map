@@ -139,3 +139,190 @@ CM-CHK-003	shopify	shows	SH-C-048/decides/SH-S-5562	entitlement webCheckout, whi
 CM-CHK-003	shopify	shows	SH-C-048/decides/SH-S-5569	entitlement webCheckout false on some trial stores
 CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1035	Merchant API folder Abandoned Carts, Q1's boundary
 CM-CHK-009	salla	core	SA-C-042/boundary/SA-S-1019	Merchant API folder Order Options, Q1's boundary
+CM-ORD-001	shopify	core	SH-C-054/where/SH-S-1507	admin navigation item Orders
+CM-ORD-001	shopify	core	SH-C-054/where/SH-S-5218	admin route path orders, section Orders
+CM-ORD-001	shopify	core	SH-I-0869	staff permission Orders > View
+CM-ORD-001	shopify	core	SH-I-0870	staff permission Orders > Manage order information
+CM-ORD-001	shopify	core	SH-C-054/boundary/SH-S-1034	access scope read_orders
+CM-ORD-001	shopify	core	SH-I-0271	access scope write_orders
+CM-ORD-001	shopify	core	SH-C-054/where/SH-S-0929	API object Order
+CM-ORD-001	shopify	core	SH-C-054/boundary/SH-S-1294	webhook topic orders/create
+CM-ORD-001	shopify	core	SH-I-0539	webhook topic orders/updated
+CM-ORD-001	shopify	core	SH-I-0535	webhook topic orders/paid
+CM-ORD-001	shopify	core	SH-I-0533	webhook topic orders/fulfilled
+CM-ORD-001	shopify	core	SH-C-054/boundary/SH-S-5929	access scope read_all_orders, Shopify approval required, beyond the default 60-day window
+CM-ORD-001	shopify	core	SH-C-054/boundary/SH-S-5932	by default an app has access to orders placed in the last 60 days
+CM-ORD-001	shopify	extension-point	SH-I-1853	App Store category Order apps
+CM-ORD-001	shopify	extension-point	SH-I-1847	App Store category Orders and shipping apps
+CM-ORD-001	shopify	shows	SH-C-054/responsible/SH-S-0011	any contract of sale is between the merchant and the customer
+CM-ORD-001	shopify	shows	SH-C-054/responsible/SH-S-0012	the merchant answers for the charge, taxes, refunds, returns, fulfilling and fraudulent transactions
+CM-ORD-001	shopify	shows	SH-C-054/where/SH-S-5215	admin route product-network-orders in section Orders, undefined
+CM-ORD-001	shopify	shows	SH-C-054/where/SH-S-5216	admin route orders/pay_by_creditcard_on_mobile
+CM-ORD-001	shopify	shows	SH-C-054/decides/SH-S-5220	order write-off routes behind a beta
+CM-ORD-001	shopify	shows	SH-C-054/boundary/SH-S-2534	UCP capability dev.ucp.shopping.order (agentic commerce, domain F)
+CM-ORD-001	salla	core	SA-C-040/where/SA-S-1691	dashboard link Orders at /orders
+CM-ORD-001	salla	core	SA-C-040/where/SA-S-1772	dashboard link All orders at /orders
+CM-ORD-001	salla	core	SA-C-040/where/SA-S-1774	dashboard link Order settings
+CM-ORD-001	salla	core	SA-C-040/where/SA-S-3529	dashboard app @salla.sa/ui-merchant-orders at /orders
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1016	Merchant API folder Orders
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1018	Merchant API folder Order Histories
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1041	Merchant API folder Order Items
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1547	app scope orders, read and read_write
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1582	event order.created
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1590	event order.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1583	event order.payment.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1584	event order.products.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1574	event order.shipping.address.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1585	event order.customer.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1573	event order.coupon.updated
+CM-ORD-001	salla	core	SA-C-040/boundary/SA-S-1581	event order.total.price.updated
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-1950	plan line عدد لا محدود من الطلبات, plan سلة بلس
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-1996	plan line إدارة مجموعة طلبات كدفعة واحدة, plan سلة بلس
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-2271	staff permission order_browse
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-2272	staff permission order_management
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-2266	staff permission order_search
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-2268	staff permission order_show
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-2277	staff permission order_browse_all
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-3278	released flag order-advance-management, plans plus, pro, special
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-3266	released flag order-estimate, plans pro, special
+CM-ORD-001	salla	core	SA-C-040/decides/SA-S-3296	released flag batch-order-items-save, enabled in the answering store
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-2489	partner permission order_management, إدارة الطلبات
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-2488	partner permission order_browse, الإطلاع على الطلبات
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-3265	flag order-setting, not released
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-3277	flag custom-orders-list, not released
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-3284	flag duplicated-order-check, not released
+CM-ORD-001	salla	shows	SA-C-040/decides/SA-S-3291	flag show-external-orders, not released
+CM-ORD-002	shopify	core	SH-C-056/where/SH-S-7095	admin route order:edit, Edit order, section Orders
+CM-ORD-002	shopify	core	SH-C-056/where/SH-S-7096	admin route Decline requested edit, section Orders
+CM-ORD-002	shopify	core	SH-C-056/decides/SH-S-5219	requested-edit route gated by EDIT_ORDERS
+CM-ORD-002	shopify	core	SH-I-0871	staff permission Orders > Edit orders
+CM-ORD-002	shopify	core	SH-C-054/decides/SH-S-5221	route order:edit:shipping-address gated by MANAGE_ORDERS_INFORMATION or FULFILL_AND_SHIP_ORDERS
+CM-ORD-002	shopify	core	SH-C-056/boundary/SH-S-6246	write_order_edits: to edit orders through the GraphQL Admin API
+CM-ORD-002	shopify	core	SH-C-056/boundary/SH-S-6064	access scope read_order_edits
+CM-ORD-002	shopify	core	SH-C-056/decides/SH-S-6247	an order-edit mutation needs the user's apply_discounts_to_orders permission
+CM-ORD-002	shopify	core	SH-C-056/boundary/SH-S-1296	webhook topic orders/edited
+CM-ORD-002	shopify	core	SH-I-0562	webhook topic requested_order_edit/created
+CM-ORD-002	shopify	core	SH-C-056/boundary/SH-S-0887	API resource orderRequestEdit
+CM-ORD-002	shopify	extension-point	SH-I-1855	App Store category Order editing apps
+CM-ORD-002	salla	core	SA-C-040/where/SA-S-1747	setting Order editing, orders/edit-policy
+CM-ORD-002	salla	core	SA-C-040/decides/SA-S-1990	plan line تعديل الطلب, plan سلة بلس
+CM-ORD-002	salla	core	SA-C-040/decides/SA-S-2274	staff permission order_edit
+CM-ORD-002	salla	shows	SA-C-040/decides/SA-S-2491	partner permission order_edit, تعديل الطلب
+CM-ORD-002	salla	shows	SA-C-040/decides/SA-S-3288	flag customer-editing, not released
+CM-ORD-003	salla	core	SA-C-041/where/SA-S-1775	dashboard link Order statuses at /orders/statuses
+CM-ORD-003	salla	core	SA-C-041/where/SA-S-1776	dashboard button Bulk status update
+CM-ORD-003	salla	core	SA-C-041/where/SA-S-1740	setting Statuses included in reports
+CM-ORD-003	salla	core	SA-C-041/boundary/SA-S-1017	Merchant API folder Order Status
+CM-ORD-003	salla	core	SA-C-041/boundary/SA-S-1588	event order.status.updated
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-1986	plan line تحديث حالة الطلب, plan سلة بلس
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-1993	plan line تخصيص حالات الطلب, plan سلة بلس
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-3271	released flag order-custom-statuses, plans plus, pro, special
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-2290	staff permission order_edit_status_all
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-2292	staff permission order_statuses_show
+CM-ORD-003	salla	core	SA-C-041/decides/SA-S-2293	staff permission order_statuses_edit
+CM-ORD-003	salla	core	SA-C-040/decides/SA-S-2278	staff permission order_browse_status_wait_paid, one of the per-status browse permissions
+CM-ORD-003	salla	core	SA-C-041/boundary/SA-S-2674	the store's status قيد التنفيذ, in_progress, with its message to the buyer
+CM-ORD-003	salla	core	SA-C-041/boundary/SA-S-2678	the store's status تم الشحن, shipped
+CM-ORD-003	salla	core	SA-C-041/boundary/SA-S-2683	the store's status مكتمل, closed
+CM-ORD-003	salla	shows	SA-C-041/boundary/SA-S-2682	status طلب عرض سعر, request_quote (core in domain D's CM-B2B-004)
+CM-ORD-003	salla	shows	SA-C-041/decides/SA-S-2509	partner permission عرض حالات الطلبات
+CM-ORD-003	salla	shows	SA-C-041/decides/SA-S-2510	partner permission تعديل حالات الطلبات
+CM-ORD-004	shopify	core	SH-I-0880	staff permission Orders > Cancel
+CM-ORD-004	shopify	core	SH-I-1022	staff permission CANCEL_ORDERS
+CM-ORD-004	shopify	core	SH-I-0529	webhook topic orders/cancelled
+CM-ORD-004	shopify	core	SH-I-0646	webhook topic Order cancellation
+CM-ORD-004	salla	core	SA-C-046/where/SA-S-1745	setting Order cancellation, orders/cancellation
+CM-ORD-004	salla	core	SA-C-046/boundary/SA-S-1586	event order.cancelled, إلغاء طلب
+CM-ORD-004	salla	core	SA-C-040/decides/SA-S-2285	staff permission order_browse_status_canceled
+CM-ORD-004	salla	shows	SA-C-041/boundary/SA-S-2679	status ملغي, canceled, with its message تم إلغاء طلبكم
+CM-ORD-004	salla	shows	SA-C-046/decides/SA-S-3290	flag order-cancellation-reasons, not released
+CM-ORD-004	salla	shows	SA-C-046/decides/SA-S-3292	flag advanced-order-cancellation-statuses, not released
+CM-ORD-005	shopify	core	SH-C-055/where/SH-S-1508	admin navigation item Drafts
+CM-ORD-005	shopify	core	SH-C-055/where/SH-S-5212	admin route draft_orders
+CM-ORD-005	shopify	core	SH-C-055/where/SH-S-7094	route draftOrders:new titled Create order, section Orders
+CM-ORD-005	shopify	core	SH-C-055/decides/SH-S-5213	draftOrders gated by DRAFT_ORDERS and the entitlement storefront.enabled
+CM-ORD-005	shopify	core	SH-C-055/decides/SH-S-5214	draftOrders:new gated by CREATE_AND_EDIT_DRAFT_ORDERS
+CM-ORD-005	shopify	core	SH-C-055/decides/SH-S-7225	the plan comes with everything to create draft orders, send invoices and capture payments
+CM-ORD-005	shopify	core	SH-C-055/boundary/SH-S-0871	API resource draftOrder
+CM-ORD-005	shopify	core	SH-C-055/boundary/SH-S-5984	access scope read_draft_orders
+CM-ORD-005	shopify	core	SH-C-055/boundary/SH-S-0985	access scope write_draft_orders
+CM-ORD-005	shopify	core	SH-C-055/boundary/SH-S-5981	webhook topic draft_orders/create, whenever a draft order is created
+CM-ORD-005	shopify	core	SH-C-055/boundary/SH-S-6196	a draft-order mutation needs the user's access to mark as paid or set payment terms
+CM-ORD-005	shopify	shows	SH-C-055/decides/SH-S-5364	entitlement storefront enabled in the captured stores
+CM-ORD-005	shopify	shows	SH-C-055/boundary/SH-S-7242	server intent create draft_order, one store
+CM-ORD-005	shopify	shows	SH-C-055/boundary/SH-S-5918	access scope customer_read_draft_orders (the buyer's account)
+CM-ORD-005	salla	core	SA-C-040/decides/SA-S-1989	plan line إنشاء طلب يدوي, plan سلة بلس
+CM-ORD-005	salla	core	SA-C-040/decides/SA-S-2273	staff permission order_create
+CM-ORD-005	salla	shows	SA-C-040/decides/SA-S-2490	partner permission order_create, إضافة طلب
+CM-ORD-006	shopify	core	SH-C-059/where/SH-S-0747	fraud analysis identifies orders that can be fraudulent, reviewed in the admin before fulfilling
+CM-ORD-006	shopify	core	SH-C-059/decides/SH-S-7031	plan row Built-in fraud analysis, Included on every plan
+CM-ORD-006	shopify	core	SH-C-059/decides/SH-S-0749	some fraud analysis features on Grow or higher, or with Shopify Payments
+CM-ORD-006	shopify	core	SH-C-059/boundary/SH-S-1301	webhook topic orders/risk_assessment_changed
+CM-ORD-006	shopify	extension-point	SH-C-059/where/SH-S-2718	App Store category Fraud apps
+CM-ORD-006	shopify	shows	SH-C-059/decides/SH-S-0750	Shopify Payments can block some high-risk checkout attempts before an order is created
+CM-ORD-006	shopify	shows	SH-C-059/responsible/SH-S-0748	the issuing bank decides charge reversals; Shopify does not cover them
+CM-ORD-006	shopify	shows	SH-C-059/decides/SH-S-5163	Finances routes finance:risk, risk lists and rules, behind a beta
+CM-ORD-006	salla	core	SA-C-122/decides/SA-S-1971	plan line نظام الحماية من الاحتيال, plan سلة بلس
+CM-ORD-006	salla	shows	SA-C-122/responsible/SA-S-5051	carrying out a suspicious order makes the merchant responsible for the cardholder's complaint
+CM-ORD-007	salla	core	SA-C-043/where/SA-S-1777	dashboard link Auto assignment at /orders/auto-assignee
+CM-ORD-007	salla	core	SA-C-043/boundary/SA-S-1020	Merchant API folder Order Assignment
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-2080	plan line إسناد الطلبات تلقائيًا للموظفين, plan سلة بلس
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-2276	staff permission order_assign
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-2289	staff permission order_assigned_notification
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-2430	staff permission order_auto_assign_browse
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-2431	staff permission order_auto_assign_management
+CM-ORD-007	salla	core	SA-C-043/decides/SA-S-3272	released flag order-assignment, plans plus, pro, special
+CM-ORD-007	salla	core	SA-C-040/decides/SA-S-2269	staff permission order_show_assigned_only
+CM-ORD-007	salla	shows	SA-C-043/decides/SA-S-2493	partner permission order_assign, امكانية اسناد الطلبات
+CM-ORD-007	salla	shows	SA-C-040/decides/SA-S-2486	partner permission استعراض الطلبات المسندة فقط
+CM-ORD-008	shopify	extension-point	SH-I-1854	App Store category Invoice and receipt apps
+CM-ORD-008	shopify	shows	SH-C-055/decides/SH-S-7225	Invoice and receipt apps offer additional document types and advanced customization
+CM-ORD-008	salla	core	SA-C-044/where/SA-S-1778	dashboard link Invoice settings at /orders/invoice-settings
+CM-ORD-008	salla	core	SA-C-044/boundary/SA-S-1021	Merchant API folder Order Invoice
+CM-ORD-008	salla	core	SA-C-044/boundary/SA-S-1640	event invoice.created, إنشاء فاتورة
+CM-ORD-008	salla	core	SA-C-044/decides/SA-S-1987	plan line طباعة فاتورة الطلب بالعربي والانجليزي, plan سلة بلس
+CM-ORD-008	salla	core	SA-C-044/decides/SA-S-3095	released flag order-warehouse-invoice, plans plus, pro, special
+CM-ORD-008	salla	core	SA-C-044/decides/SA-S-3097	released flag order-print-multi-invoice, enabled in the answering store
+CM-ORD-008	salla	shows	SA-C-044/decides/SA-S-3183	flag control-generate-invoice, not released
+CM-ORD-008	salla	shows	SA-C-044/reason/SA-S-5015	the aim: set the invoice's contents and avoid issuing two invoices for one order with accounting services
+CM-ORD-009	shopify	core	SH-C-061/where/SH-S-7100	route Edit packing slip template, section Shipping
+CM-ORD-009	shopify	core	SH-C-061/where/SH-S-7101	route document-template-editor, Edit template, section Shipping
+CM-ORD-009	shopify	core	SH-C-061/decides/SH-S-5261	document template routes gated by fulfillmentBatchingEligible or a beta, and MANAGE_DELIVERY_SETTINGS
+CM-ORD-009	shopify	core	SH-C-061/decides/SH-S-5794	store feature fulfillmentBatchingEligible true on six captured stores
+CM-ORD-009	shopify	core	SH-C-061/boundary/SH-S-1036	access scope write_packing_slip_templates
+CM-ORD-009	shopify	core	SH-I-0273	access scope read_packing_slip_templates
+CM-ORD-009	shopify	shows	SH-C-061/where/SH-S-2196	extension target admin_print (domain F's CM-APP-008)
+CM-ORD-009	salla	core	SA-C-040/decides/SA-S-1988	plan line طباعة ملخص الطلب, plan سلة بلس
+CM-ORD-009	salla	shows	SA-C-040/decides/SA-S-3283	released flag order-summary, enabled; whether it is the printed summary isn't stated
+CM-ORD-010	shopify	shows	SH-I-2111	help-center section Set up order processing and archiving, a title only
+CM-ORD-010	salla	core	SA-C-047/where/SA-S-1736	setting Accept orders, orders/processing/receive_orders
+CM-ORD-010	salla	core	SA-C-047/where/SA-S-1738	setting Ordering hours
+CM-ORD-010	salla	core	SA-C-047/where/SA-S-1737	setting Set orders as Completed upon placement
+CM-ORD-010	salla	core	SA-C-047/where/SA-S-1739	setting Order acknowledgment
+CM-ORD-010	salla	core	SA-C-047/where/SA-S-1735	setting Order confirmation page
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-1985	plan line استقبال الطلبات, plan سلة بلس
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-1991	plan line تعيين أوقات استقبال الطلبات, plan سلة بلس
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-1992	plan line تعيين الحد اليومي للطلبات, plan سلة بلس
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-3263	released flag receiving-orders-times, plans pro, plus, special
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-3270	released flag receiving-orders-limit, plans plus, pro, special
+CM-ORD-010	salla	core	SA-C-047/decides/SA-S-3279	released flag order-count-time, plans plus, pro, special
+CM-ORD-010	salla	shows	SA-C-047/reason/SA-S-5016	the acknowledgment sets out the store's order terms so the buyer knows what to expect
+CM-ORD-011	salla	core	SA-C-040/where/SA-S-1789	dashboard link Auto tags at /orders/auto-tags
+CM-ORD-011	salla	core	SA-C-040/decides/SA-S-3273	released flag order-auto-tagging, plans plus, pro, special
+CM-ORD-012	shopify	core	SH-I-0882	staff permission Orders > Delete
+CM-ORD-012	shopify	core	SH-I-1048	staff permission DELETE_ORDERS
+CM-ORD-012	shopify	core	SH-I-0531	webhook topic orders/delete
+CM-ORD-012	salla	core	SA-C-040/where/SA-S-1892	dashboard link Deleted orders at /orders/trash
+CM-ORD-012	salla	core	SA-C-040/decides/SA-S-2267	staff permission order_delete
+CM-ORD-012	salla	core	SA-C-040/boundary/SA-S-1589	event order.deleted
+CM-ORD-012	salla	core	SA-C-040/decides/SA-S-3345	released flag restore-data, plans plus, pro, special
+CM-ORD-012	salla	core	SA-C-040/decides/SA-S-2390	staff permission restore_data_management
+CM-ORD-012	salla	shows	SA-C-040/decides/SA-S-2484	partner permission order_delete, حذف الطلب
+CM-ORD-012	salla	shows	SA-C-040/decides/SA-S-2607	partner permission restore_data_management, استعادة البيانات المحذوفة
+CM-ORD-012	salla	shows	SA-C-041/boundary/SA-S-2671	status محذوف, deleted
+CM-ORD-013	salla	core	SA-C-040/where/SA-S-1744	setting Customer notes, orders/customer-notes
+CM-ORD-013	salla	core	SA-C-040/decides/SA-S-2129	plan line إضافة تعليق على الطلب, plan سلة برو
+CM-ORD-013	salla	core	SA-C-040/decides/SA-S-3262	released flag order-comment, plans pro, special
+CM-ORD-014	salla	core	SA-C-040/where/SA-S-1746	setting Reorder, orders/reorder
+CM-ORD-014	salla	core	SA-C-040/decides/SA-S-2128	plan line تكرار الطلب, plan سلة برو
+CM-ORD-014	salla	core	SA-C-040/decides/SA-S-3280	released flag order-reorder, plans pro, special

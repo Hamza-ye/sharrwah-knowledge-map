@@ -1,0 +1,3 @@
+cap_id	platform	quality	value	key	scope
+CM-ONB-003	woocommerce	period of updates and support for Paid Services	updates and support (as described in our Support Policy) for those Paid Services for a period of one year, starting on the date of your purchase	WC-C-062/decides/WC-S-0646	
+CM-ACC-009	woocommerce	cache lifetime of coming-soon pages	By default, Coming-soon pages are set with `Cache-Control: max-age=60` header.	WC-C-082/reason/WC-S-5424	coming-soon pages
