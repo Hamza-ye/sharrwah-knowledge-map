@@ -3,7 +3,7 @@
 # concern map, finished on 12 October 2026, and the landed subjects' statements its amendments cite. This measures,
 # per platform:
 #   structures  every structure the repository's REGISTER.tsv names: held or not, cited by what the model reads (and
-#               at which commit), changed since, and its items (lines of its items.jsonl, every label);
+#               at which commit), changed since, and its items (lines of its items.jsonl, or of its pages.jsonl, listings.jsonl, menu.jsonl or text.txt, every label);
 #   pages       every address held readable (fetch archives in git, browser steps' page text, saved answers,
 #               structures' sources, this repository's capture runs), by host and section, against the addresses
 #               what the model reads cites;
@@ -156,6 +156,10 @@ def held_pages_captures(platform):
     return out
 
 
+# The files a structure holds its items in, a line each (no structure holds two of them).
+ITEM_FILES = ("items.jsonl", "pages.jsonl", "listings.jsonl", "menu.jsonl", "text.txt")
+
+
 def structures(platform, srcs):
     repo, root, sub = REPOS[platform]
     reg = os.path.join(root, sub, "structures", "REGISTER.tsv")
@@ -177,7 +181,7 @@ def structures(platform, srcs):
         st = r.get("status", "")
         held = st.startswith(("captured", "held"))
         folder = os.path.join(root, sub, "structures", platform, sid) if not sub else os.path.join(root, sub, "structures", sid)
-        files = glob.glob(os.path.join(folder, "**", "items.jsonl"), recursive=True)
+        files = [f for name in ITEM_FILES for f in glob.glob(os.path.join(folder, "**", name), recursive=True)]
         n = 0
         for f in files:
             with open(f, encoding="utf-8", errors="replace") as fh:
@@ -187,7 +191,7 @@ def structures(platform, srcs):
             d = git(root, "diff", "--numstat", c, "HEAD", "--", os.path.relpath(folder, root))
             changed += sum(int(x.split("\t")[0]) for x in d.splitlines() if x.split("\t")[0].isdigit())
         out.append({"structure": sid, "status": st[:60], "held": held, "read": bool(cited.get(sid)),
-                    "items_read": len([x for x in lines.get(sid, ()) if x[0].endswith("items.jsonl") and x[1] != "whole"]),
+                    "items_read": len([x for x in lines.get(sid, ()) if x[0].endswith(ITEM_FILES) and x[1] != "whole"]),
                     "read_at": ",".join(sorted(cited.get(sid, ()))), "items": n, "added_since": changed,
                     "date_seen": r.get("date seen", "")[:10], "what": (r.get("what the platform shows or publishes") or "")[:160]})
     return out
