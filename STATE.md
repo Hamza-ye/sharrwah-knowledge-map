@@ -146,8 +146,20 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - `class_slice.py uncited` lists what no cell cites.
 - **The architecture plan's draft** (`architecture/plan.md`), with its first part to confirm with the dry run's review.
 - **The dry run's parts are done** (`studies/class-model/parts/`): `B-anchor` (25 capabilities from 22 concerns), `B-woocommerce` (8 concerns, 3 capabilities added) and `B-backfill-woocommerce` (six cells). All pass their checks. Domain B now holds 28 capabilities: 27 `class`, 1 `slot`. What each run taught is in [`method-report.md`](studies/class-model/method-report.md).
-- **Running now:** the dry run's review, in two parts: the cells, and the structure.
-- **Cost so far:** 103.1 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1, `B-anchor` 33.9, `B-woocommerce` 12.8, `B-backfill-woocommerce` 2.0. The coordinating session's own: about 107 million by 01:00 UTC. A projection for the full run comes with the dry run's end.
+- **The dry run's review** in two parts: the cells (62.1 million) and the structure (26.7 million). 24 findings, 6 must fix, and 12 conventions. The coordinator's rulings, every finding taken, are in [`review-dry-run-rulings.md`](studies/class-model/review-dry-run-rulings.md). The conventions are in the extent's brief, and the checker carries the new tests.
+- **The corrections** (22.0 million) applied the rulings to domain B's three parts, which all pass. `method/class_merge.py` merges them into `studies/class-model/merged/`: 29 capabilities, 27 `class` and 2 `slot` (NFTs and token-gating; memberships), with 0 problems. It also derives architecture's index, exact where cited and by landing otherwise.
+- **The orientation page** is updated for this milestone (version 7): the dry run's result, the cost and its projection, and engineering's rulings since the last report, for veto.
+- **The cost is well past the budget's pace.** 213.9 million of 250 spent, and a projection of about 700 million to a billion for the whole extent ([`method-report.md`](studies/class-model/method-report.md), section 7). By the founder's standing decision of 27 October, the work goes on, re-planned to read the same evidence at less cost:
+  - parts small enough that no context passes about 200,000 tokens;
+  - candidate statements listed by script;
+  - the final review by risk.
+
+  Re-measured after the next two domains. Told to the founder on the orientation page.
+- **Next:**
+  1. domain B's Zid and BigCommerce parts, with their back-fills;
+  2. large domains split into units of a few areas each (C, A), so no part grows past the cap;
+  3. the domains G, F, D, E, A and C, two parts at a time.
+- **Cost so far:** 213.9 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1, `B-anchor` 33.9, `B-woocommerce` 12.8, `B-backfill-woocommerce` 2.0, the reviews 88.8, the corrections 22.0. The coordinating session's own: about 107 million by 01:00 UTC.
 
 **Next:**
 1. **A fresh coordinating session** runs Stage 4A (step 1.1 done; 1.2 under way). It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
