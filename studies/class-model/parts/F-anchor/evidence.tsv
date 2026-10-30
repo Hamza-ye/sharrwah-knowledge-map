@@ -1,1 +1,135 @@
 cap_id	platform	supports	key	why
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-1495	the admin navigation item Apps
+CM-APP-001	shopify	core	SH-C-156/decides/SH-S-5028	the apps list route, open to the staff permissions APPLICATIONS or LIMITED_APPLICATIONS
+CM-APP-001	shopify	core	SH-C-019/where/SH-S-6316	the admin's Settings > Apps
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-5035	the admin route app/grant
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-5039	the admin route oauth/request_grant
+CM-APP-001	shopify	core	SH-C-156/decides/SH-S-7052	plan line Integrate with 1000s of apps, Included on every plan
+CM-APP-001	shopify	extension-point	SH-C-156/responsible/SH-S-0739	apps developed by third-party developers, supported by them, may carry app charges
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0738	apps made by Shopify are usually free and supported by Shopify
+CM-APP-001	shopify	shows	SH-C-156/decides/SH-S-0755	merchants approve an app's scopes when they install it
+CM-APP-001	shopify	shows	SH-C-156/decides/SH-S-0060	Shopify may disable access to any Third Party Services at any time
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0058	use of Third Party Services is solely between the merchant and the provider
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0059	Shopify has no control over Third Party Services and isn't liable for them
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0217	developers must tell merchants that the developer alone answers for the Application
+CM-APP-001	salla	core	SA-C-194/where/SA-S-1883	the dashboard link My apps, /apps/installed
+CM-APP-001	salla	core	SA-C-194/where/SA-S-1702	the link Installed apps
+CM-APP-001	salla	core	SA-C-194/where/SA-S-3541	the dashboard app @salla.sa/ui-merchant-apps at /apps
+CM-APP-001	salla	core	SA-C-194/decides/SA-S-2629	the staff permission marketplace_apps_management, named التطبيقات المثبتة
+CM-APP-001	salla	extension-point	SA-C-194/responsible/SA-S-0037	Salla provides only the technical infrastructure that hosts partners' apps or services
+CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0024	developer and merchant each answer for their use of apps; Salla for none
+CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0033	the partner answers to merchants and regulators for the content
+CM-APP-001	salla	shows	SA-C-194/decides/SA-S-3208	a flag of type app, tied to an app id and the plans plus, pro and special, not released
+CM-APP-002	shopify	core	SH-C-157/where/SH-S-2753	Shopify App Store in shopify.com's header navigation
+CM-APP-002	shopify	core	SH-C-157/decides/SH-S-0698	Shopify's review rejects an app until the problem is fixed and the app resubmitted
+CM-APP-002	shopify	core	SH-C-157/where/SH-S-2852	App distribution in the Partner Dashboard's navigation
+CM-APP-002	shopify	core	SH-C-157/decides/SH-S-7078	plan line Plus Certified apps, Included only on Plus
+CM-APP-002	shopify	extension-point	SH-I-1940	the App Store category Store management apps
+CM-APP-002	shopify	extension-point	SH-I-1945	the App Store category Operations apps
+CM-APP-002	shopify	shows	SH-C-157/decides/SH-S-0692	an app's distribution method can't be changed once selected
+CM-APP-002	shopify	shows	SH-C-157/boundary/SH-S-0215	a developer gets an API client by registering a Partner Account under the Partner Program Agreement
+CM-APP-002	shopify	shows	SH-C-157/responsible/SH-S-0288	the Partner Program Agreement is with Shopify Inc. and Shopify Commerce Singapore Pte. Ltd.
+CM-APP-002	shopify	shows	SH-C-157/decides/SH-S-0694	Shopify approves an app's use of protected customer data only if it is the minimum needed
+CM-APP-002	salla	core	SA-C-194/where/SA-S-1884	the dashboard link App Store, /apps
+CM-APP-002	salla	core	SA-C-175/decides/SA-S-0023	Salla's team may review, accept or reject any app developers submit
+CM-APP-002	salla	core	SA-C-194/boundary/SA-S-1075	the App API's folder App Details Builder, for an app's details (a reading of its name)
+CM-APP-002	salla	extension-point	SA-I-0184	the app category General App
+CM-APP-002	salla	extension-point	SA-I-0190	the app category Shipping and Delivery
+CM-APP-002	salla	shows	SA-C-194/where/SA-S-0002	an app marketplace among the connected products Salla offers
+CM-APP-002	salla	shows	SA-C-175/where/SA-S-5082	the App Store's terms policy page on partners.salla.com
+CM-APP-002	salla	shows	SA-C-175/responsible/SA-S-0015	the policy's preamble names the company that owns the Salla platform
+CM-APP-002	salla	shows	SA-C-175/responsible/SA-S-0021	disputes go before the competent courts of Jeddah
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0281	app charges are added directly to the merchant's Shopify invoice
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0269	an app's recurring charge is included in the regular Shopify subscription bill
+CM-APP-003	shopify	core	SH-C-019/responsible/SH-S-0282	Shopify collects the charge and pays out the developer's share
+CM-APP-003	shopify	core	SH-C-019/responsible/SH-S-0283	Shopify handles chargebacks
+CM-APP-003	shopify	core	SH-C-157/decides/SH-S-0284	apps published on the App Store must use a Shopify billing solution
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-0285	plans, usage pricing and free trials set in the Partner Dashboard, not in billing code
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0769	Shopify's own API group Billing
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5065	the admin route approving an app charge
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-5066	that route, open to the staff permission BILLING_APPLICATION_CHARGES
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5061	the admin route listing an app's pricing plans
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5078	the admin route approving a charge for a managed pricing plan
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-5083	the route plan:subscriptions, open to APPLICATIONS, APPLICATIONS_BILLING and BILLING_SUBSCRIPTIONS
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-6315	the admin's Settings > Billing
+CM-APP-003	shopify	shows	SH-C-019/responsible/SH-S-0286	the developer obtains the merchant's consent and bills under the Merchant Agreement
+CM-APP-003	shopify	shows	SH-C-019/decides/SH-S-0271	a paid charge's refund is asked of the app developer
+CM-APP-003	shopify	shows	SH-C-019/decides/SH-S-0287	the developer pays 0% on the first USD 1 million of app revenues and 15% above
+CM-APP-003	shopify	shows	SH-C-019/reason/SH-S-0280	Shopify App Pricing gives app users a predictable, standardized experience
+CM-APP-003	salla	core	SA-C-195/responsible/SA-S-0025	a paid app's payment goes through the Salla platform, subject to its commissions
+CM-APP-003	salla	core	SA-C-195/where/SA-S-1927	the navigation link App Subscriptions, /subscriptions/apps
+CM-APP-003	salla	core	SA-C-195/boundary/SA-S-1077	the App API's folder Subscriptions
+CM-APP-003	salla	shows	SA-C-195/decides/SA-S-0026	Salla keeps a percentage of the subscription for hosting and integration
+CM-APP-004	shopify	core	SH-C-156/boundary/SH-S-1153	the webhook topic app/uninstalled
+CM-APP-004	shopify	core	SH-C-019/boundary/SH-S-1156	the webhook topic app_subscriptions/update
+CM-APP-004	shopify	core	SH-I-0390	the webhook topic app_purchases_one_time/update
+CM-APP-004	shopify	core	SH-I-0391	the webhook topic app_subscriptions/approaching_capped_amount
+CM-APP-004	shopify	core	SH-I-0075	the Partner API's App Events API
+CM-APP-004	shopify	core	SH-I-0171	the Partner API's App events
+CM-APP-004	salla	core	SA-C-193/where/SA-S-5093	the partner portal's App Events, sent through webhooks, about the partner's apps
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1649	app.installed, when an app is installed on a merchant store
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1569	the event app.uninstalled
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1648	app.store.authorize, when a store authorizes an app's scope
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1650	the event app.updated
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1570	the event app.trial.started
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1571	the event app.trial.expired
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1651	the event app.trial.canceled
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1572	the event app.subscription.started
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1654	the event app.subscription.renewed
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1652	the event app.subscription.expired
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1653	the event app.subscription.canceled
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1656	the event app.settings.updated
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1655	the event app.feedback.created
+CM-APP-004	salla	shows	SA-C-193/decides/SA-S-5094	app events are tested in demo stores, the app saved as a draft once priced
+CM-APP-005	shopify	core	SH-C-163/decides/SH-S-0683	Shopify invokes functions as needed within the customer journey, never by URL
+CM-APP-005	shopify	core	SH-C-163/where/SH-S-0809	the API reference group Shopify Functions
+CM-APP-005	shopify	core	SH-C-163/decides/SH-S-7076	plan line Personalize store with custom functions, Included only on Plus
+CM-APP-005	shopify	extension-point	SH-C-163/where/SH-S-0681	Shopify Functions let developers customize Shopify's backend logic
+CM-APP-005	shopify	extension-point	SH-C-163/decides/SH-S-0682	stores on any plan use public App Store apps that contain functions
+CM-APP-005	shopify	shows	SH-C-163/where/SH-S-0684	a function is written in any language that compiles to WebAssembly
+CM-APP-005	shopify	shows	SH-C-163/responsible/SH-S-7281	the developer alone answers for the Application
+CM-APP-005	salla	core	SA-C-196/where/SA-S-0190	App Functions are fully managed by Salla: no servers, deployments, monitoring or scaling
+CM-APP-005	salla	core	SA-C-196/where/SA-S-1168	App Functions, a top-level section of Salla's developer docs
+CM-APP-005	salla	core	SA-C-196/decides/SA-S-3079	the released feature flag app-functions, enabled for the store
+CM-APP-005	salla	core	SA-C-196/boundary/SA-S-1078	the API folder Merchants Events
+CM-APP-005	salla	core	SA-C-196/boundary/SA-S-1079	the API folder Customers Events
+CM-APP-005	salla	extension-point	SA-C-196/reason/SA-S-0187	developers write serverless functions that run when events occur in a store
+CM-APP-005	salla	shows	SA-C-196/decides/SA-S-0189	synchronous actions block the user and must respond in milliseconds
+CM-APP-005	salla	shows	SA-C-196/decides/SA-S-0188	App Functions are in beta and free of charge
+CM-APP-005	salla	shows	SA-C-196/where/SA-S-3602	the dashboard bundle @salla.sa/app-functions-types at /{app-name}
+CM-APP-006	shopify	core	SH-C-164/boundary/SH-S-0817	the API reference Polaris references
+CM-APP-006	shopify	shows	SH-I-2104	the help center's section App extensions and functions
+CM-APP-006	shopify	shows	SH-C-156/decides/SH-S-5037	the admin route for an app's extension details, behind a beta and the apps permissions
+CM-APP-006	shopify	shows	SH-C-164/responsible/SH-S-7281	the developer alone answers for the Application
+CM-APP-006	salla	core	SA-C-197/where/SA-S-1158	Embedded SDK, a section of Salla's developer docs
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1084	the API folder Embedded SDK
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1085	the SDK's Auth Module
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1086	the SDK's Page Module
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1087	the SDK's Nav Module
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1088	the SDK's UI Module
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1089	the SDK's Checkout Module
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1090	the SDK's Endpoints
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1095	the SDK's App Onboarding
+CM-APP-006	salla	core	SA-C-197/decides/SA-S-3427	the released flag apps-iframe-sections, enabled for the store
+CM-APP-007	shopify	core	SH-I-0054	the API reference App Home (iframe)
+CM-APP-007	shopify	core	SH-I-0055	the API reference App Home (UI extension)
+CM-APP-007	shopify	core	SH-C-156/where/SH-S-5034	the admin route apps:embedded_parent, at apps
+CM-APP-007	shopify	extension-point	SH-C-164/where/SH-S-2182	the extension target app_home
+CM-APP-007	salla	core	SA-C-197/where/SA-S-3585	the dashboard app @salla.sa/ui-merchant-embedded at /embedded
+CM-APP-007	salla	extension-point	SA-C-197/where/SA-S-0197	a third-party application in an iframe interacts with the Merchant Dashboard through the Embedded SDK
+CM-APP-007	salla	extension-point	SA-C-197/where/SA-S-3581	the dashboard route named for each app, /{app-name}
+CM-APP-008	shopify	extension-point	SH-C-164/where/SH-S-0711	Admin UI extensions embed an app's functionality on core admin pages
+CM-APP-008	shopify	extension-point	SH-I-1428	the extension target Admin block (admin_block)
+CM-APP-008	shopify	extension-point	SH-I-1425	the extension target Admin action (admin_action)
+CM-APP-008	shopify	extension-point	SH-I-1432	the extension target Admin print action (admin_print)
+CM-APP-008	shopify	extension-point	SH-I-1481	the extension target Admin link (admin_link)
+CM-APP-008	shopify	extension-point	SH-I-1497	the target admin.product-details.block.render
+CM-APP-008	shopify	shows	SH-C-164/decides/SH-S-7487	a compiled UI extension bundle can't exceed 64 KB
+CM-APP-008	shopify	shows	SH-C-164/reason/SH-S-7496	Shopify enforces the limit at deployment, for fast loading
+CM-APP-009	shopify	core	SH-C-167/where/SH-S-7143	the admin route apps:development_list, App development, in the Apps section
+CM-APP-009	shopify	core	SH-C-167/where/SH-S-7144	the admin route development/enable, in the Apps section
+CM-APP-009	shopify	core	SH-C-167/decides/SH-S-5038	the route, open to APPLICATIONS with EDIT_PRIVATE_APPS or VIEW_PRIVATE_APPS
+CM-APP-009	shopify	core	SH-I-0995	the staff permission App development > Enable development
+CM-APP-009	shopify	core	SH-C-167/decides/SH-S-7054	plan line Build custom apps using Shopify APIs, limited data access on Basic
+CM-APP-009	shopify	shows	SH-C-157/decides/SH-S-0693	building for a specific merchant, a developer typically uses custom distribution
+CM-APP-009	shopify	shows	SH-C-167/responsible/SH-S-7477	the developer of an unsupported app is responsible for updating it

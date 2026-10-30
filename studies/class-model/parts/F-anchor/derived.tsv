@@ -1,0 +1,19 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-APP-001	salla	statements	core;extension-point	@salla.sa/ui-merchant-apps | Installed apps | My apps	SA-C-194/decides/SA-S-3208=plans: plus, pro, special	SA-C-194/reason:page not read	general
+CM-APP-001	shopify	statements	core;extension-point	app:grant | apps | apps:request_grant | settings/apps	SH-C-156/decides/SH-S-7052=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399	SH-C-156/reason:searched, not found	general
+CM-APP-002	salla	statements	core;extension-point	## 2. What Salla is and is not | App Store | https://partners.salla.com/en/legal-en/apps-policy		SA-C-175/boundary:observation needed;SA-C-175/reason:page not read;SA-C-194/reason:page not read	general
+CM-APP-002	shopify	statements	core;extension-point	App distribution | Shopify App Store	SH-C-157/decides/SH-S-7078=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 | SH-C-157/where/SH-S-2753=shopify.com header navigation | SH-C-157/where/SH-S-2852=Partner Dashboard navigation (partner 5236935)	SH-C-156/reason:searched, not found	general
+CM-APP-003	salla	statements	core	App Subscriptions			general
+CM-APP-003	shopify	statements	core	billing:app-selector:list | billing:charge:approval:list | billing:managed-pricing:charge-approval | settings/billing			general
+CM-APP-004	salla	statements	core	App Events	SA-C-193/decides/SA-S-5094=demo stores	SA-C-193/responsible:stated only in general terms;SA-C-193/reason:page not read	general
+CM-APP-004	shopify	statements	core			SH-C-156/reason:searched, not found;SH-C-168/reason:searched, not found	general
+CM-APP-005	salla	statements	core;extension-point	@salla.sa/app-functions-types | AWB - Getting Started | App Functions	SA-C-196/decides/SA-S-3079=the answering store (merchant@en)	SA-C-196/responsible:stated only in general terms	general
+CM-APP-005	shopify	statements	core;extension-point	About Shopify Functions | How Shopify Functions work | Shopify Functions	SH-C-163/decides/SH-S-7076=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399 | SH-C-163/responsible/SH-S-7281=Developers' Applications	SH-C-163/reason:searched, not found	general
+CM-APP-006	salla	statements	core	Embedded SDK	SA-C-197/decides/SA-S-3427=the answering store (merchant@en)	SA-C-197/responsible:stated only in general terms;SA-C-197/reason:page not read	general
+CM-APP-006	shopify	statements	core		SH-C-164/responsible/SH-S-7281=Developers' Applications	SH-C-156/reason:searched, not found;SH-C-163/reason:searched, not found	general
+CM-APP-007	salla	statements	core;extension-point	@salla.sa/ui-merchant-embedded | @salla.sa/ui-merchant-{app-name} | Overview		SA-C-197/responsible:stated only in general terms;SA-C-197/reason:page not read	general
+CM-APP-007	shopify	statements	core;extension-point	app_home | apps:embedded_parent		SH-C-156/reason:searched, not found	general
+CM-APP-008	salla	none-held					
+CM-APP-008	shopify	statements	extension-point	Admin UI extensions		SH-C-061/responsible:stated only in general terms;SH-C-061/reason:searched, not found	
+CM-APP-009	salla	none-held					
+CM-APP-009	shopify	statements	core	apps:development_enable | apps:development_list	SH-C-167/decides/SH-S-7054=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399	SH-C-010/reason:searched, not found;SH-C-167/boundary:searched, not found;SH-C-167/reason:searched, not found	general

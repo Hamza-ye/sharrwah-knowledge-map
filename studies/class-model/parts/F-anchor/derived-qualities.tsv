@@ -1,0 +1,5 @@
+cap_id	platform	quality	value	key	scope
+CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	
+CM-APP-008	shopify	compiled UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-164/decides/SH-S-7487	
+CM-APP-009	shopify	custom apps' data access, by plan	Build custom apps using Shopify APIs: Limited data access, Full data access, Full data access, Full data access	SH-C-167/decides/SH-S-7054	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
