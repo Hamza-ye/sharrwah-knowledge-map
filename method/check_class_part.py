@@ -19,7 +19,7 @@ import csv, os, re, sys
 
 csv.field_size_limit(10**9)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns, items, hits
+from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns, items, hits, citable
 
 HEADS = {
     "capabilities.tsv": ["cap_id", "area", "capability", "parent", "note"],
@@ -54,6 +54,9 @@ def plat(token):
     for p, x in PREFIX.items():
         if token.startswith(x + "-C-") or token.startswith(x + "-I-"):
             return p
+    m = re.match(r"S\d\d-([A-Z]{2})-\d+$", token)       # a subject's statement, cited only by a points amendment
+    if m:
+        return next((p for p, x in PREFIX.items() if x == m.group(1)), None)
     return None
 
 
@@ -92,7 +95,7 @@ def all_concerns():
 
 
 def stmt_index():
-    return {p: {key(r): r for r in items(p)} for p in PLATFORMS}
+    return {p: {key(r): r for r in citable(p)} for p in PLATFORMS}
 
 
 def statement_of(k, stm):

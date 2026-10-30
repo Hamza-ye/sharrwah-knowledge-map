@@ -180,3 +180,15 @@ CM-SHP-015	bigcommerce	core	BC-C-070/where/BC-S-0374	Shipping V2 API: shipping c
 CM-SHP-015	bigcommerce	shows	BC-C-070/decides/BC-S-0377	names the carriers giving real-time rates
 CM-SHP-023	bigcommerce	core	BC-I-0410	plan line ShipperHQ shipping rules engine
 CM-SHP-015	bigcommerce	shows	BC-C-071/boundary/BC-S-0381	a registered shipping carrier's server
+CM-PAY-016	bigcommerce	core	S01-BC-115	the store set up to take a Bank Deposit payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-016	bigcommerce	core	S01-BC-116	the store set up to take a Cash on Delivery payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-016	bigcommerce	core	S01-BC-117	the store set up to take a Check payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-016	bigcommerce	core	S01-BC-118	the store set up to take a Money Order payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-016	bigcommerce	core	S01-BC-119	Pay in Store, the final offline method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-029	bigcommerce	core	S01-BC-116	the store set up to take a Cash on Delivery payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-030	bigcommerce	core	S01-BC-115	a Bank Deposit method: the buyer pays into the store's bank account, shown its details and instructions (the coordinator, from the subjects' points: P-1 S01-VP-05)
+CM-PAY-006	bigcommerce	shows	S01-BC-082	new BigCommerce Payments accounts' initial payments held up to 21 days before payout, pointing to PayPal's page on new accounts (the coordinator, from the subjects' points: P-2 S01-VP-18)
+CM-PAY-006	bigcommerce	shows	S01-BC-083	funds held or blocked for several reasons, with actions to complete (the coordinator, from the subjects' points: P-2 S01-VP-18)
+CM-PAY-015	bigcommerce	outside	S01-BC-094	PayPal Pay Later: the shopper owes the money to PayPal, and the merchant always gets paid (the coordinator, from the subjects' points: P-2 S01-VP-22)
+CM-PAY-015	bigcommerce	outside	S01-BC-024	PayPal's Pay in 4 and Pay Monthly: customers pay in instalments while the merchant is paid up front (the coordinator, from the subjects' points: P-2 S01-VP-22)
+CM-PAY-015	bigcommerce	extension-point	S01-BC-022	consumer financing integrations that guarantee the merchant is paid (the coordinator, from the subjects' points: P-2 S01-VP-22)

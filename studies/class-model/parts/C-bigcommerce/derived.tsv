@@ -29,7 +29,7 @@ CM-PAY-002	bigcommerce	statements	core	Embedded Payment Provider List	BC-C-025/d
 CM-PAY-003	bigcommerce	none-held					
 CM-PAY-004	bigcommerce	statements	outside	BigCommerce Payments by PayPal		BC-C-025/responsible:page not read	
 CM-PAY-005	bigcommerce	statements	core	Money Dashboard		BC-C-025/responsible:page not read	general
-CM-PAY-006	bigcommerce	none-held					
+CM-PAY-006	bigcommerce	statements	not-stated		S01-BC-082=new BigCommerce Payments accounts		
 CM-PAY-007	bigcommerce	statements	core		BC-C-025/decides/BC-S-0145=eligible US merchants	BC-C-025/responsible:page not read	eligible US merchants
 CM-PAY-008	bigcommerce	statements	core;own-service	/developer/api-reference/rest/b2b/management/invoice-management | /developer/api-reference/rest/b2b/overview | Invoicing & net terms		BC-C-031/responsible:stated only in general terms;BC-C-031/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
 CM-PAY-009	bigcommerce	none-held					
@@ -38,8 +38,8 @@ CM-PAY-011	bigcommerce	statements	core;extension-point;outside	Choose Your Regio
 CM-PAY-012	bigcommerce	statements	core	Digital wallets	BC-C-027/decides/BC-S-0162=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	general
 CM-PAY-013	bigcommerce	statements	not-stated	/developer/api-reference/rest/admin/payments/stored-instruments | Digital wallets		BC-C-024/responsible:stated only in general terms;BC-C-024/reason:searched, not found;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	
 CM-PAY-014	bigcommerce	statements	core	/developer/api-reference/rest/admin/payments/stored-instruments	BC-C-024/decides/BC-S-0135=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-024/responsible:stated only in general terms;BC-C-024/reason:searched, not found	general
-CM-PAY-015	bigcommerce	statements	not-stated	Digital wallets | Embedded Payment Provider List		BC-C-025/responsible:page not read;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	
-CM-PAY-016	bigcommerce	statements	not-stated				
+CM-PAY-015	bigcommerce	statements	extension-point;outside	Digital wallets | Embedded Payment Provider List	S01-BC-094=PayPal Pay Later	BC-C-025/responsible:page not read;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	
+CM-PAY-016	bigcommerce	statements	core	Configuring Offline Payment Methods: Bank deposit | Configuring Offline Payment Methods: Cash on delivery | Configuring Offline Payment Methods: Check | Configuring Offline Payment Methods: Money order | Configuring Offline Payment Methods: Pay in store			general
 CM-PAY-017	bigcommerce	statements	not-stated		BC-C-074/decides/BC-S-0400=plans Core, Growth, Scale, Performance (columns of the plan comparison table)		
 CM-PAY-018	bigcommerce	none-held					
 CM-PAY-019	bigcommerce	statements	core;own-service	/developer/api-reference/rest/b2b/management/payment | /developer/api-reference/rest/b2b/overview		BC-C-031/responsible:stated only in general terms;BC-C-031/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
@@ -52,8 +52,8 @@ CM-PAY-025	bigcommerce	none-held
 CM-PAY-026	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
 CM-PAY-027	bigcommerce	none-held					
 CM-PAY-028	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
-CM-PAY-029	bigcommerce	statements	not-stated				
-CM-PAY-030	bigcommerce	none-held					
+CM-PAY-029	bigcommerce	statements	core	Configuring Offline Payment Methods: Cash on delivery			general
+CM-PAY-030	bigcommerce	statements	core	Configuring Offline Payment Methods: Bank deposit			general
 CM-PAY-031	bigcommerce	none-held					
 CM-PAY-032	bigcommerce	none-held					
 CM-RET-001	bigcommerce	statements	core	Refunds & returns		BC-C-021/decides:page not read;BC-C-021/responsible:stated only in general terms;BC-C-021/reason:searched, not found	general

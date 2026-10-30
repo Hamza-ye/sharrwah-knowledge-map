@@ -3284,6 +3284,17 @@ CM-RET-003	salla	core	SA-C-045/boundary/SA-S-1577	event order.shipment.return.cr
 CM-RET-003	salla	core	SA-C-045/boundary/SA-S-1575	event order.shipment.return.cancelled, الغاء شحنة استرجاع	C-anchor
 CM-RET-003	salla	shows	SA-C-041/boundary/SA-S-2680	the store's order status مسترجع, restored, icon sicon-refund	C-anchor
 CM-RET-003	salla	shows	SA-C-041/boundary/SA-S-2681	the store's order status قيد الإسترجاع, restoring	C-anchor
+CM-PAY-015	salla	outside	S01-SA-101	payments through Tabby collected by Tabby, not Salla Payments (UAE) (the coordinator, from the subjects' points: P-1 S01-VP-02, S01-VP-03, S01-VP-04, S01-VP-09; P-2 S01-VP-22)	C-anchor
+CM-PAY-015	salla	outside	S01-SA-102	Tabby transfers to the store first and collects from the customers later (the coordinator, from the subjects' points: P-1 S01-VP-02, S01-VP-03, S01-VP-04, S01-VP-09; P-2 S01-VP-22)	C-anchor
+CM-PAY-015	salla	outside	S01-SA-104	all payments settled by Tamara on the schedule agreed with the store (the coordinator, from the subjects' points: P-1 S01-VP-02, S01-VP-03, S01-VP-04, S01-VP-09; P-2 S01-VP-22)	C-anchor
+CM-PAY-015	salla	outside	S01-SA-105	Tamara responsible for transferring the orders' value to the merchant, under their agreement (UAE) (the coordinator, from the subjects' points: P-1 S01-VP-02, S01-VP-03, S01-VP-04, S01-VP-09; P-2 S01-VP-22)	C-anchor
+CM-PAY-015	salla	outside	S01-SA-106	a return's amount deducted from Tamara, not from Salla's payments balance (the coordinator, from the subjects' points: P-1 S01-VP-02, S01-VP-03, S01-VP-04, S01-VP-09; P-2 S01-VP-22)	C-anchor
+CM-PAY-009	salla	outside	S01-SA-180	نسبة عمليات الدفع التي أوقفها البنك المصدر: payments the card-issuing bank held over disputes (the coordinator, from the subjects' points: P-1 S01-VP-08)	C-anchor
+CM-PAY-009	salla	outside	S01-SA-181	percentage of payments held by the issuing bank due to disputes (the coordinator, from the subjects' points: P-1 S01-VP-08)	C-anchor
+CM-PAY-006	salla	core	S01-SA-160	unverified stores' funds pending until verification is complete (Saudi Arabia) (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-anchor
+CM-PAY-006	salla	core	S01-SA-135	payment and settlement operations suspended until the store is verified (KSA) (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-anchor
+CM-PAY-006	salla	core	S01-SA-161	verification required to withdraw the store's balance and transfer the electronic payments balance (Saudi Arabia) (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-anchor
+CM-PAY-011	salla	outside	S01-SA-107	payments transferred by Mokafaa Al Rajhi to the merchant's own account with it, its commission by their agreement (the coordinator, from the subjects' points: P-1 S01-VP-03)	C-anchor
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0162	Store API endpoint /checkout	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0163	Store API endpoint /checkout/{id}, checkout-order	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/decides/WC-S-0928	setting Enable guest checkout (recommended)	C-woocommerce
@@ -4267,6 +4278,18 @@ CM-SHP-015	bigcommerce	core	BC-C-070/where/BC-S-0374	Shipping V2 API: shipping c
 CM-SHP-015	bigcommerce	shows	BC-C-070/decides/BC-S-0377	names the carriers giving real-time rates	C-bigcommerce
 CM-SHP-023	bigcommerce	core	BC-I-0410	plan line ShipperHQ shipping rules engine	C-bigcommerce
 CM-SHP-015	bigcommerce	shows	BC-C-071/boundary/BC-S-0381	a registered shipping carrier's server	C-bigcommerce
+CM-PAY-016	bigcommerce	core	S01-BC-115	the store set up to take a Bank Deposit payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-016	bigcommerce	core	S01-BC-116	the store set up to take a Cash on Delivery payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-016	bigcommerce	core	S01-BC-117	the store set up to take a Check payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-016	bigcommerce	core	S01-BC-118	the store set up to take a Money Order payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-016	bigcommerce	core	S01-BC-119	Pay in Store, the final offline method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-029	bigcommerce	core	S01-BC-116	the store set up to take a Cash on Delivery payment method (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-030	bigcommerce	core	S01-BC-115	a Bank Deposit method: the buyer pays into the store's bank account, shown its details and instructions (the coordinator, from the subjects' points: P-1 S01-VP-05)	C-bigcommerce
+CM-PAY-006	bigcommerce	shows	S01-BC-082	new BigCommerce Payments accounts' initial payments held up to 21 days before payout, pointing to PayPal's page on new accounts (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-bigcommerce
+CM-PAY-006	bigcommerce	shows	S01-BC-083	funds held or blocked for several reasons, with actions to complete (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-bigcommerce
+CM-PAY-015	bigcommerce	outside	S01-BC-094	PayPal Pay Later: the shopper owes the money to PayPal, and the merchant always gets paid (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
+CM-PAY-015	bigcommerce	outside	S01-BC-024	PayPal's Pay in 4 and Pay Monthly: customers pay in instalments while the merchant is paid up front (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
+CM-PAY-015	bigcommerce	extension-point	S01-BC-022	consumer financing integrations that guarantee the merchant is paid (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-5140	admin route customer, path customers	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-1515	its own Customers section name	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-0775	its own Customers label	D-anchor

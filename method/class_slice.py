@@ -77,6 +77,9 @@ def key(r):
 
 
 def platform_of(concern_id):
+    m = re.match(r"S\d\d-([A-Z]{2})-", concern_id)      # a subject's statement, such as S01-SA-104
+    if m:
+        concern_id = m.group(1) + "-"
     for p, x in PREFIX.items():
         if concern_id.startswith(x + "-"):
             return p
@@ -138,8 +141,45 @@ def inventory_items(platform):
 
 
 def items(platform):
-    """Statements, then placed inventory entries: everything a cell may cite."""
+    """Statements, then placed inventory entries: everything a part's cell may cite."""
     return statements(platform) + inventory_items(platform)
+
+
+SUBJ = os.path.join(ROOT, "studies", "subjects")
+SUBJECTS_CITED = ("S-01", "S-02")     # the subjects whose points have landed on the model
+_subj = {}
+
+
+def subject_items(platform):
+    """The landed subjects' own statements, citable by their id (S01-SA-104), each as the subject recorded it. Only an
+    amendment from the subjects' points cites one, where a point's conflict showed the concern map lacks what the
+    subject holds (PLAN.md, Stage 4A, "The subjects' points"; briefs/P-points.md)."""
+    if platform not in _subj:
+        out = []
+        for s in SUBJECTS_CITED:
+            for r in rows(os.path.join(SUBJ, s, platform, "statements.tsv")):
+                out.append({"inv_id": r["stmt_id"], "concern_id": "", "concern_ids": [],
+                            "placement": r.get("placement", "") or "subject", "structure": f"{s}'s statements",
+                            "identifier": r.get("identifier", ""), "statement": r.get("statement", ""),
+                            "scope": r.get("scope", ""), "cite_ids": r.get("cite_ids", ""), "note": r.get("note", ""),
+                            "subject": s})
+        _subj[platform] = out
+    return _subj[platform]
+
+
+def subject_citations(platform):
+    out = {}
+    for s in SUBJECTS_CITED:
+        for f in ("citations.tsv", "recorded-citations.tsv"):
+            for r in rows(os.path.join(SUBJ, s, platform, f)):
+                out[r["cite_id"]] = r
+    return out
+
+
+def citable(platform):
+    """Everything a cell's evidence may name: the concern map's statements and placed entries, and the landed subjects'
+    statements, which only the points' amendments cite."""
+    return items(platform) + subject_items(platform)
 
 
 def concerns(platform):
@@ -231,7 +271,7 @@ def cmd_statements(a):
 def cmd_key(a):
     for k in a.keys:
         p = platform_of(k)
-        hit = [r for r in items(p) if key(r) == k]
+        hit = [r for r in citable(p) if key(r) == k]
         if not hit:
             print(f"{k}\tNOT FOUND")
         for r in hit:

@@ -27,7 +27,7 @@ import argparse, csv, os, re, subprocess, sys
 
 csv.field_size_limit(10**9)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import MODEL, PLATFORMS, PART_ORDER, rows, items, key, fold, ids
+from class_slice import MODEL, PLATFORMS, PART_ORDER, rows, items, key, fold, ids, citable
 from check_class_part import HEADS, semi, plat
 
 problems, flags = [], []
@@ -59,7 +59,7 @@ def main():
         if not data[d]["derived.tsv"] and data[d]["cells.tsv"]:
             problems.append(f"{d}: no derived.tsv; run method/check_class_part.py on it first")
     sc = {r["concern_id"]: r for r in rows(os.path.join(MODEL, "scope.tsv"))}
-    stm = {p: {key(r): r for r in items(p)} for p in PLATFORMS}
+    stm = {p: {key(r): r for r in citable(p)} for p in PLATFORMS}
 
     def statement(k):
         p = plat(k)

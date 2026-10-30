@@ -3737,6 +3737,11 @@ CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0704	تحويل المبالغ ا
 CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0705	النسبة المقتطعة
 CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0706	كل يوم ثلاثاء
 CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0707	بشكل شهري
+CM-PAY-006	exact	decides	S01-BC-082	FAQ: Note: initial payments are held for up to 21 days
+CM-PAY-006	exact	decides	S01-BC-083	FAQ: Troubleshooting and support: Why are some of my funds held or otherwise unavailable for payout?
+CM-PAY-006	exact	decides	S01-SA-135	❓ في حال لم أوثق متجري هل ستُلغى طرق الدفع من متجري، أم أن الطلبات تستمر ولكن تحجز المبالغ؟
+CM-PAY-006	exact	decides	S01-SA-160	Managing electronic payments balance
+CM-PAY-006	exact	decides	S01-SA-161	Does store verification matter?
 CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0112	Part I, C. Reserves
 CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0332	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
 CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0355	Reasons for account holds, Creditor or legal action
@@ -3791,6 +3796,8 @@ CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6268	write_payment_terms
 CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6269	write_payment_terms
 CM-PAY-008	exact	decides	SH-C-045/decides/SH-S-7152	SET_PAYMENT_TERMS_FOR_ORDERS
 CM-PAY-008	exact	decides	SH-C-045/decides/SH-S-7153	SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS
+CM-PAY-009	exact	boundary	S01-SA-180	financial_claims_percentage_description
+CM-PAY-009	exact	boundary	S01-SA-181	financial_claims_percentage_description
 CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-0398	help.shopify.com/en/manual/payments/chargebacks.md
 CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-1141	write_shopify_payments_dispute_evidences
 CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-1214	disputes/create
@@ -3940,6 +3947,12 @@ CM-PAY-014	exact	decides	SH-C-074/decides/SH-S-5249	payments:settings:shopify-pa
 CM-PAY-014	exact	decides	WC-C-015/decides/WC-S-0849	8. j. More on WooPay Specifically
 CM-PAY-014	exact	decides	WC-C-015/decides/WC-S-5338	Requirements
 CM-PAY-014	exact	decides	WC-C-042/decides/WC-S-5468	Enable payments via saved cards
+CM-PAY-015	exact	decides	S01-BC-022	Consumer financing: Risk-free for you, safe for them
+CM-PAY-015	exact	decides	S01-BC-024	Boost conversion with PayPal: Help drive sales with Pay Later.
+CM-PAY-015	exact	decides	S01-BC-094	PayPal Pay Later
+CM-PAY-015	exact	boundary	S01-SA-102	تفعيل وسيلة الدفع الآجل تابي Tabby
+CM-PAY-015	exact	decides	S01-SA-104	❓ متى تتم تسوية المبالغ للتجار؟
+CM-PAY-015	exact	boundary	S01-SA-106	إدارة استرجاع الطلبات
 CM-PAY-015	exact	boundary	SA-C-118/boundary/SA-S-0075	خدمات مساندة
 CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0058	الأسئلة الشائعة
 CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0064	الأسئلة الشائعة

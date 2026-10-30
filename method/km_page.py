@@ -13,7 +13,7 @@ it. --draft marks the page as a draft, for a view before every domain and platfo
 import argparse, json, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import MODEL, PLATFORMS, rows, items, key
+from class_slice import MODEL, PLATFORMS, rows, items, key, citable, subject_citations
 
 ROOT = os.path.abspath(os.path.join(MODEL, "..", ".."))
 CMAP = os.path.join(ROOT, "studies", "concern-map", "platforms")
@@ -100,7 +100,7 @@ def main():
     # evidence, each row with its source
     st = {}
     for p in PLATFORMS:
-        for s in items(p):
+        for s in citable(p):
             st[key(s)] = s
     inv_cite = {}
     for p in PLATFORMS:
@@ -110,6 +110,7 @@ def main():
     for p in PLATFORMS:
         for r in rows(os.path.join(CMAP, p, "citations.tsv")):
             cite_src[r["cite_id"]] = r
+        cite_src.update(subject_citations(p))            # a subject's statement, cited by a points amendment
     ev, cites = {}, {}
     for r, ln in numbered(os.path.join(MERGED, "evidence.tsv")):
         k = r["key"]
