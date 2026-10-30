@@ -1,0 +1,238 @@
+platform	structure	read	rule	reason
+zid	dashboard-page-index	yes		the dashboard's own index of its pages, with their titles: its places
+zid	dashboard-route-manifest	yes		every route of the dashboard: its places, with those the page index doesn't title
+zid	store-plan-policies	yes		every policy of the store's plan, with the plan each is available in: its plan lines
+zid	store-permissions	yes		the permissions a team member can be given, with the plans that restrict them
+zid	plans-offered	doc		held as an answer in a run (zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/purchasables/core-packages/packages/): the plans offered, read whole
+zid	store-feature-flags	doc		held as an answer in a run (zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/store/feature-flags/): the store's feature flags, read whole
+zid	dashboard-locales	no		the dashboard's strings (33,722 lines), without places of their own; the page index gives its pages' titles, and the cells pass searches them
+zid	storefront-hreflang	no		the storefront's addresses per language and country: market data, the subjects'
+bigcommerce	settings-list	yes		the control panel's Settings, by group and section: its places
+bigcommerce	plan-comparison	yes		the plan table, with what each plan includes: its plan lines
+bigcommerce	channel-catalog	yes		the channels a store can create, by category: what the platform connects
+bigcommerce	payment-gateways	yes		the payment gateways, with their features: what the platform connects
+bigcommerce	tax-services	yes		the automatic tax services a store is offered: what the platform connects
+bigcommerce	contracting-entities	yes		the company a merchant contracts with, by country
+bigcommerce	standard-formats	doc		the units, number tokens, date formats and time zone per country: read for Q3's miss M-04 and cells that need them
+bigcommerce	localization-countries	no		the countries a store can choose as its default: market data, the subjects'
+woocommerce	core-profiler-free-extensions	yes		the free features the set-up offers, by bundle
+woocommerce	payments-providers	yes		the payment providers WooCommerce lists for a business location: what the platform connects
+woocommerce	woopayments-onboarding	yes		WooPayments' onboarding states and steps
+woocommerce	options	yes	rows:woocommerce/raw/runs/20261029T023745Z-db-after-country-change/options.tsv:^(woocommerce|wcpay|wc_|_wc)	the store's settings as WooCommerce keeps them, after set-up and a change of country: every WooCommerce and WooPayments option
+woocommerce	woopayments-onboarding-fields	no		the legal entity types WooPayments offers per country: market data, the subjects'
+woocommerce	woopayments-supported-countries	no		the countries WooPayments supports: market data, the subjects'
+woocommerce	countries-states	no		WooCommerce's countries and states: market data, the subjects'
+shopify	admin-router	yes		the admin's route manifest: its places; the routes the concern map didn't cite
+shopify	admin-router-versions	yes	new-vs:admin-router	later versions of the route manifest: the routes the read version lacks
+shopify	admin-route-titles-en	no		the routes' titles, which the manifest's own routes carry
+shopify	admin-settings-nav	yes		the admin's Settings navigation: its places; the items not cited
+shopify	admin-main-nav	yes		the admin's main navigation: its places; the items not cited
+shopify	settings-panel	yes		the Settings panel's grouping: its places
+shopify	store-picker	no		one account's stores
+shopify	plan-comparison-admin	yes		the plan table the admin shows: its plan lines; the rows not cited
+shopify	plan-page-admin	yes		the plan selection page as each store rendered it: plan cards and lines
+shopify	plan-page-public	yes		the public pricing page: plan cards, the comparison and the FAQs
+shopify	plan-feature-set	doc		the admin's plan by feature data, held as an answer: read whole
+shopify	admin-home-setup	yes		the admin home's setup region per store state: the setup tasks the platform offers
+shopify	signup-router	yes		the sign-up app's routes: its places
+shopify	web-route-manifests	no		the websites' own routes (help, docs, marketing), not the product's
+shopify	help-section-children	yes		the Help Center's table of contents: every page each section names; the ones not cited
+shopify	help-notes	yes	where:class=note-plan	the Help Center's plan-requirement notes: plan lines
+shopify	dev-nav	yes		the developer docs' navigation: the platform's surfaces for developers
+shopify	docs-front-matter	no		every developer page's own title and description: API detail; the API's groups are read through its reference navigation
+shopify	admin-graphql-schema	no		the admin API's types: detail; its groups are read through the reference navigation
+shopify	storefront-graphql-schema	no		the Storefront API's types: detail; the Storefront API itself is read through the docs' navigation
+shopify	webhook-sample-payloads	no		payload detail; the topics are read through the CLI's and the admin's topic lists
+shopify	webhook-deliveries-cli	no		deliveries as received: detail
+shopify	app-install-consent	yes		the access an app asks for at install, in the platform's categories
+shopify	translatable-resources	yes		what a store can translate and adapt: the items not cited
+shopify	notification-templates	yes		the notifications the store sends: the items not cited
+shopify	notification-template-previews	no		a notification's rendered preview: content detail
+shopify	dev-changelog	yes		the developer changelog: the platform's own record of change
+shopify	merchant-changelog	yes	where:kind=link	what's new for merchants: each post, by its title and its page (held under changelog.shopify.com/posts)
+shopify	account-organization	yes		how an account relates to organizations, stores and the Dev Dashboard
+shopify	dev-dashboard-nav	yes		the Dev Dashboard's navigation: its places
+shopify	theme-editor-templates	yes		the theme editor's templates: the storefront's page types
+shopify	checkout-editor-pages	yes		the checkout and accounts editor's pages
+shopify	dev-dashboard-scopes	yes		the access scopes: the ones not cited
+shopify	play-publisher-apps	yes		Shopify's own Android apps: the ones not cited
+shopify	mobile-app-navigation	yes		the mobile admin's navigation: its places
+shopify	mobile-app-settings-index	yes		the mobile admin's settings pages
+shopify	pos-app-navigation	yes		the POS app's navigation: its places
+shopify	pos-settings	yes		the POS app's settings: its places
+shopify	tinker-tools	yes		the Tinker app's tool catalog
+shopify	admin-roles	yes		the predefined staff roles: the ones not cited
+shopify	ui-extension-targets	yes		the places apps extend: the targets not cited
+shopify	admin-role-permissions	yes		each role's permissions
+shopify	admin-permission-tree	yes		the staff permissions as the admin's code lists them: the ones not cited
+shopify	billing-charge-categories	yes		the billing charge categories: the ones not cited
+shopify	return-reasons	yes		the return reasons offered
+shopify	inventory-adjustment-reasons	yes		the inventory adjustment reasons
+shopify	bulk-editor-columns	yes		the fields the bulk editor offers
+shopify	signup-onboarding-questions	yes		the onboarding question after a store is made
+shopify	billing-subscription-downgrades	yes		the subscription downgrades by plan
+shopify	admin-betas	no		the beta flags' names are hashed in the bundle (cb257434 and the like): nothing to place
+shopify	sign-in-methods	yes		the ways in: the ones not cited
+shopify	partner-focus-options	yes		what a partner says it does
+shopify	partner-dashboard-nav	yes		the Partner Dashboard's navigation: the items not cited
+shopify	partners-dashboard-routes	yes		the Partner Dashboard's routes: its places
+shopify	app-store-registration	yes		registering for the App Store
+shopify	partner-api-client-permissions	yes		the Partner API's permission sets: the ones not cited
+shopify	dev-store-feature-previews	yes		the feature previews a dev store can test
+shopify	collaborator-access-permissions	yes		the permissions a collaborator requests: the ones not cited
+shopify	sidekick-composer	yes		Sidekick's composer: what it offers
+shopify	sidekick-quotas	doc		Sidekick's limits, held as an answer: read whole
+shopify	flow-workflow-limits	doc		Flow's workflow limits, held as an answer: read whole
+shopify	document-template-config	yes		a document template's configuration
+shopify	admin-metafield-types	yes		the metafield types a definition can take
+shopify	app-store-built-in-features	yes		each feature built into Shopify as its app store page states it: the ones not cited
+shopify	shop-request-details	yes		what the admin states about each shop: its plan, features and limits; the items not cited
+shopify	status-page	doc		the platform's status components: read whole
+shopify	tracking-carriers	no		third parties that fill a slot: listed as slot fillers by the cells pass where a cell needs them
+shopify	business-entity-types	no		market data, the subjects'
+shopify	signup-countries	no		market data, the subjects'
+shopify	storefront-languages	no		market data, the subjects'
+shopify	partner-lead-forms	no		a form's vocabularies: countries, regions, solutions
+shopify	partner-payout-method	no		a form's countries
+shopify	catalog-search-filters	no		a catalog's search filters: detail
+shopify	sidekick-message-streams	no		one session's replies
+shopify	flow-templates	no		recipes over Flow's triggers and actions, which the concern map read through its connectors
+shopify	flow-step-environment	no		the data a Flow step can use: detail
+shopify	dev-access-lines	no		the access lines per API page: detail; the scopes are read through the Dev Dashboard's list
+shopify	theme-files	no		a theme's files
+shopify	theme-check-rules	no		the theme linter's rules
+shopify	theme-check-results	no		the theme linter's results
+shopify	theme-metafields-file	no		a theme's metafield file
+shopify	shopify-cli-commands	no		the CLI's commands: developer tooling
+shopify	cli-notifications	no		the CLI's notices
+shopify	cli-extension-template-files	no		template files
+shopify	hydrogen-create-package	no		a package's files
+shopify	dev-dashboard-import-map	no		code modules
+shopify	ui-extension-types	no		type packages
+shopify	android-app-manifests	no		apps' manifests: code
+shopify	mobile-app-store-list	no		one account's stores
+shopify	storefront-menus	no		one store's theme menus
+shopify	shopify-com-footer	no		the marketing site's footer
+shopify	com-llms	no		the marketing site's index of itself
+shopify	help-pos-hardware-troubleshooter	no		hardware troubleshooting
+shopify	store-picker-router	no		the store picker's router
+shopify	help-center	no		the Help Center's organisation, read through its section lists
+shopify	dev-mcp-schemas	no		bundled schemas: detail
+salla	dashboard-main-navigation	yes		the dashboard's main navigation: the items not cited
+salla	dashboard-menu-orders	yes		the Orders menu
+salla	dashboard-menu-products	yes		the Products menu
+salla	dashboard-menu-marketing	yes		the Marketing menu
+salla	dashboard-menu-store-channels	yes		the Store & Channels menu
+salla	dashboard-menu-reports	yes		the Reports menu
+salla	dashboard-quick-actions	yes		the dashboard's icon bar
+salla	dashboard-account-actions	yes		the dashboard's actions
+salla	dashboard-settings-menu	yes		Salla's settings, in four groups: the items not cited
+salla	partners-portal-navigation	yes		the Partners portal's side menu: the items not cited
+salla	partners-portal-header	yes		the Partners portal's top bar
+salla	dashboard-nav	yes		the dashboard's navigation as data
+salla	settings-center	yes		Salla's settings centre: its 23 sections and their sub-pages
+salla	dashboard-nav-segments	yes		the navigation API's answer for each segment
+salla	dashboard-app-routes	yes		every route of the dashboard's apps: its places
+salla	portal-apps	yes		the Partners portal's own registry of its apps
+salla	portal-app-routes	yes		every route of the Partners portal: its places
+salla	apps-route-manifest	yes		the App Store's routes
+salla	app-categories	yes		the App Store's categories: the ones not cited
+salla	app-store-tabs	yes		how the dashboard's App Store groups what it offers
+salla	marketplace-apps	yes		every app the App Store lists: what third parties provide, by app
+salla	help-tree	yes		the help centre's categories: what Salla documents
+salla	help-embedded-tree	yes		the help centre's tree as each page carries it
+salla	dashboard-features	yes		the platform's feature list, the real store's among them: the features not cited
+salla	dashboard-edu	yes		the dashboard's pages, by their education banners
+salla	report-catalog	yes		the report catalog
+salla	report-widgets	yes		what a custom report can be built from
+salla	report-widget-categories	yes		the report widgets' categories
+salla	performance-reports	yes		the reports Store performance shows
+salla	report-widgets-legacy	yes		the report builder's legacy widgets
+salla	importer-schema-fields	yes		what the importer takes
+salla	export-columns	yes		what an export can take
+salla	theme-design-components	yes		what the theme editor can place
+salla	theme-marketplace	yes		the theme store's tags
+salla	design-page-types	yes		the kinds of page a store can add
+salla	design-settings	yes		the switches a store's design offers
+salla	dashboard-webhook-events	yes		the events a store's own dashboard offers for a webhook
+salla	dashboard-restrictions	yes		what a staff permission can be narrowed by
+salla	invoice-settings	yes		the invoice settings
+salla	shipping-carriers	yes		the shipping companies a store is offered, Salla's own among them
+salla	merchant-subscriptions	yes		what a store is subscribed to
+salla	dashboard-staff-roles	yes		the roles a store's staff can hold
+salla	expert-service-categories	yes		the categories an expert service is listed under
+salla	changelog-entries	yes		what Salla says it changed
+salla	changelog-categories	yes		the categories Salla files its changes under
+salla	portal-private-settings	yes		the features on for a partner account
+salla	portal-settings	yes		the Partners portal's settings
+salla	portal-help-center-resource	yes		the Partners resources tree
+salla	portal-report-builder-widgets	yes		the report builder's component types
+salla	portal-report-builder-tags	yes		the report builder's tags
+salla	portal-app-builder-functions	yes		an app's functions
+salla	portal-apps-onboarding-steps	yes		an app's onboarding steps
+salla	portal-app-snippets	yes		an app's snippets
+salla	canvas-apps	yes		the canvas registry
+salla	docs-event-lists	yes		the events the docs list: the ones not cited
+salla	storefront-init	yes		each storefront page's configuration: the settings a theme reads
+salla	storefront-api	yes		the lists the storefront API answers
+salla	portal-menu-definitions	yes		the Partners portal's menu definitions: the items not cited
+salla	kyc-schema	doc		the store verification's workflow, held as a schema: read whole
+salla	onboarding-missions	doc		what Salla asks a new store to do, held as an answer: read whole
+salla	onboarding-status	doc		the store's setup checklist, held as an answer: read whole
+salla	portal-apps-iframe-pages	doc		an app's embedded pages, held as an answer: read whole
+salla	importer-schemas	doc		what the importer takes, as it describes itself: read whole
+salla	salla-complaints	doc		Salla's complaints surface: read whole
+salla	salla-academy	doc		Salla's academy: read whole
+salla	theme-marketplace-summary	doc		the theme marketplace's front page: read whole
+salla	help-articles	no		the help centre's articles: pages, which the cells pass reads where a cell needs them
+salla	help-self-descriptions	no		the help centre's statements about itself
+salla	help-sitemaps	no		addresses only
+salla	help-article-redirects	no		addresses only
+salla	com-sitemaps	no		addresses only
+salla	apps-sitemap	no		addresses only
+salla	mahally-browse	no		a marketplace's product categories
+salla	mahally-sitemaps	no		addresses only
+salla	mahally-main-categories	no		a marketplace's product categories
+salla	mahally-categories-api	no		a marketplace's product categories
+salla	mahally-llms	no		a marketplace's index of itself
+salla	community-categories	no		the community's categories
+salla	community-sitemaps	no		addresses only
+salla	com-llms	no		the marketing site's index of itself
+salla	com-policies	no		terms, which the cells pass reads where a cell needs them
+salla	partners-legal	no		terms, which the cells pass reads where a cell needs them
+salla	docs-index	no		the developer docs' index: API detail, the groups read through the docs' navigation
+salla	docs-sidebar	no		the developer docs' trees: API detail, the groups read through the docs' navigation
+salla	docs-operations	no		the API's operations: detail
+salla	docs-dataschemas	no		the API's data schemas: detail
+salla	dashboard-countries	no		market data, the subjects'
+salla	storefront-shipping-countries	no		market data, the subjects'
+salla	store-activities	no		the activities a store declares itself as: merchant data
+salla	icon-catalog	no		the icons a merchant can choose
+salla	dashboard-translations	no		the dashboard's strings
+salla	importer-sample-workbooks	no		import templates: detail
+salla	dashboard-filter-components	no		a list's filters: detail
+salla	showcase-store-payments	no		each showcase store's payment methods: market data
+salla	app-webhook-deliveries	no		deliveries as received
+salla	dashboard-importmap	no		code modules
+salla	portal-importmap	no		code modules
+salla	shipping-policy-sections	no		Salla's own shipping policy's sections
+salla	portal-subscriptions-filters	no		a list's filters
+salla	portal-payouts-filters	no		a list's filters
+salla	portal-development-store-filters	no		a list's filters
+salla	portal-experts-partner-services-filters	no		a list's filters
+salla	portal-marketing-marketplace-affiliates-filters	no		a list's filters
+salla	portal-marketing-partner-profile-affiliate-links-filters	no		a list's filters
+salla	portal-experts-partner-services	no		a form's vocabularies
+salla	portal-experts-portfolio	no		a form's vocabularies
+salla	portal-experts-partner-influencers-profile	no		a form's vocabularies
+salla	portal-marketing-partner-profile	no		a form's vocabularies
+salla	portal-partner-reports-stores-search	no		one account's report
+salla	portal-partner-reports-domains-stats	no		one account's report
+salla	portal-notification	no		one account's notifications
+salla	portal-app	no		one partner's apps
+salla	portal-app-select	no		one partner's apps
+salla	portal-employees	no		one account's employees
+salla	portal-me	no		one account
+salla	portal-dashboard	no		one account's figures
+salla	portal-app-meta	no		reasons for deleting an app
+salla	portal-delete-account	no		reasons for deleting an account
