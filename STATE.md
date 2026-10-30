@@ -186,7 +186,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
    3. the review of its output, which checks every placement against all of Q1's statements;
    4. the conventions and a checker, with the architecture plan's first part, what architecture needs to know, drafted alongside so the extent records it (`PLAN.md`, Stage 4A);
    5. the other domains and platforms; the merge, with each capability's kind and count, and S-01's and S-02's variation points landed on the model;
-   6. Q3's check for what the model misses (done); the held pass, which reads what the repositories hold that the model never read (running); Q3's candidate misses against everything held; then an independent review of the whole extent;
+   6. Q3's check for what the model misses (done); the held pass, which reads what the repositories hold that the model never read (running); Q3's candidate misses against everything held; an omission review from the evidence's side (the founder's suggestion, 30 October), by an agent that made none of the model, with what stays unread sampled; then the independent review of the whole extent;
    7. the architecture plan finished (`architecture/plan.md`), and reviewed by an agent that made none of it;
    8. the extent's report and the architecture plan, with the orientation page updated before they reach the founder at GM.
 2. **On the founder's go on the architecture plan:** architecture and the model's detail, in the order the plan sets, beside the subjects.
