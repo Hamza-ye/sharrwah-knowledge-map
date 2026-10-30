@@ -1,0 +1,137 @@
+cap_id	platform	supports	key	why
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-5140	admin route customer, path customers
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-1515	its own Customers section name
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-0775	its own Customers label
+CM-CUS-001	shopify	core	SH-C-039/decides/SH-S-5141	the customers route needs the CUSTOMERS staff permission
+CM-CUS-001	shopify	core	SH-C-039/decides/SH-S-5142	customer:create needs CREATE_AND_EDIT_CUSTOMERS
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-0971	its access scope read_customers
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-6181	its access scope write_customers
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-1196	its webhook topic customers/create
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-7234	the admin's server intent to create a customer
+CM-CUS-001	shopify	core	SH-I-0440	webhook topic customers/update
+CM-CUS-001	shopify	core	SH-I-0434	webhook topic customers/delete
+CM-CUS-001	shopify	core	SH-I-0435	webhook topic customers/disable
+CM-CUS-001	shopify	core	SH-I-0436	webhook topic customers/enable
+CM-CUS-001	shopify	core	SH-I-0423	webhook topic customer.tags_added
+CM-CUS-001	shopify	core	SH-I-0438	webhook topic customers/purchasing_summary
+CM-CUS-001	shopify	core	SH-I-0927	staff permission Customers > Delete
+CM-CUS-001	shopify	shows	SH-C-039/decides/SH-S-7035	plan line Unlimited contacts; what a contact is isn't stated
+CM-CUS-001	shopify	shows	SH-C-039/responsible/SH-S-0186	the merchant acts as Data Controller for its customer personal data
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1693	dashboard link Customers, /customers
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1842	dashboard link All customers, in the customers list
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1844	dashboard link Customer settings, /customers/settings
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-3545	dashboard app @salla.sa/ui-merchant-customers, path /customers
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1032	its Merchant API folder Customers
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1546	its scope customers, read and read_write
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1607	its event customer.created
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1608	its event customer.updated
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2295	staff permission customer_browse, group العملاء
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2296	staff permission customer_search
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2298	staff permission customer_edit
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2299	staff permission customer_add
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2300	staff permission customer_approve
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2301	staff permission customer_management
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2055	plan line فرز العملاء (سلة بلس)
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2057	plan line إضافة عميل جديد (سلة بلس)
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2058	plan line تعديل معلومات العميل (سلة بلس)
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-3167	released flag customer-advance-management, plans plus, pro, special
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-3169	released flag customer-metadata, plans special, pro
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-2512	the same permissions in the list a partner can request
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-2517	partner's list: customer_approve, قبول التحاق العملاء
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3163	flag customer-tag, not released
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3166	flag custom-customer-fields, not released
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3177	flag customers-unisearch, not released
+CM-CUS-002	shopify	core	SH-C-040/where/SH-S-1516	its own Segments name
+CM-CUS-002	shopify	core	SH-C-040/where/SH-S-7090	route customer-segments, section Customers, path segments
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-5143	the route needs the customerSegmentation entitlement
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-5670	entitlement customerSegmentation true on the captured stores
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-7036	plan line Create customer segments
+CM-CUS-002	shopify	core	SH-C-040/boundary/SH-S-1185	its webhook topic customer.joined_segment
+CM-CUS-002	shopify	core	SH-C-040/boundary/SH-S-6184	write_customers, the user must not have restricted access
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5969	customer_groups/create: a customer saved search is created
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5972	customer.joined_segment: a customer joins a segment
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5973	customer.left_segment: a customer leaves a segment
+CM-CUS-002	shopify	core	SH-I-0584	webhook topic segments/create
+CM-CUS-002	shopify	extension-point	SH-C-040/boundary/SH-S-2203	extension customer_segment_template
+CM-CUS-002	shopify	extension-point	SH-I-1496	extension target admin.customers.segmentation-templates.data
+CM-CUS-002	salla	core	SA-C-061/where/SA-S-1845	dashboard link Customer groups, /customers/groups
+CM-CUS-002	salla	core	SA-C-061/where/SA-S-1033	its Merchant API folder Customer Groups
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-2117	plan line تصنيف العملاء إلى مجموعات (سلة برو)
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-2150	plan line تصنيف تلقائي لمجموعات العملاء, by number of orders or rating (سلة برو)
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-3161	released flag customer-group, plans pro, special
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-3176	released flag customer-groups-draft-status, on the answering store
+CM-CUS-003	shopify	core	SH-C-039/where/SH-S-5139	admin route customer:bulk-edit, path bulk/customer
+CM-CUS-003	shopify	core	SH-C-039/decides/SH-S-5067	the route is for the web client
+CM-CUS-003	salla	core	SA-C-060/decides/SA-S-2118	plan line إدارة مجموعة عملاء كدفعة واحدة (سلة برو)
+CM-CUS-003	salla	core	SA-C-060/decides/SA-S-3172	released flag customers-bulk-actions, plans plus, pro, special
+CM-CUS-004	shopify	core	SH-C-039/decides/SH-S-5146	admin route customer:merge needs MERGE_CUSTOMERS
+CM-CUS-004	shopify	core	SH-C-039/boundary/SH-S-5961	webhook topic customers/merge: two customers are merged
+CM-CUS-004	shopify	core	SH-C-039/decides/SH-S-5962	the user must have read_customer_merge permissions
+CM-CUS-004	shopify	core	SH-C-039/boundary/SH-S-6180	access scope write_customer_merge
+CM-CUS-004	shopify	core	SH-I-0924	staff permission Customers > Merge
+CM-CUS-005	salla	core	SA-C-060/decides/SA-S-2056	plan line حظر العميل (سلة بلس)
+CM-CUS-005	salla	core	SA-C-060/decides/SA-S-2297	staff permission customer_block
+CM-CUS-005	salla	shows	SA-C-060/decides/SA-S-2514	partner's list: customer_block, حظر عميل
+CM-CUS-006	salla	core	SA-C-060/decides/SA-S-2060	plan line كشف العملاء غير الجادين (سلة بلس)
+CM-CUS-006	salla	shows	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system across Salla stores
+CM-CUS-007	shopify	core	SH-C-043/where/SH-S-7093	route Edit marketing status, section Customers, path :id/marketing
+CM-CUS-007	shopify	core	SH-C-043/decides/SH-S-5149	the route is for the native client, with CREATE_AND_EDIT_CUSTOMERS
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-0881	its API's customerEmailMarketingSubscribe
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-0884	its API's customerWhatsAppMarketingConsentUpdate
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-1205	webhook topic customers_email_marketing_consent/update
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-1206	webhook topic customers_marketing_consent/update
+CM-CUS-007	shopify	core	SH-I-0443	webhook topic customers_whats_app_marketing_consent/update
+CM-CUS-007	shopify	core	SH-I-0635	webhook topic Customer SMS marketing consent update
+CM-CUS-008	salla	core	SA-C-065/where/SA-S-1717	settings route customers/address, Shipping addresses settings
+CM-CUS-008	salla	core	SA-C-065/decides/SA-S-3031	released flag saudi-national-address, plans basic, plus, pro, special
+CM-CUS-008	salla	core	SA-C-065/reason/SA-S-5021	when on, customers in Saudi Arabia must enter the national address to complete the order
+CM-CUS-008	salla	shows	SA-C-065/responsible/SA-S-5020	turning it off, the merchant bears the legal consequences and extra shipping costs
+CM-CUS-008	salla	shows	SA-C-065/decides/SA-S-3139	flag national-address, not released
+CM-CUS-008	shopify	core	SH-I-0114	API resource customerAddressCreate
+CM-CUS-008	shopify	core	SH-I-0115	API resource customerAddressDelete
+CM-CUS-008	shopify	core	SH-I-0116	API resource customerAddressUpdate
+CM-CUS-009	salla	extension-point	SA-C-065/where/SA-S-1226	app category Geolocation / الموقع الجغرافي, تحديد دقيق للمواقع
+CM-CUS-009	salla	extension-point	SA-C-065/where/SA-S-1200	app category Geolocation in the app store's list
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3119	released flag google-maps-service, plans plus, pro, special
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3120	released flag here-service, plans plus, pro, special
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3121	released flag location-i-q-service, plans plus, pro, special
+CM-CUS-009	salla	shows	SA-C-065/decides/SA-S-3122	flag nominatim-service, not released
+CM-CUS-010	shopify	core	SH-C-041/where/SH-S-1490	its settings page Customer accounts
+CM-CUS-010	shopify	core	SH-C-041/where/SH-S-0836	its Customer Account API
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5131	customerAccountsSettings needs PREFERENCES
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5136	its parent route needs CUSTOMERS and the entitlement customers.accountSettingsAccess
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5655	entitlement accountSettingsAccess true on the captured stores
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-0743	buyers sign in with a one-time 6-digit code, no password
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-1189	webhook topic customer_account_settings/update
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-5914	Customer Account API scope customer_read_customers
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-5921	Customer Account API scope customer_read_orders
+CM-CUS-010	shopify	core	SH-I-0797	admin section CustomerAccounts
+CM-CUS-010	shopify	extension-point	SH-I-1952	app-store category Accounts and login apps
+CM-CUS-010	salla	core	SA-C-062/where/SA-S-1714	settings route customers/login_methods, Login & registration options
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1609	event customer.login, تسجيل دخول عميل للمتجر
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1610	event customer.otp.request, طلب كود تحقق تسجيل دخول
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1659	webhook auth.otp.verification: a 4-digit OTP sent to the customer
+CM-CUS-010	salla	core	SA-C-062/decides/SA-S-2394	staff permission register_fields_management, group إعدادات المتجر
+CM-CUS-010	salla	extension-point	SA-C-200/boundary/SA-S-0161	OTP sign-in needs an SMS provider from the app store
+CM-CUS-010	salla	shows	SA-C-066/boundary/SA-S-5023	the buyer creating a new account in the store sees the store's privacy policy
+CM-CUS-010	salla	shows	SA-C-062/decides/SA-S-2611	partner's list: register_fields_management, نموذج التسجيل
+CM-CUS-010	salla	shows	SA-C-062/reason/SA-S-5018	Passkey apps are native to the device; whose sign-in isn't stated
+CM-CUS-010	salla	shows	SA-C-062/decides/SA-S-3367	flag cross-store-login, not released
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-0842	its own label Third-party identity providers
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-7091	route identityProviders:auth, section CustomerAccounts, path identity_providers
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-7092	route customerAuthenticationSettings, section CustomerAccounts, path authentication
+CM-CUS-011	shopify	core	SH-C-042/decides/SH-S-5137	the route needs MANAGE_CUSTOMER_IDENTITY_PROVIDERS
+CM-CUS-011	shopify	core	SH-C-042/decides/SH-S-0742	on Shopify Plus, the merchant's own identity provider replaces the default sign-in
+CM-CUS-011	shopify	core	SH-C-042/boundary/SH-S-7462	Admin API object IdentityProviderSubject
+CM-CUS-011	shopify	core	SH-I-0079	API resource Multipass
+CM-CUS-011	salla	shows	SA-C-062/decides/SA-S-3168	flag sso-login, not released, plans plus, pro, special
+CM-CUS-012	salla	core	SA-C-062/where/SA-S-1715	settings route customers/recaptcha, reCAPTCHA verification
+CM-CUS-012	salla	core	SA-C-062/decides/SA-S-3100	released flag auth-recaptcha, on the answering store
+CM-CUS-012	salla	shows	SA-C-062/decides/SA-S-3368	flag re-captcha-v3, not released
+CM-CUS-013	salla	core	SA-C-062/where/SA-S-1716	settings route customers/whatsapp_otp, WhatsApp verification
+CM-CUS-013	salla	shows	SA-C-062/decides/SA-S-3090	flag whatsapp-otp, not released
+CM-CUS-014	shopify	extension-point	SH-C-165/where/SH-S-2186	extension type customer_account_ui
+CM-CUS-014	shopify	extension-point	SH-I-1652	extension target customer-account.page.render
+CM-CUS-014	shopify	extension-point	SH-I-1642	extension target customer-account.order-status.block.render
+CM-CUS-014	shopify	shows	SH-C-165/decides/SH-S-0712	only supported on the new version of customer accounts
+CM-CUS-014	shopify	shows	SH-C-165/boundary/SH-S-0822	its Customer accounts label
