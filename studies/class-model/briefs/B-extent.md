@@ -142,6 +142,7 @@ The dry run's review set these (`studies/class-model/review-dry-run-rulings.md`)
 - **Slot fillers:** a third party or a law a statement names as doing the capability or setting its terms. A flag's name isn't one.
 - **Gaps:** where a Q1 gap on a cell's concern changes what the cell can claim, its reading says so. For a capability its own platform names but never defines, the other platforms' `none-held` cells say the definition isn't stated.
 - **Maker evidence** is a statement naming the company. A note never counts.
+- **A subject's statement** (its id, such as `S01-SA-104`) may be cited only by the coordinator's amendment from the subjects' points, where a point's conflict showed that the subject holds what the concern map doesn't (`briefs/P-points.md`, "After the batches"). A part cites the concern map's keys.
 
 ## Rules
 

@@ -11,7 +11,7 @@
 - the merged model, `studies/class-model/merged/` (with `flags.tsv`, the merge's questions), and the parts' own files and `notes.md` in `studies/class-model/parts/`, for the readings and the flags each part answered;
 - Q3's check, `studies/class-model/q3/check-*.tsv` and `notes-*.md`, and its brief `briefs/Q3-check.md`, for the items of reason `q3`;
 - the subjects' points on the model, `studies/class-model/points/P-*.tsv` and `notes-*.md`, with their brief `briefs/P-points.md` and `method/land_points.py show`, for the items of reason `point`;
-- the evidence, through `method/class_slice.py` (`key`, `statements`, `search`, `outscope`, `gaps`, `candidates`, `homonyms`, `model`, `caps`) and `method/q3.py where`; and the evidence repositories' guides (their `README.md` and `docs/READING.md`) where a statement's words are in doubt and its source needs reading at its commit.
+- the evidence, through `method/class_slice.py` (`key`, `statements`, `search`, `outscope`, `gaps`, `candidates`, `homonyms`, `model`, `caps`) and `method/q3.py where`; a cell's evidence may also cite a subject's statement by its id (such as `S01-SA-104`), which `class_slice.py key` reads, where the coordinator amended the model from the subjects' points; and the evidence repositories' guides (their `README.md` and `docs/READING.md`) where a statement's words are in doubt and its source needs reading at its commit.
 
 ## What each reason asks
 

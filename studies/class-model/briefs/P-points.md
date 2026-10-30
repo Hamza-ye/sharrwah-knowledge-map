@@ -64,7 +64,7 @@ Back to the coordinator: your points' count by status; each conflict, with its t
 ## After the batches: the coordinator
 
 The coordinator checks every batch, then settles each conflict's fact first, since what a platform does is engineering's to read from the evidence (`PLAN.md`, section 3). Then each conflict on its own:
-- where a cell is wrong, the model is amended through a `<domain>-amend` part. A conflict whose only consequence is an amendment to the model goes to no one else;
+- where a cell is wrong, the model is amended, in the part that holds the cell or a `<domain>-amend` part, citing the subject's own statements by their ids where the concern map lacks them; the merge runs again. A conflict whose only consequence is an amendment to the model goes to no one else;
 - where the subject's evidence is wrong, or read wrongly, under an engineering ruling or constraint, the row is ruled again and listed for the founder's veto;
 - where the subject's evidence is wrong, or read wrongly, under a founder's decision, the conflict goes to the founder with its evidence, its options and a recommendation, and engineering doesn't reopen the decision. S02-M9's plan items go to the founder with plans and prices;
 - under a row moved to another subject, it is carried to that subject as an input, and not ruled now;
