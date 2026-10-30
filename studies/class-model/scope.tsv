@@ -197,7 +197,7 @@ shopify	SH-C-195	E		Mobile app builder apps; read_mobile_platform_applications: 
 shopify	SH-C-196	A		Security apps; Anti theft apps; Legal apps (TRU)
 shopify	SH-C-201	A		Shopify Plus Terms; PlusContractDetails; where settings:plan:plus:terms (PLN)
 shopify	SH-C-202	F	B;E	Shopify Magic for product descriptions and blog posts; AI generation (AIA)
-salla	SA-C-001	A		Merchant; Your profile; Registered devices; where Your profile: the merchant's account (ACC); M-002
+salla	SA-C-001	A	G	Merchant; Your profile; Registered devices; where Your profile: the merchant's account (ACC); M-002; also G: its plan line for the store management app on iOS and Android (SA-S-2082) is Salla's only statement on the merchant's mobile app (the coordinator, from G-woocommerce's notes)
 salla	SA-C-002	A		General; Store activity; Maintenance mode; where General: store details and settings (ACC); M-006
 salla	SA-C-003	A		Manage stores; multi-stores: several stores from one account (ACC)
 salla	SA-C-004	A		Store plan; where Store plan (PLN); M-007

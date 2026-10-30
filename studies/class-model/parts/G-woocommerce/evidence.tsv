@@ -1,0 +1,45 @@
+cap_id	platform	supports	key	why
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0057	Products > Product Import
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0058	Products > Product Export
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0426	onboarding task Import your products
+CM-MIG-001	woocommerce	core	WC-C-067/decides/WC-S-5396	import allowed with edit_products and import
+CM-MIG-001	woocommerce	core	WC-C-067/decides/WC-S-5397	export allowed with edit_products and export
+CM-MIG-001	woocommerce	core	WC-C-067/boundary/WC-S-5398	its own product import filter
+CM-MIG-001	woocommerce	core	WC-C-067/boundary/WC-S-5399	its own product export columns filter
+CM-MIG-001	woocommerce	extension-point	WC-C-109/where/WC-S-0747	Marketplace category Import and export
+CM-MIG-001	woocommerce	shows	WC-C-032/decides/WC-S-0588	free to export all your content
+CM-MIG-006	woocommerce	core	WC-C-094/where/WC-S-0028	section Advanced > Blueprint (beta)
+CM-MIG-006	woocommerce	core	WC-C-094/decides/WC-S-5448	import needs manage_woocommerce and manage_options
+CM-MIG-006	woocommerce	core	WC-C-094/decides/WC-S-5449	imports only in coming soon mode
+CM-MIG-006	woocommerce	core	WC-C-094/reason/WC-S-5450	imports can change network-wide settings
+CM-MIG-006	woocommerce	core	WC-C-094/boundary/WC-S-5451	its own route /blueprint/export
+CM-OPS-003	woocommerce	shows	WC-C-034/where/WC-S-0642	merchant verifies their hosting environment
+CM-OPS-003	woocommerce	outside	WC-C-034/where/WC-S-0503	your hosting provider, a third party
+CM-OPS-003	woocommerce	own-service	WC-C-034/where/WC-S-0503	sites hosted by Automattic
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0045	admin page WooCommerce > Status
+CM-OPS-004	woocommerce	core	WC-C-083/decides/WC-S-0045	behind manage_woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0036	Status > System status
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0037	Status > Tools
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0120	REST wc/v3 system-status
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0121	REST wc/v3 system-status-tools
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0691	system status API views status items
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0692	tools API views and runs tools
+CM-OPS-005	woocommerce	core	WC-C-037/where/WC-S-0038	Status > Logs tab
+CM-OPS-005	woocommerce	core	WC-C-037/where/WC-S-0920	view logger entries at Status > Logs
+CM-OPS-005	woocommerce	core	WC-C-037/decides/WC-S-5373	log settings defaults
+CM-OPS-005	woocommerce	core	WC-C-037/boundary/WC-S-0446	its own log handler class
+CM-OPS-005	woocommerce	core	WC-C-036/where/WC-S-0611	remote log endpoint
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-0936	setting: send error logs to WooCommerce
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-5371	remote_logging enabled by default
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-5372	allowed only with usage tracking
+CM-OPS-005	woocommerce	shows	WC-C-036/reason/WC-S-0936	to help improve WooCommerce
+CM-OPS-005	woocommerce	core	WC-C-036/boundary/WC-S-0611	remote log endpoint as its boundary
+CM-EVO-001	woocommerce	core	WC-C-088/where/WC-S-5432	section Features under Settings > Advanced
+CM-EVO-001	woocommerce	core	WC-C-088/decides/WC-S-5433	features admin users enable and disable
+CM-EVO-001	woocommerce	core	WC-C-088/decides/WC-S-5434	feature definition defaults, is_experimental
+CM-EVO-001	woocommerce	core	WC-C-088/boundary/WC-S-0455	its own declare_compatibility
+CM-SRF-001	woocommerce	core	WC-C-090/where/WC-S-0422	onboarding task for the mobile app
+CM-SRF-001	woocommerce	core	WC-C-090/where/WC-S-0939	push notifications for the mobile apps
+CM-SRF-001	woocommerce	core	WC-C-090/decides/WC-S-5437	push_notifications released, on by default
+CM-SRF-001	woocommerce	core	WC-C-090/boundary/WC-S-0203	its own route MobileAppMagicLink
+CM-SRF-001	woocommerce	core	WC-C-090/boundary/WC-S-0204	its own route MobileAppQRLogin

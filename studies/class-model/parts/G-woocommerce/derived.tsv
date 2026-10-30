@@ -1,0 +1,14 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-EVO-001	woocommerce	statements	core	features (Settings > Advanced)		WC-C-088/responsible:stated only in general terms;WC-C-088/reason:searched, not found	general
+CM-MIG-001	woocommerce	statements	core;extension-point	Extensions > Store management > Import and export | Import your products | Products > Product Export | Products > Product Import		WC-C-067/responsible:stated only in general terms;WC-C-067/reason:searched, not found;WC-C-109/responsible:stated only in general terms;WC-C-109/reason:searched, not found	general
+CM-MIG-002	woocommerce	none-held					
+CM-MIG-003	woocommerce	none-held					
+CM-MIG-004	woocommerce	none-held					
+CM-MIG-005	woocommerce	none-held					
+CM-MIG-006	woocommerce	statements	core	Advanced > Blueprint (beta)	WC-C-094/reason/WC-S-5450=multisite	WC-C-094/responsible:stated only in general terms	general
+CM-OPS-001	woocommerce	none-held					
+CM-OPS-002	woocommerce	none-held					
+CM-OPS-003	woocommerce	statements	outside;own-service	How and Why We Share Information: Third-party vendors | WooCommerce Server Recommendations		WC-C-034/responsible:stated only in general terms;WC-C-034/boundary:searched, not found;WC-C-034/reason:searched, not found	general
+CM-OPS-004	woocommerce	statements	core	Status > System status | Status > Tools | WooCommerce > Status		WC-C-083/responsible:stated only in general terms;WC-C-083/reason:searched, not found	general
+CM-OPS-005	woocommerce	statements	core	RemoteLogger::LOG_ENDPOINT | Status > Logs | Viewing logs		WC-C-036/responsible:stated only in general terms;WC-C-037/responsible:stated only in general terms;WC-C-037/reason:searched, not found	general
+CM-SRF-001	woocommerce	statements	core	Get the free WooCommerce mobile app | push_notifications		WC-C-090/responsible:stated only in general terms;WC-C-090/reason:searched, not found	general
