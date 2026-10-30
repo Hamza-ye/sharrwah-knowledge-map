@@ -1,0 +1,16 @@
+cap_id	platform	supports	key	why
+CM-B2B-004	shopify	extension-point	SH-I-1897	App Store category Pricing quote apps, placed in SH-C-020 (domain B)
+CM-B2B-004	salla	core	SA-C-040/decides/SA-S-2288	staff permission order_browse_status_price_quote, group الطلبات
+CM-B2B-004	salla	core	SA-C-040/decides/SA-S-3361	dashboard feature price-quote, released, plan special
+CM-B2B-004	salla	core	SA-C-041/boundary/SA-S-2682	order status طلب عرض سعر, slug request_quote, active
+CM-B2B-004	salla	shows	SA-C-040/decides/SA-S-2505	partner permission الطلبات بحالة (طلب عرض سعر)
+CM-B2B-006	shopify	core	SH-I-0931	staff permission Customers > Companies > Assign staff to company locations (C2)
+CM-B2B-006	shopify	core	SH-I-1074	staff permission MANAGE_COMPANY_LOCATION_ASSIGNMENTS (C2)
+CM-B2B-007	shopify	core	SH-C-041/decides/SH-S-7213	customer accounts: B2B buying with a company profile, exclusive features, Shopify Plus
+CM-B2B-007	shopify	core	SH-C-044/decides/SH-S-7212	Shopify Plus B2B includes creating a customized B2B storefront
+CM-B2B-007	shopify	core	SH-C-044/boundary/SH-S-5913	access scope customer_read_companies
+CM-B2B-007	shopify	core	SH-C-044/boundary/SH-S-5926	access scope customer_write_companies
+CM-B2B-007	shopify	shows	SH-C-041/boundary/SH-S-5915	customer_* scopes used with the Customer Account API
+CM-MKT-023	salla	core	SA-C-020/where/SA-S-1749	setting Show You may also like section on product page
+CM-MKT-023	salla	core	SA-C-020/decides/SA-S-3181	dashboard feature customer-recommendations, released, enabled
+CM-MKT-023	salla	core	SA-C-002/decides/SA-S-2097	Salla Plus plan line lists منتجات مقترحة
