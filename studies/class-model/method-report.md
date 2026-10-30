@@ -103,3 +103,33 @@ That is about three to four times the budget of 250 million. By `PLAN.md`, secti
 - **G-anchor: 18.0 million, 96 requests,** for Salla's four concerns (Shopify has none in G): 7 capabilities. A cross-cutting domain's concerns are thin, so the part searched across the whole concern map for every capability, at `max` effort. That is 4.5 million per concern, against B's 1.5.
 - **A method ruling, for the founder's veto:** anchors now run at `high` effort, as the mapping parts already do. The conventions are settled, and the checker carries the dry run's tests. The final review's sample is where a gap in a part's reading shows (the effort rule of 13 October: "a part whose check or review shows gaps is re-run").
 - **Spent:** 247.0 million of the extent's 250 million.
+
+## 10. A quarter past the budget (30 October, about 04:55 UTC)
+
+The extent passed 312.5 million, a quarter past its budget of 250 million, at 316.9 million. By `PLAN.md`, section 8, the cost comes to the founder with a new projection, and the work goes on.
+
+**Where it stands:**
+- Domains B and G are complete for all five platforms: 33 and 13 capabilities.
+- Domain F's anchor is complete: 41 capabilities from 41 concerns, in four batches.
+- Domain D's anchor is three batches of six in: 35 capabilities.
+
+**The rates measured since the dry run, at `high` effort:**
+- **Anchors:** F's batches 2 to 4 cost 23.7 million for 29 concerns, and D's batches 1 to 3 cost 19.0 million for 29: about 0.75 million per concern, against the dry run's 1.5.
+- **Mapping cells:** B-zid 0.18 million per cell, B-bigcommerce 0.12, G-woocommerce 0.27, G-zid 0.15, G-bigcommerce 0.14: about 0.18.
+- **Back-fill cells:** about 0.35 million each.
+
+**The projection, re-measured** (an assumption, to be measured again after domain E):
+
+| Item | Million tokens |
+| --- | --- |
+| Spent | 317 |
+| Anchors still to run: 254 concerns of D, E, A and C | about 190 |
+| Mapping: about 1,140 cells in D, E, A, C and F | about 205 |
+| Back-fills: about 170 cells | about 60 |
+| Final review, by risk | about 60 |
+| Corrections after it | about 30 |
+| Q3's check | about 20 |
+| The architecture plan's review | about 10 |
+| **The extent, in all** | **about 890, within 750 to 1,000** |
+
+That is inside the projection of 30 October's milestone (700 million to a billion), and about three and a half times the budget. No higher plan has been needed so far: the usage limit hasn't stopped an agent.

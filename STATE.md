@@ -155,7 +155,8 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - the final review by risk.
 
   Re-measured after the next two domains. Told to the founder on the orientation page.
-- **Since the dry run:** domain B completed for Zid and BigCommerce (with Zid's back-fill), and merged with no problem: 33 capabilities. Domain G is complete for all five platforms (13 capabilities), and merged. `F-anchor` runs in four batches (batch 1, apps, done: 9 capabilities), and `D-anchor` in six. Anchors now run at `high` effort (method report, section 9). Spent: 274.2 million.
+- **Since the dry run:** domain B completed for Zid and BigCommerce (with Zid's back-fill), and merged with no problem: 33 capabilities. Domain G is complete for all five platforms (13 capabilities), and merged. `F-anchor` is complete (41 capabilities, four batches). `D-anchor` is three batches of six in (35 capabilities). Anchors now run at `high` effort (method report, section 9).
+- **A quarter past the budget:** 316.9 million spent at about 04:55 UTC on 30 October. Re-measured projection: about 890 million for the whole extent, within 750 to 1,000 (method report, section 10). Brought to the founder, with the orientation page updated. The work goes on (`PLAN.md`, section 8; the standing decision of 27 October).
 - **Next:**
   1. domain B's Zid and BigCommerce parts, with their back-fills (done);
   2. large domains split into units of a few areas each (C, A), so no part grows past the cap;
