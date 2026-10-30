@@ -90,6 +90,14 @@ def fold(s):
     return s.casefold().replace("\u0629", "\u0647").replace("\u0649", "\u064a")   # taa marbuta as haa, alef maqsura as yaa
 
 
+def hits(term, hay):
+    """Is a folded term in a folded text? A short Latin term (four characters or fewer) matches only as a whole word,
+    so CLI doesn't match client; any other term, Arabic included, matches as a substring."""
+    if len(term) <= 4 and re.fullmatch(r"[a-z0-9]+", term):
+        return re.search(rf"(?<![a-z0-9]){re.escape(term)}(?![a-z0-9])", hay) is not None
+    return term in hay
+
+
 def ids(arg):
     if isinstance(arg, list):
         arg = " ".join(arg)
@@ -237,7 +245,7 @@ def cmd_search(a):
         if a.placement and r["placement"] != a.placement:
             continue
         hay = fold(r["identifier"] + " " + r["statement"])
-        if any(t in hay for t in terms):
+        if any(hits(t, hay) for t in terms):
             show_statement(r, a.width)
             n += 1
     print(f"# {n} statements and placed inventory entries match (an inventory entry's key is its id)")
@@ -310,7 +318,7 @@ def cmd_candidates(a):
         folded = {fold(t): t for t in terms}
         scored = []
         for r, h in hay:
-            hit = [t for f, t in folded.items() if f in h]
+            hit = [t for f, t in folded.items() if hits(f, h)]
             if hit:
                 d = dom.get(r["concern_id"], {})
                 mine = d.get("domain") == a.domain or a.domain in ids(d.get("also", ""))

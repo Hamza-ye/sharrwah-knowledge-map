@@ -19,7 +19,7 @@ import csv, os, re, sys
 
 csv.field_size_limit(10**9)
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns, items
+from class_slice import CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, statements, concerns, items, hits
 
 HEADS = {
     "capabilities.tsv": ["cap_id", "area", "capability", "parent", "note"],
@@ -395,9 +395,9 @@ def check_part(d):
                 problem(f"{w}: none-held records the terms it searched, in each language")
             terms = {fold(t) for t in semi(r["searched"])}
             terms |= {fold(t) for p, ts in other_terms.get(k[0], {}).items() if p != k[1] for t in ts if len(t) > 3}
-            hits = [key(s) for s in items(k[1]) if any(t in fold(s["identifier"] + " " + s["statement"]) for t in terms)]
-            if hits:
-                flag(f"{w}: none-held, and {len(hits)} {k[1]} statements match its searched terms or the other platforms' terms for {k[0]}: {', '.join(hits[:8])}{' …' if len(hits) > 8 else ''}")
+            found = [key(s) for s in items(k[1]) if any(hits(t, fold(s["identifier"] + " " + s["statement"])) for t in terms)]
+            if found:
+                flag(f"{w}: none-held, and {len(found)} {k[1]} statements match its searched terms or the other platforms' terms for {k[0]}: {', '.join(found[:8])}{' …' if len(found) > 8 else ''}")
         if any(x["supports"] in PLACED for x, _ in e) and not r["reading"].strip():
             problem(f"{w}: a placement is a reading, and reading says why")
         core = [s for x, s in e if x["supports"] == "core"]
