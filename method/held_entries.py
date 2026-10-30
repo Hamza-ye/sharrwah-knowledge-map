@@ -756,6 +756,36 @@ def candidates(e, idx):
     return out
 
 
+def cmd_cells(a):
+    """Each named capability's cell on the platform, compact: its name, parent and note, what its cell holds and places,
+    its terms and reading, and its evidence rows' reasons. What a placement needs to see of a lead, in one call."""
+    caps = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "capabilities.tsv"))}
+    cells = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "cells.tsv")) if r["platform"] == a.platform}
+    ev = collections.defaultdict(list)
+    for r in rows(os.path.join(MODEL, "merged", "evidence.tsv")):
+        if r["platform"] == a.platform:
+            ev[r["cap_id"]].append(r)
+    for c in a.cap_ids:
+        r = caps.get(c)
+        if not r:
+            print(f"{c}: no capability of the model")
+            continue
+        print(f"{c} [{r['domain']}] {clip(r['capability'], 200)} | parent {r.get('parent') or '-'}")
+        print(f"   note: {clip(r.get('note', ''), a.width)}")
+        cell = cells.get(c)
+        if not cell:
+            print(f"   {a.platform}: no cell")
+            continue
+        held = "held" if cell["held"] == "statements" else "holds nothing"
+        print(f"   {a.platform}: {held}; placed {cell.get('placed_as') or '-'}; terms: {clip(cell.get('terms', ''), 300)}")
+        print(f"   reading: {clip(cell.get('reading', ''), a.width)}")
+        es = ev.get(c, [])
+        if es:
+            n = collections.Counter(e["supports"] for e in es)
+            print(f"   evidence, {len(es)} rows ({', '.join(f'{k} {v}' for k, v in sorted(n.items()))}): "
+                  + "; ".join(clip(e["why"], 90) for e in es[: a.rows]) + ("; …" if len(es) > a.rows else ""))
+
+
 def cmd_show(a):
     es = entries(a.platform)
     if a.batch:
@@ -1040,6 +1070,10 @@ def main():
     s.add_argument("--width", type=int, default=600); s.add_argument("--meta", action="store_true")
     s.add_argument("--candidates", action="store_true", help="each entry's leads: capabilities whose cited statements share its identifiers, or whose terms it holds")
     s.set_defaults(f=cmd_show)
+    s = sub.add_parser("cells", help="each named capability's cell on the platform, compact")
+    s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("cap_ids", nargs="+")
+    s.add_argument("--width", type=int, default=500); s.add_argument("--rows", type=int, default=12)
+    s.set_defaults(f=cmd_cells)
     s = sub.add_parser("check"); s.add_argument("--platform", choices=PLATFORMS, required=True)
     s.add_argument("--batch", required=True); s.set_defaults(f=cmd_check)
     a = ap.parse_args()
