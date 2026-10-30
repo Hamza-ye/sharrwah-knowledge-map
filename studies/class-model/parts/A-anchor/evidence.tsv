@@ -16,8 +16,6 @@ CM-ACC-001	salla	core	SA-C-001/boundary/SA-S-1622	Salla's own webhook topic stor
 CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2409	the staff permission account_setting_management
 CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-2626	account_setting_management in the permissions a partner can request: shows an interface for apps (S7)
 CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2086	سلة بلس plan line: saving recently opened accounts at sign-in
-CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-3182	flag store-two-factor-authentication, not released (C6)
-CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-3365	flag biometric-verification, not released (C6)
 CM-ACC-002	shopify	shows	SH-C-002/decides/SH-S-0001	the merchant contracts with the Shopify Contracting Party chosen by the store's billing address
 CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0002	Shopify Inc. for the United States or Canada
 CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0003	Shopify Technology (USA) Inc. for the United States or Canada

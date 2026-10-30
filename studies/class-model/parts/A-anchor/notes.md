@@ -698,3 +698,12 @@ Left for batch 7 (Salla's TRU concerns):
   they do; no cookie banner, per-region privacy setting or erasure process is held.
 - **Salla's identity verification** apart from store verification isn't held; nor is a Salla statement on bot protection.
 - **Makers:** none needed; every placement here rests on the platforms' own pages, routes and APIs.
+
+## The coordinator's corrections after batch 5 (30 October)
+
+- **Salla's two-factor and biometric flags** (SA-S-3182, SA-S-3365) leave CM-ACC-001: they are CM-TRU-001's subject, and batch 5 cites them there. SA-C-001 stays `strained`, its reading naming CM-TRU-001 and G's CM-SRF-001.
+- **SH-C-014 is `strained`:** batch 5 cites SH-I-2134 in CM-TRU-009.
+- **CM-ACC-008's Shopify reading** names SH-C-174, which lands there, and batch 5's two rows; **CM-ONB-002's Salla reading** names SA-S-0115, now `core` in CM-TRU-009.
+- **SA-C-234, G's,** is cited here through SA-S-5115 (two-factor authentication mandatory at sign-in): its landing in G names CM-TRU-001.
+- **SH-C-012** is written as Q1's match M-005 once batch 7 lands SA-C-010.
+
