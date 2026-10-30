@@ -1,1 +1,65 @@
 cap_id	platform	supports	key	why
+CM-CHK-001	zid	core	ZD-C-099/where/ZD-S-0961	Dashboard > Settings: the checkout page's options
+CM-CHK-001	zid	core	ZD-C-099/boundary/ZD-S-0049	Zid's own API folder API's > Checkout
+CM-CHK-001	zid	shows	ZD-C-111/where/ZD-S-0996	Settings > checkout page > Zid Assurance, an option of the page
+CM-CHK-001	zid	shows	ZD-C-005/reason/ZD-S-0571	with Zid Pay the buyer completes the purchase in the store
+CM-CHK-002	zid	core	ZD-C-099/boundary/ZD-S-0049	Get Cart in Zid's API's > Checkout
+CM-CHK-002	zid	shows	ZD-C-100/decides/ZD-S-0965	the customer adds a product to the cart
+CM-CHK-007	zid	core	ZD-C-082/where/ZD-S-0006	Zid's own Merchant API folder Abandoned Carts
+CM-CHK-007	zid	core	ZD-C-082/boundary/ZD-S-0095	access scope abandoned_carts.read
+CM-CHK-007	zid	core	ZD-C-082/boundary/ZD-S-0064	webhook topic abandoned_cart.created
+CM-CHK-007	zid	core	ZD-I-0065	webhook topic abandoned_cart.completed, an entry no statement covers
+CM-CHK-007	zid	core	ZD-C-082/decides/ZD-S-0474	staff permission manage.store.abandonedcarts
+CM-CHK-007	zid	core	ZD-C-082/decides/ZD-S-0913	plan line Abandoned Cart Details, plans launch, growth, pro
+CM-CHK-007	zid	shows	ZD-C-082/decides/ZD-S-1016	the feature isn't in the free plans
+CM-CHK-007	zid	shows	ZD-C-082/decides/ZD-S-1017	some indicators in the professional and large business plans only
+CM-CHK-008	zid	core	ZD-C-005/decides/ZD-S-0362	plan Rise card: Apple Pay for faster checkout
+CM-CHK-009	zid	core	ZD-C-100/where/ZD-S-0962	Zid's own settings page خصائص الطلبات والمنتجات
+CM-CHK-009	zid	core	ZD-I-0138	settings entry: the page's orders tab, no statement covers it
+CM-CHK-009	zid	core	ZD-C-100/decides/ZD-S-0963	plan line Custom Fields for products or orders, plans growth and pro
+CM-ORD-001	zid	core	ZD-C-080/where/ZD-S-0004	Zid's own Merchant API folder Orders
+CM-ORD-001	zid	core	ZD-C-080/boundary/ZD-S-0905	access scope orders.read
+CM-ORD-001	zid	core	ZD-I-0095	access scope orders.read_write
+CM-ORD-001	zid	core	ZD-C-080/boundary/ZD-S-0057	webhook topic order.create
+CM-ORD-001	zid	core	ZD-C-080/where/ZD-S-0906	orders created by customers in the storefront or merchants in the dashboard
+CM-ORD-001	zid	core	ZD-I-0507	staff permission list.store.orders
+CM-ORD-001	zid	core	ZD-I-0265	plan line Filter Orders
+CM-ORD-001	zid	core	ZD-I-0262	plan line Customize Order Table Columns
+CM-ORD-001	zid	core	ZD-I-0260	plan line View Order Sequence
+CM-ORD-001	zid	core	ZD-I-0272	plan line Order Update History
+CM-ORD-001	zid	core	ZD-I-0273	plan line Delayed Orders
+CM-ORD-001	zid	core	ZD-I-0274	plan line Long-Term Order Management
+CM-ORD-002	zid	core	ZD-C-080/decides/ZD-S-0518	staff permission edit.store.orders
+CM-ORD-002	zid	core	ZD-I-0284	plan line Unlimited Order Editing
+CM-ORD-002	zid	shows	ZD-C-054/decides/ZD-S-1007	editing an order issues credit and debit notes
+CM-ORD-003	zid	core	ZD-C-080/decides/ZD-S-0907	Orders API operation Change Order Status
+CM-ORD-003	zid	core	ZD-I-0058	webhook topic order.status.update
+CM-ORD-003	zid	core	ZD-I-0264	plan line Order Status
+CM-ORD-003	zid	core	ZD-I-0266	plan line Change Order Statuses
+CM-ORD-003	zid	core	ZD-I-0267	plan line Bulk Change Order Status
+CM-ORD-003	zid	core	ZD-I-0278	plan line Custom Order Status
+CM-ORD-003	zid	outside	ZD-C-080/decides/ZD-S-1010	the shipping company sets the status جاري التوصيل
+CM-ORD-003	zid	shows	ZD-C-080/boundary/ZD-S-1011	the status جاهز; linked carriers are told
+CM-ORD-004	zid	shows	ZD-C-054/boundary/ZD-S-0833	orders that have been cancelled
+CM-ORD-004	zid	shows	ZD-C-054/decides/ZD-S-1007	cancelling an order issues notes
+CM-ORD-005	zid	core	ZD-C-080/decides/ZD-S-0904	plan line Draft Orders, every plan
+CM-ORD-005	zid	core	ZD-C-080/boundary/ZD-S-0908	API endpoint POST drafts
+CM-ORD-005	zid	core	ZD-C-080/where/ZD-S-0906	merchants create orders from the dashboard
+CM-ORD-005	zid	core	ZD-I-0530	staff permission create.store.orders
+CM-ORD-005	zid	core	ZD-I-0531	staff permission list.store.order.drafts
+CM-ORD-006	zid	core	ZD-C-007/where/ZD-S-0580	Fraud Shield on Zid's Payments page watches transactions
+CM-ORD-006	zid	core	ZD-C-007/decides/ZD-S-0374	plan Growth card: fraud protection
+CM-ORD-008	zid	core	ZD-C-052/where/ZD-S-0821	Dashboard > Settings > invoice settings
+CM-ORD-008	zid	core	ZD-C-052/decides/ZD-S-0822	plan line Invoice Printing, every plan
+CM-ORD-008	zid	core	ZD-C-052/decides/ZD-S-0823	setting: send order invoices to customers, else an order summary
+CM-ORD-008	zid	shows	ZD-C-052/boundary/ZD-S-0825	the merchant may stop them when using its own ERP
+CM-ORD-008	zid	shows	ZD-C-052/responsible/ZD-S-0824	the merchant faces the Ministry of Commerce's fines
+CM-ORD-010	zid	core	ZD-C-104/where/ZD-S-0970	Settings > Store > official working hours
+CM-ORD-011	zid	core	ZD-C-080/decides/ZD-S-0903	plan line Order Tags, plans launch, growth, pro
+CM-ORD-011	zid	core	ZD-I-0003	API resource Merchant APIs > Orders > Order Tags
+CM-ORD-013	zid	core	ZD-I-0271	plan line Order Notes
+CM-ORD-013	zid	core	ZD-C-061/boundary/ZD-S-0852	Orders API operation Add Order Comment
+CM-ORD-015	zid	core	ZD-C-028/where/ZD-S-0722	webhook topic order.payment_status.update
+CM-ORD-015	zid	core	ZD-C-028/decides/ZD-S-0723	plan line Payment Status, every plan
+CM-ORD-015	zid	core	ZD-C-028/decides/ZD-S-0724	plan line Bulk Payment Status Update, every plan
+CM-ORD-015	zid	shows	ZD-C-028/boundary/ZD-S-0725	unpaid includes pending, refunded and voided

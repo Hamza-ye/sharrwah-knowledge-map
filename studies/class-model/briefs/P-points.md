@@ -1,34 +1,42 @@
 # Brief: the subjects' variation points on the class's model (Stage 4A)
 
-**What this is.** `PLAN.md`, Stage 4A, "The subjects' points": "After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. [...] Where a point and the model conflict, the point is reopened with its evidence, not forced to fit (the founder, 30 October). An engineering ruling is ruled again on that evidence, and listed for the founder's veto. A founder's own decision, such as S-01's Decision 1, isn't reopened by engineering: the conflict comes to the founder with its evidence." You draft the landings of one batch of points for the coordinator, who checks each and owns its reading. Your message names your batch.
+**What this is.** `PLAN.md`, Stage 4A, "The subjects' points": "After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. [...] Where a point and the model conflict, the point is reopened with its evidence, not forced to fit (the founder, 30 October). An engineering ruling is ruled again on that evidence, and listed for the founder's veto. A founder's own decision, such as S-01's Decision 1, isn't reopened by engineering: the conflict comes to the founder with its evidence." You draft the landings of one batch of points for the coordinator, who checks each and owns its reading. You record each conflict and the register rows it bears on; the coordinator settles it and routes it. Your message names your batch (`python3 -I method/land_points.py batches`). This brief was inspected before it ran (`studies/class-model/inspection-P.md`).
 
 **What a point is.** A subject's variation point is a place where the class varies by market: a question in the platforms' own words, such as S-01's "who or what fills 'holds the funds'" or S-02's "what 'currency' takes its value per". Its variants are each platform's answers, from the subject's statements. The subject's register then rules on it: a founder's decision, an engineering ruling or constraint, a row moved to another subject, or a row that follows by rule.
 
-**What landing it means.** Naming the capability of the model whose thing the point's question is about: where the model carries the point. The architecture reads it there, to see which capabilities vary by market and why.
+**What landing it means.** Naming the capability of the model whose thing the point's question is about: where the model carries the point. The architecture reads it there, to see which capabilities vary by market. The cause and the binding time stay in the subject's analysis, found by the point's id: don't copy them.
 
 **Read only this brief and:**
-- `method/land_points.py` (`python3 -I method/land_points.py --help`): `show --points <ids>` prints, in one view, a point's question, the register rows that name it with their answer and status, the subject's own analysis of it, its variants per platform, and its leads, each with its cells. A lead is a capability the point's statements point to by one of four routes: `cited` (a cell cites the concern map's statement the subject's statement comes from), `concern` (that statement's concern lands there), `page` (the subject read its statement on a page the concern map's statements of a concern also cite), `terms` (the capability's names or cells hold the point's own terms);
-- the model, through `method/class_slice.py` (`model`, `key`, `search`, `caps`) and `method/q3.py where`;
+- `method/land_points.py` (`python3 -I method/land_points.py --help`):
+  - `show --points <ids>` prints a point in one view: its question and terms, the register rows that name it with their answer and status, the subject's own analysis, its variants per platform with how many of each platform's statements trace to the concern map, and its ranked leads, each with its basis and its cells' clipped readings. Read each point's view once.
+  - `cell <cap_id> <platform>` prints one cell whole: its placements, its reading and every evidence row, with what each statement supports.
+  - A lead is a capability the point's statements or terms point to, by one of four routes: `cited` (a cell cites the concern map's statement the subject's statement comes from), `concern` (that statement's concern lands there), `page` (the subject read its statement on a page the concern map's statements of a concern also cite), `terms` (the capability's names or cells hold the point's own terms). A lead is only a lead.
+- `studies/class-model/briefs/B-extent.md`, its "Cells and evidence" and "Conventions from the dry run": the rules by which the model places a cell `core` or `own-service`;
+- the model, through `method/class_slice.py` (`key`, `search`, `outscope`, `caps`) and `method/q3.py where`;
 - the subject's own files where the view leaves a variant in doubt: `studies/subjects/<S>/variants.tsv`, `register.tsv`, `analysis.tsv` (S-01) or `answers.tsv` (S-02), and a platform's `statements.tsv` and `citations.tsv`, one row at a time, found by its id. Never load a file whole;
-- `founder-decisions.tsv`, whole, for which decisions are the founder's own.
+- `founder-decisions.tsv`, whole, for which decisions are the founder's own;
+- `architecture/plan.md`, section 3, for the decisions that cut across every area.
 
 ## For each point
 
-1. **`cap_ids`:** the capability whose thing the question names, the main one first. Add others where the point's thing spans capabilities, or where the platforms answer it in different capabilities. A lead is only a lead: the capability must be the thing the question asks about, as its cells' readings and the statements' words show. A point about who fills a role (S-01's) lands on the capability whose cells hold that role. Where no capability is the point's thing, write `none`, with a `structure` conflict.
-2. **`route` and `basis`:** the routes that led you there, and their basis: the concern map's keys a cell cites (`concern/placement/cite`), `concern:<id>` for a concern's landing, or `term:<term>`.
-3. **`reading`:** why it lands there, in a sentence or two, marked as a reading.
-4. **`register`:** the register rows that name the point, as `show` lists them, `; `-separated, in that order.
-5. **`conflict`:** compare, platform by platform, what the subject's variants and analysis say each platform does with what the landing capability's cells say. They differ in grain: the subject asks per market, the cells ask who does it and where. A cell that says nothing about markets doesn't conflict with a variant that does. A conflict is one of four:
-   - `count`: the subject's statements show a platform doing the thing itself (its own admin, setting, API or terms) or as its company's own service, where the landing capability's cell on that platform is not `core` or `own-service`: `none-held`, `not-stated`, or only `extension-point`, `outside` or `shows`. If they hold, the capability's count changes, and maybe its kind. Name the subject's statement ids and the cell;
-   - `placement`: the two say different things about who does it on one platform. One says the platform itself, the other a third party or the merchant; or the subject's variant is a confirmed absence where the cell holds the thing `core`. Name both sides' statements;
+1. **`cap_ids`:** the capability whose thing the question names, the main one first. Add another only where the platforms answer the question in different capabilities, or its thing is two capabilities' at once. The capability must be the thing the question asks about, as its cells' readings and the statements' words show: a "what X takes its value per" lands on X, not on Markets, unless X is the market itself. A point about who fills a role (S-01's) lands on the capability whose cells hold that role. Where a platform's statements trace to nothing (`show` says so), search for its thing (`caps`, `search`) before you land. Where no capability is the point's thing, write `none`, with a `structure` conflict.
+2. **`reach`:** `capability`; or, where the point binds every area through one of the decisions that cut across them all, `cross-cutting: architecture plan, section 3, item <N>`, the main capability still named in `cap_ids`.
+3. **`route` and `basis`:** the routes that led you there, `;`-separated, and their basis, each item one of three: a key (`concern/placement/cite`, or an inventory id) that a cell of a landing capability cites; `concern:<id>`, a concern landed in one of them; `term:<term>`, one of the point's own terms. Each route needs an item of its form: `cited` a key, `concern` and `page` a `concern:`, `terms` a `term:`. For `none`, the basis is the leads you set aside.
+4. **`reading`:** why it lands there, in a sentence or two, marked as a reading.
+5. **`register`:** the register rows that name the point, as `show` lists them, `; `-separated, in that order.
+6. **`conflict`:** compare, platform by platform, what the subject's variants and analysis say each platform does with the cell of the landing capability the platform's variants answer in (`cell` shows it whole). They differ in grain: the subject asks per market, the cells ask who does it and where. A cell that says nothing about markets doesn't conflict with a variant that does. Four types, which don't overlap:
+   - `count`: the subject's statements would place the platform `core` or `own-service` by the model's own rules (`B-extent.md`, "Cells and evidence", and the conventions: its own admin section, setting, route or built-in behaviour, its own API for its own feature, a released flag, a staff permission; `own-service` only on a statement naming the company as the maker or provider), and the cell is placed otherwise or holds nothing. A platform's terms that give the merchant's or buyer's duties, or state the agreement's own terms, support no placement, so they make no `count`. A capability of the kind `open` is placed so on purpose (convention 12): compare its cells as any other's;
+   - `placement`: the cell is `core` or `own-service`, and the subject's statements show a third party doing it, the merchant doing it outside the platform, or a confirmed absence on that platform;
    - `structure`: no capability is the point's thing; or the point's variants show that two capabilities are one thing, or that one capability holds two things the platforms tell apart;
-   - `premise`: a register row that names the point rests on a claim about the class (what every platform does, or that no reference does a thing) that the model's cells contradict. Name the row and the cells.
+   - `premise`: a register row that names the point rests on a claim about what the references do or show (that every platform does it, that one does, that none does, or how they carry it) that the model's cells contradict.
 
-   Write `none`, or `<type>: <what>`, several separated by ` | `. Don't decide which side is right: the coordinator reads both. Where the statements plainly bear one side out, say so as a reading. Where a subject holds a platform's statements and the cell holds nothing, that is a `count` conflict only if they show the platform doing the thing itself; otherwise note it for the coordinator, since the subject read sources the concern map didn't hold.
-6. **`status`:**
-   - `landed`, with conflict `none`;
-   - `to the founder`, where a conflict touches a founder's own decision: a register row whose status says the founder settled or decided it (S-01's Decision 1 and its defaults, the rows settled by Decision 1's answer, and the rows the founder decided to keep), or a decision in `founder-decisions.tsv`;
-   - `reopened`, for every other conflict. That covers an engineering ruling (S-02's D1 to D9 and E1 to E5 are engineering's rulings, which the founder didn't veto, and S-01's rows "proposed, engineering"), a row moved to another subject, and the model itself.
+   **Who sets a value is not who provides it.** The seller, a staff member or the buyer setting the platform's own setting is the platform's `core`, never a conflict. For a "who sets" point, compare a third party it names (a provider, a gateway, partners, an app) with the capability whose thing that third party does, and only as `placement` defines a difference.
+
+   Write `none`, or each conflict as `<type> (rows: <ids>): <what>`, several separated by ` | `. `<ids>` are the register rows whose answer rests on the side the conflict questions, comma-separated, or `model` where only the cells are in question; both may appear. In `<what>`, name the subject's statement ids and the cell's evidence keys, and say as a reading which side the statements bear out, or what would settle it. Don't decide it: the coordinator does.
+7. **`status`:** `landed`, with conflict `none`; or `conflict`.
+8. **`outcome`:** leave it empty. The coordinator writes it.
+
+**Notes, for the coordinator:** where a point lands on a capability of the kind `slot`, or one with `outside` cells, list the third parties and laws the subject names as filling it that the model's `merged/slot-fillers.tsv` lacks. Each is a lead, not a conflict.
 
 ## Rules
 
@@ -39,20 +47,28 @@
 
 ## How to work, keeping your context small
 
-- `show --points` two or three points at a time. Use `class_slice.py model --domain <D> --areas <AREA>` only where a cell's clipped reading doesn't settle it, and `key` for one statement.
+- `show --points` two or three points at a time, and read each view once. Use `cell` where a clipped reading doesn't settle a comparison, and `key` for one statement.
 - Write your batch's file as you go, a few rows at a time. Don't print it back.
 
 ## Output, in `studies/class-model/points/`
 
-- `<batch>.tsv`, tab-separated, a header row, no quoting, no tab or newline inside a field: `subject` · `vp_id` · `question` (exactly as the subject words it) · `cap_ids` (`;`-separated) · `route` (`;`-separated) · `basis` (`;`-separated) · `reading` · `register` · `conflict` · `status`.
-- `notes-<batch>.md`: the points that were hard to land and why; each conflict, with both sides' evidence; the leads the checker prints and what you made of them; problems with this brief or the script.
+- `<batch>.tsv`, tab-separated, a header row, no quoting, no tab or newline inside a field: `subject` · `vp_id` · `question` (exactly as the subject words it) · `cap_ids` (`;`-separated) · `reach` · `route` (`;`-separated) · `basis` (`;`-separated) · `reading` · `register` · `conflict` · `status` · `outcome` (empty).
+- `notes-<batch>.md`: the points that were hard to land and why; each conflict, with both sides' evidence; the leads the checker prints and what you made of them; the slot fillers above; problems with this brief or the script.
 
-Check with `python3 -I method/land_points.py check --batch <batch>` until it prints no problem. Its `lead:` lines (the subject holds a platform's statements where the landing cell holds none) are for you to read for a `count` conflict: answer each in your notes.
+Check with `python3 -I method/land_points.py check --batch <batch>` until it prints no problem. Its `lead:` lines (the subject holds a platform's statements where no landing cell holds any) are for you to read for a `count` conflict, or a capability you missed: answer each in your notes.
 
 ## Report
 
-Back to the coordinator: your points' count by status; each conflict, with its type, point and both sides; any problem; the checker's final line.
+Back to the coordinator: your points' count by status; each conflict, with its type, point, rows and both sides; any problem; the checker's final line.
 
-## After the batches
+## After the batches: the coordinator
 
-The coordinator checks every batch and reads each conflict's evidence. An engineering ruling is ruled again and listed for the founder's veto. The model is amended through `<domain>-amend` parts. A conflict with the founder's own decision goes to the founder at GM, with its evidence. The final review then reads the points with the rest of the extent.
+The coordinator checks every batch, then settles each conflict's fact first, since what a platform does is engineering's to read from the evidence (`PLAN.md`, section 3). Then each conflict on its own:
+- where a cell is wrong, the model is amended through a `<domain>-amend` part;
+- where the subject's evidence is wrong, or read wrongly, under an engineering ruling or constraint, the row is ruled again and listed for the founder's veto;
+- under a founder's decision, the conflict goes to the founder with its evidence, its options and a recommendation, and engineering doesn't reopen the decision. S02-M9's plan items go to the founder with plans and prices;
+- under a row moved to another subject, it is carried to that subject as an input, and not ruled now;
+- under a row that follows by rule, the rule is applied again;
+- where the conflict doesn't hold, it is dismissed, with why.
+
+The coordinator writes each conflict's outcome, in order, ` | `-separated, each marked "(the coordinator)": `model amended: <part>/<file> <row>`, `re-ruled: <row>, listed for veto`, `to the founder: <item>`, `to the founder with plans: <item>`, `carried to <S-NN>: <what>`, `re-applied: <row>`, or `dismissed: <why>`. The drafted conflict and status stay as written. `land_points.py check --final` then requires an outcome for every conflict, and the final review reads every drafted conflict with its outcome.

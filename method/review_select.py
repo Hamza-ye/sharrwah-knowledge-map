@@ -24,8 +24,8 @@ reviewers' messages name. It writes studies/class-model/review/selection.tsv, on
   inventory entries;
 - q3: every candidate miss and unclear row of Q3's check, every beyond-the-class row the model doesn't answer, and a
   seeded tenth of its covered rows;
-- point: every subject's variation point whose landing on the model found a conflict (studies/class-model/points/;
-  the brief `briefs/P-points.md`), and a seeded tenth of the points landed without one;
+- point: every subject's variation point whose drafted landing found a conflict, whatever the coordinator's outcome
+  (studies/class-model/points/; the brief `briefs/P-points.md`), and a seeded tenth of the points landed without one;
 - sample: a seeded sample of each part's other cells, at least two or the fraction given, whichever is larger.
 """
 import argparse, glob, math, os, random, re, sys
@@ -175,11 +175,23 @@ def select(a):
     for path in sorted(glob.glob(os.path.join(MODEL, "points", "P-*.tsv"))):
         pts += [(os.path.basename(path)[:-4], r) for r in rows(path)]
     landed = [x for x in pts if x[1]["status"] == "landed"]
+    scope = {r["concern_id"]: r["domain"] for r in rows(os.path.join(MODEL, "scope.tsv"))}
+
+    def point_part(r):
+        """A point landed on none goes to the share of its leads' domain: its basis's first concern."""
+        if (r["cap_ids"].split(";") or [""])[0].strip() != "none":
+            return None
+        con = next((x.strip()[8:] for x in r["basis"].split(";") if x.strip().startswith("concern:")), "")
+        return f"{scope[con]}-points" if con in scope else None
+
     for b, r in pts:
         if r["status"] != "landed":
-            add_other("point", (r["cap_ids"].split(";") or [""])[0], f"points/{b}.tsv {r['vp_id']}: {r['status']}: {' '.join(r['conflict'].split())[:160]}")
+            add_other("point", (r["cap_ids"].split(";") or [""])[0],
+                      f"points/{b}.tsv {r['vp_id']}: {' '.join(r['conflict'].split())[:160]} -> "
+                      f"{' '.join(r.get('outcome', '').split())[:120] or 'no outcome'}", part=point_part(r))
     for b, r in rnd.sample(landed, max(1, round(len(landed) * 0.1))) if landed else []:
-        add_other("point", (r["cap_ids"].split(";") or [""])[0], f"points/{b}.tsv {r['vp_id']}: landed (a seeded tenth)")
+        add_other("point", (r["cap_ids"].split(";") or [""])[0], f"points/{b}.tsv {r['vp_id']}: landed (a seeded tenth)",
+                  part=point_part(r))
     by_part = {}
     for k, r in cells.items():
         if k not in cell_items:
@@ -191,7 +203,7 @@ def select(a):
     for (c, p), it in sorted(cell_items.items()):
         out.append([",".join(it["reasons"]), c, p, " | ".join(it["details"]), share_of(c, None, areas)])
     for it in other:
-        out.append([it["reasons"][0], it["cap"], "", " | ".join(it["details"]), share_of(it["cap"], it["part"] if not it["cap"] else None, areas)])
+        out.append([it["reasons"][0], it["cap"], "", " | ".join(it["details"]), share_of(it["cap"], it["part"] if it["cap"] in ("", "none") else None, areas)])
     out.sort(key=lambda x: (x[4], x[1], x[2], x[0]))
     counters, lines = {}, []
     for i, x in enumerate(out, 1):

@@ -1,0 +1,25 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHK-001	zid	statements	core	صفحة إتمام الشراء > ضمان زد | لوحة التحكم > الاعدادات		ZD-C-099/decides:observation needed;ZD-C-099/responsible:stated only in general terms;ZD-C-099/reason:searched, not found	general
+CM-CHK-002	zid	statements	core			ZD-C-099/decides:observation needed;ZD-C-099/responsible:stated only in general terms;ZD-C-099/reason:searched, not found;ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	general
+CM-CHK-003	zid	none-held					
+CM-CHK-004	zid	none-held					
+CM-CHK-005	zid	none-held					
+CM-CHK-006	zid	none-held					
+CM-CHK-007	zid	statements	core	Merchant APIs > Abandoned Carts	ZD-C-082/decides/ZD-S-0474=staff permission | ZD-C-082/decides/ZD-S-0913=compare-plans: starter, launch, growth, pro | ZD-C-082/decides/ZD-S-1016=الباقات المجانية | ZD-C-082/decides/ZD-S-1017=الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-082/responsible:stated only in general terms;ZD-C-082/reason:searched, not found	general
+CM-CHK-008	zid	statements	core		ZD-C-005/decides/ZD-S-0362=plan Rise		plan Rise
+CM-CHK-009	zid	statements	core	خصائص الطلبات والمنتجات	ZD-C-100/decides/ZD-S-0963=compare-plans: starter, launch, growth, pro	ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	general
+CM-ORD-001	zid	statements	core	GET /v1/managers/store/orders | Merchant APIs > Orders		ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-002	zid	statements	core		ZD-C-080/decides/ZD-S-0518=staff permission	ZD-C-054/responsible:stated only in general terms;ZD-C-054/decides:searched, not found;ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-003	zid	statements	core;outside			ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-004	zid	statements	not-stated			ZD-C-054/responsible:stated only in general terms;ZD-C-054/decides:searched, not found	
+CM-ORD-005	zid	statements	core	GET /v1/managers/store/orders	ZD-C-080/decides/ZD-S-0904=compare-plans: starter, launch, growth, pro	ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-006	zid	statements	core	Fraud Shield	ZD-C-007/decides/ZD-S-0374=plan Growth	ZD-C-007/boundary:searched, not found;ZD-C-007/reason:searched, not found	general
+CM-ORD-007	zid	none-held					
+CM-ORD-008	zid	statements	core	اعدادات الفاتورة	ZD-C-052/decides/ZD-S-0822=compare-plans: starter, launch, growth, pro	ZD-C-052/reason:searched, not found	general
+CM-ORD-009	zid	none-held					
+CM-ORD-010	zid	statements	core	الاعدادات > المتجر > أوقات العمل الرسمية		ZD-C-104/decides:observation needed;ZD-C-104/responsible:stated only in general terms;ZD-C-104/boundary:searched, not found;ZD-C-104/reason:searched, not found	general
+CM-ORD-011	zid	statements	core		ZD-C-080/decides/ZD-S-0903=compare-plans: starter, launch, growth, pro	ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-012	zid	none-held					
+CM-ORD-013	zid	statements	core			ZD-C-061/reason:searched, not found;ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-014	zid	none-held					
+CM-ORD-015	zid	statements	core	order.payment_status.update	ZD-C-028/decides/ZD-S-0723=compare-plans: starter, launch, growth, pro | ZD-C-028/decides/ZD-S-0724=compare-plans: starter, launch, growth, pro	ZD-C-028/responsible:stated only in general terms;ZD-C-028/reason:searched, not found	general
