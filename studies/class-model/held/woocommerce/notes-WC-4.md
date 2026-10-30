@@ -176,3 +176,4 @@ The scope of each line is the entry's `within`, the location the call asked for 
 - **This structure's EG is Egypt's own list,** with its own answer and a request for `{"location":"EG"}`, unlike the free extensions' EG item. So its entries are scoped EG (`evidence-map.md`).
 - **Direct Debit** (GoCardless: 'Accept Direct Debit, ACH Pull, and open banking payments.') holds no capability of the model. It is decided with WooCommerce's other new things.
 - **The four cells that gain a placement stand as readings,** each from the provider's or the setting's own words: manual capture (CM-PAY-020), Square's inventory (CM-INV-001), Airwallex's FX (CM-MKS-007) and Kustom's checkout (CM-CHK-001).
+- **Aligned after WC-5:** WooPayments' EG line is `shows`, not `own-service`, since its onboarding in EG's item states 'WooPayments is not supported in the selected business location.' (items.jsonl, line 2), as in OM, SA and YE (WC-5's notes).
