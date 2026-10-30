@@ -155,8 +155,9 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - the final review by risk.
 
   Re-measured after the next two domains. Told to the founder on the orientation page.
+- **Since the dry run:** domain B completed for Zid and BigCommerce (with Zid's back-fill), and merged with no problem: 33 capabilities. `G-anchor` built 7 capabilities from Salla's four concerns. Anchors now run at `high` effort (method report, section 9). Spent: 247.0 million.
 - **Next:**
-  1. domain B's Zid and BigCommerce parts, with their back-fills;
+  1. domain B's Zid and BigCommerce parts, with their back-fills (done);
   2. large domains split into units of a few areas each (C, A), so no part grows past the cap;
   3. the domains G, F, D, E, A and C, two parts at a time.
 - **Cost so far:** 213.9 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1, `B-anchor` 33.9, `B-woocommerce` 12.8, `B-backfill-woocommerce` 2.0, the reviews 88.8, the corrections 22.0. The coordinating session's own: about 107 million by 01:00 UTC.

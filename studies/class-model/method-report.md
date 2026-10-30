@@ -96,3 +96,10 @@ That is about three to four times the budget of 250 million. By `PLAN.md`, secti
 
 - **6.0 million, 48 requests,** for Zid's 4 domain-B concerns and a Zid cell for each of the model's 33 capabilities (4 added): about 0.18 million per cell, against WooCommerce's 0.46 in the dry run. The candidates script gave it each capability's leads, the conventions removed the dry run's open questions, and it ran at `high` effort.
 - **Lesson:** most of Zid's domain-B evidence is names in its inventory, with no statement describing them, so many of its cells cite inventory entries by id. Three of its four new capabilities rest on such names alone (a plan line, an API group). The convention admits them as capabilities. The final review checks whether each should fold into its parent.
+
+## 9. B-backfill-zid, B-bigcommerce and G-anchor (03:25 to 04:00 UTC)
+
+- **B-backfill-zid: 5.0 million,** twelve cells. **B-bigcommerce: 4.1 million,** six concerns and 33 cells, about 0.12 million per cell; it added no capability, so it needs no back-fill. Domain B is complete for all five platforms, and merges with no problem.
+- **G-anchor: 18.0 million, 96 requests,** for Salla's four concerns (Shopify has none in G): 7 capabilities. A cross-cutting domain's concerns are thin, so the part searched across the whole concern map for every capability, at `max` effort. That is 4.5 million per concern, against B's 1.5.
+- **A method ruling, for the founder's veto:** anchors now run at `high` effort, as the mapping parts already do. The conventions are settled, and the checker carries the dry run's tests. The final review's sample is where a gap in a part's reading shows (the effort rule of 13 October: "a part whose check or review shows gaps is re-run").
+- **Spent:** 247.0 million of the extent's 250 million.
