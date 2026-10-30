@@ -145,8 +145,9 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - the checker flags joins not made;
   - `class_slice.py uncited` lists what no cell cites.
 - **The architecture plan's draft** (`architecture/plan.md`), with its first part to confirm with the dry run's review.
-- **Running now:** `B-anchor`, the dry run's first part. `method/class_kinds.py` computes each capability's count and kind from the parts' cells.
-- **Cost so far:** 54.4 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1. The coordinating session's own: about 107 million by 01:00 UTC.
+- **The dry run's parts are done** (`studies/class-model/parts/`): `B-anchor` (25 capabilities from 22 concerns), `B-woocommerce` (8 concerns, 3 capabilities added) and `B-backfill-woocommerce` (six cells). All pass their checks. Domain B now holds 28 capabilities: 27 `class`, 1 `slot`. What each run taught is in [`method-report.md`](studies/class-model/method-report.md).
+- **Running now:** the dry run's review, in two parts: the cells, and the structure.
+- **Cost so far:** 103.1 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1, `B-anchor` 33.9, `B-woocommerce` 12.8, `B-backfill-woocommerce` 2.0. The coordinating session's own: about 107 million by 01:00 UTC. A projection for the full run comes with the dry run's end.
 
 **Next:**
 1. **A fresh coordinating session** runs Stage 4A (step 1.1 done; 1.2 under way). It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:

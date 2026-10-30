@@ -37,3 +37,15 @@
   The last quarter cost five times the first, for the same number of requests.
 - **Lesson,** as in S-02 (`studies/subjects/S-02/method-report.md`): a part's cost grows with the square of its length, since every request re-reads the whole context. So a part is cut small enough that its context stays under about 250,000 tokens: one area per part where a domain is large, and a fresh agent that continues from the files when a part runs long. By this part's own first half (9.4 million for 61 requests), two fresh agents doing half each would have cost about 19 million together, not 34.
 - **What it read as `shows`:** Shopify's tags and taxonomy shown only through Shopify's own API scopes, where the brief counts the platform's "own API for its own feature" as `core`. This is one of the dry run review's checks.
+
+## 5. B-woocommerce and B-backfill-woocommerce (01:47 to 02:14 UTC)
+
+- **B-woocommerce: 12.8 million, 80 requests,** for 8 concerns and a WooCommerce cell for each of the model's 28 capabilities (3 added). Its context stayed under about 256,000 tokens: the prompt asked it to append rows in small batches and not print files back.
+- **B-backfill-woocommerce: 2.0 million, 23 requests,** for six cells, all `none-held` with their searched terms.
+- **A checker fault, found by the mapping part.** The ruling test read any capability under a common parent as "together", so `apart` became impossible for a candidate holding a coarse concern such as products. Two rulings were forced to `joined`. The test is now on each ruling's own keys: `joined` where one capability's cells cite keys of both sides, `nested` where a finer part sits under a coarser, `apart` where none does. Four rulings were corrected to what the cells show, and the corrections are noted in each part's notes.
+- **Two placement methods.** The anchor read Shopify's API-only evidence as `shows`. WooCommerce's part, told the brief's test (the platform's own API for its own feature is `core`), read WooCommerce's as `core`. The review settles which, and the anchor's cells are corrected to it.
+- **Lesson:** most of a mapping part's cost is its cells, one per capability, more than its landings. `class_slice.py candidates` now lists each capability's candidate statements on a platform, from the terms the other platforms' cells use, so a part judges a short list instead of designing every search.
+
+## 6. The dry run's review (from 02:15 UTC)
+
+Split in two, so each context stays small: the cells (checks 1, 2 and 5), and the structure (checks 3, 4 and 6 to 13), each with its own findings and coverage table.
