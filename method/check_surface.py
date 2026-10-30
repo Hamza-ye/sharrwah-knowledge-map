@@ -65,6 +65,8 @@ ALLOWED = {
     ("studies/subjects/S-01/briefs/E-rows.md", "the Knowledge Map"): "Q3's brief, reading the rows at the commit PLAN.md links",
     ("studies/class-model/", "the Knowledge Map"): "the class's model's seed, the Knowledge Map's index (PLAN.md, Stage 4A)",
     ("studies/class-model/inspection-A.md", "the areas list"): "the first brief's proposed merged file, studies/class-model/areas.tsv, not the history's list",
+    ("STATE.md", "the Knowledge Map"): "the founder's decisions of 30 October: the architecture plan's sources graded by its source types, and its page rebuilt from the model at GM",
+    ("studies/class-model/inspection-B.md", "the obligation model"): "the re-inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
     ("studies/subjects/S-02/notes-register.md", "the re-frame"): "the register's note that decisions.md was recast under the founder's intent of 29 October",
     ("studies/subjects/S-02/notes-register.md", "the milestone reports"): "the register's short names for its moved rows, S02-M1 to S02-M8",
     ("studies/subjects/S-02/shopify/notes.md", "the milestone reports"): "the Shopify part's names for its two searches, M1 and M2",
