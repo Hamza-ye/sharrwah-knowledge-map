@@ -129,3 +129,41 @@ CM-SFR-013	salla	core	SA-C-020/decides/SA-S-2135	Pro plan line: filter options s
 CM-SFR-013	salla	core	SA-C-020/decides/SA-S-3479	released flag products-filters
 CM-SFR-013	salla	core	SA-C-091/boundary/SA-S-1444	storefront component salla-filters
 CM-SFR-013	salla	core	SA-C-091/boundary/SA-S-1523	storefront component salla-search
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2035	Plus plan line حماية محتوى المتجر under store design (tsmym-almtgr)
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3363	released flag content-copyright, Plus, Pro and Special
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3349	flag remove-salla-copyright, not released
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3381	released flag theme-versions-management
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3384	released flag theme-version-screenshot, Pro and Special
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3380	flag theme-advanced-activation, not released
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3157	flag theme-preview, not released
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2153	Pro plan line: change the storefront's design with CSS code
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2199	Special plan line: full customization of the store without code
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-3159	released flag component-advanced-visibility
+CM-SFR-002	salla	shows	SA-C-090/decides/SA-S-3374	flag canvas-mode, not released
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1120	Twilight theme docs folder Layouts
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1121	Twilight theme docs folder Hooks
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1122	Twilight theme docs folder Pages
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1128	Twilight theme docs folder Components
+CM-SFR-002	salla	core	SA-C-091/where/SA-S-1162	docs folder Twilight SDK, beside Twilight Engine under one parent
+CM-SFR-002	salla	core	SA-C-091/where/SA-S-1163	docs folder Web Components, beside Twilight Engine under one parent
+CM-SFR-002	salla	core	SA-C-091/boundary/SA-S-1139	Twilight SDK folder Cart
+CM-SFR-002	salla	core	SA-C-091/boundary/SA-S-1499	storefront web component salla-product-card
+CM-SFR-002	shopify	core	SH-I-0063	Ajax API among Shopify's theme resources (SH-C-029)
+CM-SFR-003	salla	extension-point	SA-C-208/where/SA-S-1928	Partners portal link Theme Purchases
+CM-SFR-003	salla	extension-point	SA-C-208/where/SA-S-1929	Partners portal link Theme Subscriptions Trials
+CM-SFR-003	salla	extension-point	SA-C-208/responsible/SA-S-0039	Salla an intermediary for hosting, publishing and managing themes
+CM-SFR-003	salla	core	SA-C-208/reason/SA-S-5105	every theme reviewed by Salla's team before publication
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0040	Salla takes a commission for hosting and support
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0041	developers paid after the warranty period
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0042	developers' dues may be frozen
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-5107	developer sets the theme's price, with a minimum
+CM-SFR-003	salla	shows	SA-C-208/reason/SA-S-5106	reason for the theme price policy
+CM-SFR-003	salla	core	SA-C-090/decides/SA-S-3383	released flag theme-trial-versions, every plan
+CM-SFR-003	salla	shows	SA-C-090/decides/SA-S-3424	flag ready-store-theme-purchase, not released
+CM-SFR-005	salla	extension-point	SA-C-091/reason/SA-S-5033	components submitted for publishing in Salla Themes Marketplace
+CM-SFR-005	salla	shows	SA-C-091/boundary/SA-S-1155	Twilight SDK folder Component Bundle
+CM-SFR-007	salla	shows	SA-C-091/boundary/SA-S-1407	storefront web component salla-advertisement; readme empty
+CM-SFR-008	salla	shows	SA-C-301/where/SA-S-5116	Partners portal section Domains Management
+CM-SFR-008	salla	shows	SA-C-301/decides/SA-S-5117	Partners portal feature domain-purchase, permission manage-domains
+CM-SFR-008	salla	shows	SA-C-301/boundary/SA-S-5118	Partners portal request partner-reports domains stats
+CM-SFR-011	shopify	core	SH-I-0069	API resource Storefront Web Components (SH-C-139)
