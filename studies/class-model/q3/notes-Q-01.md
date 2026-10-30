@@ -1,8 +1,8 @@
 # Q3's check, batch Q-01: notes
 
-Rows: km:ACC-01 to ACC-05, km:STF-01 to STF-07, km:ONB-01 to ONB-04 (16), placed on the merged model at 513aebd8. They follow the brief as revised at 7f6d2060 and c8d6ef9e. `q3.py check --batch Q-01` prints `16 of 16 rows placed; 0 problems`.
+Rows: km:ACC-01 to ACC-05, km:STF-01 to STF-07, km:ONB-01 to ONB-04 (16), placed on the merged model at 513aebd8. They follow the brief as revised at 7f6d2060, c8d6ef9e and 68fc7eaf. `q3.py check --batch Q-01` prints `16 of 16 rows placed; 0 problems`.
 
-**Results.** 15 covered, 1 beyond the class (STF-07, `engineering:build`), and no candidate miss. Every covered row has detail beyond the cells, named under `what_would_settle_it` as `detail:`.
+**Results.** 15 covered, 1 beyond the class (STF-07, `engineering:build`), and no candidate miss. Besides the model, subjects answer ACC-04 (S-02, S-04, S-07) and ONB-03 (S-08), and the founder answers ACC-05 and STF-05. Every covered row has detail beyond the cells, named under `what_would_settle_it` as `detail:`.
 
 **Time bombs.**
 - ACC-04: `wrong time`. Its `needed_by` is `slice`, read as at the area's build, while its subjects (S-02, S-04, S-07) answer before build.
@@ -47,5 +47,5 @@ None. Before settling each doubtful thing, I ran `search` in English, and in Ara
 ## Problems for the coordinator
 
 1. **Problems 1 to 9 of the first pass are taken in at c8d6ef9e.** They were engineering's time in the checker, the "asks both" rule, `slice` against `later`, rulings in force, `key` with bare ids, a cell printed whole, and a subject without a register.
-2. **The revised rule leaves this batch's market and founder sides unasked by any row.** These are: which declarations each market requires (S-07, for ACC-04), how long a closed store's data is kept (S-08, for ONB-03), and how many staff a plan allows (plans and prices, for STF-05). This is right by the rows' words, but Q3 will then not show these subjects as asked by the Knowledge Map's questions on accounts and onboarding. If the coordinator wants them visible, it would take a rule for rows whose class answer implies a market's or the founder's setting.
+2. **The unasked subjects and founder decisions of the second pass are taken in at 68fc7eaf.** One open point remains. The test "the row's thing is one they hold" leaves room for judgment where a row only touches a founder's thing, as ACC-05's billing and ACC-02's trial do. Batches may differ there unless the brief says how much of a row's thing must be theirs.
 3. **STF-02 is framed for two vocabularies** ("the two"), while the model holds five platforms. No time-bomb type fits this, so it is only noted under the row.
