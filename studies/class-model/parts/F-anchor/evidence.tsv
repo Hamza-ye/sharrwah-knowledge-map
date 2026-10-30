@@ -15,7 +15,7 @@ CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0217	developers must tell mer
 CM-APP-001	salla	core	SA-C-194/where/SA-S-1883	the dashboard link My apps, /apps/installed
 CM-APP-001	salla	core	SA-C-194/where/SA-S-1702	the link Installed apps
 CM-APP-001	salla	core	SA-C-194/where/SA-S-3541	the dashboard app @salla.sa/ui-merchant-apps at /apps
-CM-APP-001	salla	core	SA-C-194/decides/SA-S-2629	the staff permission marketplace_apps_management, named التطبيقات المثبتة
+CM-APP-001	salla	shows	SA-C-194/decides/SA-S-2629	a permission a partner can request on a merchant's store, marketplace_apps_management (the statement's note); by the dry run's S7, shows (the coordinator, 30 October)
 CM-APP-001	salla	extension-point	SA-C-194/responsible/SA-S-0037	Salla provides only the technical infrastructure that hosts partners' apps or services
 CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0024	developer and merchant each answer for their use of apps; Salla for none
 CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0033	the partner answers to merchants and regulators for the content
@@ -133,3 +133,95 @@ CM-APP-009	shopify	core	SH-I-0995	the staff permission App development > Enable 
 CM-APP-009	shopify	core	SH-C-167/decides/SH-S-7054	plan line Build custom apps using Shopify APIs, limited data access on Basic
 CM-APP-009	shopify	shows	SH-C-157/decides/SH-S-0693	building for a specific merchant, a developer typically uses custom distribution
 CM-APP-009	shopify	shows	SH-C-167/responsible/SH-S-7477	the developer of an unsupported app is responsible for updating it
+CM-APP-004	shopify	core	SH-C-158/boundary/SH-S-1152	the webhook topic app/scopes_update, on an app's granted scopes changing
+CM-APP-010	salla	core	SA-C-199/where/SA-S-1076	the App API's folder Settings
+CM-APP-010	salla	core	SA-I-0170	the extension point App API, which holds the Settings folder
+CM-APP-010	salla	core	SA-C-193/boundary/SA-S-1656	the app event app.settings.updated
+CM-APP-010	salla	extension-point	SA-C-199/decides/SA-S-0210	App Settings are parameters custom-made by the app's developer
+CM-API-001	shopify	core	SH-I-0044	the API resource GraphQL Admin API
+CM-API-001	shopify	core	SH-I-0050	the API resource REST Admin API (legacy)
+CM-API-001	shopify	core	SH-I-0052	the API resource API usage
+CM-API-001	shopify	core	SH-I-0034	the API resource Global IDs, a convention of the API
+CM-API-001	shopify	core	SH-I-0032	the API resource GraphQL pagination, a convention of the API
+CM-API-001	shopify	shows	SH-C-171/responsible/SH-S-0221	the developer owns its app, Shopify the platform, and limits the use of merchant data it lets apps access
+CM-API-001	salla	core	SA-I-0157	the extension point Merchant API
+CM-API-002	shopify	core	SH-I-0030	the API resource API authentication
+CM-API-002	salla	core	SA-C-190/where/SA-S-1159	the developer docs' navigation link Salla OAuth 2.0
+CM-API-002	salla	core	SA-C-190/boundary/SA-S-1013	the API docs page Authorization
+CM-API-002	salla	core	SA-C-190/boundary/SA-S-0176	Salla supports OAuth 2.0 as the primary method for authorization and authentication
+CM-API-002	salla	core	SA-C-190/decides/SA-S-0185	merchants are asked to authorize the service provider to access only specific portions of their account
+CM-API-002	salla	shows	SA-C-190/reason/SA-S-0186	OAuth lets third-party applications access APIs without users sharing their passwords (a reason)
+CM-API-003	shopify	core	SH-C-158/where/SH-S-0795	the API docs entry Access scopes
+CM-API-003	shopify	core	SH-I-0031	the API resource Access scopes
+CM-API-003	shopify	core	SH-C-158/decides/SH-S-0757	Shopify grants access scopes only to public or custom apps
+CM-API-003	shopify	core	SH-C-158/decides/SH-S-0754	Shopify restricts scopes for apps without a legitimate use for the data
+CM-API-003	shopify	shows	SH-C-158/decides/SH-S-0755	merchants approve the scopes when they install the app
+CM-API-003	shopify	core	SH-C-158/boundary/SH-S-5914	a field of the API that requires the customer_read_customers scope
+CM-API-003	shopify	shows	SH-C-158/decides/SH-S-6183	a mutation requires the write_customers scope and the user's permission to create and edit customers
+CM-API-003	shopify	core	SH-C-159/decides/SH-S-0756	the scope type Shopify approval required: Shopify approves the app before it declares the scope
+CM-API-003	shopify	core	SH-C-159/where/SH-S-7248	scopes needing approval are requested in the Partner Dashboard, some through Shopify Support
+CM-API-003	shopify	core	SH-C-159/boundary/SH-S-1114	the approval-required scope read_all_orders
+CM-API-003	shopify	shows	SH-C-158/responsible/SH-S-0220	the developer uses merchant data only to provide the application's services, within the merchant's limits
+CM-API-003	salla	core	SA-C-191/where/SA-S-5090	App Scopes Setup in the Partners Portal: the developer checks the scopes and clicks Update Scope
+CM-API-003	salla	core	SA-C-191/decides/SA-S-0185	merchants authorize the app to access only specific portions of their account
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1546	the scope customers, with read and read_write
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1547	the scope orders, with read and read_write
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1552	the scope products, with read and read_write
+CM-API-003	salla	shows	SA-C-191/reason/SA-S-5091	the merchant grants the app permission within a specific scope, so the store's data stays safe and private (a reason)
+CM-API-004	shopify	core	SH-C-160/where/SH-S-7249	public apps request protected customer data and fields through the Partner Dashboard
+CM-API-004	shopify	core	SH-C-160/decides/SH-S-0694	Shopify approves an app's use of protected customer data if it is the minimum the app needs
+CM-API-004	shopify	core	SH-C-160/boundary/SH-S-5904	a query requiring Level 2 access to customer data: name, address, phone and email
+CM-API-004	shopify	core	SH-C-160/boundary/SH-S-7470	the customer's email requires the read_customer_email scope, under protected customer data
+CM-API-004	shopify	core	SH-I-2428	the access-scopes entry Protected customer data permissions
+CM-API-004	shopify	shows	SH-C-160/responsible/SH-S-0218	the developer presents the merchant a privacy policy that complies with privacy laws
+CM-API-004	shopify	shows	SH-C-160/responsible/SH-S-0695	partners are bound by the Partner Program Agreement and the API License and Terms of Use
+CM-API-005	shopify	core	SH-I-0036	the API resource Limits
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-0689	each app has a bucket whose size the API and the plan set
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-0688	Shopify may temporarily reduce API rate limits
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-7055	the plan line API rate limits, by plan
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-7075	the plan line Up to 500% higher API call limits, on Plus
+CM-API-005	shopify	shows	SH-C-171/reason/SH-S-0687	rate limits keep the platform stable and fair (a reason)
+CM-API-005	salla	core	SA-C-201/boundary/SA-S-1001	the API docs page Rate Limiting
+CM-API-005	salla	core	SA-C-201/decides/SA-S-0171	rate limits vary with the store's plan
+CM-API-005	salla	core	SA-C-201/decides/SA-S-0173	exceeding the limits may bring temporary access restrictions
+CM-API-005	salla	shows	SA-C-201/reason/SA-S-0172	all APIs are rate-limited so Salla stays stable and fair (a reason)
+CM-API-006	shopify	core	SH-C-171/where/SH-S-0793	the API docs entry Versioning
+CM-API-006	shopify	core	SH-I-0029	the API resource Versioning
+CM-API-006	shopify	core	SH-C-171/decides/SH-S-0690	Shopify releases API versions quarterly and retires older ones
+CM-API-006	shopify	core	SH-I-0151	the API resource publicApiVersions
+CM-API-006	shopify	shows	SH-C-171/decides/SH-S-0691	unversioned APIs and surfaces may change at any time
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-1002	the API docs page Versioning
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-0208	Salla implemented URI versioning
+CM-API-006	salla	core	SA-C-202/decides/SA-S-0207	APIs are versioned up only on a breaking change
+CM-API-006	salla	core	SA-C-202/where/SA-S-1167	the developer docs' navigation link Change Log
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-1014	the API docs page Change Log
+CM-API-007	shopify	core	SH-C-171/where/SH-S-0770	the API docs entry Bulk operations
+CM-API-007	shopify	core	SH-I-0006	the API resource Bulk operations
+CM-API-007	shopify	core	SH-C-171/boundary/SH-S-1158	the webhook topic bulk_operations/finish
+CM-API-008	shopify	core	SH-C-162/where/SH-S-0791	the API docs entry Webhooks
+CM-API-008	shopify	core	SH-I-0027	the API resource Webhooks
+CM-API-008	shopify	core	SH-C-162/boundary/SH-S-0685	an app subscribes to Shopify webhook topics to receive near-real-time data on a shop's events
+CM-API-008	shopify	core	SH-C-162/boundary/SH-S-0686	HMAC signatures and the delivery id X-Shopify-Webhook-Id
+CM-API-008	shopify	shows	SH-C-162/responsible/SH-S-7281	the developer is solely responsible for its application, Shopify not liable
+CM-API-008	salla	core	SA-C-192/boundary/SA-S-1008	the API docs page Webhooks
+CM-API-008	salla	core	SA-C-192/where/SA-S-1068	the Merchant API's folder Webhooks
+CM-API-008	salla	core	SA-C-192/boundary/SA-S-1553	the app scope webhooks
+CM-API-008	salla	core	SA-C-192/reason/SA-S-5092	Salla sends an event's headers and details to the app with a token or signature verifying it is from Salla
+CM-API-008	salla	core	SA-C-192/where/SA-S-1941	Salla's navigation link Webhooks Log at /logs
+CM-API-009	shopify	core	SH-C-162/where/SH-S-7142	the admin route Webhooks under Settings > Notifications
+CM-API-009	shopify	core	SH-C-162/decides/SH-S-5131	the notification settings route, open to the staff permission PREFERENCES
+CM-API-009	shopify	shows	SH-C-158/boundary/SH-S-6111	some topics only an app can subscribe to: they don't appear in a store's notification settings
+CM-API-009	salla	core	SA-C-192/where/SA-S-1886	the dashboard link Developer tools at /manage/webhooks
+CM-API-009	salla	core	SA-C-192/where/SA-S-3533	the dashboard app @salla.sa/ui-merchant-manage, whose path holds manage/webhooks
+CM-API-009	salla	core	SA-C-192/decides/SA-S-2124	the plan line إرسال الإخطارات لخدمات أخرى عبر Webhooks, on سلة برو
+CM-API-009	salla	core	SA-C-192/decides/SA-S-2408	the staff permission webhook_management
+CM-API-009	salla	core	SA-C-192/decides/SA-S-3078	the released feature flag webhooks, for the plans pro and special
+CM-API-009	salla	shows	SA-C-192/decides/SA-S-2625	a partner can request webhook_management on a merchant's store
+CM-API-010	salla	core	SA-C-192/boundary/SA-S-1009	the API docs page Conditional Webhooks
+CM-API-011	shopify	core	SH-C-161/where/SH-S-7256	an app subscribes to the compliance webhook topics in its shopify.app.toml
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1197	the webhook topic customers/data_request
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1203	the webhook topic customers/redact
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1356	the webhook topic shop/redact
+CM-API-011	shopify	core	SH-C-161/decides/SH-S-0697	any app distributed through the App Store must respond to data subject requests
+CM-API-011	shopify	shows	SH-C-161/decides/SH-S-0696	public apps give the same privacy rights for all personal data, wherever the person is
+CM-API-011	shopify	shows	SH-C-161/responsible/SH-S-0219	the developer deletes merchant data within 30 days of the merchant uninstalling the app
