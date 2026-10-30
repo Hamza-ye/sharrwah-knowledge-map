@@ -27,6 +27,12 @@ Commands:
                                                landed concerns, and each platform's cell (held, terms, the placements
                                                its evidence supports)
   homonyms                                     Q1's list of the same word naming different things
+  candidates --domain D --platform P [--all] [--top N] [--width N]
+                                               for each capability of the domain's model that has no cell for P (or
+                                               every one, with --all): P's statements that hold the terms the other
+                                               platforms' cells use for it, and their searched terms, ranked by how many
+                                               terms each holds, the domain's own concerns first. Leads to read, not
+                                               evidence: a cell still cites only what its statements show
   uncited   --domain D [--platform P] [--width N]
                                                the statements of the domain's concerns that no evidence row of its parts
                                                cites, by concern
@@ -242,6 +248,39 @@ def cmd_homonyms(a):
     print("\n".join(out).rstrip())
 
 
+def cmd_candidates(a):
+    caps, cells = {}, {}
+    for d in part_dirs(a.domain):
+        for r in rows(os.path.join(d, "capabilities.tsv")):
+            caps[r["cap_id"]] = r
+        for r in rows(os.path.join(d, "cells.tsv")):
+            cells.setdefault(r["cap_id"], {})[r["platform"]] = r
+    dom = {r["concern_id"]: r for r in scope_rows()}
+    st = statements(a.platform)
+    hay = [(r, fold(r["identifier"] + " " + r["statement"])) for r in st]
+    for cid in sorted(caps):
+        have = cells.get(cid, {})
+        if a.platform in have and not a.all:
+            continue
+        terms = set()
+        for p, r in have.items():
+            if p == a.platform:
+                continue
+            terms |= {t.strip() for t in (r["terms"] + ";" + r["searched"]).split(";") if len(t.strip()) > 2}
+        folded = {fold(t): t for t in terms}
+        scored = []
+        for r, h in hay:
+            hit = [t for f, t in folded.items() if f in h]
+            if hit:
+                d = dom.get(r["concern_id"], {})
+                mine = d.get("domain") == a.domain or a.domain in ids(d.get("also", ""))
+                scored.append((-len(hit), 0 if mine else 1, key(r), r, hit, d.get("domain", "?")))
+        scored.sort(key=lambda x: (x[0], x[1], x[2]))
+        print(f"## {cid}\t{caps[cid]['capability']}\n   terms: {'; '.join(sorted(terms)) or '(none)'}\n   {len(scored)} statements hold a term")
+        for neg, _, k, r, hit, d in scored[:a.top]:
+            print(f"   {k}\t[{d}] {clip(r['identifier'], 60)}\t{clip(r['statement'], a.width)}\t({'; '.join(hit[:4])})")
+
+
 def cmd_uncited(a):
     cited = set()
     for d in part_dirs(a.domain):
@@ -313,6 +352,8 @@ def main():
     s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
     s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
     sub.add_parser("homonyms")
+    s = sub.add_parser("candidates"); s.add_argument("--domain", required=True); s.add_argument("--platform", required=True, choices=PLATFORMS)
+    s.add_argument("--all", action="store_true"); s.add_argument("--top", type=int, default=10); s.add_argument("--width", type=int, default=120)
     s = sub.add_parser("uncited"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS); s.add_argument("--width", type=int, default=120)
     a = ap.parse_args()
     globals()["cmd_" + a.cmd](a)
