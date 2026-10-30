@@ -1,0 +1,2 @@
+cap_id	platform	quality	value	key	scope
+CM-CHK-007	bigcommerce	When a cart counts as abandoned	A cart is considered abandoned when no changes have been made for at least one hour after the last modified property.	BC-C-015/boundary/BC-S-0091	

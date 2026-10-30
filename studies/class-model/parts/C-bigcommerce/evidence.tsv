@@ -1,0 +1,42 @@
+cap_id	platform	supports	key	why
+CM-CHK-001	bigcommerce	core	BC-C-016/where/BC-S-0092	its own Checkouts API, BigCommerce checkout logic
+CM-CHK-001	bigcommerce	core	BC-C-016/where/BC-S-0093	its own Storefront Checkouts API
+CM-CHK-001	bigcommerce	core	BC-C-016/where/BC-S-0094	control panel page Settings > Checkout
+CM-CHK-001	bigcommerce	core	BC-C-016/decides/BC-S-0095	plan line Single-page checkout
+CM-CHK-001	bigcommerce	core	BC-C-016/boundary/BC-S-0097	access scope store_checkout, view and modify a checkout
+CM-CHK-001	bigcommerce	core	BC-C-016/boundary/BC-S-0099	webhook topic checkout settings updated per channel
+CM-CHK-001	bigcommerce	core	BC-I-0497	product line Optimized checkout
+CM-CHK-001	bigcommerce	extension-point	BC-I-0481	App Marketplace category Checkout
+CM-CHK-002	bigcommerce	core	BC-C-014/where/BC-S-0082	its own Carts API, BigCommerce cart logic
+CM-CHK-002	bigcommerce	core	BC-C-014/where/BC-S-0083	its own Storefront Carts API
+CM-CHK-010	bigcommerce	core	BC-C-014/decides/BC-S-0084	plan line Persistent cart (the coordinator, after batch 1)
+CM-CHK-002	bigcommerce	core	BC-C-014/boundary/BC-S-0085	access scope store_cart
+CM-CHK-002	bigcommerce	core	BC-C-014/boundary/BC-S-0086	webhook topic store/cart/created
+CM-CHK-003	bigcommerce	core	BC-C-016/where/BC-S-0094	Custom Checkout under Settings > Checkout
+CM-CHK-003	bigcommerce	core	BC-C-016/boundary/BC-S-0098	access scope store_content_checkout, content on checkout pages
+CM-CHK-003	bigcommerce	core	BC-I-0498	product line Checkout customization
+CM-CHK-003	bigcommerce	shows	BC-C-016/responsible/BC-S-0096	merchant solely liable for PCI on checkout modifications
+CM-CHK-003	bigcommerce	shows	BC-C-017/reason/BC-S-0102	custom checkouts not recommended, may be incompatible with extensions
+CM-CHK-004	bigcommerce	extension-point	BC-C-017/where/BC-S-0100	Beta Checkout Extensions > Extensions, Create Extension
+CM-CHK-004	bigcommerce	extension-point	BC-I-0113	API resource Beta Checkout Extensions
+CM-CHK-004	bigcommerce	extension-point	BC-C-017/boundary/BC-S-0101	partner Route's checkout extension extends the shipping step
+CM-CHK-004	bigcommerce	shows	BC-C-017/decides/BC-S-0077	closed beta, not available by default
+CM-CHK-004	bigcommerce	shows	BC-C-017/reason/BC-S-0102	custom checkouts may be incompatible with extensions
+CM-CHK-007	bigcommerce	core	BC-C-015/boundary/BC-S-0091	webhook topic store/cart/abandoned and its definition
+CM-CHK-007	bigcommerce	core	BC-I-0033	its own API group Abandoned carts
+CM-CHK-008	bigcommerce	core	BC-C-027/where/BC-S-0161	product line Digital wallets with accelerated checkout options
+CM-ORD-001	bigcommerce	core	BC-C-018/where/BC-S-0105	product line Order management, orders from every channel
+CM-ORD-001	bigcommerce	core	BC-C-018/where/BC-S-0103	its own Orders V2 API
+CM-ORD-001	bigcommerce	core	BC-C-018/where/BC-S-0104	its own Order Operations API, order settings
+CM-ORD-001	bigcommerce	core	BC-I-0011	its own API group Storefront Orders
+CM-ORD-001	bigcommerce	core	BC-C-018/boundary/BC-S-0106	access scope store_v2_orders
+CM-ORD-001	bigcommerce	core	BC-C-018/boundary/BC-S-0107	webhook topic store/order/created
+CM-ORD-001	bigcommerce	core	BC-I-0166	webhook topic store/order/archived
+CM-ORD-001	bigcommerce	extension-point	BC-I-0480	App Marketplace category Catalog & Order Management
+CM-ORD-002	bigcommerce	core	BC-C-018/where/BC-S-0103	Orders V2 manages an order's products and shipping addresses
+CM-ORD-002	bigcommerce	core	BC-C-018/boundary/BC-S-0106	scope store_v2_orders, view and modify orders
+CM-ORD-003	bigcommerce	core	BC-C-018/boundary/BC-S-0108	webhook topic store/order/statusUpdated
+CM-ORD-003	bigcommerce	core	BC-C-018/where/BC-S-0103	Orders V2 manages an order's statuses
+CM-ORD-005	bigcommerce	core	BC-C-018/boundary/BC-S-0107	an order created using the control panel
+CM-ORD-013	bigcommerce	core	BC-C-018/where/BC-S-0103	Orders V2 manages an order's messages
+CM-ORD-013	bigcommerce	core	BC-I-0168	webhook topic store/order/message/created

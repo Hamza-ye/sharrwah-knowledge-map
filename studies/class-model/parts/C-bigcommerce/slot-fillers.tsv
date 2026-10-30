@@ -1,0 +1,9 @@
+cap_id	platform	filler	key
+CM-CHK-004	bigcommerce	Route	BC-C-017/boundary/BC-S-0101
+CM-CHK-008	bigcommerce	PayPal	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	Venmo	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	Apple Pay	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	Google Pay	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	PayPal Pay Later	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	Klarna	BC-C-027/where/BC-S-0161
+CM-CHK-008	bigcommerce	Afterpay	BC-C-027/where/BC-S-0161

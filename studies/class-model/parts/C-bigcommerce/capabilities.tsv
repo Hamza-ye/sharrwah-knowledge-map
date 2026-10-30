@@ -1,0 +1,2 @@
+cap_id	area	capability	parent	note
+CM-CHK-010	CHK	Persistent cart: the buyer's cart saved to their account, so it is still there when they switch devices (BigCommerce Persistent cart)	CM-CHK-002	BigCommerce gives it a plan line of its own (BC-S-0084), the dry run's test for a capability: a plan line is a place of its own. The other platforms' cells come from the back-fill after BigCommerce (the coordinator, after batch 1).

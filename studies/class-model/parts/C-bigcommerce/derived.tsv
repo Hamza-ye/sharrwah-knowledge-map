@@ -1,0 +1,26 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHK-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/management/checkouts | /developer/api-reference/rest/storefront/checkouts | Settings > Checkout	BC-C-016/decides/BC-S-0095=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-016/reason:searched, not found;BC-C-059/reason:searched, not found	general
+CM-CHK-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/carts | /developer/api-reference/rest/storefront/carts		BC-C-014/responsible:stated only in general terms;BC-C-014/reason:searched, not found	general
+CM-CHK-003	bigcommerce	statements	core	Settings > Checkout		BC-C-016/reason:searched, not found;BC-C-017/responsible:stated only in general terms	general
+CM-CHK-004	bigcommerce	statements	extension-point	Beta Checkout Extensions > Extensions	BC-C-017/decides/BC-S-0077=Checkout Extensions (closed beta)	BC-C-017/responsible:stated only in general terms	
+CM-CHK-005	bigcommerce	none-held					
+CM-CHK-006	bigcommerce	none-held					
+CM-CHK-007	bigcommerce	statements	core			BC-C-015/responsible:stated only in general terms;BC-C-015/reason:searched, not found	general
+CM-CHK-008	bigcommerce	statements	core	Digital wallets		BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	general
+CM-CHK-009	bigcommerce	none-held					
+CM-CHK-010	bigcommerce	statements	core		BC-C-014/decides/BC-S-0084=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-014/responsible:stated only in general terms;BC-C-014/reason:searched, not found	plans Core, Growth, Scale, Performance (columns of the plan comparison table)
+CM-ORD-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/management/order-operations | /developer/api-reference/rest/admin/management/orders | Order management		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found;BC-C-059/reason:searched, not found	general
+CM-ORD-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/orders		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
+CM-ORD-003	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/orders		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
+CM-ORD-004	bigcommerce	none-held					
+CM-ORD-005	bigcommerce	statements	core			BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
+CM-ORD-006	bigcommerce	none-held					
+CM-ORD-007	bigcommerce	none-held					
+CM-ORD-008	bigcommerce	none-held					
+CM-ORD-009	bigcommerce	none-held					
+CM-ORD-010	bigcommerce	none-held					
+CM-ORD-011	bigcommerce	none-held					
+CM-ORD-012	bigcommerce	none-held					
+CM-ORD-013	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/orders		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
+CM-ORD-014	bigcommerce	none-held					
+CM-ORD-015	bigcommerce	none-held					
