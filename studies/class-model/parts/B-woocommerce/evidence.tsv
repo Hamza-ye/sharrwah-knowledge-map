@@ -76,3 +76,4 @@ CM-INV-001	woocommerce	core	WC-C-068/boundary/WC-S-0241	wc-analytics reports/sto
 CM-INV-004	woocommerce	core	WC-C-068/boundary/WC-S-0219	wc-analytics ProductsLowInStock: its own API for products low in stock
 CM-INV-008	woocommerce	core	WC-C-068/decides/WC-S-5401	hold stock for unpaid orders for x minutes, then cancel the pending order; blank disables
 CM-INV-008	woocommerce	core	WC-C-068/decides/WC-S-5402	the hold-stock setting's default, 60
+CM-CAT-013	woocommerce	extension-point	WC-C-104/where/WC-S-0735	Marketplace category Extensions > Merchandising > Pricing (S8)

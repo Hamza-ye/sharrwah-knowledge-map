@@ -1,1 +1,12 @@
 cap_id	platform	supports	key	why
+CM-CAT-012	shopify	core	SH-I-0902	staff permission Products > View cost, placed in SH-C-020 (C2)
+CM-CAT-012	shopify	core	SH-I-0904	staff permission Products > Edit cost, placed in SH-C-020 (C2)
+CM-CAT-012	shopify	core	SH-I-1057	staff permission EDIT_PRODUCT_COST, placed in SH-C-020 (C2)
+CM-CAT-012	shopify	core	SH-I-1129	staff permission VIEW_PRODUCT_COSTS, placed in SH-C-020 (C2)
+CM-CAT-013	shopify	extension-point	SH-I-1894	App Store category Pricing apps, placed in SH-C-020 (C2, S8)
+CM-CAT-013	shopify	extension-point	SH-I-1895	App Store category Pricing optimization apps, placed in SH-C-020 (C2, S8)
+CM-CAT-013	shopify	extension-point	SH-I-1896	App Store category Pricing - Other, placed in SH-C-020 (C2, S8)
+CM-CAT-013	shopify	extension-point	SH-I-1897	App Store category Pricing quote apps, placed in SH-C-020 (C2, S8)
+CM-CAT-013	salla	core	SA-C-020/where/SA-S-1751	setting Automatic pricing, under products settings (S8)
+CM-CAT-013	salla	core	SA-C-020/boundary/SA-S-1599	Salla's own API for its own feature (C1): webhook product.price.updated (تم تحديث سعر المنتج) (S8)
+CM-CAT-013	salla	shows	SA-C-020/decides/SA-S-3515	feature metal-pricing, plans plus, pro, special, not released: Salla names the feature (C6, S8)
