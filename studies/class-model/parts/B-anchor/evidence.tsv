@@ -166,6 +166,7 @@ CM-INV-001	shopify	core	SH-C-022/decides/SH-S-7009	plan row Inventory management
 CM-INV-001	shopify	core	SH-C-022/boundary/SH-S-6004	Shopify's own API for its own feature (C1): webhook topic inventory_levels/update
 CM-INV-001	shopify	core	SH-C-022/decides/SH-S-6213	Shopify's own API for its own feature (C1): inventoryAdjustQuantities: a permission to apply changes to inventory quantities
 CM-INV-001	shopify	core	SH-C-022/boundary/SH-S-0997	Shopify's own API for its own feature (C1): access scope write_inventory
+CM-INV-001	shopify	core	SH-C-023/decides/SH-S-5334	entitlement inventory: enabled, counts, purchaseOrders, transferLocation, as SH-C-023's statement (S2)
 CM-INV-001	salla	core	SA-C-025/where/SA-S-1688	settings menu link Inventory (/inventory)
 CM-INV-001	salla	core	SA-C-025/where/SA-S-1797	link Inventory management (/products/quantities/bulk)
 CM-INV-001	salla	core	SA-C-025/where/SA-S-1803	link Inventory audit (/products/quantities)

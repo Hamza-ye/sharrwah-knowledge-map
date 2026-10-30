@@ -46,7 +46,7 @@ fillers, 6 rulings on 5 candidates. `python3 -I method/check_class_part.py studi
   are cited in children: the hold-stock setting in CM-INV-008 (new) and the products-low-in-stock API in CM-INV-004.
 - **WC-C-093 (cost of goods sold) makes CM-CAT-012, a child of CM-CAT-001.** The cost is kept on the product: a field
   of the product editor (WC-S-5446) and a property of the REST product schema (WC-S-5447). The anchor made no cost
-  capability (U-070: no Shopify statement on product cost).
+  capability (U-070: no Shopify statement on product cost). *Superseded after the dry run's review: the back-fill's Shopify cell cites Shopify's staff permissions for a product's cost, inventory entries Q1 placed in SH-C-020 (C2; see the corrections at the end).*
 - **WC-C-100 (subscriptions) lands in CM-SEL-001 by M-074, clean;** **WC-C-101 (bookings and appointments) in
   CM-SEL-004 by M-081, clean,** beside Salla's SA-C-031, which the anchor landed `single` for this part to join.
 - **WC-C-102 (memberships) makes CM-SEL-008,** a root of SEL. Its one statement is a category name (WC-S-0728); nothing
@@ -92,9 +92,11 @@ fillers, 6 rulings on 5 candidates. `python3 -I method/check_class_part.py studi
 
 ## Rulings
 
+*Superseded in part (S16): the rulings below are as this part first wrote them. The coordinator's correction of 30 October and the corrections after the dry run's review (both at the end) replace them, and `rulings.tsv` holds the rulings in force: one row per pair of concerns.*
+
 - **U-002 `joined:CM-CAT-003`:** WC-C-064 lands in the parent, CM-CAT-001; WooCommerce's categories are cited in
   CM-CAT-003 with Salla's categories (the term) and Shopify's collections (the anchor's join on role).
-- **U-005 `joined:CM-CAT-001`:** WC-C-064 and SA-C-020 are both products concerns in CM-CAT-001 by M-011. The join the
+- *Superseded by the coordinator's correction of 30 October (below): U-005 is `apart`.* **U-005 `joined:CM-CAT-001`:** WC-C-064 and SA-C-020 are both products concerns in CM-CAT-001 by M-011. The join the
   candidate asks about, of custom fields with metafields, is not made: product custom fields (WC-S-0675) are left to
   domain E, as the anchor left Salla's plan line (SA-S-2134). The brief defines `joined` as a concern landing with
   another of the candidate's, so the ruling can't be `apart` while M-011 holds them together; the checker agrees.
@@ -103,7 +105,7 @@ fillers, 6 rulings on 5 candidates. `python3 -I method/check_class_part.py studi
 - **U-061, two rows, one per WooCommerce concern it holds:** `joined:CM-SEL-002` for WC-C-066 (with SH-C-190 and
   SA-C-024, on role) and `joined:CM-SEL-004` for WC-C-101 (with SA-C-031, by M-081). The brief has WooCommerce rule
   for "that concern", so I wrote one row per concern; the checker accepts both (my judgment on the form).
-- **U-070 `joined:CM-CAT-012`, by grain:** WC-C-093 lands in a child of CM-CAT-001, where SH-C-020 lands. It is not a
+- *Superseded by the coordinator's correction of 30 October (below), and again after the dry run's review: U-070 is `nested:CM-CAT-012` for WC-C-093 against SH-C-020 and `apart` against SA-C-220.* **U-070 `joined:CM-CAT-012`, by grain:** WC-C-093 lands in a child of CM-CAT-001, where SH-C-020 lands. It is not a
   join by any Shopify statement on cost, of which none is held; the back-fill searches Shopify's cell. Making
   CM-CAT-012 a root would let the ruling be `apart`, but the cost is kept on the product, so it is a child (my
   judgment).
@@ -241,14 +243,14 @@ Nothing the checker flagged is left unanswered.
 
 ## Problems with the brief or the evidence
 
-- **The two rulings change the method between parts.** Under the ruling on APIs, WooCommerce's API rows are `core`
+- *Since answered: the dry run's rulings re-read the anchor's API rows as `core` (C1; B-anchor's notes).* **The two rulings change the method between parts.** Under the ruling on APIs, WooCommerce's API rows are `core`
   where the anchor's are `shows`. Today this changes only CM-INV-004's placement, but a count that compares platforms by
   `core` should know that the anchor's cells were not read the same way. The coordinator may want the anchor's cells
   re-read, or the ruling noted beside the count.
-- **`joined` is forced by the model's trees.** For U-005 and U-070 the ruling must be `joined` because the candidate's
+- *Superseded by the coordinator's correction of 30 October (below): the corrected checker no longer forces `joined`.* **`joined` is forced by the model's trees.** For U-005 and U-070 the ruling must be `joined` because the candidate's
   concerns sit in one family (by M-011, and by a child of the products capability), though the specific join each
   candidate asks about (custom fields with metafields; COGS with Shopify's product cost) is not made. The bases say so.
-- **WC-C-061's also lacks B,** though its category Fulfillment and dropshipping is the only WooCommerce statement for
+- *Since answered: scope.tsv names B under also for WC-C-061 and WC-C-107 (69bce534), and the two cells' readings say so.* **WC-C-061's also lacks B,** though its category Fulfillment and dropshipping is the only WooCommerce statement for
   CM-CAT-010; likewise WC-C-107's lacks B for product images and media (CM-CAT-007).
 - **Statements held twice.** Several statements are held under both my concerns and others: the Downloads and Stock
   reports and their APIs (WC-C-066 and WC-C-068, and WC-C-038), the privacy exporter and eraser (WC-C-066 and WC-C-045),
@@ -259,13 +261,13 @@ Nothing the checker flagged is left unanswered.
 ## Where the brief left me to judge
 
 1. Making CM-INV-008 (hold stock) a capability, from a setting with no concern of its own.
-2. Not modelling WC-C-104's Pricing and Additional purchases; leaving Gifts, Order options and Product display to
+2. Not modelling WC-C-104's Pricing and Additional purchases (Pricing superseded: CM-CAT-013, S8); leaving Gifts, Order options and Product display to
    other domains.
 3. Landing WC-C-104 in CM-SEL-006 rather than CM-CAT-002 (strained either way).
 4. Reading attributes as WooCommerce's options in CM-CAT-002, informed by the release's code.
 5. Joining downloadable products with digital products on role.
 6. Holding CM-INV-004 on the products-low-in-stock API, as a reading.
-7. Making CM-CAT-012 a child of CM-CAT-001, which makes U-070 `joined` by grain.
+7. Making CM-CAT-012 a child of CM-CAT-001, which makes U-070 `joined` by grain (superseded: see the corrections at the end).
 8. Citing other domains' statements only where a cell would otherwise be none-held (CM-CAT-007, CM-CAT-010), and not in
    CM-INV-001.
 9. Reading webhook topics as WooCommerce's "code for its own feature", so `core` under the coordinator's ruling.
@@ -275,3 +277,22 @@ Nothing the checker flagged is left unanswered.
 ## The coordinator's corrections (30 October)
 
 The checker's ruling test was corrected after this part ran. Its old test read any capability under a common parent as landing together, so this part had to rule U-005 and U-070 `joined`. Its own bases say the joins they ask about aren't made: product custom fields with metafields, and cost of goods with a Shopify product cost, for which no Shopify statement is held. They now read `apart`, as the bases say.
+
+
+## Corrections after the dry run's review (30 October)
+
+The coordinator's rulings on the two reviews (`studies/class-model/review-dry-run-rulings.md`) are applied to this part's rows as follows. Each placement and ruling is a reading, as before.
+
+- **C1, the platform's own API.** No change here: this part already read WooCommerce's own APIs as `core` for its own features, and the extensions' APIs (Bookings, Product Bundles) as theirs, which is the ruling. CM-INV-004/woocommerce's flag "core rests only on boundary statements" is that ruling: ProductsLowInStock is WooCommerce Admin's own API, and no statement says apps use it.
+- **C2, placed inventory entries.** WC-C-093's landing reading now says that the back-fill's CM-CAT-012/shopify cell cites Shopify's staff permissions for a product's cost (SH-I-0902, SH-I-0904, SH-I-1057, SH-I-1129). The checker's search now reads inventory entries: its one new hit, WC-I-0504 on CM-SEL-003, is the inventory entry of the Crypto payments category already read in that cell (WC-S-0709), a way to pay.
+- **S4 and S5, rulings.** `rulings.tsv` is rewritten with one row per pair of concerns, WooCommerce's concern against one other, each holding only that pair's keys (14 rows): U-002 two rows (`joined:CM-CAT-003` against SA-C-022 and against SH-C-021); U-005 unchanged (`apart`); U-059 five rows (`joined:CM-SEL-006` against SH-C-188, `joined:CM-CAT-002` against SA-C-021 and against SH-C-189, as the review writes them; `apart` against SA-C-029 and SA-C-077); U-061 four rows (`joined:CM-SEL-002` for WC-C-066 against SA-C-024 and SH-C-190; `joined:CM-SEL-004` for WC-C-101 against SA-C-031 and against SH-C-190, whose Event booking apps, SH-I-1887, CM-SEL-004 now cites after C2); U-070 two rows.
+- **U-070, a ruling written at the concerns' grain.** For WC-C-093 against SH-C-020 the cells, read whole, join them in CM-CAT-012: WooCommerce's cell cites WC-C-093, and the back-fill's Shopify cell cites SH-C-020's cost permissions (C2). But the checker tests a mapping part's rulings only against the parts before it, so `joined:CM-CAT-012` prints a problem here (the back-fill's cell isn't read), and that problem would also fail the back-fill's check. The ruling is `nested:CM-CAT-012`, which holds at the concerns' grain: WC-C-093, the cost of goods, is a finer part of SH-C-020, products, which lands in CM-CAT-001, CM-CAT-012's parent; its keys include the cost permissions, so the merge sees both. Against SA-C-220 it is `apart` (scope.tsv gives SA-C-220 domain D). The checker's ruling test should read the back-fill named for this part (for the checker's next revision).
+- **S8, product pricing.** CM-CAT-013 (product pricing) is added to this part's `capabilities.tsv`, numbered past CM-CAT-012, the model's highest in CAT, as a child of CM-CAT-001 by Salla's admin grouping (its products settings). The statements that bear it out are Shopify's and Salla's (B-anchor's notes, S8). Here it holds WooCommerce's cell: `extension-point` on the Marketplace category Extensions > Merchandising > Pricing (WC-C-104/where/WC-S-0735), with no statement of what its extensions do. Shopify's and Salla's cells are the back-fill's. WC-C-104's landing reading now names CM-CAT-013 among the trees its statements are cited in; it was already `strained`. Where the brief left me to judge, item 2, is superseded for Pricing.
+- **S11 and S12, names.** CM-CAT-012 is renamed "Product cost: cost of goods sold (WooCommerce Cost of Goods Sold, _cogs_value; Shopify View cost, Edit cost)", with Shopify's terms now that its cell holds them (C2), and its note says so. The anchor's capabilities with a WooCommerce landing or cell (CM-SEL-002, CM-CAT-003, CM-INV-004) now name WooCommerce's terms (the anchor's notes). CM-INV-004/woocommerce's reading no longer says its fit to alerts rests on the API's name alone: the capability's name now holds lists of products low in stock.
+- **S16, stale notes and readings.** The passages that argue the old rulings (U-005 and U-070 `joined`, "`joined` is forced by the model's trees", item 7 of what the brief left me to judge) and the answered problems (WC-C-061's and WC-C-107's also; the two methods for APIs) are marked superseded where they stand. CM-CAT-007/woocommerce's and CM-CAT-010/woocommerce's readings now say that WC-C-107 and WC-C-061 name B under also, so their statements may support a placement here; the checker no longer flags them.
+
+**Not applied here, as the rulings leave them:** C5 (a gap for Q1: "Developed by Woo" is held only in statements' notes, so CM-SEL-006/woocommerce stays as it is); S6 (scope.tsv, the coordinator's: WC-C-064 now names E).
+
+**No ruling disagreed with the evidence.** U-070's ruling value departs from the plain reading of the cells for the checker's reason above, not the evidence's.
+
+**The checker after the corrections:** 0 problems, 7 flags: CM-INV-004's boundary flag (C1, above) and six none-held flags, each answered in its cell's reading and held by the cells review.
