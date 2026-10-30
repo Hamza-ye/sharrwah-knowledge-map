@@ -230,3 +230,25 @@ That is a little under section 10's 890, and about three and a half times the bu
   - **The concern map understated counts wherever the evidence sat outside the pages Q1 placed:** runs, released code, and help articles. A final review that samples cells should expect more of the same.
   - **A commit message slipped:** `fe0503ed`'s says 38 conflicts, 30 amendments and 4 kept open for S-02; the counts above are the files'.
 - **Cost:** 129.5 million, measured by `method/count_tokens.py`: the brief's two inspections 45.8 and the eight drafting batches, with their resumptions, 83.7. The coordinator's settlement ran in this session.
+
+## 17. The held pass, from the gap to its third brief (30 October, about 14:50 to 21:00 UTC)
+
+- **The gap.** Q3's check led to a measure of what the evidence repositories hold against what the model read (`held-vs-read.md`). The model had read the concern map, finished on 12 October, and nothing captured after it. Shopify, for one, holds 31,269 readable addresses, of which the model cites 176. The extent's plan never checked the model against what the repositories hold today: the coordinator's miss. The held pass reads every entry of the platforms' self-descriptions the model never read, guides and indexes first (the founder, 30 October), and places each on the model (`PLAN.md`, Stage 4A, at `9e59d2ef`).
+- **Its inspection** (`inspection-H.md`: 16 must fix, 21 should fix, 9 notes), all taken. It estimated the pass at 100 to 310 million tokens, an assumption: one request per 8 entries, about 170 tokens of context per entry, and a start of about 60,000.
+- **The dry run,** at `high`, measured it (`held/review-H.md`, section 7):
+  - BC-1, 147 entries: 7.9 million, about 54,000 an entry, its context growing from 49,347 to 257,452 tokens over 51 requests;
+  - ZD-1, 153 entries: 13.8 million, about 90,000 an entry, from 49,373 to 297,153 over 76.
+
+  That is one request per 2 to 3 entries, and about 1,400 tokens of context per entry: each about eight times the estimate's assumption. A batch's cost is its requests times the context each reads again, so the two multiply.
+- **Its review,** at `max`, in six parts and a join, by agents that made neither batch, on a brief inspected first (`inspection-HR.md`, 25.4 million): 119.7 million. In 458 rows on 318 lines, 186 lines stood whole. The misses were 55% the brief's, 40% care and 5% the evidence, and 92 rows were important details. The coordinator ruled on 14 cases the model's rules left open (`held/review-H-rulings.md`, M-1 to M-14, each for the founder's veto) and corrected both batches.
+- **The rewritten brief's inspection** (`inspection-H2.md`: 8 must fix, 15 should fix, 12 notes): 50.2 million.
+- **The calibration** (`held/calibration.md`): 82 entries placed again under the rewritten brief, at `high` and at `xhigh`, for 47.0 million. `xhigh` cost 1.6 and 2.4 times as much and missed the same important details, or others like them. Each was a capability whose cell held nothing and that no lead showed.
+- **The third brief** (`briefs/H-held.md` at `71d4f013`) takes the second inspection whole. Its leads also come from capabilities' own names, print in a stable order, and read an Arabic word without its article, joined conjunction or feminine plural. Its lookups always run, and M-6 is narrowed to a child that is a kind of its parent's thing.
+- **BigCommerce is in the model** (`0814b925`): 193 evidence rows for 76 cells, 14 cells that held nothing now held, 15 changed in placement, and four capabilities new from held entries.
+- **Lessons:**
+  - **Measure a batch before projecting a pass, and multiply the two rates.** The estimate assumed each factor of the cost about eight times too low, and they multiply. The dry run was planned to measure them, and did.
+  - **A review at `max` costs about five times the batches it reviews** (104 million against 21.7). It was worth it once, to find the brief's faults: more than half the misses were the brief's. After it, the checker and a calibration on a sample take its place.
+  - **More effort didn't buy the missed details.** Both levels missed the same capabilities whose cells held nothing, because no lead or search reached them. The fixes are in the tool (leads by name) and the brief (lookups that always run), not in effort.
+  - **An agent reads what a tool prints, in the order it prints it.** The leads printed in Python's set order, so the checker's first-lead note came and went between runs. Everything a script shows an agent is sorted now.
+  - **A rule needs its own case named.** "The parent's thing where the entry's own words name it" was read as every section's group, BigCommerce's General, and gave lines that change no cell. M-6 now names its case: a child that is a kind of the parent's thing.
+- **Cost of this section's agents,** measured by `method/count_tokens.py`: 242.3 million (the review's inspection 25.4, the review 119.7, the second inspection 50.2, the calibration 47.0), after the dry run's 21.7. The coordinator's work ran in this session.
