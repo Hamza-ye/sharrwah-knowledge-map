@@ -378,3 +378,220 @@ each is a reading of what the shared word names, and the readings say so.
 ## The coordinator's corrections (30 October)
 
 - **CM-APP-001, Salla:** SA-S-2629 (marketplace_apps_management) is a permission a partner can request, by the statement's note, not a staff permission. By the dry run's S7 it is `shows`. The cell stays `core` on its other rows. (Batch 2's notes, problem 1.)
+
+## Batch 3: areas DVT and PTN (developer tooling; partners and services)
+
+**Concerns:** SH-C-168, SH-C-169, SH-C-170; SA-C-173, SA-C-176, SA-C-203, SA-C-204, SA-C-205, SA-C-206, SA-C-209, SA-C-303,
+SA-C-304. Appended to the part's files; no earlier batch's row rewritten.
+
+**Result:** 14 capabilities: CM-DVT-001 to CM-DVT-005 in DVT, in two trees (CM-DVT-001 with its child CM-DVT-002;
+CM-DVT-003 with CM-DVT-004 and CM-DVT-005); CM-PTN-001 to CM-PTN-009 in PTN, one tree under CM-PTN-001. 12 landings, all in
+new capabilities (5 by a Q1 match, 2 by terms, 1 on role, 4 single); 28 cells (23 held, 5 none-held, all Shopify's);
+123 evidence rows; 4 qualities; no slot fillers; 10 rulings. Check:
+`python3 -I method/check_class_part.py studies/class-model/parts/F-anchor --concerns <the twelve> --areas DVT,PTN`:
+1 problem, on batch 2's U-047 row (below, for the coordinator), and 16 flags: 9 are batch 1's and 2's cells, answered in
+their sections; the other 7 are answered below.
+
+### How I cut, and why
+
+**DVT: two trees.**
+- *Developer tools and docs* (CM-DVT-001), parent of the CLI (CM-DVT-002). Salla's developer docs have a top-level menu Dev
+  Tools whose folders are Partners Agent Kit, Salla Apps Playbook and Salla CLI (SA-S-1176 to SA-S-1179); Shopify's list
+  of its products names Shopify.dev, "Dev docs, CLI, and more" (SH-I-1990). The CLI has a docs folder of its own with its
+  commands (SA-S-1106, SA-S-1107, SA-S-1109), so it is a capability. The Agent Kit and the Playbook are held only as folder
+  titles, with no definition: kept in the parent (my judgment), not made capabilities whose content no statement gives.
+  I didn't put the tree under CM-API-001: Salla's Dev Tools is a menu of its own, not an entry of the API's folder 841847
+  that batch 2 used for the API's tree, and Shopify's CLI is in its API resources list only as an unplaced entry
+  (SH-I-0039), which a cell can't cite. If the reviewer reads the API resources list as the shared grouping, CM-DVT-001
+  could be a child of CM-API-001.
+- *Partner stores* (CM-DVT-003), parent of development stores (CM-DVT-004) and ready stores (CM-DVT-005). Salla's Partners
+  portal has an item Stores whose children are Demo Stores, Ready Stores and Store management (SA-S-1931, SA-S-1932,
+  SA-S-1933, each "parent": 27); Shopify's Partner Dashboard has an item Stores (SH-I-2086). Demo and ready stores each
+  have a link of their own, so each is a capability; neither is shown under the other, so they are siblings (the rule for
+  `parent`). SA-C-209 holds both, so it lands in the parent. The item Stores itself (SA-S-1930) is placed in no concern;
+  Store management is SA-C-013's (domain A, F under also), not cited, since partner access to a merchant's store is that
+  domain's capability.
+
+**PTN: one tree under the partner programme** (CM-PTN-001). Both platforms keep a partner's work in one dashboard under
+one agreement: Shopify's Partner Dashboard (Home, Stores, Payouts, Organization, Partner settings, Dev dashboard) and the
+Partner Program Agreement; Salla's Partners portal (Dashboard, My Services, Affiliates, Influencer, Payments, Employees,
+Settings, Chats, Help Center) and its joining policy. Its children each have a place of their own on at least one platform:
+- CM-PTN-002 partner account: Shopify's Organization, Partner settings and the Partner API's Organization; Salla's
+  Employees, Settings and its lists of identity types and statuses;
+- CM-PTN-003 partner payouts: Shopify's Payouts and route partner-payouts; Salla's Payments > Payouts;
+- CM-PTN-004 partner billing: Shopify's route partner-billing; Salla's Payments > Billings and Operation records, and its
+  docs link Billing System Salla partners;
+- CM-PTN-005 partner services for merchants, parent of CM-PTN-006 (the agencies' store-growth programme) and CM-PTN-007
+  (the global selling programme): Shopify's plan subscription routes and the Partner Directory; Salla's Merchant Services,
+  My Services and the two programmes' own pages;
+- CM-PTN-008 the referral programme for the platform's plans, and CM-PTN-009 partner affiliates and influencers: Salla's
+  agreement and help article, and its Partners portal menus Affiliates, Influencer and Marketing Tools.
+
+**Grains I chose (my judgment):**
+1. *M-071* (SH-C-168; SA-C-204, SA-C-176, SA-C-193). Shopify keeps the programme, its terms, the dashboard and the Partner
+   API in one concern; Salla splits the partner account, the joining contract and app events. SH-C-168, SA-C-204 and
+   SA-C-176 land in CM-PTN-001: SH-C-168 and SA-C-204 are coarser than the children (SA-C-204 holds the portal as well as
+   the account); SA-C-176 is the programme's terms. SA-C-193 is in batch 1's CM-APP-004 (its section, grain 5).
+   SA-C-176's SaaS contract is tied to an app and signable at publication (SA-S-0213, SA-S-0214), so it bears on app
+   publishing (CM-APP-002); I cited it in CM-PTN-001 as the programme's terms so that SA-C-176 isn't cited in two trees.
+2. *Identity verification and employees* are kept inside the partner account (CM-PTN-002), not capabilities of their own:
+   only Salla shows either, and both are parts of the account in its portal.
+3. *M-010* (SH-C-019, SH-C-169; SA-C-195), as batch 1 foresaw. Partner payouts are a capability of the partner programme,
+   not of app charges: what Shopify distributes is the "Fees owing to its Partners" as well as what merchants owe them
+   through the Billing Resource (SH-S-0295), and Salla's reports cover "commissions, earnings or amounts due" (SA-S-0034).
+   SH-C-169 lands in CM-PTN-003 by the term Payouts with SA-C-195's Payouts link (SA-S-1936), not by M-010, whose other
+   concerns are in CM-APP-003 (the match test). SA-C-195's payout and billing statements, left uncited by batch 1, are cited
+   in CM-PTN-003 and CM-PTN-004. Billing has a place of its own on both (Shopify's partner-billing route; Salla's Billings),
+   so it is a sibling of payouts. Salla's Payments menu (SA-S-1935, placed in no concern) groups the two; Shopify's routes
+   share one eligibility (SH-S-5241). I didn't add a parent for them.
+4. *M-072* (SH-C-170; SA-C-205), one to one, CM-PTN-005. Its parent is CM-PTN-001 by the grouping both share on the
+   partner's side: Shopify's Partner Directory is set by the Partner Program Agreement (SH-S-0760, from partners/terms by
+   citations.tsv), and Salla's My Services is in the Partners portal. The merchant's side is in each admin.
+5. *SA-C-303 and SA-C-304* (U-066, U-076) have pages of their own on partners.salla.com, so each is a capability, under
+   partner services for merchants: both are programmes in which the platform brings partners to merchants. Shopify's
+   statements hold neither.
+6. *SA-C-173 and SA-C-206.* Q1 split Salla's affiliate and referral programme for its own plans (SA-C-173) from the
+   partners' affiliate and influencer menus in the Partners portal (SA-C-206). Both have places of their own, so I kept
+   them as two capabilities, both under CM-PTN-001: SA-C-173's agreement is one of the Partners portal's legal pages
+   (SA-S-0019, from partners.salla.com/legal/privacy-affiliate) and addresses "the partner member of the programme"
+   (SA-I-2619). The two meet: the commission clause of the same agreement (SA-S-0043) is a statement of SA-C-206, cited in
+   CM-PTN-009. What the Partners portal's affiliates market, a merchant's products or Salla's plans, isn't stated, so
+   the reviewer may find CM-PTN-008 and CM-PTN-009 one capability; I left them apart, as Q1 did.
+
+**Placements (my judgment, batches 1 and 2's rule).** The platform's own dashboard item, route, docs folder, API object,
+released flag or its own act (reviewing, assigning, paying) is `core`. `extension-point` where third parties do the work
+through what the platform provides: partners' services via the Partner Directory (SH-S-0760) or the Partners platform
+(SA-S-0198, SA-S-0032), the Partners portal's places where partners list services, publish stores or market (SA-S-1911 to
+SA-S-1913, SA-S-1932, SA-S-1915 to SA-S-1922), accredited agencies (SA-S-5125, SA-S-5126), and Salla connecting partners
+with brands (SA-S-5130). Terms, conditions, responsibilities and unreleased flags are `shows`. I read the Salla CLI,
+"developed by Salla team" (SA-S-5096), as `core`, the platform's own tool for building on it, like its own API, not
+`own-service`: it does no merchant's work as a separate product. The reviewer may read it as maker evidence.
+
+**Which navigation is Salla's "list 2".** citations.tsv traces SA-S-1903 to SA-S-1947 to
+structures/salla/partners-portal-navigation (observed-sa@145f137), and SA-S-1883 to SA-S-1885 to the merchant dashboard's
+navigation. So list 2 is the Partners portal's (batch 2's question, and batch 1's gap): My Apps (SA-S-1906), App
+Subscriptions (SA-S-1927, cited by batch 1 in CM-APP-003 as core) and the Webhooks Log (SA-S-1941, cited by batch 2) are
+the partner's side, not the merchant's. Batch 1's cell stays right ("Salla's own navigation either way"), but its terms
+are the partner's view of the subscriptions, for the coordinator.
+
+### Joins on role
+
+- **CM-DVT-003 (SA-C-209's landing; U-047's pair (SH-C-168, SA-C-209)).** Shopify's Partner Dashboard item Stores
+  (SH-I-2086) and Salla's Partners portal Stores, held through its children Demo Stores and Ready Stores (SA-S-1931,
+  SA-S-1932). Each is the partner dashboard's own item for the partner's stores; neither side defines the other's term,
+  and what Shopify's item lists isn't stated. Q1 named this pair in U-047's why_unclear.
+
+### Homonyms kept apart
+
+- **"Affiliate" on Shopify** names Shopify's own group companies and payment providers' affiliates in legal terms
+  (SH-C-064, SH-C-066, SH-C-100, SH-C-181 and others), not affiliate marketing. Not cited.
+- **"Accelerated" on Shopify** names accelerated checkouts (SH-C-074, SH-C-078), not Salla's growth acceleration
+  programme (CM-PTN-006). Not cited.
+- **"Stores" on Salla's Partners portal** holds Store management (SA-S-1933, SA-C-013), a partner's access to a merchant's
+  store, beside the partner's own demo and ready stores. Not cited.
+- **"Billing" on Shopify** names the merchant's bill with Shopify (SH-C-016, its billing charge categories) as well as the
+  partner's (partner-billing). Only the partner's route is cited in CM-PTN-004; the charge categories Expert services fees
+  and Professional services fees, placed in SH-C-016 and SH-C-170, are cited in CM-PTN-005 as `shows`.
+
+### Strained fits
+
+- **SH-C-168 in CM-PTN-001.** Its App Events API entries are cited in batch 1's CM-APP-004 (SH-I-0075, SH-I-0171) and its
+  Partner Dashboard item Stores in CM-DVT-003 (SH-I-2086), two other trees.
+- **SH-C-171 in CM-API-001 (batch 2's landing, clean).** The checker flags it: its entry Shopify.dev (SH-I-1990) is cited
+  in CM-DVT-001 and CM-DVT-002. For the coordinator: it should be strained.
+- **SH-C-158 in CM-API-003** (batch 2's, strained already): its key SH-C-158/boundary/SH-S-6300 is cited in CM-DVT-004.
+
+### For the coordinator: an earlier batch's ruling that no longer holds
+
+- **rulings.tsv line 10, U-047 (SH-C-171, SA-C-203), `apart`** (batch 2's). The checker prints it as a problem: CM-DVT-002
+  cites both sides' keys, SH-I-1990 (Shopify.dev, "Dev docs, CLI, and more") and SA-C-203/where/SA-S-1179 (Salla CLI). The
+  row foresaw this. The ruling should be `joined:CM-DVT-002`, with the same keys; I didn't rewrite it. It is this batch's
+  only remaining problem.
+- **Partner API.** CM-PTN-001's Shopify cell cites the Partner API (SH-S-0838, SH-I-0074) as the programme's own API. The
+  seed (area API: "Admin, Storefront, Customer Account, Partner, Payments Apps APIs") and Shopify's API resources list put it
+  beside the other APIs; area API isn't this batch's, so a child of CM-API-001 for it is the coordinator's choice. Salla's
+  statements hold no partner API (searched Partner API; partners api).
+
+### Concerns read under also, and other concerns cited
+
+- Cited across concerns of domain F: SH-C-171's SH-I-1990 (CM-DVT-001, CM-DVT-002); SH-C-158's SH-S-6300 (CM-DVT-004);
+  SA-C-195's payout and billing statements (CM-PTN-003, CM-PTN-004).
+- The same statement under two concerns' keys, each in its own concern's tree (no checker flag, for the reviewer):
+  SH-S-0282 and SH-S-0287 (SH-C-019's keys in CM-APP-003; SH-C-169's in CM-PTN-003); SH-S-0215 (SH-C-157's in CM-APP-002;
+  SH-C-168's in CM-PTN-002); SA-S-0033 (SA-C-194's in CM-APP-001; SA-C-206's in CM-PTN-009).
+- Read, not cited: SH-C-134 (Shopify Collabs) and SH-C-194 (Affiliate program apps), domain D without F under also, which
+  my searches found for CM-PTN-009 (U-056 rules both apart); SH-C-110 (Managed Markets, domain E) and SH-C-065 (Global-e),
+  for CM-PTN-007; SH-C-008 (the store owner's identity verification) and SH-C-009 (staff accounts), for CM-PTN-002;
+  SA-C-013 (Store management, domain A, F under also), for CM-DVT-003. Of the concerns naming F under also, none but these
+  bears on DVT or PTN: SA-C-208 (themes sold by partners, domain E) and SA-C-207 (Report Builder, domain D) are their
+  domains' features delivered by partners; SA-C-235 (a partner unavailable, domain G) is operations.
+
+### Rulings
+
+- **U-047:** (SH-C-168, SA-C-203) `apart`: what they share is a prerequisite, a partner account (SH-S-0215, SA-S-5095), not
+  the tool; (SH-C-168, SA-C-209) `joined:CM-DVT-003`, on role; (SH-C-171, SA-C-209) `apart`, the pair batch 2 left without
+  a ruling. (SH-C-171, SA-C-203) is batch 2's row, which no longer holds (above).
+- **U-052:** (SH-C-168, SA-C-194) `apart`; (SH-C-168, SA-C-195) `joined:CM-PTN-003`, on the Partner API's Transactions
+  (SH-I-0175) and Salla's Payouts (SA-S-1936). With batch 1's four rows, the candidate's six Shopify–Salla pairs are ruled.
+- **U-056:** (SH-C-134, SA-C-206) and (SH-C-194, SA-C-206) `apart`: scope.tsv gives both Shopify concerns domain D without F
+  under also. A first draft cited Collabs (SH-S-0731, SH-S-0732) in CM-PTN-009's Shopify cell as `shows`; the brief's rule for
+  such pairs ("Otherwise the ruling is apart") and the checker's apart test made me take them out, so the cell is
+  none-held. Whether Collabs and Salla's partner affiliates are one capability is for the merge of D and F.
+- **U-066:** (SH-C-170, SA-C-205) `joined:CM-PTN-005`; (SH-C-170, SA-C-303) `nested:CM-PTN-006`.
+- **U-076:** (SH-C-110, SA-C-304) `apart`: scope.tsv gives SH-C-110 domain E without F under also.
+
+### What the checker flagged
+
+1. *rulings.tsv line 10* (a problem): batch 2's U-047 row, above.
+2. *cells.tsv line 68, CM-PTN-006 for Shopify, none-held with 6 matches:* accelerated checkouts (homonyms above). none-held
+   stands.
+3. *cells.tsv line 69, CM-PTN-007 for Shopify, none-held with 34 matches:* Shopify's own selling abroad and its terms
+   (Managed Markets' Global-e flow of funds, SH-S-0566; "Shopify is not the seller or merchant of record", SH-S-0013),
+   VAT validation, multiple entities, and an export route of the merchant's billing (SH-S-5073). None is a programme for
+   partners. none-held stands.
+4. *cells.tsv line 70, CM-PTN-008 for Shopify, none-held with 10 matches:* "referred to as", "preferred", Collabs'
+   commissions (SH-C-134, domain D), the charge category Partner application commission (SH-I-1336, SH-C-016, undefined).
+   None is a referral programme for Shopify's plans. none-held stands.
+5. *cells.tsv line 71, CM-PTN-009 for Shopify, none-held with 24 matches:* Shopify's group companies and payment providers'
+   "affiliates" (homonyms above) and Collabs and Affiliate program apps, domain D's (Rulings, U-056). none-held stands.
+6. *M-010's concerns land in more than one tree* (SH-C-169 in CM-PTN-003; SH-C-019 and SA-C-195 in CM-APP-003): a
+   difference of grain, grain 3 above, as batch 1 foresaw.
+7. *M-071's concerns land in more than one tree* (SA-C-193 in CM-APP-004): batch 1's grain 5; the other three are here.
+8. *landings.tsv line 19, SH-C-171 clean with statements cited in CM-DVT-001 and CM-DVT-002:* batch 2's landing; it should
+   be strained (above).
+9. Lines 12, 17, 19, 20, 29, 35, 40, 41 and 43 are batch 1's and 2's cells, answered in their sections.
+
+### For batch 4 (AUT, AIA)
+
+- Salla's dashboard app @salla.sa/ui-merchant-partner-marketing (SA-S-3550, cited in CM-PTN-009) also routes experts and
+  marketplace; no automation or AI statement among this batch's concerns. Partners Agent Kit (SA-S-1177, in CM-DVT-001) is
+  held only as a title: if batch 4's statements define it as an AI kit (the seed's area AIA names Salla's "AI Agent Kit"),
+  the coordinator may move its citation.
+
+### Gaps: statements needed and not held
+
+- Shopify: what its CLI does (only the words "Dev docs, CLI, and more", SH-I-1990; the entries Shopify CLI and Shopify GitHub
+  app, SH-I-0039 and SH-I-0040, are unplaced); what a development store is and where it is created (only SH-S-6300 names
+  one); what the Partner Dashboard's Stores lists.
+- Salla: what the Partners Agent Kit and the Salla Apps Playbook hold (titles only); what a ready store holds, who prepares
+  it and who buys it (only its review, SA-S-5111).
+- Shopify: no statement names Hyperwallet, a term of SH-C-169; nothing on who the expert of the intro call is (Q1's gap:
+  observation needed); nothing on what Shopify bills a partner for under partner-billing.
+- Salla: what the partner invoices charge for (batch 1's gap); the global selling programme's FAQ answers (Q1's gap:
+  observation needed); the reasons for the contract's, the agencies' and the referral programme's placements (pages not
+  read); what the Partners portal's affiliates market.
+- Both: no reason stated for the partner programme's placement (Shopify: searched, not found).
+- Salla names two owning companies: شركة تطبيق سلة لتقنية المعلومات, CR 7011845513, in the joining policy (SA-S-0016), and
+  شركة منصة سلة للاتصالات وتقنية المعلومات, CR 4031200589, in the affiliate agreement (SA-S-0019); the App Store policy
+  (SA-S-0015, a statement of SA-C-195) gives the first name with the second number. Both are Salla's by their statements, so not slot
+  fillers; which entity is the counterparty of each agreement is the coordinator's to read.
+
+### Problems with the brief or the evidence
+
+1. **An earlier batch's ruling in a later batch's check.** The checker tests every row of the part, so batch 2's U-047
+   row prints a problem in this batch's check that this batch may not fix. The brief says to fix every problem; the
+   coordinator's message says not to rewrite an earlier batch's rows. I followed the message.
+2. **Rulings and other domains.** The brief's rule for a pair whose other concern is in a domain that doesn't name F under
+   also ("the ruling is apart") sits uneasily with its rule that a cell may cite such a statement "where the cell needs
+   it": a `shows` citation in the cell makes the checker read the pair as joined. I chose apart and none-held.
+- **After batch 3:** U-047's pair (SH-C-171, SA-C-203) is `joined:CM-DVT-002`, since batch 3 cites SH-I-1990 there beside SA-C-203's keys. SH-C-171's landing is `strained` for the same citation. Both as batch 3's notes asked.
