@@ -128,3 +128,9 @@ None found. Each entry's text matches its item at `items.jsonl` lines 102 to 231
 
 - None with the leads: 95 of the 130 entries had leads from the key's words, as the coordinator's fix intended. Some leads come from words of a product's name: `all`, `one`, `merchant` (`omniful_merchant`, `google_merchant_center`) and `customer` with `support`. They are no leads.
 - The brief changed during the batch (a WooCommerce ruling on `disable_ui`, rule 4). It doesn't bear on Zid's policies.
+
+## The coordinator's check (30 October 2026, after the batch)
+
+- **`available_in` is the plan the source states a policy is available in, and the lines say no more.** The repository's README calls it 'the plan it is available in', and the structure's `meta.json` gives the store's own plan: Demo Store, `new_professional` (Professional, tier 3). Six policies enabled for this Professional store state Enterprise or Elite, so the field isn't always the lowest plan that includes the policy. Each line's `scope` is the source's own plan key, and its reading says 'available in <plan>', with no claim that this is a lowest plan. That stands for ZD-9 and ZD-11 to ZD-13 too. What the field means beside the store's own plan is a reading for the plans' cells at Zid's amendment, with ZD-6's offered plans. Enterprise and Elite aren't among those plans.
+- **Extended caching** is a new thing on a plan line, which the model counts as a place of its own. It is decided with WooCommerce's speed and cache things (WC-1, WC-3, WC-6): one capability for the store's speed and caching, or out as the software's own working.
+- **The batch changes no cell beyond Zid's earlier batches.** Its policies confirm the pages and plan lines placed before.
