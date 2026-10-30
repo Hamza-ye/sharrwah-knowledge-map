@@ -246,3 +246,83 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gi
 - **CM-PAY-008 Salla: none-held, 2 matches.** Buy now pay later (SA-S-0070) and postpaid shipping labels (SA-S-5061), homonyms above.
 
 `uncited --domain C` lists for this batch's concerns only SH-C-063's SH-S-0022, left for PayPal on purpose.
+
+## Batch 4: PAY, Payments, payouts and money (second of six)
+
+Concerns: SH-C-072, SH-C-073, SH-C-074, SH-C-075, SH-C-076, SH-C-077, SH-C-078, SH-C-079, SH-C-080, SH-C-081, SH-C-083. Eleven capabilities, CM-PAY-009 to CM-PAY-019; all eleven concerns land in new ones, since none is the same thing as CM-PAY-001 to -008 or any capability of the part. Every capability was first searched in every domain with `caps` (terms: chargeback, dispute, نزاع, النزاعات, اعتراض, fraud, احتيال, Shopify Protect, protect, حماية; then wallet, محفظة, المحافظ, Apple Pay, PayPal, instalment, installment, تقسيط, التقسيط, pay later, الدفع الآجل, Tabby, تابي, manual payment, cash on delivery, الدفع عند الاستلام, bank transfer, التحويل البنكي, crypto, stablecoin, عملات رقمية, local payment, payment customization, قيود الدفع, payment restriction, gateway, بوابة الدفع, payments app, saved card, حفظ البطاقة, Shop Pay, mark as paid, record payment). What the search found and kept apart: C's CM-ORD-006 (fraud analysis for the merchant's review), CM-CHK-008 (quick checkout, made CM-PAY-014's parent); D's CM-LOY-001 to -003 (the buyer's store wallet, gift cards, cashback), CM-MKT-020 (ads wallet), CM-SUP-008; A's CM-PLN-004 and -006 (platform billing, the prepaid store balance), CM-TRU-004, CM-TRU-020 (buyers' complaints about stores); F's CM-API-004 (protected customer data). None is the same thing. Every Shopify and Salla cell is written for the eleven.
+
+### How I cut, and the grains
+
+- **The tree.** Under CM-PAY-001 (payment settings): third-party providers and gateways (011), digital wallets (012, with PayPal, 013, under it), instalments and buy now pay later (015), manual methods (016), cryptocurrency (018) and payment method rules (019). Under CM-PAY-002 (the platform's own service): chargebacks and disputes (009), chargeback protection (010) and local payment methods (017). Under CM-CHK-008 (quick checkout): saved buyer checkout details, Shop Pay (014). Each parent rests on the platforms' own grouping, given in the capability's note: mostly Shopify's admin routes in its section Payments and Salla's payment methods page or its links under /payments/.
+- **M-025, the finer side.** As batch 3 left it: SH-C-076 lands in CM-PAY-011, a child of CM-PAY-001, and the Salla batches land SA-C-120 there. Shopify's providers are apps on its Payments Apps API (extension-point); Salla's gateways are integrations it names and switches by flag, with no app interface in the statements held (core where released, shows where not).
+- **PayPal under wallets (CM-PAY-013 under CM-PAY-012),** by the grouping both platforms share: Shopify's plan row PayPal Wallet rates (SH-S-7024) and Salla's "PayPal as a digital wallet option" (SA-S-0199). SH-C-063's SH-S-0022, left by batch 3, is cited here under both its keys (SH-C-063 and SH-C-077).
+- **Shop Pay (CM-PAY-014) under CM-CHK-008, area PAY.** Shopify's two groupings differ: its Shop Pay Merchant Terms put it under "1. Accelerated Checkout (Shop Pay)" (SH-S-0413), and Shopify's definition of accelerated checkouts, already cited in CM-CHK-008, is that they "save customer payment and shipping information" (SH-S-7287); its admin route sits in its section Payments (SH-S-7111). I followed the terms, since they say what the thing is, and kept the area PAY, since Shop Pay "only enables payment processing through the sharing of payment credentials" (SH-S-0408) and has the Shop Pay Wallet API. The reviewer may prefer CM-PAY-001 as parent, by the admin route; then U-026 would be `apart` unless CM-CHK-008 cited SH-C-074's keys. Named for what it does, not "wallet": Salla's words for its side are saving the customer's card and address.
+- **Shop Pay Installments isn't under Shop Pay,** though it needs Shop Pay activated (SH-S-0415): its route is a sibling in section Payments (SH-S-7112), and Salla's instalments stand on its payment methods page. The product's brand doesn't make it a child.
+- **Chargebacks and disputes (CM-PAY-009) under CM-PAY-002,** by Shopify's API grouping (the Shopify Payments resources and scopes read_shopify_payments_disputes) and its Shopify Payments Terms' Part I, C; its admin route sits in its section Finances. **Chargeback protection (CM-PAY-010) apart from it,** under CM-PAY-002 ("an add-on to the general Shopify Payments services", SH-S-0402), and apart from CM-ORD-006: Shopify Protect evaluates orders for fraud (SH-S-0404), but what it gives is cover for the chargeback.
+- **Manual methods (CM-PAY-016), M-033, a difference of grain.** One capability for Shopify's one concern; Salla's three concerns (cash on delivery by Salla's labels or by the merchant's carrier, and bank transfer) are cited in its cell. **For the Salla batches:** they may add children for cash on delivery and bank transfer. Salla's cash on delivery setting sits under shipping (shipping/shipping.cod, SA-S-1765), its bank account under payment methods (SA-S-0095); I kept the parent CM-PAY-001 by Shopify's route and Salla's plan lines in its payment group.
+- **Local payment methods (CM-PAY-017) under CM-PAY-002,** since Shopify's are activated "with Shopify Payments" (SH-S-0420) and Salla's KNET "through Salla Payments" (SA-S-0065). Salla's K net through Tap (SA-S-0130) is a gateway and stays in CM-PAY-011. mada isn't cited: its plan line has no country scope, and no statement makes it region-specific.
+- **Payment method rules (CM-PAY-019) under CM-PAY-001,** not without a parent like batch 1's function capabilities (CM-CHK-005, -006): Shopify's own route Payment customizations sits in its section Payments (SH-S-7119), and Salla's link Payment restrictions at /payments/rules (SA-S-1877).
+- **Cryptocurrency (CM-PAY-018) under CM-PAY-001,** since it comes both through third-party gateways (SH-S-0428) and through Shopify Payments (SH-S-0433, SH-S-0432).
+
+### Joins on role (readings)
+
+- **CM-PAY-014:** Shop Pay saves the buyer's "email address, payment method, and shipping and billing information, making the checkout process faster" (SH-S-0406); Salla's shopping experience fee includes "the services of saving the customer's card and address" from Salla Payments (SA-S-0104). Whether Salla's saved details serve other stores isn't stated; Salla gives it no admin place.
+- **CM-PAY-017:** Shopify's local payment methods, "region-specific ways to pay" through Shopify Payments (SH-S-0420); Salla's KNET through Salla Payments for Kuwait stores (SA-S-0065). Salla doesn't call it local; the region is the statement's scope.
+- **CM-PAY-019:** Shopify's Payment Customization hides, reorders or renames the payment methods offered at checkout (SH-S-0589); Salla's payment restrictions are "conditions imposed on payment options", such as restricting a method for some countries or customers (SA-S-5050).
+
+### Homonyms
+
+- **"Reorder":** Shopify's Payment Customization reorders payment methods (SH-C-083/where/SH-S-0589). The checker's flag on CM-ORD-014 (Salla's Reorder, repeating an order) lists it as a match: it is a different thing.
+- **"Dispute":** a chargeback dispute (CM-PAY-009) against the dispute resolution clauses of Salla's partner agreements (SA-S-0021, SA-S-0044) and the merchant's disputes with its customers under Shop Pay (SH-S-0410, shows in CM-PAY-014). Salla's Transactions reverse (SA-S-0180, SA-C-123) is the merchant's own reversal, not a chargeback.
+- **"Wallet":** Shopify's Shop Pay Wallet API and PayPal Wallet, and Salla's المحافظ الرقمية (payment wallets, CM-PAY-012 and -013), against Salla's Wallet link (the store balance, A's CM-PLN-006), the customer wallet (D's CM-LOY-001) and the ads wallet (D's CM-MKT-020).
+- **"الدفع الآجل" / "وسائل الدفع الآجلة":** buy now pay later (CM-PAY-015), not Shopify's payment terms (CM-PAY-008), as batch 3 noted.
+- **"Reviews"** in Shopify's legal routes (section Reviews, SH-S-7109, SH-S-7110) names a terms page's section, not product reviews.
+- **"Quick purchase through Apple Pay"** (الشراء السريع عبر Apple Pay, in SA-S-0104) uses CM-CHK-008's word for a wallet's button; not cited in CM-CHK-008.
+
+### Strained fits
+
+- **SH-C-078 in CM-PAY-012:** its SH-S-0419 (accelerated checkout buttons) and SH-S-7287 (their purpose) are cited in CM-CHK-008 (batch 1), outside CM-PAY-001's tree. Here SH-S-0419 is shows.
+- **SH-C-079 in CM-PAY-016:** its SH-S-5144 (the mobile app's record-payment route) is core in domain E's CM-SRF-001; here it is shows.
+
+### Statements shared with other domains, cited here only as shows
+
+- SH-S-0244 (Shopify as data controller for Shop or Shop Pay) is own-service in E's CM-CHN-002 and shows in A's CM-TRU-013; shows in CM-PAY-014.
+- SH-S-0094 (Shopify gives the merchant's customers no dispute rights, SH-C-072) is shows in CM-PAY-009; it is a lead for A's CM-TRU-020, whose Shopify cell is none-held.
+- SH-S-5144: above.
+
+### Rulings
+
+- **U-026 (SH-C-074 against SA-C-079): `nested:CM-PAY-014`.** CM-PAY-014 cites Shop Pay's keys and its parent CM-CHK-008 cites Salla's quick checkout. CM-CHK-008's Shopify cell is unchanged: it already names Shop Pay's button among the accelerated checkout buttons (SH-S-0419); its reading's "Shop Pay itself (SH-C-074) is batch 4's" is settled by the child.
+
+### Left for later batches
+
+- **U-022** (SH-C-083 against SA-C-121): CM-PAY-019's Salla cell cites SA-C-121's keys, so if SA-C-121 lands there the ruling is `joined:CM-PAY-019`.
+- **U-023** (SH-C-078 against SA-C-110 and SA-C-119): CM-PAY-012's Salla cell cites keys of both (Apple Pay and Google Pay of SA-C-110; stc pay and PayPal of SA-C-119), so each pair is `joined:CM-PAY-012` once they land.
+- **U-024** (SH-C-080 against SA-C-110): CM-PAY-017 cites SA-C-110's SA-S-0065, so `joined:CM-PAY-017` once SA-C-110 lands.
+- **U-025** (SH-C-081 against WC-C-005) is WooCommerce's part's to rule.
+- **The matches' Salla sides:** SA-C-120 in CM-PAY-011 (M-025), SA-C-118 in CM-PAY-015 (M-031), SA-C-119 in CM-PAY-013 or CM-PAY-012 (M-032; its stc pay direct is cited in CM-PAY-012, and its Mokafaa Al Rajhi, paying with loyalty points, SA-S-1966 and SA-S-3140, is uncited, for the Salla batch), SA-C-115, SA-C-116 and SA-C-117 in CM-PAY-016 (M-033). The coordinator may then change my landings' joins to the match.
+- **SA-C-127 (charity stores' gateways):** SA-S-0206 and SA-S-5057 (Apple Pay for charities) are uncited, for the Salla batch; CM-PAY-011 or -012 may hold them.
+- **For batch 5:** SH-C-085 (saved customer payment methods and payment mandates, vaulted for charging later) is close to CM-PAY-014; whether it is the same thing is batch 5's to read. SH-C-084 (transactions) against SA-C-123: SA-S-0180 (refund, void, reverse) was found by CM-PAY-009's search and left uncited.
+- **SA-C-122 (fraud protection):** its plan line قيود الدفع والحماية من الاحتيال (SA-S-2145) is held in SA-C-121 and SA-C-122; I cite it as core in CM-PAY-019 under SA-C-121's key. Under SA-C-122's key it may support CM-ORD-006, as the coordinator directed.
+
+### Gaps
+
+- No statement held names a Shopify company as the maker of Shop Pay Installments; the cell claims core from its route and scopes and outside from Affirm's agreement.
+- No Salla statement held gives its saved card and address an admin place, a flag or a definition (CM-PAY-014), names the lender behind its instalment providers (CM-PAY-015), or shows chargebacks, chargeback cover or cryptocurrency (CM-PAY-009, -010, -018, none-held).
+- Q1's gaps: reason (searched, not found) on SH-C-072, SH-C-073, SH-C-077, SH-C-079, SH-C-081 and SH-C-083; responsible (stated only in general terms) on SH-C-079 and SH-C-080.
+- SH-C-075's SH-S-6147 says only "Requires `unauthenticated_read_checkouts` access scope"; the object it is on (ShopPayInstallmentsFinancingPlan) is in Q1's note, so it is shows, and the object's name isn't claimed.
+
+### Qualities
+
+- CM-PAY-013 Shopify: PayPal Wallet rates, starting at 3.49% + 49¢ (SH-S-7024). CM-PAY-015 Shopify: 0-36% APR (SH-S-7219). CM-PAY-017 Shopify: MB WAY and Bizum rates by plan (SH-S-7025, SH-S-7026). CM-PAY-018 Shopify: USDC rates by plan (SH-S-7028). CM-PAY-019 Shopify: at most 25 payment customization functions per store (SH-S-0590).
+- CM-PAY-016 Salla: a 1000 SAR maximum for cash on delivery through Salla's labels (SA-S-0123), and no cash on delivery for a cart under 20 SAR (SA-S-0125).
+
+### Checker
+
+The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gives "0 problems, 30 flags for the reviewer". I fixed one problem in my rows: a term from Q1's note, not the statement (above, Gaps). The 24 flags on CHK, ORD and CM-PAY-001 to -008 are batches 1 to 3's, answered in their sections. Mine:
+
+- **Own-service on SH-S-0401, SH-S-0411 and SH-S-0413.** SH-S-0401 names "the warranty issuer, Shopify Inc." for Shopify Protect. SH-S-0411 is the Shop Pay Merchant Terms' definition of Shopify as "Shopify Inc., and its Affiliates", and SH-S-0413, in those terms under "1. Accelerated Checkout (Shop Pay)", says Shopify "will collect and store certain personal information from the Customer": the platform's company named as the provider of the product, under terms of its own. The reviewer may read SH-S-0413 as shows.
+- **CM-PAY-009 Salla, none-held, 10 matches,** and **CM-PAY-010 Salla, none-held, 34 matches:** answered in the cells' readings (the merchant's reversal, partner agreements, subscription refunds; fraud protection with no stated cover, other kinds of protection).
+- **SA-C-113/boundary/SA-S-0104 cited in CM-PAY-007 and CM-PAY-014, in two trees.** The statement is the shopping experience fee's description: as a fee it is shows in CM-PAY-007 (batch 3), and it is the only Salla statement held that names saving the customer's card and address, shows in CM-PAY-014. Neither cites it for a placement.
+
+For the coordinator, on earlier rows: SA-S-0065 (KNET through Salla Payments) is now core in CM-PAY-002 (batch 3) and in its child CM-PAY-017; one of them may be shows. CM-PAY-008's Shopify reading names SH-S-0589 as shows, but no evidence row cites it there; it is cited in CM-PAY-019.

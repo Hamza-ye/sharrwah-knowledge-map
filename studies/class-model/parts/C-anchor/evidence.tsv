@@ -575,3 +575,257 @@ CM-PAY-005	shopify	shows	SH-C-069/reason/SH-S-0578	the pause protects the accoun
 CM-PAY-005	shopify	shows	SH-C-069/reason/SH-S-0341	funds may take 1-3 more days to show, out of Shopify's control
 CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0565	for Managed Markets orders, the money held in a Global-e account
 CM-PAY-004	shopify	outside	SH-C-065/responsible/SH-S-0566	Global-e holds the funds to remit costs to authorities
+CM-PAY-009	shopify	core	SH-C-072/where/SH-S-7107	route finance:risk:disputes, titled Disputes, in section Finances
+CM-PAY-009	shopify	core	SH-C-072/where/SH-S-5244	route for a dispute's details, finance/risk/disputes/:id
+CM-PAY-009	shopify	core	SH-C-072/decides/SH-S-5164	the Disputes route gated by MANAGE_DISPUTES and financesOverview
+CM-PAY-009	shopify	core	SH-C-072/decides/SH-S-5245	the details route gated by MANAGE_DISPUTES
+CM-PAY-009	shopify	core	SH-I-1077	staff permission MANAGE_DISPUTES
+CM-PAY-009	shopify	core	SH-C-072/where/SH-S-7106	route dispute_evidences in section Payments
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-6124	webhook topic disputes/create, scope read_shopify_payments_disputes
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-6125	webhook topic disputes/update
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-6126	webhook DISPUTES_CREATE for a custom app
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-6127	webhook DISPUTES_UPDATE for a custom app
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-1214	topic value disputes/create
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-1215	topic value disputes/update
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-6123	scope read_shopify_payments_dispute_evidences
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-1141	scope write_shopify_payments_dispute_evidences
+CM-PAY-009	shopify	core	SH-C-072/decides/SH-S-6296	evidence mutation needs the scope and manage_disputes or manage_orders_information
+CM-PAY-009	shopify	core	SH-C-072/boundary/SH-S-0398	with Shopify Payments a chargeback is deducted from the next payout
+CM-PAY-009	shopify	core	SH-C-072/decides/SH-S-0115	the merchant or Shopify may contest chargebacks and disputes
+CM-PAY-009	shopify	core	SH-C-072/decides/SH-S-0114	Shopify may enroll the merchant in automated dispute resolution programs
+CM-PAY-009	shopify	outside	SH-C-072/decides/SH-S-0395	the cardholder's bank takes the disputed amount
+CM-PAY-009	shopify	outside	SH-C-072/decides/SH-S-0396	the card's issuer reviews the evidence and resolves the chargeback
+CM-PAY-009	shopify	shows	SH-C-072/decides/SH-S-0397	disputes resolved automatically under a network dispute resolution program
+CM-PAY-009	shopify	shows	SH-C-072/responsible/SH-S-0092	the merchant answers for charged-back transactions
+CM-PAY-009	shopify	shows	SH-C-072/responsible/SH-S-0094	Shopify offers no dispute rights to the merchant's customers
+CM-PAY-009	shopify	shows	SH-C-072/decides/SH-S-5738	feature financesOverview, true in one development store
+CM-PAY-009	shopify	shows	SH-C-072/decides/SH-S-5732	feature financesOverview, false in the other stores
+CM-PAY-009	shopify	shows	SH-I-2204	help-center section Chargebacks and inquiries
+CM-PAY-010	shopify	core	SH-C-073/where/SH-S-7108	route shopify-protect, titled Shopify Protect, in section Payments
+CM-PAY-010	shopify	core	SH-C-073/boundary/SH-S-1302	webhook topic orders/shopify_protect_eligibility_changed
+CM-PAY-010	shopify	core	SH-C-073/decides/SH-S-0400	free, protects eligible orders against fraudulent and unrecognized chargebacks
+CM-PAY-010	shopify	core	SH-C-073/decides/SH-S-0404	Shopify evaluates each order authorized through Shopify Payments for fraud risk
+CM-PAY-010	shopify	core	SH-C-073/decides/SH-S-0405	eligibility needs active enrolment in Shopify Payments
+CM-PAY-010	shopify	core	SH-C-073/decides/SH-S-0380	covers only transactions processed through Shopify Payments
+CM-PAY-010	shopify	core	SH-C-073/decides/SH-S-0403	for businesses in the United States, online card-not-present
+CM-PAY-010	shopify	own-service	SH-C-073/responsible/SH-S-0401	the warranty issuer, Shopify Inc.
+CM-PAY-010	shopify	shows	SH-C-073/responsible/SH-S-0402	not insurance; an add-on to the general Shopify Payments services
+CM-PAY-010	shopify	shows	SH-C-073/where/SH-S-7109	terms page Fraud Protect for Shopify Payments, Terms of Warranty Service
+CM-PAY-010	shopify	shows	SH-C-073/where/SH-S-7110	terms page Fraud Protection Warranty for Shopify Payments (beta)
+CM-PAY-010	shopify	shows	SH-I-1367	legal agreement View Shopify Protect terms
+CM-PAY-011	shopify	core	SH-C-076/where/SH-S-7114	route Third-party payment providers in section Payments
+CM-PAY-011	shopify	core	SH-C-076/where/SH-S-7115	route alternative-providers in section Payments
+CM-PAY-011	shopify	core	SH-C-076/decides/SH-S-5092	the providers route gated by MANAGE_PAYMENTS_SETTINGS
+CM-PAY-011	shopify	core	SH-C-076/decides/SH-S-0374	activate or change a payment provider from the admin's Payments page
+CM-PAY-011	shopify	extension-point	SH-C-076/where/SH-S-0813	API group Payments Apps API
+CM-PAY-011	shopify	extension-point	SH-C-076/where/SH-S-0445	five types of payments extensions
+CM-PAY-011	shopify	extension-point	SH-C-076/decides/SH-S-0440	only approved Partners build payments extensions on Shopify's Payments Platform
+CM-PAY-011	shopify	extension-point	SH-C-076/decides/SH-S-0442	payments apps must be approved by Shopify
+CM-PAY-011	shopify	extension-point	SH-C-076/decides/SH-S-0444	Shopify decides a payments extension's public listing
+CM-PAY-011	shopify	extension-point	SH-C-076/decides/SH-S-0291	Payments Applications subject to Shopify's review and approval
+CM-PAY-011	shopify	extension-point	SH-C-076/decides/SH-S-0441	custom payment extensions for eligible Shopify Plus merchants
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-0906	the app's mutation paymentSessionResolve
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6261	the app's scope write_payment_gateways
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6262	write_payment_gateways and write_payment_sessions for a payments app
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6267	the app's scope write_payment_sessions
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6077	scope read_payment_gateways
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6080	scope read_payment_sessions
+CM-PAY-011	shopify	extension-point	SH-I-1889	App Store category Payment apps
+CM-PAY-011	shopify	shows	SH-C-076/responsible/SH-S-0443	payments extensions under Payments Partner requirements, revenue share
+CM-PAY-011	shopify	shows	SH-C-076/responsible/SH-S-0292	Payments Developers enter a Revenue Share agreement
+CM-PAY-011	shopify	shows	SH-C-076/responsible/SH-S-0293	a wind-down period when a developer stops supporting the app
+CM-PAY-011	shopify	shows	SH-C-076/boundary/SH-S-0450	mTLS between Shopify and payments apps
+CM-PAY-011	shopify	shows	SH-C-076/boundary/SH-S-0447	retry policy for requests to Shopify
+CM-PAY-011	shopify	shows	SH-C-076/reason/SH-S-0442	the stated reason: a positive buyer experience
+CM-PAY-011	shopify	shows	SH-I-2199	help-center section Third-party payment providers
+CM-PAY-011	salla	core	SA-C-120/where/SA-S-0069	the payment methods page's other gateways (ميسر - هايبر باي)
+CM-PAY-011	salla	core	SA-C-120/decides/SA-S-3132	released flag knet (plus, pro, special)
+CM-PAY-011	salla	core	SA-C-120/decides/SA-S-3144	released flag geidea (plus, pro, special)
+CM-PAY-011	salla	outside	SA-C-120/where/SA-S-0099	payments collected through the connected gateway instead of Salla Payments
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-0100	Salla Payments can't be activated while Tap is connected
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-0130	the K net tap connection requires the Tap service
+CM-PAY-011	salla	shows	SA-C-120/boundary/SA-S-0205	credentials copied from the merchant's gateway account
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3129	flag tap, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3130	flag hyperpay, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3131	flag moyasar, not released
+CM-PAY-011	salla	shows	SA-C-120/decides/SA-S-3111	flag pay-tabs, not released
+CM-PAY-012	shopify	core	SH-C-078/decides/SH-S-0024	Shopify automatically creates accounts to accept payments, with PayPal, Apple Pay, Google Payment and Shop Pay
+CM-PAY-012	shopify	core	SH-C-078/boundary/SH-S-2540	UCP payment handler com.google.pay (store capture-plus)
+CM-PAY-012	shopify	core	SH-I-2482	access scope write_cart_wallet_payments
+CM-PAY-012	shopify	outside	SH-C-078/responsible/SH-S-0025	Apple Pay is a Third Party Service
+CM-PAY-012	shopify	outside	SH-C-078/responsible/SH-S-0026	Google Pay is a Third Party Service
+CM-PAY-012	shopify	outside	SH-C-078/responsible/SH-S-0027	Meta Pay is a Third Party Service
+CM-PAY-012	shopify	outside	SH-C-078/responsible/SH-S-0028	Amazon Pay is a Third Party Service
+CM-PAY-012	shopify	shows	SH-C-078/responsible/SH-S-0024	the merchant activates the accounts and complies with the third parties' terms
+CM-PAY-012	shopify	shows	SH-C-078/decides/SH-S-0419	accelerated checkout buttons for Apple Pay, Google Pay, Amazon Pay and PayPal (core in CM-CHK-008)
+CM-PAY-012	shopify	shows	SH-I-2483	access scope write_mobile_payments, placed here by Q1, undefined
+CM-PAY-012	shopify	shows	SH-I-2484	access scope read_mobile_payments, placed here by Q1, undefined
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-1962	plan line Apple Pay الدفع عبر (سلة بلس)
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-1964	plan line Google Pay الدفع عبر (سلة بلس)
+CM-PAY-012	salla	core	SA-C-119/decides/SA-S-1963	plan line stc pay الدفع عبر (سلة بلس)
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-3109	released flag apple-pay (plus, pro, special)
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-3421	released flag apple-pay.merchants, enabled in the answering store
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-0074	Apple Pay activated automatically once mada and Visa are
+CM-PAY-012	salla	core	SA-C-119/where/SA-S-0129	stc pay through Salla's gateway, in place of the direct connection
+CM-PAY-012	salla	shows	SA-C-119/decides/SA-S-0199	PayPal available as a digital wallet option (UAE)
+CM-PAY-012	salla	shows	SA-C-110/decides/SA-S-3110	flag google-pay, not released
+CM-PAY-012	salla	shows	SA-C-110/decides/SA-S-0057	UAE: Visa, Mastercard and Apple Pay through Salla Payments
+CM-PAY-012	salla	shows	SA-C-110/decides/SA-S-0063	Kuwait: KNET, Visa, Mastercard and Apple Pay through Salla Payments
+CM-PAY-012	salla	shows	SA-C-119/responsible/SA-S-5048	Salla shares the store's data with the provider to register the account
+CM-PAY-013	shopify	core	SH-C-077/where/SH-S-7116	route PayPal Express Checkout in section Payments
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-5092	the PayPal route gated by MANAGE_PAYMENTS_SETTINGS
+CM-PAY-013	shopify	core	SH-C-063/decides/SH-S-0022	on sign-up Shopify creates a PayPal Express Checkout account for the merchant
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-0022	the same sentence, under SH-C-077
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-0416	a new store automatically receives a PayPal Express Checkout account
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-0418	only the store owner can edit the PayPal Express information
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-0312	PayPal Wallet paid through Shopify Payments, France and the United States
+CM-PAY-013	shopify	core	SH-C-077/decides/SH-S-7024	plan row PayPal Wallet rates
+CM-PAY-013	shopify	outside	SH-C-077/where/SH-S-0023	PayPal Express Checkout is a Third Party Service
+CM-PAY-013	shopify	outside	SH-C-077/decides/SH-S-0417	the merchant's email is shared with PayPal to set up the account
+CM-PAY-013	shopify	outside	SH-C-077/boundary/SH-S-0311	other providers have their own methods of transferring funds
+CM-PAY-013	shopify	shows	SH-C-077/responsible/SH-S-0024	the merchant activates the accounts and answers to their terms
+CM-PAY-013	shopify	shows	SH-I-2196	help-center section PayPal Express Checkout
+CM-PAY-013	salla	core	SA-C-119/decides/SA-S-1961	plan line PayPal الدفع عبر (سلة بلس)
+CM-PAY-013	salla	core	SA-C-119/where/SA-S-0199	choose PayPal on the page طرق الدفع and enter the account's details (UAE)
+CM-PAY-013	salla	shows	SA-C-119/decides/SA-S-0059	PayPal available as a digital wallet option (UAE)
+CM-PAY-013	salla	shows	SA-C-119/decides/SA-S-3145	flag paypal, not released
+CM-PAY-014	shopify	core	SH-C-074/where/SH-S-7111	route Shop Pay in section Payments
+CM-PAY-014	shopify	core	SH-C-074/decides/SH-S-5248	the Shop Pay route gated by SHOPIFY_PAYMENTS or MANAGE_PAYMENTS_SETTINGS
+CM-PAY-014	shopify	core	SH-C-074/where/SH-S-0852	API group Shop Pay Wallet API
+CM-PAY-014	shopify	core	SH-C-074/boundary/SH-S-0852	the same label, under boundary
+CM-PAY-014	shopify	core	SH-C-074/boundary/SH-S-2542	UCP capability dev.shopify.shop_pay (store capture-plus)
+CM-PAY-014	shopify	own-service	SH-C-074/responsible/SH-S-0411	the Shop Pay Merchant Terms' Shopify means Shopify Inc. and its Affiliates
+CM-PAY-014	shopify	own-service	SH-C-074/responsible/SH-S-0413	under Accelerated Checkout (Shop Pay), Shopify collects and stores the customer's personal information
+CM-PAY-014	shopify	shows	SH-C-074/reason/SH-S-0406	customers save email, payment method, shipping and billing details for a faster checkout
+CM-PAY-014	shopify	shows	SH-C-074/responsible/SH-S-0408	Shopify not a party to the transactions; enables processing by sharing payment credentials
+CM-PAY-014	shopify	shows	SH-C-074/responsible/SH-S-0409	Shop Pay is not a payment processing service
+CM-PAY-014	shopify	shows	SH-C-074/responsible/SH-S-0410	the merchant resolves disputes with customers
+CM-PAY-014	shopify	shows	SH-C-074/boundary/SH-S-0145	using Shop Pay binds the merchant to the Shop Pay Merchant Terms
+CM-PAY-014	shopify	shows	SH-C-074/responsible/SH-S-0244	Shopify engaged by the customer as data controller for Shop Pay (own-service in domain E's CM-CHN-002)
+CM-PAY-014	shopify	shows	SH-C-074/decides/SH-S-5249	route shop-pay-external-configuration behind a beta
+CM-PAY-014	shopify	shows	SH-I-2503	App Store built-in feature Shop Pay
+CM-PAY-014	shopify	shows	SH-I-2194	help-center section Shop Pay accelerated checkout
+CM-PAY-014	salla	shows	SA-C-113/boundary/SA-S-0104	the shopping experience fee includes saving the customer's card and address, from Salla Payments
+CM-PAY-015	shopify	core	SH-C-075/where/SH-S-7112	route shop-pay-installments in section Payments
+CM-PAY-015	shopify	core	SH-C-075/boundary/SH-S-6163	scope unauthenticated_read_shop_pay_installments_pricing
+CM-PAY-015	shopify	core	SH-C-075/boundary/SH-S-1112	the scope's identifier
+CM-PAY-015	shopify	shows	SH-C-075/boundary/SH-S-6147	scope unauthenticated_read_checkouts, held in SH-C-075
+CM-PAY-015	shopify	core	SH-C-075/decides/SH-S-0414	available to eligible stores in the United States, Canada and the United Kingdom
+CM-PAY-015	shopify	core	SH-C-075/decides/SH-S-0415	needs Shopify Payments and Shop Pay activated and a business entity in listed countries
+CM-PAY-015	shopify	core	SH-C-075/boundary/SH-S-0317	payouts for these orders included in Shopify Payments payouts
+CM-PAY-015	shopify	outside	SH-C-075/responsible/SH-S-0126	Merchant Agreement (Shop Pay Installments) with Affirm
+CM-PAY-015	shopify	outside	SH-C-075/responsible/SH-S-7219	payment options provided by Affirm's lending partners
+CM-PAY-015	shopify	extension-point	SH-I-1890	App Store category Pay later apps (placed in SH-C-076)
+CM-PAY-015	shopify	shows	SH-C-075/responsible/SH-S-0318	the merchant doesn't collect payments from customers
+CM-PAY-015	shopify	shows	SH-C-075/reason/SH-S-0580	customers pay in instalments; more flexible options, conversion
+CM-PAY-015	shopify	shows	SH-C-075/where/SH-S-7113	terms route shop-pay-installments/terms
+CM-PAY-015	shopify	shows	SH-C-075/boundary/SH-S-0126	the same sentence, under boundary
+CM-PAY-015	shopify	shows	SH-I-2504	App Store built-in feature Shop Pay Installments
+CM-PAY-015	salla	core	SA-C-118/where/SA-S-0070	deferred payment methods provided by Salla, to pay later in instalments
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-1965	plan line الدفع بالتقسيط عبر تابي وتمارا (سلة بلس)
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-3125	released flag tamara (plus, pro, special)
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-3128	released flag tabby (plus, pro, special)
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-3137	released flag emkan (plus, pro, special)
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-3138	released flag mispay (plus, pro, special)
+CM-PAY-015	salla	core	SA-C-118/decides/SA-S-3142	released flag madfu (plus, pro, special)
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-2106	plan line naming Apple Pay, mada, Tabby and Tamara
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-3126	flag klarna, not released
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-3127	flag deema, not released
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-3136	flag spotii, not released
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-0058	UAE: Tabby and Tamara
+CM-PAY-015	salla	shows	SA-C-118/decides/SA-S-0064	Kuwait: Tabby and Deema
+CM-PAY-015	salla	shows	SA-C-118/responsible/SA-S-0109	Salla shares the store's data to register its account with the provider
+CM-PAY-015	salla	shows	SA-C-118/boundary/SA-S-0075	merchant services help open a Tabby or Tamara account
+CM-PAY-016	shopify	core	SH-C-079/where/SH-S-7117	route Manual payment methods in section Payments
+CM-PAY-016	shopify	core	SH-C-079/decides/SH-S-5092	the route gated by MANAGE_PAYMENTS_SETTINGS
+CM-PAY-016	shopify	core	SH-C-079/where/SH-S-0387	suggested manual payment methods on the Payment providers settings page
+CM-PAY-016	shopify	core	SH-C-079/decides/SH-S-0583	the merchant can create a custom manual payment method
+CM-PAY-016	shopify	core	SH-C-079/boundary/SH-S-0386	orders with manual payments marked unpaid on the Orders page
+CM-PAY-016	shopify	core	SH-C-079/decides/SH-S-0388	manual payments in several currencies need Shopify Payments
+CM-PAY-016	shopify	core	SH-I-0876	staff permission Orders > Record payments
+CM-PAY-016	shopify	core	SH-I-1087	staff permission MARK_ORDERS_AS_PAID
+CM-PAY-016	shopify	core	SH-I-0897	staff permission Drafts > Mark as paid and record payments
+CM-PAY-016	shopify	core	SH-I-1086	staff permission MARK_DRAFT_ORDERS_AS_PAID
+CM-PAY-016	shopify	shows	SH-C-079/decides/SH-S-0322	no transaction fees on manual methods such as cash, COD and bank transfers
+CM-PAY-016	shopify	shows	SH-C-079/decides/SH-S-0385	the merchant arranges to receive the payment
+CM-PAY-016	shopify	shows	SH-C-079/decides/SH-S-5144	record payment in the mobile app (core in domain E's CM-SRF-001)
+CM-PAY-016	shopify	shows	SH-I-2201	help-center section Manual payment methods
+CM-PAY-016	salla	core	SA-C-116/decides/SA-S-1958	plan line الدفع عند الاستلام (سلة بلس)
+CM-PAY-016	salla	core	SA-C-116/where/SA-S-1765	setting Cash on delivery at shipping/shipping.cod
+CM-PAY-016	salla	core	SA-C-116/decides/SA-S-3148	flag cod, released and enabled in the answering store
+CM-PAY-016	salla	core	SA-C-116/decides/SA-S-3264	released flag cash-on-delivery-settings (plus, pro, special)
+CM-PAY-016	salla	core	SA-C-115/decides/SA-S-0122	Salla transfers the cash on delivery balance from its labels' carriers on Sundays and Wednesdays
+CM-PAY-016	salla	core	SA-C-117/where/SA-S-0095	the bank account in the payment methods takes customers' bank transfers, shown at checkout
+CM-PAY-016	salla	core	SA-C-117/decides/SA-S-1956	plan line التحويل البنكي (سلة بلس)
+CM-PAY-016	salla	core	SA-C-117/decides/SA-S-1957	plan line نظام المدفوعات الفورية عبر سريع (سلة بلس)
+CM-PAY-016	salla	core	SA-C-117/decides/SA-S-3149	flag bank, released and enabled in the answering store
+CM-PAY-016	salla	core	SA-C-117/decides/SA-S-2435	staff permission bank_accounts_management
+CM-PAY-016	salla	outside	SA-C-116/responsible/SA-S-0120	Salla doesn't collect cash on delivery through the merchant's own carrier
+CM-PAY-016	salla	outside	SA-C-116/responsible/SA-S-0121	settled directly between the merchant and the carrier
+CM-PAY-016	salla	shows	SA-C-115/reason/SA-S-0124	the settings control when cash on delivery shows, to cut cancellations
+CM-PAY-016	salla	shows	SA-C-115/decides/SA-S-0123	a 1000 SAR maximum where the carrier is one of Salla's labels
+CM-PAY-016	salla	shows	SA-C-115/decides/SA-S-0125	not shown for a cart under 20 SAR
+CM-PAY-017	shopify	core	SH-C-080/where/SH-S-7118	route Local payment methods in section Payments
+CM-PAY-017	shopify	core	SH-C-080/where/SH-S-0420	activate local payment methods with Shopify Payments, region-specific ways to pay
+CM-PAY-017	shopify	core	SH-C-080/boundary/SH-S-0421	local payment orders included in Shopify Payments payouts
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-0582	each method only for a supported country and eligible currency
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-0422	countries outside the business location set up as markets
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-0424	managed payment methods activated by the regions the store sells to
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-7060	plan row Accept local payment methods*, included in every plan
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-7173	setup task sell_globally_local_payments, requiresShopifyPayments (store ibx5bt-xy)
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-7025	plan row MB WAY rates
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-7026	plan row Bizum rates
+CM-PAY-017	shopify	shows	SH-C-080/decides/SH-S-0425	managed payment methods use SNI to personalize checkout
+CM-PAY-017	shopify	shows	SH-C-080/reason/SH-S-0581	the most relevant payment options for the customer's location
+CM-PAY-017	shopify	shows	SH-C-080/where/SH-S-6327	link to the Payments settings
+CM-PAY-017	shopify	shows	SH-I-2216	help-center section Local payment methods
+CM-PAY-017	salla	core	SA-C-110/decides/SA-S-0065	KNET through Salla Payments for Kuwait stores, activated in Salla Payments
+CM-PAY-017	salla	shows	SA-C-110/decides/SA-S-0063	Kuwait: KNET among Salla Payments' methods
+CM-PAY-018	shopify	core	SH-C-081/decides/SH-S-7028	plan row USDC rates
+CM-PAY-018	shopify	core	SH-C-081/decides/SH-S-0433	the Shopify Payments account open in the United States, Canada, Mexico or Hong Kong
+CM-PAY-018	shopify	core	SH-C-081/responsible/SH-S-0432	settlement through the Cryptocurrency Payment Protocol into a Payment Processor Account
+CM-PAY-018	shopify	core	SH-C-081/boundary/SH-S-0430	receive cryptocurrency payments from customers via on-chain transfers
+CM-PAY-018	shopify	outside	SH-C-081/responsible/SH-S-0428	the cryptocurrency gateway's own support channel
+CM-PAY-018	shopify	outside	SH-C-081/responsible/SH-S-0151	the Bridge entity, an affiliate of Stripe, by location
+CM-PAY-018	shopify	shows	SH-C-081/responsible/SH-S-0087	Coinbase is not a Payment Processor; the merchant agrees to the Coinbase Terms
+CM-PAY-018	shopify	shows	SH-C-081/responsible/SH-S-0431	Coinbase doesn't take custody of the payments
+CM-PAY-018	shopify	shows	SH-C-081/decides/SH-S-0426	the merchant verifies cryptocurrencies are acceptable in its region
+CM-PAY-018	shopify	shows	SH-C-081/decides/SH-S-0434	some Credits paid in stablecoins such as USD Coin
+CM-PAY-018	shopify	shows	SH-C-081/where/SH-S-6328	link to the Payments settings
+CM-PAY-018	shopify	shows	SH-I-1368	legal agreement Cryptocurrency Credit Reward Program terms
+CM-PAY-019	shopify	core	SH-C-083/where/SH-S-7119	route Payment customizations in section Payments
+CM-PAY-019	shopify	core	SH-C-083/decides/SH-S-0590	at most 25 payment customization functions on each store
+CM-PAY-019	shopify	core	SH-C-083/decides/SH-S-0591	hiding specific placements only on Shopify Plus stores
+CM-PAY-019	shopify	extension-point	SH-C-083/where/SH-S-0859	Function API Payment Customization
+CM-PAY-019	shopify	extension-point	SH-C-083/where/SH-S-2236	function identifier payment_customization
+CM-PAY-019	shopify	extension-point	SH-I-1472	function target Payment customization (payment_customization)
+CM-PAY-019	shopify	extension-point	SH-C-083/boundary/SH-S-6076	the app's scope read_payment_customizations
+CM-PAY-019	shopify	extension-point	SH-C-083/boundary/SH-S-6259	the app's scope write_payment_customizations
+CM-PAY-019	shopify	extension-point	SH-C-083/boundary/SH-S-6260	write_payment_customizations to invoke the mutations
+CM-PAY-019	shopify	extension-point	SH-C-083/boundary/SH-S-1043	the scope's identifier
+CM-PAY-019	shopify	shows	SH-C-083/where/SH-S-0589	rename, reorder, hide payment methods at checkout, set payment terms, add a review requirement
+CM-PAY-019	shopify	shows	SH-C-083/boundary/SH-S-0859	the same label, under boundary
+CM-PAY-019	shopify	shows	SH-C-083/responsible/SH-S-7281	the developer alone answers for the Application
+CM-PAY-019	shopify	shows	SH-I-2119	help-center section Customizing payment methods and delivery options at checkout
+CM-PAY-019	salla	core	SA-C-121/where/SA-S-1877	dashboard link Payment restrictions at /payments/rules
+CM-PAY-019	salla	core	SA-C-121/where/SA-S-1748	settings page payments/payment-restrictions
+CM-PAY-019	salla	core	SA-C-121/decides/SA-S-2139	plan line تعيين قيود الدفع (سلة برو)
+CM-PAY-019	salla	core	SA-C-121/decides/SA-S-2145	plan line قيود الدفع والحماية من الاحتيال (سلة برو)
+CM-PAY-019	salla	core	SA-C-121/decides/SA-S-2401	staff permission payments_rules_management
+CM-PAY-019	salla	core	SA-C-121/decides/SA-S-3299	released flag payments-rules (special, pro)
+CM-PAY-019	salla	core	SA-C-121/decides/SA-S-3164	released flag customer-payment-white-list (special)
+CM-PAY-019	salla	shows	SA-C-121/decides/SA-S-2618	partner permission payments_rules_management, قيود الدفع
+CM-PAY-019	salla	shows	SA-C-121/reason/SA-S-5050	conditions on payment options, to reduce fraud risk, by country or customer
+CM-PAY-019	salla	shows	SA-C-121/boundary/SA-S-5049	orders referred for review because of a payment restriction
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6263	the app holds write_payment_gateways and write_payment_sessions
+CM-PAY-011	shopify	extension-point	SH-C-076/boundary/SH-S-6264	the same requirement for a payments app
+CM-PAY-011	shopify	shows	SH-C-076/boundary/SH-S-0448	retry policy when Shopify is unreachable
+CM-PAY-011	shopify	shows	SH-C-076/boundary/SH-S-0449	Shopify retries requests to the app's endpoint
+CM-PAY-013	shopify	outside	SH-C-077/responsible/SH-S-0023	the same sentence, under responsible
+CM-PAY-013	shopify	shows	SH-C-077/boundary/SH-S-0024	accounts with third parties including PayPal, under boundary
+CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0025	the same sentence, under where
+CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0026	the same sentence, under where
+CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0027	the same sentence, under where
+CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0028	the same sentence, under where
+CM-PAY-012	shopify	shows	SH-C-078/boundary/SH-S-0024	the same sentence, under boundary
+CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-0420	the same sentence, under decides

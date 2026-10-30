@@ -21,3 +21,29 @@ CM-PAY-004	shopify	Retail Payment Activities Act (Canada)	SH-C-067/responsible/S
 CM-PAY-003	shopify	MasterCard (MATCH List)	SH-C-068/decides/SH-S-0098
 CM-PAY-006	shopify	Stripe, PayPal or Adyen, depending on region	SH-C-070/decides/SH-S-0354
 CM-PAY-004	shopify	Global-e	SH-C-065/responsible/SH-S-0566
+CM-PAY-012	shopify	Apple Pay	SH-C-078/responsible/SH-S-0025
+CM-PAY-012	shopify	Google Pay	SH-C-078/responsible/SH-S-0026
+CM-PAY-012	shopify	Meta Pay	SH-C-078/responsible/SH-S-0027
+CM-PAY-012	shopify	Amazon Pay	SH-C-078/responsible/SH-S-0028
+CM-PAY-012	salla	Apple Pay	SA-C-110/decides/SA-S-1962
+CM-PAY-012	salla	Google Pay	SA-C-110/decides/SA-S-1964
+CM-PAY-012	salla	stc pay	SA-C-119/decides/SA-S-1963
+CM-PAY-013	shopify	PayPal	SH-C-077/where/SH-S-0023
+CM-PAY-013	salla	PayPal	SA-C-119/where/SA-S-0199
+CM-PAY-015	shopify	Affirm	SH-C-075/responsible/SH-S-0126
+CM-PAY-015	shopify	Affirm	SH-C-075/responsible/SH-S-7219
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-1965
+CM-PAY-015	salla	Tamara	SA-C-118/decides/SA-S-1965
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-0058
+CM-PAY-015	salla	Tamara	SA-C-118/decides/SA-S-0058
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-0064
+CM-PAY-015	salla	Deema	SA-C-118/decides/SA-S-0064
+CM-PAY-011	salla	Moyasar (ميسر)	SA-C-120/where/SA-S-0069
+CM-PAY-011	salla	HyperPay (هايبر باي)	SA-C-120/where/SA-S-0069
+CM-PAY-011	salla	Tap (تاب)	SA-C-120/decides/SA-S-0100
+CM-PAY-016	salla	SARIE (سريع)	SA-C-117/decides/SA-S-1957
+CM-PAY-017	shopify	MB WAY	SH-C-080/decides/SH-S-7025
+CM-PAY-017	shopify	Bizum	SH-C-080/decides/SH-S-7026
+CM-PAY-017	salla	KNET	SA-C-110/decides/SA-S-0065
+CM-PAY-018	shopify	Coinbase	SH-C-081/responsible/SH-S-0087
+CM-PAY-018	shopify	Bridge (an affiliate of Stripe)	SH-C-081/responsible/SH-S-0151
