@@ -86,6 +86,15 @@ A back-fill runs after a mapping part that added capabilities, and is named for 
 
 Where the coordinator moves a concern into a domain whose parts have already run, `<domain>-amend` lands it, as a mapping part would, and writes its platform's cells for every capability it lacks, and every platform's cells for any capability it adds.
 
+## Parts that run in batches
+
+A large part runs as a series of batches, each by a fresh agent, so that no context grows large. Your message then names your batch: its concerns, and its areas.
+- **Land only your batch's concerns.** The part's files hold the earlier batches' rows: read them through `model --domain D --areas ...`, and land a concern in an existing capability where it is the same thing, as a mapping part would.
+- **Write the cells your batch needs:** for every capability of your batch's areas, a cell for each of the part's platforms that has none yet. Add evidence to an existing cell where your concerns' statements bear on it.
+- **Rule on the unclear candidates of your batch's concerns.**
+- **Append to the part's files,** never rewrite an earlier batch's rows. Number new capabilities past the highest in each area.
+- **Check your batch:** `python3 -I method/check_class_part.py <the part's folder> --concerns <your batch's concerns> --areas <your batch's areas>`. The last batch checks the whole part, without the options.
+
 ## Cells and evidence
 
 **A cell** is one capability and one platform: `held` is `statements` where the platform's statements show the capability, or `none-held`. `none-held` means only that the concern map holds nothing found by the terms searched. It never means the platform lacks the capability.

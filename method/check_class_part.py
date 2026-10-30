@@ -2,7 +2,11 @@
 part doesn't write: each cell's places, scopes and gaps, from its statement keys.
 
 Usage: python3 -I method/check_class_part.py studies/class-model/scope.tsv
-       python3 -I method/check_class_part.py studies/class-model/parts/<domain>-<part>
+       python3 -I method/check_class_part.py studies/class-model/parts/<domain>-<part> [--concerns IDS] [--areas AREAS]
+
+--concerns and --areas check one batch of a part that runs in batches: only the batch's concerns must land, only the
+capabilities of the batch's areas need their cells, and only the candidates of the batch's concerns need rulings. Every
+other test runs on all the part's rows. The last batch, and the coordinator, check the whole part without them.
 
 A part is <domain>-anchor, -woocommerce, -backfill-woocommerce, -zid, -backfill-zid, -bigcommerce, -backfill-bigcommerce
 or -amend, in that order. A part is checked against the domain's model so far: the parts of the same domain that come
@@ -172,6 +176,9 @@ def family(cap, caps):
     return up | down
 
 
+BATCH = {"concerns": None, "areas": None}
+
+
 def check_part(d):
     name = os.path.basename(os.path.normpath(d))
     domain, kind = part_kind(name)
@@ -315,6 +322,8 @@ def check_part(d):
             problem(f"{w}: fit must be clean or strained")
         if r["fit"] == "strained" and not r["reading"].strip():
             problem(f"{w}: a strained fit says what doesn't fit in reading")
+    if BATCH["concerns"] is not None:
+        want &= BATCH["concerns"]
     for c in sorted(want - set(landed)):
         problem(f"landings.tsv: {c} (domain {domain} in scope.tsv) doesn't land")
 
@@ -454,6 +463,8 @@ def check_part(d):
         need = {(c, p) for c in caps for p in done_before}
     else:
         need = {(c, p) for c in caps for p in set(done_before) | set(plats) | {"shopify", "salla"}}
+    if BATCH["areas"] is not None:
+        need = {(c, p) for c, p in need if caps[c]["area"] in BATCH["areas"]}
     for c, p in sorted(need - set(cells) - set(cells_prior)):
         problem(f"cells.tsv: no cell for {c} and {p}")
 
@@ -548,6 +559,8 @@ def check_part(d):
                 problem(f"{w}: apart, but {', '.join(sorted(both))} cites keys of both sides: joined?")
         else:
             problem(f"{w}: ruling must be joined:<cap_id>, nested:<cap_id> or apart")
+    if BATCH["concerns"] is not None:
+        need_r = {cid for cid in need_r if set(ids(uc[cid]["shopify"]) + ids(uc[cid]["salla"]) + ids(uc[cid]["woocommerce"])) & BATCH["concerns"]}
     for cid in sorted(need_r - got_r):
         problem(f"rulings.tsv: no ruling on {cid}, which holds concerns whose join this part decides")
 
@@ -584,9 +597,14 @@ def check_part(d):
 
 
 def main():
-    if len(sys.argv) != 2:
+    args = sys.argv[1:]
+    if not args:
         sys.exit(__doc__)
-    t = sys.argv[1]
+    t = args[0]
+    for opt in ("--concerns", "--areas"):
+        if opt in args:
+            v = args[args.index(opt) + 1]
+            BATCH[opt[2:]] = set(x for x in re.split(r"[,;\s]+", v) if x)
     if t.endswith("scope.tsv"):
         check_scope(t)
     else:

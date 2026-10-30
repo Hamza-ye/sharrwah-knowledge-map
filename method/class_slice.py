@@ -22,17 +22,22 @@ Commands:
   matches   --concerns ID[,ID...]              Q1's matches and unclear candidates that hold any of those concerns
   gaps      --platform P --concerns ID[,ID...] Q1's gaps on those concerns, with their kind
   outscope  --platform P --terms "a;b"         the platform's inventory entries Q1 left out of scope, by term
-  model     --domain D [--platform P]          the domain's model as written so far, from its parts in
+  model     --domain D [--platform P] [--areas A;B]
+                                               the domain's model as written so far, from its parts in
                                                studies/class-model/parts/ (yours included): each capability, its
                                                landed concerns, and each platform's cell (held, terms, the placements
                                                its evidence supports)
   homonyms                                     Q1's list of the same word naming different things
-  candidates --domain D --platform P [--all] [--top N] [--width N]
+  candidates --domain D --platform P [--all] [--top N] [--width N] [--areas A;B]
                                                for each capability of the domain's model that has no cell for P (or
                                                every one, with --all): P's statements that hold the terms the other
                                                platforms' cells use for it, and their searched terms, ranked by how many
                                                terms each holds, the domain's own concerns first. Leads to read, not
                                                evidence: a cell still cites only what its statements show
+  batches   --domain D --platforms P[,P] [--size N]
+                                               the domain's concerns for those platforms, cut into batches of about N
+                                               concerns (12), by the area its scope reason names, areas kept whole where
+                                               they fit: for a part that runs in batches, each by a fresh agent
   uncited   --domain D [--platform P] [--width N]
                                                the statements of the domain's concerns that no evidence row of its parts
                                                cites, by concern
@@ -284,7 +289,10 @@ def cmd_candidates(a):
     dom = {r["concern_id"]: r for r in scope_rows()}
     st = items(a.platform)
     hay = [(r, fold(r["identifier"] + " " + r["statement"])) for r in st]
+    keep = set(ids(a.areas)) if a.areas else None
     for cid in sorted(caps):
+        if keep and caps[cid]["area"] not in keep:
+            continue
         have = cells.get(cid, {})
         if a.platform in have and not a.all:
             continue
@@ -305,6 +313,30 @@ def cmd_candidates(a):
         print(f"## {cid}\t{caps[cid]['capability']}\n   terms: {'; '.join(sorted(terms)) or '(none)'}\n   {len(scored)} statements hold a term")
         for neg, _, k, r, hit, d in scored[:a.top]:
             print(f"   {k}\t[{d}] {clip(r['identifier'], 60)}\t{clip(r['statement'], a.width)}\t({'; '.join(hit[:4])})")
+
+
+def cmd_batches(a):
+    plats = [x for x in re.split(r"[,;\s]+", a.platforms) if x]
+    areas = [r["area_id"] for r in rows(os.path.join(MODEL, "seed", "km-areas.tsv")) if r["domain"].startswith(a.domain + " ")]
+    by = {x: [] for x in areas + ["?"]}
+    for r in scope_rows():
+        if r["domain"] == a.domain and r["platform"] in plats:
+            found = [x for x in re.findall(r"\(([A-Z]{3})\)", r["reason"]) if x in areas]
+            by[found[0] if found else "?"].append(r["concern_id"])
+    batches, cur, cur_areas = [], [], []
+    for ar in areas + ["?"]:
+        cs = by[ar]
+        if not cs:
+            continue
+        if cur and len(cur) + len(cs) > a.size:
+            batches.append((cur_areas, cur)); cur, cur_areas = [], []
+        while len(cs) > a.size:
+            batches.append(([ar], cs[:a.size])); cs = cs[a.size:]
+        cur += cs; cur_areas.append(ar)
+    if cur:
+        batches.append((cur_areas, cur))
+    for i, (ar, cs) in enumerate(batches, 1):
+        print(f"batch {i}\tareas {';'.join(dict.fromkeys(ar))}\t{len(cs)} concerns\t{','.join(cs)}")
 
 
 def cmd_uncited(a):
@@ -347,8 +379,11 @@ def cmd_model(a):
                 ev.setdefault((r["cap_id"], r["platform"]), set()).add(r["supports"])
     if not caps:
         sys.exit(f"no parts of domain {a.domain} yet")
+    keep = set(ids(a.areas)) if a.areas else None
     for cid in sorted(caps):
         c = caps[cid]
+        if keep and c["area"] not in keep:
+            continue
         par = f"  parent {c['parent']}" if c.get("parent", "").strip() else ""
         print(f"{cid}\t{c['area']}\t{c['capability']}{par}\n    landed: {', '.join(land.get(cid, [])) or '(none)'}")
         for p in PLATFORMS:
@@ -376,10 +411,11 @@ def main():
     s = sub.add_parser("matches"); s.add_argument("--concerns", required=True, nargs="+")
     s = sub.add_parser("gaps"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--concerns", required=True, nargs="+")
     s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
-    s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
+    s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS); s.add_argument("--areas")
     sub.add_parser("homonyms")
     s = sub.add_parser("candidates"); s.add_argument("--domain", required=True); s.add_argument("--platform", required=True, choices=PLATFORMS)
-    s.add_argument("--all", action="store_true"); s.add_argument("--top", type=int, default=10); s.add_argument("--width", type=int, default=120)
+    s.add_argument("--all", action="store_true"); s.add_argument("--top", type=int, default=10); s.add_argument("--width", type=int, default=120); s.add_argument("--areas")
+    s = sub.add_parser("batches"); s.add_argument("--domain", required=True); s.add_argument("--platforms", required=True); s.add_argument("--size", type=int, default=12)
     s = sub.add_parser("uncited"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS); s.add_argument("--width", type=int, default=120)
     a = ap.parse_args()
     globals()["cmd_" + a.cmd](a)
