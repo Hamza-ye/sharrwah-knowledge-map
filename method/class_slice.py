@@ -68,9 +68,10 @@ def platform_of(concern_id):
 
 
 def fold(s):
+    """Case, diacritics, hamza seats and tatweel ignored. A broken plural is another word: search singular and plural."""
     s = unicodedata.normalize("NFKD", s)
     s = "".join(c for c in s if not unicodedata.combining(c) and c != "ـ")
-    return s.casefold()
+    return s.casefold().replace("\u0629", "\u0647").replace("\u0649", "\u064a")   # taa marbuta as haa, alef maqsura as yaa
 
 
 def ids(arg):
