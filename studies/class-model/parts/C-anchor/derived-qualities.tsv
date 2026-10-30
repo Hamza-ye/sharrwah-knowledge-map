@@ -33,3 +33,10 @@ CM-PAY-025	shopify	Shopify Credit cashback	Up to 3% cashback (every plan)	SH-C-0
 CM-PAY-025	shopify	Shopify Credit repayment term	Shopify Credit offers the option to either pay your full statement balance automatically each month or to repay over 10 calendar months through automatic debits from your daily sales, for a fee.	SH-C-090/boundary/SH-S-0468	
 CM-PAY-026	shopify	Shopify Capital US loan repayment term	The maximum repayment term is 18 months, and 2 minimum payments apply.	SH-C-091/responsible/SH-S-7218	
 CM-PAY-026	salla	Share of net sales collected	يُحسب مبلغ التحصيل بنسبة %25 من صافي المبيعات لكل دفعة، ويُحوّل المتبقي إلى حسابك البنكي.	SA-C-128/where/SA-S-0111	
+CM-PAY-026	shopify	Shopify Commerce Germany GmbH's registration	Applications for merchant financing are made available to you by Shopify Commerce Germany GmbH, which is a registered Credit Broker in Germany.	SH-C-096/responsible/SH-S-0493	Germany
+CM-PAY-027	shopify	Shopify Bill Pay availability	Shopify Bill Pay is available only to merchants in the United States.	SH-C-098/decides/SH-S-0498	merchants in the United States
+CM-PAY-005	salla	Payout bank account, UAE	4-الحساب لدى بنك إماراتي و بعملة الدرهم الإماراتي.	SA-C-112/decides/SA-S-0135	الإمارات
+CM-PAY-005	salla	Payout bank account, Kuwait	- الحساب لدى بنك كويتي وبعملة الدينار الكويتي.	SA-C-112/decides/SA-S-0139	الكويت
+CM-PAY-005	salla	Payout bank account type, Kuwait	يقبل الحساب البنكي التجاري فقط - اما الحسابات البنكية الشخصية فهي غير مقبولة .	SA-C-112/decides/SA-S-0140	الكويت
+CM-PAY-005	salla	Transfer day, digital stores	للمتاجر الرقمية: تُصدر الفواتير يوم الأربعاء، وتُحوَّل المدفوعات يوم الأحد.	SA-C-111/decides/SA-S-0103	المتاجر الرقمية
+CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعات كل 24 ساعة	SA-C-111/decides/SA-S-0202	سلة سبيشل

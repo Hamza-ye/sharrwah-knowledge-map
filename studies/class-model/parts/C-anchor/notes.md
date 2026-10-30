@@ -398,3 +398,96 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gi
 - **CM-PAY-022 to CM-PAY-025 Salla, none-held, with 22, 99, 6 and 11 matches:** the matches come from Shopify's terms Payment methods, Balance, Cards and Credit, each a homonym above; answered in each cell's reading.
 
 For the coordinator, on earlier rows: none found wrong. CM-PAY-014's Salla cell (not-stated) may gain SA-S-3123 (checkout-save-cards) when SA-C-110 lands.
+
+## Batch 6: PAY, Payments, payouts and money (fourth of six)
+
+Concerns: SH-C-096, SH-C-097, SH-C-098, SH-C-173, SH-C-191, SA-C-006, SA-C-110, SA-C-111, SA-C-112, SA-C-113, SA-C-114. Two capabilities added, CM-PAY-027 (Bill Pay) and CM-PAY-028 (accounting and ERP integrations); nine concerns land in existing capabilities, two in the new ones. Every capability was first searched in every domain with `caps` (terms: bill pay, bills, vendor, فواتير, سداد الفواتير, accounting, ERP, محاسبة, المحاسبية, prohibited, restricted business, محظور, الممنوعة, selling policy, سياسة البيع, acceptable use). What it found and kept apart: A's CM-PLN-004, -005 and -007 (the platform's bills to the merchant and their taxes), CM-TRU-009 (the platform's Acceptable Use Policy), CM-TRU-010 and -015; B's CM-CAT-009 (product restrictions) and CM-CAT-010; C's CM-ORD-008 (order invoices); D's CM-B2B-001; E's CM-POS-001 (matched "ERP" inside another word); F's CM-APP-003 and CM-PTN-001. None is the same thing. Both platforms' cells are written for the two new capabilities.
+
+### Where each concern landed, and the grains
+
+- **SH-C-096 and SH-C-097 in CM-PAY-026** (Capital, M-038), as batch 5 cut it: the shared statements (section, routes, entitlement, plan row, eligibility, read_capital) under each concern's own key, and the lenders by country: YouLend GmbH (Germany), YouLend (Ireland, the Netherlands, Spain), as outside and slot fillers. Germany's application "made available to you by Shopify Commerce Germany GmbH, which is a registered Credit Broker in Germany" (SH-S-0493) is own-service, as France's SH-S-0491 is, and a quality.
+- **SH-C-098 in a new CM-PAY-027, Bill Pay.** It has a place of its own (routes finance:billpay, entitlement shopifyFinance.billPay, plan row). Beside CM-PAY-023, not under it: bills are paid "using a bank account or your Shopify Balance account" (SH-S-0501). No parent, like the other Finance pages (batch 5).
+- **SH-C-173 in CM-PAY-002, not a capability of its own,** a reading. Shopify's prohibited and restricted businesses for Shopify Payments have no admin section, route, API group, plan line or app category: Q1's gaps on where, responsible and boundary are all "searched, not found", and what is held is a help page and Part I, B of the Shopify Payments Terms. By the dry run's rule that is no place of its own, so the concern lands in the service whose rule it is. Not A's CM-TRU-009: the categories are "provided by each Payment Processor in your Designated Country" (SH-S-0109) for the payment service, not the platform's own use rules. SH-S-0327 ("business models that, while legal, Shopify Payments can't support") is core under SH-C-173's key; batch 3 cites it as shows under SH-C-063's. The reviewer may prefer a capability of its own under CM-PAY-002, by the WooCommerce side of M-085 and Salla's selling policy (SA-C-172); then SH-C-173 would move there.
+- **SH-C-191 in a new CM-PAY-028, accounting and ERP integrations (M-077).** Both platforms give it app categories; Salla also plan lines and released flags. Area PAY by the seed's "balance and finances"; scope.tsv names G under also for both concerns, and no capability of G or any domain holds it.
+- **SA-C-006 in CM-PAY-003 by M-003, SA-C-110 in CM-PAY-002 by M-026, SA-C-111 and SA-C-112 in CM-PAY-005 by M-027, SA-C-113 in CM-PAY-007 by M-029,** as batch 3 left them. **SA-C-112 has no child** of its own for the payout account: neither platform gives the account a place of its own (Salla's where is an FAQ, SA-S-0094), and M-027 says Shopify keeps the account inside payouts.
+- **SA-C-114 in CM-PAY-004, a join on role** (no Q1 match holds it): who settles the payment service's transactions and on what terms. Shopify names its Payment Processors (SH-S-0082); Salla says only that payments are settled and transferred under the payment services contract (SA-S-0081, SA-S-0088). Salla's cell stays not-stated: no processor, acquirer or licence is held (Q1's gaps, all "page not read").
+- **Evidence added to earlier cells from SA-C-110's statements:** the plan line تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها (SA-S-2106), core in CM-PAY-001, since it activates methods of several providers (Tabby and Tamara among them); the released flag stc-pay (SA-S-3108), core in CM-PAY-012, with stc pay's reason within Salla Payments (SA-S-0128) as shows; the released flag checkout-save-cards (SA-S-3123), core in CM-PAY-014, as batch 5 suggested, a reading from the flag's name: it saves cards at checkout, and for whom isn't stated; the flag knet under SA-C-110 as shows in CM-PAY-017 (core in CM-PAY-011 under SA-C-120's key); the requirements and unreleased flags as shows in CM-PAY-002.
+
+### Earlier `single` landings that can now be written as matches
+
+For the coordinator: SH-C-063 (CM-PAY-002) as `match:M-026`; SH-C-068 (CM-PAY-003) as `match:M-003`; SH-C-069 (CM-PAY-005) as `match:M-027`; SH-C-071 (CM-PAY-007) as `match:M-029`. The Capital landings (SH-C-091 to SH-C-097) wait for SA-C-128 (M-038), and SH-C-191 for SA-C-210 (M-077).
+
+### Joins on role (readings)
+
+- **SA-C-114 in CM-PAY-004** (above): Shopify's processing and settlement "carried out by Payment Processors and Financial Services Providers" (SH-C-064/where/SH-S-0082) against Salla's settlement "under the payment services contract signed during your store verification" (SA-C-114/responsible/SA-S-0081, SA-S-0088).
+
+### Homonyms
+
+- **"Bills":** Shopify Bill Pay, the merchant's bills to its vendors (CM-PAY-027), against the platform's bills to the merchant (A's CM-PLN-004 and -005; Shopify's SH-C-016), Salla's order invoices (فواتير, CM-ORD-008), the billing system of Salla's partners (SA-S-0045) and Salla's key billing_cycle in SA-S-0103, whose text is a transfer day (cited as shows in CM-PAY-005).
+- **"Vendors":** Bill Pay's vendors, the merchant's suppliers (SH-S-0501), against Salla's marketplace vendors (SA-C-098, its vendors_* permissions and app ui-merchant-vendors). Not cited.
+- **"Prohibited" / "restricted":** Shopify Payments' prohibited businesses (CM-PAY-002), against A's CM-TRU-009 (acceptable use), B's CM-CAT-009 (Salla's product restrictions, قيود المنتج) and Salla's قيود الدفع (payment restrictions, CM-PAY-019).
+- **"Integration":** Salla's plan line ربط المتجر بخدمات محاسبية ومالية متكاملة has a description about search engines (SA-S-2152); the words as a whole don't settle it, so it is shows in CM-PAY-028.
+
+### Strained fits
+
+- **SA-C-006 in CM-PAY-003:** its dashboard app SA-S-3549 (held also by SA-C-100 and SA-C-110) is cited in CM-CHK-001.
+- **SA-C-110 in CM-PAY-002:** SA-S-3549 in CM-CHK-001, SA-S-1583 (order.payment.updated) in CM-ORD-001, and SA-S-3123 in CM-PAY-014 (under CM-CHK-008).
+- **SA-C-113 in CM-PAY-007:** SA-S-0104 in CM-PAY-014 (batch 4).
+
+### Statements shared with other domains
+
+- SA-C-006's SA-S-0133 and SA-S-0142 (entity type, legal entity) are core in A's CM-ACC-004, and SA-S-0141 (store country) core in A's CM-ONB-001: all three are shows in CM-PAY-003, which doesn't rest on them.
+- SA-S-0138 (beneficial owners' data) is shows in A's CM-TRU-002 and core here, as A's note asks that Salla's store verification count once, in domain C. SA-S-0136 (UAE licence types accepted in verification) is shows in A's CM-TRU-010 under SA-C-231 and core here. SA-S-0131 and SA-S-0118 (the regulatory reason, the mandatory e-commerce certificate) are shows in both.
+- SA-S-0105 (VAT at 15% on the fees) is shows in A's CM-PLN-007 and shows in CM-PAY-007.
+- SA-S-3185, the released flag sbc-registration, is core in CM-PAY-003 by the convention on released flags, as Q1 placed it in store verification. Its name doesn't say what it registers; if the coordinator reads it as the e-commerce certificate, it belongs to A's CM-TRU-010, which doesn't cite it.
+- SH-C-191's SH-S-0058 and SH-S-7284 are general clauses of Shopify's Terms on Third Party Services; shows only here.
+
+### Rulings
+
+- **U-024 (SH-C-080 against SA-C-110): `joined:CM-PAY-017`,** as batch 4 left it.
+- **U-023 (SH-C-078 against SA-C-110): `joined:CM-PAY-012`.** The pair against SA-C-119 is left.
+- **U-027 (SH-C-065, SH-C-066 and SH-C-067 against SA-C-114): `joined:CM-PAY-004`,** three rows. They follow the cells; the candidate's question, which licensed entity holds Salla's funds, isn't answered by any statement held.
+- **U-007 (SH-C-008), U-011 (SH-C-006) against SA-C-006: `apart`,** scope.tsv gives them domain A with no also. **U-008 (SH-C-004 and SH-C-005 against SA-C-006) and U-029 (SH-C-017 against SA-C-113): `apart`:** domain A names C under also, but no capability here cites their keys; A's CM-ACC-004 and CM-PLN-007 hold the joins.
+
+### Left for later batches
+
+- **U-038 (SH-C-173 against SA-C-172):** SA-C-172's batch rules. SH-C-173 is in CM-PAY-002, whose Salla cell cites SA-C-110's SA-S-0068 (agreeing to the selling policy when activating) as shows; if SA-C-172's keys are cited in CM-PAY-002 too, the ruling is `joined:CM-PAY-002`. The selling policy's text isn't held.
+- **U-064 and M-077:** SA-C-210 lands in CM-PAY-028, whose Salla cell already cites its keys, so SH-C-191 against SA-C-210 is `joined:CM-PAY-028`; SH-C-196 against SA-C-210 is `apart` (scope.tsv gives SH-C-196 domain A, no also).
+- **U-023, SH-C-078 against SA-C-119;** **U-027, the pairs against SA-C-177** (CM-PAY-004's Salla cell cites only SA-C-177's agreement entry SA-I-2612); **M-038, SA-C-128** in CM-PAY-026.
+
+### For the coordinator, on earlier rows
+
+I added evidence to earlier cells without rewriting their readings, which now don't name it:
+- **CM-PAY-003 Salla:** its reading says the entity type and legal entity steps "are not cited here"; they now are, as shows. It could add the core rows SA-S-0136, SA-S-0138 and SA-S-3185.
+- **CM-PAY-014 Salla:** its reading says no Salla statement gives a flag; the flag checkout-save-cards (SA-S-3123) is now core, so the cell is no longer not-stated.
+- **CM-PAY-026 Shopify:** own-service Shopify Commerce Germany GmbH (SH-S-0493); outside YouLend GmbH and YouLend (SH-S-0492, SH-S-0494 to SH-S-0496).
+- **CM-PAY-002 Shopify:** core SH-S-0327 under SH-C-173; outside the Payment Processors' categories and the Payment Network Rules (SH-S-0108, SH-S-0109).
+- **CM-PAY-001, -005, -012 Salla:** core SA-S-2106; core the payout account's bank, currency and type (SA-S-0135, SA-S-0139, SA-S-0140) and the Special plan's 24-hour deposit (SA-S-2193, SA-S-0202); core the flag stc-pay (SA-S-3108).
+No earlier row was found wrong.
+
+### Gaps
+
+- No statement held names the maker of the Shopify Bill Pay app (SH-S-0500: install from the App Store); Melio "provides" and "powers" it (outside). No own-service is claimed.
+- SH-C-173: Q1's where, responsible and boundary gaps (searched, not found). Salla's selling policy (SA-C-172) isn't held (U-038).
+- SA-C-114: all four placements "page not read"; SA-C-112 responsible and reason, SA-C-111 and SA-C-113 reason, SA-C-006 responsible, "page not read". SA-C-210: responsible (stated only in general terms), reason (page not read). Q1's reason gaps on SH-C-096, SH-C-097, SH-C-098 and SH-C-191 (searched, not found).
+- No Salla statement held shows paying the merchant's own bills (CM-PAY-027, none-held).
+
+### Qualities
+
+- CM-PAY-026 Shopify: Shopify Commerce Germany GmbH, a registered Credit Broker (SH-S-0493). CM-PAY-027 Shopify: United States only (SH-S-0498).
+- CM-PAY-005 Salla: the payout account at an Emirati bank in dirhams (SA-S-0135), at a Kuwaiti bank in dinars (SA-S-0139), commercial accounts only in Kuwait (SA-S-0140), the digital stores' transfer on Sunday (SA-S-0103), deposits every 24 hours on سلة سبيشل (SA-S-0202).
+
+### Checker
+
+The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gives "0 problems, 40 flags for the reviewer". I fixed one problem in my rows, U-023's Shopify key (SH-C-078/where/SH-S-0419, a key CM-PAY-012 doesn't cite; now SH-S-0025 and SH-S-0026, which it does), and one flag: SH-I-0805 (Finances) is dropped from CM-PAY-027, since Q1 also places it in SH-C-069 and citing it there made batch 3's SH-C-069 landing read as strained. The flags on CHK, ORD and CM-PAY-001 to -026 are batches 1 to 5's, answered in their sections. Mine:
+- **Own-service on SH-S-0493:** it names Shopify Commerce Germany GmbH, a company of Shopify's group by its legal name, as the one that makes the financing application available, as France's SH-S-0491.
+- **CM-PAY-027 Salla, none-held, 26 matches:** Salla's marketplace vendors, its postpaid labels and its partners' billing, answered in the cell's reading.
+- **SA-S-0104 in CM-PAY-007 and CM-PAY-014:** batch 4's, answered there.
+`uncited --domain C` lists none of this batch's concerns' statements.
+
+## The coordinator's corrections after batch 6 (30 October)
+
+- **SH-C-063, SH-C-068, SH-C-069 and SH-C-071** are written as Q1's matches M-026, M-003, M-027 and M-029, now that their Salla sides have landed.
+- **Seven cells' readings** name batch 6's rows: Salla's CM-PAY-001, -003, -005, -012 and -014, Shopify's CM-PAY-002 and -026. CM-PAY-014's Salla cell now holds a released flag, so it is no longer not-stated.
+- **SA-S-3185, the released flag sbc-registration,** is `core` in CM-PAY-003 on its name; the final review weighs whether it belongs to A's CM-TRU-010.
+

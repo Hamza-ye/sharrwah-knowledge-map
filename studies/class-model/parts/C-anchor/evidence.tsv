@@ -1064,3 +1064,112 @@ CM-PAY-026	salla	shows	SA-C-128/boundary/SA-S-0111	the same sentence, under boun
 CM-PAY-026	salla	outside	SA-C-128/responsible/SA-S-0112	managed by the fund manager Tanami, Sharia compliant
 CM-PAY-026	salla	outside	SA-C-128/decides/SA-S-0113	the fund manager verifies the business and its bank account
 CM-PAY-026	salla	shows	SA-C-128/responsible/SA-S-0114	the fund manager's approval and the Investment Agency Agreement
+CM-PAY-026	shopify	core	SH-C-096/where/SH-S-5096	own route access_account/capital, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/where/SH-S-1551	own admin section Capital, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-5379	entitlement shopifyFinance capital true, per store, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-5380	entitlement capital true on development stores, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-0474	eligibility evaluated automatically, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/decides/SH-S-0480	an underwriting review by Shopify Capital, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-096/boundary/SH-S-7310	own access scope read_capital, under SH-C-096
+CM-PAY-026	shopify	shows	SH-C-096/where/SH-S-6334	the Finance page, under SH-C-096
+CM-PAY-026	shopify	core	SH-C-097/where/SH-S-5096	own route access_account/capital, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/where/SH-S-1551	own admin section Capital, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-5379	entitlement shopifyFinance capital true, per store, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-5380	entitlement capital true on development stores, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-0474	eligibility evaluated automatically, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/decides/SH-S-0480	an underwriting review by Shopify Capital, under SH-C-097
+CM-PAY-026	shopify	core	SH-C-097/boundary/SH-S-7310	own access scope read_capital, under SH-C-097
+CM-PAY-026	shopify	shows	SH-C-097/where/SH-S-6334	the Finance page, under SH-C-097
+CM-PAY-026	shopify	shows	SH-C-096/where/SH-S-6343	the Finance page (Germany)
+CM-PAY-026	shopify	outside	SH-C-096/responsible/SH-S-0492	Germany: all loans provided in cooperation with YouLend GmbH
+CM-PAY-026	shopify	own-service	SH-C-096/responsible/SH-S-0493	Germany: the application made available by Shopify Commerce Germany GmbH, a registered Credit Broker
+CM-PAY-026	shopify	shows	SH-C-097/where/SH-S-6344	the Finance page (Ireland, Netherlands or Spain)
+CM-PAY-026	shopify	shows	SH-C-097/where/SH-S-6345	the Finance page
+CM-PAY-026	shopify	shows	SH-C-097/where/SH-S-6346	the Finance page
+CM-PAY-026	shopify	outside	SH-C-097/responsible/SH-S-0494	Ireland: merchant cash advances issued by YouLend
+CM-PAY-026	shopify	outside	SH-C-097/responsible/SH-S-0495	Netherlands: merchant cash advances issued by YouLend
+CM-PAY-026	shopify	outside	SH-C-097/responsible/SH-S-0496	Spain: merchant cash advances issued by YouLend
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-5166	own admin route finance:billpay, feature canAccessBillPay
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-5167	route finance:billpay:redirect, entitlement shopifyFinance.billPay
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-5379	entitlement billPay true, per store
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-5380	entitlement billPay true on development stores
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-5715	feature canAccessBillPay true on the stores read
+CM-PAY-027	shopify	shows	SH-C-098/decides/SH-S-5723	feature canAccessBillPay false on two Advanced stores
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-7065	plan row Schedule, pay, and manage bills with Shopify Bill Pay, Included
+CM-PAY-027	shopify	core	SH-C-098/decides/SH-S-0498	available only to merchants in the United States
+CM-PAY-027	shopify	outside	SH-C-098/responsible/SH-S-7200	Shopify Bill Pay is provided by Melio
+CM-PAY-027	shopify	outside	SH-C-098/responsible/SH-S-0499	powered by Melio, help page
+CM-PAY-027	shopify	outside	SH-C-098/responsible/SH-S-7201	powered by Melio, admin plan page
+CM-PAY-027	shopify	shows	SH-C-098/where/SH-S-0500	installed from the Shopify App Store, no maker named
+CM-PAY-027	shopify	shows	SH-C-098/boundary/SH-S-0501	bills paid from a bank account or the Shopify Balance account, by wire
+CM-PAY-027	shopify	shows	SH-I-2142	help-center section Shopify Bill Pay
+CM-PAY-002	shopify	core	SH-C-173/decides/SH-S-0327	business models, while legal, Shopify Payments can't support
+CM-PAY-002	shopify	shows	SH-C-173/decides/SH-S-0328	the prohibited list isn't exhaustive and varies by region
+CM-PAY-002	shopify	shows	SH-C-173/decides/SH-S-0329	a prohibited category: financial products and services
+CM-PAY-002	shopify	outside	SH-C-173/decides/SH-S-0108	categories imposed by law, the Payment Network Rules, Shopify or the Payment Processor's Financial Services Providers
+CM-PAY-002	shopify	outside	SH-C-173/decides/SH-S-0109	the prohibited and restricted categories provided by each Payment Processor in the Designated Country
+CM-PAY-002	shopify	shows	SH-C-173/reason/SH-S-0169	Shopify Payments as an ecosystem of processors, card networks and banks
+CM-PAY-002	shopify	shows	SH-C-173/reason/SH-S-0170	Shopify's products leverage partnerships with other organizations
+CM-PAY-002	shopify	shows	SH-I-2218	help-center section Shopify Payments eligibility
+CM-PAY-002	shopify	shows	SH-I-2221	help-center section Acceptable business practices and risk evaluation for Shopify Payments
+CM-PAY-028	shopify	extension-point	SH-C-191/where/SH-S-2706	App Store category page Accounting apps
+CM-PAY-028	shopify	extension-point	SH-C-191/where/SH-S-2613	App Store category page ERP apps
+CM-PAY-028	shopify	extension-point	SH-I-1942	App Store category Accounting apps
+CM-PAY-028	shopify	extension-point	SH-I-1849	App Store category ERP apps
+CM-PAY-028	shopify	extension-point	SH-I-1941	App Store category Finance apps
+CM-PAY-028	shopify	extension-point	SH-I-1943	App Store category Finances - Other
+CM-PAY-028	shopify	shows	SH-C-191/decides/SH-S-0755	merchants approve an app's scopes on install
+CM-PAY-028	shopify	shows	SH-C-191/responsible/SH-S-0058	a Third Party Service solely between the merchant and its provider
+CM-PAY-028	shopify	shows	SH-C-191/boundary/SH-S-7284	installing a Third Party Service lets its provider access the store's data
+CM-PAY-028	shopify	shows	SH-I-2302	help-center section on QuickBooks Desktop POS
+CM-PAY-028	salla	extension-point	SA-C-210/where/SA-S-1194	app category Accounting & Finance
+CM-PAY-028	salla	extension-point	SA-C-210/where/SA-S-1195	app category ERP system
+CM-PAY-028	salla	extension-point	SA-C-210/where/SA-S-1222	app category Accounting & Finance, المحاسبة والمالية, slug accounting
+CM-PAY-028	salla	core	SA-C-210/decides/SA-S-2148	plan line الربط مع الخدمات المحاسبية, plan سلة برو
+CM-PAY-028	salla	core	SA-C-210/decides/SA-S-2975	released flag daftra-service, plans plus, pro, special
+CM-PAY-028	salla	core	SA-C-210/decides/SA-S-2994	released flag qoyod-service, plans plus, pro, special
+CM-PAY-028	salla	core	SA-C-210/decides/SA-S-3093	released flag zoho-books-service, plans plus, pro, special
+CM-PAY-028	salla	shows	SA-C-210/decides/SA-S-2152	plan line naming accounting services, its description about search engines
+CM-PAY-028	salla	shows	SA-C-210/decides/SA-S-2188	plan line ربط تكاملي ذكي, plan سلة سبيشل
+CM-PAY-028	salla	shows	SA-C-210/decides/SA-S-3509	flag accounting-service, not released
+CM-PAY-028	salla	shows	SA-C-210/boundary/SA-S-5145	stock synchronised with carriers or accounting systems
+CM-PAY-003	salla	shows	SA-C-006/where/SA-S-3549	dashboard app ui-merchant-payments, whose path holds /payments/kyc
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-0136	UAE trade licence types accepted in verification, accepted or refused case by case
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-0138	beneficial owners' data of owners and managers required in verification
+CM-PAY-003	salla	core	SA-C-006/decides/SA-S-3185	released flag sbc-registration, placed by Q1 in store verification
+CM-PAY-003	salla	shows	SA-C-006/decides/SA-S-3184	flag wathq-v6, not released
+CM-PAY-003	salla	shows	SA-C-006/decides/SA-S-2627	partner permission business_certificate_management
+CM-PAY-003	salla	shows	SA-C-006/decides/SA-S-0133	the entity type chosen in verification, core in domain A's CM-ACC-004
+CM-PAY-003	salla	shows	SA-C-006/decides/SA-S-0142	the store's legal entity, core in domain A's CM-ACC-004
+CM-PAY-003	salla	shows	SA-C-006/decides/SA-S-0141	the store's country decides the government documents, core in domain A's CM-ONB-001
+CM-PAY-003	salla	shows	SA-C-006/reason/SA-S-0131	verification to meet e-commerce regulatory requirements (Saudi Arabia)
+CM-PAY-003	salla	shows	SA-C-006/reason/SA-S-0118	the e-commerce certificate mandatory under the Ministry of Commerce's rules
+CM-PAY-001	salla	core	SA-C-110/decides/SA-S-2106	plan line activating e-payment options such as Apple Pay, mada, Tabby and Tamara
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0066	Kuwait: Salla Payments needs a store on Plus, Pro or Special
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-0060	UAE: e-payment methods on eligible paid plans, cash on delivery otherwise
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-3303	flag salla-pay-basic-trial, not released
+CM-PAY-002	salla	shows	SA-C-110/decides/SA-S-3350	flag restriction-online-payment-activation, not released
+CM-PAY-004	salla	shows	SA-C-110/responsible/SA-S-0081	settled and transferred under the payment services contract (UAE), under SA-C-110
+CM-PAY-004	salla	shows	SA-C-111/responsible/SA-S-0081	the same sentence, under SA-C-111
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-2065	plan line سجل المدفوعات الإلكترونية, plan سلة بلس, a second group
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-2193	plan سلة سبيشل: sales deposited every 24 hours
+CM-PAY-005	salla	core	SA-C-111/decides/SA-S-0202	plan سلة سبيشل: sales deposited every 24 hours
+CM-PAY-005	salla	shows	SA-C-111/decides/SA-S-2646	partner permission list_epayments
+CM-PAY-005	salla	shows	SA-C-111/decides/SA-S-0103	digital stores: invoices on Wednesday, payments transferred on Sunday
+CM-PAY-005	salla	shows	SA-C-111/boundary/SA-S-0083	the e-payments balance holds the sales' dues before transfer, apart from the store balance (UAE)
+CM-PAY-005	salla	core	SA-C-112/decides/SA-S-0135	UAE: the payout account at an Emirati bank, in dirhams
+CM-PAY-005	salla	core	SA-C-112/decides/SA-S-0139	Kuwait: the payout account at a Kuwaiti bank, in dinars
+CM-PAY-005	salla	core	SA-C-112/decides/SA-S-0140	Kuwait: commercial bank accounts only
+CM-PAY-005	salla	shows	SA-C-112/boundary/SA-S-0094	the same sentence as SA-C-112's where, under boundary
+CM-PAY-007	salla	shows	SA-C-113/decides/SA-S-0204	plan سلة سبيشل designed for flexible payment solutions
+CM-PAY-007	salla	shows	SA-C-113/decides/SA-S-0105	VAT at 15% on the total of the fees, shows in domain A's CM-PLN-007
+CM-PAY-007	salla	shows	SA-C-113/responsible/SA-S-0082	the same sentence as SA-C-113's decides, under responsible
+CM-PAY-012	salla	core	SA-C-110/decides/SA-S-3108	released flag stc-pay, plans plus, pro, special
+CM-PAY-012	salla	shows	SA-C-110/decides/SA-S-1963	plan line stc pay الدفع عبر, core under SA-C-119's key
+CM-PAY-012	salla	shows	SA-C-110/reason/SA-S-0128	stc pay connected within Salla Payments to reduce problems and delays
+CM-PAY-014	salla	core	SA-C-110/decides/SA-S-3123	released flag checkout-save-cards, in the answering store
+CM-PAY-017	salla	shows	SA-C-110/decides/SA-S-3132	flag knet under SA-C-110, core in CM-PAY-011 under SA-C-120
