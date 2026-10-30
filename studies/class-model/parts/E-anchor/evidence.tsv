@@ -429,3 +429,142 @@ CM-POS-004	shopify	extension-point	SH-C-144/responsible/SH-S-7281	developer sole
 CM-POS-004	shopify	shows	SH-C-144/boundary/SH-S-0823	label POS in the API reference
 CM-POS-004	shopify	shows	SH-C-144/reason/SH-S-7495	limit enforced for fast loading
 CM-POS-002	shopify	outside	SH-C-184/responsible/SH-S-0089	the P2PE service that encrypts card data on POS Equipment is provided, managed and processed exclusively by Stripe (the coordinator, from batch 5's lead)
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-5202	admin route markets
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-6353	admin link Markets
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5203	section Markets, staff permission VIEW_MARKETS among its eligibility
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-0540	Markets manage how customers experience the store by location, customer group, retail location or channel
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-0541	market customizations control currency, product availability, theme content, domains, languages and taxes
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-7059	plan row Localized selling with Shopify Markets, Included on every plan
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-0787	API category label Shopify Markets
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6042	webhook topic markets/create, read_markets
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6232	write_markets access scope
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-5919	customer_read_markets access scope
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5205	shipping option definitions need the store feature marketDrivenShipping
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5777	store feature marketDrivenShipping true in some captured stores
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-7239	admin server intent create market
+CM-MKS-001	shopify	extension-point	SH-I-1914	App Store category Internationalization apps
+CM-MKS-001	shopify	core	SH-C-113/where/SH-S-6358	Settings > General, where the backup region is set
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0573	every store must have a backup region for Markets
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0574	backup region buyers can browse but not buy
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0575	backup region set to the home country at store creation
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6041	webhook topic markets_backup_region/update
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1769	settings Markets
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1730	setting Market selection (markets/browse_product_method)
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1055	API folder Store Scopes
+CM-MKS-001	salla	core	SA-C-165/boundary/SA-S-0184	GET /scopes lists store scopes for multi-country
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-0157	Multi Markets: customized versions of the store for each country, region or city
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-0158	Multi Markets available on the Special plan
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3339	released flag multi-countries-activate, Pro
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3500	released flag multi-countries, Special and Pro
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3526	released flag multi-countries-advanced, Special
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3342	released flag customize-login-for-multi-markets, Pro and Special
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3340	flag multi-countries-basic, not released
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3011	flag multi-market-origin-country-filter, not released
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3524	flag multi-countries-link, not released
+CM-MKS-002	shopify	core	SH-C-112/where/SH-S-5256	admin route rollouts
+CM-MKS-002	shopify	core	SH-C-112/where/SH-S-6357	admin link Rollouts
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-0576	a rollout is a scheduled set of changes to theme, checkout, discounts or catalogs
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5257	rollout list needs entitlement rollouts.scheduledRollouts
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5258	rollout create needs staff permission CREATE_AND_EDIT_ROLLOUTS
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5827	entitlement scheduledRollouts true in the captured stores
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-6108	read_rollouts access scope
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-1339	webhook topic rollouts/create
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-7246	admin server intent open rollout
+CM-MKS-002	salla	core	SA-C-090/decides/SA-S-2034	Plus plan line جدولة نشر النسخ under store design
+CM-MKS-003	shopify	core	SH-C-110/where/SH-S-7130	admin route managed in section Markets
+CM-MKS-003	shopify	core	SH-C-110/where/SH-S-7131	admin route :id/managed in section Markets
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-5092	updating a managed market needs MANAGE_PAYMENTS_SETTINGS
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0568	needs Basic plan or higher, an online store and Shopify Payments
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0562	available only to merchants in the continental US and certain stores in Canada and the UK
+CM-MKS-003	shopify	core	SH-C-110/boundary/SH-S-0567	all Managed Markets questions go to Shopify Support
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0569	merchant of record disclaimer required at checkout
+CM-MKS-003	shopify	core	SH-C-110/responsible/SH-S-7216	App Store built-in feature: Managed Markets acts as your Merchant of Record
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0563	Global-e becomes the merchant of record
+CM-MKS-003	shopify	outside	SH-C-110/where/SH-S-0561	features powered by Global-e
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0127	Managed Markets Terms with Global-e, the merchant of record service provider
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0564	Global-e provides the tax registration
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0565	funds held in a Global-e account
+CM-MKS-003	shopify	outside	SH-C-106/responsible/SH-S-7275	another party such as Global-e hired as merchant of record
+CM-MKS-003	shopify	shows	SH-C-110/responsible/SH-S-0128	Shopify not a party to the Managed Markets Terms
+CM-MKS-003	shopify	shows	SH-C-110/reason/SH-S-0634	sell abroad without registering a business or for tax, or arranging customs clearance
+CM-MKS-003	salla	shows	SA-C-304/responsible/SA-S-5129	payments and selling on behalf (MoR) in the target market; who does it isn't stated
+CM-MKS-003	salla	extension-point	SA-C-304/boundary/SA-S-5130	Salla connects partners with brands seeking export and expansion
+CM-MKS-004	shopify	core	SH-C-111/boundary/SH-S-7458	Admin API object MarketWebPresence: a market's web presence, can be a different domain
+CM-MKS-004	shopify	core	SH-C-111/decides/SH-S-7061	plan row Assign local domains, Included on every plan
+CM-MKS-004	shopify	extension-point	SH-C-111/where/SH-S-2681	App Store category Geolocation apps
+CM-MKS-004	shopify	shows	SH-C-111/reason/SH-S-7288	a country selector lets customers pick their country and see their currency
+CM-MKS-004	shopify	shows	SH-I-2152	help section Set up automatic storefront redirection for your customers
+CM-MKS-004	salla	core	SA-C-163/decides/SA-S-0154	the currency shown depends on the customer's geographic location
+CM-MKS-005	shopify	core	SH-C-107/where/SH-S-0361	store currency: the admin's currency for pricing and reports
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0361	store currency: the admin's currency for pricing and reports
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0671	the currency used throughout the admin, set before the first sale
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0370	changing it after the first sale needs Shopify Support
+CM-MKS-005	shopify	core	SH-C-107/boundary/SH-S-7457	Admin API field Shop.currencyCode
+CM-MKS-005	salla	core	SA-C-163/decides/SA-S-0154	a default currency added in the store's settings
+CM-MKS-006	shopify	core	SH-C-108/where/SH-S-6354	admin route markets
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0547	a market's currency is displayed to customers and transactions are in it
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-7058	plan row Show prices in local currencies*, Included on every plan
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-7172	sell_globally_local_currencies requires Shopify Payments
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0366	selling in multiple currencies needs Shopify Payments
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0543	full functionality only with Shopify Payments and one-page checkout
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0546	with other providers the price is converted to the default currency at checkout
+CM-MKS-006	shopify	outside	SH-C-108/decides/SH-S-0545	Adyen as the primary gateway can process payments in local currency
+CM-MKS-006	shopify	extension-point	SH-I-1916	App Store category Currency and translation apps
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-1724	settings Currencies (general/currencies)
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-3533	dashboard app path /manage/currencies
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-1060	API folder Currencies
+CM-MKS-006	salla	core	SA-C-163/boundary/SA-S-1148	docs folder Currency
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-1970	Plus plan line إتاحة الدفع عبر +33 عملة
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-2388	staff permission currency_setting_edit
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-3358	released flag currency, Plus, Pro and Special
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-3323	released flag reflect-market-currency
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0156	the merchant sets the currencies available in the store
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0155	the buyer picks a currency from the list beside the cart
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0154	the currency shown depends on the customer's geographic location
+CM-MKS-006	salla	core	SA-C-165/decides/SA-S-0159	default and other supported currencies set per market
+CM-MKS-006	salla	shows	SA-C-163/decides/SA-S-0012	payments integration supports more than 15 currencies
+CM-MKS-007	shopify	core	SH-C-109/where/SH-S-6356	admin route markets
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0544	prices converted automatically at the current rate, or rates set manually
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0548	conversion at the time of the transaction, at that time's rate
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0551	manual exchange rate per market with Managed Markets
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0553	the conversion rate is a mid-market rate without markup
+CM-MKS-007	shopify	core	SH-C-109/responsible/SH-S-0554	the fee Shopify charges to convert currencies when a payment is captured
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0552	selling in local currencies adds a currency conversion fee
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0555	the conversion fee depends on the store's primary country
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0364	from 6 April 2026 the fees are calculated on the gross order
+CM-MKS-007	shopify	shows	SH-C-109/responsible/SH-S-0550	currency conversion risks fall on the merchant
+CM-MKS-007	shopify	shows	SH-C-109/boundary/SH-S-0558	the fee values are in the Terms of Service
+CM-MKS-007	salla	core	SA-C-163/decides/SA-S-3439	released flag currency-exchange, enabled
+CM-MKS-007	salla	core	SA-C-163/decides/SA-S-0117	markets product-price option: prices set automatically by the current exchange rate
+CM-MKS-008	shopify	core	SH-C-032/where/SH-S-1501	settings Languages
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-5268	route languages needs PREFERENCES and entitlement manageStoreLanguage
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-5857	entitlement manageStoreLanguage true in the captured stores
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-7057	plan row Translate your storefront, Included on every plan
+CM-MKS-008	shopify	core	SH-C-032/where/SH-S-0778	API category label Localizations
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6020	webhook topic locales/create, read_locales
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6022	webhook topic locales/update, a locale published or unpublished
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6223	write_locales access scope
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6140	read_translations access scope
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6303	write_translations access scope
+CM-MKS-008	shopify	shows	SH-C-032/reason/SH-S-7493	languages let international customers read products, policies and checkout in their language
+CM-MKS-008	shopify	extension-point	SH-I-1916	App Store category Currency and translation apps
+CM-MKS-008	shopify	shows	SH-I-2163	help section on the Translate & Adapt app; its maker isn't stated
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1723	settings Languages
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1896	admin link Translation log, /manage/languages/logs
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-3556	dashboard app @salla.sa/ui-merchant-languages
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-3567	dashboard app @salla.sa/ui-merchant-localization, /localization
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1065	API folder Languages
+CM-MKS-008	salla	core	SA-C-008/boundary/SA-S-1010	docs page Multi-Language Support
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2074	Plus plan line إتاحة 40 لغة في المتجر
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2075	Plus plan line الترجمة الفورية, for extra fees
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2093	Plus plan line ميزة ترجمة الرسائل
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2396	staff permission languages_management
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2973	released flag languages, Plus, Pro and Special
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2974	released flag custom-message-translation, Plus, Pro and Special
+CM-MKS-008	salla	shows	SA-C-008/reason/SA-S-5009	an added language stays disabled until the merchant picks instant or manual translation
+CM-MKS-008	salla	shows	SA-C-008/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no language
+CM-MKS-009	salla	core	SA-C-166/where/SA-S-1048	API folder Countries
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1050	API folder Cities
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1049	API folder Districts
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1558	access scope countries
+CM-CNT-007	shopify	core	SH-C-111/boundary/SH-S-7458	Admin API object MarketWebPresence: a market's web presence defines its SEO strategy

@@ -8,3 +8,6 @@ CM-POS-002	salla	جيديا (Geidea)	SA-C-095/boundary/SA-S-5040
 CM-POS-002	salla	جيديا (Geidea), its contract with the merchant	SA-C-095/responsible/SA-S-5038
 CM-POS-002	salla	NearPay	SA-C-095/reason/SA-S-5042
 CM-POS-002	shopify	Stripe	SH-C-184/responsible/SH-S-0089
+CM-MKS-003	shopify	Global-e (the merchant of record)	SH-C-110/responsible/SH-S-0563
+CM-MKS-003	shopify	Global-e, under the Service Terms - Shopify Managed Markets	SH-C-110/responsible/SH-S-0127
+CM-MKS-006	shopify	Adyen (as the primary gateway)	SH-C-108/decides/SH-S-0545

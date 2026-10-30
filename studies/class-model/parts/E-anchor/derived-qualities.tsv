@@ -8,3 +8,7 @@ CM-CHN-003	shopify	price above 50 synced marketplace orders	Over 50 synced marke
 CM-POS-001	shopify	POS Pro per plan	POS Pro: Advanced tools for brick‑and‑mortar retailers: $89/mo per location; $89/mo per location; $89/mo per location; Includes 20 locations. Up to 200 with Shopify Payments.	SH-C-142/decides/SH-S-7018	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
 CM-POS-004	shopify	UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-144/decides/SH-S-7485	
 CM-POS-002	salla	Payment terminal per device	رقم جهاز الدفع مخصص لجهاز واحد فقط وفق متطلبات أنظمة الدفع وNearPay	SA-C-095/reason/SA-S-5042	
+CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في المتجر	SA-C-008/decides/SA-S-2074	plan: سلة بلس
+CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098	
+CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970	plan: سلة بلس
+CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012	
