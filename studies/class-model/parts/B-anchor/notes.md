@@ -312,3 +312,8 @@ The coordinator's rulings on the two reviews (`studies/class-model/review-dry-ru
 **Gaps added (S8, S9):** what the feature flags restriction-product-type (SA-S-3351, for CM-CAT-009), inventory-order (SA-S-3495, for CM-INV-007 or CM-INV-001) and product-sale-start (SA-S-3490, a scheduled sale) mean; what bins inside a location are (SH-C-024/decides/SH-S-5201, behind a beta, for CM-INV-005); what allow_negative_quantities inside SA-S-3504 allows (selling below zero stock; no capability holds it); what an inventory type is (max_inventory_types); and what Salla's automatic pricing computes (CM-CAT-013).
 
 **The checker after the corrections:** 0 problems, 8 flags. The three boundary flags are C1's cells (above). CM-SEL-007's tree has no concern landed: it holds as a root (the structure review's resolution). The four none-held flags (CM-CAT-005, CM-CAT-009, CM-INV-004 for Shopify, CM-INV-007 for Salla) hold as the cells review resolved them; two now name the inventory entries they match.
+
+## The coordinator's correction after E-anchor batch 4 (30 October)
+
+- **Shopify Collective counts once.** Its plan row (SH-S-7013) and its description (SH-S-0729) were `core` here, in CM-CAT-010, and in E's CM-CHN-005, Shopify Collective, each cell resting on them alone. They are about Collective itself, and its concern SH-C-141 lands in E. So they stay `core` there and `shows` here, and CM-CAT-010's Shopify cell rests on its sourcing apps (`extension-point`). The capability's name no longer lists Collective; its note says where it is.
+

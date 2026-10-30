@@ -232,3 +232,88 @@ Capabilities CM-CNT-001 to CM-CNT-008 are new, with a Shopify and a Salla cell e
 ## The coordinator's correction after batch 3 (30 October)
 
 - **SH-C-193 is `strained` in CM-SFR-005.** Batch 3 cites its SEO apps category (SH-I-1934) in CM-CNT-007, SEO, another tree, as batch 1's reading foresaw (S1).
+
+
+## Batch 4: area CHN, SH-C-135, SH-C-136, SH-C-137, SH-C-138, SH-C-141, SH-C-195, SA-C-094, SA-C-096, SA-C-097, SA-C-174
+
+Capabilities CM-CHN-001 to CM-CHN-006 are new, with a Shopify and a Salla cell each. Area CHN had none, so no concern joined an existing capability, and no evidence was added to batches 1 to 3's cells. Every reading below is a reading; the landings, cells and rulings cite the keys.
+
+### How the area is cut, and the grains chosen
+
+- **CM-CHN-001 (sales channels and publishing to them) is the root.** Both platforms give it an admin place: Shopify's Sales channels (SH-S-1534, SH-S-1496), Salla's Sales channels (/channels, SA-S-1687). SH-C-135 and SA-C-097 land in it by M-054.
+- **Its children follow the grouping the platforms share:**
+  - Shopify's help puts Shop, Marketplace Connect and Shopify Collective under online-sales-channels (the identifiers of SH-S-0723, SH-S-0727, SH-S-0729).
+  - Salla's plan puts منصة محلي, صانع التطبيقات and سوق الجملة under its sales-channels group knoat-albyaa (SA-S-2067, SA-S-2068, SA-S-2069), and its routes for Mahally, the mobile app, Salla Point, the wholesale market and chat are all under /channel/ (SA-S-3551's path).
+  - So: CM-CHN-002 (the platform's own shopping app or marketplace for buyers: Shop, Mahally), CM-CHN-003 (connecting external marketplaces and syncing their orders), CM-CHN-005 (Shopify Collective), CM-CHN-006 (the store's own branded mobile app).
+- **CM-CHN-006's parent follows Salla's grouping.** Shopify's statements show only an App Store category and API scopes for mobile apps, with no grouping.
+- **CM-CHN-004 (product listings and feeds for channels) is a root.** No held statement puts Shopify's Listings section or product feeds under sales channels. Salla's feed flags sit in its Pixels & feeds concern (SA-C-074), under marketing. scope.tsv's reason for SH-C-138 ("publishing products to sales channels") is a reading, not a statement. A reviewer may nest it under CM-CHN-001 if a statement ties product listings to sales channel apps.
+- **SA-C-174 (App Maker publishing policy) lands in CM-CHN-006.** It is a legal page with no admin place, plan line or API of its own, so by the dry run's rule it isn't a capability. It is a finer part of App Maker. Its join is written as `definition`: the store's own app in Apple's and Google's stores (SA-S-5079 against SH-S-6059).
+- **CM-CHN-003 and the qualities.** Shopify's plan rows on synced marketplace orders give two qualities: 50 a month free, and 1% up to $99/mo above that (SH-S-7050, SH-S-7051).
+
+### Joins on role (readings)
+
+- **CM-CHN-002:** Shop (SH-S-0723, SH-S-0057) against Mahally (SA-S-0005, SA-S-5044). In both, the platform runs a place where buyers find and buy merchants' products, and the order arrives in the merchant's store. Shop is also a delivery-tracking app; Mahally has its own coupons plan line (SA-S-2009) and a customer-wallet flag that isn't released.
+- **CM-CHN-003:** Marketplace Connect (SH-S-0727, plan rows SH-S-7049 to SH-S-7051) against Salla's plan line الربط بمنصات التسوّق العالمية (SA-S-2195). **Salla's line has no description,** so which platforms it connects, and whether orders sync, aren't stated. A Salla help page on the line would settle it.
+
+### Homonyms and terms kept apart
+
+- **"Marketplace":** none of Salla's marketplaces is a sales channel. Its Theme Marketplace (SA-S-1829), Affiliate Marketplace (SA-S-1916), app marketplace (SA-C-194), expert-marketplace and influencer-marketplace flags are markets where partners or services are bought, not places to sell the store's products. None is cited here.
+- **"Sales channel" on Shopify, against Salla's.** Shopify's channel is an app connecting the store to an outside surface (SH-S-0699). Salla's channels are its own channels (Mahally, the mobile app), with a column per channel on a product (SA-S-5046, product.channels.changed). They are joined at CM-CHN-001 by M-054, as the store's channels and the publishing of products to them. The difference is in the placements: extension-point on Shopify, core on Salla.
+
+### Strained fits
+
+- **SA-C-097 in CM-CHN-001.** Its dashboard app @salla.sa/ui-merchant-channel (SA-S-3551) serves /channel/ routes other than vendors, chat, mahally, sallapoint, whatsapp and mobile, which include the information pages at /channel/pages. Batch 3 cites the same statement, under SA-C-093's key, in CM-CNT-003. The checker doesn't flag it, because the two keys differ; I marked the fit strained by S1.
+- Every other landing is clean.
+
+### Concerns read under `also`, and other domains' statements
+
+- **SA-C-074** (Pixels & feeds, domain D, naming E): its released flags google-merchant-feed, facebook-catalog-feed and snapchat-catalog-feed (SA-S-3201, SA-S-3203, SA-S-3205) are cited as core in CM-CHN-004. Domain D's notes leave them to domain E, and its CM-MKT-009 doesn't cite them. Its google-site-verification flag (SA-S-3202) isn't a feed, and isn't cited.
+- **SA-C-098** (wholesale market, domain D, naming B and E): read for U-016, and not cited.
+  - Salla's own grouping puts it among sales channels: plan line سوق الجملة under knoat-albyaa (SA-S-2069), route /channel/vendors (SA-S-3553). The seed lists it in CHN (Souq Eljomla).
+  - Domain D's CM-B2B-001 holds its selling side, and domain B's CM-CAT-010 its buying side, both citing its plan line or permissions as core.
+  - **A lead for the coordinator:** a child of CM-CHN-001 for the wholesale market would cite the same statements as core in a third domain. I left it to D.
+- **SA-C-124** (settlements, domain C, not naming E): its Drop shipping app type (SA-S-1193) and settlement endpoint (SA-S-0179) matched CM-CHN-005's Salla search. They are not cited.
+- **Not cited:**
+  - SA-C-232 (domain A, not naming E): its publishing policy line for App Maker apps on Google and Apple (SA-S-5114, scope صانع التطبيقات). It is a lead for CM-CHN-006's Salla cell, if the coordinator adds E to SA-C-232's also.
+  - SA-C-220's report_selling_channels permission (SA-S-2338, reports): a lead for a sales-channel report, which belongs to analytics.
+  - SA-C-099's Salla Chat and WhatsApp routes under /channel/ (domain D).
+  - Shopify's agentic channel (SH-C-140, domain F, naming E): "Sell in AI chats" is in Shopify's sales channels in the seed. It was not read here, since my concerns' statements don't name it. A lead for a child of CM-CHN-001.
+
+### Rulings
+
+- U-053: joined:CM-CHN-002 (SH-C-136 against SA-C-096).
+- U-054, two rows:
+  - SH-C-135 against SA-C-097: joined:CM-CHN-001.
+  - SH-C-137 against SA-C-097: joined:CM-CHN-003.
+  - WC-C-110's side is WooCommerce's part's.
+- U-016, two rows:
+  - SH-C-141 against SA-C-098: apart. SA-C-098 names E, so a capability here could cite it, but its role differs on its words: a wholesale sale to retail merchants (SA-S-5047), against stores selling each other's products (SH-S-0729).
+  - SH-C-141 against SA-C-124: apart. scope.tsv gives SA-C-124 domain C, not naming E.
+  - D-anchor ruled the first pair apart too, from its side.
+- No pair is left for a later batch.
+
+### For batches 5 to 7 (POS, In-person selling; MKS, Markets, currencies and languages)
+
+- **POS:** Salla Point's route is /channel/sallapoint (SA-S-1836), one of the /channel/ routes with Mahally and the mobile app, and the seed lists POS among Shopify's sales channels. The POS batch may make its root a child of CM-CHN-001, if a statement places it there. Salla's knoat-albyaa plan group, as held, doesn't list Salla Point (search on knoat-albyaa: منصة محلي, صانع التطبيقات, سوق الجملة only).
+- **MKS:** no pair of mine has a side in MKS.
+
+### Gaps that change what a cell can claim
+
+- **CM-CHN-003, Shopify:** no statement names Marketplace Connect's maker. Its route is an app's (extension-point), and the cell's core rests on the plan rows and Shopify's own API.
+- **CM-CHN-003, Salla:** the plan line is a title only.
+- **CM-CHN-004, Salla:** the feed flags are of type app with no app_id. No statement names who makes them.
+- **CM-CHN-002, Shopify:** no admin route, plan row or permission for Shop is held, so the cell has no core.
+- **CM-CHN-005, Salla:** none-held. Salla's definition of selling between stores is not stated.
+- **CM-CHN-001, Salla:** Q1's responsible gap is "page not read". The reason gaps of SH-C-135, SH-C-136, SH-C-137, SH-C-141 and SH-C-195 are "searched, not found", and SH-C-138's responsible gap is "stated only in general terms".
+
+### What the checker flagged
+
+`0 problems, 13 flags`. Mine are six.
+- **Five own-service flags: does the statement name the company?**
+  - SH-S-0056: "Shop is a Shopify application", in Shopify's terms of service, which name Shopify as the party.
+  - SH-S-2756: its scope names the publisher, Shopify Inc.
+  - SH-S-0244: "Shopify Consumer Services, such as Shop ... Shopify is directly engaged by the customer".
+  - SA-S-0002, twice (Mahally in CM-CHN-002, the app maker in CM-CHN-006): "Salla also offers connected products such as Salla Point, Salla Ads, Mahally, an app maker". I read "Salla" there as the company offering separate products. **A reviewer may read it as the platform's name only;** then it becomes shows. Domain F's CM-APP-002 cites it as shows, for the app marketplace.
+- **cells.tsv line 53 (CM-CHN-005, Salla, none-held, 4 matches):** the wholesale market (SA-S-5047) and the Drop shipping app type and settlements (SA-S-1193, SA-S-0179, SA-I-0193). See U-016 above: neither is stores selling each other's products.
+- **The other seven flags are batches 1 to 3's,** answered in their notes. No problem on earlier batches' rows.
+- **Not flagged, for the merge:** SH-S-0729 and SH-S-7013 (Shopify Collective) are core in CM-CHN-005 and in domain B's CM-CAT-010. SH-C-141 is E's concern, and B cites it under also. On Shopify's plan row ("Sell and source"), the selling side is E's and the sourcing side is B's. The coordinator may make one of the two `shows`.

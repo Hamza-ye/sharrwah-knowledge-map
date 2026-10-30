@@ -89,8 +89,8 @@ CM-CAT-009	salla	core	SA-C-028/decides/SA-S-2136	plan line قيود المنتج
 CM-CAT-009	salla	core	SA-C-028/decides/SA-S-3505	feature sales-restrictions, plans pro, special
 CM-CAT-010	shopify	extension-point	SH-C-185/where/SH-S-2568	App Store category Dropshipping apps
 CM-CAT-010	shopify	extension-point	SH-C-185/where/SH-S-2566	App Store category Finding products apps
-CM-CAT-010	shopify	core	SH-C-141/decides/SH-S-7013	plan row Sell and source products with Shopify Collective, Included on all four plans
-CM-CAT-010	shopify	core	SH-C-141/where/SH-S-0729	stores connect with other Shopify stores and sell each other's products
+CM-CAT-010	shopify	shows	SH-C-141/decides/SH-S-7013	plan row Sell and source products with Shopify Collective, Included on all four plans; core in E's CM-CHN-005, Shopify Collective, where its concern lands, so it counts once (the coordinator, convention 8)
+CM-CAT-010	shopify	shows	SH-C-141/where/SH-S-0729	stores connect with other Shopify stores and sell each other's products; core in E's CM-CHN-005, Shopify Collective, so it counts once (the coordinator, convention 8)
 CM-CAT-010	shopify	shows	SH-C-185/responsible/SH-S-0058	the use of a third-party service is solely between the merchant and its provider
 CM-CAT-010	salla	extension-point	SA-C-124/where/SA-S-1193	App Store category Drop shipping (type app)
 CM-CAT-010	salla	extension-point	SA-C-124/decides/SA-S-0179	an endpoint allowed only for dropshipping applications

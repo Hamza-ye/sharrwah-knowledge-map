@@ -88,3 +88,96 @@ CM-MKT-022	zid	core	ZD-C-082/boundary/ZD-S-1019	Zid Alerts' WhatsApp messages se
 CM-MKT-022	zid	core	ZD-C-112/where/ZD-S-0452	product line Zid Voice: recover abandoned carts with a voice agent
 CM-MKT-022	zid	shows	ZD-C-112/decides/ZD-S-1069	Zid Voice's cart recovery: limited pilot
 CM-MKT-022	zid	extension-point	ZD-I-0454	App Market category استرداد السلال المتروكة, ZD-C-070 (domain F)
+CM-SUP-001	zid	core	ZD-C-086/where/ZD-S-0020	its own API group Products > Product Questions & Answers
+CM-SUP-001	zid	core	ZD-I-0021	its own API group Products > Product Reviews
+CM-SUP-001	zid	core	ZD-C-086/boundary/ZD-S-0923	GET /v1/products/{product_id}/questions, products.read
+CM-SUP-001	zid	core	ZD-C-086/where/ZD-S-1025	dashboard العملاء > الاسئلة
+CM-SUP-001	zid	core	ZD-C-086/decides/ZD-S-0921	plan line Review Management, every plan
+CM-SUP-001	zid	core	ZD-C-086/decides/ZD-S-0922	plan line Q&A and Review Messages, plans growth and pro
+CM-SUP-001	zid	core	ZD-C-086/decides/ZD-S-1026	built-in: buyer rates on the product page once the order is complete
+CM-SUP-001	zid	shows	ZD-C-086/reason/ZD-S-1027	a review after each separate order
+CM-SUP-001	zid	extension-point	ZD-I-0453	App Market category المراجعات والتقييمات
+CM-SUP-004	zid	extension-point	ZD-I-0435	App Market category خدمة العملاء والمحادثات, customer service and chats
+CM-SUP-005	zid	core	ZD-C-092/where/ZD-S-0934	its own place بوابة خدمة العملاء الذاتية
+CM-SUP-005	zid	core	ZD-C-092/where/ZD-S-0032	its own API group Customers > Customer Portal Tickets
+CM-SUP-005	zid	core	ZD-C-092/where/ZD-S-1037	dashboard العملاء> دعم العملاء holds the ticket
+CM-SUP-005	zid	shows	ZD-C-092/reason/ZD-S-1039	the portal: customers review orders and raise service or support requests
+CM-SUP-005	zid	shows	ZD-C-092/boundary/ZD-S-1038	Mazeed and Zid Assurance requests routed to RMS or HubSpot tickets
+CM-SUP-005	zid	extension-point	ZD-I-0435	App Market category خدمة العملاء والمحادثات
+CM-SUP-008	zid	core	ZD-C-111/where/ZD-S-0996	setting الإعدادات > صفحة إتمام الشراء > ضمان زد
+CM-SUP-008	zid	own-service	ZD-C-111/responsible/ZD-S-0998	entirely on Zid; Zid handles any complaints or inquiries
+CM-SUP-008	zid	own-service	ZD-C-092/boundary/ZD-S-0935	complaint against a store through the link on Zid's site or Zid's support
+CM-SUP-008	zid	shows	ZD-C-111/decides/ZD-S-0997	the program is optional
+CM-SUP-008	zid	shows	ZD-C-111/reason/ZD-S-1000	complaints handled with the Ministry of Commerce
+CM-SUP-008	zid	shows	ZD-I-0413	legal page Zid Stores' Customer Complaints
+CM-SUP-008	zid	shows	ZD-I-0128	settings entry الأسئلة الشائعة لضمان زد
+CM-SUP-008	zid	shows	ZD-I-0476	product line ZID Assurance
+CM-ANL-001	zid	core	ZD-C-105/where/ZD-S-0971	its section التحليلات: analytic data on store performance
+CM-ANL-001	zid	core	ZD-C-105/decides/ZD-S-1047	statistics elements by plan
+CM-ANL-001	zid	core	ZD-C-105/decides/ZD-S-0973	plan line Visit Count, plans launch, growth, pro
+CM-ANL-001	zid	core	ZD-I-0316	plan line Sales Value Over Time, Reports & Analytics
+CM-ANL-001	zid	core	ZD-I-0317	plan line Total Sales, Reports & Analytics
+CM-ANL-001	zid	core	ZD-I-0318	plan line Top-Selling Cities, Reports & Analytics
+CM-ANL-001	zid	core	ZD-I-0322	plan line Traffic Sources, Reports & Analytics
+CM-ANL-001	zid	core	ZD-I-0323	plan line Customer Journey Stages, Reports & Analytics
+CM-ANL-001	zid	core	ZD-I-0190	plan line Order Performance Indicator (Order Streaks), a measure
+CM-ANL-001	zid	core	ZD-I-0230	plan line Best-Selling Products, a measure
+CM-ANL-001	zid	core	ZD-I-0233	plan line Top-Selling Products, a measure
+CM-ANL-001	zid	core	ZD-I-0234	plan line Product Management - Product Sales, a measure
+CM-ANL-001	zid	core	ZD-I-0235	plan line Average Products per Order, a measure
+CM-ANL-001	zid	core	ZD-I-0276	plan line Order Click Rate, a measure
+CM-ANL-001	zid	core	ZD-I-0279	plan line Order Management - Order Click Rate, a measure
+CM-ANL-001	zid	core	ZD-I-0285	plan line Canceled Orders Value, a measure
+CM-ANL-001	zid	core	ZD-I-0303	plan line Average Cart Value, a measure
+CM-ANL-001	zid	core	ZD-I-0280	plan line Total Order Sales Using Discount Codes, a measure
+CM-ANL-001	zid	core	ZD-I-0281	plan line Orders per Auto Discount, a measure
+CM-ANL-001	zid	core	ZD-I-0282	plan line Orders Using Discount Codes, a measure
+CM-ANL-001	zid	core	ZD-I-0307	plan line Coupons - Coupon Results, a measure
+CM-ANL-001	zid	core	ZD-I-0335	plan line Top Customers, a measure
+CM-ANL-001	zid	core	ZD-I-0337	plan line Average Orders per Customer, a measure
+CM-ANL-001	zid	core	ZD-I-0338	plan line Customers Using Discount Codes, a measure
+CM-ANL-001	zid	core	ZD-I-0341	plan line Average Customer Sales, a measure
+CM-ANL-001	zid	core	ZD-I-0347	plan line Returning Customer Rate, a measure
+CM-ANL-001	zid	extension-point	ZD-I-0432	App Market category التحليلات والتقارير
+CM-ANL-002	zid	core	ZD-C-105/decides/ZD-S-1048	التقارير only on الأعمال الكبيره, النخبة, الإحترافية
+CM-ANL-002	zid	core	ZD-C-105/reason/ZD-S-1050	create, customise and manage reports within Zid
+CM-ANL-002	zid	core	ZD-C-105/decides/ZD-S-0972	plan line Reports - Total Profit, plan pro
+CM-ANL-002	zid	core	ZD-C-105/decides/ZD-S-1049	plan line Reports - Sales Channels, plans launch, growth, pro
+CM-ANL-002	zid	core	ZD-I-0321	plan line Reports - Sales Value Over Time
+CM-ANL-002	zid	core	ZD-I-0324	plan line Reports - Total Sales
+CM-ANL-002	zid	core	ZD-I-0253	plan line Product Cost Report
+CM-ANL-002	zid	core	ZD-I-0320	plan line Export Data, Reports & Analytics
+CM-ANL-002	zid	core	ZD-I-0401	Professional plan card: profitability and cost reports
+CM-ANL-003	zid	core	ZD-C-105/decides/ZD-S-0477	staff permission view.store.dashboard
+CM-ANL-006	zid	core	ZD-I-0029	its own API resource Customer Wallets > Wallet Analytics
+CM-NTF-001	zid	core	ZD-C-097/where/ZD-S-0953	settings الاعدادات > التواصل > رسائل الطلبات
+CM-NTF-001	zid	core	ZD-I-0145	settings entry التواصل › رسائل حالات الطلب
+CM-NTF-001	zid	core	ZD-I-0287	plan line Order Status Notifications (Limited)
+CM-NTF-001	zid	core	ZD-I-0363	plan line Message Settings
+CM-NTF-001	zid	core	ZD-I-0365	plan line Message Language
+CM-NTF-001	zid	own-service	ZD-C-111/boundary/ZD-S-0999	a free program from Zid sends customers order updates via WhatsApp
+CM-NTF-002	zid	core	ZD-C-097/decides/ZD-S-0954	plan line Team Notifications on order status changes
+CM-NTF-002	zid	core	ZD-C-097/decides/ZD-S-0501	staff permission manage.store.staff.notifications
+CM-NTF-002	zid	core	ZD-I-0130	settings entry عام › إشعارات الفريق
+CM-NTF-004	zid	core	ZD-C-098/decides/ZD-S-0957	plan line Sender Name, plans growth and pro
+CM-NTF-004	zid	core	ZD-C-098/where/ZD-S-0956	sender name bought on the subscriptions page
+CM-NTF-004	zid	core	ZD-I-0146	settings entry التواصل › تفعيل اسم المرسل
+CM-NTF-004	zid	core	ZD-I-0143	settings entry التواصل › تجديد اسم المرسل
+CM-NTF-004	zid	core	ZD-C-098/decides/ZD-S-1045	default sender ZeSTORE of Zid's platform
+CM-NTF-004	zid	core	ZD-C-097/decides/ZD-S-0955	order status balance; email when none
+CM-NTF-004	zid	core	ZD-C-097/boundary/ZD-S-0118	store settings API one-signal, third_one_signal_write
+CM-NTF-004	zid	core	ZD-C-107/where/ZD-S-0976	واتساب زد, integrated in the store
+CM-NTF-004	zid	core	ZD-C-107/boundary/ZD-S-1054	built on the WhatsApp Business Platform API, linked to the store
+CM-NTF-004	zid	core	ZD-C-107/decides/ZD-S-0366	plan Rise: Free WhatsApp (Basic Plan)
+CM-NTF-004	zid	core	ZD-I-0384	plan card Growth: Free WhatsApp (Basic Plan)
+CM-NTF-004	zid	core	ZD-C-107/decides/ZD-S-0381	plan Professional: Completely free WhatsApp
+CM-NTF-004	zid	core	ZD-C-107/decides/ZD-S-1055	each delivered message deducted from the store's points
+CM-NTF-004	zid	core	ZD-C-107/reason/ZD-S-1057	Zid drafts templates before Meta's review
+CM-NTF-004	zid	outside	ZD-C-098/boundary/ZD-S-0960	Unifonic, on the sender name and message packages
+CM-NTF-004	zid	shows	ZD-C-098/decides/ZD-S-0958	request filed after meeting هيئة الاتصالات وتقنية المعلومات's requirements
+CM-NTF-004	zid	shows	ZD-C-098/responsible/ZD-S-0959	merchant's letter certified by the chamber, per هيئة الاتصالات
+CM-NTF-004	zid	shows	ZD-C-107/responsible/ZD-S-1051	merchant needs a Meta business account
+CM-NTF-004	zid	shows	ZD-C-107/responsible/ZD-S-1052	restrictions and bans subject to Meta's policies
+CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1053	Meta decides restrictions on the number
+CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1056	Meta updates its prices quarterly
+CM-MKT-022	zid	core	ZD-I-0144	settings entry التواصل › تنبيهات زد, Zid Alerts (batch 2)
