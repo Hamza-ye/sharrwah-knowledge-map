@@ -6,3 +6,11 @@ CM-PAY-011	zid	amwal pay (اموال باي)	ZD-C-011/decides/ZD-S-0606
 CM-PAY-012	zid	Apple (شركة أبل)	ZD-C-005/responsible/ZD-S-0568
 CM-PAY-015	zid	Tabby (تابي)	ZD-C-013/responsible/ZD-S-0625
 CM-PAY-015	zid	MIS pay (أم آي إس باي)	ZD-C-013/decides/ZD-S-0624
+CM-PAY-015	zid	Tamara (تمارا)	ZD-C-013/responsible/ZD-S-0626
+CM-PAY-015	zid	Madfu (مدفوع)	ZD-C-013/decides/ZD-S-0622
+CM-PAY-015	zid	Emkan (إمكان)	ZD-C-013/decides/ZD-S-0623
+CM-PAY-002	zid	sanctions lists of the United Nations, the UK Treasury, the European Union and the Office of Foreign Assets Control	ZD-C-037/decides/ZD-S-0767
+CM-PAY-002	zid	the Central Bank's approval, required of merchants providing financial services	ZD-C-037/responsible/ZD-S-0773
+CM-TAX-003	zid	اللائحة الضريبية للمتاجر الإلكترونية (Saudi stores)	ZD-C-051/reason/ZD-S-0820
+CM-TAX-007	zid	هيئة الزكاة والضريبة والجمارك (ZATCA)	ZD-C-053/boundary/ZD-S-0829
+CM-ORD-008	zid	هيئة الزكاة والضريبة والجمارك (ZATCA), its requirements and regulations	ZD-C-054/reason/ZD-S-1009

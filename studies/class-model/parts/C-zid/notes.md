@@ -198,3 +198,108 @@ Answers to the flags:
 ### The coordinator, after batch 2
 
 - **Zid Pay's maker statement is ZD-S-0533:** Zid Pay's terms are "العقد المبرم بين مستخدمي زد باي وشركة زد", the contract between Zid Pay's users and Zid's company, which names the company as the service's provider (the brief's "Maker evidence"). It counts for each feature of Zid Pay that a cell's own statements show. Batch 1's cells (CM-CHK-008's Apple Pay, CM-ORD-006's Fraud Shield) stand as they are: none of their statements names Zid Pay.
+
+## Batch 3: PAY, second half, and TAX
+
+**Concerns:** ZD-C-013, ZD-C-014, ZD-C-015, ZD-C-016, ZD-C-018, ZD-C-023, ZD-C-024, ZD-C-037 (PAY), ZD-C-051, ZD-C-052, ZD-C-053, ZD-C-054 (TAX). **Areas:** PAY (32 capabilities, no new one) and TAX (9, no new one). **What it holds:** 12 landings: 11 into existing capabilities (8 by terms, 2 by definition, 1 on role) and 1 moved (ZD-C-018 to A); no new capability. 9 cells, Zid's for every TAX capability (5 `statements`, 4 `none-held`), 43 evidence rows (25 added to batch 1's and 2's cells: 19 in PAY, 6 in CM-ORD-008; 18 in TAX), 8 slot fillers, 1 quality, no ruling (Zid has no Q1 matches or unclear candidates). Each row is a reading unless it quotes a statement.
+
+TAX cells: `statements` for CM-TAX-001, 003, 004, 007 and 008; `none-held` for CM-TAX-002, 005, 006 and 009.
+
+### How I landed them, and why
+
+- **ZD-C-013 Instalments → CM-PAY-015, terms.** خدمات التقسيط / الدفع لاحقاً, with Tabby and Tamara, is Salla's وسائل الدفع الآجلة and its plan line الدفع بالتقسيط عبر تابي وتمارا. Batch 2's cell already cites all eight statements. I added the slot fillers Tamara, Madfu and Emkan.
+- **ZD-C-014 COD option and ZD-C-015 COD collection → CM-PAY-029, terms.** The cell holds both arrangements, the merchant's own carrier (a third party's service, ZD-S-0635) and Zid's collection under direct shipping (ZD-S-0641, ZD-S-0636), as Salla's has its own carrier and بوليصات سلة. I added ZD-C-014's payment_method value (ZD-S-0634) as `shows`. Batch 2 placed COD collection `core`, because no statement makes it a separate service of Zid's company. I keep that: ZD-S-0641 names زد as collecting, under Zid's own plan line Cash on Delivery Collection (ZD-S-0637), and no maker statement for Zid Ship is held among these concerns.
+- **ZD-C-016 Bank transfer → CM-PAY-030, terms.** Already fully cited by batch 2.
+- **ZD-C-018 Wallet deduction from Zid Pay → moved:A.** It tops up Zid's merchant wallet from the Zid Pay balance (ZD-S-0663, ZD-S-0664), reached from إدارة المحفظة (ZD-S-0660), so that the wallet holds a balance for expenses such as shipping labels (ZD-S-0665). That is a way of topping up the wallet, domain A's CM-PLN-006 ("topped up, spent on the platform's services and withdrawn"). It isn't CM-PAY-005: nothing goes to the bank account. It isn't CM-PAY-031 either: no app partner is settled. None of its six statements is cited in C. **For the coordinator:** scope.tsv gives it C with no `also`, so A-amend, or A-zid's cell for CM-PLN-006, would take ZD-S-0660 to ZD-S-0665. Salla's SA-S-0091 (no move from the e-payments balance to the store balance) is already cited there, the opposite rule.
+- **ZD-C-023 Zid Financing → CM-PAY-026, definition.** Financing repaid from a share of the store's sales: Zid's repayments come from Zid Pay sales (ZD-S-0692, ZD-S-0699), and Salla's capital takes 25% of net sales from each payment (SA-S-0111). Batch 2's cell already cites all ten statements.
+- **ZD-C-024 Mazeed collections → CM-PAY-005, role, strained.** I read it as a payout: Zid's company collects the Mazeed orders' payments and pays the merchant's bank account on a schedule, with a minimum (ZD-S-0704, ZD-S-0706, ZD-S-0707). What doesn't fit: CM-PAY-005 is the payment service's balance, and Mazeed's money comes through Mazeed's own gateway (ZD-S-0703), not Zid Pay. No other platform shows a marketplace's collections, and Zid gives them no place of their own: they are reached from the Mazeed page (ZD-S-0702). So by the dry-run convention I add no capability. It is strained because E-zid cites ZD-S-0702 (`core`) and ZD-S-0703 (`shows`) in E's CM-CHN-002. Its holds (ZD-S-0708, ZD-S-0709) are cited `own-service` in CM-PAY-006, because they name شركة زد, and Mazeed is a service of Zid's company, as E-zid reads ZD-S-0989. **For the reviewer:** split out the marketplace's collections and payouts, or move them to CM-CHN-002.
+  - **Reading:** ZD-S-0706 (weekly, every Tuesday, no minimum), ZD-S-0707 (monthly, with sales of 500 riyals or more) and ZD-S-0704 (on the 30th of each month, at least 500 riyals) don't agree. I cite all three and don't reconcile them.
+  - **Not placed:** the share Zid takes from each Mazeed purchase by sector (ZD-S-0705) is a marketplace commission, which no capability holds. I cite it `shows` in CM-PAY-005, as an amount deducted before the payout. It is a lead for E's CM-CHN-002 or A's CM-PLN-003.
+  - **Uncited:** its reason ZD-S-0712 (Q1's note: refund costs shared between the merchant and Mazeed). It isn't about payouts. **For batch 4:** RET may take it.
+- **ZD-C-037 Zid Pay's prohibited activities → CM-PAY-002, terms, strained.** الأنشطة المحظورة أو المقيدة is Shopify's Prohibited and Restricted Businesses for Shopify Payments (SH-C-173), which the anchor lands in CM-PAY-002. Its scope.tsv row names A under `also`.
+  - **The citations:** ZD-S-0765 is `own-service` (the activities "محظورة من زد باي", with Zid Pay's maker statement ZD-S-0533). The lists and the update rule (ZD-S-0766, 0767, 0768, 0770, 0771, 0773) are `shows`. ZD-S-0769 (deposits stopped for large sums from abroad) is `shows` in CM-PAY-006, since it names no actor.
+  - **Why it is strained:** A-zid cites nine of its statements in A's CM-TRU-009 (Acceptable use and enforcement), with ZD-S-0765, 0769, 0770 and 0772 as `core`. CM-PAY-006 is also another tree of PAY.
+  - **For the coordinator:** by One thing, one domain, I read Zid Pay's own prohibited list as CM-PAY-002's, where the anchor put Shopify's. A's CM-TRU-009 is the platform's rules for what merchants do with the platform as a whole, and A-zid's own reading says none is held for Zid. One of the two domains should hold these statements. A-zid's three slot fillers on CM-TRU-009 repeat two of mine on CM-PAY-002: the sanctions lists, ZD-S-0767, and the Central Bank's approval, ZD-S-0773.
+- **ZD-C-051 Tax settings → CM-TAX-001, terms.** اعدادات الضرائب / ضريبة القيمة المضافة is Salla's إعدادات الضريبة / ضريبة القيمة المضافة. Its country form (ZD-S-0817) holds the VAT rate, so it is `core` in CM-TAX-001. The same form holds the tax number and VAT certificate, so it is also `core` in CM-TAX-003, the child of CM-TAX-001.
+- **ZD-C-052 Invoice settings → CM-ORD-008, terms**, as batch 1 expected. Its five statements are batch 1's cell.
+- **ZD-C-053 ZATCA e-invoicing → CM-TAX-007, terms.** Its terms are الربط مع منصة فاتورة and هيئة الزكاة والضريبة والجمارك. The slot filler is ZATCA (ZD-S-0829). The merchant's activation code made in Fatoora (ZD-S-0830) is `shows`: it is the merchant's step at the authority, while Salla's statement has the code grant Salla authority (`core`).
+- **ZD-C-054 Credit notes → CM-ORD-008, definition, strained.** Zid calls its credit and debit notes "إشعارات فواتير", issued and sent when an order is edited or cancelled (ZD-S-1007), with the invoice left unchanged by ZATCA's rules (ZD-S-1009). I read them as documents on the order's invoice. What doesn't fit: a note against an invoice isn't the invoice. I add no capability for three reasons: no other platform's cell shows credit notes (`caps`: credit note; debit note; إشعار دائن; إشعارات الدائن; refund receipt), Zid's List Order Credit Notes is one operation in the Orders folder rather than an API group, and Q1 found no plan line for it (ZD-C-054/decides). Batch 1 cites ZD-S-0833 and ZD-S-1007 as `shows` in CM-ORD-002 and CM-ORD-004, in the same tree. I added six rows to CM-ORD-008. The API operation, its endpoint and scope, and the notes issued on edit are `core`. The rule on VAT-registered stores (ZD-S-1008) and ZATCA's rule (ZD-S-1009) are `shows`, and ZATCA is a slot filler.
+
+### TAX cells
+
+- **CM-TAX-001:** core on the tax settings page, the country form, the plan lines Invoice & Tax Settings and Tax-Applicable Countries, the Growth card Calculate and display VAT, the staff permission manage.store.vat.settings (ZD-I-0488, placed inventory) and the API operation that returns the VAT settings (ZD-S-0819). That operation sits under `/third-party/` with the scope third_vat_read. Batch 1 left the `third_` scopes uncited because no statement says what they are. This statement does say what the operation returns, and nothing says apps do the work, so it is `core`.
+- **CM-TAX-002, none-held:** the VAT is worked out from the merchant's rates. That is how the anchor treated Salla, whose "show and calculate" plan line is in CM-TAX-001 and whose CM-TAX-002 is none-held.
+- **CM-TAX-004:** the App Market category الضريبة والزكاة (ZD-I-0441, ZD-C-070, domain F, not naming C), `extension-point`, as WooCommerce's Marketplace category is. It is the only Zid evidence, which is why it is cited here, as batch 2 cited ZD-I-0440 in CM-PAY-028.
+- **CM-TAX-008:** ZD-S-0842 (ZD-C-060, Zid Ship, domain C): under Global Shipping, duties the customer refuses are charged to the merchant from the Zid wallet. It is `core`, as Salla's customs fees settled from its wallet (SA-S-5075). **For batch 4:** this puts a ZD-C-060 statement in the TAX tree. If you land ZD-C-060 in SHP, its fit is strained.
+- **CM-TAX-005, 006 and 009, none-held:** each reading names its hits.
+
+### Slot fillers and the quality
+
+- **Slot fillers:**
+  - CM-PAY-015: Tamara, Madfu and Emkan;
+  - CM-PAY-002: the sanctions lists and the Central Bank's approval (ZD-C-037);
+  - CM-TAX-003: اللائحة الضريبية للمتاجر الإلكترونية (Saudi stores);
+  - CM-TAX-007: ZATCA;
+  - CM-ORD-008: ZATCA's requirements (ZD-S-1009).
+- **The quality** is on CM-PAY-005: Mazeed's transfer day, minimum age and minimum amount (ZD-S-0704).
+
+### Joins on role
+
+ZD-C-024 to CM-PAY-005: ZD-S-0704 and ZD-S-0706 against Salla's SA-S-0076 and Shopify's SH-S-0342.
+
+### Homonyms and false hits kept apart
+
+- **المحفظة:** the wallet that ZD-C-018 tops up, and that receives COD and pays customs (ZD-S-0636, ZD-S-0842), is A's CM-PLN-006. It isn't CM-PAY-023.
+- **الإقرار** in the tax settings (ZD-S-0818) is the merchant's declaration, not a tax return (CM-TAX-006).
+- **الرقم الضريبي:** the store's own number (ZD-S-0817, CM-TAX-003), Zid's own numbers (ZD-S-0731, ZD-S-0738, domain A), and no buyer's VAT number (CM-TAX-005).
+- **فواتير ضريبية B2B** (ZD-S-0711) are the merchant's invoices to Zid for Mazeed's dues, not VAT invoices to business buyers (CM-TAX-005).
+
+### Strained fits
+
+ZD-C-024 (E's CM-CHN-002; and not the payment service), ZD-C-037 (A's CM-TRU-009; CM-PAY-006), and ZD-C-054 (a note isn't the invoice).
+
+### Gaps
+
+- ZD-C-013/reason: no stated reason for outside instalment providers. It changes nothing in CM-PAY-015.
+- ZD-C-015/responsible, observation needed: who holds the COD amounts before the wallet. ZD-C-015/boundary: no API for COD collections. CM-PAY-029 claims no API.
+- ZD-C-016/reason: searched, not found.
+- ZD-C-023/responsible: the financing party isn't named, so no slot filler (as batch 2 said).
+- ZD-C-037/responsible, observation needed: who screens against the sanctions lists. ZD-C-037/boundary: no API for screening.
+- ZD-C-052/reason: searched, not found.
+- ZD-C-053/responsible and ZD-C-054/responsible: stated only in general terms. ZD-C-054/decides: which plans include credit and debit notes isn't stated.
+- CM-TAX-007: whether the Fatoora link is limited to a plan isn't stated. ZD-S-0827 says only that it is free.
+
+### Problems on earlier batches' rows, for the coordinator
+
+None of these makes a row wrong. Some readings and terms no longer name all of a cell's evidence:
+- **CM-PAY-002's reading** (batch 2) ends "Batch 3 lands ZD-C-037". Its evidence now holds ZD-C-037's rows: one `own-service`, six `shows`. The reading could name them.
+- **CM-PAY-005's reading** says ZD-C-018 "moves part of the Zid Pay balance to the wallet" and that ZD-C-024 may bear on it. ZD-C-018 is now moved:A, and ZD-C-024's rows (two `core`, one `own-service`, four `shows`) are in its evidence, unnamed in its reading. CM-PAY-006's reading likewise doesn't name ZD-S-0708, ZD-S-0709 or ZD-S-0769.
+- **CM-PAY-023's reading** calls ZD-C-018 "which batch 3 lands". It is now moved:A.
+- **CM-ORD-008's reading and terms** (batch 1) don't name ZD-C-054's six rows. Its terms could add إشعارات الدائن;List Order Credit Notes.
+
+### What batch 4 needs
+
+- ZD-C-060's ZD-S-0842 is cited in CM-TAX-008 (above).
+- ZD-C-015's statements (ZD-S-0636, ZD-S-0640, ZD-S-0641, Zid Ship) are in CM-PAY-029. If you cite them in SHP, ZD-C-015's fit becomes strained.
+- ZD-S-0712 (Mazeed refund costs) is uncited, a lead for RET.
+- Batch 2's note on ZD-C-002 and CM-RET-002 still holds.
+
+### What the checker flagged, and answers
+
+The batch check printed **0 problems and 40 flags**. My flags:
+- **`own-service`** on ZD-S-0765 (ZD-C-037), and on ZD-S-0704, ZD-S-0708 and ZD-S-0709 (ZD-C-024):
+  - ZD-S-0765 rests on Zid Pay's maker statement ZD-S-0533, which counts for this feature: the activities "محظورة من زد باي";
+  - the three ZD-C-024 statements each name شركة زد as transferring or holding the funds, a statement naming the company.
+- **ZD-I-0441 is ZD-C-070's (F, not naming C):** answered in CM-TAX-004, the only Zid evidence on tax apps.
+- **CM-TAX-002 and CM-TAX-005, none-held with matching statements:** each reading names the hits and why they aren't the capability. CM-TAX-002's count is large because the terms I searched include the bare ضريبة / الضرائب, which I searched to be sure nothing was missed.
+- **Flags the merge will raise, where C and another domain are both `core` on one statement:**
+  - ZD-S-0702: E's CM-CHN-002 and C's CM-PAY-005. The statement names the Mazeed page and the dues reached there, so it holds two things;
+  - ZD-S-0765: A's CM-TRU-009 `core`, and C's CM-PAY-002 `own-service`. ZD-S-0769 and ZD-S-0772 are A's `core` and C's `shows` or `own-service`. Answered under ZD-C-037.
+
+The other 33 flags are batch 1's and batch 2's rows, which they answered in their sections. The checker printed no problem on their rows.
+
+### The coordinator, after batch 3
+
+- **ZD-C-018,** the wallet deduction from Zid Pay, is moved to A and landed in CM-PLN-006, Zid's merchant wallet, in A-zid, where its statements are now cited; scope.tsv gives it A, naming C under `also`. CM-PAY-023's reading says so.
+- **ZD-S-0702** (Mazeed's financial dues, reached at Dashboard > Sales platforms > Mazeed) is `core` in C's CM-PAY-005 and in E's CM-CHN-002, and neither cell rests on it alone: the merge's counted-twice flag goes to the final review with the other such flags.
+- **The readings of CM-PAY-002, CM-PAY-005, CM-PAY-006 and CM-ORD-008** don't yet name batch 3's evidence. The coordinator brings them up to date after batch 4.

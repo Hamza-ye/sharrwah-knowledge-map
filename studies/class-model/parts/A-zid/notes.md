@@ -283,3 +283,7 @@ batch 1 flags answered in its section, and the batch 2 flags answered above).
 - **ZD-C-114 is `strained`** (ZD-S-1077 in CM-TRU-012), and ZD-C-077's reading names CM-TRU-001.
 - **The part is complete,** with no capability added: domain A needs no Zid back-fill. BigCommerce maps next.
 
+
+### ZD-C-018, the wallet deduction (the coordinator, after C-zid batch 3)
+
+- **Moved from C and landed in CM-PLN-006 by terms**, against Salla's Wallet (SA-S-1876): the deduction takes a fixed amount or a percentage of the store's Zid Pay payments into Zid's merchant wallet (ZD-S-0660, ZD-S-0662, ZD-S-0664), for Saudi and Kuwaiti merchants with Zid Pay (ZD-S-0661). Six evidence rows are added to the wallet's Zid cell, each marked, and the cell's reading names them. scope.tsv gives ZD-C-018 domain A, naming C under `also`.

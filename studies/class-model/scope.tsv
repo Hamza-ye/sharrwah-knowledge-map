@@ -484,7 +484,7 @@ zid	ZD-C-014	C		الدفع عند الاستلام; Cash on Delivery; where لو
 zid	ZD-C-015	C		تحصيل الدفع عند الاستلام; Cash on Delivery Collection; where محفظة التاجر (PAY)
 zid	ZD-C-016	C		خدمة التحويل البنكي; Bank Transfer Payment (PAY)
 zid	ZD-C-017	A	C	محفظة زد; محفظة التاجر; where لوحة التحكم > المالية > المحفظة: the merchant's wallet (PAY); moved to A by the coordinator after A-zid batch 1: Zid's wallet is the merchant's prepaid balance with the platform, A's CM-PLN-006, where all its statements are cited
-zid	ZD-C-018	C		الاستقطاع للمحفظة: deduction from Zid Pay to the wallet (PAY)
+zid	ZD-C-018	A	C	الاستقطاع للمحفظة: deduction from Zid Pay to the wallet (PAY); moved to A by the coordinator after C-zid batch 3: the deduction that tops up Zid's merchant wallet from the Zid Pay balance is the wallet's, A's CM-PLN-006
 zid	ZD-C-019	D	C	محفظة العميل والكاش باك; Customer Wallets; where التسويق > برامج الولاء (LOY)
 zid	ZD-C-020	A		الاشتراكات; Starter; Growth; Pro; where إدارة الأشتراك: the merchant's Zid plan (PLN)
 zid	ZD-C-021	A		المدفوعات والمشتريات; Payments and Purchases from Zid (PLN)

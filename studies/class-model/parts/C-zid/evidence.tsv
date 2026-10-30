@@ -232,3 +232,46 @@ CM-PAY-030	zid	shows	ZD-C-016/boundary/ZD-S-0634	payment_method value Bank Trans
 CM-PAY-032	zid	core	ZD-C-008/where/ZD-S-0586	admin section الخدمات > المدفوعات > روابط الدفع
 CM-PAY-032	zid	core	ZD-C-008/decides/ZD-S-0587	links listed and exported; created from a new manual order
 CM-PAY-032	zid	shows	ZD-C-008/boundary/ZD-S-0588	payment_link a built-in value of the payment options
+CM-PAY-029	zid	shows	ZD-C-014/boundary/ZD-S-0634	payment_method value Cash On Delivery, under ZD-C-014
+CM-PAY-002	zid	own-service	ZD-C-037/where/ZD-S-0765	Zid Pay may not be used in activities or with entities Zid Pay prohibits
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0770	prohibited or restricted activities updated at any time, with notice
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0766	prohibited: dealings with sanctioned countries (Saudi Arabia)
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0768	prohibited: dealings with sanctioned countries (Kuwait)
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0771	English text: dealings with sanctioned countries or entities
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0767	prohibited: merchants or beneficiaries on sanctions lists
+CM-PAY-002	zid	shows	ZD-C-037/responsible/ZD-S-0773	prohibited: financial services without the Central Bank's approval
+CM-PAY-006	zid	shows	ZD-C-037/decides/ZD-S-0769	deposits stopped for accounts receiving large sums from abroad
+CM-PAY-006	zid	own-service	ZD-C-024/responsible/ZD-S-0708	Zid's company may hold Mazeed funds where operations are suspected
+CM-PAY-006	zid	own-service	ZD-C-024/responsible/ZD-S-0709	Zid's company may hold funds to settle pending operations on cancelling Mazeed
+CM-PAY-005	zid	core	ZD-C-024/where/ZD-S-0702	Mazeed's financial dues reached at لوحة التحكم > منصات البيع > مزيد
+CM-PAY-005	zid	own-service	ZD-C-024/decides/ZD-S-0704	Zid's company transfers Mazeed dues to the bank account on the 30th
+CM-PAY-005	zid	core	ZD-C-024/decides/ZD-S-0706	Mazeed collections weekly, every Tuesday
+CM-PAY-005	zid	core	ZD-C-024/decides/ZD-S-0707	Mazeed collections monthly, with sales of 500 riyals or more
+CM-PAY-005	zid	shows	ZD-C-024/where/ZD-S-0703	Mazeed's payment gateway its own, in the app only
+CM-PAY-005	zid	shows	ZD-C-024/decides/ZD-S-0705	Zid sets the share taken from each Mazeed purchase by sector
+CM-PAY-005	zid	shows	ZD-C-024/boundary/ZD-S-0710	the merchant issues an invoice for the dues on the 15th and 30th
+CM-PAY-005	zid	shows	ZD-C-024/boundary/ZD-S-0711	the invoices attached are B2B tax invoices
+CM-ORD-008	zid	core	ZD-C-054/where/ZD-S-0832	Merchant API Orders operation List Order Credit Notes
+CM-ORD-008	zid	core	ZD-C-054/boundary/ZD-S-0833	credit notes issued for cancelled or modified orders, endpoint
+CM-ORD-008	zid	core	ZD-C-054/boundary/ZD-S-0834	the endpoint's scope orders.read
+CM-ORD-008	zid	core	ZD-C-054/decides/ZD-S-1007	credit and debit notes issued and sent on any order edit or cancellation
+CM-ORD-008	zid	shows	ZD-C-054/decides/ZD-S-1008	notes not sent to customers of a store with VAT settings on
+CM-ORD-008	zid	shows	ZD-C-054/reason/ZD-S-1009	the original invoice unchanged, by ZATCA's rules
+CM-TAX-001	zid	core	ZD-C-051/where/ZD-S-0814	VAT activated from Settings > اعدادات الضرائب
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0817	a country added with its VAT rate
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0815	plan line Invoice & Tax Settings (growth, pro)
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0816	plan line Tax-Applicable Countries (growth, pro)
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0370	plan Growth card: Calculate and display VAT
+CM-TAX-001	zid	core	ZD-I-0488	staff permission manage.store.vat.settings, إدارة إعدادات الضريبة
+CM-TAX-001	zid	core	ZD-C-051/boundary/ZD-S-0819	own API returns the store's VAT settings (third_vat_read)
+CM-TAX-001	zid	shows	ZD-C-051/responsible/ZD-S-0818	the merchant declares it has read the VAT guide
+CM-TAX-003	zid	core	ZD-C-051/decides/ZD-S-0817	the country's tax number and VAT certificate entered in tax settings
+CM-TAX-003	zid	shows	ZD-C-051/reason/ZD-S-0820	Saudi stores must show the VAT certificate, by the e-store tax regulation
+CM-TAX-004	zid	extension-point	ZD-I-0441	App Market category المالية والمدفوعات › الضريبة والزكاة
+CM-TAX-007	zid	core	ZD-C-053/where/ZD-S-0826	setting الربط مع منصة فاتورة (ZATCA) in the dashboard's settings
+CM-TAX-007	zid	core	ZD-C-053/boundary/ZD-S-0829	links the store directly with ZATCA, e-invoicing phase two
+CM-TAX-007	zid	core	ZD-C-053/decides/ZD-S-0827	the store linked to Fatoora free, e-invoices sent
+CM-TAX-007	zid	shows	ZD-C-053/decides/ZD-S-0828	linking with the cashier available
+CM-TAX-007	zid	shows	ZD-C-053/boundary/ZD-S-0830	the merchant creates a device activation code in Fatoora
+CM-TAX-007	zid	shows	ZD-C-053/reason/ZD-S-0831	the aim: compliance with e-invoicing phase two
+CM-TAX-008	zid	core	ZD-C-060/responsible/ZD-S-0842	refused customs duties charged to the merchant from the Zid wallet (Global Shipping)
