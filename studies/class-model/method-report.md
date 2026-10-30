@@ -46,6 +46,48 @@
 - **Two placement methods.** The anchor read Shopify's API-only evidence as `shows`. WooCommerce's part, told the brief's test (the platform's own API for its own feature is `core`), read WooCommerce's as `core`. The review settles which, and the anchor's cells are corrected to it.
 - **Lesson:** most of a mapping part's cost is its cells, one per capability, more than its landings. `class_slice.py candidates` now lists each capability's candidate statements on a platform, from the terms the other platforms' cells use, so a part judges a short list instead of designing every search.
 
-## 6. The dry run's review (from 02:15 UTC)
+## 6. The dry run's review (02:15 to 02:52 UTC)
 
-Split in two, so each context stays small: the cells (checks 1, 2 and 5), and the structure (checks 3, 4 and 6 to 13), each with its own findings and coverage table.
+Split in two, so each context stays small: the cells (checks 1, 2 and 5) and the structure (checks 3, 4 and 6 to 13), each with its own findings and coverage table.
+- **The cells: 62.1 million, 242 requests,** to a context of 455,000 tokens. It checked every cell (84) and every evidence row (297), and searched beyond the domain for 59 cells. It found 7 findings, 3 must fix:
+  - the anchor's own-API rows read as `shows` (55 rows, three counts);
+  - inventory entries placed without statements, which no search could see;
+  - one false `none-held`.
+- **The structure: 26.7 million, 107 requests.** 17 findings, 3 must fix: rulings that contradicted the brief, rulings mixing pairs, and a count resting on a partner's permission. It also proposed 12 conventions.
+- **Lesson: the review found what the checker couldn't.** Two placement methods, an evidence source no search reached, and readings no test can make. The conventions and the checker's new tests now carry them, so the full run's review can be risk-based: every cell whose kind hinges on one placement, and a seeded sample of the rest.
+- **Lesson: a review that reads every row is the most expensive part of all.** The cells review cost almost twice the anchor it reviewed. Its cost came from its length, as the anchor's did.
+
+## 7. What the dry run says about the full run's cost
+
+**Measured on domain B** (three of five platforms; 22 Shopify and Salla concerns, 8 WooCommerce, 28 capabilities):
+- the parts cost 48.7 million: the anchor 33.9, the mapping 12.8 and the back-fill 2.0;
+- the reviews cost 88.8 million;
+- the inspections, the scope part and the review brief's inspection before them cost 54.4 million.
+
+**What remains:**
+- the anchor: 328 Shopify and Salla concerns in domains A and C to G;
+- the mapping: 294 concerns of WooCommerce, Zid and BigCommerce;
+- a cell for every capability and platform: about 1,400, at the dry run's rate of a little over one capability per anchor concern.
+
+At the dry run's own rates, that is about 500 million for the anchors and 450 million for the mapping, before the back-fills, the final review and Q3's check.
+
+**Re-planned to read the same evidence at less cost:**
+- **Parts small enough that no context passes about 200,000 tokens:** one area per anchor part (domain C's six areas, A's five, and so on). Where a part runs long, a fresh agent continues from its files. By the anchor's own first half, this alone cuts a part's cost by close to half.
+- **The candidates script:** a mapping or back-fill part judges a short list of candidate statements per capability, instead of designing every search.
+- **The conventions and the checker's new tests,** so fewer readings need re-doing.
+- **A risk-based final review,** not every row: every cell whose kind hinges on one placement, every join on role and every `none-held`, then a seeded sample.
+
+**The projection, an assumption to be measured after the first domains:**
+
+| Item | Million tokens |
+| --- | --- |
+| Spent to the dry run's corrections | about 200 |
+| Anchors | 200 to 300 |
+| Mapping | 150 to 300 |
+| Back-fills | 20 to 40 |
+| Final review | 40 to 80 |
+| Q3's check | 15 to 30 |
+| The architecture plan's review | about 10 |
+| **The extent, in all** | **about 650 to 950** |
+
+That is three to four times the budget of 250 million. By `PLAN.md`, section 8, and the founder's standing decision of 27 October, the work goes on, re-planned to cost less and never cut short of the evidence. The projection is re-measured after the first two domains.
