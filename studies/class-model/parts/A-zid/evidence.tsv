@@ -85,3 +85,62 @@ CM-STF-002	zid	core	ZD-C-094/decides/ZD-S-0940	all permissions are tied to the u
 CM-STF-002	zid	core	ZD-C-094/decides/ZD-S-0939	setting each team member's permissions
 CM-STF-002	zid	shows	ZD-C-094/reason/ZD-S-0942	reason: the store's security and consistency
 CM-STF-003	zid	core	ZD-I-0151	settings entry المتجر › مجموعات الفريق (team groups)
+CM-TRU-001	zid	core	ZD-C-095/where/ZD-S-0943	the field تفعيل التحقق بخطوتين in the security settings, saved
+CM-TRU-001	zid	core	ZD-C-095/decides/ZD-S-0944	plan line Security Settings: 2FA and advanced security options, every plan
+CM-TRU-001	zid	core	ZD-C-095/decides/ZD-S-0945	security level High: inactive member signed out after half an hour, one browser
+CM-TRU-001	zid	core	ZD-I-0141	settings entry عام › اعدادات الامان
+CM-TRU-001	zid	core	ZD-I-0186	plan feature Basic Features › Security Settings
+CM-TRU-001	zid	shows	ZD-C-095/boundary/ZD-S-0946	the setting may affect Zapier and other API links
+CM-TRU-001	zid	shows	ZD-C-095/reason/ZD-S-0947	2FA raises security and protects the account from intrusion
+CM-TRU-001	zid	shows	ZD-C-077/responsible/ZD-S-0902	the merchant protects its account with a strong password
+CM-TRU-002	zid	core	ZD-C-038/decides/ZD-S-0775	Zid Pay's activation requires the store owner to pass Nafath verification
+CM-TRU-002	zid	core	ZD-C-038/boundary/ZD-S-0778	Quick ID Check: identity verified with Nafath by the store owner's ID
+CM-TRU-002	zid	core	ZD-C-038/where/ZD-S-0774	the Nafath step, the last step of Zid Pay's activation
+CM-TRU-002	zid	core	ZD-C-038/boundary/ZD-S-0777	the verification status updates in the dashboard and the Zid Pay account is created
+CM-TRU-002	zid	core	ZD-C-038/decides/ZD-S-0776	three verification attempts a day
+CM-TRU-002	zid	shows	ZD-C-038/responsible/ZD-S-0591	the verification request is in the service provider's name
+CM-TRU-002	zid	shows	ZD-I-0168	help entry زد باي › تفعيل زد باي
+CM-TRU-005	zid	shows	ZD-C-039/responsible/ZD-S-0782	the merchant posts a privacy policy on its store on how its customers' data is processed
+CM-TRU-005	zid	shows	ZD-C-039/decides/ZD-S-0781	the merchant states its privacy policy and protection of the consumer's data
+CM-TRU-009	zid	core	ZD-C-037/where/ZD-S-0765	Zid Pay may not be used in prohibited activities or with prohibited entities
+CM-TRU-009	zid	core	ZD-C-037/decides/ZD-S-0770	prohibited or restricted activities updated at any time, with notice to the merchant
+CM-TRU-009	zid	core	ZD-C-037/responsible/ZD-S-0772	Zid Pay holds payments, asks for documents, refunds, cancels the account, reports to authorities
+CM-TRU-009	zid	core	ZD-C-037/decides/ZD-S-0769	deposits stopped and accounts receiving large sums from abroad investigated
+CM-TRU-009	zid	shows	ZD-C-037/decides/ZD-S-0766	activities with internationally sanctioned countries (Saudi Arabia)
+CM-TRU-009	zid	shows	ZD-C-037/decides/ZD-S-0768	activities with internationally sanctioned countries (Kuwait)
+CM-TRU-009	zid	shows	ZD-C-037/decides/ZD-S-0767	merchants or beneficiaries on sanctions lists
+CM-TRU-009	zid	shows	ZD-C-037/decides/ZD-S-0771	English text: dealings with sanctioned countries or entities
+CM-TRU-009	zid	shows	ZD-C-037/responsible/ZD-S-0773	financial service providers without the Central Bank's approval
+CM-TRU-009	zid	shows	ZD-I-0423	Terms section الشروط والأحكام › زد باي
+CM-TRU-010	zid	core	ZD-C-036/boundary/ZD-S-0763	email, phone and CR number shown to customers at the foot of the store page
+CM-TRU-010	zid	shows	ZD-C-036/where/ZD-S-0759	the store discloses name, address, CR and tax number or freelance document, contacts
+CM-TRU-010	zid	shows	ZD-C-036/decides/ZD-S-0760	the merchant keeps the laws of online trade, named
+CM-TRU-010	zid	shows	ZD-C-036/decides/ZD-S-0761	the merchant discloses the licence of goods or services that need one
+CM-TRU-010	zid	shows	ZD-C-036/responsible/ZD-S-0762	Zid not a party between consumer and merchant, not liable for the merchant's breach
+CM-TRU-010	zid	shows	ZD-C-036/reason/ZD-S-0764	done to improve the merchant's and consumer's experience
+CM-TRU-012	zid	core	ZD-C-114/where/ZD-S-1077	a request or an objection raised through the dashboard's ticket icon
+CM-TRU-013	zid	core	ZD-C-040/responsible/ZD-S-0787	Zid a data processor and service provider under privacy laws
+CM-TRU-013	zid	core	ZD-C-040/responsible/ZD-S-0788	Zid acts under the merchant's direction; the merchant's privacy policy applies
+CM-TRU-013	zid	core	ZD-I-0407	legal page Privacy Policy / سياسة الخصوصية
+CM-TRU-013	zid	shows	ZD-C-040/where/ZD-S-0784	the policy's Data Protection Officer, with an address in Riyadh
+CM-TRU-013	zid	shows	ZD-C-040/decides/ZD-S-0785	personal information processed only with consent
+CM-TRU-013	zid	shows	ZD-C-040/responsible/ZD-S-0789	partners process merchants' personal information securely and lawfully
+CM-TRU-013	zid	shows	ZD-C-040/boundary/ZD-S-0790	merchants' information shared with a partner whose app they install
+CM-TRU-013	zid	shows	ZD-C-040/reason/ZD-S-0793	legal basis: contract, legitimate interests, risk and fraud
+CM-TRU-014	zid	core	ZD-C-041/decides/ZD-S-0794	Zid may transfer or disclose personal data to parties in other countries
+CM-TRU-014	zid	core	ZD-C-041/decides/ZD-S-0795	the same clause in Arabic, نقل البيانات عبر الحدود
+CM-TRU-014	zid	core	ZD-C-041/responsible/ZD-S-0796	transfers only with appropriate safeguards
+CM-TRU-015	zid	outside	ZD-C-042/where/ZD-S-0717	Google Cloud Vertex AI a data processor for Zid Agent
+CM-TRU-015	zid	outside	ZD-C-042/boundary/ZD-S-0799	Google Cloud processes messages, images and store data on Zid's behalf
+CM-TRU-015	zid	core	ZD-C-042/responsible/ZD-S-0798	Zid determines purposes and means; Google Cloud processor under its terms
+CM-TRU-015	zid	shows	ZD-C-042/boundary/ZD-S-0800	Google Cloud does not train models on the data
+CM-TRU-015	zid	shows	ZD-C-042/decides/ZD-S-0797	AI processing only after explicit in-app consent
+CM-TRU-015	zid	shows	ZD-C-040/boundary/ZD-S-0791	service providers performing services on Zid's behalf, payment entities
+CM-TRU-016	zid	shows	ZD-C-040/decides/ZD-S-0786	personal data retained for the period the law requires
+CM-TRU-017	zid	core	ZD-C-040/boundary/ZD-S-0792	disclosure to a public entity, for security or judicial requirements
+CM-TRU-020	zid	core	ZD-C-111/responsible/ZD-S-0998	Zid handles any complaints or inquiries; the service entirely on Zid
+CM-TRU-020	zid	core	ZD-C-092/boundary/ZD-S-0935	a complaint against a store through the link on Zid's site or Zid's support
+CM-TRU-020	zid	core	ZD-C-111/where/ZD-S-0996	the setting الإعدادات > صفحة إتمام الشراء > ضمان زد, where the merchant leaves it
+CM-TRU-020	zid	shows	ZD-C-111/decides/ZD-S-0997	the program is optional
+CM-TRU-020	zid	shows	ZD-C-111/reason/ZD-S-1000	complaints with merchants processed with the Ministry of Commerce
+CM-TRU-020	zid	shows	ZD-I-0413	legal page Zid Stores' Customer Complaints

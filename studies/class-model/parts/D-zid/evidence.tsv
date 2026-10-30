@@ -104,9 +104,9 @@ CM-SUP-005	zid	core	ZD-C-092/where/ZD-S-1037	dashboard العملاء> دعم ا
 CM-SUP-005	zid	shows	ZD-C-092/reason/ZD-S-1039	the portal: customers review orders and raise service or support requests
 CM-SUP-005	zid	shows	ZD-C-092/boundary/ZD-S-1038	Mazeed and Zid Assurance requests routed to RMS or HubSpot tickets
 CM-SUP-005	zid	extension-point	ZD-I-0435	App Market category خدمة العملاء والمحادثات
-CM-SUP-008	zid	core	ZD-C-111/where/ZD-S-0996	setting الإعدادات > صفحة إتمام الشراء > ضمان زد
-CM-SUP-008	zid	own-service	ZD-C-111/responsible/ZD-S-0998	entirely on Zid; Zid handles any complaints or inquiries
-CM-SUP-008	zid	own-service	ZD-C-092/boundary/ZD-S-0935	complaint against a store through the link on Zid's site or Zid's support
+CM-SUP-008	zid	shows	ZD-C-111/where/ZD-S-0996	setting الإعدادات > صفحة إتمام الشراء > ضمان زد; Zid's own handling of complaints against stores, counted in A's CM-TRU-020 (the coordinator, convention 8)
+CM-SUP-008	zid	shows	ZD-C-111/responsible/ZD-S-0998	entirely on Zid; Zid handles any complaints or inquiries; Zid's own handling of complaints against stores, counted in A's CM-TRU-020 (the coordinator, convention 8)
+CM-SUP-008	zid	shows	ZD-C-092/boundary/ZD-S-0935	complaint against a store through the link on Zid's site or Zid's support; Zid's own handling of complaints against stores, counted in A's CM-TRU-020 (the coordinator, convention 8)
 CM-SUP-008	zid	shows	ZD-C-111/decides/ZD-S-0997	the program is optional
 CM-SUP-008	zid	shows	ZD-C-111/reason/ZD-S-1000	complaints handled with the Ministry of Commerce
 CM-SUP-008	zid	shows	ZD-I-0413	legal page Zid Stores' Customer Complaints

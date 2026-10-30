@@ -829,3 +829,238 @@ CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0027	the same sentence, under whe
 CM-PAY-012	shopify	outside	SH-C-078/where/SH-S-0028	the same sentence, under where
 CM-PAY-012	shopify	shows	SH-C-078/boundary/SH-S-0024	the same sentence, under boundary
 CM-PAY-017	shopify	core	SH-C-080/decides/SH-S-0420	the same sentence, under decides
+CM-PAY-020	shopify	core	SH-C-084/decides/SH-S-0390	store setting: capture automatically or manually
+CM-PAY-020	shopify	core	SH-C-084/decides/SH-S-0391	authorization period of 7 days
+CM-PAY-020	shopify	core	SH-C-084/decides/SH-S-0393	extended authorization periods only on Plus with Shopify Payments
+CM-PAY-020	shopify	outside	SH-C-084/decides/SH-S-0392	the authorization period depends on the card payment provider
+CM-PAY-020	shopify	outside	SH-C-084/responsible/SH-S-0315	capture sends the transaction to the acquirer, which processes it for the merchant
+CM-PAY-020	shopify	core	SH-C-084/boundary/SH-S-1292	own webhook topic order_transactions/create
+CM-PAY-020	shopify	core	SH-C-084/boundary/SH-S-1299	own webhook topic orders/paid
+CM-PAY-020	shopify	core	SH-I-0611	own webhook topic tender_transactions/create
+CM-PAY-020	shopify	core	SH-I-1023	staff permission CAPTURE_PAYMENTS_FOR_ORDERS
+CM-PAY-020	shopify	core	SH-I-1103	staff permission PAY_ORDERS_BY_CREDIT_CARD
+CM-PAY-020	shopify	core	SH-I-1101	staff permission PAY_DRAFT_ORDERS_BY_CREDIT_CARD
+CM-PAY-020	shopify	shows	SH-C-084/where/SH-S-6322	the Orders page, CM-ORD-001's place
+CM-PAY-020	shopify	shows	SH-C-084/reason/SH-S-0394	a reason for manual capture: a local rule on paying upon delivery
+CM-PAY-020	shopify	shows	SH-I-2203	help section Payment authorization and capture
+CM-PAY-020	shopify	shows	SH-I-2211	help section Shopify Payments transactions
+CM-PAY-020	salla	core	SA-C-123/where/SA-S-1880	own link Transactions at /payments/transactions
+CM-PAY-020	salla	core	SA-C-123/where/SA-S-1058	own API folder Transactions
+CM-PAY-020	salla	shows	SA-C-123/boundary/SA-S-1058	the same folder, under boundary
+CM-PAY-020	salla	core	SA-C-123/boundary/SA-S-1563	own access scope transactions
+CM-PAY-020	salla	core	SA-C-123/boundary/SA-S-0180	own endpoint to refund, void or reverse a transaction
+CM-PAY-020	salla	core	SA-C-123/decides/SA-S-2420	staff permission payments_operations_management
+CM-PAY-020	salla	core	SA-C-123/decides/SA-S-3298	flag payments-operations, released, plans plus, pro, special
+CM-PAY-020	salla	shows	SA-C-123/decides/SA-S-2637	the same permission a partner can request, عمليات الدفع الإلكتروني
+CM-PAY-020	salla	shows	SA-C-123/decides/SA-S-2270	staff permission order_refund_payment, a refund, RET's
+CM-PAY-020	salla	shows	SA-C-123/decides/SA-S-2487	the refund permission a partner can request
+CM-PAY-020	salla	shows	SA-C-123/decides/SA-S-0181	the store needs enough balance to process a refund
+CM-PAY-021	shopify	core	SH-C-086/where/SH-S-0436	card payments in store with Shopify POS once Shopify Payments is set up
+CM-PAY-021	shopify	core	SH-C-086/decides/SH-S-0435	only countries where Shopify Payments processes in person
+CM-PAY-021	shopify	core	SH-C-086/decides/SH-S-0047	POS Services with Shopify Payments; the same gateway as online
+CM-PAY-021	shopify	core	SH-C-086/decides/SH-S-0585	offline payments, an optional feature
+CM-PAY-021	shopify	core	SH-C-086/decides/SH-S-7027	plan row In-person card rates, per plan
+CM-PAY-021	shopify	core	SH-C-086/decides/SH-S-7029	plan row In-person manual rates, per plan
+CM-PAY-021	shopify	core	SH-I-1352	Shopify's billing category Tap to Pay transaction fees
+CM-PAY-021	shopify	extension-point	SH-I-1484	extension point Card present (card_present_payments)
+CM-PAY-021	shopify	shows	SH-C-086/where/SH-S-2248	identifier card_present_payments
+CM-PAY-021	shopify	shows	SH-C-086/where/SH-S-6329	admin route apps/point-of-sale-channel, the POS app's page, E's CM-POS-001
+CM-PAY-021	shopify	shows	SH-C-086/boundary/SH-S-0586	offline transactions aren't routed to the payment processor
+CM-PAY-021	shopify	shows	SH-C-086/boundary/SH-S-0587	a payment declined after reconnecting is collected from the customer
+CM-PAY-021	shopify	shows	SH-C-086/decides/SH-S-0588	Canadian businesses can't take Interac offline
+CM-PAY-021	salla	outside	SA-C-095/boundary/SA-S-5040	card payment in the Salla Point cashier needs a Geidea account
+CM-PAY-021	salla	outside	SA-C-095/responsible/SA-S-5039	a successful payment is transferred by the service provider such as Geidea
+CM-PAY-021	salla	outside	SA-C-095/responsible/SA-S-5038	Geidea's annual fees under the merchant's contract with Geidea
+CM-PAY-021	salla	shows	SA-C-095/reason/SA-S-5042	one terminal number per device under the payment systems' and NearPay's requirements
+CM-PAY-022	shopify	core	SH-C-085/where/SH-S-7120	own route Payment methods on the customer's record
+CM-PAY-022	shopify	core	SH-C-085/decides/SH-S-5225	mobile route pay-order-by-vaulted, permission PAY_ORDERS_BY_VAULTED_CARD
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-0592	own API: payment methods to pay future orders without checkout
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-5964	own webhook topic customer_payment_methods/create
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-5965	own webhook topic customer_payment_methods/revoke
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-5966	own webhook topic customer_payment_methods/update
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-5967	needs read_customers and read_customer_payment_methods
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-5968	needs read_payment_mandate or read_customer_payment_methods
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-6078	needs read_payment_mandate
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-6079	needs read_payment_mandate and pay_orders_by_vaulted_card
+CM-PAY-022	shopify	core	SH-C-085/decides/SH-S-6265	needs write_payment_mandate; the amount field only on Plus
+CM-PAY-022	shopify	core	SH-C-085/decides/SH-S-6266	needs write_payment_mandate and pay_orders_by_vaulted_card
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-1135	own access scope write_payment_mandate
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-1119	own access scope read_customer_payment_methods
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-1193	webhook topic value customer_payment_methods/create
+CM-PAY-022	shopify	core	SH-C-085/boundary/SH-S-1194	webhook topic value customer_payment_methods/revoke
+CM-PAY-022	shopify	core	SH-I-1104	staff permission PAY_ORDERS_BY_VAULTED_CARD
+CM-PAY-022	shopify	core	SH-I-1102	staff permission PAY_DRAFT_ORDERS_BY_VAULTED_CARD
+CM-PAY-022	shopify	core	SH-I-2455	own access scope write_customer_payment_methods
+CM-PAY-023	shopify	core	SH-C-088/where/SH-S-5040	own route access_account/shopify-balance
+CM-PAY-023	shopify	core	SH-C-088/where/SH-S-5055	own route account_review/shopify-balance
+CM-PAY-023	shopify	core	SH-C-088/where/SH-S-5056	own route shopify-balance/*
+CM-PAY-023	shopify	core	SH-C-088/where/SH-S-1547	own admin section Banking
+CM-PAY-023	shopify	core	SH-C-088/where/SH-S-0454	the finance suite built into the admin
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5041	route balance:inactive, Balance permissions
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5042	route balance:inactive:transfer, BALANCE_BANK_ACCOUNTS_MANAGEMENT
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5043	route balance:inactive:transfer-frod
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5044	route balance:inactive:redirect-statements
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5046	route balance:root, entitlement shopifyFinance.balance, regions US and GB
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5047	route balance, VIEW_BALANCE_BANK_ACCOUNTS
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5048	route balance:main-account
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5049	route balance:connected-accounts
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5050	route balance:auto-transfers
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5051	route balance:deposit-check
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5052	route balance:add-cash
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5053	route balance:onboard
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5057	route shopify-balance:sell, regions US and GB
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5058	route shopify-balance:sell:rewards
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5059	route shopify-balance:ensure-terms-of-service
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5060	route balance:profile-assessment:interview
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-7168	staff permission View Balance account activity, category FINANCE
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-7062	plan row Manage money with Shopify Balance, earnings rate per plan
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-5379	entitlement shopifyFinance balance true, per store
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-0460	only merchants with a US or Puerto Rico residential address
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-0461	an account on activating Shopify Payments
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-0462	a US SSN or ITIN required
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-0463	closed if Shopify Payments is deactivated
+CM-PAY-023	shopify	core	SH-C-088/decides/SH-S-0464	the same information requirements as Shopify Payments
+CM-PAY-023	shopify	outside	SH-C-088/responsible/SH-S-0456	Stripe Payments Company for money transmission, funds held at Fifth Third Bank
+CM-PAY-023	shopify	outside	SH-C-088/responsible/SH-S-7195	Stripe Payments Company for money transmission and account services
+CM-PAY-023	shopify	outside	SH-C-088/responsible/SH-S-7217	Stripe Payments Company; funds held at Evolve Bank & Trust and Fifth Third Bank
+CM-PAY-023	shopify	shows	SH-C-088/responsible/SH-S-0455	Shopify is a tech company, not a bank
+CM-PAY-023	shopify	shows	SH-C-088/reason/SH-S-0458	a money management account for the store's payments and transactions
+CM-PAY-023	shopify	shows	SH-C-088/boundary/SH-S-0347	sales money up to 7 days earlier than a bank
+CM-PAY-023	shopify	shows	SH-C-088/reason/SH-S-0347	the same sentence, under reason
+CM-PAY-023	shopify	shows	SH-C-088/boundary/SH-S-0466	Capital repayments withdrawn from Shopify Balance
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5380	entitlement balance false on development stores
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5394	feature balanceCheckDepositEnabled false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5409	feature balanceUsCashVoucherEnabled false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5424	feature existingMerchantEligibleForBanking false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5439	feature hasEverOnboardedToBanking false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5463	feature hasInitiatedOnboardingToBanking false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5487	feature netNewMerchantEligibleForBanking false
+CM-PAY-023	shopify	shows	SH-C-088/decides/SH-S-5502	feature onboardedToBanking false
+CM-PAY-023	shopify	shows	SH-I-1407	legal agreement Balance
+CM-PAY-023	shopify	shows	SH-I-2505	App Store built-in feature Shopify Balance
+CM-PAY-024	shopify	core	SH-C-089/where/SH-S-5098	own route finance/cards
+CM-PAY-024	shopify	core	SH-C-089/where/SH-S-1552	own admin section Cards
+CM-PAY-024	shopify	core	SH-C-089/decides/SH-S-5099	route cards:unlock:update, Balance or Credit card permissions
+CM-PAY-024	shopify	core	SH-C-089/where/SH-S-7181	the admin's operation banking/CardsIndexQuery
+CM-PAY-024	shopify	shows	SH-C-089/decides/SH-S-0465	personal use of the card may end the Balance account
+CM-PAY-024	shopify	outside	SH-C-089/responsible/SH-S-0457	cards powered by Stripe, issued by Celtic Bank under a Visa licence
+CM-PAY-024	shopify	outside	SH-C-089/responsible/SH-S-7196	the same, in the pricing page's footnote
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-5125	own route access_account/credit
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-5128	own route credit
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-6330	admin page credit
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-1559	own admin section Credit
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-7182	the admin's operation banking/CreditIndexBanking
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-7253	transaction history and card statements in the Shopify Admin
+CM-PAY-025	shopify	core	SH-C-090/where/SH-S-7254	the issuing bank's decision communicated through the Shopify Admin
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5126	route credit:inactive:make-payment, MANAGE_ALL_SHOPIFY_CREDIT_CARDS
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5127	route credit:inactive:statements
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5129	route credit:repayment-settings:update
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5130	route credit:account-setup
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5131	route credit:account:index
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5132	route credit:account-settings
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-5133	route credit:card-management
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-7169	staff permission View all Shopify Credit account activity, category FINANCE
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-7064	plan row Shopify Credit pay-in-full Visa card, up to 3% cashback
+CM-PAY-025	shopify	core	SH-C-090/decides/SH-S-0470	eligibility by the health of the business
+CM-PAY-025	shopify	core	SH-C-090/boundary/SH-S-0468	pay in full monthly or repay over 10 months from daily sales
+CM-PAY-025	shopify	core	SH-C-090/boundary/SH-S-7283	Shopify operates the API to Stripe's systems for access through the admin
+CM-PAY-025	shopify	own-service	SH-C-090/responsible/SH-S-7276	Program Terms an agreement with Shopify Capital Inc.
+CM-PAY-025	shopify	own-service	SH-C-090/responsible/SH-S-7279	access to the Program provided by Shopify Capital Inc.
+CM-PAY-025	shopify	outside	SH-C-090/responsible/SH-S-0469	cards powered by Stripe, issued by Celtic Bank
+CM-PAY-025	shopify	outside	SH-C-090/responsible/SH-S-7197	the same, in the pricing page's footnote
+CM-PAY-025	shopify	outside	SH-C-090/responsible/SH-S-7277	Stripe, Inc. program manager and processor
+CM-PAY-025	shopify	outside	SH-C-090/responsible/SH-S-7278	Issuing Bank Terms with Celtic Bank Corporation
+CM-PAY-025	shopify	outside	SH-C-090/decides/SH-S-7265	the issuing bank determines eligibility
+CM-PAY-025	shopify	outside	SH-C-090/decides/SH-S-7266	the issuing bank may decline a card account
+CM-PAY-025	shopify	outside	SH-C-090/decides/SH-S-7267	the issuing bank sets the credit limit
+CM-PAY-025	shopify	shows	SH-C-090/where/SH-S-6331	the Finance page
+CM-PAY-025	shopify	shows	SH-C-090/responsible/SH-S-7280	Shopify not a party to the Issuing Bank Terms
+CM-PAY-025	shopify	shows	SH-C-090/decides/SH-S-7268	only businesses in the Territory selling goods or services
+CM-PAY-025	shopify	shows	SH-C-090/reason/SH-S-7289	Shopify reviews the business so the products stay suitable
+CM-PAY-025	shopify	shows	SH-C-090/decides/SH-S-5640	feature hasInitiatedOnboardingToCredit false
+CM-PAY-025	shopify	shows	SH-I-1408	legal agreement Credit
+CM-PAY-026	shopify	core	SH-C-091/where/SH-S-5096	own route access_account/capital
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital
+CM-PAY-026	shopify	core	SH-C-091/where/SH-S-1551	own admin section Capital
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, Included on all plans
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-5379	entitlement shopifyFinance capital true, per store
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-5380	entitlement capital true on development stores
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0474	eligibility evaluated automatically
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0480	an underwriting review by Shopify Capital
+CM-PAY-026	shopify	shows	SH-C-091/where/SH-S-6334	the Finance page
+CM-PAY-026	shopify	core	SH-C-092/where/SH-S-5096	own route access_account/capital
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital
+CM-PAY-026	shopify	core	SH-C-092/where/SH-S-1551	own admin section Capital
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, Included on all plans
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-5379	entitlement shopifyFinance capital true, per store
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-5380	entitlement capital true on development stores
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-0474	eligibility evaluated automatically
+CM-PAY-026	shopify	core	SH-C-092/decides/SH-S-0480	an underwriting review by Shopify Capital
+CM-PAY-026	shopify	shows	SH-C-092/where/SH-S-6334	the Finance page
+CM-PAY-026	shopify	core	SH-C-093/where/SH-S-5096	own route access_account/capital
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital
+CM-PAY-026	shopify	core	SH-C-093/where/SH-S-1551	own admin section Capital
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, Included on all plans
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-5379	entitlement shopifyFinance capital true, per store
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-5380	entitlement capital true on development stores
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-0474	eligibility evaluated automatically
+CM-PAY-026	shopify	core	SH-C-093/decides/SH-S-0480	an underwriting review by Shopify Capital
+CM-PAY-026	shopify	shows	SH-C-093/where/SH-S-6334	the Finance page
+CM-PAY-026	shopify	core	SH-C-094/where/SH-S-5096	own route access_account/capital
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital
+CM-PAY-026	shopify	core	SH-C-094/where/SH-S-1551	own admin section Capital
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, Included on all plans
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-5379	entitlement shopifyFinance capital true, per store
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-5380	entitlement capital true on development stores
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-0474	eligibility evaluated automatically
+CM-PAY-026	shopify	core	SH-C-094/decides/SH-S-0480	an underwriting review by Shopify Capital
+CM-PAY-026	shopify	shows	SH-C-094/where/SH-S-6334	the Finance page
+CM-PAY-026	shopify	core	SH-C-095/where/SH-S-5096	own route access_account/capital
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-5097	route capital:root, entitlement shopifyFinance.capital
+CM-PAY-026	shopify	core	SH-C-095/where/SH-S-1551	own admin section Capital
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-7063	plan row Flexible growth funding through Shopify Capital, Included on all plans
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-5379	entitlement shopifyFinance capital true, per store
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-5380	entitlement capital true on development stores
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-0474	eligibility evaluated automatically
+CM-PAY-026	shopify	core	SH-C-095/decides/SH-S-0480	an underwriting review by Shopify Capital
+CM-PAY-026	shopify	shows	SH-C-095/where/SH-S-6334	the Finance page
+CM-PAY-026	shopify	core	SH-C-091/where/SH-S-6338	admin page Capital transaction history, finance/capital
+CM-PAY-026	shopify	core	SH-C-091/where/SH-S-7183	the admin's operation capital/CapitalAccountOverviewQuery
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0475	only a store owner applies
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0472	eligible businesses in nine countries
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0479	principal place of business and bank account in the country
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0476	with Shopify Payments or approved third-party providers
+CM-PAY-026	shopify	core	SH-C-091/decides/SH-S-0477	Shopify Payments mandatory in certain locations
+CM-PAY-026	shopify	outside	SH-C-091/responsible/SH-S-0483	all US funding issued by WebBank
+CM-PAY-026	shopify	outside	SH-C-091/responsible/SH-S-7198	the same, on the pricing page
+CM-PAY-026	shopify	outside	SH-C-091/responsible/SH-S-7199	the same, on the admin plan page
+CM-PAY-026	shopify	outside	SH-C-091/responsible/SH-S-7218	US loans issued by WebBank; a loan or a merchant cash advance by country
+CM-PAY-026	shopify	shows	SH-C-091/boundary/SH-S-0482	US loan repaid from a daily percentage of sales
+CM-PAY-026	shopify	shows	SH-C-091/where/SH-S-6333	the Finance page
+CM-PAY-026	shopify	shows	SH-C-091/where/SH-S-6336	the Finance page
+CM-PAY-026	shopify	own-service	SH-C-092/responsible/SH-S-0484	Shopify provides UK merchant cash advances
+CM-PAY-026	shopify	outside	SH-C-092/boundary/SH-S-0484	through its partner YouLend under a receivables purchase agreement
+CM-PAY-026	shopify	outside	SH-C-092/responsible/SH-S-0485	UK merchant cash advances issued by YouLend
+CM-PAY-026	shopify	shows	SH-C-092/decides/SH-S-0486	BACS Direct Debit regulations require the notifications
+CM-PAY-026	shopify	shows	SH-C-092/where/SH-S-6339	the Finance page
+CM-PAY-026	shopify	shows	SH-C-092/where/SH-S-6340	the Finance page, at finances
+CM-PAY-026	shopify	shows	SH-C-093/boundary/SH-S-0488	Canada: a new pre-authorized debit agreement to change the bank account
+CM-PAY-026	shopify	shows	SH-C-093/where/SH-S-6341	the Finance page
+CM-PAY-026	shopify	core	SH-C-094/boundary/SH-S-7310	own access scope read_capital
+CM-PAY-026	shopify	core	SH-C-095/boundary/SH-S-7310	the same scope, under SH-C-095
+CM-PAY-026	shopify	outside	SH-C-095/responsible/SH-S-0490	French loans provided by Banking Circle S.A. with YouLend SAS
+CM-PAY-026	shopify	own-service	SH-C-095/responsible/SH-S-0491	the application provided by Shopify Commerce France SAS
+CM-PAY-026	shopify	shows	SH-C-095/where/SH-S-6342	the Finance page
+CM-PAY-026	shopify	shows	SH-I-1410	legal agreement Capital - US loan
+CM-PAY-026	shopify	shows	SH-I-1411	legal agreement Capital - US Merchant Cash Advance
+CM-PAY-026	shopify	shows	SH-I-1412	legal agreement Capital - UK Merchant Cash Advance
+CM-PAY-026	shopify	shows	SH-I-1413	legal agreement Capital - Canada Merchant Cash Advance
+CM-PAY-026	shopify	shows	SH-I-1414	legal agreement Capital - Australia
+CM-PAY-026	shopify	shows	SH-I-2506	App Store built-in feature Shopify Capital
+CM-PAY-026	salla	core	SA-C-128/decides/SA-S-3487	flag financial-support, released, plans pro and special
+CM-PAY-026	salla	core	SA-C-128/where/SA-S-0111	the dashboard's capital text: 25% of net sales collected from each payment
+CM-PAY-026	salla	outside	SA-C-128/responsible/SA-S-0111	the investment managed through صندوق سلة in partnership with Tanami
+CM-PAY-026	salla	shows	SA-C-128/boundary/SA-S-0111	the same sentence, under boundary
+CM-PAY-026	salla	outside	SA-C-128/responsible/SA-S-0112	managed by the fund manager Tanami, Sharia compliant
+CM-PAY-026	salla	outside	SA-C-128/decides/SA-S-0113	the fund manager verifies the business and its bank account
+CM-PAY-026	salla	shows	SA-C-128/responsible/SA-S-0114	the fund manager's approval and the Investment Agency Agreement

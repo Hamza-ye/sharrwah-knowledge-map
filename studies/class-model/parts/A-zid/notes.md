@@ -143,3 +143,143 @@ header only.
 - **ZD-C-017, Zid's wallet, lands here,** in CM-PLN-006, moved from domain C: it is the merchant's prepaid balance with the platform, and batch 1 cites all its statements in CM-PLN-006 and -005. scope.tsv now gives it domain A, with C under `also`.
 - **ZD-C-104 names A under `also`,** for ZD-S-0970 (closing the store temporarily), cited in CM-ACC-007.
 
+
+## Batch 2: TRU
+
+Concerns: ZD-C-036, ZD-C-038, ZD-C-040, ZD-C-041, ZD-C-042 and ZD-C-095. Zid's cell is written for all 21 capabilities of
+TRU: 12 cite statements, 9 are `none-held` (CM-TRU-003, -004, -006, -007, -008, -011, -018, -019, -021). No capability is
+added. With batch 1, Zid has a cell for all 48 capabilities of domain A (11 ACC, 5 STF, 7 PLN, 4 ONB, 21 TRU).
+
+### How the concerns landed
+
+| Concern | Lands in | Join | Fit |
+|---|---|---|---|
+| ZD-C-095 Security settings (اعدادات الامان) | CM-TRU-001 | terms | clean |
+| ZD-C-038 Nafath identity verification | CM-TRU-002 | role | clean |
+| ZD-C-036 E-commerce store regulations (ضوابط المتجر الإلكتروني) | CM-TRU-010 | terms | clean |
+| ZD-C-040 Privacy and personal data | CM-TRU-013 | terms | clean |
+| ZD-C-041 Cross-border data transfer | CM-TRU-014 | terms | clean |
+| ZD-C-042 AI data processing | CM-TRU-015 | role | strained |
+
+All six joined existing capabilities; none made a new one; none moved.
+
+### Grains and cuts
+
+- **ZD-C-040 across CM-TRU-013 and its children.** The Privacy Policy's clauses are cited by subject: processor role,
+  DPO, consent and partners in CM-TRU-013; service providers (ZD-S-0791) in CM-TRU-015; retention (ZD-S-0786) in
+  CM-TRU-016; disclosure to public entities (ZD-S-0792) in CM-TRU-017. All are one tree under CM-TRU-013, so the fit is clean.
+- **ZD-C-042 at CM-TRU-015, strained.** Its section has no place of its own beyond the Privacy Policy, so by the dry run's
+  convention it isn't a capability. It names one processor, Google Cloud Vertex AI, for one feature, Zid Agent; it gives
+  no list of subprocessors and no notice of changes. ZD-S-0717 is also held under ZD-C-025 (Zid Agent, domain F,
+  CM-AIA-002), which this part doesn't cite. `caps` (AI; الذكاء الاصطناعي; Vertex; assistant; data processor) finds no
+  capability for AI data processing as such. The reviewer may prefer CM-TRU-013 for its consent and control clauses.
+- **ZD-C-038 at CM-TRU-002.** Every statement is scoped by its words to Zid Pay's activation (the store owner passes
+  Nafath to receive electronic payments). The subject is the owner's identity, so it is A's CM-TRU-002, as Shopify's
+  identity verification for Capital and Credit is; not a payment capability of C.
+- **ZD-C-036 at CM-TRU-010.** Its footer statement (ZD-S-0763: the CR number, email and phone shown at the foot of the
+  store page) is the one built-in behaviour, `core`; the rules are `shows`, as Salla's rules are. Its statement ZD-S-0762
+  (Zid not a party between consumer and merchant) also bears on CM-TRU-020, but it makes the merchant responsible, so it
+  stays `shows` in CM-TRU-010.
+- **ZD-C-095 at CM-TRU-001.** The security levels (ZD-S-0945) are sign-in security of the same settings page; the session
+  timeout is recorded as a quality.
+
+### Joins on role
+
+- ZD-C-038: Zid's Nafath check of the store owner with Salla's Absher check (SA-S-0132) and Shopify's identity
+  verification (SH-S-0264).
+- ZD-C-042: Google Cloud as Zid Agent's processor with Shopify's third-party subprocessors (SH-S-0184, SH-S-0195).
+- Cells, not landings: CM-TRU-009 (Zid Pay's prohibited activities with Shopify's AUP and Salla's violations, scoped to Zid
+  Pay); CM-TRU-012 (a merchant's objection by ticket, ZD-S-1077, with Shopify's complaint-handling system, a reading: the
+  statement doesn't say what the objection is against); CM-TRU-020 (Zid Assurance's complaint handling with Salla's
+  complaints platform).
+
+### Homonyms
+
+None new. Watch: Zid's توثيق الحساب (account verification before a wallet withdrawal, ZD-S-0653) and Zid Pay's KYC
+documents (ZD-S-0659) are not cited in CM-TRU-002, because neither says a person is verified, and Zid's KYC endpoint reads
+the commercial registration and business details (ZD-S-0757, CM-ACC-004). ZD-S-0613 (ZD-C-011, domain C) is a payment
+provider's own Nafath check, not Zid's.
+
+### Zid Assurance and complaints: which cell (for the coordinator)
+
+CM-TRU-020's Zid cell cites ZD-C-111's ZD-S-0998 ("we … handle any complaints or inquiries", `core`), ZD-S-0996 (the
+setting, `core`), ZD-S-0997 and ZD-S-1000 (`shows`), and ZD-C-092's ZD-S-0935 (a complaint against a store through Zid's
+link or support, `core`) and ZD-I-0413 (the legal page Zid Stores' Customer Complaints, `shows`). D-zid's CM-SUP-008 cites
+all six, ZD-S-0998 and ZD-S-0935 as `own-service`. **They belong in CM-TRU-020.** CM-SUP-008 is the store's own management
+of its customers' complaints (Salla إدارة الشكاوى); what these statements show is Zid itself taking buyers' complaints
+about stores, which is the platform as mediator, CM-TRU-020's role (Salla's SA-S-5087). Counted once, Zid's CM-SUP-008
+would keep only what is the merchant's (none of these statements is), so it would fall to `none-held` or to Zid Assurance's
+WhatsApp order updates (ZD-S-0999), which D may place elsewhere. ZD-C-092 doesn't name A under `also` in scope.tsv; if the
+coordinator keeps ZD-S-0935 and ZD-I-0413 here, ZD-C-092's row should name A.
+
+### Concerns read under `also`
+
+- ZD-C-037 (domain C), Zid Pay's prohibited activities: cited in CM-TRU-009 (ZD-S-0765, -0769, -0770, -0772 `core`; the
+  lists `shows`). **For the coordinator:** when domain C maps Zid, these shouldn't also be `core` in a C capability; no
+  capability of C holds prohibited businesses (`caps`: prohibited; restricted; محظورة; sanctions; عقوبات).
+- ZD-C-039 (domain E): ZD-S-0781 and ZD-S-0782 cited in CM-TRU-005 (`shows`).
+- ZD-C-111 (domain D): above.
+- ZD-C-017, ZD-C-022, ZD-C-033, ZD-C-096, ZD-C-104: read; nothing cited in TRU.
+
+### Statements of other domains not cited
+
+- ZD-S-0933 (ZD-C-091, domain D, not naming A): Zid collects the merchant's customers' information as the merchant
+  directs; CM-TRU-013 doesn't need it, since ZD-S-0788 says the same.
+- ZD-S-0612 (ZD-C-011, domain C): Zid not responsible for stores' or carriers' performance; bears on CM-TRU-010, not cited.
+- ZD-S-0987 (ZD-C-109, Mazeed, domain E): a rule on prohibited activities for Mazeed only.
+
+### What the checker flagged, answered
+
+- **evidence.tsv lines 142 and 146, ZD-S-0935 and ZD-I-0413 (ZD-C-092, domain D, not naming A):** cited in CM-TRU-020,
+  because they are the only statements held of Zid taking a complaint against a store; see above.
+- **cells.tsv line 38, CM-TRU-010, `core` on a boundary statement only:** ZD-S-0763 says the CR number, email and phone
+  "ستظهر للعملاء في أسفل صفحة المتجر": Zid's storefront shows them, a built-in behaviour, not an API object.
+- **cells.tsv line 45, CM-TRU-017, `core` on a boundary statement only:** ZD-S-0792 is the Privacy Policy's rule for when
+  Zid itself discloses data to a public entity, Zid's own action.
+- **ZD-S-0902 in CM-ACC-001 and CM-TRU-001:** the merchant's duty to protect its account with a strong password is shown in
+  both, as Shopify's SH-S-0230 is in CM-TRU-001. ZD-C-077 is already `strained`; **for the coordinator,** its reading
+  should also name CM-TRU-001.
+- **ZD-S-1077 in CM-ONB-003 and CM-TRU-012, and landings line 11, ZD-C-114 `clean`:** batch 1's row. The ticket is
+  Zid's support channel (CM-ONB-003) and the one place held where a merchant files an objection to Zid (CM-TRU-012).
+  **For the coordinator:** ZD-C-114 should be `strained`, its reading naming CM-TRU-012; or, if the reviewer reads the
+  objection as support only, the CM-TRU-012 cell goes to `none-held`.
+- **`none-held` cells whose terms match statements** (CM-TRU-003, -004, -006, -007, -008, -011, -018, -019, -021): each
+  match was read; the cell's reading names them and why they aren't the capability.
+- **One citation dropped, by the convention on placed inventory entries:** ZD-I-0406 (the Terms & Conditions page) was
+  first cited in CM-TRU-010 and taken out, because statements cover the cell (ZD-S-0759 is the regulations' own where);
+  the checker had shown it is placed in ZD-C-030 and ZD-C-021 too, so it would have marked batch 1's ZD-C-030 and ZD-C-021
+  `strained` on the whole Terms page. The reviewer may restore it; if so, those two landings become strained.
+
+### Names (proposals for the coordinator)
+
+- CM-TRU-001: add Zid's Security Settings (اعدادات الامان, التحقق بخطوتين).
+- CM-TRU-002: add Zid's Nafath (التحقق من نفاذ).
+- CM-TRU-009: add Zid Pay's Prohibited Activities (الأنشطة المحظورة).
+- CM-TRU-010: add Zid's E-commerce store regulations (ضوابط المتجر الإلكتروني).
+- CM-TRU-014: add Zid's نقل البيانات عبر الحدود; CM-TRU-020: add Zid Assurance (ضمان زد) and Zid Stores' Customer Complaints.
+
+### Gaps that bear on the cells
+
+- Where Zid stores and processes data (ZD-C-041/where: searched, not found; observation needed), and where Vertex AI
+  processes Zid Agent's data (ZD-C-042/where): CM-TRU-014 holds transfers only, with no data location as a quality.
+- No data processing addendum, subprocessor list, cookie consent, customer data request or erasure, audit log, PCI DSS
+  statement or security apps category is held.
+- No acceptable-use rule for the platform beyond Zid Pay's (CM-TRU-009 is scoped to Zid Pay).
+- A reason for requiring Nafath (ZD-C-038/reason) and a named responsibility for security settings (ZD-C-095/responsible,
+  stated only in general terms).
+
+### Rulings
+
+None: Zid was never matched, so no unclear candidate holds a Zid concern (`matches`). `rulings.tsv` holds its header only.
+
+### The whole part's check
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-zid`: 0 problems, 25 flags for the reviewer (the
+batch 1 flags answered in its section, and the batch 2 flags answered above).
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **ZD-C-111, Zid Assurance, lands here** in CM-TRU-020, moved from D: its complaint handling is the platform's mediation. D's CM-SUP-008 cites the same statements as `shows`. ZD-C-092 names A under `also`, for ZD-S-0935 and ZD-I-0413.
+- **ZD-C-114 is `strained`** (ZD-S-1077 in CM-TRU-012), and ZD-C-077's reading names CM-TRU-001.
+- **The part is complete,** with no capability added: domain A needs no Zid back-fill. BigCommerce maps next.
+

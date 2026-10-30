@@ -47,3 +47,19 @@ CM-PAY-017	shopify	Bizum	SH-C-080/decides/SH-S-7026
 CM-PAY-017	salla	KNET	SA-C-110/decides/SA-S-0065
 CM-PAY-018	shopify	Coinbase	SH-C-081/responsible/SH-S-0087
 CM-PAY-018	shopify	Bridge (an affiliate of Stripe)	SH-C-081/responsible/SH-S-0151
+CM-PAY-021	salla	Geidea	SA-C-095/responsible/SA-S-5039
+CM-PAY-021	salla	NearPay	SA-C-095/reason/SA-S-5042
+CM-PAY-023	shopify	Stripe Payments Company	SH-C-088/responsible/SH-S-7217
+CM-PAY-023	shopify	Evolve Bank & Trust	SH-C-088/responsible/SH-S-7217
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-C-088/responsible/SH-S-7195
+CM-PAY-024	shopify	Stripe	SH-C-089/responsible/SH-S-0457
+CM-PAY-024	shopify	Celtic Bank	SH-C-089/responsible/SH-S-0457
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-C-089/responsible/SH-S-0457
+CM-PAY-025	shopify	Celtic Bank Corporation	SH-C-090/responsible/SH-S-7278
+CM-PAY-025	shopify	Stripe, Inc.	SH-C-090/responsible/SH-S-7277
+CM-PAY-026	shopify	WebBank	SH-C-091/responsible/SH-S-0483
+CM-PAY-026	shopify	YouLend	SH-C-092/responsible/SH-S-0485
+CM-PAY-026	shopify	Banking Circle S.A.	SH-C-095/responsible/SH-S-0490
+CM-PAY-026	shopify	YouLend SAS	SH-C-095/responsible/SH-S-0490
+CM-PAY-026	shopify	Bankers' Automated Clearing System (BACS) Direct Debit regulations	SH-C-092/decides/SH-S-0486
+CM-PAY-026	salla	Tanami (تنامي)	SA-C-128/responsible/SA-S-0112

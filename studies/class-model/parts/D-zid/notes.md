@@ -286,3 +286,7 @@ None: Zid's concerns are in no Q1 match or unclear candidate.
 - **CM-MKT-022's Zid cell** names the row batch 2 added, Zid Alerts' settings entry (ZD-I-0144).
 - **D-zid added no capability,** so domain D needs no Zid back-fill. BigCommerce maps next.
 
+## The coordinator's correction after A-zid (30 October)
+
+- **ZD-C-111, Zid Assurance, moves to A** and lands in CM-TRU-020, the platform as mediator of buyers' complaints about stores. CM-SUP-008's Zid rows are all Zid Assurance, so they are `shows` here and count there; its WhatsApp order updates stay cited in CM-NTF-001.
+

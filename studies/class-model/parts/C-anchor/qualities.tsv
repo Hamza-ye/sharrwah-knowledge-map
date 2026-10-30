@@ -22,3 +22,14 @@ CM-PAY-018	shopify	USDC rates	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30�
 CM-PAY-019	shopify	Payment customization functions per store, maximum	You can activate a maximum of 25 payment customization functions on each store.	SH-C-083/decides/SH-S-0590
 CM-PAY-016	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123
 CM-PAY-016	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125
+CM-PAY-020	shopify	Credit card authorization period	provides an authorization period of 7 days.	SH-C-084/decides/SH-S-0391
+CM-PAY-020	shopify	Extended authorization periods	Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.	SH-C-084/decides/SH-S-0393
+CM-PAY-021	shopify	In-person card rates	2.6% + 10¢; 2.5% + 10¢; 2.4% + 10¢; 2.3% + 10¢ (Basic, Grow, Advanced, Plus)	SH-C-086/decides/SH-S-7027
+CM-PAY-021	shopify	In-person manual rates	3.5% + 10¢ (per plan, as the row gives it)	SH-C-086/decides/SH-S-7029
+CM-PAY-021	shopify	Offline Interac payments in Canada	Canadian businesses can't accept Interac card payments when offline.	SH-C-086/decides/SH-S-0588
+CM-PAY-023	shopify	Shopify Balance earnings rate	2.52% earnings rate (Basic, Grow, Advanced); 3.54% earnings rate (Plus)	SH-C-088/decides/SH-S-7062
+CM-PAY-023	shopify	Shopify Balance eligibility by residence	Shopify Balance is a commercial card available only to merchants with a physical residential address in the United States or Puerto Rico.	SH-C-088/decides/SH-S-0460
+CM-PAY-025	shopify	Shopify Credit cashback	Up to 3% cashback (every plan)	SH-C-090/decides/SH-S-7064
+CM-PAY-025	shopify	Shopify Credit repayment term	Shopify Credit offers the option to either pay your full statement balance automatically each month or to repay over 10 calendar months through automatic debits from your daily sales, for a fee.	SH-C-090/boundary/SH-S-0468
+CM-PAY-026	shopify	Shopify Capital US loan repayment term	The maximum repayment term is 18 months, and 2 minimum payments apply.	SH-C-091/responsible/SH-S-7218
+CM-PAY-026	salla	Share of net sales collected	يُحسب مبلغ التحصيل بنسبة %25 من صافي المبيعات لكل دفعة، ويُحوّل المتبقي إلى حسابك البنكي.	SA-C-128/where/SA-S-0111

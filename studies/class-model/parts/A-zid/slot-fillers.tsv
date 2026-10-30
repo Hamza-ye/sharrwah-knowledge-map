@@ -4,3 +4,13 @@ CM-ACC-002	zid	the laws of Saudi Arabia, governing law of Zid Pay's contract in 
 CM-ACC-002	zid	Egyptian regulatory and taxation requirements, which Zid Egypt's registration complies with	ZD-C-031/reason/ZD-S-0740
 CM-ACC-004	zid	منصة المركز السعودي للأعمال (the Saudi Business Center), verifying the store data of Saudi merchants	ZD-C-035/where/ZD-S-0752
 CM-PLN-007	zid	ضريبة القيمة المضافة (VAT), on what the merchant pays Zid	ZD-C-020/responsible/ZD-S-0675
+CM-TRU-002	zid	Nafath (نفاذ), through which the store owner's identity is verified by the owner's ID to activate Zid Pay	ZD-C-038/boundary/ZD-S-0778
+CM-TRU-009	zid	the prohibitions of Zid Pay, Saudi Arabia or the country of activity (Zid Pay's prohibited activities and entities)	ZD-C-037/where/ZD-S-0765
+CM-TRU-009	zid	sanctions lists of the United Nations, the UK Treasury, the European Union and the Office of Foreign Assets Control	ZD-C-037/decides/ZD-S-0767
+CM-TRU-009	zid	the Central Bank's approval, required of merchants providing financial services	ZD-C-037/responsible/ZD-S-0773
+CM-TRU-010	zid	نظام الجرائم المعلوماتية (the Anti-Cyber Crime Law)	ZD-C-036/decides/ZD-S-0760
+CM-TRU-010	zid	أنظمة وزارة التجارة والاستثمار (the Ministry of Commerce and Investment's rules)	ZD-C-036/decides/ZD-S-0760
+CM-TRU-010	zid	نظام التعاملات الإلكترونية (the Electronic Transactions Law)	ZD-C-036/decides/ZD-S-0760
+CM-TRU-010	zid	نظام التجارة الإلكترونية (the E-Commerce Law)	ZD-C-036/decides/ZD-S-0760
+CM-TRU-015	zid	Google Cloud Vertex AI (data processor for Zid Agent's AI features)	ZD-C-042/where/ZD-S-0717
+CM-TRU-020	zid	the Ministry of Commerce, with which Zid processes complaints with merchants	ZD-C-111/reason/ZD-S-1000
