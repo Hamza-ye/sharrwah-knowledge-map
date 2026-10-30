@@ -356,6 +356,17 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 ### Evidence
 
 - **Statements** stay verbatim, cited at a pinned commit, under Q1's rules.
+- **The evidence map** (30 October; `studies/class-model/evidence-map/`, from the brief `studies/class-model/briefs/E-map.md`). For each platform and surface it gives:
+  - the platform's own list of what exists there, its denominator;
+  - what is held against it, from the repositories' own ledgers;
+  - how it was captured, and what is out of reach;
+  - how the surfaces relate;
+  - what the model has read.
+
+  Every agent that reads evidence starts from it, by structure, before any search. Coverage is judged at three levels, each with its remedy:
+  - exists but isn't captured: a capture request, where the thing could change the model or a decision;
+  - captured but not read: an agent reads it;
+  - read but not placed, or placed wrongly: the review.
 - **Before a gap goes to anyone,** its route is checked against what is held. What a repository holds is read through its own reading guides and indexes first, then searched: its `README.md`, `docs/READING.md`, `docs/GAPS.md`, `docs/OPERATING.md`, `index/`, `structures/README.md` and `structures/REGISTER.tsv`, and in other-product-class each platform folder's `README.md`, `GAPS.md`, `index/` and `structures/REGISTER.tsv` (the founder, 30 October). Then:
   - if the page is held and readable, the gap is "page not read", for an agent;
   - if it is held but not readable, the reader is extended;
@@ -632,3 +643,9 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
 
   **What this change removes or weakens:** nothing. It adds two steps before the final review, at about 80 to 180 million agent tokens in all, an assumption to be measured on the first batches. The final review, by risk and from the model's side, stays as it was, and reads the omission review's findings.
 
+
+- **30 October 2026, the evidence map** (the founder's context: "Evidence is a critical part of this work. We need confidence not only in what is already held, but also in how agents identify, plan, and execute further evidence capture when needed", the framing left to the coordinator). A fix to the method within this plan, listed at the next report. Changed in section 6, Evidence:
+  - an evidence map, from the repositories' own denominators and ledgers, is every reader's entry point;
+  - coverage is judged at three levels, each with its remedy.
+
+  The held pass's second stage and the omission review read it. **What this change removes or weakens:** nothing.
