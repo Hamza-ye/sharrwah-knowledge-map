@@ -1,6 +1,6 @@
 # Inspection of brief B (`studies/class-model/briefs/B-extent.md`)
 
-Status: in progress. Findings are written as they are found; the summary table and the section on inspection A come last.
+Status: complete (30 October 2026). 19 findings: 13 must fix and 6 optional.
 
 An inspection in Fagan's sense (1976): it looks for what would make an agent that follows the brief produce wrong, slanted or uncheckable rows. The inspector wrote none of the brief and changed nothing but this file. Every judgement below is marked **Reading**. Every count comes from a script named with it; the scripts are in the inspector's scratchpad and are restated in prose where a count depends on a choice.
 
@@ -12,7 +12,7 @@ An inspection in Fagan's sense (1976): it looks for what would make an agent tha
   - `studies/concern-map/README.md`; for each of the five platforms, the headers and columns of `concerns.tsv`, `statements.tsv`, `inventory.tsv`, `citations.tsv`, `gaps.tsv`, queried by script; the concern names of all five platforms; the `notes.md` sections "Lists used and their sizes" and "Where the inventory stops" (Salla's read in full, the others searched);
   - `studies/concern-map/matches.tsv` (88 rows) and `unclear-matches.tsv` (84 rows), by script; `map/out-of-scope.tsv`, by script; `matching-notes.md`, lines 196 to 212;
   - `questions/Q1-concern-map.md`, whole;
-  - `PLAN.md`, lines 204 to 224 (Stage 4A) and 318 to 330 (section 6's kinds), and, for single checks, lines 36, 180 to 189, 284 to 300, 353 and 470 to 476;
+  - `PLAN.md`, lines 204 to 224 (Stage 4A) and 318 to 330 (section 6's kinds), and, for single checks, lines 36, 180 to 193, 284 to 300, 353 and 470 to 476;
   - `founder-decisions.tsv`, the rows of 26 to 29 October, for one check (the founder's intent of 29 October);
   - `evidence/product-class/README.md`, and the `manifest.tsv` of every run under `evidence/product-class/runs/`, by script;
   - `method/README.md`.
@@ -22,17 +22,54 @@ An inspection in Fagan's sense (1976): it looks for what would make an agent tha
 - **The WooCommerce 11.2.1 release** at `/home/user/woocommerce-release/11.2.1`: the 41 release files that domain B's statements cite, each checked against `evidence/product-class/woocommerce-11.2.1/files.tsv` by sha256 (41 of 41 match).
 - **After the findings were written:** `studies/class-model/inspection-A.md`, for the section on its must-fix findings.
 
+**The repository moved during the inspection.** The coordinating session committed `7ad5cfda`, `e5af817b` and `addea485`, which changed `PLAN.md`, `STATE.md` and `founder-decisions.tsv` (the founder's change of 30 October, on architecture's own plan) and saved this file. `git diff 93ebb15c HEAD` shows no change to the brief, the seed, `studies/concern-map/` or `questions/`. Stage 4A's rules for the extent are unchanged in substance; only the bullet on the independent review gains "with the architecture plan". Every line number cited here is at `93ebb15c`.
+
 ### Citations the brief relies on resolve
 
-For the statements of the concerns the inspector reads as domain B's (the sets are under finding 12), every cite id exists in its platform's `citations.tsv`, and every source resolves: Shopify 469 local paths at their observed-sh commit and 36 URLs; Salla 366 at `observed-sa@145f137` and 9 URLs; WooCommerce 91 release paths and 50 URLs; Zid 58 URLs; BigCommerce 61 URLs. A URL resolves through the `cited_in` column of a capture run's `manifest.tsv`, except `SH-S-7284` (`https://www.shopify.com/legal/terms`, cited 6 times), which no manifest lists by its id but whose URL is captured in `20261011T061248Z-q1-shopify-sources`. (Script: `resolve.py` in the scratchpad: `git cat-file -e <commit>:<path>` for local sources, path existence for the release and this repository, `cited_in` for URLs.)
+For the statements of the concerns the inspector reads as domain B's (the sets are under finding 12), every cite id exists in its platform's `citations.tsv`, and every source resolves: Shopify 469 local paths at their observed-sh commit and 36 URLs; Salla 366 at `observed-sa@145f137` and 9 URLs; WooCommerce 91 release paths and 50 URLs; Zid 58 URLs; BigCommerce 61 URLs. A URL resolves through the `cited_in` column of a capture run's `manifest.tsv`, except `SH-S-7284` (`https://www.shopify.com/legal/terms`, cited by 6 of the in-scope statements), which no manifest lists by its id but whose URL is captured in `20261011T061248Z-q1-shopify-sources`. (Script: `resolve.py` in the scratchpad: `git cat-file -e <commit>:<path>` for local sources, path existence for the release and this repository, `cited_in` for URLs.)
+
+## Summary
+
+| # | Finding | Verdict |
+| --- | --- | --- |
+| 1 | No rule says which concerns belong to a domain. `concerns.tsv` has no area. The seed lists gift cards and Gifting in two domains each, and Q1's matches (`M-013`, `M-074`) cross domains. | must fix |
+| 2 | The area rule presupposes that the platforms place things in the seed's areas. There is no rule where the two differ, where one shows the capability, or for mapped platforms, and domain H isn't ruled out. | optional |
+| 3 | The dry run's mapping part has no domain to stay within. Read as written, about a hundred WooCommerce concerns outside B become "only WooCommerce" capabilities. | must fix |
+| 4 | "Lands once" fails where a concern is coarser than the capabilities (`WC-C-064`, `BC-C-010`) and makes false "Q1 holds nothing" cells. A Q1 match with several concerns on one side is both a join and a grain difference. | must fix |
+| 5 | The mapping maps onto "the anchor" only. Capabilities an earlier mapping part added get duplicated, and the platforms mapped before never get cells for them. The counts then depend on the order. | must fix |
+| 6 | "Q1 holds nothing" has no fixed token. Absence rests on Q1's `notes.md`, a derived document that never calls a list complete, against PLAN line 292 and Q1's rule 6. | must fix |
+| 7 | The four placement values have no rule tying them to statements: own extensions, API objects, merchant responsibility, and no supporting statement. The kind (`class` or `slot`) flips on them. | must fix |
+| 8 | The cells can't be checked mechanically. There is no list separator. The statement key isn't unique (119, 130 and 97 rows on Shopify, Salla and WooCommerce). A single scope per cell loses each statement's scope. | must fix |
+| 9 | The mapping pass has no column for how a concern joined, and the `join` values lack identifier and definition. Role joins can't be checked, though PLAN line 36 says the coordinator checks them. | must fix |
+| 10 | A shared term alone can join different things. Q1 found 6 such cases, and domain B has `Locations` and `Subscriptions`. | must fix |
+| 11 | `unclear-matches.tsv` has no `note` column, and no ruling on the 21 in-scope unclear candidates is asked for. | must fix |
+| 12 | The parts aren't small. The anchor part for B reads about 410,000 to 918,000 bytes; the mapping part spans all domains. The brief gives no slice script, against PLAN lines 184 to 187. | must fix |
+| 13 | Qualities have no capability and no scope, slot fillers presuppose the kind, and the unplaced limits Q1 left out can't be reached. | must fix |
+| 14 | Cells carry no gaps, against PLAN line 353, so a placement read from weak evidence looks like any other. | must fix |
+| 15 | URL sources and the release have no commit in `citations.tsv`, and the brief doesn't say whether context read beyond Q1 may be cited. | optional |
+| 16 | The sentence on permissions, topics, scopes and plan lines can be read as excluding the concerns that are those systems. | optional |
+| 17 | Smaller convention gaps: capability names, numbering across mapping parts, part names, `area` and `parent`, market-scoped capabilities. | optional |
+| 18 | "Placement" means two things, and the agent never reads Q1's meanings or its rule on inference in notes. | optional |
+| 19 | "Read in full" is not what Q1 shows for Salla (206 of 230 gaps "page not read"). | optional |
+
+**What blocks the dry run.**
+- **Finding 3, outright.** The WooCommerce part would land all 118 concerns against an anchor that holds only domain B.
+- **Findings 1 and 4 make wrong rows in domain B itself.** Gift cards (`M-013`) and subscriptions (`M-074`) cross into domains C and D. `WC-C-064` would land in one capability and leave false "nothing held" cells in the others.
+- **Findings 6 to 9 make the rows uncheckable.** The dry run's review, and the checker the plan wants from it (PLAN line 214), would then have nothing fixed to test.
+
+**Reading:** the cheapest unblocking set is:
+- a scope file assigning every concern to one domain (findings 1 and 3);
+- `landings.tsv` (findings 4 and 9);
+- fixed tokens, separator and statement key (findings 6 and 8);
+- the placement tests with per-value evidence (finding 7).
 
 ## Findings
 
 ### 1. No rule says which concerns belong to a domain, and concerns and Q1's matches cross domains
 
-**The brief's words.** Line 17: "Shopify's and Salla's `concerns.tsv`, whole; take the concerns that belong to your domain". Line 60: "In the anchor pass, a concern you look at and leave for another domain is listed, with that domain, in your notes." PLAN line 216 runs the anchor "one part per domain".
+**The brief's words.** Line 17: "Shopify's and Salla's `concerns.tsv`, whole; take the concerns that belong to your domain". Line 60: "In the anchor pass, a concern you look at and leave for another domain is listed, with that domain, in your notes." PLAN line 215 runs the anchor "one part per domain".
 
-**The problem.** `concerns.tsv` has no area or domain column (header on every platform: `concern_id concern platform_terms inv_ids split_note`). Which concerns are a domain's is each agent's own judgement, made in parallel by seven anchor parts that do not see each other. A concern that two domains can claim is taken twice, or by neither, and the only trace is free text in two `notes.md` files. **Reading:** this is the brief's largest source of wrong rows, because it decides what each part even looks at.
+**The problem.** `concerns.tsv` has no area or domain column (header on every platform: `concern_id concern platform_terms inv_ids split_note`). Which concerns are a domain's is each agent's own judgement, made by seven anchor parts (domains A to G) that don't see each other's output. A concern that two domains can claim is taken twice, or by neither, and the only trace is free text in two `notes.md` files. **Reading:** this is the brief's largest source of wrong rows, because it decides what each part even looks at.
 
 **The evidence.**
 - The seed itself puts one grouping in two areas of different domains: Shopify's "gift cards" under SEL (domain B) and LOY (domain D); Salla's "Gifting" under SEL and LOY (`km-areas.tsv`, rows SEL and LOY; script: every `;`-separated label listed under more than one area).
@@ -45,7 +82,7 @@ For the statements of the concerns the inspector reads as domain B's (the sets a
 
 **The brief's words.** Line 30: "each capability gets one area, the one where the two platforms put it. Each platform's own place goes in its cell." Line 34: "in a new capability that only your platform shows, with its area."
 
-**The problem.** The platforms put a capability in their own admin sections, API groups and app categories, not in the seed's areas; the area is the agent's matching of those places to the seed's labels. The rule gives no answer when the two platforms' places fall in different areas, when only one platform shows the capability, or in the mapping pass, where the seed has no labels for WooCommerce, Zid or BigCommerce (`seed/README.md`: "Its labels are Shopify's and Salla's only"). Nor does the brief say that domain H ("Beyond the references") takes no capabilities, as PLAN line 216 does. **Reading:** within a domain this misfiles rows rather than corrupting them, so it is optional once finding 1 fixes the domain.
+**The problem.** The platforms put a capability in their own admin sections, API groups and app categories, not in the seed's areas; the area is the agent's matching of those places to the seed's labels. The rule gives no answer when the two platforms' places fall in different areas, when only one platform shows the capability, or in the mapping pass, where the seed has no labels for WooCommerce, Zid or BigCommerce (`seed/README.md`: "Its labels are Shopify's and Salla's only"). Nor does the brief say that domain H ("Beyond the references") takes no capabilities, as PLAN line 215 does. **Reading:** within a domain this misfiles rows rather than corrupting them, so it is optional once finding 1 fixes the domain.
 
 **The evidence.** Subscriptions: Shopify's seed label puts "subscriptions" in SEL; Salla's concern `SA-C-125` sits under its "Recurring Payments API" in the docs navigation (`SA-S-1173`), and Salla's SEL labels don't name it. `WC-C-093` "Cost of goods sold" has no seed label at all and could be CAT, INV or ANL.
 
@@ -63,7 +100,7 @@ For the statements of the concerns the inspector reads as domain B's (the sets a
 
 ### 4. "Lands once" fails where one platform's concern is coarser than the capabilities, and makes false "Q1 holds nothing" cells
 
-**The brief's words.** Line 27: "Join concerns that are the same thing on both platforms … Q1's matches are such joins." Line 29: "Where they cut at different grains, you choose the capabilities, using `parent` where one holds others." Line 32: "each of your platform's concerns lands once." Line 50: "Q1 holds nothing for this platform here: say that in so many words." Line 60: "Every concern you take appears in a cell." PLAN line 216: "checks that each concern lands once".
+**The brief's words.** Line 27: "Join concerns that are the same thing on both platforms … Q1's matches are such joins." Line 29: "Where they cut at different grains, you choose the capabilities, using `parent` where one holds others." Line 32: "each of your platform's concerns lands once." Line 50: "Q1 holds nothing for this platform here: say that in so many words." Line 60: "Every concern you take appears in a cell." PLAN line 215: "checks that each concern lands once".
 
 **The problem.**
 - In the mapping pass, a concern that covers several anchor capabilities can land in only one. The cells of the others then say "Q1 holds nothing" for that platform although Q1 holds statements for them inside the coarser concern. Under the plan's rule, a "nothing held" cell is not counted, so a false one lowers the count and can turn `class` into `slot`.
@@ -91,7 +128,7 @@ The checker tests "lands once" on `landings.tsv`.
 
 **The problem.**
 - **Duplicates.** Zid runs after WooCommerce. A concern Zid shares with a capability WooCommerce added is neither "an anchor capability" nor "only your platform's", so the brief has no place for it. Read literally, Zid adds the capability again. PLAN line 210 says each platform adds "what it alone shows", which presupposes mapping onto the model so far.
-- **Missing cells.** A capability added in the mapping pass gets cells only for the platform that added it and the platforms after it. Shopify and Salla never get one, even where the coarser anchor concern holds statements for it. The plan's count is then biased by the order: the count of a capability BigCommerce adds is at most 1, and the anchor's shape wins by construction. **Reading:** this is a slant toward Shopify's and Salla's shape, beyond the exemplar design the plan chose.
+- **Missing cells.** A capability added in the mapping pass gets a cell only for the platform that added it, and for the platforms after it only if they map onto the model so far. Shopify and Salla never get one, even where the coarser anchor concern holds statements for it. The plan's count is then biased by the order: the count of a capability BigCommerce adds is at most 1, and the anchor's shape wins by construction. **Reading:** this is a slant toward Shopify's and Salla's shape, beyond the exemplar design the plan chose.
 - **Strained fits.** These are free text in `notes.md` (line 36), so the reviewer's split has no checkable input.
 
 **The evidence.** The order is WooCommerce, then Zid, then BigCommerce (brief line 7; PLAN line 210). `matches.tsv` has no `zid` or `bigcommerce` column: Q1 stopped Zid and BigCommerce before matching (`Q1-concern-map.md` line 116). Their mapping parts are therefore the only place their joins are made.
@@ -113,7 +150,7 @@ The checker tests "lands once" on `landings.tsv`.
 
 **The evidence.**
 - `notes.md` never calls a list complete. Searched for "complete", "in full", "whole list", "every entry" and "all entries": 2 hits in Shopify's notes and 2 in WooCommerce's, all about other things; none in Salla's, Zid's or BigCommerce's.
-- What the notes do have is sizes: for example Salla's "settings | `dashboard-settings-menu/merchant@en` | 23 pages and 4 group headings" (Salla `notes.md`, line 37). That is the menu of one observed store.
+- What the notes do have is sizes: for example Salla's "settings | `dashboard-settings-menu/merchant@en` | 23 pages and 4 group headings" (Salla `notes.md`, line 36). That is the menu of one observed store.
 
 **Proposed fix.**
 - Give the cell a fixed column `held`, with three values: `statements`, `none held` or `absent from a published complete list`.
@@ -131,7 +168,7 @@ The checker tests "lands once" on `landings.tsv`.
 - **No supporting statement.** There is no value for a platform that shows the capability but whose statements support no placement. The plan's rule then has no answer ("every platform that shows it" fails), and the agent is forced to pick one.
 
 **The evidence.**
-- **Subscriptions.** `WC-C-100`: `where` "Extensions > Merchandising > Subscriptions" (`WC-S-0739`); `decides` "WooCommerce Subscriptions is a premium extension …" (`WC-S-5351`). That it is Woo-made is stated only under another concern, `WC-C-050` "Developed by Woo" (`WC-S-0697`). Shopify's `SH-C-186`: `where` "Subscription apps" (`SH-S-2657`) and "Subscription apps enable developers and merchants to build subscription experiences" (`SH-S-0763`), with 14 `boundary` rows (the selling-plan and subscription-contract API).
+- **Subscriptions.** `WC-C-100`: `where` "Extensions > Merchandising > Subscriptions" (`WC-S-0739`); `decides` "WooCommerce Subscriptions is a premium extension …" (`WC-S-5351`). That it is Woo-made is stated only under another concern, `WC-C-050` "Developed by Woo" (`WC-S-0697`). Shopify's `SH-C-186`: `where` "Subscription apps" (`SH-S-2657`) and "Subscription apps enable developers and merchants to build subscription experiences" (`SH-S-0763`), with 14 `boundary` rows: access scopes such as `read_own_subscription_contracts` and `write_purchase_options`, webhook topics such as `subscription_billing_attempts/success` and `selling_plan_groups/create`, and the mutation `subscriptionContractActivate`. They are the API an app uses for its own subscription contracts, and read alone they look like `core`.
 - **Gift cards.** `SH-C-025`'s `responsible` rows: "you are legally responsible for all gift card or store credit issuance and management; Shopify merely provides software" (`SH-S-0676`, also `SH-S-0677` and `SH-S-0678`), beside the admin routes `gift_cards` (`SH-S-5170`, `SH-S-5013`).
 - **No `where` row.** `SH-C-038` Combined listings has none (gap `observation needed`); `WC-C-102` Memberships has a Marketplace category only.
 
@@ -273,7 +310,7 @@ PLAN lines 184 to 187: "each brief keeps an agent's context small: … large fil
 
 **The brief's words.** Line 19 names `statements.tsv`, `inventory.tsv` and `citations.tsv`; `gaps.tsv` is not named anywhere in the brief.
 
-**The problem.** PLAN line 353: "A gap stays visible, with the work that would close it." A cell's placement is read from the statements that exist. Where Q1's `where` or `responsible` placement is a gap, nothing in the cell says so, so a `core` read from a plan line alone looks like a `core` read from an admin route. The review is told to check every placement against all of Q1's statements (PLAN line 213), but not against the gaps.
+**The problem.** PLAN line 353: "A gap stays visible, with the work that would close it." A cell's placement is read from the statements that exist. Where Q1's `where` or `responsible` placement is a gap, nothing in the cell says so, so a `core` read from a plan line alone looks like a `core` read from an admin route. The review is told to check every placement against all of Q1's statements (PLAN line 214), but not against the gaps.
 
 **The evidence.** In domain B's scope:
 - `SH-C-038` has a `where` gap ("observation needed");
@@ -310,3 +347,149 @@ Script: per concern, statements by placement and gaps with their kind.
 - **Small undefined points.** `<part>` in `studies/class-model/parts/<part>/` has no naming rule. Whether `area` is the `area_id` or the name, and whether `parent` must be in the same area, are not said.
 - **Market-scoped capabilities.** Line 59, "No market's facts decide a capability or its area", can be read as dropping a capability shown only under one market's scope. **Reading:** say that such a capability stays, with its scope in its cells, and that a market's provider or law is a slot filler.
 
+### 18. Optional: "placement" means two things, and the brief doesn't give Q1's meanings
+
+**The brief's words.** Line 19: "the platform's `statements.tsv` rows under every placement". Line 42: "**Placement,** as your reading of those statements: `core` …".
+
+**The problem.**
+- **Two meanings of one word.** In Q1, `placement` is the question a statement answers: `where`, `decides`, `responsible`, `boundary` or `reason` (`Q1-concern-map.md`, lines 68 to 73 and 95). In the brief, it is the value `core`, `own service`, `extension point` or `outside`.
+- **Q1's rules are out of the agent's reach.** An agent that reads only its brief and what it names (`CLAUDE.md`) never reads Q1's text. So it doesn't learn what the five placements mean, or that a statement's `note` may hold inference that "never counts" (Q1 rule 5).
+- **The values are Q1's dropped ones.** The brief's four values are close to the fixed values Q1 dropped on 11 October because they were "our category names, not the platforms' words" (Q1 lines 55 to 63). **Reading:** as marked readings with per-value evidence (finding 7) they are legitimate, but the brief should say why they return.
+
+**The evidence.** Domain B's scope holds 3 inference notes (script: "infer" in `note`):
+- `WC-C-100`'s `note`: "Inference: as a premium extension, it runs only where the merchant has bought and installed …". It bears directly on the placement of subscriptions (finding 7).
+- The other two are BigCommerce's, on plan lines. `BC-C-007`: "Inference: the line is included only on Performance." `BC-C-011`: "Inference: included from Scale up."
+
+Carried into a cell's `scope` as "plan: Performance", they would present an inference as the platform's statement.
+
+**Proposed fix.** Name the brief's column `placed_as`. Quote Q1's five placements and rule 5 in the brief, in two lines.
+
+
+### 19. Optional: "read in full" is not what Q1 shows for Salla
+
+*Found after inspection A was read, by a check of the brief's own line 6; inspection A doesn't raise it.*
+
+**The brief's words.** Line 6: "Shopify and Salla are the deepest evidence: 3,005 and 2,560 statements, read in full."
+
+**The problem.** The statement counts are right (`statements.tsv`: 3,005 and 2,560 rows). "Read in full", though, is either a claim about Q1 or an instruction, and the brief doesn't say which. As a claim it doesn't hold for Salla: most of Salla's gaps are pages Q1 did not read. As an instruction it contradicts line 17, which takes only the domain's concerns. **Reading:** read as a claim, it would lend Shopify's and Salla's "nothing held" cells a weight Q1 doesn't give them.
+
+**The evidence.** Salla's `gaps.tsv`: 206 of 230 gaps are "page not read", 18 "stated only in general terms" and 6 "observation needed". Shopify's: 182 of 249 are "searched, not found". PLAN line 193 says Shopify and Salla are "read first and in full" in the subjects, which is a different step.
+
+**Proposed fix.** "Shopify and Salla hold the most statements (3,005 and 2,560)", and nothing more.
+
+## What the cells give the plan's kind-and-count rule
+
+The rule (PLAN line 216) needs four things for every capability and platform:
+1. whether the platform shows the capability;
+2. whether its placement includes `core` or `own service`;
+3. whether its placement is only `extension point` or `outside`;
+4. for the slot test, the set of platforms that show the capability.
+
+The brief rightly doesn't ask the agent to compute the kind. **Reading:** as specified, the cells don't give the coordinator these four things reliably:
+- **Showing** has no fixed token (finding 6). Finding 4's "lands once" makes some cells falsely "nothing held". Capabilities added in the mapping pass have no cells for the platforms mapped before (finding 5), so the coordinator can't tell "not compared" from "nothing held".
+- **Placement** is multi-valued with no separator (finding 8). It has no per-value evidence and no rule tying values to statements (finding 7). A forced choice therefore stands in for "no statement supports a placement".
+- **The slot test** depends on what "another party" means. `outside` read from statements that make the merchant responsible (`SH-S-0676`) turns `core` evidence into slot evidence (finding 7).
+- **Slot fillers** ask the agent to judge "a slot" before the kind is computed (finding 13).
+
+With findings 4 to 8 fixed, the computation is mechanical:
+- the count is the number of platforms whose `held` is `statements` and whose `placed_as` contains `core` or `own service`;
+- the kind is `class` if the count is at least 1;
+- the kind is `slot` if every platform whose `held` is `statements` has a non-empty `placed_as` made only of `extension point` and `outside`;
+- otherwise the kind is `open`.
+
+**Reading:** the plan's rule itself has no answer for `open`: a capability whose count is 0 and that some platform shows with `not stated`. This belongs to the dry run's review of the rule, which the plan allows ("The dry run's review may refine the rule").
+
+## Inspection A's must-fix findings, against brief B
+
+Inspection A (`studies/class-model/inspection-A.md`) inspected brief A at `95fd2916`, then re-inspected `A-assign.md` and an earlier `B-extent.md` at `79ae9c27`. The verdicts below are the inspector's own, against brief B as it stands at `93ebb15c`. They were made after this inspection's own findings were written, and changed none of them. After A was read, three things were added from separate checks, none of them taken from A: finding 19, the detail of `SH-C-186`'s `boundary` rows in finding 7, and the BigCommerce notes in finding 18. No verdict changed. "B line n" is the current brief. Inspection A's own statuses in its re-inspection table describe the earlier B and are not relied on.
+
+### Findings 1 to 21 (those marked must fix)
+
+| A's # | A's finding, in short | Brief B | Evidence |
+| --- | --- | --- | --- |
+| 1 | Placement from labels Q1 abandoned; none for Zid and BigCommerce | **Partly resolved** | `placements.tsv` is on no read list. Placement is "your reading of those statements" (B line 42), read from `statements.tsv` "under every placement" (B line 19), the same way for all five platforms. But the tests A asked for, which statement maps to which value, are absent (this inspection's finding 7). |
+| 2 | The joining rule isn't Q1's; agents rule the founder's unclear list | **Partly resolved** | B lines 27 and 28 state Q1's test (terms, identifiers or definitions), and a join on role is a reading that cites both definitions. Who rules the unclear list is recorded: PLAN line 36, under the founder's intent of 29 October (`founder-decisions.tsv`). Still open: no per-join record in the mapping pass (finding 9); no precedence between a match and an unclear candidate holding the same concern; no ruling recorded for candidates kept apart (finding 11). |
+| 3 | Zid and BigCommerce never matched; `single-platform.tsv` covers three | **Partly resolved** | `single-platform.tsv` is on no read list, and Zid and BigCommerce are joined by the same test (B line 33). But B never says `matches.tsv` covers three platforms (B line 20 sends every part to it). Their joins aren't recorded per join (finding 9), and their "nothing held" cells show no search (finding 6). |
+| 4 | "Exactly one capability" against "the smallest unit"; no lower bound | **Partly resolved** | "Smallest unit" is gone (B line 26), and B line 38 sets the lower bound. The anchor's grain is left to the agent with `parent` (B line 29), as the coordinator's disposition chose. But "lands once" (B line 32) still fails for a coarser concern in the mapping pass, and "appears in a cell" (B line 60) and "lands once" are not the same test (finding 4). |
+| 5 | Kinds don't cover `outside` or mixed placements; the vendor's own apps vary | **Partly resolved** | (a) The plan's rule (PLAN line 216) gives `slot` to any mix of `extension point` and `outside`, and "More than one may apply" (B line 48) lets a mixed cell count. Still uncovered: no statement supporting any value, and a count of 0 that is not a slot (finding 7; the section above). (b) `own service` now names "a … buyer app of its own" (B line 44). But a vendor's extension sold through its own marketplace still fits `own service` and `extension point` alike (`WC-C-100`, `WC-S-5351`), and B doesn't keep it apart as A asked. |
+| 6 | The count is "own" only; `not shown` counts against less-read platforms | **Partly resolved** | "A platform Q1 holds nothing for is not counted as lacking it" (PLAN line 216), and "It never means the platform lacks it" (B line 50). The kind separates `slot` from `class`. Still open: `gaps.tsv` is on no read list (finding 14), and no evidence level is given per cell. It could be derived from cite ids by `method/source_kinds.py` if the cells give statement keys (finding 8). |
+| 7 | The "Why" steers; the handoff is unrecorded; the slot rule differs | **Resolved** | B line 3 is neutral: "It records what the platforms do … It decides nothing about Sharrwah, ranks nothing". The founder's intent is recorded (`founder-decisions.tsv`, 29 October, two "Intent" rows), and PLAN carries Stage 4A (lines 204 to 224). B states no slot rule, and the kind is the coordinator's. |
+| 8 | The seed's questions pre-answer an unclear candidate | **Resolved for the questions; partly for the groupings** | "Leave out the seed's questions" (B line 15; PLAN line 207). But the groupings are still called "labels" and decide the area (B lines 15 and 30), without being marked as uncited leads. They list gift cards and Gifting in two areas each (findings 1 and 2). |
+| 9 | No rule for concerns spanning areas; the seed overlaps; parts can't reconcile | **Partly resolved** | Parts are now domains, so fewer boundaries, and the coordinator merges and checks that each concern lands once (PLAN line 215). Still open: no pre-assignment, no tie-break and no rule for spanning concerns, and the "left for another domain" list is free text (B line 60; finding 1). |
+| 10 | `absent` has no basis the agent can see | **Partly resolved** | The safe default is in: "Q1 holds nothing … never means the platform lacks it" (B line 50). But absence still rests on Q1's `notes.md` (B line 21), which never calls a list complete and is a derived document (finding 6). |
+| 11 | Finding aids instead of lists; no commits pinned | **Resolved for local sources** | The other-product-class pointer is gone. Structures are read "at the commit `citations.tsv` gives" (B line 22), and `citations.tsv` is on the read list (B line 19). The optional remainder is URL sources and the release, which `citations.tsv` gives no commit for (finding 15). |
+| 12 | Statements have no ids; the example cites another concern | **Partly resolved** | A statement is "concern id, cite id and identifier" (B line 41), and there is no example to be wrong. But that key sits on more than one row for Shopify (119 rows), Salla (130) and WooCommerce (97). With Q1's `placement` added it is unique (finding 8). |
+| 13 | `decides` in one column for five platforms | **Resolved** | No `decides` column. Cells are per platform (B line 40), and decision statements are evidence (B line 38) or scope (B line 49). |
+| 14 | The market rule contradicts `world` | **Partly resolved** | Slot fillers have their own file with `cap_id` and `market` (B lines 54 and 69). Scope is kept, as stated (B lines 49 and 59). But scope is one per cell (finding 8). Nothing says that a market's law built into a platform's own core is a scoped `core` cell rather than a slot filler. "No market's facts decide a capability" (B line 59) can be read as dropping such a capability (finding 17). |
+| 15 | Qualities as `class` capabilities | **Partly resolved** | Qualities have their own file (B lines 53 and 68). But it has no `cap_id` and no `scope`, and the unplaced limits (`maxProductVariants`, `maxProductOptions`) can't be reached (finding 13). |
+| 16(a) | Excluding `note` columns hides the matching pass's warnings | **Partly resolved** | `matches.tsv`'s `note` is read (B line 20). But the README's flags on `M-064` and `M-070` aren't in their notes (`M-064`: "Basis kind: term. Each is the platform's own chat with customers."), and B line 27 makes every match a join. Neither match is in domain B, so the dry run isn't affected. |
+| 17 | Output cells can't be checked; no protocol for parallel parts | **Partly resolved** | Per-part folders and the coordinator's merge (B lines 11 and 63) settle the protocol, and cells are per capability and platform with separate columns (B line 67). Still uncheckable: list separators, the "nothing held" token, the complete-list column and the statement key (findings 6 and 8). |
+| 19(a), (b) | No plan gating or evidence level per cell | **(a) Deferred; (b) not resolved** | (a) The coordinator's disposition defers plan gating to each area's detail. B keeps a plan only as a statement's scope (B line 49). (b) B has no evidence level. It is derivable from the cite ids (finding 8's statement keys and `method/source_kinds.py`). |
+
+### The re-inspection's new problems N1 to N12 (all marked must fix)
+
+These were raised against `A-assign.md` and the earlier B. Brief B replaced both, so several are moot. The verdicts are against B as it stands.
+
+| A's # | In short | Brief B | Evidence |
+| --- | --- | --- | --- |
+| N1 | The merge between parts is unspecified | **Partly resolved** | One brief, parts in `parts/<part>/`, and the coordinator merges and checks that each concern lands once (B lines 11 and 63; PLAN line 215). Still unspecified: who settles a concern two anchor parts take (finding 1), and how earlier mapping parts' capabilities enter the model a later part maps onto (finding 5). |
+| N2 | Part 1 split by platform can't apply the matched-concerns rule | **Resolved (moot)** | No part 1. The anchor reads Shopify and Salla together, with `matches.tsv` (B lines 17 and 20). |
+| N3 | Assigning by where the platform puts it scatters matched groups and moves slots into APP | **Not resolved** | B line 30 assigns the area by "where the two platforms put it", with no tie-break, and the disposition leaves it to judgment. In domain B, five Shopify concerns are placed only through the app store (script over `where` rows): `SH-C-185`, `SH-C-187`, `SH-C-189` ("Custom product apps", the only `where` row), `SH-C-202` and `SH-C-154`. Salla puts options under Products (`SA-C-021`: the dashboard link "Categories & options", `/products/options`). By B line 30, `SH-C-189` could go to APP while its counterpart goes to CAT. |
+| N4 | Zid's and BigCommerce's joins limited to part 1's area | **Resolved** | The mapping part reads the whole merged anchor (B line 18), so a Zid concern can meet any capability. **Note:** this inspection's finding 12 proposes splitting the mapping pass per domain for size. That split must keep N4 resolved: the scope file (finding 1) assigns each Zid and BigCommerce concern before the mapping, and a mapping part may still search other domains' capabilities by script. |
+| N5 | A concern under `also_in` has no owner | **Partly resolved** | No `also_in`, and "lands once" holds. But who owns a concern that spans domains has no rule (finding 1). |
+| N6 | What part 1 reads about lists never reaches part 2 | **Partly resolved** | The agent now reads `notes.md` itself (B line 21). But the notes don't call any list complete (finding 6). |
+| N7 | `not shown` mixes "no concern" with "a concern with no `where` row" | **Partly resolved** | "Q1 holds nothing" (B line 50) means no statements, not no `where` row. But B gives no value for a platform that shows the capability with no statement supporting a placement (finding 7; `SH-C-038` has no `where` row). |
+| N8 | `not shown` on Zid or BigCommerce implied absence elsewhere | **Resolved** | B line 50 holds for every platform: "It never means the platform lacks it." |
+| N9 | `plan_gated: yes` fires on any named entitlement | **Resolved (moot)** | No `plan_gated`. Plan gating waits for each area's detail (the disposition). |
+| N10 | The `reading` column has no meaning left | **Partly resolved** | B line 67: "`reading` (what in the cell is a reading)", and the join's reading is in `join` ("`role, a reading`"). But in the mapping pass no column records the join (finding 9), and `reading` is free text a checker can only test for being non-empty. |
+| N11 | No column ties concerns to capabilities; no coverage rule | **Partly resolved** | `concern_ids` is a cell column (B line 67), and "Every concern you take appears in a cell" (B line 60). But what a part "takes" is undefined (finding 1), and "lands once" can't be tested from cells alone (finding 4). |
+| N12 | Areas beyond the references can absorb concerns | **Partly resolved** | PLAN line 215: "H, beyond the references, takes no capabilities". B doesn't say so, and its agents read `km-areas.tsv`, which lists WLD, ENG, INT and MTH (finding 2). |
+
+## Tests a checker for this brief's output should run
+
+Some tests depend on the fixes above. They are marked with the finding they need. A checker can be written before the dry run; the dry run's review then adds what it finds (PLAN line 214).
+
+**Form**
+1. Every output file exists in `studies/class-model/parts/<part>/`, with the header exactly as the brief gives it. Every row has the header's number of fields; there is no quoting and no empty required field.
+2. Multi-valued fields use the one fixed separator, and every token is from its field's value set: `placed_as`, `held`, `join` and `platform` (finding 8).
+3. `cap_id` matches `^CM-[A-Z]{3}-\d{3}$`. Its area equals the `area` column, which is an `area_id` of the part's domain and never of domain H. `cap_id`s are unique across the merged model, and a mapping part's are new and numbered past the model's highest in each area.
+4. `parent` is empty or an existing `cap_id`, with no cycles.
+
+**Coverage**
+5. Every concern `scope.tsv` gives the part appears exactly once in `landings.tsv` (findings 1 and 4), and no concern outside the scope does. Across merged parts, every concern of all five platforms lands exactly once.
+6. Every landed concern appears in the `concern_ids` of a cell of the capability it lands in, for its platform.
+7. `cells.tsv` has exactly one row per capability and platform, for every capability in scope and every platform the pass covers. After the back-fill, this holds for all five (finding 5).
+8. Every unclear candidate any of whose concerns the part takes has a row in `rulings.tsv` (finding 11).
+
+**Evidence**
+9. Every concern id exists in its platform's `concerns.tsv` and carries the platform's prefix.
+10. Every statement key `concern_id|placement|cite_id` exists in that platform's `statements.tsv` (finding 8). Its identifier, where quoted, equals the row's `identifier`. A key whose concern is not in the cell's `concern_ids` is named in `reading` (finding 4).
+11. Every cite id exists in `citations.tsv` and resolves:
+    - a local source with `git cat-file -e <commit>:<path>`;
+    - a release path by sha256 against `evidence/product-class/woocommerce-11.2.1/files.tsv`;
+    - a URL by URL in a capture run's `manifest.tsv`.
+
+    The quote test is `method/quote_check.py`'s, as the concern map's checker uses it.
+12. Every string in `terms` occurs verbatim in a cited statement's `identifier` or `statement`, or in the concern's `platform_terms`.
+13. Every scope given with a statement key equals that statement's `scope`. A cited statement with a non-empty `scope` has it carried (finding 8).
+14. `where` cites only keys whose Q1 placement is `where`, or names the exception in `reading`.
+
+**Values and readings**
+15. Every `placed_as` value carries at least one statement key. `held` set to `none held` comes with an empty `placed_as`, and `held` set to `statements` with at least one value or `not stated` (findings 6 and 7).
+16. For `none held`, the search terms and languages are present. The checker re-runs them over the platform's whole `statements.tsv` and fails the cell if any statement matches (findings 4 and 6).
+17. `absent from a published complete list` cites the platform's own list by cite id and a `method/corpus_search.py` run (finding 6), or the value is refused.
+18. Every `landings.tsv` row with `join` set to `match:<M-id>` names an existing match that holds the concern. A `role` or `definition` row cites both sides' statements (finding 9).
+19. Every `reading` is non-empty where `placed_as` is set, since a placement is always a reading.
+20. Flags for the reviewer, not failures:
+    - `own service` whose cited statements don't name the platform's company;
+    - `outside` whose cited statements name only the merchant or buyer;
+    - `core` resting only on `boundary` keys (finding 7).
+
+**Side files**
+21. `qualities.tsv` and `slot-fillers.tsv`: the `cap_id` exists. Every evidence key exists, and its scope is carried. A slot filler's `market` is set wherever its statement's scope names a country (finding 13).
+22. `gaps`, where added (finding 14), equals Q1's `gaps.tsv` for the cell's concerns. The script can fill it, and the checker compares.
+
+**Kind-readiness, after the merge**
+23. Every cell parses into `held` and a set of `placed_as` values. The coordinator's computation runs on every capability and lists those whose kind is `open` (the section above).
+24. The merged model holds no two capabilities whose cells cite the same statement key, unless one is the other's `parent` or `reading` names the split.
+25. Every Q1 match's concerns land in one capability, or in a parent and its children, unless the split is named with its grain reason (finding 4).
