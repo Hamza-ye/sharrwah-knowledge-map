@@ -13,6 +13,7 @@
   - `studies/subjects/S-01/`: the pilot;
   - `studies/class-model/`: the class's model, with its seed and briefs (`PLAN.md`, Stage 4A);
   - `questions/`: Q1 to Q3.
+- **`architecture/`:** the architecture plan (`PLAN.md`, Stage 4A), a draft until the founder's go at GM, and after it the architecture's records.
 - **`method/`:** the scripts the plan uses, listed in `method/README.md`.
 - **`HISTORY.md`:** each baseline, by commit.
 - **`reports/`:** reports to the founder.
