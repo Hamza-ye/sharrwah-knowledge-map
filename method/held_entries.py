@@ -887,6 +887,26 @@ def run_text(platform, cache={}):
 
 
 RELEASE = {"woocommerce": "/home/user/woocommerce-release/11.2.1/woocommerce"}
+
+
+def whole_text(platform, e, cache={}):
+    """The entry's words as its source holds them, where the build cut a long value: its row, or its item's JSON line,
+    at the locator entries.tsv gives (`line N`). The terms and filler tests read it beside the entry's text."""
+    k = (platform, e["entry_id"])
+    if k not in cache:
+        repo, root, sub = REPOS[platform]
+        out = e["text"]
+        m = re.match(r"line (\d+)", e.get("locator") or "")
+        path = (e.get("source") or "").split(":", 1)[-1]
+        f = os.path.normpath(os.path.join(root, path))
+        if m and f.startswith(os.path.normpath(root)) and os.path.isfile(f):
+            with open(f, encoding="utf-8", errors="replace") as fh:
+                for i, l in enumerate(fh, 1):
+                    if i == int(m.group(1)):
+                        out = e["text"] + " " + l
+                        break
+        cache[k] = out
+    return cache[k]
 CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.-]+/)+[\w.-]+\.(?:json|jsonl|js|php|txt|tsv|html|yaml|md))")
 STATEMENT_ID = re.compile(r"\b(SH|SA|WC|ZD|BC)-S-\d{4}\b")
 
@@ -896,7 +916,7 @@ def cited_text(platform, reading, cache={}):
     the WooCommerce release), and a statement by its id (the concern map's statements, which the model cites)."""
     from class_slice import citable, key, PREFIX
     repo, root, sub = REPOS[platform]
-    bases = [os.path.join(root, sub), os.path.join(root, sub, "structures"), root]
+    bases = [os.path.join(root, sub), os.path.join(root, sub, "structures"), os.path.join(root, sub, "raw", "runs"), root]
     if platform in RELEASE:
         bases.append(RELEASE[platform])
     out = []
@@ -996,11 +1016,11 @@ def cmd_check(a):
                 if x in seen:
                     problems.append(f"{w}: {x} placed again")
         for t in [x.strip() for x in r["terms"].split(";") if x.strip()]:
-            if not all(fold(t) in fold(es[x]["text"]) for x in ok if x in es):
+            if not all(fold(t) in fold(es[x]["text"]) or fold(t) in fold(whole_text(a.platform, es[x])) for x in ok if x in es):
                 problems.append(f"{w}: term {t!r} is not in the text of each of its entries")
         for fl in [x.strip() for x in r["filler"].split(";") if x.strip()]:
             named = re.sub(r"^(?:the )?law of ", "", re.sub(r"\s*\([^)]*\)", "", fl), flags=re.I).strip()
-            if not all(fold(named) in fold(es[x]["text"]) for x in ok if x in es):
+            if not all(fold(named) in fold(es[x]["text"]) or fold(named) in fold(whole_text(a.platform, es[x])) for x in ok if x in es):
                 problems.append(f"{w}: filler {fl!r} is not named in the text of each of its entries: a party known only from a source goes in reading")
             if any(fold(g) in fold(fl) for g in GROUP.get(a.platform, ())):
                 problems.append(f"{w}: filler {fl!r} is a company of the platform's group (CM-ACC-002): never a filler")
