@@ -637,6 +637,8 @@ def candidates(e, idx):
             why[c].add(t)
     ft = " " + fold(e["text"]) + " "
     for t, cs in terms.items():
+        if len(cs) > 2:          # a term several capabilities share ("products", "settings") leads nowhere
+            continue
         if f" {t} " in ft or (len(t) > 8 and t in ft):
             for c in cs:
                 score[c] += 1
