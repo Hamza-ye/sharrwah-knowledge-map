@@ -64,6 +64,7 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 - **The name** uses both platforms' terms, or a neutral term that names both.
 - **The area** is the `area_id` of your domain that the capability is about. The seed's groupings are leads. The channel never sets it: an app-store category doesn't make a capability APP's. A capability shown under one market's scope stays, with its scope.
 - **Numbering:** `CM-<area>-nnn`, from 001 in each area.
+- **One thing, one domain.** Before you add a capability, search every domain for it with its terms in both languages: `python3 -I method/class_slice.py caps --terms "<term>; <term>"`. Where another domain already holds the same thing, don't add it here. A concern of yours that is that thing lands as `moved:<domain>`; a statement of yours that shows it is left to that domain's cell, and the reading of the concern that holds it names that capability (the coordinator, 30 October, after a capability of domain A turned out to be domain G's).
 
 **Land every concern you take exactly once,** in `landings.tsv`: in the capability it is, or in the parent where it is coarser than the capabilities. A cell may cite statements of a concern landed elsewhere. A concern that belongs to another domain lands as `moved:<domain>`, with the reason, and the coordinator moves it.
 

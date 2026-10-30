@@ -409,6 +409,25 @@ def cmd_model(a):
                 print(f"    {p}: {cell['held']}  terms: {clip(cell['terms'], 120)}  placed: {placed}")
 
 
+def cmd_caps(a):
+    """Capabilities of every domain whose name, note or cells' terms hold one of the terms: before adding a capability,
+    check that no other domain holds the same thing."""
+    want = [fold(t.strip()) for t in a.terms.split(";") if t.strip()]
+    base = os.path.join(MODEL, "parts")
+    caps, terms = {}, {}
+    for d in sorted(os.listdir(base)):
+        for r in rows(os.path.join(base, d, "capabilities.tsv")):
+            caps[r["cap_id"]] = (d.split("-")[0], r)
+        for r in rows(os.path.join(base, d, "cells.tsv")):
+            terms.setdefault(r["cap_id"], []).append(r["terms"])
+    for cid in sorted(caps):
+        dom, r = caps[cid]
+        hay = fold(" ".join([r["capability"], r["note"]] + terms.get(cid, [])))
+        hit = [t for t in want if hits(t, hay)]
+        if hit:
+            print(f"{cid}\t[{dom}] {clip(r['capability'], a.width)}\t({'; '.join(hit)})")
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     sub = ap.add_subparsers(dest="cmd", required=True)
@@ -431,6 +450,7 @@ def main():
     s.add_argument("--all", action="store_true"); s.add_argument("--top", type=int, default=10); s.add_argument("--width", type=int, default=120); s.add_argument("--areas")
     s = sub.add_parser("batches"); s.add_argument("--domain", required=True); s.add_argument("--platforms", required=True); s.add_argument("--size", type=int, default=12)
     s = sub.add_parser("uncited"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS); s.add_argument("--width", type=int, default=120)
+    s = sub.add_parser("caps"); s.add_argument("--terms", required=True); s.add_argument("--width", type=int, default=140)
     a = ap.parse_args()
     globals()["cmd_" + a.cmd](a)
 

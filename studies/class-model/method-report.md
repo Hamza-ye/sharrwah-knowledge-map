@@ -145,3 +145,9 @@ That is inside the projection of 30 October's milestone (700 million to a billio
 - **An agent launched without its effort setting** inherited the coordinating session's `max`. It was stopped after 3.2 million, before it had written a row, and relaunched at `high`, as the anchors run (section 9).
 - **Lesson:** a test that reads a key is blind to what the key's statement is shared with. Where a source reuses one statement under several concerns, test by the statement's id as well.
 
+## 12. One thing, one domain (30 October, about 07:00 UTC)
+
+- **A capability made twice, in two domains.** A-anchor's first batch made a capability for the merchant's mobile app for managing the store, which domain G already held, with a cell for every platform, on the same Salla plan line. Each anchor reads its own domain's model, so nothing showed it the other. The merge would have flagged the plan line as counted in two domains, but only after the part had built cells on it.
+- **What changed:** `class_slice.py caps` searches every domain's capabilities, their notes and their cells' terms. The extent's brief now asks an anchor to search with it before adding a capability, and to leave a thing another domain holds to that domain. The coordinator removed the copy.
+- **Lesson:** a part that can see only its own domain can duplicate another's. A cheap search at the point of adding costs less than a correction after the cells are built.
+
