@@ -932,3 +932,84 @@ The batch check (`--concerns SH-C-124,SH-C-125,SH-C-126,SA-C-139,SA-C-140,SA-C-1
 - **CM-ORD-009's parent is CM-SHP-001,** as batch 11 proposed, by convention 6: Shopify's packing slip routes sit in its admin section Shipping (SH-S-7100), while Salla's print order summary is a plan line in its order-management group (SA-S-1988), not an admin grouping.
 - **SH-S-0616** (the merchant's own carrier account used with Shopify Shipping) stays `core` in both CM-SHP-002 and CM-SHP-015: it names both the labels and the carrier account, and one domain's two capabilities may each cite a statement that names both.
 - **Salla's released flags cited `shows`** where nothing held defines them (in CM-SHP-009) change no placement: the cell is `core` on its other statements.
+
+## Batch 12: SHP (last of three) and RET, Returns and refunds
+
+Concerns: SA-C-147, SA-C-148, SA-C-149, SA-C-150 (SHP); SH-C-057, SH-C-058, SA-C-045 (RET). Five capabilities added: CM-SHP-021 and CM-SHP-022, and RET's first three, CM-RET-001 to CM-RET-003, each with a Shopify and a Salla cell. Two concerns land in batch 10's and 11's capabilities (SA-C-147, SA-C-148) and five in new ones. Before adding them I searched every domain with `caps` (terms: packaging, packing, package, box, تغليف, التغليف, مواد التغليف; complaint, complaints, quality, ticket, tickets, rating, carrier review, feedback, escalation, شكوى, شكاوى, شكاوي, الشكاوى, بوابة الجودة, الجودة, تقييم, تقييمات, تذكرة, تذاكر, تصعيد; refund, refunds, return, returns, exchange, exchanges, reverse, store credit, استرجاع, الاسترجاع, إرجاع, الإرجاع, ارجاع, استرداد, الاسترداد, مرتجع, مرتجعات, المرتجعات, استبدال, الاستبدال). What it found and kept apart is in each capability's note: C's CM-ORD-009 (packing slips) and CM-SHP-003 (insurance); D's CM-SUP-001, CM-SUP-005 and CM-SUP-008, A's CM-TRU-012 and CM-TRU-020 (reviews, tickets and complaints of other kinds); C's CM-PAY-020 (acting on a transaction, which cites Salla's refund endpoint), CM-ORD-004 (cancellation) and CM-PAY-009 (chargebacks); D's CM-LOY-001 (store credit, which cites Shopify's Refund to store credit); E's CM-CNT-008 (store policies, the return policy page) and CM-CHN-003 (marketplace returns' scopes); E's CM-MKS-007 (exchange rates) and C's CM-TAX-006 (tax returns), homonyms. CM-PAY-020's note already gives the refund itself to RET.
+
+### Where each concern landed, and the grains
+
+- **SA-C-147 in CM-SHP-018, by `match:M-049`.** Batch 11 wrote the Salla cell from its three statements; nothing to add.
+- **SA-C-148 in CM-SHP-006, by `match:M-046`,** the parent, since it holds both children (pickup, CM-SHP-007; delivery zones, CM-SHP-008), as Shopify's SH-C-121 does. I added its API folder under boundary (SA-S-1071, core in CM-SHP-008) and, as batch 11 left it, SA-S-0084 (SA-C-141, UAE): "مندوب متجرك الخاص", the store's own courier, `shows` in CM-SHP-008. A reading: the statement names the store's own courier, the role CM-SHP-008 names, not its delivery zones or branches. It stays `shows` in CM-SHP-015 and CM-PAY-029.
+- **CM-SHP-021, packaging, under CM-SHP-001:** SA-C-149, `single`. A place of its own: the admin link Packaging at /shipping/packing, in Salla's admin list of Shipping & delivery (list 8, with /shipping, /shipping/logs and /shipping/international), so under CM-SHP-001 by that grouping. The materials come "من شركات الشحن المعتمدة" (SA-S-5069), `outside`; a late request is escalated to Salla (SA-S-5068), `core`. Shopify: none-held.
+- **CM-SHP-022, shipping complaints and carrier ratings, under CM-SHP-002:** SA-C-150, `single`. Its definition names "شكاوي شركات شحن بوليصات سلة" (SA-S-5070), the carriers of the labels bought through Salla, so under CM-SHP-002. Salla's own groupings differ: the plan line بوابة الجودة is in the plan group alshhn-oaltosyl (shipping and delivery) and the path is /shipping/tickets, but the admin link is in list 7, with Reviews & questions, Self-service system and Complaints. I followed the definition and the plan group, two statements against one; the coordinator may weigh it. The staff permission to view carriers' ratings (SA-S-2310) sits in the permission group الأسئلة والتقييمات, but rates carriers, not products (D's CM-SUP-001). Shopify: none-held.
+- **RET, three capabilities, by Q1's M-024, a difference of grain:** Shopify splits refunds (SH-C-057) from returns and exchanges (SH-C-058); Salla's SA-C-045 holds both. So a parent, **CM-RET-001, returns and refunds**, where SA-C-045 lands, and two children, **CM-RET-002, refunds** (SH-C-057) and **CM-RET-003, returns and exchanges** (SH-C-058), all three `match:M-024`, as batch 1 wrote M-021. The parent rests on the grouping both share: Shopify's permission group Orders > Returns and refunds (SH-I-0883) and its routes in section Orders; Salla's plan line إدارة طلبات الاسترجاع الجزئي والكلي in its plan group order management (adar-altlbat, SA-S-1998), which I left in the parent since whether its استرجاع is the return of the goods, the refund or both isn't stated. **CM-RET-001's parent is CM-ORD-001** by that shared grouping (convention 6), as CM-PAY-020's is.
+- **No further children.** Return shipments, return reasons and exchanges are inside CM-RET-003: none has a place of its own on either platform. Return shipments have only webhook topics (Shopify's reverse_deliveries/attach_deliverable and reverse_fulfillment_orders/dispose; Salla's order.shipment.return.*), and Shopify's return reasons only a value list (SH-I-2096). Exchanges share Shopify's route Return and exchange.
+
+### SA-C-144's return topics, and its fit in CM-SHP-009
+
+The return shipment topics order.shipment.return.cancelled, .created and .creating (SA-S-1575 to SA-S-1577) are placed by Q1 in both SA-C-144 and SA-C-045. I cited them `core` in CM-RET-003 under SA-C-045's keys, where their words belong (a return's shipment, شحنة استرجاع), and `shows` in CM-SHP-009 under SA-C-144's keys (a shipment), the rule of section 11 as the coordinator applied it after batch 10 (SA-S-5075). **SA-C-144's landing in CM-SHP-009 is not strained by them, a reading:** each names both a shipment and a return, so it counts in each, and the checker doesn't flag it. Its landing's reading ("if they are cited there, this fit is to be read again") is now answered, and could name CM-RET-003; that row is batch 11's, for the coordinator.
+
+### Joins on role (readings)
+
+None. Every join this batch is a Q1 match or `single`.
+
+### Homonyms
+
+- **استرجاع / restore on Salla:** its return shipments (شحنة استرجاع, SA-S-1576) and its order statuses مسترجع and قيد الإسترجاع (slugs restored and restoring, SA-S-2680, SA-S-2681) name a return; its refund event is إرجاع مبلغ الطلب (SA-S-1587); its restore-data and Deleted orders (CM-ORD-012) restore deleted orders; and its subscription refund (SA-C-004, استرجاع المبلغ, SA-S-5002) is Salla's refund of a plan, A's.
+- **Exchange:** an item exchanged on a return (Shopify's ExchangeLineItem, SH-S-6106), against exchange rates (E's CM-MKS-007, Shopify SH-C-108, SH-C-109; Salla currency-exchange) and Salla's loyalty reward exchange (salla-reward-exchange, SA-S-1521, SA-C-091).
+- **Return(s):** Shopify's tax returns (CM-TAX-006) and returning customers (SH-S-7287, CM-CHK-008) are not returns of goods.
+- **Packing:** Shopify's packing slips (CM-ORD-009) are a printed document, not Salla's packaging (CM-SHP-021).
+- **تأمين:** batch 10's homonym holds; SA-S-5069 is cited in CM-SHP-021, not CM-SHP-003.
+
+### Strained fits
+
+None. Answered, kept clean:
+- **SA-C-045 in CM-RET-001:** SA-S-0180 (refund, void or reverse a transaction) and SA-S-2270 and SA-S-2487 (the refund permission) are also cited in CM-PAY-020 under SA-C-123's keys. SA-S-0180 names the refund, so it is `core` in CM-RET-002 for the refund and stays `core` in CM-PAY-020 for acting on the transaction; the permission is `core` here and `shows` there, as CM-PAY-020's reading already says (refund, RET's). The checker doesn't flag it, since the keys differ.
+- **SH-C-057 and SH-C-058:** SH-S-0012 (the merchant answers for "refunds, returns, fulfilling" and more) is `shows` wherever it is cited, as earlier batches cite it. SH-I-0887 (Refund to store credit) is `core` in D's CM-LOY-001 and `shows` in CM-RET-002, with its staff-permission twin SH-I-1110.
+- **SA-C-041** (CM-ORD-003's concern): its statuses مسترجع and قيد الإسترجاع (SA-S-2680, SA-S-2681) were uncited; they are `shows` in CM-RET-003 and name both a status and a return. Its landing is batch 2's; the checker doesn't flag it.
+
+### Statements shared with other domains
+
+- **SH-S-6037 and SH-S-6231** (Requires read_returns or read_marketplace_returns; write_returns or write_marketplace_returns, with the refund_orders permission) are `core` in E's CM-CHN-003 under SH-C-137, and `core` here under SH-C-058's keys. They name the returns scopes beside the marketplace ones, so I cited them `core` here like the four other statements of the same form (SH-S-6038, SH-S-6039, SH-S-6040, SH-S-6230), which E doesn't cite. By section 11 their words (read_returns, write_returns) belong to returns; the merge may flag them as `core` in two domains, and E's two rows could become `shows`. For the coordinator.
+- **Read under `also` and not cited:** SA-C-095 (E, also C), its partner permission salla_point_return_policy, سياسة الاسترجاع والاستبدال (SA-S-2655), the POS's return policy, E's. Not cited because outside the domain, with no `also` naming C: SA-C-220's report_restore, تقارير معدل المرتجعات (SA-S-2544, D's reports); SA-C-200's order.refund.processed (SA-S-1662, D's notifications); SA-C-092's and SA-C-196's Order Refunded events (SA-S-1372, SA-S-1268, D's and F's); SA-C-093's return policy page (SA-S-5034, E's CM-CNT-008); Shopify's POS return and exchange extension targets (SH-I-1669 to SH-I-1674, E's) and its customer-account return-details target (SH-I-1646); Shopify's return notification templates (SH-I-2033, SH-I-2038 to SH-I-2042, SH-I-2020), placed in other concerns. The coordinator may want CM-RET-002 and CM-RET-003 to name them in a later part.
+
+### Rulings
+
+None. No unclear candidate holds any of this batch's concerns (`concerns`, `matches`), and batch 11 left no pair whose other side this batch lands.
+
+### Qualities and slot fillers
+
+- **Qualities:** two waiting times, both Salla's words: a packaging request may be escalated to Salla after five days without an answer or five days' delay (SA-S-5068, CM-SHP-021); a complaint is escalated to Salla automatically after five days without the carrier's reply (SA-S-5071, CM-SHP-022). That they are qualities (a limit) is a reading.
+- **Slot fillers:** none. No statement names a carrier for packaging or the quality gateway.
+
+### Gaps
+
+- Q1's: SA-C-147, SA-C-148, SA-C-045: responsible and reason, page not read; SA-C-149: responsible, page not read; SH-C-057, SH-C-058: reason, searched, not found.
+- Not stated in what is held: which carriers supply Salla's packaging, and at what charge; who rates Salla's carriers, and what shipping-feedback and shipping-rating are; where a Salla refund goes (original payment, wallet) and whether Salla ships the statuses مسترجع and قيد الإسترجاع (their type is custom); a return request, return reasons or an exchange on Salla; whether Salla's إدارة طلبات الاسترجاع means returns, refunds or both.
+
+### Flags answered
+
+The batch check prints 64 flags; those on this batch's rows:
+- **CM-RET-003 Salla, core only on boundary statements:** they are Salla's own webhook events for its own feature (convention 2), fired for an order's return shipment; whether Salla or the carrier creates the return shipment isn't stated (Q1's gaps on SA-C-045: responsible, page not read).
+- **CM-SHP-021 Shopify none-held (4 matches):** Shopify's packing slip template route and scopes (SH-S-7100, SH-S-1036, SH-I-0272, SH-I-0273), CM-ORD-009's, a printed document, not packaging.
+- **CM-SHP-022 Shopify none-held (18 matches):** resource feedback scopes for sales channels (SH-S-6105, SH-S-6287), VAT claims (SH-S-0535), a disclaimer (SH-S-0569), Shopify's own complaint handling (A's CM-TRU-012) and other uses of claim, rating and quality; none is a complaint about a carrier or a carrier's rating.
+
+### The whole part's check
+
+`python3 -I method/check_class_part.py studies/class-model/parts/C-anchor` gives "0 problems, 64 flags for the reviewer", the same 64 the batch check prints. The first batch run gave problems in this batch's rows only: eight cells written without their empty `searched` column, and one term (إمكانية إرجاع الطلبات, which the checker doesn't find in SA-S-2487's held text), all fixed. Flags on earlier batches' rows, for the coordinator, none of them a problem: the `own-service` questions on Shopify's payment entities (PAY batches); the none-held cells with matches (CHK, ORD, PAY, TAX, SHP batches, answered in their notes); the boundary-only core cells at lines 5, 154 and 156; the six statements in two trees and the four S1 flags (SH-C-083, SA-C-162, SH-C-114, SH-C-122), answered by the coordinator after batch 10 and by batch 11. `uncited --domain C` leaves none of this batch's concerns' statements; SA-C-145's four App Functions keys stay F's.
+
+### For the coordinator
+
+- **Rewrite the Shopify joins:** SH-C-121 (CM-SHP-006) as `match:M-046` and SH-C-125 (CM-SHP-018) as `match:M-049`, their Salla sides having landed here.
+- **Earlier readings now stale, no row wrong:** CM-SHP-006's Salla cell ("SA-C-148 lands in a later batch") and CM-SHP-018's ("lands here in batch 12"); CM-SHP-008's Salla cell, which now also cites SA-C-148's folder under boundary and SA-S-0084 (shows); CM-SHP-009's Salla cell, which now cites SA-C-144's three return topics as `shows`; SA-C-144's landing reading, answered above.
+- **CM-SHP-022's parent:** CM-SHP-002 by its definition and plan group; Salla's admin list puts its link with customer care (list 7). Weigh it by convention 6.
+- **SH-S-6037 and SH-S-6231:** `core` here and in E's CM-CHN-003, above.
+
+### The coordinator, after batch 12
+
+- **SH-C-121 and SH-C-125 now land by `match:M-046` and `match:M-049`,** their Salla sides (SA-C-148, SA-C-147) having landed in batch 12.
+- **Readings brought up to date,** each marked: the Salla cells of CM-SHP-006, CM-SHP-008, CM-SHP-009 and CM-SHP-018, and SA-C-144's landing, whose fit stays clean: its return topics name both a shipment and a return, so they count in each (method report, section 11).
+- **SH-S-6037 and SH-S-6231 stay `core` in both CM-RET-003 and E's CM-CHN-003.** Each names two scopes, `read_returns` or `read_marketplace_returns` and `write_returns` or `write_marketplace_returns`: the returns scope is CM-RET-003's, and the marketplace returns scope is CM-CHN-003's (Marketplace Connect). A statement naming several things counts in each.
+- **CM-SHP-022's parent stays CM-SHP-002,** as batch 12 chose: two of Salla's groupings put it in shipping (the plan group alshhn-oaltosyl, SA-S-2025, and the link's path /shipping/tickets, SA-S-1862), and its definition names the carriers of Salla's labels (SA-S-5070); the admin list that holds the link is in its note.
+- **The anchor is complete:** 89 capabilities (CHK 9, ORD 14, PAY 32, TAX 9, SHP 22, RET 3), 122 landings, and the whole-part check prints no problem.

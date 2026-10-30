@@ -1782,3 +1782,86 @@ CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3009	released flag shipping-custome
 CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3261	released flag addressee-shipping, enabled; undefined
 CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3356	released flag shipping-indicator, enabled; undefined
 CM-SHP-009	salla	shows	SA-C-145/decides/SA-S-3043	unreleased flag allow-external-shipment-reconnect
+CM-SHP-008	salla	core	SA-C-148/boundary/SA-S-1071	Merchant API folder Branch Delivery Zones, under boundary
+CM-SHP-008	salla	shows	SA-C-141/boundary/SA-S-0084	UAE: amounts followed through the store's own courier, مندوب متجرك الخاص
+CM-SHP-009	salla	shows	SA-C-144/boundary/SA-S-1575	event order.shipment.return.cancelled, a return shipment, core in CM-RET-003
+CM-SHP-009	salla	shows	SA-C-144/boundary/SA-S-1576	event order.shipment.return.created, a return shipment, core in CM-RET-003
+CM-SHP-009	salla	shows	SA-C-144/boundary/SA-S-1577	event order.shipment.return.creating, a return shipment, core in CM-RET-003
+CM-SHP-021	salla	core	SA-C-149/where/SA-S-1869	admin link Packaging at /shipping/packing, list of Shipping & delivery
+CM-SHP-021	salla	core	SA-C-149/decides/SA-S-3017	released flag shipments-packaging-system, enabled
+CM-SHP-021	salla	core	SA-C-149/boundary/SA-S-5068	a late packaging request is escalated to Salla
+CM-SHP-021	salla	outside	SA-C-149/reason/SA-S-5069	packaging materials requested from the approved carriers
+CM-SHP-022	salla	core	SA-C-150/where/SA-S-1862	admin link Quality gateway at /shipping/tickets
+CM-SHP-022	salla	core	SA-C-150/decides/SA-S-2025	plan line بوابة الجودة, Salla Plus, under alshhn-oaltosyl
+CM-SHP-022	salla	core	SA-C-150/decides/SA-S-2310	staff permission ask_browse_review_shipping_companies
+CM-SHP-022	salla	shows	SA-C-150/decides/SA-S-2527	the same permission a partner can request, الاطلاع على تقييمات شركات الشحن
+CM-SHP-022	salla	core	SA-C-150/decides/SA-S-3014	released flag shipping-ticket-system, enabled
+CM-SHP-022	salla	shows	SA-C-150/decides/SA-S-3021	released flag shipping-feedback, enabled; undefined
+CM-SHP-022	salla	shows	SA-C-150/decides/SA-S-3274	released flag shipping-rating, enabled; undefined
+CM-SHP-022	salla	core	SA-C-150/responsible/SA-S-5070	Salla's system where the merchant files complaints about the carriers of Salla's labels
+CM-SHP-022	salla	core	SA-C-150/boundary/SA-S-5071	a complaint is escalated to Salla after 5 days without the carrier's reply
+CM-SHP-022	salla	shows	SA-C-150/reason/SA-S-5072	reason: protecting the merchant's rights, a more reliable shipping experience
+CM-RET-001	shopify	core	SH-I-0883	staff permission group Orders > Returns and refunds
+CM-RET-001	salla	core	SA-C-045/decides/SA-S-1998	plan line إدارة طلبات الاسترجاع الجزئي والكلي, Salla Plus, under adar-altlbat
+CM-RET-002	shopify	core	SH-C-057/where/SH-S-7097	admin route Refund, section Orders, :orderId/refund
+CM-RET-002	shopify	core	SH-C-057/decides/SH-S-5222	the route's eligibility: REFUND_ORDERS, REFUND_TO_STORE_CREDIT or QUICK_SALE
+CM-RET-002	shopify	core	SH-C-057/where/SH-S-0932	API object Refund
+CM-RET-002	shopify	core	SH-C-057/boundary/SH-S-1325	webhook topic refunds/create
+CM-RET-002	shopify	core	SH-I-1109	staff permission REFUND_ORDERS
+CM-RET-002	shopify	core	SH-I-0885	staff permission Refund to original payment
+CM-RET-002	shopify	core	SH-I-1098	staff permission OVER_REFUND_TO_ORIGINAL_PAYMENT
+CM-RET-002	shopify	core	SH-I-0886	staff permission Over-refund orders previously refunded to store credit
+CM-RET-002	shopify	shows	SH-I-0887	staff permission Refund to store credit, core in D's CM-LOY-001
+CM-RET-002	shopify	shows	SH-I-1110	staff permission REFUND_TO_STORE_CREDIT, the same, D's CM-LOY-001
+CM-RET-002	shopify	shows	SH-C-057/responsible/SH-S-0012	the merchant answers for refunds and returns
+CM-RET-002	shopify	shows	SH-I-2177	help section Refunds
+CM-RET-002	shopify	shows	SH-I-2217	help section Troubleshooting failed or pending refunds
+CM-RET-002	shopify	shows	SH-I-2235	help section Shopify Payments refunds
+CM-RET-002	salla	core	SA-C-045/boundary/SA-S-1587	event order.refunded, إرجاع مبلغ الطلب, fired when the order is refunded
+CM-RET-002	salla	core	SA-C-045/where/SA-S-1743	setting Manage refund statuses, orders/control-refund
+CM-RET-002	salla	core	SA-C-045/decides/SA-S-2270	staff permission order_refund_payment
+CM-RET-002	salla	shows	SA-C-045/decides/SA-S-2487	the same permission a partner can request, إمكانية إرجاع الطلبات
+CM-RET-002	salla	core	SA-C-045/boundary/SA-S-0180	own endpoint to refund a transaction, also core in CM-PAY-020
+CM-RET-002	salla	shows	SA-C-045/decides/SA-S-3287	unreleased flag control-refund-status, plans plus, pro, special
+CM-RET-002	salla	shows	SA-C-045/decides/SA-S-3293	unreleased flag orders-bulk-remove-products-refund
+CM-RET-002	salla	shows	SA-C-045/boundary/SA-S-0090	the wallet's e-payments balance can be used for returns to the customer
+CM-RET-002	salla	shows	SA-C-123/decides/SA-S-0181	the store needs enough balance to process the refund amounts
+CM-RET-003	shopify	core	SH-C-058/where/SH-S-7098	admin route Return and exchange, section Orders, :orderId/return
+CM-RET-003	shopify	core	SH-C-058/where/SH-S-7099	admin route Review return request, section Orders
+CM-RET-003	shopify	core	SH-C-058/decides/SH-S-5223	the route's eligibility: RETURN_ORDERS
+CM-RET-003	shopify	core	SH-I-1113	staff permission RETURN_ORDERS
+CM-RET-003	shopify	core	SH-I-0884	staff permission Orders > Returns and refunds > Return
+CM-RET-003	shopify	core	SH-I-0169	API object Return
+CM-RET-003	shopify	core	SH-I-0111	API resource returnCalculate
+CM-RET-003	shopify	core	SH-I-0124	API resource orderRequestReturn, the buyer's return request
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-0874	Customer Account API query return
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-1061	access scope write_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6106	ExchangeLineItem requires read_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6107	ReturnableFulfillment requires read_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6034	requires read_returns and read_orders
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6063	requires read_order_edits or read_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6037	requires read_returns or read_marketplace_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6038	requires read_returns or read_marketplace_returns, with read_orders
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6039	requires read_returns or read_marketplace_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6040	return events require read_returns or read_marketplace_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6230	requires write_returns or write_marketplace_returns
+CM-RET-003	shopify	core	SH-C-058/decides/SH-S-6231	write_returns or write_marketplace_returns, and the refund_orders permission
+CM-RET-003	shopify	core	SH-C-058/decides/SH-S-6288	write_returns, and the user's return_orders permission
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6289	requires write_returns
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-6290	an app with read_returns and write_returns, a guide to app developers
+CM-RET-003	shopify	core	SH-C-058/boundary/SH-S-1329	webhook topic returns/approve
+CM-RET-003	shopify	core	SH-I-0571	webhook topic returns/request
+CM-RET-003	shopify	core	SH-I-0569	webhook topic returns/process
+CM-RET-003	shopify	core	SH-I-0573	webhook topic reverse_deliveries/attach_deliverable, the return shipment
+CM-RET-003	shopify	core	SH-I-0574	webhook topic reverse_fulfillment_orders/dispose
+CM-RET-003	shopify	core	SH-I-2096	value list Return reasons (10 options)
+CM-RET-003	shopify	extension-point	SH-C-058/where/SH-S-2623	App Store category Returns and exchanges apps
+CM-RET-003	shopify	extension-point	SH-I-1858	App Store category Return and warranty apps
+CM-RET-003	shopify	extension-point	SH-I-1860	App Store category Returns and warranty - Other
+CM-RET-003	shopify	shows	SH-I-1861	App Store category Warranties and insurance apps, in the returns and warranty group; warranties, not returns
+CM-RET-003	shopify	shows	SH-C-058/responsible/SH-S-0012	the merchant answers for refunds and returns
+CM-RET-003	salla	core	SA-C-045/boundary/SA-S-1576	event order.shipment.return.created, تم انشاء شحنة استرجاع
+CM-RET-003	salla	core	SA-C-045/boundary/SA-S-1577	event order.shipment.return.creating, انشاء شحنة استرجاع
+CM-RET-003	salla	core	SA-C-045/boundary/SA-S-1575	event order.shipment.return.cancelled, الغاء شحنة استرجاع
+CM-RET-003	salla	shows	SA-C-041/boundary/SA-S-2680	the store's order status مسترجع, restored, icon sicon-refund
+CM-RET-003	salla	shows	SA-C-041/boundary/SA-S-2681	the store's order status قيد الإسترجاع, restoring

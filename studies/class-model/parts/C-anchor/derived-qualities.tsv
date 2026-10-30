@@ -50,3 +50,5 @@ CM-SHP-002	shopify	shipping label discounts	Up to 87% off	SH-C-116/decides/SH-S-
 CM-SHP-002	salla	label starting price	وتبدأ من 23 ريال داخل المملكة	SA-C-140/responsible/SA-S-5059	
 CM-SHP-003	shopify	insurance coverage bought	shipping insurance for up to $5,000 USD of insurance coverage	SH-C-117/decides/SH-S-0720	orders shipped from the United States with Shopify shipping labels
 CM-SHP-003	shopify	insurance included	up to $200 USD of shipping insurance on each eligible shipment at no extra cost	SH-C-117/decides/SH-S-0722	
+CM-SHP-021	salla	escalation of a packaging request, waiting time	في حال لم تتجاوب الشركة مع الطلب لمدة خمس أيام، أو قبلت الطلب ولكن تسليم مواد التغليف تأخر لأكثر من خمس أيام يمكنك تصعيد التأخير إلى شركة سلة	SA-C-149/boundary/SA-S-5068	
+CM-SHP-022	salla	automatic escalation of a complaint, waiting time	يتم تصعيد الشكوى تلقائياً إلى سلة بعد مرور 5 أيام بدون رد من شركة الشحن.	SA-C-150/boundary/SA-S-5071	
