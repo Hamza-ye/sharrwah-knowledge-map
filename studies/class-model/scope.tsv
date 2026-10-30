@@ -185,7 +185,7 @@ shopify	SH-C-183	A		retain store information for two years: store data after clo
 shopify	SH-C-184	A	C	PCI DSS; Account Data: card data security (TRU); M-062
 shopify	SH-C-185	B	E	Dropshipping apps; Print on demand apps; Wholesale apps: sourcing products; the channel doesn't set the domain (CAT)
 shopify	SH-C-186	B	C	Subscription apps; selling_plan_groups/create; subscription_contracts/create (SEL); M-074
-shopify	SH-C-187	D		Customer loyalty apps; Wishlist apps; Donation apps (LOY); M-075
+shopify	SH-C-187	D	B	Customer loyalty apps; Wishlist apps; Donation apps (LOY); M-075; also B: its Donation apps category (SH-S-2583) is Shopify's only statement on donations, cited in domain B (the coordinator, from the dry run's structure review, S6)
 shopify	SH-C-188	B	D	Upsell and bundle apps; Product bundle apps; Pre-order apps; where product_configuration: bundles and pre-orders as ways of selling (SEL)
 shopify	SH-C-189	B		Custom product apps; Product variant apps; Product configuration (CAT)
 shopify	SH-C-190	B		Digital goods and service apps; Event booking apps; NFT and tokengating apps (SEL); M-076
@@ -412,7 +412,7 @@ woocommerce	WC-C-060	C		WooCommerce Shipping: labels and carrier rates (SHP); M-
 woocommerce	WC-C-061	C	B;F	Extensions > Shipping, delivery and fulfillment; shipping partner suggestions (SHP); also B: its Marketplace category Fulfillment and dropshipping (WC-S-0713) is WooCommerce's only statement on product sourcing (the coordinator, from B-woocommerce's notes)
 woocommerce	WC-C-062	A		WooCommerce Support Policy; Public forums (ONB); M-066
 woocommerce	WC-C-063	F		Connection to WooCommerce.com; WooCommerce > Extensions: extension installs and subscriptions (APP)
-woocommerce	WC-C-064	B		Products; Product variations; Attributes; Categories; where Products (CAT); M-011
+woocommerce	WC-C-064	B	E	Products; Product variations; Attributes; Categories; where Products (CAT); M-011; also E: its storefront statements bear on domain E (the coordinator, from the dry run's structure review, S6)
 woocommerce	WC-C-065	D	B	Reviews; Product reviews; Review request (SUP); M-065
 woocommerce	WC-C-066	B		Downloadable products; Downloads (SEL)
 woocommerce	WC-C-067	G	B	Product Import; Product Export (MIG); M-083
