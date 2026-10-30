@@ -86,6 +86,15 @@ A back-fill runs after a mapping part that added capabilities, and is named for 
 
 Where the coordinator moves a concern into a domain whose parts have already run, `<domain>-amend` lands it, as a mapping part would, and writes its platform's cells for every capability it lacks, and every platform's cells for any capability it adds.
 
+## How to work, keeping your context small
+
+Every request you make re-reads your whole context, so its cost grows with its length.
+- **Start:** `seed --domain D`, then `model --domain D` (with `--areas` for a batch), then your concerns (`concerns --platform P --domain D`).
+- **Read each concern once,** under every placement: `statements --platform P --concerns ID --width 160`, with its `gaps` and `matches`.
+- **For cells,** run `candidates --domain D --platform P`: each capability's candidate statements on your platform, found by the terms the other platforms' cells use. They are leads to read with `key`, never evidence. Search further where they don't settle a cell.
+- **Write as you go,** appending rows in small batches. Don't print your files back, and don't repeat a search.
+- **Check before you report,** and fix every problem the checker prints. Answer its flags in your notes.
+
 ## Parts that run in batches
 
 A large part runs as a series of batches, each by a fresh agent, so that no context grows large. Your message then names your batch: its concerns, and its areas.
