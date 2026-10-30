@@ -1,0 +1,8 @@
+cap_id	platform	supports	key	why
+CM-OPS-003	shopify	core	SH-C-036/decides/SH-S-7032	plan line Unlimited web hosting, Included on every plan
+CM-EVO-001	shopify	core	SH-I-1235	plan line Test new features before launch, public plan comparison (C2)
+CM-EVO-001	shopify	core	SH-I-1308	plan line Test new features before launch, admin plan comparison (C2)
+CM-SRF-001	shopify	core	SH-C-079/decides/SH-S-5144	admin route order:mobile:record-payment, native clients only
+CM-SRF-001	shopify	core	SH-C-118/decides/SH-S-5145	admin route order:mobile:release-fulfillment-holds, native clients only
+CM-SRF-001	shopify	core	SH-C-043/decides/SH-S-5149	admin route customer:mobile:edit-marketing-status, native clients only
+CM-SRF-001	salla	core	SA-C-001/decides/SA-S-2082	plan line store management app on iOS and Android (Salla Plus)
