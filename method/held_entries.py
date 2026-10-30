@@ -1067,6 +1067,20 @@ def cmd_check(a):
                 m = re.search(rf"(?:^|; ){f}: ([^;]+)", es[x]["text"])
                 if m and held_by.get((root, m.group(1).strip())):
                     own[x] = (root, m.group(1).strip()); break
+    # a route whose own path begins other routes' paths, in the same app, holds them too (a section's own route)
+    def route(x):
+        m = re.search(r"(?:^|; )path: ([^;]+)", es[x]["text"])
+        if not m:
+            return None
+        app = re.search(r"(?:^|; )app: ([^;]+)", es[x]["text"])
+        return (app.group(1).strip() if app else "", re.sub(r"^(?:/+|:lang/)", "", m.group(1).strip()).rstrip("/"))
+    paths = {x: route(x) for x in ids if x in es}
+    under = collections.Counter()
+    for rp in paths.values():
+        if rp and rp[1]:
+            segs = rp[1].split("/")
+            for n in range(1, len(segs)):
+                under[(rp[0], "/".join(segs[:n]))] += 1
     for x in ids:
         if x not in es or x not in caps_of:
             continue
@@ -1084,6 +1098,8 @@ def cmd_check(a):
             notes.append(f"line {at}: pageKey {k} holds other pages: a container (rule 3)")
         elif x in own:
             notes.append(f"line {at}: {own[x][1]}{' (' + own[x][0] + ')' if own[x][0] else ''} holds {held_by[own[x]]} other entries: a container (rule 3)")
+        elif paths.get(x) and paths[x][1] and under.get(paths[x], 0) >= 2:
+            notes.append(f"line {at}: path {paths[x][1]} begins {under[paths[x]]} other entries' paths: a container (rule 3)")
     for k, names in new_names.items():
         if len(set(names)) > 1:
             problems.append(f"one new thing named several ways: {sorted(set(names))}: name it one way")
