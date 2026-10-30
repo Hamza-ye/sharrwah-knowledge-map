@@ -1,0 +1,28 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ACC-001	zid	statements	core	لوحة التحكم > الإعدادات > إعدادات الحساب	ZD-C-077/decides/ZD-S-0516=staff permission | ZD-C-077/decides/ZD-S-0901=compare-plans: starter, launch, growth, pro	ZD-C-077/reason:searched, not found	general
+CM-ACC-002	zid	statements	not-stated	footer: زد متاحة في	ZD-C-030/decides/ZD-S-0728=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0733=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0734=partner payout invoices	ZD-C-030/responsible:searched, not found;ZD-C-030/boundary:searched, not found;ZD-C-030/reason:searched, not found;ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found	
+CM-ACC-003	zid	none-held					
+CM-ACC-004	zid	statements	core	الاعدادات > المتجر > بيانات المتجر | توثيق منصة المركز السعودي للأعمال	ZD-C-035/decides/ZD-S-0753=السعودية | ZD-C-035/where/ZD-S-0752=تجار السعودية		general
+CM-ACC-005	zid	none-held					
+CM-ACC-006	zid	statements	core	Merchant APIs > Account > Store		ZD-C-033/responsible:stated only in general terms;ZD-C-033/reason:searched, not found;ZD-C-077/reason:searched, not found	general
+CM-ACC-007	zid	statements	core	الاعدادات > المتجر > أوقات العمل الرسمية		ZD-C-104/decides:observation needed;ZD-C-104/responsible:stated only in general terms;ZD-C-104/boundary:searched, not found;ZD-C-104/reason:searched, not found	general
+CM-ACC-008	zid	statements	not-stated	Egypt | Other countries | Zid Egypt	ZD-C-032/decides/ZD-S-0743=Zid Payments	ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found;ZD-C-032/responsible:stated only in general terms;ZD-C-032/boundary:searched, not found;ZD-C-032/reason:searched, not found	
+CM-ACC-009	zid	none-held					
+CM-ACC-010	zid	none-held					
+CM-ACC-011	zid	none-held					
+CM-ONB-001	zid	statements	core		ZD-C-033/decides/ZD-S-0747=مستخدمي دول الخليج	ZD-C-033/responsible:stated only in general terms;ZD-C-033/reason:searched, not found	مستخدمي دول الخليج
+CM-ONB-002	zid	statements	not-stated			ZD-C-026/boundary:searched, not found;ZD-C-026/reason:searched, not found	
+CM-ONB-003	zid	statements	core	Ticketing & Chat System | تذكرة	ZD-C-114/decides/ZD-S-0378=plan Professional | ZD-C-114/decides/ZD-S-1004=compare-plans: starter, launch, growth, pro | ZD-C-114/where/ZD-S-1003=compare-plans: starter, launch, growth, pro	ZD-C-114/responsible:stated only in general terms;ZD-C-114/boundary:searched, not found;ZD-C-114/reason:searched, not found	general
+CM-ONB-004	zid	none-held					
+CM-PLN-001	zid	statements	core	إدارة الأشتراك		ZD-C-020/reason:searched, not found	general
+CM-PLN-002	zid	statements	core			ZD-C-020/reason:searched, not found	general
+CM-PLN-003	zid	none-held					
+CM-PLN-004	zid	statements	core	طلب استرداد باقة جديدة/حالية		ZD-C-020/reason:searched, not found;ZD-C-026/boundary:searched, not found;ZD-C-026/reason:searched, not found	general
+CM-PLN-005	zid	statements	core;outside	المدفوعات والمشتريات	ZD-C-017/decides/ZD-S-0656=compare-plans: starter, launch, growth, pro	ZD-C-017/responsible:observation needed;ZD-C-017/reason:searched, not found;ZD-C-021/responsible:searched, not found;ZD-C-021/reason:searched, not found	compare-plans: starter, launch, growth, pro
+CM-PLN-006	zid	statements	core	لوحة التحكم > المالية > المحفظة | ما هي محفظة التاجر في زد؟ | محفظة لكل متجر	ZD-C-017/decides/ZD-S-0654=merchants outside Saudi Arabia | ZD-C-017/decides/ZD-S-0655=merchants outside Saudi Arabia	ZD-C-017/responsible:observation needed;ZD-C-017/reason:searched, not found	general
+CM-PLN-007	zid	statements	not-stated			ZD-C-020/reason:searched, not found	
+CM-STF-001	zid	statements	core	فريق العمل	ZD-C-094/decides/ZD-S-0939=compare-plans: starter, launch, growth, pro	ZD-C-094/responsible:stated only in general terms	general
+CM-STF-002	zid	statements	core		ZD-C-094/decides/ZD-S-0939=compare-plans: starter, launch, growth, pro	ZD-C-094/responsible:stated only in general terms	general
+CM-STF-003	zid	statements	core			ZD-C-094/responsible:stated only in general terms	general
+CM-STF-004	zid	none-held					
+CM-STF-005	zid	none-held					

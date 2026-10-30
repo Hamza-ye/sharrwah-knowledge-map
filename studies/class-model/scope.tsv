@@ -483,7 +483,7 @@ zid	ZD-C-013	C		خدمات التقسيط; الدفع لاحقاً; Tamara; Tabb
 zid	ZD-C-014	C		الدفع عند الاستلام; Cash on Delivery; where لوحة التحكم > اللوجستيات (PAY)
 zid	ZD-C-015	C		تحصيل الدفع عند الاستلام; Cash on Delivery Collection; where محفظة التاجر (PAY)
 zid	ZD-C-016	C		خدمة التحويل البنكي; Bank Transfer Payment (PAY)
-zid	ZD-C-017	C	A	محفظة زد; محفظة التاجر; where لوحة التحكم > المالية > المحفظة: the merchant's wallet (PAY)
+zid	ZD-C-017	A	C	محفظة زد; محفظة التاجر; where لوحة التحكم > المالية > المحفظة: the merchant's wallet (PAY); moved to A by the coordinator after A-zid batch 1: Zid's wallet is the merchant's prepaid balance with the platform, A's CM-PLN-006, where all its statements are cited
 zid	ZD-C-018	C		الاستقطاع للمحفظة: deduction from Zid Pay to the wallet (PAY)
 zid	ZD-C-019	D	C	محفظة العميل والكاش باك; Customer Wallets; where التسويق > برامج الولاء (LOY)
 zid	ZD-C-020	A		الاشتراكات; Starter; Growth; Pro; where إدارة الأشتراك: the merchant's Zid plan (PLN)
@@ -550,7 +550,7 @@ zid	ZD-C-100	C	B;E	خصائص الطلبات والمنتجات; Custom Fields (
 zid	ZD-C-101	D	B	خاصية الإهداء: gifting (LOY)
 zid	ZD-C-102	E		خاصية إعادة توجيه الروابط: URL redirects (CNT)
 zid	ZD-C-103	D	C;E	تفعيل Google maps in the online store: locating buyers' addresses (CUS)
-zid	ZD-C-104	C	E	اوقات العمل الرسمية; where الاعدادات > المتجر: the store's working hours (ORD)
+zid	ZD-C-104	C	A;E	اوقات العمل الرسمية; where الاعدادات > المتجر: the store's working hours (ORD); also A: closing the store temporarily (ZD-S-0970) is A's CM-ACC-007 (the coordinator, after A-zid batch 1)
 zid	ZD-C-105	D		Reports & Analytics; التقارير والتحليلات (ANL)
 zid	ZD-C-106	D	E	Marketing Tools; أدوات التسويق والنمو (MKT); also E: its plan line Store SEO Customization (ZD-I-0300) bears on SEO (the coordinator, after E-zid batch 1)
 zid	ZD-C-107	D		واتساب زد; Whatsapp: messaging buyers (NTF)

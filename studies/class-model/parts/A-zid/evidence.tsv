@@ -1,0 +1,87 @@
+cap_id	platform	supports	key	why
+CM-ACC-001	zid	core	ZD-C-077/where/ZD-S-0900	dashboard Settings > Account settings: email and password
+CM-ACC-001	zid	core	ZD-I-0142	settings entry عام › اعدادات الحساب
+CM-ACC-001	zid	core	ZD-C-077/decides/ZD-S-0901	plan line Account Details on every plan: edit personal account information
+CM-ACC-001	zid	core	ZD-C-077/decides/ZD-S-0516	staff permission manage.store.account.settings
+CM-ACC-001	zid	core	ZD-I-0001	Zid's own API group Merchant APIs > Account > Me
+CM-ACC-001	zid	core	ZD-C-077/boundary/ZD-S-0086	GET /v1/managers/account/me, scope third_account_identity_read
+CM-ACC-001	zid	shows	ZD-C-077/responsible/ZD-S-0902	the merchant is responsible for protecting its account
+CM-ACC-002	zid	shows	ZD-C-030/responsible/ZD-S-0730	Zid owned by شركة القدرة التقنية لتقنية المعلومات والاتصالات ذ.م.م, CR 1010365366, called we or Zid
+CM-ACC-002	zid	shows	ZD-C-030/where/ZD-S-0726	the footer names Al-Qudrah Al-Taqniyah for Technology and Communication Company
+CM-ACC-002	zid	shows	ZD-C-030/responsible/ZD-S-0732	the Privacy Policy's company, Al Qudrah Technical ... L.L.C
+CM-ACC-002	zid	shows	ZD-C-030/responsible/ZD-S-0734	Zid's legal name in Arabic and English, on partner payout invoices
+CM-ACC-002	zid	shows	ZD-C-030/responsible/ZD-S-0731	the company's VAT number
+CM-ACC-002	zid	shows	ZD-C-030/decides/ZD-S-0727	the Terms governed by the laws of Saudi Arabia, disputes settled amicably
+CM-ACC-002	zid	shows	ZD-C-030/decides/ZD-S-0729	the Terms in Arabic and English, with a rule for conflicts between them
+CM-ACC-002	zid	shows	ZD-C-030/responsible/ZD-S-0733	Zid Pay in Kuwait: the contract between Zid Pay's users and Zid
+CM-ACC-002	zid	shows	ZD-C-030/decides/ZD-S-0728	Zid Pay in Kuwait: governed by the laws of Saudi Arabia
+CM-ACC-002	zid	shows	ZD-C-031/responsible/ZD-S-0737	Zid Egypt operates under CR 201574 and its own tax ID
+CM-ACC-002	zid	shows	ZD-C-031/responsible/ZD-S-0738	the same, in Arabic: زد مصر
+CM-ACC-002	zid	shows	ZD-C-031/responsible/ZD-S-0739	Zid Egypt's address in Cairo
+CM-ACC-002	zid	shows	ZD-C-031/reason/ZD-S-0740	reason: compliance with Egyptian regulatory and taxation requirements
+CM-ACC-004	zid	core	ZD-C-035/where/ZD-S-0751	dashboard Settings > Store > Store data (بيانات المتجر)
+CM-ACC-004	zid	core	ZD-I-0148	settings entry المتجر › بيانات المتجر لتجار السعودية
+CM-ACC-004	zid	core	ZD-C-035/decides/ZD-S-0753	choosing the activity type: فرد، مؤسسة، شركة، جمعية خيرية
+CM-ACC-004	zid	core	ZD-C-035/decides/ZD-S-0754	the required data differ by activity type and country
+CM-ACC-004	zid	core	ZD-C-035/where/ZD-S-0752	verification through the Saudi Business Center, for Saudi merchants
+CM-ACC-004	zid	core	ZD-C-035/boundary/ZD-S-0757	Zid's own endpoint for the store's KYC details and Commercial Registration
+CM-ACC-004	zid	shows	ZD-C-035/decides/ZD-S-0755	a commercial registration needed only to link payment gateways
+CM-ACC-004	zid	shows	ZD-C-035/responsible/ZD-S-0756	an establishment or company registering must have legal capacity
+CM-ACC-004	zid	shows	ZD-C-035/reason/ZD-S-0758	reason: a CR preserves the identity and increases customers' trust
+CM-ACC-006	zid	core	ZD-C-077/where/ZD-S-0002	Zid's own API group Merchant APIs > Account > Store
+CM-ACC-006	zid	core	ZD-C-077/boundary/ZD-S-0087	GET /v1/managers/account/store, third_store_details_read: the store's core details
+CM-ACC-006	zid	core	ZD-I-0091	access scope third_store_details_write
+CM-ACC-006	zid	core	ZD-I-0519	staff permission manage.store.settings
+CM-ACC-006	zid	core	ZD-C-033/decides/ZD-S-0746	changing the store's country in its settings, the wallet balance zeroed first
+CM-ACC-007	zid	core	ZD-C-104/where/ZD-S-0970	Settings > Store > working hours: closing the store entirely for a time
+CM-ACC-008	zid	shows	ZD-C-032/decides/ZD-S-0742	Zid serves merchants in Saudi Arabia and the Gulf only, of all nationalities
+CM-ACC-008	zid	shows	ZD-C-032/where/ZD-S-0741	Other countries: Egypt, UAE, Kuwait, Oman, Syria
+CM-ACC-008	zid	shows	ZD-C-032/decides/ZD-S-0743	Zid Payments: currently in Saudi Arabia and Kuwait
+CM-ACC-008	zid	shows	ZD-C-031/where/ZD-S-0735	Zid has expanded its operations to Egypt
+CM-ACC-008	zid	shows	ZD-C-031/where/ZD-S-0736	merchants in Egypt invited to launch a store
+CM-ONB-001	zid	core	ZD-C-033/decides/ZD-S-0747	a step of creating a store for GCC users: set your location or your stock's location
+CM-ONB-002	zid	shows	ZD-C-026/decides/ZD-S-0719	VAS requires an activated store on Zid (متجر مفعل)
+CM-ONB-003	zid	core	ZD-C-114/decides/ZD-S-1004	plan line Live Chat Support: help from Zid's team
+CM-ONB-003	zid	core	ZD-C-114/where/ZD-S-1003	plan line Ticketing & Chat System, not on Starter
+CM-ONB-003	zid	core	ZD-C-114/where/ZD-S-1077	a ticket raised from the dashboard's ticket icon
+CM-ONB-003	zid	core	ZD-C-114/decides/ZD-S-0378	plan Professional: 24/7 priority support
+CM-ONB-003	zid	core	ZD-I-0395	plan Professional: a dedicated merchant relation manager
+CM-PLN-001	zid	core	ZD-C-020/where/ZD-S-0671	Manage subscription (إدارة الأشتراك) from the store's logo
+CM-PLN-001	zid	core	ZD-C-020/decides/ZD-S-0672	plans Starter, Rise, Growth and Pro with their prices
+CM-PLN-001	zid	core	ZD-I-0526	staff permission manage.store.subscription
+CM-PLN-001	zid	core	ZD-C-020/boundary/ZD-S-0677	sign-up URL with package_code=rise
+CM-PLN-002	zid	core	ZD-I-0374	plan card Rise: cashback for the annual package only
+CM-PLN-002	zid	core	ZD-I-0383	plan card Growth: cashback on the annual plan only
+CM-PLN-002	zid	core	ZD-I-0396	plan card Professional: cashback on the annual plan only
+CM-PLN-002	zid	core	ZD-C-020/decides/ZD-S-0672	prices stated per month
+CM-PLN-004	zid	core	ZD-C-026/where/ZD-S-0718	refund requested from the dashboard: new ticket, subcategory refund of a new or current package
+CM-PLN-004	zid	shows	ZD-C-020/decides/ZD-S-0673	all fees in Saudi riyals or the merchant's local currency
+CM-PLN-004	zid	shows	ZD-C-020/decides/ZD-S-0674	Zid may change plans, fees and services with seven days' notice
+CM-PLN-004	zid	shows	ZD-C-020/responsible/ZD-S-0676	Zid's invoice: in Arabic, with Zid's official data and the service's type, price and quantity
+CM-PLN-004	zid	shows	ZD-C-026/decides/ZD-S-0720	Zid may revise VAS prices after notifying the merchant
+CM-PLN-004	zid	shows	ZD-C-026/responsible/ZD-S-0721	Zid may provide VAS itself or through its partners
+CM-PLN-005	zid	core	ZD-C-017/decides/ZD-S-0656	plan line Zid Wallet: the wallet balance pays for services and plans
+CM-PLN-005	zid	outside	ZD-C-021/responsible/ZD-S-0680	purchases from Zid processed by a third-party payment processor, under its terms
+CM-PLN-005	zid	shows	ZD-C-021/where/ZD-S-0678	using the services may lead to purchases from Zid
+CM-PLN-005	zid	shows	ZD-C-021/decides/ZD-S-0679	Zid may switch payment processors
+CM-PLN-005	zid	shows	ZD-C-021/boundary/ZD-S-0681	the purchase's information passed to third parties
+CM-PLN-005	zid	shows	ZD-C-017/responsible/ZD-S-0657	Zid deducts its dues from amounts deposited in the wallet
+CM-PLN-006	zid	core	ZD-C-017/where/ZD-S-0649	dashboard Finance > Wallet; adding balance
+CM-PLN-006	zid	core	ZD-C-017/where/ZD-S-0648	the merchant's wallet: add balance, buy Zid's products or services, transfer out
+CM-PLN-006	zid	core	ZD-C-017/where/ZD-S-0650	a wallet created for each store
+CM-PLN-006	zid	core	ZD-C-017/decides/ZD-S-0651	withdrawal to the bank account, 20,000 riyals per operation at most
+CM-PLN-006	zid	core	ZD-C-017/decides/ZD-S-0652	top-up by card or Apple Pay, 5,000 riyals at most
+CM-PLN-006	zid	core	ZD-C-017/decides/ZD-S-0653	no withdrawal until the account's verification is complete
+CM-PLN-006	zid	core	ZD-C-017/decides/ZD-S-0654	the wallet's currency for merchants outside Saudi Arabia
+CM-PLN-006	zid	shows	ZD-C-017/decides/ZD-S-0655	currencies that cannot be withdrawn
+CM-PLN-006	zid	shows	ZD-C-017/responsible/ZD-S-0658	the wallet's IBAN not to be used outside Zid's services
+CM-PLN-006	zid	shows	ZD-C-017/boundary/ZD-S-0659	Zid Pay's KYC documents used as the wallet's approved information
+CM-PLN-007	zid	shows	ZD-C-020/responsible/ZD-S-0675	the merchant pays all taxes, VAT included, in the subscriptions section
+CM-STF-001	zid	core	ZD-C-094/where/ZD-S-0938	the team feature, from the dashboard's Settings icon
+CM-STF-001	zid	core	ZD-I-0152	settings entry المتجر › فريق العمل
+CM-STF-001	zid	core	ZD-C-094/decides/ZD-S-0939	plan line Add Team Members: manager, accountant, order fulfillment staff
+CM-STF-001	zid	core	ZD-C-094/boundary/ZD-S-0941	API header Role: Manager, for the store owner or other staff members
+CM-STF-002	zid	core	ZD-C-094/decides/ZD-S-0940	all permissions are tied to the user's role
+CM-STF-002	zid	core	ZD-C-094/decides/ZD-S-0939	setting each team member's permissions
+CM-STF-002	zid	shows	ZD-C-094/reason/ZD-S-0942	reason: the store's security and consistency
+CM-STF-003	zid	core	ZD-I-0151	settings entry المتجر › مجموعات الفريق (team groups)
