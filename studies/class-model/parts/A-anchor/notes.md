@@ -707,3 +707,128 @@ Left for batch 7 (Salla's TRU concerns):
 - **SA-C-234, G's,** is cited here through SA-S-5115 (two-factor authentication mandatory at sign-in): its landing in G names CM-TRU-001.
 - **SH-C-012** is written as Q1's match M-005 once batch 7 lands SA-C-010.
 
+
+## Batch 6: TRU, Security, privacy, trust and audit (the second of three batches on it)
+
+Concerns: SH-C-176, SH-C-177, SH-C-178, SH-C-179, SH-C-180, SH-C-181, SH-C-182, SH-C-183, SH-C-184, SH-C-196. Result:
+9 capabilities (CM-TRU-011 to CM-TRU-019), 10 landings (all in the new capabilities; SH-C-177 and SH-C-178 share
+CM-TRU-012), 18 cells (a Shopify and a Salla cell for each, so batch 7 finds them ready), 78 evidence rows (two of them
+added to batch 1's CM-ACC-002 Shopify cell), 4 qualities, 14 slot fillers (one on CM-ACC-002), 3 rulings. `caps` was
+searched for every new capability (intellectual property, complaint, legal request, controller and processor, hosting
+and data location, subprocessor, retention and deletion, PCI and card data, security and legal apps, in English and
+Arabic): only domain D's CM-SUP-008 (complaints), G's CM-OPS-001 and CM-OPS-003 (reliability, hosting environment) and
+batch 5's CM-TRU-005 and CM-TRU-008 came near, and none is the same thing.
+
+### How I cut, and why
+
+- **CM-TRU-011, intellectual property infringement,** under CM-TRU-009: Shopify's Terms make infringing content a
+  violation of its Acceptable Use Policy (SH-S-7260), and give it a report and forms of its own (SH-S-7259, SH-S-7480,
+  SH-I-1382). Salla's side is a rule in the App Maker's publishing policy (SA-S-5114, held under SA-C-232, as CM-TRU-009's
+  Salla cell is). Salla's store content protection (حماية محتوى المتجر, content-copyright) guards the store's own content,
+  domain E's SA-C-090, and stays out.
+- **CM-TRU-012, merchants' complaints to the platform about its own services,** for SH-C-177 and SH-C-178: the P2B
+  complaint form and internal complaint-handling system, and the form for complaints about Shopify's financial
+  products, are each a merchant's complaint to the platform about it (reading). Two concerns in one capability: one
+  form each isn't a place enough for two capabilities (my judgment); the reviewer may split them.
+- **Data protection, at two levels.** CM-TRU-013 is the platform's data protection terms (privacy policy and DPA, with
+  the controller and processor roles), Q1's M-060 for SH-C-180. Its four children are the parts of those terms that
+  Shopify gives a place of their own: CM-TRU-014 where data is stored and transferred (Data hosting locations, BCRs),
+  CM-TRU-015 subprocessors (its page and notification sign-up), CM-TRU-016 retention after closure, CM-TRU-017 legal
+  requests (the Legal Access Request form). The parent rests on Shopify's grouping: each child's statements sit in the
+  DPA or the privacy policy (SH-S-0188, SH-S-0189, SH-S-0182, SH-S-7290, SH-S-0185). I didn't put CM-TRU-013 under
+  CM-TRU-005, as batch 5 suggested: CM-TRU-005 is the store's customers' data, and the privacy policy and DPA also cover
+  the merchant's own data (SH-S-0182, SH-S-0185). The reviewer may judge otherwise; CM-TRU-008 (Enhanced Services) then
+  joins the same tree, and SH-S-0192, cited in both, stops crossing trees.
+- **CM-TRU-018, payment card data security,** Q1's M-062: Shopify's PCI DSS responsibility and its Level 1
+  certification. Following the coordinator: Stripe's P2PE service (SH-S-0089) stays in E's CM-POS-002 only. SH-S-0097
+  is the same PCI DSS responsibility stated in the Shopify Payments terms; I cite it here as core, as card data security
+  rather than payment processing (reading), so **domain C's part should not cite it as core** for a payments capability.
+- **CM-TRU-019, security and legal apps:** Shopify's App Store categories, by their headings only. What the apps do
+  isn't stated, so I didn't spread them across CM-TRU-004, CM-TRU-006 or CM-TRU-010.
+- **Added to CM-ACC-002 (batch 1):** the EU Terms' contracting entity (SH-S-0207, Shopify International Limited) and
+  governing law (SH-S-0211, Ireland, with its slot filler), from SH-C-177.
+
+### Joins on role
+
+None: no Salla concern landed in this batch, and no Shopify concern joined an existing capability.
+
+### Homonyms kept apart
+
+- **"Complaint"** (Q1's U-040): CM-TRU-012 is merchants' complaints about the platform. Salla's complaints platform
+  (منصة الشكاوى, SA-C-178) is buyers' complaints about stores with Salla as mediator (SA-S-5087); D's CM-SUP-008 is the
+  merchant handling its own customers' complaints; Salla's quality gateway (بوابة الجودة, SA-C-150, domain C) is
+  merchants' complaints about shipping companies, escalated to Salla after 5 days. In CM-TRU-012's note.
+- **"Hosting":** CM-TRU-014 is where the platform keeps data; G's CM-OPS-003 is the environment a store runs on; Salla's
+  hosting of themes and partners' apps (SA-S-0039, SA-S-0037) is neither.
+- **"Deleted":** CM-TRU-016 is store data after closure; Salla's deleted orders and products (/orders/trash,
+  /products/trash) are items deleted within a live store.
+- **"Copyright":** Salla's remove-salla-copyright and content-copyright flags are the storefront's notice and content
+  protection, not infringement reports.
+
+### Strained fits
+
+- **SH-C-177** in CM-TRU-012: SH-S-0207 and SH-S-0211 are cited in CM-ACC-002; its Digital Services Act statement
+  (SH-S-0656, EU recipients below the VLOP threshold) fits no capability and is left uncited, for the reviewer.
+- **SH-C-180** in CM-TRU-013: SH-S-0186 is also in D's CM-CUS-001 (shows), SH-S-0244 in E's CM-CHN-002 (own-service; here
+  shows), SH-S-0192 in CM-TRU-008 (under SH-C-147's key). SH-S-0046 is left to CM-TRU-008.
+- **SH-C-181** in CM-TRU-014: its pods statements are G's CM-OPS-001 (SH-S-0673, SH-S-0674 cited there). **SH-S-0672**
+  (a pod's isolated datastores) is uncited: G's CM-OPS-001 should cite it.
+- **SH-C-183** in CM-TRU-016: shop/redact (SH-S-1356) and apps' 30-day deletion (SH-S-0219) are F's CM-API-011.
+- **SH-C-184** in CM-TRU-018: SH-S-0089 is E's CM-POS-002.
+- **SH-C-196** in CM-TRU-019: the general app statements (SH-S-0755, SH-S-0058, SH-S-7284), cited for every app category.
+
+### Concerns of other domains read
+
+None under `also` was needed. Searching found SA-C-118 and SA-C-119 (C, the consent to share store data with a payment
+company), SA-C-150 (C, quality gateway), SA-C-090 (E, content protection) and SA-C-234 (G, TLS); none is cited.
+
+### Rulings, and the pairs left for batch 7
+
+Ruled here: U-043 twice (SH-C-182 against SA-C-118 and against SA-C-119, apart: scope.tsv gives both domain C); U-064
+(SH-C-196 against SA-C-210, apart: scope.tsv gives SA-C-210 domain C).
+
+Left for batch 7:
+- **M-060, SA-C-171** lands in CM-TRU-013 by match. Its Salla cell already cites SA-C-171's SA-S-2209 (core) and
+  SA-S-0029 (shows). The coordinator then writes SH-C-180's join as match:M-060 (it is `single` until then).
+- **U-042, SH-C-181 against SA-C-233:** SA-C-233 has no statement, so CM-TRU-014's Salla cell is none-held and no
+  capability cites both sides: apart, whatever SA-C-233 lands in (CM-TRU-014 is its subject, by its name).
+- **U-040, SH-C-177 and SH-C-178 against SA-C-178:** CM-TRU-012 cites no SA-C-178 key (its reading says why), so apart
+  unless batch 7 lands SA-C-178 in CM-TRU-012. With batch 5's SH-C-172 pair (CM-TRU-009), U-040 has three pairs.
+- **SA-C-232** (batch 7's) is now cited in CM-TRU-011 too (SA-S-5114), with CM-TRU-009 and CM-TRU-002: wherever it
+  lands, the fit follows the cells.
+- **SA-C-066** (batch 7's, M-059) is now also cited in CM-TRU-013 (SA-S-0168, the merchant as controller), in another
+  tree than CM-TRU-005 unless the reviewer puts CM-TRU-013 under it.
+- Q1's M-061 (WC-C-043), M-062 (WC-C-018, WC-C-019) and M-060's WooCommerce side (WC-C-024, WC-C-044) are WooCommerce's
+  part's.
+
+### What the checker flagged
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-anchor --concerns SH-C-176,SH-C-177,SH-C-178,SH-C-179,SH-C-180,SH-C-181,SH-C-182,SH-C-183,SH-C-184,SH-C-196 --areas TRU`:
+0 problems, 17 flags. Mine are the none-held Salla cells of CM-TRU-012 and CM-TRU-014 to CM-TRU-019, each with
+matches; every cell's reading says what its matches are and why none shows the capability. The other ten flags are
+earlier batches' (CM-STF-003, CM-PLN-006, CM-TRU-004, CM-TRU-006, CM-TRU-008, SA-S-5002, SA-S-0089, SA-S-0141,
+SA-S-0115, SH-S-0238), answered in their notes.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-ACC-002's Shopify reading (batch 1)** should name the two rows I added (SH-S-0207, SH-S-0211), the EU Terms'
+  entity and Irish law; SH-C-002 itself is untouched.
+- **Domain G's CM-OPS-001** may add SH-C-181/where/SH-S-0672 (a pod's isolated datastores), which I leave to it.
+
+### Problems and gaps
+
+- **Salla's privacy policy isn't held as text** (SA-C-171/decides, /boundary, /reason and all of SA-C-233 are 'page not
+  read'): Salla's own controller or processor role, where it stores data, its processors, its retention and its answer
+  to legal requests aren't stated, so CM-TRU-014 to CM-TRU-017 are none-held for Salla on that gap, not on a search.
+- **Shopify's gaps:** SH-C-176/reason, SH-C-177/reason, SH-C-178/decides, /responsible and /reason, SH-C-179/responsible,
+  SH-C-180/where and /reason, SH-C-182/reason, SH-C-183/where, SH-C-184/where, /boundary and /reason, SH-C-196/reason are
+  'searched, not found'.
+- **The DSA statement SH-S-0656** has no capability: a disclosure of the platform's own regulatory status. The reviewer
+  may want a home for the platform's regulatory notices, or none.
+- **Makers:** none needed; every placement rests on Shopify's own legal pages, forms and App Store categories.
+
+## The coordinator's corrections after batch 6 (30 October)
+
+- **CM-ACC-002's Shopify reading** names batch 6's two rows (SH-S-0207, SH-S-0211).
+- **SH-S-0672** is cited in G's CM-OPS-001, which also left it to A.
+- **For domain C:** SH-S-0097, Shopify's PCI responsibility under the Payments terms, is `core` in CM-TRU-018; C's parts cite it as `shows` unless a C cell rests on it.

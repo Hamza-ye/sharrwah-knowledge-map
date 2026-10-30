@@ -123,3 +123,7 @@ The final run reports 0 problems and 14 flags.
 - **S2 in a cross-cutting domain.** The platforms put import, export, logs and migration inside other domains' sections. Following "the platforms' own grouping" strictly would leave G flat, so the parents here rest on names and routes, and each says so in the capabilities' notes.
 - **SA-C-234 is mostly API and sign-in security,** which is F's and A's. Only its status page line and the stability plan line it holds are G's.
 - **SA-C-235's statements don't show what the concern names.** Q1's own gaps say the pages that would show it weren't read.
+
+## The coordinator's correction after A-anchor batch 6 (30 October)
+
+- **SH-S-0672 is cited in CM-OPS-001.** This part left it to A and A-anchor left it to G, so no cell cited it. A pod as a set of shops on a fully isolated set of datastores is the isolation CM-OPS-001's Shopify cell already rests on (SH-S-0673, SH-S-0674).

@@ -8,3 +8,17 @@ CM-TRU-005	shopify	the General Data Protection Regulation (GDPR)	SH-C-148/respon
 CM-TRU-005	salla	the Personal Data Protection Law (نظام حماية البيانات الشخصية, approved 14/9/2024)	SA-C-066/decides/SA-S-0169
 CM-TRU-010	salla	the Ministry of Commerce's rules (أنظمة وزارة التجارة), requiring the Business platform's e-commerce certificate	SA-C-231/decides/SA-S-0118
 CM-TRU-010	salla	e-commerce laws (قوانين التجارة الإلكترونية), requiring the store's customer-service information	SA-C-231/decides/SA-S-0160
+CM-ACC-002	shopify	the laws of Ireland (governing law of the EU Terms)	SH-C-177/responsible/SH-S-0211
+CM-TRU-012	shopify	the Platform to Business Regulation (retained by the United Kingdom)	SH-C-177/decides/SH-S-0655
+CM-TRU-013	salla	نظام حماية البيانات الشخصية بالمملكة (the Kingdom's Personal Data Protection Law)	SA-C-171/responsible/SA-S-0029
+CM-TRU-014	shopify	Google Cloud Platform (storage regions)	SH-C-181/where/SH-S-0636
+CM-TRU-014	shopify	Google Cloud Canada Corporation (cloud hosting and data processing)	SH-C-181/where/SH-S-0196
+CM-TRU-014	shopify	Amazon Web Services and Google Cloud (all platform data)	SH-C-181/where/SH-S-0198
+CM-TRU-014	shopify	the General Data Protection Regulation (GDPR)	SH-C-181/responsible/SH-S-0641
+CM-TRU-014	shopify	the European Commission's adequacy decision for Canada	SH-C-181/responsible/SH-S-0640
+CM-TRU-014	shopify	the Standard Contractual Clauses approved by the European Commission	SH-C-181/boundary/SH-S-0643
+CM-TRU-015	shopify	Cloudflare, Inc. (load balancing and DDoS protection)	SH-C-182/where/SH-S-0199
+CM-TRU-015	shopify	Amazon Web Services, Inc.	SH-C-182/responsible/SH-S-0197
+CM-TRU-015	shopify	Google Cloud Canada Corporation	SH-C-181/responsible/SH-S-0195
+CM-TRU-016	shopify	European Data Protection Laws (retention as required by law)	SH-C-183/reason/SH-S-7290
+CM-TRU-018	shopify	PCI DSS (Payment Card Industry Data Security Standard)	SH-C-184/responsible/SH-S-0073

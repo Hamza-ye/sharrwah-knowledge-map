@@ -441,3 +441,81 @@ CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0160	customer-service information r
 CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0118	e-commerce certificate mandatory under the Ministry's rules
 CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0306	products from unsupported regions prohibited
 CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0307	orders shipping to unsupported regions prohibited
+CM-TRU-011	shopify	core	SH-C-176/where/SH-S-7259	the Terms' own report of content infringing IP rights
+CM-TRU-011	shopify	core	SH-C-176/boundary/SH-S-7480	Shopify's online form for notices of copyright infringement
+CM-TRU-011	shopify	core	SH-C-176/decides/SH-S-7260	infringing content violates the AUP; Shopify may remove it or terminate the store
+CM-TRU-011	shopify	core	SH-I-1382	legal page: trademark policy and report of trademark infringement
+CM-TRU-011	shopify	shows	SH-C-176/responsible/SH-S-0042	Shopify takes no ownership of the merchant's Materials but requires a licence
+CM-TRU-011	salla	shows	SA-C-232/responsible/SA-S-5114	pirated content and anything infringing IP rights barred from the App Maker's apps
+CM-TRU-012	shopify	core	SH-C-177/where/SH-S-0654	the P2B complaint form for Shopify merchants
+CM-TRU-012	shopify	core	SH-C-177/boundary/SH-S-0210	Shopify's internal complaint-handling system, free of charge
+CM-TRU-012	shopify	core	SH-C-178/where/SH-S-0657	the form for complaints about Shopify's financial products
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2171	Balance, a product on the financial complaint form's list
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2174	Capital - US loan, on the form's list
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2177	Capital - Canada MCA, on the form's list
+CM-TRU-012	shopify	shows	SH-C-177/decides/SH-S-0655	the P2B regulation retained by the United Kingdom
+CM-ACC-002	shopify	shows	SH-C-177/responsible/SH-S-0207	in the EU merchants' P2B Terms, Shopify means Shopify International Limited
+CM-ACC-002	shopify	shows	SH-C-177/responsible/SH-S-0211	the EU Terms governed by the laws of Ireland
+CM-TRU-013	shopify	core	SH-C-180/responsible/SH-S-0186	the DPA: the merchant as Data Controller, Shopify as Data Processor
+CM-TRU-013	shopify	core	SH-C-180/boundary/SH-S-0072	Terms 12: Shopify's processing of Your Customer Personal Data subject to the Terms, Privacy Policy and DPA
+CM-TRU-013	shopify	core	SH-C-180/decides/SH-S-7261	the Terms with the DPA are the merchant's documented instructions to Shopify
+CM-TRU-013	shopify	core	SH-I-1363	legal page: View data processing addendum
+CM-TRU-013	shopify	core	SH-I-1376	legal page: View privacy policy
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0187	the DPA is between the merchant and the Shopify Contracting Entity
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0192	Shopify as Data Controller where it provides Enhanced Services
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0244	Shopify as data controller when a customer uses Shop or Shop Pay
+CM-TRU-013	salla	core	SA-C-171/where/SA-S-2209	Salla's own privacy policy page, salla.com/privacy
+CM-TRU-013	salla	shows	SA-C-171/responsible/SA-S-0029	everyone bound by Salla's published privacy policy and the PDPL
+CM-TRU-013	salla	shows	SA-C-066/responsible/SA-S-0168	the controller's obligations: the merchant who sees its customers' data
+CM-TRU-014	shopify	core	SH-C-181/where/SH-S-0636	Shopify rebalances storage between Google Cloud Platform regions
+CM-TRU-014	shopify	core	SH-C-181/where/SH-S-0638	new merchants in Europe have their data stored at rest in Europe by default
+CM-TRU-014	shopify	core	SH-C-181/decides/SH-S-0637	Shopify moves data geographically, with mechanisms under the law
+CM-TRU-014	shopify	core	SH-C-181/decides/SH-S-0639	international transfers even where data is stored in Europe
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0227	EEA, UK and Swiss data received by the Irish affiliate
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0194	EEA, UK and Swiss customers' data first processed by Shopify International
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0641	Shopify International Limited as main establishment for GDPR
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0640	transfers to Canada on the Commission's adequacy decision
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0175	a Canadian company that may send personal data outside the person's region
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0226	data sent to other Shopify locations and service providers, Canada included
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0188	the DPA: customer data may be processed wherever Shopify, affiliates or providers are
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0191	Shopify International may transfer data outside Europe under the DPA's Appendix C
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0643	transfer agreements incorporating the Standard Contractual Clauses
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0648	Shopify's Binding Corporate Rules, in effect 8 July 2026
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0176	transfers to Shopify entities outside the EEA or Switzerland
+CM-TRU-014	shopify	outside	SH-C-181/where/SH-S-0196	Google Cloud Canada: cloud hosting and data processing
+CM-TRU-014	shopify	outside	SH-C-181/where/SH-S-0198	Amazon Web Services and Google Cloud rows: all platform data
+CM-TRU-015	shopify	core	SH-C-182/decides/SH-S-0645	Shopify limits subprocessors to technical services
+CM-TRU-015	shopify	core	SH-C-182/decides/SH-S-0189	the merchant may object to a subprocessor, or terminate
+CM-TRU-015	shopify	core	SH-C-182/responsible/SH-S-0190	Shopify fully liable for its subprocessors' acts
+CM-TRU-015	shopify	core	SH-C-182/boundary/SH-S-0206	Sign up for notifications about new subprocessors
+CM-TRU-015	shopify	shows	SH-C-182/where/SH-S-0184	Shopify works with third-party subprocessors for hosting, delivery, logging and more
+CM-TRU-015	shopify	outside	SH-C-182/where/SH-S-0199	Cloudflare: load balancing and DDoS protection
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0197	Amazon Web Services, a row of the third-party subprocessors
+CM-TRU-015	shopify	shows	SH-C-181/responsible/SH-S-0195	Google Cloud Canada Corporation, a row of the third-party subprocessors
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0203	Shopify Inc., an affiliated subprocessor providing the platform
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0204	Shopify Capital Inc., an affiliated subprocessor
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0205	Shopify Payments (USA) Inc., an affiliated subprocessor
+CM-TRU-016	shopify	core	SH-C-183/decides/SH-S-0182	store information retained for two years after closure before deletion begins
+CM-TRU-016	shopify	core	SH-C-183/decides/SH-S-0209	EU merchants: personal information deleted within 90 days of termination
+CM-TRU-016	shopify	core	SH-C-183/reason/SH-S-7290	Shopify may retain customer data as the law or its backup policies require
+CM-TRU-016	shopify	shows	SH-C-183/decides/SH-S-0183	the merchant decides how long its customers' information is kept
+CM-TRU-017	shopify	core	SH-C-179/where/SH-S-7250	legal requests submitted through the Legal Access Request form
+CM-TRU-017	shopify	core	SH-C-179/boundary/SH-S-0653	all legal access requests from third parties through the form
+CM-TRU-017	shopify	core	SH-C-179/boundary/SH-S-0647	public authorities' requests handled by Shopify's guidelines
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0650	information shared only on valid and enforceable legal process
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0651	affected people notified before production unless prohibited
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0652	requestors sent to the merchant first for its customers' data
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0185	Shopify refuses to share personal data unless permitted or required
+CM-TRU-017	shopify	core	SH-C-179/reason/SH-S-0675	the guidelines balance legal obligations and merchants' interests
+CM-TRU-017	shopify	outside	SH-C-179/decides/SH-S-0123	the Payment Processor or Financial Services Provider may deliver or hold data under legal process
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-0073	Shopify responsible for securing Account Data under PCI DSS
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-0097	the same responsibility for the Payments Services
+CM-TRU-018	shopify	core	SH-C-184/decides/SH-S-7202	Level 1 PCI DSS certified; stores PCI compliant by default
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-7481	Shopify's service provider PCI DSS Attestation of Compliance
+CM-TRU-019	shopify	extension-point	SH-C-196/where/SH-S-2715	App Store category Security apps
+CM-TRU-019	shopify	extension-point	SH-C-196/where/SH-S-2719	App Store category Legal apps
+CM-TRU-019	shopify	extension-point	SH-I-1953	App Store category Anti theft apps
+CM-TRU-019	shopify	extension-point	SH-I-1956	App Store category Security - Other
+CM-TRU-019	shopify	shows	SH-C-196/decides/SH-S-0755	merchants approve an app's scopes when they install it
+CM-TRU-019	shopify	shows	SH-C-196/responsible/SH-S-0058	use of Third Party Services is between the merchant and the provider
+CM-TRU-019	shopify	shows	SH-C-196/boundary/SH-S-7284	Third Party Services, App Store apps included, may access the store's data
