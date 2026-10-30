@@ -95,11 +95,12 @@ Say why, citing the source.
   - `evidence`: the entry and its sources don't settle it;
   - `tool`: the rendering, the leads or the checker misled (name which);
 - `effect`: what the correction changes once `held_amend.py` writes it, one of:
+  - `held`: a cell that held nothing becomes held, or a cell the line alone holds would hold nothing;
   - `count`: a cell gains or loses `core` or `own-service`;
   - `kind`: a cell gains or loses `extension-point` or `outside`;
   - `capability`: a capability made or not made, or the entry moved to another;
   - `filler`: a slot filler added or removed;
-  - `column`: scope, terms, quality or reading only.
+  - `column`: scope, terms, quality or reading only, or a change of `supports` that leaves the cell's placements as they are, because the cell already holds that value from another statement (say which).
 
 **The leads.** For each line on a capability, give `in_leads`:
 - `yes` or `no`: whether the right cap_id is among the entry's leads, as `show --candidates` prints them now;
@@ -113,7 +114,7 @@ The leads changed after the batches ran: at `99d429ad`, an identifier that many 
 - **R1:**
   - **BC-1's channel cards (lines 2 to 27):** who each card and its sources show doing the work (the platform, a named third party, or no one). From that, which `supports` each takes, and which of the parties it names are fillers. The notes say of Buy Buttons, Amazon, Walmart and eBay (lines 22 and 24 to 26) that "Who builds these connections isn't stated".
   - **The entries that name a company:** the contracting entities (lines 28 to 37) and the Feedonomics cards (lines 2 to 9 and 14 to 21). Does any name the platform's company, or a company of its group, as the maker or provider of a separate product? Judge by its own words and its sources' only.
-- **R2: BC-1's payment-gateways rows (lines 38 to 96).** Which `supports` each takes, from the rows and the article around them. Does H-held.md's rule for a help page's title apply to a row of a table in one? The model's own CM-PAY-011 cell reads the article's "more than 65 pre-integrated online payment solutions" as `core`.
+- **R2: BC-1's payment-gateways rows (lines 38 to 96).** Which `supports` each takes, from the rows and the article around them. Does H-held.md's rule for a help page's title apply to a row of a table in one? The model's own CM-PAY-011 cell reads a statement of the concern map, "more than 65 pre-integrated online payment solutions" (BC-S-0150, not this article), as `core`.
 - **R3:**
   - BC-1's plan lines and settings sections;
   - the tax services' `extension-point` (lines 169 to 176), by B-extent.md's definition;
