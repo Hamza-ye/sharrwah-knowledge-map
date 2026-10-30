@@ -161,3 +161,10 @@ The cells here cite keys that turn rulings of other parts from `apart` to joined
 - **WooCommerce's mobile app:** POS mode (WC-C-089) runs in the WooCommerce mobile app, the merchant's app (WC-C-090,
   domain G). CM-CHN-006, the store's branded app for buyers, is `none-held`: don't cite POS there.
 - **The last batch checks the whole part,** without `--concerns` and `--areas`.
+
+## The coordinator's corrections after batch 1 (30 October)
+
+- **The pairs this batch's cells join, which other parts ruled apart from their own cells,** now have E's side in `rulings.tsv`: U-063 (WC-C-110 against SA-C-033, joined:CM-CNT-007), U-054 (WC-C-110 against SH-C-135 and SA-C-097, joined:CM-CHN-001) and U-051 (WC-C-017 against SH-C-029 and SA-C-208, joined:CM-SFR-003). Each domain rules from its own cells; the merge flags each pair ruled differently, for one answer at the final review.
+- **scope.tsv:** WC-C-107 names C under `also` (its cart and checkout categories, for domain C), and WC-C-050, WC-C-072 and WC-C-071 name E.
+- **WC-S-0644 counts once:** `own-service` in CM-SFR-003, where WooCommerce's cell rests on it, and `shows` in F's CM-APP-011.
+

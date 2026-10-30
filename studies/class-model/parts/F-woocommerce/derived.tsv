@@ -26,7 +26,7 @@ CM-APP-007	woocommerce	statements	extension-point			WC-C-086/responsible:stated 
 CM-APP-008	woocommerce	none-held					
 CM-APP-009	woocommerce	statements	not-stated			WC-C-059/reason:searched, not found	
 CM-APP-010	woocommerce	statements	core;extension-point	Integration		WC-C-086/responsible:stated only in general terms;WC-C-086/reason:searched, not found	general
-CM-APP-011	woocommerce	statements	core;own-service	Extensions > Developed by Woo		WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found	general
+CM-APP-011	woocommerce	statements	core	Extensions > Developed by Woo		WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found	general
 CM-APP-012	woocommerce	statements	core	Advanced > WooCommerce.com | Connect your site to WooCommerce.com | readme.txt: Connection to WooCommerce.com		WC-C-063/responsible:stated only in general terms;WC-C-063/reason:searched, not found	general
 CM-AUT-001	woocommerce	none-held					
 CM-DVT-001	woocommerce	none-held					

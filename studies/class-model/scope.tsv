@@ -398,7 +398,7 @@ woocommerce	WC-C-046	E	D	MaxMind Geolocation; Default customer location (MKS); M
 woocommerce	WC-C-047	C	D	Address autocomplete; Preferred address autocomplete provider: addresses at checkout (CHK)
 woocommerce	WC-C-048	C		built in partnership with Stripe: processor dependence (PAY); M-037
 woocommerce	WC-C-049	A	F	WordPress.com account; Jetpack connection: the account for Woo services (ACC)
-woocommerce	WC-C-050	F		Developed by Woo; where Extensions > Developed by Woo (APP)
+woocommerce	WC-C-050	F	E	Developed by Woo; where Extensions > Developed by Woo (APP); also E: its statement on who makes Woo's themes (WC-S-0644) bears on the theme marketplace (the coordinator, after E-woocommerce batch 1)
 woocommerce	WC-C-051	E	C	Payout currencies; currency conversion fee (MKS); M-044
 woocommerce	WC-C-052	E	C	Currency; base currency; where General (MKS); M-044
 woocommerce	WC-C-053	E	C	multi-currency; Shop currency (MKS); M-044
@@ -419,8 +419,8 @@ woocommerce	WC-C-067	G	B	Product Import; Product Export (MIG); M-083
 woocommerce	WC-C-068	B		Inventory; Stock; where Products > Inventory (INV); M-012
 woocommerce	WC-C-069	D	B	Back in Stock Notifications; where WooCommerce > Notifications (MKT); M-080
 woocommerce	WC-C-070	C		Orders; Order statuses; where WooCommerce > Orders (ORD); M-023
-woocommerce	WC-C-071	C		Refunds; Order refunds (RET); M-024
-woocommerce	WC-C-072	C		Cart; Checkout; Cart & Checkout Blocks (CHK); M-021
+woocommerce	WC-C-071	C	E	Refunds; Order refunds (RET); M-024; also E: its return and refund policy statement (WC-S-5408) bears on store policies (the coordinator, after E-woocommerce batch 1)
+woocommerce	WC-C-072	C	E	Cart; Checkout; Cart & Checkout Blocks (CHK); M-021; also E: its Page setup section (WC-S-0022) bears on store pages (the coordinator, after E-woocommerce batch 1)
 woocommerce	WC-C-073	D		Customers; Accounts & Privacy; where WooCommerce > Customers (CUS); M-018
 woocommerce	WC-C-074	D		Coupons; where Marketing > Coupons (MKT); M-050
 woocommerce	WC-C-075	C		Shipping zones; Classes; Flat rate; Local pickup (SHP); M-045
@@ -455,7 +455,7 @@ woocommerce	WC-C-103	D		B2B; B2B payments; where Extensions > Merchandising > B2
 woocommerce	WC-C-104	B	D	Merchandising; Bundles; Gifts; Product options: merchandising extensions; the channel doesn't set the domain (CAT)
 woocommerce	WC-C-105	D		Conversion; Promotions; Rewards and loyalty; Upsells and cross-sells (MKT)
 woocommerce	WC-C-106	D		Customer service; Live chat; Support (SUP)
-woocommerce	WC-C-107	E	B	Store content and customizations; Search and navigation (SFR); also B: its Marketplace category Product images and media (WC-S-0742) is WooCommerce's only statement on product media (the coordinator, from B-woocommerce's notes)
+woocommerce	WC-C-107	E	B;C	Store content and customizations; Search and navigation (SFR); also B: its Marketplace category Product images and media (WC-S-0742) is WooCommerce's only statement on product media (the coordinator, from B-woocommerce's notes); also C: its Cart and checkout features category (WC-S-0740) and the Checkout Field Editor (WC-S-5484 to WC-S-5488) bear on checkout (the coordinator, after E-woocommerce batch 1)
 woocommerce	WC-C-108	E		International and localization extensions (MKS)
 woocommerce	WC-C-109	G	A;C;D	Store management: insights, import and export, order management, policy and security, accounting (SRF)
 woocommerce	WC-C-110	D	E	Extensions > Marketing; Advertising; Email; Social (MKT); M-051; also E: its Sales channels, SEO and Social categories bear on store presence (the coordinator, from D-woocommerce batch 1)

@@ -76,7 +76,7 @@ CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0441	class WC_Inte
 CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0442	filter woocommerce_integrations, through which integrations load
 CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0922	a settings page for an integration made with WC_Integration
 CM-APP-011	woocommerce	core	WC-C-050/where/WC-S-0697	Marketplace category Developed by Woo
-CM-APP-011	woocommerce	own-service	WC-C-050/responsible/WC-S-0644	Automattic's Fees: Woo themes or extensions among its paid Services
+CM-APP-011	woocommerce	shows	WC-C-050/responsible/WC-S-0644	Automattic's Fees: Woo themes or extensions among its paid Services; own-service in E's CM-SFR-003, the theme marketplace, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-APP-011	woocommerce	shows	WC-C-050/decides/WC-S-0646	paid Services bought from WooCommerce.com come with downloads, updates and support for a year
 CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0027	settings section Advanced > WooCommerce.com
 CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0899	connecting to WooCommerce.com installs extensions, brings updates and support, and manages subscriptions from the admin

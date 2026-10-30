@@ -257,3 +257,7 @@ evidence: SH-S-0738 (apps made by Shopify) for CM-APP-011.
 ## The coordinator's corrections (30 October)
 
 - **U-052, (WC-C-050, SH-C-156):** `joined:CM-APP-011`, since the back-fill cites SH-S-0738 there. The pairs with SH-C-157 and SA-C-194 stay `nested`.
+
+## The coordinator's correction after E-woocommerce batch 1 (30 October)
+
+- **WC-S-0644 counts once.** Automattic's terms name Woo themes and extensions among its paid Services. It was `own-service` here and in E's CM-SFR-003, the theme marketplace, whose WooCommerce cell rests on it alone. It stays there and is `shows` here; CM-APP-011's WooCommerce cell stays `core` on the category Developed by Woo (WC-S-0697).
