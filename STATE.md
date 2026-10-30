@@ -1,6 +1,6 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 29 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 30 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
@@ -156,6 +156,20 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 
   Re-measured after the next two domains. Told to the founder on the orientation page.
 - **Since the dry run:** all seven domains are complete for all five platforms, and merged with no problem (`9d204b46`; method report, section 15): 347 capabilities (A 48, B 33, C 93, D 70, E 43, F 47, G 13), every one of the 652 concerns landed once, and 1,735 cells. 328 are `class`, 16 `slot` and 3 `open: unplaced`. The merge leaves 175 flags for the final review. Concerns were moved to the domain that holds the same thing: Zid's bundle offers to B; Native Hosting to G; Zid's wallet, its wallet deduction and Zid Assurance to A; WooCommerce's address autocomplete and Zid Voice to D. Where a cell rests alone on a statement counted in two domains, it stays `core` where the statement's words belong and `shows` elsewhere, unless the statement names several things, which count in each (method report, sections 11 to 15). An anchor searches every domain before adding a capability. The Knowledge Map's page has its generator and a draft of the whole merged model for the founder (https://claude.ai/artifact/1xSBe65ac2YACpBmNx6xLS), and the orientation page is at version 9: the merge, the cost and projection, and the rulings since version 8 for veto. Q3's check and the final review have their briefs and scripts, inspected (`inspection-Q3R.md`). The subjects' points are placed, all 98 (`studies/class-model/points/`; method report, section 16): 61 landed, and 50 conflicts settled by the coordinator as 43 model amendments, 4 dismissed and 3 kept open, none for the founder; the amendments cite the subjects' own statements, and moved 21 capabilities' kind or count. Q3's check runs next. About 790 million agent tokens spent by 12:45 UTC. The projection is about 1.1 billion for the whole extent (method report, section 15).
+- **Q3's check is done, and it exposed a gap in what the model read (30 October, 13:00 to 15:15 UTC):**
+  - **The check:** all 260 rows placed with 0 problems (`studies/class-model/q3/`, 14 batches). The Knowledge Map's 179 questions: 128 covered, 20 partly, 31 beyond the class. The 81 payment rows: 35 covered, 14 partly, 32 beyond the class. No whole row is a miss. 13 parts of rows are candidate misses: 3 held (tipping, a payment test mode, an agent's identity linking) and 10 not held. 59 of the 347 capabilities are asked by no row (`q3.py unasked`). The checker now:
+    - cites a decision as `founder-decisions <date> <gate>`, with `#k` where several rows share them;
+    - gives a row answered whole by a decision in force the `when` `decided`;
+    - has a subject that has run answer only through its register.
+  - **The gap:** Q3's batches had searched the concern map only. A first search of observed-sh found Shopify's return rules held, though the concern map has no statement on them. On the founder's decision of 30 October (what is held is read through the repositories' guides and indexes first), the coordinator measured what the model read against what is held (`studies/class-model/held-vs-read.md`):
+    - the model reads the concern map, finished on 12 October, and nothing captured since;
+    - it never read Zid's, BigCommerce's or WooCommerce's admin structures in other-product-class, nor 78 of Shopify's 125 structures and 106 of Salla's 137;
+    - 658 of its 1,735 cells hold nothing.
+
+    The coordinator's miss: the extent's plan built the model from the concern map without checking it against what the repositories hold today.
+  - **The held pass closes it** (`studies/class-model/briefs/H-held.md`, under inspection at max; `held/selection.tsv`). Every entry of each platform's unread self-descriptions is listed by script (14,889 entries in 22 batches: Shopify 8,880, Salla 4,207, Zid 1,403, WooCommerce 257, BigCommerce 142) and placed by agents on a capability, as new, or out of scope. The coordinator amends the cells' evidence from the placements (`method/held_amend.py`), makes the new capabilities, and merges again.
+  - **Then:** a second stage reads the cells still holding nothing against the held pages: the admin as captured, then help and docs. Q3's 13 candidate misses are checked against everything held (`briefs/Q3-misses.md`, under inspection). Q3's rows the amendments touch are placed again.
+  - **Found on the way:** BigCommerce's `settings-list` structure in other-product-class pairs each section with the next one's address. Its source step holds the right ones. A correction request for the founder's local agent is due.
 - **Domain C's notes from D, now settled:** C's anchor landed Shopify's and Salla's abandoned checkouts and carts in CM-CHK-007, beside D's CM-MKT-022, recovery: the merge flags them as `one capability?` for the final review. SH-S-0097, Shopify's PCI responsibility, stays `core` in A's CM-TRU-018, and no C cell cites it.
 - **The running order from here:** finish D's anchor and F's mapping (Zid, BigCommerce, back-fills), then D's mapping; then E and A's anchors in batches (`class_slice.py batches`), then C's (eleven batches), each domain's mapping after its anchor. Two parts at a time. After every part: commit, check, correct what the part reports on earlier rows, then the next.
 - **A quarter past the budget:** 316.9 million spent at about 04:55 UTC on 30 October. Re-measured projection: about 890 million for the whole extent, within 750 to 1,000 (method report, section 10). Brought to the founder, with the orientation page updated. The work goes on (`PLAN.md`, section 8; the standing decision of 27 October).
@@ -172,7 +186,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
    3. the review of its output, which checks every placement against all of Q1's statements;
    4. the conventions and a checker, with the architecture plan's first part, what architecture needs to know, drafted alongside so the extent records it (`PLAN.md`, Stage 4A);
    5. the other domains and platforms; the merge, with each capability's kind and count, and S-01's and S-02's variation points landed on the model;
-   6. Q3's check for what the model misses, then an independent review of the whole extent;
+   6. Q3's check for what the model misses (done); the held pass, which reads what the repositories hold that the model never read (running); Q3's candidate misses against everything held; then an independent review of the whole extent;
    7. the architecture plan finished (`architecture/plan.md`), and reviewed by an agent that made none of it;
    8. the extent's report and the architecture plan, with the orientation page updated before they reach the founder at GM.
 2. **On the founder's go on the architecture plan:** architecture and the model's detail, in the order the plan sets, beside the subjects.
