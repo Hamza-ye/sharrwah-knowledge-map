@@ -38,7 +38,7 @@
 #   python3 -I method/held_entries.py show --platform P (--batch B | --structure S) [--from I] [--to J] [--width W] [--meta]
 #                                                [--candidates]   each entry's leads, by identifier or by term: leads only
 #   python3 -I method/held_entries.py check --platform P --batch B  checks held/<platform>/placements-<B>.tsv
-import argparse, collections, csv, glob, hashlib, json, os, re, subprocess, sys, unicodedata
+import argparse, math, collections, csv, glob, hashlib, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from class_slice import MODEL, PLATFORMS, PREFIX, rows
 from held_vs_read import REPOS, read_sources
@@ -668,11 +668,56 @@ def candidate_index(platform):
     for r in rows(os.path.join(MODEL, "merged", "cells.tsv")):
         if r["platform"] == platform:
             state[r["cap_id"]] = (r.get("placed_as") or "shows") if r["held"] == "statements" else "holds nothing"
-    return by_tok, terms, names, common, state
+    # A term many of the platform's entries hold in their values leads nowhere either ("merchant", "available in").
+    vals = [" " + fold(values_of(e["text"])) + " " for e in es]
+    for t in list(terms):
+        if sum(1 for v in vals if f" {t} " in v) > max(25, len(es) // 50):
+            del terms[t]
+    # Leads by a capability's own name: the words it shares with the entry's values, each weighted by how few names hold it.
+    bag = {c: set(name_words(n)) for c, n in names.items()}
+    df_w = collections.Counter(w for b in bag.values() for w in b)
+    return by_tok, terms, names, common, state, (bag, df_w)
+
+
+STOP_WORDS = set("the a an of and or to in on for its it is by with as from at be are this that these their your you our "
+                 "store stores setting settings page pages list manage management admin dashboard option options general "
+                 "new view edit create".split()) | {"و", "في", "من", "على", "الى", "إلى", "عن", "مع", "اعدادات", "إعدادات",
+                                                    "صفحة", "إدارة", "ادارة", "قائمة", "عرض", "تعديل", "انشاء", "إنشاء"}
+
+
+def name_words(s):
+    """A name's or a value's words, folded: an English word without its plural, an Arabic one without its article."""
+    out = []
+    for w in re.findall(r"[a-z]+|[\u0600-\u06ff]+", fold(s)):
+        if w in STOP_WORDS or len(w) < 3:
+            continue
+        if w[0].isascii():
+            w = re.sub(r"ies$", "y", w)
+            w = re.sub(r"(?<!s)s$", "", w)
+        else:
+            w = re.sub(r"^ال", "", w)
+        out.append(w)
+    return out
+
+
+ID_FIELDS = {"path", "pagekey", "id", "parentid", "key", "route", "url", "href", "module", "slug", "gid", "handle"}
+
+
+def values_of(text):
+    """An entry's values, without its field names, identifier fields or identifiers: what its own words say."""
+    keep = []
+    for part in text.split(";"):
+        k, sep, v = part.partition(":")
+        if sep and re.fullmatch(r"\s*[\w .-]{1,40}", k):
+            if k.strip().casefold() in ID_FIELDS:
+                continue
+            part = v
+        keep.append(TOKEN.sub(" ", part))
+    return " ".join(keep)
 
 
 def candidates(e, idx):
-    by_tok, terms, names, common, _ = idx
+    by_tok, terms, names, common, state, (bag, df_w) = idx
     score = collections.Counter()
     why = collections.defaultdict(set)
     for t in set(TOKEN.findall(e["text"])):
@@ -682,7 +727,7 @@ def candidates(e, idx):
         for c in cs:
             score[c] += 2
             why[c].add(t)
-    ft = " " + fold(e["text"]) + " "
+    ft = " " + fold(values_of(e["text"])) + " "
     for t, cs in terms.items():
         if len(cs) > 2:          # a term several capabilities share ("products", "settings") leads nowhere
             continue
@@ -690,7 +735,18 @@ def candidates(e, idx):
             for c in cs:
                 score[c] += 1
                 why[c].add(t)
-    return [(c, sorted(why[c])[:3]) for c, _ in score.most_common(3)]
+    # ties break by the capability's id, so the leads print in the same order on every run (a set's order varies)
+    out = [(c, sorted(why[c])[:3]) for c in sorted(score, key=lambda c: (-score[c], c))[:3]]
+    # by a capability's own name, up to two more, the first whose cell holds nothing among them where one scores near the top
+    ws = set(name_words(values_of(e["text"])))
+    n = len(bag)
+    by_name = {c: sum(math.log(n / df_w[w]) for w in ws & b) for c, b in bag.items() if ws & b}
+    ranked = [c for c in sorted(by_name, key=lambda c: (-by_name[c], c)) if by_name[c] >= 6 and c not in score]
+    pick = ranked[:1]
+    nothing = [c for c in ranked[1:10] if state.get(c) == "holds nothing" and by_name[c] >= 0.5 * by_name[ranked[0]]]
+    pick += nothing[:1] or ranked[1:2]
+    out += [(c, ["name: " + ", ".join(sorted(ws & bag[c])[:3])]) for c in pick]
+    return out
 
 
 def cmd_show(a):
@@ -906,6 +962,19 @@ def cmd_check(a):
             for x in [y.strip() for y in f[0].split(";") if y.strip()]:
                 caps_of[x].add(f[2]); lines_of[x].append(i)
     keys = {x: re.search(r"pageKey: ([^;]+)", es[x]["text"]).group(1).strip() for x in ids if x in es and re.search(r"pageKey: ([^;]+)", es[x]["text"])}
+    # an entry whose own id, title or path is another entry's parent, within or parentId holds others: a container
+    held_by = collections.Counter()
+    for x in ids:
+        if x in es:
+            for m in re.finditer(r"(?:^|; )(?:parent|within|parentId): ([^;]+)", es[x]["text"]):
+                held_by[m.group(1).strip().split(" > ")[-1]] += 1
+    own = {}
+    for x in ids:
+        if x in es:
+            for f in ("id", "title", "text", "name", "label", "path"):
+                m = re.search(rf"(?:^|; ){f}: ([^;]+)", es[x]["text"])
+                if m and held_by.get(m.group(1).strip()):
+                    own[x] = m.group(1).strip(); break
     for x in ids:
         if x not in es or x not in caps_of:
             continue
@@ -921,6 +990,8 @@ def cmd_check(a):
         k = keys.get(x)
         if k and any(v.startswith(k + ".") for v in keys.values()):
             notes.append(f"line {at}: pageKey {k} holds other pages: a container (rule 3)")
+        elif x in own:
+            notes.append(f"line {at}: {own[x]} holds {held_by[own[x]]} other entries: a container (rule 3)")
     for k, names in new_names.items():
         if len(set(names)) > 1:
             problems.append(f"one new thing named several ways: {sorted(set(names))}: name it one way")
