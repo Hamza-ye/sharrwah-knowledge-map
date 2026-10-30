@@ -1442,6 +1442,168 @@ CM-CAT-012	exact	decides	WC-C-093/decides/WC-S-5445	cost_of_goods_sold
 CM-CAT-013	exact	boundary	BC-C-008/boundary/BC-S-0054	CORS
 CM-CAT-013	exact	boundary	SA-C-020/boundary/SA-S-1599	product.price.updated
 CM-CAT-013	exact	decides	SA-C-020/decides/SA-S-3515	metal-pricing
+CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0097	store_checkout
+CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0099	store/channel/{channel_id}/settings/checkout/updated
+CM-CHK-001	exact	decides	BC-C-016/decides/BC-S-0095	Single-page checkout
+CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3112	store-checkout
+CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3113	guest-checkout
+CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3114	embedded-login-checkout
+CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3124	ucp-embedded-checkout
+CM-CHK-001	exact	boundary	SH-C-047/boundary/SH-S-1162	checkouts/create
+CM-CHK-001	exact	boundary	SH-C-047/boundary/SH-S-2530	dev.ucp.shopping.checkout
+CM-CHK-001	exact	boundary	SH-C-047/boundary/SH-S-6068	read_orders
+CM-CHK-001	exact	boundary	SH-C-047/boundary/SH-S-6069	read_orders
+CM-CHK-001	exact	boundary	SH-C-047/boundary/SH-S-6070	read_orders
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-0015	4. Your Responsibilities
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-0016	1. Account Terms
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-0216	2. Using the Shopify API
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-5106	checkout-settings
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-5562	entitlements.webCheckout
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-5569	entitlements.webCheckout
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-7005	World's best-converting checkout
+CM-CHK-001	exact	decides	SH-C-047/decides/SH-S-7070	High volume checkout
+CM-CHK-001	exact	boundary	SH-C-050/boundary/SH-S-1164	checkouts/update
+CM-CHK-001	exact	boundary	WC-C-072/boundary/WC-S-0162	wc/store/v1 > /checkout
+CM-CHK-001	exact	boundary	WC-C-072/boundary/WC-S-0163	wc/store/v1 > /checkout/(?P<id>[\d]+)
+CM-CHK-001	exact	decides	WC-C-072/decides/WC-S-0928	woocommerce_enable_guest_checkout
+CM-CHK-001	exact	decides	WC-C-087/decides/WC-S-5431	cart_checkout_blocks
+CM-CHK-001	exact	boundary	ZD-C-099/boundary/ZD-S-0049	API's > Checkout
+CM-CHK-002	exact	boundary	BC-C-014/boundary/BC-S-0085	store_cart
+CM-CHK-002	exact	boundary	BC-C-014/boundary/BC-S-0086	store/cart/created
+CM-CHK-002	exact	boundary	SA-C-100/boundary/SA-S-1080	Cart
+CM-CHK-002	exact	boundary	SA-C-100/boundary/SA-S-1081	Cart Items
+CM-CHK-002	exact	boundary	SA-C-100/boundary/SA-S-1548	carts
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-1101	unauthenticated_write_checkouts
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-1160	carts/update
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-2533	dev.ucp.shopping.cart
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-6066	read_orders
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-6067	read_orders
+CM-CHK-002	exact	boundary	SH-C-046/boundary/SH-S-6152	unauthenticated_write_checkouts
+CM-CHK-002	exact	decides	SH-C-046/decides/SH-S-7483	Add-to-cart limit
+CM-CHK-002	exact	decides	SH-C-046/decides/SH-S-7484	Add-to-cart limit
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0149	wc/store/v1 > /cart
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0150	wc/store/v1 > /cart/add-item
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0155	wc/store/v1 > /cart/items
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0156	wc/store/v1 > /cart/items/(?P<key>[\w-]{32})
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0158	wc/store/v1 > /cart/remove-item
+CM-CHK-002	exact	boundary	WC-C-072/boundary/WC-S-0160	wc/store/v1 > /cart/update-item
+CM-CHK-002	exact	boundary	ZD-C-099/boundary/ZD-S-0049	API's > Checkout
+CM-CHK-002	exact	decides	ZD-C-100/decides/ZD-S-0965	حجز المنتج 30 دقيقة
+CM-CHK-003	exact	boundary	BC-C-016/boundary/BC-S-0098	store_content_checkout
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-0960	write_checkout_and_accounts_configurations
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-0961	read_checkout_branding_settings
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-5943	read_checkout_and_accounts_configurations
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-5944	read_checkout_and_accounts_configurations
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-5945	read_checkout_and_accounts_configurations
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-5946	read_checkout_branding_settings
+CM-CHK-003	exact	boundary	SH-C-048/boundary/SH-S-5947	read_checkout_branding_settings
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-0628	4. Merchant Obligations and Authorizations
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-5104	checkout-accounts-editor
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-5105	checkout-settings:customizations-report:list
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-5562	entitlements.webCheckout
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-5569	entitlements.webCheckout
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-5942	read_checkout_and_accounts_configurations
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-6176	write_checkout_and_accounts_configurations
+CM-CHK-003	exact	decides	SH-C-048/decides/SH-S-7053	Checkout customization
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0453	ExtendSchema
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0773	Extending the Store API
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0774	Available extensible endpoints
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0775	Adding fields and passing values
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0776	Exposing your data
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0777	Available Formatters
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0792	Coupons
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0795	How the checkout block processes an order
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0797	Product collection block
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0798	DOM events sent from product collection block
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0799	Registering custom collections in product collection block
+CM-CHK-004	by landing	boundary	WC-C-087/boundary/WC-S-0800	On-Sale Badge block
+CM-CHK-004	exact	boundary	BC-C-017/boundary/BC-S-0101	Route
+CM-CHK-004	exact	decides	BC-C-017/decides/BC-S-0077	Closed Betas
+CM-CHK-004	exact	boundary	SH-C-049/boundary/SH-S-7228	purchase.checkout.block.render
+CM-CHK-004	exact	boundary	SH-C-049/boundary/SH-S-7229	purchase.thank-you.block.render
+CM-CHK-004	exact	decides	SH-C-049/decides/SH-S-0069	9.13 Shopify Checkout Extensibility
+CM-CHK-004	exact	decides	SH-C-049/decides/SH-S-0070	9.13 Shopify Checkout Extensibility (summary)
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0451	IntegrationInterface
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0780	Getting started with Cart and Checkout extensibility
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0782	Available slots
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0783	Checkout flow and events
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0786	Checkout Utilities
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0787	DOM events
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0788	Available Filters
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0789	Inner block types
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0790	Cart line items
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0791	Checkout and place order button
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0793	Order summary items
+CM-CHK-004	exact	boundary	WC-C-087/boundary/WC-S-0794	Totals footer item
+CM-CHK-005	exact	boundary	SH-C-052/boundary/SH-S-0953	write_validations
+CM-CHK-005	exact	boundary	SH-C-052/boundary/SH-S-2212	validation_settings_ui
+CM-CHK-005	exact	boundary	SH-C-052/boundary/SH-S-6146	read_validations
+CM-CHK-005	exact	boundary	SH-C-052/boundary/SH-S-6305	write_validations
+CM-CHK-005	exact	decides	SH-C-052/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-CHK-006	exact	boundary	SH-C-053/boundary/SH-S-0950	write_cart_transforms
+CM-CHK-006	exact	boundary	SH-C-053/boundary/SH-S-5939	read_cart_transforms
+CM-CHK-006	exact	boundary	SH-C-053/boundary/SH-S-6173	write_cart_transforms
+CM-CHK-006	exact	boundary	SH-C-053/boundary/SH-S-6174	write_cart_transforms
+CM-CHK-006	exact	decides	SH-C-053/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-CHK-006	exact	decides	SH-C-053/decides/SH-S-6171	write_cart_transforms
+CM-CHK-006	exact	decides	SH-C-053/decides/SH-S-6172	write_cart_transforms
+CM-CHK-006	exact	boundary	WC-C-087/boundary/WC-S-0154	wc/store/v1 > /cart/extensions
+CM-CHK-006	exact	boundary	WC-C-087/boundary/WC-S-0778	Marking a cart item as a child of another cart item
+CM-CHK-006	exact	boundary	WC-C-087/boundary/WC-S-0779	Updating the cart on-demand
+CM-CHK-007	by landing	decides	BC-C-015/decides/BC-S-0090	Abandoned cart saver
+CM-CHK-007	by landing	decides	SA-C-048/decides/SA-S-2099	استهداف السلات المتروكة
+CM-CHK-007	by landing	decides	SH-C-050/decides/SH-S-5276	entitlements.abandonedCartRecovery
+CM-CHK-007	by landing	decides	SH-C-050/decides/SH-S-5277	entitlements.abandonedCartRecovery
+CM-CHK-007	by landing	decides	SH-C-050/decides/SH-S-7041	Abandoned checkout recovery
+CM-CHK-007	by landing	decides	SH-C-050/decides/SH-S-7224	apps.shopify.com/built-in-features/abandoned-checkout-recovery
+CM-CHK-007	by landing	boundary	ZD-C-082/boundary/ZD-S-1019	رقم زد
+CM-CHK-007	by landing	decides	ZD-C-082/decides/ZD-S-1018	تنبيهات زد
+CM-CHK-007	exact	boundary	BC-C-015/boundary/BC-S-0091	store/cart/abandoned
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1035	Abandoned Carts
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1548	carts
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1625	abandoned.cart
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1628	abandoned.cart.update
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1629	abandoned.cart.purchased
+CM-CHK-007	exact	boundary	SA-C-048/boundary/SA-S-1630	abandoned.cart.status.changed
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-2003	السلات المتروكة
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-2352	forget_cart_browse
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-2353	forget_cart_management
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-2569	forget_cart_browse
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-2570	forget_cart_management
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-3248	abandoned-cart-rule
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-3249	abandoned-cart-complete-order
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-3250	abandoned-cart-cursor-pagination
+CM-CHK-007	exact	decides	SA-C-048/decides/SA-S-3458	abandoned-cart-merchant-notifications
+CM-CHK-007	exact	decides	SH-C-050/decides/SH-S-5002	abandonedCheckouts:parent
+CM-CHK-007	exact	boundary	ZD-C-082/boundary/ZD-S-0064	abandoned_cart.created
+CM-CHK-007	exact	boundary	ZD-C-082/boundary/ZD-S-0095	GET /v1/managers/store/abandoned-carts
+CM-CHK-007	exact	decides	ZD-C-082/decides/ZD-S-0474	manage.store.abandonedcarts
+CM-CHK-007	exact	decides	ZD-C-082/decides/ZD-S-0913	Abandoned Cart Details
+CM-CHK-007	exact	decides	ZD-C-082/decides/ZD-S-1016	الباقات المجانية
+CM-CHK-007	exact	decides	ZD-C-082/decides/ZD-S-1017	الباقة الاحترافية; باقة الأعمال الكبيرة
+CM-CHK-008	exact	boundary	SA-C-079/boundary/SA-S-1507	salla-quick-buy
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-1967	زر الشراء السريع
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-2012	الطلب المباشر *برسوم إضافية
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-2398	quick_checkout_management
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-2615	quick_checkout_management
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-3115	quick-purchase
+CM-CHK-008	exact	decides	SA-C-079/decides/SA-S-3117	quick-checkout
+CM-CHK-008	exact	decides	WC-C-015/decides/WC-S-5339	Enabling WooPay
+CM-CHK-008	exact	decides	ZD-C-005/decides/ZD-S-0362	Rise: All features of Starter package, plus:
+CM-CHK-009	by landing	boundary	ZD-C-100/boundary/ZD-S-0964	List Product Settings
+CM-CHK-009	exact	boundary	SA-C-042/boundary/SA-S-1019	Order Options
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-2130	إضافة خيارات الطلب
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-2131	إضافة حقول مخصصة للطلبات
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-2424	custom_fields_management
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-2641	custom_fields_management
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-3486	order-options
+CM-CHK-009	exact	decides	SA-C-042/decides/SA-S-3491	custom-fields
+CM-CHK-009	exact	boundary	WC-C-087/boundary/WC-S-0454	woocommerce_register_additional_checkout_field
+CM-CHK-009	exact	boundary	WC-C-087/boundary/WC-S-0781	Additional checkout fields
+CM-CHK-009	exact	boundary	WC-C-087/boundary/WC-S-0796	Removing checkout fields
+CM-CHK-009	exact	boundary	WC-C-107/boundary/WC-S-5486	legacy checkout
+CM-CHK-009	exact	decides	ZD-C-100/decides/ZD-S-0963	Custom Fields
+CM-CHK-010	exact	decides	BC-C-014/decides/BC-S-0084	Persistent cart
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6102	read_publications
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6103	read_publications
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6287	write_resource_feedbacks
@@ -2630,6 +2792,8 @@ CM-MKT-020	exact	boundary	SA-C-073/boundary/SA-S-5134	آلية خصم المبا
 CM-MKT-020	exact	boundary	SA-C-073/boundary/SA-S-5135	launch.add-funds-to-your-sweply-ads-wallet
 CM-MKT-020	exact	decides	SA-C-073/decides/SA-S-2381	salla_ads_wallet_browse
 CM-MKT-020	exact	decides	SA-C-073/decides/SA-S-2382	salla_ads_wallet_management
+CM-MKT-022	by landing	boundary	ZD-C-112/boundary/ZD-S-1071	السلات المتروكة
+CM-MKT-022	by landing	decides	ZD-C-112/decides/ZD-S-1068	100 مكالمة مجانية
 CM-MKT-022	exact	decides	BC-C-015/decides/BC-S-0090	Abandoned cart saver
 CM-MKT-022	exact	decides	SA-C-048/decides/SA-S-2099	استهداف السلات المتروكة
 CM-MKT-022	exact	boundary	SA-C-200/boundary/SA-S-1668	customer.cart.abandoned
@@ -2792,6 +2956,1338 @@ CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5371	remote_logging
 CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5372	RemoteLogger::is_remote_logging_allowed
 CM-OPS-005	exact	boundary	WC-C-037/boundary/WC-S-0446	WC_Log_Handler
 CM-OPS-005	exact	decides	WC-C-037/decides/WC-S-5373	woocommerce_logs_ settings
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2275	order_notification
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2279	order_browse_status_wait_review
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2280	order_browse_status_under_execute
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2281	order_browse_status_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2282	order_browse_status_delivery_start
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2283	order_browse_status_delivery_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2284	order_browse_status_shipping_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2286	order_browse_restore
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2287	order_browse_restoring
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2288	order_browse_status_price_quote
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2483	order_search
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2485	order_show
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2492	order_notification
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2494	order_browse_all
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2495	order_browse_status_wait_paid
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2496	order_browse_status_wait_review
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2497	order_browse_status_under_execute
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2498	order_browse_status_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2499	order_browse_status_delivery_start
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2500	order_browse_status_delivery_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2501	order_browse_status_shipping_complete
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2502	order_browse_status_canceled
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2503	order_browse_restore
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2504	order_browse_restoring
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2505	order_browse_status_price_quote
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-3286	partial-payments
+CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-3361	price-quote
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5917	customer_read_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5921	customer_read_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5922	customer_read_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5923	customer_read_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5930	read_all_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-5931	read_all_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6033	read_marketplace_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6035	read_marketplace_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6036	read_marketplace_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6227	write_marketplace_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6229	write_marketplace_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6251	write_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6252	write_orders
+CM-ORD-001	by landing	boundary	SH-C-054/boundary/SH-S-6253	write_orders
+CM-ORD-001	by landing	decides	SH-C-054/decides/SH-S-5209	product-network-orders
+CM-ORD-001	by landing	decides	SH-C-054/decides/SH-S-6228	write_marketplace_orders
+CM-ORD-001	by landing	boundary	WC-C-033/boundary/WC-S-5366	High-Performance Order Storage
+CM-ORD-001	by landing	boundary	WC-C-033/boundary/WC-S-5367	wc_schedule_pending_batch_process
+CM-ORD-001	by landing	boundary	WC-C-070/boundary/WC-S-0089	wc/v3 > network-orders
+CM-ORD-001	by landing	boundary	WC-C-070/boundary/WC-S-0212	wc-analytics > Orders
+CM-ORD-001	exact	boundary	BC-C-018/boundary/BC-S-0106	store_v2_orders
+CM-ORD-001	exact	boundary	BC-C-018/boundary/BC-S-0107	store/order/created
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1016	Orders
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1018	Order Histories
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1041	Order Items
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1547	orders
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1573	order.coupon.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1574	order.shipping.address.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1581	order.total.price.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1582	order.created
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1583	order.payment.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1584	order.products.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1585	order.customer.updated
+CM-ORD-001	exact	boundary	SA-C-040/boundary/SA-S-1590	order.updated
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-1950	عدد لا محدود من الطلبات
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-1996	إدارة مجموعة طلبات كدفعة واحدة
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2266	order_search
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2268	order_show
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2271	order_browse
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2272	order_management
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2277	order_browse_all
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2488	order_browse
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-2489	order_management
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3265	order-setting
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3266	order-estimate
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3277	custom-orders-list
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3278	order-advance-management
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3284	duplicated-order-check
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3291	show-external-orders
+CM-ORD-001	exact	decides	SA-C-040/decides/SA-S-3296	batch-order-items-save
+CM-ORD-001	exact	boundary	SH-C-054/boundary/SH-S-1034	read_orders
+CM-ORD-001	exact	boundary	SH-C-054/boundary/SH-S-1294	orders/create
+CM-ORD-001	exact	boundary	SH-C-054/boundary/SH-S-2534	dev.ucp.shopping.order
+CM-ORD-001	exact	boundary	SH-C-054/boundary/SH-S-5929	read_all_orders
+CM-ORD-001	exact	boundary	SH-C-054/boundary/SH-S-5932	read_all_orders
+CM-ORD-001	exact	decides	SH-C-054/decides/SH-S-5220	order:write-off:create
+CM-ORD-001	exact	decides	WC-C-033/decides/WC-S-0630	High Performance Order Storage (HPOS)
+CM-ORD-001	exact	decides	WC-C-033/decides/WC-S-5369	woocommerce_custom_orders_table_enabled
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0092	wc/v3 > orders
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0137	wc/v4 > orders
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0164	wc/store/v1 > /order/(?P<id>[\d]+)
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0261	order.created
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0262	order.updated
+CM-ORD-001	exact	boundary	WC-C-070/boundary/WC-S-0666	Orders
+CM-ORD-001	exact	decides	WC-C-070/decides/WC-S-0039	woocommerce (admin menu)
+CM-ORD-001	exact	decides	WC-C-070/decides/WC-S-5406	shop_order (post type)
+CM-ORD-001	exact	boundary	ZD-C-080/boundary/ZD-S-0057	order.create
+CM-ORD-001	exact	boundary	ZD-C-080/boundary/ZD-S-0905	GET /v1/managers/store/orders
+CM-ORD-002	by landing	boundary	SH-C-056/boundary/SH-S-6065	read_order_edits
+CM-ORD-002	by landing	boundary	SH-C-056/boundary/SH-S-6248	write_order_edits
+CM-ORD-002	by landing	boundary	SH-C-056/boundary/SH-S-6249	write_order_edits
+CM-ORD-002	by landing	boundary	SH-C-056/boundary/SH-S-6250	write_order_edits
+CM-ORD-002	exact	boundary	BC-C-018/boundary/BC-S-0106	store_v2_orders
+CM-ORD-002	exact	decides	SA-C-040/decides/SA-S-1990	تعديل الطلب
+CM-ORD-002	exact	decides	SA-C-040/decides/SA-S-2274	order_edit
+CM-ORD-002	exact	decides	SA-C-040/decides/SA-S-2491	order_edit
+CM-ORD-002	exact	decides	SA-C-040/decides/SA-S-3288	customer-editing
+CM-ORD-002	exact	decides	SH-C-054/decides/SH-S-5221	order:edit:shipping-address
+CM-ORD-002	exact	boundary	SH-C-056/boundary/SH-S-0887	orderRequestEdit
+CM-ORD-002	exact	boundary	SH-C-056/boundary/SH-S-1296	orders/edited
+CM-ORD-002	exact	boundary	SH-C-056/boundary/SH-S-6064	read_order_edits
+CM-ORD-002	exact	boundary	SH-C-056/boundary/SH-S-6246	write_order_edits
+CM-ORD-002	exact	decides	SH-C-056/decides/SH-S-5219	order:requested-edit:decline
+CM-ORD-002	exact	decides	SH-C-056/decides/SH-S-6247	write_order_edits
+CM-ORD-002	exact	boundary	WC-C-070/boundary/WC-S-0667	Order actions
+CM-ORD-002	exact	decides	ZD-C-054/decides/ZD-S-1007	اشعارات الدائن والمدين
+CM-ORD-002	exact	decides	ZD-C-080/decides/ZD-S-0518	edit.store.orders
+CM-ORD-003	by landing	boundary	SA-C-041/boundary/SA-S-2672	بإنتظار الدفع
+CM-ORD-003	by landing	boundary	SA-C-041/boundary/SA-S-2673	بإنتظار المراجعة
+CM-ORD-003	by landing	boundary	SA-C-041/boundary/SA-S-2675	تم التنفيذ
+CM-ORD-003	by landing	boundary	SA-C-041/boundary/SA-S-2676	جاري التوصيل
+CM-ORD-003	by landing	boundary	SA-C-041/boundary/SA-S-2677	تم التوصيل
+CM-ORD-003	by landing	decides	SA-C-041/decides/SA-S-2507	order_edit_status_all
+CM-ORD-003	exact	boundary	BC-C-018/boundary/BC-S-0108	store/order/statusUpdated
+CM-ORD-003	exact	decides	SA-C-040/decides/SA-S-2278	order_browse_status_wait_paid
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-1017	Order Status
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-1588	order.status.updated
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-2674	قيد التنفيذ
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-2678	تم الشحن
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-2682	طلب عرض سعر
+CM-ORD-003	exact	boundary	SA-C-041/boundary/SA-S-2683	مكتمل
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-1986	تحديث حالة الطلب
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-1993	تخصيص حالات الطلب
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-2290	order_edit_status_all
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-2292	order_statuses_show
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-2293	order_statuses_edit
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-2509	order_statuses_show
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-2510	order_statuses_edit
+CM-ORD-003	exact	decides	SA-C-041/decides/SA-S-3271	order-custom-statuses
+CM-ORD-003	exact	boundary	WC-C-002/boundary/WC-S-5004	woocommerce_bacs_process_payment_order_status
+CM-ORD-003	exact	boundary	ZD-C-080/boundary/ZD-S-1011	جاهز
+CM-ORD-003	exact	decides	ZD-C-080/decides/ZD-S-0907	Change Order Status
+CM-ORD-003	exact	decides	ZD-C-080/decides/ZD-S-1010	جاري التوصيل
+CM-ORD-004	exact	decides	SA-C-040/decides/SA-S-2285	order_browse_status_canceled
+CM-ORD-004	exact	boundary	SA-C-041/boundary/SA-S-2679	ملغي
+CM-ORD-004	exact	boundary	SA-C-046/boundary/SA-S-1586	order.cancelled
+CM-ORD-004	exact	decides	SA-C-046/decides/SA-S-3290	order-cancellation-reasons
+CM-ORD-004	exact	decides	SA-C-046/decides/SA-S-3292	advanced-order-cancellation-statuses
+CM-ORD-004	exact	decides	WC-C-068/decides/WC-S-5401	woocommerce_hold_stock_minutes
+CM-ORD-004	exact	boundary	ZD-C-054/boundary/ZD-S-0833	GET /v1/managers/store/orders/{order-id}/credit-notes
+CM-ORD-004	exact	decides	ZD-C-054/decides/ZD-S-1007	اشعارات الدائن والمدين
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-1219	draft_orders/create
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-5917	customer_read_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-5982	read_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-5983	read_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-6193	write_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-6194	write_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-6195	write_draft_orders
+CM-ORD-005	by landing	boundary	SH-C-055/boundary/SH-S-6197	write_draft_orders
+CM-ORD-005	exact	boundary	BC-C-018/boundary/BC-S-0107	store/order/created
+CM-ORD-005	exact	decides	SA-C-040/decides/SA-S-1989	إنشاء طلب يدوي
+CM-ORD-005	exact	decides	SA-C-040/decides/SA-S-2273	order_create
+CM-ORD-005	exact	decides	SA-C-040/decides/SA-S-2490	order_create
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-0871	draftOrder
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-0985	write_draft_orders
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-5918	customer_read_draft_orders
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-5981	read_draft_orders
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-5984	read_draft_orders
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-6196	write_draft_orders
+CM-ORD-005	exact	boundary	SH-C-055/boundary/SH-S-7242	ServerIntent create draft_order
+CM-ORD-005	exact	decides	SH-C-055/decides/SH-S-5213	draftOrders
+CM-ORD-005	exact	decides	SH-C-055/decides/SH-S-5214	draftOrders:new
+CM-ORD-005	exact	decides	SH-C-055/decides/SH-S-5364	entitlements.storefront.enabled
+CM-ORD-005	exact	decides	SH-C-055/decides/SH-S-7225	apps.shopify.com/built-in-features/draft-orders
+CM-ORD-005	exact	boundary	WC-C-070/boundary/WC-S-0666	Orders
+CM-ORD-005	exact	boundary	ZD-C-080/boundary/ZD-S-0908	POST /v1/managers/store/drafts
+CM-ORD-005	exact	decides	ZD-C-080/decides/ZD-S-0904	Draft Orders
+CM-ORD-006	exact	boundary	SA-C-122/boundary/SA-S-5052	وسم (عميل غير جاد)
+CM-ORD-006	exact	decides	SA-C-122/decides/SA-S-1971	نظام الحماية من الاحتيال
+CM-ORD-006	exact	decides	SA-C-122/decides/SA-S-2145	قيود الدفع والحماية من الاحتيال
+CM-ORD-006	exact	decides	SA-C-122/decides/SA-S-3054	sift
+CM-ORD-006	exact	boundary	SH-C-059/boundary/SH-S-1301	orders/risk_assessment_changed
+CM-ORD-006	exact	decides	SH-C-059/decides/SH-S-0749	Considerations for using fraud analysis
+CM-ORD-006	exact	decides	SH-C-059/decides/SH-S-0750	Considerations for using fraud analysis
+CM-ORD-006	exact	decides	SH-C-059/decides/SH-S-5163	finance:risk
+CM-ORD-006	exact	decides	SH-C-059/decides/SH-S-7031	Built-in fraud analysis*
+CM-ORD-006	exact	boundary	WC-C-013/boundary/WC-S-0863	How fraud protection works
+CM-ORD-006	exact	decides	WC-C-115/decides/WC-S-0865	Does WooPayments use Stripe Radar?
+CM-ORD-006	exact	decides	ZD-C-007/decides/ZD-S-0374	Growth: All features of Rise package, plus:
+CM-ORD-007	by landing	decides	SA-C-043/decides/SA-S-2506	order_assigned_notification
+CM-ORD-007	exact	decides	SA-C-040/decides/SA-S-2269	order_show_assigned_only
+CM-ORD-007	exact	decides	SA-C-040/decides/SA-S-2486	order_show_assigned_only
+CM-ORD-007	exact	boundary	SA-C-043/boundary/SA-S-1020	Order Assignment
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2080	إسناد الطلبات تلقائيًا للموظفين
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2276	order_assign
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2289	order_assigned_notification
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2430	order_auto_assign_browse
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2431	order_auto_assign_management
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-2493	order_assign
+CM-ORD-007	exact	decides	SA-C-043/decides/SA-S-3272	order-assignment
+CM-ORD-008	exact	boundary	SA-C-044/boundary/SA-S-1021	Order Invoice
+CM-ORD-008	exact	boundary	SA-C-044/boundary/SA-S-1640	invoice.created
+CM-ORD-008	exact	decides	SA-C-044/decides/SA-S-1987	طباعة فاتورة الطلب بالعربي والانجليزي
+CM-ORD-008	exact	decides	SA-C-044/decides/SA-S-3095	order-warehouse-invoice
+CM-ORD-008	exact	decides	SA-C-044/decides/SA-S-3097	order-print-multi-invoice
+CM-ORD-008	exact	decides	SA-C-044/decides/SA-S-3183	control-generate-invoice
+CM-ORD-008	exact	decides	SH-C-055/decides/SH-S-7225	apps.shopify.com/built-in-features/draft-orders
+CM-ORD-008	exact	boundary	ZD-C-052/boundary/ZD-S-0825	نظام ERP
+CM-ORD-008	exact	decides	ZD-C-052/decides/ZD-S-0822	Invoice Printing
+CM-ORD-008	exact	decides	ZD-C-052/decides/ZD-S-0823	إرسال فواتير الطلبات لعملائك
+CM-ORD-008	exact	boundary	ZD-C-054/boundary/ZD-S-0833	GET /v1/managers/store/orders/{order-id}/credit-notes
+CM-ORD-008	exact	boundary	ZD-C-054/boundary/ZD-S-0834	GET /v1/managers/store/orders/{order-id}/credit-notes
+CM-ORD-008	exact	decides	ZD-C-054/decides/ZD-S-1007	اشعارات الدائن والمدين
+CM-ORD-008	exact	decides	ZD-C-054/decides/ZD-S-1008	إعدادات الضريبة المضافة
+CM-ORD-009	exact	decides	SA-C-040/decides/SA-S-1988	طباعة ملخص الطلب
+CM-ORD-009	exact	decides	SA-C-040/decides/SA-S-3283	order-summary
+CM-ORD-009	exact	boundary	SH-C-061/boundary/SH-S-1036	write_packing_slip_templates
+CM-ORD-009	exact	decides	SH-C-061/decides/SH-S-5261	document-template-editor
+CM-ORD-009	exact	decides	SH-C-061/decides/SH-S-5794	features.fulfillmentBatchingEligible
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-1985	استقبال الطلبات
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-1991	تعيين أوقات استقبال الطلبات
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-1992	تعيين الحد اليومي للطلبات
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-3263	receiving-orders-times
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-3270	receiving-orders-limit
+CM-ORD-010	exact	decides	SA-C-047/decides/SA-S-3279	order-count-time
+CM-ORD-011	exact	decides	SA-C-040/decides/SA-S-3273	order-auto-tagging
+CM-ORD-011	exact	decides	ZD-C-080/decides/ZD-S-0903	Order Tags
+CM-ORD-012	exact	boundary	SA-C-040/boundary/SA-S-1589	order.deleted
+CM-ORD-012	exact	decides	SA-C-040/decides/SA-S-2267	order_delete
+CM-ORD-012	exact	decides	SA-C-040/decides/SA-S-2390	restore_data_management
+CM-ORD-012	exact	decides	SA-C-040/decides/SA-S-2484	order_delete
+CM-ORD-012	exact	decides	SA-C-040/decides/SA-S-2607	restore_data_management
+CM-ORD-012	exact	decides	SA-C-040/decides/SA-S-3345	restore-data
+CM-ORD-012	exact	boundary	SA-C-041/boundary/SA-S-2671	محذوف
+CM-ORD-012	exact	boundary	WC-C-070/boundary/WC-S-0263	order.deleted
+CM-ORD-012	exact	boundary	WC-C-070/boundary/WC-S-0264	order.restored
+CM-ORD-012	exact	boundary	WC-C-070/boundary/WC-S-0666	Orders
+CM-ORD-013	exact	decides	SA-C-040/decides/SA-S-2129	إضافة تعليق على الطلب
+CM-ORD-013	exact	decides	SA-C-040/decides/SA-S-3262	order-comment
+CM-ORD-013	exact	boundary	WC-C-070/boundary/WC-S-0090	wc/v3 > order-notes
+CM-ORD-013	exact	boundary	WC-C-070/boundary/WC-S-0134	wc/v4 > order-notes
+CM-ORD-013	exact	boundary	WC-C-070/boundary/WC-S-0668	Order notes
+CM-ORD-013	exact	boundary	WC-C-091/boundary/WC-S-5443	Review a withdrawal request
+CM-ORD-013	exact	boundary	ZD-C-061/boundary/ZD-S-0852	Merchant APIs > Orders [Add Order Comment]
+CM-ORD-014	exact	decides	SA-C-040/decides/SA-S-2128	تكرار الطلب
+CM-ORD-014	exact	decides	SA-C-040/decides/SA-S-3280	order-reorder
+CM-ORD-015	exact	boundary	SH-C-079/boundary/SH-S-0386	help.shopify.com/en/manual/payments/manual-payments.md
+CM-ORD-015	exact	boundary	SH-C-084/boundary/SH-S-1299	orders/paid
+CM-ORD-015	exact	boundary	ZD-C-028/boundary/ZD-S-0725	order.payment_status.update
+CM-ORD-015	exact	decides	ZD-C-028/decides/ZD-S-0723	Payment Status
+CM-ORD-015	exact	decides	ZD-C-028/decides/ZD-S-0724	Bulk Payment Status Update
+CM-PAY-001	by landing	boundary	WC-C-004/boundary/WC-S-5012	woocommerce_admin_payment_gateway_suggestion_specs
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5014	PaymentsExtensionSuggestions::get_country_extensions
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5015	PaymentsExtensionSuggestions::with_store_state_details
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5016	$country_extensions['CA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5017	$country_extensions['CA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5018	$country_extensions['PM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5019	$country_extensions['US']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5021	$country_extensions['UM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5022	$country_extensions['GB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5023	$country_extensions['GB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5024	$country_extensions['GB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5025	$country_extensions['AX']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5026	$country_extensions['AL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5027	$country_extensions['AD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5028	$country_extensions['AM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5029	$country_extensions['AT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5030	$country_extensions['AT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5031	$country_extensions['BY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5032	$country_extensions['BE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5033	$country_extensions['BE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5034	$country_extensions['BA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5035	$country_extensions['BV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5036	$country_extensions['BG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5037	$country_extensions['HR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5038	$country_extensions['HR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5039	$country_extensions['CY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5040	$country_extensions['CY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5041	$country_extensions['CZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5042	$country_extensions['DK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5043	$country_extensions['DK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5044	$country_extensions['EE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5045	$country_extensions['FI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5046	$country_extensions['FI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5047	$country_extensions['FO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5048	$country_extensions['FR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5049	$country_extensions['FR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5050	$country_extensions['FR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5051	$country_extensions['PF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5052	$country_extensions['GI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5053	$country_extensions['DE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5054	$country_extensions['DE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5055	$country_extensions['GR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5056	$country_extensions['GL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5057	$country_extensions['GG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5058	$country_extensions['VA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5059	$country_extensions['HU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5060	$country_extensions['IS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5061	$country_extensions['IE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5062	$country_extensions['IE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5063	$country_extensions['IM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5064	$country_extensions['IT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5065	$country_extensions['JE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5066	$country_extensions['LV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5067	$country_extensions['LI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5068	$country_extensions['LT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5069	$country_extensions['LU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5070	$country_extensions['MT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5071	$country_extensions['MD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5072	$country_extensions['MC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5073	$country_extensions['ME']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5074	$country_extensions['NL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5075	$country_extensions['MK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5076	$country_extensions['NO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5077	$country_extensions['PL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5078	$country_extensions['PT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5079	$country_extensions['RO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5080	$country_extensions['RU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5081	$country_extensions['SM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5082	$country_extensions['RS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5083	$country_extensions['SK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5084	$country_extensions['SI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5085	$country_extensions['ES']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5086	$country_extensions['ES']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5087	$country_extensions['SJ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5088	$country_extensions['SE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5089	$country_extensions['CH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5090	$country_extensions['TR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5091	$country_extensions['UA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5092	$country_extensions['AG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5093	$country_extensions['AI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5094	$country_extensions['AR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5095	$country_extensions['AR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5096	$country_extensions['AW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5097	$country_extensions['BS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5098	$country_extensions['BB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5099	$country_extensions['BZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5100	$country_extensions['BM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5101	$country_extensions['BO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5102	$country_extensions['BQ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5103	$country_extensions['BR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5104	$country_extensions['BR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5105	$country_extensions['VG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5106	$country_extensions['KY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5107	$country_extensions['CL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5108	$country_extensions['CL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5109	$country_extensions['CO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5110	$country_extensions['CO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5111	$country_extensions['CR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5112	$country_extensions['CU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5113	$country_extensions['CW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5114	$country_extensions['DM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5115	$country_extensions['DO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5116	$country_extensions['EC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5117	$country_extensions['SV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5118	$country_extensions['FK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5119	$country_extensions['GF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5120	$country_extensions['GD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5121	$country_extensions['GP']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5122	$country_extensions['GT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5123	$country_extensions['GY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5124	$country_extensions['HT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5125	$country_extensions['HN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5126	$country_extensions['JM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5127	$country_extensions['MQ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5128	$country_extensions['MX']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5129	$country_extensions['MX']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5130	$country_extensions['MS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5131	$country_extensions['NI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5132	$country_extensions['PA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5133	$country_extensions['PY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5134	$country_extensions['PE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5135	$country_extensions['PE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5136	$country_extensions['PR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5137	$country_extensions['BL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5138	$country_extensions['KN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5139	$country_extensions['LC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5140	$country_extensions['MF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5141	$country_extensions['VC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5142	$country_extensions['SX']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5143	$country_extensions['GS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5144	$country_extensions['SR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5145	$country_extensions['TT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5146	$country_extensions['TC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5147	$country_extensions['UY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5148	$country_extensions['UY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5149	$country_extensions['VI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5150	$country_extensions['VE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5151	$country_extensions['AQ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5152	$country_extensions['AS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5153	$country_extensions['AU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5154	$country_extensions['AU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5155	$country_extensions['AU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5156	$country_extensions['BD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5157	$country_extensions['IO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5158	$country_extensions['BN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5159	$country_extensions['KH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5160	$country_extensions['CN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5161	$country_extensions['CX']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5162	$country_extensions['CC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5163	$country_extensions['CK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5164	$country_extensions['FJ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5165	$country_extensions['GU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5166	$country_extensions['HM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5167	$country_extensions['HK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5168	$country_extensions['IN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5169	$country_extensions['ID']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5170	$country_extensions['JP']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5171	$country_extensions['JP']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5172	$country_extensions['KI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5173	$country_extensions['LA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5174	$country_extensions['MO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5175	$country_extensions['MY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5176	$country_extensions['MV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5177	$country_extensions['MH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5178	$country_extensions['FM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5179	$country_extensions['MN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5180	$country_extensions['MM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5181	$country_extensions['NR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5182	$country_extensions['NP']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5183	$country_extensions['NC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5184	$country_extensions['NZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5185	$country_extensions['NZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5186	$country_extensions['NU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5187	$country_extensions['NF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5188	$country_extensions['MP']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5189	$country_extensions['PW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5190	$country_extensions['PG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5191	$country_extensions['PH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5192	$country_extensions['PN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5193	$country_extensions['WS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5194	$country_extensions['SG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5195	$country_extensions['SB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5196	$country_extensions['LK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5197	$country_extensions['KR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5198	$country_extensions['TW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5199	$country_extensions['TH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5200	$country_extensions['TL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5201	$country_extensions['TK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5202	$country_extensions['TO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5203	$country_extensions['TV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5204	$country_extensions['VU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5205	$country_extensions['VN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5206	$country_extensions['WF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5207	$country_extensions['DZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5208	$country_extensions['AO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5209	$country_extensions['BJ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5210	$country_extensions['BW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5211	$country_extensions['BF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5212	$country_extensions['BI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5213	$country_extensions['CV']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5214	$country_extensions['CM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5215	$country_extensions['CF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5216	$country_extensions['TD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5217	$country_extensions['KM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5218	$country_extensions['CG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5219	$country_extensions['CI']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5220	$country_extensions['EG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5221	$country_extensions['CD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5222	$country_extensions['DJ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5223	$country_extensions['GQ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5224	$country_extensions['ER']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5225	$country_extensions['SZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5226	$country_extensions['ET']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5227	$country_extensions['TF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5228	$country_extensions['GA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5229	$country_extensions['GH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5230	$country_extensions['GM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5231	$country_extensions['GN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5232	$country_extensions['GW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5233	$country_extensions['KE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5234	$country_extensions['LS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5235	$country_extensions['LR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5236	$country_extensions['LY']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5237	$country_extensions['MG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5238	$country_extensions['MW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5239	$country_extensions['ML']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5240	$country_extensions['MR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5241	$country_extensions['MU']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5242	$country_extensions['YT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5243	$country_extensions['MA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5244	$country_extensions['MZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5245	$country_extensions['NA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5246	$country_extensions['NE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5247	$country_extensions['NG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5248	$country_extensions['RE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5249	$country_extensions['RW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5250	$country_extensions['SH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5251	$country_extensions['ST']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5252	$country_extensions['SN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5253	$country_extensions['SC']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5254	$country_extensions['SL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5255	$country_extensions['SO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5256	$country_extensions['ZA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5257	$country_extensions['SS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5258	$country_extensions['TZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5259	$country_extensions['TG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5260	$country_extensions['TN']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5261	$country_extensions['UG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5262	$country_extensions['EH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5263	$country_extensions['ZM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5264	$country_extensions['ZW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5265	$country_extensions['AF']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5266	$country_extensions['AZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5267	$country_extensions['BH']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5268	$country_extensions['BT']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5269	$country_extensions['GE']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5270	$country_extensions['IR']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5271	$country_extensions['IQ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5272	$country_extensions['IL']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5273	$country_extensions['JO']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5274	$country_extensions['KZ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5275	$country_extensions['KW']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5276	$country_extensions['KG']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5277	$country_extensions['LB']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5278	$country_extensions['OM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5279	$country_extensions['PK']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5280	$country_extensions['PS']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5281	$country_extensions['QA']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5283	$country_extensions['SD']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5284	$country_extensions['TJ']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5285	$country_extensions['TM']
+CM-PAY-001	by landing	decides	WC-C-004/decides/WC-S-5287	$country_extensions['UZ']
+CM-PAY-001	exact	boundary	BC-C-023/boundary/BC-S-0133	store_payments_methods_read
+CM-PAY-001	exact	decides	BC-C-023/decides/BC-S-0132	Payment Methods V3
+CM-PAY-001	exact	decides	BC-C-031/decides/BC-S-0195	Company payment methods
+CM-PAY-001	exact	boundary	SA-C-110/boundary/SA-S-1059	Payments
+CM-PAY-001	exact	boundary	SA-C-110/boundary/SA-S-1554	payments
+CM-PAY-001	exact	decides	SA-C-110/decides/SA-S-2106	تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها
+CM-PAY-001	exact	decides	SA-C-110/decides/SA-S-2433	payment_method_browse
+CM-PAY-001	exact	decides	SA-C-110/decides/SA-S-2434	payment_methods_activation
+CM-PAY-001	exact	decides	SA-C-110/decides/SA-S-2643	payment_method_browse
+CM-PAY-001	exact	decides	SA-C-110/decides/SA-S-2644	payment_methods_activation
+CM-PAY-001	exact	decides	SA-C-119/decides/SA-S-1966	مكافأة الراجحي
+CM-PAY-001	exact	decides	SA-C-119/decides/SA-S-3140	mokafaa-alrajhi
+CM-PAY-001	exact	boundary	SH-C-062/boundary/SH-S-7460	PaymentSettings
+CM-PAY-001	exact	decides	SH-C-062/decides/SH-S-0309	help.shopify.com/en/manual/payments/getting-paid.md
+CM-PAY-001	exact	decides	SH-C-062/decides/SH-S-0319	help.shopify.com/en/manual/payments.md
+CM-PAY-001	exact	decides	SH-C-062/decides/SH-S-0374	help.shopify.com/en/manual/payments/third-party-providers.md
+CM-PAY-001	exact	decides	SH-C-062/decides/SH-S-0584	help.shopify.com/en/manual/payments/third-party-providers/payment-gateway-availability.md
+CM-PAY-001	exact	decides	SH-C-062/decides/SH-S-5246	payments:settings:index
+CM-PAY-001	exact	boundary	WC-C-001/boundary/WC-S-0123	wc/v3 > payment-gateways
+CM-PAY-001	exact	boundary	WC-C-001/boundary/WC-S-0144	wc/v4 > settings-payment-gateways
+CM-PAY-001	exact	boundary	WC-C-001/boundary/WC-S-0686	Payment gateways
+CM-PAY-001	exact	boundary	WC-C-004/boundary/WC-S-0193	wc-admin > payment-gateway-suggestions (PaymentGatewaySuggestions)
+CM-PAY-001	exact	boundary	WC-C-004/boundary/WC-S-5011	wccom/payment-gateway-suggestions/2.0/suggestions.json
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-0618	PaymentsExtensionSuggestions::$country_extensions
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-0619	PaymentsExtensionSuggestions::$country_extensions
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5009	woocommerce_show_marketplace_suggestions
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5010	woocommerce_show_marketplace_suggestions
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5013	PaymentsExtensionSuggestions::get_country_extensions
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5282	$country_extensions['SA']
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5286	$country_extensions['AE']
+CM-PAY-001	exact	decides	WC-C-004/decides/WC-S-5288	$country_extensions['YE']
+CM-PAY-001	exact	decides	ZD-C-011/decides/ZD-S-0610	الاعدادات > طرق الدفع
+CM-PAY-001	exact	boundary	ZD-C-012/boundary/ZD-S-0119	GET /v1/managers/store/payment-options
+CM-PAY-001	exact	boundary	ZD-C-012/boundary/ZD-S-0619	GET /v1/managers/store/payment-methods
+CM-PAY-001	exact	boundary	ZD-C-012/boundary/ZD-S-0620	POS payment methods
+CM-PAY-001	exact	decides	ZD-C-012/decides/ZD-S-0616	Various Payment Methods
+CM-PAY-001	exact	decides	ZD-C-012/decides/ZD-S-0617	Advanced Payment Methods
+CM-PAY-001	exact	decides	ZD-C-012/decides/ZD-S-0618	طرق الدفع
+CM-PAY-002	exact	boundary	BC-C-025/boundary/BC-S-0147	Configure
+CM-PAY-002	exact	boundary	BC-C-025/boundary/BC-S-0148	BigCommerce Payments
+CM-PAY-002	exact	decides	BC-C-025/decides/BC-S-0143	BigCommerce Payments availability
+CM-PAY-002	exact	decides	BC-C-025/decides/BC-S-0144	BigCommerce Retail Plan
+CM-PAY-002	exact	boundary	SA-C-110/boundary/SA-S-1583	order.payment.updated
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0051	أولاً- تفعيل المدفوعات الإلكترونية
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0053	متطلبات تفعيل مدفوعات سلة
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0055	متطلبات تفعيل مدفوعات سلة
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0060	الأسئلة الشائعة
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0065	كي نت (KNET)
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0066	متطلبات تفعيل مدفوعات سلة
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0068	سياسة البيع
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-0107	salla_payments.trial.note
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-1953	تفعيل الدفع الإلكتروني
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-1959	الدفع عبر مدى
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-1960	الدفع عبر البطاقة الائتمانية (فيزا وماستر كارد)
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-3150	mada
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-3151	credit_card
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-3303	salla-pay-basic-trial
+CM-PAY-002	exact	decides	SA-C-110/decides/SA-S-3350	restriction-online-payment-activation
+CM-PAY-002	exact	boundary	SA-C-172/boundary/SA-S-0068	سياسة البيع
+CM-PAY-002	exact	boundary	SH-C-063/boundary/SH-S-0788	Shopify Payments
+CM-PAY-002	exact	boundary	SH-C-063/boundary/SH-S-1068	read_shopify_payments_accounts
+CM-PAY-002	exact	boundary	SH-C-063/boundary/SH-S-6118	read_shopify_payments
+CM-PAY-002	exact	boundary	SH-C-063/boundary/SH-S-6119	read_shopify_payments
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0088	Part I, A. Your Role
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0107	Part I, B. Designated Country
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0124	www.shopify.com/legal/terms-shopify-payments
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0323	help.shopify.com/en/manual/payments/shopify-payments/supported-countries.md
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0325	help.shopify.com/en/manual/payments/shopify-payments/onboarding/eligibility.md
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0326	eligibility criteria
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0327	Prohibited businesses and products
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0328	Prohibited businesses and products
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-0369	Switch to Shopify Payments, staff permissions note
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-5080	payments:settings:setup
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-5092	payments:settings:shopify-payments-accounts
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-5248	payments:settings:shopify-payments
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-5250	payments:settings:worldfirst-setup
+CM-PAY-002	exact	decides	SH-C-063/decides/SH-S-7020	Shopify Payments
+CM-PAY-002	exact	decides	SH-C-173/decides/SH-S-0108	Part I, B. Prohibited and Restricted Businesses
+CM-PAY-002	exact	decides	SH-C-173/decides/SH-S-0109	Part I, B. Prohibited and Restricted Businesses
+CM-PAY-002	exact	decides	SH-C-173/decides/SH-S-0327	Prohibited businesses and products
+CM-PAY-002	exact	decides	SH-C-173/decides/SH-S-0328	Prohibited businesses and products
+CM-PAY-002	exact	decides	SH-C-173/decides/SH-S-0329	Prohibited businesses and products, high-level categories
+CM-PAY-002	exact	boundary	WC-C-006/boundary/WC-S-0506	Access to the Stripe dashboard
+CM-PAY-002	exact	boundary	WC-C-006/boundary/WC-S-0555	Connecting to WordPress.com with WooPayments
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0510	WooPayments in Your Country
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0511	Supported countries
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0512	Supported countries
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0513	Restrictions on account types
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0515	Other countries
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-0590	readme.txt: ALL THE TOOLS YOU NEED TO SELL
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-5290	Supported countries
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-5291	Outlying territories of the U.S.
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-5292	Outlying territories of the UK
+CM-PAY-002	exact	decides	WC-C-010/decides/WC-S-5293	Outlying territories of the Netherlands
+CM-PAY-002	exact	boundary	WC-C-011/boundary/WC-S-5295	Restricted accounts
+CM-PAY-002	exact	decides	WC-C-011/decides/WC-S-0478	8. j. More on WooPayments Specifically
+CM-PAY-002	exact	decides	WC-C-011/decides/WC-S-0518	Restricted accounts
+CM-PAY-002	exact	decides	WC-C-011/decides/WC-S-0523	What businesses and products are prohibited or restricted on WooPayments?
+CM-PAY-002	exact	decides	WC-C-011/decides/WC-S-0524	What businesses and products are prohibited or restricted on WooPayments?
+CM-PAY-002	exact	decides	WC-C-011/decides/WC-S-0525	Alcohol and CBD
+CM-PAY-002	exact	decides	WC-C-048/decides/WC-S-0472	8. j. Ecommerce Services: Prohibited Uses
+CM-PAY-002	exact	decides	ZD-C-001/decides/ZD-S-0361	Rise (package_code rise): All features of Starter package, plus:
+CM-PAY-002	exact	decides	ZD-C-001/decides/ZD-S-0529	الشروط العامة
+CM-PAY-002	exact	decides	ZD-C-001/decides/ZD-S-0530	FAQ: تفعيل زد باي من خارج السعودية
+CM-PAY-002	exact	boundary	ZD-C-005/boundary/ZD-S-0569	GET /v1/managers/store/payment-options (third_payment_read)
+CM-PAY-002	exact	decides	ZD-C-007/decides/ZD-S-0581	توصية مزودي الخدمة
+CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0766	البلدان الخاضعة للعقوبات الدولية
+CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0767	قوائم العقوبات
+CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0768	البلدان الخاضعة للعقوبات الدولية (الكويت)
+CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0770	تحديث الأنشطة المحظورة
+CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0771	Prohibited Activities
+CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0108	common.verification_required_tooltip
+CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0132	1. ادخل بيانات مالك المتجر بدقة
+CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0137	توثيق متجرك في الإمارات
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0133	3. حدّد نوع الكيان
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0134	ثالثاً: مرحلة ما بعد إرسال طلب التوثيق
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0136	الأسئلة الشائعة
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0138	ماذا تجهّز قبل البدء؟
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-0142	ثانياً: نظرة عامة عن متجرك
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-2410	business_certificate_management
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-2627	business_certificate_management
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-3101	kyc_new_workflow
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-3184	wathq-v6
+CM-PAY-003	exact	decides	SA-C-006/decides/SA-S-3185	sbc-registration
+CM-PAY-003	exact	decides	SA-C-110/decides/SA-S-0054	متطلبات تفعيل مدفوعات سلة
+CM-PAY-003	exact	decides	SA-C-110/decides/SA-S-0056	متطلبات تفعيل مدفوعات سلة
+CM-PAY-003	exact	decides	SH-C-063/decides/SH-S-6120	read_shopify_payments
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-1122	read_financial_kyc_information
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-1226	finance_kyc_information/update
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-5990	read_financial_kyc_information
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-5991	read_financial_kyc_information
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-5992	read_financial_kyc_information
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-5993	read_financial_kyc_information
+CM-PAY-003	exact	boundary	SH-C-068/boundary/SH-S-5994	read_financial_kyc_information
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0098	Part I, A. Privacy
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0106	Part I, B. Verification and Underwriting
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0132	Part I, A. Onboarding, KYC and underwriting
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0331	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0332	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0337	Review criteria, Transaction and operational patterns
+CM-PAY-003	exact	decides	SH-C-068/decides/SH-S-0357	Account holds after receiving orders
+CM-PAY-003	exact	decides	WC-C-009/decides/WC-S-0516	“Know your customer”
+CM-PAY-003	exact	decides	WC-C-009/decides/WC-S-0558	How do I delete my WooPayments account?
+CM-PAY-003	exact	boundary	ZD-C-001/boundary/ZD-S-0534	Link Merchant webhook (merchant_linked)
+CM-PAY-003	exact	boundary	ZD-C-001/boundary/ZD-S-0535	storeId
+CM-PAY-003	exact	decides	ZD-C-001/decides/ZD-S-0528	متطلبات تفعيل الدفع الالكتروني
+CM-PAY-003	exact	decides	ZD-C-001/decides/ZD-S-0529	الشروط العامة
+CM-PAY-003	exact	decides	ZD-C-001/decides/ZD-S-0531	ملاحظة: منتج منشور
+CM-PAY-003	exact	decides	ZD-C-009/decides/ZD-S-0591	طلب التحقق
+CM-PAY-003	exact	boundary	ZD-C-035/boundary/ZD-S-0757	GET /v1/managers/account/store/business (third_store_business_read)
+CM-PAY-003	exact	decides	ZD-C-038/decides/ZD-S-0775	شرط نفاذ
+CM-PAY-004	exact	decides	SA-C-177/decides/SA-S-0081	عقد خدمات الدفع
+CM-PAY-004	exact	decides	SA-C-177/decides/SA-S-0088	كيف تعمل التحويلات؟
+CM-PAY-004	exact	decides	SH-C-062/decides/SH-S-0384	Stripe availability in Shopify Payments regions
+CM-PAY-004	exact	boundary	SH-C-063/boundary/SH-S-0144	www.shopify.com/legal/processor-list
+CM-PAY-004	exact	boundary	SH-C-064/boundary/SH-S-0079	Part I, A. The Shopify Payments Service, Our Role
+CM-PAY-004	exact	boundary	SH-C-064/boundary/SH-S-0105	Part I, B. Registration
+CM-PAY-004	exact	boundary	SH-C-064/boundary/SH-S-0144	www.shopify.com/legal/processor-list
+CM-PAY-004	exact	boundary	SH-C-064/boundary/SH-S-0451	10 Tips for Building Resilient Payment Systems, 2. Install Circuit Breakers
+CM-PAY-004	exact	boundary	SH-C-064/boundary/SH-S-0453	10 Tips for Building Resilient Payment Systems, idempotency
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0084	Part I, A. The Payment Processor
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0085	Part I, A. The Payment Processor
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0116	Part I, D. Termination
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0117	Part I, D. Termination
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0143	www.shopify.com/legal/processor-list
+CM-PAY-004	exact	decides	SH-C-064/decides/SH-S-0389	help.shopify.com/en/manual/payments/payment-authorization.md
+CM-PAY-004	exact	decides	SH-C-065/decides/SH-S-0106	Part I, B. Verification and Underwriting
+CM-PAY-004	exact	decides	SH-C-065/decides/SH-S-0123	Part I, D. Disputes, Choice of Law, Jurisdiction, Venue and Miscellaneous
+CM-PAY-004	exact	boundary	SH-C-066/boundary/SH-S-0081	Part I, A. The Shopify Payments Service
+CM-PAY-004	exact	decides	SH-C-066/decides/SH-S-0135	Part I, D. Termination and suspension
+CM-PAY-004	exact	decides	SH-C-066/decides/SH-S-0136	Part I, D. Assignment and Amendment
+CM-PAY-004	exact	decides	SH-C-066/decides/SH-S-0137	Part I, D. Assignment and Amendment
+CM-PAY-004	exact	decides	SH-C-067/decides/SH-S-7264	Regulated Payment Services
+CM-PAY-004	exact	decides	WC-C-001/decides/WC-S-0651	8. j. Ecommerce Services: Third-Party Services
+CM-PAY-004	exact	boundary	WC-C-006/boundary/WC-S-0504	WooPayments built in partnership with Stripe
+CM-PAY-004	exact	boundary	WC-C-048/boundary/WC-S-0506	Access to the Stripe dashboard
+CM-PAY-004	exact	boundary	WC-C-048/boundary/WC-S-5311	Updating account information
+CM-PAY-004	exact	decides	WC-C-048/decides/WC-S-0477	8. j. More on WooPayments Specifically
+CM-PAY-004	exact	decides	WC-C-048/decides/WC-S-0508	Stripe agreement updates
+CM-PAY-004	exact	decides	WC-C-048/decides/WC-S-0509	Stripe agreement updates
+CM-PAY-004	exact	decides	WC-C-048/decides/WC-S-0873	Can I use my existing Stripe account with WooPayments?
+CM-PAY-004	exact	decides	WC-C-048/decides/WC-S-5312	Existing Stripe Accounts
+CM-PAY-004	exact	boundary	ZD-C-005/boundary/ZD-S-0570	supportedNetworks
+CM-PAY-004	exact	boundary	ZD-C-009/boundary/ZD-S-0595	Open APIs integration model
+CM-PAY-004	exact	decides	ZD-C-009/decides/ZD-S-0590	المنتجات الرقمية
+CM-PAY-004	exact	boundary	ZD-C-010/boundary/ZD-S-0600	Direct payment
+CM-PAY-004	exact	boundary	ZD-C-010/boundary/ZD-S-0601	/api/webhook/v1/thirdpartywebhook
+CM-PAY-004	exact	boundary	ZD-C-010/boundary/ZD-S-0602	domain association file
+CM-PAY-004	exact	boundary	ZD-C-010/boundary/ZD-S-0603	execute payment
+CM-PAY-004	exact	decides	ZD-C-010/decides/ZD-S-0598	Direct payment; Embedded payment
+CM-PAY-004	exact	decides	ZD-C-010/decides/ZD-S-0599	thirdPartyProviderId
+CM-PAY-005	exact	boundary	SA-C-111/boundary/SA-S-0050	الأسئلة الشائعة > المدفوعات الإلكترونية > كيفية عملها
+CM-PAY-005	exact	boundary	SA-C-111/boundary/SA-S-0076	تعرّف على دورة تحويل المدفوعات الإلكترونية
+CM-PAY-005	exact	boundary	SA-C-111/boundary/SA-S-0079	كيف تتابع مستحقاتك؟
+CM-PAY-005	exact	boundary	SA-C-111/boundary/SA-S-0083	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0071	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0072	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0073	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0077	دورة تحويل المدفوعات الإلكترونية
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0078	🧭 خطوات إعداد دورة تحويل المدفوعات الإلكترونية
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0080	تحويلات مدفوعات سلة والتسويات في الإمارات
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0086	تحويلات مدفوعات سلة والتسويات في الكويت
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0087	دورة التحويل والحد الأدنى
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0101	billing_cycle.locked_alert.desc
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0102	billing_cycle.alert.desc
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0103	billing_cycle.section.desc
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-0202	ضغطة زر تربطك بالعالم وتيسِّر تعاملاتك المالية
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-2063	سجل المدفوعات الإلكترونية
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-2065	سجل المدفوعات الإلكترونية
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-2193	ابق متصلًا بالعالم مع خيارات الشحن المتنوعة في سلة، ودعم جميع وسائل الدفع الإلكتروني، وإيداع المبيعات كل 24 ساعة، لتجارة أيسر ونمو أسرع.
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-2436	list_epayments
+CM-PAY-005	exact	decides	SA-C-111/decides/SA-S-2646	list_epayments
+CM-PAY-005	exact	boundary	SA-C-112/boundary/SA-S-0085	الحساب البنكي المستخدم لاستلام التحويلات
+CM-PAY-005	exact	boundary	SA-C-112/boundary/SA-S-0094	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-112/decides/SA-S-0098	تحديث الحساب البنكي لاستلام مستحقاتك من سلة
+CM-PAY-005	exact	decides	SA-C-112/decides/SA-S-0135	الخطوة 3: المعلومات البنكية
+CM-PAY-005	exact	decides	SA-C-112/decides/SA-S-0139	الخطوة 3: المعلومات البنكية
+CM-PAY-005	exact	decides	SA-C-112/decides/SA-S-0140	الأسئلة الشائعة
+CM-PAY-005	exact	decides	SA-C-164/decides/SA-S-0067	ثانياً: تخصيص المدفوعات الإلكترونية > دورة التحويل
+CM-PAY-005	exact	decides	SA-C-164/decides/SA-S-0135	الخطوة 3: المعلومات البنكية
+CM-PAY-005	exact	decides	SA-C-164/decides/SA-S-0139	الخطوة 3: المعلومات البنكية
+CM-PAY-005	exact	boundary	SH-C-063/boundary/SH-S-6121	read_shopify_payments
+CM-PAY-005	exact	boundary	SH-C-065/boundary/SH-S-1070	read_shopify_payments_bank_accounts
+CM-PAY-005	exact	boundary	SH-C-065/boundary/SH-S-6122	read_shopify_payments_bank_accounts
+CM-PAY-005	exact	boundary	SH-C-069/boundary/SH-S-1069	read_shopify_payments_payouts
+CM-PAY-005	exact	boundary	SH-C-069/boundary/SH-S-6121	read_shopify_payments_payouts
+CM-PAY-005	exact	boundary	SH-C-069/boundary/SH-S-6122	read_shopify_payments_bank_accounts
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0314	How often you get paid with Shopify Payments
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0339	help.shopify.com/en/manual/payments/shopify-payments/payouts.md
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0340	help.shopify.com/en/manual/payments/shopify-payments/payouts/payout-timing.md
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0342	Payout schedule
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0345	Troubleshooting payout delays, Payout destination change
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0347	Payouts with Shopify Balance
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0365	Requirements for Multi-Currency Payouts, Plan requirements
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-0367	help.shopify.com/en/manual/payments/shopify-payments/onboarding/bank-account-requirements.md
+CM-PAY-005	exact	decides	SH-C-069/decides/SH-S-5165	finance:payout-reconciliation-report
+CM-PAY-005	exact	decides	WC-C-007/decides/WC-S-0530	Debit cards outside the U.S.
+CM-PAY-005	exact	decides	WC-C-007/decides/WC-S-0531	Payout timing
+CM-PAY-005	exact	decides	WC-C-007/decides/WC-S-0532	Debit cards outside the U.S.
+CM-PAY-005	exact	decides	WC-C-007/decides/WC-S-0533	“Payouts are temporarily suspended”
+CM-PAY-005	exact	decides	WC-C-007/decides/WC-S-0536	Eligibility
+CM-PAY-005	exact	boundary	WC-C-012/boundary/WC-S-0534	Paused to recover a negative balance
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0546	تحصيل المبالغ
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0547	تحصيل المبالغ: الحد الأدنى
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0548	رسوم الإيداع
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0549	أيام التسوية
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0550	تحصيل المبالغ
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0551	تحصيل المبالغ: الحد الأدنى
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0552	إيداع المبالغ
+CM-PAY-005	exact	decides	ZD-C-003/decides/ZD-S-0553	Hassle-Free Fund Collection
+CM-PAY-005	exact	decides	ZD-C-004/decides/ZD-S-0558	اختيار الحساب البنكي
+CM-PAY-005	exact	decides	ZD-C-004/decides/ZD-S-0559	مطابقة الهوية
+CM-PAY-005	exact	decides	ZD-C-004/decides/ZD-S-0560	البنوك المدعومة
+CM-PAY-005	exact	decides	ZD-C-004/decides/ZD-S-0561	اختيار البنك
+CM-PAY-005	exact	boundary	ZD-C-024/boundary/ZD-S-0710	فاتورة بالمبالغ المستحقة
+CM-PAY-005	exact	boundary	ZD-C-024/boundary/ZD-S-0711	فواتير ضريبية B2B
+CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0704	تحويل المبالغ المستحقة
+CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0705	النسبة المقتطعة
+CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0706	كل يوم ثلاثاء
+CM-PAY-005	exact	decides	ZD-C-024/decides/ZD-S-0707	بشكل شهري
+CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0112	Part I, C. Reserves
+CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0332	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0355	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	decides	SH-C-065/decides/SH-S-0356	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	decides	SH-C-068/decides/SH-S-0332	help.shopify.com/en/manual/payments/shopify-payments/onboarding/acceptable-business-practices.md
+CM-PAY-006	exact	boundary	SH-C-070/boundary/SH-S-0349	Understanding reserves in Shopify Payments
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0112	Part I, C. Reserves
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0348	Understanding reserves in Shopify Payments
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0351	Extending, appealing, and removing reserves
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0354	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0355	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	decides	SH-C-070/decides/SH-S-0356	Reasons for account holds, Creditor or legal action
+CM-PAY-006	exact	boundary	WC-C-008/boundary/WC-S-0528	WooPayments: Reserves (NOTE)
+CM-PAY-006	exact	boundary	WC-C-008/boundary/WC-S-0856	What types of reserves are there?
+CM-PAY-006	exact	decides	WC-C-008/decides/WC-S-0519	Reserves
+CM-PAY-006	exact	decides	WC-C-008/decides/WC-S-0526	WooPayments: Reserves
+CM-PAY-006	exact	decides	ZD-C-007/decides/ZD-S-0581	توصية مزودي الخدمة
+CM-PAY-006	exact	decides	ZD-C-007/decides/ZD-S-0582	مبلغ احتياطي
+CM-PAY-006	exact	decides	ZD-C-007/decides/ZD-S-0583	احتجاز المدفوعات
+CM-PAY-006	exact	decides	ZD-C-037/decides/ZD-S-0769	مبالغ كبيرة من دول أجنبية
+CM-PAY-007	exact	decides	BC-C-025/decides/BC-S-0145	Card processing rate
+CM-PAY-007	exact	boundary	SA-C-113/boundary/SA-S-0104	fees_calculator.shopping_experience_fee.description
+CM-PAY-007	exact	decides	SA-C-113/decides/SA-S-0082	الرسوم
+CM-PAY-007	exact	decides	SA-C-113/decides/SA-S-0105	wallet.epayment.summary.tooltips.tax
+CM-PAY-007	exact	decides	SA-C-113/decides/SA-S-0204	رسوم مرنة لبوابة الدفع
+CM-PAY-007	exact	decides	SA-C-113/decides/SA-S-1969	حاسبة رسوم المدفوعات الإلكترونية
+CM-PAY-007	exact	decides	SA-C-113/decides/SA-S-2191	رسوم مرنة لبوابة الدفع
+CM-PAY-007	exact	decides	SA-C-177/decides/SA-S-0082	الرسوم
+CM-PAY-007	exact	boundary	SH-C-071/boundary/SH-S-0558	help.shopify.com/en/manual/international/pricing/fees.md
+CM-PAY-007	exact	decides	SH-C-071/decides/SH-S-0378	Pricing and fees
+CM-PAY-007	exact	decides	SH-C-071/decides/SH-S-7021	Online standard card rates
+CM-PAY-007	exact	decides	SH-C-071/decides/SH-S-7022	Online premium card rates
+CM-PAY-007	exact	decides	SH-C-071/decides/SH-S-7023	Online international rates
+CM-PAY-007	exact	boundary	WC-C-012/boundary/WC-S-0538	WooPayments: Fees
+CM-PAY-007	exact	decides	WC-C-012/decides/WC-S-0537	WooPayments: Fees
+CM-PAY-007	exact	decides	WC-C-012/decides/WC-S-5298	WooPayments: Fees
+CM-PAY-007	exact	decides	WC-C-012/decides/WC-S-5299	Notes for all countries
+CM-PAY-007	exact	decides	ZD-C-006/decides/ZD-S-0573	رسوم العمليات
+CM-PAY-007	exact	decides	ZD-C-006/decides/ZD-S-0574	سقف مدى
+CM-PAY-007	exact	decides	ZD-C-006/decides/ZD-S-0575	Transaction Fees (Rise, Growth, Professional)
+CM-PAY-007	exact	decides	ZD-C-006/decides/ZD-S-0576	مثال: مدى، باقة النمو
+CM-PAY-007	exact	decides	ZD-C-006/decides/ZD-S-0577	عمولة
+CM-PAY-008	exact	boundary	BC-C-031/boundary/BC-S-0196	store_b2b_manage
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-1041	write_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-1304	payment_schedules/due
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6081	read_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6082	read_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6083	read_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6084	read_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6085	read_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6268	write_payment_terms
+CM-PAY-008	exact	boundary	SH-C-045/boundary/SH-S-6269	write_payment_terms
+CM-PAY-008	exact	decides	SH-C-045/decides/SH-S-7152	SET_PAYMENT_TERMS_FOR_ORDERS
+CM-PAY-008	exact	decides	SH-C-045/decides/SH-S-7153	SET_PAYMENT_TERMS_FOR_DRAFT_ORDERS
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-0398	help.shopify.com/en/manual/payments/chargebacks.md
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-1141	write_shopify_payments_dispute_evidences
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-1214	disputes/create
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-1215	disputes/update
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-6123	read_shopify_payments_dispute_evidences
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-6124	read_shopify_payments_disputes
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-6125	read_shopify_payments_disputes
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-6126	read_shopify_payments_disputes
+CM-PAY-009	exact	boundary	SH-C-072/boundary/SH-S-6127	read_shopify_payments_disputes
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-0114	Part I, C. Contesting Chargebacks and Disputes
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-0115	Part I, C. Contesting Chargebacks and Disputes
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-0395	help.shopify.com/en/manual/payments/chargebacks.md
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-0396	help.shopify.com/en/manual/payments/chargebacks.md
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-0397	help.shopify.com/en/manual/payments/chargebacks.md
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-5164	finance:risk:disputes
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-5245	finance:risk:disputes:details
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-5732	features.financesOverview
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-5738	features.financesOverview
+CM-PAY-009	exact	decides	SH-C-072/decides/SH-S-6296	write_shopify_payments_dispute_evidences
+CM-PAY-009	exact	boundary	WC-C-116/boundary/WC-S-5319	Dispute notifications
+CM-PAY-009	exact	boundary	WC-C-116/boundary/WC-S-5320	How disputes work
+CM-PAY-009	exact	decides	WC-C-116/decides/WC-S-0866	Managing Disputes with WooPayments
+CM-PAY-009	exact	decides	WC-C-116/decides/WC-S-5321	How disputes work
+CM-PAY-009	exact	decides	WC-C-116/decides/WC-S-5322	How disputes work
+CM-PAY-009	exact	decides	ZD-C-007/decides/ZD-S-0581	توصية مزودي الخدمة
+CM-PAY-010	exact	boundary	SH-C-073/boundary/SH-S-1302	orders/shopify_protect_eligibility_changed
+CM-PAY-010	exact	decides	SH-C-073/decides/SH-S-0380	Considerations
+CM-PAY-010	exact	decides	SH-C-073/decides/SH-S-0400	help.shopify.com/en/manual/payments/shop-pay/shopify-protect.md
+CM-PAY-010	exact	decides	SH-C-073/decides/SH-S-0403	representations and warranties
+CM-PAY-010	exact	decides	SH-C-073/decides/SH-S-0404	2. Shopify Protect Warranty Service
+CM-PAY-010	exact	decides	SH-C-073/decides/SH-S-0405	term and eligibility
+CM-PAY-011	by landing	decides	BC-C-026/decides/BC-S-0152	Open Payment Provider Fee
+CM-PAY-011	by landing	decides	BC-C-026/decides/BC-S-0153	Orders through Embedded Payment Providers
+CM-PAY-011	by landing	decides	BC-C-026/decides/BC-S-0154	Open Payment Provider Fee
+CM-PAY-011	exact	decides	BC-C-022/decides/BC-S-0124	compatible payment gateways
+CM-PAY-011	exact	boundary	BC-C-026/boundary/BC-S-0160	connected payment gateways
+CM-PAY-011	exact	decides	BC-C-026/decides/BC-S-0155	Embedded Payment Provider List
+CM-PAY-011	exact	decides	BC-C-026/decides/BC-S-0156	PayPal Braintree
+CM-PAY-011	exact	decides	BC-C-026/decides/BC-S-0157	PayPal Braintree
+CM-PAY-011	exact	boundary	SA-C-120/boundary/SA-S-0205	gateway_settings.credentials_desc
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-0100	gcc_banner.tap_active.description
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-0130	شروط الربط مع Knet tap
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3107	bayan-pay
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3111	pay-tabs
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3129	tap
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3130	hyperpay
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3131	moyasar
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3132	knet
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3133	qpay
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3134	benefit
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3135	omannet
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3144	geidea
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3153	iyzico
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3154	my-fatoorah
+CM-PAY-011	exact	decides	SA-C-120/decides/SA-S-3155	paylink
+CM-PAY-011	exact	boundary	SA-C-127/boundary/SA-S-5056	المفتاح السري (Secret Key)
+CM-PAY-011	exact	decides	SA-C-127/decides/SA-S-3300	e-payment-charity
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-0447	Retry policy, Outbound
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-0448	Retry policy, Outbound
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-0449	Retry policy, Inbound
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-0450	mTLS configuration
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-0906	paymentSessionResolve
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6077	read_payment_gateways
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6080	read_payment_sessions
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6261	write_payment_gateways
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6262	write_payment_gateways
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6263	write_payment_gateways
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6264	write_payment_gateways
+CM-PAY-011	exact	boundary	SH-C-076/boundary/SH-S-6267	write_payment_sessions
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0291	C.4. Additional Terms Applicable to Payments Developers, Approval
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0374	help.shopify.com/en/manual/payments/third-party-providers.md
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0440	Extensions for payments, introduction
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0441	Extensions for payments, note
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0442	Considerations table, Approval process
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-0444	Considerations table, Making your app discoverable
+CM-PAY-011	exact	decides	SH-C-076/decides/SH-S-5092	payments:settings:third-party-providers:list
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0434	WC_Payment_Gateway
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0435	woocommerce_payment_gateways
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0436	WC_Payment_Gateway_CC
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0437	WC_Payment_Gateway_ECheck
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0452	AbstractPaymentMethodType
+CM-PAY-011	exact	boundary	WC-C-001/boundary/WC-S-0785	Payment method integration
+CM-PAY-011	exact	decides	WC-C-001/decides/WC-S-0651	8. j. Ecommerce Services: Third-Party Services
+CM-PAY-011	exact	boundary	WC-C-005/boundary/WC-S-0564	Privacy considerations when using official payments extensions
+CM-PAY-011	exact	boundary	WC-C-005/boundary/WC-S-0902	What You Can Do with WooCommerce Square
+CM-PAY-011	exact	decides	WC-C-005/decides/WC-S-0901	Stripe WooCommerce Extension
+CM-PAY-011	exact	boundary	ZD-C-011/boundary/ZD-S-0613	رقم الهوية المسجل في تاب
+CM-PAY-011	exact	boundary	ZD-C-011/boundary/ZD-S-0614	مفاتيح الربط
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0605	Paymob
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0606	amwal pay
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0607	Tap
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0608	تفعيل الخدمة
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0609	تمارا و تابي
+CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0610	الاعدادات > طرق الدفع
+CM-PAY-012	exact	boundary	BC-C-027/boundary/BC-S-0163	wallet-type providers
+CM-PAY-012	exact	boundary	BC-C-027/boundary/BC-S-0164	filterAvailableShippingOptions
+CM-PAY-012	exact	decides	BC-C-027/decides/BC-S-0162	Apple Pay, Google Pay, and Amazon Pay
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0057	الأسئلة الشائعة
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0063	الأسئلة الشائعة
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0074	2. وسائل الدفع المفعلة
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-1962	Apple Pay الدفع عبر
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-1963	stc pay الدفع عبر
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-1964	Google Pay الدفع عبر
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-3108	stc-pay
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-3109	apple-pay
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-3110	google-pay
+CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-3421	apple-pay.merchants
+CM-PAY-012	exact	decides	SA-C-119/decides/SA-S-0129	الأسئلة الشائعة
+CM-PAY-012	exact	decides	SA-C-119/decides/SA-S-0199	المحافظ الرقمية
+CM-PAY-012	exact	decides	SA-C-119/decides/SA-S-1963	stc pay الدفع عبر
+CM-PAY-012	exact	boundary	SH-C-078/boundary/SH-S-0024	2. Account Activation (summary)
+CM-PAY-012	exact	boundary	SH-C-078/boundary/SH-S-2540	com.google.pay
+CM-PAY-012	exact	decides	SH-C-078/decides/SH-S-0024	2. Account Activation (summary)
+CM-PAY-012	exact	decides	SH-C-078/decides/SH-S-0419	help.shopify.com/en/manual/payments/accelerated-checkouts.md
+CM-PAY-012	exact	decides	ZD-C-005/decides/ZD-S-0362	Rise: All features of Starter package, plus:
+CM-PAY-012	exact	decides	ZD-C-005/decides/ZD-S-0565	آبل باي ( مدى )
+CM-PAY-012	exact	decides	ZD-C-005/decides/ZD-S-0566	Who's on the payment network lineup?
+CM-PAY-012	exact	decides	ZD-C-012/decides/ZD-S-0618	طرق الدفع
+CM-PAY-013	exact	boundary	SA-C-119/boundary/SA-S-0199	المحافظ الرقمية
+CM-PAY-013	exact	decides	SA-C-119/decides/SA-S-0059	الأسئلة الشائعة
+CM-PAY-013	exact	decides	SA-C-119/decides/SA-S-1961	PayPal الدفع عبر
+CM-PAY-013	exact	decides	SA-C-119/decides/SA-S-3145	paypal
+CM-PAY-013	exact	decides	SH-C-063/decides/SH-S-0022	2.3 PayPal Express Checkout and Shopify Payments Accounts
+CM-PAY-013	exact	boundary	SH-C-077/boundary/SH-S-0024	2. Account Activation (summary)
+CM-PAY-013	exact	boundary	SH-C-077/boundary/SH-S-0311	How you get paid
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-0022	2.3 PayPal Express Checkout and Shopify Payments Accounts
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-0312	payment providers table, row PayPal Wallet, column How you get paid
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-0416	help.shopify.com/en/manual/payments/paypal.md
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-0417	help.shopify.com/en/manual/payments/paypal.md
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-0418	help.shopify.com/en/manual/payments/paypal.md
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-5092	payments:settings:paypal-express-checkout
+CM-PAY-013	exact	decides	SH-C-077/decides/SH-S-7024	PayPal Wallet rates
+CM-PAY-013	exact	boundary	WC-C-003/boundary/WC-S-0128	wc/v3 > paypal-standard
+CM-PAY-013	exact	boundary	WC-C-003/boundary/WC-S-0129	wc/v3 > paypal-webhooks
+CM-PAY-013	exact	boundary	WC-C-003/boundary/WC-S-0130	wc/v3 > paypal-buttons
+CM-PAY-013	exact	boundary	WC-C-003/boundary/WC-S-5007	WPCOM_PROXY_REST_BASE
+CM-PAY-013	exact	decides	WC-C-003/decides/WC-S-0608	WC_Gateway_Paypal::should_load
+CM-PAY-013	exact	decides	WC-C-003/decides/WC-S-5008	_should_load
+CM-PAY-014	exact	decides	BC-C-024/decides/BC-S-0135	Stored credit cards
+CM-PAY-014	exact	decides	SA-C-110/decides/SA-S-3123	checkout-save-cards
+CM-PAY-014	exact	boundary	SA-C-113/boundary/SA-S-0104	fees_calculator.shopping_experience_fee.description
+CM-PAY-014	exact	boundary	SH-C-074/boundary/SH-S-0145	2.4 Shop Pay
+CM-PAY-014	exact	boundary	SH-C-074/boundary/SH-S-0852	Shop Pay Wallet API
+CM-PAY-014	exact	boundary	SH-C-074/boundary/SH-S-2542	dev.shopify.shop_pay
+CM-PAY-014	exact	decides	SH-C-074/decides/SH-S-5248	payments:settings:shop-pay
+CM-PAY-014	exact	decides	SH-C-074/decides/SH-S-5249	payments:settings:shopify-payments:shop-pay-external-configuration
+CM-PAY-014	exact	decides	WC-C-015/decides/WC-S-0849	8. j. More on WooPay Specifically
+CM-PAY-014	exact	decides	WC-C-015/decides/WC-S-5338	Requirements
+CM-PAY-014	exact	decides	WC-C-042/decides/WC-S-5468	Enable payments via saved cards
+CM-PAY-015	exact	boundary	SA-C-118/boundary/SA-S-0075	خدمات مساندة
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0058	الأسئلة الشائعة
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0064	الأسئلة الشائعة
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-1965	الدفع بالتقسيط عبر تابي وتمارا
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-2106	تفعيل الدفع الإلكتروني عبر مدى وأبل باي وتابي وغيرها
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3125	tamara
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3126	klarna
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3127	deema
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3128	tabby
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3136	spotii
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3137	emkan
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3138	mispay
+CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-3142	madfu
+CM-PAY-015	exact	boundary	SH-C-075/boundary/SH-S-0126	Part II, A. Australia / B. Canada / C. United Kingdom / D. United States, Shop Pay Installments
+CM-PAY-015	exact	boundary	SH-C-075/boundary/SH-S-0317	Shop Pay Installments
+CM-PAY-015	exact	boundary	SH-C-075/boundary/SH-S-1112	unauthenticated_read_shop_pay_installments_pricing
+CM-PAY-015	exact	boundary	SH-C-075/boundary/SH-S-6147	unauthenticated_read_checkouts
+CM-PAY-015	exact	boundary	SH-C-075/boundary/SH-S-6163	unauthenticated_read_shop_pay_installments_pricing
+CM-PAY-015	exact	decides	SH-C-075/decides/SH-S-0414	availability note
+CM-PAY-015	exact	decides	SH-C-075/decides/SH-S-0415	help.shopify.com/en/manual/payments/shop-pay-installments.md
+CM-PAY-015	exact	decides	WC-C-004/decides/WC-S-5020	$country_extensions['US']
+CM-PAY-015	exact	decides	ZD-C-011/decides/ZD-S-0609	تمارا و تابي
+CM-PAY-015	exact	decides	ZD-C-012/decides/ZD-S-0616	Various Payment Methods
+CM-PAY-015	exact	decides	ZD-C-012/decides/ZD-S-0617	Advanced Payment Methods
+CM-PAY-015	exact	boundary	ZD-C-013/boundary/ZD-S-0627	App ID and App Secret
+CM-PAY-015	exact	boundary	ZD-C-013/boundary/ZD-S-0628	رمز وثيقة العمل الحر
+CM-PAY-015	exact	decides	ZD-C-013/decides/ZD-S-0622	مدفوع
+CM-PAY-015	exact	decides	ZD-C-013/decides/ZD-S-0623	إمكان مع زد باي
+CM-PAY-015	exact	decides	ZD-C-013/decides/ZD-S-0624	MIS pay
+CM-PAY-016	exact	boundary	BC-C-022/boundary/BC-S-0129	offline payment methods
+CM-PAY-016	exact	decides	SA-C-115/decides/SA-S-0122	الأسئلة الشائعة
+CM-PAY-016	exact	decides	SA-C-115/decides/SA-S-0123	2- الحد الأقصى للطلب
+CM-PAY-016	exact	decides	SA-C-115/decides/SA-S-0125	الأسئلة الشائعة
+CM-PAY-016	exact	decides	SA-C-116/decides/SA-S-1958	الدفع عند الاستلام
+CM-PAY-016	exact	decides	SA-C-116/decides/SA-S-3148	cod
+CM-PAY-016	exact	decides	SA-C-116/decides/SA-S-3264	cash-on-delivery-settings
+CM-PAY-016	exact	decides	SA-C-117/decides/SA-S-1956	التحويل البنكي
+CM-PAY-016	exact	decides	SA-C-117/decides/SA-S-1957	نظام المدفوعات الفورية عبر سريع
+CM-PAY-016	exact	decides	SA-C-117/decides/SA-S-2435	bank_accounts_management
+CM-PAY-016	exact	decides	SA-C-117/decides/SA-S-3149	bank
+CM-PAY-016	exact	boundary	SH-C-079/boundary/SH-S-0386	help.shopify.com/en/manual/payments/manual-payments.md
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-0322	transaction fees paragraph
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-0385	help.shopify.com/en/manual/payments/manual-payments.md
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-0388	Multi-currency support
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-0583	Create a custom manual payment method
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-5092	payments:settings:manual-payment-methods
+CM-PAY-016	exact	decides	SH-C-079/decides/SH-S-5144	order:mobile:record-payment
+CM-PAY-016	exact	boundary	WC-C-002/boundary/WC-S-0139	wc/v4 > offline-payment-methods
+CM-PAY-016	exact	boundary	WC-C-002/boundary/WC-S-5005	woocommerce_cheque_process_payment_order_status
+CM-PAY-016	exact	decides	WC-C-002/decides/WC-S-5002	woocommerce_cheque_settings: enabled
+CM-PAY-016	exact	decides	ZD-C-012/decides/ZD-S-0618	طرق الدفع
+CM-PAY-016	exact	boundary	ZD-C-014/boundary/ZD-S-0634	payment_method condition
+CM-PAY-017	exact	decides	BC-C-074/decides/BC-S-0400	Multi-currency
+CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-0063	الأسئلة الشائعة
+CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-0065	كي نت (KNET)
+CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-3132	knet
+CM-PAY-017	exact	boundary	SH-C-080/boundary/SH-S-0421	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-0420	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-0422	caution note
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-0424	help.shopify.com/en/manual/payments/shopify-payments/managed-payment-methods.md
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-0425	Requirements for using managed payment methods
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-0582	help.shopify.com/en/manual/payments/shopify-payments/local-payment-methods.md
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-7025	MB WAY rates
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-7026	Bizum rates
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-7060	Accept local payment methods*
+CM-PAY-017	exact	decides	SH-C-080/decides/SH-S-7173	sell_globally_local_payments
+CM-PAY-017	exact	decides	WC-C-006/decides/WC-S-0871	Local payment methods
+CM-PAY-017	exact	decides	ZD-C-005/decides/ZD-S-0564	كي نت
+CM-PAY-017	exact	decides	ZD-C-005/decides/ZD-S-0566	Who's on the payment network lineup?
+CM-PAY-017	exact	decides	ZD-C-012/decides/ZD-S-0618	طرق الدفع
+CM-PAY-018	exact	boundary	SH-C-081/boundary/SH-S-0430	Part I, A. Cryptocurrency Payments
+CM-PAY-018	exact	decides	SH-C-081/decides/SH-S-0426	Considerations for accepting cryptocurrencies
+CM-PAY-018	exact	decides	SH-C-081/decides/SH-S-0433	1.1 Eligibility
+CM-PAY-018	exact	decides	SH-C-081/decides/SH-S-0434	2.1 Earning and Calculating Credits
+CM-PAY-018	exact	decides	SH-C-081/decides/SH-S-7028	USDC rates
+CM-PAY-019	exact	decides	BC-C-031/decides/BC-S-0195	Company payment methods
+CM-PAY-019	exact	boundary	SA-C-121/boundary/SA-S-5049	❓ أين يمكنني مراجعة العمليات المرفوضة أو التي هي قيد المراجعة؟
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-2139	تعيين قيود الدفع
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-2145	قيود الدفع والحماية من الاحتيال
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-2401	payments_rules_management
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-2618	payments_rules_management
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-3164	customer-payment-white-list
+CM-PAY-019	exact	decides	SA-C-121/decides/SA-S-3299	payments-rules
+CM-PAY-019	exact	boundary	SH-C-083/boundary/SH-S-0859	Payment Customization
+CM-PAY-019	exact	boundary	SH-C-083/boundary/SH-S-1043	write_payment_customizations
+CM-PAY-019	exact	boundary	SH-C-083/boundary/SH-S-6076	read_payment_customizations
+CM-PAY-019	exact	boundary	SH-C-083/boundary/SH-S-6259	write_payment_customizations
+CM-PAY-019	exact	boundary	SH-C-083/boundary/SH-S-6260	write_payment_customizations
+CM-PAY-019	exact	decides	SH-C-083/decides/SH-S-0590	shopify.dev/docs/api/functions/latest/payment-customization.md
+CM-PAY-019	exact	decides	SH-C-083/decides/SH-S-0591	operations reference
+CM-PAY-019	exact	boundary	WC-C-001/boundary/WC-S-0784	Filtering payment methods in the Checkout block
+CM-PAY-019	exact	boundary	WC-C-087/boundary/WC-S-0784	Filtering payment methods in the Checkout block
+CM-PAY-019	exact	decides	ZD-C-063/decides/ZD-S-0858	الباقات
+CM-PAY-019	exact	decides	ZD-C-063/decides/ZD-S-0859	3 خيارات دفع
+CM-PAY-020	exact	boundary	BC-C-020/boundary/BC-S-0114	store_v2_transactions
+CM-PAY-020	exact	boundary	BC-C-020/boundary/BC-S-0115	store/order/transaction/created
+CM-PAY-020	exact	decides	BC-C-020/decides/BC-S-0112	Transactions API prerequisites
+CM-PAY-020	exact	boundary	BC-C-022/boundary/BC-S-0127	store_payments_access_token_create
+CM-PAY-020	exact	boundary	BC-C-022/boundary/BC-S-0128	payment_access_token
+CM-PAY-020	exact	boundary	BC-C-022/boundary/BC-S-0129	offline payment methods
+CM-PAY-020	exact	decides	BC-C-022/decides/BC-S-0124	compatible payment gateways
+CM-PAY-020	exact	decides	BC-C-022/decides/BC-S-0125	Authorization
+CM-PAY-020	exact	boundary	SA-C-123/boundary/SA-S-0180	# Transactions
+CM-PAY-020	exact	boundary	SA-C-123/boundary/SA-S-1058	Transactions
+CM-PAY-020	exact	boundary	SA-C-123/boundary/SA-S-1563	transactions
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-0181	line 211 (PUT /transactions/{transaction_id}, Update Transaction)
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-2270	order_refund_payment
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-2420	payments_operations_management
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-2487	order_refund_payment
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-2637	payments_operations_management
+CM-PAY-020	exact	decides	SA-C-123/decides/SA-S-3298	payments-operations
+CM-PAY-020	exact	boundary	SH-C-084/boundary/SH-S-1292	order_transactions/create
+CM-PAY-020	exact	boundary	SH-C-084/boundary/SH-S-1299	orders/paid
+CM-PAY-020	exact	decides	SH-C-084/decides/SH-S-0390	help.shopify.com/en/manual/payments/payment-authorization.md
+CM-PAY-020	exact	decides	SH-C-084/decides/SH-S-0391	What is a credit card authorization period?
+CM-PAY-020	exact	decides	SH-C-084/decides/SH-S-0392	What is a credit card authorization period?
+CM-PAY-020	exact	decides	SH-C-084/decides/SH-S-0393	Extended authorization periods, plan requirement
+CM-PAY-020	exact	boundary	WC-C-002/boundary/WC-S-0604	WC_Gateway_BACS::process_payment
+CM-PAY-020	exact	boundary	ZD-C-002/boundary/ZD-S-0055	Refund > Request Refund (POST /{ProviderUrl}/refund)
+CM-PAY-020	exact	boundary	ZD-C-002/boundary/ZD-S-0085	refund_status_changed
+CM-PAY-020	exact	decides	ZD-C-002/decides/ZD-S-0539	ملاحظة: 30 يوم
+CM-PAY-020	exact	decides	ZD-C-002/decides/ZD-S-0540	صلاحية استرداد المبالغ
+CM-PAY-020	exact	decides	ZD-C-002/decides/ZD-S-0541	رد الأموال
+CM-PAY-021	exact	boundary	SA-C-095/boundary/SA-S-5040	الربط بحساب جيديا
+CM-PAY-021	exact	boundary	SH-C-086/boundary/SH-S-0586	Considerations for using offline payments
+CM-PAY-021	exact	boundary	SH-C-086/boundary/SH-S-0587	Considerations for using offline payments
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-0047	9.3 POS Services
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-0435	Supported countries and regions
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-0585	help.shopify.com/en/manual/sell-in-person/shopify-pos/selling-offline/offline-payments.md
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-0588	Considerations for using offline payments
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-7027	In-person card rates
+CM-PAY-021	exact	decides	SH-C-086/decides/SH-S-7029	In-person manual rates
+CM-PAY-021	exact	decides	WC-C-014/decides/WC-S-0869	WooPayments: In-Person Payments
+CM-PAY-021	exact	decides	WC-C-014/decides/WC-S-0870	Currencies
+CM-PAY-021	exact	boundary	ZD-C-012/boundary/ZD-S-0620	POS payment methods
+CM-PAY-022	exact	boundary	BC-C-024/boundary/BC-S-0137	store_stored_payment_instruments
+CM-PAY-022	exact	boundary	BC-C-024/boundary/BC-S-0138	store/customer/payment/instrument/default/updated
+CM-PAY-022	exact	boundary	BC-C-024/boundary/BC-S-0139	payments.bigcommerce.com
+CM-PAY-022	exact	decides	BC-C-024/decides/BC-S-0136	30002
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-0592	APIs list
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-1119	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-1135	write_payment_mandate
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-1193	customer_payment_methods/create
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-1194	customer_payment_methods/revoke
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-5964	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-5965	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-5966	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-5967	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-5968	read_customer_payment_methods
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-6078	read_payment_mandate
+CM-PAY-022	exact	boundary	SH-C-085/boundary/SH-S-6079	read_payment_mandate
+CM-PAY-022	exact	decides	SH-C-085/decides/SH-S-5225	order:mobile:pay-order-by-vaulted
+CM-PAY-022	exact	decides	SH-C-085/decides/SH-S-6265	write_payment_mandate
+CM-PAY-022	exact	decides	SH-C-085/decides/SH-S-6266	write_payment_mandate
+CM-PAY-022	exact	boundary	WC-C-098/boundary/WC-S-0360	add_exporter: WooCommerce Customer Payment Tokens
+CM-PAY-022	exact	boundary	WC-C-098/boundary/WC-S-0364	add_eraser: WooCommerce Customer Payment Tokens
+CM-PAY-022	exact	boundary	WC-C-098/boundary/WC-S-0438	WC_Payment_Token
+CM-PAY-023	exact	boundary	SH-C-088/boundary/SH-S-0347	Payouts with Shopify Balance
+CM-PAY-023	exact	boundary	SH-C-088/boundary/SH-S-0466	Shopify Capital remittances or repayments
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-0460	help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-0461	help.shopify.com/en/manual/finance/shopify-balance/eligibility.md
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-0462	Shopify Balance account requirements
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-0463	Shopify Balance account requirements
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-0464	Shopify Balance account requirements
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5041	balance:inactive
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5042	balance:inactive:transfer
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5043	balance:inactive:transfer-frod
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5044	balance:inactive:redirect-statements
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5046	balance:root
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5047	balance
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5048	balance:main-account
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5049	balance:connected-accounts
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5050	balance:auto-transfers
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5051	balance:deposit-check
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5052	balance:add-cash
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5053	balance:onboard
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5057	shopify-balance:sell
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5058	shopify-balance:sell:rewards
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5059	shopify-balance:ensure-terms-of-service
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5060	balance:profile-assessment:interview
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5379	entitlements.shopifyFinance.balance
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5380	entitlements.shopifyFinance.balance
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5394	features.balanceCheckDepositEnabled
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5409	features.balanceUsCashVoucherEnabled
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5424	features.existingMerchantEligibleForBanking
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5439	features.hasEverOnboardedToBanking
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5463	features.hasInitiatedOnboardingToBanking
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5487	features.netNewMerchantEligibleForBanking
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-5502	features.onboardedToBanking
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-7062	Manage money with Shopify Balance¹
+CM-PAY-023	exact	decides	SH-C-088/decides/SH-S-7168	VIEW_BALANCE_BANK_ACCOUNTS
+CM-PAY-024	exact	decides	SH-C-089/decides/SH-S-0465	Shopify Balance card use requirements
+CM-PAY-024	exact	decides	SH-C-089/decides/SH-S-5099	cards:unlock:update
+CM-PAY-025	exact	boundary	SH-C-090/boundary/SH-S-0468	help.shopify.com/en/manual/finance/shopify-credit.md
+CM-PAY-025	exact	boundary	SH-C-090/boundary/SH-S-7283	Shopify Credit Program Terms
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-0470	Eligibility for Shopify Credit
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5126	credit:inactive:make-payment
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5127	credit:inactive:statements
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5129	credit:repayment-settings:update
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5130	credit:account-setup
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5131	credit:account:index
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5132	credit:account-settings
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5133	credit:card-management
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-5640	features.hasInitiatedOnboardingToCredit
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7064	Shopify Credit pay-in-full Visa® card³
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7169	VIEW_ALL_SHOPIFY_CREDIT_TRANSACTIONS
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7265	Issuing Bank Terms
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7266	Issuing Bank Terms
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7267	Shopify Credit Program Terms
+CM-PAY-025	exact	decides	SH-C-090/decides/SH-S-7268	Shopify Credit Program Terms
+CM-PAY-026	exact	boundary	SA-C-128/boundary/SA-S-0111	capital.active.payment_details.footnote
+CM-PAY-026	exact	decides	SA-C-128/decides/SA-S-0113	capital.status.whats_next.steps.auto_verify.description
+CM-PAY-026	exact	decides	SA-C-128/decides/SA-S-3487	financial-support
+CM-PAY-026	exact	boundary	SH-C-091/boundary/SH-S-0482	help.shopify.com/en/manual/finance/shopify-capital/united-states.md
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0472	help.shopify.com/en/manual/finance/shopify-capital.md
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0475	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0476	Shopify Capital eligibility requirements, payment provider
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0477	Shopify Capital eligibility requirements, payment provider
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0479	Countries where Shopify Capital is available
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-091/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-092/boundary/SH-S-0484	help.shopify.com/en/manual/finance/shopify-capital/united-kingdom.md
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-0486	notifications
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-092/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-093/boundary/SH-S-0488	bank account changes
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-093/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-094/boundary/SH-S-7310	read_capital
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-094/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-095/boundary/SH-S-7310	read_capital
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-095/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-096/boundary/SH-S-7310	read_capital
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-096/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	SH-C-097/boundary/SH-S-7310	read_capital
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-0474	help.shopify.com/en/manual/finance/shopify-capital/eligibility.md
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-0480	Application process for Shopify Capital
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-5097	capital:root
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-5379	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-5380	entitlements.shopifyFinance.capital
+CM-PAY-026	exact	decides	SH-C-097/decides/SH-S-7063	Flexible growth funding through Shopify Capital²
+CM-PAY-026	exact	boundary	WC-C-016/boundary/WC-S-0861	Repayment
+CM-PAY-026	exact	decides	WC-C-016/decides/WC-S-0561	Eligibility
+CM-PAY-026	exact	boundary	ZD-C-023/boundary/ZD-S-0700	مشاركة المعلومات
+CM-PAY-026	exact	boundary	ZD-C-023/boundary/ZD-S-0701	الحد الأدنى للسداد
+CM-PAY-026	exact	decides	ZD-C-023/decides/ZD-S-0693	الدولة
+CM-PAY-026	exact	decides	ZD-C-023/decides/ZD-S-0694	بوابة الدفع
+CM-PAY-026	exact	decides	ZD-C-023/decides/ZD-S-0695	الباقات
+CM-PAY-026	exact	decides	ZD-C-023/decides/ZD-S-0696	تقدير جهة التمويل
+CM-PAY-026	exact	decides	ZD-C-023/decides/ZD-S-0697	إلغاء زد باي
+CM-PAY-027	exact	boundary	SH-C-098/boundary/SH-S-0501	help.shopify.com/en/manual/finance/shopify-bill-pay.md
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-0498	help.shopify.com/en/manual/finance/shopify-bill-pay.md (note)
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5166	finance:billpay
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5167	finance:billpay:redirect
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5379	entitlements.shopifyFinance.billPay
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5380	entitlements.shopifyFinance.billPay
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5715	features.canAccessBillPay
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-5723	features.canAccessBillPay
+CM-PAY-027	exact	decides	SH-C-098/decides/SH-S-7065	Schedule, pay, and manage bills with Shopify Bill Pay
+CM-PAY-028	exact	boundary	SA-C-210/boundary/SA-S-5145	مزامنة المخزون مع الخدمات الخارجية
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-2148	الربط مع الخدمات المحاسبية
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-2152	ربط المتجر بخدمات محاسبية ومالية متكاملة
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-2188	ربط تكاملي ذكي
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-2975	daftra-service
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-2994	qoyod-service
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-3093	zoho-books-service
+CM-PAY-028	exact	decides	SA-C-210/decides/SA-S-3509	accounting-service
+CM-PAY-028	exact	boundary	SH-C-191/boundary/SH-S-7284	9.9 Third Party Services and Third Party Partners
+CM-PAY-028	exact	decides	SH-C-191/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-PAY-028	exact	boundary	WC-C-109/boundary/WC-S-5491	Setup and Configuration (OAuth 2.0 app)
+CM-PAY-028	exact	decides	WC-C-109/decides/WC-S-5489	Send Invoices
+CM-PAY-029	exact	boundary	BC-C-022/boundary/BC-S-0129	offline payment methods
+CM-PAY-029	exact	boundary	SA-C-115/boundary/SA-S-0106	wallet.cod.summary.tooltips.cod_fees
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-0062	عبر بوليصات سلة المخفضة
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-0122	الأسئلة الشائعة
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-0123	2- الحد الأقصى للطلب
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-0125	الأسئلة الشائعة
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-0126	✅ تفعيل / تعطيل COD لكل شركة شحن
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-1958	الدفع عند الاستلام
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-2027	تعيين شروط الدفع عند الاستلام
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-3038	cod-branded-route
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-3148	cod
+CM-PAY-029	exact	decides	SA-C-115/decides/SA-S-3264	cash-on-delivery-settings
+CM-PAY-029	exact	boundary	SA-C-116/boundary/SA-S-0084	المحفظة وتتبع التحويلات
+CM-PAY-029	exact	decides	SA-C-116/decides/SA-S-0061	الدفع عند الاستلام ومحفظة العميل > عبر شركة شحن
+CM-PAY-029	exact	decides	SA-C-116/decides/SA-S-0121	الأسئلة الشائعة
+CM-PAY-029	exact	decides	SA-C-116/decides/SA-S-2027	تعيين شروط الدفع عند الاستلام
+CM-PAY-029	exact	decides	SH-C-079/decides/SH-S-0322	transaction fees paragraph
+CM-PAY-029	exact	boundary	WC-C-002/boundary/WC-S-5006	woocommerce_cod_process_payment_order_status
+CM-PAY-029	exact	decides	WC-C-002/decides/WC-S-5003	woocommerce_cod_settings: enabled
+CM-PAY-029	exact	boundary	ZD-C-014/boundary/ZD-S-0634	payment_method condition
+CM-PAY-029	exact	decides	ZD-C-014/decides/ZD-S-0630	شركة الشحن
+CM-PAY-029	exact	decides	ZD-C-014/decides/ZD-S-0631	Block Cash on Delivery
+CM-PAY-029	exact	decides	ZD-C-014/decides/ZD-S-0632	Cash on Delivery
+CM-PAY-029	exact	decides	ZD-C-015/decides/ZD-S-0637	Cash on Delivery Collection
+CM-PAY-029	exact	decides	ZD-C-015/decides/ZD-S-0638	رسوم الدفع عند الاستلام
+CM-PAY-029	exact	decides	ZD-C-015/decides/ZD-S-0639	COD Limit
+CM-PAY-029	exact	decides	ZD-C-015/decides/ZD-S-0640	زد شب
+CM-PAY-030	exact	boundary	SA-C-117/boundary/SA-S-0095	الأسئلة الشائعة
+CM-PAY-030	exact	boundary	SA-C-117/boundary/SA-S-1059	Payments
+CM-PAY-030	exact	decides	SA-C-117/decides/SA-S-1956	التحويل البنكي
+CM-PAY-030	exact	decides	SA-C-117/decides/SA-S-1957	نظام المدفوعات الفورية عبر سريع
+CM-PAY-030	exact	decides	SA-C-117/decides/SA-S-2435	bank_accounts_management
+CM-PAY-030	exact	decides	SA-C-117/decides/SA-S-2645	bank_accounts_management
+CM-PAY-030	exact	decides	SA-C-117/decides/SA-S-3149	bank
+CM-PAY-030	exact	decides	SH-C-079/decides/SH-S-0322	transaction fees paragraph
+CM-PAY-030	exact	boundary	WC-C-002/boundary/WC-S-5004	woocommerce_bacs_process_payment_order_status
+CM-PAY-030	exact	decides	WC-C-002/decides/WC-S-5001	woocommerce_bacs_settings: enabled
+CM-PAY-030	exact	boundary	ZD-C-016/boundary/ZD-S-0634	`Bank Transfer`
+CM-PAY-030	exact	decides	ZD-C-016/decides/ZD-S-0644	Bank Transfer Service
+CM-PAY-030	exact	decides	ZD-C-016/decides/ZD-S-0645	Bank Transfer Payment
+CM-PAY-031	exact	boundary	SA-C-124/boundary/SA-S-0178	# Settlements
+CM-PAY-031	exact	boundary	SA-C-124/boundary/SA-S-1028	Settlements
+CM-PAY-031	exact	boundary	SA-C-124/boundary/SA-S-1564	settlements
+CM-PAY-031	exact	decides	SA-C-124/decides/SA-S-0179	line 64 (POST /settlements/instant, Create Instant Settlement)
+CM-PAY-032	exact	boundary	SA-C-126/boundary/SA-S-5144	notifications.order.payment_linkDesc
+CM-PAY-032	exact	decides	SA-C-126/decides/SA-S-1968	إرسال رابط الدفع للعميل
+CM-PAY-032	exact	decides	SA-C-126/decides/SA-S-2451	quick_payment_direct
+CM-PAY-032	exact	decides	SA-C-126/decides/SA-S-2661	quick_payment_direct
+CM-PAY-032	exact	boundary	ZD-C-008/boundary/ZD-S-0588	payment_link
+CM-PAY-032	exact	decides	ZD-C-008/decides/ZD-S-0587	الطلبات > الطلبات اليدوية > إنشاء طلب جديد
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0185	GMV cap
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0186	Automatic Upgrades
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0187	Scale
@@ -2818,6 +4314,8 @@ CM-PLN-002	exact	decides	SH-C-015/decides/SH-S-7001	Pay monthly
 CM-PLN-002	exact	decides	SH-C-015/decides/SH-S-7002	Pay yearly
 CM-PLN-002	exact	decides	SH-C-201/decides/SH-S-5084	settings:plan:shop_plus_self_renewals
 CM-PLN-002	exact	decides	ZD-C-020/decides/ZD-S-0672	Starter; Rise; Growth; Pro
+CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0152	Open Payment Provider Fee
+CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0153	Orders through Embedded Payment Providers
 CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0154	Open Payment Provider Fee
 CM-PLN-003	exact	decides	SA-C-004/decides/SA-S-2198	بدون عمولة منصة على مبيعاتك
 CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0273	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
@@ -2875,6 +4373,9 @@ CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0652	حد الشحن بالبطا
 CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0653	توثيق الحساب
 CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0654	عملة المحفظة
 CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0655	عملات لا يمكن سحبها
+CM-PLN-006	exact	boundary	ZD-C-018/boundary/ZD-S-0664	الاستقطاع المباشر من زد باي
+CM-PLN-006	exact	decides	ZD-C-018/decides/ZD-S-0661	التجار السعوديين والكويتيين
+CM-PLN-006	exact	decides	ZD-C-018/decides/ZD-S-0662	مبلغ ثابت; نسبة مئوية
 CM-PLN-007	exact	decides	SA-C-113/decides/SA-S-0105	wallet.epayment.summary.tooltips.tax
 CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0036	5. Payment of Fees and Taxes
 CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0277	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
@@ -3001,6 +4502,65 @@ CM-PTN-009	exact	decides	SA-C-206/decides/SA-S-3415	partner-merchant-affiliate
 CM-PTN-010	exact	boundary	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans
 CM-PTN-010	exact	decides	BC-C-066/decides/BC-S-0077	Closed Betas
 CM-PTN-010	exact	decides	BC-C-066/decides/BC-S-0362	billing relationship
+CM-RET-001	exact	decides	SA-C-045/decides/SA-S-1998	إدارة طلبات الاسترجاع الجزئي والكلي
+CM-RET-001	exact	decides	ZD-C-081/decides/ZD-S-0909	Full & Partial Returns
+CM-RET-002	exact	boundary	BC-C-021/boundary/BC-S-0118	store/order/refund/created
+CM-RET-002	exact	boundary	BC-C-021/boundary/BC-S-0119	Refunds API
+CM-RET-002	exact	boundary	BC-C-021/boundary/BC-S-0120	Order V3
+CM-RET-002	exact	boundary	SA-C-045/boundary/SA-S-0090	أولاً: تعريف محفظة متجرك على سلة
+CM-RET-002	exact	boundary	SA-C-045/boundary/SA-S-0180	# Transactions
+CM-RET-002	exact	boundary	SA-C-045/boundary/SA-S-1587	order.refunded
+CM-RET-002	exact	decides	SA-C-045/decides/SA-S-2270	order_refund_payment
+CM-RET-002	exact	decides	SA-C-045/decides/SA-S-2487	order_refund_payment
+CM-RET-002	exact	decides	SA-C-045/decides/SA-S-3287	control-refund-status
+CM-RET-002	exact	decides	SA-C-045/decides/SA-S-3293	orders-bulk-remove-products-refund
+CM-RET-002	exact	decides	SA-C-123/decides/SA-S-0181	line 211 (PUT /transactions/{transaction_id}, Update Transaction)
+CM-RET-002	exact	boundary	SH-C-057/boundary/SH-S-1325	refunds/create
+CM-RET-002	exact	decides	SH-C-057/decides/SH-S-5222	order:refund:create
+CM-RET-002	exact	boundary	WC-C-071/boundary/WC-S-0091	wc/v3 > order-refunds
+CM-RET-002	exact	boundary	WC-C-071/boundary/WC-S-0102	wc/v3 > refunds
+CM-RET-002	exact	boundary	WC-C-071/boundary/WC-S-0138	wc/v4 > refunds
+CM-RET-002	exact	boundary	WC-C-071/boundary/WC-S-0669	Order refunds
+CM-RET-002	exact	boundary	WC-C-071/boundary/WC-S-0680	Refunds
+CM-RET-002	exact	decides	WC-C-071/decides/WC-S-5407	refund_line_items
+CM-RET-002	exact	boundary	ZD-C-002/boundary/ZD-S-0055	Refund > Request Refund (POST /{ProviderUrl}/refund)
+CM-RET-002	exact	boundary	ZD-C-002/boundary/ZD-S-0085	refund_status_changed
+CM-RET-002	exact	decides	ZD-C-002/decides/ZD-S-0539	ملاحظة: 30 يوم
+CM-RET-002	exact	decides	ZD-C-002/decides/ZD-S-0540	صلاحية استرداد المبالغ
+CM-RET-002	exact	decides	ZD-C-002/decides/ZD-S-0541	رد الأموال
+CM-RET-002	exact	boundary	ZD-C-028/boundary/ZD-S-0725	order.payment_status.update
+CM-RET-002	exact	boundary	ZD-C-081/boundary/ZD-S-1014	طرق الاسترداد
+CM-RET-003	exact	boundary	SA-C-041/boundary/SA-S-2680	مسترجع
+CM-RET-003	exact	boundary	SA-C-041/boundary/SA-S-2681	قيد الإسترجاع
+CM-RET-003	exact	boundary	SA-C-045/boundary/SA-S-1575	order.shipment.return.cancelled
+CM-RET-003	exact	boundary	SA-C-045/boundary/SA-S-1576	order.shipment.return.created
+CM-RET-003	exact	boundary	SA-C-045/boundary/SA-S-1577	order.shipment.return.creating
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-0874	return
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-1061	write_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-1329	returns/approve
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6034	read_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6037	read_marketplace_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6038	read_marketplace_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6039	read_marketplace_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6040	read_marketplace_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6063	read_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6106	read_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6107	read_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6230	write_marketplace_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6289	write_returns
+CM-RET-003	exact	boundary	SH-C-058/boundary/SH-S-6290	write_returns
+CM-RET-003	exact	decides	SH-C-058/decides/SH-S-5223	order:return:create
+CM-RET-003	exact	decides	SH-C-058/decides/SH-S-6231	write_marketplace_returns
+CM-RET-003	exact	decides	SH-C-058/decides/SH-S-6288	write_returns
+CM-RET-003	exact	boundary	ZD-C-081/boundary/ZD-S-0911	POST /v1/managers/store/reverse-orders
+CM-RET-003	exact	boundary	ZD-C-081/boundary/ZD-S-0912	Upload bank transfer receipt
+CM-RET-003	exact	boundary	ZD-C-081/boundary/ZD-S-1015	سمسا; أرامكس
+CM-RET-003	exact	decides	ZD-C-081/decides/ZD-S-0910	Returned Orders
+CM-RET-003	exact	decides	ZD-C-081/decides/ZD-S-1013	بوليصة الإرجاع
+CM-RET-004	exact	boundary	WC-C-091/boundary/WC-S-5443	Review a withdrawal request
+CM-RET-004	exact	decides	WC-C-091/decides/WC-S-0934	order_withdrawal
+CM-RET-004	exact	decides	WC-C-091/decides/WC-S-5440	order_withdrawal
+CM-RET-004	exact	decides	WC-C-091/decides/WC-S-5441	Submission limits and timing
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1100	APIs
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1641	subscription.updated
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1644	subscription.charge.failed
@@ -3452,6 +5012,342 @@ CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0983	read_discovery
 CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0984	write_discovery
 CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0232	store_sites
 CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0233	store/channel/{channel_id}/settings/site/updated
+CM-SHP-001	by landing	boundary	SA-C-145/boundary/SA-S-1104	App Functions
+CM-SHP-001	by landing	boundary	SA-C-145/boundary/SA-S-1113	App Functions
+CM-SHP-001	exact	decides	BC-C-070/decides/BC-S-0378	shipping zones
+CM-SHP-001	exact	boundary	SA-C-142/boundary/SA-S-1046	Shipping Zones
+CM-SHP-001	exact	boundary	SA-C-142/boundary/SA-S-1559	shippings
+CM-SHP-001	exact	boundary	SA-C-142/boundary/SA-S-1631	shipping.zone.created
+CM-SHP-001	exact	boundary	SA-C-142/boundary/SA-S-1632	shipping.zone.updated
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2021	إتاحة الشحن المجاني
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2023	تخصيص تسعيرة الشحن
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2112	قيود الشحن والتوصيل
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2146	قيود الشحن والتوصيل
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2392	shipping_options_management
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2400	shipping_rules_management
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2609	shipping_options_management
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-2617	shipping_rules_management
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3005	shipping-rules
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3013	shipping-pricing-promotions
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3028	shipping-profiles
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3029	shipping-rate-management
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3030	shipping-private-city-restrict
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3032	restrict-shipping-by-country
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3033	restrict-shipping-companies-by-country
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3034	enable-shipping-by-country
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3045	shipping-delivery-zones
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3050	free-shipping-channel-payment-rules
+CM-SHP-001	exact	decides	SA-C-142/decides/SA-S-3267	advance-free-shipping
+CM-SHP-001	exact	decides	SA-C-144/decides/SA-S-3042	shipping-management
+CM-SHP-001	exact	boundary	SA-C-145/boundary/SA-S-1110	Shipping Management
+CM-SHP-001	exact	boundary	SA-C-145/boundary/SA-S-1115	APIs
+CM-SHP-001	exact	decides	SA-C-145/decides/SA-S-3077	storage-station
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-1067	write_shipping
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-2531	dev.ucp.shopping.fulfillment
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-6114	read_shipping
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-6115	read_shipping
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-6117	read_shipping
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-6295	write_shipping
+CM-SHP-001	exact	boundary	SH-C-114/boundary/SH-S-7247	ServerIntent create delivery_profile
+CM-SHP-001	exact	decides	SH-C-114/decides/SH-S-5260	shipping:eligibility
+CM-SHP-001	exact	decides	SH-C-114/decides/SH-S-5262	shipping-calculator
+CM-SHP-001	exact	decides	SH-C-114/decides/SH-S-5842	entitlements.shipping.settingsAccess
+CM-SHP-001	exact	decides	WC-C-030/decides/WC-S-5355	woocommerce_ship_to_countries
+CM-SHP-001	exact	boundary	WC-C-061/boundary/WC-S-0205	wc-admin > shipping-partner-suggestions (ShippingPartnerSuggestions)
+CM-SHP-001	exact	decides	WC-C-061/decides/WC-S-0651	8. j. Ecommerce Services: Third-Party Services
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0098	wc/v3 > product-shipping-classes
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0113	wc/v3 > shipping-zones
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0114	wc/v3 > shipping-zone-locations
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0115	wc/v3 > shipping-zone-methods
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0122	wc/v3 > shipping-methods
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0135	wc/v4 > shipping-zones
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0136	wc/v4 > shipping-zone-method
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0159	wc/store/v1 > /cart/select-shipping-rate
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0439	WC_Shipping_Method
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0440	woocommerce_shipping_methods
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0628	Shipping method API
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0676	Product shipping classes
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0687	Shipping zones
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0688	Shipping zone locations
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0689	Shipping zone methods
+CM-SHP-001	exact	boundary	WC-C-075/boundary/WC-S-0690	Shipping methods
+CM-SHP-001	exact	decides	WC-C-075/decides/WC-S-0599	store_address
+CM-SHP-001	exact	decides	WC-C-075/decides/WC-S-5411	woocommerce_enable_shipping_calc
+CM-SHP-001	exact	decides	ZD-C-033/decides/ZD-S-0745	تفعيل عملة دولة
+CM-SHP-001	exact	boundary	ZD-C-062/boundary/ZD-S-0102	GET /v1/managers/store/delivery-options
+CM-SHP-001	exact	boundary	ZD-C-062/boundary/ZD-S-0856	delivery_option_id
+CM-SHP-001	exact	decides	ZD-C-063/decides/ZD-S-0858	الباقات
+CM-SHP-002	exact	decides	SA-C-139/decides/SA-S-3276	show-thermal-dhl-policy
+CM-SHP-002	exact	boundary	SA-C-140/boundary/SA-S-0089	أولاً: تعريف محفظة متجرك على سلة
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-1951	بوليصات شحن سلة المُخفضة
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-2018	بوليصات شحن سلة المُخفضة
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-2019	الشحن العادي عبر سمسا، البريد السعودي، DHL Express، أي مكان، J&T Express
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-2020	الشحن الاقتصادي عبر مندوبي، ريدبوكس، سمسا (استلام وتسليم من الفرع)
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-2022	مستويات تسعير البوليصات
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-2024	حاسبة تكلفة الشحن
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-3012	shipping-tier-pricing-system
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-3048	shipping-postpaid-balance
+CM-SHP-002	exact	decides	SA-C-140/decides/SA-S-3049	salla-policies-free-shipping-gift
+CM-SHP-002	exact	decides	SA-C-144/decides/SA-S-2419	shipment_history_management
+CM-SHP-002	exact	decides	SA-C-144/decides/SA-S-2636	shipment_history_management
+CM-SHP-002	exact	decides	SA-C-144/decides/SA-S-3018	shipping-policy-archive
+CM-SHP-002	exact	decides	SA-C-144/decides/SA-S-3099	order-print-multi-policy
+CM-SHP-002	exact	boundary	SA-C-145/boundary/SA-S-1105	Generating AWB
+CM-SHP-002	exact	boundary	SA-C-145/boundary/SA-S-1112	Salla AWB
+CM-SHP-002	exact	boundary	SA-C-145/boundary/SA-S-1114	Generating AWB
+CM-SHP-002	exact	boundary	SA-C-162/boundary/SA-S-5075	الرسوم الإضافية للشحن الدولي
+CM-SHP-002	exact	decides	SH-C-115/decides/SH-S-0616	B. Your Responsibilities
+CM-SHP-002	exact	boundary	SH-C-116/boundary/SH-S-0050	9.4 Shopify Shipping
+CM-SHP-002	exact	boundary	SH-C-116/boundary/SH-S-0619	D. Fees
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-0609	A. Shopify Shipping
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-0718	Getting started with shipping labels
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-0719	Getting started with shipping labels
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-5264	shippingLabel:parent
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-5265	shippingLabel:index
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-5842	entitlements.shipping.labels
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-7045	Shipping discounts
+CM-SHP-002	exact	decides	SH-C-116/decides/SH-S-7046	Buy and print shipping labels
+CM-SHP-002	exact	boundary	WC-C-060/boundary/WC-S-0567	WooCommerce Shipping
+CM-SHP-002	exact	boundary	WC-C-060/boundary/WC-S-0655	8. j. More on Shipping Services Specifically
+CM-SHP-002	exact	boundary	WC-C-060/boundary/WC-S-0958	WooCommerce: Shipping Rates and Labels
+CM-SHP-002	exact	boundary	WC-C-060/boundary/WC-S-0959	WooCommerce: Shipping Rates and Labels
+CM-SHP-002	exact	decides	WC-C-060/decides/WC-S-0592	readme.txt: ALL THE TOOLS YOU NEED TO SELL
+CM-SHP-002	exact	decides	WC-C-060/decides/WC-S-0905	WooCommerce Shipping
+CM-SHP-002	exact	boundary	ZD-C-060/boundary/ZD-S-0843	قياسات شركة الشحن
+CM-SHP-002	exact	boundary	ZD-C-060/boundary/ZD-S-0844	integrated with ZidShip
+CM-SHP-002	exact	decides	ZD-C-060/decides/ZD-S-0365	Rise: All features of Starter package, plus:
+CM-SHP-002	exact	decides	ZD-C-060/decides/ZD-S-0380	Professional: Standout Features
+CM-SHP-002	exact	decides	ZD-C-060/decides/ZD-S-0468	manage.zidship.settings
+CM-SHP-002	exact	decides	ZD-C-060/decides/ZD-S-0837	Zid Logistics: One Contract for 35 Carriers
+CM-SHP-002	exact	decides	ZD-C-060/decides/ZD-S-0838	باقة التاجر
+CM-SHP-003	exact	boundary	SH-C-117/boundary/SH-S-7469	ShippingLabelPurchaseUserErrorCode.MISSING_INSURANCE_COVERAGE_AMOUNT
+CM-SHP-003	exact	decides	SH-C-117/decides/SH-S-0720	help.shopify.com/en/manual/fulfillment/fulfilling-orders/shipping-labels/shipping-insurance.md
+CM-SHP-003	exact	decides	SH-C-117/decides/SH-S-0722	tip
+CM-SHP-003	exact	decides	SH-C-117/decides/SH-S-7047	Shipping insurance*
+CM-SHP-003	exact	decides	SH-C-117/decides/SH-S-7220	apps.shopify.com/built-in-features/shopify-shipping
+CM-SHP-004	exact	decides	BC-C-070/decides/BC-S-0377	Real-time shipping quotes
+CM-SHP-004	exact	boundary	BC-C-071/boundary/BC-S-0381	Shipping Providers
+CM-SHP-004	exact	boundary	BC-C-071/boundary/BC-S-0382	Quote URL
+CM-SHP-004	exact	decides	BC-C-071/decides/BC-S-0380	carrier server
+CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-1066	read_shipping
+CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-6292	write_shipping
+CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-6293	write_shipping
+CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-6294	write_shipping
+CM-SHP-004	exact	decides	SH-C-115/decides/SH-S-7048	3rd-party calculated shipping rates
+CM-SHP-004	exact	decides	WC-C-060/decides/WC-S-0906	WooCommerce Shipping
+CM-SHP-004	exact	boundary	WC-C-061/boundary/WC-S-0628	Shipping method API
+CM-SHP-005	exact	boundary	SH-C-060/boundary/SH-S-1245	fulfillment_orders/order_routing_complete
+CM-SHP-005	exact	decides	SH-C-060/decides/SH-S-0751	help.shopify.com/en/manual/fulfillment/setup/order-routing.md
+CM-SHP-006	exact	decides	SA-C-148/decides/SA-S-2029	إتاحة الاستلام من الفرع
+CM-SHP-006	exact	decides	SH-C-121/decides/SH-S-5260	shipping:eligibility
+CM-SHP-006	exact	decides	SH-C-121/decides/SH-S-5842	entitlements.shipping.settingsAccess
+CM-SHP-007	by landing	boundary	BC-C-006/boundary/BC-S-0047	partner solutions
+CM-SHP-007	exact	decides	SA-C-148/decides/SA-S-2029	إتاحة الاستلام من الفرع
+CM-SHP-007	exact	boundary	SH-C-121/boundary/SH-S-1241	fulfillment_orders/line_items_prepared_for_pickup
+CM-SHP-007	exact	boundary	SH-C-121/boundary/SH-S-6158	unauthenticated_read_product_pickup_locations
+CM-SHP-007	exact	boundary	SH-C-121/boundary/SH-S-6159	unauthenticated_read_product_pickup_locations
+CM-SHP-008	exact	boundary	SA-C-141/boundary/SA-S-0084	المحفظة وتتبع التحويلات
+CM-SHP-008	exact	boundary	SA-C-148/boundary/SA-S-1071	Branch Delivery Zones
+CM-SHP-008	exact	boundary	SH-C-121/boundary/SH-S-1240	fulfillment_orders/line_items_prepared_for_local_delivery
+CM-SHP-009	exact	boundary	BC-C-006/boundary/BC-S-0046	store_fulfillment_methods_manage
+CM-SHP-009	exact	boundary	BC-C-019/boundary/BC-S-0109	store_order_fulfillment_manage
+CM-SHP-009	exact	boundary	BC-C-019/boundary/BC-S-0110	store/shipment/created
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1044	Shipments
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1116	Shipments
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1559	shippings
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1575	order.shipment.return.cancelled
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1576	order.shipment.return.created
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1577	order.shipment.return.creating
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1578	order.shipment.cancelled
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1579	order.shipment.created
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1580	order.shipment.creating
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1636	shipment.creating
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1637	shipment.created
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1638	shipment.updated
+CM-SHP-009	exact	boundary	SA-C-144/boundary/SA-S-1639	shipment.cancelled
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3006	special-shipping-details
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3009	shipping-customer-additional-info
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3052	shipping-carrier-pickup
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3261	addressee-shipping
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3275	sync-order-shipment-status
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3294	thankyou-page-multi-shipments
+CM-SHP-009	exact	decides	SA-C-144/decides/SA-S-3356	shipping-indicator
+CM-SHP-009	exact	boundary	SA-C-145/boundary/SA-S-1111	Order Fulfilment
+CM-SHP-009	exact	boundary	SA-C-145/boundary/SA-S-1116	Shipments
+CM-SHP-009	exact	decides	SA-C-145/decides/SA-S-3043	allow-external-shipment-reconnect
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-1022	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-1229	fulfillment_holds/added
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-5936	read_assigned_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-5937	read_assigned_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6030	read_marketplace_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6031	read_marketplace_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6032	read_marketplace_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6048	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6049	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6139	read_third_party_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-118/boundary/SH-S-6233	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-5145	order:mobile:release-fulfillment-holds
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6168	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6169	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6170	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6234	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6235	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-118/decides/SH-S-6302	write_third_party_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-5936	read_assigned_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-5937	read_assigned_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-6030	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-6048	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-6049	read_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-6139	read_third_party_fulfillment_orders
+CM-SHP-009	exact	boundary	SH-C-119/boundary/SH-S-6233	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6168	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6169	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6170	write_assigned_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6234	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6235	write_merchant_managed_fulfillment_orders
+CM-SHP-009	exact	decides	SH-C-119/decides/SH-S-6302	write_third_party_fulfillment_orders
+CM-SHP-009	exact	boundary	WC-C-092/boundary/WC-S-0131	wc/v4 > fulfillments
+CM-SHP-009	exact	boundary	WC-C-092/boundary/WC-S-0897	Order Fulfillment
+CM-SHP-009	exact	decides	WC-C-092/decides/WC-S-0938	fulfillments
+CM-SHP-009	exact	decides	WC-C-092/decides/WC-S-5444	fulfillments
+CM-SHP-009	exact	boundary	ZD-C-080/boundary/ZD-S-1011	جاهز
+CM-SHP-010	exact	decides	SH-C-118/decides/SH-S-5224	orders:batches:details
+CM-SHP-010	exact	decides	SH-C-118/decides/SH-S-5792	features.fulfillmentBatchingEligible
+CM-SHP-010	exact	decides	SH-C-118/decides/SH-S-5794	features.fulfillmentBatchingEligible
+CM-SHP-010	exact	decides	SH-C-118/decides/SH-S-7135	batches:index
+CM-SHP-011	exact	decides	SA-C-145/decides/SA-S-3053	shipping-fulfillment-centers
+CM-SHP-011	exact	boundary	SH-C-118/boundary/SH-S-5933	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-118/boundary/SH-S-5934	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-118/boundary/SH-S-5935	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-118/boundary/SH-S-6167	write_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-0703	How it works
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-0946	write_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-1231	fulfillment_orders/cancellation_request_accepted
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5933	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5934	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5935	read_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5996	read_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5997	read_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-5998	read_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-6167	write_assigned_fulfillment_orders
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-6206	write_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-6207	write_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-6208	write_fulfillments
+CM-SHP-011	exact	boundary	SH-C-119/boundary/SH-S-6209	write_fulfillments
+CM-SHP-011	exact	decides	SH-C-119/decides/SH-S-0704	How it works
+CM-SHP-011	exact	decides	SH-C-119/decides/SH-S-6205	write_fulfillments
+CM-SHP-011	exact	boundary	ZD-C-060/boundary/ZD-S-0844	integrated with ZidShip
+CM-SHP-011	exact	decides	ZD-C-061/decides/ZD-S-0847	logistic type
+CM-SHP-012	exact	decides	SH-C-120/decides/SH-S-5095	shopify-fulfillment-network
+CM-SHP-013	exact	boundary	BC-C-027/boundary/BC-S-0164	filterAvailableShippingOptions
+CM-SHP-013	exact	boundary	SH-C-122/boundary/SH-S-0978	write_delivery_customizations
+CM-SHP-013	exact	boundary	SH-C-122/boundary/SH-S-5974	read_delivery_customizations
+CM-SHP-013	exact	boundary	SH-C-122/boundary/SH-S-6185	write_delivery_customizations
+CM-SHP-013	exact	boundary	SH-C-122/boundary/SH-S-6186	write_delivery_customizations
+CM-SHP-013	exact	decides	SH-C-122/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-SHP-014	exact	boundary	SH-C-123/boundary/SH-S-0990	write_fulfillment_constraint_rules
+CM-SHP-014	exact	boundary	SH-C-123/boundary/SH-S-5995	read_fulfillment_constraint_rules
+CM-SHP-014	exact	boundary	SH-C-123/boundary/SH-S-6203	write_fulfillment_constraint_rules
+CM-SHP-014	exact	boundary	SH-C-123/boundary/SH-S-6204	write_fulfillment_constraint_rules
+CM-SHP-014	exact	decides	SH-C-123/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-SHP-015	exact	decides	BC-C-070/decides/BC-S-0377	Real-time shipping quotes
+CM-SHP-015	exact	boundary	BC-C-071/boundary/BC-S-0381	Shipping Providers
+CM-SHP-015	exact	boundary	SA-C-139/boundary/SA-S-1045	Shipping Companies
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2019	الشحن العادي عبر سمسا، البريد السعودي، DHL Express، أي مكان، J&T Express
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2020	الشحن الاقتصادي عبر مندوبي، ريدبوكس، سمسا (استلام وتسليم من الفرع)
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2026	ربط خاص بـ 190+ شركة شحن
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2105	شحن محلي وعالمي مع أكثر من 100 شركة شحن
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2965	ajeek
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2968	aymakan
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2969	barq
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2970	beez
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2972	careem
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2977	diggipacks
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2978	eijack
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2979	esnad-express
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2980	fastcoo
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2982	isnaad
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2984	labaih
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2985	mahmool
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2987	mkhdoom
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2988	mlcgo
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2992	oto
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2995	redbox
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2996	road
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2998	saee
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-2999	safe-arrival
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3000	saudi-post
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3001	shipox
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3002	dhl-shipping-company
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3003	salasa
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3004	quick-shipping-company
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3007	bullet-delivery
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3008	bullet-delivery-page
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3015	jnt
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3016	flow-express
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3039	fastlo-awb
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3040	fedex
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3044	bullet-delivery-v2
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3046	mahly-express
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3080	tookan
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3081	track
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3082	ups
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3091	xturbo
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3092	zajil
+CM-SHP-015	exact	decides	SA-C-139/decides/SA-S-3269	dhl-api
+CM-SHP-015	exact	boundary	SA-C-141/boundary/SA-S-0084	المحفظة وتتبع التحويلات
+CM-SHP-015	exact	boundary	SA-C-141/boundary/SA-S-1045	Shipping Companies
+CM-SHP-015	exact	boundary	SA-C-141/boundary/SA-S-1633	shipping.company.created
+CM-SHP-015	exact	boundary	SA-C-141/boundary/SA-S-1634	shipping.company.updated
+CM-SHP-015	exact	boundary	SA-C-141/boundary/SA-S-1635	shipping.company.deleted
+CM-SHP-015	exact	decides	SA-C-141/decides/SA-S-0061	الدفع عند الاستلام ومحفظة العميل > عبر شركة شحن
+CM-SHP-015	exact	decides	SA-C-141/decides/SA-S-2026	ربط خاص بـ 190+ شركة شحن
+CM-SHP-015	exact	decides	SA-C-141/decides/SA-S-3020	multi-shipping-service-account
+CM-SHP-015	exact	decides	SA-C-141/decides/SA-S-3024	direct-activate-shipping-company
+CM-SHP-015	exact	boundary	SA-C-145/boundary/SA-S-1117	Shipping Companies
+CM-SHP-015	exact	boundary	SA-C-235/boundary/SA-S-0162	3. تخصيص الإسناد التلقائي لشركات الشحن
+CM-SHP-015	exact	decides	SH-C-115/decides/SH-S-0616	B. Your Responsibilities
+CM-SHP-015	exact	boundary	WC-C-061/boundary/WC-S-0566	Privacy considerations when using official shipping extensions
+CM-SHP-015	exact	decides	ZD-C-060/decides/ZD-S-0837	Zid Logistics: One Contract for 35 Carriers
+CM-SHP-015	exact	boundary	ZD-C-061/boundary/ZD-S-0853	Shipping apps cycle
+CM-SHP-015	exact	boundary	ZD-C-061/boundary/ZD-S-0854	Shipping Apps
+CM-SHP-015	exact	decides	ZD-C-061/decides/ZD-S-0848	السعودية أو أي من دول الخليج
+CM-SHP-015	exact	decides	ZD-C-061/decides/ZD-S-0849	الربط المخصص مع شركة الشحن
+CM-SHP-016	exact	boundary	SA-C-143/boundary/SA-S-1047	Shipping Routes
+CM-SHP-016	exact	boundary	SA-C-143/boundary/SA-S-1118	Shipping Routes
+CM-SHP-016	exact	decides	SA-C-143/decides/SA-S-3027	shipping-routes
+CM-SHP-016	exact	boundary	SA-C-145/boundary/SA-S-1118	Shipping Routes
+CM-SHP-017	exact	decides	SA-C-040/decides/SA-S-1995	تتبع الطلب عبر محفظة أبل (Apple Wallet)
+CM-SHP-017	exact	boundary	SH-C-126/boundary/SH-S-7459	FulfillmentTrackingInfo
+CM-SHP-017	exact	decides	SH-C-126/decides/SH-S-7209	apps.shopify.com/built-in-features/order-tracking
+CM-SHP-018	exact	boundary	SA-C-147/boundary/SA-S-1052	Shipping Delivery Promises
+CM-SHP-018	exact	decides	SA-C-147/decides/SA-S-3047	delivery-promises
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-1121	write_delivery_promises
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-1208	delivery_promise_settings/update
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-5975	read_delivery_promises
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-6113	read_shipping
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-6116	read_shipping
+CM-SHP-018	exact	boundary	SH-C-125/boundary/SH-S-6187	write_delivery_promises
+CM-SHP-018	exact	decides	SH-C-125/decides/SH-S-5033	shipping:list:shop-promise-examples
+CM-SHP-019	exact	boundary	SH-C-124/boundary/SH-S-1009	write_delivery_option_generators
+CM-SHP-019	exact	decides	SH-C-124/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-SHP-020	exact	boundary	SA-C-146/boundary/SA-S-5067	الوزن الفعلي
+CM-SHP-020	exact	decides	SA-C-146/decides/SA-S-0163	❓ ما هي رسوم بوابة الشحن الدولي؟
+CM-SHP-020	exact	decides	SA-C-146/decides/SA-S-0165	❓ ما هي رسوم بوابة الشحن الدولي؟
+CM-SHP-020	exact	decides	SA-C-146/decides/SA-S-0167	ما هو كود التنسيق الجمركي للمنتج - HS code؟
+CM-SHP-020	exact	decides	SA-C-146/decides/SA-S-3022	international-product
+CM-SHP-020	exact	boundary	WC-C-058/boundary/WC-S-5385	customs_commodity_code, customs_country_of_origin, customs_description
+CM-SHP-020	exact	decides	WC-C-058/decides/WC-S-5384	Product data > Shipping > Customs
+CM-SHP-021	exact	boundary	SA-C-149/boundary/SA-S-5068	تصعيد الطلب إلى سلة
+CM-SHP-021	exact	decides	SA-C-149/decides/SA-S-3017	shipments-packaging-system
+CM-SHP-021	exact	decides	ZD-C-115/decides/ZD-S-0470	manage.store.ecosystem.packaging
+CM-SHP-022	exact	boundary	SA-C-150/boundary/SA-S-5071	تصعيد الشكوى إلى سلة
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-2025	بوابة الجودة
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-2310	ask_browse_review_shipping_companies
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-2527	ask_browse_review_shipping_companies
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3014	shipping-ticket-system
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3021	shipping-feedback
+CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3274	shipping-rating
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0418	BigCommerce mobile app
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0419	License
 CM-SRF-001	exact	decides	SA-C-001/decides/SA-S-2082	تطبيق إدارة المتجر على أجهزة iOS و Android
@@ -3570,6 +5466,150 @@ CM-SUP-008	exact	decides	SA-C-179/decides/SA-S-2249	complaint_management
 CM-SUP-008	exact	decides	SA-C-179/decides/SA-S-2466	complaint_management
 CM-SUP-008	exact	boundary	ZD-C-092/boundary/ZD-S-0935	الرابط المخصص
 CM-SUP-008	exact	decides	ZD-C-111/decides/ZD-S-0997	100% optional
+CM-TAX-001	exact	boundary	BC-C-072/boundary/BC-S-0386	/v3/tax/settings
+CM-TAX-001	exact	decides	BC-C-072/decides/BC-S-0384	Tax settings
+CM-TAX-001	exact	decides	BC-C-072/decides/BC-S-0385	should_use_geolocation_to_determine_guest_shopper_tax_zone
+CM-TAX-001	exact	boundary	SA-C-160/boundary/SA-S-0182	line 220 (POST /taxes, Create Tax)
+CM-TAX-001	exact	boundary	SA-C-160/boundary/SA-S-1062	Taxes
+CM-TAX-001	exact	boundary	SA-C-160/boundary/SA-S-1555	taxes
+CM-TAX-001	exact	boundary	SA-C-160/boundary/SA-S-1621	storetax.created
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-0144	🚀 خطوات إنشاء سجل ضريبي جديد
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-0145	🔔 ملاحظات
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-0147	الأسئلة الشائعة
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-2125	تفعيل فوري لضريبة القيمة المضافة
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-2138	ضريبة القيمة المضافة
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-2142	عرض واحتساب ضريبة القيمة المضافة
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-2407	tax_management
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-2624	tax_management
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-3035	tax-profiles
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-3036	tax-profiles-disable-usa-country
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-3268	tax
+CM-TAX-001	exact	decides	SA-C-160/decides/SA-S-3485	product-price-tax-included
+CM-TAX-001	exact	boundary	SH-C-100/boundary/SH-S-1144	read_taxes
+CM-TAX-001	exact	boundary	SH-C-100/boundary/SH-S-6132	read_taxes
+CM-TAX-001	exact	boundary	SH-C-100/boundary/SH-S-6133	read_taxes
+CM-TAX-001	exact	boundary	SH-C-100/boundary/SH-S-6134	read_taxes
+CM-TAX-001	exact	decides	SH-C-100/decides/SH-S-0506	help.shopify.com/en/manual/taxes.md
+CM-TAX-001	exact	decides	SH-C-100/decides/SH-S-0508	Tax service availability by region
+CM-TAX-001	exact	decides	SH-C-100/decides/SH-S-5271	tax-settings
+CM-TAX-001	exact	decides	SH-C-100/decides/SH-S-5273	tax-settings:fee-configurations:create
+CM-TAX-001	exact	decides	SH-C-101/decides/SH-S-5271	tax-settings
+CM-TAX-001	exact	boundary	SH-C-103/boundary/SH-S-6132	read_taxes
+CM-TAX-001	exact	boundary	SH-C-103/boundary/SH-S-6133	read_taxes
+CM-TAX-001	exact	decides	SH-C-103/decides/SH-S-5271	tax-settings
+CM-TAX-001	exact	boundary	WC-C-054/boundary/WC-S-0116	wc/v3 > tax-classes
+CM-TAX-001	exact	boundary	WC-C-054/boundary/WC-S-0117	wc/v3 > taxes
+CM-TAX-001	exact	boundary	WC-C-054/boundary/WC-S-0145	wc/v4 > settings-tax
+CM-TAX-001	exact	boundary	WC-C-054/boundary/WC-S-0681	Tax rates
+CM-TAX-001	exact	boundary	WC-C-054/boundary/WC-S-0682	Tax classes
+CM-TAX-001	exact	decides	WC-C-054/decides/WC-S-0599	store_address
+CM-TAX-001	exact	decides	WC-C-054/decides/WC-S-0601	woocommerce_calc_taxes
+CM-TAX-001	exact	decides	WC-C-054/decides/WC-S-0878	Setting up taxes in WooCommerce
+CM-TAX-001	exact	decides	WC-C-054/decides/WC-S-5382	woocommerce_calc_taxes
+CM-TAX-001	exact	boundary	ZD-C-051/boundary/ZD-S-0819	GET /v1/managers/store/third-party/vat (third_vat_read)
+CM-TAX-001	exact	decides	ZD-C-051/decides/ZD-S-0370	Growth: All features of Rise package, plus:
+CM-TAX-001	exact	decides	ZD-C-051/decides/ZD-S-0815	Invoice & Tax Settings
+CM-TAX-001	exact	decides	ZD-C-051/decides/ZD-S-0816	Tax-Applicable Countries
+CM-TAX-001	exact	decides	ZD-C-051/decides/ZD-S-0817	إضافة دولة
+CM-TAX-002	exact	boundary	SH-C-100/boundary/SH-S-0039	5. Payment of Fees and Taxes
+CM-TAX-002	exact	boundary	SH-C-100/boundary/SH-S-0517	Shopify Tax fees
+CM-TAX-002	exact	boundary	SH-C-100/boundary/SH-S-0595	www.shopify.com/legal/shopify-tax-terms
+CM-TAX-002	exact	boundary	SH-C-100/boundary/SH-S-0599	2. Merchant Obligations
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-0509	Tax service availability by region, row The United States
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-0514	help.shopify.com/en/manual/taxes/shopify-tax/considerations.md
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-0515	Considerations for Shopify Tax in the United States
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-0516	Considerations for Shopify Tax in the United States
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-0518	help.shopify.com/en/manual/taxes/shopify-tax/pricing.md
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-5275	tax-settings:shared:switch-tax-product
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-5872	entitlements.shopifyTax.enabled
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-7066	Automated sales tax calculations
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-7221	apps.shopify.com/built-in-features/shopify-tax-eu
+CM-TAX-002	exact	decides	SH-C-100/decides/SH-S-7222	apps.shopify.com/built-in-features/shopify-tax-uk
+CM-TAX-002	exact	decides	SH-C-101/decides/SH-S-5872	entitlements.shopifyTax.enabled
+CM-TAX-002	exact	decides	SH-C-103/decides/SH-S-5275	tax-settings:shared:switch-tax-product
+CM-TAX-002	exact	decides	SH-C-103/decides/SH-S-5872	entitlements.shopifyTax.enabled
+CM-TAX-002	exact	boundary	WC-C-055/boundary/WC-S-0634	Set up WooCommerce Tax: Before you start
+CM-TAX-002	exact	boundary	WC-C-055/boundary/WC-S-0638	Troubleshoot WooCommerce Tax: WordPress.com connection errors
+CM-TAX-002	exact	boundary	WC-C-055/boundary/WC-S-0956	WooCommerce
+CM-TAX-002	exact	decides	WC-C-055/decides/WC-S-0635	Coverage and tax locations: Supported store countries
+CM-TAX-003	exact	decides	SA-C-160/decides/SA-S-2125	تفعيل فوري لضريبة القيمة المضافة
+CM-TAX-003	exact	decides	SH-C-101/decides/SH-S-0507	help.shopify.com/en/manual/taxes.md (note)
+CM-TAX-003	exact	decides	SH-C-101/decides/SH-S-0533	About Basic Tax
+CM-TAX-003	exact	decides	SH-C-101/decides/SH-S-0564	help.shopify.com/en/manual/international/managed-markets.md
+CM-TAX-003	exact	decides	SH-C-101/decides/SH-S-7067	Tax liability tracking
+CM-TAX-003	exact	decides	ZD-C-051/decides/ZD-S-0817	إضافة دولة
+CM-TAX-004	exact	decides	BC-C-072/decides/BC-S-0384	Tax settings
+CM-TAX-004	exact	boundary	BC-C-073/boundary/BC-S-0394	timeout
+CM-TAX-004	exact	boundary	BC-C-073/boundary/BC-S-0395	Provider APIs
+CM-TAX-004	exact	boundary	BC-C-073/boundary/BC-S-0396	document_submission_strategy
+CM-TAX-004	exact	decides	BC-C-073/decides/BC-S-0391	fallback_strategy
+CM-TAX-004	exact	decides	BC-C-073/decides/BC-S-0392	Tax provider visibility
+CM-TAX-004	exact	decides	BC-C-073/decides/BC-S-0393	Settings > Setup > Tax
+CM-TAX-004	exact	decides	SA-C-160/decides/SA-S-3511	avalara-tax
+CM-TAX-004	exact	boundary	SH-C-100/boundary/SH-S-6130	read_taxes
+CM-TAX-004	exact	boundary	SH-C-100/boundary/SH-S-6131	read_taxes
+CM-TAX-004	exact	boundary	SH-C-100/boundary/SH-S-6298	write_taxes
+CM-TAX-004	exact	boundary	SH-C-100/boundary/SH-S-6299	write_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-0532	Requirements and considerations for third-party tax apps
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-1145	write_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-1373	tax_services/create
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-6130	read_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-6131	read_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-6134	read_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-6298	write_taxes
+CM-TAX-004	exact	boundary	SH-C-103/boundary/SH-S-6299	write_taxes
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-0512	Tax service availability by region, row All countries and regions
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-0529	Requirements and considerations for third-party tax apps
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-0530	Requirements and considerations for third-party tax apps
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-0531	Requirements and considerations for third-party tax apps
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-5272	tax-settings:providers-manage
+CM-TAX-004	exact	decides	SH-C-103/decides/SH-S-7069	Advanced tax platform
+CM-TAX-004	exact	decides	WC-C-056/decides/WC-S-0852	11. Third-Party Services
+CM-TAX-005	exact	boundary	SH-C-102/boundary/SH-S-0670	Activate VAT validation in checkout
+CM-TAX-005	exact	decides	SH-C-102/decides/SH-S-0535	help.shopify.com/en/manual/taxes/shopify-tax/vat-validate.md
+CM-TAX-005	exact	decides	SH-C-102/decides/SH-S-0536	Activate VAT validation in checkout
+CM-TAX-005	exact	decides	SH-C-102/decides/SH-S-7068	VAT validation, exemptions, and invoicing
+CM-TAX-005	exact	boundary	WC-C-118/boundary/WC-S-5464	Manage VAT number
+CM-TAX-005	exact	decides	WC-C-118/decides/WC-S-5462	Remove VAT for Businesses in Your Base Country
+CM-TAX-005	exact	decides	WC-C-118/decides/WC-S-5463	Enable B2B Transactions
+CM-TAX-006	exact	boundary	SH-C-104/boundary/SH-S-0040	5. Payment of Fees and Taxes
+CM-TAX-006	exact	boundary	SH-C-104/boundary/SH-S-0603	1. Tax Filing Services
+CM-TAX-006	exact	boundary	SH-C-104/boundary/SH-S-0605	1. Tax Filing Services
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-0521	Eligibility for automated filing with Shopify Tax
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-0522	Eligibility for automated filing with Shopify Tax
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-0523	Eligibility for automated filing with Shopify Tax
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-0525	help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-0526	help.shopify.com/en/manual/taxes/shopify-tax/automated-filing/filing-partners.md
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-5270	tax-filing:tax-region
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-5887	features.taxFilingEnabled
+CM-TAX-006	exact	decides	SH-C-104/decides/SH-S-7223	apps.shopify.com/built-in-features/shopify-tax-us
+CM-TAX-007	exact	boundary	SA-C-161/boundary/SA-S-0013	تكامل المدفوعات
+CM-TAX-007	exact	boundary	SA-C-161/boundary/SA-S-0148	ما هو تطبيق هيئة الزكاة والضريبة
+CM-TAX-007	exact	boundary	SA-C-161/boundary/SA-S-0152	الخطوة الثالثة
+CM-TAX-007	exact	decides	SA-C-161/decides/SA-S-0149	ما هو تطبيق هيئة الزكاة والضريبة
+CM-TAX-007	exact	decides	SA-C-161/decides/SA-S-0150	الأسئلة الشائعة
+CM-TAX-007	exact	decides	SA-C-161/decides/SA-S-2120	الربط بهيئة الزكاة والضريبة والجمارك
+CM-TAX-007	exact	decides	SA-C-161/decides/SA-S-3219	zatca
+CM-TAX-007	exact	boundary	ZD-C-053/boundary/ZD-S-0829	هيئة الزكاة والضريبة والجمارك
+CM-TAX-007	exact	boundary	ZD-C-053/boundary/ZD-S-0830	رمز التحقق
+CM-TAX-007	exact	decides	ZD-C-053/decides/ZD-S-0827	مجانًا
+CM-TAX-007	exact	decides	ZD-C-053/decides/ZD-S-0828	الكاشير
+CM-TAX-008	exact	boundary	SA-C-162/boundary/SA-S-5075	الرسوم الإضافية للشحن الدولي
+CM-TAX-008	exact	decides	SA-C-162/decides/SA-S-5074	إظهار حقل المعلومات الجمركية
+CM-TAX-008	exact	boundary	SH-C-105/boundary/SH-S-7456	Duty
+CM-TAX-008	exact	decides	SH-C-105/decides/SH-S-0537	Understanding what your customer is charged
+CM-TAX-008	exact	decides	SH-C-105/decides/SH-S-0538	help.shopify.com/en/manual/international/duties-and-import-taxes.md
+CM-TAX-008	exact	decides	SH-C-105/decides/SH-S-7079	Estimate and collect duties and taxes
+CM-TAX-009	by landing	boundary	WC-C-021/boundary/WC-S-0549	WooPayments: Tax Documents for VAT/GST/CT
+CM-TAX-009	exact	boundary	SH-C-099/boundary/SH-S-0505	Criteria for receiving a Form 1099-K
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-0096	Part I, A. Taxes
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-0502	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-0504	help.shopify.com/en/manual/payments/shopify-payments/supported-countries/united-states/tax-reporting.md
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-5045	balance:inactive:tax-forms:1099-misc
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-5054	finance:tax-forms:1099-misc
+CM-TAX-009	exact	decides	SH-C-099/decides/SH-S-5463	features.hasInitiatedOnboardingToBanking
+CM-TAX-009	exact	decides	WC-C-021/decides/WC-S-0547	Form 1099-K for U.S. merchants
+CM-TAX-009	exact	decides	WC-C-021/decides/WC-S-0860	Form 1099-K for U.S. merchants
 CM-TRU-001	exact	decides	SA-C-001/decides/SA-S-3182	store-two-factor-authentication
 CM-TRU-001	exact	decides	SA-C-001/decides/SA-S-3365	biometric-verification
 CM-TRU-001	exact	decides	SH-C-007/decides/SH-S-0260	Note (requirements)
@@ -3647,6 +5687,7 @@ CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0362	add_eraser: WooCommerce Cu
 CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0363	add_eraser: WooCommerce Customer Downloads
 CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0364	add_eraser: WooCommerce Customer Payment Tokens
 CM-TRU-007	exact	decides	WC-C-045/decides/WC-S-5376	woocommerce_erasure_request_removes_order_data
+CM-TRU-008	exact	boundary	SA-C-122/boundary/SA-S-5052	وسم (عميل غير جاد)
 CM-TRU-008	exact	decides	SA-C-232/decides/SA-S-0110	disable_cod_for_banned_customers_desc
 CM-TRU-008	exact	boundary	SH-C-147/boundary/SH-S-0425	Requirements for using managed payment methods
 CM-TRU-008	exact	decides	SH-C-147/decides/SH-S-0045	9.2 Enhanced Services
