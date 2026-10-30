@@ -7,9 +7,9 @@
 2. **Per domain,** in this order:
    - **the anchor:** Shopify and Salla together, the two platforms with the most statements (3,005 and 2,560). The structure follows their own groupings;
    - **the mapping:** WooCommerce, then Zid, then BigCommerce, one platform per part, each mapped onto the domain's model so far. Where a platform shows something the model doesn't, it adds a capability, so the model stays the union of the class;
-   - **the back-fill:** the cells still missing, for every capability and every platform already mapped in the domain.
+   - **a back-fill after each mapping part that adds capabilities:** the cells those new capabilities need for the platforms mapped before it, so the order of the mapping doesn't bias the counts.
 
-You are one agent with one part. Your message names it: `scope`, or `<domain>-anchor`, `<domain>-woocommerce`, `<domain>-zid`, `<domain>-bigcommerce` or `<domain>-backfill`, where the domain is a letter from A to G. The coordinator checks your rows and merges the parts. An agent that made none of them reviews them.
+You are one agent with one part. Your message names it: `scope`; or, for a domain A to G, `<domain>-anchor`, `<domain>-woocommerce`, `<domain>-backfill-woocommerce`, `<domain>-zid`, `<domain>-backfill-zid`, `<domain>-bigcommerce`, `<domain>-backfill-bigcommerce`, or `<domain>-amend` for concerns moved into a domain after its parts ran. The parts' folders are the model: the coordinator checks your rows, and any correction after review is made in the part's own files and noted in its `notes.md`. An agent that made none of them reviews them.
 
 ## What the concern map holds
 
@@ -31,22 +31,23 @@ Beside them: `matches.tsv`, Q1's matches, and `unclear-matches.tsv`, its unclear
 
 **Read only through the script.** Never load the concern map's files whole. `method/class_slice.py` prints what you need (`python3 -I method/class_slice.py --help`):
 - `seed --domain D`: the domain's areas, with Shopify's and Salla's own groupings, from `studies/class-model/seed/km-areas.tsv`. They are leads for the area, not evidence. Leave out the seed's questions;
-- `concerns --platform P --domain D`: your concerns, then those of other domains that name yours under `also`, which you may cite but never land. Add `--where` for each concern's `where` identifiers;
+- `concerns --platform P --domain D`: your concerns, with the Q1 matches and unclear candidates that hold each, then those of other domains that name yours under `also`, which you may cite but never land. Add `--where` for each concern's `where` identifiers;
 - `statements --platform P --concerns ...`: each statement by key, with its identifier, its first 200 characters, its scope, and a flag where its note holds inference. Use `key KEY ...` for statements whole;
 - `search --platform P --terms "a;b"`: every statement of the platform holding a term, in any concern;
 - `matches --concerns ...` and `gaps --platform P --concerns ...`;
 - `outscope --platform P --terms ...`: inventory entries Q1 left unplaced, such as store limits, cited by their inventory id;
-- `model --domain D`: the domain's model so far.
+- `model --domain D`: the domain's model as written so far, your own part's rows included;
+- `homonyms`: Q1's list of the same word naming different things.
 
-**What you cite.** Only the concern map's statements, by key, and, for a quality only, an unplaced inventory entry by its id. Context read beyond the statements, in the structures they cite, informs a reading and is never cited. A statement you need that isn't held goes in your notes as a gap. The copies behind the citations are in the evidence repositories at the commits `citations.tsv` gives, in this repository's capture runs (`evidence/product-class/runs/*/manifest.tsv`, by URL), and in the WooCommerce release at `/home/user/woocommerce-release/11.2.1`.
+**What you cite.** Only the concern map's statements, by key, and, for a quality only, an unplaced inventory entry by its id. A cell cites statements of your domain's concerns and of those that name your domain under `also`. A search may find a statement of a concern in another domain that doesn't name yours: cite it only where the cell needs it, and say why in the cell's `reading`; the checker flags it for the reviewer, since one statement shouldn't support capabilities in two domains. Context read beyond the statements, in the structures they cite, informs a reading and is never cited. A statement you need that isn't held goes in your notes as a gap. The copies behind the citations are in the evidence repositories at the commits `citations.tsv` gives, in this repository's capture runs (`evidence/product-class/runs/*/manifest.tsv`, by URL), and in the WooCommerce release at `/home/user/woocommerce-release/11.2.1`.
 
 ## The scope part
 
-Assign every concern of the five platforms (652) to one domain, A to G, in `studies/class-model/scope.tsv`. The domain of a concern is what the concern is about. Use its name, its `platform_terms` and its `where` statements (`concerns --platform P --all --where`), with the seed's domains and areas as leads (`seed`).
+Assign every concern of the five platforms (652) to one domain, A to G, in `studies/class-model/scope.tsv`. The domain of a concern is what the concern is about. Use its name, its `platform_terms`, its `where` statements and the Q1 matches that hold it (`concerns --platform P --all --where`), with the seed's domains and areas as leads (`seed`). Read a concern's matches before you assign it, so a match's concerns are placed together, not named apart afterwards.
 - **One domain per concern.** A concern about several domains goes to the domain of its main subject. List the others under `also`; their parts may cite its statements.
 - **A Q1 match keeps its concerns in one domain.** Where one of them is mostly about another domain, it goes there, and its `reason` names the match.
 - **Domain H takes nothing.** It is beyond the references.
-- **The channel doesn't set the domain.** A concern delivered through an app store is in the domain of what the apps do. Domain F holds the app platform itself, its APIs, webhooks, developer tooling and partners.
+- **The channel doesn't set the domain.** A concern delivered through an app store is in the domain of what the apps do. Domain F holds the app and API platform itself: apps and extensions as such, the API's conventions, authentication, versioning and limits, webhooks as a mechanism, developer tooling and partners. A feature's own API goes with the feature: a storefront API with the storefront, a recurring-payments API with what it charges for.
 
 Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-separated, or empty) · `reason` (one line: the terms or `where` place that decide it, and any match it splits). Each row is a reading. Write as you go, platform by platform.
 
@@ -56,7 +57,7 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 
 **Build capabilities.** A capability is something a store or the platform can have or not have.
 - **Join** concerns that are the same thing on both platforms: by a Q1 match, by their own terms, by the same identifiers, or by the same definition, quoted from both.
-- **A shared term joins only where** the cited definitions or identifiers show the same object. The same word for different things stays apart, and goes in your notes with both sides' keys. Q1's matching found six such cases (`studies/concern-map/matching-notes.md`, its list "The same word naming different things").
+- **A shared term joins only where** the cited definitions or identifiers show the same object. The same word for different things stays apart, and goes in your notes with both sides' keys. Q1's matching found six such cases (`class_slice.py homonyms`).
 - **Where the two platforms' definitions show the same role under different names,** you may join them on role. That join is a reading: say why in `reading`, and cite both sides' keys.
 - **Where they cut at different grains,** you choose the capabilities, using `parent` where one holds others, and say why in your notes. A Q1 match with several concerns on one side is a difference of grain, not one capability.
 - **Each permission, webhook topic, access scope or plan line** is evidence for a capability. The platform's permission system, webhooks, scopes and plans are themselves capabilities, in their own domains.
@@ -68,18 +69,22 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 
 **Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched.
 
-**Rule on every unclear candidate** that holds a concern you land, in `rulings.tsv`: joined, as a capability, or kept apart, with the basis and keys.
+**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`: `joined:<cap_id>` where you land them together (in one capability, or one and its parent or child), or `apart`, with the basis and keys. You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
 
 ## The mapping parts
 
 **Take** your platform's concerns that `scope.tsv` gives the domain, and read the domain's model so far (`model --domain D`): the anchor and every earlier mapping part.
 - **Land each concern once:** in a capability of the model so far, where it is the same thing by a Q1 match (WooCommerce only), terms, identifiers or definition (a join on role is a reading, citing both sides); or in a new capability that only your platform shows so far, numbered past the model's highest in its area. Where a fit is strained, mark it `strained`, and say what doesn't fit, so the reviewer can split it.
 - **Write your platform's cell for every capability of the model so far,** and for your new ones: its evidence, or `none-held` with the terms searched.
-- **WooCommerce** also rules on the unclear candidates that hold its concerns. Zid and BigCommerce have none.
+- **WooCommerce** also rules on every unclear candidate that holds a WooCommerce concern it lands: `joined:<cap_id>` where that concern lands with another of the candidate's concerns, or `apart`. Zid and BigCommerce have none.
 
-## The back-fill part
+## The back-fill parts
 
-For every capability of the domain and every platform already mapped in it that has no cell, write the cell: its evidence, found by searching the platform's statements, or `none-held` with the terms searched. You add no capabilities and land no concerns.
+A back-fill runs after a mapping part that added capabilities, and is named for it (`B-backfill-woocommerce`). For every capability of the domain and every platform already mapped in it (Shopify, Salla, and the mapping parts so far) that has no cell, write the cell: its evidence, found by searching the platform's statements, or `none-held` with the terms searched. You add no capabilities and land no concerns, and you write only `cells.tsv`, `evidence.tsv` and `notes.md`.
+
+## The amendment part
+
+Where the coordinator moves a concern into a domain whose parts have already run, `<domain>-amend` lands it, as a mapping part would, and writes its platform's cells for every capability it lacks, and every platform's cells for any capability it adds.
 
 ## Cells and evidence
 
@@ -92,12 +97,12 @@ For every capability of the domain and every platform already mapped in it that 
 - `outside`: the statement names a third party, not the merchant, the buyer or the platform's company, as the one that does it, with no interface of the platform named;
 - `shows`: the statement shows the platform has the capability, or gives its terms, and supports no placement. A statement that makes the merchant or buyer responsible is `shows`, never `outside`.
 
-More than one value may apply to a cell, each on its own statements. A cell whose statements support none of the four placements is `not stated`: the script derives it. Why the four values: they are what the coordinator's count of the class reads. They come back as marked readings, each resting on cited statements, not as category labels in place of the platforms' words, which is why Q1 dropped them on 11 October.
+More than one value may apply to a cell, each resting on the statements that support it. A cell whose statements support none of the four placements is `not-stated`: the script derives it. Why the four values: they are what the coordinator's count of the class reads. They come back as marked readings, each resting on cited statements, not as category labels in place of the platforms' words, which is why Q1 dropped them on 11 October.
 
 **You don't write** a cell's places, scopes or gaps. The checker derives them from your keys into `derived.tsv`, so a statement's scope stays its own.
 
 **Qualities and slot fillers,** each in its own file:
-- **a quality:** a limit, a certification, an uptime or a data location a platform states, on the capability it bears on;
+- **a quality:** a limit, a certification, an uptime or a data location a platform states, on the capability it bears on. Its value is the statement's words. An unplaced inventory entry, such as a store limit's key, holds no value: record the key as the quality, write "not in the concern map" as its value, and name the structure that would hold it in your notes, as a gap;
 - **a slot filler:** a third party or a law that a statement names as doing the capability, or as setting its terms. It is each market's setup, not the platform's extent. Its market comes from the statement's scope. You don't judge whether the capability is a slot: the coordinator computes the kind.
 
 ## Rules
@@ -109,7 +114,7 @@ More than one value may apply to a cell, each on its own statements. A cell whos
 
 ## Output
 
-`studies/class-model/scope.tsv` for the scope part. Every other part writes in `studies/class-model/parts/<part>/`. Tab-separated files, with a header row and no quoting. Lists are `;`-separated, with no spaces around the `;`.
+`studies/class-model/scope.tsv` for the scope part. Every other part writes in `studies/class-model/parts/<part>/`. Tab-separated files, with a header row and no quoting. Lists are `;`-separated, never by commas or spaces.
 - `capabilities.tsv`: `cap_id` · `area` (its `area_id`) · `capability` · `parent` (a `cap_id` of the same domain, or empty) · `note`;
 - `landings.tsv`: `platform` · `concern_id` · `cap_id` (or `moved:<domain>`) · `join` (`match:<M-id>`, `terms`, `identifier`, `definition`, `role` or `single`) · `join_evidence` (keys of both sides, for every join but `match` and `single`) · `fit` (`clean` or `strained`) · `reading`;
 - `cells.tsv`: `cap_id` · `platform` · `held` (`statements` or `none-held`) · `terms` (the platform's own words for it, each found in a cited statement or its concern's `platform_terms`) · `searched` (for `none-held`: the terms searched, in each language) · `reading`;
@@ -119,7 +124,7 @@ More than one value may apply to a cell, each on its own statements. A cell whos
 - `rulings.tsv`: `candidate_id` · `ruling` (`joined:<cap_id>` or `apart`) · `basis` · `keys`;
 - `notes.md`: how you cut and why, every grain you chose, joins on role, homonyms, strained fits, the concerns you read under `also`, what the checker flagged, and problems with the brief or the evidence.
 
-**Size.** The scope part prints 652 concerns with their `where` identifiers. An anchor part takes about 10 to 25 concerns per platform, with about 300 to 400 statements each; a mapping part about 5 to 15 concerns. Print statements per concern, write your rows as you go, and keep your context small.
+**Size.** The scope part prints 652 concerns with their `where` identifiers. In domain B, an anchor part takes about 10 to 25 concerns per platform, with about 300 to 400 statements each, and a mapping part about 5 to 15 concerns. Larger domains, such as C, are split by area before they run, and your message says which areas are yours. Print statements per concern, write your rows as you go, and keep your context small.
 
 **Report:**
 - capabilities per area;

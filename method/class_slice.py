@@ -6,10 +6,11 @@ Usage: python3 -I method/class_slice.py COMMAND [options]
 Commands:
   seed      [--domain D]                       the seed's areas, with Shopify's and Salla's own groupings
   concerns  --platform P [--domain D] [--all] [--where]
-                                               a platform's concerns: id, name, platform_terms, split_note. With
-                                               --domain, the concerns scope.tsv gives that domain, then those of other
-                                               domains that name it under `also` (read-only). With --all, every
-                                               concern. --where adds each concern's `where` identifiers
+                                               a platform's concerns: id, name, platform_terms, split_note, and the Q1
+                                               matches and unclear candidates that hold each. With --domain, the
+                                               concerns scope.tsv gives that domain, then those of other domains that
+                                               name it under `also` (read-only). With --all, every concern. --where adds
+                                               each concern's `where` identifiers
   statements --platform P --concerns ID[,ID...] [--placement PL] [--width N] [--full]
                                                each statement of those concerns by its key, with its identifier, its
                                                first N characters (200), its scope, and a flag where its note holds
@@ -21,9 +22,11 @@ Commands:
   matches   --concerns ID[,ID...]              Q1's matches and unclear candidates that hold any of those concerns
   gaps      --platform P --concerns ID[,ID...] Q1's gaps on those concerns, with their kind
   outscope  --platform P --terms "a;b"         the platform's inventory entries Q1 left out of scope, by term
-  model     --domain D [--platform P]          the domain's model so far, from its parts in studies/class-model/parts/:
-                                               each capability, its landed concerns, and each platform's cell (held,
-                                               terms, the placements its evidence supports)
+  model     --domain D [--platform P]          the domain's model as written so far, from its parts in
+                                               studies/class-model/parts/ (yours included): each capability, its
+                                               landed concerns, and each platform's cell (held, terms, the placements
+                                               its evidence supports)
+  homonyms                                     Q1's list of the same word naming different things
 
 A statement's key is `concern_id/placement/first_cite_id`, unique on every platform's statements.tsv (`/` appears in no
 id or placement). Run with python3 -I from the repository's root.
@@ -38,7 +41,7 @@ CMAP = os.path.join(ROOT, "studies", "concern-map")
 MODEL = os.environ.get("CLASS_MODEL_DIR") or os.path.join(ROOT, "studies", "class-model")   # the variable is for tests
 PLATFORMS = ("shopify", "salla", "woocommerce", "zid", "bigcommerce")
 PREFIX = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
-PART_ORDER = ("anchor", "woocommerce", "zid", "bigcommerce", "backfill")
+PART_ORDER = ("anchor", "woocommerce", "backfill-woocommerce", "zid", "backfill-zid", "bigcommerce", "backfill-bigcommerce", "amend")
 PLACEMENTS = ("where", "decides", "responsible", "boundary", "reason")
 
 
@@ -121,9 +124,23 @@ def cmd_concerns(a):
             if r["placement"] == "where":
                 where.setdefault(r["concern_id"], []).append(clip(r["identifier"], 80))
 
+    mt, uc = {}, {}
+    for r in rows(os.path.join(CMAP, "matches.tsv")):
+        held = ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"])
+        for x in held:
+            mt.setdefault(x, []).append(f"{r['match_id']} ({' '.join(held)})")
+    for r in rows(os.path.join(CMAP, "unclear-matches.tsv")):
+        held = ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"])
+        for x in held:
+            uc.setdefault(x, []).append(f"{r['candidate_id']} ({' '.join(held)})")
+
     def show(c, tag=""):
         extra = f"  split: {clip(c['split_note'], 160)}" if c.get("split_note", "").strip() else ""
         print(f"{c['concern_id']}{tag}\t{c['concern']}\t{clip(c['platform_terms'], 200)}{extra}")
+        if c["concern_id"] in mt:
+            print(f"    Q1 matches: {'; '.join(mt[c['concern_id']])}")
+        if c["concern_id"] in uc:
+            print(f"    unclear candidates: {'; '.join(uc[c['concern_id']])}")
         if a.where:
             print(f"    where: {'; '.join(where.get(c['concern_id'], [])) or '(none)'}")
 
@@ -208,6 +225,17 @@ def cmd_outscope(a):
             print("\t".join(clip(v, 160) for v in r.values()))
 
 
+def cmd_homonyms(a):
+    text = open(os.path.join(CMAP, "matching-notes.md"), encoding="utf-8").read().split("\n")
+    start = next(i for i, l in enumerate(text) if "The same word naming different things" in l)
+    out = [text[start]]
+    for l in text[start + 1:]:
+        if re.match(r"^\d+\. \*\*|^#", l):
+            break
+        out.append(l)
+    print("\n".join(out).rstrip())
+
+
 def part_dirs(domain):
     base = os.path.join(MODEL, "parts")
     out = []
@@ -262,6 +290,7 @@ def main():
     s = sub.add_parser("gaps"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--concerns", required=True)
     s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
     s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
+    sub.add_parser("homonyms")
     a = ap.parse_args()
     globals()["cmd_" + a.cmd](a)
 

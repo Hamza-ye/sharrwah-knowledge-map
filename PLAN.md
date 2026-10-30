@@ -209,7 +209,7 @@ The founder's intent puts the class's model before architecture. The subjects co
   - **the scope:** before any part runs, every concern of the five platforms is assigned to one domain, A to G;
   - **per domain, the anchor:** Shopify and Salla, the deepest evidence, grouped as the two platforms group things;
   - **then the mapping:** WooCommerce, then Zid, then BigCommerce, one part per platform and domain, each mapped onto the domain's model so far and adding what it alone shows;
-  - **then the back-fill:** the cells that capabilities added later left missing for the platforms mapped before, so the order of the mapping doesn't bias the counts.
+  - **after each mapping part that adds capabilities, a back-fill:** the cells those capabilities need for the platforms mapped before, so the order of the mapping doesn't bias the counts.
 
   Every concern of every platform lands once, so the model stays the union of the class.
 - **The brief is inspected before it runs,** as section 3 asks: `B-extent.md` changed after its last inspection.
@@ -609,7 +609,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Until the architecture plan exists, nothing defines keeping room.** Accepted: no architecture is designed before the go on the plan, and the extent commits to no design.
 
   **What the coordinator missed.** The fold listed its own weakening of "under its own plan" without proposing what would replace it, and line (3) was the coordinator's wording, not tested against practice before it went to the founder. From now on, a weakening the coordinator lists comes with its replacement or goes to the founder as a question, and wording proposed for the founder's decisions is checked against established practice first.
-- **30 October 2026, the extent's method, after its brief's inspection** (`studies/class-model/inspection-B.md`). A fix to the method within this plan, listed at the next report. Changed in Stage 4A: a scope step comes first; the mapping runs one part per platform and domain, onto the domain's model so far; a back-fill writes the cells that later capabilities left missing.
+- **30 October 2026, the extent's method, after its brief's inspection** (`studies/class-model/inspection-B.md`). A fix to the method within this plan, listed at the next report. Changed in Stage 4A: a scope step comes first; the mapping runs one part per platform and domain, onto the domain's model so far; after each mapping part that adds capabilities, a back-fill writes the cells they need for the platforms mapped before.
 
   **What this change removes or weakens,** with the risk each part controlled:
   - **A mapping part per platform read the whole merged anchor,** so a Zid or BigCommerce concern could meet a capability of any domain (inspection A's N4). Weakened: a mapping part reads its domain's model. Replaced: the scope step assigns every concern before any part runs, and a part that finds a concern belongs elsewhere lands it as moved, for the coordinator to move.
