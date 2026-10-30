@@ -133,3 +133,15 @@ The extent passed 312.5 million, a quarter past its budget of 250 million, at 31
 | **The extent, in all** | **about 890, within 750 to 1,000** |
 
 That is inside the projection of 30 October's milestone (700 million to a billion), and about three and a half times the budget. No higher plan has been needed so far: the usage limit hasn't stopped an agent.
+
+## 11. Domain D's mapping, and one statement under two concerns (30 October, 05:18 to 05:45 UTC)
+
+- **D-woocommerce: 9.6 million** in two batches (5.6 and 4.0), for 16 concerns and 64 cells: about 0.15 million per cell. One capability added, abandoned cart and order recovery, from a Marketplace category.
+- **The concern map holds one statement under several concerns,** each time with its own key and the same statement id: 548 of Shopify's statement ids, 124 of Salla's, 145 of WooCommerce's. The checker tests a citation by its key, so it could not see one statement cited under two concerns' keys:
+  - twice as `core`, in two domains;
+  - or under one concern's key in a tree where another concern holding it has landed.
+
+  The merge now finds both by statement id. Of 25 statements counted in two domains, three were the sole support of a cell. One showed a duplicate capability across domains: E's first storefront batch had put hosting with SSL, while G already held hosting of the store. Each was corrected so that it counts once, `core` where the capability names it. The other 22 change no count and go to the final review, with 26 landings whose shared statement is cited in another tree.
+- **An agent launched without its effort setting** inherited the coordinating session's `max`. It was stopped after 3.2 million, before it had written a row, and relaunched at `high`, as the anchors run (section 9).
+- **Lesson:** a test that reads a key is blind to what the key's statement is shared with. Where a source reuses one statement under several concerns, test by the statement's id as well.
+
