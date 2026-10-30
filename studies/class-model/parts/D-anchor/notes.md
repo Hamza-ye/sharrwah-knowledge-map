@@ -126,3 +126,72 @@ Concerns landed: SH-C-127, SH-C-128, SH-C-129, SH-C-130, SH-C-131, SH-C-132, SH-
 
 - CM-MKT-007, Shopify: SendGrid (SH-S-0054, its Email Services' provider) and Twilio (SH-S-0051, whose Acceptable Use Policy sets the SMS Services' terms).
 - CM-MKT-010, Salla: the ad services its plan line names for linking the store (Google Ads, Snapchat, TikTok, Twitter, Facebook, Pinterest, AdRoll; SA-S-2149, plan سلة برو), and Sweply (SA-S-5135, the ads wallet for Salla Ads on Meta). That Sweply is a third party is a reading: who it is isn't stated, and a reviewer may drop the row.
+
+## Batch 3: MKT (marketing, discounts and promotions), Salla's concerns
+
+Concerns landed: SA-C-032, SA-C-070, SA-C-071, SA-C-072, SA-C-073, SA-C-074, SA-C-075, SA-C-076, SA-C-080. Seven landed in batch 2's capabilities, two in new ones. Capabilities CM-MKT-016 to CM-MKT-021, with a Shopify cell for each. Evidence added to batch 2's Salla cells CM-MKT-002, 003, 005, 007, 009, 010, 011, 014 and 015, from my concerns' statements; their cells' readings are batch 2's and don't name the rows added, so each row's `why` says what it shows.
+
+### Where each concern landed
+
+- SA-C-070 Coupons in CM-MKT-002 (terms, with Shopify's discount codes); SA-C-071 Special and Promotional Offers in CM-MKT-003 (single: Shopify's cell is none-held); SA-C-072 Affiliate marketing in CM-MKT-014 (terms); SA-C-073 Salla Ads in CM-MKT-010 (role); SA-C-074 Pixels & feeds in CM-MKT-009 (M-055); SA-C-075 Campaigns and Marketing calendar in CM-MKT-005 (M-051); SA-C-076 Influencers in CM-MKT-015 (role).
+- New: SA-C-032 in CM-MKT-016 (back-in-stock alerts, with Shopify's Stock alert apps); SA-C-080 in CM-MKT-018 (bank offers, Salla only).
+
+### How I cut, and the grains
+
+- **Back-in-stock alerts (016) and wishlist notifications (017)** are apart: Salla gives each a settings route of its own (products/notify_availability, SA-S-1754; products/wishlist-notifications, SA-S-1761), and Q1's M-080 joins only the back-in-stock side with WooCommerce. SA-C-032 lands in 016, its main subject and M-080's basis, strained for 017. The wishlist itself (SA-C-091's Wishlist API, Shopify's Wishlist apps in SH-C-187) isn't cited: it is for the LOY batch that lands SH-C-187, and for domain E.
+- **Bank offers (018)** under CM-MKT-003, by Salla's grouping: its offers dashboard app holds offers, conditional, banks and cashback (SA-S-3589). Cashback is SA-C-063's (LOY) and isn't cited.
+- **Marketing calendar (019)** under CM-MKT-005: SA-C-075 holds campaigns and the calendar together. The navigation list both links sit in holds every marketing link, so it doesn't decide the parent; a reading.
+- **Ads wallet (020)** under CM-MKT-010: its permissions and its payment app are inside Salla Ads (/marketing/ads/payment). Salla Ads' other dashboard apps (YouTube, Meta, media, smart campaigns, tools, engage, WhatsApp, template, marketing credits / xio) aren't defined anywhere held, so they stay in CM-MKT-010 as core, not capabilities of their own; app notifications go to CM-MKT-007, whose Salla plan line names campaigns by app notifications (SA-S-2010). A reviewer may hold that WhatsApp ads (SA-S-3582) are messaging campaigns too.
+- **Upsell and cross-sell (021)** has an App Store category on both (Shopify's Upsell and cross-sell apps, SH-I-1846, of SH-C-188; Salla's Cross/up sell, SA-S-1188), so it is a capability by the dry run's rule. No parent: nothing held puts it under offers or discounts. Shopify's parent category page, Upsell and bundle apps (SH-S-2604), is cited in domain B's CM-SEL-006 and not here.
+- **Product feeds stay out of this model.** SA-C-074's feed flags (google-merchant-feed, facebook-catalog-feed, snapchat-catalog-feed) and google-site-verification aren't pixels, and Shopify's product feeds are SH-C-138, which scope.tsv gives domain E. SA-C-074 names E under also, so domain E's part may cite them. SA-C-074 lands strained.
+- **SA-S-2151** (plan line تسويق واسع عبر واتساب وتويتر وانستجرام وجوجل): its title reads as broad marketing, but its description is a link or code for the affiliate marketer to share. The description governs (dry-run convention), so it is cited in CM-MKT-014, and SA-C-075 is strained for it.
+
+### Joins on role, and weak joins
+
+- **SA-C-073 with SH-C-194 (CM-MKT-010):** Salla Ads, Salla's own product for digital advertising campaigns (SA-S-0007), against Shopify's Advertising apps (SH-S-2573). The same role, advertising on ad platforms, done by the platform on Salla and by apps on Shopify.
+- **SA-C-076 with SH-C-134 (CM-MKT-015):** Salla's influencers against Shopify Collabs' creators (SH-S-0731).
+- **Weak:** SA-C-032 with Shopify's Stock alert apps rests on an inventory entry's name; CM-MKT-021 rests on two categories' names on both sides.
+
+### Homonyms kept apart
+
+- **Wallet.** Salla's ads wallet (CM-MKT-020, محفظة إعلانات, SA-S-5134, SA-S-5135) isn't its customer wallet (محفظة العميل, SA-C-063, LOY), and Shopify Balance (SH-C-088, domain C) is neither.
+- **Campaign.** Salla's influencer Campaign Orders (SA-S-1922, SA-S-5137) are orders an influencer takes on, cited in CM-MKT-015, not marketing campaigns (CM-MKT-005); Salla Ads' campaign permissions (salla_ads_campaigns_*) are ad campaigns, cited in CM-MKT-010.
+- **Bank.** Salla's bank offers (a discount, CM-MKT-018) against Shopify's banking statements (Shopify Balance, payouts, chargebacks; domain C).
+
+### Rulings
+
+- U-058: joined:CM-MKT-002. U-057: nested:CM-MKT-003 for SH-C-127 × SA-C-071; joined:CM-MKT-021 for SH-C-188 × SA-C-071. U-055: joined:CM-MKT-011 (SH-C-132), apart (SH-C-133), joined:CM-MKT-010 (SH-C-194). U-056: joined:CM-MKT-014 (SH-C-134 × SA-C-072 and SH-C-194 × SA-C-072), joined:CM-MKT-015 (SH-C-134 × SA-C-076), apart (SH-C-194 × SA-C-076). U-060: joined:CM-MKT-016 for SH-C-188 × SA-C-032. Each as batch 2's notes foresaw, but for U-057, whose SH-C-188 pair is joined, not apart, since CM-MKT-021 now cites its upsell apps.
+- **Left for later:** U-060's pair SH-C-187 × SA-C-032, for the batch that lands SH-C-187 (LOY). What my cells give it: no capability here cites SH-C-187; its Wishlist apps (SH-I-1821) are named, not cited, in CM-MKT-017's Shopify cell. Apart, unless that batch's wishlist capability cites SA-C-032's wishlist notifications.
+
+### Gaps that limit the cells
+
+- Salla: no statement held defines its wishlist notifications, its marketing calendar, its Cross/up sell category, its ads wallet beyond SA-S-5134 and SA-S-5135, or Salla Ads' dashboard apps other than audiences. The makers of the apps behind the flags mailchimp-marketing, snapchat-conversion and tiktok-conversion aren't stated, so those flags are shows, as batch 2 did for facebook-conversion. Q1's gaps: responsible and reason not read for most of these concerns (page not read), so no cell here says who answers for coupons, offers, affiliates, pixels, campaigns or bank offers.
+- Shopify: its Stock alert apps and Upsell and cross-sell apps are inventory entries only; no statement defines them.
+
+### A correction for the reviewer
+
+- Batch 2 cited SA-S-2565 and SA-S-2566 (coupon_browse, coupon_management) in CM-MKT-002, and SA-S-2592 and SA-S-2593 (salla_ads_campaigns_*) in CM-MKT-010, as core, with SA-S-2565's `why` reading "staff permission". Their notes say they are permissions "a partner can request on a merchant's store". By the dry run's convention the staff permission is core and the partner's shows an interface for apps. I added the staff permissions (SA-S-2348, 2349, 2375, 2376 and others) as core and didn't rewrite batch 2's rows; the reviewer may move those four to extension-point. The same may hold for SA-S-2571, 2572, 2577, 2578, 2589, 2590, 2594 and 2595, which I didn't check.
+
+### What the checker flagged, answered
+
+- **none-held with matches,** my cells: CM-MKT-017 Shopify (SH-I-1821, Wishlist apps, named in the cell: a wishlist, not notifications); CM-MKT-018 Shopify (Shopify Balance, Payments, payouts and payment-method statements of domain C, none a discount, named in the cell); CM-MKT-019 Shopify (calendar months in Shopify Credit's and partners' payment terms); CM-MKT-020 Shopify (Shop Campaigns' per-conversion charge, SH-S-0726, cited in CM-MKT-012: how Shopify charges, not a wallet).
+- **CM-MKT-017 and CM-MKT-021 have no concern landed in their trees.** SA-C-032 lands in CM-MKT-016 (strained for 017); SA-C-071 lands in CM-MKT-003 (strained for 021), and SH-C-188, whose upsell apps 021 cites, is domain B's. Both are capabilities because a platform gives them a place of their own (a settings route; an App Store category on both). A reviewer may make them children, or land the concerns differently.
+- The other flags (SA-C-122's statement, Shopify's own-service rows, batch 1's and batch 2's none-held cells, M-018) are earlier batches', answered in their sections.
+
+
+## The coordinator's sweep of partner permissions (30 October)
+
+- CM-MKT-002: SA-C-070/decides/SA-S-2565 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-002: SA-C-070/decides/SA-S-2566 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-003: SA-C-071/decides/SA-S-2571 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-003: SA-C-071/decides/SA-S-2572 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-005: SA-C-075/decides/SA-S-2567 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-005: SA-C-075/decides/SA-S-2568 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-010: SA-C-073/decides/SA-S-2592 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-010: SA-C-073/decides/SA-S-2593 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-011: SA-C-073/decides/SA-S-2594 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-011: SA-C-073/decides/SA-S-2595 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-014: SA-C-072/decides/SA-S-2577 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-014: SA-C-072/decides/SA-S-2578 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-015: SA-C-076/decides/SA-S-2589 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.
+- CM-MKT-015: SA-C-076/decides/SA-S-2590 was `core`; it is a permission a partner can request (the statement's note), so `shows`, by the dry run's S7.

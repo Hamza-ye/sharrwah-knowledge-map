@@ -231,8 +231,8 @@ CM-MKT-002	salla	core	SA-C-070/where/SA-S-1815	its own link Coupons, /marketing/
 CM-MKT-002	salla	core	SA-C-070/where/SA-S-3583	dashboard app @salla.sa/ui-merchant-coupons
 CM-MKT-002	salla	core	SA-C-070/where/SA-S-1038	its own API folder Coupons
 CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2001	plan line كوبونات التخفيض
-CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2565	staff permission coupon_browse
-CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2566	staff permission coupon_management
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-2565	staff permission coupon_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-2566	staff permission coupon_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-002	salla	core	SA-C-070/where/SA-S-1707	settings route coupons/multiple-coupons
 CM-MKT-002	salla	core	SA-C-070/boundary/SA-S-1623	webhook event coupon.applied
 CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3244	released flag coupon-group, plans pro, special, plus
@@ -240,15 +240,15 @@ CM-MKT-003	salla	core	SA-C-071/where/SA-S-1817	its own link Promotional Offers, 
 CM-MKT-003	salla	core	SA-C-071/where/SA-S-1036	its own API folder Special Offers
 CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2004	plan line العروض الخاصة
 CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2103	plan line: offers and discounts applied automatically at the order
-CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2571	staff permission special_offers_browse
-CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2572	staff permission special_offers_management
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-2571	staff permission special_offers_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-2572	staff permission special_offers_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1557	its own app scope specialoffers
 CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1626	webhook event specialoffer.created
 CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1627	webhook event specialoffer.updated
 CM-MKT-005	salla	core	SA-C-075/where/SA-S-1818	its own link Campaigns, /marketing/campaign/retargeting
 CM-MKT-005	salla	core	SA-C-075/where/SA-S-3535	dashboard app @salla.sa/ui-merchant-marketing-campaign
-CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2567	staff permission campaign_browse
-CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2568	staff permission campaign_management
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-2567	staff permission campaign_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-2568	staff permission campaign_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-005	salla	core	SA-C-070/where/SA-S-1694	its own link Marketing
 CM-MKT-005	salla	core	SA-C-072/boundary/SA-S-1560	its own app scope marketing / التسويق
 CM-MKT-007	salla	core	SA-C-075/decides/SA-S-2010	plan line حملات تسويقية عبر الرسائل النصية وإشعارات التطبيق
@@ -267,8 +267,8 @@ CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1341	event Cart Viewed
 CM-MKT-010	salla	core	SA-C-073/where/SA-S-1812	its own link Salla Ads, /marketing/ads/dashboard
 CM-MKT-010	salla	core	SA-C-073/where/SA-S-0007	Salla's product for digital advertising campaigns from the merchant environment
 CM-MKT-010	salla	core	SA-C-073/decides/SA-S-1954	plan line إعلانات سلة
-CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2592	staff permission salla_ads_campaigns_browse
-CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2593	staff permission salla_ads_campaigns_management
+CM-MKT-010	salla	shows	SA-C-073/decides/SA-S-2592	staff permission salla_ads_campaigns_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-010	salla	shows	SA-C-073/decides/SA-S-2593	staff permission salla_ads_campaigns_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-010	salla	core	SA-C-073/decides/SA-S-3257	released flag salla-ads
 CM-MKT-010	salla	core	SA-C-073/where/SA-S-3561	dashboard app @salla.sa/ui-merchant-ads-snapchat
 CM-MKT-010	salla	core	SA-C-073/where/SA-S-3562	dashboard app @salla.sa/ui-merchant-ads-tiktok
@@ -278,14 +278,14 @@ CM-MKT-010	salla	shows	SA-C-073/boundary/SA-S-5135	add funds to your Sweply ads 
 CM-MKT-010	salla	shows	SA-C-073/responsible/SA-S-5133	Sweply is not responsible for any results
 CM-MKT-011	salla	core	SA-C-073/where/SA-S-3572	dashboard app @salla.sa/ui-merchant-ads-tools, path tools|audience-manager
 CM-MKT-011	salla	core	SA-C-073/where/SA-S-3599	dashboard app @salla.sa/ui-merchant-ads-audience-v2
-CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2594	staff permission salla_ads_audiences_browse, استعراض الجماهير
-CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2595	staff permission salla_ads_audiences_management, إدارة الجماهير
+CM-MKT-011	salla	shows	SA-C-073/decides/SA-S-2594	staff permission salla_ads_audiences_browse, استعراض الجماهير (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-011	salla	shows	SA-C-073/decides/SA-S-2595	staff permission salla_ads_audiences_management, إدارة الجماهير (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-013	salla	core	SA-C-072/where/SA-S-3550	dashboard app @salla.sa/ui-merchant-partner-marketing: referrals, affiliates, experts, influencers, marketplace
 CM-MKT-014	salla	core	SA-C-072/where/SA-S-1821	its own link Affiliate marketing, /marketing/affiliate
 CM-MKT-014	salla	core	SA-C-072/where/SA-S-1037	its own API folder Affiliates
 CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2015	plan line التسويق بالعمولة
-CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2577	staff permission affiliate_browse
-CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2578	staff permission affiliate_management
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-2577	staff permission affiliate_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-2578	staff permission affiliate_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-014	salla	core	SA-C-072/where/SA-S-1711	settings route coupons/commission-period
 CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3253	released flag affiliate, plans plus, pro, special
 CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3446	released flag affiliates-attribution-settings
@@ -293,10 +293,138 @@ CM-MKT-014	salla	extension-point	SA-C-206/where/SA-S-1916	Partners portal link A
 CM-MKT-014	salla	shows	SA-C-206/responsible/SA-S-0043	the marketer's commission includes taxes
 CM-MKT-015	salla	core	SA-C-076/where/SA-S-1816	its own link Influencers, /marketing/influencers
 CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2002	plan line التسويق مع المؤثرين
-CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2589	staff permission manage_influencers
-CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2590	staff permission browse_influencers
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-2589	staff permission manage_influencers (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-2590	staff permission browse_influencers (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)
 CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3192	released flag influencer-marketplace
 CM-MKT-015	salla	extension-point	SA-C-206/where/SA-S-1921	Partners portal link My Profile, /influencer/profile
 CM-MKT-015	salla	extension-point	SA-C-206/where/SA-S-1922	Partners portal link Campaign Orders, /influencers/campaigns
 CM-MKT-015	salla	shows	SA-C-076/responsible/SA-S-5025	the partner and the merchant are independent; Salla bears no responsibility
 CM-MKT-007	salla	extension-point	SA-C-200/boundary/SA-S-1673	Communication Webhooks event marketing.campaign.broadcast
+CM-MKT-016	shopify	extension-point	SH-I-1844	App Store category Stock alert apps
+CM-MKT-016	salla	core	SA-C-032/where/SA-S-1754	its own settings route Back in stock alerts
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-2402	staff permission product_availability_notify_management
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-3466	released flag product-availability-notify, plans plus, pro, special
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-3467	released flag product-sku-availability-notify, plans plus, pro, special
+CM-MKT-016	salla	core	SA-C-032/boundary/SA-S-1666	its webhook event product.availability.alert
+CM-MKT-016	salla	core	SA-C-032/boundary/SA-S-1498	its storefront component for subscribing to availability
+CM-MKT-016	salla	shows	SA-C-032/reason/SA-S-5013	reason: knowing which products are worth restocking
+CM-MKT-017	salla	core	SA-C-032/where/SA-S-1761	its own settings route Wishlist Notifications
+CM-MKT-017	salla	core	SA-C-032/decides/SA-S-3173	released flag wishlist-notifications
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-2110	plan line عروض البنك, plan سلة برو
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-3308	released flag bank-offer, plans special, pro
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-3309	released flag bank-offer-scope
+CM-MKT-018	salla	core	SA-C-080/where/SA-S-3589	dashboard app whose path holds /marketing/banks
+CM-MKT-018	salla	shows	SA-C-080/boundary/SA-S-5028	definition: a discount for paying with a given bank's card
+CM-MKT-018	salla	shows	SA-C-080/reason/SA-S-5029	reason: encourage paying through a preferred bank
+CM-MKT-019	salla	core	SA-C-075/where/SA-S-1819	its own link Marketing calendar
+CM-MKT-019	salla	core	SA-C-075/decides/SA-S-2013	plan line الجدول الزمني للتسويق, plan سلة بلس
+CM-MKT-019	salla	core	SA-C-075/decides/SA-S-3254	released flag marketing-calendar, plans plus, pro, special
+CM-MKT-020	salla	core	SA-C-073/decides/SA-S-2381	staff permission salla_ads_wallet_browse
+CM-MKT-020	salla	core	SA-C-073/decides/SA-S-2382	staff permission salla_ads_wallet_management
+CM-MKT-020	salla	core	SA-C-073/where/SA-S-3600	dashboard app @salla.sa/ui-merchant-ads-payment
+CM-MKT-020	salla	shows	SA-C-073/boundary/SA-S-5134	amounts deducted from the wallet
+CM-MKT-020	salla	shows	SA-C-073/boundary/SA-S-5135	add funds to the Sweply ads wallet, on Meta
+CM-MKT-021	shopify	extension-point	SH-I-1846	App Store category Upsell and cross-sell apps
+CM-MKT-021	salla	extension-point	SA-C-071/where/SA-S-1188	app category Cross/up sell
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2008	plan line إنشاء مجموعة كوبونات, plan سلة بلس
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2009	plan line كوبونات محلي, plan سلة بلس
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2108	plan line كوبونات تسويقية, plan سلة برو
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2348	staff permission coupon_browse
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2349	staff permission coupon_management
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2368	staff permission coupon_delete
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2369	staff permission coupon_statistics
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3245	released flag coupon-export, plans special, pro
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3252	released flag coupon-payment-method, plans plus, pro, special
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3256	released flag coupon-customer, plans plus, pro, special
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3258	released flag coupon-multi-market, plans plus, pro, special
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3255	flag coupon-countries, not released
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3322	flag bundle-aware-coupon, not released
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3324	flag multi_coupon, not released
+CM-MKT-002	salla	core	SA-C-070/boundary/SA-S-1573	its webhook event order.coupon.updated
+CM-MKT-003	salla	core	SA-C-071/where/SA-S-3589	dashboard app @salla.sa/ui-merchant-offers, /marketing/offers
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-1980	plan line إظهار العروض الخاصة أسفل المنتج, plan سلة بلس
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2005	plan line عروض السلة, plan سلة بلس
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2354	staff permission special_offers_browse
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2355	staff permission special_offers_management
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3096	released flag promotion-title-and-subtitle, plans plus, pro, special
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3310	released flag special-offer, plans plus, pro, special
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3311	released flag special-offer-export, plan special
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3313	released flag conditional-offer, plans plus, pro, special
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3318	released flag tiered-offer, plans plus, pro, special
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3312	flag discount-offer-table, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3316	flag customer-group-offer, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3317	flag prebuilt-cart-offer, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3319	flag external-purchases-tiered-offer, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3320	flag tiered-offer-hide-until-threshold, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3325	flag enable-offers-for-mobile-app, not released
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3326	flag cart-offer-applied-tier, not released
+CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2350	staff permission campaign_browse
+CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2351	staff permission campaign_management
+CM-MKT-005	salla	extension-point	SA-C-075/where/SA-S-1223	App Store category Marketing / التسويق
+CM-MKT-005	salla	extension-point	SA-C-075/where/SA-S-1196	app category Marketing in its extension-points list
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-3246	flag external-campaign, not released
+CM-MKT-007	salla	core	SA-C-073/where/SA-S-3575	dashboard app @salla.sa/ui-merchant-app-notification, /marketing/ads/app-notification
+CM-MKT-007	salla	core	SA-C-075/decides/SA-S-3259	released flag one-signal
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-2986	flag mailchimp-marketing of type app, with an app-store install link; maker not stated
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-2983	flag klaviyo of type app, not released
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-3260	flag one-signal-push-notification of type app, not released
+CM-MKT-009	salla	extension-point	SA-C-074/where/SA-S-1189	app category ads Track in its extension-points list
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3217	flag snapchat-conversion of type app, with an app id; maker not stated
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3218	flag tiktok-conversion of type app, with an app id; maker not stated
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3220	flag twitter-pixel-v2 of type app, not released
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3239	flag snapchat-extension, not released
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2374	staff permission salla_ads_dashboard_browse
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2375	staff permission salla_ads_campaigns_browse
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2376	staff permission salla_ads_campaigns_management
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2379	staff permission salla_ads_integrations_browse
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2380	staff permission salla_ads_integrations_management
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3564	dashboard app for ads on YouTube, /marketing/ads/youtube
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3565	dashboard app @salla.sa/ui-merchant-ads-manageads
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3569	dashboard app for ads on Meta, /marketing/ads/meta
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3571	dashboard app @salla.sa/ui-merchant-ads-dashboard
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3574	dashboard app @salla.sa/ui-merchant-marketing-credits, /marketing/ads/xio
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3580	dashboard app @salla.sa/ui-merchant-engage, /marketing/ads/engage
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3582	dashboard app @salla.sa/ui-merchant-whatsapp, /marketing/ads/whatsapp
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3584	dashboard app @salla.sa/ui-merchant-template, /marketing/ads/template
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3588	dashboard app @salla.sa/ui-merchant-ads-media
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3592	dashboard app @salla.sa/ui-merchant-ads-media-v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3593	dashboard app for ads on Snapchat, v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3594	dashboard app for ads on TikTok, v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3595	dashboard app for ads on Google, v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3596	dashboard app @salla.sa/ui-merchant-ads-tools-v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3597	dashboard app @salla.sa/ui-merchant-ads-campaigns-v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3598	dashboard app for ads on Meta, v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3603	dashboard app @salla.sa/ui-merchant-ads-smart-campaigns
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3604	dashboard app @salla.sa/ui-merchant-ads-dashboard-v2
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3605	dashboard app @salla.sa/ui-merchant-ads-xio-v2
+CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2377	staff permission salla_ads_audiences_browse
+CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2378	staff permission salla_ads_audiences_management
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1708	its own settings route Marketing assets
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1709	its own settings route Automatic welcome message
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1710	its own settings route Status settings
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-3536	dashboard app whose path holds /marketing/affiliate
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2144	plan line التسويق بالعمولة, plan سلة برو
+CM-MKT-014	salla	core	SA-C-075/decides/SA-S-2151	plan line: a link or code for the affiliate marketer, plan سلة برو
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2360	staff permission affiliate_browse
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2361	staff permission affiliate_management
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3243	released flag coupon-affiliate, plans pro, special
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3369	released flag affiliates-cta
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3405	released flag private_affiliate_link
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3406	released flag merchant-special-link, plans plus, pro, special
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3408	released flag affiliate-show-contacts
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3410	released flag affiliate-multi-scopes, plans plus, pro, special
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3411	released flag export_special_opportunity
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3447	released flag affiliate-fixed-commission
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3448	released flag affiliate-marketer-budget
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3197	flag affiliate-paid-ad, not released
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3407	flag affiliate-public-statistics, not released
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3449	flag affiliates-settings, not released
+CM-MKT-015	salla	core	SA-C-076/where/SA-S-3537	dashboard app whose path holds /marketing/influencers
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2372	staff permission manage_influencers
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2373	staff permission browse_influencers
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3196	released flag advanced-influencers-search
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3409	released flag influencer-campaign-templates
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3432	released flag influencers-packages
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3193	flag influencer-marketplace-soon, not released
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3242	flag celebrity-marketing, not released
+CM-MKT-015	salla	shows	SA-C-076/boundary/SA-S-5137	five statuses of campaign orders, for influencers in Salla's Partners
