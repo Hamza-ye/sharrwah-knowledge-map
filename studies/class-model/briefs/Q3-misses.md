@@ -1,5 +1,7 @@
 # Brief: Q3's candidate misses, checked against what is held (Stage 4A)
 
+**Superseded before it ran** (the coordinator, 30 October, after its inspection, `studies/class-model/inspection-Q3M.md`). The held pass runs first, and Q3's 13 candidate misses are checked in its second stage, which reads the held pages for the cells that still hold nothing. That stage's brief takes every finding of the inspection. This file stays as the record of what was inspected.
+
 **What this is.** `PLAN.md`, Stage 4A, "The check for what it misses": "A row the model doesn't cover is a candidate miss, checked against the evidence." Q3's batches searched the concern map: its statements and placed inventory entries (`class_slice.py search`, `outscope`). The evidence repositories hold far more: pages, schemas, structures and runs the concern map never read. Shopify's return rules, for one, are held in its Help Center and its admin API schema, and the concern map has no statement on them. This check reads the repositories themselves for each candidate miss. `PLAN.md`, section 6, Evidence: before a gap goes to anyone, its route is checked against what is held, through each repository's own reading guides and indexes first, then by search (the founder, 30 October).
 
 What you find decides what follows: a new capability, a cell's evidence, or a capture request. You draft; the coordinator checks every line and decides.

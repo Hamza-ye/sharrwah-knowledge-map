@@ -17,17 +17,17 @@ Q3 = os.path.join(MODEL, "q3")
 MERGED = os.path.join(MODEL, "merged")
 # each miss: its Q3 rows and the thing, in the words of the rows' rests
 MISSES = {
-    "M-01": (["km:CHK-02", "pay:PAY-02"], "tipping: the buyer adding a tip at checkout, and the merchant setting the tip options"),
-    "M-02": (["pay:PAY-36"], "a payment test mode in a store: test orders and simulated payment outcomes, kept out of the store's balances and reports"),
+    "M-01": (["km:CHK-02", "pay:PAY-02"], "tipping: a tip the buyer adds to what it owes, online or in person, and the options the merchant sets for it"),
+    "M-02": (["pay:PAY-36"], "a payment test mode in a store: test orders and simulated payment outcomes, and what the platform says of how they stay apart from live orders, balances and reports"),
     "M-03": (["km:AIA-02"], "agent identity: an AI agent linking to, or acting as, a buyer's account in the store"),
     "M-04": (["km:LNG-02"], "the admin's own language, right-to-left layout, numerals, date formats and mixed-direction text"),
     "M-05": (["km:SHP-04"], "scheduled delivery: the buyer choosing a delivery date or time slot"),
     "M-06": (["km:SHP-05"], "packages and box sizes: the package dimensions a merchant saves for labels and rates"),
     "M-07": (["km:RET-02"], "return rules the merchant sets: the return window, return fees, restocking fees, final sale"),
     "M-08": (["km:PTN-02"], "handing a store a partner built to its client: its ownership, and its billing"),
-    "M-09": (["km:EVO-01", "km:EVO-02"], "each platform's dated record of what it added, changed or removed: changelogs, release notes, editions"),
+    "M-09": (["km:EVO-01", "km:EVO-02"], "each platform's dated record of what it added, changed or removed, for merchants and for developers: changelogs and release notes"),
     "M-10": (["pay:PAY-05"], "try before you buy: the buyer receiving goods before being charged, charged later on a trigger"),
-    "M-11": (["pay:PAY-30"], "a buyer refusing a cash-on-delivery order at the door: the shipment's return and its charges"),
+    "M-11": (["pay:PAY-30"], "a buyer refusing a delivery at the door, as a way to contest a payment, whatever the payment method: the shipment's return and what is charged"),
     "M-12": (["pay:PAY-31"], "strong buyer authentication (3D Secure) shifting a fraud loss, or chargeback liability, away from the seller"),
     "M-13": (["pay:PAY-75"], "a buyer's own claim of payment: a transfer receipt or proof of payment the buyer submits for an order"),
 }

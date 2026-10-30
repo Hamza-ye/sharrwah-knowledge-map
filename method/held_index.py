@@ -1,4 +1,5 @@
-# What observed-sa, observed-sh and this repository's capture runs hold, by address, and in what readable form.
+# What observed-sa, observed-sh, other-product-class (its platform folders) and this repository's capture runs hold,
+# by address, and in what readable form. An archive held in parts is read at the part its fetch.cdx names.
 # PLAN.md Stage 0: before a gap goes to anyone, its route is checked against what is held.
 #
 # Readable forms, best first:
@@ -77,6 +78,12 @@ class Held:
             root = roots.get(repo)
             if root and os.path.isdir(os.path.join(root, ".git")):
                 self._repo(repo, root)
+        # other-product-class holds one folder per platform, each laid out as an observed repository is
+        root = roots.get("other-product-class")
+        if root and os.path.isdir(os.path.join(root, ".git")):
+            for sub in ("zid/", "bigcommerce/", "woocommerce/"):
+                if os.path.isdir(os.path.join(root, sub)):
+                    self._repo("other-product-class", root, sub)
         skm = roots.get("sharrwah-knowledge-map")
         for run in capture_runs:
             self._capture(run, skm)
@@ -86,24 +93,27 @@ class Held:
         for k in url_keys(url):
             self.by_key[k].append(h)
 
-    def _repo(self, repo, root):
+    def _repo(self, repo, root, sub=""):
+        """A repository, or one platform folder of it (`sub`, such as "zid/"), whose paths are given from the root."""
         commit = git(root, "rev-parse", "HEAD").strip()
         self.commits[repo] = commit
-        tracked = set(git(root, "ls-files", "raw/runs/*/fetch.warc.gz").split())
-        for cdx in sorted(glob.glob(os.path.join(root, "raw/runs/*/fetch.cdx"))):
+        # an archive over 100 MB is held in parts, fetch-00000.warc.gz and on; fetch.cdx names each record's part
+        tracked = set(git(root, "ls-files", f"{sub}raw/runs/*/fetch.warc.gz", f"{sub}raw/runs/*/fetch-*.warc.gz").split())
+        for cdx in sorted(glob.glob(os.path.join(root, sub, "raw/runs/*/fetch.cdx"))):
             run = os.path.basename(os.path.dirname(cdx))
-            warc = f"raw/runs/{run}/fetch.warc.gz"
-            in_git = warc in tracked
             with open(cdx, encoding="utf-8", errors="replace") as f:
                 for line in f:
                     t = line.rstrip("\n").split(" ")
                     if len(t) < 9 or line.startswith(" CDX"):
                         continue
+                    part = os.path.basename(t[9]) if len(t) > 9 and re.fullmatch(r"fetch(-\d+)?\.warc\.gz", os.path.basename(t[9])) else "fetch.warc.gz"
+                    warc = f"{sub}raw/runs/{run}/{part}"
+                    in_git = warc in tracked
                     status = t[4]
                     self._add(t[0], {"repo": repo, "commit": commit, "kind": "warc" if in_git else "cdx-only",
                                      "status": status, "redirect": t[6] if t[6] != "-" else "",
                                      "location": f"{warc}@{t[8]}", "readable": in_git and status.startswith("2")})
-        for meta in sorted(glob.glob(os.path.join(root, "structures/**/meta.json"), recursive=True)):
+        for meta in sorted(glob.glob(os.path.join(root, sub, "structures/**/meta.json"), recursive=True)):
             try:
                 m = json.load(open(meta, encoding="utf-8"))
             except Exception:
@@ -118,9 +128,9 @@ class Held:
                                 "location": os.path.relpath(os.path.dirname(meta), root),
                                 "readable": status.startswith("2")})
         # The pages browser runs' steps ended at, each with its page text in git (the steps' witnesses).
-        steps = set(git(root, "ls-files", "raw/runs/*/steps/*.text.txt", "raw/runs/*/steps/*.aria.yaml",
-                        "derived/step-text-from-html/*/*.html.txt").split())
-        for acts in sorted(glob.glob(os.path.join(root, "raw/runs/*/actions.jsonl"))):
+        steps = set(git(root, "ls-files", f"{sub}raw/runs/*/steps/*.text.txt", f"{sub}raw/runs/*/steps/*.aria.yaml",
+                        f"{sub}derived/step-text-from-html/*/*.html.txt").split())
+        for acts in sorted(glob.glob(os.path.join(root, sub, "raw/runs/*/actions.jsonl"))):
             run = os.path.basename(os.path.dirname(acts))
             with open(acts, encoding="utf-8", errors="replace") as f:
                 for line in f:
@@ -130,8 +140,8 @@ class Held:
                     except Exception:
                         continue
                     url = a.get("url") or ""
-                    files = [f"raw/runs/{run}/steps/{n:03d}.{k}" for k in ("text.txt", "aria.yaml")] + \
-                            [f"derived/step-text-from-html/{run}/{n:03d}.html.txt"]
+                    files = [f"{sub}raw/runs/{run}/steps/{n:03d}.{k}" for k in ("text.txt", "aria.yaml")] + \
+                            [f"{sub}derived/step-text-from-html/{run}/{n:03d}.html.txt"]
                     files = [x for x in files if x in steps]
                     if not url.startswith("http") or not files:
                         continue
@@ -145,9 +155,9 @@ class Held:
                     if m:
                         self._add(m.group(1) + (m.group(2) or "/"), dict(h))
         # What runs' pages received, saved in git: each saved body by the address it was received from.
-        saved = set(git(root, "ls-files", "raw/runs/*/responses/*", "raw/runs/*/answers/*").split())
+        saved = set(git(root, "ls-files", f"{sub}raw/runs/*/responses/*", f"{sub}raw/runs/*/answers/*").split())
         for f_name, kind in (("responses.jsonl", "responses"), ("answers.jsonl", "answers")):
-            for lst in sorted(glob.glob(os.path.join(root, "raw/runs/*", f_name))):
+            for lst in sorted(glob.glob(os.path.join(root, sub, "raw/runs/*", f_name))):
                 run = os.path.basename(os.path.dirname(lst))
                 with open(lst, encoding="utf-8", errors="replace") as f:
                     for line in f:
@@ -155,7 +165,7 @@ class Held:
                             o = json.loads(line)
                         except Exception:
                             continue
-                        loc = f"raw/runs/{run}/{o.get('file', '')}"
+                        loc = f"{sub}raw/runs/{run}/{o.get('file', '')}"
                         host = o.get("host") or ""
                         path = o.get("path") if kind == "responses" else o.get("endpoint")
                         if loc not in saved or not host or not path:
@@ -243,6 +253,7 @@ if __name__ == "__main__":
     skm = os.path.dirname(here)
     held = Held({"observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
                  "observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
+                 "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class"),
                  "sharrwah-knowledge-map": skm},
                 sorted(glob.glob(os.path.join(skm, "evidence/product-class/runs/*"))))
     for u in sys.argv[1:]:

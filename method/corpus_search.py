@@ -20,13 +20,14 @@
 # indexes and derived tables built from them, and the structures' source files. Each document of a run is listed by
 # its own place, never merged with another store's or run's.
 #
-# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
+# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--brief] [--with TERM [TERM ...]]
 #                                           [--runs-only | --only TEXT]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
 #   places or plans it may hold for. At most N documents per corpus are listed (default 40), those where the terms
 #   are densest first; every address past the cap follows, one line each. A Zid help page is matched on its
 #   article alone, without the help centre's menu, which every page holds; a captured page shows its title.
+#   --brief prints, past the cap, how many more documents each corpus holds, not every address.
 #   --runs-only searches only the observed repositories' runs (Shopify and Salla), in seconds; --only TEXT searches only
 #   the run corpora whose name holds TEXT, such as --only "step text from saved HTML".
 #   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
@@ -361,6 +362,7 @@ def documents(platform):
                os.path.basename(path), text)
 
 ONLY = {"runs": False, "text": ""}      # --runs-only and --only: which corpora a search reads
+BRIEF = {"on": False}                   # --brief: past the cap, a count per corpus, not every address
 
 def parse(argv):
     """(platform, terms, --with terms, --all, --max) from the command line."""
@@ -370,6 +372,8 @@ def parse(argv):
         a = argv[i]
         if a == "--runs-only":
             ONLY["runs"] = True
+        elif a == "--brief":
+            BRIEF["on"] = True
         elif a == "--only":
             ONLY["runs"], ONLY["text"] = True, argv[i + 1]
             i += 1
@@ -471,8 +475,11 @@ def main():
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
         print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(t for t, _, _ in hits)}"
               + (f"; with: {', '.join(t for t, _, _ in with_hits)}" if also else "") + f"\n    …{snippet}…")
-    for corpus, rest in past.items():               # every address past the cap, one line each
-        print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest))
+    for corpus, rest in past.items():               # every address past the cap, one line each (a count, with --brief)
+        if BRIEF["on"]:
+            print(f"\npast the first {cap} in {corpus}: {len(rest)} more (rerun without --brief, or with a higher --max, to list them)")
+        else:
+            print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest))
     print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term)"
           + (f", with any of {also}" if also else "") + ":",
           "; ".join(f"{c}: {n} documents{' (first ' + str(cap) + ' listed)' if n > cap else ''}" for c, n in total.items())

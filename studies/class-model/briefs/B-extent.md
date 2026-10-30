@@ -129,6 +129,14 @@ More than one value may apply to a cell, each resting on the statements that sup
 
 The dry run's review set these (`studies/class-model/review-dry-run-rulings.md`). They apply to every part.
 - **When something becomes a capability:** where at least one platform gives it a place of its own: an admin section or route, an API group, a plan line, or an app category. A single feature flag isn't enough.
+- **What a place of its own is** (the coordinator, 30 October, after the inspection of the misses brief, `inspection-Q3M.md`, Q3M-6): each kind as the platform's own self-description names it:
+  - **an admin route:** an entry of the platform's route manifest, with its own path (Shopify's admin router, Salla's dashboard routes, Zid's dashboard route manifest), or a page its admin's own page index names;
+  - **an admin section:** a section, menu item or settings item that the platform's navigation, settings list or route manifest names with its own title. An anchor the manifest names within a route, with its own title and path, is one;
+  - **an API group:** a group the API's own reference names, not one type, field, mutation or enum value;
+  - **a plan line:** a row of a plan table, or a policy in the plan's own list;
+  - **an app category:** a category of the platform's app store.
+
+  A field, a toggle or a line of text inside a page isn't one, and neither is a feature flag. A place whose thing a capability already holds, as its cells' readings show, is that capability's evidence, not a new one.
 - **The platform's own API** (its folder, object, scope, webhook topic, or a mutation's requirement) for its own feature is `core`, a guide addressed to app developers included. It is `extension-point` where the API's statements say apps or partners do the work.
 - **A feature flag that isn't released** (`"released": false`) is `shows`. A released flag supports `core`, with its plan or store as its scope.
 - **A permission listed for staff and for partners:** cite the staff permission for `core`. A partner's permission shows an interface for apps.
