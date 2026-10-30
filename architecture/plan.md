@@ -39,6 +39,7 @@ Each source is graded by the Knowledge Map's source types, with what each can't 
 | What Sharrwah has decided, and the quality order | `founder-decisions.tsv` | DEC | Nothing about the world: a decision is not evidence |
 | Scale | The founder, later. Until then, engineering's stated bands | DEC; an assumption, marked as one | What load will really come |
 | How comparable systems are built | Open-source commerce systems, standards, engineering writing, read for each decision that needs them | OSS, STD, LIT | What merchants of this class get; facts about the five |
+| How one of the five built itself | Shopify's own engineering talks, posts and repositories, held in `evidence/shopify-engineering/` (E001 to E040, captured 10 October 2026): payments beside the rest of the platform, pods, Packwerk, Functions, payment apps and the provider contract | LIT, OSS | Whether the design still stands: the detailed write-ups of its internal payment architecture date from 2019 to 2022. Why another of the five built otherwise. What it costs to run |
 | Whether a design works on Sharrwah's stack, at what cost | Spikes | EXP | The reference products |
 
 **Left out:**
