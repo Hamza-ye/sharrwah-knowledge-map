@@ -116,3 +116,15 @@ The coordinator may want the selection to say which object an entry of a repeate
 
 - **A repeated path:** above.
 - **The checker's container NOTE** fires on every editor route that prefixes others, since both editors' paths are flat strings (`channel/mobile/editor/...`, `themes/editor/...`). Each is placed on the editor's capability, which is also its children's, as SA-7 placed containers by path.
+
+## The coordinator's check (30 October 2026, after the batch)
+
+- **Entry 74 is a route as well:** CM-MKT-007 `shows`, with the module's other routes. The entry stands for every object of the app with the path `/`. One of them is the module's redirect to `/marketing/ads/app-notification-ads` (`items.jsonl` line 1340, keys `element`), which the notes found; the entry's locator names only the first, a cookie library's defaults.
+  - Among SA-7's to SA-9's `out` entries, it is the only one whose app and path also hold a route.
+  - The brief now says how to find an entry's other items, for `dashboard-app-routes` and `portal-app-routes`. 209 of the first structure's 1,038 app paths repeat, and 58 of the second's 628.
+- **The cells this batch changes stand:** CM-ONB-004, as from SA-7 and SA-8, by the storefront wizard.
+- **The other lines stand:**
+  - the themes editor's marketplace suggestions (67 to 69) are `shows`, as M-3 is refined;
+  - the app-notification module's routes are `shows`, since the registry serves its address with another module;
+  - the store gates are written as scope, `kyc_country SA` named by what it is computed from (M-11).
+- **Cost:** 12.2 million tokens over 70 requests, about 130,000 an entry. No cell changes beyond SA-7's and SA-8's.
