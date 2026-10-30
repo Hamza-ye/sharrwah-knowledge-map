@@ -27,13 +27,14 @@ G1 = "e4d5cee3aaea9a12b3e27c1e641075a01d88052c"   # the rows as PLAN.md links th
 HEAD = ["set", "row_id", "needed_by", "result", "rest", "cap_ids", "who_answers", "when", "time_bombs", "basis", "what_would_settle_it"]
 RESULTS = {"covered", "partly", "beyond the class", "candidate miss: held", "candidate miss: not held", "unclear"}
 RESTS = {"beyond the class", "candidate miss: held", "candidate miss: not held"}
-WHO = re.compile(r"^(model|founder|engineering|outside|plan|subject:S-\d\d|subject:none)$")
-WHEN = {"before build", "before release", "later", "unclear"}
+WHO = re.compile(r"^(model|founder|engineering:build|engineering:detail|outside|plan|subject:S-\d\d|subject:none)$")
+WHEN = {"before build", "at the area's build", "before release", "later", "unclear"}
 BOMBS = {"bundles", "wrong party", "wrong time", "market fact"}
-ORDER = ["before build", "before release", "later"]
-NEEDED = {"model": "before build", "spine": "before build", "slice": "before build", "launch": "before release", "later": "later"}
+ORDER = ["before build", "at the area's build", "before release", "later"]
+NEEDED = {"model": "before build", "spine": "before build", "slice": "at the area's build", "launch": "before release", "later": "later"}
 # the `when` each answerer gives by itself (the coordinator's own rules; engineering's depends on the row)
-FIXED = {"model": "before build", "founder": "before release", "outside": "before release", "plan": "before build"}
+FIXED = {"model": "before build", "founder": "before release", "outside": "before release", "plan": "before build",
+         "engineering:build": "before build", "engineering:detail": "at the area's build"}
 STOP = set("what which when where whose does each with from into that this they their them than then there these those "
            "have will would should could other more most also only same such between about under over after before "
            "store stores platform platforms merchant merchants sharrwah shopify salla".split())
@@ -113,7 +114,7 @@ def cmd_slice(a):
     elif a.area:
         area = a.area.upper()
         chosen = [r for r in rs.values() if r["row_id"].split("-")[0] == area and (not a.set or r["set"] == a.set)]
-        chosen = chosen[(a.start or 1) - 1:a.end or None]
+        chosen = chosen[(a.start or 1) - 1:(a.end if a.end is not None else None)]
         if not chosen:
             sys.exit(f"no rows in area {area}" + (f" and set {a.set}" if a.set else ""))
     else:
@@ -244,7 +245,7 @@ def cmd_check(a):
                     problems.append(f"{w}: {c} is not a capability of the model")
             who = semi(r["who_answers"])
             if not who or any(not WHO.match(x) for x in who):
-                problems.append(f"{w}: who_answers is `;`-separated, each model, founder, engineering, outside, plan, subject:S-NN or subject:none")
+                problems.append(f"{w}: who_answers is `;`-separated, each model, founder, engineering:build, engineering:detail, outside, plan, subject:S-NN or subject:none")
             for x in who:
                 if x.startswith("subject:S-") and x[8:] not in subjects:
                     problems.append(f"{w}: {x[8:]} is not in studies/subjects/subjects.tsv")
@@ -277,14 +278,12 @@ def cmd_check(a):
             if r["when"] not in WHEN:
                 problems.append(f"{w}: when must be one of {', '.join(sorted(WHEN))}")
             ruled = when_of(who)
-            if ruled and r["when"] != "unclear" and r["when"] != ruled and "engineering" not in who:
+            if ruled and r["when"] != "unclear" and r["when"] != ruled:
                 problems.append(f"{w}: when is {ruled} by the rules for {', '.join(who)}")
             bs = semi(r["time_bombs"])
             if any(x not in BOMBS for x in bs):
                 problems.append(f"{w}: time_bombs are `;`-separated, from {', '.join(sorted(BOMBS))}")
             others = when_of([x for x in who if x != "model"])
-            if "engineering" in who and not others:
-                others = None
             wrong = bool(others and r["when"] != "unclear" and NEEDED.get(r["needed_by"]) != others)
             if wrong and "wrong time" not in bs:
                 problems.append(f"{w}: wrong time: needed_by {r['needed_by']} against {others}, the earliest when of its answerers other than the model")

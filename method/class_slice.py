@@ -271,7 +271,7 @@ def cmd_statements(a):
 def cmd_key(a):
     for k in a.keys:
         p = platform_of(k)
-        hit = [r for r in citable(p) if key(r) == k]
+        hit = [r for r in citable(p) if key(r) == k or (re.fullmatch(r"[A-Z]{2}-S-\d{4}", k) and key(r).endswith("/" + k))]
         if not hit:
             print(f"{k}\tNOT FOUND")
         for r in hit:

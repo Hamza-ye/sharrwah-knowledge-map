@@ -35,16 +35,16 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
    - `model`: the model's capabilities and cells;
    - `subject:S-NN`: a subject of `subjects.tsv`, where the row asks who or what fills something in a market; `subject:none` where a market's fact is covered by no subject, with the subject it would need named in `what_would_settle_it`, for the coordinator to take to Stage 3's list;
    - `founder`: a decision on the founder's list: markets, their order and timing, and which merchants first; plans and prices; commercial agreements and partners; the company, its legal structure and licences; spending; whether Sharrwah's own company runs a service in the merchant's business, where and when (`founder-decisions.tsv`, 29 October, "Intent (standing)");
-   - `engineering`: Sharrwah's own design, an architecture or build decision;
+   - `engineering:build` or `engineering:detail`: Sharrwah's own design, an architecture decision (`build`) or a build detail, decided as the area is built (`detail`). Where an engineering ruling already in force answers part of the row (a subject's register row that is engineering's and wasn't vetoed), name the row in `basis` as `S-NN <row id>` and say `ruled` in `what_would_settle_it`;
    - `outside`: a platform, partner, regulator or lawyer, reached through the founder;
    - `plan`: the method itself, which `PLAN.md` or a decision on it answers.
 
-   **Whom a row's words ask:** a row in the present tense about "the platform(s)" or "each platform" asks the class, the model. A row with "should" or "Sharrwah" asks engineering, or the founder where its subject is on the founder's list. A row that names neither asks both: its part about the class goes to the model, its design part to engineering.
+   **Whom a row's words ask:** a row in the present tense about "the platform(s)" or "each platform" asks the class, the model. A row with "should" or "Sharrwah" asks engineering, or the founder where its subject is on the founder's list. A row that names neither asks the model what the class does; add engineering only where it also asks a choice that is Sharrwah's own, such as which of the platforms' shapes to take, a limit or a policy, which the class's evidence can show but not make.
 
 3. **`when`** it must be answered. These rules are the coordinator's own, a reading:
    - `model`: `before build`, since the architecture reads the model before anything is built;
-   - `engineering`: `before build` for an architecture decision, `later` for a build detail;
-   - `founder`: `before release`, for every decision on the founder's list, since the platform keeps room for each, whoever provides it (`founder-decisions.tsv`, 26, 28 and 29 October). What the structure must keep open for such a decision is engineering's: add `engineering`, `before build`, where the row asks how room is kept;
+   - `engineering:build`: `before build`; `engineering:detail`: `at the area's build`, the time a row's `needed_by` `slice` names;
+   - `founder`: `before release`, for every decision on the founder's list, since the platform keeps room for each, whoever provides it (`founder-decisions.tsv`, 26, 28 and 29 October). What the structure must keep open for such a decision is engineering's: add `engineering:build` where the row asks how room is kept;
    - `subject:S-NN`: `before build`, since each area's architecture waits for the subjects that cover its open questions, and S-03's and S-09's bind every area (`architecture/plan.md`, section 3). Where the row asks only which provider, partner or law fills a slot in one market, add `outside`, `before release`;
    - `subject:none`: gives no time of its own;
    - `outside`: `before release`;
@@ -54,12 +54,12 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
 4. **`time_bombs`,** by Q3's four types:
    - `bundles`: its parts land on capabilities placed differently: of different kinds (`class`, `slot`, `open`), as `q3.py slice` shows them (Q3's type, as agreed). Also where its parts have different answerers' times (the coordinator's own addition, a reading);
    - `wrong party`: as worded, it asks a party that can't answer it: it asks what the platforms do about something only a market, the founder or engineering settles; or it asks for a decision the class's evidence or a decision in force already settles. Its lane isn't read, so judge by its words;
-   - `wrong time`: its `needed_by` disagrees with the earliest `when` of its answerers other than `model`, reading `model`, `spine` and `slice` as before build, `launch` as before release and `later` as later. A row only the model answers has none, and a `when` of `unclear` raises none (the coordinator's own reading of Q3's type);
+   - `wrong time`: its `needed_by` disagrees with the earliest `when` of its answerers other than `model`, reading `model` and `spine` as before build, `slice` as at the area's build, `launch` as before release and `later` as later. A row only the model answers has none, and a `when` of `unclear` raises none (the coordinator's own reading of Q3's type);
    - `market fact`: it asks what the product should do, where the answer is a fact of a market.
 
    `q3.py check` computes `bundles` and `wrong time` from your other columns and requires them exactly where they hold.
 
-5. **`basis`,** `;`-separated: for `covered` and `partly`, the cells that answer, as `<cap_id>@<platform>`, adding statement keys only where a cell's reading is what answers; for a held miss, the statement keys; for a subject, its id and its register row; for a decision, `founder-decisions <date> <gate>`; for the plan, its section.
+5. **`basis`,** `;`-separated: for `covered` and `partly`, the cells that answer, as `<cap_id>@<platform>`, adding statement keys only where a cell's reading is what answers; for a held miss, the statement keys; for a subject, its id and its register row, or, for a subject that hasn't run, `subjects.tsv <S-NN>` or the register row that moved the question to it; for a decision, `founder-decisions <date> <gate>`; for the plan, its section.
 
 6. **`what_would_settle_it`:** for `partly`, `unclear` and `candidate miss: not held`; and `detail: <what>` where a covered row asks detail beyond the cells.
 
@@ -74,7 +74,7 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
 
 - `python3 -I method/q3.py slice --rows <set:id,...>`, or `--area <AREA> --set km|pay --from N --to M`: each area's capabilities once, with each one's domain, kind, count and placements, then each row with the capabilities elsewhere that share its rarer words. A lead list, not an answer.
 - `python3 -I method/q3.py where <key or statement id> ...`: which cells cite a statement, and where its concern lands.
-- `python3 -I method/class_slice.py model --domain <D> --areas <AREA>` for a capability's cells and readings; `key <key>` for one statement; `search` and `outscope` for a candidate miss.
+- `python3 -I method/class_slice.py model --domain <D> --areas <AREA>` for an area's cells and their placements; `python3 -I method/land_points.py cell <cap_id> <platform>` for one cell whole, its reading and every statement it cites; `class_slice.py key <key or statement id>` for one statement; `search` and `outscope` for a candidate miss.
 - Write your batch's own file, `studies/class-model/q3/check-<batch>.tsv`, with its header, a few rows at a time; don't print it back. Other batches write their own.
 
 ## Output
