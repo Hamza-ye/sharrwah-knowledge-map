@@ -63,6 +63,11 @@ def main():
         p = plat(k)
         return stm[p].get(k) if p else None
 
+    def sid(k):
+        """The statement a key names: the concern map holds one statement under several concerns, each with its own
+        key and the same statement id, so two keys can name one statement. An inventory id names itself."""
+        return (plat(k), k.rsplit("/", 1)[-1]) if "/" in k else (plat(k), k)
+
     # capabilities, landings, cells
     caps, cdom = {}, {}
     for dom, _, d in parts:
@@ -112,14 +117,18 @@ def main():
     for dom, _, d in parts:
         ev += [r | {"part": d, "domain": dom} for r in data[d]["evidence.tsv"]]
 
-    # one statement counted twice
-    own = {}
+    # one statement counted twice: by its statement id, under whichever concern's key each part cites it
+    own, own_rows, cell_own = {}, {}, {}
     for r in ev:
         if r["supports"] in ("core", "own-service"):
-            own.setdefault(r["key"], set()).add(cdom.get(r["cap_id"], "?"))
-    for k, ds in sorted(own.items()):
+            own.setdefault(sid(r["key"]), set()).add(cdom.get(r["cap_id"], "?"))
+            own_rows.setdefault(sid(r["key"]), []).append(r)
+            cell_own.setdefault((r["cap_id"], r["platform"]), set()).add(sid(r["key"]))
+    for s_, ds in sorted(own.items()):
         if len(ds) > 1:
-            flags.append(f"{k} supports core or own-service in domains {', '.join(sorted(ds))}: it counts in each")
+            # a cell whose core rests on this statement alone: there the count hinges on it
+            uses = sorted({f"{r['cap_id']} ({r['key']}{', its cell rests on it alone' if cell_own[(r['cap_id'], r['platform'])] == {s_} else ''})" for r in own_rows[s_]})
+            flags.append(f"one statement supports core or own-service in domains {', '.join(sorted(ds))}, so it counts in each: {'; '.join(uses)}")
 
     # rulings again, on all parts of the domain
     uc = {u["candidate_id"]: u for u in rows(os.path.join(MODEL, "..", "concern-map", "unclear-matches.tsv"))}
@@ -191,6 +200,30 @@ def main():
                 if len(shared) >= 2:
                     flags.append(f"{x} (domain {cdom.get(x)}) and {y} (domain {cdom.get(y)}) share terms {', '.join(sorted(shared))[:120]}: one capability?")
 
+    # a clean landing whose statement is cited in another tree of its domain under another concern's key (the
+    # concern map holds one statement under several concerns): strained by the dry run's S1, unless the statement is
+    # general (a term of service, say), which the review decides
+    def root(c):
+        seen = set()
+        while c in caps and caps[c]["parent"].strip() and c not in seen:
+            seen.add(c); c = caps[c]["parent"].strip()
+        return c
+    held_ids = {}
+    for p in PLATFORMS:
+        for s in stm[p].values():
+            if s["placement"] != "inventory":
+                held_ids.setdefault(s["concern_id"], set()).add(sid(key(s)))
+    by_sid = {}
+    for r in ev:
+        by_sid.setdefault((r["domain"], sid(r["key"])), []).append(r)
+    for c, lr in sorted(landed.items()):
+        if lr["fit"] != "clean" or lr["cap_id"] not in caps:
+            continue
+        far = sorted({f"{r['key']} in {r['cap_id']}" for s_ in held_ids.get(c, ()) for r in by_sid.get((lr["domain"], s_), [])
+                      if r["key"].split("/")[0] != c and root(r["cap_id"]) != root(lr["cap_id"])})
+        if far:
+            flags.append(f"{c} is clean in {lr['cap_id']}, and a statement it holds is cited in another tree under another concern's key: {'; '.join(far[:4])}{' …' if len(far) > 4 else ''}: strained, unless the statement is general")
+
     # outputs
     out = os.path.join(MODEL, "merged")
     os.makedirs(out, exist_ok=True)
@@ -207,7 +240,7 @@ def main():
         allr = [r | {"part": d} for _, _, d in parts for r in data[d][f]]
         write(os.path.join(out, f), HEADS[f] + ["part"], allr)
     # interfaces: exact where cited, by landing otherwise
-    cited_dom = {(r["domain"], r["key"]) for r in ev}
+    cited_dom = {(r["domain"], sid(r["key"])) for r in ev}
     iface = []
     for r in ev:
         s = statement(r["key"])
@@ -216,7 +249,7 @@ def main():
     for c, lr in landed.items():
         p = lr["platform"]
         for s in items(p):
-            if c in s.get("concern_ids", [s["concern_id"]]) and s["placement"] in ("boundary", "decides") and (lr["domain"], key(s)) not in cited_dom:
+            if c in s.get("concern_ids", [s["concern_id"]]) and s["placement"] in ("boundary", "decides") and (lr["domain"], sid(key(s))) not in cited_dom:
                 iface.append({"cap_id": lr["cap_id"], "grade": "by landing", "placement": s["placement"], "key": key(s), "identifier": " ".join(s["identifier"].split())[:160]})
     seen, iface_u = set(), []
     for r in iface:

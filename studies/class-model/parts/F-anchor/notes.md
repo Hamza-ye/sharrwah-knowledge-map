@@ -755,3 +755,7 @@ answered in their sections.
 2. **Batch 3's problem 2 comes back with SA-C-100.** The brief allows a cell to cite another domain's statement "where the
    cell needs it". Its rule for a pair whose other concern is in a domain without F under also is that the ruling is apart.
    The two still pull against each other, and I followed batch 3: none-held and apart.
+
+## The coordinator's correction after D-woocommerce (30 October)
+
+- **SA-S-3550 counts once.** The dashboard app @salla.sa/ui-merchant-partner-marketing, at the merchant's routes marketing/referrals, marketing/affiliates, experts and influencers, supported `core` in CM-PTN-009 here and in D's CM-MKT-013, affiliate and creator marketing, whose Salla cell rests on it alone. It is the merchant's own pages, so it stays `core` in D and is `shows` here. CM-PTN-009's Salla cell stays `core` on its released flags (SA-S-3414, SA-S-3415).

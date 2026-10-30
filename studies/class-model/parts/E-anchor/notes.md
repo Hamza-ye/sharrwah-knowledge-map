@@ -89,3 +89,7 @@ Rulings made in this batch: U-014 joined:CM-SFR-010; U-063 (SH-C-193 against SA-
   - The terms نطاق المتجر, تصميم المتجر, صفحات الهبوط and إدارة الإعلانات were dropped from the cells: no cited statement holds them.
   - The two match landings were rewritten as terms, as above.
 
+## The coordinator's corrections after batch 1 (30 October)
+
+- **Hosting is G's.** Domain G already holds CM-OPS-003, hosting of the store, whose Shopify cell rests on the plan row Unlimited web hosting (SH-S-7032) alone. Batch 1 cited the same row as `core` in CM-SFR-010, so it counted in two domains (the merge's flag, by convention 8). CM-SFR-010 is now the SSL certificate for the store's domains; SH-S-7032 is `shows` in it, and SH-C-036's landing is `strained`, its hosting row being G's.
+

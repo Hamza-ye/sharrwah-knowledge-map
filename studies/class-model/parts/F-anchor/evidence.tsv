@@ -301,7 +301,7 @@ CM-PTN-008	salla	core	SA-C-173/decides/SA-S-5076	entitlement is calculated by th
 CM-PTN-008	salla	core	SA-C-173/boundary/SA-S-5077	earnings due go to the merchant's wallet on the 28th of each month
 CM-PTN-008	salla	shows	SA-C-173/where/SA-S-2210	the agreement's page on salla.com
 CM-PTN-008	salla	shows	SA-C-173/responsible/SA-S-0019	the agreement, by Salla's owning company and its commercial registration
-CM-PTN-009	salla	core	SA-C-206/where/SA-S-3550	the dashboard app @salla.sa/ui-merchant-partner-marketing, at marketing/affiliates and influencers
+CM-PTN-009	salla	shows	SA-C-206/where/SA-S-3550	the dashboard app @salla.sa/ui-merchant-partner-marketing, at marketing/affiliates and influencers; core in D's CM-MKT-013, the merchant's affiliate marketing, whose Salla cell rests on it, so it counts once (the coordinator, convention 8)
 CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3414	the released flag partner-unlimited-affiliate
 CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3415	the released flag partner-merchant-affiliate, plans plus, pro and special
 CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1915	the Partners portal link Affiliate Profile, under Affiliates

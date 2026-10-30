@@ -99,7 +99,7 @@ CM-SFR-008	salla	shows	SA-C-007/responsible/SA-S-5004	merchant answers for a dom
 CM-SFR-009	salla	core	SA-C-007/where/SA-S-1064	Merchant API folder DNS Records
 CM-SFR-009	salla	core	SA-C-007/boundary/SA-S-1556	access scope dns-records
 CM-SFR-009	salla	core	SA-C-007/decides/SA-S-2041	plan line إدارة إعدادات DNS
-CM-SFR-010	shopify	core	SH-C-036/decides/SH-S-7032	plan row Unlimited web hosting, Included
+CM-SFR-010	shopify	shows	SH-C-036/decides/SH-S-7032	plan row Unlimited web hosting, Included; core in G's CM-OPS-003, hosting of the store, so it counts once (the coordinator, convention 8)
 CM-SFR-010	shopify	core	SH-C-036/decides/SH-S-7034	plan row Free SSL certificate, Included
 CM-SFR-010	shopify	core	SH-C-036/boundary/SH-S-7465	Domain field sslEnabled
 CM-SFR-010	salla	core	SA-C-007/decides/SA-S-2038	plan line شهادة SSL مجانية under the domain

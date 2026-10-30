@@ -207,3 +207,180 @@ concern:
   for Shopify's "Upsell and cross-sell apps" misses WooCommerce's plural, and a direct search found it.
 - WooCommerce's coupon webhook topics and Store API cart routes are held twice: under WC-C-074 and under WC-C-077 or
   WC-C-079 (domains F and C). This part cites WC-C-074's keys.
+
+## Batch 2: SUP, ANL and NTF
+
+Five concerns: WC-C-065, WC-C-106, WC-C-038, WC-C-039 and WC-C-076. WooCommerce's cell is written for all 18 capabilities
+of the three areas. This batch adds no capability. Searches are in English.
+
+### How I cut
+
+| Concern | Lands in | Join | Fit |
+|---|---|---|---|
+| WC-C-065 Product reviews and review requests | CM-SUP-001 | match:M-065 | clean |
+| WC-C-106 Customer service extensions | CM-SUP-005 | terms | strained |
+| WC-C-038 Store analytics and reports | CM-ANL-001 | match:M-058 | clean |
+| WC-C-039 WooCommerce Analytics service | CM-ANL-001 | terms | strained |
+| WC-C-076 Transactional emails | CM-NTF-001 | terms | strained |
+
+All five joined existing capabilities, and none made a new one.
+
+- **WC-C-065:** its reviews are in CM-SUP-001. Its review request is in the child CM-SUP-002: the email Review request,
+  the feature customer_review_request and its namespace and route. The feature is a beta, off by default, and merchants
+  turn it on under Settings > Advanced > Features (WC-S-5390). Because the statement names that setting, the cell reads it
+  as `core`, not as an unreleased flag.
+- **WC-C-038:** the cut follows the anchor's children:
+  - CM-ANL-001: the menu Analytics, its toggle and settings, the capability view_woocommerce_reports, and the wc-analytics
+    namespace with its data resources.
+  - CM-ANL-002: WooCommerce > Reports, the report pages under Analytics, and their wc-analytics report resources, with
+    import and export.
+  - CM-ANL-003: Analytics > Overview, with performance-indicators and leaderboards. Placing those two resources here reads
+    their names.
+  - CM-ANL-006: the REST API's reports (wc/v3 reports-*, WC-S-0679). This is a join on role (below).
+- **WC-C-076:** this batch joins it by its own words, "Enable this email notification" (WC-S-5412). Its customer emails
+  are cited in CM-NTF-001, and its staff emails in CM-NTF-002 (below).
+
+### Grains I chose
+
+- **WC-C-106 is a Marketplace category group,** cut the way batch 1 cut WC-C-105 and WC-C-110. It lands in CM-SUP-005
+  through its subcategory Support. Its other parts are cited where they belong:
+  - Live chat: CM-SUP-004.
+  - Managing customers: CM-CUS-001, as `extension-point`, added to batch 1's cell (below).
+  - Customer Accounts: CM-CUS-010, cited by batch 1.
+  - The Advanced Notifications extension: CM-NTF-001, as `shows`. Its maker and its category appear only in its
+    statements' notes, a gap.
+- **Post-purchase services (WC-S-0726) is left uncited.** No statement defines it, and no capability of D fits it. It is
+  a Marketplace category, so it meets the dry run's test for a capability. The coordinator may add one, but on this
+  evidence it would rest on a bare name, with no counterpart on Shopify or Salla. This is the same choice batch 1 made
+  for Store alerts and CRM.
+- **Customer feedback (WC-S-0717, WC-C-105), which batch 1 left to SUP,** is cited in CM-SUP-001 as `extension-point`.
+  That is a reading on the term feedback, which Salla uses for its reviews (its API folder Feedbacks). No statement
+  defines the category. The reviewer may move it to CM-SUP-007 (surveys).
+- **Staff emails in CM-NTF-002:** New order, Cancelled order, Failed order, Payment gateway enabled and Order withdrawal
+  request (WC-S-0294, WC-S-0295, WC-S-0297, WC-S-0307, WC-S-0315). This is a reading on the identifiers:
+  - their class names lack Customer, or name Admin, while the customer's emails of the same titles are
+    WC_Email_Customer_;
+  - New order is also the term of Shopify's staff notification.
+
+  In the release, the class files cited set the recipient's default to the site's admin email. That is context only,
+  not cited.
+- **The email Review request (WC-S-0313)** is held by WC-C-065 and by WC-C-076. It is cited once, under WC-C-065's key,
+  in CM-SUP-002, which makes WC-C-076 strained. New account and Reset password (WC-S-0306, WC-S-0305) are cited in
+  CM-NTF-001 under WC-C-076's keys, and by batch 1 in CM-CUS-010 under WC-C-073's.
+- **Coupon and customer analytics, left by batch 1.** These statements are held under WC-C-038 and also under WC-C-074
+  (WC-S-0071, WC-S-0208, WC-S-0238, WC-S-0239) or WC-C-073 (WC-S-0223, WC-S-0244, WC-S-0245). They are cited in
+  CM-ANL-002 under WC-C-038's keys.
+
+### Joins on role (readings)
+
+- **CM-ANL-006:** WooCommerce's REST reports API ("allows you to view all types of reports available", WC-S-0679, and
+  wc/v3 reports-*) takes the role of Shopify's read_reports and ShopifyQL. It is `core`, the platform's own API for its
+  own feature. No statement says apps do the work through it, and no report builder like Salla's is held.
+- **U-041 with SA-C-179:** the role is the store's support to its buyers, through extensions on WooCommerce and built in
+  on Salla. This follows the anchor's join on role in CM-SUP-005.
+- **CM-NTF-002** rests on identifiers (above).
+
+### Homonyms and near-homonyms (none of Q1's six bear on this batch)
+
+- **WooCommerce Analytics** names two things:
+  - the analytics kept in the store, whose setting says "All data stays within your store" (WC-S-0622, WC-C-038);
+  - a service the store connects to, which syncs its data through Jetpack Sync (WC-S-0573, WC-S-0574, WC-C-039).
+
+  Q1 split them and matched only the first (M-058). WC-C-039 lands in CM-ANL-001, strained, cited as `shows`: its
+  statements name no company ("our service") and don't say what the service shows.
+- **Support:**
+  - Extensions > Customer service > Support (WC-S-0727) is the merchant's support to buyers, cited in CM-SUP-005.
+  - The WooCommerce Support Policy, the support forums (WC-C-062) and Business services > Support (WC-S-0772) are Woo's
+    support to merchants. They are not cited.
+- **Notifications:** batch 1's Stock Notifications (CM-MKT-016) is the back-in-stock feature. WooCommerce's email
+  notifications are CM-NTF-001's.
+- **Logs:** Status > Logs (WC-C-037) is the system log, not a log of sent messages (CM-NTF-003 is `none-held`).
+
+### Strained fits
+
+- **WC-C-106:** see the grains above.
+- **WC-C-039:** see the homonyms above.
+- **WC-C-076:** the email Review request is cited in CM-SUP-002, and New account and Reset password are cited by batch 1
+  in CM-CUS-010.
+
+### Statements of the batch's concerns left uncited, and why
+
+- **WC-C-106/where/WC-S-0726,** Post-purchase services: see above.
+- **WC-C-038/decides/WC-S-0043, WC-C-039/decides/WC-S-0573 and WC-C-076/where/WC-S-0313:** each is the same statement as
+  a key already cited (its `where` key, or WC-C-065's key).
+
+### Cited across domains
+
+- **WC-S-0939, push notifications for the WooCommerce mobile apps "to receive order notifications"** (WC-C-090, domain G,
+  also D). It is cited as `core` in CM-NTF-002. G-woocommerce cites it as `core` in CM-SRF-001, so the merge will flag a
+  statement in `core` in two domains. Notifying staff of orders is NTF-002's subject. The coordinator may keep one.
+- **WC-C-109 (domain G, also D):** Business insights (WC-S-0746, CM-ANL-001) and Admin and notifications (WC-S-0752,
+  CM-NTF-001) are cited as `extension-point`, on their names. No G part cites them.
+- **WC-C-110:** Reporting and analytics (WC-S-0758), left to ANL by batch 1, is cited in CM-ANL-001 as `extension-point`.
+
+### Rulings
+
+| Candidate | Rulings |
+|---|---|
+| U-041 | joined:CM-SUP-005 (twice) |
+| U-067 | joined:CM-NTF-001 (twice), nested:CM-NTF-004, apart with SH-C-130 |
+
+- **U-067 against SA-C-200:** nested. Salla's Communication Apps are in CM-NTF-004, a child of CM-NTF-001, and no
+  WooCommerce statement names a delivery provider of the store's emails.
+- **U-067 against SH-C-130:** apart. Shopify Messaging is in CM-MKT-007, as the anchor ruled it against Salla's
+  Notifications.
+- **U-070** (WC-C-093, cost of goods, domain B also D, with SA-C-220) isn't ruled here. This part doesn't land WC-C-093.
+
+### What the checker flagged, answered
+
+The whole part's final check: `0 problems, 40 flags for the reviewer`.
+
+- **cells.tsv line 61, CM-ANL-006, `core` resting only on boundary statements.** These are WooCommerce's own REST
+  resources for its own reports. WC-S-0679 says the API allows you to view all types of reports. That is the dry run's
+  convention for `core`.
+- **`none-held` with matching statements:** each hit was read, and each cell's `reading` names what it is.
+  - CM-SUP-003: Marketing > Social and statements on trusting Marketplace developers.
+  - CM-SUP-006 and CM-SUP-008: WooPayments' terms on the merchant's questions, complaints and disputes, and Woo's
+    forums.
+  - CM-SUP-007: PCI's questionnaire.
+  - CM-ANL-004: Live chat, live rates and a live site.
+  - CM-ANL-005: Business insights, cited at the parent, because no statement defines it or Salla's Smart analytics.
+  - CM-NTF-003: system logs.
+  - CM-NTF-004: MailPoet's sending advice (cited by batch 1 in CM-MKT-007), a staff email, and payment gateways.
+- **The other flags** are on batch 1's rows, and batch 1's notes answer them.
+
+### For the coordinator: batch 1's rows
+
+- **WC-C-074 (clean in CM-MKT-002):** its Analytics > Coupons statements are now cited in CM-ANL-002, under WC-C-038's
+  keys. The checker doesn't flag it, because the keys are WC-C-038's. But batch 1's notes say the fit becomes strained
+  if batch 2 cites them in ANL. The coordinator may change it to strained.
+- **WC-C-073's landing and CM-CUS-001's reading** say its customer reports are "left to CM-ANL". They are now cited in
+  CM-ANL-002, under WC-C-038's keys.
+- **CM-CUS-001, WooCommerce's cell:** this batch appended one evidence row, Managing customers (WC-S-0725,
+  `extension-point`, WC-C-106). The cell's reading, batch 1's, doesn't name it. The coordinator may add it.
+- **No problems** on batch 1's rows.
+
+### Proposals for the coordinator
+
+- **Rename CM-NTF-001** to add WooCommerce's terms: "(... ; WooCommerce Emails, email notifications)".
+- **Rename CM-SUP-005** to add "(WooCommerce Customer service > Support extensions)".
+- **Rename CM-ANL-001** to add "(WooCommerce Analytics, Reports)".
+- **Post-purchase services:** decide whether it becomes a capability (above).
+
+### Gaps
+
+- **WC-C-039:** no statement says what the WooCommerce Analytics service shows, or names its maker.
+- **Advanced Notifications:** its maker (Developed by Woo) and its category Customer service are only in its notes.
+- **Reports permissions:** the only staff gate held for analytics and reports is view_woocommerce_reports. No
+  per-report permission is held.
+- **Q1 gaps:** every concern of the batch has `responsible` stated only in general terms, or `reason` not found. No cell
+  claims a placement those gaps would change.
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **WC-C-074 is `strained`.** Its Analytics > Coupons statements (WC-S-0071, WC-S-0208, WC-S-0238, WC-S-0239) are held by WC-C-038 too, and batch 2 cites them in CM-ANL-002 under WC-C-038's keys: another tree, as batch 1 foresaw. The checker tests a citation by its key, so it couldn't see this. The merge now tests by statement id and flags such landings for the final review.
+- **WC-C-073's landing and CM-CUS-001's cell** now say that the customer reports are cited in CM-ANL-002, and the cell names the row batch 2 added (Managing customers, WC-S-0725).
+- **WC-S-0939 counts once.** It supported `core` here, in CM-NTF-002, and in G's CM-SRF-001, the mobile app for managing the store with push notifications. It stays `core` in G, whose capability names it, and is `shows` here. CM-NTF-002's cell stays `core` on the staff emails.
+- **Post-purchase services (WC-S-0726) stays uncited.** It is a Marketplace category, the kind of place the convention admits, but its name doesn't say what it holds (warranties, returns, surveys, tracking), and no statement does. A capability named from it would be a guess. It is listed as a gap: what WooCommerce's category holds.
+- **The renames** batch 1 and batch 2 propose (CM-MKT-016, CM-LOY-005, CM-MKT-002, CM-NTF-001, CM-SUP-005, CM-ANL-001) are made at the merge.
+- **WC-S-0219,** wc-analytics ProductsLowInStock, is `shows` in CM-ANL-001. It is `core` in B's CM-INV-004, low stock, whose WooCommerce cell rests on it alone, so it counts once. The merge now finds a statement counted twice by its statement id, under whichever concern's key a part cites it.
