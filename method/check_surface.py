@@ -69,6 +69,7 @@ ALLOWED = {
     ("method/km_page.py", "the Knowledge Map"): "the script that rebuilds the Knowledge Map's page from the model at GM (the founder, 30 October)",
     ("method/km_page_template.html", "the Knowledge Map"): "the template of the Knowledge Map's page, rebuilt from the model at GM (the founder, 30 October)",
     ("method/README.md", "the Knowledge Map"): "the row for the script that rebuilds the Knowledge Map's page (the founder, 30 October)",
+    ("method/q3.py", "the Knowledge Map"): "Q3's rows, read at the commit PLAN.md links (section 6, Q3's rows), for their id, question and needed_by",
     ("STATE.md", "the Knowledge Map"): "the founder's decisions of 30 October: the architecture plan's sources graded by its source types, and its page rebuilt from the model at GM",
     ("studies/class-model/inspection-R.md", "the obligation model"): "the inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
     ("studies/class-model/inspection-B.md", "the obligation model"): "the re-inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
