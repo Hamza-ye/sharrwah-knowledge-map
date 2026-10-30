@@ -496,3 +496,7 @@ Batch check: 0 problems, 112 flags. Whole part: 0 problems, 112 flags. The flags
 - CM-SHP-009: add WooCommerce's Order Fulfillments.
 - CM-SHP-015: add WooCommerce's Shipping providers.
 - CM-SHP-020: add WooCommerce's Product customs data.
+
+### The coordinator, after C-backfill-woocommerce
+
+- **U-080 is `joined:CM-RET-004`:** the back-fill's Shopify cell for CM-RET-004 cites SH-I-2129, Shopify's help-centre section on the EU right of withdrawal (SH-C-175, domain A, naming C under `also`), as `shows`, so one capability cites both sides.

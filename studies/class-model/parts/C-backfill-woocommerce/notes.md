@@ -1,0 +1,31 @@
+# C-backfill-woocommerce: notes
+
+## What this part did
+
+C-woocommerce added one capability to domain C: CM-RET-004, order withdrawal requests (the buyer's request, through the store, to withdraw from an order, which the merchant reviews), parent CM-ORD-001, landed from WC-C-091 (C-woocommerce's notes, Batch 5). This part writes its two missing cells, Shopify's and Salla's. No capability is added, no concern landed, no ruling written.
+
+Read: the brief; `model --domain C --areas RET`; C-woocommerce's Batch 5 notes and its CM-RET-004 rows; `candidates --domain C --platform shopify --areas RET` and `--platform salla` (both: 0 statements hold a term, since WooCommerce's terms are its own: withdraw-order, order_withdrawal); `caps --terms` for cancellation and withdrawal, to see what ORD-004, RET-003 and other domains already hold; then `search` on each platform, with the terms in each cell's `searched` or reading. Context read in observed-sh (not cited, it informs the readings below): the help-centre list that SH-I-2129 comes from (`observed-sh@b46731d0:structures/shopify/help-section-children/help.shopify.com@en-md/items.jsonl`), and the admin's Home guide card on EU withdrawal (`derived/admin-controls.jsonl`, `capture/journeys/Home/home.jsonl`, at observed-sh's HEAD).
+
+## The cells (readings)
+
+- **Shopify: `statements`, shows only (derived not-stated).** It cites SH-I-2129, the help-centre section "EU right of withdrawal compliance for merchants selling to EU customers". It is an inventory entry Q1 placed in SH-C-175, which `scope.tsv` gives domain A with C under `also`, so a C cell may cite it. No Shopify statement holds the word withdrawal in this sense (the only other hit is Shopify Capital repayments "withdrawn from Shopify Balance", SH-S-0466, another sense), so the convention on placed inventory entries applies. A reading: the entry gives Shopify's term for the buyer's withdrawal from an order, the EU right of withdrawal, and makes it the merchant's compliance. A statement that makes the merchant responsible is `shows`. It shows no withdrawal request of Shopify's own: no form, route, permission, webhook topic or setting. Its scope is EU customers, as the entry's own words say.
+- **Salla: `none-held`.** No Salla statement held names the buyer's withdrawal from an order, in English or Arabic (العدول, الانسحاب, حق الانسحاب, التراجع, فسخ and the rest, in singular and plural, with and without ال; the cell's `searched`). The hits are cancellation, returns and other senses of سحب (the cell's reading).
+
+## Kept apart
+
+- **Cancellation is not withdrawal by its words.** Shopify's notification template Cancellation request declined (SH-I-2044, SH-C-150) and its fulfillment orders cancellation request topics (SH-I-0661 to SH-I-0663), and Salla's Order cancellation, order.cancelled, the flags order-cancellation-reasons and advanced-order-cancellation-statuses and the storefront component salla-order-cancel (SA-C-091/boundary/SA-S-1483), are ORD's cancellation (CM-ORD-004) or SHP's fulfilment. None is cited here. A reading, for the reviewer: Shopify's help-centre list also has "Self-serve returns and cancellations" and "Setting up return and cancellation rules", and its admin's Home guide card says "Prepare your store for EU right of withdrawal: Set up return and cancellation options for EU orders". That context suggests Shopify meets the EU right of withdrawal through its return and cancellation options, not through a separate withdrawal request. None of these is a statement of the concern map, so nothing rests on it.
+- **Returns** stay in CM-RET-003. Salla's return shipments and the statuses مسترجع and قيد الإسترجاع aren't cited here.
+- **Other senses of withdrawal:** Salla's store balance withdrawals (إضافة وسحب رصيد المتجر, SA-S-2062; SA-S-0092), A's CM-PLN-006; Shopify Capital repayments withdrawn from Shopify Balance (SH-S-0466); cashback recovered (سحب) when an order is cancelled (SA-S-5019). They are homonyms, as C-woocommerce's notes list for withdrawal.
+
+## Gaps
+
+- **Shopify's help page itself** (`/en/manual/compliance/legal/eu-right-of-withdrawal`) is not in the concern map: only its title, as a help-centre section, is placed. What Shopify gives the buyer for withdrawal, and whether through returns, cancellations or a request of its own, isn't stated in what the concern map holds. The admin's Home guide card on EU withdrawal (observed-sh's `derived/admin-controls.jsonl`, id `gid://shopify/HomeGuideContainer/eu_withdrawal_guide`) and the Managed Markets section "EU right of withdrawal in Managed Markets" (`derived/help-admin-links.tsv`) are captured in observed-sh but not placed. Q1's gaps on SH-C-175: boundary and reason, searched, not found.
+- **Salla:** which law, if any, gives Salla's buyers a right to withdraw isn't stated in the concern map.
+
+## For the coordinator
+
+- **U-080** (WC-C-091 against SH-C-175): C-woocommerce ruled it `apart` because no cell cited SH-I-2129, and its notes say the ruling becomes `joined:CM-RET-004` if the back-fill cites it. This part cites SH-I-2129 in Shopify's CM-RET-004 cell, as `shows`, so the ruling follows the cells: `joined:CM-RET-004`. The ruling is C-woocommerce's row; this part writes no rulings.
+
+## Checker flags
+
+- **CM-RET-004/salla none-held, 50 Salla statements match its searched or the other platforms' terms.** They were read (the cell's reading): order cancellation (SA-C-040's cancelled-status permissions, SA-C-041's ملغي, SA-C-046, SA-C-091's salla-order-cancel, SA-C-092, SA-C-196), return shipments and statuses (SA-C-045, SA-C-144), shipment, subscription and app cancellations (SA-C-125, SA-C-193), cashback recovery (SA-C-063), carriers' cancellation policies for labels (SA-C-140), store balance withdrawals (SA-C-005), and other words that hold the terms (SA-C-115's cash-on-delivery settings, SA-C-119's stc pay FAQ, SA-C-200's order.refund.processed, SA-C-208's theme review, تُراجع), with the inventory entries of the same concerns. None is about the buyer's withdrawal from an order. The broad terms in `searched` (cancel, cancellation, الإلغاء, سحب) were searched so that nothing about withdrawal under the word cancellation was missed; their hits are why the count is large.
