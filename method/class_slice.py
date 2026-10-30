@@ -74,6 +74,8 @@ def fold(s):
 
 
 def ids(arg):
+    if isinstance(arg, list):
+        arg = " ".join(arg)
     return [x for x in re.split(r"[,;\s]+", arg or "") if x]
 
 
@@ -280,14 +282,14 @@ def main():
     s = sub.add_parser("concerns"); s.add_argument("--platform", required=True, choices=PLATFORMS)
     s.add_argument("--domain"); s.add_argument("--all", action="store_true"); s.add_argument("--where", action="store_true")
     s = sub.add_parser("statements"); s.add_argument("--platform", required=True, choices=PLATFORMS)
-    s.add_argument("--concerns", required=True); s.add_argument("--placement", choices=PLACEMENTS)
+    s.add_argument("--concerns", required=True, nargs="+"); s.add_argument("--placement", choices=PLACEMENTS)
     s.add_argument("--width", type=int, default=200); s.add_argument("--full", action="store_true")
     s = sub.add_parser("key"); s.add_argument("keys", nargs="+")
     s = sub.add_parser("search"); s.add_argument("--platform", required=True, choices=PLATFORMS)
     s.add_argument("--terms", required=True); s.add_argument("--placement", choices=PLACEMENTS)
     s.add_argument("--width", type=int, default=160)
-    s = sub.add_parser("matches"); s.add_argument("--concerns", required=True)
-    s = sub.add_parser("gaps"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--concerns", required=True)
+    s = sub.add_parser("matches"); s.add_argument("--concerns", required=True, nargs="+")
+    s = sub.add_parser("gaps"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--concerns", required=True, nargs="+")
     s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
     s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
     sub.add_parser("homonyms")
