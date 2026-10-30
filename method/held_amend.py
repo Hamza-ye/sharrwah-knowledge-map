@@ -71,7 +71,7 @@ def plan(p):
                 for e in ids:
                     for s in ss or ["shows"]:
                         rowsout[(c, p)].append({"cap_id": c, "platform": p, "supports": s, "key": e,
-                                                "why": f"(the held pass, {batch}) {clip(r['reading'], 160)}: {clip(entries[e]['text'], 120)}"})
+                                                "why": f"(the held pass, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"})
                     x = extra[(c, p)]
                     x["terms"] += [t.strip() for t in r.get("terms", "").split(";") if t.strip()]
                     for fl in [t.strip() for t in r.get("filler", "").split(";") if t.strip()]:
