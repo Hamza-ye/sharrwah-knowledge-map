@@ -50,8 +50,11 @@ def plan(p):
                 new[r["name"]] = r["decision"]
     rowsout, pending = collections.defaultdict(list), []
     extra = collections.defaultdict(lambda: {"terms": [], "fillers": [], "qualities": []})
+    listed = {r["batch"] for r in rows(os.path.join(HELD, "batches.tsv"))}     # a calibration's batches aren't listed
     for path in sorted(glob.glob(os.path.join(HELD, p, "placements-*.tsv"))):
         batch = re.search(r"placements-(.+)\.tsv$", path).group(1)
+        if batch not in listed:
+            continue
         for r in rows(path):
             ids = [x.strip() for x in r["entry_id"].split(";") if x.strip()]
             cs, ss = [r["cap_id"].strip()] if r["cap_id"].strip() else [], [s.strip() for s in r["supports"].split(";") if s.strip()]
