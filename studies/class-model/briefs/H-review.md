@@ -2,7 +2,7 @@
 
 **What this is.** The held pass (`studies/class-model/briefs/H-held.md`) places every entry of the platforms' self-descriptions that the class's model never read. Two batches ran first, at `high` effort: BC-1 (BigCommerce, 147 entries) and ZD-1 (Zid, 153 entries). You made neither. Your findings are the evidence from which the coordinator corrects the two batches, fixes H-held.md and its checker, and sets the other 68 batches' effort (the founder, 30 October: by the quality and completeness of their results). The coordinator checks each finding against its evidence before applying it (`PLAN.md`, section 3).
 
-**Your part.** The review runs in five parts, each by a fresh agent, and a sixth that joins them. Your message names yours:
+**Your part.** The review runs in six parts, each by a fresh agent, and a seventh, R6, that joins them. Your message names yours:
 
 | Part | Lines | Structures |
 | --- | --- | --- |
@@ -10,8 +10,9 @@
 | R2 | BC-1, lines 38 to 96 | payment-gateways |
 | R3 | BC-1, lines 97 to 176 | plan-comparison, settings-list, tax-services |
 | R4 | ZD-1, lines 2 to 62 | dashboard-page-index, its first part |
-| R5 | ZD-1, lines 63 to 144 | dashboard-page-index, its second part; dashboard-route-manifest |
-| R6 | the join | the five parts' rows and notes |
+| R5a | ZD-1, lines 63 to 103 | dashboard-page-index, its second part |
+| R5b | ZD-1, lines 104 to 144 | dashboard-page-index, its last part; dashboard-route-manifest |
+| R6 | the join | the six parts' rows and notes |
 
 **What you read is pinned:**
 - BC-1's placements and notes at `ff50bbee`, and ZD-1's at `33946dbc`;
@@ -117,15 +118,15 @@ The leads changed after the batches ran: at `99d429ad`, an identifier that many 
   - BC-1's plan lines and settings sections;
   - the tax services' `extension-point` (lines 169 to 176), by B-extent.md's definition;
   - the differences its notes find with the model's cells: CM-CHN-007's storefronts, CM-INV-005's limit, and CM-PAY-001's payments page.
-- **R4 and R5, in your lines:**
+- **R4, R5a and R5b, in your lines:**
   - ZD-1's containers (Analytics, Settings, Store, Marketing, Logistics, Payments, Channels, Apps, Online store, Communications, Whatsapp);
   - its pages with a release badge;
   - its pages listed only under a store condition.
 - **R4:** the pages at an app's address named with the platform's brand, Zid Ads and Zid Voice (lines 13 and 14).
-- **R5:**
+- **R5a:** the new Customer Referrals (line 90).
+- **R5b:**
   - the bank accounts page against CM-PAY-030's cell (line 110);
-  - the access requests by the platform's own team (lines 125, 127 and 134);
-  - the new Customer Referrals (line 90).
+  - the access requests by the platform's own team (lines 125, 127 and 134).
 - **Every part:** every other item of the notes' "couldn't tell" and "Problems" that bears on your lines.
 
 Each fix stays within B-extent.md's rules. Where B-extent.md doesn't settle a case either, say so: it is a method ruling for the coordinator, listed at the next report (`PLAN.md`, section 3). For each recurring miss, say whether a test in `held_entries.py check` would catch it, and which test.
@@ -144,7 +145,7 @@ Each fix stays within B-extent.md's rules. Where B-extent.md doesn't settle a ca
 
 ## R6, the join
 
-R6 reads this brief and the five parts' rows and notes. It re-reads a source only to settle two parts that disagree. It writes `held/review-H.md`:
+R6 reads this brief and the six parts' rows and notes. It re-reads a source only to settle two parts that disagree. It writes `held/review-H.md`:
 - the counts of verdicts, per batch and part;
 - **the misses by `cause` and `effect`,** each with the lines it rests on:
   - per batch;
@@ -180,11 +181,13 @@ R6 reads this brief and the five parts' rows and notes. It re-reads a source onl
 - Read each cell once, for the capability placed and for each alternative you test. Keep what it holds in a line of your notes.
 - Print your entries 20 to 30 at a time, with `show --from --to --candidates`. Read your placement lines with `sed -n`, never the whole file.
 - Never print the help-center run's `001.html`: its text is in `001.text.txt`.
+- Read a source's lines with `grep -n` and `sed -n`, never a whole step, page or locale file. A cell's printout is long: `grep` it for the rows you need.
+- Your context should stay under about 200,000 tokens. R1 reached 316,000 on 36 lines.
 - Write rows as you go.
 
 ## Output, in `studies/class-model/held/`
 
-**`review-H-<part>.tsv`, R1 to R5.** Tab-separated, with a header row, no quoting, and no tab or newline inside a field. Its columns:
+**`review-H-<part>.tsv`, R1 to R5b.** Tab-separated, with a header row, no quoting, and no tab or newline inside a field. Its columns:
 - `batch`;
 - `line`: the placement file's line number, at the batch's commit;
 - `entry_id`;
@@ -196,7 +199,7 @@ R6 reads this brief and the five parts' rows and notes. It re-reads a source onl
 
 Every line of your part has at least one row.
 
-**`review-H-<part>.md`, R1 to R5:** the counts of your verdicts, the cases, what the batch never placed, and the notes' claims, as above.
+**`review-H-<part>.md`, R1 to R5b:** the counts of your verdicts, the cases, what the batch never placed, and the notes' claims, as above.
 
 **`review-H.md`:** R6's join.
 
