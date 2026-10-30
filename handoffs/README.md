@@ -3,7 +3,7 @@
 **What this folder is:** requests to capture evidence that a run in observed-sh or observed-sa could hold, but doesn't yet (`PLAN.md`, section 6, Evidence; the founder, 27 October 2026). They aren't decisions for the founder.
 
 **How a request travels:**
-1. **The coordinator** checks that the evidence isn't held (`method/held_index.py`, which reads the runs' saved answers too, and `method/corpus_search.py`), records the gap in the subject's files with `who_can` `capture`, and writes one file here, named for the repository and what it asks.
+1. **The coordinator** checks that the evidence isn't held: first through the repository's own reading guides and indexes (`README.md`, `docs/READING.md`, `docs/GAPS.md`, `docs/OPERATING.md`, `index/`, `structures/README.md`, `structures/REGISTER.tsv`; in other-product-class, each platform folder's `README.md`, `GAPS.md`, `index/` and `structures/REGISTER.tsv`; the founder, 30 October), then with `method/held_index.py`, which reads the runs' saved answers too, and `method/corpus_search.py`. It records the gap in the subject's files with `who_can` `capture`, and writes one file here, named for the repository and what it asks.
 2. **The founder** hands the file to a local agent working in that repository.
 3. **The local agent** captures what it can, as that repository records runs: its own `docs/OPERATING.md`, tools and formats, with a note in its `index/run-notes.tsv`. It stops before anything that spends money or can't be undone, and before what the file says to stop at. It pushes, and tells the founder the commit.
 4. **The coordinator** reads the new runs at that commit, closes the gaps they answer, and marks the request done below, with the commit.

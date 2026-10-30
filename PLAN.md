@@ -354,7 +354,7 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 ### Evidence
 
 - **Statements** stay verbatim, cited at a pinned commit, under Q1's rules.
-- **Before a gap goes to anyone,** its route is checked against what is held:
+- **Before a gap goes to anyone,** its route is checked against what is held. What a repository holds is read through its own reading guides and indexes first, then searched: its `README.md`, `docs/READING.md`, `docs/GAPS.md`, `docs/OPERATING.md`, `index/`, `structures/README.md` and `structures/REGISTER.tsv`, and in other-product-class each platform folder's `README.md`, `GAPS.md`, `index/` and `structures/REGISTER.tsv` (the founder, 30 October). Then:
   - if the page is held and readable, the gap is "page not read", for an agent;
   - if it is held but not readable, the reader is extended;
   - if a run in observed-sh or observed-sa could capture it, the gap is a capture request. The coordinator writes a handoff in `handoffs/`, naming the run: a journey from the repository's own catalog, a held paid store, or a store set up for it. The founder hands it to a local agent, who captures what it can into that repository with its own tools, pushes, and says so. It isn't a decision for the founder (the founder, 27 October);
@@ -621,3 +621,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Outside this plan:** S-02's register records no veto, and moves RD2's plan items to the founder's plans.
 
   **What this change removes or weakens:** nothing. It adds a page at GM, which a script generates from the model's files, and it makes the landing of the subjects' points stricter.
+- **30 October 2026, how what is held is read before a capture request** (`founder-decisions.tsv`, 30 October, "Method (standing)"; `founder-messages/2026-10-30-evidence-guides.md`). Changed in section 6, Evidence: before a gap's route is chosen, what each evidence repository holds is read through its own reading guides and indexes first, then searched with `method/held_index.py` and `method/corpus_search.py`. The founder's note came as Q3's candidate misses were being checked: Q3's batches had searched only the concern map, and a first search of observed-sh found Shopify's return rules held in its Help Center and admin API schema, though no statement of the concern map names them.
+
+  **What this change removes or weakens:** nothing. It adds a step before a gap goes anyone's way, and so guards risk 17: evidence a run could capture, or that is already held, routed as a capture request.
+
