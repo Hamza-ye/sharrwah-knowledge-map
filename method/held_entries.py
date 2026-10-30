@@ -1045,18 +1045,22 @@ def cmd_check(a):
                 caps_of[x].add(f[2]); lines_of[x].append(i)
     keys = {x: re.search(r"pageKey: ([^;]+)", es[x]["text"]).group(1).strip() for x in ids if x in es and re.search(r"pageKey: ([^;]+)", es[x]["text"])}
     # an entry whose own id, title or path is another entry's parent, within or parentId holds others: a container
+    # keyed by the parent's root and its last name, so the same title under another country or store is another container
     held_by = collections.Counter()
     for x in ids:
         if x in es:
             for m in re.finditer(r"(?:^|; )(?:parent|within|parentId): ([^;]+)", es[x]["text"]):
-                held_by[m.group(1).strip().split(" > ")[-1]] += 1
+                segs = [g.strip() for g in m.group(1).split(" > ")]
+                held_by[(segs[0] if len(segs) > 1 else "", segs[-1])] += 1
     own = {}
     for x in ids:
         if x in es:
+            w = re.search(r"(?:^|; )within: ([^;]+)", es[x]["text"])
+            root = w.group(1).split(" > ")[0].strip() if w else ""
             for f in ("id", "title", "text", "name", "label", "path"):
                 m = re.search(rf"(?:^|; ){f}: ([^;]+)", es[x]["text"])
-                if m and held_by.get(m.group(1).strip()):
-                    own[x] = m.group(1).strip(); break
+                if m and held_by.get((root, m.group(1).strip())):
+                    own[x] = (root, m.group(1).strip()); break
     for x in ids:
         if x not in es or x not in caps_of:
             continue
@@ -1073,7 +1077,7 @@ def cmd_check(a):
         if k and any(v.startswith(k + ".") for v in keys.values()):
             notes.append(f"line {at}: pageKey {k} holds other pages: a container (rule 3)")
         elif x in own:
-            notes.append(f"line {at}: {own[x]} holds {held_by[own[x]]} other entries: a container (rule 3)")
+            notes.append(f"line {at}: {own[x][1]}{' (' + own[x][0] + ')' if own[x][0] else ''} holds {held_by[own[x]]} other entries: a container (rule 3)")
     for k, names in new_names.items():
         if len(set(names)) > 1:
             problems.append(f"one new thing named several ways: {sorted(set(names))}: name it one way")
@@ -1112,7 +1116,7 @@ def main():
     s = sub.add_parser("batches"); s.add_argument("--size", type=int, default=300); s.set_defaults(f=cmd_batches)
     s = sub.add_parser("show"); s.add_argument("--platform", choices=PLATFORMS, required=True)
     s.add_argument("--batch"); s.add_argument("--structure"); s.add_argument("--from", type=int); s.add_argument("--to", type=int)
-    s.add_argument("--width", type=int, default=600); s.add_argument("--meta", action="store_true")
+    s.add_argument("--width", type=int, default=1200); s.add_argument("--meta", action="store_true")
     s.add_argument("--candidates", action="store_true", help="each entry's leads: capabilities whose cited statements share its identifiers, or whose terms it holds")
     s.set_defaults(f=cmd_show)
     s = sub.add_parser("cells", help="each named capability's cell on the platform, compact")
