@@ -149,3 +149,8 @@ studies/class-model/parts/B-zid`: 0 problems, 12 flags, each answered under "Wha
 - CM-SEL-002: add Zid's Digital Products and Digital Vouchers.
 - CM-SEL-006: add Zid's Bundle Offers / الحزم التسويقية.
 - CM-INV-008: 'Stock held for unpaid orders (WooCommerce Hold stock; Zid حجز المنتج)'.
+
+
+## The coordinator's corrections (30 October)
+
+- **ZD-I-0229 and ZD-I-0250** (the plan lines Import Products and Export Products) were `core` here and in G-zid's CM-MIG-001, so they counted in two domains. They are import and export, so they count in G; here they are `shows`.

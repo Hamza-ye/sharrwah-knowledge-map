@@ -5,8 +5,8 @@ CM-CAT-001	zid	core	ZD-C-083/boundary/ZD-S-0060	Zid's own API (C1): webhook prod
 CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0915	plan line Add Products / إضافة منتجات, all four plans
 CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0916	plan line Product Management - Bulk Add Products, growth and pro
 CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0496	staff permission list.store.products
-CM-CAT-001	zid	core	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2)
-CM-CAT-001	zid	core	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2)
+CM-CAT-001	zid	shows	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2) (the coordinator, 30 October: an import or export plan line counts in domain G's CM-MIG-001; here it shows the catalogue only)
+CM-CAT-001	zid	shows	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2) (the coordinator, 30 October: an import or export plan line counts in domain G's CM-MIG-001; here it shows the catalogue only)
 CM-CAT-001	zid	core	ZD-I-0246	plan line Quick Bulk Edit, placed in ZD-C-083 (C2)
 CM-CAT-002	zid	core	ZD-I-0012	Zid's own API group Products > Product Attributes, placed in ZD-C-083 (C1, C2)
 CM-CAT-002	zid	core	ZD-I-0013	Zid's own API group Products > Product Attribute Presets, placed in ZD-C-083 (C1, C2)
