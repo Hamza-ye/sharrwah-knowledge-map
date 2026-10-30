@@ -270,7 +270,7 @@ salla	SA-C-101	E		Store APIs on the status page: the storefront API (SFR); M-056
 salla	SA-C-110	C		مدفوعات سلة; Payments; Payment methods (PAY); M-026
 salla	SA-C-111	C		رصيد المدفوعات الإلكترونية; دورة تحويل المدفوعات الإلكترونية: e-payments balance and payouts (PAY); M-027
 salla	SA-C-112	C	A	Store Verification; bank account for receiving dues (PAY); M-027
-salla	SA-C-113	C		حاسبة رسوم المدفوعات الإلكترونية: online payment fees (PAY); M-029
+salla	SA-C-113	C	A	حاسبة رسوم المدفوعات الإلكترونية: online payment fees (PAY); M-029; also A: its statement that VAT at 15% applies to Salla's own fees (SA-S-0105) bears on taxes on the platform's charges (the coordinator, after A-anchor batch 3)
 salla	SA-C-114	C	A	who processes and acquires Salla Payments transactions, and under which licence (PAY)
 salla	SA-C-115	C		Cash on delivery through Salla shipping labels (PAY); M-033
 salla	SA-C-116	C		Cash on delivery through the merchant's own carrier (PAY); M-033

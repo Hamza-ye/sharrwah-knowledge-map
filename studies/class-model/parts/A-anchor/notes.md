@@ -401,3 +401,9 @@ No problem found on earlier batches' rows.
 - **Prices** (Shopify's Pay monthly and Pay yearly rows) and fee rates (Third-party transaction fees: 2%, 1%, 0.6%,
   0.2%) are cited as evidence, not as qualities: the brief's qualities are limits, certifications, uptimes and data
   locations.
+
+## The coordinator's correction after batch 3 (30 October)
+
+- **SA-C-113 names A under `also`.** Its statement that VAT at 15% applies to Salla's own fees (SA-S-0105) is the only held statement of tax on Salla's charges, and CM-PLN-007 cites it. With A under `also`, the citation and U-029's `joined:CM-PLN-007` both follow convention S3.
+- **For the ONB batch:** batch 3 cites Shopify's inactive-account plan and billing routes (SH-S-5071 to SH-S-5077, SH-S-5086, SH-S-5091) and Salla's unreleased plan-free-trial flag (SA-S-3452). Where ONB's capabilities need them, cite them there too and mark the fit by the cells.
+
