@@ -925,6 +925,7 @@ def whole_text(platform, e, cache={}):
     return cache[k]
 CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.-]+/)+[\w.-]+\.(?:json|jsonl|js|php|txt|tsv|html|yaml|md))")
 STATEMENT_ID = re.compile(r"\b(SH|SA|WC|ZD|BC)-S-\d{4}\b")
+CITED_RECORD = re.compile(r"((?:[\w.-]+/)*[\w.-]+\.warc\.gz)@(\d+)")
 
 
 def cited_text(platform, reading, cache={}):
@@ -944,6 +945,22 @@ def cited_text(platform, reading, cache={}):
                 if f not in cache:
                     cache[f] = quote_norm(open(f, encoding="utf-8", errors="replace").read())
                 out.append(cache[f])
+                break
+    # an archive record the reading cites as <archive>@<offset> (method/warc_text.py), its body and its text
+    for m in CITED_RECORD.finditer(reading):
+        for b in bases:
+            f = os.path.normpath(os.path.join(b, m.group(1)))
+            if f.startswith(os.path.normpath(b)) and os.path.isfile(f):
+                k = (f, int(m.group(2)))
+                if k not in cache:
+                    try:
+                        import warc_text
+                        _, _, headers, body = warc_text.read_record(f, int(m.group(2)))
+                        t = body.decode("utf-8", "replace")
+                        cache[k] = quote_norm(t) + "\n" + quote_norm(warc_text.html_text(t))
+                    except Exception:
+                        cache[k] = ""
+                out.append(cache[k])
                 break
     ids = {m.group(0) for m in STATEMENT_ID.finditer(reading)}
     if ids:
