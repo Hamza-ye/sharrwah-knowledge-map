@@ -407,3 +407,124 @@ No problem found on earlier batches' rows.
 - **SA-C-113 names A under `also`.** Its statement that VAT at 15% applies to Salla's own fees (SA-S-0105) is the only held statement of tax on Salla's charges, and CM-PLN-007 cites it. With A under `also`, the citation and U-029's `joined:CM-PLN-007` both follow convention S3.
 - **For the ONB batch:** batch 3 cites Shopify's inactive-account plan and billing routes (SH-S-5071 to SH-S-5077, SH-S-5086, SH-S-5091) and Salla's unreleased plan-free-trial flag (SA-S-3452). Where ONB's capabilities need them, cite them there too and mark the fit by the cells.
 
+
+## Batch 4: ONB, Onboarding and store lifecycle
+
+Concerns: SH-C-006, SH-C-014, SH-C-155; SA-C-014. Result: 3 capabilities (CM-ONB-001 to CM-ONB-003), 4 landings, 6
+cells, 38 evidence rows (one of them added to CM-STF-005's Salla cell), 2 qualities, no slot filler, 3 rulings.
+
+### How I cut, and why
+
+- **CM-ONB-001, the merchant's country at sign-up.** Shopify gives it a place of its own, the sign-up page's "I'm
+  located in:" (SH-S-7174); Salla's registration asks the store's country (SA-S-0141). I kept it apart from
+  CM-ACC-008 (my judgment): CM-ACC-008 is where the platform offers its service, this is the one merchant's own
+  location. Nor is it CM-ACC-006's store details: Shopify's duty to keep the location current in the admin
+  (SH-S-0038) is SH-C-006's own statement, so it is cited here as shows.
+- **CM-ONB-002, the store's lifecycle states.** Shopify places restricted access, the inactive account, pending
+  termination and reactivation in admin routes of their own (store-unavailable, access_account, account_review,
+  reactivation), so they are one capability with its routes, not one per state (my judgment: Salla shows only one
+  state, suspension, so a finer cut would leave Salla's side empty on every child but one, and no statement defines
+  the states apart). The enforcement that leads to them (acceptable use, violations) is TRU's: SH-C-172 and SA-C-232.
+- **CM-ONB-003, the platform's support and learning for merchants,** Q1's M-066, one-to-one. The account manager
+  (Salla's مسؤول الحساب, مدير حساب مخصص, on سلة سبيشل) stays inside it (my judgment): Shopify's counterpart is a
+  level of the same plan row (Priority support on Plus, SH-S-7015), so both platforms grade support by plan rather
+  than giving the account manager a capability of its own across both.
+- **Trials and onboarding steps.** No statement of either platform holds a store's trial: Shopify's trial is only in
+  the plan table's header text (scopes "Start for free", "Try for $399") and in app billing (SH-S-0285, domain F);
+  Salla's plan-free-trial flag is unreleased (SA-S-3452, in CM-PLN-001 as shows). No statement holds Shopify's
+  onboarding question or home setup, or Salla's onboarding vocabulary, and no Salla concern of the seed's ONB leads
+  (help: New store; store_status) is in my batch beyond SA-C-014. So no trial or setup capability (gap).
+- **Batch 3's inactive-account routes** (SH-S-5071 to SH-S-5077, SH-S-5086, SH-S-5091, under SH-C-015's and SH-C-016's
+  keys) are not cited again: CM-ONB-002 rests on SH-C-014's own route keys (the inactive-account root, its list and its
+  checkout, reactivate and reopen routes, SH-S-5068 to SH-S-5070), and the routes batch 3 cites are named for the plan
+  or bill they reach (reading). Salla's annual-subscription freeze (SA-S-2085) and plan cancellation (SA-S-5003) stay
+  in PLN: they freeze or cancel the plan, and no statement says the store's state changes.
+
+### Joins on role
+
+- **CM-ONB-001:** Shopify's "I'm located in:" on its sign-up page (SH-S-7174) and Salla's دولة المتجر, "choose from
+  which country you register your store" (SA-S-0141): different names, the same role, the country the merchant gives
+  when creating the store. A reading.
+
+### Homonyms kept apart
+
+- **"Store status":** domain G's CM-OPS-004 is WooCommerce's system status report and tools, not a store's lifecycle
+  state; Salla's store-status flag (SA-S-3353) is cited by batch 1 in CM-ACC-006 and no statement says what it is.
+- **"Self-service system":** SA-C-014's name carries it, but Salla's Self-service system (نظام التذاكر) is the
+  merchant's ticket system for its own customers (SA-C-179, domain D's CM-SUP-005). No SA-C-014 statement holds it.
+- **"Shopify Support"** in access-scope statements (SH-S-6001, SH-S-6058, SH-S-6243 and others: contact Shopify Support
+  to request a scope) is support to app developers, domain F's, not cited.
+
+### Strained fits
+
+- **SH-C-006 in CM-ONB-001:** its sentence barring sign-up from unsupported countries and regions (SH-S-0304) is also
+  SH-C-174's, cited under that key in CM-ACC-008; Salla's SA-S-0141 is cited in both trees.
+- **SA-C-014 in CM-ONB-003:** its statement that support's temporary access requests appear on /manage/support-access
+  only with the merchant's approval (SA-S-5132) is cited in CM-STF-005, as core: it is the empty state of Salla's own
+  page for third-party access to the admin, which is that capability's subject.
+
+### Concerns of other domains read under `also`
+
+- **SA-C-006** (Store Verification, domain C, A under also): its copy of SA-S-0141, scoped to the article on creating a
+  store in the UAE, is cited in CM-ONB-001 beside SA-C-167's copy. The same sentence is held under both concerns; I
+  cite both keys so the cell keeps the article's scope and both of U-011's pairs follow the cells (batch 2 cited a
+  statement held twice under one concern once; here the two keys are two concerns).
+- **SA-C-232** (violations, domain A, the TRU batch's): its warning that an uncorrected violation suspends the store
+  within 24 hours (SA-S-0115) is CM-ONB-002's only Salla statement, cited as shows, with its 24 hours as a quality.
+  If TRU cites it in its enforcement capability too, the checker will flag it in two trees; the suspension is this
+  capability's subject, the violation TRU's (reading).
+- Not cited: SA-S-5061 (postpaid shipping dues paid late may suspend the postpaid service or some store features,
+  SA-C-140), SA-S-5079 (the App Maker policy's disclaimer on suspension in Google's and Apple's stores, SA-C-174) and
+  SA-S-0028 (Salla may suspend an app, SA-C-232): none is the store's own state.
+
+### Rulings, and the pairs left for later batches
+
+Ruled here:
+- **U-011, SH-C-006 against SA-C-167:** joined:CM-ONB-001. **SH-C-006 against SA-C-006:** joined:CM-ONB-001, the
+  ruling following the cells (SA-C-006 names A under also).
+- **U-036, SH-C-014 against SA-C-170:** apart. SA-C-170's held statements (SA-S-0143, SA-S-2208) show the agreement's
+  registration step and page, not termination; the policy's text isn't held.
+
+Left for the TRU batches:
+- **U-036, SH-C-014 against SA-C-232:** CM-ONB-002 cites SA-C-232's SA-S-0115 as shows, so wherever TRU lands SA-C-232
+  the pair is joined:CM-ONB-002 by the cells, unless the coordinator moves SA-S-0115 to TRU's capability, in which case
+  it follows that capability's cells. **SH-C-172 against SA-C-232 and SA-C-170** are TRU's.
+- M-066's third concern, WC-C-062, is WooCommerce's part's.
+
+### What the checker flagged
+
+`python3 -I method/check_class_part.py studies/class-model/parts/A-anchor --concerns SH-C-006,SH-C-014,SH-C-155,SA-C-014 --areas ONB`:
+0 problems, 8 flags.
+- *SA-C-167/decides/SA-S-0141 in CM-ACC-008 and CM-ONB-001,* and *SA-C-167 clean in CM-ACC-008, its statements cited
+  in CM-ONB-001:* see below, for the coordinator.
+- *SH-C-016 clean in CM-PLN-004, its statements cited in CM-ONB-002:* the inventory entry SH-I-2350, the help section
+  "Understanding billing implications before pausing or deactivating your Shopify store", is placed in both SH-C-014
+  and SH-C-016. I cite it in CM-ONB-002 as shows, as the only held mention of pausing or deactivating a store; batch 3
+  doesn't cite it. See below.
+- *CM-STF-003, CM-PLN-006, SA-S-5002, SA-S-0089, SH-S-0238:* batches 1 to 3's, answered there.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-ACC-008's Salla cell (batch 1)** cites SA-S-0141 as shows. Its subject is the one store's country at
+  registration, CM-ONB-001's; for CM-ACC-008 it adds only that a country is chosen. Either drop it there, or mark
+  SA-C-167 strained in CM-ACC-008 (the checker's flag).
+- **SH-C-016 (batch 3)** is now strained by SH-I-2350, cited in CM-ONB-002; or drop SH-I-2350 from CM-ONB-002 if the
+  section's billing subject is judged to govern.
+- **CM-STF-005's Salla cell (batch 2):** I added SA-C-014/boundary/SA-S-5132 as core; its reading should name it.
+
+### Problems and gaps
+
+- **Salla's store lifecycle:** no statement holds an inactive, pending-termination, closed or reactivated store, or
+  Salla's terms on suspension and termination (SA-C-170's policy text isn't held).
+- **Trials** of either platform aren't held as statements (above).
+- **Makers:** no statement names the maker of Shopify Community, Learn or Academy, or of Salla's help centre; they are
+  placed by what the statements show.
+- **Shopify's sign-up location:** SH-C-006/boundary and /reason are "searched, not found". **Shopify's support:**
+  SH-C-155/responsible is "stated only in general terms". **Salla's support:** SA-C-014/responsible and /reason are
+  "page not read".
+
+## The coordinator's corrections after batch 4 (30 October)
+
+- **SA-C-167 and SH-C-016 are `strained`:** batch 4 cites SA-S-0141 in CM-ONB-001, and SH-I-2350 (placed by Q1 in SH-C-016 and SH-C-014) in CM-ONB-002, other trees (S1). Both citations bear on their capabilities, so both stay.
+- **CM-STF-005's Salla reading** names the row batch 4 added (SA-S-5132).
+
