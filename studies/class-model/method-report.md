@@ -212,3 +212,21 @@ That is a little under section 10's 890, and about three and a half times the bu
   - the architecture plan's review, about 10.
 
   That is about 1.1 billion for the whole extent, within 1.05 to 1.2, and above section 14's "near a billion". By the standing decision of 27 October the budget never costs evidence, and the figure goes to the founder on the orientation page.
+
+## 16. The subjects' points on the model (30 October, 12:15 to 14:00 UTC)
+
+- **All 98 points are placed** (`studies/class-model/points/P-1.tsv` to `P-8.tsv`, at `fe0503ed`): S-01's 23 in two batches, S-02's 75 in six. 61 landed with no conflict, and 37 carry 50 conflicts: S-01's 8 points 11 of them, S-02's 29 points 39. `land_points.py check --final` passes on all eight batches.
+- **The coordinator settled each conflict's fact first,** then wrote its outcome: 43 model amendments (S-01 11, S-02 32), 4 dismissed and 3 kept open, with what would settle each. None needed the founder: no conflict questioned the evidence under a founder's decision. Decision 1's rows rest on statements the amendments only added to.
+- **The model now cites the subjects' own statements,** by their ids, in these amendments only (`B-extent.md`, "Conventions"; `briefs/P-points.md`, "After the batches"). The checker, the merge and the page generator resolve them. In almost every conflict, the subject held what Q1's concern map didn't:
+  - observed runs (Salla's onboarding refusing other countries, Zid's plan checkout charging VAT);
+  - the WooCommerce release's code (its own onboarding, email locale and address formats);
+  - help pages Q1 never placed (Tabby and Tamara, BigCommerce's offline methods and its Multi-Storefront).
+- **What moved:** 21 capabilities changed kind or count. One `open` became a class: CM-ACC-008, the countries a platform serves, now in Salla's core on its onboarding. Twenty counts rose, among them markets, store languages, staff roles and notifications, platform billing and the tax on it, customer addresses and their autocompletion, reserves, local and manual payment methods, and returns. The merge stays clean: 347 capabilities, 7,538 evidence rows, no problem.
+- **What stays open:**
+  - whether Zid or the Saudi Business Center makes the business check (twice);
+  - whether maintenance mode and visibility before launch are one capability, which goes to the final review's `one capability?` question.
+- **Lessons:**
+  - **The coordinator's first amendment ran while two S-02 drafters were reading the model.** Both stopped on the brief's warning and resumed from their drafts. From then on, amendments ran only between drafting rounds.
+  - **The concern map understated counts wherever the evidence sat outside the pages Q1 placed:** runs, released code, and help articles. A final review that samples cells should expect more of the same.
+  - **A commit message slipped:** `fe0503ed`'s says 38 conflicts, 30 amendments and 4 kept open for S-02; the counts above are the files'.
+- **Cost:** 8 drafting batches, about 147 million with the two inspections' 45.8. The coordinator's settlement ran in this session.
