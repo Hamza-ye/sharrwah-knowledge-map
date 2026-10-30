@@ -234,7 +234,7 @@ zid	storefront-hreflang	no				the storefront's addresses per language and countr
 bigcommerce	channel-catalog	yes		where		the channels a store can create, by category: what the platform connects
 bigcommerce	contracting-entities	yes		responsible		the company a merchant contracts with, by country
 bigcommerce	payment-gateways	yes		where		the payment gateways, with their features: what the platform connects
-bigcommerce	plan-comparison	yes	drop:feature	decides		the plan table, with what each plan includes: its plan lines. Rendered from feature_text and the cells only: rows 8 to 13's feature names another row (inspection-H.md, E-5)
+bigcommerce	plan-comparison	yes	drop:feature;meta:prices_above_the_table	decides		the plan table, with what each plan includes: its plan lines. Rendered from feature_text and the cells only: rows 8 to 13's feature names another row (inspection-H.md, E-5). Its meta.json holds the plans' prices above the table, read as an entry (meta:; the review's R3)
 bigcommerce	settings-list	yes	drop:address	where		the control panel's Settings, by group and section: its places. Each section's address is left out: the items pair it with the next one's (handoff H-009); the source step holds each section's own
 bigcommerce	tax-services	yes		where		the automatic tax services a store is offered: what the platform connects
 bigcommerce	localization-countries	no				the countries a store can choose as its default: market data, the subjects'
