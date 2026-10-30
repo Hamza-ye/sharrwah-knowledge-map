@@ -41,3 +41,31 @@ CM-APP-009	salla	none-held
 CM-APP-009	shopify	statements	core	apps:development_enable | apps:development_list	SH-C-167/decides/SH-S-7054=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399	SH-C-010/reason:searched, not found;SH-C-167/boundary:searched, not found;SH-C-167/reason:searched, not found	general
 CM-APP-010	salla	statements	core;extension-point	Settings		SA-C-193/responsible:stated only in general terms;SA-C-193/reason:page not read;SA-C-194/reason:page not read;SA-C-199/responsible:stated only in general terms;SA-C-199/reason:page not read	general
 CM-APP-010	shopify	none-held					
+CM-DVT-001	salla	statements	core	Dev Tools | Partners Agent Kit | Salla Apps Playbook		SA-C-203/responsible:stated only in general terms	general
+CM-DVT-001	shopify	statements	core				general
+CM-DVT-002	salla	statements	core	Salla CLI		SA-C-203/responsible:stated only in general terms	general
+CM-DVT-002	shopify	statements	core				general
+CM-DVT-003	salla	statements	core	Demo Stores | Ready Stores			general
+CM-DVT-003	shopify	statements	core			SH-C-168/reason:searched, not found	general
+CM-DVT-004	salla	statements	core	@salla.sa/ui-merchant-devstore | Demo Stores			general
+CM-DVT-004	shopify	statements	not-stated			SH-C-158/reason:searched, not found	
+CM-DVT-005	salla	statements	core;extension-point	Ready Stores	SA-C-209/reason/SA-S-5111=المتاجر الجاهزة		المتاجر الجاهزة
+CM-DVT-005	shopify	none-held					
+CM-PTN-001	salla	statements	core	Chats | Dashboard | Developer Portal | Message Center | Partners Resources | Support | https://partners.salla.com/en/legal-en/privacy		SA-C-176/reason:page not read	general
+CM-PTN-001	shopify	statements	core	Partner API | Shopify Partners	SH-C-168/where/SH-S-2521=accounts.shopify.com destination list	SH-C-168/reason:searched, not found	general
+CM-PTN-002	salla	statements	core	Employees | Settings			general
+CM-PTN-002	shopify	statements	core		SH-C-168/boundary/SH-S-7463=Partner API 2025-10	SH-C-168/reason:searched, not found	general
+CM-PTN-003	salla	statements	core	Payouts			general
+CM-PTN-003	shopify	statements	core	Payouts | settings:organizations:partner-payouts	SH-C-169/boundary/SH-S-7464=Partner API 2025-10 | SH-C-169/where/SH-S-2855=Partner Dashboard navigation (partner 5236935)	SH-C-168/reason:searched, not found;SH-C-169/reason:searched, not found	general
+CM-PTN-004	salla	statements	core	Billing System Salla partners | Billings | Operation records | نظام الفوترة الخاص بشركاء سلة			general
+CM-PTN-004	shopify	statements	core			SH-C-169/reason:searched, not found	general
+CM-PTN-005	salla	statements	core;extension-point	@salla.sa/ui-merchant-services | Merchant ServicesEssentials | Orders Center | Service Provider Portfolio | Services	SA-C-205/decides/SA-S-3191=the answering store (merchant@en) | SA-C-205/decides/SA-S-3195=the answering store (merchant@en) | SA-C-205/decides/SA-S-3422=the answering store (merchant@en) | SA-C-205/decides/SA-S-3436=plans: basic		general
+CM-PTN-005	shopify	statements	core;extension-point	subscribe:book-shopify-expert-intro-call | subscribe:bring-your-own-partner		SH-C-016/boundary:searched, not found;SH-C-170/decides:observation needed;SH-C-170/reason:searched, not found	general
+CM-PTN-006	salla	statements	core;extension-point	partners.salla.com/en/legal-en/ (agencies SLA)		SA-C-303/reason:page not read	general
+CM-PTN-006	shopify	none-held					
+CM-PTN-007	salla	statements	extension-point	https://partners.salla.com/global-selling-program		SA-C-304/decides:observation needed;SA-C-304/reason:page not read	
+CM-PTN-007	shopify	none-held					
+CM-PTN-008	salla	statements	core	https://salla.com/اتفاقية-استخدام-التسويق-بالعمولة		SA-C-173/reason:page not read	general
+CM-PTN-008	shopify	none-held					
+CM-PTN-009	salla	statements	core;extension-point	@salla.sa/ui-merchant-partner-marketing | Affiliate Marketplace | Affiliate Orders | Affiliate Profile | Campaign Orders	SA-C-206/boundary/SA-S-5102=الشركاء الذين يقدمون الإعلانات في منصة الشركاء | SA-C-206/decides/SA-S-3413=the answering store (merchant@en) | SA-C-206/decides/SA-S-3414=the answering store (merchant@en) | SA-C-206/decides/SA-S-3415=plans: plus, pro, special | SA-C-206/reason/SA-S-5103=الشركاء الذين يقدمون الإعلانات في منصة الشركاء		general
+CM-PTN-009	shopify	none-held					

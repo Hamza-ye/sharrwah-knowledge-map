@@ -225,3 +225,126 @@ CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1356	the webhook topic shop/redac
 CM-API-011	shopify	core	SH-C-161/decides/SH-S-0697	any app distributed through the App Store must respond to data subject requests
 CM-API-011	shopify	shows	SH-C-161/decides/SH-S-0696	public apps give the same privacy rights for all personal data, wherever the person is
 CM-API-011	shopify	shows	SH-C-161/responsible/SH-S-0219	the developer deletes merchant data within 30 days of the merchant uninstalling the app
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1176	the developer docs' top-level menu Dev Tools
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1177	the folder Partners Agent Kit under Dev Tools
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1178	the folder Salla Apps Playbook under Dev Tools
+CM-DVT-002	salla	core	SA-C-203/where/SA-S-1179	the docs folder Salla CLI under Dev Tools, at /salla-cli/help
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1106	the CLI's docs folder Apps Command
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1107	the CLI's docs folder Twilight Themes Command
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1109	the CLI's docs folder Theme Component Bundles Commands
+CM-DVT-002	salla	core	SA-C-203/reason/SA-S-5096	developed by Salla's team to create apps and themes with one command
+CM-DVT-002	salla	shows	SA-C-203/decides/SA-S-5095	prerequisite: a partner account on the Salla Partners Portal
+CM-DVT-003	salla	core	SA-C-209/where/SA-S-1931	the Partners portal link Demo Stores, a child of its item Stores
+CM-DVT-003	salla	core	SA-C-209/where/SA-S-1932	the Partners portal link Ready Stores, a child of the same item
+CM-DVT-004	salla	core	SA-C-209/where/SA-S-1931	the Partners portal link Demo Stores, /demo-stores
+CM-DVT-004	salla	core	SA-C-209/where/SA-S-3547	the dashboard app @salla.sa/ui-merchant-devstore at /store-dev
+CM-DVT-004	salla	core	SA-C-209/boundary/SA-S-5110	the portal gives each developer free demo stores to test an app before launch
+CM-DVT-004	salla	core	SA-C-209/decides/SA-S-5108	each developer may create free demo stores, up to ten
+CM-DVT-004	salla	shows	SA-C-209/responsible/SA-S-5109	Salla isn't responsible for operating or setting up the store
+CM-DVT-005	salla	core	SA-C-209/reason/SA-S-5111	Salla's team reviews every ready store before it is published
+CM-DVT-005	salla	extension-point	SA-C-209/where/SA-S-1932	the link Ready Stores in the Partners portal, where partners keep their stores (a reading)
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1183	the docs' button Developer Portal, to salla.partners
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1905	the Partners portal link Dashboard
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1942	the Partners portal link Chats, /conversations
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1943	the Partners portal link Message Center
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1945	the Help Center's Partners Resources
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1947	the Help Center's Support
+CM-PTN-001	salla	core	SA-C-204/boundary/SA-S-5098	dedicated technical and commercial support for all partners; email and the partners' platform are official channels
+CM-PTN-001	salla	shows	SA-C-176/responsible/SA-S-0016	the Salla Partners platform, belonging to Salla, owned by شركة تطبيق سلة لتقنية المعلومات
+CM-PTN-001	salla	shows	SA-C-176/decides/SA-S-5084	Salla may amend the agreement's terms at any time
+CM-PTN-001	salla	shows	SA-C-176/where/SA-S-5083	the partners' privacy page on partners.salla.com
+CM-PTN-001	salla	shows	SA-C-176/boundary/SA-S-0213	the SaaS contract a partner signs, tied to an app id
+CM-PTN-001	salla	shows	SA-C-176/boundary/SA-S-0214	the contract is signable at publication
+CM-PTN-002	salla	core	SA-C-204/where/SA-S-1934	the Partners portal link Employees
+CM-PTN-002	salla	core	SA-C-204/where/SA-S-1939	the Partners portal link Settings
+CM-PTN-002	salla	core	SA-I-1952	the portal's identity type Personal Identity
+CM-PTN-002	salla	core	SA-I-1953	the portal's identity type Passport
+CM-PTN-002	salla	core	SA-I-1957	the portal's identity status Verified
+CM-PTN-002	salla	core	SA-I-1960	the portal's identity status KYC Restart Required
+CM-PTN-002	salla	core	SA-C-204/reason/SA-S-5099	Salla reviews applications and verifies partners' eligibility before accepting them
+CM-PTN-002	salla	shows	SA-C-204/decides/SA-S-0036	a condition: a clear identity, with proof of identity
+CM-PTN-002	salla	shows	SA-C-204/decides/SA-S-0035	a condition: a company or establishment must be licensed
+CM-PTN-002	salla	shows	SA-C-204/responsible/SA-S-5097	the partner keeps its account's data confidential
+CM-PTN-003	salla	core	SA-C-195/where/SA-S-1936	the Partners portal link Payouts, under Payments
+CM-PTN-003	salla	core	SA-C-195/decides/SA-S-0027	developers' dues are paid after the quality and refund period, usually 15 days
+CM-PTN-003	salla	core	SA-C-195/decides/SA-S-0034	Salla reports and transfers the partner's commissions or dues on schedule, unless a dispute or breach prevents it
+CM-PTN-003	salla	shows	SA-I-1946	the payout status Under review
+CM-PTN-003	salla	shows	SA-I-1948	the payout status Paid
+CM-PTN-003	salla	shows	SA-I-1951	the payout status Need Action
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1937	the Partners portal link Billings, under Payments
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1938	the Partners portal link Operation records
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1174	the docs link Billing System Salla partners
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-0046	the Partners platform's billing system generates the monthly invoices for apps automatically
+CM-PTN-004	salla	core	SA-C-195/boundary/SA-S-0045	the partner opens, searches and pays its invoices, with proof of bank transfer
+CM-PTN-005	salla	core	SA-C-205/where/SA-S-1885	the dashboard link Merchant Services, /manage/experts
+CM-PTN-005	salla	core	SA-C-205/where/SA-S-3537	the dashboard app @salla.sa/ui-merchant-services, at manage/experts
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3191	the released flag expert-marketplace
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3195	the released flag recommended-services
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3422	the released flag partners-chat
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3436	the released flag services-redirect, plan basic
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1911	the Partners portal link Services, under My Services
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1912	the Partners portal link Orders Center
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1913	the Partners portal link Service Provider Portfolio
+CM-PTN-005	salla	extension-point	SA-C-205/responsible/SA-S-0198	the service provider: a partner serving Salla's merchants through the Partners platform, an independent party
+CM-PTN-005	salla	extension-point	SA-C-205/responsible/SA-S-0032	the Partners platform is a digital intermediary between partner and merchants, not party to their contract
+CM-PTN-005	salla	shows	SA-C-205/boundary/SA-S-5100	conversations between partner and merchant only through the platform's means
+CM-PTN-005	salla	shows	SA-C-205/reason/SA-S-5101	every service provider is verified, and dealings are supervised by Salla
+CM-PTN-006	salla	core	SA-C-303/decides/SA-S-5125	the platform assigns a store to a partner only after the merchant's prior explicit consent
+CM-PTN-006	salla	extension-point	SA-C-303/decides/SA-S-5125	accredited partners' services activate and develop the store
+CM-PTN-006	salla	extension-point	SA-C-303/responsible/SA-S-5126	the platform is only a coordinator and provider of infrastructure, not party to the partner–merchant relation
+CM-PTN-006	salla	shows	SA-C-303/where/SA-S-5124	the agencies' agreement page on partners.salla.com
+CM-PTN-006	salla	shows	SA-C-303/boundary/SA-S-5127	the partner updates the shared systems daily with each store's status
+CM-PTN-007	salla	extension-point	SA-C-304/boundary/SA-S-5130	Salla connects the partner with local brands seeking export and expansion in East Asia
+CM-PTN-007	salla	shows	SA-C-304/where/SA-S-5128	the programme's page on partners.salla.com
+CM-PTN-007	salla	shows	SA-C-304/responsible/SA-S-5129	payments and merchant of record in the target market; who does it isn't stated
+CM-PTN-008	salla	core	SA-C-173/decides/SA-S-5076	entitlement is calculated by the referral programme's terms approved by Salla
+CM-PTN-008	salla	core	SA-C-173/boundary/SA-S-5077	earnings due go to the merchant's wallet on the 28th of each month
+CM-PTN-008	salla	shows	SA-C-173/where/SA-S-2210	the agreement's page on salla.com
+CM-PTN-008	salla	shows	SA-C-173/responsible/SA-S-0019	the agreement, by Salla's owning company and its commercial registration
+CM-PTN-009	salla	core	SA-C-206/where/SA-S-3550	the dashboard app @salla.sa/ui-merchant-partner-marketing, at marketing/affiliates and influencers
+CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3414	the released flag partner-unlimited-affiliate
+CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3415	the released flag partner-merchant-affiliate, plans plus, pro and special
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1915	the Partners portal link Affiliate Profile, under Affiliates
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1916	the Partners portal link Affiliate Marketplace
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1918	the Partners portal link Affiliate Orders
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1922	the Partners portal link Campaign Orders, under Influencer
+CM-PTN-009	salla	shows	SA-C-206/decides/SA-S-3413	the flag partner-affiliate, not released
+CM-PTN-009	salla	shows	SA-C-206/responsible/SA-S-0043	the marketer's commission includes all taxes, VAT and government fees on sales
+CM-PTN-009	salla	shows	SA-C-206/responsible/SA-S-0033	the partner answers to merchants and regulators for its content
+CM-PTN-009	salla	shows	SA-C-206/boundary/SA-S-5102	conversations only through the platform's tools, on pain of suspension or frozen amounts
+CM-PTN-009	salla	shows	SA-C-206/reason/SA-S-5103	fair competition: partners offer prices equal to or below their other channels
+CM-DVT-001	shopify	core	SH-I-1990	Shopify.dev, "Dev docs, CLI, and more", in Shopify's own list of products
+CM-DVT-002	shopify	core	SH-I-1990	names a CLI among Shopify.dev's offerings
+CM-DVT-003	shopify	core	SH-I-2086	the Partner Dashboard's item Stores
+CM-DVT-004	shopify	shows	SH-C-158/boundary/SH-S-6300	names the development store, which a Dev Dashboard app connects to
+CM-PTN-001	shopify	core	SH-C-168/where/SH-S-2521	Shopify Partners, a destination of the Shopify account
+CM-PTN-001	shopify	core	SH-I-2085	the Partner Dashboard's Home
+CM-PTN-001	shopify	core	SH-I-2094	the Partner Dashboard's item Dev dashboard
+CM-PTN-001	shopify	core	SH-C-168/where/SH-S-0838	the docs label Partner API
+CM-PTN-001	shopify	core	SH-I-0074	the API resource Partner API
+CM-PTN-001	shopify	shows	SH-C-168/responsible/SH-S-0288	the agreement is between the partner, Shopify Inc. and Shopify Commerce Singapore
+CM-PTN-001	shopify	shows	SH-I-1385	the legal agreement Partner Terms of Service
+CM-PTN-001	shopify	shows	SH-I-1387	the legal item Report a partner violation
+CM-PTN-002	shopify	core	SH-I-2093	the Partner Dashboard's item Organization
+CM-PTN-002	shopify	core	SH-I-2092	the Partner Dashboard's item Partner settings
+CM-PTN-002	shopify	core	SH-C-168/boundary/SH-S-7463	the Partner API's object Organization, a Partner organization
+CM-PTN-002	shopify	shows	SH-C-168/decides/SH-S-0215	an API client needs a Partner Account and the Partner Program Agreement
+CM-PTN-002	shopify	shows	SH-C-168/responsible/SH-S-0297	a partner may not be in or organized under an Unsupported Region
+CM-PTN-003	shopify	core	SH-C-169/where/SH-S-2855	the Partner Dashboard's Payouts
+CM-PTN-003	shopify	core	SH-C-169/where/SH-S-7145	the organization settings route partner-payouts
+CM-PTN-003	shopify	core	SH-C-169/decides/SH-S-5241	the partner payouts and billing routes, open to organizations with the feature PARTNER
+CM-PTN-003	shopify	core	SH-C-169/decides/SH-S-0295	Shopify distributes what it owes partners twice per calendar month
+CM-PTN-003	shopify	core	SH-C-169/responsible/SH-S-0282	Shopify collects the charge and pays out the developer's share automatically
+CM-PTN-003	shopify	core	SH-I-0175	the Partner API's Transactions
+CM-PTN-003	shopify	core	SH-C-169/boundary/SH-S-7464	the Partner API's interface Transaction, a Shopify Partner transaction
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0759	Shopify may set off or withhold payments to partners
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0758	payments may be withheld during fraud, risk and anti-money-laundering checks
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0287	the App Plan's revenue share: 0% to USD 1 million, 15% above
+CM-PTN-003	shopify	shows	SH-I-1133	the Partner API permission View financials
+CM-PTN-004	shopify	core	SH-C-169/decides/SH-S-5241	the organization settings route partner-billing, open to partner organizations
+CM-PTN-005	shopify	core	SH-C-170/where/SH-S-7146	the plan subscription route Schedule intro call, book-shopify-expert-intro-call
+CM-PTN-005	shopify	core	SH-C-170/where/SH-S-7147	the plan subscription route Bring your own partner
+CM-PTN-005	shopify	extension-point	SH-C-170/responsible/SH-S-0760	partners provide services via the Partner Directory, at their own responsibility
+CM-PTN-005	shopify	shows	SH-C-170/responsible/SH-S-0761	the partner ensures a Merchant Agreement with the merchant
+CM-PTN-005	shopify	shows	SH-I-1328	the billing charge category Expert services fees
+CM-PTN-005	shopify	shows	SH-I-1340	the billing charge category Professional services fees
