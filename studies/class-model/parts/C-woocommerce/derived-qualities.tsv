@@ -10,3 +10,4 @@ CM-PAY-026	woocommerce	Stripe Capital: start of repayment withholding	Rather, th
 CM-TAX-002	woocommerce	supported store countries	Automated tax calculations are available to stores based in the United States, Canada, Australia, the United Kingdom, and these European Union countries:	WC-C-055/decides/WC-S-0635	
 CM-TAX-002	woocommerce	accuracy	we can’t guarantee that tax calculations you receive through or in connection with our Services are complete and accurate.	WC-C-055/responsible/WC-S-0474	
 CM-TAX-009	woocommerce	issuing threshold	WooPayments is required to issue a Form 1099-K to U.S. persons if their total payments exceeds a specific minimum threshold.	WC-C-021/decides/WC-S-0547	U.S. persons
+CM-SHP-002	woocommerce	WooCommerce Shipping by store country and currency	WooCommerce Shipping is currently available to stores based in the United States, including U.S. territories, that use U.S. dollars.	WC-C-060/decides/WC-S-0905	

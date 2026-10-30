@@ -348,3 +348,101 @@ CM-TAX-009	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooComm
 CM-TAX-009	woocommerce	shows	WC-C-021/decides/WC-S-0860	Form 1099-K an information filing required by the IRS
 CM-TAX-009	woocommerce	shows	WC-C-021/reason/WC-S-0860	the same sentence, under reason
 CM-TAX-009	woocommerce	shows	WC-I-0610	documentation topic Taxes and Documents
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0004	settings tab Shipping
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0017	section Shipping zones
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0018	section Shipping settings
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0019	section Classes (shipping classes)
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0284	core shipping method Flat rate
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0285	core shipping method Free shipping
+CM-SHP-001	woocommerce	core	WC-C-075/decides/WC-S-0599	shipping rates use the store address; core in CM-TAX-001 under WC-C-054
+CM-SHP-001	woocommerce	core	WC-C-030/decides/WC-S-5355	setting Shipping location(s): countries to ship to; shows in E's CM-MKS-001
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0113	REST resource wc/v3 shipping-zones
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0114	REST resource wc/v3 shipping-zone-locations
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0115	REST resource wc/v3 shipping-zone-methods
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0122	REST resource wc/v3 shipping-methods
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0098	REST resource wc/v3 product-shipping-classes
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0135	REST resource wc/v4 shipping-zones
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0136	REST resource wc/v4 shipping-zone-method
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0687	shipping zones API: create, view, update, delete
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0688	shipping zone locations API
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0689	shipping zone methods API
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0690	shipping methods API
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0676	product shipping class API
+CM-SHP-001	woocommerce	core	WC-C-075/boundary/WC-S-0159	Store API: the buyer selects a shipping rate in the cart
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0420	onboarding task Get your products shipped
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0427	onboarding task Review shipping options
+CM-SHP-001	woocommerce	core	WC-C-075/where/WC-S-0428	onboarding task Select your shipping options
+CM-SHP-001	woocommerce	core	WC-C-061/boundary/WC-S-0205	own wc-admin resource shipping-partner-suggestions
+CM-SHP-001	woocommerce	extension-point	WC-C-061/where/WC-S-0699	Marketplace category Shipping, delivery and fulfillment
+CM-SHP-001	woocommerce	extension-point	WC-C-061/where/WC-S-0712	Marketplace category Delivery options and enhancements
+CM-SHP-001	woocommerce	extension-point	WC-C-061/where/WC-S-0715	Marketplace category Label printing
+CM-SHP-001	woocommerce	extension-point	WC-C-075/boundary/WC-S-0628	Shipping Method API, which plugins use to add their own rates
+CM-SHP-001	woocommerce	outside	WC-C-061/decides/WC-S-0651	third-party services, such as EasyPost to manage shipping
+CM-SHP-001	woocommerce	shows	WC-C-075/where/WC-S-0286	legacy method Flat rate (legacy)
+CM-SHP-001	woocommerce	shows	WC-C-075/where/WC-S-0287	legacy method Free shipping (legacy)
+CM-SHP-001	woocommerce	shows	WC-C-075/where/WC-S-0288	legacy method International flat rate (legacy)
+CM-SHP-001	woocommerce	shows	WC-C-075/decides/WC-S-5411	setting woocommerce_enable_shipping_calc, default yes; its effect isn't stated
+CM-SHP-001	woocommerce	shows	WC-C-075/boundary/WC-S-0439	abstract class WC_Shipping_Method
+CM-SHP-001	woocommerce	shows	WC-C-075/boundary/WC-S-0440	filter woocommerce_shipping_methods
+CM-SHP-001	woocommerce	shows	WC-C-061/responsible/WC-S-0487	Third-Party Services aren't vetted, endorsed, or controlled by Automattic
+CM-SHP-001	woocommerce	shows	WC-I-0620	WooCommerce plugin page feature Configure your shipping options
+CM-SHP-001	woocommerce	shows	WC-I-0411	shipping partner suggestion ShipStation
+CM-SHP-001	woocommerce	shows	WC-I-0412	shipping partner suggestion Skydropx
+CM-SHP-001	woocommerce	shows	WC-I-0413	shipping partner suggestion Envia
+CM-SHP-001	woocommerce	shows	WC-I-0414	shipping partner suggestion Easyship
+CM-SHP-001	woocommerce	shows	WC-I-0415	shipping partner suggestion Packlink
+CM-SHP-002	woocommerce	own-service	WC-C-060/where/WC-S-0904	ready-to-print labels for UPS, USPS, DHL Express, FedEx in WooCommerce at discounted rates
+CM-SHP-002	woocommerce	own-service	WC-C-060/boundary/WC-S-0655	maker: 'Our shipping Services' in Automattic's terms check rates or buy labels
+CM-SHP-002	woocommerce	own-service	WC-C-060/boundary/WC-S-0958	maker: done via Automattic's servers
+CM-SHP-002	woocommerce	own-service	WC-I-0627	maker: WooCommerce Shipping among Woo Services in the terms
+CM-SHP-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-SHP-002	woocommerce	outside	WC-C-060/responsible/WC-S-0483	only an intermediary between you and these third parties
+CM-SHP-002	woocommerce	shows	WC-C-060/decides/WC-S-0905	available to US stores using US dollars
+CM-SHP-002	woocommerce	shows	WC-C-060/decides/WC-S-0592	readme: (U.S.-only)
+CM-SHP-002	woocommerce	shows	WC-C-060/boundary/WC-S-0567	requires Jetpack to connect with other services
+CM-SHP-002	woocommerce	shows	WC-C-060/boundary/WC-S-0959	data validated, not stored, then passed to partners
+CM-SHP-002	woocommerce	shows	WC-I-0416	shipping partner suggestion WooCommerce Shipping
+CM-SHP-004	woocommerce	extension-point	WC-C-061/boundary/WC-S-0628	plugins use the Shipping Method API to add their own rates
+CM-SHP-004	woocommerce	extension-point	WC-C-061/where/WC-S-0716	Marketplace category Shipping rates at checkout
+CM-SHP-004	woocommerce	shows	WC-C-060/decides/WC-S-0906	WooCommerce Shipping does not provide live shipping rates at checkout
+CM-SHP-006	woocommerce	core	WC-C-075/where/WC-S-0291	core shipping method Local pickup (local_pickup)
+CM-SHP-006	woocommerce	shows	WC-C-075/where/WC-S-0289	legacy method Local delivery (legacy)
+CM-SHP-006	woocommerce	shows	WC-C-075/where/WC-S-0290	legacy method Local pickup (legacy)
+CM-SHP-007	woocommerce	core	WC-C-075/where/WC-S-0291	core shipping method Local pickup (local_pickup)
+CM-SHP-007	woocommerce	core	WC-C-075/where/WC-S-0292	core shipping method Local pickup (pickup_location)
+CM-SHP-007	woocommerce	shows	WC-C-075/where/WC-S-0290	legacy method Local pickup (legacy)
+CM-SHP-008	woocommerce	shows	WC-C-075/where/WC-S-0289	legacy method Local delivery (legacy)
+CM-SHP-009	woocommerce	core	WC-C-092/boundary/WC-S-0131	REST resource wc/v4 fulfillments
+CM-SHP-009	woocommerce	core	WC-C-092/boundary/WC-S-0897	Order Fulfillment: an interface and an API for shipping tools and providers
+CM-SHP-009	woocommerce	shows	WC-C-092/decides/WC-S-0938	feature fulfillments: manage order fulfillment and shipping
+CM-SHP-009	woocommerce	shows	WC-C-092/decides/WC-S-5444	feature off by default, disable_ui true
+CM-SHP-009	woocommerce	shows	WC-C-092/where/WC-S-0310	customer email Fulfillment created; core in D's CM-NTF-001
+CM-SHP-009	woocommerce	shows	WC-C-092/where/WC-S-0311	customer email Fulfillment updated; core in D's CM-NTF-001
+CM-SHP-009	woocommerce	shows	WC-C-092/where/WC-S-0312	customer email Fulfillment deleted; core in D's CM-NTF-001
+CM-SHP-011	woocommerce	extension-point	WC-C-061/where/WC-S-0713	Marketplace category Fulfillment and dropshipping; also in B's CM-CAT-010
+CM-SHP-015	woocommerce	core	WC-C-092/where/WC-S-0020	settings section Shipping > Shipping providers
+CM-SHP-015	woocommerce	extension-point	WC-C-061/boundary/WC-S-0566	a shipping extension shares data with the shipping provider
+CM-SHP-020	woocommerce	core	WC-C-058/where/WC-S-5383	three optional customs fields on products and variations
+CM-SHP-020	woocommerce	core	WC-C-058/decides/WC-S-5384	Product data > Shipping > Customs in the classic product editor
+CM-SHP-020	woocommerce	core	WC-C-058/boundary/WC-S-5385	REST fields customs_commodity_code, customs_country_of_origin, customs_description
+CM-SHP-020	woocommerce	shows	WC-C-058/reason/WC-S-5386	a description of goods for cross-border shipping; no duties, no labels
+CM-RET-001	woocommerce	shows	WC-C-071/responsible/WC-S-5408	the merchant keeps return and refund policies; shows in E's CM-CNT-008
+CM-RET-002	woocommerce	core	WC-C-071/boundary/WC-S-0669	order refunds API: create, view, delete refunds on an order
+CM-RET-002	woocommerce	core	WC-C-071/boundary/WC-S-0680	refunds API: read-only list of refunds
+CM-RET-002	woocommerce	core	WC-C-071/boundary/WC-S-0091	REST resource wc/v3 order-refunds
+CM-RET-002	woocommerce	core	WC-C-071/boundary/WC-S-0102	REST resource wc/v3 refunds
+CM-RET-002	woocommerce	core	WC-C-071/boundary/WC-S-0138	REST resource wc/v4 refunds
+CM-RET-002	woocommerce	core	WC-C-071/decides/WC-S-5407	refund_line_items requires edit_shop_orders
+CM-RET-002	woocommerce	core	WC-I-0322	order status Refunded
+CM-RET-002	woocommerce	shows	WC-C-071/where/WC-S-0302	customer email Refunded order; core in D's CM-NTF-001
+CM-RET-002	woocommerce	shows	WC-C-071/where/WC-S-0316	customer email Partially refunded order; core in D's CM-NTF-001
+CM-RET-002	woocommerce	shows	WC-C-071/responsible/WC-S-0469	the merchant answers for refunds under Ecommerce Services
+CM-RET-004	woocommerce	core	WC-C-091/where/WC-S-5438	withdrawal request form at /my-account/withdraw-order/
+CM-RET-004	woocommerce	core	WC-C-091/where/WC-S-5439	endpoint slug withdraw-order
+CM-RET-004	woocommerce	core	WC-C-091/decides/WC-S-0934	feature order_withdrawal for customer requests
+CM-RET-004	woocommerce	core	WC-C-091/decides/WC-S-5440	feature order_withdrawal, off by default, disable_ui false
+CM-RET-004	woocommerce	core	WC-C-091/decides/WC-S-5441	order's creation date shown as an age warning to the merchant
+CM-RET-004	woocommerce	core	WC-C-091/boundary/WC-S-5443	a matching request adds an order note and an inbox notification
+CM-RET-004	woocommerce	shows	WC-C-091/responsible/WC-S-5442	does not guarantee compliance
+CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0314	customer email Order withdrawal request received; core in D's CM-NTF-001
+CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0315	staff email Order withdrawal request; core in D's CM-NTF-002

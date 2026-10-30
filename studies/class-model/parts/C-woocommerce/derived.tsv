@@ -54,6 +54,32 @@ CM-PAY-029	woocommerce	statements	core	Cash on delivery | Payments > cod | cod (
 CM-PAY-030	woocommerce	statements	core	Direct bank transfer | Payments > bacs | bacs (WC_Gateway_BACS method_description)	WC-C-002/boundary/WC-S-5004=Direct bank transfer (bacs) | WC-C-002/decides/WC-S-5001=Direct bank transfer (bacs)	WC-C-002/responsible:stated only in general terms;WC-C-002/reason:searched, not found	general
 CM-PAY-031	woocommerce	none-held					
 CM-PAY-032	woocommerce	none-held					
+CM-RET-001	woocommerce	statements	not-stated		WC-C-071/responsible/WC-S-5408=Ecommerce Services (Terms 8.j)	WC-C-071/reason:searched, not found	
+CM-RET-002	woocommerce	statements	core	Partially refunded order (WC_Email_Customer_Partially_Refunded_Order) | Refunded order (WC_Email_Customer_Refunded_Order)	WC-C-071/responsible/WC-S-0469=Ecommerce Services (Terms 8.j)	WC-C-070/responsible:stated only in general terms;WC-C-070/reason:searched, not found;WC-C-071/reason:searched, not found	general
+CM-RET-003	woocommerce	none-held					
+CM-RET-004	woocommerce	statements	core	/my-account/withdraw-order/ | Order withdrawal request (WC_Email_Order_Withdrawal_Requested) | Order withdrawal request received (WC_Email_Customer_Order_Withdrawal_Requested) | withdraw-order		WC-C-091/reason:searched, not found	general
+CM-SHP-001	woocommerce	statements	core;extension-point;outside	Extensions > Shipping, delivery and fulfillment | Extensions > Shipping, delivery and fulfillment > Delivery options and enhancements | Extensions > Shipping, delivery and fulfillment > Label printing | Flat rate (flat_rate) | Flat rate (legacy) (legacy_flat_rate) | Free shipping (free_shipping) | Free shipping (legacy) (legacy_free_shipping) | Get your products shipped | International flat rate (legacy) (legacy_international_delivery) | Review shipping options | Select your shipping options | Shipping | Shipping > Classes | Shipping > Shipping settings | Shipping > Shipping zones		WC-C-030/responsible:stated only in general terms;WC-C-030/reason:searched, not found;WC-C-060/reason:searched, not found;WC-C-061/reason:searched, not found;WC-C-075/responsible:stated only in general terms;WC-C-075/reason:searched, not found	general
+CM-SHP-002	woocommerce	statements	outside;own-service	WooCommerce Shipping	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found;WC-C-060/reason:searched, not found	general
+CM-SHP-003	woocommerce	none-held					
+CM-SHP-004	woocommerce	statements	extension-point	Extensions > Shipping, delivery and fulfillment > Shipping rates at checkout		WC-C-060/reason:searched, not found;WC-C-061/reason:searched, not found	
+CM-SHP-005	woocommerce	none-held					
+CM-SHP-006	woocommerce	statements	core	Local delivery (legacy) (legacy_local_delivery) | Local pickup (legacy) (legacy_local_pickup) | Local pickup (local_pickup)		WC-C-075/responsible:stated only in general terms;WC-C-075/reason:searched, not found	general
+CM-SHP-007	woocommerce	statements	core	Local pickup (legacy) (legacy_local_pickup) | Local pickup (local_pickup) | Local pickup (pickup_location)		WC-C-075/responsible:stated only in general terms;WC-C-075/reason:searched, not found	general
+CM-SHP-008	woocommerce	statements	not-stated	Local delivery (legacy) (legacy_local_delivery)		WC-C-075/responsible:stated only in general terms;WC-C-075/reason:searched, not found	
+CM-SHP-009	woocommerce	statements	core	Fulfillment created (WC_Email_Customer_Fulfillment_Created) | Fulfillment deleted (WC_Email_Customer_Fulfillment_Deleted) | Fulfillment updated (WC_Email_Customer_Fulfillment_Updated)		WC-C-092/responsible:stated only in general terms;WC-C-092/reason:searched, not found	general
+CM-SHP-010	woocommerce	none-held					
+CM-SHP-011	woocommerce	statements	extension-point	Extensions > Shipping, delivery and fulfillment > Fulfillment and dropshipping		WC-C-061/reason:searched, not found	
+CM-SHP-012	woocommerce	none-held					
+CM-SHP-013	woocommerce	none-held					
+CM-SHP-014	woocommerce	none-held					
+CM-SHP-015	woocommerce	statements	core;extension-point	Shipping > Shipping providers		WC-C-061/reason:searched, not found;WC-C-092/responsible:stated only in general terms;WC-C-092/reason:searched, not found	general
+CM-SHP-016	woocommerce	none-held					
+CM-SHP-017	woocommerce	none-held					
+CM-SHP-018	woocommerce	none-held					
+CM-SHP-019	woocommerce	none-held					
+CM-SHP-020	woocommerce	statements	core	Product customs data			general
+CM-SHP-021	woocommerce	none-held					
+CM-SHP-022	woocommerce	none-held					
 CM-TAX-001	woocommerce	statements	core	Collect sales tax | Tax | Tax > Reduced rate rates | Tax > Standard rates | Tax > Tax options | Tax > Zero rate rates | WooPayments: Taxes	WC-C-054/responsible/WC-S-0467=Ecommerce Services (Terms 8.j) | WC-C-054/where/WC-S-0546=WooPayments	WC-C-054/reason:searched, not found	general
 CM-TAX-002	woocommerce	statements	outside;own-service	Set up WooCommerce Tax: Before you start | WooCommerce: Tax Calculations	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found	general
 CM-TAX-003	woocommerce	none-held					

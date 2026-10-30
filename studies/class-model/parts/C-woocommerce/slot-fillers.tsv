@@ -29,3 +29,10 @@ CM-PAY-004	woocommerce	Stripe (Connected Account Agreement)	WC-C-020/responsible
 CM-TAX-002	woocommerce	TaxJar	WC-C-055/where/WC-S-0957
 CM-TAX-002	woocommerce	Taxamo	WC-C-055/responsible/WC-S-0473
 CM-TAX-009	woocommerce	Internal Revenue Service (IRS)	WC-C-021/decides/WC-S-0860
+CM-SHP-001	woocommerce	EasyPost	WC-C-061/decides/WC-S-0651
+CM-SHP-002	woocommerce	EasyPost	WC-C-060/boundary/WC-S-0958
+CM-SHP-002	woocommerce	USPS	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	UPS	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	FedEx	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	DHL	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	Canada Post	WC-C-060/boundary/WC-S-0655

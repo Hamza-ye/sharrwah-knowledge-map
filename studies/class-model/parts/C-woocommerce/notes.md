@@ -388,3 +388,111 @@ None. CM-TAX-004's name could add WooCommerce's category Sales tax and duties. C
 - **WC-S-5310,** the JCT invoices for WooPayments' fees, held only under WC-C-021, is now cited in domain A's CM-PLN-007 (A-woocommerce), beside WC-S-5309, and scope.tsv names A under WC-C-021's `also`.
 - **The anchor's `single` landings whose Q1 match has another side in this part** (SH-C-099 with M-039, SH-C-102 with M-041) are rewritten as `match:` with the anchor's other such rows, once its last batch has run.
 - **The checker's two problems** are batch 5's: U-032, once SA-C-146 has landed, and the anchor's SHP cells, which its batches 11 and 12 write.
+
+## Batch 5: SHP and RET (WC-C-060, WC-C-061, WC-C-075, WC-C-092, WC-C-071, WC-C-091), and the whole part's check
+
+Read: the brief; `seed --domain C`; `model --domain C --areas SHP,RET` (the anchor's CM-SHP-001 to -022 and CM-RET-001 to -003, each with a Shopify and a Salla cell); WooCommerce's domain C concerns with `--where` and those naming C under `also`; the six concerns' statements, gaps and matches, and WC-C-058's (for its product customs data); `candidates --domain C --platform woocommerce --areas SHP,RET`; the searches named in each cell's `searched` and reading. Context read in the release (not cited): the section fulfillment-providers in `class-wc-settings-shipping.php`, shown only when the feature fulfillments is on, and its providers' classes under `src/Admin/Features/Fulfillments/Providers/`.
+
+### How it was cut
+
+| Concern | Capability | Join | Fit |
+|---|---|---|---|
+| WC-C-075 Shipping zones, methods and classes (core) | CM-SHP-001 | match:M-045 | clean |
+| WC-C-060 WooCommerce Shipping (labels and carrier rates) | CM-SHP-002 | match:M-047 | clean |
+| WC-C-061 Third-party shipping carriers and shipping extensions | CM-SHP-001 | role | strained |
+| WC-C-092 Order fulfillments and shipping providers | CM-SHP-009 | match:M-048 | clean |
+| WC-C-071 Refunds | CM-RET-002 | match:M-024 | clean |
+| WC-C-091 Order withdrawal requests | CM-RET-004 (new) | single | clean |
+
+- **One capability added, CM-RET-004 (Order withdrawal requests), parent CM-ORD-001.** WooCommerce gives it places of its own: a form in the buyer's account (/my-account/withdraw-order/), a feature, and a customer and a staff email. `caps --terms` (order withdrawal; withdraw-order; right of withdrawal; cooling-off; حق الانسحاب; الانسحاب; العدول; حق العدول; سحب الطلب) found it in no domain: the hits are D's CM-NTF-002, which cites the staff email, and homonyms. It isn't CM-RET-003, a reading: no statement held says a withdrawal returns the order's items or refunds it, and WooCommerce "does not determine whether the customer has a legal right to withdraw" (WC-S-5441). The parent is a reading (the capability's note). The reviewer may join it to CM-RET-003 on role, the buyer's request to undo a purchase, or put it under CM-RET-001.
+- **M-045's grain.** WooCommerce keeps local pickup among its core shipping methods; Shopify and Salla split it (M-046). WC-C-075 lands in the parent CM-SHP-001; its Local pickup methods (WC-S-0291, WC-S-0292) are cited in CM-SHP-006 and CM-SHP-007, and the legacy Local pickup and Local delivery (WC-S-0290, WC-S-0289) in CM-SHP-006 to -008, all in SHP-001's tree. WC-S-0291 is cited in both CM-SHP-006 and its child CM-SHP-007, and WC-S-0289 and WC-S-0290 in the parent and a child each.
+- **WC-C-061 is coarser than one capability.** It lands in CM-SHP-001 on role (the platform's category for shipping extensions), strained. Its subcategories are cut by what they name: Shipping rates at checkout and the Shipping Method API to CM-SHP-004; Fulfillment and dropshipping to CM-SHP-011 (and to B's CM-CAT-010, for dropshipping); Delivery options and enhancements and Label printing stay in the parent, since what their extensions do isn't stated (Label printing isn't CM-SHP-002, whose labels are bought through the platform at its rates); Inventory and order management is batch 1's, in CM-ORD-001. Its shipping partner suggestions (the wc-admin resource WC-S-0205, core, as batch 2 read the payment suggestions; ShipStation, Skydropx, Envia, Easyship and Packlink, WC-I-0411 to WC-I-0415, shows) are in CM-SHP-001.
+- **WC-C-092's shipping providers.** The settings section Shipping > Shipping providers (WC-S-0020) is cited in CM-SHP-015 (shipping carriers), core, a reading on role. Q1's M-048 note says they are providers for tracking, and the release shows them as carriers' tracking definitions, but no statement held says so: CM-SHP-017's WooCommerce cell is none-held, and that is a gap.
+- **The feature fulfillments** is off by default with 'disable_ui' => true (WC-S-5444): read as its toggle hidden from the admin. The cell cites the REST resource and the documented system (WC-S-0131, WC-S-0897) as core, and the flag and its description as shows. The reviewer may hold the core back until a statement shows how a merchant turns it on.
+- **WC-C-058's product customs data** (WC-S-5383, WC-S-5384, WC-S-5385 core; WC-S-5386 shows) is cited in CM-SHP-020, as batch 4 left it. WC-C-058 stays in CM-TAX-008 (strained, batch 4): one concern, cited in TAX and SHP.
+- **CM-RET-001 and CM-RET-003.** WooCommerce has refunds only (M-024's granularity). CM-RET-001 cites, as shows, the merchant's duty to keep return and refund policies (WC-S-5408, also shows in E's CM-CNT-008); CM-RET-003 is none-held.
+
+### Joins on role (readings)
+
+- CM-SHP-001: the Marketplace category Shipping, delivery and fulfillment (WC-S-0699) against Salla's app category Shipping and Delivery (SA-S-1190) and Shopify's Shipping apps (SH-I-1864): WC-C-061's landing.
+- CM-SHP-004: plugins adding their own rates through the Shipping Method API (WC-S-0628) and the category Shipping rates at checkout (WC-S-0716) against Shopify's carrier services and Shipping rate apps (SH-S-2629).
+- CM-SHP-009: WooCommerce's fulfillments against Salla's shipments (SA-C-144), as the anchor joined them.
+- CM-SHP-011: the category Fulfillment and dropshipping (WC-S-0713) against Shopify's 3PL apps (SH-S-2631) and Salla's Fulfillment apps (SA-S-1192).
+- CM-SHP-015: the section Shipping providers (WC-S-0020) and a shipping extension sharing data with the shipping provider (WC-S-0566) against Salla's shipping companies and Shopify's carriers.
+- CM-SHP-020: WooCommerce's customs commodity code (WC-S-5385) against Salla's HS code (SA-S-0167). No WooCommerce statement held calls it an HS code.
+
+### WordPress and Automattic (readings)
+
+- **WooCommerce Shipping is Automattic's service, not WooCommerce core** (CM-SHP-002, `own-service`). The maker statements: the Terms of Service list WooCommerce Shipping among Woo Services (WC-I-0627), whose provider outside the Designated Countries is WooCommerce, Inc. (WC-S-0459); Automattic's terms, section 8.j, say "Our shipping Services allow you to check shipping rates or buy shipping labels" (WC-S-0655); and its data goes to "our partners, EasyPost, and the respective mailing service ... This is done via Automattic's servers" (WC-S-0958). They count for the feature the cell's own statements show (WC-S-0904, WC-S-0655). The brand in its name counts for nothing.
+- **Third parties do the shipping.** Automattic is "only an intermediary between you and these third parties" (WC-S-0483, `outside`), as Shopify's SH-S-0613 is in the same cell. EasyPost (WC-S-0958, WC-S-0651) and the mailing services DHL, FedEx, UPS, USPS and Canada Post (WC-S-0655) are slot fillers. Its US-only availability is a quality (WC-S-0905).
+- **Its Jetpack connection** (WC-S-0567) is `shows` here; the connection is A's.
+- **WooCommerce Shipping and live rates.** "It does not provide live shipping rates at checkout" (WC-S-0906, shows in CM-SHP-004), but it "requires Jetpack to ... provide live shipping rates, discounted labels, and other features" (WC-S-0567). The statements don't reconcile the two; neither is read as the service calculating checkout rates.
+- **Order withdrawal** is core WooCommerce: its statements name WooCommerce's own feature, endpoint and emails. The feature "does not guarantee compliance" (WC-S-5442, shows); no law is named, so no slot filler.
+
+### Homonyms
+
+- **tracking:** WooCommerce's usage tracking (WC-C-035) and order attribution tracking (WC-C-085) aren't shipment tracking (CM-SHP-017).
+- **withdrawal:** the buyer's withdrawal from an order (CM-RET-004) isn't B's CM-INV-009 (Zid's inventory withdrawal priority), nor WooPayments' dispute amounts "withdrawn from your account" (WC-S-5320).
+- **return:** WooCommerce Tax's "does not file returns" (WC-S-0633) is tax returns; the code's `return` matches too.
+- **exchange:** WooPayments' exchange rates (E) aren't CM-RET-003's exchanges.
+- **Insurance:** the Marketplace category Business services > Insurance (WC-S-0763) isn't shipping insurance (CM-SHP-003).
+
+### Concerns read under `also`
+
+- WC-C-030 (E): Shipping location(s) (WC-S-5355), core in CM-SHP-001; it is shows in E's CM-MKS-001. Its filter woocommerce_countries_shipping_countries (WC-S-5357) is left to E.
+- WC-C-041 (A): its key on WC-S-0566 is A's (CM-TRU-013); CM-SHP-015 cites the statement under WC-C-061's key.
+- WC-C-027 (A): WC-S-0469 is cited under WC-C-071's key (CM-RET-002, shows).
+- WC-C-109 (G): nothing on shipping or returns beyond batch 1's.
+
+### Rulings
+
+- **U-032:** WC-C-058 against SA-C-146, `joined:CM-SHP-020`, on role.
+- **U-072** (WC-C-061, six rows): against SH-C-115 `joined:CM-SHP-004`; SH-C-119 `joined:CM-SHP-011`; SH-C-120 `nested:CM-SHP-012` (Shopify's Fulfillment Network in CM-SHP-012, WooCommerce's category in its parent CM-SHP-011); SA-C-139 and SA-C-141 `joined:CM-SHP-015`; SA-C-145 `joined:CM-SHP-001`.
+- **U-073** (WC-C-092, four rows): against SH-C-118 `joined:CM-SHP-009` (Q1's M-048); SH-C-126 `joined:CM-SHP-015`, by the cells: WooCommerce's Shipping providers (WC-S-0020) and Shopify's Tracking carriers (SH-I-2095, shows there, core in CM-SHP-017), which is what U-073 asks; SA-C-144 and SA-C-145 `joined:CM-SHP-009`.
+- **U-016** (WC-C-061, four rows), all `apart`: SH-C-141 (E), SH-C-185 (B) and SA-C-098 (D) by scope.tsv, none naming C; SA-C-124 because no capability of C cites both. The dropshipping side of the join is B's CM-CAT-010, which cites WC-S-0713 with Shopify's and Salla's dropshipping categories.
+- **U-080:** WC-C-091 against SH-C-175 (A, naming C), `apart`: no cell cites Shopify's help section EU right of withdrawal compliance (SH-I-2129). The back-fill writes Shopify's CM-RET-004 cell; if it cites SH-I-2129, the ruling becomes `joined:CM-RET-004`.
+
+### The checker's flags, answered
+
+Batch check: 0 problems, 112 flags. Whole part: 0 problems, 112 flags. The flags on this batch's rows:
+- **`own-service` on WC-S-0904, WC-S-0655, WC-S-0958, WC-I-0627, WC-S-0459** (CM-SHP-002). WC-S-0904 is a feature of WooCommerce Shipping; the others are its maker statements, as above.
+- **CM-SHP-009's core rests only on boundary statements.** wc/v4 fulfillments is WooCommerce's own API for its own feature, core by the dry run's ruling; WC-S-0897 also names the system's user interface.
+- **none-held with matching statements:**
+  - CM-SHP-005 and CM-SHP-016: REST routes (WC-S-5392, WC-S-0081, WC-S-5454, WC-S-0082), not order routing or shipping routes;
+  - CM-SHP-010: Back in Stock's batches of emails (WC-S-5478) and Google for WooCommerce's product sync (WC-S-5494), not fulfillment batching;
+  - CM-SHP-013: the category Delivery options and enhancements (WC-S-0712, WC-I-0507), cited in CM-SHP-001; what its extensions do isn't stated;
+  - CM-SHP-017: usage and order attribution tracking (homonyms), as the cell says;
+  - CM-SHP-019: Local pickup (pickup_location, WC-S-0292), the buyer's pickup at the store (CM-SHP-007), and WC-S-0712;
+  - CM-SHP-021: a checkbox, a setting and the order page's meta boxes (WC-S-5337, WC-S-5009, WC-S-5426);
+  - CM-SHP-022: terms on WooPayments' third parties, taxes, warranty and data transfers, and product review ratings;
+  - CM-RET-003: the code's `return`, tax returns, WooPayments' exchange rates and the return policy (cited in CM-RET-001).
+- **The rest are earlier batches' flags,** answered in their sections. WC-S-0459 now also appears in CM-SHP-002, as maker evidence.
+
+### Uncited statements of the batch's concerns
+
+- WC-C-060/boundary/WC-S-0904 and WC-C-061/boundary/WC-S-0439: the same sentences are cited under WC-C-060/where and WC-C-075/boundary.
+- WC-C-058/responsible/WC-S-0484 (the merchant's responsibility for "international shipping and customs regulations" under the shipping Services) stays in CM-TAX-008 (batch 4), not cited again in CM-SHP-020.
+- WC-C-030/boundary/WC-S-5357, the filter on shipping countries: E's.
+
+### Gaps
+
+- What WooCommerce's Shipping providers section lists, and that it serves tracking: no statement held (CM-SHP-015, CM-SHP-017).
+- How a merchant turns on Order Fulfillments, whose toggle is hidden (WC-S-5444): no statement held.
+- Whether WooCommerce Shipping's labels are paid through the merchant's account with Automattic: no statement held (CM-SHP-002's definition).
+- What the Marketplace subcategories' extensions do (Delivery options and enhancements, Label printing, Fulfillment and dropshipping, Shipping rates at checkout): no statement held; Q1's gap on WC-C-061's reason.
+- Whether the customs commodity code is an HS code: no statement held (CM-SHP-020).
+- Q1's gaps: reason, searched, not found, on all six concerns; responsible, stated only in general terms, on WC-C-075 and WC-C-092.
+
+### For the coordinator
+
+- **The back-fill** (C-backfill-woocommerce) writes Shopify's and Salla's cells for CM-RET-004. Shopify's help section SH-I-2129 (SH-C-175, domain A naming C) is the lead; U-080 is then re-tested.
+- **Earlier batches' rows:** the checker prints no problem on them. Batch 1's CM-ORD-013 cites WC-S-5443 as shows, and CM-RET-004 cites it as core; that is consistent. Batch 4's CM-TAX-008 note ("product customs data to the SHP batch") is now done, in CM-SHP-020. Batch 1's CM-ORD-009 reading names WooCommerce Shipping's labels as SHP's: they are CM-SHP-002's.
+- **Q1's M-048 note** (shipping providers for tracking) is the only basis for reading WC-S-0020 as tracking; the reviewer may move it to CM-SHP-017 if a statement is captured.
+
+### Renames proposed
+
+- CM-SHP-001: add WooCommerce's Shipping zones and Shipping, delivery and fulfillment.
+- CM-SHP-004: add WooCommerce's Shipping Method API and Shipping rates at checkout.
+- CM-SHP-009: add WooCommerce's Order Fulfillments.
+- CM-SHP-015: add WooCommerce's Shipping providers.
+- CM-SHP-020: add WooCommerce's Product customs data.
