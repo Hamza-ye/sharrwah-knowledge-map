@@ -1,4 +1,578 @@
 cap_id	grade	placement	key	identifier
+CM-AIA-001	exact	decides	SA-C-012/decides/SA-S-3158	suggested-by-moshamer
+CM-AIA-001	exact	decides	SA-C-012/decides/SA-S-3400	salla_gpt
+CM-AIA-001	exact	decides	SA-C-012/decides/SA-S-3401	ai-product
+CM-AIA-001	exact	decides	SH-C-202/decides/SH-S-7488	AI features in the Shopify admin
+CM-AIA-002	exact	decides	SA-C-012/decides/SA-S-3187	merchant-multi-agent-assistant
+CM-AIA-002	exact	boundary	SH-C-152/boundary/SH-S-2193	app_data
+CM-AIA-002	exact	boundary	SH-C-152/boundary/SH-S-2257	app_action_link
+CM-AIA-002	exact	decides	SH-C-152/decides/SH-S-0737	help.shopify.com/en/manual/ai-powered-tools/sidekick.md
+CM-AIA-002	exact	decides	SH-C-152/decides/SH-S-7019	Sidekick, AI assistant for commerce
+CM-AIA-003	exact	decides	SA-C-012/decides/SA-S-2133	توليد تحسينات SEO عبر الذكاء الاصطناعي *برسوم إضافية
+CM-AIA-003	exact	decides	SA-C-012/decides/SA-S-3488	ai-description-generator
+CM-AIA-003	exact	decides	SA-C-012/decides/SA-S-3489	ai-seo-generator
+CM-AIA-003	exact	decides	SH-C-202/decides/SH-S-7206	apps.shopify.com/built-in-features/magic-product-descriptions
+CM-AIA-003	exact	decides	SH-C-202/decides/SH-S-7207	apps.shopify.com/built-in-features/magic-blog-posts
+CM-AIA-004	exact	boundary	SA-C-012/boundary/SA-S-5005	general/salla-mcp/chatgpt#step3.description
+CM-AIA-004	exact	decides	SA-C-012/decides/SA-S-3188	salla-mcp
+CM-AIA-005	exact	boundary	SH-C-140/boundary/SH-S-0071	9.14 Agentic Storefronts
+CM-AIA-005	exact	boundary	SH-C-140/boundary/SH-S-2530	dev.ucp.shopping.checkout
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-0622	2. Eligibility
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-0628	4. Merchant Obligations and Authorizations
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-0629	6.1 Fees
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-0631	8. Termination
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-0632	8. Termination
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-5028	agentic:list
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-5029	agentic:knowledge-base
+CM-AIA-005	exact	decides	SH-C-140/decides/SH-S-7007	Sell in AI chats
+CM-API-002	exact	boundary	SA-C-190/boundary/SA-S-0176	## OAuth
+CM-API-002	exact	boundary	SA-C-190/boundary/SA-S-1013	Authorization
+CM-API-002	exact	decides	SA-C-190/decides/SA-S-0185	## OAuth
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1545	settings
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1548	carts
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1549	branches
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1550	categories
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1551	brands
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1553	webhooks
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1554	payments
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1555	taxes
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1556	dns-records
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1557	specialoffers
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1558	countries
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1559	shippings
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1560	marketing
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1561	reviews
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1562	metadata
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1563	transactions
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1564	settlements
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1565	store-settings
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1566	exports
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1567	subscriptions
+CM-API-003	by landing	boundary	SA-C-191/boundary/SA-S-1568	customer-wallets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-0765	Access
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5902	read_analytics_annotations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5903	read_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5904	read_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5905	read_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5906	read_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5907	read_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5908	write_analytics_annotations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5909	write_analytics_annotations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5910	write_analytics_annotations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5911	write_reports
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5912	customer_read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5913	customer_read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5915	customer_read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5916	customer_read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5917	customer_read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5918	customer_read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5919	customer_read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5920	customer_read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5921	customer_read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5922	customer_read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5923	customer_read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5924	customer_read_store_credit_account_transactions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5925	customer_read_store_credit_accounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5926	customer_write_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5927	customer_write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5928	customer_write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5929	read_all_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5930	read_all_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5931	read_all_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5932	read_all_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5933	read_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5934	read_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5935	read_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5936	read_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5937	read_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5938	read_audit_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5939	read_cart_transforms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5940	read_cash_tracking
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5941	read_cash_tracking
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5943	read_checkout_and_accounts_configurations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5944	read_checkout_and_accounts_configurations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5945	read_checkout_and_accounts_configurations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5946	read_checkout_branding_settings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5947	read_checkout_branding_settings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5948	read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5949	read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5950	read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5951	read_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5952	read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5953	read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5954	read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5955	read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5956	read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5957	read_customer_data_erasure
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5958	read_customer_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5959	read_customer_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5960	read_customer_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5961	read_customer_merge
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5963	read_customer_merge
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5964	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5965	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5966	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5967	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5968	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5969	read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5970	read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5971	read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5972	read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5973	read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5974	read_delivery_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5975	read_delivery_promises
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5976	read_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5977	read_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5978	read_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5979	read_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5980	read_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5981	read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5982	read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5983	read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5984	read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5985	read_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5986	read_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5987	read_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5988	read_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5989	read_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5990	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5991	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5992	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5993	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5994	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5995	read_fulfillment_constraint_rules
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5996	read_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5997	read_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5998	read_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-5999	read_gift_card_transactions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6000	read_gift_cards
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6001	read_gift_cards
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6002	read_inventory
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6003	read_inventory
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6004	read_inventory
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6005	read_inventory
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6006	read_inventory
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6008	read_inventory_shipments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6009	read_inventory_shipments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6010	read_inventory_shipments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6011	read_inventory_shipments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6012	read_inventory_shipments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6013	read_inventory_shipments_received_items
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6014	read_inventory_transfers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6015	read_inventory_transfers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6016	read_inventory_transfers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6017	read_inventory_transfers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6018	read_inventory_transfers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6019	read_legal_policies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6020	read_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6021	read_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6022	read_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6023	read_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6024	read_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6025	read_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6026	read_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6027	read_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6028	read_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6029	read_marketing_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6030	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6031	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6032	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6033	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6034	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6035	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6036	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6037	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6038	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6039	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6040	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6041	read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6042	read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6043	read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6044	read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6045	read_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6046	read_markets_home
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6047	read_merchant_approval_signals
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6048	read_merchant_managed_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6049	read_merchant_managed_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6050	read_metaobject_definitions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6051	read_metaobject_definitions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6052	read_metaobject_definitions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6053	read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6054	read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6055	read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6056	read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6057	read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6058	read_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6059	read_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6060	read_online_store_navigation
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6061	read_online_store_pages
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6062	read_online_store_pages
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6063	read_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6064	read_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6065	read_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6066	read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6067	read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6068	read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6069	read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6070	read_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6071	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6072	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6073	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6074	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6075	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6076	read_payment_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6077	read_payment_gateways
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6078	read_payment_mandate
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6079	read_payment_mandate
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6080	read_payment_sessions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6081	read_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6082	read_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6083	read_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6084	read_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6085	read_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6086	read_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6087	read_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6088	read_price_rules
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6089	read_privacy_settings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6090	read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6091	read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6092	read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6093	read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6094	read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6095	read_products
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6096	read_products
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6097	read_products
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6098	read_products
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6099	read_products
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6100	read_publications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6101	read_publications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6102	read_publications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6103	read_publications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6104	read_publications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6105	read_resource_feedbacks
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6106	read_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6107	read_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6108	read_rollouts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6109	read_rollouts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6110	read_rollouts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6112	read_script_tags
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6113	read_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6114	read_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6115	read_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6116	read_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6117	read_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6118	read_shopify_payments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6119	read_shopify_payments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6121	read_shopify_payments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6122	read_shopify_payments_bank_accounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6123	read_shopify_payments_dispute_evidences
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6124	read_shopify_payments_disputes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6125	read_shopify_payments_disputes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6126	read_shopify_payments_disputes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6127	read_shopify_payments_disputes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6128	read_store_credit_account_transactions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6129	read_store_credit_accounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6130	read_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6131	read_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6132	read_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6133	read_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6134	read_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6135	read_themes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6136	read_themes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6137	read_themes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6138	read_themes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6139	read_third_party_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6140	read_translations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6141	read_translations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6142	read_users
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6143	read_users
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6144	read_users
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6145	read_users
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6146	read_validations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6147	unauthenticated_read_checkouts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6148	unauthenticated_read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6149	unauthenticated_read_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6150	unauthenticated_read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6151	unauthenticated_read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6152	unauthenticated_read_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6153	unauthenticated_read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6154	unauthenticated_read_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6155	unauthenticated_read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6156	unauthenticated_read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6157	unauthenticated_read_product_listings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6158	unauthenticated_read_product_pickup_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6159	unauthenticated_read_product_pickup_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6160	unauthenticated_read_product_tags
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6161	unauthenticated_read_selling_plans
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6162	unauthenticated_read_selling_plans
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6163	unauthenticated_read_shop_pay_installments_pricing
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6164	unauthenticated_write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6165	write_app_proxy
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6166	write_app_proxy
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6167	write_assigned_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6173	write_cart_transforms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6174	write_cart_transforms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6175	write_cash_tracking
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6177	write_companies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6178	write_content
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6179	write_customer_data_erasure
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6180	write_customer_merge
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6181	write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6182	write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6184	write_customers
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6185	write_delivery_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6186	write_delivery_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6187	write_delivery_promises
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6188	write_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6189	write_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6190	write_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6191	write_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6192	write_discounts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6193	write_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6194	write_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6195	write_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6196	write_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6197	write_draft_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6198	write_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6202	write_files
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6203	write_fulfillment_constraint_rules
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6204	write_fulfillment_constraint_rules
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6206	write_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6207	write_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6208	write_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6209	write_fulfillments
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6210	write_gift_card_transactions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6211	write_gift_cards
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6222	write_legal_policies
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6223	write_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6224	write_locales
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6225	write_locations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6226	write_marketing_events
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6227	write_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6229	write_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6230	write_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6232	write_markets
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6233	write_merchant_managed_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6236	write_metaobject_definitions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6237	write_metaobject_definitions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6238	write_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6239	write_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6240	write_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6241	write_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6242	write_metaobjects
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6243	write_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6244	write_online_store_navigation
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6245	write_online_store_navigation
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6246	write_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6248	write_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6249	write_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6250	write_order_edits
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6251	write_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6252	write_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6253	write_orders
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6256	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6257	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6258	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6259	write_payment_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6260	write_payment_customizations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6261	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6262	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6263	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6264	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6267	write_payment_sessions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6268	write_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6269	write_payment_terms
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6270	write_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6271	write_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6273	write_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6274	write_pixels
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6275	write_privacy_settings
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6286	write_purchase_options
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6287	write_resource_feedbacks
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6289	write_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6290	write_returns
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6291	write_script_tags
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6292	write_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6293	write_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6294	write_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6295	write_shipping
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6297	write_store_credit_account_transactions
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6298	write_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6299	write_taxes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6301	write_themes
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6303	write_translations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6304	write_translations
+CM-API-003	by landing	boundary	SH-C-158/boundary/SH-S-6305	write_validations
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-5942	read_checkout_and_accounts_configurations
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-5962	read_customer_merge
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6007	read_inventory_purchase_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6120	read_shopify_payments
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6168	write_assigned_fulfillment_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6169	write_assigned_fulfillment_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6170	write_assigned_fulfillment_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6171	write_cart_transforms
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6172	write_cart_transforms
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6176	write_checkout_and_accounts_configurations
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6199	write_files
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6200	write_files
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6201	write_files
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6205	write_fulfillments
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6212	write_inventory
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6213	write_inventory
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6214	write_inventory
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6215	write_inventory
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6216	write_inventory
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6217	write_inventory_shipments
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6218	write_inventory_shipments
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6219	write_inventory_shipments_received_items
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6220	write_inventory_transfers
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6221	write_inventory_transfers
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6228	write_marketplace_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6231	write_marketplace_returns
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6234	write_merchant_managed_fulfillment_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6235	write_merchant_managed_fulfillment_orders
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6247	write_order_edits
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6254	write_own_subscription_contracts
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6255	write_own_subscription_contracts
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6265	write_payment_mandate
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6266	write_payment_mandate
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6272	write_pixels
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6276	write_products
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6277	write_products
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6278	write_products
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6279	write_products
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6280	write_products
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6281	write_publications
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6282	write_publications
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6283	write_publications
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6284	write_publications
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6285	write_publications
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6288	write_returns
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6296	write_shopify_payments_dispute_evidences
+CM-API-003	by landing	decides	SH-C-158/decides/SH-S-6302	write_third_party_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-1065	read_shopify_payments_provider_accounts_sensitive
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5929	read_all_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5930	read_all_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5931	read_all_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5932	read_all_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5936	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5937	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5943	read_checkout_settings
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5964	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5965	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5966	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5967	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5968	read_customer_payment_methods
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5975	read_delivery_promises
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5990	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5991	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5992	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5993	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-5994	read_financial_kyc_information
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6030	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6031	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6032	read_marketplace_fulfillment_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6033	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6034	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6035	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6036	read_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6037	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6038	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6039	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6040	read_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6047	read_merchant_approval_signals
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6058	read_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6059	read_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6071	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6072	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6073	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6074	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6075	read_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6077	read_payment_gateways
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6078	read_payment_mandate
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6079	read_payment_mandate
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6080	read_payment_sessions
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6130	read_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6131	read_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6132	read_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6133	read_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6134	read_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6142	read_users
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6143	read_users
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6144	read_users
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6145	read_users
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6187	write_delivery_promises
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6227	write_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6229	write_marketplace_orders
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6230	write_marketplace_returns
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6243	write_mobile_platform_applications
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6256	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6257	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6258	write_own_subscription_contracts
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6261	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6262	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6263	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6264	write_payment_gateways
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6267	write_payment_sessions
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6298	write_taxes
+CM-API-003	by landing	boundary	SH-C-159/boundary/SH-S-6299	write_taxes
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-5942	read_checkout_settings
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6176	write_checkout_settings
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6228	write_marketplace_orders
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6231	write_marketplace_returns
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6254	write_own_subscription_contracts
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6255	write_own_subscription_contracts
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6265	write_payment_mandate
+CM-API-003	by landing	decides	SH-C-159/decides/SH-S-6266	write_payment_mandate
+CM-API-003	exact	boundary	SA-C-191/boundary/SA-S-1546	customers
+CM-API-003	exact	boundary	SA-C-191/boundary/SA-S-1547	orders
+CM-API-003	exact	boundary	SA-C-191/boundary/SA-S-1552	products
+CM-API-003	exact	decides	SA-C-191/decides/SA-S-0185	## OAuth
+CM-API-003	exact	boundary	SH-C-158/boundary/SH-S-5914	customer_read_customers
+CM-API-003	exact	decides	SH-C-158/decides/SH-S-0754	shopify.dev/docs/api/usage/access-scopes.md
+CM-API-003	exact	decides	SH-C-158/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-API-003	exact	decides	SH-C-158/decides/SH-S-0757	shopify.dev/docs/api/usage/access-scopes.md
+CM-API-003	exact	decides	SH-C-158/decides/SH-S-6183	write_customers
+CM-API-003	exact	boundary	SH-C-159/boundary/SH-S-1114	read_all_orders
+CM-API-003	exact	decides	SH-C-159/decides/SH-S-0756	scope type legend
+CM-API-004	exact	boundary	SH-C-160/boundary/SH-S-5904	shopifyqlQuery (read_reports; Level 2 access to Customer data)
+CM-API-004	exact	boundary	SH-C-160/boundary/SH-S-7470	read_customer_email
+CM-API-004	exact	decides	SH-C-160/decides/SH-S-0694	shopify.dev/docs/apps/launch/protected-customer-data.md
+CM-API-005	exact	boundary	SA-C-201/boundary/SA-S-1001	Rate Limiting
+CM-API-005	exact	decides	SA-C-201/decides/SA-S-0171	## 📊 **Rate Limit Plans**
+CM-API-005	exact	decides	SA-C-201/decides/SA-S-0173	## ⚠️ **Important Notes**
+CM-API-005	exact	decides	SH-C-171/decides/SH-S-0688	Rate limits
+CM-API-005	exact	decides	SH-C-171/decides/SH-S-0689	The leaky bucket algorithm
+CM-API-005	exact	decides	SH-C-171/decides/SH-S-7055	API rate limits
+CM-API-005	exact	decides	SH-C-171/decides/SH-S-7075	Up to 500% higher API call limits
+CM-API-006	exact	boundary	SA-C-202/boundary/SA-S-0208	# Versioning
+CM-API-006	exact	boundary	SA-C-202/boundary/SA-S-1002	Versioning
+CM-API-006	exact	boundary	SA-C-202/boundary/SA-S-1014	Change Log
+CM-API-006	exact	decides	SA-C-202/decides/SA-S-0207	### When to Add a New Version?
+CM-API-006	exact	decides	SH-C-171/decides/SH-S-0690	About Shopify API versioning
+CM-API-006	exact	decides	SH-C-171/decides/SH-S-0691	Versioned and unversioned APIs
+CM-API-007	exact	boundary	SH-C-171/boundary/SH-S-1158	bulk_operations/finish
+CM-API-008	by landing	boundary	SA-C-192/boundary/SA-S-1068	Webhooks
+CM-API-008	by landing	boundary	SA-C-192/boundary/SA-S-1072	Webhooks
+CM-API-008	by landing	decides	SA-C-192/decides/SA-S-3390	webhook-channel
+CM-API-008	by landing	boundary	SH-C-162/boundary/SH-S-1153	app/uninstalled
+CM-API-008	exact	boundary	SA-C-192/boundary/SA-S-1008	Webhooks
+CM-API-008	exact	boundary	SA-C-192/boundary/SA-S-1553	webhooks
+CM-API-008	exact	boundary	SH-C-162/boundary/SH-S-0685	About webhooks
+CM-API-008	exact	boundary	SH-C-162/boundary/SH-S-0686	How it works
+CM-API-009	exact	decides	SA-C-192/decides/SA-S-2124	إرسال الإخطارات لخدمات أخرى عبر Webhooks
+CM-API-009	exact	decides	SA-C-192/decides/SA-S-2408	webhook_management
+CM-API-009	exact	decides	SA-C-192/decides/SA-S-2625	webhook_management
+CM-API-009	exact	decides	SA-C-192/decides/SA-S-3078	webhooks
+CM-API-009	exact	boundary	SH-C-158/boundary/SH-S-6111	read_rollouts
+CM-API-009	exact	decides	SH-C-162/decides/SH-S-5131	notification-settings
+CM-API-010	exact	boundary	SA-C-192/boundary/SA-S-1009	Conditional Webhooks
+CM-API-011	by landing	decides	SH-C-161/decides/SH-S-0698	How it works
+CM-API-011	exact	boundary	SH-C-161/boundary/SH-S-1197	customers/data_request
+CM-API-011	exact	boundary	SH-C-161/boundary/SH-S-1203	customers/redact
+CM-API-011	exact	boundary	SH-C-161/boundary/SH-S-1356	shop/redact
+CM-API-011	exact	decides	SH-C-161/decides/SH-S-0696	Privacy law compliance
+CM-API-011	exact	decides	SH-C-161/decides/SH-S-0697	Mandatory compliance webhooks
 CM-APP-001	by landing	boundary	SA-C-194/boundary/SA-S-0025	المادة (5) – العمولات والدفع
 CM-APP-001	by landing	decides	SA-C-194/decides/SA-S-0023	المادة (2) – الشروط العامة لاستخدام المتجر
 CM-APP-001	by landing	decides	SA-C-194/decides/SA-S-2412	marketplace_apps_management
@@ -47,9 +621,6 @@ CM-APP-002	exact	decides	SH-C-157/decides/SH-S-0694	shopify.dev/docs/apps/launch
 CM-APP-002	exact	decides	SH-C-157/decides/SH-S-0698	How it works
 CM-APP-002	exact	decides	SH-C-157/decides/SH-S-7078	Plus Certified apps
 CM-APP-003	by landing	boundary	SA-C-195/boundary/SA-S-0025	المادة (5) – العمولات والدفع
-CM-APP-003	by landing	boundary	SA-C-195/boundary/SA-S-0045	نظام الفوترة الخاص بشركاء سلة
-CM-APP-003	by landing	decides	SA-C-195/decides/SA-S-0027	المادة (5) – العمولات والدفع
-CM-APP-003	by landing	decides	SA-C-195/decides/SA-S-0034	المادة الخامسة-طبيعة التزام منصة سلة
 CM-APP-003	by landing	decides	SH-C-019/decides/SH-S-0284	Shopify App Pricing, Important note
 CM-APP-003	by landing	decides	SH-C-019/decides/SH-S-5067	billing:charge:approval:add-payment-method
 CM-APP-003	exact	boundary	SA-C-195/boundary/SA-S-1077	Subscriptions
@@ -79,6 +650,7 @@ CM-APP-004	exact	boundary	SA-C-193/boundary/SA-S-1656	app.settings.updated
 CM-APP-004	exact	decides	SA-C-193/decides/SA-S-5094	Test App Events
 CM-APP-004	exact	boundary	SH-C-019/boundary/SH-S-1156	app_subscriptions/update
 CM-APP-004	exact	boundary	SH-C-156/boundary/SH-S-1153	app/uninstalled
+CM-APP-004	exact	boundary	SH-C-158/boundary/SH-S-1152	app/scopes_update
 CM-APP-005	by landing	boundary	SA-C-196/boundary/SA-S-0189	Event types
 CM-APP-005	by landing	boundary	SA-C-196/boundary/SA-S-1263	Order Created
 CM-APP-005	by landing	boundary	SA-C-196/boundary/SA-S-1264	Order Completed
@@ -181,6 +753,13 @@ CM-APP-008	exact	decides	SH-C-164/decides/SH-S-7487	Admin UI extensions
 CM-APP-009	exact	decides	SH-C-157/decides/SH-S-0693	About app distribution
 CM-APP-009	exact	decides	SH-C-167/decides/SH-S-5038	apps:development_list
 CM-APP-009	exact	decides	SH-C-167/decides/SH-S-7054	Build custom apps using Shopify APIs
+CM-APP-010	by landing	boundary	SA-C-199/boundary/SA-S-1076	Settings
+CM-APP-010	exact	boundary	SA-C-193/boundary/SA-S-1656	app.settings.updated
+CM-APP-010	exact	decides	SA-C-199/decides/SA-S-0210	line 263 (GET /apps/{app_id}/settings, App Setting Details)
+CM-AUT-001	exact	boundary	SH-C-151/boundary/SH-S-2242	flow_trigger
+CM-AUT-001	exact	decides	SH-C-151/decides/SH-S-0752	help.shopify.com/en/manual/fulfillment/managing-orders/protecting-orders/shopify-flow.md
+CM-AUT-001	exact	decides	SH-C-151/decides/SH-S-7161	MANAGE_AUTOMATIONS
+CM-AUT-001	exact	decides	SH-C-151/decides/SH-S-7162	MANAGE_AUTOMATION_SETTINGS
 CM-CAT-001	by landing	boundary	SA-C-020/boundary/SA-S-1022	Products
 CM-CAT-001	by landing	boundary	SA-C-020/boundary/SA-S-1592	product.updated
 CM-CAT-001	by landing	boundary	SA-C-020/boundary/SA-S-1593	product.deleted
@@ -383,6 +962,141 @@ CM-CAT-012	exact	decides	WC-C-093/decides/WC-S-5445	cost_of_goods_sold
 CM-CAT-013	exact	boundary	BC-C-008/boundary/BC-S-0054	CORS
 CM-CAT-013	exact	boundary	SA-C-020/boundary/SA-S-1599	product.price.updated
 CM-CAT-013	exact	decides	SA-C-020/decides/SA-S-3515	metal-pricing
+CM-CUS-001	by landing	boundary	SA-C-060/boundary/SA-S-1032	Customers
+CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2513	customer_search
+CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2515	customer_edit
+CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2516	customer_add
+CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2518	customer_management
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5913	customer_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5914	customer_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5915	customer_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5916	customer_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5926	customer_write_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5927	customer_write_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5928	customer_write_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5963	read_customer_merge
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5970	read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-5971	read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-6150	unauthenticated_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-6151	unauthenticated_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-6152	unauthenticated_read_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-6164	unauthenticated_write_customers
+CM-CUS-001	by landing	boundary	SH-C-039/boundary/SH-S-6182	write_customers
+CM-CUS-001	by landing	decides	SH-C-039/decides/SH-S-5145	customer-payment-methods:show
+CM-CUS-001	by landing	decides	SH-C-039/decides/SH-S-6183	write_customers
+CM-CUS-001	exact	boundary	SA-C-060/boundary/SA-S-1546	customers
+CM-CUS-001	exact	boundary	SA-C-060/boundary/SA-S-1607	customer.created
+CM-CUS-001	exact	boundary	SA-C-060/boundary/SA-S-1608	customer.updated
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2055	فرز العملاء
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2057	إضافة عميل جديد
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2058	تعديل معلومات العميل
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2295	customer_browse
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2296	customer_search
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2298	customer_edit
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2299	customer_add
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2300	customer_approve
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2301	customer_management
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2512	customer_browse
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-2517	customer_approve
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-3163	customer-tag
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-3166	custom-customer-fields
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-3167	customer-advance-management
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-3169	customer-metadata
+CM-CUS-001	exact	decides	SA-C-060/decides/SA-S-3177	customers-unisearch
+CM-CUS-001	exact	boundary	SH-C-039/boundary/SH-S-0971	read_customers
+CM-CUS-001	exact	boundary	SH-C-039/boundary/SH-S-1196	customers/create
+CM-CUS-001	exact	boundary	SH-C-039/boundary/SH-S-6181	write_customers
+CM-CUS-001	exact	boundary	SH-C-039/boundary/SH-S-7234	ServerIntent create customer
+CM-CUS-001	exact	decides	SH-C-039/decides/SH-S-5141	customer
+CM-CUS-001	exact	decides	SH-C-039/decides/SH-S-5142	customer:create
+CM-CUS-001	exact	decides	SH-C-039/decides/SH-S-7035	Unlimited contacts
+CM-CUS-002	by landing	boundary	SA-C-061/boundary/SA-S-1033	Customer Groups
+CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-2117	تصنيف العملاء إلى مجموعات
+CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-2150	تصنيف تلقائي لمجموعات العملاء
+CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-3161	customer-group
+CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-3176	customer-groups-draft-status
+CM-CUS-002	exact	boundary	SH-C-039/boundary/SH-S-5969	read_customers
+CM-CUS-002	exact	boundary	SH-C-039/boundary/SH-S-5972	read_customers
+CM-CUS-002	exact	boundary	SH-C-039/boundary/SH-S-5973	read_customers
+CM-CUS-002	exact	boundary	SH-C-040/boundary/SH-S-1185	customer.joined_segment
+CM-CUS-002	exact	boundary	SH-C-040/boundary/SH-S-2203	customer_segment_template
+CM-CUS-002	exact	boundary	SH-C-040/boundary/SH-S-6184	write_customers
+CM-CUS-002	exact	decides	SH-C-040/decides/SH-S-5143	customer-segments
+CM-CUS-002	exact	decides	SH-C-040/decides/SH-S-5670	entitlements.customerSegmentation
+CM-CUS-002	exact	decides	SH-C-040/decides/SH-S-7036	Create customer segments
+CM-CUS-003	exact	decides	SA-C-060/decides/SA-S-2118	إدارة مجموعة عملاء كدفعة واحدة
+CM-CUS-003	exact	decides	SA-C-060/decides/SA-S-3172	customers-bulk-actions
+CM-CUS-003	exact	decides	SH-C-039/decides/SH-S-5067	customer:bulk-edit
+CM-CUS-004	exact	boundary	SH-C-039/boundary/SH-S-5961	read_customer_merge
+CM-CUS-004	exact	boundary	SH-C-039/boundary/SH-S-6180	write_customer_merge
+CM-CUS-004	exact	decides	SH-C-039/decides/SH-S-5146	customer:merge
+CM-CUS-004	exact	decides	SH-C-039/decides/SH-S-5962	read_customer_merge
+CM-CUS-005	exact	decides	SA-C-060/decides/SA-S-2056	حظر العميل
+CM-CUS-005	exact	decides	SA-C-060/decides/SA-S-2297	customer_block
+CM-CUS-005	exact	decides	SA-C-060/decides/SA-S-2514	customer_block
+CM-CUS-006	exact	decides	SA-C-060/decides/SA-S-2060	كشف العملاء غير الجادين
+CM-CUS-006	exact	boundary	SA-C-122/boundary/SA-S-5052	وسم (عميل غير جاد)
+CM-CUS-007	exact	boundary	SH-C-043/boundary/SH-S-0881	customerEmailMarketingSubscribe
+CM-CUS-007	exact	boundary	SH-C-043/boundary/SH-S-0884	customerWhatsAppMarketingConsentUpdate
+CM-CUS-007	exact	boundary	SH-C-043/boundary/SH-S-1205	customers_email_marketing_consent/update
+CM-CUS-007	exact	boundary	SH-C-043/boundary/SH-S-1206	customers_marketing_consent/update
+CM-CUS-007	exact	decides	SH-C-043/decides/SH-S-5149	customer:mobile:edit-marketing-status
+CM-CUS-008	by landing	boundary	SA-C-065/boundary/SA-S-1574	order.shipping.address.updated
+CM-CUS-008	exact	decides	SA-C-065/decides/SA-S-3031	saudi-national-address
+CM-CUS-008	exact	decides	SA-C-065/decides/SA-S-3139	national-address
+CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3119	google-maps-service
+CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3120	here-service
+CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3121	location-i-q-service
+CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3122	nominatim-service
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-2538	dev.ucp.common.identity_linking
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5912	customer_read_companies
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5913	customer_read_companies
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5915	customer_read_customers
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5916	customer_read_customers
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5917	customer_read_draft_orders
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5918	customer_read_draft_orders
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5919	customer_read_markets
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5920	customer_read_metaobjects
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5922	customer_read_orders
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5923	customer_read_orders
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5924	customer_read_store_credit_account_transactions
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5925	customer_read_store_credit_accounts
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5926	customer_write_companies
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5927	customer_write_customers
+CM-CUS-010	by landing	boundary	SH-C-041/boundary/SH-S-5928	customer_write_customers
+CM-CUS-010	by landing	decides	SH-C-041/decides/SH-S-7213	apps.shopify.com/built-in-features/customer-accounts
+CM-CUS-010	exact	boundary	SA-C-062/boundary/SA-S-1609	customer.login
+CM-CUS-010	exact	boundary	SA-C-062/boundary/SA-S-1610	customer.otp.request
+CM-CUS-010	exact	boundary	SA-C-062/boundary/SA-S-1659	auth.otp.verification
+CM-CUS-010	exact	decides	SA-C-062/decides/SA-S-2394	register_fields_management
+CM-CUS-010	exact	decides	SA-C-062/decides/SA-S-2611	register_fields_management
+CM-CUS-010	exact	decides	SA-C-062/decides/SA-S-3367	cross-store-login
+CM-CUS-010	exact	boundary	SA-C-066/boundary/SA-S-5023	عرض سياسة الخصوصية أثناء تسجيل العميل
+CM-CUS-010	exact	boundary	SA-C-200/boundary/SA-S-0161	القسم 7: خيارات الدخول والتسجيل
+CM-CUS-010	exact	boundary	SH-C-041/boundary/SH-S-1189	customer_account_settings/update
+CM-CUS-010	exact	boundary	SH-C-041/boundary/SH-S-5914	customer_read_customers
+CM-CUS-010	exact	boundary	SH-C-041/boundary/SH-S-5921	customer_read_orders
+CM-CUS-010	exact	decides	SH-C-041/decides/SH-S-0743	Sign-in experience
+CM-CUS-010	exact	decides	SH-C-041/decides/SH-S-5131	customerAccountsSettings
+CM-CUS-010	exact	decides	SH-C-041/decides/SH-S-5136	customerAccountsSettings:parent
+CM-CUS-010	exact	decides	SH-C-041/decides/SH-S-5655	entitlements.customers.accountSettingsAccess
+CM-CUS-011	exact	decides	SA-C-062/decides/SA-S-3168	sso-login
+CM-CUS-011	exact	boundary	SH-C-042/boundary/SH-S-7462	IdentityProviderSubject
+CM-CUS-011	exact	decides	SH-C-042/decides/SH-S-0742	Sign-in experience
+CM-CUS-011	exact	decides	SH-C-042/decides/SH-S-5137	customerAuthenticationSettings:parent
+CM-CUS-012	exact	decides	SA-C-062/decides/SA-S-3100	auth-recaptcha
+CM-CUS-012	exact	decides	SA-C-062/decides/SA-S-3368	re-captcha-v3
+CM-CUS-013	exact	decides	SA-C-062/decides/SA-S-3090	whatsapp-otp
+CM-CUS-014	exact	boundary	SH-C-165/boundary/SH-S-0822	Customer accounts
+CM-CUS-014	exact	decides	SH-C-165/decides/SH-S-0712	shopify.dev/docs/apps/build/customer-accounts.md
+CM-DVT-001	by landing	boundary	SA-C-203/boundary/SA-S-1098	Reference
+CM-DVT-002	exact	boundary	SA-C-203/boundary/SA-S-1106	Apps Command
+CM-DVT-002	exact	boundary	SA-C-203/boundary/SA-S-1107	Twilight Themes Command
+CM-DVT-002	exact	boundary	SA-C-203/boundary/SA-S-1109	Theme Component Bundles Commands
+CM-DVT-002	exact	decides	SA-C-203/decides/SA-S-5095	Salla CLI prerequisites
+CM-DVT-004	exact	boundary	SA-C-209/boundary/SA-S-5110	كيف يمكنني إختبار تطبيقي قبل إطلاقه على متاجر سلة؟
+CM-DVT-004	exact	decides	SA-C-209/decides/SA-S-5108	كم عدد المتاجر التجريبية التي يمكنني إنشائها ؟
+CM-DVT-004	exact	boundary	SH-C-158/boundary/SH-S-6300	write_themes
 CM-EVO-001	exact	boundary	WC-C-088/boundary/WC-S-0455	FeaturesUtil::declare_compatibility
 CM-EVO-001	exact	decides	WC-C-088/decides/WC-S-5433	FeaturesController
 CM-EVO-001	exact	decides	WC-C-088/decides/WC-S-5434	FeaturesController::add_feature_definition
@@ -588,6 +1302,226 @@ CM-MIG-005	exact	decides	SA-C-302/decides/SA-S-5120	المادة (2): شروط �
 CM-MIG-006	exact	boundary	WC-C-094/boundary/WC-S-5451	wc-admin/blueprint/export
 CM-MIG-006	exact	decides	WC-C-094/decides/WC-S-5448	check_import_permission
 CM-MIG-006	exact	decides	WC-C-094/decides/WC-S-5449	can_import_blueprint
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-0981	read_discounts
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-1209	discounts/create
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-6188	write_discounts
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-6189	write_discounts
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-6190	write_discounts
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-6192	write_discounts
+CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-7235	ServerIntent create discount
+CM-MKT-001	exact	boundary	SA-C-080/boundary/SA-S-5028	عروض وخصومات البنك
+CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-2532	dev.ucp.shopping.discount
+CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-5976	read_discounts
+CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-5977	read_discounts
+CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-5980	read_discounts
+CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-6088	read_price_rules
+CM-MKT-001	exact	decides	SH-C-127/decides/SH-S-5151	discounts:root
+CM-MKT-002	by landing	boundary	SA-C-070/boundary/SA-S-1038	Coupons
+CM-MKT-002	by landing	boundary	SA-C-070/boundary/SA-S-1560	marketing
+CM-MKT-002	by landing	decides	SA-C-070/decides/SA-S-2103	إطلاق عروض وخصومات
+CM-MKT-002	by landing	decides	SA-C-070/decides/SA-S-2585	coupon_delete
+CM-MKT-002	by landing	decides	SA-C-070/decides/SA-S-2586	coupon_statistics
+CM-MKT-002	exact	boundary	SA-C-070/boundary/SA-S-1573	order.coupon.updated
+CM-MKT-002	exact	boundary	SA-C-070/boundary/SA-S-1623	coupon.applied
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2001	كوبونات التخفيض
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2008	إنشاء مجموعة كوبونات
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2009	كوبونات محلي
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2108	كوبونات تسويقية
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2348	coupon_browse
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2349	coupon_management
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2368	coupon_delete
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2369	coupon_statistics
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2565	coupon_browse
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2566	coupon_management
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3244	coupon-group
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3245	coupon-export
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3252	coupon-payment-method
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3255	coupon-countries
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3256	coupon-customer
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3258	coupon-multi-market
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3322	bundle-aware-coupon
+CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-3324	multi_coupon
+CM-MKT-002	exact	boundary	SH-C-127/boundary/SH-S-5978	read_discounts
+CM-MKT-002	exact	boundary	SH-C-127/boundary/SH-S-5979	read_discounts
+CM-MKT-002	exact	decides	SH-C-127/decides/SH-S-5685	entitlements.discountCodes
+CM-MKT-002	exact	decides	SH-C-127/decides/SH-S-7042	Create and share discount codes
+CM-MKT-003	by landing	boundary	SA-C-071/boundary/SA-S-1036	Special Offers
+CM-MKT-003	exact	boundary	SA-C-071/boundary/SA-S-1557	specialoffers
+CM-MKT-003	exact	boundary	SA-C-071/boundary/SA-S-1626	specialoffer.created
+CM-MKT-003	exact	boundary	SA-C-071/boundary/SA-S-1627	specialoffer.updated
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-1980	إظهار العروض الخاصة أسفل المنتج
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2004	العروض الخاصة
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2005	عروض السلة
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2103	إطلاق عروض وخصومات
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2354	special_offers_browse
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2355	special_offers_management
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2571	special_offers_browse
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-2572	special_offers_management
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3096	promotion-title-and-subtitle
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3310	special-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3311	special-offer-export
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3312	discount-offer-table
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3313	conditional-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3316	customer-group-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3317	prebuilt-cart-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3318	tiered-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3319	external-purchases-tiered-offer
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3320	tiered-offer-hide-until-threshold
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3325	enable-offers-for-mobile-app
+CM-MKT-003	exact	decides	SA-C-071/decides/SA-S-3326	cart-offer-applied-tier
+CM-MKT-004	exact	boundary	SH-C-127/boundary/SH-S-6191	write_discounts
+CM-MKT-004	exact	boundary	SH-C-128/boundary/SH-S-2208	discount_details_function_settings
+CM-MKT-004	exact	decides	SH-C-128/decides/SH-S-0683	Lifecycle of a Shopify Function
+CM-MKT-005	by landing	boundary	SH-C-129/boundary/SH-S-1016	write_marketing_events
+CM-MKT-005	by landing	boundary	SH-C-129/boundary/SH-S-6226	write_marketing_events
+CM-MKT-005	by landing	decides	SH-C-129/decides/SH-S-5032	growth:channels
+CM-MKT-005	by landing	decides	SH-C-129/decides/SH-S-5364	entitlements.storefront.enabled
+CM-MKT-005	exact	boundary	SA-C-072/boundary/SA-S-1560	marketing
+CM-MKT-005	exact	decides	SA-C-075/decides/SA-S-2350	campaign_browse
+CM-MKT-005	exact	decides	SA-C-075/decides/SA-S-2351	campaign_management
+CM-MKT-005	exact	decides	SA-C-075/decides/SA-S-2567	campaign_browse
+CM-MKT-005	exact	decides	SA-C-075/decides/SA-S-2568	campaign_management
+CM-MKT-005	exact	decides	SA-C-075/decides/SA-S-3246	external-campaign
+CM-MKT-005	exact	boundary	SH-C-129/boundary/SH-S-1014	read_marketing_integrated_campaigns
+CM-MKT-005	exact	boundary	SH-C-129/boundary/SH-S-6029	read_marketing_events
+CM-MKT-005	exact	decides	SH-C-129/decides/SH-S-5174	growth
+CM-MKT-005	exact	decides	SH-C-129/decides/SH-S-5175	growth:integrated-campaigns
+CM-MKT-006	exact	decides	SH-C-129/decides/SH-S-7040	Create marketing automations
+CM-MKT-007	by landing	boundary	SH-C-130/boundary/SH-S-7282	9.7 Shopify Email
+CM-MKT-007	exact	boundary	SA-C-075/boundary/SA-S-1673	marketing.campaign.broadcast
+CM-MKT-007	exact	decides	SA-C-075/decides/SA-S-2010	حملات تسويقية عبر الرسائل النصية وإشعارات التطبيق
+CM-MKT-007	exact	decides	SA-C-075/decides/SA-S-2983	klaviyo
+CM-MKT-007	exact	decides	SA-C-075/decides/SA-S-2986	mailchimp-marketing
+CM-MKT-007	exact	decides	SA-C-075/decides/SA-S-3259	one-signal
+CM-MKT-007	exact	decides	SA-C-075/decides/SA-S-3260	one-signal-push-notification
+CM-MKT-007	exact	boundary	SA-C-200/boundary/SA-S-1673	marketing.campaign.broadcast
+CM-MKT-007	exact	decides	SH-C-130/decides/SH-S-0055	9.7 Shopify Email
+CM-MKT-007	exact	decides	SH-C-130/decides/SH-S-7037	Create email campaigns
+CM-MKT-007	exact	decides	SH-C-130/decides/SH-S-7038	Pay-per-send SMS campaigns
+CM-MKT-008	exact	boundary	SH-C-131/boundary/SH-S-2255	order_attribution_config
+CM-MKT-008	exact	decides	SH-C-131/decides/SH-S-5226	order:mobile:conversion-summary
+CM-MKT-009	by landing	decides	SA-C-074/decides/SA-S-3143	utm-campaign
+CM-MKT-009	by landing	decides	SA-C-074/decides/SA-S-3201	google-merchant-feed
+CM-MKT-009	by landing	decides	SA-C-074/decides/SA-S-3202	google-site-verification
+CM-MKT-009	by landing	decides	SA-C-074/decides/SA-S-3203	facebook-catalog-feed
+CM-MKT-009	by landing	decides	SA-C-074/decides/SA-S-3205	snapchat-catalog-feed
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-0948	read_customer_events
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-5959	read_customer_events
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6086	read_pixels
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6087	read_pixels
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6270	write_pixels
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6271	write_pixels
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6273	write_pixels
+CM-MKT-009	by landing	boundary	SH-C-146/boundary/SH-S-6274	write_pixels
+CM-MKT-009	by landing	decides	SH-C-146/decides/SH-S-5364	entitlements.storefront.enabled
+CM-MKT-009	by landing	decides	SH-C-146/decides/SH-S-6272	write_pixels
+CM-MKT-009	exact	boundary	SA-C-074/boundary/SA-S-5136	meta.meta_type_1_desc
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-2981	google-tag
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3204	tiktok-pixel
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3216	facebook-conversion
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3217	snapchat-conversion
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3218	tiktok-conversion
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3220	twitter-pixel-v2
+CM-MKT-009	exact	decides	SA-C-074/decides/SA-S-3239	snapchat-extension
+CM-MKT-009	exact	boundary	SA-C-092/boundary/SA-S-1082	Device Mode Events
+CM-MKT-009	exact	boundary	SA-C-092/boundary/SA-S-1083	Cloud Mode Events
+CM-MKT-009	exact	boundary	SA-C-092/boundary/SA-S-1341	Cart Viewed
+CM-MKT-009	exact	boundary	SA-C-092/boundary/SA-S-1343	Checkout Started
+CM-MKT-009	exact	decides	SA-C-092/decides/SA-S-5149	Choose an Integration Mode
+CM-MKT-009	exact	boundary	SH-C-146/boundary/SH-S-5958	read_customer_events
+CM-MKT-009	exact	boundary	SH-C-146/boundary/SH-S-5960	read_customer_events
+CM-MKT-009	exact	decides	SH-C-146/decides/SH-S-0066	9.11 Shopify Pixel Manager
+CM-MKT-009	exact	decides	SH-C-146/decides/SH-S-0707	Requesting consent
+CM-MKT-009	exact	decides	SH-C-146/decides/SH-S-5028	customer-events-settings:pixel:details
+CM-MKT-009	exact	decides	SH-C-146/decides/SH-S-5138	customer-events-settings:pixel
+CM-MKT-010	by landing	decides	SA-C-073/decides/SA-S-2591	salla_ads_dashboard_browse
+CM-MKT-010	by landing	decides	SA-C-073/decides/SA-S-2596	salla_ads_integrations_browse
+CM-MKT-010	by landing	decides	SA-C-073/decides/SA-S-2597	salla_ads_integrations_management
+CM-MKT-010	by landing	decides	SA-C-073/decides/SA-S-2598	salla_ads_wallet_browse
+CM-MKT-010	by landing	decides	SA-C-073/decides/SA-S-2599	salla_ads_wallet_management
+CM-MKT-010	by landing	boundary	SH-C-194/boundary/SH-S-7284	9.9 Third Party Services and Third Party Partners
+CM-MKT-010	by landing	decides	SH-C-194/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-MKT-010	exact	boundary	SA-C-073/boundary/SA-S-5135	launch.add-funds-to-your-sweply-ads-wallet
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-1954	إعلانات سلة
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2374	salla_ads_dashboard_browse
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2375	salla_ads_campaigns_browse
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2376	salla_ads_campaigns_management
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2379	salla_ads_integrations_browse
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2380	salla_ads_integrations_management
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2592	salla_ads_campaigns_browse
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-2593	salla_ads_campaigns_management
+CM-MKT-010	exact	decides	SA-C-073/decides/SA-S-3257	salla-ads
+CM-MKT-010	exact	decides	SA-C-074/decides/SA-S-2149	الربط مع الخدمات الإعلانية
+CM-MKT-011	exact	decides	SA-C-073/decides/SA-S-2377	salla_ads_audiences_browse
+CM-MKT-011	exact	decides	SA-C-073/decides/SA-S-2378	salla_ads_audiences_management
+CM-MKT-011	exact	decides	SA-C-073/decides/SA-S-2594	salla_ads_audiences_browse
+CM-MKT-011	exact	decides	SA-C-073/decides/SA-S-2595	salla_ads_audiences_management
+CM-MKT-011	exact	boundary	SH-C-132/boundary/SH-S-0068	9.12 Audiences
+CM-MKT-011	exact	boundary	SH-C-132/boundary/SH-S-0735	help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md
+CM-MKT-011	exact	decides	SH-C-132/decides/SH-S-0733	help.shopify.com/en/manual/promoting-marketing/shopify-audiences.md (note)
+CM-MKT-011	exact	decides	SH-C-132/decides/SH-S-7072	Optimize ads with Shopify Audiences
+CM-MKT-012	exact	boundary	SH-C-133/boundary/SH-S-7478	Shop Campaigns Merchant Terms
+CM-MKT-012	exact	decides	SH-C-133/decides/SH-S-0726	help.shopify.com/en/manual/online-sales-channels/shop/shop-campaigns.md
+CM-MKT-012	exact	decides	SH-C-133/decides/SH-S-7044	Acquire customers risk-free with Shop Campaigns
+CM-MKT-012	exact	decides	SH-C-133/decides/SH-S-7482	Shop Campaigns Merchant Terms
+CM-MKT-013	exact	boundary	SH-C-134/boundary/SH-S-7479	Shopify Collabs Terms
+CM-MKT-014	by landing	boundary	SA-C-072/boundary/SA-S-1037	Affiliates
+CM-MKT-014	by landing	decides	SA-C-072/decides/SA-S-3455	temp-affiliate-new-design
+CM-MKT-014	by landing	decides	SA-C-072/decides/SA-S-3456	temp-affiliate-create-opportunity
+CM-MKT-014	by landing	decides	SA-C-072/decides/SA-S-3457	temp-affiliate-image-preview
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2015	التسويق بالعمولة
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2144	التسويق بالعمولة
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2360	affiliate_browse
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2361	affiliate_management
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2577	affiliate_browse
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-2578	affiliate_management
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3197	affiliate-paid-ad
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3243	coupon-affiliate
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3253	affiliate
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3369	affiliates-cta
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3405	private_affiliate_link
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3406	merchant-special-link
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3407	affiliate-public-statistics
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3408	affiliate-show-contacts
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3410	affiliate-multi-scopes
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3411	export_special_opportunity
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3446	affiliates-attribution-settings
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3447	affiliate-fixed-commission
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3448	affiliate-marketer-budget
+CM-MKT-014	exact	decides	SA-C-072/decides/SA-S-3449	affiliates-settings
+CM-MKT-014	exact	decides	SA-C-075/decides/SA-S-2151	تسويق واسع عبر واتساب وتويتر وانستجرام وجوجل
+CM-MKT-014	exact	decides	SH-C-134/decides/SH-S-0732	help.shopify.com/en/manual/promoting-marketing/collabs.md
+CM-MKT-015	by landing	decides	SA-C-076/decides/SA-S-3417	influencer-resource-page
+CM-MKT-015	by landing	decides	SA-C-076/decides/SA-S-3433	influencers-apple-pay
+CM-MKT-015	exact	boundary	SA-C-076/boundary/SA-S-5137	ما هي حالات طلبات الحملات؟
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-2002	التسويق مع المؤثرين
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-2372	manage_influencers
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-2373	browse_influencers
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-2589	manage_influencers
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-2590	browse_influencers
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3192	influencer-marketplace
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3193	influencer-marketplace-soon
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3196	advanced-influencers-search
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3242	celebrity-marketing
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3409	influencer-campaign-templates
+CM-MKT-015	exact	decides	SA-C-076/decides/SA-S-3432	influencers-packages
+CM-MKT-016	by landing	decides	SA-C-032/decides/SA-S-2619	product_availability_notify_management
+CM-MKT-016	exact	boundary	SA-C-032/boundary/SA-S-1498	salla-product-availability
+CM-MKT-016	exact	boundary	SA-C-032/boundary/SA-S-1666	product.availability.alert
+CM-MKT-016	exact	decides	SA-C-032/decides/SA-S-2402	product_availability_notify_management
+CM-MKT-016	exact	decides	SA-C-032/decides/SA-S-3466	product-availability-notify
+CM-MKT-016	exact	decides	SA-C-032/decides/SA-S-3467	product-sku-availability-notify
+CM-MKT-017	exact	decides	SA-C-032/decides/SA-S-3173	wishlist-notifications
+CM-MKT-018	exact	boundary	SA-C-080/boundary/SA-S-5028	عروض وخصومات البنك
+CM-MKT-018	exact	decides	SA-C-080/decides/SA-S-2110	عروض البنك
+CM-MKT-018	exact	decides	SA-C-080/decides/SA-S-3308	bank-offer
+CM-MKT-018	exact	decides	SA-C-080/decides/SA-S-3309	bank-offer-scope
+CM-MKT-019	exact	decides	SA-C-075/decides/SA-S-2013	الجدول الزمني للتسويق
+CM-MKT-019	exact	decides	SA-C-075/decides/SA-S-3254	marketing-calendar
+CM-MKT-020	exact	boundary	SA-C-073/boundary/SA-S-5134	آلية خصم المبالغ
+CM-MKT-020	exact	boundary	SA-C-073/boundary/SA-S-5135	launch.add-funds-to-your-sweply-ads-wallet
+CM-MKT-020	exact	decides	SA-C-073/decides/SA-S-2381	salla_ads_wallet_browse
+CM-MKT-020	exact	decides	SA-C-073/decides/SA-S-2382	salla_ads_wallet_management
 CM-OPS-001	exact	decides	BC-C-082/decides/BC-S-0450	Integrity and Stability
 CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0162	3. تخصيص الإسناد التلقائي لشركات الشحن
 CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0194	Overview
@@ -610,6 +1544,48 @@ CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5371	remote_logging
 CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5372	RemoteLogger::is_remote_logging_allowed
 CM-OPS-005	exact	boundary	WC-C-037/boundary/WC-S-0446	WC_Log_Handler
 CM-OPS-005	exact	decides	WC-C-037/decides/WC-S-5373	woocommerce_logs_ settings
+CM-PTN-001	exact	boundary	SA-C-176/boundary/SA-S-0213	SaaS contract _ individual _.docx
+CM-PTN-001	exact	boundary	SA-C-176/boundary/SA-S-0214	data.is_signable_publication
+CM-PTN-001	exact	decides	SA-C-176/decides/SA-S-5084	المادة السابعة – التعديلات على السياسة
+CM-PTN-001	exact	boundary	SA-C-204/boundary/SA-S-5098	المادة السادسة – الاتصالات الرسمية
+CM-PTN-002	exact	decides	SA-C-204/decides/SA-S-0035	المادة الثانية – أهلية الشريك القانونية
+CM-PTN-002	exact	decides	SA-C-204/decides/SA-S-0036	المادة الثالثة – شروط قبول و تسجيل الشركاء
+CM-PTN-002	exact	boundary	SH-C-168/boundary/SH-S-7463	Organization
+CM-PTN-002	exact	decides	SH-C-168/decides/SH-S-0215	2. Using the Shopify API
+CM-PTN-003	exact	decides	SA-C-195/decides/SA-S-0027	المادة (5) – العمولات والدفع
+CM-PTN-003	exact	decides	SA-C-195/decides/SA-S-0034	المادة الخامسة-طبيعة التزام منصة سلة
+CM-PTN-003	exact	boundary	SH-C-169/boundary/SH-S-7464	Transaction
+CM-PTN-003	exact	decides	SH-C-169/decides/SH-S-0287	Part C, App Plan (C.2.2.1)
+CM-PTN-003	exact	decides	SH-C-169/decides/SH-S-0295	Part A, Section 3 (Fees and payment)
+CM-PTN-003	exact	decides	SH-C-169/decides/SH-S-0758	payments to Partners
+CM-PTN-003	exact	decides	SH-C-169/decides/SH-S-0759	payments to Partners
+CM-PTN-003	exact	decides	SH-C-169/decides/SH-S-5241	settings:organizations:partner-billing
+CM-PTN-004	exact	boundary	SA-C-195/boundary/SA-S-0045	نظام الفوترة الخاص بشركاء سلة
+CM-PTN-004	exact	decides	SH-C-169/decides/SH-S-5241	settings:organizations:partner-billing
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3194	expert-influencer-home
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3198	external-services
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3420	services-redesign
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3423	partners-chat-notifications
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3428	advanced-services-search
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3429	services-home-algolia
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3430	services-algolia-autocomplete
+CM-PTN-005	by landing	decides	SA-C-205/decides/SA-S-3431	services-apple-pay
+CM-PTN-005	by landing	boundary	SH-C-170/boundary/SH-S-0761	Partner Directory, Relationship
+CM-PTN-005	exact	boundary	SA-C-205/boundary/SA-S-5100	سياسة تقديم الخدمات في منصة الشركاء
+CM-PTN-005	exact	decides	SA-C-205/decides/SA-S-3191	expert-marketplace
+CM-PTN-005	exact	decides	SA-C-205/decides/SA-S-3195	recommended-services
+CM-PTN-005	exact	decides	SA-C-205/decides/SA-S-3422	partners-chat
+CM-PTN-005	exact	decides	SA-C-205/decides/SA-S-3436	services-redirect
+CM-PTN-006	exact	boundary	SA-C-303/boundary/SA-S-5127	4.2 الشفافية وإعادة التحديث
+CM-PTN-006	exact	decides	SA-C-303/decides/SA-S-5125	3.1 الموافقة المسبقة للتاجر شرط للإسناد
+CM-PTN-007	exact	boundary	SA-C-304/boundary/SA-S-5130	قدّم خدماتك لتجار يتوسعون عالميًا
+CM-PTN-008	exact	boundary	SA-C-173/boundary/SA-S-5077	برنامج الإحالة لباقات سلة
+CM-PTN-008	exact	decides	SA-C-173/decides/SA-S-5076	برنامج الإحالة لباقات سلة
+CM-PTN-009	by landing	decides	SA-C-206/decides/SA-S-3454	affiliate-referral
+CM-PTN-009	exact	boundary	SA-C-206/boundary/SA-S-5102	سياسة تقديم الإعلانات في منصة الشركاء
+CM-PTN-009	exact	decides	SA-C-206/decides/SA-S-3413	partner-affiliate
+CM-PTN-009	exact	decides	SA-C-206/decides/SA-S-3414	partner-unlimited-affiliate
+CM-PTN-009	exact	decides	SA-C-206/decides/SA-S-3415	partner-merchant-affiliate
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1100	APIs
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1641	subscription.updated
 CM-SEL-001	by landing	boundary	SA-C-125/boundary/SA-S-1644	subscription.charge.failed

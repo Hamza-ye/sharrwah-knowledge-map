@@ -442,6 +442,435 @@ CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0041	its own API (C1): scope 
 CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0042	its own API (C1): webhook store/inventory/location/created	B-bigcommerce
 CM-INV-005	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold locations as the source of truth	B-bigcommerce
 CM-SEL-002	bigcommerce	core	BC-C-001/boundary/BC-S-0023	files added to digital products via its control panel or WebDav	B-bigcommerce
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-5140	admin route customer, path customers	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-1515	its own Customers section name	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/where/SH-S-0775	its own Customers label	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/decides/SH-S-5141	the customers route needs the CUSTOMERS staff permission	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/decides/SH-S-5142	customer:create needs CREATE_AND_EDIT_CUSTOMERS	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-0971	its access scope read_customers	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-6181	its access scope write_customers	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-1196	its webhook topic customers/create	D-anchor
+CM-CUS-001	shopify	core	SH-C-039/boundary/SH-S-7234	the admin's server intent to create a customer	D-anchor
+CM-CUS-001	shopify	core	SH-I-0440	webhook topic customers/update	D-anchor
+CM-CUS-001	shopify	core	SH-I-0434	webhook topic customers/delete	D-anchor
+CM-CUS-001	shopify	core	SH-I-0435	webhook topic customers/disable	D-anchor
+CM-CUS-001	shopify	core	SH-I-0436	webhook topic customers/enable	D-anchor
+CM-CUS-001	shopify	core	SH-I-0423	webhook topic customer.tags_added	D-anchor
+CM-CUS-001	shopify	core	SH-I-0438	webhook topic customers/purchasing_summary	D-anchor
+CM-CUS-001	shopify	core	SH-I-0927	staff permission Customers > Delete	D-anchor
+CM-CUS-001	shopify	shows	SH-C-039/decides/SH-S-7035	plan line Unlimited contacts; what a contact is isn't stated	D-anchor
+CM-CUS-001	shopify	shows	SH-C-039/responsible/SH-S-0186	the merchant acts as Data Controller for its customer personal data	D-anchor
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1693	dashboard link Customers, /customers	D-anchor
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1842	dashboard link All customers, in the customers list	D-anchor
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1844	dashboard link Customer settings, /customers/settings	D-anchor
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-3545	dashboard app @salla.sa/ui-merchant-customers, path /customers	D-anchor
+CM-CUS-001	salla	core	SA-C-060/where/SA-S-1032	its Merchant API folder Customers	D-anchor
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1546	its scope customers, read and read_write	D-anchor
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1607	its event customer.created	D-anchor
+CM-CUS-001	salla	core	SA-C-060/boundary/SA-S-1608	its event customer.updated	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2295	staff permission customer_browse, group العملاء	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2296	staff permission customer_search	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2298	staff permission customer_edit	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2299	staff permission customer_add	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2300	staff permission customer_approve	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2301	staff permission customer_management	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2055	plan line فرز العملاء (سلة بلس)	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2057	plan line إضافة عميل جديد (سلة بلس)	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-2058	plan line تعديل معلومات العميل (سلة بلس)	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-3167	released flag customer-advance-management, plans plus, pro, special	D-anchor
+CM-CUS-001	salla	core	SA-C-060/decides/SA-S-3169	released flag customer-metadata, plans special, pro	D-anchor
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-2512	the same permissions in the list a partner can request	D-anchor
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-2517	partner's list: customer_approve, قبول التحاق العملاء	D-anchor
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3163	flag customer-tag, not released	D-anchor
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3166	flag custom-customer-fields, not released	D-anchor
+CM-CUS-001	salla	shows	SA-C-060/decides/SA-S-3177	flag customers-unisearch, not released	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/where/SH-S-1516	its own Segments name	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/where/SH-S-7090	route customer-segments, section Customers, path segments	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-5143	the route needs the customerSegmentation entitlement	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-5670	entitlement customerSegmentation true on the captured stores	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/decides/SH-S-7036	plan line Create customer segments	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/boundary/SH-S-1185	its webhook topic customer.joined_segment	D-anchor
+CM-CUS-002	shopify	core	SH-C-040/boundary/SH-S-6184	write_customers, the user must not have restricted access	D-anchor
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5969	customer_groups/create: a customer saved search is created	D-anchor
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5972	customer.joined_segment: a customer joins a segment	D-anchor
+CM-CUS-002	shopify	core	SH-C-039/boundary/SH-S-5973	customer.left_segment: a customer leaves a segment	D-anchor
+CM-CUS-002	shopify	core	SH-I-0584	webhook topic segments/create	D-anchor
+CM-CUS-002	shopify	extension-point	SH-C-040/boundary/SH-S-2203	extension customer_segment_template	D-anchor
+CM-CUS-002	shopify	extension-point	SH-I-1496	extension target admin.customers.segmentation-templates.data	D-anchor
+CM-CUS-002	salla	core	SA-C-061/where/SA-S-1845	dashboard link Customer groups, /customers/groups	D-anchor
+CM-CUS-002	salla	core	SA-C-061/where/SA-S-1033	its Merchant API folder Customer Groups	D-anchor
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-2117	plan line تصنيف العملاء إلى مجموعات (سلة برو)	D-anchor
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-2150	plan line تصنيف تلقائي لمجموعات العملاء, by number of orders or rating (سلة برو)	D-anchor
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-3161	released flag customer-group, plans pro, special	D-anchor
+CM-CUS-002	salla	core	SA-C-061/decides/SA-S-3176	released flag customer-groups-draft-status, on the answering store	D-anchor
+CM-CUS-003	shopify	core	SH-C-039/where/SH-S-5139	admin route customer:bulk-edit, path bulk/customer	D-anchor
+CM-CUS-003	shopify	core	SH-C-039/decides/SH-S-5067	the route is for the web client	D-anchor
+CM-CUS-003	salla	core	SA-C-060/decides/SA-S-2118	plan line إدارة مجموعة عملاء كدفعة واحدة (سلة برو)	D-anchor
+CM-CUS-003	salla	core	SA-C-060/decides/SA-S-3172	released flag customers-bulk-actions, plans plus, pro, special	D-anchor
+CM-CUS-004	shopify	core	SH-C-039/decides/SH-S-5146	admin route customer:merge needs MERGE_CUSTOMERS	D-anchor
+CM-CUS-004	shopify	core	SH-C-039/boundary/SH-S-5961	webhook topic customers/merge: two customers are merged	D-anchor
+CM-CUS-004	shopify	core	SH-C-039/decides/SH-S-5962	the user must have read_customer_merge permissions	D-anchor
+CM-CUS-004	shopify	core	SH-C-039/boundary/SH-S-6180	access scope write_customer_merge	D-anchor
+CM-CUS-004	shopify	core	SH-I-0924	staff permission Customers > Merge	D-anchor
+CM-CUS-005	salla	core	SA-C-060/decides/SA-S-2056	plan line حظر العميل (سلة بلس)	D-anchor
+CM-CUS-005	salla	core	SA-C-060/decides/SA-S-2297	staff permission customer_block	D-anchor
+CM-CUS-005	salla	shows	SA-C-060/decides/SA-S-2514	partner's list: customer_block, حظر عميل	D-anchor
+CM-CUS-006	salla	core	SA-C-060/decides/SA-S-2060	plan line كشف العملاء غير الجادين (سلة بلس)	D-anchor
+CM-CUS-006	salla	shows	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system across Salla stores	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/where/SH-S-7093	route Edit marketing status, section Customers, path :id/marketing	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/decides/SH-S-5149	the route is for the native client, with CREATE_AND_EDIT_CUSTOMERS	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-0881	its API's customerEmailMarketingSubscribe	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-0884	its API's customerWhatsAppMarketingConsentUpdate	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-1205	webhook topic customers_email_marketing_consent/update	D-anchor
+CM-CUS-007	shopify	core	SH-C-043/boundary/SH-S-1206	webhook topic customers_marketing_consent/update	D-anchor
+CM-CUS-007	shopify	core	SH-I-0443	webhook topic customers_whats_app_marketing_consent/update	D-anchor
+CM-CUS-007	shopify	core	SH-I-0635	webhook topic Customer SMS marketing consent update	D-anchor
+CM-CUS-008	salla	core	SA-C-065/where/SA-S-1717	settings route customers/address, Shipping addresses settings	D-anchor
+CM-CUS-008	salla	core	SA-C-065/decides/SA-S-3031	released flag saudi-national-address, plans basic, plus, pro, special	D-anchor
+CM-CUS-008	salla	core	SA-C-065/reason/SA-S-5021	when on, customers in Saudi Arabia must enter the national address to complete the order	D-anchor
+CM-CUS-008	salla	shows	SA-C-065/responsible/SA-S-5020	turning it off, the merchant bears the legal consequences and extra shipping costs	D-anchor
+CM-CUS-008	salla	shows	SA-C-065/decides/SA-S-3139	flag national-address, not released	D-anchor
+CM-CUS-008	shopify	core	SH-I-0114	API resource customerAddressCreate	D-anchor
+CM-CUS-008	shopify	core	SH-I-0115	API resource customerAddressDelete	D-anchor
+CM-CUS-008	shopify	core	SH-I-0116	API resource customerAddressUpdate	D-anchor
+CM-CUS-009	salla	extension-point	SA-C-065/where/SA-S-1226	app category Geolocation / الموقع الجغرافي, تحديد دقيق للمواقع	D-anchor
+CM-CUS-009	salla	extension-point	SA-C-065/where/SA-S-1200	app category Geolocation in the app store's list	D-anchor
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3119	released flag google-maps-service, plans plus, pro, special	D-anchor
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3120	released flag here-service, plans plus, pro, special	D-anchor
+CM-CUS-009	salla	core	SA-C-065/decides/SA-S-3121	released flag location-i-q-service, plans plus, pro, special	D-anchor
+CM-CUS-009	salla	shows	SA-C-065/decides/SA-S-3122	flag nominatim-service, not released	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/where/SH-S-1490	its settings page Customer accounts	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/where/SH-S-0836	its Customer Account API	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5131	customerAccountsSettings needs PREFERENCES	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5136	its parent route needs CUSTOMERS and the entitlement customers.accountSettingsAccess	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-5655	entitlement accountSettingsAccess true on the captured stores	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/decides/SH-S-0743	buyers sign in with a one-time 6-digit code, no password	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-1189	webhook topic customer_account_settings/update	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-5914	Customer Account API scope customer_read_customers	D-anchor
+CM-CUS-010	shopify	core	SH-C-041/boundary/SH-S-5921	Customer Account API scope customer_read_orders	D-anchor
+CM-CUS-010	shopify	core	SH-I-0797	admin section CustomerAccounts	D-anchor
+CM-CUS-010	shopify	extension-point	SH-I-1952	app-store category Accounts and login apps	D-anchor
+CM-CUS-010	salla	core	SA-C-062/where/SA-S-1714	settings route customers/login_methods, Login & registration options	D-anchor
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1609	event customer.login, تسجيل دخول عميل للمتجر	D-anchor
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1610	event customer.otp.request, طلب كود تحقق تسجيل دخول	D-anchor
+CM-CUS-010	salla	core	SA-C-062/boundary/SA-S-1659	webhook auth.otp.verification: a 4-digit OTP sent to the customer	D-anchor
+CM-CUS-010	salla	core	SA-C-062/decides/SA-S-2394	staff permission register_fields_management, group إعدادات المتجر	D-anchor
+CM-CUS-010	salla	extension-point	SA-C-200/boundary/SA-S-0161	OTP sign-in needs an SMS provider from the app store	D-anchor
+CM-CUS-010	salla	shows	SA-C-066/boundary/SA-S-5023	the buyer creating a new account in the store sees the store's privacy policy	D-anchor
+CM-CUS-010	salla	shows	SA-C-062/decides/SA-S-2611	partner's list: register_fields_management, نموذج التسجيل	D-anchor
+CM-CUS-010	salla	shows	SA-C-062/reason/SA-S-5018	Passkey apps are native to the device; whose sign-in isn't stated	D-anchor
+CM-CUS-010	salla	shows	SA-C-062/decides/SA-S-3367	flag cross-store-login, not released	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-0842	its own label Third-party identity providers	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-7091	route identityProviders:auth, section CustomerAccounts, path identity_providers	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/where/SH-S-7092	route customerAuthenticationSettings, section CustomerAccounts, path authentication	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/decides/SH-S-5137	the route needs MANAGE_CUSTOMER_IDENTITY_PROVIDERS	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/decides/SH-S-0742	on Shopify Plus, the merchant's own identity provider replaces the default sign-in	D-anchor
+CM-CUS-011	shopify	core	SH-C-042/boundary/SH-S-7462	Admin API object IdentityProviderSubject	D-anchor
+CM-CUS-011	shopify	core	SH-I-0079	API resource Multipass	D-anchor
+CM-CUS-011	salla	shows	SA-C-062/decides/SA-S-3168	flag sso-login, not released, plans plus, pro, special	D-anchor
+CM-CUS-012	salla	core	SA-C-062/where/SA-S-1715	settings route customers/recaptcha, reCAPTCHA verification	D-anchor
+CM-CUS-012	salla	core	SA-C-062/decides/SA-S-3100	released flag auth-recaptcha, on the answering store	D-anchor
+CM-CUS-012	salla	shows	SA-C-062/decides/SA-S-3368	flag re-captcha-v3, not released	D-anchor
+CM-CUS-013	salla	core	SA-C-062/where/SA-S-1716	settings route customers/whatsapp_otp, WhatsApp verification	D-anchor
+CM-CUS-013	salla	shows	SA-C-062/decides/SA-S-3090	flag whatsapp-otp, not released	D-anchor
+CM-CUS-014	shopify	extension-point	SH-C-165/where/SH-S-2186	extension type customer_account_ui	D-anchor
+CM-CUS-014	shopify	extension-point	SH-I-1652	extension target customer-account.page.render	D-anchor
+CM-CUS-014	shopify	extension-point	SH-I-1642	extension target customer-account.order-status.block.render	D-anchor
+CM-CUS-014	shopify	shows	SH-C-165/decides/SH-S-0712	only supported on the new version of customer accounts	D-anchor
+CM-CUS-014	shopify	shows	SH-C-165/boundary/SH-S-0822	its Customer accounts label	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/where/SH-S-5150	admin route discounts, path discounts	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/where/SH-S-1522	its own section Discounts	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/decides/SH-S-5151	route eligibility: MARKETING permission and discountCodes entitlement	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/where/SH-S-0776	its own API group Discounts and marketing	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/boundary/SH-S-5976	webhook topic discounts/create, read_discounts	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/boundary/SH-S-5980	webhook topic discounts/update	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/boundary/SH-S-5977	webhook topic discounts/delete	D-anchor
+CM-MKT-001	shopify	core	SH-C-127/boundary/SH-S-6088	its own scope read_price_rules	D-anchor
+CM-MKT-001	shopify	core	SH-I-1012	staff permission APPLY_DISCOUNTS_TO_ORDERS	D-anchor
+CM-MKT-001	shopify	extension-point	SH-I-1833	App Store category Discount apps	D-anchor
+CM-MKT-001	shopify	extension-point	SH-I-1832	App Store category Promotion apps	D-anchor
+CM-MKT-001	shopify	shows	SH-C-127/boundary/SH-S-2532	UCP capability dev.ucp.shopping.discount in a store's profile	D-anchor
+CM-MKT-002	shopify	core	SH-C-127/decides/SH-S-7042	plan line Create and share discount codes, included on every plan	D-anchor
+CM-MKT-002	shopify	core	SH-C-127/decides/SH-S-5685	store entitlement discountCodes true	D-anchor
+CM-MKT-002	shopify	core	SH-C-127/boundary/SH-S-5978	webhook topic discounts/redeemcode_added: a redeem code added to a code discount	D-anchor
+CM-MKT-002	shopify	core	SH-C-127/boundary/SH-S-5979	webhook topic discounts/redeemcode_removed	D-anchor
+CM-MKT-004	shopify	extension-point	SH-C-128/where/SH-S-2227	Function API target identifier discount	D-anchor
+CM-MKT-004	shopify	extension-point	SH-C-128/where/SH-S-0856	Function API target label Discount	D-anchor
+CM-MKT-004	shopify	extension-point	SH-C-128/boundary/SH-S-2208	admin extension target discount_details_function_settings	D-anchor
+CM-MKT-004	shopify	extension-point	SH-I-1467	Function API target Discounts allocator	D-anchor
+CM-MKT-004	shopify	extension-point	SH-C-127/boundary/SH-S-6191	the guide to building a discount function: an app requests write_discounts	D-anchor
+CM-MKT-004	shopify	shows	SH-C-128/decides/SH-S-0683	Shopify invokes Functions within the customer journey	D-anchor
+CM-MKT-004	shopify	shows	SH-C-128/responsible/SH-S-7281	the developer is solely responsible for the application	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/where/SH-S-5173	admin route growth	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/where/SH-S-5176	admin route marketing	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/where/SH-S-1518	its own section Growth	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/where/SH-S-1521	its own section Campaigns	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/decides/SH-S-5174	route growth gated by MARKETING_SECTION	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/decides/SH-S-5175	route growth:integrated-campaigns gated by VIEW_MARKETING_INTEGRATED_CAMPAIGNS	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/boundary/SH-S-6029	its own scope read_marketing_events	D-anchor
+CM-MKT-005	shopify	core	SH-C-129/boundary/SH-S-1014	its own scope read_marketing_integrated_campaigns	D-anchor
+CM-MKT-005	shopify	core	SH-I-0937	staff permission Marketing > Campaigns	D-anchor
+CM-MKT-005	shopify	extension-point	SH-C-129/where/SH-S-2590	App Store category Marketing apps	D-anchor
+CM-MKT-005	shopify	shows	SH-I-1187	plan line Capture customer leads, not defined	D-anchor
+CM-MKT-006	shopify	core	SH-C-129/decides/SH-S-7040	plan line Create marketing automations	D-anchor
+CM-MKT-006	shopify	core	SH-I-0756	Growth entry Autopilot	D-anchor
+CM-MKT-006	shopify	core	SH-I-0936	staff permission Marketing > View, create, and delete marketing activities and automations	D-anchor
+CM-MKT-007	shopify	core	SH-C-130/where/SH-S-5157	admin route email/create	D-anchor
+CM-MKT-007	shopify	core	SH-C-130/decides/SH-S-7037	plan line Create email campaigns	D-anchor
+CM-MKT-007	shopify	core	SH-C-130/decides/SH-S-7038	plan line Pay-per-send SMS campaigns	D-anchor
+CM-MKT-007	shopify	core	SH-C-130/decides/SH-S-0055	Shopify scans the content of emails sent with its Email Services	D-anchor
+CM-MKT-007	shopify	extension-point	SH-I-1828	App Store category Email marketing apps	D-anchor
+CM-MKT-007	shopify	extension-point	SH-I-1830	App Store category SMS marketing apps	D-anchor
+CM-MKT-007	shopify	shows	SH-C-130/responsible/SH-S-0054	Shopify's Email Services use third-party providers, including SendGrid	D-anchor
+CM-MKT-007	shopify	shows	SH-C-130/responsible/SH-S-0051	SMS Services use third-party providers; Twilio's Acceptable Use Policy applies	D-anchor
+CM-MKT-007	shopify	shows	SH-I-1333	billing charge category Messaging	D-anchor
+CM-MKT-008	shopify	core	SH-C-131/where/SH-S-1519	its own Growth entry Attribution	D-anchor
+CM-MKT-008	shopify	core	SH-C-131/decides/SH-S-5226	route order conversion summary gated by MARKETING_SECTION	D-anchor
+CM-MKT-008	shopify	extension-point	SH-C-131/boundary/SH-S-2255	extension target order_attribution_config	D-anchor
+CM-MKT-009	shopify	core	SH-C-146/where/SH-S-1498	its own settings page Customer events	D-anchor
+CM-MKT-009	shopify	core	SH-C-146/decides/SH-S-5138	route customer-events-settings:pixel gated by CUSTOM_PIXELS_VIEW	D-anchor
+CM-MKT-009	shopify	core	SH-C-146/decides/SH-S-0066	Shopify allows you to add pixels to track customer events (Shopify Pixel Manager)	D-anchor
+CM-MKT-009	shopify	core	SH-C-146/decides/SH-S-0707	callbacks run only after consent where consent is required	D-anchor
+CM-MKT-009	shopify	core	SH-I-1036	staff permission CUSTOM_PIXELS_MANAGEMENT	D-anchor
+CM-MKT-009	shopify	extension-point	SH-C-146/where/SH-S-2239	app extension web_pixel	D-anchor
+CM-MKT-009	shopify	extension-point	SH-C-146/boundary/SH-S-5960	your app creates the pixel	D-anchor
+CM-MKT-009	shopify	extension-point	SH-C-146/boundary/SH-S-5958	app needs write_pixels and read_customer_events	D-anchor
+CM-MKT-009	shopify	extension-point	SH-C-146/decides/SH-S-5028	pixel details route gated only by the apps permissions	D-anchor
+CM-MKT-009	shopify	shows	SH-C-146/where/SH-S-0706	pixels are JavaScript snippets that collect behavioural data	D-anchor
+CM-MKT-009	shopify	shows	SH-C-146/where/SH-S-0708	pixels load in a sandbox with APIs for subscribing to customer events	D-anchor
+CM-MKT-009	shopify	shows	SH-I-1732	standard event checkout_started	D-anchor
+CM-MKT-009	shopify	shows	SH-I-1727	standard event cart_viewed	D-anchor
+CM-MKT-009	shopify	shows	SH-C-146/responsible/SH-S-0067	the merchant is responsible for consents of those whose events are tracked	D-anchor
+CM-MKT-010	shopify	extension-point	SH-C-194/where/SH-S-2573	App Store category Advertising apps	D-anchor
+CM-MKT-010	shopify	extension-point	SH-I-1810	App Store category Ads	D-anchor
+CM-MKT-010	shopify	extension-point	SH-I-1811	App Store category Advertising - Other	D-anchor
+CM-MKT-010	shopify	shows	SH-C-194/responsible/SH-S-0058	third-party services are between the merchant and the third party	D-anchor
+CM-MKT-011	shopify	core	SH-C-132/decides/SH-S-7072	plan line Optimize ads with Shopify Audiences, on Plus only	D-anchor
+CM-MKT-011	shopify	core	SH-C-132/decides/SH-S-0733	available to eligible Plus stores using Shopify Payments in the US or Canada	D-anchor
+CM-MKT-011	shopify	shows	SH-C-132/reason/SH-S-0734	generates custom audiences for advertising platforms	D-anchor
+CM-MKT-011	shopify	shows	SH-C-132/boundary/SH-S-0735	audiences exported to the merchant's digital advertising account	D-anchor
+CM-MKT-011	shopify	shows	SH-C-132/where/SH-S-7255	installed from the Shopify App Store; maker not stated	D-anchor
+CM-MKT-011	shopify	shows	SH-C-132/boundary/SH-S-0068	use is subject to the Shopify Audiences Terms and Conditions	D-anchor
+CM-MKT-012	shopify	core	SH-C-133/decides/SH-S-7044	plan line Acquire customers risk-free with Shop Campaigns, included on every plan	D-anchor
+CM-MKT-012	shopify	own-service	SH-C-133/decides/SH-S-7482	Shopify determines the buyers who see offers and the targeting of third-party platform ads	D-anchor
+CM-MKT-012	shopify	own-service	SH-C-133/boundary/SH-S-7478	its own Shop Campaigns Merchant Terms, supplementing the merchant's agreements with Shopify	D-anchor
+CM-MKT-012	shopify	shows	SH-C-133/decides/SH-S-0726	an ads program charged only when a customer converts	D-anchor
+CM-MKT-012	shopify	shows	SH-C-133/where/SH-S-7252	ads run across the Shop app, Shop website, Shopify Product Network and third-party placements	D-anchor
+CM-MKT-012	shopify	shows	SH-C-133/responsible/SH-S-7471	the Advertiser Merchant is responsible for fulfilment	D-anchor
+CM-MKT-013	shopify	own-service	SH-C-134/where/SH-S-2760	the app Collabs: Content commerce, publisher Shopify Inc.	D-anchor
+CM-MKT-013	shopify	own-service	SH-C-134/boundary/SH-S-7479	Shopify Collabs Terms govern the Shopify Collabs application, supplementing the merchant's terms with Shopify	D-anchor
+CM-MKT-013	shopify	shows	SH-C-134/where/SH-S-0731	businesses and creators connect in a marketplace-style app	D-anchor
+CM-MKT-013	shopify	shows	SH-C-134/responsible/SH-S-7473	Shopify is not a party to the Program Agreement	D-anchor
+CM-MKT-013	shopify	shows	SH-I-1345	billing charge category Shopify collabs commission	D-anchor
+CM-MKT-014	shopify	extension-point	SH-I-1812	App Store category Affiliate program apps	D-anchor
+CM-MKT-014	shopify	own-service	SH-C-134/where/SH-S-2760	Collabs, publisher Shopify Inc.	D-anchor
+CM-MKT-014	shopify	shows	SH-C-134/decides/SH-S-0732	Collabs tracks affiliate sales and sends payments to affiliates	D-anchor
+CM-MKT-015	shopify	own-service	SH-C-134/where/SH-S-2760	Collabs, publisher Shopify Inc.	D-anchor
+CM-MKT-015	shopify	shows	SH-C-134/where/SH-S-0731	businesses and creators connect in a marketplace-style app	D-anchor
+CM-MKT-015	shopify	shows	SH-C-134/responsible/SH-S-7474	the merchant alone pays creators their commissions	D-anchor
+CM-MKT-001	salla	core	SA-C-071/where/SA-S-1712	settings route coupons/discount-priorities, Offer priority	D-anchor
+CM-MKT-001	salla	shows	SA-C-080/boundary/SA-S-5028	bank offers are a new type of discount	D-anchor
+CM-MKT-002	salla	core	SA-C-070/where/SA-S-1815	its own link Coupons, /marketing/coupons	D-anchor
+CM-MKT-002	salla	core	SA-C-070/where/SA-S-3583	dashboard app @salla.sa/ui-merchant-coupons	D-anchor
+CM-MKT-002	salla	core	SA-C-070/where/SA-S-1038	its own API folder Coupons	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2001	plan line كوبونات التخفيض	D-anchor
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-2565	staff permission coupon_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-2566	staff permission coupon_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-002	salla	core	SA-C-070/where/SA-S-1707	settings route coupons/multiple-coupons	D-anchor
+CM-MKT-002	salla	core	SA-C-070/boundary/SA-S-1623	webhook event coupon.applied	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3244	released flag coupon-group, plans pro, special, plus	D-anchor
+CM-MKT-003	salla	core	SA-C-071/where/SA-S-1817	its own link Promotional Offers, /marketing/offers	D-anchor
+CM-MKT-003	salla	core	SA-C-071/where/SA-S-1036	its own API folder Special Offers	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2004	plan line العروض الخاصة	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2103	plan line: offers and discounts applied automatically at the order	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-2571	staff permission special_offers_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-2572	staff permission special_offers_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1557	its own app scope specialoffers	D-anchor
+CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1626	webhook event specialoffer.created	D-anchor
+CM-MKT-003	salla	core	SA-C-071/boundary/SA-S-1627	webhook event specialoffer.updated	D-anchor
+CM-MKT-005	salla	core	SA-C-075/where/SA-S-1818	its own link Campaigns, /marketing/campaign/retargeting	D-anchor
+CM-MKT-005	salla	core	SA-C-075/where/SA-S-3535	dashboard app @salla.sa/ui-merchant-marketing-campaign	D-anchor
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-2567	staff permission campaign_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-2568	staff permission campaign_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-005	salla	core	SA-C-070/where/SA-S-1694	its own link Marketing	D-anchor
+CM-MKT-005	salla	core	SA-C-072/boundary/SA-S-1560	its own app scope marketing / التسويق	D-anchor
+CM-MKT-007	salla	core	SA-C-075/decides/SA-S-2010	plan line حملات تسويقية عبر الرسائل النصية وإشعارات التطبيق	D-anchor
+CM-MKT-007	salla	extension-point	SA-C-075/boundary/SA-S-1673	communication-app event marketing.campaign.broadcast	D-anchor
+CM-MKT-009	salla	core	SA-C-074/where/SA-S-1813	its own link Pixels & feeds	D-anchor
+CM-MKT-009	salla	core	SA-C-074/decides/SA-S-3204	released flag tiktok-pixel, plans plus, pro, special	D-anchor
+CM-MKT-009	salla	core	SA-C-074/decides/SA-S-2981	released flag google-tag	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/boundary/SA-S-5136	collect tracking data from browser and server	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3216	flag facebook-conversion of type app, with an app-store install link; maker not stated	D-anchor
+CM-MKT-009	salla	extension-point	SA-C-092/where/SA-S-1164	developer docs folder Ecommerce Events	D-anchor
+CM-MKT-009	salla	extension-point	SA-C-092/decides/SA-S-5149	choose an integration mode for your application	D-anchor
+CM-MKT-009	salla	extension-point	SA-C-092/boundary/SA-S-1082	API folder Device Mode Events	D-anchor
+CM-MKT-009	salla	extension-point	SA-C-092/boundary/SA-S-1083	API folder Cloud Mode Events	D-anchor
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1343	event Checkout Started	D-anchor
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1341	event Cart Viewed	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-1812	its own link Salla Ads, /marketing/ads/dashboard	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-0007	Salla's product for digital advertising campaigns from the merchant environment	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-1954	plan line إعلانات سلة	D-anchor
+CM-MKT-010	salla	shows	SA-C-073/decides/SA-S-2592	staff permission salla_ads_campaigns_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-010	salla	shows	SA-C-073/decides/SA-S-2593	staff permission salla_ads_campaigns_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-3257	released flag salla-ads	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3561	dashboard app @salla.sa/ui-merchant-ads-snapchat	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3562	dashboard app @salla.sa/ui-merchant-ads-tiktok	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3563	dashboard app @salla.sa/ui-merchant-ads-google	D-anchor
+CM-MKT-010	salla	core	SA-C-074/decides/SA-S-2149	plan line الربط مع الخدمات الإعلانية, linking the store with ad services	D-anchor
+CM-MKT-010	salla	shows	SA-C-073/boundary/SA-S-5135	add funds to your Sweply ads wallet	D-anchor
+CM-MKT-010	salla	shows	SA-C-073/responsible/SA-S-5133	Sweply is not responsible for any results	D-anchor
+CM-MKT-011	salla	core	SA-C-073/where/SA-S-3572	dashboard app @salla.sa/ui-merchant-ads-tools, path tools|audience-manager	D-anchor
+CM-MKT-011	salla	core	SA-C-073/where/SA-S-3599	dashboard app @salla.sa/ui-merchant-ads-audience-v2	D-anchor
+CM-MKT-011	salla	shows	SA-C-073/decides/SA-S-2594	staff permission salla_ads_audiences_browse, استعراض الجماهير (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-011	salla	shows	SA-C-073/decides/SA-S-2595	staff permission salla_ads_audiences_management, إدارة الجماهير (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-013	salla	core	SA-C-072/where/SA-S-3550	dashboard app @salla.sa/ui-merchant-partner-marketing: referrals, affiliates, experts, influencers, marketplace	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1821	its own link Affiliate marketing, /marketing/affiliate	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1037	its own API folder Affiliates	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2015	plan line التسويق بالعمولة	D-anchor
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-2577	staff permission affiliate_browse (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-2578	staff permission affiliate_management (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1711	settings route coupons/commission-period	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3253	released flag affiliate, plans plus, pro, special	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3446	released flag affiliates-attribution-settings	D-anchor
+CM-MKT-014	salla	extension-point	SA-C-206/where/SA-S-1916	Partners portal link Affiliate Marketplace	D-anchor
+CM-MKT-014	salla	shows	SA-C-206/responsible/SA-S-0043	the marketer's commission includes taxes	D-anchor
+CM-MKT-015	salla	core	SA-C-076/where/SA-S-1816	its own link Influencers, /marketing/influencers	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2002	plan line التسويق مع المؤثرين	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-2589	staff permission manage_influencers (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-2590	staff permission browse_influencers (the coordinator, 30 October: a permission a partner can request, by the statement's note; by the dry run's S7, shows)	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3192	released flag influencer-marketplace	D-anchor
+CM-MKT-015	salla	extension-point	SA-C-206/where/SA-S-1921	Partners portal link My Profile, /influencer/profile	D-anchor
+CM-MKT-015	salla	extension-point	SA-C-206/where/SA-S-1922	Partners portal link Campaign Orders, /influencers/campaigns	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/responsible/SA-S-5025	the partner and the merchant are independent; Salla bears no responsibility	D-anchor
+CM-MKT-007	salla	extension-point	SA-C-200/boundary/SA-S-1673	Communication Webhooks event marketing.campaign.broadcast	D-anchor
+CM-MKT-016	shopify	extension-point	SH-I-1844	App Store category Stock alert apps	D-anchor
+CM-MKT-016	salla	core	SA-C-032/where/SA-S-1754	its own settings route Back in stock alerts	D-anchor
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-2402	staff permission product_availability_notify_management	D-anchor
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-3466	released flag product-availability-notify, plans plus, pro, special	D-anchor
+CM-MKT-016	salla	core	SA-C-032/decides/SA-S-3467	released flag product-sku-availability-notify, plans plus, pro, special	D-anchor
+CM-MKT-016	salla	core	SA-C-032/boundary/SA-S-1666	its webhook event product.availability.alert	D-anchor
+CM-MKT-016	salla	core	SA-C-032/boundary/SA-S-1498	its storefront component for subscribing to availability	D-anchor
+CM-MKT-016	salla	shows	SA-C-032/reason/SA-S-5013	reason: knowing which products are worth restocking	D-anchor
+CM-MKT-017	salla	core	SA-C-032/where/SA-S-1761	its own settings route Wishlist Notifications	D-anchor
+CM-MKT-017	salla	core	SA-C-032/decides/SA-S-3173	released flag wishlist-notifications	D-anchor
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-2110	plan line عروض البنك, plan سلة برو	D-anchor
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-3308	released flag bank-offer, plans special, pro	D-anchor
+CM-MKT-018	salla	core	SA-C-080/decides/SA-S-3309	released flag bank-offer-scope	D-anchor
+CM-MKT-018	salla	core	SA-C-080/where/SA-S-3589	dashboard app whose path holds /marketing/banks	D-anchor
+CM-MKT-018	salla	shows	SA-C-080/boundary/SA-S-5028	definition: a discount for paying with a given bank's card	D-anchor
+CM-MKT-018	salla	shows	SA-C-080/reason/SA-S-5029	reason: encourage paying through a preferred bank	D-anchor
+CM-MKT-019	salla	core	SA-C-075/where/SA-S-1819	its own link Marketing calendar	D-anchor
+CM-MKT-019	salla	core	SA-C-075/decides/SA-S-2013	plan line الجدول الزمني للتسويق, plan سلة بلس	D-anchor
+CM-MKT-019	salla	core	SA-C-075/decides/SA-S-3254	released flag marketing-calendar, plans plus, pro, special	D-anchor
+CM-MKT-020	salla	core	SA-C-073/decides/SA-S-2381	staff permission salla_ads_wallet_browse	D-anchor
+CM-MKT-020	salla	core	SA-C-073/decides/SA-S-2382	staff permission salla_ads_wallet_management	D-anchor
+CM-MKT-020	salla	core	SA-C-073/where/SA-S-3600	dashboard app @salla.sa/ui-merchant-ads-payment	D-anchor
+CM-MKT-020	salla	shows	SA-C-073/boundary/SA-S-5134	amounts deducted from the wallet	D-anchor
+CM-MKT-020	salla	shows	SA-C-073/boundary/SA-S-5135	add funds to the Sweply ads wallet, on Meta	D-anchor
+CM-MKT-021	shopify	extension-point	SH-I-1846	App Store category Upsell and cross-sell apps	D-anchor
+CM-MKT-021	salla	extension-point	SA-C-071/where/SA-S-1188	app category Cross/up sell	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2008	plan line إنشاء مجموعة كوبونات, plan سلة بلس	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2009	plan line كوبونات محلي, plan سلة بلس	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2108	plan line كوبونات تسويقية, plan سلة برو	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2348	staff permission coupon_browse	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2349	staff permission coupon_management	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2368	staff permission coupon_delete	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-2369	staff permission coupon_statistics	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3245	released flag coupon-export, plans special, pro	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3252	released flag coupon-payment-method, plans plus, pro, special	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3256	released flag coupon-customer, plans plus, pro, special	D-anchor
+CM-MKT-002	salla	core	SA-C-070/decides/SA-S-3258	released flag coupon-multi-market, plans plus, pro, special	D-anchor
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3255	flag coupon-countries, not released	D-anchor
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3322	flag bundle-aware-coupon, not released	D-anchor
+CM-MKT-002	salla	shows	SA-C-070/decides/SA-S-3324	flag multi_coupon, not released	D-anchor
+CM-MKT-002	salla	core	SA-C-070/boundary/SA-S-1573	its webhook event order.coupon.updated	D-anchor
+CM-MKT-003	salla	core	SA-C-071/where/SA-S-3589	dashboard app @salla.sa/ui-merchant-offers, /marketing/offers	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-1980	plan line إظهار العروض الخاصة أسفل المنتج, plan سلة بلس	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2005	plan line عروض السلة, plan سلة بلس	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2354	staff permission special_offers_browse	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-2355	staff permission special_offers_management	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3096	released flag promotion-title-and-subtitle, plans plus, pro, special	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3310	released flag special-offer, plans plus, pro, special	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3311	released flag special-offer-export, plan special	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3313	released flag conditional-offer, plans plus, pro, special	D-anchor
+CM-MKT-003	salla	core	SA-C-071/decides/SA-S-3318	released flag tiered-offer, plans plus, pro, special	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3312	flag discount-offer-table, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3316	flag customer-group-offer, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3317	flag prebuilt-cart-offer, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3319	flag external-purchases-tiered-offer, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3320	flag tiered-offer-hide-until-threshold, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3325	flag enable-offers-for-mobile-app, not released	D-anchor
+CM-MKT-003	salla	shows	SA-C-071/decides/SA-S-3326	flag cart-offer-applied-tier, not released	D-anchor
+CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2350	staff permission campaign_browse	D-anchor
+CM-MKT-005	salla	core	SA-C-075/decides/SA-S-2351	staff permission campaign_management	D-anchor
+CM-MKT-005	salla	extension-point	SA-C-075/where/SA-S-1223	App Store category Marketing / التسويق	D-anchor
+CM-MKT-005	salla	extension-point	SA-C-075/where/SA-S-1196	app category Marketing in its extension-points list	D-anchor
+CM-MKT-005	salla	shows	SA-C-075/decides/SA-S-3246	flag external-campaign, not released	D-anchor
+CM-MKT-007	salla	core	SA-C-073/where/SA-S-3575	dashboard app @salla.sa/ui-merchant-app-notification, /marketing/ads/app-notification	D-anchor
+CM-MKT-007	salla	core	SA-C-075/decides/SA-S-3259	released flag one-signal	D-anchor
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-2986	flag mailchimp-marketing of type app, with an app-store install link; maker not stated	D-anchor
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-2983	flag klaviyo of type app, not released	D-anchor
+CM-MKT-007	salla	shows	SA-C-075/decides/SA-S-3260	flag one-signal-push-notification of type app, not released	D-anchor
+CM-MKT-009	salla	extension-point	SA-C-074/where/SA-S-1189	app category ads Track in its extension-points list	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3217	flag snapchat-conversion of type app, with an app id; maker not stated	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3218	flag tiktok-conversion of type app, with an app id; maker not stated	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3220	flag twitter-pixel-v2 of type app, not released	D-anchor
+CM-MKT-009	salla	shows	SA-C-074/decides/SA-S-3239	flag snapchat-extension, not released	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2374	staff permission salla_ads_dashboard_browse	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2375	staff permission salla_ads_campaigns_browse	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2376	staff permission salla_ads_campaigns_management	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2379	staff permission salla_ads_integrations_browse	D-anchor
+CM-MKT-010	salla	core	SA-C-073/decides/SA-S-2380	staff permission salla_ads_integrations_management	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3564	dashboard app for ads on YouTube, /marketing/ads/youtube	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3565	dashboard app @salla.sa/ui-merchant-ads-manageads	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3569	dashboard app for ads on Meta, /marketing/ads/meta	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3571	dashboard app @salla.sa/ui-merchant-ads-dashboard	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3574	dashboard app @salla.sa/ui-merchant-marketing-credits, /marketing/ads/xio	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3580	dashboard app @salla.sa/ui-merchant-engage, /marketing/ads/engage	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3582	dashboard app @salla.sa/ui-merchant-whatsapp, /marketing/ads/whatsapp	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3584	dashboard app @salla.sa/ui-merchant-template, /marketing/ads/template	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3588	dashboard app @salla.sa/ui-merchant-ads-media	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3592	dashboard app @salla.sa/ui-merchant-ads-media-v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3593	dashboard app for ads on Snapchat, v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3594	dashboard app for ads on TikTok, v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3595	dashboard app for ads on Google, v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3596	dashboard app @salla.sa/ui-merchant-ads-tools-v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3597	dashboard app @salla.sa/ui-merchant-ads-campaigns-v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3598	dashboard app for ads on Meta, v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3603	dashboard app @salla.sa/ui-merchant-ads-smart-campaigns	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3604	dashboard app @salla.sa/ui-merchant-ads-dashboard-v2	D-anchor
+CM-MKT-010	salla	core	SA-C-073/where/SA-S-3605	dashboard app @salla.sa/ui-merchant-ads-xio-v2	D-anchor
+CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2377	staff permission salla_ads_audiences_browse	D-anchor
+CM-MKT-011	salla	core	SA-C-073/decides/SA-S-2378	staff permission salla_ads_audiences_management	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1708	its own settings route Marketing assets	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1709	its own settings route Automatic welcome message	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-1710	its own settings route Status settings	D-anchor
+CM-MKT-014	salla	core	SA-C-072/where/SA-S-3536	dashboard app whose path holds /marketing/affiliate	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2144	plan line التسويق بالعمولة, plan سلة برو	D-anchor
+CM-MKT-014	salla	core	SA-C-075/decides/SA-S-2151	plan line: a link or code for the affiliate marketer, plan سلة برو	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2360	staff permission affiliate_browse	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-2361	staff permission affiliate_management	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3243	released flag coupon-affiliate, plans pro, special	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3369	released flag affiliates-cta	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3405	released flag private_affiliate_link	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3406	released flag merchant-special-link, plans plus, pro, special	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3408	released flag affiliate-show-contacts	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3410	released flag affiliate-multi-scopes, plans plus, pro, special	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3411	released flag export_special_opportunity	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3447	released flag affiliate-fixed-commission	D-anchor
+CM-MKT-014	salla	core	SA-C-072/decides/SA-S-3448	released flag affiliate-marketer-budget	D-anchor
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3197	flag affiliate-paid-ad, not released	D-anchor
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3407	flag affiliate-public-statistics, not released	D-anchor
+CM-MKT-014	salla	shows	SA-C-072/decides/SA-S-3449	flag affiliates-settings, not released	D-anchor
+CM-MKT-015	salla	core	SA-C-076/where/SA-S-3537	dashboard app whose path holds /marketing/influencers	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2372	staff permission manage_influencers	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-2373	staff permission browse_influencers	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3196	released flag advanced-influencers-search	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3409	released flag influencer-campaign-templates	D-anchor
+CM-MKT-015	salla	core	SA-C-076/decides/SA-S-3432	released flag influencers-packages	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3193	flag influencer-marketplace-soon, not released	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/decides/SA-S-3242	flag celebrity-marketing, not released	D-anchor
+CM-MKT-015	salla	shows	SA-C-076/boundary/SA-S-5137	five statuses of campaign orders, for influencers in Salla's Partners	D-anchor
 CM-APP-001	shopify	core	SH-C-156/where/SH-S-1495	the admin navigation item Apps	F-anchor
 CM-APP-001	shopify	core	SH-C-156/decides/SH-S-5028	the apps list route, open to the staff permissions APPLICATIONS or LIMITED_APPLICATIONS	F-anchor
 CM-APP-001	shopify	core	SH-C-019/where/SH-S-6316	the admin's Settings > Apps	F-anchor
@@ -458,7 +887,7 @@ CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0217	developers must tell mer
 CM-APP-001	salla	core	SA-C-194/where/SA-S-1883	the dashboard link My apps, /apps/installed	F-anchor
 CM-APP-001	salla	core	SA-C-194/where/SA-S-1702	the link Installed apps	F-anchor
 CM-APP-001	salla	core	SA-C-194/where/SA-S-3541	the dashboard app @salla.sa/ui-merchant-apps at /apps	F-anchor
-CM-APP-001	salla	core	SA-C-194/decides/SA-S-2629	the staff permission marketplace_apps_management, named التطبيقات المثبتة	F-anchor
+CM-APP-001	salla	shows	SA-C-194/decides/SA-S-2629	a permission a partner can request on a merchant's store, marketplace_apps_management (the statement's note); by the dry run's S7, shows (the coordinator, 30 October)	F-anchor
 CM-APP-001	salla	extension-point	SA-C-194/responsible/SA-S-0037	Salla provides only the technical infrastructure that hosts partners' apps or services	F-anchor
 CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0024	developer and merchant each answer for their use of apps; Salla for none	F-anchor
 CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0033	the partner answers to merchants and regulators for the content	F-anchor
@@ -576,6 +1005,296 @@ CM-APP-009	shopify	core	SH-I-0995	the staff permission App development > Enable 
 CM-APP-009	shopify	core	SH-C-167/decides/SH-S-7054	plan line Build custom apps using Shopify APIs, limited data access on Basic	F-anchor
 CM-APP-009	shopify	shows	SH-C-157/decides/SH-S-0693	building for a specific merchant, a developer typically uses custom distribution	F-anchor
 CM-APP-009	shopify	shows	SH-C-167/responsible/SH-S-7477	the developer of an unsupported app is responsible for updating it	F-anchor
+CM-APP-004	shopify	core	SH-C-158/boundary/SH-S-1152	the webhook topic app/scopes_update, on an app's granted scopes changing	F-anchor
+CM-APP-010	salla	core	SA-C-199/where/SA-S-1076	the App API's folder Settings	F-anchor
+CM-APP-010	salla	core	SA-I-0170	the extension point App API, which holds the Settings folder	F-anchor
+CM-APP-010	salla	core	SA-C-193/boundary/SA-S-1656	the app event app.settings.updated	F-anchor
+CM-APP-010	salla	extension-point	SA-C-199/decides/SA-S-0210	App Settings are parameters custom-made by the app's developer	F-anchor
+CM-API-001	shopify	core	SH-I-0044	the API resource GraphQL Admin API	F-anchor
+CM-API-001	shopify	core	SH-I-0050	the API resource REST Admin API (legacy)	F-anchor
+CM-API-001	shopify	core	SH-I-0052	the API resource API usage	F-anchor
+CM-API-001	shopify	core	SH-I-0034	the API resource Global IDs, a convention of the API	F-anchor
+CM-API-001	shopify	core	SH-I-0032	the API resource GraphQL pagination, a convention of the API	F-anchor
+CM-API-001	shopify	shows	SH-C-171/responsible/SH-S-0221	the developer owns its app, Shopify the platform, and limits the use of merchant data it lets apps access	F-anchor
+CM-API-001	salla	core	SA-I-0157	the extension point Merchant API	F-anchor
+CM-API-002	shopify	core	SH-I-0030	the API resource API authentication	F-anchor
+CM-API-002	salla	core	SA-C-190/where/SA-S-1159	the developer docs' navigation link Salla OAuth 2.0	F-anchor
+CM-API-002	salla	core	SA-C-190/boundary/SA-S-1013	the API docs page Authorization	F-anchor
+CM-API-002	salla	core	SA-C-190/boundary/SA-S-0176	Salla supports OAuth 2.0 as the primary method for authorization and authentication	F-anchor
+CM-API-002	salla	core	SA-C-190/decides/SA-S-0185	merchants are asked to authorize the service provider to access only specific portions of their account	F-anchor
+CM-API-002	salla	shows	SA-C-190/reason/SA-S-0186	OAuth lets third-party applications access APIs without users sharing their passwords (a reason)	F-anchor
+CM-API-003	shopify	core	SH-C-158/where/SH-S-0795	the API docs entry Access scopes	F-anchor
+CM-API-003	shopify	core	SH-I-0031	the API resource Access scopes	F-anchor
+CM-API-003	shopify	core	SH-C-158/decides/SH-S-0757	Shopify grants access scopes only to public or custom apps	F-anchor
+CM-API-003	shopify	core	SH-C-158/decides/SH-S-0754	Shopify restricts scopes for apps without a legitimate use for the data	F-anchor
+CM-API-003	shopify	shows	SH-C-158/decides/SH-S-0755	merchants approve the scopes when they install the app	F-anchor
+CM-API-003	shopify	core	SH-C-158/boundary/SH-S-5914	a field of the API that requires the customer_read_customers scope	F-anchor
+CM-API-003	shopify	shows	SH-C-158/decides/SH-S-6183	a mutation requires the write_customers scope and the user's permission to create and edit customers	F-anchor
+CM-API-003	shopify	core	SH-C-159/decides/SH-S-0756	the scope type Shopify approval required: Shopify approves the app before it declares the scope	F-anchor
+CM-API-003	shopify	core	SH-C-159/where/SH-S-7248	scopes needing approval are requested in the Partner Dashboard, some through Shopify Support	F-anchor
+CM-API-003	shopify	core	SH-C-159/boundary/SH-S-1114	the approval-required scope read_all_orders	F-anchor
+CM-API-003	shopify	shows	SH-C-158/responsible/SH-S-0220	the developer uses merchant data only to provide the application's services, within the merchant's limits	F-anchor
+CM-API-003	salla	core	SA-C-191/where/SA-S-5090	App Scopes Setup in the Partners Portal: the developer checks the scopes and clicks Update Scope	F-anchor
+CM-API-003	salla	core	SA-C-191/decides/SA-S-0185	merchants authorize the app to access only specific portions of their account	F-anchor
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1546	the scope customers, with read and read_write	F-anchor
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1547	the scope orders, with read and read_write	F-anchor
+CM-API-003	salla	core	SA-C-191/boundary/SA-S-1552	the scope products, with read and read_write	F-anchor
+CM-API-003	salla	shows	SA-C-191/reason/SA-S-5091	the merchant grants the app permission within a specific scope, so the store's data stays safe and private (a reason)	F-anchor
+CM-API-004	shopify	core	SH-C-160/where/SH-S-7249	public apps request protected customer data and fields through the Partner Dashboard	F-anchor
+CM-API-004	shopify	core	SH-C-160/decides/SH-S-0694	Shopify approves an app's use of protected customer data if it is the minimum the app needs	F-anchor
+CM-API-004	shopify	core	SH-C-160/boundary/SH-S-5904	a query requiring Level 2 access to customer data: name, address, phone and email	F-anchor
+CM-API-004	shopify	core	SH-C-160/boundary/SH-S-7470	the customer's email requires the read_customer_email scope, under protected customer data	F-anchor
+CM-API-004	shopify	core	SH-I-2428	the access-scopes entry Protected customer data permissions	F-anchor
+CM-API-004	shopify	shows	SH-C-160/responsible/SH-S-0218	the developer presents the merchant a privacy policy that complies with privacy laws	F-anchor
+CM-API-004	shopify	shows	SH-C-160/responsible/SH-S-0695	partners are bound by the Partner Program Agreement and the API License and Terms of Use	F-anchor
+CM-API-005	shopify	core	SH-I-0036	the API resource Limits	F-anchor
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-0689	each app has a bucket whose size the API and the plan set	F-anchor
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-0688	Shopify may temporarily reduce API rate limits	F-anchor
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-7055	the plan line API rate limits, by plan	F-anchor
+CM-API-005	shopify	core	SH-C-171/decides/SH-S-7075	the plan line Up to 500% higher API call limits, on Plus	F-anchor
+CM-API-005	shopify	shows	SH-C-171/reason/SH-S-0687	rate limits keep the platform stable and fair (a reason)	F-anchor
+CM-API-005	salla	core	SA-C-201/boundary/SA-S-1001	the API docs page Rate Limiting	F-anchor
+CM-API-005	salla	core	SA-C-201/decides/SA-S-0171	rate limits vary with the store's plan	F-anchor
+CM-API-005	salla	core	SA-C-201/decides/SA-S-0173	exceeding the limits may bring temporary access restrictions	F-anchor
+CM-API-005	salla	shows	SA-C-201/reason/SA-S-0172	all APIs are rate-limited so Salla stays stable and fair (a reason)	F-anchor
+CM-API-006	shopify	core	SH-C-171/where/SH-S-0793	the API docs entry Versioning	F-anchor
+CM-API-006	shopify	core	SH-I-0029	the API resource Versioning	F-anchor
+CM-API-006	shopify	core	SH-C-171/decides/SH-S-0690	Shopify releases API versions quarterly and retires older ones	F-anchor
+CM-API-006	shopify	core	SH-I-0151	the API resource publicApiVersions	F-anchor
+CM-API-006	shopify	shows	SH-C-171/decides/SH-S-0691	unversioned APIs and surfaces may change at any time	F-anchor
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-1002	the API docs page Versioning	F-anchor
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-0208	Salla implemented URI versioning	F-anchor
+CM-API-006	salla	core	SA-C-202/decides/SA-S-0207	APIs are versioned up only on a breaking change	F-anchor
+CM-API-006	salla	core	SA-C-202/where/SA-S-1167	the developer docs' navigation link Change Log	F-anchor
+CM-API-006	salla	core	SA-C-202/boundary/SA-S-1014	the API docs page Change Log	F-anchor
+CM-API-007	shopify	core	SH-C-171/where/SH-S-0770	the API docs entry Bulk operations	F-anchor
+CM-API-007	shopify	core	SH-I-0006	the API resource Bulk operations	F-anchor
+CM-API-007	shopify	core	SH-C-171/boundary/SH-S-1158	the webhook topic bulk_operations/finish	F-anchor
+CM-API-008	shopify	core	SH-C-162/where/SH-S-0791	the API docs entry Webhooks	F-anchor
+CM-API-008	shopify	core	SH-I-0027	the API resource Webhooks	F-anchor
+CM-API-008	shopify	core	SH-C-162/boundary/SH-S-0685	an app subscribes to Shopify webhook topics to receive near-real-time data on a shop's events	F-anchor
+CM-API-008	shopify	core	SH-C-162/boundary/SH-S-0686	HMAC signatures and the delivery id X-Shopify-Webhook-Id	F-anchor
+CM-API-008	shopify	shows	SH-C-162/responsible/SH-S-7281	the developer is solely responsible for its application, Shopify not liable	F-anchor
+CM-API-008	salla	core	SA-C-192/boundary/SA-S-1008	the API docs page Webhooks	F-anchor
+CM-API-008	salla	core	SA-C-192/where/SA-S-1068	the Merchant API's folder Webhooks	F-anchor
+CM-API-008	salla	core	SA-C-192/boundary/SA-S-1553	the app scope webhooks	F-anchor
+CM-API-008	salla	core	SA-C-192/reason/SA-S-5092	Salla sends an event's headers and details to the app with a token or signature verifying it is from Salla	F-anchor
+CM-API-008	salla	core	SA-C-192/where/SA-S-1941	Salla's navigation link Webhooks Log at /logs	F-anchor
+CM-API-009	shopify	core	SH-C-162/where/SH-S-7142	the admin route Webhooks under Settings > Notifications	F-anchor
+CM-API-009	shopify	core	SH-C-162/decides/SH-S-5131	the notification settings route, open to the staff permission PREFERENCES	F-anchor
+CM-API-009	shopify	shows	SH-C-158/boundary/SH-S-6111	some topics only an app can subscribe to: they don't appear in a store's notification settings	F-anchor
+CM-API-009	salla	core	SA-C-192/where/SA-S-1886	the dashboard link Developer tools at /manage/webhooks	F-anchor
+CM-API-009	salla	core	SA-C-192/where/SA-S-3533	the dashboard app @salla.sa/ui-merchant-manage, whose path holds manage/webhooks	F-anchor
+CM-API-009	salla	core	SA-C-192/decides/SA-S-2124	the plan line إرسال الإخطارات لخدمات أخرى عبر Webhooks, on سلة برو	F-anchor
+CM-API-009	salla	core	SA-C-192/decides/SA-S-2408	the staff permission webhook_management	F-anchor
+CM-API-009	salla	core	SA-C-192/decides/SA-S-3078	the released feature flag webhooks, for the plans pro and special	F-anchor
+CM-API-009	salla	shows	SA-C-192/decides/SA-S-2625	a partner can request webhook_management on a merchant's store	F-anchor
+CM-API-010	salla	core	SA-C-192/boundary/SA-S-1009	the API docs page Conditional Webhooks	F-anchor
+CM-API-011	shopify	core	SH-C-161/where/SH-S-7256	an app subscribes to the compliance webhook topics in its shopify.app.toml	F-anchor
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1197	the webhook topic customers/data_request	F-anchor
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1203	the webhook topic customers/redact	F-anchor
+CM-API-011	shopify	core	SH-C-161/boundary/SH-S-1356	the webhook topic shop/redact	F-anchor
+CM-API-011	shopify	core	SH-C-161/decides/SH-S-0697	any app distributed through the App Store must respond to data subject requests	F-anchor
+CM-API-011	shopify	shows	SH-C-161/decides/SH-S-0696	public apps give the same privacy rights for all personal data, wherever the person is	F-anchor
+CM-API-011	shopify	shows	SH-C-161/responsible/SH-S-0219	the developer deletes merchant data within 30 days of the merchant uninstalling the app	F-anchor
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1176	the developer docs' top-level menu Dev Tools	F-anchor
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1177	the folder Partners Agent Kit under Dev Tools	F-anchor
+CM-DVT-001	salla	core	SA-C-203/where/SA-S-1178	the folder Salla Apps Playbook under Dev Tools	F-anchor
+CM-DVT-002	salla	core	SA-C-203/where/SA-S-1179	the docs folder Salla CLI under Dev Tools, at /salla-cli/help	F-anchor
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1106	the CLI's docs folder Apps Command	F-anchor
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1107	the CLI's docs folder Twilight Themes Command	F-anchor
+CM-DVT-002	salla	core	SA-C-203/boundary/SA-S-1109	the CLI's docs folder Theme Component Bundles Commands	F-anchor
+CM-DVT-002	salla	core	SA-C-203/reason/SA-S-5096	developed by Salla's team to create apps and themes with one command	F-anchor
+CM-DVT-002	salla	shows	SA-C-203/decides/SA-S-5095	prerequisite: a partner account on the Salla Partners Portal	F-anchor
+CM-DVT-003	salla	core	SA-C-209/where/SA-S-1931	the Partners portal link Demo Stores, a child of its item Stores	F-anchor
+CM-DVT-003	salla	core	SA-C-209/where/SA-S-1932	the Partners portal link Ready Stores, a child of the same item	F-anchor
+CM-DVT-004	salla	core	SA-C-209/where/SA-S-1931	the Partners portal link Demo Stores, /demo-stores	F-anchor
+CM-DVT-004	salla	core	SA-C-209/where/SA-S-3547	the dashboard app @salla.sa/ui-merchant-devstore at /store-dev	F-anchor
+CM-DVT-004	salla	core	SA-C-209/boundary/SA-S-5110	the portal gives each developer free demo stores to test an app before launch	F-anchor
+CM-DVT-004	salla	core	SA-C-209/decides/SA-S-5108	each developer may create free demo stores, up to ten	F-anchor
+CM-DVT-004	salla	shows	SA-C-209/responsible/SA-S-5109	Salla isn't responsible for operating or setting up the store	F-anchor
+CM-DVT-005	salla	core	SA-C-209/reason/SA-S-5111	Salla's team reviews every ready store before it is published	F-anchor
+CM-DVT-005	salla	extension-point	SA-C-209/where/SA-S-1932	the link Ready Stores in the Partners portal, where partners keep their stores (a reading)	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1183	the docs' button Developer Portal, to salla.partners	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1905	the Partners portal link Dashboard	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1942	the Partners portal link Chats, /conversations	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1943	the Partners portal link Message Center	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1945	the Help Center's Partners Resources	F-anchor
+CM-PTN-001	salla	core	SA-C-204/where/SA-S-1947	the Help Center's Support	F-anchor
+CM-PTN-001	salla	core	SA-C-204/boundary/SA-S-5098	dedicated technical and commercial support for all partners; email and the partners' platform are official channels	F-anchor
+CM-PTN-001	salla	shows	SA-C-176/responsible/SA-S-0016	the Salla Partners platform, belonging to Salla, owned by شركة تطبيق سلة لتقنية المعلومات	F-anchor
+CM-PTN-001	salla	shows	SA-C-176/decides/SA-S-5084	Salla may amend the agreement's terms at any time	F-anchor
+CM-PTN-001	salla	shows	SA-C-176/where/SA-S-5083	the partners' privacy page on partners.salla.com	F-anchor
+CM-PTN-001	salla	shows	SA-C-176/boundary/SA-S-0213	the SaaS contract a partner signs, tied to an app id	F-anchor
+CM-PTN-001	salla	shows	SA-C-176/boundary/SA-S-0214	the contract is signable at publication	F-anchor
+CM-PTN-002	salla	core	SA-C-204/where/SA-S-1934	the Partners portal link Employees	F-anchor
+CM-PTN-002	salla	core	SA-C-204/where/SA-S-1939	the Partners portal link Settings	F-anchor
+CM-PTN-002	salla	core	SA-I-1952	the portal's identity type Personal Identity	F-anchor
+CM-PTN-002	salla	core	SA-I-1953	the portal's identity type Passport	F-anchor
+CM-PTN-002	salla	core	SA-I-1957	the portal's identity status Verified	F-anchor
+CM-PTN-002	salla	core	SA-I-1960	the portal's identity status KYC Restart Required	F-anchor
+CM-PTN-002	salla	core	SA-C-204/reason/SA-S-5099	Salla reviews applications and verifies partners' eligibility before accepting them	F-anchor
+CM-PTN-002	salla	shows	SA-C-204/decides/SA-S-0036	a condition: a clear identity, with proof of identity	F-anchor
+CM-PTN-002	salla	shows	SA-C-204/decides/SA-S-0035	a condition: a company or establishment must be licensed	F-anchor
+CM-PTN-002	salla	shows	SA-C-204/responsible/SA-S-5097	the partner keeps its account's data confidential	F-anchor
+CM-PTN-003	salla	core	SA-C-195/where/SA-S-1936	the Partners portal link Payouts, under Payments	F-anchor
+CM-PTN-003	salla	core	SA-C-195/decides/SA-S-0027	developers' dues are paid after the quality and refund period, usually 15 days	F-anchor
+CM-PTN-003	salla	core	SA-C-195/decides/SA-S-0034	Salla reports and transfers the partner's commissions or dues on schedule, unless a dispute or breach prevents it	F-anchor
+CM-PTN-003	salla	shows	SA-I-1946	the payout status Under review	F-anchor
+CM-PTN-003	salla	shows	SA-I-1948	the payout status Paid	F-anchor
+CM-PTN-003	salla	shows	SA-I-1951	the payout status Need Action	F-anchor
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1937	the Partners portal link Billings, under Payments	F-anchor
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1938	the Partners portal link Operation records	F-anchor
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-1174	the docs link Billing System Salla partners	F-anchor
+CM-PTN-004	salla	core	SA-C-195/where/SA-S-0046	the Partners platform's billing system generates the monthly invoices for apps automatically	F-anchor
+CM-PTN-004	salla	core	SA-C-195/boundary/SA-S-0045	the partner opens, searches and pays its invoices, with proof of bank transfer	F-anchor
+CM-PTN-005	salla	core	SA-C-205/where/SA-S-1885	the dashboard link Merchant Services, /manage/experts	F-anchor
+CM-PTN-005	salla	core	SA-C-205/where/SA-S-3537	the dashboard app @salla.sa/ui-merchant-services, at manage/experts	F-anchor
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3191	the released flag expert-marketplace	F-anchor
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3195	the released flag recommended-services	F-anchor
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3422	the released flag partners-chat	F-anchor
+CM-PTN-005	salla	core	SA-C-205/decides/SA-S-3436	the released flag services-redirect, plan basic	F-anchor
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1911	the Partners portal link Services, under My Services	F-anchor
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1912	the Partners portal link Orders Center	F-anchor
+CM-PTN-005	salla	extension-point	SA-C-205/where/SA-S-1913	the Partners portal link Service Provider Portfolio	F-anchor
+CM-PTN-005	salla	extension-point	SA-C-205/responsible/SA-S-0198	the service provider: a partner serving Salla's merchants through the Partners platform, an independent party	F-anchor
+CM-PTN-005	salla	extension-point	SA-C-205/responsible/SA-S-0032	the Partners platform is a digital intermediary between partner and merchants, not party to their contract	F-anchor
+CM-PTN-005	salla	shows	SA-C-205/boundary/SA-S-5100	conversations between partner and merchant only through the platform's means	F-anchor
+CM-PTN-005	salla	shows	SA-C-205/reason/SA-S-5101	every service provider is verified, and dealings are supervised by Salla	F-anchor
+CM-PTN-006	salla	core	SA-C-303/decides/SA-S-5125	the platform assigns a store to a partner only after the merchant's prior explicit consent	F-anchor
+CM-PTN-006	salla	extension-point	SA-C-303/decides/SA-S-5125	accredited partners' services activate and develop the store	F-anchor
+CM-PTN-006	salla	extension-point	SA-C-303/responsible/SA-S-5126	the platform is only a coordinator and provider of infrastructure, not party to the partner–merchant relation	F-anchor
+CM-PTN-006	salla	shows	SA-C-303/where/SA-S-5124	the agencies' agreement page on partners.salla.com	F-anchor
+CM-PTN-006	salla	shows	SA-C-303/boundary/SA-S-5127	the partner updates the shared systems daily with each store's status	F-anchor
+CM-PTN-007	salla	extension-point	SA-C-304/boundary/SA-S-5130	Salla connects the partner with local brands seeking export and expansion in East Asia	F-anchor
+CM-PTN-007	salla	shows	SA-C-304/where/SA-S-5128	the programme's page on partners.salla.com	F-anchor
+CM-PTN-007	salla	shows	SA-C-304/responsible/SA-S-5129	payments and merchant of record in the target market; who does it isn't stated	F-anchor
+CM-PTN-008	salla	core	SA-C-173/decides/SA-S-5076	entitlement is calculated by the referral programme's terms approved by Salla	F-anchor
+CM-PTN-008	salla	core	SA-C-173/boundary/SA-S-5077	earnings due go to the merchant's wallet on the 28th of each month	F-anchor
+CM-PTN-008	salla	shows	SA-C-173/where/SA-S-2210	the agreement's page on salla.com	F-anchor
+CM-PTN-008	salla	shows	SA-C-173/responsible/SA-S-0019	the agreement, by Salla's owning company and its commercial registration	F-anchor
+CM-PTN-009	salla	core	SA-C-206/where/SA-S-3550	the dashboard app @salla.sa/ui-merchant-partner-marketing, at marketing/affiliates and influencers	F-anchor
+CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3414	the released flag partner-unlimited-affiliate	F-anchor
+CM-PTN-009	salla	core	SA-C-206/decides/SA-S-3415	the released flag partner-merchant-affiliate, plans plus, pro and special	F-anchor
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1915	the Partners portal link Affiliate Profile, under Affiliates	F-anchor
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1916	the Partners portal link Affiliate Marketplace	F-anchor
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1918	the Partners portal link Affiliate Orders	F-anchor
+CM-PTN-009	salla	extension-point	SA-C-206/where/SA-S-1922	the Partners portal link Campaign Orders, under Influencer	F-anchor
+CM-PTN-009	salla	shows	SA-C-206/decides/SA-S-3413	the flag partner-affiliate, not released	F-anchor
+CM-PTN-009	salla	shows	SA-C-206/responsible/SA-S-0043	the marketer's commission includes all taxes, VAT and government fees on sales	F-anchor
+CM-PTN-009	salla	shows	SA-C-206/responsible/SA-S-0033	the partner answers to merchants and regulators for its content	F-anchor
+CM-PTN-009	salla	shows	SA-C-206/boundary/SA-S-5102	conversations only through the platform's tools, on pain of suspension or frozen amounts	F-anchor
+CM-PTN-009	salla	shows	SA-C-206/reason/SA-S-5103	fair competition: partners offer prices equal to or below their other channels	F-anchor
+CM-DVT-001	shopify	core	SH-I-1990	Shopify.dev, "Dev docs, CLI, and more", in Shopify's own list of products	F-anchor
+CM-DVT-002	shopify	core	SH-I-1990	names a CLI among Shopify.dev's offerings	F-anchor
+CM-DVT-003	shopify	core	SH-I-2086	the Partner Dashboard's item Stores	F-anchor
+CM-DVT-004	shopify	shows	SH-C-158/boundary/SH-S-6300	names the development store, which a Dev Dashboard app connects to	F-anchor
+CM-PTN-001	shopify	core	SH-C-168/where/SH-S-2521	Shopify Partners, a destination of the Shopify account	F-anchor
+CM-PTN-001	shopify	core	SH-I-2085	the Partner Dashboard's Home	F-anchor
+CM-PTN-001	shopify	core	SH-I-2094	the Partner Dashboard's item Dev dashboard	F-anchor
+CM-PTN-001	shopify	core	SH-C-168/where/SH-S-0838	the docs label Partner API	F-anchor
+CM-PTN-001	shopify	core	SH-I-0074	the API resource Partner API	F-anchor
+CM-PTN-001	shopify	shows	SH-C-168/responsible/SH-S-0288	the agreement is between the partner, Shopify Inc. and Shopify Commerce Singapore	F-anchor
+CM-PTN-001	shopify	shows	SH-I-1385	the legal agreement Partner Terms of Service	F-anchor
+CM-PTN-001	shopify	shows	SH-I-1387	the legal item Report a partner violation	F-anchor
+CM-PTN-002	shopify	core	SH-I-2093	the Partner Dashboard's item Organization	F-anchor
+CM-PTN-002	shopify	core	SH-I-2092	the Partner Dashboard's item Partner settings	F-anchor
+CM-PTN-002	shopify	core	SH-C-168/boundary/SH-S-7463	the Partner API's object Organization, a Partner organization	F-anchor
+CM-PTN-002	shopify	shows	SH-C-168/decides/SH-S-0215	an API client needs a Partner Account and the Partner Program Agreement	F-anchor
+CM-PTN-002	shopify	shows	SH-C-168/responsible/SH-S-0297	a partner may not be in or organized under an Unsupported Region	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/where/SH-S-2855	the Partner Dashboard's Payouts	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/where/SH-S-7145	the organization settings route partner-payouts	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/decides/SH-S-5241	the partner payouts and billing routes, open to organizations with the feature PARTNER	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/decides/SH-S-0295	Shopify distributes what it owes partners twice per calendar month	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/responsible/SH-S-0282	Shopify collects the charge and pays out the developer's share automatically	F-anchor
+CM-PTN-003	shopify	core	SH-I-0175	the Partner API's Transactions	F-anchor
+CM-PTN-003	shopify	core	SH-C-169/boundary/SH-S-7464	the Partner API's interface Transaction, a Shopify Partner transaction	F-anchor
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0759	Shopify may set off or withhold payments to partners	F-anchor
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0758	payments may be withheld during fraud, risk and anti-money-laundering checks	F-anchor
+CM-PTN-003	shopify	shows	SH-C-169/decides/SH-S-0287	the App Plan's revenue share: 0% to USD 1 million, 15% above	F-anchor
+CM-PTN-003	shopify	shows	SH-I-1133	the Partner API permission View financials	F-anchor
+CM-PTN-004	shopify	core	SH-C-169/decides/SH-S-5241	the organization settings route partner-billing, open to partner organizations	F-anchor
+CM-PTN-005	shopify	core	SH-C-170/where/SH-S-7146	the plan subscription route Schedule intro call, book-shopify-expert-intro-call	F-anchor
+CM-PTN-005	shopify	core	SH-C-170/where/SH-S-7147	the plan subscription route Bring your own partner	F-anchor
+CM-PTN-005	shopify	extension-point	SH-C-170/responsible/SH-S-0760	partners provide services via the Partner Directory, at their own responsibility	F-anchor
+CM-PTN-005	shopify	shows	SH-C-170/responsible/SH-S-0761	the partner ensures a Merchant Agreement with the merchant	F-anchor
+CM-PTN-005	shopify	shows	SH-I-1328	the billing charge category Expert services fees	F-anchor
+CM-PTN-005	shopify	shows	SH-I-1340	the billing charge category Professional services fees	F-anchor
+CM-AUT-001	shopify	core	SH-C-151/decides/SH-S-7161	the staff permission View, create, and delete automations, category AUTOMATIONS, in the admin's permission tree	F-anchor
+CM-AUT-001	shopify	core	SH-C-151/decides/SH-S-7162	the staff permission Manage connections and secrets, under MANAGE_AUTOMATIONS	F-anchor
+CM-AUT-001	shopify	core	SH-I-1984	Workflow Automation in Shopify's own list of products	F-anchor
+CM-AUT-001	shopify	shows	SH-C-151/decides/SH-S-0752	defines Shopify Flow as a free automation platform for tasks within the store and across its apps; names no maker	F-anchor
+CM-AUT-001	shopify	shows	SH-C-151/where/SH-S-0753	Shopify Flow is installed from the Shopify App Store; names no maker	F-anchor
+CM-AUT-001	shopify	shows	SH-C-151/where/SH-S-6364	the admin link Flow at apps/flow; its eligibility not stated	F-anchor
+CM-AUT-001	shopify	shows	SH-I-0806	the admin navigation item Flow	F-anchor
+CM-AUT-001	shopify	extension-point	SH-C-151/where/SH-S-2242	the extension template flow_trigger, for apps	F-anchor
+CM-AUT-001	shopify	extension-point	SH-C-151/where/SH-S-2240	the extension template flow_action, for apps	F-anchor
+CM-AUT-001	shopify	extension-point	SH-C-151/boundary/SH-S-2242	flow_trigger as the boundary apps meet Flow at	F-anchor
+CM-AUT-001	shopify	extension-point	SH-I-1477	the extension target Flow template (flow_template)	F-anchor
+CM-AUT-001	shopify	extension-point	SH-I-1479	the extension target Flow trigger lifecycle callback	F-anchor
+CM-AUT-001	shopify	extension-point	SH-I-1950	the App Store category Workflow automation apps	F-anchor
+CM-AUT-001	shopify	shows	SH-I-1700	Google Sheets for Shopify Flow, a name in the extension-points list	F-anchor
+CM-AUT-001	shopify	shows	SH-I-1703	Slack, a name in Flow's extension-points list	F-anchor
+CM-AUT-001	shopify	shows	SH-I-1704	OpenAI, a name in Flow's extension-points list	F-anchor
+CM-AIA-001	shopify	core	SH-C-202/decides/SH-S-7488	AI features in the Shopify admin, many at no additional cost, availability varying by plan, device and language	F-anchor
+CM-AIA-001	salla	core	SA-C-012/decides/SA-S-3400	the released flag salla_gpt, enabled for the answering store	F-anchor
+CM-AIA-001	salla	shows	SA-C-012/decides/SA-S-3158	the released flag suggested-by-moshamer (plans plus, pro); what it suggests is not stated	F-anchor
+CM-AIA-001	salla	shows	SA-C-012/decides/SA-S-3401	the unreleased flag ai-product	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/where/SH-S-0736	Sidekick, an AI-enabled commerce assistant in your Shopify admin	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/where/SH-S-5267	the admin route sidekick	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/where/SH-S-5208	the admin route mobile-sidekick	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/where/SH-S-1604	the admin router's section Sidekick	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/decides/SH-S-0737	built-in behaviour: works within the store's context and presents changes for review before applying them	F-anchor
+CM-AIA-002	shopify	core	SH-C-152/decides/SH-S-7019	the plan line Sidekick, AI assistant for commerce: Included on every plan	F-anchor
+CM-AIA-002	shopify	core	SH-I-0840	the admin navigation item Sidekick	F-anchor
+CM-AIA-002	shopify	core	SH-I-1967	Sidekick in Shopify's own list of products	F-anchor
+CM-AIA-002	shopify	core	SH-I-2513	the App Store's built-in feature Sidekick, your AI cofounder	F-anchor
+CM-AIA-002	shopify	extension-point	SH-C-152/boundary/SH-S-2193	the extension template app_data (App data), for apps	F-anchor
+CM-AIA-002	shopify	extension-point	SH-C-152/boundary/SH-S-2257	the extension template app_action_link (App action link), for apps	F-anchor
+CM-AIA-002	shopify	outside	SH-C-152/responsible/SH-S-0201	third-party subprocessors process personal data input to or included in a response by Sidekick	F-anchor
+CM-AIA-002	shopify	shows	SH-I-2144	the help center section Using Sidekick in the Shopify Balance app	F-anchor
+CM-AIA-002	salla	core	SA-C-012/where/SA-S-3577	the dashboard app @salla.sa/ui-merchant-ai-agent at /ai-agent	F-anchor
+CM-AIA-002	salla	shows	SA-C-012/decides/SA-S-3187	the unreleased flag merchant-multi-agent-assistant (plans basic, plus, pro, special)	F-anchor
+CM-AIA-003	shopify	core	SH-C-202/where/SH-S-7203	the admin's new-product route, opened for Magic product descriptions	F-anchor
+CM-AIA-003	shopify	core	SH-C-202/where/SH-S-7204	the admin's new-article route, opened for Magic blog posts	F-anchor
+CM-AIA-003	shopify	core	SH-C-202/where/SH-S-7205	Use directly in your Shopify admin	F-anchor
+CM-AIA-003	shopify	core	SH-C-202/decides/SH-S-7206	the plan includes free AI-generated product descriptions, no apps required	F-anchor
+CM-AIA-003	shopify	core	SH-C-202/decides/SH-S-7207	the plan's blogging tools include Shopify Magic for generating English content, no apps required	F-anchor
+CM-AIA-003	shopify	core	SH-I-2496	the App Store's built-in feature Shopify Magic for product descriptions	F-anchor
+CM-AIA-003	shopify	core	SH-I-2495	the App Store's built-in feature Shopify Magic for blog posts	F-anchor
+CM-AIA-003	salla	core	SA-C-012/decides/SA-S-2133	the plan line generating SEO improvements with AI, for an extra fee (plan سلة برو)	F-anchor
+CM-AIA-003	salla	shows	SA-C-012/decides/SA-S-3488	the unreleased flag ai-description-generator	F-anchor
+CM-AIA-003	salla	shows	SA-C-012/decides/SA-S-3489	the unreleased flag ai-seo-generator	F-anchor
+CM-AIA-004	salla	core	SA-C-012/where/SA-S-1725	the setting Salla AI Connector (general/salla-mcp)	F-anchor
+CM-AIA-004	salla	core	SA-C-012/boundary/SA-S-5005	the connector's ChatGPT step: the setting adds a custom MCP server from Salla	F-anchor
+CM-AIA-004	salla	core	SA-C-012/decides/SA-S-3188	the released flag salla-mcp (plans plus, pro, special)	F-anchor
+CM-AIA-005	shopify	core	SH-C-140/where/SH-S-0621	Agentic Storefronts, on channels operated by Shopify	F-anchor
+CM-AIA-005	shopify	extension-point	SH-C-140/where/SH-S-0621	Agentic Storefronts, on channels operated by third party Shopify partners	F-anchor
+CM-AIA-005	shopify	core	SH-C-140/decides/SH-S-7007	the plan line Sell in AI chats: Included on every plan	F-anchor
+CM-AIA-005	shopify	core	SH-C-140/boundary/SH-S-2530	the capability dev.ucp.shopping.checkout in the store's UCP profile	F-anchor
+CM-AIA-005	shopify	core	SH-I-0073	the API resource WebMCP Tools	F-anchor
+CM-AIA-005	shopify	core	SH-I-1765	the UCP service dev.ucp.shopping	F-anchor
+CM-AIA-005	shopify	core	SH-I-1771	the UCP capability dev.ucp.shopping.catalog.search	F-anchor
+CM-AIA-005	shopify	core	SH-I-1969	AI Chats in Shopify's own list of products	F-anchor
+CM-AIA-005	shopify	core	SH-I-1988	Commerce for Agents, Build with our agent tools, in Shopify's own list of products	F-anchor
+CM-AIA-005	shopify	extension-point	SH-C-140/where/SH-S-0714	developers build commerce agents acting on behalf of buyers with UCP and Shopify's UCP-compliant MCP servers	F-anchor
+CM-AIA-005	shopify	extension-point	SH-C-140/where/SH-S-5027	the admin route apps/agentic, under apps	F-anchor
+CM-AIA-005	shopify	extension-point	SH-C-140/decides/SH-S-5028	the route agentic:list, open only to the apps permissions APPLICATIONS or LIMITED_APPLICATIONS	F-anchor
+CM-AIA-005	shopify	extension-point	SH-C-140/decides/SH-S-0628	a Participating Channel may customize Shopify Checkout to match its interface	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/where/SH-S-5026	the legacy route agentic, redirected	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/decides/SH-S-5029	the route agentic:knowledge-base, behind a beta	F-anchor
+CM-AIA-005	shopify	shows	SH-I-0779	the admin navigation item Agentic	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/decides/SH-S-0622	Shopify decides eligibility for Agentic Storefronts at its discretion	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/decides/SH-S-0632	the merchant disables a channel's features in the admin	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/decides/SH-S-0631	Participating Channels may stop their services at any time	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/decides/SH-S-0629	Shopify may assess a fee on transactions through certain channels	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0627	the merchant remains the seller of record	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0623	Google's addendum to the Merchant Center terms governs that channel	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0624	Microsoft Copilot Shopify Checkout Terms govern that channel	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0625	Meta's addendum to its Seller Agreement governs that channel	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0626	Shopify is not a party to channel terms other than for channels it operates	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/responsible/SH-S-0630	Shopify processes customers' personal information for partner-operated channels on the merchant's behalf	F-anchor
+CM-AIA-005	shopify	shows	SH-C-140/boundary/SH-S-0071	the terms of service send Agentic Storefronts to its supplemental terms	F-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1805	dashboard link Import & export, /products/imports, in the products list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1847	dashboard link Import customers, /customers/imports, in the customers list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1057	Merchant API folder Exports: its own API for its own feature (C1)	G-anchor
