@@ -169,3 +169,129 @@ BigCommerce has none), so `rulings.tsv` holds its header only.
   (BC-S-0089) and abandoned cart emails (BC-S-0088) are cited in CM-MKT-022 and bear on NTF; the notification topics
   store/channel/{channel_id}/notifications/order/updated (BC-I-0248, D) and abandonedCart (BC-I-0246, C) aren't cited.
 - **App Marketplace category for ANL:** Analytics & Reporting (BC-I-0478, placed in BC-C-059 and BC-C-062).
+
+## Batch 2: areas SUP, ANL and NTF
+
+Concerns: BC-C-012, BC-C-046 and BC-C-062. Cells: BigCommerce's, for every capability of the three areas (18 of the
+model so far, and 1 new: 19).
+
+### How the concerns landed
+
+- **Joined existing capabilities (3):** BC-C-012 Product ratings and reviews in CM-SUP-001 (terms); BC-C-046 Email
+  templates and transactional emails in CM-NTF-001 (terms); BC-C-062 Reporting and analytics in CM-ANL-001 (terms,
+  strained).
+- **New capability (no concern of its own):** CM-ANL-007 Commerce data sent to outside analytics platforms and data
+  warehouses, child of CM-ANL-001, for Big Open Data Solutions (BC-S-0336, product line BC-I-0541). BC-C-062 lands in
+  the parent.
+- **Moved:** none.
+
+### Grains chosen
+
+- **BC-C-062** is coarser than CM-ANL-001's children: Professional reporting tools (BC-S-0338) in CM-ANL-002 Reports,
+  Big Open Data Solutions in CM-ANL-007, the Commerce Analytics Service (BC-S-0339), Settings V3 Analytics (BC-S-0337),
+  the product line Reporting & analytics and the App Marketplace category Analytics & Reporting in CM-ANL-001 itself. So
+  it lands in the parent. Its BODL statements are batch 1's, in CM-MKT-009.
+- **Big Open Data Solutions** has a place of its own (a product line), so it is a capability; it is not CM-ANL-006, which
+  is apps reading reports through the platform's API. Its parent CM-ANL-001 is a reading (see the capability's note).
+- **Settings V3: Analytics** ('Identifies and updates Web analytics providers', BC-S-0337) is cited in CM-ANL-001 as
+  extension-point, a reading: a setting for outside providers that do the analytics. It isn't cited in CM-MKT-009: no
+  statement says the providers track customer events on the storefront. Which providers isn't stated. A reviewer reading
+  it as BigCommerce's own settings API for its own feature (C1) would make it core.
+- **BigCommerce Analytics against Commerce Analytics:** 'the native BigCommerce Analytics' (BC-S-0081) and 'the Commerce
+  Analytics Service' (BC-S-0339) are both cited in CM-ANL-001; no statement says whether they are one product.
+- **Professional reporting tools in CM-ANL-002:** a reading, that reporting tools are the store's reports. No control
+  panel section for reports or analytics is held.
+- **Transactional emails** are the store's automatic messages, so CM-NTF-001, though BigCommerce puts the page under
+  Marketing (BC-S-0259); the channel doesn't set the area. The topic notifications/order/updated (BC-I-0248, placed in
+  BC-C-046) is cited there too; its recipient isn't stated, so it is not in CM-NTF-002.
+- **Abandoned Cart Saver** emails and notifications (BC-S-0088, BC-S-0089, BC-S-0090; BC-C-015, domain C) stay in
+  CM-MKT-022 (batch 1); citing them in CM-NTF-001 too would put a domain C statement in two trees for one feature.
+- **Google customer reviews** (BC-I-0415, placed in BC-C-012) is cited in CM-SUP-001 as a plan line; what it does isn't
+  stated, and Google is named only in the line's name, so it is no slot filler.
+- **CRM & Customer Service** (BC-I-0483) is cited in CM-SUP-005 for its customer service, as batch 1 left it; it is in
+  CM-CUS-001 for its CRM.
+
+### Joins on role
+
+None in this batch: the three joins are on terms. Readings within cells: Settings V3 Analytics as a provider interface
+(CM-ANL-001); CRM & Customer Service as support apps (CM-SUP-005, on its name).
+
+### Strained fits
+
+- **BC-C-062 in CM-ANL-001:** its BODL statements (BC-S-0340, BC-S-0341) are cited in CM-MKT-009, Customer events and
+  tracking pixels, another tree. The reviewer may split BODL from reporting.
+
+### Earlier batch's rows that no longer hold (for the coordinator)
+
+The checker flags two of batch 1's landings as needing `strained` (S1), because of this batch's citations, which follow
+the cells as the brief says:
+- **BC-C-013 in CM-MKT-023:** its BC-S-0081 ('the native BigCommerce Analytics') is now cited as core in CM-ANL-001, as
+  batch 1's notes proposed. Its fit should be `strained`, with the reading naming CM-ANL-001.
+- **BC-C-032 in CM-CUS-001:** BC-I-0483 (CRM & Customer Service, placed in BC-C-032) is now cited as extension-point in
+  CM-SUP-005, as batch 1's notes proposed. Its fit should be `strained`, with the reading naming CM-SUP-005.
+
+### Homonyms kept apart
+
+- **Notifications:** the abandoned cart notifications (BC-I-0246, BC-S-0089) and inventory notifications (BC-S-0033,
+  BC-I-0247, domain B) are not the store's transactional messages; only BC-I-0248 (order) is cited in CM-NTF-001.
+- **Logs:** System Logs and Store logs (BC-S-0331, BC-S-0332, domain G) are debugging and audit logs, not a log of sent
+  messages (CM-NTF-003).
+- **Dashboard:** the Money Dashboard (BC-S-0141, domain C) is payments' balances and payouts, not a store performance
+  overview (CM-ANL-003).
+- **Reviews:** PayPal Braintree reviewing its accounts (BC-S-0156), the Marketplace team reviewing apps (BC-S-0325) and
+  reviewing MCP terms (BC-S-0345) are not product reviews; not cited.
+- **Messages:** order messages (BC-S-0103, BC-I-0168, BC-I-0254) aren't stated to be a chat with buyers (CM-SUP-004).
+
+### Concerns read under `also`
+
+BC-C-015, BC-C-024, BC-C-031, BC-C-044, BC-C-067 and BC-C-081 were read by batch 1; none bears on SUP, ANL or NTF
+beyond the abandoned cart emails (above). Statements of other domains are named only in `none-held` readings, not cited.
+
+### Qualities, slot fillers and gaps
+
+- **Slot fillers:** BigQuery, Tableau, Power BI and Looker (BC-S-0336), the platforms Big Open Data Solutions sends data
+  to, in CM-ANL-007.
+- **No quality** stated: the Commerce Analytics fees are 'charged in advance based on your store plan' (BC-S-0339), with
+  no amount.
+- **Gaps:** BC-C-012's boundary is 'searched, not found' (no scope or webhook topic for reviews), though BC-S-0072 names
+  the GraphQL Storefront API; no statement held shows product questions. No control panel section is held for reviews,
+  reports or analytics. Not defined in a statement held: Google customer reviews, Commerce Analytics against BigCommerce
+  Analytics, which web analytics providers, which transactional emails are sent and to whom, what notifications/order
+  is, and the product line Conversational shopping (BC-I-0516). Which plans include Big Open Data Solutions isn't stated.
+  The responsible placements of all three concerns are stated only in general terms, and no reason is held.
+
+### Rulings
+
+None: BigCommerce's concerns are in no Q1 match or unclear candidate (`concerns` prints none).
+
+### Proposed renames (for the coordinator)
+
+- CM-SUP-001: add BigCommerce's Product ratings and reviews. CM-NTF-001: add BigCommerce's Transactional Emails, Email
+  Templates. CM-ANL-001: add BigCommerce's Reporting & analytics, Commerce Analytics. CM-ANL-002: add BigCommerce's
+  Professional reporting tools.
+
+### What the checker flagged (the whole part, after batch 2)
+
+0 problems, 42 flags. Batch 1's flags are answered in its section; those still standing are the same. This batch's:
+- **BC-C-013/reason/BC-S-0081 in CM-ANL-001 and CM-MKT-023:** it names the native BigCommerce Analytics (core here) as
+  the source of the recommendations' training data (shows there); each part is cited where it belongs. Batch 1's landing
+  of BC-C-013 should be strained (above).
+- **BC-I-0483 in CM-CUS-001 and CM-SUP-005:** the category's name holds CRM and customer service; each half is cited
+  where it belongs. Batch 1's landing of BC-C-032 should be strained (above).
+- **Landings BC-C-032 and BC-C-013 clean with statements in another tree:** batch 1's rows, for the coordinator (above).
+- **`none-held` with matches:** each cell's reading names its hits for the searched terms and why none is the
+  capability: CM-SUP-002, -003, -004, -006, -007, -008; CM-ANL-003, -004, -005, -006; CM-NTF-002, -003, -004. The other
+  hits the checker lists come from the other platforms' terms matching words in unrelated statements: "overview" in API
+  overview pages and "performance" or "dashboard" across 26 statements (Catalyst BC-S-0281, storefront tokens BC-S-0292,
+  payment statements BC-S-0145, plan upgrades BC-S-0187) for CM-ANL-003; "reviews", "reports" and "query" words (product
+  reviews BC-S-0072, recommendations BC-S-0080, BC-S-0081, segmentation BC-S-0207, storefront tokens BC-S-0293) for
+  CM-ANL-006; "staff" and "order" in Sales Staff (BC-I-0098), Staff accounts (BC-S-0334, BC-I-0402) and System Logs
+  (BC-S-0331) for CM-NTF-002; "email" and "sent" in transactional emails (cited in CM-NTF-001), abandoned cart emails
+  (CM-MKT-022), stored cards (BC-S-0135) and webhook deactivation (BC-S-0318) for CM-NTF-003 and CM-NTF-004. None is the
+  capability.
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **BC-C-013 and BC-C-032 are `strained`.** Batch 2 cites BC-S-0081 in CM-ANL-001 and BC-I-0483 in CM-SUP-005, other trees (S1).
+- **Six capabilities added** (CM-B2B-004 to CM-B2B-007, CM-MKT-023, CM-ANL-007): `D-backfill-bigcommerce` writes their cells for the other four platforms.
+

@@ -104,3 +104,24 @@ CM-LOY-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs crea
 CM-LOY-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
 CM-LOY-005	bigcommerce	core	BC-C-036/where/BC-S-0214	its own Wishlist API
 CM-LOY-005	bigcommerce	core	BC-I-0066	API group Wishlist (C2)
+CM-SUP-001	bigcommerce	core	BC-C-012/where/BC-S-0072	its GraphQL Storefront API creates and queries product reviews
+CM-SUP-001	bigcommerce	core	BC-C-012/decides/BC-S-0073	plan line Product ratings and reviews, all four plans
+CM-SUP-001	bigcommerce	core	BC-C-012/decides/BC-S-0074	setting the merchant enables for review submission
+CM-SUP-001	bigcommerce	core	BC-I-0415	plan line Google customer reviews (C2)
+CM-SUP-005	bigcommerce	extension-point	BC-I-0483	App Marketplace category CRM & Customer Service
+CM-ANL-001	bigcommerce	core	BC-C-062/decides/BC-S-0339	Commerce Analytics Service charged with the store plan
+CM-ANL-001	bigcommerce	core	BC-C-013/reason/BC-S-0081	the native BigCommerce Analytics, turned off or on
+CM-ANL-001	bigcommerce	core	BC-I-0531	product line Reporting & analytics (C2)
+CM-ANL-001	bigcommerce	extension-point	BC-C-062/decides/BC-S-0337	settings for Web analytics providers
+CM-ANL-001	bigcommerce	extension-point	BC-I-0478	App Marketplace category Analytics & Reporting
+CM-ANL-002	bigcommerce	core	BC-C-062/decides/BC-S-0338	plan line Professional reporting tools, all four plans
+CM-ANL-007	bigcommerce	core	BC-C-062/where/BC-S-0336	Big Open Data Solutions connects commerce data to outside platforms
+CM-ANL-007	bigcommerce	core	BC-I-0541	product line Big Open Data Solutions (C2)
+CM-NTF-001	bigcommerce	core	BC-C-046/where/BC-S-0259	control panel Marketing › Transactional Emails
+CM-NTF-001	bigcommerce	core	BC-C-046/where/BC-S-0258	its own Email Templates API
+CM-NTF-001	bigcommerce	core	BC-C-046/decides/BC-S-0260	Settings V3 Email Statuses: transactional email settings
+CM-NTF-001	bigcommerce	core	BC-C-046/boundary/BC-S-0261	webhook topic email/templates/updated
+CM-NTF-001	bigcommerce	core	BC-I-0242	webhook topic email/templates/deleted (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0239	webhook topic settings/emailStatus/updated (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0240	webhook topic settings/emailStatus/deleted (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0248	webhook topic notifications/order/updated (C2)

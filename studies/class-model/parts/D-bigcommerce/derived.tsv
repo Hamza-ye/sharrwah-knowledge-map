@@ -1,4 +1,11 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ANL-001	bigcommerce	statements	core;extension-point			BC-C-059/reason:searched, not found;BC-C-062/responsible:stated only in general terms;BC-C-062/reason:searched, not found	general
+CM-ANL-002	bigcommerce	statements	core		BC-C-062/decides/BC-S-0338=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-062/responsible:stated only in general terms;BC-C-062/reason:searched, not found	plans Core, Growth, Scale, Performance (columns of the plan comparison table)
+CM-ANL-003	bigcommerce	none-held					
+CM-ANL-004	bigcommerce	none-held					
+CM-ANL-005	bigcommerce	none-held					
+CM-ANL-006	bigcommerce	none-held					
+CM-ANL-007	bigcommerce	statements	core	Big Open Data Solutions		BC-C-062/responsible:stated only in general terms;BC-C-062/reason:searched, not found	general
 CM-B2B-001	bigcommerce	statements	core;extension-point;own-service	/developer/api-reference/rest/b2b/management/overview | /developer/api-reference/rest/b2b/overview | B2B Edition		BC-C-059/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
 CM-B2B-002	bigcommerce	statements	core			BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
 CM-B2B-003	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/price-lists	BC-C-007/decides/BC-S-0049=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-007/responsible:stated only in general terms;BC-C-007/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
@@ -50,3 +57,15 @@ CM-MKT-020	bigcommerce	none-held
 CM-MKT-021	bigcommerce	none-held					
 CM-MKT-022	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/abandoned-cart-emails | /developer/api-reference/rest/admin/management/abandoned-carts | Settings > General > Miscellaneous	BC-C-015/decides/BC-S-0090=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-015/responsible:stated only in general terms;BC-C-015/reason:searched, not found	general
 CM-MKT-023	bigcommerce	statements	core	Beta Product Recommendations > Product Recommendations | Google Vertex AI	BC-C-013/decides/BC-S-0077=Product Recommendations API (closed beta) | BC-C-013/decides/BC-S-0078=BigCommerce Enterprise plans		general
+CM-NTF-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/email-templates | Marketing › Transactional Emails		BC-C-046/responsible:stated only in general terms;BC-C-046/reason:searched, not found	general
+CM-NTF-002	bigcommerce	none-held					
+CM-NTF-003	bigcommerce	none-held					
+CM-NTF-004	bigcommerce	none-held					
+CM-SUP-001	bigcommerce	statements	core	built-in comment system	BC-C-012/decides/BC-S-0073=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-012/responsible:stated only in general terms;BC-C-012/boundary:searched, not found;BC-C-012/reason:searched, not found	general
+CM-SUP-002	bigcommerce	none-held					
+CM-SUP-003	bigcommerce	none-held					
+CM-SUP-004	bigcommerce	none-held					
+CM-SUP-005	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-SUP-006	bigcommerce	none-held					
+CM-SUP-007	bigcommerce	none-held					
+CM-SUP-008	bigcommerce	none-held					
