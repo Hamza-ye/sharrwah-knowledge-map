@@ -40,3 +40,4 @@ CM-PAY-005	salla	Transfer day, digital stores	للمتاجر الرقمية: ت�
 CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعات كل 24 ساعة	SA-C-111/decides/SA-S-0202
 CM-PAY-029	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123
 CM-PAY-029	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125
+CM-PAY-005	salla	Currency in which Salla Payments receives payments	عند تفعيل التاجر لبوابة دفع سلة، يتم استقبال جميع المدفوعات بالريال السعودي.	SA-C-164/decides/SA-S-0067

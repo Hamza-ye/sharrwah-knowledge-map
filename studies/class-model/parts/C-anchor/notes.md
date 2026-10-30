@@ -577,3 +577,94 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gi
 - **CM-PAY-009's Salla cell** holds SA-S-5051: the merchant answers for a card owner's complaint, and the amount may be deducted from its account if the complaint is proven. Salla's own service carries the chargeback, `core`, a reading.
 - **Three readings** name batch 7's rows: Salla's CM-ORD-006 and CM-PAY-011, and CM-PAY-013's note.
 - **SA-S-5052** is cited as `core` in A's CM-TRU-008, network protection across stores; SA-C-122 names A under `also`.
+
+
+## Batch 8: PAY, Payments, payouts and money (last of six)
+
+Concerns: SA-C-127, SA-C-128, SA-C-164, SA-C-172, SA-C-177, SA-C-210. No capability added: all six land in existing ones. Before landing each where no capability yet named it, I searched every domain with `caps` (terms: charity, خيرية, جمعية خيرية, الجمعيات الخيرية, donation, تبرع, التبرعات, nonprofit, selling policy, سياسة البيع, selling-policies, payment services contract, عقد خدمات الدفع; currency, عملة, العملة, عملات, العملات, payout currency, settlement currency; partial payment, partially paid, deposit, دفع جزئي, الدفع الجزئي, عربون). What it found and kept apart: A's CM-ACC-004 (a charity, جمعية خيرية, as the store's entity type), B's CM-SEL-007 (donations), E's CM-MKS-005 to -007 (store currency, prices in the buyer's currency, conversion). None is the same thing as a concern here.
+
+### Where each concern landed, and the grains
+
+- **SA-C-127 (charity stores' gateways) in CM-PAY-011,** `single`. Q1 split it from Salla Payments because Salla's help routes charity stores to gateways such as Moyasar and PayTabs. It has no link, route, API group, plan line or app category of its own: the payments namespace's text for charity stores (SA-S-0206, core, a reading: the dashboard's own text points them to the available gateways), an unreleased flag e-payment-charity (SA-S-3300, shows) and Moyasar's secret key (SA-S-5056, shows, as SA-S-0205 is). A store type doesn't set a capability, so charity stores are its scope, not a child. Its reason, Apple Pay for charities (SA-S-5057), is shows in CM-PAY-012, as batches 6 and 7 suggested; both capabilities are under CM-PAY-001, so the fit is clean. Moyasar is already CM-PAY-011's Salla slot filler (SA-S-0069), so SA-S-5056 adds none.
+- **SA-C-128 in CM-PAY-026** by `match:M-038`, and **SA-C-210 in CM-PAY-028** by `match:M-077`. Batches 5 and 6 had cited every statement of both; I added no evidence.
+- **SA-C-164 (the currency Salla Payments settles in) in CM-PAY-005,** payouts, by role (a reading): Shopify's payout currency, which Multi-Currency Payouts varies on some plans (SH-S-0365), and Salla's "يتم استقبال جميع المدفوعات بالريال السعودي" under its transfer cycle (SA-S-0067) are the currency of the service's payouts. Not a child: neither platform gives the currency a place of its own in what is held (SA-C-164's where is a Q1 gap, page not read; Shopify's payout currencies are help-centre titles in SH-C-069, SH-I-2238, SH-I-2240, SH-I-2243, still uncited). SA-S-0067 is core and a quality; SA-S-0135 and SA-S-0139, core in the cell under SA-C-112's keys, are shows under SA-C-164's. Not E's CM-MKS-007: no conversion or rate is stated, as E-anchor read it.
+- **SA-C-172 (the selling policy accepted when activating e-payments) in CM-PAY-002,** `single`, a reading: it is a condition of activating the platform's own service, so it lands in the service, as batch 6 landed Shopify's prohibited businesses (SH-C-173). Its keys SA-S-0068 and the sitemap entry SA-S-2212 are shows. I claim no join on role with SH-C-173: the policy's text isn't held (Q1's gaps: decides, responsible and reason, page not read), so what it sets can't be compared.
+- **SA-C-177 (the payment services contract) in CM-PAY-004,** by role, as SA-C-114's landing joined it: settlement "under the payment services contract" (SA-S-0081, SA-S-0088) against Shopify's processing and settlement by Payment Processors (SH-S-0082). Its fee sentence SA-S-0082 is shows in CM-PAY-007, a sibling under CM-PAY-002. CM-PAY-004's Salla cell stays not-stated: the contract's text, parties and licence are all Q1 gaps (page not read).
+
+### Joins on role (readings)
+
+- **SA-C-164 in CM-PAY-005:** SH-C-069/decides/SH-S-0365 against SA-C-164/decides/SA-S-0067.
+- **SA-C-177 in CM-PAY-004:** SH-C-064/where/SH-S-0082 against SA-C-177/decides/SA-S-0081 and SA-S-0088.
+
+### Homonyms
+
+- **"Policy" (سياسة):** Salla's selling policy for e-payments (سياسة البيع, CM-PAY-002) against the store's own policies for its buyers, and Salla's partner and app policies (SA-S-5054, CM-PAY-031). Not cited together.
+- **"Charity" (خيرية):** charity stores' payment gateways (CM-PAY-011) against a charity as the store's legal entity type (A's CM-ACC-004) and donations to a cause (B's CM-SEL-007).
+- **"Currency" (العملة):** the currency payments are settled and paid out in (CM-PAY-005) against the store's currency and the buyer's display currency (E's CM-MKS-005, CM-MKS-006).
+
+### Strained fits
+
+None of mine. The checker reads all six landings as clean.
+
+### Statements shared with other domains
+
+- SA-C-164 names E under also, and SA-C-172 names A. Neither is cited in E or A; A-woocommerce and E-anchor rule their pairs against them `apart`.
+
+### Rulings
+
+- **U-027 (SH-C-065, SH-C-066 and SH-C-067 against SA-C-177): `joined:CM-PAY-004`,** three rows, completing the candidate with batch 6's three against SA-C-114. They follow the cells; the candidate's question, which licensed entity holds Salla's funds, isn't answered by any statement held.
+- **U-028 (SH-C-069 against SA-C-164): `joined:CM-PAY-005`.** **SH-C-109 against SA-C-164: `apart`.** scope.tsv gives SH-C-109 domain E, which names C under also, but no capability here cites its keys. E-anchor's ruling on the same pair is also `apart`.
+- **U-038 (SH-C-173 against SA-C-172): `joined:CM-PAY-002`.** This follows the cells, as batch 6 foresaw. Whether the selling policy restricts the same businesses isn't settled, because its text isn't held.
+- **U-064 (SH-C-191 against SA-C-210): `joined:CM-PAY-028`;** **SH-C-196 against SA-C-210: `apart`,** because scope.tsv gives SH-C-196 domain A, with no also.
+
+### Left for later batches (TAX, SHP, RET)
+
+- **SA-C-145** (shipping apps' managed settlement), whose SA-S-5065 and SA-S-5066 CM-PAY-031 cites as core: SHP lands it, and should read its landing as strained if it lands outside CM-PAY-031 (batch 7).
+- **Apple Wallet order tracking** (SA-S-1995, SA-C-040's plan line), for SHP, from batch 2.
+
+### For the coordinator: PAY is complete
+
+**Earlier `single` landings that can now be written as Q1's matches:** every other side of these matches has landed.
+- SH-C-062 (CM-PAY-001) and SH-C-076 (CM-PAY-011) as `match:M-025` (SA-C-120 is in CM-PAY-011, and CM-PAY-001 is its parent).
+- SH-C-075 (CM-PAY-015) as `match:M-031` (SA-C-118).
+- SH-C-077 (CM-PAY-013) as `match:M-032` (SA-C-119, in the parent CM-PAY-012).
+- SH-C-079 (CM-PAY-016) as `match:M-033` (SA-C-115 and SA-C-116 are in its child CM-PAY-029, SA-C-117 in CM-PAY-030).
+- SH-C-084 (CM-PAY-020) as `match:M-034` (SA-C-123).
+- SH-C-091 to SH-C-097 (CM-PAY-026) as `match:M-038` (SA-C-128).
+- SH-C-191 (CM-PAY-028) as `match:M-077` (SA-C-210).
+
+M-028 (SH-C-070), M-030 (SH-C-072), M-035 (SH-C-085), M-036 (SH-C-086), M-037 (SH-C-064) and M-085 (SH-C-173) have no Salla side: they stay `single` for the WooCommerce part. Each of these landings' readings says its join "is single until" a later batch, and should be rewritten with it.
+
+**Readings my rows make out of date:**
+- **CM-PAY-026 Salla:** "SA-C-128 lands in a later batch (M-038)". **CM-PAY-028 Salla:** "SA-C-210 lands in a later batch (M-077)".
+- **CM-PAY-011 Salla:** it says SA-C-127's charity gateways (SA-S-0206) are left. They are now cited: core SA-S-0206; shows SA-S-3300 and SA-S-5056.
+- **CM-PAY-012 Salla:** it now also holds SA-S-5057 as shows, the reason charities find Apple Pay hard to activate.
+- **CM-PAY-005 Salla:** it now holds SA-S-0067 as core (all payments received in riyals) and as a quality, with SA-S-0135 and SA-S-0139 as shows under SA-C-164.
+- **CM-PAY-002 Salla:** it now holds SA-C-172's SA-S-0068 and SA-S-2212 as shows. Its sentence that the wallets in SA-C-110 "are left to the batch that lands them" was already out of date after batch 6.
+- **CM-PAY-004 Salla:** it now holds SA-C-177's keys for SA-S-0081 and SA-S-0088. **CM-PAY-007 Salla:** SA-C-177's key for SA-S-0082.
+- **Rulings U-023 (the row against SA-C-110) and U-027 (the row for SH-C-065 against SA-C-114):** each says a pair is left to a later batch. Both are now ruled.
+- **Already stale from earlier batches:**
+  - CM-PAY-001 Salla: "SA-C-110 itself is a later batch's to land".
+  - CM-PAY-013 Salla: "SA-C-119 lands in a Salla batch". It landed in CM-PAY-012.
+  - CM-PAY-006 Salla: it calls SA-C-124 "a later batch's concern". It is in CM-PAY-031.
+  - CM-PAY-022 Salla: "left to the Salla batches for CM-PAY-014".
+  - CM-PAY-016's note: "The Salla batches may add children". They are CM-PAY-029 and -030.
+
+**Still uncited:**
+- **Partial payments** (SA-C-040's released flag partial-payments, SA-S-3286, plans plus, pro and special), left to PAY by batch 2. No PAY concern of Salla's holds it, and no statement defines it: a search for partial, جزئي, جزئية, الدفع الجزئي, دفعة مقدمة and عربون finds only the flag and its inventory entry SA-I-2286. One flag isn't a capability (the dry run's rule), and its name alone doesn't show which capability it is: CM-PAY-008 (payment terms) and CM-PAY-020 (an order's payment transactions) are both possible. I leave it uncited for the coordinator, a gap.
+- **Shopify's payout-currency help titles** (SH-I-2238, SH-I-2240, SH-I-2243, SH-C-069's), which CM-PAY-005's Shopify cell could cite as shows.
+
+No earlier row was found wrong, and the checker prints no problem on earlier batches' rows.
+
+### Gaps
+
+- SA-C-127: responsible (page not read). SA-C-128: reason (page not read). SA-C-164: where, responsible and reason (page not read), and boundary (observation needed, the settlement statement of a store with Salla Payments). SA-C-172: decides, responsible and reason (page not read), so the selling policy's text isn't held. SA-C-177: all four placements (page not read), so the payment services contract's parties, licence and custody aren't held. SA-C-210: responsible (stated only in general terms), reason (page not read).
+- No statement held says what Salla's partial-payments flag does (above).
+
+### Qualities
+
+- CM-PAY-005 Salla: the currency Salla Payments receives payments in, the Saudi riyal (SA-S-0067).
+
+### Checker
+
+The batch check (`--concerns SA-C-127,SA-C-128,SA-C-164,SA-C-172,SA-C-177,SA-C-210 --areas PAY`) gives "0 problems, 42 flags for the reviewer", the same 42 that batch 7 answered. None is on this batch's rows. `uncited --domain C` lists none of this batch's concerns' statements. As the last batch of PAY, but not of the part (TAX, SHP and RET follow), I ran the batch check, not the whole-part check.

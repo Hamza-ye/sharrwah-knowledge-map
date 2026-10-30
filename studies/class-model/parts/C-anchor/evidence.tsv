@@ -1235,3 +1235,15 @@ CM-ORD-006	salla	shows	SA-C-122/where/SA-S-0104	fraud protection among the shopp
 CM-ORD-006	salla	shows	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system across its stores
 CM-ORD-006	salla	shows	SA-C-122/reason/SA-S-5053	to keep Salla a safe shopping environment for merchants and customers
 CM-PAY-009	salla	core	SA-C-122/responsible/SA-S-5051	the merchant answers for a card owner's complaint, and the transaction amount may be deducted from its account if the complaint is proven: Salla's service carries the chargeback (the coordinator, a reading, from batch 7's lead)
+CM-PAY-011	salla	core	SA-C-127/where/SA-S-0206	the payments namespace's text for charity stores: activate e-payment methods through the available gateways
+CM-PAY-011	salla	shows	SA-C-127/decides/SA-S-3300	flag e-payment-charity, not released, plans plus, pro, special
+CM-PAY-011	salla	shows	SA-C-127/boundary/SA-S-5056	connecting the gateway Moyasar needs the account's secret key and API settings
+CM-PAY-012	salla	shows	SA-C-127/reason/SA-S-5057	charities and digital stores find Apple Pay hard to activate, needing an Apple developer account
+CM-PAY-005	salla	core	SA-C-164/decides/SA-S-0067	with Salla's payment gateway active, all payments are received in Saudi riyals
+CM-PAY-005	salla	shows	SA-C-164/decides/SA-S-0135	the same sentence as SA-C-112's, under SA-C-164: the UAE payout account in dirhams
+CM-PAY-005	salla	shows	SA-C-164/decides/SA-S-0139	the same sentence as SA-C-112's, under SA-C-164: the Kuwait payout account in dinars
+CM-PAY-002	salla	shows	SA-C-172/boundary/SA-S-0068	agree to the selling policy when activating e-payments, under SA-C-172
+CM-PAY-002	salla	shows	SA-C-172/where/SA-S-2212	the selling policy's page in salla.com's sitemap, its text not held
+CM-PAY-004	salla	shows	SA-C-177/decides/SA-S-0081	payments settled and transferred under the payment services contract (UAE), under SA-C-177
+CM-PAY-004	salla	shows	SA-C-177/decides/SA-S-0088	payments settled and transferred under the payment services contract (Kuwait), under SA-C-177
+CM-PAY-007	salla	shows	SA-C-177/decides/SA-S-0082	e-payment fees calculated under the payment services contract (UAE), under SA-C-177
