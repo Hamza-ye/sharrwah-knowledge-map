@@ -130,7 +130,7 @@ def main():
         if len(ds) > 1:
             # a cell whose core rests on this statement alone: there the count hinges on it
             uses = sorted({f"{r['cap_id']} ({r['key']}{', its cell rests on it alone' if cell_own[(r['cap_id'], r['platform'])] == {s_} else ''})" for r in own_rows[s_]})
-            flags.append(f"one statement supports core or own-service in domains {', '.join(sorted(ds))}, so it counts in each: {'; '.join(uses)}")
+            flags.append("counted twice\t" + f"one statement supports core or own-service in domains {', '.join(sorted(ds))}, so it counts in each: {'; '.join(uses)}")
 
     # rulings again, on all parts of the domain
     uc = {u["candidate_id"]: u for u in rows(os.path.join(MODEL, "..", "concern-map", "unclear-matches.tsv"))}
@@ -186,7 +186,7 @@ def main():
             seen_pairs.setdefault(pair, []).append((r["part"], r["ruling"], verdict))
     for (cid, cs), rs in sorted(seen_pairs.items(), key=lambda x: x[0][0]):
         if len({v for _, _, v in rs}) > 1:
-            flags.append(f"{cid} ({' x '.join(sorted(cs))}) is ruled differently: " + "; ".join(f"{p} {ru}" for p, ru, _ in rs) + ": one answer at the review")
+            flags.append("ruled differently\t" + f"{cid} ({' x '.join(sorted(cs))}) is ruled differently: " + "; ".join(f"{p} {ru}" for p, ru, _ in rs) + ": one answer at the review")
 
     # possible joins across domains
     terms = {}
@@ -200,7 +200,7 @@ def main():
             if cdom.get(x) != cdom.get(y):
                 shared = terms[x] & terms[y]
                 if len(shared) >= 2:
-                    flags.append(f"{x} (domain {cdom.get(x)}) and {y} (domain {cdom.get(y)}) share terms {', '.join(sorted(shared))[:120]}: one capability?")
+                    flags.append("one capability?\t" + f"{x} (domain {cdom.get(x)}) and {y} (domain {cdom.get(y)}) share terms {', '.join(sorted(shared))[:120]}: one capability?")
 
     # a clean landing whose statement is cited in another tree of its domain under another concern's key (the
     # concern map holds one statement under several concerns): strained by the dry run's S1, unless the statement is
@@ -224,7 +224,7 @@ def main():
         far = sorted({f"{r['key']} in {r['cap_id']}" for s_ in held_ids.get(c, ()) for r in by_sid.get((lr["domain"], s_), [])
                       if r["key"].split("/")[0] != c and root(r["cap_id"]) != root(lr["cap_id"])})
         if far:
-            flags.append(f"{c} is clean in {lr['cap_id']}, and a statement it holds is cited in another tree under another concern's key: {'; '.join(far[:4])}{' …' if len(far) > 4 else ''}: strained, unless the statement is general")
+            flags.append("strained?\t" + f"{c} is clean in {lr['cap_id']}, and a statement it holds is cited in another tree under another concern's key: {'; '.join(far[:4])}{' …' if len(far) > 4 else ''}: strained, unless the statement is general")
 
     # outputs
     out = os.path.join(MODEL, "merged")
@@ -268,7 +268,12 @@ def main():
     for p_ in problems:
         print("PROBLEM", p_)
     for f_ in flags:
-        print("FLAG", f_)
+        print("FLAG", f_.split("\t", 1)[1])
+    # the flags, for the final review: each kind of question with its text
+    with open(os.path.join(out, "flags.tsv"), "w", encoding="utf-8") as fh:
+        fh.write("kind\tflag\n")
+        for f_ in flags:
+            fh.write(f_ + "\n")
     print(f"{len(problems)} problems, {len(flags)} flags")
     sys.exit(1 if problems else 0)
 
