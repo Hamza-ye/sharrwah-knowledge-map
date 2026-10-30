@@ -1,0 +1,270 @@
+"""Print what a part of the class's model reads, compactly, so no agent loads the concern map's files whole
+(`studies/class-model/briefs/B-extent.md`; PLAN.md, Stage 4).
+
+Usage: python3 -I method/class_slice.py COMMAND [options]
+
+Commands:
+  seed      [--domain D]                       the seed's areas, with Shopify's and Salla's own groupings
+  concerns  --platform P [--domain D] [--all] [--where]
+                                               a platform's concerns: id, name, platform_terms, split_note. With
+                                               --domain, the concerns scope.tsv gives that domain, then those of other
+                                               domains that name it under `also` (read-only). With --all, every
+                                               concern. --where adds each concern's `where` identifiers
+  statements --platform P --concerns ID[,ID...] [--placement PL] [--width N] [--full]
+                                               each statement of those concerns by its key, with its identifier, its
+                                               first N characters (200), its scope, and a flag where its note holds
+                                               inference
+  key       KEY [KEY...]                       statements whole, by key
+  search    --platform P --terms "a;b" [--placement PL] [--width N]
+                                               every statement of the platform whose identifier or text holds a term,
+                                               case and Arabic diacritics ignored, with its concern
+  matches   --concerns ID[,ID...]              Q1's matches and unclear candidates that hold any of those concerns
+  gaps      --platform P --concerns ID[,ID...] Q1's gaps on those concerns, with their kind
+  outscope  --platform P --terms "a;b"         the platform's inventory entries Q1 left out of scope, by term
+  model     --domain D [--platform P]          the domain's model so far, from its parts in studies/class-model/parts/:
+                                               each capability, its landed concerns, and each platform's cell (held,
+                                               terms, the placements its evidence supports)
+
+A statement's key is `concern_id/placement/first_cite_id`, unique on every platform's statements.tsv (`/` appears in no
+id or placement). Run with python3 -I from the repository's root.
+"""
+import argparse, csv, os, re, signal, sys, unicodedata
+
+signal.signal(signal.SIGPIPE, signal.SIG_DFL)
+csv.field_size_limit(10**9)
+
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CMAP = os.path.join(ROOT, "studies", "concern-map")
+MODEL = os.environ.get("CLASS_MODEL_DIR") or os.path.join(ROOT, "studies", "class-model")   # the variable is for tests
+PLATFORMS = ("shopify", "salla", "woocommerce", "zid", "bigcommerce")
+PREFIX = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
+PART_ORDER = ("anchor", "woocommerce", "zid", "bigcommerce", "backfill")
+PLACEMENTS = ("where", "decides", "responsible", "boundary", "reason")
+
+
+def rows(path):
+    if not os.path.exists(path):
+        return []
+    with open(path, encoding="utf-8", newline="") as f:
+        return list(csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE))
+
+
+def first_cite(cite_ids):
+    return re.split(r"[;\s]+", cite_ids.strip())[0]
+
+
+def key(r):
+    return f"{r['concern_id']}/{r['placement']}/{first_cite(r['cite_ids'])}"
+
+
+def platform_of(concern_id):
+    for p, x in PREFIX.items():
+        if concern_id.startswith(x + "-"):
+            return p
+    sys.exit(f"unknown platform prefix: {concern_id}")
+
+
+def fold(s):
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c) and c != "ـ")
+    return s.casefold()
+
+
+def ids(arg):
+    return [x for x in re.split(r"[,;\s]+", arg or "") if x]
+
+
+def clip(s, width):
+    s = " ".join(s.split())
+    return s if width <= 0 or len(s) <= width else s[:width] + " …"
+
+
+_cache = {}
+
+
+def statements(platform):
+    if platform not in _cache:
+        _cache[platform] = rows(os.path.join(CMAP, "platforms", platform, "statements.tsv"))
+    return _cache[platform]
+
+
+def concerns(platform):
+    return rows(os.path.join(CMAP, "platforms", platform, "concerns.tsv"))
+
+
+def scope_rows():
+    return rows(os.path.join(MODEL, "scope.tsv"))
+
+
+def show_statement(r, width, full=False):
+    flag = "  [note: inference]" if re.search(r"\binfer", r.get("note", ""), re.I) else ""
+    scope = f"  [scope: {r['scope']}]" if r.get("scope", "").strip() else ""
+    text = " ".join(r["statement"].split()) if full else clip(r["statement"], width)
+    print(f"{key(r)}\t{clip(r['identifier'], 120)}\t{text}{scope}{flag}")
+    if full and r.get("note", "").strip():
+        print(f"    note: {' '.join(r['note'].split())}")
+
+
+def cmd_seed(a):
+    for r in rows(os.path.join(MODEL, "seed", "km-areas.tsv")):
+        if a.domain and not r["domain"].startswith(a.domain + " "):
+            continue
+        print(f"{r['domain']}\t{r['area_id']}\t{r['area']}\n    Shopify: {r['shopify_own_groupings']}\n    Salla: {r['salla_own_groupings']}")
+
+
+def cmd_concerns(a):
+    cs = concerns(a.platform)
+    by_id = {c["concern_id"]: c for c in cs}
+    where = {}
+    if a.where:
+        for r in statements(a.platform):
+            if r["placement"] == "where":
+                where.setdefault(r["concern_id"], []).append(clip(r["identifier"], 80))
+
+    def show(c, tag=""):
+        extra = f"  split: {clip(c['split_note'], 160)}" if c.get("split_note", "").strip() else ""
+        print(f"{c['concern_id']}{tag}\t{c['concern']}\t{clip(c['platform_terms'], 200)}{extra}")
+        if a.where:
+            print(f"    where: {'; '.join(where.get(c['concern_id'], [])) or '(none)'}")
+
+    if a.all or not a.domain:
+        for c in cs:
+            show(c)
+        return
+    sc = [r for r in scope_rows() if r["platform"] == a.platform]
+    if not sc:
+        sys.exit("studies/class-model/scope.tsv holds no rows for this platform yet")
+    own = [r["concern_id"] for r in sc if r["domain"] == a.domain]
+    also = [r for r in sc if r["domain"] != a.domain and a.domain in ids(r.get("also", ""))]
+    print(f"# {len(own)} concerns of domain {a.domain}")
+    for cid in own:
+        show(by_id[cid])
+    print(f"# {len(also)} concerns of other domains that name {a.domain} under `also` (read-only: cite, never land)")
+    for r in also:
+        show(by_id[r["concern_id"]], f" (domain {r['domain']})")
+
+
+def cmd_statements(a):
+    want = set(ids(a.concerns))
+    n = 0
+    for r in statements(a.platform):
+        if r["concern_id"] in want and (not a.placement or r["placement"] == a.placement):
+            show_statement(r, a.width, a.full)
+            n += 1
+    print(f"# {n} statements")
+
+
+def cmd_key(a):
+    for k in a.keys:
+        p = platform_of(k)
+        hit = [r for r in statements(p) if key(r) == k]
+        if not hit:
+            print(f"{k}\tNOT FOUND")
+        for r in hit:
+            show_statement(r, 0, True)
+
+
+def cmd_search(a):
+    terms = [fold(t) for t in a.terms.split(";") if t.strip()]
+    n = 0
+    for r in statements(a.platform):
+        if a.placement and r["placement"] != a.placement:
+            continue
+        hay = fold(r["identifier"] + " " + r["statement"])
+        if any(t in hay for t in terms):
+            show_statement(r, a.width)
+            n += 1
+    print(f"# {n} statements match")
+
+
+def cmd_matches(a):
+    want = set(ids(a.concerns))
+    for r in rows(os.path.join(CMAP, "matches.tsv")):
+        cs = set(ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"]))
+        if cs & want:
+            print(f"{r['match_id']}\tshopify: {r['shopify']}\tsalla: {r['salla']}\twoocommerce: {r['woocommerce']}"
+                  f"\n    basis: {clip(r['basis'], 300)}\n    granularity: {clip(r['granularity'], 300)}\n    note: {clip(r['note'], 300)}")
+    for r in rows(os.path.join(CMAP, "unclear-matches.tsv")):
+        cs = set(ids(r["shopify"]) + ids(r["salla"]) + ids(r["woocommerce"]))
+        if cs & want:
+            print(f"{r['candidate_id']}\tshopify: {r['shopify']}\tsalla: {r['salla']}\twoocommerce: {r['woocommerce']}"
+                  f"\n    why_unclear: {clip(r['why_unclear'], 300)}\n    what_would_settle_it: {clip(r['what_would_settle_it'], 300)}")
+    print("# Q1's matches and unclear candidates cover Shopify, Salla and WooCommerce only; Zid and BigCommerce were never matched")
+
+
+def cmd_gaps(a):
+    want = set(ids(a.concerns))
+    for r in rows(os.path.join(CMAP, "platforms", a.platform, "gaps.tsv")):
+        if r["concern_id"] in want:
+            print(f"{r['concern_id']}/{r['placement']}\t{r['gap_kind']}\t{clip(r['what_would_show_it'], 200)}")
+
+
+def cmd_outscope(a):
+    terms = [fold(t) for t in a.terms.split(";") if t.strip()]
+    for r in rows(os.path.join(CMAP, "map", "out-of-scope.tsv")):
+        if r.get("platform") != a.platform:
+            continue
+        if any(t in fold(" ".join(r.values())) for t in terms):
+            print("\t".join(clip(v, 160) for v in r.values()))
+
+
+def part_dirs(domain):
+    base = os.path.join(MODEL, "parts")
+    out = []
+    for name in PART_ORDER:
+        d = os.path.join(base, f"{domain}-{name}")
+        if os.path.isdir(d):
+            out.append(d)
+    return out
+
+
+def cmd_model(a):
+    caps, land, cells, ev = {}, {}, {}, {}
+    for d in part_dirs(a.domain):
+        for r in rows(os.path.join(d, "capabilities.tsv")):
+            caps[r["cap_id"]] = r
+        for r in rows(os.path.join(d, "landings.tsv")):
+            land.setdefault(r["cap_id"], []).append(f"{r['concern_id']} ({r['join']})")
+        for r in rows(os.path.join(d, "cells.tsv")):
+            cells[r["cap_id"], r["platform"]] = r
+        for r in rows(os.path.join(d, "evidence.tsv")):
+            if r["supports"] != "shows":
+                ev.setdefault((r["cap_id"], r["platform"]), set()).add(r["supports"])
+    if not caps:
+        sys.exit(f"no parts of domain {a.domain} yet")
+    for cid in sorted(caps):
+        c = caps[cid]
+        par = f"  parent {c['parent']}" if c.get("parent", "").strip() else ""
+        print(f"{cid}\t{c['area']}\t{c['capability']}{par}\n    landed: {', '.join(land.get(cid, [])) or '(none)'}")
+        for p in PLATFORMS:
+            if a.platform and p != a.platform:
+                continue
+            cell = cells.get((cid, p))
+            if cell:
+                placed = ";".join(sorted(ev.get((cid, p), []))) or ("not-stated" if cell["held"] == "statements" else "")
+                print(f"    {p}: {cell['held']}  terms: {clip(cell['terms'], 120)}  placed: {placed}")
+
+
+def main():
+    ap = argparse.ArgumentParser(description=__doc__.split("\n")[0])
+    sub = ap.add_subparsers(dest="cmd", required=True)
+    s = sub.add_parser("seed"); s.add_argument("--domain")
+    s = sub.add_parser("concerns"); s.add_argument("--platform", required=True, choices=PLATFORMS)
+    s.add_argument("--domain"); s.add_argument("--all", action="store_true"); s.add_argument("--where", action="store_true")
+    s = sub.add_parser("statements"); s.add_argument("--platform", required=True, choices=PLATFORMS)
+    s.add_argument("--concerns", required=True); s.add_argument("--placement", choices=PLACEMENTS)
+    s.add_argument("--width", type=int, default=200); s.add_argument("--full", action="store_true")
+    s = sub.add_parser("key"); s.add_argument("keys", nargs="+")
+    s = sub.add_parser("search"); s.add_argument("--platform", required=True, choices=PLATFORMS)
+    s.add_argument("--terms", required=True); s.add_argument("--placement", choices=PLACEMENTS)
+    s.add_argument("--width", type=int, default=160)
+    s = sub.add_parser("matches"); s.add_argument("--concerns", required=True)
+    s = sub.add_parser("gaps"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--concerns", required=True)
+    s = sub.add_parser("outscope"); s.add_argument("--platform", required=True, choices=PLATFORMS); s.add_argument("--terms", required=True)
+    s = sub.add_parser("model"); s.add_argument("--domain", required=True); s.add_argument("--platform", choices=PLATFORMS)
+    a = ap.parse_args()
+    globals()["cmd_" + a.cmd](a)
+
+
+if __name__ == "__main__":
+    main()

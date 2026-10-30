@@ -2,78 +2,129 @@
 
 **What this step is for.** A product map of what the five reference platforms establish: Shopify, Salla, Zid, BigCommerce and WooCommerce. It lists their capabilities, and for each, what each platform shows and where it puts it. It records what the platforms do, in their own words. It decides nothing about Sharrwah, ranks nothing, and drafts no design.
 
-**How it is built, in two passes.**
-1. **The anchor: Shopify and Salla, one domain per part.** Shopify and Salla are the deepest evidence: 3,005 and 2,560 statements, read in full. The structure follows their own groupings.
-2. **The mapping: one platform per part,** WooCommerce first, then Zid, then BigCommerce. Each is mapped onto the anchor's capabilities. Where a platform shows something the anchor doesn't, it adds a capability, so the model stays the union of the class.
+**How it is built.** This is exemplar-based domain analysis: the model is built from representative systems, then checked and extended against others.
+1. **The scope:** one part assigns every concern of the five platforms to one domain.
+2. **Per domain,** in this order:
+   - **the anchor:** Shopify and Salla together, the two platforms with the most statements (3,005 and 2,560). The structure follows their own groupings;
+   - **the mapping:** WooCommerce, then Zid, then BigCommerce, one platform per part, each mapped onto the domain's model so far. Where a platform shows something the model doesn't, it adds a capability, so the model stays the union of the class;
+   - **the back-fill:** the cells still missing, for every capability and every platform already mapped in the domain.
 
-This is exemplar-based domain analysis: the model is built from representative systems, then checked and extended against others.
+You are one agent with one part. Your message names it: `scope`, or `<domain>-anchor`, `<domain>-woocommerce`, `<domain>-zid`, `<domain>-bigcommerce` or `<domain>-backfill`, where the domain is a letter from A to G. The coordinator checks your rows and merges the parts. An agent that made none of them reviews them.
 
-You are one agent with one part. Your message names the pass and your domain or platform. The coordinator checks your rows and merges the parts. An agent that made none of them reviews them.
+## What the concern map holds
 
-**Read:**
-- this brief;
-- `studies/class-model/seed/km-areas.tsv`, for the areas and their Shopify and Salla labels. Leave out the seed's questions;
-- Q1's concern map, `studies/concern-map/`:
-  - **in the anchor pass:** Shopify's and Salla's `concerns.tsv`, whole; take the concerns that belong to your domain;
-  - **in the mapping pass:** your platform's `concerns.tsv`, whole, and the anchor's merged `studies/class-model/capabilities.tsv` and `cells.tsv`;
-  - **for the concerns you take,** the platform's `statements.tsv` rows under every placement, its `inventory.tsv` entries, and `citations.tsv` for the commit each source was read at;
-  - `matches.tsv` and `unclear-matches.tsv`, with their `note` columns;
-  - each platform's `notes.md`, only where it says how complete one of its lists is;
-- the structures Q1's citations name, at the commit `citations.tsv` gives, where a statement needs more context.
+Q1's concern map, in `studies/concern-map/`, is your evidence. For each platform, in `platforms/<platform>/`:
+- `concerns.tsv`: the platform's concerns, each with its own terms (`platform_terms`);
+- `statements.tsv`: the platform's own words, verbatim, each under one of five placements, the question it answers:
+  - **where:** where the platform puts the concern in its own organization: an admin section and route, an API group, an app or extension target, a separate host or product, a code path;
+  - **decides:** what turns it on or off, limits it or sets its value: eligibility, entitlements, plan lines, settings, staff permissions;
+  - **responsible:** what the terms, policies and legal-entity records state;
+  - **boundary:** how it meets the rest: API resources, webhook topics, access scopes, extension targets, events;
+  - **reason:** a reason the platform states.
 
-## What to produce
+  Each statement has a scope where the platform states one, such as a plan or a country. Q1's rule 5: "No inference goes into a statement. A note may hold inference marked as such, and it never counts";
+- `gaps.tsv`: a placement with no statement, with its kind (`page not read`, `observation needed`, `searched, not found`, `stated only in general terms`).
 
-**In the anchor pass: capabilities.** A capability is something a store or the platform can have or not have. Build them from Shopify's and Salla's concerns in your domain.
-- **Join** concerns that are the same thing on both platforms, by their own terms, identifiers or definitions. Q1's matches are such joins.
-- **Where the two platforms' definitions show the same role under different names,** you may join them. Mark the join as a reading, and cite both definitions.
-- **Where they cut at different grains,** you choose the capabilities, using `parent` where one holds others. Say in your notes why.
-- **The area:** each capability gets one area, the one where the two platforms put it. Each platform's own place goes in its cell.
+Beside them: `matches.tsv`, Q1's matches, and `unclear-matches.tsv`, its unclear candidates (columns `why_unclear` and `what_would_settle_it`). Both cover Shopify, Salla and WooCommerce only. Zid and BigCommerce were never matched.
 
-**In the mapping pass: each of your platform's concerns lands once.** Either:
-- in an anchor capability, where it is the same thing by terms, identifiers or definitions. A join on role is a reading, citing both definitions; or
-- in a new capability that only your platform shows, with its area.
+**A statement's key** is `concern_id/placement/first_cite_id`, such as `SH-C-025/where/SH-S-5170`. You cite every statement by its key.
 
-Where a fit is strained, list it in your notes, so the reviewer can split it.
+**Read only through the script.** Never load the concern map's files whole. `method/class_slice.py` prints what you need (`python3 -I method/class_slice.py --help`):
+- `seed --domain D`: the domain's areas, with Shopify's and Salla's own groupings, from `studies/class-model/seed/km-areas.tsv`. They are leads for the area, not evidence. Leave out the seed's questions;
+- `concerns --platform P --domain D`: your concerns, then those of other domains that name yours under `also`, which you may cite but never land. Add `--where` for each concern's `where` identifiers;
+- `statements --platform P --concerns ...`: each statement by key, with its identifier, its first 200 characters, its scope, and a flag where its note holds inference. Use `key KEY ...` for statements whole;
+- `search --platform P --terms "a;b"`: every statement of the platform holding a term, in any concern;
+- `matches --concerns ...` and `gaps --platform P --concerns ...`;
+- `outscope --platform P --terms ...`: inventory entries Q1 left unplaced, such as store limits, cited by their inventory id;
+- `model --domain D`: the domain's model so far.
 
-**In both passes:** staff permissions, webhook topics, access scopes and plan lines are evidence for a capability, not capabilities themselves.
+**What you cite.** Only the concern map's statements, by key, and, for a quality only, an unplaced inventory entry by its id. Context read beyond the statements, in the structures they cite, informs a reading and is never cited. A statement you need that isn't held goes in your notes as a gap. The copies behind the citations are in the evidence repositories at the commits `citations.tsv` gives, in this repository's capture runs (`evidence/product-class/runs/*/manifest.tsv`, by URL), and in the WooCommerce release at `/home/user/woocommerce-release/11.2.1`.
 
-**Cells:** one row per capability and platform, for your pass's platforms.
-- **What the platform shows, in its own words:** its terms, and where it puts the capability (an admin section, an API group, an app category, a separate product), with each statement's concern id, cite id and identifier.
-- **Placement,** as your reading of those statements:
-  - `core`: part of the platform itself;
-  - `own service`: a separate line of the platform's company, such as a payments, shipping or buyer app of its own;
-  - `extension point`: where third parties plug in;
-  - `outside`: the platform says another party does it.
+## The scope part
 
-  More than one may apply.
-- **The statements' scope, as stated:** a country, a plan, a store, a role.
-- **Q1 holds nothing for this platform here:** say that in so many words. It never means the platform lacks it. A complete list showing it missing is named, with where that list is described as complete.
+Assign every concern of the five platforms (652) to one domain, A to G, in `studies/class-model/scope.tsv`. The domain of a concern is what the concern is about. Use its name, its `platform_terms` and its `where` statements (`concerns --platform P --all --where`), with the seed's domains and areas as leads (`seed`).
+- **One domain per concern.** A concern about several domains goes to the domain of its main subject. List the others under `also`; their parts may cite its statements.
+- **A Q1 match keeps its concerns in one domain.** Where one of them is mostly about another domain, it goes there, and its `reason` names the match.
+- **Domain H takes nothing.** It is beyond the references.
+- **The channel doesn't set the domain.** A concern delivered through an app store is in the domain of what the apps do. Domain F holds the app platform itself, its APIs, webhooks, developer tooling and partners.
+
+Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-separated, or empty) · `reason` (one line: the terms or `where` place that decide it, and any match it splits). Each row is a reading. Write as you go, platform by platform.
+
+## The anchor part
+
+**Take** Shopify's and Salla's concerns that `scope.tsv` gives your domain. Read their statements under every placement, their gaps, and the Q1 matches and unclear candidates that hold them.
+
+**Build capabilities.** A capability is something a store or the platform can have or not have.
+- **Join** concerns that are the same thing on both platforms: by a Q1 match, by their own terms, by the same identifiers, or by the same definition, quoted from both.
+- **A shared term joins only where** the cited definitions or identifiers show the same object. The same word for different things stays apart, and goes in your notes with both sides' keys. Q1's matching found six such cases (`studies/concern-map/matching-notes.md`, its list "The same word naming different things").
+- **Where the two platforms' definitions show the same role under different names,** you may join them on role. That join is a reading: say why in `reading`, and cite both sides' keys.
+- **Where they cut at different grains,** you choose the capabilities, using `parent` where one holds others, and say why in your notes. A Q1 match with several concerns on one side is a difference of grain, not one capability.
+- **Each permission, webhook topic, access scope or plan line** is evidence for a capability. The platform's permission system, webhooks, scopes and plans are themselves capabilities, in their own domains.
+- **The name** uses both platforms' terms, or a neutral term that names both.
+- **The area** is the `area_id` of your domain that the capability is about. The seed's groupings are leads. The channel never sets it: an app-store category doesn't make a capability APP's. A capability shown under one market's scope stays, with its scope.
+- **Numbering:** `CM-<area>-nnn`, from 001 in each area.
+
+**Land every concern you take exactly once,** in `landings.tsv`: in the capability it is, or in the parent where it is coarser than the capabilities. A cell may cite statements of a concern landed elsewhere. A concern that belongs to another domain lands as `moved:<domain>`, with the reason, and the coordinator moves it.
+
+**Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched.
+
+**Rule on every unclear candidate** that holds a concern you land, in `rulings.tsv`: joined, as a capability, or kept apart, with the basis and keys.
+
+## The mapping parts
+
+**Take** your platform's concerns that `scope.tsv` gives the domain, and read the domain's model so far (`model --domain D`): the anchor and every earlier mapping part.
+- **Land each concern once:** in a capability of the model so far, where it is the same thing by a Q1 match (WooCommerce only), terms, identifiers or definition (a join on role is a reading, citing both sides); or in a new capability that only your platform shows so far, numbered past the model's highest in its area. Where a fit is strained, mark it `strained`, and say what doesn't fit, so the reviewer can split it.
+- **Write your platform's cell for every capability of the model so far,** and for your new ones: its evidence, or `none-held` with the terms searched.
+- **WooCommerce** also rules on the unclear candidates that hold its concerns. Zid and BigCommerce have none.
+
+## The back-fill part
+
+For every capability of the domain and every platform already mapped in it that has no cell, write the cell: its evidence, found by searching the platform's statements, or `none-held` with the terms searched. You add no capabilities and land no concerns.
+
+## Cells and evidence
+
+**A cell** is one capability and one platform: `held` is `statements` where the platform's statements show the capability, or `none-held`. `none-held` means only that the concern map holds nothing found by the terms searched. It never means the platform lacks the capability.
+
+**Evidence:** one row per statement a cell cites, with what the statement `supports`. Every value but `shows` is a reading of the statement, and the cell's `reading` says why:
+- `core`: the platform itself does it for the merchant. The statement names its own admin section, setting, route or built-in behaviour, a plan line that includes it, or its own API for its own feature;
+- `own-service`: the statement names the platform's company, or a company of its group, as the maker or provider of a separate product, app, extension or service that does it, whatever channel sells it, its own marketplace included;
+- `extension-point`: the statement shows third parties doing it through something the platform provides: an app-store or marketplace category, an extension target, a provider interface, or an API whose statements say apps or partners use it to do the work;
+- `outside`: the statement names a third party, not the merchant, the buyer or the platform's company, as the one that does it, with no interface of the platform named;
+- `shows`: the statement shows the platform has the capability, or gives its terms, and supports no placement. A statement that makes the merchant or buyer responsible is `shows`, never `outside`.
+
+More than one value may apply to a cell, each on its own statements. A cell whose statements support none of the four placements is `not stated`: the script derives it. Why the four values: they are what the coordinator's count of the class reads. They come back as marked readings, each resting on cited statements, not as category labels in place of the platforms' words, which is why Q1 dropped them on 11 October.
+
+**You don't write** a cell's places, scopes or gaps. The checker derives them from your keys into `derived.tsv`, so a statement's scope stays its own.
 
 **Qualities and slot fillers,** each in its own file:
-- **Qualities:** a limit, a certification, an uptime or a data location a platform states.
-- **Slot fillers:** a provider, partner or law a platform names as filling a slot. These are each market's setup, not the platform's extent.
+- **a quality:** a limit, a certification, an uptime or a data location a platform states, on the capability it bears on;
+- **a slot filler:** a third party or a law that a statement names as doing the capability, or as setting its terms. It is each market's setup, not the platform's extent. Its market comes from the statement's scope. You don't judge whether the capability is a slot: the coordinator computes the kind.
 
 ## Rules
 
-- **Evidence:** every cell cites Q1's ids, and every reading is marked. No claim goes beyond what a cited statement says.
+- **Evidence:** every cell, landing, ruling and side row cites keys, and every reading is marked. No claim goes beyond what a cited statement says. A note's inference never counts.
 - **No market's facts** decide a capability or its area. A statement scoped to one market keeps that scope.
-- **Every concern you take** appears in a cell. In the anchor pass, a concern you look at and leave for another domain is listed, with that domain, in your notes.
-- **Your own files only:** write only your part's files, make no commits, and run Python with `python3 -I`.
+- **Your own files only:** write only your part's files, write them as you go, make no commits, and run Python with `python3 -I`.
+- **Check before you report:** run `python3 -I method/check_class_part.py <your part's folder>` (the scope part: `studies/class-model/scope.tsv`), and fix every problem it prints. Its flags are for the reviewer: answer each one you can in your notes.
 
-## Output, in `studies/class-model/parts/<part>/`
+## Output
 
-Tab-separated files, with a header row and no quoting:
-- `capabilities.tsv`: `cap_id` (`CM-<area>-nnn`; in the mapping pass, new ones only) · `area` · `capability` · `parent` · `join` (`match`, `terms`, `role, a reading`, or `single`) · `note`;
-- `cells.tsv`: `cap_id` · `platform` · `concern_ids` · `terms` · `where` (its own words, with ids) · `placement` · `scope` · `evidence` (cite ids and identifiers) · `reading` (what in the cell is a reading);
-- `qualities.tsv`: `area` · `platform` · `quality` · `value` · `evidence`;
-- `slot-fillers.tsv`: `cap_id` · `platform` · `filler` · `market` · `evidence`;
-- `notes.md`: how you cut or placed, every join on role, strained fits, concerns left for other domains, and problems with the brief or the evidence.
+`studies/class-model/scope.tsv` for the scope part. Every other part writes in `studies/class-model/parts/<part>/`. Tab-separated files, with a header row and no quoting. Lists are `;`-separated, with no spaces around the `;`.
+- `capabilities.tsv`: `cap_id` · `area` (its `area_id`) · `capability` · `parent` (a `cap_id` of the same domain, or empty) · `note`;
+- `landings.tsv`: `platform` · `concern_id` · `cap_id` (or `moved:<domain>`) · `join` (`match:<M-id>`, `terms`, `identifier`, `definition`, `role` or `single`) · `join_evidence` (keys of both sides, for every join but `match` and `single`) · `fit` (`clean` or `strained`) · `reading`;
+- `cells.tsv`: `cap_id` · `platform` · `held` (`statements` or `none-held`) · `terms` (the platform's own words for it, each found in a cited statement or its concern's `platform_terms`) · `searched` (for `none-held`: the terms searched, in each language) · `reading`;
+- `evidence.tsv`: `cap_id` · `platform` · `supports` (`core`, `own-service`, `extension-point`, `outside` or `shows`) · `key` · `why` (a few words: what in the statement supports it);
+- `qualities.tsv`: `cap_id` · `platform` · `quality` · `value` (the platform's words) · `key` (a statement key, or an inventory id);
+- `slot-fillers.tsv`: `cap_id` · `platform` · `filler` · `key`;
+- `rulings.tsv`: `candidate_id` · `ruling` (`joined:<cap_id>` or `apart`) · `basis` · `keys`;
+- `notes.md`: how you cut and why, every grain you chose, joins on role, homonyms, strained fits, the concerns you read under `also`, what the checker flagged, and problems with the brief or the evidence.
 
-**Size:** your message gives it.
+**Size.** The scope part prints 652 concerns with their `where` identifiers. An anchor part takes about 10 to 25 concerns per platform, with about 300 to 400 statements each; a mapping part about 5 to 15 concerns. Print statements per concern, write your rows as you go, and keep your context small.
 
 **Report:**
 - capabilities per area;
-- in the mapping pass, how many of your concerns joined anchor capabilities, and how many made new ones;
-- the joins on role;
+- how many concerns joined existing capabilities, and how many made new ones;
+- the joins on role, and the homonyms kept apart;
 - strained fits;
+- what the checker flagged that you couldn't answer;
 - problems.

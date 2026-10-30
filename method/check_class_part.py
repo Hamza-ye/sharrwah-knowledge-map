@@ -1,0 +1,406 @@
+"""Check one part of the class's model against its brief (`studies/class-model/briefs/B-extent.md`), and derive what the
+part doesn't write: each cell's places, scopes and gaps, from its statement keys.
+
+Usage: python3 -I method/check_class_part.py studies/class-model/scope.tsv
+       python3 -I method/check_class_part.py studies/class-model/parts/<domain>-<anchor|woocommerce|zid|bigcommerce|backfill>
+
+A part's folder is checked against the domain's model so far: the parts of the same domain that come before it, in the
+order anchor, woocommerce, zid, bigcommerce, backfill. Prints each problem, then flags for the reviewer, which are not
+failures. Writes the part's `derived.tsv`: for each cell, the placements its evidence supports, its `where` identifiers,
+the scopes of its statements and the gaps on its concerns. Exits 1 if any problem is found.
+"""
+import csv, os, re, sys, unicodedata
+
+csv.field_size_limit(10**9)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from class_slice import (CMAP, MODEL, PLATFORMS, PREFIX, PART_ORDER, rows, key, fold, ids, platform_of,
+                         statements, concerns)
+
+HEADS = {
+    "capabilities.tsv": ["cap_id", "area", "capability", "parent", "note"],
+    "landings.tsv": ["platform", "concern_id", "cap_id", "join", "join_evidence", "fit", "reading"],
+    "cells.tsv": ["cap_id", "platform", "held", "terms", "searched", "reading"],
+    "evidence.tsv": ["cap_id", "platform", "supports", "key", "why"],
+    "qualities.tsv": ["cap_id", "platform", "quality", "value", "key"],
+    "slot-fillers.tsv": ["cap_id", "platform", "filler", "key"],
+    "rulings.tsv": ["candidate_id", "ruling", "basis", "keys"],
+}
+SCOPE_HEAD = ["platform", "concern_id", "domain", "also", "reason"]
+DOMAINS = "ABCDEFG"
+HELD = {"statements", "none-held"}
+SUPPORTS = {"core", "own-service", "extension-point", "outside", "shows"}
+PLACED = SUPPORTS - {"shows"}
+FIT = {"clean", "strained"}
+COMPANY = {"shopify": r"shopify", "salla": r"salla|سلة", "woocommerce": r"woo|automattic",
+           "zid": r"\bzid\b|زد", "bigcommerce": r"bigcommerce"}
+problems, flags = [], []
+
+
+def problem(m):
+    problems.append(m)
+
+
+def flag(m):
+    flags.append(m)
+
+
+def table(path, head):
+    if not os.path.exists(path):
+        problem(f"{os.path.basename(path)}: missing")
+        return []
+    with open(path, encoding="utf-8", newline="") as f:
+        raw = list(csv.reader(f, delimiter="\t", quoting=csv.QUOTE_NONE))
+    if not raw or raw[0] != head:
+        problem(f"{os.path.basename(path)}: header must be {' · '.join(head)}")
+        return []
+    out = []
+    for n, r in enumerate(raw[1:], 2):
+        if not any(c.strip() for c in r):
+            continue
+        if len(r) != len(head):
+            problem(f"{os.path.basename(path)} line {n}: {len(r)} fields, header has {len(head)}")
+            continue
+        out.append(dict(zip(head, r)) | {"_line": n})
+    return out
+
+
+def areas_of(domain):
+    return {r["area_id"] for r in rows(os.path.join(MODEL, "seed", "km-areas.tsv")) if r["domain"].startswith(domain + " ")}
+
+
+def all_concerns():
+    return {p: {c["concern_id"]: c for c in concerns(p)} for p in PLATFORMS}
+
+
+def stmt_index():
+    return {p: {key(r): r for r in statements(p)} for p in PLATFORMS}
+
+
+def check_scope(path):
+    sc = table(path, SCOPE_HEAD)
+    cons = all_concerns()
+    seen = {}
+    for r in sc:
+        p, c = r["platform"], r["concern_id"]
+        where = f"scope.tsv line {r['_line']}"
+        if p not in PLATFORMS:
+            problem(f"{where}: unknown platform {p}"); continue
+        if c not in cons[p]:
+            problem(f"{where}: {c} is not a concern of {p}")
+        if c in seen:
+            problem(f"{where}: {c} already on line {seen[c]}")
+        seen[c] = r["_line"]
+        if r["domain"] not in DOMAINS or len(r["domain"]) != 1:
+            problem(f"{where}: domain must be one of {', '.join(DOMAINS)}, not {r['domain']!r}")
+        also = ids(r["also"])
+        if any(d not in DOMAINS or d == r["domain"] for d in also):
+            problem(f"{where}: also must list other domains of A to G, `;`-separated")
+        if not r["reason"].strip():
+            problem(f"{where}: no reason")
+    for p in PLATFORMS:
+        for c in cons[p]:
+            if c not in seen:
+                problem(f"scope.tsv: {c} has no row")
+    dom = {r["concern_id"]: r["domain"] for r in sc}
+    reason = {r["concern_id"]: r["reason"] for r in sc}
+    for m in rows(os.path.join(CMAP, "matches.tsv")):
+        cs = [c for col in ("shopify", "salla", "woocommerce") for c in ids(m[col]) if c in dom]
+        ds = [dom[c] for c in cs]
+        if len(set(ds)) > 1:
+            top = max(set(ds), key=ds.count)
+            tie = ds.count(top) * 2 <= len(ds)
+            for c in cs:
+                if (tie or dom[c] != top) and m["match_id"] not in reason[c]:
+                    problem(f"scope.tsv: {c} is in domain {dom[c]}, apart from {m['match_id']}'s other concerns, and its reason doesn't name {m['match_id']}")
+    counts = {d: sum(1 for r in sc if r["domain"] == d) for d in DOMAINS}
+    print("concerns per domain: " + ", ".join(f"{d} {n}" for d, n in counts.items()))
+
+
+def load_part(d):
+    return {f: table(os.path.join(d, f), h) for f, h in HEADS.items()}
+
+
+def check_part(d):
+    name = os.path.basename(os.path.normpath(d))
+    m = re.fullmatch(r"([A-G])-(anchor|woocommerce|zid|bigcommerce|backfill)", name)
+    if not m:
+        sys.exit(f"{name}: a part is named <domain>-<anchor|woocommerce|zid|bigcommerce|backfill>")
+    domain, kind = m.groups()
+    order = PART_ORDER.index(kind)
+    before = [os.path.join(os.path.dirname(os.path.normpath(d)), f"{domain}-{k}") for k in PART_ORDER[:order]]
+    before = [b for b in before if os.path.isdir(b)]
+    if kind != "anchor" and not before:
+        problem(f"{name}: no earlier part of domain {domain} to map onto")
+    if not os.path.exists(os.path.join(d, "notes.md")):
+        problem("notes.md: missing")
+    prior = [load_part(b) for b in before]
+    part = load_part(d)
+    cons, stm = all_concerns(), stmt_index()
+    sc = rows(os.path.join(MODEL, "scope.tsv"))
+    if not sc:
+        problem("studies/class-model/scope.tsv: missing or empty")
+    dom = {r["concern_id"]: r for r in sc}
+    areas = areas_of(domain)
+
+    # the part's platforms, and the platforms already done in this domain
+    if kind == "anchor":
+        plats = ["shopify", "salla"]
+    elif kind == "backfill":
+        plats = []
+    else:
+        plats = [kind]
+    done = {"shopify", "salla"} | {k for k in PART_ORDER[1:order] if k != "backfill"
+                                   and os.path.isdir(os.path.join(os.path.dirname(os.path.normpath(d)), f"{domain}-{k}"))}
+
+    caps_prior = {r["cap_id"]: r for p in prior for r in p["capabilities.tsv"]}
+    caps = dict(caps_prior)
+    for r in part["capabilities.tsv"]:
+        w = f"capabilities.tsv line {r['_line']}"
+        if kind == "backfill":
+            problem(f"{w}: a back-fill part adds no capabilities"); continue
+        mm = re.fullmatch(r"CM-([A-Z]{3})-(\d{3})", r["cap_id"])
+        if not mm:
+            problem(f"{w}: cap_id must be CM-<area>-nnn"); continue
+        if r["cap_id"] in caps:
+            problem(f"{w}: {r['cap_id']} already exists")
+        if mm.group(1) != r["area"]:
+            problem(f"{w}: area {r['area']} differs from the cap_id's {mm.group(1)}")
+        if r["area"] not in areas:
+            problem(f"{w}: area {r['area']} is not an area of domain {domain}")
+        hi = max([int(c[-3:]) for c in caps_prior if c[3:6] == r["area"]] or [0])
+        if int(mm.group(2)) <= hi:
+            problem(f"{w}: {r['cap_id']} must be numbered past the model's highest in {r['area']} (CM-{r['area']}-{hi:03d})")
+        if not r["capability"].strip():
+            problem(f"{w}: no name")
+        caps[r["cap_id"]] = r
+    for r in part["capabilities.tsv"]:
+        p = r["parent"].strip()
+        if p and p not in caps:
+            problem(f"capabilities.tsv line {r['_line']}: parent {p} is not a capability of domain {domain}")
+        seen, x = set(), r["cap_id"]
+        while x in caps and caps[x]["parent"].strip():
+            if x in seen:
+                problem(f"capabilities.tsv: a cycle of parents through {r['cap_id']}"); break
+            seen.add(x); x = caps[x]["parent"].strip()
+
+    # landings: every concern scope.tsv gives this part, exactly once
+    want = {r["concern_id"] for r in sc if r["domain"] == domain and r["platform"] in plats}
+    landed = {}
+    for r in part["landings.tsv"]:
+        w = f"landings.tsv line {r['_line']}"
+        c, p = r["concern_id"], r["platform"]
+        if p not in plats:
+            problem(f"{w}: platform {p} is not this part's"); continue
+        if c not in cons[p]:
+            problem(f"{w}: {c} is not a concern of {p}"); continue
+        if c not in want:
+            problem(f"{w}: scope.tsv doesn't give {c} to domain {domain}")
+        if c in landed:
+            problem(f"{w}: {c} already landed on line {landed[c]['_line']}")
+        landed[c] = r
+        cap = r["cap_id"]
+        if cap.startswith("moved:"):
+            if cap[6:] not in DOMAINS or cap[6:] == domain:
+                problem(f"{w}: moved: names another domain, A to G")
+            if not r["reading"].strip():
+                problem(f"{w}: a moved concern says why in reading")
+            continue
+        if cap not in caps:
+            problem(f"{w}: {cap} is not a capability of domain {domain}")
+        j = r["join"]
+        jk = ids(r["join_evidence"])
+        if j.startswith("match:"):
+            mid = j[6:]
+            mrow = [x for x in rows(os.path.join(CMAP, "matches.tsv")) if x["match_id"] == mid]
+            if not mrow:
+                problem(f"{w}: {mid} is not a Q1 match")
+            elif c not in ids(mrow[0]["shopify"]) + ids(mrow[0]["salla"]) + ids(mrow[0]["woocommerce"]):
+                problem(f"{w}: {mid} doesn't hold {c}")
+        elif j in ("terms", "identifier", "definition", "role"):
+            kp = set()
+            for k in jk:
+                kpl = platform_of(k.split("/")[0])
+                if k not in stm[kpl]:
+                    problem(f"{w}: join_evidence key {k} not found")
+                kp.add(kpl)
+            if len(kp) < 2:
+                problem(f"{w}: a {j} join cites keys of both sides in join_evidence")
+            if j == "role" and not r["reading"].strip():
+                problem(f"{w}: a join on role is a reading, and says why in reading")
+        elif j != "single":
+            problem(f"{w}: join must be match:<M-id>, terms, identifier, definition, role or single")
+        if r["fit"] not in FIT:
+            problem(f"{w}: fit must be clean or strained")
+        if r["fit"] == "strained" and not r["reading"].strip():
+            problem(f"{w}: a strained fit says what doesn't fit in reading")
+    for c in sorted(want - set(landed)):
+        problem(f"landings.tsv: {c} (domain {domain} in scope.tsv) doesn't land")
+
+    # cells and evidence
+    cells_prior = {(r["cap_id"], r["platform"]) for p in prior for r in p["cells.tsv"]}
+    cells = {}
+    for r in part["cells.tsv"]:
+        w = f"cells.tsv line {r['_line']}"
+        k = (r["cap_id"], r["platform"])
+        if r["cap_id"] not in caps:
+            problem(f"{w}: {r['cap_id']} is not a capability of domain {domain}"); continue
+        if r["platform"] not in PLATFORMS:
+            problem(f"{w}: unknown platform"); continue
+        if kind != "backfill" and r["platform"] not in plats:
+            problem(f"{w}: {r['platform']} is not this part's platform")
+        if k in cells or k in cells_prior:
+            problem(f"{w}: a cell for {k[0]} and {k[1]} already exists")
+        if r["held"] not in HELD:
+            problem(f"{w}: held must be statements or none-held")
+        cells[k] = r
+    ev = {}
+    for r in part["evidence.tsv"]:
+        w = f"evidence.tsv line {r['_line']}"
+        k = (r["cap_id"], r["platform"])
+        if k not in cells:
+            problem(f"{w}: no cell in this part for {k[0]} and {k[1]}"); continue
+        if r["supports"] not in SUPPORTS:
+            problem(f"{w}: supports must be one of {', '.join(sorted(SUPPORTS))}")
+        c = r["key"].split("/")[0]
+        try:
+            kp = platform_of(c)
+        except SystemExit:
+            problem(f"{w}: {r['key']} is not a statement key"); continue
+        if kp != r["platform"]:
+            problem(f"{w}: {r['key']} is a statement of {kp}, not {r['platform']}")
+        s = stm[kp].get(r["key"])
+        if not s:
+            problem(f"{w}: statement key {r['key']} not found"); continue
+        if not r["why"].strip():
+            problem(f"{w}: why is empty")
+        ev.setdefault(k, []).append((r, s))
+        if r["supports"] == "own-service" and not re.search(COMPANY[kp], fold(s["identifier"] + " " + s["statement"])):
+            flag(f"{w}: own-service, and the statement doesn't name {kp}'s company: {r['key']}")
+        if r["supports"] == "outside" and re.search(r"\b(merchant|you|seller|customer|buyer)s?\b|التاجر|العميل", fold(s["statement"])) and not re.search(r"third|partner|provider|طرف|شريك|مزود", fold(s["statement"])):
+            flag(f"{w}: outside, and the statement may name only the merchant or buyer: {r['key']}")
+    for k, r in cells.items():
+        w = f"cells.tsv line {r['_line']}"
+        e = ev.get(k, [])
+        if r["held"] == "statements" and not e:
+            problem(f"{w}: held statements, with no evidence rows")
+        if r["held"] == "none-held":
+            if e:
+                problem(f"{w}: none-held, with evidence rows")
+            if not r["searched"].strip():
+                problem(f"{w}: none-held records the terms it searched, in each language")
+            else:
+                terms = [fold(t) for t in r["searched"].split(";") if t.strip()]
+                hits = [key(s) for s in statements(r["platform"]) if any(t in fold(s["identifier"] + " " + s["statement"]) for t in terms)]
+                if hits:
+                    flag(f"{w}: none-held, and {len(hits)} {r['platform']} statements match its terms: {', '.join(hits[:8])}{' …' if len(hits) > 8 else ''}")
+        if any(x["supports"] in PLACED for x, _ in e) and not r["reading"].strip():
+            problem(f"{w}: a placement is a reading, and reading says why")
+        if e and set(x["supports"] for x, _ in e) <= {"core"} and all(s["placement"] == "boundary" for _, s in e):
+            flag(f"{w}: core rests only on boundary statements")
+        hay = [fold(s["identifier"] + " " + s["statement"]) for _, s in e]
+        cterms = []
+        for _, s in e:
+            cterms.append(fold(cons[r["platform"]].get(s["concern_id"], {}).get("platform_terms", "")))
+        for t in [t for t in r["terms"].split(";") if t.strip()]:
+            if not any(fold(t.strip()) in h for h in hay + cterms):
+                problem(f"{w}: term {t.strip()!r} is not in a cited statement or its concern's platform_terms")
+
+    # every landed concern is cited in its capability's cell
+    for c, r in landed.items():
+        if r["cap_id"].startswith("moved:"):
+            continue
+        p = r["platform"]
+        if not any(s["concern_id"] == c for _, s in ev.get((r["cap_id"], p), [])):
+            if any(s["concern_id"] == c for s in statements(p)):
+                problem(f"landings.tsv line {r['_line']}: no evidence row of {r['cap_id']}'s {p} cell cites a statement of {c}")
+
+    # one cell per capability and platform
+    if kind == "backfill":
+        need = {(c, p) for c in caps for p in done} - cells_prior
+    else:
+        need = {(c, p) for c in caps for p in plats} - cells_prior
+    for c, p in sorted(need - set(cells)):
+        problem(f"cells.tsv: no cell for {c} and {p}")
+
+    # side files
+    inv = {}
+    for p in PLATFORMS:
+        for r in rows(os.path.join(CMAP, "platforms", p, "inventory.tsv")):
+            inv[r["inv_id"]] = p
+    for f in ("qualities.tsv", "slot-fillers.tsv"):
+        for r in part[f]:
+            w = f"{f} line {r['_line']}"
+            if r["cap_id"] not in caps:
+                problem(f"{w}: {r['cap_id']} is not a capability of domain {domain}")
+            k = r["key"]
+            if k in inv:
+                if inv[k] != r["platform"]:
+                    problem(f"{w}: {k} is an inventory entry of {inv[k]}")
+            elif "/" in k:
+                kp = platform_of(k.split("/")[0])
+                if kp != r["platform"] or k not in stm[kp]:
+                    problem(f"{w}: {k} is not a statement of {r['platform']}")
+            else:
+                problem(f"{w}: key must be a statement key or an inventory id")
+    taken = set(landed)
+    uc = rows(os.path.join(CMAP, "unclear-matches.tsv"))
+    need_r = {u["candidate_id"] for u in uc if set(ids(u["shopify"]) + ids(u["salla"]) + ids(u["woocommerce"])) & taken}
+    got_r = set()
+    for r in part["rulings.tsv"]:
+        w = f"rulings.tsv line {r['_line']}"
+        if r["candidate_id"] not in {u["candidate_id"] for u in uc}:
+            problem(f"{w}: {r['candidate_id']} is not an unclear candidate"); continue
+        got_r.add(r["candidate_id"])
+        if r["ruling"].startswith("joined:"):
+            if r["ruling"][7:] not in caps:
+                problem(f"{w}: {r['ruling'][7:]} is not a capability")
+        elif r["ruling"] != "apart":
+            problem(f"{w}: ruling must be joined:<cap_id> or apart")
+        if not r["basis"].strip():
+            problem(f"{w}: basis is empty")
+        for k in ids(r["keys"]):
+            kp = platform_of(k.split("/")[0])
+            if k not in stm[kp]:
+                problem(f"{w}: key {k} not found")
+    for u in sorted(need_r - got_r):
+        problem(f"rulings.tsv: no ruling on {u}, which holds a concern this part lands")
+
+    # derived: what the part doesn't write
+    gaps = {}
+    for p in PLATFORMS:
+        for g in rows(os.path.join(CMAP, "platforms", p, "gaps.tsv")):
+            gaps.setdefault(g["concern_id"], []).append(f"{g['concern_id']}/{g['placement']}:{g['gap_kind']}")
+    with open(os.path.join(d, "derived.tsv"), "w", encoding="utf-8", newline="") as f:
+        f.write("cap_id\tplatform\theld\tplaced_as\twhere\tscopes\tgaps\n")
+        for k in sorted(cells):
+            r = cells[k]
+            e = ev.get(k, [])
+            placed = sorted({x["supports"] for x, _ in e} & PLACED) or (["not-stated"] if r["held"] == "statements" else [])
+            where = sorted({" ".join(s["identifier"].split()) for _, s in e if s["placement"] == "where"})
+            scopes = sorted({f"{key(s)}={' '.join(s['scope'].split())}" for _, s in e if s["scope"].strip()})
+            cs = sorted({s["concern_id"] for _, s in e})
+            g = [x for c in cs for x in gaps.get(c, [])]
+            vals = [k[0], k[1], r["held"], ";".join(placed), " | ".join(where), " | ".join(scopes), ";".join(g)]
+            f.write("\t".join(v.replace("\t", " ").replace("\n", " ") for v in vals) + "\n")
+    print(f"{name}: {len(part['capabilities.tsv'])} capabilities, {len(landed)} landings, {len(cells)} cells, "
+          f"{sum(len(v) for v in ev.values())} evidence rows; derived.tsv written")
+
+
+def main():
+    if len(sys.argv) != 2:
+        sys.exit(__doc__)
+    t = sys.argv[1]
+    if t.endswith("scope.tsv"):
+        check_scope(t)
+    else:
+        check_part(t)
+    for p in problems:
+        print("PROBLEM", p)
+    for x in flags:
+        print("FLAG", x)
+    print(f"{len(problems)} problems, {len(flags)} flags for the reviewer")
+    sys.exit(1 if problems else 0)
+
+
+if __name__ == "__main__":
+    main()
