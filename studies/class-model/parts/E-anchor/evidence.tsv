@@ -241,7 +241,7 @@ CM-CNT-007	salla	core	SA-C-033/where/SA-S-3535	dashboard app path seo and bulk-s
 CM-CNT-007	salla	core	SA-C-033/where/SA-S-1063	Merchant API folder SEO
 CM-CNT-007	salla	shows	SA-C-033/boundary/SA-S-1562	access scope Meta Data; the statement names no subject, so it shows here, as in CM-MKS-006, CM-MKS-008 and CM-MKS-009 (the coordinator, after batch 7)
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2141	plan line تحسين ظهور المتجر على محركات البحث
-CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2133	plan line AI-generated SEO at extra fees
+CM-CNT-007	salla	shows	SA-C-033/decides/SA-S-2133	plan line AI-generated SEO at extra fees; core in F's CM-AIA-003, whose Salla cell rests on it, so it counts once (the coordinator, convention 8)
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2358	staff permission seo_enhancement_browse
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2359	staff permission seo_enhancement_management
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3055	released flag seo-urls

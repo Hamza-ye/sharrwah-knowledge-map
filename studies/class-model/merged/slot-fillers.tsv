@@ -11,6 +11,44 @@ CM-MKT-010	salla	Pinterest	SA-C-074/decides/SA-S-2149	D-anchor
 CM-MKT-010	salla	AdRoll	SA-C-074/decides/SA-S-2149	D-anchor
 CM-MKT-010	salla	Sweply	SA-C-073/boundary/SA-S-5135	D-anchor
 CM-SUP-004	salla	WhatsApp	SA-C-099/boundary/SA-S-5138	D-anchor
+CM-MKT-022	salla	هيئة الاتصالات وتقنية المعلومات السعودية	SA-C-048/reason/SA-S-5017	D-backfill-woocommerce
+CM-CUS-009	zid	Google maps / خرائط جوجل	ZD-C-103/where/ZD-S-0969	D-zid
+CM-MKT-007	zid	هيئة الاتصالات	ZD-C-098/reason/ZD-S-1046	D-zid
+CM-NTF-004	zid	هيئة الاتصالات وتقنية المعلومات	ZD-C-098/decides/ZD-S-0958	D-zid
+CM-NTF-004	zid	هيئة الاتصالات	ZD-C-098/responsible/ZD-S-0959	D-zid
+CM-NTF-004	zid	ينيفونك (Unifonic)	ZD-C-098/boundary/ZD-S-0960	D-zid
+CM-NTF-004	zid	منصة واتساب للأعمال (WhatsApp Business Platform)	ZD-C-107/boundary/ZD-S-1054	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/responsible/ZD-S-1051	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/responsible/ZD-S-1052	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/decides/ZD-S-1053	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/decides/ZD-S-1055	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/decides/ZD-S-1056	D-zid
+CM-NTF-004	zid	Meta / ميتا	ZD-C-107/reason/ZD-S-1057	D-zid
+CM-SUP-005	zid	HubSpot	ZD-C-092/boundary/ZD-S-1038	D-zid
+CM-SUP-008	zid	Ministry of Commerce	ZD-C-111/reason/ZD-S-1000	D-zid
+CM-MKT-010	bigcommerce	Google	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-MKT-010	bigcommerce	Meta	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-MKT-010	bigcommerce	TikTok	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-MKT-010	bigcommerce	Microsoft	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-MKT-010	bigcommerce	Pinterest	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-MKT-023	bigcommerce	Google Vertex AI	BC-C-013/where/BC-S-0076	D-bigcommerce
+CM-MKT-023	bigcommerce	Google	BC-C-013/responsible/BC-S-0079	D-bigcommerce
+CM-ANL-007	bigcommerce	BigQuery	BC-C-062/where/BC-S-0336	D-bigcommerce
+CM-ANL-007	bigcommerce	Tableau	BC-C-062/where/BC-S-0336	D-bigcommerce
+CM-ANL-007	bigcommerce	Power BI	BC-C-062/where/BC-S-0336	D-bigcommerce
+CM-ANL-007	bigcommerce	Looker	BC-C-062/where/BC-S-0336	D-bigcommerce
+CM-CNT-008	salla	نظام التجارة الإلكترونية (the E-commerce System)	SA-C-093/reason/SA-S-5034	E-anchor
+CM-CHN-006	salla	Apple (App Store), its intellectual-property policies	SA-C-094/reason/SA-S-5036	E-anchor
+CM-CHN-006	salla	Google (Google Play), its intellectual-property policies	SA-C-094/reason/SA-S-5036	E-anchor
+CM-CHN-006	salla	Apple, rejecting or delaying charity apps	SA-C-174/reason/SA-S-5081	E-anchor
+CM-POS-001	shopify	KassenSichV regulation (TSE Compliance), Germany	SH-C-142/reason/SH-S-7285	E-anchor
+CM-POS-002	salla	جيديا (Geidea)	SA-C-095/boundary/SA-S-5040	E-anchor
+CM-POS-002	salla	جيديا (Geidea), its contract with the merchant	SA-C-095/responsible/SA-S-5038	E-anchor
+CM-POS-002	salla	NearPay	SA-C-095/reason/SA-S-5042	E-anchor
+CM-POS-002	shopify	Stripe	SH-C-184/responsible/SH-S-0089	E-anchor
+CM-MKS-003	shopify	Global-e (the merchant of record)	SH-C-110/responsible/SH-S-0563	E-anchor
+CM-MKS-003	shopify	Global-e, under the Service Terms - Shopify Managed Markets	SH-C-110/responsible/SH-S-0127	E-anchor
+CM-MKS-006	shopify	Adyen (as the primary gateway)	SH-C-108/decides/SH-S-0545	E-anchor
 CM-AIA-002	shopify	Anthropic PBC	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Applied Compute Inc.	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Fireworks.ai	SH-C-152/responsible/SH-S-0201	F-anchor

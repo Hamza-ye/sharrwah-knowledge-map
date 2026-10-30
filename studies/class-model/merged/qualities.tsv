@@ -25,6 +25,26 @@ CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise pla
 CM-B2B-003	shopify	B2B catalogs per plan	Shopify B2B: Up to 3 catalogs; Up to 3 catalogs; Up to 3 catalogs; Unlimited catalogs	SH-C-044/decides/SH-S-7008	D-anchor
 CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 3	SH-C-037/decides/SH-S-5532	D-anchor
 CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 75000	SH-C-037/decides/SH-S-5535	D-anchor
+CM-MKT-007	woocommerce	MailPoet's free subscriber limit without an account or plan	When you install the MailPoet plugin, you can use it for free up to 500 subscribers without creating an account with us or subscribing to any plans.	WC-C-113/decides/WC-S-5499	D-woocommerce
+CM-MKT-007	woocommerce	where MailPoet's sending service keeps its data	If you have created an account with MailPoet to send emails or to purchase a plan, we collect the following data on our servers in the United States of America:	WC-C-113/where/WC-S-5498	D-woocommerce
+CM-MKT-002	zid	Number of Discount Codes / عدد أكواد الخصم	not in the concern map	ZD-I-0293	D-zid
+CM-NTF-002	zid	Team Notifications / إشعارات الفريق	plans:{starter:"1",launch:"1",growth:"3",pro:!0}	ZD-C-097/decides/ZD-S-0954	D-zid
+CM-NTF-001	zid	Order Status Notifications (Limited) / إشعارات حالة الطلب (حدود محددة)	not in the concern map	ZD-I-0287	D-zid
+CM-MKT-001	bigcommerce	Recommended active promotions and rules per promotion	BigCommerce recommends having less than 100 active promotions on storefronts, and there should be at most ten rules per promotion.	BC-C-009/decides/BC-S-0059	D-bigcommerce
+CM-MKT-010	bigcommerce	Feedonomics Surface basic plan	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-SFR-010	shopify	Web hosting per plan	Unlimited web hosting: Included; Included; Included; Included	SH-C-036/decides/SH-S-7032	E-anchor
+CM-SFR-011	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056	E-anchor
+CM-SFR-003	salla	Minimum price of a theme	لديك الحرية في تحديد سعر الثيم. ولكن هناك حد أدنى بمبلغ (150 ر.س) لتسعير الثيمات.	SA-C-208/decides/SA-S-5107	E-anchor
+CM-SFR-003	salla	Developers' dues paid after a warranty period	تُصرف مستحقات المطورين بعد انقضاء فترة الضمان (عادة 15 يومًا من تاريخ الشراء).	SA-C-208/decides/SA-S-0041	E-anchor
+CM-CHN-003	shopify	synced marketplace orders free per month	50 synced marketplace orders per month: Free	SH-C-137/decides/SH-S-7050	E-anchor
+CM-CHN-003	shopify	price above 50 synced marketplace orders	Over 50 synced marketplace orders: 1% up to $99/mo	SH-C-137/decides/SH-S-7051	E-anchor
+CM-POS-001	shopify	POS Pro per plan	POS Pro: Advanced tools for brick‑and‑mortar retailers: $89/mo per location; $89/mo per location; $89/mo per location; Includes 20 locations. Up to 200 with Shopify Payments.	SH-C-142/decides/SH-S-7018	E-anchor
+CM-POS-004	shopify	UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-144/decides/SH-S-7485	E-anchor
+CM-POS-002	salla	Payment terminal per device	رقم جهاز الدفع مخصص لجهاز واحد فقط وفق متطلبات أنظمة الدفع وNearPay	SA-C-095/reason/SA-S-5042	E-anchor
+CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في المتجر	SA-C-008/decides/SA-S-2074	E-anchor
+CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098	E-anchor
+CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970	E-anchor
+CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012	E-anchor
 CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	F-anchor
 CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	F-anchor
 CM-APP-008	shopify	compiled UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-164/decides/SH-S-7487	F-anchor

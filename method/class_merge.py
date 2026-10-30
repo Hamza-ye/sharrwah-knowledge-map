@@ -43,12 +43,14 @@ def write(path, head, body):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--complete", action="store_true")
+    ap.add_argument("--exclude", default="", help="parts to leave out, comma-separated, such as one an agent is still writing")
     a = ap.parse_args()
+    leave = set(ids(a.exclude))
     base = os.path.join(MODEL, "parts")
     parts = []
     for d in sorted(os.listdir(base)):
         dom, _, kind = d.partition("-")
-        if kind in PART_ORDER:
+        if kind in PART_ORDER and d not in leave:
             parts.append((dom, PART_ORDER.index(kind), d))
     parts.sort()
     data = {}

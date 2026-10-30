@@ -95,3 +95,9 @@ The final run: `0 problems, 21 flags for the reviewer`.
   names them and says why they aren't cited. Most of the large counts come from deliberately broad terms: company,
   شركة, B2B, related, analytics, export, تصدير. They return legal-entity statements, payment and shipping companies, tax
   terms, and the platforms' own analytics and file exports. None of those is the capability's object.
+
+## The coordinator's corrections (30 October)
+
+- **Three concerns now name D under `also`,** since the statements this part cites from them bear on D: SH-C-020 (the category Pricing quote apps, SH-I-1897), SA-C-041 (the order status request_quote, SA-S-2682) and SA-C-002 (the plan line listing recommended products, SA-S-2097). The merge flags any of them that another domain also counts as `core`.
+- **WC-I-0553,** the Marketplace category Marketing > Reporting and analytics, is cited in CM-ANL-001 already, through its own statement WC-S-0758 (D-woocommerce).
+
