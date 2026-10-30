@@ -78,3 +78,92 @@ CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0197	wc-admin onboarding/prod
 CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0200	wc-admin onboarding/themes
 CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0201	wc-admin onboarding/plugins
 CM-ONB-004	woocommerce	core	WC-C-081/boundary/WC-S-0202	wc-admin onboarding products
+CM-ACC-008	woocommerce	shows	WC-C-028/decides/WC-S-0657	not on a US list of prohibited or restricted parties, such as OFAC's SDN list
+CM-ACC-008	woocommerce	shows	WC-C-028/responsible/WC-S-0492	the merchant may not let customers access the Services in breach of sanctions
+CM-ACC-008	woocommerce	shows	WC-C-029/responsible/WC-S-0470	the merchant ensures its own transactions comply with export, import and sanctions laws
+CM-TRU-002	woocommerce	shows	WC-C-009/where/WC-S-0504	at WooPayments sign-up the merchant verifies its information with Stripe
+CM-TRU-002	woocommerce	shows	WC-C-009/where/WC-S-0522	Automattic works with Stripe to confirm the merchant's identity
+CM-TRU-004	woocommerce	core	WC-C-031/decides/WC-S-0932	setting enabling rate limiting for Checkout place order
+CM-TRU-004	woocommerce	core	WC-C-031/decides/WC-S-5359	feature not experimental, off by default
+CM-TRU-004	woocommerce	core	WC-C-031/decides/WC-S-5360	only POST /checkout and Place Order, 3 requests per 60 seconds
+CM-TRU-005	woocommerce	core	WC-C-045/where/WC-S-0006	WooCommerce's own settings tab Accounts & Privacy
+CM-TRU-005	woocommerce	core	WC-C-045/where/WC-S-0929	settings section Personal data retention
+CM-TRU-006	woocommerce	core	WC-C-045/decides/WC-S-0881	settings decide personal data retention and the privacy policy notices
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0357	exporter WooCommerce Customer Data
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0358	exporter WooCommerce Customer Orders
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0359	exporter WooCommerce Customer Downloads
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0360	exporter WooCommerce Customer Payment Tokens
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0361	eraser WooCommerce Customer Data
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0362	eraser WooCommerce Customer Orders
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0363	eraser WooCommerce Customer Downloads
+CM-TRU-007	woocommerce	core	WC-C-045/boundary/WC-S-0364	eraser WooCommerce Customer Payment Tokens
+CM-TRU-007	woocommerce	core	WC-C-045/decides/WC-S-5376	setting: erasure requests remove order data, default no
+CM-TRU-009	woocommerce	own-service	WC-C-022/decides/WC-S-0952	e-commerce on a WordPress.com site must not violate WordPress.com's User Guidelines
+CM-TRU-009	woocommerce	own-service	WC-C-022/decides/WC-S-0951	items that may not be sold through e-commerce on WordPress.com sites
+CM-TRU-009	woocommerce	own-service	WC-C-025/where/WC-S-0594	maker: Automattic, the creator of WordPress.com
+CM-TRU-009	woocommerce	shows	WC-C-022/responsible/WC-S-5326	users of Ecommerce Services must observe the Store Guidelines
+CM-TRU-010	woocommerce	shows	WC-C-027/responsible/WC-S-0466	Automattic not involved; the merchant solely responsible for its ecommerce
+CM-TRU-010	woocommerce	shows	WC-C-027/responsible/WC-S-0468	consent, receipts, verifying customers' identities and eligibility
+CM-TRU-010	woocommerce	shows	WC-C-027/responsible/WC-S-0469	complaints, disputes, refunds, reversals and fines
+CM-TRU-010	woocommerce	shows	WC-C-027/decides/WC-S-0848	control over the store brings responsibility
+CM-TRU-010	woocommerce	shows	WC-C-027/responsible/WC-S-0647	the Ecommerce Services the terms cover, via Woo, WordPress.com and Jetpack
+CM-TRU-013	woocommerce	shows	WC-C-024/responsible/WC-S-0494	generally the controller is the Automattic company contracting with the user
+CM-TRU-013	woocommerce	shows	WC-C-024/decides/WC-S-0495	definition: Automattic companies as controllers or co-controllers
+CM-TRU-013	woocommerce	own-service	WC-C-024/responsible/WC-S-0497	Automattic Inc. and WooCommerce, Inc. joint controllers for Woo services
+CM-TRU-013	woocommerce	own-service	WC-C-024/responsible/WC-S-0498	Automattic Inc. controller for WooCommerce, Inc.'s services
+CM-TRU-013	woocommerce	own-service	WC-C-044/responsible/WC-S-0658	Automattic as data processor for the website under a DPA
+CM-TRU-013	woocommerce	own-service	WC-C-044/responsible/WC-S-0847	the DPA amends the Terms, for WordPress.com site owners
+CM-TRU-013	woocommerce	own-service	WC-C-044/where/WC-S-5329	Request a DPA in the WordPress.com account's Data processing addendum section
+CM-TRU-013	woocommerce	own-service	WC-C-044/boundary/WC-S-5331	the DPA returned to privacypolicyupdates@automattic.com
+CM-TRU-013	woocommerce	own-service	WC-C-044/responsible/WC-S-0502	Automattic processes visitors' data on its users' behalf
+CM-TRU-013	woocommerce	shows	WC-C-044/decides/WC-S-5330	the DPA is business to business, not for typical free site owners
+CM-TRU-013	woocommerce	shows	WC-C-045/responsible/WC-S-5467	the site owner acts as Data Controller of its store's data
+CM-TRU-013	woocommerce	shows	WC-C-040/responsible/WC-S-0475	Terms: data may pass to WooPayments' or third-party services' providers
+CM-TRU-013	woocommerce	shows	WC-C-040/responsible/WC-S-0660	Privacy Policy: third-party software and services receive information
+CM-TRU-013	woocommerce	shows	WC-C-040/where/WC-S-0564	data passed to the gateway's third party, Stripe or PayPal
+CM-TRU-013	woocommerce	shows	WC-C-040/where/WC-S-0565	with a payment gateway, the data isn't shared with WooCommerce.com
+CM-TRU-013	woocommerce	shows	WC-C-041/where/WC-S-0566	a shipping extension shares data with the shipping provider
+CM-TRU-014	woocommerce	core	WC-C-032/where/WC-S-0553	customer details stored in the site's WordPress database
+CM-TRU-014	woocommerce	core	WC-C-032/where/WC-S-0629	orders in WooCommerce's own tables (HPOS)
+CM-TRU-014	woocommerce	core	WC-C-032/decides/WC-S-5365	data stores can be swapped for another database structure
+CM-TRU-014	woocommerce	shows	WC-C-032/boundary/WC-S-5364	data store classes bridge WooCommerce's objects and the database
+CM-TRU-014	woocommerce	shows	WC-C-032/where/WC-S-0632	WordPress's Options API and wp_options table
+CM-TRU-014	woocommerce	shows	WC-C-032/responsible/WC-S-0587	the merchant's data belongs to the merchant
+CM-TRU-014	woocommerce	own-service	WC-C-043/where/WC-S-0659	Automattic's data from the EU or UK accessed outside the EEA or UK
+CM-TRU-014	woocommerce	own-service	WC-C-043/reason/WC-S-0942	because Automattic's Services are offered worldwide
+CM-TRU-014	woocommerce	own-service	WC-C-043/responsible/WC-S-0499	Commission- or UK-approved standard contractual arrangements
+CM-TRU-015	woocommerce	shows	WC-C-043/where/WC-S-0659	third-party data processors among those accessing the data
+CM-TRU-015	woocommerce	shows	WC-C-034/where/WC-S-0503	third-party vendors, the hosting provider where not hosted by Automattic
+CM-TRU-016	woocommerce	shows	WC-C-009/decides/WC-S-0558	a deleted WooPayments account's information retained for tax and compliance
+CM-TRU-018	woocommerce	own-service	WC-C-018/responsible/WC-S-0550	WooPayments PCI DSS compliant as a Level 1 service provider
+CM-TRU-018	woocommerce	own-service	WC-C-018/responsible/WC-S-0479	Automattic responsible for the cardholder data of WooPayments users
+CM-TRU-018	woocommerce	own-service	WC-C-023/responsible/WC-S-0458	maker: WooPayments among the Woo services
+CM-TRU-018	woocommerce	outside	WC-C-018/where/WC-S-0552	payment fields served from the payment partner's PCI DSS-validated environment
+CM-TRU-018	woocommerce	outside	WC-C-018/boundary/WC-S-0554	saved-card tokens stored by the payment partner
+CM-TRU-018	woocommerce	shows	WC-C-018/reason/WC-S-0859	WooPayments reduces the site's PCI scope
+CM-TRU-018	woocommerce	shows	WC-C-019/where/WC-S-5304	the core plugin is not PCI certified, handling no cardholder data
+CM-TRU-018	woocommerce	shows	WC-C-019/boundary/WC-S-5307	WooCommerce never stores card details
+CM-TRU-018	woocommerce	shows	WC-C-019/responsible/WC-S-5303	PCI DSS compliance is the store owner's
+CM-TRU-018	woocommerce	shows	WC-C-019/responsible/WC-S-0471	Terms: the merchant must comply with PCI DSS
+CM-TRU-018	woocommerce	shows	WC-C-019/responsible/WC-S-0551	with WooPayments the site still meets some PCI requirements
+CM-TRU-018	woocommerce	shows	WC-C-019/decides/WC-S-0882	PCI DSS applies to whoever stores, processes or transmits cardholder data
+CM-TRU-018	woocommerce	shows	WC-C-019/where/WC-S-5305	PCI requirements apply to the hosting, plugins and policies
+CM-TRU-018	woocommerce	shows	WC-C-019/decides/WC-S-0626	direct gateways require server security
+CM-TRU-018	woocommerce	shows	WC-C-019/decides/WC-S-5306	the payment processor may ask for an SAQ or scans
+CM-TRU-018	woocommerce	shows	WC-C-019/reason/WC-S-5308	PCI applies, reduced, where payments are off-site
+CM-TRU-019	woocommerce	extension-point	WC-C-109/where/WC-S-0750	Marketplace category Store management > Policy and security
+CM-TRU-021	woocommerce	core	WC-C-035/where/WC-S-0027	settings section Advanced > WooCommerce.com
+CM-TRU-021	woocommerce	core	WC-C-035/decides/WC-S-5370	opt-in setting woocommerce_allow_tracking, default no
+CM-TRU-021	woocommerce	core	WC-C-035/where/WC-S-0571	data sent to WooCommerce's servers when tracking is enabled
+CM-TRU-021	woocommerce	core	WC-C-035/where/WC-S-0609	tracker endpoint tracking.woocommerce.com
+CM-TRU-021	woocommerce	core	WC-C-035/boundary/WC-S-0610	Tracks pixel at pixel.wp.com
+CM-TRU-021	woocommerce	core	WC-C-035/boundary/WC-S-0079	REST namespace wc-telemetry
+CM-TRU-021	woocommerce	core	WC-C-035/boundary/WC-S-0253	wc-telemetry resource tracker
+CM-TRU-021	woocommerce	core	WC-C-035/responsible/WC-S-0500	the Usage Tracker's data: email, settings, aggregate orders and customers
+CM-TRU-021	woocommerce	shows	WC-C-035/reason/WC-S-0572	reason: to improve WooCommerce
+CM-TRU-021	woocommerce	own-service	WC-C-117/where/WC-S-0953	Jetpack caches the site's data to WordPress.com servers
+CM-TRU-021	woocommerce	own-service	WC-C-117/where/WC-S-0954	Jetpack syncs its features' data to Automattic's servers
+CM-TRU-021	woocommerce	own-service	WC-C-117/boundary/WC-S-0955	orders' data synced
+CM-TRU-021	woocommerce	own-service	WC-C-117/responsible/WC-S-0962	maker: Automattic provides services through Jetpack
+CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0961	Jetpack's JSON API module can expose order details with PII
+CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0960	Stripe gives Automattic access to payment data, not stored

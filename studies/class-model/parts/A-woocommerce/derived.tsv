@@ -6,7 +6,7 @@ CM-ACC-004	woocommerce	none-held
 CM-ACC-005	woocommerce	none-held					
 CM-ACC-006	woocommerce	statements	core	WooCommerce > Settings		WC-C-030/responsible:stated only in general terms;WC-C-030/reason:searched, not found;WC-C-081/responsible:stated only in general terms;WC-C-081/reason:searched, not found	general
 CM-ACC-007	woocommerce	none-held					
-CM-ACC-008	woocommerce	statements	not-stated			WC-C-028/where:searched, not found;WC-C-028/boundary:searched, not found	
+CM-ACC-008	woocommerce	statements	not-stated			WC-C-028/where:searched, not found;WC-C-028/boundary:searched, not found;WC-C-029/where:searched, not found;WC-C-029/boundary:searched, not found;WC-C-029/reason:searched, not found	
 CM-ACC-009	woocommerce	statements	core	Launch your store | Site visibility	WC-C-082/reason/WC-S-5424=coming-soon pages	WC-C-082/responsible:stated only in general terms	general
 CM-ACC-010	woocommerce	statements	own-service	Connecting to WordPress.com with WooPayments | Jetpack | readme.txt: Contribute and translate	WC-C-049/boundary/WC-S-5336=WooPayments | WC-C-049/decides/WC-S-5334=WooPayments | WC-C-049/where/WC-S-5332=WooPayments | WC-C-049/where/WC-S-5333=WooPayments	WC-C-025/boundary:searched, not found	general
 CM-ACC-011	woocommerce	statements	not-stated	8. Specific Service Terms: c. Woo | readme.txt: Contribute and translate | readme.txt: Description		WC-C-025/boundary:searched, not found	
@@ -26,3 +26,24 @@ CM-STF-002	woocommerce	statements	core	WooCommerce user roles		WC-C-080/responsi
 CM-STF-003	woocommerce	none-held					
 CM-STF-004	woocommerce	none-held					
 CM-STF-005	woocommerce	none-held					
+CM-TRU-001	woocommerce	none-held					
+CM-TRU-002	woocommerce	statements	not-stated	How quickly will you confirm my identity? | WooPayments built in partnership with Stripe		WC-C-009/responsible:page not read	
+CM-TRU-003	woocommerce	none-held					
+CM-TRU-004	woocommerce	statements	core			WC-C-031/responsible:stated only in general terms	general
+CM-TRU-005	woocommerce	statements	core	Accounts & Privacy | personal_data_retention		WC-C-045/reason:searched, not found	general
+CM-TRU-006	woocommerce	statements	core			WC-C-045/reason:searched, not found	general
+CM-TRU-007	woocommerce	statements	core			WC-C-045/reason:searched, not found	general
+CM-TRU-008	woocommerce	none-held					
+CM-TRU-009	woocommerce	statements	own-service	readme.txt: Contribute and translate	WC-C-022/decides/WC-S-0951=WordPress.com sites | WC-C-022/decides/WC-S-0952=WordPress.com sites | WC-C-022/responsible/WC-S-5326=Ecommerce Services (Terms 8.j)	WC-C-022/where:searched, not found;WC-C-022/boundary:searched, not found;WC-C-022/reason:searched, not found;WC-C-025/boundary:searched, not found	general
+CM-TRU-010	woocommerce	statements	not-stated			WC-C-027/where:searched, not found;WC-C-027/boundary:searched, not found	
+CM-TRU-011	woocommerce	none-held					
+CM-TRU-012	woocommerce	none-held					
+CM-TRU-013	woocommerce	statements	own-service	Data processing addendum | Privacy considerations when using official payments extensions | Privacy considerations when using official shipping extensions	WC-C-044/responsible/WC-S-0847=WordPress.com site owners | WC-C-044/where/WC-S-5329=WordPress.com account (my.wordpress.com/me/account, Preferences > Privacy) | WC-C-045/responsible/WC-S-5467=a store on WordPress.com that collects and stores other people's names and addresses	WC-C-024/where:searched, not found;WC-C-024/boundary:searched, not found;WC-C-024/reason:searched, not found;WC-C-040/reason:searched, not found;WC-C-041/decides:searched, not found;WC-C-041/reason:searched, not found;WC-C-045/reason:searched, not found	general
+CM-TRU-014	woocommerce	statements	core;own-service	High Performance Order Storage (HPOS) | Transferring Information | What data is stored on my site? | wp_options Table	WC-C-043/where/WC-S-0659=information processed when the Services are used in the EU or the UK	WC-C-043/decides:searched, not found;WC-C-043/boundary:searched, not found	general
+CM-TRU-015	woocommerce	statements	not-stated	How and Why We Share Information: Third-party vendors | Transferring Information	WC-C-043/where/WC-S-0659=information processed when the Services are used in the EU or the UK	WC-C-034/responsible:stated only in general terms;WC-C-034/boundary:searched, not found;WC-C-034/reason:searched, not found;WC-C-043/decides:searched, not found;WC-C-043/boundary:searched, not found	
+CM-TRU-016	woocommerce	statements	not-stated			WC-C-009/responsible:page not read	
+CM-TRU-017	woocommerce	none-held					
+CM-TRU-018	woocommerce	statements	outside;own-service	What makes WooPayments PCI Compliant? | WooCommerce and PCI compliance	WC-C-019/decides/WC-S-0626=direct gateways | WC-C-019/reason/WC-S-5308=sites using a gateway that processes payments off-site or through hosted fields | WC-C-019/responsible/WC-S-0551=stores using WooPayments	WC-C-018/decides:searched, not found;WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found	general
+CM-TRU-019	woocommerce	statements	extension-point	Extensions > Store management > Policy and security		WC-C-109/responsible:stated only in general terms;WC-C-109/reason:searched, not found	
+CM-TRU-020	woocommerce	none-held					
+CM-TRU-021	woocommerce	statements	core;own-service	Advanced > WooCommerce.com | Data collected when usage tracking is enabled | WC_Tracker::$api_url | What data does Jetpack sync?		WC-C-117/reason:searched, not found	general

@@ -161,3 +161,167 @@ No concern under `also` was cited in batch 1.
 - **WC-C-011's WC-S-0478** (Automattic may suspend an account or the use of WooPayments) is named, not cited, in
   CM-ONB-002's reading; if TRU cites it as enforcement, the reading stands.
 - WC-C-024, WC-C-043, WC-C-044, WC-C-045, WC-C-117 and the data concerns are TRU's; batch 1 cited none of them.
+
+## Batch 2: TRU
+
+Sixteen concerns: WC-C-018, WC-C-019, WC-C-022, WC-C-024, WC-C-027, WC-C-028, WC-C-029, WC-C-031, WC-C-032, WC-C-035,
+WC-C-040, WC-C-041, WC-C-043, WC-C-044, WC-C-045 and WC-C-117. WooCommerce's cell is written for all 20 capabilities of
+TRU and for the one this batch adds: 21 cells, 14 with statements and 7 none-held (CM-TRU-001, 003, 008, 011, 012, 017,
+020). 89 evidence rows (three of them added to batch 1's CM-ACC-008 cell), 2 qualities, 5 slot fillers, 24 rulings.
+
+### Landings
+
+Fourteen concerns joined existing capabilities:
+- **By a Q1 match (9):** WC-C-018 and WC-C-019 in **CM-TRU-018** by M-062 (WooCommerce splits WooPayments' card data
+  security from the merchant's own PCI scope; Shopify's SH-C-184 holds both, so both land in it); WC-C-024 and WC-C-044 in
+  **CM-TRU-013** by M-060 (Automattic as controller, and as processor under the DPA; Shopify's SH-C-180 holds both roles);
+  WC-C-027 in **CM-TRU-010** by M-086; WC-C-028 and WC-C-029 in **CM-ACC-008** by M-084, as batch 1 proposed; WC-C-043 in
+  **CM-TRU-014** by M-061; WC-C-045 in **CM-TRU-005** by M-059, at the match's coarser grain (export, erasure and
+  retention), as Salla's SA-C-066, its parts cited in the children CM-TRU-006 and CM-TRU-007.
+- **On role (5), each a reading citing both sides:** WC-C-022 in **CM-TRU-009** (Store guidelines against Shopify's AUP
+  and Salla's violations); WC-C-031 in **CM-TRU-004** (Rate limit Checkout against Bot protection); WC-C-032 in
+  **CM-TRU-014** (the site's own WordPress database against Shopify's data hosting locations); WC-C-040 and WC-C-041 in
+  **CM-TRU-013**, the parent (data passed to the payment and shipping providers the merchant uses, under Automattic's terms,
+  against Shopify's Terms on processing customers' personal data).
+
+Two made one new capability: **CM-TRU-021, store data sent from the merchant's own site to the platform company**
+(WC-C-035, usage tracking; WC-C-117, Jetpack Sync). A grain chosen: usage tracking has a place of its own (the settings
+section Advanced > WooCommerce.com, the opt-in woocommerce_allow_tracking, the REST namespace wc-telemetry); Jetpack Sync
+has none held, so it isn't a capability by itself (C1), and the two are the same kind of thing, the store's data leaving
+the merchant's own installation for Automattic. Searched every domain first (`caps`: telemetry, usage tracking, sync,
+tracker, data store, database, hosting): none holds it. Not CM-TRU-008, whose subject is the platform's use of customer
+data across merchants (a reading); not CM-ACC-010, the connection itself, which Jetpack Sync presupposes (WC-S-0953 says
+the sync is "part of the required connection to WordPress.com"; not cited there, to keep the flow in one place). Domain
+G's Remote Logging (WC-C-036, CM-OPS-005) and domain D's WooCommerce Analytics syncing (WC-C-039, CM-ANL-001) are related
+flows already placed; the reviewer may gather them.
+
+### WordPress, and Automattic's services, not WooCommerce
+
+Placed by what the statements show:
+- **WordPress:** the export and erasure requests are WordPress's personal data tools; WooCommerce registers its own
+  exporters and erasers with them (CM-TRU-007, core for WooCommerce's registrations; the hook is read in the release's
+  abstract-wc-privacy.php, context only, not cited). WordPress's Options API and wp_options table (WC-S-0632, CM-TRU-014)
+  is `shows`. Sign-in to the admin is WordPress's users', and nothing of WordPress's sign-in security is held
+  (CM-TRU-001).
+- **Automattic's services, `own-service`:** WooPayments' PCI DSS Level 1 compliance and Automattic's responsibility for
+  the cardholder data it handles (CM-TRU-018); WordPress.com's Store guidelines (CM-TRU-009, scoped to WordPress.com
+  sites); Automattic's controllers for Woo services and its DPA for WordPress.com site owners (CM-TRU-013); its transfers
+  outside the EEA and UK (CM-TRU-014); Jetpack Sync (CM-TRU-021). Automattic's Terms that make the merchant responsible
+  (CM-TRU-010, CM-ACC-008's WC-S-0470 and WC-S-0492) are `shows`.
+- **WooCommerce itself, `core`:** Rate limit Checkout (CM-TRU-004), the Accounts & Privacy settings with Personal data
+  retention and privacy policy notices (CM-TRU-005, CM-TRU-006), the exporters, erasers and the erasure setting
+  (CM-TRU-007), storage in the site's own database (CM-TRU-014), usage tracking (CM-TRU-021). The plugin itself handles
+  no card data (WC-S-5304, WC-S-5307), so CM-TRU-018 holds no `core` for it.
+- **A difference from batch 1, a reading:** batch 1 cited Automattic's Terms as `shows` in CM-ACC-002 (the agreement's
+  parties and law). Here Automattic's privacy statements show its services processing data, as controller for Woo services
+  and processor for WordPress.com sites (WC-S-0497, WC-S-0498, WC-S-0658), so CM-TRU-013 and CM-TRU-014 are `own-service`,
+  each with a statement naming Automattic in the same cell. The coordinator may want one rule for both.
+
+### Strained fits
+
+- **WC-C-029** (CM-ACC-008): by M-084, but WC-S-0470 makes the merchant responsible for its own sales' export, import and
+  sanctions compliance, nearer CM-TRU-010 (where Shopify's SH-S-0667, import and export laws, is cited). The reviewer may
+  move it; CM-ACC-008's reading (batch 1) doesn't yet name WC-S-0470.
+- **WC-C-031** (CM-TRU-004): it limits requests rather than detecting bots; the Store API's rate limiting in general
+  (WC-S-5358, WC-S-5361 to WC-S-5363) is domain F's CM-API-005, which cites WC-S-5358 and WC-S-5363. Only the checkout
+  setting (WC-S-0932, WC-S-5359, WC-S-5360) is cited here. The anchor's note on CM-TRU-004 keeps API rate limits out; this
+  is the checkout's own limit (Q1's U-045: "an anti-abuse checkout limit in WooCommerce").
+- **WC-C-032** (CM-TRU-014): the place is the merchant's own database on its own hosting (domain G's CM-OPS-003); WC-S-0586
+  and WC-S-0588 are cited in CM-ACC-011 and domain G's CM-MIG-001.
+- **WC-C-035** (CM-TRU-021): its WC-S-0027 (Advanced > WooCommerce.com) is cited, under WC-C-063, in domain F's CM-APP-012.
+- **WC-C-040, WC-C-041** (CM-TRU-013): the recipients are providers the merchant chooses (Stripe or PayPal, a shipping
+  provider), not the platform's processors, consistent with the anchor's reading of Salla's consent text (U-043). No
+  capability of any domain is data passed to the merchant's own providers, and WooCommerce gives it no place of its own
+  (a section of its documentation only), so none is added (C1); the reviewer may split one.
+- **WC-C-045** (CM-TRU-005): WC-S-5467 (the site owner as Data Controller) is cited in CM-TRU-013, as the anchor cites
+  Salla's SA-C-066 there; WC-S-0006 and WC-S-0881 are cited, under WC-C-073, in domain D's CM-CUS-010 as `core`, and
+  WC-S-0359 and WC-S-0363, under WC-C-066, in CM-SEL-002.
+- **WC-C-117** (CM-TRU-021): WC-S-0502, shared with WC-C-044, is cited in CM-TRU-013.
+
+### Statements cited from concerns of other domains
+
+- **Under `also` (A named):** WC-C-009 (C) in CM-TRU-002 (WC-S-0504, WC-S-0522: WooPayments' KYC with Stripe) and CM-TRU-016
+  (WC-S-0558: a deleted WooPayments account's information retained), `shows` only, since KYC and WooPayments accounts are
+  domain C's; WC-C-109 (G) in CM-TRU-019 (WC-S-0750, the Marketplace category Policy and security, `extension-point`).
+- **Without A under `also`** (flagged): WC-S-0503 (WC-C-034, G) in CM-TRU-015, `shows`: Automattic's privacy policy's
+  third-party vendors, the only held list of those Automattic shares data with; G cites it in CM-OPS-003 for the hosting
+  provider.
+- Left to their domains: Business services > Law and Compliance (WC-S-0769, WC-S-0766), cited in F's CM-PTN-005; WooPayments'
+  prohibited businesses (WC-C-011, C, M-085 with SH-C-173); the Store API's rate limiting (F's CM-API-005).
+
+### Homonyms
+
+- **Rate limit:** API request limits on Shopify and Salla (domain F's CM-API-005), and WooCommerce's anti-abuse limit on
+  checkout requests (CM-TRU-004). Q1's U-045 names it.
+- **Log:** WooCommerce's Logs are the logger's entries (G's CM-OPS-005), not an audit log of admin activity (CM-TRU-003,
+  none-held for WooCommerce), as batch 1's G counterpart ruled on U-044.
+- **Retention:** WooCommerce's Personal data retention is the store's own retention of its customers' data (CM-TRU-005);
+  Shopify's retention after a store closes is the platform's (CM-TRU-016).
+
+### Rulings
+
+24 rows, one per pair: U-035 (WC-C-028: joined CM-ACC-008 with SH-C-174, apart from SA-C-232); U-036 (WC-C-022: joined
+CM-TRU-009 with SH-C-172 and SA-C-232, apart from SH-C-014 and SA-C-170); U-037 (WC-C-027: apart from SH-C-001 and
+SA-C-170, which are CM-ACC-001's); U-038 (WC-C-022: apart from SH-C-173 and SA-C-172, both domain C's; the pair with
+WC-C-011 is two WooCommerce concerns and isn't ruled); U-039 (WC-C-027: joined CM-TRU-010 with SH-C-175 and SA-C-231);
+U-042 (WC-C-032: joined CM-TRU-014 with SH-C-181, apart from SA-C-233, which has no statements); U-043 (WC-C-040 and
+WC-C-041: nested CM-TRU-015 against SH-C-182, the cells citing them in the parent CM-TRU-013 and SH-C-182 in the child;
+apart from SA-C-118 and SA-C-119, domain C's); U-045 (WC-C-031: joined CM-TRU-004 with SH-C-051, apart from SH-C-171 and
+SA-C-201, domain F's).
+
+### Proposed renames (for the coordinator)
+
+- CM-TRU-004: "Checkout protection against bots and abusive requests (Shopify Bot protection, CommerceProtection;
+  WooCommerce Rate limit Checkout)".
+- CM-TRU-009: add "WooCommerce: WordPress.com Store guidelines". CM-TRU-010: add "WooCommerce: Your responsibilities".
+- CM-TRU-013: add "WooCommerce: Automattic's Controllers and Responsible Companies, Data Processing Agreement".
+- CM-TRU-018: add "WooCommerce: WooPayments, Level 1 service provider".
+- CM-ACC-008: add "WooCommerce: US Economic Sanctions" (the countries are those Automattic's Services may not be reached
+  from).
+
+### Gaps
+
+- WC-C-018/decides, WC-C-024/where, boundary and reason, WC-C-027/where and boundary, WC-C-043/decides and boundary,
+  WC-C-045/reason and WC-C-117/reason are searched, not found; WC-C-031/responsible is stated only in general terms. The
+  cells say so where it bears.
+- No subprocessor list of Automattic's, no data hosting location of its own, no legal-request policy and no
+  intellectual-property policy are held (CM-TRU-014, CM-TRU-015, CM-TRU-017, CM-TRU-011).
+- No statement names the maker of WooPayments beyond WC-S-0458's list of Woo services (cited in CM-TRU-018, as batch 1
+  did in CM-PLN-004 and CM-PLN-007), or of WordPress.com beyond WC-S-0594 (cited in CM-TRU-009).
+- The mobile app's QR login (WC-S-0204, domain G) is held as a resource name only; what it does isn't stated.
+
+### What the checker flagged on batch 2's rows, answered
+
+The whole part's check: **0 problems, 62 flags.**
+- **own-service without the company's name** (evidence lines 101 to 103, 112 to 118, 132 to 134, 138 to 140, 164 to
+  167): each own-service cell cites a statement naming Automattic: CM-TRU-009 WC-S-0594 ("developed and supported by
+  Automattic, the creators of WordPress.com"); CM-TRU-013 WC-S-0497 and WC-S-0498 (Automattic Inc., WooCommerce, Inc.)
+  and WC-S-5331 (privacypolicyupdates@automattic.com); CM-TRU-014 WC-S-0942 ("Automattic's Services"); CM-TRU-018
+  WC-S-0458 (Woo services, whose entities WC-S-0459 to WC-S-0461 name, cited in CM-ACC-002); CM-TRU-021 WC-S-0954
+  ("Automattic's servers") and WC-S-0962 ("we, at Automattic ... the services we provide through ... Jetpack"). The rest are
+  Automattic's documents speaking as we or our (reading).
+- **none-held with matching statements** (CM-TRU-001, 003, 008, 011, 012, 020): each cell's reading names the hits and why
+  none is the capability.
+- **WC-S-0503 of a domain G concern without A under also** (line 136): above.
+- **A statement in more than one tree:** WC-S-0458 (now also CM-TRU-018) and WC-S-0594 (now also CM-TRU-009), the maker
+  statements; WC-S-0883 is batch 1's.
+
+### For the coordinator: batch 1's rows
+
+No checker problem is on batch 1's rows. Readings that no longer say all, after batch 2's citations:
+- landings.tsv, **WC-C-023** (CM-ACC-002, strained): its reading names CM-PLN-004 and CM-PLN-007 as the other places
+  WC-S-0458 is cited; it is now also cited in CM-TRU-018.
+- landings.tsv, **WC-C-025** (CM-ACC-011, strained): WC-S-0594 is now also cited in CM-TRU-009 (batch 1's strained-fits
+  note names CM-ACC-010 and CM-ONB-003).
+- cells.tsv, **CM-ACC-008** WooCommerce: its reading and terms are batch 1's and don't name WC-C-029's WC-S-0470 or
+  WC-C-028's WC-S-0657 and WC-S-0492, which batch 2 added as `shows` (and a slot filler, the export, import and sanctions
+  laws).
+- **WC-C-019's WC-S-5303** ("store owner") was left uncited in CM-ACC-001, as batch 1 did: it speaks of PCI
+  responsibility, not the account.
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **Batch 1's readings** name batch 2's rows: CM-ACC-008's WooCommerce cell, and the landings of WC-C-023 and WC-C-025, whose maker statements are cited in CM-TRU-018 and CM-TRU-009 too.
+- **Automattic's Terms, `shows` in CM-ACC-002 and `own-service` in CM-TRU-013 and -014:** both stand for now. A maker statement supports `own-service` for each feature of the company's service that a cell's own statements show (the ruling of 30 October on WC-S-0476); whether the merchant's agreement with Automattic is the platform's merchant agreement, for software the merchant runs itself, is the final review's.
+- **The part is complete,** with five capabilities added (CM-ACC-009 to -011, CM-ONB-004, CM-TRU-021): `A-backfill-woocommerce` writes their Shopify and Salla cells.
+

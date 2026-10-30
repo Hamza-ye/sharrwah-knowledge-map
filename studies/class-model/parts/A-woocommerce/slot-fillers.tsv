@@ -5,3 +5,8 @@ CM-ACC-008	woocommerce	sanctions lists of the United States Office of Foreign As
 CM-PLN-007	woocommerce	VAT/GST/CT on the fees charged for WooPayments	WC-C-057/decides/WC-S-0548
 CM-PLN-007	woocommerce	VAT under the reverse charge mechanism, self-accounted by VAT-registered businesses	WC-C-057/responsible/WC-S-5316
 CM-ONB-003	woocommerce	Marketplace developers, answering support requests for their own products	WC-C-062/boundary/WC-S-5345
+CM-TRU-002	woocommerce	Stripe, with whom the merchant verifies its personal and business information at WooPayments sign-up	WC-C-009/where/WC-S-0504
+CM-TRU-013	woocommerce	the GDPR (requirements applying to Automattic as a data processor for the website)	WC-C-044/responsible/WC-S-0658
+CM-TRU-014	woocommerce	standard contractual arrangements approved by the European Commission or the UK government	WC-C-043/responsible/WC-S-0499
+CM-TRU-018	woocommerce	PCI DSS (Payment Card Industry Data Security Standard), whose requirements apply to the cardholder data Automattic handles for WooPayments	WC-C-018/responsible/WC-S-0479
+CM-ACC-008	woocommerce	applicable export, import, and sanctions laws and regulations, which the merchant's own transactions must comply with	WC-C-029/responsible/WC-S-0470
