@@ -239,7 +239,7 @@ CM-CNT-007	shopify	extension-point	SH-I-1934	App Store category SEO apps
 CM-CNT-007	salla	core	SA-C-033/where/SA-S-1822	admin link SEO /marketing/seo/homepage
 CM-CNT-007	salla	core	SA-C-033/where/SA-S-3535	dashboard app path seo and bulk-seo
 CM-CNT-007	salla	core	SA-C-033/where/SA-S-1063	Merchant API folder SEO
-CM-CNT-007	salla	core	SA-C-033/boundary/SA-S-1562	own API scope Meta Data
+CM-CNT-007	salla	shows	SA-C-033/boundary/SA-S-1562	access scope Meta Data; the statement names no subject, so it shows here, as in CM-MKS-006, CM-MKS-008 and CM-MKS-009 (the coordinator, after batch 7)
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2141	plan line تحسين ظهور المتجر على محركات البحث
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2133	plan line AI-generated SEO at extra fees
 CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2358	staff permission seo_enhancement_browse
@@ -568,3 +568,9 @@ CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1050	API folder Cities
 CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1049	API folder Districts
 CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1558	access scope countries
 CM-CNT-007	shopify	core	SH-C-111/boundary/SH-S-7458	Admin API object MarketWebPresence: a market's web presence defines its SEO strategy
+CM-MKS-001	salla	core	SA-C-165/boundary/SA-S-1055	own API folder Store Scopes, under the boundary placement
+CM-MKS-006	salla	core	SA-C-163/boundary/SA-S-1060	own API folder Currencies, under the boundary placement
+CM-MKS-006	salla	shows	SA-C-163/decides/SA-S-2605	currency_setting_edit / إعدادات العملات in the permissions a partner can request: an interface for apps
+CM-MKS-006	salla	shows	SA-C-163/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no currency
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1048	own API folder Countries, under the boundary placement
+CM-MKS-009	salla	shows	SA-C-166/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no country

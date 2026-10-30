@@ -534,3 +534,68 @@ The other flags are batches 1 to 5's, answered in their notes.
 - **CM-CNT-007's Shopify cell** now reads `core` as well as `extension-point`: batch 6 cites MarketWebPresence (SH-S-7458), Shopify's own API object that defines a market's SEO strategy. Batch 3's note that no statement shows Shopify's own SEO holds only for the admin's titles and meta descriptions.
 - **U-076 is ruled differently** by F's part (`apart`, from F's cells) and by this batch (`joined:CM-MKS-003`, since SA-C-304 names E under `also`). Each domain rules from its own cells; the merge flags the pair for one answer at the final review.
 
+
+## Batch 7: area MKS, SA-C-163, SA-C-165, SA-C-166 (the last batch)
+
+No capability is added. The three concerns land in batch 6's capabilities, whose Salla cells already cited most of their statements. Every reading below is a reading; the landings, cells and rulings cite the keys.
+
+### Landings
+
+- **SA-C-165 in CM-MKS-001, match:M-043, clean.** Its market currencies (SA-S-0159) are cited in CM-MKS-006, a child of CM-MKS-001.
+- **SA-C-163 in CM-MKS-006, match:M-044, strained.**
+  - Q1's note on M-044 pairs SH-C-108 with SA-C-163, and the concern is the currencies a customer picks beside the cart (SA-S-0155).
+  - It is coarser than CM-MKS-006: its exchange rate is cited in CM-MKS-007 (a child) and its currency shown by location in CM-MKS-004 (same tree).
+  - **Strained:** SA-S-0154 is also cited in CM-MKS-005 (store currency), a root, where it is Salla's only evidence. A reviewer who makes CM-MKS-005 the parent of CM-MKS-006, the alternative batch 6 named, would make the fit clean.
+- **SA-C-166 in CM-MKS-009, single, clean.** Q1's M-082 joins it with WooCommerce only.
+
+### Evidence added to existing cells
+
+All Salla, all statements of my concerns that batch 6 hadn't cited:
+- CM-MKS-001: SA-C-165/boundary/SA-S-1055 (Store Scopes folder, boundary placement), core.
+- CM-MKS-006: SA-C-163/boundary/SA-S-1060 (Currencies folder), core; SA-C-163/decides/SA-S-2605 (currency_setting_edit / إعدادات العملات as a partner's permission), shows, as batch 5 cited partner permissions; SA-C-163/boundary/SA-S-1562 (access scope Meta Data), shows.
+- CM-MKS-009: SA-C-166/boundary/SA-S-1048 (Countries folder), core; SA-C-166/boundary/SA-S-1562 (Meta Data), shows.
+
+The cells' readings, batch 6's rows, don't name these additions; the derived placements don't change (each cell already had core).
+
+### Rulings
+
+- **U-033, SH-C-106 against SA-C-165: joined:CM-MKS-001** (SH-S-0540, SA-S-0157).
+- **U-065, SH-C-106 against SA-C-165: joined:CM-MKS-001** (SH-S-0541, which names languages among a market's customizations, and SA-S-0157).
+- **U-065, SH-C-032 against SA-C-165: apart.**
+  - Shopify's Localizations and Languages (SH-S-0778, SH-S-1501) are cited in CM-MKS-008 and Salla's Markets (SA-S-0157) in CM-MKS-001, two roots.
+  - **For the reviewer:** one capability does cite both concerns. CM-MKS-006 cites SH-I-1916, the App Store category Currency and translation apps, which Q1 placed in both SH-C-032 and SH-C-108, beside SA-C-165's market currencies (SA-S-0159).
+  - My reading: that co-citation is the category's currency half, SH-C-108's side, not Shopify's localizations against Salla's Markets. So the ruling's keys are the statements that stand for localization and for Markets.
+  - If the reviewer reads SH-I-1916 as SH-C-032's key, the ruling becomes joined:CM-MKS-006. The checker tests the ruling on its keys, so it doesn't catch this.
+
+With batch 6's rows, U-065's four Shopify–Salla pairs are all ruled.
+
+### For the coordinator: earlier batches' rows
+
+- **Joins that can now be written as Q1 matches.** Both sides have landed:
+  - SH-C-106's landing (`definition`) can be rewritten as match:M-043;
+  - SH-C-107 (`role`), SH-C-108 (`definition`) and SH-C-109 (`terms`) can be rewritten as match:M-044.
+- **The access scope Meta Data (SA-S-1562) is read two ways in this part.** Batch 3 cites SA-C-033/boundary/SA-S-1562 as core in CM-CNT-007. Batch 6 (CM-MKS-008) and I (CM-MKS-006, CM-MKS-009) cite it as shows, since the statement names neither languages, currencies nor countries; only Q1's note ties the scope to each concern's operations. One reading should hold for all four.
+- The whole part's check prints no problem on earlier batches' rows.
+
+### Gaps that change what a cell can claim
+
+- **SA-C-163 and SA-C-165:** Q1's responsible and reason gaps are "page not read".
+- **SA-C-166:** the decides gap is "page not read", so who keeps the countries, cities and districts lists isn't held.
+- **SA-C-166's inventory:** it holds the Partners portal's country list (SA-I-1705 onward, other:portal-countries). I don't cite it: it is a list, not a statement of the capability.
+
+### What the whole part's check flagged
+
+`0 problems, 27 flags for the reviewer` (`python3 -I method/check_class_part.py studies/class-model/parts/E-anchor`). My flags:
+- **SA-C-163/decides/SA-S-0154 in CM-MKS-004, -005 and -006:** SA-C-163 is strained (above).
+- **M-044's concerns land in more than one tree:** a difference of grain, batch 6's cut. SA-C-163 lands with SH-C-108, the pair Q1's note names.
+- **SH-I-1916 in CM-MKS-006 and CM-MKS-008:** batch 6's; it bears on U-065 (above).
+
+Batch 6's flag that CM-MKS-009 had no concern landed is answered: SA-C-166 lands there. The other flags are batches 1 to 6's, answered in their notes.
+
+## The coordinator's corrections after batch 7 (30 October)
+
+- **SH-C-106, SH-C-108 and SH-C-109 are written as Q1's matches** (M-043, M-044), now that their Salla sides have landed. SH-C-107 stays as batch 6 wrote it: it lands in CM-MKS-005, store currency, a root of its own, where none of M-044's other concerns landed.
+- **The access scope Meta Data (SA-S-1562)** names no subject. It is `shows` in all four capabilities that cite it, CM-CNT-007 included, where batch 3 had it `core`. Salla's SEO cell stays `core` on its other rows.
+- **U-065's pair SH-C-032 against SA-C-165** is `apart` on its keys, while CM-MKS-006 cites SH-I-1916, an entry Q1 placed in both SH-C-032 and SH-C-108. Batch 7 reads it as the category's currency half. The final review weighs it.
+- **The part is complete:** 40 capabilities, 52 landings, 80 cells. Domain E's mapping parts follow: WooCommerce, Zid and BigCommerce.
+
