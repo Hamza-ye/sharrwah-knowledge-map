@@ -149,3 +149,4 @@ CM-PTN-010	bigcommerce	core	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans:
 CM-PTN-010	bigcommerce	core	BC-I-0115	the API resource Beta Powered By
 CM-PTN-010	bigcommerce	extension-point	BC-C-066/decides/BC-S-0362	the partner may own the billing relationship for its merchant's products, or let BigCommerce bill the merchant
 CM-PTN-010	bigcommerce	shows	BC-C-066/decides/BC-S-0077	closed beta, not available by default; access through BigCommerce support
+CM-AIA-005	bigcommerce	core	BC-I-0105	the API resource Agent Behavior for Tool Resynchronization (mcp)
