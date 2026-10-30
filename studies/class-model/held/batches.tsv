@@ -127,9 +127,6 @@ SA-61	salla	81	settings-center
 SA-62	salla	82	settings-center
 SA-63	salla	104	settings-center,shipping-carriers,theme-design-components,theme-marketplace
 WC-4	woocommerce	80	options,payments-providers
-WC-5	woocommerce	129	payments-providers,release-admin-menus,release-capabilities,release-features,release-rest-controllers
-WC-6	woocommerce	130	release-settings
-WC-7	woocommerce	60	release-settings,release-webhook-topics,woopayments-onboarding
 ZD-6	zid	87	dashboard-route-manifest,plans-offered
 ZD-7	zid	130	store-feature-flags,store-permissions
 ZD-8	zid	130	store-permissions
@@ -138,3 +135,7 @@ ZD-10	zid	130	store-plan-policies
 ZD-11	zid	130	store-plan-policies
 ZD-12	zid	130	store-plan-policies
 ZD-13	zid	142	store-plan-policies
+WC-5	woocommerce	84	payments-providers
+WC-6	woocommerce	101	release-admin-menus,release-capabilities,release-features,release-rest-controllers
+WC-7	woocommerce	130	release-settings
+WC-8	woocommerce	60	release-settings,release-webhook-topics,woopayments-onboarding

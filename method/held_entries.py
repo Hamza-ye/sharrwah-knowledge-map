@@ -886,7 +886,7 @@ def run_text(platform, cache={}):
     return cache[platform]
 
 
-RELEASE = {"woocommerce": "/home/user/woocommerce-release/11.2.1/woocommerce"}
+RELEASE_ROOTS = {"woocommerce": "/home/user/woocommerce-release/11.2.1/woocommerce"}
 
 
 def whole_text(platform, e, cache={}):
@@ -917,8 +917,8 @@ def cited_text(platform, reading, cache={}):
     from class_slice import citable, key, PREFIX
     repo, root, sub = REPOS[platform]
     bases = [os.path.join(root, sub), os.path.join(root, sub, "structures"), os.path.join(root, sub, "raw", "runs"), root]
-    if platform in RELEASE:
-        bases.append(RELEASE[platform])
+    if platform in RELEASE_ROOTS:
+        bases.append(RELEASE_ROOTS[platform])
     out = []
     for m in CITED_FILE.finditer(reading):
         rel = m.group(1)

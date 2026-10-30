@@ -41,3 +41,8 @@ The review found things the sources state that no entry holds, and that would ch
 - Zid's settings toggles and the other leads above.
 
 The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evidence, and BC-1's corrected lines cite it (M-1).
+
+## After the batches under version 3
+
+- **A maker field must be one merchants are shown** (after WC-4). WooCommerce's `is_built_by_wc: true` is a maker statement, since its admin shows it as 'Built by WooCommerce'. The payments suggestions' tag `made_in_woo` isn't: the release defines it only in a constant's comment, 'For extensions developed by Woo.' (`src/Internal/Admin/Suggestions/PaymentsExtensionSuggestions.php`, line 105), no admin asset shows it, and for PayPal Payments it contradicts what merchants read, 'PayPal Payments by PayPal' (WC-S-0911).
+- **A list of permissions** (after ZD-7): each permission is `core` on the capability it gates, as CM-STF-002's note keeps them; only a permission over the staff's permissions themselves goes on CM-STF-002.
