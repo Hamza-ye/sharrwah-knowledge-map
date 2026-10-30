@@ -33,6 +33,8 @@ each capability and route):
            corpus, not a page. Shopify's help pages held in observed-sh read as their help.shopify.com address,
            and Salla's help articles held in observed-sa as the article the concern map cites
   terms    the capability's name, note or cells' terms hold one of the point's own terms (1 a term)
+  search   no lead offered it: the drafter found it with class_slice.py caps or search, and cites the keys a landing
+           cell holds (not ranked)
 
 points/<batch>.tsv (tab-separated, a header row, no quoting; the brief defines each field):
   subject · vp_id · question · cap_ids · reach · route · basis · reading · register · conflict · status · outcome
@@ -65,7 +67,7 @@ BATCHES = {
 }
 HEAD = ["subject", "vp_id", "question", "cap_ids", "reach", "route", "basis", "reading", "register", "conflict",
         "status", "outcome"]
-ROUTES = ("cited", "concern", "page", "terms")
+ROUTES = ("cited", "concern", "page", "terms", "search")
 WEIGHT = {"cited": 3, "concern": 2, "page": 1, "terms": 1}
 CONFLICTS = ("count", "placement", "structure", "premise")
 STATUS = ("landed", "conflict")
@@ -696,9 +698,9 @@ def cmd_check(a):
                 kinds["key"] += ok
                 if not ok:
                     probs.append(f"{w}: basis {x}: not a key a cell of {', '.join(caps) or 'the concern map'} holds")
-                elif caps and "cited" not in routes:
-                    probs.append(f"{w}: basis {x} has no route cited")
-        for rt, need in (("cited", "key"), ("concern", "concern"), ("page", "concern"), ("terms", "term")):
+                elif caps and not {"cited", "search"} & set(routes):
+                    probs.append(f"{w}: basis {x} has no route cited or search")
+        for rt, need in (("cited", "key"), ("concern", "concern"), ("page", "concern"), ("terms", "term"), ("search", "key")):
             if rt in routes and not kinds[need]:
                 probs.append(f"{w}: route {rt} has no basis item of its form ({need})")
         if not r["reading"].strip():
