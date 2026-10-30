@@ -1,0 +1,97 @@
+cap_id	platform	supports	key	why
+CM-AIA-001	zid	extension-point	ZD-I-0430	the App Market category الذكاء الاصطناعي والتحليلات (AI and analytics)
+CM-AIA-001	zid	extension-point	ZD-I-0431	its subcategory الذكاء الاصطناعي ومساعدو المتجر (AI and store assistants)
+CM-AIA-001	zid	shows	ZD-C-042/decides/ZD-S-0797	AI processing only after the user's explicit in-app consent
+CM-AIA-001	zid	shows	ZD-C-112/responsible/ZD-S-1070	Zid Voice: AI that communicates on the merchant's behalf
+CM-AIA-002	zid	core	ZD-C-025/where/ZD-S-0713	the merchant tops up the Zid Agent's digital wallet to use its features
+CM-AIA-002	zid	core	ZD-C-025/decides/ZD-S-0714	Zid Agent's services need an active store on Zid
+CM-AIA-002	zid	core	ZD-C-025/responsible/ZD-S-0716	the Zid platform provides the service directly or through partners
+CM-AIA-002	zid	outside	ZD-C-025/boundary/ZD-S-0717	Google Cloud Vertex AI, a data processor, powers Zid Agent's AI-assisted features
+CM-AIA-002	zid	shows	ZD-I-0414	the terms of خدمة وكيل زد (Zid Agent)
+CM-AIA-002	zid	shows	ZD-C-025/decides/ZD-S-0715	two hours to ask for a refund of a wallet top-up
+CM-API-001	zid	core	ZD-C-071/boundary/ZD-S-0875	every API request needs the Authorization and X-Manager-Token headers
+CM-API-001	zid	core	ZD-C-074/responsible/ZD-S-0892	Zid provides the APIs and the connection tools
+CM-API-002	zid	core	ZD-C-071/where/ZD-S-0869	Base OAuth Server URL, for app authentication
+CM-API-002	zid	core	ZD-C-071/decides/ZD-S-0870	the merchant sees the app's requested scopes and approves or declines
+CM-API-002	zid	shows	ZD-I-0425	the policy Zid App Activation & OAuth Policy
+CM-API-002	zid	shows	ZD-C-071/responsible/ZD-S-0873	never ask merchants to paste tokens, keys, secrets or passwords
+CM-API-002	zid	shows	ZD-C-071/reason/ZD-S-0877	a partner-managed setup path for apps needing preparation
+CM-API-003	zid	core	ZD-C-071/decides/ZD-S-0871	scopes selected on the app's page in the Partner Dashboard
+CM-API-003	zid	core	ZD-C-071/decides/ZD-S-0872	the review team approves the selected scopes, each justified
+CM-API-003	zid	shows	ZD-C-071/responsible/ZD-S-0874	request only the scopes needed
+CM-API-003	zid	shows	ZD-C-071/reason/ZD-S-0876	scopes let merchants control what data the app can access
+CM-API-008	zid	core	ZD-C-072/where/ZD-S-0044	the API group Webhooks > APIs
+CM-API-008	zid	core	ZD-C-072/boundary/ZD-S-0882	POST /v1/managers/webhooks, scope third_webhook_write
+CM-API-008	zid	core	ZD-I-0122	the access scope third_webhook_read
+CM-API-008	zid	core	ZD-I-0124	the access scope webhooks.read_write
+CM-API-008	zid	core	ZD-C-072/where/ZD-S-0878	Zid monitors webhook endpoints' health with a circuit breaker
+CM-API-008	zid	core	ZD-C-072/decides/ZD-S-0879	broken after 30 failures in an hour; delivery suspended
+CM-API-008	zid	core	ZD-C-072/responsible/ZD-S-0881	no new events dispatched; pending events discarded
+CM-API-008	zid	shows	ZD-C-072/reason/ZD-S-0883	the reason for the health states
+CM-API-010	zid	core	ZD-C-072/decides/ZD-S-0880	conditions supported for order.create and order.status.update
+CM-APP-001	zid	core	ZD-C-074/where/ZD-S-0888	an app is activated from App Market > My apps
+CM-APP-001	zid	core	ZD-I-0500	the staff permission manage.app.market.settings
+CM-APP-001	zid	extension-point	ZD-C-070/responsible/ZD-S-0865	the partner provides the service; Zid only the technical connection
+CM-APP-001	zid	shows	ZD-C-070/responsible/ZD-S-0866	Zid answers for no technical problem in partners' apps
+CM-APP-001	zid	shows	ZD-C-070/boundary/ZD-S-0868	the merchant answers for sharing data after granting scopes
+CM-APP-001	zid	shows	ZD-I-0470	Apps among Zid's product lines
+CM-APP-002	zid	core	ZD-C-070/where/ZD-S-0861	سوق تطبيقات زد: a platform owned by Zid connecting stores to apps
+CM-APP-002	zid	core	ZD-C-070/decides/ZD-S-0862	public apps listed in Zid App Market for all merchants
+CM-APP-002	zid	core	ZD-C-070/decides/ZD-S-0863	Zid's team reviews and tests an app before publishing
+CM-APP-002	zid	core	ZD-C-070/responsible/ZD-S-0867	Zid tests and audits apps before launch
+CM-APP-002	zid	core	ZD-C-070/decides/ZD-S-0864	non-compliant apps returned, rejected, suspended or removed
+CM-APP-002	zid	core	ZD-C-070/decides/ZD-S-0467	the staff permission manage.app.market.details
+CM-APP-002	zid	core	ZD-I-0503	the staff permission view.app.market.home
+CM-APP-002	zid	core	ZD-I-0538	the staff permission view.app.market.browse, browse by category
+CM-APP-002	zid	extension-point	ZD-C-070/where/ZD-S-0422	the app category id 19, المالية والمدفوعات
+CM-APP-002	zid	extension-point	ZD-I-0442	the app category العمليات وإدارة المتجر
+CM-APP-002	zid	extension-point	ZD-I-0455	the app category التسويق والنمو
+CM-APP-002	zid	extension-point	ZD-I-0540	Subscription Apps > Public apps, in the extension points list
+CM-APP-002	zid	shows	ZD-I-0417	the terms of سوق تطبيقات زد
+CM-APP-003	zid	core	ZD-C-022/decides/ZD-S-0684	app-plan payment completed through Zid before activation
+CM-APP-003	zid	core	ZD-C-022/decides/ZD-S-0685	app charges kept within the applicable Zid plans
+CM-APP-003	zid	core	ZD-I-0045	the API group App Management > APIs
+CM-APP-003	zid	core	ZD-C-022/boundary/ZD-S-0690	the endpoint Subscription Details
+CM-APP-003	zid	core	ZD-C-022/boundary/ZD-S-0691	the endpoint Update Usage-Based Charges
+CM-APP-003	zid	shows	ZD-C-022/responsible/ZD-S-0688	Zid collects activation fees as agreed, a technical tool only
+CM-APP-004	zid	core	ZD-C-022/where/ZD-S-0683	App Management > Events: subscription app events
+CM-APP-004	zid	core	ZD-C-070/boundary/ZD-S-0075	app.market.application.install
+CM-APP-004	zid	core	ZD-I-0082	app.market.application.uninstall
+CM-APP-004	zid	core	ZD-C-071/boundary/ZD-S-0073	app.market.application.authorized, before installation
+CM-APP-004	zid	core	ZD-I-0083	app.market.application.rated
+CM-APP-004	zid	core	ZD-C-022/boundary/ZD-S-0074	app.market.subscription.active
+CM-APP-004	zid	core	ZD-I-0076	app.market.subscription.warning
+CM-APP-004	zid	core	ZD-I-0077	app.market.subscription.suspended
+CM-APP-004	zid	core	ZD-I-0078	app.market.subscription.expired
+CM-APP-004	zid	core	ZD-I-0079	app.market.subscription.renew
+CM-APP-004	zid	core	ZD-I-0080	app.market.subscription.upgrade
+CM-APP-004	zid	core	ZD-I-0081	app.market.subscription.refunded
+CM-APP-004	zid	core	ZD-I-0084	app.market.private.plan.request
+CM-APP-006	zid	core	ZD-C-073/responsible/ZD-S-0886	the embedded authentication mechanism Zid supports
+CM-APP-006	zid	core	ZD-C-073/boundary/ZD-S-0123	the scope embedded_apps_tokens_write in the initial OAuth request
+CM-APP-007	zid	core	ZD-C-073/decides/ZD-S-0885	embedded apps open inside the Zid Merchant Dashboard
+CM-APP-007	zid	extension-point	ZD-C-073/where/ZD-S-0884	partners' apps integrated into the dashboard through an iframe
+CM-APP-007	zid	shows	ZD-C-073/reason/ZD-S-0887	designed to bypass standard logins
+CM-APP-009	zid	core	ZD-C-074/boundary/ZD-S-0893	private apps, for specific stores, not listed in the App Market
+CM-APP-009	zid	core	ZD-C-074/decides/ZD-S-0889	a Professional or Enterprise plan, or API Access, to install a private app
+CM-APP-009	zid	core	ZD-C-074/decides/ZD-S-0890	the add-on خدمة الربط المباشرة (APIs) under Finance > Billing > Add-ons
+CM-APP-009	zid	core	ZD-C-074/decides/ZD-S-0387	plan line Connect your store with external systems (via API)
+CM-APP-009	zid	core	ZD-C-074/decides/ZD-S-0519	the staff permission manage.store.zid.keys
+CM-APP-009	zid	extension-point	ZD-I-0541	Subscription Apps > Private apps, in the extension points list
+CM-APP-009	zid	shows	ZD-C-074/responsible/ZD-S-0891	the merchant contracts with the developer or system provider
+CM-PTN-001	zid	shows	ZD-I-0426	the legal agreement App Partner terms
+CM-PTN-003	zid	core	ZD-C-022/where/ZD-S-0682	Payments → Payouts in the Partner Dashboard
+CM-PTN-003	zid	core	ZD-C-022/responsible/ZD-S-0687	the merchant pays Zid and Zid settles the partner's payout
+CM-PTN-003	zid	core	ZD-C-022/decides/ZD-S-0686	the partner rate is set in the agreement with Zid
+CM-PTN-003	zid	shows	ZD-C-022/responsible/ZD-S-0689	withholding tax deducted for a non-Saudi bank account
+CM-PTN-003	zid	shows	ZD-C-076/boundary/ZD-S-0899	Partner Share = paid amount excluding VAT x partner rate
+CM-PTN-004	zid	core	ZD-C-061/boundary/ZD-S-0853	Zid uploads an invoice for fees that the shipping app's partner pays
+CM-PTN-004	zid	shows	ZD-C-061/boundary/ZD-S-0854	Shipping Apps: 0.70 SAR per transaction
+CM-PTN-005	zid	core	ZD-C-115/where/ZD-S-1078	the dashboard section Growth
+CM-PTN-005	zid	core	ZD-C-115/decides/ZD-S-0470	the staff permission manage.store.ecosystem.packaging
+CM-PTN-005	zid	core	ZD-I-0486	the staff permission manage.store.ecosystem.consultation
+CM-PTN-005	zid	core	ZD-I-0520	the staff permission manage.store.ecosystem.storepreparation
+CM-PTN-005	zid	core	ZD-C-115/decides/ZD-S-1079	a relationship manager on the Professional plan
+CM-PTN-005	zid	extension-point	ZD-C-115/responsible/ZD-S-1080	partners provide the service, bought through a cart
+CM-PTN-005	zid	shows	ZD-C-115/where/ZD-S-1005	work with Zid's solutions to develop the business
+CM-PTN-005	zid	shows	ZD-I-0173	the help-centre product زد نمو

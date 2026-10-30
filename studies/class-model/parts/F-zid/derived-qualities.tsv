@@ -1,0 +1,7 @@
+cap_id	platform	quality	value	key	scope
+CM-AIA-002	zid	refund window for a Zid Agent wallet top-up	النافذة الزمنية للاسترجاع: تكون المدة المسموحة لطلب استرجاع مبلغ الشحن هي ساعتان (٢) فقط تبدأ من وقت إتمام عملية الشحن.	ZD-C-025/decides/ZD-S-0715	
+CM-API-008	zid	when a webhook endpoint is broken	| broken | The endpoint has failed 30 or more times in the past hour | Event delivery is suspended until you recover the webhook |	ZD-C-072/decides/ZD-S-0879	
+CM-API-010	zid	events that support conditions	**Note:** Conditions are currently supported only for the `order.create` and `order.status.update` events.	ZD-C-072/decides/ZD-S-0880	
+CM-PTN-003	zid	withholding tax on payouts to a non-Saudi bank account	Non-Saudi bank account: in USD, deducting withholding tax (WHT): 15% for apps and 5% for themes.	ZD-C-022/responsible/ZD-S-0689	
+CM-PTN-003	zid	the partner's share	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	
+CM-PTN-004	zid	fee per transaction for shipping apps	Shipping Apps: 0.70 SAR per transaction	ZD-C-061/boundary/ZD-S-0854	
