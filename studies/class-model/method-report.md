@@ -91,3 +91,8 @@ At the dry run's own rates (1.5 million per anchor concern, 0.46 million per map
 | **The extent, in all** | **about 700 to 1,000** |
 
 That is about three to four times the budget of 250 million. By `PLAN.md`, section 8, and the founder's standing decision of 27 October, the work goes on, re-planned to cost less and never cut short of the evidence. The projection is re-measured after the first two domains.
+
+## 8. After the dry run: B-zid (03:25 to 03:34 UTC)
+
+- **6.0 million, 48 requests,** for Zid's 4 domain-B concerns and a Zid cell for each of the model's 33 capabilities (4 added): about 0.18 million per cell, against WooCommerce's 0.46 in the dry run. The candidates script gave it each capability's leads, the conventions removed the dry run's open questions, and it ran at `high` effort.
+- **Lesson:** most of Zid's domain-B evidence is names in its inventory, with no statement describing them, so many of its cells cite inventory entries by id. Three of its four new capabilities rest on such names alone (a plan line, an API group). The convention admits them as capabilities. The final review checks whether each should fold into its parent.
