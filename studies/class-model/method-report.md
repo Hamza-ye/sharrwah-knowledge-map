@@ -151,3 +151,29 @@ That is inside the projection of 30 October's milestone (700 million to a billio
 - **What changed:** `class_slice.py caps` searches every domain's capabilities, their notes and their cells' terms. The extent's brief now asks an anchor to search with it before adding a capability, and to leave a thing another domain holds to that domain. The coordinator removed the copy.
 - **Lesson:** a part that can see only its own domain can duplicate another's. A cheap search at the point of adding costs less than a correction after the cells are built.
 
+## 13. Domain E complete, and the projection re-measured (30 October, about 08:00 UTC)
+
+**Where it stands:** domains B, D, E, F and G are complete for all five platforms and merge with no problem: 206 capabilities, 1,030 cells, 3,599 evidence rows. Domain A's anchor is in its last batch (38 concerns landed, 42 capabilities); domain C's anchor has begun, in twelve batches.
+
+**The rates measured since section 10, at `high` effort:**
+- **Anchors:** E's seven batches cost 30.5 million for 52 concerns (0.59 a concern), A's first six 37.1 million for 48 (0.77): about 0.7 million a concern, as section 10 found.
+- **Mapping cells:** D's three platforms 33.6 million for 198 cells (0.17), E's 29.1 million for 124 (0.23): about 0.2 million a cell.
+- **Back-fills:** about 0.3 million a cell where there are twenty or more, and about 2 million for a part of two or three cells, which pays its fixed cost of reading the brief.
+- **The coordinator's corrections** between batches cost no agent tokens. They caught a duplicate capability, eight statements counted in two domains, and some thirty fits and readings that later batches made stale.
+
+**The projection, re-measured** (an assumption, measured again after domain C's anchor):
+
+| Item | Million tokens |
+| --- | --- |
+| Spent | 509 |
+| A's last anchor batch | about 5 |
+| A's mapping, about 130 cells, with its back-fills | about 35 |
+| C's anchor, 118 concerns | about 85 |
+| C's mapping, about 360 cells, with its back-fills | about 90 |
+| Q3's check, with its brief's inspection | about 35 |
+| Final review, by risk, and its corrections | about 90 |
+| The architecture plan's review | about 10 |
+| **The extent, in all** | **about 860, within 750 to 1,000** |
+
+That is a little under section 10's 890, and about three and a half times the budget. No higher plan has been needed: the usage limit hasn't stopped an agent.
+

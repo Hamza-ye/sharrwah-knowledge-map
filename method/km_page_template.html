@@ -246,7 +246,7 @@ document.getElementById("asof").textContent = `generated from ${D.meta.short}, $
 if (D.meta.draft) {
   const runs = D.domains.filter(([d]) => D.meta.run[d]).map(([d, n]) => `${d} (${n}): ${D.meta.run[d].map(i => PL[i][1]).join(", ")}`);
   const el = document.getElementById("draft"); el.hidden = false;
-  el.innerHTML = `<b>A draft, built while the extent runs.</b> A platform that hasn't run in a domain shows as not mapped yet, and kinds count only the platforms that have run. Run so far: ${esc(runs.join("; ")) || "none"}.`;
+  el.innerHTML = `<b>A draft, built while the extent runs.</b> A platform that hasn't run in a domain shows as not mapped yet, and kinds count only the platforms that have run. Run so far: ${esc(runs.join("; ")) || "none"}. A domain not listed is still being built, and isn't in this draft.`;
 }
 const kc = k => caps.filter(c => c.kind === k).length;
 const openN = caps.filter(c => (c.kind || "").startsWith("open")).length;
