@@ -693,3 +693,78 @@ CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1348	event Products Searched
 CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1356	event Signed In
 CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1382	event Promotion Viewed
 CM-SUP-004	shopify	shows	SH-I-1977	Shopify's product name Email & Customer Chat, which names customer chat (restored by the coordinator, 30 October: a statement is never left uncited to keep a fit clean)
+CM-NTF-001	shopify	core	SH-C-150/where/SH-S-7141	admin route notifications, section Notifications
+CM-NTF-001	shopify	core	SH-C-150/where/SH-S-1499	admin page title Notifications
+CM-NTF-001	shopify	core	SH-C-150/where/SH-S-5210	route email_templates/:templateId in section Notifications
+CM-NTF-001	shopify	core	SH-C-150/decides/SH-S-5131	email-settings and notification-settings routes need the PREFERENCES permission
+CM-NTF-001	shopify	core	SH-I-1998	notification template group Customer notification settings
+CM-NTF-001	shopify	core	SH-I-2000	notification template Order confirmation
+CM-NTF-001	shopify	core	SH-I-2002	notification template Shipping confirmation
+CM-NTF-001	shopify	extension-point	SH-I-1919	App Store category Notification apps (SH-C-193, names D)
+CM-NTF-001	salla	core	SA-C-011/where/SA-S-1701	its own link Notifications, /notifications
+CM-NTF-001	salla	core	SA-C-011/where/SA-S-3576	dashboard app @salla.sa/ui-merchant-notifications, path /notifications
+CM-NTF-001	salla	core	SA-C-011/decides/SA-S-2416	staff permission store_notification_settings_management
+CM-NTF-001	salla	shows	SA-C-011/decides/SA-S-2633	store_notification_settings_management (اعدادات التنبيهات) in the permissions a partner can request (S7)
+CM-NTF-002	shopify	core	SH-C-150/decides/SH-S-5209	route notification-settings:staff in section Notifications, permission ORDERS
+CM-NTF-002	shopify	core	SH-I-2059	notification template group Staff notifications
+CM-NTF-002	shopify	core	SH-I-2061	staff notification template New order
+CM-NTF-002	shopify	extension-point	SH-I-1949	App Store category Staff notification apps
+CM-NTF-002	salla	core	SA-C-040/decides/SA-S-2275	staff permission order_notification, receive notifications of new orders (SA-C-040, domain C)
+CM-NTF-003	salla	core	SA-C-011/where/SA-S-1895	its own link SMS log, /logs/messages
+CM-NTF-003	salla	core	SA-C-011/decides/SA-S-2091	plan line أرشيف الرسائل النصية, plan سلة بلس
+CM-NTF-003	salla	core	SA-C-011/decides/SA-S-2414	staff permission sms_archive_browse
+CM-NTF-003	salla	core	SA-C-011/decides/SA-S-2415	staff permission sms_archive_message_view
+CM-NTF-003	salla	core	SA-C-011/decides/SA-S-3056	released flag sms-archive, plans plus, pro, special
+CM-NTF-003	salla	shows	SA-C-011/decides/SA-S-2631	sms_archive_browse in the permissions a partner can request (S7)
+CM-NTF-003	salla	shows	SA-C-011/decides/SA-S-2632	sms_archive_message_view in the permissions a partner can request (S7)
+CM-NTF-004	salla	core	SA-C-200/decides/SA-S-3057	released flag sms-gateways, plans plus, pro, special
+CM-NTF-004	salla	core	SA-C-011/decides/SA-S-3344	released flag sms-sender, plans plus, pro, special
+CM-NTF-004	salla	core	SA-C-011/decides/SA-S-3348	flag sms-balance, released and enabled in the answering store
+CM-NTF-004	salla	shows	SA-C-011/decides/SA-S-3352	flag sender-name, not released
+CM-NTF-004	salla	extension-point	SA-C-200/where/SA-S-0192	a Communication App takes over message delivery for merchants who install it
+CM-NTF-004	salla	extension-point	SA-C-200/decides/SA-S-0193	merchants use their own provider accounts, sender IDs and templates; the app controls routing and delivery
+CM-NTF-004	salla	extension-point	SA-C-200/where/SA-S-1186	app type Communication App, for a communication provider
+CM-NTF-004	salla	extension-point	SA-C-200/where/SA-S-1175	Partners-portal folder Communication Apps
+CM-NTF-004	salla	extension-point	SA-C-200/where/SA-S-1228	App Store category SMS / الرسائل النصية
+CM-NTF-004	salla	extension-point	SA-C-200/where/SA-S-1225	App Store category Email / البريد الالكتروني
+CM-NTF-004	salla	extension-point	SA-C-200/boundary/SA-S-1657	event communication.sms.send, fires when Salla needs to send an SMS to a customer
+CM-NTF-004	salla	extension-point	SA-C-200/boundary/SA-S-1658	event communication.email.send, fires when Salla needs to send an email to a customer
+CM-NTF-004	salla	extension-point	SA-C-200/boundary/SA-S-1646	event communication.whatsapp.send, a WhatsApp message to the customer
+CM-NTF-004	salla	extension-point	SA-C-200/boundary/SA-S-1660	communication webhook type order.status.confirmation, customer targeted by this notification
+CM-NTF-004	salla	extension-point	SA-C-200/boundary/SA-S-1664	communication webhook type order.notification.create, a new order created
+CM-LOY-004	salla	extension-point	SA-C-200/boundary/SA-S-1669	communication-app event customer.loyalty.earned
+CM-SUP-001	salla	extension-point	SA-C-200/boundary/SA-S-1670	communication-app event customer.feedback.reply, merchant replies to feedback
+CM-SUP-002	salla	extension-point	SA-C-200/boundary/SA-S-1671	communication-app event customer.rating.request
+CM-B2B-001	shopify	core	SH-C-044/where/SH-S-0768	admin label B2B
+CM-B2B-001	shopify	core	SH-C-044/decides/SH-S-7211	B2B built-in feature, Included with Shopify Plus
+CM-B2B-001	shopify	core	SH-C-044/decides/SH-S-7212	Shopify Plus gives everything to run a wholesale business
+CM-B2B-001	shopify	core	SH-C-044/decides/SH-S-0740	choose a blended or a dedicated B2B-only store
+CM-B2B-001	shopify	core	SH-C-044/decides/SH-S-5517	store entitlement b2b enabled
+CM-B2B-001	shopify	core	SH-C-044/decides/SH-S-5610	store feature b2bEnabled
+CM-B2B-001	salla	core	SA-C-098/where/SA-S-3553	dashboard app @salla.sa/ui-merchant-vendors, path /channel/vendors
+CM-B2B-001	salla	core	SA-C-098/decides/SA-S-2069	plan line سوق الجملة, plan سلة بلس
+CM-B2B-001	salla	core	SA-C-098/boundary/SA-S-5047	list products in Salla's wholesale market, set prices for retail merchants, receive wholesale orders
+CM-B2B-001	salla	core	SA-C-098/decides/SA-S-2459	staff permission vendors_manage_products
+CM-B2B-001	salla	core	SA-C-098/decides/SA-S-2460	staff permission vendors_edit_profile
+CM-B2B-001	salla	shows	SA-C-098/decides/SA-S-2669	vendors_manage_products in the permissions a partner can request (S7)
+CM-B2B-002	shopify	core	SH-C-044/where/SH-S-5113	admin route companies
+CM-B2B-002	shopify	core	SH-C-044/where/SH-S-1517	admin link Companies
+CM-B2B-002	shopify	core	SH-C-044/decides/SH-S-5114	companies route needs b2bEnabled, VIEW_COMPANIES and entitlement b2b.enabled
+CM-B2B-002	shopify	core	SH-C-044/decides/SH-S-5115	company create needs CREATE_AND_EDIT_COMPANIES
+CM-B2B-002	shopify	core	SH-C-044/decides/SH-S-5117	company location create, entitlement markets.b2b.enabled or b2bEnabled
+CM-B2B-002	shopify	core	SH-C-044/decides/SH-S-5118	company location store credit transaction history, its own permission
+CM-B2B-002	shopify	core	SH-C-044/boundary/SH-S-5948	read_companies access scope
+CM-B2B-002	shopify	core	SH-C-044/boundary/SH-S-6177	write_companies, the shop must have access to B2B
+CM-B2B-002	shopify	core	SH-C-044/boundary/SH-S-1174	webhook topic companies/create
+CM-B2B-002	shopify	core	SH-C-044/boundary/SH-S-7232	admin server intent create company
+CM-B2B-002	shopify	shows	SH-C-041/decides/SH-S-7213	B2B buying by adding customer profiles to a company, Shopify Plus
+CM-B2B-003	shopify	core	SH-C-037/where/SH-S-5100	admin route catalogs
+CM-B2B-003	shopify	core	SH-C-037/where/SH-S-1529	admin link Catalogs
+CM-B2B-003	shopify	core	SH-C-037/decides/SH-S-5101	catalogs route: VIEW_CATALOGS with retail, regions or B2B catalog entitlements
+CM-B2B-003	shopify	core	SH-C-037/decides/SH-S-5102	catalog create needs CREATE_AND_EDIT_CATALOGS
+CM-B2B-003	shopify	core	SH-C-037/boundary/SH-S-7226	GraphQL Admin API query catalogs
+CM-B2B-003	shopify	core	SH-C-037/boundary/SH-S-7227	GraphQL Admin API mutation catalogCreate
+CM-B2B-003	shopify	core	SH-C-044/decides/SH-S-7008	plan row Shopify B2B, catalogs per plan
+CM-B2B-003	shopify	core	SH-C-037/decides/SH-S-5534	entitlement markets.b2b.catalogs, limit 75000 on a Custom plan store
+CM-B2B-003	salla	shows	SA-C-098/boundary/SA-S-5047	set special prices for retail merchants in the wholesale market
+CM-NTF-002	salla	shows	SA-C-040/decides/SA-S-2492	order_notification (تلقي إشعارات بالطلبات الجديدة) in the permissions a partner can request (S7)
