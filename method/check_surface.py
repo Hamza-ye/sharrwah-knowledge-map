@@ -73,6 +73,7 @@ ALLOWED = {
     ("studies/class-model/briefs/Q3-check.md", "the glossary"): "the Knowledge Map's own definition of needed_by's spine, quoted from its page at e4d5cee",
     ("studies/class-model/inspection-Q3R.md", "the glossary"): "the Knowledge Map's own definition of needed_by's spine, quoted from its page at e4d5cee",
     ("studies/class-model/inspection-Q3R.md", "the obligation model"): "a line of q3.py quoted (ROOT = MODEL/../..), not the history's model",
+    ("studies/class-model/inspection-P.md", "the milestone reports"): "the inspection's own finding ids, M1 to M8, not the history's milestone reports",
     ("STATE.md", "the Knowledge Map"): "the founder's decisions of 30 October: the architecture plan's sources graded by its source types, and its page rebuilt from the model at GM",
     ("studies/class-model/inspection-R.md", "the obligation model"): "the inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
     ("studies/class-model/inspection-B.md", "the obligation model"): "the re-inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
