@@ -1,4 +1,127 @@
 cap_id	grade	placement	key	identifier
+CM-ACC-001	by landing	decides	SA-C-001/decides/SA-S-2082	تطبيق إدارة المتجر على أجهزة iOS و Android
+CM-ACC-001	exact	boundary	BC-C-055/boundary/BC-S-0300	account_read
+CM-ACC-001	exact	decides	BC-C-063/decides/BC-S-0344	store owner
+CM-ACC-001	exact	boundary	SA-C-001/boundary/SA-S-1622	store.owner.changed
+CM-ACC-001	exact	decides	SA-C-001/decides/SA-S-2086	حفظ الحسابات المفتوحة مؤخراً عند تسجيل الدخول
+CM-ACC-001	exact	decides	SA-C-001/decides/SA-S-2409	account_setting_management
+CM-ACC-001	exact	decides	SA-C-001/decides/SA-S-2626	account_setting_management
+CM-ACC-001	exact	boundary	SA-C-170/boundary/SA-S-0143	سياسة الاستخدام على منصة سلة
+CM-ACC-001	exact	boundary	SH-C-001/boundary/SH-S-0229	preamble
+CM-ACC-001	exact	decides	SH-C-001/decides/SH-S-0017	1. Account Terms
+CM-ACC-001	exact	boundary	ZD-C-077/boundary/ZD-S-0086	GET /v1/managers/account/me
+CM-ACC-001	exact	decides	ZD-C-077/decides/ZD-S-0516	manage.store.account.settings
+CM-ACC-001	exact	decides	ZD-C-077/decides/ZD-S-0901	Account Details
+CM-ACC-002	exact	boundary	BC-C-079/boundary/BC-S-0434	Arbitration Agreement
+CM-ACC-002	exact	decides	BC-C-079/decides/BC-S-0426	Governing Law; Jurisdiction
+CM-ACC-002	exact	decides	SH-C-002/decides/SH-S-0001	13. Shopify Contracting Party and Forum
+CM-ACC-002	exact	decides	WC-C-023/decides/WC-S-0457	1. Who's Who
+CM-ACC-002	exact	decides	WC-C-026/decides/WC-S-5328	15. Jurisdiction and Applicable Law
+CM-ACC-002	exact	decides	ZD-C-030/decides/ZD-S-0727	النظام الحاكم وآلية حسم النزاعات
+CM-ACC-002	exact	decides	ZD-C-030/decides/ZD-S-0728	القانون الحاكم (الكويت)
+CM-ACC-002	exact	decides	ZD-C-030/decides/ZD-S-0729	النسخة المعتمدة
+CM-ACC-003	exact	boundary	BC-C-055/boundary/BC-S-0301	Account-level API credentials
+CM-ACC-003	exact	boundary	SA-C-003/boundary/SA-S-5150	قائمة المتاجر المرتبطة
+CM-ACC-003	exact	decides	SA-C-003/decides/SA-S-2088	إدارة قائمة المتاجر المرتبطة
+CM-ACC-003	exact	decides	SA-C-003/decides/SA-S-3085	multi-stores
+CM-ACC-003	exact	decides	SA-C-003/decides/SA-S-3450	store-management
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-0245	Organization administrator
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-5228	settings:organizations:details:stores:create
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-5232	settings:organizations:test-drive
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-5242	organization-settings:organizations
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-5291	features.hasOrgSettings
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-5292	features.hasOrgSettings
+CM-ACC-003	exact	decides	SH-C-003/decides/SH-S-7073	Free expansion stores
+CM-ACC-003	exact	boundary	WC-C-070/boundary/WC-S-0089	wc/v3 > network-orders
+CM-ACC-004	exact	decides	SA-C-006/decides/SA-S-0133	3. حدّد نوع الكيان
+CM-ACC-004	exact	decides	SA-C-006/decides/SA-S-0142	ثانياً: نظرة عامة عن متجرك
+CM-ACC-004	exact	boundary	SH-C-004/boundary/SH-S-0252	Considerations
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-0250	Considerations
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-0251	Considerations
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-5229	settings:organizations:details:business-details:create
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-5230	settings:organizations:details:business-details:edit
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-5231	settings:organizations:details:business-entities
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-5812	features.centralLegalEntitiesEnabled
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7081	settings:general:switch-business-entity
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7186	legalEntity.registeredBusinessName
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7187	legalEntity.governmentIdentifiers
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7189	default_individual
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7190	default_company
+CM-ACC-004	exact	decides	SH-C-004/decides/SH-S-7191	default_non_profit
+CM-ACC-004	exact	boundary	ZD-C-035/boundary/ZD-S-0757	GET /v1/managers/account/store/business (third_store_business_read)
+CM-ACC-004	exact	decides	ZD-C-035/decides/ZD-S-0753	نوع النشاط
+CM-ACC-004	exact	decides	ZD-C-035/decides/ZD-S-0754	حسب نوع النشاط والدولة
+CM-ACC-004	exact	decides	ZD-C-035/decides/ZD-S-0755	سجل تجاري
+CM-ACC-005	exact	boundary	SH-C-005/boundary/SH-S-0258	Connect Shopify Payments to each entity
+CM-ACC-005	exact	decides	SH-C-005/decides/SH-S-0253	Plan requirement note
+CM-ACC-005	exact	decides	SH-C-005/decides/SH-S-0255	Requirements when selling from multiple entities with Shopify Payments
+CM-ACC-005	exact	decides	SH-C-005/decides/SH-S-0257	Assign entities to markets
+CM-ACC-005	exact	decides	SH-C-005/decides/SH-S-5247	payments:settings:business-entity
+CM-ACC-006	by landing	decides	BC-C-047/decides/BC-S-0266	Settings V3: Storefront SEO
+CM-ACC-006	exact	boundary	BC-C-047/boundary/BC-S-0268	store_v2_information
+CM-ACC-006	exact	boundary	BC-C-047/boundary/BC-S-0269	store/information/updated
+CM-ACC-006	exact	decides	BC-C-047/decides/BC-S-0264	Settings V3: Store Profile
+CM-ACC-006	exact	decides	BC-C-047/decides/BC-S-0265	Settings V3: Storefront Status
+CM-ACC-006	exact	decides	BC-C-047/decides/BC-S-0267	global default
+CM-ACC-006	exact	boundary	SA-C-002/boundary/SA-S-1545	settings
+CM-ACC-006	exact	boundary	SA-C-002/boundary/SA-S-1565	store-settings
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2087	ميزة البحث في إعدادات المتجر
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2092	تفريغ الكاش
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2097	تخصيص خيارات المتجر
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2384	store_setting_browse
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2385	store_setting_edit_basic_info
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2386	store_setting_edit_setting
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2387	store_setting_edit_social_media_account
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2418	made_in_ksa_management
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2601	store_setting_browse
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2602	store_setting_edit_basic_info
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2603	store_setting_edit_setting
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2604	store_setting_edit_social_media_account
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-2635	made_in_ksa_management
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-3353	store-status
+CM-ACC-006	exact	decides	SA-C-002/decides/SA-S-3370	made-in-ksa
+CM-ACC-006	exact	boundary	SA-C-231/boundary/SA-S-5147	basic_settings.main_store_data.description
+CM-ACC-006	exact	boundary	SH-C-013/boundary/SH-S-1357	shop/update
+CM-ACC-006	exact	decides	SH-C-013/decides/SH-S-5131	settings:general
+CM-ACC-006	exact	decides	WC-C-030/decides/WC-S-0880	General settings
+CM-ACC-006	exact	decides	ZD-C-033/decides/ZD-S-0746	تغيير دولة المتجر
+CM-ACC-006	exact	boundary	ZD-C-077/boundary/ZD-S-0087	GET /v1/managers/account/store
+CM-ACC-007	exact	decides	SA-C-002/decides/SA-S-2084	تفعيل وضع صيانة المتجر
+CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0122	Part I, D. (after limitation of liability)
+CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0131	Part I, A. Onboarding, KYC and underwriting
+CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0353	Reasons for account holds
+CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-0003	## 1. Entity identity
+CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
+CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-3101	kyc_new_workflow
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0290	Part A, definitions, "Unsupported Region"
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0298	help.shopify.com/en/manual/your-account/legal/unsupported-countries-and-regions.md
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0299	list of unsupported countries and regions
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0300	list of unsupported countries and regions
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0301	list of unsupported countries and regions
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0302	list of unsupported countries and regions
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0303	list of unsupported countries and regions
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0304	restrictions that apply to all users
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0305	restrictions that apply to all users
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0306	restrictions that apply to all users
+CM-ACC-008	exact	decides	SH-C-174/decides/SH-S-0307	restrictions that apply to all users
+CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0490	18. US Economic Sanctions
+CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0491	18. US Economic Sanctions
+CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0493	18. US Economic Sanctions
+CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0648	8. j. Ecommerce Services: Prohibited Uses
+CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0657	18. US Economic Sanctions
+CM-ACC-008	exact	decides	ZD-C-032/decides/ZD-S-0742	السعودية ودول الخليج
+CM-ACC-008	exact	decides	ZD-C-032/decides/ZD-S-0743	Is this available across the GCC?
+CM-ACC-009	exact	boundary	WC-C-082/boundary/WC-S-0248	wc-admin > launch-your-store
+CM-ACC-009	exact	boundary	WC-C-082/boundary/WC-S-5423	update_option_woocommerce_coming_soon
+CM-ACC-009	exact	decides	WC-C-082/decides/WC-S-0891	WooCommerce Coming soon mode
+CM-ACC-009	exact	decides	WC-C-082/decides/WC-S-5421	woocommerce_coming_soon
+CM-ACC-010	exact	boundary	WC-C-049/boundary/WC-S-0464	8. Specific Service Terms: c. Woo
+CM-ACC-010	exact	boundary	WC-C-049/boundary/WC-S-0555	Connecting to WordPress.com with WooPayments
+CM-ACC-010	exact	boundary	WC-C-049/boundary/WC-S-0634	Set up WooCommerce Tax: Before you start
+CM-ACC-010	exact	boundary	WC-C-049/boundary/WC-S-5336	Changing the WordPress.com account you're connected to
+CM-ACC-010	exact	decides	WC-C-049/decides/WC-S-5334	WordPress.com account
+CM-ACC-010	exact	decides	WC-C-049/decides/WC-S-5335	Ecommerce Services (Privacy Policy)
+CM-ACC-011	exact	decides	WC-C-025/decides/WC-S-5327	GPLv3 section 2. Basic Permissions
 CM-AIA-001	exact	boundary	BC-C-064/boundary/BC-S-0353	No Input Training
 CM-AIA-001	exact	decides	BC-C-064/decides/BC-S-0351	AI Features
 CM-AIA-001	exact	decides	SA-C-012/decides/SA-S-3158	suggested-by-moshamer
@@ -859,6 +982,7 @@ CM-APP-001	exact	boundary	ZD-C-070/boundary/ZD-S-0868	صلاحيات النطا�
 CM-APP-002	exact	decides	BC-C-059/decides/BC-S-0325	Marketplace team
 CM-APP-002	exact	decides	SA-C-175/decides/SA-S-0023	المادة (2) – الشروط العامة لاستخدام المتجر
 CM-APP-002	exact	boundary	SA-C-194/boundary/SA-S-1075	App Details Builder
+CM-APP-002	exact	decides	SA-C-232/decides/SA-S-0028	المادة (7) – إيقاف الخدمة أو التطبيق
 CM-APP-002	exact	boundary	SH-C-157/boundary/SH-S-0215	2. Using the Shopify API
 CM-APP-002	exact	decides	SH-C-157/decides/SH-S-0692	About app distribution
 CM-APP-002	exact	decides	SH-C-157/decides/SH-S-0694	shopify.dev/docs/apps/launch/protected-customer-data.md
@@ -2597,6 +2721,56 @@ CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-0381	Professional: Standout Featu
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1053	ميتا
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1055	رصيد النقاط
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1056	شركة ميتا
+CM-ONB-001	exact	decides	SA-C-006/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
+CM-ONB-001	exact	decides	SA-C-167/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
+CM-ONB-001	exact	decides	SH-C-006/decides/SH-S-0304	restrictions that apply to all users
+CM-ONB-001	exact	decides	ZD-C-033/decides/ZD-S-0747	تحديد موقعك أو موقع المخزون
+CM-ONB-002	exact	boundary	BC-C-059/boundary/BC-S-0329	store/app/uninstalled
+CM-ONB-002	exact	decides	BC-C-080/decides/BC-S-0436	material breach
+CM-ONB-002	exact	decides	BC-C-086/decides/BC-S-0470	Content Removal
+CM-ONB-002	exact	decides	SA-C-232/decides/SA-S-0115	violations.desc
+CM-ONB-002	exact	boundary	SH-C-014/boundary/SH-S-0661	How to submit an appeal
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0035	5. Payment of Fees and Taxes
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0074	14. Term and Termination
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0232	14. Term and Termination
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0658	help.shopify.com/en/manual/compliance/legal/handling-store-termination.md
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0659	Common reasons for restricted access
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-0660	What you can do from your Shopify admin during restricted access
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5069	inactive-account:list
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5070	inactive-account:checkout
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5080	pending-termination:payments
+CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5081	pending-termination:payments:payouts
+CM-ONB-002	exact	decides	ZD-C-026/decides/ZD-S-0719	متجر مفعل
+CM-ONB-003	exact	decides	BC-C-066/decides/BC-S-0077	Closed Betas
+CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-2194	فريقنا معك في كل خطوة
+CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-2196	مدير حساب مخصص
+CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-3403	intercom-complains
+CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-3404	intercom-campaign-complains
+CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-3451	support-plan
+CM-ONB-003	exact	decides	SH-C-155/decides/SH-S-7015	24/7 support
+CM-ONB-003	exact	decides	SH-C-155/decides/SH-S-7016	Free Shopify Academy courses
+CM-ONB-003	exact	boundary	WC-C-062/boundary/WC-S-0582	1.1.11
+CM-ONB-003	exact	boundary	WC-C-062/boundary/WC-S-5345	Marketplace developer responsibilities
+CM-ONB-003	exact	decides	WC-C-062/decides/WC-S-0646	8. c. Woo: Compatibility, access, updates, and support
+CM-ONB-003	exact	decides	ZD-C-114/decides/ZD-S-0378	Professional: Standout Features
+CM-ONB-003	exact	decides	ZD-C-114/decides/ZD-S-1004	Live Chat Support
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0083	wc-admin
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0183	wc-admin > notice (Notice)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0184	wc-admin > features (Features)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0185	wc-admin > experiments (Experiments)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0192	wc-admin > options (Options)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0195	wc-admin > plugins (Plugins)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0206	wc-analytics > admin/notes (Notes)
+CM-ONB-004	by landing	boundary	WC-C-081/boundary/WC-S-0207	wc-analytics > NoteActions
+CM-ONB-004	by landing	decides	WC-C-081/decides/WC-S-0039	woocommerce (admin menu)
+CM-ONB-004	by landing	decides	WC-C-081/decides/WC-S-5420	woocommerce-home
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0196	wc-admin > onboarding/free-extensions (OnboardingFreeExtensions)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0197	wc-admin > onboarding/product-types (OnboardingProductTypes)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0198	wc-admin > onboarding/profile (OnboardingProfile)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0199	wc-admin > onboarding/tasks (OnboardingTasks)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0200	wc-admin > onboarding/themes (OnboardingThemes)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0201	wc-admin > onboarding/plugins (OnboardingPlugins)
+CM-ONB-004	exact	boundary	WC-C-081/boundary/WC-S-0202	wc-admin > onboarding (OnboardingProducts)
 CM-OPS-001	exact	decides	BC-C-082/decides/BC-S-0450	Integrity and Stability
 CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0162	3. تخصيص الإسناد التلقائي لشركات الشحن
 CM-OPS-001	exact	boundary	SA-C-235/boundary/SA-S-0194	Overview
@@ -2618,6 +2792,95 @@ CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5371	remote_logging
 CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5372	RemoteLogger::is_remote_logging_allowed
 CM-OPS-005	exact	boundary	WC-C-037/boundary/WC-S-0446	WC_Log_Handler
 CM-OPS-005	exact	decides	WC-C-037/decides/WC-S-5373	woocommerce_logs_ settings
+CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0185	GMV cap
+CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0186	Automatic Upgrades
+CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0187	Scale
+CM-PLN-001	exact	boundary	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans
+CM-PLN-001	exact	boundary	SA-C-004/boundary/SA-S-5002	💰 طريقة استرجاع المبلغ
+CM-PLN-001	exact	decides	SA-C-004/decides/SA-S-3395	enable-special-plan-purchase
+CM-PLN-001	exact	decides	SA-C-004/decides/SA-S-3452	plan-free-trial
+CM-PLN-001	exact	decides	SA-C-004/decides/SA-S-3528	plans
+CM-PLN-001	exact	boundary	SH-C-015/boundary/SH-S-7453	ShopPlan
+CM-PLN-001	exact	boundary	SH-C-015/boundary/SH-S-7454	Shop.plan
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-2076	plan.name basic
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-5070	merchant-checkout:subscribe:plans
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-5071	inactive-account:reactivate:pick-plan:pos
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-5082	plan
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-5092	plus_inactive_account
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-7001	Pay monthly
+CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-7002	Pay yearly
+CM-PLN-001	exact	boundary	ZD-C-020/boundary/ZD-S-0677	package_code=rise
+CM-PLN-001	exact	decides	ZD-C-020/decides/ZD-S-0672	Starter; Rise; Growth; Pro
+CM-PLN-002	exact	decides	SA-C-004/decides/SA-S-2085	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا
+CM-PLN-002	exact	decides	SA-C-004/decides/SA-S-3438	renew-price-by-slug
+CM-PLN-002	exact	boundary	SA-C-005/boundary/SA-S-0089	أولاً: تعريف محفظة متجرك على سلة
+CM-PLN-002	exact	decides	SH-C-015/decides/SH-S-7001	Pay monthly
+CM-PLN-002	exact	decides	SH-C-015/decides/SH-S-7002	Pay yearly
+CM-PLN-002	exact	decides	SH-C-201/decides/SH-S-5084	settings:plan:shop_plus_self_renewals
+CM-PLN-002	exact	decides	ZD-C-020/decides/ZD-S-0672	Starter; Rise; Growth; Pro
+CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0154	Open Payment Provider Fee
+CM-PLN-003	exact	decides	SA-C-004/decides/SA-S-2198	بدون عمولة منصة على مبيعاتك
+CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0273	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0274	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0275	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0276	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
+CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-7030	Third-party transaction fees
+CM-PLN-004	exact	decides	BC-C-030/decides/BC-S-0188	Fees
+CM-PLN-004	exact	decides	BC-C-030/decides/BC-S-0189	Late Payments
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2064	إعدادات الفوترة
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2391	store_setting_purchase_from_salla_store
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2393	wallet_and_invoices_management
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2608	store_setting_purchase_from_salla_store
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2610	wallet_and_invoices_management
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-3441	billing-native
+CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-3459	payg-usage-billing
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-0033	5. Payment of Fees and Taxes
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-0034	5. Payment of Fees and Taxes
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-0075	15. Modifications
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-0268	Change your billing currency
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5072	inactive-account-billing-invoice:list
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5073	inactive-account-billing-invoice:export-credit-note
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5074	inactive-account-billing-history:list
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5076	inactive-account:profile
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5087	billing:list
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5088	issued:invoice:list
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-5089	billing:next:charges:list
+CM-PLN-004	exact	decides	SH-C-016/decides/SH-S-7170	VIEW_BILLING_DETAILS
+CM-PLN-004	exact	boundary	WC-C-057/boundary/WC-S-0549	WooPayments: Tax Documents for VAT/GST/CT
+CM-PLN-004	exact	decides	ZD-C-020/decides/ZD-S-0673	عملة الرسوم
+CM-PLN-004	exact	decides	ZD-C-020/decides/ZD-S-0674	تغيير الأسعار
+CM-PLN-004	exact	decides	ZD-C-026/decides/ZD-S-0720	الأسعار
+CM-PLN-005	exact	boundary	BC-C-030/boundary/BC-S-0191	Authorized Payment Method
+CM-PLN-005	exact	decides	SA-C-004/decides/SA-S-2083	إدارة الاشتراك في تطبيق سلة على iOS برصيد آيتونز
+CM-PLN-005	exact	boundary	SA-C-005/boundary/SA-S-0089	أولاً: تعريف محفظة متجرك على سلة
+CM-PLN-005	exact	decides	SH-C-016/decides/SH-S-0035	5. Payment of Fees and Taxes
+CM-PLN-005	exact	decides	SH-C-016/decides/SH-S-5075	inactive-account-pay-bills:list
+CM-PLN-005	exact	decides	SH-C-016/decides/SH-S-5077	inactive-account:profile:billing:profile:delete-payment-method
+CM-PLN-005	exact	decides	SH-C-016/decides/SH-S-7171	BILLING_PAY_INVOICES
+CM-PLN-005	exact	boundary	WC-C-012/boundary/WC-S-0538	WooPayments: Fees
+CM-PLN-005	exact	decides	ZD-C-017/decides/ZD-S-0656	Zid Wallet
+CM-PLN-005	exact	boundary	ZD-C-021/boundary/ZD-S-0681	أطراف ثالثة
+CM-PLN-005	exact	decides	ZD-C-021/decides/ZD-S-0679	تبديل موردي معالجة الدفع
+CM-PLN-006	exact	boundary	SA-C-004/boundary/SA-S-5002	💰 طريقة استرجاع المبلغ
+CM-PLN-006	exact	boundary	SA-C-005/boundary/SA-S-0089	أولاً: تعريف محفظة متجرك على سلة
+CM-PLN-006	exact	boundary	SA-C-005/boundary/SA-S-0091	أولاً: تعريف محفظة متجرك على سلة
+CM-PLN-006	exact	decides	SA-C-005/decides/SA-S-0092	الأسئلة الشائعة
+CM-PLN-006	exact	decides	SA-C-005/decides/SA-S-0093	رابعاً: طريقة إدارة رصيد المتجر
+CM-PLN-006	exact	decides	SA-C-005/decides/SA-S-0096	متى يصل الرصيد إلى حسابي البنكي؟
+CM-PLN-006	exact	decides	SA-C-005/decides/SA-S-0097	ماذا يحدث إذا تأخر تحويل الرصيد؟
+CM-PLN-006	exact	decides	SA-C-005/decides/SA-S-2062	إضافة وسحب رصيد المتجر
+CM-PLN-006	exact	boundary	ZD-C-017/boundary/ZD-S-0659	معلومات مستندات اعرف عميلك
+CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0651	حد السحب
+CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0652	حد الشحن بالبطاقة
+CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0653	توثيق الحساب
+CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0654	عملة المحفظة
+CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0655	عملات لا يمكن سحبها
+CM-PLN-007	exact	decides	SA-C-113/decides/SA-S-0105	wallet.epayment.summary.tooltips.tax
+CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0036	5. Payment of Fees and Taxes
+CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0277	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
+CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0278	Understanding VAT obligations for Shopify stores in Saudi Arabia
+CM-PLN-007	exact	boundary	WC-C-057/boundary/WC-S-0549	WooPayments: Tax Documents for VAT/GST/CT
+CM-PLN-007	exact	decides	WC-C-057/decides/WC-S-0548	WooPayments: Taxes
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2443	salla_point_manage_accounts
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2444	salla_point_manage_payments
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2445	salla_point_return_policy
@@ -3198,6 +3461,62 @@ CM-SRF-001	exact	decides	SH-C-118/decides/SH-S-5145	order:mobile:release-fulfill
 CM-SRF-001	exact	boundary	WC-C-090/boundary/WC-S-0203	wc-admin > mobile-app (MobileAppMagicLink)
 CM-SRF-001	exact	boundary	WC-C-090/boundary/WC-S-0204	wc-admin > mobile-app (MobileAppQRLogin)
 CM-SRF-001	exact	decides	WC-C-090/decides/WC-S-5437	push_notifications
+CM-STF-001	by landing	boundary	SH-C-009/boundary/SH-S-6142	read_users
+CM-STF-001	exact	boundary	BC-C-061/boundary/BC-S-0335	account_users_write
+CM-STF-001	exact	decides	BC-C-061/decides/BC-S-0334	Staff accounts
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-2078	زيادة عدد المستخدمين *برسوم إضافية
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-2143	إضافة حسابات الموظفين وإدارة صلاحياتهم
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-2426	users_browse
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-2427	users_management
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-3083	store-team
+CM-STF-001	exact	decides	SA-C-009/decides/SA-S-3084	user-advance-management
+CM-STF-001	exact	boundary	SH-C-009/boundary/SH-S-1146	read_users
+CM-STF-001	exact	boundary	SH-C-009/boundary/SH-S-6143	read_users
+CM-STF-001	exact	boundary	SH-C-009/boundary/SH-S-6144	read_users
+CM-STF-001	exact	boundary	SH-C-009/boundary/SH-S-6145	read_users
+CM-STF-001	exact	boundary	SH-C-009/boundary/SH-S-7244	ServerIntent create user
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-0020	2.2 Staff Accounts
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-0021	2.2 Staff Accounts
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-5003	settings-account:invite
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-5004	settings-account:edit
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-5233	settings:organizations:accounts
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-5240	settings:organizations:accounts:create
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-7011	Additional staff accounts
+CM-STF-001	exact	decides	SH-C-009/decides/SH-S-7164	ADD_REMOVE_STAFF
+CM-STF-001	exact	decides	WC-C-080/decides/WC-S-0884	WooCommerce user roles
+CM-STF-001	exact	boundary	ZD-C-094/boundary/ZD-S-0941	Role: Manager
+CM-STF-001	exact	decides	ZD-C-094/decides/ZD-S-0939	Add Team Members
+CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2079	إدارة الأدوار الوظيفية
+CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2428	roles_browse
+CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2429	roles_management
+CM-STF-002	exact	boundary	SH-C-010/boundary/SH-S-7243	ServerIntent create role
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-0247	Administrator
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-5234	settings:organizations:accounts:roles
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-5235	settings:organizations:accounts:roles:list
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-5236	settings:organizations:accounts:roles:create
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-5307	features.rbacEnabled
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-5318	features.rbacEnabled
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-7163	MANAGE_STAFF_PERMISSIONS
+CM-STF-002	exact	decides	SH-C-010/decides/SH-S-7166	STAFF_API_PERMISSION_MANAGEMENT
+CM-STF-002	exact	boundary	WC-C-080/boundary/WC-S-5418	woocommerce_shop_manager_editable_roles
+CM-STF-002	exact	decides	WC-C-080/decides/WC-S-0884	WooCommerce user roles
+CM-STF-002	exact	decides	WC-C-080/decides/WC-S-5415	WC_Install::get_core_capabilities
+CM-STF-002	exact	decides	WC-C-080/decides/WC-S-5416	WC_Install::get_core_capabilities
+CM-STF-002	exact	decides	WC-C-080/decides/WC-S-5417	wc_rest_check_user_permissions
+CM-STF-002	exact	decides	ZD-C-094/decides/ZD-S-0939	Add Team Members
+CM-STF-002	exact	decides	ZD-C-094/decides/ZD-S-0940	permissions tied to role
+CM-STF-003	exact	decides	SH-C-010/decides/SH-S-5237	settings:organizations:accounts:groups
+CM-STF-003	exact	decides	SH-C-010/decides/SH-S-7077	Custom user groups
+CM-STF-005	exact	boundary	SA-C-013/boundary/SA-S-5131	الخدمة الموفرة من قبلي تتطلب صلاحيات وصول للمتجر، كيف يمكنني تقديم طلب للوصول؟
+CM-STF-005	exact	decides	SA-C-013/decides/SA-S-2404	support_access_requests
+CM-STF-005	exact	decides	SA-C-013/decides/SA-S-2621	support_access_requests
+CM-STF-005	exact	decides	SA-C-013/decides/SA-S-3355	support-access
+CM-STF-005	exact	boundary	SA-C-014/boundary/SA-S-5132	support_access.no_request.description
+CM-STF-005	exact	boundary	SH-C-011/boundary/SH-S-7466	AccountType.COLLABORATOR
+CM-STF-005	exact	decides	SH-C-011/decides/SH-S-0239	9.9 Third Party Services and Third Party Partners
+CM-STF-005	exact	decides	SH-C-011/decides/SH-S-0246	Collaborator access
+CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7012	Invite third-party collaborators
+CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7167	MANAGE_COLLABORATORS
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0073	Product ratings and reviews
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0074	review submission
 CM-SUP-001	exact	boundary	SA-C-030/boundary/SA-S-1039	Reviews
@@ -3251,3 +3570,193 @@ CM-SUP-008	exact	decides	SA-C-179/decides/SA-S-2249	complaint_management
 CM-SUP-008	exact	decides	SA-C-179/decides/SA-S-2466	complaint_management
 CM-SUP-008	exact	boundary	ZD-C-092/boundary/ZD-S-0935	الرابط المخصص
 CM-SUP-008	exact	decides	ZD-C-111/decides/ZD-S-0997	100% optional
+CM-TRU-001	exact	decides	SA-C-001/decides/SA-S-3182	store-two-factor-authentication
+CM-TRU-001	exact	decides	SA-C-001/decides/SA-S-3365	biometric-verification
+CM-TRU-001	exact	decides	SH-C-007/decides/SH-S-0260	Note (requirements)
+CM-TRU-001	exact	decides	SH-C-007/decides/SH-S-5238	settings:organizations:accounts:security
+CM-TRU-001	exact	decides	SH-C-007/decides/SH-S-5243	organization-settings:organizations:accounts:security
+CM-TRU-001	exact	decides	SH-C-007/decides/SH-S-7165	AUTHENTICATION_MANAGEMENT
+CM-TRU-001	exact	boundary	ZD-C-095/boundary/ZD-S-0946	Zapier; API
+CM-TRU-001	exact	decides	ZD-C-095/decides/ZD-S-0944	Security Settings
+CM-TRU-001	exact	decides	ZD-C-095/decides/ZD-S-0945	عالي
+CM-TRU-002	exact	boundary	SA-C-006/boundary/SA-S-0132	1. ادخل بيانات مالك المتجر بدقة
+CM-TRU-002	exact	decides	SA-C-006/decides/SA-S-0138	ماذا تجهّز قبل البدء؟
+CM-TRU-002	exact	boundary	SA-C-232/boundary/SA-S-0132	1. ادخل بيانات مالك المتجر بدقة
+CM-TRU-002	exact	decides	SA-C-232/decides/SA-S-0138	ماذا تجهّز قبل البدء؟
+CM-TRU-002	exact	decides	SH-C-008/decides/SH-S-0264	When identity verification is required
+CM-TRU-002	exact	decides	SH-C-008/decides/SH-S-0265	Complete identity verification request
+CM-TRU-002	exact	boundary	ZD-C-038/boundary/ZD-S-0777	إنشاء الحساب في زد باي
+CM-TRU-002	exact	boundary	ZD-C-038/boundary/ZD-S-0778	Quick ID Check
+CM-TRU-002	exact	decides	ZD-C-038/decides/ZD-S-0775	شرط نفاذ
+CM-TRU-002	exact	decides	ZD-C-038/decides/ZD-S-0776	عدد المحاولات
+CM-TRU-003	by landing	decides	SA-C-010/decides/SA-S-2122	سجل التصدير
+CM-TRU-003	by landing	decides	SA-C-010/decides/SA-S-2423	export_logs_management
+CM-TRU-003	by landing	decides	SA-C-010/decides/SA-S-2640	export_logs_management
+CM-TRU-003	by landing	decides	SA-C-010/decides/SA-S-3234	export-logs
+CM-TRU-003	exact	decides	SA-C-010/decides/SA-S-2123	سجل العمليات
+CM-TRU-003	exact	decides	SA-C-010/decides/SA-S-2421	audit_logs_management
+CM-TRU-003	exact	decides	SA-C-010/decides/SA-S-2638	audit_logs_management
+CM-TRU-003	exact	decides	SA-C-010/decides/SA-S-2966	advance-audit-log
+CM-TRU-003	exact	boundary	SH-C-012/boundary/SH-S-0947	read_audit_events
+CM-TRU-003	exact	boundary	SH-C-012/boundary/SH-S-1157	audit_events/admin_api_activity
+CM-TRU-003	exact	boundary	SH-C-012/boundary/SH-S-5938	read_audit_events
+CM-TRU-003	exact	decides	SH-C-012/decides/SH-S-5207	merchant-audit-log:list
+CM-TRU-003	exact	decides	SH-C-012/decides/SH-S-5239	settings:organizations:accounts:security:activity-log
+CM-TRU-004	by landing	boundary	WC-C-031/boundary/WC-S-5362	woocommerce_store_api_rate_limit_options
+CM-TRU-004	by landing	decides	WC-C-031/decides/WC-S-5361	woocommerce_store_api_rate_limit_options
+CM-TRU-004	exact	decides	SH-C-051/decides/SH-S-0744	plan requirement
+CM-TRU-004	exact	decides	SH-C-051/decides/SH-S-0746	Considerations for using bot protection
+CM-TRU-004	exact	decides	SH-C-051/decides/SH-S-5112	commerce-protection
+CM-TRU-004	exact	decides	SH-C-051/decides/SH-S-5595	features.productProtection
+CM-TRU-004	exact	decides	SH-C-051/decides/SH-S-7074	Bot protection
+CM-TRU-004	exact	decides	WC-C-031/decides/WC-S-0932	rate_limit_checkout
+CM-TRU-004	exact	decides	WC-C-031/decides/WC-S-5359	rate_limit_checkout
+CM-TRU-004	exact	decides	WC-C-031/decides/WC-S-5360	Checkout rate limiting
+CM-TRU-005	exact	decides	SA-C-066/decides/SA-S-0169	توافق سياسة الخصوصية لمتجرك مع نظام حماية البيانات الشخصي
+CM-TRU-005	exact	decides	SA-C-066/decides/SA-S-0170	الأسئلة الشائعة
+CM-TRU-005	exact	decides	ZD-C-039/decides/ZD-S-0781	سياسات المستهلك
+CM-TRU-006	by landing	decides	SH-C-148/decides/SH-S-5364	entitlements.storefront.enabled
+CM-TRU-006	exact	boundary	BC-C-037/boundary/BC-S-0218	CORS
+CM-TRU-006	exact	decides	BC-C-037/decides/BC-S-0216	Security Settings
+CM-TRU-006	exact	boundary	SA-C-066/boundary/SA-S-5023	عرض سياسة الخصوصية أثناء تسجيل العميل
+CM-TRU-006	exact	decides	SA-C-066/decides/SA-S-3372	website-cookies
+CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-0224	2. Using the Shopify API
+CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-1044	read_privacy_settings
+CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-5956	read_privacy_settings
+CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-6089	read_privacy_settings
+CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-6275	write_privacy_settings
+CM-TRU-006	exact	decides	SH-C-148/decides/SH-S-5031	customer-privacy:consent-banner
+CM-TRU-006	exact	decides	SH-C-148/decides/SH-S-5253	customer-privacy-policy-modal
+CM-TRU-006	exact	decides	SH-C-148/decides/SH-S-7210	apps.shopify.com/built-in-features/automated-privacy
+CM-TRU-006	exact	decides	WC-C-045/decides/WC-S-0881	Accounts and Privacy Settings
+CM-TRU-007	by landing	boundary	SH-C-149/boundary/SH-S-1197	customers/data_request
+CM-TRU-007	exact	boundary	BC-C-081/boundary/BC-S-0444	Shopper requests
+CM-TRU-007	exact	decides	SA-C-066/decides/SA-S-3174	customer-account-deletion
+CM-TRU-007	exact	decides	SA-C-066/decides/SA-S-3175	customer-data-export
+CM-TRU-007	exact	boundary	SH-C-149/boundary/SH-S-0974	write_customer_data_erasure
+CM-TRU-007	exact	boundary	SH-C-149/boundary/SH-S-5957	read_customer_data_erasure
+CM-TRU-007	exact	boundary	SH-C-149/boundary/SH-S-6179	write_customer_data_erasure
+CM-TRU-007	exact	decides	SH-C-149/decides/SH-S-7154	ERASE_CUSTOMER_DATA
+CM-TRU-007	exact	decides	SH-C-149/decides/SH-S-7155	REQUEST_CUSTOMER_DATA
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0357	add_exporter: WooCommerce Customer Data
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0358	add_exporter: WooCommerce Customer Orders
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0359	add_exporter: WooCommerce Customer Downloads
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0360	add_exporter: WooCommerce Customer Payment Tokens
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0361	add_eraser: WooCommerce Customer Data
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0362	add_eraser: WooCommerce Customer Orders
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0363	add_eraser: WooCommerce Customer Downloads
+CM-TRU-007	exact	boundary	WC-C-045/boundary/WC-S-0364	add_eraser: WooCommerce Customer Payment Tokens
+CM-TRU-007	exact	decides	WC-C-045/decides/WC-S-5376	woocommerce_erasure_request_removes_order_data
+CM-TRU-008	exact	decides	SA-C-232/decides/SA-S-0110	disable_cod_for_banned_customers_desc
+CM-TRU-008	exact	boundary	SH-C-147/boundary/SH-S-0425	Requirements for using managed payment methods
+CM-TRU-008	exact	decides	SH-C-147/decides/SH-S-0045	9.2 Enhanced Services
+CM-TRU-009	by landing	decides	SA-C-232/decides/SA-S-0028	المادة (7) – إيقاف الخدمة أو التطبيق
+CM-TRU-009	by landing	decides	SA-C-232/decides/SA-S-0173	## ⚠️ **Important Notes**
+CM-TRU-009	exact	decides	BC-C-085/decides/BC-S-0465	Lawful Purposes Only
+CM-TRU-009	exact	decides	BC-C-086/decides/BC-S-0470	Content Removal
+CM-TRU-009	exact	decides	SA-C-232/decides/SA-S-0031	المادة (4) – شروط استخدام التطبيقات (للتجار)
+CM-TRU-009	exact	decides	SA-C-232/decides/SA-S-0115	violations.desc
+CM-TRU-009	exact	boundary	SH-C-172/boundary/SH-S-0076	preamble
+CM-TRU-009	exact	decides	SH-C-172/decides/SH-S-0031	3. Shopify Rights
+CM-TRU-009	exact	decides	SH-C-172/decides/SH-S-0173	closing paragraph
+CM-TRU-009	exact	decides	WC-C-022/decides/WC-S-0951	Store guidelines
+CM-TRU-009	exact	decides	WC-C-022/decides/WC-S-0952	Store guidelines
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0766	البلدان الخاضعة للعقوبات الدولية
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0767	قوائم العقوبات
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0768	البلدان الخاضعة للعقوبات الدولية (الكويت)
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0769	مبالغ كبيرة من دول أجنبية
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0770	تحديث الأنشطة المحظورة
+CM-TRU-009	exact	decides	ZD-C-037/decides/ZD-S-0771	Prohibited Activities
+CM-TRU-010	by landing	decides	SA-C-231/decides/SA-S-0035	المادة الثانية – أهلية الشريك القانونية
+CM-TRU-010	by landing	decides	SA-C-231/decides/SA-S-0036	المادة الثالثة – شروط قبول و تسجيل الشركاء
+CM-TRU-010	exact	boundary	BC-C-080/boundary/BC-S-0439	cooperate with Commerce
+CM-TRU-010	exact	boundary	BC-C-085/boundary/BC-S-0468	third-party service provider policies
+CM-TRU-010	exact	boundary	BC-C-086/boundary/BC-S-0473	User Agreement
+CM-TRU-010	exact	boundary	SA-C-231/boundary/SA-S-5147	basic_settings.main_store_data.description
+CM-TRU-010	exact	decides	SA-C-231/decides/SA-S-0118	answer4
+CM-TRU-010	exact	decides	SA-C-231/decides/SA-S-0136	الأسئلة الشائعة
+CM-TRU-010	exact	decides	SA-C-231/decides/SA-S-0142	ثانياً: نظرة عامة عن متجرك
+CM-TRU-010	exact	decides	SA-C-231/decides/SA-S-0160	القسم 5: معلومات التواصل
+CM-TRU-010	exact	decides	SH-C-175/decides/SH-S-0667	help.shopify.com/en/manual/compliance/legal.md
+CM-TRU-010	exact	decides	WC-C-027/decides/WC-S-0848	8. j. Ecommerce Services: Your responsibilities
+CM-TRU-010	exact	boundary	ZD-C-036/boundary/ZD-S-0763	أسفل صفحة المتجر
+CM-TRU-010	exact	decides	ZD-C-036/decides/ZD-S-0760	الأنظمة
+CM-TRU-010	exact	decides	ZD-C-036/decides/ZD-S-0761	الترخيص
+CM-TRU-011	exact	boundary	BC-C-088/boundary/BC-S-0480	Intellectual Property Agent
+CM-TRU-011	exact	decides	BC-C-088/decides/BC-S-0479	Violations of Third Party Rights
+CM-TRU-011	exact	boundary	SH-C-176/boundary/SH-S-7480	Reporting copyright infringement
+CM-TRU-011	exact	decides	SH-C-176/decides/SH-S-7260	11. Intellectual Property Infringement
+CM-TRU-012	by landing	decides	SH-C-177/decides/SH-S-0656	Digital Services Act
+CM-TRU-012	exact	boundary	SH-C-177/boundary/SH-S-0210	9. Internal Complaint-Handling System
+CM-TRU-012	exact	decides	SH-C-177/decides/SH-S-0655	Platform to Business Regulation
+CM-TRU-012	exact	boundary	SH-C-178/boundary/SH-S-2171	Balance
+CM-TRU-012	exact	boundary	SH-C-178/boundary/SH-S-2174	Capital - US loan
+CM-TRU-012	exact	boundary	SH-C-178/boundary/SH-S-2177	Capital - Canada Merchant Cash Advance (MCA)
+CM-TRU-013	exact	decides	BC-C-081/decides/BC-S-0441	Data Processing Limitations
+CM-TRU-013	exact	boundary	SH-C-180/boundary/SH-S-0072	12. Privacy and Data Protection
+CM-TRU-013	exact	decides	SH-C-180/decides/SH-S-7261	Data Processing Addendum
+CM-TRU-013	exact	decides	WC-C-024/decides/WC-S-0495	Controllers and Responsible Companies
+CM-TRU-013	exact	boundary	WC-C-044/boundary/WC-S-5331	Request a DPA
+CM-TRU-013	exact	decides	WC-C-044/decides/WC-S-5330	When a DPA is useful
+CM-TRU-013	exact	boundary	ZD-C-040/boundary/ZD-S-0790	sharing with partners
+CM-TRU-013	exact	decides	ZD-C-040/decides/ZD-S-0785	consent
+CM-TRU-014	by landing	decides	BC-C-082/decides/BC-S-0450	Integrity and Stability
+CM-TRU-014	by landing	decides	WC-C-032/decides/WC-S-0588	readme.txt: Own and control your store data – forever
+CM-TRU-014	exact	boundary	BC-C-082/boundary/BC-S-0452	Data Privacy Frameworks
+CM-TRU-014	exact	boundary	BC-C-082/boundary/BC-S-0453	EU SCCs
+CM-TRU-014	exact	boundary	SH-C-181/boundary/SH-S-0176	Where we send your information, Transfers outside of the EEA, the UK and Switzerland
+CM-TRU-014	exact	boundary	SH-C-181/boundary/SH-S-0188	A. Global Data Transfers
+CM-TRU-014	exact	boundary	SH-C-181/boundary/SH-S-0191	Appendix C, 8. International Transfers
+CM-TRU-014	exact	boundary	SH-C-181/boundary/SH-S-0643	How Shopify meets the GDPR requirements for international data transfers
+CM-TRU-014	exact	boundary	SH-C-181/boundary/SH-S-0648	www.shopify.com/legal/binding-corporate-rules
+CM-TRU-014	exact	decides	SH-C-181/decides/SH-S-0637	Data hosting locations
+CM-TRU-014	exact	decides	SH-C-181/decides/SH-S-0639	Data hosting locations
+CM-TRU-014	exact	boundary	WC-C-032/boundary/WC-S-5364	data stores
+CM-TRU-014	exact	decides	WC-C-032/decides/WC-S-5365	data stores
+CM-TRU-014	exact	decides	ZD-C-041/decides/ZD-S-0794	transfer to other countries
+CM-TRU-014	exact	decides	ZD-C-041/decides/ZD-S-0795	نقل البيانات عبر الحدود
+CM-TRU-015	by landing	boundary	BC-C-083/boundary/BC-S-0459	Backup Storage
+CM-TRU-015	exact	decides	BC-C-083/decides/BC-S-0456	Additions; Replacement
+CM-TRU-015	exact	boundary	SH-C-182/boundary/SH-S-0206	help.shopify.com/en/manual/your-account/privacy/subprocessors.md
+CM-TRU-015	exact	decides	SH-C-182/decides/SH-S-0189	Appendix C, 4. Subprocessors
+CM-TRU-015	exact	decides	SH-C-182/decides/SH-S-0645	How Shopify chooses its Subprocessors
+CM-TRU-015	exact	boundary	ZD-C-040/boundary/ZD-S-0791	service providers
+CM-TRU-015	exact	boundary	ZD-C-042/boundary/ZD-S-0799	on our behalf
+CM-TRU-015	exact	boundary	ZD-C-042/boundary/ZD-S-0800	no model training
+CM-TRU-015	exact	decides	ZD-C-042/decides/ZD-S-0797	explicit in-app consent
+CM-TRU-016	by landing	boundary	SH-C-183/boundary/SH-S-1356	shop/redact
+CM-TRU-016	exact	decides	SH-C-183/decides/SH-S-0182	United States Regional Privacy Notice, How long we keep your information
+CM-TRU-016	exact	decides	SH-C-183/decides/SH-S-0183	United States Regional Privacy Notice, How long we keep your information
+CM-TRU-016	exact	decides	SH-C-183/decides/SH-S-0209	4. Access to and Use of Store Data, (1) Your access
+CM-TRU-016	exact	decides	WC-C-009/decides/WC-S-0558	How do I delete my WooPayments account?
+CM-TRU-016	exact	decides	ZD-C-040/decides/ZD-S-0786	retention
+CM-TRU-017	exact	boundary	SH-C-179/boundary/SH-S-0647	Shopify Transparency Report and handling requests from public authorities
+CM-TRU-017	exact	boundary	SH-C-179/boundary/SH-S-0653	www.shopify.com/legal/gvtaccesspolicy
+CM-TRU-017	exact	decides	SH-C-179/decides/SH-S-0123	Part I, D. Disputes, Choice of Law, Jurisdiction, Venue and Miscellaneous
+CM-TRU-017	exact	decides	SH-C-179/decides/SH-S-0185	Our values, We protect your information from others
+CM-TRU-017	exact	decides	SH-C-179/decides/SH-S-0650	Our Principles
+CM-TRU-017	exact	decides	SH-C-179/decides/SH-S-0651	Our Principles
+CM-TRU-017	exact	decides	SH-C-179/decides/SH-S-0652	Our Principles
+CM-TRU-017	exact	boundary	ZD-C-040/boundary/ZD-S-0792	public entity
+CM-TRU-018	exact	boundary	BC-C-028/boundary/BC-S-0170	SAQs
+CM-TRU-018	exact	decides	BC-C-028/decides/BC-S-0166	PCI Compliance Condition
+CM-TRU-018	exact	decides	SH-C-184/decides/SH-S-7202	www.shopify.com/pricing (FAQ answer)
+CM-TRU-018	exact	boundary	WC-C-018/boundary/WC-S-0554	What about saved cards and subscriptions?
+CM-TRU-018	exact	boundary	WC-C-019/boundary/WC-S-5307	WooCommerce and PCI compliance
+CM-TRU-018	exact	decides	WC-C-019/decides/WC-S-0626	Types of payment gateway
+CM-TRU-018	exact	decides	WC-C-019/decides/WC-S-0882	Do I need to be PCI-DSS compliant?
+CM-TRU-018	exact	decides	WC-C-019/decides/WC-S-5306	Reporting compliance
+CM-TRU-019	exact	boundary	SH-C-196/boundary/SH-S-7284	9.9 Third Party Services and Third Party Partners
+CM-TRU-019	exact	decides	SH-C-196/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-TRU-020	by landing	boundary	ZD-C-111/boundary/ZD-S-0999	WhatsApp updates; badge
+CM-TRU-020	exact	boundary	SA-C-178/boundary/SA-S-5088	❓ماهي إشعارات حالات الشكاوى الحالية؟
+CM-TRU-020	exact	decides	SA-C-178/decides/SA-S-5086	إقفال الشكوى
+CM-TRU-020	exact	boundary	ZD-C-092/boundary/ZD-S-0935	الرابط المخصص
+CM-TRU-020	exact	decides	ZD-C-111/decides/ZD-S-0997	100% optional
+CM-TRU-021	exact	boundary	WC-C-035/boundary/WC-S-0079	wc-telemetry
+CM-TRU-021	exact	boundary	WC-C-035/boundary/WC-S-0253	wc-telemetry > tracker
+CM-TRU-021	exact	boundary	WC-C-035/boundary/WC-S-0610	WC_Tracks_Client::PIXEL
+CM-TRU-021	exact	decides	WC-C-035/decides/WC-S-5370	woocommerce_allow_tracking
+CM-TRU-021	exact	boundary	WC-C-117/boundary/WC-S-0955	WooCommerce: Orders
+CM-TRU-021	exact	boundary	WC-C-117/boundary/WC-S-0960	WooCommerce: Payments
+CM-TRU-021	exact	boundary	WC-C-117/boundary/WC-S-0961	JSON API (REST API proxy)

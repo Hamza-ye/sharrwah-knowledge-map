@@ -179,3 +179,4 @@ The whole part's check prints no problem on any row. Two observations for the co
 - The batch message's "rule on the unclear candidates that hold your concerns": none hold a BigCommerce concern, as the brief says for Zid and BigCommerce. No rulings.
 - The message says 19 capabilities; with the new CM-CHN-007 this batch writes 20 cells.
 - **Counted once (the coordinator, at E's merge):** BC-C-067/decides/BC-S-0365 is `shows` in CM-CHN-004: core in D's CM-MKT-010, whose BigCommerce cell rests on it.
+- **BigCommerce's Tier 1 certifications (BC-S-0421)** leave CM-SFR-010, the SSL certificate: they are platform-wide security and compliance, which A's CM-TRU-018 now cites, with the quality (the coordinator, after A-bigcommerce).

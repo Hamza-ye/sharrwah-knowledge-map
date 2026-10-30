@@ -81,3 +81,4 @@
 ## The coordinator's correction after E-bigcommerce batch 1 (30 October)
 
 - **BC-S-0287 counts once:** `core` in E's CM-SFR-008, store domains, whose BigCommerce cell rests on it, and `shows` here. CM-OPS-003's BigCommerce cell stays `core` on BC-S-0288 and BC-S-0169. Native Hosting (BC-C-052) now lands here, through `G-amend`.
+- **Counted once (the coordinator, at A's merge):** BC-C-060/where/BC-S-0331 is `shows` in CM-OPS-005: core in A's CM-TRU-003, the audit log, whose BigCommerce cell rests on it (its Staff Action Logs), so it counts once (the coordinator, convention 8).

@@ -25,7 +25,6 @@ CM-SFR-008	bigcommerce	shows	BC-C-047/where/BC-S-0262	store information returns 
 CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0423	plan line Free sitewide HTTPS and dedicated SSL, on all four plans
 CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0422	its own Storefront Security settings
 CM-SFR-010	bigcommerce	core	BC-C-078/boundary/BC-S-0424	own webhook topic: a channel's security settings updated
-CM-SFR-010	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications for security and compliance
 CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0281	Catalyst, BigCommerce's headless storefront framework
 CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0282	Catalyst (Storefront Framework), BigCommerce's product page
 CM-SFR-011	bigcommerce	core	BC-I-0534	product line Headless commerce

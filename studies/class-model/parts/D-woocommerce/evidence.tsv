@@ -18,7 +18,7 @@ CM-CUS-009	woocommerce	core	WC-C-047/decides/WC-S-5380	setting Preferred address
 CM-CUS-009	woocommerce	extension-point	WC-C-047/where/WC-S-0919	third-party services provide address suggestions
 CM-CUS-009	woocommerce	extension-point	WC-C-047/boundary/WC-S-0445	provider interface WC_Address_Provider
 CM-CUS-010	woocommerce	core	WC-C-073/where/WC-S-0006	settings tab Accounts & Privacy
-CM-CUS-010	woocommerce	core	WC-C-073/decides/WC-S-0881	settings control customer account creation and guest checkout
+CM-CUS-010	woocommerce	shows	WC-C-073/decides/WC-S-0881	settings control customer account creation and guest checkout; core in A's CM-TRU-006, privacy settings, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-CUS-010	woocommerce	core	WC-C-073/decides/WC-S-0928	setting Enable guest checkout
 CM-CUS-010	woocommerce	core	WC-C-073/boundary/WC-S-0146	REST resource wc/v4 > settings-account
 CM-CUS-010	woocommerce	core	WC-C-073/where/WC-S-0306	email New account

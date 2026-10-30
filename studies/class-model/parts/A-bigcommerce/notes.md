@@ -116,3 +116,122 @@ Q1 never matched BigCommerce, so no unclear candidate holds these concerns, and 
   products, BC-C-085) for CM-TRU-009 or CM-TRU-010; BC-S-0480 (Intellectual Property Agent, BC-C-088) for CM-TRU-011.
 - BC-C-060 (G, store logs, naming A) is for CM-TRU-003, the audit log. BC-S-0331 says the System Logs endpoint is for
   "debugging, auditing, and monitoring".
+
+## Batch 2: TRU
+
+Concerns: BC-C-028, BC-C-037, BC-C-080, BC-C-081, BC-C-082, BC-C-083, BC-C-085 and BC-C-088. BigCommerce's cell is written
+for all 21 capabilities of TRU: 12 cite statements, 9 are `none-held` (CM-TRU-001, -002, -004, -008, -012, -016, -017,
+-020, -021). No capability is added; none of the eight concerns is moved. Searches are in English only.
+
+### How the concerns landed
+
+| Concern | Lands in | Join | Fit |
+|---|---|---|---|
+| BC-C-028 Payment card security (PCI DSS) | CM-TRU-018 | terms | clean |
+| BC-C-037 Storefront cookie consent | CM-TRU-006 | terms | clean |
+| BC-C-080 Anti-corruption, export and sanctions compliance | CM-TRU-010 | role | strained |
+| BC-C-081 Personal data processing roles | CM-TRU-013 | terms | strained |
+| BC-C-082 Data transfer and storage location | CM-TRU-014 | terms | strained |
+| BC-C-083 Subprocessors and hosting services | CM-TRU-015 | terms | strained |
+| BC-C-085 Acceptable use and highly regulated products | CM-TRU-009 | terms | strained |
+| BC-C-088 Infringing materials | CM-TRU-011 | terms | clean |
+
+All eight joined existing capabilities; none made a new one. For the whole part: 13 concerns, all joined existing
+capabilities, none new.
+
+### Grain, strained fits and what batch 1 left
+
+- **BC-C-080** lands in CM-TRU-010, not CM-ACC-008. Its own words are the merchant's representations and covenants: a
+  risk-based compliance programme with sanctions screenings (BC-S-0438), cooperation with Commerce on ABAC laws
+  (BC-S-0439), under the clause's heading (BC-S-0435). That is the role of Shopify's merchant who answers for its
+  transactions and researches import and export laws (SH-S-0236, SH-S-0667): a join on role. Strained: its sanctions
+  list (BC-S-0437) is cited by batch 1 in CM-ACC-008 and here, and its termination for cause (BC-S-0436) by batch 1 in
+  CM-ONB-002. WooCommerce's WC-C-029, the merchant's own sanctions compliance, landed in CM-ACC-008 by M-084, strained
+  towards CM-TRU-010; the reviewer may want the two platforms' sanctions concerns in one capability. Zid's sanctions lists
+  sit in CM-TRU-009 (Zid Pay's prohibited activities), a third home; the class's sanctions statements are spread over
+  CM-ACC-008, CM-TRU-009 and CM-TRU-010.
+- **BC-C-081**: strained because its Shopper requests (BC-S-0444) are cited in CM-TRU-007 (CM-TRU-005's tree). It is
+  cited there only, not also in CM-TRU-013, so the sentence stays in one tree.
+- **BC-C-082** and **BC-C-083**: strained by domain G. G's BigCommerce part cites BC-S-0450 (availability zones) core and
+  BC-S-0455 (uptime, with its quality) in CM-OPS-001, and BC-S-0457 (hosting services) outside in CM-OPS-003. BC-S-0450 and
+  BC-S-0455 are left to G, as "One thing, one domain" asks. BC-S-0457 is cited here as shows, since it names no third
+  party; G reads the same words as outside. The subprocessor rows BC-S-0446 to BC-S-0448 are cited in CM-TRU-014 (their
+  locations) and CM-TRU-015 (the subprocessor), children of one parent, as Shopify's rows are.
+- **BC-S-0459** (Backup Storage: backing up the merchant's files and data on Commerce servers is solely the merchant's
+  duty) is cited by no capability of domain A. No capability of any domain is about backups (`caps --terms backup`). It
+  is a lead for G's CM-OPS-001 (reliability and continuity), which G's part didn't cite; the coordinator may give it there.
+- **BC-C-085** lands in CM-TRU-009 by its first term, Acceptable Use Policy. Three of its four statements (BC-S-0466 to
+  BC-S-0468, Highly Regulated Products and the disclaimer) are cited in CM-TRU-010, so it is strained; the reviewer may
+  split it or move it to CM-TRU-010.
+- **BC-C-086's trust statements** (batch 1's lead): BC-S-0470 (content removal) is cited in CM-TRU-009 as well as batch
+  1's CM-ONB-002; BC-S-0472 (the merchant's privacy policy) in CM-TRU-005, as E cites it in CM-CNT-008; BC-S-0473 (the
+  merchant's agreement with Your Users) in CM-TRU-010. BC-S-0471 stays only in batch 1's CM-ACC-001, so that it stays in
+  one tree. BC-C-086 is now cited in the trees of CM-ACC-001, CM-ONB-002, CM-TRU-005, CM-TRU-009 and CM-TRU-010; batch 1
+  marked it strained, which still holds.
+- **BC-S-0421, the Tier 1 certifications** (domain E's lead): cited as shows in CM-TRU-018, with its words as a quality
+  of CM-TRU-018. It names PCI among ISO, SOC, FIPS, RH-ISAC, GDPR and CCPA. No capability of the model is the platform's
+  security certifications as a whole (`caps --terms "certification; ISO; SOC 2; security certifications"` finds none),
+  and CM-TRU-018 is the one capability that is a certification of the platform's security, so it is weighed here. E
+  records the same sentence as a quality of CM-SFR-010 (SSL); both cite it as shows, so the merge flags nothing. The
+  coordinator may keep one of the two qualities.
+- **CM-TRU-003**: BC-S-0331's second sentence is the Staff Action Logs endpoint, "to audit the actions staff users
+  performed in the store's control panel", cited core here. Its first sentence (the System Logs endpoint) is G's
+  CM-OPS-005, where G's part cites the statement core. The merge will flag one statement supporting core in two domains;
+  the sentence names two endpoints, one per domain, so both citations may stand.
+
+### Joins on role, homonyms
+
+- One join on role in this batch: BC-C-080 with Shopify's merchant who answers for its transactions and researches import
+  and export laws (CM-TRU-010).
+- No new homonym. "Security Settings" is the title of BC-S-0216, the storefront's cookie-consent setting, not the admin's
+  sign-in security (CM-TRU-001); "Customer Login (SSO)" (BC-S-0201) is shoppers' sign-in, domain D's.
+
+### Concerns read under `also`
+
+BC-C-060 (G): BC-S-0331 cited core in CM-TRU-003 (above). BC-C-078 (E): BC-S-0421 cited as shows in CM-TRU-018; its
+Storefront Security settings (BC-S-0422, BC-S-0424) are the storefront's and are named in CM-TRU-001's reading. BC-C-059
+(F): BC-I-0490 (Payments & Security) cited extension-point in CM-TRU-019, as F cites it in CM-APP-002; both
+extension-point, so no flag. BC-C-055 (F): BC-S-0298 (auditing who the control-panel users are) read for CM-TRU-003 and
+not cited. BC-C-026, BC-C-029, BC-C-063, BC-C-066, BC-C-084 and BC-C-087 bear on no capability of TRU.
+
+### Unclear candidates
+
+None: Q1 never matched BigCommerce. `rulings.tsv` keeps only its header.
+
+### The checker's flags, answered
+
+- `BC-C-080/responsible/BC-S-0437` in CM-ACC-008 (batch 1) and CM-TRU-010: the merchant's covenant that its parties and
+  customers are not of sanctioned regions. Read as the merchant's compliance, it is CM-TRU-010's; batch 1 read it as
+  shows for the countries the platform serves, for want of any list of them. Both cite it as shows. The coordinator may
+  keep only one; the reading here is CM-TRU-010.
+- `BC-C-086/decides/BC-S-0470` in CM-ONB-002 (batch 1) and CM-TRU-009: content removal for violating Laws or the
+  Agreement. It is acceptable-use enforcement (CM-TRU-009); batch 1 cited it as an event of the store's lifecycle. Both
+  shows.
+- **The 9 `none-held` flags of TRU**: each flag's statements were read; the cell's reading names the nearest. CM-TRU-001:
+  shoppers' SSO (domain D), storefront security (E) and the PCI statements' "security". CM-TRU-004: Cloudflare's DDoS row,
+  the API's rate limits (F), "fraud". CM-TRU-008: BigCommerce Analytics for the store's own ML models (D), No Input
+  Training (BC-S-0353), aggregated stock (B). CM-TRU-012 and CM-TRU-020: "dispute" in the governing law and the DMCA
+  protocol. CM-TRU-016: a cancelled app setting (BC-S-0074), the store/app/uninstalled topic (BC-S-0329, batch 1's
+  CM-ONB-002), the scope account_subscriptions_cancel (BC-I-0374). CM-TRU-017: the merchant's privacy policy.
+  CM-TRU-021: Unified Billing's "collection" (F), pickup ("collect"), analytics (D). None shows the capability.
+- The 14 flags on batch 1's `none-held` cells are answered in batch 1's section.
+
+### Gaps
+
+- Which region a store's data is stored in, and whether a merchant can choose it, is "page not read" (BC-C-082/decides):
+  CM-TRU-014 holds the subprocessors' locations only.
+- No statement holds a notice of new subprocessors or a right to object to one (CM-TRU-015), a retention period after the
+  store closes (CM-TRU-016), requests from public authorities (CM-TRU-017), admin sign-in security (CM-TRU-001), or where
+  acceptable use is enforced (BC-C-085/where: searched, not found).
+- Whether BigCommerce itself screens merchants, partners or shoppers against sanctions lists is "searched, not found"
+  (BC-C-080/responsible).
+- Who turns System Logs and Staff Action Logs on, or limits them by plan, is "page not read" (BC-C-060/decides).
+- The subprocessor list's entries other than Google, Amazon and Cloudflare (BC-I-0550, BC-I-0552, BC-I-0554 to
+  BC-I-0569) are cited as placed inventory entries, because no statement covers them; the data-processors page
+  (BC-S-0454) would hold what each does and where.
+
+### Problems on batch 1's rows, for the coordinator
+
+The whole part's check prints 0 problems. Two of batch 1's citations now share a statement with this batch's cells
+(BC-S-0437, BC-S-0470; above). Batch 1's landing of BC-C-086 says the reviewer may move it to CM-TRU-010; with this
+batch's cells its statements are spread over five trees, so a move would not make it clean.

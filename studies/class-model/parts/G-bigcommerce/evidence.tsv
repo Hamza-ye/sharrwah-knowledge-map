@@ -13,7 +13,7 @@ CM-OPS-003	bigcommerce	shows	BC-C-052/decides/BC-S-0289	Native Hosting in closed
 CM-OPS-003	bigcommerce	shows	BC-C-052/boundary/BC-S-0290	hosting infrastructure uses the OpenNext Cloudflare adapter
 CM-OPS-003	bigcommerce	shows	BC-C-052/reason/BC-S-0291	reason: hosting and billing consolidated with the store
 CM-OPS-005	bigcommerce	core	BC-C-060/where/BC-S-0332	control panel Settings > Advanced > Store logs
-CM-OPS-005	bigcommerce	core	BC-C-060/where/BC-S-0331	its own System Logs endpoint for store log entries
+CM-OPS-005	bigcommerce	shows	BC-C-060/where/BC-S-0331	its own System Logs endpoint for store log entries; core in A's CM-TRU-003, the audit log, whose BigCommerce cell rests on it (its Staff Action Logs), so it counts once (the coordinator, convention 8)
 CM-SRF-001	bigcommerce	core	BC-C-077/decides/BC-S-0418	plan line BigCommerce mobile app
 CM-SRF-001	bigcommerce	own-service	BC-C-077/decides/BC-S-0419	Commerce licenses the Application to the merchant
 CM-SRF-001	bigcommerce	shows	BC-C-077/where/BC-S-0417	Mobile App Terms bind use of the Application
