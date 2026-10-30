@@ -1,0 +1,16 @@
+cap_id	platform	quality	value	key	scope
+CM-CAT-001	shopify	products a store may sell	Sell unlimited products: Included, Included, Included, Included	SH-C-020/decides/SH-S-7004	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-CAT-001	salla	number of products	عدد لا محدود من المنتجات	SA-C-020/decides/SA-S-1949	plan: سلة بلس
+CM-CAT-002	shopify	variants per product	create up to 100 variants for each of your products	SH-C-020/decides/SH-S-7214	
+CM-CAT-002	shopify	maxProductVariants	not in the concern map	SH-I-2520	(an inventory entry)
+CM-CAT-002	shopify	maxProductOptions	not in the concern map	SH-I-2519	(an inventory entry)
+CM-CAT-006	shopify	tagsPerProductLimitEnabled	not in the concern map	SH-I-2598	(an inventory entry)
+CM-CAT-007	salla	maximum-uploaded-images	"name": "maximum-uploaded-images", "value": 40	SA-C-020/decides/SA-S-3521	the answering store (merchant@en)
+CM-SEL-006	salla	bundle-section-products-limit	"name": "bundle-section-products-limit", "value": 5	SA-C-020/decides/SA-S-3522	the answering store (merchant@en)
+CM-INV-001	salla	max_inventory_types	"max_inventory_types": 5	SA-C-025/decides/SA-S-3504	the answering store (merchant@en)
+CM-INV-005	shopify	Inventory locations	Inventory locations: 10, 10, 10, 200	SH-C-024/decides/SH-S-7010	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 2	SH-C-024/decides/SH-S-5762	2jiwxs-gr (trial); ctcbwa-r1 (trial); fake-demo-sharrwah (trial); ibx5bt-xy (trial); ts15uk-ug (trial); zyd38b-ze (trial)
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 10	SH-C-024/decides/SH-S-5763	capture-advanced (Advanced App Development, development store); capture-grow (Grow App Development, development store); ctcbwa-r1 (Advanced); demo-fake-dev-store (Basic App Development, development store); fake-demo-sharrwah (Advanced)
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 200	SH-C-024/decides/SH-S-5764	capture-client-store-vny2vy5w (Custom plan, development store); capture-gb-plus (Shopify Plus App Development, development store); capture-plus (Shopify Plus App Development, development store); capture-plus-dev (Shopify Plus App Development, development store)
+CM-INV-005	salla	store-branch limit	"name": "store-branch", "limit": 5	SA-C-026/decides/SA-S-3338	plans: plus, pro, special
+CM-INV-005	salla	more branches	زيادة عدد الفروع *برسوم إضافية	SA-C-026/decides/SA-S-2028	plan: سلة بلس
