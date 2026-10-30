@@ -303,3 +303,15 @@ That is more than twice section 15's 1.1 billion, which didn't hold the held pas
 - **The kind of list sets the cost, not the effort.** Light lists cost a fifth of pages with descriptions, at the same effort.
 - **A change to what the leads read is tested on each kind before it runs.** Leaving field names out of the term leads was right for settings and wrong for routes, whose path is their only words.
 - **Check every batch before the next.** Each of the first checks found something the next batch would have repeated.
+
+**Re-measured at about 22:00 UTC,** after five more batches, each the first of its kind:
+
+| Batch | Kind | Entries | Tokens | Per entry |
+| --- | --- | --- | --- | --- |
+| WC-3 | settings: WooCommerce's options, read with the release's titles | 195 | 18.4 million | about 94,000 |
+| ZD-6 | plans: Zid's offered plans, with the last routes | 87 | 7.8 million | about 90,000 |
+| ZD-7 | flags and permissions | 130 | 7.3 million | about 56,000 |
+| WC-4 | payment providers, read with the release's code, and the last options | 80 | 14.4 million | about 180,000 |
+| ZD-8 | permissions | 130 | 6.5 million | about 50,000 |
+
+Plans and settings cost more than assumed, permissions less. The 14,747 entries left come to about 710 million to 1.2 billion at the measured rates, about 1,374 million is spent, and the extent comes to **about 2.4 to 3.1 billion**. A list of permissions changes almost no cell beyond its pages' (ZD-8: none), while plans and settings change the most per batch.
