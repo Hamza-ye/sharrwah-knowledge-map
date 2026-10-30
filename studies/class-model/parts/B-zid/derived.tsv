@@ -1,0 +1,34 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CAT-001	zid	statements	core	Merchant APIs > Products > Managing Products	ZD-C-083/decides/ZD-S-0496=staff permission | ZD-C-083/decides/ZD-S-0915=compare-plans: starter, launch, growth, pro | ZD-C-083/decides/ZD-S-0916=compare-plans: starter, launch, growth, pro	ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-002	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-003	zid	statements	core	Merchant APIs > Products > Product Categories	ZD-C-084/decides/ZD-S-0498=staff permission | ZD-C-084/decides/ZD-S-0917=compare-plans: starter, launch, growth, pro | ZD-C-084/decides/ZD-S-1020=الباقة المجانية	ZD-C-084/responsible:stated only in general terms;ZD-C-084/reason:searched, not found	general
+CM-CAT-004	zid	none-held					
+CM-CAT-005	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-006	zid	none-held					
+CM-CAT-007	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-008	zid	none-held					
+CM-CAT-009	zid	none-held					
+CM-CAT-010	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-CAT-011	zid	none-held					
+CM-CAT-012	zid	statements	not-stated			ZD-C-105/responsible:stated only in general terms;ZD-C-105/boundary:searched, not found	
+CM-CAT-013	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-014	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-CAT-015	zid	statements	core			ZD-C-083/responsible:stated only in general terms;ZD-C-083/reason:searched, not found	general
+CM-INV-001	zid	statements	core		ZD-C-085/decides/ZD-S-0918=compare-plans: starter, launch, growth, pro	ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-002	zid	statements	core			ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-003	zid	statements	core			ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-004	zid	none-held					
+CM-INV-005	zid	statements	core;outside	Merchant APIs > Inventories	ZD-C-085/decides/ZD-S-0372=plan Growth | ZD-C-085/decides/ZD-S-0493=staff permission | ZD-C-085/decides/ZD-S-1021=الباقة الاحترافية | ZD-C-085/decides/ZD-S-1022=باقة الأعمال الكبيرة	ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-006	zid	statements	core			ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-007	zid	none-held					
+CM-INV-008	zid	statements	core			ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	general
+CM-INV-009	zid	statements	core		ZD-C-085/decides/ZD-S-0919=compare-plans: starter, launch, growth, pro | ZD-C-085/decides/ZD-S-1023=الباقات المجانية	ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-INV-010	zid	statements	core			ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	general
+CM-SEL-001	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-SEL-002	zid	statements	core	Amazon S3 | Merchant APIs > Products > Digital Products	ZD-C-043/decides/ZD-S-0590=Zid Pay, Saudi Arabia	ZD-C-043/responsible:stated only in general terms;ZD-C-043/where:searched, not found;ZD-C-043/reason:searched, not found	general
+CM-SEL-003	zid	none-held					
+CM-SEL-004	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-SEL-005	zid	none-held					
+CM-SEL-006	zid	statements	core	Merchant APIs > Marketing > Bundle Offers	ZD-C-089/decides/ZD-S-0475=staff permission | ZD-C-089/decides/ZD-S-0928=compare-plans: starter, launch, growth, pro | ZD-C-089/decides/ZD-S-1031=باقة النمو	ZD-C-089/responsible:stated only in general terms	general
+CM-SEL-007	zid	none-held					
+CM-SEL-008	zid	none-held					
