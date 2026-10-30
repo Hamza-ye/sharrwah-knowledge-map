@@ -26,3 +26,6 @@ CM-PAY-021	woocommerce	Stripe (Stripe Terminal)	WC-C-014/responsible/WC-S-0850
 CM-PAY-026	woocommerce	Celtic Bank	WC-C-016/responsible/WC-S-0560
 CM-PAY-004	woocommerce	Stripe	WC-C-048/where/WC-S-0504
 CM-PAY-004	woocommerce	Stripe (Connected Account Agreement)	WC-C-020/responsible/WC-S-0507
+CM-TAX-002	woocommerce	TaxJar	WC-C-055/where/WC-S-0957
+CM-TAX-002	woocommerce	Taxamo	WC-C-055/responsible/WC-S-0473
+CM-TAX-009	woocommerce	Internal Revenue Service (IRS)	WC-C-021/decides/WC-S-0860

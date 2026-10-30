@@ -292,3 +292,59 @@ CM-PAY-009	woocommerce	shows	WC-C-116/responsible/WC-S-0469	merchant responsible
 CM-PAY-009	woocommerce	shows	WC-C-116/responsible/WC-S-0649	terms: WooPayments has dispute fees
 CM-PAY-009	woocommerce	shows	WC-C-116/reason/WC-S-0867	not responding risks fines or card bans
 CM-PAY-009	woocommerce	outside	WC-C-116/reason/WC-S-5323	dispute fees imposed by card networks, passed through the processor
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0003	settings tab Tax
+CM-TAX-001	woocommerce	core	WC-I-0003	settings: Tax
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0015	Tax > Tax options
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0016	Tax > Standard rates
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0034	tax class Reduced rate
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0035	tax class Zero rate
+CM-TAX-001	woocommerce	core	WC-C-054/decides/WC-S-0601	setting Enable tax rates and calculations
+CM-TAX-001	woocommerce	core	WC-C-054/decides/WC-S-5382	woocommerce_calc_taxes, default no; rates configurable, taxes calculated at checkout
+CM-TAX-001	woocommerce	core	WC-C-054/decides/WC-S-0599	store address used by tax rates
+CM-TAX-001	woocommerce	core	WC-C-054/where/WC-S-0431	onboarding task Collect sales tax
+CM-TAX-001	woocommerce	core	WC-C-054/decides/WC-S-0878	how the platform handles taxes/VAT/GST based on its settings
+CM-TAX-001	woocommerce	core	WC-C-054/boundary/WC-S-0117	REST resource wc/v3 taxes
+CM-TAX-001	woocommerce	core	WC-C-054/boundary/WC-S-0116	REST resource wc/v3 tax-classes
+CM-TAX-001	woocommerce	core	WC-C-054/boundary/WC-S-0145	REST resource wc/v4 settings-tax
+CM-TAX-001	woocommerce	core	WC-C-054/boundary/WC-S-0681	taxes API creates, views, updates and deletes tax rates
+CM-TAX-001	woocommerce	core	WC-C-054/boundary/WC-S-0682	tax classes API
+CM-TAX-001	woocommerce	shows	WC-C-054/responsible/WC-S-0467	merchant responsible for all applicable Taxes
+CM-TAX-001	woocommerce	shows	WC-C-054/responsible/WC-S-0879	not tax professionals
+CM-TAX-001	woocommerce	shows	WC-C-054/where/WC-S-0546	WooPayments has no functionality for charging tax
+CM-TAX-002	woocommerce	own-service	WC-C-055/responsible/WC-S-0633	WooCommerce Tax calculates sales tax at checkout
+CM-TAX-002	woocommerce	own-service	WC-C-055/reason/WC-S-0639	automates tax calculations in place of custom rate tables
+CM-TAX-002	woocommerce	own-service	WC-C-055/responsible/WC-S-0636	automated rates for the primary tax location
+CM-TAX-002	woocommerce	own-service	WC-I-0621	plugin page feature Simplify sales tax
+CM-TAX-002	woocommerce	own-service	WC-C-055/decides/WC-S-0635	automated tax calculations available by store country
+CM-TAX-002	woocommerce	own-service	WC-C-055/boundary/WC-S-0956	maker: WooCommerce Tax uses Automattic's servers
+CM-TAX-002	woocommerce	own-service	WC-I-0628	maker: WooCommerce Tax among Woo Services in the terms
+CM-TAX-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-TAX-002	woocommerce	outside	WC-C-055/where/WC-S-0957	Tax Calculations are provided by TaxJar
+CM-TAX-002	woocommerce	outside	WC-C-055/responsible/WC-S-0473	tax calculations may be provided by Taxamo
+CM-TAX-002	woocommerce	shows	WC-C-055/where/WC-S-0634	connection authenticates the site with the service; own-service in A's CM-ACC-010
+CM-TAX-002	woocommerce	shows	WC-C-055/boundary/WC-S-0634	the same sentence, under boundary
+CM-TAX-002	woocommerce	shows	WC-C-055/boundary/WC-S-0638	WordPress.com connection for WooCommerce Tax
+CM-TAX-002	woocommerce	shows	WC-C-055/responsible/WC-S-0474	tax calculations not guaranteed complete and accurate
+CM-TAX-002	woocommerce	shows	WC-C-055/responsible/WC-S-0637	not tax professionals
+CM-TAX-004	woocommerce	extension-point	WC-C-056/where/WC-S-0751	Marketplace category Sales tax and duties
+CM-TAX-004	woocommerce	extension-point	WC-I-0546	Marketplace category Store management > Sales tax and duties
+CM-TAX-004	woocommerce	shows	WC-C-056/decides/WC-S-0852	Third-Party Services include third parties' extensions
+CM-TAX-004	woocommerce	shows	WC-C-056/responsible/WC-S-0487	Third-Party Services not vetted by Automattic
+CM-TAX-004	woocommerce	shows	WC-C-056/responsible/WC-S-0656	a Third-Party Service used at own risk
+CM-TAX-005	woocommerce	own-service	WC-C-118/where/WC-S-0963	maker: EU VAT Number by Woo
+CM-TAX-005	woocommerce	own-service	WC-C-118/where/WC-S-0964	EU VAT Number settings in WooCommerce > Settings > Tax
+CM-TAX-005	woocommerce	own-service	WC-C-118/boundary/WC-S-5464	customers enter and validate their VAT number at checkout
+CM-TAX-005	woocommerce	own-service	WC-C-118/decides/WC-S-5462	businesses with a valid number in the base country VAT exempt
+CM-TAX-005	woocommerce	own-service	WC-C-118/decides/WC-S-5463	B2B transactions force checkout with a VAT number
+CM-TAX-005	woocommerce	own-service	WC-C-118/responsible/WC-S-0644	maker: Woo extensions among Automattic's Paid Services
+CM-TAX-005	woocommerce	shows	WC-C-118/reason/WC-S-5465	VAT on digital goods by customer location, with evidence
+CM-TAX-008	woocommerce	extension-point	WC-C-058/where/WC-S-0751	Marketplace category Sales tax and duties names duties
+CM-TAX-008	woocommerce	shows	WC-C-058/responsible/WC-S-0485	merchant solely responsible for customs charges, import taxes or duties
+CM-TAX-008	woocommerce	shows	WC-C-058/responsible/WC-S-0484	merchant responsible for customs regulations
+CM-TAX-009	woocommerce	own-service	WC-C-021/decides/WC-S-0547	WooPayments required to issue a Form 1099-K
+CM-TAX-009	woocommerce	own-service	WC-C-021/responsible/WC-S-0547	the same sentence, under responsible
+CM-TAX-009	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-TAX-009	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-TAX-009	woocommerce	shows	WC-C-021/decides/WC-S-0860	Form 1099-K an information filing required by the IRS
+CM-TAX-009	woocommerce	shows	WC-C-021/reason/WC-S-0860	the same sentence, under reason
+CM-TAX-009	woocommerce	shows	WC-I-0610	documentation topic Taxes and Documents

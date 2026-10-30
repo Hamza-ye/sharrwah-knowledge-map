@@ -54,3 +54,12 @@ CM-PAY-029	woocommerce	statements	core	Cash on delivery | Payments > cod | cod (
 CM-PAY-030	woocommerce	statements	core	Direct bank transfer | Payments > bacs | bacs (WC_Gateway_BACS method_description)	WC-C-002/boundary/WC-S-5004=Direct bank transfer (bacs) | WC-C-002/decides/WC-S-5001=Direct bank transfer (bacs)	WC-C-002/responsible:stated only in general terms;WC-C-002/reason:searched, not found	general
 CM-PAY-031	woocommerce	none-held					
 CM-PAY-032	woocommerce	none-held					
+CM-TAX-001	woocommerce	statements	core	Collect sales tax | Tax | Tax > Reduced rate rates | Tax > Standard rates | Tax > Tax options | Tax > Zero rate rates | WooPayments: Taxes	WC-C-054/responsible/WC-S-0467=Ecommerce Services (Terms 8.j) | WC-C-054/where/WC-S-0546=WooPayments	WC-C-054/reason:searched, not found	general
+CM-TAX-002	woocommerce	statements	outside;own-service	Set up WooCommerce Tax: Before you start | WooCommerce: Tax Calculations	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries	WC-C-023/where:searched, not found;WC-C-023/boundary:searched, not found;WC-C-023/reason:searched, not found	general
+CM-TAX-003	woocommerce	none-held					
+CM-TAX-004	woocommerce	statements	extension-point	Extensions > Store management > Sales tax and duties		WC-C-056/boundary:searched, not found;WC-C-056/reason:searched, not found	
+CM-TAX-005	woocommerce	statements	own-service	Settings | product card	WC-C-118/boundary/WC-S-5464=EU VAT Number | WC-C-118/decides/WC-S-5462=EU VAT Number | WC-C-118/decides/WC-S-5463=EU VAT Number | WC-C-118/reason/WC-S-5465=B2C sales of digital goods		general
+CM-TAX-006	woocommerce	none-held					
+CM-TAX-007	woocommerce	none-held					
+CM-TAX-008	woocommerce	statements	extension-point	Extensions > Store management > Sales tax and duties	WC-C-058/responsible/WC-S-0484=shipping Services (Terms 8.j) | WC-C-058/responsible/WC-S-0485=follows "When using DHL's services:" (Terms 8.j)		
+CM-TAX-009	woocommerce	statements	own-service	Is WooPayments required to take payments with WooCommerce?	WC-C-006/responsible/WC-S-0459=residents outside the Designated Countries | WC-C-021/decides/WC-S-0547=U.S. persons | WC-C-021/decides/WC-S-0860=U.S. | WC-C-021/reason/WC-S-0860=U.S. | WC-C-021/responsible/WC-S-0547=U.S. persons		general
