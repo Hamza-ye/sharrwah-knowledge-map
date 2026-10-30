@@ -279,3 +279,10 @@ None: Zid's concerns are in no Q1 match or unclear candidate.
   against a store goes, a reading that Zid's company handles it. The reviewer may hold ZD-S-0935 as `shows`.
 - **`none-held` with matches:** each of batch 2's (CM-SUP-002, -003, -006; CM-ANL-004, -005; CM-NTF-003) names its hits
   in its reading and why none is the capability.
+
+## The coordinator's corrections after batch 2 (30 October)
+
+- **ZD-C-088 and ZD-C-019 are `strained`.** Batch 2 cites their report statements in CM-ANL-001 and CM-ANL-006, other trees (S1).
+- **CM-MKT-022's Zid cell** names the row batch 2 added, Zid Alerts' settings entry (ZD-I-0144).
+- **D-zid added no capability,** so domain D needs no Zid back-fill. BigCommerce maps next.
+
