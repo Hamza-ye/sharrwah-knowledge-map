@@ -1,1 +1,10 @@
 cap_id	platform	filler	key
+CM-CHN-003	bigcommerce	Amazon	BC-C-068/where/BC-S-0368
+CM-CHN-003	bigcommerce	Walmart	BC-C-068/where/BC-S-0368
+CM-CHN-003	bigcommerce	eBay	BC-C-068/where/BC-S-0368
+CM-POS-001	bigcommerce	Square	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Vend	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Clover	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Heartland Retail	BC-C-069/decides/BC-S-0372
+CM-MKS-007	bigcommerce	Stripe (Stripe Adaptive Pricing), the FX conversion	BC-C-074/boundary/BC-S-0409
+CM-MKS-006	bigcommerce	Stripe (Stripe OCS Checkout Session), settling in the presentment currency	BC-C-074/reason/BC-S-0411

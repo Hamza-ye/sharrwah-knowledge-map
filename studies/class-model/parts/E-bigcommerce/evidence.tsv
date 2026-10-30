@@ -66,3 +66,56 @@ CM-CNT-008	bigcommerce	shows	BC-C-086/responsible/BC-S-0472	the merchant must ke
 CM-CNT-009	bigcommerce	core	BC-C-041/where/BC-S-0234	its own Redirects API: 301 redirects for storefronts
 CM-CNT-009	bigcommerce	core	BC-C-041/boundary/BC-S-0235	own webhook topic store/redirects/updated
 CM-CNT-009	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages redirects
+CM-CHN-001	bigcommerce	core	BC-C-038/where/BC-S-0219	its own Channels API group: create and manage sales channels
+CM-CHN-001	bigcommerce	shows	BC-C-038/where/BC-S-0220	definition of a channel: anywhere a merchant sells
+CM-CHN-001	bigcommerce	shows	BC-C-038/decides/BC-S-0222	the merchant creates a channel to sell in a new context
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0223	own access scope store_channel_settings
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0225	own webhook topic store/channel/created
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0226	Channels API rule: valid type and platform pair
+CM-CHN-001	bigcommerce	core	BC-I-0259	own webhook topic: product assigned to a channel
+CM-CHN-001	bigcommerce	core	BC-I-0260	own webhook topic: product unassigned from a channel
+CM-CHN-001	bigcommerce	extension-point	BC-I-0494	App Marketplace category Sales Channels
+CM-CHN-001	bigcommerce	shows	BC-I-0519	product line Omnichannel management, a name only
+CM-CHN-001	bigcommerce	shows	BC-I-0521	product line Social channels, a name only
+CM-CHN-003	bigcommerce	core	BC-C-068/decides/BC-S-0369	plan line on four plans: connect marketplaces, manage their orders
+CM-CHN-003	bigcommerce	core	BC-C-068/where/BC-S-0368	product line Marketplaces: sell across Amazon, Walmart, eBay
+CM-CHN-003	bigcommerce	shows	BC-C-068/boundary/BC-S-0370	channel platform amazon, types marketplace and marketing
+CM-CHN-004	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's product listings
+CM-CHN-004	bigcommerce	core	BC-C-038/boundary/BC-S-0224	own access scope store_channel_listings
+CM-CHN-004	bigcommerce	core	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface on four plans: keeps product listings accurate
+CM-CHN-004	bigcommerce	own-service	BC-C-067/responsible/BC-S-0366	contracting entity Feedonomics Holdings, LLC for the Feedonomics Platform
+CM-CHN-004	bigcommerce	shows	BC-C-067/where/BC-S-0364	definition of the Feedonomics Platform
+CM-CHN-004	bigcommerce	shows	BC-C-067/boundary/BC-S-0367	the merchant's data sent to Feedonomics Holdings LLC
+CM-CHN-004	bigcommerce	shows	BC-I-0522	product line Google Shopping, a name only
+CM-CHN-007	bigcommerce	core	BC-C-039/decides/BC-S-0228	plan line Multi-storefront: added storefronts, price and maximum per plan
+CM-CHN-007	bigcommerce	shows	BC-C-039/where/BC-S-0227	definition: multiple unique storefronts within one store
+CM-CHN-007	bigcommerce	shows	BC-C-039/boundary/BC-S-0229	partners must adapt to multi-storefront support
+CM-CHN-007	bigcommerce	shows	BC-C-039/reason/BC-S-0230	reason: no breaking changes for single-storefront stores
+CM-MKS-004	bigcommerce	core	BC-C-074/decides/BC-S-0402	shoppers in associated countries see and pay in the transactional currency
+CM-MKS-005	bigcommerce	core	BC-C-074/decides/BC-S-0404	the store's default currency can use any gateway
+CM-MKS-006	bigcommerce	core	BC-C-074/where/BC-S-0398	its own Currencies API: alternate currency display
+CM-MKS-006	bigcommerce	core	BC-C-074/where/BC-S-0399	control panel Settings > Setup > Currencies, Add a Currency
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0400	plan line Multi-currency on four plans: 100+ currencies
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0401	transactional currencies added in the MSF-enabled control panel
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0402	transactional currency: prices shown and charged in it
+CM-MKS-006	bigcommerce	core	BC-C-074/boundary/BC-S-0407	own webhook topic: a channel's currency updated
+CM-MKS-006	bigcommerce	core	BC-C-074/boundary/BC-S-0408	the transactional currency BigCommerce passes to the payment provider
+CM-MKS-006	bigcommerce	shows	BC-C-074/decides/BC-S-0403	the merchant sets the settlement currency through the provider
+CM-MKS-006	bigcommerce	shows	BC-C-074/decides/BC-S-0404	a multi-currency compatible gateway is required
+CM-MKS-006	bigcommerce	shows	BC-C-074/reason/BC-S-0410	reason: shopping and checking out in the native currency
+CM-MKS-006	bigcommerce	shows	BC-C-074/reason/BC-S-0411	other gateways cannot settle in the presentment currency
+CM-MKS-007	bigcommerce	core	BC-C-074/responsible/BC-S-0406	names the BigCommerce conversion rate
+CM-MKS-007	bigcommerce	outside	BC-C-074/boundary/BC-S-0409	Stripe handles the FX conversion
+CM-MKS-007	bigcommerce	shows	BC-C-074/responsible/BC-S-0405	conversion fee and rate outside BigCommerce's scope
+CM-MKS-008	bigcommerce	core	BC-C-048/where/BC-S-0270	its own Translations Admin GraphQL API
+CM-MKS-008	bigcommerce	core	BC-C-048/decides/BC-S-0271	setting Store Locale
+CM-MKS-008	bigcommerce	core	BC-C-048/decides/BC-S-0272	locales per sales channel through the GraphQL Admin API
+CM-MKS-008	bigcommerce	core	BC-C-048/boundary/BC-S-0274	own access scope store_translations
+CM-MKS-008	bigcommerce	core	BC-C-048/boundary/BC-S-0275	own webhook topic: a locale added to a channel
+CM-MKS-008	bigcommerce	shows	BC-C-048/decides/BC-S-0273	limit: up to 5 locales per storefront
+CM-MKS-009	bigcommerce	core	BC-C-075/where/BC-S-0412	its own Geography API: countries, states and provinces
+CM-POS-001	bigcommerce	extension-point	BC-C-069/decides/BC-S-0372	plan line Point of sale: POS integrations to Square, Vend, Clover, Heartland Retail
+CM-POS-001	bigcommerce	extension-point	BC-C-069/where/BC-S-0371	product line POS integrations with other point-of-sale systems
+CM-POS-001	bigcommerce	extension-point	BC-I-0491	App Marketplace category POS & In-Store
+CM-POS-001	bigcommerce	shows	BC-C-069/boundary/BC-S-0373	channel platform square of type pos
+CM-SFR-014	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's sites

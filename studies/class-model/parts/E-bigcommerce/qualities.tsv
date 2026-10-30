@@ -2,3 +2,7 @@ cap_id	platform	quality	value	key
 CM-SFR-003	bigcommerce	Design theme licence, stores per licence	This license only allows you to use each licensed Design theme for a single Store/website per license purchased.	BC-C-042/decides/BC-S-0239
 CM-SFR-010	bigcommerce	Tier 1 certifications	an ever-growing list of Tier 1 certifications including ISO, SOC, PCI, FIPS, RH-ISAC, GDPR, and CCPA	BC-C-078/where/BC-S-0421
 CM-SFR-013	bigcommerce	Facets and rating or in-stock filters in SearchProducts, by plan	Note that you can query facets, filter by rating, or filter by "in-stock" only if the merchant is on a Pro or Enterprise plan.	BC-C-011/decides/BC-S-0069
+CM-CHN-007	bigcommerce	Multi-storefront, added storefronts per plan	Add storefront $30/mo (max. 3) Add storefront $50/mo (max. 5) Add storefront $100/mo (max. 8) Contact Sales	BC-C-039/decides/BC-S-0228
+CM-CHN-004	bigcommerce	Feedonomics Surface, free SKUs	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365
+CM-MKS-008	bigcommerce	Locales per storefront	Each storefront can have up to 5 locales.	BC-C-048/decides/BC-S-0273
+CM-MKS-006	bigcommerce	Currencies accepted	Accept payments in over 100+ currencies	BC-C-074/decides/BC-S-0400

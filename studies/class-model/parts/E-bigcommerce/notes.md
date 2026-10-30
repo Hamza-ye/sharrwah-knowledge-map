@@ -91,3 +91,90 @@ The batch check ends "0 problems" after this file was written (the one problem b
 - **BC-S-0287 counts once:** `core` here in CM-SFR-008, whose BigCommerce cell rests on it, and `shows` in G's CM-OPS-003.
 - **CM-SFR-014, sites and routes of a headless storefront channel,** is new: `E-backfill-bigcommerce` writes its cells for the other four platforms after batch 2.
 - **The Tier 1 certifications (BC-S-0421),** recorded as a quality of CM-SFR-010, bear on platform-wide security and compliance: domain A's TRU batches and A's BigCommerce part weigh where they belong.
+
+## Batch 2: areas CHN, POS and MKS
+
+**Concerns landed (8):** BC-C-038, BC-C-039, BC-C-048, BC-C-067, BC-C-068, BC-C-069, BC-C-074, BC-C-075.
+- 7 joined existing capabilities: BC-C-038 (CM-CHN-001, terms, strained), BC-C-067 (CM-CHN-004, role), BC-C-068 (CM-CHN-003, definition, strained), BC-C-069 (CM-POS-001, terms, strained), BC-C-048 (CM-MKS-008, terms), BC-C-074 (CM-MKS-006, terms, strained), BC-C-075 (CM-MKS-009, terms).
+- 1 made a new capability: BC-C-039, Multi-Storefront, CM-CHN-007 (parent CM-CHN-001).
+- None moved.
+
+**Cells:** BigCommerce's cell for all 19 capabilities of CHN, POS and MKS, and for CM-CHN-007: 20 cells, 11 `statements`, 9 `none-held` (CM-CHN-002, CM-CHN-005, CM-CHN-006, CM-MKS-001, CM-MKS-002, CM-MKS-003, CM-POS-002, CM-POS-003, CM-POS-004). One evidence row added to batch 1's CM-SFR-014 (BC-S-0219, the Channels API manages a channel's sites); batch 1's reading of that cell is unchanged. Qualities: 4. Slot fillers: 9 (Amazon, Walmart, eBay in CM-CHN-003; Square, Vend, Clover, Heartland Retail in CM-POS-001; Stripe in CM-MKS-006 and CM-MKS-007). `uncited --domain E --platform bigcommerce` prints 0.
+
+**Rulings:** none. No match or unclear candidate holds a BigCommerce concern (`concerns --platform bigcommerce --domain E` lists none); `rulings.tsv` still holds only its header.
+
+### How I cut, and the grains
+
+- **CM-CHN-007, Several storefronts in one store (new).** Multi-Storefront has a plan line of its own with a price and a maximum per plan (BC-S-0228) and a definition (BC-S-0227), so it is a capability by the dry run's convention. It is not Markets (CM-MKS-001): the anchor defines a market by the buyers' place, and no statement of BC-C-039 ties a storefront to a place. It is not domain A's CM-ACC-003, several stores under one owner: MSF is several storefronts "within one Store". Area CHN, parent CM-CHN-001, a reading: BigCommerce counts headless storefronts as channels (BC-S-0220) and names multi-storefront beside multi-channel (BC-S-0229). The coordinator may prefer area SFR, under CM-SFR-001, since the thing multiplied is the storefront. `E-backfill-bigcommerce` writes its cells for the other four platforms.
+- **Multi-Storefront and batch 1's cells.** I added no MSF statement to CM-SFR-001 or CM-SFR-014: CM-CHN-007 holds them all, and none of BC-C-039's statements speaks of a theme, a site or a route. The MSF-enabled control panel (BC-S-0401) is cited in CM-MKS-006, where its subject, transactional currencies, is.
+- **BC-C-038, Channels, in CM-CHN-001.** The concern is BigCommerce's channel object as a whole: the channel's sites (CM-SFR-014), its product listings (CM-CHN-004) and the plan line Online storefront (BC-S-0221, batch 1's CM-SFR-001). BC-S-0221 stays in CM-SFR-001, as batch 1 left it; with BC-S-0219 in CM-SFR-014 and CM-CHN-004, the fit is strained.
+- **BC-C-074, Currencies, in CM-MKS-006,** the parent of conversion (CM-MKS-007); currency by the shopper's country (BC-S-0402) is also cited in CM-MKS-004. The default currency (BC-S-0404) goes to CM-MKS-005, which is not under CM-MKS-001: strained.
+- **BC-C-068, Marketplaces and social channels, in CM-CHN-003.** Its words are about marketplaces (BC-S-0368, BC-S-0369). Its product lines Social channels and Google Shopping are names only: cited as `shows` in CM-CHN-001 and CM-CHN-004. Strained for CM-CHN-004.
+- **BC-C-075, Geography, in CM-MKS-009.** BigCommerce's list holds countries, states and provinces; cities and districts are Salla's. The capability's name could add "states and provinces" (a proposal).
+
+### Joins on role
+
+- **BC-C-067, Feedonomics, in CM-CHN-004.** Feedonomics Surface "connects your store to ad channels and keeps product listings accurate as your catalog changes" (BC-S-0365): the role of Shopify's product feeds (SH-S-6093) and Salla's catalog feeds (SA-S-3201), the store's products kept listed on another channel.
+
+### Homonyms
+
+None kept apart. To watch:
+- **Marketplace.** BigCommerce's App Marketplace (or Commerce Marketplace, BC-S-0172, BC-S-0173, BC-S-0325, domain F) sells apps to merchants; its Marketplaces product line (BC-S-0368) is Amazon, Walmart and eBay as sales channels. Only the second is cited here (CM-CHN-003); CM-CHN-002's `none-held` names the first.
+- **Mobile app.** The BigCommerce mobile app (BC-S-0417, BC-S-0418, domain G) is the merchant's app for running the store, not a store's branded app for buyers (CM-CHN-006).
+- **Conversion.** BigCommerce's "conversion rate" (BC-S-0405, BC-S-0406) is a currency conversion; the reason statement's "encourages conversions" (BC-S-0410) is sales conversion.
+
+### Strained fits
+
+- **BC-C-038 in CM-CHN-001:** BC-S-0221 in CM-SFR-001 (batch 1), BC-S-0219 also in CM-SFR-014 and CM-CHN-004, two other trees.
+- **BC-C-068 in CM-CHN-003:** BC-I-0522 (Google Shopping) in CM-CHN-004, another tree.
+- **BC-C-069 in CM-POS-001:** CM-POS-001 is in-person selling from the platform's own POS app; BigCommerce's statements show only POS integrations to Square, Vend, Clover and Heartland Retail (BC-S-0372), and no POS app of its own. The cell is `extension-point` only. A proposal: rename CM-POS-001 "Point of sale: in-person selling, from the platform's own POS app or connected POS systems", or split connected POS systems into a child.
+- **BC-C-074 in CM-MKS-006:** BC-S-0404 in CM-MKS-005, another tree.
+
+### For the coordinator: CM-SFR-014's parent
+
+BigCommerce's Channels API manages "sales channels, their sites, and their product listings" (BC-S-0219), and a site is "associated with the specified channel" (BC-S-0233). Sites belong to every BigCommerce channel by that statement, not only to headless storefronts, though BC-S-0231 names headless storefront channels. CM-SFR-014's parent CM-SFR-011 follows BC-S-0231; CM-CHN-001 would follow BC-S-0219. I leave batch 1's row as it is; BC-S-0219's citation in CM-SFR-014 is the flag on it below.
+
+### Concerns read under `also`, and other domains' statements
+
+- None of the ten concerns naming E under `also` is cited by this batch. Inventory entries cited: BC-I-0259, BC-I-0260, BC-I-0494, BC-I-0519, BC-I-0521 (CM-CHN-001), BC-I-0522 (CM-CHN-004), BC-I-0491 (CM-POS-001), all among the entries Q1 placed in this batch's concerns, cited where no statement covers them.
+- Read and not cited, named in the cells' readings: BC-S-0385 (geolocation for a guest shopper's tax zone, BC-C-072, domain C), BC-S-0387 (the Tax Settings API's cross-border prices, domain C), BC-S-0413 (Staging environments, domain F, F's CM-DVT-006), BC-S-0347 (Agentic checkout, domain F), BC-S-0417 and BC-S-0418 (the BigCommerce mobile app, domain G), BC-S-0234 (batch 1's redirects for several storefronts).
+
+### Gaps that change what a cell claims
+
+- **CM-CHN-004 and CM-CHN-007's makers.** Feedonomics: BC-S-0366 is a row of BigCommerce's list of contracting entities naming Feedonomics Holdings, LLC for the Feedonomics Platform (BC-I-0547 is the same row; BC-I-0458 is its own privacy policy). No statement held says in words that Feedonomics Holdings is of BigCommerce's group. The `own-service` placement rests on the list being BigCommerce's own, the same reading batch 1 made of Makeswift, Inc.; if the reviewer reads it otherwise, the row becomes `shows` and the cell stays `core` on BC-S-0219, BC-S-0224 and BC-S-0365.
+- **CM-CHN-003:** who builds the marketplace connections, BigCommerce, Feedonomics or an app, is not held (searched: Amazon;eBay;Walmart;marketplace;Marketplaces). Q1's responsible gap on BC-C-068 is stated only in general terms.
+- **CM-CHN-007:** the "additional requirements" for a Multi-Storefront enabled store (BC-S-0227) are not held. Responsible: stated only in general terms.
+- **CM-MKS-004:** how the shopper's country is found for a transactional currency (BC-S-0402) is not held.
+- **CM-MKS-005:** where the default currency is set, and whether it changes, are not held.
+- **CM-MKS-007:** where the BigCommerce conversion rate comes from is not held.
+- **CM-MKS-009:** who sets the list of countries, and how it meets the rest: searched, not found (BC-C-075/decides, BC-C-075/boundary).
+- **CM-MKS-008:** why translations are placed as they are: searched, not found (BC-C-048/reason).
+- **CM-POS-001:** responsible stated only in general terms, reason searched, not found (BC-C-069).
+
+### What the checker flagged, and my answers
+
+The whole part's check, `python3 -I method/check_class_part.py studies/class-model/parts/E-bigcommerce`, ends "0 problems, 20 flags for the reviewer". Batch 1's flags (Makeswift's own-service, BC-S-0472, CM-CNT-001, CM-CNT-005, CM-CNT-006, BC-S-0252, BC-S-0263) are answered in batch 1's section. This batch's:
+1. **own-service on BC-S-0366 (Feedonomics).** Answered under Gaps: a reading resting on BigCommerce's contracting-entity list, as for Makeswift.
+2. **CM-CHN-002 none-held, 33 matches.** They hold "marketplace" or "Shop": the App Marketplace for merchants (BC-C-029, BC-C-059, domain F), other companies' marketplaces (BC-S-0368, BC-S-0369, BC-S-0370, cited in CM-CHN-003), the channel's definition (BC-S-0220) and "shop" in other senses. None is a shopping app or marketplace BigCommerce runs for buyers.
+3. **CM-CHN-005 none-held, 3 matches.** App Marketplace categories Product Sourcing and B2B/Wholesale (names only) and the subprocessor Microsourcing: none is selling between BigCommerce's stores.
+4. **CM-CHN-006 none-held, 4 matches.** The BigCommerce mobile app and its terms, the merchant's app (domain G).
+5. **CM-MKS-001 none-held, 14 matches.** Named in the cell's reading: marketing, regions of widgets and payments, email templates, global settings, metafields, shipping zones, tax regions, data-transfer regions. None is a version of the store for a place's buyers.
+6. **CM-MKS-002 none-held, 6 matches.** StagingPro and Staging environments (domain F, CM-DVT-006) and a tax rate schedule (BC-S-0383): no scheduled change to the live store.
+7. **CM-MKS-003 none-held, 2 matches.** BC-S-0347 is the merchant remaining merchant of record in agentic checkout; BC-S-0387 is the Tax Settings API's cross-border prices. Neither is a third party as merchant of record.
+8. **CM-POS-002 none-held, 2 matches.** A persistent cart across devices and the mobile app's compatible device.
+9. **CM-POS-003 none-held, 5 matches.** Offline payment methods not exposed by the Payments API, and things being registered (webhooks, carriers, tax providers).
+10. **CM-POS-004 none-held, 14 matches.** In-store pickup, checkout extensions, control-panel app extensions, contracting entities naming "Extensions", and BigCommerce's POS integrations (cited in CM-POS-001): none an extension point inside a POS app.
+11. **BC-S-0219 in CM-CHN-001, CM-CHN-004 and CM-SFR-014, more than one tree.** The statement names three things: sales channels (CM-CHN-001), their sites (CM-SFR-014) and their product listings (CM-CHN-004). BC-C-038's landing is strained for it; see "CM-SFR-014's parent" and the next point.
+12. **BC-S-0404 in CM-MKS-005 and CM-MKS-006, more than one tree.** One sentence holds the multi-currency gateway requirement (CM-MKS-006) and, in its parenthesis, the store's default currency (CM-MKS-005). BC-C-074's landing is strained for it. The coordinator may weigh putting CM-MKS-005 under CM-MKS-006 or CM-MKS-001; the anchor left it a root.
+- CM-CHN-004 has no parent, though CM-CHN-002, -003, -005 and -006 sit under CM-CHN-001: the coordinator may weigh giving CM-CHN-004 the parent CM-CHN-001, which would put BC-S-0219's CM-CHN-004 citation in CM-CHN-001's tree (point 11) and clear BC-C-068's strain.
+
+### Problems on batch 1's rows
+
+The whole part's check prints no problem on any row. Two observations for the coordinator, neither a checker problem:
+- CM-SFR-014's parent (above).
+- Batch 1 cited BC-C-038's plan line Online storefront (BC-S-0221) in CM-SFR-001. That citation still holds, and BC-C-038's landing names it as one reason it is strained.
+
+### Problems with the brief or the evidence
+
+- The batch message's "rule on the unclear candidates that hold your concerns": none hold a BigCommerce concern, as the brief says for Zid and BigCommerce. No rulings.
+- The message says 19 capabilities; with the new CM-CHN-007 this batch writes 20 cells.

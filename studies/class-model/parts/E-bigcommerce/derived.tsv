@@ -1,4 +1,11 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHN-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/management/channels | channel		BC-C-038/responsible:stated only in general terms;BC-C-038/reason:searched, not found;BC-C-059/reason:searched, not found;BC-C-068/responsible:stated only in general terms;BC-C-068/reason:searched, not found	general
+CM-CHN-002	bigcommerce	none-held					
+CM-CHN-003	bigcommerce	statements	core	Marketplaces	BC-C-068/decides/BC-S-0369=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-068/responsible:stated only in general terms;BC-C-068/reason:searched, not found	general
+CM-CHN-004	bigcommerce	statements	core;own-service	/developer/api-reference/rest/admin/management/channels | Feedonomics Platform	BC-C-067/decides/BC-S-0365=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-038/responsible:stated only in general terms;BC-C-038/reason:searched, not found;BC-C-067/reason:searched, not found;BC-C-068/responsible:stated only in general terms;BC-C-068/reason:searched, not found	general
+CM-CHN-005	bigcommerce	none-held					
+CM-CHN-006	bigcommerce	none-held					
+CM-CHN-007	bigcommerce	statements	core	Multi-Storefront	BC-C-039/decides/BC-S-0228=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-039/responsible:stated only in general terms	plans Core, Growth, Scale, Performance (columns of the plan comparison table)
 CM-CNT-001	bigcommerce	none-held					
 CM-CNT-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/store-information/v3 | store metafields		BC-C-049/decides:searched, not found;BC-C-049/responsible:stated only in general terms;BC-C-049/reason:searched, not found	general
 CM-CNT-003	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/content/pages | /developer/api-reference/rest/admin/content/store-content		BC-C-045/responsible:stated only in general terms;BC-C-059/reason:searched, not found	general
@@ -8,6 +15,19 @@ CM-CNT-006	bigcommerce	none-held
 CM-CNT-007	bigcommerce	statements	core	Settings APIs		BC-C-047/responsible:stated only in general terms;BC-C-047/reason:searched, not found	general
 CM-CNT-008	bigcommerce	statements	not-stated			BC-C-086/reason:searched, not found	
 CM-CNT-009	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/store-content | /developer/api-reference/rest/admin/management/redirects		BC-C-041/decides:page not read;BC-C-041/responsible:stated only in general terms;BC-C-041/reason:searched, not found;BC-C-045/responsible:stated only in general terms	general
+CM-MKS-001	bigcommerce	none-held					
+CM-MKS-002	bigcommerce	none-held					
+CM-MKS-003	bigcommerce	none-held					
+CM-MKS-004	bigcommerce	statements	core				general
+CM-MKS-005	bigcommerce	statements	core				general
+CM-MKS-006	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/currencies | Settings > Setup > Currencies	BC-C-074/decides/BC-S-0400=plans Core, Growth, Scale, Performance (columns of the plan comparison table)		general
+CM-MKS-007	bigcommerce	statements	core;outside				general
+CM-MKS-008	bigcommerce	statements	core	Translations Admin GraphQL API		BC-C-048/responsible:stated only in general terms;BC-C-048/reason:searched, not found	general
+CM-MKS-009	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/geography		BC-C-075/decides:searched, not found;BC-C-075/responsible:stated only in general terms;BC-C-075/boundary:searched, not found;BC-C-075/reason:searched, not found	general
+CM-POS-001	bigcommerce	statements	extension-point	POS integrations	BC-C-069/decides/BC-S-0372=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-059/reason:searched, not found;BC-C-069/responsible:stated only in general terms;BC-C-069/reason:searched, not found	
+CM-POS-002	bigcommerce	none-held					
+CM-POS-003	bigcommerce	none-held					
+CM-POS-004	bigcommerce	none-held					
 CM-SFR-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/themes	BC-C-038/decides/BC-S-0221=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-038/responsible:stated only in general terms;BC-C-038/reason:searched, not found;BC-C-042/reason:searched, not found	general
 CM-SFR-002	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/custom-template-associations | Stencil		BC-C-042/reason:searched, not found	general
 CM-SFR-003	bigcommerce	statements	outside			BC-C-042/reason:searched, not found	
@@ -21,4 +41,4 @@ CM-SFR-010	bigcommerce	statements	core	Tier 1 certifications	BC-C-078/decides/BC
 CM-SFR-011	bigcommerce	statements	core	/developer/docs/storefront/catalyst/overview | Catalyst (Storefront Framework)		BC-C-050/decides:searched, not found;BC-C-050/responsible:stated only in general terms;BC-C-050/reason:searched, not found	general
 CM-SFR-012	bigcommerce	statements	core	/developer/api-reference/rest/admin/authentication-apis/storefront-api-tokens/overview | Storefront API		BC-C-050/decides:searched, not found;BC-C-050/responsible:stated only in general terms;BC-C-050/reason:searched, not found;BC-C-053/decides:searched, not found;BC-C-053/responsible:stated only in general terms	general
 CM-SFR-013	bigcommerce	statements	core	Product filtering | Settings APIs	BC-C-011/decides/BC-S-0068=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-011/decides/BC-S-0069=Pro or Enterprise plan	BC-C-011/responsible:stated only in general terms;BC-C-011/reason:searched, not found;BC-C-047/responsible:stated only in general terms;BC-C-047/reason:searched, not found	general
-CM-SFR-014	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/sites		BC-C-040/decides:page not read;BC-C-040/responsible:stated only in general terms;BC-C-040/reason:searched, not found	general
+CM-SFR-014	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/channels | /developer/api-reference/rest/admin/management/sites		BC-C-038/responsible:stated only in general terms;BC-C-038/reason:searched, not found;BC-C-040/decides:page not read;BC-C-040/responsible:stated only in general terms;BC-C-040/reason:searched, not found	general
