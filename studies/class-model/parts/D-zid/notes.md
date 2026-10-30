@@ -159,3 +159,123 @@ None. Zid's concerns are in no Q1 match or unclear candidate (`concerns` prints 
 - **App Market categories for its areas:** المراجعات والتقييمات (ZD-I-0453, SUP), خدمة العملاء والمحادثات (ZD-I-0435,
   SUP), التحليلات والتقارير (ZD-I-0432, ANL); الذكاء الاصطناعي والتحليلات (ZD-I-0430) is cited by F-zid in CM-AIA-001.
 - **Product availability notifications** go by email or WhatsApp (ZD-S-1029, cited in CM-MKT-016).
+
+## Batch 2: areas SUP, ANL and NTF
+
+Concerns: ZD-C-086, ZD-C-092, ZD-C-111, ZD-C-105, ZD-C-097, ZD-C-098 and ZD-C-107. Cells: Zid's, for every capability
+of the three areas (18). No capability added. Also one evidence row on batch 1's cell CM-MKT-022 (ZD-I-0144, below).
+
+### How the concerns landed
+
+- **Joined existing capabilities (7), none new:** ZD-C-086 Product reviews and questions in CM-SUP-001 (terms, clean);
+  ZD-C-092 Customer self-service portal in CM-SUP-005 (terms, strained); ZD-C-111 Zid Assurance in CM-SUP-008 (role,
+  strained); ZD-C-105 Reports and analytics in CM-ANL-001 (terms, clean); ZD-C-097 Notifications in CM-NTF-001 (terms,
+  strained); ZD-C-098 Sender name in CM-NTF-004 (terms, strained); ZD-C-107 WhatsApp in CM-NTF-004 (terms, clean).
+
+### Grains chosen
+
+- **ZD-C-105** is Zid's whole Reports & Analytics section, so the parent CM-ANL-001. The plan lines named "Reports - …"
+  (Total Profit, Sales Channels, Sales Value Over Time, Total Sales), the Product Cost Report, Export Data, the help
+  article's التقارير (ZD-S-1048) and the custom reports (ZD-S-1050) are in CM-ANL-002. The unprefixed measures (Visit
+  Count, Total Sales, Sales Value Over Time, Top-Selling Cities, Traffic Sources, Customer Journey Stages) and the measures
+  in other plan groups are in the parent: no statement says where Zid shows them, so whether they are reports or the
+  dashboard's isn't stated. A reading: the table lists "Total Sales" beside "Reports - Total Sales", which suggests two
+  places, but no statement says so.
+- **ZD-C-097** holds customers' order status messages and team notifications, so the parent CM-NTF-001; team
+  notifications in CM-NTF-002; the sender, balance, OneSignal and WhatsApp statements in CM-NTF-004.
+- **Batch 1's report lines** (ZD-I-0280, 0281, 0282, 0307 of ZD-C-088; ZD-I-0335, 0337, 0338, 0341, 0347 of ZD-C-091)
+  are cited as core in CM-ANL-001, as measures; ZD-I-0029 Wallet Analytics (ZD-C-019) in CM-ANL-006, Zid's own API for
+  its own feature. **Customer Location** (ZD-I-0344) is left uncited: not defined, it may be a field or a measure.
+- **Zid Alerts' settings entry** التواصل › تنبيهات زد (ZD-I-0144) is added to batch 1's cell CM-MKT-022 as core: the
+  only stated purpose of Zid Alerts is abandoned carts (ZD-S-1018). It is ZD-C-097's, so ZD-C-097 is strained.
+  CM-MKT-022's reading (batch 1's) doesn't name it; the coordinator may add it.
+- **The App Market category** خدمة العملاء والمحادثات (ZD-I-0435) names both customer service and chats, and CM-SUP-004
+  and CM-SUP-005 are separate trees, so it is cited in both (the checker flags it).
+
+### Joins on role
+
+- **CM-SUP-008 / ZD-C-111:** Zid Assurance, where Zid 'handle[s] any complaints or inquiries' (ZD-S-0998), with Salla's
+  Complaints, the store's record of its customers' complaints (SA-S-1865, SA-S-5089). On Zid the platform's company
+  handles them (own-service); on Salla the merchant (core). **For the reviewer:** Zid Assurance is a program of three
+  parts, complaint handling, WhatsApp order updates (ZD-S-0999, cited in CM-NTF-001) and a badge on the store (not
+  cited). It can be split into a capability of its own, a buyer assurance program the platform runs, if another
+  platform shows one; Salla's complaints platform (SA-C-178, domain A) is the nearest, and the anchor didn't cite it.
+- **CM-ANL-003:** Zid's view.store.dashboard with Shopify's DASHBOARD and Salla's home summaries; no statement says
+  what Zid's store dashboard shows.
+
+### Strained fits
+
+- **ZD-C-092 in CM-SUP-005:** its complaint statements (ZD-S-0935, ZD-I-0413) are in CM-SUP-008.
+- **ZD-C-111 in CM-SUP-008:** its WhatsApp order updates (ZD-S-0999) are in CM-NTF-001 (above).
+- **ZD-C-097 in CM-NTF-001:** ZD-I-0144 in CM-MKT-022 (above).
+- **ZD-C-098 in CM-NTF-004:** batch 1's ZD-S-1046 in CM-MKT-007.
+
+### Homonyms kept apart
+
+- **Support, tickets and chat:** Zid's Ticketing & Chat System, Live Chat Support and 24/7 priority support (ZD-C-114,
+  domain A: ZD-S-1003, ZD-S-1004, ZD-S-0378, ZD-I-0199, ZD-I-0359) are Zid's support to merchants, not the store's
+  support to its buyers (CM-SUP-004, CM-SUP-005). Not cited.
+- **FAQ:** Zid's FAQs to merchants (ZD-S-0530, ZD-S-1005, ZD-S-1006, ZD-I-0128) aren't a store's FAQ (CM-SUP-006).
+- **سجل:** the commercial register (سجل تجاري) and 'registered' (مسجل) aren't a log (CM-NTF-003).
+- **مباشر:** 'direct', not live (CM-ANL-004).
+- **Badge:** the Zid Assurance badge (ZD-S-0999) and the API group Product Badge (ZD-I-0011, B-zid's CM-CAT-014).
+
+### Concerns read under `also`
+
+- **ZD-C-082 (C):** Zid Alerts (ZD-S-1018, ZD-S-1019), cited by batch 1 in CM-MKT-022; read for ZD-I-0144.
+- **ZD-C-112 (C):** Zid Voice's 'smart, personal call' (ZD-S-1072) is a hit of CM-ANL-005, not smart analytics.
+- **ZD-C-025 (F) and ZD-C-040 (A):** nothing for SUP, ANL or NTF.
+
+### Slot fillers and qualities
+
+- **CM-NTF-004:** هيئة الاتصالات وتقنية المعلومات (ZD-S-0958, ZD-S-0959) sets the sender name's terms; Unifonic / ينيفونك
+  (ZD-S-0960), with whom Zid deals on the sender name and message packages (`outside`); Meta (ZD-S-1051 to ZD-S-1053,
+  ZD-S-1055 to ZD-S-1057) sets WhatsApp's terms, prices and bans; the WhatsApp Business Platform (ZD-S-1054), on which
+  واتساب زد is built. Not fillers: OneSignal, a scope's name only (ZD-S-0118, third_one_signal_write); the chamber of
+  commerce (ZD-S-0959), which certifies the merchant's letter but neither does the capability nor sets its terms; RMS
+  (ZD-S-1038), not identified as a third party. 'الفريق المختص من طرفهم' (ZD-S-0958): whose team it is isn't stated.
+- **CM-SUP-005:** HubSpot, to whose tickets Zid Assurance's requests go (ZD-S-1038). **CM-SUP-008:** the Ministry of
+  Commerce, with which Zid processes complaints (ZD-S-1000). Neither statement has a scope, so no market is stated.
+- **Qualities:** Team Notifications' counts per plan (ZD-S-0954: starter "1", launch "1", growth "3", pro included);
+  Order Status Notifications (Limited) (ZD-I-0287), whose limit the concern map doesn't hold: the structure that would
+  hold it is Zid's compare-plans table (`plan-features`), placed without per-plan values, as batch 1 noted.
+
+### Gaps and problems with the evidence
+
+- **Plans named differently:** Zid's compare-plans table (starter, launch, growth, pro) says Reports - Sales Channels is
+  on launch, growth and pro (ZD-S-1049); the help article says reports are only for الأعمال الكبيره, النخبة and
+  الإحترافية (ZD-S-1048), and statistics elements aren't on زد لايت and النمو (ZD-S-1047). The map between the two sets
+  of names isn't stated; each statement keeps its scope.
+- **No analytics API:** Q1's gap ZD-C-105/boundary (searched, not found). CM-ANL-006 rests on Wallet Analytics only.
+- **Not stated:** what Zid's store dashboard shows; what Order Streaks is (ZD-I-0190); the messages and templates Zid's
+  notification settings control; whether واتساب زد carries conversations; the self-service portal's plans (Q1 gap
+  ZD-C-092/decides, observation needed); a maker statement for Zid Assurance other than 'from Zid' and 'entirely on Zid'.
+- **Zid Assurance's badge** (ZD-S-0999) is left out of CM-SUP-003: no statement says it is for trust.
+
+### Rulings
+
+None: Zid's concerns are in no Q1 match or unclear candidate.
+
+### Proposed renames (for the coordinator)
+
+- CM-SUP-001: add Zid's Product Reviews, Product Questions & Answers / الاسئلة.
+- CM-SUP-005: add Zid's بوابة خدمة العملاء الذاتية (Customer Portal Tickets).
+- CM-SUP-008: add Zid's ضمان زد (Zid Assurance); the name "Customer complaints about the store" fits both.
+- CM-ANL-001: add Zid's Reports & Analytics / التقارير والتحليلات.
+- CM-NTF-001: add Zid's رسائل حالات الطلب (order status messages).
+- CM-NTF-002: add Zid's Team Notifications / إشعارات الفريق.
+- CM-NTF-004: add Zid's اسم المرسل (Sender Name) and واتساب زد.
+
+### What the checker flagged (whole part, after batch 2): 0 problems, 46 flags
+
+- **Batch 1's rows, for the coordinator:** landings line 5, ZD-C-088 clean in CM-MKT-001, and line 8, ZD-C-019 clean in
+  CM-LOY-001, now have statements cited in CM-ANL-001 and CM-ANL-006: by S1 both become `strained`, as batch 1 foresaw.
+  The flag on ZD-C-091/boundary/ZD-S-0066 is batch 1's, answered above.
+- **ZD-C-070's App Market categories:** batch 2 adds ZD-I-0453 (CM-SUP-001), ZD-I-0435 (CM-SUP-004 and CM-SUP-005) and
+  ZD-I-0432 (CM-ANL-001), each `extension-point`, the only statement of apps doing that capability on Zid; no `core`.
+- **ZD-I-0435 in two trees:** on purpose, above.
+- **own-service:** ZD-S-0998 names Zid ('The service is entirely on Zid and we … handle any complaints'); ZD-S-0999
+  names Zid ('A free program from Zid'); ZD-S-0935 names Zid's site (موقع زد) and Zid's support team as where a complaint
+  against a store goes, a reading that Zid's company handles it. The reviewer may hold ZD-S-0935 as `shows`.
+- **`none-held` with matches:** each of batch 2's (CM-SUP-002, -003, -006; CM-ANL-004, -005; CM-NTF-003) names its hits
+  in its reading and why none is the capability.
