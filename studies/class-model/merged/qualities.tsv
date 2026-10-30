@@ -22,4 +22,11 @@ CM-INV-008	zid	how long the product is held while card payment is entered	سوف
 CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801	B-zid
 CM-INV-005	bigcommerce	inventory locations on the Core, Growth, Scale and Performance plans	Up to 4 Up to 5 Up to 8 Custom	BC-C-005/decides/BC-S-0038	B-bigcommerce
 CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise plan: 100; can be customized by request	BC-C-005/decides/BC-S-0039	B-bigcommerce
+CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	F-anchor
+CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	F-anchor
+CM-APP-008	shopify	compiled UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-164/decides/SH-S-7487	F-anchor
+CM-APP-009	shopify	custom apps' data access, by plan	Build custom apps using Shopify APIs: Limited data access, Full data access, Full data access, Full data access	SH-C-167/decides/SH-S-7054	F-anchor
 CM-MIG-005	salla	eligibility: the merchant's sales in the last 12 months	يجب أن يكون التاجر قد حقق مبيعات لا تقل عن 20,000 ريال سعودي خلال آخر 12 شهرًا	SA-C-302/decides/SA-S-5120	G-anchor
+CM-OPS-005	woocommerce	days logs are kept, by default	'retention_period_days' => 30,	WC-C-037/decides/WC-S-5373	G-woocommerce
+CM-OPS-001	bigcommerce	uptime	With 100% uptime during Cyber Week since 2016 (and 99.98% since 2009)	BC-C-083/where/BC-S-0455	G-bigcommerce
+CM-OPS-003	bigcommerce	data location: Amazon hosting of customer and catalog data	Hosting customer / product catalog data, feed data, logs, etc. USA	BC-C-082/where/BC-S-0447	G-bigcommerce

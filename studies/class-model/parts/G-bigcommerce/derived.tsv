@@ -1,0 +1,14 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-EVO-001	bigcommerce	none-held					
+CM-MIG-001	bigcommerce	none-held					
+CM-MIG-002	bigcommerce	none-held					
+CM-MIG-003	bigcommerce	none-held					
+CM-MIG-004	bigcommerce	none-held					
+CM-MIG-005	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-MIG-006	bigcommerce	none-held					
+CM-OPS-001	bigcommerce	statements	core	uptime		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found;BC-C-083/reason:searched, not found	general
+CM-OPS-002	bigcommerce	none-held					
+CM-OPS-003	bigcommerce	statements	core;outside	/developer/api-reference/rest/admin/management/infrastructure-hosting | Amazon | Native Hosting		BC-C-052/responsible:stated only in general terms;BC-C-082/decides:page not read;BC-C-082/reason:searched, not found;BC-C-083/reason:searched, not found	general
+CM-OPS-004	bigcommerce	none-held					
+CM-OPS-005	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/system-logs | Settings > Advanced > Store logs		BC-C-060/decides:page not read;BC-C-060/responsible:stated only in general terms;BC-C-060/boundary:searched, not found;BC-C-060/reason:searched, not found	general
+CM-SRF-001	bigcommerce	statements	core;own-service	Commerce Mobile Application	BC-C-077/decides/BC-S-0418=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-077/boundary:searched, not found;BC-C-077/reason:searched, not found	general

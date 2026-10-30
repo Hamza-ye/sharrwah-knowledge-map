@@ -442,6 +442,140 @@ CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0041	its own API (C1): scope 
 CM-INV-005	bigcommerce	core	BC-C-005/boundary/BC-S-0042	its own API (C1): webhook store/inventory/location/created	B-bigcommerce
 CM-INV-005	bigcommerce	outside	BC-C-006/boundary/BC-S-0047	partner solutions hold locations as the source of truth	B-bigcommerce
 CM-SEL-002	bigcommerce	core	BC-C-001/boundary/BC-S-0023	files added to digital products via its control panel or WebDav	B-bigcommerce
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-1495	the admin navigation item Apps	F-anchor
+CM-APP-001	shopify	core	SH-C-156/decides/SH-S-5028	the apps list route, open to the staff permissions APPLICATIONS or LIMITED_APPLICATIONS	F-anchor
+CM-APP-001	shopify	core	SH-C-019/where/SH-S-6316	the admin's Settings > Apps	F-anchor
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-5035	the admin route app/grant	F-anchor
+CM-APP-001	shopify	core	SH-C-156/where/SH-S-5039	the admin route oauth/request_grant	F-anchor
+CM-APP-001	shopify	core	SH-C-156/decides/SH-S-7052	plan line Integrate with 1000s of apps, Included on every plan	F-anchor
+CM-APP-001	shopify	extension-point	SH-C-156/responsible/SH-S-0739	apps developed by third-party developers, supported by them, may carry app charges	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0738	apps made by Shopify are usually free and supported by Shopify	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/decides/SH-S-0755	merchants approve an app's scopes when they install it	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/decides/SH-S-0060	Shopify may disable access to any Third Party Services at any time	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0058	use of Third Party Services is solely between the merchant and the provider	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0059	Shopify has no control over Third Party Services and isn't liable for them	F-anchor
+CM-APP-001	shopify	shows	SH-C-156/responsible/SH-S-0217	developers must tell merchants that the developer alone answers for the Application	F-anchor
+CM-APP-001	salla	core	SA-C-194/where/SA-S-1883	the dashboard link My apps, /apps/installed	F-anchor
+CM-APP-001	salla	core	SA-C-194/where/SA-S-1702	the link Installed apps	F-anchor
+CM-APP-001	salla	core	SA-C-194/where/SA-S-3541	the dashboard app @salla.sa/ui-merchant-apps at /apps	F-anchor
+CM-APP-001	salla	core	SA-C-194/decides/SA-S-2629	the staff permission marketplace_apps_management, named التطبيقات المثبتة	F-anchor
+CM-APP-001	salla	extension-point	SA-C-194/responsible/SA-S-0037	Salla provides only the technical infrastructure that hosts partners' apps or services	F-anchor
+CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0024	developer and merchant each answer for their use of apps; Salla for none	F-anchor
+CM-APP-001	salla	shows	SA-C-194/responsible/SA-S-0033	the partner answers to merchants and regulators for the content	F-anchor
+CM-APP-001	salla	shows	SA-C-194/decides/SA-S-3208	a flag of type app, tied to an app id and the plans plus, pro and special, not released	F-anchor
+CM-APP-002	shopify	core	SH-C-157/where/SH-S-2753	Shopify App Store in shopify.com's header navigation	F-anchor
+CM-APP-002	shopify	core	SH-C-157/decides/SH-S-0698	Shopify's review rejects an app until the problem is fixed and the app resubmitted	F-anchor
+CM-APP-002	shopify	core	SH-C-157/where/SH-S-2852	App distribution in the Partner Dashboard's navigation	F-anchor
+CM-APP-002	shopify	core	SH-C-157/decides/SH-S-7078	plan line Plus Certified apps, Included only on Plus	F-anchor
+CM-APP-002	shopify	extension-point	SH-I-1940	the App Store category Store management apps	F-anchor
+CM-APP-002	shopify	extension-point	SH-I-1945	the App Store category Operations apps	F-anchor
+CM-APP-002	shopify	shows	SH-C-157/decides/SH-S-0692	an app's distribution method can't be changed once selected	F-anchor
+CM-APP-002	shopify	shows	SH-C-157/boundary/SH-S-0215	a developer gets an API client by registering a Partner Account under the Partner Program Agreement	F-anchor
+CM-APP-002	shopify	shows	SH-C-157/responsible/SH-S-0288	the Partner Program Agreement is with Shopify Inc. and Shopify Commerce Singapore Pte. Ltd.	F-anchor
+CM-APP-002	shopify	shows	SH-C-157/decides/SH-S-0694	Shopify approves an app's use of protected customer data only if it is the minimum needed	F-anchor
+CM-APP-002	salla	core	SA-C-194/where/SA-S-1884	the dashboard link App Store, /apps	F-anchor
+CM-APP-002	salla	core	SA-C-175/decides/SA-S-0023	Salla's team may review, accept or reject any app developers submit	F-anchor
+CM-APP-002	salla	core	SA-C-194/boundary/SA-S-1075	the App API's folder App Details Builder, for an app's details (a reading of its name)	F-anchor
+CM-APP-002	salla	extension-point	SA-I-0184	the app category General App	F-anchor
+CM-APP-002	salla	extension-point	SA-I-0190	the app category Shipping and Delivery	F-anchor
+CM-APP-002	salla	shows	SA-C-194/where/SA-S-0002	an app marketplace among the connected products Salla offers	F-anchor
+CM-APP-002	salla	shows	SA-C-175/where/SA-S-5082	the App Store's terms policy page on partners.salla.com	F-anchor
+CM-APP-002	salla	shows	SA-C-175/responsible/SA-S-0015	the policy's preamble names the company that owns the Salla platform	F-anchor
+CM-APP-002	salla	shows	SA-C-175/responsible/SA-S-0021	disputes go before the competent courts of Jeddah	F-anchor
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0281	app charges are added directly to the merchant's Shopify invoice	F-anchor
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0269	an app's recurring charge is included in the regular Shopify subscription bill	F-anchor
+CM-APP-003	shopify	core	SH-C-019/responsible/SH-S-0282	Shopify collects the charge and pays out the developer's share	F-anchor
+CM-APP-003	shopify	core	SH-C-019/responsible/SH-S-0283	Shopify handles chargebacks	F-anchor
+CM-APP-003	shopify	core	SH-C-157/decides/SH-S-0284	apps published on the App Store must use a Shopify billing solution	F-anchor
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-0285	plans, usage pricing and free trials set in the Partner Dashboard, not in billing code	F-anchor
+CM-APP-003	shopify	core	SH-C-019/boundary/SH-S-0769	Shopify's own API group Billing	F-anchor
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5065	the admin route approving an app charge	F-anchor
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-5066	that route, open to the staff permission BILLING_APPLICATION_CHARGES	F-anchor
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5061	the admin route listing an app's pricing plans	F-anchor
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-5078	the admin route approving a charge for a managed pricing plan	F-anchor
+CM-APP-003	shopify	core	SH-C-019/decides/SH-S-5083	the route plan:subscriptions, open to APPLICATIONS, APPLICATIONS_BILLING and BILLING_SUBSCRIPTIONS	F-anchor
+CM-APP-003	shopify	core	SH-C-019/where/SH-S-6315	the admin's Settings > Billing	F-anchor
+CM-APP-003	shopify	shows	SH-C-019/responsible/SH-S-0286	the developer obtains the merchant's consent and bills under the Merchant Agreement	F-anchor
+CM-APP-003	shopify	shows	SH-C-019/decides/SH-S-0271	a paid charge's refund is asked of the app developer	F-anchor
+CM-APP-003	shopify	shows	SH-C-019/decides/SH-S-0287	the developer pays 0% on the first USD 1 million of app revenues and 15% above	F-anchor
+CM-APP-003	shopify	shows	SH-C-019/reason/SH-S-0280	Shopify App Pricing gives app users a predictable, standardized experience	F-anchor
+CM-APP-003	salla	core	SA-C-195/responsible/SA-S-0025	a paid app's payment goes through the Salla platform, subject to its commissions	F-anchor
+CM-APP-003	salla	core	SA-C-195/where/SA-S-1927	the navigation link App Subscriptions, /subscriptions/apps	F-anchor
+CM-APP-003	salla	core	SA-C-195/boundary/SA-S-1077	the App API's folder Subscriptions	F-anchor
+CM-APP-003	salla	shows	SA-C-195/decides/SA-S-0026	Salla keeps a percentage of the subscription for hosting and integration	F-anchor
+CM-APP-004	shopify	core	SH-C-156/boundary/SH-S-1153	the webhook topic app/uninstalled	F-anchor
+CM-APP-004	shopify	core	SH-C-019/boundary/SH-S-1156	the webhook topic app_subscriptions/update	F-anchor
+CM-APP-004	shopify	core	SH-I-0390	the webhook topic app_purchases_one_time/update	F-anchor
+CM-APP-004	shopify	core	SH-I-0391	the webhook topic app_subscriptions/approaching_capped_amount	F-anchor
+CM-APP-004	shopify	core	SH-I-0075	the Partner API's App Events API	F-anchor
+CM-APP-004	shopify	core	SH-I-0171	the Partner API's App events	F-anchor
+CM-APP-004	salla	core	SA-C-193/where/SA-S-5093	the partner portal's App Events, sent through webhooks, about the partner's apps	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1649	app.installed, when an app is installed on a merchant store	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1569	the event app.uninstalled	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1648	app.store.authorize, when a store authorizes an app's scope	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1650	the event app.updated	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1570	the event app.trial.started	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1571	the event app.trial.expired	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1651	the event app.trial.canceled	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1572	the event app.subscription.started	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1654	the event app.subscription.renewed	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1652	the event app.subscription.expired	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1653	the event app.subscription.canceled	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1656	the event app.settings.updated	F-anchor
+CM-APP-004	salla	core	SA-C-193/boundary/SA-S-1655	the event app.feedback.created	F-anchor
+CM-APP-004	salla	shows	SA-C-193/decides/SA-S-5094	app events are tested in demo stores, the app saved as a draft once priced	F-anchor
+CM-APP-005	shopify	core	SH-C-163/decides/SH-S-0683	Shopify invokes functions as needed within the customer journey, never by URL	F-anchor
+CM-APP-005	shopify	core	SH-C-163/where/SH-S-0809	the API reference group Shopify Functions	F-anchor
+CM-APP-005	shopify	core	SH-C-163/decides/SH-S-7076	plan line Personalize store with custom functions, Included only on Plus	F-anchor
+CM-APP-005	shopify	extension-point	SH-C-163/where/SH-S-0681	Shopify Functions let developers customize Shopify's backend logic	F-anchor
+CM-APP-005	shopify	extension-point	SH-C-163/decides/SH-S-0682	stores on any plan use public App Store apps that contain functions	F-anchor
+CM-APP-005	shopify	shows	SH-C-163/where/SH-S-0684	a function is written in any language that compiles to WebAssembly	F-anchor
+CM-APP-005	shopify	shows	SH-C-163/responsible/SH-S-7281	the developer alone answers for the Application	F-anchor
+CM-APP-005	salla	core	SA-C-196/where/SA-S-0190	App Functions are fully managed by Salla: no servers, deployments, monitoring or scaling	F-anchor
+CM-APP-005	salla	core	SA-C-196/where/SA-S-1168	App Functions, a top-level section of Salla's developer docs	F-anchor
+CM-APP-005	salla	core	SA-C-196/decides/SA-S-3079	the released feature flag app-functions, enabled for the store	F-anchor
+CM-APP-005	salla	core	SA-C-196/boundary/SA-S-1078	the API folder Merchants Events	F-anchor
+CM-APP-005	salla	core	SA-C-196/boundary/SA-S-1079	the API folder Customers Events	F-anchor
+CM-APP-005	salla	extension-point	SA-C-196/reason/SA-S-0187	developers write serverless functions that run when events occur in a store	F-anchor
+CM-APP-005	salla	shows	SA-C-196/decides/SA-S-0189	synchronous actions block the user and must respond in milliseconds	F-anchor
+CM-APP-005	salla	shows	SA-C-196/decides/SA-S-0188	App Functions are in beta and free of charge	F-anchor
+CM-APP-005	salla	shows	SA-C-196/where/SA-S-3602	the dashboard bundle @salla.sa/app-functions-types at /{app-name}	F-anchor
+CM-APP-006	shopify	core	SH-C-164/boundary/SH-S-0817	the API reference Polaris references	F-anchor
+CM-APP-006	shopify	shows	SH-I-2104	the help center's section App extensions and functions	F-anchor
+CM-APP-006	shopify	shows	SH-C-156/decides/SH-S-5037	the admin route for an app's extension details, behind a beta and the apps permissions	F-anchor
+CM-APP-006	shopify	shows	SH-C-164/responsible/SH-S-7281	the developer alone answers for the Application	F-anchor
+CM-APP-006	salla	core	SA-C-197/where/SA-S-1158	Embedded SDK, a section of Salla's developer docs	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1084	the API folder Embedded SDK	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1085	the SDK's Auth Module	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1086	the SDK's Page Module	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1087	the SDK's Nav Module	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1088	the SDK's UI Module	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1089	the SDK's Checkout Module	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1090	the SDK's Endpoints	F-anchor
+CM-APP-006	salla	core	SA-C-197/boundary/SA-S-1095	the SDK's App Onboarding	F-anchor
+CM-APP-006	salla	core	SA-C-197/decides/SA-S-3427	the released flag apps-iframe-sections, enabled for the store	F-anchor
+CM-APP-007	shopify	core	SH-I-0054	the API reference App Home (iframe)	F-anchor
+CM-APP-007	shopify	core	SH-I-0055	the API reference App Home (UI extension)	F-anchor
+CM-APP-007	shopify	core	SH-C-156/where/SH-S-5034	the admin route apps:embedded_parent, at apps	F-anchor
+CM-APP-007	shopify	extension-point	SH-C-164/where/SH-S-2182	the extension target app_home	F-anchor
+CM-APP-007	salla	core	SA-C-197/where/SA-S-3585	the dashboard app @salla.sa/ui-merchant-embedded at /embedded	F-anchor
+CM-APP-007	salla	extension-point	SA-C-197/where/SA-S-0197	a third-party application in an iframe interacts with the Merchant Dashboard through the Embedded SDK	F-anchor
+CM-APP-007	salla	extension-point	SA-C-197/where/SA-S-3581	the dashboard route named for each app, /{app-name}	F-anchor
+CM-APP-008	shopify	extension-point	SH-C-164/where/SH-S-0711	Admin UI extensions embed an app's functionality on core admin pages	F-anchor
+CM-APP-008	shopify	extension-point	SH-I-1428	the extension target Admin block (admin_block)	F-anchor
+CM-APP-008	shopify	extension-point	SH-I-1425	the extension target Admin action (admin_action)	F-anchor
+CM-APP-008	shopify	extension-point	SH-I-1432	the extension target Admin print action (admin_print)	F-anchor
+CM-APP-008	shopify	extension-point	SH-I-1481	the extension target Admin link (admin_link)	F-anchor
+CM-APP-008	shopify	extension-point	SH-I-1497	the target admin.product-details.block.render	F-anchor
+CM-APP-008	shopify	shows	SH-C-164/decides/SH-S-7487	a compiled UI extension bundle can't exceed 64 KB	F-anchor
+CM-APP-008	shopify	shows	SH-C-164/reason/SH-S-7496	Shopify enforces the limit at deployment, for fast loading	F-anchor
+CM-APP-009	shopify	core	SH-C-167/where/SH-S-7143	the admin route apps:development_list, App development, in the Apps section	F-anchor
+CM-APP-009	shopify	core	SH-C-167/where/SH-S-7144	the admin route development/enable, in the Apps section	F-anchor
+CM-APP-009	shopify	core	SH-C-167/decides/SH-S-5038	the route, open to APPLICATIONS with EDIT_PRIVATE_APPS or VIEW_PRIVATE_APPS	F-anchor
+CM-APP-009	shopify	core	SH-I-0995	the staff permission App development > Enable development	F-anchor
+CM-APP-009	shopify	core	SH-C-167/decides/SH-S-7054	plan line Build custom apps using Shopify APIs, limited data access on Basic	F-anchor
+CM-APP-009	shopify	shows	SH-C-157/decides/SH-S-0693	building for a specific merchant, a developer typically uses custom distribution	F-anchor
+CM-APP-009	shopify	shows	SH-C-167/responsible/SH-S-7477	the developer of an unsupported app is responsible for updating it	F-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1805	dashboard link Import & export, /products/imports, in the products list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1847	dashboard link Import customers, /customers/imports, in the customers list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1057	Merchant API folder Exports: its own API for its own feature (C1)	G-anchor
@@ -502,3 +636,83 @@ CM-OPS-001	salla	shows	SA-C-235/responsible/SA-S-0044	Salla exempt from liabilit
 CM-OPS-001	shopify	core	SH-C-181/where/SH-S-0673	each pod has a pair of data centers, one active, the other a recovery site	G-anchor
 CM-OPS-001	shopify	core	SH-C-181/reason/SH-S-0674	each shard fully isolated so a failure couldn't spiral into a platform outage	G-anchor
 CM-OPS-002	salla	core	SA-C-234/where/SA-S-0047	a line of the status page's component list: Merchant APIs - Operational	G-anchor
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0057	Products > Product Import	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0058	Products > Product Export	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/where/WC-S-0426	onboarding task Import your products	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/decides/WC-S-5396	import allowed with edit_products and import	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/decides/WC-S-5397	export allowed with edit_products and export	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/boundary/WC-S-5398	its own product import filter	G-woocommerce
+CM-MIG-001	woocommerce	core	WC-C-067/boundary/WC-S-5399	its own product export columns filter	G-woocommerce
+CM-MIG-001	woocommerce	extension-point	WC-C-109/where/WC-S-0747	Marketplace category Import and export	G-woocommerce
+CM-MIG-001	woocommerce	shows	WC-C-032/decides/WC-S-0588	free to export all your content	G-woocommerce
+CM-MIG-006	woocommerce	core	WC-C-094/where/WC-S-0028	section Advanced > Blueprint (beta)	G-woocommerce
+CM-MIG-006	woocommerce	core	WC-C-094/decides/WC-S-5448	import needs manage_woocommerce and manage_options	G-woocommerce
+CM-MIG-006	woocommerce	core	WC-C-094/decides/WC-S-5449	imports only in coming soon mode	G-woocommerce
+CM-MIG-006	woocommerce	core	WC-C-094/reason/WC-S-5450	imports can change network-wide settings	G-woocommerce
+CM-MIG-006	woocommerce	core	WC-C-094/boundary/WC-S-5451	its own route /blueprint/export	G-woocommerce
+CM-OPS-003	woocommerce	shows	WC-C-034/where/WC-S-0642	merchant verifies their hosting environment	G-woocommerce
+CM-OPS-003	woocommerce	outside	WC-C-034/where/WC-S-0503	your hosting provider, a third party	G-woocommerce
+CM-OPS-003	woocommerce	own-service	WC-C-034/where/WC-S-0503	sites hosted by Automattic	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0045	admin page WooCommerce > Status	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/decides/WC-S-0045	behind manage_woocommerce	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0036	Status > System status	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/where/WC-S-0037	Status > Tools	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0120	REST wc/v3 system-status	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0121	REST wc/v3 system-status-tools	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0691	system status API views status items	G-woocommerce
+CM-OPS-004	woocommerce	core	WC-C-083/boundary/WC-S-0692	tools API views and runs tools	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-037/where/WC-S-0038	Status > Logs tab	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-037/where/WC-S-0920	view logger entries at Status > Logs	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-037/decides/WC-S-5373	log settings defaults	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-037/boundary/WC-S-0446	its own log handler class	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-036/where/WC-S-0611	remote log endpoint	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-0936	setting: send error logs to WooCommerce	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-5371	remote_logging enabled by default	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-036/decides/WC-S-5372	allowed only with usage tracking	G-woocommerce
+CM-OPS-005	woocommerce	shows	WC-C-036/reason/WC-S-0936	to help improve WooCommerce	G-woocommerce
+CM-OPS-005	woocommerce	core	WC-C-036/boundary/WC-S-0611	remote log endpoint as its boundary	G-woocommerce
+CM-EVO-001	woocommerce	core	WC-C-088/where/WC-S-5432	section Features under Settings > Advanced	G-woocommerce
+CM-EVO-001	woocommerce	core	WC-C-088/decides/WC-S-5433	features admin users enable and disable	G-woocommerce
+CM-EVO-001	woocommerce	core	WC-C-088/decides/WC-S-5434	feature definition defaults, is_experimental	G-woocommerce
+CM-EVO-001	woocommerce	core	WC-C-088/boundary/WC-S-0455	its own declare_compatibility	G-woocommerce
+CM-SRF-001	woocommerce	core	WC-C-090/where/WC-S-0422	onboarding task for the mobile app	G-woocommerce
+CM-SRF-001	woocommerce	core	WC-C-090/where/WC-S-0939	push notifications for the mobile apps	G-woocommerce
+CM-SRF-001	woocommerce	core	WC-C-090/decides/WC-S-5437	push_notifications released, on by default	G-woocommerce
+CM-SRF-001	woocommerce	core	WC-C-090/boundary/WC-S-0203	its own route MobileAppMagicLink	G-woocommerce
+CM-SRF-001	woocommerce	core	WC-C-090/boundary/WC-S-0204	its own route MobileAppQRLogin	G-woocommerce
+CM-OPS-003	shopify	core	SH-C-036/decides/SH-S-7032	plan line Unlimited web hosting, Included on every plan	G-backfill-woocommerce
+CM-EVO-001	shopify	core	SH-I-1235	plan line Test new features before launch, public plan comparison (C2)	G-backfill-woocommerce
+CM-EVO-001	shopify	core	SH-I-1308	plan line Test new features before launch, admin plan comparison (C2)	G-backfill-woocommerce
+CM-SRF-001	shopify	core	SH-C-079/decides/SH-S-5144	admin route order:mobile:record-payment, native clients only	G-backfill-woocommerce
+CM-SRF-001	shopify	core	SH-C-118/decides/SH-S-5145	admin route order:mobile:release-fulfillment-holds, native clients only	G-backfill-woocommerce
+CM-SRF-001	shopify	core	SH-C-043/decides/SH-S-5149	admin route customer:mobile:edit-marketing-status, native clients only	G-backfill-woocommerce
+CM-SRF-001	salla	core	SA-C-001/decides/SA-S-2082	plan line store management app on iOS and Android (Salla Plus)	G-backfill-woocommerce
+CM-MIG-001	zid	core	ZD-C-044/boundary/ZD-S-0018	Merchant API Products > Product Export, Email All Products to Store Owner: its own API for its own feature (C1)	G-zid
+CM-MIG-001	zid	core	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2)	G-zid
+CM-MIG-001	zid	core	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2)	G-zid
+CM-MIG-001	zid	core	ZD-I-0263	plan line Bulk Export Orders, placed in ZD-C-080 (C2)	G-zid
+CM-MIG-001	zid	core	ZD-I-0345	plan line Export Customer Data, placed in ZD-C-091 (C2)	G-zid
+CM-MIG-004	zid	core	ZD-C-044/where/ZD-S-0803	settings page Export requests, from the dashboard's settings icon	G-zid
+CM-MIG-004	zid	core	ZD-I-0132	settings entry General › طلبات التصدير, new dashboard	G-zid
+CM-MIG-004	zid	core	ZD-C-044/decides/ZD-S-0804	requested exported files downloaded in the browser; option to protect them with a password	G-zid
+CM-MIG-004	zid	shows	ZD-C-044/reason/ZD-S-0805	the password sent to the merchant's email, to protect the data: the reason	G-zid
+CM-MIG-005	zid	shows	ZD-C-102/reason/ZD-S-0968	names moving to Zid from another platform; no service named	G-zid
+CM-MIG-005	bigcommerce	extension-point	BC-I-0484	App Marketplace category Data Transfer/Migration Services (placed in BC-C-059; C2)	G-bigcommerce
+CM-OPS-001	bigcommerce	core	BC-I-0539	product line Performance & reliability (placed in BC-C-083; C2)	G-bigcommerce
+CM-OPS-001	bigcommerce	core	BC-C-082/decides/BC-S-0450	infrastructure segmented and replicated across availability zones	G-bigcommerce
+CM-OPS-001	bigcommerce	shows	BC-C-083/where/BC-S-0455	uptime record during Cyber Week	G-bigcommerce
+CM-OPS-001	bigcommerce	shows	BC-C-057/reason/BC-S-0316	rate limits stated as safeguards for platform reliability	G-bigcommerce
+CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0288	BigCommerce provides hosting for Catalyst projects	G-bigcommerce
+CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting API	G-bigcommerce
+CM-OPS-003	bigcommerce	core	BC-C-028/responsible/BC-S-0169	BigCommerce a PCI DSS service provider as a shared hosting provider	G-bigcommerce
+CM-OPS-003	bigcommerce	outside	BC-C-083/responsible/BC-S-0457	third parties provide hosting services essential to the Services	G-bigcommerce
+CM-OPS-003	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon hosts customer and catalog data, feed data, logs	G-bigcommerce
+CM-OPS-003	bigcommerce	shows	BC-C-052/decides/BC-S-0289	Native Hosting in closed beta	G-bigcommerce
+CM-OPS-003	bigcommerce	shows	BC-C-052/boundary/BC-S-0290	hosting infrastructure uses the OpenNext Cloudflare adapter	G-bigcommerce
+CM-OPS-003	bigcommerce	shows	BC-C-052/reason/BC-S-0291	reason: hosting and billing consolidated with the store	G-bigcommerce
+CM-OPS-005	bigcommerce	core	BC-C-060/where/BC-S-0332	control panel Settings > Advanced > Store logs	G-bigcommerce
+CM-OPS-005	bigcommerce	core	BC-C-060/where/BC-S-0331	its own System Logs endpoint for store log entries	G-bigcommerce
+CM-SRF-001	bigcommerce	core	BC-C-077/decides/BC-S-0418	plan line BigCommerce mobile app	G-bigcommerce
+CM-SRF-001	bigcommerce	own-service	BC-C-077/decides/BC-S-0419	Commerce licenses the Application to the merchant	G-bigcommerce
+CM-SRF-001	bigcommerce	shows	BC-C-077/where/BC-S-0417	Mobile App Terms bind use of the Application	G-bigcommerce
+CM-SRF-001	bigcommerce	shows	BC-C-077/responsible/BC-S-0420	merchant responsible for a compatible device and its fees	G-bigcommerce
