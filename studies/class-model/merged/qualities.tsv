@@ -45,6 +45,32 @@ CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في ال
 CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098	E-anchor
 CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970	E-anchor
 CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012	E-anchor
+CM-SFR-012	woocommerce	what the Store API gives access to	In contrast to the WooCommerce REST API, the Store API is unauthenticated and does not provide access to sensitive store data or other customer information.	WC-C-079/decides/WC-S-0915	E-woocommerce
+CM-POS-001	woocommerce	store address requirement	Your store address must be in one of the supported countries.	WC-C-089/decides/WC-S-0893	E-woocommerce
+CM-POS-001	woocommerce	store currency requirement	You must be using that country’s native currency as the store currency.	WC-C-089/decides/WC-S-0894	E-woocommerce
+CM-POS-002	woocommerce	countries available	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States	WC-C-014/decides/WC-S-0869	E-woocommerce
+CM-POS-002	woocommerce	currency collected	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.	WC-C-014/decides/WC-S-0870	E-woocommerce
+CM-MKS-005	woocommerce	base currencies per store	WooCommerce only allows for one base currency per store.	WC-C-052/decides/WC-S-0874	E-woocommerce
+CM-SFR-002	zid	SDK template designs	Store - SDK Template Design (Up to 2)	ZD-C-113/decides/ZD-S-1001	E-zid
+CM-SFR-003	zid	Themes in the themes store, plan Rise	Access to themes store (Over 50 professional themes)	ZD-C-076/decides/ZD-S-0363	E-zid
+CM-SFR-003	zid	Partner's share of a theme sale	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	E-zid
+CM-CHN-003	zid	Zid's share of Amazon sales by plan	نسبة زد من أمازون حسب الباقة : النمو: 5% الانطلاقة : 8% الاحترافية:0.95%	ZD-C-110/decides/ZD-S-1060	E-zid
+CM-CHN-003	zid	Wallet balance for the connection's fees	يتم فرض الرسوم باستخدام المحفظة. نسمح بحد أقصى 500 ريال سعودي كرصيد. بعد ذلك، سيتوقف التطبيق عن العمل حتى تقوم بإعادة شحن محفظتك.	ZD-C-110/decides/ZD-S-1061	E-zid
+CM-CHN-003	zid	Jahez joining conditions	1- سجل تجاري او وثيقة عمل حر. 2-تفعيل مزيد. 3-المنتجات سريعة التحضير او الجاهزة التي لا يتعدى تحضيرها 10 دقائق. 4-موقع المتجر او المخزون في احد مدن المملكة.	ZD-C-110/decides/ZD-S-1064	E-zid
+CM-CHN-006	zid	Subscription term	مدة الاشتراك في التطبيق سنة واحدة، وعند انتهاء فترة التجديد ينتهي الاشتراك.	ZD-C-116/decides/ZD-S-1083	E-zid
+CM-POS-001	zid	Zid POS on plan Professional	Completely free Zid POS - two cashiers	ZD-C-108/decides/ZD-S-0382	E-zid
+CM-POS-001	zid	E-invoicing approval	نعم ، كفوترة إلكترونية مع العلم أن زد حاصلة على جوائز واعتماد من الهيئة	ZD-C-108/boundary/ZD-S-0983	E-zid
+CM-MKS-001	zid	Markets by plan	خاصية الأسواق تتيح لك عدد من الأسواق حسب باقتك: باقة الانطلاقة سوق واحد افتراضي باقة النمو سوقين افتراضي وجديد الباقة الاحترافية خمس أسواق	ZD-C-034/decides/ZD-S-0749	E-zid
+CM-MKS-004	zid	Geo-Based Currency Settings by plan	plans:{starter:"1",launch:"1",growth:!0,pro:!0}	ZD-C-050/decides/ZD-S-0807	E-zid
+CM-MKS-006	zid	Payment currency with Zid Payments	في مرحلة الدفع النهائي سيتم الدفع بالعملة الأساسية للمتجر (الريال السعودي\ الدينار الكويتي) لجميع الشبكات ما عدا “كي نت” سيتم الدفع بالدينار الكويتي	ZD-C-050/decides/ZD-S-0808	E-zid
+CM-SFR-003	bigcommerce	Design theme licence, stores per licence	This license only allows you to use each licensed Design theme for a single Store/website per license purchased.	BC-C-042/decides/BC-S-0239	E-bigcommerce
+CM-SFR-010	bigcommerce	Tier 1 certifications	an ever-growing list of Tier 1 certifications including ISO, SOC, PCI, FIPS, RH-ISAC, GDPR, and CCPA	BC-C-078/where/BC-S-0421	E-bigcommerce
+CM-SFR-013	bigcommerce	Facets and rating or in-stock filters in SearchProducts, by plan	Note that you can query facets, filter by rating, or filter by "in-stock" only if the merchant is on a Pro or Enterprise plan.	BC-C-011/decides/BC-S-0069	E-bigcommerce
+CM-CHN-007	bigcommerce	Multi-storefront, added storefronts per plan	Add storefront $30/mo (max. 3) Add storefront $50/mo (max. 5) Add storefront $100/mo (max. 8) Contact Sales	BC-C-039/decides/BC-S-0228	E-bigcommerce
+CM-CHN-004	bigcommerce	Feedonomics Surface, free SKUs	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	E-bigcommerce
+CM-MKS-008	bigcommerce	Locales per storefront	Each storefront can have up to 5 locales.	BC-C-048/decides/BC-S-0273	E-bigcommerce
+CM-MKS-006	bigcommerce	Currencies accepted	Accept payments in over 100+ currencies	BC-C-074/decides/BC-S-0400	E-bigcommerce
+CM-CHN-007	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056	E-backfill-bigcommerce
 CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	F-anchor
 CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	F-anchor
 CM-APP-008	shopify	compiled UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-164/decides/SH-S-7487	F-anchor

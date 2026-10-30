@@ -49,6 +49,37 @@ CM-POS-002	shopify	Stripe	SH-C-184/responsible/SH-S-0089	E-anchor
 CM-MKS-003	shopify	Global-e (the merchant of record)	SH-C-110/responsible/SH-S-0563	E-anchor
 CM-MKS-003	shopify	Global-e, under the Service Terms - Shopify Managed Markets	SH-C-110/responsible/SH-S-0127	E-anchor
 CM-MKS-006	shopify	Adyen (as the primary gateway)	SH-C-108/decides/SH-S-0545	E-anchor
+CM-CHN-004	woocommerce	Google Merchant Center	WC-C-110/decides/WC-S-5492	E-woocommerce
+CM-CHN-004	woocommerce	Google Merchant Center	WC-C-110/boundary/WC-S-5494	E-woocommerce
+CM-POS-002	woocommerce	Stripe (Stripe Terminal Services Terms; Stripe Terminal Purchase Terms)	WC-C-014/responsible/WC-S-0850	E-woocommerce
+CM-MKS-004	woocommerce	MaxMind	WC-C-046/decides/WC-S-5378	E-woocommerce
+CM-MKS-004	woocommerce	MaxMind	WC-C-046/boundary/WC-S-0615	E-woocommerce
+CM-MKS-004	woocommerce	ipify	WC-C-046/boundary/WC-S-0612	E-woocommerce
+CM-MKS-004	woocommerce	ipinfo.io	WC-C-046/boundary/WC-S-0613	E-woocommerce
+CM-CHN-002	zid	أنظمة المملكة العربية السعودية (Saudi Arabia's regulations), on prohibited activities	ZD-C-109/decides/ZD-S-0987	E-zid
+CM-CHN-003	zid	Amazon	ZD-C-110/where/ZD-S-0458	E-zid
+CM-CHN-003	zid	Trendyol	ZD-C-110/where/ZD-S-0458	E-zid
+CM-CHN-003	zid	Jahez	ZD-C-110/where/ZD-S-0458	E-zid
+CM-CHN-003	zid	أمازون البائعين (Amazon Sellers), an account the merchant needs	ZD-C-110/responsible/ZD-S-1058	E-zid
+CM-CHN-003	zid	Amazon, in Saudi Arabia and the UAE	ZD-C-110/decides/ZD-S-1063	E-zid
+CM-CHN-003	zid	جاهز (Jahez), its joining conditions	ZD-C-110/decides/ZD-S-1064	E-zid
+CM-CHN-003	zid	GDPR	ZD-C-110/responsible/ZD-S-1059	E-zid
+CM-CHN-003	zid	CCPA	ZD-C-110/responsible/ZD-S-1059	E-zid
+CM-CHN-003	zid	PCI-DSS	ZD-C-110/responsible/ZD-S-1059	E-zid
+CM-CHN-006	zid	عناقيد التطبيقات, building the store's app	ZD-C-116/where/ZD-S-1081	E-zid
+CM-CHN-006	zid	عناقيد التطبيقات, uploading the app to its own account	ZD-C-116/responsible/ZD-S-1085	E-zid
+CM-CHN-006	zid	Apple and Google (app stores), the merchant's developer accounts	ZD-C-116/responsible/ZD-S-1084	E-zid
+CM-POS-002	zid	الوكيل (the agent), the POS devices' warranty	ZD-C-108/responsible/ZD-S-0981	E-zid
+CM-MKS-006	zid	كي نت (KNET), paid in Kuwaiti dinars	ZD-C-050/decides/ZD-S-0808	E-zid
+CM-CHN-003	bigcommerce	Amazon	BC-C-068/where/BC-S-0368	E-bigcommerce
+CM-CHN-003	bigcommerce	Walmart	BC-C-068/where/BC-S-0368	E-bigcommerce
+CM-CHN-003	bigcommerce	eBay	BC-C-068/where/BC-S-0368	E-bigcommerce
+CM-POS-001	bigcommerce	Square	BC-C-069/decides/BC-S-0372	E-bigcommerce
+CM-POS-001	bigcommerce	Vend	BC-C-069/decides/BC-S-0372	E-bigcommerce
+CM-POS-001	bigcommerce	Clover	BC-C-069/decides/BC-S-0372	E-bigcommerce
+CM-POS-001	bigcommerce	Heartland Retail	BC-C-069/decides/BC-S-0372	E-bigcommerce
+CM-MKS-007	bigcommerce	Stripe (Stripe Adaptive Pricing), the FX conversion	BC-C-074/boundary/BC-S-0409	E-bigcommerce
+CM-MKS-006	bigcommerce	Stripe (Stripe OCS Checkout Session), settling in the presentment currency	BC-C-074/reason/BC-S-0411	E-bigcommerce
 CM-AIA-002	shopify	Anthropic PBC	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Applied Compute Inc.	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Fireworks.ai	SH-C-152/responsible/SH-S-0201	F-anchor

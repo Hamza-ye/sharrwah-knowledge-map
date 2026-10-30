@@ -1323,6 +1323,10 @@ CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6103	read_publications
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6287	write_resource_feedbacks
 CM-CHN-001	by landing	decides	SH-C-135/decides/SH-S-6282	write_publications
 CM-CHN-001	by landing	decides	SH-C-135/decides/SH-S-6285	write_publications
+CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0223	store_channel_settings
+CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0225	store/channel/created
+CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0226	type and platform
+CM-CHN-001	exact	decides	BC-C-038/decides/BC-S-0222	channel
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1596	product.channels.changed
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1598	product.unpublish
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1606	product.publish
@@ -1352,6 +1356,11 @@ CM-CHN-002	exact	decides	SA-C-096/decides/SA-S-3238	mahly
 CM-CHN-002	exact	boundary	SH-C-136/boundary/SH-S-0847	Shop API
 CM-CHN-002	exact	decides	SH-C-136/decides/SH-S-0724	help.shopify.com/en/manual/online-sales-channels/shop.md
 CM-CHN-002	exact	decides	SH-C-136/decides/SH-S-0725	help.shopify.com/en/manual/online-sales-channels/shop.md (note)
+CM-CHN-002	exact	boundary	ZD-C-109/boundary/ZD-S-0991	إضافة المنتجات بشكل تلقائي
+CM-CHN-002	exact	boundary	ZD-C-109/boundary/ZD-S-0992	بيانات عملاء التاجر
+CM-CHN-002	exact	decides	ZD-C-109/decides/ZD-S-0986	مشترك بأحد الباقات
+CM-CHN-002	exact	decides	ZD-C-109/decides/ZD-S-0987	أنظمة المملكة العربية السعودية
+CM-CHN-002	exact	decides	ZD-C-109/decides/ZD-S-0988	تجار الخليج
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-5937	read_marketplace_fulfillment_orders
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6030	read_marketplace_fulfillment_orders
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6031	read_marketplace_fulfillment_orders
@@ -1365,6 +1374,8 @@ CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6040	read_marketplace_retu
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6227	write_marketplace_orders
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6229	write_marketplace_orders
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6230	write_marketplace_returns
+CM-CHN-003	exact	boundary	BC-C-068/boundary/BC-S-0370	amazon
+CM-CHN-003	exact	decides	BC-C-068/decides/BC-S-0369	Amazon / eBay / Walmart
 CM-CHN-003	exact	decides	SA-C-097/decides/SA-S-2195	الربط بمنصات التسوّق العالمية
 CM-CHN-003	exact	boundary	SH-C-137/boundary/SH-S-1123	read_marketplace_orders
 CM-CHN-003	exact	boundary	SH-C-137/boundary/SH-S-1124	write_marketplace_orders
@@ -1376,8 +1387,20 @@ CM-CHN-003	exact	decides	SH-C-137/decides/SH-S-6231	write_marketplace_returns
 CM-CHN-003	exact	decides	SH-C-137/decides/SH-S-7049	Import unlimited orders from marketplaces
 CM-CHN-003	exact	decides	SH-C-137/decides/SH-S-7050	50 synced marketplace orders per month
 CM-CHN-003	exact	decides	SH-C-137/decides/SH-S-7051	Over 50 synced marketplace orders
+CM-CHN-003	exact	boundary	ZD-C-110/boundary/ZD-S-0995	is_marketplace_order
+CM-CHN-003	exact	boundary	ZD-C-110/boundary/ZD-S-1065	واجهات برمجة التطبيقات (APIs)
+CM-CHN-003	exact	boundary	ZD-C-110/boundary/ZD-S-1066	مندوب جاهز
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-0994	جاهز
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-1060	نسبة زد من أمازون
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-1061	المحفظة
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-1062	باقة زد لايت
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-1063	أمازون
+CM-CHN-003	exact	decides	ZD-C-110/decides/ZD-S-1064	شروط الانضمام لـ جاهز
 CM-CHN-004	by landing	boundary	SH-C-138/boundary/SH-S-6091	read_product_listings
 CM-CHN-004	by landing	boundary	SH-C-138/boundary/SH-S-6092	read_product_listings
+CM-CHN-004	exact	boundary	BC-C-038/boundary/BC-S-0224	store_channel_listings
+CM-CHN-004	exact	boundary	BC-C-067/boundary/BC-S-0367	Feedonomics Holdings LLC
+CM-CHN-004	exact	decides	BC-C-067/decides/BC-S-0365	Google / Meta / TikTok / Microsoft / Pinterest (Feedonomics Surface)
 CM-CHN-004	exact	decides	SA-C-074/decides/SA-S-3201	google-merchant-feed
 CM-CHN-004	exact	decides	SA-C-074/decides/SA-S-3203	facebook-catalog-feed
 CM-CHN-004	exact	decides	SA-C-074/decides/SA-S-3205	snapchat-catalog-feed
@@ -1387,6 +1410,8 @@ CM-CHN-004	exact	boundary	SH-C-138/boundary/SH-S-6090	read_product_listings
 CM-CHN-004	exact	boundary	SH-C-138/boundary/SH-S-6093	read_product_listings
 CM-CHN-004	exact	boundary	SH-C-138/boundary/SH-S-6094	read_product_listings
 CM-CHN-004	exact	decides	SH-C-138/decides/SH-S-5198	listings:channel-mapping
+CM-CHN-004	exact	boundary	WC-C-110/boundary/WC-S-5494	Product Feed Information (Google Merchant Center)
+CM-CHN-004	exact	decides	WC-C-110/decides/WC-S-5492	General product information
 CM-CHN-005	exact	boundary	SH-C-141/boundary/SH-S-7467	ShopifyPaymentsTransactionType.SHOPIFY_COLLECTIVE_DEBIT
 CM-CHN-005	exact	boundary	SH-C-141/boundary/SH-S-7468	ShopifyPaymentsTransactionType.SHOPIFY_COLLECTIVE_CREDIT
 CM-CHN-005	exact	decides	SH-C-141/decides/SH-S-0730	help.shopify.com/en/manual/online-sales-channels/shopify-collective.md
@@ -1413,6 +1438,12 @@ CM-CHN-006	exact	decides	SA-C-174/decides/SA-S-5078	سياسة الغاء خدم
 CM-CHN-006	exact	boundary	SH-C-195/boundary/SH-S-6058	read_mobile_platform_applications
 CM-CHN-006	exact	boundary	SH-C-195/boundary/SH-S-6059	read_mobile_platform_applications
 CM-CHN-006	exact	boundary	SH-C-195/boundary/SH-S-6243	write_mobile_platform_applications
+CM-CHN-006	exact	boundary	ZD-C-116/boundary/ZD-S-1086	لوحة التحكم
+CM-CHN-006	exact	decides	ZD-C-116/decides/ZD-S-0500	manage.store.ecosystem.mobileapps
+CM-CHN-006	exact	decides	ZD-C-116/decides/ZD-S-1083	مدة الاشتراك
+CM-CHN-007	exact	boundary	BC-C-039/boundary/BC-S-0229	partners
+CM-CHN-007	exact	decides	BC-C-039/decides/BC-S-0228	Multi-storefront
+CM-CHN-007	exact	decides	SH-C-139/decides/SH-S-7056	Build headless storefronts
 CM-CNT-001	by landing	boundary	SH-C-027/boundary/SH-S-0987	read_files
 CM-CNT-001	by landing	boundary	SH-C-027/boundary/SH-S-0988	write_files
 CM-CNT-001	by landing	boundary	SH-C-027/boundary/SH-S-5985	read_files
@@ -1443,6 +1474,9 @@ CM-CNT-002	by landing	boundary	SH-C-028/boundary/SH-S-6239	write_metaobjects
 CM-CNT-002	by landing	boundary	SH-C-028/boundary/SH-S-6240	write_metaobjects
 CM-CNT-002	by landing	boundary	SH-C-028/boundary/SH-S-6241	write_metaobjects
 CM-CNT-002	by landing	boundary	SH-C-028/boundary/SH-S-6242	write_metaobjects
+CM-CNT-002	exact	boundary	BC-C-049/boundary/BC-S-0278	store_metafield_write
+CM-CNT-002	exact	boundary	BC-C-049/boundary/BC-S-0279	store_metafield_write_all
+CM-CNT-002	exact	boundary	BC-C-049/boundary/BC-S-0280	store/metafield/created
 CM-CNT-002	exact	boundary	SH-C-028/boundary/SH-S-5952	read_content
 CM-CNT-002	exact	boundary	SH-C-028/boundary/SH-S-6053	read_metaobjects
 CM-CNT-002	exact	boundary	SH-C-028/boundary/SH-S-6056	read_metaobjects
@@ -1452,12 +1486,17 @@ CM-CNT-002	exact	boundary	SH-C-028/boundary/SH-S-7240	ServerIntent create metaob
 CM-CNT-002	exact	decides	SH-C-028/decides/SH-S-5120	content:parent
 CM-CNT-002	exact	decides	SH-C-028/decides/SH-S-5121	metaobject_entry:new
 CM-CNT-002	exact	decides	SH-C-028/decides/SH-S-5625	entitlements.metaobjects.enabled
+CM-CNT-002	exact	boundary	WC-C-064/boundary/WC-S-0675	Product custom fields
+CM-CNT-002	exact	decides	ZD-C-100/decides/ZD-S-0963	Custom Fields
 CM-CNT-003	by landing	decides	SA-C-093/decides/SA-S-2559	pages_browse
 CM-CNT-003	by landing	decides	SA-C-093/decides/SA-S-2560	pages_management
 CM-CNT-003	by landing	decides	SA-C-093/decides/SA-S-2634	custom_urls_management
 CM-CNT-003	by landing	boundary	SH-C-030/boundary/SH-S-5955	read_content
 CM-CNT-003	by landing	boundary	SH-C-030/boundary/SH-S-5956	read_content
 CM-CNT-003	by landing	boundary	SH-C-030/boundary/SH-S-6061	read_online_store_pages
+CM-CNT-003	exact	boundary	BC-C-045/boundary/BC-S-0254	store_v2_content
+CM-CNT-003	exact	boundary	BC-C-045/boundary/BC-S-0255	store/channel/{channel_id}/page/created
+CM-CNT-003	exact	boundary	BC-C-045/boundary/BC-S-0256	GraphQL Storefront API
 CM-CNT-003	exact	decides	SA-C-093/decides/SA-S-2076	الصفحات التعريفية
 CM-CNT-003	exact	decides	SA-C-093/decides/SA-S-2100	إضافة صفحات تعريفية للمتجر
 CM-CNT-003	exact	decides	SA-C-093/decides/SA-S-2342	pages_browse
@@ -1467,8 +1506,10 @@ CM-CNT-003	exact	decides	SA-C-093/decides/SA-S-3386	internal-pages
 CM-CNT-003	exact	boundary	SH-C-030/boundary/SH-S-1030	read_online_store_pages
 CM-CNT-003	exact	boundary	SH-C-030/boundary/SH-S-1031	write_online_store_pages
 CM-CNT-003	exact	boundary	SH-C-030/boundary/SH-S-7241	ServerIntent create page
+CM-CNT-003	exact	boundary	ZD-C-039/boundary/ZD-S-0783	API's > Storefront [Pages]
 CM-CNT-004	by landing	decides	SA-C-081/decides/SA-S-2562	blog_browse
 CM-CNT-004	by landing	decides	SA-C-081/decides/SA-S-2563	blog_management
+CM-CNT-004	exact	decides	BC-C-045/decides/BC-S-0253	Built-in blog
 CM-CNT-004	exact	decides	SA-C-081/decides/SA-S-2011	مدونة المتجر
 CM-CNT-004	exact	decides	SA-C-081/decides/SA-S-2345	blog_browse
 CM-CNT-004	exact	decides	SA-C-081/decides/SA-S-2346	blog_management
@@ -1478,19 +1519,23 @@ CM-CNT-004	exact	boundary	SH-C-030/boundary/SH-S-6148	unauthenticated_read_conte
 CM-CNT-004	exact	boundary	SH-C-030/boundary/SH-S-6178	write_content
 CM-CNT-004	exact	boundary	SH-C-030/boundary/SH-S-7233	ServerIntent create article
 CM-CNT-004	exact	decides	SH-C-030/decides/SH-S-5124	comments
+CM-CNT-004	exact	boundary	ZD-C-093/boundary/ZD-S-0937	GET /v2/blogs/posts/
+CM-CNT-004	exact	boundary	ZD-C-093/boundary/ZD-S-1043	تك ستيشن
+CM-CNT-004	exact	decides	ZD-C-093/decides/ZD-S-1042	باقة النمو; الباقة الاحترافية
 CM-CNT-005	by landing	boundary	SH-C-031/boundary/SH-S-1028	read_online_store_navigation
 CM-CNT-005	by landing	boundary	SH-C-031/boundary/SH-S-1029	write_online_store_navigation
-CM-CNT-005	by landing	boundary	SH-C-031/boundary/SH-S-6245	write_online_store_navigation
 CM-CNT-005	exact	decides	SA-C-093/decides/SA-S-3343	store-menu
 CM-CNT-005	exact	boundary	SH-C-031/boundary/SH-S-6060	read_online_store_navigation
 CM-CNT-005	exact	boundary	SH-C-031/boundary/SH-S-6244	write_online_store_navigation
 CM-CNT-005	exact	decides	SH-C-031/decides/SH-S-5123	menus:list
+CM-CNT-005	exact	decides	ZD-C-113/decides/ZD-S-1074	القائمة الرئيسية
 CM-CNT-006	exact	boundary	SA-C-093/boundary/SA-S-1069	Custom URLs
 CM-CNT-006	exact	decides	SA-C-093/decides/SA-S-2090	إنشاء روابط مخصصة
 CM-CNT-006	exact	decides	SA-C-093/decides/SA-S-2417	custom_urls_management
 CM-CNT-006	exact	decides	SA-C-093/decides/SA-S-3359	custom-urls
 CM-CNT-007	by landing	decides	SA-C-033/decides/SA-S-2575	seo_enhancement_browse
 CM-CNT-007	by landing	decides	SA-C-033/decides/SA-S-2576	seo_enhancement_management
+CM-CNT-007	exact	decides	BC-C-047/decides/BC-S-0266	Settings V3: Storefront SEO
 CM-CNT-007	exact	boundary	SA-C-033/boundary/SA-S-1562	metadata
 CM-CNT-007	exact	decides	SA-C-033/decides/SA-S-2133	توليد تحسينات SEO عبر الذكاء الاصطناعي *برسوم إضافية
 CM-CNT-007	exact	decides	SA-C-033/decides/SA-S-2141	تحسين ظهور المتجر على محركات البحث (SEO)
@@ -1508,6 +1553,10 @@ CM-CNT-008	exact	boundary	SH-C-034/boundary/SH-S-6222	write_legal_policies
 CM-CNT-008	exact	decides	SH-C-034/decides/SH-S-7088	setting:legal
 CM-CNT-008	exact	decides	SH-C-034/decides/SH-S-7089	setting:legal:cancel_return_policy_create
 CM-CNT-008	exact	decides	SH-C-034/decides/SH-S-7291	entitlements.policies
+CM-CNT-008	exact	decides	ZD-C-039/decides/ZD-S-0780	أنواع الصفحات
+CM-CNT-008	exact	decides	ZD-C-039/decides/ZD-S-0781	سياسات المستهلك
+CM-CNT-009	exact	boundary	BC-C-041/boundary/BC-S-0235	store/redirects/updated
+CM-CNT-009	exact	boundary	SH-C-031/boundary/SH-S-6245	write_online_store_navigation
 CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2513	customer_search
 CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2515	customer_edit
 CM-CUS-001	by landing	decides	SA-C-060/decides/SA-S-2516	customer_add
@@ -1979,6 +2028,14 @@ CM-MKS-001	exact	decides	SH-C-106/decides/SH-S-7059	Localized selling with Shopi
 CM-MKS-001	exact	decides	SH-C-113/decides/SH-S-0573	help.shopify.com/en/manual/markets/backup-region.md
 CM-MKS-001	exact	decides	SH-C-113/decides/SH-S-0574	help.shopify.com/en/manual/markets/backup-region.md
 CM-MKS-001	exact	decides	SH-C-113/decides/SH-S-0575	Configure your backup region
+CM-MKS-001	exact	boundary	WC-C-030/boundary/WC-S-5356	woocommerce_countries_allowed_countries
+CM-MKS-001	exact	boundary	WC-C-030/boundary/WC-S-5357	woocommerce_countries_shipping_countries
+CM-MKS-001	exact	decides	WC-C-030/decides/WC-S-0600	woocommerce_allowed_countries
+CM-MKS-001	exact	decides	WC-C-030/decides/WC-S-0880	General settings
+CM-MKS-001	exact	decides	WC-C-030/decides/WC-S-5354	woocommerce_allowed_countries
+CM-MKS-001	exact	decides	WC-C-030/decides/WC-S-5355	woocommerce_ship_to_countries
+CM-MKS-001	exact	decides	ZD-C-033/decides/ZD-S-0745	تفعيل عملة دولة
+CM-MKS-001	exact	decides	ZD-C-034/decides/ZD-S-0749	عدد الأسواق حسب الباقة
 CM-MKS-002	by landing	boundary	SH-C-112/boundary/SH-S-1062	read_rollouts
 CM-MKS-002	by landing	boundary	SH-C-112/boundary/SH-S-6109	read_rollouts
 CM-MKS-002	by landing	boundary	SH-C-112/boundary/SH-S-6110	read_rollouts
@@ -1999,14 +2056,39 @@ CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-0562	help.shopify.com/en/manual/i
 CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-0568	help.shopify.com/en/manual/international/managed-markets/overview.md
 CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-0569	Merchant of record disclaimer at checkout
 CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-5092	market:update:managed
+CM-MKS-004	exact	decides	BC-C-074/decides/BC-S-0402	Transactional currency
 CM-MKS-004	exact	decides	SA-C-163/decides/SA-S-0154	💡 توضيح مهم
 CM-MKS-004	exact	boundary	SH-C-111/boundary/SH-S-7458	MarketWebPresence
 CM-MKS-004	exact	decides	SH-C-111/decides/SH-S-7061	Assign local domains
+CM-MKS-004	exact	boundary	WC-C-046/boundary/WC-S-0612	WC_Geolocation IP lookup services: ipify
+CM-MKS-004	exact	boundary	WC-C-046/boundary/WC-S-0613	WC_Geolocation IP lookup services: ipinfo.io
+CM-MKS-004	exact	boundary	WC-C-046/boundary/WC-S-0615	WC_Integration_MaxMind_Database_Service (database download URL)
+CM-MKS-004	exact	decides	WC-C-046/decides/WC-S-0602	woocommerce_default_customer_address
+CM-MKS-004	exact	decides	WC-C-046/decides/WC-S-5377	woocommerce_default_customer_address
+CM-MKS-004	exact	decides	WC-C-046/decides/WC-S-5378	Enabling geolocation
+CM-MKS-004	exact	decides	ZD-C-050/decides/ZD-S-0807	Geo-Based Currency Settings
+CM-MKS-005	exact	decides	BC-C-074/decides/BC-S-0404	multi-currency compatible payment gateway
 CM-MKS-005	exact	decides	SA-C-163/decides/SA-S-0154	💡 توضيح مهم
 CM-MKS-005	exact	boundary	SH-C-107/boundary/SH-S-7457	Shop.currencyCode
 CM-MKS-005	exact	decides	SH-C-107/decides/SH-S-0361	Store currency
 CM-MKS-005	exact	decides	SH-C-107/decides/SH-S-0370	help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
 CM-MKS-005	exact	decides	SH-C-107/decides/SH-S-0671	help.shopify.com/en/manual/payments/shopify-payments/onboarding/account-setup.md
+CM-MKS-005	exact	decides	WC-C-030/decides/WC-S-0880	General settings
+CM-MKS-005	exact	boundary	WC-C-052/boundary/WC-S-0127	wc/v3 > data-currencies
+CM-MKS-005	exact	decides	WC-C-052/decides/WC-S-0598	woocommerce_currency
+CM-MKS-005	exact	decides	WC-C-052/decides/WC-S-0874	Shop currency
+CM-MKS-005	exact	decides	WC-C-052/decides/WC-S-0876	Setting a store’s base currency
+CM-MKS-005	exact	decides	WC-C-052/decides/WC-S-0877	Changing the base currency
+CM-MKS-005	exact	decides	WC-C-052/decides/WC-S-5381	woocommerce_currency
+CM-MKS-005	exact	boundary	ZD-C-050/boundary/ZD-S-0813	GET /v1/managers/account/store/localization
+CM-MKS-005	exact	decides	ZD-C-050/decides/ZD-S-0808	الدفع بالعملة الأساسية
+CM-MKS-006	exact	boundary	BC-C-074/boundary/BC-S-0407	store/channel/{channel_id}/settings/currency/updated
+CM-MKS-006	exact	boundary	BC-C-074/boundary/BC-S-0408	Transactional Currency
+CM-MKS-006	exact	decides	BC-C-074/decides/BC-S-0400	Multi-currency
+CM-MKS-006	exact	decides	BC-C-074/decides/BC-S-0401	MSF-enabled control panel
+CM-MKS-006	exact	decides	BC-C-074/decides/BC-S-0402	Transactional currency
+CM-MKS-006	exact	decides	BC-C-074/decides/BC-S-0403	Settlement Currency
+CM-MKS-006	exact	decides	BC-C-074/decides/BC-S-0404	multi-currency compatible payment gateway
 CM-MKS-006	exact	boundary	SA-C-163/boundary/SA-S-1060	Currencies
 CM-MKS-006	exact	boundary	SA-C-163/boundary/SA-S-1148	Currency
 CM-MKS-006	exact	boundary	SA-C-163/boundary/SA-S-1562	metadata
@@ -2027,7 +2109,14 @@ CM-MKS-006	exact	decides	SH-C-108/decides/SH-S-0546	Shopify Payments and other p
 CM-MKS-006	exact	decides	SH-C-108/decides/SH-S-0547	Set a currency for a market in Markets
 CM-MKS-006	exact	decides	SH-C-108/decides/SH-S-7058	Show prices in local currencies*
 CM-MKS-006	exact	decides	SH-C-108/decides/SH-S-7172	sell_globally_local_currencies
+CM-MKS-006	exact	decides	WC-C-053/decides/WC-S-0542	Currencies in a transaction
+CM-MKS-006	exact	decides	ZD-C-034/decides/ZD-S-0750	عملة السوق
+CM-MKS-006	exact	boundary	ZD-C-050/boundary/ZD-S-0813	GET /v1/managers/account/store/localization
+CM-MKS-006	exact	decides	ZD-C-050/decides/ZD-S-0808	الدفع بالعملة الأساسية
 CM-MKS-007	by landing	decides	SH-C-109/decides/SH-S-0363	help.shopify.com/en/manual/payments/shopify-payments/store-currency/currency-conversion-calculation.md
+CM-MKS-007	by landing	decides	WC-C-051/decides/WC-S-0536	Eligibility
+CM-MKS-007	by landing	decides	WC-C-051/decides/WC-S-5314	Payout currencies
+CM-MKS-007	exact	boundary	BC-C-074/boundary/BC-S-0409	Stripe Adaptive Pricing
 CM-MKS-007	exact	decides	SA-C-163/decides/SA-S-0117	markets/product_prices#option.auto.description
 CM-MKS-007	exact	decides	SA-C-163/decides/SA-S-3439	currency-exchange
 CM-MKS-007	exact	boundary	SH-C-109/boundary/SH-S-0558	help.shopify.com/en/manual/international/pricing/fees.md
@@ -2038,6 +2127,16 @@ CM-MKS-007	exact	decides	SH-C-109/decides/SH-S-0551	Manual exchange rate convers
 CM-MKS-007	exact	decides	SH-C-109/decides/SH-S-0552	help.shopify.com/en/manual/international/pricing/fees.md
 CM-MKS-007	exact	decides	SH-C-109/decides/SH-S-0553	Conversion rate and fee
 CM-MKS-007	exact	decides	SH-C-109/decides/SH-S-0555	Shopify Payments currency conversion fee
+CM-MKS-007	exact	boundary	WC-C-051/boundary/WC-S-5313	Payout currencies
+CM-MKS-007	exact	decides	WC-C-051/decides/WC-S-0535	Payout currencies
+CM-MKS-007	exact	decides	WC-C-051/decides/WC-S-0539	What currency is used to determine fees
+CM-MKS-007	exact	decides	WC-C-051/decides/WC-S-0540	What currency conversion fees are charged with WooPayments?
+CM-MKS-007	exact	boundary	WC-C-053/boundary/WC-S-0543	Exchange rate
+CM-MKS-007	exact	decides	WC-C-053/decides/WC-S-0544	Exchange rate
+CM-MKS-007	exact	boundary	ZD-C-050/boundary/ZD-S-0811	order_currency.exchange_rate
+CM-MKS-007	exact	boundary	ZD-C-050/boundary/ZD-S-0812	Currency Handling for Orders
+CM-MKS-007	exact	decides	ZD-C-050/decides/ZD-S-0809	سعر الصرف لبوابة الدفع
+CM-MKS-007	exact	decides	ZD-C-050/decides/ZD-S-0810	سعر الصرف عند تغيير العملة
 CM-MKS-008	by landing	decides	SA-C-008/decides/SA-S-2613	languages_management
 CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-1083	read_translations
 CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-1274	locales/create
@@ -2046,6 +2145,11 @@ CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-6023	read_locales
 CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-6141	read_translations
 CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-6224	write_locales
 CM-MKS-008	by landing	boundary	SH-C-032/boundary/SH-S-6304	write_translations
+CM-MKS-008	exact	boundary	BC-C-048/boundary/BC-S-0274	store_translations
+CM-MKS-008	exact	boundary	BC-C-048/boundary/BC-S-0275	store/channel/{channel_id}/settings/locale/added
+CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0271	Settings V3: Store Locale
+CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0272	locales
+CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0273	locales
 CM-MKS-008	exact	boundary	SA-C-008/boundary/SA-S-1010	Multi-Language Support
 CM-MKS-008	exact	boundary	SA-C-008/boundary/SA-S-1562	metadata
 CM-MKS-008	exact	decides	SA-C-008/decides/SA-S-2074	إتاحة 40 لغة في المتجر
@@ -2062,11 +2166,23 @@ CM-MKS-008	exact	boundary	SH-C-032/boundary/SH-S-6303	write_translations
 CM-MKS-008	exact	decides	SH-C-032/decides/SH-S-5268	languages
 CM-MKS-008	exact	decides	SH-C-032/decides/SH-S-5857	entitlements.accountManagement.manageStoreLanguage
 CM-MKS-008	exact	decides	SH-C-032/decides/SH-S-7057	Translate your storefront
+CM-MKS-008	exact	boundary	ZD-C-050/boundary/ZD-S-0813	GET /v1/managers/account/store/localization
+CM-MKS-009	by landing	decides	ZD-C-033/decides/ZD-S-0746	تغيير دولة المتجر
+CM-MKS-009	by landing	decides	ZD-C-033/decides/ZD-S-0747	تحديد موقعك أو موقع المخزون
 CM-MKS-009	exact	boundary	SA-C-166/boundary/SA-S-1048	Countries
 CM-MKS-009	exact	boundary	SA-C-166/boundary/SA-S-1049	Districts
 CM-MKS-009	exact	boundary	SA-C-166/boundary/SA-S-1050	Cities
 CM-MKS-009	exact	boundary	SA-C-166/boundary/SA-S-1558	countries
 CM-MKS-009	exact	boundary	SA-C-166/boundary/SA-S-1562	metadata
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-0124	wc/v3 > data
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-0125	wc/v3 > data-continents
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-0126	wc/v3 > data-countries
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-0210	wc-analytics > DataCountries
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-0693	Data
+CM-MKS-009	exact	boundary	WC-C-099/boundary/WC-S-5461	woocommerce_countries
+CM-MKS-009	exact	decides	WC-C-099/decides/WC-S-5460	i18n/countries.php
+CM-MKS-009	exact	boundary	ZD-C-033/boundary/ZD-S-0035	Merchant APIs > Countries and Cities
+CM-MKS-009	exact	boundary	ZD-C-033/boundary/ZD-S-0117	GET /v1/managers/countries
 CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-0981	read_discounts
 CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-1209	discounts/create
 CM-MKT-001	by landing	boundary	SH-C-127/boundary/SH-S-6188	write_discounts
@@ -2521,6 +2637,8 @@ CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2661	quick_payment_direct
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2662	salla_point_view_shift_reports
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2663	salla_point_manage_shifts
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2664	salla_point_view_online_orders
+CM-POS-001	exact	boundary	BC-C-069/boundary/BC-S-0373	square
+CM-POS-001	exact	decides	BC-C-069/decides/BC-S-0372	Point of sale
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2094	بيع عبر نقاط البيع مع سلة بوينت
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2441	salla_point_activate
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2442	salla_point_add_employees
@@ -2539,10 +2657,21 @@ CM-POS-001	exact	decides	SH-C-142/decides/SH-S-5227	quick-sale
 CM-POS-001	exact	decides	SH-C-142/decides/SH-S-7017	Casual, in-person sales at pop-ups and events
 CM-POS-001	exact	decides	SH-C-142/decides/SH-S-7018	POS Pro: Advanced tools for brick‑and‑mortar retailers
 CM-POS-001	exact	decides	SH-C-142/decides/SH-S-7262	9.3 POS Services
+CM-POS-001	exact	boundary	WC-C-089/boundary/WC-S-0895	Woo Mobile App: Point of Sale Mode
+CM-POS-001	exact	decides	WC-C-089/decides/WC-S-0893	Requirements
+CM-POS-001	exact	decides	WC-C-089/decides/WC-S-0894	Requirements
+CM-POS-001	exact	decides	WC-C-089/decides/WC-S-5435	woocommerce_pos_*
+CM-POS-001	exact	boundary	ZD-C-108/boundary/ZD-S-0983	فوترة إلكترونية
+CM-POS-001	exact	decides	ZD-C-108/decides/ZD-S-0382	Professional: Standout Features
+CM-POS-001	exact	decides	ZD-C-108/decides/ZD-S-0506	pos.payment.methods
+CM-POS-001	exact	decides	ZD-C-108/decides/ZD-S-0979	Mobile & Tablet POS App
 CM-POS-002	exact	boundary	SA-C-095/boundary/SA-S-5040	الربط بحساب جيديا
 CM-POS-002	exact	decides	SA-C-095/decides/SA-S-2094	بيع عبر نقاط البيع مع سلة بوينت
 CM-POS-002	exact	boundary	SH-C-143/boundary/SH-S-0048	9.3 POS Services
 CM-POS-002	exact	decides	SH-C-143/decides/SH-S-7269	POS Equipment
+CM-POS-002	exact	decides	WC-C-014/decides/WC-S-0869	WooPayments: In-Person Payments
+CM-POS-002	exact	decides	WC-C-014/decides/WC-S-0870	Currencies
+CM-POS-002	exact	boundary	ZD-C-108/boundary/ZD-S-0982	أجهزة نقاط البيع
 CM-POS-003	exact	boundary	SH-C-087/boundary/SH-S-0954	read_cash_tracking
 CM-POS-003	exact	boundary	SH-C-087/boundary/SH-S-0955	write_cash_tracking
 CM-POS-003	exact	boundary	SH-C-087/boundary/SH-S-5940	read_cash_tracking
@@ -2703,6 +2832,10 @@ CM-SFR-001	by landing	boundary	SH-C-029/boundary/SH-S-6136	read_themes
 CM-SFR-001	by landing	boundary	SH-C-029/boundary/SH-S-6138	read_themes
 CM-SFR-001	by landing	boundary	SH-C-029/boundary/SH-S-6149	write_themes
 CM-SFR-001	by landing	boundary	SH-C-029/boundary/SH-S-6300	write_themes
+CM-SFR-001	by landing	boundary	WC-C-111/boundary/WC-S-0082	wc/private
+CM-SFR-001	exact	decides	BC-C-038/decides/BC-S-0221	Online storefront
+CM-SFR-001	exact	boundary	BC-C-042/boundary/BC-S-0242	store_themes_manage
+CM-SFR-001	exact	boundary	BC-C-042/boundary/BC-S-0243	store/channel/{channel_id}/theme/configuration/activated
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2031	اختيار ثيم المتجر
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2033	إنشاء نسخ متعددة من الثيم
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2034	جدولة نشر النسخ
@@ -2720,6 +2853,10 @@ CM-SFR-001	exact	boundary	SH-C-029/boundary/SH-S-6137	read_themes
 CM-SFR-001	exact	decides	SH-C-029/decides/SH-S-5031	online-store:parent
 CM-SFR-001	exact	decides	SH-C-029/decides/SH-S-5364	entitlements.storefront.enabled
 CM-SFR-001	exact	decides	SH-C-029/decides/SH-S-7003	Themes and templates
+CM-SFR-001	exact	boundary	WC-C-111/boundary/WC-S-0194	wc-admin > themes (Themes)
+CM-SFR-001	exact	boundary	WC-C-111/boundary/WC-S-0200	wc-admin > onboarding/themes (OnboardingThemes)
+CM-SFR-001	exact	decides	ZD-C-113/decides/ZD-S-0489	manage.store.front.customization
+CM-SFR-001	exact	decides	ZD-C-113/decides/ZD-S-1076	صنع بواسطة زد
 CM-SFR-002	by landing	boundary	SA-C-091/boundary/SA-S-1138	Auth
 CM-SFR-002	by landing	boundary	SA-C-091/boundary/SA-S-1140	Wishlist
 CM-SFR-002	by landing	boundary	SA-C-091/boundary/SA-S-1141	Loyalty
@@ -2892,6 +3029,10 @@ CM-SFR-002	exact	boundary	SH-C-029/boundary/SH-S-1078	write_theme_code
 CM-SFR-002	exact	boundary	SH-C-029/boundary/SH-S-6301	write_themes
 CM-SFR-002	exact	decides	SH-C-029/decides/SH-S-5211	editor
 CM-SFR-002	exact	decides	SH-C-029/decides/SH-S-6201	write_themes
+CM-SFR-002	exact	decides	ZD-C-113/decides/ZD-S-1001	Store - SDK Template Design (Up to 2)
+CM-SFR-002	exact	decides	ZD-C-113/decides/ZD-S-1002	CSS interface customization
+CM-SFR-002	exact	decides	ZD-C-113/decides/ZD-S-1075	تخصيص الثيمات
+CM-SFR-003	exact	decides	BC-C-042/decides/BC-S-0239	Multiple Stores
 CM-SFR-003	exact	decides	SA-C-090/decides/SA-S-3383	theme-trial-versions
 CM-SFR-003	exact	decides	SA-C-090/decides/SA-S-3387	theme-purchases
 CM-SFR-003	exact	decides	SA-C-090/decides/SA-S-3424	ready-store-theme-purchase
@@ -2900,16 +3041,27 @@ CM-SFR-003	exact	decides	SA-C-208/decides/SA-S-0040	المادة (7) – الد�
 CM-SFR-003	exact	decides	SA-C-208/decides/SA-S-0041	المادة (7) – الدفع والعمولات
 CM-SFR-003	exact	decides	SA-C-208/decides/SA-S-0042	المادة (14) – الامتثال والإجراءات التنظيمية
 CM-SFR-003	exact	decides	SA-C-208/decides/SA-S-5107	من الذي يحدد سعر الثيم؟
+CM-SFR-003	exact	boundary	ZD-C-076/boundary/ZD-S-0899	Partner Share
+CM-SFR-003	exact	decides	ZD-C-076/decides/ZD-S-0363	Rise: All features of Starter package, plus:
+CM-SFR-003	exact	decides	ZD-C-076/decides/ZD-S-0896	إعادة المتجر الى احد الثيمات المجانية
 CM-SFR-004	by landing	boundary	SH-C-166/boundary/SH-S-6166	write_app_proxy
+CM-SFR-004	exact	boundary	BC-C-044/boundary/BC-S-0250	store/channel/{channel_id}/script/created
+CM-SFR-004	exact	decides	BC-C-044/decides/BC-S-0249	Script Manager
 CM-SFR-004	exact	boundary	SA-C-198/boundary/SA-S-1074	App Snippets
 CM-SFR-004	exact	boundary	SH-C-029/boundary/SH-S-6112	read_script_tags
 CM-SFR-004	exact	boundary	SH-C-029/boundary/SH-S-6291	write_script_tags
 CM-SFR-004	exact	boundary	SH-C-166/boundary/SH-S-0943	read_app_proxy
 CM-SFR-004	exact	boundary	SH-C-166/boundary/SH-S-6165	write_app_proxy
 CM-SFR-005	by landing	decides	SH-C-193/decides/SH-S-0755	shopify.dev/docs/api/usage/access-scopes.md
+CM-SFR-005	by landing	boundary	WC-C-107/boundary/WC-S-5486	legacy checkout
+CM-SFR-005	by landing	boundary	WC-C-107/boundary/WC-S-5487	Columns: Name
+CM-SFR-005	by landing	decides	WC-C-107/decides/WC-S-5484	Core fields
+CM-SFR-005	exact	decides	BC-C-043/decides/BC-S-0077	Closed Betas
 CM-SFR-005	exact	boundary	SA-C-091/boundary/SA-S-1155	Component Bundle
 CM-SFR-005	exact	decides	SA-C-091/decides/SA-S-5032	Bundle Publish Requirements: Security
+CM-SFR-005	exact	boundary	WC-C-111/boundary/WC-S-0178	wc/private > /patterns
 CM-SFR-006	by landing	decides	SA-C-082/decides/SA-S-2614	landing_pages_management
+CM-SFR-006	exact	boundary	BC-C-051/boundary/BC-S-0286	MAKESWIFT_SITE_API_KEY
 CM-SFR-006	exact	boundary	SA-C-082/boundary/SA-S-5030	البكسل في صفحات الهبوط
 CM-SFR-006	exact	decides	SA-C-082/decides/SA-S-2109	صفحات هبوط المنتج
 CM-SFR-006	exact	decides	SA-C-082/decides/SA-S-2397	landing_pages_management
@@ -2942,8 +3094,15 @@ CM-SFR-008	exact	decides	SH-C-033/decides/SH-S-5153	domains:inactive
 CM-SFR-008	exact	decides	SH-C-033/decides/SH-S-5156	domains:buy
 CM-SFR-008	exact	decides	SH-C-033/decides/SH-S-5700	entitlements.customDomains
 CM-SFR-008	exact	decides	SH-C-033/decides/SH-S-7033	Custom domain name
+CM-SFR-008	exact	boundary	ZD-C-096/boundary/ZD-S-0952	zid.store
+CM-SFR-008	exact	decides	ZD-C-096/decides/ZD-S-0492	manage.store.custom.domain
+CM-SFR-008	exact	decides	ZD-C-096/decides/ZD-S-0949	النمو والباقة الاحترافية
+CM-SFR-008	exact	decides	ZD-C-096/decides/ZD-S-0950	Custom Domain Linking
 CM-SFR-009	exact	boundary	SA-C-007/boundary/SA-S-1556	dns-records
 CM-SFR-009	exact	decides	SA-C-007/decides/SA-S-2041	إدارة إعدادات DNS
+CM-SFR-010	exact	boundary	BC-C-078/boundary/BC-S-0424	store/channel/{channel_id}/settings/security/updated
+CM-SFR-010	exact	decides	BC-C-078/decides/BC-S-0422	Settings V3: Storefront Security
+CM-SFR-010	exact	decides	BC-C-078/decides/BC-S-0423	Free sitewide HTTPS and dedicated SSL
 CM-SFR-010	exact	decides	SA-C-007/decides/SA-S-2038	شهادة SSL مجانية
 CM-SFR-010	exact	boundary	SH-C-036/boundary/SH-S-7465	Domain.sslEnabled
 CM-SFR-010	exact	decides	SH-C-036/decides/SH-S-7032	Unlimited web hosting
@@ -2963,17 +3122,73 @@ CM-SFR-011	by landing	boundary	SH-C-139/boundary/SH-S-6162	unauthenticated_read_
 CM-SFR-011	by landing	boundary	SH-C-139/boundary/SH-S-6163	unauthenticated_read_shop_pay_installments_pricing
 CM-SFR-011	exact	boundary	SH-C-139/boundary/SH-S-6152	unauthenticated_read_customers
 CM-SFR-011	exact	decides	SH-C-139/decides/SH-S-7056	Build headless storefronts
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0149	wc/store/v1 > /cart
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0150	wc/store/v1 > /cart/add-item
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0151	wc/store/v1 > /cart/apply-coupon
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0152	wc/store/v1 > /cart/coupons
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0153	wc/store/v1 > /cart/coupons/(?P<code>[\w-]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0154	wc/store/v1 > /cart/extensions
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0155	wc/store/v1 > /cart/items
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0156	wc/store/v1 > /cart/items/(?P<key>[\w-]{32})
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0157	wc/store/v1 > /cart/remove-coupon
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0158	wc/store/v1 > /cart/remove-item
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0159	wc/store/v1 > /cart/select-shipping-rate
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0160	wc/store/v1 > /cart/update-item
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0161	wc/store/v1 > /cart/update-customer
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0162	wc/store/v1 > /checkout
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0163	wc/store/v1 > /checkout/(?P<id>[\d]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0164	wc/store/v1 > /order/(?P<id>[\d]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0165	wc/store/v1 > /products/attributes
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0166	wc/store/v1 > /products/attributes/(?P<id>[\d]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0167	wc/store/v1 > /products/attributes/(?P<attribute_id>[\d]+)/terms
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0168	wc/store/v1 > /products/categories
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0169	wc/store/v1 > /products/categories/(?P<id>[\d]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0170	wc/store/v1 > /products/brands
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0171	wc/store/v1 > /products/brands/(?P<identifier>[\w-]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0172	wc/store/v1 > /products/collection-data
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0173	wc/store/v1 > /products/reviews
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0174	wc/store/v1 > /products/tags
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0175	wc/store/v1 > /products
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0176	wc/store/v1 > /products/(?P<id>[\d]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0177	wc/store/v1 > /products/(?P<slug>[\S]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0179	wc/store/v1 > /shopper-lists
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0180	wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0181	wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0182	wc/store/v1 > /shopper-lists/(?P<slug>[a-z0-9-]+)/items/(?P<key>[\w-]{32})
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0774	Available extensible endpoints
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0775	Adding fields and passing values
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0776	Exposing your data
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0777	Available Formatters
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0778	Marking a cart item as a child of another cart item
+CM-SFR-012	by landing	boundary	WC-C-079/boundary/WC-S-0779	Updating the cart on-demand
+CM-SFR-012	exact	boundary	BC-C-050/boundary/BC-S-0283	GraphQL Storefront API
+CM-SFR-012	exact	boundary	BC-C-053/boundary/BC-S-0294	store_storefront_api
 CM-SFR-012	exact	boundary	SA-C-101/boundary/SA-S-5140	Twilight JS SDK
 CM-SFR-012	exact	boundary	SH-C-139/boundary/SH-S-6148	unauthenticated_read_content
 CM-SFR-012	exact	boundary	SH-C-139/boundary/SH-S-6155	unauthenticated_read_product_listings
 CM-SFR-012	exact	boundary	SH-C-139/boundary/SH-S-6156	unauthenticated_read_product_listings
 CM-SFR-012	exact	boundary	SH-C-139/boundary/SH-S-6164	unauthenticated_write_customers
+CM-SFR-012	exact	boundary	WC-C-079/boundary/WC-S-0081	wc/store/v1
+CM-SFR-012	exact	boundary	WC-C-079/boundary/WC-S-0148	wc/store/v1 > /batch
+CM-SFR-012	exact	boundary	WC-C-079/boundary/WC-S-0773	Extending the Store API
+CM-SFR-012	exact	boundary	WC-C-079/boundary/WC-S-0916	Extending the Store API
+CM-SFR-012	exact	decides	WC-C-079/decides/WC-S-0915	WooCommerce Store API
+CM-SFR-012	exact	boundary	ZD-C-075/boundary/ZD-S-0894	Role: Customer
+CM-SFR-012	exact	boundary	ZD-C-113/boundary/ZD-S-0051	API's > Storefront
+CM-SFR-013	exact	boundary	BC-C-011/boundary/BC-S-0071	store/channel/{channel_id}/settings/search/updated
+CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0066	Settings V3: Search Filters
+CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0067	Settings V3: Storefront Search
+CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0068	Product filtering
+CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0069	SearchProducts
+CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0070	Product Filtering settings
 CM-SFR-013	exact	decides	SA-C-020/decides/SA-S-2135	إدارة خيارات التصفية الظاهرة للعميل
 CM-SFR-013	exact	decides	SA-C-020/decides/SA-S-3479	products-filters
 CM-SFR-013	exact	boundary	SA-C-091/boundary/SA-S-1444	salla-filters
 CM-SFR-013	exact	boundary	SA-C-091/boundary/SA-S-1523	salla-search
 CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0983	read_discovery
 CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0984	write_discovery
+CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0232	store_sites
+CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0233	store/channel/{channel_id}/settings/site/updated
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0418	BigCommerce mobile app
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0419	License
 CM-SRF-001	exact	decides	SA-C-001/decides/SA-S-2082	تطبيق إدارة المتجر على أجهزة iOS و Android

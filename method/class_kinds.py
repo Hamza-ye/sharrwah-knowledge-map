@@ -31,12 +31,14 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--domain")
     ap.add_argument("--out")
+    ap.add_argument("--exclude", default="", help="parts to leave out, comma-separated, as class_merge.py --exclude")
     a = ap.parse_args()
+    leave = {x for x in a.exclude.replace(";", ",").split(",") if x.strip()}
     base = os.path.join(MODEL, "parts")
     caps, cells = {}, {}
     for d in sorted(os.listdir(base)) if os.path.isdir(base) else []:
         dom, _, kind = d.partition("-")
-        if (a.domain and dom != a.domain) or kind not in PART_ORDER:
+        if (a.domain and dom != a.domain) or kind not in PART_ORDER or d in leave:
             continue
         for r in rows(os.path.join(base, d, "capabilities.tsv")):
             caps[r["cap_id"]] = r | {"domain": dom}

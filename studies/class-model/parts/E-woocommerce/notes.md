@@ -326,4 +326,4 @@ flags:
 - **scope.tsv:** WC-C-051 names C under `also`, for its payout currencies; WC-C-006 names E, since its statement naming WooPayments' provider (WC-S-0476) supports `own-service` in CM-POS-002, CM-MKS-006 and CM-MKS-007.
 - **A maker statement may count for each feature of its service.** WC-S-0476 says who provides WooPayments; each cell that cites it as `own-service` shows a different feature of WooPayments by its own statements. If domain C counts it too, the merge flags it, and the final review weighs it as maker evidence, not as a feature counted twice.
 - **The part is complete,** with no capability added: domain E needs no WooCommerce back-fill. Zid and BigCommerce map next.
-
+- **Counted once (the coordinator, at E's merge):** WC-C-046/where/WC-S-0008 is `shows` in CM-MKS-004: core in F's CM-APP-010, whose WooCommerce cell rests on it.

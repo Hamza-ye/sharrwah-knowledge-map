@@ -59,7 +59,7 @@ CM-MKS-004	woocommerce	core	WC-C-046/reason/WC-S-0641	core plugin geolocates cus
 CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0640	WooCommerce integrates with MaxMind GeoLite2 data
 CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-0602	option Default customer location, geolocation
 CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-5377	option woocommerce_default_customer_address
-CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0008	settings tab Integration
+CM-MKS-004	woocommerce	shows	WC-C-046/where/WC-S-0008	settings tab Integration; core in F's CM-APP-010, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-MKS-004	woocommerce	outside	WC-C-046/decides/WC-S-5378	a MaxMind account the merchant creates
 CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0615	database downloaded from MaxMind
 CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0612	IP lookup service ipify

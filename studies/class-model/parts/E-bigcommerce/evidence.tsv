@@ -82,7 +82,7 @@ CM-CHN-003	bigcommerce	core	BC-C-068/where/BC-S-0368	product line Marketplaces: 
 CM-CHN-003	bigcommerce	shows	BC-C-068/boundary/BC-S-0370	channel platform amazon, types marketplace and marketing
 CM-CHN-004	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's product listings
 CM-CHN-004	bigcommerce	core	BC-C-038/boundary/BC-S-0224	own access scope store_channel_listings
-CM-CHN-004	bigcommerce	core	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface on four plans: keeps product listings accurate
+CM-CHN-004	bigcommerce	shows	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface on four plans: keeps product listings accurate; core in D's CM-MKT-010, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-CHN-004	bigcommerce	own-service	BC-C-067/responsible/BC-S-0366	contracting entity Feedonomics Holdings, LLC for the Feedonomics Platform
 CM-CHN-004	bigcommerce	shows	BC-C-067/where/BC-S-0364	definition of the Feedonomics Platform
 CM-CHN-004	bigcommerce	shows	BC-C-067/boundary/BC-S-0367	the merchant's data sent to Feedonomics Holdings LLC

@@ -294,4 +294,5 @@ None: BigCommerce's concerns are in no Q1 match or unclear candidate (`concerns`
 
 - **BC-C-013 and BC-C-032 are `strained`.** Batch 2 cites BC-S-0081 in CM-ANL-001 and BC-I-0483 in CM-SUP-005, other trees (S1).
 - **Six capabilities added** (CM-B2B-004 to CM-B2B-007, CM-MKT-023, CM-ANL-007): `D-backfill-bigcommerce` writes their cells for the other four platforms.
-
+- **Counted once (the coordinator, at E's merge):** BC-C-010/where/BC-S-0062 is `shows` in CM-LOY-002: core in E's CM-SFR-007, whose BigCommerce cell rests on it.
+- **Counted once (the coordinator, at E's merge):** BC-C-010/where/BC-S-0062 is `shows` in CM-MKT-002: core in E's CM-SFR-007, whose BigCommerce cell rests on it.

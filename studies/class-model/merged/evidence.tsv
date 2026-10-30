@@ -1697,7 +1697,7 @@ CM-MKT-001	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discou
 CM-MKT-001	bigcommerce	core	BC-C-009/decides/BC-S-0058	plan line Advanced promotions management	D-bigcommerce
 CM-MKT-001	bigcommerce	shows	BC-C-009/decides/BC-S-0059	recommended limit on active promotions and rules	D-bigcommerce
 CM-MKT-001	bigcommerce	shows	BC-C-009/reason/BC-S-0061	the limit prevents a slowdown of checkout	D-bigcommerce
-CM-MKT-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons	D-bigcommerce
+CM-MKT-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)	D-bigcommerce
 CM-MKT-002	bigcommerce	core	BC-C-010/boundary/BC-S-0064	its scope store_v2_marketing	D-bigcommerce
 CM-MKT-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards	D-bigcommerce
 CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel list Marketing > Promotions > Automatic	D-bigcommerce
@@ -1718,7 +1718,7 @@ CM-MKT-023	bigcommerce	core	BC-C-013/decides/BC-S-0078	only on BigCommerce Enter
 CM-MKT-023	bigcommerce	shows	BC-C-013/decides/BC-S-0077	closed beta, not available by default	D-bigcommerce
 CM-MKT-023	bigcommerce	shows	BC-C-013/responsible/BC-S-0079	merchant responsible for Google's fees	D-bigcommerce
 CM-MKT-023	bigcommerce	shows	BC-C-013/reason/BC-S-0081	models trained on BigCommerce Analytics data	D-bigcommerce
-CM-LOY-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates	D-bigcommerce
+CM-LOY-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)	D-bigcommerce
 CM-LOY-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards	D-bigcommerce
 CM-LOY-005	bigcommerce	core	BC-C-036/where/BC-S-0214	its own Wishlist API	D-bigcommerce
 CM-LOY-005	bigcommerce	core	BC-I-0066	API group Wishlist (C2)	D-bigcommerce
@@ -2333,6 +2333,358 @@ CM-MKS-006	salla	shows	SA-C-163/decides/SA-S-2605	currency_setting_edit / إعد
 CM-MKS-006	salla	shows	SA-C-163/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no currency	E-anchor
 CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1048	own API folder Countries, under the boundary placement	E-anchor
 CM-MKS-009	salla	shows	SA-C-166/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no country	E-anchor
+CM-SFR-001	woocommerce	core	WC-C-111/where/WC-S-0418	onboarding task Choose your theme	E-woocommerce
+CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0194	admin API resource wc-admin > themes	E-woocommerce
+CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0200	admin API resource onboarding/themes	E-woocommerce
+CM-SFR-001	woocommerce	shows	WC-I-0612	plugin page feature Create beautiful, enticing storefronts	E-woocommerce
+CM-SFR-002	woocommerce	core	WC-C-111/where/WC-S-0419	onboarding task Customize your store	E-woocommerce
+CM-SFR-003	woocommerce	extension-point	WC-C-111/where/WC-S-0695	Marketplace category Themes	E-woocommerce
+CM-SFR-003	woocommerce	extension-point	WC-C-017/where/WC-S-0923	the Marketplace connects developers and merchants	E-woocommerce
+CM-SFR-003	woocommerce	own-service	WC-C-050/responsible/WC-S-0644	Automattic names Woo themes among its Paid Services	E-woocommerce
+CM-SFR-003	woocommerce	shows	WC-C-017/responsible/WC-S-0834	refund for themes bought from the Marketplace	E-woocommerce
+CM-SFR-004	woocommerce	extension-point	WC-C-087/where/WC-S-5466	extensions extend the blocks' front-end with JavaScript	E-woocommerce
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0703	Marketplace category Store content and customizations	E-woocommerce
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0744	subcategory Store page enhancements	E-woocommerce
+CM-SFR-005	woocommerce	extension-point	WC-C-107/where/WC-S-0742	subcategory Product images and media	E-woocommerce
+CM-SFR-005	woocommerce	core	WC-C-111/boundary/WC-S-0178	own route wc/private > /patterns	E-woocommerce
+CM-SFR-012	woocommerce	core	WC-C-079/where/WC-S-0914	Store API: public endpoints for customer-facing cart, checkout and product functionality	E-woocommerce
+CM-SFR-012	woocommerce	core	WC-C-079/where/WC-S-0941	namespace wc/store	E-woocommerce
+CM-SFR-012	woocommerce	core	WC-C-079/boundary/WC-S-0081	routes registered under wc/store/v1	E-woocommerce
+CM-SFR-012	woocommerce	core	WC-C-079/boundary/WC-S-0148	route /batch	E-woocommerce
+CM-SFR-012	woocommerce	core	WC-C-079/decides/WC-S-0915	unauthenticated, no access to sensitive store data	E-woocommerce
+CM-SFR-012	woocommerce	extension-point	WC-C-079/boundary/WC-S-0916	applications extend certain endpoints	E-woocommerce
+CM-SFR-012	woocommerce	extension-point	WC-C-079/boundary/WC-S-0773	guide Extending the Store API	E-woocommerce
+CM-SFR-013	woocommerce	extension-point	WC-C-107/where/WC-S-0743	subcategory Search and navigation	E-woocommerce
+CM-CNT-002	woocommerce	core	WC-C-064/boundary/WC-S-0675	product custom fields API	E-woocommerce
+CM-CNT-003	woocommerce	shows	WC-C-072/where/WC-S-0022	settings section Advanced > Page setup	E-woocommerce
+CM-CNT-007	woocommerce	extension-point	WC-C-110/where/WC-S-0760	Marketplace category Marketing > SEO and SEM	E-woocommerce
+CM-CNT-007	woocommerce	shows	WC-I-0617	plugin page feature Rise to the top of search results	E-woocommerce
+CM-CNT-008	woocommerce	shows	WC-C-071/responsible/WC-S-5408	merchant must maintain return and refund policies	E-woocommerce
+CM-CHN-001	woocommerce	extension-point	WC-C-110/where/WC-S-0759	Marketplace category Marketing > Sales channels	E-woocommerce
+CM-CHN-004	woocommerce	shows	WC-C-110/boundary/WC-S-5494	Google for WooCommerce syncs product data to Google Merchant Center	E-woocommerce
+CM-CHN-004	woocommerce	shows	WC-C-110/decides/WC-S-5492	products without the required fields aren't synced	E-woocommerce
+CM-POS-001	woocommerce	core	WC-C-089/where/WC-S-0010	settings tab Point of Sale	E-woocommerce
+CM-POS-001	woocommerce	core	WC-C-089/where/WC-S-0937	released feature point_of_sale for the mobile apps	E-woocommerce
+CM-POS-001	woocommerce	core	WC-C-089/decides/WC-S-5435	staff permissions: per-user woocommerce_pos_* capabilities	E-woocommerce
+CM-POS-001	woocommerce	extension-point	WC-C-089/where/WC-S-0753	Marketplace category Store management > Point of sale	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0892	POS mode of the Woo Mobile App; maker not named	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/boundary/WC-S-0895	POS sales sync with the site	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/decides/WC-S-0893	store address in a supported country	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/decides/WC-S-0894	the country's native currency as store currency	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/reason/WC-S-5436	why POS capabilities are per-user	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0308	customer email POS completed order	E-woocommerce
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0309	customer email POS refunded order	E-woocommerce
+CM-POS-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations	E-woocommerce
+CM-POS-002	woocommerce	shows	WC-C-014/where/WC-S-0868	WooPayments In-Person Payments: card reader or Tap to Pay	E-woocommerce
+CM-POS-002	woocommerce	outside	WC-C-014/responsible/WC-S-0481	POS terminals manufactured by third parties	E-woocommerce
+CM-POS-002	woocommerce	outside	WC-C-014/responsible/WC-S-0850	Stripe Terminal Services and Purchase Terms on receiving a terminal	E-woocommerce
+CM-POS-002	woocommerce	extension-point	WC-C-089/where/WC-S-0711	Marketplace category Official payments > In-person payments	E-woocommerce
+CM-POS-002	woocommerce	shows	WC-C-014/decides/WC-S-0869	available to merchants in listed countries	E-woocommerce
+CM-POS-002	woocommerce	shows	WC-C-014/decides/WC-S-0870	card readers and Tap to Pay collect the country's default currency only	E-woocommerce
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-5354	setting Selling location(s), woocommerce_allowed_countries	E-woocommerce
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-0600	limit which countries you are willing to sell to	E-woocommerce
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-0880	general settings page: regions you sell and ship to	E-woocommerce
+CM-MKS-001	woocommerce	core	WC-C-030/boundary/WC-S-5356	own filter woocommerce_countries_allowed_countries	E-woocommerce
+CM-MKS-001	woocommerce	extension-point	WC-C-108/where/WC-S-0741	Marketplace category International and localization	E-woocommerce
+CM-MKS-001	woocommerce	shows	WC-C-030/where/WC-S-0001	settings tab General	E-woocommerce
+CM-MKS-001	woocommerce	shows	WC-C-030/decides/WC-S-5355	setting Shipping location(s), shipping's	E-woocommerce
+CM-MKS-001	woocommerce	shows	WC-C-030/boundary/WC-S-5357	filter woocommerce_countries_shipping_countries, shipping's	E-woocommerce
+CM-MKS-004	woocommerce	core	WC-C-046/reason/WC-S-0641	core plugin geolocates customers for tax rates and shipping methods	E-woocommerce
+CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0640	WooCommerce integrates with MaxMind GeoLite2 data	E-woocommerce
+CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-0602	option Default customer location, geolocation	E-woocommerce
+CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-5377	option woocommerce_default_customer_address	E-woocommerce
+CM-MKS-004	woocommerce	shows	WC-C-046/where/WC-S-0008	settings tab Integration; core in F's CM-APP-010, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)	E-woocommerce
+CM-MKS-004	woocommerce	outside	WC-C-046/decides/WC-S-5378	a MaxMind account the merchant creates	E-woocommerce
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0615	database downloaded from MaxMind	E-woocommerce
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0612	IP lookup service ipify	E-woocommerce
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0613	IP lookup service ipinfo.io	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0598	option woocommerce_currency: catalog prices and gateways' currency	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-5381	option woocommerce_currency, default USD	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/where/WC-S-0001	settings tab General	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0876	one base currency, for prices and new orders	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0877	changing it converts no amounts	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0874	one base currency per store	E-woocommerce
+CM-MKS-005	woocommerce	core	WC-C-052/boundary/WC-S-0127	own REST route data-currencies	E-woocommerce
+CM-MKS-005	woocommerce	shows	WC-C-030/decides/WC-S-0880	general settings: select the currency for sales	E-woocommerce
+CM-MKS-006	woocommerce	extension-point	WC-C-053/where/WC-S-0875	other currencies need a multi-currency extension/plugin	E-woocommerce
+CM-MKS-006	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations	E-woocommerce
+CM-MKS-006	woocommerce	shows	WC-C-053/where/WC-S-0541	WooPayments' built-in multi-currency	E-woocommerce
+CM-MKS-006	woocommerce	shows	WC-C-053/decides/WC-S-0542	customer currency defaults to the store currency	E-woocommerce
+CM-MKS-007	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-053/boundary/WC-S-0543	exchange rates retrieved from the WooPayments server	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-053/decides/WC-S-0544	manually-defined exchange rate	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0540	WooPayments charges a currency conversion fee	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0535	converted into the default currency	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0539	order total converted before fees	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-051/boundary/WC-S-5313	separate bank accounts per currency avoid the fees	E-woocommerce
+CM-MKS-007	woocommerce	shows	WC-C-051/reason/WC-S-5315	payouts in several currencies avoid conversion fees	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/where/WC-S-5459	i18n/countries.php returns countries and codes	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/decides/WC-S-5460	country names follow Unicode CLDR	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0124	own REST route data	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0693	data API to view available data	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0126	own REST route data-countries	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0125	own REST route data-continents	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0210	own admin API DataCountries	E-woocommerce
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-5461	own filter woocommerce_countries	E-woocommerce
+CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0602	option Default customer location, under where	E-woocommerce
+CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-1073	dashboard section تصميم المتجر: design, logo and icon	E-zid
+CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-0447	product line E-store	E-zid
+CM-SFR-001	zid	core	ZD-C-113/decides/ZD-S-0489	staff permission manage.store.front.customization	E-zid
+CM-SFR-001	zid	core	ZD-I-0327	plan line Responsive Design in Store Design	E-zid
+CM-SFR-001	zid	core	ZD-I-0328	plan line Various Ready-Made Templates in Store Design	E-zid
+CM-SFR-001	zid	core	ZD-C-113/decides/ZD-S-1076	built-in footer text صنع بواسطة زد, editable	E-zid
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1075	theme customization on Professional and Enterprise plans	E-zid
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1002	plan line CSS interface customization, growth and pro	E-zid
+CM-SFR-002	zid	core	ZD-C-113/decides/ZD-S-1001	plan line SDK Template Design (Up to 2), pro	E-zid
+CM-SFR-002	zid	core	ZD-I-0329	plan line Customize Colors & Fonts in Store Design	E-zid
+CM-SFR-003	zid	core	ZD-C-076/where/ZD-S-0895	Theme Market defined: a platform owned by Zid	E-zid
+CM-SFR-003	zid	core	ZD-C-076/decides/ZD-S-0363	plan Rise: access to themes store	E-zid
+CM-SFR-003	zid	core	ZD-C-076/decides/ZD-S-0896	store returns to a free theme Zid provides	E-zid
+CM-SFR-003	zid	extension-point	ZD-C-076/responsible/ZD-S-0897	partner is the provider of a partner's theme	E-zid
+CM-SFR-003	zid	extension-point	ZD-C-076/boundary/ZD-S-0899	Partner Share of the merchant's payment	E-zid
+CM-SFR-003	zid	own-service	ZD-C-076/responsible/ZD-S-0898	Zid owns the IP of its own themes	E-zid
+CM-SFR-005	zid	extension-point	ZD-I-0436	App Market category تحسين واجهة المتجر (ZD-C-070, F)	E-zid
+CM-SFR-005	zid	extension-point	ZD-I-0450	App Market category المحتوى المرئي والقصص (ZD-C-070, F)	E-zid
+CM-SFR-006	zid	core	ZD-I-0332	plan line Store - Landing Page in Store Design	E-zid
+CM-SFR-008	zid	core	ZD-C-096/where/ZD-S-0948	domains list from the dashboard's settings	E-zid
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0949	free domain request on Growth and Professional	E-zid
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0950	plan line Custom Domain Linking, launch, growth, pro	E-zid
+CM-SFR-008	zid	core	ZD-C-096/decides/ZD-S-0492	staff permission manage.store.custom.domain	E-zid
+CM-SFR-008	zid	core	ZD-C-096/boundary/ZD-S-0952	zid.store subdomains Zid gives the store	E-zid
+CM-SFR-008	zid	shows	ZD-C-096/responsible/ZD-S-0951	merchant responsible for buying and activating the domain	E-zid
+CM-SFR-012	zid	core	ZD-C-075/where/ZD-S-0049	API group API's > Checkout	E-zid
+CM-SFR-012	zid	core	ZD-C-075/where/ZD-S-0046	API group API's > Authentication	E-zid
+CM-SFR-012	zid	core	ZD-C-113/boundary/ZD-S-0051	API group API's > Storefront, page Store Scripts	E-zid
+CM-SFR-012	zid	core	ZD-C-075/boundary/ZD-S-0894	Role header Customer, operations as a customer	E-zid
+CM-SFR-012	zid	core	ZD-I-0047	API group API's > Products	E-zid
+CM-SFR-012	zid	core	ZD-I-0048	API group API's > Categories	E-zid
+CM-SFR-012	zid	core	ZD-I-0050	API group API's > Account	E-zid
+CM-SFR-012	zid	core	ZD-I-0052	API group API's > Countries	E-zid
+CM-SFR-013	zid	core	ZD-I-0326	plan line Search Bar in Store Design	E-zid
+CM-SFR-013	zid	core	ZD-I-0330	plan line Filtering in Store Design	E-zid
+CM-SFR-013	zid	core	ZD-I-0331	plan line Filter Criteria & Options in Store Design	E-zid
+CM-CNT-002	zid	core	ZD-C-100/decides/ZD-S-0963	plan line Custom Fields for products or orders (ZD-C-100, C)	E-zid
+CM-CNT-003	zid	core	ZD-I-0539	staff permission manage.store.front.pages	E-zid
+CM-CNT-003	zid	core	ZD-C-039/boundary/ZD-S-0783	API page API's > Storefront [Pages]	E-zid
+CM-CNT-004	zid	core	ZD-C-093/where/ZD-S-1040	dashboard route المتجر الإلكتروني > المدونة	E-zid
+CM-CNT-004	zid	core	ZD-C-093/where/ZD-S-0936	own API Merchant APIs > Blogs > Posts	E-zid
+CM-CNT-004	zid	core	ZD-C-093/boundary/ZD-S-0937	own API GET /v2/blogs/posts/	E-zid
+CM-CNT-004	zid	core	ZD-I-0036	own API group Blogs > Settings	E-zid
+CM-CNT-004	zid	core	ZD-I-0037	own API group Blogs > Categories	E-zid
+CM-CNT-004	zid	core	ZD-I-0040	own API group Blogs > Tags	E-zid
+CM-CNT-004	zid	core	ZD-I-0041	own API group Blogs > Storefront > Posts	E-zid
+CM-CNT-004	zid	core	ZD-C-093/decides/ZD-S-1042	blog only on Growth and Professional plans	E-zid
+CM-CNT-004	zid	shows	ZD-C-093/where/ZD-S-1041	merchant sent to a Blog platform to register or sign in	E-zid
+CM-CNT-004	zid	shows	ZD-C-093/boundary/ZD-S-1043	the app supports Tech Station's and Zid's themes only	E-zid
+CM-CNT-004	zid	shows	ZD-C-093/reason/ZD-S-1044	reason: articles in the store draw search-engine visits	E-zid
+CM-CNT-005	zid	core	ZD-C-113/decides/ZD-S-1074	plan line القائمة الرئيسية, Professional and Enterprise	E-zid
+CM-CNT-007	zid	core	ZD-I-0300	plan line Store SEO Customization (ZD-C-106, D)	E-zid
+CM-CNT-007	zid	extension-point	ZD-I-0463	App Market category SEO وتحسين الظهور (ZD-C-070, F)	E-zid
+CM-CNT-008	zid	core	ZD-C-039/where/ZD-S-0779	settings page الصفحات القانونية	E-zid
+CM-CNT-008	zid	core	ZD-C-039/decides/ZD-S-0780	kinds of legal pages: privacy, terms, returns, complaints, licences	E-zid
+CM-CNT-008	zid	shows	ZD-C-039/decides/ZD-S-0781	stores should make their consumer policies clear	E-zid
+CM-CNT-008	zid	shows	ZD-C-039/responsible/ZD-S-0782	merchant should post a privacy policy	E-zid
+CM-CNT-009	zid	core	ZD-C-102/where/ZD-S-0967	settings page إعادة توجيه الروابط	E-zid
+CM-CNT-009	zid	shows	ZD-C-102/reason/ZD-S-0968	reason: many redirects when moving from another platform	E-zid
+CM-CHN-001	zid	core	ZD-C-109/where/ZD-S-0985	dashboard section منصات البيع, activate and link	E-zid
+CM-CHN-001	zid	extension-point	ZD-I-0452	App Market category قنوات البيع (ZD-C-070, F)	E-zid
+CM-CHN-002	zid	core	ZD-C-109/where/ZD-S-0985	dashboard route to activate Mazeed under منصات البيع	E-zid
+CM-CHN-002	zid	core	ZD-C-024/where/ZD-S-0702	dashboard route منصات البيع > مزيد (ZD-C-024, also E)	E-zid
+CM-CHN-002	zid	core	ZD-C-109/boundary/ZD-S-0991	store's products added to Mazeed automatically	E-zid
+CM-CHN-002	zid	core	ZD-I-0368	Starter plan card: products on mazeed marketplace	E-zid
+CM-CHN-002	zid	own-service	ZD-C-109/responsible/ZD-S-0989	Zid, through Mazeed, the seller's legal representative	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/where/ZD-S-0984	Mazeed defined: merchants sell, customers shop	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0986	needs a Zid store on a plan	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0987	activity not prohibited under Saudi regulations	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/decides/ZD-S-0988	open to all Zid stores, Gulf merchants included	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/responsible/ZD-S-0990	merchant ships and delivers the order	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/boundary/ZD-S-0992	Zid may see the merchant's customers' data	E-zid
+CM-CHN-002	zid	shows	ZD-C-109/reason/ZD-S-0993	reason: assessing and improving Mazeed	E-zid
+CM-CHN-002	zid	shows	ZD-C-024/where/ZD-S-0703	Mazeed's own payment gateway, in the app only (ZD-C-024)	E-zid
+CM-CHN-003	zid	core	ZD-C-110/where/ZD-S-0458	product line Marketplaces: Amazon, Trendyol, Jahez	E-zid
+CM-CHN-003	zid	core	ZD-C-110/boundary/ZD-S-0995	order field is_marketplace_order	E-zid
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1060	Zid's share of Amazon sales by plan	E-zid
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1062	connection app not on Zid Lite plan	E-zid
+CM-CHN-003	zid	core	ZD-C-110/decides/ZD-S-1061	fees from the wallet, 500 SAR balance cap	E-zid
+CM-CHN-003	zid	core	ZD-C-110/boundary/ZD-S-1065	integration syncs data through APIs	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/reason/ZD-S-0995	customer data masked on marketplace orders	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/responsible/ZD-S-1058	merchant needs an Amazon Sellers account	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/responsible/ZD-S-1059	compliance with GDPR, CCPA, PCI-DSS	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-1063	Amazon in Saudi Arabia and the UAE	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-1064	Jahez joining conditions, Mazeed activated	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/decides/ZD-S-0994	Jahez: no change through Mazeed	E-zid
+CM-CHN-003	zid	shows	ZD-C-110/boundary/ZD-S-1066	Jahez orders shipped under Jahez's courier	E-zid
+CM-CHN-006	zid	core	ZD-C-116/decides/ZD-S-0500	staff permission manage.store.ecosystem.mobileapps	E-zid
+CM-CHN-006	zid	extension-point	ZD-C-116/where/ZD-S-1082	app reached from Zid's App Market	E-zid
+CM-CHN-006	zid	extension-point	ZD-I-0437	App Market category تطبيقات الجوال للمتجر (ZD-C-070, F)	E-zid
+CM-CHN-006	zid	outside	ZD-C-116/where/ZD-S-1081	store app created by عناقيد التطبيقات	E-zid
+CM-CHN-006	zid	outside	ZD-C-116/responsible/ZD-S-1085	عناقيد التطبيقات uploads the app to its account	E-zid
+CM-CHN-006	zid	shows	ZD-C-116/where/ZD-S-1006	help-centre topic: mobile app requirements	E-zid
+CM-CHN-006	zid	shows	ZD-C-116/decides/ZD-S-1083	one-year subscription	E-zid
+CM-CHN-006	zid	shows	ZD-C-116/responsible/ZD-S-1084	merchant creates Apple and Google developer accounts	E-zid
+CM-CHN-006	zid	shows	ZD-C-116/boundary/ZD-S-1086	store's contents managed from one dashboard	E-zid
+CM-CHN-006	zid	shows	ZD-C-116/reason/ZD-S-1087	reason: brand on Apple's and Google's stores	E-zid
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0979	plan line Mobile & Tablet POS App, all four plans	E-zid
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0382	plan Professional: Completely free Zid POS - two cashiers	E-zid
+CM-POS-001	zid	core	ZD-I-0382	plan card Rise: Free Zid POS on Basic Plan	E-zid
+CM-POS-001	zid	core	ZD-I-0385	plan card Growth: One year free on Zid Cashier	E-zid
+CM-POS-001	zid	core	ZD-I-0465	product line POS (Point of Sales)	E-zid
+CM-POS-001	zid	core	ZD-I-0352	plan line Customer Display Screen, placed in Zid POS by Q1	E-zid
+CM-POS-001	zid	core	ZD-C-108/decides/ZD-S-0506	staff permission pos.payment.methods	E-zid
+CM-POS-001	zid	core	ZD-I-0490	staff permission pos.cashiers.page	E-zid
+CM-POS-001	zid	core	ZD-I-0495	staff permission pos.cashier.usage	E-zid
+CM-POS-001	zid	core	ZD-I-0497	staff permission pos.homepage	E-zid
+CM-POS-001	zid	core	ZD-I-0528	staff permission pos.analytics	E-zid
+CM-POS-001	zid	own-service	ZD-C-108/where/ZD-S-0977	زد كاشير: a service Zid provides	E-zid
+CM-POS-001	zid	extension-point	ZD-I-0443	App Market category الربط مع الأنظمة (ERP/POS)	E-zid
+CM-POS-001	zid	shows	ZD-C-108/boundary/ZD-S-0983	e-invoicing, Zid approved by the Authority	E-zid
+CM-POS-001	zid	shows	ZD-I-0419	legal agreement الشروط والأحكام › زد كاشير	E-zid
+CM-POS-002	zid	core	ZD-C-108/where/ZD-S-0978	POS app settings: link a payment device	E-zid
+CM-POS-002	zid	outside	ZD-C-108/responsible/ZD-S-0981	the agent bears the devices' warranty	E-zid
+CM-POS-002	zid	shows	ZD-C-108/boundary/ZD-S-0982	POS devices defined: sales, stock, settlement, all payment methods	E-zid
+CM-POS-002	zid	shows	ZD-C-108/responsible/ZD-S-0980	Zid not responsible for installing POS devices	E-zid
+CM-MKS-001	zid	core	ZD-C-034/where/ZD-S-0748	settings route الاعدادات > الأسواق	E-zid
+CM-MKS-001	zid	core	ZD-C-034/decides/ZD-S-0749	number of markets by plan	E-zid
+CM-MKS-001	zid	core	ZD-C-033/decides/ZD-S-0745	activating a country's currency turns on shipping to it	E-zid
+CM-MKS-004	zid	core	ZD-C-050/decides/ZD-S-0807	plan line Geo-Based Currency Settings, by customer location	E-zid
+CM-MKS-005	zid	core	ZD-C-050/where/ZD-S-0806	activate the store's main currency in settings	E-zid
+CM-MKS-005	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns the default currency	E-zid
+CM-MKS-005	zid	shows	ZD-C-050/decides/ZD-S-0808	payment in the store's base currency, SAR or KWD	E-zid
+CM-MKS-006	zid	core	ZD-C-050/where/ZD-S-0806	add other currencies in settings	E-zid
+CM-MKS-006	zid	core	ZD-C-034/decides/ZD-S-0750	a market's currency for showing prices	E-zid
+CM-MKS-006	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns supported currencies	E-zid
+CM-MKS-006	zid	core	ZD-C-050/decides/ZD-S-0808	prices shown in the chosen currency, paid in base currency	E-zid
+CM-MKS-007	zid	core	ZD-C-050/decides/ZD-S-0810	prices converted at the exchange rate on a currency change	E-zid
+CM-MKS-007	zid	core	ZD-C-050/boundary/ZD-S-0811	own order field order_currency.exchange_rate	E-zid
+CM-MKS-007	zid	extension-point	ZD-C-050/boundary/ZD-S-0812	partners must convert the order total	E-zid
+CM-MKS-007	zid	shows	ZD-C-050/decides/ZD-S-0809	amount paid converted at the gateway's exchange rate	E-zid
+CM-MKS-008	zid	core	ZD-C-050/boundary/ZD-S-0813	own API returns supported and active languages	E-zid
+CM-MKS-008	zid	core	ZD-I-0140	settings page لغة وعملات المتجر	E-zid
+CM-MKS-009	zid	core	ZD-C-033/boundary/ZD-S-0035	own API group Countries and Cities	E-zid
+CM-MKS-009	zid	core	ZD-C-033/boundary/ZD-S-0117	own scope countries_cities.read	E-zid
+CM-MKS-009	zid	core	ZD-C-033/where/ZD-S-0744	own endpoint: countries with ID, name, ISO codes, flag	E-zid
+CM-CNT-009	shopify	core	SH-C-031/boundary/SH-S-6245	scope required by the mutation urlRedirectBulkDeleteAll (its citation)	E-backfill-zid
+CM-SFR-001	bigcommerce	core	BC-C-042/where/BC-S-0236	its own Themes API: backup, restore, download and activate themes	E-bigcommerce
+CM-SFR-001	bigcommerce	core	BC-C-042/boundary/BC-S-0242	own access scope store_themes_manage, view and modify themes	E-bigcommerce
+CM-SFR-001	bigcommerce	core	BC-C-042/boundary/BC-S-0243	own webhook topic: a channel's theme published	E-bigcommerce
+CM-SFR-001	bigcommerce	core	BC-C-038/decides/BC-S-0221	plan line Online storefront, on all four plans	E-bigcommerce
+CM-SFR-002	bigcommerce	core	BC-C-042/where/BC-S-0238	Stencil, BigCommerce's Handlebars-based theme engine	E-bigcommerce
+CM-SFR-002	bigcommerce	core	BC-C-042/where/BC-S-0237	its own API associating a Stencil theme's custom templates with products, categories, brands and pages	E-bigcommerce
+CM-SFR-003	bigcommerce	shows	BC-C-042/decides/BC-S-0239	licence for each licensed Design theme, one store per licence purchased	E-bigcommerce
+CM-SFR-003	bigcommerce	outside	BC-C-042/responsible/BC-S-0240	the designer licensor supports a design theme, not Commerce	E-bigcommerce
+CM-SFR-003	bigcommerce	outside	BC-C-042/responsible/BC-S-0241	themes developed by external developers; Commerce does not update them	E-bigcommerce
+CM-SFR-004	bigcommerce	extension-point	BC-C-044/decides/BC-S-0249	after install, an app freely updates its own scripts	E-bigcommerce
+CM-SFR-004	bigcommerce	core	BC-C-044/where/BC-S-0248	Script Manager in the storefront's channel settings, the control panel counterpart of the Scripts API	E-bigcommerce
+CM-SFR-004	bigcommerce	core	BC-C-044/where/BC-S-0247	its own Scripts API adds client-side code to a storefront page	E-bigcommerce
+CM-SFR-004	bigcommerce	core	BC-C-044/boundary/BC-S-0250	own webhook topic: script created for a channel	E-bigcommerce
+CM-SFR-005	bigcommerce	core	BC-C-043/where/BC-S-0244	its own Widgets API: widget templates, widgets, regions and placements	E-bigcommerce
+CM-SFR-005	bigcommerce	core	BC-C-043/where/BC-S-0245	page widgets of its Content API divide pages into regions, layouts, dropzones and widgets	E-bigcommerce
+CM-SFR-005	bigcommerce	shows	BC-C-043/where/BC-S-0246	Beta Page Widgets: publish or overwrite page content	E-bigcommerce
+CM-SFR-005	bigcommerce	shows	BC-C-043/decides/BC-S-0077	closed beta, not available by default (Page Widgets API)	E-bigcommerce
+CM-SFR-006	bigcommerce	own-service	BC-C-051/responsible/BC-S-0285	Makeswift, Inc., the contracting entity for the Makeswift visual editor / builder	E-bigcommerce
+CM-SFR-006	bigcommerce	own-service	BC-C-051/where/BC-S-0284	Makeswift, BigCommerce's visual page builder, integrates with Catalyst	E-bigcommerce
+CM-SFR-006	bigcommerce	shows	BC-C-051/boundary/BC-S-0286	Makeswift site API key for a Makeswift-enabled Catalyst storefront	E-bigcommerce
+CM-SFR-007	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create banners	E-bigcommerce
+CM-SFR-008	bigcommerce	core	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting endpoints add custom domains	E-bigcommerce
+CM-SFR-008	bigcommerce	shows	BC-C-047/where/BC-S-0262	store information returns the store's domain	E-bigcommerce
+CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0423	plan line Free sitewide HTTPS and dedicated SSL, on all four plans	E-bigcommerce
+CM-SFR-010	bigcommerce	core	BC-C-078/decides/BC-S-0422	its own Storefront Security settings	E-bigcommerce
+CM-SFR-010	bigcommerce	core	BC-C-078/boundary/BC-S-0424	own webhook topic: a channel's security settings updated	E-bigcommerce
+CM-SFR-010	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications for security and compliance	E-bigcommerce
+CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0281	Catalyst, BigCommerce's headless storefront framework	E-bigcommerce
+CM-SFR-011	bigcommerce	core	BC-C-050/where/BC-S-0282	Catalyst (Storefront Framework), BigCommerce's product page	E-bigcommerce
+CM-SFR-011	bigcommerce	core	BC-I-0534	product line Headless commerce	E-bigcommerce
+CM-SFR-012	bigcommerce	core	BC-C-053/where/BC-S-0293	its own Storefront API queries products, customers and carts from the storefront	E-bigcommerce
+CM-SFR-012	bigcommerce	core	BC-C-053/where/BC-S-0292	its own storefront API tokens authenticate GraphQL Storefront API requests	E-bigcommerce
+CM-SFR-012	bigcommerce	core	BC-C-053/boundary/BC-S-0294	own access scope store_storefront_api	E-bigcommerce
+CM-SFR-012	bigcommerce	shows	BC-C-053/reason/BC-S-0295	reason: GraphQL returns several resources in one call	E-bigcommerce
+CM-SFR-012	bigcommerce	core	BC-C-050/boundary/BC-S-0283	Catalyst implements the GraphQL Storefront API	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/where/BC-S-0065	product line Product filtering, customizable filtering	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0066	its own settings Search Filters	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0067	its own settings Storefront Search	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0068	plan line Product filtering	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0069	facets and rating or in-stock filters only on Pro or Enterprise	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/decides/BC-S-0070	merchant marks facets visible in Product Filtering settings	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-011/boundary/BC-S-0071	own webhook topic: a channel's storefront search settings updated	E-bigcommerce
+CM-SFR-013	bigcommerce	core	BC-C-047/where/BC-S-0263	Settings APIs manage the control panel's search filters	E-bigcommerce
+CM-SFR-014	bigcommerce	core	BC-C-040/where/BC-S-0231	its own Sites API: sites and routes for headless storefront channels	E-bigcommerce
+CM-SFR-014	bigcommerce	core	BC-C-040/boundary/BC-S-0232	own access scope store_sites, sites and routes	E-bigcommerce
+CM-SFR-014	bigcommerce	core	BC-C-040/boundary/BC-S-0233	own webhook topic: a channel's site updated, created or deleted	E-bigcommerce
+CM-SFR-014	bigcommerce	core	BC-I-0263	own webhook topic: a channel's route updated	E-bigcommerce
+CM-CNT-002	bigcommerce	core	BC-C-049/where/BC-S-0276	its own API for store metafields, custom metadata on store resources	E-bigcommerce
+CM-CNT-002	bigcommerce	core	BC-C-049/where/BC-S-0277	store metafields attached to the store itself	E-bigcommerce
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0278	own access scope store_metafield_write	E-bigcommerce
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0279	own access scope store_metafield_write_all	E-bigcommerce
+CM-CNT-002	bigcommerce	core	BC-C-049/boundary/BC-S-0280	own webhook topic store/metafield/created	E-bigcommerce
+CM-CNT-003	bigcommerce	core	BC-C-045/where/BC-S-0251	its own Pages API: a page on a channel's site	E-bigcommerce
+CM-CNT-003	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages content pages	E-bigcommerce
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0254	own access scope store_v2_content, store content	E-bigcommerce
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0255	own webhook topic: page created for a channel	E-bigcommerce
+CM-CNT-003	bigcommerce	core	BC-C-045/boundary/BC-S-0256	its GraphQL Storefront API retrieves site content per channel	E-bigcommerce
+CM-CNT-003	bigcommerce	shows	BC-C-045/reason/BC-S-0257	reason: site content for headless storefronts, such as theme widgets	E-bigcommerce
+CM-CNT-003	bigcommerce	extension-point	BC-I-0482	App Marketplace category CMS & Hosting	E-bigcommerce
+CM-CNT-004	bigcommerce	core	BC-C-045/decides/BC-S-0253	plan line Built-in blog, on all four plans	E-bigcommerce
+CM-CNT-004	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages blog posts and blog tags	E-bigcommerce
+CM-CNT-007	bigcommerce	core	BC-C-047/decides/BC-S-0266	its own settings Storefront SEO	E-bigcommerce
+CM-CNT-007	bigcommerce	core	BC-C-047/where/BC-S-0263	Settings APIs manage the control panel's SEO settings	E-bigcommerce
+CM-CNT-008	bigcommerce	shows	BC-C-086/responsible/BC-S-0472	the merchant must keep a privacy policy readily accessible to its users	E-bigcommerce
+CM-CNT-009	bigcommerce	core	BC-C-041/where/BC-S-0234	its own Redirects API: 301 redirects for storefronts	E-bigcommerce
+CM-CNT-009	bigcommerce	core	BC-C-041/boundary/BC-S-0235	own webhook topic store/redirects/updated	E-bigcommerce
+CM-CNT-009	bigcommerce	core	BC-C-045/where/BC-S-0252	its own Content API manages redirects	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-C-038/where/BC-S-0219	its own Channels API group: create and manage sales channels	E-bigcommerce
+CM-CHN-001	bigcommerce	shows	BC-C-038/where/BC-S-0220	definition of a channel: anywhere a merchant sells	E-bigcommerce
+CM-CHN-001	bigcommerce	shows	BC-C-038/decides/BC-S-0222	the merchant creates a channel to sell in a new context	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0223	own access scope store_channel_settings	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0225	own webhook topic store/channel/created	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-C-038/boundary/BC-S-0226	Channels API rule: valid type and platform pair	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-I-0259	own webhook topic: product assigned to a channel	E-bigcommerce
+CM-CHN-001	bigcommerce	core	BC-I-0260	own webhook topic: product unassigned from a channel	E-bigcommerce
+CM-CHN-001	bigcommerce	extension-point	BC-I-0494	App Marketplace category Sales Channels	E-bigcommerce
+CM-CHN-001	bigcommerce	shows	BC-I-0519	product line Omnichannel management, a name only	E-bigcommerce
+CM-CHN-001	bigcommerce	shows	BC-I-0521	product line Social channels, a name only	E-bigcommerce
+CM-CHN-003	bigcommerce	core	BC-C-068/decides/BC-S-0369	plan line on four plans: connect marketplaces, manage their orders	E-bigcommerce
+CM-CHN-003	bigcommerce	core	BC-C-068/where/BC-S-0368	product line Marketplaces: sell across Amazon, Walmart, eBay	E-bigcommerce
+CM-CHN-003	bigcommerce	shows	BC-C-068/boundary/BC-S-0370	channel platform amazon, types marketplace and marketing	E-bigcommerce
+CM-CHN-004	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's product listings	E-bigcommerce
+CM-CHN-004	bigcommerce	core	BC-C-038/boundary/BC-S-0224	own access scope store_channel_listings	E-bigcommerce
+CM-CHN-004	bigcommerce	shows	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface on four plans: keeps product listings accurate; core in D's CM-MKT-010, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)	E-bigcommerce
+CM-CHN-004	bigcommerce	own-service	BC-C-067/responsible/BC-S-0366	contracting entity Feedonomics Holdings, LLC for the Feedonomics Platform	E-bigcommerce
+CM-CHN-004	bigcommerce	shows	BC-C-067/where/BC-S-0364	definition of the Feedonomics Platform	E-bigcommerce
+CM-CHN-004	bigcommerce	shows	BC-C-067/boundary/BC-S-0367	the merchant's data sent to Feedonomics Holdings LLC	E-bigcommerce
+CM-CHN-004	bigcommerce	shows	BC-I-0522	product line Google Shopping, a name only	E-bigcommerce
+CM-CHN-007	bigcommerce	core	BC-C-039/decides/BC-S-0228	plan line Multi-storefront: added storefronts, price and maximum per plan	E-bigcommerce
+CM-CHN-007	bigcommerce	shows	BC-C-039/where/BC-S-0227	definition: multiple unique storefronts within one store	E-bigcommerce
+CM-CHN-007	bigcommerce	shows	BC-C-039/boundary/BC-S-0229	partners must adapt to multi-storefront support	E-bigcommerce
+CM-CHN-007	bigcommerce	shows	BC-C-039/reason/BC-S-0230	reason: no breaking changes for single-storefront stores	E-bigcommerce
+CM-MKS-004	bigcommerce	core	BC-C-074/decides/BC-S-0402	shoppers in associated countries see and pay in the transactional currency	E-bigcommerce
+CM-MKS-005	bigcommerce	core	BC-C-074/decides/BC-S-0404	the store's default currency can use any gateway	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/where/BC-S-0398	its own Currencies API: alternate currency display	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/where/BC-S-0399	control panel Settings > Setup > Currencies, Add a Currency	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0400	plan line Multi-currency on four plans: 100+ currencies	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0401	transactional currencies added in the MSF-enabled control panel	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/decides/BC-S-0402	transactional currency: prices shown and charged in it	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/boundary/BC-S-0407	own webhook topic: a channel's currency updated	E-bigcommerce
+CM-MKS-006	bigcommerce	core	BC-C-074/boundary/BC-S-0408	the transactional currency BigCommerce passes to the payment provider	E-bigcommerce
+CM-MKS-006	bigcommerce	shows	BC-C-074/decides/BC-S-0403	the merchant sets the settlement currency through the provider	E-bigcommerce
+CM-MKS-006	bigcommerce	shows	BC-C-074/decides/BC-S-0404	a multi-currency compatible gateway is required	E-bigcommerce
+CM-MKS-006	bigcommerce	shows	BC-C-074/reason/BC-S-0410	reason: shopping and checking out in the native currency	E-bigcommerce
+CM-MKS-006	bigcommerce	shows	BC-C-074/reason/BC-S-0411	other gateways cannot settle in the presentment currency	E-bigcommerce
+CM-MKS-007	bigcommerce	core	BC-C-074/responsible/BC-S-0406	names the BigCommerce conversion rate	E-bigcommerce
+CM-MKS-007	bigcommerce	outside	BC-C-074/boundary/BC-S-0409	Stripe handles the FX conversion	E-bigcommerce
+CM-MKS-007	bigcommerce	shows	BC-C-074/responsible/BC-S-0405	conversion fee and rate outside BigCommerce's scope	E-bigcommerce
+CM-MKS-008	bigcommerce	core	BC-C-048/where/BC-S-0270	its own Translations Admin GraphQL API	E-bigcommerce
+CM-MKS-008	bigcommerce	core	BC-C-048/decides/BC-S-0271	setting Store Locale	E-bigcommerce
+CM-MKS-008	bigcommerce	core	BC-C-048/decides/BC-S-0272	locales per sales channel through the GraphQL Admin API	E-bigcommerce
+CM-MKS-008	bigcommerce	core	BC-C-048/boundary/BC-S-0274	own access scope store_translations	E-bigcommerce
+CM-MKS-008	bigcommerce	core	BC-C-048/boundary/BC-S-0275	own webhook topic: a locale added to a channel	E-bigcommerce
+CM-MKS-008	bigcommerce	shows	BC-C-048/decides/BC-S-0273	limit: up to 5 locales per storefront	E-bigcommerce
+CM-MKS-009	bigcommerce	core	BC-C-075/where/BC-S-0412	its own Geography API: countries, states and provinces	E-bigcommerce
+CM-POS-001	bigcommerce	extension-point	BC-C-069/decides/BC-S-0372	plan line Point of sale: POS integrations to Square, Vend, Clover, Heartland Retail	E-bigcommerce
+CM-POS-001	bigcommerce	extension-point	BC-C-069/where/BC-S-0371	product line POS integrations with other point-of-sale systems	E-bigcommerce
+CM-POS-001	bigcommerce	extension-point	BC-I-0491	App Marketplace category POS & In-Store	E-bigcommerce
+CM-POS-001	bigcommerce	shows	BC-C-069/boundary/BC-S-0373	channel platform square of type pos	E-bigcommerce
+CM-SFR-014	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's sites	E-bigcommerce
+CM-CHN-007	shopify	core	SH-C-139/decides/SH-S-7056	plan row Build headless storefronts: 1 on three plans, 25 on Plus	E-backfill-bigcommerce
 CM-APP-001	shopify	core	SH-C-156/where/SH-S-1495	the admin navigation item Apps	F-anchor
 CM-APP-001	shopify	core	SH-C-156/decides/SH-S-5028	the apps list route, open to the staff permissions APPLICATIONS or LIMITED_APPLICATIONS	F-anchor
 CM-APP-001	shopify	core	SH-C-019/where/SH-S-6316	the admin's Settings > Apps	F-anchor
@@ -2834,7 +3186,7 @@ CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0441	class WC_Inte
 CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0442	filter woocommerce_integrations, through which integrations load	F-woocommerce
 CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0922	a settings page for an integration made with WC_Integration	F-woocommerce
 CM-APP-011	woocommerce	core	WC-C-050/where/WC-S-0697	Marketplace category Developed by Woo	F-woocommerce
-CM-APP-011	woocommerce	own-service	WC-C-050/responsible/WC-S-0644	Automattic's Fees: Woo themes or extensions among its paid Services	F-woocommerce
+CM-APP-011	woocommerce	shows	WC-C-050/responsible/WC-S-0644	Automattic's Fees: Woo themes or extensions among its paid Services; own-service in E's CM-SFR-003, the theme marketplace, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)	F-woocommerce
 CM-APP-011	woocommerce	shows	WC-C-050/decides/WC-S-0646	paid Services bought from WooCommerce.com come with downloads, updates and support for a year	F-woocommerce
 CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0027	settings section Advanced > WooCommerce.com	F-woocommerce
 CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0899	connecting to WooCommerce.com installs extensions, brings updates and support, and manages subscriptions from the admin	F-woocommerce
@@ -3232,7 +3584,7 @@ CM-OPS-001	bigcommerce	core	BC-C-082/decides/BC-S-0450	infrastructure segmented 
 CM-OPS-001	bigcommerce	shows	BC-C-083/where/BC-S-0455	uptime record during Cyber Week	G-bigcommerce
 CM-OPS-001	bigcommerce	shows	BC-C-057/reason/BC-S-0316	rate limits stated as safeguards for platform reliability	G-bigcommerce
 CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0288	BigCommerce provides hosting for Catalyst projects	G-bigcommerce
-CM-OPS-003	bigcommerce	core	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting API	G-bigcommerce
+CM-OPS-003	bigcommerce	shows	BC-C-052/where/BC-S-0287	its own Infrastructure Hosting API; core in E's CM-SFR-008, store domains, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)	G-bigcommerce
 CM-OPS-003	bigcommerce	core	BC-C-028/responsible/BC-S-0169	BigCommerce a PCI DSS service provider as a shared hosting provider	G-bigcommerce
 CM-OPS-003	bigcommerce	outside	BC-C-083/responsible/BC-S-0457	third parties provide hosting services essential to the Services	G-bigcommerce
 CM-OPS-003	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon hosts customer and catalog data, feed data, logs	G-bigcommerce

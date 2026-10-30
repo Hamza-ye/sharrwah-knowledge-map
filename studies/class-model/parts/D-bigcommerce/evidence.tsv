@@ -79,7 +79,7 @@ CM-MKT-001	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discou
 CM-MKT-001	bigcommerce	core	BC-C-009/decides/BC-S-0058	plan line Advanced promotions management
 CM-MKT-001	bigcommerce	shows	BC-C-009/decides/BC-S-0059	recommended limit on active promotions and rules
 CM-MKT-001	bigcommerce	shows	BC-C-009/reason/BC-S-0061	the limit prevents a slowdown of checkout
-CM-MKT-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons
+CM-MKT-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-MKT-002	bigcommerce	core	BC-C-010/boundary/BC-S-0064	its scope store_v2_marketing
 CM-MKT-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
 CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel list Marketing > Promotions > Automatic
@@ -100,7 +100,7 @@ CM-MKT-023	bigcommerce	core	BC-C-013/decides/BC-S-0078	only on BigCommerce Enter
 CM-MKT-023	bigcommerce	shows	BC-C-013/decides/BC-S-0077	closed beta, not available by default
 CM-MKT-023	bigcommerce	shows	BC-C-013/responsible/BC-S-0079	merchant responsible for Google's fees
 CM-MKT-023	bigcommerce	shows	BC-C-013/reason/BC-S-0081	models trained on BigCommerce Analytics data
-CM-LOY-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates
+CM-LOY-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
 CM-LOY-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
 CM-LOY-005	bigcommerce	core	BC-C-036/where/BC-S-0214	its own Wishlist API
 CM-LOY-005	bigcommerce	core	BC-I-0066	API group Wishlist (C2)

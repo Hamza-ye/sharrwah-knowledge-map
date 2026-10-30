@@ -259,7 +259,7 @@ def main():
         if t not in seen:
             seen.add(t); iface_u.append(r)
     write(os.path.join(out, "interfaces.tsv"), ["cap_id", "grade", "placement", "key", "identifier"], sorted(iface_u, key=lambda r: (r["cap_id"], r["grade"], r["key"])))
-    k = subprocess.run([sys.executable, "-I", os.path.join(os.path.dirname(os.path.abspath(__file__)), "class_kinds.py"), "--out", os.path.join(out, "kinds.tsv")],
+    k = subprocess.run([sys.executable, "-I", os.path.join(os.path.dirname(os.path.abspath(__file__)), "class_kinds.py"), "--out", os.path.join(out, "kinds.tsv"), "--exclude", ",".join(sorted(leave))],
                        capture_output=True, text=True, env=os.environ)
     print(k.stderr.strip())
     print(f"{len(caps)} capabilities, {len(landed)} concerns landed, {not_run} in platforms and domains not yet run, {len(cells)} cells, "
