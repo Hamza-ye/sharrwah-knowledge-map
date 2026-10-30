@@ -8,7 +8,7 @@ shopify	SH-C-006	A		I'm located in: the merchant's country at sign-up (ONB)
 shopify	SH-C-007	A		Security; Sign in with passkey; two-step authentication: account sign-in security (TRU)
 shopify	SH-C-008	A		Trust; identity-verification; Profile Assessment: verifying the people behind an account (TRU)
 shopify	SH-C-009	A		Users; Staff Accounts; where user_management (STF); M-004
-shopify	SH-C-010	A		Roles; permissions; where roles (STF); M-004
+shopify	SH-C-010	A	G	Roles; permissions; where roles (STF); M-004; also G: its export permissions are Shopify's only statements on export (the coordinator, from G-anchor's notes)
 shopify	SH-C-011	A		Collaborator access; where settings:organizations:accounts:collaborator (STF)
 shopify	SH-C-012	A		MerchantAuditLog; where merchant-audit-log:list (TRU); M-005
 shopify	SH-C-013	A		General; Store properties; where general: store details and settings (ACC); M-006
@@ -18,7 +18,7 @@ shopify	SH-C-016	A		Billing; Subscription charges; where settings/billing: Shopi
 shopify	SH-C-017	A	C	Taxes on Shopify's own charges; where settings/billing: tax on the platform's bill, not the merchant's sales tax (PLN); M-009
 shopify	SH-C-018	A	C	Third-party transaction fees; where settings/billing: a fee on the platform's bill for using other payment providers (PLN)
 shopify	SH-C-019	F	A	App fees; Shopify Billing Resource; app_subscriptions/update: the app platform's billing of app charges (APP); M-010
-shopify	SH-C-020	B		Products; products/create; where products, Product (CAT); M-011
+shopify	SH-C-020	B	G	Products; products/create; where products, Product (CAT); M-011; also G: its product import routes are Shopify's only statements on import (the coordinator, from G-anchor's notes)
 shopify	SH-C-021	B		Collections; collections/create; where collections:root (CAT)
 shopify	SH-C-022	B		Inventory; inventory_levels/update; where products:inventory (INV); M-012
 shopify	SH-C-023	B		Transfers; Purchase orders; InventoryTransfer; where Transfers (INV)
