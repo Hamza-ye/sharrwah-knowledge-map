@@ -1,0 +1,13 @@
+cap_id	platform	supports	key	why
+CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-7224	plan includes abandoned cart recovery features
+CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-7041	plan row Abandoned checkout recovery, Included on every plan
+CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-5277	store entitlement abandonedCartRecovery true
+CM-MKT-022	shopify	shows	SH-C-050/decides/SH-S-5276	store entitlement abandonedCartRecovery false on trial stores
+CM-MKT-022	shopify	core	SH-I-2021	notification template Abandoned checkout
+CM-MKT-022	shopify	core	SH-I-2029	notification template POS abandoned checkout
+CM-MKT-022	shopify	extension-point	SH-I-1827	App Store category Abandoned cart apps
+CM-MKT-022	salla	core	SA-C-048/decides/SA-S-2099	plan line استهداف السلات المتروكة: reminder messages to customers who left a cart
+CM-MKT-022	salla	core	SA-C-048/where/SA-S-1814	admin link Abandoned carts at /marketing/carts
+CM-MKT-022	salla	extension-point	SA-C-048/where/SA-S-1191	App Store category Abandoned Cart
+CM-MKT-022	salla	extension-point	SA-C-200/boundary/SA-S-1668	Communication Webhooks type customer.cart.abandoned
+CM-MKT-022	salla	shows	SA-C-048/reason/SA-S-5017	FAQ: discount messages bound by the CST-approved terms
