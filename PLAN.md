@@ -356,12 +356,10 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 ### Evidence
 
 - **Statements** stay verbatim, cited at a pinned commit, under Q1's rules.
-- **The evidence map** (30 October; `studies/class-model/evidence-map/`, from the brief `studies/class-model/briefs/E-map.md`). For each platform and surface it gives:
-  - the platform's own list of what exists there, its denominator;
-  - what is held against it, from the repositories' own ledgers;
-  - how it was captured, and what is out of reach;
-  - how the surfaces relate;
-  - what the model has read.
+- **The evidence map** (30 October; `studies/class-model/evidence-map.md`) is every reader's entry point to what is held. It points to each repository's own guides and ledgers, in the order to read them, rather than restating them. It adds three things:
+  - the repositories' own coverage counts, by denominator and status (`held-vs-read.tsv`, by `method/held_vs_read.py`);
+  - what the model has read;
+  - the tools' known faults.
 
   Every agent that reads evidence starts from it, by structure, before any search. Coverage is judged at three levels, each with its remedy:
   - exists but isn't captured: a capture request, where the thing could change the model or a decision;
@@ -643,7 +641,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
 
   **What this change removes or weakens:** nothing. It adds two steps before the final review, at about 80 to 180 million agent tokens in all, an assumption to be measured on the first batches. The final review, by risk and from the model's side, stays as it was, and reads the omission review's findings.
 - **30 October 2026, the evidence map** (the founder's context: "Evidence is a critical part of this work. We need confidence not only in what is already held, but also in how agents identify, plan, and execute further evidence capture when needed", the framing left to the coordinator). A fix to the method within this plan, listed at the next report. Changed in section 6, Evidence:
-  - an evidence map, from the repositories' own denominators and ledgers, is every reader's entry point;
+  - an evidence map is every reader's entry point: one page pointing to the repositories' own guides and ledgers, with their counts;
   - coverage is judged at three levels, each with its remedy.
 
-  The held pass's second stage and the omission review read it. **What this change removes or weakens:** nothing.
+  The held pass's second stage and the omission review read it. Capture stays the exception: a request only where a gap could change the model or a decision. The coordinator names it, and the founder's local agent runs it, if the founder hands it on (the founder: "i am not trying to make your role or turn this into a capturing process"). A first brief for an agent to write a document per surface (`briefs/E-map.md`) was withdrawn before it ran, since the repositories' own guides already describe their evidence. **What this change removes or weakens:** nothing.

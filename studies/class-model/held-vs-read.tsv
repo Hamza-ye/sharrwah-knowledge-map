@@ -821,6 +821,41 @@ shopify	runs	fetch	78	0	78
 shopify	runs	import	1	1	0	
 shopify	runs	receiver	1	0	1	
 shopify	runs	session	265	7	258	
+shopify	ledger	admin-control: exercised	688			the repository's own count, index/ledger
+shopify	ledger	admin-control: listed	43849			the repository's own count, index/ledger
+shopify	ledger	admin-control: stopped-at-confirm	3			the repository's own count, index/ledger
+shopify	ledger	admin-mutation: not-attempted	192			the repository's own count, index/ledger
+shopify	ledger	admin-mutation: observed	422			the repository's own count, index/ledger
+shopify	ledger	admin-mutation: stopped-at-confirm	3			the repository's own count, index/ledger
+shopify	ledger	admin-mutation: visited-not-fired	908			the repository's own count, index/ledger
+shopify	ledger	admin-route: computed-path	3726			the repository's own count, index/ledger
+shopify	ledger	admin-route: needs-instance	4747			the repository's own count, index/ledger
+shopify	ledger	admin-route: no-path	280			the repository's own count, index/ledger
+shopify	ledger	admin-route: not-attempted	2774			the repository's own count, index/ledger
+shopify	ledger	admin-route: splat	659			the repository's own count, index/ledger
+shopify	ledger	admin-route: visited	5326			the repository's own count, index/ledger
+shopify	ledger	admin-route: visited-not-rendered	220			the repository's own count, index/ledger
+shopify	ledger	admin-visit-other: visited	3			the repository's own count, index/ledger
+shopify	ledger	journey-unit: journeyed	160			the repository's own count, index/ledger
+shopify	ledger	journey-unit: not-attempted	34			the repository's own count, index/ledger
+shopify	ledger	journey-unit: swept	117			the repository's own count, index/ledger
+shopify	ledger	sitemap:apps-shopify-sitemaps: attempted-redirect	125			the repository's own count, index/ledger
+shopify	ledger	sitemap:apps-shopify-sitemaps: attempted-soft-404	2			the repository's own count, index/ledger
+shopify	ledger	sitemap:apps-shopify-sitemaps: captured	3068			the repository's own count, index/ledger
+shopify	ledger	sitemap:apps-shopify-sitemaps: not-attempted	44653			the repository's own count, index/ledger
+shopify	ledger	sitemap:community-shopify-sitemaps: not-attempted	340642			the repository's own count, index/ledger
+shopify	ledger	sitemap:help-shopify-sitemaps: attempted-redirect	10			the repository's own count, index/ledger
+shopify	ledger	sitemap:help-shopify-sitemaps: captured	5173			the repository's own count, index/ledger
+shopify	ledger	sitemap:help-shopify-sitemaps: not-attempted	83583			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemap: attempted-client-error	1			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemap: attempted-no-response	2			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemap: attempted-not-found	7			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemap: attempted-redirect	15			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemap: captured	530			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-dev-sitemap: attempted-redirect	3			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-dev-sitemap: captured	8868			the repository's own count, index/ledger
+shopify	ledger	sitemap:themes-shopify-sitemaps: captured	1564			the repository's own count, index/ledger
+shopify	ledger	sitemap:themes-shopify-sitemaps: not-attempted	50048			the repository's own count, index/ledger
 salla	pages	help.salla.sa/article	2951	66	2885	
 salla	pages	salla.com/blog	1072	0	1072	
 salla	pages	api.salla.dev/admin	722	0	722	
@@ -1516,6 +1551,53 @@ salla	runs	manual	1	0	1
 salla	runs	other	1	0	1	
 salla	runs	receiver	1	0	1	
 salla	runs	session	142	2	140	
+salla	ledger	app-scope: listed	24			the repository's own count, index/ledger
+salla	ledger	dashboard-app: not-reached	75			the repository's own count, index/ledger
+salla	ledger	dashboard-app: served	177			the repository's own count, index/ledger
+salla	ledger	docs-operation: called-by-dashboard	95			the repository's own count, index/ledger
+salla	ledger	docs-operation: documented	190			the repository's own count, index/ledger
+salla	ledger	feature: no-nav-entry	1500			the repository's own count, index/ledger
+salla	ledger	feature: reached	213			the repository's own count, index/ledger
+salla	ledger	journey-unit: journeyed	60			the repository's own count, index/ledger
+salla	ledger	journey-unit: not-an-address	2			the repository's own count, index/ledger
+salla	ledger	journey-unit: swept	2			the repository's own count, index/ledger
+salla	ledger	nav-page: journeyed	97			the repository's own count, index/ledger
+salla	ledger	nav-page: reached-not-rendered	3			the repository's own count, index/ledger
+salla	ledger	nav-page: swept	365			the repository's own count, index/ledger
+salla	ledger	portal-app: not-reached	6			the repository's own count, index/ledger
+salla	ledger	portal-app: served	10			the repository's own count, index/ledger
+salla	ledger	report: journeyed	33			the repository's own count, index/ledger
+salla	ledger	report: not-reached	34			the repository's own count, index/ledger
+salla	ledger	report: swept	35			the repository's own count, index/ledger
+salla	ledger	settings-field: not-reached	3			the repository's own count, index/ledger
+salla	ledger	settings-field: saved	63			the repository's own count, index/ledger
+salla	ledger	settings-field: shown	231			the repository's own count, index/ledger
+salla	ledger	sitemap-children:community-sitemaps: listed	68			the repository's own count, index/ledger
+salla	ledger	sitemap-children:mahally-sitemaps: listed	596			the repository's own count, index/ledger
+salla	ledger	sitemap:apps-sitemap/sitemap-xml: attempted-not-found	6			the repository's own count, index/ledger
+salla	ledger	sitemap:apps-sitemap/sitemap-xml: captured	134			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-ar-ae-xml: attempted-not-found	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-ar-ae-xml: attempted-redirect	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-ar-ae-xml: captured	521			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-ar-sa-xml: attempted-not-found	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-ar-sa-xml: captured	522			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-ae-xml: attempted-not-found	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-ae-xml: attempted-redirect	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-ae-xml: captured	521			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-sa-xml: attempted-not-found	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-sa-xml: attempted-redirect	1			the repository's own count, index/ledger
+salla	ledger	sitemap:com-sitemaps/sitemap-en-sa-xml: captured	519			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-ar-0: captured	500			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-ar-1: captured	500			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-ar-2: captured	500			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-ar-3: captured	169			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-en-0: captured	500			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-en-1: captured	500			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/articles-en-2: captured	281			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/pages: captured	8			the repository's own count, index/ledger
+salla	ledger	sitemap:help-sitemaps/taxonomy: captured	702			the repository's own count, index/ledger
+salla	ledger	webhook-event: delivered	7			the repository's own count, index/ledger
+salla	ledger	webhook-event: listed	72			the repository's own count, index/ledger
 woocommerce	pages	woocommerce.com/document	107	79	28	
 woocommerce	pages	public-api.wordpress.com/rest	11	0	11	
 woocommerce	pages	developer.woocommerce.com/docs	6	3	3	
@@ -1818,6 +1900,9 @@ zid	structure	plans-offered	1	0	1	items 0; items cited 0; added since read 0; re
 zid	structure	store-feature-flags	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-28; status held as an answer; The store's feature flags (must_use_markets_pricing, has_new_gifting, customer_wallets, ...)
 zid	runs	browser	16	2	14	
 zid	runs	fetch	4	0	4	
+zid	ledger	dashboard-routes: not opened	107			the repository's own count, index/ledger
+zid	ledger	dashboard-routes: opened	267			the repository's own count, index/ledger
+zid	ledger	dashboard-routes: redirected	63			the repository's own count, index/ledger
 bigcommerce	pages	support.bigcommerce.com/s	80	8	72	
 bigcommerce	pages	bigcommerce.com/_next	72	0	72	
 bigcommerce	pages	docs.bigcommerce.com/developer	149	122	27	

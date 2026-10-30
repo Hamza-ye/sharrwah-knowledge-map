@@ -7,7 +7,8 @@
 #   pages       every address held readable (fetch archives in git, browser steps' page text, saved answers,
 #               structures' sources, this repository's capture runs), by host and section, against the addresses
 #               what the model reads cites;
-#   runs        every run the repository's index/runs.tsv lists, by kind, against the runs what the model reads cites.
+#   runs        every run the repository's index/runs.tsv lists, by kind, against the runs what the model reads cites;
+#   ledger      the repository's own coverage ledger: each denominator the platform lists, by status (index/ledger).
 #
 # Usage: python3 -I method/held_vs_read.py [--out studies/class-model/held-vs-read.tsv] [--platform P] [--detail]
 #   Writes one row per platform, kind and group (held, read, unread), and prints the totals. --detail prints each
@@ -192,6 +193,24 @@ def structures(platform, srcs):
     return out
 
 
+def ledgers(platform):
+    """The repository's own coverage ledger: each denominator (what the platform lists as existing: sitemaps, admin
+    routes per store, mutations, journey units, features, settings) by status, as index/ledger-summary.tsv counts it;
+    other-product-class's Zid ledger by its rows' status."""
+    repo, root, sub = REPOS[platform]
+    out = collections.Counter()
+    summ = os.path.join(root, sub, "index", "ledger-summary.tsv")
+    if os.path.exists(summ):
+        for l in open(summ, encoding="utf-8"):
+            f = l.rstrip("\n").split("\t")
+            if len(f) == 4 and f[3].isdigit():
+                out[(f[0], f[2])] += int(f[3])
+    for led in sorted(glob.glob(os.path.join(root, sub, "index", "ledger", "*.tsv"))) if sub else []:
+        for r in rows(led):
+            out[(os.path.basename(led)[:-4], r.get("status", "?"))] += 1
+    return out
+
+
 def runs(platform, srcs):
     repo, root, sub = REPOS[platform]
     R = rows(os.path.join(root, sub, "index", "runs.tsv")) if os.path.exists(os.path.join(root, sub, "index", "runs.tsv")) else []
@@ -259,6 +278,11 @@ def main():
         print("   runs by kind (held, read): " + "; ".join(f"{k} {h}/{r}" for k, (h, r) in sorted(rk.items())))
         for k, (h, r) in sorted(rk.items()):
             lines.append([p, "runs", k, h, r, h - r, ""])
+        lg = ledgers(p)
+        dens = sorted({d for d, _ in lg})
+        print(f"   the repository's ledger: {len(dens)} denominators" + ("" if dens else " (none kept)"))
+        for (d, st), n in sorted(lg.items()):
+            lines.append([p, "ledger", f"{d}: {st}", n, "", "", "the repository's own count, index/ledger"])
     if not a.platform:
         with open(a.out, "w", encoding="utf-8") as f:
             f.write("\t".join(["platform", "kind", "group", "held", "read", "unread", "note"]) + "\n")

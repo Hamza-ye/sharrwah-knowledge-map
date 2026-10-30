@@ -1,5 +1,7 @@
 # Brief: the evidence map, how the held evidence is organized and how far it reaches (Stage 4A)
 
+**Withdrawn before it ran** (the coordinator, 30 October). The repositories' own guides and ledgers already describe their evidence, so a document per surface would restate them. The map is a single page instead, `studies/class-model/evidence-map.md`, with the counts in `held-vs-read.tsv`. Its inspection was stopped before it reported. This file stays as the record.
+
 **What this is.** The work reads five reference platforms through what the evidence repositories hold:
 - observed-sh, for Shopify;
 - observed-sa, for Salla;
