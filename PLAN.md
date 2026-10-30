@@ -488,6 +488,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - `high`: Stage 1's step 2b, labelling states.
   - `medium`: reading and recording evidence (phase A, A2 and similar), where the checker verifies every quote. A part whose check or review shows gaps is re-run at `high`.
   - `low`: one-off mechanical questions.
+  - *Replaced in part on 30 October 2026 by the founder's decision on effort* (`founder-decisions.tsv`, 30 October, "Method (standing)"): no agent reads evidence, reviews or judges at `medium` or `low`; `high`, `xhigh` or `max`, with a task type moved to `xhigh` or `max` where its results show `high` or `xhigh` missing important details.
 - **13 October 2026,** claims of absence, after the founder found held Salla articles on settlement in Kuwait and the UAE that phase A and A2 had recorded as missing:
   - A new pilot step, A3, has an agent that made none of the claims audit every gap and absence.
   - A "searched, not found" must show the corpus search behind it: `method/corpus_search.py`, run in every language the platform uses, and by each country, plan and arrangement it names.
