@@ -303,7 +303,6 @@ CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0839	Zid an intermediary, not a
 CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0841	each shipping service under its carrier's terms
 CM-SHP-002	zid	outside	ZD-C-060/boundary/ZD-S-0843	the approved carrier measures the shipment's weight
 CM-SHP-002	zid	shows	ZD-C-060/decides/ZD-S-0837	plan line Zid Logistics: One Contract for 35 Carriers; core in CM-SHP-015
-CM-SHP-002	zid	shows	ZD-I-0416	Zid Ship's terms and conditions
 CM-SHP-009	zid	core	ZD-I-0496	staff permission manage.zidship.orders, Manage shipping orders
 CM-SHP-009	zid	core	ZD-I-0270	plan line Export Order Fulfillment List
 CM-SHP-009	zid	shows	ZD-C-080/boundary/ZD-S-1011	order set to ready, linked carriers told; cited in CM-ORD-003

@@ -303,3 +303,107 @@ The other 33 flags are batch 1's and batch 2's rows, which they answered in thei
 - **ZD-C-018,** the wallet deduction from Zid Pay, is moved to A and landed in CM-PLN-006, Zid's merchant wallet, in A-zid, where its statements are now cited; scope.tsv gives it A, naming C under `also`. CM-PAY-023's reading says so.
 - **ZD-S-0702** (Mazeed's financial dues, reached at Dashboard > Sales platforms > Mazeed) is `core` in C's CM-PAY-005 and in E's CM-CHN-002, and neither cell rests on it alone: the merge's counted-twice flag goes to the final review with the other such flags.
 - **The readings of CM-PAY-002, CM-PAY-005, CM-PAY-006 and CM-ORD-008** don't yet name batch 3's evidence. The coordinator brings them up to date after batch 4.
+
+## Batch 4: SHP and RET, and the whole part's check
+
+**Concerns:** ZD-C-060, ZD-C-061, ZD-C-062, ZD-C-063, ZD-C-081. **Areas:** SHP (22 capabilities), RET (4). **What it holds:** no new capability, 5 landings (all into existing capabilities), 26 cells (Zid's, one per capability of SHP and RET: 12 `statements`, 14 `none-held`), 75 evidence rows, 2 qualities, 2 slot fillers, no ruling (Zid has no Q1 matches or unclear candidates). Each row is a reading unless it quotes a statement.
+
+### How I landed them, and why
+
+- **ZD-C-060 Zid Logistics and direct shipping → CM-SHP-002, definition, strained.** الشحن المباشر is a tool in the merchant's dashboard giving access to many carriers, with fees and settlements from the merchant's wallet (ZD-S-0835), and its label prices (أسعار بوالص الشحن) differ with the Zid plan (ZD-S-0838): Salla's labels paid through the platform without contracting with the carrier (SA-S-5059), from the wallet (SA-S-0089). Its plan line "One Contract for 35 Carriers" (ZD-S-0837) is about carriers under the platform's contract, so it is `core` in CM-SHP-015 and `shows` in CM-SHP-002, as Salla's SA-S-2019 and SA-S-2020 are cited in both. Strained: ZD-S-0842 is `core` in CM-TAX-008 (batch 3), the TAX tree; I cite it as `shows` in CM-SHP-020.
+- **ZD-C-061 Shipping apps and third-party logistics companies → CM-SHP-015, terms, strained.** Shipping apps (ZD-S-0846) and the custom connection under the merchant's own carrier contract (ZD-S-0849) are Salla's Shipping App type (SA-S-1185) and its own-contract connection (SA-S-5063). Q1 split it from ZD-C-060 by channel; CM-SHP-015 holds both channels, as it holds SA-C-139 and SA-C-141. The app type "Shipping and fulfillment company" (ZD-I-0542) and the public-apps rule (ZD-S-0847) are in CM-SHP-011, the same tree. Strained: ZD-S-0852 (Add Order Comment) is `core` in CM-ORD-013 (batch 1). Its words don't name shipping, so it isn't cited in SHP.
+- **ZD-C-062 Store shipping methods → CM-SHP-001, terms, clean.** إعدادات الشحن and Merchant APIs > Shipping are Salla's Shipping settings (SA-S-1868) and Shipping & delivery (SA-S-1692).
+- **ZD-C-063 Shipping and payment restrictions → CM-PAY-019, terms, strained.** قيود الدفع is Salla's term, and all four statements were already in CM-PAY-019 (batch 3). The page's route and plan line (ZD-S-0857, ZD-S-0858) also name shipping restrictions (قيود الشحن), so they are `core` in CM-SHP-001 too, each naming both things. ZD-S-0855 (shipping settings) shows the same restrictions per product or region. That puts the concern in the SHP tree as well, so it is strained. A reviewer could instead split the page's shipping side into CM-SHP-001.
+- **ZD-C-081 Reverse orders and returns → CM-RET-001, terms, clean.** الإرجاع الكامل والجزئي (ZD-S-0909) is Salla's plan line إدارة طلبات الاسترجاع الجزئي والكلي (SA-S-1998). The concern holds the return (Reverse Orders, the return label: CM-RET-003) and the refund's method (طرق الاسترداد, ZD-S-1014: CM-RET-002), so it lands in their parent, as Salla's SA-C-045 does.
+
+### Zid Ship, and services of Zid's company
+
+- **Zid Ship / Zid Logistics is placed `core`.** It sits in Zid's dashboard (ZD-S-0835, the route ZD-S-0836), Zid's plans (ZD-S-0838, ZD-S-0365, ZD-S-0380, the plan lines ZD-I-0188 and others) and Zid's staff permissions (manage.zidship.settings, ZD-S-0468; ZD-I-0496, ZD-I-0504, ZD-I-0522). No statement names Zid's company as the maker or provider of a separate product. ZD-S-0839 names زد as "وسيطاً تقنياً ومسهّلاً لخدمات الشحن" and not a carrier. I read that as Zid's role in its own platform's shipping, not as a maker statement for a separate service, and the brand in "Zid Ship" doesn't name a maker. **Gap:** a maker statement for Zid Ship or Zid Logistics, if one exists, would turn CM-SHP-002's `core` into `own-service`.
+- **CM-RET-002's `own-service`** on ZD-S-0541 (a refund needs balance in the merchant's Zid Pay account) follows batch 2's placement of the same statement in CM-PAY-020. It rests on Zid Pay's maker statement ZD-S-0533 (CM-PAY-002).
+
+### Joins on role
+
+None. ZD-C-060's join is by definition, citing both sides (above).
+
+### Homonyms and false hits kept apart
+
+- **شحن:** shipping, but also topping up a balance: the wallet (ZD-S-0652), Zid Agent's wallet (ZD-S-0713, ZD-S-0715, whose "استرجاع مبلغ الشحن" is a top-up refund, not a shipping refund) and an app's balance (ZD-S-1061). None is cited in SHP.
+- **استرداد:** a refund (CM-RET-002), but also cart recovery (ZD-I-0283, ZD-I-0454) and a plan refund (ZD-S-0718, domain A).
+- **سحب / withdrawal:** a wallet's withdrawals (domain A) and Inventory Withdrawal Priority (CM-INV-009, domain B), not the buyer's withdrawal from an order (CM-RET-004).
+- **أولوية / priority:** Inventory Withdrawal Priority (domain B) and the carriers' priority in the shipping settings (ZD-S-0855) aren't order routing (CM-SHP-005).
+- **قيود:** the merchant's shipping and payment restrictions, not app functions (CM-SHP-013, CM-SHP-014).
+- **تعويض:** compensation claimed from a carrier (CM-SHP-022), not shipping insurance (CM-SHP-003).
+- **استلام:** cash on delivery and the carrier's pickup from the merchant, not the buyer's local pickup (CM-SHP-006 to CM-SHP-008). مندوب جاهز (ZD-S-1066) is the marketplace Jahez's courier (domain E), not the store's own delivery.
+- **rates:** Zid Ship's label rates (CM-SHP-002), not rates a carrier calculates at checkout (CM-SHP-004).
+
+### Strained fits
+
+ZD-C-060 (TAX tree, ZD-S-0842), ZD-C-061 (ORD tree, ZD-S-0852) and ZD-C-063 (SHP tree, ZD-S-0857 and ZD-S-0858), as above.
+
+**ZD-C-002 stays clean.** Batch 2 expected ZD-C-002 to become strained if its statements were cited in CM-RET-002. They are cited there (ZD-S-0538, ZD-S-0539, ZD-S-0540, ZD-S-0541, ZD-S-0055, ZD-S-0085, ZD-I-0521), but CM-PAY-020's parent is CM-ORD-001, and CM-RET-002 sits under CM-RET-001, which is also under CM-ORD-001. It is one tree, and the checker raises no flag.
+
+**ZD-C-015 is left clean.** I don't cite its statements in SHP, because cash-on-delivery collection is CM-PAY-029's. I don't cite its entry الشروط والأحكام › زد شب (ZD-I-0416) either: it is only a section's title, and ZD-S-0839 and ZD-S-0841, from the same terms page (zid.sa/ar/legal/terms-conditions), cover it. An entry is cited only where no statement covers it.
+
+### Statements of other domains cited
+
+- ZD-S-0745 (ZD-C-033, E, naming C under `also`): `shows` in CM-SHP-001.
+- ZD-S-0920 (ZD-C-085, B, not naming C): `outside` in CM-SHP-011. It is the only statement that names who stores and prepares the merchant's goods (خدمات التعهيد), and it is `outside` in B's CM-INV-005 too.
+- ZD-S-0470 (ZD-C-115, F, not naming C): `shows` in CM-SHP-021. It is Zid's only statement on packaging, `core` in F's CM-PTN-005. I made it `shows` because the permission is among Zid Growth's partner services and no statement says who packs.
+- ZD-I-0447 (ZD-C-070, F, which names D and E, not C): `extension-point` in CM-RET-003. It is the App Market category المرتجعات والاستبدال, the only Zid evidence of exchanges and of returns apps, cited as batch 3 cited ZD-I-0441 in TAX.
+- Left uncited: ZD-S-0780 (ZD-C-039, E, its return and exchange policy page: the store's page, CNT's), ZD-I-0524, ZD-I-0499 and ZD-I-0525 (Zid Growth's delivery, order-fulfilment and self-storage services, F's CM-PTN-005), and ZD-S-1024 (B's carrier visiting the chosen warehouse, CM-INV-005).
+
+### Gaps
+
+- **ZD-S-0712** (ZD-C-024's reason): its words balance the parties' rights and urge keeping stock up to date. They don't mention refunds. Q1's note on refund costs is inference and doesn't count, so it isn't cited in RET.
+- **Shipping zones:** Zid's statements name shipping methods and restrictions by region (ZD-S-0855), not zones by that name.
+- **Tracking** (CM-SHP-017): only a help-centre title (ZD-I-0160). No statement on tracking information, its API or what the buyer sees.
+- **Packaging** (CM-SHP-021): no statement on who provides it, or through which section.
+- **The maker of Zid Ship** (above).
+
+### Qualities and slot fillers
+
+- **Qualities:**
+  - CM-RET-003: the boxes returnable from an order (ZD-S-1013);
+  - CM-RET-002: the refund window (ZD-S-0539), already a quality of CM-PAY-020.
+  
+  I recorded no fees as qualities, though batches 2 and 3 did: Zid Ship's rates by plan, 1 SAR per label on a custom carrier connection (ZD-S-0849), 0.70 SAR per shipping app transaction (ZD-S-0854) and 0.30 SAR for apps integrated with ZidShip (ZD-S-0844). The brief names limits, certifications, uptime and data location. The coordinator may want them for consistency.
+- **Slot fillers:** SMSA (سمسا) and Aramex (أرامكس), the carriers that support returns, by branch drop-off (ZD-S-1015), on CM-RET-003. No other cell's statement names a carrier.
+
+### Problems on earlier batches' rows, for the coordinator
+
+- **ZD-C-080's landing** (batch 1, CM-ORD-001, `clean`) should now be `strained`. ZD-S-1011 (linked carriers told an order is ready) and ZD-I-0270 (Export Order Fulfillment List) are cited in CM-SHP-009, the SHP tree. The checker flags it (landings.tsv line 6, S1).
+- **CM-ORD-009** (batch 1, `none-held`) left Zid's shipping papers to SHP. I cite Batch Print Shipping Papers / طباعة دفعة لأوراق الشحن (ZD-I-0220) as a plan line in CM-SHP-002, reading أوراق الشحن as the labels. If a reviewer reads them as printed order documents, they are also CM-ORD-009's. CM-ORD-009's parent is CM-SHP-001, the same tree.
+- **CM-PAY-020** (batch 2) has ZD-S-0538, ZD-S-0540 and ZD-I-0521 as `core`. Their words are about refunding (استرداد المبلغ الى العميل; refund.zidpay.transactions), so they are also `core` in CM-RET-002. That follows Salla, whose refund endpoint SA-S-0180 is `core` in both. By the rule that a statement counted elsewhere is `shows`, one of the two could become `shows`. Both cells are under CM-ORD-001.
+- **CM-PAY-019's reading** (batch 3) ends "a later batch's, whose shipping side is SHP's". ZD-C-063 is now landed there, and its shipping side is cited in CM-SHP-001.
+- **CM-TAX-008** (batch 3): ZD-S-0842 stays `core` there. CM-SHP-020 cites it as `shows`.
+
+### The back-fill after Zid
+
+The part added one capability: **CM-ORD-015** (Order payment status, batch 1). It needs cells for Shopify, Salla and WooCommerce. Batch 1's note names the leads: Salla's order.payment.updated (SA-S-1583) and Shopify's orders/paid (SH-I-0535), both cited in CM-ORD-001. Batches 2 to 4 added none.
+
+### What the checker flagged, and answers
+
+The batch check and the whole-part check each printed **0 problems and 63 flags for the reviewer**. The batch option prints the same lines. My flags:
+- **ZD-S-0920, ZD-S-0470 and ZD-I-0447,** statements of concerns in other domains that don't name C: answered above, under "Statements of other domains cited".
+- **`own-service` on ZD-S-0541** (CM-RET-002): it rests on Zid Pay's maker statement ZD-S-0533, as in CM-PAY-020.
+- **14 `none-held` cells with matching statements** (CM-SHP-003 to CM-SHP-008, CM-SHP-010, CM-SHP-012 to CM-SHP-014, CM-SHP-016, CM-SHP-018, CM-SHP-019, CM-RET-004): each reading names its hits and says why they aren't the capability. The CM-SHP-006 to CM-SHP-008 counts are large because استلام matches cash on delivery.
+- **Statements cited in two trees:**
+  - ZD-S-0842: CM-TAX-008 and CM-SHP-020 (ZD-C-060, strained);
+  - ZD-S-0857 and ZD-S-0858: CM-PAY-019 and CM-SHP-001 (ZD-C-063, strained);
+  - ZD-S-1011: CM-ORD-003 and CM-SHP-009 (ZD-C-080, batch 1's landing, above).
+- **ZD-C-080 clean with statements in another tree:** for the coordinator (above).
+
+The other flags are on batches 1 to 3's rows, which they answered in their own sections:
+- the `own-service` questions on Zid Pay;
+- ZD-S-0775, ZD-S-0978, ZD-I-0440, ZD-I-0441 and ZD-I-0443 from other domains;
+- the `none-held` cells of CHK, ORD, PAY and TAX;
+- ZD-S-0362 and ZD-S-0571 cited in two trees;
+- CM-CHK-001's `core` resting on boundary statements alone.
+
+### The coordinator, after batch 4
+
+- **The part is complete:** 36 landings and 91 Zid cells, one capability added (CM-ORD-015), and the whole-part check prints no problem.
+- **Readings brought up to date,** each addition marked: CM-PAY-002 (ZD-C-037's prohibited activities), CM-PAY-005 (ZD-C-024's Mazeed collections, whose statements differ on the schedule), CM-PAY-006, CM-PAY-019 and CM-ORD-008 (ZD-C-054's credit notes, with its terms List Order Credit Notes and إشعارات الدائن).
+- **ZD-C-080's landing in CM-ORD-001 is strained:** batch 4 cites its ZD-S-1011 and ZD-I-0270 in CM-SHP-009, another tree (the dry run's S1).
+- **Left as batch 4 placed them,** for the final review: ZD-I-0220 (Batch Print Shipping Papers) in CM-SHP-002, which CM-ORD-009's none-held cell may want; and ZD-S-0538, ZD-S-0540 and ZD-I-0521, `core` in both CM-PAY-020 and CM-RET-002, as Salla's refund endpoint is, since each names a refund on the order's payment. Fees stay out of the qualities, which the brief keeps for limits, certifications, uptimes and data locations.
+- **The back-fill after Zid** writes CM-ORD-015's Shopify, Salla and WooCommerce cells (C-backfill-zid).
