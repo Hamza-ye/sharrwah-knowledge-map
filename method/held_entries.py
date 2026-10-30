@@ -882,6 +882,8 @@ def cmd_check(a):
     order = {i: n for n, i in enumerate(ids)}
     caps = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "capabilities.tsv"))}
     cap_names = {fold(r["capability"].split(":")[0].split("(")[0]) for r in caps.values()} | {fold(c) for c in caps}
+    new_tsv = os.path.join(MODEL, "held", "new.tsv")
+    decided = {(r["platform"], fold(r["name"])) for r in rows(new_tsv) if r.get("decision")} if os.path.exists(new_tsv) else set()
     cells = {r["cap_id"]: r for r in rows(os.path.join(MODEL, "merged", "cells.tsv")) if r["platform"] == a.platform}
     changes = collections.defaultdict(list)
     path = os.path.join(HELD, a.platform, f"placements-{a.batch}.tsv")
@@ -931,7 +933,8 @@ def cmd_check(a):
                 problems.append(f"{w}: a new capability is named in cap_id as new:<its name, in the platform's words>")
             else:
                 nm = m.group(1)
-                if fold(nm) in cap_names or re.match(r"^CM-[A-Z]{3}-\d{3}$", nm):
+                # a new thing the coordinator has decided (held/new.tsv) may have become the capability of that name
+                if (fold(nm) in cap_names or re.match(r"^CM-[A-Z]{3}-\d{3}$", nm)) and (a.platform, fold(nm)) not in decided:
                     problems.append(f"{w}: new:{nm} is an existing capability's name or id: place it there")
                 new_names[fold(nm)].append(nm)
             if not ss or any(x not in SUPPORTS for x in ss):
