@@ -1,0 +1,653 @@
+platform	concern_id	domain	also	reason
+shopify	SH-C-001	A		Account; Store Owner; where Your store: the merchant's account (ACC); M-002
+shopify	SH-C-002	A		Shopify Contracting Party for the platform services: the platform's legal entity facing the merchant (ACC); M-001
+shopify	SH-C-003	A		Organization; OrganizationSettings: the organization holding stores (ACC)
+shopify	SH-C-004	A	C	Business entity; where settings/general and organization-details: the entity a store operates as (ACC)
+shopify	SH-C-005	A	C;E	Selling with multiple entities; where settings/organization-details and payments:settings:business-entity: business entities per store, limited to Shopify Payments (ACC)
+shopify	SH-C-006	A		I'm located in: the merchant's country at sign-up (ONB)
+shopify	SH-C-007	A		Security; Sign in with passkey; two-step authentication: account sign-in security (TRU)
+shopify	SH-C-008	A		Trust; identity-verification; Profile Assessment: verifying the people behind an account (TRU)
+shopify	SH-C-009	A		Users; Staff Accounts; where user_management (STF); M-004
+shopify	SH-C-010	A		Roles; permissions; where roles (STF); M-004
+shopify	SH-C-011	A		Collaborator access; where settings:organizations:accounts:collaborator (STF)
+shopify	SH-C-012	A		MerchantAuditLog; where merchant-audit-log:list (TRU); M-005
+shopify	SH-C-013	A		General; Store properties; where general: store details and settings (ACC); M-006
+shopify	SH-C-014	A		store-unavailable; inactive-account; pending-termination; Term and Termination: store lifecycle states (ONB)
+shopify	SH-C-015	A		Plan; Basic; Grow; Plus; where subscription:pick_period (PLN); M-007
+shopify	SH-C-016	A		Billing; Subscription charges; where settings/billing: Shopify's bills to the merchant (PLN); M-008
+shopify	SH-C-017	A	C	Taxes on Shopify's own charges; where settings/billing: tax on the platform's bill, not the merchant's sales tax (PLN); M-009
+shopify	SH-C-018	A	C	Third-party transaction fees; where settings/billing: a fee on the platform's bill for using other payment providers (PLN)
+shopify	SH-C-019	F	A	App fees; Shopify Billing Resource; app_subscriptions/update: the app platform's billing of app charges (APP); M-010
+shopify	SH-C-020	B		Products; products/create; where products, Product (CAT); M-011
+shopify	SH-C-021	B		Collections; collections/create; where collections:root (CAT)
+shopify	SH-C-022	B		Inventory; inventory_levels/update; where products:inventory (INV); M-012
+shopify	SH-C-023	B		Transfers; Purchase orders; InventoryTransfer; where Transfers (INV)
+shopify	SH-C-024	B	C;E	Locations; Inventory locations; where locations: where stock is held (INV)
+shopify	SH-C-025	D	B;C	Gift cards; Sell gift cards; where gift-card:root (LOY); M-013, with Salla's customer wallet and gift cards
+shopify	SH-C-026	D	C	Store credit; read_store_credit_accounts; where customer-store-credit (LOY)
+shopify	SH-C-027	E		Files; read_files; where content:parent (CNT)
+shopify	SH-C-028	E	B	Metafields and metaobjects; where content:parent, metafields (CNT)
+shopify	SH-C-029	E		Online Store; Themes and templates; Theme Store; where Liquid (SFR); M-014
+shopify	SH-C-030	E		Blog posts; Pages; where content:parent (CNT); M-015
+shopify	SH-C-031	E		Menus; read_online_store_navigation; where content:parent (CNT); M-015
+shopify	SH-C-032	E		Languages; Localizations; Translate your storefront; where languages (MKS); M-016
+shopify	SH-C-033	E	A	Domains; Custom domain name; where domains: the store's web address (SFR); M-017
+shopify	SH-C-034	E	A;C	Store policies; read_legal_policies; where legal: the store's own policy pages (CNT)
+shopify	SH-C-035	E	B	Search; Filters; Search & Discovery: storefront search (SFR)
+shopify	SH-C-036	E	G	Unlimited web hosting; Free SSL certificate: hosting the online store (SFR)
+shopify	SH-C-037	D	B;E	Catalogs; Shopify B2B; where catalog:parent: market and B2B product and price catalogs (B2B)
+shopify	SH-C-038	B		Combined listings: products merchandised together (CAT)
+shopify	SH-C-039	D		Customers; customers/create; where customer (CUS); M-018
+shopify	SH-C-040	D		Segments; segments/create; where customer-segments (CUS); M-019
+shopify	SH-C-041	D		Customer accounts; Customer Account API; where customer_accounts (CUS); M-018
+shopify	SH-C-042	D	A	Customer authentication; Third-party identity providers; Multipass: buyer sign-in (CUS)
+shopify	SH-C-043	D		customers_marketing_consent/update; Marketing double opt-in: buyers' marketing consent (CUS)
+shopify	SH-C-044	D		B2B; Companies; companies/create; where companies:root (B2B); M-020
+shopify	SH-C-045	C	D	payment_terms/create; Set payment terms: when an order is to be paid (PAY), used in B2B
+shopify	SH-C-046	C		Cart; carts/create; where Cart (CHK); M-021
+shopify	SH-C-047	C		Checkout; checkouts/create; where checkout (CHK); M-021
+shopify	SH-C-048	C	E	Checkout branding; Checkout and accounts configurations; where checkout-accounts-editor (CHK)
+shopify	SH-C-049	C	F	Checkout UI; purchase.checkout.block.render: extension targets in checkout; the channel doesn't set the domain (CHK); M-022
+shopify	SH-C-050	C	D	Abandoned checkouts; where abandonedCheckouts:parent (CHK)
+shopify	SH-C-051	A	C	Bot protection; CommerceProtection; where settings/bot-protection (TRU)
+shopify	SH-C-052	C	F	Cart and Checkout Validation (Shopify Function): validating cart and checkout (CHK)
+shopify	SH-C-053	C	B;F	Cart Transform (Shopify Function): changing cart lines (CHK)
+shopify	SH-C-054	C		Orders; orders/create; where orders (ORD); M-023
+shopify	SH-C-055	C		Drafts; draft_orders/create; where draftOrders (ORD)
+shopify	SH-C-056	C		orders/edited; Edit orders; where order:edit (ORD); M-023
+shopify	SH-C-057	C		refunds/create; Refund; where order:refund:create (RET); M-024
+shopify	SH-C-058	C		returns/request; Return reasons; where order:return:create (RET); M-024
+shopify	SH-C-059	C	A	orders/risk_assessment_changed; Built-in fraud analysis; Fraud apps: risk of an order (ORD)
+shopify	SH-C-060	C	B	Order Routing Location Rule; fulfillment_orders/order_routing_complete: which location fulfils (SHP)
+shopify	SH-C-061	C		Admin print action; where packing-slips, document-template-editor (ORD)
+shopify	SH-C-062	C		Payments; Payment providers; where settings/payments (PAY); M-025
+shopify	SH-C-063	C		Shopify Payments; where payments, shopify-payments (PAY); M-026
+shopify	SH-C-064	C		Payment Processor; Payment Processing (PAY); M-037
+shopify	SH-C-065	C		Payment Processor Account; Financial Services Provider; Payout Account: custody of funds (PAY)
+shopify	SH-C-066	C	A	Payment Facilitator; Acquirer: payment facilitation (PAY)
+shopify	SH-C-067	C	A	Regulated Payment Services; Shopify Payment Activities Inc. (PAY)
+shopify	SH-C-068	C	A	Verification and Underwriting; read_financial_kyc_information: KYC for Shopify Payments (PAY); M-003
+shopify	SH-C-069	C		Payouts; read_shopify_payments_payouts; where payouts (PAY); M-027
+shopify	SH-C-070	C		Reserves; Reserve Account; where payments/payouts (PAY); M-028
+shopify	SH-C-071	C		Online standard card rates; where shopify-payments:fees (PAY); M-029
+shopify	SH-C-072	C		disputes/create; Disputes; where finance:risk:disputes (PAY); M-030
+shopify	SH-C-073	C		Shopify Protect; where shopify-protect, seller-protection: chargeback protection (PAY)
+shopify	SH-C-074	C		Shop Pay; Shop Pay Wallet API; where payments:settings:shop-pay (PAY)
+shopify	SH-C-075	C		Shop Pay Installments; where payments:settings:shop-pay-installments (PAY); M-031
+shopify	SH-C-076	C	F	Payments Apps API; Payment apps; where payments:settings:third-party-providers: payment providers through apps; the channel doesn't set the domain (PAY); M-025
+shopify	SH-C-077	C		PayPal Express Checkout; where payments:settings:paypal-express-checkout (PAY); M-032
+shopify	SH-C-078	C		Apple Pay; Google Pay; where accelerated-checkouts (PAY)
+shopify	SH-C-079	C		Manual payment methods; Mark as paid; where payments:settings:manual-payment-methods (PAY); M-033
+shopify	SH-C-080	C		Accept local payment methods; where shopify-payments:local-payment-methods (PAY)
+shopify	SH-C-081	C		USDC rates; Cryptocurrency Payment Protocol; where settings/payments (PAY)
+shopify	SH-C-082	D	C;E	Shop Cash: a Shopify-funded rewards program for Shop app customers (LOY)
+shopify	SH-C-083	C	F	Payment Customization (Shopify Function); where payments:settings:payment-customizations (PAY)
+shopify	SH-C-084	C		order_transactions/create; Capture payments (PAY); M-034
+shopify	SH-C-085	C	D	customer_payment_methods/create; read_payment_mandate: saved payment methods (PAY); M-035
+shopify	SH-C-086	C	E	In-person card rates; Tap to Pay; card_present_payments: card payments in person (PAY); M-036
+shopify	SH-C-087	E	C	read_cash_tracking; CashDrawer: cash at the point of sale (POS)
+shopify	SH-C-088	C		Shopify Balance; Banking; where balance, Banking: the merchant's money account (PAY)
+shopify	SH-C-089	C		Cards; Shopify Balance Visa Commercial cards; where cards:section (PAY)
+shopify	SH-C-090	C		Shopify Credit; where credit:list (PAY)
+shopify	SH-C-091	C		Capital - US loan; where capital, finance: financing for merchants (PAY); M-038
+shopify	SH-C-092	C		Capital - UK Merchant Cash Advance; where capital (PAY); M-038
+shopify	SH-C-093	C		Capital - Canada Merchant Cash Advance; where capital (PAY); M-038
+shopify	SH-C-094	C		Capital - Australia; where capital (PAY); M-038
+shopify	SH-C-095	C		Shopify Capital loans France; where capital (PAY); M-038
+shopify	SH-C-096	C		Shopify Capital loans Germany; where capital (PAY); M-038
+shopify	SH-C-097	C		Shopify Capital merchant cash advances; where capital (PAY); M-038
+shopify	SH-C-098	C		Shopify Bill Pay: paying the merchant's bills (PAY)
+shopify	SH-C-099	C		VIEW_TAX_DOCUMENTS; 1099-MISC; where finance:tax-forms (TAX); M-039
+shopify	SH-C-100	C		Taxes and duties; Automated sales tax calculations; where taxes (TAX); M-040
+shopify	SH-C-101	C		Tax liability tracking; where settings/taxes, tax-settings:ioss-registration (TAX)
+shopify	SH-C-102	C		VAT validation, exemptions, and invoicing; where tax-settings:shared:vat-number-validation (TAX); M-041
+shopify	SH-C-103	C	F	Tax calculation; tax_services/create; Tax apps; where tax-settings:providers-manage (TAX)
+shopify	SH-C-104	C		Automated filing; where tax-filing (TAX)
+shopify	SH-C-105	C	E	Estimate and collect duties and taxes; where tax-settings:duties-and-taxes (TAX); M-042
+shopify	SH-C-106	E		Markets; markets/create; where markets (MKS); M-043
+shopify	SH-C-107	E	C	store currency (MKS); M-044
+shopify	SH-C-108	E	C	Show prices in local currencies; where markets (MKS); M-044
+shopify	SH-C-109	E	C	Currency conversions and exchange rates; where markets (MKS); M-044
+shopify	SH-C-110	E	C	Managed Markets; where market:managed (MKS)
+shopify	SH-C-111	E		Assign local domains; Geolocation apps (MKS); M-087
+shopify	SH-C-112	E	C;D	Rollouts; where rollouts: scheduled changes to the online store's theme, checkout, discounts and catalogs, documented under markets (MKS)
+shopify	SH-C-113	E		markets_backup_region/update: the market fallback region (MKS)
+shopify	SH-C-114	C		Shipping and delivery; profiles/create; where shipping (SHP); M-045
+shopify	SH-C-115	C	F	3rd-party calculated shipping rates; DeliveryCarrierService; Shipping rate apps (SHP)
+shopify	SH-C-116	C		Shipping labels; where shippingLabel:parent (SHP); M-047
+shopify	SH-C-117	C		Shipping insurance; where orders (SHP)
+shopify	SH-C-118	C		fulfillment_orders/split; fulfillments/create; where FulfillmentOrder (SHP); M-048
+shopify	SH-C-119	C	F	FulfillmentService; Third-party logistics (3PL) apps (SHP)
+shopify	SH-C-120	C		Shopify Fulfillment Network; Shopify Logistics (SHP)
+shopify	SH-C-121	C		Local pick up; Local delivery; where local-delivery:list, pickup-in-store:list (SHP); M-046
+shopify	SH-C-122	C	F	Delivery Customization (Shopify Function) (SHP)
+shopify	SH-C-123	C	F	Fulfillment Constraints (Shopify Function) (SHP)
+shopify	SH-C-124	C	F	Pickup point and local pickup delivery option generators (Shopify Functions); where pickup-point:list (SHP)
+shopify	SH-C-125	C		delivery_promise_settings/update; where shipping:list:shop-promise-examples (SHP); M-049
+shopify	SH-C-126	C		Tracking carriers; Order tracking apps: shipment tracking (SHP)
+shopify	SH-C-127	D		Discounts; discounts/create; where discounts:root (MKT)
+shopify	SH-C-128	D	F	Discount (Shopify Function); Discounts allocator: custom discount logic (MKT)
+shopify	SH-C-129	D		Growth; Campaigns; Marketing; where growth, marketing (MKT); M-051
+shopify	SH-C-130	D		Shopify Messaging; Create email campaigns; where email:create (MKT); M-052
+shopify	SH-C-131	D		Attribution; Order Attribution Config (MKT); M-053
+shopify	SH-C-132	D		Shopify Audiences: ads audiences (MKT)
+shopify	SH-C-133	D		Shop Campaigns: acquiring customers (MKT)
+shopify	SH-C-134	D		Shopify Collabs; Collabs commission: creator marketing (MKT)
+shopify	SH-C-135	E		Sales channels; read_publications; where sales_channels (CHN); M-054
+shopify	SH-C-136	E	D	Shop; Shop App; Shop Minis: Shopify's consumer app as a sales channel (CHN)
+shopify	SH-C-137	E	C	Marketplace Connect; read_marketplace_orders: marketplace order sync (CHN)
+shopify	SH-C-138	E	D	product_listings/add; where listings:root, mappings:root: publishing products to sales channels (CHN); placed apart from M-055, whose other concerns are pixels, feeds and storefront events (D)
+shopify	SH-C-139	E		Build headless storefronts; Storefront API; Hydrogen; where headless:parent_route (SFR); M-056
+shopify	SH-C-140	F	E	Sell in AI chats; Agentic; dev.ucp.shopping: agentic commerce (AIA)
+shopify	SH-C-141	E	B	Shopify Collective; documented under online-sales-channels: selling and sourcing between Shopify stores (CHN)
+shopify	SH-C-142	E		Point of Sale; Retail; POS Pro (POS); M-057
+shopify	SH-C-143	E		POS Equipment; where 9.3 POS Services (POS)
+shopify	SH-C-144	E	F	POS UI extensions; pos_action: extension targets in POS; the channel doesn't set the domain (POS)
+shopify	SH-C-145	D		Analytics; Reports; ShopifyQL; where analytics (ANL); M-058
+shopify	SH-C-146	D	E	Customer events; Web pixel; where customer_events: tracking buyer events for marketing and analytics (MKT); M-055
+shopify	SH-C-147	A	D	Shopify Network Intelligence; Enhanced Services; where settings/privacy (TRU)
+shopify	SH-C-148	A	D;E	Customer privacy; Cookie banner; Customer Privacy API; where privacy (TRU); M-059
+shopify	SH-C-149	A	D	Request data; Erase personal data (TRU); M-059
+shopify	SH-C-150	D		Notifications; Customer notifications; where notifications (NTF); M-063
+shopify	SH-C-151	F		Shopify Flow; Workflow Automation; Flow trigger (AUT)
+shopify	SH-C-152	F		Sidekick, AI assistant for commerce; where sidekick (AIA)
+shopify	SH-C-153	D		Shopify Inbox; Chat with customers (SUP); M-064
+shopify	SH-C-154	D	B	Reviews; Product review apps (SUP); M-065
+shopify	SH-C-155	A		24/7 support; Shopify Academy; Shopify Community: the platform's support to merchants (ONB); M-066
+shopify	SH-C-156	F		Apps; Apps and channels; where apps (APP); M-067
+shopify	SH-C-157	F		Shopify App Store; App distribution (APP); M-067
+shopify	SH-C-158	F		Access scopes; app/scopes_update (API); M-068
+shopify	SH-C-159	F		Shopify approval required; read_all_orders; where access-scopes (API)
+shopify	SH-C-160	F	A	protected customer data: app access to buyers' data (API)
+shopify	SH-C-161	F	A	customers/data_request; customers/redact; shop/redact: mandatory webhooks for apps (API)
+shopify	SH-C-162	F		Webhooks; webhook topics (API); M-069
+shopify	SH-C-163	F		Shopify Functions as such (APP); M-070
+shopify	SH-C-164	F		Admin action; Admin block; App home; Polaris: apps in the admin (APP)
+shopify	SH-C-165	D	F	Customer account UI; customer-account.order-status.block.render: extension targets in customer accounts; the channel doesn't set the domain (CUS)
+shopify	SH-C-166	E	F	Theme app extension; App embeds; write_app_proxy: apps in the online store theme; the channel doesn't set the domain (SFR)
+shopify	SH-C-167	F		App development; where apps:development_list: custom apps (APP)
+shopify	SH-C-168	F		Partner Terms of Service; Partner Dashboard; Shopify Partners (PTN); M-071
+shopify	SH-C-169	F		Partner payouts; Hyperwallet; where settings:organizations:partner-payouts (PTN); M-010
+shopify	SH-C-170	F		Expert services fees; where subscribe:book-shopify-expert-intro-call (PTN); M-072
+shopify	SH-C-171	F	G	Versioning; Limits; Bulk operations; API rate limits (API); M-073
+shopify	SH-C-172	A		Acceptable Use Policy; Report an issue with a merchant (TRU)
+shopify	SH-C-173	C	A	Prohibited and Restricted Businesses for Shopify Payments (PAY); M-085
+shopify	SH-C-174	A	C	Unsupported countries and regions; Sanctions (TRU); M-084
+shopify	SH-C-175	A	B;C	Consumer protection laws; GPSR; Product disclosures: the merchant's compliance (TRU); M-086
+shopify	SH-C-176	A		Intellectual Property; copyright policy (TRU)
+shopify	SH-C-177	A		Legal Notices; Digital Service Act; P2B complaint (TRU)
+shopify	SH-C-178	A	C	Submit a financial complaint (TRU)
+shopify	SH-C-179	A		guidelines for legal requests for information (TRU)
+shopify	SH-C-180	A	D	Data Processing Addendum; Data Controller; Data Processor (TRU); M-060
+shopify	SH-C-181	A	G	Data hosting locations; Binding Corporate Rules (TRU); M-061
+shopify	SH-C-182	A		Subprocessors (TRU)
+shopify	SH-C-183	A		retain store information for two years: store data after closure (TRU)
+shopify	SH-C-184	A	C	PCI DSS; Account Data: card data security (TRU); M-062
+shopify	SH-C-185	B	E	Dropshipping apps; Print on demand apps; Wholesale apps: sourcing products; the channel doesn't set the domain (CAT)
+shopify	SH-C-186	B	C	Subscription apps; selling_plan_groups/create; subscription_contracts/create (SEL); M-074
+shopify	SH-C-187	D		Customer loyalty apps; Wishlist apps; Donation apps (LOY); M-075
+shopify	SH-C-188	B	D	Upsell and bundle apps; Product bundle apps; Pre-order apps; where product_configuration: bundles and pre-orders as ways of selling (SEL)
+shopify	SH-C-189	B		Custom product apps; Product variant apps; Product configuration (CAT)
+shopify	SH-C-190	B		Digital goods and service apps; Event booking apps; NFT and tokengating apps (SEL); M-076
+shopify	SH-C-191	C	G	Accounting apps; ERP apps: the store's finances in accounting systems (PAY); M-077
+shopify	SH-C-192	D		Helpdesk apps; FAQ apps; Chat apps (SUP)
+shopify	SH-C-193	E	D	Store design apps; Page builder apps; SEO apps (SFR)
+shopify	SH-C-194	D		Advertising apps; Affiliate program apps (MKT)
+shopify	SH-C-195	E		Mobile app builder apps; read_mobile_platform_applications: the store's own mobile app (CHN); M-078
+shopify	SH-C-196	A		Security apps; Anti theft apps; Legal apps (TRU)
+shopify	SH-C-201	A		Shopify Plus Terms; PlusContractDetails; where settings:plan:plus:terms (PLN)
+shopify	SH-C-202	F	B;E	Shopify Magic for product descriptions and blog posts; AI generation (AIA)
+salla	SA-C-001	A		Merchant; Your profile; Registered devices; where Your profile: the merchant's account (ACC); M-002
+salla	SA-C-002	A		General; Store activity; Maintenance mode; where General: store details and settings (ACC); M-006
+salla	SA-C-003	A		Manage stores; multi-stores: several stores from one account (ACC)
+salla	SA-C-004	A		Store plan; where Store plan (PLN); M-007
+salla	SA-C-005	A		Balance & billing; store balance; billing-native: Salla's billing of the merchant (PLN); M-008
+salla	SA-C-006	C	A	Store Verification; kyc_new_workflow; where @salla.sa/ui-merchant-payments: verifying the merchant's legal entity for payments (PAY); M-003
+salla	SA-C-007	E	A	Domain; DNS Records; شهادة SSL مجانية: the store's web address (SFR); M-017
+salla	SA-C-008	E		Languages; Translation log; where @salla.sa/ui-merchant-languages (MKS); M-016
+salla	SA-C-009	A		Staff members; Roles & permissions; Employees (STF); M-004
+salla	SA-C-010	A	G	Activity history; audit_logs_management; Export log (TRU); M-005
+salla	SA-C-011	D		Notifications; SMS log; store_notification_settings_management (NTF); M-063
+salla	SA-C-012	F	B;E	Salla AI Connector; salla-mcp; ai-description-generator: AI tools for merchants (AIA); M-079
+salla	SA-C-013	A	F	support_access_requests; support-access: partner and support access to a store (STF)
+salla	SA-C-014	A		مدير حساب مخصص; support-plan; help.salla.sa: the platform's support to merchants (ONB); M-066
+salla	SA-C-020	B		Products; product.created; where Products (CAT); M-011
+salla	SA-C-021	B		Product Options; Product Variants; where Categories & options (CAT); M-011
+salla	SA-C-022	B		Categories; category.created; where Categories (CAT); M-011
+salla	SA-C-023	B		Brands; brand.created; where Brand settings (CAT); M-011
+salla	SA-C-024	B		Digitals Product; Digital card history: digital products (SEL); M-076
+salla	SA-C-025	B		Product Quantity; Inventory management; Inventory audit (INV); M-012
+salla	SA-C-026	B	C;E	Branches; Warehouses & branches; Inventory transfer: where stock is held (INV)
+salla	SA-C-027	G	B;C;D	Exports; Advanced import; Import & export (MIG); M-083
+salla	SA-C-028	B	C	Product restrictions; sales-restrictions: limits on buying a product (CAT)
+salla	SA-C-029	B		Pre-order campaigns; pre-order-campaigns (SEL)
+salla	SA-C-030	D	B	Reviews; Questions & Reviews; review.added (SUP); M-065
+salla	SA-C-031	B		Bookings; Order Reservations; product-booking (SEL); M-081
+salla	SA-C-032	D	B	Back in stock alerts; Wishlist Notifications: alerts sent to buyers (MKT); M-080
+salla	SA-C-033	E	D	SEO; Site Optimization; seo-urls (CNT)
+salla	SA-C-040	C		Orders; order.created; where Orders (ORD); M-023
+salla	SA-C-041	C		Order Status; order.status.updated; where Order statuses (ORD); M-023
+salla	SA-C-042	C	E	Order Options; Custom fields; Cart options: fields the buyer fills at checkout (CHK)
+salla	SA-C-043	C	A;F	Order Assignment; Auto assignment to staff (ORD)
+salla	SA-C-044	C		Order Invoice; Invoice settings; invoice.created: invoices for orders (ORD)
+salla	SA-C-045	C		order.refunded; order.shipment.return.created; Manage refund statuses (RET); M-024
+salla	SA-C-046	C		order.cancelled; Order cancellation (ORD); M-023
+salla	SA-C-047	C		Accept orders; Ordering hours; Order acknowledgment (ORD)
+salla	SA-C-048	C	D	Abandoned Carts; abandoned.cart; where Abandoned carts (CHK)
+salla	SA-C-060	D		Customers; customer.created; where Customers (CUS); M-018
+salla	SA-C-061	D		Customer Groups (CUS); M-019
+salla	SA-C-062	D	A	customer.login; customer.otp.request; Login & registration options (CUS)
+salla	SA-C-063	D	C	Customer Wallet; Cashback; Gift cards; wallet.action (LOY); M-013
+salla	SA-C-064	D		Loyalty Points; Loyalty program (LOY); M-075
+salla	SA-C-065	D	C;E	Shipping addresses settings; saudi-national-address; Geolocation: the buyer's addresses (CUS)
+salla	SA-C-066	A	D	customer-account-deletion; customer-data-export; website-cookies (TRU); M-059
+salla	SA-C-070	D		Coupons; coupon.applied; where Coupons (MKT); M-050
+salla	SA-C-071	D		Special Offers; Promotional Offers; Cross/up sell (MKT)
+salla	SA-C-072	D		Affiliates; Affiliate marketing; Commission period: the store's own affiliates (MKT)
+salla	SA-C-073	D		Salla Ads; salla_ads_campaigns_management (MKT)
+salla	SA-C-074	D	E	Pixels & feeds; google-merchant-feed; tiktok-pixel (MKT); M-055
+salla	SA-C-075	D		Campaigns; Marketing calendar; campaign_browse (MKT); M-051
+salla	SA-C-076	D		Influencers; influencer-marketplace (MKT)
+salla	SA-C-077	D	B	Gifting; buy-as-gift; where @salla.sa/ui-merchant-gift (LOY)
+salla	SA-C-078	D		Reorder Reminder; where @salla.sa/ui-merchant-marketing (LOY)
+salla	SA-C-079	C	D	Quick checkout; quick-purchase; الطلب المباشر (CHK)
+salla	SA-C-080	D	C	عروض البنك; bank-offer; where @salla.sa/ui-merchant-offers: promotions with banks (MKT)
+salla	SA-C-081	E		Blog; Blog homepage SEO; where @salla.sa/ui-merchant-blog (CNT); M-015
+salla	SA-C-082	E	D	Landing pages; landing-page-templates; where @salla.sa/ui-merchant-themes (SFR)
+salla	SA-C-083	E	D	Advertisements; شريط إعلاني أعلى المتجر: banners in the storefront (SFR)
+salla	SA-C-090	E		Store design; Theme Marketplace; Twilight Engine (SFR); M-014
+salla	SA-C-091	E	F	Twilight SDK; Web Components: the storefront's own SDK (SFR)
+salla	SA-C-092	D	E	Ecommerce Events; Product Added; Checkout Started: storefront events for tracking (ANL); M-055
+salla	SA-C-093	E		Information pages; Custom URLs; store-menu (CNT); M-015
+salla	SA-C-094	E		App Maker; Mobile app; store-ios-app: the store's own mobile app (CHN); M-078
+salla	SA-C-095	E		Salla Point; Free Cashier; where @salla.sa/ui-merchant-pos (POS); M-057
+salla	SA-C-096	E		Mahally; منصة محلي; where @salla.sa/ui-merchant-mahally: Salla's marketplace channel (CHN)
+salla	SA-C-097	E		Sales channels; product.publish; where @salla.sa/ui-merchant-channel (CHN); M-054
+salla	SA-C-098	D	B;E	سوق الجملة; vendors_buy_products; where @salla.sa/ui-merchant-vendors: the wholesale market (B2B)
+salla	SA-C-099	D		Salla Chat; salla_chat (SUP); M-064
+salla	SA-C-100	C		Cart; Checkout; Guest checkout; Checkout APIs (CHK); M-021
+salla	SA-C-101	E		Store APIs on the status page: the storefront API (SFR); M-056
+salla	SA-C-110	C		مدفوعات سلة; Payments; Payment methods (PAY); M-026
+salla	SA-C-111	C		رصيد المدفوعات الإلكترونية; دورة تحويل المدفوعات الإلكترونية: e-payments balance and payouts (PAY); M-027
+salla	SA-C-112	C	A	Store Verification; bank account for receiving dues (PAY); M-027
+salla	SA-C-113	C		حاسبة رسوم المدفوعات الإلكترونية: online payment fees (PAY); M-029
+salla	SA-C-114	C	A	who processes and acquires Salla Payments transactions, and under which licence (PAY)
+salla	SA-C-115	C		Cash on delivery through Salla shipping labels (PAY); M-033
+salla	SA-C-116	C		Cash on delivery through the merchant's own carrier (PAY); M-033
+salla	SA-C-117	C		التحويل البنكي; bank_accounts_management: bank transfer as a payment method (PAY); M-033
+salla	SA-C-118	C		tabby_installment; tamara_installment: buy now, pay later (PAY); M-031
+salla	SA-C-119	C		PayPal; stc pay; Mokafaa Al Rajhi: wallets connected by the merchant (PAY); M-032
+salla	SA-C-120	C		moyasar; hyperpay; tap; pay-tabs: external gateways (PAY); M-025
+salla	SA-C-121	C		Payment Restrictions; payments-rules (PAY)
+salla	SA-C-122	C	A	نظام الحماية من الاحتيال; sift: fraud protection on payments (PAY); M-088
+salla	SA-C-123	C		Transactions; payments-operations: refund, void, reverse (PAY); M-034
+salla	SA-C-124	C	B	Settlements; Drop shipping: amounts withheld from the merchant's wallet (PAY)
+salla	SA-C-125	B	C	Recurring Payments API; subscription.created: subscriptions sold by stores; the API goes with what it charges for (SEL); M-074
+salla	SA-C-126	C		إرسال رابط الدفع للعميل; quick_payment_direct: payment links (PAY)
+salla	SA-C-127	C		e-payment-charity: charity stores' gateways (PAY)
+salla	SA-C-128	C		financial-support; Salla Capital: financing for merchants (PAY); M-038
+salla	SA-C-139	C		Shipping Companies; carriers named in flags and plan lines (SHP)
+salla	SA-C-140	C		بوليصات سلة; where @salla.sa/ui-merchant-shipping: Salla shipping labels (SHP); M-047
+salla	SA-C-141	C		Shipping Companies; shipping.company.created: the merchant's own carriers (SHP)
+salla	SA-C-142	C		Shipping Zones; shipping.zone.created; Shipping settings (SHP); M-045
+salla	SA-C-143	C		Shipping Routes (SHP)
+salla	SA-C-144	C		Shipments; order.shipment.created; Shipment log (SHP)
+salla	SA-C-145	C	F	Shipping App; Shipments & Fulfillment APIs; Salla AWB: shipping and fulfilment by apps; the channel doesn't set the domain (SHP)
+salla	SA-C-146	C	E	International Shipping Readiness; HS codes; customs (SHP)
+salla	SA-C-147	C		Shipping Delivery Promises (SHP); M-049
+salla	SA-C-148	C		Branch Delivery Zones; إتاحة الاستلام من الفرع: branch pickup (SHP); M-046
+salla	SA-C-149	C		Packaging; shipments-packaging-system (SHP)
+salla	SA-C-150	C	D	Quality gateway; shipping-ticket-system; shipping-rating: complaints about shipping companies (SHP)
+salla	SA-C-160	C		Taxes; storetax.created; Tax settings (TAX); M-040
+salla	SA-C-161	C		zatca; الربط مع هيئة الزكاة والضريبة: e-invoicing to the tax authority (TAX)
+salla	SA-C-162	C	E	Customs duties on cross-border orders; where Taxes (TAX); M-042
+salla	SA-C-163	E	C	Currencies; currency-exchange (MKS); M-044
+salla	SA-C-164	C	E	currency Salla Payments settles in (PAY)
+salla	SA-C-165	E		Markets; Store Scopes; multi-countries (MKS); M-043
+salla	SA-C-166	E	C;D	Countries; Cities; Districts: reference data for selling by country (MKS); M-082
+salla	SA-C-167	A		Available in; مدعوم في: countries where Salla offers its platform (ACC)
+salla	SA-C-170	A		اتفاقية الاستخدام: terms of use between Salla and the merchant (ACC)
+salla	SA-C-171	A	D	سياسة الخصوصية: Salla's privacy policy (TRU); M-060
+salla	SA-C-172	C	A	سياسة البيع; selling-policies accepted when activating e-payments (PAY)
+salla	SA-C-173	F		اتفاقية استخدام التسويق بالعمولة: Salla's own affiliate and referral programme (PTN)
+salla	SA-C-174	E	F	publising-app-maker policy: publishing the store's mobile app (CHN)
+salla	SA-C-175	F		سياسة الشروط والاستخدام – متجر تطبيقات سلة: App Store publishing policy (APP); M-067
+salla	SA-C-176	F		سياسة الانضمام إلى برنامج شركاء سلة: the partner's contract (PTN); M-071
+salla	SA-C-177	C	A	عقد خدمات الدفع: payment services contract (PAY)
+salla	SA-C-178	A		منصة الشكاوي: Salla's complaints platform (TRU)
+salla	SA-C-179	D		Self-service system; Complaints; نظام التذاكر (SUP)
+salla	SA-C-180	A		policy at /policies/nd96, content not reached: a Salla policy page (TRU)
+salla	SA-C-190	F		Salla OAuth 2.0; Authorization (API)
+salla	SA-C-191	F		App Scope; App Scopes Setup (API); M-068
+salla	SA-C-192	F		Webhooks; Conditional Webhooks; Webhooks Log (API); M-069
+salla	SA-C-193	F		app.installed; app.uninstalled; app.subscription.started: app lifecycle events (APP); M-071
+salla	SA-C-194	F		App Store; My apps; Installed apps (APP); M-067
+salla	SA-C-195	F	A	Billing System Salla partners; App Subscriptions; Payouts (APP); M-010
+salla	SA-C-196	F		App Functions (APP); M-070
+salla	SA-C-197	F		Embedded SDK; @salla.sa/ui-merchant-embedded: apps in the dashboard (APP)
+salla	SA-C-198	E	F	App Snippets: apps in the storefront; the channel doesn't set the domain (SFR)
+salla	SA-C-199	F		App settings; App API (APP)
+salla	SA-C-200	D	F	Communication App; communication.sms.send; communication.email.send: delivering messages through apps; the channel doesn't set the domain (NTF)
+salla	SA-C-201	F	G	Rate Limiting (API); M-073
+salla	SA-C-202	F	G	Versioning; Change Log (API); M-073
+salla	SA-C-203	F		Salla CLI; Partners Agent Kit; Dev Tools (DVT)
+salla	SA-C-204	F		Developer Portal; Personal Identity; Employees: the partner account (PTN); M-071
+salla	SA-C-205	F		Merchant Services; Experts; Service Provider Portfolio (PTN); M-072
+salla	SA-C-206	F	D	Affiliate Marketplace; Affiliate Orders; partner-affiliate: partners' affiliate programmes in the Partners portal (PTN)
+salla	SA-C-207	D	F	Report Builder; Report Types: reports built by apps; the channel doesn't set the domain (ANL)
+salla	SA-C-208	E	F	My Themes; Theme Purchases; Theme Subscriptions: themes sold by partners (SFR)
+salla	SA-C-209	F		Demo Stores; Ready Stores; @salla.sa/ui-merchant-devstore (DVT)
+salla	SA-C-210	C	G	Accounting & Finance; ERP system; daftra-service; qoyod-service (PAY); M-077
+salla	SA-C-220	D		Analytics; Reports; Store performance; Smart analytics (ANL); M-058
+salla	SA-C-230	A		شركة سلة القابضة: Salla's legal entities (ACC); M-001
+salla	SA-C-231	A		licences and regulated activity required of partners and merchants (TRU)
+salla	SA-C-232	A		where /manage/violation: sanctions, restricted activity and screening (TRU)
+salla	SA-C-233	A	G	where data is stored and processed (TRU)
+salla	SA-C-234	G	A	Security Considerations; استقرار المنصة وجاهزيتها للذروة; status page component list: platform security and service status (OPS)
+salla	SA-C-235	G	C;F	what happens when a payment, shipping or other partner is unavailable (OPS)
+salla	SA-C-301	E	F	Domains Management; Transfer Domain; domain-purchase in the Partners portal (SFR); M-017
+salla	SA-C-302	G	F	شروط وأحكام خدمة انتقال المتاجر: store migration service (MIG)
+salla	SA-C-303	F		اتفاقية الوكالات; برنامج تسريع نمو المتاجر: programme for partner agencies (PTN)
+salla	SA-C-304	F	C;E	global-selling-program; البيع بالنيابة (MoR): a programme for partners (PTN)
+woocommerce	WC-C-001	C		Payment gateways; where Payments, WooCommerce Payment Gateway API (PAY); M-025
+woocommerce	WC-C-002	C		Direct bank transfer; Check payments; Cash on delivery; where Payments > offline (PAY); M-033
+woocommerce	WC-C-003	C		PayPal Standard; where paypal gateway (PAY); M-032
+woocommerce	WC-C-004	C		payment-gateway-suggestions; Set up payments: providers offered per store country (PAY)
+woocommerce	WC-C-005	C	F	Extensions > Official payments; Processors & gateways: payment providers through extensions; the channel doesn't set the domain (PAY); M-025
+woocommerce	WC-C-006	C		WooPayments; where Get paid with WooPayments (PAY); M-026
+woocommerce	WC-C-007	C		Payouts; account balance in WooPayments (PAY); M-027
+woocommerce	WC-C-008	C		reserve; WooPayments: Reserves (PAY); M-028
+woocommerce	WC-C-009	C	A	Know Your Customer; KYC for WooPayments (PAY); M-003
+woocommerce	WC-C-010	C		WooPayments in Your Country; supported countries (PAY); M-026
+woocommerce	WC-C-011	C	A	prohibited and restricted businesses on WooPayments (PAY); M-085
+woocommerce	WC-C-012	C		Fees; Fees and Debits of WooPayments (PAY); M-029
+woocommerce	WC-C-013	C	A	fraud protection; WooPayments: Fraud Protection (PAY); M-088
+woocommerce	WC-C-014	C	E	In-Person Payments; card readers, Tap to Pay (PAY); M-036
+woocommerce	WC-C-015	C		WooPay; Payments > Settings > Express checkouts (PAY)
+woocommerce	WC-C-016	C		Stripe Capital; Merchant financing (PAY); M-038
+woocommerce	WC-C-017	F	E	Woo Marketplace; Marketplace Vendor Agreement: sales of extensions and themes on WooCommerce.com (APP)
+woocommerce	WC-C-018	A	C	PCI DSS; Level 1 service provider for WooPayments (TRU); M-062
+woocommerce	WC-C-019	A	C	PCI-DSS compliance and WooCommerce: the merchant's own scope (TRU); M-062
+woocommerce	WC-C-020	C	A	Connected Account Agreement: licence under which funds are held (PAY)
+woocommerce	WC-C-021	C		Taxes and Documents; Form 1099-K; where Payments > Documents (TAX); M-039
+woocommerce	WC-C-022	A		Store guidelines: prohibited items on WordPress.com sites (TRU)
+woocommerce	WC-C-023	A		Woo services; WooCommerce, Inc.; WooCommerce Ireland Ltd.: contracting entity (ACC); M-001
+woocommerce	WC-C-024	A	D	Controllers and Responsible Companies (TRU); M-060
+woocommerce	WC-C-025	A		GPLv3; open-source: the core software's licence to the merchant (ACC)
+woocommerce	WC-C-026	A		Jurisdiction and Applicable Law (ACC); M-001
+woocommerce	WC-C-027	A	B;C	Ecommerce Services; Your responsibilities: the merchant's compliance (TRU); M-086
+woocommerce	WC-C-028	A		US Economic Sanctions; OFAC (TRU); M-084
+woocommerce	WC-C-029	A	C	export, import, and sanctions laws on the merchant's sales (TRU); M-084
+woocommerce	WC-C-030	E	C	Selling location(s); Shipping location(s); where General: countries sold to (MKS)
+woocommerce	WC-C-031	A	C;F	Rate limit Checkout; Rate Limiting for Store API endpoints: protecting checkout from abuse (TRU)
+woocommerce	WC-C-032	A	G	Own and control your store data; What data is stored on my site?: where store data lives (TRU)
+woocommerce	WC-C-033	C	G	High-Performance order storage; custom order tables: how orders are stored (ORD)
+woocommerce	WC-C-034	G	E	WooCommerce Server Recommendations: hosting the store (OPS)
+woocommerce	WC-C-035	A	G	WooCommerce usage tracking; wc-telemetry: data sent to WooCommerce (TRU)
+woocommerce	WC-C-036	G	A	Remote Logging; RemoteLogger::LOG_ENDPOINT (OPS)
+woocommerce	WC-C-037	G	A	Logs; where Status > Logs: technical store logs (OPS)
+woocommerce	WC-C-038	D		Analytics; Reports; where Analytics (ANL); M-058
+woocommerce	WC-C-039	D	A	WooCommerce Analytics data syncing (ANL)
+woocommerce	WC-C-040	A	C	Privacy considerations when using official payments extensions (TRU)
+woocommerce	WC-C-041	A	C	Privacy considerations when using official shipping extensions (TRU)
+woocommerce	WC-C-042	C	A	payment token held by WooPayments' partner (PAY); M-035
+woocommerce	WC-C-043	A	G	Transferring Information outside the EEA and UK (TRU); M-061
+woocommerce	WC-C-044	A	D	Data Processing Agreement (TRU); M-060
+woocommerce	WC-C-045	A	D	Accounts & Privacy; Personal data retention (TRU); M-059
+woocommerce	WC-C-046	E	D	MaxMind Geolocation; Default customer location (MKS); M-087
+woocommerce	WC-C-047	C	D	Address autocomplete; Preferred address autocomplete provider: addresses at checkout (CHK)
+woocommerce	WC-C-048	C		built in partnership with Stripe: processor dependence (PAY); M-037
+woocommerce	WC-C-049	A	F	WordPress.com account; Jetpack connection: the account for Woo services (ACC)
+woocommerce	WC-C-050	F		Developed by Woo; where Extensions > Developed by Woo (APP)
+woocommerce	WC-C-051	E	C	Payout currencies; currency conversion fee (MKS); M-044
+woocommerce	WC-C-052	E	C	Currency; base currency; where General (MKS); M-044
+woocommerce	WC-C-053	E	C	multi-currency; Shop currency (MKS); M-044
+woocommerce	WC-C-054	C		Tax; Tax options; Standard rates (TAX); M-040
+woocommerce	WC-C-055	C		WooCommerce Tax; Automated taxes (TAX); M-040
+woocommerce	WC-C-056	C	F	Extensions > Store management > Sales tax and duties (TAX)
+woocommerce	WC-C-057	A	C	Taxes; VAT/GST/CT on Woo's own fees (PLN); M-009
+woocommerce	WC-C-058	C	E	customs charges, import taxes or duties; Product customs data (TAX); M-042
+woocommerce	WC-C-059	F		Third-Party Services; extensions (APP); M-067
+woocommerce	WC-C-060	C		WooCommerce Shipping: labels and carrier rates (SHP); M-047
+woocommerce	WC-C-061	C	F	Extensions > Shipping, delivery and fulfillment; shipping partner suggestions (SHP)
+woocommerce	WC-C-062	A		WooCommerce Support Policy; Public forums (ONB); M-066
+woocommerce	WC-C-063	F		Connection to WooCommerce.com; WooCommerce > Extensions: extension installs and subscriptions (APP)
+woocommerce	WC-C-064	B		Products; Product variations; Attributes; Categories; where Products (CAT); M-011
+woocommerce	WC-C-065	D	B	Reviews; Product reviews; Review request (SUP); M-065
+woocommerce	WC-C-066	B		Downloadable products; Downloads (SEL)
+woocommerce	WC-C-067	G	B	Product Import; Product Export (MIG); M-083
+woocommerce	WC-C-068	B		Inventory; Stock; where Products > Inventory (INV); M-012
+woocommerce	WC-C-069	D	B	Back in Stock Notifications; where WooCommerce > Notifications (MKT); M-080
+woocommerce	WC-C-070	C		Orders; Order statuses; where WooCommerce > Orders (ORD); M-023
+woocommerce	WC-C-071	C		Refunds; Order refunds (RET); M-024
+woocommerce	WC-C-072	C		Cart; Checkout; Cart & Checkout Blocks (CHK); M-021
+woocommerce	WC-C-073	D		Customers; Accounts & Privacy; where WooCommerce > Customers (CUS); M-018
+woocommerce	WC-C-074	D		Coupons; where Marketing > Coupons (MKT); M-050
+woocommerce	WC-C-075	C		Shipping zones; Classes; Flat rate; Local pickup (SHP); M-045
+woocommerce	WC-C-076	D		Emails; Email options; New order email: transactional emails (NTF)
+woocommerce	WC-C-077	F		Webhooks; where Advanced > Webhooks (API); M-069
+woocommerce	WC-C-078	F		WooCommerce REST API; REST API keys (API); M-073
+woocommerce	WC-C-079	E		Store API; wc/store: the public storefront API (SFR); M-056
+woocommerce	WC-C-080	A		Shop manager; manage_woocommerce; WooCommerce user roles (STF); M-004
+woocommerce	WC-C-081	A	G	Home; Setup Wizard; onboarding (ONB)
+woocommerce	WC-C-082	A	E	Site visibility; Coming soon; Launch your store (ONB)
+woocommerce	WC-C-083	G		Status; System status; Tools (OPS)
+woocommerce	WC-C-084	D		Marketing; Marketing > Overview (MKT); M-051
+woocommerce	WC-C-085	D		Order Attribution (MKT); M-053
+woocommerce	WC-C-086	F		Integration; Settings API; WC_Integration: the extension framework (APP)
+woocommerce	WC-C-087	C	E;F	Cart and Checkout extensibility; Additional checkout fields: extending checkout blocks; the channel doesn't set the domain (CHK); M-022
+woocommerce	WC-C-088	G		Features; where Settings > Advanced: opt-in features (EVO)
+woocommerce	WC-C-089	E		Point of Sale; Woo Mobile App: Point of Sale Mode (POS); M-057
+woocommerce	WC-C-090	G	D	WooCommerce mobile app; Push Notifications: the merchant's mobile admin (SRF)
+woocommerce	WC-C-091	C	A	Order withdrawal; withdraw-order (RET)
+woocommerce	WC-C-092	C		Order Fulfillments; Shipping providers (SHP); M-048
+woocommerce	WC-C-093	B	D	Cost of Goods Sold; _cogs_value (CAT)
+woocommerce	WC-C-094	G		Blueprint: export and import of store configuration (MIG)
+woocommerce	WC-C-095	F		WooCommerce MCP; Model Context Protocol (AIA); M-079
+woocommerce	WC-C-096	F		Artificial Intelligence; AI Guidelines (AIA)
+woocommerce	WC-C-097	D		Wishlists; Save for Later in Cart; shopper-lists (LOY)
+woocommerce	WC-C-098	C	D	Payment Token API; Customer Payment Tokens (PAY); M-035
+woocommerce	WC-C-099	E	C	data/countries; data/continents (MKS); M-082
+woocommerce	WC-C-100	B	C	Subscriptions; where Extensions > Merchandising > Subscriptions (SEL); M-074
+woocommerce	WC-C-101	B		Bookings and appointments (SEL); M-081
+woocommerce	WC-C-102	B	D	Memberships; where Extensions > Merchandising (SEL)
+woocommerce	WC-C-103	D		B2B; B2B payments; where Extensions > Merchandising > B2B (B2B); M-020
+woocommerce	WC-C-104	B	D	Merchandising; Bundles; Gifts; Product options: merchandising extensions; the channel doesn't set the domain (CAT)
+woocommerce	WC-C-105	D		Conversion; Promotions; Rewards and loyalty; Upsells and cross-sells (MKT)
+woocommerce	WC-C-106	D		Customer service; Live chat; Support (SUP)
+woocommerce	WC-C-107	E		Store content and customizations; Search and navigation (SFR)
+woocommerce	WC-C-108	E		International and localization extensions (MKS)
+woocommerce	WC-C-109	G	A;C;D	Store management: insights, import and export, order management, policy and security, accounting (SRF)
+woocommerce	WC-C-110	D		Extensions > Marketing; Advertising; Email; Social (MKT); M-051
+woocommerce	WC-C-111	E		Themes; Choose your theme; Customize your store (SFR); M-014
+woocommerce	WC-C-112	F	A	Business services: formation, legal, insurance, finance (PTN)
+woocommerce	WC-C-113	D		MailPoet (MKT); M-052
+woocommerce	WC-C-114	D		WooAds: ad campaigns (MKT)
+woocommerce	WC-C-115	C	A	Stripe Radar screening on WooPayments (PAY)
+woocommerce	WC-C-116	C		Managing Disputes; chargeback (PAY); M-030
+woocommerce	WC-C-117	A	F	Jetpack Sync; What data does Jetpack sync: store data synced to Automattic (TRU)
+woocommerce	WC-C-118	C		EU VAT Number: VAT number validation (TAX); M-041
+zid	ZD-C-001	C		تفعيل زد باي; Activate Zid Payments; where المدفوعات > تفعيل الدفع الالكتروني (PAY)
+zid	ZD-C-002	C		العمليات والاسترداد; Refund Flexibility; where المدفوعات > العمليات: Zid Pay transactions (PAY)
+zid	ZD-C-003	C		الإيداعات; كشف الحساب; Funds Collection: deposits to the merchant (PAY)
+zid	ZD-C-004	C		الحسابات البنكية; where إدارة طرق الدفع: bank accounts for deposits and bank transfer (PAY)
+zid	ZD-C-005	C		شبكات الدفع; Supported Payment Networks; where إدارة زد باي (PAY)
+zid	ZD-C-006	C		رسوم زد باي; Transaction Fees (PAY)
+zid	ZD-C-007	C		charge back; Fraud Shield; احتجاز الأموال (PAY)
+zid	ZD-C-008	C		روابط الدفع; Quick Payment Links; payment_link (PAY)
+zid	ZD-C-009	C		مقدمي خدمات الدفع; مزود الخدمة: providers behind Zid Pay (PAY)
+zid	ZD-C-010	C	F	Zid Payments Open APIs; Merchant Activation; Payment Paid Event: the payments feature's own provider API (PAY)
+zid	ZD-C-011	C		بوابات الدفع الأُخرى; Paymob; Tap (PAY)
+zid	ZD-C-012	C		طرق الدفع; List Payment Methods; where Store Settings (PAY)
+zid	ZD-C-013	C		خدمات التقسيط; الدفع لاحقاً; Tamara; Tabby (PAY)
+zid	ZD-C-014	C		الدفع عند الاستلام; Cash on Delivery; where لوحة التحكم > اللوجستيات (PAY)
+zid	ZD-C-015	C		تحصيل الدفع عند الاستلام; Cash on Delivery Collection; where محفظة التاجر (PAY)
+zid	ZD-C-016	C		خدمة التحويل البنكي; Bank Transfer Payment (PAY)
+zid	ZD-C-017	C	A	محفظة زد; محفظة التاجر; where لوحة التحكم > المالية > المحفظة: the merchant's wallet (PAY)
+zid	ZD-C-018	C		الاستقطاع للمحفظة: deduction from Zid Pay to the wallet (PAY)
+zid	ZD-C-019	D	C	محفظة العميل والكاش باك; Customer Wallets; where التسويق > برامج الولاء (LOY)
+zid	ZD-C-020	A		الاشتراكات; Starter; Growth; Pro; where إدارة الأشتراك: the merchant's Zid plan (PLN)
+zid	ZD-C-021	A		المدفوعات والمشتريات; Payments and Purchases from Zid (PLN)
+zid	ZD-C-022	F	A	App Subscription Events; Partner Payouts: app billing and payouts (APP)
+zid	ZD-C-023	C		تمويل زد; Zid Financing; جهة التمويل (PAY)
+zid	ZD-C-024	C	E	المستحقات المالية لمزيد; تحصيلات مزيد: collections for marketplace orders (PAY)
+zid	ZD-C-025	F	D	وكيل زد (Zid Agent); Google Cloud Vertex AI: an AI agent for product research, store optimization and campaigns (AIA)
+zid	ZD-C-026	A		خدمة المميزات الإضافية VAS; Value Added Services bought from Zid (PLN)
+zid	ZD-C-028	C		order.payment_status.update; Payment Status (ORD)
+zid	ZD-C-030	A		شركة القدرة التقنية; Governing Law and Dispute Resolution: Zid's contracting entity (ACC)
+zid	ZD-C-031	A		About Zid Egypt; a separate commercial registration (ACC)
+zid	ZD-C-032	A		ZID is available in; زد متاحة في: countries Zid serves (ACC)
+zid	ZD-C-033	E	C	Countries and Cities; List Store Operating Countries (MKS)
+zid	ZD-C-034	E		الأسواق; خاصية الأسواق; where الاعدادات > الأسواق (MKS)
+zid	ZD-C-035	A	C	بيانات المتجر; تفاصيل النشاط التجاري; KYC; where الاعدادات > المتجر: the store's business entity (ACC)
+zid	ZD-C-036	A		ضوابط المتجر الإلكتروني; E-Commerce Store Regulations (TRU)
+zid	ZD-C-037	C	A	الأنشطة المحظورة; Prohibited Activities for Zid Pay (PAY)
+zid	ZD-C-038	A		اجتياز التحقق من نفاذ; Nafath identity verification (TRU)
+zid	ZD-C-039	E	A	الصفحات القانونية; where الاعدادات > المتجر: the store's own policy pages (CNT)
+zid	ZD-C-040	A	D	سياسة الخصوصية; Data Protection Officer (TRU)
+zid	ZD-C-041	A		نقل البيانات عبر الحدود: cross-border data transfer (TRU)
+zid	ZD-C-042	A	F	معالجة البيانات بالذكاء الاصطناعي; AI Data Processing (TRU)
+zid	ZD-C-043	B		Digital Products; Digital Vouchers; Downloadables (SEL)
+zid	ZD-C-044	G		طلبات التصدير; Product Export (MIG)
+zid	ZD-C-050	E		لغة وعملات المتجر; Geo-Based Currency Settings; Localization (MKS)
+zid	ZD-C-051	C		اعدادات الضريبة; ضريبة القيمة المضافة; Retrieve VAT Settings (TAX)
+zid	ZD-C-052	C		اعدادات الفواتير; Invoice Printing (TAX)
+zid	ZD-C-053	C		الربط مع منصة فاتورة ZATCA: e-invoicing (TAX)
+zid	ZD-C-054	C		List Order Credit Notes; Credit notes (TAX)
+zid	ZD-C-060	C		زد لوجستيات; زد شب; الشحن المباشر (SHP)
+zid	ZD-C-061	C	F	Shipping apps; third-party logistics companies; the channel doesn't set the domain (SHP)
+zid	ZD-C-062	C		طرق الشحن; List Store Shipping Methods; delivery-options (SHP)
+zid	ZD-C-063	C		قيود الشحن و الدفع; where الاعدادات > عام (SHP)
+zid	ZD-C-070	F		سوق تطبيقات زد; Zid App Market (APP)
+zid	ZD-C-071	F		OAuth 2.0; Scopes; Zid App Activation & OAuth Policy (API)
+zid	ZD-C-072	F		Webhooks; Webhook Health Tracking (API)
+zid	ZD-C-073	F		Embedded Apps; embedded_apps_tokens_write (APP)
+zid	ZD-C-074	F		Private apps; API Access; where سوق التطبيقات > تطبيقاتي (APP)
+zid	ZD-C-075	E		Storefront APIs; Checkout; Authentication: the customer-facing API (SFR)
+zid	ZD-C-076	E	F	سوق ثيمات زد; Theme Market; Themes (SFR)
+zid	ZD-C-077	A		Account; Store; Retrieve Store Manager Profile; اعدادات الحساب (ACC)
+zid	ZD-C-080	C		Orders; Order Tags; Custom Order Status; Draft Orders (ORD)
+zid	ZD-C-081	C		Reverse Orders; Full & Partial Returns (RET)
+zid	ZD-C-082	C	D	Abandoned Carts; abandoned_cart.created (CHK)
+zid	ZD-C-083	B		Products; Product Variants; where Merchant APIs > Products (CAT)
+zid	ZD-C-084	B		Product Categories; category.create (CAT)
+zid	ZD-C-085	B		Inventories; Product Stock (INV)
+zid	ZD-C-086	D	B	Product Reviews; Product Questions & Answers (SUP)
+zid	ZD-C-087	D	B	Product Availability Notifications; إشعارات المخزون (MKT)
+zid	ZD-C-088	D		Coupons; Discounts; where Merchant APIs > Marketing (MKT)
+zid	ZD-C-089	D	B	Bundle Offers; Add Dynamic Bundle; where Merchant APIs > Marketing (MKT)
+zid	ZD-C-090	D		Loyalty Program (LOY)
+zid	ZD-C-091	D		Customers; Customer Tags (CUS)
+zid	ZD-C-092	D		Customer Portal Tickets; بوابة خدمة العملاء الذاتية (SUP)
+zid	ZD-C-093	E		Blogs; where المتجر الإلكتروني > المدونة (CNT)
+zid	ZD-C-094	A		فريق العمل; User Roles and Permissions (STF)
+zid	ZD-C-095	A		اعدادات الامان; تفعيل التحقق بخطوتين (TRU)
+zid	ZD-C-096	E	A	النطاقات; Custom Domain Linking; zid.store (SFR)
+zid	ZD-C-097	D		تنبيهات زد; إشعارات الفريق; رسائل حالات الطلب (NTF)
+zid	ZD-C-098	D		اسم المرسل; Sender Name in customer messages (NTF)
+zid	ZD-C-099	C		إعدادات صفحة إتمام عملية الشراء: checkout page settings (CHK)
+zid	ZD-C-100	C	B	خصائص الطلبات والمنتجات; Custom Fields (CHK)
+zid	ZD-C-101	D	B	خاصية الإهداء: gifting (LOY)
+zid	ZD-C-102	E		خاصية إعادة توجيه الروابط: URL redirects (CNT)
+zid	ZD-C-103	D	C;E	تفعيل Google maps in the online store: locating buyers' addresses (CUS)
+zid	ZD-C-104	C	E	اوقات العمل الرسمية; where الاعدادات > المتجر: the store's working hours (ORD)
+zid	ZD-C-105	D		Reports & Analytics; التقارير والتحليلات (ANL)
+zid	ZD-C-106	D		Marketing Tools; أدوات التسويق والنمو (MKT)
+zid	ZD-C-107	D		واتساب زد; Whatsapp: messaging buyers (NTF)
+zid	ZD-C-108	E		زد كاشير; Zid POS (POS)
+zid	ZD-C-109	E		مزيد; Mazeed Marketplace; where منصات البيع (CHN)
+zid	ZD-C-110	E		منصات البيع; Marketplaces; Amazon; Trendyol (CHN)
+zid	ZD-C-111	D	C	ضمان زد; ZID Assurance: WhatsApp order updates and complaint handling by Zid (SUP)
+zid	ZD-C-112	C	D;F	Zid Voice; where الطلبات > زد فويس: abandoned cart recovery by a voice agent (CHK)
+zid	ZD-C-113	E		E-store; Store Design; تصميم المتجر (SFR)
+zid	ZD-C-114	A		Live Chat Support; Ticketing & Chat System: Zid's support to merchants (ONB)
+zid	ZD-C-115	F		زد نمو; where لوحة التحكم > النمو; شركاء يقدمون الخدمة: services by partners (PTN)
+zid	ZD-C-116	E		تطبيق الجوال: the store's mobile app (CHN)
+bigcommerce	BC-C-001	B		Catalog - Products; Product variants; where /catalog/products (CAT)
+bigcommerce	BC-C-002	B		Catalog - Brands (CAT)
+bigcommerce	BC-C-003	B		Catalog - Categories; Category trees (CAT)
+bigcommerce	BC-C-004	B		Inventory; Inventory management; where /management/inventory (INV)
+bigcommerce	BC-C-005	B	C;E	Store Locations; Inventory locations: where stock is held (INV)
+bigcommerce	BC-C-006	C	B	Pickup; Buy online, pick up in store; where /management/pickup (SHP)
+bigcommerce	BC-C-007	D	B;E	Price Lists; where /management/price-lists: prices per customer group and channel, as Shopify's catalogs (B2B)
+bigcommerce	BC-C-008	B	E	Pricing; where /management/pricing: product prices on storefronts (CAT)
+bigcommerce	BC-C-009	D		Promotions API; Advanced promotions management; where Marketing > Promotions (MKT)
+bigcommerce	BC-C-010	D	E	Marketing; Coupons, discounts, and gift cards; where /content/marketing (MKT)
+bigcommerce	BC-C-011	E	B	Search Filters; Storefront Search; Product filtering (SFR)
+bigcommerce	BC-C-012	D	B	Product ratings and reviews; built-in comment system (SUP)
+bigcommerce	BC-C-013	D	E;F	Beta Product Recommendations; Google Vertex AI: recommending products to buyers (MKT)
+bigcommerce	BC-C-014	C		Carts; Storefront Carts; Persistent cart (CHK)
+bigcommerce	BC-C-015	C	D	Abandoned carts; Abandoned Cart Emails; Abandoned cart saver (CHK)
+bigcommerce	BC-C-016	C		Checkouts; Single-page checkout; where Settings > Checkout (CHK)
+bigcommerce	BC-C-017	C	F	Beta Checkout Extensions: extending checkout; the channel doesn't set the domain (CHK)
+bigcommerce	BC-C-018	C		Orders V2; Order management; where /management/orders (ORD)
+bigcommerce	BC-C-019	C		Order Fulfillment; Fulfillment Methods; Shipments (SHP)
+bigcommerce	BC-C-020	C		Order Transactions; Transactions API (PAY)
+bigcommerce	BC-C-021	C		Refunds; Refunds & returns (RET)
+bigcommerce	BC-C-022	C		Payment Processing; Create Payments; BigCommerce Payments Gateway (PAY)
+bigcommerce	BC-C-023	C		Payment Methods; where /payments/methods (PAY)
+bigcommerce	BC-C-024	C	D	Stored Instruments API; Stored credit cards (PAY)
+bigcommerce	BC-C-025	C		BigCommerce Payments by PayPal; Money Dashboard (PAY)
+bigcommerce	BC-C-026	C	F	Embedded Payment Providers; Open Payment Providers; Open Payment Provider Fee (PAY)
+bigcommerce	BC-C-027	C		Apple Pay, Google Pay, and Amazon Pay; Digital wallets (PAY)
+bigcommerce	BC-C-028	A	C	PCI DSS; PCI-compliant payments server: card data security (TRU)
+bigcommerce	BC-C-029	F	A	Unified Billing; Unified Billing Partner: app charges on the BigCommerce invoice (APP)
+bigcommerce	BC-C-030	A		Fees and Billing; GMV cap: the merchant's subscription and fees (PLN)
+bigcommerce	BC-C-031	C	D	Invoice Management; Invoicing & net terms: invoices and payment terms per B2B company (PAY)
+bigcommerce	BC-C-032	D		Customers V3; Storefront Customers (CUS)
+bigcommerce	BC-C-033	D		Customer Login (SSO); Current Customer (CUS)
+bigcommerce	BC-C-034	D		Customer Segmentation; Customer groups (CUS)
+bigcommerce	BC-C-035	D		Subscribers; Storefront Subscriptions: newsletter subscribers (MKT)
+bigcommerce	BC-C-036	D		Wishlist (LOY)
+bigcommerce	BC-C-037	A	E	Storefront Cookie Consent (TRU)
+bigcommerce	BC-C-038	E		Channels; Channel Listings; Omnichannel management (CHN)
+bigcommerce	BC-C-039	E		Multi-Storefront; MSF: several storefronts from one store (CHN)
+bigcommerce	BC-C-040	E		Sites; Sites & Routes (SFR)
+bigcommerce	BC-C-041	E		Redirects (CNT)
+bigcommerce	BC-C-042	E		Themes; Stencil; Custom Template Associations (SFR)
+bigcommerce	BC-C-043	E		Widgets; Page widgets (SFR)
+bigcommerce	BC-C-044	E	D;F	Scripts; Script Manager: scripts on storefront pages (SFR)
+bigcommerce	BC-C-045	E		Pages V3; Content; Built-in blog (CNT)
+bigcommerce	BC-C-046	D		Email Templates; Transactional Emails; Notifications (NTF)
+bigcommerce	BC-C-047	A	E	Settings V3; Store Information; Store Profile; Storefront Status: store details and settings (ACC)
+bigcommerce	BC-C-048	E		Store Locale; Store Translations (MKS)
+bigcommerce	BC-C-049	E	B	Metafields; Metafield Ownership (CNT)
+bigcommerce	BC-C-050	E		Catalyst; Headless commerce (SFR)
+bigcommerce	BC-C-051	E		Makeswift visual editor (SFR)
+bigcommerce	BC-C-052	E	G	Infrastructure Hosting; Native Hosting of storefronts (SFR)
+bigcommerce	BC-C-053	E	F	GraphQL Storefront API; Storefront API tokens: the storefront's own API (SFR)
+bigcommerce	BC-C-054	F		GraphQL Admin API (API)
+bigcommerce	BC-C-055	F	A	GraphQL Account API; Account resource scopes (API)
+bigcommerce	BC-C-056	F		API Accounts; OAuth scopes; API Terms (API)
+bigcommerce	BC-C-057	F	G	Rate limits; Volume Limits (API)
+bigcommerce	BC-C-058	F		Webhooks v3; Delivery exception hooks (API)
+bigcommerce	BC-C-059	F		App Marketplace; App Extensions; Apps & Integrations (APP)
+bigcommerce	BC-C-060	G	A	System Logs; Store logs; where Settings > Advanced > Store logs (OPS)
+bigcommerce	BC-C-061	A		Staff accounts; Account Users; control panel users (STF)
+bigcommerce	BC-C-062	D		Reporting & analytics; Analytics (ANL)
+bigcommerce	BC-C-063	F	E	MCP Server; Agentic checkout; Agentic Search (AIA)
+bigcommerce	BC-C-064	F		AI Features; BigAI; BigCommerce Companion (AIA)
+bigcommerce	BC-C-065	D		B2B Edition; Buyer portal; quotes; shopping lists (B2B)
+bigcommerce	BC-C-066	F	A;E	Powered By; Commerce-as-a-Service: stores run for other platforms (PTN)
+bigcommerce	BC-C-067	E	D	Feedonomics; Feedonomics Platform: product feeds to channels (CHN)
+bigcommerce	BC-C-068	E		Marketplaces; Amazon / eBay / Walmart; Social channels (CHN)
+bigcommerce	BC-C-069	E		Point of sale; POS integrations (POS)
+bigcommerce	BC-C-070	C		Shipping V2; Real-time shipping quotes; where Settings > Setup > Shipping (SHP)
+bigcommerce	BC-C-071	C	F	Shipping Providers; where /integrations/shipping-provider (SHP)
+bigcommerce	BC-C-072	C		Tax; Tax Classes; Tax Settings (TAX)
+bigcommerce	BC-C-073	C	F	Tax Provider API; Tax Providers (TAX)
+bigcommerce	BC-C-074	E	C	Currencies; Multi-currency (MKS)
+bigcommerce	BC-C-075	E		Geography: countries and states (MKS)
+bigcommerce	BC-C-076	F	G	Staging environments; Staging Pro: environments for testing store changes (DVT)
+bigcommerce	BC-C-077	G		BigCommerce mobile app; Commerce Mobile Application: the merchant's mobile admin (SRF)
+bigcommerce	BC-C-078	E	A	Free sitewide HTTPS and dedicated SSL; Storefront Security (SFR)
+bigcommerce	BC-C-079	A		Contracting Entity; Governing Law (ACC)
+bigcommerce	BC-C-080	A		Anti-Corruption, Export and Sanctions Compliance (TRU)
+bigcommerce	BC-C-081	A	D	Data Processing Addendum; Processor; Controller (TRU)
+bigcommerce	BC-C-082	A	G	Data Transfer; International Data Transfer (TRU)
+bigcommerce	BC-C-083	A	G	Third-Party Subprocessors; Hosting Services (TRU)
+bigcommerce	BC-C-084	F	A	Third-Party Products; Third-Party Product Integration (APP)
+bigcommerce	BC-C-085	A		Acceptable Use Policy; Highly Regulated Products (TRU)
+bigcommerce	BC-C-086	A		Store Terms; Stores and Materials; Your Users (ACC)
+bigcommerce	BC-C-087	F	A	Merchant-Client Terms; Agents acting for clients (PTN)
+bigcommerce	BC-C-088	A		Infringing Materials Protocol (TRU)
