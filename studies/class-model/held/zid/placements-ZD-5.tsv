@@ -1,0 +1,228 @@
+entry_id	placement	cap_id	supports	scope	terms	filler	quality	reading
+ZD-E-701b2959	capability	CM-PAY-002	core		payments;learn-more			a reading: Zid Payments' own page in the Payments section: 'Zid Payments is an integrated payment solution that enables retailers to manage orders and electronic payments in one place' (page text rest-en#114); the platform's own payment service, as ZD-1's Payments
+ZD-E-8d475794	capability	CM-SHP-017	core		logistics;shipments			a reading: the store's shipments, as ZD-1's Shipments tracking (page text rest-en#115); the module imports shipment-details-dialog and use-shipments-columns-v2
+ZD-E-8d475794	capability	CM-SHP-009	core		logistics;shipments			a reading: the store's shipments list, the orders' fulfilment, as ZD-1's corrected line for the same page (rest-en#115)
+ZD-E-0a1b166b	capability	CM-LOY-008	core		referrals;program			a reading: 'Activate customer referrals program', with referral codes and links and the referrer's reward as wallet cashback or loyalty points (page text rest-en#116); the program's own route, which CM-LOY-008's note names
+ZD-E-d701bd4a	capability	CM-MKT-001	core		discounts;reports			a reading: 'Discounts reports': each discount's code, total uses, sales before discount and discount amount (page text rest-en#117); a page of the store's discounts
+ZD-E-d701bd4a	capability	CM-ANL-002	core		discounts;reports			a reading: a report of the discounts' uses and sales (page text rest-en#117), a kind of report as CM-ANL-002's note reads Salla's report types
+ZD-E-14dfe54a	capability	CM-SEL-006	core		bundle-offers			a reading: one bundle offer, by its id (module imports fixed-price-bundle-schema, parse-bundle-offers-fom-state); not opened; ZD-1's Bundle offers
+ZD-E-61644b78	capability	CM-MKT-006	core		automated-messages			a reading: the automated messages list, as ZD-1's Automated Messages (page text rest-en#118)
+ZD-E-61644b78	capability	CM-NTF-001	core		automated-messages			a reading: messages sent automatically to customers on events, as ZD-1's corrected line for the same page (rest-en#118)
+ZD-E-32f910b7	capability	CM-MKT-014	core		affiliates;create			a reading: adding an affiliate (module imports select-coupon, invalid-mobile-schema); opened: 'Oops! Something broke' (rest-en#119); ZD-1's Affiliates
+ZD-E-b5ff9421	capability	CM-PLN-004	core		checkout;request-vat-invoice			a reading: 'Request VAT invoice': 'The following information is required to generate your VAT invoice.' (page text rest-en#120), in the checkout of the store's purchases from Zid, which the development store reached from a plan's checkout (devstore-billing-en, actions.jsonl, steps 5 and 6): the invoice of Zid's charge
+ZD-E-b5ff9421	capability	CM-PLN-007	core		checkout;request-vat-invoice			a reading: the VAT invoice of Zid's charge to the store, with the store's 'TAX certificate number' (page text rest-en#120): tax on the platform's own charges, not the store's sales tax (CM-TAX-005's note)
+ZD-E-924434cb	capability	CM-SFR-001	core		online-store;themes			a reading: the store's current theme, theme library and custom themes, as ZD-1's Themes (page text rest-en#121)
+ZD-E-82394910	capability	CM-SFR-001	core		online-store			a reading: the Online store section's index route, redirected to its themes (ledger, rest-en#122); ZD-1's Online store
+ZD-E-b282ea2b	capability	CM-CNT-002	core		meta-fields			a reading: the custom fields of a type (module imports validate-metafields-params); not opened; as ZD-4's meta-fields routes
+ZD-E-87082532	capability	CM-ORD-010	core		hours-of-operation			a reading: 'Manage your store closure or stop receiving orders' (page text gaps-en#27); ZD-1's Hours of operation
+ZD-E-87082532	capability	CM-ACC-007	core		hours-of-operation			a reading: 'Close store completely' beside 'Stop receiving orders' (page text gaps-en#27), as ZD-1's corrected line for the same page
+ZD-E-5dab8505	capability	CM-SHP-001	core		constraints			a reading: the constraints of one type, shipping or payment (module imports constraints-utils); not opened; ZD-1's Shipping and payment constraints and ZD-4's constraints/:type/:id
+ZD-E-5dab8505	capability	CM-PAY-019	core		constraints			a reading: the payment constraints, one of the two types (module imports constraints-utils); not opened; as ZD-1 and ZD-4
+ZD-E-33dc1d42	capability	CM-SUP-004	core		whatsapp;live-chat	WhatsApp		a reading: live chat with customers in the WhatsApp section, ZD-1's Live chat (page text rest-en#123); the module imports whatsapp-editor and use-saved-responses
+ZD-E-312273ff	capability	CM-PAY-015	core		payments;emkan-pay	Emkan		a reading: 'Enable emkan - pay later to let your customers shop and split their purchases into 5 installments at the cash price.', activated with a client key and secret (page text rest-en#124); the page also reads 'By: Zid' (notes)
+ZD-E-3e9a20c1	capability	CM-SHP-001	core		logistics;settings			a reading: 'Logistics settings': 'Customize and manage all aspects of your store’s shipping experience.', with the display order of shipping methods, sender information, shipping constraints and free shipping conditions (page text gaps-en#44)
+ZD-E-ce1c4ee9	capability	CM-CHK-007	core		abandoned-carts			a reading: one abandoned cart, by its id; not opened; ZD-1's Abandoned carts
+ZD-E-ce1c4ee9	capability	CM-MKT-022	core		abandoned-carts			a reading: one abandoned cart with its reminders (module imports reminder-dialog); not opened; as ZD-1's corrected line for Abandoned carts
+ZD-E-c102e699	capability	CM-LOY-004	core		new-qitaf-program	Qitaf		a reading: Qitaf's program page; redirected to marketing/new-qitaf (ledger, rest-en#125), ZD-1's Qitaf
+ZD-E-c102e699	capability	CM-PAY-012	core		new-qitaf-program			a reading: Qitaf's points, which pay in the store, as ZD-1's Qitaf; redirected (ledger)
+ZD-E-2ee31824	capability	CM-MKT-001	core		discounts;create			a reading: 'Create new discount', with a products discount, percentage or fixed amount, and free shipping (page text rest-en#126); ZD-1's Discounts
+ZD-E-2ee31824	capability	CM-MKT-002	core		discounts;create			a reading: the discount created is a coupon: 'Specify what discount you want to provide with this coupon' (page text rest-en#126)
+ZD-E-3f16aba9	capability	CM-SEL-007	core		charity-fostering			a reading: 'Charity fostering' (دعم الجمعيات الخيرية), a list of charity opportunities with 'Item cost', 'Supported units' and 'Remaining units' (page text rest-en#127); the dashboard's strings invite the store's customers 'to participate in the donation in partnership with the {{name}} association' (dashboard-locales, charity-fostering:form.placeholder); unsure (notes)
+ZD-E-43d0747c	capability	CM-MKT-007	core		campaigns;create			a reading: creating a marketing campaign (module imports whatsapp-editor, whatsapp-message-preview); redirected to marketing/campaigns (ledger, rest-en#128); ZD-1's Marketing campaigns
+ZD-E-89eff626	capability	CM-SUP-001	core		questions;create			a reading: 'Create Question', a question and its answer for a product (page text rest-en#129); ZD-1's Questions
+ZD-E-9c59ec65	capability	CM-CNT-003	core		online-store;pages			a reading: the store's pages, with the tabs Custom Pages and Legal Pages (page text rest-en#131), ZD-1's Pages; a container of custom and legal (notes)
+ZD-E-19b67c8e	capability	CM-CNT-003	core		pages;custom			a reading: 'Custom Pages': 'Edit the content of the pages to appear at the bottom of the store or add custom pages' (page text rest-en#131)
+ZD-E-122fe589	capability	CM-CNT-003	core		pages			a reading: the Pages index route, redirected to its custom pages (ledger, rest-en#130)
+ZD-E-f4f3fe69	capability	CM-CNT-008	core		legal			a reading: 'Legal Pages': Privacy policy, Terms and conditions, Exchange and returns, Complaints and suggestions (page text gaps-en#54), the kinds the cell names; ZD-4's legal pages
+ZD-E-f4f3fe69	capability	CM-CNT-003	core		legal			a reading: the legal pages are a tab of the store's Pages, 'Custom Pages' and 'Legal Pages' (page text gaps-en#54): a kind of the parent's pages
+ZD-E-929308f5	capability	CM-SFR-001	core		online-store;brand			a reading: the store's identity for the storefront, as ZD-1's Brand (page text rest-en#132)
+ZD-E-280c26a1	capability	CM-CAT-003	core		categories;arrange			a reading: arranging the product categories; redirected to catalog/categories (ledger, rest-en#133); as ZD-4's categories/:id/arrange
+ZD-E-71bc29c4	capability	CM-ANL-002	core		reports;inventory			a reading: the inventory report, of stock availability, value and locations (page text rest-en#134); ZD-1's Inventory reports
+ZD-E-93d093bf	capability	CM-ANL-002	core		reports;customers			a reading: 'Customers reports': each customer's life time value, average order value, number of orders and loyalty points (page text rest-en#135)
+ZD-E-6096dcdb	capability	CM-TAX-007	core		zatca-integration	ZATCA		a reading: the integration with ZATCA's e-invoicing (Fatoora), ZD-1's Fatoora platform integration (page text gaps-en#46)
+ZD-E-1ef1ed03	capability	CM-STF-003	core		team;groups			a reading: one staff group, by its id (module imports pos-permissions-list, settings-groups-form-info); not opened; ZD-1's Groups
+ZD-E-1948ffa0	capability	CM-LOY-006	core		gift-card-builder			a reading: 'Gift card builder': the gift's card size, background and visible fields (store logo, recipient name, message, sender name, QR code) (page text rest-en#136); the card sent with a gift, not a stored-value gift card (CM-LOY-002's note)
+ZD-E-420d4eb7	capability	CM-NTF-004	core		whatsapp;settings	WhatsApp		a reading: the WhatsApp section's settings, ZD-1's Settings (page text rest-en#137)
+ZD-E-865a8c68	capability	CM-LOY-004	core		loyalty;content			a reading: 'Loyalty program content': the loyalty program's title and content in Arabic and English (page text rest-en#138); ZD-1's Loyalty program
+ZD-E-87750c63	capability	CM-PLN-005	core		checkout;checkout-redirect			a reading: the return from the payment of the store's purchase from Zid (module imports checkout-redirect, checkout-return-to, payment-methods); redirected on the demo (ledger); the checkout pays for a plan (devstore-billing-en#5: 'Complete purchase')
+ZD-E-59ef9515	capability	CM-CNT-005	core		online-store;menu			a reading: the storefront's main menu, ZD-1's Menu (page text rest-en#140)
+ZD-E-34fc36e7	capability	CM-SUP-006	core		online-store;faqs			a reading: the store's FAQ for its buyers, ZD-1's FAQs (page text rest-en#141)
+ZD-E-5d52b06c	capability	CM-CNT-004	core		online-store;blog			a reading: the store's blog, ZD-1's Blog (page text rest-en#142)
+ZD-E-a06e9bf9	capability	CM-CHN-006	core		mobile-app;banner			a reading: 'App download advertisement from the store': the store's app's download ad (page text rest-en#143), in the Mobile app section
+ZD-E-a06e9bf9	capability	CM-SFR-007	core		banner			a reading: 'Use this feature to show the app download ad on your store' (page text rest-en#143): an advertisement the storefront shows; unsure (notes)
+ZD-E-aa38a381	capability	CM-CHN-006	core		mobile-app			a reading: the Mobile app section's index: 'Create an app that reflects your store’s identity to boost customer loyalty and drive repeat purchases.' (page text rest-en#144); ZD-1's Mobile app
+ZD-E-7205aa03	capability	CM-INV-005	core		inventories;create			a reading: creating an inventory address, its name, country, city and national address, which may be 'Set as a default inventory' (page text rest-en#145); ZD-1's Inventory
+ZD-E-8cb29c32	capability	CM-INV-005	core		inventories			a reading: the Inventory index, its page the store's inventory addresses (page text gaps-en#34); ZD-1's Inventory
+ZD-E-8cb29c32	capability	CM-INV-001	core		inventories			a reading: the parent route of stock management, stock taking, transfer requests and withdrawal priority (ZD-4's catalog/inventories routes), as ZD-1's corrected line for the Inventory container
+ZD-E-4c97ac5c	capability	CM-SEL-005	core		preorder-campaigns			a reading: the store's preorder campaigns (page text rest-en#146); ZD-1's Preorder campaigns
+ZD-E-ac12b4e7	capability	CM-CAT-003	core		categories;create			a reading: 'Create category': 'Control your store categories and insert its image or descriptions' (page text rest-en#147)
+ZD-E-612a15d9	capability	CM-ANL-001	core		analytics;marketing			a reading: the marketing analytics, by tab (module imports use-get-analytics-marketing-summary-details, top-products-table); not opened; an analytics page of the section, as ZD-1's Operational and Financial
+ZD-E-15e601c1	capability	CM-ANL-001	core		insights;analyst			a reading: 'Ask Zid Insights about sales, products, or customers and get an answer grounded in your store data.', in chats with a history (page text rest-en#148); a page of ZD-1's Zid Insights; unsure (notes)
+ZD-E-33cf2c41	capability	CM-LOY-006	core		gifting-settings			a reading: 'Gifting lets your customers buy a product on behalf of someone else, add a personalized message and a branded gift card, and have it delivered as a gift.' (page text rest-en#150); ZD-1's Gifting settings
+ZD-E-059686d1	capability	CM-LOY-006	core		gifting-settings;message-templates			a reading: the gift messages' templates (module imports use-gifting-settings-outlet-context, normalize-notification-messages); opened on the activation page (rest-en#150)
+ZD-E-b329d96f	capability	CM-LOY-006	core		gifting-settings;categories			a reading: the categories available as gifts ('which products and categories are available as gifts', page text rest-en#151); opened on the activation page
+ZD-E-acec9d34	capability	CM-LOY-006	core		gifting-settings;products			a reading: the products available as gifts (module imports product-card-options); opened on the activation page (rest-en#152)
+ZD-E-29371cea	capability	CM-LOY-006	core		gifting-settings			a reading: the gifting settings' index (module imports use-gifting-settings-update, app-switch); opened on the activation page, 'Activate gifting' (rest-en#149)
+ZD-E-dd6f77a1	capability	CM-PAY-005	core		payments;payouts			a reading: Zid Payments' payouts (module imports bank-id-to-logo, empty-state-payout) (page text rest-en#153); ZD-1's Payouts
+ZD-E-bd7d1c23	capability	CM-PAY-015	core		payments;mis-pay	mis-pay		a reading: 'By choosing mispay, customers can easily split payments in 3 monthly installments with no fees or interests.' (page text rest-en#154); the page also reads 'By: Zid' (notes)
+ZD-E-e492ac7d	capability	CM-SHP-001	core		logistics			a reading: the Logistics section's index, with local delivery, pickup and shipments (page text rest-en#155); ZD-1's Logistics
+ZD-E-8454bbf9	capability	CM-PAY-026	core		financing			a reading: 'Zid Financing is an integrated solution to grow your online store through a smooth activation journey with a flexible and automated payment plan' (page text rest-en#156); ZD-1's Financing
+ZD-E-e2eab10b	capability	CM-LOY-004	core		mokafaa-program	Mokafaa		a reading: Mokafaa's program page; redirected to marketing/mokafaa (ledger, rest-en#157), ZD-1's Mokafaa program
+ZD-E-e2eab10b	capability	CM-PAY-012	core		mokafaa-program			a reading: Mokafaa's points, which pay in the store: 'Enable customers to pay partially or fully with points' (page text rest-en#157), as ZD-1's Mokafaa program
+ZD-E-be24b859	capability	CM-LOY-003	core		cashback-offers			a reading: 'Track the cashback offers you've created and choose the active offer for your store.' (page text rest-en#158); ZD-1's Cashback offers
+ZD-E-47b892e3	capability	CM-PLN-004	core		finance;invoice-not-ready			a reading: 'Your invoice is being processed in the tax system (Fatora platform)' (page text rest-en#159): Zid's invoice to the store, in the Finance section of its billing
+ZD-E-18995962	capability	CM-PLN-001	core		billing;packages			a reading: 'Select your plan', 'Monthly payment plan' or 'Annual payment plan', with Rise at 99 'Per month' (page text en#18): the plans offered to the store
+ZD-E-3e7fa95d	capability	CM-CNT-007	core		online-store;seo			a reading: 'Improve your store visibility with built-in SEO tools' (page text rest-en#160); ZD-1's SEO
+ZD-E-1661ea01	capability	CM-CAT-001	core		products;deleted			a reading: 'Trash bin': 'Browse through deleted product data from the last 60 days and restore them with ease.' (page text rest-en#161): the store's deleted products
+ZD-E-4f3a7d6e	capability	CM-CAT-001	core		products;arrange			a reading: 'Product sorting', each product's position, with 'Reset product arrange' (page text rest-en#162); unsure (notes)
+ZD-E-c27094a5	capability	CM-ANL-001	core		insights			a reading: 'Zid Insights monitors store performance, explains what changed, and highlights what deserves review.' (page text rest-en#163); ZD-1's Zid Insights
+ZD-E-b4e26d9f	capability	CM-ANL-001	core		insights			a reading: Zid Insights by tab (module imports insights-analytics, app-area-chart); opened with its index (rest-en#163)
+ZD-E-6f26cb52	capability	CM-ORD-001	core		orders-products			a reading: its order properties (page text gaps-en#9); ZD-1's Orders and products properties
+ZD-E-6f26cb52	capability	CM-CAT-001	core		orders-products			a reading: its product properties (page text gaps-en#9); ZD-1's Orders and products properties
+ZD-E-d200e936	capability	CM-MKS-001	core		markets;create			a reading: creating a market (module imports form-step-market-details-schema, form-add-products, market-limit-upgrade-dialog); redirected to Settings on the demo (ledger, rest-en#164), as GAPS.md says of the flag must_use_markets_pricing; ZD-1's Markets
+ZD-E-996c7b1f	capability	CM-MIG-004	core		export-requests			a reading: 'View all your export requests, download files, and manage export options' (page text rest-en#165); ZD-1's Export requests
+ZD-E-e9e0a122	capability	CM-NTF-004	core		whatsapp	WhatsApp		a reading: 'Zid WhatsApp is built right into your dashboard: same customers, same orders, same data.' (page text rest-en#166); ZD-1's Whatsapp
+ZD-E-305593e8	capability	CM-PAY-015	core		payments;tamara	Tamara		a reading: Tamara's page in the Payments section, activated by 'Submit a business account opening request' or 'I have a Tamara business account already' (page text rest-en#167); the page also reads 'By: Zid' (notes)
+ZD-E-33814d9d	capability	CM-PAY-002	core		payments			a reading: the Payments section's index, with payment networks and the payouts summary (page text rest-en#168); ZD-1's Payments
+ZD-E-83b464fc	capability	CM-SHP-001	core		logistics;zones			a reading: shipping zones (module imports zone-confirm-dialog, zone-status); 'This feature is not enabled for your store.' (page text rest-en#169); ZD-1's Zones, which source.js lists under showNewZones (notes)
+ZD-E-201cb7c4	capability	CM-PTN-005	core		growth;services			a reading: 'Browse growth services', 'Recommended growth services for you', each with its price, such as 'Store Content Writing' and 'Paid Campaign Management' (page text rest-en#170); ZD-1's Growth; no provider named in the list (notes)
+ZD-E-029a7589	capability	CM-ONB-004	core		onboarding-wizard			a reading: the onboarding wizard: 'Which step would you like to start with?', with 'Add Products to Sell', 'Add Your Branding', 'Support phone number', 'Pickup Location' and 'Get verified in seconds' (page text rest-en#171): the store's setup wizard
+ZD-E-8e8c28ff	capability	CM-MKT-001	core		discounts			a reading: one discount, by its id (module imports form-schema, select-customer-groups); not opened; ZD-1's Discounts
+ZD-E-8e8c28ff	capability	CM-MKT-002	core		discounts			a reading: one discount, a coupon, by its id; not opened; as ZD-1's corrected line for Discounts
+ZD-E-2be696c5	capability	CM-MKT-007	core		campaigns			a reading: one marketing campaign, by its id (module imports campaign-status-chip, message-log-status, resend-confirm-dialog); not opened; ZD-1's Marketing campaigns
+ZD-E-c994e6a0	capability	CM-MKT-018	core		bank-discounts			a reading: 'Bank Discounts', each with its discount name and bank name (page text en-3#2); ZD-1's Bank discounts
+ZD-E-c868d75c	capability	CM-PLN-006	core		wallet;withdraw			a reading: 'Withdraw from wallet', to the store's bank account (page text en-3#3): Zid Wallet, the cell's Finance > Wallet
+ZD-E-fe756f9c	capability	CM-CUS-002	core		groups;create			a reading: 'Create group': 'Add one or more conditions to automatically determine which customers are included in the group.' (page text en-3#4)
+ZD-E-dc7d225c	capability	CM-ANL-002	core		reports			a reading: the Reports index: 'Sales reports' and 'Inventory reports' (page text en-3#5)
+ZD-E-45c9bef2	capability	CM-PAY-015	core		payments;tabby	Tabby		a reading: 'Let your customers shop now and split their purchases into 4 interest-free payments while you get paid in full-upfront.', with 'Select how to activate with Tabby' (page text rest-en#172); the page also reads 'By: Zid' (notes)
+ZD-E-a13d71e0	capability	CM-PAY-015	core		payments;madfu	Madfu		a reading: 'MADFU helps you boost your store sales by enabling your customers to split their bills into flexible and convenient installments.' (page text rest-en#173); the page also reads 'By: Zid' (notes)
+ZD-E-5e0c7515	capability	CM-PAY-026	core		financing;info			a reading: 'Financing information': the funding amount, the amount paid off and remaining, the deposit date and the 'Financing contract' (page text rest-en#174); ZD-1's Financing
+ZD-E-36de6d4e	capability	CM-ORD-003	core		orders;customize-status			a reading: 'Customize status': 'Edit and manage your custom order status flow', with New, Preparing, Ready and In delivery (page text rest-en#175)
+ZD-E-8ec6a657	capability	CM-ORD-002	core		orders;edit			a reading: editing an order, by its id; not opened
+ZD-E-62d2e461	capability	CM-ORD-002	core		orders;edit			a reading: editing an order by a token (module imports order-details-shipping-address-card, courier-pickup-branch-dialog); not opened
+ZD-E-cf8a9104	capability	CM-SEL-006	core		bundle-offers			a reading: the store's bundle offers, all, active, expired and not started (page text rest-en#176); ZD-1's Bundle offers
+ZD-E-829a5e08	capability	CM-PLN-004	core		billing;addons			a reading: 'Add-ons' the store buys from Zid, such as 'Campaign text messages', 'Domain Renewal', 'Team Members', 'Mazeed Package' and 'Hosting Store's Customer Data in Saudi Arabia' (page text gaps-en#43), the cell's Value Added Services; each add-on's own capability in the notes
+ZD-E-9d428f75	capability	CM-INV-005	core		inventories			a reading: one inventory address, by its id (module imports inventories, app-map-branded); not opened; ZD-1's Inventory
+ZD-E-9d428f75	capability	CM-SHP-007	core		inventories			a reading: the inventory's pickup options (module imports pickup-option-create-dialog, pickup-option-edit-dialog); not opened; unsure (notes)
+ZD-E-7396f015	capability	CM-CAT-002	core		options;create			a reading: 'Create option', its name, type and values (page text rest-en#177); ZD-1's Options library
+ZD-E-3ed67a78	capability	CM-SFR-013	core		filters;create			a reading: 'Create filter', its name, values and filtration type (page text rest-en#178); ZD-1's Filters
+ZD-E-fa18f875	capability	CM-CAT-003	core		categories			a reading: one category, by its id (module imports select-category, zid-editor); not opened; ZD-1's Categories
+ZD-E-8ed14cad	capability	CM-ANL-002	core		reports;sales			a reading: 'Sales reports': 'Monthly breakdown of orders, revenue, costs, and shipping performance', marked 'This report will be deprecated soon' (page text rest-en#179)
+ZD-E-4b7c6f1e	capability	CM-ANL-003	core		analytics			a reading: the Analytics index by tab (module imports analytics-grid, top-products-table, payment-methods-chart); not opened; ZD-1's All analytics
+ZD-E-24e6ffc1	capability	CM-CNT-009	core		url-redirects			a reading: 'URL Redirects', 'Create New Link' (page text rest-en#180); ZD-1's URL redirects
+ZD-E-e45d2644	capability	CM-TAX-007	core		connect-zatca	ZATCA		a reading: connecting to ZATCA's Fatoora platform in two steps, 'Information' and 'OTP verification', with the company's legal name and VAT number (page text rest-en#181); ZD-1's Fatoora platform integration
+ZD-E-fb79bbe7	capability	CM-PTN-005	core		growth			a reading: the Growth section's index: 'Request a growth specialist to help you grow', 'Your relationship manager' and 'Zid community' (page text rest-en#182); ZD-1's Growth
+ZD-E-38338a91	capability	CM-CHK-007	core		abandoned-carts			a reading: 'Track and recover abandoned shopping carts to boost your sales conversion' (page text rest-en#183); ZD-1's Abandoned carts
+ZD-E-38338a91	capability	CM-MKT-022	core		abandoned-carts			a reading: 'Manage reminders' for the carts (page text rest-en#183), as ZD-1's corrected line for Abandoned carts
+ZD-E-19c06e61	capability	CM-PLN-006	core		wallet;verify			a reading: 'Verify wallet': 'Confirm info', the owner's ID number, business type and bank account (page text rest-en#184), the cell's verification before a withdrawal
+ZD-E-19c06e61	capability	CM-TRU-002	core		verify			a reading: verifying the person behind the wallet by 'ID number' and 'Business type', 'Individual' or 'Company' (page text rest-en#184)
+ZD-E-9b0266dc	capability	CM-SUP-005	core		support			a reading: one customer ticket, by its id (module imports ticket-status); not opened; ZD-1's Customer Tickets
+ZD-E-7fe03dc1	capability	CM-POS-001	core		pos;subscribe			a reading: 'Add New Cashier': 'Please select the number of cashier licenses after choosing your package.' (page text rest-en#185); ZD-1's POS
+ZD-E-7fe03dc1	capability	CM-POS-002	core		pos;subscribe			a reading: the POS subscription's packages include a 'Tablet' and a 'Tablet stand' beside 'Software Only' (page text rest-en#185); unsure (notes)
+ZD-E-4441d621	capability	CM-CAT-005	core		brands;create			a reading: 'Create brand to improve storefront navigation, marketing campaigns, and SEO.' (page text rest-en#186); ZD-1's Brands
+ZD-E-677eb6f6	capability	CM-STF-003	core		team;groups			a reading: the staff groups list, 'Groups', 'Create' (page text gaps-en#29); ZD-1's Groups
+ZD-E-f535e745	capability	CM-STF-001	core		team;create			a reading: adding a 'Team member' with its 'Team member details' (page text gaps-en#31); ZD-1's Team
+ZD-E-f535e745	capability	CM-STF-002	core		team;create			a reading: the team member's permissions, set in the same form (module imports pos-permissions-list, app-tabs), as ZD-1's corrected line for Team
+ZD-E-a5de44db	capability	CM-SFR-008	core		domains			a reading: one domain, by its id (module imports use-domain-availability, domain-chips); not opened; ZD-1's Domains list
+ZD-E-d5f6b8c9	capability	CM-ORD-008	core		orders;summaries			a reading: the summaries of several orders (module imports printable-components, printable-barcode); not opened; the order summary is the cell's ZD-S-0823; unsure (notes)
+ZD-E-0f2302fd	capability	CM-PLN-006	core		wallet;funds			a reading: 'Add funds to wallet' by credit cards or bank transfer (page text rest-en#187), the cell's Finance > Wallet
+ZD-E-c50d0b00	capability	CM-CUS-002	core		groups			a reading: one customer group, by its id (module imports modify-filters, use-customer-groups-conditions-menu-items); not opened
+ZD-E-85a2d173	capability	CM-POS-001	core		pos;settings			a reading: 'POS settings': 'Configure POS location-based access, order settings, and notifications.' (page text rest-en#188); ZD-1's POS settings
+ZD-E-dc12ee31	capability	CM-POS-001	core		pos;freemium			a reading: 'Start POS Go', 'Activate POS Go': 'Create and complete pickup transactions easily through ZidPOS app' (page text rest-en#189)
+ZD-E-887adc97	capability	CM-POS-001	core		pos;cashiers			a reading: the POS's cashiers, 'Add Cashier' (page text rest-en#190); ZD-1's Cashiers
+ZD-E-620af450	capability	CM-CAT-001	core		products			a reading: one product, by its id (module imports product-form, inventories-selector, select-brand); opened on the development store (devstore-markets-en#34)
+ZD-E-173fdeea	capability	CM-ANL-001	core		analytics;operational			a reading: 'Analytics operational': 'Fulfillment and delivery timing insights' (page text rest-en#191); ZD-1's Operational
+ZD-E-1ac52794	capability	CM-TAX-001	core		tax;create			a reading: 'Add new country tax': 'Select country', 'Tax number', 'VAT percentage' and 'VAT certificate' (page text rest-en#192); ZD-1's Tax settings
+ZD-E-1ac52794	capability	CM-TAX-003	core		tax;create			a reading: the country's tax number and VAT certificate the store records (page text rest-en#192), the cell's own reading of Zid's tax settings (ZD-S-0817)
+ZD-E-647ce00b	capability	CM-ACC-006	core		information			a reading: 'Store information' (page text gaps-en#50); ZD-1's Store information
+ZD-E-647ce00b	capability	CM-ACC-004	core		information			a reading: the store's business data, as ZD-1's corrected line for Store information
+ZD-E-cb45b2ea	capability	CM-SHP-001	core		constraints			a reading: 'Shipping constraints' (page text gaps-en#11); ZD-1's Shipping and payment constraints
+ZD-E-cb45b2ea	capability	CM-PAY-019	core		constraints			a reading: 'Payment constraints' (page text gaps-en#11); ZD-1's Shipping and payment constraints
+ZD-E-f884f461	capability	CM-ORD-008	core		orders;invoices			a reading: the invoices of several orders (module imports invoice, printable-components); not opened
+ZD-E-48d6dc3f	capability	CM-ORD-008	core		orders;invoices			a reading: one order's invoices (module imports invoice, printable-components); not opened
+ZD-E-fb8db3ba	capability	CM-MKT-014	core		affiliates			a reading: 'Add affiliates, set commissions, attribute orders, and track payouts easily.' (page text rest-en#193); ZD-1's Affiliates
+ZD-E-322d0a4e	capability	CM-POS-001	core		pos;reports			a reading: the POS's reports: 'Sales report', 'Payment report' and 'Sessions history' (page text rest-en#194); ZD-1's Reports
+ZD-E-f0555462	capability	CM-CAT-002	core		options			a reading: one product option, by its id; not opened; ZD-1's Options library
+ZD-E-4935f576	capability	CM-SFR-013	core		filters			a reading: one filter, by its id; not opened; ZD-1's Filters
+ZD-E-ad139347	capability	CM-TRU-003	core		team;logs			a reading: 'Audit Log': 'Only actions from the last 30 days are shown below.' (page text gaps-en#32), under the settings' Team: a log of the staff's actions
+ZD-E-452a895a	capability	CM-ORD-008	core		orders;summary			a reading: one order's summary (module imports printable-components, printable-barcode); not opened; the order summary is the cell's ZD-S-0823; unsure (notes)
+ZD-E-578c53a2	capability	CM-LOY-008	core		referrals			a reading: 'Customer referrals program': 'Your customers gets a code, and when a friend they invite orders, both get rewarded.' (page text rest-en#195); ZD-1's Customer Referrals, now CM-LOY-008
+ZD-E-88372c5f	capability	CM-LOY-004	core		new-qitaf	Qitaf		a reading: Qitaf, 'a loyalty program from STC', 'to redeem points for purchases from your store' (page text rest-en#196); ZD-1's Qitaf
+ZD-E-88372c5f	capability	CM-PAY-012	core		new-qitaf			a reading: Qitaf's points redeemed 'for purchases from your store' (page text rest-en#196), as ZD-1's corrected line for Qitaf
+ZD-E-94b7b5ed	capability	CM-MKT-001	core		discounts			a reading: 'Encourage your customers to purchase and come back again with coupons, automatic discounts, progressive offers, and free shipping.' (page text rest-en#197); ZD-1's Discounts
+ZD-E-94b7b5ed	capability	CM-MKT-002	core		discounts			a reading: its coupons, as ZD-1's corrected line for Discounts (rest-en#197)
+ZD-E-feb3197a	capability	CM-MKT-007	core		campaigns			a reading: 'Marketing Campaign', with its 'SMS status' and 'Whatsapp status' (page text rest-en#198); ZD-1's Marketing campaigns
+ZD-E-19c8cce8	capability	CM-SUP-001	core		questions			a reading: 'Set up a question and answer section for each of your listed products.' (page text rest-en#199); ZD-1's Questions
+ZD-E-d0bbf97b	capability	CM-POS-001	core		pos			a reading: 'Zid POS is a cashier system and point of sale' (page text rest-en#200); ZD-1's POS
+ZD-E-512e7ea4	capability	CM-CAT-005	core		brands			a reading: one brand, by its id (module imports form-seo); not opened; ZD-1's Brands
+ZD-E-cec51610	capability	CM-ANL-001	core		analytics;logistics			a reading: 'Logistics analytics' (page text rest-en#201); ZD-1's Logistics
+ZD-E-09870f2f	capability	CM-ANL-001	core		analytics;financial			a reading: 'Financial analytics': 'Comprehensive snapshot of sales, VAT, discounts, and channel performance' (page text rest-en#202); ZD-1's Financial
+ZD-E-b4deea4d	capability	CM-ONB-004	core		five-sales-journey			a reading: '5 Sales Journey' (dashboard-locales, pages:fiveSalesJourney.title): 'Almost there, let's reach your first 5 sales', a list of steps to 'Mark as complete' (page text rest-en#203): the store's setup tasks
+ZD-E-edf2fb01	capability	CM-STF-001	core		team			a reading: one team member, by its id (module imports settings-team-form-info, generate-pass-code); not opened; ZD-1's Team
+ZD-E-edf2fb01	capability	CM-STF-002	core		team			a reading: the team member's permissions, in the same form (module imports app-tabs, inventory-selector), as ZD-1's corrected line for Team; not opened
+ZD-E-27af3117	capability	CM-ORD-005	core		orders;drafts			a reading: one manual order, by its id (module imports courier-pickup-branch-dialog, calculate-discount-percentage); not opened; the drafts list is titled 'Manual orders' (page text rest-en#233)
+ZD-E-24b225f5	capability	CM-RET-003	core		orders;return			a reading: an order's return, by the order's id (module imports order-product-mobile-nested-products, reseller-product-price); not opened
+ZD-E-483c2cf9	capability	CM-POS-001	core		pos;sales			a reading: the POS's sales, by invoice number (page text rest-en#204); ZD-1's Sales
+ZD-E-e86c0397	capability	CM-CAT-003	core		catalog;categories			a reading: 'Categories': 'Manage categories with custom images & descriptions' (page text rest-en#205); ZD-1's Categories
+ZD-E-30067ca7	capability	CM-APP-007	core		apps;embedded			a reading: an app's own page shown inside the dashboard, by the app's id (module imports permissions-consent-dialog, app-scope-icons); not opened; as ZD-1's corrected lines for the apps' embedded pages
+ZD-E-93823a61	capability	CM-ANL-001	core		analytics;products			a reading: 'Analytics products': 'Product-level sales performance and customer ordering behavior' (page text rest-en#206): an analytics page of the section
+ZD-E-e063723f	capability	CM-ANL-001	core		analytics;payments			a reading: 'Payments analytics': 'Summary of payment transaction status, failures, and settlements' (page text rest-en#207); ZD-1's Payments
+ZD-E-7674e7cc	capability	CM-TAX-001	core		tax			a reading: one country's tax, by its id (module imports tax-country); not opened; ZD-1's Tax settings
+ZD-E-7674e7cc	capability	CM-TAX-003	core		tax			a reading: the country's tax number and certificate, as its create page holds them (page text rest-en#192); not opened
+ZD-E-d933670c	capability	CM-TRU-001	core		security			a reading: 'Security settings': 'Manage your store security settings', with the 'Verification method' (page text gaps-en#4); ZD-1's Security settings
+ZD-E-96dc249b	capability	CM-CHK-001	core		checkout			a reading: 'Checkout page options': 'Optimize your checkout page to enhance customer experience and boost conversions.' (page text gaps-en#6); ZD-1's Checkout page options
+ZD-E-337f7598	capability	CM-LOY-004	core		mokafaa	Mokafaa		a reading: 'Mokafaa is a loyalty program from Al Rajhi Bank that rewards customers with points for every purchase.' (page text rest-en#157); ZD-1's Mokafaa program
+ZD-E-337f7598	capability	CM-PAY-012	core		mokafaa			a reading: 'Enable customers to pay partially or fully with points' (page text rest-en#157), as ZD-1's corrected line for Mokafaa
+ZD-E-7f349f11	capability	CM-LOY-004	core		loyalty			a reading: the store's loyalty program, points earned from the store and Zid cashier (page text rest-en#86); ZD-1's Loyalty program
+ZD-E-d88da9d1	capability	CM-SUP-005	core		customers;support			a reading: 'Customer Tickets' (page text rest-en#209); ZD-1's Customer Tickets
+ZD-E-ff7efed4	capability	CM-SUP-001	core		customers;reviews			a reading: 'Enable customers to leave product reviews that help other shoppers' (page text rest-en#210); ZD-1's Reviews
+ZD-E-3db5c130	capability	CM-APP-002	core		apps;solution			a reading: one solution's page in the App Market, titled 'Solution' (dashboard-locales, pages:marketAppSolution.title; module imports rating-line, markdown-it); not opened; unsure (notes)
+ZD-E-d592f4f7	capability	CM-SFR-002	core		theme-editor			a reading: the theme editor, by the theme's id (module imports use-market-theme-customize, zid-editor, translate-2); not opened
+ZD-E-b9794db1	capability	CM-MKS-001	core		markets			a reading: 'Markets': 'By default, all markets use your store's active theme.' (page text gaps-en#10); ZD-1's Markets
+ZD-E-6e2c1658	capability	CM-ORD-008	core		invoice			a reading: 'Invoice settings': 'Generate invoices via Zid' (page text gaps-en#8); ZD-1's Configure your invoices
+ZD-E-38a8008d	capability	CM-LOY-006	core		gifting			a reading: 'Gift options': 'Enable your customers to send gifts to other people on their behalf' (page text rest-en#211); ZD-1's Gift options
+ZD-E-d86854dd	capability	CM-SFR-008	core		domains			a reading: the store's domains list (page text gaps-en#33); ZD-1's Domains list
+ZD-E-4b448e1a	capability	CM-ACC-001	core		account			a reading: 'Account settings', the 'Account details' (page text gaps-en#3); ZD-1's Account settings
+ZD-E-0ea9b247	capability	CM-MKT-005	core		marketing			a reading: the Marketing section's index, its 'Upcoming seasons' (page text rest-en#212); ZD-1's Marketing
+ZD-E-f42dc72d	capability	CM-LOY-001	core		customers;wallet			a reading: 'Customer wallets', with the 'Outstanding balance' and 'Total rewards' (page text rest-en#213); ZD-1's Customer wallet
+ZD-E-0d89705e	capability	CM-CUS-002	core		customers;groups			a reading: 'Customer groups': 'Your customers organized into groups for easier tracking and management' (page text rest-en#214)
+ZD-E-9a24f79c	capability	CM-CUS-001	core		customers;create			a reading: 'Add a new customer', of type 'Individual' or 'Company' (page text rest-en#215)
+ZD-E-1d93b7d0	capability	CM-CUS-001	core		customers			a reading: 'Customer list': 'Everything about your customers, in one place' (page text rest-en#216), the Customers section's index; a container of the customers' routes (notes)
+ZD-E-3856594e	capability	CM-CAT-001	core		catalog;products			a reading: 'Products', 'All products' (page text rest-en#217)
+ZD-E-5155bc0d	capability	CM-ACC-006	core		settings			a reading: the Settings index, whose page lists every setting (page text gaps-en#2); ZD-1's Settings, a container (notes)
+ZD-E-5f1a1e80	new	new:Services	core		services			a reading: the dashboard's Services section (الخدمات, dashboard-locales navbar:services), parent of payments, logistics, WhatsApp, financing and growth; its page promotes payments, financing and shipping: 'Make buying easier with multiple payment options' (page text rest-en#218); a container (notes)
+ZD-E-f979a43b	capability	CM-LOY-004	core		qitaf	Qitaf		a reading: Qitaf, 'Ability to redeem through qitaf balance', with 'Submitting requests to activate the Qitaf program is currently suspended.' (page text rest-en#219); ZD-1's Qitaf
+ZD-E-f979a43b	capability	CM-PAY-012	core		qitaf			a reading: 'Ability to redeem through qitaf balance' (page text rest-en#219), as ZD-1's corrected line for Qitaf
+ZD-E-e2a9921c	capability	CM-PAY-026	core		finance;credits			a reading: 'Credits': 'Financing Activation Is Needed !' (page text rest-en#220): the credits of Zid Financing
+ZD-E-a21cabe4	capability	CM-PLN-001	core		finance;billing			a reading: 'Billing': the 'Current package', its 'Expiry date' and 'Package name' (page text gaps-en#41)
+ZD-E-a21cabe4	capability	CM-PLN-004	core		billing			a reading: the Billing page of Zid's charges to the store (page text gaps-en#41), the parent of ZD-4's billing transactions
+ZD-E-e93cf5e8	capability	CM-PLN-005	core		checkout			a reading: the checkout of the store's purchases from Zid: a plan paid by 'Credit card', 'Complete purchase' (devstore-billing-en#5); the module imports use-noon-credit-card, payment-methods
+ZD-E-ac2bd84d	capability	CM-CHN-001	core		channels			a reading: the Channels section's index, under which the sidebar lists Marketplaces, Mobile app and POS (page text rest-en#221); ZD-1's Channels
+ZD-E-3d750949	capability	CM-CAT-002	core		catalog;options			a reading: 'Options library' (page text rest-en#222); ZD-1's Options library
+ZD-E-fd97e372	capability	CM-SFR-013	core		catalog;filters			a reading: 'Control how filters are displayed to customers in your store' (page text rest-en#223); ZD-1's Filters
+ZD-E-c5c485bd	capability	CM-APP-003	core		apps;plans			a reading: an app's plans, by the app's id (module imports use-plan-period-filter, is-sar), the app's pricing the merchant pays through Zid as the cell reads it; not opened; unsure (notes)
+ZD-E-3f3e7729	capability	CM-ONB-003	core		support;create			a reading: 'Create ticket': 'Creating your support ticket...', 'Please describe your request in detail so we can help you faster.' (page text rest-en#224): the merchant's ticket to Zid
+ZD-E-298fa6a0	capability	CM-ONB-003	core		support			a reading: 'Merchant support', the store's tickets to Zid by category and status, such as 'Request-Pricing' (page text rest-en#225); the Support section's index
+ZD-E-51c25270	capability	CM-PLN-006	core		finance;wallet			a reading: 'Wallet details': the 'Current balance', 'Withdraw' and 'Add Funds' (page text rest-en#226), the cell's Finance > Wallet
+ZD-E-eec5060c	capability	CM-PLN-006	core		finance			a reading: the Finance section's index: 'Current wallet balance' (page text rest-en#227), the cell's المالية > المحفظة; a container (notes)
+ZD-E-eec5060c	capability	CM-PAY-005	core		finance			a reading: the same page's 'Current online store payment balance' and 'Payout transactions' (page text rest-en#227)
+ZD-E-7d77621f	capability	CM-CAT-005	core		catalog;brands			a reading: 'Manage brands with custom logo & descriptions for better SEO.' (page text rest-en#228); ZD-1's Brands
+ZD-E-c80c8853	capability	CM-CAT-001	core		catalog			a reading: the Catalog section's index, redirected to its products (ledger, rest-en#229); a container (notes)
+ZD-E-7b94dcf7	capability	CM-APP-001	core		apps;installed			a reading: the store's installed apps, each with 'Deactivate' and 'Rate' (page text gaps-en#36); ZD-1's My apps
+ZD-E-4e5e423d	capability	CM-ANL-004	core		analytics;live			a reading: 'Live analytics': 'Real-time analytics and visitor tracking' (page text rest-en#230); ZD-1's Live analytics
+ZD-E-e38673db	capability	CM-NTF-002	core		notifications			a reading: 'Notification center', by 'Orders', 'Abandoned carts', 'Payments', 'Logistics', 'Store activity' and 'Subscriptions' (page text rest-en#231): notices to the store's staff in the dashboard
+ZD-E-d2a8725b	capability	CM-STF-001	core		team			a reading: the store's team (page text gaps-en#28); ZD-1's Team
+ZD-E-d2a8725b	capability	CM-STF-002	core		team			a reading: the team members' permissions, as ZD-1's corrected line for Team
+ZD-E-01ed3f06	new	new:Search	core		search			a reading: the dashboard's search (بحث, dashboard-locales navbar:search; module imports use-initial-search-category, navbar-new-product-dialog); opened: 'Oops! Something broke' (rest-en#232); a place of its own; not CM-SFR-013, the storefront's search for buyers (notes)
+ZD-E-61eef07c	capability	CM-ORD-005	core		orders;drafts			a reading: 'Manual orders', each with its reference, customer and dates (page text rest-en#233)
+ZD-E-bea90466	capability	CM-ORD-001	core		orders			a reading: 'Orders': 'Manage all of your store's orders' (page text rest-en#234), the Orders section's index
+ZD-E-351aae2b	capability	CM-CUS-001	core		customers			a reading: one customer, by its id (module imports customer-dialog, use-customer-wallet-status, orders-columns); not opened
+ZD-E-30f6d997	capability	CM-TAX-001	core		tax			a reading: the store's tax settings (opened at gaps-en#12); ZD-1's Tax settings
+ZD-E-5b13cf77	capability	CM-ONB-003	core		support			a reading: one support ticket to Zid, by its id (module imports ticket-status, ticket-info-sidebar); not opened; the Support section's tickets
+ZD-E-5d6fc404	capability	CM-APP-002	core		apps;browse			a reading: 'Browse apps' in the 'App market', by category (page text gaps-en#38); ZD-1's App Market
+ZD-E-4c5828c5	capability	CM-APP-001	core		apps			a reading: the Apps section's index, the App Market's featured apps (page text gaps-en#37); ZD-1's Apps
+ZD-E-4c5828c5	capability	CM-APP-002	core		apps			a reading: the App Market, 'Featured apps' (page text gaps-en#37); ZD-1's App Market
+ZD-E-36aa82f1	capability	CM-ORD-001	core		orders			a reading: one order, by its id (module imports shipment-details-dialog, orders-columns); not opened
+ZD-E-a99ac50c	capability	CM-APP-002	core		apps			a reading: one app's page in the App Market, such as the Google Analytics app the development store opened and activated (devstore-tracking-apps-en, actions.jsonl, steps 6 to 12)
+ZD-E-3151f141	capability	CM-ANL-003	core		stores			a reading: the store's index route, its home: 'Welcome back, Zid Demo Store' with the last 90 days and quick access (page text en#2), as ZD-4's store route
+ZD-E-5c9f864c	out							 a reading: out: the catch-all route of the store, which shows 'Oops! This page took a detour' (page text rest-en#235): a not-found page that names no place
