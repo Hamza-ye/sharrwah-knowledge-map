@@ -25,6 +25,8 @@
 #   new-vs:<structure>        the items whose name the named structure lacks
 #   where:<key>=<v1>|<v2>     the items whose field has one of the values; where:<key>!= keeps those where it is set
 #   labels:<pattern>          the items of the labels that match
+#   meta:<k1>,<k2>            adds one item per value of those keys of the structure's meta.json, where the extractor
+#                             kept what the platform states beside its items
 #   drop:<k1>,<k2>            leaves those fields out of the rendering
 #   drop-match:<pattern>      drops the items whose rendering matches
 #   translate:<en>,<ar>       resolves values that are keys of those translation files (paths from the structures folder)
@@ -156,7 +158,7 @@ def selection():
     return rows(path) if os.path.exists(path) else []
 
 
-RULE = re.compile(r";(?=\s*(?:rows|text|json1?|changes|dict|nested|new-vs|where|labels|drop|drop-match|translate|release):)")
+RULE = re.compile(r";(?=\s*(?:rows|text|json1?|changes|dict|nested|new-vs|where|labels|drop|drop-match|translate|release|meta):)")
 
 
 def rules(r):
@@ -273,6 +275,22 @@ def items_of(platform, structure, rs):
             out = [x for x in out if isinstance(x[4], dict) and str(x[4].get(k, "")) in vs]
     if "labels" in rd:
         out = [x for x in out if re.search(rd["labels"], x[0])]
+    if "meta" in rd:
+        # What the platform states beside its items, which the extractor kept in meta.json (BigCommerce's plan prices
+        # above its plan table): one entry per value of each named key, at its JSON pointer.
+        for m in sorted(glob.glob(os.path.join(base, "**", "meta.json"), recursive=True)):
+            try:
+                d = json.load(open(m, encoding="utf-8"))
+            except Exception:
+                continue
+            for k in rd["meta"].split(","):
+                if k not in d:
+                    continue
+                vs = d[k] if isinstance(d[k], list) else [d[k]]
+                for i, v in enumerate(vs):
+                    ptr = f"/{k}/{i}" if isinstance(d[k], list) else f"/{k}"
+                    out.append((os.path.relpath(os.path.dirname(m), base), os.path.relpath(m, root), 0, ptr,
+                                {"key": k, **v} if isinstance(v, dict) else {"key": k, "value": v}))
     return out
 
 

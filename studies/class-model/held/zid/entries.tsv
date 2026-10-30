@@ -897,6 +897,7 @@ ZD-E-ae486551	store-permissions	.	other-product-class@0d79b794f:zid/structures/s
 ZD-E-606eadd8	store-permissions	.	other-product-class@0d79b794f:zid/structures/store-permissions/items.jsonl	line 213		slug: manage.store.front.customization; name: (virtual)
 ZD-E-fdb14177	store-permissions	.	other-product-class@0d79b794f:zid/structures/store-permissions/items.jsonl	line 214		slug: create.store.orders; name: (virtual)
 ZD-E-aff5f52d	store-permissions	.	other-product-class@0d79b794f:zid/structures/store-permissions/items.jsonl	line 215		slug: edit.store.orders; name: (virtual)
+ZD-E-97986641	store-permissions	.	other-product-class@0d79b794f:zid/structures/store-permissions/meta.json	pointer /roles/0		key: roles; slug: store.owner; name: Store Owner
 ZD-E-daeb9cf6	store-plan-policies	.	other-product-class@0d79b794f:zid/structures/store-plan-policies/items.jsonl	line 1		key: abandoned_carts_analytics; enabled: true; available_in: {ar: النمو; en: Growth; package_key: new_growth}; policies: true
 ZD-E-25c73744	store-plan-policies	.	other-product-class@0d79b794f:zid/structures/store-plan-policies/items.jsonl	line 2		key: abandoned_carts_analytics.abandoned_cart_conversion_rate; enabled: true; available_in: {ar: النمو; en: Growth; package_key: new_growth}; policies: true
 ZD-E-1116d26c	store-plan-policies	.	other-product-class@0d79b794f:zid/structures/store-plan-policies/items.jsonl	line 3		key: abandoned_carts_analytics.abandoned_cart_sales_overtime; enabled: true; available_in: {ar: النمو; en: Growth; package_key: new_growth}; policies: true

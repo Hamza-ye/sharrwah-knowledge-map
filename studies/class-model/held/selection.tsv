@@ -227,7 +227,7 @@ zid	dashboard-page-index	yes		where		the dashboard's own index of its pages, wit
 zid	dashboard-route-manifest	yes		where		every route of the dashboard: its places, with those the page index doesn't title
 zid	plans-offered	yes	json:zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/purchasables/core-packages/packages/*.json;nested:variants,packages,features,advantages,common_advantages	decides		the plans offered to the store, monthly and yearly, with their prices and advantages, held as an answer
 zid	store-feature-flags	yes	json:zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/store/feature-flags/*.json;dict:feature_flags	decides		the store's feature flags, held as an answer: each flag and its value
-zid	store-permissions	yes		decides		the permissions a team member can be given, with the plans that restrict them
+zid	store-permissions	yes	meta:roles	decides		the permissions a team member can be given, with the plans that restrict them. Its meta.json lists the store's roles, read as entries (meta:)
 zid	store-plan-policies	yes		decides		every policy of the store's plan, with the plan each is available in: its plan lines
 zid	dashboard-locales	no				the dashboard's strings (33,722 lines), without places of their own; the page index gives its pages' titles, and the cells pass searches them
 zid	storefront-hreflang	no				the storefront's addresses per language and country: market data, the subjects'
