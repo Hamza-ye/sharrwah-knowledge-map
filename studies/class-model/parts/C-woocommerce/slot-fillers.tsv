@@ -1,2 +1,22 @@
 cap_id	platform	filler	key
 CM-ORD-006	woocommerce	Stripe (Stripe Radar)	WC-C-115/where/WC-S-0864
+CM-PAY-002	woocommerce	Stripe	WC-C-010/decides/WC-S-0513
+CM-PAY-002	woocommerce	Stripe	WC-C-011/decides/WC-S-0518
+CM-PAY-002	woocommerce	card networks	WC-C-011/decides/WC-S-0523
+CM-PAY-003	woocommerce	Stripe	WC-C-009/where/WC-S-0504
+CM-PAY-004	woocommerce	Stripe	WC-C-001/decides/WC-S-0651
+CM-PAY-004	woocommerce	Stripe	WC-C-008/reason/WC-S-0527
+CM-PAY-005	woocommerce	Stripe	WC-C-007/decides/WC-S-0532
+CM-PAY-005	woocommerce	Stripe	WC-C-007/decides/WC-S-0533
+CM-PAY-006	woocommerce	Stripe	WC-C-008/where/WC-S-0855
+CM-PAY-011	woocommerce	Stripe	WC-C-005/where/WC-S-0910
+CM-PAY-011	woocommerce	Square	WC-C-005/where/WC-S-0912
+CM-PAY-011	woocommerce	Stripe	WC-C-001/decides/WC-S-0651
+CM-PAY-011	woocommerce	PayPal	WC-C-001/decides/WC-S-0651
+CM-PAY-013	woocommerce	PayPal	WC-C-003/where/WC-S-0607
+CM-PAY-013	woocommerce	PayPal	WC-C-005/where/WC-S-0911
+CM-PAY-015	woocommerce	Affirm	WC-C-004/decides/WC-S-5020
+CM-PAY-015	woocommerce	Afterpay	WC-C-004/decides/WC-S-5020
+CM-PAY-015	woocommerce	Klarna	WC-C-004/decides/WC-S-5020
+CM-PAY-026	woocommerce	Stripe (Stripe Capital)	WC-C-016/where/WC-S-0559
+CM-PAY-028	woocommerce	Xero	WC-C-109/boundary/WC-S-5491

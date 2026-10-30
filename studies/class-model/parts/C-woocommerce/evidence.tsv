@@ -79,3 +79,175 @@ CM-ORD-013	woocommerce	shows	WC-C-091/boundary/WC-S-5443	a withdrawal request ad
 CM-PAY-019	woocommerce	extension-point	WC-C-087/boundary/WC-S-0784	guide Filtering payment methods in the Checkout block
 CM-CHK-008	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
 CM-ORD-006	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-001	woocommerce	core	WC-C-001/where/WC-S-0005	settings tab Payments
+CM-PAY-001	woocommerce	core	WC-C-001/where/WC-S-0029	settings section Payments > main
+CM-PAY-001	woocommerce	core	WC-C-001/where/WC-S-0059	admin menu Payments
+CM-PAY-001	woocommerce	core	WC-C-001/boundary/WC-S-0123	own API resource wc/v3 payment-gateways
+CM-PAY-001	woocommerce	core	WC-C-001/boundary/WC-S-0144	own API resource wc/v4 settings-payment-gateways
+CM-PAY-001	woocommerce	core	WC-C-001/boundary/WC-S-0686	payment gateways API: view and update gateways
+CM-PAY-001	woocommerce	core	WC-C-004/decides/WC-S-0618	payment extension list for each country
+CM-PAY-001	woocommerce	core	WC-C-004/decides/WC-S-0619	the list's order sets the suggestions' priority
+CM-PAY-001	woocommerce	core	WC-C-004/decides/WC-S-5013	list of payment extensions for a specific country
+CM-PAY-001	woocommerce	core	WC-C-004/where/WC-S-0425	onboarding task Set up payments
+CM-PAY-001	woocommerce	core	WC-C-004/where/WC-S-0417	task Set up additional payment options
+CM-PAY-001	woocommerce	core	WC-C-004/boundary/WC-S-0193	own resource wc-admin payment-gateway-suggestions
+CM-PAY-001	woocommerce	core	WC-C-004/where/WC-S-0616	fallback list held in core
+CM-PAY-001	woocommerce	core	WC-C-004/decides/WC-S-5009	setting Show Suggestions
+CM-PAY-001	woocommerce	core	WC-C-004/decides/WC-S-5010	Show Suggestions off: the fallback list
+CM-PAY-001	woocommerce	shows	WC-C-004/boundary/WC-S-5011	suggestions fetched from WooCommerce.com
+CM-PAY-001	woocommerce	shows	WC-C-004/decides/WC-S-5282	suggestions for store country SA
+CM-PAY-001	woocommerce	shows	WC-C-004/decides/WC-S-5286	suggestions for store country AE
+CM-PAY-001	woocommerce	shows	WC-C-004/decides/WC-S-5288	suggestions for store country YE
+CM-PAY-002	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-002	woocommerce	own-service	WC-C-006/where/WC-S-0909	WooPayments by Woo, fully integrated
+CM-PAY-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0460	maker: WooCommerce Ireland Ltd. for Woo Services
+CM-PAY-002	woocommerce	own-service	WC-I-0626	Automattic's terms list WooPayments among Woo Services
+CM-PAY-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	As part of WooPayments, we ... our obligations
+CM-PAY-002	woocommerce	own-service	WC-C-006/where/WC-S-0621	WooPayments owns the Payments menu item, native Woo payments solution
+CM-PAY-002	woocommerce	own-service	WC-C-011/decides/WC-S-0524	we may restrict or shut down the account
+CM-PAY-002	woocommerce	own-service	WC-C-011/decides/WC-S-0478	we may refuse, condition or suspend WooPayments
+CM-PAY-002	woocommerce	shows	WC-C-006/where/WC-S-0556	not required: one of many gateways
+CM-PAY-002	woocommerce	shows	WC-C-006/where/WC-S-0433	onboarding task Get paid with WooPayments
+CM-PAY-002	woocommerce	shows	WC-C-006/where/WC-S-0517	requires a WordPress.com account
+CM-PAY-002	woocommerce	shows	WC-C-006/boundary/WC-S-0555	requires a connection to WordPress.com
+CM-PAY-002	woocommerce	shows	WC-C-006/boundary/WC-S-0506	no access to the Stripe Dashboard
+CM-PAY-002	woocommerce	shows	WC-C-006/reason/WC-S-0854	integrates into the site's admin dashboard
+CM-PAY-002	woocommerce	shows	WC-C-006/responsible/WC-S-0520	terms accepted at Finish setup
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-0510	sign up if based in a supported country
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-0511	available for businesses in the listed countries
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-5290	the list of supported countries
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-0590	readme: countries where it is available
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-0512	the country where the business is registered
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-5291	U.S. outlying territories
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-5292	UK overseas territories not supported
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-5293	Kingdom of the Netherlands countries not supported
+CM-PAY-002	woocommerce	shows	WC-C-010/decides/WC-S-0515	new countries prioritized by requests
+CM-PAY-002	woocommerce	shows	WC-C-010/reason/WC-S-5294	working to make it available in other countries
+CM-PAY-002	woocommerce	outside	WC-C-010/decides/WC-S-0513	account types limited by Stripe, per country's laws
+CM-PAY-002	woocommerce	shows	WC-C-010/reason/WC-S-0514	UAE: Business account type only
+CM-PAY-002	woocommerce	outside	WC-C-011/decides/WC-S-0523	restrictions by card networks and payment processors
+CM-PAY-002	woocommerce	outside	WC-C-011/decides/WC-S-0518	Stripe found issues with the account
+CM-PAY-002	woocommerce	shows	WC-C-011/responsible/WC-S-0653	merchant may not benefit restricted businesses
+CM-PAY-002	woocommerce	shows	WC-C-011/responsible/WC-S-5325	merchant agrees not to accept restricted payments
+CM-PAY-002	woocommerce	shows	WC-C-011/where/WC-S-5324	full list of prohibited and restricted businesses
+CM-PAY-002	woocommerce	shows	WC-I-0640	legal agreement Restricted businesses and activities
+CM-PAY-002	woocommerce	shows	WC-C-011/boundary/WC-S-5295	restriction email from the WooCommerce team or Stripe
+CM-PAY-002	woocommerce	shows	WC-C-011/decides/WC-S-0525	CBD merchants must use Square or Viva Wallet
+CM-PAY-003	woocommerce	own-service	WC-C-009/decides/WC-S-0516	we must gather information before you use WooPayments
+CM-PAY-003	woocommerce	own-service	WC-C-009/where/WC-S-0522	we work with Stripe to confirm your identity
+CM-PAY-003	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-003	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-003	woocommerce	outside	WC-C-009/where/WC-S-0504	merchant verifies its information with Stripe
+CM-PAY-003	woocommerce	shows	WC-C-009/reason/WC-S-0521	same regulations as financial institutions
+CM-PAY-003	woocommerce	shows	WC-C-009/decides/WC-S-0558	account information retained for tax and compliance
+CM-PAY-004	woocommerce	outside	WC-C-001/decides/WC-S-0651	WooPayments is powered by Stripe
+CM-PAY-004	woocommerce	outside	WC-C-006/responsible/WC-S-0476	integrating with payment processing third parties
+CM-PAY-004	woocommerce	outside	WC-C-006/boundary/WC-S-0504	a Stripe Express account connected to WooPayments
+CM-PAY-004	woocommerce	outside	WC-C-008/reason/WC-S-0527	the payments processor (Stripe, in this case)
+CM-PAY-005	woocommerce	own-service	WC-C-007/where/WC-S-0529	balance regularly transferred to the bank account
+CM-PAY-005	woocommerce	own-service	WC-C-007/decides/WC-S-0531	payout timing by business location
+CM-PAY-005	woocommerce	own-service	WC-C-007/reason/WC-S-5289	a bank account problem prevents us from issuing a payout
+CM-PAY-005	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-005	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-005	woocommerce	outside	WC-C-007/decides/WC-S-0532	Stripe won't pay out to debit cards outside the U.S.
+CM-PAY-005	woocommerce	outside	WC-C-007/decides/WC-S-0533	Stripe found issues: payouts suspended
+CM-PAY-005	woocommerce	shows	WC-C-007/decides/WC-S-0530	balance held until a bank account is added
+CM-PAY-005	woocommerce	shows	WC-C-007/decides/WC-S-0536	payouts only in a single-currency country's currency
+CM-PAY-005	woocommerce	shows	WC-C-007/responsible/WC-S-0650	merchant responsible for a negative balance
+CM-PAY-005	woocommerce	shows	WC-I-0607	doc topic Payouts
+CM-PAY-006	woocommerce	outside	WC-C-008/where/WC-S-0855	Stripe, not WooPayments, applies and manages reserves
+CM-PAY-006	woocommerce	outside	WC-C-008/decides/WC-S-0526	Stripe decides whether to withhold the balance
+CM-PAY-006	woocommerce	outside	WC-C-008/decides/WC-S-0519	Stripe decides whether to withhold payouts
+CM-PAY-006	woocommerce	shows	WC-C-008/boundary/WC-S-0528	WooPayments' visibility into reserves is limited
+CM-PAY-006	woocommerce	shows	WC-C-008/boundary/WC-S-0856	Stripe's email names the reserve's type
+CM-PAY-006	woocommerce	shows	WC-C-008/reason/WC-S-0527	reserves protect the processor against refunds and disputes
+CM-PAY-007	woocommerce	own-service	WC-C-012/decides/WC-S-0537	the exact fees we charge differ by factors
+CM-PAY-007	woocommerce	own-service	WC-C-012/boundary/WC-S-0538	our fees deducted from each payment
+CM-PAY-007	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-007	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-009	woocommerce	own-service	WC-C-116/where/WC-S-5317	menu item Payments > Disputes
+CM-PAY-009	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-009	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-009	woocommerce	shows	WC-C-116/decides/WC-S-0866	a dispute occurs when a cardholder contests a payment
+CM-PAY-009	woocommerce	shows	WC-C-011/where/WC-S-5296	restricted accounts reach the Disputes menu
+CM-PAY-009	woocommerce	outside	WC-C-116/decides/WC-S-5321	the card issuer decides the outcome
+CM-PAY-011	woocommerce	extension-point	WC-C-001/where/WC-S-0623	gateways added through plugins
+CM-PAY-011	woocommerce	extension-point	WC-C-001/where/WC-S-0627	gateways created as plugins hooking into WooCommerce
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0434	abstract class WC_Payment_Gateway
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0435	filter woocommerce_payment_gateways
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0436	class WC_Payment_Gateway_CC
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0437	class WC_Payment_Gateway_ECheck
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0452	AbstractPaymentMethodType for the Checkout block
+CM-PAY-011	woocommerce	extension-point	WC-C-001/boundary/WC-S-0785	guide Payment method integration
+CM-PAY-011	woocommerce	extension-point	WC-C-005/where/WC-S-0698	Marketplace category Official payments
+CM-PAY-011	woocommerce	extension-point	WC-C-005/where/WC-S-0706	subcategory Processors & gateways
+CM-PAY-011	woocommerce	extension-point	WC-C-005/where/WC-S-0910	Stripe by Stripe extension
+CM-PAY-011	woocommerce	extension-point	WC-C-005/responsible/WC-S-0578	partners' Payments Solution under agreement with Automattic
+CM-PAY-011	woocommerce	own-service	WC-C-005/where/WC-S-0912	Square by Woo, Woo's preferred POS partner
+CM-PAY-011	woocommerce	outside	WC-C-001/decides/WC-S-0651	third-party services like Stripe or PayPal collect payment
+CM-PAY-011	woocommerce	outside	WC-C-005/boundary/WC-S-0564	data passed to the gateway's third party
+CM-PAY-011	woocommerce	outside	WC-C-005/decides/WC-S-0901	Stripe extension fees determined by Stripe
+CM-PAY-011	woocommerce	shows	WC-C-001/responsible/WC-S-0652	not involved in third-party services
+CM-PAY-011	woocommerce	shows	WC-C-005/responsible/WC-S-0487	third-party services not vetted by Automattic
+CM-PAY-011	woocommerce	shows	WC-C-001/responsible/WC-S-0475	third party's terms may apply
+CM-PAY-011	woocommerce	shows	WC-C-005/responsible/WC-S-0579	separate agreement for revenue on payments volume
+CM-PAY-011	woocommerce	shows	WC-C-005/boundary/WC-S-0902	the Square extension connects the store and Square
+CM-PAY-011	woocommerce	shows	WC-C-001/where/WC-S-0624	form-based gateways redirect to the processor
+CM-PAY-012	woocommerce	extension-point	WC-C-005/where/WC-S-0707	Marketplace subcategory Wallets & express checkouts
+CM-PAY-012	woocommerce	shows	WC-I-0383	payment extension suggestion amazon_pay
+CM-PAY-013	woocommerce	core	WC-C-003/where/WC-S-0283	gateway PayPal Standard
+CM-PAY-013	woocommerce	core	WC-C-003/boundary/WC-S-0128	own API resource paypal-standard
+CM-PAY-013	woocommerce	core	WC-C-003/boundary/WC-S-0129	own API resource paypal-webhooks
+CM-PAY-013	woocommerce	core	WC-C-003/boundary/WC-S-0130	own API resource paypal-buttons
+CM-PAY-013	woocommerce	core	WC-C-003/decides/WC-S-0608	not loaded by default on new installs
+CM-PAY-013	woocommerce	core	WC-C-003/decides/WC-S-5008	loaded where already enabled or used
+CM-PAY-013	woocommerce	outside	WC-C-003/where/WC-S-0607	redirects customers to PayPal
+CM-PAY-013	woocommerce	extension-point	WC-C-005/where/WC-S-0911	PayPal Payments by PayPal extension
+CM-PAY-013	woocommerce	shows	WC-C-003/boundary/WC-S-5007	WordPress.com proxy route for PayPal Standard
+CM-PAY-013	woocommerce	shows	WC-I-0371	payment extension suggestion paypal_full_stack
+CM-PAY-013	woocommerce	shows	WC-I-0372	payment extension suggestion paypal_wallet
+CM-PAY-014	woocommerce	own-service	WC-C-015/where/WC-S-0654	WooPay saves shipping and payment information for faster checkout
+CM-PAY-014	woocommerce	own-service	WC-C-015/decides/WC-S-0849	WooPay available as a checkout option with WooPayments
+CM-PAY-014	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-014	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-015	woocommerce	extension-point	WC-C-005/where/WC-S-0708	Marketplace subcategory Buy now pay later
+CM-PAY-015	woocommerce	shows	WC-I-0384	payment extension suggestion affirm
+CM-PAY-015	woocommerce	shows	WC-I-0385	payment extension suggestion afterpay
+CM-PAY-015	woocommerce	shows	WC-I-0386	payment extension suggestion clearpay
+CM-PAY-015	woocommerce	shows	WC-I-0387	payment extension suggestion klarna
+CM-PAY-015	woocommerce	shows	WC-C-004/decides/WC-S-5020	US suggestions: Affirm, Afterpay, Klarna
+CM-PAY-016	woocommerce	core	WC-C-002/where/WC-S-0030	settings section Payments > offline
+CM-PAY-016	woocommerce	core	WC-C-002/where/WC-S-0625	Offline: no online payment is made
+CM-PAY-016	woocommerce	core	WC-C-002/boundary/WC-S-0139	own API resource offline-payment-methods
+CM-PAY-016	woocommerce	core	WC-C-002/where/WC-S-0033	settings section Payments > cheque
+CM-PAY-016	woocommerce	core	WC-C-002/where/WC-S-0281	gateway Check payments
+CM-PAY-016	woocommerce	core	WC-C-002/where/WC-S-0606	take payments in person via checks
+CM-PAY-016	woocommerce	core	WC-C-002/decides/WC-S-5002	setting Enable check payments
+CM-PAY-016	woocommerce	core	WC-C-002/boundary/WC-S-5005	filter: check orders set On hold
+CM-PAY-017	woocommerce	shows	WC-C-006/decides/WC-S-0871	doc Local payment methods: cards by default
+CM-PAY-018	woocommerce	extension-point	WC-C-005/where/WC-S-0709	Marketplace subcategory Crypto payments
+CM-PAY-020	woocommerce	core	WC-C-002/boundary/WC-S-0604	process_payment sets the order Awaiting BACS payment
+CM-PAY-020	woocommerce	shows	WC-C-011/where/WC-S-5296	WooPayments' Transactions menu
+CM-PAY-021	woocommerce	own-service	WC-C-014/where/WC-S-0868	WooPayments' In-Person Payments: card reader or Tap to Pay
+CM-PAY-021	woocommerce	own-service	WC-C-006/where/WC-S-0557	maker: WooPayments designed by Woo for Woo
+CM-PAY-021	woocommerce	own-service	WC-C-006/responsible/WC-S-0459	maker: WooCommerce, Inc. for Woo Services
+CM-PAY-021	woocommerce	extension-point	WC-C-005/where/WC-S-0711	Marketplace subcategory In-person payments
+CM-PAY-022	woocommerce	core	WC-C-098/where/WC-S-0943	Payment Token API stores tokens for gateways
+CM-PAY-022	woocommerce	core	WC-C-098/boundary/WC-S-0438	class WC_Payment_Token
+CM-PAY-026	woocommerce	extension-point	WC-C-016/where/WC-S-0748	Marketplace subcategory Merchant financing
+CM-PAY-026	woocommerce	outside	WC-C-016/where/WC-S-0559	financing through Stripe's Stripe Capital program
+CM-PAY-028	woocommerce	extension-point	WC-C-109/where/WC-S-0754	Marketplace subcategory Accounting
+CM-PAY-028	woocommerce	extension-point	WC-C-109/boundary/WC-S-5491	Xero connected by an OAuth 2.0 app
+CM-PAY-028	woocommerce	extension-point	WC-C-109/decides/WC-S-5489	Xero setting Send Invoices
+CM-PAY-029	woocommerce	core	WC-C-002/where/WC-S-0031	settings section Payments > cod
+CM-PAY-029	woocommerce	core	WC-C-002/where/WC-S-0282	gateway Cash on delivery
+CM-PAY-029	woocommerce	core	WC-C-002/where/WC-S-0605	shoppers pay upon delivery
+CM-PAY-029	woocommerce	core	WC-C-002/decides/WC-S-5003	setting Enable cash on delivery
+CM-PAY-029	woocommerce	core	WC-C-002/boundary/WC-S-5006	filter: the order's status after a cash on delivery payment
+CM-PAY-030	woocommerce	core	WC-C-002/where/WC-S-0032	settings section Payments > bacs
+CM-PAY-030	woocommerce	core	WC-C-002/where/WC-S-0280	gateway Direct bank transfer
+CM-PAY-030	woocommerce	core	WC-C-002/where/WC-S-0603	direct bank/wire transfer
+CM-PAY-030	woocommerce	core	WC-C-002/decides/WC-S-5001	setting Enable bank transfer
+CM-PAY-030	woocommerce	core	WC-C-002/boundary/WC-S-5004	filter: bank transfer orders set On hold
+CM-PAY-019	woocommerce	extension-point	WC-C-001/boundary/WC-S-0784	the same guide, under WC-C-001's key

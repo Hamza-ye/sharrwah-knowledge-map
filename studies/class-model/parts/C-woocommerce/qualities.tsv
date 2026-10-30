@@ -1,1 +1,5 @@
 cap_id	platform	quality	value	key
+CM-PAY-002	woocommerce	WooPayments account type in the UAE	Therefore, only the Business account type is available for the UAE.	WC-C-010/reason/WC-S-0514
+CM-PAY-002	woocommerce	WooPayments for U.S. businesses: location	A business must be located in the 50 states, Washington D.C., or Puerto Rico to sign up with WooPayments as a U.S. business.	WC-C-010/decides/WC-S-5291
+CM-PAY-005	woocommerce	Payouts in a single-currency country	If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.	WC-C-007/decides/WC-S-0536
+CM-PAY-005	woocommerce	Payouts to debit cards outside the U.S.	what they will not do is send payouts to such cards.	WC-C-007/decides/WC-S-0532
