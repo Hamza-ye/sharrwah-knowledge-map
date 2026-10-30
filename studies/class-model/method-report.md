@@ -186,3 +186,29 @@ That is a little under section 10's 890, and about three and a half times the bu
 - **The review's size:** 862 items before domain C is merged, about 1,100 after. At the mapping's rates it may cost about 150 to 200 million, against section 13's 90 for the review and its corrections; it is re-projected after its first batch. That would put the extent near the top of its range, about a billion. By the standing decision of 27 October, the budget never costs evidence; the figure goes to the founder with the next report.
 - **Lesson:** a brief the coordinator writes alone, without a run on real data, carries the coordinator's blind spots. An inspector who runs the scripts finds them, as in section 1.
 
+
+## 15. Domain C, the merge of every domain, and the subjects' points brief (30 October, 09:20 to 12:45 UTC)
+
+- **Domain C is complete for all five platforms, in 27 parts and batches, 177.0 million.** The anchor ran in 12 batches: 89 capabilities, CHK 9, ORD 14, PAY 32, TAX 9, SHP 22, RET 3. WooCommerce ran in 5 and added order withdrawal requests (CM-RET-004); Zid in 4, adding order payment status (CM-ORD-015); BigCommerce in 3, adding the shipping rules engine (CM-SHP-023). A back-fill followed each, as the brief requires. C holds 93 capabilities: 89 `class`, and 4 `slot` (checkout UI extensions, cart and checkout validation, cart transform, and the fulfilment network offered in the admin).
+- **The merge of every domain** (`9d204b46`): 347 capabilities, every one of the 652 concerns landed once, 1,735 cells (each capability on all five platforms), 7,427 evidence rows and 397 rulings, with no problem. Across the model: 328 `class`, 16 `slot`, 3 `open: unplaced`. A class's count runs from one platform (83 capabilities) to all five (44). The merge leaves 175 flags for the final review: 87 `strained?`, 55 counted twice, 15 `one capability?` and 18 pairs ruled differently by two domains. The coordinator read the five counted twice where a cell rests on the statement alone. Each names several things or is a provider's statement, so each counts in each capability by the rules already set.
+- **The coordinator's rules applied in C, each a reading listed for the founder's veto:**
+  - **A statement that names several things counts in each:** a section titled for two subjects, a fee on a label, a scope pair, a list. A landing that holds one stays clean.
+  - **A Q1 match whose other side lands in a later part is written by that part.** The earlier side stays `single`, since a part's checker sees only its own landings.
+  - **A concern whose thing another domain holds is moved there,** by "One thing, one domain". WooCommerce's address autocomplete and Zid Voice went to D, and Zid's wallet deduction from Zid Pay to A.
+  - **A plan line is a place of its own,** so BigCommerce's Persistent cart became a capability under the cart, as the dry run's test says.
+  - **Maker evidence decided the services' placements:** Zid Pay is Zid's own service, on its terms, "العقد المبرم بين مستخدمي زد باي وشركة زد"; BigCommerce Payments is `core`, since no statement names BigCommerce's company as its maker; WooCommerce Shipping is Automattic's, on its terms.
+- **The subjects' points brief** (`briefs/P-points.md`, `method/land_points.py`) was inspected twice, at 45.8 million (`inspection-P.md`). The first inspection found 8 must-fix findings and 12 optional ones; the re-inspection resolved 18 of them and found 5 must-fix and 11 optional new ones. All were taken.
+  - **The routing:** the drafter records each conflict and the register rows it bears on, and the coordinator settles the fact first. Only a conflict that questions the evidence under the founder's own decision goes to the founder, with options and a recommendation.
+  - **The conflicts:** `count` and `placement` follow the model's own rules and don't overlap; a cell that already places the third party is no conflict.
+  - **The leads:** a page that is a corpus gives none, and the subjects' copies of help pages trace as the concern map cites them.
+  - **The outcomes**, `kept open` among them, are checked against the rows their conflict names.
+  - **The batches:** eight, each small enough to read whole.
+- **Lesson:** the first inspection's own wording brought one new fault, N2: a `placement` conflict on cells that already place the third party. An inspector's fix is a proposal, read again like the rest.
+- **Cost:** 789.7 million agent tokens by 12:45 UTC. The coordinating session's own tokens since 09:20: about 117 million. The projection to the end of the extent:
+  - the subjects' points, about 50;
+  - Q3's check, about 60;
+  - the final review, 150 to 200;
+  - its corrections, about 30;
+  - the architecture plan's review, about 10.
+
+  That is about 1.1 billion for the whole extent, within 1.05 to 1.2, and above section 14's "near a billion". By the standing decision of 27 October the budget never costs evidence, and the figure goes to the founder on the orientation page.
