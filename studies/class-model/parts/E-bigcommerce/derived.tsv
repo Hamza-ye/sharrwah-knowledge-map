@@ -15,10 +15,10 @@ CM-CNT-006	bigcommerce	none-held
 CM-CNT-007	bigcommerce	statements	core	Settings APIs		BC-C-047/responsible:stated only in general terms;BC-C-047/reason:searched, not found	general
 CM-CNT-008	bigcommerce	statements	not-stated			BC-C-086/reason:searched, not found	
 CM-CNT-009	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/store-content | /developer/api-reference/rest/admin/management/redirects		BC-C-041/decides:page not read;BC-C-041/responsible:stated only in general terms;BC-C-041/reason:searched, not found;BC-C-045/responsible:stated only in general terms	general
-CM-MKS-001	bigcommerce	none-held					
+CM-MKS-001	bigcommerce	statements	core	Multi-Storefront (MSF): separate storefronts per region	S02-BC-164=Catalyst | S02-BC-172=Catalyst | S02-BC-177=the tutorial's storefront channels for the US and Switzerland		general
 CM-MKS-002	bigcommerce	none-held					
 CM-MKS-003	bigcommerce	none-held					
-CM-MKS-004	bigcommerce	statements	core				general
+CM-MKS-004	bigcommerce	statements	core	Channel Manager › Domains			general
 CM-MKS-005	bigcommerce	statements	core				general
 CM-MKS-006	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/currencies | Settings > Setup > Currencies	BC-C-074/decides/BC-S-0400=plans Core, Growth, Scale, Performance (columns of the plan comparison table)		general
 CM-MKS-007	bigcommerce	statements	core;outside				general

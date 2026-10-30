@@ -21,7 +21,7 @@ CM-CUS-005	bigcommerce	none-held
 CM-CUS-006	bigcommerce	none-held					
 CM-CUS-007	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/customers/v3 | /developer/api-reference/rest/admin/management/subscribers		BC-C-032/decides:page not read;BC-C-032/responsible:stated only in general terms;BC-C-032/reason:searched, not found;BC-C-035/decides:page not read;BC-C-035/responsible:stated only in general terms;BC-C-035/reason:searched, not found	general
 CM-CUS-008	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/customers/v3		BC-C-032/decides:page not read;BC-C-032/responsible:stated only in general terms;BC-C-032/reason:searched, not found	general
-CM-CUS-009	bigcommerce	none-held					
+CM-CUS-009	bigcommerce	statements	core				general
 CM-CUS-010	bigcommerce	statements	core	/developer/api-reference/rest/admin/authentication-apis/current-customer/overview		BC-C-033/decides:page not read;BC-C-033/responsible:stated only in general terms	general
 CM-CUS-011	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/authentication-apis/customer-login-api/overview		BC-C-033/decides:page not read;BC-C-033/responsible:stated only in general terms	general
 CM-CUS-012	bigcommerce	none-held					
@@ -58,7 +58,7 @@ CM-MKT-021	bigcommerce	none-held
 CM-MKT-022	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/abandoned-cart-emails | /developer/api-reference/rest/admin/management/abandoned-carts | Settings > General > Miscellaneous	BC-C-015/decides/BC-S-0090=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-015/responsible:stated only in general terms;BC-C-015/reason:searched, not found	general
 CM-MKT-023	bigcommerce	statements	core	Beta Product Recommendations > Product Recommendations | Google Vertex AI	BC-C-013/decides/BC-S-0077=Product Recommendations API (closed beta) | BC-C-013/decides/BC-S-0078=BigCommerce Enterprise plans		general
 CM-NTF-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/content/email-templates | Marketing › Transactional Emails		BC-C-046/responsible:stated only in general terms;BC-C-046/reason:searched, not found	general
-CM-NTF-002	bigcommerce	none-held					
+CM-NTF-002	bigcommerce	statements	core				general
 CM-NTF-003	bigcommerce	none-held					
 CM-NTF-004	bigcommerce	none-held					
 CM-SUP-001	bigcommerce	statements	core	built-in comment system	BC-C-012/decides/BC-S-0073=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-012/responsible:stated only in general terms;BC-C-012/boundary:searched, not found;BC-C-012/reason:searched, not found	general

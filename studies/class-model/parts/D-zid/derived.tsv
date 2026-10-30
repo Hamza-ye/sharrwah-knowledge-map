@@ -7,7 +7,7 @@ CM-ANL-005	zid	none-held
 CM-ANL-006	zid	statements	core			ZD-C-019/reason:searched, not found	general
 CM-B2B-001	zid	statements	core			ZD-C-091/reason:searched, not found	general
 CM-B2B-002	zid	none-held					
-CM-B2B-003	zid	none-held					
+CM-B2B-003	zid	statements	core				general
 CM-CUS-001	zid	statements	core;extension-point	Merchant APIs > Customers | العملاء	ZD-C-091/decides/ZD-S-0481=staff permission | ZD-C-091/decides/ZD-S-0930=compare-plans: starter, launch, growth, pro	ZD-C-070/reason:searched, not found;ZD-C-091/reason:searched, not found	general
 CM-CUS-002	zid	statements	core			ZD-C-091/reason:searched, not found	general
 CM-CUS-003	zid	none-held					
@@ -15,7 +15,7 @@ CM-CUS-004	zid	none-held
 CM-CUS-005	zid	statements	core		ZD-C-091/decides/ZD-S-0931=compare-plans: starter, launch, growth, pro	ZD-C-091/reason:searched, not found	general
 CM-CUS-006	zid	none-held					
 CM-CUS-007	zid	none-held					
-CM-CUS-008	zid	none-held					
+CM-CUS-008	zid	statements	core	إعدادات صفحة إتمام عملية الشراء > طريقة تحديد عنوان العميل	S02-ZD-143=الشحنات داخل المملكة		general
 CM-CUS-009	zid	statements	core	تفعيل Google maps		ZD-C-103/decides:observation needed;ZD-C-103/responsible:stated only in general terms;ZD-C-103/boundary:searched, not found;ZD-C-103/reason:searched, not found	general
 CM-CUS-010	zid	statements	core			ZD-C-091/reason:searched, not found	general
 CM-CUS-011	zid	none-held					

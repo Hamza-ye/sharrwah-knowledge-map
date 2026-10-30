@@ -532,6 +532,7 @@ CM-PLN-001	salla	shows	SA-C-180/where/SA-S-2213	Salla policy page /policies/nd96
 CM-ACC-006	salla	core	SA-C-231/boundary/SA-S-5147	the store details the merchant can update: identity, customer service channels, the Business platform certificate, social accounts, the store app (the coordinator, from batch 7's lead)	A-anchor
 CM-TRU-008	salla	core	SA-C-232/decides/SA-S-0110	cash on delivery hidden from customers banned in Salla's other stores: Salla using what it knows across its stores to protect a store (the coordinator, a reading, after batch 7)	A-anchor
 CM-TRU-008	salla	core	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system analysing customers' data across Salla's stores (the coordinator, a reading, from C-anchor batch 7's lead)	A-anchor
+CM-ACC-008	salla	core	S02-SA-492	Salla's own onboarding turns away 'Other country': available in Saudi Arabia and the UAE (observed) (the coordinator, from the subjects' points: P-3 S02-VP-02, S02-VP-03)	A-anchor
 CM-ACC-001	woocommerce	shows	WC-C-080/where/WC-S-0883	WooCommerce extends WordPress's existing Administrator role	A-woocommerce
 CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0459	WooCommerce, Inc. outside the Designated Countries	A-woocommerce
 CM-ACC-002	woocommerce	shows	WC-C-023/responsible/WC-S-0460	WooCommerce Ireland Ltd. in the Designated Countries	A-woocommerce
@@ -701,6 +702,23 @@ CM-TRU-021	woocommerce	own-service	WC-C-117/boundary/WC-S-0955	orders' data sync
 CM-TRU-021	woocommerce	own-service	WC-C-117/responsible/WC-S-0962	maker: Automattic provides services through Jetpack	A-woocommerce
 CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0961	Jetpack's JSON API module can expose order details with PII	A-woocommerce
 CM-TRU-021	woocommerce	shows	WC-C-117/boundary/WC-S-0960	Stripe gives Automattic access to payment data, not stored	A-woocommerce
+CM-ONB-001	woocommerce	core	S02-WC-294	the onboarding's own question 'Where is your store located?' (core profiler) (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)	A-woocommerce
+CM-ONB-001	woocommerce	core	S02-WC-322	WooCommerce Setup: confirm your store location (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)	A-woocommerce
+CM-ONB-001	woocommerce	core	S02-WC-295	the profiler checks the chosen country against the visitor's location (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)	A-woocommerce
+CM-ONB-001	woocommerce	core	S02-WC-530	the geolocation notice as shown: located in Yemen, a store created in the United States (the coordinator, from the subjects' points: P-3 S02-VP-01, S02-VP-05)	A-woocommerce
+CM-STF-002	woocommerce	extension-point	S02-WC-463	an extension or plugin adjusts what each role can do, without editing code (the coordinator, from the subjects' points: P-7 S02-VP-72)	A-woocommerce
+CM-STF-002	woocommerce	extension-point	S02-WC-464	the plugins suggested for roles and capabilities (the coordinator, from the subjects' points: P-7 S02-VP-72)	A-woocommerce
+CM-TRU-006	woocommerce	extension-point	S02-WC-415	another extension provides the consent banner, through WP Consent API (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)	A-woocommerce
+CM-TRU-006	woocommerce	shows	S02-WC-448	WooCommerce's order attribution reads the consent given through WP Consent API (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)	A-woocommerce
+CM-TRU-006	woocommerce	shows	S02-WC-450	order attribution waits on the consent category (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)	A-woocommerce
+CM-TRU-006	woocommerce	shows	S02-WC-402	order attribution and consent (the coordinator, from the subjects' points: P-7 S02-VP-84; P-8 S02-VP-88)	A-woocommerce
+CM-ACC-009	woocommerce	extension-point	S02-WC-496	third-party developers and hosting providers integrating their systems with WooCommerce's coming soon mode (the coordinator, from the subjects' points: P-8 S02-VP-81)	A-woocommerce
+CM-ACC-009	woocommerce	extension-point	S02-WC-498	the coming soon mode synced with other plugins (the coordinator, from the subjects' points: P-8 S02-VP-81)	A-woocommerce
+CM-ACC-009	woocommerce	extension-point	S02-WC-499	syncing with a maintenance mode plugin (the coordinator, from the subjects' points: P-8 S02-VP-81)	A-woocommerce
+CM-ACC-009	woocommerce	extension-point	S02-WC-508	the filter that excludes pages from coming soon mode (the coordinator, from the subjects' points: P-8 S02-VP-81)	A-woocommerce
+CM-ACC-009	shopify	core	S02-SH-719	private mode: the online store's pages hidden from visitors and search engines (the coordinator, from the subjects' points: P-8 S02-VP-80, S02-VP-81)	A-backfill-woocommerce
+CM-ACC-009	shopify	core	S02-SH-720	a new store restricted to private mode by default until set up (the coordinator, from the subjects' points: P-8 S02-VP-80, S02-VP-81)	A-backfill-woocommerce
+CM-ACC-009	shopify	core	S02-SH-775	a trial store initially in private mode (the coordinator, from the subjects' points: P-8 S02-VP-80, S02-VP-81)	A-backfill-woocommerce
 CM-ACC-001	zid	core	ZD-C-077/where/ZD-S-0900	dashboard Settings > Account settings: email and password	A-zid
 CM-ACC-001	zid	core	ZD-I-0142	settings entry عام › اعدادات الحساب	A-zid
 CM-ACC-001	zid	core	ZD-C-077/decides/ZD-S-0901	plan line Account Details on every plan: edit personal account information	A-zid
@@ -852,6 +870,14 @@ CM-PLN-006	zid	core	ZD-C-018/decides/ZD-S-0662	a fixed amount (or a percentage) 
 CM-PLN-006	zid	core	ZD-C-018/boundary/ZD-S-0664	direct deduction from Zid Pay into the wallet (the coordinator, after C-zid batch 3)	A-zid
 CM-PLN-006	zid	shows	ZD-C-018/responsible/ZD-S-0663	the dues drawn from the merchant's Zid Pay balance (the coordinator, after C-zid batch 3)	A-zid
 CM-PLN-006	zid	shows	ZD-C-018/reason/ZD-S-0665	reason: a balance always there for the platform's services, such as shipping labels (the coordinator, after C-zid batch 3)	A-zid
+CM-PLN-007	zid	core	S02-ZD-476	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-477	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-478	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-479	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-480	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-481	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-482	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
+CM-PLN-007	zid	core	S02-ZD-483	Zid's own plan checkout: a VAT %15 line on its invoice (the coordinator, from the subjects' points: P-4 S02-VP-15)	A-zid
 CM-ACC-001	bigcommerce	shows	BC-C-086/where/BC-S-0469	the MSA's Store, configured with its own settings, payment methods and apps	A-bigcommerce
 CM-ACC-001	bigcommerce	shows	BC-C-086/responsible/BC-S-0471	the merchant is solely responsible for its Stores and Your Materials	A-bigcommerce
 CM-ACC-001	bigcommerce	shows	BC-C-055/boundary/BC-S-0300	the scope account_read: View account details	A-bigcommerce
@@ -975,6 +1001,15 @@ CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0152	plan line Open Payment Pr
 CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0153	plan line Orders through Embedded Payment Providers: $0 fee on every plan (the coordinator, after C-bigcommerce batch 2)	A-bigcommerce
 CM-PLN-003	bigcommerce	core	BC-C-026/responsible/BC-S-0158	Open Payment Provider Fees charged by Commerce, not by the payment provider (the coordinator, after C-bigcommerce batch 2)	A-bigcommerce
 CM-PLN-003	bigcommerce	shows	BC-C-026/responsible/BC-S-0159	no payment fees on orders through eligible Embedded Payment Providers; the provider's own fees still apply (the coordinator, after C-bigcommerce batch 2)	A-bigcommerce
+CM-PLN-004	bigcommerce	core	S02-BC-280	its own invoice: a payment not made, or a store in India, is paid by hand (the coordinator, from the subjects' points: P-4 S02-VP-14)	A-bigcommerce
+CM-PLN-004	bigcommerce	core	S02-BC-281	merchants in India pay the invoice by a link emailed on the billing date (the coordinator, from the subjects' points: P-4 S02-VP-14)	A-bigcommerce
+CM-PLN-007	bigcommerce	core	S02-BC-277	the account dashboard validates the merchant's VAT number with its issuing country (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)	A-bigcommerce
+CM-PLN-007	bigcommerce	core	S02-BC-359	the plan checkout: Taxes $0.00 (the store in one country) (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)	A-bigcommerce
+CM-PLN-007	bigcommerce	core	S02-BC-362	the plan checkout: Taxes $22.96 (the store in another country) (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)	A-bigcommerce
+CM-STF-002	bigcommerce	core	S02-BC-345	team permissions: a policy's targets, a store or the account (the coordinator, from the subjects' points: P-7 S02-VP-71)	A-bigcommerce
+CM-STF-002	bigcommerce	core	S02-BC-346	team permissions (the coordinator, from the subjects' points: P-7 S02-VP-71)	A-bigcommerce
+CM-STF-002	bigcommerce	core	S02-BC-347	each user's own account, its permissions limited to its role (the coordinator, from the subjects' points: P-7 S02-VP-71)	A-bigcommerce
+CM-STF-002	bigcommerce	core	S02-BC-348	user permissions (the coordinator, from the subjects' points: P-7 S02-VP-71)	A-bigcommerce
 CM-CAT-001	shopify	core	SH-C-020/where/SH-S-1509	the admin's main navigation item Products	B-anchor
 CM-CAT-001	shopify	core	SH-C-020/where/SH-S-5015	admin route products	B-anchor
 CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-5016	the route's eligibility: PRODUCTS permission, products entitlement	B-anchor
@@ -3295,6 +3330,9 @@ CM-PAY-006	salla	core	S01-SA-160	unverified stores' funds pending until verifica
 CM-PAY-006	salla	core	S01-SA-135	payment and settlement operations suspended until the store is verified (KSA) (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-anchor
 CM-PAY-006	salla	core	S01-SA-161	verification required to withdraw the store's balance and transfer the electronic payments balance (Saudi Arabia) (the coordinator, from the subjects' points: P-2 S01-VP-18)	C-anchor
 CM-PAY-011	salla	outside	S01-SA-107	payments transferred by Mokafaa Al Rajhi to the merchant's own account with it, its commission by their agreement (the coordinator, from the subjects' points: P-1 S01-VP-03)	C-anchor
+CM-PAY-003	shopify	outside	S02-SH-582	WorldFirst verifies the identity and business before Shopify Payments, in China (the coordinator, from the subjects' points: P-3 S02-VP-05)	C-anchor
+CM-TAX-008	shopify	outside	S02-SH-295	Shopify partners with Avalara for duty calculation, at 0.5% (observed, in a market) (the coordinator, from the subjects' points: P-6 S02-VP-58)	C-anchor
+CM-TAX-008	shopify	outside	S02-SH-986	Avalara provides the duty calculation (the coordinator, from the subjects' points: P-6 S02-VP-58)	C-anchor
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0162	Store API endpoint /checkout	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/boundary/WC-S-0163	Store API endpoint /checkout/{id}, checkout-order	C-woocommerce
 CM-CHK-001	woocommerce	core	WC-C-072/decides/WC-S-0928	setting Enable guest checkout (recommended)	C-woocommerce
@@ -3742,7 +3780,15 @@ CM-RET-004	woocommerce	core	WC-C-091/boundary/WC-S-5443	a matching request adds 
 CM-RET-004	woocommerce	shows	WC-C-091/responsible/WC-S-5442	does not guarantee compliance	C-woocommerce
 CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0314	customer email Order withdrawal request received; core in D's CM-NTF-001	C-woocommerce
 CM-RET-004	woocommerce	shows	WC-C-091/where/WC-S-0315	staff email Order withdrawal request; core in D's CM-NTF-002	C-woocommerce
+CM-PAY-017	woocommerce	own-service	S02-WC-320	WooPayments' local payment methods, shown by the buyer's billing country and currency (the coordinator, from the subjects' points: P-6 S02-VP-61)	C-woocommerce
+CM-PAY-017	woocommerce	own-service	S02-WC-321	WooPayments' local payment methods and their countries (the coordinator, from the subjects' points: P-6 S02-VP-61)	C-woocommerce
+CM-PAY-017	woocommerce	own-service	WC-C-006/where/WC-S-0557	the maker statement for WooPayments (the coordinator, from the subjects' points: P-6 S02-VP-61)	C-woocommerce
+CM-PAY-015	woocommerce	own-service	S02-WC-318	Affirm, Afterpay and Klarna with WooPayments, for buyers in the account's country and currency (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)	C-woocommerce
+CM-PAY-015	woocommerce	shows	S02-WC-319	Affirm's requirement on the site's languages (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)	C-woocommerce
+CM-PAY-015	woocommerce	own-service	WC-C-006/where/WC-S-0557	the maker statement for WooPayments (the coordinator, from the subjects' points: P-6 S02-VP-61, S02-VP-62)	C-woocommerce
 CM-RET-004	shopify	shows	SH-I-2129	help-centre section EU right of withdrawal compliance for merchants, placed in SH-C-175	C-backfill-woocommerce
+CM-RET-004	shopify	core	S02-SH-492	Managed Markets' right of withdrawal feature, set at Settings > Customer accounts, for the EU (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-backfill-woocommerce
+CM-RET-004	shopify	shows	S02-SH-491	Managed Markets applies compliant cancellation and return policies to EU customers' orders (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-backfill-woocommerce
 CM-CHK-001	zid	core	ZD-C-099/where/ZD-S-0961	Dashboard > Settings: the checkout page's options	C-zid
 CM-CHK-001	zid	core	ZD-C-099/boundary/ZD-S-0049	Zid's own API folder API's > Checkout	C-zid
 CM-CHK-001	zid	shows	ZD-C-111/where/ZD-S-0996	Settings > checkout page > Zid Assurance, an option of the page	C-zid
@@ -4290,6 +4336,12 @@ CM-PAY-006	bigcommerce	shows	S01-BC-083	funds held or blocked for several reason
 CM-PAY-015	bigcommerce	outside	S01-BC-094	PayPal Pay Later: the shopper owes the money to PayPal, and the merchant always gets paid (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
 CM-PAY-015	bigcommerce	outside	S01-BC-024	PayPal's Pay in 4 and Pay Monthly: customers pay in instalments while the merchant is paid up front (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
 CM-PAY-015	bigcommerce	extension-point	S01-BC-022	consumer financing integrations that guarantee the merchant is paid (the coordinator, from the subjects' points: P-2 S01-VP-22)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-330	return settings at Settings > Returns in the control panel (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-335	return reasons and actions reset to their defaults, and translated (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-336	the Manage Settings and Manage Returns permissions (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-339	return settings (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-340	return settings (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
+CM-RET-003	bigcommerce	core	S02-BC-341	return settings (the coordinator, from the subjects' points: P-6 S02-VP-65)	C-bigcommerce
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-5140	admin route customer, path customers	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-1515	its own Customers section name	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-0775	its own Customers label	D-anchor
@@ -5059,6 +5111,15 @@ CM-B2B-003	shopify	core	SH-C-044/decides/SH-S-7008	plan row Shopify B2B, catalog
 CM-B2B-003	shopify	core	SH-C-037/decides/SH-S-5534	entitlement markets.b2b.catalogs, limit 75000 on a Custom plan store	D-anchor
 CM-B2B-003	salla	shows	SA-C-098/boundary/SA-S-5047	set special prices for retail merchants in the wholesale market	D-anchor
 CM-NTF-002	salla	shows	SA-C-040/decides/SA-S-2492	order_notification (تلقي إشعارات بالطلبات الجديدة) in the permissions a partner can request (S7)	D-anchor
+CM-B2B-003	salla	core	S02-SA-155	a product hidden or shown in a market, with multiple markets on (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-B2B-003	salla	core	S02-SA-078	product prices set by hand for each market, on the product's page (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-B2B-003	salla	core	S02-SA-165	per-market product visibility (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-B2B-003	salla	core	S02-SA-281	per-market product lists (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-B2B-003	salla	core	S02-SA-082	per-market products (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-B2B-003	salla	core	S02-SA-024	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-anchor
+CM-CUS-009	shopify	core	S02-SH-240	Shopify's default address autocompletion, in the countries it lists (the coordinator, from the subjects' points: P-7 S02-VP-70 (the coordinator's own conflict))	D-anchor
+CM-NTF-004	shopify	core	S02-SH-871	the store's SMS Sender ID, from the store name in its contact details (the coordinator, from the subjects' points: P-8 S02-VP-82)	D-anchor
+CM-NTF-004	shopify	core	S02-SH-872	how the SMS Sender ID shows by country (the coordinator, from the subjects' points: P-8 S02-VP-82)	D-anchor
 CM-CUS-001	woocommerce	core	WC-C-073/where/WC-S-0042	admin page WooCommerce > Customers	D-woocommerce
 CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0088	REST resource wc/v3 > customers	D-woocommerce
 CM-CUS-001	woocommerce	core	WC-C-073/boundary/WC-S-0133	REST resource wc/v4 > customers	D-woocommerce
@@ -5271,6 +5332,12 @@ CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0307	staff email Payment gateway
 CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0315	staff email Order withdrawal request (WC_Email_Order_Withdrawal_Requested)	D-woocommerce
 CM-NTF-002	woocommerce	shows	WC-C-090/where/WC-S-0939	push notifications for the mobile apps: order notifications; core in G's CM-SRF-001, the mobile app, so it counts once (the coordinator, convention 8)	D-woocommerce
 CM-CUS-001	woocommerce	extension-point	WC-C-106/where/WC-S-0725	Marketplace category Customer service > Managing customers	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-142	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-143	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-145	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-151	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-156	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
+CM-CUS-008	woocommerce	core	S02-WC-159	WooCommerce's own WC_Countries: address formats and fields per country (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-woocommerce
 CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-7224	plan includes abandoned cart recovery features	D-backfill-woocommerce
 CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-7041	plan row Abandoned checkout recovery, Included on every plan	D-backfill-woocommerce
 CM-MKT-022	shopify	core	SH-C-050/decides/SH-S-5277	store entitlement abandonedCartRecovery true	D-backfill-woocommerce
@@ -5465,6 +5532,16 @@ CM-NTF-004	zid	shows	ZD-C-107/responsible/ZD-S-1052	restrictions and bans subjec
 CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1053	Meta decides restrictions on the number	D-zid
 CM-NTF-004	zid	shows	ZD-C-107/decides/ZD-S-1056	Meta updates its prices quarterly	D-zid
 CM-MKT-022	zid	core	ZD-I-0144	settings entry التواصل › تنبيهات زد, Zid Alerts (batch 2)	D-zid
+CM-B2B-003	zid	core	S02-ZD-010	the markets feature: product prices and availability managed per geographic market (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-011	a price per market and channel, in the market's currency (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-019	per-market product availability (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-020	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-021	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-489	per-market prices (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-B2B-003	zid	core	S02-ZD-493	per-market products (the coordinator, from the subjects' points: P-5 S02-VP-47, S02-VP-49)	D-zid
+CM-CUS-008	zid	core	S02-ZD-142	the checkout page's setting for how the customer's address is taken (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-zid
+CM-CUS-008	zid	core	S02-ZD-143	the national address (SPL) turned on and required for shipments (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-zid
+CM-CUS-008	zid	core	S02-ZD-144	the address fields (the coordinator, from the subjects' points: P-7 S02-VP-69)	D-zid
 CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0197	its own Customers V3 API: create and manage customers	D-bigcommerce
 CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0198	its own Storefront Customers API on hosted storefronts	D-bigcommerce
 CM-CUS-001	bigcommerce	core	BC-I-0039	its own API group Customers V2 (C2)	D-bigcommerce
@@ -5591,6 +5668,8 @@ CM-NTF-001	bigcommerce	core	BC-I-0242	webhook topic email/templates/deleted (C2)
 CM-NTF-001	bigcommerce	core	BC-I-0239	webhook topic settings/emailStatus/updated (C2)	D-bigcommerce
 CM-NTF-001	bigcommerce	core	BC-I-0240	webhook topic settings/emailStatus/deleted (C2)	D-bigcommerce
 CM-NTF-001	bigcommerce	core	BC-I-0248	webhook topic notifications/order/updated (C2)	D-bigcommerce
+CM-CUS-009	bigcommerce	core	S02-BC-304	Google Autocomplete for Addresses, in its checkout settings (the coordinator, from the subjects' points: P-7 S02-VP-70 (the coordinator's own conflict))	D-bigcommerce
+CM-NTF-002	bigcommerce	core	S02-BC-144	internal notifications configured for each storefront, in the control panel (the coordinator, from the subjects' points: P-8 S02-VP-89, S02-VP-90)	D-bigcommerce
 CM-B2B-004	shopify	extension-point	SH-I-1897	App Store category Pricing quote apps, placed in SH-C-020 (domain B)	D-backfill-bigcommerce
 CM-B2B-004	salla	core	SA-C-040/decides/SA-S-2288	staff permission order_browse_status_price_quote, group الطلبات	D-backfill-bigcommerce
 CM-B2B-004	salla	core	SA-C-040/decides/SA-S-3361	dashboard feature price-quote, released, plan special	D-backfill-bigcommerce
@@ -6182,6 +6261,8 @@ CM-MKS-006	salla	shows	SA-C-163/boundary/SA-S-1562	access scope Meta Data, which
 CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1048	own API folder Countries, under the boundary placement	E-anchor
 CM-MKS-009	salla	shows	SA-C-166/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no country	E-anchor
 CM-CNT-008	salla	core	SA-C-066/where/SA-S-5022	the privacy page can be added to the store as one of its information pages (the coordinator, from A-anchor batch 7's lead)	E-anchor
+CM-MKS-004	salla	core	S02-SA-052	a market's own subdomain, optional (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))	E-anchor
+CM-MKS-004	salla	core	S02-SA-102	a custom domain for the UAE market, its visitors redirected to it (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))	E-anchor
 CM-SFR-001	woocommerce	core	WC-C-111/where/WC-S-0418	onboarding task Choose your theme	E-woocommerce
 CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0194	admin API resource wc-admin > themes	E-woocommerce
 CM-SFR-001	woocommerce	core	WC-C-111/boundary/WC-S-0200	admin API resource onboarding/themes	E-woocommerce
@@ -6276,6 +6357,8 @@ CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0125	own REST route data-cont
 CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0210	own admin API DataCountries	E-woocommerce
 CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-5461	own filter woocommerce_countries	E-woocommerce
 CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0602	option Default customer location, under where	E-woocommerce
+CM-MKS-008	woocommerce	core	S02-WC-423	its own code sets customer emails to the store's locale (the coordinator, from the subjects' points: P-5 S02-VP-43)	E-woocommerce
+CM-MKS-008	woocommerce	shows	S02-WC-325	the shop shown in the site's locale, set in WordPress (the coordinator, from the subjects' points: P-5 S02-VP-43)	E-woocommerce
 CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-1073	dashboard section تصميم المتجر: design, logo and icon	E-zid
 CM-SFR-001	zid	core	ZD-C-113/where/ZD-S-0447	product line E-store	E-zid
 CM-SFR-001	zid	core	ZD-C-113/decides/ZD-S-0489	staff permission manage.store.front.customization	E-zid
@@ -6532,6 +6615,11 @@ CM-POS-001	bigcommerce	extension-point	BC-C-069/where/BC-S-0371	product line POS
 CM-POS-001	bigcommerce	extension-point	BC-I-0491	App Marketplace category POS & In-Store	E-bigcommerce
 CM-POS-001	bigcommerce	shows	BC-C-069/boundary/BC-S-0373	channel platform square of type pos	E-bigcommerce
 CM-SFR-014	bigcommerce	core	BC-C-038/where/BC-S-0219	Channels API manages a channel's sites	E-bigcommerce
+CM-MKS-001	bigcommerce	core	S02-BC-113	Multi-Storefront: separate storefronts per region, from one dashboard (the coordinator, from the subjects' points: P-4 S02-VP-26)	E-bigcommerce
+CM-MKS-001	bigcommerce	core	S02-BC-164	selling to several countries, each with its own language, currency and payment methods, on Multi-Storefront (the coordinator, from the subjects' points: P-4 S02-VP-26)	E-bigcommerce
+CM-MKS-001	bigcommerce	core	S02-BC-172	a storefront channel per locale-specific domain, for international selling (the coordinator, from the subjects' points: P-4 S02-VP-26)	E-bigcommerce
+CM-MKS-001	bigcommerce	core	S02-BC-177	one storefront channel for the US and another for Switzerland (the coordinator, from the subjects' points: P-4 S02-VP-26)	E-bigcommerce
+CM-MKS-004	bigcommerce	core	S02-BC-116	a localized domain or subdomain connected to a storefront in Channel Manager > Domains (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))	E-bigcommerce
 CM-CHN-007	shopify	core	SH-C-139/decides/SH-S-7056	plan row Build headless storefronts: 1 on three plans, 25 on Plus	E-backfill-bigcommerce
 CM-APP-001	shopify	core	SH-C-156/where/SH-S-1495	the admin navigation item Apps	F-anchor
 CM-APP-001	shopify	core	SH-C-156/decides/SH-S-5028	the apps list route, open to the staff permissions APPLICATIONS or LIMITED_APPLICATIONS	F-anchor

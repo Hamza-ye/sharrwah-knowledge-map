@@ -15,7 +15,7 @@ CM-CUS-004	woocommerce	none-held
 CM-CUS-005	woocommerce	none-held					
 CM-CUS-006	woocommerce	none-held					
 CM-CUS-007	woocommerce	statements	not-stated				
-CM-CUS-008	woocommerce	statements	not-stated	Overview		WC-C-047/responsible:stated only in general terms;WC-C-047/reason:searched, not found	
+CM-CUS-008	woocommerce	statements	core	Overview | WC_Countries::get_address_formats()		WC-C-047/responsible:stated only in general terms;WC-C-047/reason:searched, not found	general
 CM-CUS-009	woocommerce	statements	core;extension-point	Overview		WC-C-047/responsible:stated only in general terms;WC-C-047/reason:searched, not found	general
 CM-CUS-010	woocommerce	statements	core;extension-point	Accounts & Privacy | Extensions > Customer service > Customer Accounts | New account (WC_Email_Customer_New_Account) | Reset password (WC_Email_Customer_Reset_Password)		WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found;WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found	general
 CM-CUS-011	woocommerce	none-held					

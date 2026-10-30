@@ -90,6 +90,7 @@ CM-ACC-007	exact	decides	SA-C-002/decides/SA-S-2084	تفعيل وضع صيانة
 CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0122	Part I, D. (after limitation of liability)
 CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0131	Part I, A. Onboarding, KYC and underwriting
 CM-ACC-008	by landing	decides	SH-C-174/decides/SH-S-0353	Reasons for account holds
+CM-ACC-008	exact	decides	S02-SA-492	the onboarding's question Where is your business based?, answered Other country (translation keys countryOther.description)
 CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-0003	## 1. Entity identity
 CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
 CM-ACC-008	exact	decides	SA-C-167/decides/SA-S-3101	kyc_new_workflow
@@ -111,6 +112,13 @@ CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0648	8. j. Ecommerce Services: Pr
 CM-ACC-008	exact	decides	WC-C-028/decides/WC-S-0657	18. US Economic Sanctions
 CM-ACC-008	exact	decides	ZD-C-032/decides/ZD-S-0742	السعودية ودول الخليج
 CM-ACC-008	exact	decides	ZD-C-032/decides/ZD-S-0743	Is this available across the GCC?
+CM-ACC-009	exact	decides	S02-SH-719	Restrict access to your online store: private mode
+CM-ACC-009	exact	decides	S02-SH-720	Restrict access to your online store: store access when you first register for a Shopify plan
+CM-ACC-009	exact	decides	S02-SH-775	Trying Shopify with a free trial: private mode or inactive checkout
+CM-ACC-009	exact	boundary	S02-WC-496	Integrating with coming soon mode
+CM-ACC-009	exact	boundary	S02-WC-498	Integrating with coming soon mode: Syncing coming soon mode with other plugins
+CM-ACC-009	exact	boundary	S02-WC-499	Integrating with coming soon mode: Syncing coming soon mode with other plugins (use cases): maintenance mode plugin
+CM-ACC-009	exact	boundary	S02-WC-508	ComingSoonRequestHandler::should_show_coming_soon(): woocommerce_coming_soon_exclude
 CM-ACC-009	exact	boundary	WC-C-082/boundary/WC-S-0248	wc-admin > launch-your-store
 CM-ACC-009	exact	boundary	WC-C-082/boundary/WC-S-5423	update_option_woocommerce_coming_soon
 CM-ACC-009	exact	decides	WC-C-082/decides/WC-S-0891	WooCommerce Coming soon mode
@@ -1228,6 +1236,19 @@ CM-B2B-003	exact	boundary	BC-C-007/boundary/BC-S-0051	store/priceList/created
 CM-B2B-003	exact	boundary	BC-C-007/boundary/BC-S-0052	Products
 CM-B2B-003	exact	decides	BC-C-007/decides/BC-S-0049	Price Lists
 CM-B2B-003	exact	decides	BC-C-007/decides/BC-S-0050	Price List Assignment API
+CM-B2B-003	exact	decides	S02-SA-024	🚀الأسواق المتعددة
+CM-B2B-003	exact	decides	S02-SA-078	markets/product_prices#option.fixed.description
+CM-B2B-003	exact	decides	S02-SA-082	markets#auto_show_products_in_scope.description
+CM-B2B-003	exact	decides	S02-SA-155	❓في حال تغعيل ميزة الأسواق المتعددة، كيف يمكنني التحكم بإخفاء وإظهار المنتج في سوق معين؟
+CM-B2B-003	exact	decides	S02-SA-165	🌍إدارة المنتجات في الأسواق المتعددة
+CM-B2B-003	exact	decides	S02-SA-281	Control product quantities across store markets
+CM-B2B-003	exact	decides	S02-ZD-010	خاصية الأسواق
+CM-B2B-003	exact	decides	S02-ZD-011	سعر مخصص لكل سوق وقناة
+CM-B2B-003	exact	decides	S02-ZD-019	خطوات إنشاء السوق > 2. إضافة المنتجات
+CM-B2B-003	exact	decides	S02-ZD-020	خطوات إنشاء السوق > 2. إعداد الأسعار > حدد طريقة إعداد السعر
+CM-B2B-003	exact	decides	S02-ZD-021	خطوات إنشاء السوق > 4. إدارة الأسعار
+CM-B2B-003	exact	decides	S02-ZD-489	settings:landingPage.markets.description (Settings > Markets)
+CM-B2B-003	exact	decides	S02-ZD-493	changelog.zid.sa/ar > المنتجات ١٨, ١٠, ٢٠٢٦ > كل سوق وله منتجاته وأسعاره.. وأنت تتحكم
 CM-B2B-003	exact	boundary	SA-C-098/boundary/SA-S-5047	edu.shipping_rule.message
 CM-B2B-003	exact	boundary	SH-C-037/boundary/SH-S-7226	catalogs
 CM-B2B-003	exact	boundary	SH-C-037/boundary/SH-S-7227	catalogCreate
@@ -1940,8 +1961,16 @@ CM-CUS-007	exact	boundary	WC-C-113/boundary/WC-S-5501	WooCommerce Customers list
 CM-CUS-007	exact	boundary	WC-C-113/boundary/WC-S-5502	mailpoet_subscription_before_subscribe
 CM-CUS-007	exact	decides	WC-C-113/decides/WC-S-5500	MailPoet > Settings > WooCommerce
 CM-CUS-008	by landing	boundary	SA-C-065/boundary/SA-S-1574	order.shipping.address.updated
+CM-CUS-008	exact	decides	S02-WC-143	woocommerce_localisation_address_formats (WC_Countries::get_address_formats())
+CM-CUS-008	exact	decides	S02-WC-145	woocommerce_formatted_address_force_country_display
+CM-CUS-008	exact	decides	S02-WC-151	woocommerce_get_country_locale (WC_Countries::get_country_locale())
+CM-CUS-008	exact	boundary	S02-WC-159	woocommerce_billing_fields; woocommerce_shipping_fields
+CM-CUS-008	exact	decides	S02-ZD-143	طريقة تحديد عنوان العميل > تفعيل العنوان الوطني (SPL)
+CM-CUS-008	exact	decides	S02-ZD-144	طريقة تحديد عنوان العميل > تخصيص العنوان حسب الدولة
 CM-CUS-008	exact	decides	SA-C-065/decides/SA-S-3031	saudi-national-address
 CM-CUS-008	exact	decides	SA-C-065/decides/SA-S-3139	national-address
+CM-CUS-009	exact	decides	S02-BC-304	Google Autocomplete for Addresses: Requirements: Manage Settings permission
+CM-CUS-009	exact	decides	S02-SH-240	Provide autocompletion in address fields {#checkout-setup-autocomplete-orderaddress}
 CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3119	google-maps-service
 CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3120	here-service
 CM-CUS-009	exact	decides	SA-C-065/decides/SA-S-3121	location-i-q-service
@@ -2289,6 +2318,9 @@ CM-MKS-001	by landing	boundary	SH-C-106/boundary/SH-S-6045	read_markets
 CM-MKS-001	by landing	boundary	SH-C-106/boundary/SH-S-6046	read_markets_home
 CM-MKS-001	by landing	decides	SH-C-106/decides/SH-S-5778	features.marketDrivenShipping
 CM-MKS-001	by landing	boundary	SH-C-113/boundary/SH-S-1285	markets_backup_region/update
+CM-MKS-001	exact	decides	S02-BC-164	Catalyst: selling internationally to multiple countries; Multi-Storefront (MSF) setup
+CM-MKS-001	exact	decides	S02-BC-172	Locale-specific URLs: Root domain, subdomain, or gTLD
+CM-MKS-001	exact	decides	S02-BC-177	Prerequisites: Multi-Storefront enabled
 CM-MKS-001	exact	boundary	SA-C-165/boundary/SA-S-0184	line 191 (GET /scopes, List Store Scopes)
 CM-MKS-001	exact	boundary	SA-C-165/boundary/SA-S-1055	Store Scopes
 CM-MKS-001	exact	decides	SA-C-165/decides/SA-S-0157	🚀الأسواق المتعددة
@@ -2343,6 +2375,8 @@ CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-0568	help.shopify.com/en/manual/i
 CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-0569	Merchant of record disclaimer at checkout
 CM-MKS-003	exact	decides	SH-C-110/decides/SH-S-5092	market:update:managed
 CM-MKS-004	exact	decides	BC-C-074/decides/BC-S-0402	Transactional currency
+CM-MKS-004	exact	decides	S02-SA-052	Does every market need its own domain?
+CM-MKS-004	exact	decides	S02-SA-102	أولاً- ضبط إعادة التوجيه
 CM-MKS-004	exact	decides	SA-C-163/decides/SA-S-0154	💡 توضيح مهم
 CM-MKS-004	exact	boundary	SH-C-111/boundary/SH-S-7458	MarketWebPresence
 CM-MKS-004	exact	decides	SH-C-111/decides/SH-S-7061	Assign local domains
@@ -2436,6 +2470,8 @@ CM-MKS-008	exact	boundary	BC-C-048/boundary/BC-S-0275	store/channel/{channel_id}
 CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0271	Settings V3: Store Locale
 CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0272	locales
 CM-MKS-008	exact	decides	BC-C-048/decides/BC-S-0273	locales
+CM-MKS-008	exact	decides	S02-WC-325	Set up WordPress in your language
+CM-MKS-008	exact	decides	S02-WC-423	WC_Email::setup_locale()
 CM-MKS-008	exact	boundary	SA-C-008/boundary/SA-S-1010	Multi-Language Support
 CM-MKS-008	exact	boundary	SA-C-008/boundary/SA-S-1562	metadata
 CM-MKS-008	exact	decides	SA-C-008/decides/SA-S-2074	إتاحة 40 لغة في المتجر
@@ -2824,6 +2860,7 @@ CM-NTF-001	exact	decides	WC-C-076/decides/WC-S-5413	deferred_transactional_email
 CM-NTF-001	exact	boundary	WC-C-106/boundary/WC-S-5483	pending_to_processing; pending_to_completed; failed_to_processing; failed_to_completed
 CM-NTF-001	exact	decides	WC-C-106/decides/WC-S-5481	Notification triggers
 CM-NTF-001	exact	boundary	ZD-C-111/boundary/ZD-S-0999	WhatsApp updates; badge
+CM-NTF-002	exact	decides	S02-BC-144	Features: multiple native storefronts
 CM-NTF-002	exact	decides	SA-C-040/decides/SA-S-2275	order_notification
 CM-NTF-002	exact	decides	SA-C-040/decides/SA-S-2492	order_notification
 CM-NTF-002	exact	decides	SH-C-150/decides/SH-S-5209	notification-settings:staff
@@ -2863,6 +2900,8 @@ CM-NTF-004	by landing	decides	SA-C-200/decides/SA-S-3087	whatsapp
 CM-NTF-004	by landing	decides	SA-C-200/decides/SA-S-3088	whatsapp-chat
 CM-NTF-004	by landing	decides	SA-C-200/decides/SA-S-3089	whatsapp-api
 CM-NTF-004	by landing	decides	SA-C-200/decides/SA-S-3391	whatsapp-communication
+CM-NTF-004	exact	decides	S02-SH-871	Considerations about SMS Sender IDs: store name
+CM-NTF-004	exact	decides	S02-SH-872	Considerations about SMS Sender IDs: countries and regions
 CM-NTF-004	exact	decides	SA-C-011/decides/SA-S-3344	sms-sender
 CM-NTF-004	exact	decides	SA-C-011/decides/SA-S-3348	sms-balance
 CM-NTF-004	exact	decides	SA-C-011/decides/SA-S-3352	sender-name
@@ -2885,6 +2924,9 @@ CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-0381	Professional: Standout Featu
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1053	ميتا
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1055	رصيد النقاط
 CM-NTF-004	exact	decides	ZD-C-107/decides/ZD-S-1056	شركة ميتا
+CM-ONB-001	exact	decides	S02-WC-295	core profiler: geolocation notice
+CM-ONB-001	exact	decides	S02-WC-322	WooCommerce Setup: Tell us a bit about your store
+CM-ONB-001	exact	decides	S02-WC-530	core profiler: geolocation notice, as shown with United States (US) — California chosen
 CM-ONB-001	exact	decides	SA-C-006/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
 CM-ONB-001	exact	decides	SA-C-167/decides/SA-S-0141	ثانياً: نظرة عامة عن متجرك
 CM-ONB-001	exact	decides	SH-C-006/decides/SH-S-0304	restrictions that apply to all users
@@ -3587,6 +3629,7 @@ CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0767	قوائم العقوبات
 CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0768	البلدان الخاضعة للعقوبات الدولية (الكويت)
 CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0770	تحديث الأنشطة المحظورة
 CM-PAY-002	exact	decides	ZD-C-037/decides/ZD-S-0771	Prohibited Activities
+CM-PAY-003	exact	decides	S02-SH-582	Requirements for using Shopify Payments in China
 CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0108	common.verification_required_tooltip
 CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0132	1. ادخل بيانات مالك المتجر بدقة
 CM-PAY-003	exact	boundary	SA-C-006/boundary/SA-S-0137	توثيق متجرك في الإمارات
@@ -3953,6 +3996,8 @@ CM-PAY-015	exact	decides	S01-BC-094	PayPal Pay Later
 CM-PAY-015	exact	boundary	S01-SA-102	تفعيل وسيلة الدفع الآجل تابي Tabby
 CM-PAY-015	exact	decides	S01-SA-104	❓ متى تتم تسوية المبالغ للتجار؟
 CM-PAY-015	exact	boundary	S01-SA-106	إدارة استرجاع الطلبات
+CM-PAY-015	exact	decides	S02-WC-318	Buy now, pay later: Customer experience
+CM-PAY-015	exact	decides	S02-WC-319	Buy now, pay later: Prohibited products and businesses: Affirm
 CM-PAY-015	exact	boundary	SA-C-118/boundary/SA-S-0075	خدمات مساندة
 CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0058	الأسئلة الشائعة
 CM-PAY-015	exact	decides	SA-C-118/decides/SA-S-0064	الأسئلة الشائعة
@@ -4006,6 +4051,8 @@ CM-PAY-016	exact	decides	WC-C-002/decides/WC-S-5002	woocommerce_cheque_settings:
 CM-PAY-016	exact	decides	ZD-C-012/decides/ZD-S-0618	طرق الدفع
 CM-PAY-016	exact	boundary	ZD-C-014/boundary/ZD-S-0634	payment_method condition
 CM-PAY-017	exact	decides	BC-C-074/decides/BC-S-0400	Multi-currency
+CM-PAY-017	exact	decides	S02-WC-320	Local payment methods: Country and currency requirements
+CM-PAY-017	exact	decides	S02-WC-321	Local payment methods: Country and currency requirements (chart)
 CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-0063	الأسئلة الشائعة
 CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-0065	كي نت (KNET)
 CM-PAY-017	exact	decides	SA-C-110/decides/SA-S-3132	knet
@@ -4338,6 +4385,8 @@ CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0276	help.shopify.com/en/manual/y
 CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-7030	Third-party transaction fees
 CM-PLN-004	exact	decides	BC-C-030/decides/BC-S-0188	Fees
 CM-PLN-004	exact	decides	BC-C-030/decides/BC-S-0189	Late Payments
+CM-PLN-004	exact	decides	S02-BC-280	About Your BigCommerce Invoice: Invoice Line Items: Related Transactions
+CM-PLN-004	exact	decides	S02-BC-281	About Your BigCommerce Invoice: Paying an Invoice (India)
 CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2064	إعدادات الفوترة
 CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2391	store_setting_purchase_from_salla_store
 CM-PLN-004	exact	decides	SA-C-005/decides/SA-S-2393	wallet_and_invoices_management
@@ -4389,6 +4438,17 @@ CM-PLN-006	exact	decides	ZD-C-017/decides/ZD-S-0655	عملات لا يمكن س�
 CM-PLN-006	exact	boundary	ZD-C-018/boundary/ZD-S-0664	الاستقطاع المباشر من زد باي
 CM-PLN-006	exact	decides	ZD-C-018/decides/ZD-S-0661	التجار السعوديين والكويتيين
 CM-PLN-006	exact	decides	ZD-C-018/decides/ZD-S-0662	مبلغ ثابت; نسبة مئوية
+CM-PLN-007	exact	decides	S02-BC-277	Account Dashboard: FAQ: What does the "We're having trouble updating your VAT Information. Please try again later" error message mean?
+CM-PLN-007	exact	decides	S02-BC-359	Upgrade to BigCommerce Core plan: Checkout: Order Summary: Taxes
+CM-PLN-007	exact	decides	S02-BC-362	Upgrade to BigCommerce Core plan: Checkout: Order Summary: Taxes
+CM-PLN-007	exact	decides	S02-ZD-476	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-477	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-478	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-479	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-480	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-481	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-482	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
+CM-PLN-007	exact	decides	S02-ZD-483	Rise - Monthly (rise.monthly) checkout: POST /v1/managers/purchases/v2/checkout/noon/credit-card > invoice > lines > vat_subjected_amount; vat
 CM-PLN-007	exact	decides	SA-C-113/decides/SA-S-0105	wallet.epayment.summary.tooltips.tax
 CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0036	5. Payment of Fees and Taxes
 CM-PLN-007	exact	decides	SH-C-017/decides/SH-S-0277	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/taxes/billing-taxes-saudi-arabia-uae.md
@@ -4543,6 +4603,11 @@ CM-RET-002	exact	decides	ZD-C-002/decides/ZD-S-0540	صلاحية استرداد 
 CM-RET-002	exact	decides	ZD-C-002/decides/ZD-S-0541	رد الأموال
 CM-RET-002	exact	boundary	ZD-C-028/boundary/ZD-S-0725	order.payment_status.update
 CM-RET-002	exact	boundary	ZD-C-081/boundary/ZD-S-1014	طرق الاسترداد
+CM-RET-003	exact	decides	S02-BC-335	Processing Returns: Return Settings: reset Return Reasons and Return Actions to their default values
+CM-RET-003	exact	decides	S02-BC-336	Processing Returns: Requirements: Manage Settings and Manage Returns permissions
+CM-RET-003	exact	decides	S02-BC-339	Getting Started with Localization on Multi-Storefronts: Return reasons and actions
+CM-RET-003	exact	decides	S02-BC-340	Getting Started with Localization on Multi-Storefronts: Return reasons and actions (Watch out!)
+CM-RET-003	exact	decides	S02-BC-341	International Enhancements for Multi-Storefront: FAQ: Can return reasons and actions be localized per storefront?
 CM-RET-003	exact	boundary	SA-C-041/boundary/SA-S-2680	مسترجع
 CM-RET-003	exact	boundary	SA-C-041/boundary/SA-S-2681	قيد الإسترجاع
 CM-RET-003	exact	boundary	SA-C-045/boundary/SA-S-1575	order.shipment.return.cancelled
@@ -4570,6 +4635,8 @@ CM-RET-003	exact	boundary	ZD-C-081/boundary/ZD-S-0912	Upload bank transfer recei
 CM-RET-003	exact	boundary	ZD-C-081/boundary/ZD-S-1015	سمسا; أرامكس
 CM-RET-003	exact	decides	ZD-C-081/decides/ZD-S-0910	Returned Orders
 CM-RET-003	exact	decides	ZD-C-081/decides/ZD-S-1013	بوليصة الإرجاع
+CM-RET-004	exact	decides	S02-SH-491	EU right of withdrawal in Managed Markets
+CM-RET-004	exact	decides	S02-SH-492	EU right of withdrawal in Managed Markets
 CM-RET-004	exact	boundary	WC-C-091/boundary/WC-S-5443	Review a withdrawal request
 CM-RET-004	exact	decides	WC-C-091/decides/WC-S-0934	order_withdrawal
 CM-RET-004	exact	decides	WC-C-091/decides/WC-S-5440	order_withdrawal
@@ -5395,6 +5462,12 @@ CM-STF-001	exact	decides	SH-C-009/decides/SH-S-7164	ADD_REMOVE_STAFF
 CM-STF-001	exact	decides	WC-C-080/decides/WC-S-0884	WooCommerce user roles
 CM-STF-001	exact	boundary	ZD-C-094/boundary/ZD-S-0941	Role: Manager
 CM-STF-001	exact	decides	ZD-C-094/decides/ZD-S-0939	Add Team Members
+CM-STF-002	exact	decides	S02-BC-345	Team permissions: How team permissions works (the three concepts)
+CM-STF-002	exact	decides	S02-BC-346	Team permissions: Account Administrators group
+CM-STF-002	exact	decides	S02-BC-347	User Roles and Permissions (introduction)
+CM-STF-002	exact	decides	S02-BC-348	User Roles and Permissions: Editing user permissions (Settings › Users)
+CM-STF-002	exact	decides	S02-WC-463	Roles and Capabilities: Modify user roles and capabilities
+CM-STF-002	exact	decides	S02-WC-464	Roles and Capabilities: Modify user roles and capabilities (suggestions): User Roles Editor for WooCommerce
 CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2079	إدارة الأدوار الوظيفية
 CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2428	roles_browse
 CM-STF-002	exact	decides	SA-C-009/decides/SA-S-2429	roles_management
@@ -5671,6 +5744,10 @@ CM-TRU-005	exact	decides	ZD-C-039/decides/ZD-S-0781	سياسات المستهل�
 CM-TRU-006	by landing	decides	SH-C-148/decides/SH-S-5364	entitlements.storefront.enabled
 CM-TRU-006	exact	boundary	BC-C-037/boundary/BC-S-0218	CORS
 CM-TRU-006	exact	decides	BC-C-037/decides/BC-S-0216	Security Settings
+CM-TRU-006	exact	decides	S02-WC-402	WPConsentAPI: wc_order_attribution_allow_tracking (consent category marketing)
+CM-TRU-006	exact	decides	S02-WC-415	Google Analytics for WooCommerce: consent UI
+CM-TRU-006	exact	decides	S02-WC-448	wp-consent-api-integration.js: wp_consent_type_defined (order attribution, consentCategory)
+CM-TRU-006	exact	decides	S02-WC-450	GDPR compliance guidelines for WooCommerce extensions: Data collection
 CM-TRU-006	exact	boundary	SA-C-066/boundary/SA-S-5023	عرض سياسة الخصوصية أثناء تسجيل العميل
 CM-TRU-006	exact	decides	SA-C-066/decides/SA-S-3372	website-cookies
 CM-TRU-006	exact	boundary	SH-C-148/boundary/SH-S-0224	2. Using the Shopify API
