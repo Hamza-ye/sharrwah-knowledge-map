@@ -40,3 +40,104 @@ CM-ORD-003	bigcommerce	core	BC-C-018/where/BC-S-0103	Orders V2 manages an order'
 CM-ORD-005	bigcommerce	core	BC-C-018/boundary/BC-S-0107	an order created using the control panel
 CM-ORD-013	bigcommerce	core	BC-C-018/where/BC-S-0103	Orders V2 manages an order's messages
 CM-ORD-013	bigcommerce	core	BC-I-0168	webhook topic store/order/message/created
+CM-PAY-001	bigcommerce	core	BC-C-023/where/BC-S-0131	its own Payment Methods API: the payment methods a store accepts
+CM-PAY-001	bigcommerce	core	BC-C-023/boundary/BC-S-0133	its own scope store_payments_methods_read
+CM-PAY-001	bigcommerce	core	BC-I-0069	its own API group Payment Methods
+CM-PAY-001	bigcommerce	shows	BC-C-023/decides/BC-S-0132	the API's versions V3 and V2
+CM-PAY-001	bigcommerce	shows	BC-C-031/decides/BC-S-0195	payment methods enabled on the store level
+CM-PAY-002	bigcommerce	core	BC-C-025/reason/BC-S-0149	BigCommerce Payments a native experience, payments data alongside orders and payouts
+CM-PAY-002	bigcommerce	core	BC-C-025/decides/BC-S-0143	BigCommerce Payments available only to US-based merchants with self-serve and retail plans
+CM-PAY-002	bigcommerce	shows	BC-C-025/decides/BC-S-0144	must be on the Retail Plan to qualify
+CM-PAY-002	bigcommerce	shows	BC-C-025/boundary/BC-S-0147	its setup step: add a bank account, set payment preferences
+CM-PAY-002	bigcommerce	shows	BC-C-025/boundary/BC-S-0148	its row in the compatible payment gateways table
+CM-PAY-002	bigcommerce	shows	BC-C-025/where/BC-S-0142	first entry of the Embedded Payment Provider List
+CM-PAY-004	bigcommerce	outside	BC-C-025/where/BC-S-0140	built with PayPal's infrastructure, which manages PCI compliance and risk controls
+CM-PAY-004	bigcommerce	outside	BC-C-025/responsible/BC-S-0146	PayPal's infrastructure manages PCI compliance and risk controls at the platform level
+CM-PAY-005	bigcommerce	core	BC-C-025/where/BC-S-0141	balance and payout reporting natively in the admin, Money Dashboard
+CM-PAY-005	bigcommerce	shows	BC-C-025/reason/BC-S-0149	payments data alongside orders and payouts
+CM-PAY-007	bigcommerce	core	BC-C-025/decides/BC-S-0145	BigCommerce Payments card processing rate per plan
+CM-PAY-008	bigcommerce	core	BC-C-031/where/BC-S-0194	product line Invoicing & net terms: invoices, net terms, credit limits
+CM-PAY-008	bigcommerce	core	BC-C-031/where/BC-S-0192	B2B Edition's own API for Invoices, Payments, and Receipts
+CM-PAY-008	bigcommerce	core	BC-I-0094	API group Invoice Management (B2B Edition)
+CM-PAY-008	bigcommerce	shows	BC-C-031/boundary/BC-S-0196	scope store_b2b_manage names invoices, requires B2B Edition
+CM-PAY-011	bigcommerce	core	BC-C-026/where/BC-S-0150	more than 65 pre-integrated online payment solutions
+CM-PAY-011	bigcommerce	outside	BC-C-026/where/BC-S-0151	partnered with leading payment companies, by region
+CM-PAY-011	bigcommerce	outside	BC-C-026/decides/BC-S-0156	PayPal Braintree approves and reviews the merchant's account
+CM-PAY-011	bigcommerce	shows	BC-C-026/decides/BC-S-0157	PayPal Braintree eligibility: United States-based business
+CM-PAY-011	bigcommerce	shows	BC-C-026/boundary/BC-S-0160	the store's connected payment gateways, through the Payments API
+CM-PAY-011	bigcommerce	shows	BC-C-022/decides/BC-S-0124	the list of compatible payment gateways
+CM-PAY-011	bigcommerce	shows	BC-C-025/where/BC-S-0142	the Embedded Payment Provider List names providers
+CM-PAY-011	bigcommerce	shows	BC-C-026/decides/BC-S-0155	the list reflects the current Embedded Payment Provider program
+CM-PAY-011	bigcommerce	shows	BC-I-0424	plan line Embedded Payment Provider List
+CM-PAY-011	bigcommerce	shows	BC-I-0499	product line Payment freedom, undefined
+CM-PAY-011	bigcommerce	extension-point	BC-I-0490	App Marketplace category Payments & Security
+CM-PAY-012	bigcommerce	core	BC-C-027/decides/BC-S-0162	plan line Apple Pay, Google Pay, and Amazon Pay
+CM-PAY-012	bigcommerce	core	BC-C-027/where/BC-S-0161	product line Digital wallets: PayPal, Venmo, Apple Pay, Google Pay and others
+CM-PAY-012	bigcommerce	shows	BC-C-027/boundary/BC-S-0163	the API flow doesn't support wallet-type providers like Amazon Pay
+CM-PAY-012	bigcommerce	shows	BC-C-027/boundary/BC-S-0164	the Apple Pay, Google Pay and Stripe Link V2 wallet interfaces
+CM-PAY-012	bigcommerce	shows	BC-I-0439	embedded payment provider Amazon Pay
+CM-PAY-013	bigcommerce	shows	BC-C-027/where/BC-S-0161	PayPal among the digital wallets supported
+CM-PAY-013	bigcommerce	shows	BC-I-0448	embedded payment provider PayPal Wallet
+CM-PAY-013	bigcommerce	shows	BC-C-024/where/BC-S-0134	shoppers save PayPal accounts
+CM-PAY-014	bigcommerce	core	BC-C-024/decides/BC-S-0135	plan line Stored credit cards: billing and shipping filled for returning customers
+CM-PAY-014	bigcommerce	core	BC-C-024/where/BC-S-0134	shoppers save cards, bank accounts and PayPal accounts for a faster checkout
+CM-PAY-015	bigcommerce	shows	BC-C-027/where/BC-S-0161	PayPal Pay Later, Klarna, Afterpay among the wallets supported
+CM-PAY-015	bigcommerce	shows	BC-C-025/where/BC-S-0142	Affirm in the Embedded Payment Provider List
+CM-PAY-015	bigcommerce	shows	BC-I-0438	embedded payment provider Afterpay
+CM-PAY-015	bigcommerce	shows	BC-I-0442	embedded payment provider Clearpay
+CM-PAY-015	bigcommerce	shows	BC-I-0445	embedded payment provider Klarna
+CM-PAY-016	bigcommerce	shows	BC-C-022/boundary/BC-S-0129	offline payment methods (Help Center) such as cash on delivery
+CM-PAY-017	bigcommerce	shows	BC-C-074/decides/BC-S-0400	local payment methods through the provider of your choice
+CM-PAY-019	bigcommerce	core	BC-C-031/where/BC-S-0193	B2B Edition Payments API: payment methods enabled per Company
+CM-PAY-019	bigcommerce	core	BC-C-031/decides/BC-S-0195	store-level payment methods enabled or disabled at the Company level
+CM-PAY-019	bigcommerce	core	BC-I-0096	API group Payments (B2B Edition)
+CM-PAY-020	bigcommerce	core	BC-C-020/where/BC-S-0111	its own Transactions API: capture, void, refund on external transactions
+CM-PAY-020	bigcommerce	core	BC-C-020/boundary/BC-S-0114	its own scope store_v2_transactions, order transactions
+CM-PAY-020	bigcommerce	core	BC-C-020/boundary/BC-S-0115	its own webhook topic store/order/transaction/created
+CM-PAY-020	bigcommerce	core	BC-I-0171	its own webhook topic store/order/transaction/updated
+CM-PAY-020	bigcommerce	shows	BC-C-020/decides/BC-S-0112	the provider enabled with the order's channel and currency
+CM-PAY-020	bigcommerce	shows	BC-C-020/responsible/BC-S-0113	no provider ID stored if the provider isn't configured
+CM-PAY-020	bigcommerce	shows	BC-C-020/reason/BC-S-0116	the provider ID stored against the transaction
+CM-PAY-020	bigcommerce	core	BC-C-018/where/BC-S-0104	Order Operations: order transactions, captures, refunds and voids
+CM-PAY-020	bigcommerce	core	BC-C-022/where/BC-S-0121	its own Payments API: charge customers through supported gateways
+CM-PAY-020	bigcommerce	core	BC-C-022/where/BC-S-0122	the payments endpoint on payments.bigcommerce.com
+CM-PAY-020	bigcommerce	core	BC-C-022/where/BC-S-0123	the BigCommerce Payments Gateway server for payment requests
+CM-PAY-020	bigcommerce	core	BC-C-022/decides/BC-S-0125	authorization only, capture later in the control panel or the Capture API
+CM-PAY-020	bigcommerce	core	BC-C-022/boundary/BC-S-0127	its own scope store_payments_access_token_create, process payments
+CM-PAY-020	bigcommerce	shows	BC-C-022/boundary/BC-S-0128	payment_access_token created by BigCommerce
+CM-PAY-020	bigcommerce	shows	BC-C-022/decides/BC-S-0124	only gateways on the compatible list
+CM-PAY-020	bigcommerce	shows	BC-C-022/responsible/BC-S-0126	BigCommerce responsible only en route; developers for their apps
+CM-PAY-020	bigcommerce	shows	BC-C-022/boundary/BC-S-0129	the API processes card payments, not offline methods
+CM-PAY-022	bigcommerce	core	BC-C-024/where/BC-S-0134	own API: stored instruments for a given customer, default instrument
+CM-PAY-022	bigcommerce	core	BC-C-024/boundary/BC-S-0137	own scope store_stored_payment_instruments
+CM-PAY-022	bigcommerce	core	BC-C-024/boundary/BC-S-0138	own webhook topic store/customer/payment/instrument/default/updated
+CM-PAY-022	bigcommerce	core	BC-C-024/boundary/BC-S-0139	payments server attaches an instrument to a customer
+CM-PAY-022	bigcommerce	core	BC-C-022/reason/BC-S-0130	a saved card charged as a stored payment instrument, server to server
+CM-PAY-022	bigcommerce	shows	BC-C-024/decides/BC-S-0136	vaulting not enabled on a store
+CM-PAY-022	bigcommerce	shows	BC-I-0068	API group Stored Instruments API (Beta)
+CM-PAY-026	bigcommerce	extension-point	BC-I-0486	App Marketplace category Financing, undefined
+CM-PAY-028	bigcommerce	extension-point	BC-I-0476	App Marketplace category Accounting & Tax
+CM-PAY-028	bigcommerce	extension-point	BC-I-0485	App Marketplace category ERP
+CM-PAY-029	bigcommerce	shows	BC-C-022/boundary/BC-S-0129	cash on delivery named as an offline payment method
+CM-TAX-001	bigcommerce	core	BC-C-072/where/BC-S-0383	its own Tax API: tax classes, zones, rates, settings
+CM-TAX-001	bigcommerce	core	BC-C-072/decides/BC-S-0384	Tax settings: tax calculation and price display
+CM-TAX-001	bigcommerce	core	BC-C-072/decides/BC-S-0385	setting for the guest shopper's tax zone
+CM-TAX-001	bigcommerce	core	BC-C-072/boundary/BC-S-0386	its own endpoint /v3/tax/settings
+CM-TAX-001	bigcommerce	shows	BC-C-072/reason/BC-S-0387	cross-border transactions, localized prices
+CM-TAX-001	bigcommerce	core	BC-I-0063	API group Tax Classes
+CM-TAX-001	bigcommerce	core	BC-I-0530	product line Tax
+CM-TAX-004	bigcommerce	extension-point	BC-C-073/where/BC-S-0388	Tax Provider API integrates a tax calculation engine
+CM-TAX-004	bigcommerce	extension-point	BC-C-073/where/BC-S-0390	the Tax Provider API works with an app
+CM-TAX-004	bigcommerce	extension-point	BC-C-073/where/BC-S-0389	Settings > Setup > Tax > TaxProviderName, the provider's settings
+CM-TAX-004	bigcommerce	extension-point	BC-C-073/boundary/BC-S-0395	Provider APIs: BigCommerce calls the app's endpoints
+CM-TAX-004	bigcommerce	extension-point	BC-C-073/boundary/BC-S-0396	tax documents submitted to third-party tax providers
+CM-TAX-004	bigcommerce	extension-point	BC-I-0476	App Marketplace category Accounting & Tax
+CM-TAX-004	bigcommerce	core	BC-C-073/decides/BC-S-0391	the merchant's fallback when a tax provider errors
+CM-TAX-004	bigcommerce	shows	BC-C-072/decides/BC-S-0384	the store's setting if an enabled tax service is unavailable (core in CM-TAX-001)
+CM-TAX-004	bigcommerce	shows	BC-C-073/decides/BC-S-0392	a registered tax provider visible only on its store
+CM-TAX-004	bigcommerce	shows	BC-C-073/decides/BC-S-0393	the merchant chooses the regions the provider serves
+CM-TAX-004	bigcommerce	shows	BC-C-073/boundary/BC-S-0394	default timeout of four seconds
+CM-TAX-004	bigcommerce	shows	BC-C-073/reason/BC-S-0397	timeout protects the shopper checkout
+CM-TAX-004	bigcommerce	shows	BC-I-0075	API group Tax Provider API
+CM-PAY-008	bigcommerce	own-service	BC-C-065/where/BC-S-0354	maker: B2B Edition, BigCommerce's add-on (domain D's concern)
+CM-PAY-019	bigcommerce	own-service	BC-C-065/where/BC-S-0354	maker: B2B Edition, BigCommerce's add-on (domain D's concern)

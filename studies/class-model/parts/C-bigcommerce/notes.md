@@ -70,3 +70,90 @@ The checker's last run on batch 1 (`--concerns BC-C-014,BC-C-015,BC-C-016,BC-C-0
 
 - **CM-CHK-010, Persistent cart, is a capability of its own,** under CM-CHK-002: BigCommerce gives it a plan line (BC-S-0084), and a plan line is a place of its own (the dry run's test). BC-S-0084's evidence row moved there, and CM-CHK-002's BigCommerce cell names it as its child. The back-fill after BigCommerce writes its Shopify, Salla, WooCommerce and Zid cells.
 - **The checker's one problem** is the back-fill after Zid (C-backfill-zid), which runs once C-zid's last batch has: Zid's added capabilities need the earlier platforms' cells.
+
+## Batch 2: PAY and TAX
+
+**Concerns:** BC-C-020, BC-C-022, BC-C-023, BC-C-024, BC-C-025, BC-C-026, BC-C-027, BC-C-031, BC-C-072, BC-C-073. **Areas:** PAY (32 capabilities), TAX (9). **What it holds:** no new capability, 10 landings (all into existing capabilities: 6 strained, 4 clean), 41 cells (BigCommerce's, one per capability of PAY and TAX: 21 `statements`, 20 `none-held`), 101 evidence rows, 4 qualities, 26 slot fillers, no ruling (BigCommerce has no unclear candidates). Each row is a reading unless it quotes a statement.
+
+### How I cut, and why
+
+- **BC-C-020 Order transactions → CM-PAY-020, terms, clean.** Its Transactions API, scope store_v2_transactions and webhook topics are an order's payment transactions. All its statements are in CM-PAY-020.
+- **BC-C-022 Payment processing (Payments API) → CM-PAY-020, definition, strained.** "Charge customers and process refunds" (BC-S-0121), with authorization only and capture later "using the control panel or the Capture API" (BC-S-0125): authorizing and capturing an order's payment. I didn't make it a capability of its own: no other platform shows a payments API apart from its order transactions, and the capability's definition already covers charging and capturing. Strained: BC-S-0130 (a 3D Secure card "charged as a stored payment instrument") is cited in CM-PAY-022; BC-S-0129 (offline payment methods "such as cash on delivery") in CM-PAY-016 and CM-PAY-029; BC-S-0124 (compatible gateways) in CM-PAY-011.
+- **BC-C-023 Payment methods → CM-PAY-001, terms, clean.** No control panel page for payment settings is held (searched Settings > Payments, payment settings).
+- **BC-C-024 Stored payment instruments → CM-PAY-022, definition, strained.** The grain is split across two trees. The concern's API, scope, webhook topic, vaulting and payments server are a customer's stored instruments, which the Payments API charges server to server (BC-S-0130): CM-PAY-022, like Shopify's customer payment methods and WooCommerce's Payment Token API. Its plan line Stored credit cards (BC-S-0135), with returning customers' details "automatically filled", and the API's stated purpose, "for a faster checkout experience" (BC-S-0134), are CM-PAY-014's (saved buyer checkout details, under CM-CHK-008), as Salla's saved card and address is. I landed it where most of its statements are. **For the coordinator:** if the class should count the plan line in CM-PAY-014 as this concern's landing, move it; either way one side is strained.
+- **BC-C-025 BigCommerce Payments → CM-PAY-002, role, clean.** All its statements are in the CM-PAY-001 tree: CM-PAY-002, CM-PAY-004 (PayPal's infrastructure), CM-PAY-005 (Money Dashboard), CM-PAY-007 (card rates), and CM-PAY-011 (the provider list, BC-S-0142).
+- **BC-C-026 Embedded and Open Payment Providers → CM-PAY-011, terms, strained.** Strained by domain A: A-bigcommerce cites its Open Payment Provider Fee (BC-S-0154, BC-I-0423) as core in CM-PLN-003, the platform's fee on the merchant's sales. By "One thing, one domain" I left the other fee statements uncited and say so here: **BC-S-0152** (the fee per plan, 2.0% to 0.0%), **BC-S-0153** ($0 on orders through Embedded Payment Providers), **BC-S-0158** (Open Payment Provider Fees "charged by Commerce, not by Customer's payment gateway") and **BC-S-0159** (no BigCommerce fee through Embedded Payment Providers; the provider's own fees still apply). **For the coordinator:** they are A's CM-PLN-003's evidence, and A-bigcommerce doesn't cite them. Its app category Financing (BC-I-0486) is cited in CM-PAY-026.
+- **BC-C-027 Digital wallets → CM-PAY-012, terms, strained.** BC-S-0161 is core in CM-CHK-008 (batch 1) and in CM-PAY-012: it names both, the wallets and "accelerated checkout options". It is `shows` in CM-PAY-013 (PayPal) and CM-PAY-015 (PayPal Pay Later, Klarna, Afterpay). BC-S-0164 (wallet interfaces and shipping options) is cited as `shows` in CM-PAY-012; batch 3 may cite it for SHP.
+- **BC-C-031 B2B Edition invoices and payments → CM-PAY-008, role, strained.** Net terms read as payment terms. Its company payment methods (BC-S-0193, BC-S-0195) are in CM-PAY-019 (payment method rules), read on role against Salla's customer-payment-white-list: a method enabled or disabled per company restricts what that buyer is offered. I searched D for a B2B payments capability (`caps --terms "B2B; company; companies; net terms; credit limit; invoice"`): D's B2B capabilities hold none.
+- **BC-C-072 Tax configuration → CM-TAX-001, terms, clean.**
+- **BC-C-073 Tax providers → CM-TAX-004, terms, strained.** Its app category Accounting & Tax (BC-I-0476) names accounting too, and is cited in CM-PAY-028 (its own tree) as well as in F's CM-APP-002. The route Settings > Setup > Tax > *TaxProviderName* (BC-S-0389) is named for the provider: `extension-point`, by the dry run's convention on routes named for an application.
+
+### Services of BigCommerce's company
+
+- **BigCommerce Payments:** no held statement names BigCommerce's company as its maker or provider. "BigCommerce Payments by PayPal" and "Built with PayPal's infrastructure" (BC-S-0140, BC-S-0146) name PayPal. I placed CM-PAY-002 by what its statements show, `core` (native in the admin, BC-S-0149; its availability rule, BC-S-0143), and noted the missing maker statement: Q1's gap BC-C-025/responsible (page not read) names the pages that would say who holds the funds and who the merchant contracts with. No `own-service` for it.
+- **B2B Edition:** D-bigcommerce read "BigCommerce's add-on for business-to-business commerce" (BC-S-0354, D's concern BC-C-065) as naming the maker. Following the coordinator's message (a maker statement counts for each feature its service shows), I cite it as `own-service` in CM-PAY-008 and CM-PAY-019, beside the `core` rows for B2B Edition's own APIs. The checker flags both (another domain's statement; maker): the reading is "BigCommerce's".
+- **The fraud question from batch 1:** I agree CM-ORD-006 stays `none-held`. BC-S-0140 and BC-S-0146 name PayPal's "risk controls" behind BigCommerce Payments, cited as `outside` in CM-PAY-004, not orders flagged for the merchant.
+
+### Batch 1's open points
+
+- **BC-S-0104** (Order Operations: "perform payment actions such as captures, refunds, and voids", BC-C-018) is cited as `core` in CM-PAY-020. CM-PAY-020's parent is CM-ORD-001, where BC-C-018 landed, so by the checker's tree rule BC-C-018's fit stays clean. But it's a citation in PAY, so **for the coordinator:** if CM-PAY-020 is read as a tree of its own, BC-C-018's landing becomes strained.
+- **BC-S-0161** (Digital wallets, cited in CM-CHK-008) is cited in CM-PAY-012, CM-PAY-013 and CM-PAY-015. The concern it belongs to, BC-C-027, lands in CM-PAY-012 and is strained by CM-CHK-008. **For the coordinator:** batch 1's CM-CHK-008 row stands; the earlier landing's fit becomes strained.
+- **BC-C-031's invoices:** no statement shows B2B Edition's invoices as invoices for orders. BC-S-0192 says "API for Invoices, Payments, and Receipts in BigCommerce B2B Edition", and BC-S-0194 "invoices, net terms, credit limits", and neither names an order. **CM-ORD-008 stays `none-held`.** No correction is needed.
+- **BC-S-0134** is cited in CM-PAY-014 and CM-PAY-022 (`core`, it names both) and CM-PAY-013 (`shows`), not in CM-CHK-008 itself: its saving for a faster checkout is CM-PAY-014's, a child of CM-CHK-008. **BC-S-0164** is cited as `shows` in CM-PAY-012.
+
+### Joins on role
+
+- BC-C-025 → CM-PAY-002: BigCommerce Payments as the platform's own payment service, against Shopify Payments (SH-S-0325) and Salla Payments (SA-S-0049).
+- BC-C-031 → CM-PAY-008: net terms as payment terms, against Shopify's Set payment terms (SH-S-7152) and payment_schedules/due (SH-S-6081).
+- In cells: CM-PAY-019's company payment methods as payment method rules (SA-S-3164, SA-S-1877); CM-PAY-022's stored instruments charged by the Payments API (BC-S-0130) as payments charged without the buyer at checkout (SH-S-0592).
+
+### Homonyms kept apart
+
+- **BigCommerce Payments Gateway** (BC-S-0123, BC-C-022) is the Payments API's server, "a different server than our other REST APIs". It isn't the product **BigCommerce Payments** (BC-C-025). Cited in CM-PAY-020, not CM-PAY-002.
+- **credit limits:** B2B Edition's (BC-S-0194) are a business buyer's limit, not CM-PAY-025's credit to the merchant (Shopify Credit). CM-PAY-025 is `none-held`.
+- **tax documents:** BigCommerce submits the store's tax documents "to third-party tax providers" (BC-S-0396, CM-TAX-004). They aren't CM-TAX-009's tax forms the platform issues to the merchant, nor CM-TAX-006's filing.
+- **balance:** the Money Dashboard's "Balance and payout reporting" (BC-S-0141, CM-PAY-005) is BigCommerce Payments' balance, not CM-PAY-023's business money account (Shopify Balance).
+
+### Strained fits
+
+BC-C-022, BC-C-024, BC-C-026, BC-C-027, BC-C-031 and BC-C-073, each as above and in its `reading`.
+
+### Concerns read under `also`
+
+BC-C-074 (E): BC-S-0400 ("local payment methods through the provider of your choice") is cited as `shows` in CM-PAY-017. BC-S-0403 (settlement currency through the provider) and BC-S-0406, BC-S-0408 and BC-S-0409 are named in `none-held` readings. BC-C-028 (A): its PCI statements are A's; BC-S-0167, BC-S-0168 and BC-S-0170 are named in none-held readings only. BC-C-005 (B) bears on nothing here.
+
+### Statements of other domains
+
+- **BC-I-0485** (App Marketplace category ERP, F's BC-C-059) is cited as `extension-point` in CM-PAY-028: the cell's ERP side rests on it alone (F-bigcommerce cites it in CM-APP-002 too).
+- **BC-C-065/where/BC-S-0354** (D) is cited as the maker in CM-PAY-008 and CM-PAY-019 (above).
+- BC-I-0476, BC-I-0486 and BC-I-0490 are placed in this batch's concerns and cited in A's and F's cells too, as `extension-point`. That isn't the core or own-service the merge flags.
+
+### Qualities and slot fillers
+
+- **Qualities:** BigCommerce Payments' card rate per plan (CM-PAY-007), who can use it (CM-PAY-002), the 65 pre-integrated solutions in 150+ countries (CM-PAY-011), and the tax estimate timeout of four seconds (CM-TAX-004).
+- **Slot fillers:** PayPal behind BigCommerce Payments (CM-PAY-004). The embedded payment providers that are gateways (CM-PAY-011): Adyen, PayPal Braintree, Stripe, Worldpay and others, most by inventory id, since only BC-S-0142 names three of them. The wallets (CM-PAY-012, CM-PAY-013). PayPal Pay Later, Klarna, Afterpay, Affirm and Clearpay (CM-PAY-015). Sezzle and Zip Money (BC-I-0451, BC-I-0455) are left out: no held statement or other platform's cell names what they do.
+
+### Gaps
+
+- BC-C-025/responsible (page not read): who holds the funds for BigCommerce Payments, under which licence, and who the merchant contracts with. CM-PAY-002, CM-PAY-003 and CM-PAY-004 can't claim more.
+- BC-C-026/decides (page not read): what checkout does when a provider fails. BC-C-026/responsible (searched, not found): who holds funds with Embedded or Open providers.
+- The Help Center page on offline payment methods that BC-S-0129 points to isn't held: CM-PAY-016, CM-PAY-029 and CM-PAY-030 can show only that cash on delivery is an offline method.
+- No control panel page for payment settings, or for the store's own tax rates, is held: CM-PAY-001 and CM-TAX-001 rest on the API and product lines.
+- The product lines Tax (BC-I-0530) and Payment freedom (BC-I-0499) are undefined.
+
+### For batch 3 (SHP, RET)
+
+- BC-S-0111 (Transactions API: "capture, void, and refund") and BC-S-0121 (Payments API: "process refunds"), cited in CM-PAY-020, name refunds. If RET cites them, BC-C-020's fit becomes strained, and BC-C-022's is already strained.
+- BC-S-0164 (custom checkout controls shipping options in wallet interfaces, BC-C-027) is cited as `shows` in CM-PAY-012. If SHP cites it, BC-C-027 is already strained.
+- BC-S-0120 (Order V3 refunds against settled payments, BC-C-021) is named in CM-PAY-031's reading only.
+- BC-S-0103's "taxes" (Orders V2) is named in CM-TAX-008's reading; it is cited in CM-ORD-001.
+
+### What the checker flagged
+
+The run on this batch (`--concerns BC-C-020,…,BC-C-073 --areas PAY,TAX`) gives **0 problems and 40 flags.** The coordinator's back-fill problem didn't appear for PAY and TAX. Batch 2's flags:
+- **Another domain's statements (3):** BC-I-0485 (F) and BC-S-0354 (D, twice), answered above.
+- **Own-service on BC-S-0354 (2):** the maker is read from "BigCommerce's add-on", D-bigcommerce's reading too.
+- **`none-held` cells whose terms match statements:** CM-PAY-003, 006, 009, 010, 021, 023, 024, 025, 030, 031, 032, and CM-TAX-002, 003, 008, 009. Each cell's `reading` names the hits and why none is the capability. CM-PAY-030's 51 matches come from the other platforms' term "check" (checkout) and "bank"; none is a bank transfer payment.
+- **Statements cited in more than one tree (6):** BC-S-0129, BC-S-0124 (BC-C-022, strained), BC-S-0134 (BC-C-024, strained), BC-S-0161 (BC-C-027, strained), BC-S-0354 (D's, as maker in CM-PAY-008 and CM-PAY-019), BC-I-0476 (BC-C-073, strained). Each is a statement that names several things, or a maker statement.
+
+The rest of the flags are batch 1's, answered in its section: the CHK and ORD `none-held` cells, and CM-ORD-005's core on a boundary statement. Batch 1's rows show no new problem.

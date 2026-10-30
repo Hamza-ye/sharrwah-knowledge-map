@@ -24,3 +24,44 @@ CM-ORD-012	bigcommerce	none-held
 CM-ORD-013	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/orders		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
 CM-ORD-014	bigcommerce	none-held					
 CM-ORD-015	bigcommerce	none-held					
+CM-PAY-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/payments/methods		BC-C-023/responsible:stated only in general terms;BC-C-023/reason:searched, not found;BC-C-031/responsible:stated only in general terms;BC-C-031/reason:searched, not found	general
+CM-PAY-002	bigcommerce	statements	core	Embedded Payment Provider List	BC-C-025/decides/BC-S-0143=US-based merchants with self-serve and retail plans	BC-C-025/responsible:page not read	general
+CM-PAY-003	bigcommerce	none-held					
+CM-PAY-004	bigcommerce	statements	outside	BigCommerce Payments by PayPal		BC-C-025/responsible:page not read	
+CM-PAY-005	bigcommerce	statements	core	Money Dashboard		BC-C-025/responsible:page not read	general
+CM-PAY-006	bigcommerce	none-held					
+CM-PAY-007	bigcommerce	statements	core		BC-C-025/decides/BC-S-0145=eligible US merchants	BC-C-025/responsible:page not read	eligible US merchants
+CM-PAY-008	bigcommerce	statements	core;own-service	/developer/api-reference/rest/b2b/management/invoice-management | /developer/api-reference/rest/b2b/overview | Invoicing & net terms		BC-C-031/responsible:stated only in general terms;BC-C-031/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
+CM-PAY-009	bigcommerce	none-held					
+CM-PAY-010	bigcommerce	none-held					
+CM-PAY-011	bigcommerce	statements	core;extension-point;outside	Choose Your Region | Embedded Payment Provider List | pre-integrated online payment solutions	BC-C-026/decides/BC-S-0156=United States-based business | BC-C-026/decides/BC-S-0157=United States-based business	BC-C-025/responsible:page not read;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-059/reason:searched, not found	general
+CM-PAY-012	bigcommerce	statements	core	Digital wallets	BC-C-027/decides/BC-S-0162=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	general
+CM-PAY-013	bigcommerce	statements	not-stated	/developer/api-reference/rest/admin/payments/stored-instruments | Digital wallets		BC-C-024/responsible:stated only in general terms;BC-C-024/reason:searched, not found;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	
+CM-PAY-014	bigcommerce	statements	core	/developer/api-reference/rest/admin/payments/stored-instruments	BC-C-024/decides/BC-S-0135=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-024/responsible:stated only in general terms;BC-C-024/reason:searched, not found	general
+CM-PAY-015	bigcommerce	statements	not-stated	Digital wallets | Embedded Payment Provider List		BC-C-025/responsible:page not read;BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found;BC-C-027/responsible:stated only in general terms;BC-C-027/reason:searched, not found	
+CM-PAY-016	bigcommerce	statements	not-stated				
+CM-PAY-017	bigcommerce	statements	not-stated		BC-C-074/decides/BC-S-0400=plans Core, Growth, Scale, Performance (columns of the plan comparison table)		
+CM-PAY-018	bigcommerce	none-held					
+CM-PAY-019	bigcommerce	statements	core;own-service	/developer/api-reference/rest/b2b/management/payment | /developer/api-reference/rest/b2b/overview		BC-C-031/responsible:stated only in general terms;BC-C-031/reason:searched, not found;BC-C-065/responsible:stated only in general terms;BC-C-065/reason:searched, not found	general
+CM-PAY-020	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/order-operations | /developer/api-reference/rest/admin/payments | /developer/api-reference/rest/admin/payments/transactions | BigCommerce Payments Gateway | https://payments.bigcommerce.com/stores/{{STORE_HASH}}/payments		BC-C-018/decides:page not read;BC-C-018/responsible:stated only in general terms;BC-C-018/reason:searched, not found	general
+CM-PAY-021	bigcommerce	none-held					
+CM-PAY-022	bigcommerce	statements	core	/developer/api-reference/rest/admin/payments/stored-instruments		BC-C-024/responsible:stated only in general terms;BC-C-024/reason:searched, not found	general
+CM-PAY-023	bigcommerce	none-held					
+CM-PAY-024	bigcommerce	none-held					
+CM-PAY-025	bigcommerce	none-held					
+CM-PAY-026	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-PAY-027	bigcommerce	none-held					
+CM-PAY-028	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-PAY-029	bigcommerce	statements	not-stated				
+CM-PAY-030	bigcommerce	none-held					
+CM-PAY-031	bigcommerce	none-held					
+CM-PAY-032	bigcommerce	none-held					
+CM-TAX-001	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/tax		BC-C-072/responsible:stated only in general terms	general
+CM-TAX-002	bigcommerce	none-held					
+CM-TAX-003	bigcommerce	none-held					
+CM-TAX-004	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/integrations/tax-provider | Settings > Setup > Tax | Tax Provider API		BC-C-059/reason:searched, not found;BC-C-072/responsible:stated only in general terms;BC-C-073/responsible:stated only in general terms	general
+CM-TAX-005	bigcommerce	none-held					
+CM-TAX-006	bigcommerce	none-held					
+CM-TAX-007	bigcommerce	none-held					
+CM-TAX-008	bigcommerce	none-held					
+CM-TAX-009	bigcommerce	none-held					

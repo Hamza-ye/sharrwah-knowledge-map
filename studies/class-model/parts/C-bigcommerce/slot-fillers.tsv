@@ -7,3 +7,29 @@ CM-CHK-008	bigcommerce	Google Pay	BC-C-027/where/BC-S-0161
 CM-CHK-008	bigcommerce	PayPal Pay Later	BC-C-027/where/BC-S-0161
 CM-CHK-008	bigcommerce	Klarna	BC-C-027/where/BC-S-0161
 CM-CHK-008	bigcommerce	Afterpay	BC-C-027/where/BC-S-0161
+CM-PAY-004	bigcommerce	PayPal	BC-C-025/where/BC-S-0140
+CM-PAY-004	bigcommerce	PayPal	BC-C-025/responsible/BC-S-0146
+CM-PAY-011	bigcommerce	PayPal Braintree	BC-C-026/decides/BC-S-0156
+CM-PAY-011	bigcommerce	Adyen	BC-C-025/where/BC-S-0142
+CM-PAY-011	bigcommerce	Bank of New Zealand	BC-I-0440
+CM-PAY-011	bigcommerce	Checkout.com	BC-I-0441
+CM-PAY-011	bigcommerce	Fortis (Acumatica Payments)	BC-I-0443
+CM-PAY-011	bigcommerce	Global Payments	BC-I-0444
+CM-PAY-011	bigcommerce	PayPal Braintree	BC-I-0446
+CM-PAY-011	bigcommerce	PayPal Complete Payments	BC-I-0447
+CM-PAY-011	bigcommerce	Bluesnap (powered by Payroc)	BC-I-0449
+CM-PAY-011	bigcommerce	Bankful (Pinwheel)	BC-I-0450
+CM-PAY-011	bigcommerce	Stripe	BC-I-0452
+CM-PAY-011	bigcommerce	TD Online Mart	BC-I-0453
+CM-PAY-011	bigcommerce	Worldpay	BC-I-0454
+CM-PAY-012	bigcommerce	Apple Pay	BC-C-027/decides/BC-S-0162
+CM-PAY-012	bigcommerce	Google Pay	BC-C-027/decides/BC-S-0162
+CM-PAY-012	bigcommerce	Amazon Pay	BC-C-027/decides/BC-S-0162
+CM-PAY-012	bigcommerce	Venmo	BC-C-027/where/BC-S-0161
+CM-PAY-013	bigcommerce	PayPal	BC-C-027/where/BC-S-0161
+CM-PAY-013	bigcommerce	PayPal Wallet	BC-I-0448
+CM-PAY-015	bigcommerce	PayPal Pay Later	BC-C-027/where/BC-S-0161
+CM-PAY-015	bigcommerce	Klarna	BC-C-027/where/BC-S-0161
+CM-PAY-015	bigcommerce	Afterpay	BC-C-027/where/BC-S-0161
+CM-PAY-015	bigcommerce	Affirm	BC-C-025/where/BC-S-0142
+CM-PAY-015	bigcommerce	Clearpay	BC-I-0442
