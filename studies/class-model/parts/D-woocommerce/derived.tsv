@@ -1,8 +1,14 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ANL-001	woocommerce	statements	core;extension-point	Analytics | Analytics > Settings | Extensions > Marketing > Reporting and analytics | Extensions > Store management > Business insights | Information and data we collect from your store | analytics		WC-C-038/responsible:stated only in general terms;WC-C-038/reason:searched, not found;WC-C-039/reason:searched, not found;WC-C-109/responsible:stated only in general terms;WC-C-109/reason:searched, not found;WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	general
+CM-ANL-002	woocommerce	statements	core	Analytics > Categories | Analytics > Coupons | Analytics > Downloads | Analytics > Orders | Analytics > Products | Analytics > Revenue | Analytics > Stock | Analytics > Taxes | Analytics > Variations | WooCommerce > Reports		WC-C-038/responsible:stated only in general terms;WC-C-038/reason:searched, not found	general
+CM-ANL-003	woocommerce	statements	core	Analytics > Overview		WC-C-038/responsible:stated only in general terms;WC-C-038/reason:searched, not found	general
+CM-ANL-004	woocommerce	none-held					
+CM-ANL-005	woocommerce	none-held					
+CM-ANL-006	woocommerce	statements	core			WC-C-038/responsible:stated only in general terms;WC-C-038/reason:searched, not found	general
 CM-B2B-001	woocommerce	statements	extension-point	Extensions > Merchandising > B2B	WC-C-103/boundary/WC-S-5473=WooCommerce Purchase Order Gateway (version 1.5.12) | WC-C-103/decides/WC-S-5471=WooCommerce Purchase Order Gateway	WC-C-103/responsible:stated only in general terms;WC-C-103/reason:searched, not found	
 CM-B2B-002	woocommerce	none-held					
 CM-B2B-003	woocommerce	none-held					
-CM-CUS-001	woocommerce	statements	core	WooCommerce > Customers | WooCommerce user roles		WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found	general
+CM-CUS-001	woocommerce	statements	core;extension-point	Extensions > Customer service > Managing customers | WooCommerce > Customers | WooCommerce user roles		WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found;WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found	general
 CM-CUS-002	woocommerce	none-held					
 CM-CUS-003	woocommerce	statements	core			WC-C-073/responsible:stated only in general terms;WC-C-073/reason:searched, not found	general
 CM-CUS-004	woocommerce	none-held					
@@ -45,3 +51,15 @@ CM-MKT-019	woocommerce	none-held
 CM-MKT-020	woocommerce	none-held					
 CM-MKT-021	woocommerce	statements	extension-point	Extensions > Conversion > Upsells and cross-sells		WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
 CM-MKT-022	woocommerce	statements	extension-point	Extensions > Conversion > Recovering orders		WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	
+CM-NTF-001	woocommerce	statements	core;extension-point	Cancelled order (WC_Email_Customer_Cancelled_Order) | Completed order (WC_Email_Customer_Completed_Order) | Customer note (WC_Email_Customer_Note) | Emails | Emails > Email options | Extensions > Store management > Admin and notifications | Failed order (WC_Email_Customer_Failed_Order) | Fulfillment created (WC_Email_Customer_Fulfillment_Created) | Fulfillment deleted (WC_Email_Customer_Fulfillment_Deleted) | Fulfillment updated (WC_Email_Customer_Fulfillment_Updated) | New account (WC_Email_Customer_New_Account) | Order details (WC_Email_Customer_Invoice) | Order on-hold (WC_Email_Customer_On_Hold_Order) | Order withdrawal request received (WC_Email_Customer_Order_Withdrawal_Requested) | POS completed order (WC_Email_Customer_POS_Completed_Order) | POS refunded order (WC_Email_Customer_POS_Refunded_Order) | Partially refunded order (WC_Email_Customer_Partially_Refunded_Order) | Processing order (WC_Email_Customer_Processing_Order) | Refunded order (WC_Email_Customer_Refunded_Order) | Reset password (WC_Email_Customer_Reset_Password)	WC-C-106/boundary/WC-S-5483=Advanced Notifications | WC-C-106/decides/WC-S-5481=Advanced Notifications	WC-C-076/responsible:stated only in general terms;WC-C-076/reason:searched, not found;WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found;WC-C-109/responsible:stated only in general terms;WC-C-109/reason:searched, not found	general
+CM-NTF-002	woocommerce	statements	core	Cancelled order (WC_Email_Cancelled_Order) | Failed order (WC_Email_Failed_Order) | New order (WC_Email_New_Order) | Order withdrawal request (WC_Email_Order_Withdrawal_Requested) | Payment gateway enabled (WC_Email_Admin_Payment_Gateway_Enabled) | push_notifications		WC-C-076/responsible:stated only in general terms;WC-C-076/reason:searched, not found;WC-C-090/responsible:stated only in general terms;WC-C-090/reason:searched, not found	general
+CM-NTF-003	woocommerce	none-held					
+CM-NTF-004	woocommerce	none-held					
+CM-SUP-001	woocommerce	statements	core;extension-point	Extensions > Conversion > Customer feedback | Products > Reviews		WC-C-065/responsible:stated only in general terms;WC-C-065/reason:searched, not found;WC-C-105/responsible:stated only in general terms;WC-C-105/reason:searched, not found	general
+CM-SUP-002	woocommerce	statements	core	Automattic\WooCommerce\Internal\OrderReviews | Review request (WC_Email_Customer_Review_Request)	WC-C-065/boundary/WC-S-5392=Customer review request | WC-C-065/where/WC-S-5391=Customer review request	WC-C-065/responsible:stated only in general terms;WC-C-065/reason:searched, not found	general
+CM-SUP-003	woocommerce	none-held					
+CM-SUP-004	woocommerce	statements	extension-point	Extensions > Customer service > Live chat		WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found	
+CM-SUP-005	woocommerce	statements	extension-point	Extensions > Customer service | Extensions > Customer service > Support		WC-C-106/responsible:stated only in general terms;WC-C-106/reason:searched, not found	
+CM-SUP-006	woocommerce	none-held					
+CM-SUP-007	woocommerce	none-held					
+CM-SUP-008	woocommerce	none-held					

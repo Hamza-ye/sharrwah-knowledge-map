@@ -92,3 +92,122 @@ CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5456	supported lists saved-fo
 CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5457	feature product_wishlist experimental, off by default
 CM-LOY-005	woocommerce	shows	WC-C-097/decides/WC-S-5458	feature cart_save_for_later experimental, off by default
 CM-LOY-006	woocommerce	extension-point	WC-C-104/where/WC-S-0733	Marketplace category Merchandising > Gifts
+CM-SUP-001	woocommerce	core	WC-C-065/where/WC-S-0056	admin page Products > Reviews
+CM-SUP-001	woocommerce	core	WC-C-065/decides/WC-S-5389	setting woocommerce_enable_reviews, default yes
+CM-SUP-001	woocommerce	core	WC-C-065/decides/WC-S-0950	setting: reviews only by verified owners
+CM-SUP-001	woocommerce	core	WC-C-065/boundary/WC-S-0097	its REST resource wc/v3 product-reviews
+CM-SUP-001	woocommerce	core	WC-C-065/boundary/WC-S-0678	its product reviews API
+CM-SUP-001	woocommerce	core	WC-C-065/boundary/WC-S-0173	its Store API route /products/reviews
+CM-SUP-001	woocommerce	extension-point	WC-C-105/where/WC-S-0717	Marketplace category Customer feedback
+CM-SUP-002	woocommerce	core	WC-C-065/where/WC-S-0313	its email Review request
+CM-SUP-002	woocommerce	core	WC-C-065/decides/WC-S-5390	feature customer_review_request, merchants enable it in Settings > Advanced > Features
+CM-SUP-002	woocommerce	core	WC-C-065/where/WC-S-5391	its namespace OrderReviews
+CM-SUP-002	woocommerce	core	WC-C-065/boundary/WC-S-5392	its route /review-order/{id}/ to the Review Order page
+CM-SUP-004	woocommerce	extension-point	WC-C-106/where/WC-S-0724	Marketplace category Customer service > Live chat
+CM-SUP-005	woocommerce	extension-point	WC-C-106/where/WC-S-0701	Marketplace category group Customer service
+CM-SUP-005	woocommerce	extension-point	WC-C-106/where/WC-S-0727	Marketplace category Customer service > Support
+CM-ANL-001	woocommerce	core	WC-C-038/where/WC-S-0064	admin menu Analytics
+CM-ANL-001	woocommerce	core	WC-C-038/where/WC-S-0075	admin page Analytics > Settings
+CM-ANL-001	woocommerce	core	WC-C-038/decides/WC-S-5374	setting analytics, on by default, not experimental
+CM-ANL-001	woocommerce	core	WC-C-038/where/WC-S-0622	Enable WooCommerce Analytics to track your store's key metrics
+CM-ANL-001	woocommerce	core	WC-C-038/decides/WC-S-5375	its pages need the capability view_woocommerce_reports
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0084	its namespace wc-analytics
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0209	its wc-analytics resource Data
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0210	its wc-analytics resource DataCountries
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0211	its wc-analytics resource data/download-ips
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0212	its wc-analytics resource Orders
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0213	its wc-analytics resource Products
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0214	its wc-analytics resource ProductAttributes
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0215	its wc-analytics resource ProductAttributeTerms
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0216	its wc-analytics resource ProductCategories
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0217	its wc-analytics resource ProductVariations
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0218	its wc-analytics resource ProductReviews
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0219	its wc-analytics resource ProductsLowInStock
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0220	its wc-analytics resource activity-panel/counts
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0221	its wc-analytics resource SettingOptions
+CM-ANL-001	woocommerce	core	WC-C-038/boundary/WC-S-0222	its wc-analytics resource Taxes
+CM-ANL-001	woocommerce	extension-point	WC-C-110/where/WC-S-0758	Marketplace category Marketing > Reporting and analytics
+CM-ANL-001	woocommerce	extension-point	WC-C-109/where/WC-S-0746	Marketplace category Store management > Business insights
+CM-ANL-001	woocommerce	shows	WC-C-039/where/WC-S-0573	WooCommerce Analytics needs the store connected to our service
+CM-ANL-001	woocommerce	shows	WC-C-039/boundary/WC-S-0574	data synced to WooCommerce Analytics through Jetpack Sync
+CM-ANL-001	woocommerce	shows	WC-C-039/responsible/WC-S-0575	the data is shared with no third party
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0043	admin page WooCommerce > Reports, capability view_woocommerce_reports
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0066	report page Analytics > Products
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0067	report page Analytics > Revenue
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0068	report page Analytics > Orders
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0069	report page Analytics > Variations
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0070	report page Analytics > Categories
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0071	report page Analytics > Coupons
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0072	report page Analytics > Taxes
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0073	report page Analytics > Downloads
+CM-ANL-002	woocommerce	core	WC-C-038/where/WC-S-0074	report page Analytics > Stock
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0208	its wc-analytics resource Coupons, for the report
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0223	its wc-analytics resource customers, for the report
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0225	its wc-analytics resource Reports/Controller
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0226	its wc-analytics resource reports/import
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0227	its wc-analytics resource reports export
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0228	its wc-analytics resource reports/products
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0229	its wc-analytics resource reports/variations
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0230	its wc-analytics resource reports/products/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0231	its wc-analytics resource reports/variations/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0232	its wc-analytics resource reports/revenue/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0233	its wc-analytics resource reports/orders
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0234	its wc-analytics resource reports/orders/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0235	its wc-analytics resource reports/categories
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0236	its wc-analytics resource reports/taxes
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0237	its wc-analytics resource reports/taxes/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0238	its wc-analytics resource reports/coupons
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0239	its wc-analytics resource reports/coupons/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0240	its wc-analytics resource reports/stock
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0241	its wc-analytics resource reports/stock/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0242	its wc-analytics resource reports/downloads
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0243	its wc-analytics resource reports/downloads/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0244	its wc-analytics resource reports/customers
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0245	its wc-analytics resource reports/customers/stats
+CM-ANL-002	woocommerce	core	WC-C-038/boundary/WC-S-0246	its wc-analytics resource imports
+CM-ANL-003	woocommerce	core	WC-C-038/where/WC-S-0065	admin page Analytics > Overview
+CM-ANL-003	woocommerce	core	WC-C-038/boundary/WC-S-0247	its wc-analytics resource reports/performance-indicators
+CM-ANL-003	woocommerce	core	WC-C-038/boundary/WC-S-0224	its wc-analytics resource leaderboards
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0679	its reports API: view all types of reports available
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0110	its REST resource wc/v3 reports
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0103	its REST resource wc/v3 reports-sales
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0104	its REST resource wc/v3 reports-top-sellers
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0105	its REST resource wc/v3 reports-orders-totals
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0106	its REST resource wc/v3 reports-products-totals
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0107	its REST resource wc/v3 reports-customers-totals
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0108	its REST resource wc/v3 reports-coupons-totals
+CM-ANL-006	woocommerce	core	WC-C-038/boundary/WC-S-0109	its REST resource wc/v3 reports-reviews-totals
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0007	settings tab Emails
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0021	Emails > Email options
+CM-NTF-001	woocommerce	core	WC-C-076/decides/WC-S-5412	setting Enable this email notification
+CM-NTF-001	woocommerce	core	WC-C-076/decides/WC-S-5413	feature: send transactional emails asynchronously, off by default
+CM-NTF-001	woocommerce	core	WC-C-076/boundary/WC-S-0141	its REST resource wc/v4 settings-email
+CM-NTF-001	woocommerce	core	WC-C-076/boundary/WC-S-0142	its REST resource wc/v4 settings-emails
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0296	customer email Cancelled order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0298	customer email Failed order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0299	customer email Order on-hold (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0300	customer email Processing order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0301	customer email Completed order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0302	customer email Refunded order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0303	customer email Order details (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0304	customer email Customer note (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0305	customer email Reset password (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0306	customer email New account (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0308	customer email POS completed order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0309	customer email POS refunded order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0310	customer email Fulfillment created (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0311	customer email Fulfillment updated (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0312	customer email Fulfillment deleted (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0314	customer email Order withdrawal request received (WC_Email_Customer_)
+CM-NTF-001	woocommerce	core	WC-C-076/where/WC-S-0316	customer email Partially refunded order (WC_Email_Customer_)
+CM-NTF-001	woocommerce	extension-point	WC-C-076/boundary/WC-S-0443	filter woocommerce_email_classes, through which code adds emails
+CM-NTF-001	woocommerce	extension-point	WC-C-109/where/WC-S-0752	Marketplace category Store management > Admin and notifications
+CM-NTF-001	woocommerce	shows	WC-C-106/decides/WC-S-5481	Advanced Notifications: triggers for notifications
+CM-NTF-001	woocommerce	shows	WC-C-106/boundary/WC-S-5483	Advanced Notifications: Purchases notification
+CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0294	staff email New order (WC_Email_New_Order)
+CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0295	staff email Cancelled order (WC_Email_Cancelled_Order)
+CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0297	staff email Failed order (WC_Email_Failed_Order)
+CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0307	staff email Payment gateway enabled (WC_Email_Admin_)
+CM-NTF-002	woocommerce	core	WC-C-076/where/WC-S-0315	staff email Order withdrawal request (WC_Email_Order_Withdrawal_Requested)
+CM-NTF-002	woocommerce	core	WC-C-090/where/WC-S-0939	push notifications for the mobile apps: order notifications
+CM-CUS-001	woocommerce	extension-point	WC-C-106/where/WC-S-0725	Marketplace category Customer service > Managing customers
