@@ -17,7 +17,7 @@ The `when` rules and the time-bomb tests here are the coordinator's own, as the 
 import argparse, csv, glob, io, math, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import MODEL, PLATFORMS, rows, fold, ids, items, key
+from class_slice import MODEL, PLATFORMS, SUBJECTS_CITED, rows, fold, ids, items, key
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # the repository, whatever CLASS_MODEL_DIR says
 ROWS = os.path.join(MODEL, "q3", "rows.tsv")
@@ -254,6 +254,8 @@ def cmd_check(a):
             for x in who:
                 if x.startswith("subject:S-") and x[8:] not in subjects:
                     problems.append(f"{w}: {x[8:]} is not in studies/subjects/subjects.tsv")
+                if x.startswith("subject:S-") and x[8:] in SUBJECTS_CITED:
+                    problems.append(f"{w}: {x[8:]} has run: it answers through its register, as engineering:build or engineering:detail (a ruling), founder:decided (a decision) or the subject a row moved to")
             if res in ("covered", "partly"):
                 if not cs:
                     problems.append(f"{w}: {res} names the capabilities that answer it")
