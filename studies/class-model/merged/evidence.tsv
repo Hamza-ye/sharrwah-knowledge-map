@@ -1982,6 +1982,7 @@ CM-PTN-010	bigcommerce	core	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans:
 CM-PTN-010	bigcommerce	core	BC-I-0115	the API resource Beta Powered By	F-bigcommerce
 CM-PTN-010	bigcommerce	extension-point	BC-C-066/decides/BC-S-0362	the partner may own the billing relationship for its merchant's products, or let BigCommerce bill the merchant	F-bigcommerce
 CM-PTN-010	bigcommerce	shows	BC-C-066/decides/BC-S-0077	closed beta, not available by default; access through BigCommerce support	F-bigcommerce
+CM-AIA-005	bigcommerce	core	BC-I-0105	the API resource Agent Behavior for Tool Resynchronization (mcp)	F-bigcommerce
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1805	dashboard link Import & export, /products/imports, in the products list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1847	dashboard link Import customers, /customers/imports, in the customers list	G-anchor
 CM-MIG-001	salla	core	SA-C-027/where/SA-S-1057	Merchant API folder Exports: its own API for its own feature (C1)	G-anchor

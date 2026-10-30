@@ -48,6 +48,13 @@ CM-API-010	zid	events that support conditions	**Note:** Conditions are currently
 CM-PTN-003	zid	withholding tax on payouts to a non-Saudi bank account	Non-Saudi bank account: in USD, deducting withholding tax (WHT): 15% for apps and 5% for themes.	ZD-C-022/responsible/ZD-S-0689	F-zid
 CM-PTN-003	zid	the partner's share	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	F-zid
 CM-PTN-004	zid	fee per transaction for shipping apps	Shipping Apps: 0.70 SAR per transaction	ZD-C-061/boundary/ZD-S-0854	F-zid
+CM-API-005	bigcommerce	API rate limit, Pro plan	Pro | 60k per hour (450 / 30sec)	BC-C-057/decides/BC-S-0309	F-bigcommerce
+CM-API-005	bigcommerce	API rate limit, Plus and Standard plans	Plus & Standard | 20k per hour (150 / 30sec)	BC-C-057/decides/BC-S-0310	F-bigcommerce
+CM-API-005	bigcommerce	API rate limit, Unlimited Rate Plan	The Unlimited Rate Plan is for some BigCommerce Enterprise clients. It has no request rate limits.	BC-C-057/decides/BC-S-0311	F-bigcommerce
+CM-API-005	bigcommerce	quota refresh window	Apps using OAuth are rate-limited based on a quota that's refreshed every 30 seconds.	BC-C-057/where/BC-S-0308	F-bigcommerce
+CM-API-008	bigcommerce	when a webhook is deactivated	After the final retry attempt (cumulatively 48 hours after the first delivery attempt), the webhook will be deactivated, and an email will be sent to the email address registered for the subscribing app.	BC-C-058/decides/BC-S-0318	F-bigcommerce
+CM-API-008	bigcommerce	when a destination is blocklisted	If at any point in the two minute window the success/failure ratio dips below 90%, the destination URI's domain will be blocklisted for three minutes.	BC-C-058/decides/BC-S-0319	F-bigcommerce
+CM-AIA-005	bigcommerce	data processed under Agentic Search	Only catalog-related data is processed under Agentic Search. No personally identifiable information (PII), checkout data, or customer order information is used unless otherwise agreed in writing.	BC-C-063/boundary/BC-S-0348	F-bigcommerce
 CM-MIG-005	salla	eligibility: the merchant's sales in the last 12 months	يجب أن يكون التاجر قد حقق مبيعات لا تقل عن 20,000 ريال سعودي خلال آخر 12 شهرًا	SA-C-302/decides/SA-S-5120	G-anchor
 CM-OPS-005	woocommerce	days logs are kept, by default	'retention_period_days' => 30,	WC-C-037/decides/WC-S-5373	G-woocommerce
 CM-OPS-001	bigcommerce	uptime	With 100% uptime during Cyber Week since 2016 (and 99.98% since 2009)	BC-C-083/where/BC-S-0455	G-bigcommerce
