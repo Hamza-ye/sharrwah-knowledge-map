@@ -182,7 +182,7 @@ shopify	SH-C-180	A	D	Data Processing Addendum; Data Controller; Data Processor (
 shopify	SH-C-181	A	G	Data hosting locations; Binding Corporate Rules (TRU); M-061
 shopify	SH-C-182	A		Subprocessors (TRU)
 shopify	SH-C-183	A		retain store information for two years: store data after closure (TRU)
-shopify	SH-C-184	A	C	PCI DSS; Account Data: card data security (TRU); M-062
+shopify	SH-C-184	A	C;E	PCI DSS; Account Data: card data security (TRU); M-062; also E: its P2PE clause is about Shopify's POS Equipment (the coordinator, after E-anchor batch 5)
 shopify	SH-C-185	B	E	Dropshipping apps; Print on demand apps; Wholesale apps: sourcing products; the channel doesn't set the domain (CAT)
 shopify	SH-C-186	B	C	Subscription apps; selling_plan_groups/create; subscription_contracts/create (SEL); M-074
 shopify	SH-C-187	D	B	Customer loyalty apps; Wishlist apps; Donation apps (LOY); M-075; also B: its Donation apps category (SH-S-2583) is Shopify's only statement on donations, cited in domain B (the coordinator, from the dry run's structure review, S6)
@@ -260,7 +260,7 @@ salla	SA-C-091	E	F	Twilight SDK; Web Components: the storefront's own SDK (SFR)
 salla	SA-C-092	D	E	Ecommerce Events; Product Added; Checkout Started: storefront events for tracking (ANL); M-055
 salla	SA-C-093	E		Information pages; Custom URLs; store-menu (CNT); M-015
 salla	SA-C-094	E		App Maker; Mobile app; store-ios-app: the store's own mobile app (CHN); M-078
-salla	SA-C-095	E		Salla Point; Free Cashier; where @salla.sa/ui-merchant-pos (POS); M-057
+salla	SA-C-095	E	C	Salla Point; Free Cashier; where @salla.sa/ui-merchant-pos (POS); M-057; also C: its Geidea card-present payment statements bear on payment methods (the coordinator, after E-anchor batch 5)
 salla	SA-C-096	E		Mahally; منصة محلي; where @salla.sa/ui-merchant-mahally: Salla's marketplace channel (CHN)
 salla	SA-C-097	E		Sales channels; product.publish; where @salla.sa/ui-merchant-channel (CHN); M-054
 salla	SA-C-098	D	B;E	سوق الجملة; vendors_buy_products; where @salla.sa/ui-merchant-vendors: the wholesale market (B2B)

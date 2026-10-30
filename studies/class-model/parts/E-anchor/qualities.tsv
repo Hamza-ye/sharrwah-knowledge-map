@@ -5,3 +5,6 @@ CM-SFR-003	salla	Minimum price of a theme	لديك الحرية في تحديد 
 CM-SFR-003	salla	Developers' dues paid after a warranty period	تُصرف مستحقات المطورين بعد انقضاء فترة الضمان (عادة 15 يومًا من تاريخ الشراء).	SA-C-208/decides/SA-S-0041
 CM-CHN-003	shopify	synced marketplace orders free per month	50 synced marketplace orders per month: Free	SH-C-137/decides/SH-S-7050
 CM-CHN-003	shopify	price above 50 synced marketplace orders	Over 50 synced marketplace orders: 1% up to $99/mo	SH-C-137/decides/SH-S-7051
+CM-POS-001	shopify	POS Pro per plan	POS Pro: Advanced tools for brick‑and‑mortar retailers: $89/mo per location; $89/mo per location; $89/mo per location; Includes 20 locations. Up to 200 with Shopify Payments.	SH-C-142/decides/SH-S-7018
+CM-POS-004	shopify	UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-144/decides/SH-S-7485
+CM-POS-002	salla	Payment terminal per device	رقم جهاز الدفع مخصص لجهاز واحد فقط وفق متطلبات أنظمة الدفع وNearPay	SA-C-095/reason/SA-S-5042

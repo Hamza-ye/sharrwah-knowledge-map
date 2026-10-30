@@ -372,3 +372,60 @@ CM-CHN-006	salla	shows	SA-C-174/where/SA-S-2211	App Maker publishing policy page
 CM-CHN-006	salla	shows	SA-C-174/responsible/SA-S-5079	Salla's company disclaims liability for the merchant's breaches
 CM-CHN-006	salla	shows	SA-C-174/boundary/SA-S-5080	checkbox agreeing to the publishing policy
 CM-CHN-006	salla	shows	SA-C-174/reason/SA-S-5081	charity apps may be rejected or delayed for Apple's reasons
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7017	plan row Casual, in-person sales at pop-ups and events, Included on all four plans
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7018	plan row POS Pro, $89/mo per location, 20 locations on Plus
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-0049	fees for POS Services by number of locations
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7262	POS Services must use the online store's payment processor
+CM-POS-001	shopify	core	SH-C-142/boundary/SH-S-7461	own Admin API object PointOfSaleDevice
+CM-POS-001	shopify	core	SH-I-2463	own access scope read_point_of_sale_devices
+CM-POS-001	shopify	core	SH-I-0853	staff role POS full permissions
+CM-POS-001	shopify	core	SH-I-0851	staff role Organization POS administrator
+CM-POS-001	shopify	own-service	SH-C-142/where/SH-S-2757	POS app on Google Play, publisher Shopify Inc.
+CM-POS-001	shopify	extension-point	SH-I-1869	App Store category Selling in person apps
+CM-POS-001	shopify	extension-point	SH-I-1870	App Store category Retail apps
+CM-POS-001	shopify	shows	SH-C-142/where/SH-S-0785	label Retail
+CM-POS-001	shopify	shows	SH-C-142/where/SH-S-5255	admin route quick-sale, placed here by Q1, its words don't name POS
+CM-POS-001	shopify	shows	SH-C-142/decides/SH-S-5227	quick-sale route needs QUICK_SALE
+CM-POS-001	shopify	shows	SH-C-142/reason/SH-S-7285	German merchants meet TSE Compliance by recording and exporting POS transactions
+CM-POS-001	salla	core	SA-C-095/where/SA-S-1836	admin link Salla PointFree Cashier, /channel/sallapoint
+CM-POS-001	salla	core	SA-C-095/where/SA-S-3540	dashboard app @salla.sa/ui-merchant-pos
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2094	plan line بيع عبر نقاط البيع مع سلة بوينت, plan سلة بلس
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2441	staff permission salla_point_activate, group سلة بوينت
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2442	staff permission salla_point_add_employees
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2450	staff permission salla_point_create_orders
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2447	staff permission salla_point_manage_products
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2448	staff permission salla_point_assign_branch
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2452	staff permission salla_point_view_shift_reports
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2453	staff permission salla_point_manage_shifts
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-3412	released flag app_pos, enabled in the answering store
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-3514	released flag salla-point-app, Plus, Pro and Special
+CM-POS-001	salla	own-service	SA-C-095/where/SA-S-0006	Salla Point is Salla's point-of-sale product
+CM-POS-001	salla	shows	SA-C-095/decides/SA-S-2651	salla_point_activate in the permissions a partner can request: an interface for apps
+CM-POS-001	salla	shows	SA-C-095/decides/SA-S-2660	salla_point_create_orders in the permissions a partner can request: an interface for apps
+CM-POS-002	shopify	own-service	SH-C-143/decides/SH-S-7269	merchant may purchase POS Equipment from Shopify to accept Card Present Transactions
+CM-POS-002	shopify	own-service	SH-C-143/where/SH-S-7251	POS Services include Shopify's POS hardware, provided by Shopify
+CM-POS-002	shopify	shows	SH-C-143/where/SH-S-7270	POS hardware bought on the Shopify Hardware Store
+CM-POS-002	shopify	shows	SH-C-143/responsible/SH-S-7274	purchased, not leased, under the POS Equipment Agreement per country
+CM-POS-002	shopify	shows	SH-C-143/boundary/SH-S-0048	purchase subject to the POS Equipment Agreement per country
+CM-POS-002	shopify	shows	SH-C-142/responsible/SH-S-7273	transactions using the POS Equipment at the merchant's own risk
+CM-POS-002	salla	outside	SA-C-095/boundary/SA-S-5040	card payment in the Salla Point cashier needs a Geidea account
+CM-POS-002	salla	outside	SA-C-095/responsible/SA-S-5039	successful payment transferred by the service provider such as Geidea
+CM-POS-002	salla	outside	SA-C-095/responsible/SA-S-5038	freelance licences carry Geidea's annual fees under the merchant's contract with Geidea
+CM-POS-002	salla	shows	SA-C-095/decides/SA-S-2094	from the phone or tablet without additional devices
+CM-POS-002	salla	shows	SA-C-095/reason/SA-S-5041	terminal ID tied to one staff member, for security and regulatory reasons
+CM-POS-002	salla	shows	SA-C-095/reason/SA-S-5042	terminal number assigned to one device under the payment systems' and NearPay's requirements
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-5940	own access scope read_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-6175	own access scope write_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-5941	cash management query needs read_cash_tracking and a POS retail role permission
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-0954	scope read_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-0955	scope write_cash_tracking
+CM-POS-003	shopify	shows	SH-C-087/reason/SH-S-7492	cash drawers shouldn't open in a different part of the store
+CM-POS-004	shopify	extension-point	SH-C-144/where/SH-S-0713	POS UI extensions add custom functionality into Shopify POS
+CM-POS-004	shopify	extension-point	SH-C-144/where/SH-S-2217	extension target pos_action
+CM-POS-004	shopify	extension-point	SH-I-1667	extension target pos.home.tile.render
+CM-POS-004	shopify	extension-point	SH-I-1676	extension target pos.purchase.post.action.render
+CM-POS-004	shopify	extension-point	SH-C-144/decides/SH-S-7486	app authentication for extensions from POS 10.6.0
+CM-POS-004	shopify	extension-point	SH-C-144/responsible/SH-S-7281	developer solely responsible for the application
+CM-POS-004	shopify	shows	SH-C-144/boundary/SH-S-0823	label POS in the API reference
+CM-POS-004	shopify	shows	SH-C-144/reason/SH-S-7495	limit enforced for fast loading
+CM-POS-002	shopify	outside	SH-C-184/responsible/SH-S-0089	the P2PE service that encrypts card data on POS Equipment is provided, managed and processed exclusively by Stripe (the coordinator, from batch 5's lead)

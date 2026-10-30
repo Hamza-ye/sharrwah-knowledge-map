@@ -317,3 +317,99 @@ Capabilities CM-CHN-001 to CM-CHN-006 are new, with a Shopify and a Salla cell e
 - **cells.tsv line 53 (CM-CHN-005, Salla, none-held, 4 matches):** the wholesale market (SA-S-5047) and the Drop shipping app type and settlements (SA-S-1193, SA-S-0179, SA-I-0193). See U-016 above: neither is stores selling each other's products.
 - **The other seven flags are batches 1 to 3's,** answered in their notes. No problem on earlier batches' rows.
 - **Not flagged, for the merge:** SH-S-0729 and SH-S-7013 (Shopify Collective) are core in CM-CHN-005 and in domain B's CM-CAT-010. SH-C-141 is E's concern, and B cites it under also. On Shopify's plan row ("Sell and source"), the selling side is E's and the sourcing side is B's. The coordinator may make one of the two `shows`.
+
+## Batch 5: area POS, SH-C-087, SH-C-142, SH-C-143, SH-C-144, SA-C-095
+
+Capabilities CM-POS-001 to CM-POS-004 are new, with a Shopify and a Salla cell each. Area POS had none, so no concern joined an existing capability. No evidence was added to batches 1 to 4's cells: none of my concerns' statements bears on them. Every reading below is a reading; the landings, cells and rulings cite the keys.
+
+### How the area is cut, and the grains chosen
+
+- **CM-POS-001 (point of sale) is the area's root.** SH-C-142 and SA-C-095 land in it by M-057. Both give it a place of its own: Shopify's plan rows (SH-S-7017, SH-S-7018) and its terms' 9.3 POS Services; Salla's link /channel/sallapoint (SA-S-1836), its dashboard app (SA-S-3540), its plan line (SA-S-2094) and its permission group سلة بوينت.
+- **Its children are Shopify's finer concerns,** which M-057's granularity names ("Shopify also splits POS hardware (SH-C-143) and POS UI extensions (SH-C-144)"), and cash management:
+  - CM-POS-002, POS hardware and card-present payment devices (SH-C-143). Shopify gives it the Shopify Hardware Store (SH-S-7270) and its own agreement (SH-I-1398).
+  - CM-POS-003, cash management (SH-C-087). Shopify gives it its own scope pair, read_cash_tracking and write_cash_tracking.
+  - CM-POS-004, app extensions in the POS app (SH-C-144). Shopify gives it its own extension targets.
+  - The parent of each is CM-POS-001 by Shopify's own words: "Extending Shopify POS with UI extensions" (SH-S-0713); the POS Services include Shopify's POS hardware (SH-S-7251); the cash query needs a POS retail role permission (SH-S-5941).
+
+### CM-POS-001's parent: CM-CHN-001, sales channels (batch 4's lead)
+
+A reading, and the weakest call in this batch. I put it under CM-CHN-001 by convention 6: the shared admin grouping. The reviewer may make it a root.
+- **For:** both platforms' admin identifiers name the point of sale a channel.
+  - Salla's route /channel/sallapoint (SA-S-1836, SA-S-3540) sits beside /channel/mahally and /channel/mobile, which batch 4 nested under CM-CHN-001.
+  - Shopify's admin route is apps/point-of-sale-channel (SH-C-086/where/SH-S-6329, domain C naming E). Its retail role permission is view_payment_tracking_sessions_pos_channel (SH-S-5941).
+- **Against:**
+  - Shopify's help puts POS under manual/sell-in-person (SH-S-0436, SH-S-0585), apart from manual/online-sales-channels, where Shop, Marketplace Connect and Collective sit (SH-S-0723, SH-S-0727, SH-S-0729).
+  - Shopify defines a sales channel as an app connecting "a merchant's online store to surfaces outside Shopify" (SH-S-0699).
+  - Salla's plan group knoat-albyaa doesn't list Salla Point (batch 4's search).
+  - Salla's /channel/ prefix also holds the information pages (/channel/pages, SA-S-1831). Its admin list 4 holds store design, domain, pages and custom URLs too (SA-S-1828, SA-S-1830, SA-S-1833), so it is "store and channels", not channels alone.
+- No held statement lists Salla Point on Salla's Sales channels page (/channels).
+
+### Joins on role (readings)
+
+- **CM-POS-002 (U-074):** Shopify's POS Equipment against the payment terminal in Salla Point's card payment.
+  - **Shopify:** the merchant may purchase POS Equipment from Shopify "that will allow you to accept Card Present Transactions and Keyed Transactions" (SH-S-7269), on the Shopify Hardware Store (SH-S-7270).
+  - **Salla:** card payment in the Salla Point cashier starts by linking a Geidea account (SA-S-5040). Salla Point runs "مباشرة من جوالك أو جهازك اللوحي بدون الحاجة لأجهزة إضافية", directly from the phone or tablet, without additional devices (SA-S-2094). The terminal number is assigned to one device under the payment systems' and NearPay's requirements (SA-S-5042).
+  - **The shared role:** the device that takes the card at the point of sale.
+  - **The difference is in the placements:** Shopify's company sells the hardware (own-service); Salla's terminal comes from third parties on the merchant's own device (outside).
+  - Q1's why_unclear calls them "Sub-parts", and the cut follows it: SA-C-095 lands in the parent.
+
+### Homonyms and terms kept apart
+
+- **"Retail stores" (Salla):** the seed lists it beside Salla Point. Its link goes to /products/branches/stock-management (SA-C-026/where/SA-S-1810), stock in branches, which B-anchor cites (domain B). It isn't the point of sale, and isn't cited here.
+- **"Shift" against "cash tracking session":**
+  - Salla Point's staff permissions بدء وإنهاء الشفت and عرض تقارير الشفتات (SA-S-2453, SA-S-2452) are core in CM-POS-001.
+  - Shopify's cash tracking sessions are in CM-POS-003 (SH-S-5941).
+  - Neither platform's statements define them, and no Salla statement says a shift counts cash, so I didn't join them: CM-POS-003's Salla cell is none-held.
+  - A Salla help page on Salla Point shifts would settle it.
+- **"quick sale" (Shopify) and quick_payment_direct (Salla):** neither is joined.
+  - Q1 placed Shopify's quick-sale route and QUICK_SALE permission in SH-C-142, but their words don't name POS, so they are `shows` in CM-POS-001.
+  - Salla's quick_payment_direct (الدفع السريع (المباشر)) sits in Salla Point's permission group, but Q1 holds it in SA-C-126 too (payment links, domain C), so it isn't cited.
+
+### Strained fits
+
+- None. SA-C-095's statements are cited in CM-POS-001 and in its child CM-POS-002: SA-S-2094 in both, and the Geidea and terminal statements in CM-POS-002. They are in one tree.
+
+### Concerns read under `also`, and other domains' statements
+
+- **SH-C-086** (in-person card payments, domain C, naming E): read for the parent and for CM-POS-002. Its route apps/point-of-sale-channel (SH-S-6329) is named in CM-POS-001's capability note, and is not cited in a cell. The card rates, offline payments and Shopify Payments rule (SH-S-0047, SH-S-7027, SH-S-0585) are domain C's.
+  - **For domain C:** Salla's card payment in Salla Point through Geidea (SA-S-5038 to SA-S-5040) is cited here as `outside` in CM-POS-002, as the device's side. Domain C's in-person card payments may want them. scope.tsv gives SA-C-095 no `also`, so C can't cite them now.
+- **SA-C-026 and SH-C-024** (branches and locations, domain B, naming E): read for "Retail stores", and not cited. salla_point_assign_branch (SA-S-2448), changing the branch, ties Salla Point to branches; it is cited in CM-POS-001 only.
+- **Not cited:**
+  - SH-C-184/responsible/SH-S-0089 (domain A, not naming E): "This P2PE Service is provided, managed, and processed exclusively by Stripe", in the POS Equipment terms. It is a lead for CM-POS-002's Shopify cell, and a slot filler (Stripe), if the coordinator adds E to SH-C-184's also.
+  - SH-C-186/decides/SH-S-0593 (subscriptions on POS, domain C) and SH-C-018/decides/SH-S-0276 (no transaction fees on POS orders): payments and billing, not the point of sale itself.
+  - SA-C-064/decides/SA-S-3237 (flag loyalty-free-product-pos, not released, domain D).
+  - Shopify's POS notification templates (SH-I-2028 to SH-I-2032), inventory entries that my concerns don't hold: a lead for notifications, not for the point of sale itself.
+
+### Rulings
+
+- U-074: joined:CM-POS-002 (SH-C-143 against SA-C-095). WC-C-014's side is WooCommerce's part's.
+- M-057 is a match, not a candidate: no ruling.
+- No pair is left for batches 6 and 7. None of my concerns has a side in MKS.
+
+### Gaps that change what a cell can claim
+
+- **CM-POS-003, Shopify:** Q1's where and decides gaps on SH-C-087 are "observation needed": the POS screens and admin pages for cash drawer sessions, and the setting or permission that turns it on. The cell's core rests only on Shopify's own API scopes, by the dry run's convention on a platform's own API.
+- **CM-POS-003, Salla:** none-held. Salla's definition of cash management at its point of sale is not stated.
+- **CM-POS-004, Salla:** none-held. Salla's definition of extending Salla Point is not stated. The partner-requestable salla_point_* permissions (SA-S-2651 to SA-S-2664) give apps access to its data, and are cited in CM-POS-001.
+- **CM-POS-002, Salla:** no statement names Salla's company selling or providing hardware. Geidea's and NearPay's parts are stated (slot fillers).
+- **CM-POS-002, Shopify:** Q1's reason gap on SH-C-143 is "searched, not found".
+
+### What the checker flagged
+
+`0 problems, 20 flags`. Mine are five.
+- **Four own-service flags: does the statement name the company?**
+  - SH-S-2757: its scope names the publisher, Shopify Inc., as batch 4's SH-S-2756.
+  - SH-S-7269: "purchase POS Equipment from Shopify", in the terms of service, whose party is Shopify.
+  - SH-S-7251: "Shopify's POS hardware ("POS Equipment") and any updates thereto provided to you by Shopify", in the same terms.
+  - SA-S-0006: "Salla Point (سلة بوينت) is Salla's point-of-sale product". I read "Salla's" as the company's product. **A reviewer may read it as the platform's name only,** as with batch 4's SA-S-0002; then it becomes shows, and CM-POS-001's Salla cell keeps its core.
+- **Line 60 (CM-POS-003, Shopify): core rests only on boundary statements.** They are Shopify's own Admin API scopes and its own cash management query for its own feature, which the dry run's convention makes core. The admin place isn't held (the gaps above).
+- **Lines 61 and 63 (none-held with matches):** answered in the cells' readings and above. CM-POS-003's matches are cash on delivery, cashback, the fund manager and others, plus Salla Point's shifts. CM-POS-004's matches are SA-C-095's own statements, cited in CM-POS-001.
+- **The other flags are batches 1 to 4's,** answered in their notes. No problem on earlier batches' rows.
+
+## The coordinator's corrections after batch 5 (30 October)
+
+- **Stripe in CM-POS-002.** Batch 5's lead: Shopify's POS Equipment terms say "This P2PE Service is provided, managed, and processed exclusively by Stripe and is designed to encrypt cardholder data at the point of interaction" (SH-S-0089). Its concern SH-C-184 (domain A) now names E under `also`, and the statement is cited in CM-POS-002's Shopify cell as `outside`, with Stripe as a slot filler.
+- **SA-C-095 names C under `also`,** so domain C's payment batches may cite Salla's Geidea card-present statements (SA-S-5038 to SA-S-5040), which are `outside` here.
+- **CM-POS-001's parent** stays CM-CHN-001, by convention 6: both anchor platforms' admin identifiers name the point of sale a channel (Shopify's apps/point-of-sale-channel, Salla's /channel/sallapoint), though Shopify's help puts it under selling in person. The final review weighs it.
+- **SH-C-144** (POS UI extensions, domain E naming F) is a lead for domain F's app-extension capabilities; F's cells don't cite it. Listed for the final review.
+
