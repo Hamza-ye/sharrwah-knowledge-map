@@ -45,7 +45,7 @@ Commands:
 A statement's key is `concern_id/placement/first_cite_id`, unique on every platform's statements.tsv (`/` appears in no
 id or placement). Run with python3 -I from the repository's root.
 """
-import argparse, csv, os, re, signal, sys, unicodedata
+import argparse, glob, csv, os, re, signal, sys, unicodedata
 
 signal.signal(signal.SIGPIPE, signal.SIG_DFL)
 csv.field_size_limit(10**9)
@@ -178,11 +178,22 @@ def held_items(platform):
     if platform not in _held:
         out = []
         path = os.path.join(HELD, platform, "entries.tsv")
+        sel = {}
+        if os.path.exists(os.path.join(HELD, "selection.tsv")):
+            sel = {r["structure"]: r for r in rows(os.path.join(HELD, "selection.tsv")) if r["platform"] == platform}
+        scope = {}      # an entry's scope is what its placement states: a plan, a country, a store
+        for pp in sorted(glob.glob(os.path.join(HELD, platform, "placements-*.tsv"))):
+            for r in rows(pp):
+                for e in [x.strip() for x in r["entry_id"].split(";") if x.strip()]:
+                    if r.get("scope") and e not in scope:
+                        scope[e] = r["scope"]
         for r in rows(path) if os.path.exists(path) else []:
-            out.append({"inv_id": r["entry_id"], "concern_id": "", "concern_ids": [], "placement": "held",
-                        "structure": r["structure"], "identifier": r["structure"], "statement": r["text"],
-                        "scope": r["labels"] if r["labels"] not in ("", ".") else "", "cite_ids": r["entry_id"],
-                        "note": "the held pass", "subject": "held"})
+            sr = sel.get(r["structure"], {})
+            out.append({"inv_id": r["entry_id"], "concern_id": "", "concern_ids": [],
+                        "placement": sr.get("placement") or "held", "structure": r["structure"],
+                        "identifier": r["structure"], "statement": r["text"], "scope": scope.get(r["entry_id"], ""),
+                        "cite_ids": r["entry_id"], "note": "; ".join(x for x in ("the held pass", sr.get("note", "")) if x),
+                        "subject": "held"})
         _held[platform] = out
     return _held[platform]
 

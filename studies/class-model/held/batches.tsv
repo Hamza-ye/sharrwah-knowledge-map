@@ -1,24 +1,71 @@
-batch	platform	from	to	entries	structures
-SH-1	shopify	1	900	900	admin-router
-SH-2	shopify	901	1800	900	admin-router,admin-router-versions,admin-settings-nav,admin-main-nav,settings-panel,plan-page-admin,plan-page-public
-SH-3	shopify	1801	2700	900	plan-page-public,admin-home-setup,signup-router,help-section-children
-SH-4	shopify	2701	3600	900	help-section-children
-SH-5	shopify	3601	4296	696	help-section-children
-SH-6	shopify	4297	5196	900	dev-nav,app-install-consent,translatable-resources,notification-templates,dev-changelog
-SH-7	shopify	5197	5765	569	dev-changelog,merchant-changelog,account-organization,dev-dashboard-nav,theme-editor-templates,checkout-editor-pages,dev-dashboard-scopes
-SH-8	shopify	5766	6366	601	play-publisher-apps,mobile-app-navigation,mobile-app-settings-index,pos-app-navigation,pos-settings,tinker-tools,ui-extension-targets
-SH-9	shopify	6367	6922	556	admin-role-permissions,admin-permission-tree,billing-charge-categories,return-reasons,inventory-adjustment-reasons,bulk-editor-columns
-SH-10	shopify	6923	7822	900	signup-onboarding-questions,sign-in-methods,partner-focus-options,partner-dashboard-nav,partners-dashboard-routes,app-store-registration,partner-api-client-permissions,dev-store-feature-previews,collaborator-access-permissions,sidekick-composer,document-template-config,admin-metafield-types,app-store-built-in-features
-SH-11	shopify	7823	8722	900	app-store-built-in-features,shop-request-details
-SH-12	shopify	8723	8880	158	shop-request-details
-SA-1	salla	1	900	900	dashboard-main-navigation,dashboard-menu-orders,dashboard-menu-products,dashboard-menu-marketing,dashboard-menu-store-channels,dashboard-menu-reports,dashboard-quick-actions,dashboard-account-actions,dashboard-settings-menu,partners-portal-navigation,partners-portal-header,dashboard-nav,settings-center
-SA-2	salla	901	1789	889	settings-center,dashboard-app-routes
-SA-3	salla	1790	2689	900	portal-apps,portal-app-routes,apps-route-manifest,app-categories,app-store-tabs,marketplace-apps
-SA-4	salla	2690	3421	732	marketplace-apps,help-tree,help-embedded-tree,dashboard-features
-SA-5	salla	3422	3962	541	dashboard-edu,report-catalog,report-widgets,report-widget-categories,performance-reports,report-widgets-legacy,importer-schema-fields,export-columns,theme-design-components,theme-marketplace,design-page-types,design-settings,dashboard-webhook-events,dashboard-restrictions,invoice-settings,shipping-carriers,merchant-subscriptions,dashboard-staff-roles,expert-service-categories,changelog-entries
-SA-6	salla	3963	4207	245	changelog-categories,portal-private-settings,portal-settings,portal-help-center-resource,portal-report-builder-widgets,portal-report-builder-tags,portal-app-builder-functions,portal-apps-onboarding-steps,portal-app-snippets,canvas-apps,docs-event-lists,storefront-init,storefront-api,portal-menu-definitions
-WC-1	woocommerce	1	257	257	core-profiler-free-extensions,payments-providers,woopayments-onboarding,options
-ZD-1	zid	1	555	555	dashboard-page-index,dashboard-route-manifest
-ZD-2	zid	556	1188	633	store-plan-policies
-ZD-3	zid	1189	1403	215	store-permissions
-BC-1	bigcommerce	1	142	142	settings-list,plan-comparison,channel-catalog,payment-gateways,tax-services
+batch	platform	entries	structures
+SH-1	shopify	205	account-organization,admin-home-setup,admin-main-nav
+SH-2	shopify	150	admin-main-nav,admin-metafield-types,admin-permission-tree
+SH-3	shopify	373	admin-permission-tree,admin-role-permissions
+SH-4	shopify	202	admin-router
+SH-5	shopify	154	admin-router
+SH-6	shopify	160	admin-router
+SH-7	shopify	169	admin-router
+SH-8	shopify	161	admin-router
+SH-9	shopify	176	admin-router
+SH-10	shopify	155	admin-router,admin-router-changes,admin-router-versions,admin-settings-nav
+SH-11	shopify	230	app-install-consent,app-store-built-in-features
+SH-12	shopify	335	app-store-registration,billing-charge-categories,billing-subscription-downgrades,bulk-editor-columns,checkout-editor-pages,collaborator-access-permissions,dev-dashboard-nav,dev-dashboard-scopes
+SH-13	shopify	152	dev-docs-nav,dev-nav
+SH-14	shopify	301	dev-nav,dev-store-feature-previews,document-template-config,flow-connectors
+SH-15	shopify	150	flow-workflow-limits,help-notes
+SH-16	shopify	150	help-notes
+SH-17	shopify	312	help-notes,inventory-adjustment-reasons,merchant-changelog
+SH-18	shopify	191	mobile-app-navigation
+SH-19	shopify	352	mobile-app-settings-index
+SH-20	shopify	344	notification-templates,partner-api-client-permissions,partner-dashboard-nav,partner-focus-options,partners-dashboard-routes
+SH-21	shopify	361	plan-comparison-admin,plan-feature-set,plan-page-admin
+SH-22	shopify	321	plan-page-public
+SH-23	shopify	254	play-publisher-apps,pos-app-navigation,pos-settings
+SH-24	shopify	214	return-reasons,settings-panel,shop-request-details,shopify-cli-commands
+SH-25	shopify	199	shopify-com-header-nav,sidekick-composer,sidekick-quotas,sign-in-methods,signup-onboarding-questions,signup-router,theme-editor-templates,tinker-tools
+SH-26	shopify	203	tracking-carriers
+SH-27	shopify	111	translatable-resources,ui-extension-targets
+SA-1	salla	152	app-categories,app-store-tabs,apps-route-manifest,canvas-apps,changelog-categories,changelog-entries
+SA-2	salla	319	com-plans
+SA-3	salla	242	com-specialplan
+SA-4	salla	151	dashboard-account-actions,dashboard-app-routes
+SA-5	salla	183	dashboard-app-routes
+SA-6	salla	153	dashboard-app-routes
+SA-7	salla	156	dashboard-app-routes
+SA-8	salla	378	dashboard-app-routes,dashboard-edu,dashboard-features
+SA-9	salla	163	dashboard-main-navigation,dashboard-menu-marketing
+SA-10	salla	150	dashboard-menu-orders,dashboard-menu-products,dashboard-menu-reports,dashboard-menu-store-channels,dashboard-nav,dashboard-nav-segments
+SA-11	salla	152	dashboard-nav-segments,dashboard-quick-actions,dashboard-restrictions
+SA-12	salla	303	dashboard-restrictions,dashboard-settings-menu,dashboard-staff-roles,dashboard-webhook-events,design-page-types,design-settings,docs-event-lists
+SA-13	salla	152	docs-navigation,docs-sidebar,expert-service-categories,export-columns,importer-schema-fields,importer-schemas,invoice-settings,kyc-schema
+SA-14	salla	151	kyc-schema,merchant-subscriptions,onboarding-missions,onboarding-status,partners-portal-header,partners-portal-navigation
+SA-15	salla	381	partners-portal-navigation,performance-reports,permission-gates
+SA-16	salla	284	plan-gates
+SA-17	salla	235	portal-app-builder-functions,portal-app-routes
+SA-18	salla	298	portal-app-routes
+SA-19	salla	160	portal-app-routes,portal-apps,portal-help-center-article
+SA-20	salla	354	portal-help-center-article,portal-help-center-resource,portal-menu-definitions
+SA-21	salla	150	portal-private-settings,portal-report-builder-tags,portal-report-builder-widgets,portal-settings,report-catalog,report-widget-categories,report-widgets
+SA-22	salla	266	report-widgets,report-widgets-legacy,salla-academy
+SA-23	salla	163	salla-complaints,settings-center
+SA-24	salla	151	settings-center
+SA-25	salla	155	settings-center
+SA-26	salla	153	settings-center
+SA-27	salla	159	settings-center
+SA-28	salla	159	settings-center
+SA-29	salla	152	settings-center
+SA-30	salla	168	settings-center
+SA-31	salla	154	settings-center
+SA-32	salla	155	settings-center,shipping-carriers,theme-design-components
+SA-33	salla	26	theme-marketplace
+WC-1	woocommerce	266	core-profiler-free-extensions,options
+WC-2	woocommerce	302	payments-providers,release-admin-menus,release-capabilities,release-features,release-rest-controllers,release-settings
+WC-3	woocommerce	20	release-webhook-topics,woopayments-onboarding
+ZD-1	zid	153	dashboard-page-index,dashboard-route-manifest
+ZD-2	zid	218	dashboard-route-manifest
+ZD-3	zid	171	dashboard-route-manifest
+ZD-4	zid	356	dashboard-route-manifest,plans-offered,store-feature-flags,store-permissions
+ZD-5	zid	390	store-plan-policies
+ZD-6	zid	243	store-plan-policies
+BC-1	bigcommerce	147	channel-catalog,contracting-entities,payment-gateways,plan-comparison,settings-list,tax-services

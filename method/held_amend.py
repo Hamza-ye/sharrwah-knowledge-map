@@ -1,8 +1,9 @@
 # The coordinator's amendments from the held pass (Stage 4A; briefs/H-held.md, "After the batches"): each checked
 # placement of an entry on a capability becomes an evidence row of that platform's cell, in the part that holds the
-# cell, and the cell's reading says what the held pass added. A cell that held nothing becomes held. A `new` thing is
-# placed only once the coordinator has decided it in held/new.tsv: the capability it is (made in an amendment part
-# first), an existing one it turned out to be, or out.
+# cell, with its terms added to the cell's, its slot filler and its quality in the part's own files; the cell's reading
+# says what the held pass added, and a cell that held nothing becomes held. The entry's scope is read from its
+# placement by class_slice.py. A `new` thing is placed only once the coordinator has decided it in held/new.tsv: the
+# capability it is (made in an amendment part first), an existing one it turned out to be, or out.
 #
 # Usage:
 #   python3 -I method/held_amend.py plan --platform P      what the amendment would write, per part and cell (no change)
@@ -48,11 +49,12 @@ def plan(p):
             if r["platform"] == p:
                 new[r["name"]] = r["decision"]
     rowsout, pending = collections.defaultdict(list), []
+    extra = collections.defaultdict(lambda: {"terms": [], "fillers": [], "qualities": []})
     for path in sorted(glob.glob(os.path.join(HELD, p, "placements-*.tsv"))):
         batch = re.search(r"placements-(.+)\.tsv$", path).group(1)
         for r in rows(path):
             ids = [x.strip() for x in r["entry_id"].split(";") if x.strip()]
-            cs, ss = [c.strip() for c in r["cap_id"].split(";") if c.strip()], [s.strip() for s in r["supports"].split(";") if s.strip()]
+            cs, ss = [r["cap_id"].strip()] if r["cap_id"].strip() else [], [s.strip() for s in r["supports"].split(";") if s.strip()]
             if r["placement"] == "new":
                 d = new.get(r["cap_id"][4:].strip())
                 if not d:
@@ -70,7 +72,14 @@ def plan(p):
                     for s in ss or ["shows"]:
                         rowsout[(c, p)].append({"cap_id": c, "platform": p, "supports": s, "key": e,
                                                 "why": f"(the held pass, {batch}) {clip(r['reading'], 160)}: {clip(entries[e]['text'], 120)}"})
-    return cells, rowsout, pending
+                    x = extra[(c, p)]
+                    x["terms"] += [t.strip() for t in r.get("terms", "").split(";") if t.strip()]
+                    for fl in [t.strip() for t in r.get("filler", "").split(";") if t.strip()]:
+                        x["fillers"].append({"cap_id": c, "platform": p, "filler": fl, "key": e})
+                    for q in [t.strip() for t in r.get("quality", "").split(";") if t.strip()]:
+                        what, _, val = q.partition(":")
+                        x["qualities"].append({"cap_id": c, "platform": p, "quality": what.strip(), "value": val.strip() or what.strip(), "key": e})
+    return cells, rowsout, pending, extra
 
 
 def summary(evs, entries):
@@ -89,7 +98,7 @@ def main():
     a = ap.parse_args()
     p = a.platform
     entries = {r["entry_id"]: r for r in rows(os.path.join(HELD, p, "entries.tsv"))}
-    cells, out, pending = plan(p)
+    cells, out, pending, extra = plan(p)
     for b, name, ids in pending:
         print(f"PENDING {b}: {name} ({len(ids)} entries) waits on the coordinator's decision in held/new.tsv")
     by_part = collections.defaultdict(list)
@@ -100,6 +109,12 @@ def main():
           f"{became} cells that held nothing become held")
     for part, ks in sorted(by_part.items()):
         print(f"   {part}: {len(ks)} cells, {sum(len(v) for _, v in ks)} rows")
+    PLACED = {"core", "own-service", "extension-point", "outside"}
+    for k, evs in sorted(out.items()):
+        was = set((cells[k].get("placed_as") or "").split(";")) - {"", "not-stated"}
+        now = {e["supports"] for e in evs} & PLACED
+        if cells[k]["held"] != "statements" or now - was:
+            print(f"   CHANGES {k[0]}@{k[1]}: {cells[k]['held']}, placed {';'.join(sorted(was)) or 'nowhere'} -> adds {';'.join(sorted(now - was)) or 'shows only'} ({len(evs)} rows)")
     if a.cmd == "plan":
         return
     if pending:
@@ -121,8 +136,13 @@ def main():
                 c["reading"] = f"Nothing in the concern map; {note[0].lower() + note[1:]} (a reading of each entry, in its evidence row)."
             else:
                 c["reading"] = (c["reading"].rstrip() + " " + note + ".").strip()
+            c["terms"] = ";".join(dict.fromkeys([t for t in c.get("terms", "").split(";") if t] + extra[k]["terms"]))
         write(os.path.join(d, "evidence.tsv"), eh, ev)
         write(os.path.join(d, "cells.tsv"), ch, cl)
+        for fname, key in (("slot-fillers.tsv", "fillers"), ("qualities.tsv", "qualities")):
+            fh_, fr = table(os.path.join(d, fname))
+            fr += [x for k, _ in ks for x in extra[k][key]]
+            write(os.path.join(d, fname), fh_, fr)
         print(f"wrote {part}: check it with python3 -I method/check_class_part.py {part}")
 
 

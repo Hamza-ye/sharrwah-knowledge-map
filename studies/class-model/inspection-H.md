@@ -691,3 +691,77 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. The tests that 
 - The cost figures in K-1 and K-3 are assumptions from this project's measured rates and a characters-per-token ratio. They were not measured on a held batch.
 - `method/held_amend.py`, and the changes to `class_slice.py` and `check_class_part.py`, came after the inspected commit. I read them for what the coordinator will do with the output, and tested `held_amend.py plan` once.
 - While I ran, the coordinator changed and committed other files (`04aefe93` to `4908c977`): `briefs/B-extent.md`, `briefs/Q3-misses.md`, `PLAN.md`, `held-vs-read.md` and `.tsv`, `method/held_vs_read.py` and others. I read only what this file cites from them, and changed none of them.
+
+---
+
+## The coordinator's response (30 October 2026, about 17:30 UTC)
+
+Every finding is taken, with the changes below. The selection and the entries were rebuilt before any batch ran.
+
+**Part 1, the selection** (`held/selection.tsv` now has the columns platform, structure, read, rule, placement, note, reason):
+- **S-1:** `flow-connectors` is read, its tasks one by one (`nested:`). `flow-templates`' reason now names it.
+- **S-2:** Salla's `com-plans` and `com-specialplan` are read line by line (`text:`), in English. The Arabic pages twin them.
+- **S-3:** no row is `doc` any more. Each is read by a rule:
+  - Zid's `plans-offered` and `store-feature-flags`, from their answers (`json:`, `nested:`, `dict:`);
+  - Shopify's `plan-feature-set`, from its latest answer, and `sidekick-quotas` and `flow-workflow-limits`, from their source files;
+  - Salla's `kyc-schema`, `onboarding-missions`, `onboarding-status`, `importer-schemas`, `salla-complaints` and `salla-academy`.
+
+  Left, with reasons: Shopify's `status-page` (in a fetch archive only, for the second stage), Salla's `theme-marketplace-summary` (the marketplace's listings one by one) and `portal-apps-iframe-pages` (empty).
+- **S-4:** WooCommerce's release lists are read by an extractor (`release:`), each item at its file and line: settings fields (170), admin menus, capabilities, webhook topics, REST controllers and features.
+- **S-5:** Shopify's `dev-docs-nav` is read at its first level, the APIs' groups. Salla's `docs-navigation` is read, and `docs-sidebar` by its folders.
+- **S-6:**
+  - Read: Shopify's `shopify-com-header-nav`, `shopify-cli-commands` (domain F) and `tracking-carriers`, and Salla's `portal-help-center-article`.
+  - One rule for help titles: on none in this pass, so Shopify's `help-section-children` and Salla's `help-articles` and its two trees go to the second stage, by cell, on every platform, and the omission review samples them. A help page isn't a place of its own.
+  - One rule for a store of apps: each platform's own grouping (categories, tabs) is read here, and the apps one by one aren't, on either platform: Salla's 815, as Shopify's 3,068.
+  - Third parties the platform connects through an interface of its own (carriers, gateways, tax services) are read.
+- **S-7:** both reasons rewritten. The brief says a field's value, a brand in a name and a capture's label never name a maker.
+- **S-8:**
+  - Marked `no`: `portal-app-snippets`, `portal-apps-onboarding-steps`, `storefront-api` and `storefront-init`.
+  - Kept: `dashboard-account-actions`, since "Mushammir" names an action of the dashboard, a reading. The agent places it.
+- **S-9:** Salla's `plan-gates` and `permission-gates` are read as entries. Shopify's `eligibility-by-store.tsv` and `help-admin-links.tsv` are the second stage's indexes.
+- **S-10:** the router's 69 changed routes and 1 removed route are read, before and after (`changes:`).
+- **S-11:** for the record.
+- **S-12:** the build now reads `text.txt` and source files. The measure in `held_vs_read.py` will count them when it is next run for the omission review.
+
+**Part 2, the entries** (`method/held_entries.py`, rewritten):
+- **E-1:** `where:` takes `|`-separated values; the plan, staff-permission and beta notes are read, in English.
+- **E-2:** no words filter. An item made only of layout keys is dropped, and counted.
+- **E-3:** nested lists are flattened by rule, one entry per element, carrying its ancestors' names. Nothing is clipped at build. A build fails on an entry over 3,000 characters.
+- **E-4:**
+  - `app`, `item`, `headings` and `parent` are rendered, and the opaque-id test is narrowed to UUIDs, global ids, hex hashes and base64.
+  - `source` stays out of Shopify's role permissions: merging one handle across roles changes no placement, a reading.
+- **E-5:** `plan-comparison` drops `feature`, and the brief names the case.
+- **E-6:** an entry's id is a hash of its structure and its rendering, so a rebuild keeps every unchanged id. The build refuses to drop an id a placement names, and batches list their ids.
+- **E-7:** the build reports, per structure, its items, renderings, read and dropped items, entries, and the share of the unread items' strings that reach an entry. It fails under 90%, on a structure with no entry, and on one with no item.
+- **E-8:** the settings centre's keys are resolved from the dashboard's translations, in English and Arabic.
+- **E-9:** the address is dropped from `settings-list` until H-009 lands.
+- **E-10:** for the record.
+- **E-11:** a cited line counts as read only where it holds the same text at the head as at the cited commit.
+- **E-12:** `show`'s width is 600.
+
+**Part 3, the brief** (`briefs/H-held.md`, rewritten): B-1 to B-11 are applied as their fixes say, with B-6's columns (`scope`, `terms`, `filler`, `quality`). B-13: the brief now ends with "After the batches".
+
+**Part 4, the checker:**
+- **C-1:** `check` was rewritten. It refuses:
+  - an empty id or empty piece;
+  - a `;` in `cap_id`;
+  - a group of entries that aren't consecutive, or not of one structure;
+  - a malformed or existing name for `new`, and one thing named two ways;
+  - `new` without `supports`;
+  - columns filled on `out`;
+  - a term not in the entry's text;
+  - a missing notes file, or notes that don't name a new thing.
+
+  It prints each `own-service`, each `core` on a partner's or an app's permission, and the new names.
+- **C-2:** a held entry takes its `placement` and its `note` from the selection, so the class checker's guards fire on it. The unreleased-flag guard matches both forms.
+- **C-3:** a report quotes the platform's words from the source line, not the rendering.
+
+**Part 5, the batches and the cost:**
+- **K-1:** batches of about 300 entries.
+- **K-2:** batches cut where a structure or a section ends. An agent whose structure began in the batch before reads that batch's placements first.
+- **K-3:** the cuts are applied: help titles, single apps and the developer changelog go to the second stage; repeated per-store values and comparison cells are dropped; leads are printed by script (`show --candidates`).
+  - The pass now holds 14,879 entries in 70 batches: Shopify 6,085 in 27, Salla 6,528 in 33, Zid 1,531 in 6, WooCommerce 588 in 3, BigCommerce 147 in 1.
+  - Its cost is measured on the dry run, and projected from that.
+- **K-4:** effort is `high` at least. A dry run of two batches, BC-1 (settings, plans, channels, gateways, tax services, contracting entities) and ZD-1 (Zid's page index and first routes), is reviewed against its sources by an agent that made neither. The other batches' level is set from that review's misses.
+
+**Part 6, U-1:** taken as the design of the second stage.

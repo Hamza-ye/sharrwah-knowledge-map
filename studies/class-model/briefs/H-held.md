@@ -1,48 +1,68 @@
 # Brief: the held pass, the platforms' self-descriptions read entry by entry (Stage 4A)
 
-**What this is.** The class's model was built from the concern map, finished on 12 October 2026. The evidence repositories hold far more:
-- the platforms' own lists of their places, plans, permissions, catalogs, events and changes, captured since or never read;
-- Zid's, BigCommerce's and WooCommerce's admin structures, none of which the model has read.
+**What this is.** The class's model was built from the concern map, finished on 12 October 2026. The evidence repositories hold much more of what the platforms list about themselves: route manifests, settings, navigation, plans, permissions, catalogs, events and changelogs. Some was captured after that date; some was held and never read. `studies/class-model/held-vs-read.md` measures the gap.
 
-`studies/class-model/held-vs-read.md` measures the gap. This pass reads every entry of those self-descriptions and places each one on the model, so that what the platforms show of themselves reaches it by reading, not by search (the founder, 30 October). You draft placements. The coordinator checks them, and amends the model from them:
-- an entry placed on a capability becomes that platform's cell's evidence;
-- a new capability is made with its cells;
-- the merge runs again.
+This pass reads every entry of those self-descriptions and places each on the model. What the platforms show of themselves then reaches the model through their own lists, read entry by entry, not by search alone (the founder, 30 October: the repositories' guides and indexes first, then search).
 
-**Your batch.** Your message names a platform and a range of entries. `python3 -I method/held_entries.py show --platform <p> --from <n> --to <m>` prints them, each as:
+You draft placements. The coordinator checks them and amends the model from them: an entry placed on a capability becomes that platform's cell's evidence, a new capability is made with its cells, and the merge runs again. This pass sends no capture request. A gap goes in your notes, for the coordinator.
+
+**Your batch.** Your message names a platform and a batch. `python3 -I method/held_entries.py show --platform <p> --batch <b> --from <i> --to <j> --candidates` prints its entries in order. Each one shows:
 - its id;
 - its structure, and the labels (a store, a language) it was held under;
-- its text: the fields the platform states, in the source's order.
+- its text: the fields the platform states, in the source's order;
+- its leads: capabilities whose cited statements share its identifiers, or whose terms it holds. A lead is only a lead.
 
 **Read only this brief and:**
-- **the repository's guides, for your platform's evidence, before anything else:**
-  - for Shopify, observed-sh (`/home/user/observed-sh`); for Salla, observed-sa (`/home/user/observed-sa`): `README.md`, `docs/READING.md`, `docs/GAPS.md`, `structures/README.md`, and `structures/REGISTER.tsv`'s rows for your structures;
-  - for Zid, BigCommerce and WooCommerce, other-product-class (`/home/user/other-product-class`): `README.md`, and the platform folder's `README.md` and `GAPS.md`;
-  - each structure's `meta.json`, which says what the structure is, what it was read from and how its items were made;
-- `studies/class-model/held/selection.tsv`, for your platform's rows: which structures this pass reads and why;
-- `method/held_entries.py` (`show`, `check`);
-- **the model:** `method/class_slice.py caps` (with `--terms`, `--domain`), `key`, `search`; `method/land_points.py cell <cap_id> <platform>`; and `studies/class-model/merged/capabilities.tsv`, read with `cut` or `grep`, never whole;
-- `studies/class-model/briefs/B-extent.md`: "Cells and evidence", and "Conventions from the dry run".
+- **the evidence map,** `studies/class-model/evidence-map.md`, for where to start;
+- **your platform's repository guides, before the entries:**
+  - for Shopify (`/home/user/observed-sh`) and Salla (`/home/user/observed-sa`): `README.md`, `docs/READING.md`, `docs/GAPS.md`, `structures/README.md`;
+  - for Zid, BigCommerce and WooCommerce (`/home/user/other-product-class`): `README.md`, and the platform folder's `README.md` and `GAPS.md`;
+  - then, by their rows: `structures/REGISTER.tsv` for your structures, and `index/` (for Shopify and Salla, `index/ledger-summary.tsv` and the `index/ledger/` file your structures enumerate);
+- **what each structure is:** `held_entries.py show --platform <p> --batch <b> --meta` prints the descriptive keys of each structure's `meta.json`. Read the rest of a `meta.json` only where an entry needs it;
+- `studies/class-model/held/selection.tsv`, your platform's rows: why each structure is read, its `placement` and its `note`;
+- **the model:**
+  - `method/class_slice.py caps --terms "<term>; <term>"`, `key` and `search`;
+  - `method/land_points.py cell <cap_id> <platform>`;
+  - `studies/class-model/merged/capabilities.tsv`, read with `cut` or `grep`, never whole;
+- **the model's rules:** `studies/class-model/briefs/B-extent.md`, "Cells and evidence", and "Conventions from the dry run", with "What a place of its own is".
+
+**Effort:** `high` at least (the founder, 30 October).
 
 ## For each entry
 
-1. **Read it as the platform states it.** Where its text leaves it unclear, read its item at the source and line `entries.tsv` gives, or the structure's own source file, which `meta.json` names. The bytes are the evidence. Where a structure's items and its source disagree, the source governs: say so in your notes. BigCommerce's `settings-list`, for one, pairs each section with the next section's address; its source step `steps/002.frame-0.aria.yaml` gives each section's own.
+1. **Read it as the platform states it.** Where its text leaves it unclear, read its item at the source and locator `entries.tsv` gives: a file and line, or a JSON pointer. The bytes are the evidence. Where a structure's items and its source disagree, the source governs; say so in your notes. Known cases:
+   - BigCommerce's `settings-list` pairs each section with the next section's address, so its entries carry none. Its source step `steps/002.frame-0.aria.yaml` holds each section's own (handoff H-009).
+   - In BigCommerce's `plan-comparison`, rows 8 to 13 carry another row's name in `feature`. Their entries are rendered from `feature_text` and the cells, which are the row's own (`source.html`).
 2. **Place it**, one of three:
-   - **`capability`:** the model's capability whose thing the entry is. Give its cap_id (several, `;`-separated, only where the entry is two capabilities' at once) and what the entry `supports` on your platform, by `B-extent.md`'s "Cells and evidence" and its conventions:
-     - `core`: the platform's own admin place, setting, route, plan line or permission, its own API for its own feature, or a built-in feature it states;
-     - `own-service`: only where the entry names the platform's company as the maker or provider;
-     - `extension-point`: an app's page, an app or a category of the platform's app store, an extension target, a provider interface;
-     - `outside`: a named third party doing it, with no interface of the platform named;
-     - `shows`: the entry names the thing or its terms and supports no placement. A help page's title, a changelog post and a feature flag that isn't released are `shows`.
-   - **`new`:** no capability of the model is the entry's thing, and the entry gives it a place of its own: an admin section or route, an API group, a plan line, or an app category (B-extent, "When something becomes a capability"). Before you write `new`, search every domain: `class_slice.py caps --terms "<term>; <term>"`, in English and in Arabic for Salla and Zid. Name it in `cap_id` as `new:<its name in the platform's words>`, and give what it supports. Entries of the same new thing name it the same way.
-   - **`out`:** the entry isn't something the platform does for merchants, buyers, partners or developers, at the grain of the model. Leave `cap_id` and `supports` empty, and say why in `reading`. Some kinds are always out:
-     - a layout node, a UI string, a sort or filter option, a sample;
-     - one store's or one account's own records;
-     - market data, such as countries, currencies, languages or formats per country, which is the subjects'.
+   - **`capability`:** the model's capability whose thing the entry is. Name one cap_id. Where the entry is two capabilities' at once, write two lines with the same `entry_id`, each with its own `supports` and `reading`.
+   - **`new`:** no capability of the model is the entry's thing. Before you write `new`, search every domain with `class_slice.py caps --terms "<term>; <term>"`, in English and, for Salla and Zid, in Arabic.
+     - Name it in `cap_id` as `new:<its name, in the platform's words>`, and give what it supports. Entries of the same new thing name it the same way.
+     - Where it has a place of its own (B-extent, "What a place of its own is"), say which, in your notes. Where it has none, such as a thing one flag or one page shows, write `new:<name>` with `supports` `shows`, and say in your notes that it has no place of its own. The coordinator decides each new thing with the others.
+   - **`out`:** the entry isn't something the platform does for merchants, buyers, partners or developers. Leave every column but `reading` empty, and say why. Out are:
+     - a UI string: a button, message or prompt that names no place, setting, plan line, permission, event or feature, such as "Close", "Dismiss", "Learn more" or "Back";
+     - one store's or one account's own data: its orders, products, customers, people, ids, timestamps, tokens, and the values typed into it;
+     - market data: a list of countries, currencies, languages, units or formats, or one country's own values. These are the subjects'.
 
-   A sub-page, sub-route or setting of a thing the model holds is that capability's entry, not a new one. A route under an app's name, open only to the apps permission, is the app's page: `extension-point` (B-extent's convention).
-3. **Group:** one line may name several entries, `;`-separated, where all of them have the same placement, cap_ids, supports and reading. Group only entries next to each other in one structure.
-4. **`reading`:** a few words, a reading: why it lands there, or why it's out.
+     A setting, feature, flag, plan policy, entitlement or limit that the platform lists for a store is the platform's: place it on its capability, with the plan or store it is stated for as its `scope`. A thing the platform offers for a country or location, such as a payment provider, a free extension or a tax service, is placed on its capability, with that country as its `scope`.
+3. **Sub-pages and containers:**
+   - A sub-page, sub-route or setting is a capability's entry when it is that capability's own thing, or a part of it: its list, detail, edit or settings page, or one of its settings.
+   - A section or route that only sits under a container (Settings, Apps, a menu, the admin), and whose own thing no capability holds as the cells' readings show, is `new`. Name its parent in your notes.
+   - A field, a toggle or a line of text inside a page is never a place of its own.
+4. **`supports`** takes `B-extent.md`'s values exactly as "Cells and evidence" and its conventions define them. This pass's entries are statements in that sense. In particular:
+   - **`core`:** the platform's own admin place, setting, route, plan line or staff permission, its own API for its own feature, or a built-in feature it states;
+   - **a partner's or an app's permission or access** is `shows` (the dry run's S7), and only the staff permission is `core`. That covers Shopify's collaborator permissions, its Partner API permission sets, an app's install consent, and Salla's partner access requests. Their selection rows carry this `note`;
+   - **`own-service`:** only where the entry names the platform's company, or a company of its group, as the maker or provider of a separate product, app, extension or service. A brand in a product's name, a field's value such as `type: salla`, and a capture's label never name a maker;
+   - **`extension-point`:** an app's page, an app store's category, an extension target or a provider interface. A route under an app's name, open only to the apps permission, is the app's page (B-extent's convention);
+   - **`outside`:** a third party named as doing it, with no interface of the platform named. A statement that makes the merchant or the buyer responsible is `shows`, never `outside`;
+   - **flags:** a released flag supports `core`, with its plans or store as its `scope`. A flag that isn't released (`released: false`, `is_experimental: true`, a beta) is `shows`. A flag named for a third party is the capability's evidence, never a slot filler;
+   - **a help page's title, a changelog post, or a FAQ** supports what its words state: `core` where it names the platform's own admin place, setting, route, plan line or built-in feature; `extension-point` where it names an app, an extension target or a provider interface; `shows` where it names only a topic, a guide or a third party. A release marker in it (beta, deprecated, sunset, now available) goes in `reading`.
+5. **The other columns:**
+   - `scope`: the plan, country, market or store the entry states it for, in its words, or empty;
+   - `terms`: the platform's own words for the thing, `;`-separated, each found in the entry's text;
+   - `filler`: a third party or a law the entry names as doing it or setting its terms, or empty;
+   - `quality`: a limit or value the entry states, as `<what>: <value in its words>`, or empty.
+6. **Group:** one line may name several entries, `;`-separated, where they have consecutive ids in your batch, are of one structure, and have the same placement, cap_id, supports, scope, terms, filler, quality and reading.
+7. **`reading`:** a few words, a reading: why it lands there, or why it's out.
 
 **Where you can't tell,** place it where it most plainly belongs, and list it in your notes with what would settle it. Don't leave an entry unplaced.
 
@@ -61,32 +81,40 @@
 
 ## How to work, keeping your context small
 
-- Print your entries 150 to 250 at a time with `show --from --to`.
-- Keep a short list of the capabilities your platform's entries keep meeting. Check each cap_id against `capabilities.tsv` as you go.
+- Print your entries 60 to 100 at a time with `show --batch <b> --from --to --candidates`. Your batch holds about 300.
+- Where you split a structure with the batch before yours, read that batch's placements for it first (`held/<platform>/placements-<batch>.tsv`), and keep to them where the things are the same.
 - Write placements as you go, never at the end.
 
 ## Output, in `studies/class-model/held/<platform>/`
 
-- **`placements-<batch>.tsv`:** tab-separated, a header row, no quoting, no tab or newline inside a field:
-  - `entry_id` (one, or several `;`-separated);
+- **`placements-<batch>.tsv`:** tab-separated, a header row, no quoting, no tab or newline inside a field, with these columns:
+  - `entry_id`: one id, or several consecutive ones `;`-separated;
   - `placement`: `capability`, `new` or `out`;
-  - `cap_id`: cap_ids `;`-separated, `new:<name>`, or empty;
-  - `supports`: values `;`-separated, or empty for `out`;
+  - `cap_id`: one cap_id, `new:<name>`, or empty;
+  - `supports`: one value, or two different ones, `;`-separated; empty for `out`;
+  - `scope`, `terms`, `filler`, `quality`, as above;
   - `reading`.
 - **`notes-<batch>.md`:**
-  - each `new` thing, with its entries, its place of its own and the terms you searched;
+  - each `new` thing, with its entries, its place of its own (or none), its proposed domain, area and parent, its name in each language the platform uses, and the terms you searched;
   - entries you couldn't tell, and what would settle each;
-  - entries whose placement would change a cell the model holds, such as a capability the model places otherwise on your platform, or holds nothing for;
   - a structure whose items and source disagree;
   - problems with this brief or the script.
 
-Check your batch with `python3 -I method/held_entries.py check --platform <p> --batch <batch>`, until it prints no problem.
+Check your batch with `python3 -I method/held_entries.py check --platform <p> --batch <b>`, until it prints no problem. It prints each `own-service`, each `core` on a partner's or an app's permission, and the new names: read them again.
 
 ## Report
 
 Back to the coordinator:
 - your entries' count by placement;
 - each `new` thing, with its entries;
-- the cells whose placement the entries would change, by capability;
 - any problem;
 - the checker's final line.
+
+## After the batches: the coordinator
+
+The coordinator checks each batch, decides each new thing in `held/new.tsv` (the capability it is, an existing one, or out), and runs `method/held_amend.py`:
+- each placement on a capability becomes an evidence row of that platform's cell, in the part that holds the cell, with its scope, terms, slot filler and quality;
+- the cell's reading says what the held pass added;
+- a cell that held nothing becomes held.
+
+Then the parts are checked and merged again. `held_amend.py plan` prints, before anything is written, the cells whose supports would change.

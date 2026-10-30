@@ -379,7 +379,7 @@ def check_part(d):
         its = [sdom[c] for c in s.get("concern_ids", [s["concern_id"]]) if c in sdom]
         if its and not any(x["domain"] == domain or domain in semi(x["also"]) for x in its):
             flag(f"{w}: {r['key']} is a statement of {', '.join(x['concern_id'] for x in its)}, which scope.tsv gives domain {', '.join(sorted({x['domain'] for x in its}))} without naming {domain} under also")
-        if r["supports"] == "core" and re.search(r"partner can request", s.get("note", ""), re.I):
+        if r["supports"] == "core" and re.search(r"partner (or an app )?can request", s.get("note", ""), re.I):
             problem(f"{w}: core on {r['key']}, a permission a partner can request (its note): shows, by the dry run's S7; cite the staff permission for core")
         if r["supports"] == "own-service":
             flag(f"{w}: own-service on {r['key']}: does the statement name {r['platform']}'s company as the maker or provider? ({r['why']})")
@@ -404,7 +404,7 @@ def check_part(d):
         if any(x["supports"] in PLACED for x, _ in e) and not r["reading"].strip():
             problem(f"{w}: a placement is a reading, and reading says why")
         core = [s for x, s in e if x["supports"] == "core"]
-        if core and all(re.search(r'"released":\s*false', s["statement"]) for s in core):
+        if core and all(re.search(r'"?released"?:\s*false', s["statement"]) for s in core):
             flag(f"{w}: core rests only on feature flags that aren't released: shows, by the dry run's rulings (C6)")
         if core and all(s["placement"] == "boundary" for s in core):
             flag(f"{w}: core rests only on boundary statements (API objects, scopes, topics): do they show {k[1]} itself doing it?")
