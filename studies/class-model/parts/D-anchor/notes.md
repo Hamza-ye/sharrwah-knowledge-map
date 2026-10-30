@@ -365,3 +365,85 @@ Concerns landed: SH-C-145, SH-C-153, SH-C-154, SH-C-192, SA-C-030, SA-C-092, SA-
 - The other flags are earlier batches', answered in their sections.
 
 - **After batch 5 (the coordinator):** SH-I-1977 (Email & Customer Chat) is cited back in CM-SUP-004 as `shows`, and SH-C-130's landing is `strained`: a statement is never left uncited to keep a fit clean. `scope.tsv` names D under SA-C-178's `also`. Batch 5's rows were saved in commit 7e1c2eb5, labelled for F-backfill-woocommerce.
+
+## Batch 6: NTF (notifications and messaging) and B2B (B2B and wholesale)
+
+Concerns landed: SH-C-150, SA-C-011, SA-C-200, SH-C-037, SH-C-044, SA-C-098. Capabilities CM-NTF-001 to CM-NTF-004 and CM-B2B-001 to CM-B2B-003. This is the last batch; the whole part's check is below.
+
+### Where each concern landed
+
+- SH-C-150 (Shopify Notifications) and SA-C-011 (Salla Notifications / الإشعارات): CM-NTF-001, by Q1's M-063. SA-C-011 is strained (its SMS log is CM-NTF-003).
+- SA-C-200 (Salla Communication Apps): CM-NTF-004, single, strained (below).
+- SH-C-044 (Shopify B2B companies) and SA-C-098 (Salla's wholesale market, سوق الجملة): CM-B2B-001, joined on role. SA-C-098 is strained (domain B cites it).
+- SH-C-037 (Shopify Catalogs): CM-B2B-003, single.
+
+### How I cut, and the grains
+
+- **CM-NTF-001, notifications,** is the parent: the store's automatic messages to customers and staff, with their settings and templates. Marketing messages stay in CM-MKT-007, as batches 2 and 3 cut them.
+- **CM-NTF-002, staff notifications,** is a capability because Shopify gives it a route of its own, notification-settings:staff, in its section Notifications (SH-S-5209), which also makes it a child of CM-NTF-001. Customer notifications have no route of their own on either platform (Shopify's Customer notification settings is a group of templates), so they stay in the parent.
+- **CM-NTF-003, the log of sent messages,** is a capability by Salla's own link SMS log (/logs/messages) and plan line أرشيف الرسائل النصية. Salla puts it under its logs, not under Notifications, so it has no parent and SA-C-011's landing is strained for it. It is a third sense of "logs", beside Q1's homonym U-044 (audit logs against system logs).
+- **CM-NTF-004, message delivery,** holds how the messages are sent: Salla's SMS flags (sms-gateways, sms-sender, sms-balance) and its Communication Apps, which "take over message delivery" (SA-S-0192). It is a child of CM-NTF-001 by a reading: Salla's Communication Webhooks call each message type a notification ("customer targeted by this notification", SA-S-1660 and the others). The same apps carry campaigns (marketing.campaign.broadcast, CM-MKT-007) and sign-in codes (CM-CUS-010), and the notifications of other capabilities (below). Salla's flags that name SMS providers (unifonic-service, twilio-service, msegat-service and others) and WhatsApp apps aren't cited: a flag's name isn't a slot filler, and the flags don't say what they do.
+- **B2B: one parent and two children.** Shopify cuts B2B into companies (SH-C-044), catalogs (SH-C-037) and payment terms (SH-C-045, domain C); Salla has one concern, the wholesale market. CM-B2B-001 is B2B and wholesale selling as a whole; SH-C-044 lands there because its statements hold B2B as a whole (the label B2B, the plan lines Shopify B2B and "Included with Shopify Plus") as well as companies. CM-B2B-002 (companies) and CM-B2B-003 (catalogs) are its children: Shopify's B2B page names both, "company profile and account management" and "catalogs with wholesale pricing" (SH-S-7212). Shopify's admin groups them otherwise (Customers > Companies, Markets > Catalogs); the capabilities' notes say so.
+- **Payment terms** (SH-C-045, domain C, names D): not a capability here. They are when an order is paid, domain C's PAY; nothing cited.
+
+### Joins on role, and weak joins
+
+- **CM-B2B-001, Shopify B2B with Salla's wholesale market.** Shopify: "everything you need to run your wholesale business on Shopify" (SH-C-044/decides/SH-S-7212); Salla: "اعرض منتجاتك في سوق الجملة من سلة، وحدد تسعيرات خاصة لتجار التجزئة، واستقبل طلبات الجملة وإدارتها بنفس الطريقة المعتادة داخل متجرك" (SA-C-098/boundary/SA-S-5047). Both sell to business buyers at wholesale prices. The difference: Shopify's buyers are companies served from the merchant's own store; Salla's market is a channel Salla runs (/channel/vendors), whose buyers are retail merchants. A reading; a reviewer may split it.
+- **CM-B2B-003, Shopify's catalogs with Salla's special prices for retail merchants** (SA-S-5047, cited as shows only): weak. No Salla statement names a catalog or price list.
+- **CM-NTF-002, Shopify's staff notifications with Salla's order_notification** permission ("تلقي إشعارات بالطلبات الجديدة", SA-S-2492): both notify staff of new orders. A reading.
+- **Which side of the wholesale market the permissions are.** I cite vendors_manage_products and vendors_edit_profile as the selling side, by their names (إدارة المنتجات, تعديل الملف الشخصي); vendors_buy_products (إنشاء الطلبات) is the buying side, cited by domain B's CM-CAT-010. vendors_disable_account and vendors_rating_orders_products aren't cited: their names don't say which side. A reading.
+
+### Homonyms kept apart
+
+- **vendors:** Salla's vendors are the wholesale market's sellers (vendors_* permissions, /channel/vendors), not the vendor field of a product.
+- **catalog:** Salla's facebook-catalog-feed and snapchat-catalog-feed (SA-C-074) are product feeds to ad platforms, not Shopify's Catalogs; not cited in CM-B2B-003.
+- **logs:** see CM-NTF-003 above.
+
+### Strained fits
+
+- **SA-C-011 in CM-NTF-001:** its SMS log statements are cited in CM-NTF-003, a tree of its own.
+- **SA-C-200 in CM-NTF-004:** its statements are also cited in CM-MKT-007 (SA-S-1673, batch 2), CM-CUS-010 (SA-S-0161, batch 1), and, added by this batch, CM-LOY-004 (customer.loyalty.earned), CM-SUP-001 (customer.feedback.reply) and CM-SUP-002 (customer.rating.request). Batch 4 had cited the same kind of event under other concerns' keys (order.gift.placed as SA-C-077's, customer.repurchase.reminder as SA-C-078's); Q1 placed these three only in SA-C-200.
+- **SA-C-098 in CM-B2B-001:** domain B's CM-CAT-010 cites its plan line (SA-S-2069) and vendors_buy_products (SA-S-2456).
+
+### Rulings
+
+- U-067: joined:CM-NTF-001 for SH-C-150 × SA-C-011; nested:CM-NTF-004 for SH-C-150 × SA-C-200 (CM-NTF-004 cites SA-C-200, its parent cites SH-C-150; its Shopify cell is none-held). Batch 2 ruled SH-C-130's pairs; WC-C-076's pairs are the WooCommerce part's.
+- U-016: apart for SH-C-141 × SA-C-098 (scope.tsv gives SH-C-141 domain E, also B) and for SH-C-185 × SA-C-098 (scope.tsv gives SH-C-185 domain B, also E). B-anchor ruled the second pair joined:CM-CAT-010. The pairs with SA-C-124 (domain C) aren't this part's.
+- U-015 holds no Salla concern (SH-C-037, SH-C-045, WC-C-103): no Shopify–Salla pair to rule; WooCommerce's part rules on WC-C-103.
+
+### For the coordinator: the checker, and earlier batches' rows
+
+- **The checker refuses the area B2B.** `method/check_class_part.py` line 235 matches a cap_id with `CM-([A-Z]{3})-(\d{3})`, and the seed's area_id is B2B, with a digit: every CM-B2B row is a problem (52 problems, all of them from this one pattern), and the checker leaves the B2B rows out of `derived.tsv`. The same pattern is in `method/class_slice.py` line 330, which reads an area from scope.tsv's reasons ("(B2B)" isn't read). A copy of the checker with `[A-Z0-9]{3}`, run from my scratchpad against this part, prints "0 problems, 48 flags for the reviewer". I didn't change the method's scripts or rename the area: the brief numbers capabilities by the area_id. Once the pattern is fixed, a run of the checker writes the B2B rows into `derived.tsv`.
+- **Rows I added to earlier batches' cells** (the brief allows it): extension-point on CM-LOY-004, CM-SUP-001 and CM-SUP-002 (Salla), each a communication-app event of SA-C-200. Each adds the placement extension-point to that cell; their readings, which I didn't rewrite, don't mention it. The reading is batch 4's for the same kind of event: the app delivers the message, the platform does the feature.
+- **SH-C-041 (batch 1, strained):** SH-C-041/decides/SH-S-7213, "Enable B2B buying by adding customer profiles to a company", is now cited as shows in CM-B2B-002. Batch 1 foresaw it; the landing's reading could name that tree too.
+- **U-067's ruling for SH-C-130 × SA-C-011 (batch 2, apart)** still holds: no capability cites both.
+- **SA-C-098/decides/SA-S-2069** (the plan line سوق الجملة) is cited as core here and in domain B's CM-CAT-010: the merge will flag it. scope.tsv gives SA-C-098 domain D; the market has a selling side (here) and a buying side (B). One of the two could become shows.
+- **SA-C-040/decides/SA-S-2275** (order_notification, domain C, doesn't name D) is cited as core in CM-NTF-002. If domain C cites it as core too, the merge flags it; D under SA-C-040's `also` would settle the flag here.
+- **SH-C-141 (Shopify Collective, domain E, also B):** "lets you connect with other Shopify stores and sell each other's products" (SH-S-0729), close in role to Salla's wholesale market. A reviewer may add D to its `also`, and CM-B2B-001 could then cite it.
+
+### Concerns read under `also`, and other domains' statements
+
+- SH-C-193 (domain E, names D): SH-I-1919, the App Store category Notification apps, cited as extension-point in CM-NTF-001. The category Notifications - Other (SH-I-1922) isn't cited: its name says no more.
+- SH-C-045 (domain C, names D): payment terms, read; nothing cited (above).
+- SH-C-141 and SH-C-185: read for U-016; nothing cited.
+- SA-C-040 (domain C, doesn't name D): order_notification, cited in CM-NTF-002 (staff and partner permissions). Flagged.
+- Found and not cited, other domains: order_assigned_notification (SA-C-043, C), abandoned-cart-merchant-notifications (SA-C-048, C, unreleased), the payment-link notice setting (SA-C-126, C), Shopify's order tracking page linking into settings/notifications/customer (SH-C-126, C), and Shopify's SMS and Email Services' providers (SH-C-130, D), which batch 2 cites in CM-MKT-007, for campaigns.
+- **Shopify's notification templates** (inventory entries in SH-C-150): cited in CM-NTF-001 and CM-NTF-002 only. The templates about other capabilities (Gift cards, Store credit, B2B access email, Marketing double opt-in, Abandoned checkout, the returns and POS templates) aren't cited in those capabilities: a template is a notification about the thing, and CM-NTF-001 holds notifications. Batch 4 left the gift card and store credit templates to this batch; a reviewer may still cite them as shows there, which would make SH-C-150's landing strained.
+
+### Gaps that limit the cells
+
+- Shopify: SH-C-150's boundary and reason searched and not found, its responsible stated only in general terms; no statement says by which channel each template is sent, or how Shopify delivers its notifications. SH-C-037's and SH-C-044's responsible stated only in general terms, their reason searched and not found.
+- Salla: SA-C-011's responsible, boundary and reason pages not read, so nothing lists which notices its settings control; SA-C-200's responsible stated only in general terms, its reason page not read; SA-C-098's responsible and reason pages not read. No statement says what the flags sms-gateways, sms-sender, sms-balance or mail-service do beyond their names, or how the wholesale market's prices for retail merchants are set. No statement names the maker of the WhatsApp apps behind the flags whatsapp and whatsapp-chat.
+- Qualities: Shopify's B2B catalogs per plan (SH-S-7008) and its catalog limits in the markets entitlement (3 and 75000, SH-S-5532, SH-S-5535), on CM-B2B-003. No slot fillers.
+
+### What the checker flagged, answered (the whole part)
+
+- The whole part's check: `python3 -I method/check_class_part.py studies/class-model/parts/D-anchor` prints "52 problems, 47 flags for the reviewer". All 52 problems are the B2B pattern above (no other problem: a copy with the pattern fixed prints 0 problems, 48 flags; the one more flag is CM-B2B-002's, below).
+- **SA-C-040/decides/SA-S-2275 and SA-S-2492 (domain C):** answered above.
+- **CM-NTF-004, Shopify none-held with 76 matches:** the matches are the other platforms' terms (SMS, Email, communication) in Shopify Messaging's campaigns (SH-C-130), the webhooks' delivery (SH-C-158, domain F), and SH-C-150's own template and email-settings routes, which are cited in the parent. None says how Shopify delivers its notifications.
+- **CM-B2B-002, Salla none-held with 83 matches (with the pattern fixed):** the matches are "company" and شركة in shipping companies, Salla's own company name, developer accounts of the type شركة, and permissions; none is a record of business buyers.
+- **CM-NTF-003 has no concern landed in its tree:** a capability by Salla's own link and plan line; SA-C-011 lands in CM-NTF-001, strained for it.
+- **CM-MKT-008 and CM-ANL-004** now match SA-C-040's statements (SA-S-2492, order permissions): earlier batches' none-held cells; the matches are permissions on orders, not attribution or live view.
+- The other flags are earlier batches', answered in their sections.
+
+- **After batch 6 (the coordinator):** the checker's pattern for capability ids refused the seed's area B2B (a digit); fixed in `check_class_part.py` and `class_slice.py`, and the whole part now passes. `scope.tsv` names D under SA-C-040's `also`. U-016's pair (SH-C-185, SA-C-098) is ruled `apart` here and `joined` in B-anchor; the merge flags it, for one answer at the final review.

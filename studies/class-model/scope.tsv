@@ -225,7 +225,7 @@ salla	SA-C-030	D	B	Reviews; Questions & Reviews; review.added (SUP); M-065
 salla	SA-C-031	B		Bookings; Order Reservations; product-booking (SEL); M-081
 salla	SA-C-032	D	B	Back in stock alerts; Wishlist Notifications: alerts sent to buyers (MKT); M-080
 salla	SA-C-033	E	D	SEO; Site Optimization; seo-urls (CNT)
-salla	SA-C-040	C		Orders; order.created; where Orders (ORD); M-023
+salla	SA-C-040	C	D	Orders; order.created; where Orders (ORD); M-023; also D: its order_notification permission bears on staff notifications (the coordinator, from D-anchor batch 6)
 salla	SA-C-041	C		Order Status; order.status.updated; where Order statuses (ORD); M-023
 salla	SA-C-042	C	E	Order Options; Custom fields; Cart options: fields the buyer fills at checkout (CHK)
 salla	SA-C-043	C	A;F	Order Assignment; Auto assignment to staff (ORD)

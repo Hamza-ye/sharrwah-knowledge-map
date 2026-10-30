@@ -232,7 +232,7 @@ def check_part(d):
         w = f"capabilities.tsv line {r['_line']}"
         if kind.startswith("backfill"):
             problem(f"{w}: a back-fill adds no capabilities"); continue
-        mm = re.fullmatch(r"CM-([A-Z]{3})-(\d{3})", r["cap_id"])
+        mm = re.fullmatch(r"CM-([A-Z0-9]{3})-(\d{3})", r["cap_id"])
         if not mm:
             problem(f"{w}: cap_id must be CM-<area>-nnn"); continue
         if r["cap_id"] in caps:

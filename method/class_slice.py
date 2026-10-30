@@ -327,7 +327,7 @@ def cmd_batches(a):
     by = {x: [] for x in areas + ["?"]}
     for r in scope_rows():
         if r["domain"] == a.domain and r["platform"] in plats:
-            found = [x for x in re.findall(r"\(([A-Z]{3})\)", r["reason"]) if x in areas]
+            found = [x for x in re.findall(r"\(([A-Z0-9]{3})\)", r["reason"]) if x in areas]
             by[found[0] if found else "?"].append(r["concern_id"])
     batches, cur, cur_areas = [], [], []
     for ar in areas + ["?"]:

@@ -10,6 +10,7 @@ CM-MKT-010	salla	Facebook	SA-C-074/decides/SA-S-2149	D-anchor
 CM-MKT-010	salla	Pinterest	SA-C-074/decides/SA-S-2149	D-anchor
 CM-MKT-010	salla	AdRoll	SA-C-074/decides/SA-S-2149	D-anchor
 CM-MKT-010	salla	Sweply	SA-C-073/boundary/SA-S-5135	D-anchor
+CM-SUP-004	salla	WhatsApp	SA-C-099/boundary/SA-S-5138	D-anchor
 CM-AIA-002	shopify	Anthropic PBC	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Applied Compute Inc.	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-002	shopify	Fireworks.ai	SH-C-152/responsible/SH-S-0201	F-anchor
@@ -18,4 +19,7 @@ CM-AIA-002	shopify	OpenAI	SH-C-152/responsible/SH-S-0201	F-anchor
 CM-AIA-005	shopify	Google (Addendum to the Google Merchant Center Terms of Service for Shopify Merchants)	SH-C-140/responsible/SH-S-0623	F-anchor
 CM-AIA-005	shopify	Microsoft Copilot (Microsoft Copilot Shopify Checkout Terms)	SH-C-140/responsible/SH-S-0624	F-anchor
 CM-AIA-005	shopify	Meta (Addendum to the Meta Seller Agreement)	SH-C-140/responsible/SH-S-0625	F-anchor
+CM-AIA-001	woocommerce	Anthropic	WC-C-096/where/WC-S-5347	F-woocommerce
+CM-AIA-001	woocommerce	OpenAI	WC-C-096/where/WC-S-5347	F-woocommerce
+CM-AIA-002	zid	Google Cloud Vertex AI	ZD-C-025/boundary/ZD-S-0717	F-zid
 CM-OPS-003	bigcommerce	Amazon	BC-C-082/where/BC-S-0447	G-bigcommerce

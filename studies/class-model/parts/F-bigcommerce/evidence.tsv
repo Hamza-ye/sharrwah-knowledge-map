@@ -1,0 +1,151 @@
+cap_id	platform	supports	key	why
+CM-AIA-001	bigcommerce	core	BC-C-064/decides/BC-S-0351	Commerce's own AI Features, which it may suspend, modify or discontinue
+CM-AIA-001	bigcommerce	shows	BC-I-0473	the legal agreement AI Features Addendum
+CM-AIA-001	bigcommerce	outside	BC-C-064/boundary/BC-S-0353	third-party providers used to provide the AI Features; Commerce does not train on Customer inputs
+CM-AIA-001	bigcommerce	shows	BC-C-064/responsible/BC-S-0352	the customer remains responsible for Third-Party Products that enable AI within or connected to the Service
+CM-AIA-001	bigcommerce	extension-point	BC-I-0477	the App Marketplace category Ecommerce AI
+CM-AIA-001	bigcommerce	shows	BC-I-0516	the product line Conversational shopping, not described further
+CM-AIA-002	bigcommerce	core	BC-C-064/where/BC-S-0349	BigCommerce Companion, an AI assistant embedded directly into the control panel
+CM-AIA-002	bigcommerce	core	BC-I-0517	the product line BigCommerce Companion
+CM-AIA-003	bigcommerce	core	BC-C-064/where/BC-S-0350	BigAI: product descriptions with AI-powered content generation and SEO optimization
+CM-AIA-003	bigcommerce	core	BC-I-0512	the product line BigAI
+CM-AIA-005	bigcommerce	core	BC-C-063/where/BC-S-0342	the platform's MCP server: AI agents search products, manage carts and hand off to checkout on its storefronts
+CM-AIA-005	bigcommerce	extension-point	BC-C-063/where/BC-S-0342	outside AI agents connect to the storefronts through it
+CM-AIA-005	bigcommerce	core	BC-C-063/where/BC-S-0343	the control panel's Settings > API and MCP > MCP
+CM-AIA-005	bigcommerce	core	BC-C-063/decides/BC-S-0344	only a store owner can enable MCP on a store
+CM-AIA-005	bigcommerce	core	BC-C-063/decides/BC-S-0345	the Storefront MCP toggle, with terms of service to accept
+CM-AIA-005	bigcommerce	shows	BC-C-063/decides/BC-S-0346	under Agentic Search the customer may opt out of individual platforms
+CM-AIA-005	bigcommerce	core	BC-C-063/responsible/BC-S-0347	Agentic checkout: transactions within AI-powered shopping experiences, the merchant remaining merchant of record
+CM-AIA-005	bigcommerce	shows	BC-C-063/boundary/BC-S-0348	only catalog data is processed under Agentic Search, no PII, checkout or order data
+CM-AIA-005	bigcommerce	core	BC-I-0104	the API resource MCP Server Overview
+CM-AIA-005	bigcommerce	core	BC-I-0107	the API resource B2C Storefront (mcp)
+CM-AIA-005	bigcommerce	core	BC-I-0108	the API resource B2B Storefront (mcp)
+CM-AIA-005	bigcommerce	core	BC-I-0106	the API resource Storefront Session Sync (mcp)
+CM-AIA-005	bigcommerce	core	BC-I-0514	the product line AI discovery
+CM-AIA-005	bigcommerce	core	BC-I-0515	the product line Agentic checkout
+CM-API-001	bigcommerce	core	BC-C-054/where/BC-S-0296	Admin API: query and mutate store data server-side
+CM-API-001	bigcommerce	core	BC-C-054/boundary/BC-S-0297	its endpoint POST /stores/{store_hash}/graphql
+CM-API-001	bigcommerce	core	BC-I-0110	the API resource Admin API [graphql]
+CM-API-001	bigcommerce	core	BC-I-0533	the product line Open APIs
+CM-API-001	bigcommerce	shows	BC-I-0461	the legal agreement API Terms
+CM-API-002	bigcommerce	core	BC-C-056/where/BC-S-0302	three types of OAuth-based API accounts: store-level, app-level and account-level credentials
+CM-API-002	bigcommerce	core	BC-C-059/where/BC-S-0324	the two app types, single-click and connector, defined by the method of authentication
+CM-API-002	bigcommerce	core	BC-C-059/boundary/BC-S-0330	once granted, a single-click app requests a permanent access_token
+CM-API-003	bigcommerce	core	BC-C-056/decides/BC-S-0304	store-level access tokens and OAuth scopes can't be changed
+CM-API-003	bigcommerce	core	BC-C-056/boundary/BC-S-0306	the default scope, automatically accessible to all API accounts
+CM-API-003	bigcommerce	shows	BC-C-056/reason/BC-S-0307	best practice: limit each account's OAuth scope to the privileges needed (a reason)
+CM-API-003	bigcommerce	core	BC-C-059/boundary/BC-S-0328	the scope store_app_extensions_manage, requiring an app-level API account
+CM-API-004	bigcommerce	shows	BC-C-056/responsible/BC-S-0305	the API client protects information collected from Your Users from unauthorized access, use or disclosure
+CM-API-005	bigcommerce	core	BC-C-057/where/BC-S-0308	apps using OAuth are rate-limited on a quota refreshed every 30 seconds
+CM-API-005	bigcommerce	core	BC-C-057/decides/BC-S-0309	plan Pro: 60k per hour
+CM-API-005	bigcommerce	core	BC-C-057/decides/BC-S-0310	plans Plus and Standard: 20k per hour
+CM-API-005	bigcommerce	core	BC-C-057/decides/BC-S-0311	the Unlimited Rate Plan, no request rate limits, for some Enterprise clients
+CM-API-005	bigcommerce	core	BC-C-057/decides/BC-S-0312	the maximum quota varies by store plan and requested resources
+CM-API-005	bigcommerce	core	BC-C-057/boundary/BC-S-0314	all apps accessing the store share the store's quota
+CM-API-005	bigcommerce	shows	BC-C-057/responsible/BC-S-0313	the API Terms: not to exceed or circumvent limits on calls
+CM-API-005	bigcommerce	shows	BC-C-057/boundary/BC-S-0315	apps process HTTP 429 and spread their requests
+CM-API-005	bigcommerce	shows	BC-C-057/reason/BC-S-0316	rate limits as safeguards for reliability (a reason)
+CM-API-006	bigcommerce	shows	BC-I-0076	the API resource Webhooks v3, a version in its name
+CM-API-006	bigcommerce	shows	BC-C-003/where/BC-S-0027	the category trees endpoints, modern counterparts of the deprecated categories endpoints
+CM-API-008	bigcommerce	core	BC-C-058/where/BC-S-0317	webhooks: get notified when specific events occur on a store
+CM-API-008	bigcommerce	core	BC-I-0076	the API resource Webhooks v3
+CM-API-008	bigcommerce	core	BC-C-058/decides/BC-S-0318	after the final retry, 48 hours on, the webhook is deactivated and the app emailed
+CM-API-008	bigcommerce	core	BC-C-058/decides/BC-S-0319	a destination below a 90% success ratio is blocklisted for three minutes
+CM-API-008	bigcommerce	core	BC-C-058/boundary/BC-S-0320	the topic store/hook/deliveryException, sent to another destination on delivery trouble
+CM-API-008	bigcommerce	core	BC-I-0153	the webhook topic store/hook/deliveryException
+CM-API-008	bigcommerce	core	BC-C-058/boundary/BC-S-0321	the endpoint types BigCommerce delivers webhook events to
+CM-API-008	bigcommerce	core	BC-C-058/reason/BC-S-0323	BigCommerce deletes an app's registered webhooks on uninstall
+CM-API-008	bigcommerce	core	BC-C-056/boundary/BC-S-0306	webhooks are in the default scope of every API account
+CM-API-008	bigcommerce	shows	BC-C-058/reason/BC-S-0322	platform limits keep the webhooks service reliable (a reason)
+CM-API-013	bigcommerce	core	BC-C-055/where/BC-S-0298	the GraphQL Account API's users feature: create, edit and delete control panel users
+CM-API-013	bigcommerce	core	BC-C-055/where/BC-S-0299	Account API: manage account-level resources such as users
+CM-API-013	bigcommerce	core	BC-C-055/boundary/BC-S-0301	account-level credentials reach all the account's stores
+CM-API-013	bigcommerce	core	BC-C-055/boundary/BC-S-0300	the scope account_read
+CM-API-013	bigcommerce	core	BC-I-0109	the API resource Account API [graphql]
+CM-API-013	bigcommerce	core	BC-I-0103	the API resource GraphQL Account API overview
+CM-API-013	bigcommerce	core	BC-I-0369	the scope account_apps_read
+CM-API-013	bigcommerce	core	BC-I-0372	the scope account_stores_read
+CM-API-013	bigcommerce	core	BC-I-0373	the scope account_subscriptions_read
+CM-API-013	bigcommerce	core	BC-I-0374	the scope account_subscriptions_cancel
+CM-API-013	bigcommerce	core	BC-I-0375	the scope account_users_read
+CM-API-013	bigcommerce	core	BC-I-0376	the scope account_users_write
+CM-API-013	bigcommerce	core	BC-I-0377	the scope account_users_delete
+CM-API-013	bigcommerce	shows	BC-C-029/boundary/BC-S-0181	the Unified Billing GraphQL API uses account-level API tokens
+CM-APP-001	bigcommerce	core	BC-C-059/where/BC-S-0324	the platform's two app types, single-click and connector
+CM-APP-001	bigcommerce	core	BC-C-059/boundary/BC-S-0328	the scope App Extensions, store_app_extensions_manage
+CM-APP-001	bigcommerce	core	BC-I-0321	the access scope store_app_extensions_manage
+CM-APP-001	bigcommerce	core	BC-I-0537	the product line Integrations
+CM-APP-001	bigcommerce	extension-point	BC-C-059/responsible/BC-S-0327	a Third-Party Product installed or enabled for use with the Service; its provider accesses the merchant's data
+CM-APP-001	bigcommerce	shows	BC-C-084/where/BC-S-0460	the agreement doesn't apply to Third-Party Products, governed by their own terms
+CM-APP-001	bigcommerce	shows	BC-C-084/decides/BC-S-0461	Commerce may stop supporting an integration and migrate the subscription
+CM-APP-001	bigcommerce	shows	BC-C-084/decides/BC-S-0462	Commerce may disable access to any Third-Party Products at any time
+CM-APP-001	bigcommerce	shows	BC-C-084/responsible/BC-S-0463	dealings with a Third-Party Product Provider are solely between it and the merchant
+CM-APP-001	bigcommerce	shows	BC-I-0456	the legal agreement Master Services Agreement
+CM-APP-002	bigcommerce	core	BC-C-059/decides/BC-S-0325	the Marketplace team reviews and tests all app submissions against the listing standards
+CM-APP-002	bigcommerce	core	BC-C-029/where/BC-S-0172	merchants buy apps through the BigCommerce App Marketplace
+CM-APP-002	bigcommerce	extension-point	BC-I-0476	the App Marketplace category Accounting & Tax
+CM-APP-002	bigcommerce	extension-point	BC-I-0477	the App Marketplace category Ecommerce AI
+CM-APP-002	bigcommerce	extension-point	BC-I-0478	the App Marketplace category Analytics & Reporting
+CM-APP-002	bigcommerce	extension-point	BC-I-0479	the App Marketplace category B2B/Wholesale
+CM-APP-002	bigcommerce	extension-point	BC-I-0480	the App Marketplace category Catalog & Order Management
+CM-APP-002	bigcommerce	extension-point	BC-I-0481	the App Marketplace category Checkout
+CM-APP-002	bigcommerce	extension-point	BC-I-0482	the App Marketplace category CMS & Hosting
+CM-APP-002	bigcommerce	extension-point	BC-I-0483	the App Marketplace category CRM & Customer Service
+CM-APP-002	bigcommerce	extension-point	BC-I-0484	the App Marketplace category Data Transfer/Migration Services
+CM-APP-002	bigcommerce	extension-point	BC-I-0485	the App Marketplace category ERP
+CM-APP-002	bigcommerce	extension-point	BC-I-0486	the App Marketplace category Financing
+CM-APP-002	bigcommerce	extension-point	BC-I-0487	the App Marketplace category Marketing
+CM-APP-002	bigcommerce	extension-point	BC-I-0488	the App Marketplace category Merchandising
+CM-APP-002	bigcommerce	extension-point	BC-I-0489	the App Marketplace category Mobile
+CM-APP-002	bigcommerce	extension-point	BC-I-0490	the App Marketplace category Payments & Security
+CM-APP-002	bigcommerce	extension-point	BC-I-0491	the App Marketplace category POS & In-Store
+CM-APP-002	bigcommerce	extension-point	BC-I-0492	the App Marketplace category Product & Shipping Protection
+CM-APP-002	bigcommerce	extension-point	BC-I-0493	the App Marketplace category Product Sourcing
+CM-APP-002	bigcommerce	extension-point	BC-I-0494	the App Marketplace category Sales Channels
+CM-APP-002	bigcommerce	extension-point	BC-I-0495	the App Marketplace category Shipping & Fulfillment
+CM-APP-002	bigcommerce	extension-point	BC-I-0496	the App Marketplace category Site Tools
+CM-APP-003	bigcommerce	core	BC-C-029/where/BC-S-0172	Unified Billing: app charges included on the merchant's BigCommerce invoice
+CM-APP-003	bigcommerce	core	BC-C-029/decides/BC-S-0173	the merchant opts in by buying from a Unified Billing Partner on the Website or the Marketplace
+CM-APP-003	bigcommerce	shows	BC-C-029/decides/BC-S-0174	the partner's condition: a Partner Portal Account with approved Partner status
+CM-APP-003	bigcommerce	core	BC-C-029/responsible/BC-S-0175	Commerce is the Unified Billing Partners' agent for collecting and disbursing monies (US, UK, Canada)
+CM-APP-003	bigcommerce	shows	BC-C-029/responsible/BC-S-0176	amounts Commerce receives count as received by the partner, extinguishing the merchant's obligation
+CM-APP-003	bigcommerce	core	BC-C-029/responsible/BC-S-0177	Commerce, through its payment processor, collects the funds for Unified Billing App purchases (India)
+CM-APP-003	bigcommerce	core	BC-C-029/responsible/BC-S-0178	Commerce invoices Unified Billing Merchants for app purchases (India)
+CM-APP-003	bigcommerce	core	BC-C-029/responsible/BC-S-0179	Commerce as agent collecting and disbursing in the partners' name
+CM-APP-003	bigcommerce	core	BC-C-029/boundary/BC-S-0180	the scope account_checkouts_create
+CM-APP-003	bigcommerce	core	BC-C-029/boundary/BC-S-0181	the Unified Billing GraphQL API
+CM-APP-003	bigcommerce	outside	BC-C-029/boundary/BC-S-0182	third-party payment processors handle all payments; Commerce processes none directly
+CM-APP-003	bigcommerce	core	BC-C-029/reason/BC-S-0183	the Unified Billing badge: every charge on a single BigCommerce invoice
+CM-APP-003	bigcommerce	shows	BC-I-0469	the legal agreement Unified Billing Terms
+CM-APP-003	bigcommerce	shows	BC-I-0470	the legal agreement Unified Billing Terms (US, UK, & Canada)
+CM-APP-003	bigcommerce	shows	BC-I-0471	the legal agreement Unified Billing Terms (India Specific)
+CM-APP-004	bigcommerce	core	BC-C-059/boundary/BC-S-0329	the webhook topic store/app/uninstalled
+CM-APP-004	bigcommerce	core	BC-I-0210	the webhook topic store/app/uninstalled
+CM-APP-009	bigcommerce	core	BC-C-056/decides/BC-S-0303	merchants create store-level API accounts in Settings > Store-level API accounts
+CM-APP-009	bigcommerce	extension-point	BC-C-059/decides/BC-S-0326	only approved partners can create unlisted apps
+CM-APP-011	bigcommerce	shows	BC-C-084/boundary/BC-S-0464	an Extension is a Service, not a Third-Party Product
+CM-APP-011	bigcommerce	own-service	BC-C-079/responsible/BC-S-0428	Commerce.com US, Inc. contracts for the Ecommerce Platform, Extensions and certain Professional Services
+CM-APP-011	bigcommerce	own-service	BC-C-079/responsible/BC-S-0432	Commerce.com Pty. Ltd. contracts for them in any other jurisdiction
+CM-DVT-006	bigcommerce	core	BC-C-076/where/BC-S-0413	Staging environments: test, preview and deploy updates without disrupting live storefronts
+CM-DVT-006	bigcommerce	core	BC-I-0540	the product line Staging environments
+CM-DVT-006	bigcommerce	core	BC-C-076/decides/BC-S-0414	StagingPro, a sandbox, testing, staging and CI/CD solution for Enterprise-level stores
+CM-DVT-006	bigcommerce	core	BC-C-076/decides/BC-S-0415	StagingPro is added through the merchant's BigCommerce representative
+CM-DVT-006	bigcommerce	shows	BC-C-076/boundary/BC-S-0416	StagingPro uses Git, BigCommerce's APIs and StagingPro's public API
+CM-PTN-001	bigcommerce	core	BC-C-029/decides/BC-S-0174	the Partner Portal, where a partner holds an account with approved Partner status
+CM-PTN-001	bigcommerce	shows	BC-C-087/where/BC-S-0474	terms for those using the Services on behalf of a third-party client, as its agent
+CM-PTN-001	bigcommerce	shows	BC-C-087/decides/BC-S-0475	Commerce sends its notices to the agent and/or the Client, at its discretion
+CM-PTN-001	bigcommerce	shows	BC-C-087/responsible/BC-S-0476	the agent has authority to bind the Client to the Agreement
+CM-PTN-001	bigcommerce	shows	BC-C-087/boundary/BC-S-0477	the agent confirms its relationship with the Client to Commerce in writing
+CM-PTN-001	bigcommerce	shows	BC-I-0465	the legal agreement Merchant-Client Terms
+CM-PTN-002	bigcommerce	core	BC-C-029/decides/BC-S-0174	a Partner Portal Account with approved Partner status
+CM-PTN-002	bigcommerce	shows	BC-C-059/decides/BC-S-0326	approved partners, the only ones who can create unlisted apps
+CM-PTN-003	bigcommerce	core	BC-C-029/responsible/BC-S-0179	Commerce collects and disburses monies to the Unified Billing Partners as their agent
+CM-PTN-003	bigcommerce	core	BC-C-029/responsible/BC-S-0175	the same, for the US, UK and Canada
+CM-PTN-003	bigcommerce	outside	BC-C-029/boundary/BC-S-0182	third-party payment processors handle the payments to Unified Billing Partners
+CM-PTN-010	bigcommerce	extension-point	BC-C-066/where/BC-S-0361	partner-focused APIs through which partners offer BigCommerce stores to their merchants and onboard them
+CM-PTN-010	bigcommerce	core	BC-C-066/where/BC-S-0360	Powered By: resell ecommerce with Commerce-as-a-Service
+CM-PTN-010	bigcommerce	core	BC-C-066/where/BC-S-0359	the API group Beta Powered By > Stores: Create Store
+CM-PTN-010	bigcommerce	core	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans: Create Store Plan Change
+CM-PTN-010	bigcommerce	core	BC-I-0115	the API resource Beta Powered By
+CM-PTN-010	bigcommerce	extension-point	BC-C-066/decides/BC-S-0362	the partner may own the billing relationship for its merchant's products, or let BigCommerce bill the merchant
+CM-PTN-010	bigcommerce	shows	BC-C-066/decides/BC-S-0077	closed beta, not available by default; access through BigCommerce support

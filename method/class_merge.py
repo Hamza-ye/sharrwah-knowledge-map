@@ -158,6 +158,25 @@ def main():
             elif ru == "apart" and cm & ct:
                 problems.append(f"{d}: {r['candidate_id']} apart, but {', '.join(sorted(cm & ct))} cites keys of both sides")
 
+    # one pair ruled differently by two parts (two domains each rule from their own cells)
+    seen_pairs = {}
+    for r in rul:
+        u = uc.get(r["candidate_id"])
+        if not u:
+            continue
+        cs = set()
+        for k in semi(r["keys"]):
+            it = statement(k)
+            if it:
+                cs |= set(it.get("concern_ids", [it["concern_id"]])) & set(ids(u["shopify"]) + ids(u["salla"]) + ids(u["woocommerce"]))
+        if len(cs) == 2:
+            pair = (r["candidate_id"], frozenset(cs))
+            verdict = "apart" if r["ruling"] == "apart" else "together"
+            seen_pairs.setdefault(pair, []).append((r["part"], r["ruling"], verdict))
+    for (cid, cs), rs in sorted(seen_pairs.items(), key=lambda x: x[0][0]):
+        if len({v for _, _, v in rs}) > 1:
+            flags.append(f"{cid} ({' x '.join(sorted(cs))}) is ruled differently: " + "; ".join(f"{p} {ru}" for p, ru, _ in rs) + ": one answer at the review")
+
     # possible joins across domains
     terms = {}
     for (c, p), r in cells.items():
