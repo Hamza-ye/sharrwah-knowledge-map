@@ -493,3 +493,51 @@ Some tests depend on the fixes above. They are marked with the finding they need
 23. Every cell parses into `held` and a set of `placed_as` values. The coordinator's computation runs on every capability and lists those whose kind is `open` (the section above).
 24. The merged model holds no two capabilities whose cells cite the same statement key, unless one is the other's `parent` or `reading` names the split.
 25. Every Q1 match's concerns land in one capability, or in a parent and its children, unless the split is named with its grain reason (finding 4).
+
+## The coordinator's check and rulings (30 October 2026)
+
+**The check.** I re-ran the inspection's central counts against the concern map at `93ebb15c`:
+- `concerns.tsv` has no area or domain column on any platform;
+- `M-011`, `M-013` and `M-074` hold what finding 4 and finding 1 say;
+- `unclear-matches.tsv` has no `note` column;
+- 71 of WooCommerce's 118 concerns are in a Q1 match with Shopify or Salla;
+- the key (`concern_id`, `cite_ids`, `identifier`) repeats on 119, 130 and 97 rows;
+- `WC-C-064`'s `where` rows include Categories, Tags, Brands and Attributes;
+- `SH-S-0676` says the merchant is "legally responsible" for gift cards;
+- `maxProductOptions`, `maxProductVariants` and `sellsSubscriptions` are unplaced in `map/out-of-scope.tsv`;
+- Salla's gaps are 206 "page not read" of 230;
+- `matching-notes.md` line 200 lists the six homonym rows.
+
+Every one holds.
+
+**One refinement, to finding 8.** A key of concern id, placement and *first* cite id is unique on every platform. Script: over each `statements.tsv`, the first id of `cite_ids`, split on `;` or a space. Shopify's `cite_ids` lists ids with `;`, and WooCommerce's 18 multi-cite rows with a space. So the key is `concern_id/placement/first_cite_id`, written with `/`, which no id or placement contains. The slice script prints it.
+
+**Rulings.** Every finding is taken, the optional ones too, because each is cheap and each closes a way to a wrong row. Each is engineering's method ruling, listed at the next report.
+
+| # | Ruling |
+| --- | --- |
+| 1 | A scope step runs before any part. It produces `studies/class-model/scope.tsv`: every concern of all five platforms in exactly one domain, A to G, with the other domains it also touches. A Q1 match's concerns share a domain unless the split is named. Its rows are readings, checked by the coordinator. A part takes its domain's concerns, and may cite statements of concerns from other domains that name it under `also`, without landing them |
+| 2 | The area is what the capability is about, with the seed's labels as leads. The channel it is delivered through never sets it: an app-store category doesn't make a capability APP's. Never domain H (this also settles N3) |
+| 3 | A mapping part is one platform and one domain, and takes that platform's concerns `scope.tsv` gives the domain |
+| 4 | `landings.tsv` records each concern's landing, exactly once. A cell may cite statements of concerns landed elsewhere. A coarser concern lands on the parent capability, and the children's cells cite its statements. A Q1 match with several concerns on a side is a difference of grain, not one capability |
+| 5 | A mapping part maps onto the domain's model so far: the anchor and every earlier mapping part. After a domain's mapping parts, a back-fill part writes the cells still missing, for every capability and platform |
+| 6 | `held` takes `statements` or `none-held`. A `none-held` cell records the terms it searched, in each language, and the checker re-runs the search and lists what matches for the reviewer. Absence from a complete list is not recorded in this pass: the kind-and-count rule doesn't use it, and Q1's notes are never its basis |
+| 7 | The placement tests go into the brief, and each value rests on statement keys in `evidence.tsv`, one row per statement. Three cases are settled: a product the platform's company makes is `own-service`, whatever channel sells it; an API that apps use to do the work supports `extension-point`; a merchant's or buyer's responsibility is never `outside`. A platform that shows the capability with no placement supported is `not-stated`, derived when no evidence row carries a placement |
+| 8 | The list separator is `;`. Fixed tokens are hyphenated. The statement key is as refined above. Scopes and gaps are derived by script from the keys, not written by the agent |
+| 9 | `landings.tsv` carries `join`: `match:<M-id>`, `terms`, `identifier`, `definition`, `role` or `single`, with `join_evidence` keys for both sides. `role` is always a reading |
+| 10 | A shared term joins only where the cited definitions or identifiers show the same object. Homonyms stay apart, listed in the notes with both sides' keys |
+| 11 | The unclear list's columns are named correctly. `rulings.tsv` gives a ruling on every candidate any of whose concerns the part takes. These rulings come to the founder's veto with the extent's report |
+| 12 | `method/class_slice.py` prints a part's rows compactly, and searches a platform's statements. No file is loaded whole. Parts are one domain, and one domain and platform in the mapping pass. The brief states the expected size |
+| 13 | `qualities.tsv` takes `cap_id`. A slot filler is a named third party or law, with no judgement of kind. Scope comes from the keys. `map/out-of-scope.tsv`'s unplaced entries are readable through the script, cited by inventory id, and never landed |
+| 14 | The gaps on a cell's concerns are derived by script into the merged cells and shown to the reviewer |
+| 15 | Copies of URL sources are in the capture runs' manifests, and the release is at its checked path. Context read beyond Q1's statements informs a reading and is never cited. A statement that is needed but not held goes in the notes as a gap |
+| 16 | The sentence on permissions, topics, scopes and plan lines is reworded as proposed |
+| 17 | The capability's name uses both platforms' terms, or a neutral term that names both. The mapping compares against the cells' terms, not the name. Numbering continues past the highest in each area. Parts are named `<domain>-anchor`, `<domain>-<platform>` and `<domain>-backfill`. `area` is the `area_id`, and `parent` is in the same domain. A capability shown under one market's scope stays, with that scope |
+| 18 | The column is `supports`, in `evidence.tsv`. The brief quotes Q1's five placements and its rule 5, and says why the four values return: as marked readings with per-statement evidence, not as Q1's category labels |
+| 19 | Line 6 says only that Shopify and Salla hold the most statements |
+
+**The kind's `open` case** (a count of 0, with some platform `not-stated`) is computed and listed by the coordinator. The dry run's review rules on it, as the plan allows.
+
+**A checker now, not after the dry run.** A first `method/check_class_part.py` runs the form, coverage and evidence tests (1 to 19 and 21) before the dry run, so each part checks itself before it hands back. The review adds what it finds.
+
+**Re-inspection.** The brief's change is large, so the same inspector re-reads the changed brief and the scripts before anything runs.
