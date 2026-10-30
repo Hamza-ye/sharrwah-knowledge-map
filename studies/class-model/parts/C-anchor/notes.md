@@ -326,3 +326,75 @@ The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gi
 - **SA-C-113/boundary/SA-S-0104 cited in CM-PAY-007 and CM-PAY-014, in two trees.** The statement is the shopping experience fee's description: as a fee it is shows in CM-PAY-007 (batch 3), and it is the only Salla statement held that names saving the customer's card and address, shows in CM-PAY-014. Neither cites it for a placement.
 
 For the coordinator, on earlier rows: SA-S-0065 (KNET through Salla Payments) is now core in CM-PAY-002 (batch 3) and in its child CM-PAY-017; one of them may be shows. CM-PAY-008's Shopify reading names SH-S-0589 as shows, but no evidence row cites it there; it is cited in CM-PAY-019.
+
+## Batch 5: PAY, Payments, payouts and money (third of six)
+
+Concerns: SH-C-084, SH-C-085, SH-C-086, SH-C-088, SH-C-089, SH-C-090, SH-C-091, SH-C-092, SH-C-093, SH-C-094, SH-C-095. Seven capabilities, CM-PAY-020 to CM-PAY-026; all eleven concerns land in new ones, none being the same thing as CM-PAY-001 to -019 or any capability of another domain. Every capability was first searched in every domain with `caps` (terms: transaction, transactions, capture, authorization, authorisation, المعاملات, معاملة, العمليات, refund, استرجاع, void, mark as paid; vault, vaulted, mandate, payment method, saved card, token, البطاقات المحفوظة, حفظ البطاقة, recurring, subscription, الاشتراكات; balance, banking, bank account, credit card, Shopify Credit, financing, funding, capital, loan, cash advance, تمويل, التمويل, رصيد, الرصيد, بطاقة, بطاقات, قرض, in-person, card present, point of sale, Tap to Pay, softpos). What it found and kept apart: A's CM-PLN-004 to -006 (platform billing, Salla's prepaid store balance), D's CM-LOY-001 to -003 (the buyer's wallet and store credit, gift cards, cashback), CM-MKT-018 and -020, B's CM-SEL-001 (subscriptions and recurring payments), E's CM-POS-001 to -003, F's CM-API-002, CM-APP-003 and CM-PTN-003, and C's CM-PAY-005 and CM-PAY-014. Every Shopify and Salla cell is written for the seven.
+
+### How I cut, and the grains
+
+- **CM-PAY-020, payment transactions on an order (M-034),** parent CM-ORD-001. One capability for Shopify's authorization and capture (SH-C-084) and Salla's refund, void and reverse (SA-C-123): M-034 joins them one-to-one on the term transactions, and its note says the two cover different actions. Parent by Shopify's admin grouping (its where is the Orders page, its permissions sit under Orders and Drafts). Salla's grouping differs: its link Transactions sits in the payments list (/payments/transactions), its permission payments_operations_management in the group إعدادات المتجر and its refund permission order_refund_payment in the group الطلبات. The reviewer may prefer no parent, or CM-PAY-001 by Salla's link. **For RET's batch:** Salla's refund of a transaction (SA-S-0180, SA-S-2270, the permission order_refund_payment, SA-S-0181) is cited here, the permission as shows; RET may cite them for the refund.
+- **CM-PAY-021, in-person card payments,** parent CM-PAY-001, the grouping both platforms share, a reading: Shopify's run through Shopify Payments (SH-S-0436, SH-S-0047), Salla's through Geidea (SA-S-5040), so CM-PAY-002 would fit Shopify only. As the lead and E's CM-POS-002 note say, the payment's processing, rates and rules are here; the POS and its devices stay in E's CM-POS-001 and -002. SH-C-086's admin route apps/point-of-sale-channel (SH-S-6329) is shows here; E's CM-POS-001 names it in its note, not in its evidence. Salla's side is SA-C-095's statements (domain E, which names C under also for its Geidea card-present payment statements): outside here, outside in E's CM-POS-002 too, so no double placement.
+- **CM-PAY-022, saved customer payment methods and payment mandates (SH-C-085), apart from CM-PAY-014.** Batch 4's lead asked whether they are the same thing. A reading: no. CM-PAY-014 is the platform saving the buyer's details "making the checkout process faster" (SH-S-0406), through Shop Pay, across checkouts; SH-C-085 is the store keeping a customer's payment method to "pay for future orders without requiring the customer to manually go through checkout" (SH-S-0592), charged by staff (Charge vaulted payment method) or an app (write_payment_mandate). Q1's M-035 joins it with WooCommerce's payment tokens only. No parent: Shopify's route is on the customer's record (section Customers, domain D's), its permissions under Orders and Drafts.
+- **CM-PAY-023 (Shopify Balance), with CM-PAY-024 (its cards) under it; CM-PAY-025 (Shopify Credit); CM-PAY-026 (Capital).** Each has a place of its own (admin sections Banking, Cards, Credit and Capital, with routes and plan rows). Cards under Balance by Shopify's own name for them, Shopify Balance Visa® Commercial cards, and the rule tying the card's use to the Balance account (SH-S-0465). Credit apart from Cards and from Capital: its own section and route, a card account with a credit limit set by the issuing bank (SH-S-7267), not funding repaid from sales. As the lead says, Balance is not A's CM-PLN-006 (Salla's prepaid balance spent on the platform's services) nor D's CM-LOY-001 (the buyer's wallet with the store).
+- **No parent for the Finance suite.** Shopify groups Balance, Credit and Capital in its Finance suite ("built into your Shopify admin", SH-S-0454; the admin page finance, cited as shows; the product Finances & Funding, SH-I-1983, uncited). No concern of either platform is the suite as such, so I added no capability for it; the reviewer may want one as parent of CM-PAY-023, -025 and -026. Salla shows only CM-PAY-026 of the three.
+- **CM-PAY-026, Capital (M-038), a difference of grain.** One capability for Shopify's seven country concerns (five here, SH-C-096 and SH-C-097 in batch 6), each statement keeping its country scope: they share Capital's section, route, entitlement shopifyFinance.capital, plan row and eligibility statements, and differ by lender and agreement, which go in slot fillers. A capability per country would be cut by a market's facts. The shared statements are cited under each concern's key. Loan against merchant cash advance (SH-S-7218: "either as a loan or merchant cash advance") is a difference of instrument by country; I kept it one capability, since Shopify gives the two no separate place but their legal agreements (SH-I-1410 to SH-I-1414). Salla's side (SA-C-128) is financing collected as 25% of net sales from each payment (SA-S-0111), managed with the fund manager Tanami.
+
+### Joins on role (readings)
+
+None. All eleven landings are `single`: M-034 (SA-C-123) and M-038 (SH-C-096, SH-C-097, SA-C-128) have concerns that later batches land; M-035 and M-036 hold only WooCommerce on the other side.
+
+### Homonyms
+
+- **"Balance":** Shopify Balance, the merchant's money account (CM-PAY-023), against Salla's Wallet and store balance (رصيد المتجر, SA-C-005, A's CM-PLN-006), Salla's e-payments balance (CM-PAY-005), the customer wallet (D's CM-LOY-001), and the store balance a Salla refund needs (SA-S-0181, cited as shows in CM-PAY-020).
+- **"Credit":** Shopify Credit, credit to the merchant (CM-PAY-025), against Shopify's store credit for buyers (D's CM-LOY-001), Salla's wallet setting Maximum Credit Usage Limit (SA-S-1766), Salla's marketing credits (SA-S-3574), and the buyer's credit card as a payment method (Salla's credit_card flag, SA-S-3151; الدفع عبر البطاقة الائتمانية, SA-S-1960).
+- **"Cards":** Shopify's Balance cards (CM-PAY-024) against Salla's Gift cards (SA-S-1767, D's CM-LOY-002), its gift messages and cards (SA-S-1729), and the cards buyers pay with.
+- **"Transactions":** the order's payment transactions (CM-PAY-020) against Shopify Credit's card transactions (VIEW_ALL_SHOPIFY_CREDIT_TRANSACTIONS, CM-PAY-025) and Capital transaction history (finance/capital, CM-PAY-026).
+- **"Payment methods":** Shopify's customer route Payment methods, the customer's saved methods (SH-S-7120, CM-PAY-022), against the store's payment settings, Salla's link Payment methods at /payments (SA-S-1875, CM-PAY-001).
+
+### Strained fits
+
+None. No statement of my concerns is cited in another tree of capabilities: SH-S-0347 (payouts into Shopify Balance up to 7 days earlier) is shows in CM-PAY-005 (batch 3, under SH-C-069's key) and in CM-PAY-023 (under SH-C-088's keys), in two trees, cited for no placement in either.
+
+### Statements shared with other domains
+
+- SA-C-095's SA-S-5038, SA-S-5039, SA-S-5040 and SA-S-5042 (domain E, naming C under also) are outside or shows in CM-PAY-021 and in E's CM-POS-002.
+- Several of SH-C-085's statements (SH-S-6079, SH-S-6265, SH-S-6266) are also held by SH-C-158 and SH-C-159 (domain F); I cite them only under SH-C-085's keys.
+- Found by search and left uncited: SH-C-008/decides/SH-S-0264 (identity verification when applying for Capital or Credit, domain A's), SH-C-182/responsible/SH-S-0204 (Shopify Capital Inc. listed as an affiliated subprocessor, domain A's), SH-C-054/decides/SH-S-6228 (write_marketplace_orders needs the permission capture_payments_for_orders, batch 2's concern; it could be shows in CM-PAY-020), SH-C-098/boundary/SH-S-0501 (Bill Pay paid from the Balance account, batch 6's concern).
+
+### Rulings
+
+None: no unclear candidate holds any of my concerns.
+
+### Left for later batches
+
+- **M-034:** SA-C-123 lands in CM-PAY-020, whose Salla cell cites its keys; the coordinator may then change SH-C-084's join to the match.
+- **M-038:** SH-C-096 and SH-C-097 (batch 6) and SA-C-128 (a Salla batch) land in CM-PAY-026, whose Salla cell cites SA-C-128's keys. SH-C-096's and SH-C-097's statements are uncited; batch 6 adds them to CM-PAY-026's Shopify cell (the shared statements under their keys, and their lenders, YouLend GmbH and YouLend, as slot fillers).
+- **Salla's flag checkout-save-cards (SA-S-3123, SA-C-110):** it saves cards at checkout. I left it for the Salla batch that lands SA-C-110, for CM-PAY-014's Salla cell, which is now not-stated; it isn't cited in CM-PAY-022 (see that cell's reading).
+- **Salla's Recurring Payments (SA-C-125, domain B):** if a Salla statement shows recurring charges to a stored payment method, CM-PAY-022's Salla cell could cite it; none held does.
+- **Shopify Bill Pay (SH-C-098), batch 6:** paid from a bank account or the Balance account (SH-S-0501); it may be a capability of its own beside CM-PAY-023.
+
+### Gaps
+
+- No statement held names a Shopify company as the maker or provider of Shopify Balance, its cards, or Capital in the United States, Canada and Australia. The cells claim core from their admin places. Capital's UK and French statements name Shopify and Shopify Commerce France SAS (own-service); Credit's Program Terms name Shopify Capital Inc.
+- Q1's gaps: responsible (observation needed) on SH-C-093 and SH-C-094, so Canada's and Australia's lender isn't held; boundary (observation needed) on SH-C-089, the card program's terms and interface; responsible (stated only in general terms) on SH-C-085 and SH-C-086; reason (searched, not found) on SH-C-085, SH-C-086, SH-C-089, SH-C-091 to SH-C-095. On the Salla side: SA-C-123's responsible and reason, SA-C-128's reason (page not read).
+- No statement held names a Salla company as the maker or provider of its financing: صندوق سلة carries Salla's name, which doesn't name the maker; the fund manager is Tanami.
+- SH-I-1484 (extension point Card present) is cited as extension-point on Q1's inventory category alone; no statement held says what an app does there.
+- No Salla statement held shows authorization or capture, in-person payments through Salla Payments, saved payment methods charged outside checkout, a merchant money account, merchant cards or merchant credit.
+
+### Qualities
+
+- CM-PAY-020 Shopify: a 7-day authorization period (SH-S-0391); extended periods only for Plus stores on Shopify Payments (SH-S-0393).
+- CM-PAY-021 Shopify: In-person card rates and In-person manual rates per plan (SH-S-7027, SH-S-7029); no Interac offline in Canada (SH-S-0588).
+- CM-PAY-023 Shopify: the earnings rate per plan (SH-S-7062); US or Puerto Rico residence (SH-S-0460).
+- CM-PAY-025 Shopify: up to 3% cashback (SH-S-7064); repayment over 10 calendar months (SH-S-0468).
+- CM-PAY-026 Shopify: the US loan's maximum term of 18 months with 2 minimum payments (SH-S-7218). Salla: 25% of net sales collected from each payment (SA-S-0111).
+
+### Checker
+
+The batch check (`--concerns` for the batch's eleven concerns, `--areas PAY`) gives "0 problems, 38 flags for the reviewer". The 32 on CHK, ORD and CM-PAY-001 to -019 are batches 1 to 4's, answered in their sections. Mine:
+
+- **Own-service on SH-S-7276 and SH-S-7279** (Shopify Credit's Program Terms are an agreement with Shopify Capital Inc., which provides access to the program), **SH-S-0484** ("Shopify provides merchant cash advances in the United Kingdom through our partner YouLend") and **SH-S-0491** ("This application is provided by Shopify Commerce France SAS"). Each names Shopify, or a company of its group by its legal name, as the provider of a financial service separate from the store's own payments. SH-S-0484 is also outside under its boundary key, for YouLend.
+- **CM-PAY-022 to CM-PAY-025 Salla, none-held, with 22, 99, 6 and 11 matches:** the matches come from Shopify's terms Payment methods, Balance, Cards and Credit, each a homonym above; answered in each cell's reading.
+
+For the coordinator, on earlier rows: none found wrong. CM-PAY-014's Salla cell (not-stated) may gain SA-S-3123 (checkout-save-cards) when SA-C-110 lands.
