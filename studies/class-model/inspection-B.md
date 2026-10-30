@@ -544,7 +544,50 @@ Every one holds.
 
 ## Re-inspection (30 October)
 
-Status: in progress, written as it goes.
+Status: complete (30 October 2026).
+
+**Summary.** Of the 19 findings, 17 are resolved. Two are resolved in the brief, while the checker's tests for them misfire: 7 (R5) and 9 (R1, R4). The fixes bring 16 new problems:
+- 7 to fix before the dry run, each a few lines of the checker or a sentence of the brief;
+- 4 to settle before domain B's later mapping parts or a second domain;
+- 5 optional.
+
+| # | Finding | Verdict |
+| --- | --- | --- |
+| 1 | No rule for which concerns are a domain's | resolved |
+| 2 | The area rule assumed the seed's areas | resolved |
+| 3 | The dry run's mapping part had no domain | resolved |
+| 4 | "Lands once" against coarser concerns; false "nothing held" | resolved (optional remainder: R14) |
+| 5 | Mapping onto the anchor only; no cells for earlier platforms | resolved (new problem: R3) |
+| 6 | No token for "nothing held"; absence from `notes.md` | resolved |
+| 7 | Placement values with no tests | resolved in the brief; the checker's flags misfire (R5) |
+| 8 | Cells not checkable | resolved |
+| 9 | Joins not recorded in the mapping pass | resolved in the brief; checker gaps (R1, R4) |
+| 10 | A shared term joining different things | resolved |
+| 11 | No `note` column; no rulings | resolved; a ruling isn't tested against the landings (R9) |
+| 12 | Parts not small; no slice script | resolved for the dry run; not for domain C (R10) |
+| 13 | Qualities without capability or scope | resolved (optional remainder: R11) |
+| 14 | No gaps in cells | resolved |
+| 15 | Commits for URL sources; citing extra context | resolved |
+| 16 | The permissions sentence | resolved |
+| 17 | Smaller conventions | resolved |
+| 18 | "Placement" with two meanings | resolved |
+| 19 | "Read in full" | resolved |
+| R1 | The checker crashes on a key with an unknown prefix, printing only that key | before the dry run |
+| R2 | Problems in an earlier part are reported as the current part's | before the dry run |
+| R3 | One back-fill per domain, while the dry run runs it after WooCommerce alone | before the full run |
+| R4 | A `match:` landing isn't tested against where the match's other concerns landed | before the dry run |
+| R5 | The safety flags on placements miss their cases: (a) `core` on `boundary` is silenced by a `shows` row; (b) `own-service` passes any statement naming the platform | (a) before the dry run; (b) optional |
+| R6 | Any statement can be cited in any cell, so one can support capabilities in two domains | before the full run |
+| R7 | A move breaks the moving part's re-check; no procedure for a concern moved into a domain already run | before the full run |
+| R8 | The scope part reads no Q1 matches, though its rule needs them, and naming the match clears any split | before the dry run |
+| R9 | A ruling isn't tested against the landings: `apart` passed for a candidate the part joined | before the dry run |
+| R10 | The size line fails beyond domain B (Shopify's checkout-to-tax and shipping concerns: 73, with 1,063 statements) | before the full run |
+| R11 | Qualities: scopes not derived; unplaced limits have no citable value | optional |
+| R12 | "Domain F holds … its APIs" can pull a feature's API out of its subject's domain | before the dry run |
+| R13 | Small inconsistencies (`not stated` and `not-stated`, lenient separators, `model` reading the running part) | optional |
+| R14 | A `none-held` search is only as good as its terms | optional |
+| R15 | The back-fill must write files the brief doesn't mention | optional |
+| R16 | Where the merge lives | optional |
 
 **What this is.** The same inspector re-reads brief B as rewritten at `92ec26fd`, with its two new scripts, `method/class_slice.py` and `method/check_class_part.py`. For each of the 19 findings above, it says whether the rewrite resolves it. It looks for new problems the fixes brought in, and it runs the scripts on domain B's concerns and on a synthetic part built in the scratchpad. As before, every judgement is a **Reading**, and every count comes from a script that was run.
 
@@ -556,3 +599,260 @@ Status: in progress, written as it goes.
 
 The concern map, the seed and Q1 are unchanged since `93ebb15c` (`git diff 93ebb15c 92ec26fd` touches only the brief, the two scripts, `method/README.md`, `PLAN.md`, `STATE.md`, `founder-decisions.tsv`, a founder message and this file).
 
+**Run, in the scratchpad** (`reinsp/` under the inspector's scratchpad, with `CLASS_MODEL_DIR` set to `reinsp/model`, a copy of `studies/class-model/seed`):
+- every `class_slice.py` command, on real domain-B concerns;
+- `check_class_part.py` on four inputs:
+  - a synthetic `scope.tsv` for all 652 concerns, written by a keyword script (`tools/mkscope.py`). It is a test fixture, not a reading of the domains: the inspector's domain-B sets are forced to B, and everything else is assigned by keywords;
+  - a synthetic `B-anchor` part (`tools/mkpart.py`): 17 capabilities, 27 landings (2 of them `moved:D`), 34 cells, 72 evidence rows, all on real statement keys;
+  - a synthetic `B-woocommerce` part: 2 new capabilities, 8 landings, 19 cells;
+  - a synthetic `B-backfill` part: 4 cells;
+- 14 faulty copies of these, most with one fault, to see whether the checker catches it.
+
+### The 19 findings, against the rewrite
+
+| # | Finding, in short | Verdict | Evidence |
+| --- | --- | --- | --- |
+| 1 | No rule for which concerns are a domain's | **Resolved** | A scope part writes `scope.tsv`, one domain per concern, with `also` and the match rule (brief lines 6 and 43 to 51). The checker refuses domain H, a duplicate row, a missing concern, an `also` naming the row's own domain, an empty reason, and a split match whose reason doesn't name it. Each was tested on a faulty copy. New problems from the fix: R6, R7 and R8. |
+| 2 | The area rule assumed the seed's areas | **Resolved** | "The area is the `area_id` of your domain that the capability is about … The channel never sets it" (line 64); "Domain H takes nothing" (line 48). The checker tests that the area belongs to the domain and that the `cap_id` carries it (`check_class_part.py` lines 166 to 169). |
+| 3 | The dry run's mapping part had no domain | **Resolved** | A mapping part is one platform and one domain (lines 12 and 75). The checker takes only the concerns `scope.tsv` gives that domain and refuses any other landing (lines 187 and 196). Tested: the synthetic `B-woocommerce` lands its 8 domain-B concerns and nothing else. |
+| 4 | "Lands once" against coarser concerns; false "nothing held" | **Resolved** | `landings.tsv` lands each concern exactly once (checker lines 198 and 236). Cells may cite statements of concerns landed elsewhere (line 67), a coarser concern lands on the parent (line 67), and a match with several concerns on a side is a difference of grain (line 61). `none-held` must record its search terms, and the checker re-runs them. Tested: the synthetic Brands cell searched "brand;vendor;علامة تجارية" and was flagged with 9 Shopify hits. Remainder, optional: R14. |
+| 5 | Mapping onto the anchor only; no cells for earlier platforms | **Resolved** | "The domain's model so far: the anchor and every earlier mapping part" (line 75; checker lines 130 and 131). A back-fill writes the missing cells (lines 80 to 82; checker line 319). `fit` carries `strained` (line 114). Tested: the back-fill was asked for exactly the Shopify and Salla cells of `B-woocommerce`'s two new capabilities. With one of the 4 removed, the check named that cell and no other. New problem from the fix: R3. |
+| 6 | No token for "nothing held"; absence from `notes.md` | **Resolved** | `held` is `statements` or `none-held` (line 115). Absence from a complete list is no longer recorded, and `none-held` "never means the platform lacks the capability" (line 86). |
+| 7 | Placement values with no tests | **Resolved in the brief; the checker's flags misfire** | The tests are at lines 88 to 95. They settle the platform's own extension (`own-service`), the API apps use (`extension-point`) and the merchant's responsibility (`shows`). `not-stated` is derived. Both of the checker's safety flags miss the case they were added for (R5). |
+| 8 | Cells not checkable | **Resolved** | The separator is `;` and tokens are hyphenated (line 112). The key `concern_id/placement/first_cite_id` repeats on no row of any platform: 3,005, 2,560, 1,499, 654 and 473 rows give as many keys (script over each `statements.tsv`). Scopes are derived per key into `derived.tsv`, for example `SA-C-020/decides/SA-S-1949=plan: سلة بلس`. Terms are tested against the cited statements. |
+| 9 | Joins not recorded in the mapping pass | **Resolved in the brief; two checker gaps** | `landings.tsv` carries `join` and `join_evidence` in every part (line 114). The checker tests that a match exists and holds the concern, and that other joins cite both sides. But it crashes on a key with an unknown prefix (R1). Nor does it test that a `match:` landing's capability holds any of the match's other concerns (R4). |
+| 10 | A shared term joining different things | **Resolved** | Line 59 cites Q1's list of the six homonym cases. Remainder, optional: the brief says never to load the concern map's files whole, and the script has no command for `matching-notes.md` (R13). |
+| 11 | No `note` column; no rulings | **Resolved; one checker gap** | The columns are named (line 28), and `rulings.tsv` holds a ruling on every candidate that holds a landed concern. The checker tests coverage: removing `U-002`'s ruling gave "no ruling on U-002". But it doesn't test a ruling against the landings (R9). |
+| 12 | Parts not small; no slice script | **Resolved for the dry run** | Measured with `class_slice.py`: the scope part prints 153,822 bytes. `B-anchor` prints 46,660 bytes of Shopify statements for 14 concerns, 59,852 of Salla's for 13, and about 7,900 bytes of matches each. `B-woocommerce` prints 12,565 bytes for 8 concerns. Remainder, before the full run: the brief's size line doesn't hold for domain C (R10). |
+| 13 | Qualities without capability or scope; slot fillers judged a kind | **Resolved, with remainders** | `qualities.tsv` takes `cap_id` (line 117). A slot filler involves no judgement of kind (line 101). Remainders, optional: qualities' scopes aren't derived, and an unplaced entry has no citable value (R11). |
+| 14 | No gaps in cells | **Resolved** | `derived.tsv` lists the gaps on each cell's cited concerns, for example `SH-C-038/where:observation needed`. |
+| 15 | Commits for URL sources; citing extra context | **Resolved** | Line 41. |
+| 16 | The sentence on permissions read as excluding concerns | **Resolved** | Line 62. |
+| 17 | Smaller conventions | **Resolved** | Names (line 63), numbering (lines 65 and 76; the checker tests "numbered past the model's highest"), part names (line 12; the checker refuses others), `area_id` and same-domain `parent` (line 113), market-scoped capabilities (line 64). |
+| 18 | "Placement" with two meanings | **Resolved** | Q1's five placements and its rule 5 are quoted (lines 18 to 25), and the column is `supports` (line 116). `class_slice.py` marks an inference note, for example `WC-C-100/decides/WC-S-5351 … [note: inference]`. |
+| 19 | "Read in full" | **Resolved** | Line 8. |
+
+### What the scripts did
+
+**`class_slice.py`.** Every command works as the brief describes:
+- `seed`;
+- `concerns`, with `--all --where`, and with `--domain` from `scope.tsv`. A concern another domain lists under `also` is shown as "read-only: cite, never land";
+- `statements`, `key`, `matches`, `gaps`, `outscope` and `model`. `key` answers `NOT FOUND` for an unknown key;
+- `search`. It ignores case and Arabic hamza: "الاقسام" and "الأقسام" both find Salla's 2 statements. It matches substrings, so a short term casts wide: "tag" finds 96 Shopify statements.
+
+`model` prints the domain's capabilities, landings and cells compactly: 4,823 bytes for the fixture's 19 capabilities.
+
+**`check_class_part.py`.**
+- **Clean inputs.** The synthetic scope passes with 0 problems once every split match is named. The same keyword assignment, before the reasons were edited, gave 53 problems. The synthetic `B-anchor` and `B-woocommerce` pass with 0 problems.
+- **Faults it catches:** a missing ruling, a cell with no evidence, a landed concern its cell doesn't cite, a term not found in a statement, an `also` concern landed, `none-held` terms that match statements (a flag), and `core` resting only on `boundary` statements (a flag).
+- **What it misses or mishandles:** R1 to R5, R7 and R9 below.
+
+### New problems
+
+The repository moved again during the re-inspection, to `b460d54b`: the founder's answers of 30 October, and `PLAN.md`'s Stage 4A rewritten to describe this method. `git diff 92ec26fd HEAD` shows no change to the brief, the scripts, `studies/concern-map/` or the seed. Line numbers are the brief's and the scripts' at `92ec26fd`.
+
+**Verdicts.** "Before the dry run" means a cheap fix the dry run should have. "Before the full run" means a decision needed before domain B's Zid and BigCommerce parts, or before a second domain. "Optional" means it doesn't make wrong rows.
+
+#### R1. The checker crashes on a key with an unknown prefix (before the dry run)
+
+**Where.** `check_class_part.py` line 222 (`join_evidence`), line 340 (qualities and slot fillers) and line 362 (rulings) call `platform_of()`. That function calls `sys.exit` on an unknown prefix (`class_slice.py` line 64); only `evidence.tsv` catches the exit (line 265).
+
+**Problem.** One stray match id, candidate id or `cap_id` in a key column stops the whole check. The run prints a single line, with no file or line number and none of the other problems. It also leaves any earlier `derived.tsv` in place, now stale.
+
+**Evidence.** Tested on faulty copies: `M-011;U-059` in a `join_evidence` printed only "unknown platform prefix: M-011", with exit 1. `CM-CAT-003` in a ruling's `keys` printed only "unknown platform prefix: CM-CAT-003".
+
+**Fix.** Catch the exit at every call, and report "`<file>` line n: `<token>` is not a statement key", as `evidence.tsv` already does.
+
+#### R2. Problems in an earlier part are reported as the current part's (before the dry run)
+
+**Where.** `load_part()` checks every earlier part's files with `table()` (lines 47 to 64 and 136), and its messages carry no part name.
+
+**Problem.** Checking `B-woocommerce` reports faults in `B-anchor` as if they were `B-woocommerce`'s. Its agent is told to "fix every problem it prints" and to "write only your part's files", so it can do neither. This is likely in the dry run, since the review may correct `B-anchor` after its check. Nor does the checker ask whether an earlier part passed its own check; it trusts any folder that exists.
+
+**Evidence.** Two faulty copies, each checked as `B-woocommerce`:
+- `B-anchor/qualities.tsv` deleted: the check printed "PROBLEM qualities.tsv: missing";
+- a 3-field row added to `B-anchor/capabilities.tsv`: it printed "PROBLEM capabilities.tsv line 19: 3 fields, header has 5". `B-woocommerce`'s own `capabilities.tsv` has 3 lines.
+
+**Fix.** Prefix every message with its part's folder. Report an earlier part's fault as "`B-anchor` doesn't pass its check; re-run the check on it".
+
+#### R3. One back-fill per domain, but the dry run runs it after WooCommerce alone (before the full run)
+
+**Where.**
+- Brief lines 7 to 10: "the back-fill", once per domain, after the mapping parts.
+- `PART_ORDER` (`class_slice.py` line 41) ends with one `backfill`.
+- The checker's back-fill needs cells for "platforms already mapped": every mapping folder that exists (lines 152 and 319).
+
+**Problem.** The dry run is scope, `B-anchor`, `B-woocommerce`, `B-backfill`. When `B-zid` and `B-bigcommerce` run later, their new capabilities need a back-fill too, and `B-backfill` already exists. The brief doesn't say whether that part is reopened, extended or replaced. Its re-check fails until someone edits another run's files.
+
+The back-fill also accepts cells for a platform not yet mapped (line 249 lets a back-fill write any platform's cell). The later Zid part then writes the same cell again, and its check doesn't see the duplicate, since `B-backfill` isn't among Zid's earlier parts.
+
+**Evidence.** Tested: a `B-zid` folder with one new capability was added after the synthetic `B-backfill`. Re-checking `B-backfill` then demanded every capability's Zid cell ("no cell for CM-CAT-001 and zid", and so on, 20 times, in this fixture where the Zid part wrote no cells).
+
+**Fix.** Either one back-fill after each mapping part, named for it (`B-backfill-woocommerce`), checked against the parts before it; or one back-fill per domain, after all three mapping parts, with the dry run's back-fill a one-off named as such. Refuse back-fill cells for platforms not yet mapped.
+
+#### R4. A `match:` landing isn't tested against where the match's other concerns landed (before the dry run)
+
+**Where.** Lines 212 to 218 test only that the match exists and holds the concern.
+
+**Problem.** A concern can land "by Q1's match" in a capability where none of the match's other concerns landed. The join's stated basis is then false, and the checker is silent. This matters most in the mapping parts, where WooCommerce lands by match on the anchor's capabilities.
+
+**Evidence.** Tested: `WC-C-064` landed `match:M-011` in `CM-INV-003` (inventory transfers), where none of `M-011`'s concerns landed. The check gave "0 problems, 0 flags".
+
+**Fix.** Test that the capability, its parent or one of its children holds another of the match's concerns, in the model so far or in this part. Otherwise `match:` is a problem. Also test the reverse at the merge: a match's concerns spread over unrelated capabilities is flagged.
+
+#### R5. The two safety flags on placements miss their cases (a: before the dry run; b: optional)
+
+**Where.** Line 298: "core rests only on boundary statements" fires only when every evidence row of the cell is `core` and every statement is `boundary`. Lines 277 and 278: the `own-service` flag fires only when the statement doesn't match the platform's name (`COMPANY`, lines 34 and 35).
+
+**Problem.**
+- **(a)** One `shows` row on any statement silences the `core` flag, though `core` still rests only on `boundary` statements. That is the case finding 7 was about (`SH-C-186`'s scopes and topics), and an agent that also cites a `where` row for the terms writes exactly that cell.
+- **(b)** The `own-service` flag passes any statement that names the platform. The brief's test is that the statement names the company "as the maker or provider", and a statement can name the platform without naming any maker.
+
+**Evidence.**
+- **(a)** Tested: `CM-SEL-002`'s Shopify cell had `core` on two `boundary` rows of `SH-C-186`, plus a `shows` row on its `where` row. The check gave no flag and derived `core`. Without the `shows` row, the flag fired.
+- **(b)** The flag's pattern matches 1,051 of Shopify's 3,005 statements, 633 of Salla's 2,560, 748 of WooCommerce's 1,499, 222 of Zid's 654 and 93 of BigCommerce's 473 (script). Tested: `own-service` on `WC-C-100/decides/WC-S-5351`, "WooCommerce Subscriptions is a premium extension …", which names no maker, raised no flag. On `WC-C-104/where/WC-S-0702`, "Merchandising", it did.
+
+**Fix.**
+- **(a)** Test the statements that carry `core`: flag when all of them are `boundary`.
+- **(b)** Flag every `own-service` row for the reviewer, since they are few and they decide the kind. Or require `why` to quote the maker phrase, and test that the quote occurs in the statement.
+
+#### R6. Any statement can be cited in any cell, so one statement can support capabilities in two domains (before the full run)
+
+**Where.**
+- The brief says a part "may cite" the concerns of other domains that name it under `also` (lines 34 and 46).
+- It also says "A cell may cite statements of a concern landed elsewhere" (line 67), and that `none-held` and the back-fill search "the platform's statements" (lines 69 and 82), which returns statements of every concern.
+- The checker tests that a key exists and is the cell's platform's (lines 264 to 273), not which concern or domain it comes from.
+
+**Problem.** The `also` restriction is neither enforced nor consistent with the search instructions. One Salla statement can back a `core` cell in domain B and another in domain C. Each capability's kind is computed on its own, so the same evidence counts twice. Nothing across domains checks it.
+
+**Evidence.** Tested: `B-anchor`'s `CM-SEL-002` Salla cell cited `SA-C-125/where/SA-S-1173`. In the fixture `SA-C-125` is in domain F and doesn't name B under `also`. The check gave 0 problems, and `derived.tsv` gave the cell `core` ("Recurring Payments API").
+
+**Fix.** Say what a cell may cite: its own domain's concerns and those naming it under `also`. A search hit in another concern of another domain is a lead, recorded in the notes or cited with a flag. In the checker:
+- flag a key whose concern scope.tsv gives to another domain without naming this one under `also`;
+- at the merge, flag a key that supports `core` or `own-service` in capabilities of two domains.
+
+#### R7. A move breaks the moving part's re-check, and a concern moved into a domain already run has no procedure (before the full run)
+
+**Where.** Brief line 67: "A concern that belongs to another domain lands as `moved:<domain>` … and the coordinator moves it." `check_class_part.py` lines 196 and 197 refuse any landing of a concern that scope.tsv doesn't give the domain, a `moved:` row included.
+
+**Problem.** Once the coordinator applies the move in scope.tsv, the part that asked for it fails its own check. And a concern moved into a domain whose parts already ran (a later domain moving one into B) has no part to land it.
+
+**Evidence.** Tested: `SH-C-026` was moved to D in scope.tsv, as `B-anchor`'s `moved:D` row asked. Re-checking `B-anchor` gave "PROBLEM landings.tsv line 27: scope.tsv doesn't give SH-C-026 to domain B".
+
+**Fix.** Accept `moved:<X>` where scope.tsv now gives the concern to X. Say who lands a concern moved into a domain already run: a short amendment part, checked like a mapping part.
+
+#### R8. The scope part's reading has no Q1 matches, though its rule depends on them (before the dry run)
+
+**Where.**
+- Brief line 45: the scope part reads `concerns --all --where` and `seed`.
+- Line 47: "A Q1 match keeps its concerns in one domain".
+- `class_slice.py` has no command that lists every match, and `concerns` doesn't print a concern's match ids.
+- The checker (lines 106 to 114) accepts a split match whenever the reason names it.
+
+**Problem.** The agent learns of the matches only from the checker's complaints. The cheapest way to clear those complaints is to append the match id to each reason, which turns "keeps its concerns in one domain" into "names the match". **Reading:** the scope's errors carry into every domain, so it is worth getting right first.
+
+**Evidence.** The keyword fixture, which knows nothing of the matches, gave 53 problems on its first check. Appending each split match's id to its concerns' reasons cleared all 53 (script `tools/mkscope.py --fix-matches`).
+
+**Fix.** Print each concern's match and unclear-candidate ids in `concerns --all --where` (or add `matches --all`), and tell the scope part to read them before assigning. Have the checker list every split match, named or not, for the coordinator's check of `scope.tsv`.
+
+#### R9. A ruling isn't tested against the landings (before the dry run)
+
+**Where.** Lines 349 to 366 test a ruling's form, and that every needed candidate has one, but not what it says.
+
+**Problem.** A ruling can say `apart` while the part joins the candidate's concerns in one capability, or `joined:<cap>` while they land elsewhere. These rulings go to the founder's veto with the extent's report (ruling 11), so a contradiction misinforms the founder.
+
+**Evidence.** The synthetic `B-anchor` joins `SH-C-021` and `SA-C-022` (both in `U-002`) in `CM-CAT-003` on role, while its `rulings.tsv` says `U-002` is `apart`. The check gave 0 problems.
+
+**Fix.** `apart` is a problem when two of the candidate's concerns from different platforms land in one capability. `joined:<cap>` is a problem unless at least two of its concerns land in that capability, its parent or a child.
+
+#### R10. The size line doesn't hold beyond domain B (before the full run)
+
+**Where.** Brief line 122: "An anchor part takes about 10 to 25 concerns per platform, with about 300 to 400 statements each".
+
+**Problem.** Domain C is several times that, and its agent would load far more than "small".
+
+**Evidence.** Shopify's concerns `SH-C-046` to `-105` and `-114` to `-126` (cart and checkout to tax, and shipping; chosen by id range, not by a scope reading) are 73 concerns with 1,063 statements (script).
+
+**Fix.** Before domain C runs, split its anchor by area (CHK, ORD, PAY, TAX, SHP, RET), or by pairs of areas, with `scope.tsv`'s domain as the outer bound.
+
+#### R11. Qualities: no derived scope, and unplaced limits have no citable value (optional)
+
+**Where.**
+- The brief lets a quality cite "an unplaced inventory entry by its id" (lines 38 and 41), and its `value` is "the platform's words" (line 117).
+- `derived.tsv` covers cells only.
+
+**Problem.** A quality's scope isn't derived anywhere. The value of an unplaced limit isn't in its inventory entry: it sits in Q1's `notes.md`, which is never cited. And the one citable variant limit disagrees with the unplaced one, a disagreement Q1 recorded only in `notes.md`.
+
+**Evidence.**
+- `SH-I-2520` `maxProductVariants`. Its citation `SH-S-7362` quotes only `"section": "resourceLimits", "key": "maxProductVariants"`, and its reason says "values per store in notes.md, Unplaced keys". Shopify's `notes.md`, lines 210 to 213, gives `2048`.
+- `search --terms "100 variants;2048;maxProductVariants"` finds only `SH-C-020/decides/SH-S-7214`, "up to 100 variants for each of your products".
+- Shopify's `notes.md`, line 204, records the disagreement.
+
+**Fix.** Derive the qualities' scopes into a `derived-qualities.tsv`. For an unplaced entry, record the key as the quality, with the value "not in the concern map", and name the observed-sh structure in the notes as a gap.
+
+#### R12. "Domain F holds … its APIs" can pull a feature's API out of its subject's domain (before the dry run)
+
+**Where.** Brief line 49: "Domain F holds the app platform itself, its APIs, webhooks, developer tooling and partners."
+
+**Problem.** "Its APIs" can be read as every API, against line 45's "what the concern is about". The seed itself lists Salla's storefront API under both SFR (domain E) and API (domain F), and puts Salla's rate-limiting and versioning pages under OPS (domain G).
+
+**Evidence.** Concerns named after a feature's API:
+- `SA-C-125` "Recurring payments and subscriptions sold by stores (Recurring Payments API; Subscriptions)": the inspector's keyword fixture put it in F on the word "API";
+- `WC-C-079` "Store API (public storefront API)";
+- `SA-C-101` "Storefront API used by store pages";
+- `BC-C-053` "GraphQL Storefront API and storefront API tokens";
+- `SA-C-201` "API rate limits".
+
+**Fix.** "Domain F holds the API platform: its conventions, authentication, versioning and limits. A feature's own API goes with the feature."
+
+#### R13. Small inconsistencies (optional)
+
+- **Two spellings of one token.** Brief line 95 says "`not stated`"; the scripts derive `not-stated`.
+- **Lenient separators.** `ids()` (`class_slice.py` lines 73 and 74) accepts commas and spaces in `also`, `join_evidence` and `keys`, although the brief says `;`.
+- **Two meanings of "the model so far".** `model` reads every part folder that exists, the running part's own and, on a re-run, later ones (`part_dirs`, lines 211 to 218). The checker's model so far is the earlier parts only.
+- **Rulings on moved concerns.** `taken` includes `moved:` landings, so a part rules on the candidates of concerns it moved out.
+- **One statement, two values.** Two values on one statement are allowed, though line 95 says "each on its own statements".
+- **No command for the homonym list.** Line 59 points at `matching-notes.md`, but line 32 says never to load the concern map's files whole, and no command prints that file.
+
+#### R14. A `none-held` search is only as good as its terms (optional)
+
+**Where.** Lines 289 to 295 re-run the agent's own terms.
+
+**Problem.** A term that matches nothing passes silently.
+
+**Evidence.** The synthetic parts' `none-held` cells searched `zzzfixtureterm` and passed with no flag.
+
+**Fix.** Also run the capability's terms from its other platforms' cells over this platform's statements, and flag the hits.
+
+#### R15. The back-fill must write files the brief doesn't mention (optional)
+
+**Problem.** The checker requires all seven files with headers (line 120). The brief tells the back-fill only that it "add[s] no capabilities and land[s] no concerns" (line 82).
+
+**Evidence.** The synthetic back-fill, written with only `cells.tsv` and `evidence.tsv`, got five "missing" problems.
+
+**Fix.** Say "write the other files with their headers only", or have the checker accept their absence in a back-fill.
+
+#### R16. Where the merge lives (optional)
+
+**Problem.** The brief says "The coordinator checks your rows and merges the parts" (line 12), but `model` and the checker read the parts' folders, never a merged file. A correction the coordinator makes after review must therefore go into the parts' own files, or later parts won't see it.
+
+**Fix.** Say that the parts' folders are the model, and that a coordinator's correction is made in them, noted in that part's notes.
+
+### Can the dry run start?
+
+**Reading:** yes, after seven small fixes. None needs a change to the design.
+- **The scope part** can start once R8 and R12 are in. R8 means printing each concern's match ids and telling the agent to read them; R12 is one sentence on F's APIs.
+  - Its checker already does what the brief asks; every scope check was tested on a faulty copy.
+  - The scope comes first because every domain's parts read it, and a split match cleared only by naming is costly to undo later.
+  - Its reading is 153,822 bytes for the five platforms, about 38,000 tokens at an assumed 4 bytes a token, plus the 652 rows it writes.
+- **`B-anchor`** can start once the checker has R1, R2, R4, R5(a) and R9, a few lines each. Without them, these kinds of wrong row pass the part's own check, and only the review would catch them. Its reading for the fixture's 27 domain-B concerns is about 106,500 bytes of statements, 15,700 of matches and 8,600 of gaps.
+- **`B-woocommerce`**: as for `B-anchor`. R4 matters most here, since WooCommerce lands by Q1's matches.
+- **`B-backfill`**: as planned, with its other files written with headers (R15). R3 must be settled before `B-zid` runs.
+- **Before the full run:** R3, R6, R7 and R10.
+
+**What the re-inspection's scripts are.** They are in the inspector's scratchpad, under `reinsp/`:
+- `tools/mkscope.py` and `tools/mkpart.py`: the fixtures;
+- `model/`: the test model directory, a copy of the seed with the fixture's `scope.tsv` and parts;
+- `mut/`: the last faulty copy.
+
+The fixtures are tests of the scripts, not readings of the evidence.
