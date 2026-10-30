@@ -534,3 +534,161 @@ CM-LOY-007	salla	core	SA-C-078/reason/SA-S-5026	built-in rule: booking products 
 CM-LOY-007	salla	extension-point	SA-C-078/boundary/SA-S-1672	communication-app event customer.repurchase.reminder
 CM-LOY-007	salla	shows	SA-C-078/decides/SA-S-2587	reorder_reminders_browse in the permissions a partner can request (S7)
 CM-LOY-007	salla	shows	SA-C-078/decides/SA-S-2588	reorder_reminders_management in the permissions a partner can request (S7)
+CM-SUP-001	shopify	extension-point	SH-C-154/where/SH-S-2601	App Store category Product review apps
+CM-SUP-001	shopify	shows	SH-C-154/boundary/SH-S-7284	Third Party Services, apps of the App Store included, may access the store's data
+CM-SUP-001	shopify	shows	SH-C-154/responsible/SH-S-7476	Shop isn't responsible for the product reviews the merchant receives in the Shop app
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-1860	its own link Reviews & questions, /feedback
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-1699	its own link Reviews, /feedback
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-3552	dashboard app @salla.sa/ui-merchant-feedback, path /feedback
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-1719	settings route feedback/thanks_message, Thank you message
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-1720	settings route feedback/image_attachment, Add media to reviews
+CM-SUP-001	salla	core	SA-C-030/where/SA-S-1721	settings route feedback/update_rating, Edit or delete review
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-2071	plan line الأسئلة والتقييمات, plan سلة بلس
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-2072	plan line إتاحة إضافة صور في تقييم المنتج, plan سلة بلس
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-2311	staff permission reviews_management
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-2312	staff permission questions_management
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-2313	staff permission reviews_and_questions_browse
+CM-SUP-001	salla	shows	SA-C-030/decides/SA-S-2528	partner permission reviews_management, إدارة التقييمات
+CM-SUP-001	salla	shows	SA-C-030/decides/SA-S-2529	partner permission questions_management, إدارة الاسئلة
+CM-SUP-001	salla	shows	SA-C-030/decides/SA-S-2530	partner permission reviews_and_questions_browse
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3180	released flag store-rating
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3360	released flag feedback-bulk-actions, plans plus, pro, special
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3364	released flag reviews-page, plans plus, pro, special
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3373	released flag review-factors, plans plus, pro, special
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3375	released flag feedback-video-attachments, plans plus, pro, special
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3376	released flag allow-reviews-from-product-page, plans plus, pro, special
+CM-SUP-001	salla	core	SA-C-030/decides/SA-S-3465	released flag feedback-reporting
+CM-SUP-001	salla	shows	SA-C-030/decides/SA-S-3371	flag pin-feedback, not released
+CM-SUP-001	salla	shows	SA-C-030/decides/SA-S-3464	flag feedback, not released
+CM-SUP-001	salla	core	SA-C-030/boundary/SA-S-1039	its API folder Reviews
+CM-SUP-001	salla	core	SA-C-030/boundary/SA-S-1040	its API folder Feedbacks
+CM-SUP-001	salla	core	SA-C-030/boundary/SA-S-1561	its access scope reviews, read and read_write
+CM-SUP-001	salla	core	SA-C-030/boundary/SA-S-1624	its webhook event review.added
+CM-SUP-002	salla	core	SA-C-030/where/SA-S-1718	settings route feedback/rating_message, Review requests
+CM-SUP-002	salla	core	SA-C-030/decides/SA-S-2127	plan line إرسال رابط التقييم للعميل, plan سلة برو
+CM-SUP-002	salla	core	SA-C-030/decides/SA-S-3170	released flag customer-send-rating, plans pro, special
+CM-SUP-002	salla	core	SA-C-030/decides/SA-S-3282	released flag order-send-rating, plans pro, special
+CM-SUP-003	shopify	extension-point	SH-I-1838	App Store category Social proof apps
+CM-SUP-003	shopify	extension-point	SH-I-1836	App Store category Social trust apps
+CM-SUP-003	shopify	extension-point	SH-I-1839	App Store category Social trust - Other
+CM-SUP-004	shopify	core	SH-C-153/decides/SH-S-7039	plan line Chat with customers, Included on every plan
+CM-SUP-004	shopify	own-service	SH-C-153/where/SH-S-2758	app Shopify Inbox, Google Play publisher Shopify Inc.
+CM-SUP-004	shopify	shows	SH-I-1760	Shopify Inbox among the Shopify account's destinations
+CM-SUP-004	shopify	extension-point	SH-I-1958	App Store category Chat apps
+CM-SUP-004	salla	core	SA-C-099/where/SA-S-1864	its own link Salla Chat, /channel/chat
+CM-SUP-004	salla	core	SA-C-099/where/SA-S-3554	dashboard app @salla.sa/ui-merchant-chat, paths /channel/chat, whatsapp, chat-agents
+CM-SUP-004	salla	core	SA-C-099/where/SA-S-3570	dashboard app chat-mf
+CM-SUP-004	salla	core	SA-C-099/decides/SA-S-3402	released flag salla_chat
+CM-SUP-004	salla	core	SA-C-099/boundary/SA-S-5138	manage customers' inquiries over several channels, WhatsApp and the store's site, without outside tools
+CM-SUP-005	shopify	extension-point	SH-C-192/where/SH-S-2721	App Store category Support apps
+CM-SUP-005	shopify	extension-point	SH-I-1960	App Store category Helpdesk apps
+CM-SUP-005	shopify	extension-point	SH-I-1961	App Store category Support - Other
+CM-SUP-005	shopify	shows	SH-C-192/decides/SH-S-0755	merchants approve an app's scopes when they install it
+CM-SUP-005	shopify	shows	SH-C-192/responsible/SH-S-0058	use of Third Party Services is between the merchant and the Third Party Provider
+CM-SUP-005	shopify	shows	SH-C-192/boundary/SH-S-7284	Third Party Services, apps of the App Store included, may access the store's data
+CM-SUP-005	salla	core	SA-C-179/where/SA-S-1861	its own link Self-service system, /tickets
+CM-SUP-005	salla	core	SA-C-179/where/SA-S-3559	dashboard app @salla.sa/ui-merchant-ticketing-system, path /tickets
+CM-SUP-005	salla	core	SA-C-179/decides/SA-S-2073	plan line نظام التذاكر, plan سلة بلس
+CM-SUP-005	salla	core	SA-C-179/decides/SA-S-2095	plan line نظام التذاكر: the customer raises a ticket or follows an order's status
+CM-SUP-006	shopify	extension-point	SH-C-192/where/SH-S-2723	App Store category FAQ apps
+CM-SUP-007	shopify	extension-point	SH-I-1962	App Store category Survey apps
+CM-SUP-008	salla	core	SA-C-179/where/SA-S-1865	its own link Complaints, /manage/complaints
+CM-SUP-008	salla	core	SA-C-179/where/SA-S-3533	dashboard app @salla.sa/ui-merchant-manage, its path manage/complaints
+CM-SUP-008	salla	core	SA-C-179/decides/SA-S-2249	staff permission complaint_management
+CM-SUP-008	salla	shows	SA-C-179/decides/SA-S-2466	partner permission complaint_management, إدارة الشكاوى
+CM-SUP-008	salla	shows	SA-C-179/boundary/SA-S-5089	an email to the merchant when a new complaint is made on the store
+CM-ANL-001	shopify	core	SH-C-145/where/SH-S-5030	admin route analytics
+CM-ANL-001	shopify	core	SH-C-145/where/SH-S-1531	admin navigation item Analytics
+CM-ANL-001	shopify	core	SH-I-0985	staff permission group Analytics
+CM-ANL-001	shopify	core	SH-C-145/decides/SH-S-7014	plan line 200+ real-time reports, plus custom analytics, Included on every plan
+CM-ANL-001	shopify	core	SH-C-145/boundary/SH-S-0940	Admin API resource Analytics, scope read_analytics
+CM-ANL-001	shopify	core	SH-C-145/boundary/SH-S-5902	object AnalyticsAnnotation requires read_analytics_annotations
+CM-ANL-001	shopify	core	SH-C-145/boundary/SH-S-5909	mutation analyticsAnnotationCreate requires write_analytics_annotations
+CM-ANL-001	shopify	core	SH-C-145/boundary/SH-S-5908	write_analytics_annotations to add an annotation to analytics charts
+CM-ANL-001	shopify	core	SH-C-145/boundary/SH-S-5911	mutation analyticsTargetCreate requires write_reports
+CM-ANL-001	shopify	extension-point	SH-I-1946	App Store category Analytics apps
+CM-ANL-001	shopify	shows	SH-I-1979	product Analytics on shopify.com
+CM-ANL-001	salla	core	SA-C-220/where/SA-S-3532	dashboard app @salla.sa/ui-merchant-reports, paths /reports/analysis, smart-analysis, settings
+CM-ANL-001	salla	core	SA-C-220/decides/SA-S-2102	plan line إحصائيات وتقارير أداء المتجر: reports on sales, visits and top products, plan سلة بلس
+CM-ANL-001	salla	core	SA-C-220/decides/SA-S-2044	plan line تحليلات الأرباح, plan سلة بلس
+CM-ANL-001	salla	core	SA-C-220/decides/SA-S-2046	plan line تحليلات المبيعات, plan سلة بلس
+CM-ANL-001	salla	core	SA-C-220/decides/SA-S-2047	plan line تحليلات العملاء, plan سلة بلس
+CM-ANL-001	salla	core	SA-C-220/decides/SA-S-2048	plan line تحليلات الزيارات, plan سلة بلس
+CM-ANL-001	salla	extension-point	SA-C-220/where/SA-S-1224	app category Analytics, التحليل و الاحصاء
+CM-ANL-001	salla	extension-point	SA-C-220/where/SA-S-1197	Analytics, of type app, in its extension-points list
+CM-ANL-002	shopify	core	SH-C-145/decides/SH-S-5032	route analytics:reports gated by the REPORTS permission
+CM-ANL-002	shopify	core	SH-I-0768	admin navigation item Reports
+CM-ANL-002	shopify	core	SH-I-0986	staff permission Analytics > Reports
+CM-ANL-002	shopify	shows	SH-C-145/decides/SH-S-5033	report route promise_summary gated by a beta
+CM-ANL-002	salla	core	SA-C-220/where/SA-S-1857	its own link Reports, /reports
+CM-ANL-002	salla	core	SA-C-220/where/SA-S-3568	dashboard app reports_mfe, report paths sales, products, customers, payments-shipments, loyalty-program, marketing, salla-point
+CM-ANL-002	salla	core	SA-C-220/where/SA-S-1740	settings route orders/order-statuses-in-reports
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2050	plan line تقارير المبيعات, plan سلة بلس
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2051	plan line تقارير المنتجات, plan سلة بلس
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2052	plan line تقارير نظام الولاء, plan سلة بلس
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2053	plan line تخصيص حالات الطلبات المشمولة في التقارير, plan سلة بلس
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2045	plan line تقرير تكاليف وأرباح الشحن, plan سلة بلس
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-3304	released flag reports
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-3306	released flag reports-download-async
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-3281	released flag order-report-statuses, plans plus, pro, special
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-3171	released flag customer-wishlists-reports, plans plus, pro, special
+CM-ANL-002	salla	shows	SA-C-220/decides/SA-S-3305	flag app-performance-reports, not released
+CM-ANL-002	salla	shows	SA-C-220/decides/SA-S-3523	flag report-visit with an app-store link; maker not stated
+CM-ANL-002	salla	shows	SA-C-220/decides/SA-S-2551	partner permission reports_browse, الاطلاع على التقارير
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2315	staff permission report_sales
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2316	staff permission report_orders
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2317	staff permission report_customers
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2318	staff permission report_customer_cities
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2319	staff permission report_customer_satisfaction
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2320	staff permission report_visits
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2321	staff permission report_repeat_sell
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2322	staff permission report_average_cart
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2323	staff permission report_most_product_sell
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2324	staff permission report_most_product_search
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2325	staff permission report_most_customer_paid
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2326	staff permission report_most_customer_request
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2327	staff permission report_restore
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2328	staff permission report_most_day_request
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2329	staff permission report_most_hour_request
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2330	staff permission report_source_visit
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2331	staff permission report_device
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2332	staff permission report_sold_out_codes
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2333	staff permission report_loyalty_system
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2334	staff permission reports_browse
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2335	staff permission report_products
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2336	staff permission report_shipping
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2337	staff permission report_payments
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2338	staff permission report_selling_channels
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2339	staff permission report_customers_sales
+CM-ANL-002	salla	core	SA-C-220/decides/SA-S-2340	staff permission report_customers_wishlist
+CM-ANL-003	shopify	core	SH-C-145/decides/SH-S-5023	route analytics:overview gated by the OVERVIEWS permission
+CM-ANL-003	shopify	core	SH-I-0987	staff permission Analytics > Overviews
+CM-ANL-003	shopify	core	SH-I-0867	staff permission Home > Home
+CM-ANL-003	shopify	core	SH-I-1039	staff permission DASHBOARD
+CM-ANL-003	salla	core	SA-C-220/where/SA-S-1855	its own link Store performance, /reports/performance
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2043	plan line ملخص أداء المتجر, plan سلة بلس
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2049	plan line أداء المتجر, plan سلة بلس
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2245	staff permission dashboard_summery_month, group الرئيسية
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2246	staff permission dashboard_summery_requests
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2247	staff permission dashboard_show_alerts
+CM-ANL-003	salla	core	SA-C-220/decides/SA-S-2248	staff permission dashboard_show_products_out
+CM-ANL-003	salla	shows	SA-C-220/decides/SA-S-2462	partner permission dashboard_summery_month, ملخص الشهر
+CM-ANL-004	shopify	core	SH-C-145/decides/SH-S-5031	route analytics:live gated by the store entitlement storefront
+CM-ANL-004	shopify	core	SH-I-0769	admin navigation item Live View
+CM-ANL-004	shopify	shows	SH-C-145/decides/SH-S-5364	entitlement storefront enabled in the captured stores
+CM-ANL-005	salla	core	SA-C-220/where/SA-S-1856	its own link Smart analytics, /reports/smart-analysis
+CM-ANL-006	shopify	core	SH-C-145/where/SH-S-0810	its developer docs' API group ShopifyQL for analytics
+CM-ANL-006	shopify	core	SH-C-145/boundary/SH-S-5905	request read_reports so that your app can read analytics and reporting data
+CM-ANL-006	shopify	core	SH-C-145/boundary/SH-S-5906	shopifyqlQuery requires read_reports and Level 2 access to protected customer data
+CM-ANL-006	shopify	core	SH-C-145/boundary/SH-S-5907	shopifyqlQuery requires read_reports
+CM-ANL-006	shopify	core	SH-C-145/boundary/SH-S-5904	read_reports with Level 2 access to customer data
+CM-ANL-006	shopify	core	SH-C-145/boundary/SH-S-5903	read_reports required
+CM-ANL-006	salla	extension-point	SA-C-220/boundary/SA-S-5146	Report Creator lets developers build custom analytical reports shown on the store dashboard
+CM-ANL-006	salla	extension-point	SA-C-207/where/SA-S-1092	API folder Report Builder
+CM-ANL-006	salla	extension-point	SA-C-207/boundary/SA-S-1093	API folder Report Types
+CM-ANL-006	salla	extension-point	SA-C-207/boundary/SA-S-1094	API folder APIs, under Report Builder
+CM-MKT-009	salla	shows	SA-C-092/reason/SA-S-5148	Cloud Mode delivers events server to server, without client-side scripts
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1339	event Product Added, a customer adds a product to the cart
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1348	event Products Searched
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1356	event Signed In
+CM-MKT-009	salla	shows	SA-C-092/boundary/SA-S-1382	event Promotion Viewed

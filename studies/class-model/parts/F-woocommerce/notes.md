@@ -252,3 +252,8 @@ evidence: SH-S-0738 (apps made by Shopify) for CM-APP-011.
 2. **A mapping part's rulings on capabilities it adds.** The nested rulings on CM-APP-011 rest on Shopify's and Salla's
    cells in its ancestors, because the back-fill hasn't written their cells in it. They are true of the model now and
    may change after the back-fill, which the brief doesn't ask to revisit rulings.
+
+
+## The coordinator's corrections (30 October)
+
+- **U-052, (WC-C-050, SH-C-156):** `joined:CM-APP-011`, since the back-fill cites SH-S-0738 there. The pairs with SH-C-157 and SA-C-194 stay `nested`.
