@@ -182,7 +182,10 @@ def held_items(platform):
         if os.path.exists(os.path.join(HELD, "selection.tsv")):
             sel = {r["structure"]: r for r in rows(os.path.join(HELD, "selection.tsv")) if r["platform"] == platform}
         scope = {}      # an entry's scope is what its placement states: a plan, a country, a store
+        listed = {r["batch"] for r in rows(os.path.join(HELD, "batches.tsv"))} if os.path.exists(os.path.join(HELD, "batches.tsv")) else set()
         for pp in sorted(glob.glob(os.path.join(HELD, platform, "placements-*.tsv"))):
+            if re.search(r"placements-(.+)\.tsv$", pp).group(1) not in listed:
+                continue            # a calibration's batch, which never reaches the model
             for r in rows(pp):
                 for e in [x.strip() for x in r["entry_id"].split(";") if x.strip()]:
                     if r.get("scope") and e not in scope:
