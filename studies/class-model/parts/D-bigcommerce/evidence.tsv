@@ -1,0 +1,106 @@
+cap_id	platform	supports	key	why
+CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0197	its own Customers V3 API: create and manage customers
+CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0198	its own Storefront Customers API on hosted storefronts
+CM-CUS-001	bigcommerce	core	BC-I-0039	its own API group Customers V2 (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0010	its own API group Storefront Form Fields (C2)
+CM-CUS-001	bigcommerce	core	BC-C-032/boundary/BC-S-0199	its scope store_v2_customers: view and modify customer information
+CM-CUS-001	bigcommerce	core	BC-C-032/boundary/BC-S-0200	webhook topic store/customer/created
+CM-CUS-001	bigcommerce	core	BC-I-0143	webhook topic store/customer/updated (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0144	webhook topic store/customer/deleted (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0285	webhook topic for a channel's customer settings (C2)
+CM-CUS-001	bigcommerce	extension-point	BC-I-0483	App Marketplace category CRM & Customer Service
+CM-CUS-002	bigcommerce	core	BC-C-034/decides/BC-S-0209	plan line Customer groups and segmentation
+CM-CUS-002	bigcommerce	core	BC-C-034/where/BC-S-0207	its own Customer Segmentation API: group customers into segments
+CM-CUS-002	bigcommerce	core	BC-C-034/where/BC-S-0208	manual segments shown in the Promotions standard editor's Targeting section
+CM-CUS-002	bigcommerce	core	BC-C-034/decides/BC-S-0210	the Segmentation API is available to enterprise customers
+CM-CUS-002	bigcommerce	core	BC-C-034/boundary/BC-S-0211	the endpoints use the Customers OAuth scope
+CM-CUS-002	bigcommerce	core	BC-I-0532	product line Customer groups (C2)
+CM-CUS-007	bigcommerce	core	BC-C-035/where/BC-S-0212	its own Subscribers API: newsletter subscriber records
+CM-CUS-007	bigcommerce	core	BC-C-035/boundary/BC-S-0213	webhook topic store/subscriber/created
+CM-CUS-007	bigcommerce	core	BC-I-0217	webhook topic store/subscriber/updated (C2)
+CM-CUS-007	bigcommerce	core	BC-I-0218	webhook topic store/subscriber/deleted (C2)
+CM-CUS-007	bigcommerce	core	BC-I-0009	its own API group Storefront Subscriptions (C2)
+CM-CUS-007	bigcommerce	core	BC-C-032/where/BC-S-0197	Customers V3 manages customers' consent settings
+CM-CUS-008	bigcommerce	core	BC-C-032/where/BC-S-0197	Customers V3 manages customers' addresses
+CM-CUS-008	bigcommerce	core	BC-I-0146	webhook topic store/customer/address/created (C2)
+CM-CUS-008	bigcommerce	core	BC-I-0147	webhook topic store/customer/address/updated (C2)
+CM-CUS-008	bigcommerce	core	BC-I-0148	webhook topic store/customer/address/deleted (C2)
+CM-CUS-010	bigcommerce	core	BC-C-033/where/BC-S-0202	its own Current Customer API identifies signed-in customers
+CM-CUS-010	bigcommerce	core	BC-C-033/boundary/BC-S-0204	webhook topic on a customer's login access per channel
+CM-CUS-011	bigcommerce	core	BC-C-033/where/BC-S-0201	its own Customer Login API: single sign-on for shoppers
+CM-CUS-011	bigcommerce	core	BC-C-033/boundary/BC-S-0203	its scope store_v2_customers_login: sign customers in
+CM-CUS-011	bigcommerce	extension-point	BC-C-033/boundary/BC-S-0205	your application generates the JWT and sends the login token
+CM-CUS-011	bigcommerce	shows	BC-C-033/reason/BC-S-0206	private tokens recommended for server-side sign-in
+CM-B2B-001	bigcommerce	own-service	BC-C-065/where/BC-S-0354	B2B Edition, BigCommerce's add-on for business-to-business commerce
+CM-B2B-001	bigcommerce	core	BC-C-065/where/BC-S-0355	its own B2B Edition Management APIs for managing B2B storefronts
+CM-B2B-001	bigcommerce	core	BC-C-065/decides/BC-S-0357	the APIs are available to stores with B2B Edition enabled
+CM-B2B-001	bigcommerce	core	BC-C-065/boundary/BC-S-0196	its scope store_b2b_manage for B2B Edition data
+CM-B2B-001	bigcommerce	core	BC-I-0095	B2B Edition's Orders management API (C2)
+CM-B2B-001	bigcommerce	core	BC-I-0503	product line B2B Edition (C2)
+CM-B2B-001	bigcommerce	extension-point	BC-I-0479	App Marketplace category B2B/Wholesale
+CM-B2B-001	bigcommerce	shows	BC-C-065/where/BC-S-0356	B2B Edition extends the native B2B capabilities of BigCommerce
+CM-B2B-002	bigcommerce	core	BC-C-065/boundary/BC-S-0358	webhook store/company/created: company accounts from storefront, control panel or API
+CM-B2B-002	bigcommerce	core	BC-I-0093	B2B Edition's Company Management API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0101	B2B Edition's Users API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0089	B2B Edition's Addresses API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0081	B2B storefront API Companies and Users (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0303	webhook topic store/company/user/created (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0307	webhook topic store/company/address/created (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0508	product line Company account hierarchy (C2)
+CM-B2B-003	bigcommerce	core	BC-C-007/where/BC-S-0048	its own Price Lists API: pricing assigned to customer groups
+CM-B2B-003	bigcommerce	core	BC-C-007/decides/BC-S-0049	plan line Price Lists: custom pricing for B2B customers
+CM-B2B-003	bigcommerce	core	BC-C-007/decides/BC-S-0050	price list assigned to a channel or customer group
+CM-B2B-003	bigcommerce	core	BC-C-007/boundary/BC-S-0051	webhook topic store/priceList/created
+CM-B2B-003	bigcommerce	core	BC-C-007/boundary/BC-S-0052	the Products OAuth scope is required
+CM-B2B-003	bigcommerce	core	BC-I-0505	product line Customer-specific pricing (C2)
+CM-B2B-003	bigcommerce	core	BC-I-0506	product line Customer-specific catalogs (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0097	B2B Edition's Quotes management API (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0083	B2B storefront API Quotes, path request-for-quote (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0314	webhook topic store/quote/created (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0316	webhook topic store/quote/statusUpdated (C2)
+CM-B2B-004	bigcommerce	core	BC-C-065/boundary/BC-S-0196	scope store_b2b_manage names quotes
+CM-B2B-004	bigcommerce	core	BC-I-0509	product line Quoting & CPQ (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0099	B2B Edition's Shopping List management API (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0085	B2B storefront API Shopping List (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0511	product line Requisition lists & reordering (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0098	B2B Edition's Sales Staff API (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0100	B2B Edition's Super Admin management API (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0084	B2B storefront API Super Admin, path sales-rep (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0310	webhook topic store/superadmin/created (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0306	webhook topic store/company/superadmin/assignmentUpdated (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0507	product line Sales rep ordering (C2)
+CM-B2B-007	bigcommerce	core	BC-I-0504	product line Buyer portal (C2)
+CM-B2B-007	bigcommerce	core	BC-I-0078	B2B Edition's Storefront API group (C2)
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0055	its own Promotions API: a promotion is a condition a customer satisfies
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0056	its own Promotion Settings API: how promotions apply
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel Marketing > Promotions
+CM-MKT-001	bigcommerce	core	BC-C-009/boundary/BC-S-0060	scope store_v2_marketing for promotions
+CM-MKT-001	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards: 70 discount options
+CM-MKT-001	bigcommerce	core	BC-C-009/decides/BC-S-0058	plan line Advanced promotions management
+CM-MKT-001	bigcommerce	shows	BC-C-009/decides/BC-S-0059	recommended limit on active promotions and rules
+CM-MKT-001	bigcommerce	shows	BC-C-009/reason/BC-S-0061	the limit prevents a slowdown of checkout
+CM-MKT-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons
+CM-MKT-002	bigcommerce	core	BC-C-010/boundary/BC-S-0064	its scope store_v2_marketing
+CM-MKT-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
+CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel list Marketing > Promotions > Automatic
+CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0055	a promotion's condition: cart value or an item added
+CM-MKT-005	bigcommerce	extension-point	BC-I-0487	App Marketplace category Marketing
+CM-MKT-009	bigcommerce	core	BC-C-062/boundary/BC-S-0341	enable BODL in the control panel or by its own GraphQL Admin API
+CM-MKT-009	bigcommerce	extension-point	BC-C-062/decides/BC-S-0340	your script subscribes to BODL events once enabled
+CM-MKT-010	bigcommerce	core	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface connects the store to ad channels
+CM-MKT-022	bigcommerce	core	BC-C-015/decides/BC-S-0090	plan line Abandoned cart saver sends shoppers emails
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0089	setting under Settings > General > Miscellaneous
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0088	its own Abandoned Cart Emails V3 API
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0087	the abandoned cart token from the email link
+CM-MKT-022	bigcommerce	core	BC-I-0501	product line Abandoned cart recovery (C2)
+CM-MKT-023	bigcommerce	core	BC-C-013/where/BC-S-0075	its own API group Beta Product Recommendations
+CM-MKT-023	bigcommerce	core	BC-C-013/where/BC-S-0076	BigCommerce integrates with Google Vertex AI to generate recommendations
+CM-MKT-023	bigcommerce	core	BC-C-013/boundary/BC-S-0080	recommendations queried through its GraphQL Storefront API
+CM-MKT-023	bigcommerce	core	BC-C-013/decides/BC-S-0078	only on BigCommerce Enterprise plans
+CM-MKT-023	bigcommerce	shows	BC-C-013/decides/BC-S-0077	closed beta, not available by default
+CM-MKT-023	bigcommerce	shows	BC-C-013/responsible/BC-S-0079	merchant responsible for Google's fees
+CM-MKT-023	bigcommerce	shows	BC-C-013/reason/BC-S-0081	models trained on BigCommerce Analytics data
+CM-LOY-002	bigcommerce	core	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates
+CM-LOY-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
+CM-LOY-005	bigcommerce	core	BC-C-036/where/BC-S-0214	its own Wishlist API
+CM-LOY-005	bigcommerce	core	BC-I-0066	API group Wishlist (C2)
