@@ -96,7 +96,8 @@ def semi(s):
 
 def git(*args):
     try:
-        return subprocess.run(["git", "-C", ROOT, *args], capture_output=True, text=True, timeout=30).stdout.strip()
+        return subprocess.run(["git", "--no-optional-locks", "-C", ROOT, *args], capture_output=True, text=True,
+                              timeout=30).stdout.strip()   # reads only: never takes the index lock from a commit
     except Exception:
         return ""
 
