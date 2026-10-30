@@ -34,7 +34,7 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
 2. **`who_answers`,** every one that applies, `;`-separated:
    - `model`: the model's capabilities and cells;
    - `subject:S-NN`: a subject of `subjects.tsv`, where the row asks who or what fills something in a market; `subject:none` where a market's fact is covered by no subject, with the subject it would need named in `what_would_settle_it`, for the coordinator to take to Stage 3's list;
-   - `founder`: a decision on the founder's list: markets, their order and timing, and which merchants first; plans and prices; commercial agreements and partners; the company, its legal structure and licences; spending; whether Sharrwah's own company runs a service in the merchant's business, where and when (`founder-decisions.tsv`, 29 October, "Intent (standing)");
+   - `founder`: a decision on the founder's list: markets, their order and timing, and which merchants first; plans and prices; commercial agreements and partners; the company, its legal structure and licences; spending; whether Sharrwah's own company runs a service in the merchant's business, where and when (`founder-decisions.tsv`, 29 October, "Intent (standing)"); where a decision in force already answers part of a covered row, `founder` is among its answerers, the decision is in `basis` as `founder-decisions <date> <gate>`, and `what_would_settle_it` says `decided`;
    - `engineering:build` or `engineering:detail`: Sharrwah's own design, an architecture decision (`build`) or a build detail, decided as the area is built (`detail`). Where an engineering ruling already in force answers part of the row (a subject's register row that is engineering's and wasn't vetoed), name the row in `basis` as `S-NN <row id>` and say `ruled` in `what_would_settle_it`;
    - `outside`: a platform, partner, regulator or lawyer, reached through the founder;
    - `plan`: the method itself, which `PLAN.md` or a decision on it answers.
@@ -74,6 +74,7 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
 
 - `python3 -I method/q3.py slice --rows <set:id,...>`, or `--area <AREA> --set km|pay --from N --to M`: each area's capabilities once, with each one's domain, kind, count and placements, then each row with the capabilities elsewhere that share its rarer words. A lead list, not an answer.
 - `python3 -I method/q3.py where <key or statement id> ...`: which cells cite a statement, and where its concern lands.
+- A row's thing may sit outside its own area (a payment row's answer in orders, checkout or returns): run `class_slice.py caps --terms "<its words>"`, the terms `;`-separated, before you settle on its area's capabilities.
 - `python3 -I method/class_slice.py model --domain <D> --areas <AREA>` for an area's cells and their placements; `python3 -I method/land_points.py cell <cap_id> <platform>` for one cell whole, its reading and every statement it cites; `class_slice.py key <key or statement id>` for one statement; `search` and `outscope` for a candidate miss.
 - Write your batch's own file, `studies/class-model/q3/check-<batch>.tsv`, with its header, a few rows at a time; don't print it back. Other batches write their own.
 

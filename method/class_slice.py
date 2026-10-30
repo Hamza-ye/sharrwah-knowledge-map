@@ -279,6 +279,8 @@ def cmd_key(a):
 
 
 def cmd_search(a):
+    if "," in a.terms and ";" not in a.terms:
+        print("# note: terms are ;-separated; a comma is part of one term", file=sys.stderr)
     terms = [fold(t) for t in a.terms.split(";") if t.strip()]
     n = 0
     for r in items(a.platform):
@@ -314,6 +316,8 @@ def cmd_gaps(a):
 
 
 def cmd_outscope(a):
+    if "," in a.terms and ";" not in a.terms:
+        print("# note: terms are ;-separated; a comma is part of one term", file=sys.stderr)
     terms = [fold(t) for t in a.terms.split(";") if t.strip()]
     for r in rows(os.path.join(CMAP, "map", "out-of-scope.tsv")):
         if r.get("platform") != a.platform:
@@ -450,6 +454,8 @@ def cmd_model(a):
 
 
 def cmd_caps(a):
+    if "," in a.terms and ";" not in a.terms:
+        print("# note: terms are ;-separated; a comma is part of one term", file=sys.stderr)
     """Capabilities of every domain whose name, note or cells' terms hold one of the terms: before adding a capability,
     check that no other domain holds the same thing."""
     want = [fold(t.strip()) for t in a.terms.split(";") if t.strip()]

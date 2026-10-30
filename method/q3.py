@@ -272,9 +272,12 @@ def cmd_check(a):
             if res == "candidate miss: held" or rest == "candidate miss: held":
                 if not stmt:
                     problems.append(f"{w}: a held miss names the statements that hold it, by key")
-                for b in stmt:
-                    if sid(b) in cited:
-                        problems.append(f"{w}: {b} is cited by a cell already (q3.py where): the row is covered or partly, not a miss")
+                if res == "candidate miss: held":
+                    for b in stmt:
+                        if sid(b) in cited:
+                            problems.append(f"{w}: {b} is cited by a cell already (q3.py where): the row is covered or partly, not a miss")
+                elif stmt and all(sid(b) in cited for b in stmt):
+                    problems.append(f"{w}: a partly row's held rest names at least one statement no cell cites (q3.py where)")
             if r["when"] not in WHEN:
                 problems.append(f"{w}: when must be one of {', '.join(sorted(WHEN))}")
             ruled = when_of(who)
