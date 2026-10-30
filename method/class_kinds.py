@@ -1,0 +1,79 @@
+"""Compute each capability's count and kind from the parts' cells, by the plan's one rule (PLAN.md, Stage 4A, "The kind
+and the count"; `studies/class-model/briefs/B-extent.md`).
+
+Usage: python3 -I method/class_kinds.py [--domain D] [--out PATH]
+
+Reads every part folder in studies/class-model/parts/ (or one domain's), with the `derived.tsv` that
+`method/check_class_part.py` writes: run the checker on each part first. For each capability:
+- for each platform, its cell's `held` and the placements its evidence supports (`placed_as`), or `no cell`;
+- the count: how many platforms hold statements and place it in their core or as their own service;
+- the kind: `class` where the count is at least one; `slot` where every platform whose statements show it places it
+  only as an extension point or outside, with at least one such placement; otherwise `open`, for the dry run's review
+  to rule on (a count of 0 with some platform `not-stated`).
+A platform with `none-held`, or no cell, is never counted as lacking the capability.
+Prints a summary per domain and kind, and writes the table (default: stdout as TSV with --out -).
+"""
+import argparse, csv, os, sys
+
+csv.field_size_limit(10**9)
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from class_slice import MODEL, PLATFORMS, PART_ORDER, rows
+
+OWN = {"core", "own-service"}
+THIRD = {"extension-point", "outside"}
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--domain")
+    ap.add_argument("--out")
+    a = ap.parse_args()
+    base = os.path.join(MODEL, "parts")
+    caps, cells = {}, {}
+    for d in sorted(os.listdir(base)) if os.path.isdir(base) else []:
+        dom, _, kind = d.partition("-")
+        if (a.domain and dom != a.domain) or kind not in PART_ORDER:
+            continue
+        for r in rows(os.path.join(base, d, "capabilities.tsv")):
+            caps[r["cap_id"]] = r | {"domain": dom}
+        if not os.path.exists(os.path.join(base, d, "derived.tsv")):
+            sys.exit(f"{d}: no derived.tsv; run method/check_class_part.py on it first")
+        for r in rows(os.path.join(base, d, "derived.tsv")):
+            cells[r["cap_id"], r["platform"]] = r
+    out = []
+    for cid in sorted(caps):
+        per, count, shows, third_only = {}, 0, 0, True
+        for p in PLATFORMS:
+            c = cells.get((cid, p))
+            if not c:
+                per[p] = "no cell"
+                continue
+            placed = set(x for x in c["placed_as"].split(";") if x)
+            per[p] = f"{c['held']}:{';'.join(sorted(placed))}" if c["held"] == "statements" else "none-held"
+            if c["held"] == "statements":
+                shows += 1
+                if placed & OWN:
+                    count += 1
+                if not placed or not placed <= THIRD:
+                    third_only = False
+        kind = "class" if count >= 1 else ("slot" if shows and third_only else "open")
+        out.append([cid, caps[cid]["domain"], caps[cid]["area"], caps[cid]["capability"], caps[cid]["parent"], str(count), kind]
+                   + [per[p] for p in PLATFORMS])
+    head = ["cap_id", "domain", "area", "capability", "parent", "count", "kind"] + list(PLATFORMS)
+    summary = {}
+    for r in out:
+        summary.setdefault(r[1], {}).setdefault(r[6], 0)
+        summary[r[1]][r[6]] += 1
+    for dom in sorted(summary):
+        print(f"domain {dom}: " + ", ".join(f"{k} {n}" for k, n in sorted(summary[dom].items())), file=sys.stderr)
+    if a.out:
+        f = sys.stdout if a.out == "-" else open(a.out, "w", encoding="utf-8", newline="")
+        f.write("\t".join(head) + "\n")
+        for r in out:
+            f.write("\t".join(v.replace("\t", " ") for v in r) + "\n")
+        if f is not sys.stdout:
+            f.close()
+
+
+if __name__ == "__main__":
+    main()
