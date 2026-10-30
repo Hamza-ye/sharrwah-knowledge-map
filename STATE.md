@@ -138,8 +138,15 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
   - **rulings** on Q1's unclear candidates.
   Two scripts go with it: `method/class_slice.py`, which prints what a part reads, and `method/check_class_part.py`, which checks a part and derives each cell's places, scopes and gaps. The same inspector is re-inspecting the rewrite before anything runs.
 - **The re-inspection** (same file, "Re-inspection (30 October)"): 17 of the 19 findings resolved, 16 new (R1 to R16). The coordinator fixed the seven it set before the dry run, and four of those it set before the full run (R3, R6, R7, R13), and tested each fix on the inspector's own fixtures. Open before the full run: R10, splitting domain C's anchor by area.
-- **Running now:** the scope part (every concern to one domain, `studies/class-model/scope.tsv`), and the inspection of the dry run's review brief (`studies/class-model/briefs/R-dry-run.md`). `method/class_kinds.py` computes each capability's count and kind from the parts' cells.
-- **Cost so far:** the inspection 19.8 million agent tokens and the re-inspection 21.7 million, so 41.5 million of the extent's 250 million.
+- **The scope part is done and checked** (`studies/class-model/scope.tsv`, with its notes): A 110, B 40, C 218, D 98, E 98, F 72, G 16 concerns; one match split by intent (M-055). Domain C will need its anchor split by area: its 218 concerns hold payments' 112.
+- **The review brief's inspection** (`studies/class-model/inspection-R.md`): 15 findings, 10 must fix, all applied. On the way:
+  - Arabic searches read ة as ه and ى as ي, and take singular and broken plural;
+  - `own-service` needs a statement naming the maker, since a brand in a product's name doesn't;
+  - the checker flags joins not made;
+  - `class_slice.py uncited` lists what no cell cites.
+- **The architecture plan's draft** (`architecture/plan.md`), with its first part to confirm with the dry run's review.
+- **Running now:** `B-anchor`, the dry run's first part. `method/class_kinds.py` computes each capability's count and kind from the parts' cells.
+- **Cost so far:** 54.4 million agent tokens of the extent's 250 million: the brief's inspection 19.8 and re-inspection 21.7, the scope part 3.8, the review brief's inspection 9.1. The coordinating session's own: about 107 million by 01:00 UTC.
 
 **Next:**
 1. **A fresh coordinating session** runs Stage 4A (step 1.1 done; 1.2 under way). It reads observed-sh, observed-sa and other-product-class from their own repositories, and runs:
