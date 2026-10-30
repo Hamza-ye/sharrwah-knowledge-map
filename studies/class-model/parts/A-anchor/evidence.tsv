@@ -288,3 +288,41 @@ CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0278	a VAT number may exempt the S
 CM-PLN-007	shopify	shows	SH-C-017/responsible/SH-S-0235	the merchant is responsible for taxes on its subscription
 CM-PLN-007	salla	shows	SA-C-113/decides/SA-S-0105	VAT (15%) applied to the total of Salla's fees, in the e-payments summary
 CM-PLN-007	shopify	shows	SH-C-016/responsible/SH-S-0008	Shopify Inc. may remit taxes in some jurisdictions as billing agent
+CM-ONB-001	shopify	core	SH-C-006/where/SH-S-7174	combobox "I'm located in:" on Shopify's own sign-up page
+CM-ONB-001	shopify	shows	SH-I-1746	the sign-up's Country/region field, 233 options
+CM-ONB-001	shopify	shows	SH-C-006/responsible/SH-S-0038	the merchant keeps an accurate location in the admin and updates it on moving
+CM-ONB-001	shopify	shows	SH-C-006/decides/SH-S-0304	those within unsupported countries and regions may not create an account
+CM-ONB-001	salla	core	SA-C-167/decides/SA-S-0141	the store's country chosen at registration decides its government documents
+CM-ONB-001	salla	core	SA-C-006/decides/SA-S-0141	the same sentence, in the article on creating a store in the UAE
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5169	Shopify's own admin route store-unavailable
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-7084	route store-unavailable in the admin's Foundation section
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5068	route inactive-account (access_account)
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5069	inactive-account:list gated by billing permissions
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5070	inactive-account checkout, reactivate and reopen routes gated by billing permissions
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5079	route pending-termination (account_review)
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5080	pending-termination:payments gated by SHOPIFY_PAYMENTS
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5081	pending-termination payouts gated by Shopify Payments permissions
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5085	route reactivation
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0658	Shopify places a store in restricted access when it detects activity
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0659	restricted access may come without prior communication
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0660	during restricted access the storefront is unavailable and admin access limited
+CM-ONB-002	shopify	core	SH-C-014/boundary/SH-S-0661	the appeal form for contesting restricted access
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0232	the merchant cancels the account by contacting Shopify Support
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0074	Shopify may suspend or terminate the Account at any time
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0035	unpaid fees after 28 days may suspend access to the Account
+CM-ONB-002	shopify	shows	SH-C-014/responsible/SH-S-0233	the merchant stays responsible for obligations from before termination
+CM-ONB-002	shopify	shows	SH-I-2350	help section on pausing or deactivating the store
+CM-ONB-002	salla	shows	SA-C-232/decides/SA-S-0115	correct the violation within 24 hours to avoid the store's suspension
+CM-ONB-003	shopify	core	SH-C-155/decides/SH-S-7015	plan table row 24/7 support: Live chat to Priority support by plan
+CM-ONB-003	shopify	core	SH-C-155/decides/SH-S-7016	plan table row Free Shopify Academy courses, included on every plan
+CM-ONB-003	shopify	core	SH-C-155/where/SH-S-2523	Shopify Community among the account's own destinations
+CM-ONB-003	shopify	shows	SH-I-1758	Shopify Learn among the account's destinations
+CM-ONB-003	shopify	shows	SH-I-1762	Need Help? among the account's destinations
+CM-ONB-003	salla	core	SA-C-014/where/SA-S-5007	Salla Help Center, help.salla.sa
+CM-ONB-003	salla	core	SA-C-014/where/SA-S-5006	account manager (مسؤول الحساب) in the dashboard's side menu, سبيشل plan
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-2194	سلة سبيشل plan line فريقنا معك في كل خطوة
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-2196	سلة سبيشل plan line مدير حساب مخصص
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3451	flag support-plan, released and enabled
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3403	flag intercom-complains, released and enabled
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3404	flag intercom-campaign-complains, released and enabled
+CM-STF-005	salla	core	SA-C-014/boundary/SA-S-5132	support's temporary access requests appear on /manage/support-access, granted only on approval
