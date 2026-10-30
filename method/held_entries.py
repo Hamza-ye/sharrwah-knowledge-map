@@ -714,12 +714,14 @@ def name_words(s):
 
 
 ID_FIELDS = {"path", "pagekey", "id", "parentid", "key", "route", "url", "href", "module", "slug", "gid", "handle"}
-PATH_FIELDS = {"path", "route"}
+PATH_FIELDS = {"path", "route", "key"}
 
 
 def values_of(text):
-    """An entry's values, without its field names, identifier fields or identifiers: what its own words say."""
+    """An entry's values, without its field names, identifier fields or identifiers: what its own words say. The plans an
+    entry is offered on (Zid's `available_in`, `package_restrictions`) are its scope, not its thing, and are left out."""
     keep = []
+    text = re.sub(r"(?:^|; )(?:available_in|package_restrictions): (?:\{[^}]*\}|\[[^\]]*\])", "", text)
     for part in text.split(";"):
         k, sep, v = part.partition(":")
         if sep and re.fullmatch(r"\s*[\w .-]{1,40}", k):
