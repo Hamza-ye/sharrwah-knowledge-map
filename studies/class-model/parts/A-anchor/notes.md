@@ -832,3 +832,187 @@ SA-S-0115, SH-S-0238), answered in their notes.
 - **CM-ACC-002's Shopify reading** names batch 6's two rows (SH-S-0207, SH-S-0211).
 - **SH-S-0672** is cited in G's CM-OPS-001, which also left it to A.
 - **For domain C:** SH-S-0097, Shopify's PCI responsibility under the Payments terms, is `core` in CM-TRU-018; C's parts cite it as `shows` unless a C cell rests on it.
+
+## Batch 7: TRU, Security, privacy, trust and audit (the last of three batches on it, and the part's last)
+
+Concerns: SA-C-010, SA-C-066, SA-C-171, SA-C-178, SA-C-180, SA-C-231, SA-C-232, SA-C-233. Result: 1 capability
+(CM-TRU-020), 8 landings (7 in existing capabilities, SA-C-178 in the new one), 2 cells (CM-TRU-020's), 10 evidence rows
+(4 in CM-TRU-020; 1 added to CM-TRU-009's Salla cell, 4 to CM-TRU-010's, 1 to batch 3's CM-PLN-001 Salla cell), 1 slot
+filler, 10 rulings. `caps` was searched for complaints and mediation (complaint, شكوى, شكاوى, الشكاوى, الشكاوي, dispute,
+نزاع, mediat, وسيط), for licences and partners, for banned customers and cash on delivery, for app suspension and the
+app store, and for store policies and the privacy page.
+
+### How I cut, and why
+
+- **SA-C-010 in CM-TRU-003,** by Q1's M-005: CM-TRU-003's Salla cell already cites its audit rows; its export log is
+  domain G's CM-MIG-004.
+- **SA-C-066 in CM-TRU-005,** by Q1's M-059: it is coarser than Shopify's SH-C-148 (CM-TRU-006) and SH-C-149 (CM-TRU-007),
+  so it lands in their parent, as batch 5 cut it. Every statement but SA-S-5022 was already cited. SA-S-5022 (the privacy
+  page as an information page) is domain E's CM-CNT-008, store policies: I leave it to E, uncited.
+- **SA-C-171 in CM-TRU-013,** by Q1's M-060. Both its statements were already cited there (batch 6).
+- **SA-C-178, Salla's complaints platform, in a new capability, CM-TRU-020:** the platform's handling of buyers'
+  complaints about stores, as mediator between buyer and merchant. The customer opens a complaint on Salla's complaints
+  system page, Salla's team reviews it first, Salla mediates, and only the customer closes it (SA-S-5085, SA-S-5088,
+  SA-S-5087, SA-S-5086). It isn't CM-TRU-012, merchants' complaints about the platform, and it isn't CM-TRU-009, the
+  platform's action on violations, because neither one mediates between a buyer and a merchant. My message says it isn't D's CM-SUP-008. `caps` does
+  find CM-SUP-008, "Customer complaints about the store", though. D-anchor built it from Salla's merchant-side
+  Complaints page (/manage/complaints, complaint_management), and **D-zid then landed Zid Assurance there**: Zid
+  handles complaints against stores (ZD-S-0998, ZD-S-0935, own-service). That is the same role as Salla's mediation. I followed the
+  message and kept SA-C-178 in A, which is where scope.tsv puts it, with D under its also. Under the brief's "One thing, one domain", the coordinator may
+  judge CM-TRU-020 the same thing as CM-SUP-008. In that case SA-C-178 lands as `moved:D` and CM-TRU-020's rows go.
+- **SA-C-180 in CM-PLN-001, `single`, strained.** Q1 holds only the page's URL (SA-S-2213), with its content "not
+  reached". As context, not cited: observed-sa at b0bd0b16 holds the page's text
+  (structures/salla/com-policies/policies-nd96/text.txt). It is the terms of Salla's Saudi National Day 96 campaign:
+  discounts on annual and two-year Plus and Pro subscriptions, with a five-orders guarantee for new subscribers. That is
+  a reading for the plans capability, not for TRU. The checker requires the cell to cite one of the concern's statements, so I
+  cite SA-S-2213 as `shows` in CM-PLN-001's Salla cell, and its `why` marks the reading. It supports no placement.
+- **SA-C-231 in CM-TRU-010,** on role with SH-C-175, as batch 5 foresaw (Q1's U-039). I added to the Salla cell:
+  - SA-S-5147 as `core`, a reading: Salla's own store data, which the merchant updates and which hold the Business
+    platform certificate and the customer-service channels that the e-commerce laws require (SA-S-0118, SA-S-0160). This
+    is the counterpart of Shopify's Disclosures metafield (SH-S-7257), which is `core` there;
+  - SA-S-0131, SA-S-0136 and SA-S-0142 as `shows`: store verification's regulatory reason, the UAE trade licences it
+    accepts, and the UAE legal entity it needs.
+
+  Its partners' licences belong to F's partner capabilities, so I don't cite them here.
+- **SA-C-232 in CM-TRU-009,** on role with SH-C-172 (Q1's U-036). I added SA-S-3533 to the Salla cell as `core`: the
+  dashboard app whose paths include manage/violation, as the other batches cite it for their paths. SA-C-232 holds no
+  sanctions term (Q1's U-035). I left these uncited:
+  - SA-S-0028, Salla's suspension of apps: this is F's CM-APP-002, the app store's review of apps;
+  - SA-S-0110, cash on delivery hidden for customers banned in other Salla stores: it bears on CM-TRU-008, whose cell is
+    batch 5's (see "For the coordinator").
+- **SA-C-233 in CM-TRU-014,** by its name: it holds no statement. Its fit is clean, because nothing of it is cited
+  elsewhere. The cell stays none-held on Q1's gap.
+
+### Joins on role
+
+- **CM-TRU-009:** SA-C-232's violations page against Shopify's AUP and its report (SA-S-0116, SA-S-0115; SH-S-7258,
+  SH-S-0166).
+- **CM-TRU-010:** SA-C-231's e-commerce certificate and customer-service information against Shopify's Your
+  Responsibilities (SA-S-0118, SA-S-0160; SH-S-0236, SH-S-0012).
+
+These are the joins batch 5 wrote for the Shopify side. Batch 7 adds the Salla landings.
+
+### Homonyms kept apart
+
+- **"Complaint"** (Q1's U-040) has four meanings, each in CM-TRU-020's note:
+  - CM-TRU-020: buyers' complaints about stores, with the platform as mediator;
+  - CM-TRU-012: merchants' complaints to the platform;
+  - D's CM-SUP-008: the store's complaints record that the merchant manages;
+  - C's quality gateway (SA-C-150): merchants' complaints about shipping companies.
+
+  Shopify's disputes are payment chargebacks.
+- **"Log"** (Q1's U-044): WooCommerce's store logs (WC-C-037) are WooCommerce's part's. The export log (SA-C-010's) is
+  G's CM-MIG-004. The two are not the same thing.
+- **"Policies":** Salla's /policies/nd96 is a campaign's terms (CM-PLN-001). Shopify's Policies (SH-C-034) is the
+  store's own policy pages (E's CM-CNT-008).
+
+### Strained fits
+
+- **SA-C-010** in CM-TRU-003: its export log rows are cited in G's CM-MIG-004.
+- **SA-C-066** in CM-TRU-005: SA-S-0168 is cited in CM-TRU-013, another tree, and SA-S-5023 in D's CM-CUS-010. SA-S-5022
+  is left to E's CM-CNT-008.
+- **SA-C-180** in CM-PLN-001: nothing cited shows it, because the page's text isn't held.
+- **SA-C-231** in CM-TRU-010:
+  - SA-S-0035 and SA-S-0036 are cited in F's CM-PTN-002, and SA-S-0142 in CM-ACC-004 (under SA-C-006's key);
+  - SA-S-5113 (the Mawthooq licence for influencer partners) and SA-S-5112 (the store-growth programme's partners'
+    licences) are left uncited for F's CM-PTN-002 and CM-PTN-006.
+- **SA-C-232** in CM-TRU-009:
+  - SA-S-0115 is also cited in CM-ONB-002, SA-S-0132 and SA-S-0138 in CM-TRU-002, and SA-S-0173 in F's CM-API-005;
+  - SA-S-3533 is cited in many capabilities, for their paths;
+  - SA-S-0028 and SA-S-0110 are left uncited (see above).
+- SA-C-171, SA-C-178 and SA-C-233 are clean.
+
+### Concerns of other domains read
+
+- None was cited.
+- I read D's CM-SUP-008 (SA-C-179's statements and its Zid cell) to rule on SA-C-178.
+- scope.tsv names D under SA-C-178's also, so D's CM-SUP-008 may cite SA-C-178's statements.
+
+### Rulings, and the matches
+
+**Rulings** (10 rows):
+
+| Candidate | Pair | Ruling | Basis |
+|---|---|---|---|
+| U-035 | SH-C-174 against SA-C-232 | apart | No capability cites both sides. |
+| U-036 | SH-C-172 against SA-C-232 | joined:CM-TRU-009 | |
+| U-036 | SH-C-014 against SA-C-232 | joined:CM-ONB-002 | Batch 4's SA-S-0115. |
+| U-039 | SH-C-175 against SA-C-231 | joined:CM-TRU-010 | |
+| U-040 | SH-C-172 against SA-C-178 | apart | SA-C-178 lands in CM-TRU-020, whose Shopify cell is none-held. |
+| U-040 | SH-C-177 against SA-C-178 | apart | Same. |
+| U-040 | SH-C-178 against SA-C-178 | apart | Same. |
+| U-042 | SH-C-181 against SA-C-233 | apart | SA-C-233 has no statement. |
+| U-044 | SH-C-012 against SA-C-010 | joined:CM-TRU-003 | |
+| U-012 | SH-C-034 against SA-C-066 | apart | scope.tsv gives SH-C-034 domain E, and no capability of A cites it. |
+
+**Matches:** SA-C-010 is written as match:M-005, SA-C-066 as M-059 and SA-C-171 as M-060. Each sits with its match's
+Shopify concerns, in the same capability or in its children.
+
+If CM-SUP-008 takes SA-C-178, U-040's rulings stay apart. CM-SUP-008's Shopify cell is none-held.
+
+### What the checker flagged
+
+The whole part: `python3 -I method/check_class_part.py studies/class-model/parts/A-anchor`.
+
+- **First run, 1 problem:** no CM-PLN-001 Salla evidence cited SA-C-180. I fixed it with the `shows` row above.
+- **Final, 0 problems and 19 flags.**
+
+Mine:
+- *CM-TRU-020 shopify none-held, 10 statements match:* the cell's reading answers it. The matches are merchants'
+  complaints to Shopify (CM-TRU-012), the AUP's enforcement principle, a Balance card rule, an identity remediation
+  endpoint, and Report an issue with a merchant, which is held by its title only.
+- *CM-TRU-010 salla: core rests only on boundary statements:* my row SA-S-5147. It isn't an API object. It is Salla's
+  dashboard text (basic_settings.main_store_data.description) listing the store data the merchant updates from the theme
+  editor page, the Business platform certificate among them. Q1 placed it under boundary, so it shows Salla's own
+  setting (reading).
+
+Earlier batches', which my rows bear on:
+- *CM-TRU-008 salla none-held, 5 statements match:* SA-S-0110 is SA-C-232's (see "For the coordinator").
+- *CM-TRU-012 salla none-held:* the matches include SA-S-3533 and the quality gateway, which batch 6's reading answers.
+  SA-C-178 is now in CM-TRU-020.
+- *SA-S-0115 in CM-ONB-002 and CM-TRU-009:* intended, as batch 5 says.
+
+The other flags were answered by their batches:
+- CM-STF-003, CM-PLN-006, CM-TRU-004, CM-TRU-006, CM-TRU-014 to CM-TRU-019;
+- SA-S-5002, SA-S-0089, SA-S-0141, SH-S-0238;
+- the flag "core rests only on boundary statements" on CM-TRU-006's Salla cell (SA-S-5023, batch 5).
+
+No problem was found on earlier batches' rows.
+
+### For the coordinator: earlier batches' rows
+
+- **CM-TRU-008's Salla cell (batch 5)** is none-held. SA-C-232/decides/SA-S-0110 is the setting
+  disable_cod_for_banned_customers: cash on delivery hidden from customers banned in other Salla stores. My reading:
+  Salla uses other merchants' data in this store's checkout, under the merchant's setting. That is CM-TRU-008's role, the
+  counterpart of Shopify's Enhanced Services. I'd make the cell statements, with SA-S-0110 as `core` (reading). Batch 5
+  set it aside as "a feature's input", and the cell's row is batch 5's, so I left it uncited.
+- **The Salla readings of these cells should name my rows, or the batch 7 landings:**
+  - CM-TRU-009 names SA-S-3533; SA-C-232 has landed, and SA-S-0028 is left to F;
+  - CM-TRU-010 names SA-S-5147, SA-S-0131, SA-S-0136 and SA-S-0142, and the new slot filler; SA-C-231 has landed;
+  - CM-TRU-003, CM-TRU-005 and CM-TRU-013 each say "batch 7's to land": SA-C-010, SA-C-066 and SA-C-171 have now landed;
+  - CM-PLN-001 (batch 3) names SA-S-2213 (`shows`) and SA-C-180's landing.
+- **The Shopify landings' joins:** SH-C-012 becomes match:M-005, and SH-C-180 becomes match:M-060 (each is
+  `terms`/`single` until now).
+- **CM-TRU-020 against D's CM-SUP-008:** decide whether they are one thing (see "How I cut").
+- **For other domains:**
+  - E's CM-CNT-008 may cite SA-C-066/where/SA-S-5022 with a reason, since SA-C-066 names only D;
+  - F may cite SA-S-0028 (CM-APP-002), SA-S-5113 and SA-S-5112 (CM-PTN-002, CM-PTN-006) with a reason;
+  - SA-S-5147's list of store data is also CM-ACC-006's subject (store details), where it is uncited.
+
+### Problems and gaps
+
+- **SA-C-180:** Q1's concern map holds none of /policies/nd96's text, although observed-sa holds the page. The plan
+  campaign's terms need Q1 to place its statements before any cell can rest on them.
+- **Salla's privacy policy** (SA-C-171, SA-C-233) and its usage policy (SA-I-2613) aren't held as text, so CM-TRU-014 to
+  CM-TRU-017 and the sanctions side of U-035 stay unstated for Salla.
+- **SA-C-178/reason** is "page not read". Whether Salla's complaints platform has a dashboard or API side, apart from
+  D's /manage/complaints, isn't stated.
+- **Makers:** none needed. Every placement rests on Salla's own pages, settings and help.
+
+## The coordinator's corrections after batch 7 (30 October)
+
+- **CM-TRU-020 stays.** It is the platform as mediator between a buyer and a store (Salla's complaints platform), not D's CM-SUP-008, the store's own complaints record, whose Salla cell cites SA-C-179's statements, not SA-C-178's. Zid Assurance, Zid handling complaints against stores itself, is the same role: ZD-C-111 now names A under `also`, for A's Zid part to cite it here.
+- **CM-TRU-008's Salla cell holds a statement:** SA-S-0110, cash on delivery hidden from customers banned in Salla's other stores, `core`, a reading. SA-S-5052 is C's lead.
+- **SH-C-012 and SH-C-180** are written as Q1's matches M-005 and M-060. The Salla readings of CM-TRU-003, -005, -009, -010, -013 and CM-PLN-001 name batch 7's rows.
+- **The leads to other domains are cited there:** SA-S-5022 in E's CM-CNT-008; SA-S-0028, SA-S-5112 and SA-S-5113 in F; SA-S-5147 in CM-ACC-006 here.
+- **The part is complete:** 43 capabilities. A's WooCommerce, Zid and BigCommerce parts follow.

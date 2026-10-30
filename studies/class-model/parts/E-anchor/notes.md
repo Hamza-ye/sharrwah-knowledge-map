@@ -599,3 +599,5 @@ Batch 6's flag that CM-MKS-009 had no concern landed is answered: SA-C-166 lands
 - **U-065's pair SH-C-032 against SA-C-165** is `apart` on its keys, while CM-MKS-006 cites SH-I-1916, an entry Q1 placed in both SH-C-032 and SH-C-108. Batch 7 reads it as the category's currency half. The final review weighs it.
 - **The part is complete:** 40 capabilities, 52 landings, 80 cells. Domain E's mapping parts follow: WooCommerce, Zid and BigCommerce.
 - **SA-S-2133 counts once.** Salla's plan line for AI-generated SEO at extra fees is `core` in F's CM-AIA-003, whose Salla cell rests on it alone, and `shows` in CM-CNT-007, which stays `core` on its other rows.
+
+- **SA-S-5022** (the privacy page as an information page of the store, of A's SA-C-066, which now names E) is cited in CM-CNT-008's Salla cell (the coordinator, from A-anchor batch 7's lead).

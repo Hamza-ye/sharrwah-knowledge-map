@@ -759,3 +759,7 @@ answered in their sections.
 ## The coordinator's correction after D-woocommerce (30 October)
 
 - **SA-S-3550 counts once.** The dashboard app @salla.sa/ui-merchant-partner-marketing, at the merchant's routes marketing/referrals, marketing/affiliates, experts and influencers, supported `core` in CM-PTN-009 here and in D's CM-MKT-013, affiliate and creator marketing, whose Salla cell rests on it alone. It is the merchant's own pages, so it stays `core` in D and is `shows` here. CM-PTN-009's Salla cell stays `core` on its released flags (SA-S-3414, SA-S-3415).
+
+## The coordinator's additions after A-anchor batch 7 (30 October)
+
+- **Three of A's Salla statements are cited here,** their concerns now naming F under `also`: Salla's right to suspend an app (SA-S-0028) in CM-APP-002, as `core`; the partner's licences (SA-S-5112) in CM-PTN-002 and the marketing licence Mawthooq (SA-S-5113) in CM-PTN-009, as `shows`, with the General Authority for Media Regulation as a slot filler. No placement changes.

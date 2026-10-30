@@ -519,3 +519,15 @@ CM-TRU-019	shopify	extension-point	SH-I-1956	App Store category Security - Other
 CM-TRU-019	shopify	shows	SH-C-196/decides/SH-S-0755	merchants approve an app's scopes when they install it
 CM-TRU-019	shopify	shows	SH-C-196/responsible/SH-S-0058	use of Third Party Services is between the merchant and the provider
 CM-TRU-019	shopify	shows	SH-C-196/boundary/SH-S-7284	Third Party Services, App Store apps included, may access the store's data
+CM-TRU-020	salla	core	SA-C-178/where/SA-S-5085	Salla's complaints system page: open a new complaint
+CM-TRU-020	salla	core	SA-C-178/responsible/SA-S-5087	Salla as link and mediator between merchant and customer
+CM-TRU-020	salla	core	SA-C-178/boundary/SA-S-5088	first status: under verification by Salla's team, after the customer opens it
+CM-TRU-020	salla	shows	SA-C-178/decides/SA-S-5086	only the customer can close the complaint
+CM-TRU-009	salla	core	SA-C-232/where/SA-S-3533	dashboard app @salla.sa/ui-merchant-manage, its path manage/violation
+CM-TRU-010	salla	core	SA-C-231/boundary/SA-S-5147	store data the merchant updates: the Business platform certificate and customer-service channels
+CM-TRU-010	salla	shows	SA-C-231/reason/SA-S-0131	store verification serves e-commerce regulatory requirements (Saudi Arabia)
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0136	UAE trade licence types accepted in store verification
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0142	the UAE store's legal entity, for compliance and the licences verification needs
+CM-PLN-001	salla	shows	SA-C-180/where/SA-S-2213	Salla policy page /policies/nd96; its text, not held, a plan discount campaign (reading from context)
+CM-ACC-006	salla	core	SA-C-231/boundary/SA-S-5147	the store details the merchant can update: identity, customer service channels, the Business platform certificate, social accounts, the store app (the coordinator, from batch 7's lead)
+CM-TRU-008	salla	core	SA-C-232/decides/SA-S-0110	cash on delivery hidden from customers banned in Salla's other stores: Salla using what it knows across its stores to protect a store (the coordinator, a reading, after batch 7)

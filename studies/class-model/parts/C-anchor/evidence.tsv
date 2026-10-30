@@ -1,0 +1,141 @@
+cap_id	platform	supports	key	why
+CM-CHK-001	shopify	core	SH-C-047/where/SH-S-1489	settings page title Checkout
+CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-5106	route checkout-settings, MANAGE_CHECKOUT_SETTINGS and webCheckout
+CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-5562	entitlement webCheckout true in the captured stores
+CM-CHK-001	shopify	shows	SH-C-047/decides/SH-S-5569	entitlement webCheckout false on some trial stores
+CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-7005	plan row World's best-converting checkout, Included on every plan
+CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-7070	plan row High volume checkout, Plus only
+CM-CHK-001	shopify	core	SH-C-047/boundary/SH-S-1162	webhook topic checkouts/create
+CM-CHK-001	shopify	core	SH-C-047/boundary/SH-S-6068	checkouts/create occurs whenever a checkout is created
+CM-CHK-001	shopify	core	SH-C-047/boundary/SH-S-6069	checkouts/delete occurs whenever a checkout is deleted
+CM-CHK-001	shopify	core	SH-C-047/boundary/SH-S-6070	checkouts/update occurs whenever a checkout is updated
+CM-CHK-001	shopify	core	SH-C-050/boundary/SH-S-1164	webhook topic checkouts/update
+CM-CHK-001	shopify	core	SH-I-0971	staff permission Checkout and customer accounts > View and edit
+CM-CHK-001	shopify	core	SH-I-0200	access scope read_checkouts
+CM-CHK-001	shopify	core	SH-I-0199	access scope write_checkouts
+CM-CHK-001	shopify	shows	SH-C-047/decides/SH-S-0015	the merchant agrees to use Shopify Checkout for online store sales
+CM-CHK-001	shopify	shows	SH-C-047/decides/SH-S-0016	no processing orders outside Shopify's Checkout
+CM-CHK-001	shopify	shows	SH-C-047/decides/SH-S-0216	API terms: no alternative to Shopify Checkout without authorization
+CM-CHK-001	shopify	shows	SH-C-047/responsible/SH-S-0011	the contract of sale is between the merchant and the customer
+CM-CHK-001	shopify	shows	SH-C-047/responsible/SH-S-0013	Shopify is not the seller or merchant of record
+CM-CHK-001	shopify	shows	SH-C-047/boundary/SH-S-2530	the store's UCP profile lists dev.ucp.shopping.checkout
+CM-CHK-001	salla	core	SA-C-100/where/SA-S-1685	dashboard link Checkout at /checkout
+CM-CHK-001	salla	core	SA-C-100/where/SA-S-3549	dashboard app ui-merchant-payments whose path holds /checkout
+CM-CHK-001	salla	core	SA-C-100/where/SA-S-1706	settings page checkout/guest-checkout, Guest checkout
+CM-CHK-001	salla	core	SA-C-100/decides/SA-S-3112	released flag store-checkout
+CM-CHK-001	salla	core	SA-C-100/decides/SA-S-3113	released flag guest-checkout
+CM-CHK-001	salla	core	SA-C-100/where/SA-S-1166	Salla docs collection Checkout APIs
+CM-CHK-001	salla	extension-point	SA-C-100/reason/SA-S-5139	Checkout APIs are for developers' integrations controlling cart and checkout-entry flows
+CM-CHK-001	salla	shows	SA-C-100/decides/SA-S-3114	flag embedded-login-checkout, not released
+CM-CHK-001	salla	shows	SA-C-100/decides/SA-S-3124	flag ucp-embedded-checkout, not released
+CM-CHK-002	shopify	core	SH-C-046/where/SH-S-0771	its own label Cart
+CM-CHK-002	shopify	core	SH-I-0007	API resource Cart
+CM-CHK-002	shopify	core	SH-C-046/boundary/SH-S-6066	carts/create occurs when a cart is created in the online store
+CM-CHK-002	shopify	core	SH-C-046/boundary/SH-S-6067	carts/update occurs when a cart is updated in the online store
+CM-CHK-002	shopify	core	SH-C-046/boundary/SH-S-1160	webhook topic carts/update
+CM-CHK-002	shopify	core	SH-C-046/decides/SH-S-7483	its own setting Add-to-cart limit
+CM-CHK-002	shopify	core	SH-C-046/decides/SH-S-7484	default recommended limit 50 under 250 sales
+CM-CHK-002	shopify	shows	SH-C-046/reason/SH-S-7489	the limit protects inventory information
+CM-CHK-002	shopify	shows	SH-C-046/boundary/SH-S-1101	access scope unauthenticated_write_checkouts, Q1's cart concern
+CM-CHK-002	shopify	shows	SH-C-046/boundary/SH-S-6152	a headless channel or custom app holds unauthenticated_write_checkouts
+CM-CHK-002	shopify	shows	SH-C-046/boundary/SH-S-2533	the store's UCP profile lists dev.ucp.shopping.cart
+CM-CHK-002	salla	core	SA-C-100/boundary/SA-S-1080	API folder Cart
+CM-CHK-002	salla	core	SA-C-100/boundary/SA-S-1081	API folder Cart Items
+CM-CHK-002	salla	core	SA-C-100/boundary/SA-S-1548	access scope carts, Carts / السلات, read only
+CM-CHK-002	salla	extension-point	SA-C-100/reason/SA-S-5139	integrations control cart flows outside the standard storefront
+CM-CHK-003	shopify	core	SH-C-048/where/SH-S-5103	route checkout-accounts-editor at settings/checkout/editor
+CM-CHK-003	shopify	core	SH-C-048/decides/SH-S-5104	the editor's permission MANAGE_CHECKOUT_SETTINGS
+CM-CHK-003	shopify	core	SH-C-048/where/SH-S-0773	its own label Checkout branding
+CM-CHK-003	shopify	core	SH-C-048/where/SH-S-0772	its own label Checkout and accounts configurations
+CM-CHK-003	shopify	core	SH-C-048/decides/SH-S-7053	plan row Checkout customization: Limited, Limited, Limited, Full
+CM-CHK-003	shopify	core	SH-C-048/decides/SH-S-5942	the configuration object needs the editor and manage_checkout_settings
+CM-CHK-003	shopify	core	SH-C-048/decides/SH-S-6176	the update needs write scope and manage_checkout_settings
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-5943	CheckoutAndAccountsConfiguration object and its update mutation
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-5944	guide: the checkout and accounts configurations scopes
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-5945	guide: GraphiQL app with the configurations scopes
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-5946	guide: the checkout branding scopes
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-5947	guide: the checkout branding scopes
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-0961	access scope read_checkout_branding_settings
+CM-CHK-003	shopify	core	SH-C-048/boundary/SH-S-0960	access scope write_checkout_and_accounts_configurations
+CM-CHK-003	shopify	extension-point	SH-C-048/decides/SH-S-5105	route customizations-report gated by APPLICATIONS
+CM-CHK-003	shopify	shows	SH-C-048/decides/SH-S-0628	a Participating Channel may customize Shopify Checkout to its branding
+CM-CHK-004	shopify	extension-point	SH-C-049/where/SH-S-0679	build an app with extensions to augment Shopify checkout
+CM-CHK-004	shopify	extension-point	SH-C-049/where/SH-S-2181	extension type identifier checkout_ui
+CM-CHK-004	shopify	extension-point	SH-C-049/boundary/SH-S-7228	extension target purchase.checkout.block.render
+CM-CHK-004	shopify	extension-point	SH-C-049/boundary/SH-S-7229	extension target purchase.thank-you.block.render
+CM-CHK-004	shopify	extension-point	SH-I-1419	extension type Post-purchase UI (post_purchase_ui)
+CM-CHK-004	shopify	extension-point	SH-C-049/decides/SH-S-0069	Shopify allows extensions to customize your checkout
+CM-CHK-004	shopify	extension-point	SH-I-1813	App Store category Checkout apps
+CM-CHK-004	shopify	extension-point	SH-I-1814	App Store category Cart customization apps
+CM-CHK-004	shopify	extension-point	SH-I-1815	App Store category Checkout - Other
+CM-CHK-004	shopify	shows	SH-C-049/decides/SH-S-0070	the merchant answers for compliance; Shopify can disable extensions
+CM-CHK-004	shopify	shows	SH-C-049/responsible/SH-S-0070	the merchant answers for compliance when using extensions
+CM-CHK-004	shopify	shows	SH-C-049/responsible/SH-S-0217	the developer alone answers for the Application
+CM-CHK-004	shopify	shows	SH-C-049/reason/SH-S-0680	customization options are easy to install and upgrade-safe
+CM-CHK-004	shopify	shows	SH-C-049/where/SH-S-0821	label Checkout
+CM-CHK-005	shopify	extension-point	SH-C-052/where/SH-S-0853	Function API label Cart and Checkout Validation
+CM-CHK-005	shopify	extension-point	SH-I-1460	function target cart_checkout_validation
+CM-CHK-005	shopify	extension-point	SH-C-052/boundary/SH-S-2212	settings extension validation_settings_ui
+CM-CHK-005	shopify	extension-point	SH-C-052/boundary/SH-S-6146	the app's scope read_validations
+CM-CHK-005	shopify	extension-point	SH-C-052/boundary/SH-S-6305	the app's scope write_validations
+CM-CHK-005	shopify	extension-point	SH-C-052/boundary/SH-S-0953	access scope write_validations
+CM-CHK-005	shopify	shows	SH-C-052/decides/SH-S-0683	Shopify invokes functions within the customer journey
+CM-CHK-005	shopify	shows	SH-C-052/responsible/SH-S-7281	the developer alone answers for the Application
+CM-CHK-005	shopify	shows	SH-I-1816	App Store category Order limit apps, undefined
+CM-CHK-006	shopify	extension-point	SH-C-053/where/SH-S-0854	Function API label Cart Transform
+CM-CHK-006	shopify	extension-point	SH-C-053/where/SH-S-2225	function identifier cart_transform
+CM-CHK-006	shopify	extension-point	SH-I-1461	function target Cart transformer (cart_transform)
+CM-CHK-006	shopify	extension-point	SH-C-053/boundary/SH-S-5939	the app's scope read_cart_transforms
+CM-CHK-006	shopify	extension-point	SH-C-053/boundary/SH-S-6174	guide: your app has write_cart_transforms
+CM-CHK-006	shopify	extension-point	SH-C-053/boundary/SH-S-6173	guide: request write_cart_transforms to run the mutations
+CM-CHK-006	shopify	extension-point	SH-C-053/boundary/SH-S-0950	access scope write_cart_transforms
+CM-CHK-006	shopify	shows	SH-C-053/decides/SH-S-6171	creating one needs Checkout Extensibility and the products permission
+CM-CHK-006	shopify	shows	SH-C-053/decides/SH-S-6172	deleting one needs the products and preferences permission
+CM-CHK-006	shopify	shows	SH-C-053/decides/SH-S-0683	Shopify invokes functions within the customer journey
+CM-CHK-006	shopify	shows	SH-C-053/responsible/SH-S-7281	the developer alone answers for the Application
+CM-CHK-007	shopify	core	SH-C-050/where/SH-S-5001	admin route abandonedCheckouts, path checkouts
+CM-CHK-007	shopify	core	SH-C-050/decides/SH-S-5002	the route's permission MANAGE_ABANDONED_CHECKOUTS
+CM-CHK-007	shopify	core	SH-C-050/where/SH-S-1538	its own section text Abandoned checkouts
+CM-CHK-007	shopify	core	SH-I-0888	staff permission Orders > Abandoned checkouts
+CM-CHK-007	shopify	core	SH-I-0889	staff permission Orders > Abandoned checkouts > Manage
+CM-CHK-007	salla	core	SA-C-048/where/SA-S-3591	dashboard app ui-merchant-abandoned_carts at /marketing/carts
+CM-CHK-007	salla	core	SA-C-048/where/SA-S-1035	Merchant API folder Abandoned Carts
+CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1625	event abandoned.cart
+CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1628	event abandoned.cart.update
+CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1629	event abandoned.cart.purchased
+CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1630	event abandoned.cart.status.changed
+CM-CHK-007	salla	core	SA-C-048/decides/SA-S-2352	staff permission forget_cart_browse
+CM-CHK-007	salla	core	SA-C-048/decides/SA-S-2353	staff permission forget_cart_management
+CM-CHK-007	salla	shows	SA-C-048/decides/SA-S-2569	partner permission الاطلاع على السلات المتروكة
+CM-CHK-007	salla	shows	SA-C-048/decides/SA-S-2570	partner permission إدارة السلات المتروكة
+CM-CHK-007	salla	core	SA-C-048/decides/SA-S-2003	plan line السلات المتروكة (سلة بلس)
+CM-CHK-007	salla	core	SA-C-048/decides/SA-S-3249	released flag abandoned-cart-complete-order (plus, pro, special)
+CM-CHK-007	salla	shows	SA-C-048/decides/SA-S-3248	released flag abandoned-cart-rule; what the rule is isn't stated
+CM-CHK-007	salla	shows	SA-C-048/decides/SA-S-3250	flag abandoned-cart-cursor-pagination, not released
+CM-CHK-007	salla	shows	SA-C-048/decides/SA-S-3458	flag abandoned-cart-merchant-notifications, not released
+CM-CHK-007	salla	shows	SA-C-048/boundary/SA-S-1548	access scope carts, Carts / السلات
+CM-CHK-008	salla	core	SA-C-079/where/SA-S-1824	dashboard link Quick checkout at /marketing/quick_checkout
+CM-CHK-008	salla	core	SA-C-079/where/SA-S-3536	dashboard app ui-merchant-marketing whose path holds quick_checkout
+CM-CHK-008	salla	core	SA-C-079/decides/SA-S-1967	plan line زر الشراء السريع (سلة بلس)
+CM-CHK-008	salla	core	SA-C-079/decides/SA-S-2012	plan line الطلب المباشر *برسوم إضافية (سلة بلس)
+CM-CHK-008	salla	core	SA-C-079/decides/SA-S-2398	staff permission quick_checkout_management
+CM-CHK-008	salla	shows	SA-C-079/decides/SA-S-2615	partner permission quick_checkout_management, الطلب المباشر
+CM-CHK-008	salla	core	SA-C-079/decides/SA-S-3115	released flag quick-purchase (plus, pro, special)
+CM-CHK-008	salla	core	SA-C-079/decides/SA-S-3117	released flag quick-checkout (plus, pro, special)
+CM-CHK-008	salla	core	SA-C-079/boundary/SA-S-1507	storefront component salla-quick-buy
+CM-CHK-008	salla	shows	SA-C-079/reason/SA-S-5027	quick purchase cuts and speeds the steps of completing the order
+CM-CHK-008	shopify	core	SH-C-078/where/SH-S-0419	accelerated checkout buttons on Shopify Checkout, activated by the merchant
+CM-CHK-008	shopify	shows	SH-C-078/reason/SH-S-7287	express checkouts let returning customers pay more quickly
+CM-CHK-009	salla	core	SA-C-042/where/SA-S-1782	dashboard link Cart options at /orders/options
+CM-CHK-009	salla	core	SA-C-042/where/SA-S-1780	dashboard link Custom fields at /orders/custom-fields
+CM-CHK-009	salla	core	SA-C-042/where/SA-S-1019	Merchant API folder Order Options
+CM-CHK-009	salla	core	SA-C-042/decides/SA-S-2130	plan line إضافة خيارات الطلب (سلة برو)
+CM-CHK-009	salla	core	SA-C-042/decides/SA-S-2131	plan line إضافة حقول مخصصة للطلبات (سلة برو)
+CM-CHK-009	salla	core	SA-C-042/decides/SA-S-2424	staff permission custom_fields_management
+CM-CHK-009	salla	shows	SA-C-042/decides/SA-S-2641	partner permission custom_fields_management, الحقول المخصصة
+CM-CHK-009	salla	core	SA-C-042/decides/SA-S-3486	released flag order-options (pro, special)
+CM-CHK-009	salla	core	SA-C-042/decides/SA-S-3491	released flag custom-fields (pro, special)
+CM-CHK-003	shopify	shows	SH-C-048/decides/SH-S-5562	entitlement webCheckout, which gates the customizations report, true in the captured stores
+CM-CHK-003	shopify	shows	SH-C-048/decides/SH-S-5569	entitlement webCheckout false on some trial stores
+CM-CHK-007	salla	core	SA-C-048/boundary/SA-S-1035	Merchant API folder Abandoned Carts, Q1's boundary
+CM-CHK-009	salla	core	SA-C-042/boundary/SA-S-1019	Merchant API folder Order Options, Q1's boundary
