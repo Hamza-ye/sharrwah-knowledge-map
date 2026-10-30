@@ -16,7 +16,7 @@ CM-ONB-003	bigcommerce	statements	not-stated		BC-C-066/decides/BC-S-0077=Powered
 CM-ONB-004	bigcommerce	none-held					
 CM-PLN-001	bigcommerce	statements	core		BC-C-030/decides/BC-S-0185=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-030/decides/BC-S-0187=Scale plan	BC-C-030/reason:searched, not found;BC-C-066/responsible:stated only in general terms;BC-C-066/reason:searched, not found	general
 CM-PLN-002	bigcommerce	none-held					
-CM-PLN-003	bigcommerce	statements	core			BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found	general
+CM-PLN-003	bigcommerce	statements	core		BC-C-026/decides/BC-S-0152=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-026/decides/BC-S-0153=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found	general
 CM-PLN-004	bigcommerce	statements	not-stated	Fees	BC-C-029/responsible/BC-S-0178=India | BC-C-030/decides/BC-S-0189=Customers domiciled within the European Union or the United Kingdom	BC-C-029/responsible:searched, not found;BC-C-030/reason:searched, not found	
 CM-PLN-005	bigcommerce	statements	not-stated			BC-C-030/reason:searched, not found	
 CM-PLN-006	bigcommerce	none-held					

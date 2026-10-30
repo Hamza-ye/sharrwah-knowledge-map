@@ -118,3 +118,7 @@ CM-TRU-018	bigcommerce	shows	BC-C-028/responsible/BC-S-0168	the merchant determi
 CM-TRU-018	bigcommerce	shows	BC-C-028/boundary/BC-S-0170	apps handling card data must be PCI compliant and submit SAQs
 CM-TRU-018	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications, PCI among them
 CM-TRU-019	bigcommerce	extension-point	BC-I-0490	App Marketplace category Payments & Security
+CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0152	plan line Open Payment Provider Fee: 2.0%, 1.0%, 0.6%, 0.0% with contract, by plan (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0153	plan line Orders through Embedded Payment Providers: $0 fee on every plan (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	core	BC-C-026/responsible/BC-S-0158	Open Payment Provider Fees charged by Commerce, not by the payment provider (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	shows	BC-C-026/responsible/BC-S-0159	no payment fees on orders through eligible Embedded Payment Providers; the provider's own fees still apply (the coordinator, after C-bigcommerce batch 2)

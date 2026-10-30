@@ -235,3 +235,7 @@ None: Q1 never matched BigCommerce. `rulings.tsv` keeps only its header.
 The whole part's check prints 0 problems. Two of batch 1's citations now share a statement with this batch's cells
 (BC-S-0437, BC-S-0470; above). Batch 1's landing of BC-C-086 says the reviewer may move it to CM-TRU-010; with this
 batch's cells its statements are spread over five trees, so a move would not make it clean.
+
+### The coordinator, after C-bigcommerce batch 2
+
+- **CM-PLN-003** cites BC-C-026's four fee statements that C-bigcommerce left for it, by "One thing, one domain": the plan line's values by plan (BC-S-0152) and the $0 fee through Embedded Payment Providers (BC-S-0153), and the terms' fees charged by Commerce, not by the provider (BC-S-0158), as `core`; no payment fees through eligible Embedded Payment Providers (BC-S-0159) as `shows`.
