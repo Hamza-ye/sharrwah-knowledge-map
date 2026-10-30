@@ -571,9 +571,8 @@ Every capability has a Shopify and a Salla cell, so batches 6 and 7 find them re
   statement gives sanctions screening a place of its own, and Salla holds no sanctions term (Q1's U-035). Its Shopify
   Payments sanctions clauses (SH-S-0122, SH-S-0131), the processors' KYC/AML duties (SH-S-0099, SH-S-0100) and the
   sanctions account hold (SH-S-0353, which doesn't say whose account) are left uncited for domain C's Payments
-  eligibility, and the app developer's export classification (SH-S-0296) for domain F. They are statements of a domain A
-  concern, so domain C and F cite them, if at all, under also-less keys: the coordinator may want SH-C-174's `also` to
-  name C.
+  eligibility, and the app developer's export classification (SH-S-0296) for domain F. scope.tsv names C under SH-C-174's
+  `also`, so domain C may cite them; domain F, not named, would cite SH-S-0296 only with a reason (the brief's rule).
 - **CM-TRU-010, the merchant's legal compliance as the seller,** Q1's M-086. Shopify's help Compliance section and its
   product disclosures give it a place. Salla's cell holds the e-commerce laws' requirements (SA-S-0160, SA-S-0118) as
   shows. The help sections naming laws (GPSR, the European Price Indication Directive, CPSC eFiling, TSE in Germany) are
