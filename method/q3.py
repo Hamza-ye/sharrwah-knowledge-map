@@ -27,7 +27,7 @@ G1 = "e4d5cee3aaea9a12b3e27c1e641075a01d88052c"   # the rows as PLAN.md links th
 HEAD = ["set", "row_id", "needed_by", "result", "rest", "cap_ids", "who_answers", "when", "time_bombs", "basis", "what_would_settle_it"]
 RESULTS = {"covered", "partly", "beyond the class", "candidate miss: held", "candidate miss: not held", "unclear"}
 RESTS = {"beyond the class", "candidate miss: held", "candidate miss: not held"}
-WHO = re.compile(r"^(model|founder|engineering:build|engineering:detail|outside|plan|subject:S-\d\d|subject:none)$")
+WHO = re.compile(r"^(model|founder|founder:decided|engineering:build|engineering:detail|outside|plan|subject:S-\d\d|subject:none)$")
 WHEN = {"before build", "at the area's build", "before release", "later", "unclear"}
 BOMBS = {"bundles", "wrong party", "wrong time", "market fact"}
 ORDER = ["before build", "at the area's build", "before release", "later"]
@@ -245,7 +245,7 @@ def cmd_check(a):
                     problems.append(f"{w}: {c} is not a capability of the model")
             who = semi(r["who_answers"])
             if not who or any(not WHO.match(x) for x in who):
-                problems.append(f"{w}: who_answers is `;`-separated, each model, founder, engineering:build, engineering:detail, outside, plan, subject:S-NN or subject:none")
+                problems.append(f"{w}: who_answers is `;`-separated, each model, founder, founder:decided, engineering:build, engineering:detail, outside, plan, subject:S-NN or subject:none")
             for x in who:
                 if x.startswith("subject:S-") and x[8:] not in subjects:
                     problems.append(f"{w}: {x[8:]} is not in studies/subjects/subjects.tsv")
@@ -280,22 +280,26 @@ def cmd_check(a):
                     problems.append(f"{w}: a partly row's held rest names at least one statement no cell cites (q3.py where)")
             if r["when"] not in WHEN:
                 problems.append(f"{w}: when must be one of {', '.join(sorted(WHEN))}")
-            ruled = when_of(who)
+            # a part a founder's decision in force already answers (founder:decided) sets no time and raises no time bomb
+            timed = [x for x in who if x != "founder:decided"]
+            ruled = when_of(timed)
             if ruled and r["when"] != "unclear" and r["when"] != ruled:
                 problems.append(f"{w}: when is {ruled} by the rules for {', '.join(who)}")
             bs = semi(r["time_bombs"])
             if any(x not in BOMBS for x in bs):
                 problems.append(f"{w}: time_bombs are `;`-separated, from {', '.join(sorted(BOMBS))}")
-            others = when_of([x for x in who if x != "model"])
+            others = when_of([x for x in timed if x != "model"])
             wrong = bool(others and r["when"] != "unclear" and NEEDED.get(r["needed_by"]) != others)
             if wrong and "wrong time" not in bs:
                 problems.append(f"{w}: wrong time: needed_by {r['needed_by']} against {others}, the earliest when of its answerers other than the model")
-            if "wrong time" in bs and others and not wrong:
+            if "wrong time" in bs and not wrong:
                 problems.append(f"{w}: wrong time without a disagreement between needed_by and its answerers other than the model")
             ks = {kinds.get(c, "?").split(":")[0] for c in cs}
-            whens = {v for v in (FIXED.get(x) or ("before build" if x.startswith("subject:S-") else None) for x in who) if v}
+            whens = {v for v in (FIXED.get(x) or ("before build" if x.startswith("subject:S-") else None) for x in timed) if v}
             if (len(ks) > 1 or len(whens) > 1) and "bundles" not in bs:
                 problems.append(f"{w}: bundles: its capabilities are of different kinds, or its answerers' times differ")
+            if "bundles" in bs and not (len(ks) > 1 or len(whens) > 1):
+                problems.append(f"{w}: bundles without capabilities of different kinds or answerers' times that differ")
             if res in ("partly", "unclear", "candidate miss: not held") and not r["what_would_settle_it"].strip():
                 problems.append(f"{w}: {res} says what would settle it")
     if want is not None:

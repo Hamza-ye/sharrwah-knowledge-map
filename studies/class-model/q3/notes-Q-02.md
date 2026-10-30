@@ -31,3 +31,7 @@ There are none. Before settling on `covered` with detail, I searched for each th
 - **`caps` returns too much.** A one-word term such as "plan", "domain" or "terms" returns most of the model, since it matches capabilities' notes and terms. It is usable only with narrower phrases.
 - **The founder rule conflicts with the time-bomb rules.** The brief adds `founder` to a covered row wherever a decision in force answers part of it (TRU-05). The time-bomb rules then raise `wrong time` and `bundles` on a part already decided. A decided part could be excluded from both, or the bombs kept as a flag that the row's `needed_by` is out of step. I kept what the checker requires.
 - **What "the platform" means in these rows.** Several Knowledge Map rows (PLN-08, TRU-04, TRU-07) are needed by `launch` and say "the platform" or "the product class". The brief's rule reads them as asking the class. That reading is followed here, but their authors may have meant Sharrwah (PLN-08 above).
+
+## The coordinator, after the batch
+
+- **TRU-05's time bombs are cleared.** The founder's part is already decided (Decision 1 and the rows settled by its answer), so by the brief, as revised after this batch, it sets no `when` and raises neither `bundles` nor `wrong time`.
