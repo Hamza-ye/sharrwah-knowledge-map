@@ -52,7 +52,7 @@ def flag(m):
 def plat(token):
     """The platform of a concern id or statement key, or None."""
     for p, x in PREFIX.items():
-        if token.startswith(x + "-C-") or token.startswith(x + "-I-"):
+        if token.startswith(x + "-C-") or token.startswith(x + "-I-") or token.startswith(x + "-E-"):
             return p
     m = re.match(r"S\d\d-([A-Z]{2})-\d+$", token)       # a subject's statement, cited only by a points amendment
     if m:

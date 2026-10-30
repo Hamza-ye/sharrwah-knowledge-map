@@ -167,19 +167,45 @@ def subject_items(platform):
     return _subj[platform]
 
 
+HELD = os.path.join(MODEL, "held")
+_held = {}
+
+
+def held_items(platform):
+    """The held pass's entries (briefs/H-held.md): an item of a platform's self-description the concern map never read,
+    listed by method/held_entries.py at the repository's commit, citable by its id (ZD-E-00001). Only the coordinator's
+    amendments from the held pass cite one."""
+    if platform not in _held:
+        out = []
+        path = os.path.join(HELD, platform, "entries.tsv")
+        for r in rows(path) if os.path.exists(path) else []:
+            out.append({"inv_id": r["entry_id"], "concern_id": "", "concern_ids": [], "placement": "held",
+                        "structure": r["structure"], "identifier": r["structure"], "statement": r["text"],
+                        "scope": r["labels"] if r["labels"] not in ("", ".") else "", "cite_ids": r["entry_id"],
+                        "note": "the held pass", "subject": "held"})
+        _held[platform] = out
+    return _held[platform]
+
+
 def subject_citations(platform):
+    """The citations of what the model cites beyond the concern map: the landed subjects' statements, and the held
+    pass's entries, each its own citation (its file and line at the repository's commit)."""
     out = {}
     for s in SUBJECTS_CITED:
         for f in ("citations.tsv", "recorded-citations.tsv"):
             for r in rows(os.path.join(SUBJ, s, platform, f)):
                 out[r["cite_id"]] = r
+    path = os.path.join(HELD, platform, "entries.tsv")
+    for r in rows(path) if os.path.exists(path) else []:
+        out[r["entry_id"]] = {"cite_id": r["entry_id"], "source": r["source"], "locator": r["locator"], "quote": r["text"],
+                              "source_date": "", "date_basis": "", "accessed": "", "access_path": ""}
     return out
 
 
 def citable(platform):
-    """Everything a cell's evidence may name: the concern map's statements and placed entries, and the landed subjects'
-    statements, which only the points' amendments cite."""
-    return items(platform) + subject_items(platform)
+    """Everything a cell's evidence may name: the concern map's statements and placed entries; the landed subjects'
+    statements, which only the points' amendments cite; and the held pass's entries, which only its amendments cite."""
+    return items(platform) + subject_items(platform) + held_items(platform)
 
 
 def concerns(platform):
