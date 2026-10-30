@@ -60,6 +60,8 @@ The rules marked (M-n) or (ruling) are the coordinator's, on cases B-extent.md l
        - in `permission-gates`: `permissions`, and each store's 'Access restricted' lines (`merchant_or_feature`, `demo_or_admin`, `public_demo_or_shown` on a dashboard row);
        - in `admin-router-changes`: `eligibility before` and `after`.
 
+       A row's address is the step's requested path. A settings address (`/?settings=/orders`) opens a drawer over the home page, so a store's lines at that address can be the home page's, such as its Abandoned carts widget's 'Not included in your plan'. Read the step to see which element each line belongs to, and place the row by its own address's gate. A row whose only lines are another page's states nothing of its own: it is `out`, its reading naming the entry that holds the statement (SA-33's check).
+
        The repository's own columns, such as `held` (whether the staff permission groups hold each permission) and `steps`, are its observations: never the platform's terms, a scope or a quote. Where a placement rests on a row, cite the step or file it was built from. (Corrected after SA-32: `demo` was listed as the repository's own.)
      - A `parent` or `within` that is still a number is the `position` of an item with no name of its own (an Android layout node); the screen it sits on is its label.
 2. **Place it**, one of three:
