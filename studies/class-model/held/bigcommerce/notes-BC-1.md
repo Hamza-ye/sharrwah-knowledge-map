@@ -128,3 +128,19 @@ The review (`held/review-H.md`, parts R1 to R3) and the coordinator's rulings (`
   - whether Google's "AI-powered experiences" are CM-AIA-005's (R1);
   - which PayPal the PayPal row is (R2);
   - which capability "regional settings" is, and whether the security tab is sign-in security (R3).
+
+## Amended into the model (the coordinator, 30 October 2026)
+
+`held_amend.py apply --platform bigcommerce` wrote this batch's corrected placements: 193 evidence rows for 76 cells in 8 parts, after the coordinator decided its new things (`held/new.tsv`):
+- Display, Share and URL structure are capabilities made in `parts/E-amend` (CM-SFR-015, CM-SFR-016, CM-CNT-010);
+- Extensions and Professional Services are out: no place of their own, and their rows stay on CM-ACC-002.
+
+Four cells were then edited by the coordinator from the review (R1) and the rulings M-1 and M-2:
+- CM-CHN-004, CM-MKT-010 and CM-SFR-006 cite the terms' group statement (Feedonomics Holdings, LLC among Commerce's affiliates; each contracting entity a Commerce entity);
+- CM-APP-011's own-service rows became `shows`, since an Extension is a third party's service that Commerce provides.
+
+**The effect:**
+- 14 of BigCommerce's cells that held nothing are held, and 15 of its existing cells changed placement;
+- BigCommerce's cells holding statements went from 172 to 186, of 351.
+
+Each part checks with 0 problems, and the merge with 0 problems. Each new flag was read: the same entry placed on two capabilities, as rule 2 asks, and two pairs of capabilities sharing that entry's terms: CM-CHN-004 and CM-MKT-010 for the Feedonomics cards, a channel's feed and its ads; CM-OPS-005 and CM-TRU-003 for Store logs, the system logs and the staff action logs. Neither pair is one capability.

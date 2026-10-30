@@ -17,3 +17,8 @@ CM-TRU-015	bigcommerce	Google (subprocessor: infrastructure hosting, document ma
 CM-TRU-015	bigcommerce	Amazon (subprocessor: data hosting)	BC-C-082/where/BC-S-0447
 CM-TRU-015	bigcommerce	Cloudflare (subprocessor: DDoS mitigation, threat detection and CDN)	BC-C-082/where/BC-S-0448
 CM-TRU-018	bigcommerce	PCI DSS (the standard BigCommerce validates annually as a service provider)	BC-C-028/responsible/BC-S-0169
+CM-ACC-002	bigcommerce	the law of New York (Governing Law)	BC-E-aac5508c
+CM-ACC-002	bigcommerce	the law of England and Wales (Governing Law)	BC-E-34573863
+CM-ACC-002	bigcommerce	the law of Ireland (Governing Law)	BC-E-47462fcf
+CM-ACC-002	bigcommerce	the law of New South Wales, Australia (Governing Law)	BC-E-22b1b6aa
+CM-ACC-002	bigcommerce	the law of New York (Governing Law)	BC-E-b01b6b25

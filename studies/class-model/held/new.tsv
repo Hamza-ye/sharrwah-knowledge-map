@@ -1,0 +1,7 @@
+platform	name	decision	reading
+bigcommerce	Display	capability:CM-SFR-015	a settings section of its own (General > Display); made in E-amend with the other platforms' cells
+bigcommerce	Share	capability:CM-SFR-016	a settings section of its own (General > Share); made in E-amend
+bigcommerce	URL structure	capability:CM-CNT-010	a settings section of its own (General > URL structure); made in E-amend, not joined to Salla's undefined Custom URLs
+bigcommerce	Extensions	out	no place of its own: the terms define an Extension as a service a third party develops and Commerce provides, and what one does isn't stated (the coordinator's ruling M-2); the rows stay on CM-ACC-002
+bigcommerce	Professional Services	out	no place of its own: the contracting rows name certain Professional Services, which its Program Document (not held) would describe; the rows stay on CM-ACC-002
+zid	Customer Referrals	capability:CM-LOY-008	an admin route of its own (marketing/referrals), under loyalty and rewards; made in D-amend

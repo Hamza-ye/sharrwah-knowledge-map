@@ -1,4 +1,14 @@
 kind	flag
+counted twice	one statement supports core or own-service in domains A, G, so it counts in each: CM-OPS-005 (BC-E-195dc194); CM-TRU-003 (BC-E-195dc194)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-31cb69c5); CM-MKT-010 (BC-E-31cb69c5)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-34d2cd26); CM-MKT-010 (BC-E-34d2cd26)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-4b394fb7); CM-MKT-010 (BC-E-4b394fb7)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-5081e7d4); CM-MKT-010 (BC-E-5081e7d4)
+counted twice	one statement supports core or own-service in domains C, D, E, so it counts in each: CM-ANL-001 (BC-E-84b056a9); CM-CHK-001 (BC-E-84b056a9); CM-PAY-012 (BC-E-84b056a9); CM-SFR-001 (BC-E-84b056a9)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-a62c8fa8); CM-MKT-010 (BC-E-a62c8fa8)
+counted twice	one statement supports core or own-service in domains B, C, so it counts in each: CM-INV-005 (BC-E-b6118ce7); CM-SHP-007 (BC-E-b6118ce7)
+counted twice	one statement supports core or own-service in domains D, E, so it counts in each: CM-CHN-004 (BC-E-da35319c); CM-MKT-010 (BC-E-da35319c)
+counted twice	one statement supports core or own-service in domains A, C, so it counts in each: CM-ACC-006 (BC-E-e2655528); CM-ORD-001 (BC-E-e2655528)
 counted twice	one statement supports core or own-service in domains A, F, so it counts in each: CM-API-013 (BC-I-0375); CM-STF-001 (BC-I-0375)
 counted twice	one statement supports core or own-service in domains A, F, so it counts in each: CM-API-013 (BC-I-0377); CM-STF-001 (BC-I-0377)
 counted twice	one statement supports core or own-service in domains A, G, so it counts in each: CM-OPS-003 (BC-C-028/responsible/BC-S-0169); CM-TRU-018 (BC-C-028/responsible/BC-S-0169)
@@ -80,10 +90,12 @@ one capability?	CM-CAT-001 (domain B) and CM-MIG-001 (domain G) share terms expo
 one capability?	CM-CHK-001 (domain C) and CM-SFR-012 (domain E) share terms api's > checkout, checkout: one capability?
 one capability?	CM-CHK-007 (domain C) and CM-MKT-022 (domain D) share terms abandoned carts, السلات المتروكه: one capability?
 one capability?	CM-CHK-009 (domain C) and CM-CNT-002 (domain E) share terms custom fields, حقول مخصصه: one capability?
+one capability?	CM-CHN-004 (domain E) and CM-MKT-010 (domain D) share terms ads and social, featured channels by feedonomics, feedonomics surface, meta: facebook and instagram, microsoft ads, tikt: one capability?
 one capability?	CM-CNT-008 (domain E) and CM-TRU-005 (domain A) share terms privacy policy, privacy policy on your store, سياسه الخصوصيه: one capability?
 one capability?	CM-CNT-008 (domain E) and CM-TRU-013 (domain A) share terms privacy policy, سياسه الخصوصيه: one capability?
 one capability?	CM-LOY-001 (domain D) and CM-PLN-005 (domain A) share terms zid wallet, محفظه زد: one capability?
 one capability?	CM-LOY-001 (domain D) and CM-PLN-006 (domain A) share terms zid wallet, محفظه زد: one capability?
+one capability?	CM-OPS-005 (domain G) and CM-TRU-003 (domain A) share terms store logs, system logs: one capability?
 one capability?	CM-PAY-021 (domain C) and CM-POS-002 (domain E) share terms in-person payments, softpos من جيديا, الدفع بالبطاقه, الربط بحساب جيديا, جهاز الدفع, ربط جهاز الدفع: one capability?
 one capability?	CM-PLN-007 (domain A) and CM-TAX-001 (domain C) share terms taxes, ضريبه القيمه المضافه: one capability?
 one capability?	CM-SUP-008 (domain D) and CM-TRU-020 (domain A) share terms zid assurance, zid stores' customer complaints, الرابط المخصص, شكاوي عملاء متاجر زد, ضمان زد: one capability?

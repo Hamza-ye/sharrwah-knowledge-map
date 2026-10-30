@@ -202,6 +202,7 @@ CM-ANL-001	by landing	decides	SA-C-220/decides/SA-S-2557	report_customers_wishli
 CM-ANL-001	by landing	boundary	SH-C-145/boundary/SH-S-5910	write_analytics_annotations
 CM-ANL-001	exact	decides	BC-C-062/decides/BC-S-0337	Settings V3: Analytics
 CM-ANL-001	exact	decides	BC-C-062/decides/BC-S-0339	Commerce Analytics
+CM-ANL-001	exact	decides	BC-E-84b056a9	plan-comparison
 CM-ANL-001	exact	decides	SA-C-220/decides/SA-S-2044	تحليلات الأرباح
 CM-ANL-001	exact	decides	SA-C-220/decides/SA-S-2046	تحليلات المبيعات
 CM-ANL-001	exact	decides	SA-C-220/decides/SA-S-2047	تحليلات العملاء
@@ -1236,6 +1237,7 @@ CM-B2B-003	exact	boundary	BC-C-007/boundary/BC-S-0051	store/priceList/created
 CM-B2B-003	exact	boundary	BC-C-007/boundary/BC-S-0052	Products
 CM-B2B-003	exact	decides	BC-C-007/decides/BC-S-0049	Price Lists
 CM-B2B-003	exact	decides	BC-C-007/decides/BC-S-0050	Price List Assignment API
+CM-B2B-003	exact	decides	BC-E-5d8219b8	plan-comparison
 CM-B2B-003	exact	decides	S02-SA-024	🚀الأسواق المتعددة
 CM-B2B-003	exact	decides	S02-SA-078	markets/product_prices#option.fixed.description
 CM-B2B-003	exact	decides	S02-SA-082	markets#auto_show_products_in_scope.description
@@ -1466,6 +1468,7 @@ CM-CAT-013	exact	decides	SA-C-020/decides/SA-S-3515	metal-pricing
 CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0097	store_checkout
 CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0099	store/channel/{channel_id}/settings/checkout/updated
 CM-CHK-001	exact	decides	BC-C-016/decides/BC-S-0095	Single-page checkout
+CM-CHK-001	exact	decides	BC-E-84b056a9	plan-comparison
 CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3112	store-checkout
 CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3113	guest-checkout
 CM-CHK-001	exact	decides	SA-C-100/decides/SA-S-3114	embedded-login-checkout
@@ -1634,6 +1637,7 @@ CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0223	store_channel_settings
 CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0225	store/channel/created
 CM-CHN-001	exact	boundary	BC-C-038/boundary/BC-S-0226	type and platform
 CM-CHN-001	exact	decides	BC-C-038/decides/BC-S-0222	channel
+CM-CHN-001	exact	decides	BC-E-647a67f0	plan-comparison
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1596	product.channels.changed
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1598	product.unpublish
 CM-CHN-001	exact	boundary	SA-C-097/boundary/SA-S-1606	product.publish
@@ -1683,6 +1687,7 @@ CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6229	write_marketplace_ord
 CM-CHN-003	by landing	boundary	SH-C-137/boundary/SH-S-6230	write_marketplace_returns
 CM-CHN-003	exact	boundary	BC-C-068/boundary/BC-S-0370	amazon
 CM-CHN-003	exact	decides	BC-C-068/decides/BC-S-0369	Amazon / eBay / Walmart
+CM-CHN-003	exact	decides	BC-E-647a67f0	plan-comparison
 CM-CHN-003	exact	decides	SA-C-097/decides/SA-S-2195	الربط بمنصات التسوّق العالمية
 CM-CHN-003	exact	boundary	SH-C-137/boundary/SH-S-1123	read_marketplace_orders
 CM-CHN-003	exact	boundary	SH-C-137/boundary/SH-S-1124	write_marketplace_orders
@@ -1750,6 +1755,8 @@ CM-CHN-006	exact	decides	ZD-C-116/decides/ZD-S-0500	manage.store.ecosystem.mobil
 CM-CHN-006	exact	decides	ZD-C-116/decides/ZD-S-1083	مدة الاشتراك
 CM-CHN-007	exact	boundary	BC-C-039/boundary/BC-S-0229	partners
 CM-CHN-007	exact	decides	BC-C-039/decides/BC-S-0228	Multi-storefront
+CM-CHN-007	exact	decides	BC-E-ca497769	plan-comparison
+CM-CHN-007	exact	decides	BC-E-d13e7e94	plan-comparison
 CM-CHN-007	exact	decides	SH-C-139/decides/SH-S-7056	Build headless storefronts
 CM-CNT-001	by landing	boundary	SH-C-027/boundary/SH-S-0987	read_files
 CM-CNT-001	by landing	boundary	SH-C-027/boundary/SH-S-0988	write_files
@@ -1924,6 +1931,7 @@ CM-CUS-001	exact	decides	ZD-C-091/decides/ZD-S-0930	Customer Information
 CM-CUS-002	exact	boundary	BC-C-034/boundary/BC-S-0211	store_v2_customers
 CM-CUS-002	exact	decides	BC-C-034/decides/BC-S-0209	Customer groups and segmentation
 CM-CUS-002	exact	decides	BC-C-034/decides/BC-S-0210	Exclusive enterprise feature
+CM-CUS-002	exact	decides	BC-E-5c67f76a	plan-comparison
 CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-2117	تصنيف العملاء إلى مجموعات
 CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-2150	تصنيف تلقائي لمجموعات العملاء
 CM-CUS-002	exact	decides	SA-C-061/decides/SA-S-3161	customer-group
@@ -2141,6 +2149,7 @@ CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0038	Inventory locations
 CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0039	Enterprise plan
 CM-INV-005	exact	decides	BC-C-005/decides/BC-S-0040	Aggregated stock
 CM-INV-005	exact	boundary	BC-C-006/boundary/BC-S-0047	partner solutions
+CM-INV-005	exact	decides	BC-E-b6118ce7	plan-comparison
 CM-INV-005	exact	boundary	SA-C-026/boundary/SA-S-1043	Branches Allocations
 CM-INV-005	exact	boundary	SA-C-026/boundary/SA-S-1616	store.branch.created
 CM-INV-005	exact	decides	SA-C-026/decides/SA-S-2028	زيادة عدد الفروع *برسوم إضافية
@@ -2208,6 +2217,7 @@ CM-LOY-002	by landing	boundary	SH-C-025/boundary/SH-S-0995	read_gift_cards
 CM-LOY-002	by landing	decides	SH-C-025/decides/SH-S-5014	giftcard:create
 CM-LOY-002	by landing	decides	SH-C-025/decides/SH-S-5349	entitlements.products
 CM-LOY-002	exact	decides	BC-C-010/decides/BC-S-0063	Coupons, discounts, and gift cards
+CM-LOY-002	exact	decides	BC-E-77c72bb6	plan-comparison
 CM-LOY-002	exact	decides	SA-C-063/decides/SA-S-3497	wallet-gift-card
 CM-LOY-002	exact	boundary	SH-C-025/boundary/SH-S-5999	read_gift_card_transactions
 CM-LOY-002	exact	boundary	SH-C-025/boundary/SH-S-6000	read_gift_cards
@@ -2228,6 +2238,7 @@ CM-LOY-003	exact	decides	SA-C-063/decides/SA-S-2584	delete_cashback_offers
 CM-LOY-003	exact	decides	SA-C-063/decides/SA-S-3314	cashback-accessibility
 CM-LOY-003	exact	decides	SA-C-063/decides/SA-S-3315	order-summary-cashback
 CM-LOY-003	exact	decides	ZD-C-019/decides/ZD-S-0667	الباقة الاحترافية
+CM-LOY-004	exact	decides	BC-E-5c67f76a	plan-comparison
 CM-LOY-004	exact	boundary	SA-C-064/boundary/SA-S-1141	Loyalty
 CM-LOY-004	exact	decides	SA-C-064/decides/SA-S-2016	نظام ولاء العملاء *برسوم إضافية
 CM-LOY-004	exact	decides	SA-C-064/decides/SA-S-2362	loyalty_system_management
@@ -2516,6 +2527,7 @@ CM-MKT-001	exact	boundary	BC-C-009/boundary/BC-S-0060	store_v2_marketing
 CM-MKT-001	exact	decides	BC-C-009/decides/BC-S-0058	Advanced promotions management
 CM-MKT-001	exact	decides	BC-C-009/decides/BC-S-0059	active promotions
 CM-MKT-001	exact	decides	BC-C-010/decides/BC-S-0063	Coupons, discounts, and gift cards
+CM-MKT-001	exact	decides	BC-E-77c72bb6	plan-comparison
 CM-MKT-001	exact	boundary	SA-C-080/boundary/SA-S-5028	عروض وخصومات البنك
 CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-2532	dev.ucp.shopping.discount
 CM-MKT-001	exact	boundary	SH-C-127/boundary/SH-S-5976	read_discounts
@@ -2527,6 +2539,7 @@ CM-MKT-002	by landing	decides	SA-C-070/decides/SA-S-2585	coupon_delete
 CM-MKT-002	by landing	decides	SA-C-070/decides/SA-S-2586	coupon_statistics
 CM-MKT-002	exact	boundary	BC-C-010/boundary/BC-S-0064	store_v2_marketing
 CM-MKT-002	exact	decides	BC-C-010/decides/BC-S-0063	Coupons, discounts, and gift cards
+CM-MKT-002	exact	decides	BC-E-77c72bb6	plan-comparison
 CM-MKT-002	exact	boundary	SA-C-070/boundary/SA-S-1573	order.coupon.updated
 CM-MKT-002	exact	boundary	SA-C-070/boundary/SA-S-1623	coupon.applied
 CM-MKT-002	exact	decides	SA-C-070/decides/SA-S-2001	كوبونات التخفيض
@@ -2831,6 +2844,7 @@ CM-MKT-020	exact	decides	SA-C-073/decides/SA-S-2382	salla_ads_wallet_management
 CM-MKT-022	by landing	boundary	ZD-C-112/boundary/ZD-S-1071	السلات المتروكة
 CM-MKT-022	by landing	decides	ZD-C-112/decides/ZD-S-1068	100 مكالمة مجانية
 CM-MKT-022	exact	decides	BC-C-015/decides/BC-S-0090	Abandoned cart saver
+CM-MKT-022	exact	decides	BC-E-eedf37f8	plan-comparison
 CM-MKT-022	exact	decides	SA-C-048/decides/SA-S-2099	استهداف السلات المتروكة
 CM-MKT-022	exact	boundary	SA-C-200/boundary/SA-S-1668	customer.cart.abandoned
 CM-MKT-022	exact	decides	SH-C-050/decides/SH-S-5276	entitlements.abandonedCartRecovery
@@ -2948,6 +2962,7 @@ CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5080	pending-termination:payments
 CM-ONB-002	exact	decides	SH-C-014/decides/SH-S-5081	pending-termination:payments:payouts
 CM-ONB-002	exact	decides	ZD-C-026/decides/ZD-S-0719	متجر مفعل
 CM-ONB-003	exact	decides	BC-C-066/decides/BC-S-0077	Closed Betas
+CM-ONB-003	exact	decides	BC-E-0f95540a	plan-comparison
 CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-2194	فريقنا معك في كل خطوة
 CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-2196	مدير حساب مخصص
 CM-ONB-003	exact	decides	SA-C-014/decides/SA-S-3403	intercom-complains
@@ -3941,6 +3956,7 @@ CM-PAY-011	exact	decides	ZD-C-011/decides/ZD-S-0610	الاعدادات > طرق 
 CM-PAY-012	exact	boundary	BC-C-027/boundary/BC-S-0163	wallet-type providers
 CM-PAY-012	exact	boundary	BC-C-027/boundary/BC-S-0164	filterAvailableShippingOptions
 CM-PAY-012	exact	decides	BC-C-027/decides/BC-S-0162	Apple Pay, Google Pay, and Amazon Pay
+CM-PAY-012	exact	decides	BC-E-84b056a9	plan-comparison
 CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0057	الأسئلة الشائعة
 CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0063	الأسئلة الشائعة
 CM-PAY-012	exact	decides	SA-C-110/decides/SA-S-0074	2. وسائل الدفع المفعلة
@@ -4355,6 +4371,8 @@ CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0185	GMV cap
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0186	Automatic Upgrades
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0187	Scale
 CM-PLN-001	exact	boundary	BC-C-066/boundary/BC-S-0363	Beta Powered By > Plans
+CM-PLN-001	exact	decides	BC-E-aaa76a60	plan-comparison
+CM-PLN-001	exact	decides	BC-E-f167af9a	plan-comparison
 CM-PLN-001	exact	boundary	SA-C-004/boundary/SA-S-5002	💰 طريقة استرجاع المبلغ
 CM-PLN-001	exact	decides	SA-C-004/decides/SA-S-3395	enable-special-plan-purchase
 CM-PLN-001	exact	decides	SA-C-004/decides/SA-S-3452	plan-free-trial
@@ -4370,6 +4388,7 @@ CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-7001	Pay monthly
 CM-PLN-001	exact	decides	SH-C-015/decides/SH-S-7002	Pay yearly
 CM-PLN-001	exact	boundary	ZD-C-020/boundary/ZD-S-0677	package_code=rise
 CM-PLN-001	exact	decides	ZD-C-020/decides/ZD-S-0672	Starter; Rise; Growth; Pro
+CM-PLN-002	exact	decides	BC-E-f167af9a	plan-comparison
 CM-PLN-002	exact	decides	SA-C-004/decides/SA-S-2085	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا
 CM-PLN-002	exact	decides	SA-C-004/decides/SA-S-3438	renew-price-by-slug
 CM-PLN-002	exact	boundary	SA-C-005/boundary/SA-S-0089	أولاً: تعريف محفظة متجرك على سلة
@@ -4380,6 +4399,8 @@ CM-PLN-002	exact	decides	ZD-C-020/decides/ZD-S-0672	Starter; Rise; Growth; Pro
 CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0152	Open Payment Provider Fee
 CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0153	Orders through Embedded Payment Providers
 CM-PLN-003	exact	decides	BC-C-026/decides/BC-S-0154	Open Payment Provider Fee
+CM-PLN-003	exact	decides	BC-E-5c661e15	plan-comparison
+CM-PLN-003	exact	decides	BC-E-b0fc5c37	plan-comparison
 CM-PLN-003	exact	decides	SA-C-004/decides/SA-S-2198	بدون عمولة منصة على مبيعاتك
 CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0273	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
 CM-PLN-003	exact	decides	SH-C-018/decides/SH-S-0274	help.shopify.com/en/manual/your-account/manage-billing/billing-charges/types-of-charges/third-party-charges/third-party-transaction-fees.md
@@ -4479,6 +4500,7 @@ CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2663	salla_point_manage_shif
 CM-POS-001	by landing	decides	SA-C-095/decides/SA-S-2664	salla_point_view_online_orders
 CM-POS-001	exact	boundary	BC-C-069/boundary/BC-S-0373	square
 CM-POS-001	exact	decides	BC-C-069/decides/BC-S-0372	Point of sale
+CM-POS-001	exact	decides	BC-E-647a67f0	plan-comparison
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2094	بيع عبر نقاط البيع مع سلة بوينت
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2441	salla_point_activate
 CM-POS-001	exact	decides	SA-C-095/decides/SA-S-2442	salla_point_add_employees
@@ -4742,6 +4764,7 @@ CM-SFR-001	by landing	boundary	WC-C-111/boundary/WC-S-0082	wc/private
 CM-SFR-001	exact	decides	BC-C-038/decides/BC-S-0221	Online storefront
 CM-SFR-001	exact	boundary	BC-C-042/boundary/BC-S-0242	store_themes_manage
 CM-SFR-001	exact	boundary	BC-C-042/boundary/BC-S-0243	store/channel/{channel_id}/theme/configuration/activated
+CM-SFR-001	exact	decides	BC-E-84b056a9	plan-comparison
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2031	اختيار ثيم المتجر
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2033	إنشاء نسخ متعددة من الثيم
 CM-SFR-001	exact	decides	SA-C-090/decides/SA-S-2034	جدولة نشر النسخ
@@ -5009,6 +5032,8 @@ CM-SFR-009	exact	decides	SA-C-007/decides/SA-S-2041	إدارة إعدادات DN
 CM-SFR-010	exact	boundary	BC-C-078/boundary/BC-S-0424	store/channel/{channel_id}/settings/security/updated
 CM-SFR-010	exact	decides	BC-C-078/decides/BC-S-0422	Settings V3: Storefront Security
 CM-SFR-010	exact	decides	BC-C-078/decides/BC-S-0423	Free sitewide HTTPS and dedicated SSL
+CM-SFR-010	exact	decides	BC-E-662e7c0e	plan-comparison
+CM-SFR-010	exact	decides	BC-E-a0579885	plan-comparison
 CM-SFR-010	exact	decides	SA-C-007/decides/SA-S-2038	شهادة SSL مجانية
 CM-SFR-010	exact	boundary	SH-C-036/boundary/SH-S-7465	Domain.sslEnabled
 CM-SFR-010	exact	decides	SH-C-036/decides/SH-S-7032	Unlimited web hosting
@@ -5087,6 +5112,7 @@ CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0067	Settings V3: Storefront Sear
 CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0068	Product filtering
 CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0069	SearchProducts
 CM-SFR-013	exact	decides	BC-C-011/decides/BC-S-0070	Product Filtering settings
+CM-SFR-013	exact	decides	BC-E-5edb8b59	plan-comparison
 CM-SFR-013	exact	decides	SA-C-020/decides/SA-S-2135	إدارة خيارات التصفية الظاهرة للعميل
 CM-SFR-013	exact	decides	SA-C-020/decides/SA-S-3479	products-filters
 CM-SFR-013	exact	boundary	SA-C-091/boundary/SA-S-1444	salla-filters
@@ -5095,6 +5121,8 @@ CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0983	read_discovery
 CM-SFR-013	exact	boundary	SH-C-035/boundary/SH-S-0984	write_discovery
 CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0232	store_sites
 CM-SFR-014	exact	boundary	BC-C-040/boundary/BC-S-0233	store/channel/{channel_id}/settings/site/updated
+CM-SFR-015	exact	decides	SA-C-020/decides/SA-S-1977	عرض مرات الشراء
+CM-SFR-015	exact	decides	SA-C-020/decides/SA-S-1978	عرض المنتجات التي نفدت في نهاية الصفحة
 CM-SHP-001	by landing	boundary	SA-C-145/boundary/SA-S-1104	App Functions
 CM-SHP-001	by landing	boundary	SA-C-145/boundary/SA-S-1113	App Functions
 CM-SHP-001	exact	decides	BC-C-070/decides/BC-S-0378	shipping zones
@@ -5212,6 +5240,7 @@ CM-SHP-004	exact	decides	BC-C-070/decides/BC-S-0377	Real-time shipping quotes
 CM-SHP-004	exact	boundary	BC-C-071/boundary/BC-S-0381	Shipping Providers
 CM-SHP-004	exact	boundary	BC-C-071/boundary/BC-S-0382	Quote URL
 CM-SHP-004	exact	decides	BC-C-071/decides/BC-S-0380	carrier server
+CM-SHP-004	exact	decides	BC-E-3753202c	plan-comparison
 CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-1066	read_shipping
 CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-6292	write_shipping
 CM-SHP-004	exact	boundary	SH-C-115/boundary/SH-S-6293	write_shipping
@@ -5225,6 +5254,7 @@ CM-SHP-006	exact	decides	SA-C-148/decides/SA-S-2029	إتاحة الاستلام 
 CM-SHP-006	exact	decides	SH-C-121/decides/SH-S-5260	shipping:eligibility
 CM-SHP-006	exact	decides	SH-C-121/decides/SH-S-5842	entitlements.shipping.settingsAccess
 CM-SHP-007	by landing	boundary	BC-C-006/boundary/BC-S-0047	partner solutions
+CM-SHP-007	exact	decides	BC-E-b6118ce7	plan-comparison
 CM-SHP-007	exact	decides	SA-C-148/decides/SA-S-2029	إتاحة الاستلام من الفرع
 CM-SHP-007	exact	boundary	SH-C-121/boundary/SH-S-1241	fulfillment_orders/line_items_prepared_for_pickup
 CM-SHP-007	exact	boundary	SH-C-121/boundary/SH-S-6158	unauthenticated_read_product_pickup_locations
@@ -5431,6 +5461,7 @@ CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-2527	ask_browse_review_shipping_c
 CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3014	shipping-ticket-system
 CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3021	shipping-feedback
 CM-SHP-022	exact	decides	SA-C-150/decides/SA-S-3274	shipping-rating
+CM-SHP-023	exact	decides	BC-E-37d8c941	plan-comparison
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0418	BigCommerce mobile app
 CM-SRF-001	exact	decides	BC-C-077/decides/BC-S-0419	License
 CM-SRF-001	exact	decides	SA-C-001/decides/SA-S-2082	تطبيق إدارة المتجر على أجهزة iOS و Android
@@ -5504,6 +5535,7 @@ CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7012	Invite third-party collabora
 CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7167	MANAGE_COLLABORATORS
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0073	Product ratings and reviews
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0074	review submission
+CM-SUP-001	exact	decides	BC-E-69d9bce5	plan-comparison
 CM-SUP-001	exact	boundary	SA-C-030/boundary/SA-S-1039	Reviews
 CM-SUP-001	exact	boundary	SA-C-030/boundary/SA-S-1040	Feedbacks
 CM-SUP-001	exact	boundary	SA-C-030/boundary/SA-S-1561	reviews

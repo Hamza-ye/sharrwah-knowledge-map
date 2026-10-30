@@ -4,3 +4,4 @@ CM-PAY-007	bigcommerce	BigCommerce Payments card processing rate, per plan (Core
 CM-PAY-002	bigcommerce	Who can use BigCommerce Payments	Initially, BigCommerce Payments is available only to US-based merchants with self-serve and retail plans.	BC-C-025/decides/BC-S-0143	US-based merchants with self-serve and retail plans
 CM-PAY-011	bigcommerce	Pre-integrated payment solutions, their countries and currencies	Choose from more than 65 pre-integrated online payment solutions, serving 150+ countries and over 140 currencies.	BC-C-026/where/BC-S-0150	
 CM-TAX-004	bigcommerce	Tax estimate request timeout	The default timeout threshold of four seconds is intended to support a wide variety of use cases (e.g., large tax estimate requests).	BC-C-073/boundary/BC-S-0394	
+CM-TAX-004	bigcommerce	document_submission supported	false	BC-E-eeff4eae	US

@@ -124,8 +124,8 @@ CM-APP-004	bigcommerce	core	BC-I-0210	the webhook topic store/app/uninstalled
 CM-APP-009	bigcommerce	core	BC-C-056/decides/BC-S-0303	merchants create store-level API accounts in Settings > Store-level API accounts
 CM-APP-009	bigcommerce	extension-point	BC-C-059/decides/BC-S-0326	only approved partners can create unlisted apps
 CM-APP-011	bigcommerce	shows	BC-C-084/boundary/BC-S-0464	an Extension is a Service, not a Third-Party Product
-CM-APP-011	bigcommerce	own-service	BC-C-079/responsible/BC-S-0428	Commerce.com US, Inc. contracts for the Ecommerce Platform, Extensions and certain Professional Services
-CM-APP-011	bigcommerce	own-service	BC-C-079/responsible/BC-S-0432	Commerce.com Pty. Ltd. contracts for them in any other jurisdiction
+CM-APP-011	bigcommerce	shows	BC-C-079/responsible/BC-S-0428	Commerce.com US, Inc. contracts for the Ecommerce Platform, Extensions and certain Professional Services; an Extension is a service a third party develops and Commerce provides (the terms), not an app its company makes (M-2)
+CM-APP-011	bigcommerce	shows	BC-C-079/responsible/BC-S-0432	Commerce.com Pty. Ltd. contracts for them in any other jurisdiction; an Extension is a service a third party develops and Commerce provides (the terms), not an app its company makes (M-2)
 CM-DVT-006	bigcommerce	core	BC-C-076/where/BC-S-0413	Staging environments: test, preview and deploy updates without disrupting live storefronts
 CM-DVT-006	bigcommerce	core	BC-I-0540	the product line Staging environments
 CM-DVT-006	bigcommerce	core	BC-C-076/decides/BC-S-0414	StagingPro, a sandbox, testing, staging and CI/CD solution for Enterprise-level stores
@@ -150,3 +150,6 @@ CM-PTN-010	bigcommerce	core	BC-I-0115	the API resource Beta Powered By
 CM-PTN-010	bigcommerce	extension-point	BC-C-066/decides/BC-S-0362	the partner may own the billing relationship for its merchant's products, or let BigCommerce bill the merchant
 CM-PTN-010	bigcommerce	shows	BC-C-066/decides/BC-S-0077	closed beta, not available by default; access through BigCommerce support
 CM-AIA-005	bigcommerce	core	BC-I-0105	the API resource Agent Behavior for Tool Resynchronization (mcp)
+CM-APP-009	bigcommerce	core	BC-E-ee188366	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (API and MCP, /manage/microapps/api-accounts-ui): the cell's Settings > Store-level API accounts (BC-S-0303), credentials the store creates for its own apps and integrations: group: API and MCP; section: Store-level API accounts; description: Create specific permissions for some apps and integ…
+CM-API-013	bigcommerce	core	BC-E-8aba4e14	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (API and MCP, accounts.bigcommerce.com/tokens): credentials for account-level operations: group: API and MCP; section: Account-level API accounts; description: Create specific permissions for some account leve…
+CM-AIA-005	bigcommerce	core	BC-E-33ed56b2	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (API and MCP, /manage/microapps/ai-labs-ui/mcp-settings): MCP endpoints the platform provides, enabled and configured by the merchant; the source marks it 'new' (release marker); CM-AIA-005's cell already cites the same place, Settings > API and MCP > MCP (BC-S-0343) (the review, R3): group: API and MCP; section: MCP; description: Enable and configure Model Context Protocol endpoints for AI agents

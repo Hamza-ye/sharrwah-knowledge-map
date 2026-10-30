@@ -39,3 +39,71 @@ CM-SHP-004	bigcommerce	FedEx	BC-C-070/decides/BC-S-0377
 CM-SHP-004	bigcommerce	Australia Post	BC-C-070/decides/BC-S-0377
 CM-SHP-004	bigcommerce	Royal Mail	BC-C-070/decides/BC-S-0377
 CM-SHP-004	bigcommerce	Canada Post	BC-C-070/decides/BC-S-0377
+CM-PAY-011	bigcommerce	Access Worldpay	BC-E-f0e04f44
+CM-PAY-011	bigcommerce	Adyen	BC-E-239998be
+CM-PAY-011	bigcommerce	Affirm	BC-E-20931e4d
+CM-PAY-011	bigcommerce	Afterpay	BC-E-5a2f62ec
+CM-PAY-011	bigcommerce	Amazon Pay	BC-E-d53846c8
+CM-PAY-011	bigcommerce	Bankful	BC-E-42005079
+CM-PAY-011	bigcommerce	Bank of New Zealand	BC-E-fbca5745
+CM-PAY-011	bigcommerce	BlueSnap Direct	BC-E-635abbb1
+CM-PAY-011	bigcommerce	Braintree	BC-E-e949c2d0
+CM-PAY-011	bigcommerce	Checkout.com	BC-E-73a852c6
+CM-PAY-011	bigcommerce	Clearpay	BC-E-133288ac
+CM-PAY-011	bigcommerce	Heartland Payment Systems	BC-E-edafd6c3
+CM-PAY-011	bigcommerce	Klarna Payments	BC-E-7c056476
+CM-PAY-011	bigcommerce	PayPal	BC-E-cdfd43cd
+CM-PAY-011	bigcommerce	Sezzle	BC-E-2ed589d1
+CM-PAY-011	bigcommerce	Stripe UPE	BC-E-328a176d
+CM-PAY-011	bigcommerce	Stripe OCS	BC-E-6cb20325
+CM-PAY-011	bigcommerce	TD Online Mart	BC-E-31a27c43
+CM-PAY-011	bigcommerce	Worldpay B2B Payments	BC-E-e858b553
+CM-PAY-011	bigcommerce	Worldpay Ecomm	BC-E-d8c9b102
+CM-PAY-011	bigcommerce	Worldpay Core	BC-E-ede6270a
+CM-PAY-011	bigcommerce	Zip	BC-E-ab328638
+CM-PAY-011	bigcommerce	Acumatica Payments	BC-E-94dc169c
+CM-PAY-011	bigcommerce	Payfabric (Global Payments)	BC-E-d9569dda
+CM-PAY-011	bigcommerce	Bankful	BC-E-424bf3a5
+CM-PAY-011	bigcommerce	Sezzle	BC-E-eb389653
+CM-PAY-011	bigcommerce	Fortis	BC-E-b190eff2
+CM-PAY-011	bigcommerce	Worldpay WPG	BC-E-c78a8af7
+CM-PAY-011	bigcommerce	Klarna Checkout	BC-E-956f3297
+CM-PAY-011	bigcommerce	Authorize.net	BC-E-b0510ca9
+CM-PAY-011	bigcommerce	Barclaycard Smartpay Advance	BC-E-cde490f8
+CM-PAY-011	bigcommerce	BitPay	BC-E-9242892a
+CM-PAY-011	bigcommerce	Chase Merchant Services	BC-E-6eb88bc8
+CM-PAY-011	bigcommerce	Clover Payments	BC-E-0c310cac
+CM-PAY-011	bigcommerce	Commonwealth Bank	BC-E-bbd3b63f
+CM-PAY-011	bigcommerce	Cybersource	BC-E-2d3f67de
+CM-PAY-011	bigcommerce	Electronic Payment Exchange (EPX)	BC-E-e58ac0ed
+CM-PAY-011	bigcommerce	Eway Rapid	BC-E-a29d8446
+CM-PAY-011	bigcommerce	Mercado Pago	BC-E-a1b8ba70
+CM-PAY-011	bigcommerce	Moneris	BC-E-fd712eac
+CM-PAY-011	bigcommerce	MyVirtualMerchant	BC-E-23ad10eb
+CM-PAY-011	bigcommerce	Nexi XPay	BC-E-bd6fd9b0
+CM-PAY-011	bigcommerce	NMI	BC-E-3c2c8dd6
+CM-PAY-011	bigcommerce	Opayo by Elavon	BC-E-a48d26c9
+CM-PAY-011	bigcommerce	Optty	BC-E-35a95d3f
+CM-PAY-011	bigcommerce	QuickBooks Payments	BC-E-50ea892f
+CM-PAY-011	bigcommerce	Serve First	BC-E-384ba7ca
+CM-PAY-011	bigcommerce	Square	BC-E-5bfc8116
+CM-PAY-011	bigcommerce	Tilopay	BC-E-b327dda2
+CM-PAY-011	bigcommerce	USAePay	BC-E-87d83ccc
+CM-PAY-011	bigcommerce	Windcave	BC-E-b8fe8dff
+CM-PAY-012	bigcommerce	Amazon Pay	BC-E-d53846c8
+CM-PAY-012	bigcommerce	Apple Pay	BC-E-84b056a9
+CM-PAY-012	bigcommerce	Amazon Pay	BC-E-84b056a9
+CM-PAY-013	bigcommerce	PayPal	BC-E-cdfd43cd
+CM-SHP-004	bigcommerce	UPS	BC-E-3753202c
+CM-SHP-004	bigcommerce	USPS	BC-E-3753202c
+CM-SHP-004	bigcommerce	FedEx	BC-E-3753202c
+CM-SHP-004	bigcommerce	Australia Post	BC-E-3753202c
+CM-SHP-004	bigcommerce	Royal Mail	BC-E-3753202c
+CM-SHP-004	bigcommerce	Canada Post	BC-E-3753202c
+CM-TAX-004	bigcommerce	Avalara	BC-E-0b4cb55e
+CM-TAX-004	bigcommerce	CereTax	BC-E-27c32ddc
+CM-TAX-004	bigcommerce	TaxCloud	BC-E-a7aba7fa
+CM-TAX-004	bigcommerce	TaxJar	BC-E-eeff4eae
+CM-TAX-004	bigcommerce	Vertex	BC-E-825576d5
+CM-TAX-004	bigcommerce	CCH® SureTax®	BC-E-6d820cd8
+CM-TAX-006	bigcommerce	Avalara	BC-E-0b4cb55e

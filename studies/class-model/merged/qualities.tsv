@@ -39,6 +39,13 @@ CM-TRU-018	bigcommerce	Tier 1 certifications	an ever-growing list of Tier 1 cert
 CM-TRU-014	bigcommerce	data location, Google (infrastructure hosting)	USA, Germany, or Australia	BC-C-082/where/BC-S-0446	A-bigcommerce
 CM-TRU-014	bigcommerce	data location, Amazon (data hosting)	Hosting customer / product catalog data, feed data, logs, etc. USA	BC-C-082/where/BC-S-0447	A-bigcommerce
 CM-TRU-014	bigcommerce	data location, Cloudflare (DDoS mitigation and CDN)	USA, with globally decentralized CDN	BC-C-082/where/BC-S-0448	A-bigcommerce
+CM-PLN-003	bigcommerce	Surcharge rate	2% (Core), 1% (Growth), 0.6% (Scale), 0% (Performance)	BC-E-5c661e15	A-bigcommerce
+CM-PLN-003	bigcommerce	additional transaction fees to use leading payment gateways	No (Core, Growth, Scale, Performance)	BC-E-b0fc5c37	A-bigcommerce
+CM-PLN-001	bigcommerce	Online sales per year	Up to $30k (Core), Up to $100k (Growth), Up to $2000k (Scale), Custom (Performance)	BC-E-aaa76a60	A-bigcommerce
+CM-PLN-001	bigcommerce	Core	$39 monthly or $29/mo billed annually	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Growth	$105 or $79	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Scale	$399 or $299	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Performance	by quote	BC-E-f167af9a	A-bigcommerce
 CM-CAT-001	shopify	products a store may sell	Sell unlimited products: Included, Included, Included, Included	SH-C-020/decides/SH-S-7004	B-anchor
 CM-CAT-001	salla	number of products	عدد لا محدود من المنتجات	SA-C-020/decides/SA-S-1949	B-anchor
 CM-CAT-002	shopify	variants per product	create up to 100 variants for each of your products	SH-C-020/decides/SH-S-7214	B-anchor
@@ -62,6 +69,7 @@ CM-INV-008	zid	how long the product is held while card payment is entered	سوف
 CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801	B-zid
 CM-INV-005	bigcommerce	inventory locations on the Core, Growth, Scale and Performance plans	Up to 4 Up to 5 Up to 8 Custom	BC-C-005/decides/BC-S-0038	B-bigcommerce
 CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise plan: 100; can be customized by request	BC-C-005/decides/BC-S-0039	B-bigcommerce
+CM-INV-005	bigcommerce	Inventory locations	Up to 4 (Core), Up to 5 (Growth), Up to 8 (Scale), Up to 50 (Performance)	BC-E-b6118ce7	B-bigcommerce
 CM-CHK-002	shopify	Add-to-cart limit, default recommended limit	If you've made less than 250 sales, then the default recommended limit for your store is set to 50.	SH-C-046/decides/SH-S-7484	C-anchor
 CM-ORD-001	shopify	App access to orders, default window	By default, your app has access to orders placed in the last 60 days.	SH-C-054/boundary/SH-S-5932	C-anchor
 CM-ORD-001	salla	Number of orders, plan سلة بلس	عدد لا محدود من الطلبات	SA-C-040/decides/SA-S-1950	C-anchor
@@ -144,6 +152,7 @@ CM-PAY-007	bigcommerce	BigCommerce Payments card processing rate, per plan (Core
 CM-PAY-002	bigcommerce	Who can use BigCommerce Payments	Initially, BigCommerce Payments is available only to US-based merchants with self-serve and retail plans.	BC-C-025/decides/BC-S-0143	C-bigcommerce
 CM-PAY-011	bigcommerce	Pre-integrated payment solutions, their countries and currencies	Choose from more than 65 pre-integrated online payment solutions, serving 150+ countries and over 140 currencies.	BC-C-026/where/BC-S-0150	C-bigcommerce
 CM-TAX-004	bigcommerce	Tax estimate request timeout	The default timeout threshold of four seconds is intended to support a wide variety of use cases (e.g., large tax estimate requests).	BC-C-073/boundary/BC-S-0394	C-bigcommerce
+CM-TAX-004	bigcommerce	document_submission supported	false	BC-E-eeff4eae	C-bigcommerce
 CM-B2B-003	shopify	B2B catalogs per plan	Shopify B2B: Up to 3 catalogs; Up to 3 catalogs; Up to 3 catalogs; Unlimited catalogs	SH-C-044/decides/SH-S-7008	D-anchor
 CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 3	SH-C-037/decides/SH-S-5532	D-anchor
 CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 75000	SH-C-037/decides/SH-S-5535	D-anchor
@@ -191,6 +200,8 @@ CM-CHN-007	bigcommerce	Multi-storefront, added storefronts per plan	Add storefro
 CM-CHN-004	bigcommerce	Feedonomics Surface, free SKUs	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	E-bigcommerce
 CM-MKS-008	bigcommerce	Locales per storefront	Each storefront can have up to 5 locales.	BC-C-048/decides/BC-S-0273	E-bigcommerce
 CM-MKS-006	bigcommerce	Currencies accepted	Accept payments in over 100+ currencies	BC-C-074/decides/BC-S-0400	E-bigcommerce
+CM-CHN-007	bigcommerce	Storefronts that can be added	4 (Core), 5 (Growth), 8 (Scale), 15 (Performance)	BC-E-ca497769	E-bigcommerce
+CM-CHN-007	bigcommerce	Cost of each additional storefront	$30 (Core), $50 (Growth), $100 (Scale), $100 (Performance)	BC-E-d13e7e94	E-bigcommerce
 CM-CHN-007	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056	E-backfill-bigcommerce
 CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	F-anchor
 CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	F-anchor

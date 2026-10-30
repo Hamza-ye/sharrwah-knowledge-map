@@ -3,7 +3,7 @@ CM-AIA-001	bigcommerce	statements	core;extension-point;outside			BC-C-059/reason
 CM-AIA-002	bigcommerce	statements	core	BigCommerce Companion		BC-C-064/reason:searched, not found	general
 CM-AIA-003	bigcommerce	statements	core	BigAI		BC-C-064/reason:searched, not found	general
 CM-AIA-004	bigcommerce	none-held					
-CM-AIA-005	bigcommerce	statements	core;extension-point	/developer/api-reference/mcp/overview | Settings > API and MCP > MCP		BC-C-063/reason:searched, not found	general
+CM-AIA-005	bigcommerce	statements	core;extension-point	/developer/api-reference/mcp/overview | Settings > API and MCP > MCP | settings-list		BC-C-063/reason:searched, not found	general
 CM-API-001	bigcommerce	statements	core	Admin API		BC-C-054/decides:searched, not found;BC-C-054/responsible:stated only in general terms;BC-C-054/reason:searched, not found	general
 CM-API-002	bigcommerce	statements	core	API accounts | single-click and connector		BC-C-059/reason:searched, not found	general
 CM-API-003	bigcommerce	statements	core			BC-C-059/reason:searched, not found	general
@@ -16,7 +16,7 @@ CM-API-009	bigcommerce	none-held
 CM-API-010	bigcommerce	none-held					
 CM-API-011	bigcommerce	none-held					
 CM-API-012	bigcommerce	none-held					
-CM-API-013	bigcommerce	statements	core	/developer/api-reference/graphql/account/overview | Account API		BC-C-029/responsible:searched, not found;BC-C-055/decides:searched, not found;BC-C-055/responsible:stated only in general terms;BC-C-055/reason:searched, not found	general
+CM-API-013	bigcommerce	statements	core	/developer/api-reference/graphql/account/overview | Account API | settings-list		BC-C-029/responsible:searched, not found;BC-C-055/decides:searched, not found;BC-C-055/responsible:stated only in general terms;BC-C-055/reason:searched, not found	general
 CM-APP-001	bigcommerce	statements	core;extension-point	Scope | single-click and connector		BC-C-059/reason:searched, not found;BC-C-079/reason:searched, not found;BC-C-084/reason:searched, not found	general
 CM-APP-002	bigcommerce	statements	core;extension-point	Unified Billing		BC-C-029/responsible:searched, not found;BC-C-059/reason:searched, not found	general
 CM-APP-003	bigcommerce	statements	core;outside	Unified Billing	BC-C-029/boundary/BC-S-0182=United States, United Kingdom, and Canada | BC-C-029/responsible/BC-S-0175=United States, United Kingdom, and Canada | BC-C-029/responsible/BC-S-0176=United States, United Kingdom, and Canada | BC-C-029/responsible/BC-S-0177=India | BC-C-029/responsible/BC-S-0178=India	BC-C-029/responsible:searched, not found	general
@@ -25,9 +25,9 @@ CM-APP-005	bigcommerce	none-held
 CM-APP-006	bigcommerce	none-held					
 CM-APP-007	bigcommerce	none-held					
 CM-APP-008	bigcommerce	none-held					
-CM-APP-009	bigcommerce	statements	core;extension-point			BC-C-059/reason:searched, not found	general
+CM-APP-009	bigcommerce	statements	core;extension-point	settings-list		BC-C-059/reason:searched, not found	general
 CM-APP-010	bigcommerce	none-held					
-CM-APP-011	bigcommerce	statements	own-service		BC-C-079/responsible/BC-S-0428=Country of Residence of Merchant: United States | BC-C-079/responsible/BC-S-0432=Country of Residence of Merchant: Any other jurisdiction	BC-C-079/reason:searched, not found;BC-C-084/reason:searched, not found	Country of Residence of Merchant: Any other jurisdiction | Country of Residence of Merchant: United States
+CM-APP-011	bigcommerce	statements	not-stated		BC-C-079/responsible/BC-S-0428=Country of Residence of Merchant: United States | BC-C-079/responsible/BC-S-0432=Country of Residence of Merchant: Any other jurisdiction	BC-C-079/reason:searched, not found;BC-C-084/reason:searched, not found	
 CM-APP-012	bigcommerce	none-held					
 CM-AUT-001	bigcommerce	none-held					
 CM-DVT-001	bigcommerce	none-held					

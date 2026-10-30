@@ -5,3 +5,5 @@ CM-CHN-007	bigcommerce	Multi-storefront, added storefronts per plan	Add storefro
 CM-CHN-004	bigcommerce	Feedonomics Surface, free SKUs	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365
 CM-MKS-008	bigcommerce	Locales per storefront	Each storefront can have up to 5 locales.	BC-C-048/decides/BC-S-0273
 CM-MKS-006	bigcommerce	Currencies accepted	Accept payments in over 100+ currencies	BC-C-074/decides/BC-S-0400
+CM-CHN-007	bigcommerce	Storefronts that can be added	4 (Core), 5 (Growth), 8 (Scale), 15 (Performance)	BC-E-ca497769
+CM-CHN-007	bigcommerce	Cost of each additional storefront	$30 (Core), $50 (Growth), $100 (Scale), $100 (Performance)	BC-E-d13e7e94

@@ -1,0 +1,9 @@
+cap_id	platform	supports	key	why
+CM-SFR-015	shopify	extension-point	SH-I-1924	App Store category Product display apps
+CM-SFR-015	shopify	extension-point	SH-I-1927	App Store category Product display - Other
+CM-SFR-015	salla	core	SA-C-020/decides/SA-S-1977	plan line عرض مرات الشراء, show the number of purchases
+CM-SFR-015	salla	core	SA-C-020/decides/SA-S-1978	plan line عرض المنتجات التي نفدت في نهاية الصفحة, sold-out products at the end of the page
+CM-SFR-015	woocommerce	extension-point	WC-C-104/where/WC-S-0736	Marketplace category Extensions > Merchandising > Product display
+CM-SFR-015	bigcommerce	core	BC-E-812a36d2	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (General, viewSettings#DisplaySettingsTab): settings for how products, categories and the control panel display; no capability holds them: group: General; section: Display; description: Settings related to displaying products, categories, control panel etc.
+CM-SFR-016	bigcommerce	core	BC-E-ba87a83d	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (General, viewSettings#SocialSettingsTab): social sharing on product pages and blog posts; no capability holds it: group: General; section: Share; description: Social sharing settings on product pages and blog posts
+CM-CNT-010	bigcommerce	core	BC-E-9087905a	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (General, viewSettings#URLStructure): the format of the store's product, category and page URLs; not read as Salla's Custom URLs, which no statement defines: group: General; section: URL structure; description: Product, category and web pages URL settings
