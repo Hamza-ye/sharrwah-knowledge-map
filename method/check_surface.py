@@ -77,7 +77,7 @@ ALLOWED = {
     ("studies/class-model/points/", "the milestone reports"): "S-02's register rows M1 to M9, which the points' files name, not the history's milestone reports",
     ("studies/class-model/q3/", "the milestone reports"): "S-02's register rows M1 to M9, which Q3's check names, not the history's milestone reports",
     ("studies/class-model/q3/", "the glossary"): "the Knowledge Map's own question LNG-01, which asks for a glossary, placed by Q3's check, not the history's glossary",
-    ("studies/class-model/held/", "the glossary"): "the platforms' own pages named glossary (Shopify's Help Center sections), listed as the held pass's entries, not the history's glossary",
+    ("studies/class-model/held/", "the milestone reports"): "a carrier's name in Shopify's list of tracking carriers (\"M3 Logistics\"), held as the held pass's entry, not the history's milestone reports",
     ("studies/class-model/held-vs-read.tsv", "the glossary"): "the address of Salla's community glossary page, counted among the pages held, not the history's glossary",
     ("STATE.md", "the Knowledge Map"): "the founder's decisions of 30 October: the architecture plan's sources graded by its source types, and its page rebuilt from the model at GM",
     ("studies/class-model/inspection-R.md", "the obligation model"): "the inspection's name for its test model directory, `model/`, in the inspector's scratchpad",
