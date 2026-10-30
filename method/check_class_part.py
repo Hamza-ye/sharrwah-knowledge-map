@@ -476,6 +476,18 @@ def check_part(d):
             need_r.add(cid)
         if kind == "woocommerce" and set(wc) & taken:
             need_r.add(cid)
+    # a ruling is tested on its own keys: the statements it says stand for the candidate, and the capabilities that cite them
+    citing = {}
+    for pr in prior + [part]:
+        for r in pr["evidence.tsv"]:
+            if r["cap_id"] in caps:
+                citing.setdefault(r["key"], set()).add(r["cap_id"])
+
+    def ancestors(c):
+        out, seen = set(), set()
+        while c in caps and caps[c]["parent"].strip() and c not in seen:
+            seen.add(c); c = caps[c]["parent"].strip(); out.add(c)
+        return out
     got_r = set()
     for r in part["rulings.tsv"]:
         w = f"rulings.tsv line {r['_line']}"
@@ -485,28 +497,33 @@ def check_part(d):
         got_r.add(r["candidate_id"])
         if not r["basis"].strip():
             problem(f"{w}: basis is empty")
-        for k in semi(r["keys"]):
+        keys = semi(r["keys"])
+        for k in keys:
             if not statement_of(k, stm):
                 problem(f"{w}: {k!r} is not a statement key")
         sh, sa, wc = ids(u["shopify"]), ids(u["salla"]), ids(u["woocommerce"])
-        if kind == "anchor":
-            mine, theirs = [x for x in sh if x in where_landed], [x for x in sa if x in where_landed]
-        else:
-            mine, theirs = [x for x in wc if x in taken], [x for x in sh + sa if x in where_landed]
-        if r["ruling"].startswith("joined:"):
-            cap = r["ruling"][7:]
+        mine, theirs = (sh, sa) if kind == "anchor" else (wc, sh + sa)
+        km = [k for k in keys if k.split("/")[0] in mine]
+        kt = [k for k in keys if k.split("/")[0] in theirs]
+        cm = set().union(*[citing.get(k, set()) for k in km]) if km else set()
+        ct = set().union(*[citing.get(k, set()) for k in kt]) if kt else set()
+        ru = r["ruling"]
+        if ru.startswith("joined:") or ru.startswith("nested:"):
+            cap = ru.split(":", 1)[1]
             if cap not in caps:
                 problem(f"{w}: {cap} is not a capability"); continue
-            fam = family(cap, caps)
-            if not (any(where_landed[x] in fam for x in mine) and any(where_landed[x] in fam for x in theirs)):
-                problem(f"{w}: joined:{cap}, but the candidate's concerns don't both land in {cap}, its parent or its children")
-        elif r["ruling"] == "apart":
-            for x in mine:
-                for y in theirs:
-                    if where_landed[y] in family(where_landed[x], caps):
-                        problem(f"{w}: apart, but {x} and {y} land together ({where_landed[x]}, {where_landed[y]})")
+            if not km or not kt:
+                problem(f"{w}: {ru} names keys of both sides of the candidate in keys")
+            elif ru.startswith("joined:") and not (cap in cm and cap in ct):
+                problem(f"{w}: joined:{cap}, but {cap}'s cells don't cite keys of both sides")
+            elif ru.startswith("nested:") and not ((cap in cm and ancestors(cap) & ct) or (cap in ct and ancestors(cap) & cm)):
+                problem(f"{w}: nested:{cap}, but its keys aren't cited in {cap} on one side and in a parent of it on the other")
+        elif ru == "apart":
+            both = cm & ct
+            if both:
+                problem(f"{w}: apart, but {', '.join(sorted(both))} cites keys of both sides: joined?")
         else:
-            problem(f"{w}: ruling must be joined:<cap_id> or apart")
+            problem(f"{w}: ruling must be joined:<cap_id>, nested:<cap_id> or apart")
     for cid in sorted(need_r - got_r):
         problem(f"rulings.tsv: no ruling on {cid}, which holds concerns whose join this part decides")
 

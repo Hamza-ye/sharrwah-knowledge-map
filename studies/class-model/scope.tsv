@@ -409,7 +409,7 @@ woocommerce	WC-C-057	A	C	Taxes; VAT/GST/CT on Woo's own fees (PLN); M-009
 woocommerce	WC-C-058	C	E	customs charges, import taxes or duties; Product customs data (TAX); M-042
 woocommerce	WC-C-059	F		Third-Party Services; extensions (APP); M-067
 woocommerce	WC-C-060	C		WooCommerce Shipping: labels and carrier rates (SHP); M-047
-woocommerce	WC-C-061	C	F	Extensions > Shipping, delivery and fulfillment; shipping partner suggestions (SHP)
+woocommerce	WC-C-061	C	B;F	Extensions > Shipping, delivery and fulfillment; shipping partner suggestions (SHP); also B: its Marketplace category Fulfillment and dropshipping (WC-S-0713) is WooCommerce's only statement on product sourcing (the coordinator, from B-woocommerce's notes)
 woocommerce	WC-C-062	A		WooCommerce Support Policy; Public forums (ONB); M-066
 woocommerce	WC-C-063	F		Connection to WooCommerce.com; WooCommerce > Extensions: extension installs and subscriptions (APP)
 woocommerce	WC-C-064	B		Products; Product variations; Attributes; Categories; where Products (CAT); M-011
@@ -455,7 +455,7 @@ woocommerce	WC-C-103	D		B2B; B2B payments; where Extensions > Merchandising > B2
 woocommerce	WC-C-104	B	D	Merchandising; Bundles; Gifts; Product options: merchandising extensions; the channel doesn't set the domain (CAT)
 woocommerce	WC-C-105	D		Conversion; Promotions; Rewards and loyalty; Upsells and cross-sells (MKT)
 woocommerce	WC-C-106	D		Customer service; Live chat; Support (SUP)
-woocommerce	WC-C-107	E		Store content and customizations; Search and navigation (SFR)
+woocommerce	WC-C-107	E	B	Store content and customizations; Search and navigation (SFR); also B: its Marketplace category Product images and media (WC-S-0742) is WooCommerce's only statement on product media (the coordinator, from B-woocommerce's notes)
 woocommerce	WC-C-108	E		International and localization extensions (MKS)
 woocommerce	WC-C-109	G	A;C;D	Store management: insights, import and export, order management, policy and security, accounting (SRF)
 woocommerce	WC-C-110	D		Extensions > Marketing; Advertising; Email; Social (MKT); M-051

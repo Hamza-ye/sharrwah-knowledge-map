@@ -69,14 +69,14 @@ Columns: `platform` · `concern_id` · `domain` · `also` (other domains, `;`-se
 
 **Write a cell for every capability and both platforms,** with its evidence (below). Where a platform's statements show nothing for a capability, search them (`search`) in every language they use, and write `none-held` with the terms you searched. The search ignores case, diacritics, hamza seats and tatweel, and reads ة as ه and ى as ي. A broken plural is another word, so search each Arabic term in its singular and its plural, with and without ال.
 
-**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`: `joined:<cap_id>` where you land them together (in one capability, or one and its parent or child), or `apart`, with the basis and keys. Where `scope.tsv` puts the candidate's other concern in another domain, the ruling is `apart`, with the basis "scope.tsv gives <concern> domain <X>". You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
+**Rule on every unclear candidate that holds a Shopify and a Salla concern,** one of which you land, in `rulings.tsv`. Its `keys` are the statements of each side that stand for what the candidate asks about. Then `joined:<cap_id>` where one capability's cells cite keys of both sides; `nested:<cap_id>` where that capability cites one side's and a parent of it the other's, a finer part of a coarser thing; or `apart`, where no capability cites both. Where `scope.tsv` puts the candidate's other concern in another domain, the ruling is `apart`, with the basis "scope.tsv gives <concern> domain <X>". You rule on the Shopify–Salla join only; WooCommerce's part rules on its own concerns' joins.
 
 ## The mapping parts
 
 **Take** your platform's concerns that `scope.tsv` gives the domain, and read the domain's model so far (`model --domain D`): the anchor and every earlier mapping part.
 - **Land each concern once:** in a capability of the model so far, where it is the same thing by a Q1 match (WooCommerce only), terms, identifiers or definition (a join on role is a reading, citing both sides); or in a new capability that only your platform shows so far, numbered past the model's highest in its area. Where a fit is strained, mark it `strained`, and say what doesn't fit, so the reviewer can split it.
 - **Write your platform's cell for every capability of the model so far,** and for your new ones: its evidence, or `none-held` with the terms searched.
-- **WooCommerce** also rules on every unclear candidate that holds a WooCommerce concern it lands: `joined:<cap_id>` where that concern lands with another of the candidate's concerns, or `apart`. Zid and BigCommerce have none.
+- **WooCommerce** also rules on every unclear candidate that holds a WooCommerce concern it lands, the same way: `joined:<cap_id>`, `nested:<cap_id>` or `apart`, for that concern against the candidate's others. Zid and BigCommerce have none.
 
 ## The back-fill parts
 

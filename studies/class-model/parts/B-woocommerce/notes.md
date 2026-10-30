@@ -270,3 +270,8 @@ Nothing the checker flagged is left unanswered.
    CM-INV-001.
 9. Reading webhook topics as WooCommerce's "code for its own feature", so `core` under the coordinator's ruling.
 10. Writing two rulings for U-061, one per WooCommerce concern.
+
+
+## The coordinator's corrections (30 October)
+
+The checker's ruling test was corrected after this part ran. Its old test read any capability under a common parent as landing together, so this part had to rule U-005 and U-070 `joined`. Its own bases say the joins they ask about aren't made: product custom fields with metafields, and cost of goods with a Shopify product cost, for which no Shopify statement is held. They now read `apart`, as the bases say.

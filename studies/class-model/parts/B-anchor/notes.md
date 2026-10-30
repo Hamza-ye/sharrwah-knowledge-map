@@ -279,3 +279,8 @@ Nothing the checker flagged is left unanswered.
 - **Seed leads not modeled:** Shopify's gift cards (SH-C-025) and Salla's gifting (SA-C-077) are domain D's in
   scope.tsv, so no SEL capability holds them; a mapping part that finds gift cards sold as products should look in
   domain D first.
+
+
+## The coordinator's corrections (30 October)
+
+The checker's ruling test was corrected after this part ran: a ruling is now tested on its own keys, and `joined:<cap_id>` means one capability's cells cite keys of both sides. U-016 and U-082 were ruled `apart` because their concerns can't land together (other domains, or a coarse concern), while this part made one capability holding both sides' statements: product sourcing (CM-CAT-010) and donations (CM-SEL-007). The rulings now say `joined` on those capabilities, which is what the cells show. The concerns' landings are unchanged.
