@@ -1644,3 +1644,141 @@ CM-SHP-009	shopify	core	SH-C-119/decides/SH-S-6234	the same fulfillment-order wr
 CM-SHP-009	shopify	core	SH-C-119/decides/SH-S-6235	the same fulfillment-order write requirement, under SH-C-119
 CM-SHP-009	shopify	core	SH-C-119/decides/SH-S-6302	the same fulfillment-order write requirement, under SH-C-119
 CM-SHP-009	shopify	extension-point	SH-C-119/boundary/SH-S-6233	order management apps manage all fulfillment orders, under SH-C-119
+CM-SHP-015	salla	core	SA-C-139/where/SA-S-1045	Merchant API folder Shipping Companies
+CM-SHP-015	salla	core	SA-C-139/boundary/SA-S-1045	the same folder, under boundary
+CM-SHP-015	salla	core	SA-C-141/where/SA-S-1045	the same folder, under SA-C-141
+CM-SHP-015	salla	core	SA-C-141/boundary/SA-S-1045	the same folder, under SA-C-141's boundary
+CM-SHP-015	salla	core	SA-C-145/boundary/SA-S-1117	API folder Shipping Companies in the shipping apps' APIs
+CM-SHP-015	salla	core	SA-C-141/boundary/SA-S-1633	topic shipping.company.created, انشاء شركة شحن
+CM-SHP-015	salla	core	SA-C-141/boundary/SA-S-1634	topic shipping.company.updated
+CM-SHP-015	salla	core	SA-C-141/boundary/SA-S-1635	topic shipping.company.deleted
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2019	plan line: regular shipping through named carriers, Salla Plus, under alshhn-oaltosyl
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2020	plan line: economy shipping through named carriers, Salla Plus
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2026	plan line ربط خاص بـ 190+ شركة شحن, Salla Plus
+CM-SHP-015	salla	core	SA-C-141/decides/SA-S-2026	the same plan line, under SA-C-141
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2105	plan feature: connect the store with 100+ carriers, Salla Plus
+CM-SHP-015	salla	core	SA-C-139/responsible/SA-S-5058	a feature Salla provides to connect with carriers contracted with Salla, from its app store's section شركات الشحن
+CM-SHP-015	salla	core	SA-C-141/responsible/SA-S-5063	UAE: connecting the merchant's own Aramex contract, with the pricing of that contract
+CM-SHP-015	salla	core	SA-C-141/responsible/SA-S-5064	Kuwait: connecting the merchant's own امباور contract, with the pricing of that contract
+CM-SHP-015	salla	core	SA-C-141/decides/SA-S-3020	released flag multi-shipping-service-account, enabled
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2965	released carrier flag ajeek
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2968	released carrier flag aymakan
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2969	released carrier flag barq
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2970	released carrier flag beez
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2972	released carrier flag careem
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2977	released carrier flag diggipacks
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2978	released carrier flag eijack
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2979	released carrier flag esnad-express
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2982	released carrier flag isnaad
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2984	released carrier flag labaih
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2985	released carrier flag mahmool
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2987	released carrier flag mkhdoom
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2988	released carrier flag mlcgo
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2992	released carrier flag oto
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2995	released carrier flag redbox
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2998	released carrier flag saee
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-2999	released carrier flag safe-arrival
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3000	released carrier flag saudi-post
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3002	released carrier flag dhl-shipping-company
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3007	released carrier flag bullet-delivery
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3015	released carrier flag jnt
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3016	released carrier flag flow-express
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3044	released carrier flag bullet-delivery-v2
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3080	released carrier flag tookan
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3081	released carrier flag track
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3082	released carrier flag ups
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3091	released carrier flag xturbo
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3092	released carrier flag zajil
+CM-SHP-015	salla	core	SA-C-139/decides/SA-S-3269	released carrier flag dhl-api
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-2980	unreleased carrier flag fastcoo
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-2996	unreleased carrier flag road
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3001	unreleased carrier flag shipox
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3003	unreleased carrier flag salasa
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3004	unreleased carrier flag quick-shipping-company
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3008	unreleased carrier flag bullet-delivery-page
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3039	unreleased carrier flag fastlo-awb
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3040	unreleased carrier flag fedex
+CM-SHP-015	salla	shows	SA-C-139/decides/SA-S-3046	unreleased carrier flag mahly-express
+CM-SHP-015	salla	shows	SA-C-141/decides/SA-S-3024	unreleased flag direct-activate-shipping-company
+CM-SHP-015	salla	extension-point	SA-C-145/where/SA-S-1185	app type Shipping App, for shipping companies
+CM-SHP-015	salla	extension-point	SA-C-145/where/SA-S-1221	app category Shipping and Delivery, titled + 190 شركة شحن ودعم لوجستي
+CM-SHP-015	salla	extension-point	SA-C-145/where/SA-S-0191	a carrier's service appears in the Salla AWB creation screen, and merchants choose the company
+CM-SHP-015	salla	shows	SA-C-141/decides/SA-S-0061	UAE: the COD commission agreed in the merchant's contract with the carrier
+CM-SHP-015	salla	shows	SA-C-141/boundary/SA-S-0084	UAE: a carrier activated with an external contract, or the store's own courier
+CM-SHP-015	salla	shows	SA-C-141/where/SA-S-1867	admin link Shipping & delivery
+CM-SHP-015	salla	shows	SA-C-141/where/SA-S-3542	dashboard app @salla.sa/ui-merchant-shipping
+CM-SHP-015	salla	shows	SA-C-235/boundary/SA-S-0162	an order assigned to the next carrier by the set priority; core in G's CM-OPS-001
+CM-SHP-015	shopify	core	SH-C-115/decides/SH-S-0616	certain plans connect the merchant's own Third-Party Shipping Provider account with Shopify Shipping
+CM-SHP-015	shopify	shows	SH-C-116/where/SH-S-0717	labels from Shopify supported carriers; core in CM-SHP-002
+CM-SHP-015	shopify	shows	SH-I-2095	value list Tracking carriers (204 options); core in CM-SHP-017
+CM-SHP-015	shopify	shows	SH-C-115/where/SH-S-7133	route titled Manage preferred carriers; core in CM-SHP-004
+CM-SHP-016	salla	core	SA-C-143/where/SA-S-1872	admin link Shipping Routes at /shipping/setting/routes
+CM-SHP-016	salla	core	SA-C-143/where/SA-S-1047	Merchant API folder Shipping Routes
+CM-SHP-016	salla	core	SA-C-143/boundary/SA-S-1047	the same folder, under boundary
+CM-SHP-016	salla	core	SA-C-143/boundary/SA-S-1118	API folder Shipping Routes in the shipping apps' APIs
+CM-SHP-016	salla	core	SA-C-145/boundary/SA-S-1118	the same folder, under SA-C-145
+CM-SHP-016	salla	core	SA-C-143/decides/SA-S-3027	released flag shipping-routes, plans pro and special
+CM-SHP-017	shopify	core	SH-C-126/where/SH-S-7208	built-in feature Order tracking, at the customer notifications settings, surface order-tracking
+CM-SHP-017	shopify	core	SH-C-126/decides/SH-S-7209	the Shopify plan includes order tracking features
+CM-SHP-017	shopify	core	SH-C-126/boundary/SH-S-7459	Admin API object FulfillmentTrackingInfo, tracking information for a fulfillment
+CM-SHP-017	shopify	core	SH-I-2095	the platform's value list Tracking carriers (204 options)
+CM-SHP-017	shopify	extension-point	SH-C-126/where/SH-S-2620	App Store category Order tracking apps
+CM-SHP-017	salla	core	SA-C-040/decides/SA-S-1995	plan line تتبع الطلب عبر محفظة أبل (Apple Wallet), Salla Plus
+CM-SHP-018	shopify	core	SH-C-125/where/SH-S-7139	route shop-promise-examples, section Shipping
+CM-SHP-018	shopify	shows	SH-C-125/decides/SH-S-5033	the route open to a beta only
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-5975	requires read_delivery_promises
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-6187	requires write_delivery_promises
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-1121	access scope write_delivery_promises
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-1208	topic delivery_promise_settings/update
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-6113	the topic occurs when a promise setting is updated
+CM-SHP-018	shopify	core	SH-C-125/boundary/SH-S-6116	read_shipping or read_shop_promise_program
+CM-SHP-018	salla	core	SA-C-147/where/SA-S-1052	Merchant API folder Shipping Delivery Promises
+CM-SHP-018	salla	core	SA-C-147/boundary/SA-S-1052	the same folder, under boundary
+CM-SHP-018	salla	shows	SA-C-147/decides/SA-S-3047	unreleased flag delivery-promises, plans pro and special
+CM-SHP-019	shopify	core	SH-C-124/where/SH-S-7138	route pickup_points, Shipping to pickup points, section Shipping
+CM-SHP-019	shopify	core	SH-C-124/boundary/SH-S-1009	access scope write_delivery_option_generators
+CM-SHP-019	shopify	core	SH-I-0244	access scope read_delivery_option_generators
+CM-SHP-019	shopify	extension-point	SH-C-124/where/SH-S-2233	function target local_pickup_delivery_option_generator
+CM-SHP-019	shopify	extension-point	SH-C-124/where/SH-S-2234	function target pickup_point_delivery_option_generator
+CM-SHP-019	shopify	extension-point	SH-I-1471	extension point Fulfillment option generator
+CM-SHP-019	shopify	shows	SH-C-124/decides/SH-S-0683	Shopify invokes functions within the customer journey
+CM-SHP-019	shopify	shows	SH-C-124/responsible/SH-S-7281	the developer alone answers for the application
+CM-SHP-020	salla	core	SA-C-146/where/SA-S-1873	admin link International Shipping Readiness at /shipping/international
+CM-SHP-020	salla	core	SA-C-146/decides/SA-S-3022	released flag international-product, enabled
+CM-SHP-020	salla	core	SA-C-146/decides/SA-S-0163	Salla's international shipping gateway fee, added to the buyer at checkout
+CM-SHP-020	salla	shows	SA-C-146/decides/SA-S-0165	the feature is for stores in Saudi Arabia only
+CM-SHP-020	salla	shows	SA-C-146/decides/SA-S-0167	HS code: a global code identifying shipments, which carriers must check
+CM-SHP-020	salla	shows	SA-C-146/responsible/SA-S-5152	the buyer bears the fee, not the merchant
+CM-SHP-020	salla	shows	SA-C-146/boundary/SA-S-5067	enter the weight precisely: carriers calculate the cost from it
+CM-SHP-020	salla	shows	SA-C-146/reason/SA-S-0164	the fee's reason: cost transparency
+CM-SHP-020	shopify	shows	SH-I-2158	help-centre section International shipping
+CM-SHP-001	salla	core	SA-C-142/boundary/SA-S-1046	Merchant API folder Shipping Zones, under boundary
+CM-SHP-001	salla	extension-point	SA-C-145/where/SA-S-1190	app category Shipping and Delivery, type app
+CM-SHP-001	salla	extension-point	SA-C-145/where/SA-S-1221	app category Shipping and Delivery, featured
+CM-SHP-001	salla	core	SA-C-145/boundary/SA-S-1110	API folder Shipping Management in the shipping apps' APIs
+CM-SHP-001	salla	shows	SA-C-145/boundary/SA-S-1115	API folder APIs, holding Shipments, Shipping Companies and Shipping Routes
+CM-SHP-001	salla	shows	SA-C-145/decides/SA-S-3077	released flag storage-station, plans plus, pro and special; undefined
+CM-SHP-001	salla	shows	SA-C-144/decides/SA-S-3042	unreleased flag shipping-management
+CM-SHP-002	salla	shows	SA-C-140/where/SA-S-1692	admin link Shipping & delivery
+CM-SHP-002	salla	shows	SA-C-140/where/SA-S-1867	admin link Shipping & delivery, in its admin list
+CM-SHP-002	salla	shows	SA-C-140/where/SA-S-3542	dashboard app @salla.sa/ui-merchant-shipping
+CM-SHP-002	salla	extension-point	SA-C-145/where/SA-S-0191	a carrier's service appears in the Salla AWB creation screen
+CM-SHP-002	salla	extension-point	SA-C-145/where/SA-S-1172	developer docs Salla AWB, at /awb/app-setup
+CM-SHP-002	salla	extension-point	SA-C-145/boundary/SA-S-1112	API folder Salla AWB
+CM-SHP-002	salla	extension-point	SA-C-145/boundary/SA-S-1105	API folder Generating AWB
+CM-SHP-002	salla	extension-point	SA-C-145/boundary/SA-S-1114	API folder Generating AWB, second copy
+CM-SHP-002	salla	core	SA-C-144/decides/SA-S-3099	released flag order-print-multi-policy, plans plus, pro and special
+CM-SHP-002	salla	shows	SA-C-139/decides/SA-S-3276	unreleased flag show-thermal-dhl-policy
+CM-SHP-002	salla	shows	SA-C-145/responsible/SA-S-5065	installing a shipping app lets Salla withhold label amounts; core in CM-PAY-031
+CM-SHP-002	salla	shows	SA-C-145/responsible/SA-S-5066	Salla settles with the carrier after its commission; core in CM-PAY-031
+CM-SHP-009	salla	core	SA-C-144/boundary/SA-S-1044	Merchant API folder Shipments, under boundary
+CM-SHP-009	salla	core	SA-C-144/boundary/SA-S-1116	API folder Shipments in the shipping apps' APIs
+CM-SHP-009	salla	core	SA-C-145/boundary/SA-S-1116	the same folder, under SA-C-145
+CM-SHP-009	salla	core	SA-C-145/boundary/SA-S-1111	API folder Order Fulfilment in the shipping apps' APIs
+CM-SHP-009	salla	shows	SA-C-144/boundary/SA-S-1559	access scope shippings; core in CM-SHP-001
+CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3006	unreleased flag special-shipping-details
+CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3052	unreleased flag shipping-carrier-pickup
+CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3009	released flag shipping-customer-additional-info, enabled; undefined
+CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3261	released flag addressee-shipping, enabled; undefined
+CM-SHP-009	salla	shows	SA-C-144/decides/SA-S-3356	released flag shipping-indicator, enabled; undefined
+CM-SHP-009	salla	shows	SA-C-145/decides/SA-S-3043	unreleased flag allow-external-shipment-reconnect

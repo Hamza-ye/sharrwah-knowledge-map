@@ -59,6 +59,7 @@ CM-PLN-005	woocommerce	shows	WC-C-012/boundary/WC-S-0538	WooPayments' fees deduc
 CM-PLN-007	woocommerce	own-service	WC-C-057/decides/WC-S-0548	VAT/GST/CT added to WooPayments fees
 CM-PLN-007	woocommerce	own-service	WC-C-057/boundary/WC-S-0549	monthly invoice showing fees and tax
 CM-PLN-007	woocommerce	own-service	WC-C-057/where/WC-S-5309	VAT invoices under Payments > Documents
+CM-PLN-007	woocommerce	own-service	WC-C-021/where/WC-S-5310	JCT invoices under Payments > Documents, Japan (the coordinator, after C-woocommerce batch 4)
 CM-PLN-007	woocommerce	own-service	WC-C-023/responsible/WC-S-0458	WooPayments among Woo services
 CM-PLN-007	woocommerce	shows	WC-C-057/responsible/WC-S-0462	merchant responsible for taxes on the Services
 CM-PLN-007	woocommerce	shows	WC-C-057/responsible/WC-S-5316	self-accounting under reverse charge

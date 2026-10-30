@@ -280,3 +280,111 @@ None. CM-PAY-021's name could add WooCommerce's term In-Person Payments, and CM-
 - **The eleven readings above are updated** as the list asks, each addition marked "(the coordinator, after batch 3)". Every statement it names is cited in its cell with the support the reading gives it.
 - **Batch 4 is split in two.** Batch 4 maps TAX now, onto C's anchor, which is complete for TAX. Batch 5 maps SHP and RET once the anchor's last two batches have cut them, rules U-032 (WC-C-058 against SA-C-146, which the anchor's batch 11 lands) and checks the whole part.
 - **WC-S-0559** ("WooCommerce has partnered with Stripe to offer ... access"): it names WooCommerce as the partner, not Automattic as the maker or provider, so batch 2's `outside` stands (C5).
+
+## Batch 4: TAX (WC-C-021, WC-C-054, WC-C-055, WC-C-056, WC-C-058, WC-C-118)
+
+Mapped onto C's anchor, complete for TAX (CM-TAX-001 to CM-TAX-009). No capability added: every concern is a thing the anchor already holds. Before landing, `class_slice.py caps --terms` on the batch's terms (VAT invoice; tax invoice; tax document; 1099) found only C's TAX capabilities and A's CM-PLN-007, taxes on the platform's own charges.
+
+### How it was cut
+
+| Concern | Capability | Join | Fit |
+|---|---|---|---|
+| WC-C-021 Tax reporting tied to payments | CM-TAX-009 | match:M-039 | strained |
+| WC-C-054 Core tax calculation with merchant-entered rates | CM-TAX-001 | match:M-040 | strained |
+| WC-C-055 WooCommerce Tax | CM-TAX-002 | match:M-040 | strained |
+| WC-C-056 Third-party tax extensions (Sales tax and duties) | CM-TAX-004 | role | strained |
+| WC-C-058 Customs duties and import taxes | CM-TAX-008 | match:M-042 | strained |
+| WC-C-118 EU VAT Number | CM-TAX-005 | match:M-041 | clean |
+
+- **M-040's split is the anchor's cut.** WooCommerce's merchant-entered rates (WC-C-054) land in the parent CM-TAX-001, and WooCommerce Tax (WC-C-055) in its child CM-TAX-002, as CM-TAX-002's note says.
+- **WC-C-021 is cut in two by subject, one thing one domain.** The Form 1099-K WooPayments issues (WC-S-0547, WC-S-0860) is CM-TAX-009. The VAT and JCT invoices for WooPayments' fees (WC-S-5309, WC-S-5310, WC-S-0549) are taxes on the platform company's own charges, domain A's CM-PLN-007, which cites WC-S-5309 and WC-S-0549 under WC-C-057's key. They are not cited here.
+- **WC-C-058's product customs data is left to SHP.** The three optional customs fields on products and variations (WC-S-5383, WC-S-5384), the REST fields customs_commodity_code, customs_country_of_origin and customs_description (WC-S-5385), and their reason (WC-S-5386, "They do not calculate duties or produce shipping labels") are product customs data for shipping. CM-TAX-008's note gives that to the SHP batch (Salla's SA-C-146). They are uncited, for batch 5.
+
+### Joins on role (readings)
+
+- **WC-C-056 into CM-TAX-004.** WooCommerce's Marketplace category Extensions > Store management > Sales tax and duties (WC-S-0751) and Shopify's App Store category Tax apps (SH-S-2708) play the same role: each is the platform's category for third parties' tax extensions, under different names. The fit is strained, for three reasons:
+  - no WooCommerce statement held says the extensions calculate tax in place of WooCommerce's own rates, which CM-TAX-004's definition requires (Q1's gaps: WC-C-056's boundary and reason were searched, not found);
+  - the category also names duties, so WC-S-0751 is cited again in CM-TAX-008, under WC-C-058's key;
+  - its Terms of Service statements (WC-S-0852, WC-S-0487, WC-S-0656) are cited under WC-C-059 in F's CM-APP-001. Here they are only `shows`.
+
+### WordPress and Automattic (readings)
+
+- **WooCommerce Tax is Automattic's service, not WooCommerce core** (CM-TAX-002, `own-service`). The maker statements:
+  - "WooCommerce Tax uses Automattic's servers and a connection to our partners" (WC-S-0956);
+  - the Terms of Service list WooCommerce Tax among Woo Services (WC-I-0628);
+  - the provider of Woo Services outside the Designated Countries is WooCommerce, Inc. (WC-S-0459).
+
+  They count for this feature, which the cell's own statements show (WC-S-0633, WC-S-0639, WC-S-0636, WC-S-0635, WC-I-0621). Q1 places WC-I-0621 and WC-I-0628 in WC-C-055; `statements` prints them at the end of a two-concern call.
+- **Third parties do WooCommerce Tax's calculations.** "Tax Calculations are provided by TaxJar" (WC-S-0957), and Automattic's terms say "tax calculations may be provided by Taxamo" (WC-S-0473). Both are `outside` and slot fillers.
+- **The connection WooCommerce Tax needs** (WC-S-0634) is `own-service` in A's CM-ACC-010, under WC-C-049's key. Here it is `shows`, so that it doesn't support `own-service` in two domains.
+- **WooPayments, not WooCommerce, issues the Form 1099-K** (CM-TAX-009, `own-service`). The cell cites WooPayments' maker statements WC-S-0557 and WC-S-0459, as batches 1 to 3 did.
+- **EU VAT Number is a Woo-made extension** (CM-TAX-005, `own-service`). Its maker:
+  - the product card's "EU VAT Number by Woo" (WC-S-0963), read as Woo naming itself the maker, as batch 2 read "Square by Woo";
+  - Automattic's terms naming "Woo themes or extensions" among its Paid Services (WC-S-0644).
+
+  Its settings sit in WooCommerce > Settings > Tax (WC-S-0964), but the statement names them as the extension's settings: own-service, not core. The reviewer may read "by Woo" as a brand in the product's name instead. CM-TAX-005 would then rest on WC-S-0644 alone for its maker.
+- **WooPayments has no functionality related to charging tax** (WC-S-0546). It is `shows` in CM-TAX-001: the tax settings are WooCommerce's, not the payment service's.
+
+### Homonyms
+
+None new. "Tax" on WooPayments' fees (VAT/GST/CT on the fees, WC-S-0549) is not tax on the store's sales. It goes with A's CM-PLN-007, the anchor's homonym note on CM-TAX-001.
+
+### Concerns read under `also`
+
+None of the 17 `also` concerns bears on TAX. The searches found statements of other concerns, each left in its own cell:
+- WC-C-057 (A, naming C): WC-S-5309, WC-S-0549, WC-S-5316;
+- WC-C-049 (A, naming F): WC-S-0634;
+- WC-C-038 (D): Analytics > Taxes, WC-S-0072, and wc-analytics Taxes, WC-S-0222, both in D's CM-ANL-001 and CM-ANL-002;
+- WC-C-046 (E, naming D): MaxMind geolocation to display tax rates, WC-S-0641;
+- WC-C-029 (A, naming C): WC-S-0470, export and import laws.
+
+### Rulings
+
+U-030, three rows for WC-C-056:
+- against SH-C-103: `joined:CM-TAX-004`, on role;
+- against SA-C-160: `joined:CM-TAX-004`. The ruling follows the cells: Salla's cell cites its unreleased flag avalara-tax (SA-S-3511);
+- against SH-C-101: `apart`, since CM-TAX-003's WooCommerce cell is none-held.
+
+**U-032 (WC-C-058 against SA-C-146) is left to batch 5**, as the coordinator's split says. SA-C-146 lands in the anchor's batch 11. WooCommerce's side is its product customs data (WC-C-058/where/WC-S-5383, WC-C-058/boundary/WC-S-5385), uncited here. The ruling follows the SHP cell that cites it.
+
+### The checker's flags, answered
+
+- **Two problems are printed, neither on this batch's rows.**
+  - "No ruling on U-032" is batch 5's, as above.
+  - "The model so far lacks 12 cells, such as CM-SHP-015 for salla": these are the anchor's SHP cells, which C-anchor is writing now (its batch 11). None is a TAX cell: every TAX capability has Shopify's and Salla's cells.
+- **`own-service` on statements that don't name the company.**
+  - WC-S-0633, WC-S-0639, WC-S-0636, WC-S-0635 and WC-I-0621 are features of WooCommerce Tax; their cell cites the maker statements WC-S-0956, WC-I-0628 and WC-S-0459.
+  - WC-S-0964, WC-S-5464, WC-S-5462 and WC-S-5463 are EU VAT Number's; their cell cites WC-S-0963 and WC-S-0644.
+  - WC-S-0547 is WooPayments'; its cell cites WC-S-0557 and WC-S-0459.
+  - The flagged maker statements themselves are WC-S-0956, WC-I-0628, WC-S-0459, WC-S-0557, WC-S-0963 and WC-S-0644.
+- **WC-S-0644 is `own-service` in two domains:** here, for EU VAT Number, and in E's CM-SFR-003, for themes. Under the coordinator's rule a maker statement counts for each feature its cells' own statements show. The merge may flag it.
+- **WC-S-0459 and WC-S-0557 appear in many trees.** They are maker evidence, as before; CM-TAX-002 and CM-TAX-009 now cite them too.
+- **CM-TAX-003 and CM-TAX-006 are none-held although statements match their terms.** The matches are the statements named in their readings: WooCommerce Tax saying it does not determine tax obligations nor file returns (WC-S-0633, WC-S-0636), WooPayments' registered business country (WC-S-0512), the 1099-K filing (WC-S-0860) and export and import laws (WC-S-0470). None shows the capability.
+- **CM-CHK-005 and CM-ORD-008 (batch 1's cells) are none-held although TAX statements match.** EU VAT Number's validation at checkout (WC-S-5464) is now cited in CM-TAX-005. WooPayments' fee invoices (WC-S-5309, WC-S-5310, WC-S-0549) are A's CM-PLN-007. Neither cell's reading needs a change.
+
+### Gaps
+
+- No statement says where the merchant receives the Form 1099-K (CM-TAX-009).
+- No statement names the hook or interface through which a tax extension replaces WooCommerce's own rates (CM-TAX-004; Q1's gaps on WC-C-056's boundary and reason).
+- The EU VAT Number's maker rests on "by Woo" and on Automattic's general terms. No statement names Automattic as that extension's maker.
+
+### For the coordinator
+
+- **WC-S-5310** (JCT invoices for WooPayments' fees, Japan, WC-C-021/where/WC-S-5310) isn't cited anywhere. It belongs with WC-S-5309 in A's CM-PLN-007 (A-woocommerce), under WC-C-021's key, which names no domain A. That is A's to add, or the coordinator's.
+- **The anchor lands SH-C-099 and SH-C-102 as `single`,** although Q1's M-039 and M-041 hold them, with WooCommerce's side only. The C-anchor part could record `match:M-039` and `match:M-041`. This batch's landings cite the matches.
+- **Earlier batches' rows:** the checker prints no problem on them, and nothing in this batch makes one of their readings out of date.
+
+### For batch 5
+
+- Rule U-032 once SA-C-146 has landed. Cite WC-C-058's product customs data (WC-S-5383, WC-S-5384, WC-S-5385, WC-S-5386) in the SHP capability the anchor cuts for product customs data, and say in its reading that WC-C-058 lands in CM-TAX-008 (strained, for this reason).
+- The whole-part check is batch 5's.
+
+### Renames proposed
+
+None. CM-TAX-004's name could add WooCommerce's category Sales tax and duties. CM-TAX-005's could add EU VAT Number.
+
+### The coordinator, after batch 4
+
+- **WC-S-5310,** the JCT invoices for WooPayments' fees, held only under WC-C-021, is now cited in domain A's CM-PLN-007 (A-woocommerce), beside WC-S-5309, and scope.tsv names A under WC-C-021's `also`.
+- **The anchor's `single` landings whose Q1 match has another side in this part** (SH-C-099 with M-039, SH-C-102 with M-041) are rewritten as `match:` with the anchor's other such rows, once its last batch has run.
+- **The checker's two problems** are batch 5's: U-032, once SA-C-146 has landed, and the anchor's SHP cells, which its batches 11 and 12 write.

@@ -325,3 +325,7 @@ No checker problem is on batch 1's rows. Readings that no longer say all, after 
 - **Automattic's Terms, `shows` in CM-ACC-002 and `own-service` in CM-TRU-013 and -014:** both stand for now. A maker statement supports `own-service` for each feature of the company's service that a cell's own statements show (the ruling of 30 October on WC-S-0476); whether the merchant's agreement with Automattic is the platform's merchant agreement, for software the merchant runs itself, is the final review's.
 - **The part is complete,** with five capabilities added (CM-ACC-009 to -011, CM-ONB-004, CM-TRU-021): `A-backfill-woocommerce` writes their Shopify and Salla cells.
 
+
+### The coordinator, after C-woocommerce batch 4
+
+- **CM-PLN-007** cites WC-C-021/where/WC-S-5310 as `own-service`: the JCT invoices for WooPayments' fees under Payments > Documents, for Japan-based merchants. It is the same statement as WC-S-5309 for another market, and C left it uncited. scope.tsv names A under WC-C-021's `also`.
