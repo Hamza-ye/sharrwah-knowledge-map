@@ -61,3 +61,8 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - So it is `core` on CM-CNT-007 where the platform writes it, and `shows` on CM-AIA-005 where its words name AI platforms or buyers' discovery through AI.
   - The review's R4 had let ZD-1's `core` on CM-AIA-005 stand, and ZD-4 and ZD-12 kept to it. The coordinator corrects the three lines.
   - Zid's and Salla's CM-AIA-005 cells are then held with no placement. Shopify's cell holds channels for agents, and BigCommerce's holds endpoints for agents.
+- **A line that only one market's page holds takes that market in its `scope`** (after SA-3). salla.com's plans pages differ by market beyond the currency.
+  - The Saudi pages show a yearly discount, savings and struck prices, and their comparison table has nine rows.
+  - The UAE pages show none of these. Their table has five rows: it lacks Salla's discounted labels, Salla Ads, Mahally and the VAT line with the Zakat authority.
+  - So a line only the Saudi pages hold takes السعودية in its scope, beside its plans. One only the UAE pages hold takes الامارات. These are the words of Salla's footer, 'مدعوم في: السعودية الامارات'.
+  - SA-2's rule 5 had read the pages as the same text but for the currency.
