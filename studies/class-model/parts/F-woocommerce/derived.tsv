@@ -1,0 +1,45 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-AIA-001	woocommerce	statements	outside	8. k. Artificial Intelligence | AI at Automattic: Third Parties and Usage Policies		WC-C-096/reason:searched, not found	
+CM-AIA-002	woocommerce	none-held					
+CM-AIA-003	woocommerce	none-held					
+CM-AIA-004	woocommerce	statements	core	Introduction		WC-C-095/responsible:stated only in general terms;WC-C-095/reason:searched, not found	general
+CM-AIA-005	woocommerce	none-held					
+CM-API-001	woocommerce	statements	core;extension-point	Advanced		WC-C-078/responsible:stated only in general terms;WC-C-078/reason:searched, not found	general
+CM-API-002	woocommerce	statements	core	Advanced > REST API keys		WC-C-078/responsible:stated only in general terms;WC-C-078/reason:searched, not found	general
+CM-API-003	woocommerce	statements	core			WC-C-078/responsible:stated only in general terms;WC-C-078/reason:searched, not found	general
+CM-API-004	woocommerce	none-held					
+CM-API-005	woocommerce	statements	core	Rate Limiting for Store API endpoints		WC-C-031/responsible:stated only in general terms	general
+CM-API-006	woocommerce	statements	core	Advanced > Legacy API		WC-C-078/responsible:stated only in general terms;WC-C-078/reason:searched, not found	general
+CM-API-007	woocommerce	statements	core			WC-C-077/responsible:stated only in general terms	general
+CM-API-008	woocommerce	statements	core;extension-point			WC-C-077/responsible:stated only in general terms	general
+CM-API-009	woocommerce	statements	core	Advanced > Webhooks		WC-C-077/responsible:stated only in general terms	general
+CM-API-010	woocommerce	none-held					
+CM-API-011	woocommerce	none-held					
+CM-API-012	woocommerce	statements	core	Advanced > REST API caching		WC-C-078/responsible:stated only in general terms;WC-C-078/reason:searched, not found	general
+CM-APP-001	woocommerce	statements	core;extension-point	Enhance your store with extensions | WooCommerce > Extensions	WC-C-059/responsible/WC-S-5342=third-party Marketplace developers | WC-C-059/responsible/WC-S-5343=EU residents' personal data (GDPR)	WC-C-059/reason:searched, not found;WC-C-063/responsible:stated only in general terms;WC-C-063/reason:searched, not found	general
+CM-APP-002	woocommerce	statements	core;extension-point	Discover ways of extending your store with a tour of the Woo Marketplace | Extensions | Getting started | How to determine who makes a product		WC-C-017/reason:searched, not found;WC-C-059/reason:searched, not found;WC-C-063/responsible:stated only in general terms;WC-C-063/reason:searched, not found	general
+CM-APP-003	woocommerce	statements	core			WC-C-017/reason:searched, not found;WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found;WC-C-063/responsible:stated only in general terms;WC-C-063/reason:searched, not found	general
+CM-APP-004	woocommerce	none-held					
+CM-APP-005	woocommerce	none-held					
+CM-APP-006	woocommerce	statements	core;extension-point			WC-C-086/responsible:stated only in general terms;WC-C-086/reason:searched, not found	general
+CM-APP-007	woocommerce	statements	extension-point			WC-C-086/responsible:stated only in general terms;WC-C-086/reason:searched, not found	
+CM-APP-008	woocommerce	none-held					
+CM-APP-009	woocommerce	statements	not-stated			WC-C-059/reason:searched, not found	
+CM-APP-010	woocommerce	statements	core;extension-point	Integration		WC-C-086/responsible:stated only in general terms;WC-C-086/reason:searched, not found	general
+CM-APP-011	woocommerce	statements	core;own-service	Extensions > Developed by Woo		WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found	general
+CM-APP-012	woocommerce	statements	core	Advanced > WooCommerce.com | Connect your site to WooCommerce.com | readme.txt: Connection to WooCommerce.com		WC-C-063/responsible:stated only in general terms;WC-C-063/reason:searched, not found	general
+CM-AUT-001	woocommerce	none-held					
+CM-DVT-001	woocommerce	none-held					
+CM-DVT-002	woocommerce	none-held					
+CM-DVT-003	woocommerce	none-held					
+CM-DVT-004	woocommerce	none-held					
+CM-DVT-005	woocommerce	none-held					
+CM-PTN-001	woocommerce	statements	not-stated			WC-C-017/reason:searched, not found	
+CM-PTN-002	woocommerce	none-held					
+CM-PTN-003	woocommerce	statements	core			WC-C-017/reason:searched, not found	general
+CM-PTN-004	woocommerce	none-held					
+CM-PTN-005	woocommerce	statements	core;extension-point	Business services | Business services > Business Formation | Business services > Compliance | Business services > Developer Services | Business services > Finance | Business services > Insurance | Business services > Law	WC-C-112/boundary/WC-S-5497=Woo Agency Partners | WC-C-112/decides/WC-S-5495=Woo Agency Partners	WC-C-112/responsible:stated only in general terms;WC-C-112/reason:searched, not found	Woo Agency Partners
+CM-PTN-006	woocommerce	none-held					
+CM-PTN-007	woocommerce	none-held					
+CM-PTN-008	woocommerce	none-held					
+CM-PTN-009	woocommerce	none-held					
