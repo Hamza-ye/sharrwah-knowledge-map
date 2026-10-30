@@ -49,7 +49,7 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
    - `subject:none`: gives no time of its own;
    - `outside`: `before release`;
    - `plan`: `before build`;
-   - with several answerers, the earliest; `unclear` where none applies. A founder's part already decided (`founder:decided`) is answered now: it sets no `when` and raises no time bomb.
+   - with several answerers, the earliest; `unclear` where none applies. A founder's part already decided (`founder:decided`) is answered now: it sets no `when` and raises no time bomb. A row whose only answerer is `founder:decided` has the `when` `decided`.
 
 4. **`time_bombs`,** by Q3's four types:
    - `bundles`: its parts land on capabilities placed differently: of different kinds (`class`, `slot`, `open`), as `q3.py slice` shows them (Q3's type, as agreed). Also where its parts have different answerers' times (the coordinator's own addition, a reading);
@@ -59,7 +59,7 @@ A row's `needed_by` is its own, from the Knowledge Map's page at `e4d5cee`: `spi
 
    `q3.py check` computes `bundles` and `wrong time` from your other columns and requires them exactly where they hold.
 
-5. **`basis`,** `;`-separated: for `covered` and `partly`, the cells that answer, as `<cap_id>@<platform>`, adding statement keys only where a cell's reading is what answers; for a held miss, the statement keys; for a subject, its id and its register row, or, for a subject that hasn't run, `subjects.tsv <S-NN>` or the register row that moved the question to it; for a decision, `founder-decisions <date> <gate>`; for the plan, its section.
+5. **`basis`,** `;`-separated: for `covered` and `partly`, the cells that answer, as `<cap_id>@<platform>`, adding statement keys only where a cell's reading is what answers; for a held miss, the statement keys; for a subject, its id and its register row, or, for a subject that hasn't run, `subjects.tsv <S-NN>` or the register row that moved the question to it; for a decision, `founder-decisions <date> <gate>`, with ` #<k>` where several rows of `founder-decisions.tsv` share that date and gate, `k` its place among them from the top (`founder-decisions 2026-10-25 G1 #1` is Decision 1, `#2` the pilot's Decisions 2 to 12); for the plan, its section.
 
 6. **`what_would_settle_it`:** for `partly`, `unclear` and `candidate miss: not held`; and `detail: <what>` where a covered row asks detail beyond the cells.
 

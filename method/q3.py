@@ -28,7 +28,7 @@ HEAD = ["set", "row_id", "needed_by", "result", "rest", "cap_ids", "who_answers"
 RESULTS = {"covered", "partly", "beyond the class", "candidate miss: held", "candidate miss: not held", "unclear"}
 RESTS = {"beyond the class", "candidate miss: held", "candidate miss: not held"}
 WHO = re.compile(r"^(model|founder|founder:decided|engineering:build|engineering:detail|outside|plan|subject:S-\d\d|subject:none)$")
-WHEN = {"before build", "at the area's build", "before release", "later", "unclear"}
+WHEN = {"before build", "at the area's build", "before release", "later", "unclear", "decided"}
 BOMBS = {"bundles", "wrong party", "wrong time", "market fact"}
 ORDER = ["before build", "at the area's build", "before release", "later"]
 NEEDED = {"model": "before build", "spine": "before build", "slice": "at the area's build", "launch": "before release", "later": "later"}
@@ -41,6 +41,8 @@ STOP = set("what which when where whose does each with from into that this they 
 CELL = re.compile(r"^CM-[A-Z0-9]{3}-\d{3}@(" + "|".join(PLATFORMS) + r")$")
 SKEY = re.compile(r"^[A-Z]{2}-C-\d{3}/[a-z]+/[A-Z]{2}-S-\d{4}$")
 IKEY = re.compile(r"^[A-Z]{2}-I-\d{4}$")
+# a decision in force, by its date and gate; #k, its place among the rows that share them, from the top
+FD = re.compile(r"^founder-decisions (\d{4}-\d\d-\d\d) (.+?)(?: #(\d+))?$")
 
 
 def semi(v):
@@ -202,6 +204,9 @@ def cmd_check(a):
     if not os.path.exists(subj_path):
         sys.exit(f"no {subj_path}: the subject test can't run")
     subjects = {r["subject_id"] for r in rows(subj_path)}
+    decisions = {}
+    for r in rows(os.path.join(ROOT, "founder-decisions.tsv")):
+        decisions[(r["date"], r["gate"])] = decisions.get((r["date"], r["gate"]), 0) + 1
     files = [os.path.join(BATCH_DIR, f"check-{a.batch}.tsv")] if a.batch else sorted(glob.glob(os.path.join(BATCH_DIR, "check-*.tsv")))
     if not files:
         sys.exit("no batch file: studies/class-model/q3/check-<batch>.tsv")
@@ -267,6 +272,19 @@ def cmd_check(a):
                     problems.append(f"{w}: {b} is not a cell of the merged model")
                 if (SKEY.match(b) or IKEY.match(b)) and b not in allkeys:
                     problems.append(f"{w}: {b} is not a statement key or inventory id")
+            for b in basis:
+                if not b.startswith("founder-decisions"):
+                    continue
+                m = FD.match(b)
+                n = decisions.get((m.group(1), m.group(2)), 0) if m else 0
+                if not n:
+                    problems.append(f"{w}: {b}: no decision in founder-decisions.tsv has that date and gate (founder-decisions <date> <gate>)")
+                elif n > 1 and not m.group(3):
+                    problems.append(f"{w}: {b}: {n} decisions have that date and gate: add #<k>, its place among them from the top")
+                elif m.group(3) and not 1 <= int(m.group(3)) <= n:
+                    problems.append(f"{w}: {b}: #{m.group(3)} is not one of the {n} decisions with that date and gate")
+            if "founder:decided" in semi(r["who_answers"]) and not any(b.startswith("founder-decisions") for b in basis):
+                problems.append(f"{w}: founder:decided names its decision in basis, as founder-decisions <date> <gate>")
             if res in ("covered", "partly") and not any(CELL.match(b) for b in basis):
                 problems.append(f"{w}: {res} names its cells in basis, as <cap_id>@<platform>")
             if res == "candidate miss: held" or rest == "candidate miss: held":
@@ -282,6 +300,10 @@ def cmd_check(a):
                 problems.append(f"{w}: when must be one of {', '.join(sorted(WHEN))}")
             # a part a founder's decision in force already answers (founder:decided) sets no time and raises no time bomb
             timed = [x for x in who if x != "founder:decided"]
+            if who and not timed and r["when"] != "decided":
+                problems.append(f"{w}: a row whose only answerer is founder:decided is answered now: its when is decided")
+            if r["when"] == "decided" and timed:
+                problems.append(f"{w}: decided is the when of a row whose only answerer is founder:decided")
             ruled = when_of(timed)
             if ruled and r["when"] != "unclear" and r["when"] != ruled:
                 problems.append(f"{w}: when is {ruled} by the rules for {', '.join(who)}")
