@@ -67,9 +67,9 @@ Split in two, so each context stays small: the cells (checks 1, 2 and 5) and the
 **What remains:**
 - the anchor: 328 Shopify and Salla concerns in domains A and C to G;
 - the mapping: 294 concerns of WooCommerce, Zid and BigCommerce;
-- a cell for every capability and platform: about 1,400, at the dry run's rate of a little over one capability per anchor concern.
+- a cell for every capability and mapped platform: about 1,500 more for the mapping parts. That assumes about 500 capabilities: a little over one per anchor concern, as in domain B, plus those the mapping adds.
 
-At the dry run's own rates, that is about 500 million for the anchors and 450 million for the mapping, before the back-fills, the final review and Q3's check.
+At the dry run's own rates (1.5 million per anchor concern, 0.46 million per mapping cell), that is about 500 million for the anchors and 650 to 700 million for the mapping, before the back-fills, the final review and Q3's check.
 
 **Re-planned to read the same evidence at less cost:**
 - **Parts small enough that no context passes about 200,000 tokens:** one area per anchor part (domain C's six areas, A's five, and so on). Where a part runs long, a fresh agent continues from its files. By the anchor's own first half, this alone cuts a part's cost by close to half.
@@ -83,11 +83,11 @@ At the dry run's own rates, that is about 500 million for the anchors and 450 mi
 | --- | --- |
 | Spent to the dry run's corrections | about 200 |
 | Anchors | 200 to 300 |
-| Mapping | 150 to 300 |
+| Mapping | 200 to 350 |
 | Back-fills | 20 to 40 |
 | Final review | 40 to 80 |
 | Q3's check | 15 to 30 |
 | The architecture plan's review | about 10 |
-| **The extent, in all** | **about 650 to 950** |
+| **The extent, in all** | **about 700 to 1,000** |
 
-That is three to four times the budget of 250 million. By `PLAN.md`, section 8, and the founder's standing decision of 27 October, the work goes on, re-planned to cost less and never cut short of the evidence. The projection is re-measured after the first two domains.
+That is about three to four times the budget of 250 million. By `PLAN.md`, section 8, and the founder's standing decision of 27 October, the work goes on, re-planned to cost less and never cut short of the evidence. The projection is re-measured after the first two domains.
