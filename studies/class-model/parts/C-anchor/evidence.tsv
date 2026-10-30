@@ -1247,3 +1247,154 @@ CM-PAY-002	salla	shows	SA-C-172/where/SA-S-2212	the selling policy's page in sal
 CM-PAY-004	salla	shows	SA-C-177/decides/SA-S-0081	payments settled and transferred under the payment services contract (UAE), under SA-C-177
 CM-PAY-004	salla	shows	SA-C-177/decides/SA-S-0088	payments settled and transferred under the payment services contract (Kuwait), under SA-C-177
 CM-PAY-007	salla	shows	SA-C-177/decides/SA-S-0082	e-payment fees calculated under the payment services contract (UAE), under SA-C-177
+CM-TAX-001	shopify	core	SH-C-100/where/SH-S-1492	settings section titled Taxes and duties
+CM-TAX-001	shopify	core	SH-C-100/where/SH-S-7123	admin route section Taxes, path taxes
+CM-TAX-001	shopify	core	SH-C-101/where/SH-S-6350	admin link Taxes and duties at /settings/taxes
+CM-TAX-001	shopify	core	SH-C-100/decides/SH-S-5271	tax-settings route gated by MANAGE_TAXES_SETTINGS and entitlement shopifyTax.enabled
+CM-TAX-001	shopify	core	SH-I-1085	staff permission MANAGE_TAXES_SETTINGS
+CM-TAX-001	shopify	core	SH-I-0999	staff permission Store settings > Taxes and duties
+CM-TAX-001	shopify	core	SH-C-100/boundary/SH-S-1144	access scope read_taxes
+CM-TAX-001	shopify	core	SH-C-100/boundary/SH-S-6134	read_taxes reads the TaxSettings and TaxAppConfiguration objects
+CM-TAX-001	shopify	core	SH-C-100/boundary/SH-S-6132	read_taxes required; the user must have access to manage taxes
+CM-TAX-001	shopify	core	SH-C-100/decides/SH-S-0506	Shopify uses many default sales tax rates, updated regularly
+CM-TAX-001	shopify	core	SH-C-100/decides/SH-S-0508	the tax services or settings a store can use depend on its business location
+CM-TAX-001	shopify	core	SH-C-100/where/SH-S-0539	Shopify's own tax engine, componentized within its codebase
+CM-TAX-001	shopify	shows	SH-C-100/decides/SH-S-5273	fee-configurations:create behind a beta
+CM-TAX-001	shopify	shows	SH-C-100/responsible/SH-S-0037	merchant solely responsible for determining, collecting and remitting taxes and duties
+CM-TAX-001	shopify	shows	SH-C-100/responsible/SH-S-0041	Shopify not responsible for the merchant's tax obligations
+CM-TAX-001	shopify	shows	SH-C-100/responsible/SH-S-0597	merchant responsible for classifying products and their sales tax treatment
+CM-TAX-001	shopify	shows	SH-I-2305	help-centre title Include taxes in product prices
+CM-TAX-001	shopify	shows	SH-I-2309	help-centre title Manual tax settings
+CM-TAX-001	salla	core	SA-C-160/where/SA-S-1686	settings link Taxes at /taxes-and-duties
+CM-TAX-001	salla	core	SA-C-160/where/SA-S-1879	dashboard link Tax settings at /payments/taxes
+CM-TAX-001	salla	core	SA-C-160/where/SA-S-3542	dashboard app @salla.sa/ui-merchant-shipping serves /payments/taxes
+CM-TAX-001	salla	core	SA-C-160/where/SA-S-1752	product setting Product tax pricing
+CM-TAX-001	salla	core	SA-C-160/boundary/SA-S-1062	Merchant API folder Taxes
+CM-TAX-001	salla	core	SA-C-160/boundary/SA-S-0182	POST /taxes: a tax rate and the country it applies to
+CM-TAX-001	salla	core	SA-C-160/boundary/SA-S-1555	access scope taxes, read and read_write
+CM-TAX-001	salla	core	SA-C-160/boundary/SA-S-1621	event storetax.created
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-2407	staff permission tax_management
+CM-TAX-001	salla	extension-point	SA-C-160/decides/SA-S-2624	partner permission tax_management / إعدادات الضريبة
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-2125	plan line تفعيل فوري لضريبة القيمة المضافة: show and calculate tax on products and shipping, سلة برو
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-2138	plan line ضريبة القيمة المضافة, سلة برو
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-2142	plan line عرض واحتساب ضريبة القيمة المضافة, سلة برو
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-3268	released flag tax, plans pro, special
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-3035	released flag tax-profiles, plans pro, special
+CM-TAX-001	salla	shows	SA-C-160/decides/SA-S-3036	flag tax-profiles-disable-usa-country, not released
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-3485	released flag product-price-tax-included, plans pro, special
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-0144	add a tax: its type for the country sold to and the official rate there
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-0145	the tax record is used automatically when selling to its market
+CM-TAX-001	salla	core	SA-C-160/decides/SA-S-0147	by the settings chosen, the tax number and taxes shown on invoices and the storefront
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-7066	plan line Automated sales tax calculations, Included on every plan
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-5872	entitlement shopifyTax enabled in the captured stores
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-0509	in the United States you can use Shopify Tax
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-0514	Shopify Tax calculates only for destinations in the US, EU, UK or Canada
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-0515	US fallback: registration-based, non-rooftop calculation
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-7221	built-in feature Shopify Tax (EU) calculates and collects VAT, rates kept up to date
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-7222	built-in feature Shopify Tax (UK) calculates and collects VAT
+CM-TAX-002	shopify	core	SH-C-100/decides/SH-S-0518	free until a sales threshold, then a per-transaction fee by location and plan
+CM-TAX-002	shopify	core	SH-C-100/reason/SH-S-0513	Shopify Tax offers sales tax compliance with the least upkeep
+CM-TAX-002	shopify	shows	SH-C-100/decides/SH-S-0516	third-party app and API-generated orders listed among the considerations
+CM-TAX-002	shopify	shows	SH-C-100/boundary/SH-S-0039	tools that calculate or estimate taxes ("Shopify Tax") subject to the Shopify Tax Terms
+CM-TAX-002	shopify	shows	SH-C-100/responsible/SH-S-0594	in the Shopify Tax terms, "Shopify" means Shopify Inc. and its Affiliates
+CM-TAX-002	shopify	shows	SH-C-100/boundary/SH-S-0595	terms apply in all regions where Shopify Tax is made available
+CM-TAX-002	shopify	shows	SH-C-100/responsible/SH-S-0596	merchant solely responsible for tax compliance
+CM-TAX-002	shopify	shows	SH-C-100/responsible/SH-S-0598	no guarantee of availability or uptime of Shopify Tax
+CM-TAX-002	shopify	shows	SH-C-100/boundary/SH-S-0517	Shopify Tax fee charged with the subscription invoice
+CM-TAX-002	shopify	shows	SH-C-100/boundary/SH-S-0599	fees added to the next Shopify invoice
+CM-TAX-002	shopify	shows	SH-C-100/decides/SH-S-5275	switch-tax-product behind a beta
+CM-TAX-002	shopify	shows	SH-I-1353	billing charge category Tax transaction fees
+CM-TAX-003	shopify	core	SH-C-101/where/SH-S-7124	Taxes section route add (tax-settings:show-eu:add-registration)
+CM-TAX-003	shopify	core	SH-C-101/where/SH-S-7125	Taxes section route ioss (tax-settings:ioss-registration)
+CM-TAX-003	shopify	core	SH-C-101/decides/SH-S-7067	plan line Tax liability tracking, Included on every plan
+CM-TAX-003	shopify	core	SH-C-101/decides/SH-S-0533	Basic Tax requires a tax registration number to calculate taxes
+CM-TAX-003	shopify	shows	SH-C-101/decides/SH-S-0507	to collect sales tax the merchant must register with its tax authority
+CM-TAX-003	shopify	outside	SH-C-101/decides/SH-S-0564	Global-e provides the tax registration under Managed Markets
+CM-TAX-003	shopify	shows	SH-C-101/responsible/SH-S-0596	merchant solely responsible for tax compliance
+CM-TAX-003	salla	core	SA-C-160/decides/SA-S-2125	plan line: activate showing the tax number (الرقم الضريبي), سلة برو
+CM-TAX-003	salla	shows	SA-C-160/responsible/SA-S-5073	registration with ZATCA required at 375,000 riyals a year, optional below
+CM-TAX-004	shopify	core	SH-C-103/where/SH-S-7127	Taxes section route providers, Manage tax provider
+CM-TAX-004	shopify	shows	SH-C-103/decides/SH-S-5272	providers-manage behind a beta
+CM-TAX-004	shopify	extension-point	SH-C-103/where/SH-S-7128	admin route partner/:appId in the Taxes section
+CM-TAX-004	shopify	extension-point	SH-C-103/where/SH-S-2708	App Store category Tax apps
+CM-TAX-004	shopify	extension-point	SH-I-1944	App Store category Tax apps
+CM-TAX-004	shopify	extension-point	SH-C-103/where/SH-S-2256	extension point tax_calculation
+CM-TAX-004	shopify	extension-point	SH-I-1492	extension point Tax calculation (tax_calculation)
+CM-TAX-004	shopify	extension-point	SH-C-103/where/SH-S-0528	a third-party tax app manages tax instead of Shopify's tax settings
+CM-TAX-004	shopify	extension-point	SH-C-103/where/SH-S-0530	a tax app replaces Shopify's tax service for the store
+CM-TAX-004	shopify	extension-point	SH-C-103/decides/SH-S-0512	in all regions, paid third-party tax apps instead of Shopify's
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-0532	information transmitted to the tax app provider to calculate exemptions
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-6298	write_taxes: the caller must be a tax calculations app
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-6299	write_taxes: a tax calculations app, with the feature on
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-1145	access scope write_taxes
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-6130	webhook tax_services/create, a tax service created
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-6131	webhook tax_services/update
+CM-TAX-004	shopify	extension-point	SH-C-103/boundary/SH-S-1373	webhook topic tax_services/create
+CM-TAX-004	shopify	shows	SH-C-103/decides/SH-S-0529	an account with the tax service provider needed before activating the app
+CM-TAX-004	shopify	shows	SH-C-103/decides/SH-S-0531	if the app is unavailable, Shopify's tax settings are used
+CM-TAX-004	shopify	shows	SH-C-103/decides/SH-S-7069	plan line Advanced tax platform, Add on on every plan
+CM-TAX-004	shopify	shows	SH-I-1325	billing charge category Avalara add-on fees
+CM-TAX-004	salla	shows	SA-C-160/decides/SA-S-3511	flag avalara-tax, not released, plan special
+CM-TAX-005	shopify	core	SH-C-102/where/SH-S-0535	VAT validation: business customers enter a VAT number at checkout for the reverse charge exemption
+CM-TAX-005	shopify	core	SH-C-102/where/SH-S-7126	Taxes section route vat-number-validation
+CM-TAX-005	shopify	core	SH-C-102/decides/SH-S-7068	plan line VAT validation, exemptions, and invoicing, Included on every plan
+CM-TAX-005	shopify	core	SH-C-102/decides/SH-S-0536	only for stores using Shopify Tax in the EU or UK
+CM-TAX-005	shopify	core	SH-C-102/boundary/SH-S-0670	a checkout field for customers to enter their VAT number
+CM-TAX-005	shopify	shows	SH-C-102/responsible/SH-S-0633	VAT removed; the customer reports and pays it on their own return
+CM-TAX-005	shopify	shows	SH-I-2320	help-centre title Tax overrides and exemptions
+CM-TAX-005	shopify	shows	SH-I-2331	help-centre title VAT invoices for the European Union and United Kingdom
+CM-TAX-005	shopify	shows	SH-I-2330	help-centre title Shopify Tax features for the European Union and United Kingdom
+CM-TAX-006	shopify	core	SH-C-104/where/SH-S-5269	admin route taxes/filing
+CM-TAX-006	shopify	core	SH-C-104/decides/SH-S-5270	tax-filing:tax-region gated by the feature taxFilingEnabled
+CM-TAX-006	shopify	shows	SH-C-104/decides/SH-S-5887	feature taxFilingEnabled false in the captured stores
+CM-TAX-006	shopify	core	SH-C-104/decides/SH-S-7223	built-in feature Shopify Tax (US): preparation, filing and remittance of sales tax returns
+CM-TAX-006	shopify	core	SH-C-104/decides/SH-S-0522	only for US stores that use Shopify Tax
+CM-TAX-006	shopify	shows	SH-C-104/decides/SH-S-0523	filed only for sales on Shopify where the merchant is merchant of record
+CM-TAX-006	shopify	shows	SH-C-104/decides/SH-S-0521	closed to new enrollment
+CM-TAX-006	shopify	shows	SH-C-104/decides/SH-S-0525	ending: files returns for sales through December 31, 2026
+CM-TAX-006	shopify	outside	SH-C-104/responsible/SH-S-0602	the Tax Service Provider is Sovos Compliance, LLC
+CM-TAX-006	shopify	outside	SH-C-104/responsible/SH-S-0606	the Tax Service Provider generates and submits the returns
+CM-TAX-006	shopify	shows	SH-C-104/boundary/SH-S-0603	a filing service made available through Shopify, using the provider's services
+CM-TAX-006	shopify	shows	SH-C-104/responsible/SH-S-0604	a legal agreement between the merchant and the Tax Service Provider
+CM-TAX-006	shopify	shows	SH-C-104/boundary/SH-S-0605	Shopify delivers information, including from Shopify Tax, to the provider
+CM-TAX-006	shopify	shows	SH-C-104/boundary/SH-S-0040	Shopify Tax Automated Filing subject to its own terms
+CM-TAX-006	shopify	shows	SH-C-104/responsible/SH-S-0607	merchant solely responsible for tax compliance
+CM-TAX-006	shopify	outside	SH-C-104/decides/SH-S-0526	a third-party filing service files the returns
+CM-TAX-006	shopify	shows	SH-C-137/responsible/SH-S-0527	marketplace facilitators collect and remit sales tax for marketplace sales
+CM-TAX-006	shopify	shows	SH-I-1324	billing charge category Automated filing
+CM-TAX-007	salla	core	SA-C-161/decides/SA-S-2120	plan line الربط بهيئة الزكاة والضريبة والجمارك, سلة برو
+CM-TAX-007	salla	core	SA-C-161/decides/SA-S-3219	released flag zatca, type app, plans pro, special
+CM-TAX-007	salla	core	SA-C-161/decides/SA-S-0150	available for Pro and Special plans only
+CM-TAX-007	salla	core	SA-C-161/boundary/SA-S-0148	links the store's tax invoices and uploads them to ZATCA through Salla
+CM-TAX-007	salla	core	SA-C-161/boundary/SA-S-0152	a verification code grants Salla authority to manage the invoices
+CM-TAX-007	salla	core	SA-C-161/boundary/SA-S-0013	the platform complies with ZATCA e-invoicing and Gulf tax systems
+CM-TAX-007	salla	shows	SA-C-161/where/SA-S-0151	install the app الربط مع هيئة الزكاة والضريبة (free)
+CM-TAX-007	salla	shows	SA-C-161/decides/SA-S-0149	for stores in Saudi Arabia only
+CM-TAX-007	salla	shows	SA-C-161/reason/SA-S-0153	the aim: accuracy and faster compliance
+CM-TAX-008	shopify	core	SH-C-105/where/SH-S-7129	Taxes section route duties
+CM-TAX-008	shopify	core	SH-C-105/decides/SH-S-7079	plan row Estimate and collect duties and taxes, enabled
+CM-TAX-008	shopify	core	SH-C-105/boundary/SH-S-7456	Admin API object Duty: the duty details for a line item
+CM-TAX-008	shopify	core	SH-C-105/where/SH-S-0538	collect an estimate of duties and import taxes at checkout
+CM-TAX-008	shopify	shows	SH-C-105/where/SH-S-6323	admin link Markets
+CM-TAX-008	shopify	shows	SH-C-105/decides/SH-S-0537	customs authorities set the amount
+CM-TAX-008	shopify	shows	SH-C-105/responsible/SH-S-0618	Shopify not liable for customs charges, import taxes or duties on shipments
+CM-TAX-008	shopify	shows	SH-C-105/responsible/SH-S-0037	merchant responsible for collecting and remitting duties
+CM-TAX-008	shopify	shows	SH-C-105/responsible/SH-S-0571	Managed Markets covers a difference in the amount customs charges
+CM-TAX-008	shopify	shows	SH-I-1327	billing charge category Duties and import tax transaction fees
+CM-TAX-008	shopify	shows	SH-I-1341	billing charge category Shipping duties and import taxes
+CM-TAX-008	salla	core	SA-C-162/where/SA-S-1686	settings link Taxes at /taxes-and-duties
+CM-TAX-008	salla	core	SA-C-162/decides/SA-S-5074	enable the option Show the customs information field, international shipping to Qatar and Oman
+CM-TAX-008	salla	core	SA-C-162/boundary/SA-S-5075	customs and extra international fees on Salla's labels settled from the wallet balance
+CM-TAX-008	salla	shows	SA-C-162/reason/SA-S-0146	eases customs clearance and the customer's experience
+CM-TAX-009	shopify	core	SH-C-099/where/SH-S-7121	admin route finance/tax-forms/1099-k, 1099-K tax forms
+CM-TAX-009	shopify	core	SH-C-099/where/SH-S-7122	admin route finance/tax-forms/1099-misc, 1099-MISC tax forms
+CM-TAX-009	shopify	core	SH-C-099/decides/SH-S-5054	route gated by VIEW_TAX_DOCUMENTS and hasInitiatedOnboardingToBanking
+CM-TAX-009	shopify	core	SH-C-099/decides/SH-S-5045	balance:inactive:tax-forms:1099-misc gated by VIEW_TAX_DOCUMENTS
+CM-TAX-009	shopify	core	SH-I-1132	staff permission VIEW_TAX_DOCUMENTS
+CM-TAX-009	shopify	core	SH-C-099/where/SH-S-0505	the 1099-K generated by Shopify Payments, given to the merchant and the IRS annually
+CM-TAX-009	shopify	shows	SH-C-099/where/SH-S-6347	admin link Finance
+CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-5463	feature hasInitiatedOnboardingToBanking false in the captured stores
+CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0502	US tax laws require Payment Settlement Entities to file a 1099-K with the IRS
+CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0504	Shopify might also report the merchant's sales to local tax authorities
+CM-TAX-009	shopify	shows	SH-C-099/decides/SH-S-0096	Shopify may file tax reports with tax authorities on Transactions
+CM-TAX-009	shopify	shows	SH-C-099/responsible/SH-S-0503	the merchant reports this income on its tax returns
