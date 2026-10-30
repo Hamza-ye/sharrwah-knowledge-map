@@ -596,7 +596,8 @@ def cmd_batches(a):
             print("\t".join(l)[:180])
 
 
-TOKEN = re.compile(r"[A-Za-z][A-Za-z0-9]*(?:[_:./-][A-Za-z0-9]+)+|[a-z]+[A-Z][A-Za-z0-9]+|[A-Z]{2,}_[A-Z_]+")
+# an identifier, whole: a word is never matched from its middle (BigCommerce is one token, never "igCommerce")
+TOKEN = re.compile(r"(?<![A-Za-z0-9])(?:[A-Za-z][A-Za-z0-9]*(?:[_:./-][A-Za-z0-9]+)+|[a-z]+[A-Z][A-Za-z0-9]+|[A-Z]{2,}_[A-Z_]+)(?![A-Za-z0-9])")
 
 
 def candidate_index(platform):
