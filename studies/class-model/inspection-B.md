@@ -37,7 +37,7 @@ For the statements of the concerns the inspector reads as domain B's (the sets a
 **The evidence.**
 - The seed itself puts one grouping in two areas of different domains: Shopify's "gift cards" under SEL (domain B) and LOY (domain D); Salla's "Gifting" under SEL and LOY (`km-areas.tsv`, rows SEL and LOY; script: every `;`-separated label listed under more than one area).
 - Concerns span domains: `SA-C-063` "Customer wallet, cashback and gift cards" (SEL and LOY); `SA-C-125` "Recurring payments and subscriptions sold by stores" (SEL and PAY); `SA-C-127` "Charity stores' payment gateways" (the seed's SEL label "Charity stores", and PAY); `BC-C-010` "Marketing: coupons, banners and gift certificates" (MKT and SEL or LOY); `WC-C-104` "Merchandising extensions (bundles, gifts, product options, pricing, display, variations, …)" and `WC-C-105` "Conversion extensions (feedback, promotions, order recovery, loyalty, alerts, upsells)".
-- Q1's matches cross domains, so a match can be split between two parts: `M-013` joins `SH-C-025` Gift cards with `SA-C-063` (wallet); `M-074` joins `SH-C-186` Subscriptions and selling plans, `SA-C-125` and `WC-C-100`. Of the 88 matches, 13 touch a concern the inspector reads as domain B's, and 6 of them touch it only through a concern that could belong elsewhere (`M-020`, `M-046`, `M-055`, `M-065`, `M-075`, `M-083`). Of the 84 unclear candidates, 21 touch one (script over `matches.tsv` and `unclear-matches.tsv` with the sets of finding 12).
+- Q1's matches cross domains, so a match can be split between two parts: `M-013` joins `SH-C-025` Gift cards with `SA-C-063` (wallet); `M-074` joins `SH-C-186` Subscriptions and selling plans, `SA-C-125` and `WC-C-100`. Of the 88 matches, 13 touch a concern the inspector reads as domain B's, and 7 of them touch it only through a concern that could belong elsewhere (`M-020`, `M-046`, `M-055`, `M-065`, `M-075`, `M-080`, `M-083`). Of the 84 unclear candidates, 21 touch one (script over `matches.tsv` and `unclear-matches.tsv` with the sets of finding 12).
 
 **Proposed fix.** Before any anchor part runs, the coordinator writes one scope file, for example `studies/class-model/scope.tsv`: `platform · concern_id · domain · reason`, one row for every concern of all five platforms (198 + 152 + 118 + 96 + 88 = 652 rows), each a reading, with one rule for a concern that spans domains (it goes to one domain, named in `reason`, and the other domain's part sees it read-only). The brief then says "take the concerns `scope.tsv` gives your domain", and the "left for another domain" list becomes unnecessary. A checker tests that every concern is in exactly one domain, and that every Q1 match's concerns are in one domain or the split is named.
 
@@ -72,8 +72,8 @@ For the statements of the concerns the inspector reads as domain B's (the sets a
 - A capability's statements are not always in one concern, so a "nothing held" written from the concern list alone can be false.
 
 **The evidence.**
-- `M-011`: `SH-C-020` against `SA-C-020;SA-C-021;SA-C-022;SA-C-023` against `WC-C-064`. Its own `granularity` note: "Salla splits products (SA-C-020), options and variants (SA-C-021), categories (SA-C-022) and brands (SA-C-023); WooCommerce keeps all in WC-C-064; Shopify keeps variants with products, has no brands concern". 33 of the 88 matches hold more than one concern on one side (13 Shopify, 10 Salla, 10 WooCommerce cells with a list; script).
-- `WC-C-064` "Products and catalogue structure (types, variations, attributes, categories, tags, brands)" holds the `where` rows "Products > Categories" (`WC-S-0052`), "Products > Tags" (`WC-S-0053`), "Products > Brands" (`WC-S-0054`) and "Products > Attributes" (`WC-S-0055`). If it lands in a "Products" capability, the WooCommerce cells of categories, tags, brands and attributes say "nothing held".
+- `M-011`: `SH-C-020` against `SA-C-020;SA-C-021;SA-C-022;SA-C-023` against `WC-C-064`. Its own `granularity` note: "Salla splits products (SA-C-020), options and variants (SA-C-021), categories (SA-C-022) and brands (SA-C-023); WooCommerce keeps all in WC-C-064; Shopify keeps variants with products, has no brands concern". 27 of the 88 matches hold more than one concern on at least one side (13 Shopify, 10 Salla and 10 WooCommerce cells hold a list; script).
+- `WC-C-064` "Products and catalogue structure (types, variations, attributes, categories, tags, brands)" holds the `where` rows "Products > Categories" (`WC-S-0052`), "Products > Tags" (`WC-S-0053`), "Products > Brands" (`WC-S-0054`) and "Products > Attributes" (`WC-S-0055`). If it lands in a "Products" capability, the WooCommerce cells of whatever capabilities the anchor makes for categories, brands, and options and variants (Salla's `SA-C-022`, `SA-C-023`, `SA-C-021`) say "nothing held".
 - `BC-C-010` "Marketing: coupons, banners and gift certificates" holds BigCommerce's only gift-certificate statements (1 for "gift certificate", 1 for "gift card"; script over `statements.tsv`). If it lands with coupons, BigCommerce's gift-card cell says "nothing held".
 - WooCommerce's statements naming brands, variations, attributes or categories sit in `WC-C-064` and also in `WC-C-079` (Store API), `WC-C-038` (analytics), `WC-C-058`, `WC-C-104` and `WC-C-105` (script: regex over `identifier` and `statement`).
 
@@ -277,7 +277,7 @@ PLAN lines 184 to 187: "each brief keeps an agent's context small: … large fil
 
 **The evidence.** In domain B's scope:
 - `SH-C-038` has a `where` gap ("observation needed");
-- all 21 Salla concerns but one (`SA-C-124`) have `responsible` as "page not read", and most also have `reason` as "page not read";
+- 19 of the 21 Salla concerns have `responsible` as "page not read" (`SA-C-124` has a statement; `SA-C-125` has "stated only in general terms"), and 14 of the 21 also have `reason` as "page not read";
 - `ZD-C-101` Gifting has only a `where` row, with its other placements gaps;
 - `BC-C-036` Wishlists likewise has only a `where` row.
 
@@ -291,7 +291,7 @@ Script: per concern, statements by placement and gaps with their kind.
 
 **The problem.** `citations.tsv` gives a commit only for observed-sh and observed-sa sources. URL sources carry none, and the release carries a version, not a commit. Their copies are in this repository's `evidence/product-class/runs/*/manifest.tsv`, found by URL, and in `/home/user/woocommerce-release/11.2.1`; the brief names neither. The brief also doesn't say whether more context read from a structure may be cited. Line 58 implies it may not ("every cell cites Q1's ids").
 
-**The evidence.** Every Zid citation (1,087) and every BigCommerce citation (481) is a URL. So are 581 of WooCommerce's 1,466, 1,008 of Shopify's 5,055 and 278 of Salla's 2,982. Script: classifying `source` by prefix.
+**The evidence.** Every Zid citation (1,087) and every BigCommerce citation (481) is a URL. So are 581 of WooCommerce's 1,466, 1,001 of Shopify's 5,055 and 278 of Salla's 2,982. Script: classifying `source` by prefix.
 
 **Proposed fix.** Name the two places. Say that context read beyond Q1's statements informs a reading and is never cited; a needed new statement goes in `notes.md` as a gap.
 
