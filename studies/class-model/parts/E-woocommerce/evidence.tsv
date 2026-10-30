@@ -29,3 +29,67 @@ CM-CNT-008	woocommerce	shows	WC-C-071/responsible/WC-S-5408	merchant must mainta
 CM-CHN-001	woocommerce	extension-point	WC-C-110/where/WC-S-0759	Marketplace category Marketing > Sales channels
 CM-CHN-004	woocommerce	shows	WC-C-110/boundary/WC-S-5494	Google for WooCommerce syncs product data to Google Merchant Center
 CM-CHN-004	woocommerce	shows	WC-C-110/decides/WC-S-5492	products without the required fields aren't synced
+CM-POS-001	woocommerce	core	WC-C-089/where/WC-S-0010	settings tab Point of Sale
+CM-POS-001	woocommerce	core	WC-C-089/where/WC-S-0937	released feature point_of_sale for the mobile apps
+CM-POS-001	woocommerce	core	WC-C-089/decides/WC-S-5435	staff permissions: per-user woocommerce_pos_* capabilities
+CM-POS-001	woocommerce	extension-point	WC-C-089/where/WC-S-0753	Marketplace category Store management > Point of sale
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0892	POS mode of the Woo Mobile App; maker not named
+CM-POS-001	woocommerce	shows	WC-C-089/boundary/WC-S-0895	POS sales sync with the site
+CM-POS-001	woocommerce	shows	WC-C-089/decides/WC-S-0893	store address in a supported country
+CM-POS-001	woocommerce	shows	WC-C-089/decides/WC-S-0894	the country's native currency as store currency
+CM-POS-001	woocommerce	shows	WC-C-089/reason/WC-S-5436	why POS capabilities are per-user
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0308	customer email POS completed order
+CM-POS-001	woocommerce	shows	WC-C-089/where/WC-S-0309	customer email POS refunded order
+CM-POS-002	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations
+CM-POS-002	woocommerce	shows	WC-C-014/where/WC-S-0868	WooPayments In-Person Payments: card reader or Tap to Pay
+CM-POS-002	woocommerce	outside	WC-C-014/responsible/WC-S-0481	POS terminals manufactured by third parties
+CM-POS-002	woocommerce	outside	WC-C-014/responsible/WC-S-0850	Stripe Terminal Services and Purchase Terms on receiving a terminal
+CM-POS-002	woocommerce	extension-point	WC-C-089/where/WC-S-0711	Marketplace category Official payments > In-person payments
+CM-POS-002	woocommerce	shows	WC-C-014/decides/WC-S-0869	available to merchants in listed countries
+CM-POS-002	woocommerce	shows	WC-C-014/decides/WC-S-0870	card readers and Tap to Pay collect the country's default currency only
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-5354	setting Selling location(s), woocommerce_allowed_countries
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-0600	limit which countries you are willing to sell to
+CM-MKS-001	woocommerce	core	WC-C-030/decides/WC-S-0880	general settings page: regions you sell and ship to
+CM-MKS-001	woocommerce	core	WC-C-030/boundary/WC-S-5356	own filter woocommerce_countries_allowed_countries
+CM-MKS-001	woocommerce	extension-point	WC-C-108/where/WC-S-0741	Marketplace category International and localization
+CM-MKS-001	woocommerce	shows	WC-C-030/where/WC-S-0001	settings tab General
+CM-MKS-001	woocommerce	shows	WC-C-030/decides/WC-S-5355	setting Shipping location(s), shipping's
+CM-MKS-001	woocommerce	shows	WC-C-030/boundary/WC-S-5357	filter woocommerce_countries_shipping_countries, shipping's
+CM-MKS-004	woocommerce	core	WC-C-046/reason/WC-S-0641	core plugin geolocates customers for tax rates and shipping methods
+CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0640	WooCommerce integrates with MaxMind GeoLite2 data
+CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-0602	option Default customer location, geolocation
+CM-MKS-004	woocommerce	core	WC-C-046/decides/WC-S-5377	option woocommerce_default_customer_address
+CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0008	settings tab Integration
+CM-MKS-004	woocommerce	outside	WC-C-046/decides/WC-S-5378	a MaxMind account the merchant creates
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0615	database downloaded from MaxMind
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0612	IP lookup service ipify
+CM-MKS-004	woocommerce	outside	WC-C-046/boundary/WC-S-0613	IP lookup service ipinfo.io
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0598	option woocommerce_currency: catalog prices and gateways' currency
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-5381	option woocommerce_currency, default USD
+CM-MKS-005	woocommerce	core	WC-C-052/where/WC-S-0001	settings tab General
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0876	one base currency, for prices and new orders
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0877	changing it converts no amounts
+CM-MKS-005	woocommerce	core	WC-C-052/decides/WC-S-0874	one base currency per store
+CM-MKS-005	woocommerce	core	WC-C-052/boundary/WC-S-0127	own REST route data-currencies
+CM-MKS-005	woocommerce	shows	WC-C-030/decides/WC-S-0880	general settings: select the currency for sales
+CM-MKS-006	woocommerce	extension-point	WC-C-053/where/WC-S-0875	other currencies need a multi-currency extension/plugin
+CM-MKS-006	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations
+CM-MKS-006	woocommerce	shows	WC-C-053/where/WC-S-0541	WooPayments' built-in multi-currency
+CM-MKS-006	woocommerce	shows	WC-C-053/decides/WC-S-0542	customer currency defaults to the store currency
+CM-MKS-007	woocommerce	own-service	WC-C-006/responsible/WC-S-0476	Automattic's terms: As part of WooPayments, we ... our obligations
+CM-MKS-007	woocommerce	shows	WC-C-053/boundary/WC-S-0543	exchange rates retrieved from the WooPayments server
+CM-MKS-007	woocommerce	shows	WC-C-053/decides/WC-S-0544	manually-defined exchange rate
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0540	WooPayments charges a currency conversion fee
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0535	converted into the default currency
+CM-MKS-007	woocommerce	shows	WC-C-051/decides/WC-S-0539	order total converted before fees
+CM-MKS-007	woocommerce	shows	WC-C-051/boundary/WC-S-5313	separate bank accounts per currency avoid the fees
+CM-MKS-007	woocommerce	shows	WC-C-051/reason/WC-S-5315	payouts in several currencies avoid conversion fees
+CM-MKS-009	woocommerce	core	WC-C-099/where/WC-S-5459	i18n/countries.php returns countries and codes
+CM-MKS-009	woocommerce	core	WC-C-099/decides/WC-S-5460	country names follow Unicode CLDR
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0124	own REST route data
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0693	data API to view available data
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0126	own REST route data-countries
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0125	own REST route data-continents
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-0210	own admin API DataCountries
+CM-MKS-009	woocommerce	core	WC-C-099/boundary/WC-S-5461	own filter woocommerce_countries
+CM-MKS-004	woocommerce	core	WC-C-046/where/WC-S-0602	option Default customer location, under where

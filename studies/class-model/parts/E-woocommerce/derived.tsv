@@ -13,6 +13,19 @@ CM-CNT-005	woocommerce	none-held
 CM-CNT-006	woocommerce	none-held					
 CM-CNT-007	woocommerce	statements	extension-point	Extensions > Marketing > SEO and SEM		WC-C-110/responsible:stated only in general terms;WC-C-110/reason:searched, not found	
 CM-CNT-008	woocommerce	statements	not-stated		WC-C-071/responsible/WC-S-5408=Ecommerce Services (Terms 8.j)	WC-C-071/reason:searched, not found	
+CM-MKS-001	woocommerce	statements	core;extension-point	Extensions > Store content and customizations > International and localization | General		WC-C-030/responsible:stated only in general terms;WC-C-030/reason:searched, not found;WC-C-108/decides:stated only in general terms;WC-C-108/responsible:stated only in general terms;WC-C-108/boundary:searched, not found;WC-C-108/reason:searched, not found	general
+CM-MKS-002	woocommerce	none-held					
+CM-MKS-003	woocommerce	none-held					
+CM-MKS-004	woocommerce	statements	core;outside	Integration | MaxMind geolocation integration | woocommerce_default_customer_address		WC-C-046/responsible:searched, not found	general
+CM-MKS-005	woocommerce	statements	core	General		WC-C-030/responsible:stated only in general terms;WC-C-030/reason:searched, not found;WC-C-052/responsible:stated only in general terms;WC-C-052/reason:searched, not found	general
+CM-MKS-006	woocommerce	statements	extension-point;own-service	Currencies in a transaction | Shop currency	WC-C-053/decides/WC-S-0542=WooPayments | WC-C-053/where/WC-S-0541=WooPayments	WC-C-053/responsible:stated only in general terms;WC-C-053/reason:searched, not found	general
+CM-MKS-007	woocommerce	statements	own-service		WC-C-053/boundary/WC-S-0543=WooPayments | WC-C-053/decides/WC-S-0544=WooPayments	WC-C-051/where:observation needed;WC-C-051/responsible:page not read;WC-C-053/responsible:stated only in general terms;WC-C-053/reason:searched, not found	general
+CM-MKS-008	woocommerce	none-held					
+CM-MKS-009	woocommerce	statements	core	i18n/countries.php		WC-C-099/responsible:stated only in general terms;WC-C-099/reason:searched, not found	general
+CM-POS-001	woocommerce	statements	core;extension-point	Extensions > Store management > Point of sale | POS completed order (WC_Email_Customer_POS_Completed_Order) | POS refunded order (WC_Email_Customer_POS_Refunded_Order) | Point of Sale | Woo Mobile App: Point of Sale Mode | point_of_sale		WC-C-089/responsible:stated only in general terms	general
+CM-POS-002	woocommerce	statements	extension-point;outside;own-service	Extensions > Official payments > In-person payments | WooPayments: In-Person Payments		WC-C-014/reason:searched, not found;WC-C-089/responsible:stated only in general terms	general
+CM-POS-003	woocommerce	none-held					
+CM-POS-004	woocommerce	none-held					
 CM-SFR-001	woocommerce	statements	core	Choose your theme		WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
 CM-SFR-002	woocommerce	statements	core	Customize your store		WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general
 CM-SFR-003	woocommerce	statements	extension-point;own-service	Getting started | Themes		WC-C-017/reason:searched, not found;WC-C-050/boundary:searched, not found;WC-C-050/reason:searched, not found;WC-C-111/decides:searched, not found;WC-C-111/responsible:stated only in general terms;WC-C-111/reason:searched, not found	general

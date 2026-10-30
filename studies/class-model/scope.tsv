@@ -354,7 +354,7 @@ woocommerce	WC-C-002	C		Direct bank transfer; Check payments; Cash on delivery; 
 woocommerce	WC-C-003	C		PayPal Standard; where paypal gateway (PAY); M-032
 woocommerce	WC-C-004	C		payment-gateway-suggestions; Set up payments: providers offered per store country (PAY)
 woocommerce	WC-C-005	C	F	Extensions > Official payments; Processors & gateways: payment providers through extensions; the channel doesn't set the domain (PAY); M-025
-woocommerce	WC-C-006	C		WooPayments; where Get paid with WooPayments (PAY); M-026
+woocommerce	WC-C-006	C	E	WooPayments; where Get paid with WooPayments (PAY); M-026; also E: its statement naming WooPayments' provider (WC-S-0476) supports own-service for WooPayments' in-person and multi-currency features in E (the coordinator, after E-woocommerce batch 2)
 woocommerce	WC-C-007	C		Payouts; account balance in WooPayments (PAY); M-027
 woocommerce	WC-C-008	C		reserve; WooPayments: Reserves (PAY); M-028
 woocommerce	WC-C-009	C	A	Know Your Customer; KYC for WooPayments (PAY); M-003
@@ -399,7 +399,7 @@ woocommerce	WC-C-047	C	D	Address autocomplete; Preferred address autocomplete pr
 woocommerce	WC-C-048	C		built in partnership with Stripe: processor dependence (PAY); M-037
 woocommerce	WC-C-049	A	F	WordPress.com account; Jetpack connection: the account for Woo services (ACC)
 woocommerce	WC-C-050	F	E	Developed by Woo; where Extensions > Developed by Woo (APP); also E: its statement on who makes Woo's themes (WC-S-0644) bears on the theme marketplace (the coordinator, after E-woocommerce batch 1)
-woocommerce	WC-C-051	E	C	Payout currencies; currency conversion fee (MKS); M-044
+woocommerce	WC-C-051	E	C	Payout currencies; currency conversion fee (MKS); M-044; also C: its payout-currency statements (WC-S-0536, WC-S-5314) are about payouts (the coordinator, after E-woocommerce batch 2)
 woocommerce	WC-C-052	E	C	Currency; base currency; where General (MKS); M-044
 woocommerce	WC-C-053	E	C	multi-currency; Shop currency (MKS); M-044
 woocommerce	WC-C-054	C		Tax; Tax options; Standard rates (TAX); M-040

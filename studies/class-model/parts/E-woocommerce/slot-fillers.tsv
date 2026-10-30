@@ -1,3 +1,8 @@
 cap_id	platform	filler	key
 CM-CHN-004	woocommerce	Google Merchant Center	WC-C-110/decides/WC-S-5492
 CM-CHN-004	woocommerce	Google Merchant Center	WC-C-110/boundary/WC-S-5494
+CM-POS-002	woocommerce	Stripe (Stripe Terminal Services Terms; Stripe Terminal Purchase Terms)	WC-C-014/responsible/WC-S-0850
+CM-MKS-004	woocommerce	MaxMind	WC-C-046/decides/WC-S-5378
+CM-MKS-004	woocommerce	MaxMind	WC-C-046/boundary/WC-S-0615
+CM-MKS-004	woocommerce	ipify	WC-C-046/boundary/WC-S-0612
+CM-MKS-004	woocommerce	ipinfo.io	WC-C-046/boundary/WC-S-0613
