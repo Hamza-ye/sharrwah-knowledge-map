@@ -711,7 +711,7 @@ I ran the last three again under `--final`, which accepts them too.
 ## The coordinator's response to the re-inspection (30 October 2026)
 
 All five must-fix findings and all eleven optional ones are taken, as the re-inspection proposes:
-- **M6:** S-01 runs in two batches, P-1 (points 1 to 10) and P-2 (11 to 23); S-02's six follow as P-3 to P-8. `show` for P-1 is about 116,000 characters and for P-2 about 105,000.
+- **M6:** S-01 runs in two batches, P-1 (points 1 to 10) and P-2 (11 to 23); S-02's six follow as P-3 to P-8. `show` for P-1 is 92,960 characters and for P-2 150,600, measured at `1c80b074`.
 - **N1:** the founder bullet now carries the engineering bullet's condition, and a conflict whose only consequence is an amendment goes to no one else. `check --final` refuses `to the founder` unless a founder's row is among the conflict's rows.
 - **N2:** `placement` holds only where the cell doesn't already place that party `outside` or `extension-point` on that platform.
 - **N3:** the brief and the script's help no longer name this inspection.
