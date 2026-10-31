@@ -1027,6 +1027,10 @@ CM-TRU-006	bigcommerce	core	BC-E-8e28f7e3	(the held pass, BC-1) a reading: a sec
 CM-TRU-001	bigcommerce	core	BC-E-8e28f7e3	(the held pass, BC-1) a reading: a section of the control panel's own Settings list: the same tab's security settings for the control panel, read as the admin's sign-in security; the tab's fields aren't held: group: General; section: Security & Privacy; description: Security & privacy settings for storefront and control panel	A-bigcommerce
 CM-TRU-003	bigcommerce	core	BC-E-195dc194	(the held pass, BC-1) a reading: a section of the control panel's own Settings list: the same section sets the staff action logs' rules: the audit log of admin activity: group: Advanced; section: Store logs; description: System logs and staff action logs rules	A-bigcommerce
 CM-STF-001	bigcommerce	core	BC-E-36c85b1f	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, ToDo=viewUsers): the people given access to the control panel: group: Advanced; section: Users; description: Providing access to the administration area of your store	A-bigcommerce
+CM-PLN-008	shopify	core	SH-I-1141	plan line Earn 1% back on all sales, the public pricing page	A-amend
+CM-PLN-008	shopify	core	SH-I-1243	plan line Earn 1% back on all sales, the admin's plan comparison	A-amend
+CM-STF-006	shopify	core	SH-C-054/boundary/SH-S-6229	orderUpdate: assigning events to another staff member needs the scope write_pos_staff_member_event_attribution_overrides	A-amend
+CM-STF-006	shopify	shows	SH-I-2063	staff notification template Sales attribution edited	A-amend
 CM-CAT-001	shopify	core	SH-C-020/where/SH-S-1509	the admin's main navigation item Products	B-anchor
 CM-CAT-001	shopify	core	SH-C-020/where/SH-S-5015	admin route products	B-anchor
 CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-5016	the route's eligibility: PRODUCTS permission, products entitlement	B-anchor
@@ -1488,6 +1492,7 @@ CM-SEL-001	bigcommerce	shows	BC-E-b327dda2	(the held pass, BC-1) (the review, R2
 CM-INV-005	bigcommerce	core	BC-E-b6118ce7	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it: inventory locations, by plan: feature_text: Inventory locations Sell and fulfill orders in multiple retail locations, including in-store pick up and …	B-bigcommerce
 CM-INV-005	bigcommerce	core	BC-E-ef62b8aa	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Setup, /manage/microapps/inventory-locations-app): group: Setup; section: Locations; description: Locations represent the physical places where you stock inventory	B-bigcommerce
 CM-INV-001	bigcommerce	core	BC-E-1f2ad59d	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Products, /manage/microapps/inventory-settings-ui): inventory settings, what shoppers see when a product is out of stock: group: Products; section: Inventory; description: What shoppers will see when a product is out of stock, etc.	B-bigcommerce
+CM-CAT-016	salla	core	SA-C-020/decides/SA-S-3473	feature flag product-certificates, released, type feature, plans plus, pro and special	B-amend
 CM-CHK-001	shopify	core	SH-C-047/where/SH-S-1489	settings page title Checkout	C-anchor
 CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-5106	route checkout-settings, MANAGE_CHECKOUT_SETTINGS and webCheckout	C-anchor
 CM-CHK-001	shopify	core	SH-C-047/decides/SH-S-5562	entitlement webCheckout true in the captured stores	C-anchor
@@ -4464,6 +4469,14 @@ CM-RET-003	bigcommerce	core	BC-E-d0c0cf13	(the held pass, BC-1) a reading: a sec
 CM-ORD-003	bigcommerce	core	BC-E-f841ed4e	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Orders, /manage/microapps/ng-order-statuses): group: Orders; section: Statuses; description: Order statuses and order status descriptions	C-bigcommerce
 CM-PAY-028	bigcommerce	extension-point	BC-E-07d6fb66	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, /admin/apps/accounting) for connecting accounting software: the platform's own place for connecting third parties' software, so extension-point (the coordinator's ruling M-7); the page itself isn't held: group: Advanced; section: Accounting; description: Connecting accounting software	C-bigcommerce
 CM-TAX-006	bigcommerce	extension-point	BC-E-0b4cb55e	(the held pass, BC-1) a reading: Avalara AvaTax's description names 'automatic return filing': tax filing done by a third party through the platform's interface: id: AvalaraProvider; displayName: Avalara; app_id: 32120; type: platform; displayInformation: {description: Avalara Ava…	C-bigcommerce
+CM-CHK-011	shopify	core	SH-C-046/decides/SH-S-7483	setting Add-to-cart limit, a suggested maximum quantity limit (a reading on role)	C-amend
+CM-CHK-011	shopify	core	SH-C-046/decides/SH-S-7484	the Add-to-cart limit's default of 50, for stores with fewer than 250 sales	C-amend
+CM-CHK-011	shopify	shows	SH-C-046/reason/SH-S-7489	reason: a limit on how many of each product a customer can add to the cart in one order	C-amend
+CM-CHK-011	shopify	shows	SH-I-2113	help-center section Set a limit to the maximum quantity of items per cart, a title only	C-amend
+CM-CHK-011	salla	core	SA-C-002/decides/SA-S-2097	plan line تخصيص خيارات المتجر: تخصيص الطلبات (حد أدنى، ...), plan سلة بلس (a reading: an order minimum)	C-amend
+CM-CHK-012	shopify	shows	SH-I-2109	help-center section Setting up tipping options for online orders, a title only	C-amend
+CM-PAY-033	shopify	core	SH-C-186/boundary/SH-S-6071	webhook topic subscription_billing_attempts/challenged: the financial institution challenges the charge as per 3D Secure	C-amend
+CM-PAY-033	bigcommerce	core	BC-C-022/reason/BC-S-0130	Payments API's rule for 3D Secure-enabled cards: saved in a shopper-initiated transaction, then charged as stored	C-amend
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-5140	admin route customer, path customers	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-1515	its own Customers section name	D-anchor
 CM-CUS-001	shopify	core	SH-C-039/where/SH-S-0775	its own Customers label	D-anchor
@@ -7738,3 +7751,17 @@ CM-SRF-001	bigcommerce	shows	BC-C-077/responsible/BC-S-0420	merchant responsible
 CM-MIG-003	bigcommerce	core	BC-E-a9e6a972	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, ToDo=viewExportTemplates): export settings for orders, customers and products: group: Advanced; section: Export templates; description: Orders, customers and products export settings	G-bigcommerce
 CM-OPS-005	bigcommerce	core	BC-E-195dc194	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, ToDo=systemLog): store logs, the cell's Settings > Advanced > Store logs (BC-S-0332): group: Advanced; section: Store logs; description: System logs and staff action logs rules	G-bigcommerce
 CM-EVO-001	bigcommerce	core	BC-E-76df3315	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, /manage/microapps/ai-labs-ui): a place where the merchant tries new tools and beta features: group: Advanced; section: Early access; description: Try new tools, beta functionality, and upcoming features	G-bigcommerce
+CM-SRF-002	salla	core	SA-C-002/decides/SA-S-2087	سلة بلس plan line ميزة البحث في إعدادات المتجر, search in the store's settings; also core on A's CM-ACC-006	G-amend
+CM-SRF-002	salla	shows	SA-C-020/decides/SA-S-2251	staff permission product_search, the products list's search; cited by no other cell	G-amend
+CM-SRF-002	salla	shows	SA-C-040/decides/SA-S-2266	staff permission order_search, the orders list's search; core on C's CM-ORD-001, so it counts once	G-amend
+CM-SRF-002	salla	shows	SA-C-060/decides/SA-S-2296	staff permission customer_search, the customers list's search; core on D's CM-CUS-001, so it counts once	G-amend
+CM-SRF-002	zid	shows	ZD-C-091/where/ZD-S-1036	the customers searched from Dashboard > Customers; core on D's CM-CUS-001, so it counts once	G-amend
+CM-SRF-002	woocommerce	shows	WC-I-0333	feature HPOS Full text search indexes, for the orders' search; experimental (C6)	G-amend
+CM-OPS-006	salla	core	SA-C-002/decides/SA-S-2092	سلة بلس plan line تفريغ الكاش, clearing the cache; also core on A's CM-ACC-006	G-amend
+CM-OPS-006	woocommerce	core	WC-I-0334	feature HPOS Data Caching, the order data cached; not experimental (the release, context)	G-amend
+CM-OPS-006	woocommerce	shows	WC-I-0352	feature Cache Product Objects; experimental (C6)	G-amend
+CM-OPS-006	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare's accelerated content delivery with a globally decentralized CDN, a third party	G-amend
+CM-OPS-007	salla	core	SA-C-040/boundary/SA-S-1018	its own Merchant API folder Order Histories; also core on C's CM-ORD-001	G-amend
+CM-OPS-007	zid	core	ZD-I-0272	plan line Order Update History / تاريخ تحديثات الطلب; also core on C's CM-ORD-001	G-amend
+CM-OPS-007	woocommerce	shows	WC-C-012/where/WC-S-5297	an Amazon Pay fee and its refund appear in the order timeline	G-amend
+CM-OPS-007	woocommerce	shows	WC-C-091/boundary/WC-S-5443	a matching withdrawal request adds an order note; core on C's CM-RET-004	G-amend

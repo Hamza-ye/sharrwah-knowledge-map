@@ -458,3 +458,4 @@ CM-AIA-001	woocommerce	Anthropic	WC-C-096/where/WC-S-5347	F-woocommerce
 CM-AIA-001	woocommerce	OpenAI	WC-C-096/where/WC-S-5347	F-woocommerce
 CM-AIA-002	zid	Google Cloud Vertex AI	ZD-C-025/boundary/ZD-S-0717	F-zid
 CM-OPS-003	bigcommerce	Amazon	BC-C-082/where/BC-S-0447	G-bigcommerce
+CM-OPS-006	bigcommerce	Cloudflare (accelerated content delivery, globally decentralized CDN, USA)	BC-C-082/where/BC-S-0448	G-amend

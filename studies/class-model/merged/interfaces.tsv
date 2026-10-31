@@ -1289,7 +1289,6 @@ CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3181	customer-recommendation
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3351	restriction-product-type
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3357	product-sorting
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3377	ai-driven-personalized-product
-CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3473	product-certificates
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3478	product-template
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3479	products-filters
 CM-CAT-001	by landing	decides	SA-C-020/decides/SA-S-3490	product-sale-start
@@ -1465,6 +1464,7 @@ CM-CAT-012	exact	decides	WC-C-093/decides/WC-S-5445	cost_of_goods_sold
 CM-CAT-013	exact	boundary	BC-C-008/boundary/BC-S-0054	CORS
 CM-CAT-013	exact	boundary	SA-C-020/boundary/SA-S-1599	product.price.updated
 CM-CAT-013	exact	decides	SA-C-020/decides/SA-S-3515	metal-pricing
+CM-CAT-016	exact	decides	SA-C-020/decides/SA-S-3473	product-certificates
 CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0097	store_checkout
 CM-CHK-001	exact	boundary	BC-C-016/boundary/BC-S-0099	store/channel/{channel_id}/settings/checkout/updated
 CM-CHK-001	exact	decides	BC-C-016/decides/BC-S-0095	Single-page checkout
@@ -1628,6 +1628,9 @@ CM-CHK-009	exact	boundary	WC-C-087/boundary/WC-S-0796	Removing checkout fields
 CM-CHK-009	exact	boundary	WC-C-107/boundary/WC-S-5486	legacy checkout
 CM-CHK-009	exact	decides	ZD-C-100/decides/ZD-S-0963	Custom Fields
 CM-CHK-010	exact	decides	BC-C-014/decides/BC-S-0084	Persistent cart
+CM-CHK-011	exact	decides	SA-C-002/decides/SA-S-2097	تخصيص خيارات المتجر
+CM-CHK-011	exact	decides	SH-C-046/decides/SH-S-7483	Add-to-cart limit
+CM-CHK-011	exact	decides	SH-C-046/decides/SH-S-7484	Add-to-cart limit
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6102	read_publications
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6103	read_publications
 CM-CHN-001	by landing	boundary	SH-C-135/boundary/SH-S-6287	write_resource_feedbacks
@@ -3013,6 +3016,9 @@ CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5371	remote_logging
 CM-OPS-005	exact	decides	WC-C-036/decides/WC-S-5372	RemoteLogger::is_remote_logging_allowed
 CM-OPS-005	exact	boundary	WC-C-037/boundary/WC-S-0446	WC_Log_Handler
 CM-OPS-005	exact	decides	WC-C-037/decides/WC-S-5373	woocommerce_logs_ settings
+CM-OPS-006	exact	decides	SA-C-002/decides/SA-S-2092	تفريغ الكاش
+CM-OPS-007	exact	boundary	SA-C-040/boundary/SA-S-1018	Order Histories
+CM-OPS-007	exact	boundary	WC-C-091/boundary/WC-S-5443	Review a withdrawal request
 CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2275	order_notification
 CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2279	order_browse_status_wait_review
 CM-ORD-001	by landing	decides	SA-C-040/decides/SA-S-2280	order_browse_status_under_execute
@@ -4367,6 +4373,7 @@ CM-PAY-032	exact	decides	SA-C-126/decides/SA-S-2451	quick_payment_direct
 CM-PAY-032	exact	decides	SA-C-126/decides/SA-S-2661	quick_payment_direct
 CM-PAY-032	exact	boundary	ZD-C-008/boundary/ZD-S-0588	payment_link
 CM-PAY-032	exact	decides	ZD-C-008/decides/ZD-S-0587	الطلبات > الطلبات اليدوية > إنشاء طلب جديد
+CM-PAY-033	exact	boundary	SH-C-186/boundary/SH-S-6071	read_own_subscription_contracts
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0185	GMV cap
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0186	Automatic Upgrades
 CM-PLN-001	exact	decides	BC-C-030/decides/BC-S-0187	Scale
@@ -5471,6 +5478,10 @@ CM-SRF-001	exact	decides	SH-C-118/decides/SH-S-5145	order:mobile:release-fulfill
 CM-SRF-001	exact	boundary	WC-C-090/boundary/WC-S-0203	wc-admin > mobile-app (MobileAppMagicLink)
 CM-SRF-001	exact	boundary	WC-C-090/boundary/WC-S-0204	wc-admin > mobile-app (MobileAppQRLogin)
 CM-SRF-001	exact	decides	WC-C-090/decides/WC-S-5437	push_notifications
+CM-SRF-002	exact	decides	SA-C-002/decides/SA-S-2087	ميزة البحث في إعدادات المتجر
+CM-SRF-002	exact	decides	SA-C-020/decides/SA-S-2251	product_search
+CM-SRF-002	exact	decides	SA-C-040/decides/SA-S-2266	order_search
+CM-SRF-002	exact	decides	SA-C-060/decides/SA-S-2296	customer_search
 CM-STF-001	by landing	boundary	SH-C-009/boundary/SH-S-6142	read_users
 CM-STF-001	exact	boundary	BC-C-061/boundary/BC-S-0335	account_users_write
 CM-STF-001	exact	decides	BC-C-061/decides/BC-S-0334	Staff accounts
@@ -5533,6 +5544,7 @@ CM-STF-005	exact	decides	SH-C-011/decides/SH-S-0239	9.9 Third Party Services and
 CM-STF-005	exact	decides	SH-C-011/decides/SH-S-0246	Collaborator access
 CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7012	Invite third-party collaborators
 CM-STF-005	exact	decides	SH-C-011/decides/SH-S-7167	MANAGE_COLLABORATORS
+CM-STF-006	exact	boundary	SH-C-054/boundary/SH-S-6229	write_marketplace_orders
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0073	Product ratings and reviews
 CM-SUP-001	exact	decides	BC-C-012/decides/BC-S-0074	review submission
 CM-SUP-001	exact	decides	BC-E-69d9bce5	plan-comparison
