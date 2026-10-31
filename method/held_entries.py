@@ -1299,7 +1299,10 @@ def cmd_earlier(a):
         if own:
             twins += [(t, f"by its name {own.group(1)}") for t in at_name.get(name_key(by[eid]), []) if t != eid and t not in dict(twins)]
         for twin, how in [t for t in twins if placed_at.get(t[0])][:6]:
-            found.append(f"   twin {twin} {how}: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
+            # with the twin's own words, since one name key can state another kind of thing (SH-74: eg's and sa's
+            # card_rates_short state the third-party fee, ae-ar's the card rate)
+            words = clip(re.sub(r"^(?:(?:within|list): [^;]*; )+", "", by[twin]["text"]), 90)
+            found.append(f"   twin {twin} {how} [{words}]: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
         for kind, v in keys:
             pat = earlier_pattern(kind, v)
             g = collections.OrderedDict()

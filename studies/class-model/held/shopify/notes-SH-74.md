@@ -16,8 +16,8 @@
 **Sources read:**
 - the brief and what it names: the evidence map; the rulings, the last section most; observed-sh's `README.md`, `docs/READING.md`, `docs/GAPS.md` (nothing on these pages), `structures/README.md`; `structures/REGISTER.tsv` row 141; `selection.tsv`'s row; `show --meta`;
 - SH-68's notes whole, SH-69's to SH-72's rules and coordinator's checks, SH-73's notes whole, and the earlier placements of each twin (`earlier`, then the twin's lines by number);
-- items.jsonl, by script: line 27's comparison table (its 101 headings in order, its marks `checkAlt` 'Included' and `dashAlt` 'Not included', and the note rows 39, 61 and 79, '*Requires Shopify Payments'); lines 28 and 44's plan summaries (`card_rates`, `incentives`); lines 43 and 67's cards with their features; and every read site's plans page (lines 2, 5, 10, 27, 43, 67, 82, 85, 91, 112, 133, 136, 140, 146, 150, 156, 161, 171, 176, 197, 203), for which tables hold the rows Shop Campaigns, Shipping insurance, Tax and its rows, Interac and Audiences. Every line's terms and quotes are its own entry's, but for the footnote '*Requires Shopify Payments' that 14's reading quotes from line 27;
-- each entry against its twin's text, by script (difflib): every one differs from its twin only by its site's links, prices or digits, the date's form (22), or the lender and the financing's name (24);
+- items.jsonl, by script: line 27's comparison table (its 101 headings in order, its marks `checkAlt` 'Included' and `dashAlt` 'Not included', and the note rows 39, 61 and 79, '*Requires Shopify Payments'); line 28's plan summaries (`card_rates`, `incentives`) and POS Pro plan; lines 43 and 67's cards with their features; line 43's table headings, for its payment rows; and every read site's plans page (lines 2, 5, 10, 27, 43, 67, 82, 85, 91, 112, 133, 136, 140, 146, 150, 156, 161, 171, 176, 197, 203), for which tables hold the rows Shop Campaigns, Shipping insurance, Tax and its rows, Interac and Audiences. Every line's terms and quotes are its own entry's, but for the footnote '*Requires Shopify Payments' that 14's reading quotes from line 27;
+- 20 entries against their twins' text, by script (difflib: 21 to 24, 34 to 39, 52, 55 to 58, 67 to 70, 74): each differs from its twin only by its site's links, prices or digits, the date's form (22), or the lender and the financing's name (24);
 - the model: `cells` for every capability placed on and for the new thing's leads; `land_points.py cell` for CM-TAX-004 and CM-PAY-026; `class_slice.py key` for SH-S-7069 and SH-S-0588; `caps --terms` for Interac and debit (no hit); `merged/evidence.tsv`, by grep, for the cells that cite the 30 September rows of my new kinds of row (SH-S-7044, SH-S-7047, SH-S-7066 to SH-S-7069, SH-S-7072) and for Interac (SH-S-0588).
 
 ## Rules followed
@@ -74,7 +74,7 @@ Its place of its own (the table's row Earn 1% back on all sales), proposed domai
 Each line quotes its own entry. Which price is charged isn't held. That the pages' different variants are the cause is an assumption, as SH-68's to SH-73's notes have it.
 - **www.shopify.com/ca states three yearly prices for Basic:** the plans page's card and Pay yearly row $44 (SH-73's line 182; entry 2), its terms 'basicAnnualPrice: <span>$38.00</span>' (SH-E-3dd120ae, and the POS page's terms, 25), and the POS page's summary `annual_monthly_price` 37 CAD (`annual_price` 441, 26). Grow and Advanced differ the same way: $120 and $465 on the plans page (2), 99 and 389 CAD in the summaries (27, 28).
   - The plans page was served under 'e_0573c3a44a32b9562a4827c286953987:treatment,e_06d1ad5d27d16046cc6d829de669769b:treatment,f_2e2905455a798fa9df40308c0b8b53ee:true,f_77c8150780b85c85656903fc3fada251:true,f_ba4893153541cee32ff1abde10187c02:true' (SH-73's line 179), the POS page under 'f_2e2905455a798fa9df40308c0b8b53ee:true,f_77c8150780b85c85656903fc3fada251:true' (25).
-- **ca's Plus price:** the table's 'Starts at $3,400 CAD/mo' (1) is the summary's `triennial_monthly_price`; its `monthly_price` is 3650 CAD (29). The summary states a paid trial on Plus, 517.00 CAD for one month, which the au and ae summaries don't.
+- **ca's Plus price:** the table's 'Starts at $3,400 CAD/mo' (1) is the summary's `triennial_monthly_price`; its `monthly_price` is 3650 CAD (29). The summary states a paid trial on Plus, 517.00 CAD for one month, as the ca Plus card's '$517 for your first month' (SH-73's line 195), where au's and ae-ar's Plus summaries state none (SH-73's line 130, SH-69's line 86).
 - **ca's Grow shipping discount:** the table and the card give up to 50% off (13; SH-73's line 189), the POS summary's description up to 87% (27), the words of every site's summary.
 - **ca's and eg's Plus summaries** are titled 'POS Pro included' and 'يشتمل على POS Pro' with `included_in_plan: false` (29, 62), while Retail's has `true` (31, 64), as SH-69's and SH-73's.
 - **www.shopify.com/hk-en's terms** give 'basicAnnualPrice: <span>$25.00 USD</span>' (71, 73), its Basic card US$29 a month paid yearly (75), as SH-71's check noted. Its terms write the currency '美元' (`minimumMonthlyPriceCurrency`, `usd`), on an English page.
@@ -103,3 +103,22 @@ Each line quotes its own entry. Which price is charged isn't held. That the page
 - **`earlier`'s twins by pointer still mislead on the plans pages** (above): on ca's rows past au's last shared row, and on eg's and sa's card rates, whose `name` key agrees with ae-ar's while the summary states another thing. Its labels found the right rows. A twin by heading for the rows, and a warning where the twin's summary and the entry's differ in kind, would serve SH-75 to SH-79.
 - **A quote with a straight apostrophe** (“Shopify's flexible iPad stand…”) is quoted with “ ”, as SH-73 did. The readings' “and”, from the rulings' wording, is read by my own check as a quote not in 56's Arabic text; it is the earlier batches' phrasing, kept.
 - **No B-extent conflict:** I found no rule of the brief that reads differently from B-extent.md, beyond the two the brief states (qualities wider than B-extent's list; the rulings).
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 80 of 80 entries, no problem and no `CHANGES`.
+- **Rules 1 to 5 stand, for SH-75 to SH-79.** Rule 2's rows follow the cells' own placements of the 30 September rows, read in `merged/evidence.tsv`:
+  - Shop Campaigns, CM-MKT-012 `core` (SH-S-7044);
+  - Shipping insurance, CM-SHP-003 `core` (SH-S-7047);
+  - Audiences on Plus, CM-MKT-011 `core` (SH-S-7072);
+  - the Advanced tax platform add-on, CM-TAX-004 `shows` (SH-S-7069).
+
+  Rule 1's Interac rates stay on CM-PAY-021 beside In-person card rates. Its cell already names Interac (SH-S-0588, `shows`).
+- **The open questions, decided:**
+  - **The VAT row's 'EU and UK sales' goes in scope.** It is the row's own condition (the ruling after SH-69), joined with ` and ` and quoted (the ruling after SH-38). Line 22 now reads `…;www.shopify.com/uk and 'EU and UK sales'`.
+  - The Advanced tax platform stays `shows`, as its cell places it.
+  - The eg and sa card features rest on R2, by what they state.
+- **One filler new to its cell:** Peoples Bank, `outside` on CM-PAY-026, for Canada (SH-73's rule 7).
+- **The twins.** A twin with the same name key can state another kind of thing: eg's and sa's `card_rates_short` state the third-party fee, ae-ar's the card rate. `held_entries.py earlier` now prints each twin's own words beside its lines, so a twin is matched by meaning in one call.
+- **The price disagreements** are quoted each in its own line, as SH-72's and SH-73's were.
+- **Cost:** 19.8 million tokens over 80 requests, about 248,000 an entry. The context reached about 423,000 tokens.
