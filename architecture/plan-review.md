@@ -486,3 +486,31 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`, reading only.
 - **What I didn't read.** The Knowledge Map's rebuilt page, the orientation page, and architecture records (none exist).
 - **No architecture is proposed here.** The plain-words entries in APR-1 state what the plan already decides; their risks and alternatives are readings.
 - **Some fixes propose a rule of the reviewer's own,** for the coordinator to rule on: the grouping order in APR-9, the grain and the worth test in APR-10, the second rating in APR-11, the first report in APR-8, and the sort of the two schemes in APR-5.
+
+## How each finding was taken (the coordinator, 31 October)
+
+Into `architecture/plan.md`, with `PLAN.md` changed where APR-2 asks. The fixes that propose a rule of the reviewer's own (APR-5, APR-8, APR-9, APR-10, APR-11) are taken as rules of the plan.
+
+- **APR-1:** taken with the coordinator's decision. The page says the plan decides two things of the architecture, and one reading of the source types, each in section 7; section 7 holds the two decisions as written, the currency entry decided now and saying it changes S-02's D9 and its move to S-09 (S02-M6). S-02's register is not edited: its `status` already reads as an engineering ruling with no veto. Pointing `reports/GM-rulings.md` to section 7 is left to the coordinator.
+- **APR-2:** taken as written: the rule's examples restored, section 3's text on S-03 and S-09, the table, and S-06 and S-07 placed. With the coordinator's decision: `PLAN.md`'s rule (Stage 4A, the rules the architecture plan carries) takes the exception as worded here, as a fix to the method, with its entry in section 11 saying what it weakens. The plan's section 6 carries the exception, and section 4's worked example says it is taken under it.
+- **APR-3:** taken as written.
+- **APR-4:** taken with the coordinator's decision. The types' table and the REF line as written, and the ECO row; the REF reading is section 7's third decision, in the same four parts. The per-row column now says only what a row adds.
+- **APR-5:** taken as written, the two-scheme sort with it. The slot fillers' text is split across the row's columns.
+- **APR-6:** taken as written, with the qualities pass added to the steps that may close the gaps.
+- **APR-7:** taken with the coordinator's decision. The slot fillers and scopes as written. On qualities, the plan says what the model holds today, by the review's counts, and that it relies on the qualities pass (`PLAN.md`, Stage 4A), with that pass's definition; section 1's row on qualities reads from it.
+- **APR-8:** taken as written, the first short report and the budgets with it.
+- **APR-9:** taken as written, the grouping order with it.
+- **APR-10:** taken as written: worth, grain, the review rule and the binding time. The worked example's check is also changed to match (a review rule until code exists, then the test).
+- **APR-11:** taken as written: the second rating, the evaluator and the measures. The walk's old line on risks, sensitivity points and trade-offs is folded into the added one.
+- **APR-12:** taken as written.
+- **APR-13:** taken as written; 42020 is mapped to the plan's sections in one line, in the sources, marked as a reading.
+- **APR-14:** taken as written, with one change: the narrowing test says "needs your decision or a reason with evidence", as `PLAN.md`, section 6 says, where the fix said "needs a reason with evidence".
+- **APR-15:** taken as written.
+- **APR-16:** taken as written, as section 5A.
+- **APR-17:** taken as written, as a short section after the page.
+- **APR-18:** taken as written.
+- **APR-19:** taken as written, in the status.
+- **APR-20:** taken as written: the design purpose and the architectural concerns are named among the drivers, and the order of dependencies is marked as the coordinator's own rule.
+- **APR-21:** taken as written: engineering decides a spike, from the budget of the step its record belongs to, and its result is cited as EXP in that record.
+
+Also corrected while taking them: section 4's quote of the founder's message now reads "It doesn't mean designing it before its time", as `founder-messages/2026-10-30-architecture-plan.md` line 18 has it.
