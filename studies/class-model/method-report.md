@@ -346,3 +346,36 @@ Plans and settings cost more than assumed, permissions less. The 14,747 entries 
 - Shopify's batches are cut again by kind after the founder's pushes, and each kind is measured on its first batch.
 
 No higher plan is needed so far: no agent has been stopped by the usage limit.
+
+**Re-measured at about 02:45 UTC on 31 October**, after Shopify's new evidence was selected. The counts are from `method/count_tokens.py --since 2026-10-30T23:45`, over this session's transcript and its agents'.
+- **Spent since 23:45:** 669 million tokens, about 3 hours' work. The agents spent 522 million, the selection agent's 33.5 million among them. The coordinator's own work was 147 million over 326 requests.
+- **Measured rate:** 68 held-pass batches have run, holding 7,470 entries, at 111,000 tokens an entry on average. Salla's 48 batches ran at 131,000 an entry.
+- **What costs most:** batches whose entries repeat addresses earlier batches placed. SA-19 cost 203,000 an entry and SA-42 195,000. Most of their requests looked those earlier lines up, and their contexts reached 365,000 and 470,000 tokens.
+
+**Shopify's selection**, decided by the coordinator on the selection agent's tested proposal:
+- **Editions:** read from each page's own data, 1,608 features. The rendered text held 2 of summer 2023's 143. Fall 2026 is read from its rendered page.
+- **Merchant changelog:** every post since 2018, 1,646 of them.
+- **Pricing:** the pages of the 18 English-language sites and the 3 Arabic ones, 1,056 entries. All 61 sites would have given 8,230.
+  - The other 40 sites state the same lines in their own languages. Every POS page has the same lists, lengths and identifiers, 83 of 84 international pages have one shape, and every plan feature a site names, an English or Arabic site names too.
+  - Their prices are held for a subject to read as a table (`evidence-map.md`). Which comparison rows each of them lists isn't matched, a gap for the second stage.
+- **Versions:** the CLI and the extension targets in their latest words.
+- **The build:** the selection agent's nine new rules were reviewed and taken. The coordinator added `long:` for prose a platform publishes whole, a post or a dialog. Over-long entries are accepted under it.
+- **Kept as they are:**
+  - Editions' section descriptions are not entries. Each feature names its section.
+  - A nested entry's doubled parent name ('Basic > Basic') is left as it is, a fault of the build. The fix would change the ids of 222 placed entries.
+- **Size:** Shopify holds 10,286 entries (7,749 before), cut into 103 batches. A structure of 300 entries or more has batches of its own (`batches --alone 300`), so 22 can start at once and none waits on another structure's.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 02:45 UTC: about 1,690 at 23:45 and 669 since | about 2,360 |
+| The held pass's other 11,693 entries (Shopify's 10,286; Salla's 1,407 after SA-48), at 90,000 to 140,000 an entry | 1,050 to 1,640 |
+| The coordinator's checks of those batches: 20 to 30 percent of the agents' tokens (28 percent since 23:45) | 210 to 490 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 4.0 to 5.1 billion** |
+
+**Re-planned to cost less:**
+- **Pricing on 21 sites, not 61:** about 7,200 entries are not read, the same lines in other languages, about 650 million to 1 billion tokens.
+- **One lookup of earlier lines:** `held_entries.py earlier` prints, for a chunk of entries, the lines earlier batches gave the same address, route or label, in one call. SA-19 and SA-42 spent most of their requests on these lookups.
+- **A large structure's batches side by side:** once its first batch is checked, its other batches run in parallel, each keeping to the first batch's rules, and the coordinator aligns them at its checks. This saves hours, not tokens.
+
+No agent has been stopped by the usage limit.
