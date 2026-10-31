@@ -76,3 +76,14 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 - **A structure's items that cut their source:** `shopify-cli-commands` keeps only each command's first paragraph (110 of 138 commands in 5.0.0, 51 of 133 in 4.8.3) and no flag descriptions; SH-98 read the rest in the held tarball's `package/oclif.manifest.json` (the check after SH-98). The omission review reads what the items leave out.
 - **Items the build leaves without an entry, for the omission review:** three settings items that are counted as cited because their keys match other sources' statements, with neither an entry nor a model statement of their own (fake-demo-sharrwah's `billing` and `user_permissions`, ibx5bt-xy's `markets`; the check after SH-20), and a node whose id holds `?` and `&` (the mobile app's lesson card, `mobile-app-navigation/tabs-and-more/items.jsonl` line 39; the check after SH-80). Each cell already holds what they show.
 
+
+## For the final review (found while the veto list was drafted, 31 October)
+
+- **Checkout Blocks' order limits rest on CM-CHK-005 only.** The Editions digest's E103 placed them on CM-CHK-005, cart and checkout validation, before order limits had a capability of their own. CM-CHK-011 was made later, from the new things (N06), as the minimum or maximum a buyer's order must meet. Five Shopify lines name order limits and all are on CM-CHK-005: one each in SH-35, SH-41 and SH-62, and two in SH-67.
+  - A reading: Checkout Blocks' order limits are CM-CHK-011's thing, set through validation. So each of these lines would also take CM-CHK-011.
+  - Shopify's CM-CHK-011 cell is already held (`core`), so no count moves. The second stage reads only cells that hold nothing, so this is for the final review.
+- **An app's admin page takes a CM-APP-007 line in the Editions, and none in the changelog.**
+  - The Editions digest's rule 40 gives CM-APP-007 `core` to every `admin.shopify.com/apps/<handle>` link.
+  - The changelog digest's rule 7 gives a link to an app's admin page no CM-APP-007 line.
+
+  CM-APP-007's Shopify cell is `core` on many lines, so no support moves, only the count of lines. The final review says which rule holds, and the other structure's lines are aligned.
