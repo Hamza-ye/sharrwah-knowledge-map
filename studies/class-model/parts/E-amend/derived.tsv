@@ -8,7 +8,7 @@ CM-SFR-015	bigcommerce	statements	core	settings-list			general
 CM-SFR-015	salla	statements	core		SA-C-020/decides/SA-S-1977=plan: سلة بلس | SA-C-020/decides/SA-S-1978=plan: سلة بلس	SA-C-020/responsible:page not read;SA-C-020/reason:page not read	plan: سلة بلس
 CM-SFR-015	shopify	statements	core;extension-point	editions-page-data		SH-C-193/reason:searched, not found	general
 CM-SFR-015	woocommerce	statements	extension-point	Extensions > Merchandising > Product display		WC-C-104/decides:stated only in general terms;WC-C-104/responsible:stated only in general terms;WC-C-104/reason:searched, not found	
-CM-SFR-015	zid	none-held					
+CM-SFR-015	zid	statements	core		ZD-E-1ae95c87=rise | ZD-E-5c7633fa=rise | ZD-E-f7c30241=rise | ZD-E-fe27e427=new_starter		new_starter | rise
 CM-SFR-016	bigcommerce	statements	core	settings-list			general
 CM-SFR-016	salla	none-held					
 CM-SFR-016	shopify	none-held					

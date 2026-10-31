@@ -2,3 +2,9 @@ cap_id	platform	quality	value	key	scope
 CM-MKT-002	zid	Number of Discount Codes / عدد أكواد الخصم	not in the concern map	ZD-I-0293	
 CM-NTF-002	zid	Team Notifications / إشعارات الفريق	plans:{starter:"1",launch:"1",growth:"3",pro:!0}	ZD-C-097/decides/ZD-S-0954	compare-plans: starter, launch, growth, pro
 CM-NTF-001	zid	Order Status Notifications (Limited) / إشعارات حالة الطلب (حدود محددة)	not in the concern map	ZD-I-0287	
+CM-NTF-002	zid	notified_staff_limit	0	ZD-E-9205ddf3	enterprise
+CM-NTF-004	zid	Free WhatsApp (Basic Plan)	for one month	ZD-E-ceb7a17a	new_growth.monthly
+CM-NTF-004	zid	Free WhatsApp (Basic Plan)	for one month	ZD-E-3a425772	new_growth.yearly
+CM-NTF-004	zid	WhatsApp	Completely free	ZD-E-9e77903c	new_professional.yearly
+CM-CUS-001	zid	customers	Unlimited	ZD-E-e239786c	rise.monthly; new_growth.monthly; rise.yearly; new_growth.yearly; new_professional.yearly
+CM-CUS-002	zid	group_limit	0	ZD-E-571bb3c9	elite

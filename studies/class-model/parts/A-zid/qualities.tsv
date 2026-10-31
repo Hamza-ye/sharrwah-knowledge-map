@@ -9,3 +9,23 @@ CM-PLN-006	zid	largest withdrawal from the wallet per operation	بشرط ألا 
 CM-PLN-006	zid	largest top-up of the wallet by card or Apple Pay	يكون الحد الأقصى للتحويل هو خمسة آلاف (5,000) ريال	ZD-C-017/decides/ZD-S-0652
 CM-TRU-001	zid	inactivity sign-out at the security level High	عالي : تسجيل خروج اي عضو من دون نشاط بعد نص ساعة مع امكانية تسجيل الدخول من متصفح واحد فقط	ZD-C-095/decides/ZD-S-0945
 CM-TRU-002	zid	Nafath verification attempts per day	عدد محاولات التحقق المتاحة خلال اليوم الواحد هي 3 محاولات.	ZD-C-038/decides/ZD-S-0776
+CM-STF-001	zid	team_members limit	20	ZD-E-c5a55d58
+CM-STF-001	zid	additional people with store management access	one	ZD-E-0b6a3268
+CM-STF-001	zid	additional people with store management access	5	ZD-E-b4b0cf8d
+CM-STF-001	zid	additional people with store management access	one	ZD-E-fd948d6f
+CM-STF-001	zid	additional people with store management access	5	ZD-E-16c98345
+CM-STF-001	zid	additional people with store management access	20	ZD-E-6e1371f4
+CM-PLN-001	zid	price	99.00 SAR	ZD-E-73c584b4
+CM-PLN-001	zid	monthly price	99.00 SAR	ZD-E-73c584b4
+CM-PLN-001	zid	price	299.00 SAR	ZD-E-d92aa78e
+CM-PLN-001	zid	monthly price	299.00 SAR	ZD-E-d92aa78e
+CM-PLN-001	zid	price	990.00 SAR	ZD-E-496e961b
+CM-PLN-001	zid	monthly price	82.50 SAR	ZD-E-496e961b
+CM-PLN-001	zid	price	2990.00 SAR	ZD-E-5c455bc4
+CM-PLN-001	zid	monthly price	249.16 SAR	ZD-E-5c455bc4
+CM-PLN-001	zid	price	20000.01 SAR	ZD-E-6efb9449
+CM-PLN-001	zid	monthly price	1666.66 SAR	ZD-E-6efb9449
+CM-ONB-003	zid	response_time_in_hours	3	ZD-E-4426dc6d
+CM-ONB-003	zid	priority support	24/7	ZD-E-8b3f6f82
+CM-PLN-002	zid	duration	30 days	ZD-E-f0d2aa15
+CM-PLN-002	zid	duration	365 days	ZD-E-44e92e4d

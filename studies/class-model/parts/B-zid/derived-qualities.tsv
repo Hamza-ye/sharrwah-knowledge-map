@@ -4,3 +4,10 @@ CM-INV-005	zid	warehouses on the Professional plan	الباقة الاحتراف
 CM-INV-005	zid	warehouses on the large-business plan	باقة الأعمال الكبيرة عدد المخازن لا محدود.	ZD-C-085/decides/ZD-S-1022	باقة الأعمال الكبيرة
 CM-INV-008	zid	how long the product is held while card payment is entered	سوف يتم حجز المنتج بشكل تلقائي لمدة 30 دقيقة	ZD-C-100/decides/ZD-S-0965	
 CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801	
+CM-INV-005	zid	active_locations limit	6	ZD-E-40ff00b0	elite
+CM-INV-005	zid	branches or warehouses	2	ZD-E-7949f576	new_growth.monthly
+CM-INV-005	zid	branches or warehouses	2	ZD-E-be95046b	new_growth.yearly
+CM-INV-005	zid	branches or warehouses	5	ZD-E-774d454b	new_professional.yearly
+CM-CAT-001	zid	products	Unlimited	ZD-E-48ebd049	rise.monthly; new_growth.monthly; rise.yearly; new_growth.yearly; new_professional.yearly
+CM-SEL-002	zid	file_count limit	15	ZD-E-dc538b59	enterprise
+CM-SEL-002	zid	file_size limit	2147483648	ZD-E-044c660a	elite

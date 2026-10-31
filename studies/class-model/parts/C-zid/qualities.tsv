@@ -11,3 +11,20 @@ CM-PAY-015	zid	MIS pay order limits	تقدم لك أم آي إس باي خدمة
 CM-PAY-005	zid	Mazeed dues: transfer day, age and minimum	تحول شركة زد المبالغ المستحقة في يوم (30) من كل شهر ميلادي إلى حساب التاجر البنكي بشرط أن يكون قد مر على العمليات الشرائية 7 أيام كحد أدنى من تاريخ الشراء، والا تقل المبالغ المحولة عن 500 ريال كحد أدنى.	ZD-C-024/decides/ZD-S-0704
 CM-RET-003	zid	boxes returnable from an order	ويمكن استرجاع حتى 7 صناديق من إجمالي الطلب.	ZD-C-081/decides/ZD-S-1013
 CM-RET-002	zid	refund window	لا يمكن استرداد المبلغ للعميل بعد مرور 30 يوم من تاريخ الشراء	ZD-C-002/decides/ZD-S-0539
+CM-ORD-001	zid	orders	Unlimited	ZD-E-aa4f3667
+CM-TAX-001	zid	tax-taxed_countries limit	0	ZD-E-2b5a484b
+CM-SHP-002	zid	shipping rate	starting from 12 SAR per shipment	ZD-E-6e0fcff8
+CM-SHP-002	zid	shipping rate	starting from 11 SAR per shipment	ZD-E-6ab0a6ce
+CM-SHP-002	zid	shipping rate	starting from 12 SAR per shipment	ZD-E-d2b79b7f
+CM-SHP-002	zid	shipping rate	starting from 11 SAR per shipment	ZD-E-38c2457b
+CM-SHP-002	zid	shipping rate	starting from 9 SAR per shipment	ZD-E-2a1c0a3a
+CM-ORD-002	zid	edit_order limit	0	ZD-E-9d0e902d
+CM-PAY-007	zid	Zid Pay rate mada	1% + 1 SAR	ZD-E-d92aa78e
+CM-PAY-007	zid	Zid Pay rate visa	2.3% + 1 SAR	ZD-E-d92aa78e
+CM-PAY-007	zid	Zid Pay rate mastercard	2.3% + 1 SAR	ZD-E-d92aa78e
+CM-PAY-007	zid	Zid Pay rate mada	1% + 1 SAR	ZD-E-5c455bc4
+CM-PAY-007	zid	Zid Pay rate visa	2.3% + 1 SAR	ZD-E-5c455bc4
+CM-PAY-007	zid	Zid Pay rate mastercard	2.3% + 1 SAR	ZD-E-5c455bc4
+CM-PAY-007	zid	Zid Pay rate mada	1% + 0.75 SAR	ZD-E-6efb9449
+CM-PAY-007	zid	Zid Pay rate visa	2.2% + 0.75 SAR	ZD-E-6efb9449
+CM-PAY-007	zid	Zid Pay rate mastercard	2.2% + 0.75 SAR	ZD-E-6efb9449

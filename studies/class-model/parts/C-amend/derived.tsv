@@ -3,7 +3,7 @@ CM-CHK-011	bigcommerce	none-held
 CM-CHK-011	salla	statements	core		SA-C-002/decides/SA-S-2097=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read	plan: سلة بلس
 CM-CHK-011	shopify	statements	core	editions-page-data | merchant-changelog	SH-C-046/decides/SH-S-7484=stores with fewer than 250 sales | SH-E-dbcffeff=Shopify Plus	SH-C-046/responsible:stated only in general terms	general
 CM-CHK-011	woocommerce	none-held					
-CM-CHK-011	zid	none-held					
+CM-CHK-011	zid	statements	core		ZD-E-86767b80=new_growth | ZD-E-cac86133=new_growth		new_growth
 CM-CHK-012	bigcommerce	none-held					
 CM-CHK-012	salla	none-held					
 CM-CHK-012	shopify	statements	core	admin-router | editions-page-data | merchant-changelog | pos-settings		SH-C-047/reason:searched, not found	general
@@ -18,4 +18,4 @@ CM-SHP-024	bigcommerce	none-held
 CM-SHP-024	salla	none-held					
 CM-SHP-024	shopify	none-held					
 CM-SHP-024	woocommerce	none-held					
-CM-SHP-024	zid	none-held					
+CM-SHP-024	zid	statements	core		ZD-E-c5337f63=new_growth		new_growth

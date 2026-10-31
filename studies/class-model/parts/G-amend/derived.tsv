@@ -3,7 +3,7 @@ CM-OPS-006	bigcommerce	statements	outside	Cloudflare		BC-C-082/decides:page not 
 CM-OPS-006	salla	statements	core		SA-C-002/decides/SA-S-2092=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read	plan: سلة بلس
 CM-OPS-006	shopify	statements	core	editions-page-data			general
 CM-OPS-006	woocommerce	statements	core			WC-C-033/responsible:stated only in general terms;WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
-CM-OPS-006	zid	none-held					
+CM-OPS-006	zid	statements	core		ZD-E-247e8175=new_professional		new_professional
 CM-OPS-007	bigcommerce	none-held					
 CM-OPS-007	salla	statements	core			SA-C-040/responsible:page not read;SA-C-040/reason:page not read	general
 CM-OPS-007	shopify	statements	core	dev-docs-nav			general
@@ -13,7 +13,7 @@ CM-SRF-002	bigcommerce	none-held
 CM-SRF-002	salla	statements	core		SA-C-002/decides/SA-S-2087=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read;SA-C-020/responsible:page not read;SA-C-020/reason:page not read;SA-C-040/responsible:page not read;SA-C-040/reason:page not read;SA-C-060/responsible:page not read;SA-C-060/reason:page not read	plan: سلة بلس
 CM-SRF-002	shopify	statements	core	editions | editions-page-data | merchant-changelog | mobile-app-navigation | mobile-app-settings-index			general
 CM-SRF-002	woocommerce	statements	not-stated			WC-C-033/responsible:stated only in general terms	
-CM-SRF-002	zid	statements	not-stated	العملاء		ZD-C-091/reason:searched, not found	
+CM-SRF-002	zid	statements	core	dashboard-route-manifest | العملاء		ZD-C-091/reason:searched, not found	general
 CM-SRF-003	bigcommerce	none-held					
 CM-SRF-003	salla	none-held					
 CM-SRF-003	shopify	statements	core	editions-page-data | merchant-changelog | mobile-app-settings-index	SH-E-19b0178e=Europe;Japan		general
