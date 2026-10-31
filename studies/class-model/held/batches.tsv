@@ -90,7 +90,8 @@ SH-20	shopify	130	admin-router-versions,admin-settings-nav,app-install-consent,a
 SH-21	shopify	130	app-store-built-in-features
 SH-22	shopify	110	app-store-built-in-features,app-store-registration,billing-charge-categories,billing-subscription-downgrades,bulk-editor-columns
 SH-23	shopify	130	checkout-editor-pages,collaborator-access-permissions,dev-dashboard-nav,dev-dashboard-scopes
-SH-24	shopify	115	dev-dashboard-scopes
+SH-24	shopify	53	dev-dashboard-scopes
+SH-104	shopify	62	dev-dashboard-scopes
 SH-25	shopify	86	dev-docs-nav
 SH-26	shopify	81	dev-docs-nav,dev-nav
 SH-27	shopify	90	dev-nav,dev-store-feature-previews,document-template-config
