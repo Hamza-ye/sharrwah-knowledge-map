@@ -1251,11 +1251,30 @@ def cmd_earlier(a):
             # terms as `;term;`, so a label is found as a whole term as well as quoted in a reading (SH-70)
             lines.append((b if checked else b + "?", n, r.get("cap_id") or r.get("placement", ""),
                           r.get("supports", ""), (r.get("reading") or "") + " ;" + ";".join(t.strip() for t in (r.get("terms") or "").split(";")) + ";"))
+    # an entry's twins: the platform's other entries at the same place in their own source (a page's pointer), such as
+    # one pricing page in two languages, and the lines their batches gave them (SH-72)
+    placed_at = collections.defaultdict(list)
+    for path in sorted(glob.glob(os.path.join(HELD, a.platform, "placements-*.tsv"))):
+        b = os.path.basename(path)[len("placements-"):-len(".tsv")]
+        if b == a.batch:
+            continue
+        for n, r in enumerate(rows(path), 2):
+            for x in (r.get("entry_id") or "").split(";"):
+                placed_at[x.strip()].append((b, n, r.get("cap_id") or r.get("placement", ""), r.get("supports", "")))
+    at_ptr = collections.defaultdict(list)
+    for e in by.values():
+        m = re.search(r"pointer (\S+)", e.get("locator") or "")
+        if m:
+            at_ptr[(e["structure"], m.group(1))].append(e["entry_id"])
     for i, eid in enumerate(batch_ids(a.batch), 1):
         if eid not in by or (a.__dict__.get("from") and i < a.__dict__["from"]) or (a.to and i > a.to):
             continue
         keys = earlier_keys(by[eid]["text"])
         found = []
+        m = re.search(r"pointer (\S+)", by[eid].get("locator") or "")
+        for twin in (at_ptr.get((by[eid]["structure"], m.group(1)), []) if m else []):
+            if twin != eid and placed_at.get(twin):
+                found.append(f"   twin {twin} at the same place: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
         for kind, v in keys:
             pat = earlier_pattern(kind, v)
             g = collections.OrderedDict()
