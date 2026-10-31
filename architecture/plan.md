@@ -1,6 +1,6 @@
 # The architecture plan
 
-**Status: a draft by the coordinating session, 30 October 2026.** It comes to the founder at GM, with the class's model's extent and the Knowledge Map's page rebuilt from it. Architecture starts on the founder's go on this plan (`PLAN.md`, Stage 4A; `founder-decisions.tsv`, 30 October). Section 1 is drafted with the dry run of the model, so that the model records what architecture needs before its other domains run. The rest is finished before GM, and reviewed by an agent that made none of it.
+**Status: a draft by the coordinating session, 30 October 2026.** It comes to the founder at GM, with the class's model's extent and the Knowledge Map's page rebuilt from it. Architecture starts on the founder's go on this plan (`PLAN.md`, Stage 4A; `founder-decisions.tsv`, 30 October). Section 1 was drafted with the dry run of the model, so that the model records what architecture needs before its other domains run. The whole was finished on 31 October, once the held pass was in the model, and is reviewed by an agent that made none of it (`architecture/plan-review.md`).
 
 ## For the founder, on one page
 
@@ -32,7 +32,7 @@ Each source is graded by the Knowledge Map's source types, with what each can't 
 | What architecture needs | Where it comes from | Source types | What that can't tell |
 | --- | --- | --- | --- |
 | What the class establishes: each capability, where each platform puts it, how many establish it, its kind | The class's model (`studies/class-model/`) | DECL, SHIP, OBS, as each cited statement's kind | What a platform doesn't publish; why it chose so; behaviour on stores never observed |
-| The class's data and events: the objects, webhook topics and access scopes each capability shows | The model's evidence: the `boundary` statements of each capability's concerns, derived per capability at the merge | SHIP, DECL | What the server does with them; a platform's internal model |
+| The class's data and events: the objects, webhook topics and access scopes each capability shows | The model's evidence: the `boundary` statements of each capability's concerns, derived per capability at the merge (`studies/class-model/merged/interfaces.tsv`) | SHIP, DECL | What the server does with them; a platform's internal model |
 | What varies, by market, store and plan | The subjects' registers (S-01, S-02, and each later one); the model's `decides` statements and scopes | DECL, OBS | A market not yet studied |
 | What fills a slot in a market: providers, partners, law | The model's slot fillers; each subject's evidence; providers' and regulators' own documents | PROV, LAW | The platform's own design |
 | The qualities the class states: limits, certifications, uptime, where data lives | The model's qualities | DECL | Real performance; Sharrwah's own numbers |
