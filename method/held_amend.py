@@ -11,6 +11,11 @@
 # still holding nothing after the batch, `apply` writes into the cell's reading what the second stage read, at its
 # commits, and its outcome (not found, not held, absent from a complete list with its source, unreadable or unclear),
 # and adds the terms it searched to the cell's `searched` (the coordinator's decisions 2 and 3, S2-held-design.md).
+# A held cell whose statements state no placement (`placed_as` only `not-stated`) is treated, for a second-stage batch,
+# as a cell holding nothing: its outcome's sentence says no passage read in this stage states a placement, and is added
+# to its reading (the coordinator's decision on inspection-S2.md, S2I-21). A cell's earlier reading and outcome
+# sentences are kept and added to, never overwritten, when a batch makes it held (S2I-30); an outcome row a later batch
+# changed replaces its earlier sentence, and a row marked `superseded` is not planned (S2I-22).
 #
 # Usage:
 #   python3 -I method/held_amend.py plan --platform P [--batch B ...]    what the amendment would write, per part and
@@ -65,6 +70,16 @@ def held_entries(p):
 
 def is_s2(batch):
     return batch.startswith("S2-")
+
+
+def not_placed(c):
+    """A held cell whose statements state no placement (s2_held.not_placed)."""
+    return c.get("held") == "statements" and set(semi((c.get("placed_as") or "").replace(",", ";"))) <= {"not-stated"}
+
+
+def holds_nothing(c, s2=True):
+    """A cell holding nothing, or, for a second-stage batch, held with no placement stated (S2I-21)."""
+    return c.get("held") != "statements" or (s2 and not_placed(c))
 
 
 def plan(p, batches=None):
@@ -138,7 +153,7 @@ def plan(p, batches=None):
             place(r["batch"], r["cap_id"].strip(), [r["key"]], semi(r["supports"]), lambda e, r=r: r["why"], r)
     # and its other outcomes, for the cells they name
     for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv")):
-        if r["batch"] in take and r["batch"] in listed and (r["subject"], p) in cells:
+        if r["batch"] in take and r["batch"] in listed and (r["subject"], p) in cells and not r.get("superseded"):
             outcomes[(r["subject"], p)].append(r)
     return cells, rowsout, pending, extra, outcomes
 
@@ -175,6 +190,11 @@ def summary(evs, entries, stm):
     return ". ".join(out)
 
 
+def bare(t):
+    """A term without a language prefix (`en: payment terms`), for comparing (inspection-S2.md, S2I-31)."""
+    return re.sub(r"^[a-z]{2}:\s*", "", t.strip())
+
+
 def search_terms(searched):
     """The terms of a second-stage row's searches (`<tool> <language>: <term>, <term>`), for the cell's `searched`; an
     address (held_index: <address>) is what it read, not a term."""
@@ -190,17 +210,26 @@ def search_terms(searched):
     return out
 
 
-def outcome_sentence(o, p):
+def outcome_sentence(o, p, placed_none=False):
     """What the second stage read for a cell still holding nothing, at its commits (PLAN.md, section 6: 'A searched,
-    not found lists what it read, at a commit')."""
+    not found lists what it read, at a commit'). For a held cell whose statements state no placement, it says that no
+    passage read in this stage states one (S2I-21). What it read is clipped, and a capture's raw form stays in
+    s2-outcomes.tsv (S2I-24)."""
     ref = f"held/{p}/s2/{o['part']}.tsv line {o['line']}"
-    s = f"The held pass's second stage ({o['batch']}) read the held pages at {', '.join(semi(o['commits']))} ({ref}): {OUTCOME_WORDS.get(o['outcome'], o['outcome'])}"
+    words = OUTCOME_WORDS.get(o["outcome"], o["outcome"])
+    if placed_none:
+        words = f"no passage read in this stage states a placement for it ({words})"
+    s = f"The held pass's second stage ({o['batch']}) read the held pages at {', '.join(semi(o['commits']))} ({ref}): {words}"
     if o["outcome"] in ("absent", "unclear") and o.get("source"):
         at = o["entry_id"] + ", " if o.get("entry_id") else ""
         s += f", from {at}{o['source']} {o.get('locator', '')}".rstrip() + f" ('{clip(o.get('quote', ''), 160)}')"
-    if o["outcome"] in ("not-held", "unreadable", "unclear") and o.get("capture"):
-        s += f"; {'what would settle it' if o['outcome'] == 'unclear' else 'capture'}: {clip(o['capture'], 240)}"
-    return s + f". It read: {' '.join(o.get('read', '').split())}.", ref
+    if o["outcome"] == "unclear" and o.get("capture"):
+        s += f"; what would settle it: {clip(o['capture'], 240)}"
+    elif o["outcome"] == "not-held" and o.get("capture"):
+        s += f"; capture requested (held/{p}/s2-outcomes.tsv)"
+    elif o["outcome"] == "unreadable" and o.get("capture"):
+        s += f"; the reader to be extended (held/{p}/s2-outcomes.tsv)"
+    return s + f". It read: {clip(' '.join(o.get('read', '').split()), 200)}.", ref
 
 
 def main():
@@ -219,11 +248,16 @@ def main():
     for k, evs in out.items():
         by_part[cells[k]["part"]].append((k, evs))
     # a cell the batch leaves holding nothing takes its outcomes into its reading and searched
-    still = {k: os_ for k, os_ in outcomes.items() if k not in out and cells[k]["held"] != "statements"}
+    s2 = bool(a.batch) and all(is_s2(b) for b in a.batch)
+    still = {k: os_ for k, os_ in outcomes.items() if k not in out and holds_nothing(cells[k])}
+    earlier_out = collections.defaultdict(list)       # each subject's outcome rows that a later batch superseded
+    for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv")):
+        if r.get("superseded"):
+            earlier_out[(r["subject"], r.get("superseded"))].append(r)
     for k in still:
         if not any(k == x for x, _ in by_part[cells[k]["part"]]):
             by_part[cells[k]["part"]].append((k, []))
-    became = sum(1 for k in out if cells[k]["held"] != "statements")
+    became = sum(1 for k in out if holds_nothing(cells[k], s2))
     print(f"{p}: {sum(len(v) for v in out.values())} evidence rows for {len(out)} cells in {len(by_part)} parts; "
           f"{became} cells that held nothing become held"
           + (f"; {len(still)} cells still holding nothing take the second stage's outcomes" if still else ""))
@@ -233,7 +267,7 @@ def main():
     for k, evs in sorted(out.items()):
         was = set((cells[k].get("placed_as") or "").split(";")) - {"", "not-stated"}
         now = {e["supports"] for e in evs} & PLACED
-        if cells[k]["held"] != "statements" or now - was:
+        if holds_nothing(cells[k], s2) or now - was:
             print(f"   CHANGES {k[0]}@{k[1]}: {cells[k]['held']}, placed {';'.join(sorted(was)) or 'nowhere'} -> adds {';'.join(sorted(now - was)) or 'shows only'} ({len(evs)} rows)")
     for k, os_ in sorted(still.items()):
         for o in os_:
@@ -263,22 +297,30 @@ def main():
         for k, evs in ks:
             ev += evs
             c = idx[k]
+            placed_none = not_placed(cells[k]) and bool(still.get(k))
             if evs:
                 note = summary(evs, entries, stm)
+                # the cell's earlier reading, the concern map's and any outcome sentence, is kept and added to (S2I-30)
                 if c["held"] != "statements":
                     c["held"] = "statements"
                     each = "each" if any(is_s2(e["_batch"]) for e in evs) else "each entry"
-                    c["reading"] = f"Nothing in the concern map; {note[0].lower() + note[1:]} (a reading of {each}, in its evidence row)."
+                    c["reading"] = (c["reading"].rstrip() + " " + note + f" (a reading of {each}, in its evidence row).").strip()
                 else:
                     c["reading"] = (c["reading"].rstrip() + " " + note + ".").strip()
                 c["terms"] = ";".join(dict.fromkeys([t for t in c.get("terms", "").split(";") if t] + extra[k]["terms"]))
             for o in still.get(k, []):
-                sentence, ref = outcome_sentence(o, p)
-                if ref + ")" in c["reading"]:
+                sentence, ref = outcome_sentence(o, p, placed_none)
+                if sentence in c["reading"]:
                     continue                # written by an earlier apply of the same batch
-                c["reading"] = (c["reading"].rstrip() + " " + sentence).strip()
-                have_t = {fold(t) for t in semi(c.get("searched", ""))}
-                add = [t for t in dict.fromkeys(search_terms(o.get("searched", ""))) if fold(t) not in have_t]
+                # an earlier batch's sentence for the same subject, which this batch's row changed, is replaced (S2I-22)
+                olds = [outcome_sentence(x, p, placed_none)[0] for x in earlier_out.get((o["subject"], o["batch"]), [])]
+                old = next((x for x in olds if x in c["reading"]), None)
+                if old:
+                    c["reading"] = c["reading"].replace(old, sentence)
+                else:
+                    c["reading"] = (c["reading"].rstrip() + " " + sentence).strip()
+                have_t = {fold(bare(t)) for t in semi(c.get("searched", ""))}
+                add = [t for t in dict.fromkeys(search_terms(o.get("searched", ""))) if fold(bare(t)) not in have_t]
                 c["searched"] = ";".join(semi(c.get("searched", "")) + add)
         write(os.path.join(d, "evidence.tsv"), eh, ev)
         write(os.path.join(d, "cells.tsv"), ch, cl)
@@ -295,7 +337,8 @@ def main():
                 fh_, fr = table(path)
             fr += add
             write(path, fh_, fr)
-        print(f"wrote {part}: check it with python3 -I method/check_class_part.py {part}")
+        where = os.path.relpath(d) if not os.path.relpath(d).startswith("..") else d
+        print(f"wrote {part}: check it with python3 -I method/check_class_part.py {where}")
 
 
 if __name__ == "__main__":

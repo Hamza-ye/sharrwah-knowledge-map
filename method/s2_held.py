@@ -89,7 +89,6 @@ from q3_misses import MISSES, PARTS as MISS_PARTS, ROOTS, KINDS, REST_LABEL
 import held_entries as he
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CLASS_DIR = os.path.join(ROOT, "studies", "class-model")
 HELD = os.path.join(MODEL, "held")
 MERGED = os.path.join(MODEL, "merged")
 PARTS_TSV = os.path.join(HELD, "s2-parts.tsv")
@@ -967,7 +966,7 @@ def check_part(pr):
     for (pk, on), xs in passages.items():
         if len(xs) > 1 and len({x[1:] for x in xs}) > 1:
             problems.append(f"rows {', '.join(str(x[0]) for x in xs)} cite one passage on {on}: give them the same "
-                            f"supports, terms and quality (and filler)")
+                            f"supports, terms and quality")
     for m, ps in proposals.items():
         if len(ps) > 1:
             problems.append(f"{m}: its rows propose one capability, one way: {sorted(ps)}")
@@ -1145,8 +1144,26 @@ def cmd_misses_join(a):
                 prop = "; ".join(dict.fromkeys(f"{r['cap_id'] or '-'} ({r['as']})" for _, _, r in rs))
                 pl = "; ".join(dict.fromkeys(r["place"] for _, _, r in rs if r["place"]))
                 print(f"      {p}: {ocs}; proposes {prop}{'; place: ' + pl if pl else ''}")
+                for _, _, r in rs:
+                    if r["as"].strip() == NO_PROPOSAL:
+                        print(f"      {p}: no proposal: nothing held")
+                        break
         print("   held: " + "; ".join(f"{p} {held_of([x for x in allr.get(p, []) if x[2]['subject'] in subs], subs)}" for p in PLATFORMS))
         print()
+
+
+def miss_supports(d):
+    """A decision's `supports`, for the rows whose proposal it differs from (inspection-S2.md, S2I-4): {platform: [values]},
+    a platform of None standing for every platform; None where its form is wrong."""
+    out = {}
+    for piece in semi(d.get("supports", "")):
+        plat, _, vals = piece.rpartition(":") if ":" in piece else ("", "", piece)
+        plat = plat.strip() or None
+        vs = [v.strip() for v in vals.split(",") if v.strip()]
+        if (plat and plat not in PLATFORMS) or not vs or len(vs) > 2 or len(set(vs)) != len(vs) or any(v not in he.SUPPORTS for v in vs):
+            return None
+        out[plat] = vs
+    return out
 
 
 def decisions(problems=None):
@@ -1175,6 +1192,18 @@ def cmd_check_misses(a):
         if m in seen:
             problems.append(f"{w}: {m} decided again: one row per miss")
         seen.add(m)
+        # decided once, from the five platforms' rows side by side (the coordinator's decision 5; inspection-S2.md, S2I-5)
+        subs = [f"{m}: {x}" for x in MISS_PARTS[m]]
+        for p in PLATFORMS:
+            have = {r_["subject"] for _, _, r_ in allr.get(p, [])}
+            lack = [x for x in subs if x not in have]
+            if lack:
+                problems.append(f"{w}: {m} is decided while {p} has no row for {len(lack)} of its parts (misses-join: "
+                                f"no row yet), such as '{lack[0]}': decide it once every platform's rows are in")
+        sp = miss_supports(r)
+        if sp is None:
+            problems.append(f"{w}: supports is empty, one or two values of {', '.join(he.SUPPORTS)} for every platform, "
+                            f"or `<platform>: <value>[, <value>]` pieces, `;`-separated")
         if as_ not in AS:
             problems.append(f"{w}: as is one of {', '.join(AS)}")
         elif as_ in ("its thing", "feature") and cap not in caps:
@@ -1225,8 +1254,20 @@ def evidence_rows(p):
 
 
 def keep_others(path, head, col, value):
-    """The rows of a shared file that another batch or platform wrote, kept as they are."""
-    return [r for _, r in (read_tsv(path, head, []) if os.path.exists(path) else []) if r[col] != value]
+    """The rows of a shared file that another batch or platform wrote, kept as they are (a column the file was written
+    without reads as empty)."""
+    return [{h: r.get(h, "") for h in head} for r in (rows(path) if os.path.exists(path) else []) if r.get(col) != value]
+
+
+def applied(ev, b):
+    """Is batch b in the model's evidence (held_amend.py's `why` names it)?"""
+    return any(re.match(rf"^\(the held pass's second stage, {re.escape(b)}[,)]", r.get("why", "")) for r in ev)
+
+
+def union(old, new, fold=he.fold):
+    """The `;` pieces of old, then those of new it lacks."""
+    have = [fold(x) for x in semi(old)]
+    return ";".join(semi(old) + [x for x in semi(new) if fold(x) not in have])
 
 
 def cmd_land(a):
@@ -1252,7 +1293,7 @@ def cmd_land(a):
     if B != main_b and main_b not in listed:
         sys.exit(f"{main_b} is not landed yet: land it first")
     ev = evidence_rows(p)
-    if any(re.match(rf"^\(the held pass's second stage, {re.escape(B)}[,)]", r.get("why", "")) for r in ev):
+    if applied(ev, B):
         sys.exit(f"{B} was applied: its lines are in the model's evidence. Land what came after in a correction batch, "
                  f"--batch {main_b}-R{len([b for b in listed if b.startswith(main_b + '-R')]) + 1} (design, section 3.2)")
     in_model = {(r["cap_id"], r["key"]) for r in ev}
@@ -1272,13 +1313,30 @@ def cmd_land(a):
     old_s2 = rows(os.path.join(HELD, p, "entries-s2.tsv"))
     cit = {skey(x): x for x in citable(p)}
     taken, entries, lines, keys, outcomes, captures, not_landed, lengthened = {}, collections.OrderedDict(), collections.OrderedDict(), [], [], [], [], []
-    batch_ids, misses_landed, became = [], collections.Counter(), set()
-    # what earlier S2 batches of the platform hold, which a correction batch leaves out
+    batch_ids, misses_landed, became, waiting, merges = [], collections.Counter(), set(), [], []
+    # the ids entries-s2.tsv holds keep their passages: a new passage that collides is lengthened, never given one of
+    # them (inspection-S2.md, S2I-23)
+    old_passage = {}
+    for e in old_s2:
+        if FILE_SOURCE.match(e["source"].strip()):
+            old_passage[e["entry_id"]] = passage_key(e["source"].strip(), e["locator"], e["text"])
+            taken[e["entry_id"]] = old_passage[e["entry_id"]]
+    applied_ids = set()
+    for b in earlier:
+        if applied(ev, b):
+            bp = os.path.join(HELD, "batches", f"{b}.txt")
+            applied_ids |= {x.strip() for x in open(bp, encoding="utf-8")} if os.path.exists(bp) else set()
+            applied_ids |= {x for r in rows(os.path.join(HELD, p, f"placements-{b}.tsv")) for x in semi(r["entry_id"])}
+    # what earlier S2 batches of the platform hold, which a correction batch leaves out; an outcome row is compared
+    # whole, so a changed one lands again (inspection-S2.md, S2I-22)
     e_lines, e_keys, e_out = set(), set(), set()
     for b in earlier:
         e_lines |= {(r["entry_id"], r["cap_id"], r["scope"], r["filler"]) for r in rows(os.path.join(HELD, p, f"placements-{b}.tsv"))}
     e_keys = {(r["cap_id"], r["key"]) for r in rows(os.path.join(HELD, p, "s2-keys.tsv")) if r["batch"] in earlier}
-    e_out = {(r["part"], r["subject"], r["outcome"]) for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv")) if r["batch"] in earlier}
+    OUT_SAME = [h for h in OUT_HEAD if h not in ("batch", "superseded")]
+    e_out = {tuple(r.get(h, "") for h in OUT_SAME) for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv"))
+             if r["batch"] in earlier and not r.get("superseded")}
+    found_now = set()
     cell_ids = {c for pr in use for c in semi(pr["cells"])}
     for pr, i, r in allrows:
         part, ref = pr["part"], f"s2/{pr['part']}.tsv line {i}"
@@ -1296,16 +1354,19 @@ def cmd_land(a):
         elif oc in CITING:
             eid = src                              # an id already held
         if r["capture"].strip():
-            captures.append({"platform": p, "part": part, "line": str(i), "subject": subj, "outcome": oc,
-                             "could_change": r["could_change"], "capture": r["capture"], "reading": r["reading"]})
+            captures.append({"platform": p, "batch": B, "part": part, "line": str(i), "subject": subj, "outcome": oc,
+                             "could_change": r["could_change"], "capture": r["capture"], "read": r["read"],
+                             "searched": r["searched"], "reading": r["reading"]})
         if oc != "found":
-            if (part, subj, oc) not in e_out:
-                outcomes.append({"batch": B, "subject": subj, "outcome": oc, "part": part, "line": str(i),
-                                 "commits": platform_commits(p, pr), "entry_id": eid if eid in entries else "",
-                                 "source": src, "locator": r["locator"], "quote": r["quote"], "read": r["read"],
-                                 "searched": r["searched"], "capture": r["capture"], "could_change": r["could_change"],
-                                 "reading": r["reading"]})
+            o = {"batch": B, "subject": subj, "outcome": oc, "part": part, "line": str(i),
+                 "commits": platform_commits(p, pr), "entry_id": eid if eid in entries else "",
+                 "source": src, "locator": r["locator"], "quote": r["quote"], "read": r["read"],
+                 "searched": r["searched"], "capture": r["capture"], "could_change": r["could_change"],
+                 "reading": r["reading"], "superseded": ""}
+            if tuple(o[h] for h in OUT_SAME) not in e_out:
+                outcomes.append(o)
             continue
+        suffix, sup = "", r["supports"]
         if subj in cell_ids:
             cap = subj
         elif subj == "new":
@@ -1314,36 +1375,74 @@ def cmd_land(a):
             m = subj.split(":")[0]
             d = dec.get(m)
             if not d:
-                sys.exit(f"{m}: a found row ({ref}) and no decision in held/s2-misses.tsv: decide it first (check-misses)")
+                # it waits for the miss's decision, made once from the five platforms' rows (S2I-5), and lands in a
+                # correction batch then
+                waiting.append(f"{ref}: {subj}: waiting for the miss's decision in held/s2-misses.tsv; it lands in a "
+                               f"correction batch once decided")
+                continue
             if d["as"].strip() == "not a capability":
                 not_landed.append(f"{ref}: {m} is not a capability (held/s2-misses.tsv): it stays in Q3's record")
                 continue
-            cap = d["capability"].strip()
-            misses_landed[f"{m} -> {cap} ({d['as'].strip()})"] += 1
+            cap, das = d["capability"].strip(), d["as"].strip()
+            if (r["cap_id"].strip(), r["as"].strip()) != (cap, das):
+                # the row's supports were judged for its own proposal (S2I-4)
+                given = miss_supports(d) or {}
+                vs = given.get(p) or given.get(None)
+                if not vs:
+                    waiting.append(f"{ref}: {subj}: decided otherwise than proposed ({das} of {cap}; the row proposed "
+                                   f"{r['as'].strip()} of {r['cap_id'].strip() or '-'}): give its supports in s2-misses.tsv")
+                    continue
+                sup = ";".join(vs)
+            suffix = f" ({subj}, landed as {das} of {cap} by held/s2-misses.tsv: {' '.join(d['reading'].split())})"
+            misses_landed[f"{m} -> {cap} ({das})"] += 1
         if not cap.startswith("new:") and (cap not in caps or (cap, p) not in cells):
             sys.exit(f"{ref}: {cap} has no cell for {p} in the merged model")
         if (cap, eid) in in_model:
             not_landed.append(f"{ref}: {eid} is in the model's evidence on {cap} already")
             continue
-        if not cap.startswith("new:") and cells[(cap, p)]["held"] != "statements":
+        if not cap.startswith("new:") and holds_nothing(cells[(cap, p)]):
             became.add(cap)
+        found_now.add(subj)
+        val = {"supports": sup, "terms": r["terms"], "quality": r["quality"]}
+
+        def merge(L, into):
+            """Two rows that put one passage on one capability make one line: their supports, terms and qualities
+            joined, each merge printed (inspection-S2.md, S2I-3)."""
+            said = []
+            for fld in ("supports", "terms", "quality"):
+                u = union(L[fld], val[fld])
+                if u != L[fld]:
+                    said.append(f"{fld} {L[fld] or '-'} -> {u}")
+                    L[fld] = u
+            if said:
+                merges.append(f"{ref} into {into}: {eid} on {cap}: {'; '.join(said)}")
+            if suffix and suffix.strip() not in L[key_reading]:
+                L[key_reading] += suffix
+
         if eid in entries or ENTRY_ID.match(eid):
             k = (eid, cap, r["scope"].strip(), r["filler"].strip())
             if k in e_lines:
                 continue
             if k in lines:
+                key_reading = "reading"
+                merge(lines[k], lines[k]["refs"][0])
                 lines[k]["refs"].append(ref)
                 continue
             lines[k] = {"entry_id": eid, "placement": "new" if cap.startswith("new:") else "capability", "cap_id": cap,
-                        "supports": r["supports"], "scope": r["scope"], "terms": r["terms"], "filler": r["filler"],
-                        "quality": r["quality"], "reading": " ".join(r["reading"].split()), "refs": [ref]}
+                        "supports": sup, "scope": r["scope"], "terms": r["terms"], "filler": r["filler"],
+                        "quality": r["quality"], "reading": " ".join(r["reading"].split()) + suffix, "refs": [ref]}
             if eid not in batch_ids:
                 batch_ids.append(eid)
         else:
-            if (cap, eid) in e_keys or any(x["cap_id"] == cap and x["key"] == eid for x in keys):
+            if (cap, eid) in e_keys:
                 continue
-            keys.append({"batch": B, "cap_id": cap, "platform": p, "supports": r["supports"], "key": eid,
-                         "why": f"(the held pass's second stage, {B}, {part} line {i}) {' '.join(r['reading'].split())}",
+            same_k = [x for x in keys if x["cap_id"] == cap and x["key"] == eid]
+            if same_k:
+                key_reading = "why"
+                merge(same_k[0], same_k[0]["why"].split(")")[0][1:])
+                continue
+            keys.append({"batch": B, "cap_id": cap, "platform": p, "supports": sup, "key": eid,
+                         "why": f"(the held pass's second stage, {B}, {part} line {i}) {' '.join(r['reading'].split())}{suffix}",
                          "terms": r["terms"], "filler": r["filler"], "quality": r["quality"]})
     # an entry a placements file of another batch names, or the model's evidence cites, is never dropped
     protected = {r["key"] for r in ev}
@@ -1354,17 +1453,25 @@ def cmd_land(a):
     lost = {e["entry_id"] for e in old_s2} - set(entries)
     if lost & protected:
         sys.exit(f"{p}: the landing would drop {len(lost & protected)} entries of entries-s2.tsv that a placements file or the model names, such as {sorted(lost & protected)[:3]}: refused")
+    moved = sorted(i for i in applied_ids if i in entries and i in old_passage
+                   and passage_key(entries[i]["source"], entries[i]["locator"], entries[i]["text"]) != old_passage[i])
+    if moved:
+        sys.exit(f"{p}: the landing would give {moved[0]}, which an applied batch names, to another passage: refused")
     # the counts
     n = collections.Counter(r["outcome"] for _, _, r in allrows)
     commits = list(dict.fromkeys(x for pr in use for x in semi(pr["commits"])))
     print(f"{p}, {B}: {len(allrows)} rows from {', '.join(pr['part'] for pr in use)} ({', '.join(f'{k} {v}' for k, v in sorted(n.items()))})")
     print(f"   {len(entries)} entries in entries-s2.tsv, {len(batch_ids)} in the batch, {len(lines)} placement lines, "
           f"{len(keys)} rows to s2-keys.tsv, {len(outcomes)} outcomes, {len(captures)} capture leads, {len(not_landed)} rows not landed")
-    print(f"   cells that would become held: {', '.join(sorted(became)) or 'none'}")
+    print(f"   cells that would become held, or take their first placement: {', '.join(sorted(became)) or 'none'}")
     for x in lengthened:
         print(f"   COLLISION {x}")
+    for x in merges:
+        print(f"   MERGE {x}")
     for x, k in misses_landed.items():
         print(f"   MISS {x}: {k} rows")
+    for x in waiting:
+        print(f"   WAITING {x}")
     for x in not_landed:
         print(f"   NOT LANDED {x}")
     if a.dry_run:
@@ -1384,8 +1491,19 @@ def cmd_land(a):
     kp = os.path.join(HELD, p, "s2-keys.tsv")
     write_tsv(kp, KEYS_HEAD, keep_others(kp, KEYS_HEAD, "batch", B) + keys)
     op = os.path.join(HELD, p, "s2-outcomes.tsv")
-    write_tsv(op, OUT_HEAD, keep_others(op, OUT_HEAD, "batch", B) + outcomes)
+    kept = keep_others(op, OUT_HEAD, "batch", B)
+    changed = {(o["part"], o["subject"]) for o in outcomes}
+    for r in kept:
+        if r["batch"] in earlier:
+            if r["superseded"] == B:
+                r["superseded"] = ""
+            if not r["superseded"] and (r["subject"] in found_now or (r["part"], r["subject"]) in changed):
+                r["superseded"] = B          # a later batch finds its subject, or changes its row (S2I-22)
+    write_tsv(op, OUT_HEAD, kept + outcomes)
     cp = os.path.join(HELD, "s2-captures.tsv")
+    first = {(r["part"], r["subject"], r["capture"]): r["batch"] for r in rows(cp) if r.get("platform") == p and r.get("batch")} if os.path.exists(cp) else {}
+    for c in captures:
+        c["batch"] = first.get((c["part"], c["subject"], c["capture"]), B)    # the batch in which the lead first landed
     write_tsv(cp, CAPTURES_HEAD, keep_others(cp, CAPTURES_HEAD, "platform", p) + captures)
     news = collections.Counter(v["cap_id"][4:] for v in lines.values() if v["cap_id"].startswith("new:"))
     news.update(k["cap_id"][4:] for k in keys if k["cap_id"].startswith("new:"))
@@ -1403,6 +1521,8 @@ def cmd_land(a):
     md += [f"- {k}: {v} line{'s' if v > 1 else ''}" for k, v in news.items()] or ["- none"]
     md += ["", "## Misses landed", ""] + ([f"- {x}: {k} rows" for x, k in misses_landed.items()] or ["- none"])
     md += ["", "## Rows not landed, and why", ""] + ([f"- {x}" for x in not_landed] or ["- none"])
+    md += ["", "## Rows waiting for a miss's decision, or for its supports", ""] + ([f"- {x}" for x in waiting] or ["- none"])
+    md += ["", "## Rows merged into one line", ""] + ([f"- {x}" for x in merges] or ["- none"])
     md += ["", "## Rows sent to s2-keys.tsv", ""] + ([f"- {k['why'].split(')')[0][1:]}: {k['key']} on {k['cap_id']}" for k in keys] or ["- none"])
     open(os.path.join(HELD, p, f"notes-{B}.md"), "w", encoding="utf-8").write("\n".join(md) + "\n")
     for pr in use:
