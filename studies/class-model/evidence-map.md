@@ -9,7 +9,7 @@
 
 ## Where to start, per repository
 
-**observed-sh, Shopify** (`/home/user/observed-sh`, at `9b047b08c`, which added `shopify/editions`; now at `e38dc17e3`, with the founder's eight new kinds of evidence, `held-vs-read.tsv`):
+**observed-sh, Shopify** (`/home/user/observed-sh`, at `9b047b08c`, which added `shopify/editions`; then at `e38dc17e3`, with the founder's eight new kinds of evidence; now at `04de369da`, with Shopify's vocabularies in Arabic, which the held pass's selection reads through the model's names; `held-vs-read.tsv`):
 1. `README.md`, its "Starting points";
 2. `docs/READING.md`, for what each kind of file holds and how it reads;
 3. `docs/GAPS.md`, for what isn't held and why;

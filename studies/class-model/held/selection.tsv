@@ -266,3 +266,6 @@ shopify	editions-videos	no				the subtitles of 36 feature videos the Editions pa
 shopify	dev-mcp-instructions	no				22 platform-authored guides bundled with the dev-mcp server: developer guidance, read in the second stage where a cell needs it, and by the architecture plan
 shopify	dev-sitemap	no				shopify.dev's sitemap: a denominator of what is held, not things the platform offers
 shopify	marketing-sitemap	no				shopify.com's sitemap: a denominator of what is held, not things the platform offers
+shopify	admin-translations	no				the admin's words in Arabic, paired with English by Shopify's own keys (observed-sh 04de369da): a vocabulary, not statements of what the platform offers; read through the model's Shopify names at Shopify's amendment, each name's Arabic by its key, and searched by the omission review; its languages.jsonl (the admin's 49 languages, العربية (Beta) among them) is evidence for the new thing Admin languages
+shopify	checkout-translations	no				checkout's words, English and Arabic paired by key (observed-sh 04de369da): a vocabulary, read as admin-translations is; its languages.jsonl (the 50 languages checkout ships) bears on the storefront's languages
+shopify	shopify-com-translations	no				shopify.com's words in Arabic and English, paired by key, from the Saudi site (observed-sh 04de369da): a vocabulary, read as admin-translations is

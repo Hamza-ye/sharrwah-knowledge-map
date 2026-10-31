@@ -52,6 +52,14 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 - **For CM-SHP-017's cell:** its note leaves the shipping-update notifications to CM-NTF-001, while SH-85 places the templates that give a tracking number `core` on it, the message doing the tracking's work (the check after SH-85). The note is worded with the decision.
 - **New things named again:** Fees for products and collections (SH-48, `shows`, early access; CM-TAX-001 or CM-CHK-001 its parent); Sponsored products (SH-65, SH-49: SH-49's card ties it to Shop Campaigns, CM-MKT-012); Admin search (SH-36, SH-48); Tipping (SH-50, SH-67, its place the router's anchor `tipping`); Admin languages (SH-67, the route `settings/account_language` a lead).
 
+## Shopify's words in Arabic (observed-sh 04de369da, the founder's note of 31 October)
+
+- **The model's Shopify names take their Arabic.** `structures/shopify/admin-translations/en-ar@2026-10-31/items.jsonl` pairs 76,267 of the admin's 97,550 Arabic strings with their English by Shopify's own keys (`{bundle, namespace, key, en, ar}`), `checkout-translations` 2,170 checkout keys and `shopify-com-translations` 18,515 of shopify.com's. At the amendment, each Shopify name in a capability's definition takes the Arabic its English carries there, by key, cited at the commit, beside Salla's and Zid's own Arabic: the class's words in Arabic from three platforms. A name with no exact twin, or more than one, is read, not guessed.
+- **For the new thing Admin languages:** the admin's language list (`languages.jsonl`, 49 languages, العربية (Beta) among them) and the account's Preferred language showing 'العربية (تجريبي)' (runs 20260930T002940Z-sweep-trial, step 465, and 20261031T014053Z-journey-admin-language-arabic, step 1). Arabic is offered in the admin, as a beta.
+- **For the storefront's languages:** checkout ships 50 languages (`checkout-translations/en-ar@2026-10-31/languages.jsonl`), Arabic among them, reached by the language in the checkout's address (run 20261031T020451Z-journey-checkout-arabic).
+- **For the omission review:** the vocabularies are searched for things the model lacks, by key and word, not entry by entry; 12,407 Arabic strings have no English twin (125 namespaces unread, `meta.json` english.counts).
+- **The two journeys in Arabic** (the admin's 26 areas, a checkout) visit pages the pass reads in English; their one statement it lacks is the language setting above.
+
 ## Lists the concern map read whole
 
 - **The build reads only the first line of some citations.** It takes 'line N' alone from a citation 'from line N (one option per line; first option quoted)', and nothing from 'lines A-B'. So the options after the first line of a list the concern map cites whole became held entries (the check after SH-33). Shopify's three are:

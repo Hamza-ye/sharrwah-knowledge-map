@@ -1,8 +1,8 @@
 platform	kind	group	held	read	unread	note
 shopify	pages	shopify.dev/docs	8841	25	8816	
-shopify	pages	admin.shopify.com/api	8277	0	8277	
+shopify	pages	admin.shopify.com/api	8287	0	8287	
 shopify	pages	help.shopify.com/manual	5438	124	5314	
-shopify	pages	admin.shopify.com/store	3475	0	3475	
+shopify	pages	admin.shopify.com/store	3476	0	3476	
 shopify	pages	changelog.shopify.com/posts	1646	0	1646	
 shopify	pages	themes.shopify.com/themes	1300	0	1300	
 shopify	pages	shopify.dev/changelog	881	0	881	
@@ -12,18 +12,19 @@ shopify	pages	apps.shopify.com/collections	164	0	164
 shopify	pages	help.shopify.com/partners	137	0	137	
 shopify	pages	themes.shopify.com/websites	133	0	133	
 shopify	pages	themes.shopify.com/designers	124	0	124	
-shopify	pages	shopify.com/plus	116	0	116	
+shopify	pages	shopify.com/plus	121	0	121	
 shopify	pages	apps.shopify.com/stories	107	0	107	
 shopify	pages	shopify.com/pos	105	0	105	
+shopify	pages	shopify.com/legal	128	25	103	
 shopify	pages	shopify.com/blog	103	0	103	
-shopify	pages	shopify.com/legal	123	25	98	
-shopify	pages	shopify.com/sitemap	89	0	89	
-shopify	pages	shopify.com/international	88	0	88	
+shopify	pages	shopify.com/international	93	0	93	
+shopify	pages	shopify.com/sitemap	91	0	91	
 shopify	pages	shopify.com/sitemap.xml	84	0	84	
-shopify	pages	shopify.com/enterprise	80	0	80	
+shopify	pages	shopify.com/enterprise	84	0	84	
 shopify	pages	admin.shopify.com/content	63	0	63	
 shopify	pages	shopify.com/pricing	61	0	61	
-shopify	pages	shopify.com/sell	59	0	59	
+shopify	pages	shopify.com/sell	61	0	61	
+shopify	pages	shopify.com/compare	58	0	58	
 shopify	pages	admin.shopify.com/products	57	0	57	
 shopify	pages	admin.shopify.com/apps	56	0	56	
 shopify	pages	admin.shopify.com/access_account	53	0	53	
@@ -31,24 +32,26 @@ shopify	pages	admin.shopify.com/email_templates	52	0	52
 shopify	pages	partners.shopify.com/5236935	46	0	46	
 shopify	pages	shopify.com/sitemap_blog.xml	45	0	45	
 shopify	pages	shopify.com/partners	45	1	44	
+shopify	pages	shopify.com/print-on-demand	41	0	41	
 shopify	pages	shopify.com/tools	40	0	40	
-shopify	pages	shopify.com/print-on-demand	39	0	39	
 shopify	pages	help.shopify.com/cdn	39	0	39	
 shopify	pages	admin.shopify.com/markets	39	0	39	
-shopify	pages	shopify.com/compare	38	0	38	
 shopify	pages	dev.shopify.com/dashboard	31	0	31	
 shopify	pages	apps.shopify.com/built-in-features	29	0	29	
+shopify	pages	shopify.com/resources	28	0	28	
 shopify	pages	shopify.com/first-sale	25	0	25	
 shopify	pages	admin.shopify.com/orders	25	0	25	
-shopify	pages	shopify.com/resources	21	0	21	
 shopify	pages	admin.shopify.com/growth	21	0	21	
 shopify	pages	cdn.shopify.com/static	20	0	20	
 shopify	pages	admin.shopify.com/customers	19	0	19	
 shopify	pages	shopify.com/investors	17	0	17	
+shopify	pages	shopify.com/bugbounty	16	0	16	
+shopify	pages	shopify.com/solutions	16	0	16	
 shopify	pages	admin.shopify.com/discounts	16	0	16	
 shopify	pages	admin.shopify.com/analytics	15	0	15	
 shopify	pages	admin.shopify.com/balance	15	0	15	
 shopify	pages	admin.shopify.com/finance	15	0	15	
+shopify	pages	shopify.com/security	14	0	14	
 shopify	pages	shopify.com/sitemap_blog_partners.xml	14	0	14	
 shopify	pages	admin.shopify.com/taxes	14	0	14	
 shopify	pages	shopify.com/editions	13	0	13	
@@ -60,8 +63,6 @@ shopify	pages	admin.shopify.com/credit	11	0	11
 shopify	pages	admin.shopify.com/hydrogen	11	0	11	
 shopify	pages	admin.shopify.com/marketing	11	0	11	
 shopify	pages	shopify.com/careers	10	0	10	
-shopify	pages	shopify.com/security	10	0	10	
-shopify	pages	shopify.com/solutions	10	0	10	
 shopify	pages	admin.shopify.com/catalogs	10	0	10	
 shopify	pages	admin.shopify.com/companies	10	0	10	
 shopify	pages	admin.shopify.com/gift_cards	10	0	10	
@@ -69,35 +70,39 @@ shopify	pages	admin.shopify.com/organization	10	0	10
 shopify	pages	help.shopify.com/affiliates	9	0	9	
 shopify	pages	shopify.com/vender	9	0	9	
 shopify	pages	shopify.com/accessibility	8	0	8	
-shopify	pages	shopify.com/bugbounty	8	0	8	
 shopify	pages	hardware.shopify.com/pages	8	0	8	
 shopify	pages	accounts.shopify.com/accounts	8	0	8	
 shopify	pages	admin.shopify.com/capital	8	0	8	
 shopify	pages	shopify.com/101061591336	8	0	8	
 shopify	pages	shopify.dev/admin-graphql-direct-proxy	7	0	7	
 shopify	pages	shopify.dev/storefront-graphql-direct-proxy	7	0	7	
+shopify	pages	shopify.com/shipping	7	0	7	
 shopify	pages	admin.shopify.com/account_review	7	0	7	
 shopify	pages	admin.shopify.com/signup	7	0	7	
-shopify	pages	shopify.com/shipping	6	0	6	
+shopify	pages	shopify.com/website	6	0	6	
 shopify	pages	shopifystatus.com/api	6	0	6	
 shopify	pages	themes.shopify.com/collections	6	0	6	
 shopify	pages	shopify.com/stock-photos	6	0	6	
 shopify	pages	admin.shopify.com/extensibility	6	0	6	
 shopify	pages	admin.shopify.com/transfers	6	0	6	
+shopify	pages	shopify.com/install	5	0	5	
 shopify	pages	admin.shopify.com/bulk	5	0	5	
 shopify	pages	admin.shopify.com/headless	5	0	5	
 shopify	pages	admin.shopify.com/payments	5	0	5	
 shopify	pages	admin.shopify.com/rollouts	5	0	5	
 shopify	pages	shopify.com/news	4	0	4	
+shopify	pages	shopify.com/tech-flexes	4	0	4	
 shopify	pages	shopify.com/verkaufen	4	0	4	
 shopify	pages	shopify.com/vendre	4	0	4	
 shopify	pages	admin.shopify.com/purchase_orders	4	0	4	
 shopify	pages	admin.shopify.com/redirects	4	0	4	
 shopify	pages	admin.shopify.com/plus	4	0	4	
+shopify	pages	shopify.com	3	0	3	
+shopify	pages	shopify.com/b2b-demo-store	3	0	3	
+shopify	pages	shopify.com/case-studies	3	0	3	
 shopify	pages	shopify.com/collabs	3	0	3	
-shopify	pages	shopify.com/install	3	0	3	
 shopify	pages	shopify.com/toolkit	3	0	3	
-shopify	pages	shopify.com/website	3	0	3	
+shopify	pages	shopify.com/ucp	3	0	3	
 shopify	pages	apps.shopify.com/extensions	3	0	3	
 shopify	pages	cdn.shopify.com/shopifycloud	3	0	3	
 shopify	pages	admin.shopify.com/subscribe	3	0	3	
@@ -112,13 +117,70 @@ shopify	pages	admin.shopify.com/challenges	3	0	3
 shopify	pages	accounts.shopify.com/activate	3	0	3	
 shopify	pages	partners.shopify.com/{id}	3	0	3	
 shopify	pages	help.shopify.com	2	0	2	
-shopify	pages	shopify.com	2	0	2	
-shopify	pages	shopify.com/b2b-demo-store	2	0	2	
+shopify	pages	shopify.com/about	2	0	2	
+shopify	pages	shopify.com/affiliates	2	0	2	
+shopify	pages	shopify.com/agentic-plan	2	0	2	
+shopify	pages	shopify.com/agentic-readiness	2	0	2	
+shopify	pages	shopify.com/agentic-storefronts	2	0	2	
+shopify	pages	shopify.com/amazon-pay	2	0	2	
+shopify	pages	shopify.com/analytics	2	0	2	
 shopify	pages	shopify.com/build-with-ai	2	0	2	
+shopify	pages	shopify.com/buy-button	2	0	2	
+shopify	pages	shopify.com/campaign-autopilot	2	0	2	
+shopify	pages	shopify.com/card-reader-discount	2	0	2	
+shopify	pages	shopify.com/card-reader-promotion	2	0	2	
+shopify	pages	shopify.com/cash-promotion	2	0	2	
+shopify	pages	shopify.com/channels	2	0	2	
+shopify	pages	shopify.com/charge	2	0	2	
+shopify	pages	shopify.com/checkout	2	0	2	
+shopify	pages	shopify.com/checkout-kit	2	0	2	
 shopify	pages	shopify.com/climate	2	0	2	
+shopify	pages	shopify.com/contact	2	0	2	
+shopify	pages	shopify.com/customer-accounts	2	0	2	
+shopify	pages	shopify.com/digital-products	2	0	2	
+shopify	pages	shopify.com/discounts	2	0	2	
+shopify	pages	shopify.com/domain-promotion	2	0	2	
+shopify	pages	shopify.com/domains	2	0	2	
+shopify	pages	shopify.com/dropshipping	2	0	2	
+shopify	pages	shopify.com/email-marketing	2	0	2	
 shopify	pages	shopify.com/event	2	0	2	
-shopify	pages	shopify.com/tech-flexes	2	0	2	
-shopify	pages	shopify.com/ucp	2	0	2	
+shopify	pages	shopify.com/examples	2	0	2	
+shopify	pages	shopify.com/facebook-instagram	2	0	2	
+shopify	pages	shopify.com/faq	2	0	2	
+shopify	pages	shopify.com/flow	2	0	2	
+shopify	pages	shopify.com/forms	2	0	2	
+shopify	pages	shopify.com/free-trial-offer	2	0	2	
+shopify	pages	shopify.com/gmv-promotion	2	0	2	
+shopify	pages	shopify.com/google	2	0	2	
+shopify	pages	shopify.com/manage	2	0	2	
+shopify	pages	shopify.com/marketing	2	0	2	
+shopify	pages	shopify.com/marketing-automation	2	0	2	
+shopify	pages	shopify.com/marketing-automation-tools	2	0	2	
+shopify	pages	shopify.com/markets	2	0	2	
+shopify	pages	shopify.com/migrate	2	0	2	
+shopify	pages	shopify.com/mobile	2	0	2	
+shopify	pages	shopify.com/new-year-gmv-promotion	2	0	2	
+shopify	pages	shopify.com/online	2	0	2	
+shopify	pages	shopify.com/orders	2	0	2	
+shopify	pages	shopify.com/payment-gateways	2	0	2	
+shopify	pages	shopify.com/payments	2	0	2	
+shopify	pages	shopify.com/payments-promotion	2	0	2	
+shopify	pages	shopify.com/plus-shopify-payments-rewards-2025	2	0	2	
+shopify	pages	shopify.com/plus-shopify-payments-rewards	2	0	2	
+shopify	pages	shopify.com/pre-orders	2	0	2	
+shopify	pages	shopify.com/products	2	0	2	
+shopify	pages	shopify.com/rewards-promotion	2	0	2	
+shopify	pages	shopify.com/search-and-discovery	2	0	2	
+shopify	pages	shopify.com/segmentation	2	0	2	
+shopify	pages	shopify.com/sell-on-wordpress	2	0	2	
+shopify	pages	shopify.com/set-up-promotion	2	0	2	
+shopify	pages	shopify.com/shop	2	0	2	
+shopify	pages	shopify.com/sidekick	2	0	2	
+shopify	pages	shopify.com/sp-fees-discount-existing-merchants	2	0	2	
+shopify	pages	shopify.com/subscriptions	2	0	2	
+shopify	pages	shopify.com/tax-platform	2	0	2	
+shopify	pages	shopify.com/test-and-launch	2	0	2	
+shopify	pages	shopify.com/waived-pos-fees	2	0	2	
 shopify	pages	apps.shopify.com/partners	2	0	2	
 shopify	pages	help.shopify.com/contact	2	0	2	
 shopify	pages	cdn.shopify.com/s	2	0	2	
@@ -380,56 +442,23 @@ shopify	pages	community.shopify.com/sitemap_20.xml	1	0	1
 shopify	pages	community.shopify.com/sitemap_21.xml	1	0	1	
 shopify	pages	community.shopify.com/sitemap_22.xml	1	0	1	
 shopify	pages	shopifystatus.com	1	0	1	
-shopify	pages	shopify.com/about	1	0	1	
 shopify	pages	shopify.com/ads.txt	1	0	1	
 shopify	pages	shopify.com/affiliate-active-confirmation	1	0	1	
-shopify	pages	shopify.com/affiliates	1	0	1	
-shopify	pages	shopify.com/agentic-plan	1	0	1	
-shopify	pages	shopify.com/agentic-readiness	1	0	1	
-shopify	pages	shopify.com/agentic-storefronts	1	0	1	
-shopify	pages	shopify.com/amazon-pay	1	0	1	
-shopify	pages	shopify.com/analytics	1	0	1	
 shopify	pages	shopify.com/apple-pay	1	0	1	
 shopify	pages	shopify.com/audiences	1	0	1	
 shopify	pages	shopify.com/balance	1	0	1	
 shopify	pages	shopify.com/bill-pay	1	0	1	
 shopify	pages	shopify.com/brand-assets	1	0	1	
-shopify	pages	shopify.com/buy-button	1	0	1	
-shopify	pages	shopify.com/campaign-autopilot	1	0	1	
 shopify	pages	shopify.com/capital	1	0	1	
-shopify	pages	shopify.com/card-reader-discount	1	0	1	
-shopify	pages	shopify.com/card-reader-promotion	1	0	1	
-shopify	pages	shopify.com/case-studies	1	0	1	
-shopify	pages	shopify.com/cash-promotion	1	0	1	
-shopify	pages	shopify.com/channels	1	0	1	
-shopify	pages	shopify.com/charge	1	0	1	
-shopify	pages	shopify.com/checkout	1	0	1	
-shopify	pages	shopify.com/checkout-kit	1	0	1	
 shopify	pages	shopify.com/climate-report	1	0	1	
 shopify	pages	shopify.com/colin-and-samir	1	0	1	
 shopify	pages	shopify.com/collective	1	0	1	
-shopify	pages	shopify.com/contact	1	0	1	
 shopify	pages	shopify.com/credit	1	0	1	
-shopify	pages	shopify.com/customer-accounts	1	0	1	
 shopify	pages	shopify.com/developers	1	0	1	
-shopify	pages	shopify.com/digital-products	1	0	1	
-shopify	pages	shopify.com/discounts	1	0	1	
-shopify	pages	shopify.com/domain-promotion	1	0	1	
-shopify	pages	shopify.com/domains	1	0	1	
-shopify	pages	shopify.com/dropshipping	1	0	1	
-shopify	pages	shopify.com/email-marketing	1	0	1	
 shopify	pages	shopify.com/emea-rec-for-agencies	1	0	1	
-shopify	pages	shopify.com/examples	1	0	1	
-shopify	pages	shopify.com/facebook-instagram	1	0	1	
-shopify	pages	shopify.com/faq	1	0	1	
 shopify	pages	shopify.com/finance	1	0	1	
-shopify	pages	shopify.com/flow	1	0	1	
-shopify	pages	shopify.com/forms	1	0	1	
 shopify	pages	shopify.com/fraud-solutions	1	0	1	
-shopify	pages	shopify.com/free-trial-offer	1	0	1	
 shopify	pages	shopify.com/fulfillment	1	0	1	
-shopify	pages	shopify.com/gmv-promotion	1	0	1	
-shopify	pages	shopify.com/google	1	0	1	
 shopify	pages	shopify.com/google-pay	1	0	1	
 shopify	pages	shopify.com/ig25h1g02offerdetails	1	0	1	
 shopify	pages	shopify.com/ig25h1g04offerdetails	1	0	1	
@@ -438,47 +467,24 @@ shopify	pages	shopify.com/ig25h1g3offerdetails	1	0	1
 shopify	pages	shopify.com/ig25h1g5offerdetails	1	0	1	
 shopify	pages	shopify.com/inventory-management	1	0	1	
 shopify	pages	shopify.com/local-delivery	1	0	1	
-shopify	pages	shopify.com/manage	1	0	1	
-shopify	pages	shopify.com/marketing	1	0	1	
-shopify	pages	shopify.com/marketing-automation	1	0	1	
-shopify	pages	shopify.com/marketing-automation-tools	1	0	1	
 shopify	pages	shopify.com/marketplace-connect	1	0	1	
-shopify	pages	shopify.com/markets	1	0	1	
-shopify	pages	shopify.com/migrate	1	0	1	
-shopify	pages	shopify.com/mobile	1	0	1	
 shopify	pages	shopify.com/mrbeast	1	0	1	
-shopify	pages	shopify.com/new-year-gmv-promotion	1	0	1	
 shopify	pages	shopify.com/newsletter	1	0	1	
-shopify	pages	shopify.com/online	1	0	1	
-shopify	pages	shopify.com/orders	1	0	1	
 shopify	pages	shopify.com/partners-devreferralofferdetails012025	1	0	1	
-shopify	pages	shopify.com/payment-gateways	1	0	1	
-shopify	pages	shopify.com/payments	1	0	1	
-shopify	pages	shopify.com/payments-promotion	1	0	1	
 shopify	pages	shopify.com/paymentsplatformapplication	1	0	1	
 shopify	pages	shopify.com/paypal	1	0	1	
 shopify	pages	shopify.com/platform	1	0	1	
-shopify	pages	shopify.com/plus-shopify-payments-rewards-2025	1	0	1	
-shopify	pages	shopify.com/plus-shopify-payments-rewards	1	0	1	
-shopify	pages	shopify.com/pre-orders	1	0	1	
 shopify	pages	shopify.com/product-network	1	0	1	
-shopify	pages	shopify.com/products	1	0	1	
 shopify	pages	shopify.com/professional-services	1	0	1	
 shopify	pages	shopify.com/protect	1	0	1	
 shopify	pages	shopify.com/q4offerdetails	1	0	1	
 shopify	pages	shopify.com/reactivation-promotion	1	0	1	
 shopify	pages	shopify.com/recreferralofferdetails2026	1	0	1	
-shopify	pages	shopify.com/rewards-promotion	1	0	1	
 shopify	pages	shopify.com/sales-bonus	1	0	1	
-shopify	pages	shopify.com/search-and-discovery	1	0	1	
 shopify	pages	shopify.com/security-response	1	0	1	
-shopify	pages	shopify.com/segmentation	1	0	1	
 shopify	pages	shopify.com/sell-on-spotify	1	0	1	
 shopify	pages	shopify.com/sell-on-tiktok	1	0	1	
-shopify	pages	shopify.com/sell-on-wordpress	1	0	1	
 shopify	pages	shopify.com/services	1	0	1	
-shopify	pages	shopify.com/set-up-promotion	1	0	1	
-shopify	pages	shopify.com/shop	1	0	1	
 shopify	pages	shopify.com/shop-campaigns	1	0	1	
 shopify	pages	shopify.com/shop-pay	1	0	1	
 shopify	pages	shopify.com/shop-pay-installments	1	0	1	
@@ -486,19 +492,13 @@ shopify	pages	shopify.com/shop-promise	1	0	1
 shopify	pages	shopify.com/shop-sign-in	1	0	1	
 shopify	pages	shopify.com/shopify-by-invitation	1	0	1	
 shopify	pages	shopify.com/shopify-security.pub	1	0	1	
-shopify	pages	shopify.com/sidekick	1	0	1	
 shopify	pages	shopify.com/sonsie	1	0	1	
 shopify	pages	shopify.com/source-products	1	0	1	
-shopify	pages	shopify.com/sp-fees-discount-existing-merchants	1	0	1	
 shopify	pages	shopify.com/start	1	0	1	
 shopify	pages	shopify.com/store-login	1	0	1	
 shopify	pages	shopify.com/store-signup	1	0	1	
 shopify	pages	shopify.com/students	1	0	1	
-shopify	pages	shopify.com/subscriptions	1	0	1	
 shopify	pages	shopify.com/tax	1	0	1	
-shopify	pages	shopify.com/tax-platform	1	0	1	
-shopify	pages	shopify.com/test-and-launch	1	0	1	
-shopify	pages	shopify.com/waived-pos-fees	1	0	1	
 shopify	pages	shopify.com/walmart	1	0	1	
 shopify	pages	shopify.com/webinar	1	0	1	
 shopify	pages	shopify.com/webinars	1	0	1	
@@ -694,6 +694,7 @@ shopify	pages	admin.shopify.com/market-picker	1	0	1
 shopify	pages	admin.shopify.com/market-picker-changes	1	0	1	
 shopify	pages	admin.shopify.com/public_challenges	1	0	1	
 shopify	pages	admin.shopify.com/reports	1	0	1	
+shopify	pages	admin.shopify.com/segments	1	0	1	
 shopify	pages	email.shopifyapps.com/graphql	1	0	1	
 shopify	pages	delivery.shopifyapps.com/graphql	1	0	1	
 shopify	pages	shopify.com/{id}	1	0	1	
@@ -846,32 +847,35 @@ shopify	structure	open-source	1	0	1	items 4656; items cited 0; added since read 
 shopify	structure	pricing-page-data	1	0	1	items 207; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Each pricing page's own data, country site by country site: the plan pricing pages (61: plan cards with monthly and yearly prices, card rates, features with the
 shopify	structure	engineering-blog	1	0	1	items 436; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Shopify's engineering blog, every post its sitemap lists (436, 2010-10-15 to 2026-10-22): title, author (283), published date, tags (Development 156, Infrastruc
 shopify	structure	embedded-videos	1	0	1	items 162; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; The 162 YouTube videos those pages embed or link (151 in 83 engineering posts, 6 in the developer changelog, 5 in merchant changelog posts): each video's title,
+shopify	structure	admin-translations	1	0	1	items 97550; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; The admin's words in Arabic, as its translation bundles state them: 72 bundles (blocking; six catchAll; Polaris's and the guidance UI's locales; 63 admin sectio
+shopify	structure	checkout-translations	1	0	1	items 2170; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Checkout's words, English and Arabic paired by key: 2,170 keys of its generated translations (account management, contact and delivery, payment, shipping, order
+shopify	structure	shopify-com-translations	1	0	1	items 18515; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; shopify.com's words in Arabic and English, paired by key, as its pages carry them: 424 translation namespaces (shared/global: navigation, footer, countries, lan
 shopify	runs	android	15	0	15	
 shopify	runs	android-apks	1	0	1	
 shopify	runs	cli	64	0	64	
-shopify	runs	fetch	90	0	90	
+shopify	runs	fetch	94	0	94	
 shopify	runs	import	1	1	0	
 shopify	runs	receiver	1	0	1	
-shopify	runs	session	266	7	259	
+shopify	runs	session	268	7	261	
 shopify	runs	youtube	2	0	2	
 shopify	ledger	admin-control: exercised	688			the repository's own count, index/ledger
-shopify	ledger	admin-control: listed	43849			the repository's own count, index/ledger
+shopify	ledger	admin-control: listed	43909			the repository's own count, index/ledger
 shopify	ledger	admin-control: stopped-at-confirm	3			the repository's own count, index/ledger
 shopify	ledger	admin-mutation: not-attempted	192			the repository's own count, index/ledger
 shopify	ledger	admin-mutation: observed	422			the repository's own count, index/ledger
 shopify	ledger	admin-mutation: stopped-at-confirm	3			the repository's own count, index/ledger
 shopify	ledger	admin-mutation: visited-not-fired	908			the repository's own count, index/ledger
-shopify	ledger	admin-route: computed-path	3726			the repository's own count, index/ledger
+shopify	ledger	admin-route: computed-path	3724			the repository's own count, index/ledger
 shopify	ledger	admin-route: needs-instance	4747			the repository's own count, index/ledger
 shopify	ledger	admin-route: no-path	280			the repository's own count, index/ledger
 shopify	ledger	admin-route: not-attempted	2774			the repository's own count, index/ledger
 shopify	ledger	admin-route: splat	659			the repository's own count, index/ledger
-shopify	ledger	admin-route: visited	5326			the repository's own count, index/ledger
+shopify	ledger	admin-route: visited	5328			the repository's own count, index/ledger
 shopify	ledger	admin-route: visited-not-rendered	220			the repository's own count, index/ledger
 shopify	ledger	admin-visit-other: visited	3			the repository's own count, index/ledger
-shopify	ledger	journey-unit: journeyed	160			the repository's own count, index/ledger
+shopify	ledger	journey-unit: journeyed	162			the repository's own count, index/ledger
 shopify	ledger	journey-unit: not-attempted	34			the repository's own count, index/ledger
-shopify	ledger	journey-unit: swept	117			the repository's own count, index/ledger
+shopify	ledger	journey-unit: swept	115			the repository's own count, index/ledger
 shopify	ledger	sitemap:apps-shopify-sitemaps: attempted-redirect	125			the repository's own count, index/ledger
 shopify	ledger	sitemap:apps-shopify-sitemaps: attempted-soft-404	2			the repository's own count, index/ledger
 shopify	ledger	sitemap:apps-shopify-sitemaps: captured	3068			the repository's own count, index/ledger
@@ -885,12 +889,12 @@ shopify	ledger	sitemap:shopify-com-sitemap: attempted-no-response	2			the reposi
 shopify	ledger	sitemap:shopify-com-sitemap: attempted-not-found	7			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-com-sitemap: attempted-redirect	15			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-com-sitemap: captured	530			the repository's own count, index/ledger
-shopify	ledger	sitemap:shopify-com-sitemaps: attempted-client-error	1			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-client-error	2			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-com-sitemaps: attempted-no-response	2			the repository's own count, index/ledger
-shopify	ledger	sitemap:shopify-com-sitemaps: attempted-not-found	7			the repository's own count, index/ledger
-shopify	ledger	sitemap:shopify-com-sitemaps: attempted-redirect	148			the repository's own count, index/ledger
-shopify	ledger	sitemap:shopify-com-sitemaps: captured	861			the repository's own count, index/ledger
-shopify	ledger	sitemap:shopify-com-sitemaps: not-attempted	313706			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-not-found	9			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-redirect	175			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: captured	1013			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: not-attempted	313524			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-dev-sitemap: attempted-redirect	3			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-dev-sitemap: captured	8868			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-dev-sitemap-2026-10-31: attempted-redirect	3			the repository's own count, index/ledger
