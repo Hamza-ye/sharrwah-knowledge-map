@@ -124,5 +124,12 @@ From SH-15:
 - **R15.5:** a visit that the ledger joins to a route only because its path pattern matches another route's address is that other route's visit.
 - **R15.6:** the fulfilment request routes take CM-SHP-011 beside CM-SHP-009 (a reading).
 
-The next batches number their rules R16.1 and on, by batch.
+From SH-16:
+- **R16.1:** a redirect that lands on its target filtered to one provider's records takes `shows` on the target's capability. It takes a second `shows` line where its own words name that provider's thing and a cell holds those records as that thing's.
+- **R16.2:** an index route whose component is `render-common.js`'s `NotFound$1`, with no title, path, gate or resource, is `out`.
+- **R16.3:** a container with a `redirect` key is `core` on its path's capability where its `eligibilityMatch` alternative brings a loader and a component, and its visits stayed at its address.
+- **R16.4:** a pathless wrapper whose id names only its role in the code (`payments:orphans`) is `out` where it sits over several capabilities' routes.
+- **R16.5:** the Payments profile-assessment and identity-verification routes are CM-PAY-003, the payment service's KYC and underwriting, beside CM-TRU-002.
+
+The next batches number their rules R17.1 and on, by batch.
 

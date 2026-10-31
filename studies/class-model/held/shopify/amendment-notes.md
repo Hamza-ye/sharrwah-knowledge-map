@@ -15,6 +15,7 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 - **SH-S-5027 and SH-S-5028:** the anchor's `extension-point` on Agentic's routes, against the ruling after SH-2, an admin section the platform calls part of its admin being `core`. Read them with the Knowledge Base:
   - the app (SH-E-3777b8ea, `shows` with no maker held);
   - the changelog's 'Knowledge base is now built into your Shopify admin' (the check after SH-61).
+- **SH-S-5250:** `worldfirst-setup` `shows` on CM-PAY-002. Its siblings under the Payments profile assessment stand on CM-PAY-003, the service's KYC (the check after SH-16).
 - **SH-S-2757:** CM-POS-001's `own-service`, which rests on the POS app's listing. The POS is the plans' own channel, `core`, by the ruling after SH-55 (the check after SH-95).
 - **Others named in the checks:**
   - CM-RET-004's reading;
