@@ -1909,7 +1909,7 @@ These rulings were made after the two drafts were joined. The architecture plan'
 
 #### Two capabilities that may be one are read by the terms they share
 - **Decides:** a pair the merge flags as possibly one capability is read in full where the two share five or more terms, one was made since 30 October, or it was flagged then; a tenth of the rest is read.
-- **Why:** the held pass grew those flags from about 175 to 1,038, most of them pairs that share a word or two.
+- **Why:** with the held pass, the merge's flags grew from 175 to 3,467, and 1,038 of them are pairs that may be one capability, most sharing a word or two (a reading).
 - **Risks:** a real duplicate that shares few terms is read only if the tenth draws it.
 - **Instead:** read all 1,038, about 900 items more.
 - **Weight:** medium: a duplicate doubles a count, but few pairs sharing a word or two are one thing (a reading).
