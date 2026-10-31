@@ -380,3 +380,33 @@ No higher plan is needed so far: no agent has been stopped by the usage limit.
 - **A large structure's batches side by side:** once its first batch is checked, its other batches run in parallel, each keeping to the first batch's rules, and the coordinator aligns them at its checks. This saves hours, not tokens.
 
 No agent has been stopped by the usage limit.
+
+**Re-measured at about 04:05 UTC, by structure** (`method/count_tokens.py --since 2026-10-31T02:45`, and each checked batch's transcript).
+- **Spent since 02:45:** 282 million tokens: the coordinator 53 million over 113 requests, the agents the rest.
+- **Each large structure's first batches cost more than the projection's 90,000 to 140,000 an entry.** A structure's first batch writes the rules its later batches keep to, and its entries hold more:
+
+| Structure | Entries left | Checked batches | Tokens an entry |
+| --- | --- | --- | --- |
+| Shopify `merchant-changelog` | 1,516 | SH-34 | about 219,000 |
+| Shopify `editions-page-data` | 1,478 | SH-50 | about 250,000 |
+| Shopify `admin-router` | 844 | SH-8, SH-9 | about 176,000 |
+| Salla `settings-center` | 470 | SA-48 to SA-50 | 455,000, 526,000, then 248,000 with the narrowed prompt |
+| Shopify's other 6,320 entries (pricing, permissions, plans, the mobile app, help notes and the rest) | 6,320 | none yet | not measured |
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 04:05 UTC: about 2,360 at 02:45 and 282 since | about 2,640 |
+| The measured structures' 4,308 entries, at their rates, the settings centre at about 230,000 | 850 to 1,060 |
+| The other 6,320 entries, at 120,000 to 200,000 | 760 to 1,260 |
+| The coordinator's checks, about a fifth of the agents' (19 percent since 02:45) | 330 to 460 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.0 to 6.0 billion** |
+
+**Re-planned to cost less, since 02:45:**
+- **Every prompt narrows what its agent reads.** Each entry already carries what its source states, so a section's body or a run page is read only for an entry whose text leaves its capability, support or scope open. Lookups are made together, and context is kept under about 250,000 tokens. On the settings centre this halved the cost, from 526,000 an entry to 248,000.
+- **The build renders what governs a settings entry,** its gates included (`nodes:section`, `if:`).
+- **`earlier` reads more formats:** a portal's `to:` and keys, the en and ar words, headings and whole route ids.
+- **The router's ancestors' gates are added by script** (`method/held_router_gates.py`), not looked up by each agent.
+- **The coordinator checks with fewer requests:** the checker's lines, the batch's open cases and a measure, with a sample against the sources only where a cell changes.
+
+No agent has been stopped by the usage limit.
