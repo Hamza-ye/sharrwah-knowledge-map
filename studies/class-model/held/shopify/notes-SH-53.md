@@ -10,7 +10,7 @@
   - App development (14 cards, entries 62 to 75);
   - The Shop channel (products 1 to 7, entries 76 to 82).
 
-A card listed in Featured and in a collection under the same handle is one entry (`merge:handle`), with both sections in `within`. So the collections' platform-conversion, shopify-bundles-app, flexible-sections, shop-store-updates and shopify-subscriptions-app are entries 3, 7, 11, 12 and 15. Featured's shopify-credit (entry 4) and admin-quality-improvements (entry 13) are also Manage your money's and Everyday operations' cards, which SH-54's range holds. SH-54 begins with Full-stack marketing (`displayCollections/5`).
+A card listed in Featured and in a collection under the same handle is one entry (`merge:handle`), with both sections in `within`. So the collections' platform-conversion, shopify-bundles-app, flexible-sections, shop-store-updates and shopify-subscriptions-app are entries 3, 7, 11, 12 and 15. Featured's shopify-credit (entry 4) and admin-quality-improvements (entry 13) are also Manage your money's and Everyday operations' cards, which later batches hold. The next batch begins with Full-stack marketing (`displayCollections/5`).
 
 **Count.** 158 lines: 153 on a capability, 5 `new`.
 - Every entry is placed; none is `out`.
@@ -27,7 +27,7 @@ Summer '23 puts case studies among its features: 'Stellar Eats increases convers
 - I placed each `shows` on the feature's capability: a topic and a claim (rule 4's titles; E3's 'a topic or a claim alone').
 - A pricing term the story states is the line's quality: 'Only paying for new customers', as E9 takes 'Only pay for successful sales'.
 - The merchant isn't a filler. It uses the feature; it doesn't do it.
-- SH-54's range holds four more (Laurie Ellen, Drake Related, Element Brooklyn, Snarky Tea).
+- The later batches hold four more (Laurie Ellen, Drake Related, Element Brooklyn, Snarky Tea).
 
 ### E20. A stat card that says what its number is about
 
@@ -88,7 +88,7 @@ Shopify's Editions are in English only: no Arabic name is held.
 | New thing | Entries | Place of its own | Proposed domain, area, parent | Terms searched (`caps --terms`) | Leads read |
 | --- | --- | --- | --- | --- | --- |
 | Commerce Components by Shopify (SH-51's) | SH-E-5105ac99, Winter '23's Product list heading, which names SH-51's item SH-E-acf42aeb by its words (its collection holds four items and one heading, so E18 maps it by heading, as SH-52 did); SH-E-6970c2c4, by its `productType` (E23) | As SH-51: none held | As SH-51 | As SH-51 | The checker's leads CM-ACC-002, CM-B2B-003, CM-AIA-005 (by name: 'commerce', 'product'): none |
-| Quick order lists | SH-E-e06df061: 'Show customers a list of product variants, so they can easily order sizes, colors, and more, all from one section of your product pages', its help link a theme section (`store-contextualization#add-the-quick-order-list-section-to-your-product-page`) | None held: a section of the theme on one help page, with no admin route, API group, plan line or app category. So `shows` | D, B2B, under CM-B2B-001, beside CM-B2B-005 | quick order; quick order list; order form; bulk order; variant list; order list | CM-B2B-005 (a buyer's saved lists to order again: not this); CM-CAT-002 (variants: what the list shows); CM-INV-009 (a false match); the checker's CM-PAY-013, CM-PLN-001, CM-PAY-015, CM-CHK-009 (by name): none. SH-54's B2B selling holds its own card, 'Quick order lists' (`b2b-quick-order-lists`): name it the same |
+| Quick order lists | SH-E-e06df061: 'Show customers a list of product variants, so they can easily order sizes, colors, and more, all from one section of your product pages', its help link a theme section (`store-contextualization#add-the-quick-order-list-section-to-your-product-page`) | None held: a section of the theme on one help page, with no admin route, API group, plan line or app category. So `shows` | D, B2B, under CM-B2B-001, beside CM-B2B-005 | quick order; quick order list; order form; bulk order; variant list; order list | CM-B2B-005 (a buyer's saved lists to order again: not this); CM-CAT-002 (variants: what the list shows); CM-INV-009 (a false match); the checker's CM-PAY-013, CM-PLN-001, CM-PAY-015, CM-CHK-009 (by name): none. B2B selling, in a later batch, holds its own card 'Quick order lists' (`b2b-quick-order-lists`): name it the same |
 | Staff sales attribution (SH-50's) | SH-E-500cc746: 'Easily attribute a sale to a staff member then edit that attribution after an order is completed.' | As SH-50: none held | As SH-50 | sales attribution (CM-MKT-008, crediting orders to marketing: a homonym) | The checker's CM-PAY-021, CM-POS-001, CM-TAX-009, CM-TRU-008, CM-ORD-010: none |
 | App versions | SH-E-9e317cee: 'App versioning and unified deployment', 'With app versions, you can now deploy your extensions together in a single package through the CLI' | None held: a shopify.dev guide; the Partner Dashboard's versions page isn't held. So `shows` | F, APP, under CM-APP-001, or beside CM-DVT-002 | app version; deployment; app configuration | CM-API-006 (the platform's API versions: a homonym); the checker's CM-APP-009, CM-APP-011, CM-DVT-001, CM-PAY-003 (by name): none. The CLI part takes CM-DVT-002 `core` |
 
@@ -130,7 +130,7 @@ Each was read again against its entry. Line numbers are the placements file's.
 
 ## Structures whose items and sources disagree, or leave things out
 
-- **Featured repeats collection cards under handles of its own** (`-featured`), and those are separate entries: SH-E-07f9f89e and SH-E-07fdefcc (Shopify Magic), SH-E-9aadaf11 and SH-E-5b24cf1e (Sidekick), and SH-E-f439781a and SH-E-76ec33a4 (Marketplace Connect). Featured's SH-E-bc95abcf (Collective) and SH-E-e06df061 (B2B) repeat cards in SH-54's range (`shopify-collective`, and B2B selling's volume pricing, quick order lists, PayPal and vaulted cards). Each is placed by its own words, and the pairs in this batch take the same lines. Nothing is lost.
+- **Featured repeats collection cards under handles of its own** (`-featured`), and those are separate entries: SH-E-07f9f89e and SH-E-07fdefcc (Shopify Magic), SH-E-9aadaf11 and SH-E-5b24cf1e (Sidekick), and SH-E-f439781a and SH-E-76ec33a4 (Marketplace Connect). Featured's SH-E-bc95abcf (Collective) and SH-E-e06df061 (B2B) repeat cards that later batches hold (`shopify-collective`, and B2B selling's volume pricing, quick order lists, PayPal and vaulted cards). Each is placed by its own words, and the pairs in this batch take the same lines. Nothing is lost.
 - **The rendered page holds 2 of Summer '23's 143 dialog descriptions** (the register). The dialog text is the page data's only, and it governs (E25).
 - **No other disagreement found.** The items match the page data at each locator.
 
@@ -167,3 +167,21 @@ Each was read again against its entry. Line numbers are the placements file's.
 ## Where B-extent and the brief differ
 
 None I relied on. E24 is a reading within B-extent's convention on the platform's own API.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The cell changes stand, but the themes'.** Each was read again:
+  - **CM-SEL-006, CM-SFR-013 and CM-MKT-023:** `own-service`, from 'our new, free bundles app' and Search & Discovery's 'We’ve also made it easier…' (the ruling after SH-53).
+  - **CM-AIA-005 and CM-CUS-007:** `own-service`, for Shop's things. Klaviyo is the lead capture's filler.
+  - **CM-MKS-003:** `own-service`, from 'Our Merchant of Record capability', beside the cell's Global-e `outside`. Both are what the sources say.
+  - **CM-OPS-005, CM-CUS-009 and CM-API-001:** gain `extension-point`.
+  - **CM-ORD-008:** `core`.
+  - **The four repeats** of SH-50's and SH-51's changes stand as they did.
+- **Corrected:** 'Our free themes' and their announcement bar are `core` on CM-SFR-001 and CM-SFR-007, not `own-service`. The ruling after SH-53 overturns E21. Four lines are changed.
+- **The other new rules stand for SH-54 to SH-67:** E19, E20, E22 (POS the platform's own client, its devices `own-service`), E23, E24 and E25.
+- **New things:**
+  - Commerce Components by Shopify, again;
+  - Quick order lists. A later card's `b2b-quick-order-lists` takes the same name;
+  - Staff sales attribution, again;
+  - App versions.
+- **Cost:** 12.8 million tokens over 59 requests, about 156,000 an entry.
