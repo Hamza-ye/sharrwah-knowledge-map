@@ -1216,11 +1216,18 @@ EARLIER_GENERIC = {"value", "values", "type", "enabled", "status", "true", "fals
 def earlier_keys(text):
     keys = []
     for m in EARLIER_PATH.finditer(text):
-        if len(m.group(1)) > 1:
-            keys.append(("path", m.group(1).rstrip("/") or "/"))
+        v = m.group(1).split("?")[0]
+        if len(v) > 1:
+            keys.append(("path", v.rstrip("/") or "/"))
+        # a store's admin link (/store/<handle>/orders) is the router's route 'at orders' (SH-2)
+        a = re.match(r"/store/[^/]+/(.+)$", v)
+        if a and a.group(1).strip("/"):
+            keys.append(("admin", a.group(1).strip("/")))
     # a control's own field name (value, type, enabled) names nothing of the entry's (SA-49)
+    # and an ARIA name that is one capitalized word (Search, Recommended) is a label, which says too little (SH-2)
     keys += [("name", m.group(1) or m.group(2)) for m in EARLIER_NAME.finditer(text)
-             if not (m.group(1) or m.group(2)).isdigit() and (m.group(1) or m.group(2)).lower() not in EARLIER_GENERIC]
+             if not (m.group(1) or m.group(2)).isdigit() and (m.group(1) or m.group(2)).lower() not in EARLIER_GENERIC
+             and not (m.group(1) and re.fullmatch(r"[A-Z][a-z]+", m.group(1)) and "name:" in m.group(0))]
     keys += [("key", m.group(1)) for m in EARLIER_KEY.finditer(text)]
     # a one-word label (Orders, الطلبات) is cited for too many things to say anything; its address does
     keys += [("label", m.group(1).strip()) for m in EARLIER_LABEL.finditer(text) if len(m.group(1).split()) >= 2]
@@ -1237,6 +1244,8 @@ def earlier_pattern(kind, v):
         return re.compile(re.escape(v) + r"(?![\w/-])")
     if kind == "label":
         return re.compile(r"['‘“]" + re.escape(v) + r"(?:['’”]| \(| /)|;" + re.escape(v) + ";")
+    if kind == "admin":
+        return re.compile(r"(?<![\w-])at " + re.escape(v) + r"(?![\w/:*-])")
     # a route's id whole: balance:root is never matched inside balance:root:statements (SH-8)
     return re.compile(r"(?<![\w.:-])" + re.escape(v) + r"(?![\w:-])")
 
