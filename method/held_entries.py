@@ -67,6 +67,7 @@
 #   python3 -I method/held_entries.py batches [--size N]            cuts the entries no batch holds into batches
 #   python3 -I method/held_entries.py show --platform P (--batch B | --structure S) [--from I] [--to J] [--width W] [--meta]
 #                                                [--candidates]   each entry's leads, by identifier or by term: leads only
+#   python3 -I method/held_entries.py makers --platform P NAME ...   the held entries naming NAME with a maker's cue
 #   python3 -I method/held_entries.py check --platform P --batch B  checks held/<platform>/placements-<B>.tsv
 import argparse, math, collections, csv, glob, hashlib, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -1329,6 +1330,42 @@ def cmd_earlier(a):
             print(f"{head}  (no earlier line cites {', '.join(v for _, v in keys) or 'a key of it'})")
 
 
+MAKER_CUE = (r"\bwe['’](?:ve|re|ll)\b|\bwe (?:have|are|built|made|launched|released|introduced|upgraded|updated|improved|"
+             r"added|shipped|rolled)\b|\bour\b|\bfirst-party\b")
+
+
+def cmd_makers(a):
+    """The platform's held entries whose own words may name it as the maker of a thing (the ruling after SH-37): each
+    entry that holds the name in one sentence with a maker's cue ('we’ve', 'our', 'first-party', 'from <brand>',
+    'by <brand>', a company of its group), with that sentence and the lines its batch gave the entry. A batch finds an
+    app's maker statement in one call (SH-55). A cue is a lead: 'our APIs' beside an app's name doesn't make the app."""
+    cue = re.compile(MAKER_CUE + rf"|\b(?:from|by) (?:{BRAND[a.platform]})\b"
+                     + "".join("|" + re.escape(g) for g in GROUP.get(a.platform, [])), re.I)
+    placed = collections.defaultdict(list)
+    for path in sorted(glob.glob(os.path.join(HELD, a.platform, "placements-*.tsv"))):
+        b = os.path.basename(path)[len("placements-"):-len(".tsv")]
+        for n, r in enumerate(rows(path), 2):
+            for x in (r.get("entry_id") or "").split(";"):
+                placed[x.strip()].append(f"{r.get('cap_id') or r.get('placement', '')} {r.get('supports', '')} ({b}:{n})")
+    es = entries(a.platform)
+    for name in a.names:
+        nm = re.compile(r"(?<!\w)" + re.escape(name) + r"(?!\w)", re.I)
+        hits = []
+        for e in es:
+            if not nm.search(e["text"]):
+                continue
+            # the entry's sentences, and its fields
+            for part in re.split(r"(?<=[.!?])\s+|\s*;\s*(?=[\w.*]+: )", e["text"]):
+                if nm.search(part) and cue.search(part):
+                    hits.append((e, part.strip()))
+                    break
+        print(f"{name}: {len(hits)} entr{'y' if len(hits) == 1 else 'ies'} name it in a sentence with a maker's cue")
+        for e, part in hits[:a.limit]:
+            print(f"   {e['entry_id']} [{e['structure']}] {clip(part, 260)}")
+            if placed.get(e["entry_id"]):
+                print(f"      lines: {'; '.join(placed[e['entry_id']][:4])}")
+
+
 PARTNER = re.compile(r"collaborator|partner-api|app-install|stores-access-requests|portal-app-scopes", re.I)
 # The companies of each platform's group, as its CM-ACC-002 cell names them: a group company is never a filler, and a
 # line that names one as a third party is read again (the dry run's review, R1).
@@ -1699,6 +1736,10 @@ def main():
     s.add_argument("--from", type=int); s.add_argument("--to", type=int)
     s.add_argument("--groups", type=int, default=3, help="at most this many capability-and-support groups a key")
     s.set_defaults(f=cmd_earlier)
+    s = sub.add_parser("makers", help="the held entries that name a thing in one sentence with a maker's cue ('we’ve', 'our', 'from Shopify')")
+    s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("names", nargs="+")
+    s.add_argument("--limit", type=int, default=8)
+    s.set_defaults(f=cmd_makers)
     s = sub.add_parser("cells", help="each named capability's cell on the platform, compact")
     s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("cap_ids", nargs="+")
     s.add_argument("--width", type=int, default=500); s.add_argument("--rows", type=int, default=12)
