@@ -143,9 +143,18 @@ def main():
         write(os.path.join(d, "evidence.tsv"), eh, ev)
         write(os.path.join(d, "cells.tsv"), ch, cl)
         for fname, key in (("slot-fillers.tsv", "fillers"), ("qualities.tsv", "qualities")):
-            fh_, fr = table(os.path.join(d, fname))
-            fr += [x for k, _ in ks for x in extra[k][key]]
-            write(os.path.join(d, fname), fh_, fr)
+            add = [x for k, _ in ks for x in extra[k][key]]
+            path = os.path.join(d, fname)
+            if not os.path.exists(path):
+                # a back-fill part may leave the file out (check_class_part.py's BACKFILL_FILES); it is made, with the
+                # anchor's header, only where the part's cells now hold a filler or a quality
+                if not add:
+                    continue
+                fh_, fr = table(os.path.join(PARTS, part.split("-")[0] + "-anchor", fname))[0], []
+            else:
+                fh_, fr = table(path)
+            fr += add
+            write(path, fh_, fr)
         print(f"wrote {part}: check it with python3 -I method/check_class_part.py {part}")
 
 

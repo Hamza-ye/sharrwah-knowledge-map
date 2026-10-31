@@ -1,7 +1,7 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-APP-013	bigcommerce	none-held					
 CM-APP-013	salla	none-held					
-CM-APP-013	shopify	none-held					
+CM-APP-013	shopify	statements	core	dev-dashboard-nav | dev-nav | editions-page-data | partners-dashboard-routes | shopify-cli-commands	SH-E-e6c93b43=development store		general
 CM-APP-013	woocommerce	none-held					
 CM-APP-013	zid	none-held					
 CM-PTN-011	bigcommerce	none-held					

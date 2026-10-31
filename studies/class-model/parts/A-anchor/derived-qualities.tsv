@@ -17,3 +17,1594 @@ CM-TRU-014	shopify	data location for new merchants in Europe	New merchants in Eu
 CM-TRU-016	shopify	retention of store information after closure	If you are a merchant operating a Shopify-powered store, and you close the store, stop paying your subscription fees, or we terminate your account, we retain store information for two years before we begin the deletion process.	SH-C-183/decides/SH-S-0182	
 CM-TRU-016	shopify	deletion of personal information after termination (EU merchants)	Within 90 days of termination all personal information within your Store is deleted except as legally required.	SH-C-183/decides/SH-S-0209	EU merchants (Supplementary Terms of Service for E.U. Merchants)
 CM-TRU-018	shopify	PCI DSS certification	Yes. Shopify is certified Level 1 PCI DSS compliant, and stores powered by Shopify are PCI compliant by default, which helps keep payment information secure.	SH-C-184/decides/SH-S-7202	
+CM-PLN-001	shopify	paid trial	3 months for $1/month	SH-E-1ba14c9c	ibx5bt-xy@2026-09-30;ibx5bt-xy@2026-10-01-trial
+CM-PLN-001	shopify	paid trial	Subscribe for $1	SH-E-71d2ecf6	ibx5bt-xy@home
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-001	shopify	trialLength	3	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	trialLength	3	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	free trial	فترة تجريبية مجانية لمدة 3 من الأيام	SH-E-39133966	www.shopify.com/ae-ar
+CM-PLN-001	shopify	then	ادفع ‏1 US$/شهر لمدة 3 من الأشهر	SH-E-39133966	www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly price	‏32 US$	SH-E-841a9ed6	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	price per month paid yearly	‏29 US$	SH-E-841a9ed6	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	promotion	‏1 US$/شهر لمدة 3 من الأشهر	SH-E-841a9ed6	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly price	‏92 US$	SH-E-55720550	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	price per month paid yearly	‏83 US$	SH-E-55720550	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	promotion	‏1 US$/شهر لمدة 3 من الأشهر	SH-E-55720550	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly price	‏399 US$	SH-E-8fc1233f	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	price per month paid yearly	‏359 US$	SH-E-8fc1233f	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	promotion	‏1 US$/شهر لمدة 3 من الأشهر	SH-E-8fc1233f	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly price	ابتداءً من ‏2,300 US$/شهر	SH-E-2b2ed318	Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	price per month paid yearly	‏2,300 US$	SH-E-2b2ed318	Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	Agentic price	‏0 US$/شهر	SH-E-2465bc51	Agentic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly price	$ 32 USD/شهريًا (Basic), $ 92 USD/شهريًا (Grow), $ 399 USD/شهريًا (Advanced), يبدأ من $ 2,300 USD/شهريًا (Plus)	SH-E-08b0b3a7	Basic;Grow;Advanced;Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	price per month paid yearly	$ 29 USD/شهريًا (Basic), $ 83 USD/شهريًا (Grow), $ 359 USD/شهريًا (Advanced)	SH-E-7ef29b26	Basic;Grow;Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	free trial	لمدة 3 من الأيام	SH-E-f10e3187	www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid trial	من ‏1 US$ فقط شهريًا لأول 3 من الأشهر	SH-E-f10e3187	www.shopify.com/ae-ar
+CM-PLN-001	shopify	setup fees	لا توجد رسوم إعداد لأي من باقاتنا	SH-E-89cbda90	
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	trialLength	3	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	32 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	348 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	29 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly_price	92 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	996 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	83 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	4308 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	359 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-001	shopify	start	مجانًا	SH-E-6215e428	
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-001	shopify	trialLength	3	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-001	shopify	trialLength	3	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-001	shopify	free trial	3 days free	SH-E-f44f3d56	www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com/ph;www.shopify.com;www.shopify.com/sg
+CM-PLN-001	shopify	then	$1/month for 3 months	SH-E-f44f3d56	www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com/ph;www.shopify.com;www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	$32	SH-E-a7f5c34f	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	price per month paid yearly	$29	SH-E-a7f5c34f	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-a7f5c34f	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	monthly price	$92	SH-E-23fc01de	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	price per month paid yearly	$83	SH-E-23fc01de	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-23fc01de	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	monthly price	$399	SH-E-5e019eb6	Advanced;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-001	shopify	price per month paid yearly	$359	SH-E-5e019eb6	Advanced;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-5e019eb6	Advanced;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-001	shopify	monthly price	from $2,300/mo	SH-E-766fa0d5	Plus;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-001	shopify	price per month paid yearly	$2,300	SH-E-766fa0d5	Plus;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-001	shopify	Agentic price	$0/mo	SH-E-ebb0a3a5	Agentic;www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com
+CM-PLN-001	shopify	monthly price	$32 USD/mo (Basic), $92 USD/mo (Grow), $399 USD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-c51caab5	Basic;Grow;Advanced;Plus;www.shopify.com/ae
+CM-PLN-001	shopify	price per month paid yearly	$29 USD/mo (Basic), $83 USD/mo (Grow), $359 USD/mo (Advanced)	SH-E-3ee1b1f1	Basic;Grow;Advanced;www.shopify.com/ae;www.shopify.com/hk-en
+CM-PLN-001	shopify	free trial	3-day	SH-E-8938c2b8	www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com/ph;www.shopify.com;www.shopify.com/sg
+CM-PLN-001	shopify	paid trial	$1 per month for the first 3 months	SH-E-8938c2b8	www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com/ph;www.shopify.com;www.shopify.com/sg
+CM-PLN-001	shopify	setup fees	no setup fees on any of our plans	SH-E-43d4ee5d	
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-001	shopify	trialLength	3	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	32 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	288 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	24 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	92 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	828 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	69 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	3588 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	299 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-001	shopify	start	free, no credit card required	SH-E-796a2b89	
+CM-PLN-001	shopify	basicAnnualPrice	$42.00	SH-E-544b2337	www.shopify.com/au
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (AUD)	SH-E-544b2337	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-544b2337	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-544b2337	www.shopify.com/au
+CM-PLN-001	shopify	trialLength	3	SH-E-544b2337	www.shopify.com/au
+CM-PLN-001	shopify	basicAnnualPrice	$42.00	SH-E-0b545754	www.shopify.com/au
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (AUD)	SH-E-0b545754	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-0b545754	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-0b545754	www.shopify.com/au
+CM-PLN-001	shopify	trialLength	3	SH-E-0b545754	www.shopify.com/au
+CM-PLN-001	shopify	monthly price	$56	SH-E-35ecba50	Basic;www.shopify.com/au
+CM-PLN-001	shopify	price per month paid yearly	$42	SH-E-35ecba50	Basic;www.shopify.com/au
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-35ecba50	Basic;www.shopify.com/au
+CM-PLN-001	shopify	monthly price	$149	SH-E-618a7f6d	Grow;www.shopify.com/au
+CM-PLN-001	shopify	price per month paid yearly	$114	SH-E-618a7f6d	Grow;www.shopify.com/au
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-618a7f6d	Grow;www.shopify.com/au
+CM-PLN-001	shopify	monthly price	$575	SH-E-1349610e	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	price per month paid yearly	$431	SH-E-1349610e	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-1349610e	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	monthly price	from $3,700/mo	SH-E-7785b427	Plus;www.shopify.com/au
+CM-PLN-001	shopify	price per month paid yearly	$3,700	SH-E-7785b427	Plus;www.shopify.com/au
+CM-PLN-001	shopify	monthly price	$56 AUD/mo (Basic), $149 AUD/mo (Grow), $575 AUD/mo (Advanced), Starts at $3,700 AUD/mo (Plus)	SH-E-a66b766d	Basic;Grow;Advanced;Plus;www.shopify.com/au
+CM-PLN-001	shopify	price per month paid yearly	$42 AUD/mo (Basic), $114 AUD/mo (Grow), $431 AUD/mo (Advanced)	SH-E-b678f568	Basic;Grow;Advanced;www.shopify.com/au
+CM-PLN-001	shopify	basicAnnualPrice	$42.00	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (AUD)	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-001	shopify	trialLength	3	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	56 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	600 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	50 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-001	shopify	paid_trial	1.0 AUD, length 3	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	149 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	1608 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	134 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-001	shopify	paid_trial	1.0 AUD, length 3	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	575 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	6228 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	519 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	paid_trial	1.0 AUD, length 3	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	4000 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	48000 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	4000 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	7 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	84 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	7 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-001	shopify	paid_trial	1.0 AUD, length 3	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-001	shopify	monthly_price	129 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-001	shopify	annual_price	1344 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-001	shopify	annual_monthly_price	112 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-001	shopify	paid_trial	1.0 AUD, length 3	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-001	shopify	basicAnnualPrice	$38.00	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (CAD)	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-001	shopify	trialLength	3	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-001	shopify	basicAnnualPrice	$38.00	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (CAD)	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-001	shopify	trialLength	3	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-001	shopify	monthly price	$49	SH-E-ab48ab1b	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	price per month paid yearly	$44	SH-E-ab48ab1b	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-ab48ab1b	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	monthly price	$132	SH-E-36a6679a	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	price per month paid yearly	$120	SH-E-36a6679a	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-36a6679a	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	monthly price	$517	SH-E-23a84426	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	price per month paid yearly	$465	SH-E-23a84426	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-23a84426	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	monthly price	from $3,400/mo	SH-E-662b9c92	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	price per month paid yearly	$3,400	SH-E-662b9c92	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	promotion	$517 for your first month	SH-E-662b9c92	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	monthly price	$49 CAD/mo (Basic), $132 CAD/mo (Grow), $517 CAD/mo (Advanced), Starts at $3,400 CAD/mo (Plus)	SH-E-4680db1b	Basic;Grow;Advanced;Plus;www.shopify.com/ca
+CM-PLN-001	shopify	price per month paid yearly	$44 CAD/mo (Basic), $120 CAD/mo (Grow), $465 CAD/mo (Advanced)	SH-E-75ad1e2e	Basic;Grow;Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	basicAnnualPrice	$38.00	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (CAD)	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-001	shopify	trialLength	3	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	49 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	441 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	37 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	1.0 CAD, length 3	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	132 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	1188 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	99 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	1.0 CAD, length 3	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	517 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	4668 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	389 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	1.0 CAD, length 3	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	3650 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	43800 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	3650 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	517.00 CAD, length 1	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	7 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	84 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	7 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	1.0 CAD, length 3	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-001	shopify	monthly_price	119 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-001	shopify	annual_price	1260 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-001	shopify	annual_monthly_price	105 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-001	shopify	paid_trial	1.0 CAD, length 3	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-001	shopify	free trial	فترة تجريبية مجانية لمدة 3 من الأيام	SH-E-6cb1f923	www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	then	ادفع ‏١ US$/شهر لمدة 3 من الأشهر	SH-E-6cb1f923	www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly price	‏٢٧ US$	SH-E-47495c61	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	price per month paid yearly	‏٢٤ US$	SH-E-47495c61	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	promotion	‏١ US$/شهر لمدة 3 من الأشهر	SH-E-47495c61	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly price	‏٧٢ US$	SH-E-b15494e8	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	price per month paid yearly	‏٦٥ US$	SH-E-b15494e8	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	promotion	‏١ US$/شهر لمدة 3 من الأشهر	SH-E-b15494e8	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly price	‏٣٩٩ US$	SH-E-b8fb181c	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	price per month paid yearly	‏٣٥٩ US$	SH-E-b8fb181c	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	promotion	‏١ US$/شهر لمدة 3 من الأشهر	SH-E-b8fb181c	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly price	ابتداءً من ‏٢٬٣٠٠ US$/شهر	SH-E-2c66b2a8	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	price per month paid yearly	‏٢٬٣٠٠ US$	SH-E-2c66b2a8	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly price	$ 27 USD/شهريًا (Basic), $ 72 USD/شهريًا (Grow), $ 399 USD/شهريًا (Advanced), يبدأ من $ 2,300 USD/شهريًا (Plus)	SH-E-44c7bd0f	Basic;Grow;Advanced;Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	price per month paid yearly	$ 24 USD/شهريًا (Basic), $ 65 USD/شهريًا (Grow), $ 359 USD/شهريًا (Advanced)	SH-E-f50e21b2	Basic;Grow;Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	free trial	لمدة 3 من الأيام	SH-E-544e28ff	www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid trial	من ‏١ US$ فقط شهريًا لأول 3 من الأشهر	SH-E-544e28ff	www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	27 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	288 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	24 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	72 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	780 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	65 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	4308 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	359 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-001	shopify	basicAnnualPrice	$25.00 USD	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (美元)	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-001	shopify	trialLength	3	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-001	shopify	basicAnnualPrice	$25.00 USD	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (美元)	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-001	shopify	trialLength	3	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-001	shopify	free trial	3 days free	SH-E-011c1e3b	www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	then	US$1/month for 3 months	SH-E-011c1e3b	www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly price	US$33	SH-E-2e09f6d8	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	price per month paid yearly	US$29	SH-E-2e09f6d8	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-2e09f6d8	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly price	US$92	SH-E-4df677d2	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	price per month paid yearly	US$83	SH-E-4df677d2	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-4df677d2	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly price	US$399	SH-E-f8ccc605	Advanced;www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	price per month paid yearly	US$359	SH-E-f8ccc605	Advanced;www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-f8ccc605	Advanced;www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly price	from US$2,300/mo	SH-E-1496d20e	Plus;www.shopify.com/hk-en;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk
+CM-PLN-001	shopify	price per month paid yearly	US$2,300	SH-E-1496d20e	Plus;www.shopify.com/hk-en;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk
+CM-PLN-001	shopify	Agentic price	US$0/mo	SH-E-3c92f9c7	Agentic;www.shopify.com/hk-en;www.shopify.com/nz
+CM-PLN-001	shopify	monthly price	$33 USD/mo (Basic), $92 USD/mo (Grow), $399 USD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-93011474	Basic;Grow;Advanced;Plus;www.shopify.com/hk-en
+CM-PLN-001	shopify	free trial	3-day	SH-E-e40c0270	www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid trial	US$1 per month for the first 3 months	SH-E-e40c0270	www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	basicAnnualPrice	$25.00 USD	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (美元)	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-001	shopify	trialLength	3	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	33 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	348 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	29 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	92 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	996 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	83 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	4308 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	359 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-14535eed	www.shopify.com/id
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-14535eed	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-14535eed	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-14535eed	www.shopify.com/id
+CM-PLN-001	shopify	trialLength	3	SH-E-14535eed	www.shopify.com/id
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-48566056	www.shopify.com/id
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-48566056	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-48566056	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-48566056	www.shopify.com/id
+CM-PLN-001	shopify	trialLength	3	SH-E-48566056	www.shopify.com/id
+CM-PLN-001	shopify	monthly price	US$25	SH-E-74c114a7	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	price per month paid yearly	US$22	SH-E-74c114a7	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-74c114a7	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly price	US$65	SH-E-f635aa27	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	price per month paid yearly	US$58	SH-E-f635aa27	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-f635aa27	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly price	from US$2.300/mo	SH-E-dc853f2e	Plus;www.shopify.com/id
+CM-PLN-001	shopify	price per month paid yearly	US$2.300	SH-E-dc853f2e	Plus;www.shopify.com/id
+CM-PLN-001	shopify	monthly price	$25 USD/mo (Basic), $65 USD/mo (Grow), $399 USD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-3e9b73f3	Basic;Grow;Advanced;Plus;www.shopify.com/id;www.shopify.com/my;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	price per month paid yearly	$22 USD/mo (Basic), $58 USD/mo (Grow), $359 USD/mo (Advanced)	SH-E-b98baaed	Basic;Grow;Advanced;www.shopify.com/id;www.shopify.com/my;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-001	shopify	trialLength	3	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-001	shopify	monthly_price	25 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	264 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	22 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly_price	65 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	696 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	58 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	4308 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	359 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-001	shopify	basicAnnualPrice	€24.00	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-001	shopify	minimumMonthlyPrice	€5	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialAmount	€1	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-001	shopify	trialLength	3	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-001	shopify	basicAnnualPrice	€24.00	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-001	shopify	minimumMonthlyPrice	€5	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialAmount	€1	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-001	shopify	trialLength	3	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-001	shopify	free trial	3 days free	SH-E-9d4e29ae	www.shopify.com/ie
+CM-PLN-001	shopify	then	€1/month for 3 months	SH-E-9d4e29ae	www.shopify.com/ie
+CM-PLN-001	shopify	monthly price	€32	SH-E-26368054	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	price per month paid yearly	€29	SH-E-26368054	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	promotion	€1/month for 3 months	SH-E-26368054	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	monthly price	€92	SH-E-88b43458	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	price per month paid yearly	€83	SH-E-88b43458	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	promotion	€1/month for 3 months	SH-E-88b43458	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	monthly price	€384	SH-E-50e79571	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	price per month paid yearly	€345	SH-E-50e79571	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	promotion	€1/month for 3 months	SH-E-50e79571	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	monthly price	from €2,100/mo	SH-E-8a8fc509	Plus;www.shopify.com/ie
+CM-PLN-001	shopify	price per month paid yearly	€2,100	SH-E-8a8fc509	Plus;www.shopify.com/ie
+CM-PLN-001	shopify	Agentic price	€0/mo	SH-E-8eded84c	Agentic;www.shopify.com/ie
+CM-PLN-001	shopify	monthly price	€32 EUR/mo (Basic), €92 EUR/mo (Grow), €384 EUR/mo (Advanced), Starts at €2,100 EUR/mo (Plus)	SH-E-35d22d03	Basic;Grow;Advanced;Plus;www.shopify.com/ie
+CM-PLN-001	shopify	price per month paid yearly	€29 EUR/mo (Basic), €83 EUR/mo (Grow), €345 EUR/mo (Advanced)	SH-E-eaca3824	Basic;Grow;Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	free trial	3-day	SH-E-21cb2a54	www.shopify.com/ie
+CM-PLN-001	shopify	paid trial	€1 per month for the first 3 months	SH-E-21cb2a54	www.shopify.com/ie
+CM-PLN-001	shopify	basicAnnualPrice	€24.00	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-001	shopify	minimumMonthlyPrice	€5	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialAmount	€1	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-001	shopify	trialLength	3	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	32 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	348 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	29 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	paid_trial	1.0 EUR, length 3	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	92 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	996 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	83 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	paid_trial	1.0 EUR, length 3	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	384 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	4140 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	345 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	paid_trial	1.0 EUR, length 3	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	2250 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	27000 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	2250 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	5 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	60 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	5 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-001	shopify	paid_trial	1.0 EUR, length 3	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-001	shopify	monthly_price	79 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-001	shopify	annual_price	828 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-001	shopify	annual_monthly_price	69 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-001	shopify	paid_trial	1.0 EUR, length 3	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-48b87400	www.shopify.com/il
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-48b87400	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-48b87400	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-48b87400	www.shopify.com/il
+CM-PLN-001	shopify	trialLength	3	SH-E-48b87400	www.shopify.com/il
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-001	shopify	trialLength	3	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-001	shopify	monthly price	US$39	SH-E-54a1b998	Basic;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	price per month paid yearly	US$35	SH-E-54a1b998	Basic;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-54a1b998	Basic;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	monthly price	US$105	SH-E-cef6379e	Grow;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	price per month paid yearly	US$95	SH-E-cef6379e	Grow;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-cef6379e	Grow;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	monthly price	$39 USD/mo (Basic), $105 USD/mo (Grow), $399 USD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-e87eaab7	Basic;Grow;Advanced;Plus;www.shopify.com/il;www.shopify.com/nz;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$35 USD/mo (Basic), $95 USD/mo (Grow), $359 USD/mo (Advanced)	SH-E-962ea2c2	Basic;Grow;Advanced;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-001	shopify	trialLength	3	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-001	shopify	monthly_price	39 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-001	shopify	annual_price	420 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-001	shopify	annual_monthly_price	35 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-001	shopify	monthly_price	105 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-001	shopify	annual_price	1140 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-001	shopify	annual_monthly_price	95 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-001	shopify	basicAnnualPrice	₹1,499.00	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-001	shopify	minimumMonthlyPrice	₹207 (INR)	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialAmount	₹20	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-001	shopify	trialLength	3	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-001	shopify	basicAnnualPrice	₹1,499.00	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-001	shopify	minimumMonthlyPrice	₹207 (INR)	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialAmount	₹20	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-001	shopify	trialLength	3	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-001	shopify	free trial	3 days free	SH-E-8a2f504c	www.shopify.com/in
+CM-PLN-001	shopify	then	₹20/month for 3 months	SH-E-8a2f504c	www.shopify.com/in
+CM-PLN-001	shopify	monthly price	₹1,994	SH-E-5ad5e082	Basic;www.shopify.com/in
+CM-PLN-001	shopify	price per month paid yearly	₹1,800	SH-E-5ad5e082	Basic;www.shopify.com/in
+CM-PLN-001	shopify	promotion	₹20/month for 3 months	SH-E-5ad5e082	Basic;www.shopify.com/in
+CM-PLN-001	shopify	monthly price	₹7,447	SH-E-cf3e44d8	Grow;www.shopify.com/in
+CM-PLN-001	shopify	price per month paid yearly	₹6,700	SH-E-cf3e44d8	Grow;www.shopify.com/in
+CM-PLN-001	shopify	promotion	₹20/month for 3 months	SH-E-cf3e44d8	Grow;www.shopify.com/in
+CM-PLN-001	shopify	monthly price	₹30,164	SH-E-773fd507	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	price per month paid yearly	₹27,100	SH-E-773fd507	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	promotion	₹20/month for 3 months	SH-E-773fd507	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	monthly price	from ₹1,75,000/mo	SH-E-6fc3a55a	Plus;www.shopify.com/in
+CM-PLN-001	shopify	price per month paid yearly	₹1,75,000	SH-E-6fc3a55a	Plus;www.shopify.com/in
+CM-PLN-001	shopify	monthly price	₹1,994 INR/mo (Basic), ₹7,447 INR/mo (Grow), ₹30,164 INR/mo (Advanced), Starts at ₹175,000 INR/mo (Plus)	SH-E-b9d407e1	Basic;Grow;Advanced;Plus;www.shopify.com/in
+CM-PLN-001	shopify	price per month paid yearly	₹1,800 INR/mo (Basic), ₹6,700 INR/mo (Grow), ₹27,100 INR/mo (Advanced)	SH-E-d734f2c0	Basic;Grow;Advanced;www.shopify.com/in
+CM-PLN-001	shopify	free trial	3-day	SH-E-10130a2b	www.shopify.com/in
+CM-PLN-001	shopify	paid trial	₹20 per month for the first 3 months	SH-E-10130a2b	www.shopify.com/in
+CM-PLN-001	shopify	basicAnnualPrice	₹1,499.00	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-001	shopify	minimumMonthlyPrice	₹207 (INR)	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialAmount	₹20	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-001	shopify	trialLength	3	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	1994 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	21600 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	1800 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-001	shopify	paid_trial	20.0 INR, length 3	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	7447 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	80400 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	6700 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-001	shopify	paid_trial	20.0 INR, length 3	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	30164 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	325200 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	27100 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	paid_trial	20.0 INR, length 3	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	190000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	2280000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	190000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	399 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	4788 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	399 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-001	shopify	paid_trial	20.0 INR, length 3	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-001	shopify	monthly_price	7000 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-001	shopify	annual_price	74640 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-001	shopify	annual_monthly_price	6220 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-001	shopify	paid_trial	20.0 INR, length 3	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-2c4e6155	www.shopify.com
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-2c4e6155	www.shopify.com
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-2c4e6155	www.shopify.com
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-2c4e6155	www.shopify.com
+CM-PLN-001	shopify	trialLength	3	SH-E-2c4e6155	www.shopify.com
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-001	shopify	trialLength	3	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-001	shopify	trialLength	3	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-001	shopify	trialLength	3	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-001	shopify	trialLength	3	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-001	shopify	trialLength	3	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-001	shopify	monthly price	US$27	SH-E-4b19089e	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	price per month paid yearly	US$24	SH-E-4b19089e	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-4b19089e	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	monthly price	US$72	SH-E-2c282d89	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	price per month paid yearly	US$65	SH-E-2c282d89	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	promotion	US$1/month for 3 months	SH-E-2c282d89	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	monthly price	$27 USD/mo (Basic), $72 USD/mo (Grow), $399 USD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-f6f8eba8	Basic;Grow;Advanced;Plus;www.shopify.com/ng
+CM-PLN-001	shopify	price per month paid yearly	$24 USD/mo (Basic), $65 USD/mo (Grow), $359 USD/mo (Advanced)	SH-E-cb83107b	Basic;Grow;Advanced;www.shopify.com/ng
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-001	shopify	trialLength	3	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-001	shopify	monthly_price	27 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	annual_price	288 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	annual_monthly_price	24 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-001	shopify	monthly_price	72 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	annual_price	780 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	annual_monthly_price	65 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-001	shopify	trialLength	3	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-001	shopify	trialLength	3	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-001	shopify	free trial	3 days free	SH-E-77e7e965	www.shopify.com/no-en
+CM-PLN-001	shopify	then	9 kr/month for 3 months	SH-E-77e7e965	www.shopify.com/no-en
+CM-PLN-001	shopify	monthly price	389 kr NOK	SH-E-be55c2aa	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	price per month paid yearly	289 kr NOK	SH-E-be55c2aa	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	promotion	9 kr/month for 3 months	SH-E-be55c2aa	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly price	1 030 kr NOK	SH-E-7d472237	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	price per month paid yearly	770 kr NOK	SH-E-7d472237	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	promotion	9 kr/month for 3 months	SH-E-7d472237	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly price	4 490 kr NOK	SH-E-05277b98	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	price per month paid yearly	3 370 kr NOK	SH-E-05277b98	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	promotion	9 kr/month for 3 months	SH-E-05277b98	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly price	from €2,100 EUR/mo	SH-E-95f223bc	Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	price per month paid yearly	€2,100 EUR	SH-E-95f223bc	Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	Agentic price	0 kr NOK/mo	SH-E-97aa569d	Agentic;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly price	kr389 NOK/mo (Basic), kr1,030 NOK/mo (Grow), kr4,490 NOK/mo (Advanced), Starts at €2,100 EUR/mo (Plus)	SH-E-dede197f	Basic;Grow;Advanced;Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	price per month paid yearly	kr289 NOK/mo (Basic), kr770 NOK/mo (Grow), kr3,370 NOK/mo (Advanced)	SH-E-fdbba61e	Basic;Grow;Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	free trial	3-day	SH-E-d38488ac	www.shopify.com/no-en
+CM-PLN-001	shopify	paid trial	9 kr per month for the first 3 months	SH-E-d38488ac	www.shopify.com/no-en
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-001	shopify	trialLength	3	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	389 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	4188 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	349 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	paid_trial	9.0 NOK, length 3	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	1030 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	11148 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	929 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	paid_trial	9.0 NOK, length 3	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	4490 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	47988 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	3999 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	paid_trial	9.0 NOK, length 3	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	2250 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	27000 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	2250 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	59 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	708 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	59 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-001	shopify	paid_trial	9.0 NOK, length 3	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-001	shopify	monthly_price	920 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_price	9960 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-001	shopify	annual_monthly_price	830 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-001	shopify	paid_trial	9.0 NOK, length 3	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-001	shopify	trialLength	3	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-001	shopify	trialLength	3	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-001	shopify	basicAnnualPrice	$29.00 USD	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-001	shopify	trialLength	3	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	39 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	420 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	35 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	105 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	1140 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	95 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	4308 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	359 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-001	shopify	trialLength	3	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-001	shopify	trialLength	3	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-001	shopify	monthly price	$25	SH-E-b2bd3b9e	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	price per month paid yearly	$22	SH-E-b2bd3b9e	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-b2bd3b9e	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	monthly price	$65	SH-E-752a863a	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	price per month paid yearly	$58	SH-E-752a863a	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-752a863a	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-001	shopify	trialLength	3	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-001	shopify	monthly_price	25 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	annual_price	228 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	annual_monthly_price	19 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-001	shopify	monthly_price	65 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	annual_price	588 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	annual_monthly_price	49 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-001	shopify	annual_price	3588 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-001	shopify	annual_monthly_price	299 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-001	shopify	trialLength	3	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-001	shopify	trialLength	3	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-001	shopify	trialLength	3	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-b51ec61c	www.shopify.com
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-b51ec61c	www.shopify.com
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-b51ec61c	www.shopify.com
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-b51ec61c	www.shopify.com
+CM-PLN-001	shopify	trialLength	3	SH-E-b51ec61c	www.shopify.com
+CM-PLN-001	shopify	monthly price	$39	SH-E-6e2449a7	Basic;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$29	SH-E-6e2449a7	Basic;www.shopify.com
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-6e2449a7	Basic;www.shopify.com
+CM-PLN-001	shopify	monthly price	$105	SH-E-bf25ae76	Grow;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$79	SH-E-bf25ae76	Grow;www.shopify.com
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-bf25ae76	Grow;www.shopify.com
+CM-PLN-001	shopify	monthly price	$399	SH-E-bffc37bf	Advanced;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$299	SH-E-bffc37bf	Advanced;www.shopify.com
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-bffc37bf	Advanced;www.shopify.com
+CM-PLN-001	shopify	monthly price	from $2,300/mo	SH-E-f5f29b9a	Plus;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$2,300	SH-E-f5f29b9a	Plus;www.shopify.com
+CM-PLN-001	shopify	promotion	$399 for your first month	SH-E-f5f29b9a	Plus;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$29 USD/mo (Basic), $79 USD/mo (Grow), $299 USD/mo (Advanced)	SH-E-4c658b69	Basic;Grow;Advanced;www.shopify.com
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-553f86ef	www.shopify.com
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-553f86ef	www.shopify.com
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-553f86ef	www.shopify.com
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-553f86ef	www.shopify.com
+CM-PLN-001	shopify	trialLength	3	SH-E-553f86ef	www.shopify.com
+CM-PLN-001	shopify	monthly_price	39 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-001	shopify	annual_price	348 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	29 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-001	shopify	monthly_price	105 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-001	shopify	monthly_price	399 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-001	shopify	annual_price	3588 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	299 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-001	shopify	paid_trial	399.00 USD, length 1	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-001	shopify	monthly_price	5 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-001	shopify	annual_price	60 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	5 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-001	shopify	monthly_price	89 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-001	shopify	annual_price	948 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-001	shopify	annual_monthly_price	79 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-001	shopify	paid_trial	1.0 USD, length 3	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-001	shopify	basicAnnualPrice	$24.00 USD	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-001	shopify	trialLength	3	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-001	shopify	basicAnnualPrice	$29.00	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (SGD)	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-001	shopify	trialLength	3	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-001	shopify	basicAnnualPrice	$29.00	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (SGD)	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-001	shopify	trialLength	3	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	$39 SGD	SH-E-c3403fc6	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	price per month paid yearly	$35 SGD	SH-E-c3403fc6	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-c3403fc6	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	$132 SGD	SH-E-0cf6460f	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	price per month paid yearly	$119 SGD	SH-E-0cf6460f	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-0cf6460f	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	$531 SGD	SH-E-af79335e	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	price per month paid yearly	$479 SGD	SH-E-af79335e	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	promotion	$1/month for 3 months	SH-E-af79335e	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	from $2,300 USD/mo	SH-E-69d387a6	Plus;www.shopify.com/sg
+CM-PLN-001	shopify	price per month paid yearly	$2,300 USD	SH-E-69d387a6	Plus;www.shopify.com/sg
+CM-PLN-001	shopify	Agentic price	$0 SGD/mo	SH-E-4744ecdc	Agentic;www.shopify.com/sg
+CM-PLN-001	shopify	monthly price	$39 SGD/mo (Basic), $132 SGD/mo (Grow), $531 SGD/mo (Advanced), Starts at $2,300 USD/mo (Plus)	SH-E-08006a44	Basic;Grow;Advanced;Plus;www.shopify.com/sg
+CM-PLN-001	shopify	price per month paid yearly	$35 SGD/mo (Basic), $119 SGD/mo (Grow), $479 SGD/mo (Advanced)	SH-E-c3535bbb	Basic;Grow;Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	basicAnnualPrice	$29.00	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-001	shopify	minimumMonthlyPrice	$7 (SGD)	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-001	shopify	trialLength	3	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	39 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	420 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	35 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	paid_trial	1.0 SGD, length 3	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	132 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	1428 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	119 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	paid_trial	1.0 SGD, length 3	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	531 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	5748 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	479 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	paid_trial	1.0 SGD, length 3	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	2500 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	30000 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	2500 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	7 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	84 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	7 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-001	shopify	paid_trial	1.0 SGD, length 3	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-001	shopify	monthly_price	129 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-001	shopify	annual_price	1368 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-001	shopify	annual_monthly_price	114 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-001	shopify	paid_trial	1.0 SGD, length 3	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-001	shopify	basicAnnualPrice	£19.00	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-001	shopify	minimumMonthlyPrice	£5	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialAmount	£1	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-001	shopify	trialLength	3	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-001	shopify	basicAnnualPrice	£19.00	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-001	shopify	minimumMonthlyPrice	£5	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialAmount	£1	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-001	shopify	trialLength	3	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-001	shopify	free trial	3 days free	SH-E-3e5b7a07	www.shopify.com/uk
+CM-PLN-001	shopify	then	£1/month for 3 months	SH-E-3e5b7a07	www.shopify.com/uk
+CM-PLN-001	shopify	monthly price	£25	SH-E-48e0aaaa	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	price per month paid yearly	£22	SH-E-48e0aaaa	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	promotion	£1/month for 3 months	SH-E-48e0aaaa	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	monthly price	£65	SH-E-469d71a7	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	price per month paid yearly	£58	SH-E-469d71a7	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	promotion	£1/month for 3 months	SH-E-469d71a7	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	monthly price	£344	SH-E-db44ecc2	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	price per month paid yearly	£309	SH-E-db44ecc2	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	promotion	£1/month for 3 months	SH-E-db44ecc2	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	monthly price	from £1,800/mo	SH-E-9e6520e2	Plus;www.shopify.com/uk
+CM-PLN-001	shopify	price per month paid yearly	£1,800	SH-E-9e6520e2	Plus;www.shopify.com/uk
+CM-PLN-001	shopify	Agentic price	£0/mo	SH-E-e1412f75	Agentic;www.shopify.com/uk
+CM-PLN-001	shopify	monthly price	£25 GBP/mo (Basic), £65 GBP/mo (Grow), £344 GBP/mo (Advanced), Starts at £1,800 GBP/mo (Plus)	SH-E-5fb1c7b1	Basic;Grow;Advanced;Plus;www.shopify.com/uk
+CM-PLN-001	shopify	price per month paid yearly	£22 GBP/mo (Basic), £58 GBP/mo (Grow), £309 GBP/mo (Advanced)	SH-E-03fa1c3b	Basic;Grow;Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	free trial	3-day	SH-E-81a34ce9	www.shopify.com/uk
+CM-PLN-001	shopify	paid trial	£1 per month for the first 3 months	SH-E-81a34ce9	www.shopify.com/uk
+CM-PLN-001	shopify	basicAnnualPrice	£19.00	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-001	shopify	minimumMonthlyPrice	£5	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialAmount	£1	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-001	shopify	trialLength	3	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	25 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	264 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	22 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	paid_trial	1.0 GBP, length 3	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	65 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	696 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	58 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	paid_trial	1.0 GBP, length 3	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	344 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	3708 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	309 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	paid_trial	1.0 GBP, length 3	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	1950 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	23400 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	1950 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	5 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	60 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	5 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-001	shopify	paid_trial	1.0 GBP, length 3	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-001	shopify	monthly_price	69 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-001	shopify	annual_price	720 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-001	shopify	annual_monthly_price	60 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-001	shopify	paid_trial	1.0 GBP, length 3	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-001	shopify	trialLength	3	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-001	shopify	trialLength	3	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-001	shopify	monthly price	from US$2 300/mo	SH-E-c3d06507	Plus;www.shopify.com/za
+CM-PLN-001	shopify	price per month paid yearly	US$2 300	SH-E-c3d06507	Plus;www.shopify.com/za
+CM-PLN-001	shopify	basicAnnualPrice	$19.00 USD	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-001	shopify	minimumMonthlyPrice	$5 (USD)	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialAmount	$1	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-001	shopify	paidTrialMonths	3	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-001	shopify	trialLength	3	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-001	shopify	monthly price	$5 USD/mo (starter_2022), $39 USD/mo (basic), $105 USD/mo (professional), $399 USD/mo (unlimited), Starts at $2,300 USD/mo (shopify_plus)	SH-E-b5064e03	Starter;Basic;Grow;Advanced;Plus;tuu1u4-v0
+CM-PLN-001	shopify	price per month paid yearly	$5 USD/mo (starter_2022), $29 USD/mo (basic), $89 USD/mo (professional), $359 USD/mo (unlimited)	SH-E-6e16f0e1	Starter;Basic;Grow;Advanced;tuu1u4-v0
+CM-PLN-001	shopify	plans starting at	$1	SH-E-c03dc374	
+CM-PLN-001	shopify	trial	3-month trial	SH-E-331d424e	Basic;Grow;Advanced
+CM-PLN-001	shopify	monthly price	$27 USD per month	SH-E-8b751af5	Basic
+CM-PLN-001	shopify	trial price	$1 /mo	SH-E-8b751af5	Basic
+CM-PLN-001	shopify	monthly price	$72 USD per month	SH-E-98c67b95	Grow
+CM-PLN-001	shopify	trial price	$1 /mo	SH-E-98c67b95	Grow
+CM-PLN-001	shopify	monthly price	$399 USD per month	SH-E-0ebd9a1a	Advanced
+CM-PLN-001	shopify	trial price	$1 /mo	SH-E-0ebd9a1a	Advanced
+CM-PLN-001	shopify	monthly price	$2,300 USD per month	SH-E-246ee498	Plus
+CM-PLN-001	shopify	monthly price	$27 USD/mo	SH-E-da553b37	Basic
+CM-PLN-001	shopify	monthly price	$72 USD/mo	SH-E-c549a79d	Grow
+CM-PLN-001	shopify	monthly price	$399 USD/mo	SH-E-e73c3629	Advanced
+CM-PLN-001	shopify	monthly price	Starts at $2,300 USD/mo	SH-E-4c3b17de	Plus
+CM-PLN-001	shopify	variable platform fee	+ variable fees	SH-E-bf80b5a3	Plus
+CM-PLN-001	shopify	price per month paid yearly	$19 USD/mo	SH-E-f0d1db37	Basic
+CM-PLN-001	shopify	price per month paid yearly	$54 USD/mo	SH-E-b153e672	Grow
+CM-PLN-001	shopify	price per month paid yearly	$299 USD/mo	SH-E-39d391be	Advanced
+CM-PLN-001	shopify	free trial	3 days free	SH-E-d024c836	www.shopify.com
+CM-PLN-001	shopify	then	$1/month for 3 months	SH-E-d024c836	www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$29/mo	SH-E-ff6024b5	Basic;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-04628db7	Basic;Grow;Advanced;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$79/mo	SH-E-d9588e4a	Grow;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	$299/mo	SH-E-0a04c8cf	Advanced;www.shopify.com
+CM-PLN-001	shopify	price per month paid yearly	from $2,300/mo	SH-E-4bd809ee	Plus;www.shopify.com
+CM-PLN-001	shopify	trial price	$399	SH-E-d9fe8e91	Plus;www.shopify.com
+CM-PLN-001	shopify	Agentic price	$0/mo	SH-E-c1aad72e	Agentic;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-3736283f	Agentic;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-2c380b8b	Basic;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-98e3b50f	Basic;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-73152e26	Grow;www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-d2402f9a	Advanced;www.shopify.com
+CM-PLN-001	shopify	trial price	$399	SH-E-af3711d7	Plus;www.shopify.com
+CM-PLN-001	shopify	free trial	3-day	SH-E-a14be553	www.shopify.com
+CM-PLN-001	shopify	paid trial	$1 per month for the first 3 months	SH-E-a14be553	www.shopify.com
+CM-PLN-001	shopify	setup fees	no setup fees on any of our plans	SH-E-290298be	www.shopify.com
+CM-PLN-001	shopify	free trial	3 days free	SH-E-03946376	www.shopify.com
+CM-PLN-001	shopify	trial extension	$1	SH-E-03946376	www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-ec7ee395	www.shopify.com
+CM-PLN-001	shopify	start	free	SH-E-2d8e117b	
+CM-PLN-001	shopify	start	free	SH-E-fd1532d3	
+CM-ONB-003	shopify	response time	On a typical day, we reach most contacts within 5 minutes	SH-E-e6cdf909	
+CM-ONB-003	shopify	webinar	hour-long	SH-E-8c929b14	
+CM-ONB-003	shopify	technical support	24/7/365 technical support	SH-E-3867c827	Commerce Components by Shopify
+CM-ONB-003	shopify	support languages	French, Spanish, and German, at any time of day	SH-E-5e5b7954	
+CM-ACC-003	shopify	free expansion stores	ما يصل إلى 9 (Plus)	SH-E-479b434a	Plus
+CM-ACC-003	shopify	free expansion stores	Up to 9 (Plus)	SH-E-d83c1d70	Plus
+CM-ACC-003	shopify	free expansion stores	Up to 9 (shopify_plus)	SH-E-f67414a9	Plus
+CM-ACC-003	shopify	free expansion stores	Up to 9	SH-E-b26b9dd4	Plus
+CM-TRU-006	shopify	Translated into	32 languages	SH-E-7272df0a	
+CM-TRU-006	shopify	consent audit log	consent preferences given in the past 30 days	SH-E-802097aa	Canadian provinces
+CM-TRU-006	shopify	gross annual revenue	$25 million a year in online sales	SH-E-4021ea27	California-based stores
+CM-TRU-006	shopify	personal information bought, received or sold	50,000 or more California residents, households, or devices	SH-E-4021ea27	California-based stores
+CM-TRU-006	shopify	annual revenue from selling personal information	50% or more	SH-E-4021ea27	California-based stores
+CM-TRU-006	shopify	cookie banner languages	32	SH-E-468c207b	
+CM-PLN-005	shopify	payment confirmation time	from over 30 hours to around 30 seconds	SH-E-3fc76fac	India
+CM-PLN-004	shopify	charge history	a period up to 1 year	SH-E-20a1a9a0	
+CM-PLN-007	shopify	VAT on Shopify Payments fees	0%	SH-E-eb6dd404	Germany;Spain
+CM-STF-002	shopify	granular permissions	10 new granular permissions	SH-E-df2435ce	Shopify Plus
+CM-STF-002	shopify	staff roles and permissions	غير محدودة	SH-E-e2bc29be	POS Pro
+CM-STF-002	shopify	staff roles and permissions	Unlimited	SH-E-e89b723b	POS Pro
+CM-STF-002	shopify	staff roles and permissions	Unlimited	SH-E-07844611	POS Pro;www.shopify.com
+CM-STF-001	shopify	number of staff accounts	might be limits depending on your plan	SH-E-766f4856	
+CM-STF-001	shopify	staff accounts	ما يصل إلى 5	SH-E-4f42a69e	Grow
+CM-STF-001	shopify	staff accounts	ما يصل إلى 15	SH-E-035bd24f	Advanced
+CM-STF-001	shopify	staff accounts	غير محدودة	SH-E-dc174d82	Plus
+CM-STF-001	shopify	additional staff accounts	5 (Grow), 15 (Advanced), غير محدود (Plus)	SH-E-572fc274	Grow;Advanced;Plus
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-STF-001	shopify	staff with POS access	عدد محدود من الموظفين (Basic)	SH-E-6df67af6	Basic
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-STF-001	shopify	POS logins	غير محدودة (Grow)	SH-E-2f03cdbd	Grow
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-STF-001	shopify	POS logins	غير محدودة (Advanced)	SH-E-b24be887	Advanced
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-STF-001	shopify	POS logins	غير محدودة (Plus)	SH-E-b04a616c	Plus
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-STF-001	shopify	POS logins	1 (Starter)	SH-E-431d6a4b	Starter
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-STF-001	shopify	POS logins	غير محدودة (Retail)	SH-E-d4b69a71	Retail
+CM-STF-001	shopify	staff accounts	حسابات موظفين غير محدودة (POS Pro)	SH-E-796cc7fe	POS Pro
+CM-STF-001	shopify	staff with POS access	عدد محدود من الموظفين (Basic, Grow, Advanced, Plus)	SH-E-2b95dca0	Basic;Grow;Advanced;Plus
+CM-STF-001	shopify	staff with POS access	عدد غير محدود من الموظفين (POS Pro)	SH-E-68f3bbae	POS Pro
+CM-STF-001	shopify	staff with POS access	عدد محدود من الموظفين (Basic, Grow, Advanced, Plus)	SH-E-c3dbe43f	Basic;Grow;Advanced;Plus
+CM-STF-001	shopify	staff with POS access	عدد غير محدود من الموظفين (POS Pro)	SH-E-26ab3c51	POS Pro
+CM-STF-001	shopify	POS logins for staff	غير محدودة (POS Pro)	SH-E-032b5c53	Basic;Grow;Advanced;Plus;www.shopify.com/ae-ar
+CM-STF-001	shopify	staff accounts	Up to 5	SH-E-fc714311	Grow
+CM-STF-001	shopify	staff accounts	Up to 15	SH-E-6c3c2384	Advanced
+CM-STF-001	shopify	staff accounts	Unlimited	SH-E-97de4479	Plus
+CM-STF-001	shopify	additional staff accounts	5 (Grow), 15 (Advanced), Unlimited (Plus)	SH-E-3d4e8c43	Grow;Advanced;Plus
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-STF-001	shopify	staff with POS access	Limited staff (Basic)	SH-E-2beed986	Basic
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-STF-001	shopify	POS logins	Unlimited (Grow)	SH-E-af2a3cc7	Grow
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-STF-001	shopify	POS logins	Unlimited (Advanced)	SH-E-a4439a03	Advanced
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-STF-001	shopify	POS logins	Unlimited (Plus)	SH-E-dc7d7488	Plus
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-STF-001	shopify	POS logins	1 (Starter)	SH-E-6351c761	Starter
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-STF-001	shopify	POS logins	Unlimited (Retail)	SH-E-74938b2d	Retail
+CM-STF-001	shopify	staff accounts	unlimited staff accounts (POS Pro)	SH-E-c52087ad	POS Pro
+CM-STF-001	shopify	staff with POS access	Limited staff (Basic, Grow, Advanced, Plus)	SH-E-76943dba	Basic;Grow;Advanced;Plus
+CM-STF-001	shopify	staff with POS access	Unlimited staff (POS Pro)	SH-E-952c8ddb	POS Pro
+CM-STF-001	shopify	staff with POS access	Limited staff (Basic, Grow, Advanced, Plus)	SH-E-739f1895	Basic;Grow;Advanced;Plus
+CM-STF-001	shopify	staff with POS access	Unlimited staff (POS Pro)	SH-E-31c6f7b3	POS Pro
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-171df5d4	Basic;Grow;Advanced;Plus;www.shopify.com/ae;www.shopify.com/ph;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-58969522	Starter;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-b8ab355a	Basic;Grow;Advanced;Plus;www.shopify.com/au
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-9ed4705b	Basic;Grow;Advanced;Plus;www.shopify.com/ca
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	POS logins for staff	غير محدودة (POS Pro)	SH-E-c43b16f6	Basic;Grow;Advanced;Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-d49beff8	Basic;Grow;Advanced;Plus;www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-118d70ce	Basic;Grow;Advanced;Plus;www.shopify.com/ie
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-4689f834	Basic;www.shopify.com/il
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-2043016e	Basic;Grow;Advanced;Plus;www.shopify.com/in
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-5178a682	Basic;Grow;Advanced;Plus;www.shopify.com/no-en
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-ed175bca	Basic;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-b93b8626	Grow;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-d73c0a52	Starter;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-d8366337	Retail;www.shopify.com
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-3453155e	Basic;Grow;Advanced;Plus;www.shopify.com/sg
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-STF-001	shopify	maximum_staff_accounts	limit 5, enforced true	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-STF-001	shopify	maximum_staff_accounts	limit 15, enforced true	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced false	SH-E-74784910	Plus;www.shopify.com/uk
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-STF-001	shopify	maximum_staff_accounts	limit 0, enforced true	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-STF-001	shopify	POS logins for staff	Unlimited (POS Pro)	SH-E-ff311306	Basic;Grow;Advanced;Plus;www.shopify.com/uk
+CM-STF-001	shopify	additional staff accounts	5 (professional), 15 (unlimited), Unlimited (shopify_plus)	SH-E-16be97e3	Grow;Advanced;Plus
+CM-STF-001	shopify	POS staff	Limited (pos_lite), Unlimited (pos_pro)	SH-E-42ba5371	Starter;Basic;Grow;Advanced;Plus;POS Pro
+CM-STF-001	shopify	staff accounts	Up to 5	SH-E-9541521b	Grow
+CM-STF-001	shopify	staff accounts	Up to 15	SH-E-1aa8797e	Advanced
+CM-STF-001	shopify	staff accounts	Unlimited	SH-E-536397f5	Plus
+CM-STF-001	shopify	additional staff accounts	5	SH-E-d0797b32	Grow
+CM-STF-001	shopify	additional staff accounts	15	SH-E-a0a0a600	Advanced
+CM-STF-001	shopify	additional staff accounts	Unlimited	SH-E-22d6dc51	Plus
+CM-STF-001	shopify	staff accounts	Up to 5	SH-E-b73b92c9	Grow;www.shopify.com
+CM-STF-001	shopify	staff accounts	Up to 15	SH-E-cad7c8e7	Advanced;www.shopify.com
+CM-STF-001	shopify	staff accounts	Unlimited	SH-E-3cfafaa3	Plus;www.shopify.com
+CM-TRU-003	shopify	Admin API activity period	the last 30 days	SH-E-da68e961	
+CM-TRU-003	shopify	subscriptions	one subscription per Plus store	SH-E-c5387d0e	Plus
+CM-STF-005	shopify	collaborator request code	4-digit	SH-E-635e914c	
+CM-TRU-018	shopify	certification	PCI DSS V4 compliant	SH-E-6b251b91	
+CM-TRU-018	shopify	certification	PCI DSS V4 compliant	SH-E-bfa7c4f8	
+CM-TRU-018	shopify	certification	PCI DSS من المستوى الأول	SH-E-83ec2b91	
+CM-TRU-018	shopify	certification	Level 1 PCI DSS compliant	SH-E-d13d0d53	
+CM-TRU-018	shopify	certification	Level 1 PCI DSS compliant	SH-E-4aeb70e2	www.shopify.com
+CM-PLN-003	shopify	third-party transaction fees	%2 (Basic), %1 (Grow), %0.6 (Advanced), %0.2 (Plus)	SH-E-34ca86c2	Basic;Grow;Advanced;Plus;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%2 لمزودي دفع من جهات خارجية	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%1 لمزودي دفع من جهات خارجية	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%0.6 لمزودي الدفع من جهات خارجية	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%0.2 لمزودي الدفع من جهات خارجية	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%5 لمزودي الدفع من جهات خارجية	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-003	shopify	card_rates.third_party	%2 لمزودي الدفع من جهات خارجية	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-003	shopify	third-party transaction fees	2% (Basic), 1% (Grow), 0.6% (Advanced), 0.2% (Plus)	SH-E-b826f207	Basic;Grow;Advanced;Plus;www.shopify.com/ae;www.shopify.com/au;www.shopify.com/ca;www.shopify.com/hk-en;www.shopify.com/ie;www.shopify.com/no-en;www.shopify.com/nz;www.shopify.com;www.shopify.com/sg;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-003	shopify	fee on payments through third-party providers	%2	SH-E-08d125e9	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	fee on payments through third-party providers	%1	SH-E-2f08105c	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	fee on payments through third-party providers	%0.6	SH-E-270440df	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	fee on payments through third-party providers	%0.2	SH-E-13aee438	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%2 لمزودي دفع من جهات خارجية	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%1 لمزودي دفع من جهات خارجية	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%0.6 لمزودي الدفع من جهات خارجية	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%0.2 لمزودي الدفع من جهات خارجية	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%5 لمزودي الدفع من جهات خارجية	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	%2 لمزودي الدفع من جهات خارجية	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-003	shopify	fee on payments through third-party providers	2%	SH-E-cb9e15a2	Basic;www.shopify.com/id;www.shopify.com/il;www.shopify.com/in;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/za
+CM-PLN-003	shopify	fee on payments through third-party providers	1%	SH-E-c7589fd9	Grow;www.shopify.com/id;www.shopify.com/il;www.shopify.com/in;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/za
+CM-PLN-003	shopify	fee on payments through third-party providers	0.6%	SH-E-f80ed28f	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/in;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/za
+CM-PLN-003	shopify	fee on payments through third-party providers	0.2%	SH-E-d282bc57	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/in;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	1% 3rd-party payment providers	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	0.6% 3rd-party payment providers	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	0.2% 3rd-party payment providers	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	5% 3rd-party payment providers	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-003	shopify	card_rates.third_party	2% 3rd-party payment providers	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-003	shopify	third-party transaction fees	5% (starter_2022), 2% (basic), 1% (professional), 0.6% (unlimited), 0.2% (shopify_plus)	SH-E-849147c4	Starter;Basic;Grow;Advanced;Plus;tuu1u4-v0
+CM-PLN-003	shopify	fee on payments through third-party providers	2%	SH-E-28d65063	Basic
+CM-PLN-003	shopify	fee on payments through third-party providers	1%	SH-E-9dc684e2	Grow
+CM-PLN-003	shopify	fee on payments through third-party providers	0.6%	SH-E-da83924e	Advanced
+CM-PLN-003	shopify	fee on payments through third-party providers	0.2%	SH-E-300e00bc	Plus
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-162ce31b	www.shopify.com/ae-ar
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-e8884dfd	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	price per month paid yearly	‏29 US$	SH-E-841a9ed6	Basic;www.shopify.com/ae-ar
+CM-PLN-002	shopify	price per month paid yearly	‏83 US$	SH-E-55720550	Grow;www.shopify.com/ae-ar
+CM-PLN-002	shopify	price per month paid yearly	‏359 US$	SH-E-8fc1233f	Advanced;www.shopify.com/ae-ar
+CM-PLN-002	shopify	price per month paid yearly	‏2,300 US$	SH-E-2b2ed318	Plus;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-a2b6ce33	www.shopify.com/ae-ar;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	29 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	20 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	18 USD	SH-E-8063b6c0	Basic;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annual_monthly_price	83 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	56 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	52 USD	SH-E-f5f0114f	Grow;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annual_monthly_price	359 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-cd927047	Advanced;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-21788730	Plus;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-1c9b4dec	Starter;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-29d3b5b8	Retail;www.shopify.com/ae-ar
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-13886779	www.shopify.com/ae;www.shopify.com/eg
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-1b81d83a	www.shopify.com/ae
+CM-PLN-002	shopify	price per month paid yearly	$29	SH-E-a7f5c34f	Basic;www.shopify.com/ae
+CM-PLN-002	shopify	price per month paid yearly	$83	SH-E-23fc01de	Grow;www.shopify.com/ae
+CM-PLN-002	shopify	price per month paid yearly	$359	SH-E-5e019eb6	Advanced;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-002	shopify	price per month paid yearly	$2,300	SH-E-766fa0d5	Plus;www.shopify.com/ae;www.shopify.com/ph
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-57fd373a	www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	24 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	20 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	18 USD	SH-E-fd0dbe9b	Basic;www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	69 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	56 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	52 USD	SH-E-28de0417	Grow;www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	299 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-a3e6083b	Advanced;www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-8c793557	Plus;www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-867c65ba	Starter;www.shopify.com/ae
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-13f4c80b	Retail;www.shopify.com/ae
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-544b2337	www.shopify.com/au
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-0b545754	www.shopify.com/au
+CM-PLN-002	shopify	price per month paid yearly	$42	SH-E-35ecba50	Basic;www.shopify.com/au
+CM-PLN-002	shopify	price per month paid yearly	$114	SH-E-618a7f6d	Grow;www.shopify.com/au
+CM-PLN-002	shopify	price per month paid yearly	$431	SH-E-1349610e	Advanced;www.shopify.com/au
+CM-PLN-002	shopify	price per month paid yearly	$3,700	SH-E-7785b427	Plus;www.shopify.com/au
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-d58f1ba9	www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	50 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	34 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	32 AUD	SH-E-6533d9fa	Basic;www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	134 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	92 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	86 AUD	SH-E-52e5dbc4	Grow;www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	519 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	339 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	316 AUD	SH-E-4146adab	Advanced;www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	4000 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	4000 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	3700 AUD	SH-E-4f21dadc	Plus;www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	7 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	7 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	7 AUD	SH-E-58969522	Starter;www.shopify.com/au
+CM-PLN-002	shopify	annual_monthly_price	112 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-002	shopify	biennial_monthly_price	112 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-002	shopify	triennial_monthly_price	112 AUD	SH-E-95a0668a	Retail;www.shopify.com/au
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-72d48116	www.shopify.com/ca
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-3dd120ae	www.shopify.com/ca
+CM-PLN-002	shopify	price per month paid yearly	$44	SH-E-ab48ab1b	Basic;www.shopify.com/ca
+CM-PLN-002	shopify	price per month paid yearly	$120	SH-E-36a6679a	Grow;www.shopify.com/ca
+CM-PLN-002	shopify	price per month paid yearly	$465	SH-E-23a84426	Advanced;www.shopify.com/ca
+CM-PLN-002	shopify	price per month paid yearly	$3,400	SH-E-662b9c92	Plus;www.shopify.com/ca
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-a80fa37e	www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	37 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	31 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	29 CAD	SH-E-b2f66adf	Basic;www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	99 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	80 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	75 CAD	SH-E-5a2b00a3	Grow;www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	389 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	312 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	292 CAD	SH-E-efa19b0a	Advanced;www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	3650 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	3650 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	3400 CAD	SH-E-75cb58be	Plus;www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	7 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	7 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	7 CAD	SH-E-600a267f	Starter;www.shopify.com/ca
+CM-PLN-002	shopify	annual_monthly_price	105 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-002	shopify	biennial_monthly_price	105 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-002	shopify	triennial_monthly_price	105 CAD	SH-E-ed745af3	Retail;www.shopify.com/ca
+CM-PLN-002	shopify	price per month paid yearly	‏٢٤ US$	SH-E-47495c61	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	price per month paid yearly	‏٦٥ US$	SH-E-b15494e8	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	price per month paid yearly	‏٣٥٩ US$	SH-E-b8fb181c	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	price per month paid yearly	‏٢٬٣٠٠ US$	SH-E-2c66b2a8	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	24 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	20 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	18 USD	SH-E-a4e8ac88	Basic;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	65 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	56 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	52 USD	SH-E-4a92c048	Grow;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	359 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-66e708a6	Advanced;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-e59c0c80	Plus;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-f55d1682	Starter;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-2388073d	Retail;www.shopify.com/eg;www.shopify.com/sa
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-70789599	www.shopify.com/hk-en
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-5dd84ffd	www.shopify.com/hk-en
+CM-PLN-002	shopify	price per month paid yearly	US$29	SH-E-2e09f6d8	Basic;www.shopify.com/hk-en
+CM-PLN-002	shopify	price per month paid yearly	US$83	SH-E-4df677d2	Grow;www.shopify.com/hk-en
+CM-PLN-002	shopify	price per month paid yearly	US$359	SH-E-f8ccc605	Advanced;www.shopify.com/hk-en;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	price per month paid yearly	US$2,300	SH-E-1496d20e	Plus;www.shopify.com/hk-en;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/nz;www.shopify.com/pk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-fd1d71c9	www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	29 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	21 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	19 USD	SH-E-abc7adfa	Basic;www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	83 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	56 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	52 USD	SH-E-8ec32716	Grow;www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	359 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-7701fc33	Advanced;www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-b1bbcbaa	Plus;www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-a92e2e4e	Starter;www.shopify.com/hk-en
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-d56c2460	Retail;www.shopify.com/hk-en
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-14535eed	www.shopify.com/id
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-48566056	www.shopify.com/id
+CM-PLN-002	shopify	price per month paid yearly	US$22	SH-E-74c114a7	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	price per month paid yearly	US$58	SH-E-f635aa27	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	price per month paid yearly	US$2.300	SH-E-dc853f2e	Plus;www.shopify.com/id
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-8bed105f	www.shopify.com/id
+CM-PLN-002	shopify	annual_monthly_price	22 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	16 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	15 USD	SH-E-bdff9e26	Basic;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annual_monthly_price	58 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	40 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	37 USD	SH-E-22c0bc4e	Grow;www.shopify.com/id;www.shopify.com/my;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annual_monthly_price	359 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-fa8bb029	Advanced;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-1ab37667	Plus;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-f36ea4cb	Starter;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-d6608851	Retail;www.shopify.com/id;www.shopify.com/il;www.shopify.com/my;www.shopify.com/ng;www.shopify.com/ph;www.shopify.com/pk;www.shopify.com/za
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-41915d79	www.shopify.com/ie
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-b204afd3	www.shopify.com/ie
+CM-PLN-002	shopify	price per month paid yearly	€29	SH-E-26368054	Basic;www.shopify.com/ie
+CM-PLN-002	shopify	price per month paid yearly	€83	SH-E-88b43458	Grow;www.shopify.com/ie
+CM-PLN-002	shopify	price per month paid yearly	€345	SH-E-50e79571	Advanced;www.shopify.com/ie
+CM-PLN-002	shopify	price per month paid yearly	€2,100	SH-E-8a8fc509	Plus;www.shopify.com/ie
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-a46a4392	www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	29 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	20 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	18 EUR	SH-E-e37f7d52	Basic;www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	83 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	56 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	52 EUR	SH-E-9cec2f13	Grow;www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	345 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	228 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	212 EUR	SH-E-0f002137	Advanced;www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	2250 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	2250 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	2100 EUR	SH-E-d3592d61	Plus;www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	5 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	5 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	5 EUR	SH-E-1d13ded6	Starter;www.shopify.com/ie
+CM-PLN-002	shopify	annual_monthly_price	69 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-002	shopify	biennial_monthly_price	69 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-002	shopify	triennial_monthly_price	69 EUR	SH-E-eb817b2d	Retail;www.shopify.com/ie
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-48b87400	www.shopify.com/il
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-1ce26f03	www.shopify.com/il
+CM-PLN-002	shopify	price per month paid yearly	US$35	SH-E-54a1b998	Basic;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-002	shopify	price per month paid yearly	US$95	SH-E-cef6379e	Grow;www.shopify.com/il;www.shopify.com/nz
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-0f2dafa8	www.shopify.com/il
+CM-PLN-002	shopify	annual_monthly_price	35 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-002	shopify	biennial_monthly_price	24 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-002	shopify	triennial_monthly_price	22 USD	SH-E-4689f834	Basic;www.shopify.com/il
+CM-PLN-002	shopify	annual_monthly_price	95 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-002	shopify	biennial_monthly_price	64 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-002	shopify	triennial_monthly_price	60 USD	SH-E-0a8e762e	Grow;www.shopify.com/il
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-76db51d6	www.shopify.com/in
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-2fcea142	www.shopify.com/in
+CM-PLN-002	shopify	price per month paid yearly	₹1,800	SH-E-5ad5e082	Basic;www.shopify.com/in
+CM-PLN-002	shopify	price per month paid yearly	₹6,700	SH-E-cf3e44d8	Grow;www.shopify.com/in
+CM-PLN-002	shopify	price per month paid yearly	₹27,100	SH-E-773fd507	Advanced;www.shopify.com/in
+CM-PLN-002	shopify	price per month paid yearly	₹1,75,000	SH-E-6fc3a55a	Plus;www.shopify.com/in
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-2fc56a2b	www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	1800 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	1200 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	1125 INR	SH-E-fed4f3ab	Basic;www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	6700 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	4480 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	4200 INR	SH-E-cd2fe114	Grow;www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	27100 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	18144 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	17010 INR	SH-E-9ccfa499	Advanced;www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	190000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	190000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	175000 INR	SH-E-6fc87f42	Plus;www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	399 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	399 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	399 INR	SH-E-47d7befe	Starter;www.shopify.com/in
+CM-PLN-002	shopify	annual_monthly_price	6220 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-002	shopify	biennial_monthly_price	6220 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-002	shopify	triennial_monthly_price	6220 INR	SH-E-9fd2125d	Retail;www.shopify.com/in
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-2c4e6155	www.shopify.com
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-28ed1a89	www.shopify.com/my
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-fcf580bd	www.shopify.com/my
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-81ada1d6	www.shopify.com/my
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-ce817b9c	www.shopify.com/ng
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-520a1421	www.shopify.com/ng
+CM-PLN-002	shopify	price per month paid yearly	US$24	SH-E-4b19089e	Basic;www.shopify.com/ng
+CM-PLN-002	shopify	price per month paid yearly	US$65	SH-E-2c282d89	Grow;www.shopify.com/ng
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-bde40fdf	www.shopify.com/ng
+CM-PLN-002	shopify	annual_monthly_price	24 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-002	shopify	biennial_monthly_price	20 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-002	shopify	triennial_monthly_price	18 USD	SH-E-ed6a42e8	Basic;www.shopify.com/ng
+CM-PLN-002	shopify	annual_monthly_price	65 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-002	shopify	biennial_monthly_price	56 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-002	shopify	triennial_monthly_price	52 USD	SH-E-9293c1ef	Grow;www.shopify.com/ng
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-2b6f32de	www.shopify.com/no-en
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-6684de71	www.shopify.com/no-en
+CM-PLN-002	shopify	price per month paid yearly	289 kr NOK	SH-E-be55c2aa	Basic;www.shopify.com/no-en
+CM-PLN-002	shopify	price per month paid yearly	770 kr NOK	SH-E-7d472237	Grow;www.shopify.com/no-en
+CM-PLN-002	shopify	price per month paid yearly	3 370 kr NOK	SH-E-05277b98	Advanced;www.shopify.com/no-en
+CM-PLN-002	shopify	price per month paid yearly	€2,100 EUR	SH-E-95f223bc	Plus;www.shopify.com/no-en
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-dbc7525e	www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	349 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	289 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	289 NOK	SH-E-c460d0b5	Basic;www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	929 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	770 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	770 NOK	SH-E-ecab1a81	Grow;www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	3999 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	3370 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	3370 NOK	SH-E-f20d7005	Advanced;www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	2250 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	2250 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	2100 EUR	SH-E-1d649953	Plus;www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	59 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	59 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	59 NOK	SH-E-7cbe9a86	Starter;www.shopify.com/no-en
+CM-PLN-002	shopify	annual_monthly_price	830 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-002	shopify	biennial_monthly_price	830 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-002	shopify	triennial_monthly_price	830 NOK	SH-E-eba43eae	Retail;www.shopify.com/no-en
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-c4c3deb4	www.shopify.com/nz
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-f8659a31	www.shopify.com/nz
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-09c94ec3	www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	35 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	24 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	22 USD	SH-E-8cbeedc5	Basic;www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	95 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	64 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	60 USD	SH-E-fc190cb5	Grow;www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	359 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-fd267a85	Advanced;www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-010b291c	Plus;www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-4be8d100	Starter;www.shopify.com/nz
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-39b0e865	Retail;www.shopify.com/nz
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-816028fe	www.shopify.com/ph
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-24616d34	www.shopify.com/ph
+CM-PLN-002	shopify	price per month paid yearly	$22	SH-E-b2bd3b9e	Basic;www.shopify.com/ph
+CM-PLN-002	shopify	price per month paid yearly	$58	SH-E-752a863a	Grow;www.shopify.com/ph
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-bb62c458	www.shopify.com/ph
+CM-PLN-002	shopify	annual_monthly_price	19 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-002	shopify	biennial_monthly_price	16 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-002	shopify	triennial_monthly_price	15 USD	SH-E-343064cd	Basic;www.shopify.com/ph
+CM-PLN-002	shopify	annual_monthly_price	49 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-002	shopify	biennial_monthly_price	40 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-002	shopify	triennial_monthly_price	37 USD	SH-E-7b348ec4	Grow;www.shopify.com/ph
+CM-PLN-002	shopify	annual_monthly_price	299 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-b3c70d38	Advanced;www.shopify.com/ph
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-f52dd9e8	www.shopify.com/pk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-3e4f59e4	www.shopify.com/pk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-06e35392	www.shopify.com/pk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-b51ec61c	www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$29	SH-E-6e2449a7	Basic;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$79	SH-E-bf25ae76	Grow;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$299	SH-E-bffc37bf	Advanced;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$2,300	SH-E-f5f29b9a	Plus;www.shopify.com
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-553f86ef	www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	29 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	24 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	22 USD	SH-E-ed175bca	Basic;www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	64 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	60 USD	SH-E-b93b8626	Grow;www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	299 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	235 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	219 USD	SH-E-6427d4b4	Advanced;www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-8f80ae9d	Plus;www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	5 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	5 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	5 USD	SH-E-d73c0a52	Starter;www.shopify.com
+CM-PLN-002	shopify	annual_monthly_price	79 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-002	shopify	biennial_monthly_price	79 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-002	shopify	triennial_monthly_price	79 USD	SH-E-d8366337	Retail;www.shopify.com
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-7426ef51	www.shopify.com/sa
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-5eaafddc	www.shopify.com/sg
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-59ed2f12	www.shopify.com/sg
+CM-PLN-002	shopify	price per month paid yearly	$35 SGD	SH-E-c3403fc6	Basic;www.shopify.com/sg
+CM-PLN-002	shopify	price per month paid yearly	$119 SGD	SH-E-0cf6460f	Grow;www.shopify.com/sg
+CM-PLN-002	shopify	price per month paid yearly	$479 SGD	SH-E-af79335e	Advanced;www.shopify.com/sg
+CM-PLN-002	shopify	price per month paid yearly	$2,300 USD	SH-E-69d387a6	Plus;www.shopify.com/sg
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-74c8532e	www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	35 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	24 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	22 SGD	SH-E-f91f5e2f	Basic;www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	119 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	80 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	75 SGD	SH-E-54e2b55a	Grow;www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	479 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	320 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	300 SGD	SH-E-42d43f48	Advanced;www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	2500 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	2500 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	2300 USD	SH-E-66623c3c	Plus;www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	7 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	7 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	7 SGD	SH-E-c63ab97f	Starter;www.shopify.com/sg
+CM-PLN-002	shopify	annual_monthly_price	114 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-002	shopify	biennial_monthly_price	114 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-002	shopify	triennial_monthly_price	114 SGD	SH-E-42b8ecf5	Retail;www.shopify.com/sg
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-5c1eb9da	www.shopify.com/uk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-afd3607d	www.shopify.com/uk
+CM-PLN-002	shopify	price per month paid yearly	£22	SH-E-48e0aaaa	Basic;www.shopify.com/uk
+CM-PLN-002	shopify	price per month paid yearly	£58	SH-E-469d71a7	Grow;www.shopify.com/uk
+CM-PLN-002	shopify	price per month paid yearly	£309	SH-E-db44ecc2	Advanced;www.shopify.com/uk
+CM-PLN-002	shopify	price per month paid yearly	£1,800	SH-E-9e6520e2	Plus;www.shopify.com/uk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-1d8b9893	www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	22 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	16 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	15 GBP	SH-E-8dbe4852	Basic;www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	58 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	40 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	37 GBP	SH-E-486f0cd9	Grow;www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	309 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	204 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	190 GBP	SH-E-9a09199f	Advanced;www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	1950 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	1950 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	1800 GBP	SH-E-74784910	Plus;www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	5 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	5 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	5 GBP	SH-E-0a46aab2	Starter;www.shopify.com/uk
+CM-PLN-002	shopify	annual_monthly_price	60 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-002	shopify	biennial_monthly_price	60 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-002	shopify	triennial_monthly_price	60 GBP	SH-E-44838ada	Retail;www.shopify.com/uk
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-b6e5eb6a	www.shopify.com/za
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-0f7b48e5	www.shopify.com/za
+CM-PLN-002	shopify	price per month paid yearly	US$2 300	SH-E-c3d06507	Plus;www.shopify.com/za
+CM-PLN-002	shopify	annualDiscountPercentage	25	SH-E-8b6e5df9	www.shopify.com/za
+CM-PLN-002	shopify	price per month paid yearly	$29/mo	SH-E-ff6024b5	Basic;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$79/mo	SH-E-d9588e4a	Grow;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	$299/mo	SH-E-0a04c8cf	Advanced;www.shopify.com
+CM-PLN-002	shopify	price per month paid yearly	from $2,300/mo	SH-E-4bd809ee	Plus;www.shopify.com

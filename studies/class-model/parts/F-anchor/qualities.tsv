@@ -13,3 +13,99 @@ CM-PTN-003	shopify	how often Shopify pays partners	Shopify distributes Fees owin
 CM-PTN-008	salla	when referral earnings are transferred	تُحوّل الأرباح المستحقة إلى محفظة التاجر يوم 28 من كل شهر، مهما كان مبلغ الأرباح.	SA-C-173/boundary/SA-S-5077
 CM-AIA-001	shopify	availability of AI features in the admin	Many of these features are available at no additional cost, but availability can vary by plan, device, and language.	SH-C-202/decides/SH-S-7488
 CM-AIA-003	shopify	language of Shopify Magic's blog content	Your Shopify plan includes blogging tools, including Shopify Magic features for generating English content, no apps required.	SH-C-202/decides/SH-S-7207
+CM-AIA-002	shopify	app_generation hourly limit	12800	SH-E-329f637f
+CM-AIA-002	shopify	app_generation weekly limit	51200	SH-E-329f637f
+CM-AIA-002	shopify	storefront_agent limit_cents	1000	SH-E-329f637f
+CM-AIA-002	shopify	price	free	SH-E-76cea7a3
+CM-AIA-002	shopify	usage limits	Usage limits apply	SH-E-1067df03
+CM-AIA-002	shopify	recommendations	up to 5 tailored recommendations	SH-E-b2b09e1f
+CM-AIA-002	shopify	skills	up to 25	SH-E-0fc36b06
+CM-AIA-002	shopify	languages	20 languages	SH-E-5b372392
+CM-AIA-002	shopify	skill shortcut, its counter	0/50	SH-E-6a39da3e
+CM-AIA-002	shopify	skill instructions, its counter	0/5500	SH-E-320733ad
+CM-APP-009	shopify	data access	وصول محدود للبيانات (Basic), وصول كامل للبيانات (Grow, Advanced, Plus)	SH-E-6f5c7128
+CM-APP-009	shopify	data access	Limited data access (Basic), Full data access (Grow, Advanced, Plus)	SH-E-1e7d70c8
+CM-APP-009	shopify	data access	Limited data access (starter_2022, basic), Full data access (professional, unlimited, shopify_plus)	SH-E-fd0867e7
+CM-APP-009	shopify	data access	Limited data access	SH-E-d0227d58
+CM-APP-009	shopify	data access	Full data access	SH-E-9aba4df5
+CM-AIA-003	shopify	generated content	in English	SH-E-0b491203
+CM-AIA-003	shopify	supported languages	now supported in 8 languages	SH-E-7b4c0f60
+CM-API-007	shopify	file size	accepts 100MB files	SH-E-7a795dcb
+CM-API-007	shopify	concurrent operations	up to five concurrent operations	SH-E-7a795dcb
+CM-API-007	shopify	bulk operations listed by status	'in the last 7 days'	SH-E-e850047b
+CM-API-007	shopify	bulk operations listed by status	'in the last 7 days'	SH-E-ae499643
+CM-DVT-002	shopify	Admin API mutations from the CLI	'only allowed on dev stores'	SH-E-a6fa6319
+CM-DVT-002	shopify	Admin API bulk mutations from the CLI	'only allowed on dev stores'	SH-E-d86544ac
+CM-AUT-001	shopify	Workflow error occurred trigger	limited to a single occurrence per workflow version within 30 days	SH-E-de3cedb6
+CM-AUT-001	shopify	badgeType	LIMITED_RELEASE	SH-E-30b38dce
+CM-AUT-001	shopify	maxWorkflowSteps	500	SH-E-c7a5b710
+CM-AUT-001	shopify	maxWaitSteps	40	SH-E-c7a5b710
+CM-AUT-001	shopify	maxWaitDurationSeconds	7862400	SH-E-c7a5b710
+CM-AUT-001	shopify	maxWorkflowNoteCharacterLength	2000	SH-E-c7a5b710
+CM-AUT-001	shopify	maxTotalWorkflowVariablesBytes	50000	SH-E-c7a5b710
+CM-AUT-001	shopify	price	a free app	SH-E-8f852473
+CM-AUT-001	shopify	usage limits	different usage limits in Shopify Flow according to the API limits governed by their plan	SH-E-8f852473
+CM-AUT-001	shopify	Get data actions	return a list of up to 100 resources	SH-E-9c9369e2
+CM-AUT-001	shopify	Get data actions	return a list of up to 100 resources	SH-E-ed83493d
+CM-AUT-001	shopify	test run duration	about 10 seconds	SH-E-0678ff26
+CM-AUT-001	shopify	automatic retries	for up to 36 hours after a transient error	SH-E-0052bc07
+CM-AUT-001	shopify	monitored fields	up to 5 fields on the product	SH-E-8f4e79da
+CM-AUT-001	shopify	For each loop iterations	increased from 100 to 1000 items at a time	SH-E-3763814b
+CM-AUT-001	shopify	nested For each steps	up to a maximum of two levels	SH-E-3763814b
+CM-AUT-001	shopify	sample events	up to 5 for any Shopify Flow trigger	SH-E-cd99d9f6
+CM-AUT-001	shopify	Flow's Get data actions	a list of up to 100 resources	SH-E-3535373d
+CM-AUT-001	shopify	Get data	up to 100 per workflow	SH-E-e8f80fb0
+CM-AUT-001	shopify	Scheduled time trigger	up to once per hour	SH-E-e8f80fb0
+CM-AUT-001	shopify	Wait step	as short as 1s and up to 30 days	SH-E-9fae3590
+CM-AUT-001	shopify	Wait step	from 1s to 7 days	SH-E-90cb8018
+CM-AUT-001	shopify	logs retained	14 days	SH-E-d0ce4da0
+CM-AIA-005	shopify	additional facts	up to 1,000	SH-E-a50b68cc
+CM-AIA-005	shopify	products per request	up to 50 products in a single request	SH-E-4d8fc4b3
+CM-PTN-003	shopify	revenue share	0% revenue share up to $1 million USD (15% on additional sales over $1M)	SH-E-ea9b17f0
+CM-PTN-003	shopify	revenue share	0% revenue share up to $1 million USD (15% on additional sales over $1M)	SH-E-a951453f
+CM-APP-002	shopify	apps compared at a time	up to 4	SH-E-7b9a01a3
+CM-APP-002	shopify	apps compared	up to four	SH-E-506db274
+CM-APP-002	shopify	listing translations	eight languages	SH-E-bf841b5a
+CM-APP-002	shopify	grace period	60 days	SH-E-da276161
+CM-PTN-001	shopify	system roles	seven	SH-E-f60cc206
+CM-APP-003	shopify	private plans	as many as you need	SH-E-49bb6e94
+CM-APP-003	shopify	stores per private plan	any number of stores	SH-E-49bb6e94
+CM-API-008	shopify	event topics	18 topics	SH-E-afbb68d7
+CM-APP-005	shopify	character limit	24,576 (from 16,384)	SH-E-15c8822e
+CM-APP-005	shopify	execution time	under 5 milliseconds	SH-E-2a93ba76
+CM-APP-005	shopify	execution time	less than 5ms	SH-E-51744fd2
+CM-APP-005	shopify	Function APIs	9 Function APIs	SH-E-12d326f1
+CM-APP-005	shopify	function execution limits	scale with carts that have over 200 lines	SH-E-5ab2881c
+CM-APP-005	shopify	input size limit	doubled to 128kb	SH-E-47a3debb
+CM-APP-005	shopify	scaling factor	200 line item	SH-E-47a3debb
+CM-APP-005	shopify	functions executed simultaneously	up to 25	SH-E-7891243a
+CM-AIA-001	shopify	languages	English only	SH-E-d0d735e1
+CM-AIA-001	shopify	AI tokens	ملايين الرموز	SH-E-53f15eb6
+CM-AIA-001	shopify	AI tokens	ملايين الرموز	SH-E-57408b0e
+CM-AIA-001	shopify	AI tokens	Millions of tokens	SH-E-d8f32b72
+CM-AIA-001	shopify	AI tokens	Millions	SH-E-7e637f3e
+CM-AIA-001	shopify	AI tokens	Millions	SH-E-dbb78ee7
+CM-AIA-001	shopify	AI tokens	Millions of tokens	SH-E-eff22ddc
+CM-AIA-001	shopify	AI tokens	Millions	SH-E-b6b002f1
+CM-AIA-001	shopify	AI tokens	Millions of tokens	SH-E-5dabd330
+CM-API-005	shopify	Admin API rate limits on the Advanced plan	100 points/second on the GraphQL Admin API	SH-E-f54b1f80
+CM-API-005	shopify	4 requests/second on the REST Admin API	4 requests/second on the REST Admin API	SH-E-f54b1f80
+CM-API-005	shopify	Admin API rate limits	10x over standard limits	SH-E-2a976c21
+CM-API-005	shopify	API calls	unlimited	SH-E-2a976c21
+CM-API-005	shopify	API calls	unthrottled	SH-E-dc510752
+CM-API-005	shopify	Admin API rate limits	increasing standard Admin API rate limits by 10x	SH-E-dc510752
+CM-API-005	shopify	API rate limits	no rate limits	SH-E-efe10fd5
+CM-API-005	shopify	rate limits	served with no rate limits	SH-E-f9dd4a20
+CM-API-005	shopify	Admin API rate limits	a 2X increase on the Shopify Advanced plan	SH-E-19b56fd5
+CM-API-005	shopify	GraphQL Admin API rate limits	2x increases in rate limits for all plans	SH-E-ca3e3f00
+CM-API-005	shopify	API rate limits	قياسي (Basic, Grow), ما يصل إلى 2 أضعاف في واجهات برمجة تطبيقات (APIs) محددة (Advanced), ما يصل إلى 10 أضعاف في واجهات برمجة تطبيقات (APIs) محددة (Plus)	SH-E-dadca70e
+CM-API-005	shopify	API call limits	أعلى بنسبة تصل إلى 500% (Plus)	SH-E-04f1f20b
+CM-API-005	shopify	API rate limits	Standard (Basic, Grow), Up to 2x on select APIs (Advanced), Up to 10x on select APIs (Plus)	SH-E-106dc5c6
+CM-API-005	shopify	API call limits	Up to 500% higher (Plus)	SH-E-1dda6149
+CM-API-005	shopify	API rate limits	Standard (starter_2022, basic, professional), Up to 2x on select APIs (unlimited), Up to 10x on select APIs (shopify_plus)	SH-E-3945eec6
+CM-API-005	shopify	API call limits	Up to 500% higher (shopify_plus)	SH-E-f6463014
+CM-API-005	shopify	API rate limits	Standard	SH-E-2298a81a
+CM-API-005	shopify	API rate limits	Up to 2x on select APIs	SH-E-fb08b5fb
+CM-API-005	shopify	API rate limits	Up to 10x on select APIs	SH-E-cbbb2d75
+CM-API-005	shopify	API call limits	Up to 500% higher	SH-E-84e91ffb
+CM-PTN-008	shopify	earning period	for four years	SH-E-43ac022a

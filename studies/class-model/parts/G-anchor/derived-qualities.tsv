@@ -1,2 +1,3 @@
 cap_id	platform	quality	value	key	scope
 CM-MIG-005	salla	eligibility: the merchant's sales in the last 12 months	يجب أن يكون التاجر قد حقق مبيعات لا تقل عن 20,000 ريال سعودي خلال آخر 12 شهرًا	SA-C-302/decides/SA-S-5120	
+CM-OPS-001	shopify	platform uptime	99.9%	SH-E-de0b90b6	

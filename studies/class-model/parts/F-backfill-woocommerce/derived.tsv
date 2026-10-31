@@ -2,6 +2,6 @@ cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-API-012	salla	none-held					
 CM-API-012	shopify	none-held					
 CM-APP-011	salla	none-held					
-CM-APP-011	shopify	statements	own-service			SH-C-156/reason:searched, not found	general
+CM-APP-011	shopify	statements	own-service	editions-page-data | merchant-changelog	SH-E-1d272a37=Shopify Plus | SH-E-234dcbd7=Shopify Plus | SH-E-574e9524=Shopify Plus | SH-E-57cf12d4=Plus | SH-E-96109f43=Shopify Plus merchant | SH-E-f2d95634=US;Canada and Shopify Plus plan	SH-C-156/reason:searched, not found	general
 CM-APP-012	salla	none-held					
 CM-APP-012	shopify	none-held					

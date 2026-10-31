@@ -11,3 +11,101 @@ CM-POS-002	shopify	Stripe	SH-C-184/responsible/SH-S-0089
 CM-MKS-003	shopify	Global-e (the merchant of record)	SH-C-110/responsible/SH-S-0563
 CM-MKS-003	shopify	Global-e, under the Service Terms - Shopify Managed Markets	SH-C-110/responsible/SH-S-0127
 CM-MKS-006	shopify	Adyen (as the primary gateway)	SH-C-108/decides/SH-S-0545
+CM-CNT-002	shopify	Sanity	SH-E-64bfaaff
+CM-CNT-002	shopify	Sanity	SH-E-a2c6d918
+CM-CNT-002	shopify	Sanity	SH-E-25e4d162
+CM-CNT-002	shopify	Sanity	SH-E-25e4d162
+CM-POS-004	shopify	Stackable Discounts	SH-E-1c1d7284
+CM-POS-004	shopify	Zapiet	SH-E-1c1d7284
+CM-CHN-004	shopify	YouTube	SH-E-0bbdd469
+CM-CHN-004	shopify	YouTube	SH-E-49db0469
+CM-CHN-004	shopify	Twitter	SH-E-c35bf309
+CM-CHN-004	shopify	Google	SH-E-dc73c4db
+CM-CHN-004	shopify	Facebook	SH-E-14fb491e
+CM-CHN-004	shopify	Google	SH-E-5835be14
+CM-CHN-004	shopify	Google	SH-E-e9edbf2a
+CM-CHN-004	shopify	Pinterest	SH-E-d7c259a2
+CM-CHN-004	shopify	Google	SH-E-84aa1409
+CM-CHN-004	shopify	Google Shopping	SH-E-92c81f50
+CM-CHN-004	shopify	Google	SH-E-1f273f67
+CM-CHN-004	shopify	YouTube	SH-E-a961b8d5
+CM-CHN-004	shopify	YouTube	SH-E-f787042c
+CM-CHN-004	shopify	TikTok	SH-E-47a0b412
+CM-CHN-004	shopify	Amazon	SH-E-a147c7c1
+CM-CHN-004	shopify	TikTok	SH-E-320d69a9
+CM-CHN-004	shopify	Google	SH-E-d5671a72
+CM-CHN-004	shopify	YouTube	SH-E-d5671a72
+CM-CHN-004	shopify	Facebook	SH-E-d5671a72
+CM-CHN-004	shopify	Instagram	SH-E-d5671a72
+CM-CHN-001	shopify	Google	SH-E-90b81d95
+CM-CHN-001	shopify	YouTube	SH-E-49db0469
+CM-CHN-001	shopify	Twitter	SH-E-c35bf309
+CM-CHN-001	shopify	Google	SH-E-dc73c4db
+CM-CHN-001	shopify	Google	SH-E-5eb470e8
+CM-CHN-001	shopify	Instagram	SH-E-20ac6905
+CM-CHN-001	shopify	TikTok	SH-E-49553d41
+CM-CHN-001	shopify	Twitter	SH-E-e10d9bee
+CM-CHN-001	shopify	Twitter	SH-E-1881a170
+CM-CHN-001	shopify	Tik Tok	SH-E-1881a170
+CM-CHN-001	shopify	Spotify	SH-E-1881a170
+CM-CHN-001	shopify	YouTube	SH-E-a961b8d5
+CM-CHN-001	shopify	YouTube	SH-E-f787042c
+CM-CHN-001	shopify	TikTok	SH-E-47a0b412
+CM-CHN-001	shopify	TikTok	SH-E-320d69a9
+CM-CHN-001	shopify	Roblox	SH-E-20e44959
+CM-CHN-001	shopify	WordPress	SH-E-5b90f327
+CM-CHN-002	shopify	Tolstoy	SH-E-dbb09a4d
+CM-CHN-002	shopify	Videowise	SH-E-dbb09a4d
+CM-CHN-002	shopify	Foursixty	SH-E-e700f282
+CM-CHN-002	shopify	Supergreat	SH-E-e700f282
+CM-CHN-002	shopify	Tolstoy	SH-E-ee1a4e53
+CM-CHN-002	shopify	Zipify	SH-E-ee1a4e53
+CM-CHN-002	shopify	Tolstoy	SH-E-ee1a4e53
+CM-CHN-002	shopify	Tolstoy	SH-E-a5bde01e
+CM-CHN-002	shopify	Videowise	SH-E-a5bde01e
+CM-CHN-002	shopify	Showday	SH-E-a5bde01e
+CM-CHN-002	shopify	Tolstoy	SH-E-a5bde01e
+CM-CHN-002	shopify	Videowise	SH-E-a5bde01e
+CM-CHN-002	shopify	Showday	SH-E-a5bde01e
+CM-CHN-002	shopify	Simple Bundles	SH-E-e64ecfca
+CM-CHN-002	shopify	Zoorix	SH-E-e64ecfca
+CM-SFR-011	shopify	Vercel	SH-E-20c61060
+CM-SFR-011	shopify	Vercel	SH-E-ca1be573
+CM-SFR-011	shopify	Remix	SH-E-f8406c78
+CM-SFR-011	shopify	Remix	SH-E-f0bed13e
+CM-SFR-011	shopify	Remix	SH-E-ff926a34
+CM-SFR-011	shopify	Utopia	SH-E-d56bbb21
+CM-SFR-011	shopify	GitHub	SH-E-d56bbb21
+CM-SFR-011	shopify	Utopia	SH-E-6d96e871
+CM-SFR-011	shopify	GitHub	SH-E-6d96e871
+CM-SFR-011	shopify	Lovable	SH-E-bca897c1
+CM-SFR-011	shopify	Manus	SH-E-a1f29ae9
+CM-SFR-011	shopify	Replit	SH-E-a1f29ae9
+CM-SFR-011	shopify	V0	SH-E-a1f29ae9
+CM-SFR-011	shopify	Lovable	SH-E-a1f29ae9
+CM-MKS-003	shopify	Global-e	SH-E-6888cb05
+CM-MKS-003	shopify	Global-e	SH-E-f595384d
+CM-MKS-003	shopify	Global-e	SH-E-5f5a9d1d
+CM-MKS-003	shopify	Global-e	SH-E-e2e0cc14
+CM-MKS-003	shopify	Turkish authorities	SH-E-f438f3d7
+CM-MKS-003	shopify	DHL Express	SH-E-ab22e66d
+CM-CNT-007	shopify	Google	SH-E-5fa984ca
+CM-CHN-003	shopify	Amazon	SH-E-619edc55
+CM-CHN-003	shopify	Walmart	SH-E-619edc55
+CM-CHN-003	shopify	eBay	SH-E-619edc55
+CM-CHN-003	shopify	Etsy	SH-E-619edc55
+CM-CHN-003	shopify	Amazon	SH-E-f439781a
+CM-CHN-003	shopify	Walmart	SH-E-f439781a
+CM-CHN-003	shopify	eBay	SH-E-f439781a
+CM-CHN-003	shopify	Amazon	SH-E-76ec33a4
+CM-CHN-003	shopify	Walmart	SH-E-76ec33a4
+CM-CHN-003	shopify	eBay	SH-E-76ec33a4
+CM-CHN-003	shopify	Faire	SH-E-c2dd20bc
+CM-CHN-003	shopify	Amazon	SH-E-8306d5b4
+CM-CHN-003	shopify	Walmart	SH-E-8306d5b4
+CM-CHN-003	shopify	eBay	SH-E-8306d5b4
+CM-CHN-003	shopify	Amazon	SH-E-a147c7c1
+CM-CHN-003	shopify	Target	SH-E-4d7ffe28
+CM-CHN-003	shopify	Amazon	SH-E-1bff6f3d
+CM-SFR-003	shopify	Google Analytics	SH-E-62566748
+CM-MKS-006	shopify	EU Price Indication Directive	SH-E-92a0d0be

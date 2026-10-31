@@ -1,6 +1,6 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-CHK-010	salla	none-held					
-CM-CHK-010	shopify	none-held					
+CM-CHK-010	shopify	statements	own-service	editions | merchant-changelog			general
 CM-CHK-010	woocommerce	none-held					
 CM-CHK-010	zid	none-held					
 CM-SHP-023	salla	none-held					

@@ -1,1 +1,13 @@
 cap_id	platform	quality	value	key	scope
+CM-SRF-001	shopify	minimum OS requirement	The app now requires Android 11 or later	SH-E-fd44f43d	
+CM-SRF-001	shopify	device	iOS (Pro models), with iOS 17	SH-E-b15ce11f	
+CM-SRF-001	shopify	devices	Apple devices using iOS version 10 or higher	SH-E-835c0aed	
+CM-OPS-003	shopify	points of presence	270 points of presence around the world	SH-E-df3b3c3a	
+CM-OPS-003	shopify	price	for no extra cost	SH-E-d7f20d40	all plans except Starter
+CM-OPS-003	shopify	bandwidth	نطاق ترددي غير محدود	SH-E-56fdc3fe	Basic;Grow;Advanced;Plus
+CM-OPS-003	shopify	bandwidth	نطاقًا تردديًا غير محدود (بدون رسوم نطاق ترددي)	SH-E-f35bf9c2	
+CM-OPS-003	shopify	bandwidth	unlimited bandwidth	SH-E-29fc9307	Basic;Grow;Advanced;Plus
+CM-OPS-003	shopify	bandwidth	unlimited bandwidth (no bandwidth fees)	SH-E-737a2561	
+CM-OPS-003	shopify	bandwidth	unlimited bandwidth	SH-E-71507bc7	Starter;Basic;Grow;Advanced;Plus
+CM-OPS-003	shopify	web hosting	Unlimited	SH-E-48331c7d	Basic;Grow;Advanced;Plus
+CM-OPS-003	shopify	bandwidth	unlimited bandwidth (no bandwidth fees)	SH-E-728858eb	www.shopify.com

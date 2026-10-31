@@ -1,11 +1,11 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-ACC-009	salla	none-held					
-CM-ACC-009	shopify	statements	core				general
+CM-ACC-009	shopify	statements	core	admin-home-setup | editions | merchant-changelog | mobile-app-navigation	SH-E-e1ac6967=newly created development stores		general
 CM-ACC-010	salla	none-held					
 CM-ACC-010	shopify	none-held					
 CM-ACC-011	salla	none-held					
 CM-ACC-011	shopify	none-held					
 CM-ONB-004	salla	none-held					
-CM-ONB-004	shopify	none-held					
+CM-ONB-004	shopify	statements	core	admin-home-setup | admin-main-nav | merchant-changelog | mobile-app-navigation | mobile-app-settings-index | shopify-com-header-nav | signup-onboarding-questions | signup-router	SH-E-17a20b41=Plus | SH-E-21c1d264=ctcbwa-r1@2026-09-30;fake-demo-sharrwah@2026-09-30 | SH-E-220db6fa=Plus | SH-E-28bb0660=EU | SH-E-35ba470e=ibx5bt-xy@2026-09-30;ibx5bt-xy@2026-10-01-trial | SH-E-5c0b8880=fake-demo-sharrwah@2026-10-01-trial | SH-E-60f56793='basic plan and up' | SH-E-b1fd7a12=Plus | SH-E-bec81020=EU | SH-E-fd8fb9f8=fake-demo-sharrwah@2026-10-04-paid-failed-bill;fake-demo-sharrwah@2026-10-05-staff-customer-support		general
 CM-TRU-021	salla	none-held					
 CM-TRU-021	shopify	none-held					

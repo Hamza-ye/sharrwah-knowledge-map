@@ -101,3 +101,913 @@ CM-SHP-015	salla	امباور, scope Kuwait	SA-C-141/responsible/SA-S-5064
 CM-PAY-011	salla	Mokafaa Al Rajhi (مكافأة الراجحي)	S01-SA-107
 CM-PAY-003	shopify	WorldFirst (China)	S02-SH-582
 CM-TAX-008	shopify	Avalara	S02-SH-295
+CM-PAY-001	shopify	Truemed	SH-E-daa046f5
+CM-SHP-001	shopify	DHL Express	SH-E-8c6708d0
+CM-CHK-001	shopify	MaltaPost	SH-E-7c8dab34
+CM-CHK-001	shopify	Mexican government	SH-E-e4278b2b
+CM-CHK-001	shopify	TikTok	SH-E-f7f57f39
+CM-PAY-026	shopify	new legal requirements in Texas	SH-E-8c6d23fe
+CM-PAY-026	shopify	WebBank	SH-E-25bf235d
+CM-PAY-026	shopify	WebBank	SH-E-b5dfd828
+CM-PAY-026	shopify	WebBank	SH-E-6dd1d4ba
+CM-PAY-026	shopify	Westpac	SH-E-2d1ab06b
+CM-PAY-026	shopify	WebBank	SH-E-580b8323
+CM-PAY-026	shopify	Peoples Bank	SH-E-c57bf642
+CM-PAY-026	shopify	WebBank	SH-E-6716ac98
+CM-PAY-026	shopify	WebBank	SH-E-9c011288
+CM-PAY-026	shopify	WebBank	SH-E-950e682c
+CM-PAY-026	shopify	WebBank	SH-E-1d0c912c
+CM-PAY-026	shopify	Youlend	SH-E-440e58ad
+CM-PAY-026	shopify	WebBank	SH-E-a1ebf148
+CM-PAY-026	shopify	WebBank	SH-E-2ee26aff
+CM-PAY-026	shopify	WebBank	SH-E-92d37040
+CM-PAY-026	shopify	WebBank	SH-E-991ff869
+CM-PAY-026	shopify	WebBank	SH-E-dfcc663c
+CM-PAY-026	shopify	WebBank	SH-E-b558b352
+CM-PAY-026	shopify	WebBank	SH-E-d1c612dc
+CM-PAY-026	shopify	WebBank	SH-E-c1234226
+CM-PAY-026	shopify	WebBank	SH-E-18ba5476
+CM-PAY-026	shopify	WebBank	SH-E-355fb732
+CM-PAY-026	shopify	WebBank	SH-E-e9ed0503
+CM-PAY-026	shopify	WebBank	SH-E-a354e1b2
+CM-PAY-026	shopify	Youlend	SH-E-17b43d9c
+CM-PAY-026	shopify	WebBank	SH-E-323a15b4
+CM-PAY-026	shopify	WebBank	SH-E-2e1c0e7b
+CM-PAY-026	shopify	WebBank	SH-E-d2cc3850
+CM-PAY-024	shopify	Visa	SH-E-9fe744cf
+CM-PAY-024	shopify	Stripe	SH-E-25bf235d
+CM-PAY-024	shopify	Celtic Bank	SH-E-25bf235d
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-25bf235d
+CM-PAY-024	shopify	Stripe	SH-E-b5dfd828
+CM-PAY-024	shopify	Celtic Bank	SH-E-b5dfd828
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-b5dfd828
+CM-PAY-024	shopify	Stripe	SH-E-6dd1d4ba
+CM-PAY-024	shopify	Celtic Bank	SH-E-6dd1d4ba
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-6dd1d4ba
+CM-PAY-024	shopify	Stripe	SH-E-580b8323
+CM-PAY-024	shopify	Celtic Bank	SH-E-580b8323
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-580b8323
+CM-PAY-024	shopify	Stripe	SH-E-6716ac98
+CM-PAY-024	shopify	Celtic Bank	SH-E-6716ac98
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-6716ac98
+CM-PAY-024	shopify	Stripe	SH-E-9c011288
+CM-PAY-024	shopify	Celtic Bank	SH-E-9c011288
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-9c011288
+CM-PAY-024	shopify	Stripe	SH-E-950e682c
+CM-PAY-024	shopify	Celtic Bank	SH-E-950e682c
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-950e682c
+CM-PAY-024	shopify	Stripe	SH-E-1d0c912c
+CM-PAY-024	shopify	Celtic Bank	SH-E-1d0c912c
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-1d0c912c
+CM-PAY-024	shopify	Stripe	SH-E-a1ebf148
+CM-PAY-024	shopify	Celtic Bank	SH-E-a1ebf148
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-a1ebf148
+CM-PAY-024	shopify	Stripe	SH-E-2ee26aff
+CM-PAY-024	shopify	Celtic Bank	SH-E-2ee26aff
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-2ee26aff
+CM-PAY-024	shopify	Stripe	SH-E-92d37040
+CM-PAY-024	shopify	Celtic Bank	SH-E-92d37040
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-92d37040
+CM-PAY-024	shopify	Stripe	SH-E-991ff869
+CM-PAY-024	shopify	Celtic Bank	SH-E-991ff869
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-991ff869
+CM-PAY-024	shopify	Stripe	SH-E-dfcc663c
+CM-PAY-024	shopify	Celtic Bank	SH-E-dfcc663c
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-dfcc663c
+CM-PAY-024	shopify	Stripe	SH-E-b558b352
+CM-PAY-024	shopify	Celtic Bank	SH-E-b558b352
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-b558b352
+CM-PAY-024	shopify	Stripe	SH-E-d1c612dc
+CM-PAY-024	shopify	Celtic Bank	SH-E-d1c612dc
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-d1c612dc
+CM-PAY-024	shopify	Stripe	SH-E-c1234226
+CM-PAY-024	shopify	Celtic Bank	SH-E-c1234226
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-c1234226
+CM-PAY-024	shopify	Stripe	SH-E-18ba5476
+CM-PAY-024	shopify	Celtic Bank	SH-E-18ba5476
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-18ba5476
+CM-PAY-024	shopify	Stripe	SH-E-355fb732
+CM-PAY-024	shopify	Celtic Bank	SH-E-355fb732
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-355fb732
+CM-PAY-024	shopify	Stripe	SH-E-e9ed0503
+CM-PAY-024	shopify	Celtic Bank	SH-E-e9ed0503
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-e9ed0503
+CM-PAY-024	shopify	Stripe	SH-E-a354e1b2
+CM-PAY-024	shopify	Celtic Bank	SH-E-a354e1b2
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-a354e1b2
+CM-PAY-024	shopify	Stripe	SH-E-323a15b4
+CM-PAY-024	shopify	Celtic Bank	SH-E-323a15b4
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-323a15b4
+CM-PAY-024	shopify	Stripe	SH-E-2e1c0e7b
+CM-PAY-024	shopify	Celtic Bank	SH-E-2e1c0e7b
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-2e1c0e7b
+CM-PAY-024	shopify	Stripe	SH-E-d2cc3850
+CM-PAY-024	shopify	Celtic Bank	SH-E-d2cc3850
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-E-d2cc3850
+CM-SHP-017	shopify	99 Minutos	SH-E-c023a671
+CM-SHP-017	shopify	Aeronet	SH-E-29926e32
+CM-SHP-017	shopify	AGS	SH-E-9454cc97
+CM-SHP-017	shopify	Amazon	SH-E-16c65a81
+CM-SHP-017	shopify	Amazon Fulfillment	SH-E-e01b5e73
+CM-SHP-017	shopify	Amazon Logistics Canada	SH-E-ee13e738
+CM-SHP-017	shopify	Amazon Logistics UK	SH-E-ce070e90
+CM-SHP-017	shopify	Amm Spedition	SH-E-1ae15a3b
+CM-SHP-017	shopify	An Post	SH-E-4741a27e
+CM-SHP-017	shopify	ANDREANI	SH-E-b43a1ad7
+CM-SHP-017	shopify	Anjun Logistics	SH-E-cb301978
+CM-SHP-017	shopify	APC Postal Logistics	SH-E-64c79280
+CM-SHP-017	shopify	APG eCommerce Solutions Ltd.	SH-E-98dfd4fe
+CM-SHP-017	shopify	Apple Express	SH-E-f0262833
+CM-SHP-017	shopify	Aruba Post	SH-E-50a297ca
+CM-SHP-017	shopify	Asendia USA	SH-E-511c16c1
+CM-SHP-017	shopify	ASL Canada	SH-E-483a2425
+CM-SHP-017	shopify	ATS Healthcare	SH-E-741b7ea5
+CM-SHP-017	shopify	Australia Post	SH-E-3d2553cb
+CM-SHP-017	shopify	Australia Post MyPost Business	SH-E-279f1d3f
+CM-SHP-017	shopify	AxleHire	SH-E-d68d411b
+CM-SHP-017	shopify	Better Trucks	SH-E-7c2391a5
+CM-SHP-017	shopify	Bonshaw	SH-E-9f6463f5
+CM-SHP-017	shopify	Border Express	SH-E-fe735d0b
+CM-SHP-017	shopify	BoxKnight	SH-E-64755c37
+CM-SHP-017	shopify	Bpost	SH-E-a0a5215d
+CM-SHP-017	shopify	Bpost international	SH-E-419f9b00
+CM-SHP-017	shopify	Canada Post	SH-E-6ec6af84
+CM-SHP-017	shopify	Canpar Courier	SH-E-0a4c113f
+CM-SHP-017	shopify	Cargo Expreso GT	SH-E-3a807b9c
+CM-SHP-017	shopify	Cargo Expreso SV	SH-E-9a39aaa8
+CM-SHP-017	shopify	Caribou	SH-E-00a6dfa4
+CM-SHP-017	shopify	CDEK	SH-E-4f5c0508
+CM-SHP-017	shopify	CDL	SH-E-96ede3c7
+CM-SHP-017	shopify	CEVA logistics	SH-E-6703dbdb
+CM-SHP-017	shopify	Chilexpress	SH-E-4918c507
+CM-SHP-017	shopify	China EMS	SH-E-bb39823f
+CM-SHP-017	shopify	China Post	SH-E-e1eed77f
+CM-SHP-017	shopify	Chit Chats	SH-E-5deba4e9
+CM-SHP-017	shopify	Chronopost	SH-E-8ca08d58
+CM-SHP-017	shopify	Chukou1	SH-E-029ef615
+CM-SHP-017	shopify	CNE Express	SH-E-a560dae8
+CM-SHP-017	shopify	Colissimo	SH-E-b648ad99
+CM-SHP-017	shopify	Comingle	SH-E-223fd098
+CM-SHP-017	shopify	Coordinadora	SH-E-ebe4606c
+CM-SHP-017	shopify	Correios	SH-E-e27b887b
+CM-SHP-017	shopify	Correos	SH-E-69ecb8d0
+CM-SHP-017	shopify	Correos Express	SH-E-11088cb1
+CM-SHP-017	shopify	CTT	SH-E-ddae715a
+CM-SHP-017	shopify	CTT Express	SH-E-7696ca0e
+CM-SHP-017	shopify	Cyprus Post	SH-E-20b6645f
+CM-SHP-017	shopify	Deliver It	SH-E-ef58a49d
+CM-SHP-017	shopify	Delnext	SH-E-d5c454d5
+CM-SHP-017	shopify	Deprisa	SH-E-1704f6ce
+CM-SHP-017	shopify	DHL eCommerce	SH-E-84fcde9a
+CM-SHP-017	shopify	DHL eCommerce Asia	SH-E-dae6c778
+CM-SHP-017	shopify	DHL Express	SH-E-59eb58fb
+CM-SHP-017	shopify	DHL Global Mail Asia	SH-E-9cc8cfc6
+CM-SHP-017	shopify	DHL Sweden	SH-E-3ce8711d
+CM-SHP-017	shopify	Dimerco Express Group	SH-E-54a0501e
+CM-SHP-017	shopify	DoorDash	SH-E-37c6846d
+CM-SHP-017	shopify	DPD	SH-E-b1aef751
+CM-SHP-017	shopify	DPD Belgium	SH-E-4ce34af0
+CM-SHP-017	shopify	DPD Germany	SH-E-273bfb2c
+CM-SHP-017	shopify	DPD Hungary	SH-E-cd2b3f30
+CM-SHP-017	shopify	DPD Local	SH-E-189a2643
+CM-SHP-017	shopify	DPD UK	SH-E-e03d853b
+CM-SHP-017	shopify	DTD Express	SH-E-1c108eeb
+CM-SHP-017	shopify	DX	SH-E-02be4886
+CM-SHP-017	shopify	Dynamex	SH-E-f1e323d3
+CM-SHP-017	shopify	Eagle	SH-E-41011b11
+CM-SHP-017	shopify	Emile Express	SH-E-5a6c767d
+CM-SHP-017	shopify	Emons	SH-E-897e3ba0
+CM-SHP-017	shopify	Estafeta	SH-E-36d837de
+CM-SHP-017	shopify	Estes	SH-E-a104367b
+CM-SHP-017	shopify	Evri	SH-E-fef775b6
+CM-SHP-017	shopify	FedEx	SH-E-4a3787a5
+CM-SHP-017	shopify	FedEx Freight	SH-E-76b62fff
+CM-SHP-017	shopify	First Global Logistics	SH-E-3ab77d44
+CM-SHP-017	shopify	First Line	SH-E-6f2940c4
+CM-SHP-017	shopify	Fleet Optics	SH-E-5a28d0a7
+CM-SHP-017	shopify	FSC	SH-E-133d011a
+CM-SHP-017	shopify	Fulfilla	SH-E-2043bb43
+CM-SHP-017	shopify	Gaash	SH-E-05c62efe
+CM-SHP-017	shopify	GLS	SH-E-87d97ac5
+CM-SHP-017	shopify	GLS Canada	SH-E-8472ffd1
+CM-SHP-017	shopify	GoBolt	SH-E-cf360cbc
+CM-SHP-017	shopify	GP Logistic Service	SH-E-6a998129
+CM-SHP-017	shopify	Grupo ampm	SH-E-566a9e8d
+CM-SHP-017	shopify	Guangdong Weisuyi Information Technology (WSE)	SH-E-444b75de
+CM-SHP-017	shopify	Hanjin	SH-E-d79a8dfb
+CM-SHP-017	shopify	Heppner Internationale Spedition GmbH & Co.	SH-E-b435d5c1
+CM-SHP-017	shopify	HR Parcel	SH-E-0cecdc9a
+CM-SHP-017	shopify	Iceland Post	SH-E-f0a2b236
+CM-SHP-017	shopify	IDEX	SH-E-231d7f0e
+CM-SHP-017	shopify	Intelcom	SH-E-6cf08bc3
+CM-SHP-017	shopify	Interparcel	SH-E-47911c36
+CM-SHP-017	shopify	Israel Post	SH-E-6c983b39
+CM-SHP-017	shopify	Japan Post	SH-E-a1cf48aa
+CM-SHP-017	shopify	Kerry Express Thailand	SH-E-792a2e2c
+CM-SHP-017	shopify	La Poste Burkina Faso	SH-E-a061b60c
+CM-SHP-017	shopify	La Poste Colissimo	SH-E-21a34cb3
+CM-SHP-017	shopify	Landmark Global	SH-E-a642ebcd
+CM-SHP-017	shopify	Landmark Global Reference	SH-E-f603b081
+CM-SHP-017	shopify	LaserShip	SH-E-d39fd629
+CM-SHP-017	shopify	Latin Logistics - Avianca	SH-E-9b5db414
+CM-SHP-017	shopify	Latvia Post	SH-E-8cac961f
+CM-SHP-017	shopify	Libya Post	SH-E-6c0fe769
+CM-SHP-017	shopify	Lietuvos Paštas	SH-E-9a9a0502
+CM-SHP-017	shopify	Logisters	SH-E-0c69ea41
+CM-SHP-017	shopify	Loomis Express	SH-E-b0315797
+CM-SHP-017	shopify	M3 Logistics	SH-E-e0becbf0
+CM-SHP-017	shopify	Maldives Post	SH-E-8aeaca03
+CM-SHP-017	shopify	Mauritius Post	SH-E-0d2ac6b4
+CM-SHP-017	shopify	Mayple	SH-E-6a66d511
+CM-SHP-017	shopify	Meteor Space	SH-E-b1adb413
+CM-SHP-017	shopify	Mondial Relay	SH-E-d05ea638
+CM-SHP-017	shopify	moovin	SH-E-fc715d4f
+CM-SHP-017	shopify	MyTeamGE	SH-E-b01daf8d
+CM-SHP-017	shopify	Naqel Express	SH-E-fdb7fe39
+CM-SHP-017	shopify	NCS	SH-E-7ea48f87
+CM-SHP-017	shopify	New Zealand Post	SH-E-71d44ebe
+CM-SHP-017	shopify	Ninja Van	SH-E-06cd1508
+CM-SHP-017	shopify	NonstopDelivery	SH-E-4ff1f5f1
+CM-SHP-017	shopify	North Russia Supply Chain (Shenzhen) Co.	SH-E-9d377341
+CM-SHP-017	shopify	NOX Germany	SH-E-45abad6b
+CM-SHP-017	shopify	OnTrac	SH-E-eecfc72a
+CM-SHP-017	shopify	OPT-NC	SH-E-1679115b
+CM-SHP-017	shopify	Packeta	SH-E-88d23a75
+CM-SHP-017	shopify	Pago Logistics	SH-E-6cce8f4b
+CM-SHP-017	shopify	Pasar	SH-E-3fc86a26
+CM-SHP-017	shopify	Passport	SH-E-48afed2e
+CM-SHP-017	shopify	Pilot Freight Services	SH-E-9bb65aa3
+CM-SHP-017	shopify	Ping An Da Tengfei Express	SH-E-bdf65916
+CM-SHP-017	shopify	Pitney Bowes	SH-E-2adae2da
+CM-SHP-017	shopify	Portal PostNord	SH-E-9d2f5cd6
+CM-SHP-017	shopify	Poste Italiane	SH-E-24ce044e
+CM-SHP-017	shopify	PostNL	SH-E-ccf2aa7b
+CM-SHP-017	shopify	PostNL International	SH-E-9a57b7ca
+CM-SHP-017	shopify	PostNord Denmark	SH-E-58271290
+CM-SHP-017	shopify	PostNord Norway	SH-E-07524e05
+CM-SHP-017	shopify	PostNord Sweden	SH-E-d0c381e0
+CM-SHP-017	shopify	Purolator	SH-E-d6b93548
+CM-SHP-017	shopify	Qxpress	SH-E-f0d8d06d
+CM-SHP-017	shopify	Qyun Express	SH-E-11dec377
+CM-SHP-017	shopify	Royal Mail	SH-E-fdb8d76e
+CM-SHP-017	shopify	Royal Shipments	SH-E-2fbe57bd
+CM-SHP-017	shopify	S.F International	SH-E-5e844f05
+CM-SHP-017	shopify	Sagawa	SH-E-a6344e4c
+CM-SHP-017	shopify	SEKO Logistics	SH-E-d0a773a1
+CM-SHP-017	shopify	Sendle	SH-E-60f20944
+CM-SHP-017	shopify	Servientrega Ecuador	SH-E-63e3389c
+CM-SHP-017	shopify	SF Express	SH-E-4a12e01e
+CM-SHP-017	shopify	SFC Fulfillment	SH-E-e6223cdb
+CM-SHP-017	shopify	ShipBob	SH-E-df8e3692
+CM-SHP-017	shopify	SHREE NANDAN COURIER	SH-E-41b11f71
+CM-SHP-017	shopify	Singapore Post	SH-E-b7b221b8
+CM-SHP-017	shopify	SmartCat	SH-E-3d8d552a
+CM-SHP-017	shopify	Southwest Air Cargo	SH-E-a945def9
+CM-SHP-017	shopify	Spee-Dee Delivery Service	SH-E-7a5a4dae
+CM-SHP-017	shopify	SpeedX	SH-E-2dc6d836
+CM-SHP-017	shopify	Sprinter	SH-E-be075562
+CM-SHP-017	shopify	StarTrack	SH-E-ebbba6f8
+CM-SHP-017	shopify	Step Forward Freight	SH-E-40eca9eb
+CM-SHP-017	shopify	Straightship	SH-E-73228982
+CM-SHP-017	shopify	Surpost	SH-E-128116be
+CM-SHP-017	shopify	SwiftX	SH-E-afd80048
+CM-SHP-017	shopify	Swiship DE	SH-E-4d9e7731
+CM-SHP-017	shopify	Swiss Post	SH-E-a380c8b4
+CM-SHP-017	shopify	Tele Post	SH-E-451d9340
+CM-SHP-017	shopify	TForce Final Mile	SH-E-db73d210
+CM-SHP-017	shopify	Tinghao	SH-E-1e7f2f7d
+CM-SHP-017	shopify	TNT	SH-E-c6c929e3
+CM-SHP-017	shopify	TNT Reference	SH-E-df634e5f
+CM-SHP-017	shopify	TNT UK	SH-E-1c72a411
+CM-SHP-017	shopify	TNT UK Reference	SH-E-1c2ee648
+CM-SHP-017	shopify	Toll IPEC	SH-E-2b03f4ea
+CM-SHP-017	shopify	Trexity	SH-E-fb4c0cfd
+CM-SHP-017	shopify	Tuffnells Parcels Express	SH-E-79882e75
+CM-SHP-017	shopify	Uni Uni	SH-E-d085631d
+CM-SHP-017	shopify	United Delivery Service	SH-E-dafe65f1
+CM-SHP-017	shopify	UPS	SH-E-47264f35
+CM-SHP-017	shopify	UPS Canada	SH-E-40455b27
+CM-SHP-017	shopify	USPS	SH-E-8fc69e8d
+CM-SHP-017	shopify	Veho	SH-E-54fd6712
+CM-SHP-017	shopify	Venipak	SH-E-ef93341b
+CM-SHP-017	shopify	We Pick Up	SH-E-846d97c1
+CM-SHP-017	shopify	We Post	SH-E-c31df16e
+CM-SHP-017	shopify	Whistl	SH-E-3b561093
+CM-SHP-017	shopify	Wizmo	SH-E-92d61087
+CM-SHP-017	shopify	WMYC	SH-E-b8f98980
+CM-SHP-017	shopify	Xpedigo	SH-E-9b6282f3
+CM-SHP-017	shopify	XPO Logistics	SH-E-6ffc66e0
+CM-SHP-017	shopify	XYY Logistics	SH-E-77261d92
+CM-SHP-017	shopify	Yamato	SH-E-93c34ff2
+CM-SHP-017	shopify	YDH	SH-E-987b0fe4
+CM-SHP-017	shopify	YiFan Express	SH-E-c6d3f033
+CM-SHP-017	shopify	YunExpress	SH-E-f0dca1c0
+CM-SHP-017	shopify	YYZ Logistics	SH-E-c3d5ed98
+CM-SHP-017	shopify	ヤマト運輸	SH-E-0d933fd0
+CM-SHP-017	shopify	佐川急便	SH-E-60a56047
+CM-SHP-017	shopify	日本郵便	SH-E-a21c9eec
+CM-SHP-017	shopify	DHL Express	SH-E-2ae24465
+CM-SHP-017	shopify	Australia Post	SH-E-55085b91
+CM-SHP-017	shopify	Ecohai	SH-E-fb2b5c10
+CM-SHP-017	shopify	Meitetsu Transportation	SH-E-fb2b5c10
+CM-SHP-017	shopify	Daiichi Freight System	SH-E-fb2b5c10
+CM-SHP-017	shopify	Seino Super Express	SH-E-fb2b5c10
+CM-SHP-017	shopify	Seino Transportation	SH-E-64041eb6
+CM-SHP-017	shopify	Nippon Express	SH-E-64041eb6
+CM-SHP-017	shopify	Fukuyama Transportation	SH-E-64041eb6
+CM-SHP-017	shopify	Deutsche Post	SH-E-9aea8a57
+CM-SHP-017	shopify	FedEx	SH-E-67521b91
+CM-SHP-017	shopify	Uber Direct	SH-E-385b5476
+CM-SHP-017	shopify	DHL	SH-E-80af8898
+CM-SHP-017	shopify	EVRi	SH-E-80af8898
+CM-SHP-017	shopify	Australia Post	SH-E-80af8898
+CM-RET-003	shopify	Aftership	SH-E-3f24c9d1
+CM-RET-003	shopify	Loop	SH-E-3f24c9d1
+CM-RET-003	shopify	Navar	SH-E-3f24c9d1
+CM-RET-003	shopify	Redo	SH-E-3f24c9d1
+CM-RET-003	shopify	Loop Returns	SH-E-eaef80dc
+CM-PAY-002	shopify	Discover	SH-E-f7c99683
+CM-PAY-002	shopify	Diners Club	SH-E-f7c99683
+CM-PAY-002	shopify	Diners Club	SH-E-562aff73
+CM-PAY-002	shopify	Discover	SH-E-562aff73
+CM-PAY-002	shopify	Maestro	SH-E-66195548
+CM-SHP-004	shopify	DHL Express	SH-E-6164f82b
+CM-PAY-009	shopify	PayPal	SH-E-2b9996be
+CM-PAY-009	shopify	PayPal	SH-E-124a02ba
+CM-ORD-005	shopify	Crstl	SH-E-d7ef6efa
+CM-ORD-005	shopify	SPS Commerce	SH-E-d7ef6efa
+CM-PAY-015	shopify	Klarna	SH-E-8dfc09fc
+CM-PAY-015	shopify	Klarna	SH-E-89cd2b77
+CM-PAY-015	shopify	Klarna	SH-E-89e5e282
+CM-PAY-015	shopify	Klarna	SH-E-b51eb547
+CM-PAY-015	shopify	Klarna	SH-E-71d4650c
+CM-PAY-025	shopify	new legal requirements in Texas	SH-E-57887272
+CM-PAY-025	shopify	Visa	SH-E-1989a3fe
+CM-PAY-025	shopify	Stripe	SH-E-25bf235d
+CM-PAY-025	shopify	Celtic Bank	SH-E-25bf235d
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-25bf235d
+CM-PAY-025	shopify	Stripe	SH-E-b5dfd828
+CM-PAY-025	shopify	Celtic Bank	SH-E-b5dfd828
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-b5dfd828
+CM-PAY-025	shopify	Stripe	SH-E-6dd1d4ba
+CM-PAY-025	shopify	Celtic Bank	SH-E-6dd1d4ba
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-6dd1d4ba
+CM-PAY-025	shopify	Stripe	SH-E-580b8323
+CM-PAY-025	shopify	Celtic Bank	SH-E-580b8323
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-580b8323
+CM-PAY-025	shopify	Stripe	SH-E-6716ac98
+CM-PAY-025	shopify	Celtic Bank	SH-E-6716ac98
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-6716ac98
+CM-PAY-025	shopify	Stripe	SH-E-9c011288
+CM-PAY-025	shopify	Celtic Bank	SH-E-9c011288
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-9c011288
+CM-PAY-025	shopify	Stripe	SH-E-950e682c
+CM-PAY-025	shopify	Celtic Bank	SH-E-950e682c
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-950e682c
+CM-PAY-025	shopify	Stripe	SH-E-1d0c912c
+CM-PAY-025	shopify	Celtic Bank	SH-E-1d0c912c
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-1d0c912c
+CM-PAY-025	shopify	Stripe	SH-E-a1ebf148
+CM-PAY-025	shopify	Celtic Bank	SH-E-a1ebf148
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-a1ebf148
+CM-PAY-025	shopify	Stripe	SH-E-2ee26aff
+CM-PAY-025	shopify	Celtic Bank	SH-E-2ee26aff
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-2ee26aff
+CM-PAY-025	shopify	Stripe	SH-E-92d37040
+CM-PAY-025	shopify	Celtic Bank	SH-E-92d37040
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-92d37040
+CM-PAY-025	shopify	Stripe	SH-E-991ff869
+CM-PAY-025	shopify	Celtic Bank	SH-E-991ff869
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-991ff869
+CM-PAY-025	shopify	Stripe	SH-E-dfcc663c
+CM-PAY-025	shopify	Celtic Bank	SH-E-dfcc663c
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-dfcc663c
+CM-PAY-025	shopify	Stripe	SH-E-b558b352
+CM-PAY-025	shopify	Celtic Bank	SH-E-b558b352
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-b558b352
+CM-PAY-025	shopify	Stripe	SH-E-d1c612dc
+CM-PAY-025	shopify	Celtic Bank	SH-E-d1c612dc
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-d1c612dc
+CM-PAY-025	shopify	Stripe	SH-E-c1234226
+CM-PAY-025	shopify	Celtic Bank	SH-E-c1234226
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-c1234226
+CM-PAY-025	shopify	Stripe	SH-E-18ba5476
+CM-PAY-025	shopify	Celtic Bank	SH-E-18ba5476
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-18ba5476
+CM-PAY-025	shopify	Stripe	SH-E-355fb732
+CM-PAY-025	shopify	Celtic Bank	SH-E-355fb732
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-355fb732
+CM-PAY-025	shopify	Stripe	SH-E-e9ed0503
+CM-PAY-025	shopify	Celtic Bank	SH-E-e9ed0503
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-e9ed0503
+CM-PAY-025	shopify	Stripe	SH-E-a354e1b2
+CM-PAY-025	shopify	Celtic Bank	SH-E-a354e1b2
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-a354e1b2
+CM-PAY-025	shopify	Stripe	SH-E-323a15b4
+CM-PAY-025	shopify	Celtic Bank	SH-E-323a15b4
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-323a15b4
+CM-PAY-025	shopify	Stripe	SH-E-2e1c0e7b
+CM-PAY-025	shopify	Celtic Bank	SH-E-2e1c0e7b
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-2e1c0e7b
+CM-PAY-025	shopify	Stripe	SH-E-d2cc3850
+CM-PAY-025	shopify	Celtic Bank	SH-E-d2cc3850
+CM-PAY-025	shopify	Visa U.S.A. Inc.	SH-E-d2cc3850
+CM-SHP-011	shopify	ShipStation	SH-E-89750b1d
+CM-SHP-011	shopify	ShipBob	SH-E-89750b1d
+CM-SHP-003	shopify	Shipsurance	SH-E-a2853542
+CM-SHP-002	shopify	DHL Express	SH-E-4a6e5110
+CM-SHP-002	shopify	DHL Express	SH-E-2ae24465
+CM-SHP-002	shopify	UPS	SH-E-b9fc95b9
+CM-SHP-002	shopify	DHL Express	SH-E-f595384d
+CM-SHP-002	shopify	FedEx	SH-E-f595384d
+CM-SHP-002	shopify	FedEx	SH-E-a4400856
+CM-SHP-002	shopify	DHL	SH-E-1fb51fc6
+CM-SHP-002	shopify	Australia Post	SH-E-55085b91
+CM-SHP-002	shopify	EU	SH-E-5669dc6b
+CM-SHP-002	shopify	FedEx	SH-E-6b7fbd56
+CM-SHP-002	shopify	DHL Express	SH-E-6b7fbd56
+CM-SHP-002	shopify	DHL eCommerce	SH-E-d4730476
+CM-SHP-002	shopify	Canada Post	SH-E-da6a8538
+CM-SHP-002	shopify	Royal Mail	SH-E-f4a5b07d
+CM-SHP-002	shopify	Australia Post	SH-E-19698de3
+CM-SHP-002	shopify	DHL Express	SH-E-f61cfb93
+CM-SHP-002	shopify	DHL eCommerce	SH-E-f61cfb93
+CM-SHP-002	shopify	DHL Express	SH-E-f61cfb93
+CM-SHP-002	shopify	Windsor Framework	SH-E-c218e65b
+CM-SHP-002	shopify	Purolator	SH-E-e8a5b695
+CM-SHP-002	shopify	DHL eCommerce	SH-E-b633b705
+CM-SHP-002	shopify	USPS	SH-E-b633b705
+CM-SHP-002	shopify	UPS	SH-E-b0067b2c
+CM-SHP-002	shopify	UPS	SH-E-80582147
+CM-SHP-002	shopify	DHL eCommerce	SH-E-80582147
+CM-SHP-002	shopify	DHL Express	SH-E-80582147
+CM-SHP-002	shopify	Evri	SH-E-fbee6206
+CM-SHP-002	shopify	Correos	SH-E-fbee6206
+CM-SHP-002	shopify	DHL Express	SH-E-ab22e66d
+CM-SHP-002	shopify	DHL Express	SH-E-7ea7c76b
+CM-SHP-002	shopify	DHL eCommerce	SH-E-7699e9e6
+CM-SHP-002	shopify	USPS	SH-E-7699e9e6
+CM-SHP-002	shopify	DHL Express	SH-E-7699e9e6
+CM-SHP-002	shopify	DHL Express	SH-E-82de2974
+CM-SHP-002	shopify	EU customs regulations	SH-E-f6dfe38b
+CM-SHP-002	shopify	DPD	SH-E-51c11bef
+CM-SHP-002	shopify	Hermes	SH-E-51c11bef
+CM-SHP-002	shopify	USPS	SH-E-843a0294
+CM-SHP-002	shopify	UPS	SH-E-843a0294
+CM-SHP-002	shopify	DHL	SH-E-843a0294
+CM-SHP-002	shopify	USPS	SH-E-f768ce89
+CM-SHP-002	shopify	USPS	SH-E-96de4fb5
+CM-SHP-002	shopify	Sendle	SH-E-b3a9be09
+CM-SHP-002	shopify	USPS	SH-E-4bb80560
+CM-SHP-002	shopify	USPS	SH-E-4bb80560
+CM-SHP-002	shopify	Canada Post	SH-E-1f63f315
+CM-SHP-002	shopify	UPS	SH-E-b5bcd894
+CM-SHP-002	shopify	DHL Express	SH-E-73af70bb
+CM-SHP-002	shopify	DHL eCommerce	SH-E-95fbe447
+CM-SHP-002	shopify	UPS	SH-E-928f05bc
+CM-SHP-002	shopify	Canada Post	SH-E-0ddce72f
+CM-SHP-002	shopify	USPS	SH-E-ce7413fb
+CM-SHP-002	shopify	Canada Post	SH-E-ce7413fb
+CM-SHP-002	shopify	DPD	SH-E-ce7413fb
+CM-SHP-002	shopify	DHL Express	SH-E-ce7413fb
+CM-SHP-002	shopify	Canada Post	SH-E-50c2a6d9
+CM-SHP-002	shopify	Poste Italiane	SH-E-3b723f87
+CM-SHP-002	shopify	Correos	SH-E-3b723f87
+CM-SHP-002	shopify	DHL Express	SH-E-fcf1dfa9
+CM-SHP-002	shopify	USPS	SH-E-96551b03
+CM-SHP-002	shopify	DHL eCommerce	SH-E-3209d8f4
+CM-SHP-002	shopify	USPS	SH-E-3209d8f4
+CM-SHP-002	shopify	USPS	SH-E-82f563ea
+CM-SHP-002	shopify	UPS	SH-E-3c3856a9
+CM-SHP-002	shopify	UPS	SH-E-0392f47a
+CM-SHP-002	shopify	Shipbob	SH-E-7b495bc2
+CM-SHP-002	shopify	UPS	SH-E-2006ce96
+CM-SHP-002	shopify	DHL Paket	SH-E-a378c14b
+CM-SHP-002	shopify	Yodel	SH-E-a378c14b
+CM-SHP-002	shopify	DHL eCommerce	SH-E-cb5a9152
+CM-SHP-002	shopify	DHL Express	SH-E-cb5a9152
+CM-SHP-002	shopify	Purolator	SH-E-72334c3d
+CM-SHP-002	shopify	SEUR	SH-E-72334c3d
+CM-SHP-002	shopify	BRT	SH-E-72334c3d
+CM-SHP-002	shopify	FedEx	SH-E-c9e58ae1
+CM-SHP-002	shopify	DHL Express	SH-E-83836ab1
+CM-SHP-002	shopify	Canada Post	SH-E-83836ab1
+CM-SHP-002	shopify	DHL eCommerce	SH-E-83836ab1
+CM-SHP-002	shopify	Royal Mail	SH-E-2cb0aaeb
+CM-SHP-002	shopify	Australia Post	SH-E-2cb0aaeb
+CM-SHP-002	shopify	DHL Express	SH-E-2cb0aaeb
+CM-SHP-002	shopify	FedEx	SH-E-57bcdbd9
+CM-SHP-002	shopify	FedEx	SH-E-28105ba6
+CM-SHP-002	shopify	DHL	SH-E-f199acea
+CM-SHP-002	shopify	UPS	SH-E-26184d5d
+CM-SHP-002	shopify	USPS	SH-E-ed51f65b
+CM-SHP-002	shopify	UPS	SH-E-ed51f65b
+CM-SHP-002	shopify	FedEx	SH-E-ed51f65b
+CM-SHP-002	shopify	DHL	SH-E-ed51f65b
+CM-SHP-002	shopify	USPS	SH-E-5cbef6a4
+CM-SHP-002	shopify	UPS	SH-E-5cbef6a4
+CM-SHP-002	shopify	FedEx	SH-E-5cbef6a4
+CM-SHP-002	shopify	DHL	SH-E-5cbef6a4
+CM-SHP-002	shopify	USPS	SH-E-972bae8f
+CM-SHP-002	shopify	UPS	SH-E-972bae8f
+CM-SHP-002	shopify	FedEx	SH-E-972bae8f
+CM-SHP-002	shopify	DHL	SH-E-972bae8f
+CM-SHP-002	shopify	USPS	SH-E-f55bd10a
+CM-SHP-002	shopify	UPS	SH-E-f55bd10a
+CM-SHP-002	shopify	FedEx	SH-E-f55bd10a
+CM-SHP-002	shopify	DHL	SH-E-f55bd10a
+CM-PAY-003	shopify	Canada's financial regulations	SH-E-4c089c70
+CM-PAY-021	shopify	JCB	SH-E-c887d470
+CM-PAY-021	shopify	UnionPay	SH-E-a4d8576f
+CM-PAY-021	shopify	JCB	SH-E-a4d8576f
+CM-PAY-021	shopify	eftpos	SH-E-f34fd5b0
+CM-PAY-021	shopify	Interac	SH-E-9f6b6a63
+CM-PAY-021	shopify	Visa	SH-E-0abaeaef
+CM-PAY-021	shopify	Mastercard	SH-E-0abaeaef
+CM-PAY-021	shopify	American Express	SH-E-0abaeaef
+CM-PAY-021	shopify	Interac	SH-E-0abaeaef
+CM-PAY-021	shopify	Discover	SH-E-345a22e5
+CM-PAY-021	shopify	Cartes Bancaires	SH-E-64132c56
+CM-PAY-021	shopify	EFTPOS	SH-E-8c127661
+CM-PAY-021	shopify	Cartes Bancaires	SH-E-99dddf15
+CM-PAY-011	shopify	Authorize.net	SH-E-7dbcde35
+CM-PAY-011	shopify	Adyen	SH-E-3ca2cda4
+CM-PAY-011	shopify	PayPal	SH-E-301ede63
+CM-PAY-011	shopify	Authorize.net	SH-E-56357eb9
+CM-PAY-011	shopify	Global-e	SH-E-c233667e
+CM-PAY-011	shopify	Authorize.net	SH-E-d394c338
+CM-PAY-011	shopify	Authorize.net	SH-E-09bbfd8a
+CM-PAY-011	shopify	Authorize.net	SH-E-d853317d
+CM-PAY-013	shopify	PayPal	SH-E-124a02ba
+CM-PAY-013	shopify	PayPal	SH-E-cd115073
+CM-PAY-013	shopify	PayPal	SH-E-fd8713ee
+CM-PAY-013	shopify	PayPal	SH-E-70a8ac8f
+CM-PAY-013	shopify	PayPal	SH-E-73189988
+CM-PAY-013	shopify	PayPal	SH-E-895783e8
+CM-PAY-013	shopify	PayPal	SH-E-e06df061
+CM-PAY-013	shopify	PayPal	SH-E-3a38c245
+CM-PAY-013	shopify	PayPal	SH-E-c1166594
+CM-PAY-013	shopify	PayPal	SH-E-a7f3150f
+CM-PAY-012	shopify	Amazon Pay	SH-E-0e4eeb6f
+CM-PAY-012	shopify	Apple Pay	SH-E-5f881f99
+CM-PAY-012	shopify	Apple Pay	SH-E-4fa44da1
+CM-PAY-012	shopify	Google Pay	SH-E-f0de8b2b
+CM-PAY-012	shopify	Apple Pay	SH-E-316facbd
+CM-PAY-012	shopify	Apple Pay	SH-E-760580bb
+CM-PAY-012	shopify	Google Pay	SH-E-b5533d2c
+CM-PAY-012	shopify	Apple Pay	SH-E-43a3b263
+CM-PAY-012	shopify	Facebook Pay	SH-E-60647283
+CM-PAY-012	shopify	Google Pay	SH-E-0abaeaef
+CM-PAY-012	shopify	Apple Pay	SH-E-0abaeaef
+CM-PAY-012	shopify	Apple Pay	SH-E-66195548
+CM-PAY-012	shopify	Apple Pay Cash	SH-E-345a22e5
+CM-PAY-012	shopify	Venmo	SH-E-ef1ea312
+CM-PAY-012	shopify	Apple Pay	SH-E-46d280c6
+CM-PAY-012	shopify	Apple Pay	SH-E-ef05c168
+CM-PAY-012	shopify	Google Pay	SH-E-ef05c168
+CM-PAY-012	shopify	Apple Pay	SH-E-e577db92
+CM-PAY-012	shopify	Apple Pay	SH-E-b36fa4c0
+CM-PAY-012	shopify	Apple Pay	SH-E-13f22edb
+CM-PAY-012	shopify	Apple Pay	SH-E-2f92688e
+CM-SHP-015	shopify	DHL Express	SH-E-4a6e5110
+CM-SHP-015	shopify	UPS	SH-E-b9fc95b9
+CM-SHP-015	shopify	Australia Post	SH-E-55085b91
+CM-SHP-015	shopify	Australia Post	SH-E-19698de3
+CM-SHP-015	shopify	UPS	SH-E-b5bcd894
+CM-SHP-015	shopify	USPS	SH-E-ce7413fb
+CM-SHP-015	shopify	Canada Post	SH-E-ce7413fb
+CM-SHP-015	shopify	DPD	SH-E-ce7413fb
+CM-SHP-015	shopify	DHL Express	SH-E-ce7413fb
+CM-SHP-015	shopify	Canada Post	SH-E-50c2a6d9
+CM-SHP-015	shopify	UPS Canada	SH-E-50c2a6d9
+CM-SHP-015	shopify	Poste Italiane	SH-E-3b723f87
+CM-SHP-015	shopify	Correos	SH-E-3b723f87
+CM-SHP-015	shopify	DHL Express	SH-E-fcf1dfa9
+CM-SHP-015	shopify	USPS	SH-E-96551b03
+CM-SHP-015	shopify	DHL eCommerce	SH-E-3209d8f4
+CM-SHP-015	shopify	USPS	SH-E-3209d8f4
+CM-SHP-015	shopify	USPS	SH-E-82f563ea
+CM-SHP-015	shopify	UPS	SH-E-3c3856a9
+CM-SHP-015	shopify	UPS	SH-E-0392f47a
+CM-SHP-015	shopify	UPS	SH-E-2006ce96
+CM-SHP-015	shopify	DHL Paket	SH-E-a378c14b
+CM-SHP-015	shopify	Yodel	SH-E-a378c14b
+CM-SHP-015	shopify	DHL eCommerce	SH-E-cb5a9152
+CM-SHP-015	shopify	DHL Express	SH-E-cb5a9152
+CM-SHP-015	shopify	Purolator	SH-E-72334c3d
+CM-SHP-015	shopify	SEUR	SH-E-72334c3d
+CM-SHP-015	shopify	BRT	SH-E-72334c3d
+CM-SHP-015	shopify	FedEx	SH-E-c9e58ae1
+CM-SHP-015	shopify	DHL Express	SH-E-83836ab1
+CM-SHP-015	shopify	Canada Post	SH-E-83836ab1
+CM-SHP-015	shopify	DHL eCommerce	SH-E-83836ab1
+CM-SHP-015	shopify	Royal Mail	SH-E-2cb0aaeb
+CM-SHP-015	shopify	Australia Post	SH-E-2cb0aaeb
+CM-SHP-015	shopify	DHL Express	SH-E-2cb0aaeb
+CM-SHP-015	shopify	FedEx	SH-E-57bcdbd9
+CM-SHP-015	shopify	FedEx	SH-E-28105ba6
+CM-SHP-015	shopify	DHL	SH-E-f199acea
+CM-SHP-015	shopify	UPS	SH-E-26184d5d
+CM-SHP-015	shopify	USPS	SH-E-ed51f65b
+CM-SHP-015	shopify	UPS	SH-E-ed51f65b
+CM-SHP-015	shopify	FedEx	SH-E-ed51f65b
+CM-SHP-015	shopify	DHL	SH-E-ed51f65b
+CM-SHP-015	shopify	USPS	SH-E-5cbef6a4
+CM-SHP-015	shopify	UPS	SH-E-5cbef6a4
+CM-SHP-015	shopify	FedEx	SH-E-5cbef6a4
+CM-SHP-015	shopify	DHL	SH-E-5cbef6a4
+CM-SHP-015	shopify	USPS	SH-E-972bae8f
+CM-SHP-015	shopify	UPS	SH-E-972bae8f
+CM-SHP-015	shopify	FedEx	SH-E-972bae8f
+CM-SHP-015	shopify	DHL	SH-E-972bae8f
+CM-SHP-015	shopify	USPS	SH-E-f55bd10a
+CM-SHP-015	shopify	UPS	SH-E-f55bd10a
+CM-SHP-015	shopify	FedEx	SH-E-f55bd10a
+CM-SHP-015	shopify	DHL	SH-E-f55bd10a
+CM-SHP-019	shopify	Royal Mail	SH-E-1894e7e3
+CM-SHP-019	shopify	Evri	SH-E-fbee6206
+CM-SHP-019	shopify	Correos	SH-E-fbee6206
+CM-SHP-019	shopify	Royal Mail	SH-E-03b350cd
+CM-TAX-008	shopify	EU regulation	SH-E-e2e0cc14
+CM-TAX-008	shopify	Section 232	SH-E-7982a24f
+CM-TAX-008	shopify	US Customs and Border Control	SH-E-7982a24f
+CM-TAX-008	shopify	US Customs	SH-E-3704bd9e
+CM-TAX-008	shopify	Zonos	SH-E-da6a8538
+CM-TAX-008	shopify	preferential treaties	SH-E-3557c656
+CM-TAX-008	shopify	USMCA	SH-E-86f0ed61
+CM-TAX-008	shopify	USMCA	SH-E-ea54f3da
+CM-TAX-004	shopify	Avalara	SH-E-e779c7af
+CM-TAX-004	shopify	Avalara	SH-E-98ec13d0
+CM-TAX-004	shopify	Avalara	SH-E-f26e209f
+CM-TAX-004	shopify	Avalara	SH-E-7c31d601
+CM-TAX-004	shopify	Avalara	SH-E-2fdd654e
+CM-TAX-004	shopify	Vertex, Inc.	SH-E-2308aaa9
+CM-TAX-004	shopify	Vertex	SH-E-8a823e27
+CM-TAX-003	shopify	Global-e	SH-E-f595384d
+CM-TAX-002	shopify	California	SH-E-d63b361f
+CM-TAX-002	shopify	Canadian tax holiday	SH-E-b5603037
+CM-TAX-002	shopify	Canadian government	SH-E-1bd1873b
+CM-PAY-023	shopify	Plaid	SH-E-c6505fda
+CM-PAY-023	shopify	Venmo	SH-E-c6505fda
+CM-PAY-023	shopify	Wise	SH-E-c6505fda
+CM-PAY-023	shopify	Evolve Bank	SH-E-1079788e
+CM-PAY-023	shopify	FDIC	SH-E-1079788e
+CM-PAY-023	shopify	ACH	SH-E-7ecda8ef
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-25bf235d
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-25bf235d
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-b5dfd828
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-b5dfd828
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-6dd1d4ba
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-6dd1d4ba
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-580b8323
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-580b8323
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-6716ac98
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-6716ac98
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-9c011288
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-9c011288
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-950e682c
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-950e682c
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-1d0c912c
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-1d0c912c
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-a1ebf148
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-a1ebf148
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-2ee26aff
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-2ee26aff
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-92d37040
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-92d37040
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-991ff869
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-991ff869
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-dfcc663c
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-dfcc663c
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-b558b352
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-b558b352
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-d1c612dc
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-d1c612dc
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-c1234226
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-c1234226
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-18ba5476
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-18ba5476
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-355fb732
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-355fb732
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-e9ed0503
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-e9ed0503
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-a354e1b2
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-a354e1b2
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-323a15b4
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-323a15b4
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-2e1c0e7b
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-2e1c0e7b
+CM-PAY-023	shopify	Stripe Payments Company	SH-E-d2cc3850
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-E-d2cc3850
+CM-PAY-017	shopify	MB WAY	SH-E-413b6623
+CM-PAY-017	shopify	MobilePay	SH-E-0fd1fcfa
+CM-PAY-017	shopify	TWINT	SH-E-0fd1fcfa
+CM-PAY-017	shopify	BLIK	SH-E-0fd1fcfa
+CM-PAY-017	shopify	Przelewy24	SH-E-0fd1fcfa
+CM-PAY-017	shopify	Klarna	SH-E-fd124edd
+CM-PAY-017	shopify	Bancontact	SH-E-fd124edd
+CM-PAY-017	shopify	iDEAL	SH-E-fd124edd
+CM-PAY-017	shopify	BLIK	SH-E-fd124edd
+CM-PAY-017	shopify	Przelewy24	SH-E-fd124edd
+CM-PAY-017	shopify	TWINT	SH-E-fd124edd
+CM-PAY-017	shopify	EPS	SH-E-fd124edd
+CM-PAY-017	shopify	MobilePay	SH-E-fd124edd
+CM-PAY-017	shopify	iDeal	SH-E-0ecae440
+CM-PAY-017	shopify	Klarna	SH-E-0ecae440
+CM-PAY-017	shopify	Swish	SH-E-0ecae440
+CM-PAY-017	shopify	Twint	SH-E-0ecae440
+CM-PAY-017	shopify	Mobilepay	SH-E-0ecae440
+CM-PAY-017	shopify	BanContact	SH-E-608f40a4
+CM-PAY-017	shopify	Multibanco	SH-E-e14a123b
+CM-PAY-017	shopify	Sofort	SH-E-43736281
+CM-PAY-017	shopify	iDEAL	SH-E-3b19c760
+CM-PAY-017	shopify	Bancontact	SH-E-3b19c760
+CM-PAY-017	shopify	Sofort	SH-E-e11d6f42
+CM-PAY-017	shopify	iDEAL	SH-E-aef00213
+CM-PAY-017	shopify	Bancontact	SH-E-aef00213
+CM-PAY-017	shopify	Cartes Bancaires	SH-E-8758dc6f
+CM-PAY-017	shopify	Bancontact	SH-E-9ee87213
+CM-PAY-017	shopify	iDEAL	SH-E-9ee87213
+CM-PAY-017	shopify	iDEAL	SH-E-9c051346
+CM-PAY-017	shopify	Bancontact	SH-E-9c051346
+CM-PAY-017	shopify	Klarna	SH-E-8007abb2
+CM-PAY-017	shopify	eps	SH-E-8007abb2
+CM-PAY-017	shopify	Klarna	SH-E-6d78be1a
+CM-PAY-017	shopify	iDEAL	SH-E-c73c29f2
+CM-PAY-017	shopify	SOFORT	SH-E-95607c4a
+CM-PAY-017	shopify	Alipay	SH-E-536785ce
+CM-PAY-017	shopify	WeChat Pay	SH-E-536785ce
+CM-PAY-017	shopify	Satispay	SH-E-536785ce
+CM-PAY-017	shopify	Scalapay	SH-E-536785ce
+CM-PAY-017	shopify	GrabPay	SH-E-536785ce
+CM-PAY-017	shopify	Alipay	SH-E-f50a908d
+CM-PAY-017	shopify	WeChat Pay	SH-E-f50a908d
+CM-PAY-017	shopify	Satispay	SH-E-f50a908d
+CM-PAY-017	shopify	Scalapay	SH-E-f50a908d
+CM-PAY-017	shopify	GrabPay	SH-E-f50a908d
+CM-PAY-017	shopify	MB WAY	SH-E-f50a908d
+CM-PAY-017	shopify	OXXO	SH-E-f50a908d
+CM-PAY-017	shopify	iDEAL	SH-E-9e43b139
+CM-PAY-017	shopify	Bancontact	SH-E-53a43c2b
+CM-PAY-017	shopify	GrabPay	SH-E-53a43c2b
+CM-PAY-017	shopify	KCP	SH-E-53a43c2b
+CM-PAY-017	shopify	MobilePay	SH-E-53a43c2b
+CM-PAY-017	shopify	Przelewy24	SH-E-53a43c2b
+CM-PAY-017	shopify	Twint	SH-E-53a43c2b
+CM-PAY-017	shopify	Vipps	SH-E-53a43c2b
+CM-PAY-017	shopify	P24	SH-E-8f7827b3
+CM-PAY-017	shopify	BLIK	SH-E-8f7827b3
+CM-PAY-017	shopify	TWINT	SH-E-8f7827b3
+CM-PAY-017	shopify	Swish	SH-E-8f7827b3
+CM-PAY-017	shopify	MobilePay	SH-E-8f7827b3
+CM-PAY-017	shopify	iDeal	SH-E-e792d1fc
+CM-PAY-017	shopify	Swish	SH-E-e792d1fc
+CM-PAY-017	shopify	Twint	SH-E-e792d1fc
+CM-PAY-017	shopify	Mobilepay	SH-E-e792d1fc
+CM-PAY-017	shopify	Bancontact	SH-E-47422ac7
+CM-PAY-017	shopify	iDEAL	SH-E-47422ac7
+CM-PAY-017	shopify	Twint	SH-E-47422ac7
+CM-PAY-017	shopify	Blik	SH-E-47422ac7
+CM-PAY-017	shopify	Przelewy24	SH-E-47422ac7
+CM-PAY-017	shopify	MobilePay	SH-E-47422ac7
+CM-PAY-017	shopify	EPS	SH-E-47422ac7
+CM-PAY-017	shopify	ACH	SH-E-52d7b69e
+CM-PAY-017	shopify	MobilePay	SH-E-810cb120
+CM-PAY-017	shopify	TWINT	SH-E-810cb120
+CM-PAY-017	shopify	BLIK	SH-E-810cb120
+CM-PAY-017	shopify	Przelewy24	SH-E-810cb120
+CM-PAY-017	shopify	Bancontact	SH-E-c56efff8
+CM-PAY-017	shopify	iDEAL	SH-E-3a85ff77
+CM-PAY-017	shopify	MB WAY	SH-E-2b615e84
+CM-PAY-017	shopify	Bizum	SH-E-856c7483
+CM-PAY-017	shopify	MB WAY	SH-E-60eb4bee
+CM-PAY-017	shopify	Bizum	SH-E-0c28f1ea
+CM-PAY-017	shopify	Bancontact	SH-E-69535d6f
+CM-PAY-017	shopify	iDEAL	SH-E-f744a1cf
+CM-PAY-017	shopify	MB WAY	SH-E-d643c9ce
+CM-PAY-017	shopify	Klarna	SH-E-c79afa2b
+CM-PAY-017	shopify	Bancontact	SH-E-d596ca67
+CM-PAY-017	shopify	iDEAL	SH-E-bf9f6df5
+CM-PAY-017	shopify	TWINT	SH-E-6dee54b7
+CM-PAY-017	shopify	MB WAY	SH-E-ccfeb57f
+CM-PAY-017	shopify	Bizum	SH-E-896083e4
+CM-PAY-017	shopify	Klarna	SH-E-5ab58a57
+CM-PAY-017	shopify	Mobilepay	SH-E-bcaee9e9
+CM-PAY-017	shopify	MB WAY	SH-E-bdcbdc90
+CM-PAY-017	shopify	Bizum	SH-E-dc3144d4
+CM-PAY-017	shopify	Bancontact	SH-E-c20f130a
+CM-PAY-017	shopify	iDEAL	SH-E-44d0d9bb
+CM-PAY-017	shopify	MB WAY	SH-E-39ecb960
+CM-PAY-017	shopify	MB WAY	SH-E-55596b9b
+CM-PAY-017	shopify	Bizum	SH-E-b27fb50b
+CM-PAY-017	shopify	Bancontact	SH-E-40323637
+CM-PAY-017	shopify	iDEAL	SH-E-56d475f4
+CM-PAY-017	shopify	MB WAY	SH-E-306a9ac3
+CM-PAY-017	shopify	Bizum	SH-E-59914cbe
+CM-PAY-017	shopify	Klarna	SH-E-3714f333
+CM-PAY-017	shopify	Bancontact	SH-E-ac0aba02
+CM-PAY-017	shopify	iDEAL	SH-E-5c7b0bd5
+CM-PAY-017	shopify	TWINT	SH-E-144ed438
+CM-PAY-017	shopify	MB WAY	SH-E-a5a90c67
+CM-PAY-017	shopify	Bizum	SH-E-369d6608
+CM-PAY-017	shopify	MB WAY	SH-E-227b4789
+CM-PAY-017	shopify	Bizum	SH-E-0c9e8795
+CM-PAY-014	shopify	ChatGPT	SH-E-a2c16b9b
+CM-PAY-014	shopify	Claude	SH-E-a2c16b9b
+CM-PAY-014	shopify	Muse	SH-E-a2c16b9b
+CM-PAY-014	shopify	Instinct	SH-E-a2c16b9b
+CM-PAY-014	shopify	Claude Duet	SH-E-a2c16b9b
+CM-PAY-014	shopify	Claude Duet	SH-E-fa5f4a5f
+CM-PAY-014	shopify	Grok Bot	SH-E-fa5f4a5f
+CM-PAY-014	shopify	Instinct	SH-E-fa5f4a5f
+CM-PAY-014	shopify	Mastercard	SH-E-fa5f4a5f
+CM-PAY-014	shopify	Visa	SH-E-fa5f4a5f
+CM-PAY-014	shopify	Muse	SH-E-429c6a35
+CM-PAY-014	shopify	Claude Duet	SH-E-429c6a35
+CM-PAY-014	shopify	Grok Bot	SH-E-429c6a35
+CM-PAY-014	shopify	Instinct	SH-E-429c6a35
+CM-CHK-008	shopify	PayPal	SH-E-c377b788
+CM-CHK-008	shopify	Apple Pay	SH-E-c377b788
+CM-CHK-008	shopify	Apple Pay	SH-E-2f92688e
+CM-CHK-008	shopify	Apple Pay	SH-E-16e047a0
+CM-PAY-027	shopify	Gmail	SH-E-f2b55645
+CM-PAY-027	shopify	QuickBooks Online	SH-E-f2b55645
+CM-PAY-027	shopify	Melio	SH-E-25bf235d
+CM-PAY-027	shopify	Melio	SH-E-b5dfd828
+CM-PAY-027	shopify	Melio	SH-E-6dd1d4ba
+CM-PAY-027	shopify	Melio	SH-E-580b8323
+CM-PAY-027	shopify	Melio	SH-E-6716ac98
+CM-PAY-027	shopify	Melio	SH-E-9c011288
+CM-PAY-027	shopify	Melio	SH-E-950e682c
+CM-PAY-027	shopify	Melio	SH-E-1d0c912c
+CM-PAY-027	shopify	Melio	SH-E-a1ebf148
+CM-PAY-027	shopify	Melio	SH-E-2ee26aff
+CM-PAY-027	shopify	Melio	SH-E-92d37040
+CM-PAY-027	shopify	Melio	SH-E-991ff869
+CM-PAY-027	shopify	Melio	SH-E-dfcc663c
+CM-PAY-027	shopify	Melio	SH-E-b558b352
+CM-PAY-027	shopify	Melio	SH-E-d1c612dc
+CM-PAY-027	shopify	Melio	SH-E-c1234226
+CM-PAY-027	shopify	Melio	SH-E-18ba5476
+CM-PAY-027	shopify	Melio	SH-E-355fb732
+CM-PAY-027	shopify	Melio	SH-E-e9ed0503
+CM-PAY-027	shopify	Melio	SH-E-a354e1b2
+CM-PAY-027	shopify	Melio	SH-E-323a15b4
+CM-PAY-027	shopify	Melio	SH-E-3d2e4fc4
+CM-PAY-027	shopify	Melio	SH-E-2513ac81
+CM-TAX-005	shopify	Receita Federal	SH-E-3fc0ef0c
+CM-TAX-005	shopify	VIES	SH-E-c6475c5f
+CM-TAX-005	shopify	HMRC	SH-E-c6475c5f
+CM-TAX-005	shopify	Mexican government	SH-E-e4278b2b
+CM-SHP-012	shopify	Amazon Multi-Channel Fulfillment	SH-E-8237ea0a
+CM-SHP-012	shopify	DHL Fulfillment Network	SH-E-8237ea0a
+CM-SHP-012	shopify	Bigblue	SH-E-8237ea0a
+CM-SHP-012	shopify	Mayple	SH-E-8237ea0a
+CM-SHP-012	shopify	GoBolt	SH-E-8237ea0a
+CM-SHP-012	shopify	Flexport	SH-E-63616470
+CM-SHP-012	shopify	Flexport	SH-E-0f3603dd
+CM-SHP-012	shopify	Flexport	SH-E-951ac77a
+CM-SHP-012	shopify	Flexport	SH-E-7f58e648
+CM-SHP-012	shopify	ShipBob	SH-E-7f58e648
+CM-SHP-012	shopify	Shipfusion	SH-E-7f58e648
+CM-SHP-012	shopify	ShipMonk	SH-E-7f58e648
+CM-SHP-012	shopify	Amazon	SH-E-1abd5e38
+CM-SHP-012	shopify	Bigblue	SH-E-1abd5e38
+CM-SHP-012	shopify	DHL	SH-E-1abd5e38
+CM-SHP-012	shopify	GoBolt	SH-E-1abd5e38
+CM-SHP-012	shopify	Mayple	SH-E-1abd5e38
+CM-SHP-020	shopify	Consumer Product Safety Commission (CPSC)	SH-E-5f5a9d1d
+CM-SHP-020	shopify	EU	SH-E-5669dc6b
+CM-SHP-020	shopify	customs officials	SH-E-eaf2688c
+CM-SHP-020	shopify	EU customs regulations	SH-E-f6dfe38b
+CM-PAY-018	shopify	USDC	SH-E-0ecae440
+CM-PAY-018	shopify	USDC	SH-E-ff639531
+CM-PAY-018	shopify	Base	SH-E-ff639531
+CM-PAY-018	shopify	USDC	SH-E-54492956
+CM-PAY-018	shopify	Base	SH-E-54492956
+CM-PAY-018	shopify	USDC	SH-E-e792d1fc
+CM-PAY-018	shopify	USDC	SH-E-b9f65e0b
+CM-PAY-018	shopify	USDC	SH-E-78b68756
+CM-PAY-018	shopify	Base	SH-E-78b68756
+CM-PAY-018	shopify	USDC	SH-E-fb7ba683
+CM-PAY-018	shopify	Ethereum	SH-E-fb7ba683
+CM-PAY-018	shopify	Base	SH-E-fb7ba683
+CM-PAY-028	shopify	QuickBooks	SH-E-e1362572
+CM-PAY-028	shopify	QuickBooks	SH-E-aaf91fe4
+CM-PAY-028	shopify	Freshbooks	SH-E-b99a8166
+CM-PAY-028	shopify	Bench	SH-E-b99a8166
+CM-PAY-028	shopify	Sage	SH-E-b99a8166
+CM-PAY-028	shopify	QuickBooks	SH-E-1079788e
+CM-PAY-028	shopify	Acumatica	SH-E-6b5615a1
+CM-PAY-028	shopify	QuickBooks Online	SH-E-f2b55645
+CM-PAY-028	shopify	Microsoft Business Central	SH-E-f2a67d70
+CM-PAY-028	shopify	NetSuite	SH-E-3febc064
+CM-PAY-028	shopify	Patchworks	SH-E-fd1070f8
+CM-PAY-028	shopify	Fulfil	SH-E-fd1070f8
+CM-PAY-028	shopify	Kensium	SH-E-fd1070f8
+CM-PAY-028	shopify	NetSuite	SH-E-fd1070f8
+CM-PAY-028	shopify	BrightPearl	SH-E-fd1070f8
+CM-PAY-028	shopify	Sage	SH-E-fd1070f8
+CM-PAY-028	shopify	Acumatica	SH-E-fd1070f8
+CM-PAY-028	shopify	QuickBooks	SH-E-736fbd3e
+CM-SHP-006	shopify	Uber Direct	SH-E-385b5476

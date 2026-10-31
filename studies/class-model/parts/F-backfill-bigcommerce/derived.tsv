@@ -4,7 +4,7 @@ CM-API-013	shopify	none-held
 CM-API-013	woocommerce	none-held					
 CM-API-013	zid	none-held					
 CM-DVT-006	salla	none-held					
-CM-DVT-006	shopify	none-held					
+CM-DVT-006	shopify	statements	core	admin-router | editions-page-data | shopify-cli-commands			general
 CM-DVT-006	woocommerce	none-held					
 CM-DVT-006	zid	none-held					
 CM-PTN-010	salla	none-held					

@@ -14,3 +14,45 @@ CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 200	SH-C
 CM-INV-005	salla	store-branch limit	"name": "store-branch", "limit": 5	SA-C-026/decides/SA-S-3338	plans: plus, pro, special
 CM-INV-005	salla	more branches	زيادة عدد الفروع *برسوم إضافية	SA-C-026/decides/SA-S-2028	plan: سلة بلس
 CM-INV-005	salla	max_inventory_types	"max_inventory_types": 5	SA-C-025/decides/SA-S-3504	the answering store (merchant@en)
+CM-CAT-001	shopify	products	غير محدودة	SH-E-61f81ee5	Basic;Grow;Advanced;Plus
+CM-CAT-001	shopify	products	unlimited	SH-E-94160bc6	Basic;Grow;Advanced;Plus
+CM-CAT-001	shopify	products	unlimited	SH-E-c30d59f7	Starter;Basic;Grow;Advanced;Plus
+CM-CAT-001	shopify	products	unlimited	SH-E-8a2639d1	Basic;Grow;Advanced;Plus
+CM-CAT-010	shopify	supplier products per Shopify product	up to two	SH-E-fd0a444a	Explorer Oberlo plan
+CM-CAT-007	shopify	3D model file size	maximum 500MB, from 15MB	SH-E-aa2d4c14	
+CM-CAT-007	shopify	cost	No additional software, technology, or costs	SH-E-5bc69f21	
+CM-SEL-001	shopify	price	free	SH-E-aef1cd3e	
+CM-SEL-001	shopify	app price	free	SH-E-4c0f3472	
+CM-SEL-006	shopify	price	a free first-party bundles app	SH-E-88c8359c	
+CM-SEL-006	shopify	products in a fixed bundle	increased from 10 to 30	SH-E-605e04c0	
+CM-SEL-006	shopify	Shopify Bundles price	free	SH-E-96109f43	Shopify Plus merchant
+CM-SEL-006	shopify	price	free	SH-E-1d272a37	Shopify Plus
+CM-SEL-006	shopify	products in a bundle	up to 30 (from 10)	SH-E-385c34a8	
+CM-INV-001	shopify	bins	Each variant can have one bin per physical name for now	SH-E-529fab33	
+CM-CAT-006	shopify	tags per product	a limit of 250 tags	SH-E-60be6cd1	'Advanced Shopify plan and below'
+CM-INV-002	shopify	inventory adjustment history	beyond the previous 180-day limit in Admin	SH-E-293813ab	
+CM-INV-002	shopify	inventory adjustment history	from 90 to 180 days	SH-E-c74e9f3a	
+CM-INV-002	shopify	inventory adjustment history	removal of the 180-day cap	SH-E-eb3cb706	
+CM-INV-003	shopify	products per counting session	up to 1,000	SH-E-e46f8f5a	
+CM-INV-005	shopify	Locations index	up to 1000 locations	SH-E-67205477	
+CM-INV-005	shopify	locations	1,000	SH-E-223430d1	
+CM-INV-005	shopify	retail locations per store	more than 1,000 retail locations from a single store	SH-E-2a760d62	
+CM-INV-005	shopify	inventory locations	10	SH-E-daeb20e5	Basic;www.shopify.com/ae-ar
+CM-INV-005	shopify	inventory locations	200	SH-E-b4d8f1bd	Plus;www.shopify.com/ae-ar
+CM-INV-005	shopify	inventory locations	10 (Basic), 10 (Grow), 10 (Advanced), 200 (Plus)	SH-E-89f7cf85	Basic;Grow;Advanced;Plus
+CM-INV-005	shopify	inventory locations	10	SH-E-712ff8af	Basic;www.shopify.com/ae;www.shopify.com/il
+CM-INV-005	shopify	inventory locations	200	SH-E-5cab4931	Plus;www.shopify.com/ae;www.shopify.com/il
+CM-INV-005	shopify	inventory locations	10 (Basic, Grow, Advanced), 200 (Plus)	SH-E-6538220f	Basic;Grow;Advanced;Plus
+CM-INV-005	shopify	inventory locations	2 (starter_2022), 10 (basic, professional, unlimited), 200 (shopify_plus)	SH-E-f4dd028f	Starter;Basic;Grow;Advanced;Plus
+CM-INV-005	shopify	inventory locations	10	SH-E-19990395	Basic;Grow;Advanced
+CM-INV-005	shopify	inventory locations	200	SH-E-53487ca0	Plus
+CM-CAT-002	shopify	variants per product	up to 100	SH-E-35c4d4bc	EU
+CM-CAT-002	shopify	variants per product	up to 100	SH-E-cc970720	
+CM-CAT-002	shopify	barcodes per variant	up to 20 barcodes to a variant	SH-E-2e225666	
+CM-CAT-002	shopify	variants per product	up to 2,048, from 100	SH-E-03356fb2	
+CM-CAT-002	shopify	barcodes for each variant	up to 20	SH-E-f97f7817	
+CM-CAT-002	shopify	variants	limited products to a maximum of 100 variants	SH-E-6d1c2bfc	
+CM-CAT-002	shopify	variants per product	up to 2,000	SH-E-e75246a1	
+CM-CAT-002	shopify	variants	up to 2,000 variants per product	SH-E-406497c3	
+CM-CAT-002	shopify	variants per product	up to 2048	SH-E-fe539398	
+CM-CAT-004	shopify	product taxonomy	10K+ categories and 2K+ attributes	SH-E-b4f44717	

@@ -1,3 +1,3 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-RET-004	salla	none-held					
-CM-RET-004	shopify	statements	core		S02-SH-491=European Union | S02-SH-492=European Union	SH-C-175/boundary:searched, not found;SH-C-175/reason:searched, not found	European Union
+CM-RET-004	shopify	statements	core	admin-home-setup | merchant-changelog	S02-SH-491=European Union | S02-SH-492=European Union | SH-E-093e0005=EU | SH-E-28bb0660=EU | SH-E-28f114bb=EU | SH-E-6888cb05=EU | SH-E-7e9da2b2=EU | SH-E-bec81020=EU	SH-C-175/boundary:searched, not found;SH-C-175/reason:searched, not found	general

@@ -12,3 +12,577 @@ CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في ال
 CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098
 CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970
 CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012
+CM-SFR-001	shopify	price	free	SH-E-1ae5b4cf
+CM-SFR-001	shopify	page width	a range from 1000px to 1600px	SH-E-659467fc
+CM-SFR-001	shopify	price	free	SH-E-d96af1e9
+CM-SFR-001	shopify	price	free	SH-E-32c9cd4a
+CM-SFR-001	shopify	price	free	SH-E-bfa889dc
+CM-SFR-001	shopify	price	free	SH-E-43f42acd
+CM-SFR-001	shopify	Japanese fonts	17	SH-E-1de81baf
+CM-SFR-001	shopify	online store	محدود (Starter)	SH-E-7e01262b
+CM-SFR-001	shopify	online store	محدود (Retail)	SH-E-8fef2fbf
+CM-SFR-001	shopify	online store	Limited (Starter)	SH-E-c5bf657d
+CM-SFR-001	shopify	online store	Limited (Retail)	SH-E-70684b10
+CM-SFR-008	shopify	domain offer	Get $20 back	SH-E-35ba470e
+CM-SFR-008	shopify	domain offer	Get $20 back	SH-E-52a66965
+CM-MKS-008	shopify	languages	up to 20	SH-E-7204f679
+CM-MKS-008	shopify	languages	up to 30	SH-E-7204f679
+CM-MKS-008	shopify	languages Shopify can translate	from 2 to 8	SH-E-04551fad
+CM-MKS-008	shopify	languages Shopify can translate	from 2 to 8	SH-E-d4e7e31f
+CM-MKS-008	shopify	free automatic translation	automatically translate up to two languages completely free	SH-E-98254f4d
+CM-MKS-008	shopify	automated translations included	ترجمتين آليتين	SH-E-aeae9fea
+CM-MKS-008	shopify	automated translations included	two automated translations	SH-E-f1b3a575
+CM-MKS-008	shopify	automated translations included	two automated translations	SH-E-0cb0f17b
+CM-SFR-002	shopify	dynamic sources	up to 100 per template	SH-E-849260d6
+CM-SFR-002	shopify	dynamic sources	50 per static section	SH-E-849260d6
+CM-SFR-002	shopify	sections per template	up to 25	SH-E-d7bf4137
+CM-SFR-002	shopify	blocks per section	50	SH-E-d7bf4137
+CM-SFR-002	shopify	shared password link	a secure link that expires in 7 days	SH-E-5abc763e
+CM-SFR-002	shopify	layers	up to eight layers of blocks	SH-E-b2fd8c54
+CM-SFR-002	shopify	block nesting	up to 8 levels deep	SH-E-5f1a9669
+CM-CNT-002	shopify	metafield definitions per resource type	up to 200	SH-E-a53a399b
+CM-CNT-002	shopify	pinned metafields	up to 50	SH-E-325af320
+CM-POS-001	shopify	background image	a recommended image size of 1080x1920	SH-E-8bb06fde
+CM-POS-001	shopify	PIN entry	wait 30 seconds after 5 failed attempts	SH-E-bed69e86
+CM-POS-001	shopify	PIN length	4, 5, or 6 digits	SH-E-bdbfec16
+CM-POS-001	shopify	QR code validity	each code is valid for 8 hours	SH-E-70fc854c
+CM-POS-001	shopify	markets	any of our 15 markets	SH-E-1f5bfe19
+CM-POS-001	shopify	POS PIN	from four to six numbers	SH-E-500cc746
+CM-POS-001	shopify	staff PIN length	4, 5, or 6 digits	SH-E-d77bd0a6
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-162ce31b
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-162ce31b
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-e8884dfd
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-e8884dfd
+CM-POS-001	shopify	POS Pro price	+‏89 US$/شهر	SH-E-a090e3ae
+CM-POS-001	shopify	POS Pro	$ 89/شهريًا لكل موقع (Basic, Grow, Advanced), يتضمن 20 من المواقع. (Plus)	SH-E-ff61aa7e
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-a2b6ce33
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-a2b6ce33
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-8063b6c0
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-8063b6c0
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	121 USD	SH-E-8063b6c0
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-f5f0114f
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-f5f0114f
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	181 USD	SH-E-f5f0114f
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-cd927047
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-cd927047
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-cd927047
+CM-POS-001	shopify	POS Pro add-on	يشتمل على POS Pro	SH-E-21788730
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-21788730
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-21788730
+CM-POS-001	shopify	POS Pro add-on	يشتمل على POS Pro	SH-E-29d3b5b8
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-29d3b5b8
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-29d3b5b8
+CM-POS-001	shopify	locations supported	أكثر من 1,000 موقع	SH-E-d62cf665
+CM-POS-001	shopify	POS Pro price	+ ‏89 US$ USD/الشهر/الموقع	SH-E-abc35c09
+CM-POS-001	shopify	POS Pro price	+ ‏89 US$ USD/الشهر/الموقع	SH-E-f7de5f1c
+CM-POS-001	shopify	stores	1,000 متجر	SH-E-65264292
+CM-POS-001	shopify	POS Pro price	مبلغًا إضافيًا قدره ‏89 US$ USD/الشهر يُدفع سنويًا لكل موقع	SH-E-5f4d30a4
+CM-POS-001	shopify	POS Pro price	‏89 US$ USD/الشهر/الموقع	SH-E-032b5c53
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-13886779
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-13886779
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-1b81d83a
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-1b81d83a
+CM-POS-001	shopify	POS Pro price	+$89/mo	SH-E-b4d10049
+CM-POS-001	shopify	POS Pro	$89/mo per location (Basic, Grow, Advanced), Includes 20 locations. (Plus)	SH-E-41868675
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-57fd373a
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-57fd373a
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-fd0dbe9b
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-fd0dbe9b
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	121 USD	SH-E-fd0dbe9b
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-28de0417
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-28de0417
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	181 USD	SH-E-28de0417
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-a3e6083b
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-a3e6083b
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-a3e6083b
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-8c793557
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-8c793557
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-8c793557
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-13f4c80b
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-13f4c80b
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-13f4c80b
+CM-POS-001	shopify	locations supported	1,000+ locations	SH-E-334dd182
+CM-POS-001	shopify	POS Pro price	+ $89 USD/month/location	SH-E-93fa4117
+CM-POS-001	shopify	POS Pro price	+ $89 USD/month/location	SH-E-97cdac02
+CM-POS-001	shopify	stores	1,000 stores	SH-E-3fdc7c2f
+CM-POS-001	shopify	POS Pro price	an additional $89 USD/month billed yearly for each location	SH-E-0b7a4091
+CM-POS-001	shopify	POS Pro price	$89 USD/month/location	SH-E-171df5d4
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-544b2337
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-544b2337
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-0b545754
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-0b545754
+CM-POS-001	shopify	POS Pro locations	Up to 200 (Plus)	SH-E-99a6355d
+CM-POS-001	shopify	POS Pro price	+$129/mo	SH-E-da0c5e1a
+CM-POS-001	shopify	POS Pro	$129 AUD/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-b4418fdb
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-d58f1ba9
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-d58f1ba9
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-6533d9fa
+CM-POS-001	shopify	add_on_price	129 AUD	SH-E-6533d9fa
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	185 AUD	SH-E-6533d9fa
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 AUD	SH-E-6533d9fa
+CM-POS-001	shopify	offer worth	$3,500 (overall_savings 3500.0 AUD)	SH-E-6533d9fa
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-52e5dbc4
+CM-POS-001	shopify	add_on_price	129 AUD	SH-E-52e5dbc4
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	278 AUD	SH-E-52e5dbc4
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 AUD	SH-E-52e5dbc4
+CM-POS-001	shopify	offer worth	$3,500 (overall_savings 3500.0 AUD)	SH-E-52e5dbc4
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-4146adab
+CM-POS-001	shopify	add_on_price	129 AUD	SH-E-4146adab
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	704 AUD	SH-E-4146adab
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 AUD	SH-E-4146adab
+CM-POS-001	shopify	offer worth	$3,500 (overall_savings 3500.0 AUD)	SH-E-4146adab
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-4f21dadc
+CM-POS-001	shopify	add_on_price	129 AUD	SH-E-4f21dadc
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	4129 AUD	SH-E-4f21dadc
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-95a0668a
+CM-POS-001	shopify	add_on_price	129 AUD	SH-E-95a0668a
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	258 AUD	SH-E-95a0668a
+CM-POS-001	shopify	POS Pro price	+ $129 AUD/month/location	SH-E-f05028c3
+CM-POS-001	shopify	POS Pro price	+ $129 AUD/month/location	SH-E-26b115d2
+CM-POS-001	shopify	POS Pro price	an additional $129 AUD/month billed yearly for each location	SH-E-2585e797
+CM-POS-001	shopify	POS Pro price	$129 AUD/month/location	SH-E-b8ab355a
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-72d48116
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-72d48116
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-3dd120ae
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-3dd120ae
+CM-POS-001	shopify	POS Pro price	+$119/mo	SH-E-5e64b321
+CM-POS-001	shopify	POS Pro	$119 CAD/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-510dd929
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-a80fa37e
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-a80fa37e
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($119/mo after)	SH-E-b2f66adf
+CM-POS-001	shopify	add_on_price	119 CAD	SH-E-b2f66adf
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	168 CAD	SH-E-b2f66adf
+CM-POS-001	shopify	POS Pro on a 12-month commitment	89.0 CAD	SH-E-b2f66adf
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 CAD)	SH-E-b2f66adf
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($119/mo after)	SH-E-5a2b00a3
+CM-POS-001	shopify	add_on_price	119 CAD	SH-E-5a2b00a3
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	251 CAD	SH-E-5a2b00a3
+CM-POS-001	shopify	POS Pro on a 12-month commitment	89.0 CAD	SH-E-5a2b00a3
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 CAD)	SH-E-5a2b00a3
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($119/mo after)	SH-E-efa19b0a
+CM-POS-001	shopify	add_on_price	119 CAD	SH-E-efa19b0a
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	636 CAD	SH-E-efa19b0a
+CM-POS-001	shopify	POS Pro on a 12-month commitment	89.0 CAD	SH-E-efa19b0a
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 CAD)	SH-E-efa19b0a
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-75cb58be
+CM-POS-001	shopify	add_on_price	119 CAD	SH-E-75cb58be
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	3769 CAD	SH-E-75cb58be
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-ed745af3
+CM-POS-001	shopify	add_on_price	119 CAD	SH-E-ed745af3
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	238 CAD	SH-E-ed745af3
+CM-POS-001	shopify	POS Pro price	+ $119 CAD/month/location	SH-E-80f78ad8
+CM-POS-001	shopify	POS Pro price	+ $119 CAD/month/location	SH-E-ec937467
+CM-POS-001	shopify	POS Pro price	an additional $119 CAD/month billed yearly for each location	SH-E-aed88882
+CM-POS-001	shopify	POS Pro price	$119 CAD/month/location	SH-E-9ed4705b
+CM-POS-001	shopify	POS Pro locations	ما يصل إلى 200 (Plus)	SH-E-770422c5
+CM-POS-001	shopify	POS Pro price	+‏٨٩ US$/شهر	SH-E-863ad684
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-a4e8ac88
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-a4e8ac88
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	116 USD	SH-E-a4e8ac88
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-4a92c048
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-4a92c048
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	161 USD	SH-E-4a92c048
+CM-POS-001	shopify	POS Pro add-on	جرّب POS Pro مجانًا لمدة 3 أشهر للبيع الشخصي المحسّن ($ 89/شهريًا بعد ذلك)	SH-E-66e708a6
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-66e708a6
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-66e708a6
+CM-POS-001	shopify	POS Pro add-on	يشتمل على POS Pro	SH-E-e59c0c80
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-e59c0c80
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-e59c0c80
+CM-POS-001	shopify	POS Pro add-on	يشتمل على POS Pro	SH-E-2388073d
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-2388073d
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-2388073d
+CM-POS-001	shopify	POS Pro price	+ ‏٨٩ US$ USD/الشهر/الموقع	SH-E-fbe25a8a
+CM-POS-001	shopify	POS Pro price	+ ‏٨٩ US$ USD/الشهر/الموقع	SH-E-a479d3e8
+CM-POS-001	shopify	POS Pro price	مبلغًا إضافيًا قدره ‏٨٩ US$ USD/الشهر يُدفع سنويًا لكل موقع	SH-E-804978ae
+CM-POS-001	shopify	POS Pro price	‏٨٩ US$ USD/الشهر/الموقع	SH-E-c43b16f6
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-70789599
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-70789599
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-5dd84ffd
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-5dd84ffd
+CM-POS-001	shopify	POS Pro price	+US$89/mo	SH-E-7d2dac86
+CM-POS-001	shopify	POS Pro	$89/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-cc7c101e
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-fd1d71c9
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-fd1d71c9
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-abc7adfa
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-abc7adfa
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	122 USD	SH-E-abc7adfa
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-8ec32716
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-8ec32716
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	181 USD	SH-E-8ec32716
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-7701fc33
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-7701fc33
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-7701fc33
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-b1bbcbaa
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-b1bbcbaa
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-b1bbcbaa
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-d56c2460
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-d56c2460
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-d56c2460
+CM-POS-001	shopify	POS Pro price	+ US$89 USD/month/location	SH-E-d10b8324
+CM-POS-001	shopify	POS Pro price	+ US$89 USD/month/location	SH-E-85e974d1
+CM-POS-001	shopify	POS Pro price	an additional US$89 USD/month billed yearly for each location	SH-E-d0e9dddb
+CM-POS-001	shopify	POS Pro price	US$89 USD/month/location	SH-E-d49beff8
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-14535eed
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-14535eed
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-48566056
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-48566056
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-8bed105f
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-8bed105f
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-bdff9e26
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-bdff9e26
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	114 USD	SH-E-bdff9e26
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-22c0bc4e
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-22c0bc4e
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	154 USD	SH-E-22c0bc4e
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-fa8bb029
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-fa8bb029
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-fa8bb029
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-1ab37667
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-1ab37667
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-1ab37667
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-d6608851
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-d6608851
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-d6608851
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-41915d79
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-41915d79
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-b204afd3
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-b204afd3
+CM-POS-001	shopify	POS Pro price	+€79/mo	SH-E-201ace72
+CM-POS-001	shopify	POS Pro	€79 EUR/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-d9237f58
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-a46a4392
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-a46a4392
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (€79/mo after)	SH-E-e37f7d52
+CM-POS-001	shopify	add_on_price	79 EUR	SH-E-e37f7d52
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	111 EUR	SH-E-e37f7d52
+CM-POS-001	shopify	POS Pro on a 12-month commitment	59.0 EUR	SH-E-e37f7d52
+CM-POS-001	shopify	offer worth	€2,200 (overall_savings 2200.0 EUR)	SH-E-e37f7d52
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (€79/mo after)	SH-E-9cec2f13
+CM-POS-001	shopify	add_on_price	79 EUR	SH-E-9cec2f13
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	171 EUR	SH-E-9cec2f13
+CM-POS-001	shopify	POS Pro on a 12-month commitment	59.0 EUR	SH-E-9cec2f13
+CM-POS-001	shopify	offer worth	€2,200 (overall_savings 2200.0 EUR)	SH-E-9cec2f13
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (€79/mo after)	SH-E-0f002137
+CM-POS-001	shopify	add_on_price	79 EUR	SH-E-0f002137
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	463 EUR	SH-E-0f002137
+CM-POS-001	shopify	POS Pro on a 12-month commitment	59.0 EUR	SH-E-0f002137
+CM-POS-001	shopify	offer worth	€2,200 (overall_savings 2200.0 EUR)	SH-E-0f002137
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-d3592d61
+CM-POS-001	shopify	add_on_price	79 EUR	SH-E-d3592d61
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2329 EUR	SH-E-d3592d61
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-eb817b2d
+CM-POS-001	shopify	add_on_price	79 EUR	SH-E-eb817b2d
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	158 EUR	SH-E-eb817b2d
+CM-POS-001	shopify	POS Pro price	+ €79 EUR/month/location	SH-E-24d4d0aa
+CM-POS-001	shopify	POS Pro price	+ €79 EUR/month/location	SH-E-5780d157
+CM-POS-001	shopify	POS Pro price	an additional €79 EUR/month billed yearly for each location	SH-E-93361d95
+CM-POS-001	shopify	POS Pro price	€79 EUR/month/location	SH-E-118d70ce
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-48b87400
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-48b87400
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-1ce26f03
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-1ce26f03
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-0f2dafa8
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-0f2dafa8
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-4689f834
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-4689f834
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	128 USD	SH-E-4689f834
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-0a8e762e
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-0a8e762e
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	194 USD	SH-E-0a8e762e
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-76db51d6
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-76db51d6
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-2fcea142
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-2fcea142
+CM-POS-001	shopify	POS Pro price	+₹7,000/mo	SH-E-bfb82f23
+CM-POS-001	shopify	POS Pro	₹7,000 INR/mo per location (Basic, Grow, Advanced), Includes 20 locations. (Plus)	SH-E-9da38202
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-2fc56a2b
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-2fc56a2b
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (₹7,000/mo after)	SH-E-fed4f3ab
+CM-POS-001	shopify	add_on_price	7000 INR	SH-E-fed4f3ab
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	8994 INR	SH-E-fed4f3ab
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (₹7,000/mo after)	SH-E-cd2fe114
+CM-POS-001	shopify	add_on_price	7000 INR	SH-E-cd2fe114
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	14447 INR	SH-E-cd2fe114
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (₹7,000/mo after)	SH-E-9ccfa499
+CM-POS-001	shopify	add_on_price	7000 INR	SH-E-9ccfa499
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	37164 INR	SH-E-9ccfa499
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-6fc87f42
+CM-POS-001	shopify	add_on_price	7000 INR	SH-E-6fc87f42
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	197000 INR	SH-E-6fc87f42
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-9fd2125d
+CM-POS-001	shopify	add_on_price	7000 INR	SH-E-9fd2125d
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	14000 INR	SH-E-9fd2125d
+CM-POS-001	shopify	POS Pro price	+ ₹7,000 INR/month/location	SH-E-219f451e
+CM-POS-001	shopify	POS Pro price	+ ₹7,000 INR/month/location	SH-E-7b9eca5e
+CM-POS-001	shopify	POS Pro price	an additional ₹7,000 INR/month billed yearly for each location	SH-E-5a7f72ff
+CM-POS-001	shopify	POS Pro price	₹7,000 INR/month/location	SH-E-2043016e
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-2c4e6155
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-2c4e6155
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-28ed1a89
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-28ed1a89
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-fcf580bd
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-fcf580bd
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-81ada1d6
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-81ada1d6
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-ce817b9c
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-ce817b9c
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-520a1421
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-520a1421
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-bde40fdf
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-bde40fdf
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-ed6a42e8
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-ed6a42e8
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	116 USD	SH-E-ed6a42e8
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-9293c1ef
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-9293c1ef
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	161 USD	SH-E-9293c1ef
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-2b6f32de
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-2b6f32de
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-6684de71
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-6684de71
+CM-POS-001	shopify	POS Pro price	+920 kr NOK/mo	SH-E-13abfbd0
+CM-POS-001	shopify	POS Pro	kr920 NOK/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-a3a9a1ea
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-dbc7525e
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-dbc7525e
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (kr920/mo after)	SH-E-c460d0b5
+CM-POS-001	shopify	add_on_price	920 NOK	SH-E-c460d0b5
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	1309 NOK	SH-E-c460d0b5
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (kr920/mo after)	SH-E-ecab1a81
+CM-POS-001	shopify	add_on_price	920 NOK	SH-E-ecab1a81
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	1950 NOK	SH-E-ecab1a81
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (kr920/mo after)	SH-E-f20d7005
+CM-POS-001	shopify	add_on_price	920 NOK	SH-E-f20d7005
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	5410 NOK	SH-E-f20d7005
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-1d649953
+CM-POS-001	shopify	add_on_price	920 NOK	SH-E-1d649953
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2329 EUR	SH-E-1d649953
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-eba43eae
+CM-POS-001	shopify	add_on_price	920 NOK	SH-E-eba43eae
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	1840 NOK	SH-E-eba43eae
+CM-POS-001	shopify	POS Pro price	+ 920 kr NOK/month/location	SH-E-5ce2ce12
+CM-POS-001	shopify	POS Pro price	+ 920 kr NOK/month/location	SH-E-9d23a2fd
+CM-POS-001	shopify	POS Pro price	an additional 920 kr NOK/month billed yearly for each location	SH-E-1f32fb62
+CM-POS-001	shopify	POS Pro price	920 kr NOK/month/location	SH-E-5178a682
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-c4c3deb4
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-c4c3deb4
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-f8659a31
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-f8659a31
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-09c94ec3
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-09c94ec3
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-8cbeedc5
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-8cbeedc5
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	128 USD	SH-E-8cbeedc5
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-8cbeedc5
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-8cbeedc5
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-fc190cb5
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-fc190cb5
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	194 USD	SH-E-fc190cb5
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-fc190cb5
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-fc190cb5
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-fd267a85
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-fd267a85
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-fd267a85
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-fd267a85
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-fd267a85
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-010b291c
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-010b291c
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-010b291c
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-39b0e865
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-39b0e865
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-39b0e865
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-816028fe
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-816028fe
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-24616d34
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-24616d34
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-bb62c458
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-bb62c458
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-343064cd
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-343064cd
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	114 USD	SH-E-343064cd
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-7b348ec4
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-7b348ec4
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	154 USD	SH-E-7b348ec4
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-b3c70d38
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-b3c70d38
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-b3c70d38
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-f52dd9e8
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-f52dd9e8
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-3e4f59e4
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-3e4f59e4
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-06e35392
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-06e35392
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-b51ec61c
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-b51ec61c
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-553f86ef
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-553f86ef
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-ed175bca
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-ed175bca
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	128 USD	SH-E-ed175bca
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-ed175bca
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-ed175bca
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-b93b8626
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-b93b8626
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	194 USD	SH-E-b93b8626
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-b93b8626
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-b93b8626
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($89/mo after)	SH-E-6427d4b4
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-6427d4b4
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	488 USD	SH-E-6427d4b4
+CM-POS-001	shopify	POS Pro on a 12-month commitment	67.0 USD	SH-E-6427d4b4
+CM-POS-001	shopify	offer worth	$2,400 (overall_savings 2400.0 USD)	SH-E-6427d4b4
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-8f80ae9d
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-8f80ae9d
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-8f80ae9d
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-d8366337
+CM-POS-001	shopify	add_on_price	89 USD	SH-E-d8366337
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	178 USD	SH-E-d8366337
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-7426ef51
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-7426ef51
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-5eaafddc
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-5eaafddc
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-59ed2f12
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-59ed2f12
+CM-POS-001	shopify	POS Pro price	+$129 SGD/mo	SH-E-acc1a597
+CM-POS-001	shopify	POS Pro	$129 SGD/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-4e6f620b
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-74c8532e
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-74c8532e
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-f91f5e2f
+CM-POS-001	shopify	add_on_price	129 SGD	SH-E-f91f5e2f
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	168 SGD	SH-E-f91f5e2f
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 SGD	SH-E-f91f5e2f
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 SGD)	SH-E-f91f5e2f
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-54e2b55a
+CM-POS-001	shopify	add_on_price	129 SGD	SH-E-54e2b55a
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	261 SGD	SH-E-54e2b55a
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 SGD	SH-E-54e2b55a
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 SGD)	SH-E-54e2b55a
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling ($129/mo after)	SH-E-42d43f48
+CM-POS-001	shopify	add_on_price	129 SGD	SH-E-42d43f48
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	660 SGD	SH-E-42d43f48
+CM-POS-001	shopify	POS Pro on a 12-month commitment	97.0 SGD	SH-E-42d43f48
+CM-POS-001	shopify	offer worth	$3,200 (overall_savings 3200.0 SGD)	SH-E-42d43f48
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-66623c3c
+CM-POS-001	shopify	add_on_price	129 SGD	SH-E-66623c3c
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2589 USD	SH-E-66623c3c
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-42b8ecf5
+CM-POS-001	shopify	add_on_price	129 SGD	SH-E-42b8ecf5
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	258 SGD	SH-E-42b8ecf5
+CM-POS-001	shopify	POS Pro price	+ $129 SGD/month/location	SH-E-e1d4edd3
+CM-POS-001	shopify	POS Pro price	+ $129 SGD/month/location	SH-E-29540daa
+CM-POS-001	shopify	POS Pro price	an additional $129 SGD/month billed yearly for each location	SH-E-3f793172
+CM-POS-001	shopify	POS Pro price	$129 SGD/month/location	SH-E-3453155e
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-5c1eb9da
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-5c1eb9da
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-afd3607d
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-afd3607d
+CM-POS-001	shopify	POS Pro price	+£69/mo	SH-E-048c5a16
+CM-POS-001	shopify	POS Pro	£69 GBP/mo per location (Basic, Grow, Advanced), Includes 20 locations. Up to 200 with Shopify Payments. (Plus)	SH-E-784a5414
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-1d8b9893
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-1d8b9893
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (£69/mo after)	SH-E-8dbe4852
+CM-POS-001	shopify	add_on_price	69 GBP	SH-E-8dbe4852
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	94 GBP	SH-E-8dbe4852
+CM-POS-001	shopify	POS Pro on a 12-month commitment	52.0 GBP	SH-E-8dbe4852
+CM-POS-001	shopify	offer worth	£1,800 (overall_savings 1800.0 GBP)	SH-E-8dbe4852
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (£69/mo after)	SH-E-486f0cd9
+CM-POS-001	shopify	add_on_price	69 GBP	SH-E-486f0cd9
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	134 GBP	SH-E-486f0cd9
+CM-POS-001	shopify	POS Pro on a 12-month commitment	52.0 GBP	SH-E-486f0cd9
+CM-POS-001	shopify	offer worth	£1,800 (overall_savings 1800.0 GBP)	SH-E-486f0cd9
+CM-POS-001	shopify	POS Pro add-on	Try POS Pro free for 3 months for enhanced in-person selling (£69/mo after)	SH-E-9a09199f
+CM-POS-001	shopify	add_on_price	69 GBP	SH-E-9a09199f
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	413 GBP	SH-E-9a09199f
+CM-POS-001	shopify	POS Pro on a 12-month commitment	52.0 GBP	SH-E-9a09199f
+CM-POS-001	shopify	offer worth	£1,800 (overall_savings 1800.0 GBP)	SH-E-9a09199f
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-74784910
+CM-POS-001	shopify	add_on_price	69 GBP	SH-E-74784910
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	2019 GBP	SH-E-74784910
+CM-POS-001	shopify	POS Pro add-on	POS Pro included	SH-E-44838ada
+CM-POS-001	shopify	add_on_price	69 GBP	SH-E-44838ada
+CM-POS-001	shopify	pos_bundle bundled_monthly_price	138 GBP	SH-E-44838ada
+CM-POS-001	shopify	POS Pro price	+ £69 GBP/month/location	SH-E-69115a04
+CM-POS-001	shopify	POS Pro price	+ £69 GBP/month/location	SH-E-78382a91
+CM-POS-001	shopify	POS Pro price	an additional £69 GBP/month billed yearly for each location	SH-E-54e296b4
+CM-POS-001	shopify	POS Pro price	£69 GBP/month/location	SH-E-ff311306
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-b6e5eb6a
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-b6e5eb6a
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-0f7b48e5
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-0f7b48e5
+CM-POS-001	shopify	posProPriceUsd	$89	SH-E-8b6e5df9
+CM-POS-001	shopify	posRetailLocations	1,000	SH-E-8b6e5df9
+CM-POS-001	shopify	POS Pro	$89/mo per location (basic, professional, unlimited), Includes 20 locations. Up to 200 with Shopify Payments. (shopify_plus)	SH-E-baf6583d
+CM-POS-001	shopify	POS Pro price	$89 USD/mo per location (pos_pro)	SH-E-dc5180c9
+CM-POS-001	shopify	POS Pro locations included	200 included on Shopify Plus with Shopify Payments (pos_pro)	SH-E-dc5180c9
+CM-POS-001	shopify	POS Pro locations	Up to 200	SH-E-d83ebc1a
+CM-POS-001	shopify	POS Pro price	$89/mo per location	SH-E-be71f424
+CM-POS-001	shopify	POS Pro locations included	Includes 20 locations.	SH-E-8f54882a
+CM-POS-001	shopify	POS Pro locations	Up to 200	SH-E-a1c8f162
+CM-POS-001	shopify	POS Pro price	+$89/mo	SH-E-c6a7f447
+CM-POS-001	shopify	lock after inactivity	2 minutes	SH-E-801173a9
+CM-POS-001	shopify	lock after inactivity	2 minutes	SH-E-d5f41112
+CM-POS-001	shopify	lock after inactivity	5 minutes	SH-E-a101d5e7
+CM-POS-001	shopify	lock after inactivity	5 minutes	SH-E-55307046
+CM-POS-001	shopify	lock after inactivity	10 minutes	SH-E-85daeed4
+CM-POS-001	shopify	lock after inactivity	10 minutes	SH-E-2c02d3b4
+CM-CHN-004	shopify	products showcased	up to 50 products	SH-E-c35bf309
+CM-CHN-004	shopify	price	free	SH-E-dc73c4db
+CM-CHN-004	shopify	listing reach	customers located within 5 miles of your retail store	SH-E-14fb491e
+CM-CHN-004	shopify	price	free	SH-E-5835be14
+CM-SFR-012	shopify	server-side applications	without limits	SH-E-e1c01b3d
+CM-CHN-001	shopify	price	free	SH-E-c42cc511
+CM-CHN-002	shopify	video length	up to 2 min	SH-E-dbb09a4d
+CM-CHN-002	shopify	tagged products	up to 10 products or a collection	SH-E-dbb09a4d
+CM-CHN-002	shopify	block sections per product detail page	max 2 per PDP	SH-E-015e12cd
+CM-CHN-002	shopify	price	at no additional cost	SH-E-eba05687
+CM-CHN-002	shopify	price	free	SH-E-96eb6d89
+CM-CNT-001	shopify	video length	Maximum 10 minutes	SH-E-5d226bfe
+CM-CNT-001	shopify	video size	Maximum 1 GB (gigabytes)	SH-E-5d226bfe
+CM-CNT-001	shopify	video resolution	Maximum 4K (4096 x 2160 px)	SH-E-5d226bfe
+CM-CNT-001	shopify	video file type	MOV or MP4	SH-E-5d226bfe
+CM-SFR-011	shopify	components	more than 30 components	SH-E-efe10fd5
+CM-SFR-011	shopify	headless storefronts	1 (Basic), 1 (Grow), 1 (Advanced), 25 (Plus)	SH-E-09b40c1e
+CM-SFR-011	shopify	headless storefronts	1 (Basic, Grow, Advanced), 25 (Plus)	SH-E-399ad591
+CM-SFR-011	shopify	headless storefronts	1 (starter_2022, basic, professional, unlimited), 25 (shopify_plus)	SH-E-1b798667
+CM-SFR-011	shopify	headless storefronts	1	SH-E-57ba34be
+CM-SFR-011	shopify	headless storefronts	25	SH-E-0bdf1330
+CM-SFR-011	shopify	development environments linked to one Hydrogen storefront	'an unlimited number'	SH-E-ec868fac
+CM-MKS-003	shopify	review and correction	within 1 business day	SH-E-1a244cc9
+CM-MKS-003	shopify	price	the complimentary service	SH-E-1a244cc9
+CM-MKS-003	shopify	price	Markets Pro ad hoc DHL Express pickups are free	SH-E-ab22e66d
+CM-MKS-003	shopify	Max order value	Argentina: 1,000 USD, Brazil: 2,999 USD, China: 5,000 CNY, Indonesia: 1,500 USD, Mexico: 1,000 USD, Turkey: 150 EUR	SH-E-9389043a
+CM-MKS-003	shopify	Managed Markets fee	3.5% لكل معاملة, أو 3.25% على Shopify Plus	SH-E-51116aa2
+CM-MKS-003	shopify	Managed Markets fee	3.5% per transaction, or 3.25% on Shopify Plus	SH-E-7bc21b6f
+CM-CHN-005	shopify	delay	a 2-minute delay before orders are sent to suppliers	SH-E-f95655fd
+CM-CHN-005	shopify	checkouts	up to 6.1K checkouts per minute	SH-E-588d86d6
+CM-CHN-005	shopify	products set to active	up to 30 products at a time	SH-E-4d5c8759
+CM-CHN-005	shopify	retailer margins	up to 2 decimal points	SH-E-126d2a7e
+CM-CHN-005	shopify	automatic cancellation	orders over 14 days old	SH-E-5a5ae6a3
+CM-CHN-003	shopify	orders imported from marketplaces	عددًا غير محدود	SH-E-00fddd1b
+CM-CHN-003	shopify	synced marketplace orders per month	50, مجانًا	SH-E-efb0668c
+CM-CHN-003	shopify	fee on synced marketplace orders over 50	1% بحد أقصى $ 99/شهريًا	SH-E-725fcc54
+CM-CHN-003	shopify	orders imported from marketplaces	unlimited	SH-E-4c5acc14
+CM-CHN-003	shopify	synced marketplace orders per month	50, Free	SH-E-ccecaa87
+CM-CHN-003	shopify	fee on synced marketplace orders over 50	1% up to $99/mo	SH-E-18d1a362
+CM-CHN-003	shopify	fee on synced marketplace orders over 50	1% up to $99 USD/mo	SH-E-0f098844
+CM-CHN-003	shopify	orders imported from marketplaces	unlimited	SH-E-a2764a34
+CM-CHN-003	shopify	synced marketplace orders per month	50, Free	SH-E-ab0e1a72
+CM-CHN-003	shopify	fee on synced marketplace orders over 50	1% up to $99/mo (starter_2022, basic, professional, unlimited, shopify_plus)	SH-E-a050b660
+CM-CHN-003	shopify	orders imported from marketplaces	unlimited	SH-E-768ca83d
+CM-CHN-003	shopify	synced marketplace orders per month	50	SH-E-22c93772
+CM-CHN-003	shopify	fee on 50 synced marketplace orders per month	Free	SH-E-2801982d
+CM-CHN-003	shopify	fee on synced marketplace orders over 50	1% up to $99/mo	SH-E-a5be5b39
+CM-SFR-013	shopify	price	the free Shopify Search & Discovery app	SH-E-f64dc5b2
+CM-SFR-013	shopify	typo tolerance	results that differ from the search term by 1 letter or that have 2 letters in a different order	SH-E-e2511b85
+CM-SFR-013	shopify	first letters that must match	4	SH-E-e2511b85
+CM-SFR-003	shopify	themes	free and premium website themes	SH-E-3d9a6eb2
+CM-SFR-003	shopify	theme trial	try it out for free	SH-E-412ab5fb
+CM-MKS-006	shopify	currencies	130+ currencies	SH-E-3b567517
+CM-MKS-006	shopify	price updates	Prices are stabilized on a weekly cadence	SH-E-9869aa49
+CM-MKS-006	shopify	currencies a store sells in	up to 10	SH-E-6ce82d77
+CM-MKS-006	shopify	currencies a store sells in	up to 10	SH-E-b72b53c8
+CM-MKS-006	shopify	currencies	up to 9	SH-E-3e3b5c09
+CM-MKS-007	shopify	exchange rate	a stabilized exchange rate that we guarantee for a week	SH-E-9869aa49
+CM-MKS-007	shopify	currency conversion fee	1.5% لكل معاملة	SH-E-ca04ed44
+CM-MKS-007	shopify	exchange rates on international returns, with Managed Markets	تُثبت أسعار الصرف لمدة تصل إلى 30 يومًا	SH-E-ca04ed44
+CM-MKS-007	shopify	currency conversion fee	1.5% per transaction	SH-E-c5e393a1
+CM-MKS-007	shopify	exchange rates on international returns, with Managed Markets	Exchange rates are locked for up to 30 days on international returns	SH-E-c5e393a1
+CM-POS-002	shopify	ports	3 USB-A ports and 1 USB‑C port	SH-E-d6e18200

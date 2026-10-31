@@ -23,3 +23,23 @@ CM-TRU-015	shopify	Google Cloud Canada Corporation	SH-C-181/responsible/SH-S-019
 CM-TRU-016	shopify	European Data Protection Laws (retention as required by law)	SH-C-183/reason/SH-S-7290
 CM-TRU-018	shopify	PCI DSS (Payment Card Industry Data Security Standard)	SH-C-184/responsible/SH-S-0073
 CM-TRU-010	salla	the Business platform (منصة الأعمال), whose e-commerce certificate the store records in its data	SA-C-231/boundary/SA-S-5147
+CM-ACC-001	shopify	Stripe Projects CLI	SH-E-281bce36
+CM-TRU-001	shopify	Okta	SH-E-0a013352
+CM-TRU-001	shopify	Azure Active Directory	SH-E-0a013352
+CM-TRU-006	shopify	GDPR	SH-E-802097aa
+CM-TRU-006	shopify	European privacy regulations	SH-E-3e062f94
+CM-TRU-006	shopify	US privacy laws	SH-E-4a13b1e1
+CM-TRU-006	shopify	California Consumer Privacy Act (CCPA)	SH-E-4021ea27
+CM-TRU-006	shopify	California Consumer Privacy Act	SH-E-9a8763bf
+CM-TRU-006	shopify	GDPR	SH-E-abc6fb3f
+CM-PLN-005	shopify	Razorpay	SH-E-3fc76fac
+CM-PLN-005	shopify	SEPA Direct Debit	SH-E-7f3a4d7f
+CM-PLN-005	shopify	Unified Payments Interface (UPI)	SH-E-00d3ec78
+CM-PLN-005	shopify	Razorpay	SH-E-4a0b7c49
+CM-PLN-005	shopify	RBI	SH-E-4a0b7c49
+CM-PLN-005	shopify	PayPal	SH-E-d2c13076
+CM-PLN-007	shopify	European Union	SH-E-e2590854
+CM-STF-002	shopify	Okta	SH-E-13eb8f17
+CM-STF-002	shopify	OneLogin	SH-E-13eb8f17
+CM-TRU-010	shopify	Consumer Product Safety Commission (CPSC)	SH-E-5f5a9d1d
+CM-TRU-010	shopify	California Proposition 65	SH-E-aa20cf35
