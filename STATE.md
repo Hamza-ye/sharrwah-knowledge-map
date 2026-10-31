@@ -249,6 +249,16 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 11:40, to about 14:00 UTC on 31 October:**
+    - **Shopify, checked since:** SH-14 to SH-19 (the router whole, and its changes between versions, 50 of them by script), SH-32, SH-33 (help notes whole), SH-43 to SH-46 (the changelog whole), SH-47 (the rendered Fall 2026 Edition's first batch), SH-61 to SH-66 (Editions' page data), and SH-101 (the Tinker catalog, by script).
+    - **Rulings since** (`held/review-H-rulings.md`):
+      - the corrections after SH-45: the Google app is Shopify's own and the Buy Button channel `own-service`;
+      - a possessive on a part of the platform names its own feature.
+    - **Found on the way:**
+      - `method/held_router_gates.py` skipped an ancestor whose id stood inside a longer id. It is fixed, and three missed gates are added.
+      - The build reads a citation 'from line N (one option per line)' as line N alone, so three lists the concern map read whole became entries (`shopify/amendment-notes.md`).
+    - **The projection, re-measured at about 14:00** (method report, section 18): about 4,460 million spent, 2,975 entries left, the extent about 5.4 to 6.0 billion. Its top, about 6.04, has just passed the band's 6.0, so it goes to the founder. The work goes on, re-planned to cost less.
+    - **Running:** SH-48 and SH-49 (the rendered Fall 2026 page), SH-67 (Editions' page data, the last) and SH-97.
   - **Since 09:45, to about 11:40 UTC on 31 October:**
     - **Shopify, checked since:** SH-14 (the router, with its digest), SH-30 to SH-32 (help notes), SH-42 and SH-43 (the changelog, with its digest), SH-58 to SH-61 (Editions' page data, with its digest), SH-79 and SH-92 to SH-94. So `pricing-page-data` and `plan-page-public` are placed whole, 57 of Shopify's 103 batches in all, with 4,462 entries left.
     - **Digests:** the changelog's and the router's are written and settled, and each digest's section 6 adds the rules its batches set.

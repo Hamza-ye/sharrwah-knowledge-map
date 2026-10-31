@@ -499,3 +499,27 @@ The top stays at the band's 6.0 billion, so no new projection goes to the founde
 | **The extent, in all** | **about 5.3 to 6.0 billion** |
 
 The top stays at the band's 6.0 billion, so no new projection goes to the founder.
+
+**Re-measured at about 14:00 UTC** (`method/count_tokens.py --since 2026-10-31T11:40`, and each checked batch's transcript).
+- **Spent since 11:40:** 384 million tokens: the coordinator 62 million over 94 requests (16 percent), the agents the rest. In all about 4,460 million.
+- **Checked since 11:40:** SH-14 to SH-19, SH-32, SH-33, SH-43 to SH-47 and SH-61 to SH-66, and SH-101 by script (`method/held_tinker_tools.py`). Placed whole since: the changelog, the help notes, the router and its changes between versions.
+- **The rates of the last batches:**
+  - Editions 182,000 to 294,000 an entry;
+  - the changelog 172,000 to 232,000;
+  - the router 232,000 to 289,000.
+
+  The coordinator's context now makes each of its requests cost about 650,000 tokens.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 14:00 UTC | about 4,460 |
+| The measured structures' 265 entries left, at their rates (Editions' page data and the rendered Fall 2026 page) | about 60 |
+| The other 2,710 entries, 25 structures with no batch placed yet, at 150,000 to 280,000 | 410 to 760 |
+| The coordinator's checks, 15 to 20 percent of the agents' | 70 to 165 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.4 to 6.0 billion; the top about 6.04** |
+
+**The top has moved just past the band's 6.0 billion, so a new projection goes to the founder.** The work goes on, by the founder's standing decision of 27 October, re-planned to cost less:
+- the remaining structures' first batches set rules that their later batches keep, as the digests did;
+- scripts and selection rules take exact repeats (the router's changes, the Tinker catalog, lists the concern map read whole);
+- the coordinator's checks combine their reads and measures in fewer requests.
