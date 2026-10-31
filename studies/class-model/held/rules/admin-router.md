@@ -131,5 +131,13 @@ From SH-16:
 - **R16.4:** a pathless wrapper whose id names only its role in the code (`payments:orphans`) is `out` where it sits over several capabilities' routes.
 - **R16.5:** the Payments profile-assessment and identity-verification routes are CM-PAY-003, the payment service's KYC and underwriting, beside CM-TRU-002.
 
-The next batches number their rules R17.1 and on, by batch.
+From SH-17:
+- **R17.1:** a page whose own words name only a developer's page, with a loader named for employees and no title or store gate, is `out`, like a test page.
+- **R17.2:** an intent with its own eligibility takes its own line under its own gate (rule 30); a beta on in both stores keeps it `core`.
+- **R17.3:** a `oneOf` of a feature and a beta is scoped `feature;beta <hash>` and stays `core` even with the beta false.
+- **R17.4:** a redirect whose landing page holds a thing its own words name takes a second `shows` line.
+- **R17.5:** an anchor where the merchant adds a third party's service is `extension-point` alone (rule 14).
+- **R17.6:** a modal on one record takes its page's capability. A modal naming another capability's thing takes that capability alone.
+
+The next batches number their rules R18.1 and on, by batch.
 

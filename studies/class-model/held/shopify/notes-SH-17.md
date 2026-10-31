@@ -59,3 +59,18 @@ None. Two entries were close to `new`, and are placed on an existing capability 
 - None blocking. `held_entries.py earlier` matched only `settings:general` here, as the coordinator foresaw; the twins came from the concern map's statements and a search of SH-8 to SH-16 by ids and paths.
 - The native routes' web visits answer 'There's no page at this address', so their capability rests on their own words alone (rule 35).
 - Cost: the context stayed under about 200,000 tokens.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 99 of 99 entries, no problem. `method/held_router_gates.py SH-17 --apply` named the ancestors' gates in 48 lines of 29 routes.
+- **The two `CHANGES` stand:**
+  - CM-CAT-001 `extension-point`, `products:update`'s documented intent (rule 19);
+  - CM-CHN-002 `core`, the admin's own route to install the Shop channel, a first-party product's route in the admin (the rulings after SH-41 and SH-43; R14.6).
+- **R17.2 stands:** the policy modals' intents have their own eligibility, so each takes its own line under its own gate (rule 30). Their beta d4ac6976 is on in both held stores, so the lines are `core`. Rule 19's 'named in reading' is for an intent with no gate of its own.
+- **The rules R17.1 and R17.3 to R17.6 stand,** and all six join the digest's section 6.
+- **For Shopify's amendment** (written into `shopify/amendment-notes.md`):
+  - the return and cancellation policy's create route (SH-S-7089), whose update twin also takes CM-RET-003 and CM-ORD-004;
+  - the shipping calculator (SH-S-5262 on CM-SHP-001), which calculates Shopify's label rates, CM-SHP-002's thing;
+  - CM-CNT-007's reading, which held no statement of SEO built into the admin and now has the native route 'Search engine listing'.
+- **The open placements stay as placed.** Brand is on CM-ACC-006, as SH-32's line.
+- **Cost:** 24.5 million tokens over 108 requests, about 247,000 an entry. The context reached about 386,000 tokens.
