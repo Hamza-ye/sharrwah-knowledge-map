@@ -171,13 +171,19 @@ HELD = os.path.join(MODEL, "held")
 _held = {}
 
 
+def held_entry_rows(platform):
+    """The held pass's entries (entries.tsv, which method/held_entries.py builds), then its second stage's
+    (entries-s2.tsv, which method/s2_held.py's `land` writes: a passage an agent quoted, of structure `second-stage`)."""
+    return [r for f in ("entries.tsv", "entries-s2.tsv") for r in rows(os.path.join(HELD, platform, f))]
+
+
 def held_items(platform):
     """The held pass's entries (briefs/H-held.md): an item of a platform's self-description the concern map never read,
-    listed by method/held_entries.py at the repository's commit, citable by its id (ZD-E-00001). Only the coordinator's
-    amendments from the held pass cite one."""
+    listed by method/held_entries.py at the repository's commit, citable by its id (ZD-E-00001); and its second stage's
+    (briefs/S2-held.md), each a passage quoted at its own source and locator, citable by an id of the same form. Only
+    the coordinator's amendments from the held pass cite one."""
     if platform not in _held:
         out = []
-        path = os.path.join(HELD, platform, "entries.tsv")
         sel = {}
         if os.path.exists(os.path.join(HELD, "selection.tsv")):
             sel = {r["structure"]: r for r in rows(os.path.join(HELD, "selection.tsv")) if r["platform"] == platform}
@@ -190,12 +196,14 @@ def held_items(platform):
                 for e in [x.strip() for x in r["entry_id"].split(";") if x.strip()]:
                     if r.get("scope") and e not in scope:
                         scope[e] = r["scope"]
-        for r in rows(path) if os.path.exists(path) else []:
+        for r in held_entry_rows(platform):
             sr = sel.get(r["structure"], {})
+            s2 = r["structure"] == "second-stage"      # its identifier is the page's title or the item's id
             out.append({"inv_id": r["entry_id"], "concern_id": "", "concern_ids": [],
                         "placement": sr.get("placement") or "held", "structure": r["structure"],
-                        "identifier": r["structure"], "statement": r["text"], "scope": scope.get(r["entry_id"], ""),
-                        "cite_ids": r["entry_id"], "note": "; ".join(x for x in ("the held pass", sr.get("note", "")) if x),
+                        "identifier": (r.get("section") or r["structure"]) if s2 else r["structure"],
+                        "statement": r["text"], "scope": scope.get(r["entry_id"], ""), "cite_ids": r["entry_id"],
+                        "note": "; ".join(x for x in ("the held pass's second stage" if s2 else "the held pass", sr.get("note", "")) if x),
                         "subject": "held"})
         _held[platform] = out
     return _held[platform]
@@ -203,14 +211,14 @@ def held_items(platform):
 
 def subject_citations(platform):
     """The citations of what the model cites beyond the concern map: the landed subjects' statements, and the held
-    pass's entries, each its own citation (its file and line at the repository's commit)."""
+    pass's entries, each its own citation (its file and line at the repository's commit), its second stage's among them
+    (entries-s2.tsv: the quote at its own source and locator)."""
     out = {}
     for s in SUBJECTS_CITED:
         for f in ("citations.tsv", "recorded-citations.tsv"):
             for r in rows(os.path.join(SUBJ, s, platform, f)):
                 out[r["cite_id"]] = r
-    path = os.path.join(HELD, platform, "entries.tsv")
-    for r in rows(path) if os.path.exists(path) else []:
+    for r in held_entry_rows(platform):
         out[r["entry_id"]] = {"cite_id": r["entry_id"], "source": r["source"], "locator": r["locator"], "quote": r["text"],
                               "source_date": "", "date_basis": "", "accessed": "", "access_path": ""}
     return out

@@ -73,6 +73,13 @@
 #                                                [--candidates]   each entry's leads, by identifier or by term: leads only
 #   python3 -I method/held_entries.py makers --platform P NAME ...   the held entries naming NAME with a maker's cue
 #   python3 -I method/held_entries.py check --platform P --batch B  checks held/<platform>/placements-<B>.tsv
+#
+# The held pass's second stage (briefs/S2-held.md) lands its passages as entries of structure `second-stage` in
+# held/<platform>/entries-s2.tsv, and their placements as the batch S2-<XX> (method/s2_held.py's `land`). `build` never
+# writes that file, nor drops its ids; `batches` cuts only entries.tsv; `check`, `show`, `earlier` and the leads read
+# both files. `check` tests a second-stage entry's text against its source at its locator, since an agent wrote it: a
+# source that doesn't resolve, a text not found, a locator that misses it, another platform's repository, or a commit
+# that neither the batch's notes name on their first line nor is the repository's HEAD, is a problem.
 import argparse, math, collections, csv, glob, hashlib, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from class_slice import MODEL, PLATFORMS, PREFIX, rows
@@ -815,6 +822,11 @@ def cmd_build(a):
         commit = git(root, "rev-parse", "--short=9", "HEAD").strip()
         cited = cited_lines(p)
         out, taken, report = [], {}, []
+        # the second stage's ids (entries-s2.tsv, written by method/s2_held.py) are never dropped nor rebuilt here, and
+        # a new entry whose id would be one of them takes a longer id, as any collision does
+        s2_ids = {e["entry_id"] for e in rows(os.path.join(HELD, p, "entries-s2.tsv"))}
+        for i in s2_ids:
+            taken[i] = ("\x00second-stage", i)
         for r in rs:
             rl = rules(r)
             rd = dict(rl)
@@ -878,7 +890,7 @@ def cmd_build(a):
             if share < 0.9:
                 report.append(f"PROBLEM {p} {r['structure']}: only {share:.0%} of the unread items' strings reach an entry: its rendering loses words")
                 failed = True
-        lost = placed_ids(p) - {l[0] for l in out}
+        lost = placed_ids(p) - {l[0] for l in out} - s2_ids
         if lost:
             sys.exit(f"{p}: the rebuild would drop {len(lost)} entries that placements name, such as {sorted(lost)[:3]}: refused")
         os.makedirs(os.path.join(HELD, p), exist_ok=True)
@@ -892,9 +904,14 @@ def cmd_build(a):
     sys.exit(1 if failed else 0)
 
 
-def entries(p):
-    path = os.path.join(HELD, p, "entries.tsv")
-    return rows(path) if os.path.exists(path) else []
+def entries(p, second=True):
+    """The held pass's entries (entries.tsv), then, unless second is False, its second stage's (entries-s2.tsv, which
+    method/s2_held.py's `land` writes), so an S2 batch's ids resolve in check, show, earlier and the leads."""
+    out = []
+    for f in ("entries.tsv",) + (("entries-s2.tsv",) if second else ()):
+        path = os.path.join(HELD, p, f)
+        out += rows(path) if os.path.exists(path) else []
+    return out
 
 
 def batch_ids(batch):
@@ -912,7 +929,7 @@ def cmd_batches(a):
         taken |= set(batch_ids(os.path.basename(path)[:-4]))
     lines = []
     for p in PLATFORMS:
-        es = [e for e in entries(p) if e["entry_id"] not in taken]
+        es = [e for e in entries(p, second=False) if e["entry_id"] not in taken]     # never a second-stage entry
         k = len(glob.glob(os.path.join(HELD, "batches", f"{PREFIX[p]}-*.txt")))
         n_of = collections.Counter(e["structure"] for e in es)
         cut, cur = [], []
@@ -1486,6 +1503,8 @@ RELEASE_ROOTS = {"woocommerce": "/home/user/woocommerce-release/11.2.1/woocommer
 def whole_text(platform, e, cache={}):
     """The entry's words as its source holds them, where the build cut a long value: its row, or its item's JSON line,
     at the locator entries.tsv gives (`line N`). The terms and filler tests read it beside the entry's text."""
+    if e.get("structure") == "second-stage":      # an agent's quote, whose source may be outside the platform's root
+        return e["text"]
     k = (platform, e["entry_id"])
     if k not in cache:
         repo, root, sub = REPOS[platform]
@@ -1563,6 +1582,17 @@ def cited_text(platform, reading, cache={}):
                 out.append(quote_norm(by[i]["text"]))
                 out.append(quote_norm(whole_text(platform, by[i])))
     return "\n".join(out)
+
+
+def s2_text(e, cache={}):
+    """A second-stage entry's source, as the checker reads it: where its line's reading may quote it beside the entry."""
+    if e.get("structure") != "second-stage":
+        return ""
+    if e["entry_id"] not in cache:
+        from s2_held import sources
+        texts, why = sources().texts(e["source"], e.get("locator", ""))
+        cache[e["entry_id"]] = "\n".join(quote_norm(t) for k, t, o in texts or [] if k == "exact")
+    return cache[e["entry_id"]]
 
 
 def cmd_check(a):
@@ -1668,7 +1698,8 @@ def cmd_check(a):
                 if "..." in qt or "…" in qt:
                     qn = max((quote_norm(x) for x in re.split(r"\.\.\.|…", qt)), key=len)
                 if (qn and qn not in quote_norm(e0["text"]) and qn not in structure_text(a.platform, e0["structure"])
-                        and qn not in run_text(a.platform) and qn not in cited_text(a.platform, r["reading"])):
+                        and qn not in run_text(a.platform) and qn not in cited_text(a.platform, r["reading"])
+                        and qn not in s2_text(e0)):
                     notes.append(f"line {i}: the quote '{clip(qt, 70)}' is found nowhere held, in the entry, its structure's sources, the platform's run pages, or a file or statement the reading cites: copy it exactly")
             if any(x in ss for x in ("extension-point", "outside")) and any(fold(g) in fold(e0["text"]) for g in GROUP.get(a.platform, ())):
                 notes.append(f"line {i}: {'/'.join(ss)} on an entry that names a company of the platform's group: own-service? (rule 4)")
@@ -1760,6 +1791,23 @@ def cmd_check(a):
         if x not in seen:
             problems.append(f"{x} has no placement")
     notes_path = os.path.join(HELD, a.platform, f"notes-{a.batch}.md")
+    # the second stage's entries (briefs/S2-held-design.md, section 3.3): an agent wrote each text, so it is tested
+    # against its source at its locator, at a commit the batch's notes name on their first line or the repository's HEAD
+    if a.batch.startswith("S2-") or any(es.get(x, {}).get("structure") == "second-stage" for x in ids):
+        from s2_held import source_problems, notes_commits, sources, head_commits
+        for x in dict.fromkeys(ids):
+            if x not in es:
+                problems.append(f"{x} is not a held entry (entries.tsv or entries-s2.tsv)")
+        first = open(notes_path, encoding="utf-8").readline() if os.path.exists(notes_path) else ""
+        allowed = notes_commits(first)
+        for repo, c in head_commits().items():
+            allowed.setdefault(repo, set()).add(c)
+        S = sources()
+        for x in dict.fromkeys(ids):
+            e = es.get(x)
+            if e and e["structure"] == "second-stage":
+                for m in source_problems(a.platform, e["source"], e["locator"], e["text"], allowed, S):
+                    problems.append(f"{x}: {m}")
     if not os.path.exists(notes_path):
         problems.append(f"no notes-{a.batch}.md")
     else:

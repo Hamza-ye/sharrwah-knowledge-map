@@ -5,20 +5,35 @@
 # placement by class_slice.py. A `new` thing is placed only once the coordinator has decided it in held/new.tsv: the
 # capability it is (made in an amendment part first), an existing one it turned out to be, or out.
 #
+# The held pass's second stage (briefs/S2-held.md; method/s2_held.py's `land`) lands each platform's rows as the batch
+# S2-<XX>: its placements, as above; its rows that name a statement of the concern map (held/<platform>/s2-keys.tsv),
+# each an evidence row citing the statement; and its other outcomes (held/<platform>/s2-outcomes.tsv). For each cell
+# still holding nothing after the batch, `apply` writes into the cell's reading what the second stage read, at its
+# commits, and its outcome (not found, not held, absent from a complete list with its source, unreadable or unclear),
+# and adds the terms it searched to the cell's `searched` (the coordinator's decisions 2 and 3, S2-held-design.md).
+#
 # Usage:
-#   python3 -I method/held_amend.py plan --platform P      what the amendment would write, per part and cell (no change)
-#   python3 -I method/held_amend.py apply --platform P     writes it; then run check_class_part.py on each part it names,
-#                                                          and class_merge.py --complete
-# Run apply once per platform, after all its batches are checked: it refuses a platform whose evidence already holds
-# one of its entries.
+#   python3 -I method/held_amend.py plan --platform P [--batch B ...]    what the amendment would write, per part and
+#                                                                        cell (no change)
+#   python3 -I method/held_amend.py apply --platform P [--batch B ...]   writes it; then run check_class_part.py on each
+#                                                                        part it names, and class_merge.py --complete
+# Without --batch, every batch held/batches.tsv lists for the platform is planned, and apply refuses a part whose
+# evidence already cites any planned entry: run it once per platform, after all its batches are checked. With --batch
+# (repeatable, such as --batch S2-ZD), only those batches are planned, their rows of s2-keys.tsv and s2-outcomes.tsv
+# with them, and only their new things wait on held/new.tsv; apply refuses a part only where the same capability,
+# platform and entry or statement are already in its evidence (that batch, or that line, was applied before), since an
+# entry the held pass placed on another capability may take a second line (inspection-Q3M.md, Q3M-19).
 import argparse, collections, glob, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from class_slice import MODEL, PLATFORMS, rows
+from class_slice import MODEL, PLATFORMS, rows, citable, key as skey, fold
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 HELD = os.path.join(MODEL, "held")
 PARTS = os.path.join(MODEL, "parts")
 NEW_HEAD = ["platform", "name", "decision", "reading"]
+OUTCOME_WORDS = {"not-found": "not found", "not-held": "not held: the place that would state it isn't held",
+                 "absent": "absent from a complete list the platform publishes", "unreadable": "held, but not in a form the tools read",
+                 "unclear": "a passage may be the thing, but its words don't settle it"}
 
 
 def clip(s, n):
@@ -39,8 +54,21 @@ def write(path, head, rs):
             f.write("\t".join(r.get(h, "") for h in head) + "\n")
 
 
-def plan(p):
-    entries = {r["entry_id"]: r for r in rows(os.path.join(HELD, p, "entries.tsv"))}
+def semi(s):
+    return [x.strip() for x in (s or "").split(";") if x.strip()]
+
+
+def held_entries(p):
+    """The held pass's entries, then its second stage's (entries-s2.tsv)."""
+    return {r["entry_id"]: r for f in ("entries.tsv", "entries-s2.tsv") for r in rows(os.path.join(HELD, p, f))}
+
+
+def is_s2(batch):
+    return batch.startswith("S2-")
+
+
+def plan(p, batches=None):
+    entries = held_entries(p)
     cells = {(r["cap_id"], r["platform"]): r for r in rows(os.path.join(MODEL, "merged", "cells.tsv"))}
     caps = {r["cap_id"] for r in rows(os.path.join(MODEL, "merged", "capabilities.tsv"))}
     new = {}
@@ -50,66 +78,155 @@ def plan(p):
                 new[r["name"]] = r["decision"]
     rowsout, pending = collections.defaultdict(list), []
     extra = collections.defaultdict(lambda: {"terms": [], "fillers": [], "qualities": []})
+    outcomes = collections.defaultdict(list)
     listed = {r["batch"] for r in rows(os.path.join(HELD, "batches.tsv"))}     # a calibration's batches aren't listed
-    for path in sorted(glob.glob(os.path.join(HELD, p, "placements-*.tsv"))):
+    if batches:
+        unlisted = [b for b in batches if b not in listed]
+        if unlisted:
+            sys.exit(f"{', '.join(unlisted)}: not listed in held/batches.tsv")
+        paths = [os.path.join(HELD, p, f"placements-{b}.tsv") for b in batches]
+        for path in paths:
+            if not os.path.exists(path):
+                sys.exit(f"no {os.path.relpath(path, ROOT)}")
+    else:
+        paths = sorted(glob.glob(os.path.join(HELD, p, "placements-*.tsv")))
+    take = set(batches) if batches else {b for b in listed if is_s2(b)}
+
+    def place(batch, cap, ids, ss, why, r):
+        """One placement on a capability, or on a new thing once decided: its evidence rows and side files."""
+        cs = [cap] if cap else []
+        if r["placement"] == "new":
+            d = new.get(cap[4:].strip())
+            if not d:
+                pending.append((batch, cap, ids))
+                return
+            if d == "out":
+                return
+            cs = [d.split(":", 1)[1]]
+        elif r["placement"] != "capability":
+            return
+        for c in cs:
+            if c not in caps or (c, p) not in cells:
+                sys.exit(f"{batch}: {c} has no cell for {p} in the merged model; make it first")
+            for e in ids:
+                for s in ss or ["shows"]:
+                    rowsout[(c, p)].append({"cap_id": c, "platform": p, "supports": s, "key": e, "why": why(e), "_batch": batch})
+                x = extra[(c, p)]
+                x["terms"] += [t.strip() for t in r.get("terms", "").split(";") if t.strip()]
+                for fl in [t.strip() for t in r.get("filler", "").split(";") if t.strip()]:
+                    x["fillers"].append({"cap_id": c, "platform": p, "filler": fl, "key": e})
+                for q in [t.strip() for t in r.get("quality", "").split(";") if t.strip()]:
+                    what, _, val = q.partition(":")
+                    x["qualities"].append({"cap_id": c, "platform": p, "quality": what.strip(), "value": val.strip() or what.strip(), "key": e})
+
+    for path in paths:
         batch = re.search(r"placements-(.+)\.tsv$", path).group(1)
         if batch not in listed:
             continue
         for r in rows(path):
             ids = [x.strip() for x in r["entry_id"].split(";") if x.strip()]
-            cs, ss = [r["cap_id"].strip()] if r["cap_id"].strip() else [], [s.strip() for s in r["supports"].split(";") if s.strip()]
-            if r["placement"] == "new":
-                d = new.get(r["cap_id"][4:].strip())
-                if not d:
-                    pending.append((batch, r["cap_id"], ids))
-                    continue
-                if d == "out":
-                    continue
-                cs = [d.split(":", 1)[1]]
-            elif r["placement"] != "capability":
-                continue
-            for c in cs:
-                if c not in caps or (c, p) not in cells:
-                    sys.exit(f"{batch}: {c} has no cell for {p} in the merged model; make it first")
-                for e in ids:
-                    for s in ss or ["shows"]:
-                        rowsout[(c, p)].append({"cap_id": c, "platform": p, "supports": s, "key": e,
-                                                "why": f"(the held pass, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"})
-                    x = extra[(c, p)]
-                    x["terms"] += [t.strip() for t in r.get("terms", "").split(";") if t.strip()]
-                    for fl in [t.strip() for t in r.get("filler", "").split(";") if t.strip()]:
-                        x["fillers"].append({"cap_id": c, "platform": p, "filler": fl, "key": e})
-                    for q in [t.strip() for t in r.get("quality", "").split(";") if t.strip()]:
-                        what, _, val = q.partition(":")
-                        x["qualities"].append({"cap_id": c, "platform": p, "quality": what.strip(), "value": val.strip() or what.strip(), "key": e})
-    return cells, rowsout, pending, extra
+            ss = [s.strip() for s in r["supports"].split(";") if s.strip()]
+            if is_s2(batch):
+                why = lambda e, r=r, batch=batch: f"(the held pass's second stage, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"
+            else:
+                why = lambda e, r=r, batch=batch: f"(the held pass, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"
+            place(batch, r["cap_id"].strip(), ids, ss, why, r)
+    # the second stage's rows that name a statement of the concern map, a placed inventory entry or a subject's statement
+    for r in rows(os.path.join(HELD, p, "s2-keys.tsv")):
+        if r["batch"] in take and r["batch"] in listed:
+            r = dict(r, placement="new" if r["cap_id"].startswith("new:") else "capability")
+            place(r["batch"], r["cap_id"].strip(), [r["key"]], semi(r["supports"]), lambda e, r=r: r["why"], r)
+    # and its other outcomes, for the cells they name
+    for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv")):
+        if r["batch"] in take and r["batch"] in listed and (r["subject"], p) in cells:
+            outcomes[(r["subject"], p)].append(r)
+    return cells, rowsout, pending, extra, outcomes
 
 
-def summary(evs, entries):
-    by = collections.Counter(e["supports"] for e in evs)
-    structs = list(dict.fromkeys(entries[e["key"]]["structure"] for e in evs))
-    ids = list(dict.fromkeys(e["key"] for e in evs))
-    first = "; ".join(clip(entries[i]["text"], 70) for i in ids[:3])
-    return (f"The held pass adds {', '.join(f'{v} {k}' for k, v in by.items())} from {len(ids)} "
-            f"entr{'y' if len(ids) == 1 else 'ies'} of {', '.join(structs)} ({', '.join(ids[:6])}{' …' if len(ids) > 6 else ''}: {first})")
+def summary(evs, entries, stm):
+    """What the batches add to a cell, for its reading: the held pass's entries, then its second stage's passages."""
+    out = []
+    first_pass = [e for e in evs if not is_s2(e["_batch"])]
+    if first_pass:
+        by = collections.Counter(e["supports"] for e in first_pass)
+        structs = list(dict.fromkeys(entries[e["key"]]["structure"] for e in first_pass))
+        ids = list(dict.fromkeys(e["key"] for e in first_pass))
+        first = "; ".join(clip(entries[i]["text"], 70) for i in ids[:3])
+        out.append(f"The held pass adds {', '.join(f'{v} {k}' for k, v in by.items())} from {len(ids)} "
+                   f"entr{'y' if len(ids) == 1 else 'ies'} of {', '.join(structs)} ({', '.join(ids[:6])}{' …' if len(ids) > 6 else ''}: {first})")
+    second = [e for e in evs if is_s2(e["_batch"])]
+    if second:
+        bs = list(dict.fromkeys(e["_batch"] for e in second))
+        by = collections.Counter(e["supports"] for e in second)
+        ids = list(dict.fromkeys(e["key"] for e in second))
+        quoted = [i for i in ids if entries.get(i, {}).get("structure") == "second-stage"]
+        earlier = [i for i in ids if i in entries and i not in quoted]
+        ks = [i for i in ids if i not in entries]
+        text = lambda i: entries[i]["text"] if i in entries else (stm.get(i, {}).get("statement") or "")
+        what = []
+        for xs, one, many in ((quoted, "entry it quoted", "entries it quoted"),
+                              (earlier, "entry of the held pass", "entries of the held pass"),
+                              (ks, "statement already in the concern map", "statements already in the concern map")):
+            if xs:
+                what.append(f"{len(xs)} {one if len(xs) == 1 else many}")
+        first = "; ".join(clip(text(i), 70) for i in ids[:3])
+        out.append(f"The held pass's second stage ({', '.join(bs)}) adds {', '.join(f'{v} {k}' for k, v in by.items())} from "
+                   f"{' and '.join(what)} ({', '.join(ids[:6])}{' …' if len(ids) > 6 else ''}: {first})")
+    return ". ".join(out)
+
+
+def search_terms(searched):
+    """The terms of a second-stage row's searches (`<tool> <language>: <term>, <term>`), for the cell's `searched`; an
+    address (held_index: <address>) is what it read, not a term."""
+    out = []
+    for piece in semi(searched):
+        m = re.match(r"^(.+?)\s+([a-z]{2}):\s*(.+)$", piece)
+        if not m:
+            continue
+        for t in m.group(3).split(","):
+            t = re.sub(r"\s*(?::|—|-|->|→|\()\s*nothing\)?\s*$", "", t.strip()).strip()
+            if t and t.casefold() != "nothing":
+                out.append(t)
+    return out
+
+
+def outcome_sentence(o, p):
+    """What the second stage read for a cell still holding nothing, at its commits (PLAN.md, section 6: 'A searched,
+    not found lists what it read, at a commit')."""
+    ref = f"held/{p}/s2/{o['part']}.tsv line {o['line']}"
+    s = f"The held pass's second stage ({o['batch']}) read the held pages at {', '.join(semi(o['commits']))} ({ref}): {OUTCOME_WORDS.get(o['outcome'], o['outcome'])}"
+    if o["outcome"] in ("absent", "unclear") and o.get("source"):
+        at = o["entry_id"] + ", " if o.get("entry_id") else ""
+        s += f", from {at}{o['source']} {o.get('locator', '')}".rstrip() + f" ('{clip(o.get('quote', ''), 160)}')"
+    if o["outcome"] in ("not-held", "unreadable", "unclear") and o.get("capture"):
+        s += f"; {'what would settle it' if o['outcome'] == 'unclear' else 'capture'}: {clip(o['capture'], 240)}"
+    return s + f". It read: {' '.join(o.get('read', '').split())}.", ref
 
 
 def main():
-    ap = argparse.ArgumentParser()
+    ap = argparse.ArgumentParser(description="the coordinator's amendments from the held pass and its second stage")
     ap.add_argument("cmd", choices=["plan", "apply"])
     ap.add_argument("--platform", choices=PLATFORMS, required=True)
+    ap.add_argument("--batch", action="append", help="plan only this batch (repeatable): such as S2-ZD")
     a = ap.parse_args()
     p = a.platform
-    entries = {r["entry_id"]: r for r in rows(os.path.join(HELD, p, "entries.tsv"))}
-    cells, out, pending, extra = plan(p)
+    entries = held_entries(p)
+    stm = {skey(x): x for x in citable(p)}
+    cells, out, pending, extra, outcomes = plan(p, a.batch)
     for b, name, ids in pending:
         print(f"PENDING {b}: {name} ({len(ids)} entries) waits on the coordinator's decision in held/new.tsv")
     by_part = collections.defaultdict(list)
     for k, evs in out.items():
         by_part[cells[k]["part"]].append((k, evs))
+    # a cell the batch leaves holding nothing takes its outcomes into its reading and searched
+    still = {k: os_ for k, os_ in outcomes.items() if k not in out and cells[k]["held"] != "statements"}
+    for k in still:
+        if not any(k == x for x, _ in by_part[cells[k]["part"]]):
+            by_part[cells[k]["part"]].append((k, []))
     became = sum(1 for k in out if cells[k]["held"] != "statements")
     print(f"{p}: {sum(len(v) for v in out.values())} evidence rows for {len(out)} cells in {len(by_part)} parts; "
-          f"{became} cells that held nothing become held")
+          f"{became} cells that held nothing become held"
+          + (f"; {len(still)} cells still holding nothing take the second stage's outcomes" if still else ""))
     for part, ks in sorted(by_part.items()):
         print(f"   {part}: {len(ks)} cells, {sum(len(v) for _, v in ks)} rows")
     PLACED = {"core", "own-service", "extension-point", "outside"}
@@ -118,28 +235,51 @@ def main():
         now = {e["supports"] for e in evs} & PLACED
         if cells[k]["held"] != "statements" or now - was:
             print(f"   CHANGES {k[0]}@{k[1]}: {cells[k]['held']}, placed {';'.join(sorted(was)) or 'nowhere'} -> adds {';'.join(sorted(now - was)) or 'shows only'} ({len(evs)} rows)")
+    for k, os_ in sorted(still.items()):
+        for o in os_:
+            print(f"   OUTCOME {k[0]}@{k[1]}: {o['outcome']} ({o['batch']}, s2/{o['part']}.tsv line {o['line']}){', ' + o['could_change'] if o.get('could_change') else ''}")
     if a.cmd == "plan":
         return
     if pending:
         sys.exit("decide every new thing in held/new.tsv first")
+    # every part is tested before any is written, so a refusal leaves the model as it was
+    for part, ks in sorted(by_part.items()):
+        eh, ev = table(os.path.join(PARTS, part, "evidence.tsv"))
+        if a.batch:
+            have = {(r["cap_id"], r["platform"], r["key"]) for r in ev}
+            again = sorted({(e["cap_id"], e["key"]) for _, evs in ks for e in evs if (e["cap_id"], e["platform"], e["key"]) in have})
+            if again:
+                sys.exit(f"{part}: its evidence already holds {again[0][1]} on {again[0][0]}@{p}"
+                         f"{f' and {len(again) - 1} more' if len(again) > 1 else ''}: applied before")
+        else:
+            have = {r["key"] for r in ev}
+            if any(e["key"] in have for _, evs in ks for e in evs):
+                sys.exit(f"{part}: its evidence already cites entries of {p}: applied before")
     for part, ks in sorted(by_part.items()):
         d = os.path.join(PARTS, part)
         eh, ev = table(os.path.join(d, "evidence.tsv"))
-        have = {r["key"] for r in ev}
-        if any(e["key"] in have for _, evs in ks for e in evs):
-            sys.exit(f"{part}: its evidence already cites entries of {p}: applied before")
         ch, cl = table(os.path.join(d, "cells.tsv"))
         idx = {(r["cap_id"], r["platform"]): r for r in cl}
         for k, evs in ks:
             ev += evs
             c = idx[k]
-            note = summary(evs, entries)
-            if c["held"] != "statements":
-                c["held"] = "statements"
-                c["reading"] = f"Nothing in the concern map; {note[0].lower() + note[1:]} (a reading of each entry, in its evidence row)."
-            else:
-                c["reading"] = (c["reading"].rstrip() + " " + note + ".").strip()
-            c["terms"] = ";".join(dict.fromkeys([t for t in c.get("terms", "").split(";") if t] + extra[k]["terms"]))
+            if evs:
+                note = summary(evs, entries, stm)
+                if c["held"] != "statements":
+                    c["held"] = "statements"
+                    each = "each" if any(is_s2(e["_batch"]) for e in evs) else "each entry"
+                    c["reading"] = f"Nothing in the concern map; {note[0].lower() + note[1:]} (a reading of {each}, in its evidence row)."
+                else:
+                    c["reading"] = (c["reading"].rstrip() + " " + note + ".").strip()
+                c["terms"] = ";".join(dict.fromkeys([t for t in c.get("terms", "").split(";") if t] + extra[k]["terms"]))
+            for o in still.get(k, []):
+                sentence, ref = outcome_sentence(o, p)
+                if ref + ")" in c["reading"]:
+                    continue                # written by an earlier apply of the same batch
+                c["reading"] = (c["reading"].rstrip() + " " + sentence).strip()
+                have_t = {fold(t) for t in semi(c.get("searched", ""))}
+                add = [t for t in dict.fromkeys(search_terms(o.get("searched", ""))) if fold(t) not in have_t]
+                c["searched"] = ";".join(semi(c.get("searched", "")) + add)
         write(os.path.join(d, "evidence.tsv"), eh, ev)
         write(os.path.join(d, "cells.tsv"), ch, cl)
         for fname, key in (("slot-fillers.tsv", "fillers"), ("qualities.tsv", "qualities")):

@@ -31,6 +31,26 @@ MISSES = {
     "M-12": (["pay:PAY-31"], "strong buyer authentication (3D Secure) shifting a fraud loss, or chargeback liability, away from the seller"),
     "M-13": (["pay:PAY-75"], "a buyer's own claim of payment: a transfer receipt or proof of payment the buyer submits for an order"),
 }
+# each miss's parts (inspection-Q3M.md, Q3M-3; briefs/S2-held-design.md, section 3.6, a tool ruling): cut from each
+# thing's own words, alternatives kept as one part. The held pass's second stage reads each part as a cell, its
+# subject `M-nn: <part>` (method/s2_held.py)
+PARTS = {
+    "M-01": ["a tip the buyer adds, online or in person", "the tip options the merchant sets"],
+    "M-02": ["test orders and simulated payment outcomes", "how they stay apart from live orders, balances and reports"],
+    "M-03": ["an AI agent linking to, or acting as, a buyer's account"],
+    "M-04": ["the admin's own language", "right-to-left layout", "numerals", "date formats", "mixed-direction text"],
+    "M-05": ["a delivery date or time slot the buyer chooses"],
+    "M-06": ["the package dimensions a merchant saves for labels and rates"],
+    "M-07": ["the return window", "return fees", "restocking fees", "final sale"],
+    "M-08": ["handing the store's ownership to the client", "its billing"],
+    "M-09": ["the dated record for merchants", "the dated record for developers"],
+    "M-10": ["goods received before the buyer is charged, charged later on a trigger"],
+    "M-11": ["the shipment's return when the buyer refuses it at the door", "what is charged"],
+    "M-12": ["strong buyer authentication (3D Secure)", "the shift of a fraud loss or chargeback liability away from the seller"],
+    "M-13": ["a transfer receipt or proof of payment the buyer submits for an order"],
+}
+# Q3M-9: a rest's 'held', 'not held' and 'none held' are about the concern map, not the repositories
+REST_LABEL = "Q3's batch, from the concern map only: its 'none held' and 'not held' are what this check tests"
 BATCHES = {"A": ["M-01", "M-02", "M-03", "M-04", "M-05", "M-06", "M-07"],
            "B": ["M-08", "M-09", "M-10", "M-11", "M-12", "M-13"]}
 RANGE = {"A": (100, 199), "B": (200, 299)}     # each batch's statement numbers, so the two never collide
@@ -81,7 +101,7 @@ def cmd_misses(a):
         for rid in rids:
             f, r = rests[rid]
             print(f"   {rid} ({f}, {r['result']}{' / ' + r['rest'] if r['rest'] else ''}): {q3rows[rid]['question']}")
-            print(f"      its rest: {r['what_would_settle_it']}")
+            print(f"      its rest ({REST_LABEL}): {r['what_would_settle_it']}")
             print(f"      its basis: {r['basis']}")
 
 
