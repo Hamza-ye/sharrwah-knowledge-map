@@ -161,5 +161,17 @@ From SH-43:
 - **C43.10:** a post making Flow available on more plans is a plan line, `core`. Flow's own features stay `own-service`.
 - **The platform's possessive before a thing ('Shopify's Geolocation app') names it as the provider:** `own-service` (the check after SH-43).
 
-The next batches number their rules C44.1 and on, by batch.
+From SH-44:
+- **C44.1:** a first-party app's own plan is a line's scope, and the line stays `own-service`.
+- **C44.2:** a page that a new action appears on takes a `core` line, as rule 5's list page does.
+- **C44.3:** a time-limited initiative the platform runs itself is `core` while it lasts.
+- **C44.4:** a public page of platform-wide figures is `out`.
+- **C44.5:** C42.5 covers the organization admin's own address too.
+- **C44.6:** identity providers behind the platform's sign-in are `extension-point`, named as fillers; 'first-party integrations' names a means, not a separate product.
+- **C44.7:** C42.9 applies to users as to roles: CM-STF-001.
+- **Makers found since the table** (`makers`):
+  - `own-service`: Oberlo, Offset (Planet's forerunner), Shopify Ping, Shopify Chat, Launchpad, the Local Delivery app;
+  - `shows`, with no maker held: the Theme Kit Access, Shipping Manifests and Store Importer apps.
+
+The next batches number their rules C45.1 and on, by batch.
 

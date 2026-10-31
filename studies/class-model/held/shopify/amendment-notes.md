@@ -35,6 +35,7 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
   - App versions;
   - Sanity integration;
   - Finance.
+- **For CM-CUS-012's cell:** its definition is reCAPTCHA at buyers' sign-in and registration. Shopify's one reCAPTCHA setting also covers the storefront's contact and comment forms, which the changelog places there (rule 42; the check after SH-44). The definition may widen.
 - **For CM-B2B-006's cell:** the sales staff page calls them 'sales representatives' (the check after SH-30).
 
 ## Lists the concern map read whole
