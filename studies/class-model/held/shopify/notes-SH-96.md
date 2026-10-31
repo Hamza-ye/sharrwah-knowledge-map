@@ -60,3 +60,19 @@
 - The checker printed no `CHANGES` or `NOTE` line for this batch: no line changes a cell's supports, and the containers of this structure aren't noted (see the report).
 - No rule of the brief read differently from B-extent.md here.
 - **Scope:** every line's `scope` is empty. The structure is one store's POS device (fake-demo-sharrwah), but no entry states a plan, store, market or listing condition for a setting; as SH-1 and SH-2 did for one store's screens, the store isn't written as scope. 'Changes will only affect this device' is the settings' own reach, in `reading`.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 130 of 130 entries, no problem.
+- **One alignment: the device settings are CM-POS-002's, `core`** (lines 19 to 21, 34 and 35: the Devices section and Allow HID mode for barcode scanners). The cell is 'POS hardware and card-present payment devices', and its place of its own, the help section Hardware for Shopify POS (SH-I-2299), covers all of it; the note's card device is one kind. So the POS app's own device setting is `core` there, and CM-POS-002 gains `core`.
+- **Rules 1 to 8 stand, for SH-97,** with the alignment above. Rule 7's other periods ('5 minutes', '10 minutes') and 'Lock screen after sale' take the same lines.
+- **The other calls stand, as marked readings:**
+  - the Checkout header and Screen lock on CM-POS-001, the POS app's own;
+  - partially paid and unpaid orders on CM-ORD-015;
+  - Log out on CM-POS-001, as SH-6 has it, beside the admin's own on CM-ACC-001;
+  - Delete account on CM-ACC-001;
+  - Visit admin on CM-APP-001.
+- **New thing:** Tipping, with a place of its own (a settings item with its own page), as SH-10 found it in Settings > Checkout. It is decided with the others.
+- **SH-95's bottom tabs** (Home, Orders, Products, More) are the same things as this batch's, and take its lines.
+- **For the second stage:** the Order notifications page, which wasn't captured, and the Support sheet at step 38, which no structure holds.
+- **Cost:** 17.4 million tokens over 82 requests, about 134,000 an entry. The context reached about 350,000 tokens.
