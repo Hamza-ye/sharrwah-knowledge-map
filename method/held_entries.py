@@ -1502,6 +1502,16 @@ def cited_text(platform, reading, cache={}):
                     st[sid] = quote_norm((x.get("identifier") or "") + " " + (x.get("statement") or ""))
             cache["statements"] = st
         out += [cache["statements"][i] for i in sorted(ids) if i in cache["statements"]]
+    # a held entry by its id, as a reading cites another batch's maker statement or twin (SH-13, SH-40)
+    eids = set(re.findall(r"\b[A-Z]{2}-E-[0-9a-f]{8}\b", reading))
+    if eids:
+        if ("entries", platform) not in cache:
+            cache[("entries", platform)] = {e["entry_id"]: e for e in entries(platform)}
+        by = cache[("entries", platform)]
+        for i in sorted(eids):
+            if i in by:
+                out.append(quote_norm(by[i]["text"]))
+                out.append(quote_norm(whole_text(platform, by[i])))
     return "\n".join(out)
 
 
@@ -1589,7 +1599,10 @@ def cmd_check(a):
                 problems.append(f"{w}: term {t!r} is not in the text of each of its entries")
         for fl in [x.strip() for x in r["filler"].split(";") if x.strip()]:
             named = re.sub(r"^(?:the )?law of ", "", re.sub(r"\s*\([^)]*\)", "", fl), flags=re.I).strip()
-            if not all(fold(named) in fold(es[x]["text"]) or fold(named) in fold(whole_text(a.platform, es[x])) for x in ok if x in es):
+            # as written, or without a parenthesis of the filler's own: a parenthesis inside the source's words
+            # ('United States-Mexico-Canada (USMCA) free trade agreement') stays in (SH-40)
+            if not all(any(fold(n) in fold(es[x]["text"]) or fold(n) in fold(whole_text(a.platform, es[x])) for n in (named, fl))
+                       for x in ok if x in es):
                 problems.append(f"{w}: filler {fl!r} is not named in the text of each of its entries: a party known only from a source goes in reading")
             if any(fold(g) in fold(fl) for g in GROUP.get(a.platform, ())):
                 problems.append(f"{w}: filler {fl!r} is a company of the platform's group (CM-ACC-002): never a filler")
