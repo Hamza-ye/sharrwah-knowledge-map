@@ -12,7 +12,9 @@
 # release files (its code first, built bundles last, and its language template i18n/languages/woocommerce.pot one
 # entry at a time), this repository's capture
 # runs, and the founder's saves for the platform (evidence/product-class/blocked-evidence-founder/<platform>/:
-# browser saves, and PDFs through pdftotext). An address held more than once shows its fullest copy.
+# browser saves, and PDFs through pdftotext). An address held more than once shows its fullest copy. A captured page is
+# listed at the file of its item that holds the match (text.txt, expanded.txt, rendered.html, raw.html or
+# raw-browser.html), which is the file to cite and to test a quote in.
 #
 # For Shopify and Salla, the observed repositories' runs are searched too (method/runs_corpus.py): what the admin's
 # own API answered (observed-sh's answers) or Salla's hosts returned (observed-sa's saved responses), what each step's
@@ -312,11 +314,16 @@ def documents(platform):
                 tp = os.path.join(d, r["text_file"])
                 if os.path.isfile(tp):
                     # The page as it rendered: its visible text, and the text of its rendered markup, whose hidden
-                    # parts (a closed FAQ answer) the visible text leaves out.
+                    # parts (a closed FAQ answer) the visible text leaves out. Each file's own text is kept, so the
+                    # listing names the file that holds the match (inspection-S2.md, S2I-1).
+                    art = zid_article if host == "help.zid.sa" else (lambda t: t)
                     text, title = open(tp, encoding="utf-8", errors="replace").read(), ""
+                    files = [(os.path.relpath(tp, SKM), art(text))]
                     xp = os.path.join(d, "expanded.txt")      # the lines a click shows, such as FAQ answers
                     if os.path.isfile(xp):
-                        text += "\n" + open(xp, encoding="utf-8", errors="replace").read()
+                        xt = open(xp, encoding="utf-8", errors="replace").read()
+                        text += "\n" + xt
+                        files.append((os.path.relpath(xp, SKM), art(xt)))
                     seen = fold(text)
                     rp = os.path.join(d, "rendered.html")
                     if os.path.isfile(rp):
@@ -325,30 +332,32 @@ def documents(platform):
                         title = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ""
                         extra = [l for l in html_text(page).splitlines() if len(l.strip()) >= 20 and fold(l) not in seen]
                         text += "\n" + "\n".join(extra)
+                        files.append((os.path.relpath(rp, SKM), art("\n".join(extra))))
                     # The page as served, before its scripts ran. It can hold what the page doesn't show: zid.eg's
                     # Terms page holds the Saudi Terms, which its scripts replace with the Terms of Zid Egypt.
-                    served = ""
+                    served, raws = "", []
                     for raw in sorted(glob.glob(os.path.join(d, "raw*.html"))):
                         page = open(raw, encoding="utf-8", errors="replace").read()
                         m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
                         title = title or (html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else "")
                         served += "\n" + html_text(page)
-                    if host == "help.zid.sa":
-                        text, served = zid_article(text), zid_article(served)
+                        raws.append((os.path.relpath(raw, SKM), art(html_text(page))))
+                    text, served = art(text), art(served)
                     rel = os.path.relpath(tp, SKM)
                     if len(re.sub(r"\s+", "", text)) < 1500:
                         if r["url"] in rendered:
                             continue                 # another capture rendered the page, and stands for it
                         # the render showed an error or almost nothing: the page as served is all there is
-                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it, "
-                               "since the page rendered almost nothing)", r["url"], title, text + served)
+                        yield ("capture runs", Held(f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it, "
+                               "since the page rendered almost nothing)", head, files + raws), r["url"], title, text + served)
                         continue
-                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel}", r["url"], title, text)
+                    yield ("capture runs", Held(f"sharrwah-knowledge-map@{head}:{rel}", head, files), r["url"], title, text)
                     seen = fold(text)
                     only = "\n".join(l for l in served.splitlines() if len(l.strip()) >= 20 and fold(l) not in seen)
                     if len(only) >= 200:
-                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{os.path.relpath(d, SKM)}/raw "
-                               "(the page as served: text the page as rendered doesn't show)", r["url"], title, only)
+                        yield ("capture runs", Held(f"sharrwah-knowledge-map@{head}:{os.path.relpath(d, SKM)}/raw "
+                               "(the page as served: text the page as rendered doesn't show)", head, raws, served=True),
+                               r["url"], title, only)
     # The founder's saves for the platform: browser saves, and the documents saved beside them.
     for path in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/blocked-evidence-founder", platform, "**", "*"),
                               recursive=True)):
@@ -396,6 +405,28 @@ def parse(argv):
 
 ZID_START = "آخر تحديث"
 ZID_END = ("التقييمات والمراجعات", "هل تحتاج إلى مساعدة إضافية", "لماذا زد")
+
+class Held(str):
+    """A captured page's listing label, with the files whose text the document joins (text.txt, expanded.txt, the
+    lines of rendered.html the visible text lacks, raw.html or raw-browser.html), so that the listing names the file
+    that holds the match, never `<item>/raw` (inspection-S2.md, S2I-1)."""
+    def __new__(cls, label, head, files, served=False):
+        x = str.__new__(cls, label)
+        x.head, x.files, x.served = head, files, served
+        return x
+
+    def where(self, hits):
+        """`sharrwah-knowledge-map@<commit>:<path>` of the first file holding a term matched, and the others that do."""
+        def holds(t):
+            b = fold(t)
+            return any(p.search(b) if p else w in b for _, w, p in hits)
+        got = [f for f, t in self.files if holds(t)]
+        if not got:
+            return str(self)
+        more = f" (also in {', '.join(os.path.basename(f) for f in got[1:])})" if len(got) > 1 else ""
+        note = " (the page as served: text the page as rendered doesn't show)" if self.served else ""
+        return f"sharrwah-knowledge-map@{self.head}:{got[0]}{more}{note}"
+
 
 def zid_article(text):
     """A Zid help page's article alone: from each "آخر تحديث" (last updated) to the ratings, the help prompt or the
@@ -467,12 +498,14 @@ def main():
         corpus, loc, url, title, text, body, hits, with_hits = best[key]
         total[corpus] = total.get(corpus, 0) + 1
         if shown.get(corpus, 0) >= cap:
-            past.setdefault(corpus, []).append(f"{loc}: {title[:160]}" if corpus in runs else (url or loc))
+            past.setdefault(corpus, []).append(f"{loc}: {title[:160]}" if corpus in runs else (url or (loc.where(hits) if isinstance(loc, Held) else loc)))
             continue
         shown[corpus] = shown.get(corpus, 0) + 1
         _, w, p = hits[0]
         i = p.search(body).start() if p else body.find(w)
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
+        if isinstance(loc, Held):
+            loc = loc.where(hits)
         print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(t for t, _, _ in hits)}"
               + (f"; with: {', '.join(t for t, _, _ in with_hits)}" if also else "") + f"\n    …{snippet}…")
     for corpus, rest in past.items():               # every address past the cap, one line each (a count, with --brief)

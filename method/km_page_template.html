@@ -350,7 +350,7 @@ function body(c) {
     const extra = qual.filter(q => q[0] === i).map(q => `<li><span class="sup s-shows">quality</span><span>${esc(q[1])}: ${esc(q[2])} <span class="src">${esc(q[3])}</span></span></li>`).join("")
       + fill.filter(f => f[0] === i).map(f => `<li><span class="sup s-outside">slot filler</span><span>${esc(f[1])} <span class="src">${esc(f[2])}</span></span></li>`).join("");
     return `<div class="pcell"><header>${glyph(placement(cell), WORD[placement(cell)])}<h3>${esc(p[1])}</h3><span class="pl">${esc(pls.map(x => SHORT[x]).join(", "))}</span></header>
-      ${cell[2] === "none-held" ? `<p class="nothing">Nothing held: the part searched the concern map for this capability on ${esc(p[1])} and found nothing that shows it.</p>` : ""}
+      ${cell[2] === "none-held" ? (/The held pass's second stage/.test(cell[7] || "") ? `<p class="nothing">Nothing held: the concern map holds nothing for it on ${esc(p[1])}, and the held pass's second stage read the held pages (its reading says what it found).</p>` : `<p class="nothing">Nothing held: the part searched the concern map for this capability on ${esc(p[1])} and found nothing that shows it.</p>`) : ""}
       ${kv.length ? `<dl class="kv">${kv.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>` : ""}
       ${cell[7] ? `<p class="reading">${esc(cell[7])}</p>` : ""}
       ${rows || extra ? `<ul class="ev">${rows}${extra}</ul>` : ""}

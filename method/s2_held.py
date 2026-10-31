@@ -613,7 +613,7 @@ def cmd_cells(a):
             state += (", none stating a placement (placed_as not-stated): a held page could give it one that counts; "
                       "its statements are in its reading")
         print(f"   {p}: {state}; searched: {cell.get('searched') or '-'}")
-        print(f"   {p}'s reading, from the concern map only: {cell.get('reading') or '-'}")
+        print(f"   {p}'s reading, {'the model' + chr(39) + 's, of statements stating no placement' if not_placed(cell) else 'from the concern map only'}: {cell.get('reading') or '-'}")
         print("   other platforms' terms: " + " | ".join(f"{q}: {cells.get((c, q), {}).get('terms') or '-'}" for q in PLATFORMS if q != p))
         if names.get(c):
             ar = [x for x in names[c] if x.get("name_ar")]
@@ -965,7 +965,7 @@ def check_part(pr):
                                 f"it is found here: write none (no proposal: nothing held)")
     for (pk, on), xs in passages.items():
         if len(xs) > 1 and len({x[1:] for x in xs}) > 1:
-            problems.append(f"rows {', '.join(str(x[0]) for x in xs)} cite one passage on {on}: give them the same "
+            problems.append(f"rows {', '.join(str(x[0]) for x in xs[:-1])} and {xs[-1][0]} cite one passage on {on}: give them the same "
                             f"supports, terms and quality")
     for m, ps in proposals.items():
         if len(ps) > 1:

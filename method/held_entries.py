@@ -1572,7 +1572,7 @@ def cited_text(platform, reading, cache={}):
             cache["statements"] = st
         out += [cache["statements"][i] for i in sorted(ids) if i in cache["statements"]]
     # a held entry by its id, as a reading cites another batch's maker statement or twin (SH-13, SH-40)
-    eids = set(re.findall(r"\b[A-Z]{2}-E-[0-9a-f]{8}\b", reading))
+    eids = set(re.findall(r"\b[A-Z]{2}-E-[0-9a-f]{8,40}\b", reading))   # an id lengthened on a collision too (S2I-23)
     if eids:
         if ("entries", platform) not in cache:
             cache[("entries", platform)] = {e["entry_id"]: e for e in entries(platform)}

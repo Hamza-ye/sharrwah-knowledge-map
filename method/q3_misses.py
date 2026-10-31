@@ -38,19 +38,26 @@ PARTS = {
     "M-01": ["a tip the buyer adds, online or in person", "the tip options the merchant sets"],
     "M-02": ["test orders and simulated payment outcomes", "how they stay apart from live orders, balances and reports"],
     "M-03": ["an AI agent linking to, or acting as, a buyer's account"],
-    "M-04": ["the admin's own language", "right-to-left layout", "numerals", "date formats", "mixed-direction text"],
+    "M-04": ["the admin's own language", "right-to-left layout of the admin and the storefront",
+             "numerals shown to merchants and buyers", "date formats, the Hijri calendar among them", "mixed-direction text"],
     "M-05": ["a delivery date or time slot the buyer chooses"],
     "M-06": ["the package dimensions a merchant saves for labels and rates"],
     "M-07": ["the return window", "return fees", "restocking fees", "final sale"],
     "M-08": ["handing the store's ownership to the client", "its billing"],
     "M-09": ["the dated record for merchants", "the dated record for developers"],
     "M-10": ["goods received before the buyer is charged, charged later on a trigger"],
-    "M-11": ["the shipment's return when the buyer refuses it at the door", "what is charged"],
-    "M-12": ["strong buyer authentication (3D Secure)", "the shift of a fraud loss or chargeback liability away from the seller"],
+    "M-11": ["the shipment's return when the buyer refuses it at the door, on a prepaid order as on cash on delivery",
+             "what is charged"],
+    "M-12": ["strong buyer authentication (3D Secure)",
+             "the shift of a fraud loss or chargeback liability away from the seller when the buyer is authenticated (3D Secure)"],
     "M-13": ["a transfer receipt or proof of payment the buyer submits for an order"],
 }
-# Q3M-9: a rest's 'held', 'not held' and 'none held' are about the concern map, not the repositories
-REST_LABEL = "Q3's batch, from the concern map only: its 'none held' and 'not held' are what this check tests"
+# Q3M-9: a rest's 'held', 'not held' and 'none held' are about the concern map, not the repositories; and a rest
+# predates the held pass, and names pages that would settle a miss without evidence that they exist (inspection-S2.md,
+# S2I-15)
+REST_LABEL = ("Q3's batch, from the concern map only, before the held pass made CM-CHK-012, CM-PAY-033 and CM-SRF-003: "
+              "its 'none held' and 'not held' are what this check tests, and the pages it says would settle a miss are "
+              "its agent's assumptions, not evidence that they exist")
 BATCHES = {"A": ["M-01", "M-02", "M-03", "M-04", "M-05", "M-06", "M-07"],
            "B": ["M-08", "M-09", "M-10", "M-11", "M-12", "M-13"]}
 RANGE = {"A": (100, 199), "B": (200, 299)}     # each batch's statement numbers, so the two never collide

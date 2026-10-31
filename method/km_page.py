@@ -52,9 +52,10 @@ def source(src, locator, commit):
     m = re.match(r"woocommerce-(\d+\.\d+\.\d+):(.+)", src)
     if m:
         return clip(f"WooCommerce {m.group(1)} {m.group(2)}{at}", 140), f"https://plugins.trac.wordpress.org/browser/woocommerce/tags/{m.group(1)}/{m.group(2)}{line}"
-    m = re.match(r"sharrwah-knowledge-map:(.+)", src)
+    # this repository's file, at the page's commit or, as the second stage cites it, at its own (inspection-S2.md, S2I-24)
+    m = re.match(r"sharrwah-knowledge-map(?:@([0-9a-f]+))?:(.+)", src)
     if m:
-        return clip(f"{m.group(1)}{at}", 140), f"{REPO}/blob/{commit}/{m.group(1)}"
+        return clip(f"{m.group(2)}{at}", 140), f"{REPO}/blob/{m.group(1) or commit}/{m.group(2)}{line if m.group(1) else ''}"
     return clip(src + at, 140), ""
 
 
