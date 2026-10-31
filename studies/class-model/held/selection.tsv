@@ -254,3 +254,13 @@ woocommerce	woopayments-onboarding	yes	nested:steps;drop:actions,context	where		
 woocommerce	countries-states	no				WooCommerce's countries and states: market data, the subjects'
 woocommerce	woopayments-onboarding-fields	no				the legal entity types WooPayments offers per country: market data, the subjects'
 woocommerce	woopayments-supported-countries	no				the countries WooPayments supports: market data, the subjects'
+shopify	legal-documents	no				Shopify's legal documents as Markdown, among them the Payment Facilitator Terms and the country sites' translations: documents, not a list of things; read by the subjects (S-03's who holds sellers' money and contracts with them) and by the second stage where a cell needs them (the founder's evidence of 30 October)
+shopify	compliance-reports	no				the SOC 3 reports, the PCI DSS attestation and the ASV scans: certifications, read as the qualities of the trust and payments cells in the second stage
+shopify	product-taxonomy	no				the Standard Product Taxonomy v2026-10, 64,292 categories with attributes, values, return reasons and disclosures: reference data of one capability, read as that capability's evidence with its counts and parts (the product taxonomy, return reasons), not entry by entry
+shopify	engineering-blog	no				the engineering blog's 436 posts: engineering writing, routed to the architecture plan, not the class's model (STATE: each new structure is routed by what it is)
+shopify	open-source	no				19 open-source repositories: code that states Shopify's architecture, routed to the architecture plan
+shopify	embedded-videos	no				the subtitles of 162 videos embedded in engineering, changelog and developer pages: a source that clarifies the post it sits in; the engineering ones go to the architecture plan
+shopify	editions-videos	no				the subtitles of 36 feature videos the Editions pages put on features: a source that clarifies the feature it sits on, read with editions-page-data's entries
+shopify	dev-mcp-instructions	no				22 platform-authored guides bundled with the dev-mcp server: developer guidance, read in the second stage where a cell needs it, and by the architecture plan
+shopify	dev-sitemap	no				shopify.dev's sitemap: a denominator of what is held, not things the platform offers
+shopify	marketing-sitemap	no				shopify.com's sitemap: a denominator of what is held, not things the platform offers
