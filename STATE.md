@@ -249,6 +249,22 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 20:00, to about 21:45 UTC on 31 October: the inspections, and the qualities pass.**
+    - **The second stage's inspection** (`inspection-S2.md`, `38e7501f`) found 25 things and 7 notes.
+      - The 4 must-fix findings were confirmed by the coordinator against the code and the evidence:
+        - a capture's passage held outside its `text.txt` can't be cited as the brief said;
+        - `not-held` took a gap row that names a whole surface;
+        - two rows on one passage landed with the first row's support only;
+        - a miss landed with its agent's own reading.
+      - A build agent is taking every finding as the inspector wrote it, tested on the inspector's fixtures, with the coordinator's decisions on S2I-5, S2I-11, S2I-19, S2I-21 and S2I-30.
+      - The stage now also reads the 85 held cells whose statements state no placement, so it covers 705 cells. S2-R2 is rewritten for it, in plain words.
+    - **The architecture plan's review** (`architecture/plan-review.md`, `58b26cbe`) found 21 things, 4 must fix. The main one: the plan decides two things (every amount points to a currency entry, decided before S-09; each part owns its records) and listed neither for veto.
+      - An agent is taking every fix into the plan, with a section 7 of its decisions in plain words, and `PLAN.md`'s rule on subjects not yet run gains an exception for the cheapest step that keeps a variation point open.
+    - **The founder asked what defines a quality and how qualities were inventoried.** The coordinator's answer found that they never were, as such: they were a by-product of the capabilities, under a definition closed to four kinds, and most of the 3,881 rows are prices, fees and plan allowances.
+      - `PLAN.md` now has a qualities pass, by ISO/IEC 25010:2023, with isolation between stores, where data lives and identity named (`e8f3a78f`). It is listed for the founder's veto.
+      - Its brief is being drafted (`briefs/QL-qualities.md`).
+    - **The omission review's brief** is being drafted (`briefs/O-omission.md`).
+    - **Next:** the second stage's fixes checked and committed, then S2-ZD-1 alone, landed end to end; the plan's revision checked and committed; the two drafts decided, then inspected; the new rulings added to `reports/GM-rulings.md`.
   - **Since 18:40, to about 20:00 UTC on 31 October: the second stage's brief and tools.**
     - **The brief** `briefs/S2-held.md` and its design `briefs/S2-held-design.md` are drafted (`d91379ee`), with the coordinator's decisions on the design's open questions.
     - **Its two rulings are written in plain words** for the founder's veto (`cc4434f0`): what each decides, why, what it risks and its alternative. The founder asked on 31 October that no ruling be listed by its code alone, so every ruling at GM is written this way.
