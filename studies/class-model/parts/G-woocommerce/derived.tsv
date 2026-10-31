@@ -5,8 +5,8 @@ CM-MIG-002	woocommerce	none-held
 CM-MIG-003	woocommerce	none-held					
 CM-MIG-004	woocommerce	none-held					
 CM-MIG-005	woocommerce	none-held					
-CM-MIG-006	woocommerce	statements	core	Advanced > Blueprint (beta)	WC-C-094/reason/WC-S-5450=multisite	WC-C-094/responsible:stated only in general terms	general
-CM-OPS-001	woocommerce	none-held					
+CM-MIG-006	woocommerce	statements	core	Advanced > Blueprint (beta)	WC-C-094/reason/WC-S-5450=multisite | WC-E-cb902431=blueprint	WC-C-094/responsible:stated only in general terms	general
+CM-OPS-001	woocommerce	statements	not-stated	core-profiler-free-extensions	WC-E-38af54ff=GB | WC-E-3ff0b1b3=SA | WC-E-97972f57=OM | WC-E-a21963fb=YE | WC-E-e4991b97=AE | WC-E-edc29269=YE | WC-E-f2fcdae0=US:CA		
 CM-OPS-002	woocommerce	none-held					
 CM-OPS-003	woocommerce	statements	outside;own-service	How and Why We Share Information: Third-party vendors | WooCommerce Server Recommendations		WC-C-034/responsible:stated only in general terms;WC-C-034/boundary:searched, not found;WC-C-034/reason:searched, not found	general
 CM-OPS-004	woocommerce	statements	core	Status > System status | Status > Tools | WooCommerce > Status		WC-C-083/responsible:stated only in general terms;WC-C-083/reason:searched, not found	general

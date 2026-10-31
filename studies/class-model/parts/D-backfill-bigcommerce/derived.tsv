@@ -5,7 +5,7 @@ CM-ANL-007	woocommerce	none-held
 CM-ANL-007	zid	none-held					
 CM-B2B-004	salla	statements	core		SA-C-040/decides/SA-S-3361=plans: special | SA-C-041/boundary/SA-S-2682=the answering store (merchant@ar)	SA-C-040/responsible:page not read;SA-C-040/reason:page not read;SA-C-041/responsible:page not read;SA-C-041/reason:page not read	general
 CM-B2B-004	shopify	statements	core;extension-point	app-store-built-in-features | editions-page-data		SH-C-020/reason:searched, not found	general
-CM-B2B-004	woocommerce	none-held					
+CM-B2B-004	woocommerce	statements	not-stated				
 CM-B2B-004	zid	none-held					
 CM-B2B-005	salla	none-held					
 CM-B2B-005	shopify	none-held					
@@ -13,7 +13,7 @@ CM-B2B-005	woocommerce	none-held
 CM-B2B-005	zid	none-held					
 CM-B2B-006	salla	none-held					
 CM-B2B-006	shopify	statements	core	editions-page-data | merchant-changelog	SH-E-b99b5ffc=Shopify Plus | SH-E-faab6d0a=Plus	SH-C-010/reason:searched, not found	general
-CM-B2B-006	woocommerce	none-held					
+CM-B2B-006	woocommerce	statements	not-stated				
 CM-B2B-006	zid	none-held					
 CM-B2B-007	salla	none-held					
 CM-B2B-007	shopify	statements	core	app-store-built-in-features | editions-page-data | merchant-changelog	SH-E-6b48fe41=Shopify Plus | SH-E-bd69c4f3=Shopify Plus | SH-E-e985590d=Shopify Plus plan	SH-C-041/responsible:stated only in general terms;SH-C-041/reason:searched, not found;SH-C-044/responsible:stated only in general terms;SH-C-044/reason:searched, not found	general
@@ -21,5 +21,5 @@ CM-B2B-007	woocommerce	none-held
 CM-B2B-007	zid	none-held					
 CM-MKT-023	salla	statements	core	Show “You may also like” section on product page	SA-C-002/decides/SA-S-2097=plan: سلة بلس | SA-C-020/decides/SA-S-3181=the answering store (merchant@en)	SA-C-002/responsible:page not read;SA-C-002/reason:page not read;SA-C-020/responsible:page not read;SA-C-020/reason:page not read	general
 CM-MKT-023	shopify	statements	core;extension-point;own-service	editions | editions-page-data | merchant-changelog	SH-E-6c6282e2=POS Pro | SH-E-e1135220=Plus merchants;Plus Partners | SH-E-e6b5ecbb=Basic;Grow;Advanced;Plus;www.shopify.com/pk		general
-CM-MKT-023	woocommerce	none-held					
+CM-MKT-023	woocommerce	statements	not-stated				
 CM-MKT-023	zid	statements	core	dashboard-route-manifest	ZD-E-6c481d66=new_starter | ZD-E-d8585d70=rise.monthly; new_growth.monthly; rise.yearly; new_growth.yearly; new_professional.yearly | ZD-E-eeb3c7b0=new_starter		general
