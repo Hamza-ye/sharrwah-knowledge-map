@@ -196,5 +196,17 @@ From SH-62:
 - **E103:** Checkout Blocks' order limits are CM-CHK-005.
 - **E104:** carrier preferences are CM-SHP-015 `core`, and the route the card's link opens takes its own line.
 
-The next batches number their rules from E105.
+From SH-63:
+- **E105:** a card where Sidekick does a task takes CM-AIA-002 `core`, and the feature it builds or edits takes its own line.
+- **E106:** a Sidekick card with only a title is placed by that title.
+- **E107:** extension APIs go on the extension's capability; the POS Print API also takes CM-ORD-009 `shows`.
+- **E108:** in-person payments and payment methods at the POS are CM-PAY-021, CM-PAY-017 and CM-PAY-018.
+- **E109:** the POS Hub is `own-service` (SH-E-04dd57d3); its compatible devices, whose makers aren't named, are `shows`.
+- **E110:** a refund screen's list gives each item its line.
+- **E111:** Uber Direct is CM-SHP-006 `extension-point`, not CM-SHP-008.
+- **E112:** AI in an admin flow that isn't Sidekick takes CM-AIA-001.
+- **E113:** a third party that builds the store, with no platform interface named (Lovable), is `outside` on CM-SFR-011.
+- **E114:** Messaging's planner is CM-MKT-019.
+
+The next batches number their rules from E115.
 
