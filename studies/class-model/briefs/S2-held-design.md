@@ -364,7 +364,9 @@ The first two groups are printed whole. The third is counted, and printed only w
 
 Each is the coordinator's to confirm. Each is listed in one plain line at the next report (`PLAN.md`, section 3).
 - **`S2-R1`:** a cell's `found` rows begin with the passage that shows the strongest placement, and add one only for a support value or a scope not shown yet. Why: the count reads `core` and `own-service`, and every further passage costs a read.
+  - *In plain words, for the veto:* when an agent finds that a platform does have a thing it had nothing for, it cites the passage showing the strongest support first, and a further passage only where it shows a support or a scope not cited yet; then it stops. *What it risks:* fewer sources per cell for a later reviewer to cross-check, and a misread first passage has no second beside it. *The alternative:* cite every passage found, at a higher cost of reading.
 - **`S2-R2`:** a cell already held takes no row in this stage, even where a passage read here also states its thing. Where the passage would change what the cell is placed as, it is named in the notes. Why: the stage is "each cell still holding nothing" (`PLAN.md`, Stage 4A).
+  - *In plain words, for the veto:* this stage reads only the cells that hold nothing. A passage that would correct a cell already held is noted, not placed, and the final review reads those notes. *What it risks:* such a correction waits for the final review, which reads by risk, so one it doesn't select could stay uncorrected. *The alternative:* place those passages in this stage too, at a higher cost of reading.
 - **The misses' parts,** section 3.6: a tool ruling, cut from each thing's own words.
 - **`could_change`'s use,** proposed:
   - `kind` and `decision` go to a handoff;
