@@ -823,7 +823,7 @@ ROUTE_ITEMS = {("salla", "dashboard-app-routes"), ("salla", "portal-app-routes")
 
 
 def route_items(platform, structure, cache={}):
-    """{(app, path): [(line, keys, has condition, record)]} for a bundle route structure's items, each with the
+    """{(app, path, parent): [(line, keys, has condition, record, path source)]} for a bundle route structure's items, each with the
     record `raw/runs/<run>/fetch.warc.gz@<offset>` of the bundle file it was read from, by the structure's runs' fetch.cdx."""
     if (platform, structure) in cache:
         return cache[(platform, structure)]
@@ -841,13 +841,18 @@ def route_items(platform, structure, cache={}):
                 g = l.split()
                 if len(g) > 8 and g[8].isdigit():
                     uris.setdefault(g[0], f"raw/runs/{run}/fetch.warc.gz@{g[8]}")
-        for i, l in enumerate(open(f, encoding="utf-8"), 1):
-            d = json.loads(l)
+        its = [json.loads(l) for l in open(f, encoding="utf-8")]
+        at = {d.get("position"): d for d in its}
+        for i, d in enumerate(its, 1):
             app, ver, fn = d.get("app") or "", d.get("version") or "", d.get("file") or ""
             rec = next((r for u, r in uris.items() if u.endswith("/" + fn) and f"/{app}/{ver}/" in u), "") or \
                 next((r for u, r in uris.items() if u.endswith("/" + fn)), "")
-            out[(app, d.get("path"))].append((i, ",".join(d.get("keys") or []) or "none", "condition" in d, rec,
-                                              d.get("path_source") or ""))
+            # an item under a parent renders as `parent: <the parent's path>`, or its position where it has none
+            par = d.get("parent")
+            if par is not None:
+                par = (at.get(par) or {}).get("path") or str(par)
+            out[(app, d.get("path"), par)].append((i, ",".join(d.get("keys") or []) or "none", "condition" in d, rec,
+                                                   d.get("path_source") or ""))
     cache[(platform, structure)] = out
     return out
 
@@ -897,8 +902,9 @@ def cmd_show(a):
             lab = e["labels"] if e["labels"] not in ("", ".") else ""
             print(f"{i:>4} {e['entry_id']} [{e['structure']}{' @' + clip(lab, 80) if lab else ''}] {clip(e['text'], a.width)}")
             if (a.platform, e["structure"]) in ROUTE_ITEMS:
-                m = re.match(r"app: ([^;]+); path: (.*)$", e["text"])
-                its = route_items(a.platform, e["structure"]).get((m.group(1).strip(), m.group(2).strip())) if m else None
+                m = re.match(r"app: ([^;]+); path: (.*?)(?:; parent: (.*))?$", e["text"])
+                its = route_items(a.platform, e["structure"]).get((m.group(1).strip(), m.group(2).strip(),
+                                                                    m.group(3).strip() if m.group(3) else None)) if m else None
                 if its:
                     recs = sorted({r for _, _, _, r, _ in its if r})
                     print("       items: " + ", ".join(f"line {n} (keys {k}{'; condition' if c else ''})" for n, k, c, _, _ in its)
