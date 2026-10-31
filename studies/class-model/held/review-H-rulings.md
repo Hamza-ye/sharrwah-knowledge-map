@@ -137,3 +137,4 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
     - Translate & Adapt's 1 line.
 
     SH-39's are aligned at its check. Shopify Forms, Marketplace Connect, Order Printer and the Fulfillment Network have no maker statement held, so they stay `core` by what their posts show, the maker a gap (the ruling after SH-36).
+- **A first-party app's feature takes another capability's line only where the app itself provides that capability's thing** (after SH-57). Stocky's transfers are stock transfers, so they stand on CM-INV-006. Shopify Collective's supplier shipping rates at checkout, its inventory confirmed between stores and its price lists between suppliers and retailers are Collective's own thing, selling and sourcing between the platform's stores. Their words stay in its CM-CHN-005 line, and SH-57's four lines on CM-SHP-001, CM-INV-001 and CM-B2B-003 are dropped.
