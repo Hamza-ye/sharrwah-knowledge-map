@@ -90,3 +90,12 @@ None. Each entry's thing is already a capability's: the sub-pages by the concern
 - **The checker reads a quote's file only by its full path:** the Arabic quote 'خرائط سلة' was 'found nowhere held' until the reading cited `structures/salla/dashboard-translations/ar/settings.json` in full, not `ar/settings.json` after the English file's path.
 
 The checker's last line for SA-52, after this file was written: `80 of 80 entries placed; 0 problems`.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **No cell changes and no new things.** CM-AIA-004's `extension-point` repeats SA-27's and SA-49's, behind `salla-mcp`, which is released on all four held stores.
+- **V1 to V8 stand** for SA-53 to SA-56.
+  - **V5's three CM-MKS-001 `shows` lines stay.** WhatsApp verification by market is part of the login's options by market, the very thing CM-MKS-001's flag `customize-login-for-multi-markets` names (U6's exception).
+  - **Entry 25 follows the section's body,** 'OpenStreetMap'. The unused locale key 'Salla Maps' / 'خرائط سلة' is a lead.
+- **The build's `if:` doesn't render `getFeatureState` or `getFeatureVisibility`, and isn't rebuilt for them.** Only 23 settings nodes sit under them, all in sections already placed (the login options, multiple coupons, recaptcha). The agents read them from the bodies, as V1 and U4 say. No later batch holds one.
+- **Cost:** 15.7 million tokens over 73 requests, about 196,000 an entry.
