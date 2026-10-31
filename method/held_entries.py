@@ -51,6 +51,11 @@
 #   meta:<k1>,<k2>            adds one item per value of those keys of the structure's meta.json, where the extractor
 #                             kept what the platform states beside its items
 #   drop:<k1>,<k2>            leaves those fields out of the rendering
+#   nodes:<field>             each item joined to its node in the answer beside items.jsonl that its field names
+#                             (`<value, '/' as '~'>.json`), the s: nodes in document order: what the item leaves out
+#                             (a sub-page's href and features, a plan gate's plans, a field's controls and options, the
+#                             words it shows), and a parent with no name of its own named by its kind under its nearest
+#                             named ancestor, so the same item in each store's answer is one entry (Salla's settings)
 #   long:<n>                  the structure's entries are prose, each one statement the platform publishes whole (a
 #                             changelog post, a feature's dialog): an entry up to n characters is not taken for a list
 #   drop-match:<pattern>      drops the items whose rendering matches
@@ -180,12 +185,80 @@ def flatten(o, keys, trail=(), names=()):
     return out
 
 
+SETTINGS_CONTROLS = {"s-toggle", "s-select", "s-input", "s-radio", "s-checkbox", "s-calendar", "s-lingual-field",
+                     "s-uploader", "s-tags", "s-tel-input"}
+SETTINGS_SKIP = {"_", "$", "class", "className", "slot", "loading", "overlayAlignment", "wide", "portal", "placeholder",
+                 "created_at", "updated_at", "initialValues", "invalidateQueries", "start", "label", "description", "id",
+                 "action", "method", "path", "permissions", "flag", "title"}
+
+
+def settings_nodes(path, cache={}):
+    """A settings section's answer: its s: nodes in document order, the order the structure's items list them in."""
+    if path not in cache:
+        seq = []
+        def walk(o):
+            if isinstance(o, dict):
+                if isinstance(o.get("_"), str) and o["_"].startswith("s:"):
+                    seq.append(o)
+                for v in o.values():
+                    walk(v)
+            elif isinstance(o, list):
+                for v in o:
+                    walk(v)
+        try:
+            walk(json.load(open(path, encoding="utf-8")))
+        except Exception:
+            pass
+        cache[path] = seq
+    return cache[path]
+
+
+def settings_extra(node, own=()):
+    """What a settings node states that its item leaves out: its scalar fields (a sub-page's href, its features, a plan
+    gate's plans), the controls under it with their options, and the other words it shows (tooltips, badges, alerts),
+    as translation keys, each once; nothing under another s: node."""
+    out = {k: v for k, v in node.items() if k not in SETTINGS_SKIP and (isinstance(v, (str, int, float, bool))
+           or (isinstance(v, list) and v and all(isinstance(x, (str, int, float)) for x in v)))}
+    controls, words, taken = [], [], set(own)
+    def key(v):
+        return v.get("$") if isinstance(v, dict) and v.get("_") == "t" and isinstance(v.get("$"), str) else None
+    def walk(o, top):
+        if isinstance(o, dict):
+            k = o.get("_")
+            if not top and isinstance(k, str) and k.startswith("s:"):
+                return
+            if key(o):
+                if key(o) not in taken:
+                    taken.add(key(o)); words.append({"text": key(o)})
+                return
+            if k in SETTINGS_CONTROLS:
+                c = {"control": k, **{kk: o[kk] for kk in ("type", "name", "min", "max", "step", "multiselect")
+                                      if isinstance(o.get(kk), (str, int, float, bool))}}
+                opts = [it for it in o.get("items") if isinstance(it, dict)] if isinstance(o.get("items"), list) else []
+                if opts:
+                    c["options"] = [{"option": key(it.get("label")) or it.get("label") or it.get("value")} for it in opts]
+                    taken.update(key(it.get("label")) for it in opts if key(it.get("label")))
+                controls.append(c)
+            for kk, v in o.items():
+                if kk != "_":
+                    walk(v, False)
+        elif isinstance(o, list):
+            for v in o:
+                walk(v, False)
+    walk(node, True)
+    if controls:
+        out["controls"] = controls
+    if words:
+        out["shows"] = words
+    return out
+
+
 def selection():
     path = os.path.join(HELD, "selection.tsv")
     return rows(path) if os.path.exists(path) else []
 
 
-RULE = re.compile(r";(?=\s*(?:rows|text|files|json1?|changes|label|prune|wrap|pick|dict|name|nested|new-vs|merge|where|labels|latest|group|drop|drop-match|translate|release|meta|long):)")
+RULE = re.compile(r";(?=\s*(?:rows|text|files|json1?|changes|label|prune|wrap|pick|dict|name|nested|new-vs|merge|where|labels|latest|group|drop|drop-match|translate|release|meta|long|nodes):)")
 
 
 def pruned(o, keys, wrap=()):
@@ -302,6 +375,38 @@ def items_of(platform, structure, rs):
                 for k in ("parent", "within"):
                     if isinstance(o, dict) and isinstance(o.get(k), int) and not isinstance(o.get(k), bool) and o[k] in at and called(at[o[k]]):
                         o[k] = called(at[o[k]])
+            if "nodes" in rd:
+                k_of, off = collections.Counter(), collections.Counter()
+                for x in here:
+                    o = x[4]
+                    sec = o.get(rd["nodes"] or "section") if isinstance(o, dict) else None
+                    if not isinstance(sec, str):
+                        continue
+                    seq = settings_nodes(os.path.join(os.path.dirname(f), sec.replace("/", "~") + ".json"))
+                    i = k_of[sec]; k_of[sec] += 1
+                    node = seq[i] if i < len(seq) else None
+                    if node is None or node.get("_") != o.get("kind"):
+                        off[sec] += 1
+                        continue
+                    own = {v.get("$") for v in (node.get("label"), node.get("description")) if isinstance(v, dict) and v.get("_") == "t"}
+                    for kk, vv in settings_extra(node, own).items():
+                        if o.get(kk) in (None, "", [], {}):
+                            o[kk] = vv
+                if off:
+                    print(f"NOTE {structure} {label}: {sum(off.values())} items not joined to their answers' nodes ({', '.join(sorted(off)[:5])})")
+                def lineage(p, seen=()):
+                    q = at.get(p)
+                    if not isinstance(q, dict) or p in seen:
+                        return ""
+                    if called(q):
+                        return called(q)
+                    up = q.get("parent")
+                    up = lineage(up, seen + (p,)) if isinstance(up, int) and not isinstance(up, bool) else (up if isinstance(up, str) else "")
+                    return str(q.get("kind") or "item") + (f" under {up}" if up else "")
+                for x in here:
+                    o = x[4]
+                    if isinstance(o, dict) and isinstance(o.get("parent"), int) and not isinstance(o.get("parent"), bool):
+                        o["parent"] = lineage(o["parent"]) or o["parent"]
             out += here
         if not files:
             for f in sorted(glob.glob(os.path.join(base, "**", "*.json"), recursive=True)):
@@ -1136,7 +1241,8 @@ GROUP = {"bigcommerce": ["Commerce.com", "Commerce Software", "Feedonomics", "Ma
 BRAND = {"shopify": "Shopify", "salla": "Salla", "zid": "Zid", "bigcommerce": "BigCommerce", "woocommerce": "WooCommerce|Woo"}
 # a plan's or a provider's mark that a thing is included: scope, or a statement of the marked thing, never a quality
 MARKS = {"✔", "✓", "✔️", "yes", "available", "included", "true", "نعم", "متاح", "متوفر", "مشمول"}
-QUOTE = re.compile(r"(?<!\w)['‘]([^'’\n]{8,}?)['’](?!\w)")
+# a word's own marks (Arabic's vowel marks, as in 'مجاناً') are part of it: a quote never opens right after one (SA-48)
+QUOTE = re.compile(r"(?<![\w\u064B-\u065F\u0670])['‘]([^'’\n]{8,}?)['’](?![\w\u064B-\u065F\u0670])")
 
 
 def quote_norm(s):

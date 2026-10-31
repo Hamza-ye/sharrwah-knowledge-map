@@ -167,7 +167,7 @@ salla	report-widgets	yes		where		what a custom report can be built from
 salla	report-widgets-legacy	yes		where		the report builder's legacy widgets
 salla	salla-academy	yes	text:	where		Salla's academy, as its pages state it
 salla	salla-complaints	yes	text:	where		Salla's complaints surface, as its page states it
-salla	settings-center	yes	translate:dashboard-translations/en/settings.json,dashboard-translations/ar/settings.json	where		Salla's settings centre: its sections and their items, their labels resolved from the dashboard's own translations (inspection-H.md, E-8)
+salla	settings-center	yes	translate:dashboard-translations/en/settings.json,dashboard-translations/ar/settings.json;nodes:section;long:4000	where		Salla's settings centre: its sections and their items, their labels resolved from the dashboard's own translations (inspection-H.md, E-8)
 salla	shipping-carriers	yes		where		the shipping companies a store is offered
 salla	theme-design-components	yes		where		what the theme editor can place
 salla	theme-marketplace	yes		where		the theme store's tags
