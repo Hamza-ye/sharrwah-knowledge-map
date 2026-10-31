@@ -90,3 +90,15 @@ None.
 - **The checker's container note** counts a permission with nested permissions as a container (rule 3). In a permission list, the nesting follows a dependency, not a menu.
 - **`held_entries.py earlier`** found earlier lines for only four of the 39 permission ids. The router batches name a route's permission in `reading` only now and then, so the cells (P2) were the lookup that found the places.
 - Nothing in this brief read differently from B-extent.md for these entries.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 87 of 87 entries, no problem.
+- **The cell changes stand, each read again, as marked readings:**
+  - CM-CAT-013 gains `core` from the permission Products > Edit price (EDIT_PRODUCT_PRICE): Shopify's own control over a product's price, as Salla's cell stands on its webhook `product.price.updated`. No platform defines what 'product pricing' does, so whether the capability is pricing tools or the price itself is for the final review.
+  - CM-ONB-004 gains `core` from the permission Home > Home, since the Home is the two things SH-2's N3 reads (the ruling after SA-19).
+- **The metafield types** stand on CM-CNT-002, each a kind of the list's thing (M-6). The reference types take no line on the records they reference.
+- **P1 to P8 stand for SH-4,** with the suggestion taken: a category's `visibleBy` is the scope of every permission inside it, joined to a permission's own with ` and ` (the ruling after SA-56 on nested gates).
+- **The checker's container notes** on permissions with nested permissions are prompts, not problems. Each such permission is placed on its own capability.
+- **For the second stage:** the metafield definition page's other fields and Single line text's validations, for CM-CNT-002.
+- **Cost:** 14.0 million tokens over 80 requests, about 161,000 an entry. The context reached about 311,000 tokens, not the 150,000 the agent estimated.
