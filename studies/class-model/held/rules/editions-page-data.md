@@ -34,7 +34,7 @@ Each entry is one feature card of one edition's Editions page, in observed-sh at
 19. A card is `extension-point` where a third party's app does the feature (its venue the filler), or it links an App Store category or collection (E3, SH-50); a non-Shopify-branded app at `apps/` adds CM-APP-007 `core` (E37, SH-55). An app with no maker named is `shows` on its feature, the maker a gap (the ruling after SH-43).
 20. `outside` is a third party doing it with no interface of the platform, such as Balance's bank (E3, SH-50; SH-54, case 12).
 21. `shows` is a separate product named by its brand alone in no admin, plan or app (Shopify Capital), a topic or claim alone, a case study's features, a stat card's claim, or a partner's permissions (E3, E8, SH-50; E19, E20, SH-53).
-22. A new thing's support is what the platform does with it; `shows` is for a thing only named (the check after SH-54; E46, SH-56).
+22. A new thing with a place of its own takes the support of what the platform does with it; `shows` is for a thing only named, and for a new thing with no place of its own, as the brief writes it (the check after SH-54; E46, SH-56; the check after SH-47).
 23. An admin section the platform's own words call part of its admin is `core` whatever its route's permission ('track fulfillments without leaving Shopify') (the ruling after SH-2; E50, SH-56).
 24. **The Fulfillment Network is Shopify's own, `own-service`,** on its maker statements 'our network of 20+ distribution hubs and fulfillment centers' and 'our nationwide freight services' (E16, SH-51), and it is installed from the App Store. Its partners' work stays `extension-point` (SH-36). The ruling after SH-55's list, which named it among the apps with no maker held, is corrected; SH-38's and SH-56's lines are aligned (decided after the digest).
 25. **Shopify Balance is the admin's own money account, `core`,** as its cell reads it (CM-PAY-023, 'a business account in the admin'). A 'we've added … using Shopify Balance' post about an admin service doesn't make it a separate product, as it doesn't for Shopify Payments; the ruling after SH-41 is for a separate product such as Shopify Credit, whose cell holds `own-service`. SH-51's 'Shopify Balance app' `shows` stands as its own reading (decided after the digest).
@@ -220,5 +220,17 @@ From SH-64:
 - **E123:** integrations credited to named third parties, with no platform interface named, are `outside`. One 'leveraging our … features' is `extension-point` (SH-55's Acumatica).
 - **E124:** third parties' EDI apps at App Store addresses, the companies named as the work's source, are `extension-point`.
 
-The next batches number their rules from E125.
+From SH-47, the rendered Fall 2026 page (`editions`):
+- **R47.1:** a section heading is a grouping, `out`, unless all its cards are one capability's thing (Sidekick: CM-AIA-002).
+- **R47.2:** a rendered card's `h3` is its title, its `p` the description, and its links' hidden 'Learn more', 'Read help doc' or 'Get app' its CTAs. Quotes stop at each link. An image's alt text takes no line; a footnote is part of its entry; stats are claims.
+- **R47.3:** an outside AI assistant working on the store through the platform's connector or plugin, as its help link shows, is CM-AIA-004 `core`, the assistant `extension-point` where its own work is named. One named with no connector is `shows`.
+- **R47.4:** Shop Pay in a buyer's AI agent is CM-PAY-014 `own-service`, the agents its venues; buying through those agents is CM-AIA-005 `extension-point`.
+- **R47.5:** a card repeating a changelog post takes that post's capabilities, but a plan named only in the post isn't the card's scope.
+- **R47.6:** a card's linked page is read only where its own words leave its capability or support open.
+
+From SH-66 (it numbered its rules from E135; SH-65's are E125 on):
+- **E135:** R47.3 holds for the page data's 'Plugins' cards; 'Plugins' as an eyebrow is its group's title.
+- **E136 to E144:** discounts limited to a sales channel; multi-entity selling as a payment feature's condition; how analytics, reports and overview cards map; an inventory audit trail on CM-INV-002; cancellation and return requests from the order status page; carriers that tracking numbers detect as CM-SHP-017's fillers; bundles published to channels; Shop Campaigns' charges on the Shopify invoice; the admin's app settings page. SH-66's notes give each with its case.
+
+The next batches number their rules from E145.
 

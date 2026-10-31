@@ -41,6 +41,7 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
   - Sanity integration;
   - Finance.
 - **For CM-CUS-012's cell:** its definition is reCAPTCHA at buyers' sign-in and registration. Shopify's one reCAPTCHA setting also covers the storefront's contact and comment forms, which the changelog places there (rule 42; the check after SH-44). The definition may widen.
+- **For CM-AIA-004's cell:** it names an MCP server; the platform's connectors and plugins for outside AI assistants (Grok, Gemini, Claude, Copilot, ChatGPT), which the Fall 2026 Edition's help pages describe without naming MCP, now give it `core` (the check after SH-47). Its definition may widen.
 - **For CM-B2B-006's cell:** the sales staff page calls them 'sales representatives' (the check after SH-30).
 
 ## Lists the concern map read whole
