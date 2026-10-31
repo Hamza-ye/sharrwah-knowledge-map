@@ -1229,7 +1229,7 @@ def earlier_pattern(kind, v):
         # the address alone, or with a host before it; never as the start of a longer address
         return re.compile(re.escape(v) + r"(?![\w/-])")
     if kind == "label":
-        return re.compile(r"['‘“]" + re.escape(v) + r"(?:['’”]| \(| /)")
+        return re.compile(r"['‘“]" + re.escape(v) + r"(?:['’”]| \(| /)|;" + re.escape(v) + ";")
     # a route's id whole: balance:root is never matched inside balance:root:statements (SH-8)
     return re.compile(r"(?<![\w.:-])" + re.escape(v) + r"(?![\w:-])")
 
@@ -1247,8 +1247,9 @@ def cmd_earlier(a):
         notes = os.path.join(HELD, a.platform, f"notes-{b}.md")
         checked = os.path.exists(notes) and "## The coordinator's check" in open(notes, encoding="utf-8").read()
         for n, r in enumerate(rows(path), 2):
+            # terms as `;term;`, so a label is found as a whole term as well as quoted in a reading (SH-70)
             lines.append((b if checked else b + "?", n, r.get("cap_id") or r.get("placement", ""),
-                          r.get("supports", ""), (r.get("reading") or "") + " " + (r.get("terms") or "")))
+                          r.get("supports", ""), (r.get("reading") or "") + " ;" + ";".join(t.strip() for t in (r.get("terms") or "").split(";")) + ";"))
     for i, eid in enumerate(batch_ids(a.batch), 1):
         if eid not in by or (a.__dict__.get("from") and i < a.__dict__["from"]) or (a.to and i > a.to):
             continue
