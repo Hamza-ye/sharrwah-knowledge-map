@@ -249,6 +249,18 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 09:45, to about 11:40 UTC on 31 October:**
+    - **Shopify, checked since:** SH-14 (the router, with its digest), SH-30 to SH-32 (help notes), SH-42 and SH-43 (the changelog, with its digest), SH-58 to SH-61 (Editions' page data, with its digest), SH-79 and SH-92 to SH-94. So `pricing-page-data` and `plan-page-public` are placed whole, 63 of Shopify's 103 batches in all.
+    - **Digests:** the changelog's and the router's are written and settled, and each digest's section 6 adds the rules its batches set.
+    - **Rulings since** (`held/review-H-rulings.md`):
+      - the corrections with the changelog digest: Managed Markets `core`, POS Terminal and the Combined Listings app `own-service`, unit pricing on CM-CAT-001, a country's address fields on CM-CUS-008;
+      - a help page's plan requirement is a condition, not a plan line;
+      - an app or separate product with no maker statement held is `shows`, its admin page, routes and plan lines `core`, and the platform's possessive counts as a maker statement.
+
+      About forty earlier lines that rest on the old wording are aligned at Shopify's amendment (`coord/for-new-things.md` lists them with the other items to read again there).
+    - **The selection** reads the public pricing page's table, its row headings and its mobile copy as the model's own (rule `read-as`), so 197 entries leave.
+    - **The projection, re-measured at about 11:40** (method report, section 18): about 4,080 million spent, 4,462 entries left, the extent about 5.3 to 6.0 billion.
+    - **Running:** SH-15 (router), SH-33 (help notes and adjustment reasons), SH-44 (changelog) and SH-62 (Editions).
   - **Since 06:55, to about 09:45 UTC on 31 October:**
     - **Shopify, checked since:** SH-2 to SH-7 (SH-5 by script), SH-11 to SH-13 (the router), SH-39 to SH-41 (the changelog), SH-55 to SH-57 (Editions' page data), SH-75 to SH-79 (pricing, so all 1,056 entries of `pricing-page-data` are placed), SH-30 (help notes), SH-95 and SH-96 (the Play apps, the POS settings) and SH-102 (the tracking carriers, by script). That makes 49 of Shopify's 103 batches.
     - **Rulings since** (`held/review-H-rulings.md`):

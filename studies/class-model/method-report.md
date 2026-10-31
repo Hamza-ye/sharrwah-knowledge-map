@@ -478,3 +478,24 @@ The top stays at the band's 6.0 billion, so no new projection goes to the founde
 - digests for the changelog and the router;
 - scripts where a structure repeats placed rows exactly;
 - the coordinator's requests fewer, since at its context each costs about 400,000 tokens.
+
+**Re-measured at about 11:40 UTC** (`method/count_tokens.py --since 2026-10-31T09:45`, and each checked batch's transcript).
+- **Spent since 09:45:** 296 million tokens: the coordinator 43 million over 98 requests (15 percent), the agents the rest. In all about 4,080 million.
+- **Checked since 09:45:** SH-14, SH-30 to SH-32, SH-42, SH-43, SH-58 to SH-61, SH-79 and SH-92 to SH-94. The pricing data and the public plan page are placed whole.
+- **The digests cut the cost an entry:**
+  - Editions from 329,000 (SH-57) to 164,000–244,000 (SH-58 to SH-61);
+  - the changelog from 189,000 (SH-41) to 152,000–172,000 (SH-42, SH-43).
+
+  The router's first batch with its digest, SH-14, cost 252,000, so its next prompt narrows what it reads.
+- **The selection read 197 more entries as the model's own:** the public pricing page's table, its row headings and its mobile copy, which repeat rows the concern map cites from the same record.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 11:40 UTC | about 4,080 |
+| The measured structures' 1,337 entries left, at their rates (Editions, changelog, router, help notes) | about 290 |
+| The other 3,125 entries, at 120,000 to 250,000 | 375 to 780 |
+| The coordinator's checks, a fifth to a quarter of the agents' | 135 to 270 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.3 to 6.0 billion** |
+
+The top stays at the band's 6.0 billion, so no new projection goes to the founder.
