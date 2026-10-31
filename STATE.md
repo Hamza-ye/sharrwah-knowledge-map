@@ -277,11 +277,26 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - **Running:**
         - the second stage's fixes;
         - the final review's brief and selection, brought up to the held pass (`briefs/R-extent.md`, `R-extent-design.md`, `method/review_select.py`).
+    - **Since about 21:30:**
+      - **The second stage's fixes are committed** (`3391c0ec`). They were tested on the inspector's fixtures, and the coordinator's own runs on the real repository were unchanged where they should be.
+      - **The part list is written** (`held/s2-parts.tsv`, `29608133`): 9 parts, 705 cells.
+      - **The final review's brief and selection are brought up to the held pass** (`589c6930`), and its open questions are decided (`R-extent-design.md`, section 8).
+        - It selects 1,599 items in 55 batches.
+        - Its estimate is 220 to 500 million tokens with the coordinator's checks and corrections, an assumption. Before the review runs, it is re-projected with the second stage's measured rate and brought to the founder, with the lean selection beside it.
+      - **GM's veto list now holds every ruling made since its draft,** in plain words:
+        - what a quality is, and the qualities pass;
+        - the cheapest step before its subject;
+        - S2-R3 to S2-R7, QL-R1 to QL-R9, O-R1 to O-R5 and R-R1 to R-R5.
+
+        It points to the architecture plan's section 7 for the plan's own three.
+      - **Running:**
+        - S2-ZD-1 (Zid A to C, 72 cells, 9 misses), alone, at `high`;
+        - the qualities pass's tools, by one build agent;
+        - the final review's inspection (`inspection-R2.md`).
     - **Next:**
-      1. the second stage's fixes checked and committed;
-      2. S2-ZD-1 alone, landed end to end and measured;
-      3. the qualities pass's tools, then the omission review's, one build agent at a time, each inspected;
-      4. the new rulings added to `reports/GM-rulings.md`.
+      1. S2-ZD-1 checked, landed end to end, and its cost per row measured; then the extent re-projected;
+      2. the other eight parts, four at a time;
+      3. the qualities pass's tools checked, then inspected; then the omission review's tools built and inspected.
   - **Since 18:40, to about 20:00 UTC on 31 October: the second stage's brief and tools.**
     - **The brief** `briefs/S2-held.md` and its design `briefs/S2-held-design.md` are drafted (`d91379ee`), with the coordinator's decisions on the design's open questions.
     - **Its two rulings are written in plain words** for the founder's veto (`cc4434f0`): what each decides, why, what it risks and its alternative. The founder asked on 31 October that no ruling be listed by its code alone, so every ruling at GM is written this way.
