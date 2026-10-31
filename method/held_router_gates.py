@@ -36,7 +36,15 @@ def ancestors(rid):
         if g: out.append((p, g))
         p = by[p].get("parent")
     return out
+if len(sys.argv) < 2 or sys.argv[1] in ("-h", "--help"):
+    sys.exit(__doc__)
 batch = sys.argv[1]; apply = "--apply" in sys.argv
+
+
+def named(a, reading):
+    """Whether the reading names the ancestor's id whole: never inside a longer id, as
+    organization-settings:organizations is inside organization-settings:organizations:partner-billing (SH-15)."""
+    return re.search(r"(?<![\w:.-])" + re.escape(a) + r"(?![\w:-])", reading) is not None
 ents = {}
 with open(f"{HELD}/shopify/entries.tsv", newline="") as f:
     for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE): ents[r["entry_id"]] = r
@@ -49,7 +57,7 @@ for i, l in enumerate(L[1:], 1):
     if not e or e["structure"] != "admin-router": continue
     m = re.search(r"(?:^|; )id: ([^;]+)", e["text"])
     if not m: continue
-    anc = [(a, g) for a, g in ancestors(m.group(1).strip()) if a not in f["reading"]]
+    anc = [(a, g) for a, g in ancestors(m.group(1).strip()) if not named(a, f["reading"])]
     if not anc: continue
     routes.add(m.group(1)); n += 1
     add = "; reached under " + ", under ".join(f"{a} (its gate on the store: {g})" for a, g in anc) + \

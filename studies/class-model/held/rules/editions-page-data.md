@@ -20,7 +20,7 @@ Each entry is one feature card of one edition's Editions page, in observed-sh at
 
 6. A card is `core` where it places the feature in the platform: admin words ('in your Shopify admin', 'built-in'), an admin address that isn't an app's page, a plan statement, or the platform's own behaviour (E3, SH-50).
 7. The platform itself is `core`: its checkout and Shop Pay there, Shopify Payments, discounts, metafields, the theme editor, the admin's mobile client, Shopify Shipping, Shopify Tax, the App Store (E3, E12.4, SH-50; SH-51, case 4; SH-56).
-8. The platform's free themes are `core` on CM-SFR-001 and CM-SFR-007 (E21, SH-53, overturned after SH-53: 'Our free themes' makes no separate service).
+8. The platform's free themes are `core` on CM-SFR-001, and a free theme's announcement bar on CM-SFR-007 (E21, SH-53, overturned after SH-53: 'Our free themes' makes no separate service; the check after SH-62).
 9. Shopify POS is the platform's own client, `core` on CM-POS-001 (E22, SH-53; the ruling after SH-55).
 10. A card is `own-service` where it or a held statement names Shopify the maker of a separate app, product, device or service ('a new app from Shopify'); 'our help docs' and 'our official fulfillment partner Flexport' name none (E3, SH-50; the ruling after SH-55; E50, SH-56).
 11. Shop's things are `own-service`: its Store (CM-CHN-002, where others' Shop Minis are `extension-point`), sign-in (CM-CUS-010), reviews (CM-SUP-001), lead capture (CM-CUS-007), Shop Promise (CM-SHP-018) and AI (CM-AIA-005) (the ruling after SH-34; E3, SH-50; the checks after SH-50 to SH-53). Shop Pay apart from the platform is CM-PAY-014 `own-service` (E23, SH-53).
@@ -112,7 +112,7 @@ The table follows the ruling after SH-55 and the batches' lines; each app's plan
 | ShopifyQL Notebooks | `own-service` | SH-E-3f85908b |
 | Shopify Credit | `own-service` on its features; its admin routes and plan rows `core` (the ruling after SH-41) | SH-E-e3a378a2 |
 | Shopify Balance | `core`, the admin's own account (rule 25) | not a separate product |
-| Shopify Forms, Marketplace Connect, Order Printer | `core`, the maker a gap (rule 13) | none held |
+| Shopify Forms, Marketplace Connect, Order Printer | `shows`, the maker a gap; their admin pages and plan lines `core` (the ruling after SH-43) | none held |
 | Pixel Helper | `core`, opened from the admin's Customer events (check SH-58) | SH-E-0a66f16d names its maker; a built-in tool, not a separate product |
 | Bill Pay | `core` at `finances/billpay`, `shows` at `apps/bill-pay` (E28, SH-54); the maker a gap | none held (SH-56) |
 
@@ -185,5 +185,16 @@ From SH-61:
 - **E94:** Managed Markets' list of duties, taxes, customs and restrictions splits by rule 45.
 - **E95:** store credit 'in Liquid' takes a line for each place the card names.
 
-The next batches number their rules from E96.
+From SH-62:
+- **E96:** the records an app syncs or imports take no line.
+- **E97:** the Shopify mobile app's own navigation is CM-SRF-001 `core`.
+- **E98:** guidance inside an admin flow belongs to that flow's capability, not to a CM-ONB-003 guide.
+- **E99:** a 'Get notified' sign-up with no docs or admin link is `shows`; a thing in the same card that links its own docs keeps its own support.
+- **E100:** a developer guide's topics take `shows`.
+- **E101:** a kind of developer named as the condition is the scope ('Built for Shopify').
+- **E102:** Shop's own features stand on their own capabilities, `own-service`.
+- **E103:** Checkout Blocks' order limits are CM-CHK-005.
+- **E104:** carrier preferences are CM-SHP-015 `core`, and the route the card's link opens takes its own line.
+
+The next batches number their rules from E105.
 

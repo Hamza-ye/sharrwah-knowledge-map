@@ -110,7 +110,8 @@ The Editions digest's table, with the changelog's additions; each app's plan lin
 | Shopify Balance | `core`, the admin's own account | not a separate product |
 | Customer View app | `core`, part of POS (check SH-38) | not a separate app |
 | Pixel Helper | `core`, opened from the admin's Customer events (check SH-58) | SH-E-0a66f16d names its maker; a built-in tool, not a separate product |
-| Forms, Marketplace Connect, Order Printer, Privacy & Compliance, Launch Check, SimGym, Product Network, Shopify Capital | `core` by what the post shows, the maker a gap (rule 13; SH-35) | none held |
+| Forms, Marketplace Connect, Order Printer, Privacy & Compliance, Launch Check, SimGym, Product Network | `shows`, the maker a gap; their admin pages, routes and plan lines `core` (rule 13, the ruling after SH-43) | none held |
+| Shopify Capital | `core`: the admin's own Capital section and routes (the ruling after SH-41) | none held |
 | Google & YouTube app | its channel `extension-point`, YouTube or Google the venue (filler); the admin's Publishing section `core` | none held; the Editions' and SH-39's lines (the check after SH-42) |
 | Bill Pay | `core` at `finances/billpay`, `shows` at `apps/bill-pay` | none held |
 

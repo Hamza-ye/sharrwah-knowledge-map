@@ -116,5 +116,13 @@ From SH-14 (its notes give the cases):
 - **R14.7:** a notification template or a group of templates is CM-NTF-001's alone. Marketing consent and its double opt-in go on CM-CUS-007.
 - **R14.8:** a legacy Online Store address with its own loader and component is `core` on its twin's capability.
 
-The next batches number their rules R15.1 and on, by batch.
+From SH-15:
+- **A loader-only callback is placed by its own words, as its twins are,** whatever page its visit landed on (R14.2; the check after SH-15, which replaces R15.1).
+- **R15.2:** the second tree, `organization-settings:organizations:*`, takes the lines of its twins in `settings:organizations:*`, with its own gates as scope.
+- **R15.3:** a route whose id names mobile but has no `clients` gate takes no CM-SRF-001 line.
+- **R15.4:** a redirect whose target page also takes an anchor's line takes both lines, where its own words name the anchor's thing.
+- **R15.5:** a visit that the ledger joins to a route only because its path pattern matches another route's address is that other route's visit.
+- **R15.6:** the fulfilment request routes take CM-SHP-011 beside CM-SHP-009 (a reading).
+
+The next batches number their rules R16.1 and on, by batch.
 

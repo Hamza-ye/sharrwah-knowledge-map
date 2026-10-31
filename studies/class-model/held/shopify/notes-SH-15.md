@@ -85,3 +85,14 @@ Shopify's `admin-router`, 130 entries: items 832 to 995 of `structures/shopify/a
 ## The check
 
 `python3 -I method/held_entries.py check --platform shopify --batch SH-15`: no `CHANGES` line. The `NOTE` lines are the containers, each named in its reading with its children, and the new thing's leads, whose cells I read (above). `NEW`: Email customer.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 130 of 130 entries, no problem and no `CHANGES`.
+- **The gates script's fault, which the batch found, is fixed.** `method/held_router_gates.py` took an ancestor's id inside a longer id (`organization-settings:organizations` inside its children's ids) as already named, and skipped its gate. It now looks for the whole id. Re-run on SH-8 to SH-15, it adds the gates missed in SH-13 (2 lines) and SH-14 (1 line), and this batch's 55 lines. `--help` now prints the usage.
+- **R15.1 is replaced.** Its two loader-only callbacks (lines 84 and 92) name the completion of a payment method's authentication, CM-PLN-005's thing. So they are `core` there, as SH-9's twin routes are; a visit that landed on another page doesn't change what the route does (R14.2).
+- **R15.2 to R15.6 stand** and join the digest's section 6.
+- **The ruling after SH-43:** Shopify Product Network's two lines stay `core`, on the admin's own Orders route for it, the maker a gap.
+- **The new thing** keeps SH-12's name, Email customer.
+- **The open readings stay as placed.**
+- **Cost:** 36.0 million tokens over 146 requests, about 277,000 an entry. The context reached about 432,000 tokens, not the 200,000 the agent estimated. The router stays the dearest structure, with or without its digest.

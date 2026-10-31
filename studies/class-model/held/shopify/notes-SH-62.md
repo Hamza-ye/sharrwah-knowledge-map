@@ -10,7 +10,7 @@
 
 The coordinator's message: an app or a separate product with no maker statement held is `shows` on its feature's capability, the maker a gap, whatever its name, replacing E89 and rule 19's 'or one with no maker named'.
 - **SH-E-3febc064** (NetSuite ERP connector, `apps.shopify.com/oracle-netsuite`): CM-PAY-028 `extension-point` changed to `shows`. `makers` holds no statement for NetSuite.
-- **SH-E-34d0a6d8** (pick lists through the Shopify Order Printer app): CM-PAY-009 is not involved; the line is CM-ORD-009, changed from `core` (the digest's rule 13, 'core, the maker a gap') to `shows`, since the ruling replaces that wording too and names Order Printer among the lines aligned at the amendment. The card links the App Store's listing, not an admin page, and its title's 'in admin' names no route or section.
+- **SH-E-34d0a6d8** (pick lists through the Shopify Order Printer app): CM-ORD-009 changed from `core` (the digest's rule 13, 'core, the maker a gap') to `shows`, since the ruling replaces that wording too and names Order Printer among the lines aligned at the amendment. The card links the App Store's listing, not an admin page, and its title's 'in admin' names no route or section.
 - **SH-E-78837e45** (data imported from other platforms, `apps.shopify.com/store-migration`, the Store Importer app SH-43 placed): placed by the ruling from the start, CM-MIG-005 `shows`. `makers` holds nothing for Store Importer or store-migration.
 - **SH-E-4f3cc545** ('More B2B-compatible apps') stays CM-B2B-001 `extension-point`: it names no app, and its link is an App Store collection (`apps.shopify.com/stories/guide-selling-b2b`), the clause rule 19 keeps. If the ruling's 'only where the statement shows a third party making it' is meant to cover a collection too, it becomes `shows`.
 
@@ -90,5 +90,20 @@ I found no disagreement between the items and the renderings. Two points of the 
 
 - **The digest's rule 8 says the free themes are `core` on CM-SFR-001 and CM-SFR-007.** CM-SFR-007 is announcement bars, banners and pop-ups. SH-53's lines put the free themes on CM-SFR-001, and only a free theme's announcement bar on CM-SFR-007 (SH-E-8ca9faf9). As written, the rule could send a theme to the wrong capability.
 - **The digest's table and rule 13 still read 'core, the maker a gap' for Shopify Forms, Marketplace Connect and Order Printer.** Rule 13's added sentence and the ruling after SH-43 make them `shows`, so the table's row could say so.
-- **`earlier` gave SH-E-5abe5931 a 'name headline' twin on CM-TAX-005 (SH-60:25).** It is another card: the key matched a field its sign-up modal shares ('headline: Get notified'), not its meaning.
+- **`earlier` gave SH-E-5abe5931 a 'name headline' twin on CM-TAX-005 (SH-60:25).** It is another card, SH-E-6bb3c973, a B2B tax exemption. A reading: the key matched a heading field the two cards share, not their meaning (the brief: a twin is matched by its meaning).
 - **The run cost:** my context reached about 200,000 tokens.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 84 of 84 entries, no problem.
+- **The ruling after SH-43 is applied:** the NetSuite connector, Order Printer's pick lists and the Store Importer are `shows`. 'More B2B-compatible apps' stays `extension-point`: it links an App Store collection, which shows third parties' apps (rule 19).
+- **The `CHANGES` stand:**
+  - Flow, Collective, the Fulfillment Network (its partners `extension-point`), Checkout Blocks' order limits and Shop's package tracking are `own-service`.
+  - The platform's development stores are `core`.
+  - Shop's saved products on CM-LOY-005 and the pre-order edits on CM-SEL-005 are marked readings, as placed.
+- **Two of the digest's lines corrected, as the batch found:**
+  - rule 8 now puts a free theme on CM-SFR-001 and only its announcement bar on CM-SFR-007;
+  - the first-party table now has Forms, Marketplace Connect and Order Printer as `shows`, by the ruling after SH-43.
+- **The rules E96 to E104 stand** and join the digest's section 6. E97 holds: the Shopify mobile app's navigation is the app's own CM-SRF-001, not the web admin's frame.
+- **The new things:** View as and PIM systems, named here; Web performance dashboard and Admin search keep their earlier names. Their supports are decided with each thing.
+- **Cost:** 19.0 million tokens over 85 requests, about 226,000 an entry. The context reached about 370,000 tokens.
