@@ -454,3 +454,27 @@ The extent stays within the 5.0 to 6.0 billion brought to the founder at 04:05, 
 - lists of one kind, such as the tracking carriers.
 
 Each script's lines are checked like a batch's, and what it can't match goes to an agent.
+
+**Re-measured at about 09:45 UTC** (`method/count_tokens.py --since 2026-10-31T08:35`, and each checked batch's transcript).
+- **Spent since 08:35:** 240 million tokens: the coordinator 57 million over 138 requests (24 percent), the agents the rest. In all about 3,780 million.
+- **Checked since 08:35:** SH-41, SH-57, SH-77 to SH-79, SH-95, SH-96, SH-102 (by script) and SH-30.
+  - All of `pricing-page-data` is placed.
+  - The last batches cost 126,000 to 368,000 an entry. Their contexts reached 335,000 to 513,000 tokens.
+- **Cost cut since 08:35:**
+  - The Editions rules digest (11.6 million) replaces seven batches' notes for SH-58 to SH-67.
+  - The tracking carriers are placed by script (203 entries).
+  - 99 rendered row headings of the public pricing page are read: the concern map cites their rows from the same record.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 09:45 UTC | about 3,780 |
+| The measured structures' 2,199 entries left, at their rates (Editions 258,000, changelog 201,000, router 195,000, help notes 227,000 an entry) | about 495 |
+| The other 3,347 entries, at 120,000 to 250,000 | 400 to 840 |
+| The coordinator's checks, a fifth to a quarter of the agents' | 200 to 330 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.3 to 6.0 billion** |
+
+The top stays at the band's 6.0 billion, so no new projection goes to the founder. The re-plan goes on:
+- digests for the changelog and the router;
+- scripts where a structure repeats placed rows exactly;
+- the coordinator's requests fewer, since at its context each costs about 400,000 tokens.

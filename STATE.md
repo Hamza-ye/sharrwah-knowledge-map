@@ -249,6 +249,23 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 06:55, to about 09:45 UTC on 31 October:**
+    - **Shopify, checked since:** SH-2 to SH-7 (SH-5 by script), SH-11 to SH-13 (the router), SH-39 to SH-41 (the changelog), SH-55 to SH-57 (Editions' page data), SH-75 to SH-79 (pricing, so all 1,056 entries of `pricing-page-data` are placed), SH-30 (help notes), SH-95 and SH-96 (the Play apps, the POS settings) and SH-102 (the tracking carriers, by script). That makes 49 of Shopify's 103 batches.
+    - **Rulings since** (`held/review-H-rulings.md`):
+      - a store listing naming the platform's company is a maker statement;
+      - an admin section the platform's own words call part of its admin is `core`;
+      - a first-party app's own features are `own-service`, and its plan lines are `core`, as are the online store and POS;
+      - a first-party app's feature takes another capability's line only where the app provides that thing itself;
+      - the same rule holds for a separate product (Shopify Credit, Fraud Control);
+      - a help page's plan requirement is a condition, not a plan line.
+    - **Re-planned to cost less:**
+      - rules digests per structure (`held/rules/`): Editions' page data's is written, and the changelog's is being written;
+      - scripts for exact repeats (`method/held_role_permissions.py`, `method/held_tracking_carriers.py`);
+      - `earlier` ranks an entry's twins and prints their words, and `makers` prints an app's maker statements;
+      - the selection reads the public pricing page's row headings, which the concern map cites from the same record, as read (rule `read-as`), so 99 entries leave.
+    - **The projection, re-measured at about 09:45** (method report, section 18): about 3,780 million spent, 5,546 entries left, the extent about 5.3 to 6.0 billion. That is at the top of the band brought to the founder, not past it.
+    - **Running:** SH-31 (help notes), SH-58 and SH-59 (Editions' page data, with the digest), and the changelog's digest.
+    - **Next:** Shopify's remaining 54 batches, four agents at a time, each checked; then the new things, decided across the platforms, and the amendments.
   - **Since 03:10, to about 06:55 UTC on 31 October:**
     - **Salla is placed whole:** 57 batches, 5,750 entries, each checked. Its amendment waits for the new things, decided across the platforms once Shopify's batches are placed, as Zid's and WooCommerce's do.
     - **Shopify:** SH-1, SH-8 to SH-10 (the admin router), SH-34 to SH-38 (the changelog), SH-50 to SH-54 (Editions' page data; SH-52 by script) and SH-68 to SH-74 (pricing) are placed and checked.
