@@ -194,5 +194,8 @@ From SH-46:
 - **C46.5:** a retired app's maker statement doesn't pass to the app that replaces it.
 - **The admin's own tools for advertising on ad platforms are CM-MKT-010 `core`** (the check after SH-46).
 
+From the check after SH-48:
+- **C47:** a carrier of the platform's own labels (Shopify Shipping) newly offered is CM-SHP-002 `core`, the carrier its filler, and CM-SHP-015 `shows`, as the Editions digest's rule 42 has it. The merchant's own carrier account is CM-SHP-015 `core`. Eight lines that had CM-SHP-015 `core` for the platform's carriers are aligned: SH-34:59, SH-35:113, SH-35:124, SH-36:128, SH-36:196, SH-36:200, SH-38:52 and SH-46:51.
+
 The changelog is placed whole.
 

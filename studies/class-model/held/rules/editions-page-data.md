@@ -228,6 +228,20 @@ From SH-47, the rendered Fall 2026 page (`editions`):
 - **R47.5:** a card repeating a changelog post takes that post's capabilities, but a plan named only in the post isn't the card's scope.
 - **R47.6:** a card's linked page is read only where its own words leave its capability or support open.
 
+From SH-48 and SH-49, the same page's Payments to Fulfillment and Developer sections:
+- **R48.1:** the page lays a run of features out as one 'stack' card, then one-sentence 'text' cards, a variant the extractor drops. The stack card's release marker covers its own features only; a text card takes it only where its one link opens the stack card's product.
+- **R48.2:** a section all of whose cards are Shop's takes CM-CHN-002 `own-service` on its heading, as R47.1's exception reads Sidekick's.
+- **R48.3:** a card in the Shop section puts Shop's feature on its own capability, `own-service` (E102), with CM-CHN-002 `own-service` beside it where the card names Shop's app, website or account (E120).
+- **R48.4:** a Shopify Shipping carrier newly offered in a country is rule 42: CM-SHP-002 `core`, the carrier its filler and the country its scope, and CM-SHP-015 `shows`. The changelog's lines that had CM-SHP-015 `core` for such carriers are aligned to it (the changelog digest's C47).
+- **R48.5:** a release marker on one item of a list gives that item its own line on the same capability, `shows` (rule 52).
+- **R48.6:** a feature an earlier batch read in early access takes this card's own support where the card states no limit; the early access goes in `reading`.
+- **R49.1:** an h3 inside a section is its sub-heading, read as R47.1 reads a section heading: `out` where it groups several capabilities' cards.
+- **R49.2:** Shop's sign-in or Shop Pay offered for developers' own apps or agents is `own-service;extension-point` (rule 11; R47.4). Shop's sign-in named only as another feature's condition stays `own-service`.
+- **R49.3:** the platform's events an app's extension responds to take their own capability `core`, as rule 17 places webhooks; the extension is its target's capability, `extension-point`. A card where apps do the work through the platform's APIs is `extension-point` (SH-67's cash management extensions).
+- **R49.4:** a third party's tool that signs a merchant up to the platform, where its linked page names the platform as one of its services, is CM-ACC-001 `core;extension-point`, the tool its filler (R47.6).
+- **R49.5:** a retirement in a developer card takes its replacements' lines (the changelog digest's rule 30), the retired thing named in `reading`.
+- **App events:** the App Events API of the Spring and Fall 2026 Editions sends an app's own events to Shopify, for its developer or the store's analytics. It is CM-DVT-001 `core` (rule 17), or CM-ANL-001 where the store analyzes them. It isn't CM-APP-004's App Events API, the Partner API's events of an app's lifecycle in a store (SH-I-0075), a homonym (the check after SH-49 and SH-67).
+
 From SH-65:
 - **E125 to E132:** SH-65's notes give each with its case:
   - Dev MCP cards;
@@ -244,5 +258,20 @@ From SH-66 (it numbered its rules from E135; SH-65's are E125 on):
 - **E135:** R47.3 holds for the page data's 'Plugins' cards; 'Plugins' as an eyebrow is its group's title.
 - **E136 to E144:** discounts limited to a sales channel; multi-entity selling as a payment feature's condition; how analytics, reports and overview cards map; an inventory audit trail on CM-INV-002; cancellation and return requests from the order status page; carriers that tracking numbers detect as CM-SHP-017's fillers; bundles published to channels; Shop Campaigns' charges on the Shopify invoice; the admin's app settings page. SH-66's notes give each with its case.
 
-The next batches number their rules from E145.
+From SH-67 (SH-67's notes give each with its case):
+- **E145:** a cashback tied to a payment method stays on the method's capability (the buyer's USDC cashback, CM-PAY-018 `core`), not CM-LOY-003 (E115's test).
+- **E146:** the platform's own things reached from Shop take their own capability `core`, beside CM-CHN-002 `own-service` (E102's store credit case).
+- **E147:** Shop's demand indicators and low-stock flags on Shop's product pages are CM-SUP-003 `own-service`, beside CM-CHN-002: social proof shown to shoppers, a marked reading, since no held statement defines social proof. They aren't CM-INV-004, an alert to the store.
+- **E148:** a card naming Shopify Payments or Shopify Tax as the one doing a feature takes CM-PAY-002 or CM-TAX-002 `core` beside the feature's capability.
+- **E149:** a Managed Markets card for named countries takes them as its scope; its other features take 'Managed Markets and <countries>' (E117).
+- **E150:** 'Coming soon' to a country beside a released feature takes a second line on the same capability, `shows`, the country its scope.
+- **E151:** Dev Dashboard cards take CM-PTN-001 `core`; dev stores in it take CM-DVT-004 (rule 41).
+- **E152:** an app's deploys or releases in CI/CD through the CLI are CM-DVT-002 `core`, a marked reading.
+- **E153:** the Shopify AI Toolkit used on extensions' code, not on a store, is CM-DVT-001 alone; R47.3 and E135's CM-AIA-004 are for an assistant working on the store.
+- **E154:** Dev MCP supporting a thing of the platform takes that thing's capability `core` (all API versions on CM-API-006).
+- **E155:** an API offered 'before rollout to businesses' takes `core;shows` on one line, as rule 34 does: open to developers now, its features not yet offered to stores.
+- **E156:** Shopify Capital repaid from the Shopify Payments balance is CM-PAY-026 `shows` (rule 21), the repayment its quality, and CM-PAY-005 `core`.
+- **E157:** E83's CM-API-001 line goes to cards whose title names an API; an API group another capability already holds is that capability's line alone.
+
+Editions is placed whole: its page data (SH-50 to SH-67) and its rendered Fall 2026 page (SH-47 to SH-49).
 

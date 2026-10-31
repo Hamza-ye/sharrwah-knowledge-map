@@ -44,6 +44,10 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 - **For CM-CUS-012's cell:** its definition is reCAPTCHA at buyers' sign-in and registration. Shopify's one reCAPTCHA setting also covers the storefront's contact and comment forms, which the changelog places there (rule 42; the check after SH-44). The definition may widen.
 - **For CM-AIA-004's cell:** it names an MCP server; the platform's connectors and plugins for outside AI assistants (Grok, Gemini, Claude, Copilot, ChatGPT), which the Fall 2026 Edition's help pages describe without naming MCP, now give it `core` (the check after SH-47). Its definition may widen.
 - **For CM-B2B-006's cell:** the sales staff page calls them 'sales representatives' (the check after SH-30).
+- **For CM-APP-004's cell:** its definition names Shopify's 'App Events API' from SH-I-0075, the Partner API's events of an app's lifecycle in a store. The Spring and Fall 2026 Editions' App Events API sends an app's own events to Shopify (SH-E-244b9ce2, SH-E-bf096312, SH-E-5d77f172), a different API, placed on CM-DVT-001 and CM-ANL-001. The definition is worded so the two aren't confused (the check after SH-49 and SH-67).
+- **A payment service's own fraud blocking** (SH-E-a833fd34, Shopify Payments blocking card testing by scoring transactions): no capability holds it, so it stands on CM-ORD-006, the nearest, with CM-PAY-002. Decide whether it is CM-ORD-006's or a thing of its own (the check after SH-67).
+- **E147's reading:** Shop's demand indicators and low-stock flags stand on CM-SUP-003, whose cell rests on App Store categories that no statement defines. The low-stock flag rides with the indicators; decide it with CM-SUP-003's definition (the check after SH-67).
+- **New things named again:** Fees for products and collections (SH-48, `shows`, early access; CM-TAX-001 or CM-CHK-001 its parent); Sponsored products (SH-65, SH-49: SH-49's card ties it to Shop Campaigns, CM-MKT-012); Admin search (SH-36, SH-48); Tipping (SH-50, SH-67, its place the router's anchor `tipping`); Admin languages (SH-67, the route `settings/account_language` a lead).
 
 ## Lists the concern map read whole
 
