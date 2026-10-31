@@ -112,7 +112,8 @@ The Editions digest's table, with the changelog's additions; each app's plan lin
 | Pixel Helper | `core`, opened from the admin's Customer events (check SH-58) | SH-E-0a66f16d names its maker; a built-in tool, not a separate product |
 | Forms, Marketplace Connect, Order Printer, Privacy & Compliance, Launch Check, SimGym, Product Network | `shows`, the maker a gap; their admin pages, routes and plan lines `core` (rule 13, the ruling after SH-43) | none held |
 | Shopify Capital | `core`: the admin's own Capital section and routes (the ruling after SH-41) | none held |
-| Google & YouTube app | its channel `extension-point`, YouTube or Google the venue (filler); the admin's Publishing section `core` | none held; the Editions' and SH-39's lines (the check after SH-42) |
+| Google & YouTube app (formerly the Google channel and the Google Shopping app) | `own-service` on its own features, Google or YouTube the venue (filler); the admin's Publishing section and its admin page `core`; Google's own services through it `extension-point` | 'Shopify's Google channel' (SH-E-5eb470e8); 'Shopify's Google Shopping app' (SH-E-5835be14) (the corrections after SH-45) |
+| Buy Button channel | `own-service` on its own features; its plan rows `core` | 'we've made the following updates [to] the Buy Button channel' (SH-E-85d936a5) |
 | Bill Pay | `core` at `finances/billpay`, `shows` at `apps/bill-pay` | none held |
 
 The Editions also hold a maker statement for Shopify Lending (SH-E-797024ee). Managed Markets is `core`, Global-e `outside` (rule 39), and POS Terminal `own-service` on every line (the row above). `held_entries.py makers --platform shopify NAME …` settles any other app, such as Oberlo or Shopify Chat.
@@ -173,5 +174,17 @@ From SH-44:
   - `own-service`: Oberlo, Offset (Planet's forerunner), Shopify Ping, Shopify Chat, Launchpad, the Local Delivery app;
   - `shows`, with no maker held: the Theme Kit Access, Shipping Manifests and Store Importer apps.
 
-The next batches number their rules C45.1 and on, by batch.
+From SH-45:
+- **C45.1:** the Google app is Shopify's own, `own-service`, the venue its filler (the corrections after SH-45).
+- **C45.2:** the Buy Button channel's own features are `own-service`: its buttons on CM-CHN-001, its checkout links on CM-CHK-008, its cart's discounts on CM-CHK-002 and its order notes on CM-ORD-013.
+- **C45.3:** Shop Pay inside the store's checkout stays `core`, whatever possessive names it (rule 17).
+- **C45.4:** carriers added for marking orders fulfilled are CM-SHP-017, the fulfilment page CM-SHP-009.
+- **C45.5:** one store's limit, such as 'up to 10 currencies', is a quality.
+- **C45.6:** the platform's status page is CM-OPS-002.
+- **C45.7:** tax on Shopify's own bills is CM-PLN-007.
+- **C45.8:** draft orders that Ping and Chat send in a conversation are CM-ORD-005 `own-service`.
+- **C45.9:** Kit has no maker held: `shows` on CM-MKT-005.
+- **C45.10:** a feature removed and then restored takes its line by the later post.
+
+The next batches number their rules C46.1 and on, by batch.
 
