@@ -1,0 +1,37 @@
+platform	concern_id	lines	root_decisions	note
+shopify	SH-C-106		RD2; RD3	Markets
+shopify	SH-C-113		RD1; RD2	the backup region, set to the store's home country
+shopify	SH-C-006		RD1	the merchant's location at sign-up, and unsupported countries
+shopify	SH-C-110		RD3	Managed Markets, cited by the draft row
+shopify	SH-C-111		RD3	international domains and geolocation
+shopify	SH-C-037		RD3	catalogs: prices and product availability per market
+shopify	SH-C-032		RD3	languages
+shopify	SH-C-033		RD3	domains
+shopify	SH-C-002		RD1	the contracting party, by the store's billing address; what fills it is S-03's
+salla	SA-C-165		RD2; RD3	Markets (الأسواق المتعددة) and store scopes
+salla	SA-C-167		RD1	countries served; it holds the store-country statement of SA-C-006 too
+salla	SA-C-166		RD3	countries, cities and districts
+salla	SA-C-065		RD3	customer addresses and the national address, cited by the draft row
+salla	SA-C-007		RD3	domains
+salla	SA-C-008		RD3	languages
+salla	SA-C-230		RD1	legal entities per country; what fills them is S-03's
+zid	ZD-C-032		RD1	countries served
+zid	ZD-C-033		RD1; RD3	store country, operating countries and cities, cited by the draft row
+zid	ZD-C-034		RD2; RD3	markets (الأسواق)
+zid	ZD-C-050		RD3	languages and currencies
+zid	ZD-C-030		RD1	contracting entity and governing law; what fills them is S-03's
+woocommerce	WC-C-030		RD1; RD2	selling and shipping locations, and the business address
+woocommerce	WC-C-004	54;58;59	RD1	only the lines saying the payment suggestions are per store country; the lists are S-04's
+woocommerce	WC-C-010		RD1	WooPayments by the business's country, cited by the draft row
+woocommerce	WC-C-099		RD3	countries and continents
+woocommerce	WC-C-053		RD3	more than one currency
+woocommerce	WC-C-108		RD3	international and localization extensions
+woocommerce	WC-C-046		RD3	geolocation
+woocommerce	WC-C-023		RD1	contracting entity by where the customer resides; what fills it is S-03's
+bigcommerce	BC-C-038		RD2	channels
+bigcommerce	BC-C-039		RD2	Multi-Storefront
+bigcommerce	BC-C-047		RD1; RD3	store profile and settings, and global defaults
+bigcommerce	BC-C-048		RD3	locales
+bigcommerce	BC-C-074		RD3	currencies
+bigcommerce	BC-C-075		RD3	geography
+bigcommerce	BC-C-079		RD1	contracting entity by jurisdiction; what fills it is S-03's

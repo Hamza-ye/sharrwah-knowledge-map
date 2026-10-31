@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/address-form-fields.md",
+ "dir": "items/001-docs.bigcommerce.com",
+ "fetched_at": "2026-10-27T12:18:54Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/address-form-fields.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2091,
+ "cited_in": [
+  "S-02 A2 BC-2"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "250caff09cc0a54c3cb641e9be5da7763b5f4332f76b015feb50b41fd0a9d88c",
+ "raw_ext": "txt"
+}

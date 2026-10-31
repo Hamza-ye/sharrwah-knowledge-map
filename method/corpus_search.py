@@ -4,8 +4,10 @@
 # audit re-runs. Matching ignores case, Arabic diacritics and tatweel, and the spelling variants of alef, ta
 # marbuta and alef maqsura.
 #
-# The observed repositories' fetch archives (WARC) are searched too. Their text is extracted once per commit into a
-# cache outside the repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
+# The observed repositories' fetch archives (WARC) are searched too, their code bundles (JavaScript) among them, such as
+# Shopify's admin and sign-up bundles: a bundle longer than 400,000 characters is searched in pieces of 200,000, each
+# listed with its piece's number (`#piece-N`). Their text is extracted once per commit into a cache outside the
+# repositories (~/.cache/sharrwah-corpus), which the first search builds in a few minutes.
 # So are Shopify's Help Center pages held in observed-sh (English as Markdown, Arabic as content HTML), WooCommerce's
 # release files (its code first, built bundles last, and its language template i18n/languages/woocommerce.pot one
 # entry at a time), this repository's capture
@@ -18,34 +20,56 @@
 # indexes and derived tables built from them, and the structures' source files. Each document of a run is listed by
 # its own place, never merged with another store's or run's.
 #
-# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]
+# Usage: python3 -I method/corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--brief] [--with TERM [TERM ...]]
 #                                           [--runs-only | --only TEXT]
 #   PLATFORM is shopify, salla, woocommerce, zid or bigcommerce. A document matches when it holds any TERM
 #   (every TERM with --all) and, with --with, also any of the terms after --with: such as a thing's names, with the
 #   places or plans it may hold for. At most N documents per corpus are listed (default 40), those where the terms
-#   are densest first; the addresses past the cap follow, one line each.
+#   are densest first; every address past the cap follows, one line each. A Zid help page is matched on its
+#   article alone, without the help centre's menu, which every page holds; a captured page shows its title.
+#   --brief prints, past the cap, how many more documents each corpus holds, not every address.
 #   --runs-only searches only the observed repositories' runs (Shopify and Salla), in seconds; --only TEXT searches only
 #   the run corpora whose name holds TEXT, such as --only "step text from saved HTML".
 #   Snippets are folded for matching (case, diacritics, letter forms): never quote one; quote the document.
-import csv, glob, gzip, json, os, re, subprocess, sys, unicodedata, zlib
+import csv, glob, gzip, html, json, os, re, subprocess, sys, unicodedata, zlib
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from quote_check import norm, HARAKAT, html_text
 import runs_corpus
 
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/observed-sh"}
+REPOS = {"observed-sa": "/home/user/observed-sa", "observed-sh": "/home/user/observed-sh",
+         "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class")}
 HOSTS = {  # captured pages in this repository's runs, by the host they came from (a whole host or its subdomain)
     "shopify": r"(^|\.)(shopify\.(com|dev)|stripe\.com)$",
     "salla": r"(^|\.)salla\.(sa|com|dev)$",
-    "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|stripe\.com|woo\.com)$",
-    "zid": r"(^|\.)zid\.(sa|dev)$",
-    "bigcommerce": r"(^|\.)(bigcommerce\.com|commerce\.com|bitpay\.com)$",
+    "woocommerce": r"(^|\.)(woocommerce\.com|wordpress\.org|wordpress\.com|stripe\.com|woo\.com|automattic\.com)$",
+    "zid": r"(^|\.)zid\.(sa|dev|eg)$",
+    "bigcommerce": r"(^|\.)(bigcommerce\.com|bigcommerce\.co\.uk|commerce\.com|bitpay\.com)$",
 }
-ARCHIVES = {"salla": "observed-sa", "shopify": "observed-sh"}   # whose fetch archives each platform's search reads
+ARCHIVES = {"salla": ("observed-sa", ""), "shopify": ("observed-sh", ""),   # whose fetch archives each platform's
+            "zid": ("other-product-class", "zid/"),                        # search reads: the repository, and the folder
+            "bigcommerce": ("other-product-class", "bigcommerce/"),
+            "woocommerce": ("other-product-class", "woocommerce/")}
 CACHE = os.path.join(os.path.expanduser("~"), ".cache", "sharrwah-corpus")
-TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown")
+TEXTUAL = re.compile(r"(?i)text/html|application/xhtml|text/plain|text/markdown|application/json|text/x-markdown|javascript|ecmascript")
+SCRIPT = re.compile(r"(?i)javascript|ecmascript")
+PIECE = 200000           # a script longer than this is held in pieces this long, each overlapping the last by 2,000
 HELD = {  # text corpora held in the observed repositories: (repository, path glob, format)
+    # Zid as the founder's local agent captured it (28 October 2026): its dashboard's own structures (routes, page
+    # index, locales, plan policies, permissions), and its runs' step text and saved answers
+    "zid": [("other-product-class", "zid/structures/**/items.jsonl", "lines"),
+            ("other-product-class", "zid/raw/runs/*/steps/*.text.txt", "text"),
+            ("other-product-class", "zid/raw/runs/*/answers/**/*.json", "text")],
+    # BigCommerce and WooCommerce as the founder's local agent captured them (29 October 2026): a trial store and a
+    # test store of our own, their runs' step text and saved answers, BigCommerce's standard formats by country, and
+    # the test store's options table
+    "bigcommerce": [("other-product-class", "bigcommerce/structures/**/items.jsonl", "lines"),
+                    ("other-product-class", "bigcommerce/raw/runs/*/steps/*.text.txt", "text"),
+                    ("other-product-class", "bigcommerce/raw/runs/*/answers/**/*.json", "text")],
+    "woocommerce": [("other-product-class", "woocommerce/raw/runs/*/steps/*.text.txt", "text"),
+                    ("other-product-class", "woocommerce/raw/runs/*/answers/**/*.json", "text"),
+                    ("other-product-class", "woocommerce/raw/runs/*/options.tsv", "lines")],
     "salla": [("observed-sa", "structures/salla/help-articles/ar/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/help-articles/en/texts.jsonl", "articles"),
               ("observed-sa", "structures/salla/com-policies/*/text.txt", "text"),
@@ -86,6 +110,7 @@ def help_url(name):
     return "https://help.shopify.com/" + rel
 
 def fold(s):
+    s = re.sub(r"\\([\\`*_{}\[\]()#+.!|-])", r"\1", s)    # Markdown's escapes: store\_country is store_country
     s = HARAKAT.sub("", norm(s)).casefold()
     for a, b in (("أ", "ا"), ("إ", "ا"), ("آ", "ا"), ("ة", "ه"), ("ى", "ي")):
         s = s.replace(a, b)
@@ -172,17 +197,21 @@ def record_text(raw):
     text = body.decode(cs.group(1) if cs else "utf-8", "replace")
     if re.search(r"html", ctype, re.I):
         text = html_text(text)
+    if SCRIPT.search(ctype):                       # a code bundle is kept whole, to be cut into pieces
+        return warc.get("WARC-Target-URI", ""), text
     return warc.get("WARC-Target-URI", ""), text[:400000]
 
-def archive_documents(repo):
-    """Documents of a repository's fetch archives, from the cache for its current commit, built if missing."""
+def archive_documents(repo, prefix=""):
+    """Documents of a repository's fetch archives (those under PREFIX, if given), from the cache for its current commit,
+    built if missing."""
     root = REPOS[repo]
     commit = subprocess.run(["git", "-C", root, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
-    cache = os.path.join(CACHE, f"{repo}-{commit}.jsonl.gz")
+    tag = "-" + prefix.strip("/").replace("/", "-") if prefix else ""
+    cache = os.path.join(CACHE, f"{repo}{tag}-{commit}-scripts.jsonl.gz")   # "-scripts": code bundles are searched too
     if not os.path.exists(cache):
         os.makedirs(CACHE, exist_ok=True)
         names = [n for n in subprocess.run(["git", "-C", root, "ls-files"], capture_output=True, text=True).stdout.split("\n")
-                 if n.endswith(".warc.gz")]
+                 if n.endswith(".warc.gz") and n.startswith(prefix)]
         tmp = f"{cache}.{os.getpid()}.part"           # each builder writes its own file; the last finished wins
         with gzip.open(tmp, "wt", encoding="utf-8") as out:
             for n in names:
@@ -194,14 +223,21 @@ def archive_documents(repo):
                     for off, raw in members(p):
                         got = record_text(raw)
                         if got and got[1].strip():
-                            out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "text": got[1]}, ensure_ascii=False) + "\n")
+                            text = got[1]
+                            if len(text) <= 400000:
+                                out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "text": text}, ensure_ascii=False) + "\n")
+                            else:                  # a long code bundle: one document per piece, located as #piece-N
+                                for k, at in enumerate(range(0, len(text), PIECE)):
+                                    out.write(json.dumps({"path": n, "offset": off, "uri": got[0], "piece": k,
+                                                          "text": text[max(0, at - 2000):at + PIECE]}, ensure_ascii=False) + "\n")
                 except Exception as e:
                     print(f"  stopped reading {n}: {e}", file=sys.stderr)
         os.replace(tmp, cache)
     with gzip.open(cache, "rt", encoding="utf-8") as f:
         for line in f:
             o = json.loads(line)
-            yield (f"{repo} fetch archives", f"{repo}@{commit}:{o['path']}@{o['offset']}", o["uri"], "", o["text"])
+            piece = f"#piece-{o['piece']}" if "piece" in o else ""
+            yield (f"{repo} fetch archives", f"{repo}@{commit}:{o['path']}@{o['offset']}{piece}", o["uri"], "", o["text"])
 
 def documents(platform):
     """(corpus, locator, url, title, text) for every held document of the platform."""
@@ -209,24 +245,25 @@ def documents(platform):
     for repo, pattern, kind in HELD.get(platform, []):
         if kind == "articles":       # titles live in the items.jsonl beside each texts.jsonl
             for commit, name, raw in git_files(repo, pattern.replace("texts.jsonl", "items.jsonl")):
-                for line in raw.splitlines():
+                for line in raw.split("\n"):   # not splitlines(): it also breaks on U+2028 inside a JSON string
                     try:
                         o = json.loads(line)
                         titles[o["url"]] = (o.get("record") or {}).get("title") or ""
                     except Exception:
                         pass
         for commit, name, raw in git_files(repo, pattern):
-            if kind == "articles":
-                for line in raw.splitlines():
+            if kind == "articles":               # cited by its line; the record's own position field counts from 0
+                for n, line in enumerate(raw.split("\n"), start=1):   # the file's own line numbers
                     try:
                         o = json.loads(line)
                     except Exception:
                         continue
-                    yield (f"{repo}:{name}", f"{repo}@{commit}:{name} position {o.get('position')}",
+                    yield (f"{repo}:{name}", f"{repo}@{commit}:{name} line {n} (position {o.get('position')})",
                            o.get("url", ""), titles.get(o.get("url", ""), ""), o.get("text", ""))
             elif kind == "lines":            # a corpus is the whole pattern, so that --max caps it, not each file
-                for i, line in enumerate(raw.splitlines(), start=1):
-                    yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name} line {i}", "", "", line)
+                for i, line in enumerate(raw.split("\n"), start=1):   # the file's own line numbers
+                    if line.strip():
+                        yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name} line {i}", "", "", line)
             elif kind == "help-md":
                 title = next((l[2:].strip() for l in raw.splitlines() if l.startswith("# ")), "")
                 yield ("observed-sh: Help Center, en", f"{repo}@{commit}:{name}", help_url(name), title, raw)
@@ -235,7 +272,7 @@ def documents(platform):
             else:
                 yield (f"{repo}:{pattern}", f"{repo}@{commit}:{name}", "", "", raw)
     if platform in ARCHIVES:
-        yield from archive_documents(ARCHIVES[platform])
+        yield from archive_documents(*ARCHIVES[platform])
     if platform in RELEASES:              # read as files, never run
         prefix, root = RELEASES[platform]
         rels = []
@@ -253,6 +290,16 @@ def documents(platform):
             else:
                 yield (f"{prefix} release", f"{prefix}:{rel}", "", "", text)
     head = subprocess.run(["git", "-C", SKM, "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    # The addresses some capture rendered (its visible text past 2,000 bytes, where a failed render shows an error
+    # text or nothing): a capture of theirs that rendered nothing is left out, since the one that rendered stands
+    # for the page, with what only its source holds beside it.
+    rendered = set()
+    for mf in glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv")):
+        with open(mf, encoding="utf-8", newline="") as f:
+            for r in csv.DictReader(f, delimiter="\t", quoting=csv.QUOTE_NONE):
+                tp = os.path.join(os.path.dirname(mf), r.get("dir", ""), r.get("text_file") or "-")
+                if os.path.isfile(tp) and os.path.getsize(tp) > 2000:
+                    rendered.add(r.get("url", ""))
     for mf in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*/manifest.tsv"))):
         run = os.path.dirname(mf)
         with open(mf, encoding="utf-8", newline="") as f:
@@ -264,13 +311,44 @@ def documents(platform):
                 d = os.path.join(run, r["dir"])
                 tp = os.path.join(d, r["text_file"])
                 if os.path.isfile(tp):
-                    # The visible text, and the raw page's text too: some sites keep their content only in the
-                    # raw HTML, and render an error or an empty shell (zid.sa, for one).
-                    text = open(tp, encoding="utf-8", errors="replace").read()
+                    # The page as it rendered: its visible text, and the text of its rendered markup, whose hidden
+                    # parts (a closed FAQ answer) the visible text leaves out.
+                    text, title = open(tp, encoding="utf-8", errors="replace").read(), ""
+                    xp = os.path.join(d, "expanded.txt")      # the lines a click shows, such as FAQ answers
+                    if os.path.isfile(xp):
+                        text += "\n" + open(xp, encoding="utf-8", errors="replace").read()
+                    seen = fold(text)
+                    rp = os.path.join(d, "rendered.html")
+                    if os.path.isfile(rp):
+                        page = open(rp, encoding="utf-8", errors="replace").read()
+                        m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
+                        title = html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else ""
+                        extra = [l for l in html_text(page).splitlines() if len(l.strip()) >= 20 and fold(l) not in seen]
+                        text += "\n" + "\n".join(extra)
+                    # The page as served, before its scripts ran. It can hold what the page doesn't show: zid.eg's
+                    # Terms page holds the Saudi Terms, which its scripts replace with the Terms of Zid Egypt.
+                    served = ""
                     for raw in sorted(glob.glob(os.path.join(d, "raw*.html"))):
-                        text += "\n" + html_text(open(raw, encoding="utf-8", errors="replace").read())
+                        page = open(raw, encoding="utf-8", errors="replace").read()
+                        m = re.search(r"<title[^>]*>(.*?)</title>", page, re.S | re.I)
+                        title = title or (html.unescape(re.sub(r"\s+", " ", m.group(1))).strip() if m else "")
+                        served += "\n" + html_text(page)
+                    if host == "help.zid.sa":
+                        text, served = zid_article(text), zid_article(served)
                     rel = os.path.relpath(tp, SKM)
-                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it)", r["url"], "", text)
+                    if len(re.sub(r"\s+", "", text)) < 1500:
+                        if r["url"] in rendered:
+                            continue                 # another capture rendered the page, and stands for it
+                        # the render showed an error or almost nothing: the page as served is all there is
+                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel} (and the raw page beside it, "
+                               "since the page rendered almost nothing)", r["url"], title, text + served)
+                        continue
+                    yield ("capture runs", f"sharrwah-knowledge-map@{head}:{rel}", r["url"], title, text)
+                    seen = fold(text)
+                    only = "\n".join(l for l in served.splitlines() if len(l.strip()) >= 20 and fold(l) not in seen)
+                    if len(only) >= 200:
+                        yield ("capture runs", f"sharrwah-knowledge-map@{head}:{os.path.relpath(d, SKM)}/raw "
+                               "(the page as served: text the page as rendered doesn't show)", r["url"], title, only)
     # The founder's saves for the platform: browser saves, and the documents saved beside them.
     for path in sorted(glob.glob(os.path.join(SKM, "evidence/product-class/blocked-evidence-founder", platform, "**", "*"),
                               recursive=True)):
@@ -284,6 +362,7 @@ def documents(platform):
                os.path.basename(path), text)
 
 ONLY = {"runs": False, "text": ""}      # --runs-only and --only: which corpora a search reads
+BRIEF = {"on": False}                   # --brief: past the cap, a count per corpus, not every address
 
 def parse(argv):
     """(platform, terms, --with terms, --all, --max) from the command line."""
@@ -293,6 +372,8 @@ def parse(argv):
         a = argv[i]
         if a == "--runs-only":
             ONLY["runs"] = True
+        elif a == "--brief":
+            BRIEF["on"] = True
         elif a == "--only":
             ONLY["runs"], ONLY["text"] = True, argv[i + 1]
             i += 1
@@ -312,6 +393,21 @@ def parse(argv):
         sys.exit("usage: corpus_search.py PLATFORM TERM [TERM ...] [--all] [--max N] [--with TERM [TERM ...]]; "
                  f"PLATFORM is one of {sorted(HOSTS)}")
     return terms[0], terms[1:], also, every, cap
+
+ZID_START = "آخر تحديث"
+ZID_END = ("التقييمات والمراجعات", "هل تحتاج إلى مساعدة إضافية", "لماذا زد")
+
+def zid_article(text):
+    """A Zid help page's article alone: from each "آخر تحديث" (last updated) to the ratings, the help prompt or the
+    footer, whichever comes first. Every page also holds the help centre's menu, whose words would match on every
+    page; a page without the marker is kept whole."""
+    parts, at = [], text.find(ZID_START)
+    while at >= 0:
+        ends = [e for e in (text.find(m, at) for m in ZID_END) if e > at]
+        stop = min(ends) if ends else len(text)
+        parts.append(text[at:stop])
+        at = text.find(ZID_START, stop)
+    return "\n".join(parts) if parts else text
 
 def matcher(terms):
     """The folded terms, and a test of which of them a folded text holds. A term in Latin letters matches whole
@@ -347,6 +443,8 @@ def main():
         if also and not with_hits:
             continue
         key = loc if corpus in runs else (url or loc)   # a run's document is its own observation
+        if "doesn't show)" in loc:
+            key = (url or loc) + " (as served)"  # what only a page's source holds is listed apart from the page
         if key not in best:
             order.append(key)
         elif len(text.strip()) <= len(best[key][4].strip()):
@@ -377,9 +475,11 @@ def main():
         snippet = re.sub(r"\s+", " ", body[max(0, i - 80):i + 160]).strip()
         print(f"{loc}\n    {url}\n    title: {title}\n    matched: {', '.join(t for t, _, _ in hits)}"
               + (f"; with: {', '.join(t for t, _, _ in with_hits)}" if also else "") + f"\n    …{snippet}…")
-    for corpus, rest in past.items():               # the addresses past the cap, one line each, at most 30
-        print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest[:30])
-              + (f"\n    and {len(rest) - 30} more" if len(rest) > 30 else ""))
+    for corpus, rest in past.items():               # every address past the cap, one line each (a count, with --brief)
+        if BRIEF["on"]:
+            print(f"\npast the first {cap} in {corpus}: {len(rest)} more (rerun without --brief, or with a higher --max, to list them)")
+        else:
+            print(f"\npast the first {cap} in {corpus}:" + "".join(f"\n    {r}" for r in rest))
     print(f"\nsearched {platform} for {terms} ({'every' if every else 'any'} term)"
           + (f", with any of {also}" if also else "") + ":",
           "; ".join(f"{c}: {n} documents{' (first ' + str(cap) + ' listed)' if n > cap else ''}" for c, n in total.items())

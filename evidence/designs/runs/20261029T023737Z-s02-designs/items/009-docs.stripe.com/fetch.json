@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://docs.stripe.com/api/payment_intents/object",
+ "dir": "items/009-docs.stripe.com",
+ "fetched_at": "2026-10-29T02:37:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.stripe.com/api/payment_intents/object",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 379949,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e71ffd3cf8b81d11c97b851b3b1c309bc1ec963950d3f7de1436347f7c0437e3",
+ "raw_ext": "html"
+}

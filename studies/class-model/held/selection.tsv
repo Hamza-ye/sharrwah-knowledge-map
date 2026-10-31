@@ -1,0 +1,268 @@
+platform	structure	read	rule	placement	note	reason
+shopify	account-organization	yes		where		how an account relates to organizations, stores and the Dev Dashboard
+shopify	admin-home-setup	yes		where		the admin home's setup region per store state: the setup tasks the platform offers
+shopify	admin-main-nav	yes		where		the admin's main navigation: its places; the items not cited
+shopify	admin-metafield-types	yes		decides		the metafield types a definition can take
+shopify	admin-permission-tree	yes		decides		the staff permissions as the admin's code lists them: the ones not cited
+shopify	admin-role-permissions	yes		decides		each role's permissions
+shopify	admin-roles	yes		decides		the predefined staff roles: the ones not cited
+shopify	admin-router	yes	drop:intent,action,model,form	where		the admin's route manifest: its places; the routes the concern map didn't cite
+shopify	admin-router-changes	yes	changes:derived/admin-router-changes/router-577b0ff35365..router-dd413330f40a.jsonl	where		the routes a later version of the admin's route manifest changed or removed, before and after, from the repository's own derived table (inspection-H.md, S-10)
+shopify	admin-router-versions	yes	new-vs:admin-router;drop:intent,action,model,form	where		later versions of the route manifest: the routes the read version lacks
+shopify	admin-settings-nav	yes		where		the admin's Settings navigation: its places; the items not cited
+shopify	app-install-consent	yes		decides	a permission a partner or an app can request: shows, by the dry run's S7	the access an app asks for at install, in the platform's categories
+shopify	app-store-built-in-features	yes	where:tag=h3|h4|h5|span	where		each feature built into Shopify as its app store page states it: the ones not cited
+shopify	app-store-registration	yes		where		registering for the App Store
+shopify	billing-charge-categories	yes		decides		the billing charge categories: the ones not cited
+shopify	billing-subscription-downgrades	yes		decides		the subscription downgrades by plan
+shopify	bulk-editor-columns	yes		decides		the fields the bulk editor offers
+shopify	checkout-editor-pages	yes		where		the checkout and accounts editor's pages
+shopify	collaborator-access-permissions	yes		decides	a permission a partner or an app can request: shows, by the dry run's S7	the permissions a collaborator requests: the ones not cited
+shopify	dev-changelog	no		where		the developer changelog: API detail, read in the second stage where a cell needs it, and sampled by the omission review. The merchant changelog is read here
+shopify	dev-dashboard-nav	yes		where		the Dev Dashboard's navigation: its places
+shopify	dev-dashboard-scopes	yes		boundary		the access scopes: the ones not cited
+shopify	dev-docs-nav	yes	nested:navItems;drop:children;drop-match:^uri: 	where		the docs areas' own sidebars: every API's groups; the items not cited
+shopify	dev-nav	yes		where		the developer docs' navigation: the platform's surfaces for developers
+shopify	dev-store-feature-previews	yes		decides		the feature previews a dev store can test
+shopify	document-template-config	yes		decides		a document template's configuration
+shopify	flow-connectors	yes	nested:triggerTasks,conditionTasks,actionTasks,forEachTasks,waitTasks	where		Flow's own triggers, conditions and actions, nested in each connector: the concern map cited the connectors' names only (inspection-H.md, S-1)
+shopify	flow-workflow-limits	yes		decides		Flow's workflow limits, as its API states them
+shopify	help-notes	yes	where:class=note note-plan|note note-staff-permissions|note note-beta;labels:en	decides		the Help Center's notes that state a plan requirement, a staff permission or a release marker, in English (the Arabic pages twin them)
+shopify	help-section-children	no		where		the Help Center's table of contents: help pages' titles. Help titles are read in the second stage, by cell, on every platform, and sampled by the omission review: a help page isn't a place of its own (the coordinator, after inspection-H.md, S-6)
+shopify	inventory-adjustment-reasons	yes		decides		the inventory adjustment reasons
+shopify	merchant-changelog	yes	labels:@posts;drop:run,status,class;long:20000	where		what's new for merchants: each post once, as its page states it (date, title, type tags, area, text, links, media), every post since 2018-08-03 (held under changelog.shopify.com@posts); the feed and the home page list the same posts and are not read again
+shopify	editions	yes	labels:fall2026;group:tag=h3|h4/h2	where		Shopify Editions, fall 2026 only, as its rendered page states it: each feature's heading with the paragraph, links and image text under it, under its section's heading (group:); its page data (shopify/editions-page-data, rmx-data) holds its components' props, not the features' paragraphs. The other editions are read from shopify/editions-page-data
+shopify	editions-page-data	yes	prune:root,($locale)~~layout,translations;labels:loaderData;name:uri,heading;nested:products,cards,list,primaryProducts,secondaryProducts,items,apiGroups,albumsData;merge:handle;drop:primaryMediaMobile,primaryMediaDesktop,secondaryMediaMobile,secondaryMediaDesktop,productMedia,cardMedia,modalMedia,mobileMedia,popoverMedia,plainViewMedia,media,assets,video,speakerBubbleVideo,riveAnimation,lightingEffect,lightingEffectMobile,backgroundImage,backImage,qrCode,srcSetOptions,imageSizes,urlFriendlyTags,desktopVideoDuration,modalMediaBackground,cardLayoutMedia,cardLayoutImageFirst,cardLayoutHideImage,cardLayoutPadImage,cardSize,cardTitleSize,cardTitleGradient,titleSize,headlineSize,numberOfColumns,primaryTheme,secondaryTheme,knockout,shadow,preventTilt,isxxl,modalMediaInset,modalShowCaptions,isModalVideoAutoplay,highlightTwoColumns,isAloneInRow,transparentBackground,spotlight,bgColor,buttonsOffset,hoverOffset,groupPosition,rive;long:20000	where		each Editions page's own data, summer 2022 to spring 2026 and the index of editions: one entry per feature (a product, card or list entry), with its edition (the page's uri) and its section, its handle, titles and the full description its dialog shows; a feature a page lists in two places is one entry (merge:handle); the page's translations and the site's header and footer are left out (prune:), and the media fields (drop:). Fall 2026 states its features in its rendered page only: shopify/editions
+shopify	pricing-page-data	yes	label:uri=^https://(www\.shopify\.com(?:/[a-z]{2}(?:-[a-z]{2})?)?)/;prune:image,images,hoverVideo,mobileCarousel,toggle,cardLayout,ctaHrefs,button,buttons,settings,cta,meta,video,duxTrackingMetadata;wrap:table,apyDisclaimer,hero,alwaysIncluded,posProCard,agenticPlanCard,starterPlanCard,pricingTable,sectionHeader;pick:values/loaderData.*.enPath,values/loaderData.*.experimentVariationId,values/loaderData.*.pricing;name:planType,display_name;nested:table,apyDisclaimer,hero,pricingCards,planFeatures,alwaysIncluded,posProCard,agenticPlanCard,starterPlanCard,features,pricingTable,rows,accordionItems,questions,mainPlans,alternatePlans,plans,loaderData.*.posLiteVsProPlans,sectionHeader,sideBySideItems,blocks,statCards,list,loaderData.*.promoCardsContent;labels:^www\.shopify\.com(/(ae|ae-ar|au|ca|eg|hk-en|id|ie|il|in|my|ng|no-en|nz|ph|pk|sa|sg|uk|za))?$	decides		each country site's pricing pages (plans, POS, international) on the 18 English-language sites and the 3 Arabic ones (ae-ar, eg, sa), labelled by the site (label:): each page's prices and terms with the experiment variant it was served (pick:); the plans' cards, features and comparison rows, the POS plans and the international fees table, each line once where the sites state it in the same words. The other 40 sites state the same lines in their own languages, as the coordinator measured on 31 October: every site's POS page states the same lists, of the same lengths, with the same identifiers, and 83 of 84 international pages have one shape, words and prices aside; every plan feature any site names (its name key) an English or Arabic site names too. What isn't read: which of the 103 comparison rows each of those 40 sites lists (76 to 101, not matched across languages: a gap for the second stage), and their own prices and terms, held for a subject to read as a table (evidence-map.md)
+shopify	mobile-app-navigation	yes		where		the mobile admin's navigation: its places
+shopify	mobile-app-settings-index	yes		where		the mobile admin's settings pages
+shopify	notification-templates	yes		where		the notifications the store sends: the items not cited
+shopify	partner-api-client-permissions	yes		decides	a permission a partner or an app can request: shows, by the dry run's S7	the Partner API's permission sets: the ones not cited
+shopify	partner-dashboard-nav	yes		where		the Partner Dashboard's navigation: the items not cited
+shopify	partner-focus-options	yes		where		what a partner says it does
+shopify	partners-dashboard-routes	yes		where		the Partner Dashboard's routes: its places
+shopify	plan-comparison-admin	yes		decides		the plan table the admin shows: its plan lines; the rows not cited
+shopify	plan-feature-set	yes	json1:raw/runs/*/answers/admin.shopify.com/PlanFeatureSetQuery/*.json;nested:planFeatureSet,features,planAddOnFeatureSet	decides		the admin's plan by feature data, from its latest answer: each section and feature, with its values per plan
+shopify	plan-page-admin	yes		decides		the plan selection page as each store rendered it: plan cards and lines
+shopify	plan-page-public	yes	drop-match:^tag: td;read-as:plan-comparison-public th,div	decides		the public pricing page: its plan cards and FAQs; its comparison cells repeat plan-comparison-public, the same record, which the model read, and so do the headings of the rows it cites and the page’s mobile copy of the table
+shopify	play-publisher-apps	yes		where		the Android apps Google Play lists for the publisher query pub:Shopify Inc.: the ones not cited
+shopify	pos-app-navigation	yes		where		the POS app's navigation: its places
+shopify	pos-settings	yes		where		the POS app's settings: its places
+shopify	return-reasons	yes		decides		the return reasons offered
+shopify	settings-panel	yes		where		the Settings panel's grouping: its places
+shopify	shop-request-details	yes	drop:set	decides		what the admin states about each shop: its plan, features and limits; the items not cited
+shopify	shopify-cli-commands	yes	files:items.jsonl,topics.jsonl;latest:id,topic	where		the CLI's topics and commands, each once in its latest version's words (latest:; 4.8.3 and 5.0.0): developer tooling, domain F's
+shopify	shopify-com-header-nav	yes		where		the marketing site's header navigation: the items not cited
+shopify	sidekick-composer	yes		where		Sidekick's composer: what it offers
+shopify	sidekick-quotas	yes	nested:limits,quotas	decides		Sidekick's limits, as its API states them
+shopify	sign-in-methods	yes		decides		the ways in: the ones not cited
+shopify	signup-onboarding-questions	yes		where		the onboarding question after a store is made
+shopify	signup-router	yes		where		the sign-up app's routes: its places
+shopify	theme-editor-templates	yes		where		the theme editor's templates: the storefront's page types
+shopify	tinker-tools	yes		where		the Tinker app's tool catalog
+shopify	tracking-carriers	yes		where		the carriers the return form's tracking field lists
+shopify	translatable-resources	yes		decides		what a store can translate and adapt: the items not cited
+shopify	ui-extension-targets	yes	latest:target	boundary		the places apps extend: each target once, in its latest version's words (latest:), under the versions that state it so; the targets not cited
+shopify	admin-betas	no				the beta flags' names are hashed in the bundle (cb257434 and the like): nothing to place
+shopify	admin-graphql-schema	no				the admin API's types: detail; its groups are read through admin-graphql-reference-nav
+shopify	admin-route-titles-en	no				the routes' titles, which the manifest's own routes carry
+shopify	android-app-manifests	no				apps' manifests: code
+shopify	business-entity-types	no				market data, the subjects'
+shopify	catalog-search-filters	no				a catalog's search filters: detail
+shopify	cli-extension-template-files	no				template files
+shopify	cli-notifications	no				the CLI's notices
+shopify	com-llms	no				the marketing site's index of itself
+shopify	dev-access-lines	no				the access lines per API page: detail; the scopes are read through the Dev Dashboard's list
+shopify	dev-dashboard-import-map	no				code modules
+shopify	dev-mcp-schemas	no				bundled schemas: detail
+shopify	docs-front-matter	no				every developer page's own title and description: API detail; the API's groups are read through dev-docs-nav and the reference navigation
+shopify	flow-step-environment	no				the data a Flow step can use: detail
+shopify	flow-templates	no				recipes over the triggers and actions that flow-connectors lists
+shopify	help-center	no				the Help Center's organisation, read through its section lists
+shopify	help-pos-hardware-troubleshooter	no				hardware troubleshooting
+shopify	hydrogen-create-package	no				a package's files
+shopify	mobile-app-store-list	no				one account's stores
+shopify	notification-template-previews	no				a notification's rendered preview: content detail
+shopify	partner-lead-forms	no				a form's vocabularies: countries, regions, solutions
+shopify	partner-payout-method	no				a form's countries
+shopify	shopify-com-footer	no				the marketing site's footer
+shopify	sidekick-message-streams	no				one session's replies
+shopify	signup-countries	no				market data, the subjects'
+shopify	status-page	no				the platform's status components and incidents, held in a fetch archive only (run 20260930T080834Z-shopifystatus-api): read by the second stage where a cell needs it
+shopify	store-picker	no				one account's stores
+shopify	store-picker-router	no				the store picker's router
+shopify	storefront-graphql-schema	no				the Storefront API's types: detail; its groups are read through dev-docs-nav
+shopify	storefront-languages	no				market data, the subjects'
+shopify	storefront-menus	no				one store's theme menus
+shopify	theme-check-results	no				the theme linter's results
+shopify	theme-check-rules	no				the theme linter's rules
+shopify	theme-files	no				a theme's files
+shopify	theme-metafields-file	no				a theme's metafield file
+shopify	ui-extension-types	no				type packages
+shopify	web-route-manifests	no				the websites' own routes (help, docs, marketing), not the product's
+shopify	webhook-deliveries-cli	no				deliveries as received: detail
+shopify	webhook-sample-payloads	no				payload detail; the topics are read through the CLI's and the admin's topic lists
+shopify	admin-webhook-topics	yes		boundary		the topics a merchant can choose for a webhook made in the admin: the topics added since the concern map read the list (the coverage measure of 30 October: 3 lines added since b46731d0)
+salla	app-categories	yes	drop:search_options	where		the App Store's categories: the ones not cited
+salla	app-store-tabs	yes	nested:apps	where		how the dashboard's App Store groups what it offers
+salla	apps-route-manifest	yes		where		the App Store's routes
+salla	canvas-apps	yes		where		the canvas registry
+salla	changelog-categories	yes		where		the categories Salla files its changes under
+salla	changelog-entries	yes	drop:content	where		what Salla says it changed
+salla	com-plans	yes	text:;labels:^en	decides		Salla's published plans per market and language: plan cards and each plan's lines (inspection-H.md, S-2)
+salla	com-specialplan	yes	text:;labels:^en	decides		Salla's special plan's page per market and language
+salla	dashboard-account-actions	yes		where		the dashboard's actions
+salla	dashboard-app-routes	yes	where:path!=;drop-match:path: [^;]*( |\(\.\*\))	where		every route of the dashboard's apps, with the app it belongs to: its places. Paths that are word lists or catch-alls are dropped
+salla	dashboard-edu	yes		where		the dashboard's pages, by their education banners
+salla	dashboard-features	yes		decides		the platform's feature list, the real store's among them: the features not cited
+salla	dashboard-main-navigation	yes		where		the dashboard's main navigation: the items not cited
+salla	dashboard-menu-marketing	yes		where		the Marketing menu
+salla	dashboard-menu-orders	yes		where		the Orders menu
+salla	dashboard-menu-products	yes		where		the Products menu
+salla	dashboard-menu-reports	yes		where		the Reports menu
+salla	dashboard-menu-store-channels	yes		where		the Store & Channels menu
+salla	dashboard-nav	yes	nested:children	where		the dashboard's navigation as data
+salla	dashboard-nav-segments	yes		where		the navigation API's answer for each segment
+salla	dashboard-quick-actions	yes		where		the dashboard's icon bar
+salla	dashboard-restrictions	yes	nested:options;drop:values,option_values,options_values,data	decides		what a staff permission can be narrowed by
+salla	dashboard-settings-menu	yes		where		Salla's settings, in four groups: the items not cited
+salla	dashboard-staff-roles	yes		decides		the roles a store's staff can hold
+salla	dashboard-webhook-events	yes		boundary		the events a store's own dashboard offers for a webhook
+salla	design-page-types	yes	drop:default_content	where		the kinds of page a store can add
+salla	design-settings	yes		decides		the switches a store's design offers
+salla	docs-event-lists	yes		boundary		the events the docs list: the ones not cited
+salla	docs-navigation	yes		where		the developer docs' menu: the items not cited
+salla	docs-sidebar	yes	where:type=apiDetailFolder|folder	boundary		the API's groups, one per folder of the docs' trees
+salla	expert-service-categories	yes		where		the categories an expert service is listed under
+salla	export-columns	yes		decides		what an export can take
+salla	help-articles	no		where		the help centre's articles: help pages' titles and descriptions. Read in the second stage, by cell, as Shopify's are, and sampled by the omission review
+salla	help-embedded-tree	no		where		the help centre's tree: read with its articles, in the second stage
+salla	help-tree	no		where		the help centre's categories: read with its articles, in the second stage
+salla	importer-schema-fields	yes		decides		what the importer takes
+salla	importer-schemas	yes	nested:schemas,types,fields	decides		what the importer takes, as it describes itself
+salla	invoice-settings	yes		decides		the invoice settings
+salla	kyc-schema	yes	nested:states,actions,fields,steps	decides		the store verification's workflow, its states and the actions it allows
+salla	marketplace-apps	no		where		the App Store's apps, one by one: third parties' listings, read as Shopify's app listings are, by cell in the second stage. The App Store's categories and tabs, the platform's own grouping, are read here
+salla	merchant-subscriptions	yes		decides		what a store is subscribed to
+salla	onboarding-missions	yes	nested:completed,pending,uncompleted,available,missions,tasks;drop:statistics,steps	where		what Salla asks a new store to do
+salla	onboarding-status	yes	nested:steps,items,data	where		the store's setup checklist
+salla	partners-portal-header	yes		where		the Partners portal's top bar
+salla	partners-portal-navigation	yes		where		the Partners portal's side menu: the items not cited
+salla	performance-reports	yes		where		the reports Store performance shows
+salla	permission-gates	yes	rows:derived/permission-gates.tsv:.	decides		what a permission allows, per address or item: the repository's own derived table
+salla	plan-gates	yes	rows:derived/plan-gates.tsv:.	decides		what a plan allows, per dashboard address, in Salla's words beside what each store's pages showed: the repository's own derived table (inspection-H.md, S-9)
+salla	portal-app-builder-functions	yes		where		an app's functions
+salla	portal-app-routes	yes	where:path!=;drop-match:path: [^;]*( |\(\.\*\))	where		every route of the Partners portal's apps: its places
+salla	portal-apps	yes		where		the Partners portal's own registry of its apps
+salla	portal-help-center-article	yes	nested:articles,questions	where		the portal's FAQ: the items not cited
+salla	portal-help-center-resource	yes	nested:sections,articles,resources	where		the Partners resources tree
+salla	portal-menu-definitions	yes		where		the Partners portal's menu definitions: the items not cited
+salla	portal-private-settings	yes		decides		the features on for a partner account
+salla	portal-report-builder-tags	yes		where		the report builder's tags
+salla	portal-report-builder-widgets	yes		where		the report builder's component types
+salla	portal-settings	yes		where		the Partners portal's settings
+salla	report-catalog	yes		where		the report catalog
+salla	report-widget-categories	yes		where		the report widgets' categories
+salla	report-widgets	yes		where		what a custom report can be built from
+salla	report-widgets-legacy	yes		where		the report builder's legacy widgets
+salla	salla-academy	yes	text:	where		Salla's academy, as its pages state it
+salla	salla-complaints	yes	text:	where		Salla's complaints surface, as its page states it
+salla	settings-center	yes	translate:dashboard-translations/en/settings.json,dashboard-translations/ar/settings.json;nodes:section;long:4000	where		Salla's settings centre: its sections and their items, their labels resolved from the dashboard's own translations (inspection-H.md, E-8)
+salla	shipping-carriers	yes		where		the shipping companies a store is offered
+salla	theme-design-components	yes		where		what the theme editor can place
+salla	theme-marketplace	yes		where		the theme store's tags
+salla	theme-marketplace-summary	no		where		the theme marketplace's front page: its latest, partner and featured themes, the marketplace's listings one by one; theme-marketplace's tags read how the store groups them
+salla	app-webhook-deliveries	no				deliveries as received
+salla	apps-sitemap	no				addresses only
+salla	com-llms	no				the marketing site's index of itself
+salla	com-policies	no				terms, which the cells pass reads where a cell needs them
+salla	com-sitemaps	no				addresses only
+salla	community-categories	no				the community's categories
+salla	community-sitemaps	no				addresses only
+salla	dashboard-countries	no				market data, the subjects'
+salla	dashboard-filter-components	no				a list's filters: detail
+salla	dashboard-importmap	no				code modules
+salla	dashboard-translations	no				the dashboard's strings, read through settings-center, which resolves its keys in them
+salla	docs-dataschemas	no				the API's data schemas: detail
+salla	docs-index	no				the developer docs' index: API detail, the groups read through the docs' navigation
+salla	docs-operations	no				the API's operations: detail
+salla	help-article-redirects	no				addresses only
+salla	help-self-descriptions	no				the help centre's statements about itself
+salla	help-sitemaps	no				addresses only
+salla	icon-catalog	no				the icons a merchant can choose
+salla	importer-sample-workbooks	no				import templates: detail
+salla	mahally-browse	no				a marketplace's product categories
+salla	mahally-categories-api	no				a marketplace's product categories
+salla	mahally-llms	no				a marketplace's index of itself
+salla	mahally-main-categories	no				a marketplace's product categories
+salla	mahally-sitemaps	no				addresses only
+salla	partners-legal	no				terms, which the cells pass reads where a cell needs them
+salla	portal-app	no				one partner's apps
+salla	portal-app-meta	no				reasons for deleting an app
+salla	portal-app-select	no				one partner's apps
+salla	portal-app-snippets	no				one partner app's own snippet: one account's records
+salla	portal-apps-iframe-pages	no				an app's embedded pages: none (data [])
+salla	portal-apps-onboarding-steps	no				one partner app's own onboarding steps (title خطوة1): one account's records
+salla	portal-dashboard	no				one account's figures
+salla	portal-delete-account	no				reasons for deleting an account
+salla	portal-development-store-filters	no				a list's filters
+salla	portal-employees	no				one account's employees
+salla	portal-experts-partner-influencers-profile	no				a form's vocabularies
+salla	portal-experts-partner-services	no				a form's vocabularies
+salla	portal-experts-partner-services-filters	no				a list's filters
+salla	portal-experts-portfolio	no				a form's vocabularies
+salla	portal-importmap	no				code modules
+salla	portal-marketing-marketplace-affiliates-filters	no				a list's filters
+salla	portal-marketing-partner-profile	no				a form's vocabularies
+salla	portal-marketing-partner-profile-affiliate-links-filters	no				a list's filters
+salla	portal-me	no				one account
+salla	portal-notification	no				one account's notifications
+salla	portal-partner-reports-domains-stats	no				one account's report
+salla	portal-partner-reports-stores-search	no				one account's report
+salla	portal-payouts-filters	no				a list's filters
+salla	portal-subscriptions-filters	no				a list's filters
+salla	shipping-policy-sections	no				Salla's own shipping policy's sections
+salla	showcase-store-payments	no				each showcase store's payment methods: market data
+salla	store-activities	no				the activities a store declares itself as: merchant data
+salla	storefront-api	no				the demo store's branches and categories as its storefront API answers: one store's records
+salla	storefront-init	no				each storefront page's configuration: the store's and a guest's values; the settings it names are read through settings-center
+salla	storefront-shipping-countries	no				market data, the subjects'
+zid	dashboard-page-index	yes		where		the dashboard's own index of its pages, with their titles: its places
+zid	dashboard-route-manifest	yes		where		every route of the dashboard: its places, with those the page index doesn't title
+zid	plans-offered	yes	json:zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/purchasables/core-packages/packages/*.json;nested:variants,packages,features,advantages,common_advantages	decides		the plans offered to the store, monthly and yearly, with their prices and advantages, held as an answer
+zid	store-feature-flags	yes	json:zid/raw/runs/20261028T144855Z-dashboard-routes-en/answers/hermod.zid.sa/v1/managers/store/feature-flags/*.json;dict:feature_flags	decides		the store's feature flags, held as an answer: each flag and its value
+zid	store-permissions	yes	meta:roles	decides		the permissions a team member can be given, with the plans that restrict them. Its meta.json lists the store's roles, read as entries (meta:)
+zid	store-plan-policies	yes		decides		every policy of the store's plan, with the plan each is available in: its plan lines
+zid	dashboard-locales	no				the dashboard's strings (33,722 lines), without places of their own; the page index gives its pages' titles, and the cells pass searches them
+zid	storefront-hreflang	no				the storefront's addresses per language and country: market data, the subjects'
+bigcommerce	channel-catalog	yes		where		the channels a store can create, by category: what the platform connects
+bigcommerce	contracting-entities	yes		responsible		the company a merchant contracts with, by country
+bigcommerce	payment-gateways	yes		where		the payment gateways, with their features: what the platform connects
+bigcommerce	plan-comparison	yes	drop:feature;meta:prices_above_the_table	decides		the plan table, with what each plan includes: its plan lines. Rendered from feature_text and the cells only: rows 8 to 13's feature names another row (inspection-H.md, E-5). Its meta.json holds the plans' prices above the table, read as an entry (meta:; the review's R3)
+bigcommerce	settings-list	yes	drop:address	where		the control panel's Settings, by group and section: its places. Each section's address is left out: the items pair it with the next one's (handoff H-009); the source step holds each section's own
+bigcommerce	tax-services	yes		where		the automatic tax services a store is offered: what the platform connects
+bigcommerce	localization-countries	no				the countries a store can choose as its default: market data, the subjects'
+bigcommerce	standard-formats	no				the units, number formats, date formats and time zone per country: market data, the subjects'. Read by the second stage for Q3's miss M-04 and the cells that need it
+woocommerce	core-profiler-free-extensions	yes	nested:bundles,plugins	where		the free extensions the set-up offers to install, by country, bundle and plugin
+woocommerce	options	yes	rows:woocommerce/raw/runs/20261029T023745Z-db-after-country-change/options.tsv:^(woocommerce|wcpay|wc_|_wc)	decides		the store's settings as WooCommerce keeps them, after set-up and a change of country: every WooCommerce and WooPayments option
+woocommerce	payments-providers	yes	nested:providers,offline_payment_methods,suggestion_categories,suggestions,payment_methods;drop:onboarding,management,links,_links,plugin,tags,supports,_suggestion_id,image,icon,images	where		the payment providers WooCommerce lists for a business location, with their offline methods and suggestions, by location
+woocommerce	release-admin-menus	yes	release:admin-menus	where		WooCommerce's admin menus, as its release adds them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	release-capabilities	yes	release:capabilities	decides		WooCommerce's core capabilities (permissions), as its release installs them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	release-features	yes	release:features	decides		WooCommerce's features, as its release's features controller declares them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	release-rest-controllers	yes	release:rest-controllers	boundary		WooCommerce's REST API controllers, as its release registers them: its API groups: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	release-settings	yes	release:settings	decides		WooCommerce's settings fields, tab by tab, as its release's settings classes declare them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	release-webhook-topics	yes	release:webhook-topics	boundary		WooCommerce's webhook topics, as its release names them: the release's own lists (inspection-H.md, S-4); the lines the concern map cites count as read
+woocommerce	woopayments-onboarding	yes	nested:steps;drop:actions,context	where		WooPayments' onboarding states and steps
+woocommerce	countries-states	no				WooCommerce's countries and states: market data, the subjects'
+woocommerce	woopayments-onboarding-fields	no				the legal entity types WooPayments offers per country: market data, the subjects'
+woocommerce	woopayments-supported-countries	no				the countries WooPayments supports: market data, the subjects'
+shopify	legal-documents	no				Shopify's legal documents as Markdown, among them the Payment Facilitator Terms and the country sites' translations: documents, not a list of things; read by the subjects (S-03's who holds sellers' money and contracts with them) and by the second stage where a cell needs them (the founder's evidence of 30 October)
+shopify	compliance-reports	no				the SOC 3 reports, the PCI DSS attestation and the ASV scans: certifications, read as the qualities of the trust and payments cells in the second stage
+shopify	product-taxonomy	no				the Standard Product Taxonomy v2026-10, 64,292 categories with attributes, values, return reasons and disclosures: reference data of one capability, read as that capability's evidence with its counts and parts (the product taxonomy, return reasons), not entry by entry
+shopify	engineering-blog	no				the engineering blog's 436 posts: engineering writing, routed to the architecture plan, not the class's model (STATE: each new structure is routed by what it is)
+shopify	open-source	no				19 open-source repositories: code that states Shopify's architecture, routed to the architecture plan
+shopify	embedded-videos	no				the subtitles of 162 videos embedded in engineering, changelog and developer pages: a source that clarifies the post it sits in; the engineering ones go to the architecture plan
+shopify	editions-videos	no				the subtitles of 36 feature videos the Editions pages put on features: a source that clarifies the feature it sits on, read with editions-page-data's entries
+shopify	dev-mcp-instructions	no				22 platform-authored guides bundled with the dev-mcp server: developer guidance, read in the second stage where a cell needs it, and by the architecture plan
+shopify	dev-sitemap	no				shopify.dev's sitemap: a denominator of what is held, not things the platform offers
+shopify	marketing-sitemap	no				shopify.com's sitemap: a denominator of what is held, not things the platform offers

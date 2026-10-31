@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://raw.githubusercontent.com/googleapis/googleapis/master/google/type/postal_address.proto",
+ "dir": "items/002-raw.githubusercontent.com",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://raw.githubusercontent.com/googleapis/googleapis/master/google/type/postal_address.proto",
+ "content_type": "text/plain; charset=utf-8",
+ "bytes": 2751,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "6420a116343be5fdf1afc571ed9d2a7f3972723d66e0d26338a0cab03a8003fa",
+ "raw_ext": "txt"
+}

@@ -1,0 +1,188 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Shipping
+Shipping Overview
+Shipping Setup
+Shipping Partners
+Shipping Error Message
+Shipping Methods
+Shipping Zones
+SHIPPING QUOTES
+Flat-Rate Quotes
+Real-Time Quotes
+Free Shipping
+Dimension Settings and Shipping Calculations
+Requirements
+Physical Dimension Settings
+How Shipments are Calculated
+Example Scenario
+FAQ
+ShipperHQ
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Physical Dimension Settings and the Shipping Calculator
+What We'll Cover
+Requirements
+Physical dimension settings
+How shipments are calculated
+Example scenario
+FAQ
+
+Different shipping providers and the services they offer have different weight and dimension limits. If these limits are exceeded, the quote can fail, or include extra fees or charges.
+
+Before we can start troubleshooting faulty or missing real-time quotes, we need an overview of the different settings for displaying and factoring your products’ dimensions, as well as a basic understanding of how our system calculates the size and weight of a shipment.
+
+ 
+Requirements
+To view and manage physical dimension settings, you must have the Manage Settings permission enabled on your user account.
+ 
+Physical Dimension Settings
+
+Your store’s physical dimension settings are located in Settings › Website.
+
+ 
+
+Localized Store Experiences: Dimension settings are available for all of our supported languages. For more information on the default language store setting, see Store Profile Settings.
+
+Weight Measurements — determines the weight measurement used when calculating the weight of physical products in your store. Available options are Pounds, Ounces, Kilograms, Grams, and Tonnes.
+Length Measurements — determines the length measurement used when calculating the dimensions of physical products in your store. Available options are Inches or Centimeters.
+Decimal Token — determines the token or character to use as the decimal separator for your product’s dimensions.
+Thousands Token — determines the token or character to use as the thousands separator for your product’s dimensions.
+Decimal Places — determines the number of decimal places to show when displaying dimensions in your store.
+Factoring Dimension — determines the dimension that will be added up per product when calculating shipping quotes. If Product Depth is selected, then shipping quotes would be based on these dimensions:
+Width = maximum width out of all products in the order
+Height = maximum height out of all products in the order
+Depth = the sum of all depths of the products in the order when added together
+ 
+
+Look different? Stores with multiple languages enabled configure their physical dimensions under Settings › Localization. For more information, see Localization Settings.
+
+ 
+How Shipments are Calculated
+
+There are two key points to know about the BigCommerce shipping calculator:
+
+1. Shipments are calculated as if every item in the order is going into a single box, or as if every item is being packed individually (UPS and FedEx only).
+
+There is one exception to this rule. If an item in the order has a product-level fixed shipping cost, then the weight and dimensions of that item are not included when requesting a real-time quote. For more details on product-level shipping, see the “Fulfillment” section in our Guide to v3 Products.
+
+2. Our shipping calculator stacks items in a single column.
+
+This is where the Factoring Dimension in your store’s Physical Dimension Settings becomes important. Typically, the narrowest dimension between width, height, and depth should be set as the Factoring Dimension, and all products should be consistent (for example, depth is always the narrowest side).
+
+ 
+
+Pro Tip! If you need more advanced shipping functionality, ShipperHQ may be able to help. Check it out in the App Marketplace for a full listing of its features.
+
+ 
+Example Scenario
+
+A merchant has a music store and sells two products, records and compact discs (CDs). The size and weight of each product is as follows:
+
+Records measure 10” x 10” x 1” (Width x Height x Depth) and weigh 0.2 lbs.
+CDs measure 5” x 5” x 1” and weigh 0.1 lbs.
+
+A merchant receives an order for 2 records and 12 CDs.
+
+Applying the rules we learned in the previous section, this is how the shipping calculator determines the size of the box to be shipped. In this case, we’ve adjusted our UPS and FedEx settings to include all items in the order in one box.
+
+The largest width is the records, so that’s 10” for width.
+The largest height is also the records, so that’s also 10” for height
+The summed up depth of all the products is 14”.
+(2 records at 1” each, plus 12 CDs at 1” each)
+The summed up weight of all the items is 1.6 lbs.
+(2 records at 0.2 lbs each, plus 12 CDs at 0.1 lbs each)
+
+The resulting package measures 10” x 10” x 14” and weighs 1.6 lbs. The inside of the package looks like this — notice that most of the box is empty space:
+
+A human or a more advanced shipping calculator would know that we could create 4 columns of CDs on top of the records to make a box that doesn’t need to be so deep.
+
+In this configuration, the box is 10” x 10” x 5”, and would result in a lower quote. In both of these cases, the dimensional weight (also known as cubic or volumetric weight) of the package would be greater than its actual weight.
+
+This is a mild scenario — as you can imagine, the more the dimensions of products in an order differ from each other, the more likely it is there will be empty space when the box is calculated, making it unnecessarily large and resulting in a higher quote.
+
+ 
+FAQ
+
+How can I change the currency symbol and decimal format of my store’s prices?
+
+Your store’s currency display settings can be changed by editing your enabled currencies in Settings › Currencies. For more information, see our article on Managing Currencies.
+
+Can I apply physical dimension settings on a per-product basis?
+
+No, settings like measurement units and factoring dimension are applied globally. However, you can include measurements in different units within a product’s description.
+
+Additional Resources
+Setting Up Real Time Shipping Quotes
+Troubleshooting Real Time Shipping Quotes
+ShipperHQ
+Localization Settings
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Physical Dimension Settings and the Shipping Calculator

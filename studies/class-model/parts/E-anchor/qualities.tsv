@@ -1,0 +1,14 @@
+cap_id	platform	quality	value	key
+CM-SFR-010	shopify	Web hosting per plan	Unlimited web hosting: Included; Included; Included; Included	SH-C-036/decides/SH-S-7032
+CM-SFR-011	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056
+CM-SFR-003	salla	Minimum price of a theme	لديك الحرية في تحديد سعر الثيم. ولكن هناك حد أدنى بمبلغ (150 ر.س) لتسعير الثيمات.	SA-C-208/decides/SA-S-5107
+CM-SFR-003	salla	Developers' dues paid after a warranty period	تُصرف مستحقات المطورين بعد انقضاء فترة الضمان (عادة 15 يومًا من تاريخ الشراء).	SA-C-208/decides/SA-S-0041
+CM-CHN-003	shopify	synced marketplace orders free per month	50 synced marketplace orders per month: Free	SH-C-137/decides/SH-S-7050
+CM-CHN-003	shopify	price above 50 synced marketplace orders	Over 50 synced marketplace orders: 1% up to $99/mo	SH-C-137/decides/SH-S-7051
+CM-POS-001	shopify	POS Pro per plan	POS Pro: Advanced tools for brick‑and‑mortar retailers: $89/mo per location; $89/mo per location; $89/mo per location; Includes 20 locations. Up to 200 with Shopify Payments.	SH-C-142/decides/SH-S-7018
+CM-POS-004	shopify	UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-144/decides/SH-S-7485
+CM-POS-002	salla	Payment terminal per device	رقم جهاز الدفع مخصص لجهاز واحد فقط وفق متطلبات أنظمة الدفع وNearPay	SA-C-095/reason/SA-S-5042
+CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في المتجر	SA-C-008/decides/SA-S-2074
+CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098
+CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970
+CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012

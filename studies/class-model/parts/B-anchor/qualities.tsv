@@ -1,0 +1,16 @@
+cap_id	platform	quality	value	key
+CM-CAT-001	shopify	products a store may sell	Sell unlimited products: Included, Included, Included, Included	SH-C-020/decides/SH-S-7004
+CM-CAT-001	salla	number of products	عدد لا محدود من المنتجات	SA-C-020/decides/SA-S-1949
+CM-CAT-002	shopify	variants per product	create up to 100 variants for each of your products	SH-C-020/decides/SH-S-7214
+CM-CAT-002	shopify	maxProductVariants	not in the concern map	SH-I-2520
+CM-CAT-002	shopify	maxProductOptions	not in the concern map	SH-I-2519
+CM-CAT-006	shopify	tagsPerProductLimitEnabled	not in the concern map	SH-I-2598
+CM-CAT-007	salla	maximum-uploaded-images	"name": "maximum-uploaded-images", "value": 40	SA-C-020/decides/SA-S-3521
+CM-SEL-006	salla	bundle-section-products-limit	"name": "bundle-section-products-limit", "value": 5	SA-C-020/decides/SA-S-3522
+CM-INV-005	shopify	Inventory locations	Inventory locations: 10, 10, 10, 200	SH-C-024/decides/SH-S-7010
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 2	SH-C-024/decides/SH-S-5762
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 10	SH-C-024/decides/SH-S-5763
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 200	SH-C-024/decides/SH-S-5764
+CM-INV-005	salla	store-branch limit	"name": "store-branch", "limit": 5	SA-C-026/decides/SA-S-3338
+CM-INV-005	salla	more branches	زيادة عدد الفروع *برسوم إضافية	SA-C-026/decides/SA-S-2028
+CM-INV-005	salla	max_inventory_types	"max_inventory_types": 5	SA-C-025/decides/SA-S-3504

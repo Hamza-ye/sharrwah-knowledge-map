@@ -1,0 +1,3 @@
+cap_id	platform	quality	value	key	scope
+CM-MKT-001	bigcommerce	Recommended active promotions and rules per promotion	BigCommerce recommends having less than 100 active promotions on storefronts, and there should be at most ten rules per promotion.	BC-C-009/decides/BC-S-0059	
+CM-MKT-010	bigcommerce	Feedonomics Surface basic plan	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	plans Core, Growth, Scale, Performance (columns of the plan comparison table)

@@ -1,0 +1,49 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ACC-001	bigcommerce	statements	not-stated	Store		BC-C-055/decides:searched, not found;BC-C-055/responsible:stated only in general terms;BC-C-055/reason:searched, not found;BC-C-063/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-ACC-002	bigcommerce	statements	not-stated	Commerce.com US, Inc.	BC-C-079/boundary/BC-S-0434=Customers domiciled in the United States | BC-C-079/responsible/BC-S-0428=Country of Residence of Merchant: United States | BC-C-079/responsible/BC-S-0429=Country of Residence of Merchant: United Kingdom | BC-C-079/responsible/BC-S-0430=Country of Residence of Merchant: European Union | BC-C-079/responsible/BC-S-0431=Country of Residence of Merchant: Australia | BC-C-079/responsible/BC-S-0432=Country of Residence of Merchant: Any other jurisdiction | BC-C-079/responsible/BC-S-0433=Customers domiciled in Germany | BC-E-22b1b6aa=Australia | BC-E-34573863=United Kingdom | BC-E-47462fcf=European Union | BC-E-aac5508c=United States | BC-E-b01b6b25=Any other jurisdiction	BC-C-079/reason:searched, not found	
+CM-ACC-003	bigcommerce	statements	not-stated			BC-C-055/decides:searched, not found;BC-C-055/responsible:stated only in general terms;BC-C-055/reason:searched, not found	
+CM-ACC-004	bigcommerce	none-held					
+CM-ACC-005	bigcommerce	none-held					
+CM-ACC-006	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/settings | /developer/api-reference/rest/admin/management/store-information/v2 | Settings APIs | settings-list		BC-C-047/responsible:stated only in general terms;BC-C-047/reason:searched, not found	general
+CM-ACC-007	bigcommerce	none-held					
+CM-ACC-008	bigcommerce	statements	not-stated			BC-C-080/responsible:searched, not found;BC-C-080/reason:searched, not found	
+CM-ACC-009	bigcommerce	none-held					
+CM-ACC-010	bigcommerce	none-held					
+CM-ACC-011	bigcommerce	none-held					
+CM-ONB-001	bigcommerce	none-held					
+CM-ONB-002	bigcommerce	statements	not-stated			BC-C-059/reason:searched, not found;BC-C-080/responsible:searched, not found;BC-C-080/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-ONB-003	bigcommerce	statements	core		BC-C-066/decides/BC-S-0077=Powered By (closed beta) | BC-E-0f95540a=Growth, Scale, Performance	BC-C-066/responsible:stated only in general terms;BC-C-066/reason:searched, not found	Growth, Scale, Performance
+CM-ONB-004	bigcommerce	none-held					
+CM-PLN-001	bigcommerce	statements	core		BC-C-030/decides/BC-S-0185=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-030/decides/BC-S-0187=Scale plan | BC-E-aaa76a60=Core, Growth, Scale, Performance	BC-C-030/reason:searched, not found;BC-C-066/responsible:stated only in general terms;BC-C-066/reason:searched, not found	general
+CM-PLN-002	bigcommerce	statements	core				general
+CM-PLN-003	bigcommerce	statements	core		BC-C-026/decides/BC-S-0152=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-026/decides/BC-S-0153=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-E-5c661e15=Core, Growth, Scale, Performance | BC-E-b0fc5c37=Core, Growth, Scale, Performance	BC-C-026/decides:page not read;BC-C-026/responsible:searched, not found;BC-C-026/reason:searched, not found	general
+CM-PLN-004	bigcommerce	statements	core	Fees	BC-C-029/responsible/BC-S-0178=India | BC-C-030/decides/BC-S-0189=Customers domiciled within the European Union or the United Kingdom | S02-BC-280=stores located in India | S02-BC-281=Merchants in India; a business located in India	BC-C-029/responsible:searched, not found;BC-C-030/reason:searched, not found	Merchants in India; a business located in India | stores located in India
+CM-PLN-005	bigcommerce	statements	not-stated			BC-C-030/reason:searched, not found	
+CM-PLN-006	bigcommerce	none-held					
+CM-PLN-007	bigcommerce	statements	core		S02-BC-359=store w5pamplexj (a trial, hosted in North America; default country Saudi Arabia while this run read the checkout, as saved at run 20261029T012951Z-store-settings-en step 60 and restored to Oman at run 20261029T025746Z-store-country-restore-en); run 20261029T015915Z-plan-upgrade-en; Upgrade to BigCommerce Core plan, annual ($348.00); step 12: billing contact in Muscat (OM); step 53: billing contact in Los Angeles, CA (US); step 60: billing contact in Toronto (CA); step 74: billing contact in Tokyo (JP); step 80: billing contact in Singapore (SG); step 87: billing contact in New Delhi (IN); step 94: billing contact in Riyadh (SA); step 100: billing contact in Dubai (AE); step 106: billing contact in Sana'a (YE); step 113: billing contact in Muscat (OM) | S02-BC-362=store w5pamplexj (a trial, hosted in North America; default country Saudi Arabia while this run read the checkout, as saved at run 20261029T012951Z-store-settings-en step 60 and restored to Oman at run 20261029T025746Z-store-country-restore-en); run 20261029T015915Z-plan-upgrade-en; Upgrade to BigCommerce Core plan, annual ($348.00); step 32: billing contact in Austin, TX (US)	BC-C-030/reason:searched, not found	general
+CM-STF-001	bigcommerce	statements	core	control panel users | settings-list	BC-C-061/decides/BC-S-0334=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-055/decides:searched, not found;BC-C-055/responsible:stated only in general terms;BC-C-055/reason:searched, not found;BC-C-061/responsible:stated only in general terms;BC-C-061/reason:searched, not found	general
+CM-STF-002	bigcommerce	statements	core				general
+CM-STF-003	bigcommerce	none-held					
+CM-STF-004	bigcommerce	none-held					
+CM-STF-005	bigcommerce	none-held					
+CM-TRU-001	bigcommerce	statements	core	settings-list			general
+CM-TRU-002	bigcommerce	none-held					
+CM-TRU-003	bigcommerce	statements	core	/developer/api-reference/rest/admin/management/system-logs | settings-list		BC-C-060/decides:page not read;BC-C-060/responsible:stated only in general terms;BC-C-060/boundary:searched, not found;BC-C-060/reason:searched, not found	general
+CM-TRU-004	bigcommerce	none-held					
+CM-TRU-005	bigcommerce	statements	not-stated			BC-C-086/reason:searched, not found	
+CM-TRU-006	bigcommerce	statements	core	/developer/api-reference/rest/storefront/consent | settings-list	BC-C-037/decides/BC-S-0216=Catalyst storefronts | BC-C-037/responsible/BC-S-0217=Catalyst storefronts	BC-C-037/reason:searched, not found	general
+CM-TRU-007	bigcommerce	statements	not-stated			BC-C-081/reason:searched, not found	
+CM-TRU-008	bigcommerce	none-held					
+CM-TRU-009	bigcommerce	statements	not-stated			BC-C-085/where:searched, not found;BC-C-085/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-TRU-010	bigcommerce	statements	not-stated	Anti-Corruption, Export and Sanctions Compliance		BC-C-080/responsible:searched, not found;BC-C-080/reason:searched, not found;BC-C-085/where:searched, not found;BC-C-085/reason:searched, not found;BC-C-086/reason:searched, not found	
+CM-TRU-011	bigcommerce	statements	core	Protocol		BC-C-088/responsible:stated only in general terms	general
+CM-TRU-012	bigcommerce	none-held					
+CM-TRU-013	bigcommerce	statements	core	Exhibit B		BC-C-081/reason:searched, not found	general
+CM-TRU-014	bigcommerce	statements	core;outside	Amazon | Cloudflare | Data Transfer | Google		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found	general
+CM-TRU-015	bigcommerce	statements	core;outside	Amazon | Cloudflare | Google | Subprocessors		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found;BC-C-083/reason:searched, not found	general
+CM-TRU-016	bigcommerce	none-held					
+CM-TRU-017	bigcommerce	none-held					
+CM-TRU-018	bigcommerce	statements	core	PCI-compliant payments server | Tier 1 certifications		BC-C-078/responsible:stated only in general terms;BC-C-078/reason:searched, not found	general
+CM-TRU-019	bigcommerce	statements	extension-point			BC-C-059/reason:searched, not found	
+CM-TRU-020	bigcommerce	none-held					
+CM-TRU-021	bigcommerce	none-held					

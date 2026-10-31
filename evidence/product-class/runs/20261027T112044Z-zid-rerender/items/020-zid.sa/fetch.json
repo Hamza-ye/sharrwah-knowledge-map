@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://zid.sa/en/syria/",
+ "dir": "items/020-zid.sa",
+ "fetched_at": "2026-10-27T11:21:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/syria/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 45631,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261019T003516Z-proposals-Q6-zid"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dbec5705099bbe5ef004d2f64acde3ef38b467deebbf37777176a5225071c66b",
+ "raw_ext": "html"
+}

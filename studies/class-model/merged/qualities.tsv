@@ -1,0 +1,239 @@
+cap_id	platform	quality	value	key	part
+CM-ACC-003	shopify	free expansion stores per plan	Free expansion stores: Not included, Not included, Not included, Up to 9	SH-C-003/decides/SH-S-7073	A-anchor
+CM-ACC-005	shopify	plans that include it	Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan.	SH-C-005/decides/SH-S-0253	A-anchor
+CM-STF-001	shopify	additional staff accounts per plan	Additional staff accounts: Not included, 5, 15, Unlimited	SH-C-009/decides/SH-S-7011	A-anchor
+CM-STF-001	salla	more users on سلة بلس	زيادة عدد المستخدمين *برسوم إضافية	SA-C-009/decides/SA-S-2078	A-anchor
+CM-STF-003	shopify	plans that include it	Custom user groups: Not included, Not included, Not included, Included	SH-C-010/decides/SH-S-7077	A-anchor
+CM-PLN-002	salla	longest freeze of the annual subscription	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا	SA-C-004/decides/SA-S-2085	A-anchor
+CM-PLN-004	shopify	notice before fees change	We will provide you with 30 days advanced notice prior to any changes in Fees	SH-C-016/decides/SH-S-0075	A-anchor
+CM-PLN-005	shopify	days before suspension for unpaid fees	If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.	SH-C-016/decides/SH-S-0035	A-anchor
+CM-PLN-006	salla	day withdrawn balance reaches the bank	يتم تحويل الرصيد المسحوب إلى حسابك البنكي كل يوم ثلاثاء.	SA-C-005/decides/SA-S-0096	A-anchor
+CM-PLN-001	salla	features per plan	"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}	SA-C-004/decides/SA-S-3528	A-anchor
+CM-ONB-002	shopify	failed fee payment before suspension may follow	If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.	SH-C-014/decides/SH-S-0035	A-anchor
+CM-ONB-002	salla	time to correct a violation before the store is suspended	يُرجى استعراض المخالفة وتصحيحها خلال 24 ساعة لتفادي إيقاف متجرك.	SA-C-232/decides/SA-S-0115	A-anchor
+CM-TRU-003	shopify	admin API activity webhook subscriptions	This topic is limited to one active subscription per Plus store and requires the use of Google Cloud Pub/Sub or AWS EventBridge.	SH-C-012/boundary/SH-S-5938	A-anchor
+CM-TRU-004	shopify	plans that include it	The bot protection feature is available only for merchants on a Shopify Plus plan.	SH-C-051/decides/SH-S-0744	A-anchor
+CM-TRU-014	shopify	data location for new merchants in Europe	New merchants in Europe automatically avail of this new infrastructure and now have their store data, order data and customer personal data stored at rest in Europe by default.	SH-C-181/where/SH-S-0638	A-anchor
+CM-TRU-016	shopify	retention of store information after closure	If you are a merchant operating a Shopify-powered store, and you close the store, stop paying your subscription fees, or we terminate your account, we retain store information for two years before we begin the deletion process.	SH-C-183/decides/SH-S-0182	A-anchor
+CM-TRU-016	shopify	deletion of personal information after termination (EU merchants)	Within 90 days of termination all personal information within your Store is deleted except as legally required.	SH-C-183/decides/SH-S-0209	A-anchor
+CM-TRU-018	shopify	PCI DSS certification	Yes. Shopify is certified Level 1 PCI DSS compliant, and stores powered by Shopify are PCI compliant by default, which helps keep payment information secure.	SH-C-184/decides/SH-S-7202	A-anchor
+CM-ONB-003	woocommerce	period of updates and support for Paid Services	updates and support (as described in our Support Policy) for those Paid Services for a period of one year, starting on the date of your purchase	WC-C-062/decides/WC-S-0646	A-woocommerce
+CM-ACC-009	woocommerce	cache lifetime of coming-soon pages	By default, Coming-soon pages are set with `Cache-Control: max-age=60` header.	WC-C-082/reason/WC-S-5424	A-woocommerce
+CM-TRU-004	woocommerce	checkout rate limit	The limit will be a maximum of 3 requests per 60 seconds.	WC-C-031/decides/WC-S-5360	A-woocommerce
+CM-TRU-018	woocommerce	PCI DSS certification (WooPayments)	Yes, WooPayments is PCI DSS compliant as a Level 1 service provider.	WC-C-018/responsible/WC-S-0550	A-woocommerce
+CM-STF-001	zid	team members per plan	plans:{starter:"1",launch:"1",growth:"5",pro:"20"}	ZD-C-094/decides/ZD-S-0939	A-zid
+CM-STF-001	zid	additional people with store management access, plan Rise	Store management authority for one extra person	ZD-I-0375	A-zid
+CM-STF-001	zid	additional people with store management access, plan Growth	Store management access for 5 additional people	ZD-I-0387	A-zid
+CM-STF-001	zid	additional people with store management access, plan Professional	Store management access for 20 additional people	ZD-I-0400	A-zid
+CM-PLN-001	zid	limits of the Starter plan	Unlimited number of products, orders, and customers	ZD-I-0369	A-zid
+CM-PLN-004	zid	notice before plan or price changes	سنقوم بإشعارك بأي تغييرات في الأسعار أو تغييرات في خطط الاشتراك أو الخدمات قبل تطبيقها بـ(7) سبعة أيام على الأقل	ZD-C-020/decides/ZD-S-0674	A-zid
+CM-PLN-006	zid	largest withdrawal from the wallet per operation	بشرط ألا يتجاوز المبلغ عشرين ألف (20,000) ريال للعملية الواحدة	ZD-C-017/decides/ZD-S-0651	A-zid
+CM-PLN-006	zid	largest top-up of the wallet by card or Apple Pay	يكون الحد الأقصى للتحويل هو خمسة آلاف (5,000) ريال	ZD-C-017/decides/ZD-S-0652	A-zid
+CM-TRU-001	zid	inactivity sign-out at the security level High	عالي : تسجيل خروج اي عضو من دون نشاط بعد نص ساعة مع امكانية تسجيل الدخول من متصفح واحد فقط	ZD-C-095/decides/ZD-S-0945	A-zid
+CM-TRU-002	zid	Nafath verification attempts per day	عدد محاولات التحقق المتاحة خلال اليوم الواحد هي 3 محاولات.	ZD-C-038/decides/ZD-S-0776	A-zid
+CM-PLN-001	bigcommerce	GMV cap per plan (Core, Growth, Scale, Performance)	Up to $30K TTM Up to $100K TTM $33,333/mo* Custom	BC-C-030/decides/BC-S-0185	A-bigcommerce
+CM-PLN-001	bigcommerce	GMV at which Scale upgrades to Performance	Once TTM GMV reaches $2 million, the account will automatically upgrade to Performance.	BC-C-030/decides/BC-S-0187	A-bigcommerce
+CM-PLN-004	bigcommerce	interest on late fees, EU and UK	If Service fees are not paid on the Billing Date, interest will accrue on such outstanding fees at the rate of 8% above the European Central Bank’s base rate per annum.	BC-C-030/decides/BC-S-0189	A-bigcommerce
+CM-TRU-018	bigcommerce	PCI DSS validation	BigCommerce is a PCI DSS compliant service provider and validates annually all requirements (1-12) including as a shared hosting provider.	BC-C-028/responsible/BC-S-0169	A-bigcommerce
+CM-TRU-018	bigcommerce	Tier 1 certifications	an ever-growing list of Tier 1 certifications including ISO, SOC, PCI, FIPS, RH-ISAC, GDPR, and CCPA	BC-C-078/where/BC-S-0421	A-bigcommerce
+CM-TRU-014	bigcommerce	data location, Google (infrastructure hosting)	USA, Germany, or Australia	BC-C-082/where/BC-S-0446	A-bigcommerce
+CM-TRU-014	bigcommerce	data location, Amazon (data hosting)	Hosting customer / product catalog data, feed data, logs, etc. USA	BC-C-082/where/BC-S-0447	A-bigcommerce
+CM-TRU-014	bigcommerce	data location, Cloudflare (DDoS mitigation and CDN)	USA, with globally decentralized CDN	BC-C-082/where/BC-S-0448	A-bigcommerce
+CM-PLN-003	bigcommerce	Surcharge rate	2% (Core), 1% (Growth), 0.6% (Scale), 0% (Performance)	BC-E-5c661e15	A-bigcommerce
+CM-PLN-003	bigcommerce	additional transaction fees to use leading payment gateways	No (Core, Growth, Scale, Performance)	BC-E-b0fc5c37	A-bigcommerce
+CM-PLN-001	bigcommerce	Online sales per year	Up to $30k (Core), Up to $100k (Growth), Up to $2000k (Scale), Custom (Performance)	BC-E-aaa76a60	A-bigcommerce
+CM-PLN-001	bigcommerce	Core	$39 monthly or $29/mo billed annually	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Growth	$105 or $79	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Scale	$399 or $299	BC-E-f167af9a	A-bigcommerce
+CM-PLN-001	bigcommerce	Performance	by quote	BC-E-f167af9a	A-bigcommerce
+CM-CAT-001	shopify	products a store may sell	Sell unlimited products: Included, Included, Included, Included	SH-C-020/decides/SH-S-7004	B-anchor
+CM-CAT-001	salla	number of products	عدد لا محدود من المنتجات	SA-C-020/decides/SA-S-1949	B-anchor
+CM-CAT-002	shopify	variants per product	create up to 100 variants for each of your products	SH-C-020/decides/SH-S-7214	B-anchor
+CM-CAT-002	shopify	maxProductVariants	not in the concern map	SH-I-2520	B-anchor
+CM-CAT-002	shopify	maxProductOptions	not in the concern map	SH-I-2519	B-anchor
+CM-CAT-006	shopify	tagsPerProductLimitEnabled	not in the concern map	SH-I-2598	B-anchor
+CM-CAT-007	salla	maximum-uploaded-images	"name": "maximum-uploaded-images", "value": 40	SA-C-020/decides/SA-S-3521	B-anchor
+CM-SEL-006	salla	bundle-section-products-limit	"name": "bundle-section-products-limit", "value": 5	SA-C-020/decides/SA-S-3522	B-anchor
+CM-INV-005	shopify	Inventory locations	Inventory locations: 10, 10, 10, 200	SH-C-024/decides/SH-S-7010	B-anchor
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 2	SH-C-024/decides/SH-S-5762	B-anchor
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 10	SH-C-024/decides/SH-S-5763	B-anchor
+CM-INV-005	shopify	maximumLocations	"key": "maximumLocations", "value": 200	SH-C-024/decides/SH-S-5764	B-anchor
+CM-INV-005	salla	store-branch limit	"name": "store-branch", "limit": 5	SA-C-026/decides/SA-S-3338	B-anchor
+CM-INV-005	salla	more branches	زيادة عدد الفروع *برسوم إضافية	SA-C-026/decides/SA-S-2028	B-anchor
+CM-INV-005	salla	max_inventory_types	"max_inventory_types": 5	SA-C-025/decides/SA-S-3504	B-anchor
+CM-INV-008	woocommerce	minutes stock is held for an unpaid order, by default	'default' => '60',	WC-C-068/decides/WC-S-5402	B-woocommerce
+CM-INV-005	zid	branches or warehouses on the Growth plan	Inventory management across 2 branches or warehouses	ZD-C-085/decides/ZD-S-0372	B-zid
+CM-INV-005	zid	warehouses on the Professional plan	الباقة الاحترافية متاح بها إضافة و تفعيل 5 مخازن وفي حال تم تفعيل زد كاشير يتاح لك زيادة مخزن واحد لكل جهاز.	ZD-C-085/decides/ZD-S-1021	B-zid
+CM-INV-005	zid	warehouses on the large-business plan	باقة الأعمال الكبيرة عدد المخازن لا محدود.	ZD-C-085/decides/ZD-S-1022	B-zid
+CM-INV-008	zid	how long the product is held while card payment is entered	سوف يتم حجز المنتج بشكل تلقائي لمدة 30 دقيقة	ZD-C-100/decides/ZD-S-0965	B-zid
+CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801	B-zid
+CM-INV-005	bigcommerce	inventory locations on the Core, Growth, Scale and Performance plans	Up to 4 Up to 5 Up to 8 Custom	BC-C-005/decides/BC-S-0038	B-bigcommerce
+CM-INV-005	bigcommerce	inventory locations on the Enterprise plan	Enterprise plan: 100; can be customized by request	BC-C-005/decides/BC-S-0039	B-bigcommerce
+CM-INV-005	bigcommerce	Inventory locations	Up to 4 (Core), Up to 5 (Growth), Up to 8 (Scale), Up to 50 (Performance)	BC-E-b6118ce7	B-bigcommerce
+CM-CHK-002	shopify	Add-to-cart limit, default recommended limit	If you've made less than 250 sales, then the default recommended limit for your store is set to 50.	SH-C-046/decides/SH-S-7484	C-anchor
+CM-ORD-001	shopify	App access to orders, default window	By default, your app has access to orders placed in the last 60 days.	SH-C-054/boundary/SH-S-5932	C-anchor
+CM-ORD-001	salla	Number of orders, plan سلة بلس	عدد لا محدود من الطلبات	SA-C-040/decides/SA-S-1950	C-anchor
+CM-PAY-002	shopify	Minimum age to set up a Shopify Payments account	You must be at least 18 years old to set up a Shopify Payments account.	SH-C-063/decides/SH-S-0326	C-anchor
+CM-PAY-005	shopify	Minimum payout amount	In certain countries, there's a minimum payout amount for Shopify Payments.	SH-C-069/decides/SH-S-0339	C-anchor
+CM-PAY-005	shopify	Payout pause on a new payout bank account	your payouts are temporarily paused for 3-5 business days.	SH-C-069/decides/SH-S-0345	C-anchor
+CM-PAY-005	salla	Minimum amount for a transfer	يجب أن يصل إجمالي المبلغ المستحق للتحويل إلى 100 ريال سعودي على الأقل حتى يتم تحويله إلى حسابك البنكي.	SA-C-111/decides/SA-S-0077	C-anchor
+CM-PAY-005	salla	Transfer day and threshold, UAE	لمتاجر الإمارات، تُحوّل المستحقات المؤهلة كل يوم خميس عندما يتجاوز رصيد المدفوعات الإلكترونية 250 درهمًا إماراتيًا.	SA-C-111/decides/SA-S-0080	C-anchor
+CM-PAY-005	salla	Transfer timing and minimum, Kuwait	لمتاجر الكويت، تُحوّل المستحقات في يوم العمل التالي بحد أدنى للتحويل دينار كويتي واحد	SA-C-111/decides/SA-S-0086	C-anchor
+CM-PAY-005	salla	Deposit frequency, plan Plus	باقة بلس: يتم الإيداع مرة واحدة أسبوعياً	SA-C-111/decides/SA-S-0071	C-anchor
+CM-PAY-005	salla	Deposit frequency, plan Pro	باقة برو: يتم الإيداع كل 48 ساعة	SA-C-111/decides/SA-S-0072	C-anchor
+CM-PAY-005	salla	Deposit frequency, plan Special	باقة سلة سبيشل: يتم الإيداع يومياً.	SA-C-111/decides/SA-S-0073	C-anchor
+CM-PAY-007	shopify	Online standard card rates, per plan (Basic, Grow, Advanced, Plus)	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30¢	SH-C-071/decides/SH-S-7021	C-anchor
+CM-PAY-007	shopify	Online international rates, per plan	+ 1%	SH-C-071/decides/SH-S-7023	C-anchor
+CM-PAY-007	shopify	Premium with a third-party provider alongside	charged at standard Shopify Payments rates plus a 1.25% premium	SH-C-071/decides/SH-S-0378	C-anchor
+CM-PAY-013	shopify	PayPal Wallet rates	Starting at 3.49% + 49¢ (each plan)	SH-C-077/decides/SH-S-7024	C-anchor
+CM-PAY-015	shopify	Shop Pay Installments APR	Rates from 0-36% APR.	SH-C-075/responsible/SH-S-7219	C-anchor
+CM-PAY-017	shopify	MB WAY rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-080/decides/SH-S-7025	C-anchor
+CM-PAY-017	shopify	Bizum rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-080/decides/SH-S-7026	C-anchor
+CM-PAY-018	shopify	USDC rates	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-081/decides/SH-S-7028	C-anchor
+CM-PAY-019	shopify	Payment customization functions per store, maximum	You can activate a maximum of 25 payment customization functions on each store.	SH-C-083/decides/SH-S-0590	C-anchor
+CM-PAY-020	shopify	Credit card authorization period	provides an authorization period of 7 days.	SH-C-084/decides/SH-S-0391	C-anchor
+CM-PAY-020	shopify	Extended authorization periods	Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.	SH-C-084/decides/SH-S-0393	C-anchor
+CM-PAY-021	shopify	In-person card rates	2.6% + 10¢; 2.5% + 10¢; 2.4% + 10¢; 2.3% + 10¢ (Basic, Grow, Advanced, Plus)	SH-C-086/decides/SH-S-7027	C-anchor
+CM-PAY-021	shopify	In-person manual rates	3.5% + 10¢ (per plan, as the row gives it)	SH-C-086/decides/SH-S-7029	C-anchor
+CM-PAY-021	shopify	Offline Interac payments in Canada	Canadian businesses can't accept Interac card payments when offline.	SH-C-086/decides/SH-S-0588	C-anchor
+CM-PAY-023	shopify	Shopify Balance earnings rate	2.52% earnings rate (Basic, Grow, Advanced); 3.54% earnings rate (Plus)	SH-C-088/decides/SH-S-7062	C-anchor
+CM-PAY-023	shopify	Shopify Balance eligibility by residence	Shopify Balance is a commercial card available only to merchants with a physical residential address in the United States or Puerto Rico.	SH-C-088/decides/SH-S-0460	C-anchor
+CM-PAY-025	shopify	Shopify Credit cashback	Up to 3% cashback (every plan)	SH-C-090/decides/SH-S-7064	C-anchor
+CM-PAY-025	shopify	Shopify Credit repayment term	Shopify Credit offers the option to either pay your full statement balance automatically each month or to repay over 10 calendar months through automatic debits from your daily sales, for a fee.	SH-C-090/boundary/SH-S-0468	C-anchor
+CM-PAY-026	shopify	Shopify Capital US loan repayment term	The maximum repayment term is 18 months, and 2 minimum payments apply.	SH-C-091/responsible/SH-S-7218	C-anchor
+CM-PAY-026	salla	Share of net sales collected	يُحسب مبلغ التحصيل بنسبة %25 من صافي المبيعات لكل دفعة، ويُحوّل المتبقي إلى حسابك البنكي.	SA-C-128/where/SA-S-0111	C-anchor
+CM-PAY-026	shopify	Shopify Commerce Germany GmbH's registration	Applications for merchant financing are made available to you by Shopify Commerce Germany GmbH, which is a registered Credit Broker in Germany.	SH-C-096/responsible/SH-S-0493	C-anchor
+CM-PAY-027	shopify	Shopify Bill Pay availability	Shopify Bill Pay is available only to merchants in the United States.	SH-C-098/decides/SH-S-0498	C-anchor
+CM-PAY-005	salla	Payout bank account, UAE	4-الحساب لدى بنك إماراتي و بعملة الدرهم الإماراتي.	SA-C-112/decides/SA-S-0135	C-anchor
+CM-PAY-005	salla	Payout bank account, Kuwait	- الحساب لدى بنك كويتي وبعملة الدينار الكويتي.	SA-C-112/decides/SA-S-0139	C-anchor
+CM-PAY-005	salla	Payout bank account type, Kuwait	يقبل الحساب البنكي التجاري فقط - اما الحسابات البنكية الشخصية فهي غير مقبولة .	SA-C-112/decides/SA-S-0140	C-anchor
+CM-PAY-005	salla	Transfer day, digital stores	للمتاجر الرقمية: تُصدر الفواتير يوم الأربعاء، وتُحوَّل المدفوعات يوم الأحد.	SA-C-111/decides/SA-S-0103	C-anchor
+CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعات كل 24 ساعة	SA-C-111/decides/SA-S-0202	C-anchor
+CM-PAY-029	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123	C-anchor
+CM-PAY-029	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125	C-anchor
+CM-PAY-005	salla	Currency in which Salla Payments receives payments	عند تفعيل التاجر لبوابة دفع سلة، يتم استقبال جميع المدفوعات بالريال السعودي.	SA-C-164/decides/SA-S-0067	C-anchor
+CM-TAX-002	shopify	uptime	Shopify makes no guarantees to you in relation to the availability or uptime of Shopify Tax	SH-C-100/responsible/SH-S-0598	C-anchor
+CM-TAX-002	shopify	destinations calculated	Calculations using Shopify Tax are available only for certain transactions, where the order's destination is a location in the United States, European Union, United Kingdom, or Canada.	SH-C-100/decides/SH-S-0514	C-anchor
+CM-TAX-006	shopify	end of service	Automated filing with Shopify Tax is ending. Automated filing files your returns for sales made through December 31, 2026.	SH-C-104/decides/SH-S-0525	C-anchor
+CM-TAX-006	shopify	enrollment	Automated filing is closed to new enrollment. Only stores that are already enrolled can use it.	SH-C-104/decides/SH-S-0521	C-anchor
+CM-TAX-003	salla	registration threshold	إذا كان دخلك أكبر أو يساوي 375 ألف ريال في السنة فأنت ملزم بالتسجيل، أما إذا كان أقل من ذلك فالتسجيل اختياري.	SA-C-160/responsible/SA-S-5073	C-anchor
+CM-SHP-002	shopify	shipping label discounts	Up to 87% off	SH-C-116/decides/SH-S-7045	C-anchor
+CM-SHP-002	salla	label starting price	وتبدأ من 23 ريال داخل المملكة	SA-C-140/responsible/SA-S-5059	C-anchor
+CM-SHP-003	shopify	insurance coverage bought	shipping insurance for up to $5,000 USD of insurance coverage	SH-C-117/decides/SH-S-0720	C-anchor
+CM-SHP-003	shopify	insurance included	up to $200 USD of shipping insurance on each eligible shipment at no extra cost	SH-C-117/decides/SH-S-0722	C-anchor
+CM-SHP-021	salla	escalation of a packaging request, waiting time	في حال لم تتجاوب الشركة مع الطلب لمدة خمس أيام، أو قبلت الطلب ولكن تسليم مواد التغليف تأخر لأكثر من خمس أيام يمكنك تصعيد التأخير إلى شركة سلة	SA-C-149/boundary/SA-S-5068	C-anchor
+CM-SHP-022	salla	automatic escalation of a complaint, waiting time	يتم تصعيد الشكوى تلقائياً إلى سلة بعد مرور 5 أيام بدون رد من شركة الشحن.	SA-C-150/boundary/SA-S-5071	C-anchor
+CM-PAY-002	woocommerce	WooPayments account type in the UAE	Therefore, only the Business account type is available for the UAE.	WC-C-010/reason/WC-S-0514	C-woocommerce
+CM-PAY-002	woocommerce	WooPayments for U.S. businesses: location	A business must be located in the 50 states, Washington D.C., or Puerto Rico to sign up with WooPayments as a U.S. business.	WC-C-010/decides/WC-S-5291	C-woocommerce
+CM-PAY-005	woocommerce	Payouts in a single-currency country	If your country only has a single currency listed, that means you can only accept payouts in that currency, and those payouts can only be sent to banks in your country.	WC-C-007/decides/WC-S-0536	C-woocommerce
+CM-PAY-005	woocommerce	Payouts to debit cards outside the U.S.	what they will not do is send payouts to such cards.	WC-C-007/decides/WC-S-0532	C-woocommerce
+CM-PAY-021	woocommerce	In-Person Payments: countries	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States	WC-C-014/decides/WC-S-0869	C-woocommerce
+CM-PAY-021	woocommerce	In-Person Payments: currency	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.	WC-C-014/decides/WC-S-0870	C-woocommerce
+CM-PAY-014	woocommerce	WooPay: merchants' country	WooPay is currently available for U.S. merchants only.	WC-C-015/decides/WC-S-5338	C-woocommerce
+CM-PAY-026	woocommerce	Stripe Capital: start of repayment withholding	Rather, the withholding starts after seven days in order to ensure the loan payout is completed before payments begin.	WC-C-016/reason/WC-S-5302	C-woocommerce
+CM-TAX-002	woocommerce	supported store countries	Automated tax calculations are available to stores based in the United States, Canada, Australia, the United Kingdom, and these European Union countries:	WC-C-055/decides/WC-S-0635	C-woocommerce
+CM-TAX-002	woocommerce	accuracy	we can’t guarantee that tax calculations you receive through or in connection with our Services are complete and accurate.	WC-C-055/responsible/WC-S-0474	C-woocommerce
+CM-TAX-009	woocommerce	issuing threshold	WooPayments is required to issue a Form 1099-K to U.S. persons if their total payments exceeds a specific minimum threshold.	WC-C-021/decides/WC-S-0547	C-woocommerce
+CM-SHP-002	woocommerce	WooCommerce Shipping by store country and currency	WooCommerce Shipping is currently available to stores based in the United States, including U.S. territories, that use U.S. dollars.	WC-C-060/decides/WC-S-0905	C-woocommerce
+CM-PAY-005	zid	minimum amount collected (Saudi Arabia)	تُحصّل المبالغ عند اجتياز المبالغ المحصلة للحد الأدنى وهو: ١٠٠ ريال.	ZD-C-003/decides/ZD-S-0547	C-zid
+CM-PAY-005	zid	minimum amount transferred (Kuwait)	تحوّل المبالغ عند اجتياز المبالغ المحصلة ١ دينار كويتي.	ZD-C-003/decides/ZD-S-0551	C-zid
+CM-PAY-005	zid	deposit fee	يتم فرض رسوم رمزية بقيمة ٣ ريال مع إجمالي كل عملية إيداع، باستثناء التجار من عملاء بنك الرياض يعفون من رسوم الإيداع.	ZD-C-003/decides/ZD-S-0548	C-zid
+CM-PAY-007	zid	transaction fees per plan	Transaction Fees: 1% + 1 SAR 2.3% + 1 SAR Based on the card used 3.3% + 1 SAR All fees exclude VAT	ZD-C-006/decides/ZD-S-0575	C-zid
+CM-PAY-007	zid	cap on the mada rate	تحديد سقف أعلى بقيمة ٢٠٠ ريال لنسبة شبكة الدفع مدى (غير شامل لضريبة القيمة المضافه).	ZD-C-006/decides/ZD-S-0574	C-zid
+CM-PAY-020	zid	refund window	لا يمكن استرداد المبلغ للعميل بعد مرور 30 يوم من تاريخ الشراء	ZD-C-002/decides/ZD-S-0539	C-zid
+CM-PAY-029	zid	COD limit	COD Limit: Up to $1000 (3750 SAR).	ZD-C-015/decides/ZD-S-0639	C-zid
+CM-PAY-019	zid	payment options in a restriction	متاح لك إضافة 3 خيارات دفع ضمن خيارات الدفع.	ZD-C-063/decides/ZD-S-0859	C-zid
+CM-PAY-015	zid	MIS pay order limits	تقدم لك أم آي إس باي خدمة الدفع بالأقساط وتقسيم قيمة مدفوعات العملاء على 3 دفعات شهرية بدون رسوم تأخير و بحد أدنى للطلب 200 ريال و حد أعلى 2000 ريال.	ZD-C-013/decides/ZD-S-0624	C-zid
+CM-PAY-005	zid	Mazeed dues: transfer day, age and minimum	تحول شركة زد المبالغ المستحقة في يوم (30) من كل شهر ميلادي إلى حساب التاجر البنكي بشرط أن يكون قد مر على العمليات الشرائية 7 أيام كحد أدنى من تاريخ الشراء، والا تقل المبالغ المحولة عن 500 ريال كحد أدنى.	ZD-C-024/decides/ZD-S-0704	C-zid
+CM-RET-003	zid	boxes returnable from an order	ويمكن استرجاع حتى 7 صناديق من إجمالي الطلب.	ZD-C-081/decides/ZD-S-1013	C-zid
+CM-RET-002	zid	refund window	لا يمكن استرداد المبلغ للعميل بعد مرور 30 يوم من تاريخ الشراء	ZD-C-002/decides/ZD-S-0539	C-zid
+CM-CHK-007	bigcommerce	When a cart counts as abandoned	A cart is considered abandoned when no changes have been made for at least one hour after the last modified property.	BC-C-015/boundary/BC-S-0091	C-bigcommerce
+CM-PAY-007	bigcommerce	BigCommerce Payments card processing rate, per plan (Core, Growth, Scale & Performance)	Core Card processing rate: 2.89% + $0.30 Growth Card processing rate: 2.59% + $0.30 Scale & Performance Card processing rate: 2.39% + $0.30	BC-C-025/decides/BC-S-0145	C-bigcommerce
+CM-PAY-002	bigcommerce	Who can use BigCommerce Payments	Initially, BigCommerce Payments is available only to US-based merchants with self-serve and retail plans.	BC-C-025/decides/BC-S-0143	C-bigcommerce
+CM-PAY-011	bigcommerce	Pre-integrated payment solutions, their countries and currencies	Choose from more than 65 pre-integrated online payment solutions, serving 150+ countries and over 140 currencies.	BC-C-026/where/BC-S-0150	C-bigcommerce
+CM-TAX-004	bigcommerce	Tax estimate request timeout	The default timeout threshold of four seconds is intended to support a wide variety of use cases (e.g., large tax estimate requests).	BC-C-073/boundary/BC-S-0394	C-bigcommerce
+CM-TAX-004	bigcommerce	document_submission supported	false	BC-E-eeff4eae	C-bigcommerce
+CM-B2B-003	shopify	B2B catalogs per plan	Shopify B2B: Up to 3 catalogs; Up to 3 catalogs; Up to 3 catalogs; Unlimited catalogs	SH-C-044/decides/SH-S-7008	D-anchor
+CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 3	SH-C-037/decides/SH-S-5532	D-anchor
+CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 75000	SH-C-037/decides/SH-S-5535	D-anchor
+CM-MKT-007	woocommerce	MailPoet's free subscriber limit without an account or plan	When you install the MailPoet plugin, you can use it for free up to 500 subscribers without creating an account with us or subscribing to any plans.	WC-C-113/decides/WC-S-5499	D-woocommerce
+CM-MKT-007	woocommerce	where MailPoet's sending service keeps its data	If you have created an account with MailPoet to send emails or to purchase a plan, we collect the following data on our servers in the United States of America:	WC-C-113/where/WC-S-5498	D-woocommerce
+CM-MKT-002	zid	Number of Discount Codes / عدد أكواد الخصم	not in the concern map	ZD-I-0293	D-zid
+CM-NTF-002	zid	Team Notifications / إشعارات الفريق	plans:{starter:"1",launch:"1",growth:"3",pro:!0}	ZD-C-097/decides/ZD-S-0954	D-zid
+CM-NTF-001	zid	Order Status Notifications (Limited) / إشعارات حالة الطلب (حدود محددة)	not in the concern map	ZD-I-0287	D-zid
+CM-MKT-001	bigcommerce	Recommended active promotions and rules per promotion	BigCommerce recommends having less than 100 active promotions on storefronts, and there should be at most ten rules per promotion.	BC-C-009/decides/BC-S-0059	D-bigcommerce
+CM-MKT-010	bigcommerce	Feedonomics Surface basic plan	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	D-bigcommerce
+CM-SFR-010	shopify	Web hosting per plan	Unlimited web hosting: Included; Included; Included; Included	SH-C-036/decides/SH-S-7032	E-anchor
+CM-SFR-011	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056	E-anchor
+CM-SFR-003	salla	Minimum price of a theme	لديك الحرية في تحديد سعر الثيم. ولكن هناك حد أدنى بمبلغ (150 ر.س) لتسعير الثيمات.	SA-C-208/decides/SA-S-5107	E-anchor
+CM-SFR-003	salla	Developers' dues paid after a warranty period	تُصرف مستحقات المطورين بعد انقضاء فترة الضمان (عادة 15 يومًا من تاريخ الشراء).	SA-C-208/decides/SA-S-0041	E-anchor
+CM-CHN-003	shopify	synced marketplace orders free per month	50 synced marketplace orders per month: Free	SH-C-137/decides/SH-S-7050	E-anchor
+CM-CHN-003	shopify	price above 50 synced marketplace orders	Over 50 synced marketplace orders: 1% up to $99/mo	SH-C-137/decides/SH-S-7051	E-anchor
+CM-POS-001	shopify	POS Pro per plan	POS Pro: Advanced tools for brick‑and‑mortar retailers: $89/mo per location; $89/mo per location; $89/mo per location; Includes 20 locations. Up to 200 with Shopify Payments.	SH-C-142/decides/SH-S-7018	E-anchor
+CM-POS-004	shopify	UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-144/decides/SH-S-7485	E-anchor
+CM-POS-002	salla	Payment terminal per device	رقم جهاز الدفع مخصص لجهاز واحد فقط وفق متطلبات أنظمة الدفع وNearPay	SA-C-095/reason/SA-S-5042	E-anchor
+CM-MKS-008	salla	Languages available in the store	إتاحة 40 لغة في المتجر	SA-C-008/decides/SA-S-2074	E-anchor
+CM-MKS-008	shopify	Languages a store can add	Add language (136 languages)	SH-I-2098	E-anchor
+CM-MKS-006	salla	Currencies for payment	إتاحة الدفع عبر +33 عملة	SA-C-163/decides/SA-S-1970	E-anchor
+CM-MKS-006	salla	Currencies the payments integration supports	وتدعم أكثر من 15 عملة ومدفوعات من أكثر من 79 دولة	SA-C-163/decides/SA-S-0012	E-anchor
+CM-SFR-012	woocommerce	what the Store API gives access to	In contrast to the WooCommerce REST API, the Store API is unauthenticated and does not provide access to sensitive store data or other customer information.	WC-C-079/decides/WC-S-0915	E-woocommerce
+CM-POS-001	woocommerce	store address requirement	Your store address must be in one of the supported countries.	WC-C-089/decides/WC-S-0893	E-woocommerce
+CM-POS-001	woocommerce	store currency requirement	You must be using that country’s native currency as the store currency.	WC-C-089/decides/WC-S-0894	E-woocommerce
+CM-POS-002	woocommerce	countries available	In-Person Payments is available to qualified merchants based in Australia, Canada, Finland, Ireland, Luxembourg, the Netherlands, New Zealand, Singapore, the United Kingdom, and the United States	WC-C-014/decides/WC-S-0869	E-woocommerce
+CM-POS-002	woocommerce	currency collected	Card readers and Tap to Pay on iPhone/Android can only collect payments in the default currency for each country.	WC-C-014/decides/WC-S-0870	E-woocommerce
+CM-MKS-005	woocommerce	base currencies per store	WooCommerce only allows for one base currency per store.	WC-C-052/decides/WC-S-0874	E-woocommerce
+CM-SFR-002	zid	SDK template designs	Store - SDK Template Design (Up to 2)	ZD-C-113/decides/ZD-S-1001	E-zid
+CM-SFR-003	zid	Themes in the themes store, plan Rise	Access to themes store (Over 50 professional themes)	ZD-C-076/decides/ZD-S-0363	E-zid
+CM-SFR-003	zid	Partner's share of a theme sale	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	E-zid
+CM-CHN-003	zid	Zid's share of Amazon sales by plan	نسبة زد من أمازون حسب الباقة : النمو: 5% الانطلاقة : 8% الاحترافية:0.95%	ZD-C-110/decides/ZD-S-1060	E-zid
+CM-CHN-003	zid	Wallet balance for the connection's fees	يتم فرض الرسوم باستخدام المحفظة. نسمح بحد أقصى 500 ريال سعودي كرصيد. بعد ذلك، سيتوقف التطبيق عن العمل حتى تقوم بإعادة شحن محفظتك.	ZD-C-110/decides/ZD-S-1061	E-zid
+CM-CHN-003	zid	Jahez joining conditions	1- سجل تجاري او وثيقة عمل حر. 2-تفعيل مزيد. 3-المنتجات سريعة التحضير او الجاهزة التي لا يتعدى تحضيرها 10 دقائق. 4-موقع المتجر او المخزون في احد مدن المملكة.	ZD-C-110/decides/ZD-S-1064	E-zid
+CM-CHN-006	zid	Subscription term	مدة الاشتراك في التطبيق سنة واحدة، وعند انتهاء فترة التجديد ينتهي الاشتراك.	ZD-C-116/decides/ZD-S-1083	E-zid
+CM-POS-001	zid	Zid POS on plan Professional	Completely free Zid POS - two cashiers	ZD-C-108/decides/ZD-S-0382	E-zid
+CM-POS-001	zid	E-invoicing approval	نعم ، كفوترة إلكترونية مع العلم أن زد حاصلة على جوائز واعتماد من الهيئة	ZD-C-108/boundary/ZD-S-0983	E-zid
+CM-MKS-001	zid	Markets by plan	خاصية الأسواق تتيح لك عدد من الأسواق حسب باقتك: باقة الانطلاقة سوق واحد افتراضي باقة النمو سوقين افتراضي وجديد الباقة الاحترافية خمس أسواق	ZD-C-034/decides/ZD-S-0749	E-zid
+CM-MKS-004	zid	Geo-Based Currency Settings by plan	plans:{starter:"1",launch:"1",growth:!0,pro:!0}	ZD-C-050/decides/ZD-S-0807	E-zid
+CM-MKS-006	zid	Payment currency with Zid Payments	في مرحلة الدفع النهائي سيتم الدفع بالعملة الأساسية للمتجر (الريال السعودي\ الدينار الكويتي) لجميع الشبكات ما عدا “كي نت” سيتم الدفع بالدينار الكويتي	ZD-C-050/decides/ZD-S-0808	E-zid
+CM-SFR-003	bigcommerce	Design theme licence, stores per licence	This license only allows you to use each licensed Design theme for a single Store/website per license purchased.	BC-C-042/decides/BC-S-0239	E-bigcommerce
+CM-SFR-013	bigcommerce	Facets and rating or in-stock filters in SearchProducts, by plan	Note that you can query facets, filter by rating, or filter by "in-stock" only if the merchant is on a Pro or Enterprise plan.	BC-C-011/decides/BC-S-0069	E-bigcommerce
+CM-CHN-007	bigcommerce	Multi-storefront, added storefronts per plan	Add storefront $30/mo (max. 3) Add storefront $50/mo (max. 5) Add storefront $100/mo (max. 8) Contact Sales	BC-C-039/decides/BC-S-0228	E-bigcommerce
+CM-CHN-004	bigcommerce	Feedonomics Surface, free SKUs	The basic plan is free for up to 100,000 SKUs.	BC-C-067/decides/BC-S-0365	E-bigcommerce
+CM-MKS-008	bigcommerce	Locales per storefront	Each storefront can have up to 5 locales.	BC-C-048/decides/BC-S-0273	E-bigcommerce
+CM-MKS-006	bigcommerce	Currencies accepted	Accept payments in over 100+ currencies	BC-C-074/decides/BC-S-0400	E-bigcommerce
+CM-CHN-007	bigcommerce	Storefronts that can be added	4 (Core), 5 (Growth), 8 (Scale), 15 (Performance)	BC-E-ca497769	E-bigcommerce
+CM-CHN-007	bigcommerce	Cost of each additional storefront	$30 (Core), $50 (Growth), $100 (Scale), $100 (Performance)	BC-E-d13e7e94	E-bigcommerce
+CM-CHN-007	shopify	Headless storefronts per plan	Build headless storefronts: 1; 1; 1; 25	SH-C-139/decides/SH-S-7056	E-backfill-bigcommerce
+CM-APP-002	shopify	Plus Certified apps, by plan	Plus Certified apps: Not included, Not included, Not included, Included	SH-C-157/decides/SH-S-7078	F-anchor
+CM-APP-005	salla	response time of a synchronous action	**Synchronous Actions** — Execute immediately, **block the user**, must respond in milliseconds (e.g., `shipment.creating`)	SA-C-196/decides/SA-S-0189	F-anchor
+CM-APP-008	shopify	compiled UI extension bundle size	Your compiled UI extension bundle can't exceed 64 KB, or 128 KB for full-page customer account extensions.	SH-C-164/decides/SH-S-7487	F-anchor
+CM-APP-009	shopify	custom apps' data access, by plan	Build custom apps using Shopify APIs: Limited data access, Full data access, Full data access, Full data access	SH-C-167/decides/SH-S-7054	F-anchor
+CM-API-005	shopify	API rate limits, by plan	API rate limits: Standard, Standard, Up to 2x on select APIs, Up to 10x on select APIs	SH-C-171/decides/SH-S-7055	F-anchor
+CM-API-005	shopify	higher API call limits, by plan	Up to 500% higher API call limits: Not included, Not included, Not included, Included	SH-C-171/decides/SH-S-7075	F-anchor
+CM-API-003	shopify	orders an app reads without read_all_orders	By default, your app has access to orders placed in the last 60 days.	SH-C-158/boundary/SH-S-5932	F-anchor
+CM-API-011	shopify	deletion of merchant data after uninstall	delete all originals, copies and reproductions of the Merchant Data within 30 days when (A) the Merchant uninstalls the Application	SH-C-161/responsible/SH-S-0219	F-anchor
+CM-DVT-004	salla	free demo stores per developer	كل مطور يمكنه إنشاء متاجر تجريبية مجانية بحد أقصى ١٠ متاجر .	SA-C-209/decides/SA-S-5108	F-anchor
+CM-PTN-003	salla	when developers' dues are paid	تُصرف مستحقات المطورين بعد مرور فترة ضمان الجودة والاسترداد (عادة 15 يومًا).	SA-C-195/decides/SA-S-0027	F-anchor
+CM-PTN-003	shopify	how often Shopify pays partners	Shopify distributes Fees owing to its Partners and amounts due to Partner from Merchants where the Partner uses the Shopify Billing Resource twice per calendar month (each such period, a “Payment Period”).	SH-C-169/decides/SH-S-0295	F-anchor
+CM-PTN-008	salla	when referral earnings are transferred	تُحوّل الأرباح المستحقة إلى محفظة التاجر يوم 28 من كل شهر، مهما كان مبلغ الأرباح.	SA-C-173/boundary/SA-S-5077	F-anchor
+CM-AIA-001	shopify	availability of AI features in the admin	Many of these features are available at no additional cost, but availability can vary by plan, device, and language.	SH-C-202/decides/SH-S-7488	F-anchor
+CM-AIA-003	shopify	language of Shopify Magic's blog content	Your Shopify plan includes blogging tools, including Shopify Magic features for generating English content, no apps required.	SH-C-202/decides/SH-S-7207	F-anchor
+CM-APP-003	woocommerce	refund window for Marketplace purchases	For extensions and themes purchased from our Marketplace, we offer a full refund within 30 days of your date of purchase.	WC-C-017/responsible/WC-S-0834	F-woocommerce
+CM-PTN-003	woocommerce	when and how much WooCommerce pays a Marketplace partner	For Products listed on the Woo Marketplace, WooCommerce will pay Partner 70% of the Product Net Revenue that WooCommerce collects in connection with a User’s purchase of the Product from the Woo Marketplace on a monthly basis within thirty (30) days of the end of each calendar month.	WC-C-017/responsible/WC-S-0580	F-woocommerce
+CM-APP-011	woocommerce	period of updates and support for paid Services	you’ll receive access to any necessary downloads along with updates and support (as described in our Support Policy) for those Paid Services for a period of one year, starting on the date of your purchase.	WC-C-050/decides/WC-S-0646	F-woocommerce
+CM-AIA-002	zid	refund window for a Zid Agent wallet top-up	النافذة الزمنية للاسترجاع: تكون المدة المسموحة لطلب استرجاع مبلغ الشحن هي ساعتان (٢) فقط تبدأ من وقت إتمام عملية الشحن.	ZD-C-025/decides/ZD-S-0715	F-zid
+CM-API-008	zid	when a webhook endpoint is broken	| broken | The endpoint has failed 30 or more times in the past hour | Event delivery is suspended until you recover the webhook |	ZD-C-072/decides/ZD-S-0879	F-zid
+CM-API-010	zid	events that support conditions	**Note:** Conditions are currently supported only for the `order.create` and `order.status.update` events.	ZD-C-072/decides/ZD-S-0880	F-zid
+CM-PTN-003	zid	withholding tax on payouts to a non-Saudi bank account	Non-Saudi bank account: in USD, deducting withholding tax (WHT): 15% for apps and 5% for themes.	ZD-C-022/responsible/ZD-S-0689	F-zid
+CM-PTN-003	zid	the partner's share	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	F-zid
+CM-PTN-004	zid	fee per transaction for shipping apps	Shipping Apps: 0.70 SAR per transaction	ZD-C-061/boundary/ZD-S-0854	F-zid
+CM-API-005	bigcommerce	API rate limit, Pro plan	Pro | 60k per hour (450 / 30sec)	BC-C-057/decides/BC-S-0309	F-bigcommerce
+CM-API-005	bigcommerce	API rate limit, Plus and Standard plans	Plus & Standard | 20k per hour (150 / 30sec)	BC-C-057/decides/BC-S-0310	F-bigcommerce
+CM-API-005	bigcommerce	API rate limit, Unlimited Rate Plan	The Unlimited Rate Plan is for some BigCommerce Enterprise clients. It has no request rate limits.	BC-C-057/decides/BC-S-0311	F-bigcommerce
+CM-API-005	bigcommerce	quota refresh window	Apps using OAuth are rate-limited based on a quota that's refreshed every 30 seconds.	BC-C-057/where/BC-S-0308	F-bigcommerce
+CM-API-008	bigcommerce	when a webhook is deactivated	After the final retry attempt (cumulatively 48 hours after the first delivery attempt), the webhook will be deactivated, and an email will be sent to the email address registered for the subscribing app.	BC-C-058/decides/BC-S-0318	F-bigcommerce
+CM-API-008	bigcommerce	when a destination is blocklisted	If at any point in the two minute window the success/failure ratio dips below 90%, the destination URI's domain will be blocklisted for three minutes.	BC-C-058/decides/BC-S-0319	F-bigcommerce
+CM-AIA-005	bigcommerce	data processed under Agentic Search	Only catalog-related data is processed under Agentic Search. No personally identifiable information (PII), checkout data, or customer order information is used unless otherwise agreed in writing.	BC-C-063/boundary/BC-S-0348	F-bigcommerce
+CM-MIG-005	salla	eligibility: the merchant's sales in the last 12 months	يجب أن يكون التاجر قد حقق مبيعات لا تقل عن 20,000 ريال سعودي خلال آخر 12 شهرًا	SA-C-302/decides/SA-S-5120	G-anchor
+CM-OPS-005	woocommerce	days logs are kept, by default	'retention_period_days' => 30,	WC-C-037/decides/WC-S-5373	G-woocommerce
+CM-OPS-001	bigcommerce	uptime	With 100% uptime during Cyber Week since 2016 (and 99.98% since 2009)	BC-C-083/where/BC-S-0455	G-bigcommerce
+CM-OPS-003	bigcommerce	data location: Amazon hosting of customer and catalog data	Hosting customer / product catalog data, feed data, logs, etc. USA	BC-C-082/where/BC-S-0447	G-bigcommerce

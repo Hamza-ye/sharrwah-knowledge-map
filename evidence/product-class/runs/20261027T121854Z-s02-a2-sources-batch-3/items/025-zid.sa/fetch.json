@@ -1,0 +1,18 @@
+{
+ "n": 25,
+ "url": "https://zid.sa/ar/syria/",
+ "dir": "items/025-zid.sa",
+ "fetched_at": "2026-10-27T12:19:06Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/syria/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 46803,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "025cffa4042988439243eecda061d95ed6bad060979789bbf5900f83a6a1327b",
+ "raw_ext": "html"
+}

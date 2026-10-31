@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://zid.sa/ar/pricing/",
+ "dir": "items/005-zid.sa",
+ "fetched_at": "2026-10-27T07:19:37Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/pricing/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 49445,
+ "cited_in": [
+  "S-02 absence audit, Zid part 2: read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "826ecfb154504827f9e9ca78060802ef29eae4007ece41793a4a1b2161cb03a3",
+ "raw_ext": "html"
+}

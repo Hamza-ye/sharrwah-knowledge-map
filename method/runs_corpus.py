@@ -116,7 +116,7 @@ def build(repo, fold):
                 store = (json.loads(small.get(f"raw/runs/{r}/run.json", "{}")).get("extra") or {}).get("store") or ""
             except Exception:
                 pass
-            for line in raw.splitlines():
+            for line in raw.split("\n"):   # not splitlines(): it also breaks on U+2028 inside a JSON string
                 try:
                     o = json.loads(line)
                 except Exception:
@@ -146,7 +146,7 @@ def build(repo, fold):
             steps[(m.group(1), m.group(2))].append(n)
     acts = {}
     for r in runs:
-        for line in (small.get(f"raw/runs/{r}/actions.jsonl") or "").splitlines():
+        for line in (small.get(f"raw/runs/{r}/actions.jsonl") or "").split("\n"):
             try:
                 o = json.loads(line)
                 acts[(r, int(o.get("step")))] = o
@@ -202,7 +202,7 @@ def build(repo, fold):
                 emit(d, json_text(parts[0]))
             elif d[5] == "lines":
                 name = d[4][0]
-                lines = parts[0].decode("utf-8", "replace").splitlines()
+                lines = parts[0].decode("utf-8", "replace").split("\n")   # the file's own line numbers
                 header = lines[0] if name.endswith((".tsv", ".csv")) and lines else ""
                 for i, line in enumerate(lines, start=1):
                     if line.strip() and not (header and i == 1):

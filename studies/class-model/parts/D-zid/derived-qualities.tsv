@@ -1,0 +1,4 @@
+cap_id	platform	quality	value	key	scope
+CM-MKT-002	zid	Number of Discount Codes / عدد أكواد الخصم	not in the concern map	ZD-I-0293	
+CM-NTF-002	zid	Team Notifications / إشعارات الفريق	plans:{starter:"1",launch:"1",growth:"3",pro:!0}	ZD-C-097/decides/ZD-S-0954	compare-plans: starter, launch, growth, pro
+CM-NTF-001	zid	Order Status Notifications (Limited) / إشعارات حالة الطلب (حدود محددة)	not in the concern map	ZD-I-0287	

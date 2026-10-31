@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://zid.sa/en/uae/",
+ "dir": "items/020-zid.sa",
+ "fetched_at": "2026-10-27T12:19:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/uae/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 46897,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "3eeb0ec92b9318220fe01e7e9d5889723732c02573c9f9abd7f3e160865e079d",
+ "raw_ext": "html"
+}

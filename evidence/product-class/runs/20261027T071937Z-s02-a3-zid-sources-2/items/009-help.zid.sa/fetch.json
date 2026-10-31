@@ -1,0 +1,18 @@
+{
+ "n": 9,
+ "url": "https://help.zid.sa/zid-faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%88%d8%a7%d9%84%d8%ae%d8%b5%d8%a7%d8%a6%d8%b5-%d8%a7%d9%84%d9%85%d9%82%d8%af%d9%85%d8%a9-%d9%81%d9%8a-%d8%b2%d8%af%d8%9f/",
+ "dir": "items/009-help.zid.sa",
+ "fetched_at": "2026-10-27T07:19:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/zid-faqs/%d9%85%d8%a7%d9%87%d9%8a-%d8%a7%d9%84%d8%ae%d8%af%d9%85%d8%a7%d8%aa-%d9%88%d8%a7%d9%84%d8%ae%d8%b5%d8%a7%d8%a6%d8%b5-%d8%a7%d9%84%d9%85%d9%82%d8%af%d9%85%d8%a9-%d9%81%d9%8a-%d8%b2%d8%af%d8%9f/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 22982,
+ "cited_in": [
+  "S-02 absence audit, Zid part 2: read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6dfbb3c53dc3fcb194bc512be38e27d8ffdc50c31366bcbc6cc53890ac29d4f7",
+ "raw_ext": "html"
+}

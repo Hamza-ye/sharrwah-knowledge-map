@@ -1,0 +1,243 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+WooCommerce
+Getting started
+Migrating to WooCommerce
+Products
+Expand
+Taxes
+Shipping
+Expand
+Payments
+Orders
+Data and reporting
+Customers
+Marketing
+Site administration
+Expand
+Store design
+Expand
+Mobile App
+Expand
+Get help
+Expand
+Documentation / WooCommerce / Getting started / Which payment option is right for me?
+Which payment option is right for me?
+
+There is a large range of payment gateway options for WooCommerce to provide payment options for your customers. Read on to learn about how to choose a payment method, including WooPayments (available in selected locations).
+
+On this page you’ll learn:
+
+What a payment gateway is.
+What to look for when choosing a payment gateway.
+How many payment gateways you need.
+How to consider free vs. premium gateways.
+Privacy considerations of payment gateways.
+What is a payment gateway?
+
+A payment gateway, in WooCommerce terms, is a WordPress plugin that enables WooCommerce to connect a customer to a payment processor so that they can pay for goods and services.
+
+All processors require an account, normally called a merchant account.
+Each payment processor has terms and fees (separate to the cost of the plugin itself). Contact the payment processor directly with questions about account requirements, terms, and fees.
+Some have multiple options based on different account types, transaction types, or redirect methods.
+How to choose a payment gateway
+Overview
+
+When selecting and setting up a payment gateway, it’s important to consider:
+
+Cost
+Location
+Security
+Support for Woo Subscriptions (if applicable)
+Support for in-person payments (if applicable)
+Cost
+
+Startup and ongoing costs are different for each payment processor and can consist of:
+
+The cost of the payment gateway extension/plugin, if it’s not free.
+Signup fees charged by the payment gateway company/processor.
+Monthly or yearly subscription fees.
+Transaction fees.
+Location
+
+Shop location and currency are factors. A payment gateway company/processor may only serve merchants based in certain countries. If, for example, it only supports U.S. dollars and accepts U.S. shop owners, then shop owners in Canada and Europe cannot use it.
+
+However, customers from all over the world can use the gateway to check out and pay. More info at: What to Consider about Payments when Selling Internationally and How to Choose a Payment Gateway.
+
+Security
+Redirect: Customer is forwarded to the Payment Gateway site to process payment, then redirected back to your site to complete checkout.
+Direct: Customer purchases and pays directly on your site, requiring an SSL certificate as part of PCI Compliance.
+
+Shop owners accepting payments have a responsibility to protect sensitive customer information, such as email addresses, shipping addresses, and billing information.
+
+To do this, most payment gateways require an SSL certificate. This encrypts communications between your site and customers, and your site and the payment processor. More info at: SSL FAQ.
+
+Other steps to secure your site are covered by the Payment Card Industry Data Security Standard (PCI-DSS), which applies to anyone storing, processing, or transmitting credit card data. More info at: PCI-DSS compliance and WooCommerce.
+
+If you’d like to read more about payment gateway security, check out our WooCommerce site and data security FAQ.
+
+Support for Subscriptions
+
+Should you wish to sell recurring payments on your site, for example using the Woo Subscriptions extension (separate purchase), you must choose a payment gateway that supports manual or automatic recurring payments. More info at: Subscription payment methods and gateways.
+
+Support for in-person payments
+
+Should you wish to also sell in person, for example using WooCommerce Point of Sale (POS) mode in the mobile app, you must choose a payment gateway that supports in-person card payments.
+
+How many do I need?
+
+You need at least one payment method to collect payment on your site even if this is a manual payment gateway such as on of the WooCommerce defaults, like Direct Bank Transfer. Offering a carefully selected choice of payment options increases the possibility that customers can always check out and complete payment.
+
+Many payment gateways offer standard credit card fields as well as “express” payment buttons to allow checkout with Apple Pay and Google Pay.
+
+However, offering too many payment gateways and methods can overwhelm customers with choices and make your site administration more complex. Choose what you offer carefully according to shop requirements, business needs, and customer preferences.
+
+Free vs premium
+
+When going through the WooCommerce setup, you are offered different payment gateways based on your store location, which includes Core Payment Options and WooPayments.
+
+Should you wish to use something different, you can select and purchase a Premium gateway.
+
+Core gateways (free)
+
+Core payment options are free payment methods built into WooCommerce and include Cash on Delivery, Check Payments, and Direct Bank Transfers (BACS). The gateways themselves have no associated activation or usage costs.
+
+WooPayments
+
+WooCommerce.com offers our own WooPayments! WooPayments is free to install, with no setup fees or monthly fees. Pay-as-you-go fees start from just 2.9% + $0.30 per transaction for US-issued cards, detailed in about transaction fees. WooPayments is available in 17 other countries and growing. Read more about WooPayments and if you’re not in any of the supported countries, let us know where you are so we know which countries to look into next!
+
+Premium gateways
+
+Paid payment options are available via Premium Payment Gateway extensions. These require an annual subscription to WooCommerce.com for support and updates, along with the processor’s standard transaction fees. In the left sidebar of the search page, you can filter further by a range of options.
+
+Payment gateways and the GDPR
+
+If selling to customers in Europe, the European General Data Protection Regulation (GDPR) framework should be part of your decision on which payment gateway to choose. For more information on the GDPR and its concerns for user privacy see WooCommerce and the GDPR.
+
+Customer information collected during checkout depends on the payment gateway. If you’re working with a manual payment gateway such as BACS, your site won’t process the payment itself, since you will check your bank account, independently of your site. Other payment gateways, such as Stripe or PayPal, require information to be passed from your site to that payment processor. It’s up to you to choose a trusted processor, as well as consider the impact on customer data.
+
+Be aware of what information is being sent.
+Inform customers on what happens to their data.
+Understand what the payment processor does with that information.
+
+For example, the WooCommerce Stripe extension sends certain customer information to Stripe (see Stripe documentation for specifics). You need to disclose this process in your site’s Privacy Policy.
+
+Any payment gateway you choose should have information about how to handle customer data. Check the payment processor’s website to learn more about their privacy policies and GDPR.
+
+For more information on how payment gateways apply GDPR, see Privacy Considerations when Using Official Payments Extensions.
+
+Questions and support
+
+Do you still have questions and need assistance? 
+
+This documentation is about the free, core WooCommerce plugin, for which support is provided in our community forums on WordPress.org. By searching this forum, you’ll often find that your question has been asked and answered before.
+
+If you haven’t created a WordPress.org account to use the forums, here’s how.
+
+If you’re looking to extend the core functionality shown here, we recommend reviewing available extensions in the WooCommerce Marketplace.
+Need ongoing advanced support or a customization built for WooCommerce? Hire a Woo Agency Partner.
+Are you a developer building your own WooCommerce integration or extension? Check our Developer Resources.
+
+If you weren’t able to find the information you need, please use the feedback thumbs below to let us know.
+
+Was this guide helpful for you?
+ON THIS PAGE
+What is a payment gateway?
+How to choose a payment gateway
+Overview
+Cost
+Location
+Security
+Support for Subscriptions
+Support for in-person payments
+How many do I need?
+Free vs premium
+Core gateways (free)
+WooPayments
+Premium gateways
+Payment gateways and the GDPR
+Questions and support
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

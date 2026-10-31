@@ -1,0 +1,180 @@
+km_id	area	kind	facet	question	needed_by
+ACC-01	ACC	class	information	How do a person's login, an organization or merchant entity, and one or more stores relate, and which settings live at each level?	model
+ACC-02	ACC	class	lifecycle	What states can a store be in (trial, active, paused, inactive, frozen, closing, closed, transferred), what moves it between them, and what can the merchant and buyers do in each?	model
+ACC-03	ACC	class	actors	Which kinds of identity exist besides merchant staff (buyers, partners and developers, collaborators, apps, agents), and how does each authenticate?	model
+ACC-04	ACC	class	rules	What must a merchant declare about itself (country, business entity, legal identity, verification), when is it asked, and what does each declaration unlock or restrict?	slice
+ACC-05	ACC	class	variability	Can one merchant run several stores, how are they switched and billed, and what is shared between them (staff, billing, products, customers)?	model
+STF-01	STF	class	actors	Which staff roles does each platform ship, and what can each role do, stated as a permission set?	model
+STF-02	STF	class	information	What is each platform's permission vocabulary (granularity, grouping, access levels), and how do the two vocabularies map onto each other and onto the capability areas?	model
+STF-03	STF	class	rules	What can the owner do that no delegated role can, and what are those owner-only capabilities?	model
+STF-04	STF	class	rules	How does a missing permission show itself (hidden navigation, a withheld page, a disabled control, an API error), and is it consistent across web, mobile and API?	slice
+STF-05	STF	class	lifecycle	How is a staff member invited, accepted, changed and removed, what does the invitee go through, and do plans limit the number of staff?	slice
+STF-06	STF	class	variability	Can merchants create custom roles, and under what constraints (which permissions are assignable, POS-only roles, access scoped to a location)?	model
+STF-07	STF	build	quality	How should authorization be modelled so that roles, owner-only capabilities, plan entitlements and location scope compose without contradiction?	model
+PLN-01	PLN	class	scope	Which plans does each platform sell, at what prices and billing cycles, and what differs between them as the platform states it?	model
+PLN-02	PLN	class	rules	Which capabilities are gated by plan, and where does the gate appear (navigation, page, control, API)?	model
+PLN-03	PLN	class	rules	What gates exist besides plan: region, beta flag, store state, verification, an add-on purchase?	model
+PLN-04	PLN	class	lifecycle	What is the platform's own billing lifecycle for a merchant: trial, subscription, invoices, failed payment, retry, suspension, termination, reactivation?	model
+PLN-05	PLN	class	information	What is a merchant billed for besides the plan (transaction fees, app charges, shipping labels, domains, add-ons), and how is it presented?	slice
+PLN-06	PLN	build	quality	How should entitlements be built so plans, add-ons, betas and regional availability can change without code changes?	model
+PLN-07	PLN	intent	scope	Which plan structure will Sharrwah offer at launch, and which capabilities sit behind which tier?	launch
+PLN-08	PLN	class	rules	Which contracts govern the platform's relationship with merchants, partners and app developers (terms of service, acceptable use, API and partner terms), and what do they oblige each side to do?	launch
+ONB-01	ONB	class	lifecycle	What does signup ask, in what order, and what does a new store contain before the merchant touches it (defaults, sample data, a setup guide)?	slice
+ONB-02	ONB	class	surfaces	How does the platform guide a merchant from an empty store to the first sale, and what does it use to decide what to suggest next?	slice
+ONB-03	ONB	class	lifecycle	What happens when a trial ends, a plan is cancelled or a store is closed: what is kept, what buyers see, and how is the store reactivated?	model
+ONB-04	ONB	class	variability	Which merchant intents does onboarding branch on (sell online, in person, dropshipping, digital, migrate), and what changes downstream for each?	slice
+TRU-01	TRU	class	rules	Which account-security controls exist for merchants and staff (two-factor methods, passkeys, sessions, sign-in alerts, verification)?	slice
+TRU-02	TRU	class	events	What does the platform record as an audit trail (who did what, when), and what can the merchant see or export?	model
+TRU-03	TRU	class	lifecycle	What can be undone or restored after deletion (orders, products, other records), and for how long?	model
+TRU-04	TRU	class	rules	What privacy capabilities does the product class give merchants and buyers (consent, cookie banner, data access requests, erasure, policy text)?	launch
+TRU-05	TRU	class	rules	How are fraud and risk handled on orders and payouts (risk assessments, holds, chargeback protection)?	later
+TRU-06	TRU	world	rules	What do data-protection and data-residency rules in the target market (for example Saudi PDPL) require of a platform that holds merchants' customer data?	launch
+TRU-07	TRU	class	rules	What protects storefronts and checkout from bots and abuse (bot protection, captchas, rate limits), and what can the merchant configure?	launch
+CAT-01	CAT	class	information	What is a product: its fields, variants, options, media and identifiers, and what invariants hold between them?	model
+CAT-02	CAT	class	information	How are products grouped (collections, categories, brands, tags, a standard taxonomy), and is grouping manual, rule-based or both?	model
+CAT-03	CAT	class	rules	Which validation rules apply when a product is created or edited, as the platform enforces them (required fields, limits, uniqueness)?	slice
+CAT-04	CAT	class	surfaces	How do merchants work on many products at once (bulk editor, bulk actions, import and export), and what are the limits?	slice
+CAT-05	CAT	class	events	Which events does a catalog change emit, and with what payloads?	model
+CAT-06	CAT	class	variability	Which catalog capabilities exist in only one platform (product restrictions, option templates, product SEO fields, ...), and is each a class feature or a vendor choice?	spine
+SEL-01	SEL	class	scope	Which product types and selling models does the class support (physical, digital, services and bookings, subscriptions, pre-orders, gift cards, bundles, donations), and how is each modelled?	model
+SEL-02	SEL	class	lifecycle	How do gift cards and store credit work: issued, sold, redeemed, expired, refunded to?	model
+SEL-03	SEL	class	lifecycle	How do subscriptions work end to end: who bills, contract states, skips, pauses, cancellations?	later
+SEL-04	SEL	class	lifecycle	How do bookings, reservations and pre-orders work (capacity, dates, deposits, fulfilment timing)?	later
+INV-01	INV	class	information	What is the inventory model: where stock is held (locations, warehouses, branches), which quantity states exist (available, committed, reserved, incoming, damaged), and how they attach to variants?	model
+INV-02	INV	class	lifecycle	How does stock move (adjustments with reasons, transfers, purchase orders, counts), and what states does each movement pass through?	model
+INV-03	INV	class	rules	When is stock reserved or decremented (cart, checkout, payment, fulfilment), what happens at zero (oversell, keep selling, hide), and how are low-stock alerts raised?	model
+INV-04	INV	class	rules	In a store with several locations, how is the fulfilling location chosen (routing rules, priorities, pickup locations)?	model
+INV-05	INV	class	events	What history of stock changes does each platform keep, and who can see it?	slice
+CHK-01	CHK	class	lifecycle	What are the steps and states from cart to order as a buyer experiences them, and what does each step collect?	model
+CHK-02	CHK	class	rules	What can a merchant configure about checkout (required fields, guest or account, tipping, order notes, terms), and what is fixed by the platform?	slice
+CHK-03	CHK	slot	extension	Where can apps or merchants customise checkout (branding, UI extensions, payment, delivery and discount rules, validation), and where is it locked?	model
+CHK-04	CHK	class	lifecycle	How are abandoned carts and checkouts detected, shown to the merchant, and recovered?	slice
+CHK-05	CHK	class	variability	Which accelerated or alternative checkouts exist (express wallets, quick checkout, buy as a gift, agent checkout), and how do they reuse the standard checkout?	later
+CHK-06	CHK	build	quality	What consistency and availability must checkout guarantee under peak load (stock, price, idempotent payment), and how is that tested?	model
+ORD-01	ORD	class	lifecycle	What states does an order pass through, on which separate axes (payment, fulfilment, return, cancellation, archive), and which transitions are allowed?	model
+ORD-02	ORD	class	information	What does an order contain (lines, prices, discounts, taxes, shipping, payments, fulfilments, notes, attributes, history), and which parts are fixed once it is placed?	model
+ORD-03	ORD	class	lifecycle	How are orders created other than by checkout (draft or manual orders, invoices sent to buyers, external or imported orders, POS), and where do the paths converge?	model
+ORD-04	ORD	class	lifecycle	What can be edited after an order is placed (items, quantities, address, prices), and how are the money consequences handled?	model
+ORD-05	ORD	class	surfaces	How do merchants work the order queue: views, filters, tags, assignment to staff, custom fields, bulk actions, exports?	slice
+ORD-06	ORD	class	information	Which documents does an order produce (invoice, tax invoice, packing slip, receipt), and who configures them?	slice
+ORD-07	ORD	class	events	Which order events exist, and how do the two event catalogs line up (names, granularity, payloads)?	model
+PAY-01	PAY	slot	extension	How does a payment method plug in (the platform's own processor, third-party gateways, manual methods), and what contract does a provider implement (authorize, capture, refund, void, 3-D Secure)?	model
+PAY-02	PAY	class	lifecycle	What states does a payment transaction pass through (pending, authorized, captured, partly refunded, voided, failed), and how do they drive the order's payment status?	model
+PAY-03	PAY	class	information	How is the merchant's money shown and moved: balance, payouts or settlements, wallet, fees, statements?	later
+PAY-04	PAY	class	rules	What rules can a merchant put on payment methods (by amount, country, customer group, product, delivery method; cash-on-delivery fees)?	slice
+PAY-05	PAY	class	lifecycle	How are disputes and chargebacks handled, with what evidence and deadlines?	later
+PAY-06	PAY	world	extension	Which payment methods and providers does the target market expect (mada, Apple Pay, STC Pay, BNPL such as Tabby and Tamara, bank transfer, cash on delivery), and what does each need from the platform?	launch
+PAY-07	PAY	world	rules	Who may hold or settle merchants' funds in the target market, and what licences or partnerships would Sharrwah need to offer its own payments or wallet?	later
+TAX-01	TAX	class	information	How does the class model tax: rates by region, product tax categories, prices with or without tax, exemptions, tax lines on orders?	model
+TAX-02	TAX	slot	extension	Where does an external tax engine or tax partner plug in, and what does it calculate or file?	model
+TAX-03	TAX	class	rules	How are duties and import taxes handled on cross-border orders (collected at checkout or not, harmonized codes, country of origin)?	later
+TAX-04	TAX	world	rules	What does the target market's VAT and e-invoicing regime require of the platform (for ZATCA: invoice fields, QR codes, clearance or reporting, archiving), and which party is responsible?	launch
+SHP-01	SHP	class	information	How are shipping rates defined: zones, profiles, rate tables (flat, weight, price), carrier-calculated rates, free-shipping rules?	model
+SHP-02	SHP	slot	extension	How does a carrier or shipping company plug in (rates, labels, tracking, pickup), and what contract does it implement?	model
+SHP-03	SHP	class	lifecycle	What is the fulfilment lifecycle (fulfilment orders or shipments, partial fulfilment, holds, labels, tracking, delivery)?	model
+SHP-04	SHP	class	scope	Which delivery modes exist besides parcels (local delivery, pickup in store, pickup points, scheduled delivery, delivery promises), and how is each configured?	slice
+SHP-05	SHP	class	surfaces	What does the merchant do physically to ship (packing slips, packages and box sizes, pick lists, batch labels)?	slice
+SHP-06	SHP	world	extension	Which carriers, address systems and delivery practices does the target market use (national or short address, cash-on-delivery collection, local couriers), and how do they fill the carrier slot?	launch
+RET-01	RET	class	lifecycle	What is the return lifecycle (requested, approved, in transit, received, restocked, refunded, exchanged, declined), and who can start one?	model
+RET-02	RET	class	rules	How are return rules set (window, reasons, fees, restocking, final sale) and shown to buyers?	slice
+RET-03	RET	class	lifecycle	How are refunds computed and paid (partial, to the original method, to store credit or wallet, shipping and tax refunds)?	model
+CUS-01	CUS	class	information	What is a customer record (identity, addresses, consent, tags, notes, groups, metrics), and how are guests and duplicates handled?	model
+CUS-02	CUS	class	surfaces	What can buyers do in their own account (orders, returns, addresses, profile, subscriptions, wishlist), and how do they sign in (password, one-time code, social)?	slice
+CUS-03	CUS	class	rules	How are customers segmented or grouped, and what can depend on a group (prices, payment methods, discounts, shipping)?	model
+CUS-04	CUS	class	events	What buyer behaviour does the storefront report (page views, add to cart, checkout steps), to whom (merchant analytics, pixels, apps), and under what consent?	model
+B2B-01	B2B	class	variability	Is B2B part of the class (company accounts, locations, buyers, price lists, payment terms, quantity rules), or a vendor choice?	spine
+B2B-02	B2B	class	rules	How do catalogs and price lists decide which buyer sees which products at which price?	model
+MKT-01	MKT	class	information	Which discount and promotion types exist (code, automatic, buy X get Y, free shipping, tiered, bundles), how do they combine, and how are conflicts resolved?	model
+MKT-02	MKT	class	scope	Which marketing capabilities are built in (campaigns, email and SMS, ads, pixels and feeds, SEO, a marketing calendar) and which are left to apps?	spine
+MKT-03	MKT	class	scope	Which referral, affiliate and influencer programs does the class include, and how is attribution recorded?	later
+MKT-04	MKT	slot	extension	Where do ad platforms and marketing channels plug in (pixels, product feeds, audiences, conversion APIs)?	later
+LOY-01	LOY	class	variability	Are loyalty points, customer wallet or store credit, gifting and reorder reminders part of the class, or app territory?	spine
+SUP-01	SUP	class	scope	How do merchants talk with buyers (chat inbox, email, tickets, complaints), and is it built in?	later
+SUP-02	SUP	class	lifecycle	How are product reviews and questions collected, moderated and shown?	later
+SUP-03	SUP	class	actors	Can buyers complain about a merchant to the platform, and what is the platform's role as intermediary (complaints, a quality gateway for shipping)?	later
+ANL-01	ANL	class	scope	Which reports and metrics does the class provide (sales, orders, customers, products, traffic, conversion, finance), at what granularity, and can merchants build their own?	later
+ANL-02	ANL	build	quality	What data architecture serves merchant analytics at scale (event capture, aggregation, freshness)?	later
+NTF-01	NTF	class	scope	Which notifications does the platform send, to whom (buyer, staff, merchant), on which channels (email, SMS, push, WhatsApp), triggered by what?	slice
+NTF-02	NTF	class	rules	What can a merchant change in notifications (templates and their code, languages, sender identity, on or off)?	slice
+NTF-03	NTF	world	extension	Which messaging channels and sender rules apply in the market (SMS sender registration, WhatsApp Business), and which providers fill the slot?	launch
+SFR-01	SFR	class	information	How is a storefront built: theme structure (layouts, templates, sections, blocks, settings), the template language, and what data a theme can read?	model
+SFR-02	SFR	class	surfaces	Which page types does a storefront have, and what URL scheme do they use?	slice
+SFR-03	SFR	class	surfaces	How does a merchant change the storefront without code (theme editor, sections, landing pages), and what is previewed versus published?	slice
+SFR-04	SFR	class	scope	How do themes reach merchants (theme store, free and paid, versions, updates), and who builds them?	later
+SFR-05	SFR	slot	extension	Can a storefront be built outside the platform (storefront API, SDKs, hosting), and what does the platform still own (checkout, accounts)?	model
+SFR-06	SFR	class	rules	How do password protection, maintenance mode and store visibility work for buyers and search engines?	slice
+SFR-07	SFR	build	quality	What rendering architecture serves many stores' storefronts fast and cheaply (caching, CDN, edge rendering, theme sandboxing)?	model
+CNT-01	CNT	class	information	How can merchants extend the data model (metafields, metaobjects, custom fields on orders and products), and where do extensions appear (admin, storefront, API)?	model
+CNT-02	CNT	class	scope	Which content does a store hold (pages, blogs, menus, files, policies, redirects or custom URLs), and how is it managed?	slice
+CNT-03	CNT	class	scope	Which SEO controls exist (titles, descriptions, handles, redirects, sitemaps, structured data)?	slice
+CNT-04	CNT	class	rules	Which store policies does the platform require or generate (refund, privacy, terms, shipping, contact), and where are they shown?	launch
+CHN-01	CHN	class	information	What is a sales channel in the class (online store, POS, marketplace, social, a merchant's app, an agent), and what does each channel take from the store (products, stock, orders)?	model
+CHN-02	CHN	class	rules	How is product availability per channel controlled (publications, prices per channel, listing rules)?	model
+CHN-03	CHN	class	scope	Does the platform run its own buyer marketplace or app (Shop, Mahally), and what does a merchant gain or give up by joining?	later
+CHN-04	CHN	class	variability	Can a merchant get a branded buyer mobile app built by the platform?	later
+CHN-05	CHN	slot	extension	How does an external channel integrate (catalog sync, order import, stock sync)?	later
+POS-01	POS	class	scope	What does in-person selling include (registers, cash, receipts, staff PINs, hardware, offline mode), and how does it share catalog, stock, customers and orders with online selling?	later
+POS-02	POS	class	actors	Which roles and permissions apply at the counter, and how do they relate to admin roles?	later
+POS-03	POS	world	extension	Which in-store hardware (card readers, printers, scanners) and in-person payment providers are available in the market?	later
+MKS-01	MKS	class	information	What is a market, and which settings vary per market (currency, language, domain, prices, catalog, duties, payment and delivery methods)?	model
+MKS-02	MKS	class	rules	How are prices set or converted per currency (rates, rounding, fixed prices), and in which currency is an order recorded?	model
+MKS-03	MKS	class	scope	How is content translated (which resources, manual or machine, adapted per market), and how does the storefront pick a language?	model
+MKS-04	MKS	class	variability	Which capabilities change with the store's country (payment providers, tax, shipping, features unavailable), and how does the platform tell the merchant?	model
+APP-01	APP	slot	extension	What can an app do on the platform: which surfaces it can extend (admin, checkout, storefront, POS, customer account, automation, AI assistant), and by which mechanisms (embedded UI, extensions, functions, webhooks, APIs)?	model
+APP-02	APP	class	rules	How does an app get access: authorization flow, scopes, consent screen, data-access categories, token lifetimes?	model
+APP-03	APP	class	lifecycle	What is an app's lifecycle: create, develop on a test store, review, publish, install, change scopes, uninstall, delete data?	model
+APP-04	APP	class	information	How do apps charge merchants (one-time, recurring, usage, trials), and how does the platform take its share?	later
+APP-05	APP	class	scope	What do the app stores show the core leaves to apps: which categories hold the most apps, and which built-in features do apps replace or extend?	spine
+APP-06	APP	build	quality	How should third-party code be isolated (sandboxed functions, iframes, quotas, data access) so an app cannot harm a store or the platform?	model
+API-01	API	class	information	Which API surfaces does each platform expose (admin or merchant, storefront, customer account, partner, payments), in what style, and with what versioning and deprecation policy?	model
+API-02	API	class	events	What is the full event catalog, how is delivery secured, retried and ordered, and can subscriptions be filtered?	model
+API-03	API	class	rules	Which limits apply (rate limits, query cost, bulk operations, pagination), and how are they communicated?	model
+API-04	API	class	variability	Where do the two platforms' API resource models line up, and where do they differ (naming, granularity, which resources exist)?	model
+DVT-01	DVT	class	surfaces	What does a developer get (CLI, test stores, local development with tunnels, scaffolds, docs, AI tooling), and what is the inner loop?	later
+DVT-02	DVT	class	evolution	How do platforms tell developers about change (changelogs, API versions, deprecation notices, CLI notices)?	later
+PTN-01	PTN	class	actors	Which partner types does the class recognise (app developers, theme designers, agencies and experts, referrers), and what does each get (dashboard, revenue share, test stores)?	later
+PTN-02	PTN	class	lifecycle	How does an agency build a store for a client and hand it over (client transfer, collaborator access, ownership and billing transfer)?	later
+PTN-03	PTN	class	scope	Does the platform run a marketplace where merchants hire experts, and how does it work?	later
+AUT-01	AUT	class	information	What is the automation model (triggers, conditions, actions, waits, loops), which events and actions are available, and what limits apply?	later
+AUT-02	AUT	class	scope	Which recurring merchant tasks do the platform's own automation templates target, ranked by install count?	spine
+AIA-01	AIA	class	scope	What does the built-in AI assistant do (answer, navigate, act, generate content, build apps), what can it reach, and when does it ask to confirm?	later
+AIA-02	AIA	slot	surfaces	How do external AI agents shop a store (discovery files, agent profiles, MCP tools, cart and checkout calls, agent identity and payment)?	model
+AIA-03	AIA	class	evolution	How fast is the AI surface changing, and which parts look stable enough to model now?	later
+SRF-01	SRF	class	surfaces	What is the shape of the merchant's workspace (top-level sections, settings, search), and where do the two platforms group things the same way?	spine
+SRF-02	SRF	class	information	What does each admin route do (list, create, update, view), which operations does it call, and what does it lead to next?	model
+SRF-03	SRF	class	surfaces	What can merchants do from the mobile app versus the web, and what is mobile-only?	later
+SRF-04	SRF	class	rules	What are the shared UI conventions (save bar, unsaved changes, validation messages, empty states, bulk actions, confirmations)?	slice
+SRF-05	SRF	class	scope	How does each platform organise its own offering across its self-descriptions (admin navigation, API reference grouping, help centre taxonomy, plan tables, marketing site), and where do those groupings agree?	spine
+LNG-01	LNG	class	language	For each concept, what is Shopify's term, Salla's term in Arabic and English, and the term Sharrwah will use?	spine
+LNG-02	LNG	class	language	How do the platforms handle Arabic and right-to-left (translated admin, RTL layout, Arabic storefront, numerals, dates, mixed-direction text)?	model
+MIG-01	MIG	class	surfaces	What can be imported and exported (products, customers, orders, stock, redirects), in which formats, with what validation and error reporting?	slice
+MIG-02	MIG	class	scope	How do platforms help a merchant move from a competitor (importers, URL redirects, customer accounts)?	launch
+MIG-03	MIG	intent	scope	From which platforms will Sharrwah's first merchants come, and what must move with them for switching to be worth it?	launch
+EVO-01	EVO	class	evolution	What has each platform added, changed or removed recently, by area, and where is the class heading?	later
+EVO-02	EVO	class	evolution	Which capabilities are new or in beta (unstable to copy), and which are long established?	spine
+EVO-03	EVO	class	evolution	What did the reference platforms offer at earlier stages, say five and ten years ago, as a guide to sequencing a younger platform?	later
+OPS-01	OPS	class	quality	What reliability does the class promise and deliver (status components, incident frequency and duration)?	later
+OPS-02	OPS	class	rules	Which hard limits does each platform publish (variants per product, API rates, workflow sizes, file sizes), and which are product decisions versus engineering limits?	model
+WLD-01	WLD	world	rules	Which laws govern online selling in the target market (e-commerce law, consumer protection, cooling-off, required disclosures), and what must the platform enforce rather than the merchant?	launch
+WLD-02	WLD	world	rules	Which business registrations do merchants in the market hold (commercial registration, freelance document, e-commerce authentication), and must the platform collect or display them?	launch
+WLD-03	WLD	world	information	Which standards should the data model adopt from the start (ISO 4217, ISO 3166, GS1 identifiers, units, address and phone formats)?	model
+WLD-04	WLD	world	extension	Which providers fill each slot in the market (payments, shipping, tax and e-invoicing, SMS and WhatsApp, maps and addresses), and which does Salla already integrate?	launch
+WLD-05	WLD	world	scope	What do merchants complain about on existing platforms (missing features, fees, support), as seen in reviews and forums?	later
+ENG-01	ENG	build	quality	Which tenancy model should hold many stores (shared tables with tenant keys, schema or database per tenant, cells or pods), given isolation, scale and cost?	model
+ENG-02	ENG	build	quality	Which quality-attribute scenarios define a mature platform for Sharrwah (peak orders per minute, admin and storefront latency, availability, recovery time, isolation)?	model
+ENG-03	ENG	build	scope	Which capabilities are commodities to buy or integrate (payment processing, tax calculation, search, email and SMS delivery, CDN, maps), and which are core to build?	model
+ENG-04	ENG	build	quality	How should the system be decomposed (modular monolith or services; bounded contexts from the domain model), and in what order should modules be built?	model
+ENG-05	ENG	build	quality	How should money, currencies and time zones be represented and computed to avoid rounding and reconciliation errors?	model
+ENG-06	ENG	build	quality	How will Sharrwah be validated against the reference: which captured journeys become executable acceptance examples, and how are differences recorded?	slice
+ENG-07	ENG	build	quality	How should the event backbone be built (outbox, ordering, retries, webhook fan-out) so internal events and public webhooks stay consistent?	model
+ENG-08	ENG	build	quality	Which security baseline must hold from day one (PCI DSS scope reduction, secrets, encryption, tenant-isolation tests, penetration testing)?	model
+INT-01	INT	intent	scope	Which market and merchant segments does Sharrwah serve first, and does that change which slots must be filled at launch?	spine
+INT-02	INT	intent	scope	What does parity with the product class mean in practice: which areas must be at parity for launch, and in what order do the rest follow (sequencing, not narrowing)?	spine
+INT-03	INT	intent	scope	Which capabilities belong in Sharrwah's core and which are left to apps on purpose, given what the reference platforms leave to their ecosystems (APP-05)?	model
+INT-04	INT	intent	scope	Will Sharrwah run its own payments, marketplace or buyer app, or rely on partners for each?	later
+INT-05	INT	intent	scope	Which team, budget and timeline constraints bound the first version, and which architecture choices do they rule out?	model
+MTH-01	MTH	method	variability	What counts as part of the product class: a capability both references have, one either has, or one a third reference confirms?	spine
+MTH-02	MTH	method	scope	What is the stopping rule for capture in each area, and how is saturation measured?	spine
+MTH-03	MTH	method	rules	How are disagreements handled: between a platform's declarations and its behaviour, between the two platforms, and between evidence and an agent's claim?	spine
+MTH-04	MTH	method	scope	Which third reference platform should be read at declaration level, and which open-source implementations should be studied for internals?	spine
+MTH-05	MTH	method	evolution	How is evidence kept fresh as platforms change (router versions, betas, API versions), and how is a claim's age tracked?	later

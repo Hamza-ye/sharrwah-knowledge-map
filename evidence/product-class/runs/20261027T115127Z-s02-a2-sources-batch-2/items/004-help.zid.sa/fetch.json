@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://help.zid.sa/google-tag-manager/",
+ "dir": "items/004-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:30Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/google-tag-manager/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26506,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "9fd979e50be462f8f4bd97d17cb674d580d9f46c514f1537fb054d58adae384d",
+ "raw_ext": "html"
+}

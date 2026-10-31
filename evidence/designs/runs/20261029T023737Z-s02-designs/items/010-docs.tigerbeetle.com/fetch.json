@@ -1,0 +1,18 @@
+{
+ "n": 10,
+ "url": "https://docs.tigerbeetle.com/coding/data-modeling/",
+ "dir": "items/010-docs.tigerbeetle.com",
+ "fetched_at": "2026-10-29T02:37:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.tigerbeetle.com/coding/data-modeling/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 12731,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "93102189281dad62f652c3e0799f51322697356ca78070e3a51462f5bf8afd83",
+ "raw_ext": "html"
+}

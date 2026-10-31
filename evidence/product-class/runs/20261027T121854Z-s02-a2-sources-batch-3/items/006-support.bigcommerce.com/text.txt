@@ -1,0 +1,183 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+GETTING STARTED
+PRODUCTS
+STORE SETUP
+Store Settings
+Domain And Email
+Checkout And Payments
+Currency Setup
+Multicurrency
+Recurring Billing
+Test Orders
+CHECKOUT
+Optimized One-Page Checkout
+Address Autocomplete
+Form Fields
+Stored Credit Cards
+Gift Certificates
+Gift Wrapping
+Order-level Fees
+Persistent Cart
+Storefront Checkout Configurations
+Checkout Comparison
+FAQ
+PAYMENT METHODS
+Available Payment Gateways
+Offline Payments
+TROUBLESHOOTING
+Understanding Checkout Errors
+Shipping
+Tax
+Security
+B2B
+DESIGN AND CONTENT
+MANAGE STORE
+CHANNEL MANAGER
+MARKETING
+DATA SOLUTIONS
+ACCOUNT
+TD BANK
+Storefront Checkout Configurations
+What We'll Cover
+Checkout comparison
+FAQ
+
+Choosing a checkout configuration that matches your business needs can help enhance the shopper experience and improve conversion rates. Depending on your storefront setup, there are several different checkout configurations options available to you.
+
+Use this article to guide you and your development team in selecting the best configuration for your store’s checkout environment.
+
+ 
+Checkout Comparison
+
+This section compares the various checkout configurations available for storefronts, and highlights the benefits and potential limits associated with each checkout option.
+
+We recommend determining which type of storefront you will be using (Stencil versus headless or composable), before reviewing the available checkout configurations so you can select the one that best matches your store’s technical requirements.
+
+Checkout Option	Stencil Storefront	Headless or Composable Storefront	Checkout URL: mystore.com/checkout	Checkout URL: checkout.mystore.com/checkout	Checkout URL: checkout.mystore.com
+Optimized One-Page Checkout	✓	✗	✓	✗	✗
+Open Checkout	✓	✗	✓	✗	✗
+Redirected Checkout	✗	✓	✗	✓	✗
+Embedded Checkout	✗	✓	✗	✗	✓
+Custom Headless Checkout	✗	✓	✓	✗	✗
+OPTIMIZED ONE-PAGE CHECKOUT (OOPC)
+Out-of-the-box checkout for native BigCommerce storefronts
+Optimized to drive high conversion rates
+Minor styling and display customizations
+Checkout URL — mystore.com/checkout
+The checkout page is a URL path that comes after the storefront root domain
+OPEN CHECKOUT
+Customize the native BigCommerce storefront checkout for greater control over your checkout experience
+Acts as a starter kit for a custom checkout, without the need to build a checkout from scratch
+Built with React and compiles into a static JavaScript bundle
+Checkout URL — mystore.com/checkout
+The checkout page is a URL path that comes after the storefront root domain
+REDIRECTED CHECKOUT
+Redirects shoppers from your Headless or Composable storefront to your BigCommerce storefront checkout page
+Unlocks the full BigCommerce checkout experience, including hosted wallets
+Customize your checkout layout through Stencil framework or Checkout SDK
+Checkout URL — checkout.mystore.com/checkout
+The BigCommerce storefront domain must be served from a subdomain of the root domain
+The checkout page is a URL path that comes after the storefront root domain
+EMBEDDED CHECKOUT
+The BigCommerce storefront checkout page is embedded via an iframe, keeping shoppers on your headless storefront
+Recommended for simple headless setups, such as BigCommerce for Wordpress
+Supported by many payment gateways, but not compatible with all digital wallets
+Minor styling and display customizations
+Checkout URL — checkout.mystore.com
+The BigCommerce storefront domain must be served from a subdomain of the root domain
+The embedded checkout page’s URL is not visible to shoppers
+CUSTOM HEADLESS CHECKOUT
+Full control over your headless storefront checkout using BigCommerce Cart and Checkout APIs
+Keeps shoppers on your headless storefront without the need for a redirect
+Processes payments using the Payments API
+Checkout URL — mystore.com/checkout
+The checkout page is a URL path that comes after the storefront root domain
+ 
+FAQ
+
+Do I need a developer?
+
+A developer is highly recommended if you want to explore custom checkouts or headless storefronts. You can find a list of BigCommerce certified developers in our Partner Directory.
+
+Are the different checkout configurations limited to certain plans?
+
+No, the checkout configurations listed above are available to all store plans.
+
+Why does the Redirected and Embedded checkout URL need to be a subdomain of the storefront root domain?
+
+Shoppers will encounter security errors and the checkout page will not load properly if the headless storefront domain doesn’t match the BigCommerce storefront domain.
+
+You can configure your store’s checkout domain in Channel Manager or by upserting the URL via API.
+
+What checkout configurations are available for stores using Multi-Storefront?
+
+Stores with more than one storefront can use any of the checkout configurations listed above. In addition, several checkout settings can be configured uniquely per storefront.
+
+Can I control the www redirect for my headless channel's unique checkout URL?
+
+Yes, you can manage the setting via the Storefront SEO API endpoint.
+
+Additional Resources
+Optimized One-Page Checkout
+Optimized One-Page Checkout (Dev Center)
+Checkout Customizability (Dev Center)
+Installing an Open Source Checkout (Dev Center)
+Getting Started with Checkout SDK (Dev Center)
+Embedded Checkout Overview (Dev Center)
+GraphQL Storefront API: Carts and Checkout (Dev Center)
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Storefront Checkout Configurations

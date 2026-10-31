@@ -1,0 +1,6 @@
+cap_id	platform	quality	value	key
+CM-INV-005	zid	branches or warehouses on the Growth plan	Inventory management across 2 branches or warehouses	ZD-C-085/decides/ZD-S-0372
+CM-INV-005	zid	warehouses on the Professional plan	الباقة الاحترافية متاح بها إضافة و تفعيل 5 مخازن وفي حال تم تفعيل زد كاشير يتاح لك زيادة مخزن واحد لكل جهاز.	ZD-C-085/decides/ZD-S-1021
+CM-INV-005	zid	warehouses on the large-business plan	باقة الأعمال الكبيرة عدد المخازن لا محدود.	ZD-C-085/decides/ZD-S-1022
+CM-INV-008	zid	how long the product is held while card payment is entered	سوف يتم حجز المنتج بشكل تلقائي لمدة 30 دقيقة	ZD-C-100/decides/ZD-S-0965
+CM-SEL-002	zid	where digital-product files are stored	upload files directly to Amazon S3 storage	ZD-C-043/where/ZD-S-0801

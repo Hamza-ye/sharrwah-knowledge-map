@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://help.zid.sa/create-inventory-address/",
+ "dir": "items/004-help.zid.sa",
+ "fetched_at": "2026-10-27T09:51:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/create-inventory-address/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25455,
+ "cited_in": [
+  "S-02 A2 ZD-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a1932d7e816a05a35fb16d385d7b111805d211aa2f69faf85fbe83b1d678b7fa",
+ "raw_ext": "html"
+}

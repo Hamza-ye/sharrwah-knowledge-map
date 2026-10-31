@@ -1,0 +1,18 @@
+{
+ "n": 17,
+ "url": "https://zid.sa/ar/paymob/",
+ "dir": "items/017-zid.sa",
+ "fetched_at": "2026-10-27T11:20:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/paymob/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 45767,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T104936Z-s01-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "4cc1d8f541711dceea1fc0348fea085a91f0f1fcaf0fb784d1d8d08ab4d1e21d",
+ "raw_ext": "html"
+}

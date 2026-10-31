@@ -1,0 +1,11 @@
+cap_id	platform	quality	value	key
+CM-STF-001	zid	team members per plan	plans:{starter:"1",launch:"1",growth:"5",pro:"20"}	ZD-C-094/decides/ZD-S-0939
+CM-STF-001	zid	additional people with store management access, plan Rise	Store management authority for one extra person	ZD-I-0375
+CM-STF-001	zid	additional people with store management access, plan Growth	Store management access for 5 additional people	ZD-I-0387
+CM-STF-001	zid	additional people with store management access, plan Professional	Store management access for 20 additional people	ZD-I-0400
+CM-PLN-001	zid	limits of the Starter plan	Unlimited number of products, orders, and customers	ZD-I-0369
+CM-PLN-004	zid	notice before plan or price changes	سنقوم بإشعارك بأي تغييرات في الأسعار أو تغييرات في خطط الاشتراك أو الخدمات قبل تطبيقها بـ(7) سبعة أيام على الأقل	ZD-C-020/decides/ZD-S-0674
+CM-PLN-006	zid	largest withdrawal from the wallet per operation	بشرط ألا يتجاوز المبلغ عشرين ألف (20,000) ريال للعملية الواحدة	ZD-C-017/decides/ZD-S-0651
+CM-PLN-006	zid	largest top-up of the wallet by card or Apple Pay	يكون الحد الأقصى للتحويل هو خمسة آلاف (5,000) ريال	ZD-C-017/decides/ZD-S-0652
+CM-TRU-001	zid	inactivity sign-out at the security level High	عالي : تسجيل خروج اي عضو من دون نشاط بعد نص ساعة مع امكانية تسجيل الدخول من متصفح واحد فقط	ZD-C-095/decides/ZD-S-0945
+CM-TRU-002	zid	Nafath verification attempts per day	عدد محاولات التحقق المتاحة خلال اليوم الواحد هي 3 محاولات.	ZD-C-038/decides/ZD-S-0776

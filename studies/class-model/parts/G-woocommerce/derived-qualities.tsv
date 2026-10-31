@@ -1,0 +1,2 @@
+cap_id	platform	quality	value	key	scope
+CM-OPS-005	woocommerce	days logs are kept, by default	'retention_period_days' => 30,	WC-C-037/decides/WC-S-5373	

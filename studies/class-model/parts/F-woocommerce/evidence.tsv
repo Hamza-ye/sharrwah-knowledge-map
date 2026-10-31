@@ -1,0 +1,100 @@
+cap_id	platform	supports	key	why
+CM-AIA-001	woocommerce	shows	WC-C-096/where/WC-S-0486	Automattic may offer AI features to help set up or operate the site or store; no place named
+CM-AIA-001	woocommerce	outside	WC-C-096/where/WC-S-5347	some AI features may be powered by Anthropic and OpenAI
+CM-AIA-001	woocommerce	shows	WC-C-096/decides/WC-S-5348	other or different AI providers may be used in future
+CM-AIA-001	woocommerce	shows	WC-C-096/responsible/WC-S-0853	the merchant answers for Input and Output and must review Output
+CM-AIA-001	woocommerce	shows	WC-C-096/responsible/WC-S-0838	AI Guidelines set the policies for using AI features
+CM-AIA-001	woocommerce	outside	WC-C-096/boundary/WC-S-5349	input is shared with third-party AI providers, who may train on it
+CM-AIA-004	woocommerce	core	WC-C-095/where/WC-S-0918	WooCommerce's native MCP support lets AI assistants and tools interact with the store
+CM-AIA-004	woocommerce	core	WC-C-095/boundary/WC-S-5453	its own MCP namespace woocommerce
+CM-AIA-004	woocommerce	core	WC-C-095/boundary/WC-S-5454	its own MCP route mcp
+CM-AIA-004	woocommerce	shows	WC-C-095/decides/WC-S-5452	feature flag mcp_integration: experimental, off by default
+CM-API-001	woocommerce	core	WC-C-078/boundary/WC-S-0887	the WooCommerce REST API connects the store to external systems and services
+CM-API-001	woocommerce	core	WC-C-078/where/WC-S-0011	the settings tab Advanced, which holds the API's sections
+CM-API-001	woocommerce	core	WC-C-078/boundary/WC-S-0078	its REST namespace wc/v3
+CM-API-001	woocommerce	core	WC-C-078/boundary/WC-S-0684	its settings API lists the store's groups of settings
+CM-API-001	woocommerce	extension-point	WC-C-078/boundary/WC-S-0448	filter woocommerce_rest_api_get_rest_namespaces, through which code adds namespaces
+CM-API-002	woocommerce	core	WC-C-078/where/WC-S-0023	settings section Advanced > REST API keys
+CM-API-002	woocommerce	core	WC-C-078/boundary/WC-S-0662	two ways to authenticate with the REST API
+CM-API-002	woocommerce	core	WC-C-078/boundary/WC-S-0921	pre-generated keys authenticate use of the REST API endpoints
+CM-API-002	woocommerce	core	WC-C-078/decides/WC-S-0888	the merchant generates API keys in WooCommerce and enters them in the external service
+CM-API-003	woocommerce	core	WC-C-078/boundary/WC-S-0277	access level Read
+CM-API-003	woocommerce	core	WC-C-078/boundary/WC-S-0278	access level Write
+CM-API-003	woocommerce	core	WC-C-078/boundary/WC-S-0279	access level Read/Write
+CM-API-005	woocommerce	core	WC-C-031/where/WC-S-5358	rate limiting is available for the Store API's endpoints, optional and off by default
+CM-API-005	woocommerce	shows	WC-C-031/reason/WC-S-5363	reason: prevent abuse from excessive calls and performance degradation
+CM-API-006	woocommerce	core	WC-C-078/boundary/WC-S-0076	REST namespace wc/v1
+CM-API-006	woocommerce	core	WC-C-078/boundary/WC-S-0077	REST namespace wc/v2
+CM-API-006	woocommerce	core	WC-C-078/boundary/WC-S-0078	REST namespace wc/v3
+CM-API-006	woocommerce	core	WC-C-078/boundary/WC-S-0080	REST namespace wc/v4
+CM-API-006	woocommerce	core	WC-C-078/where/WC-S-0026	settings section Advanced > Legacy API
+CM-API-007	woocommerce	core	WC-C-077/boundary/WC-S-0683	the webhooks API creates, updates or deletes a batch of webhooks in one request
+CM-API-008	woocommerce	core	WC-C-077/decides/WC-S-0885	the store sends automatic event notifications to a URL of the merchant's choice
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0119	REST resource wc/v3 > webhooks
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0683	the webhooks API creates, views, updates and deletes webhooks
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0254	webhook topic coupon.created
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0258	webhook topic customer.created
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0261	webhook topic order.created
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0265	webhook topic product.created
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0270	webhook topic action
+CM-API-008	woocommerce	core	WC-C-077/boundary/WC-S-0931	signature header X-WC-Webhook-Signature
+CM-API-008	woocommerce	extension-point	WC-C-077/boundary/WC-S-0447	filter woocommerce_webhook_topics, through which code adds topics
+CM-API-008	woocommerce	shows	WC-C-077/reason/WC-S-0886	reason: integrating the store with third-party services
+CM-API-009	woocommerce	core	WC-C-077/where/WC-S-0025	settings section Advanced > Webhooks
+CM-API-009	woocommerce	core	WC-C-077/boundary/WC-S-0885	notifications go to a URL of the merchant's choice
+CM-API-012	woocommerce	core	WC-C-078/where/WC-S-0024	settings section Advanced > REST API caching
+CM-API-012	woocommerce	shows	WC-C-078/decides/WC-S-5414	feature flag rest_api_caching: experimental, off by default
+CM-APP-001	woocommerce	core	WC-C-063/where/WC-S-0046	admin menu WooCommerce > Extensions
+CM-APP-001	woocommerce	core	WC-C-063/where/WC-S-0421	onboarding task Enhance your store with extensions
+CM-APP-001	woocommerce	extension-point	WC-C-059/decides/WC-S-0852	extensions and plugins provided or manufactured by a third party
+CM-APP-001	woocommerce	extension-point	WC-C-059/responsible/WC-S-5342	Marketplace developers create, maintain and support their own products
+CM-APP-001	woocommerce	shows	WC-C-059/responsible/WC-S-0487	Third-Party Services aren't vetted, endorsed or controlled by Automattic
+CM-APP-001	woocommerce	shows	WC-C-059/responsible/WC-S-0656	a Third-Party Service is used at the merchant's own risk
+CM-APP-001	woocommerce	shows	WC-C-059/responsible/WC-S-0465	extensions may have their own requirements and terms
+CM-APP-001	woocommerce	shows	WC-C-059/responsible/WC-S-0645	Marketplace extensions' software is licensed under the GPL
+CM-APP-001	woocommerce	shows	WC-C-059/responsible/WC-S-5343	developers must make extensions comply with GDPR
+CM-APP-002	woocommerce	extension-point	WC-C-017/where/WC-S-0923	the WooCommerce.com Marketplace connects developers and merchants
+CM-APP-002	woocommerce	extension-point	WC-C-017/where/WC-S-0694	Marketplace category Extensions
+CM-APP-002	woocommerce	core	WC-C-017/decides/WC-S-0583	WooCommerce may suspend or remove a Product from the Marketplace
+CM-APP-002	woocommerce	core	WC-C-059/decides/WC-S-0596	its developers vet each new extension
+CM-APP-002	woocommerce	core	WC-C-059/decides/WC-S-0577	a listed Product must be GPL compatible
+CM-APP-002	woocommerce	core	WC-C-017/where/WC-S-5341	the Marketplace shows each product's developer below its name
+CM-APP-002	woocommerce	core	WC-C-063/where/WC-S-0432	onboarding task: a tour of the Woo Marketplace
+CM-APP-002	woocommerce	shows	WC-C-017/boundary/WC-S-5340	Marketplace developers see aggregate sales data, no customers' personal information
+CM-APP-002	woocommerce	shows	WC-C-017/responsible/WC-S-0584	User Data is WooCommerce's Confidential Information
+CM-APP-003	woocommerce	core	WC-C-017/decides/WC-S-0580	WooCommerce collects a Product's revenue and pays the Partner 70%
+CM-APP-003	woocommerce	core	WC-C-050/decides/WC-S-0900	a Marketplace purchase gives a WooCommerce.com subscription
+CM-APP-003	woocommerce	core	WC-C-063/decides/WC-S-0899	the merchant manages the subscriptions from the admin
+CM-APP-003	woocommerce	core	WC-C-017/responsible/WC-S-0834	full refund within 30 days for Marketplace purchases
+CM-APP-003	woocommerce	core	WC-C-017/responsible/WC-S-0581	WooCommerce handles refunds and cancellations; the Partner answers for taxes
+CM-APP-006	woocommerce	extension-point	WC-C-086/boundary/WC-S-0444	filter woocommerce_get_settings_pages, through which extensions add settings pages
+CM-APP-006	woocommerce	core	WC-C-086/decides/WC-S-5430	the WooCommerce settings page, under manage_woocommerce
+CM-APP-007	woocommerce	extension-point	WC-C-086/boundary/WC-S-0450	function wc_admin_register_page, which registers a page in the admin
+CM-APP-009	woocommerce	shows	WC-C-059/decides/WC-S-0852	extensions or plugins manufactured by the merchant itself
+CM-APP-010	woocommerce	core	WC-C-086/where/WC-S-0008	settings tab Integration
+CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0441	class WC_Integration, built on WC_Settings_API
+CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0442	filter woocommerce_integrations, through which integrations load
+CM-APP-010	woocommerce	extension-point	WC-C-086/boundary/WC-S-0922	a settings page for an integration made with WC_Integration
+CM-APP-011	woocommerce	core	WC-C-050/where/WC-S-0697	Marketplace category Developed by Woo
+CM-APP-011	woocommerce	shows	WC-C-050/responsible/WC-S-0644	Automattic's Fees: Woo themes or extensions among its paid Services; own-service in E's CM-SFR-003, the theme marketplace, whose WooCommerce cell rests on it, so it counts once (the coordinator, convention 8)
+CM-APP-011	woocommerce	shows	WC-C-050/decides/WC-S-0646	paid Services bought from WooCommerce.com come with downloads, updates and support for a year
+CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0027	settings section Advanced > WooCommerce.com
+CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0899	connecting to WooCommerce.com installs extensions, brings updates and support, and manages subscriptions from the admin
+CM-APP-012	woocommerce	core	WC-C-063/where/WC-S-0595	connection to WooCommerce.com, to manage subscriptions and receive updates in the admin
+CM-APP-012	woocommerce	core	WC-C-063/boundary/WC-S-0085	REST namespace wccom-site/v3
+CM-APP-012	woocommerce	core	WC-C-063/boundary/WC-S-0249	resource wccom-site/v3 > connection
+CM-APP-012	woocommerce	core	WC-C-063/boundary/WC-S-0250	resource wccom-site/v3 > installer
+CM-APP-012	woocommerce	core	WC-C-063/boundary/WC-S-5346	command wc com connect, with an application password
+CM-APP-012	woocommerce	shows	WC-C-063/boundary/WC-S-0569	WooCommerce.com knows which sites use a subscription
+CM-APP-012	woocommerce	shows	WC-C-063/boundary/WC-S-0568	customers' information is generally not shared with WooCommerce.com
+CM-PTN-001	woocommerce	shows	WC-C-017/responsible/WC-S-0576	the Marketplace Vendor Agreement between the Partner, Automattic and WooCommerce, Inc.
+CM-PTN-003	woocommerce	core	WC-C-017/responsible/WC-S-0580	WooCommerce pays the Partner 70% of Product Net Revenue monthly
+CM-PTN-005	woocommerce	core	WC-C-112/decides/WC-S-5495	agency partners pass WooCommerce's technical and design review
+CM-PTN-005	woocommerce	extension-point	WC-C-112/boundary/WC-S-5497	merchants contact an agency from its profile in the directory
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0696	Marketplace category Business services
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0763	subcategory Insurance
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0764	subcategory Business Formation
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0766	subcategory Compliance
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0767	subcategory Developer Services
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0768	subcategory Finance
+CM-PTN-005	woocommerce	extension-point	WC-C-112/where/WC-S-0769	subcategory Law

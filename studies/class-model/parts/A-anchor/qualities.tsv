@@ -1,0 +1,19 @@
+cap_id	platform	quality	value	key
+CM-ACC-003	shopify	free expansion stores per plan	Free expansion stores: Not included, Not included, Not included, Up to 9	SH-C-003/decides/SH-S-7073
+CM-ACC-005	shopify	plans that include it	Selling from multiple entities with Shopify Payments is available only for organizations on the Shopify Plus and Shopify Enterprise Commerce plan.	SH-C-005/decides/SH-S-0253
+CM-STF-001	shopify	additional staff accounts per plan	Additional staff accounts: Not included, 5, 15, Unlimited	SH-C-009/decides/SH-S-7011
+CM-STF-001	salla	more users on سلة بلس	زيادة عدد المستخدمين *برسوم إضافية	SA-C-009/decides/SA-S-2078
+CM-STF-003	shopify	plans that include it	Custom user groups: Not included, Not included, Not included, Included	SH-C-010/decides/SH-S-7077
+CM-PLN-002	salla	longest freeze of the annual subscription	إمكانية تجميد الاشتراك السنوي حتى 30 يومًا	SA-C-004/decides/SA-S-2085
+CM-PLN-004	shopify	notice before fees change	We will provide you with 30 days advanced notice prior to any changes in Fees	SH-C-016/decides/SH-S-0075
+CM-PLN-005	shopify	days before suspension for unpaid fees	If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.	SH-C-016/decides/SH-S-0035
+CM-PLN-006	salla	day withdrawn balance reaches the bank	يتم تحويل الرصيد المسحوب إلى حسابك البنكي كل يوم ثلاثاء.	SA-C-005/decides/SA-S-0096
+CM-PLN-001	salla	features per plan	"basic": {"active": true, "features_count": 50}, "plus": {"active": false, "features_count": 100}, "pro": {"active": false, "features_count": 150}, "special": {"active": false, "features_count": 5000}	SA-C-004/decides/SA-S-3528
+CM-ONB-002	shopify	failed fee payment before suspension may follow	If we are unable to successfully process payment of Fees using an Authorized Payment Method within 28 days of our initial attempt, we may suspend and revoke access to your Account and the Services.	SH-C-014/decides/SH-S-0035
+CM-ONB-002	salla	time to correct a violation before the store is suspended	يُرجى استعراض المخالفة وتصحيحها خلال 24 ساعة لتفادي إيقاف متجرك.	SA-C-232/decides/SA-S-0115
+CM-TRU-003	shopify	admin API activity webhook subscriptions	This topic is limited to one active subscription per Plus store and requires the use of Google Cloud Pub/Sub or AWS EventBridge.	SH-C-012/boundary/SH-S-5938
+CM-TRU-004	shopify	plans that include it	The bot protection feature is available only for merchants on a Shopify Plus plan.	SH-C-051/decides/SH-S-0744
+CM-TRU-014	shopify	data location for new merchants in Europe	New merchants in Europe automatically avail of this new infrastructure and now have their store data, order data and customer personal data stored at rest in Europe by default.	SH-C-181/where/SH-S-0638
+CM-TRU-016	shopify	retention of store information after closure	If you are a merchant operating a Shopify-powered store, and you close the store, stop paying your subscription fees, or we terminate your account, we retain store information for two years before we begin the deletion process.	SH-C-183/decides/SH-S-0182
+CM-TRU-016	shopify	deletion of personal information after termination (EU merchants)	Within 90 days of termination all personal information within your Store is deleted except as legally required.	SH-C-183/decides/SH-S-0209
+CM-TRU-018	shopify	PCI DSS certification	Yes. Shopify is certified Level 1 PCI DSS compliant, and stores powered by Shopify are PCI compliant by default, which helps keep payment information secure.	SH-C-184/decides/SH-S-7202

@@ -1,0 +1,18 @@
+{
+ "n": 29,
+ "url": "https://zid.sa/ar/oman/",
+ "dir": "items/029-zid.sa",
+ "fetched_at": "2026-10-27T12:19:10Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/oman/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 48299,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "63d43188a518d195ab7acc3e2da79a3ed20144cb6c57a737d98973fd8e1c7370",
+ "raw_ext": "html"
+}

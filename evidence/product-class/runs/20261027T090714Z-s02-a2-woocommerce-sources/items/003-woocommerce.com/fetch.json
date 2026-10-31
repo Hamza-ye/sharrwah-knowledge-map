@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://woocommerce.com/document/woopayments/currencies/available-currencies/",
+ "dir": "items/003-woocommerce.com",
+ "fetched_at": "2026-10-27T09:07:16Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/currencies/available-currencies/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46431,
+ "cited_in": [
+  "S-02 gap-closing, WC-1: cited"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0a51972bf7e388002da75db8c8943c8645ff9999c4273e41225f6ecd4c3b8989",
+ "raw_ext": "html"
+}

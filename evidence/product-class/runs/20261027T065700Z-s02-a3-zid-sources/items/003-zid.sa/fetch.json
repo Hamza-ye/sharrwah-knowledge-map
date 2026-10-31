@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://zid.sa/en/solutions/financing/",
+ "dir": "items/003-zid.sa",
+ "fetched_at": "2026-10-27T06:57:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/solutions/financing/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 40764,
+ "cited_in": [
+  "S-02 absence audit, Zid part 1: read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6875a86182c5f63fd42affa59c1ecde87db5e34b3ff8b139de92e603cf4a7afb",
+ "raw_ext": "html"
+}

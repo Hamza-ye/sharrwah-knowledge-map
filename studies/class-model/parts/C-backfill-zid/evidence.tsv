@@ -1,0 +1,4 @@
+cap_id	platform	supports	key	why
+CM-ORD-015	shopify	core	SH-C-084/boundary/SH-S-1299	own webhook topic orders/paid (also core in CM-PAY-020; the same topic is SH-I-0535, core in CM-ORD-001)
+CM-ORD-015	shopify	core	SH-C-079/boundary/SH-S-0386	orders with manual payments marked as unpaid on the Orders page (also core in CM-PAY-016)
+CM-ORD-015	shopify	core	SH-I-1087	staff permission MARK_ORDERS_AS_PAID (also core in CM-PAY-016)

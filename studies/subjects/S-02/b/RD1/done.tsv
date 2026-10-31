@@ -1,0 +1,134 @@
+task	id	bullet	outcome
+revisit	S02-V-164	c	replaced with an answer: stores in Saudi Arabia (S02-SA-349, S02-SA-350, S02-SA-358); 10 leads noted
+revisit	S02-V-168	c	replaced with gap S02-SA-G07; 7 leads noted, none answers
+revisit	S02-V-219	c	replaced with an answer, every store (10 leads), and a gap row for S02-SA-G05; 6 leads noted
+revisit	S02-V-218	c	replaced with an answer, every store (7 leads); added S02-V-242 (merchant's location, 4 leads) and S02-V-243 (where you are located, 2 leads); S02-SH-626 joined S02-V-101, S02-SH-614 also S02-V-105; 5 leads noted
+reread	S02-SH-441	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-442	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-443	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-444	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-445	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-446	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-448	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-267	c	placed: joined S02-V-108 (S02-VP-10), the business entity's country code
+reread	S02-SH-465	c	left noted: its words, identifier and scope (a list of stores) don't say whose country
+revisit	S02-V-089	b	replaced with an answer, the VAT number validated with the issuing country (S02-BC-277); gap S02-BC-G09 added beside it (S02-V-250); S02-BC-282 placed under S02-VP-06; 5 leads noted
+revisit	S02-V-090	b	replaced with an answer, the Manage Settings permission (S02-BC-261); added S02-V-251, the Information & Settings modify scope (S02-BC-205, 206, 207); 4 leads joined S02-V-099, the seller; S02-BC-260, 261 and 206 also under S02-VP-04; 11 leads noted
+revisit	S02-V-091	b	replaced with an answer, at any time (S02-BC-251); S02-BC-207, 254 and 261 placed under S02-VP-06; S02-BC-264 and 272 noted
+revisit	S02-V-026	d	replaced with an answer, nearly every country in the world (S02-SH-612)
+revisit	S02-V-084	b	replaced with an answer, Stripe checks the business details (S02-WC-258, 257, 260, 261); added S02-V-254, the platform's code checks the location's form (S02-WC-262), and gap S02-WC-G06 (S02-V-255); S02-WC-511 joined S02-V-098; S02-WC-259 joined S02-V-082 (S02-VP-04); S02-WC-512 noted
+revisit	S02-V-038	d	replaced with gap S02-ZD-G09; no leads
+reread	S02-SA-249	a	left noted: its identifier places the country in 'default_branch', a branch, which rule 1 keeps out
+reread	S02-SH-259	a	placed: joined S02-V-006 (S02-VP-01), by its identifier, combobox 'I'm located in:'
+reread	S02-SH-260	a	placed: joined S02-V-001 (S02-VP-01), by its identifier, 'Add business entity, country'
+reread	S02-SH-396	a	placed: joined S02-V-001 (S02-VP-01), by its identifier, the route that creates business details
+reread	S02-SH-260	b	already placed under (b), in S02-V-053 (S02-VP-04); no change
+reread	S02-SH-396	b	placed: joined S02-V-053 (S02-VP-04), the seller, by its identifier, the admin's form that creates business details
+reread	S02-SH-441	b	left noted: its scope now says whose country, the business entity's, but it names no one who sets, checks or changes it, nor a condition
+reread	S02-SH-448	b	left noted: its scope now says whose country, but its words give the fields' requirements, and name no one who sets, checks or changes it, nor a condition
+reread	S02-SH-259	d	left noted: its identifier names the merchant's location field, not where Shopify serves merchants
+reread	S02-ZD-148	a	placed: new row S02-V-256 (S02-VP-01), by its identifier, user.business_location
+reread	S02-ZD-149	a	left noted: its identifier says whose profile, the account user's, but not that its country is where the merchant is based, registered or resident
+reread	S02-ZD-148	b	left noted: its identifier names the business location, but it names no one who sets, checks or changes it, nor a condition
+note	S02-ZD-180	a	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces
+revisit	S02-V-226	c	replaced with gap S02-BC-G06; 3 leads noted, none names a decider
+revisit	S02-V-233	c	replaced with an answer, country of operation (S02-BC-223); 8 leads noted
+revisit	S02-V-236	c	replaced with an answer, every store (S02-BC-232, S02-BC-234), and gap S02-BC-G10 beside it; S02-BC-280 and S02-BC-281 placed under S02-VP-14; 4 leads noted
+revisit	S02-V-237	c	left not covered: its 3 leads name no decider, and A2 recorded no gap for the point; 3 leads noted
+revisit	S02-V-240	c	replaced with an answer, every store (S02-BC-237, S02-BC-238); 6 leads noted
+revisit	S02-V-194	c	replaced with an answer, the business's location answered at onboarding (S02-WC-263, a reading by source), and gap S02-WC-G07 beside it
+revisit	S02-V-200	c	replaced with an answer, the store's location (S02-WC-265, S02-WC-264); added the Business location field (S02-WC-267, S02-WC-268); S02-WC-265 also a new row under S02-VP-11
+revisit	S02-V-182	c	replaced with an answer, every store (S02-ZD-194, 193, 197, 203), and gap S02-ZD-G08 beside it; 14 leads noted
+note	S02-ZD-179	c	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces
+note	S02-ZD-180	c	noted: Saudi Terms in zid.eg's raw HTML, which the page as shown replaces
+revisit	S02-V-239	c	replaced with an answer, your location (S02-BC-243); added S02-V-284 (the default country's standard formats, S02-BC-285, 253), S02-V-285 (where the store is based, S02-BC-288 to 291) and gap S02-BC-G11 (S02-V-286); S02-BC-253 also under S02-VP-12; S02-BC-244 noted
+reread	S02-ZD-008	c	left noted: its source as recorded, Zid Payments' page (scope 'Zid Payments', no section in its identifier), holds sections for two countries, Saudi Arabia and Kuwait: tied to several (rule 4)
+reread	S02-ZD-112	c	placed: joined S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia or Kuwait, by each of the two sections its identifier names
+reread	S02-ZD-119	c	left noted: its source, the help centre's FAQ on sales channels (scope 'أمازون'), is tied to no country; its words name two, Saudi Arabia and the UAE
+reread	S02-ZD-122	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-123	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-154	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-155	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-174	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by its section's heading
+reread	S02-ZD-175	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by its section's heading
+reread	S02-ZD-347	c	left noted: its source, zid.sa's pricing page (scope 'zid.sa pricing page'), is tied by no words of the platform to one country, and zid.sa holds pages for several (S02-ZD-389 to S02-ZD-394's scopes)
+reread	S02-ZD-348	c	left noted: as S02-ZD-347, zid.sa's pricing page, tied to no one country
+reread	S02-ZD-349	c	left noted: as S02-ZD-347, zid.sa's pricing page, tied to no one country
+reread	S02-ZD-350	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-351	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-352	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-353	c	left noted: its source is two pricing pages (scope 'zid.eg and zid.sa pricing pages'), zid.eg's, tied to Egypt, and zid.sa's, tied by no words of the platform to one country
+reread	S02-ZD-367	c	placed: a new row S02-V-298 (S02-VP-08, Zid Egypt), and joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-369	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-370	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by the site zid.eg; its payment methods read as how the fees are billed
+reread	S02-ZD-371	c	placed: joined S02-V-181 (S02-VP-14), and a new row under S02-VP-15, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-372	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-373	c	placed: joined S02-V-172 (S02-VP-09) and S02-V-184 (S02-VP-16), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-374	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-376	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-378	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-379	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-380	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-381	c	placed: joined S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-382	c	placed: joined S02-V-298 (S02-VP-08) and S02-V-172 (S02-VP-09), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-383	c	placed: a new row under S02-VP-19 (Zid Egypt as data controller), the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-384	c	placed: the new row under S02-VP-19, with S02-ZD-383, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-385	c	placed: the new row under S02-VP-19, with S02-ZD-383, the merchant's country, Egypt, by the site zid.eg
+reread	S02-ZD-389	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt
+reread	S02-ZD-390	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Egypt, by zid.sa's page for Egypt
+reread	S02-ZD-391	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-392	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-393	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, the UAE, Kuwait or Oman, by each of its three pages
+reread	S02-ZD-394	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, the UAE, Kuwait or Oman, by each of its three pages
+reread	S02-ZD-398	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-400	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-401	c	placed: joined S02-V-175 (S02-VP-10) and S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-407	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-408	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-411	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-413	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-414	c	placed: joined S02-V-175 (S02-VP-10) and S02-V-177 (S02-VP-11), the merchant's country, Saudi Arabia, by Zid Payments' section
+reread	S02-ZD-418	c	placed: joined S02-V-181 (S02-VP-14) and S02-V-299 (S02-VP-15), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-419	c	placed: joined S02-V-180 (S02-VP-13), the merchant's country, Kuwait, by Zid Payments' section
+reread	S02-ZD-421	c	placed: joined S02-V-181 (S02-VP-14), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-422	c	placed: joined S02-V-179 (S02-VP-12), the merchant's country, Syria, by zid.sa's page for Syria
+reread	S02-ZD-423	c	placed: joined S02-V-175 (S02-VP-10), the merchant's country, Syria, by zid.sa's page for Syria
+revisit	S02-V-237	c	replaced with gap S02-BC-G15; its 3 leads (S02-BC-247, S02-BC-249, S02-BC-250) name no decider and stay noted
+revisit	S02-V-058	b	replaced with gap S02-SH-G09 (in place of S02-SH-G01); leads S02-SH-1031, S02-SH-1032 joined S02-V-059 (S02-VP-06), S02-V-066 and S02-V-267 (S02-VP-07); S02-SH-1033 noted
+reread	S02-ZD-420	c	placed: joined S02-V-185 (S02-VP-17), the merchant's country, Syria, by zid.sa's page for Syria (a reading)
+reread	S02-ZD-436	c	left noted: the plans' section names no country, and zid.sa's Arabic pages for the UAE, Kuwait and Oman are tied by their own hero to the Gulf (S02-ZD-444), several countries
+reread	S02-ZD-440	c	left noted: as S02-ZD-436
+reread	S02-ZD-443	c	left noted: as S02-ZD-436
+reread	S02-ZD-445	c	placed: joined S02-V-179 (S02-VP-12) and S02-V-185 (S02-VP-17), the merchant's country, the UAE or Oman, by sections each headed for one country (a reading)
+reread	S02-ZD-446	c	placed: joined S02-V-179 (S02-VP-12) and S02-V-185 (S02-VP-17), the merchant's country, Egypt or Kuwait, by sections each headed for one country (a reading)
+revisit	S02-V-058	b	replaced with gap S02-SH-G14 (in place of S02-SH-G09); new leads joined S02-V-059 (S02-VP-06), S02-V-066 and S02-V-267 (S02-VP-07, its evidence now naming S02-SH-G14); S02-SH-1072 raised S02-V-302 (S02-VP-07); S02-SH-1088, S02-SH-1089 noted; RD1-S5's leads unchanged
+revisit	S02-V-074	b	replaced with an answer: the store owner (S02-SA-483, marked AI-generated); S02-SA-483 also joined S02-V-095 (the seller); gap S02-SA-G16 (in place of S02-SA-G01) added beside as S02-V-307; S02-SA-477 to S02-SA-482 noted
+revisit	S02-V-075	b	replaced with gap S02-SA-G16 (in place of S02-SA-G01); no lead states a condition; S02-SA-483 placed under S02-VP-06; S02-SA-477 to S02-SA-482 noted
+revisit	S02-V-168	c	replaced with gap S02-SA-G18 (in place of S02-SA-G07); no lead names what decides a default: S02-SA-499, S02-SA-500, S02-SA-501, S02-SA-515, S02-SA-516 noted; S02-SA-387, 388, 390 to 393 and 400 stay noted
+revisit	S02-V-241	c	replaced with gap S02-SA-G17 (in place of S02-SA-G05); S02-SA-510, S02-SA-511, S02-SA-512 noted, no decider; earlier leads stay in S02-V-219 or noted
+revisit	S02-V-027	d	replaced with an answer: 'Other country', as the onboarding shows it (S02-SA-492); S02-SA-463, S02-SA-465, S02-SA-492 joined S02-V-020 (S02-VP-03, Saudi Arabia and the UAE); S02-SA-464, S02-SA-466, S02-SA-475, S02-SA-476 raised S02-V-304 (S02-VP-03, six countries) with the place task's S02-SA-491; gap S02-SA-G04 settled by gap-closing
+revisit	S02-V-077	b	replaced with gap S02-ZD-G30 (in place of S02-ZD-G02); S02-ZD-468 joined S02-V-078 (S02-VP-06, the seller); S02-ZD-469 raised S02-V-308 (S02-VP-07, district and street required at the save); S02-ZD-470 noted
+revisit	S02-V-170	c	replaced with gap S02-ZD-G31 (in place of S02-ZD-G03); S02-ZD-484 noted: the checkout's Terms link names no company and no decider
+revisit	S02-V-173	c	replaced with gap S02-ZD-G31 (in place of S02-ZD-G03); S02-ZD-484 noted: one Terms link for eight Business address countries names no decider and isn't every store
+revisit	S02-V-291	c	replaced with an answer: the Rise monthly checkout's VAT line by the Business address country (S02-ZD-476 to S02-ZD-483, a reading); gap S02-ZD-G32 (in place of S02-ZD-G08) added beside as S02-V-309; the same leads raised S02-V-310 (S02-VP-14, the billing currency); earlier leads stay in S02-V-182, S02-V-299 or noted
+revisit	S02-V-038	d	replaced with gap S02-ZD-G33 (in place of S02-ZD-G09); S02-ZD-475 noted (a list's options, no country kept out); absence S02-ZD-N17 contradicted by its audit, so no absent row
+revisit	S02-V-148	c	stays gap S02-SA-G02; S02-SA-504 joined S02-V-305 (S02-VP-10, the schema merchants_uae_kyb_workflow); S02-SA-505, S02-SA-506 joined S02-V-152 (S02-VP-10, the UAE store's documents, a reading); S02-SA-507, S02-SA-508, S02-SA-509 noted
+revisit	S02-V-074	b	by the coordinator's ruling on RD1-S7's call 1: replaced with gap S02-SA-G16; S02-SA-483 noted under (b), an AI-generated reply, a lead not an answer
+revisit	S02-V-307	b	by the coordinator's ruling on RD1-S7's call 1: removed, as S02-V-074 now holds gap S02-SA-G16
+revisit	S02-V-095	b	by the coordinator's ruling on RD1-S7's call 1: replaced without S02-SA-483, keeping S02-SA-179 and S02-SA-311, the excerpt and basis answers
+reread	S02-SA-256	c	placed: new row S02-V-311 (S02-VP-14), the merchant's country, the UAE, as the path en-ae ties the page (a reading, rule 4 under (c), 27 October)
+reread	S02-SA-295	c	placed: new row S02-V-312 (S02-VP-11), the merchant's country, Saudi Arabia, as the Saudi path ties the page (a reading, rule 4 under (c), 27 October)
+reread	S02-SA-501	c	placed: new row S02-V-313 (S02-VP-18), the store's country (kyc_country AE) for the currency AED, scoped to the one store, beside S02-V-168's gap (the coordinator's ruling on RD1-S7's call 8)
+revisit	S02-V-250	b	replaced with gap S02-BC-G16, in place of S02-BC-G09; S02-BC-378 joined S02-V-099 (S02-VP-06, the seller); S02-BC-380 noted; the earlier leads stay where they are
+revisit	S02-V-226	c	replaced with the same gap, S02-BC-G06, still open; S02-BC-385 joined S02-V-228 (S02-VP-11, the store's location, by its scope); S02-BC-218 to S02-BC-220 stay noted
+revisit	S02-V-237	c	replaced with an answer, every store, the Default Zone (S02-BC-371); gap S02-BC-G15 settled by gap-closing, gone; S02-BC-368, S02-BC-369, S02-BC-372, S02-BC-373, S02-BC-374 noted; S02-BC-247, S02-BC-249, S02-BC-250 stay noted
+revisit	S02-V-281	c	replaced with an answer, the account's billing contact's address (S02-BC-359 to S02-BC-365, a reading); gap S02-BC-G10 settled by gap-closing, gone; S02-BC-366, S02-BC-367 noted; earlier leads stay
+revisit	S02-V-286	c	replaced with gap S02-BC-G17, in place of S02-BC-G11; S02-BC-376 and S02-BC-377 joined S02-V-284 (the store's default country, a reading); S02-BC-375 and S02-BC-378 noted; the earlier leads stay
+revisit	S02-V-044	a	replaced with gap S02-WC-G10, in place of S02-WC-G01; S02-WC-521 joined S02-V-039 (Country / State, woocommerce_default_country); S02-WC-522 joined S02-V-041 (the Payments settings' business location, per user)
+revisit	S02-V-087	b	replaced with an answer, the change saved on a store with orders and tax rates (S02-WC-523, a reading); gap S02-WC-G09 added beside it; S02-WC-523 also joined S02-V-085 (S02-VP-06, the seller); S02-WC-524 to S02-WC-527 noted
+revisit	S02-V-255	b	replaced with an answer, the set-up's geolocation notice, the platform (S02-WC-530, S02-WC-529); gap S02-WC-G11 added beside it; S02-WC-531 noted; the earlier leads stay
+revisit	S02-V-288	c	replaced with gap S02-WC-G12, in place of S02-WC-G07; S02-WC-531 to S02-WC-535 noted (Stripe's tool is not stated to be WooPayments'); S02-WC-263 stays in S02-V-194
+revisit	S02-V-237	c	by the coordinator's ruling on RD1-S9's call 10: replaced with an answer, every store, a reading of one store under four default countries (S02-BC-369, which answers S02-BC-G15); S02-BC-371 noted under (c) as a tax zone
+revisit	S02-V-226	c	by the coordinator's ruling on RD1-S9's call 1: S02-BC-385 taken out of S02-V-228 and noted under (c); the row stays gap S02-BC-G06
+revisit	S02-V-044	a	replaced with gap S02-WC-G13, in place of S02-WC-G10; S02-WC-537 and S02-WC-539 to S02-WC-541 joined S02-V-042 (the WooPayments account's country); S02-WC-538 noted; S02-WC-521 and S02-WC-522 stay
+revisit	S02-V-314	b	removed: S02-WC-G09 is answered (S02-WC-537); S02-WC-536 joined S02-V-087 (S02-VP-07) and S02-V-085 (S02-VP-06, the seller); S02-WC-537, S02-WC-538 and S02-WC-542 noted; the earlier leads stay

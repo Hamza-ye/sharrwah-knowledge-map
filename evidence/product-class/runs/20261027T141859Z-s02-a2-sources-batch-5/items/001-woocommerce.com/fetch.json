@@ -1,0 +1,19 @@
+{
+ "n": 1,
+ "url": "https://woocommerce.com/document/woopayments/testing-and-troubleshooting/",
+ "dir": "items/001-woocommerce.com",
+ "fetched_at": "2026-10-27T14:18:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woopayments/testing-and-troubleshooting/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 46256,
+ "cited_in": [
+  "S02-WC-C621",
+  "S02-WC-C622"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "8db4c4fa8b38286735a2163625bcc7c0e97697a52c0ab507f56458a9dbae3e4e",
+ "raw_ext": "html"
+}

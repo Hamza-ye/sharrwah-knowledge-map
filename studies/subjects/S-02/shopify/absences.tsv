@@ -1,0 +1,4 @@
+absence_id	bullet	what_is_absent	list_cite_ids	complete_cite_ids	note
+S02-SH-N01	e	A market condition type for a city: the enumerated type MarketConditionType holds REGION, LOCATION, COMPANY_LOCATION and CHANNEL, and none for a city	S02-SH-C437	S02-SH-C511	MarketConditionsRegionInput takes a countryCode and a subdivision such as a province or state (S02-SH-279 and the schema type, read 2026-10-26).
+S02-SH-N02	e	A market condition type for a storefront: the enumerated type MarketConditionType holds REGION, LOCATION, COMPANY_LOCATION and CHANNEL, and none for a storefront	S02-SH-C437	S02-SH-C511	
+S02-SH-N03	e	A market condition type for a group of customers other than a company location, such as a customer segment: the enumerated type MarketConditionType holds REGION, LOCATION, COMPANY_LOCATION and CHANNEL	S02-SH-C437	S02-SH-C511	

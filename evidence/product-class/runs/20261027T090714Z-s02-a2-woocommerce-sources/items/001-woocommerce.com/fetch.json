@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://woocommerce.com/document/premium-payment-gateway-extensions/",
+ "dir": "items/001-woocommerce.com",
+ "fetched_at": "2026-10-27T09:07:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/premium-payment-gateway-extensions/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 41287,
+ "cited_in": [
+  "S-02 gap-closing, WC-1: cited"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2951cccfa4e01b6b8a0ac4e9566c5f2493d3c37a3cc8c252fc7320e1e93f64b4",
+ "raw_ext": "html"
+}

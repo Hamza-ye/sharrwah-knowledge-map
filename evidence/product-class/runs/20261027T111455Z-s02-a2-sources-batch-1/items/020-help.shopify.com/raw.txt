@@ -1,0 +1,134 @@
+# Overview of expansion stores for organizations on the Shopify Plus plan
+
+Expansion stores are additional `.myshopify.com` stores that fall under the same organization and contract on your Shopify Plus plan. This allows you to create separate stores, each with their own unique store settings, configurations, and storefronts, and maintain centralized organization-level management for users and billing.
+
+Expansion stores let you create dedicated stores for specialized situations or focuses for your business:
+
+* **International expansion**: Identical brand/name and products offered in a different language, region, or currency.
+* **Product line extensions**: Identical brands but differing products as a way to extend current product offerings. For example, expanding from camping tents to coolers.
+* **B2B stores**: Stores with identical products and brands for wholesale customers.
+* **Employee or VIP stores**: Member-only or employee swag stores that are part of the main business.
+* **Physical retail locations**: 100% physical retail stores with no online transactions.
+
+<aside class="note"><h4>Note</h4><p>You can create and access <strong>Dev stores</strong> for app development in the <a href="https://dev.shopify.com/dashboard/">Dev Dashboard</a>. <a href="https://shopify.dev/docs/apps/build/dev-dashboard/development-stores">Dev stores</a> can use <a href="https://shopify.dev/docs/api/feature-previews">feature previews</a>, demo data, and <a href="https://shopify.dev/docs/apps/build/cli-for-apps/test-apps-locally">app development</a> features, but can&#39;t process transactions.</p>
+</aside>
+
+## Considerations for expansion stores on the Shopify Plus plan
+
+Before setting up expansion stores, review the following considerations for how they operate within your Shopify Plus plan organization:
+
+* Although your organization settings allow you to manage users and billing centrally across all stores, each individual store operates completely independently with its own separate data, settings, and configurations.
+* Store settings, products, collections, and inventory aren't synced between stores. They don't share data by default.
+* Changes made to one specific store aren't reflected across other stores in the organization. However, you can use third-party apps or Enterprise Resource Planning (ERP) systems to sync certain data, such as inventory, between stores if required.
+* Apps are billed on a per-store basis rather than for the entire organization.
+* Theme licenses are required for each individual store, and a license can't be shared across stores. A paid theme that you import into a staging store is flagged as unlicensed, and can't be customized or published until that store has its own license. Learn more about [theme licensing for Shopify Plus](/manual/online-store/themes/managing-themes/unlicensed-themes#theme-licensing-for-shopify-plus).
+* During the process of creating a store, you're asked to [provide a purpose](/manual/your-account/manage-orgs-and-stores/manage-orgs/view-filter-stores#store-type) for your new store. The purpose that you select might affect the billing or setup of your store, but won't restrict its features or capabilities. If you're not sure which option to choose, then contact Shopify Plus Support.
+* When you create a store, it's usually added to your organization immediately. However, if the requested store exceeds your contract limits, then a trial store is created instead. A request is sent to Shopify Plus to add the additional store, and you're prompted to approve an extra fee. Within a few days, your request is processed and your trial store is upgraded. You receive an email confirming the change.
+* When you import a theme into a new store, any references to files that are hard-coded in that theme continue to point to the files in the original existing store. If a file in the original store is deleted, then the link to that file is broken in the theme in your new store. To prevent links from being broken, make sure that you import files when you import themes, and that you update any URLs in your theme so that they point to the files in your new store.
+
+## Number of stores available
+
+Shopify Plus plan organizations can have a maximum of ten stores on their contract with no additional cost:
+
+* One main store.
+* Nine expansion stores.
+* Staging stores don’t count towards the ten store limit.
+
+If you want more than ten stores, then you need to contact Shopify Support. 
+
+## Eligibility requirements for expansion stores on standard Shopify Plus plan contracts
+
+The requirements for expansion stores are the same whether the store operates online or as a physical retail location. Expansion stores must adhere to all of the following conditions:
+
+* Be extensions of the main brand.
+* Be identical to the main brand with respect to store name and other branding.
+* Carry the same types of goods and services as the main brand.
+* Have a billing currency set to USD or INR. Only stores billed in USD or INR can be added to a Plus agreement.
+
+<aside class="note"><h4>Note</h4><p>Online stores might differ in language and applicable currency. The billing currency requirement of USD or INR is separate from your store&#39;s selling currency.</p>
+</aside>
+
+### Change your billing currency for an expansion store
+
+If your store uses a billing currency other than USD or INR, then you need to change it before the store can be added to your Plus agreement. Changing your billing currency immediately bills any pending charges.
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** > [**Billing**](https://admin.shopify.com/settings/billing).
+2. In the **Payment details** section, click **Billing currency**.
+3. Click **Change billing currency**.
+4. Select **USD** or **INR** as your new billing currency.
+5. Review any pending charges, and then click **Confirm**.
+
+## Pre-approved expansion store types
+
+The following expansion store types are automatically eligible:
+
+* **International stores**: Identical brand/name and products in different languages, region, or currency. For example, <kbd>abc123.com</kbd>, <kbd>abc123.ca</kbd>, <kbd>abc123.com.au</kbd>.
+* **B2B wholesale stores**: Identical products as the main brand, requires user login and B2B organization association. Limit of one free B2B store per contract.
+* **D2C stores for wholesale merchants**: For merchants exclusively selling wholesale who want to create a direct-to-consumer (D2C) storefront with identical products. Limit of 1 free B2C store per contract.
+* **Employee-only stores**: Part of main business reflecting the same brand, not available to the general public.
+* **Physical retail locations**: 100% physical retail with no online transactions, identical branding, name, and products to the main brand.
+
+## Add another store {#add-store}
+
+You can add expansion stores to your organization on the Shopify Plus plan using one of the two following methods:
+
+* [Create a new store](/manual/organization-settings/expansion-stores#create-new-store)
+* [Add an existing store](/manual/organization-settings/expansion-stores#add-existing-store)
+
+### Importing data from an existing store
+
+When you create a store, you can import the following data from a store that already exists in your organization:
+
+* Themes: include themes from your selected store.
+* Products and collections: includes all products, variants, collections, and their metafields (excluding reference types and category metafields) that you have on your selected store.
+* Files: includes all images, videos, and files you've uploaded to your selected store.
+
+You can import data only from another store in your organization when you create the store. After you create the store, you can no longer import data and you must manually manage your store data.
+
+### Create a new store {#create-new-store}
+
+You can create an expansion store in the **Organization** section of your Shopify admin.
+
+<aside class="note"><h4>Note</h4><p>Before creating a new store in your organization, your main store must have a payment method added under <strong>Settings &gt; Billing</strong> and a complete billing address under <strong>Settings &gt; General &gt; Store Details &gt; Store address</strong>.</p>
+</aside>
+
+#### Steps:
+
+1. From your Shopify admin, go to **Settings** > [**Organization**](https://admin.shopify.com/settings/organization-details).
+
+2. Click **Create store**.
+3. In the **Store type** section, select whether the store is for **Staging** or **Production**.
+5. In the **Profile** section, enter a name and a store URL.
+6. Optional: In the **Internal name and icon** section, enter a name and a two-letter or three-letter initial for the store. The name and initials that you enter in this section display within the Shopify admin only, and don't display to customers.
+7. Optional: To import data, in the **Import data from an existing store** section, click **Select store**, and then select the store.
+8. Optional: Select the data that you want to copy to your new store by completing any of the following steps:
+    * To select a theme, do either of the following:
+        * If there is more than one theme in the store that you selected, then click **Select themes** to select the themes that you want to copy.
+        * If there is only one theme in the store that you selected, then select **Themes** to copy the theme.
+    * Select **Products and Collections** to copy all the products, variants, and their metafields (excluding reference types).
+    * Select **Files** to copy all files, including all images and videos.
+9. Click **Create Store**.
+
+### Add an existing store {#add-existing-store}
+
+If you have an existing store, such as a trial store, existing store, or partner-created store, that you want to add as an expansion store, then you can request this through a manual process.
+
+You must meet the following prerequisites to add a store:
+
+* The request must be initiated or confirmed by store owners of both stores:
+    * The store owner of the main billing store or organization owner.
+    * The store owner of the requested expansion store.
+* If stores have different store owners, then the request must be moved to email with both owners copied in the message and confirming the request with a reply-all email.
+
+#### Steps:
+
+1. Ensure your proposed expansion store meets the eligibility requirements.
+2. Contact Shopify Plus Support with your request.
+3. Provide confirmation from both account owners.
+4. Wait for Shopify review and approval.
+
+## Alternative options for non-qualifying stores
+
+If your proposed store doesn't meet the expansion store criteria, then you might be eligible for a multi-brand agreement, which allows multiple brands under one organization but requires each brand to have its own separate Shopify Plus plan subscription. Contact Shopify Support to discuss multi-brand options and pricing details.

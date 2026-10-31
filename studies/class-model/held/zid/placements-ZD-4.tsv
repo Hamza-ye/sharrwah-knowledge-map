@@ -1,0 +1,225 @@
+entry_id	placement	cap_id	supports	scope	terms	filler	quality	reading
+ZD-E-29f102f6	capability	CM-ACC-001	core		email-confirmation			a reading: the confirmation of the merchant account's email from an emailed link; opened without one: 'This link is invalid or has expired' (page text rest-en#12); with ZD-1's registration routes
+ZD-E-29c7eb50	capability	CM-ACC-001	core		register;location			a reading: the location step of the merchant's registration (module register_.location imports countries-citites); redirected on the demo (ledger); as ZD-1's register routes
+ZD-E-29c7eb50	capability	CM-ONB-001	core		register;location			a reading: the location the merchant gives at registration, the cell's country at sign-up; the module imports countries-citites; redirected on the demo (ledger)
+ZD-E-40b40616	capability	CM-ACC-001	core		register;complete			a reading: the last step of the merchant's registration (module imports resolve-post-auth-redirect); redirected on the demo (ledger); as ZD-1's register routes
+ZD-E-2cf94a51	capability	CM-ACC-001	core		register;details			a reading: the details step of the merchant's registration; redirected on the demo (ledger); as ZD-1's register routes
+ZD-E-925d05f8	capability	CM-TRU-001	core		login			a reading: a sign-in to the dashboard by a one-time token (otl); the partner dashboard's link to the development store opened it (devstore-markets-en, actions.jsonl); as ZD-1's login/impersonate; unsure (notes)
+ZD-E-1005e893	capability	CM-ACC-001	core		register;mobile			a reading: the mobile number step of the merchant's registration; redirected on the demo (ledger); as ZD-1's register routes
+ZD-E-470187ae	capability	CM-ANL-003	core		stores			a reading: the store's own route, parent of every route of the store's dashboard (a container, its children in the notes); its own page is the store's home, 'Welcome back, Zid Demo Store' with the last 90 days and quick access (page text en#2)
+ZD-E-af5d4e29	capability	CM-CNT-008	core		legal;complaints-and-suggestions			a reading: the legal page for complaints and suggestions, one of the legal pages' kinds in the cell; 'Add complaints & suggestions information for your store' (page text gaps-en#25)
+ZD-E-ed8dc832	capability	CM-CHN-003	core		marketplaces;inventory-management-settings			a reading: the marketplace connection's inventory syncing settings, 'Pull inventory quantities from FBx (Fulfilled by the marketplace)' for all marketplaces (page text rest-en#17)
+ZD-E-2ef500a5	capability	CM-CNT-008	core		legal;terms-and-conditions			a reading: the legal page Terms and conditions, a kind the cell names (page text gaps-en#24)
+ZD-E-5361e877	capability	CM-CNT-008	core		legal;exchange-and-returns			a reading: the legal page Exchange and returns, the store's return and exchange policy, a kind the cell names (page text gaps-en#23)
+ZD-E-2174eb6d	capability	CM-CHN-003	core		marketplaces;inventory-management			a reading: one item of the marketplace connection's inventory management, by its id; not opened
+ZD-E-4c118460	capability	CM-CHN-003	core		marketplaces;jahez-branches	Jahez		a reading: the marketplace connection's settings for Jahez's branches (module imports inventories-details-table); opened with an empty page (rest-en#18)
+ZD-E-4c118460	capability	CM-INV-005	core		jahez-branches	Jahez		a reading: branches, which the module joins to the store's inventories (imports inventories-details-table); opened with an empty page (rest-en#18); unsure (notes)
+ZD-E-7a76ed2d	capability	CM-POS-001	core		pos;invoice-templates			a reading: the editor of one POS invoice template, by its id; not opened
+ZD-E-7a76ed2d	capability	CM-ORD-008	core		invoice-templates			a reading: an invoice template of the POS, the invoice a sale issues; not opened
+ZD-E-4b487e1c	capability	CM-CHN-003	core		marketplaces;activation			a reading: activating one marketplace in the marketplace connection (module imports amazon-acceptable-use-policy-dialog); not opened
+ZD-E-114f5af8	capability	CM-SHP-001	core		logistics;shipping-prioritization			a reading: shipping prioritization in the logistics settings, the carriers' priority the cell's shipping settings set (ZD-S-0855); opened with an empty page (rest-en#19)
+ZD-E-114f5af8	capability	CM-SHP-015	core		shipping-prioritization			a reading: the priority among the store's shipping carriers; opened with an empty page (rest-en#19)
+ZD-E-ba06ba49	capability	CM-INV-006	core		transfer-requests;receive			a reading: receiving one inventory transfer request, by its id; not opened
+ZD-E-0962482d	capability	CM-SHP-015	core		logistics;integrations-not-activated			a reading: one external shipping integration not yet activated, by its id, as the integrations list shows carriers 'Not activated' (page text rest-en#99); not opened
+ZD-E-f40f3bb7	capability	CM-CNT-008	core		legal;privacy-policy			a reading: the legal page Privacy policy, a kind the cell names; 'Privacy policy for your store' (page text gaps-en#22)
+ZD-E-03e88ab7	capability	CM-CHN-003	core		marketplaces;inventory-management			a reading: the marketplace connection's inventory management, 'Inventory general configuration', with FBX and FBM per account (page text rest-en#20)
+ZD-E-02a6472f	capability	CM-SHP-008	core		local-delivery;configure			a reading: configuring one local delivery option, by its id (module imports tier-countries-cities-selector); not opened
+ZD-E-ef6cc22c	capability	CM-SHP-015	core		logistics;integrations;create-tier			a reading: creating a tier of one external shipping integration (module imports price-zone-form-pricing-options, tier-countries-cities-selector); not opened
+ZD-E-ef6cc22c	capability	CM-SHP-001	core		create-tier			a reading: a tier is a price by countries and cities (module imports price-zone-form-pricing-options, tier-countries-cities-selector), the cell's shipping rates; not opened
+ZD-E-55ec38b2	capability	CM-SHP-015	core		custom-shipping			a reading: creating a pricing zone of one custom shipping method, a carrier connected by the merchant's own API key (see 38); module imports use-add-pricing-zone-schema; not opened
+ZD-E-5f02e368	capability	CM-CHN-003	core		marketplaces;price-configuration			a reading: the marketplace connection's price configuration: 'General pricing configuration will apply to any product that is already linked or any new product that becomes linked.' (page text rest-en#21)
+ZD-E-be718b56	capability	CM-MKT-022	core		abandoned-carts			a reading: creating an abandoned cart reminder, 'Create abandoned cart reminder', sent automatically or manually (page text rest-en#22); with ZD-1's Abandoned cart reminders
+ZD-E-2321f59a	capability	CM-POS-001	core		pos;invoice-templates			a reading: the editor of a new POS invoice template: template name, inventory location, header, body and footer (page text rest-en#23)
+ZD-E-2321f59a	capability	CM-ORD-008	core		invoice-templates			a reading: the POS invoice's template, with invoice number, date and barcode fields (page text rest-en#23)
+ZD-E-38df0fb1	capability	CM-INV-006	core		transfer-requests;edit			a reading: editing one inventory transfer request; not opened
+ZD-E-9dde98f4	capability	CM-NTF-004	core		whatsapp;account-information	WhatsApp		a reading: the WhatsApp account's information in the WhatsApp settings (module imports display-name-status-tag, with-whatsapp-active-guard); opened: 'Oops! Something broke' (rest-en#24)
+ZD-E-5df51db9	capability	CM-SHP-001	core		shipping-methods;add			a reading: adding a pricing zone to one shipping method, by its code (module imports use-add-pricing-zone-schema); not opened; with ZD-1's Shipping methods
+ZD-E-ae59ead0	capability	CM-SHP-001	core		shipping-methods			a reading: one pricing zone of a shipping method (module imports pricing-zone-edit); not opened
+ZD-E-291a170c	capability	CM-PAY-011	core		other-payment-providers			a reading: one of the other payment providers, by its id, in the cell's section of other gateways; the module imports madfu_logo and emkanpay (notes); not opened
+ZD-E-ea734a3c	capability	CM-PAY-029	core		logistics;bank-account			a reading: a bank account in the logistics settings (module imports select-bank, ibantools), read as the account that the shipments' COD settlement pays (page text rest-en#32); not opened; unsure (notes)
+ZD-E-7e308e1d	capability	CM-SHP-015	core		custom-shipping			a reading: one pricing zone of a custom shipping method (module imports pricing-zone-edit); not opened
+ZD-E-0195be45	capability	CM-CNT-004	core		blog;categories;create			a reading: creating a blog category, 'Display category on the blog' (page text rest-en#25)
+ZD-E-ee7fff35	capability	CM-CHN-003	core		marketplaces;price-management			a reading: the marketplace connection's product prices; 'Price changes are sent to marketplaces instantly' (page text rest-en#26)
+ZD-E-687204a2	capability	CM-MKT-022	core		abandoned-carts			a reading: one abandoned cart reminder, by its id; not opened
+ZD-E-095d3dca	capability	CM-SHP-008	core		local-delivery			a reading: one tier of a local delivery option (module imports other-shipping-provider-details-tier-edit); not opened
+ZD-E-095d3dca	capability	CM-SHP-001	core		tier			a reading: a tier's price by countries and cities (module imports price-zone-form-pricing-options, tier-countries-cities-selector); not opened
+ZD-E-0cf2e9ae	capability	CM-SHP-015	core		custom-shipping;configure			a reading: 'Manage custom shipping methods': select a courier and enter its API key (page text rest-en#27), the cell's custom connection with a carrier under the merchant's own contract (ZD-S-0849)
+ZD-E-44915c2f	capability	CM-CHN-002	core		mazeed;settlements			a reading: one Mazeed settlement, by its id (module imports printable-components); not opened
+ZD-E-44915c2f	capability	CM-PAY-005	core		settlements			a reading: one settlement of Mazeed's dues to the store, the cell's Mazeed financial dues (ZD-C-024); not opened
+ZD-E-455e109f	capability	CM-INV-006	core		transfer-requests;create			a reading: 'Create transfer request' between a source and a destination inventory (page text rest-en#28)
+ZD-E-cdd7907f	capability	CM-INV-003	core		stock-taking;review			a reading: reviewing one stocktake; not opened
+ZD-E-74a75376	capability	CM-CUS-008	core		customize-address;create			a reading: creating an address customization for a country: district, street, building number, zip code and recipient's national ID, each optional or mandatory (page text rest-en#29)
+ZD-E-b2a93848	capability	CM-PAY-005	core		payouts			a reading: one payout's operation, by its reference number (module imports bank-id-to-logo, payments-verify-nafath-banner); not opened
+ZD-E-7f48db35	capability	CM-SEL-006	core		bundle-offers;fixed-price			a reading: 'Create fixed-price bundle' (page text rest-en#30); with ZD-1's Bundle offers
+ZD-E-d06bed1d	capability	CM-CNT-008	core		legal;licenses			a reading: the legal page Licenses, a kind the cell names; 'Add licenses information for your store', shown on the footer (page text gaps-en#26)
+ZD-E-a9365cfc	capability	CM-SHP-002	core		logistics;sender-profile			a reading: 'Shipping sender information': 'Add sender details per inventory for shipping labels and contacts.' (page text rest-en#31)
+ZD-E-4978a6e5	capability	CM-SHP-015	core		logistics;integrations			a reading: one tier of an external shipping integration (module imports other-shipping-provider-details-tier-edit); not opened
+ZD-E-4978a6e5	capability	CM-SHP-001	core		tier			a reading: a tier's price by countries and cities (module imports price-zone-form-pricing-options, tier-countries-cities-selector); not opened
+ZD-E-4795c451	capability	CM-CNT-004	core		blog;categories			a reading: one blog category, by its id; not opened
+ZD-E-4e5c49ee	capability	CM-SHP-001	core		shipping-methods			a reading: one shipping method, by its code (module imports service-level-faqs, global-customization); not opened
+ZD-E-c4c9baeb	capability	CM-SHP-002	core		shipments;transactions			a reading: 'Shipping transactions', shipping fees and COD settlement: 'Once you start generating shipping labels, charges and settlements will appear here' (page text rest-en#32); as ZD-1's Transactions log
+ZD-E-c4c9baeb	capability	CM-PAY-029	core		transactions			a reading: the COD settlement of the shipments' transactions (page text rest-en#32); as ZD-1's Transactions log
+ZD-E-10623a4f	capability	CM-SHP-015	core		custom-shipping-methods			a reading: the list of custom shipping methods by ship-from inventory, 'Select a Ship-from Inventory Location to load shipping methods.' (page text rest-en#33)
+ZD-E-f1f3de79	capability	CM-SHP-015	core		activate-logistics			a reading: activating one logistics provider, by its id (module imports courier-options, select-city), the cell's shipping activated through logistics companies from within the site (ZD-S-0848); not opened
+ZD-E-ab567fee	capability	CM-LOY-004	core		loyalty-programs;points;content			a reading: the loyalty points programme's content; redirected to marketing/loyalty/content (ledger), the loyalty program
+ZD-E-cc93a4fc	capability	CM-LOY-004	core		loyalty-programs;mokafaa-program	Mokafaa		a reading: the Mokafaa programme among the loyalty programmes; redirected to marketing/mokafaa (ledger), ZD-1's Mokafaa program
+ZD-E-cc93a4fc	capability	CM-PAY-012	core		mokafaa-program			a reading: Mokafaa's points, which pay in the store, as ZD-1's Mokafaa program; redirected to marketing/mokafaa (ledger)
+ZD-E-125a113f	capability	CM-CHN-003	core		marketplaces			a reading: the marketplace connection's list of marketplaces to connect, 'Activate your accounts on many different marketplace.', Mazeed among them (page text rest-en#36)
+ZD-E-c0e611d0	capability	CM-INV-006	core		transfer-requests			a reading: one inventory transfer request, by its id; not opened
+ZD-E-034b29be	capability	CM-CUS-008	core		customize-address			a reading: one country's address customization, by its id (module imports build-address-field-settings, select-country); not opened
+ZD-E-77b87dcd	capability	CM-SUP-004	core		whatsapp;quick-replies	WhatsApp		a reading: quick replies in the WhatsApp chat (module imports use-saved-responses, chat-bubble-plus); opened: 'Oops! Something broke' (rest-en#37); with ZD-1's Live chat
+ZD-E-a3e4b71f	capability	CM-PAY-011	core		other-payment-providers			a reading: 'Other payment providers' (page text rest-en#38), the cell's section of other gateways
+ZD-E-0b302117	capability	CM-SHP-015	core		custom-shipping			a reading: one custom shipping method, by its code (module imports prepare-custom-shipping-credentials-payload); not opened
+ZD-E-6aac8235	capability	CM-CHN-003	core		marketplaces;get-started			a reading: the marketplace connection's start page; redirected to channels/marketplaces/connect (ledger)
+ZD-E-dec24efa	capability	CM-INV-006	core		auto-restock			a reading: one auto restock rule, which creates transfer requests (see 153); not opened
+ZD-E-3fb35ae8	capability	CM-MKT-022	core		abandoned-carts			a reading: the list of abandoned cart reminders, by SMS, email and WhatsApp (page text rest-en#40); ZD-1's Abandoned cart reminders
+ZD-E-d00a35a1	capability	CM-SUP-004	core		whatsapp;store-widget	WhatsApp		a reading: the store's WhatsApp widget (module imports widget-defaults), a way buyers reach the store's WhatsApp chat; opened: 'Oops! Something broke' (rest-en#41); unsure (notes)
+ZD-E-0a1b5b6b	capability	CM-SUP-004	core		whatsapp;auto-replies	WhatsApp		a reading: WhatsApp's automatic replies, as ZD-1's Automatic replies; opened: 'Oops! Something broke' (rest-en#42)
+ZD-E-e9e15be5	capability	CM-POS-001	core		pos;invoice-templates			a reading: the POS invoice templates: 'Customize your invoice by adjusting templates, and fields to fit your needs' (page text rest-en#43)
+ZD-E-e9e15be5	capability	CM-ORD-008	core		invoice-templates			a reading: templates of the invoice the POS issues (page text rest-en#43)
+ZD-E-4054041d	capability	CM-INV-010	core	new-zones-feature-guard	online-store;location			a reading: the online store's customer location settings: its title is pages:onlineStoreSettingsLocation.title, Arabic موقع العميل, and the locales say the customer location settings were relocated to the online store settings (dashboard-locales, inventories:cityBasedProducts.relocatedAlert.description); opened: 'This feature is not enabled for your store.' (gaps-en#40); the gate is the module's import new-zones-feature-guard, a reading
+ZD-E-12e51db1	capability	CM-CNT-004	core		blog;tags;create			a reading: creating a blog tag, 'Choose blog posts you want to add to the tag' (page text rest-en#44)
+ZD-E-44011e34	capability	CM-CHN-002	core		mazeed;settlements			a reading: Mazeed's settlements: 'Settlements moved to Zid Wallet' (page text rest-en#45)
+ZD-E-44011e34	capability	CM-PAY-005	core		settlements			a reading: the settlement of Mazeed's dues, the cell's Mazeed financial dues (ZD-C-024), now 'moved to Zid Wallet' (page text rest-en#45)
+ZD-E-003a5693	capability	CM-INV-003	core		stock-taking;create			a reading: 'Create count stocktaking' (page text rest-en#46)
+ZD-E-d89eafc0	capability	CM-INV-006	core		auto-restock;create			a reading: 'Create Auto Restock Transfer': source and destination inventory, minimum stock level, frequency (page text rest-en#47)
+ZD-E-50fea8f5	capability	CM-MKT-016	core		stock-notifications;settings			a reading: 'Stock notification settings': sending time after restocking, an offer, the channel (page text rest-en#48)
+ZD-E-cb4056a3	capability	CM-POS-001	core		pos;general-settings			a reading: the POS general settings, 'Enable location-based POS access' (page text rest-en#49)
+ZD-E-6b8f942f	capability	CM-INV-009	core		withdrawal-priority			a reading: 'Priority for withdrawal from warehouse' (page text gaps-en#35); ZD-1's Withdrawal priority
+ZD-E-58ea454e	new	new:Similar products	core		similar-products			a reading: one product's similar products (module imports select-products-dialog), chosen by the merchant; no capability holds them (notes); not opened
+ZD-E-28409ae3	capability	CM-SUP-004	core		whatsapp;auto-reply	WhatsApp		a reading: one WhatsApp automatic reply (module imports whatsapp-message-preview); opened: 'Oops! Something broke' (rest-en#50)
+ZD-E-68cb4514	capability	CM-SHP-008	core		local-delivery			a reading: one local delivery option, by its id (module imports expected-delivery-date-settings); not opened
+ZD-E-f3fa4a49	capability	CM-POS-001	core		pos;payment-methods			a reading: the POS payment methods: Credit Card, Cash, Payment Link and Split (page text rest-en#51)
+ZD-E-e998e0dd	capability	CM-POS-001	core		pos;reports;sessions-history			a reading: the POS 'Sessions history', by cashier, with cash and credit card (page text rest-en#52); with ZD-1's POS Reports
+ZD-E-b55acb14	capability	CM-CAT-014	core	new-zones-feature-guard	online-store;badges			a reading: the online store's badges, such as Pickup only and Quick delivery shown on products (dashboard-locales, online-store-settings:badges.pickup.title and badges.quickDelivery.title); opened: 'This feature is not enabled for your store.' (rest-en#53); the gate is the module's import new-zones-feature-guard, a reading
+ZD-E-413f1967	capability	CM-CNT-007	core		seo;store-pages			a reading: 'Customize how Zid-generated pages appear in search results.' (page text rest-en#54); ZD-1's Store pages
+ZD-E-94b9f694	capability	CM-CNT-004	core		blog;categories			a reading: the blog's categories; redirected to the store's blog (ledger); ZD-1's Categories
+ZD-E-bea9407a	capability	CM-CHN-006	core		mobile-app;push-notifications			a reading: the store's mobile app: 'Through this form you can send notifications to your store app users' (page text rest-en#56)
+ZD-E-bea9407a	capability	CM-MKT-007	core		push-notifications			a reading: notifications the merchant sends to the app's users, as the cell's app notifications campaigns are (Salla's term); a reading, unsure (notes)
+ZD-E-7ba93c4c	capability	CM-CHN-003	core		marketplaces;settings			a reading: the marketplace connection's settings, 'Import orders configuration' per marketplace account (page text rest-en#57)
+ZD-E-a85f91b2	capability	CM-CHN-003	core		marketplaces;products			a reading: the marketplace connection's products, with link status (page text rest-en#58)
+ZD-E-fb73c32c	capability	CM-MKS-001	core		markets;price-managing			a reading: managing one market's prices; opened on the development store: 'Oops! Something broke' (devstore-markets-en#17); GAPS.md holds prices per market as not held
+ZD-E-c9b92515	capability	CM-MKT-001	core		discounts;bulk-edit			a reading: editing several discounts at once; not opened; with ZD-1's Discounts
+ZD-E-c9b92515	capability	CM-MKT-002	core		discounts			a reading: discounts, as ZD-1's Discounts (codes); not opened
+ZD-E-d1e68308	capability	CM-CNT-004	core		blog;tags			a reading: one blog tag, by its id; not opened
+ZD-E-e2738f45	capability	CM-CHN-002	core		mazeed;settings			a reading: 'Mazeed management' settings: the owner and an operation coordinator for Mazeed's team (page text rest-en#59)
+ZD-E-7b8d370c	capability	CM-CHN-002	core		mazeed;products			a reading: the store's products on Mazeed, with Mazeed's 'Acceptance & presentation guidelines' (page text rest-en#60)
+ZD-E-c72bdfcb	capability	CM-INV-006	core		transfer-requests			a reading: the list of 'Transfer requests' (page text rest-en#61); ZD-1's Stock transfer requests
+ZD-E-56ec59c9	capability	CM-INV-003	core		stock-taking			a reading: one stocktake, by its id; not opened
+ZD-E-180a1a1c	capability	CM-CAT-002	core		create-variant			a reading: creating a variant of one product; not opened
+ZD-E-e40a7494	capability	CM-SEL-005	core		preorder-campaigns;edit			a reading: editing one pre-order campaign; not opened; with ZD-1's Preorder campaigns
+ZD-E-f7faca1c	capability	CM-SUP-004	core		whatsapp-editor;auto-replies			a reading: the editor of WhatsApp automatic replies (module imports flow-editor, with-whatsapp-active-guard); opened: 'Oops! Something broke' (rest-en#62)
+ZD-E-c1e74512	capability	CM-NTF-004	core		communications;sender-name			a reading: 'Custom sender name' for SMS, bought with a yearly renewal; 'Service activation requires Zid team review and may be delayed due to regulatory checks by the provider (Unifonic).' (page text rest-en#63); the cell's sender name
+ZD-E-937d1432	capability	CM-CUS-008	core		customize-address			a reading: the checkout's address settings: 'Activate national address (SPL)' and 'Customize the address according to the country' (page text gaps-en#7), the cell's checkout setting for the customer's address
+ZD-E-36e73045	capability	CM-PAY-032	core		payment-links			a reading: one payment link, by its id; not opened
+ZD-E-d4c122dc	capability	CM-PAY-003	core		payments;onboarding;nafath			a reading: the Nafath step of the payments onboarding; redirected to services/payments (ledger); the cell's Zid Pay activation
+ZD-E-d4c122dc	capability	CM-TRU-002	core		nafath	Nafath		a reading: verifying the store owner's identity through Nafath in the payments onboarding, the cell's own step (ZD-S-0775); redirected (ledger)
+ZD-E-1c6ebc27	capability	CM-SHP-007	core		store-pickup			a reading: one pickup in store option, by its id (module imports expected-delivery-date-settings); not opened
+ZD-E-15615962	capability	CM-SHP-015	core		logistics;integrations			a reading: one external shipping integration, by its id (module imports other-shipping-provider-tiers-table); not opened
+ZD-E-2d9dc81c	capability	CM-PTN-005	core		growth;terms-and-conditions			a reading: the Growth services' terms: 'Dear Merchant, the following terms and conditions have been drafted to ensure the service is provided to you with the best possible quality' (page text rest-en#65); ZD-1's Growth
+ZD-E-34015be1	capability	CM-MKT-006	core		automated-messages;create			a reading: 'Create automated message' (page text rest-en#66); ZD-1's Automated Messages
+ZD-E-34015be1	capability	CM-NTF-001	core		automated-messages			a reading: an automated message to customers, as ZD-1's Automated Messages (page text rest-en#66)
+ZD-E-7cd91b6d	capability	CM-SFR-003	core		themes;browse			a reading: 'Zid theme market', 94 themes available (page text rest-en#67), the cell's Theme Market
+ZD-E-caf3cfa6	capability	CM-CHN-003	core		marketplaces;orders			a reading: the marketplace connection's orders: 'Import Orders Configuration' (page text rest-en#68)
+ZD-E-0f15e6b3	capability	CM-CHN-003	core		marketplaces;connect			a reading: the marketplace connection's overview, 'Marketplace performance summary', revenue by marketplace: Amazon, Jahez, Mazeed, Trendyol (page text rest-en#69)
+ZD-E-3c6e4e7b	capability	CM-SFR-006	core		landing-pages;browse-themes			a reading: 'Landing page themes' to view or buy (page text rest-en#70), for ZD-1's Landing pages
+ZD-E-3c6e4e7b	capability	CM-SFR-003	extension-point		browse-themes			a reading: the platform's list of landing page themes by their makers, such as 'By: Small Details' and 'By: tech station', each to buy (page text rest-en#70)
+ZD-E-29756d48	capability	CM-INV-001	core		stock-management			a reading: 'Stock management', each product's quantity per inventory (page text rest-en#71); ZD-1's Stock management
+ZD-E-2c08e527	capability	CM-CUS-007	core		whatsapp;opt-out			a reading: the customers' opt-out of the store's WhatsApp messages; the page broke when opened ('Oops! Something broke', rest-en#72), and the dashboard's own strings for it are 'Unsubscribe keywords' and the 'Unsubscribe confirmation message', 'You have been unsubscribed and will no longer receive automated messages.' (dashboard-locales/source/en/whatsapp.json, optOutKeywordsLabel, optOutConfirmationMessagePlaceholderEn; the coordinator, after the batch)
+ZD-E-de1bcf3c	capability	CM-NTF-003	core		whatsapp;message-logs			a reading: one entry of the WhatsApp message logs (module imports message-log-preview); not opened; ZD-1's Message logs
+ZD-E-0ce2bc98	capability	CM-PAY-020	core		payments;transactions			a reading: one payment transaction, by its id (module imports transaction-refund-dialog); not opened; ZD-1's Transactions
+ZD-E-7d3e3770	capability	CM-SHP-001	core		shipping-methods			a reading: the shipping methods by ship-from inventory, 'Select a Ship-from Inventory Location to load shipping methods.' (page text rest-en#73); ZD-1's Shipping methods
+ZD-E-84021dd0	capability	CM-SHP-002	core		labels;balances			a reading: 'Prepaid label packages report' (page text rest-en#74), the cell's plan line Prepaid Label Packages
+ZD-E-2194b170	capability	CM-AIA-005	shows		llms-txt			a reading: 'Manage the information in your llms.txt file to help AI platforms better understand your store' (page text rest-en#75); ZD-1's llms.txt; the coordinator, after SA-2: CM-AIA-005 is buyers discovering and buying through AI chats and agents, on channels; llms.txt is a file the platform writes for AI platforms to read the store, with no channel or purchase, and Zid keeps it in its SEO section: shows here, and core on CM-CNT-007 (the ruling after SA-2)
+ZD-E-2194b170	capability	CM-CNT-007	core		llms-txt			the coordinator, after SA-2: the store's llms.txt, 'Manage the information in your llms.txt file to help AI platforms better understand your store' (page text rest-en#75), a file the platform writes for AI platforms to read the store, which Zid keeps in its SEO section: CM-CNT-007's (the ruling after SA-2)
+ZD-E-890e7c36	capability	CM-CNT-003	core		pages;create			a reading: 'Create custom page' (page text rest-en#76); ZD-1's Pages
+ZD-E-abd28b32	capability	CM-CHN-002	core		mazeed;orders			a reading: 'Mazeed orders', total requests and sales via Mazeed (page text rest-en#77)
+ZD-E-cc051314	capability	CM-CHN-002	core		mazeed			a reading: Mazeed's page, 'Welcome to Mazeed' (page text rest-en#78), the cell's Mazeed under the sales platforms
+ZD-E-74b7f1c5	capability	CM-ANL-002	core		customizable-reports			a reading: one customizable report, by its id; not opened; ZD-1's Reports
+ZD-E-8136b7a7	capability	CM-ACC-004	core		information;business-kyc			a reading: the store's business data: business type, owner, ID number and certificates such as 'Vat Registration Certificate (Income greater than 375K SAR)' (page text gaps-en#53), the cell's Store data
+ZD-E-8136b7a7	capability	CM-PAY-003	core		business-kyc			a reading: the business's KYC, the cell's term KYC (Know Your Customer); its page asks the owner's ID, bank certificate and licences (page text gaps-en#53)
+ZD-E-eac48e2c	capability	CM-NTF-001	core		communications;questions			a reading: 'Automatically notify customers after replying to their questions.' (page text rest-en#79); ZD-1's Product question notifications
+ZD-E-eac48e2c	capability	CM-NTF-002	core		questions			a reading: 'Automatically notify the merchant when a new question is submitted.' (page text rest-en#79)
+ZD-E-8258d10d	capability	CM-SHP-015	core		custom-shipping			a reading: the custom shipping methods, carriers connected with the merchant's own key (see 38); opened with the inventory selector (rest-en#80)
+ZD-E-ada19016	capability	CM-LOY-004	core		loyalty-programs;mokafaa	Mokafaa		a reading: Mokafaa among the loyalty programmes; redirected to marketing/mokafaa (ledger), ZD-1's Mokafaa program
+ZD-E-ada19016	capability	CM-PAY-012	core		mokafaa			a reading: Mokafaa's points, which pay in the store, as ZD-1's Mokafaa program; redirected (ledger)
+ZD-E-2019be7c	capability	CM-MKT-014	core		affiliates			a reading: one affiliate, by its id (module imports select-coupon, orders-columns); not opened; ZD-1's Affiliates
+ZD-E-d4590df7	capability	CM-SUP-006	core		faqs;create			a reading: 'Create FAQ', shown in the storefront (page text rest-en#82); ZD-1's FAQs
+ZD-E-ac081a50	capability	CM-CNT-004	core		blog;create			a reading: creating a blog post; redirected to channels/online-store/blog (ledger)
+ZD-E-51d8cc5b	capability	CM-CAT-001	core		products;bulk-edit			a reading: editing several products at once (module imports select-category, select-locations); not opened
+ZD-E-53781e06	capability	CM-SEL-005	core		preorder-campaigns;create			a reading: 'Set up a pre-order campaign to accept orders for products before they are in stock.' (page text rest-en#84)
+ZD-E-e9a42b76	capability	CM-CNT-002	core		meta-fields;create			a reading: creating a custom field of a type (module imports parse-structure-definition); not opened; ZD-1's Custom fields
+ZD-E-66cf2f9b	capability	CM-SUP-004	core		whatsapp-editor;auto-replies			a reading: one WhatsApp automatic reply in its flow editor (module imports flow-editor); not opened
+ZD-E-4458da20	capability	CM-PAY-002	core		payments;settings			a reading: the payments settings by tab (module imports use-user-roles, file-preview-bar); not opened; under ZD-1's Payments, the cell's Zid Pay settings; unsure (notes)
+ZD-E-01590d55	capability	CM-SHP-008	core		local-delivery			a reading: 'Local delivery': 'Offer direct delivery from your locations to your customers.' (page text rest-en#85)
+ZD-E-01590d55	capability	CM-SHP-006	core		local-delivery			a reading: local delivery, one of the two ways the parent names (page text rest-en#85)
+ZD-E-da1b92c7	capability	CM-SHP-002	core		labels			a reading: the label packages, by an optional code (module imports sticky-checkout, calculate-discount); not opened; ZD-1's Label packages
+ZD-E-7d87c453	capability	CM-LOY-004	core		loyalty-programs;points			a reading: the loyalty points programme; redirected to marketing/loyalty (ledger)
+ZD-E-7ac45dcc	capability	CM-LOY-004	core		loyalty-programs			a reading: the loyalty programmes' index route; redirected to marketing/loyalty (ledger); its children are points, mokafaa and qitaf
+ZD-E-3e933892	capability	CM-LOY-003	core		cashback-offers;create			a reading: 'Create cashback offer' (page text en-2#3); ZD-1's Cashback offers
+ZD-E-327e4c6e	capability	CM-MKT-006	core		automated-messages			a reading: one automated message, by its id; not opened
+ZD-E-327e4c6e	capability	CM-NTF-001	core		automated-messages			a reading: an automated message to customers, as ZD-1's Automated Messages; not opened
+ZD-E-dbfb7ce4	capability	CM-SFR-003	core		themes			a reading: one theme's page, by its id (module imports review-rating-card), in the theme market; not opened
+ZD-E-ce227788	capability	CM-CNT-007	core		seo;robots			a reading: 'Control which parts of your store search engines can see' (page text en-2#4); ZD-1's Robots.txt
+ZD-E-0c261652	capability	CM-CAT-003	core		categories;products			a reading: one category's products; not opened
+ZD-E-1c146134	capability	CM-SHP-001	core		constraints			a reading: one shipping or payment constraint, by its type and id; not opened; ZD-1's Shipping and payment constraints
+ZD-E-1c146134	capability	CM-PAY-019	core		constraints			a reading: one payment constraint, by its type and id; not opened
+ZD-E-a0b959a6	capability	CM-SUP-002	core		communications;reviews			a reading: review settings: 'Auto-approve for customers reviews' and the review request email hours after order completion (page text en-2#5); ZD-1's Product review notifications
+ZD-E-16f45ccd	capability	CM-SUP-004	core		whatsapp;tags	WhatsApp		a reading: tags in the WhatsApp settings (module imports tag-chip); opened: 'Oops! Something broke' (en-2#6); unsure (notes)
+ZD-E-740150b4	capability	CM-SHP-001	core		zones;create			a reading: creating a shipping zone (module imports app-map-branded, distance-converter); opened: 'This feature is not enabled for your store.' (rest-en#87); ZD-1's Zones
+ZD-E-5303bd30	capability	CM-LOY-004	core		loyalty-programs;qitaf	Qitaf		a reading: Qitaf among the loyalty programmes; redirected to marketing/qitaf (ledger), ZD-1's Qitaf
+ZD-E-5303bd30	capability	CM-PAY-012	core		qitaf			a reading: Qitaf's points, which pay in the store, as ZD-1's Qitaf; redirected (ledger)
+ZD-E-5cdedfc5	capability	CM-MKT-018	core		bank-discounts;create			a reading: 'Create new bank discount' by bank and card type (page text rest-en#89)
+ZD-E-f5bcc2ea	capability	CM-CUS-002	core		groups;customers			a reading: the customers of one customer group; not opened
+ZD-E-4e6ad3cf	capability	CM-POS-001	core		pos;transaction-history			a reading: the POS transactions, by cashier and inventory: 'No transaction history found' (page text rest-en#90); ZD-1's POS Transactions
+ZD-E-86a03522	capability	CM-CHN-004	core		seo;feeds			a reading: 'Generate product feeds to connect your store with Snapchat, TikTok, Google, Meta, X, and OpenAI.' (page text rest-en#91); ZD-1's Product Feeds
+ZD-E-e8361750	capability	CM-CNT-003	core		pages			a reading: one custom page, by its id; not opened
+ZD-E-f4783139	capability	CM-CNT-004	core		blog;tags			a reading: the blog's tags; redirected to the store's blog (ledger)
+ZD-E-7bdeaecf	capability	CM-SFR-006	core		landing-pages;edit			a reading: editing one landing page; not opened
+ZD-E-2fa12d15	capability	CM-INV-003	core		stock-taking			a reading: 'Stock taking': 'You can manage count, information, and stock taking' (page text rest-en#93)
+ZD-E-ff878177	capability	CM-INV-006	core		auto-restock			a reading: 'Auto Restock Transfer': 'Automatically creates a transfer request when products reach their minimum stock level' (page text rest-en#94)
+ZD-E-fe9532b7	capability	CM-CAT-003	core		categories;arrange			a reading: arranging one category's products; not opened
+ZD-E-4cb5911e	capability	CM-PAY-009	core		chargeback-dispute			a reading: one chargeback dispute, by its id: the module imports use-get-payment-charge-back and add-uploader, and the dashboard titles the page 'Chargeback dispute response' (dashboard-locales/source/en/pages.json, chargeback-title; the coordinator, after the batch): the merchant's response to a dispute; not opened
+ZD-E-f8c1442d	capability	CM-MKS-001	core		markets;products			a reading: one market's products; not opened; GAPS.md holds a market's products page as sending the demo and development stores to Settings
+ZD-E-8652b562	capability	CM-SFR-008	core		domains;link-existing			a reading: 'Link existing domain' (page text rest-en#95); ZD-1's Domains list
+ZD-E-759d6400	capability	CM-APP-009	core		direct-api-integration			a reading: 'Integrate with services that support Zid through your own token and store ID.' (page text api-en#5); ZD-1's API integrations
+ZD-E-b4061b55	capability	CM-NTF-001	core		communications;orders			a reading: 'Configure automated order notifications' by order status (page text gaps-en#49); ZD-1's Order notifications
+ZD-E-3a073ca4	capability	CM-PAY-032	core		payment-links			a reading: 'Manage all payment links for your store' (page text rest-en#96); ZD-1's Payment links
+ZD-E-b1be5042	capability	CM-PAY-030	core		bank-accounts			a reading: 'These bank accounts will appear as payment methods for customers on your store.' (page text rest-en#97); ZD-1's Bank accounts
+ZD-E-b591d10d	capability	CM-SHP-007	core		store-pickup			a reading: 'Pickup in store': 'Let customers pick up their orders directly from your physical locations.' (page text rest-en#98)
+ZD-E-b591d10d	capability	CM-SHP-006	core		store-pickup			a reading: pickup in store, one of the two ways the parent names (page text rest-en#98)
+ZD-E-5b8a7cce	capability	CM-SHP-015	core;extension-point		logistics;integrations			a reading: 'External integrations': shipping companies with pickup and delivery cities, cost 'Based on contract', each to activate (page text rest-en#99): the platform's own list of carriers to connect (rule 4)
+ZD-E-23a74933	capability	CM-SEL-006	core		bundle-offers;create			a reading: 'Create bundle' (page text rest-en#100); ZD-1's Bundle offers
+ZD-E-0aacf913	capability	CM-SUP-006	core		faqs			a reading: one FAQ, by its id; not opened
+ZD-E-a75071fa	capability	CM-CNT-004	core		blog			a reading: one blog post, by its id; not opened
+ZD-E-d74eb433	capability	CM-CNT-002	core		meta-fields			a reading: one custom field of a type, by its id; not opened
+ZD-E-dc08a83f	capability	CM-INV-002	core		inventory-stock-changes			a reading: 'Inventory stock changes', each product's stock history by inventory (page text rest-en#101); ZD-1's page
+ZD-E-227a4a70	capability	CM-NTF-001	core		notification-settings			a reading: notification settings among the settings; opened: 'Oops! Something broke' (gaps-en#48); unsure (notes)
+ZD-E-4699c09a	capability	CM-ACC-004	core		information;business			a reading: the store's business information: business type, commercial name, 'Store manager is the owner' and the owner's documents (page text gaps-en#51), the cell's Store data
+ZD-E-fd58944b	capability	CM-NTF-004	core		whatsapp;subscription	WhatsApp		a reading: the WhatsApp service's subscription; redirected to finance/billing/packages (ledger)
+ZD-E-28a26a0d	capability	CM-NTF-003	core		whatsapp;message-logs			a reading: the WhatsApp 'Message logs', accepted and failed: 'Your message log is empty' (page text rest-en#103); ZD-1's Message logs
+ZD-E-a001860d	capability	CM-PAY-020	core		payments;transactions			a reading: 'Manage all transactions from your store' (page text rest-en#104); ZD-1's Transactions
+ZD-E-d586997f	capability	CM-PAY-005	core		payouts			a reading: one payout, by its id; not opened; ZD-1's Payouts
+ZD-E-41f84eeb	capability	CM-MKT-001	core		discounts;edit			a reading: editing one discount (module imports select-customer, countries-citites); not opened
+ZD-E-41f84eeb	capability	CM-MKT-002	core		discounts			a reading: a discount, as ZD-1's Discounts (codes); not opened
+ZD-E-17586956	capability	CM-LOY-003	core		cashback-offers			a reading: one cashback offer, by its id; not opened
+ZD-E-97a4ef6b	capability	CM-SFR-001	core	new-zones-feature-guard	online-store;settings			a reading: the online store's settings; opened: 'This feature is unavailable' (gaps-en#39); the gate is the module's import new-zones-feature-guard, a reading; ZD-1's page index lists it under showNewZones
+ZD-E-c42c0e8f	capability	CM-ANL-002	core		customizable-reports			a reading: the 'Reports' list, such as 'This report shows the sales over time.' (page text rest-en#105); ZD-1's Reports
+ZD-E-fad1014b	capability	CM-STF-003	core		team;groups;create			a reading: creating a staff group with its permissions, the dashboard's and 'POS app permissions (ZidPOS)' (page text gaps-en#30); ZD-1's Groups
+ZD-E-b26f2068	capability	CM-MKS-001	core		markets;manage			a reading: managing one market: its name, countries and currency (page text devstore-markets-en#3)
+ZD-E-f4ba8b60	capability	CM-MKS-008	core		languages-currencies			a reading: 'Store language and currencies': the languages available to customers (page text gaps-en#5); ZD-1's Languages & currencies
+ZD-E-f4ba8b60	capability	CM-MKS-006	core		languages-currencies			a reading: the store's currencies, as ZD-1's Languages & currencies (page text gaps-en#5)
+ZD-E-59097d2d	capability	CM-ACC-006	core		information;address			a reading: the store's address, time zone and country: 'Display address in storefront' (page text gaps-en#52), the cell's country changed in the store settings (ZD-S-0746)
+ZD-E-5ca34146	capability	CM-SHP-001	core		zones			a reading: one shipping zone, by its id (module imports app-map-branded, zone-confirm-dialog); not opened; ZD-1's Zones
+ZD-E-07c4c3e8	capability	CM-PAY-026	core		financing;activation			a reading: 'Activate financing': the store's sales 'qualifies you for one of the following financing plans' (page text rest-en#106); ZD-1's Financing
+ZD-E-5934d800	capability	CM-MKT-018	core		bank-discounts			a reading: one bank discount, by its id; not opened; ZD-1's Bank discounts
+ZD-E-dbd8a809	capability	CM-MKT-003	core		automatic-discounts			a reading: the automatic discounts (module imports automatic-discount-pilot-list); opened with an empty page (rest-en#107); ZD-1's Automatic discounts
+ZD-E-54e45ccd	capability	CM-PLN-004	core		billing;transactions			a reading: 'Billing transactions', the store's invoices for Zid's services such as 'Professional - Yearly', each with its invoice (page text rest-en#108)
+ZD-E-3b823aa7	capability	CM-MKT-016	core		stock-notifications			a reading: 'Notify customers when items are back in stock' (page text rest-en#109); ZD-1's Stock notifications
+ZD-E-b813d197	capability	CM-POS-001	core		pos;reports;payment			a reading: the POS 'Payment report' (page text rest-en#110); with ZD-1's POS Reports
+ZD-E-e8f338cd	capability	CM-SFR-006	core		landing-pages;create			a reading: 'Create landing page': settings, products, theme (page text rest-en#111)
+ZD-E-e017f692	capability	CM-SFR-006	core		landing-pages			a reading: 'Welcome to the landing page builder' (page text rest-en#112); ZD-1's Landing pages
+ZD-E-1aa1a6d9	capability	CM-CAT-001	core		products;create			a reading: creating a product (module imports product-form); not opened
+ZD-E-bcee3fa9	capability	CM-CAT-005	core		brands;products			a reading: one brand's products (module imports select-brand, use-brand-products-columns); not opened
+ZD-E-5fa88a72	capability	CM-NTF-002	core		staff-notifications			a reading: 'Select the statuses for which you would like to notify your team members' (page text gaps-en#47); ZD-1's Staff notifications
+ZD-E-6d357ff1	capability	CM-PAY-003	core		payments;onboarding			a reading: the payments onboarding (module imports use-track-page, file-preview); redirected to services/payments (ledger); the cell's Zid Pay activation

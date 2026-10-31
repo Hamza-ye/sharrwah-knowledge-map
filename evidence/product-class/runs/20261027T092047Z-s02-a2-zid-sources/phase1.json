@@ -1,0 +1,290 @@
+[
+{
+"n": 1,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7-%d9%87%d9%8a-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88%d9%85%d8%a9-%d9%84%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d8%a7%d9%84/",
+"dir": "items/001-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%85%d8%a7-%d9%87%d9%8a-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%af%d8%b9%d9%88%d9%85%d8%a9-%d9%84%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d8%a7%d9%84/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23076,
+"cited_in": [
+"S02-ZD-C355"
+],
+"raw_file": "raw.html",
+"sha256": "2dda28cd4afa406cb66fb50afe4f4570e6f1e78ccb0a9db55e8a40b0c7387e0c",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a7%d9%84%d8%a7%d9%85%d9%83%d8%a7%d9%86-%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%82%d8%a8%d9%84%d8%a8/",
+"dir": "items/002-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:48Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%a8%d8%a7%d9%84%d8%a7%d9%85%d9%83%d8%a7%d9%86-%d8%aa%d8%ba%d9%8a%d9%8a%d8%b1-%d8%a7%d9%84%d9%83%d9%8a%d8%a7%d9%86-%d8%a7%d9%84%d8%aa%d8%ac%d8%a7%d8%b1%d9%8a-%d9%82%d8%a8%d9%84%d8%a8/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23131,
+"cited_in": [
+"S02-ZD-C356"
+],
+"raw_file": "raw.html",
+"sha256": "202aa12ae130ea1735382780cc672f3916a65793203d0797574c0f12a4838af1",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://zid.eg/ar/pricing/",
+"dir": "items/003-zid.eg",
+"fetched_at": "2026-10-27T09:20:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.eg/ar/pricing/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 30703,
+"cited_in": [
+"S-02 A2 ZD-1, read"
+],
+"raw_file": "raw.html",
+"sha256": "e4e64b4cb98b60e519f60257f713e381209cc7b931a16496152f9659d0ea52a1",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://help.zid.sa/cancel-orders/",
+"dir": "items/004-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:49Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/cancel-orders/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 24054,
+"cited_in": [
+"S-02 A2 ZD-1, read"
+],
+"raw_file": "raw.html",
+"sha256": "f7f1c64a18fbe9377c200eafb0eb2cea3f22c92aca98615b6092d1ddcd6bd87b",
+"raw_ext": "html"
+},
+{
+"n": 5,
+"url": "https://help.zid.sa/business-account/",
+"dir": "items/005-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/business-account/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 26341,
+"cited_in": [
+"S-02 A2 ZD-1, read"
+],
+"raw_file": "raw.html",
+"sha256": "aaca11459b7424b860a88f7a864967825b98fdc1b73cf95c863c4483909130f2",
+"raw_ext": "html"
+},
+{
+"n": 6,
+"url": "https://help.zid.sa/zid-faqs/%d8%b4%d8%b1%d9%88%d8%b7-%d8%a7%d9%84%d8%a5%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85/",
+"dir": "items/006-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/zid-faqs/%d8%b4%d8%b1%d9%88%d8%b7-%d8%a7%d9%84%d8%a5%d8%b3%d8%aa%d8%ae%d8%af%d8%a7%d9%85/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 22223,
+"cited_in": [
+"S-02 A2 ZD-1, read"
+],
+"raw_file": "raw.html",
+"sha256": "172d635afbac7884c0ef868c58040b5cd021d6a1ba116ae1c7a947dca3ee6639",
+"raw_ext": "html"
+},
+{
+"n": 7,
+"url": "https://help.zid.sa/sitemap_index.xml",
+"dir": "items/007-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/sitemap_index.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 412,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "eeac5e053b4c959907701e1d0b801330c94345fd30407b32d311613bf78d9107",
+"raw_ext": "xml"
+},
+{
+"n": 8,
+"url": "https://help.zid.sa/post-sitemap1.xml",
+"dir": "items/008-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/post-sitemap1.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 19647,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "56df13fbfd3e6fd63e7c0ea345a6f50eaba067402254d8b6a66393b16cba56b6",
+"raw_ext": "xml"
+},
+{
+"n": 9,
+"url": "https://help.zid.sa/post-sitemap2.xml",
+"dir": "items/009-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/post-sitemap2.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 12369,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "ca021aa4655e31529683798581ff6254bb169196a5e1db87ac24b34e159ef9f0",
+"raw_ext": "xml"
+},
+{
+"n": 10,
+"url": "https://help.zid.sa/page-sitemap.xml",
+"dir": "items/010-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:55Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/page-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 501,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "123a9a9136e9c486844566369952243d39c2d80abf05008e25b86ee2fb5e792c",
+"raw_ext": "xml"
+},
+{
+"n": 11,
+"url": "https://help.zid.sa/faqs-sitemap.xml",
+"dir": "items/011-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 6985,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "941ff8a75b6762755407c86911a4542b28126466914fc15d7914603331d6c8e9",
+"raw_ext": "xml"
+},
+{
+"n": 12,
+"url": "https://help.zid.sa/tips-sitemap.xml",
+"dir": "items/012-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/tips-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 440,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "f06c470403fd2a3bf6222b44b803f331130d1a1234c189a948ee93b12d7aa6ee",
+"raw_ext": "xml"
+},
+{
+"n": 13,
+"url": "https://help.zid.sa/zid-academy-sitemap.xml",
+"dir": "items/013-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/zid-academy-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 502,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "60f2c79edc5bffc58f0df4d844b2950f2d7537ea18b023a26f07ad1424247520",
+"raw_ext": "xml"
+},
+{
+"n": 14,
+"url": "https://help.zid.sa/promotion-sitemap.xml",
+"dir": "items/014-help.zid.sa",
+"fetched_at": "2026-10-27T09:20:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/promotion-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 487,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "9a5d7da437d03912cf0b0734bc622038ce4fedd40a1c3f27e9367404631ca8f8",
+"raw_ext": "xml"
+},
+{
+"n": 15,
+"url": "https://help.zid.sa/zid-faqs-sitemap.xml",
+"dir": "items/015-help.zid.sa",
+"fetched_at": "2026-10-27T09:21:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/zid-faqs-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 1226,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "623897adb86da1c4ae4a3591da4c93b66f5feaba26fa71244e8ab8080440762b",
+"raw_ext": "xml"
+},
+{
+"n": 16,
+"url": "https://help.zid.sa/category-sitemap.xml",
+"dir": "items/016-help.zid.sa",
+"fetched_at": "2026-10-27T09:21:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/category-sitemap.xml",
+"content_type": "text/xml; charset=UTF-8",
+"bytes": 2261,
+"cited_in": [
+"S-02 A2 ZD-1, read as an index"
+],
+"raw_file": "raw.xml",
+"sha256": "d3ba66bfc0fea11715c1fc96f0d45138ea2852855150924d744368f76d8eea06",
+"raw_ext": "xml"
+}
+]

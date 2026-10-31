@@ -1,0 +1,17 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+date: Tue, 27 Oct 2026 13:58:53 GMT
+content-type: text/html; charset=utf-8
+vary: RSC, Next-Router-State-Tree, Next-Router-Prefetch, Next-Router-Segment-Prefetch, Accept-Encoding
+link: </_next/static/css/c9842f52aa865f10.css>; rel=preload; as="style", </_next/static/css/afcc99df83033376.css>; rel=preload; as="style"
+x-powered-by: Next.js
+cache-control: private, no-cache, no-store, max-age=0, must-revalidate
+strict-transport-security: max-age=0; includeSubDomains
+cf-cache-status: BYPASS
+set-cookie: __cf_bm=t7AGb43D8WXpQcP0XyVvXZAAWtxuUG28vZm62ApbhC8-1793109533.5071452-1.0.1.1-0yxsRWn2k2IyDZwkPuX28vNlWhcWqd_O69pvUlUKTWHiHWuzqkgGZ81lD26CHEeW8IzZ_eGjbcho8cq5E3a9lR4tqQiilLI90n1xfBiioeSn682o3CwBePW0T1fXz17M; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa; Expires=Tue, 27 Oct 2026 14:28:53 GMT
+set-cookie: _cfuvid=z2EC6BTFphiYOMSDliyUoXL6PdaVKjyFoz2KKQ5lmkM-1793109533.5071452-1.0.1.1-VPaoCwRh_iP2fdbvk1IlJA65ev5d5NaFE.h22i_j90g; HttpOnly; SameSite=None; Secure; Path=/; Domain=zid.sa
+content-encoding: gzip
+server: cloudflare
+cf-ray: a51237d86bbd2054-IAD
+

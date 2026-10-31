@@ -2,9 +2,20 @@
 # phase A per platform (statements, terms, absences, gaps, citations), phase A2 (a2.tsv), phase B (variation
 # points, variants), phase C (analysis), step 2 (Yemen marks) and step 3 (rows), as far as they exist.
 # It checks files and columns, ids and every id a file cites, that statements and quotes are verbatim in their
-# sources, that a variant is an excerpt of its statements, that copied index citations are unchanged, and that no
+# sources, that a variant is an excerpt of its statements, that copied citations are unchanged (from the Q1 index or
+# an earlier subject's statement, which a statement's `from` names), and that no
 # gap goes to the founder for a page that is held. It writes the subject's kinds.tsv (each statement's kind, by
 # rule: method/source_kinds.py) and lists the cited URLs that need capturing.
+#
+# A subject's bullets, the questions its phase A brief asks of each platform, are in its bullets.tsv: `bullet`,
+# `root_decision`, `asks` and `role`. A role is one of:
+#   ask         a question each platform states or records as a gap; variation points take one of these;
+#   conditions  stated or recorded as a gap too; each statement under it names the `ask` statements it conditions;
+#   no-part     that the platform has no part in it, or holds no such thing; it needs no gap;
+#   end         an end of the subject's interval, named by a statement or recorded as a gap.
+# Without the file, the pilot's bullets hold: a to c ask, d no-part, e conditions, end-payment and end-payout.
+# A subject's limits.tsv (`limit`, `value`, `note`) may set `variation points`, the number past which phase B stops
+# and reports; it is 25 without it.
 #
 # Usage: python3 -I method/check_subject.py SUBJECT_DIR OUT [CAPTURE_RUN ...]
 import csv, glob, json, os, re, sys
@@ -22,16 +33,20 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 SKM = os.path.dirname(HERE)
 ROOTS = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
          "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+         "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class"),
          "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
          "sharrwah-knowledge-map": SKM}
 SRC = Sources(ROOTS, CAPTURES)
 HELD = Held(ROOTS, sorted(glob.glob(os.path.join(SKM, "evidence/product-class/runs/*"))) + CAPTURES)
 PLATFORMS = {"shopify": "SH", "salla": "SA", "woocommerce": "WC", "zid": "ZD", "bigcommerce": "BC"}
-BULLETS = {"a", "b", "c", "d", "e", "end-payment", "end-payout"}
-GAP_BULLETS = {"a", "b", "c", "e", "end-payment", "end-payout"}
+PILOT_BULLETS = {"a": "ask", "b": "ask", "c": "ask", "d": "no-part", "e": "conditions",
+                 "end-payment": "end", "end-payout": "end"}
+ROLES = {"ask", "conditions", "no-part", "end"}
 PLACEMENTS = {"where", "decides", "responsible", "boundary", "reason"}
+# What a value is taken per, under a "takes its value per" question (S-02's phase B brief, rule 4)
+PER_PHRASES = ["the store's own country", "a market the store sells into", "the buyer's country", "the whole store"]
 GAP_KINDS = {"page not read", "observation needed", "searched, not found", "stated only in general terms"}
-WHO = {"agent", "founder", "either"}
+WHO = {"agent", "founder", "either", "capture"}   # capture: a run in observed-sh or observed-sa, through a handoff
 ACCESS = {"md", "raw", "rendered", "local"}
 BASES = {"term", "identifiers", "definition", "answers"}
 KINDS = {"observed", "shipped", "stated", "official page"}
@@ -49,6 +64,8 @@ ANSWERERS = {"founder decision", "partner", "regulator", "Yemen evidence", "plat
 YEMEN_NAMES = re.compile(r"(?i)yemen|\baden\b|sana'?a|\byer\b|اليمن|يمني|عدن|صنعاء|ريال يمني")
 NON_ANSWERS = {"absent", "gap", "not covered"}
 HEAD = {
+    "bullets.tsv": ["bullet", "root_decision", "asks", "role"],
+    "limits.tsv": ["limit", "value", "note"],
     "statements.tsv": ["stmt_id", "bullet", "placement", "identifier", "statement", "scope", "marker", "conditions", "cite_ids", "from", "note"],
     "terms.tsv": ["term", "translation", "definition", "cite_ids"],
     "absences.tsv": ["absence_id", "bullet", "what_is_absent", "list_cite_ids", "complete_cite_ids", "note"],
@@ -59,6 +76,11 @@ HEAD = {
     "variation-points.tsv": ["vp_id", "bullet", "question", "x_words", "raised_by", "note"],
     "variants.tsv": ["variant_id", "vp_id", "platform", "variant", "stmt_ids", "basis", "basis_evidence", "kind", "scope",
                      "gap_ids", "absence_ids", "note"],
+    "answers.tsv": ["vp_id", "key", "rows", "gives", "lacks", "open", "not_stated", "cause", "cause_basis",
+                    "scopes_compared", "cause_reading", "blocked_by", "follows", "expensive_because", "founder_item",
+                    "depends_on", "note"],
+    "points.tsv": ["vp_id", "keys", "coexistence", "coexistence_basis", "general_variant", "general_basis", "follows",
+                   "note"],
     "analysis.tsv": ["vp_id", "cause", "cause_basis", "scopes_compared", "cause_reading", "coexistence", "coexistence_basis",
                      "general_variant", "follows", "expensive_because", "founder_item", "note"],
     "bears-on.tsv": ["vp_id", "axis_ids", "constant_ids", "basis", "note"],
@@ -117,8 +139,61 @@ def contained(part, whole):
     pv, wv = text_variants(part), text_variants(whole)
     return any(p[1] and p[1] in w[1] for p, w in zip(pv, wv))
 
+def one_of(bs):
+    bs = list(bs)
+    return bs[0] if len(bs) == 1 else ", ".join(bs[:-1]) + " or " + bs[-1]
+
+def load_bullets():
+    rows = read(os.path.join(subj, "bullets.tsv"), "bullets.tsv")
+    if rows is None:
+        return dict(PILOT_BULLETS)
+    unique("bullets.tsv", rows, "bullet", r"^[a-z][a-z-]*$")
+    for r in rows:
+        if r["role"] not in ROLES:
+            err("bullets.tsv", r["bullet"], f"role '{r['role']}' is not one of {sorted(ROLES)}")
+        if not r["asks"]:
+            err("bullets.tsv", r["bullet"], "asks is empty")
+    if not any(r["role"] == "ask" for r in rows):
+        err("bullets.tsv", "", "no bullet has the role 'ask', so no variation point can take one")
+    global BULLET_RD
+    BULLET_RD = {r["bullet"]: [x.strip() for x in r["root_decision"].split(";") if x.strip()] for r in rows}
+    return {r["bullet"]: r["role"] for r in rows}
+
+BULLET_RD = {}                          # bullet -> its root decisions, from bullets.tsv; empty for the pilot
+BULLET_ROLE = load_bullets()
+
+def load_limits():
+    rows = read(os.path.join(subj, "limits.tsv"), "limits.tsv")
+    out = {"variation points": 25}
+    for r in rows or []:
+        if r["limit"] not in out:
+            err("limits.tsv", r["limit"], f"not a limit this checker knows: {sorted(out)}")
+        elif not r["value"].isdigit():
+            err("limits.tsv", r["limit"], f"value '{r['value']}' is not a whole number")
+        else:
+            out[r["limit"]] = int(r["value"])
+    return out
+
+LIMITS = load_limits()
+ORDER = list(BULLET_ROLE)                                 # the subject's own order, for messages
+def of_role(*roles):
+    return [b for b in ORDER if BULLET_ROLE[b] in roles]
+BULLETS = set(ORDER)
+ASK, COND, NOPART, ENDS = set(of_role("ask")), set(of_role("conditions")), set(of_role("no-part")), set(of_role("end"))
+GAP_BULLETS = ASK | COND | ENDS
+
+_earlier = {}
+def earlier_subject(sid, plat):
+    """An earlier subject's statements and citations for a platform, by id: what a copied statement came from."""
+    if (sid, plat) not in _earlier:
+        d = os.path.join(SKM, "studies", "subjects", sid, plat)
+        st = read(os.path.join(d, "statements.tsv"), f"{sid}/{plat}/statements.tsv", False) or []
+        ct = read(os.path.join(d, "citations.tsv"), f"{sid}/{plat}/citations.tsv", False) or []
+        _earlier[(sid, plat)] = ({x["stmt_id"]: x for x in st}, {x["cite_id"]: x for x in ct})
+    return _earlier[(sid, plat)]
+
 # ---------- phase A, per platform ----------
-stmts, gaps, cit_all, kinds, absences = {}, {}, {}, {}, {}
+stmts, gaps, cit_all, kinds, absences, superseded = {}, {}, {}, {}, {}, {}
 for plat, code in PLATFORMS.items():
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
@@ -133,7 +208,7 @@ for plat, code in PLATFORMS.items():
     if ab is None:
         err(f"{plat}/absences.tsv", "", "file missing (a header row alone is fine)")
         ab = []
-    unique(f"{plat}/statements.tsv", st, "stmt_id", rf"^{pre}-\d{{3}}$")
+    unique(f"{plat}/statements.tsv", st, "stmt_id", rf"^{pre}-\d{{3,4}}$")
     unique(f"{plat}/gaps.tsv", gp, "gap_id", rf"^{pre}-G\d{{2}}$")
     unique(f"{plat}/absences.tsv", ab, "absence_id", rf"^{pre}-N\d{{2}}$")
     unique(f"{plat}/citations.tsv", ct, "cite_id", rf"^{pre}-C\d{{3,4}}$")
@@ -151,7 +226,7 @@ for plat, code in PLATFORMS.items():
         bl = [b.strip() for b in r["bullet"].split(";") if b.strip()]
         r["bullets"] = set(bl)
         if not bl or any(b not in BULLETS for b in bl):
-            err(f, sid, f"bullet '{r['bullet']}' is not one or more of a, b, c, d, e, end-payment or end-payout")
+            err(f, sid, f"bullet '{r['bullet']}' is not one or more of {one_of(ORDER)}")
         stmts[sid] = dict(r, platform=plat)
         if r["placement"] not in PLACEMENTS:
             err(f, sid, f"placement '{r['placement']}' is not one of {sorted(PLACEMENTS)}")
@@ -165,10 +240,20 @@ for plat, code in PLATFORMS.items():
             if c not in cit:
                 err(f, sid, f"cite_id {c} not in citations")
         frm = r["from"]
-        if frm != "new":
+        earlier = re.match(r"^S(\d\d)-[A-Z]{2}-\d{3}$", frm)
+        if earlier:                              # copied from an earlier subject's statement, by its id
+            es, ec = earlier_subject(f"S-{earlier.group(1)}", plat)
+            if f"S-{earlier.group(1)}" == os.path.basename(subj) or frm not in es:
+                err(f, sid, f"from '{frm}' is not a statement of an earlier subject's {plat} folder")
+            elif cs and cs[0] in cit:
+                oc = ec.get((ids(es[frm]["cite_ids"]) or [""])[0], {})
+                if (oc.get("source"), oc.get("quote")) != (cit[cs[0]]["source"], cit[cs[0]]["quote"]):
+                    err(f, sid, f"the copied citation {cs[0]} changed {frm}'s first citation's source or quote")
+        elif frm != "new":
             m = re.match(r"^index:([^:]+):([^:]+)$", frm)
             if not m or m.group(1) not in concerns or m.group(2) not in index_cits:
-                err(f, sid, f"from '{frm}' is neither 'new' nor index:<concern_id>:<index cite_id> of the Q1 index")
+                err(f, sid, f"from '{frm}' is neither 'new', an earlier subject's statement id, nor "
+                            "index:<concern_id>:<index cite_id> of the Q1 index")
             elif cs and cs[0] in cit:
                 ic, nc = index_cits[m.group(2)], cit[cs[0]]
                 if (ic["source"], ic["quote"]) != (nc["source"], nc["quote"]):
@@ -196,8 +281,8 @@ for plat, code in PLATFORMS.items():
         if lcs:                                  # an absence's kind is its list's, by the same rules
             kinds[a["absence_id"]] = (";".join(sorted({kind_of(cit[c]["source"], ROOTS)[0] for c in lcs})),
                                       kind_of(cit[lcs[0]]["source"], ROOTS)[1])
-        if a["bullet"] not in ("a", "b", "c", "e"):
-            err(f"{plat}/absences.tsv", a["absence_id"], f"bullet '{a['bullet']}' is not a, b, c or e")
+        if a["bullet"] not in ASK | COND:
+            err(f"{plat}/absences.tsv", a["absence_id"], f"bullet '{a['bullet']}' is not {one_of(of_role('ask', 'conditions'))}")
         for col in ("list_cite_ids", "complete_cite_ids"):
             if not ids(a[col]):
                 err(f"{plat}/absences.tsv", a["absence_id"], f"{col} is empty")
@@ -208,17 +293,21 @@ for plat, code in PLATFORMS.items():
     for g in gp:
         gid, f = g["gap_id"], f"{plat}/gaps.tsv"
         gaps[gid] = dict(g, platform=plat)
+        for x in re.findall(r"in place of (S\d\d-[A-Z]{2}-G\d+)", g["what_is_missing"]):
+            superseded[x] = gid                    # a gap a later part narrowed: kept as history, settled by its successor
         if g["bullet"] not in GAP_BULLETS:
-            err(f, gid, f"bullet '{g['bullet']}' is not one of a, b, c, e, end-payment or end-payout")
+            err(f, gid, f"bullet '{g['bullet']}' is not one of {one_of(of_role('ask', 'conditions', 'end'))}")
         if g["gap_kind"] not in GAP_KINDS:
             err(f, gid, f"gap_kind '{g['gap_kind']}' is not one of {sorted(GAP_KINDS)}")
         if g["who_can"] not in WHO:
             err(f, gid, f"who_can '{g['who_can']}' is not one of {sorted(WHO)}")
+        if g["who_can"] == "capture" and not re.search(r"handoffs/H-\d{3}", g["route"]):
+            err(f, gid, "a gap for a capture run names its handoff in route (handoffs/H-NNN)")
         if not g["read"]:
             err(f, gid, "read is empty: list each path or URL read")
         if g["gap_kind"] == "searched, not found" and not names_a_source(g["read"]):
             err(f, gid, "a 'searched, not found' names what it read")
-        if g["who_can"] in ("founder", "either"):
+        if g["who_can"] in ("founder", "either", "capture"):
             for u in urls_in(g["route"]):
                 held = [h for h in HELD.lookup(u) if h["readable"]]
                 if held and not was_read(held, later):   # once A2 or A3 reads it, a2.tsv says what remains
@@ -227,10 +316,8 @@ for plat, code in PLATFORMS.items():
         cid, src, f = c["cite_id"], c["source"], f"{plat}/citations.tsv"
         if c["access_path"] not in ACCESS:
             err(f, cid, f"access_path '{c['access_path']}' is not one of {sorted(ACCESS)}")
-        if re.match(r"^(observed-sh|observed-sa)(?!@[0-9a-f]{7,40}:)", src):
+        if re.match(r"^(observed-sh|observed-sa|other-product-class)(?!@[0-9a-f]{7,40}:)", src):
             err(f, cid, "a local source names its repository at a commit")
-        if "..." in c["quote"] or "…" in c["quote"]:
-            err(f, cid, "quote contains an ellipsis")
         if len(c["quote"]) > 300:
             err(f, cid, f"quote is {len(c['quote'])} characters; the brief allows 300", "warning")
         for col in ("locator", "source_date", "date_basis", "accessed"):
@@ -241,17 +328,33 @@ for plat, code in PLATFORMS.items():
         if re.match(r"^https?://", src):
             urls[src.split("#")[0]].add(cid)
         res, why, share = SRC.check_quote(c["quote"], src, c["locator"]) if c["quote"] and src else ("unresolved", "no quote or source", "")
+        if ("..." in c["quote"] or "…" in c["quote"]) and not res.startswith("found"):
+            err(f, cid, "quote contains an ellipsis that its source doesn't hold: a quote leaves nothing out")
         if not res.startswith("found"):
             err(f, cid, f"quote {res}{'; ' + why if why else ''}",
                 "pending capture" if res == "unresolved" and re.match(r"^https?://", src) else "error")
+        elif res.endswith("in the page's source only"):
+            err(f, cid, "quote found only in the page's source (its body as served, or its markup's scripts and "
+                        "data), not in the page as it renders: quote what the page shows, or shows on a click "
+                        "(briefs/A-one-platform.md, \"Reading a live page\")", "review")
         quotes.append((cid, res, why, share, src, c["quote"][:200]))
+# a gap whose question a statement answers in full, so that nothing takes its place: the statement's note says
+# "answers S02-XX-Gnn" (the coordinator's, when a capture request's run answers it); kept as history, settled
+answered = {}
+for sid, r in stmts.items():
+    for g in re.findall(r"\banswers (S\d\d-[A-Z]{2}-G\d+)", r.get("note", "")):
+        if gaps.get(g, {}).get("platform") != r["platform"]:
+            err(f"{r['platform']}/statements.tsv", sid, f"its note answers {g}, which is not one of its platform's gaps")
+        else:
+            answered.setdefault(g, sid)
 # ---------- phase A3: every claim of absence is audited by an agent that didn't make it ----------
 for plat in PLATFORMS:
     d = os.path.join(subj, plat)
     if not os.path.isdir(d):
         continue
-    audit = read(os.path.join(d, "absence-audit.tsv"), "absence-audit.tsv")
-    claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"] + \
+    audit = read(os.path.join(d, "absence-audit.tsv"), f"{plat}/absence-audit.tsv")
+    claims = [g for g, r in gaps.items() if r["platform"] == plat and r["gap_kind"] != "page not read"
+              and g not in superseded and g not in answered] + \
              [a for a, r in absences.items() if r["platform"] == plat]
     f = f"{plat}/absence-audit.tsv"
     if audit is None:
@@ -272,36 +375,48 @@ for plat in PLATFORMS:
         if r["result"] == "partly contradicted" and not r["note"]:
             err(f, r["claim_id"], "a partly contradicted claim says in note what part still stands")
         if r["result"] in ("contradicted", "partly contradicted"):
-            if not ids(r["stmt_ids"]) and r["claim_id"] not in absences:
-                err(f, r["claim_id"], "a contradicted gap names the statements that state it")
+            if not ids(r["stmt_ids"]):
+                err(f, r["claim_id"], "a contradicted claim names the statements that show it")
             for x in ids(r["stmt_ids"]):
                 if stmts.get(x, {}).get("platform") != plat:
                     err(f, r["claim_id"], f"{x} is not one of {plat}'s statements")
+    # the gaps phase A2 leaves after its own searches (its a2.tsv's gap_ids) need no second audit; every other
+    # claim, phase A's own searched gaps among them, has its row
+    after_a2 = {g for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
+                for g in ids(r.get("gap_ids", ""))
+                if "corpus_search.py" in gaps.get(g, {}).get("read", "")}   # A2's own searches are named in the gap
+    a2_absences = {a for r in (read(os.path.join(d, "a2.tsv"), f"{plat}/a2.tsv", check_head=False) or [])
+                   for a in ids(r.get("absence_ids", ""))}
     for c in claims:
-        if c not in done:
-            g = gaps.get(c, {})
-            if not (g.get("gap_kind") == "searched, not found" and "corpus_search.py" in g.get("read", "")):
-                err(f, c, "a claim of absence that the audit doesn't settle")
+        if c in done or c in after_a2:
+            continue
+        if c in a2_absences:                       # an absence phase A2 recorded waits for its own audit
+            err(f, c, "an absence phase A2 recorded, waiting for its audit (phase A3)", "review")
+        else:
+            err(f, c, "a claim of absence that the audit doesn't settle")
 
 for sid, r in stmts.items():
-    if "e" in r["bullets"]:
+    under = "/".join(f"({b})" for b in of_role("conditions"))
+    if r["bullets"] & COND:
         cs = [] if r["conditions"] == "none stated" else ids(r["conditions"])
         if not cs and r["conditions"] != "none stated":
-            err(f"{r['platform']}/statements.tsv", sid, "a statement under (e) names the statements it conditions")
+            err(f"{r['platform']}/statements.tsv", sid, f"a statement under {under} names the statements it conditions")
         for c in cs:
-            if c not in stmts or stmts[c]["platform"] != r["platform"] or not (stmts[c]["bullets"] & {"a", "b", "c"}):
-                err(f"{r['platform']}/statements.tsv", sid, f"conditions {c} is not one of its platform's (a) to (c) statements")
+            if c not in stmts or stmts[c]["platform"] != r["platform"] or not (stmts[c]["bullets"] & ASK):
+                err(f"{r['platform']}/statements.tsv", sid,
+                    f"conditions {c} is not one of its platform's statements under {one_of(of_role('ask'))}")
     elif r["conditions"]:
-        err(f"{r['platform']}/statements.tsv", sid, "conditions is only for statements under (e)")
+        err(f"{r['platform']}/statements.tsv", sid,
+            f"conditions is only for statements under {under}" if COND else "this subject has no conditions bullet")
 for plat in PLATFORMS:
     if not os.path.isdir(os.path.join(subj, plat)):
         continue
     stated = {b for r in stmts.values() if r["platform"] == plat for b in r["bullets"]}
     gapped = {g["bullet"] for g in gaps.values() if g["platform"] == plat}
-    for b in ("a", "b", "c", "e"):
+    for b in of_role("ask", "conditions"):
         if b not in stated and b not in gapped:
             err(f"{plat}/gaps.tsv", b, f"bullet ({b}) is neither stated nor recorded as a gap")
-    for end in ("end-payment", "end-payout"):
+    for end in of_role("end"):
         if end not in stated and end not in gapped:
             err(f"{plat}/statements.tsv", end, f"{end} is neither named by a statement nor recorded as a gap")
 if stmts:
@@ -317,12 +432,22 @@ vp = {}
 if vps is not None:
     unique("variation-points.tsv", vps, "vp_id", rf"^{SID}-VP-\d{{2}}$")
     vp = {v["vp_id"]: v for v in vps}
-    if len(vps) > 25:
-        err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past 25")
+    if len(vps) > LIMITS["variation points"]:
+        err("variation-points.tsv", "", f"{len(vps)} variation points: the brief says stop and report past "
+                                        f"{LIMITS['variation points']}")
+    kinds_seen = {}
     for v in vps:
         i = v["vp_id"]
-        if v["bullet"] not in ("a", "b", "c"):
-            err("variation-points.tsv", i, f"bullet '{v['bullet']}' is not a, b or c")
+        if " | " in v["x_words"]:
+            # S-02's brief: under (c) and (f), x_words starts with the kind; two points never share a question and
+            # a kind
+            key = (v["bullet"], re.sub(r'"[^"]*"|“[^”]*”|«[^»]*»', '""', v["question"]).strip(),
+                   v["x_words"].split(" | ")[0].strip())
+            if key in kinds_seen:
+                err("variation-points.tsv", i, f"shares its question and its kind '{key[2]}' with {kinds_seen[key]}")
+            kinds_seen.setdefault(key, i)
+        if v["bullet"] not in ASK:
+            err("variation-points.tsv", i, f"bullet '{v['bullet']}' is not {one_of(of_role('ask'))}")
         if not re.match(r"(?i)^(who|what)\b", v["question"]):
             err("variation-points.tsv", i, "the question doesn't take the form 'who or what fills X'")
         if not v["x_words"]:
@@ -338,10 +463,13 @@ if vps is not None:
         for s in ids(v["raised_by"]):
             if s not in stmts:
                 err("variation-points.tsv", i, f"raised_by {s} is not a statement")
-            elif v["bullet"] not in stmts[s]["bullets"]:
+            elif v["bullet"] not in stmts[s]["bullets"] and not any(
+                    set(BULLET_RD.get(nb, [])) & set(BULLET_RD.get(v["bullet"], []))
+                    for nb in stmts[s]["bullets"] & NOPART):
+                # a no-part statement (S-02's (g)) may raise a point of a question bullet of its own root decision
                 err("variation-points.tsv", i, f"raised_by {s} is not under bullet {v['bullet']}")
 if var is not None:
-    unique("variants.tsv", var, "variant_id", rf"^{SID}-V-\d{{3}}$")
+    unique("variants.tsv", var, "variant_id", rf"^{SID}-V-\d{{3,4}}$")
     seen = set()
     for r in var:
         i, plat = r["variant_id"], r["platform"]
@@ -354,6 +482,10 @@ if var is not None:
             if not ids(r["gap_ids"]):
                 err("variants.tsv", i, "a gap variant names its gap_ids")
             for g in ids(r["gap_ids"]):
+                if g in superseded:
+                    err("variants.tsv", i, f"gap {g} was narrowed into {superseded[g]}: the row names the gap that replaced it")
+                if g in answered:
+                    err("variants.tsv", i, f"gap {g} is answered ({answered[g]}): the row gives the answer instead")
                 if gaps.get(g, {}).get("platform") != plat:
                     err("variants.tsv", i, f"gap {g} is not one of {plat}'s gaps")
                 elif r["vp_id"] in vp and gaps[g]["bullet"] != vp[r["vp_id"]]["bullet"]:
@@ -376,17 +508,48 @@ if var is not None:
                 err("variants.tsv", i, f"basis '{r['basis']}' is not one or more of {sorted(BASES)}")
             if not r["basis_evidence"]:
                 err("variants.tsv", i, "basis_evidence is empty")
-            if any(stmts.get(x, {}).get("bullets", set()) & {"d"} and not stmts[x]["bullets"] & {"a", "b", "c"}
-                   for x in ids(r["stmt_ids"])) and bs != ["answers"]:
-                err("variants.tsv", i, "a variant resting on a (d) statement takes the basis 'answers'")
+            nopart = [x for x in ids(r["stmt_ids"])
+                      if stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK]
+            # a row resting only on no-part statements takes `answers` alone; a row that also holds other statements
+            # lists every basis that holds (rule 5), `answers` among them, so that one answer stays one row (rule 4)
+            if nopart and len(nopart) == len(ids(r["stmt_ids"])) and bs != ["answers"]:
+                err("variants.tsv", i, f"a variant resting only on {'/'.join(f'({b})' for b in of_role('no-part'))} "
+                                       "statements takes the basis 'answers' alone")
+            elif nopart and "answers" not in bs:
+                err("variants.tsv", i, f"a variant holding a {'/'.join(f'({b})' for b in of_role('no-part'))} "
+                                       "statement has the basis 'answers' among its bases")
             sids = ids(r["stmt_ids"])
             if not sids:
                 err("variants.tsv", i, "no stmt_ids")
+            elif all(s in stmts for s in sids) and not any(stmts[s]["bullets"] & (ASK | NOPART) for s in sids):
+                err("variants.tsv", i, f"a variant rests on a statement under {one_of(of_role('ask', 'no-part'))}; "
+                                       f"the others are conditions or ends, not variants")
             for s in sids:
                 if stmts.get(s, {}).get("platform") != plat:
                     err("variants.tsv", i, f"{s} is not one of {plat}'s statements")
             if sids and all(s in stmts for s in sids) and not any(contained(r["variant"], stmts[s]["statement"]) for s in sids):
                 err("variants.tsv", i, "the variant is not a verbatim excerpt of any of its statements")
+            if "takes its value per" in vp.get(r["vp_id"], {}).get("question", ""):
+                # S-02's brief: under (f)'s "what X takes its value per", basis_evidence names what the value is
+                # taken per, in one of a fixed set of phrases; an answer resting on (g) alone names "the whole store"
+                named = [x for x in PER_PHRASES if x in r["basis_evidence"]]
+                only_nopart = sids and all(stmts.get(x, {}).get("bullets", set()) & NOPART
+                                           and not stmts[x]["bullets"] & ASK for x in sids if x in stmts)
+                if not named:
+                    err("variants.tsv", i, f"basis_evidence names none of {PER_PHRASES}")
+                elif only_nopart and "the whole store" not in named:
+                    err("variants.tsv", i, "an answer resting on a statement that a setting holds for the whole "
+                                           "store names 'the whole store' in basis_evidence")
+            elif any(BULLET_RD.values()) and sids and all(
+                    stmts.get(x, {}).get("bullets", set()) & NOPART and not stmts[x]["bullets"] & ASK
+                    for x in sids if x in stmts) and "no market" not in r["basis_evidence"] \
+                    and not re.match(r"(?i)^who\b", vp.get(r["vp_id"], {}).get("question", "")):
+                # a no-part statement that names who sets a whole-store setting answers that setting's "who" point
+                # S-02's brief: an answer resting only on a no-part statement either says the platform has no market
+                # of the kind asked about ("no market"), or that a setting holds for the whole store, under a "takes
+                # its value per" point
+                err("variants.tsv", i, "an answer resting only on a no-part statement names 'no market' in "
+                                       "basis_evidence, or goes under a 'takes its value per' point as 'the whole store'")
             want = sorted({k for s in sids if s in kinds for k in kinds[s][0].split(";") if k})
             got = sorted({k.strip() for k in r["kind"].split(";") if k.strip()})
             if want and got != want:
@@ -395,16 +558,79 @@ if var is not None:
         for p in PLATFORMS:
             if os.path.isdir(os.path.join(subj, p)) and (v, p) not in seen:
                 err("variants.tsv", f"{v}/{p}", "no row for this variation point and platform")
-    placed = {s for r in var for s in ids(r["stmt_ids"])}
-    unplaced = [s for s in stmts if s not in placed and stmts[s]["bullets"] & {"a", "b", "c", "d"}]
-    if unplaced:
-        err("variants.tsv", "", f"{len(unplaced)} statements under bullets a to d are under no variation point: "
-                                f"{', '.join(unplaced[:12])}", "review")
+    rows_of = {}
+    for r in var:
+        rows_of.setdefault((r["vp_id"], r["platform"]), []).append(r)
+    for (v, p), rs in rows_of.items():
+        if len(rs) > 1:
+            for r in rs:
+                if r["variant"] == "not covered":
+                    err("variants.tsv", r["variant_id"], f"'not covered' says {p} has no row of its own here, but "
+                                                         f"{len(rs) - 1} other row(s) of {v} are {p}'s: replace it")
+    if not any(BULLET_RD.values()):        # the pilot: one question, so one count
+        placed = {s for r in var for s in ids(r["stmt_ids"])}
+        unplaced = [s for s in stmts if s not in placed and stmts[s]["bullets"] & (ASK | NOPART)]
+        if unplaced:
+            err("variants.tsv", "", f"{len(unplaced)} statements under bullets {one_of(of_role('ask', 'no-part'))} "
+                                    f"are under no variation point: "
+                                    f"{', '.join(unplaced[:12])}", "review")
+    else:
+        # Each root decision places every statement, under each of its question or no-part bullets the statement
+        # carries: in a variant of one of its variation points of that bullet (a no-part statement, of any of its
+        # variation points), or named in notes-b.md under the decision's own heading ("# RDn") as its id followed by
+        # the bullet, such as "S02-SA-011 (b)", with a reason.
+        placed = defaultdict(set)                          # (root decision, bullet) -> stmt_ids
+        for r in var:
+            b = vp.get(r["vp_id"], {}).get("bullet", "")
+            for rd in BULLET_RD.get(b, []):
+                placed[(rd, b)].update(ids(r["stmt_ids"]))
+                for nb in NOPART:
+                    if rd in BULLET_RD.get(nb, []):
+                        placed[(rd, nb)].update(ids(r["stmt_ids"]))
+        rd_now, nb_path = "", os.path.join(subj, "notes-b.md")
+        for line in (open(nb_path, encoding="utf-8").read().split("\n") if os.path.exists(nb_path) else []):
+            h = re.match(r"^#\s+(RD\d+)\b", line)
+            if h:
+                rd_now = h.group(1)
+            elif rd_now:
+                # only a line that starts with its ids and their bullets is a note: "- S02-SA-011 (b): reason"
+                m = re.match(rf"^\s*[-*]?\s*((?:{SID}-[A-Z]{{2}}-\d{{3,4}}\s*,\s*)*{SID}-[A-Z]{{2}}-\d{{3,4}})"
+                             rf"\s*\(([a-z](?:\s*[,;]\s*[a-z])*)\)", line)
+                if m:
+                    for sid in re.findall(rf"{SID}-[A-Z]{{2}}-\d{{3,4}}", m.group(1)):
+                        for b in re.split(r"\s*[,;]\s*", m.group(2)):
+                            placed[(rd_now, b)].add(sid)
+        rows_out = []
+        for sid, st in stmts.items():
+            for b in sorted(st["bullets"] & (ASK | NOPART)):
+                for rd in BULLET_RD.get(b, []):
+                    if sid not in placed[(rd, b)]:
+                        rows_out.append((rd, sid, b, st["platform"]))
+        rows_out = sorted(set(rows_out))
+        with open(os.path.join(OUT, "unplaced.tsv"), "w", encoding="utf-8") as f:
+            f.write("root_decision\tstmt_id\tbullet\tplatform\n" + "".join("\t".join(r) + "\n" for r in rows_out))
+        for rd in sorted({r[0] for r in rows_out}):
+            mine = [r for r in rows_out if r[0] == rd]
+            err("variants.tsv", rd, f"{len(mine)} of {rd}'s statements, by bullet, are neither in one of its "
+                                    f"variants nor noted under its heading in notes-b.md (all in unplaced.tsv): "
+                                    f"{', '.join(f'{r[1]} ({r[2]})' for r in mine[:8])}", "review")
+# b/ranges.tsv gives each root decision its variation points' numbers; a copy checked with some root decisions only
+# (phase B's "Before you finish") holds the others' points nowhere, so their a2.tsv rows aren't flagged there
+_ranges = read(os.path.join(subj, "b", "ranges.tsv"), "b/ranges.tsv", check_head=False) or []
+def rd_of_vp(v):
+    m = re.search(r"-VP-(\d+)$", v or "")
+    for r in _ranges:
+        if m and int(r["vp_from"]) <= int(m.group(1)) <= int(r["vp_to"]):
+            return r["root_decision"]
+    return None if _ranges else "all"
+rds_present = {rd_of_vp(v) for v in (vp or {})} | ({"all"} if not _ranges else set())
 for plat in PLATFORMS:
     a2 = read(os.path.join(subj, plat, "a2.tsv"), f"{plat}/a2.tsv")
     later = read_later(plat)
     for r in a2 or []:
-        if r["vp_id"] not in vp:
+        # a row whose vp_id is `none` holds a lead's statements, or a gap under (h), that answer no variation point
+        if vp and r["vp_id"] != "none" and r["vp_id"] not in vp \
+                and rd_of_vp(r["vp_id"]) in rds_present:   # checked where its root decision's points are present
             err(f"{plat}/a2.tsv", r["vp_id"], "not a variation point")
         for s in ids(r["stmt_ids"]):
             if s not in stmts:
@@ -413,6 +639,8 @@ for plat in PLATFORMS:
             if g not in gaps:
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is not a gap")
                 continue
+            if g in answered:
+                err(f"{plat}/a2.tsv", r["vp_id"], f"{g} is answered ({answered[g]}), so it doesn't remain")
             route = [(u, [h for h in HELD.lookup(u) if h["readable"]]) for u in urls_in(gaps[g]["route"])]
             if gaps[g]["gap_kind"] == "page not read" and route and all(h and was_read(h, later) for u, h in route):
                 err(f"{plat}/a2.tsv", r["vp_id"], f"{g} remains, but every page it waited on has been read: "
@@ -462,6 +690,24 @@ if ana is not None:
             err("analysis.tsv", v, "expensive_because is empty")
         if r["founder_item"]:
             founder_items.append((v, r["founder_item"]))
+# From S-02, phase C compares the platforms on each answer of a point (its keys): answers.tsv, a row per key, and
+# points.tsv, a row per point. method/analysis_edit.py checks each row as it writes it; here, what the joined files hold.
+ans = read(os.path.join(subj, "answers.tsv"), "answers.tsv")
+pts = read(os.path.join(subj, "points.tsv"), "points.tsv")
+if ans is not None or pts is not None:
+    have = {r["vp_id"] for r in (pts or [])}
+    for v in sorted(set(vp) - have):
+        err("points.tsv", v, "no phase C row yet", "review")
+    for k, n in Counter((r["vp_id"], r["key"]) for r in (ans or [])).items():
+        if n > 1:
+            err("answers.tsv", k[0], f"{n} rows for the key {k[1]!r}")
+    for r in ans or []:
+        if r["vp_id"] not in vp and rd_of_vp(r["vp_id"]) in rds_present:   # as for a2.tsv: checked where its
+            err("answers.tsv", r["vp_id"], "not a variation point")          # root decision's points are present
+        if r["cause"] not in CAUSES:
+            err("answers.tsv", r["vp_id"], f"cause '{r['cause']}' is not one of {CAUSES}")
+        if r["founder_item"]:
+            founder_items.append((r["vp_id"], r["founder_item"]))
 
 # ---------- step 2: Yemen marks ----------
 bears = read(os.path.join(subj, "bears-on.tsv"), "bears-on.tsv")
@@ -522,7 +768,7 @@ if marks is not None or bears is not None:
                     err("yemen-marks.tsv", key, f"condition {s_} is not a statement")
                 elif vstmts and s_ not in vstmts:
                     st = stmts[s_]
-                    linked = "e" in st["bullets"] and (
+                    linked = bool(st["bullets"] & COND) and (
                         set(ids(st["conditions"])) & vstmts or
                         (st["conditions"] == "none stated" and st["identifier"] and
                          any(st["identifier"] in stmts[v_]["statement"] or st["identifier"] in stmts[v_]["identifier"]

@@ -1,0 +1,54 @@
+cap_id	platform	quality	value	key	scope
+CM-CHK-002	shopify	Add-to-cart limit, default recommended limit	If you've made less than 250 sales, then the default recommended limit for your store is set to 50.	SH-C-046/decides/SH-S-7484	stores with fewer than 250 sales
+CM-ORD-001	shopify	App access to orders, default window	By default, your app has access to orders placed in the last 60 days.	SH-C-054/boundary/SH-S-5932	
+CM-ORD-001	salla	Number of orders, plan سلة بلس	عدد لا محدود من الطلبات	SA-C-040/decides/SA-S-1950	plan: سلة بلس
+CM-PAY-002	shopify	Minimum age to set up a Shopify Payments account	You must be at least 18 years old to set up a Shopify Payments account.	SH-C-063/decides/SH-S-0326	
+CM-PAY-005	shopify	Minimum payout amount	In certain countries, there's a minimum payout amount for Shopify Payments.	SH-C-069/decides/SH-S-0339	
+CM-PAY-005	shopify	Payout pause on a new payout bank account	your payouts are temporarily paused for 3-5 business days.	SH-C-069/decides/SH-S-0345	
+CM-PAY-005	salla	Minimum amount for a transfer	يجب أن يصل إجمالي المبلغ المستحق للتحويل إلى 100 ريال سعودي على الأقل حتى يتم تحويله إلى حسابك البنكي.	SA-C-111/decides/SA-S-0077	
+CM-PAY-005	salla	Transfer day and threshold, UAE	لمتاجر الإمارات، تُحوّل المستحقات المؤهلة كل يوم خميس عندما يتجاوز رصيد المدفوعات الإلكترونية 250 درهمًا إماراتيًا.	SA-C-111/decides/SA-S-0080	الإمارات
+CM-PAY-005	salla	Transfer timing and minimum, Kuwait	لمتاجر الكويت، تُحوّل المستحقات في يوم العمل التالي بحد أدنى للتحويل دينار كويتي واحد	SA-C-111/decides/SA-S-0086	الكويت
+CM-PAY-005	salla	Deposit frequency, plan Plus	باقة بلس: يتم الإيداع مرة واحدة أسبوعياً	SA-C-111/decides/SA-S-0071	باقة بلس
+CM-PAY-005	salla	Deposit frequency, plan Pro	باقة برو: يتم الإيداع كل 48 ساعة	SA-C-111/decides/SA-S-0072	باقة برو
+CM-PAY-005	salla	Deposit frequency, plan Special	باقة سلة سبيشل: يتم الإيداع يومياً.	SA-C-111/decides/SA-S-0073	باقة سلة سبيشل
+CM-PAY-007	shopify	Online standard card rates, per plan (Basic, Grow, Advanced, Plus)	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30¢	SH-C-071/decides/SH-S-7021	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-007	shopify	Online international rates, per plan	+ 1%	SH-C-071/decides/SH-S-7023	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-007	shopify	Premium with a third-party provider alongside	charged at standard Shopify Payments rates plus a 1.25% premium	SH-C-071/decides/SH-S-0378	stores that use a third-party payment provider alongside Shopify Payments
+CM-PAY-013	shopify	PayPal Wallet rates	Starting at 3.49% + 49¢ (each plan)	SH-C-077/decides/SH-S-7024	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-015	shopify	Shop Pay Installments APR	Rates from 0-36% APR.	SH-C-075/responsible/SH-S-7219	
+CM-PAY-017	shopify	MB WAY rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-080/decides/SH-S-7025	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-017	shopify	Bizum rates	3.9% + 30¢; 3.7% + 30¢; 3.5% + 30¢; 3.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-080/decides/SH-S-7026	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-018	shopify	USDC rates	2.9% + 30¢; 2.7% + 30¢; 2.5% + 30¢; 2.25% + 30¢ (Basic, Grow, Advanced, Plus)	SH-C-081/decides/SH-S-7028	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-019	shopify	Payment customization functions per store, maximum	You can activate a maximum of 25 payment customization functions on each store.	SH-C-083/decides/SH-S-0590	
+CM-PAY-020	shopify	Credit card authorization period	provides an authorization period of 7 days.	SH-C-084/decides/SH-S-0391	
+CM-PAY-020	shopify	Extended authorization periods	Extended authorization periods are available only to stores on the Shopify Plus plan that use Shopify Payments.	SH-C-084/decides/SH-S-0393	stores on the Shopify Plus plan that use Shopify Payments
+CM-PAY-021	shopify	In-person card rates	2.6% + 10¢; 2.5% + 10¢; 2.4% + 10¢; 2.3% + 10¢ (Basic, Grow, Advanced, Plus)	SH-C-086/decides/SH-S-7027	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-021	shopify	In-person manual rates	3.5% + 10¢ (per plan, as the row gives it)	SH-C-086/decides/SH-S-7029	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-021	shopify	Offline Interac payments in Canada	Canadian businesses can't accept Interac card payments when offline.	SH-C-086/decides/SH-S-0588	Canadian businesses
+CM-PAY-023	shopify	Shopify Balance earnings rate	2.52% earnings rate (Basic, Grow, Advanced); 3.54% earnings rate (Plus)	SH-C-088/decides/SH-S-7062	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-023	shopify	Shopify Balance eligibility by residence	Shopify Balance is a commercial card available only to merchants with a physical residential address in the United States or Puerto Rico.	SH-C-088/decides/SH-S-0460	merchants with a physical residential address in the United States or Puerto Rico
+CM-PAY-025	shopify	Shopify Credit cashback	Up to 3% cashback (every plan)	SH-C-090/decides/SH-S-7064	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-PAY-025	shopify	Shopify Credit repayment term	Shopify Credit offers the option to either pay your full statement balance automatically each month or to repay over 10 calendar months through automatic debits from your daily sales, for a fee.	SH-C-090/boundary/SH-S-0468	
+CM-PAY-026	shopify	Shopify Capital US loan repayment term	The maximum repayment term is 18 months, and 2 minimum payments apply.	SH-C-091/responsible/SH-S-7218	
+CM-PAY-026	salla	Share of net sales collected	يُحسب مبلغ التحصيل بنسبة %25 من صافي المبيعات لكل دفعة، ويُحوّل المتبقي إلى حسابك البنكي.	SA-C-128/where/SA-S-0111	
+CM-PAY-026	shopify	Shopify Commerce Germany GmbH's registration	Applications for merchant financing are made available to you by Shopify Commerce Germany GmbH, which is a registered Credit Broker in Germany.	SH-C-096/responsible/SH-S-0493	Germany
+CM-PAY-027	shopify	Shopify Bill Pay availability	Shopify Bill Pay is available only to merchants in the United States.	SH-C-098/decides/SH-S-0498	merchants in the United States
+CM-PAY-005	salla	Payout bank account, UAE	4-الحساب لدى بنك إماراتي و بعملة الدرهم الإماراتي.	SA-C-112/decides/SA-S-0135	الإمارات
+CM-PAY-005	salla	Payout bank account, Kuwait	- الحساب لدى بنك كويتي وبعملة الدينار الكويتي.	SA-C-112/decides/SA-S-0139	الكويت
+CM-PAY-005	salla	Payout bank account type, Kuwait	يقبل الحساب البنكي التجاري فقط - اما الحسابات البنكية الشخصية فهي غير مقبولة .	SA-C-112/decides/SA-S-0140	الكويت
+CM-PAY-005	salla	Transfer day, digital stores	للمتاجر الرقمية: تُصدر الفواتير يوم الأربعاء، وتُحوَّل المدفوعات يوم الأحد.	SA-C-111/decides/SA-S-0103	المتاجر الرقمية
+CM-PAY-005	salla	Deposit frequency, سلة سبيشل	إيداع المبيعات كل 24 ساعة	SA-C-111/decides/SA-S-0202	سلة سبيشل
+CM-PAY-029	salla	Cash on delivery through Salla's labels, maximum order	في حال كانت شركة الشحن المختارة ضمن بوليصات سلة فسيُطبق الحد الأعلى وهو 1000 ريال سعودي.	SA-C-115/decides/SA-S-0123	
+CM-PAY-029	salla	Cash on delivery, minimum cart value	إذا كانت قيمة السلة أقل من 20 ريال فلن تظهر وسيلة الدفع عند الاستلام في صفحة إتمام الطلب حتى وإن كانت مفعلة.	SA-C-115/decides/SA-S-0125	
+CM-PAY-005	salla	Currency in which Salla Payments receives payments	عند تفعيل التاجر لبوابة دفع سلة، يتم استقبال جميع المدفوعات بالريال السعودي.	SA-C-164/decides/SA-S-0067	
+CM-TAX-002	shopify	uptime	Shopify makes no guarantees to you in relation to the availability or uptime of Shopify Tax	SH-C-100/responsible/SH-S-0598	
+CM-TAX-002	shopify	destinations calculated	Calculations using Shopify Tax are available only for certain transactions, where the order's destination is a location in the United States, European Union, United Kingdom, or Canada.	SH-C-100/decides/SH-S-0514	
+CM-TAX-006	shopify	end of service	Automated filing with Shopify Tax is ending. Automated filing files your returns for sales made through December 31, 2026.	SH-C-104/decides/SH-S-0525	
+CM-TAX-006	shopify	enrollment	Automated filing is closed to new enrollment. Only stores that are already enrolled can use it.	SH-C-104/decides/SH-S-0521	
+CM-TAX-003	salla	registration threshold	إذا كان دخلك أكبر أو يساوي 375 ألف ريال في السنة فأنت ملزم بالتسجيل، أما إذا كان أقل من ذلك فالتسجيل اختياري.	SA-C-160/responsible/SA-S-5073	هيئة الزكاة والضريبة والجمارك
+CM-SHP-002	shopify	shipping label discounts	Up to 87% off	SH-C-116/decides/SH-S-7045	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-SHP-002	salla	label starting price	وتبدأ من 23 ريال داخل المملكة	SA-C-140/responsible/SA-S-5059	
+CM-SHP-003	shopify	insurance coverage bought	shipping insurance for up to $5,000 USD of insurance coverage	SH-C-117/decides/SH-S-0720	orders shipped from the United States with Shopify shipping labels
+CM-SHP-003	shopify	insurance included	up to $200 USD of shipping insurance on each eligible shipment at no extra cost	SH-C-117/decides/SH-S-0722	
+CM-SHP-021	salla	escalation of a packaging request, waiting time	في حال لم تتجاوب الشركة مع الطلب لمدة خمس أيام، أو قبلت الطلب ولكن تسليم مواد التغليف تأخر لأكثر من خمس أيام يمكنك تصعيد التأخير إلى شركة سلة	SA-C-149/boundary/SA-S-5068	
+CM-SHP-022	salla	automatic escalation of a complaint, waiting time	يتم تصعيد الشكوى تلقائياً إلى سلة بعد مرور 5 أيام بدون رد من شركة الشحن.	SA-C-150/boundary/SA-S-5071	

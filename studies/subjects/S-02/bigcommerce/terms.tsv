@@ -1,0 +1,52 @@
+term	translation	definition	cite_ids
+store_country			S02-BC-C127;S02-BC-C128
+global country (Settings › Localization)			S02-BC-C141
+country (a storefront's Localization settings)			S02-BC-C140
+Country of Residence of Merchant			S02-BC-C206
+domiciled (Customers domiciled in the United States)			S02-BC-C069
+located in (Your store must be located in …)			S02-BC-C084
+US-based merchants			S02-BC-C075
+Where should your store be hosted? (North America, Europe, Asia-Pacific)			S02-BC-C138
+shipping origin address			S02-BC-C053
+store_address / Store Address			S02-BC-C132;S02-BC-C135
+channel		A channel is anywhere a merchant sells their products. This encompasses headless storefronts, marketplaces, POS systems, and marketing platforms.	S02-BC-C002;S02-BC-C168
+channel type: storefront, marketing, pos, marketplace, custom			S02-BC-C169
+platform (of a channel)		A `platform`, which indicates the platform on which shoppers primarily use the channel	S02-BC-C170
+default channel		Each BigCommerce store is provisioned with one channel out of the box, intended for its first Stencil storefront.	S02-BC-C171
+storefront			S02-BC-C180
+Multi-Storefront (MSF)		“Multi-Storefront” or “MSF” means the ability to manage multiple unique Storefronts within one Store.	S02-BC-C008
+site		A **site** is a website owned or controlled exclusively by the merchant, usually for hosting a storefront website.	S02-BC-C172
+default site		The first Stencil storefront of each merchant store has an ID of `1000` and is also known as the default site.	S02-BC-C174
+region (separate storefronts per region; region-specific storefronts)			S02-BC-C145;S02-BC-C202
+segments (customer segmentation)			S02-BC-C017;S02-BC-C018
+shipping zones			S02-BC-C055
+tax zone		A tax zone specifies the geographical area where a group of tax rates apply.	S02-BC-C165
+global default			S02-BC-C125;S02-BC-C126
+channel-specific contextual overrides			S02-BC-C124
+Global-only settings			S02-BC-C127
+Localization settings			S02-BC-C140
+Store profile settings			S02-BC-C144
+locales			S02-BC-C036;S02-BC-C037
+default shopper-facing language			S02-BC-C146
+Transactional currency		When a currency is set as transactional, shoppers in associated countries will both see prices on the storefront in that currency and be charged in that currency when they check out.	S02-BC-C042
+default currency (of a storefront)			S02-BC-C147
+price list assignment (to a sales channel, customer group, or customer group on a sales channel)			S02-BC-C021
+International Enhancements for Multi-Storefront			S02-BC-C152;S02-BC-C154
+country (Get Store Information, GET /v2/store)		Country where the store is located (as defined during the store sign-up process).	S02-BC-C272
+infrastructure_region		The infrastructure region where the store is located.	S02-BC-C274
+Locale (store locale settings)		The basic locale settings for a store, used to give shopper information about languages, countries, etc.	S02-BC-C267
+Settlement Currency		The currency the merchant gets paid out to their bank account.	S02-BC-C285
+default country (Settings › Localization; Settings › Store profile › Locale)		The country your store is run from, which determines the payment methods that are available for use with your store.	S02-BC-C336
+Locale settings (Settings › Store profile)		The Locale settings determine your store's country and customer-facing language.	S02-BC-C335
+Localization settings (Settings › Localization)		Localization settings control your store’s default country, the languages that customers see on your storefront, how weights and dimensions are measured, and how dates and times are shown.	S02-BC-C320
+country where your store is located (locale information)			S02-BC-C332
+hosting region (the region your store should be hosted)			S02-BC-C345;S02-BC-C346
+standard formats (Set standard formats for [country])			S02-BC-C363;S02-BC-C364
+region (your store’s plan and region)			S02-BC-C353
+Issuing Country (of the VAT number)			S02-BC-C352
+storefront selector			S02-BC-C412;S02-BC-C413
+Use global (a storefront's setting in Channel Manager)			S02-BC-C402;S02-BC-C392
+origin channel (of a customer account)			S02-BC-C421
+Allow global logins (allow_global_login)			S02-BC-C421;S02-BC-C422
+Importer of Record		The Importer of Record is a person or entity who assumes the responsibility for ensuring goods imported to a particular country are appropriately documented and valued.	S02-BC-C501
+Default country		Determines available payment options.	S02-BC-C516

@@ -1,0 +1,18 @@
+{
+ "n": 16,
+ "url": "https://zid.eg/ar/legal/privacy-policy/",
+ "dir": "items/016-zid.eg",
+ "fetched_at": "2026-10-27T12:18:59Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.eg/ar/legal/privacy-policy/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 36751,
+ "cited_in": [
+  "S-02 ZD-4"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "2c376bdce18e75ffa68b6aa1ddcb65dbb601d9976894f5146e1da0ffde111015",
+ "raw_ext": "html"
+}

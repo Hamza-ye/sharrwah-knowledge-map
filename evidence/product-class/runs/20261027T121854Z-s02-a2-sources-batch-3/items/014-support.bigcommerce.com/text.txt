@@ -1,0 +1,198 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+Introduction To Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup For Multi-Storefront
+New Native Storefronts
+Additional Native Storefronts
+Headless Storefronts
+Configuring Your Catalog For Multi-Storefront
+Customers And Multi-Storefront
+Checkout And Orders On Multi-Storefront
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Multi-Storefront
+CHAPTER 4:
+Technical Setup for Multi-Storefront
+
+After you’ve configured your storefront’s design, settings, and products, you will need to set up its technical details.
+
+ 
+In This Chapter
+
+In this chapter, we’ll look at how to assign and manage custom domain names and SSL certificates for your storefront. The steps to do this will vary based on its platform (Stencil-based or headless), and whether it is the default storefront or an additional storefront.
+
+Domains & SSL certificates for the default native storefront
+Domains & SSL certificates for additional native storefronts
+Sites and routes for headless storefronts
+ 
+Domains & SSL Certificates for the Default Native Storefront
+
+The domain and SSL certificate for your default native storefront (the one created when you created your store) are managed in your Account Dashboard.
+
+Go to Channels, and under Storefronts, select Edit settings from the default native storefront's Action menu (⋯).
+
+Click Domains in the left navigation, then click Connect existing domain. You can also click on Connect domain from the Overview page.
+
+You’ll be redirected to your Account Dashboard. From here, you’ll be able to purchase or apply domains and SSL certificates for your default storefront.
+
+ 
+Domains & SSL Certificates for Additional Native Storefronts
+Connecting domains
+Third-party SSL certificates
+Disconnecting a domain
+
+By default, an additional native storefront (not the default storefront) uses a BigCommerce subdomain with the channel’s name and ID, such as https://new-storefront-123456.mybigcommerce.com. The settings to add a custom domain and SSL certificate for additional storefronts are fully managed in Channels, rather than the Account Dashboard like the default storefront.
+
+CONNECTING DOMAINS
+ 
+
+You must purchase a domain name from a third-party registrar for use with additional storefronts. Domain names purchased from BigCommerce will only work with the default storefront. Additionally, you can only use domains and subdomains for storefronts. Subfolders are not supported.
+
+Once you have purchased a domain, go to Channels, and under Storefronts, click your non-default storefront.
+
+Click Domains in the left navigation, then click Connect existing domain.
+
+To connect your domain , you must create a CNAME or A record. See the “Pointing Your Domain” section of Changing Domains for more information.
+
+Your additional storefront won’t work until your DNS changes have propagated. After connecting a domain, a free SSL certificate is automatically installed on your storefront.
+
+ 
+
+Can I manage DNS records for additional storefronts from the BigCommerce control panel? No, this functionality is only available for the default native storefront. You can manage DNS records for additional storefronts from your registrar’s dashboard and point the domain using a CNAME or A record.
+
+THIRD-PARTY SSL CERTIFICATES
+
+When setting up a domain for an additional storefront, you will also have the opportunity to add a third-party SSL certificate, if desired. Before purchasing an SSL certificate for your additional storefront, you will need to generate a Certificate Signing Request (CSR) and submit it to your certificate issuer.
+
+You must use a public CSR generator or generate a CSR yourself. The BigCommerce Account Dashboard cannot be used to generate a CSR for additional (non-default) storefronts. Depending on your CSR generation method, you may be asked to provide information like your organization name and location. See the “Generating a CSR” section of Third-Party SSL Certificates for guidance on providing the necessary information.
+
+After using the CSR to generate the SSL certificate with your provider, copy the SSL certificate body and Private key. If your provider included an Intermediate certificate, add it here as well.
+
+DISCONNECTING A DOMAIN
+
+To remove a domain from an additional storefront, click Domains in the left navigation, then select Disconnect from the Action menu (⋯) next to the domain. Click Disconnect in the resulting pop-up to confirm.
+
+ 
+Sites and Routes for Headless Storefronts
+
+Your connected headless storefronts’ Site details and Routes information can be found and updated in Channel Manager.
+
+Under Storefronts, click the Action menu (⋯) next to your storefront and navigate to Domains. From there, you can manage your storefront’s routes and configure your checkout domain.
+
+See Domain Settings for Headless Storefronts for more information on storefront and checkout domain settings in the Channel Manager. See our Developer Docs to learn more about Sites and Routes.
+
+Note that for headless storefronts, domain names and SSL certificates are applied and configured outside of BigCommerce (at the registrar, issuer, and/or platform).
+
+ 
+
+Can I use the same URL path on different storefronts? For categories and web pages, you can use the same URL path for multiple storefronts. For example, cats.com/toys and dogs.com/toys.
+
+NEXT CHAPTER: CONFIGURING YOUR CATALOG FOR MULTI-STOREFRONT
+All Chapters
+Introduction to Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup for Multi-Storefront
+Configuring Your Catalog for Multi-Storefront
+Customers and Multi-Storefront
+Checkout and Orders on Multi-Storefront
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Technical Setup for Multi-Storefront

@@ -1,0 +1,13 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-EVO-001	salla	none-held					
+CM-EVO-001	shopify	statements	core			SH-C-015/reason:searched, not found	general
+CM-MIG-006	salla	none-held					
+CM-MIG-006	shopify	none-held					
+CM-OPS-003	salla	none-held					
+CM-OPS-003	shopify	statements	core		SH-C-036/decides/SH-S-7032=plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399	SH-C-036/where:observation needed;SH-C-036/responsible:stated only in general terms;SH-C-036/reason:searched, not found	plans, one cell each, in the order of the table header: BasicStart for free, GrowStart for free, AdvancedStart for free, PlusTry for $399
+CM-OPS-004	salla	none-held					
+CM-OPS-004	shopify	none-held					
+CM-OPS-005	salla	none-held					
+CM-OPS-005	shopify	none-held					
+CM-SRF-001	salla	statements	core		SA-C-001/decides/SA-S-2082=plan: سلة بلس	SA-C-001/responsible:page not read;SA-C-001/reason:page not read	plan: سلة بلس
+CM-SRF-001	shopify	statements	core			SH-C-043/reason:searched, not found;SH-C-079/responsible:stated only in general terms;SH-C-079/reason:searched, not found;SH-C-118/reason:searched, not found	general

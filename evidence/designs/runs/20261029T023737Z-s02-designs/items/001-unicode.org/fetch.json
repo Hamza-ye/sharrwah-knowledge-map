@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://www.unicode.org/reports/tr35/",
+ "dir": "items/001-unicode.org",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.unicode.org/reports/tr35/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 103518,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ba4249d539692bedb8b02046eb6496c7d0df27508213c823c56c15aa10d9369e",
+ "raw_ext": "html"
+}

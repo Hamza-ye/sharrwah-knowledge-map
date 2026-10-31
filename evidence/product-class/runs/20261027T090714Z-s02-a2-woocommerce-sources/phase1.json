@@ -1,0 +1,74 @@
+[
+{
+"n": 1,
+"url": "https://woocommerce.com/document/premium-payment-gateway-extensions/",
+"dir": "items/001-woocommerce.com",
+"fetched_at": "2026-10-27T09:07:14Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/premium-payment-gateway-extensions/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 41287,
+"cited_in": [
+"S-02 gap-closing, WC-1: cited"
+],
+"raw_file": "raw.html",
+"sha256": "2951cccfa4e01b6b8a0ac4e9566c5f2493d3c37a3cc8c252fc7320e1e93f64b4",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://woocommerce.com/document/setting-up-shipping-zones/",
+"dir": "items/002-woocommerce.com",
+"fetched_at": "2026-10-27T09:07:15Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/setting-up-shipping-zones/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 46381,
+"cited_in": [
+"S-02 gap-closing, WC-1: cited"
+],
+"raw_file": "raw.html",
+"sha256": "2fd34858bfc1d64b91412bc92a0925f15b7ccb8f0ffa8952b20b6c9cf4507a10",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://woocommerce.com/document/woopayments/currencies/available-currencies/",
+"dir": "items/003-woocommerce.com",
+"fetched_at": "2026-10-27T09:07:16Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/woopayments/currencies/available-currencies/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 46431,
+"cited_in": [
+"S-02 gap-closing, WC-1: cited"
+],
+"raw_file": "raw.html",
+"sha256": "0a51972bf7e388002da75db8c8943c8645ff9999c4273e41225f6ecd4c3b8989",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://woocommerce.com/document/configuring-woocommerce-settings/",
+"dir": "items/004-woocommerce.com",
+"fetched_at": "2026-10-27T09:07:17Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/configuring-woocommerce-settings/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 45123,
+"cited_in": [
+"S-02 gap-closing, WC-1: read"
+],
+"raw_file": "raw.html",
+"sha256": "1dc3df3bec73d80b6fb9023a24781bb3156885c4a0aa1bef6e59898ba4cf6b9a",
+"raw_ext": "html"
+}
+]

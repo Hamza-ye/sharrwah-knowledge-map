@@ -1,0 +1,56 @@
+[
+{
+"n": 1,
+"url": "https://woocommerce.com/document/woocommerce-setup-wizard/",
+"dir": "items/001-woocommerce.com",
+"fetched_at": "2026-10-27T09:43:19Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://woocommerce.com/document/woocommerce-setup-wizard/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 41748,
+"cited_in": [
+"S-02 A2 WC-2"
+],
+"raw_file": "raw.html",
+"sha256": "6ebd4407c49b491c91fc9d06108d5d4e9514e984f48869b100a3d5db28d87259",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://developer.woocommerce.com/docs/contribution/contributing/string-localisation-guidelines/",
+"dir": "items/002-developer.woocommerce.com",
+"fetched_at": "2026-10-27T09:43:19Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://developer.woocommerce.com/docs/contribution/contributing/string-localisation-guidelines/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 11618,
+"cited_in": [
+"S-02 A2 WC-2"
+],
+"raw_file": "raw.html",
+"sha256": "22403536fda0673f36999bc2a1e890dbce93236e98ee8a06414c9774ab6ec1a4",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://developer.woocommerce.com/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields/",
+"dir": "items/003-developer.woocommerce.com",
+"fetched_at": "2026-10-27T09:43:20Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://developer.woocommerce.com/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 29742,
+"cited_in": [
+"S-02 A2 WC-2"
+],
+"raw_file": "raw.html",
+"sha256": "59e93c780be4aa39409f189d8d2ac9e3ffec07eb62874120724f4491a0d15deb",
+"raw_ext": "html"
+}
+]

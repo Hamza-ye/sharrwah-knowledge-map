@@ -1,0 +1,229 @@
+> This page is for Developer.
+
+> For clean Markdown of any page, append .md to the page URL.
+> For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+> For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Team permissions
+
+> **Note**
+>
+> Team permissions is in closed beta and not available by default. To request access, contact your BigCommerce account team or complete [this sign-up form](https://docs.google.com/forms/d/e/1FAIpQLSeLKqDs5ynDoZTzqndkHKfWJvT2-Oguked7ZxAn4BaxWH9IEg/viewform?usp=dialog). We may introduce breaking changes during the beta.
+
+Team permissions is BigCommerce's group-based access control system. It replaces per-user permission checkboxes with reusable **user groups**, predefined **policy** bundles, and per-store **targets**. A user's effective access is the union of every policy granted by every group they belong to.
+
+This guide covers the GraphQL operations that extend the [Account API](/developer/api-reference/graphql/account/overview) during the closed beta. These operations let you add and remove users from user groups, list groups, and audit group memberships per group or per user. For the GA operations on the same endpoint (creating users, adding users to stores), see the GraphQL Account API overview.
+
+## How team permissions works
+
+The permission model has three concepts:
+
+1. **User groups** — Named, reusable bundles of access. For example, *Warehouse*, *Sales Rep*, *Finance*.
+2. **Policies** — Predefined permission bundles such as *Orders Read* or *Account Users Manage*. Policies are granted to groups, not to individual users.
+3. **Targets** — The resource a policy applies to: a specific store, or the account itself.
+
+A user belongs to zero or more groups. Their effective permissions are the union of the policies granted by every group they belong to.
+
+A default **Account Administrators** group is provisioned with each account and grants account-level access. Store owners and other account admins must remain members of this group to keep account-level permissions after team permissions is enabled.
+
+## Before you begin
+
+| Item                  | Value                                                                                                    |
+| --------------------- | -------------------------------------------------------------------------------------------------------- |
+| Endpoint              | `POST https://api.bigcommerce.com/accounts/{account_uuid}/graphql`                                       |
+| Authentication header | `X-Auth-Token: <YOUR_ACCESS_TOKEN>`                                                                      |
+| Token source          | Access token from an [account-level API account](/developer/docs/overview/api-fundamentals/api-accounts) |
+| Content type          | `application/json`                                                                                       |
+| Rate limit            | 70 requests per hour across all `/accounts/*` endpoints                                                  |
+
+Substitute your account UUID for `{account_uuid}`. Your BigCommerce contact provides the UUID during onboarding.
+
+## Configure user groups via the API
+
+The user-group operations live in the `userGroup` mutation namespace and as fields on the `account` query. The examples below send a single GraphQL operation per request to the endpoint above.
+
+### Pagination
+
+`account.userGroups` and `account.users` are Relay-style connections. Each result is wrapped in `edges { cursor node { ... } }`, and large result sets are returned in pages. To page through results, pass `first` and `after` arguments on the connection (for example, `userGroups(first: 50, after: "<cursor>")`) and use the `cursor` of the last node returned as the `after` value for the next request. Both connections also expose a standard `pageInfo { hasNextPage endCursor }` selector.
+
+### Add users to user groups
+
+Adds one or more users to one or more groups. Returns a `pollingId` for tracking large batch operations. The field may return an empty string when the operation completes synchronously.
+
+**`Add users to user groups`**
+
+```graphql title="Add users to user groups"
+mutation UserGroup {
+  userGroup {
+    addUsersToUserGroups(
+      input: {
+        userIds: [
+          "bc/account/user/1956612"
+          "bc/account/user/1364558"
+          "bc/account/user/2393917"
+        ]
+        userGroupIds: [
+          "bc/account/userGroup/cab76766-5af9-416c-9edd-0f5da0e003b4"
+          "bc/account/userGroup/9fe52bbe-827a-4712-bf76-ebd4d2465277"
+        ]
+      }
+    ) {
+      pollingId
+    }
+  }
+}
+```
+
+| Input field    | Type     | Required | Description                                                                                         |
+| -------------- | -------- | -------- | --------------------------------------------------------------------------------------------------- |
+| `userIds`      | `[ID!]!` | Yes      | Account-scoped user IDs in the form `bc/account/user/{id}`.                                         |
+| `userGroupIds` | `[ID!]!` | Yes      | User group IDs in the form `bc/account/userGroup/{uuid}`. Each user is added to every listed group. |
+
+### Remove users from a user group
+
+Removes one or more users from a single group. Returns the users that were removed, for confirmation.
+
+**`Remove users from a user group`**
+
+```graphql title="Remove users from a user group"
+mutation UserGroup {
+  userGroup {
+    removeUsersFromUserGroup(
+      input: {
+        userIds: [
+          "bc/account/user/1956612"
+          "bc/account/user/1364558"
+          "bc/account/user/2393917"
+        ]
+        userGroupId: "bc/account/userGroup/9fe52bbe-827a-4712-bf76-ebd4d2465277"
+      }
+    ) {
+      users {
+        edges {
+          cursor
+          node {
+            id
+            email
+            firstName
+            lastName
+            locale
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+| Input field   | Type     | Required | Description                         |
+| ------------- | -------- | -------- | ----------------------------------- |
+| `userIds`     | `[ID!]!` | Yes      | Account-scoped user IDs to remove.  |
+| `userGroupId` | `ID!`    | Yes      | The group to remove the users from. |
+
+### List user groups in an account
+
+Returns every group in the account with its ID, name, and description. Use this to discover the `userGroupId` values needed for mutations.
+
+**`List user groups in an account`**
+
+```graphql title="List user groups in an account"
+query Account {
+  account {
+    userGroups {
+      edges {
+        node {
+          id
+          name
+          description
+        }
+      }
+    }
+  }
+}
+```
+
+### View group membership
+
+Returns every group with its members nested. Use this to audit who belongs to which group.
+
+**`View group membership`**
+
+```graphql title="View group membership"
+query Account {
+  account {
+    userGroups {
+      edges {
+        node {
+          id
+          name
+          description
+          users {
+            edges {
+              cursor
+              node {
+                id
+                email
+                firstName
+                lastName
+                locale
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+### View group memberships per user
+
+Returns every user with the groups they belong to nested. Use this to audit a single user's effective access surface.
+
+**`View group memberships per user`**
+
+```graphql title="View group memberships per user"
+query Account {
+  account {
+    users {
+      edges {
+        node {
+          id
+          email
+          firstName
+          lastName
+          locale
+          userGroups {
+            edges {
+              node {
+                id
+                name
+                description
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```
+
+## Constraints
+
+* **Account scope** — Team permissions is an account-level feature. Enabling it affects every store in the account.
+* **Subject to change** — The beta API may change during the beta. We will communicate breaking changes in advance, but treat the schema as unstable.
+* **Concurrent edits** — Concurrent updates to the same user group or user can produce race conditions. Coordinate changes between scripts or operators.
+* **Default group membership** — Store owners and account admins must remain members of the **Account Administrators** group to keep account-level permissions.
+* **Store and ownership transfers** — Store owner transfers and store transfers require manual BigCommerce involvement while the beta is enabled. Contact your BigCommerce account team before initiating either.
+* **Opt-out** — Opting out of the beta requires BigCommerce involvement and may require store-level permissions to be repaired afterward.
+
+## Resources
+
+* [GraphQL Account API overview](/developer/api-reference/graphql/account/overview) — GA operations on the same endpoint, including user creation and store-level user management.
+* [API accounts](/developer/docs/overview/api-fundamentals/api-accounts) — how to create the account-level API account whose token authenticates these calls.
+* [Rate limits](/developer/docs/overview/api-fundamentals/rate-limits) — quota details for the `/accounts/*` endpoints.
+
+## Feedback
+
+Send beta feedback, change requests, and onboarding questions to your CSM or TAM. Feedback on usability, missing functionality, and confusing behavior is especially valuable during the closed beta.

@@ -1,0 +1,104 @@
+term	translation	definition	cite_ids
+الأسواق (خاصية الأسواق)		تتيح خاصية الأسواق للتاجر إدارة أسعار المنتجات وتوفّرها حسب كل سوق جغرافي بشكل مستقل.	S02-ZD-C010
+سوق جغرافي			S02-ZD-C010
+السوق الافتراضي		السوق الافتراضي وهو السوق المحلي بشكل تلقائي	S02-ZD-C012
+السوق المحلي			S02-ZD-C012
+السوق الرئيسي			S02-ZD-C026;S02-ZD-C027
+عملة السوق		حدّد العملة التي سيتم اعتمادها لعرض أسعار المنتجات داخل هذا السوق.	S02-ZD-C023;S02-ZD-C019
+الدول المرتبطة بالسوق			S02-ZD-C018;S02-ZD-C022
+اسم السوق		أدخل اسم السوق لتمييزه داخلياً	S02-ZD-C021
+سوق مخفي			S02-ZD-C030
+العملة الأساسية (العملة الأساسية للمتجر)		العملة الأساسية هي العملة التي تم إدخال أسعار المنتجات باستخدامها	S02-ZD-C061;S02-ZD-C060
+العملة الرئيسية للمتجر			S02-ZD-C059
+عملة دولتك			S02-ZD-C060
+عملة دولة			S02-ZD-C062
+اللغات والعملات			S02-ZD-C059
+ضبط العملات على الموقع الجغرافي	Geo-Based Currency Settings	ضبط العملات تلقائياً حسب موقع العميل لتجربة شراء سلسة ومحترفة.	S02-ZD-C070
+store currency			S02-ZD-C071;S02-ZD-C072
+order currency			S02-ZD-C071;S02-ZD-C072
+دولته (في إعدادات المتجر)			S02-ZD-C074;S02-ZD-C075
+عملة التاجر المحلية; العملة المحلية			S02-ZD-C076
+موقعك أو موقع المخزون			S02-ZD-C045;S02-ZD-C046
+العنوان (الدولة-المدينة-الحي-الشارع)			S02-ZD-C046
+مستخدمي دول الخليج			S02-ZD-C044
+Store Operating Countries (countries where the store operates)		Retrieve a list of countries where the store operates. This list includes the country's unique ID, name, ISO codes, and flag image URL.	S02-ZD-C034;S02-ZD-C036
+merchant's activated countries			S02-ZD-C038
+Countries and Cities			S02-ZD-C038;S02-ZD-C039;S02-ZD-C035
+زد مصر	Zid Egypt		S02-ZD-C082;S02-ZD-C081
+مواقع المخزون	inventory locations		S02-ZD-C092
+short_address		A standardized location code used in Saudi Arabia for delivery and logistics purposes.	S02-ZD-C096
+بيانات المتجر		بيانات المتجر تشمل كل ما يخص معلومات النشاط التجاري ، اسم المتجر الظاهر للعميل،و حسابات وسائل التواصل الاجتماعي و العنوان التجاري و تفاصيل النشاط الرسمية.	S02-ZD-C100
+العنوان التجاري			S02-ZD-C106;S02-ZD-C107
+العنوان الوطني (سُبل SPL)			S02-ZD-C108;S02-ZD-C242
+دولتك (حسب دولتك)			S02-ZD-C103;S02-ZD-C060
+موقع البيع (من وين تبيع ؟)			S02-ZD-C110;S02-ZD-C111
+المركز السعودي للأعمال (توثيق منصة المركز السعودي للأعمال)			S02-ZD-C114
+تحديد الدول الخاضعة للضرائب	Tax-Applicable Countries	حدد بدقة الدول اللي تطبق عليها الضرائب لتحكم دقيق بالتكاليف وامتثال قانوني.	S02-ZD-C129
+الدول المفعل فيها الضريبة; الدولة المطبق عليها الضريبة			S02-ZD-C120;S02-ZD-C123
+إعدادات الفواتير والضرائب	Invoice & Tax Settings	خصص إعدادات الفواتير والضريبة المضافة (VAT) لتتوافق مع متطلبات بلدك.	S02-ZD-C128
+موقع العميل			S02-ZD-C134
+منطقة (لكل منتج أو منطقة)			S02-ZD-C131;S02-ZD-C132
+شحن دولي; الشحن الدولي	International Shipping		S02-ZD-C233;S02-ZD-C225
+الشحن المحلي			S02-ZD-C223;S02-ZD-C224
+Zid Syria			S02-ZD-C239
+تخصيص العنوان حسب الدولة			S02-ZD-C243
+عنوان العميل (عناوين العملاء)			S02-ZD-C241
+الاسواق المتوفرة (عن قنوات البيع)			S02-ZD-C245
+قنوات البيع (تطبيق قنوات البيع)		تطبيق قنوات البيع هو تطبيق يجمع لك منصات البيع ويوفر لك فرصة التوسع في مبيعاتك وبيع منتجاتك عبر مجموعة متنوعة من منصات التسوق العالمية	S02-ZD-C244
+منصات البيع			S02-ZD-C244
+business_location			S02-ZD-C251
+markets_management.active_markets			S02-ZD-C253;S02-ZD-C254
+قنوات البيع (المتجر الإلكتروني; زد كاشير)			S02-ZD-C285
+مدينة العميل (عرض المنتجات حسب المدينة)			S02-ZD-C286
+الدولة التي تستخدم منها الخدمة	the country from which you use the Service		S02-ZD-C293;S02-ZD-C295
+تخصيص الثيم لكل سوق			S02-ZD-C031;S02-ZD-C032
+سعر مخصص لكل سوق وقناة			S02-ZD-C011
+التجار خارج المملكة (للتجار خارج المملكة العربية السعودية)			S02-ZD-C211;S02-ZD-C074
+إعدادات المتجر	store settings		S02-ZD-C297;S02-ZD-C074
+العنوان الوطني المختصر			S02-ZD-C315;S02-ZD-C316
+نقل متجرك من دولة إلى دولة أخرى			S02-ZD-C299
+Region & Language popup (region_settings_dialog)		The **Region & Language popup** allows customers to change the store language, country, and city within a modal dialog, without leaving the current page.	S02-ZD-C322
+store countries (zid.store.region.countries)			S02-ZD-C325
+Display products in your store based on the customer location			S02-ZD-C324
+سياسة الاستبدال والارجاع; سياسة الاستبدال والاسترجاع	refund and return policies		S02-ZD-C364;S02-ZD-C365;S02-ZD-C358;S02-ZD-C360
+الصفحات القانونية			S02-ZD-C357;S02-ZD-C360
+النطاق		النطاق هو عنوان متجرك الإلكتروني (مثل:https://store.zid.sa ) ويُستخدم للوصول إلى متجرك مباشرة.	S02-ZD-C377
+قائمة النطاقات			S02-ZD-C378
+النطاق الافتراضي			S02-ZD-C387
+نطاق مخصص (ربط نطاق مخصص)			S02-ZD-C381
+النطاقات الفرعية (zid.store)	subdomains		S02-ZD-C395;S02-ZD-C396
+النطاق (الرابط)	the domain (link)		S02-ZD-C397;S02-ZD-C398
+ربط دومين خاص	Custom Domain Linking	اربط دومين خاص (yourstore.com) بدلاً من النطاق الفرعي لتعزيز هوية علامتك التجارية وثقة عملائك.	S02-ZD-C400
+إدارة النطاق المخصص	Manage custom domain		S02-ZD-C399
+الشراء كزائر			S02-ZD-C419
+حسابات العملاء النهائيين (تسجيل الدخول باستخدام الرسائل النصية)			S02-ZD-C411
+صفحة خيارات الدفع			S02-ZD-C409
+اللغة الأساسية للمتجر			S02-ZD-C437
+اللغة الإنجليزية (تفعيل اللغة الإنجليزية)			S02-ZD-C431
+store languages (zid.store.region.languages)			S02-ZD-C440
+لغة الرسائل	Message Language	خصص لغة الرسائل التسويقية لتصل لعملائك بالأسلوب الذي يفهمونه ويثقون به.	S02-ZD-C442
+معلومات المتجر (البيانات الأساسية التي تظهر لعملائك)			S02-ZD-C443
+بيانات التواصل (بيانات التواصل مع المتجر; حسابات التواصل الاجتماعي للمتجر)			S02-ZD-C445
+أولوية السحب من المخزون	Inventory Withdrawal Priority	حدد أولوية السحب من المخزون لتجنب نفاد المنتجات وضمان تلبية طلبات عملائك بسرعة.	S02-ZD-C446;S02-ZD-C470
+إدارة المخازن (مواقع التخزين)		خاصية إدارة المخازن تمكّنك من تنظيم المنتجات حسب مواقع التخزين المختلفة، ومتابعة الكميات المتوفرة بدقة.	S02-ZD-C450
+مخزن افتراضي			S02-ZD-C454
+مواقع المخزون; أماكن استلام منتجاتك; الاستلام من الفرع			S02-ZD-C457
+طلبات نقل المخزون; نقل المخزون بين الفروع	Transfer Inventory Between Branches		S02-ZD-C458;S02-ZD-C472
+Require customer to select city manually			S02-ZD-C474
+موقع العملاء	Customer Location	اعرف مواقع عملائك بدقة لتخصيص العروض وتحسين خدمات التوصيل.	S02-ZD-C478
+تتبع الحملات			S02-ZD-C479;S02-ZD-C482;S02-ZD-C484;S02-ZD-C486
+سوق تطبيقات زد	Zid App Market	سوق تطبيقات زد: هي منصة مملوكة لزد توفر حلول الربط التقني بين التاجر والشريك، وذلك لتمكين التاجر من ربط متجره بأحد تطبيقات المعروضة في خدمة سوق تطبيقات زد، وذلك لمساعدته في إدارة عمليات متجره بسهولة.	S02-ZD-C499;S02-ZD-C500
+تطبيقاتي			S02-ZD-C489
+التطبيقات المدمجة		وهي التطبيقات التي يمكنك التحكم في التطبيق داخل صفحة سوق التطبيقات دون الرجوع الى لوحة تحكم التطبيق الخارجية.	S02-ZD-C490
+Public apps		Apps designed for wider use and are listed in Zid App Market. All merchants on the platform can view, install, and benefit from these apps.	S02-ZD-C494
+Private apps		Apps intended for specific stores only. They are not listed in the Zid App Market and can only be installed by stores explicitly granted access.	S02-ZD-C495
+اشعارات الفريق; إشعارات الفريق	Team Notifications	تمكنك هذه الخاصية من اشعار فريقك عبر البريد الإلكتروني بالطلب وتفاصيله في أي حالة من حالات الطلب التي يتم تحديدها.	S02-ZD-C502;S02-ZD-C506
+فريق العمل; صلاحيات فريق العمل		تتيح لك هذه الخاصية إضافة و إدارة فريق العمل الخاص بك و التحكم في صلاحيات الأعضاء و تحديدها بشكل تفصيلي لكل عضو ، مما يساعدك كتاجر أو صاحب متجر الكتروني في الحفاظ على سرية البيانات.	S02-ZD-C508;S02-ZD-C520
+Store Owner		Store owners have the highest level of access to a store, including creating, updating, and managing all aspects of their store. They also have the ability to create accounts for other store staff and assign them permissions.	S02-ZD-C515
+Other Staff Members		Other staff members can have varying levels of access to the store based on the permissions granted to them by the store owner.	S02-ZD-C516
+إلغاء الاشتراك من الرسائل		خاصية تتيح لعملائك إيقاف استقبال رسائل واتساب التسويقية والتلقائية من متجرك بأنفسهم، بمجرد إرسال كلمة معيّنة مثل «إيقاف» أو «stop»، دون أي تدخّل يدوي منك.	S02-ZD-C526;S02-ZD-C527
+أوقات العمل الرسمية; اوقات العمل الرسمية		تمكنك هذه الخاصية من إغلاق المتجر تماماً ، أو عرض كل صفحات المتجر مع إيقاف عملية إتمام الشراء فقط ، أو إتاحة إمكانية الطلب ساعات معينة من اليوم أو أيام محددة من الأسبوع ، على أن يكون كل خيارات الإيقافات إما لمدة غير محددة أو مدة محدد ثم يعود لاستقبال الطلبات في تاريخ و وقت تقوم بتعيينه.	S02-ZD-C529;S02-ZD-C530
+إغلاق المتجر بالكامل		عند تفعيل هذه الخاصية، سيتم إغلاق المتجر مؤقتًا بالكامل، ولن يتمكن العملاء من إجراء أي طلبات خلال الفترة التي تحددها. يمكنك أيضًا عرض عدٍّ تنازلي يُظهر للزوار موعد إعادة فتح المتجر بناءً على الوقت الذي قمت بإدخاله.	S02-ZD-C531
+إيقاف استقبال الطلبات		لن يتمكن العملاء من إتمام عمليات الشراء أثناء تعليق المتجر، لكن يمكنهم تصفح المنتجات وإضافتها إلى السلة فقط.	S02-ZD-C532
+المنطقة الزمنية			S02-ZD-C536
+زد سوريا	Zid Syria		S02-ZD-C688;S02-ZD-C239

@@ -1,0 +1,170 @@
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+Close window.
+HELP CENTER
+CONTACT
+Preferred Language
+EN
+LOG IN
+
+Contact
+
+Security Update: On October 23, PHP disclosed an additional vulnerability, CVE-2026-115560, affecting applications with a specific, uncommon configuration. Following our security team’s assessment, we have determined that Commerce systems are not impacted by this vulnerability. Commerce will continue to monitor developments and evaluate any additional guidance or security updates as they become available. Read the full update on the Security Trust Center.
+
+System Status
+All Systems Operational
+
+Refreshed less than 1 minute ago
+
+Get Help
+Ask the Community
+
+Get answers from experts
+
+Live Chat
+
+Your Support PIN is required
+
+Phone Support
+
+Your Support PIN is required
+
+Email Support
+
+Your Support PIN is required
+
+Common Questions
+
+no items
+
+Phone Support
+Help Center
+Community
+QUICKSTART
+GETTING STARTED
+V3 PRODUCTS
+PROMOTIONS
+B2B EDITION
+HEADLESS COMMERCE
+MULTI-STOREFRONT
+Introduction To Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup For Multi-Storefront
+Configuring Your Catalog For Multi-Storefront
+Customers And Multi-Storefront
+Checkout And Orders On Multi-Storefront
+Checkout
+Orders
+SITE SPEED
+SEO
+KEYWORD RESEARCH
+GOOGLE ANALYTICS
+ECOMMERCE ANALYTICS REPORTS
+ECOMMERCE INSIGHTS
+CATALOG IMPORT/EXPORT (MODERN)
+CATALOG IMPORT/EXPORT (LEGACY)
+BIGTOOLS
+BIGAI: PREDICTIVE ANALYTICS (LTV)
+BIGAI: PREDICTIVE ANALYTICS (INVENTORY)
+ALTERNATIVE PAYMENT METHODS (APMS)
+LATAM PAYMENTS
+CRYPTOCURRENCY
+ORDER FULFILLMENT
+ORDER MANAGEMENT
+PHISHING ATTEMPTS
+FRAUD PREVENTION
+ACCESSIBILITY AND ADA COMPLIANCE
+CCPA
+BIGCOMMERCE FOR WORDPRESS
+PINTEREST
+DOMAIN & DNS
+REVERSE PROXIES
+INVENTORY MANAGEMENT
+CUSTOMER MANAGEMENT
+SHIPPING
+EMAIL
+CHANGING THEMES
+TROUBLESHOOTING IMAGES
+STORE TRANSFER
+MIGRATING FROM SHOPIFY
+MIGRATING FROM WOOCOMMERCE
+MIGRATING FROM MAGENTO
+B2B NINJA
+DATA LEVELS
+V3 CATALOG MIGRATION
+V2 PRODUCTS
+Guide to Multi-Storefront
+CHAPTER 7:
+Checkout and Orders on Multi-Storefront
+
+As the last touchpoint in the shopper journey, your checkout page should reflect your storefront’s distinctive branding. Once the order is placed, you (or your team) need to be able to quickly identify the storefront of origin, so they can quickly and efficiently start the appropriate fulfillment activities.
+
+In this chapter, we’ll take a look at storefront-level checkout and order settings, and the order management process, which may vary per storefront based on region-specific or privacy requirements.
+
+ 
+Checkout
+
+Several checkout settings can be uniquely configured per storefront, allowing you to customize your checkout pages to support regional shopping experiences.
+
+Go to Channel Manager and select the storefront. Click Checkout in the side navigation.
+
+By default, your storefront uses your store’s checkout settings. When editing the checkout settings for a storefront, uncheck "Use global", then update the available settings for the storefront.
+
+CUSTOMERS
+
+New accounts — Set the checkout behavior for new customer accounts. You can allow customers to check out as a guest without an account, or automatically create an account for the guest shopper after ordering. You can also require customers to sign in or create an account before checking out.
+Existing accounts — Set the checkout behavior for existing customer accounts. You can allow existing customers to check out as a guest, or prompt customers with existing accounts to sign in. You can also require existing customers to sign in, which means they would not be able to check out as a guest. Note that only signed-in customers can use payment wallets from the cart page.
+CHECKOUT TYPE
+
+Checkout — Select whether you would like to use Optimized One-Page Checkout or a custom checkout.
+Custom Checkout Script URL — If custom checkout is selected, enter your checkout’s script URL to install the checkout.
+Guest shopper privacy consent — Select whether guest shoppers are required to manually agree to your store’s privacy policy with a checkbox, or if guest shoppers automatically agree to the terms when entering their email during checkout. You can also opt to not request consent at all.
+Terms and conditions — Enable this setting to require customers to check a box that says "Yes, I agree with the terms and conditions" before completing checkout.
+Link to terms and conditions page — Enter the URL for your terms and conditions webpage.
+Enter the terms and conditions for your store — Manually enter the text for your store’s terms and conditions. This text will display in a pop-up for shoppers.
+ORDER CONFIRMATION SETTINGS
+
+Contact Email — Specify an email address to appear on the order confirmation ("Thanks for your order") page. By default, the order confirmation page displays the storewide order confirmation contact email address, or if that field is empty, the store administrator email address in your store's Miscellaneous settings.
+Custom Order Confirmation Script URL — If custom checkout is selected, enter a script URL to replace the default order confirmation page. This is optional.
+
+See Optimized One-Page Checkout for general information on checkout settings and features.
+
+ 
+
+Which payment gateways support Multi-Storefront? See All Available Payment Gateways for a list of gateways that are compatible with multiple storefronts. You can also opt into the Multi-Storefront Payment Methods beta if you would like to participate in testing the new payment methods experience.
+
+ 
+Orders
+
+Orders from all channels come into your BigCommerce orders area. Orders include storefront attribution and can be sorted per storefront.
+
+The Order Source field in the expanded order details shows which storefront an order originated from.
+
+Orders can also be searched by storefront using the Channel dropdown. Create a custom view to add a storefront-specific tab to your orders screen to quickly filter orders by source.
+
+Manual and draft orders can be created per storefront from the BigCommerce control panel. You will be asked to select the storefront channel before continuing the order creation process. See Manual Orders and Draft Orders for more information.
+
+All Chapters
+Introduction to Multi-Storefront
+Enabling Multi-Storefront
+Configuring Storefronts
+Technical Setup for Multi-Storefront
+Configuring Your Catalog for Multi-Storefront
+Customers and Multi-Storefront
+Checkout and Orders on Multi-Storefront
+ 
+Don't see what you're looking for? Ask the Community
+ASK A QUESTION
+Looking for actionable advice to improve your site?
+
+Share your store’s URL in the Critique My Site group for straightforward, constructive, and candid feedback from the BigCommerce Community.
+
+SHARE YOUR SITE
+Community GuideCommunity IdeasCommunity Code of ConductCommunity Terms of Use
+Become a PartnerBecome an AffiliateContact Support
+
+©2023 BigCommerce Pty. Ltd. Shopping Cart Software
+
+TwitterFacebookLinkedinYoutubePinterestInstagram
+Checkout and Orders on Multi-Storefront

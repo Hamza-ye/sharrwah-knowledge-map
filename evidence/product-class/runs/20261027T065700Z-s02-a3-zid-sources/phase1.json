@@ -1,0 +1,223 @@
+[
+{
+"n": 1,
+"url": "https://zid.sa/ar/solutions/financing/",
+"dir": "items/001-zid.sa",
+"fetched_at": "2026-10-27T06:57:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/solutions/financing/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 41655,
+"cited_in": [
+"S02-ZD-C309",
+"S02-ZD-C310",
+"S02-ZD-C311",
+"S02-ZD-C312"
+],
+"raw_file": "raw.html",
+"sha256": "05b74600c19840f48ee183217e46a3222d6e0c7a61f1839901a46b60dd89ec3b",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://zid.eg/ar/legal/terms-conditions/",
+"dir": "items/002-zid.eg",
+"fetched_at": "2026-10-27T06:57:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.eg/ar/legal/terms-conditions/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 97732,
+"cited_in": [
+"S02-ZD-C313",
+"S02-ZD-C314"
+],
+"raw_file": "raw.html",
+"sha256": "8847761ca0829918500fc8c62430a4664d3c43f359d8bd578ff41e3c650a6a18",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://zid.sa/en/solutions/financing/",
+"dir": "items/003-zid.sa",
+"fetched_at": "2026-10-27T06:57:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/solutions/financing/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 40764,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "6875a86182c5f63fd42affa59c1ecde87db5e34b3ff8b139de92e603cf4a7afb",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7%d9%87%d9%8a-%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%9f/",
+"dir": "items/004-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%85%d8%a7%d9%87%d9%8a-%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%9f/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23322,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "2c91d685c305fcaf3460fbe60583df12b7967931bc7c819f2457c0c0609c7082",
+"raw_ext": "html"
+},
+{
+"n": 5,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7-%d9%87%d9%88-%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b2%d8%af%d8%9f/",
+"dir": "items/005-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%85%d8%a7-%d9%87%d9%88-%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b2%d8%af%d8%9f/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23296,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "53bf1aa38756699f041232454847cf78b6df2b08edac205fc3a1a5505856dd54",
+"raw_ext": "html"
+},
+{
+"n": 6,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%84%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a/",
+"dir": "items/006-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%84%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23060,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "956160ae5b92e22878177c3d4d84fee1b26056b81dcde06d664d7da662965add",
+"raw_ext": "html"
+},
+{
+"n": 7,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%aa%d8%af%d8%b9%d9%85-%d8%ae%d8%a7%d8%b5%d9%8a%d8%a9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%aa%d8%a7%d8%ad%d8%a9-%d9%81%d9%8a/",
+"dir": "items/007-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%aa%d8%af%d8%b9%d9%85-%d8%ae%d8%a7%d8%b5%d9%8a%d8%a9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%aa%d8%a7%d8%ad%d8%a9-%d9%81%d9%8a/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23122,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "bbc99c24a47a7ea05d93672b3326431c2f43c37c0c61194f3c6f20c2862740e6",
+"raw_ext": "html"
+},
+{
+"n": 8,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d8%b2%d9%88%d9%8a%d8%af-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%a8%d8%a7%d9%84%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d9%84%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%a7/",
+"dir": "items/008-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d8%b2%d9%88%d9%8a%d8%af-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%a8%d8%a7%d9%84%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d9%84%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%a7/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 23260,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "9502adbecf5fcece98262f06ca25552c99a7c418c2205b54ea7e511d704ed7be",
+"raw_ext": "html"
+},
+{
+"n": 9,
+"url": "https://help.zid.sa/national-address/",
+"dir": "items/009-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:05Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/national-address/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 25770,
+"cited_in": [
+"S02-ZD-C315",
+"S02-ZD-C316"
+],
+"raw_file": "raw.html",
+"sha256": "5b9160057ec12e5acd01b13d8a212a5dda5c580a659bc55a98d137d4c9253a74",
+"raw_ext": "html"
+},
+{
+"n": 10,
+"url": "https://help.zid.sa/business-verification/",
+"dir": "items/010-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:06Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/business-verification/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 26842,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "3e1823bb2091e126c578979eb2d76ab04f317f23364e716d5e661b3120c3ad97",
+"raw_ext": "html"
+},
+{
+"n": 11,
+"url": "https://help.zid.sa/zidfinance-requirements/",
+"dir": "items/011-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:07Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/zidfinance-requirements/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 24395,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "9fa19a477c9f4669398e8ba92a97b161085feddafb436afa999407f28dbfa30f",
+"raw_ext": "html"
+},
+{
+"n": 12,
+"url": "https://help.zid.sa/finance-management/",
+"dir": "items/012-help.zid.sa",
+"fetched_at": "2026-10-27T06:57:08Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://help.zid.sa/finance-management/",
+"content_type": "text/html; charset=UTF-8",
+"bytes": 24644,
+"cited_in": [
+"S-02 absence audit, Zid part 1: read"
+],
+"raw_file": "raw.html",
+"sha256": "106fdeb5f314c02c7a16cece32342495d84a5a5ab4ce7a8a73263ccc6759d396",
+"raw_ext": "html"
+}
+]

@@ -1,0 +1,30 @@
+cap_id	platform	filler	key
+CM-CHN-003	bigcommerce	Amazon	BC-C-068/where/BC-S-0368
+CM-CHN-003	bigcommerce	Walmart	BC-C-068/where/BC-S-0368
+CM-CHN-003	bigcommerce	eBay	BC-C-068/where/BC-S-0368
+CM-POS-001	bigcommerce	Square	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Vend	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Clover	BC-C-069/decides/BC-S-0372
+CM-POS-001	bigcommerce	Heartland Retail	BC-C-069/decides/BC-S-0372
+CM-MKS-007	bigcommerce	Stripe (Stripe Adaptive Pricing), the FX conversion	BC-C-074/boundary/BC-S-0409
+CM-MKS-006	bigcommerce	Stripe (Stripe OCS Checkout Session), settling in the presentment currency	BC-C-074/reason/BC-S-0411
+CM-CHN-004	bigcommerce	Google	BC-E-170c07d2
+CM-CHN-004	bigcommerce	Meta	BC-E-34d2cd26
+CM-CHN-004	bigcommerce	Microsoft	BC-E-5081e7d4
+CM-CHN-004	bigcommerce	Pinterest	BC-E-d6c2df62
+CM-CHN-004	bigcommerce	TikTok	BC-E-31cb69c5
+CM-CHN-004	bigcommerce	Google	BC-E-b131def1
+CM-CHN-004	bigcommerce	Meta	BC-E-a62c8fa8
+CM-CHN-004	bigcommerce	Microsoft	BC-E-da35319c
+CM-CHN-004	bigcommerce	Pinterest	BC-E-4704e8ef
+CM-CHN-004	bigcommerce	TikTok	BC-E-4b394fb7
+CM-SFR-011	bigcommerce	DEITY	BC-E-caf66d9b
+CM-CHN-001	bigcommerce	Facebook	BC-E-647a67f0
+CM-CHN-001	bigcommerce	Pinterest	BC-E-647a67f0
+CM-CHN-001	bigcommerce	Google Shopping	BC-E-647a67f0
+CM-POS-001	bigcommerce	PayPal Zettle	BC-E-baa02a3d
+CM-CHN-003	bigcommerce	Amazon	BC-E-5052cf28
+CM-CHN-003	bigcommerce	Walmart	BC-E-e4ec9e2b
+CM-CHN-003	bigcommerce	eBay	BC-E-a46ed9f7
+CM-CHN-003	bigcommerce	eBay	BC-E-647a67f0
+CM-CHN-003	bigcommerce	Amazon	BC-E-647a67f0

@@ -1,0 +1,44 @@
+term	translation	definition	cite_ids
+الأسواق المتعددة	Multiple markets	ميزة الأسواق المتعددة تمكنك من إنشاء نسخ مخصصة من متجرك الإلكتروني لكل دولة تستهدفها أو منطقة أو مدينة، بما يضمن ظهور المتجر للعملاء في هذه المنطقة بتجربة تتوافق مع توقعاتهم المحلية.	S02-SA-C005;S02-SA-C089;S02-SA-C092
+المعلومات الأساسية حول السوق	Basic information about the market		S02-SA-C038;S02-SA-C093
+العملات	Currencies		S02-SA-C039;S02-SA-C094
+الفروع والمستودعات	Branches and warehouses		S02-SA-C040;S02-SA-C095
+الشحن	Shipping		S02-SA-C041;S02-SA-C096
+معلومات التواصل	Contact information		S02-SA-C042;S02-SA-C097
+الدومين	Domain		S02-SA-C043;S02-SA-C098
+خيارات الدخول والتسجيل	Login and registration options		S02-SA-C044;S02-SA-C099
+تصميم المتجر	Store design		S02-SA-C045;S02-SA-C100
+دومين فرعي	subdomain		S02-SA-C072;S02-SA-C073;S02-SA-C101;S02-SA-C102
+تفعيل السوق	Activate market		S02-SA-C081;S02-SA-C103
+السوق الافتراضي	Default market		S02-SA-C151;S02-SA-C152
+السوق	Market	السوق هو الدولة أو المنطقة التي تستهدف البيع إليها، وسيُستخدم هذا السجل الضريبي تلقائياً عند البيع فيها.	S02-SA-C153;S02-SA-C154;S02-SA-C452
+اختيار السوق	Market selection	حدِّد كيف يمكن للعميل اختيار السوق عند زيارته الأولى.	S02-SA-C155;S02-SA-C156;S02-SA-C157
+تقييد الشراء حسب السوق	Restrict purchases by market	احصر تجربة الشراء على السوق المطابق لدولة العميل، وقيِّد إتمام الطلب لعناوين التوصيل خارج نطاق هذا السوق.	S02-SA-C158;S02-SA-C159;S02-SA-C160
+تفعيل الضريبة حسب دولة السوق	Tax by market country	ستُفعَّل الضريبة حسب الدولة المحددة في السوق، ويشترط أن يكون لكل سوق دولة واحدة فقط.	S02-SA-C161;S02-SA-C162;S02-SA-C163
+تسعير المنتجات	Product pricing	اختر الطريقة الأنسب لتسعير منتجاتك في كل سوق.	S02-SA-C164;S02-SA-C165;S02-SA-C166
+سعر مُخصَّص لكل سوق	Custom price per market	حدِّد سعر المنتج لكل سوق يدويًا في صفحة المنتج، دون ربطه بتحويل العملة أو تغيُّر الصرف.	S02-SA-C167;S02-SA-C168;S02-SA-C169
+تسعير تلقائي حسب سعر الصرف	Automatic pricing by exchange rate	سيُضبط سعر المنتجات تلقائيًا حسب سعر الصرف الحالي.	S02-SA-C170;S02-SA-C171;S02-SA-C172
+إعدادات المتجر (جميع الأسواق)	Store defaults (all markets)		S02-SA-C173;S02-SA-C174
+مفعّل في أسواق مختارة	Enable in selected markets	يمكنك اختيار الأسواق التي تود إتاحة خيار الإهداء فيها.	S02-SA-C175;S02-SA-C176;S02-SA-C177
+الأسواق المتاحة في التطبيق	Store app markets	حدِّد الأسواق المتاحة للعملاء في تطبيق المتجر.	S02-SA-C178;S02-SA-C179;S02-SA-C180
+ضبط إعادة التوجيه	Domain redirection	أعِد توجيه العميل تلقائيًا إلى الدومين الأساسي عند تعذُّر التصفح عبر الدومين الفرعي لضمان استمرارية التصفح.	S02-SA-C181;S02-SA-C182;S02-SA-C183
+تقييد التنقل بين الأسواق	Restrict market switching	حدِّد السوق تلقائيًا بناءً على عنوان (IP) الخاص بالعميل، دون إتاحة خيار التغيير أو التنقل بين الأسواق.	S02-SA-C184;S02-SA-C185;S02-SA-C186
+اسم السوق	Market name		S02-SA-C187;S02-SA-C188
+إعدادات الأسواق المتعددة	Multi-market settings		S02-SA-C189;S02-SA-C190
+الأسواق المتعددة	Markets		S02-SA-C191;S02-SA-C192
+الأسواق المتعددة	Multi-market		S02-SA-C193;S02-SA-C194
+دولة المتجر	store country	حدد من أي دولة تسجل متجرك، لأن ذلك يحدد الوثائق الحكومية لتهيئة متجرك وفق أنظمتها.	S02-SA-C011;S02-SA-C221;S02-SA-C222
+store scopes		This endpoint allows you to list store scopes for multi-country functionality.	S02-SA-C008
+multi-countries			S02-SA-C385
+الدولة التي تبيع فيها	Country of operation		S02-SA-C522;S02-SA-C520
+مقر المتجر			S02-SA-C362
+موقع المتجر			S02-SA-C364
+سوق سلة بوينت			S02-SA-C376;S02-SA-C377
+store-country		اختر الدولة التي تصدر منها وثائقك الحكومية لتهيئة متجرك وفقًا لأنظمتها.	S02-SA-C590;S02-SA-C594
+البيع بالنيابة (MoR)	Merchant of Record (MoR)		S02-SA-C636;S02-SA-C638
+اللغة الافتراضية	Default language	اللغة الافتراضية للمتجر: هي اللغة التي ستُعتمد في التعريف الأساسي لأقسام المتجر (واجهات - قوائم - منتجات - تصنيفات - الفروع - العروض - الإعلانات - ..).	S02-SA-C686;S02-SA-C698
+الدول المدعومة	Supported countries		S02-SA-C710;S02-SA-C709
+kyc_country			S02-SA-C745
+scopes			S02-SA-C754;S02-SA-C759
+Where is your business based?		Select the country where your business is legally registered or where you issue official documents. We'll use this to apply the correct regulations to your store.	S02-SA-C824;S02-SA-C825
+معلومات التواصل	Contact information		S02-SA-C881;S02-SA-C880

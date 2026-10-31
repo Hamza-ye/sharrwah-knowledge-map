@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://woocommerce.com/document/woocommerce-customizer/",
+ "dir": "items/015-woocommerce.com",
+ "fetched_at": "2026-10-27T11:15:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/woocommerce-customizer/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 39060,
+ "cited_in": [
+  "S-02 A2 WC-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b877943f34a887d00ca9dd59ff2219d415f99fd20a4ca929ba0dd1ea57520189",
+ "raw_ext": "html"
+}

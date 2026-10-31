@@ -1,0 +1,2 @@
+cap_id	platform	quality	value	key
+CM-INV-008	woocommerce	minutes stock is held for an unpaid order, by default	'default' => '60',	WC-C-068/decides/WC-S-5402

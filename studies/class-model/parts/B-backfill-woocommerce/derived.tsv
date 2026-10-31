@@ -1,0 +1,9 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CAT-012	salla	none-held					
+CM-CAT-012	shopify	statements	core			SH-C-010/reason:searched, not found	general
+CM-CAT-013	salla	statements	core	Automatic pricing	SA-C-020/decides/SA-S-3515=plans: plus, pro, special	SA-C-020/responsible:page not read;SA-C-020/reason:page not read	general
+CM-CAT-013	shopify	statements	extension-point			SH-C-020/reason:searched, not found	
+CM-INV-008	salla	none-held					
+CM-INV-008	shopify	none-held					
+CM-SEL-008	salla	none-held					
+CM-SEL-008	shopify	none-held					

@@ -1,0 +1,62 @@
+[
+{
+"n": 1,
+"url": "https://www.unicode.org/reports/tr35/",
+"dir": "items/001-unicode.org",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://raw.githubusercontent.com/googleapis/googleapis/master/google/type/postal_address.proto",
+"dir": "items/002-raw.githubusercontent.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.stripe.com/api/tax/registrations/object",
+"dir": "items/003-docs.stripe.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://wiki.openstreetmap.org/wiki/Key:admin_level",
+"dir": "items/004-wiki.openstreetmap.org",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://martinfowler.com/eaaDev/TemporalProperty.html",
+"dir": "items/005-martinfowler.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html",
+"dir": "items/006-six-group.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://martinfowler.com/eaaCatalog/money.html",
+"dir": "items/007-martinfowler.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Currency.html",
+"dir": "items/008-docs.oracle.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://docs.stripe.com/api/payment_intents/object",
+"dir": "items/009-docs.stripe.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://docs.tigerbeetle.com/coding/data-modeling/",
+"dir": "items/010-docs.tigerbeetle.com",
+"keep_body": false
+}
+]

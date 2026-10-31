@@ -1,0 +1,18 @@
+{
+ "n": 11,
+ "url": "https://help.zid.sa/faqs-sitemap.xml",
+ "dir": "items/011-help.zid.sa",
+ "fetched_at": "2026-10-27T09:20:56Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/faqs-sitemap.xml",
+ "content_type": "text/xml; charset=UTF-8",
+ "bytes": 6985,
+ "cited_in": [
+  "S-02 A2 ZD-1, read as an index"
+ ],
+ "raw_file": "raw.xml",
+ "sha256": "941ff8a75b6762755407c86911a4542b28126466914fc15d7914603331d6c8e9",
+ "raw_ext": "xml"
+}

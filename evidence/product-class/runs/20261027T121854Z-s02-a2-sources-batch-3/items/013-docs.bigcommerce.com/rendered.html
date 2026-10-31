@@ -1,0 +1,117 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Storefront Language Selector
+
+A language selector enables shoppers to switch between the storefront languages you have configured. Stencil automatically provides the necessary data through the `language_selector` object; your theme is responsible for rendering the UI and wiring up interactivity.
+
+## language_selector object
+
+Stencil exposes a `language_selector` object on every page. It contains the following properties:
+
+| Property                 | Type    | Description                                                          |
+| :----------------------- | :------ | :------------------------------------------------------------------- |
+| `active_language_code`   | string  | Locale code for the current language (for example, `en`, `es`, `fr`) |
+| `languages`              | array   | List of all available languages                                      |
+| `languages[].code`       | string  | Locale code for the language                                         |
+| `languages[].switch_url` | string  | URL that switches the storefront to this language                    |
+| `languages[].is_active`  | boolean | `true` if this language is currently active                          |
+
+## Implementation
+
+&gt; **Info**
+&gt;
+&gt; The language selector is already built into Cornerstone 6.19.0 and later. If your theme includes this feature, no additional implementation is needed — the steps below apply to third-party themes or custom themes based on earlier Cornerstone versions.
+
+#### Create a Handlebars partial
+
+Create a new partial file, for example `templates/components/common/language-selector.html`. Use `data-locale-code` attributes so JavaScript can resolve human-readable language names.
+
+&gt; **Note**
+&gt;
+&gt; This markup is a simplified reference, not a copy of Cornerstone's production dropdown. Cornerstone's own [`language-selector.html`](https://github.com/bigcommerce/cornerstone/blob/master/templates/components/common/language-selector.html) toggles visibility with Foundation's `data-dropdown` behavior, which only works in themes that bundle Foundation. Stencil has no shared dropdown primitive, so toggle behavior is theme-specific — several partner themes use a native `&lt;select&gt;` element instead, since keyboard navigation and accessibility come for free from the browser. If you build a custom dropdown like the one below, you're responsible for wiring up the JavaScript that opens and closes it (toggling `aria-expanded` and showing or hiding the list).
+
+**`templates/components/common/language-selector.html`**
+
+```handlebars title="templates/components/common/language-selector.html" showLineNumbers={false}
+&lt;div class="languageSelector navUser-item" data-language-selector&gt;
+    &lt;button
+        class="languageSelector-toggle"
+        aria-labelledby="languageSelector-active"
+        aria-haspopup="listbox"
+        aria-expanded="false"
+    &gt;
+        &lt;span
+            id="languageSelector-active"
+            class="languageSelector-active"
+            data-locale-code="{{language_selector.active_language_code}}"
+        &gt;
+            {{language_selector.active_language_code}}
+        &lt;/span&gt;
+    &lt;/button&gt;
+    &lt;ul class="languageSelector-dropdown" role="listbox"&gt;
+        {{#each language_selector.languages}}
+        &lt;li class="languageSelector-item{{#if is_active}} is-active{{/if}}" role="option"&gt;
+            &lt;a
+                href="{{switch_url}}"
+                class="languageSelector-link"
+                data-locale-code="{{code}}"
+                {{#if is_active}}aria-selected="true"{{/if}}
+            &gt;
+                {{code}}
+            &lt;/a&gt;
+        &lt;/li&gt;
+        {{/each}}
+    &lt;/ul&gt;
+&lt;/div&gt;
+```
+
+Include the partial in your header template, gating the include with `{{#and}}` so the selector only renders when the store has more than one active language:
+
+```handlebars showLineNumbers={false}
+{{#and language_selector language_selector.languages.length '&gt;' 1}}
+    {{&gt; components/common/language-selector}}
+{{/and}}
+```
+
+Cornerstone also ships a separate mobile partial at `templates/components/common/language-selector-mobile.html`, included from `navigation-menu.html`. If your theme has a distinct mobile navigation, create an equivalent mobile partial and gate its include the same way.
+
+#### Resolve locale codes to display names
+
+The `code` values returned by Stencil (such as `es` or `fr-CA`) are machine-readable locale identifiers. Use the browser's [`Intl.DisplayNames`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames) API to display native language names instead.
+
+**`assets/js/theme/global/language-selector.js`**
+
+```javascript title="assets/js/theme/global/language-selector.js" showLineNumbers={false}
+function resolveLanguageName(localeCode) {
+    try {
+        const displayNames = new Intl.DisplayNames([localeCode], { type: 'language' });
+        return displayNames.of(localeCode);
+    } catch {
+        return localeCode;
+    }
+}
+
+export default function initLanguageSelector() {
+    document.querySelectorAll('[data-locale-code]').forEach(el =&gt; {
+        const resolved = resolveLanguageName(el.dataset.localeCode);
+        if (resolved) el.textContent = resolved;
+    });
+}
+```
+
+Import and call `initLanguageSelector()` from your global theme entry point.
+
+#### Add styles
+
+Cornerstone's `assets/scss/components/stencil/navUser/_navUser.scss` is a good reference for production-quality styles that integrate with the existing navigation design. Scope your styles under `.languageSelector` and follow the same BEM naming pattern used in the rest of the theme.
+
+## Resources
+
+* [Cornerstone repository](https://github.com/bigcommerce/cornerstone)
+* [MDN: Intl.DisplayNames](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames)
+* [Localizing Stores](/developer/docs/storefront/stencil/themes/localization/stores)
+* [Translation Keys](/developer/docs/storefront/stencil/themes/localization/translation-keys)</pre></body></html>

@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Currency.html",
+ "dir": "items/008-docs.oracle.com",
+ "fetched_at": "2026-10-29T02:37:42Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Currency.html",
+ "content_type": "text/html",
+ "bytes": 6670,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "464f44ee15415544faa3348ae5fa18fbb40c824ebd1cefb55ec6b42b8a43473d",
+ "raw_ext": "html"
+}

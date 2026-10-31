@@ -1,0 +1,20 @@
+[
+{
+"n": 1,
+"url": "https://woocommerce.com/document/woocommerce-setup-wizard/",
+"dir": "items/001-woocommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://developer.woocommerce.com/docs/contribution/contributing/string-localisation-guidelines/",
+"dir": "items/002-developer.woocommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://developer.woocommerce.com/docs/block-development/extensible-blocks/cart-and-checkout-blocks/additional-checkout-fields/",
+"dir": "items/003-developer.woocommerce.com",
+"keep_body": false
+}
+]

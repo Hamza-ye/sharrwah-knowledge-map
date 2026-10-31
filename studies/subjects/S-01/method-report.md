@@ -177,6 +177,11 @@ Each of these faults made an agent think something was missing, or readable, whe
   - The whole pilot: 1.25 million (first count 2.6).
 - **Not counted:** Stage 1, which every subject shares, took about 1.5 billion more (first count 3.1). The coordinator's own session isn't counted either.
 - **Rework is a large share.** A2 and A3 together cost nearly as much as phase A. B, C and D each ran again after the review, and C four times in all.
+- **Restarts after the usage limit** (*added 26 October 2026, from the agents' transcripts*).
+  - **What happened.** Phase A's five agents started together at 08:42 UTC on 12 October. By 09:17, four had stopped at the usage limit ("You've hit your session limit · resets 10am (UTC)").
+  - **What it cost.** Shopify's and Zid's had written nothing, so they were run again from the start: their first runs' 75 million tokens were lost, and the new runs cost 110 million. Salla's and WooCommerce's had written their work, and were finished for 3.2 and 4.5 million.
+  - **Resuming is cheap.** Phases B, C, D and F paused for half an hour or more, and were resumed, 12 times in all. Each resumption cost 0.2 to 0.7 million: the agent's context, written to the cache once.
+  - **So:** of the pilot's 1,029 million, about 75 million was lost to the usage limit. Most of the rest is each turn reading the agent's context again: phase B's run made 408 requests with a context of up to about 700 thousand tokens.
 - **Against the usage limit.** The founder reported reaching a third of a week's limit on the first day of this week's work. In this count, that is about 0.94 billion tokens, so a week's limit is about 2.8 billion. By that measure the pilot's agents took about a third of a week's limit, and about two fifths with the coordinator's own work. This is a rough estimate: the tokens counted here aren't the plan's meter.
 
 ## Proposed changes before more subjects

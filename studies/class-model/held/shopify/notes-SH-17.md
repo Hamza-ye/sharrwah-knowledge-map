@@ -1,0 +1,76 @@
+# SH-17: Shopify's `admin-router`, Privacy to Shipping (99 entries)
+
+The batch is the admin route manifest's entries from `customer-privacy:index` (SH-E-44ca5056) to `shopify-shipping-calculator:redirect` (SH-E-9bb38c3e): the sections Privacy (8), Products (36), ProfileAssessment (4), Rollouts (2), SalesChannels (1), Settings (23) and Shipping (24). Effort `high`. 129 lines: 96 entries on capabilities, 3 `out`, no `new`.
+
+**What I read:** the brief; the router digest (`held/rules/admin-router.md`, whole, with its section 6); the last section of `review-H-rulings.md`; the evidence map; observed-sh's guides (`README.md`, `docs/READING.md`'s structures, indexes and limits, `docs/GAPS.md`'s admin rows, `structures/README.md`), its register row, ledger summary and `index/ledger/admin-route.tsv` for my routes; the selection rows; B-extent's "Cells and evidence" and "Conventions from the dry run". Of the earlier batches' notes I read only `notes-SH-12.md`'s C1 and C2 (an anchor and an intent with their own eligibility), which the digest's rule 30 sends to, for the policy intents. The twins were looked up once for the whole batch: the concern map's router statements for my sections (`statements.tsv`, structure `structures/shopify/admin-router`) and the router batches' lines (SH-8 to SH-16) by the ids' last parts and paths; `held_entries.py earlier` found only `settings:general` (SH-4, SH-32).
+
+## 1. The new things
+
+None. Two entries were close to `new`, and are placed on an existing capability whose cell, or an earlier line, already holds their thing:
+- **Brand** (`settings:general:brand`, SH-E-f57211bc, and its old address SH-E-38ea4e77): Settings > General > Brand, a place of its own (its route and title), with the anchor Social links. Placed on CM-ACC-006, because SH-32 placed the brand assets' plan note there (SH-E-9595a8ff, line 4). The searches `brand; brand assets; logo; slogan; social links` found only homonyms (Salla's product Brands CM-CAT-005, checkout branding CM-CHK-003). If the coordinator prefers a capability of its own, its name is `new:Brand`, parent CM-ACC-006, domain A, English only (the admin isn't held in Arabic).
+- **Schedule pickup** (`shipping-pickup:update`, SH-E-e5090c83): a carrier's pickup of the store's shipments. Placed on CM-SHP-002, where SH-39 placed scheduling Shopify Shipping's DHL Express pickups (SH-E-ab22e66d, line 148). The searches `schedule pickup; carrier pickup; pickup request` found no capability.
+
+## 2. Rules for the coordinator (kinds of route the digest doesn't cover)
+
+- **R17.1:** a route whose own words name only a developer's page (path `dev`, component `ProfileAssessmentDev`) and whose loader is named for the platform's employees (`employee-route-loader`), with no title and no gate on the store, is `out`, as rule 37's test page is. Its visits on seven stores answered 'There's no page at this address'. Case: `profile-assessment:dev` (SH-E-54663ada). The section's index (`profile-assessment:index`, SH-E-1cbe1d1e) loads the same `employee-route-loader` but is titled 'Profile Assessment', so it stays `core` on CM-TRU-002, the loader named in `reading`; no held statement says what the loader does.
+- **R17.2:** an intent with its own beta, which no Intents API page documents, takes its own line under its own gate (rule 30), and the beta decides its support; it takes no `extension-point` (rule 19). Cases: the eight policy modals' intents (`edit settings/PrivacyPolicy` and the like), each under `beta d4ac6976`, `enabled: true` in both held stores, so `core`, scope `beta d4ac6976`. If the coordinator prefers rule 19's "named in `reading`" alone for an undocumented intent, the eight second lines on CM-CNT-008 can be dropped; no cell changes either way.
+- **R17.3:** a `oneOf` of a feature and a beta is written `feature;beta <hash>` (rule 24) and stays `core` where the beta is false in both held stores, since the feature's alternative keeps it `core` (rule 27); rule 29's `shows` is for a `oneOf` of betas only. Cases: the document templates (SH-E-044f9834, SH-E-e7048c48, SH-E-2fcf83db), `fulfillmentBatchingEligible;beta 8ed61312`, as CM-ORD-009's cell reads its editor (SH-S-5261).
+- **R17.4:** a redirect whose landing page holds a thing its own words name takes a second `shows` line on that thing's capability, beside its target's (R15.4 and R16.1, widened). Cases: `shopify-shipping:redirect` and `shopify-shipping-calculator:redirect` (SH-E-db4f05c9, SH-E-9bb38c3e) land on the 'Shipping rate calculator', which calculates Shopify Shipping's discounted label rates: `shows` on CM-SHP-001 (the target route's cell) and CM-SHP-002. The batching workflow's redirect to `/orders` (SH-E-50e81603) takes CM-ORD-001 alone, its words in `reading` (rule 10), since the orders list's batches aren't held as its thing.
+- **R17.5:** an anchor where the merchant adds a third party's service that does the work through the platform's own interface, its page naming that work, is `extension-point` alone, as rule 14 has it for apps: Custom order fulfillment, 'Add an email for a custom fulfillment service that fulfills orders for you' (CM-SHP-011). Carrier accounts ('Connect your existing carrier account to use your own rates') stays `core` on CM-SHP-015, because that cell already reads the same connection `core` (SH-S-0616).
+- **R17.6:** a modal or page whose words name only a page's action on its own record (delete, duplicate, change status) takes the page's capability; one whose words name another capability's thing (collections, tags, sales channels, catalogs, variants) takes that capability alone (rule 5). Cases: the products list's modals (SH-E-fede65f7 to SH-E-3fa47bfd).
+
+## 3. Twins and earlier lines kept
+
+- `products:variants:update:locations` takes `products:update:locations`' CM-INV-005 (SH-S-5024); `product:variant:purchase_options:update` takes `product:purchase_options:update`'s CM-SEL-001 (SH-S-5019); the variants' publications take `products:update:publications`' CM-CHN-001 (SH-S-5020).
+- `delivery-profile:update` takes `delivery-profile:create`'s CM-SHP-001 (SH-S-7132); `shipping-settings-calculator` takes `shipping-calculator`'s CM-SHP-001 (SH-S-5262); the pickup, local delivery and pickup point routes take CM-SHP-007, CM-SHP-008 and CM-SHP-019 (SH-S-7137, SH-S-7136, SH-S-7138); the shop promise's modal takes CM-SHP-018 under its beta, as `shop-promise-examples` (SH-S-5033).
+- The ProfileAssessment section's routes take CM-TRU-002 alone, as its cell holds the section (SH-S-1594); the money products' profile assessments take their own capability beside it (SH-8, SH-10, SH-11, SH-16).
+- The metafield routes follow rule 21 as SH-10 to SH-15 placed theirs; the sender email redirect lands where SH-14 placed the anchor Sender email (SH-E-4a6be307, CM-NTF-001).
+- `setting:legal:cancel_return_policy_update` takes its create twin's CM-CNT-008 (SH-S-7089), and two more lines, CM-RET-003 and CM-ORD-004, since its path names the cancellation and return rules and its page, opened at its own address, sets 'Return rules' (with a return window, return shipping and a restocking fee) and 'Cancellation rules'. **The coordinator may align the create route (SH-S-7089), which the concern map places on CM-CNT-008 alone.**
+
+## 4. The `CHANGES` lines
+
+- **CM-CAT-001 gains `extension-point`** (line 30, `products:update`, SH-E-6c2d704e): its intent `edit shopify/Product` is one the Intents API documents (`derived/intents.tsv`: `admin-extensions/latest/target-apis/utility-apis/intents-api.md#Product`), so an app opens the admin's own product form: `core;extension-point` by rule 19. Kept.
+- **CM-CHN-002 gains `core`** (line 54, 'Install Shop', SH-E-886e5f0a): the admin's own route that installs the Shop channel, at `settings/channels/install_shop_channel`. The cell is `own-service` from Shop's maker statement (SH-S-0056); the admin's own route for a first-party product stays `core` (the rulings after SH-41 and SH-43; R14.6). Kept. Three of its seven visits landed at `apps/shop-72`, the Shop app's own page; no CM-APP-007 line, since the route isn't that page.
+
+## 5. Entries I couldn't tell
+
+- **`products:update:shipping` and `products:variants:update:shipping`** (SH-E-7f5f99e2, SH-E-e54124e8), 'Shipping' and 'Variant shipping', native-only: placed on CM-SHP-001 as a reading of the title. CM-SHP-020 (customs data and weight, which holds nothing on Shopify) is the other reading. Their only visits answered 'There's no page at this address' in the browser; the native page's rendering, or a held statement of what the product's Shipping card holds, would settle it.
+- **`shipping:list:fulfillable-inventory`** (SH-E-8ae71de2): placed on CM-INV-001 as a reading of its path and module's name. Its one visit showed no modal. The modal's text would settle whether it is stock (CM-INV-001), locations (CM-INV-005) or order routing (CM-SHP-005).
+- **`trust:report-policy-assessment`** (SH-E-c9afe416): untitled, at `settings/general/tpa/:ticketIdentifier`, resource `trust`, intent `create shopify/ReportPolicyAssessment`; placed on CM-TRU-009 (acceptable use and enforcement) as a reading of its id's words. No run opened it; its page would settle whether it is a policy violation's report (CM-TRU-009) or a verification step (CM-TRU-002, whose cell holds the section Trust).
+- **'Shipping processing time'** (anchor `processingtime` of `shipping:list`): no held page shows it; placed with 'Expected delivery dates' on CM-SHP-018 as the delivery promise's setting, since the estimated delivery dates modal computes dates 'by adding your fulfillment time to the transit time' (SH-E-1059fd20's visit).
+- **'Legacy app-owned option'** (`legacy-app-owned-option-definition:view`, SH-E-3ccd49c1): `core` on CM-SHP-001 and `extension-point` on CM-SHP-004, read as an app's shipping rates. No run opened it.
+- **The shipping calculator:** the page at `settings/shipping/shipping-calculator` calculates 'how much you’ll save when you buy labels at discounted rates from Shopify' (`raw/runs/20261006T225457Z-sweep-trial-my-store-8/steps/495.text.txt`), Shopify Shipping's thing (CM-SHP-002), while the concern map cites `shipping-calculator` on CM-SHP-001 (SH-S-5262). I kept CM-SHP-001 for its twin `shipping-settings-calculator`, which no run opened; the coordinator may read SH-S-5262 again.
+- **CM-CNT-007** (SEO): its reading says no Shopify statement shows SEO built into the admin. 'Search engine listing' (`products:update:seo`, SH-E-52862cc8), a native route, and the same card on the product page (`raw/runs/20261008T074500Z-journey-app-ui-product/steps/001.text.txt`) now show it; the cell's reading could be updated.
+
+## 6. Checker notes set aside
+
+- The container notes are answered in each container's `reading` (its children named, the digest's rule 8). The notes on lines 58 and 62 (`setting:legal:privacy`, `setting:legal:shipping`) match their paths `privacy` and `shipping` to other trees' routes; the modals have no children (set aside, as rule 8 says).
+- Line 14's first lead, CM-OPS-004 (store status), is a homonym: `products:list:change-status` changes the products' status.
+
+## 7. What the pages state that no entry holds (second-stage leads, M-12)
+
+- Customer privacy's page: 'Shopify Network Intelligence Enabled', 'Your customer data is securely used with other Shopify data to improve products, ad targeting, and personalization for your store as described in the Additional Services Terms .' (`derived/step-text-from-html/20261002T003931Z-sweep-capture-advanced/441.html.txt`, lines 137 to 139), and 'Recommended privacy settings are for your convenience. Compliance with laws and regulations is your responsibility.' (line 150).
+- Settings > General (`raw/runs/20261006T225457Z-sweep-trial-my-store-8/steps/477.text.txt`): 'Business details', 'Business entity used for financial products, markets, apps, and taxes in this shop' (lines 60 and 61, CM-ACC-004's); 'Backup Region', 'Determines settings for customers outside of your markets' (lines 75 and 78, the markets'); Order processing's 'Automatically fulfill the order‘s line items' and 'Automatically fulfill only the gift cards of the order' (lines 100 and 102, CM-SHP-009's automatic fulfilment); 'Hire a Shopify Partner' (line 119, the Partner Directory, CM-PTN-005).
+- Shipping and delivery on fake-demo-sharrwah (`raw/runs/20261007T115110Z-journey-unvisited-routes/steps/018.text.txt`, lines 51 to 56): 'Delivery estimates', 'Increase conversion and build trust with delivery dates on your store', and 'Shop Promise' with “Highlight that you’re an exceptional shipper with dates backed by a badge and guarantee”, shown 'Off' on a store whose beta 9ed93472 is false (CM-SHP-018).
+- 'Transfer store' on demo-fake-dev-store: “This store can't be transferred because it's a development store created for testing.” (`raw/runs/20261005T090923Z-journey-settings-general/steps/014.text.txt`, line 114), a limit on development stores (CM-ACC-001).
+
+## 8. Problems with the brief or the scripts
+
+- None blocking. `held_entries.py earlier` matched only `settings:general` here, as the coordinator foresaw; the twins came from the concern map's statements and a search of SH-8 to SH-16 by ids and paths.
+- The native routes' web visits answer 'There's no page at this address', so their capability rests on their own words alone (rule 35).
+- Cost: the context stayed under about 200,000 tokens.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 99 of 99 entries, no problem. `method/held_router_gates.py SH-17 --apply` named the ancestors' gates in 48 lines of 29 routes.
+- **The two `CHANGES` stand:**
+  - CM-CAT-001 `extension-point`, `products:update`'s documented intent (rule 19);
+  - CM-CHN-002 `core`, the admin's own route to install the Shop channel, a first-party product's route in the admin (the rulings after SH-41 and SH-43; R14.6).
+- **R17.2 stands:** the policy modals' intents have their own eligibility, so each takes its own line under its own gate (rule 30). Their beta d4ac6976 is on in both held stores, so the lines are `core`. Rule 19's 'named in reading' is for an intent with no gate of its own.
+- **The rules R17.1 and R17.3 to R17.6 stand,** and all six join the digest's section 6.
+- **For Shopify's amendment** (written into `shopify/amendment-notes.md`):
+  - the return and cancellation policy's create route (SH-S-7089), whose update twin also takes CM-RET-003 and CM-ORD-004;
+  - the shipping calculator (SH-S-5262 on CM-SHP-001), which calculates Shopify's label rates, CM-SHP-002's thing;
+  - CM-CNT-007's reading, which held no statement of SEO built into the admin and now has the native route 'Search engine listing'.
+- **The open placements stay as placed.** Brand is on CM-ACC-006, as SH-32's line.
+- **Cost:** 24.5 million tokens over 108 requests, about 247,000 an entry. The context reached about 386,000 tokens.

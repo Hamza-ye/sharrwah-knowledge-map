@@ -1,0 +1,188 @@
+[
+{
+"n": 1,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/store-configuration/translations/address-form-fields.md",
+"dir": "items/001-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://docs.bigcommerce.com/developer/docs/admin/checkout-and-cart/localization.md",
+"dir": "items/002-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/storefront-selector.md",
+"dir": "items/003-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://docs.bigcommerce.com/developer/docs/beta/team-permissions/overview.md",
+"dir": "items/004-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://support.bigcommerce.com/s/article/Address-Autocomplete",
+"dir": "items/005-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://support.bigcommerce.com/s/article/Storefront-Checkout-Configurations",
+"dir": "items/006-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://support.bigcommerce.com/s/article/Checkout-and-Orders-on-Multi-Storefront",
+"dir": "items/007-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://support.bigcommerce.com/s/article/Configuring-Storefronts",
+"dir": "items/008-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://support.bigcommerce.com/s/article/Customers-and-Multi-Storefront",
+"dir": "items/009-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://support.bigcommerce.com/s/article/International-Enhancements-for-Multi-Storefront",
+"dir": "items/010-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography/countries/get-country.md",
+"dir": "items/011-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/geography/states/get-country-states.md",
+"dir": "items/012-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 13,
+"url": "https://docs.bigcommerce.com/developer/docs/storefront/stencil/themes/localization/language-selector.md",
+"dir": "items/013-docs.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 14,
+"url": "https://support.bigcommerce.com/s/article/Technical-Setup-for-Multi-Storefront",
+"dir": "items/014-support.bigcommerce.com",
+"keep_body": false
+},
+{
+"n": 15,
+"url": "https://zid.eg/en/legal/terms-conditions/",
+"dir": "items/015-zid.eg",
+"keep_body": false
+},
+{
+"n": 16,
+"url": "https://zid.eg/ar/legal/privacy-policy/",
+"dir": "items/016-zid.eg",
+"keep_body": false
+},
+{
+"n": 17,
+"url": "https://zid.sa/en/kuwait/",
+"dir": "items/017-zid.sa",
+"keep_body": false
+},
+{
+"n": 18,
+"url": "https://zid.sa/en/oman/",
+"dir": "items/018-zid.sa",
+"keep_body": false
+},
+{
+"n": 19,
+"url": "https://zid.sa/en/syria/",
+"dir": "items/019-zid.sa",
+"keep_body": false
+},
+{
+"n": 20,
+"url": "https://zid.sa/en/uae/",
+"dir": "items/020-zid.sa",
+"keep_body": false
+},
+{
+"n": 21,
+"url": "https://zid.sa/en/egypt/",
+"dir": "items/021-zid.sa",
+"keep_body": false
+},
+{
+"n": 22,
+"url": "https://zid.eg/ar/",
+"dir": "items/022-zid.eg",
+"keep_body": false
+},
+{
+"n": 23,
+"url": "https://zid.sa/en/solutions/payments/",
+"dir": "items/023-zid.sa",
+"keep_body": false
+},
+{
+"n": 24,
+"url": "https://zid.sa/ar/solutions/payments/",
+"dir": "items/024-zid.sa",
+"keep_body": false
+},
+{
+"n": 25,
+"url": "https://zid.sa/ar/syria/",
+"dir": "items/025-zid.sa",
+"keep_body": false
+},
+{
+"n": 26,
+"url": "https://zid.sa/ar/uae/",
+"dir": "items/026-zid.sa",
+"keep_body": false
+},
+{
+"n": 27,
+"url": "https://zid.sa/ar/egypt/",
+"dir": "items/027-zid.sa",
+"keep_body": false
+},
+{
+"n": 28,
+"url": "https://zid.sa/ar/kuwait/",
+"dir": "items/028-zid.sa",
+"keep_body": false
+},
+{
+"n": 29,
+"url": "https://zid.sa/ar/oman/",
+"dir": "items/029-zid.sa",
+"keep_body": false
+},
+{
+"n": 30,
+"url": "https://zid.sa/en/bahrain/",
+"dir": "items/030-zid.sa",
+"keep_body": false
+},
+{
+"n": 31,
+"url": "https://zid.sa/en/qatar/",
+"dir": "items/031-zid.sa",
+"keep_body": false
+}
+]

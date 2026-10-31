@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://support.bigcommerce.com/s/article/Account-Dashboard",
+ "dir": "items/003-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:14:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Account-Dashboard?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191526,
+ "cited_in": [
+  "S-02 BigCommerce gap G07"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a6e4f78dd51a9a0fe944264f292b74f2fc01aa54bb6a473f89966e8b2e6c24ca",
+ "raw_ext": "html"
+}

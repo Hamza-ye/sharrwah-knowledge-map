@@ -1,50 +1,54 @@
 # Plan: from the evidence to the decisions that are expensive to change
 
-**Status: agreed by the founder on 12 October 2026 (gate G0). On 25 October 2026, after G1, the founder reset the work to this plan, with the changes section 11 lists.** It is the only plan, and it works within the founder's decisions (`founder-decisions.tsv`): where the two differ, the decision holds and this plan is corrected. `STATE.md` says where the work is.
+**Status: agreed by the founder on 12 October 2026 (gate G0). On 25 October 2026, after G1, the founder reset the work to this plan, with the changes section 11 lists. On 29 October 2026 the founder's intent set the class's model as the work's base (section 11).** It is the only plan, and it works within the founder's decisions (`founder-decisions.tsv`): where the two differ, the decision holds and this plan is corrected. `STATE.md` says where the work is.
 
 The coordinating session wrote this plan after the founder asked who would manage the work until it reaches a safe shore, with the right engineering, sequence and framing, leaving the founder only what is genuinely theirs to decide. Where a rule comes from known practice, it names its source, and section 10 lists the sources. A rule without a source is the coordinator's own.
 
 ## 1. The aim and the safe shore
 
-Sharrwah is one platform for many markets. Yemen is its first market, not its design target. Before building, the decisions that would be expensive to change later have to be made on evidence. Everything else is decided while building, where it is cheap to change.
+Sharrwah is one platform for many markets: a merchant platform of the class that Shopify represents worldwide and Salla and Zid in the region. Yemen is its first market, not its design target ([the founder's intent, 29 October](founder-decisions.tsv)).
+- **Its extent comes from the class, not from the launch.** What the class establishes, and the slots it leaves for outside parties, belong to the platform. What fills a slot in a market (its providers, partners and law) is that market's setup, and it never defines the platform.
+- **So the work first states the class's model, its extent,** from the evidence held. Architecture then gets its own plan, and on the founder's go on it, architecture and the model's detail grow together beside the subjects. The decisions that would be expensive to change later are made on evidence within the model.
+- **Narrowing needs a reason.** Narrowing what the class establishes needs a founder decision or an engineering reason with evidence. Ordering it is ordinary engineering. Launch and today's resources decide when, never whether.
 
 - **One platform, many markets.** The platform is built once and each market is set up on it: product line engineering (Pohl, Böckle & van der Linden 2005).
+- **The domain's model before architecture.** Domain analysis (FODA: Kang et al. 1990) states the domain's extent from representative systems, then checks and extends it against others, before architecture is modelled.
 - **Hide what is likely to change.** Each decision likely to change sits behind its own module (Parnas 1972).
 - **Effort follows risk.** Analysis effort goes where a wrong decision costs most (Fairbanks 2010; Boehm 1988), and each decision is taken at the last responsible moment (Poppendieck & Poppendieck 2003).
-- **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before its Yemen row (section 6, step 6), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does.
+- **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before its Yemen row (section 6, step 6), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does. The founder's intent states the rule: a market fills slots and never defines the platform. A need one of the founder's markets shows that the class doesn't meet is a product gap: building it goes with that market's setup, and how the platform keeps room for it is engineering's.
 
 **The safe shore.** This plan ends when:
+0. the class's model states its extent: each capability the five references show, where each places it, and how many establish it as their own; and the areas whose architecture has been written grow from it;
 1. every subject in scope has its variation points, each with the variants the five references show, their evidence, their cause and how they coexist;
 2. every decision in scope has its Yemen row: what each option needs in Yemen today, and whether that exists;
-3. every existing question row is placed against a subject, or listed as unplaced with its reason;
-4. a decision register states, for each subject, what follows by engineering rule and what the founder decided or deferred;
+3. every existing question row is placed against the class's model or a subject, or listed as unplaced with its reason;
+4. a decision register states, for each subject, what follows by engineering rule, engineering's rulings (each listed for the founder's veto) and what the founder decided or deferred;
 5. nothing in the register rests on a derived document, or on the founder's words taken as evidence of what a platform does.
 
-Then the design of the first version starts, under its own plan. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
+Architecture doesn't wait for this point. Its own plan comes to the founder with the model's extent at GM, and architecture starts on the founder's go on it, then grows beside the subjects (section 4, Stage 4A; the founder, 30 October). At the shore, the first version's build is planned on the architecture written by then. It is designed for many markets, with Yemen the first set up on it, and each variation point behind its own module. Spikes, throwaway code that answers one stated question, are allowed. Production code waits until requirements, an architecture description and engineering documentation exist to validate it against (the founder, 24 October).
 
 ## 2. What changes from the run so far
 
-- **Q1's question stands, but "done" changes.** Done no longer means every concern on every placement on every platform. It means every subject in scope. The five platforms' inventories, concerns and 8,191 statements stay as they are and become the index the subjects draw from. Known practice scopes analysis by what will be built and by risk (Schmid 2002; Clements & Northrop 2001).
+- **Q1's question stands, but "done" changes.** Done no longer means every concern on every placement on every platform. It means every subject in scope. The five platforms' inventories, concerns and 8,191 statements stay as they are and become the index the subjects draw from. Known practice scopes analysis by risk (Schmid 2002; Clements & Northrop 2001); since 29 October the class's model draws on the whole index (Stage 4A).
 - **The test form becomes the main instrument.** It runs per subject, with matching and gap-closing inside the subject. It no longer waits for a full re-match.
 - **Q2 splits.** Its first step, Yemen's axes and cases, runs early (Stage 1). Its marks ran in the pilot. From Stage 4, one Yemen row per decision replaces them, after the subject's analysis (section 6, step 6; the founder, 25 October).
-- **Q3 runs once, at close-out.** It reconciles the existing rows against the finished register (Stage 5). The rows never feed a subject's analysis.
-- **Retired:** the 84 unclear matches, unreviewed. The 88 matches stay only as hints for scoping.
-- **Gaps** are closed only where a subject needs them. Before a gap goes to anyone, its route is checked against what is held.
+- **Q3 runs at the end of the class's model's extent,** as its check for what the model misses, and again at close-out only where the register has changed what it covers (Stages 4A and 5). The rows never feed a subject's analysis or the model's.
+- **Q1's matches.** The 88 matches stand as joins for the class's model, since they rest on the platforms' terms, identifiers or definitions. The 84 unclear candidates are engineering's to rule under the founder's intent: each join on role alone is a reading the coordinator checks (Stage 4A).
+- **Gaps** are closed only where closing one could change the class's model or a decision, and a proportionate route exists (the founder, 28 October; widened on 29 October). Before a gap goes to anyone, its route is checked against what is held.
 
 ## 3. Who does what
 
 **The founder decides what is genuinely theirs:**
-1. **Scope:** what Sharrwah will and won't be, its business model, and which markets come after Yemen.
+1. **What Sharrwah does,** by the founder's intent of 29 October: which markets, in what order and when, and which merchants Sharrwah goes after first; plans and prices; commercial agreements and partners; the company, its legal structure and licences; spending; and whether Sharrwah's own company operates a service in the merchant's business (payments, balances, financing, shipping, a marketplace, point of sale, data services, a buyer app), where and when. The platform's capabilities for each remain the class's: Sharrwah rules out nothing the class shows, and the platform keeps room for each, whoever provides it.
 2. **Company and legal questions:** legal entities, licences, whether Sharrwah holds funds, and partners. Where law is involved, these are decided with a lawyer.
-   - **The guard** (the founder, 18 October): no arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision, whether Sharrwah itself holds it or a payment company holds it in an account opened through Sharrwah.
-3. **Building ahead:** how far to build for markets not yet planned, that is, whether a variation point stays open or is bound now.
-4. **Spending:** stores on paid plans and consultations.
-5. **What only the founder can do:**
+   - **The guard** (the founder, 18 October): no arrangement that holds sellers' money through Sharrwah goes live anywhere without the founder's decision, whether Sharrwah itself holds it or a payment company holds it in an account opened through Sharrwah. Building or switching on either arrangement, A or B, is the founder's decision too (Decision 1, 25 October). The platform keeps room for both (26 October), as the architecture plan defines keeping room (Stage 4A).
+3. **Spending,** in detail: stores on paid plans and consultations.
+4. **What only the founder can do:**
    - capturing from inside Yemen;
-   - journeys in real stores;
+   - journeys in real stores, and handing the coordinator's capture requests to a local agent, who captures them into observed-sh or observed-sa (section 6, Evidence);
    - contacting platforms, partners and regulators;
    - attestations.
-6. **The gates** in section 5.
+5. **The gates** in section 5.
 
 Nothing reaches the founder without a decision attached. Each item comes with its evidence, its options and the coordinator's recommendation, marked as such. Section 5 says when each is needed and what an item looks like.
 
@@ -55,7 +59,13 @@ Nothing reaches the founder without a decision attached. Each item comes with it
 - whether a page is held, and each gap's kind and route;
 - causes, coexistence and generality (the test form);
 - what follows from a result by engineering rule;
-- sequencing, briefs, and fixes to the method within this plan.
+- sequencing, briefs, and fixes to the method within this plan;
+- by the founder's intent, everything not on the founder's list:
+  - the class's model and its architecture;
+  - which shape is better where the references differ;
+  - how the platform keeps room for what is not built yet. What keeping room means is stated in the architecture plan, by established practice, with S-02's D9 as its worked example (Stage 4A; the founder, 30 October).
+
+  Each such ruling is listed at the next report, and the founder may veto it.
 
 **The coordinating session (Claude Code).** It:
 - frames each step and writes the briefs;
@@ -69,13 +79,14 @@ It never takes the founder's decisions, and never treats the founder's words as 
 **Agents.** Each gets one bounded task from a written brief. Before a brief runs, a separate agent reads it for anything that presupposes the answer (inspection: Fagan 1976). After it runs, a separate agent reviews the result against its sources (independent verification: IEEE 1012).
 - **A review tries to refute** what it reviews, claim by claim, and reports counter-evidence and missing evidence, not agreement. The coordinator checks each finding against its evidence before applying it.
 - **A review also looks for what an entry never cites:** the concerns in the subject's reach, from the concern map, that the entry doesn't cite, and which of them bear on a decision.
+- **A brief quotes the rules it applies** from their source (B-extent.md, the coordinator's rulings, a founder's decision), rather than restating them in its own words. A rule it adds is marked as a ruling and listed for the founder's veto. Its inspection compares each rule of the brief with its source. The held pass's dry run showed why: 55% of its misses came from a brief that restated the model's rules loosely (`studies/class-model/held/review-H.md`).
 
 **The checkers** enforce the rules mechanically: `method/check_concern_map.py` on the concern map, `method/check_yemen_cases.py` on Stage 1, and `method/check_subject.py` on each subject. Between them:
 - quotes are verbatim;
 - citations are at a commit;
 - gap routes are checked against what is held;
 - a "searched, not found" lists what it read;
-- every row is tied to a subject.
+- every row is tied to a subject or to the class's model.
 
 ## 4. The sequence
 
@@ -138,6 +149,8 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 3. The subject list
 
+*Done: G2 answered on 26 October 2026, "evidence" for all ten subjects. Under the founder's intent of 29 October, "won't" is no longer a mark the founder gives: Sharrwah rules out nothing the class shows.*
+
 **Candidates come from evidence only:**
 - the seven concerns Q1 names:
   - holding money;
@@ -168,9 +181,15 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
     - five statements whose source kind changes (S01-WC-078 to 080, S01-BC-123 and 124).
 - Each subject goes through the pilot's five steps, with its Yemen row in place of the Yemen marks (section 6, step 6), and its scenario walk (step 7). Its files go in `studies/subjects/<id>/`. The pilot's own changes apply ([its method report, "Proposed changes before more subjects"](studies/subjects/S-01/method-report.md#proposed-changes-before-more-subjects)):
   - **Scoped to its decisions first.** The subject names its few root decisions, from the platforms' own top-level statements. Its variation points are the facets that can change one of them, and the rest stay as notes (section 6, step 1). Phase C marks which of the founder's items depend on which (its method report, section 10).
-  - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens only where a decision needs it.
-  - **Short agent runs.** Each brief caps its steps and asks for small outputs. Mechanical steps are scripts. An agent's cost is measured after its first steps (`method/count_tokens.py`), and a run whose projection passes its share of the budget is stopped.
+  - **From what is recorded.** Variants come first from the statements the concern map and the pilot already hold. New reading happens where a decision needs it, and what a decision needs is never cut for its cost (the founder, 27 October).
+  - **Short agent runs.** An agent reads its whole context again on every turn, so its cost grows with that context: in S-02's phase A, contexts reached 780,000 tokens. So each brief keeps an agent's context small:
+    - a long reading list is split into parts, each read by a fresh agent that continues from the files;
+    - large files are queried with scripts, not loaded whole;
+    - outputs are small, and mechanical steps are scripts.
+
+    An agent's cost is measured after its first steps (`method/count_tokens.py`). A run whose projection passes its share of the budget is re-planned to read the same evidence at less cost; it is never cut short of the evidence (the founder, 27 October).
   - **A budget per subject,** set before it starts from the last subject's measured cost, and recorded in `STATE.md`.
+  - **Each run's lessons.** After each run, the coordinator records in the subject's method report what it taught about running the agents and planning the work, and applies it to the next run (the founder, 27 October).
   - **Depth by risk.** The analysis goes deep where a decision is both expensive to change and uncertain, and runs a light check where the references agree and Yemen's facts don't bear on it.
   - **Shopify and Salla first.** Their held evidence is the deepest (risk 5), so they are read first and in full. Zid, WooCommerce and BigCommerce come from what the concern map and the pilot recorded, and are read further only where a cause or a gap needs them. The founder asked for others "only when a specific question requires them" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L42)); a cause by comparison is such a question (section 6, step 3).
   - **The pilot's other lessons** (its method report, sections 4 and 9): gaps that ask one question of different sources are audited together; and a Yemen fact with an exclusion such as "only" is read as two facts, since the exclusion states a second one.
@@ -183,17 +202,54 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 - The founder's decisions go in `founder-decisions.tsv`: date, gate, question, decision, and the evidence it rested on.
 - A deferred decision is recorded with what it binds: the variation point stays open and is set per market.
 
+### Stage 4A. The class's model (from 29 October 2026)
+
+The founder's intent puts the class's model before architecture. The subjects continue beside it, as the analysis of where the class varies by market. Each subject's variation points land in the model's areas.
+- **The seed.** The Knowledge Map's 41 areas are the index (`studies/class-model/seed/`). The extent's parts don't read its questions: those wait for Q3's check, so they can't steer the model. Its kinds are computed from the model's cells, and its source types grade the sources the architecture plan draws on, with what each can't tell (the founder, 30 October).
+- **The extent,** from Q1's evidence (`studies/class-model/briefs/B-extent.md`):
+  - **the scope:** before any part runs, every concern of the five platforms is assigned to one domain, A to G;
+  - **per domain, the anchor:** Shopify and Salla, the deepest evidence, grouped as the two platforms group things;
+  - **then the mapping:** WooCommerce, then Zid, then BigCommerce, one part per platform and domain, each mapped onto the domain's model so far and adding what it alone shows;
+  - **after each mapping part that adds capabilities, a back-fill:** the cells those capabilities need for the platforms mapped before, so the order of the mapping doesn't bias the counts.
+
+  Every concern of every platform lands once, so the model stays the union of the class.
+- **The brief is inspected before it runs,** as section 3 asks: `B-extent.md` changed after its last inspection.
+- **A dry run first.** The anchor on one domain, then one platform mapped onto it, reviewed on its output against the evidence by an agent that made none of it. The review checks every placement against all of Q1's statements for the concern, not its `where` rows alone. The conventions and a checker come from it, before the other domains run.
+- **The parts and the merge.** The anchor runs one part per domain the references show (A to G of the seed; H, beyond the references, takes no capabilities), the mapping one part per platform and domain. The coordinator merges the parts, checks that each concern lands once, and computes each capability's kind and count from its cells.
+- **The kind and the count,** by one rule for all (section 6's kinds). A capability's count is how many of the five place it in their core or as their own service; a platform Q1 holds nothing for is not counted as lacking it. It is `class` where that count is at least one, and `slot` where every platform that shows it leaves it to third parties (an extension point) or says another party does it (outside). What fills a slot is `world`: a slot filler, never a capability. The dry run's review may refine the rule, which then applies to all.
+- **The subjects' points.** After the merge, the coordinator lands S-01's and S-02's variation points on the capabilities their concerns and terms point to, each a reading. Each later subject's points land as it ends. Where a point and the model conflict, the point is reopened with its evidence, not forced to fit (the founder, 30 October). An engineering ruling is ruled again on that evidence, and listed for the founder's veto. A founder's own decision, such as S-01's Decision 1, isn't reopened by engineering: the conflict comes to the founder with its evidence.
+- **The check for what it misses.** At the end, Q3's reconciliation places the Knowledge Map's 179 questions and the 81 payment rows against the model. A row the model doesn't cover is a candidate miss, checked against the evidence.
+- **The held pass** (30 October): the platforms' own self-descriptions that the concern map never read, such as route manifests, settings, navigation, plans, permissions, catalogs and changelogs, are read entry by entry and placed on the model. Then each cell still holding nothing is read against the held pages: the admin as captured, then help and docs, through each repository's guides first (`studies/class-model/briefs/H-held.md`; the gap it closes: `studies/class-model/held-vs-read.md`).
+- **An omission review** (the founder's suggestion, 30 October), after the held pass and before the final review, by an agent that made none of the model. It reads from the evidence's side, not the model's: through each repository's guides, registers and run indexes, for what the model still lacks. That means a capability some platform gives a place of its own, or a cell holding nothing where something is held. It samples what stays unread, by group, so the rate of what is missed is measured, not assumed. What isn't held at all, it names as capture requests. Its findings are corrected with the final review's.
+- **An independent review** of the whole extent, by an agent that made none of it. Then **the extent's report** goes to the founder at GM, with the architecture plan, the Knowledge Map's page rebuilt from the model, and engineering's rulings for veto, after the orientation page is updated.
+- **The Knowledge Map's page, rebuilt** (the founder, 30 October): the founder's view of the extent. A script generates it from the model's files, so it can't drift from them: the areas and capabilities, which platforms establish each and where, each linked to its cells at a pinned commit, and Q3's check. A cell with nothing held reads as nothing held, never as absent. The page at `e4d5cee` stays as the seed.
+- **The architecture plan** (the founder, 30 October), in `architecture/plan.md`. It is written by established practice before architecture starts, reviewed by an agent that made none of it, and brought to the founder at GM with the extent's report. Architecture starts on the founder's go on it. Its decisions stay engineering's, each listed for the founder's veto. It states:
+  - **what architecture needs to know, and where each part comes from:** the class's model, the subjects' registers, the founder's decisions and quality order, scale, established designs and engineering writing, and spikes. Each source is graded by the Knowledge Map's source types, with what each can't tell (`studies/class-model/seed/km-source-types.tsv`; the founder, 30 October), reconciled with section 6's kinds of evidence;
+  - **who decides, and how each decision is made, recorded and checked;**
+  - **which areas come first, and which subjects must land before which area.** The model's areas index what the class does, while architecture's parts are cut by what changes together (Parnas 1972). So the plan says how one maps to the other, and which decisions cut across every area and come before any;
+  - **what keeping room means** (section 3), with S-02's D9 as its worked example: options kept by design at a stated cost (Baldwin & Clark 2000; Sullivan et al. 2001), variation points with their binding time (Pohl, Böckle & van der Linden 2005; Svahnberg, van Gurp & Bosch 2005), and checks that keep them open (Ford, Parsons & Kua 2017). It guards both failures: an option closed by a default nobody examined, and one built before it is worth its cost;
+  - **how the whole is evaluated,** not only each decision, against scenarios drawn from the founder's quality order (Kazman, Klein & Clements 2000).
+
+  It carries the rules already set:
+  - **where the references' shapes differ,** each design weighs which is better, and states why. It weighs the founder's quality order and regional fit (`founder-decisions.tsv`, 28 and 29 October), and tests the hypothesis in [`reports/intent-review.md`](reports/intent-review.md), section 14;
+  - **until the founder gives scale numbers,** engineering assumes scale bands and states them, with the decisions each band touches;
+  - **an area's architecture that would bind a question a subject not yet run covers,** such as S-09's currency of records or S-03's contracting company, keeps that variation point open until the subject has run.
+
+  Its practice: architecture processes and descriptions (ISO/IEC/IEEE 42020:2019 and 42010:2022), design by quality drivers (Cervantes & Kazman 2016), and decision records (Nygard 2011). Its first part, what architecture needs to know, is drafted with the dry run's conventions, so the extent records what architecture will need before the other domains run. **Budget:** about 30 million agent tokens, counted beside the extent's.
+- **Then, on the founder's go, architecture and the model's detail,** in the order the plan sets, beside the subjects, with spikes for the questions the model raises.
+- **Budget:** 250 million agent tokens for the extent (the founder, 29 October). Past a quarter over it, the cost comes to the founder as section 8 says, and the work goes on.
+
 ### Stage 5. Close-out
 
 - **Interactions.** Subjects that touch each other, such as currency, payments and tax, are checked for bindings that conflict (Calder et al. 2003).
-- **Q3, once.** Reconcile the existing rows against the register:
+- **Q3, again where needed.** Q3 first runs at the end of the model's extent (Stage 4A). Here it is run again against the register, only where the register has changed what it covers:
   - place each row, and flag its time bombs;
   - list the rows the register doesn't cover;
   - list the register's decisions no row asked about.
 
   A row the register doesn't cover enters scope only if the evidence, not the row, shows it is expensive to change. Before starting, the coordinator decides again whether reconciling is worth its cost.
 - **A last sweep** of the inventory's remaining concerns, for anything expensive to change that the subject list missed. A list of the platforms' broad areas, made after G1, may serve as a cross-check that no area was missed ([`areas.tsv`](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/studies/proposals/areas/areas.tsv)). It is a grouping, not evidence, and it sets no subject's boundary.
-- **Gate G4, the safe shore.** The founder accepts the register, and the design of the first version starts under its own plan (section 1).
+- **Gate G4, the safe shore.** The founder accepts the register and the class's model's extent; engineering's rulings on the model's detail come listed for veto. The first version's build is planned on the architecture written by then (section 1).
 
 ## 5. The gates
 
@@ -201,9 +257,10 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 | --- | --- | --- |
 | G0 | Before Stage 0 | This plan, including the rules in section 6 |
 | G1 | After the pilot | Scale up, change the method, or re-frame |
-| G2 | After the subject list | Business scope: what Sharrwah won't do, and what it must |
-| G3 | After each subject | The decisions the subject raised that are genuinely the founder's |
-| G4 | At close-out | Accept the register, and start the design |
+| G2 | After the subject list | Business scope (answered 26 October: "evidence" for all ten). Under the intent, nothing the class shows is ruled out |
+| G3 | After each subject | The decisions the subject raised that are on the founder's list (section 3); engineering's rulings come listed for veto |
+| GM | After the class's model's extent | The extent's report, with the Knowledge Map's page rebuilt from the model and engineering's rulings for veto, and the architecture plan: architecture starts on the founder's go on the plan (the founder, 29 and 30 October) |
+| G4 | At close-out | Accept the register and the class's model's extent (engineering's rulings on its detail come listed for veto), and plan the first version's build |
 
 G1 was answered on 18 October with a re-frame. On 25 October the founder reset the work to this plan, with the pilot's own changes (section 11).
 
@@ -211,9 +268,10 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 - **At G0:** the go on this plan, and Q3's rows.
 - **Stages 0 and 1:** no decisions. The founder may get a capture list: what only the founder can capture, each item with why. Capturing is optional, and whatever isn't captured stays unknown.
 - **At G1, after the pilot:** whether the pilot's entry lets the founder decide, and the decisions the pilot raised.
-- **At G2:** business scope, marked on the subject list as won't do or must do.
-- **At G3, after each subject:** that subject's decisions.
-- **At G4:** accepting the register.
+- **At G2 (answered):** business scope, marked on the subject list.
+- **At G3, after each subject:** that subject's decisions on the founder's list.
+- **At GM, after the model's extent:** its report, with the Knowledge Map's page rebuilt from the model, and the go on the architecture plan.
+- **At G4:** accepting the register and the class's model's extent.
 
 **What a decision item looks like.** It takes the form of an architecture decision record (Nygard 2011):
 - the question in one line, and why it is the founder's;
@@ -229,7 +287,7 @@ G1 was answered on 18 October with a re-frame. On 25 October the founder reset t
 **Spending** means money paid for evidence or advice the work needs: a store on a paid plan, a lawyer's or accountant's consultation, or an official record.
 - Each request says what it buys, which decision depends on it, the cost if known, and what happens without it: the item stays unknown or open.
 - Building and running Sharrwah are not part of this plan.
-- The agents' own cost is the coordinator's to plan: each subject's budget is set from measured cost (Stage 4), and only an overrun by a quarter comes to the founder (section 8).
+- The agents' own cost is the coordinator's to plan: each subject's budget is set from measured cost (Stage 4), and an overrun by a quarter is reported to the founder (section 8). The budget never costs evidence about the references: the founder moves to a higher plan before that happens, when the coordinator says one is needed (the founder, 27 October).
 
 ## 6. The rules this plan adopts
 
@@ -270,12 +328,19 @@ These rules are settled, each from the source named, unless the founder objects 
    - C: bound per product;
    - D with a market cause: a variation point bound per market;
    - vendor choice or business model:
-     - if expensive to change, the founder decides, on a recommendation;
+     - if expensive to change, engineering rules on the evidence, and the ruling is listed for the founder's veto. Only what is on the founder's list (section 3) is the founder's to decide (the founder's intent, 29 October);
      - if cheap to change, it is left to the build;
    - maturity or unknown, when expensive to change: kept open as a variation point until evidence settles it;
-   - a need the Yemen row shows that no reference meets: a product gap, written without Yemen's name (Q2's rule 3), and a design decision for the founder.
+   - a need the Yemen row shows that no reference meets: a product gap, written without Yemen's name (Q2's rule 3). Building it goes with that market's setup, and how the platform keeps room for it is engineering's (the founder's intent, 29 October).
 6. **The Yemen row,** after the analysis (the founder, 25 October). For each decision, it says what each option needs in Yemen today, and whether that exists: a provider, a partner, a licence, a way to pay. Each fact comes from Stage 1's records, read with its date and with `corrections.md`, and is checked against its source's quote before it is used. A fact with no evidence is marked unknown, not inferred. Q2's scenarios are used only where a decision depends on a condition that is changing.
 7. **The scenario walk,** after the Yemen row (the founder's proposal, 26 October). Each root decision is walked through three more scenarios: a second market whose conditions differ on the decision's question; the company based in another country, such as Oman or Egypt; and the first market dropped. The walk shows whether the decision keeps the alternatives the evidence justifies, or names what it closes, so that this reaches the founder before anything builds on it. It uses the subject's own evidence, and a fact it lacks is marked unknown, not inferred (change scenarios in architecture evaluation: Kazman, Klein & Clements 2000).
+
+**The narrowing test** (the founder's intent, 29 October). Narrowing what the class establishes needs a founder decision or an engineering reason with evidence. Ordering it is ordinary engineering.
+
+**Kinds,** from the Knowledge Map:
+- `class`: what the class is and does;
+- `slot`: where the platform lets an outside party plug in. The slot belongs to the platform;
+- `world`: what fills a slot in a market. It is needed when the slot is filled, and it never defines the platform.
 
 **Options beyond the references.** Where a recommendation needs more than the references show, established designs and engineering writing are read for that decision. Each is weighed by its kind of source: a company's blog is that company's own account (choosing design concepts: Cervantes & Kazman 2016). This is what the founder called "buying architectural intelligence" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L28)).
 
@@ -292,10 +357,22 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 ### Evidence
 
 - **Statements** stay verbatim, cited at a pinned commit, under Q1's rules.
-- **Before a gap goes to anyone,** its route is checked against what is held:
+- **The evidence map** (30 October; `studies/class-model/evidence-map.md`) is every reader's entry point to what is held. It points to each repository's own guides and ledgers, in the order to read them, rather than restating them. It adds three things:
+  - the repositories' own coverage counts, by denominator and status (`held-vs-read.tsv`, by `method/held_vs_read.py`);
+  - what the model has read;
+  - the tools' known faults.
+
+  Every agent that reads evidence starts from it, by structure, before any search. Coverage is judged at three levels, each with its remedy:
+  - exists but isn't captured: a capture request, where the thing could change the model or a decision;
+  - captured but not read: an agent reads it;
+  - read but not placed, or placed wrongly: the review.
+- **Coverage is measured again at each gate,** and whenever a repository the model reads advances its commit. `method/held_vs_read.py` counts what is held against what the model reads, by structure, address and run, and the evidence map's counts are refreshed. A structure or capture that is new since the last measure joins the held pass's selection (`studies/class-model/held/selection.tsv`), and is read before the gate. So the model never rests on one snapshot of what is held. It once did: it was built from the concern map, finished on 12 October, and read nothing captured after it, until the founder's note of 30 October exposed the gap.
+- **Before a gap goes to anyone,** its route is checked against what is held. What a repository holds is read through its own reading guides and indexes first, then searched: its `README.md`, `docs/READING.md`, `docs/GAPS.md`, `docs/OPERATING.md`, `index/`, `structures/README.md` and `structures/REGISTER.tsv`, and in other-product-class each platform folder's `README.md`, `GAPS.md`, `index/` and `structures/REGISTER.tsv` (the founder, 30 October). Then:
   - if the page is held and readable, the gap is "page not read", for an agent;
   - if it is held but not readable, the reader is extended;
-  - only what isn't held goes to the founder, with what exactly to capture and why.
+  - if a run in observed-sh or observed-sa could capture it, the gap is a capture request. The coordinator writes a handoff in `handoffs/`, naming the run: a journey from the repository's own catalog, a held paid store, or a store set up for it. The founder hands it to a local agent, who captures what it can into that repository with its own tools, pushes, and says so. It isn't a decision for the founder (the founder, 27 October);
+  - docs and sitemap pages not held are captured when a subject needs them; both repositories' gap registers list them;
+  - only what no run can capture goes to the founder, with what exactly to capture and why.
 - **A "searched, not found"** lists what it read, at a commit.
 - **Incorporated agreements.** An agreement that a platform's terms incorporate, such as Stripe's Connected Account Agreement under WooPayments and Shopify Payments, is part of that platform's terms. It may be read when a subject needs it.
 - **The founder's words** are never evidence of what a platform does. The founder's decisions about Sharrwah are recorded as decisions.
@@ -305,13 +382,13 @@ A partial overlap is split into variation points and recorded. It doesn't go to 
 
 ### Q3's rows
 
-Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 179 questions, held outside the working files ([`register/`, as it stood at G1](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/e4d5cee3aaea9a12b3e27c1e641075a01d88052c/register)). They are reconciled once, at close-out, and read only for their `id`, `question`, `needed_by` and `lane`. A row never adds a variation point, a variant or a cause.
+Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 179 questions, held outside the working files ([`register/`, as it stood at G1](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/e4d5cee3aaea9a12b3e27c1e641075a01d88052c/register)). They are reconciled at the end of the class's model's extent, as its check for what it misses, and again at close-out only where the register has changed what it covers. They are read only for their `id`, `question` and `needed_by`: their founder lane is not current (the founder, 29 October). A row never adds a variation point, a variant or a cause.
 
 ## 7. Risks, and what happens when one shows
 
 | # | Risk | How it shows | What happens |
 | --- | --- | --- | --- |
-| 1 | The analysis grows past what decisions need | A row or file tied to no subject; a stage past its expected size | The checker rejects untied rows; growth goes to the next gate |
+| 1 | The analysis grows past what decisions need | A row or file tied to no subject and no area of the class's model; a stage past its expected size | The checker rejects untied rows; growth goes to the next gate |
 | 2 | A rule, label, example or brief of ours makes the result, as our category names, the matching example and the salla.com rule did | The brief review finds a presupposition; the pilot shows it; an error traces to a rule | Briefs are reviewed before they run, and the pilot runs before anything scales. Each error is traced to its cause, and everything it touched is re-run |
 | 3 | Evidence we hold goes unread | A gap's route is held | The gap can't go to the founder; the reader is extended |
 | 4 | A search claims more than it read | A "searched, not found" without its list | The checker rejects it |
@@ -327,12 +404,13 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 | 14 | Old documents return as evidence, or old work governs again | A citation to a derived or excluded path; a brief, entry or search that draws on history outside the working files | The checker rejects the citation. History is reached only through a link pinned to a commit in a working file (section 9), and `method/check_surface.py` searches the working files for its framings |
 | 15 | A decision is carried forward on its past acceptance alone | A step builds on a decision whose plan or premise has changed | It is assessed on its merits first: its rationale, its evidence, and whether it still holds (the founder, 25 October) |
 | 16 | A change to this plan drops a safeguard without saying so | A change lists what it adds, not what it removes | Each change lists what it removes or weakens, with the risk that part controlled (section 9) |
+| 17 | Cost cuts evidence, or evidence a run could capture stays uncaptured | A run stopped or narrowed for its cost; a gap routed to the founder that a run could close | The run is re-planned to read the same evidence at less cost, and the founder moves to a higher plan when the coordinator says one is needed. A run that could close a gap goes as a handoff (section 6; the founder, 27 October) |
 
 ## 8. When work stops and comes to the founder
 
 - **An error touches results already delivered.** It is measured and reported, then fixed, as with the Salla gaps.
 - **The pilot misses its "done when".**
-- **A subject runs past its budget by a quarter.** It stops, and comes to the founder with its measured cost. Below that, a run whose projection passes its share of the budget is stopped, and the coordinator re-plans the rest (Stage 4).
+- **A subject or stage runs past its budget by a quarter.** It comes to the founder with its measured cost and a new projection, and the coordinator says whether a higher plan is needed. The work goes on, re-planned to cost less, never cut short of the evidence (the founder, 27 October). Below that, a run whose projection passes its share of the budget is re-planned the same way (Stage 4).
 - **A founder decision blocks the next subject,** where the decision is genuinely the founder's.
 - **New evidence changes more than one finished subject.**
 - **Something needs money, contact with a third party, or a legal judgment.**
@@ -351,10 +429,12 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
   - An agent working from a brief reads only its brief and what the brief names, so that nothing in this plan steers its reading.
 - **Nothing outside the working files governs.** The work done between G1 and the reset is history. It is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf), and is reached only through a link pinned to a commit in a working file, saying what it is for.
 - **The founder's messages.** The coordinator states its reading of each message at the top of its reply, so the founder can correct it. Only decisions go in `founder-decisions.tsv`. A question gets an answer, not a row.
-- **Reports** at each milestone and planned pause (the founder, 24 October): what is settled, what is open, the decisions that are the founder's, and the cost.
+- **Reports** at each milestone and planned pause (the founder, 24 October): what is settled, what is open, the decisions that are the founder's, engineering's rulings for veto, and the cost.
+- **The orientation page** (a claude.ai artifact) is updated at each milestone, and before anything is routed to the founder. It shows where the work is and how it got there, so the founder can follow its structure (the founder, 29 October).
 
 ## 10. Sources
 
+- Baldwin, C., Clark, K. (2000). *Design Rules, Vol. 1: The Power of Modularity.* MIT Press. Modules as options: what a design keeps open, and at what cost.
 - Boehm, B. (1988). A spiral model of software development and enhancement. *IEEE Computer* 21(5). Risk-driven sequencing; the riskiest part first.
 - Cervantes, H., Kazman, R. (2016). *Designing Software Architectures: A Practical Approach.* Addison-Wesley. Attribute-Driven Design: options come from known design concepts.
 - Calder, M., Kolberg, M., Magill, E., Reiff-Marganiec, S. (2003). Feature interaction: a critical review and considered forecast. *Computer Networks* 41(1). Interactions between subjects.
@@ -364,9 +444,12 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - Czarnecki, K., Helsen, S., Eisenecker, U. (2005). Staged configuration through specialization and multilevel configuration of feature models. *Software Process: Improvement and Practice* 10(2). Who binds a variant, and when.
 - Fagan, M. (1976). Design and code inspections to reduce errors in program development. *IBM Systems Journal* 15(3). Inspection, used here on briefs.
 - Fairbanks, G. (2010). *Just Enough Software Architecture: A Risk-Driven Approach.* Marshall & Brainerd. Effort in proportion to risk.
+- Ford, N., Parsons, R., Kua, P. (2017). *Building Evolutionary Architectures.* O'Reilly. Fitness functions: checks that keep an architectural property from eroding.
 - Gotel, O., Finkelstein, A. (1994). An analysis of the requirements traceability problem. *First International Conference on Requirements Engineering.* Tracing each result to its source.
 - IEEE 1012, Standard for System, Software, and Hardware Verification and Validation. Independent review.
 - ISO/IEC/IEEE 15026-2:2022, Systems and software engineering, Assurance case. Claims, arguments and evidence: every claim a fact, a reading or an assumption.
+- ISO/IEC/IEEE 42010:2022, Software, systems and enterprise, Architecture description. Stakeholders, concerns, viewpoints and views, and decisions with their rationale.
+- ISO/IEC/IEEE 42020:2019, Software, systems and enterprise, Architecture processes. Architecture governance, management, conceptualization, evaluation and elaboration.
 - Kang, K., Cohen, S., Hess, J., Novak, W., Peterson, A. (1990). *Feature-Oriented Domain Analysis (FODA) Feasibility Study.* CMU/SEI-90-TR-21. Domain analysis from existing systems, which is what Q1 is.
 - Kazman, R., Klein, M., Clements, P. (2000). *ATAM: Method for Architecture Evaluation.* CMU/SEI-2000-TR-004, Software Engineering Institute. Change scenarios that test whether an architecture's decisions hold as conditions change.
 - Mill, J. S. (1843). *A System of Logic.* The methods of agreement and difference.
@@ -377,6 +460,7 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - Poppendieck, M., Poppendieck, T. (2003). *Lean Software Development: An Agile Toolkit.* Addison-Wesley. Deciding at the last responsible moment.
 - Rahm, E., Bernstein, P. (2001). A survey of approaches to automatic schema matching. *VLDB Journal* 10(4). Why matching on names alone fails.
 - Schmid, K. (2002). A comprehensive product line scoping approach and its validation. *ICSE 2002.* Scoping by what will be built.
+- Sullivan, K., Griswold, W., Cai, Y., Hallen, B. (2001). The structure and value of modularity in software design. *ESEC/FSE 2001.* Real options applied to Parnas's modules.
 - Svahnberg, M., van Gurp, J., Bosch, J. (2005). A taxonomy of variability realization techniques. *Software: Practice and Experience* 35(8). How a variation point is realized, by when it is bound.
 
 ## 11. Changes
@@ -417,6 +501,7 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - `high`: Stage 1's step 2b, labelling states.
   - `medium`: reading and recording evidence (phase A, A2 and similar), where the checker verifies every quote. A part whose check or review shows gaps is re-run at `high`.
   - `low`: one-off mechanical questions.
+  - *Replaced in part on 30 October 2026 by the founder's decision on effort* (`founder-decisions.tsv`, 30 October, "Method (standing)"): no agent reads evidence, reviews or judges at `medium` or `low`; `high`, `xhigh` or `max`, with a task type moved to `xhigh` or `max` where its results show `high` or `xhigh` missing important details.
 - **13 October 2026,** claims of absence, after the founder found held Salla articles on settlement in Kuwait and the UAE that phase A and A2 had recorded as missing:
   - A new pilot step, A3, has an agent that made none of the claims audit every gap and absence.
   - A "searched, not found" must show the corpus search behind it: `method/corpus_search.py`, run in every language the platform uses, and by each country, plan and arrangement it names.
@@ -492,3 +577,78 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Stage 2's note** is brought up to date.
 
   **What this change removes or weakens:** nothing. It adds one step per subject, made by reasoning over the subject's own evidence, with no new reading.
+- **27 October 2026, the founder's answers on S-02's cost** (`founder-decisions.tsv`): S-02 continues; the budget never costs evidence about the references; evidence a run could capture goes as a request, not a decision; each run's lessons change how the work runs; and a part of the plan that stops genuine evidence being captured is revisited. Changed:
+  - **Section 3:** the founder hands capture requests to a local agent.
+  - **Section 4, Stage 4:** "Short agent runs" keeps each agent's context small, and re-plans a run past its share of the budget instead of stopping it; "From what is recorded" never cuts what a decision needs for its cost; each run's lessons are recorded and applied.
+  - **Section 5, spending:** the budget never costs evidence; the coordinator says when a higher plan is needed.
+  - **Section 6, Evidence:** a gap a run could close becomes a handoff in `handoffs/`.
+  - **Section 7:** risk 17.
+  - **Section 8:** a subject a quarter past its budget is reported, not stopped.
+  - **Reviewed and kept:**
+    - Stage 4's "Shopify and Salla first", with the others read from what is recorded: it orders the reading and stops none of it, since a gap on a root decision is closed in phase A2, and a run that could close one goes as a handoff.
+    - The briefs' caps on statements: a check-in, which a resumed agent passes.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **The stop at a quarter past the budget** kept the agents' cost from growing unseen. Reassigned: the overrun still comes to the founder, with its measured cost and a projection, and the work goes on.
+  - **Stopping a run whose projection passes its share** kept one run from taking the subject's budget. Replaced: the run is re-planned to read the same evidence at less cost.
+  - **Gaps routed to the founder as decisions** made the founder choose what to capture. Reassigned: a run that could close a gap goes as a handoff, which the founder still hands on, so nothing outside the session happens without the founder.
+- **29 October 2026, the founder's intent** (`founder-decisions.tsv`; the founder's handoff and go, `founder-messages/2026-10-29-*.md`; the coordinator's review, `reports/intent-review.md`). Changed:
+  - **Section 1:** the class's model comes before architecture; narrowing needs a reason; the guard is stated as the intent's rule; the safe shore adds the model.
+  - **Section 3:** the founder's list, and everything else engineering's, with veto.
+  - **Section 4:** Stage 4A, the class's model. Stage 5's Q3 now first runs at the model's end.
+  - **Section 5:** G3 holds the founder's list only; GM after the model's extent; G4 accepts the model's extent too (the review's wording, which the founder approved).
+  - **Section 6:** the product-gap rule, the narrowing test and the kinds.
+  - **Section 9:** the orientation page.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **The founder's "scope" and "building ahead"** kept engineering from narrowing or overbuilding unseen. Reassigned: narrowing needs a reason with evidence, keeping room means no commitment closes an option (taken out on 30 October: the architecture plan defines keeping room), and each engineering ruling comes to the founder for veto.
+  - **"Everything else is decided while building"** kept the analysis small. Weakened: the class's extent is modelled, breadth first. The risk that the model grows without bound is held by depth only area by area, and by its budget.
+  - **G3 on every founder item** made each decision visible. Weakened to the founder's list; the rest comes as rulings for veto.
+  - **Q3 once, at close-out,** kept the rows from steering the analysis. Moved: the rows check the model only after its extent is built from the evidence, and the extent's parts don't read them, so they still can't steer it.
+  - **The product gap as the founder's design decision** put one market's needs before the founder. Reassigned: building it goes with that market's setup, the founder's; how the platform keeps room for it is engineering's.
+  - **"Its business model" in the founder's scope** is replaced by the founder's list: plans and prices, partners, and Sharrwah's own services.
+  - **The design after the shore, "under its own plan",** kept architecture from binding questions not yet analysed. Weakened: architecture grows area by area after GM. An area's architecture keeps open any variation point a subject not yet run covers. Vetoed by the founder on 30 October (below).
+  - **Vendor choices that are expensive to change** went to the founder (step 5). Reassigned: engineering rules, listed for veto. This is what made S-02's 142 founder items.
+  - **Q1's 84 unclear matches,** retired unreviewed on 12 October, become engineering's rulings, each join on role a reading the coordinator checks. The 88 matches become joins, not hints.
+  - **Fixed after an independent reading of this change** (`reports/plan-change-check.md`): the leftovers it found in sections 2, 3, 5 and 6.
+- **30 October 2026, the founder's veto and change** (`founder-decisions.tsv`, 30 October; `founder-messages/2026-10-30-architecture-plan.md`). Changed:
+  - **Section 4, Stage 4A:** architecture gets its own plan, written by established practice, reviewed independently, and brought to the founder at GM with the extent's report. Architecture starts on the founder's go on it.
+  - **Section 5:** GM brings the extent's report and the architecture plan, for the founder's go.
+  - **Section 3, and the intent's row:** line (3) is taken out. What keeping room means is stated in the architecture plan, with S-02's D9 as its worked example.
+  - **Section 1:** architecture starts on the go on its plan.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **Architecture starting at GM without a further go** kept the work moving. Weakened by one founder go, on a plan the founder reads with the extent's report. Accepted by the founder. In return, it restores the control the fold of 29 October had weakened: architecture under its own plan.
+  - **Line (3)'s "it doesn't mean designing it before its time"** held against building options before they are worth their cost. Reassigned: the architecture plan's definition guards both failures, an option closed by a default nobody examined and one built too early.
+  - **Until the architecture plan exists, nothing defines keeping room.** Accepted: no architecture is designed before the go on the plan, and the extent commits to no design.
+
+  **What the coordinator missed.** The fold listed its own weakening of "under its own plan" without proposing what would replace it, and line (3) was the coordinator's wording, not tested against practice before it went to the founder. From now on, a weakening the coordinator lists comes with its replacement or goes to the founder as a question, and wording proposed for the founder's decisions is checked against established practice first.
+- **30 October 2026, the extent's method, after its brief's inspection** (`studies/class-model/inspection-B.md`). A fix to the method within this plan, listed at the next report. Changed in Stage 4A: a scope step comes first; the mapping runs one part per platform and domain, onto the domain's model so far; after each mapping part that adds capabilities, a back-fill writes the cells they need for the platforms mapped before.
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **A mapping part per platform read the whole merged anchor,** so a Zid or BigCommerce concern could meet a capability of any domain (inspection A's N4). Weakened: a mapping part reads its domain's model. Replaced: the scope step assigns every concern before any part runs, and a part that finds a concern belongs elsewhere lands it as moved, for the coordinator to move.
+- **30 October 2026, the founder's answers before GM** (`founder-decisions.tsv`, 30 October; `founder-messages/2026-10-30-before-gm.md`). Changed:
+  - **Stage 4A, the subjects' points:** a conflict between a point and the model is reopened with its evidence, not forced to fit. Where the point is the founder's own decision, engineering doesn't reopen it: the conflict comes to the founder with its evidence. That follows the founder's handoff of 29 October: "Don't: reopen Decision 1 or the guard".
+  - **Stage 4A, the architecture plan:** its sources are graded by the Knowledge Map's source types.
+  - **Stage 4A and section 5, GM:** the Knowledge Map's page, rebuilt from the model's files, comes with the extent's report.
+  - **Outside this plan:** S-02's register records no veto, and moves RD2's plan items to the founder's plans.
+
+  **What this change removes or weakens:** nothing. It adds a page at GM, which a script generates from the model's files, and it makes the landing of the subjects' points stricter.
+- **30 October 2026, how what is held is read before a capture request** (`founder-decisions.tsv`, 30 October, "Method (standing)"; `founder-messages/2026-10-30-evidence-guides.md`). Changed in section 6, Evidence: before a gap's route is chosen, what each evidence repository holds is read through its own reading guides and indexes first, then searched with `method/held_index.py` and `method/corpus_search.py`. The founder's note came as Q3's candidate misses were being checked: Q3's batches had searched only the concern map, and a first search of observed-sh found Shopify's return rules held in its Help Center and admin API schema, though no statement of the concern map names them.
+
+  **What this change removes or weakens:** nothing. It adds a step before a gap goes anyone's way, and so guards risk 17: evidence a run could capture, or that is already held, routed as a capture request.
+- **30 October 2026, the held pass and an omission review** (the founder: "I prefer at some point, an omission review is done, to review what was missed", a suggestion left to the coordinator; `studies/class-model/held-vs-read.md`). A fix to the method within this plan, listed at the next report. Changed in Stage 4A:
+  - the held pass reads what the repositories hold that the model never read, before the final review;
+  - an omission review, from the evidence's side, comes after it.
+
+  **What this change removes or weakens:** nothing. It adds two steps before the final review, at about 80 to 180 million agent tokens in all, an assumption to be measured on the first batches. The final review, by risk and from the model's side, stays as it was, and reads the omission review's findings.
+- **30 October 2026, the evidence map** (the founder's context: "Evidence is a critical part of this work. We need confidence not only in what is already held, but also in how agents identify, plan, and execute further evidence capture when needed", the framing left to the coordinator). A fix to the method within this plan, listed at the next report. Changed in section 6, Evidence:
+  - an evidence map is every reader's entry point: one page pointing to the repositories' own guides and ledgers, with their counts;
+  - coverage is judged at three levels, each with its remedy.
+
+  The held pass's second stage and the omission review read it. Capture stays the exception: a request only where a gap could change the model or a decision. The coordinator names it, and the founder's local agent runs it, if the founder hands it on (the founder: "i am not trying to make your role or turn this into a capturing process"). A first brief for an agent to write a document per surface (`briefs/E-map.md`) was withdrawn before it ran, since the repositories' own guides already describe their evidence. **What this change removes or weakens:** nothing.
+- **30 October 2026, the coverage measured at each gate, and briefs that quote their rules** (the founder: "If my notes expose a failure, a genuine findings that the method can't address it, correct its root cause under the existing method"). Two fixes to the method within this plan, listed at the next report:
+  - **section 6, Evidence:** coverage is measured again at each gate and whenever a repository the model reads advances, and what is new joins the held pass. The root cause of the gap the founder's notes exposed was that the model rested on one snapshot of what was held, the concern map of 12 October, while the repositories kept growing;
+  - **section 3, Agents:** a brief quotes the rules it applies, marks a rule it adds as a ruling, and its inspection compares each rule with its source. This was the root cause of most of the held pass's dry-run misses.
+
+  **What this change removes or weakens:** nothing. The measure is a script and costs no agent tokens; the held pass grows by what is new.

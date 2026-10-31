@@ -1,0 +1,324 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Get Store Information
+
+GET https://api.bigcommerce.com/stores/{store_hash}/v2/store
+
+Returns metadata about the global settings for a store. Some of these values are independently configurable on a per-storefront or per-channel basis. For channel overrides, see [Store Settings](/developer/api-reference/rest/admin/management/settings).
+
+Reference: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/store-information/v2/get-store-information
+
+## Authentication
+
+- `X-Auth-Token` header (required) — ### OAuth scopes | UI Name | Permission | Parameter | |:--------|:-----------|:----------| | Information &amp; Settings | modify | `store_v2_information` | | Information &amp; Settings | read-only | `store_v2_information_read_only` | ### Authentication header | Header | Argument | Description | |:-------|:---------|:------------| | `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). | ### Further reading For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests). For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes). For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+
+## Request
+
+### Path parameters
+
+- `store_hash` (string, required) — Permanent ID of the BigCommerce store.
+
+### Headers
+
+- `Accept` (string, optional, default: application/json) — The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+
+## Response
+
+### 200
+
+OK
+
+- `id` (string, optional) — The store hash, a unique store identifier.
+- `account_uuid` (string, optional) — The UUID of the account to which the store belongs.
+- `domain` (string, optional) — Primary domain name.
+- `secure_url` (string, optional) — Store’s current HTTPS URL.
+- `control_panel_base_url` (string, optional) — The secure hostname of the control panel.
+- `status` (string, optional) — The status of the store.
+- `name` (string, optional) — Store’s name.
+- `first_name` (string, optional) — Primary contact’s first name (as defined during the store sign-up process).
+- `last_name` (string, optional) — Primary contact’s last name (as defined during the store sign-up process).
+- `address` (string, optional) — Display address.
+- `country` (string, optional) — Country where the store is located (as defined during the store sign-up process).
+- `country_code` (string, optional) — Two-letter ISO 3166-1 country code
+- `infrastructure_region` (string, optional) — The infrastructure region where the store is located. Use this to determine where to place supporting infrastructure for minimum latency to the store. Compare against GCP regions on https://cloud.google.com/compute/docs/regions-zones
+- `phone` (string, optional) — Display phone number.
+- `admin_email` (string, optional) — Email address of the store administrator/owner.
+- `order_email` (string, optional) — Email address for orders and fulfillment.
+- `favicon_url` (string, optional) — The URL of the favicon image associated with the website. This should be a valid URL pointing to an `.ico` or other supported icon format file.
+- `timezone` (Timezone, optional)
+- `language` (string, optional) — Default language code.
+- `currency` (string, optional) — Default currency code.
+- `currency_symbol` (string, optional) — Default symbol for values in the currency.
+- `decimal_separator` (string, optional) — Default decimal separator for values in the currency.
+- `thousands_separator` (string, optional) — Default thousands separator for values in the currency.
+- `decimal_places` (integer, optional) — Default decimal places for values in the currency.
+- `currency_symbol_location` (string, optional) — Default position of the currency symbol (left or right).
+- `weight_units` (string, optional) — Default weight units (metric or imperial).
+- `dimension_units` (string, optional) — Default dimension units (metric or imperial).
+- `dimension_decimal_places` (integer, optional) — The number of decimal places.
+- `dimension_decimal_token` (string, optional) — The symbol that separates the whole numbers from the decimal points.
+- `dimension_thousands_token` (string, optional) — The symbol used to denote thousands.
+- `plan_name` (string, optional) — Name of the BigCommerce plan to which this store is subscribed.
+- `plan_level` (string, optional) — Level of the BigCommerce plan to which this store is subscribed.
+- `plan_is_trial` (boolean, optional) — Whether the payment plan associated with the store is still in the trial phase.
+- `industry` (string, optional) — Industry, or vertical category, in which the business operates. (As selected from drop-down list during the store sign-up process.)
+- `logo` (StoreInformationLogo, optional) — Either an object describing the logo image, or an empty array.
+- `is_price_entered_with_tax` (boolean, optional) — A Boolean value that indicates whether or not prices are entered with tax.
+- `store_id` (integer, optional) — The numeric ID of the store. This is a different unique ID than the store hash.
+- `default_channel_id` (integer, optional, default: 1) — The ID of the default channel. The ID of the first hosted storefront created on the store is `1`.
+- `default_site_id` (integer, optional) — The BigCommerce ID of the website associated with the default storefront.
+- `active_comparison_modules` (list of any, optional)
+- `features` (StoreInformationFeatures, optional) — Describes some aspects of the storeʼs tech stack and configuration settings that affect the features available for the store to use.
+
+## Types
+
+### Timezone
+
+- `name` (string, optional) — A string identifying the time zone, in the format `Continent/City`.
+- `raw_offset` (integer, optional) — A negative or positive number, identifying the offset from UTC/GMT, in seconds, during winter/standard time.
+- `dst_offset` (integer, optional) — A negative or positive number, identifying the offset from UTC/GMT, in seconds, during summer/daylight saving time.
+- `dst_correction` (boolean, optional) — A boolean indicating whether this time zone observes daylight saving time.
+- `date_format` (DateFormat, optional)
+
+### StoreInformationLogo
+
+Either an object describing the logo image, or an empty array.
+
+- StoreInformationLogo0
+- list of any
+
+### StoreInformationFeatures
+
+Describes some aspects of the storeʼs tech stack and configuration settings that affect the features available for the store to use.
+
+- `stencil_enabled` (boolean, optional, default: true) — Indicates whether a store is using a Stencil theme.
+- `sitewidehttps_enabled` (boolean, optional) — Indicates whether there is site-wide https.
+- `facebook_catalog_id` (string, optional) — The ID of the Facebook by Meta catalog. If there is none, this endpoint returns an empty string.
+- `checkout_type` (enum, optional) — What type of checkout is enabled on the store. Possible values returned are optimized, single (one page), single_customizable (one page for developers), klarna.
+  - Allowed values: `optimized`, `single`, `single_customizable`, `klarna`
+- `wishlists_enabled` (boolean, optional)
+- `graphql_storefront_api_enabled` (boolean, optional, default: true) — Describes whether you can use the [GraphQL Storefront API](/developer/docs/storefront/guides/graphql-storefront-api/overview) on this store.
+- `shopper_consent_tracking_enabled` (boolean, optional) — Indicates whether the store is tracking the values of the cookie and privacy consent settings that the shopper consented to and configured.
+- `multi_storefront_enabled` (boolean, optional, default: false) — Indicates whether the storeʼs plan provides the possibility of using more than one storefront or sales channel. Internally, this value indicates whether the store has the MSF feature flag enabled.
+- `storefront_limits` (StoreInformationFeaturesStorefrontLimits, optional)
+
+### DateFormat
+
+- `display` (string, optional) — A string that defines dates’ display format, in the pattern `M jS Y`.
+- `export` (string, optional) — A string that defines the CSV export format for orders, customers, and products, in the pattern `M jS Y`.
+- `extended_display` (string, optional) — A string that defines dates’ extended-display format, in the pattern `M jS Y @ g:i A`.
+
+### StoreInformationLogo0
+
+- `url` (string, optional)
+
+### StoreInformationFeaturesStorefrontLimits
+
+- `active` (integer, optional, default: 1) — Describes the number of storefronts active on the store. If `multi_storefront_enabled` is `false`, this value is `1`.
+- `total_including_inactive` (integer, optional, default: 1) — Describes the total number of storefronts associated with the store, including both active and inactive storefronts. The default varies based on store plan.
+
+## Examples
+
+**Response**
+
+```json
+{
+  "id": "abc123",
+  "account_uuid": "8d4d492f-17a1-4d95-b396-e1c5720815a5",
+  "domain": "my-awesome.store",
+  "secure_url": "https://my-awesome.store",
+  "control_panel_base_url": "https://store-{store_hash}.mybigcommerce.com",
+  "status": "live",
+  "name": "BigCommerce",
+  "first_name": "Jane",
+  "last_name": "Doe",
+  "address": "BigCommerce",
+  "country": "United States",
+  "country_code": "US",
+  "phone": "",
+  "admin_email": "jane.does@example.com",
+  "order_email": "info@janedoes.mybigcommerce.com",
+  "favicon_url": "https://cdn8.bigcommerce.com/r-8816ba2f48b0bcf4bec0c1a954c00e0fc36b/img/bc_favicon.ico",
+  "timezone": {
+    "name": "America/Chicago",
+    "raw_offset": -21600,
+    "dst_offset": -18000,
+    "dst_correction": true,
+    "date_format": {
+      "display": "M jS Y",
+      "export": "M jS Y",
+      "extended_display": "M jS Y @ g:i A"
+    }
+  },
+  "language": "en",
+  "currency": "USD",
+  "currency_symbol": "$",
+  "decimal_separator": ".",
+  "thousands_separator": ",",
+  "decimal_places": 2,
+  "currency_symbol_location": "left",
+  "weight_units": "Ounces",
+  "dimension_units": "Inches",
+  "dimension_decimal_places": 2,
+  "dimension_decimal_token": ".",
+  "dimension_thousands_token": ",",
+  "plan_name": "Standard",
+  "plan_level": "Standard",
+  "plan_is_trial": false,
+  "industry": "Technology",
+  "logo": {
+    "url": "https://cdn8.bigcommerce.com/s-{store_hash}/product_images/screen_shot_2018-05-15_at_12.22.26_pm__05547_1529512135.png"
+  },
+  "is_price_entered_with_tax": false,
+  "store_id": 4884484848484,
+  "default_channel_id": 1,
+  "default_site_id": 1000,
+  "active_comparison_modules": [],
+  "features": {
+    "stencil_enabled": true,
+    "sitewidehttps_enabled": true,
+    "facebook_catalog_id": "",
+    "checkout_type": "optimized",
+    "wishlists_enabled": true,
+    "graphql_storefront_api_enabled": true,
+    "shopper_consent_tracking_enabled": true,
+    "multi_storefront_enabled": true,
+    "storefront_limits": {
+      "active": 3,
+      "total_including_inactive": 4
+    }
+  }
+}
+```
+
+**SDK Code**
+
+```python response
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v2/store"
+
+headers = {"X-Auth-Token": "&lt;apiKey&gt;"}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
+```
+
+```javascript response
+const url = 'https://api.bigcommerce.com/stores/store_hash/v2/store';
+const options = {method: 'GET', headers: {'X-Auth-Token': '&lt;apiKey&gt;'}};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go response
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v2/store"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby response
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v2/store")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java response
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.get("https://api.bigcommerce.com/stores/store_hash/v2/store")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .asString();
+```
+
+```php response
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('GET', 'https://api.bigcommerce.com/stores/store_hash/v2/store', [
+  'headers' =&gt; [
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp response
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v2/store");
+var request = new RestRequest(Method.GET);
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+IRestResponse response = client.Execute(request);
+```
+
+```swift response
+import Foundation
+
+let headers = ["X-Auth-Token": "&lt;apiKey&gt;"]
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v2/store")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```</pre></body></html>

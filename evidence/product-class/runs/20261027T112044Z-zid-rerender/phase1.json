@@ -1,0 +1,434 @@
+[
+{
+"n": 1,
+"url": "https://c.zid.sa/ar-sa",
+"dir": "items/001-c.zid.sa",
+"fetched_at": "2026-10-27T11:20:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://c.zid.sa/ar-sa",
+"content_type": "text/html; charset=utf-8",
+"bytes": 1014,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "57188c17a8e79e3cf77617fb709bc05e58fd333a0858744d8d85552498b3e125",
+"raw_ext": "html"
+},
+{
+"n": 2,
+"url": "https://zid.sa/ar/legal/privacy-policy/",
+"dir": "items/002-zid.sa",
+"fetched_at": "2026-10-27T11:20:44Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/legal/privacy-policy/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 47526,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "745f2aa4a01846adc5333a4c9d7486c41f36158f7cd3393f34a050b317120c1f",
+"raw_ext": "html"
+},
+{
+"n": 3,
+"url": "https://zid.sa/ar/legal/terms-conditions/",
+"dir": "items/003-zid.sa",
+"fetched_at": "2026-10-27T11:20:45Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/legal/terms-conditions/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 123240,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "42e6a0a5aaa7a04c1768560d456cfb47bb967497d6bbbc5644664787558bdc16",
+"raw_ext": "html"
+},
+{
+"n": 4,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-kw/",
+"dir": "items/004-zid.sa",
+"fetched_at": "2026-10-27T11:20:46Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/legal/zidpay-terms-conditions-kw/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 46072,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "289b15c98cfec7d8d819fe91f31afcbe666a3345f27955dc03f869da145c3efe",
+"raw_ext": "html"
+},
+{
+"n": 5,
+"url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+"dir": "items/005-zid.sa",
+"fetched_at": "2026-10-27T11:20:47Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/legal/zidpay-terms-conditions-sa/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 47222,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "8062a50dc71f86d7a9caf3f3a359bd481d4150bb2710626d480bc6cfc2bfee21",
+"raw_ext": "html"
+},
+{
+"n": 6,
+"url": "https://zid.sa/en/egypt/",
+"dir": "items/006-zid.sa",
+"fetched_at": "2026-10-27T11:20:48Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/egypt/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 47076,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "880414f24e74ac3c3018332c64bfebf5f92218891add0558c9a41be22603377d",
+"raw_ext": "html"
+},
+{
+"n": 7,
+"url": "https://zid.sa/en/legal/domestic-shipping-terms/",
+"dir": "items/007-zid.sa",
+"fetched_at": "2026-10-27T11:20:49Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/domestic-shipping-terms/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 30647,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "ac129f0e1d2b599674c3fc731b8eb5029dbc70f23d9db2bdc96ee8c3bf5bbf33",
+"raw_ext": "html"
+},
+{
+"n": 8,
+"url": "https://zid.sa/en/legal/global-shipping-terms/",
+"dir": "items/008-zid.sa",
+"fetched_at": "2026-10-27T11:20:50Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/global-shipping-terms/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 30705,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "0069214e20bbb75935b00857dae639768cd553d55996eee63fd3e63e283d215e",
+"raw_ext": "html"
+},
+{
+"n": 9,
+"url": "https://zid.sa/en/legal/privacy-policy/",
+"dir": "items/009-zid.sa",
+"fetched_at": "2026-10-27T11:20:51Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/privacy-policy/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 44291,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "20fa8d8dea530adb1c9d82ce5b12736d81790054a214c933491b319827b5c2b0",
+"raw_ext": "html"
+},
+{
+"n": 10,
+"url": "https://zid.sa/en/legal/terms-conditions/",
+"dir": "items/010-zid.sa",
+"fetched_at": "2026-10-27T11:20:52Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/terms-conditions/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 96762,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "ab46a6a6b27ef8c083e06aba336b3ae408c5d09eddf8a7939e1e7735233272b9",
+"raw_ext": "html"
+},
+{
+"n": 11,
+"url": "https://zid.sa/en/legal/zidpay-terms-conditions-sa/",
+"dir": "items/011-zid.sa",
+"fetched_at": "2026-10-27T11:20:53Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/zidpay-terms-conditions-sa/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 33460,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "23dae8c090f546645a75225e1d4c354e7366e8f1172ce822a44549e1ef8dfe5e",
+"raw_ext": "html"
+},
+{
+"n": 12,
+"url": "https://zid.sa/en/partners/developers/blog/partner-payouts/",
+"dir": "items/012-zid.sa",
+"fetched_at": "2026-10-27T11:20:54Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/partners/developers/blog/partner-payouts/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 5399,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "6daca6f0a7e2ed8be125c6db3854fef4d8c383d384fb442ac54b33cfd4f5ceed",
+"raw_ext": "html"
+},
+{
+"n": 13,
+"url": "https://zid.sa/en/solutions/payments/",
+"dir": "items/013-zid.sa",
+"fetched_at": "2026-10-27T11:20:55Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/solutions/payments/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 52842,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources, 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "1aa9a0d578bd0aba9966111fbcf9617ad1a73bbfbe876f31f2dea9eaf9b2945a",
+"raw_ext": "html"
+},
+{
+"n": 14,
+"url": "https://zid.sa/en/solutions/zid-voice/",
+"dir": "items/014-zid.sa",
+"fetched_at": "2026-10-27T11:20:56Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/solutions/zid-voice/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 35019,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "dd2549581ec8bd2ec9a5c7d8aa3814099161d96e424f993cde89d54f40a77d24",
+"raw_ext": "html"
+},
+{
+"n": 15,
+"url": "https://zid.sa/en/zid-assurance/",
+"dir": "items/015-zid.sa",
+"fetched_at": "2026-10-27T11:20:57Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/zid-assurance/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 43064,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "6404c361fb368864506e34be86ee521b26cce492049caa0a8066077653898a32",
+"raw_ext": "html"
+},
+{
+"n": 16,
+"url": "https://zid.sa/ar/legal/logistics-t-and-cs/",
+"dir": "items/016-zid.sa",
+"fetched_at": "2026-10-27T11:20:58Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/legal/logistics-t-and-cs/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 34015,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "0b994f896585865b4407fd4cef7ac876b2f83e2df640ac1f5676d3d813788c22",
+"raw_ext": "html"
+},
+{
+"n": 17,
+"url": "https://zid.sa/ar/paymob/",
+"dir": "items/017-zid.sa",
+"fetched_at": "2026-10-27T11:20:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/paymob/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 45767,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "4cc1d8f541711dceea1fc0348fea085a91f0f1fcaf0fb784d1d8d08ab4d1e21d",
+"raw_ext": "html"
+},
+{
+"n": 18,
+"url": "https://zid.sa/ar/solutions/payments/",
+"dir": "items/018-zid.sa",
+"fetched_at": "2026-10-27T11:21:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/ar/solutions/payments/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 54574,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T104936Z-s01-sources"
+],
+"raw_file": "raw.html",
+"sha256": "ce318cf1993e310a30afa0dcb4673d2b35f68de457ec50159e526b4e8081e022",
+"raw_ext": "html"
+},
+{
+"n": 19,
+"url": "https://zid.sa/en/legal/zidpay-terms-conditions-kw/",
+"dir": "items/019-zid.sa",
+"fetched_at": "2026-10-27T11:21:01Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/legal/zidpay-terms-conditions-kw/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 39506,
+"cited_in": [
+"re-render of a page held as an error text: 20261012T190225Z-s01-sources-zid"
+],
+"raw_file": "raw.html",
+"sha256": "6ea4f16cbb6af67560a708267799473780a7fb88ec28825687c84d97d9ba4a7a",
+"raw_ext": "html"
+},
+{
+"n": 20,
+"url": "https://zid.sa/en/syria/",
+"dir": "items/020-zid.sa",
+"fetched_at": "2026-10-27T11:21:02Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/syria/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 45631,
+"cited_in": [
+"re-render of a page held as an error text: 20261019T003516Z-proposals-Q6-zid"
+],
+"raw_file": "raw.html",
+"sha256": "dbec5705099bbe5ef004d2f64acde3ef38b467deebbf37777176a5225071c66b",
+"raw_ext": "html"
+},
+{
+"n": 21,
+"url": "https://zid.sa/en/uae/",
+"dir": "items/021-zid.sa",
+"fetched_at": "2026-10-27T11:21:03Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/uae/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 47126,
+"cited_in": [
+"re-render of a page held as an error text: 20261019T003516Z-proposals-Q6-zid"
+],
+"raw_file": "raw.html",
+"sha256": "065c26e742c61d8beef1cefebc50caca4f4d196e82b79a9c7826552fd5a0e7b5",
+"raw_ext": "html"
+},
+{
+"n": 22,
+"url": "https://zid.eg/ar/legal/terms-conditions/",
+"dir": "items/022-zid.eg",
+"fetched_at": "2026-10-27T11:20:59Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.eg/ar/legal/terms-conditions/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 97964,
+"cited_in": [
+"re-render of a page held as an error text: 20261027T065700Z-s02-a3-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "7751d55d90037530a6939fb1c945f84d6712f4d74a77ed7ff1e85a7c5db34cab",
+"raw_ext": "html"
+},
+{
+"n": 23,
+"url": "https://zid.sa/en/solutions/financing/",
+"dir": "items/023-zid.sa",
+"fetched_at": "2026-10-27T11:21:04Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.sa/en/solutions/financing/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 40984,
+"cited_in": [
+"re-render of a page held as an error text: 20261027T065700Z-s02-a3-zid-sources"
+],
+"raw_file": "raw.html",
+"sha256": "01981283ba53f52d251639b402e1321a156bc0a2582fd674ceed5708811cb589",
+"raw_ext": "html"
+},
+{
+"n": 24,
+"url": "https://zid.eg/ar/",
+"dir": "items/024-zid.eg",
+"fetched_at": "2026-10-27T11:21:00Z",
+"curl_exit": 0,
+"curl_error": "",
+"http_code": 200,
+"final_url": "https://zid.eg/ar/",
+"content_type": "text/html; charset=utf-8",
+"bytes": 41170,
+"cited_in": [
+"re-render of a page held as an error text: 20261027T071937Z-s02-a3-zid-sources-2"
+],
+"raw_file": "raw.html",
+"sha256": "a68ee21fbfe4dab221f73d3ff171b35d037c4bcc24caf4fe7094b3dd090b0956",
+"raw_ext": "html"
+}
+]

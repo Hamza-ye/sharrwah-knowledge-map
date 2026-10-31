@@ -1,0 +1,79 @@
+cap_id	platform	supports	key	why
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0049	admin menu Products
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0050	Products > All Products
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0051	Products > Add New
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0002	settings tab Products
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0012	settings section Products > General
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-5388	the product post type: where you browse products in this store
+CM-CAT-001	woocommerce	core	WC-C-064/decides/WC-S-5387	the product post type's own capability type product
+CM-CAT-001	woocommerce	core	WC-C-064/where/WC-S-0907	installing WooCommerce adds post types and taxonomies for products
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0670	its products API creates, views, updates and deletes products
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0100	REST wc/v3 products controller
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0132	REST wc/v4 products controller
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0143	REST wc/v4 settings-products controller
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0175	Store API route /products
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0265	its webhook topic product.created
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0266	its webhook topic product.updated
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0267	its webhook topic product.deleted
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0268	its webhook topic product.restored
+CM-CAT-001	woocommerce	core	WC-C-064/boundary/WC-S-0269	its webhook topic product.published
+CM-CAT-002	woocommerce	core	WC-C-064/where/WC-S-0055	Products > Attributes, capability manage_product_terms
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0672	its product attributes API
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0673	its product attribute terms API
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0671	its product variations API
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0094	REST wc/v3 product-attributes controller
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0093	REST wc/v3 product-attribute-terms controller
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0101	REST wc/v3 product-variations controller
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0118	REST wc/v3 variations controller
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0165	Store API route /products/attributes
+CM-CAT-002	woocommerce	core	WC-C-064/boundary/WC-S-0167	Store API route /products/attributes/{id}/terms
+CM-CAT-002	woocommerce	extension-point	WC-C-104/where/WC-S-0737	Marketplace category Product options (Merchandising)
+CM-CAT-002	woocommerce	extension-point	WC-C-104/where/WC-S-0738	Marketplace category Product variations (Merchandising)
+CM-CAT-003	woocommerce	core	WC-C-064/where/WC-S-0052	Products > Categories
+CM-CAT-003	woocommerce	core	WC-C-064/boundary/WC-S-0674	its product categories API
+CM-CAT-003	woocommerce	core	WC-C-064/boundary/WC-S-0095	REST wc/v3 product-categories controller
+CM-CAT-003	woocommerce	core	WC-C-064/boundary/WC-S-0168	Store API route /products/categories
+CM-CAT-005	woocommerce	core	WC-C-064/where/WC-S-0054	Products > Brands
+CM-CAT-005	woocommerce	core	WC-C-064/boundary/WC-S-0170	Store API route /products/brands
+CM-CAT-005	woocommerce	core	WC-C-064/boundary/WC-S-0171	Store API route /products/brands/{identifier}
+CM-CAT-006	woocommerce	core	WC-C-064/where/WC-S-0053	Products > Tags
+CM-CAT-006	woocommerce	core	WC-C-064/boundary/WC-S-0677	its product tags API
+CM-CAT-006	woocommerce	core	WC-C-064/boundary/WC-S-0099	REST wc/v3 product-tags controller
+CM-CAT-006	woocommerce	core	WC-C-064/boundary/WC-S-0174	Store API route /products/tags
+CM-CAT-007	woocommerce	extension-point	WC-C-107/where/WC-S-0742	Marketplace category Product images and media
+CM-CAT-010	woocommerce	extension-point	WC-C-061/where/WC-S-0713	Marketplace category Fulfillment and dropshipping
+CM-CAT-012	woocommerce	core	WC-C-093/where/WC-S-5446	the product data panel's field Cost of goods (_cogs_value)
+CM-CAT-012	woocommerce	core	WC-C-093/decides/WC-S-5445	feature cost_of_goods_sold: not experimental, off by default
+CM-CAT-012	woocommerce	core	WC-C-093/decides/WC-S-0940	feature cost_of_goods_sold allows entering cost of goods sold for products
+CM-CAT-012	woocommerce	core	WC-C-093/boundary/WC-S-5447	its REST product schema's cost_of_goods_sold property
+CM-SEL-001	woocommerce	extension-point	WC-C-100/where/WC-S-0739	Marketplace category Subscriptions (Merchandising)
+CM-SEL-001	woocommerce	shows	WC-C-100/decides/WC-S-5351	WooCommerce Subscriptions, a premium extension, sells with recurring payments; no maker named
+CM-SEL-001	woocommerce	shows	WC-C-100/where/WC-S-5350	the extension's settings at WooCommerce > Settings > Subscriptions
+CM-SEL-001	woocommerce	shows	WC-C-100/boundary/WC-S-5469	the extension's hook fired when a renewal payment is due
+CM-SEL-002	woocommerce	core	WC-C-066/where/WC-S-0014	settings section Products > Downloadable products
+CM-SEL-002	woocommerce	core	WC-C-066/where/WC-S-0073	Analytics > Downloads
+CM-SEL-002	woocommerce	core	WC-C-066/decides/WC-S-5393	setting woocommerce_file_download_method, default force
+CM-SEL-002	woocommerce	core	WC-C-066/decides/WC-S-5394	setting woocommerce_downloads_require_login, default no
+CM-SEL-002	woocommerce	core	WC-C-066/decides/WC-S-5395	setting woocommerce_downloads_grant_access_after_payment, default yes
+CM-SEL-002	woocommerce	core	WC-C-066/boundary/WC-S-0087	REST wc/v3 customer-downloads controller
+CM-SEL-002	woocommerce	core	WC-C-066/boundary/WC-S-0242	wc-analytics reports/downloads controller
+CM-SEL-002	woocommerce	core	WC-C-066/boundary/WC-S-0243	wc-analytics reports/downloads/stats controller
+CM-SEL-002	woocommerce	core	WC-C-066/boundary/WC-S-0211	wc-analytics data/download-ips controller
+CM-SEL-002	woocommerce	shows	WC-C-066/boundary/WC-S-0359	privacy exporter WooCommerce Customer Downloads
+CM-SEL-002	woocommerce	shows	WC-C-066/boundary/WC-S-0363	privacy eraser WooCommerce Customer Downloads
+CM-SEL-004	woocommerce	extension-point	WC-C-101/where/WC-S-0731	Marketplace category Bookings and appointments (Merchandising)
+CM-SEL-004	woocommerce	shows	WC-C-101/decides/WC-S-5352	WooCommerce Bookings' availability rules by dates, time slots or ranges
+CM-SEL-004	woocommerce	shows	WC-C-101/boundary/WC-S-5353	WP Cron clears in-cart bookings from abandoned carts
+CM-SEL-004	woocommerce	shows	WC-C-101/boundary/WC-S-5470	WooCommerce Bookings is integrated with the WordPress REST API
+CM-SEL-006	woocommerce	extension-point	WC-C-104/where/WC-S-0732	Marketplace category Bundles (Merchandising)
+CM-SEL-006	woocommerce	shows	WC-C-104/boundary/WC-S-5474	Product Bundles adds bundled_by and bundled_items to the products and orders endpoints
+CM-SEL-008	woocommerce	extension-point	WC-C-102/where/WC-S-0728	Marketplace category Memberships (Merchandising)
+CM-INV-001	woocommerce	core	WC-C-068/where/WC-S-0013	settings section Products > Inventory
+CM-INV-001	woocommerce	core	WC-C-068/decides/WC-S-5400	setting woocommerce_manage_stock, default yes
+CM-INV-001	woocommerce	core	WC-C-068/where/WC-S-0074	Analytics > Stock
+CM-INV-001	woocommerce	core	WC-C-068/boundary/WC-S-0240	wc-analytics reports/stock controller
+CM-INV-001	woocommerce	core	WC-C-068/boundary/WC-S-0241	wc-analytics reports/stock/stats controller
+CM-INV-004	woocommerce	core	WC-C-068/boundary/WC-S-0219	wc-analytics ProductsLowInStock: its own API for products low in stock
+CM-INV-008	woocommerce	core	WC-C-068/decides/WC-S-5401	hold stock for unpaid orders for x minutes, then cancel the pending order; blank disables
+CM-INV-008	woocommerce	core	WC-C-068/decides/WC-S-5402	the hold-stock setting's default, 60
+CM-CAT-013	woocommerce	extension-point	WC-C-104/where/WC-S-0735	Marketplace category Extensions > Merchandising > Pricing (S8)

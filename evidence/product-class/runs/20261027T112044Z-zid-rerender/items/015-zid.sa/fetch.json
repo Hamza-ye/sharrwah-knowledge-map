@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://zid.sa/en/zid-assurance/",
+ "dir": "items/015-zid.sa",
+ "fetched_at": "2026-10-27T11:20:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/en/zid-assurance/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 43064,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "6404c361fb368864506e34be86ee521b26cce492049caa0a8066077653898a32",
+ "raw_ext": "html"
+}

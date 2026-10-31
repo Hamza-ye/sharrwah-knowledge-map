@@ -1,0 +1,381 @@
+___
+Skip to navigation
+Skip to content
+USD
+Change site currency USD selected
+Develop on Woo
+Hire an expert
+Get support
+Sell
+Click to show 12 more items
+Extensions
+Click to show 18 more items
+Resources
+Click to show 23 more items
+Enterprise ecommerce
+Log in
+Get started
+Documentation
+WooCommerce
+Expand
+Products
+Expand
+Extensions
+Expand
+Pre-Sales Support
+Stripe
+WooCommerce Square
+PayPal Braintree
+AutomateWoo
+Expand
+Product CSV Import Suite
+Order/Customer CSV Export
+Facebook for WooCommerce
+WooCommerce Subscriptions
+Expand
+WooCommerce Memberships
+Expand
+WooCommerce Bookings
+Expand
+Product Bundles
+Expand
+Product Recommendations
+Expand
+Composite Products
+Expand
+Smart Coupons
+Cashier for WooCommerce
+Affiliate For WooCommerce
+Mix and Match Products
+Google Product Feed
+Groups WooCommerce
+Gift Cards
+API Manager
+Table Rate Shipping
+Advanced Shipping Packages
+Name Your Price
+Order Delivery
+WooCommerce Zapier Integration
+Expand
+Klarna
+Expand
+Product Vendors
+PDF Invoice
+Pre-orders
+Force Sells
+Google for WooCommerce
+Expand
+Import Export Suite for WooCommerce
+Bulk Updater for WooCommerce Subscriptions
+Expand
+Enhancer for WooCommerce Subscriptions
+Expand
+Product Add-ons
+Expand
+Xero
+Expand
+Buy One Get One Free
+WooCommerce Sales Analysis
+Conditional Shipping and Payments
+WooCommerce Shipping & Tax
+Email Customizer Pro
+Back In Stock Notifications
+WooCommerce Smart Refunder
+Saved Addresses For WooCommerce
+Chained Products
+Volume Discount Coupons
+Sensei
+Expand
+WooCommerce Product Search
+Expand
+Photography
+Expand
+Opayo
+Advanced Bulk Edit
+Smart Stock & Inventory Manager
+Flexi BOGO
+Flexi Custom Order Status
+Product Input Fields
+Product Feed Manager
+Payment Gateway Based Fees and Discounts
+Abandoned Cart Pro
+Order Delivery Date
+Currency per product
+Call for Price Pro
+Product Prices by User Role
+Flexi Custom Order Numbers
+Flexi Product Delivery Date
+Flexi Booking and Appointment
+Delivery and Pickup Scheduler
+SensAI
+All-in-one PDF Invoice and Packing Slips Suite
+Expand
+Easy Subscriptions
+Smart Product Designer
+WooCommerce Anti-Fraud
+Shipment Tracking
+Expand
+EU VAT Number
+WooCommerce AI
+Themes
+Expand
+WooPayments
+WooPay
+WooCommerce Shipping
+WooCommerce Tax
+Retired Products
+Expand
+Woo Marketplace
+Code Snippets
+Expand
+Google Analytics for WooCommerce / Documentation
+Google Analytics for WooCommerce
+
+Google introduced Consent Mode in March 2024 to comply with privacy laws in the EEA/UK region. This means website visitors from these regions must now explicitly grant consent for cookies before any analytics tracking occurs.
+
+Without consent, Google Analytics (GA4) and Google Ads won’t capture user data in these locations. The extension does not provide any UI, like a cookie banner, to let your visitors grant consent for tracking. However, it’s integrated with WP Consent API, so you can pick another extension that provides a user interface that meets your needs.
+
+Due to this new requirement, you may notice a discrepancy between your store and Google Analytics/Ads data, as users must grant consent for analytics data to be captured on Google’s platforms.
+
+Google Analytics for WooCommerce connects your store to a Google Analytics property for basic ecommerce and site analytics. For Google Search queries that brought people to your site, use Google Search Console; search performance data is collected there and can be viewed alongside Analytics after the services are linked.
+
+For advanced Google Analytics features, we recommend Google Analytics Pro for WooCommerce.
+
+Not sure if you need this free extension or the Pro version? Check out our comparison.
+
+Installation
+
+To start using a product from WooCommerce.com, you can use the “Add to store” functionality on the order confirmation page or the My subscriptions section in your account.
+
+Navigate to My subscriptions.
+Find the Add to store button next to the product you’re planning to install.
+Follow the instructions on the screen, and the product will be automatically added to your store.
+
+Alternative options and more information at:
+Managing WooCommerce.com subscriptions.
+
+Setup and configuration
+Set up Google Analytics 4 (G-)
+
+You can configure GA4 in your store’s WP Admin dashboard by navigating to WooCommerce > Settings > Integration > Google Analytics, and adding your Google Analytics 4 (GA4) Measurement ID beginning with “G-”:
+
+How to find your GA4 measurement ID
+
+Sign in to Google Analytics and click Admin, at the bottom of the left-hand navigation.
+In the Data collection and modification column, click Data Streams.
+On the Data Streams page, select the data stream that corresponds to your website.
+Locate and copy your Measurement ID beginning with G- at the top right of the page. Please note it can take up to 48 hours for the connection to start working.
+Tracking options
+“Display Advertising” Support: Check this box if you intend to run ads on the Google Display Network and would like these tracked in your analytics account.
+Track 404 (Not found) Errors: This lets you identify broken or dead links. Use Google Analytics reports to review the Error event.
+Purchase Transactions: Track purchases on your site. This requires a payment gateway that redirects to the thank you/order received page after payment.
+
+Some popular options that do this are:
+WooPayments
+Stripe
+PayPal Braintree for WooCommerce
+PayPal Payments
+Square
+Add to Cart Events: Track when customers add a product to their cart. This allows you to see more specific details about your customers’ experience and better understand where they might be dropping off.
+Remove from Cart Events: Understand what products customers remove from their cart before placing an order.
+Product Impressions from Listing Pages: Track what lists of products customers see on your website (For example, the primary Shop page and Related Product sections).
+Product Clicks from Listing Pages: Track what individual products your customers are clicking on.
+Product Detail Views: Track the products your customers view the full details of.
+Checkout Process Initiated: Track the moment your customers begin the checkout process.
+Setting up Google Analytics goals and funnels
+
+Learn more about setting up conversion events and funnels.
+
+Testing analytics tracking
+
+To test your analytics tracking and ensure it’s sending the correct data to Google, we recommend using the Google Tag Assistant website. While not required, the Tag Assistant Companion Chrome extension can be used alongside it to enable additional troubleshooting features. This tool will analyze the tracking code on your page and notify you of any warnings or errors.
+
+To verify analytics tracking with tag assistant:
+
+Visit https://tagassistant.google.com or click the Tag Assistant Companion extension.
+Enter your website URL and click Connect.
+On your website, grant consent on the cookies banner.
+Return to the Tag Assistant tab and click Continue.
+Click your Google tag or measurement ID (typically beginning with G-) and click the Hits Sent tab.
+On the site tab, simulate user actions like adding products to the cart, initiating checkout, etc. If analytics tracking is working as expected, you should see these events being captured in the Tag Assistant’s Hits Sent tab.
+
+Keep the following points in mind:
+
+Pageviews are not tracked for logged-in admin users (make sure you are logged out).
+Multiple tracking code instances on the same page can cause issues.
+Tracking can take a while to show up in your Google dashboard (it’s recommended to wait 24 hours or try real-time tracking reports).
+Any JavaScript errors on the page could prevent tracking from occurring. You can use your browser’s developer tools to check if any errors are showing up in the console.
+Confirm that there are no browser extensions or ad blockers that might block the tracking. Disable these tools if necessary to ensure accurate tracking.
+If you experience any warnings or errors, or if multiple tracking instances are found on your page, the best way to identify the source is to perform a conflict test. See our detailed guide on conflict testing.
+Cookie banners, consent mode, and analytics tracking
+
+Consent mode facilitates the communication of visitors’ cookie consent preferences to Google tags. To comply with privacy laws, users in the EEA, UK, and Switzerland must grant cookie consent before analytics tracking is activated.
+
+To implement cookie consent, we recommend using one of Google’s recommended CMPs that offers a WordPress plugin compatible with the WP Consent API. Each of those plugins may require additional setup or registration.
+
+For analytics data to be sent to Google Analytics, your consent mode integration must update consent states after visitors grant consent. You can follow Google’s guide to test if the consent state is correctly updated.
+
+If you find the consent state is not updated by your cookie plugin, please contact that plugin’s developers for assistance in ensuring compatibility with Google Analytics for WooCommerce or with WP Consent API.
+
+Hooks and filters
+
+Scope of support:
+
+We are unable to provide support for customizations under our Support Policy. If you need to customize a snippet or extend its functionality, we recommend working with a Woo Agency Partner or a WooCommerce developer on Codeable.
+
+
+This is an advanced feature; please proceed with caution. In case of issues please check the Testing Analytics section.
+
+Customize the product identifier sent to Google
+
+By default, this extension will use the WooCommerce Product ID to identify products to Google. In some instances it might be necessary to modify the default behaviour. This can be done using the filter woocommerce_ga_product_identifier.
+
+Modify the default consent state for EEA regions
+
+The filter woocommerce_ga_gtag_consent_modes gives you the ability to modify the default consent values sent to Google during initialization. For more information see the consent documentation on GitHub.
+
+Use a custom name for the tracking function
+
+As is fairly standard when using Google Analytics, there is a global function named gtag which is used to push data. If you need to change the default name, that can be done using the filter woocommerce_gtag_tracker_variable.
+
+Alter the default tag configuration
+
+While all configuration changes should be managed via the administration interface, if you need to overwrite the settings used to set up the tracker, use the filter woocommerce_ga_gtag_config.
+
+Include more than one tracking ID
+
+The following hook can be used for adding extra calls to the gtag function on your page:
+
+wp_add_inline_script(
+	'woocommerce-google-analytics-integration',
+	'gtag( "config", "..." );'
+);
+Frequently asked questions
+How can I set up cross-domain measurement?
+
+If you’re tracking multiple domains or tracking subdomains, we recommend reviewing Google’s documentation on setting up cross-domain measurement.
+
+This extension overwrites the consent mode defaults set by another extension
+
+If the additional CMP extension you chose to provide UI for cookie consent sets its own default state of consent modes that are different to the ones we set, and you would like to make sure we’ll not overwrite that, use the woocommerce_ga_gtag_consent_modes filter to change or disable our setup.
+
+How can I stop firing the page_view event when the page loads?
+
+This is a matter of the default tag config. You can change the send_page_view property using the woocommerce_ga_gtag_config filter.
+
+Was this guide helpful for you?
+Related Products
+Royal Mail Shipping Method
+by
+Woo
+
+Offer Royal Mail shipping rates to your customers.
+
+Price $109 annually
+$109
+annually
+Rated 2.3 out of 5 stars
+2.3 
+(3)
+Canada Post Shipping Method
+by
+Woo
+
+Get shipping rates from the Canada Post Ratings API which handles both domestic and international parcels.
+
+Price $109 annually
+$109
+annually
+Rated 2 out of 5 stars
+2 
+(7)
+ON THIS PAGE
+Installation
+Setup and configuration
+Set up Google Analytics 4 (G-)
+Setting up Google Analytics goals and funnels
+Testing analytics tracking
+Cookie banners, consent mode, and analytics tracking
+Hooks and filters
+Customize the product identifier sent to Google
+Modify the default consent state for EEA regions
+Use a custom name for the tracking function
+Alter the default tag configuration
+Include more than one tracking ID
+Frequently asked questions
+How can I set up cross-domain measurement?
+This extension overwrites the consent mode defaults set by another extension
+How can I stop firing the page_view event when the page loads?
+Google Analytics for WooCommerce
+by Woo
+No payment details required • Set up in minutes
+Install for free
+30-day money-back guarantee
+Support teams across the world
+Safe and secure online payments
+Sell
+WooCommerce
+WooCommerce pricing
+Payments
+No-code customization
+Marketing
+Checkout
+Shipping
+Mobile app
+Enterprise ecommerce
+Marketplace
+WooCommerce extensions
+WooCommerce themes
+New
+Essentials
+Collections
+Developed by Woo
+Build
+Woo for developers
+Developer resources
+Become a Woo agency
+Become a Marketplace partner
+Become an affiliate
+Resources
+Blog
+Documentation
+WooCommerce site examples
+Product updates
+Email newsletter
+Support
+Feature requests
+WooCommerce hosting
+Hire an agency
+Participate in customer research
+Accessibility
+Support forums
+Company
+About
+Press
+Download WooCommerce free
+Join the Woo community
+Woo trademark guidelines
+Brand and logo guidelines
+Do not sell or share my personal information
+WooCommerce Support Policy
+Refund Policy
+Contact us
+Follow us on Facebook
+Follow us on X
+Follow us on Instagram
+Follow us on LinkedIn
+USD
+Change site currency USD selected
+Terms of Service
+Privacy Policy
+Privacy Notice for California Users
+
+© WooCommerce, Inc. 2026
+
+AN
+AUTOMATTIC
+JOINT
+Use of your personal data
+We and our partners process your personal data (such as browsing data, IP Addresses, cookie information, and other unique identifiers) based on your consent and/or our legitimate interest to optimize our website, marketing activities, and your user experience.
+Customize
+Accept all

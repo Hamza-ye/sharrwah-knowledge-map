@@ -1,0 +1,29 @@
+part	root_decision	bullets	platforms	tasks	count	effective	status
+RD1-S1	RD1	a; b; d	shopify; salla; zid; woocommerce; bigcommerce	every task under (a), (b) and (d)	158	198	done
+RD1-S2	RD1	c	shopify; salla	every task under (c) for Shopify and Salla	83	138	done
+RD1-S3	RD1	c	zid; woocommerce; bigcommerce	every task under (c) for Zid, WooCommerce and BigCommerce	106	168	done
+RD2-S1	RD2	e; g	shopify; salla; zid; woocommerce; bigcommerce	every task	210	217	done
+RD3-S1	RD3	f; g	shopify	every Shopify task	66	487	done
+RD3-S2	RD3	f	woocommerce	every WooCommerce task under (f)	41	321	done
+RD3-S3	RD3	g	woocommerce	every WooCommerce task under (g)	134	134	done
+RD3-S4	RD3	f; g	zid	every Zid task	40	269	done
+RD3-S5	RD3	f; g	bigcommerce	every BigCommerce task	72	157	done
+RD3-S6	RD3	f; g	salla	every Salla task	67	90	done
+RD1-S4	RD1	c	zid	the 51 reread tasks under (c) for Zid whose why names rule 4's widening of 27 October 2026 (sites, pages and sections tied to one country)	51	51	done
+RD3-S7	RD3	g	salla; woocommerce	the 14 reread tasks under (g) whose why names rule 4's widening of 27 October 2026 (statements under (g) that name who sets a setting)	14	14	done
+RD3-S8	RD3	f; g	shopify; salla; zid; woocommerce; bigcommerce	the 26 tasks of the coordinator's rulings when the parts ended: a row for every platform under the two new who-sets points, S02-VP-91 and S02-VP-92, and 24 rereads	26	40	done
+RD1-S5	RD1	a; b; c	zid; shopify; salla; woocommerce; bigcommerce	the 6 reread tasks under (c) for Zid that RD1-S4's list missed, and the last round's tasks under RD1: the rows whose why begins 'last round'	28	35	done
+RD3-S9	RD3	f; g	salla	the last round's Salla tasks: the rows whose why begins 'last round', from the late gap-closing parts (A2-SA-H, A2-SA-S) and the second audit (A3-2)	27	40	done
+RD3-S10	RD3	f; g	zid; woocommerce; bigcommerce; shopify	the last round's other tasks under RD3: the rows whose why begins 'last round', on Zid, WooCommerce, BigCommerce and Shopify, from A2-T, A2-SH-H, A2-SA-H and A3-2	19	35	done
+RD2-S2	RD2	e; g	shopify; salla; woocommerce; bigcommerce	the last round's tasks under RD2: the rows whose why begins 'last round'	20	25	done
+RD1-S6	RD1	a; b; c	shopify	the capture round's tasks under RD1: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	71	85	done
+RD2-S3	RD2	e	shopify	the capture round's tasks under RD2: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	9	26	done
+RD3-S11	RD3	f	shopify	the capture round's tasks under RD3: the rows whose why begins 'capture round', from A2-SH-R1 and A2-SH-R2 (observed-sh 19a5f6435)	39	60	done
+RD1-S7	RD1	a; b; c; d	salla	the Salla and Zid round's Salla tasks under RD1: the rows whose why begins 'Salla and Zid round' and whose platform is salla, from A2-SA-R (observed-sa b0bd0b16)	37	81	done
+RD2-S4	RD2	e	salla; zid	the Salla and Zid round's tasks under RD2: the rows whose why begins 'Salla and Zid round', from A2-SA-R (observed-sa b0bd0b16), A2-ZD-R and A3-ZD-R (other-product-class f44be3f)	17	20	done
+RD3-S12	RD3	f	zid	the Salla and Zid round's Zid tasks under RD3: the rows whose why begins 'Salla and Zid round' and whose platform is zid, from A2-ZD-R and A3-ZD-R (other-product-class f44be3f)	20	116	done
+RD1-S8	RD1	a; b; c; d	zid; salla	the Salla and Zid round's tasks under RD1 that RD1-S7 didn't take: the rows whose why begins 'Salla and Zid round' and whose platform is zid, from A2-ZD-R and A3-ZD-R (other-product-class f44be3f), and Salla's revisit of S02-V-148, which the round's first task list dropped, and six tasks of the coordinator's rulings on RD1-S7's calls (b/second-pass.md)	19	49	done
+RD3-S13	RD3	f	salla	the Salla and Zid round's Salla tasks under RD3: the rows whose why begins 'Salla and Zid round' and whose platform is salla, from A2-SA-R (observed-sa b0bd0b16)	10	31	done
+RD1-S9	RD1	a; b; c; d	bigcommerce; woocommerce	the BigCommerce and WooCommerce round's tasks under RD1: the rows whose why begins 'BigCommerce and WooCommerce round', from A2-BC-R and A2-WC-R (other-product-class 3f2438f3)	21		done
+RD3-S14	RD3	f; g	bigcommerce; woocommerce	the BigCommerce and WooCommerce round's tasks under RD3: the rows whose why begins 'BigCommerce and WooCommerce round', from A2-BC-R and A2-WC-R (other-product-class 3f2438f3)	11		done
+RD1-S10	RD1	a; b; c; d	woocommerce	the WooPayments round's tasks under RD1: the rows whose why begins 'WooPayments round', from A2-WC-R2 (other-product-class 0d79b794)	3		done

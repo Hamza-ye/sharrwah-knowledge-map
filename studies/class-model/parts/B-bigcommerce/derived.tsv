@@ -1,0 +1,34 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CAT-001	bigcommerce	statements	core;extension-point	/developer/api-reference/rest/admin/catalog/products	BC-C-001/decides/BC-S-0020=plans Core, Growth, Scale, Performance (columns of the plan comparison table)	BC-C-001/responsible:stated only in general terms;BC-C-001/reason:searched, not found;BC-C-059/reason:searched, not found	general
+CM-CAT-002	bigcommerce	statements	core			BC-C-001/responsible:stated only in general terms;BC-C-001/reason:searched, not found	general
+CM-CAT-003	bigcommerce	statements	core	/developer/api-reference/rest/admin/catalog/categories | /developer/api-reference/rest/admin/catalog/category-trees		BC-C-003/responsible:stated only in general terms;BC-C-003/reason:searched, not found	general
+CM-CAT-004	bigcommerce	none-held					
+CM-CAT-005	bigcommerce	statements	core	/developer/api-reference/rest/admin/catalog/brands		BC-C-002/decides:page not read;BC-C-002/responsible:stated only in general terms;BC-C-002/reason:searched, not found	general
+CM-CAT-006	bigcommerce	none-held					
+CM-CAT-007	bigcommerce	none-held					
+CM-CAT-008	bigcommerce	none-held					
+CM-CAT-009	bigcommerce	none-held					
+CM-CAT-010	bigcommerce	none-held					
+CM-CAT-011	bigcommerce	none-held					
+CM-CAT-012	bigcommerce	none-held					
+CM-CAT-013	bigcommerce	statements	core	/developer/api-reference/rest/admin/catalog/products | /developer/api-reference/rest/admin/management/pricing		BC-C-001/responsible:stated only in general terms;BC-C-001/reason:searched, not found;BC-C-008/decides:page not read;BC-C-008/responsible:stated only in general terms;BC-C-008/reason:searched, not found	general
+CM-CAT-014	bigcommerce	none-held					
+CM-CAT-015	bigcommerce	none-held					
+CM-INV-001	bigcommerce	statements	core;extension-point;outside	/developer/api-reference/rest/admin/management/inventory | Inventory API | settings-list		BC-C-004/responsible:stated only in general terms;BC-C-006/decides:page not read;BC-C-006/responsible:stated only in general terms;BC-C-006/reason:searched, not found	general
+CM-INV-002	bigcommerce	none-held					
+CM-INV-003	bigcommerce	none-held					
+CM-INV-004	bigcommerce	statements	core			BC-C-004/responsible:stated only in general terms	general
+CM-INV-005	bigcommerce	statements	core;outside	Locations | settings-list	BC-C-005/decides/BC-S-0038=plans Core, Growth, Scale, Performance (columns of the plan comparison table) | BC-C-005/decides/BC-S-0039=Enterprise plan | BC-E-b6118ce7=Core, Growth, Scale, Performance	BC-C-005/responsible:stated only in general terms;BC-C-005/reason:searched, not found;BC-C-006/decides:page not read;BC-C-006/responsible:stated only in general terms;BC-C-006/reason:searched, not found	general
+CM-INV-006	bigcommerce	none-held					
+CM-INV-007	bigcommerce	none-held					
+CM-INV-008	bigcommerce	none-held					
+CM-INV-009	bigcommerce	none-held					
+CM-INV-010	bigcommerce	none-held					
+CM-SEL-001	bigcommerce	statements	not-stated	payment-gateways			
+CM-SEL-002	bigcommerce	statements	core			BC-C-001/responsible:stated only in general terms;BC-C-001/reason:searched, not found	general
+CM-SEL-003	bigcommerce	none-held					
+CM-SEL-004	bigcommerce	none-held					
+CM-SEL-005	bigcommerce	none-held					
+CM-SEL-006	bigcommerce	none-held					
+CM-SEL-007	bigcommerce	none-held					
+CM-SEL-008	bigcommerce	none-held					

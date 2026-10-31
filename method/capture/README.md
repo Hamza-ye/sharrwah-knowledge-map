@@ -30,6 +30,8 @@ A run is one folder, `evidence/<area>/runs/<UTC time>-<name>/`. It holds one `it
 - **Input:** `LIST_JSON` lists `{n, url, dir, keep_body}` for the items to render.
 - **Per item:** the DOM after scripts run (`rendered.html`), the visible text (`text.txt`) and `render.json`.
 - **With `keep_body` set:** the body the browser received is also kept (`raw-browser.<ext>`). Use this when the raw fetch was refused.
+- **What a click shows:** with `CAPTURE_EXPAND=1`, each control that keeps part of the page closed (a `<details>`, or one marked `aria-expanded="false"` that is neither a link nor a submit button) is opened in turn, and the lines that appear are kept in `expanded.txt`, apart from `text.txt`. FAQ answers are the usual case. `render.json` records `expanded_lines`. `page_text.mjs` appends them to its output under a marked line.
+- **Requests:** every request the page makes is fetched by Playwright's own request client and its answer handed to the browser, redirects included, so the page follows them itself. In the cloud session, the browser's own requests failed for some sites' scripts (HTTP 400, or aborted), which left pages empty or showing only an error text: BigCommerce's Help Center and Zid's pricing pages, until 27 October 2026. `render.json` records `routed`. `CAPTURE_ROUTE=0` turns it off.
 - **Run summary:** `phase2.json`.
 
 **3. Fallback, optional.** When an archive copy or an encoded view is used for an item, its facts go in `phase3.json`. No tool for this step is kept here.
@@ -43,7 +45,7 @@ A run is one folder, `evidence/<area>/runs/<UTC time>-<name>/`. It holds one `it
 
 ## Other tools
 
-- **`page_text.mjs URL OUT_TXT`.** Writes the visible text of one rendered page and prints its status, final URL, time and text sha256 as one JSON line.
+- **`page_text.mjs URL OUT_TXT`.** Writes the visible text of one rendered page and prints its status, final URL, time and text sha256 as one JSON line. It fetches the page's requests as `render.mjs` does.
   - Agents use it to read and quote pages while a study runs.
   - Its output is a working copy, not evidence. Cited pages are captured afterwards in a run.
 - **`saved_page_text.mjs LIST_JSON`.** Extracts the visible text of pages the founder saved with SingleFile.

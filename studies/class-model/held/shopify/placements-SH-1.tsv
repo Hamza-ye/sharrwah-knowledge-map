@@ -1,0 +1,194 @@
+entry_id	placement	cap_id	supports	scope	terms	filler	quality	reading
+SH-E-532b1cce	capability	CM-ACC-001	core		General			the navigation of Shopify's own account site (accounts.shopify.com, its page titled 'Shopify account profile', as the structure's meta.json gives it): its item General, at /accounts/<id>/personal, the account's own page; not the store's general settings (CM-ACC-006's lead is a homonym)
+SH-E-c9839025	capability	CM-TRU-001	core		Security			the account site's item Security, at /accounts/<id>/security: the account's sign-in security page, whose sections are Passkeys, Password, Secondary email, 'Two-step authentication' and Devices (20261004T175650Z-journey-account/steps/001.aria.yaml)
+SH-E-db7d0638	capability	CM-ONB-004	core		get you ready to sell			the Home's greeting heading over its setup tasks (Add your first product, Choose your store design, Set up payments, Get a custom domain, Review shipping rates), on the client-transfer store: its words name the store's setup (rule H9)
+SH-E-7e2bb99f	out							a UI string: a disabled Close button beside the Home's composer, naming no place or feature
+SH-E-3a0e574f	out							a UI string: Dismiss, beside the Home's composer, naming no place or feature
+SH-E-84d9afca	capability	CM-AIA-002	core					the Home's Sidekick composer: its textbox, beside Recents, Add files and more and Voice, named 'Work with Sidekick' on demo-fake-dev-store's Home (SH-E-6884af1d); here named by a suggested prompt, whose subject is named in passing (rule H10)
+SH-E-6b9e6be6	capability	CM-AIA-002	core		Recents			a control of the Home's Sidekick composer: its recent conversations, a reading; what it opens isn't held
+SH-E-67c56c0c	capability	CM-AIA-002	core		Add files and more			a control of the Home's Sidekick composer: files added to a prompt; not the store's Files (CM-CNT-001's lead is a homonym)
+SH-E-57f6deb1	capability	CM-AIA-002	core		Voice			the Sidekick composer's voice button on the Home, as the changelog's Sidekick Voice, started with the voice button in the Sidekick panel (SH-36's line on SH-E-e8903838)
+SH-E-21275155	capability	CM-ANL-003	core		Home feed			a container: the Home page's feed, by its title, as SH-35 placed the Home feed's analytics insights on the Home's own capability (SH-E-578fcd32)
+SH-E-21275155	capability	CM-ONB-004	core		Home feed			the Home feed's items here are the store's setup tasks (Add your first product, Choose your store design, Set up payments, Import your product catalog and the rest): a second thing of the container's own page (rule H15)
+SH-E-a31f9ba2	capability	CM-ONB-004	core		Add your first product			a setup task card of the Home feed, the admin Home's list of tasks (rule H2), whose action Add product opens the Products page
+SH-E-a31f9ba2	capability	CM-CAT-001	core		product			the setup task adds the store's first product, with its title, price and photo, opening the Products page
+SH-E-181e896f	capability	CM-ONB-004	core		Add your first product			the title of a setup task card of the Home feed, the admin Home's list of tasks (rule H2)
+SH-E-181e896f	capability	CM-CAT-001	core		product			the setup task's title names the store's first product
+SH-E-6c736103	capability	CM-CAT-001	core					the description of the setup task Add your first product: a product started with a title, a price and a photo, read with its card's heading; the fields are named in a list, in passing (rule H3)
+SH-E-f8be230e	capability	CM-CAT-001	core		Add product			the setup task's action, opening the Products page (/store/<store>/products)
+SH-E-e2b82d28	out							a UI string: Dismiss card, on each card of the Home's feed, naming no place or feature
+SH-E-f6d23641	capability	CM-ONB-004	core		Choose your store design			a setup task card of the Home feed, the admin Home's list of tasks (rule H2), whose action Choose theme opens the Themes page
+SH-E-f6d23641	capability	CM-SFR-001	core		store design;theme			the setup task picks and customizes the online store's theme
+SH-E-fb5eddf3	capability	CM-ONB-004	core		Choose your store design			the title of a setup task card of the Home feed, the admin Home's list of tasks (rule H2)
+SH-E-fb5eddf3	capability	CM-SFR-001	core		store design			the setup task's title names the store's design, its theme (its card's description and action)
+SH-E-9a5ae366	capability	CM-SFR-001	core		theme			the description of the setup task Choose your store design: a theme picked and customized, read with its card's heading
+SH-E-aad150e8	capability	CM-SFR-001	core		Choose theme			the setup task's action, opening the Themes page (/store/<store>/themes)
+SH-E-a0eadd56	capability	CM-ONB-004	core		Set up payments			a setup task card of the Home feed, the admin Home's list of tasks (rule H2), whose action Activate payments opens settings/payments
+SH-E-a0eadd56	capability	CM-PAY-001	core		payments;payment provider			the setup task chooses the store's payment provider; card and digital wallet are named as examples, in passing (rule H3)
+SH-E-aa1cbfe8	capability	CM-ONB-004	core		Set up payments			the title of a setup task card of the Home feed, the admin Home's list of tasks (rule H2)
+SH-E-aa1cbfe8	capability	CM-PAY-001	core		payments			the setup task's title names the store's payments, set up at settings/payments (its card's action)
+SH-E-40051afb	capability	CM-PAY-001	core		payment provider			the description of the setup task Set up payments: the merchant chooses a payment provider for the buyers; card and digital wallet are named as examples, in passing (rule H3)
+SH-E-bf74fc8e	capability	CM-PAY-001	core		Activate payments			the setup task's action, opening the payments settings (/store/<store>/settings/payments)
+SH-E-c681db22	capability	CM-ONB-004	core		Get a custom domain			a setup task card of the Home feed, the admin Home's list of tasks (rule H2), whose action Set up domain opens settings/domains
+SH-E-c681db22	capability	CM-SFR-008	core		custom domain;branded URL			the setup task gets the store a custom domain; not CM-CNT-006's custom URLs, which are page addresses (its lead is a homonym)
+SH-E-1e3380c9	capability	CM-ONB-004	core		Get a custom domain			the title of a setup task card of the Home feed, the admin Home's list of tasks (rule H2)
+SH-E-1e3380c9	capability	CM-SFR-008	core		custom domain			the setup task's title names the store's custom domain
+SH-E-b5cf2b91	capability	CM-SFR-008	core		branded URL			the description of the domain setup task (under Get a custom domain, and under Claim your store's web address on ibx5bt-xy): a branded URL, the store's own domain, read with its card's heading
+SH-E-8dfca40a	capability	CM-SFR-008	core		Set up domain			the setup task's action, opening the domains settings (/store/<store>/settings/domains)
+SH-E-29723c3a	capability	CM-ONB-004	core		Review shipping rates			a setup task card of the Home feed, the admin Home's list of tasks (rule H2), whose action Review rates opens a market's shipping section
+SH-E-29723c3a	capability	CM-SHP-001	core		shipping rates			the setup task reviews the store's shipping rates, defaults the platform set up from the store's location: its built-in behaviour
+SH-E-6ce84ce2	capability	CM-ONB-004	core		Review shipping rates			the title of a setup task card of the Home feed, the admin Home's list of tasks (rule H2); not review requests (CM-SUP-002's lead is a homonym)
+SH-E-6ce84ce2	capability	CM-SHP-001	core		shipping rates			the setup task's title names the store's shipping rates
+SH-E-16fe2818	capability	CM-SHP-001	core		defaults			the description of the setup task Review shipping rates: default rates the platform set up from the store's location, its built-in behaviour, read with its card's heading
+SH-E-ef454b68	capability	CM-SHP-001	core		Review rates			the setup task's action, opening a market's page at its shipping section (/markets/<id>#shipping)
+SH-E-ef454b68	capability	CM-MKS-001	core		markets			the page the action opens is a market's own page (/markets/<id>), at its shipping section: a second line, which follows the page (the ruling after SA-19)
+SH-E-2cd4970e	capability	CM-ONB-004	core		starting to take shape;work on next			the Home's greeting heading on the Plus development store, over its setup tasks and guides: the store's progress in its setup, the store's name its own data (rule H9)
+SH-E-9e98d409	out							the store's own name, as a button inside the Home's greeting heading: one store's data
+SH-E-e524495f	capability	CM-ONB-004	core		starting to take shape;work on next			the words of the Home's greeting heading after the store's name (SH-E-2cd4970e): the store's progress in its setup (rule H9)
+SH-E-9eae52ce	capability	CM-AIA-002	core					the Home's Sidekick composer (rule H10): its textbox, named here by a suggested prompt; the launch it asks about is named in passing
+SH-E-944db750	capability	CM-ONB-004	core		Launch your online store			a setup task card of the Home's list of tasks (rule H2), whose action Launch store opens the Themes page
+SH-E-944db750	capability	CM-ACC-009	core		Launch your online store;Take your store public			the setup task launches the online store, taking it public: the store's launch, the platform's own
+SH-E-90e31c51	capability	CM-ONB-004	core		Launch your online store			the title of a setup task card of the Home's list of tasks (rule H2)
+SH-E-90e31c51	capability	CM-ACC-009	core		Launch your online store			the setup task's title names the online store's launch
+SH-E-16d21b7c	capability	CM-ACC-009	core		Take your store public			the description of the setup task Launch your online store: the store taken public, read with its card's heading
+SH-E-f13bca15	capability	CM-ACC-009	core		Launch store			the launch task's action, opening the Themes page (/store/<store>/themes)
+SH-E-f13bca15	capability	CM-SFR-001	core		themes			the page the action opens is the online store's Themes page: a second line, which follows the page (the ruling after SA-19)
+SH-E-1906f34f	capability	CM-ONB-004	core		Import your product catalog			a setup task card of the Home's list of tasks (rule H2), whose action Import products opens the products import
+SH-E-1906f34f	capability	CM-MIG-001	core		Import your product catalog;Import products			the setup task imports the store's products into Shopify, with the platform's own product import (products?modal=import); images and pricing are named in a list, in passing
+SH-E-9ecfdd35	capability	CM-ONB-004	core		Import your product catalog			the title of a setup task card of the Home's list of tasks (rule H2)
+SH-E-9ecfdd35	capability	CM-MIG-001	core		Import your product catalog			the setup task's title names importing the store's products; not B2B catalogs (CM-B2B-003's lead is a homonym)
+SH-E-42149026	capability	CM-MIG-001	core		Get your existing products			the description of the setup task Import your product catalog: existing products brought into Shopify at once, read with its card's heading; images and pricing are named in a list, in passing (rule H3)
+SH-E-7dfdaf6d	capability	CM-MIG-001	core		Import products			the import task's action, opening the products import (/store/<store>/products?modal=import), the platform's own
+SH-E-664c4939	capability	CM-ONB-004	core		Set up payments			a setup task card of the Home's list of tasks (rule H2), whose action Activate payments opens settings/payments
+SH-E-664c4939	capability	CM-PAY-001	core		payments;payment provider			the setup task chooses the store's payment provider; card and digital wallet are named as examples, in passing (rule H3)
+SH-E-894dd585	capability	CM-PAY-001	core		Activate payments			the setup task's action, opening the payments settings (/store/<store>/settings/payments)
+SH-E-220db6fa	capability	CM-ONB-004	core	Plus	Set up your Plus exclusive features			a guide of tasks on the Home (rule H6) of 5, on the Plus development store, whose action Get started opens settings/checkout; the plan is the card's own word
+SH-E-220db6fa	capability	CM-CHK-003	core	Plus	Customize your checkout			a Plus-exclusive feature the guide sets up: customizing the checkout, as the cell's plan row gives Plus the full checkout customization
+SH-E-220db6fa	new	new:sales events	shows	Plus	sales events			a Plus-exclusive feature the guide names: enabling sales events; no capability holds them, and the card is their only place here (no place of its own); reach more shoppers names no thing
+SH-E-17a20b41	capability	CM-ONB-004	core	Plus	tasks completed			the progress of a guide of tasks on the Home (rule H6): on capture-gb-plus, of the Plus guide (SH-E-220db6fa); the count is the store's own
+SH-E-17a20b41	capability	CM-ONB-004	core	EU	tasks completed			the same progress line on demo-fake-dev-store, of the guide for the EU right of withdrawal (SH-E-bec81020), whose options are for EU orders: its own item's scope
+SH-E-b1fd7a12	capability	CM-ONB-004	core	Plus	Set up your Plus exclusive features			the title of a guide of tasks on the Home (rule H6), for the Plus plan's exclusive features
+SH-E-3d1e9537	capability	CM-CHK-003	core	Plus	Customize your checkout			the description of the Plus guide: customizing the checkout, a Plus-exclusive feature
+SH-E-3d1e9537	new	new:sales events	shows	Plus	sales events			the description of the Plus guide names enabling sales events, a Plus-exclusive feature no capability holds (no place of its own here); reach more shoppers names no thing
+SH-E-76235c0f	out							an illustration's alt text on the Plus guide's card, naming nothing of the platform's
+SH-E-a0c1252a	capability	CM-CHK-001	core	Plus	checkout			the Plus guide's action, Get started, opening the checkout settings (/store/<store>/settings/checkout), the cell's settings page Checkout
+SH-E-96d9b0ea	capability	CM-ONB-004	core		tasks completed			the progress of a guide of tasks on the Home (rule H6), the B2B guide Sell B2B and DTC, in one place; the count is the store's own
+SH-E-f22c8836	capability	CM-ONB-004	core		Sell B2B and DTC, in one place			the title of a guide of tasks on the Home (rule H6), on the Plus and the development stores
+SH-E-f22c8836	capability	CM-B2B-001	core		B2B;DTC			the guide sets up selling to business and direct buyers in one store, as the cell's blended store for both B2B and D2C (SH-S-0740)
+SH-E-f13a526f	capability	CM-ONB-004	core		Next task			the next task of the B2B guide on the Home (rule H6)
+SH-E-f13a526f	capability	CM-B2B-001	core		B2B markets			the task creates the store's B2B markets: B2B selling
+SH-E-f13a526f	capability	CM-MKS-001	core		B2B markets			a B2B market is a market of the store's, created at markets/new (the guide's action, SH-E-0670040f)
+SH-E-9133f06d	out							an illustration's alt text on the B2B guide's card, naming nothing of the platform's
+SH-E-0670040f	capability	CM-MKS-001	core		markets			the B2B guide's action, Resume, opening the new market page (/store/<store>/markets/new), for its next task Create B2B markets
+SH-E-b10060a7	capability	CM-ONB-004	core		Complete your migration to Shopify			a guide of tasks on the Home (rule H6) of 6, its action a Get started button
+SH-E-b10060a7	capability	CM-MIG-005	core		migration to Shopify;previous platform			Shopify's own guide in its admin for moving the store from the merchant's previous platform: its data imported, then its domain connected
+SH-E-b10060a7	capability	CM-MIG-001	core		Import your remaining data			the guide's import of the store's remaining data, customers and orders, from its previous platform
+SH-E-b10060a7	capability	CM-SFR-008	core		connect your domain			the guide's last step connects the store's domain to the new Shopify store
+SH-E-61e679ca	capability	CM-ONB-004	core		tasks completed			the progress of a guide of tasks on the Home (rule H6), the migration guide; the count is the store's own
+SH-E-7b4a3d52	capability	CM-ONB-004	core		Complete your migration to Shopify			the title of a guide of tasks on the Home (rule H6), the migration guide
+SH-E-7b4a3d52	capability	CM-MIG-005	core		migration to Shopify			the guide's title names the store's migration to Shopify, read with its description, from the previous platform
+SH-E-d740217c	capability	CM-MIG-005	core		previous platform			the description of the migration guide: data brought from the merchant's previous platform, then the domain connected, read with its heading
+SH-E-d740217c	capability	CM-MIG-001	core		Import your remaining data			the description names importing the store's remaining data, customers and orders
+SH-E-d740217c	capability	CM-SFR-008	core		connect your domain			the description names connecting the store's domain to the new Shopify store
+SH-E-b7206f21	out							a UI string: the migration guide's Get started button, with no address, naming no place or feature
+SH-E-21c1d264	capability	CM-PLN-001	core	ctcbwa-r1@2026-09-30;fake-demo-sharrwah@2026-09-30	Trial			the Home's onboarding status indicator, whose popover reads 'Select a plan to keep building' (20260930T071154Z-m0-instruments/steps/014.html): the store's trial on its plan, ending in 2 days on 30 September, the store's own value (rule H11)
+SH-E-21c1d264	capability	CM-ONB-004	core	ctcbwa-r1@2026-09-30;fake-demo-sharrwah@2026-09-30				the element is the Home's onboarding status indicator (data-onboarding-status-indicator, 20260930T071154Z-m0-instruments/steps/014.html), here in the store's trial state (rule H11)
+SH-E-b01c1476	capability	CM-ONB-004	core		set up to take payments;work on next			the Home's greeting heading over the store's setup tasks: its progress in its setup; the store's name and its payments set up are its own data (rule H9)
+SH-E-db278b37	out							the store's own name, My Store, as a button inside the Home's greeting heading: one store's data
+SH-E-d8802708	capability	CM-ONB-004	core		set up to take payments;work on next			the words of the Home's greeting heading after the store's name (SH-E-b01c1476): the store's progress in its setup (rule H9)
+SH-E-ce8c4684	capability	CM-AIA-002	core					the Home's Sidekick composer (rule H10): its textbox, named here by a suggested prompt; the import it asks for is named in passing
+SH-E-e9c18ae8	capability	CM-ONB-004	core		Import your product catalog			a setup task card of the Home feed (rule H2), whose action Import products opens the products import
+SH-E-e9c18ae8	capability	CM-MIG-001	core		Import your product catalog			the setup task imports the store's existing products into Shopify; images and pricing are named in a list, in passing (rule H3)
+SH-E-c8103f87	capability	CM-MIG-001	core		Import products			the import task's action, opening the products import (/store/<store>/products?modal=import), the platform's own
+SH-E-59cfd801	capability	CM-ONB-004	core		Add your first digital product			a setup task card of the Home feed (rule H2), whose action is a button, Add digital product, with no address held
+SH-E-59cfd801	capability	CM-SEL-002	shows		digital product;downloadable products;Digital Products app			selling downloadable products with the Digital Products app: the platform's suggestion of an app it names without its maker (the ruling after WC-3): shows; the maker is a gap, the app's listing isn't held
+SH-E-4a1ae8ba	capability	CM-ONB-004	core		Add your first digital product			the title of a setup task card of the Home feed (rule H2)
+SH-E-4a1ae8ba	capability	CM-SEL-002	shows		digital product			the setup task's title names the store's first digital product, sold with the Digital Products app (its card's description): the platform's suggestion of an app it names without its maker (the ruling after WC-3): shows; the maker is a gap, the app's listing isn't held
+SH-E-12cf8b04	capability	CM-SEL-002	shows		downloadable products;Digital Products app			the description of the setup task Add your first digital product: the platform's suggestion of an app it names without its maker (the ruling after WC-3): shows; the maker is a gap, the app's listing isn't held
+SH-E-45b5c7d6	capability	CM-SEL-002	shows		Add digital product			the digital product task's action, a button with no address held: what it opens isn't stated; the platform's suggestion of an app it names without its maker (the ruling after WC-3): shows; the maker is a gap, the app's listing isn't held
+SH-E-d3114ae2	capability	CM-ONB-004	core		Discover products to sell			a setup task card of the Home feed (rule H2), whose action is a button with no address held
+SH-E-d3114ae2	capability	CM-CAT-010	shows		recommended app;find products from suppliers			finding products from suppliers through a recommended app, which the card doesn't name: the platform's suggestion to install an app, naming no maker (the ruling after WC-3); the App Store's Finding products apps are the cell's extension-point
+SH-E-e3219310	capability	CM-ONB-004	core		Discover products to sell			the title of a setup task card of the Home feed (rule H2)
+SH-E-e3219310	capability	CM-CAT-010	shows		Discover products to sell			the setup task's title names finding products to sell, from suppliers through a recommended app (its card's description): shows (the ruling after WC-3); not buyers discovering products (CM-AIA-005's lead is a homonym)
+SH-E-721314c2	capability	CM-CAT-010	shows		find products from suppliers			the description of the setup task Discover products to sell: a recommended app, unnamed, to find products from suppliers (the ruling after WC-3); not purchase orders' suppliers (CM-INV-007's lead is a homonym)
+SH-E-d4130db5	capability	CM-CAT-010	shows		Discover products to sell			the sourcing task's action, a button with no address held: what it opens isn't stated (the ruling after WC-3)
+SH-E-93856e2e	capability	CM-SFR-001	core		Choose theme			the store design task's action, opening the Themes page (/store/<store>/themes)
+SH-E-773f7252	capability	CM-SHP-001	core		Review rates;shipping/profiles			the shipping rates task's action, opening a shipping profile's page (/store/<store>/settings/shipping/profiles/<id>)
+SH-E-688c493b	capability	CM-ONB-004	core		Review digital delivery options			a setup task card of the Home feed (rule H2), whose action is a button, Review delivery, with no address held
+SH-E-688c493b	capability	CM-SEL-002	shows		digital delivery options;digital products			the setup task reviews how buyers receive digital products after purchase; who delivers them isn't stated, and the card follows the Digital Products app's (SH-E-59cfd801): shows; not shipping's delivery options (CM-SHP-001's lead is a homonym)
+SH-E-f2a5d254	capability	CM-ONB-004	core		Review digital delivery options			the title of a setup task card of the Home feed (rule H2)
+SH-E-f2a5d254	capability	CM-SEL-002	shows		digital delivery options			the setup task's title names the digital products' delivery options; who delivers them isn't stated: shows
+SH-E-993e055f	capability	CM-SEL-002	shows		digital products			the description of the setup task Review digital delivery options: how buyers receive digital products after purchase, read with its card's heading; who delivers them isn't stated
+SH-E-7df6bdec	capability	CM-SEL-002	shows		Review delivery			the digital delivery task's action, a button with no address held: what it opens isn't stated
+SH-E-70b6c470	capability	CM-ONB-004	core		Complete your migration to Shopify			a guide of tasks on the Home (rule H6), the migration guide, of 5 tasks on these stores
+SH-E-70b6c470	capability	CM-MIG-005	core		migration to Shopify;previous platform			Shopify's own guide in its admin for moving the store from the merchant's previous platform: its data imported, then its domain connected
+SH-E-70b6c470	capability	CM-MIG-001	core		Import your remaining data			the guide's import of the store's remaining data, customers and orders, from its previous platform
+SH-E-70b6c470	capability	CM-SFR-008	core		connect your domain			the guide's last step connects the store's domain to the new Shopify store
+SH-E-35e7b501	capability	CM-ONB-004	core		tasks completed			the progress of a guide of tasks on the Home (rule H6), named for the migration guide; the count is the store's own
+SH-E-35e7b501	capability	CM-MIG-005	core		Complete your migration to Shopify			the status's own name names the migration guide, Shopify's own, for moving from the previous platform
+SH-E-f17fee43	capability	CM-ONB-004	core		Next task			the next task of the migration guide on the Home (rule H6)
+SH-E-f17fee43	capability	CM-MIG-001	core		Import your orders			the task imports the store's orders
+SH-E-f17fee43	capability	CM-MIG-005	core		Import your orders			the task is a step of the migration guide, Complete your migration to Shopify, read with its card's heading: a kind of the guide's thing (rule 2, M-6); not import duties (CM-TAX-008's lead is a homonym)
+SH-E-088bfee0	capability	CM-ONB-003	core		Learn the dropshipping basics			a lesson the Home's feed offers, watched with its buttons Watch now: the platform's own learning for merchants, in its admin (rule H8)
+SH-E-088bfee0	capability	CM-CAT-010	shows		dropshipping;find products			the lesson's topic, dropshipping and finding products: it names only a topic (rule H8)
+SH-E-1d46380b	capability	CM-ONB-003	core		Learn the dropshipping basics			the title of a lesson the Home's feed offers (rule H8)
+SH-E-1d46380b	capability	CM-CAT-010	shows		dropshipping			the lesson's topic, dropshipping: it names only a topic (rule H8)
+SH-E-07031001	capability	CM-CAT-010	shows		find products			the description of the lesson Learn the dropshipping basics: finding products, a topic (rule H8)
+SH-E-e500c416	out							a UI string: Watch now, the lesson card's button, naming no place or feature
+SH-E-0cf04643	capability	CM-ANL-003	core		Last 30 days			the period of the metrics on the development store's Home dashboard (rule H13)
+SH-E-33018d10	out							a separator between the Home dashboard's period and channel buttons, naming nothing
+SH-E-0d90f954	capability	CM-ANL-003	core		All channels			the channel filter of the metrics on the development store's Home dashboard (rule H13); the sales channels are named as its values, in passing
+SH-E-d5962513	capability	CM-ANL-003	core		Dashboard metrics			a container: the Home's dashboard of metrics (Sessions, Total sales, Orders, Conversion rate), by its title (M-13); not the partners' dashboard (CM-PTN-001's lead is a homonym)
+SH-E-12e1659a	capability	CM-ANL-003	core		Sessions			a metric on the development store's Home dashboard (rule H13); its value, 10, is the store's own
+SH-E-af5a1eef	capability	CM-ANL-003	core		Total sales			a metric on the development store's Home dashboard (rule H13); its value, YER 4,531, is the store's own
+SH-E-9aa09cb7	capability	CM-ANL-003	core		Orders			a metric on the development store's Home dashboard (rule H13); its value, 3, is the store's own
+SH-E-0603b24a	capability	CM-ANL-003	core		Conversion rate			a metric on the development store's Home dashboard (rule H13); its value, 50%, is the store's own; not currency conversion (CM-MKS-007's lead is a homonym)
+SH-E-a3d8f911	capability	CM-ANL-004	core		Live visitors;analytics/live			the Home's link to Live View (/store/<store>/analytics/live), as SH-37 placed it; the count, 0, is the store's own
+SH-E-9b7304ab	out							a control that pauses the Home's animated globe beside Live visitors: the admin's own look (the ruling after SH-37), naming no place or setting; the live activity is Live View's, by its link (SH-E-a3d8f911)
+SH-E-6d0d86fb	out							a greeting, the Home's heading on the development store, naming no place, setting or feature (rule H9)
+SH-E-6884af1d	capability	CM-AIA-002	core		Sidekick			the Home's Sidekick composer, its textbox named for Sidekick (rule H10)
+SH-E-f3b4509a	capability	CM-SHP-009	core		Fulfill orders			the Home's link to the store's orders to fulfill (open, unshipped or partly shipped, by its address): sending orders' items to buyers; the count, 1, is the store's own
+SH-E-f3b4509a	capability	CM-ORD-001	core		orders			the page the link opens is the Orders list (/store/<store>/orders, filtered by fulfillment and financial status): a second line, which follows the page
+SH-E-c1b49768	capability	CM-ONB-004	core		Unlock your online store			a setup task card of the Home's list of tasks (rule H2), whose action is a button, Unlock store
+SH-E-c1b49768	capability	CM-ACC-009	core		Unlock your online store;password-protected			the online store is password-protected until the merchant is ready to go live, and the task unlocks it: the store's launch, the platform's own
+SH-E-2c76b3e1	capability	CM-ONB-004	core		Unlock your online store			the title of a setup task card of the Home's list of tasks (rule H2)
+SH-E-2c76b3e1	capability	CM-ACC-009	core		Unlock your online store			the setup task's title names unlocking the password-protected online store (its card's description)
+SH-E-a70dc74b	capability	CM-ACC-009	core		password-protected;go live			the description of the setup task Unlock your online store: the store password-protected until it goes live, the platform's own, read with its card's heading
+SH-E-70e7cdf9	capability	CM-ACC-009	core		Unlock store			the unlock task's action, a button with no address held: the store's password protection removed, a reading
+SH-E-b073f366	capability	CM-PAY-001	core		Activate payments			the setup task's action, opening the payments settings (/store/<store>/settings/payments)
+SH-E-27fa2d9e	capability	CM-ONB-004	core		Get a custom domain			a setup task card of the Home's list of tasks (rule H2), whose action Set up domain opens settings/domains
+SH-E-27fa2d9e	capability	CM-SFR-008	core		custom domain;branded URL			the setup task gets the store a custom domain; not CM-CNT-006's custom URLs (its lead is a homonym)
+SH-E-76c06fc6	capability	CM-SFR-008	core		Set up domain			the setup task's action, opening the domains settings (/store/<store>/settings/domains)
+SH-E-bec81020	capability	CM-ONB-004	core	EU	Prepare your store for EU right of withdrawal			a guide of tasks on the Home (rule H6) of 5 on the development store, whose action Get started opens settings/legal/cancel-return-rules/new; its options are for EU orders, so EU is its scope
+SH-E-bec81020	capability	CM-RET-004	core	EU	EU right of withdrawal	EU right of withdrawal		Shopify's own guide in its admin preparing the store for the EU right of withdrawal, the buyer's withdrawal from an order: its return and cancellation options for EU orders, set in Settings > Policies (CM-CNT-008's line); the guide's 5 tasks aren't held
+SH-E-bec81020	capability	CM-CNT-008	core	EU	return and cancellation options			the guide's return and cancellation options for EU orders: the Policies settings' return and cancellation rules, the route its action opens (the cell's SH-S-7089), as SH-E-79642a2b's line placed them
+SH-E-28bb0660	capability	CM-ONB-004	core	EU	Prepare your store for EU right of withdrawal			the title of a guide of tasks on the Home (rule H6), for EU orders
+SH-E-28bb0660	capability	CM-RET-004	core	EU	EU right of withdrawal	EU right of withdrawal		the guide's title names the EU right of withdrawal, the law whose requirements its tasks meet, read with its card's text: Shopify's own guide for it
+SH-E-7e9da2b2	capability	CM-CNT-008	core	EU	return and cancellation options			the guide's description: return and cancellation options for EU orders, the Policies settings' return and cancellation rules (the route its action opens)
+SH-E-7e9da2b2	capability	CM-RET-004	core	EU				the options are what the guide sets up for the EU right of withdrawal, read with its card's heading (SH-E-28bb0660)
+SH-E-093e0005	capability	CM-RET-004	shows	EU	eu-right-of-withdrawal			the guide's link to Shopify's help page on the EU right of withdrawal (help.shopify.com/manual/compliance/legal/eu-right-of-withdrawal), read with its sentence, about EU right of withdrawal requirements (SH-E-28f114bb): a guide, shows (rule 4)
+SH-E-28f114bb	capability	CM-RET-004	shows	EU	EU right of withdrawal	EU right of withdrawal		the rest of the guide's sentence after its link Learn more (SH-E-093e0005): the EU right of withdrawal's requirements, a law the store prepares for, named as a topic: shows
+SH-E-1363cc14	out							an illustration's alt text on the EU guide's card, naming nothing of the platform's
+SH-E-3b958a16	capability	CM-CNT-008	core	EU	legal/cancel-return-rules			the EU guide's action, Get started, opening the Policies settings' new rule (/settings/legal/cancel-return-rules/new, the router's setting:legal:cancel_return_policy_create, titled Add rule, gated by the entitlement policies): the cell's route for a cancellation and return policy (SH-S-7089)
+SH-E-5df41d41	capability	CM-ONB-004	core		tasks completed			the progress of a guide of tasks on the Home (rule H6), the B2B guide Sell B2B and DTC, in one place; the count is the store's own
+SH-E-e7eadd1d	capability	CM-ONB-004	core		Next task			the next task of the B2B guide on the development store's Home (rule H6)
+SH-E-e7eadd1d	capability	CM-B2B-001	core		B2B;DTC			the task sets up selling to business and direct buyers in one store, as the cell's blended store for both B2B and D2C (SH-S-0740)
+SH-E-1a9645f5	out							a UI string: the B2B guide's Resume button on the development store, with no address, naming no place or feature
+SH-E-f70346ec	capability	CM-AIA-002	core		Sidekick's image generation			a card of the Home's list suggesting Sidekick's image generation for one of the store's products, named (its name is the store's own data): a feature of Shopify's own assistant (rule H8)
+SH-E-f70346ec	capability	CM-CAT-007	core		images for your products;image generation			images generated for the store's products: product media, as the cell's route for media generation (try-media-gen)
+SH-E-13d39875	capability	CM-CAT-007	core		images for your products			the title of the Home's card for Sidekick's image generation: images for the store's products
+SH-E-13d39875	capability	CM-AIA-002	core					the images are made with Sidekick's image generation, read with its card's text (SH-E-ebb608f5)
+SH-E-ebb608f5	capability	CM-AIA-002	core		Sidekick's image generation			the card's text names Sidekick's image generation, for one of the store's products, named (its own data)
+SH-E-ebb608f5	capability	CM-CAT-007	core		image generation			an image generated for one of the store's products: product media
+SH-E-a429bd09	capability	CM-CAT-007	core		Generate image			the card's action names generating a product's image, Sidekick's (its card's text)
+SH-E-a429bd09	capability	CM-AIA-002	core		Generate image			the image is generated with Sidekick, read with its card's text (SH-E-ebb608f5)
+SH-E-a429bd09	capability	CM-CAT-001	core		products			the page the action opens is the Products page (/store/<store>/products): a second line, which follows the page
+SH-E-5c0b8880	capability	CM-PLN-001	core	fake-demo-sharrwah@2026-10-01-trial	Trial			the Home's onboarding status indicator in the store's trial, its popover offering 'Subscribe for $1' and Select a plan (20261001T023324Z-trial-watch/steps/001.html): the store's trial on its plan, ending soon, its own value (rule H11)
+SH-E-5c0b8880	capability	CM-ONB-004	core	fake-demo-sharrwah@2026-10-01-trial				the element is the Home's onboarding status indicator (data-onboarding-status-indicator, 20261001T023324Z-trial-watch/steps/001.html), here in the store's trial state (rule H11)
+SH-E-fd8fb9f8	capability	CM-ONB-004	core	fake-demo-sharrwah@2026-10-04-paid-failed-bill;fake-demo-sharrwah@2026-10-05-staff-customer-support	Ready to sell			the Home's onboarding status indicator (data-onboarding-status-indicator) on the store's paid plan, its popover reading 'You can sell, but your store isn't public' (20261004T235142Z-journey-paid-state/steps/005.html): the store's onboarding state (rule H11)
+SH-E-1ba14c9c	capability	CM-PLN-001	core	ibx5bt-xy@2026-09-30;ibx5bt-xy@2026-10-01-trial	Get 3 months for $1/month		paid trial: 3 months for $1/month	the plan offer over the new store's Home in its trial, with Select a plan (rule H12), as the pricing pages' paid trial (SH-68 to SH-72)
+SH-E-6dce649d	capability	CM-PLN-001	core	ibx5bt-xy@2026-09-30;ibx5bt-xy@2026-10-01-trial	Select a plan;subscribe/checkout			the trial store's link to the plan selection (/store/<store>/subscribe/checkout), beside its plan offer (rule H12), as SH-9 placed the subscribe route
+SH-E-1b04f4ef	capability	CM-ONB-004	core		set up			the Home's greeting heading on the new store, over its setup tasks: its words name the store's setup; the store's name is its own data (rule H9)
+SH-E-b6af0a8d	capability	CM-ONB-004	core		set up			the words of the Home's greeting heading before the store's name (SH-E-1b04f4ef): the store's setup (rule H9)
+SH-E-0f407408	capability	CM-ONB-004	core		Add something to sell			a setup task card of the Home's list of tasks (rule H2), whose action Add product opens the Products page
+SH-E-0f407408	capability	CM-CAT-001	core		Add product			the setup task adds the store's first product, with a title, a price and a photo, opening the Products page; not B2B selling (CM-B2B-001's lead is a homonym)

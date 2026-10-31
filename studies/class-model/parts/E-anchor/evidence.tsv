@@ -1,0 +1,579 @@
+cap_id	platform	supports	key	why
+CM-SFR-001	shopify	core	SH-C-029/decides/SH-S-5031	admin route online-store needs storefront.enabled
+CM-SFR-001	shopify	core	SH-C-029/decides/SH-S-5364	storefront entitlement enabled in the captured stores
+CM-SFR-001	shopify	core	SH-C-029/decides/SH-S-7003	plan row Themes and templates, Included
+CM-SFR-001	shopify	core	SH-I-0823	admin navigation OnlineStore
+CM-SFR-001	shopify	core	SH-I-1119	staff permission THEMES
+CM-SFR-001	shopify	core	SH-I-1142	plan feature Online store
+CM-SFR-001	shopify	core	SH-I-1161	plan feature Website builder
+CM-SFR-001	shopify	core	SH-C-029/boundary/SH-S-6137	webhook themes/publish for the main theme
+CM-SFR-001	shopify	core	SH-C-029/boundary/SH-S-6135	webhook themes/create
+CM-SFR-001	salla	core	SA-C-090/where/SA-S-1828	admin link Store design, /themes
+CM-SFR-001	salla	core	SA-C-090/where/SA-S-3546	dashboard app ui-merchant-themes
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2031	plan line اختيار ثيم المتجر
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2101	plan line تصميم واجهة المتجر
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2411	staff permission store_design_management
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2033	plan line: several copies of the theme
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2034	plan line: scheduling publication of copies
+CM-SFR-002	shopify	core	SH-C-029/decides/SH-S-5211	editor route behind THEMES permission and betas
+CM-SFR-002	shopify	core	SH-I-0990	staff permission Online store > Edit code
+CM-SFR-002	shopify	core	SH-I-1059	staff permission EDIT_THEME_CODE
+CM-SFR-002	shopify	core	SH-C-029/boundary/SH-S-1078	access scope write_theme_code
+CM-SFR-002	shopify	core	SH-C-029/where/SH-S-0826	Liquid among Shopify's resources
+CM-SFR-002	shopify	core	SH-I-0066	Section Rendering API resource
+CM-SFR-002	shopify	core	SH-C-029/decides/SH-S-6201	theme file edits need write_themes and edit files permission
+CM-SFR-002	shopify	shows	SH-C-029/boundary/SH-S-6301	Theme Access app passwords for developers; maker not stated
+CM-SFR-002	salla	core	SA-C-090/where/SA-S-3578	dashboard app themes-editor, /themes/editor
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2032	plan line تخصيص ثيم المتجر
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-3379	released flag theme-customization, every plan
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2114	Pro plan line: CSS and JS customization
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2115	Pro plan line: own theme with Salla Twilight
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-3378	released flag theme-custom-css, Pro and Special
+CM-SFR-002	salla	core	SA-C-090/where/SA-S-1161	Twilight Engine in Salla's developer docs
+CM-SFR-003	shopify	core	SH-I-2512	Shopify Theme Store among built-in features
+CM-SFR-003	shopify	extension-point	SH-C-029/responsible/SH-S-0052	Theme Store clause: theme IP stays the designer's
+CM-SFR-003	shopify	extension-point	SH-C-029/responsible/SH-S-0053	Theme Store clause: designer supports the theme
+CM-SFR-003	shopify	extension-point	SH-I-2090	partner dashboard section Themes
+CM-SFR-003	shopify	shows	SH-I-1354	billing charge category Theme fees
+CM-SFR-003	salla	core	SA-C-090/where/SA-S-1829	admin link Theme Marketplace
+CM-SFR-003	salla	core	SA-C-090/reason/SA-S-5031	Salla provided a theme store to install and preview themes
+CM-SFR-003	salla	core	SA-C-090/decides/SA-S-3387	released flag theme-purchases
+CM-SFR-003	salla	extension-point	SA-C-208/boundary/SA-S-5104	developer submits theme publication in Partners Portal
+CM-SFR-003	salla	extension-point	SA-C-208/where/SA-S-1908	Partners portal link My Themes
+CM-SFR-003	salla	extension-point	SA-C-090/responsible/SA-S-0119	Salla an intermediary hosting and publishing themes
+CM-SFR-004	shopify	extension-point	SH-C-166/where/SH-S-0705	theme app extensions add dynamic elements to themes
+CM-SFR-004	shopify	extension-point	SH-C-166/where/SH-S-2238	extension identifier theme_app_extension
+CM-SFR-004	shopify	extension-point	SH-C-166/boundary/SH-S-6165	app proxy needs write_app_proxy
+CM-SFR-004	shopify	extension-point	SH-C-166/boundary/SH-S-0943	access scope read_app_proxy
+CM-SFR-004	shopify	extension-point	SH-C-029/boundary/SH-S-6291	access scope write_script_tags
+CM-SFR-004	shopify	extension-point	SH-C-029/boundary/SH-S-6112	access scope read_script_tags
+CM-SFR-004	salla	extension-point	SA-C-198/where/SA-S-0209	App Snippet injects an app's JavaScript into stores
+CM-SFR-004	salla	extension-point	SA-C-198/boundary/SA-S-1074	API folder App Snippets
+CM-SFR-005	shopify	extension-point	SH-C-193/where/SH-S-2662	App Store category Store design apps
+CM-SFR-005	shopify	extension-point	SH-I-1899	category Content apps
+CM-SFR-005	shopify	extension-point	SH-I-1904	category Design element apps
+CM-SFR-005	shopify	extension-point	SH-I-1908	category Image and media apps
+CM-SFR-005	shopify	extension-point	SH-I-1924	category Product display apps
+CM-SFR-005	shopify	extension-point	SH-I-1936	category Storefront apps
+CM-SFR-005	shopify	extension-point	SH-I-1933	category Accessibility apps
+CM-SFR-005	salla	extension-point	SA-C-091/where/SA-S-1165	Component Bundle among extension points
+CM-SFR-005	salla	extension-point	SA-C-091/where/SA-S-1909	Partners portal link Bundles under themes
+CM-SFR-005	salla	extension-point	SA-C-091/decides/SA-S-5032	rule for bundles published in Themes Marketplace
+CM-SFR-006	shopify	extension-point	SH-I-1938	App Store category Page builder apps
+CM-SFR-006	salla	core	SA-C-082/where/SA-S-1838	admin link Landing pages, /themes/landing-pages
+CM-SFR-006	salla	core	SA-C-082/decides/SA-S-2109	Pro plan line صفحات هبوط المنتج
+CM-SFR-006	salla	core	SA-C-082/decides/SA-S-2397	staff permission landing_pages_management
+CM-SFR-006	salla	core	SA-C-082/decides/SA-S-3116	released flag landing-pages
+CM-SFR-006	salla	core	SA-C-082/decides/SA-S-3388	released flag landing-page-templates
+CM-SFR-006	salla	shows	SA-C-082/decides/SA-S-3512	flag show-product-in-landing-page, not released
+CM-SFR-006	salla	shows	SA-C-082/boundary/SA-S-5030	pixel tracks events on landing pages
+CM-SFR-007	shopify	extension-point	SH-I-1920	App Store category Banner apps
+CM-SFR-007	shopify	extension-point	SH-I-1923	App Store category Pop-up apps
+CM-SFR-007	shopify	extension-point	SH-I-1919	App Store category Notification apps
+CM-SFR-007	salla	core	SA-C-083/decides/SA-S-2014	plan line شريط إعلاني أعلى المتجر
+CM-SFR-007	salla	core	SA-C-083/where/SA-S-3536	dashboard app path marketing/advertisements
+CM-SFR-007	salla	core	SA-C-083/where/SA-S-1067	Merchant API folder Advertisements
+CM-SFR-007	salla	core	SA-C-083/decides/SA-S-2357	staff permission advertisements_management
+CM-SFR-007	salla	core	SA-C-083/decides/SA-S-3106	released flag advertisements
+CM-SFR-008	shopify	core	SH-C-033/where/SH-S-1497	settings page Domains
+CM-SFR-008	shopify	core	SH-C-033/where/SH-S-5152	admin route domains
+CM-SFR-008	shopify	core	SH-C-033/decides/SH-S-5153	DOMAINS permission
+CM-SFR-008	shopify	core	SH-C-033/decides/SH-S-5156	buying a domain needs customDomains
+CM-SFR-008	shopify	core	SH-C-033/decides/SH-S-5700	entitlement customDomains
+CM-SFR-008	shopify	core	SH-C-033/decides/SH-S-7033	plan row Custom domain name, Included
+CM-SFR-008	shopify	core	SH-C-033/decides/SH-S-0029	domains bought through Shopify renew automatically
+CM-SFR-008	shopify	core	SH-C-033/boundary/SH-S-1216	webhook topic domains/create
+CM-SFR-008	shopify	core	SH-I-1002	staff permission to transfer a domain to another store
+CM-SFR-008	shopify	shows	SH-C-033/responsible/SH-S-7271	merchant turns off auto-renewal
+CM-SFR-008	shopify	shows	SH-C-033/responsible/SH-S-7272	after termination merchant deals with domain provider
+CM-SFR-008	shopify	shows	SH-I-1326	billing charge category Domain fees
+CM-SFR-008	salla	core	SA-C-007/where/SA-S-1830	admin link Domain, /manage/domain
+CM-SFR-008	salla	core	SA-C-007/where/SA-S-3543	dashboard app ui-merchant-domain
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-2037	plan line Salla's default domain
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-2039	plan line reserving one's own domain
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-2040	plan line transfer or link a third party's domain
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-2104	plan line reserving a custom domain name
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-2389	staff permission domain_management
+CM-SFR-008	salla	core	SA-C-007/decides/SA-S-3190	released flag domain, Plus, Pro, Special
+CM-SFR-008	salla	shows	SA-C-007/responsible/SA-S-5004	merchant answers for a domain transfer
+CM-SFR-009	salla	core	SA-C-007/where/SA-S-1064	Merchant API folder DNS Records
+CM-SFR-009	salla	core	SA-C-007/boundary/SA-S-1556	access scope dns-records
+CM-SFR-009	salla	core	SA-C-007/decides/SA-S-2041	plan line إدارة إعدادات DNS
+CM-SFR-010	shopify	shows	SH-C-036/decides/SH-S-7032	plan row Unlimited web hosting, Included; core in G's CM-OPS-003, hosting of the store, so it counts once (the coordinator, convention 8)
+CM-SFR-010	shopify	core	SH-C-036/decides/SH-S-7034	plan row Free SSL certificate, Included
+CM-SFR-010	shopify	core	SH-C-036/boundary/SH-S-7465	Domain field sslEnabled
+CM-SFR-010	salla	core	SA-C-007/decides/SA-S-2038	plan line شهادة SSL مجانية under the domain
+CM-SFR-011	shopify	core	SH-C-139/where/SH-S-5134	admin route headless
+CM-SFR-011	shopify	core	SH-C-139/where/SH-S-5135	admin route hydrogen
+CM-SFR-011	shopify	core	SH-I-0796	admin navigation CustomStorefronts
+CM-SFR-011	shopify	core	SH-C-139/decides/SH-S-7056	plan row Build headless storefronts
+CM-SFR-011	shopify	core	SH-C-139/where/SH-S-0831	Hydrogen framework resource
+CM-SFR-011	shopify	core	SH-C-139/where/SH-S-0710	Oxygen, Shopify's edge hosting for Hydrogen
+CM-SFR-011	shopify	core	SH-C-139/boundary/SH-S-6152	Headless channel holds Storefront API scopes
+CM-SFR-011	shopify	shows	SH-C-139/reason/SH-S-0709	stated reason: control over the frontend
+CM-SFR-012	shopify	core	SH-C-139/where/SH-S-0825	Storefront API resource
+CM-SFR-012	shopify	core	SH-C-139/boundary/SH-S-6156	Storefront API requires unauthenticated scopes
+CM-SFR-012	shopify	core	SH-C-139/boundary/SH-S-6155	scope unauthenticated_read_product_listings
+CM-SFR-012	shopify	core	SH-C-139/boundary/SH-S-6148	scope unauthenticated_read_content
+CM-SFR-012	shopify	core	SH-C-139/boundary/SH-S-6164	scope unauthenticated_write_customers
+CM-SFR-012	salla	core	SA-C-101/where/SA-S-0211	status page component Store APIs
+CM-SFR-012	salla	core	SA-C-101/boundary/SA-S-5140	Twilight JS SDK for Salla storefront APIs
+CM-SFR-012	salla	shows	SA-C-101/reason/SA-S-5141	reason: frontend to backend communication
+CM-SFR-013	shopify	core	SH-C-035/where/SH-S-0867	Search resource
+CM-SFR-013	shopify	core	SH-C-035/boundary/SH-S-0983	access scope read_discovery
+CM-SFR-013	shopify	core	SH-C-035/boundary/SH-S-0984	access scope write_discovery
+CM-SFR-013	shopify	extension-point	SH-C-035/where/SH-S-2694	App Store category Search and filter apps
+CM-SFR-013	shopify	extension-point	SH-I-1928	App Store category Search and navigation apps
+CM-SFR-013	salla	core	SA-C-020/where/SA-S-1756	settings page Product filter settings
+CM-SFR-013	salla	core	SA-C-020/decides/SA-S-2135	Pro plan line: filter options shown to customers
+CM-SFR-013	salla	core	SA-C-020/decides/SA-S-3479	released flag products-filters
+CM-SFR-013	salla	core	SA-C-091/boundary/SA-S-1444	storefront component salla-filters
+CM-SFR-013	salla	core	SA-C-091/boundary/SA-S-1523	storefront component salla-search
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-2035	Plus plan line حماية محتوى المتجر under store design (tsmym-almtgr)
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3363	released flag content-copyright, Plus, Pro and Special
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3349	flag remove-salla-copyright, not released
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3381	released flag theme-versions-management
+CM-SFR-001	salla	core	SA-C-090/decides/SA-S-3384	released flag theme-version-screenshot, Pro and Special
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3380	flag theme-advanced-activation, not released
+CM-SFR-001	salla	shows	SA-C-090/decides/SA-S-3157	flag theme-preview, not released
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2153	Pro plan line: change the storefront's design with CSS code
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-2199	Special plan line: full customization of the store without code
+CM-SFR-002	salla	core	SA-C-090/decides/SA-S-3159	released flag component-advanced-visibility
+CM-SFR-002	salla	shows	SA-C-090/decides/SA-S-3374	flag canvas-mode, not released
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1120	Twilight theme docs folder Layouts
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1121	Twilight theme docs folder Hooks
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1122	Twilight theme docs folder Pages
+CM-SFR-002	salla	core	SA-C-090/boundary/SA-S-1128	Twilight theme docs folder Components
+CM-SFR-002	salla	core	SA-C-091/where/SA-S-1162	docs folder Twilight SDK, beside Twilight Engine under one parent
+CM-SFR-002	salla	core	SA-C-091/where/SA-S-1163	docs folder Web Components, beside Twilight Engine under one parent
+CM-SFR-002	salla	core	SA-C-091/boundary/SA-S-1139	Twilight SDK folder Cart
+CM-SFR-002	salla	core	SA-C-091/boundary/SA-S-1499	storefront web component salla-product-card
+CM-SFR-002	shopify	core	SH-I-0063	Ajax API among Shopify's theme resources (SH-C-029)
+CM-SFR-003	salla	extension-point	SA-C-208/where/SA-S-1928	Partners portal link Theme Purchases
+CM-SFR-003	salla	extension-point	SA-C-208/where/SA-S-1929	Partners portal link Theme Subscriptions Trials
+CM-SFR-003	salla	extension-point	SA-C-208/responsible/SA-S-0039	Salla an intermediary for hosting, publishing and managing themes
+CM-SFR-003	salla	core	SA-C-208/reason/SA-S-5105	every theme reviewed by Salla's team before publication
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0040	Salla takes a commission for hosting and support
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0041	developers paid after the warranty period
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-0042	developers' dues may be frozen
+CM-SFR-003	salla	shows	SA-C-208/decides/SA-S-5107	developer sets the theme's price, with a minimum
+CM-SFR-003	salla	shows	SA-C-208/reason/SA-S-5106	reason for the theme price policy
+CM-SFR-003	salla	core	SA-C-090/decides/SA-S-3383	released flag theme-trial-versions, every plan
+CM-SFR-003	salla	shows	SA-C-090/decides/SA-S-3424	flag ready-store-theme-purchase, not released
+CM-SFR-005	salla	extension-point	SA-C-091/reason/SA-S-5033	components submitted for publishing in Salla Themes Marketplace
+CM-SFR-005	salla	shows	SA-C-091/boundary/SA-S-1155	Twilight SDK folder Component Bundle
+CM-SFR-007	salla	shows	SA-C-091/boundary/SA-S-1407	storefront web component salla-advertisement; readme empty
+CM-SFR-008	salla	shows	SA-C-301/where/SA-S-5116	Partners portal section Domains Management
+CM-SFR-008	salla	shows	SA-C-301/decides/SA-S-5117	Partners portal feature domain-purchase, permission manage-domains
+CM-SFR-008	salla	shows	SA-C-301/boundary/SA-S-5118	Partners portal request partner-reports domains stats
+CM-SFR-011	shopify	core	SH-I-0069	API resource Storefront Web Components (SH-C-139)
+CM-CNT-001	shopify	core	SH-C-027/where/SH-S-1525	admin navigation Files
+CM-CNT-001	shopify	core	SH-I-0953	staff permission Content > Files
+CM-CNT-001	shopify	core	SH-C-027/decides/SH-S-5122	route file:list gated by VIEW_FILES
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-5986	own API scope read_files
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-6198	own API scope write_files
+CM-CNT-001	shopify	core	SH-C-027/decides/SH-S-6199	fileCreate needs the user's create files permission
+CM-CNT-001	shopify	core	SH-C-027/boundary/SH-S-6202	fileCreate uploads images
+CM-CNT-001	shopify	core	SH-C-027/reason/SH-S-7494	Shopify's Imagery service manages the store's images and videos
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-1500	settings page Metafields and metaobjects
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-0779	label Metafields
+CM-CNT-002	shopify	core	SH-C-028/where/SH-S-1524	admin navigation Metaobjects
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5120	Content section gated by metaobjects.enabled
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5625	metaobjects entitlement enabled in the captured stores
+CM-CNT-002	shopify	core	SH-C-028/decides/SH-S-5121	metaobject routes gated by metaobject permissions
+CM-CNT-002	shopify	core	SH-I-0946	staff permission Content > Metaobject definitions > View
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6056	own API scope read_metaobjects
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6236	own API scope write_metaobject_definitions
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-6053	webhook topic metaobjects/create
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-5952	webhook topic metafield_definitions/create
+CM-CNT-002	shopify	core	SH-C-028/boundary/SH-S-7240	admin intent create metaobject_definition
+CM-CNT-002	shopify	core	SH-I-2499	App Store built-in feature Metafields and metaobjects
+CM-CNT-002	shopify	core	SH-C-028/reason/SH-S-7490	standard metafield definitions shared across all stores
+CM-CNT-002	shopify	extension-point	SH-C-028/boundary/SH-S-6237	apps read and write their own app-owned metaobjects
+CM-CNT-002	shopify	extension-point	SH-I-1902	App Store category Metafield apps
+CM-CNT-003	shopify	core	SH-I-0991	staff permission Online store > Blog posts and pages
+CM-CNT-003	shopify	core	SH-I-1100	staff permission PAGES
+CM-CNT-003	shopify	core	SH-I-0166	API resource Page
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-1030	own API scope read_online_store_pages
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-1031	own API scope write_online_store_pages
+CM-CNT-003	shopify	core	SH-C-030/boundary/SH-S-7241	admin intent create page
+CM-CNT-003	salla	core	SA-C-093/where/SA-S-1831	admin link Information pages /channel/pages
+CM-CNT-003	salla	core	SA-C-093/where/SA-S-3551	dashboard app @salla.sa/ui-merchant-channel
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2076	plan line الصفحات التعريفية
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2100	plan line إضافة صفحات تعريفية للمتجر
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2342	staff permission pages_browse
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-2343	staff permission pages_management
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-3362	released flag store-pages
+CM-CNT-003	salla	core	SA-C-093/decides/SA-S-3386	released flag internal-pages
+CM-CNT-004	shopify	core	SH-C-030/where/SH-S-1527	admin navigation Blog posts
+CM-CNT-004	shopify	core	SH-C-030/where/SH-S-0917	label Blog
+CM-CNT-004	shopify	core	SH-C-030/decides/SH-S-5124	comments route gated by storefront.enabled and PAGES
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-7233	admin intent create article
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6062	article events need read_content or read_online_store_pages
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6178	articleCreate needs write_content or write_online_store_pages
+CM-CNT-004	shopify	core	SH-C-030/boundary/SH-S-6148	Storefront API Article scope
+CM-CNT-004	shopify	extension-point	SH-I-1900	App Store category Blog apps
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1698	admin link Blog /blog
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-3555	dashboard app @salla.sa/ui-merchant-blog at /marketing/blog
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1703	setting Show blog in navigation
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1704	setting Likes and comments
+CM-CNT-004	salla	core	SA-C-081/where/SA-S-1705	setting Blog homepage SEO
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2011	plan line مدونة المتجر
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2345	staff permission blog_browse
+CM-CNT-004	salla	core	SA-C-081/decides/SA-S-2346	staff permission blog_management
+CM-CNT-004	salla	shows	SA-C-081/decides/SA-S-3389	flag store-blog, type app, not released
+CM-CNT-005	shopify	core	SH-C-031/where/SH-S-1526	admin navigation Menus
+CM-CNT-005	shopify	core	SH-I-0944	staff permission Content > Menus
+CM-CNT-005	shopify	core	SH-C-031/decides/SH-S-5123	route menus:list gated by storefront.enabled and LINKS
+CM-CNT-005	shopify	core	SH-C-031/boundary/SH-S-6060	own API scope read_online_store_navigation
+CM-CNT-005	shopify	core	SH-C-031/boundary/SH-S-6244	own API scope write_online_store_navigation
+CM-CNT-005	shopify	extension-point	SH-I-1929	App Store category Navigation and menu apps
+CM-CNT-005	salla	core	SA-C-093/decides/SA-S-3343	released flag store-menu
+CM-CNT-006	salla	core	SA-C-093/where/SA-S-1833	admin link Custom URLs /manage/custom-urls
+CM-CNT-006	salla	core	SA-C-093/where/SA-S-3533	dashboard app @salla.sa/ui-merchant-manage, path custom-urls
+CM-CNT-006	salla	core	SA-C-093/boundary/SA-S-1069	Merchant API folder Custom URLs
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-2090	plan line إنشاء روابط مخصصة
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-2417	staff permission custom_urls_management
+CM-CNT-006	salla	core	SA-C-093/decides/SA-S-3359	released flag custom-urls
+CM-CNT-007	shopify	extension-point	SH-I-1934	App Store category SEO apps
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-1822	admin link SEO /marketing/seo/homepage
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-3535	dashboard app path seo and bulk-seo
+CM-CNT-007	salla	core	SA-C-033/where/SA-S-1063	Merchant API folder SEO
+CM-CNT-007	salla	shows	SA-C-033/boundary/SA-S-1562	access scope Meta Data; the statement names no subject, so it shows here, as in CM-MKS-006, CM-MKS-008 and CM-MKS-009 (the coordinator, after batch 7)
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2141	plan line تحسين ظهور المتجر على محركات البحث
+CM-CNT-007	salla	shows	SA-C-033/decides/SA-S-2133	plan line AI-generated SEO at extra fees; core in F's CM-AIA-003, whose Salla cell rests on it, so it counts once (the coordinator, convention 8)
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2358	staff permission seo_enhancement_browse
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-2359	staff permission seo_enhancement_management
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3055	released flag seo-urls
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3346	released flag seo-meta-tag
+CM-CNT-007	salla	core	SA-C-033/decides/SA-S-3492	released flag bulk-seo
+CM-CNT-007	salla	core	SA-C-033/reason/SA-S-5014	Salla provides automatic filling of SEO fields
+CM-CNT-007	salla	shows	SA-C-033/decides/SA-S-3489	flag ai-seo-generator, not released
+CM-CNT-007	salla	extension-point	SA-C-033/where/SA-S-1201	app category Site Optimization
+CM-CNT-007	salla	extension-point	SA-C-033/where/SA-S-1227	app category Site Optimization (تحسين الموقع)
+CM-CNT-008	shopify	core	SH-C-034/where/SH-S-7087	Settings > Policies
+CM-CNT-008	shopify	core	SH-C-034/where/SH-S-1503	title Policies
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7088	gated by MANAGE_POLICIES and the policies entitlement
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7089	route for a cancellation and return policy
+CM-CNT-008	shopify	core	SH-C-034/decides/SH-S-7291	entitlement policies in the captured stores
+CM-CNT-008	shopify	core	SH-C-034/boundary/SH-S-6019	own API scope read_legal_policies
+CM-CNT-008	shopify	core	SH-C-034/boundary/SH-S-6222	own API scope write_legal_policies
+CM-CNT-008	shopify	shows	SH-C-034/responsible/SH-S-0014	merchant agrees to provide refund, shipping and terms policies
+CM-CNT-008	salla	core	SA-C-093/decides/SA-S-2100	information pages carry the store's policies
+CM-CNT-008	salla	core	SA-C-093/reason/SA-S-5034	an information page marked as the return and exchange policy page
+CM-CHN-001	shopify	core	SH-C-135/where/SH-S-1534	settings entry Sales channels
+CM-CHN-001	shopify	core	SH-C-135/where/SH-S-1496	admin section titled Sales channels
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-0956	own API scope read_channels
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6100	webhook channels/delete, read_publications
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6101	webhook collection_publications/create
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-6104	webhook product_publications/create
+CM-CHN-001	shopify	core	SH-C-135/boundary/SH-S-1168	webhook topic collection_publications/create
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6283	write_publications and the user's permission to publish a product
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6284	write_publications and the user's permission to unpublish a product
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-6281	write_publications and the user's permission to publish a collection
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-5020	products' publications routes need the PRODUCTS permission
+CM-CHN-001	shopify	core	SH-C-135/decides/SH-S-7006	plan row Sell on social and marketplaces, Included on all four plans
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-0699	a sales channel app connects the store to surfaces outside Shopify
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-0700	sales channels such as Google, Meta and Amazon
+CM-CHN-001	shopify	extension-point	SH-C-135/decides/SH-S-0701	when a partner should create a sales channel
+CM-CHN-001	shopify	extension-point	SH-C-135/where/SH-S-2254	extension target channel_config
+CM-CHN-001	shopify	extension-point	SH-C-135/boundary/SH-S-6105	app configured as a Sales Channel
+CM-CHN-001	shopify	extension-point	SH-I-1868	App Store category Sales channel apps
+CM-CHN-001	salla	core	SA-C-097/where/SA-S-1687	admin link Sales channels, /channels
+CM-CHN-001	salla	core	SA-C-097/where/SA-S-3551	dashboard app @salla.sa/ui-merchant-channel
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1606	webhook product.publish: product published in a new sales channel
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1598	webhook product.unpublish
+CM-CHN-001	salla	core	SA-C-097/boundary/SA-S-1596	webhook product.channels.changed: a product's display channels updated
+CM-CHN-001	salla	shows	SA-C-097/decides/SA-S-2962	flag instagram-api, not released
+CM-CHN-001	salla	shows	SA-C-097/decides/SA-S-3513	flag brand-sales-channels, not released
+CM-CHN-001	salla	shows	SA-C-097/reason/SA-S-5046	a channel shows disabled where not available to the store
+CM-CHN-002	shopify	own-service	SH-C-136/where/SH-S-0056	Shop is a Shopify application available to Eligible Merchants
+CM-CHN-002	shopify	own-service	SH-C-136/where/SH-S-2756	Shop app on Google Play, publisher Shopify Inc.
+CM-CHN-002	shopify	own-service	SH-C-136/responsible/SH-S-0244	Shop a Shopify Consumer Service; Shopify engaged by the customer
+CM-CHN-002	shopify	shows	SH-C-136/where/SH-S-0723	Shop defined: shopping destination and delivery tracking app
+CM-CHN-002	shopify	shows	SH-C-136/decides/SH-S-0724	available where Shopify Payments is supported
+CM-CHN-002	shopify	shows	SH-C-136/decides/SH-S-0725	needs Shopify Network Intelligence enabled
+CM-CHN-002	shopify	shows	SH-C-136/responsible/SH-S-0057	transaction completed on the merchant's store
+CM-CHN-002	shopify	shows	SH-C-136/boundary/SH-S-0847	API label Shop API
+CM-CHN-002	salla	core	SA-C-096/where/SA-S-1840	admin link Mahally, /channel/mahally
+CM-CHN-002	salla	core	SA-C-096/where/SA-S-3539	dashboard app @salla.sa/ui-merchant-mahally
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2067	Plus plan line منصة محلي under knoat-albyaa
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2009	Plus plan line كوبونات محلي
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2438	staff permission mahally_browse
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-2439	staff permission mahally_edit
+CM-CHN-002	salla	core	SA-C-096/decides/SA-S-3238	released flag mahly, Plus, Pro and Special
+CM-CHN-002	salla	core	SA-C-096/boundary/SA-S-5044	orders from Mahally received as the store's own
+CM-CHN-002	salla	own-service	SA-C-094/where/SA-S-0002	Salla offers Mahally among connected products
+CM-CHN-002	salla	shows	SA-C-096/where/SA-S-0005	Mahally defined: discovery and sales channel
+CM-CHN-002	salla	shows	SA-C-096/responsible/SA-S-5043	agreeing to Mahally's privacy and usage terms
+CM-CHN-002	salla	shows	SA-C-096/reason/SA-S-5045	Mahally shows only products that can be bought
+CM-CHN-002	salla	shows	SA-C-096/decides/SA-S-3146	flag mahally-customer-wallet, not released
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7049	plan row Import unlimited orders from marketplaces, Included
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7050	plan row 50 synced marketplace orders per month, Free
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-7051	plan row Over 50 synced marketplace orders, 1% up to $99/mo
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-1123	own API scope read_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-1124	own API scope write_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-6033	read_orders or read_marketplace_orders
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-6037	read_returns or read_marketplace_returns
+CM-CHN-003	shopify	core	SH-C-137/boundary/SH-S-5936	marketplace fulfillment orders scopes
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-6228	write_marketplace_orders and capture_payments_for_orders permission
+CM-CHN-003	shopify	core	SH-C-137/decides/SH-S-6231	write_marketplace_returns and refund_orders permission
+CM-CHN-003	shopify	extension-point	SH-C-137/where/SH-S-6361	app route apps/shopify-marketplace-connect
+CM-CHN-003	shopify	shows	SH-C-137/where/SH-S-0727	connect the catalog to marketplaces and sync orders, listings, inventory
+CM-CHN-003	shopify	shows	SH-C-137/responsible/SH-S-0527	marketplace facilitators collect and remit sales tax
+CM-CHN-003	salla	core	SA-C-097/decides/SA-S-2195	Special plan line الربط بمنصات التسوّق العالمية
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-1577	admin section Listings
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-5197	admin route listings
+CM-CHN-004	shopify	core	SH-C-138/where/SH-S-5199	admin route mappings
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6090	webhook collection_listings/add, read_product_listings
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6093	webhook product_feeds/create
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-6094	webhook product_feeds/full_sync
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-1047	own API scope write_product_feeds
+CM-CHN-004	shopify	core	SH-C-138/boundary/SH-S-1167	webhook topic collection_listings/update
+CM-CHN-004	shopify	shows	SH-C-138/decides/SH-S-5198	route listings:channel-mapping eligible to two betas
+CM-CHN-004	shopify	extension-point	SH-I-1876	App Store category Product feed apps
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3201	released flag google-merchant-feed
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3203	released flag facebook-catalog-feed
+CM-CHN-004	salla	core	SA-C-074/decides/SA-S-3205	released flag snapchat-catalog-feed
+CM-CHN-005	shopify	core	SH-C-141/where/SH-S-0729	stores sell each other's products in Shopify
+CM-CHN-005	shopify	core	SH-C-141/decides/SH-S-0730	free with all Shopify plans, subject to eligibility
+CM-CHN-005	shopify	core	SH-C-141/decides/SH-S-7013	plan row Sell and source products with Shopify Collective
+CM-CHN-005	shopify	core	SH-C-141/boundary/SH-S-7467	transaction type SHOPIFY_COLLECTIVE_DEBIT
+CM-CHN-005	shopify	core	SH-C-141/boundary/SH-S-7468	transaction type SHOPIFY_COLLECTIVE_CREDIT
+CM-CHN-005	shopify	shows	SH-C-141/responsible/SH-S-7475	supplier agrees payment terms with each retailer
+CM-CHN-006	shopify	extension-point	SH-C-195/where/SH-S-2701	App Store category Mobile app builder apps
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6059	AndroidApplication and AppleApplication scopes enabled for apps
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6058	contact Shopify Support to enable the scope for your app
+CM-CHN-006	shopify	extension-point	SH-C-195/boundary/SH-S-6243	write scope enabled for an app by Shopify Support
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-1837	admin link Mobile app, /channel/mobile
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-3560	dashboard app @salla.sa/ui-merchant-app-maker
+CM-CHN-006	salla	core	SA-C-094/where/SA-S-3579	dashboard app @salla.sa/app-maker-editor
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2068	Plus plan line صانع التطبيقات, extra fees, under knoat-albyaa
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2192	Special plan line تطبيق خاص بمتجرك
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-2413	staff permission app_builder_management
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3330	released flag app-maker
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3331	released flag store-app-webview
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3333	released flag store-app-scopes
+CM-CHN-006	salla	core	SA-C-094/decides/SA-S-3337	released flag app-editor-enhancements
+CM-CHN-006	salla	core	SA-C-174/decides/SA-S-5078	renewal needs a paid Salla plan
+CM-CHN-006	salla	own-service	SA-C-094/where/SA-S-0002	Salla offers an app maker among connected products
+CM-CHN-006	salla	extension-point	SA-C-094/where/SA-S-1204	app type App Maker in the extension-points list
+CM-CHN-006	salla	shows	SA-C-094/where/SA-S-0008	App Maker defined: a branded mobile commerce app
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3327	flag store-app-request, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3328	flag store-ios-app, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3329	flag store-android-app, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3160	flag app-maker-ai-components, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3332	flag mobile-laverne-theme, not released
+CM-CHN-006	salla	shows	SA-C-094/decides/SA-S-3336	flag update-app-request-for-testing, not released
+CM-CHN-006	salla	shows	SA-C-094/responsible/SA-S-5035	merchant moves the app to its own Apple and Google accounts
+CM-CHN-006	salla	shows	SA-C-094/reason/SA-S-5036	move needed under Apple's and Google's IP policies
+CM-CHN-006	salla	shows	SA-C-094/boundary/SA-S-5037	subscription using the merchant's own developer accounts
+CM-CHN-006	salla	shows	SA-C-174/where/SA-S-2211	App Maker publishing policy page
+CM-CHN-006	salla	shows	SA-C-174/responsible/SA-S-5079	Salla's company disclaims liability for the merchant's breaches
+CM-CHN-006	salla	shows	SA-C-174/boundary/SA-S-5080	checkbox agreeing to the publishing policy
+CM-CHN-006	salla	shows	SA-C-174/reason/SA-S-5081	charity apps may be rejected or delayed for Apple's reasons
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7017	plan row Casual, in-person sales at pop-ups and events, Included on all four plans
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7018	plan row POS Pro, $89/mo per location, 20 locations on Plus
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-0049	fees for POS Services by number of locations
+CM-POS-001	shopify	core	SH-C-142/decides/SH-S-7262	POS Services must use the online store's payment processor
+CM-POS-001	shopify	core	SH-C-142/boundary/SH-S-7461	own Admin API object PointOfSaleDevice
+CM-POS-001	shopify	core	SH-I-2463	own access scope read_point_of_sale_devices
+CM-POS-001	shopify	core	SH-I-0853	staff role POS full permissions
+CM-POS-001	shopify	core	SH-I-0851	staff role Organization POS administrator
+CM-POS-001	shopify	own-service	SH-C-142/where/SH-S-2757	POS app on Google Play, publisher Shopify Inc.
+CM-POS-001	shopify	extension-point	SH-I-1869	App Store category Selling in person apps
+CM-POS-001	shopify	extension-point	SH-I-1870	App Store category Retail apps
+CM-POS-001	shopify	shows	SH-C-142/where/SH-S-0785	label Retail
+CM-POS-001	shopify	shows	SH-C-142/where/SH-S-5255	admin route quick-sale, placed here by Q1, its words don't name POS
+CM-POS-001	shopify	shows	SH-C-142/decides/SH-S-5227	quick-sale route needs QUICK_SALE
+CM-POS-001	shopify	shows	SH-C-142/reason/SH-S-7285	German merchants meet TSE Compliance by recording and exporting POS transactions
+CM-POS-001	salla	core	SA-C-095/where/SA-S-1836	admin link Salla PointFree Cashier, /channel/sallapoint
+CM-POS-001	salla	core	SA-C-095/where/SA-S-3540	dashboard app @salla.sa/ui-merchant-pos
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2094	plan line بيع عبر نقاط البيع مع سلة بوينت, plan سلة بلس
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2441	staff permission salla_point_activate, group سلة بوينت
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2442	staff permission salla_point_add_employees
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2450	staff permission salla_point_create_orders
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2447	staff permission salla_point_manage_products
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2448	staff permission salla_point_assign_branch
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2452	staff permission salla_point_view_shift_reports
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-2453	staff permission salla_point_manage_shifts
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-3412	released flag app_pos, enabled in the answering store
+CM-POS-001	salla	core	SA-C-095/decides/SA-S-3514	released flag salla-point-app, Plus, Pro and Special
+CM-POS-001	salla	own-service	SA-C-095/where/SA-S-0006	Salla Point is Salla's point-of-sale product
+CM-POS-001	salla	shows	SA-C-095/decides/SA-S-2651	salla_point_activate in the permissions a partner can request: an interface for apps
+CM-POS-001	salla	shows	SA-C-095/decides/SA-S-2660	salla_point_create_orders in the permissions a partner can request: an interface for apps
+CM-POS-002	shopify	own-service	SH-C-143/decides/SH-S-7269	merchant may purchase POS Equipment from Shopify to accept Card Present Transactions
+CM-POS-002	shopify	own-service	SH-C-143/where/SH-S-7251	POS Services include Shopify's POS hardware, provided by Shopify
+CM-POS-002	shopify	shows	SH-C-143/where/SH-S-7270	POS hardware bought on the Shopify Hardware Store
+CM-POS-002	shopify	shows	SH-C-143/responsible/SH-S-7274	purchased, not leased, under the POS Equipment Agreement per country
+CM-POS-002	shopify	shows	SH-C-143/boundary/SH-S-0048	purchase subject to the POS Equipment Agreement per country
+CM-POS-002	shopify	shows	SH-C-142/responsible/SH-S-7273	transactions using the POS Equipment at the merchant's own risk
+CM-POS-002	salla	outside	SA-C-095/boundary/SA-S-5040	card payment in the Salla Point cashier needs a Geidea account
+CM-POS-002	salla	outside	SA-C-095/responsible/SA-S-5039	successful payment transferred by the service provider such as Geidea
+CM-POS-002	salla	outside	SA-C-095/responsible/SA-S-5038	freelance licences carry Geidea's annual fees under the merchant's contract with Geidea
+CM-POS-002	salla	shows	SA-C-095/decides/SA-S-2094	from the phone or tablet without additional devices
+CM-POS-002	salla	shows	SA-C-095/reason/SA-S-5041	terminal ID tied to one staff member, for security and regulatory reasons
+CM-POS-002	salla	shows	SA-C-095/reason/SA-S-5042	terminal number assigned to one device under the payment systems' and NearPay's requirements
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-5940	own access scope read_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-6175	own access scope write_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-5941	cash management query needs read_cash_tracking and a POS retail role permission
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-0954	scope read_cash_tracking
+CM-POS-003	shopify	core	SH-C-087/boundary/SH-S-0955	scope write_cash_tracking
+CM-POS-003	shopify	shows	SH-C-087/reason/SH-S-7492	cash drawers shouldn't open in a different part of the store
+CM-POS-004	shopify	extension-point	SH-C-144/where/SH-S-0713	POS UI extensions add custom functionality into Shopify POS
+CM-POS-004	shopify	extension-point	SH-C-144/where/SH-S-2217	extension target pos_action
+CM-POS-004	shopify	extension-point	SH-I-1667	extension target pos.home.tile.render
+CM-POS-004	shopify	extension-point	SH-I-1676	extension target pos.purchase.post.action.render
+CM-POS-004	shopify	extension-point	SH-C-144/decides/SH-S-7486	app authentication for extensions from POS 10.6.0
+CM-POS-004	shopify	extension-point	SH-C-144/responsible/SH-S-7281	developer solely responsible for the application
+CM-POS-004	shopify	shows	SH-C-144/boundary/SH-S-0823	label POS in the API reference
+CM-POS-004	shopify	shows	SH-C-144/reason/SH-S-7495	limit enforced for fast loading
+CM-POS-002	shopify	outside	SH-C-184/responsible/SH-S-0089	the P2PE service that encrypts card data on POS Equipment is provided, managed and processed exclusively by Stripe (the coordinator, from batch 5's lead)
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-5202	admin route markets
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-6353	admin link Markets
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5203	section Markets, staff permission VIEW_MARKETS among its eligibility
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-0540	Markets manage how customers experience the store by location, customer group, retail location or channel
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-0541	market customizations control currency, product availability, theme content, domains, languages and taxes
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-7059	plan row Localized selling with Shopify Markets, Included on every plan
+CM-MKS-001	shopify	core	SH-C-106/where/SH-S-0787	API category label Shopify Markets
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6042	webhook topic markets/create, read_markets
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6232	write_markets access scope
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-5919	customer_read_markets access scope
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5205	shipping option definitions need the store feature marketDrivenShipping
+CM-MKS-001	shopify	core	SH-C-106/decides/SH-S-5777	store feature marketDrivenShipping true in some captured stores
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-7239	admin server intent create market
+CM-MKS-001	shopify	extension-point	SH-I-1914	App Store category Internationalization apps
+CM-MKS-001	shopify	core	SH-C-113/where/SH-S-6358	Settings > General, where the backup region is set
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0573	every store must have a backup region for Markets
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0574	backup region buyers can browse but not buy
+CM-MKS-001	shopify	core	SH-C-113/decides/SH-S-0575	backup region set to the home country at store creation
+CM-MKS-001	shopify	core	SH-C-106/boundary/SH-S-6041	webhook topic markets_backup_region/update
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1769	settings Markets
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1730	setting Market selection (markets/browse_product_method)
+CM-MKS-001	salla	core	SA-C-165/where/SA-S-1055	API folder Store Scopes
+CM-MKS-001	salla	core	SA-C-165/boundary/SA-S-0184	GET /scopes lists store scopes for multi-country
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-0157	Multi Markets: customized versions of the store for each country, region or city
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-0158	Multi Markets available on the Special plan
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3339	released flag multi-countries-activate, Pro
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3500	released flag multi-countries, Special and Pro
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3526	released flag multi-countries-advanced, Special
+CM-MKS-001	salla	core	SA-C-165/decides/SA-S-3342	released flag customize-login-for-multi-markets, Pro and Special
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3340	flag multi-countries-basic, not released
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3011	flag multi-market-origin-country-filter, not released
+CM-MKS-001	salla	shows	SA-C-165/decides/SA-S-3524	flag multi-countries-link, not released
+CM-MKS-002	shopify	core	SH-C-112/where/SH-S-5256	admin route rollouts
+CM-MKS-002	shopify	core	SH-C-112/where/SH-S-6357	admin link Rollouts
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-0576	a rollout is a scheduled set of changes to theme, checkout, discounts or catalogs
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5257	rollout list needs entitlement rollouts.scheduledRollouts
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5258	rollout create needs staff permission CREATE_AND_EDIT_ROLLOUTS
+CM-MKS-002	shopify	core	SH-C-112/decides/SH-S-5827	entitlement scheduledRollouts true in the captured stores
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-6108	read_rollouts access scope
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-1339	webhook topic rollouts/create
+CM-MKS-002	shopify	core	SH-C-112/boundary/SH-S-7246	admin server intent open rollout
+CM-MKS-002	salla	core	SA-C-090/decides/SA-S-2034	Plus plan line جدولة نشر النسخ under store design
+CM-MKS-003	shopify	core	SH-C-110/where/SH-S-7130	admin route managed in section Markets
+CM-MKS-003	shopify	core	SH-C-110/where/SH-S-7131	admin route :id/managed in section Markets
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-5092	updating a managed market needs MANAGE_PAYMENTS_SETTINGS
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0568	needs Basic plan or higher, an online store and Shopify Payments
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0562	available only to merchants in the continental US and certain stores in Canada and the UK
+CM-MKS-003	shopify	core	SH-C-110/boundary/SH-S-0567	all Managed Markets questions go to Shopify Support
+CM-MKS-003	shopify	core	SH-C-110/decides/SH-S-0569	merchant of record disclaimer required at checkout
+CM-MKS-003	shopify	core	SH-C-110/responsible/SH-S-7216	App Store built-in feature: Managed Markets acts as your Merchant of Record
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0563	Global-e becomes the merchant of record
+CM-MKS-003	shopify	outside	SH-C-110/where/SH-S-0561	features powered by Global-e
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0127	Managed Markets Terms with Global-e, the merchant of record service provider
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0564	Global-e provides the tax registration
+CM-MKS-003	shopify	outside	SH-C-110/responsible/SH-S-0565	funds held in a Global-e account
+CM-MKS-003	shopify	outside	SH-C-106/responsible/SH-S-7275	another party such as Global-e hired as merchant of record
+CM-MKS-003	shopify	shows	SH-C-110/responsible/SH-S-0128	Shopify not a party to the Managed Markets Terms
+CM-MKS-003	shopify	shows	SH-C-110/reason/SH-S-0634	sell abroad without registering a business or for tax, or arranging customs clearance
+CM-MKS-003	salla	shows	SA-C-304/responsible/SA-S-5129	payments and selling on behalf (MoR) in the target market; who does it isn't stated
+CM-MKS-003	salla	extension-point	SA-C-304/boundary/SA-S-5130	Salla connects partners with brands seeking export and expansion
+CM-MKS-004	shopify	core	SH-C-111/boundary/SH-S-7458	Admin API object MarketWebPresence: a market's web presence, can be a different domain
+CM-MKS-004	shopify	core	SH-C-111/decides/SH-S-7061	plan row Assign local domains, Included on every plan
+CM-MKS-004	shopify	extension-point	SH-C-111/where/SH-S-2681	App Store category Geolocation apps
+CM-MKS-004	shopify	shows	SH-C-111/reason/SH-S-7288	a country selector lets customers pick their country and see their currency
+CM-MKS-004	shopify	shows	SH-I-2152	help section Set up automatic storefront redirection for your customers
+CM-MKS-004	salla	core	SA-C-163/decides/SA-S-0154	the currency shown depends on the customer's geographic location
+CM-MKS-005	shopify	core	SH-C-107/where/SH-S-0361	store currency: the admin's currency for pricing and reports
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0361	store currency: the admin's currency for pricing and reports
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0671	the currency used throughout the admin, set before the first sale
+CM-MKS-005	shopify	core	SH-C-107/decides/SH-S-0370	changing it after the first sale needs Shopify Support
+CM-MKS-005	shopify	core	SH-C-107/boundary/SH-S-7457	Admin API field Shop.currencyCode
+CM-MKS-005	salla	core	SA-C-163/decides/SA-S-0154	a default currency added in the store's settings
+CM-MKS-006	shopify	core	SH-C-108/where/SH-S-6354	admin route markets
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0547	a market's currency is displayed to customers and transactions are in it
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-7058	plan row Show prices in local currencies*, Included on every plan
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-7172	sell_globally_local_currencies requires Shopify Payments
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0366	selling in multiple currencies needs Shopify Payments
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0543	full functionality only with Shopify Payments and one-page checkout
+CM-MKS-006	shopify	core	SH-C-108/decides/SH-S-0546	with other providers the price is converted to the default currency at checkout
+CM-MKS-006	shopify	outside	SH-C-108/decides/SH-S-0545	Adyen as the primary gateway can process payments in local currency
+CM-MKS-006	shopify	extension-point	SH-I-1916	App Store category Currency and translation apps
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-1724	settings Currencies (general/currencies)
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-3533	dashboard app path /manage/currencies
+CM-MKS-006	salla	core	SA-C-163/where/SA-S-1060	API folder Currencies
+CM-MKS-006	salla	core	SA-C-163/boundary/SA-S-1148	docs folder Currency
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-1970	Plus plan line إتاحة الدفع عبر +33 عملة
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-2388	staff permission currency_setting_edit
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-3358	released flag currency, Plus, Pro and Special
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-3323	released flag reflect-market-currency
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0156	the merchant sets the currencies available in the store
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0155	the buyer picks a currency from the list beside the cart
+CM-MKS-006	salla	core	SA-C-163/decides/SA-S-0154	the currency shown depends on the customer's geographic location
+CM-MKS-006	salla	core	SA-C-165/decides/SA-S-0159	default and other supported currencies set per market
+CM-MKS-006	salla	shows	SA-C-163/decides/SA-S-0012	payments integration supports more than 15 currencies
+CM-MKS-007	shopify	core	SH-C-109/where/SH-S-6356	admin route markets
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0544	prices converted automatically at the current rate, or rates set manually
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0548	conversion at the time of the transaction, at that time's rate
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0551	manual exchange rate per market with Managed Markets
+CM-MKS-007	shopify	core	SH-C-109/decides/SH-S-0553	the conversion rate is a mid-market rate without markup
+CM-MKS-007	shopify	core	SH-C-109/responsible/SH-S-0554	the fee Shopify charges to convert currencies when a payment is captured
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0552	selling in local currencies adds a currency conversion fee
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0555	the conversion fee depends on the store's primary country
+CM-MKS-007	shopify	shows	SH-C-109/decides/SH-S-0364	from 6 April 2026 the fees are calculated on the gross order
+CM-MKS-007	shopify	shows	SH-C-109/responsible/SH-S-0550	currency conversion risks fall on the merchant
+CM-MKS-007	shopify	shows	SH-C-109/boundary/SH-S-0558	the fee values are in the Terms of Service
+CM-MKS-007	salla	core	SA-C-163/decides/SA-S-3439	released flag currency-exchange, enabled
+CM-MKS-007	salla	core	SA-C-163/decides/SA-S-0117	markets product-price option: prices set automatically by the current exchange rate
+CM-MKS-008	shopify	core	SH-C-032/where/SH-S-1501	settings Languages
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-5268	route languages needs PREFERENCES and entitlement manageStoreLanguage
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-5857	entitlement manageStoreLanguage true in the captured stores
+CM-MKS-008	shopify	core	SH-C-032/decides/SH-S-7057	plan row Translate your storefront, Included on every plan
+CM-MKS-008	shopify	core	SH-C-032/where/SH-S-0778	API category label Localizations
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6020	webhook topic locales/create, read_locales
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6022	webhook topic locales/update, a locale published or unpublished
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6223	write_locales access scope
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6140	read_translations access scope
+CM-MKS-008	shopify	core	SH-C-032/boundary/SH-S-6303	write_translations access scope
+CM-MKS-008	shopify	shows	SH-C-032/reason/SH-S-7493	languages let international customers read products, policies and checkout in their language
+CM-MKS-008	shopify	extension-point	SH-I-1916	App Store category Currency and translation apps
+CM-MKS-008	shopify	shows	SH-I-2163	help section on the Translate & Adapt app; its maker isn't stated
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1723	settings Languages
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1896	admin link Translation log, /manage/languages/logs
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-3556	dashboard app @salla.sa/ui-merchant-languages
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-3567	dashboard app @salla.sa/ui-merchant-localization, /localization
+CM-MKS-008	salla	core	SA-C-008/where/SA-S-1065	API folder Languages
+CM-MKS-008	salla	core	SA-C-008/boundary/SA-S-1010	docs page Multi-Language Support
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2074	Plus plan line إتاحة 40 لغة في المتجر
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2075	Plus plan line الترجمة الفورية, for extra fees
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2093	Plus plan line ميزة ترجمة الرسائل
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2396	staff permission languages_management
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2973	released flag languages, Plus, Pro and Special
+CM-MKS-008	salla	core	SA-C-008/decides/SA-S-2974	released flag custom-message-translation, Plus, Pro and Special
+CM-MKS-008	salla	shows	SA-C-008/reason/SA-S-5009	an added language stays disabled until the merchant picks instant or manual translation
+CM-MKS-008	salla	shows	SA-C-008/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no language
+CM-MKS-009	salla	core	SA-C-166/where/SA-S-1048	API folder Countries
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1050	API folder Cities
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1049	API folder Districts
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1558	access scope countries
+CM-CNT-007	shopify	core	SH-C-111/boundary/SH-S-7458	Admin API object MarketWebPresence: a market's web presence defines its SEO strategy
+CM-MKS-001	salla	core	SA-C-165/boundary/SA-S-1055	own API folder Store Scopes, under the boundary placement
+CM-MKS-006	salla	core	SA-C-163/boundary/SA-S-1060	own API folder Currencies, under the boundary placement
+CM-MKS-006	salla	shows	SA-C-163/decides/SA-S-2605	currency_setting_edit / إعدادات العملات in the permissions a partner can request: an interface for apps
+CM-MKS-006	salla	shows	SA-C-163/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no currency
+CM-MKS-009	salla	core	SA-C-166/boundary/SA-S-1048	own API folder Countries, under the boundary placement
+CM-MKS-009	salla	shows	SA-C-166/boundary/SA-S-1562	access scope Meta Data, which Q1 placed here; the statement names no country
+CM-CNT-008	salla	core	SA-C-066/where/SA-S-5022	the privacy page can be added to the store as one of its information pages (the coordinator, from A-anchor batch 7's lead)
+CM-MKS-004	salla	core	S02-SA-052	a market's own subdomain, optional (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))
+CM-MKS-004	salla	core	S02-SA-102	a custom domain for the UAE market, its visitors redirected to it (the coordinator, from the subjects' points: P-5 (not a conflict: a reading corrected))

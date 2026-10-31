@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://help.zid.sa/apps/",
+ "dir": "items/005-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:31Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/apps/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 26254,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "d098d8dc35a769a526dbef7410196e2942c07bcf3bd5e46257f43bf7bb95d22c",
+ "raw_ext": "html"
+}

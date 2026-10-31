@@ -1,0 +1,65 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ANL-001	zid	statements	core;extension-point	التحليلات	ZD-C-105/decides/ZD-S-0973=compare-plans: starter, launch, growth, pro | ZD-C-105/decides/ZD-S-1047=الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-070/reason:searched, not found;ZD-C-088/responsible:stated only in general terms;ZD-C-088/reason:searched, not found;ZD-C-091/reason:searched, not found;ZD-C-105/responsible:stated only in general terms;ZD-C-105/boundary:searched, not found	general
+CM-ANL-002	zid	statements	core		ZD-C-105/decides/ZD-S-0972=compare-plans: starter, launch, growth, pro | ZD-C-105/decides/ZD-S-1048=باقة الأعمال الكبيره; النخبة; الإحترافية | ZD-C-105/decides/ZD-S-1049=compare-plans: starter, launch, growth, pro	ZD-C-105/responsible:stated only in general terms;ZD-C-105/boundary:searched, not found	general
+CM-ANL-003	zid	statements	core		ZD-C-105/decides/ZD-S-0477=staff permission	ZD-C-105/responsible:stated only in general terms;ZD-C-105/boundary:searched, not found	staff permission
+CM-ANL-004	zid	none-held					
+CM-ANL-005	zid	none-held					
+CM-ANL-006	zid	statements	core			ZD-C-019/reason:searched, not found	general
+CM-B2B-001	zid	statements	core			ZD-C-091/reason:searched, not found	general
+CM-B2B-002	zid	none-held					
+CM-B2B-003	zid	statements	core				general
+CM-CUS-001	zid	statements	core;extension-point	Merchant APIs > Customers | العملاء	ZD-C-091/decides/ZD-S-0481=staff permission | ZD-C-091/decides/ZD-S-0930=compare-plans: starter, launch, growth, pro	ZD-C-070/reason:searched, not found;ZD-C-091/reason:searched, not found	general
+CM-CUS-002	zid	statements	core			ZD-C-091/reason:searched, not found	general
+CM-CUS-003	zid	none-held					
+CM-CUS-004	zid	none-held					
+CM-CUS-005	zid	statements	core		ZD-C-091/decides/ZD-S-0931=compare-plans: starter, launch, growth, pro	ZD-C-091/reason:searched, not found	general
+CM-CUS-006	zid	none-held					
+CM-CUS-007	zid	none-held					
+CM-CUS-008	zid	statements	core	إعدادات صفحة إتمام عملية الشراء > طريقة تحديد عنوان العميل	S02-ZD-143=الشحنات داخل المملكة		general
+CM-CUS-009	zid	statements	core	تفعيل Google maps		ZD-C-103/decides:observation needed;ZD-C-103/responsible:stated only in general terms;ZD-C-103/boundary:searched, not found;ZD-C-103/reason:searched, not found	general
+CM-CUS-010	zid	statements	core			ZD-C-091/reason:searched, not found	general
+CM-CUS-011	zid	none-held					
+CM-CUS-012	zid	none-held					
+CM-CUS-013	zid	statements	core			ZD-C-091/reason:searched, not found	general
+CM-CUS-014	zid	none-held					
+CM-LOY-001	zid	statements	core	Merchant APIs > Marketing > Customer Wallets > Manager Customer Wallet | التسويق ← برامج الولاء ← محفظة العميل	ZD-C-019/decides/ZD-S-0667=الباقة الاحترافية; add-on for lower plans | ZD-C-019/decides/ZD-S-0668=compare-plans: starter, launch, growth, pro	ZD-C-019/reason:searched, not found	general
+CM-LOY-002	zid	none-held					
+CM-LOY-003	zid	statements	core		ZD-C-019/decides/ZD-S-0667=الباقة الاحترافية; add-on for lower plans	ZD-C-019/reason:searched, not found	general
+CM-LOY-004	zid	statements	core;extension-point	Merchant APIs > Marketing > Loyalty Program	ZD-C-090/decides/ZD-S-0386=plan Professional | ZD-C-090/decides/ZD-S-0929=compare-plans: starter, launch, growth, pro | ZD-C-090/decides/ZD-S-1034=الباقة الاحترافية	ZD-C-070/reason:searched, not found;ZD-C-090/responsible:stated only in general terms;ZD-C-090/reason:searched, not found	general
+CM-LOY-005	zid	statements	core			ZD-C-091/reason:searched, not found	general
+CM-LOY-006	zid	statements	core	خاصية الإهداء		ZD-C-101/decides:observation needed;ZD-C-101/responsible:stated only in general terms;ZD-C-101/boundary:searched, not found;ZD-C-101/reason:searched, not found	general
+CM-LOY-007	zid	none-held					
+CM-MKT-001	zid	statements	core;extension-point			ZD-C-070/reason:searched, not found;ZD-C-088/responsible:stated only in general terms;ZD-C-088/reason:searched, not found	general
+CM-MKT-002	zid	statements	core	Merchant APIs > Marketing > Coupons	ZD-C-088/decides/ZD-S-0520=staff permission | ZD-C-088/decides/ZD-S-0926=compare-plans: starter, launch, growth, pro	ZD-C-088/responsible:stated only in general terms;ZD-C-088/reason:searched, not found	general
+CM-MKT-003	zid	statements	core			ZD-C-088/responsible:stated only in general terms;ZD-C-088/reason:searched, not found	general
+CM-MKT-004	zid	none-held					
+CM-MKT-005	zid	statements	core;extension-point	Marketing Tools	ZD-C-106/decides/ZD-S-0466=staff permission | ZD-C-106/decides/ZD-S-0975=compare-plans: starter, launch, growth, pro	ZD-C-025/reason:searched, not found;ZD-C-070/reason:searched, not found;ZD-C-106/responsible:stated only in general terms;ZD-C-106/boundary:searched, not found;ZD-C-106/reason:searched, not found	general
+CM-MKT-006	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-MKT-007	zid	statements	core;extension-point			ZD-C-070/reason:searched, not found;ZD-C-098/reason:searched, not found;ZD-C-106/responsible:stated only in general terms;ZD-C-106/boundary:searched, not found;ZD-C-106/reason:searched, not found	general
+CM-MKT-008	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-MKT-009	zid	none-held					
+CM-MKT-010	zid	none-held					
+CM-MKT-011	zid	none-held					
+CM-MKT-012	zid	none-held					
+CM-MKT-013	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-MKT-014	zid	statements	core		ZD-C-106/decides/ZD-S-0974=compare-plans: starter, launch, growth, pro	ZD-C-106/responsible:stated only in general terms;ZD-C-106/boundary:searched, not found;ZD-C-106/reason:searched, not found	general
+CM-MKT-015	zid	none-held					
+CM-MKT-016	zid	statements	core	Merchant APIs > Products > Product Availability Notifications | إشعارات المخزون	ZD-C-087/decides/ZD-S-0924=compare-plans: starter, launch, growth, pro	ZD-C-087/responsible:stated only in general terms;ZD-C-087/reason:searched, not found	general
+CM-MKT-017	zid	none-held					
+CM-MKT-018	zid	statements	core		ZD-C-088/decides/ZD-S-0927=compare-plans: starter, launch, growth, pro	ZD-C-088/responsible:stated only in general terms;ZD-C-088/reason:searched, not found	general
+CM-MKT-019	zid	none-held					
+CM-MKT-020	zid	none-held					
+CM-MKT-021	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-MKT-022	zid	statements	core;extension-point	Zid Voice		ZD-C-070/reason:searched, not found;ZD-C-082/responsible:stated only in general terms;ZD-C-082/reason:searched, not found;ZD-C-097/responsible:stated only in general terms;ZD-C-097/reason:searched, not found;ZD-C-112/decides:searched, not found;ZD-C-112/responsible:searched, not found	general
+CM-NTF-001	zid	statements	core;own-service	الاعدادات > التواصل > رسائل الطلبات		ZD-C-097/responsible:stated only in general terms;ZD-C-097/reason:searched, not found	general
+CM-NTF-002	zid	statements	core		ZD-C-097/decides/ZD-S-0501=staff permission | ZD-C-097/decides/ZD-S-0954=compare-plans: starter, launch, growth, pro	ZD-C-097/responsible:stated only in general terms;ZD-C-097/reason:searched, not found	general
+CM-NTF-003	zid	none-held					
+CM-NTF-004	zid	statements	core;outside	صفحة الاشتراكات | واتساب زد	ZD-C-098/decides/ZD-S-0957=compare-plans: starter, launch, growth, pro | ZD-C-107/decides/ZD-S-0366=plan Rise | ZD-C-107/decides/ZD-S-0381=plan Professional	ZD-C-097/responsible:stated only in general terms;ZD-C-097/reason:searched, not found;ZD-C-098/reason:searched, not found	general
+CM-SUP-001	zid	statements	core;extension-point	Merchant APIs > Products > Product Questions & Answers | الاسئلة	ZD-C-086/decides/ZD-S-0921=compare-plans: starter, launch, growth, pro | ZD-C-086/decides/ZD-S-0922=compare-plans: starter, launch, growth, pro	ZD-C-070/reason:searched, not found;ZD-C-086/responsible:stated only in general terms	general
+CM-SUP-002	zid	none-held					
+CM-SUP-003	zid	none-held					
+CM-SUP-004	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-SUP-005	zid	statements	core;extension-point	Merchant APIs > Customers > Customer Portal Tickets | العملاء> دعم العملاء | بوابة خدمة العملاء الذاتية		ZD-C-070/reason:searched, not found;ZD-C-092/decides:observation needed;ZD-C-092/responsible:stated only in general terms	general
+CM-SUP-006	zid	none-held					
+CM-SUP-007	zid	none-held					
+CM-SUP-008	zid	statements	not-stated	صفحة إتمام الشراء > ضمان زد		ZD-C-092/decides:observation needed;ZD-C-092/responsible:stated only in general terms	

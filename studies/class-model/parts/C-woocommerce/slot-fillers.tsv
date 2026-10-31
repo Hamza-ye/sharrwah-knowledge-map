@@ -1,0 +1,38 @@
+cap_id	platform	filler	key
+CM-ORD-006	woocommerce	Stripe (Stripe Radar)	WC-C-115/where/WC-S-0864
+CM-PAY-002	woocommerce	Stripe	WC-C-010/decides/WC-S-0513
+CM-PAY-002	woocommerce	Stripe	WC-C-011/decides/WC-S-0518
+CM-PAY-002	woocommerce	card networks	WC-C-011/decides/WC-S-0523
+CM-PAY-003	woocommerce	Stripe	WC-C-009/where/WC-S-0504
+CM-PAY-004	woocommerce	Stripe	WC-C-001/decides/WC-S-0651
+CM-PAY-004	woocommerce	Stripe	WC-C-008/reason/WC-S-0527
+CM-PAY-005	woocommerce	Stripe	WC-C-007/decides/WC-S-0532
+CM-PAY-005	woocommerce	Stripe	WC-C-007/decides/WC-S-0533
+CM-PAY-006	woocommerce	Stripe	WC-C-008/where/WC-S-0855
+CM-PAY-011	woocommerce	Stripe	WC-C-005/where/WC-S-0910
+CM-PAY-011	woocommerce	Square	WC-C-005/where/WC-S-0912
+CM-PAY-011	woocommerce	Stripe	WC-C-001/decides/WC-S-0651
+CM-PAY-011	woocommerce	PayPal	WC-C-001/decides/WC-S-0651
+CM-PAY-013	woocommerce	PayPal	WC-C-003/where/WC-S-0607
+CM-PAY-013	woocommerce	PayPal	WC-C-005/where/WC-S-0911
+CM-PAY-015	woocommerce	Affirm	WC-C-004/decides/WC-S-5020
+CM-PAY-015	woocommerce	Afterpay	WC-C-004/decides/WC-S-5020
+CM-PAY-015	woocommerce	Klarna	WC-C-004/decides/WC-S-5020
+CM-PAY-026	woocommerce	Stripe (Stripe Capital)	WC-C-016/where/WC-S-0559
+CM-PAY-028	woocommerce	Xero	WC-C-109/boundary/WC-S-5491
+CM-PAY-009	woocommerce	the cardholder's bank (card issuer)	WC-C-116/decides/WC-S-5322
+CM-PAY-009	woocommerce	card networks	WC-C-116/reason/WC-S-5323
+CM-PAY-021	woocommerce	Stripe (Stripe Terminal)	WC-C-014/responsible/WC-S-0850
+CM-PAY-026	woocommerce	Celtic Bank	WC-C-016/responsible/WC-S-0560
+CM-PAY-004	woocommerce	Stripe	WC-C-048/where/WC-S-0504
+CM-PAY-004	woocommerce	Stripe (Connected Account Agreement)	WC-C-020/responsible/WC-S-0507
+CM-TAX-002	woocommerce	TaxJar	WC-C-055/where/WC-S-0957
+CM-TAX-002	woocommerce	Taxamo	WC-C-055/responsible/WC-S-0473
+CM-TAX-009	woocommerce	Internal Revenue Service (IRS)	WC-C-021/decides/WC-S-0860
+CM-SHP-001	woocommerce	EasyPost	WC-C-061/decides/WC-S-0651
+CM-SHP-002	woocommerce	EasyPost	WC-C-060/boundary/WC-S-0958
+CM-SHP-002	woocommerce	USPS	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	UPS	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	FedEx	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	DHL	WC-C-060/boundary/WC-S-0655
+CM-SHP-002	woocommerce	Canada Post	WC-C-060/boundary/WC-S-0655

@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://woocommerce.com/document/google-analytics-integration/",
+ "dir": "items/006-woocommerce.com",
+ "fetched_at": "2026-10-27T13:58:46Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/google-analytics-integration/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 55091,
+ "cited_in": [
+  "S-02 A2 WC-4a"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "573e5d4afed2a645a45e56668c38072521ee037e37f63426d281834059bda28d",
+ "raw_ext": "html"
+}

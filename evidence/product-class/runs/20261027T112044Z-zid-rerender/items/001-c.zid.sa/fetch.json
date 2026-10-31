@@ -1,0 +1,18 @@
+{
+ "n": 1,
+ "url": "https://c.zid.sa/ar-sa",
+ "dir": "items/001-c.zid.sa",
+ "fetched_at": "2026-10-27T11:20:44Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://c.zid.sa/ar-sa",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 1014,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261012T045101Z-q1-zid-sources"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "57188c17a8e79e3cf77617fb709bc05e58fd333a0858744d8d85552498b3e125",
+ "raw_ext": "html"
+}

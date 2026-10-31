@@ -1,0 +1,45 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-AIA-001	zid	statements	extension-point			ZD-C-042/where:searched, not found;ZD-C-042/reason:searched, not found;ZD-C-070/reason:searched, not found;ZD-C-112/decides:searched, not found;ZD-C-112/responsible:searched, not found	
+CM-AIA-002	zid	statements	core;outside	المحفظة الرقمية الخاصة بوكيل زد		ZD-C-025/reason:searched, not found	general
+CM-AIA-003	zid	none-held					
+CM-AIA-004	zid	none-held					
+CM-AIA-005	zid	none-held					
+CM-API-001	zid	statements	core			ZD-C-074/reason:searched, not found	general
+CM-API-002	zid	statements	core	https://oauth.zid.sa			general
+CM-API-003	zid	statements	core				general
+CM-API-004	zid	none-held					
+CM-API-005	zid	none-held					
+CM-API-006	zid	none-held					
+CM-API-007	zid	none-held					
+CM-API-008	zid	statements	core	Webhooks > APIs | circuit breaker			general
+CM-API-009	zid	none-held					
+CM-API-010	zid	statements	core				general
+CM-API-011	zid	none-held					
+CM-API-012	zid	none-held					
+CM-APP-001	zid	statements	core;extension-point	سوق التطبيقات> تطبيقاتي		ZD-C-070/reason:searched, not found;ZD-C-074/reason:searched, not found	general
+CM-APP-002	zid	statements	core;extension-point	category id 19 | سوق تطبيقات زد (definition)	ZD-C-070/decides/ZD-S-0467=staff permission	ZD-C-070/reason:searched, not found	general
+CM-APP-003	zid	statements	core			ZD-C-022/reason:searched, not found	general
+CM-APP-004	zid	statements	core	App Management > Events		ZD-C-022/reason:searched, not found;ZD-C-070/reason:searched, not found	general
+CM-APP-005	zid	none-held					
+CM-APP-006	zid	statements	core				general
+CM-APP-007	zid	statements	core;extension-point	iframe			general
+CM-APP-008	zid	none-held					
+CM-APP-009	zid	statements	core;extension-point		ZD-C-074/decides/ZD-S-0387=plan Professional | ZD-C-074/decides/ZD-S-0519=staff permission	ZD-C-074/reason:searched, not found	general
+CM-APP-010	zid	none-held					
+CM-APP-011	zid	none-held					
+CM-APP-012	zid	none-held					
+CM-AUT-001	zid	none-held					
+CM-DVT-001	zid	none-held					
+CM-DVT-002	zid	none-held					
+CM-DVT-003	zid	none-held					
+CM-DVT-004	zid	none-held					
+CM-DVT-005	zid	none-held					
+CM-PTN-001	zid	statements	not-stated			ZD-C-070/reason:searched, not found	
+CM-PTN-002	zid	none-held					
+CM-PTN-003	zid	statements	core	Payments → Payouts		ZD-C-022/reason:searched, not found;ZD-C-076/reason:searched, not found	general
+CM-PTN-004	zid	statements	core			ZD-C-061/reason:searched, not found	general
+CM-PTN-005	zid	statements	core;extension-point	النمو | زد نمو	ZD-C-115/decides/ZD-S-0470=staff permission | ZD-C-115/decides/ZD-S-1079=الباقة الإحترافية	ZD-C-115/boundary:searched, not found;ZD-C-115/responsible:observation needed;ZD-C-115/reason:searched, not found	general
+CM-PTN-006	zid	none-held					
+CM-PTN-007	zid	none-held					
+CM-PTN-008	zid	none-held					
+CM-PTN-009	zid	none-held					

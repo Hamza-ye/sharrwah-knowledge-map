@@ -1,0 +1,18 @@
+{
+ "n": 5,
+ "url": "https://martinfowler.com/eaaDev/TemporalProperty.html",
+ "dir": "items/005-martinfowler.com",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://martinfowler.com/eaaDev/TemporalProperty.html",
+ "content_type": "text/html",
+ "bytes": 8411,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "afb00c400c86f7a6fea7ff858efb0e90cea2ab2490810c83ccf7bf287df24e32",
+ "raw_ext": "html"
+}

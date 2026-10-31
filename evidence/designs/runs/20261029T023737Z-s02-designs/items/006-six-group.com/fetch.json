@@ -1,0 +1,18 @@
+{
+ "n": 6,
+ "url": "https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html",
+ "dir": "items/006-six-group.com",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://www.six-group.com/en/products-services/financial-information/market-reference-data/data-standards.html",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 26930,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a5b513d81bce0c6b413e20d2e61d4577d562938eb1e9675807466f630d054ba0",
+ "raw_ext": "html"
+}

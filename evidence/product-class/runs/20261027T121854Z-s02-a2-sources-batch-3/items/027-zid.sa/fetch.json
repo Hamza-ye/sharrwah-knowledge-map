@@ -1,0 +1,18 @@
+{
+ "n": 27,
+ "url": "https://zid.sa/ar/egypt/",
+ "dir": "items/027-zid.sa",
+ "fetched_at": "2026-10-27T12:19:08Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.sa/ar/egypt/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 48449,
+ "cited_in": [
+  "S-02: Zid's FAQ answers shown on a click (CAPTURE_EXPAND=1)"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "895608dea3aa8fb85bcc370249dd9b408d743389cfb58af1b17dbb837b4bb9af",
+ "raw_ext": "html"
+}

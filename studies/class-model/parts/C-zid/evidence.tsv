@@ -1,0 +1,352 @@
+cap_id	platform	supports	key	why
+CM-CHK-001	zid	core	ZD-C-099/where/ZD-S-0961	Dashboard > Settings: the checkout page's options
+CM-CHK-001	zid	core	ZD-C-099/boundary/ZD-S-0049	Zid's own API folder API's > Checkout
+CM-CHK-001	zid	shows	ZD-C-111/where/ZD-S-0996	Settings > checkout page > Zid Assurance, an option of the page
+CM-CHK-001	zid	shows	ZD-C-005/reason/ZD-S-0571	with Zid Pay the buyer completes the purchase in the store
+CM-CHK-002	zid	core	ZD-C-099/boundary/ZD-S-0049	Get Cart in Zid's API's > Checkout
+CM-CHK-002	zid	shows	ZD-C-100/decides/ZD-S-0965	the customer adds a product to the cart
+CM-CHK-007	zid	core	ZD-C-082/where/ZD-S-0006	Zid's own Merchant API folder Abandoned Carts
+CM-CHK-007	zid	core	ZD-C-082/boundary/ZD-S-0095	access scope abandoned_carts.read
+CM-CHK-007	zid	core	ZD-C-082/boundary/ZD-S-0064	webhook topic abandoned_cart.created
+CM-CHK-007	zid	core	ZD-I-0065	webhook topic abandoned_cart.completed, an entry no statement covers
+CM-CHK-007	zid	core	ZD-C-082/decides/ZD-S-0474	staff permission manage.store.abandonedcarts
+CM-CHK-007	zid	core	ZD-C-082/decides/ZD-S-0913	plan line Abandoned Cart Details, plans launch, growth, pro
+CM-CHK-007	zid	shows	ZD-C-082/decides/ZD-S-1016	the feature isn't in the free plans
+CM-CHK-007	zid	shows	ZD-C-082/decides/ZD-S-1017	some indicators in the professional and large business plans only
+CM-CHK-008	zid	core	ZD-C-005/decides/ZD-S-0362	plan Rise card: Apple Pay for faster checkout
+CM-CHK-009	zid	core	ZD-C-100/where/ZD-S-0962	Zid's own settings page خصائص الطلبات والمنتجات
+CM-CHK-009	zid	core	ZD-I-0138	settings entry: the page's orders tab, no statement covers it
+CM-CHK-009	zid	core	ZD-C-100/decides/ZD-S-0963	plan line Custom Fields for products or orders, plans growth and pro
+CM-ORD-001	zid	core	ZD-C-080/where/ZD-S-0004	Zid's own Merchant API folder Orders
+CM-ORD-001	zid	core	ZD-C-080/boundary/ZD-S-0905	access scope orders.read
+CM-ORD-001	zid	core	ZD-I-0095	access scope orders.read_write
+CM-ORD-001	zid	core	ZD-C-080/boundary/ZD-S-0057	webhook topic order.create
+CM-ORD-001	zid	core	ZD-C-080/where/ZD-S-0906	orders created by customers in the storefront or merchants in the dashboard
+CM-ORD-001	zid	core	ZD-I-0507	staff permission list.store.orders
+CM-ORD-001	zid	core	ZD-I-0265	plan line Filter Orders
+CM-ORD-001	zid	core	ZD-I-0262	plan line Customize Order Table Columns
+CM-ORD-001	zid	core	ZD-I-0260	plan line View Order Sequence
+CM-ORD-001	zid	core	ZD-I-0272	plan line Order Update History
+CM-ORD-001	zid	core	ZD-I-0273	plan line Delayed Orders
+CM-ORD-001	zid	core	ZD-I-0274	plan line Long-Term Order Management
+CM-ORD-002	zid	core	ZD-C-080/decides/ZD-S-0518	staff permission edit.store.orders
+CM-ORD-002	zid	core	ZD-I-0284	plan line Unlimited Order Editing
+CM-ORD-002	zid	shows	ZD-C-054/decides/ZD-S-1007	editing an order issues credit and debit notes
+CM-ORD-003	zid	core	ZD-C-080/decides/ZD-S-0907	Orders API operation Change Order Status
+CM-ORD-003	zid	core	ZD-I-0058	webhook topic order.status.update
+CM-ORD-003	zid	core	ZD-I-0264	plan line Order Status
+CM-ORD-003	zid	core	ZD-I-0266	plan line Change Order Statuses
+CM-ORD-003	zid	core	ZD-I-0267	plan line Bulk Change Order Status
+CM-ORD-003	zid	core	ZD-I-0278	plan line Custom Order Status
+CM-ORD-003	zid	outside	ZD-C-080/decides/ZD-S-1010	the shipping company sets the status جاري التوصيل
+CM-ORD-003	zid	shows	ZD-C-080/boundary/ZD-S-1011	the status جاهز; linked carriers are told
+CM-ORD-004	zid	shows	ZD-C-054/boundary/ZD-S-0833	orders that have been cancelled
+CM-ORD-004	zid	shows	ZD-C-054/decides/ZD-S-1007	cancelling an order issues notes
+CM-ORD-005	zid	core	ZD-C-080/decides/ZD-S-0904	plan line Draft Orders, every plan
+CM-ORD-005	zid	core	ZD-C-080/boundary/ZD-S-0908	API endpoint POST drafts
+CM-ORD-005	zid	core	ZD-C-080/where/ZD-S-0906	merchants create orders from the dashboard
+CM-ORD-005	zid	core	ZD-I-0530	staff permission create.store.orders
+CM-ORD-005	zid	core	ZD-I-0531	staff permission list.store.order.drafts
+CM-ORD-006	zid	core	ZD-C-007/where/ZD-S-0580	Fraud Shield on Zid's Payments page watches transactions
+CM-ORD-006	zid	core	ZD-C-007/decides/ZD-S-0374	plan Growth card: fraud protection
+CM-ORD-008	zid	core	ZD-C-052/where/ZD-S-0821	Dashboard > Settings > invoice settings
+CM-ORD-008	zid	core	ZD-C-052/decides/ZD-S-0822	plan line Invoice Printing, every plan
+CM-ORD-008	zid	core	ZD-C-052/decides/ZD-S-0823	setting: send order invoices to customers, else an order summary
+CM-ORD-008	zid	shows	ZD-C-052/boundary/ZD-S-0825	the merchant may stop them when using its own ERP
+CM-ORD-008	zid	shows	ZD-C-052/responsible/ZD-S-0824	the merchant faces the Ministry of Commerce's fines
+CM-ORD-010	zid	core	ZD-C-104/where/ZD-S-0970	Settings > Store > official working hours
+CM-ORD-011	zid	core	ZD-C-080/decides/ZD-S-0903	plan line Order Tags, plans launch, growth, pro
+CM-ORD-011	zid	core	ZD-I-0003	API resource Merchant APIs > Orders > Order Tags
+CM-ORD-013	zid	core	ZD-I-0271	plan line Order Notes
+CM-ORD-013	zid	core	ZD-C-061/boundary/ZD-S-0852	Orders API operation Add Order Comment
+CM-ORD-015	zid	core	ZD-C-028/where/ZD-S-0722	webhook topic order.payment_status.update
+CM-ORD-015	zid	core	ZD-C-028/decides/ZD-S-0723	plan line Payment Status, every plan
+CM-ORD-015	zid	core	ZD-C-028/decides/ZD-S-0724	plan line Bulk Payment Status Update, every plan
+CM-ORD-015	zid	shows	ZD-C-028/boundary/ZD-S-0725	unpaid includes pending, refunded and voided
+CM-PAY-001	zid	core	ZD-C-012/where/ZD-S-0615	own API folder Merchant APIs > Store Settings, List Payment Methods
+CM-PAY-001	zid	core	ZD-C-012/boundary/ZD-S-0619	own endpoint GET /v1/managers/store/payment-methods, account.read
+CM-PAY-001	zid	core	ZD-C-012/boundary/ZD-S-0119	own endpoint GET /v1/managers/store/payment-options, third_payment_read
+CM-PAY-001	zid	core	ZD-C-012/decides/ZD-S-0616	plan line Various Payment Methods / طرق الدفع المتنوعة
+CM-PAY-001	zid	core	ZD-C-012/decides/ZD-S-0617	plan line Advanced Payment Methods / طرق الدفع المتقدمة
+CM-PAY-001	zid	core	ZD-C-011/decides/ZD-S-0610	Settings > Payment methods, where a gateway is activated
+CM-PAY-001	zid	core	ZD-C-004/where/ZD-S-0557	the admin's إدارة طرق الدفع (payment methods management)
+CM-PAY-001	zid	shows	ZD-C-012/decides/ZD-S-0618	the list of the store's payment methods
+CM-PAY-001	zid	shows	ZD-C-012/boundary/ZD-S-0620	POS payment methods are not returned by the API
+CM-PAY-002	zid	core	ZD-C-001/where/ZD-S-0527	activation from the sidebar's المدفوعات, تفعيل الدفع الالكتروني
+CM-PAY-002	zid	core	ZD-C-001/decides/ZD-S-0361	plan Rise card: Zid Payments gateway to accept Mada, Visa, and Mastercard
+CM-PAY-002	zid	core	ZD-I-0493	staff permission manage.zidpay.setting, إدارة إعدادات زدباي
+CM-PAY-002	zid	core	ZD-C-005/where/ZD-S-0563	networks enabled per store from إدارة زد باي
+CM-PAY-002	zid	core	ZD-C-005/boundary/ZD-S-0569	own endpoint returns the methods available through ZidPay
+CM-PAY-002	zid	own-service	ZD-C-001/responsible/ZD-S-0533	Zid Pay's terms are the contract between its users and شركة زد
+CM-PAY-002	zid	own-service	ZD-C-009/where/ZD-S-0589	Zid Pay a service through providers on a platform belonging to Zid
+CM-PAY-002	zid	shows	ZD-C-001/decides/ZD-S-0530	Zid Pay available to merchants in Saudi Arabia and Kuwait
+CM-PAY-002	zid	shows	ZD-C-001/decides/ZD-S-0529	only entities allowed to pay and receive money in their country may subscribe
+CM-PAY-002	zid	shows	ZD-C-001/responsible/ZD-S-0532	the merchant alone responsible for the legal requirements
+CM-PAY-002	zid	shows	ZD-C-005/reason/ZD-S-0571	with Zid Pay the buyer completes the purchase in the store
+CM-PAY-002	zid	shows	ZD-C-007/decides/ZD-S-0581	Zid Pay may suspend the service on the providers' recommendation
+CM-PAY-003	zid	core	ZD-C-001/where/ZD-S-0527	the activation request starts from المدفوعات > تفعيل الدفع الالكتروني
+CM-PAY-003	zid	core	ZD-C-001/decides/ZD-S-0531	a published product matching the activity, before the activation request
+CM-PAY-003	zid	outside	ZD-C-001/decides/ZD-S-0528	requirements given to the payment gateway, which approves the account
+CM-PAY-003	zid	outside	ZD-C-009/decides/ZD-S-0591	the verification request is in the provider's name
+CM-PAY-003	zid	extension-point	ZD-C-001/boundary/ZD-S-0534	the provider onboards the merchant and shares its keys via merchant_linked
+CM-PAY-003	zid	extension-point	ZD-C-001/boundary/ZD-S-0535	redirection to the provider's login page, with storeId
+CM-PAY-003	zid	shows	ZD-C-001/decides/ZD-S-0529	who may subscribe to Zid Pay
+CM-PAY-003	zid	shows	ZD-C-001/responsible/ZD-S-0532	the merchant alone responsible for meeting the requirements
+CM-PAY-003	zid	shows	ZD-C-001/reason/ZD-S-0536	the expected number of transactions, asked to secure the merchant's right
+CM-PAY-003	zid	shows	ZD-C-035/boundary/ZD-S-0757	Zid's endpoint for the store's KYC details, core in A's CM-ACC-004
+CM-PAY-003	zid	shows	ZD-C-038/decides/ZD-S-0775	Nafath required to activate Zid Pay, core in A's CM-TRU-002
+CM-PAY-004	zid	outside	ZD-C-009/where/ZD-S-0589	Zid Pay runs through payment service providers
+CM-PAY-004	zid	outside	ZD-C-009/decides/ZD-S-0590	the provider evaluates which digital products are accepted
+CM-PAY-004	zid	outside	ZD-C-009/responsible/ZD-S-0592	the payment service provider companies provide the service
+CM-PAY-004	zid	outside	ZD-C-005/responsible/ZD-S-0567	the networks are subject to the service provider's terms
+CM-PAY-004	zid	shows	ZD-C-009/responsible/ZD-S-0593	Zid Pay may provide the service by subcontracting
+CM-PAY-004	zid	shows	ZD-C-009/responsible/ZD-S-0594	Zid Pay not liable for a failure of the banking system
+CM-PAY-004	zid	extension-point	ZD-C-009/boundary/ZD-S-0595	an API contract for partners to implement
+CM-PAY-004	zid	extension-point	ZD-C-010/where/ZD-S-0597	for PSPs who integrate with Zid Payments
+CM-PAY-004	zid	extension-point	ZD-C-010/decides/ZD-S-0598	the provider chooses direct or embedded payment checkout
+CM-PAY-004	zid	extension-point	ZD-C-010/decides/ZD-S-0599	thirdPartyProviderId assigned by Zid Payments to the partner
+CM-PAY-004	zid	extension-point	ZD-C-010/boundary/ZD-S-0600	Zid draws the form and submits card info to the provider's API
+CM-PAY-004	zid	extension-point	ZD-C-010/boundary/ZD-S-0601	the webhook endpoint providers send events to
+CM-PAY-004	zid	extension-point	ZD-C-010/boundary/ZD-S-0602	a domain association file per country the provider operates in
+CM-PAY-004	zid	extension-point	ZD-C-010/boundary/ZD-S-0603	Zid Payments sends execute payment to the provider
+CM-PAY-004	zid	extension-point	ZD-C-005/boundary/ZD-S-0570	supportedNetworks, the provider-side form's networks
+CM-PAY-004	zid	shows	ZD-C-010/where/ZD-S-0596	Zid Payments' base URLs at zidpay.org
+CM-PAY-005	zid	core	ZD-C-003/where/ZD-S-0544	the account statement page, from the main page
+CM-PAY-005	zid	core	ZD-C-003/where/ZD-S-0545	the balance moves daily to pending, for deposit to the bank account
+CM-PAY-005	zid	core	ZD-I-0527	staff permission list.zidpay.deposits, قائمة كشف الحساب
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0546	amounts collected three times a week (Saudi Arabia)
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0547	collected once over the 100 riyal minimum (Saudi Arabia)
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0548	a 3 riyal fee on each deposit
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0549	settlement and deposits on Sunday, Tuesday and Thursday
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0550	amounts collected daily (Kuwait)
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0551	transferred once over 1 Kuwaiti dinar (Kuwait)
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0552	deposited to the bank account daily, Sunday to Thursday
+CM-PAY-005	zid	core	ZD-C-003/decides/ZD-S-0553	funds deposited every 2-3 days with a report
+CM-PAY-005	zid	core	ZD-C-004/where/ZD-S-0557	bank accounts under إدارة طرق الدفع
+CM-PAY-005	zid	core	ZD-C-004/decides/ZD-S-0558	choose the bank account that receives the deposits
+CM-PAY-005	zid	core	ZD-C-004/decides/ZD-S-0559	the identity must match the bank account
+CM-PAY-005	zid	core	ZD-C-004/decides/ZD-S-0560	all Saudi banks supported
+CM-PAY-005	zid	core	ZD-C-004/decides/ZD-S-0561	Saudi banks and some Gulf banks to choose from
+CM-PAY-005	zid	own-service	ZD-C-003/responsible/ZD-S-0554	Zid Pay reviews the data and accepts or rejects before the deposit
+CM-PAY-005	zid	own-service	ZD-C-003/responsible/ZD-S-0555	Zid Pay and the provider deduct fees and credit the merchant's balance
+CM-PAY-005	zid	own-service	ZD-C-004/responsible/ZD-S-0562	deposits settled to the bank data given when registering with Zid Pay
+CM-PAY-005	zid	shows	ZD-C-003/responsible/ZD-S-0556	on disabling Zid Pay, the balance is transferred to the bank account
+CM-PAY-006	zid	own-service	ZD-C-007/decides/ZD-S-0582	Zid Pay may keep a reserve sized by high-risk transactions
+CM-PAY-006	zid	own-service	ZD-C-007/decides/ZD-S-0583	Zid Pay may hold payments indefinitely if suspicious
+CM-PAY-006	zid	own-service	ZD-C-007/decides/ZD-S-0581	on the providers' recommendation, Zid Pay may hold funds or extend the hold
+CM-PAY-006	zid	own-service	ZD-C-037/responsible/ZD-S-0772	Zid Pay may hold payments and ask for supporting documents
+CM-PAY-007	zid	core	ZD-C-006/where/ZD-S-0572	the Learn more icon shows the fees by plan
+CM-PAY-007	zid	core	ZD-C-006/decides/ZD-S-0573	Zid Pay's fee set by the store's Zid plan
+CM-PAY-007	zid	core	ZD-C-006/decides/ZD-S-0575	transaction fees per plan: Rise, Growth, Professional
+CM-PAY-007	zid	core	ZD-C-006/decides/ZD-S-0574	a 200 riyal cap on mada's rate
+CM-PAY-007	zid	own-service	ZD-C-006/responsible/ZD-S-0578	Zid Pay and the providers may deduct a token fee
+CM-PAY-007	zid	shows	ZD-C-006/decides/ZD-S-0576	a worked example: mada on the Growth plan
+CM-PAY-007	zid	shows	ZD-C-006/decides/ZD-S-0577	Zid may change the commission at any time
+CM-PAY-007	zid	shows	ZD-C-006/responsible/ZD-S-0579	the merchant mustn't charge the fees or VAT to the cardholder
+CM-PAY-009	zid	shows	ZD-C-007/responsible/ZD-S-0584	the merchant repays chargebacks Zid Pay deducted when the dispute is lost
+CM-PAY-009	zid	shows	ZD-C-007/responsible/ZD-S-0585	disputes and chargebacks are the merchant's liability
+CM-PAY-009	zid	shows	ZD-C-007/decides/ZD-S-0581	service suspended on repeated unjustified chargebacks
+CM-PAY-011	zid	core	ZD-C-011/where/ZD-S-0604	admin section المدفوعات > بوابات الدفع الأُخرى
+CM-PAY-011	zid	core	ZD-C-011/decides/ZD-S-0610	Tap activated from Settings > Payment methods (Gulf users)
+CM-PAY-011	zid	core	ZD-C-011/boundary/ZD-S-0613	the ID registered at Tap entered and verified through Nafath
+CM-PAY-011	zid	core	ZD-C-011/boundary/ZD-S-0614	the linking keys entered
+CM-PAY-011	zid	outside	ZD-C-011/responsible/ZD-S-0611	Tap, a gateway licensed by the central bank, receives the payments
+CM-PAY-011	zid	shows	ZD-C-011/decides/ZD-S-0605	Paymob for merchants in the UAE, Saudi Arabia and Oman
+CM-PAY-011	zid	shows	ZD-C-011/decides/ZD-S-0606	amwal pay for merchants in Oman
+CM-PAY-011	zid	shows	ZD-C-011/decides/ZD-S-0607	Tap for merchants in six Gulf countries
+CM-PAY-011	zid	shows	ZD-C-011/decides/ZD-S-0608	activating Zid Pay disables the other gateway
+CM-PAY-011	zid	shows	ZD-C-011/decides/ZD-S-0609	no other gateway with Zid Pay but Tamara and Tabby
+CM-PAY-011	zid	shows	ZD-C-011/responsible/ZD-S-0612	Zid not responsible for the gateways' or banks' performance
+CM-PAY-012	zid	core	ZD-C-005/decides/ZD-S-0362	plan Rise card: Enable Apple Pay for faster checkout
+CM-PAY-012	zid	core	ZD-C-005/decides/ZD-S-0565	the merchant enables Apple Pay (mada), (Visa or Mastercard) or both
+CM-PAY-012	zid	shows	ZD-C-005/decides/ZD-S-0566	Apple Pay in Kuwait's network lineup
+CM-PAY-012	zid	shows	ZD-C-005/responsible/ZD-S-0568	a merchant using Apple Pay is bound by Apple's terms
+CM-PAY-012	zid	shows	ZD-C-012/decides/ZD-S-0618	Apple Pay and Samsung Pay among the payment methods
+CM-PAY-015	zid	core	ZD-C-013/where/ZD-S-0621	admin section لوحة التحكم > المدفوعات > الدفع لاحقاً
+CM-PAY-015	zid	core	ZD-C-012/decides/ZD-S-0617	plan line Advanced Payment Methods: Tabby, Tamara
+CM-PAY-015	zid	core	ZD-C-012/decides/ZD-S-0616	plan line Various Payment Methods, instalments among them
+CM-PAY-015	zid	core	ZD-C-013/boundary/ZD-S-0628	a Tabby account requested automatically from the dashboard
+CM-PAY-015	zid	outside	ZD-C-013/responsible/ZD-S-0625	Tabby splits payments in 4 and pays the stores directly
+CM-PAY-015	zid	outside	ZD-C-013/decides/ZD-S-0624	MIS pay offers payment in 3 monthly instalments
+CM-PAY-015	zid	shows	ZD-C-013/decides/ZD-S-0622	Madfu needs the merchant's account with them
+CM-PAY-015	zid	shows	ZD-C-013/decides/ZD-S-0623	Emkan pay later activated with Zid Pay
+CM-PAY-015	zid	shows	ZD-C-013/responsible/ZD-S-0626	Tamara's keys sent by Tamara after the contract
+CM-PAY-015	zid	shows	ZD-C-013/boundary/ZD-S-0627	MIS pay's App ID and App Secret to link it
+CM-PAY-015	zid	shows	ZD-C-011/decides/ZD-S-0609	Tamara and Tabby the only gateways beside Zid Pay
+CM-PAY-016	zid	core	ZD-I-0371	plan Starter card: Basic payment methods (bank transfer, cash on delivery)
+CM-PAY-016	zid	shows	ZD-C-012/decides/ZD-S-0618	COD with delivery companies and bank transfer among the methods
+CM-PAY-016	zid	shows	ZD-C-014/boundary/ZD-S-0634	payment_method values Cash On Delivery, Credit Card, Bank Transfer
+CM-PAY-017	zid	core	ZD-C-005/decides/ZD-S-0564	KNET among Zid Pay's networks, for institutions and companies only
+CM-PAY-017	zid	core	ZD-C-005/decides/ZD-S-0566	K-Net in Kuwait's network lineup
+CM-PAY-017	zid	shows	ZD-C-012/decides/ZD-S-0618	سداد among the payment methods
+CM-PAY-019	zid	core	ZD-C-063/where/ZD-S-0857	admin route الاعدادات > عام > قيود الشحن والدفع
+CM-PAY-019	zid	core	ZD-C-063/decides/ZD-S-0858	available on the Growth, Professional and Large Business plans
+CM-PAY-019	zid	core	ZD-C-063/reason/ZD-S-0860	a payment method restricted by the customer's cancelled orders
+CM-PAY-019	zid	shows	ZD-C-063/decides/ZD-S-0859	up to 3 payment options
+CM-PAY-020	zid	core	ZD-C-002/where/ZD-S-0537	admin section المدفوعات > العمليات
+CM-PAY-020	zid	core	ZD-I-0501	staff permission list.zidpay.transactions, قائمة العمليات
+CM-PAY-020	zid	core	ZD-C-002/where/ZD-S-0538	refund to the customer from لوحة التحكم > المدفوعات > العمليات
+CM-PAY-020	zid	core	ZD-I-0521	staff permission refund.zidpay.transactions, استرداد المبالغ
+CM-PAY-020	zid	core	ZD-C-002/decides/ZD-S-0540	a staff permission for full or partial refunds
+CM-PAY-020	zid	own-service	ZD-C-002/decides/ZD-S-0541	the refund needs enough balance in the merchant's Zid Pay account
+CM-PAY-020	zid	own-service	ZD-C-002/responsible/ZD-S-0543	using the service authorizes Zid to execute the operation
+CM-PAY-020	zid	extension-point	ZD-C-002/boundary/ZD-S-0055	refund request sent to the provider's URL
+CM-PAY-020	zid	extension-point	ZD-C-002/boundary/ZD-S-0085	provider webhook types payment_paid, refund_status_changed
+CM-PAY-020	zid	shows	ZD-C-002/decides/ZD-S-0539	no refund after 30 days from the purchase
+CM-PAY-020	zid	shows	ZD-C-002/responsible/ZD-S-0542	the merchant alone responsible for its transactions
+CM-PAY-021	zid	shows	ZD-C-012/boundary/ZD-S-0620	the POS has its own active payment methods
+CM-PAY-021	zid	shows	ZD-C-108/where/ZD-S-0978	POS app settings: link a payment device, core in E's CM-POS-002
+CM-PAY-026	zid	own-service	ZD-C-023/where/ZD-S-0692	Zid Financing, an electronic service Zid provides, repaid from Zid Pay sales
+CM-PAY-026	zid	own-service	ZD-C-023/responsible/ZD-S-0699	Zid Pay deducts the repayments
+CM-PAY-026	zid	core	ZD-I-0391	plan Growth card: Instant financing with Zid Financing
+CM-PAY-026	zid	core	ZD-I-0505	staff permission manage.zid.financing, إدارة تمويل زد
+CM-PAY-026	zid	outside	ZD-C-023/responsible/ZD-S-0698	the financing party provides the financing
+CM-PAY-026	zid	outside	ZD-C-023/decides/ZD-S-0696	acceptance and the offer's price at the financing party's discretion
+CM-PAY-026	zid	shows	ZD-C-023/decides/ZD-S-0693	for Saudi merchants only
+CM-PAY-026	zid	shows	ZD-C-023/decides/ZD-S-0694	Zid Pay must be activated and approved
+CM-PAY-026	zid	shows	ZD-C-023/decides/ZD-S-0695	on every plan but Lite
+CM-PAY-026	zid	shows	ZD-C-023/decides/ZD-S-0697	Zid Pay can't be cancelled until the repayment is complete
+CM-PAY-026	zid	shows	ZD-C-023/boundary/ZD-S-0700	Zid shares the merchant's sales data with the financing party
+CM-PAY-026	zid	shows	ZD-C-023/boundary/ZD-S-0701	the minimum monthly repayment set by the financing contract
+CM-PAY-028	zid	extension-point	ZD-I-0440	App Market category المالية والمدفوعات › المحاسبة والفوترة
+CM-PAY-028	zid	extension-point	ZD-I-0443	App Market category الربط مع الأنظمة (ERP/POS)
+CM-PAY-029	zid	core	ZD-C-014/where/ZD-S-0629	COD enabled or cancelled from لوحة التحكم > اللوجستيات
+CM-PAY-029	zid	core	ZD-C-014/decides/ZD-S-0630	COD set per shipping company
+CM-PAY-029	zid	core	ZD-C-014/decides/ZD-S-0632	plan line Cash on Delivery / الدفع عند الاستلام
+CM-PAY-029	zid	core	ZD-C-014/decides/ZD-S-0631	plan line Block Cash on Delivery / حظر الدفع عند الاستلام
+CM-PAY-029	zid	core	ZD-C-015/decides/ZD-S-0637	plan line Cash on Delivery Collection / تحصيل الدفع عند الاستلام
+CM-PAY-029	zid	core	ZD-C-015/responsible/ZD-S-0641	Zid collects the amount from the customer on delivery and transfers it
+CM-PAY-029	zid	core	ZD-C-015/where/ZD-S-0636	Zid transfers the collected amounts to the merchant's wallet (direct shipping)
+CM-PAY-029	zid	core	ZD-C-015/decides/ZD-S-0640	COD amounts collected by Zid Ship and transferred within two weeks
+CM-PAY-029	zid	outside	ZD-C-014/reason/ZD-S-0635	COD a service provided by a third party
+CM-PAY-029	zid	shows	ZD-C-014/responsible/ZD-S-0633	the merchant fully responsible for COD services
+CM-PAY-029	zid	shows	ZD-C-015/decides/ZD-S-0638	a separate COD fee deducted before the transfer
+CM-PAY-029	zid	shows	ZD-C-015/decides/ZD-S-0639	COD Limit up to $1000 (3750 SAR)
+CM-PAY-029	zid	shows	ZD-C-015/responsible/ZD-S-0642	the merchant not owed amounts directly by carriers or customers
+CM-PAY-030	zid	core	ZD-C-016/where/ZD-S-0643	the bank account's details shown on the payment page
+CM-PAY-030	zid	core	ZD-C-016/decides/ZD-S-0645	plan line Bank Transfer Payment / الدفع بالتحويل البنكي
+CM-PAY-030	zid	core	ZD-C-016/decides/ZD-S-0644	Zid activates the Bank Transfer service on the merchant's request
+CM-PAY-030	zid	shows	ZD-C-016/responsible/ZD-S-0646	the merchant fully responsible for managing bank transfer
+CM-PAY-030	zid	shows	ZD-C-016/responsible/ZD-S-0647	the merchant bound by the bank's terms
+CM-PAY-030	zid	shows	ZD-C-016/boundary/ZD-S-0634	payment_method value Bank Transfer
+CM-PAY-032	zid	core	ZD-C-008/where/ZD-S-0586	admin section الخدمات > المدفوعات > روابط الدفع
+CM-PAY-032	zid	core	ZD-C-008/decides/ZD-S-0587	links listed and exported; created from a new manual order
+CM-PAY-032	zid	shows	ZD-C-008/boundary/ZD-S-0588	payment_link a built-in value of the payment options
+CM-PAY-029	zid	shows	ZD-C-014/boundary/ZD-S-0634	payment_method value Cash On Delivery, under ZD-C-014
+CM-PAY-002	zid	own-service	ZD-C-037/where/ZD-S-0765	Zid Pay may not be used in activities or with entities Zid Pay prohibits
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0770	prohibited or restricted activities updated at any time, with notice
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0766	prohibited: dealings with sanctioned countries (Saudi Arabia)
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0768	prohibited: dealings with sanctioned countries (Kuwait)
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0771	English text: dealings with sanctioned countries or entities
+CM-PAY-002	zid	shows	ZD-C-037/decides/ZD-S-0767	prohibited: merchants or beneficiaries on sanctions lists
+CM-PAY-002	zid	shows	ZD-C-037/responsible/ZD-S-0773	prohibited: financial services without the Central Bank's approval
+CM-PAY-006	zid	shows	ZD-C-037/decides/ZD-S-0769	deposits stopped for accounts receiving large sums from abroad
+CM-PAY-006	zid	own-service	ZD-C-024/responsible/ZD-S-0708	Zid's company may hold Mazeed funds where operations are suspected
+CM-PAY-006	zid	own-service	ZD-C-024/responsible/ZD-S-0709	Zid's company may hold funds to settle pending operations on cancelling Mazeed
+CM-PAY-005	zid	core	ZD-C-024/where/ZD-S-0702	Mazeed's financial dues reached at لوحة التحكم > منصات البيع > مزيد
+CM-PAY-005	zid	own-service	ZD-C-024/decides/ZD-S-0704	Zid's company transfers Mazeed dues to the bank account on the 30th
+CM-PAY-005	zid	core	ZD-C-024/decides/ZD-S-0706	Mazeed collections weekly, every Tuesday
+CM-PAY-005	zid	core	ZD-C-024/decides/ZD-S-0707	Mazeed collections monthly, with sales of 500 riyals or more
+CM-PAY-005	zid	shows	ZD-C-024/where/ZD-S-0703	Mazeed's payment gateway its own, in the app only
+CM-PAY-005	zid	shows	ZD-C-024/decides/ZD-S-0705	Zid sets the share taken from each Mazeed purchase by sector
+CM-PAY-005	zid	shows	ZD-C-024/boundary/ZD-S-0710	the merchant issues an invoice for the dues on the 15th and 30th
+CM-PAY-005	zid	shows	ZD-C-024/boundary/ZD-S-0711	the invoices attached are B2B tax invoices
+CM-ORD-008	zid	core	ZD-C-054/where/ZD-S-0832	Merchant API Orders operation List Order Credit Notes
+CM-ORD-008	zid	core	ZD-C-054/boundary/ZD-S-0833	credit notes issued for cancelled or modified orders, endpoint
+CM-ORD-008	zid	core	ZD-C-054/boundary/ZD-S-0834	the endpoint's scope orders.read
+CM-ORD-008	zid	core	ZD-C-054/decides/ZD-S-1007	credit and debit notes issued and sent on any order edit or cancellation
+CM-ORD-008	zid	shows	ZD-C-054/decides/ZD-S-1008	notes not sent to customers of a store with VAT settings on
+CM-ORD-008	zid	shows	ZD-C-054/reason/ZD-S-1009	the original invoice unchanged, by ZATCA's rules
+CM-TAX-001	zid	core	ZD-C-051/where/ZD-S-0814	VAT activated from Settings > اعدادات الضرائب
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0817	a country added with its VAT rate
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0815	plan line Invoice & Tax Settings (growth, pro)
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0816	plan line Tax-Applicable Countries (growth, pro)
+CM-TAX-001	zid	core	ZD-C-051/decides/ZD-S-0370	plan Growth card: Calculate and display VAT
+CM-TAX-001	zid	core	ZD-I-0488	staff permission manage.store.vat.settings, إدارة إعدادات الضريبة
+CM-TAX-001	zid	core	ZD-C-051/boundary/ZD-S-0819	own API returns the store's VAT settings (third_vat_read)
+CM-TAX-001	zid	shows	ZD-C-051/responsible/ZD-S-0818	the merchant declares it has read the VAT guide
+CM-TAX-003	zid	core	ZD-C-051/decides/ZD-S-0817	the country's tax number and VAT certificate entered in tax settings
+CM-TAX-003	zid	shows	ZD-C-051/reason/ZD-S-0820	Saudi stores must show the VAT certificate, by the e-store tax regulation
+CM-TAX-004	zid	extension-point	ZD-I-0441	App Market category المالية والمدفوعات › الضريبة والزكاة
+CM-TAX-007	zid	core	ZD-C-053/where/ZD-S-0826	setting الربط مع منصة فاتورة (ZATCA) in the dashboard's settings
+CM-TAX-007	zid	core	ZD-C-053/boundary/ZD-S-0829	links the store directly with ZATCA, e-invoicing phase two
+CM-TAX-007	zid	core	ZD-C-053/decides/ZD-S-0827	the store linked to Fatoora free, e-invoices sent
+CM-TAX-007	zid	shows	ZD-C-053/decides/ZD-S-0828	linking with the cashier available
+CM-TAX-007	zid	shows	ZD-C-053/boundary/ZD-S-0830	the merchant creates a device activation code in Fatoora
+CM-TAX-007	zid	shows	ZD-C-053/reason/ZD-S-0831	the aim: compliance with e-invoicing phase two
+CM-TAX-008	zid	core	ZD-C-060/responsible/ZD-S-0842	refused customs duties charged to the merchant from the Zid wallet (Global Shipping)
+CM-SHP-001	zid	core	ZD-C-062/where/ZD-S-0855	shipping settings: restrictions per product or region, carrier priority, free shipping
+CM-SHP-001	zid	core	ZD-C-060/where/ZD-S-0836	admin route لوحة التحكم > اللوجستيات > طرق الشحن
+CM-SHP-001	zid	core	ZD-C-062/where/ZD-S-0024	Merchant API folder Shipping, List Store Shipping Methods
+CM-SHP-001	zid	core	ZD-C-062/boundary/ZD-S-0102	access scope shipping.read on GET delivery-options
+CM-SHP-001	zid	core	ZD-C-063/where/ZD-S-0857	admin route قيود الشحن والدفع, naming shipping restrictions
+CM-SHP-001	zid	core	ZD-C-063/decides/ZD-S-0858	plans on which قيود الشحن و الدفع is available
+CM-SHP-001	zid	shows	ZD-C-062/boundary/ZD-S-0856	field delivery_option_id
+CM-SHP-001	zid	shows	ZD-C-033/decides/ZD-S-0745	a country's currency activated activates shipping to it
+CM-SHP-002	zid	core	ZD-C-060/where/ZD-S-0835	direct shipping, activated from the dashboard, fees from the merchant's wallet
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0838	label prices differ with the Zid plan
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0365	plan card Rise: shipping rates from 11 SAR
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0380	plan card Professional: shipping rates from 8.5 SAR
+CM-SHP-002	zid	core	ZD-C-060/decides/ZD-S-0468	staff permission manage.zidship.settings
+CM-SHP-002	zid	core	ZD-I-0504	staff permission view.zidship.reports, an entry no statement covers
+CM-SHP-002	zid	core	ZD-I-0522	staff permission manage.zidship.payments, an entry no statement covers
+CM-SHP-002	zid	core	ZD-I-0188	plan line Shipping Label Printing
+CM-SHP-002	zid	core	ZD-I-0204	plan line Cancel & Edit Shipping Labels
+CM-SHP-002	zid	core	ZD-I-0205	plan line Automatic Label Generation
+CM-SHP-002	zid	core	ZD-I-0209	plan line Prepaid Label Packages
+CM-SHP-002	zid	core	ZD-I-0220	plan line Batch Print Shipping Papers
+CM-SHP-002	zid	core	ZD-I-0210	plan line Merchant Pickup Service
+CM-SHP-002	zid	core	ZD-I-0259	plan line Schedule Order Pickups - Zid Ship
+CM-SHP-002	zid	core	ZD-I-0217	plan line Multiple Shipping Types
+CM-SHP-002	zid	extension-point	ZD-C-060/boundary/ZD-S-0844	fulfillment and shipping apps integrated with ZidShip, a fee per transaction
+CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0839	Zid an intermediary, not a carrier; compensation by the carriers' policies
+CM-SHP-002	zid	outside	ZD-C-060/responsible/ZD-S-0841	each shipping service under its carrier's terms
+CM-SHP-002	zid	outside	ZD-C-060/boundary/ZD-S-0843	the approved carrier measures the shipment's weight
+CM-SHP-002	zid	shows	ZD-C-060/decides/ZD-S-0837	plan line Zid Logistics: One Contract for 35 Carriers; core in CM-SHP-015
+CM-SHP-009	zid	core	ZD-I-0496	staff permission manage.zidship.orders, Manage shipping orders
+CM-SHP-009	zid	core	ZD-I-0270	plan line Export Order Fulfillment List
+CM-SHP-009	zid	shows	ZD-C-080/boundary/ZD-S-1011	order set to ready, linked carriers told; cited in CM-ORD-003
+CM-SHP-011	zid	extension-point	ZD-C-061/where/ZD-S-0412	App Market category الشحن والتخزين
+CM-SHP-011	zid	extension-point	ZD-I-0542	shipping apps' type Shipping and fulfillment company
+CM-SHP-011	zid	extension-point	ZD-C-061/decides/ZD-S-0847	shipping and fulfillment apps must be public
+CM-SHP-011	zid	extension-point	ZD-C-060/boundary/ZD-S-0844	fulfillment and shipping apps integrated with ZidShip
+CM-SHP-011	zid	outside	ZD-C-085/responsible/ZD-S-0920	outsourcing services store and prepare; Zid doesn't store
+CM-SHP-015	zid	core	ZD-C-061/decides/ZD-S-0848	shipping activated through licensed logistics companies from within the site (KSA, Gulf)
+CM-SHP-015	zid	core	ZD-C-061/decides/ZD-S-0849	custom connection with a carrier under the merchant's own contract
+CM-SHP-015	zid	core	ZD-C-060/decides/ZD-S-0837	plan line one contract for 35 carriers
+CM-SHP-015	zid	core	ZD-I-0207	plan line Choose Delivery Carriers
+CM-SHP-015	zid	core	ZD-I-0373	plan card Integration with shipping companies via Zid logistics
+CM-SHP-015	zid	extension-point	ZD-C-061/where/ZD-S-0846	Shipping apps integrate logistics and shipping services
+CM-SHP-015	zid	extension-point	ZD-C-061/where/ZD-S-0412	App Market category الشحن والتخزين
+CM-SHP-015	zid	extension-point	ZD-I-0543	shipping apps' type Shipping company only
+CM-SHP-015	zid	extension-point	ZD-C-061/boundary/ZD-S-0853	shipping apps' billing cycle
+CM-SHP-015	zid	extension-point	ZD-C-061/boundary/ZD-S-0854	Shipping Apps fee per transaction
+CM-SHP-015	zid	outside	ZD-C-061/responsible/ZD-S-0851	the logistics companies provide the service; Zid not liable
+CM-SHP-015	zid	shows	ZD-C-061/responsible/ZD-S-0850	merchant and logistics companies' agreements; Zid not a party
+CM-SHP-015	zid	shows	ZD-C-060/reason/ZD-S-0845	reason: one contract instead of each carrier
+CM-SHP-017	zid	shows	ZD-I-0160	help-centre section تتبع الشحنات under Zid Logistics
+CM-SHP-020	zid	core	ZD-I-0214	plan line International Shipping / شحن دولي
+CM-SHP-020	zid	shows	ZD-C-060/responsible/ZD-S-0842	Global Shipping customs duties from the Zid wallet; core in CM-TAX-008
+CM-SHP-020	zid	shows	ZD-I-0411	Global Shipping terms
+CM-SHP-021	zid	shows	ZD-C-115/decides/ZD-S-0470	staff permission manage.store.ecosystem.packaging, Manage packaging
+CM-SHP-022	zid	core	ZD-C-060/responsible/ZD-S-0840	Zid claims compensation from the carrier for a lost shipment
+CM-SHP-022	zid	outside	ZD-C-060/responsible/ZD-S-0840	the carrier decides the claim and its value
+CM-RET-001	zid	core	ZD-C-081/decides/ZD-S-0909	plan line Full & Partial Returns, every plan
+CM-RET-002	zid	core	ZD-C-002/where/ZD-S-0538	refund to the customer from المدفوعات > العمليات; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-I-0521	staff permission refund.zidpay.transactions; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-C-002/decides/ZD-S-0540	permission to refund fully or partly; also core in CM-PAY-020
+CM-RET-002	zid	core	ZD-C-081/boundary/ZD-S-1014	refund methods follow the order's payment method
+CM-RET-002	zid	own-service	ZD-C-002/decides/ZD-S-0541	refund needs balance in the Zid Pay account; Zid Pay's maker statement ZD-S-0533
+CM-RET-002	zid	extension-point	ZD-C-002/boundary/ZD-S-0055	refund request sent to the provider's URL
+CM-RET-002	zid	extension-point	ZD-C-002/boundary/ZD-S-0085	provider webhook type refund_status_changed
+CM-RET-002	zid	shows	ZD-C-002/decides/ZD-S-0539	no refund after 30 days
+CM-RET-002	zid	shows	ZD-C-028/boundary/ZD-S-0725	unpaid includes refunded; cited in CM-ORD-015
+CM-RET-003	zid	core	ZD-C-081/where/ZD-S-0005	Merchant API folder Reverse Orders
+CM-RET-003	zid	core	ZD-C-081/boundary/ZD-S-0911	POST reverse-orders, scope orders.read_write
+CM-RET-003	zid	core	ZD-C-081/boundary/ZD-S-0912	Reverse Orders operation Upload bank transfer receipt
+CM-RET-003	zid	core	ZD-C-081/decides/ZD-S-0910	plan line Returned Orders, pro plan
+CM-RET-003	zid	core	ZD-C-081/decides/ZD-S-1013	return label cost from the Zid wallet, up to 7 boxes
+CM-RET-003	zid	core	ZD-I-0208	plan line Choose Return Carriers
+CM-RET-003	zid	extension-point	ZD-I-0447	App Market category المرتجعات والاستبدال
+CM-RET-003	zid	outside	ZD-C-081/where/ZD-S-1012	manual return: label from the merchant's own carrier, not Zid
+CM-RET-003	zid	outside	ZD-C-081/boundary/ZD-S-1015	SMSA and Aramex support returns

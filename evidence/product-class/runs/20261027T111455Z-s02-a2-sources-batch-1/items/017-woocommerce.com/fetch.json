@@ -1,0 +1,18 @@
+{
+ "n": 17,
+ "url": "https://woocommerce.com/document/local-pickup/",
+ "dir": "items/017-woocommerce.com",
+ "fetched_at": "2026-10-27T11:15:02Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://woocommerce.com/document/local-pickup/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 43035,
+ "cited_in": [
+  "S-02 A2 WC-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "0155c78511e4ee40448727d3303d53d37936e617f548deb46af7137cc164c8d6",
+ "raw_ext": "html"
+}

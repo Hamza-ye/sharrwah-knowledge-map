@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://help.zid.sa/buy-new-domain/",
+ "dir": "items/002-help.zid.sa",
+ "fetched_at": "2026-10-27T09:51:14Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/buy-new-domain/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25540,
+ "cited_in": [
+  "S-02 A2 ZD-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "b01de7d4b08f600aaf7aab654d3ffc703b9cc2249de28a73ef866f7ffe0166fc",
+ "raw_ext": "html"
+}

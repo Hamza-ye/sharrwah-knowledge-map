@@ -1,0 +1,535 @@
+cap_id	platform	supports	key	why
+CM-ACC-001	shopify	core	SH-C-001/where/SH-S-2520	"Your store" on Shopify's own account destinations page
+CM-ACC-001	shopify	core	SH-C-001/where/SH-S-7184	Shopify's own operation listing the account's active stores (destinations)
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0019	the person signing up by opening an Account is the contracting party, the Store Owner
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0228	the Store Owner is responsible for the Account
+CM-ACC-001	shopify	shows	SH-C-001/responsible/SH-S-0238	one Store Owner per Shopify Store
+CM-ACC-001	shopify	shows	SH-C-001/decides/SH-S-0017	what Account registration requires of the merchant
+CM-ACC-001	shopify	shows	SH-C-001/boundary/SH-S-0229	signing up for a Shopify Account binds the merchant to the Terms
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1677	the settings link Your profile (/profile)
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1762	the profile sub-page Edit profile
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1763	the profile sub-page Registered devices
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1764	the profile sub-page Quick access
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-3534	Salla's dashboard app for sign-in, on /auth
+CM-ACC-001	salla	core	SA-C-001/where/SA-S-1061	Salla's own API folder Merchant
+CM-ACC-001	salla	core	SA-C-001/boundary/SA-S-1622	Salla's own webhook topic store.owner.changed, تغيير مالك المتجر
+CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2409	the staff permission account_setting_management
+CM-ACC-001	salla	shows	SA-C-001/decides/SA-S-2626	account_setting_management in the permissions a partner can request: shows an interface for apps (S7)
+CM-ACC-001	salla	core	SA-C-001/decides/SA-S-2086	سلة بلس plan line: saving recently opened accounts at sign-in
+CM-ACC-002	shopify	shows	SH-C-002/decides/SH-S-0001	the merchant contracts with the Shopify Contracting Party chosen by the store's billing address
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0002	Shopify Inc. for the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0003	Shopify Technology (USA) Inc. for the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0005	Shopify Commerce Singapore Pte. Ltd for Asia Pacific
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0007	Shopify International Limited for all other jurisdictions
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0241	help: Shopify International Limited contracts with merchants in EMEA and LATAM
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0242	help: Shopify Inc. contracts with merchants in the United States or Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0243	help: Shopify Commerce Singapore Pte. Ltd. contracts with merchants in APAC
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0009	Shopify Payment Activities Inc. for regulated payment services in Canada
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0008	Shopify Inc. may act as billing agent for another Contracting Party
+CM-ACC-002	shopify	shows	SH-C-002/responsible/SH-S-0010	the Terms are governed by the laws of Ontario and of Canada
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0015	app-store terms: Salla owned by شركة تطبيق سلة لتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0016	partner terms: owned by شركة تطبيق سلّة لتقنية المعلومات, registered in Saudi Arabia
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0017	an agreement's definition: منصة سلة means شركة تطبيق سلة لتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0018	theme-store terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0019	affiliate terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-5121	migration-service terms: owned by شركة منصة سلة للاتصالات وتقنية المعلومات
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-5001	campaign terms' definition of سلة: شركة منصة سلة للاتصالات وتقنية المعلومات, Saudi Arabia
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0011	footer: rights reserved to شركة سلة القابضة
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0001	Salla is a Saudi SaaS commerce platform
+CM-ACC-003	shopify	core	SH-C-003/where/SH-S-1481	Shopify's own settings page Organization
+CM-ACC-003	shopify	core	SH-C-003/where/SH-S-1589	the admin section OrganizationSettings
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5228	creating a store from Organization settings: STORE_CREATION and MANAGE_STORES
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5242	Organization settings' eligibility DIRECT_ACCESS
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5232	Organization settings' test drive, under TEST_DRIVE and MANAGE_TEST_DRIVE
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-5292	store feature hasOrgSettings true, its stores as scope
+CM-ACC-003	shopify	shows	SH-C-003/decides/SH-S-5291	store feature hasOrgSettings false on other stores
+CM-ACC-003	shopify	core	SH-C-003/decides/SH-S-7073	plan row Free expansion stores: Up to 9 on Plus
+CM-ACC-003	shopify	shows	SH-C-003/decides/SH-S-0245	the organization administrator role manages all organization settings (a partner organization's role list)
+CM-ACC-003	shopify	shows	SH-C-001/responsible/SH-S-0238	A Store Owner may have multiple Shopify Stores
+CM-ACC-003	salla	core	SA-C-003/where/SA-S-1680	the settings link Manage stores (/stores)
+CM-ACC-003	salla	core	SA-C-003/where/SA-S-3533	Salla's dashboard app serving /manage/stores
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-2088	سلة بلس plan line: managing the list of linked stores
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-3085	released flag multi-stores on the answering store
+CM-ACC-003	salla	core	SA-C-003/decides/SA-S-3450	released flag store-management on the answering store
+CM-ACC-003	salla	shows	SA-C-003/boundary/SA-S-5150	all accounts merged under one email, sign-in to the last store visited
+CM-ACC-003	salla	shows	SA-C-003/reason/SA-S-5151	the stated reason: moving between stores scatters focus
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7082	route Business entities in OrganizationSettings
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7080	route Switch business entity in Settings
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-6306	help names Settings > General
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-6307	help names Settings > Organization
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-0249	business entities managed and added from Organization
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5229	creating business details: ADD_LEGAL_ENTITIES and CENTRAL_LEGAL_ENTITIES
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5230	editing business details: VIEW_LEGAL_ENTITIES
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5231	the business entities route's eligibility
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7081	switching entity: staff permission SELECT_EXISTING_LEGAL_ENTITY
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-5812	store feature centralLegalEntitiesEnabled true, its stores as scope
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7179	Shopify's own operation LegalEntityTypesByCountryCode
+CM-ACC-004	shopify	core	SH-C-004/where/SH-S-7178	Shopify's own operation ValidationSchemaByContextQuery
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7189	entity type Individual for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7190	entity type Company for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7191	entity type Non-Profit for YE
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7186	registered business name required for a YE company
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-7187	government identifiers required for a YE company
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-0250	financial services deactivated before changing entity
+CM-ACC-004	shopify	core	SH-C-004/decides/SH-S-0251	billing country must match an active entity's
+CM-ACC-004	shopify	shows	SH-C-004/responsible/SH-S-0248	definition: the registered business or individual the store operates as
+CM-ACC-004	shopify	shows	SH-C-004/responsible/SH-S-7192	the organization's LegalEntity record, type not set, YE
+CM-ACC-004	shopify	shows	SH-C-004/boundary/SH-S-0252	a market added for each entity
+CM-ACC-004	salla	core	SA-C-006/decides/SA-S-0142	Salla's own store set-up asks for the store's legal entity (UAE article)
+CM-ACC-004	salla	core	SA-C-006/decides/SA-S-0133	Salla's verification step: choose the entity type, فرد (Saudi article)
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-7083	route Business Entity Payments under Payments
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-5247	the route's eligibility: MANAGE_PAYMENTS_SETTINGS and a beta
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6309	help names Settings > Payments
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6310	help names Markets
+CM-ACC-005	shopify	core	SH-C-005/where/SH-S-6311	help names Settings > Organization
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0255	available only with Shopify Payments
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0253	only for organizations on Plus and Enterprise
+CM-ACC-005	shopify	core	SH-C-005/decides/SH-S-0257	markets choose which entity processes a region's transactions
+CM-ACC-005	shopify	core	SH-C-005/boundary/SH-S-0258	each entity has its own Shopify Payments account, payout currency and bank account
+CM-ACC-005	shopify	shows	SH-C-005/reason/SH-S-0254	stated reason: several legal entities in one country or abroad
+CM-ACC-005	shopify	shows	SH-C-005/reason/SH-S-0256	stated benefit: domestic card processing per entity
+CM-ACC-006	shopify	core	SH-C-013/where/SH-S-1486	Shopify's own settings page General
+CM-ACC-006	shopify	core	SH-C-013/decides/SH-S-5131	settings:general gated by the staff permission PREFERENCES
+CM-ACC-006	shopify	core	SH-C-013/where/SH-S-0789	Shopify's own API group Store properties
+CM-ACC-006	shopify	core	SH-C-013/boundary/SH-S-1357	Shopify's own webhook topic shop/update
+CM-ACC-006	shopify	shows	SH-C-013/responsible/SH-S-0014	the merchant provides public contact information and policies
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1678	the settings link General (/general)
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1722	the General sub-page Store activity
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-3586	Salla's dashboard app serving /settings
+CM-ACC-006	salla	core	SA-C-002/where/SA-S-1054	Salla's own API folder Settings
+CM-ACC-006	salla	core	SA-C-002/boundary/SA-S-1545	access scope settings, Basic Information / البيانات الأساسية
+CM-ACC-006	salla	core	SA-C-002/boundary/SA-S-1565	access scope store-settings, Settings / الاعدادات
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2384	staff permission store_setting_browse
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2385	staff permission store_setting_edit_basic_info
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2386	staff permission store_setting_edit_setting
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2387	staff permission store_setting_edit_social_media_account
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2418	staff permission made_in_ksa_management
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2601	store_setting_browse in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2602	store_setting_edit_basic_info in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2603	store_setting_edit_setting in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2604	store_setting_edit_social_media_account in the permissions a partner can request (S7)
+CM-ACC-006	salla	shows	SA-C-002/decides/SA-S-2635	made_in_ksa_management in the permissions a partner can request (S7)
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-3353	released flag store-status on the answering store
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-3370	released flag made-in-ksa on the answering store
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2087	سلة بلس plan line: search in the store's settings
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2092	سلة بلس plan line: clearing the cache
+CM-ACC-006	salla	core	SA-C-002/decides/SA-S-2097	سلة بلس plan line: customising the store's options
+CM-ACC-007	salla	core	SA-C-002/where/SA-S-1726	route general/maintenance-mode under General
+CM-ACC-007	salla	core	SA-C-002/decides/SA-S-2084	سلة بلس plan line: turning on the store's maintenance mode
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0298	Shopify can't support business involving certain regions
+CM-ACC-008	shopify	shows	SH-C-174/reason/SH-S-0289	definition of Unsupported Region, with its reasons
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0290	no transactions involving these regions
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0304	no Shopify account for those within unsupported regions
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0305	no access to storefronts and accounts there
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0299	list: Cuba
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0300	list: Iran
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0301	list: North Korea
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0302	list: Syria
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0303	list: Crimea, Donetsk and Luhansk
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-0003	primary markets: Saudi Arabia, then the GCC
+CM-ACC-008	salla	shows	SA-C-167/reason/SA-S-0004	GCC expansion is the next priority
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-0141	the store's country chosen at registration decides its documents
+CM-ACC-008	salla	shows	SA-C-167/decides/SA-S-3101	verification workflow released for AE, SA, KW, QA, OM, BH
+CM-ACC-008	salla	shows	SA-I-1206	footer market السعودية
+CM-ACC-008	salla	shows	SA-I-1207	footer market الامارات
+CM-ACC-001	salla	shows	SA-C-170/boundary/SA-S-0143	registering binds the merchant to the usage policy (سياسة الاستخدام على منصة سلة)
+CM-ACC-001	salla	shows	SA-C-170/where/SA-S-2208	the usage agreement's own page, salla.com/terms, in the sitemap
+CM-ACC-002	salla	shows	SA-C-230/responsible/SA-S-0020	footer: rights reserved to شركة سلة القابضة © 2026
+CM-STF-001	shopify	core	SH-C-009/where/SH-S-1482	Shopify's own settings page Users
+CM-STF-001	shopify	core	SH-C-009/where/SH-S-1540	the admin's route section Account
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5003	route settings-account:invite, gated by the staff permission STAFF_MANAGEMENT_CREATE
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5004	route settings-account:edit, excluded where rbacEnabled or hasOrgSettings is on
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5233	route settings:organizations:accounts, open with hasOrgSettings or rbacEnabled
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-5240	route settings:organizations:accounts:create, gated by INVITE_USERS
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-7164	staff permission ADD_REMOVE_STAFF, "Add and remove"
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-7011	plan line Additional staff accounts: Not included, 5, 15, Unlimited
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-0020	Terms: staff accounts, one or more by pricing plan
+CM-STF-001	shopify	core	SH-C-009/decides/SH-S-0021	Terms: the Store Owner sets staff accounts' permissions and level of access
+CM-STF-001	shopify	shows	SH-C-009/responsible/SH-S-0231	the Store Owner answers for its staff accounts' compliance
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-1146	Shopify's own access scope read_users
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6143	StaffMember needs read_users, for finance embedded apps or Plus or Advanced stores
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6145	read_users needs Shopify approval; StaffMember on Plus or Advanced
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-6144	the REST User resource, for private and custom apps on Plus
+CM-STF-001	shopify	core	SH-C-009/boundary/SH-S-7244	the admin's own server intent creating a user
+CM-STF-001	salla	core	SA-C-009/where/SA-S-1849	Salla's own settings link Staff members (/users)
+CM-STF-001	salla	core	SA-C-009/where/SA-S-3544	Salla's dashboard app ui-merchant-users on /users
+CM-STF-001	salla	core	SA-C-009/where/SA-S-1066	Salla's own API folder Employees
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2143	سلة برو plan line: adding staff accounts and managing their permissions
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2078	سلة بلس plan line: more users, for extra fees
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2426	staff permission users_browse
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-2427	staff permission users_management
+CM-STF-001	salla	core	SA-C-009/decides/SA-S-3084	flag user-advance-management, released, plans plus, pro, special (C6)
+CM-STF-001	salla	shows	SA-C-009/decides/SA-S-3083	flag store-team, not released (C6)
+CM-STF-002	shopify	core	SH-C-010/where/SH-S-1483	Shopify's own settings page Roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-0247	the built-in Administrator role manages all users and roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5234	route settings:organizations:accounts:roles, with the organization feature ROLES
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5235	route roles:list, by VIEW_ORGANIZATION_ROLES, VIEW_STORE_ROLES, POS or partner roles
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5236	route roles:create, by CREATE_UPDATE_*_ROLES
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-7163	staff permission MANAGE_STAFF_PERMISSIONS, "Edit permissions"
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-7166	staff permission STAFF_API_PERMISSION_MANAGEMENT, "Revoke access tokens"
+CM-STF-002	shopify	core	SH-C-010/decides/SH-S-5307	store feature rbacEnabled true, its stores as scope
+CM-STF-002	shopify	shows	SH-C-010/decides/SH-S-5318	store feature rbacEnabled false on other stores
+CM-STF-002	shopify	core	SH-C-010/boundary/SH-S-7243	the admin's own server intent creating a role
+CM-STF-002	salla	core	SA-C-009/where/SA-S-1851	Salla's own link Roles & permissions (/users/roles)
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2079	سلة بلس plan line: إدارة الأدوار الوظيفية
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2428	staff permission roles_browse
+CM-STF-002	salla	core	SA-C-009/decides/SA-S-2429	staff permission roles_management
+CM-STF-003	shopify	core	SH-C-010/decides/SH-S-5237	route settings:organizations:accounts:groups, with the organization feature GROUPS
+CM-STF-003	shopify	core	SH-C-010/decides/SH-S-7077	plan line Custom user groups: included on Plus only
+CM-STF-004	salla	core	SA-C-009/where/SA-S-1853	Salla's own link Employees targets (/users/targets)
+CM-STF-005	shopify	core	SH-C-011/where/SH-S-7151	route settings:organizations:accounts:collaborator
+CM-STF-005	shopify	core	SH-C-011/decides/SH-S-7167	staff permission MANAGE_COLLABORATORS, "Manage requests", subcategory Collaborators
+CM-STF-005	shopify	core	SH-C-011/decides/SH-S-7012	plan line Invite third-party collaborators: included on every plan
+CM-STF-005	shopify	core	SH-C-011/boundary/SH-S-7466	Admin API AccountType COLLABORATOR
+CM-STF-005	shopify	shows	SH-C-011/decides/SH-S-0239	Terms: the merchant may let Third Party Providers into parts of its Admin and set their access
+CM-STF-005	shopify	shows	SH-C-011/decides/SH-S-0246	a collaborator reaches the stores an organization admin or owner gave it
+CM-STF-005	shopify	shows	SH-C-011/responsible/SH-S-0240	the relationship with a Third Party Provider is between it and the merchant
+CM-STF-005	shopify	shows	SH-C-011/reason/SH-S-7491	reason: two-step authentication against unauthorized store access, for collaborator accounts
+CM-STF-005	salla	core	SA-C-013/where/SA-S-3533	Salla's dashboard app ui-merchant-manage, on /manage/support-access
+CM-STF-005	salla	core	SA-C-013/decides/SA-S-2404	staff permission support_access_requests
+CM-STF-005	salla	core	SA-C-013/decides/SA-S-3355	flag support-access, released and enabled (C6)
+CM-STF-005	salla	shows	SA-C-013/decides/SA-S-2621	support_access_requests, طلبات الدخول للمساعدة, in the permissions a partner can request (S7)
+CM-STF-005	salla	shows	SA-C-013/boundary/SA-S-5131	a service partner asks for store access from its service's page in the partner portal
+CM-STF-005	salla	shows	SA-C-013/responsible/SA-S-5008	the partner may not use the permissions the merchant granted beyond the agreed work
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-1487	Shopify's own settings page Plan (billing_plan)
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-1591	the admin's own section Plus
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5093	the admin's own route plus
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5091	route access_account/plus for an inactive account
+CM-PLN-001	shopify	core	SH-C-015/where/SH-S-5107	the admin's own subscribe route
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5070	subscribe:plans route, gated by billing permissions
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5082	the plan route's eligibility: billing permissions and organization billing
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5071	reactivate:pick-plan route, gated by BILLING_SUBSCRIPTIONS
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-5092	plus_inactive_account route's eligibility
+CM-PLN-001	shopify	core	SH-C-015/boundary/SH-S-7453	ShopPlan in Shopify's own Admin API: the plan tier, Basic, Advanced or Plus
+CM-PLN-001	shopify	core	SH-C-015/boundary/SH-S-7454	Shop.plan field of type ShopPlan
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-7001	plan table row Pay monthly: a price per plan
+CM-PLN-001	shopify	core	SH-C-015/decides/SH-S-7002	plan table row Pay yearly: a price per plan
+CM-PLN-001	shopify	shows	SH-C-015/decides/SH-S-2076	plan.name basic on a trial store
+CM-PLN-001	shopify	shows	SH-C-015/responsible/SH-S-0234	the merchant pays the Subscription Fees of its subscription
+CM-PLN-001	salla	core	SA-C-004/where/SA-S-1679	Salla's own settings link Store plan (/plan)
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3528	plans flag naming basic, plus, pro and special, with the store's active one
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3395	enable-special-plan-purchase, not released
+CM-PLN-001	salla	shows	SA-C-004/decides/SA-S-3452	plan-free-trial, not released
+CM-PLN-001	salla	core	SA-C-004/reason/SA-S-5003	Salla's help: cancelling the plan is offered only where it allows a full refund
+CM-PLN-001	salla	core	SA-C-004/boundary/SA-S-5002	Salla's help: a plan refund goes back to the store balance
+CM-PLN-001	salla	shows	SA-C-004/responsible/SA-S-5001	the campaign terms for Salla's plans name Salla's company
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7148	page Switch to 3-year term under Billing (plus/renew)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7149	page Renew on a 3-year term (plus/renew/review)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7150	page Shopify Plus Terms (plus/terms)
+CM-PLN-002	shopify	core	SH-C-201/decides/SH-S-5084	self-renewals page gated by BILLING_SUBSCRIPTIONS and an organization flag
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7176	Shopify's own operation PlusContractDetails (contractmanagement)
+CM-PLN-002	shopify	core	SH-C-201/where/SH-S-7177	Shopify's own operation RenewalsQuery (contractmanagement)
+CM-PLN-002	shopify	core	SH-C-015/where/SH-S-5090	route subscription/pick_period/:plan/:period
+CM-PLN-002	shopify	core	SH-C-015/where/SH-S-5086	route pick_period for an inactive account
+CM-PLN-002	shopify	core	SH-C-015/decides/SH-S-7001	plan table row Pay monthly
+CM-PLN-002	shopify	core	SH-C-015/decides/SH-S-7002	plan table row Pay yearly
+CM-PLN-002	salla	core	SA-C-004/decides/SA-S-2085	plan line of سلة بلس: freezing the annual subscription up to 30 days
+CM-PLN-002	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help: the store balance renews the store plan automatically
+CM-PLN-002	salla	shows	SA-C-004/decides/SA-S-3438	renew-price-by-slug, not released
+CM-PLN-003	shopify	core	SH-C-018/where/SH-S-6314	the fees on Shopify's own billing page
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0273	transaction fees vary with the Shopify plan
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-7030	plan table row Third-party transaction fees: 2%, 1%, 0.6%, 0.2%
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0274	no third-party transaction fees on orders processed with Shopify Payments
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0276	no transaction fees on POS orders or manual payment methods
+CM-PLN-003	shopify	core	SH-C-018/decides/SH-S-0275	store credit and gift cards excluded on stores created from May 12, 2025
+CM-PLN-003	shopify	shows	SH-C-018/responsible/SH-S-0032	the merchant pays the fees on the value of sales through other providers
+CM-PLN-003	shopify	shows	SH-C-018/reason/SH-S-0272	the reason Shopify gives for the fees
+CM-PLN-003	salla	shows	SA-C-004/decides/SA-S-2198	plan line of سلة سبيشل: no platform commission on your sales
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-6312	Shopify's own settings page Billing
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-1485	organization settings page Billing
+CM-PLN-004	shopify	core	SH-C-016/where/SH-S-1549	the admin's own section Billing
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5087	billing:list, gated by billing permissions
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5088	issued invoice list
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5089	list of the next charges
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5074	billing history of an inactive account
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5072	invoice list of an inactive account
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5073	credit note export
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-5076	billing profile of an inactive account, behind a beta
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-7170	staff permission VIEW_BILLING_DETAILS
+CM-PLN-004	shopify	core	SH-C-016/decides/SH-S-0268	billing currencies set by the billing address's country
+CM-PLN-004	shopify	shows	SH-C-016/reason/SH-S-0266	why most bills are in US dollars
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0033	fees in US dollars unless indicated
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0034	Subscription Fees billed in advance every 30 days
+CM-PLN-004	shopify	shows	SH-C-016/decides/SH-S-0075	30 days' notice before fees change
+CM-PLN-004	shopify	shows	SH-C-016/responsible/SH-S-0008	Shopify Inc. may act as billing agent for the contracting party
+CM-PLN-004	salla	core	SA-C-005/where/SA-S-1682	Salla's own settings link Balance & billing (/billing)
+CM-PLN-004	salla	core	SA-C-005/where/SA-S-3538	Salla's own dashboard app @salla.sa/ui-merchant-billing at /billing
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2064	plan line of سلة بلس: billing settings (إعدادات الفوترة)
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2393	staff permission wallet_and_invoices_management
+CM-PLN-004	salla	shows	SA-C-005/decides/SA-S-2610	wallet_and_invoices_management in the permissions a partner can request
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-2391	staff permission store_setting_purchase_from_salla_store
+CM-PLN-004	salla	shows	SA-C-005/decides/SA-S-2608	purchase from Salla store in the permissions a partner can request
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-3441	released flag billing-native
+CM-PLN-004	salla	core	SA-C-005/decides/SA-S-3459	released flag payg-usage-billing, not enabled on the answering store
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-7171	staff permission Edit billing payment methods and pay invoices
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-5077	route deleting a billing payment method
+CM-PLN-005	shopify	core	SH-C-016/decides/SH-S-5075	pay-bills route of an inactive account
+CM-PLN-005	shopify	core	SH-C-016/where/SH-S-5062	route completing an invoice's payment authentication
+CM-PLN-005	shopify	core	SH-C-016/where/SH-S-5064	route authenticating a bill's payment
+CM-PLN-005	shopify	shows	SH-C-016/decides/SH-S-0035	fees paid with an Authorized Payment Method; suspension after 28 days unpaid
+CM-PLN-005	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help: the store balance pays the plan's renewal, Salla store purchases and waybills
+CM-PLN-005	salla	core	SA-C-004/decides/SA-S-2083	plan line of سلة بلس: managing the subscription in Salla's iOS app with iTunes balance
+CM-PLN-006	salla	core	SA-C-005/where/SA-S-1876	Salla's own navigation link Wallet (/payments/wallet)
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-2062	plan line of سلة بلس: adding and withdrawing store balance
+CM-PLN-006	salla	core	SA-C-005/boundary/SA-S-0089	Salla's help defines the store balance and what it pays for
+CM-PLN-006	salla	shows	SA-C-005/boundary/SA-S-0091	the store balance and the e-payments balance are separate
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0096	withdrawn balance transferred to the bank every Tuesday
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0092	withdrawing store balance requires verification
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0093	withdrawal fails while a complaint is open on the store
+CM-PLN-006	salla	core	SA-C-005/decides/SA-S-0097	transfer delayed while a complaint is open on the store
+CM-PLN-006	salla	core	SA-C-004/boundary/SA-S-5002	a plan refund goes back to the store balance, for use within the platform
+CM-PLN-007	shopify	core	SH-C-017/where/SH-S-6313	taxes on Shopify's own billing page
+CM-PLN-007	shopify	core	SH-C-017/where/SH-S-0279	Tax registration section: entering a Tax ID number
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0036	Shopify's taxes calculated by the billing address
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0277	VAT on Shopify bills: 15% in Saudi Arabia, 5% in the UAE
+CM-PLN-007	shopify	core	SH-C-017/decides/SH-S-0278	a VAT number may exempt the Shopify bill from VAT in Saudi Arabia
+CM-PLN-007	shopify	shows	SH-C-017/responsible/SH-S-0235	the merchant is responsible for taxes on its subscription
+CM-PLN-007	salla	shows	SA-C-113/decides/SA-S-0105	VAT (15%) applied to the total of Salla's fees, in the e-payments summary
+CM-PLN-007	shopify	shows	SH-C-016/responsible/SH-S-0008	Shopify Inc. may remit taxes in some jurisdictions as billing agent
+CM-ONB-001	shopify	core	SH-C-006/where/SH-S-7174	combobox "I'm located in:" on Shopify's own sign-up page
+CM-ONB-001	shopify	shows	SH-I-1746	the sign-up's Country/region field, 233 options
+CM-ONB-001	shopify	shows	SH-C-006/responsible/SH-S-0038	the merchant keeps an accurate location in the admin and updates it on moving
+CM-ONB-001	shopify	shows	SH-C-006/decides/SH-S-0304	those within unsupported countries and regions may not create an account
+CM-ONB-001	salla	core	SA-C-167/decides/SA-S-0141	the store's country chosen at registration decides its government documents
+CM-ONB-001	salla	core	SA-C-006/decides/SA-S-0141	the same sentence, in the article on creating a store in the UAE
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5169	Shopify's own admin route store-unavailable
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-7084	route store-unavailable in the admin's Foundation section
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5068	route inactive-account (access_account)
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5069	inactive-account:list gated by billing permissions
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5070	inactive-account checkout, reactivate and reopen routes gated by billing permissions
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5079	route pending-termination (account_review)
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5080	pending-termination:payments gated by SHOPIFY_PAYMENTS
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-5081	pending-termination payouts gated by Shopify Payments permissions
+CM-ONB-002	shopify	core	SH-C-014/where/SH-S-5085	route reactivation
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0658	Shopify places a store in restricted access when it detects activity
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0659	restricted access may come without prior communication
+CM-ONB-002	shopify	core	SH-C-014/decides/SH-S-0660	during restricted access the storefront is unavailable and admin access limited
+CM-ONB-002	shopify	core	SH-C-014/boundary/SH-S-0661	the appeal form for contesting restricted access
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0232	the merchant cancels the account by contacting Shopify Support
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0074	Shopify may suspend or terminate the Account at any time
+CM-ONB-002	shopify	shows	SH-C-014/decides/SH-S-0035	unpaid fees after 28 days may suspend access to the Account
+CM-ONB-002	shopify	shows	SH-C-014/responsible/SH-S-0233	the merchant stays responsible for obligations from before termination
+CM-ONB-002	shopify	shows	SH-I-2350	help section on pausing or deactivating the store
+CM-ONB-002	salla	shows	SA-C-232/decides/SA-S-0115	correct the violation within 24 hours to avoid the store's suspension
+CM-ONB-003	shopify	core	SH-C-155/decides/SH-S-7015	plan table row 24/7 support: Live chat to Priority support by plan
+CM-ONB-003	shopify	core	SH-C-155/decides/SH-S-7016	plan table row Free Shopify Academy courses, included on every plan
+CM-ONB-003	shopify	core	SH-C-155/where/SH-S-2523	Shopify Community among the account's own destinations
+CM-ONB-003	shopify	shows	SH-I-1758	Shopify Learn among the account's destinations
+CM-ONB-003	shopify	shows	SH-I-1762	Need Help? among the account's destinations
+CM-ONB-003	salla	core	SA-C-014/where/SA-S-5007	Salla Help Center, help.salla.sa
+CM-ONB-003	salla	core	SA-C-014/where/SA-S-5006	account manager (مسؤول الحساب) in the dashboard's side menu, سبيشل plan
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-2194	سلة سبيشل plan line فريقنا معك في كل خطوة
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-2196	سلة سبيشل plan line مدير حساب مخصص
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3451	flag support-plan, released and enabled
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3403	flag intercom-complains, released and enabled
+CM-ONB-003	salla	core	SA-C-014/decides/SA-S-3404	flag intercom-campaign-complains, released and enabled
+CM-STF-005	salla	core	SA-C-014/boundary/SA-S-5132	support's temporary access requests appear on /manage/support-access, granted only on approval
+CM-TRU-001	shopify	core	SH-C-007/where/SH-S-1484	Security, Shopify's own settings page
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-5238	organization accounts:security route, gated by MFA management, SAML, SCIM
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-5243	the same eligibility on the organization-settings security route
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-7165	staff permission AUTHENTICATION_MANAGEMENT, External login services
+CM-TRU-001	shopify	core	SH-C-007/where/SH-S-2512	Sign in with passkey on Shopify's sign-in page
+CM-TRU-001	shopify	core	SH-C-007/decides/SH-S-0260	two-step authentication required to use Shopify Payments
+CM-TRU-001	shopify	core	SH-I-1747	sign-up option Continue with email
+CM-TRU-001	shopify	core	SH-I-1753	sign-up option Continue with Google
+CM-TRU-001	shopify	core	SH-I-1754	sign-up option Continue with Apple
+CM-TRU-001	shopify	core	SH-I-1751	sign-up option Continue with Facebook
+CM-TRU-001	shopify	core	SH-I-1755	sign-up option Continue with WhatsApp
+CM-TRU-001	shopify	shows	SH-C-007/responsible/SH-S-0230	the merchant keeps the password secure
+CM-TRU-001	shopify	shows	SH-C-007/reason/SH-S-0261	turning off two-step authentication exposes the account
+CM-TRU-001	salla	core	SA-C-234/reason/SA-S-5115	two-factor authentication mandatory at sign-in to the dashboard
+CM-TRU-001	salla	shows	SA-C-001/decides/SA-S-3182	flag store-two-factor-authentication, not released (C6)
+CM-TRU-001	salla	shows	SA-C-001/decides/SA-S-3365	flag biometric-verification, not released (C6)
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-5254	Shopify's own route profile-assessment
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-1608	admin section Trust
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-1594	admin section ProfileAssessment
+CM-TRU-002	shopify	core	SH-C-008/where/SH-S-7180	operation RemediationQuery of profile_assessment
+CM-TRU-002	shopify	core	SH-C-008/decides/SH-S-0264	required when applying for Shopify Capital or Credit
+CM-TRU-002	shopify	core	SH-C-008/decides/SH-S-0265	account features restricted until verification is complete
+CM-TRU-002	shopify	shows	SH-C-008/responsible/SH-S-0263	the store owner usually completes the request
+CM-TRU-002	shopify	shows	SH-C-008/reason/SH-S-0262	against impersonation and account takeover; financial regulations
+CM-TRU-002	salla	shows	SA-C-006/boundary/SA-S-0132	Absher SMS to the store owner's number in store verification
+CM-TRU-002	salla	shows	SA-C-232/boundary/SA-S-0132	the same step, held under SA-C-232
+CM-TRU-002	salla	shows	SA-C-006/decides/SA-S-0138	beneficial owners' data of owners and managers in verification
+CM-TRU-002	salla	shows	SA-C-232/decides/SA-S-0138	the same requirement, held under SA-C-232
+CM-TRU-003	shopify	core	SH-C-012/where/SH-S-5206	Shopify's own route merchant-audit-log, path audit
+CM-TRU-003	shopify	core	SH-C-012/where/SH-S-1581	admin section MerchantAuditLog
+CM-TRU-003	shopify	core	SH-C-012/decides/SH-S-5239	organization activity-log route, VIEW_ALL_AUDIT_EVENTS
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-5938	webhook topic for each auditable Admin API request
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-1157	topic audit_events/admin_api_activity
+CM-TRU-003	shopify	core	SH-C-012/boundary/SH-S-0947	access scope read_audit_events
+CM-TRU-003	shopify	shows	SH-C-012/decides/SH-S-5207	route gated by STAFF_AUDIT_LOG_VIEW and a beta
+CM-TRU-003	salla	core	SA-C-010/where/SA-S-1889	Activity history link, /logs/audit
+CM-TRU-003	salla	core	SA-C-010/where/SA-S-3548	dashboard app @salla.sa/ui-merchant-logs, /logs
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2123	plan line سجل العمليات, plan سلة برو
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2421	staff permission audit_logs_management (S7)
+CM-TRU-003	salla	core	SA-C-010/decides/SA-S-2966	flag advance-audit-log, released, plans plus, pro, special (C6)
+CM-TRU-003	salla	core	SA-C-010/reason/SA-S-5010	سجل العمليات: the page of the store's daily operations to review
+CM-TRU-003	salla	shows	SA-C-010/decides/SA-S-2638	audit_logs_management in the permissions a partner can request (S7)
+CM-TRU-004	shopify	core	SH-C-051/where/SH-S-6317	Bot protection, Shopify's own settings page
+CM-TRU-004	shopify	core	SH-C-051/where/SH-S-1556	admin section CommerceProtection
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-5112	route commerce-protection, PRODUCTS and productProtection
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-7074	plan table row Bot protection: Plus only
+CM-TRU-004	shopify	core	SH-C-051/decides/SH-S-0744	available only on Shopify Plus
+CM-TRU-004	shopify	shows	SH-C-051/decides/SH-S-0746	activated through Shopify Plus Support
+CM-TRU-004	shopify	shows	SH-C-051/reason/SH-S-0745	blocks known bots from the checkout
+CM-TRU-004	shopify	shows	SH-C-051/where/SH-S-6318	help's steps link to the Online Store page
+CM-TRU-004	shopify	shows	SH-C-051/decides/SH-S-5595	feature productProtection false in the captured stores
+CM-TRU-005	shopify	core	SH-I-0019	the API's resource category Privacy
+CM-TRU-005	shopify	shows	SH-C-149/responsible/SH-S-0663	the merchant complies with privacy and data protection laws
+CM-TRU-005	shopify	shows	SH-C-148/responsible/SH-S-0646	Shopify alone doesn't guarantee GDPR compliance
+CM-TRU-005	salla	shows	SA-C-066/decides/SA-S-0169	the store's privacy policy complies with the PDPL
+CM-TRU-005	salla	shows	SA-C-066/decides/SA-S-0170	the law covers data of the Kingdom's citizens and residents
+CM-TRU-005	salla	shows	SA-C-066/responsible/SA-S-0030	published apps collect no sensitive data without permission
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-1502	Customer privacy, Shopify's own settings page
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-0662	privacy settings customised per country and region
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-5031	route customer-privacy:consent-banner
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-5253	route customer-privacy-policy-modal, MANAGE_POLICIES
+CM-TRU-006	shopify	core	SH-C-148/where/SH-S-0835	Customer Privacy API
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-6089	access scope read_privacy_settings
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-5956	read_privacy_settings, or content or pages scopes
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-6275	access scope write_privacy_settings
+CM-TRU-006	shopify	core	SH-C-148/boundary/SH-S-1044	read_privacy_settings in the scopes list
+CM-TRU-006	shopify	core	SH-C-148/decides/SH-S-7210	automated privacy features included in the plan, on by default
+CM-TRU-006	shopify	extension-point	SH-I-1915	app-store category Cookie consent apps
+CM-TRU-006	shopify	shows	SH-C-148/boundary/SH-S-0224	API Terms: apps integrate with the Consent Tracking API
+CM-TRU-006	shopify	shows	SH-C-148/reason/SH-S-7286	privacy laws vary by region
+CM-TRU-006	shopify	shows	SH-C-148/responsible/SH-S-0067	the merchant obtains consents when using the Pixel Manager
+CM-TRU-006	salla	core	SA-C-066/boundary/SA-S-5023	registration window: registering is consent to the privacy policy
+CM-TRU-006	salla	shows	SA-C-066/decides/SA-S-3372	flag website-cookies, not released (C6)
+CM-TRU-006	salla	shows	SA-C-066/reason/SA-S-5024	the buyer sees and acknowledges the policy before registering
+CM-TRU-007	shopify	core	SH-C-149/where/SH-S-6362	the Customers page in the admin
+CM-TRU-007	shopify	core	SH-C-149/decides/SH-S-7154	staff permission ERASE_CUSTOMER_DATA, Erase personal data
+CM-TRU-007	shopify	core	SH-C-149/decides/SH-S-7155	staff permission REQUEST_CUSTOMER_DATA, Request data
+CM-TRU-007	shopify	core	SH-C-149/responsible/SH-S-0666	Shopify processes the erasure request for the merchant
+CM-TRU-007	shopify	core	SH-C-149/responsible/SH-S-0664	Shopify erases personal data such as name and address
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-5957	access scope read_customer_data_erasure
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-6179	write_customer_data_erasure; the user must have erase access
+CM-TRU-007	shopify	core	SH-C-149/boundary/SH-S-0974	write_customer_data_erasure in the scopes list
+CM-TRU-007	shopify	shows	SH-C-149/responsible/SH-S-0665	the merchant contacts others it shared the data with
+CM-TRU-007	salla	core	SA-C-066/decides/SA-S-3175	flag customer-data-export, released (C6)
+CM-TRU-007	salla	shows	SA-C-066/decides/SA-S-3174	flag customer-account-deletion, not released (C6)
+CM-TRU-008	shopify	core	SH-C-147/where/SH-S-6326	the setting in Shopify's own Customer privacy settings
+CM-TRU-008	shopify	core	SH-C-147/decides/SH-S-0045	the merchant may disable the setting powering Enhanced Services
+CM-TRU-008	shopify	core	SH-C-147/responsible/SH-S-0046	Shopify uses customer data across stores and merchants
+CM-TRU-008	shopify	shows	SH-C-147/responsible/SH-S-0192	Shopify as Data Controller for Enhanced Services
+CM-TRU-008	shopify	shows	SH-C-147/boundary/SH-S-0425	managed payment methods use SNI
+CM-TRU-008	shopify	shows	SH-C-147/where/SH-S-0725	a Shop feature needs SNI enabled
+CM-TRU-009	shopify	core	SH-C-172/where/SH-S-7258	the AUP's report of a user violating it
+CM-TRU-009	shopify	core	SH-C-172/decides/SH-S-0173	notice, self-remediation, product-level first, account action last
+CM-TRU-009	shopify	shows	SH-C-172/responsible/SH-S-0166	the AUP's main rule
+CM-TRU-009	shopify	shows	SH-C-172/responsible/SH-S-0167	nothing illegal where you do business
+CM-TRU-009	shopify	shows	SH-C-172/boundary/SH-S-0076	the Terms incorporate the AUP
+CM-TRU-009	shopify	shows	SH-C-172/decides/SH-S-0031	Shopify may refuse or remove Materials
+CM-TRU-009	shopify	shows	SH-C-172/reason/SH-S-0172	disputes originate with regulators and IP rights holders
+CM-TRU-009	shopify	shows	SH-I-2134	help section Resolving terms violations
+CM-TRU-009	salla	core	SA-C-232/where/SA-S-0116	Salla's own route /manage/violation, المخالفات
+CM-TRU-009	salla	core	SA-C-232/decides/SA-S-0115	the violations page: correct the violation within 24 hours
+CM-TRU-009	salla	shows	SA-C-232/decides/SA-S-0031	merchants may not use apps against the regulations
+CM-TRU-010	shopify	core	SH-C-175/where/SH-S-7257	Disclosures product metafield for required warnings
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0011	the merchant is the seller; not a marketplace
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0236	the merchant answers for its store, goods and transactions
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0012	regulatory compliance and legal disclosures included
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0013	Shopify is not the merchant of record
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0668	the merchant's own steps for regulated products
+CM-TRU-010	shopify	shows	SH-C-175/responsible/SH-S-0669	the merchant follows recall requirements
+CM-TRU-010	shopify	shows	SH-C-175/decides/SH-S-0667	research import and export laws per jurisdiction
+CM-TRU-010	shopify	shows	SH-I-2125	help section Consumer protection laws
+CM-TRU-010	shopify	shows	SH-I-2160	help section on the GPSR
+CM-TRU-010	shopify	shows	SH-I-2124	help section Alcohol products
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0160	customer-service information required by e-commerce laws
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0118	e-commerce certificate mandatory under the Ministry's rules
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0306	products from unsupported regions prohibited
+CM-ACC-008	shopify	shows	SH-C-174/decides/SH-S-0307	orders shipping to unsupported regions prohibited
+CM-TRU-011	shopify	core	SH-C-176/where/SH-S-7259	the Terms' own report of content infringing IP rights
+CM-TRU-011	shopify	core	SH-C-176/boundary/SH-S-7480	Shopify's online form for notices of copyright infringement
+CM-TRU-011	shopify	core	SH-C-176/decides/SH-S-7260	infringing content violates the AUP; Shopify may remove it or terminate the store
+CM-TRU-011	shopify	core	SH-I-1382	legal page: trademark policy and report of trademark infringement
+CM-TRU-011	shopify	shows	SH-C-176/responsible/SH-S-0042	Shopify takes no ownership of the merchant's Materials but requires a licence
+CM-TRU-011	salla	shows	SA-C-232/responsible/SA-S-5114	pirated content and anything infringing IP rights barred from the App Maker's apps
+CM-TRU-012	shopify	core	SH-C-177/where/SH-S-0654	the P2B complaint form for Shopify merchants
+CM-TRU-012	shopify	core	SH-C-177/boundary/SH-S-0210	Shopify's internal complaint-handling system, free of charge
+CM-TRU-012	shopify	core	SH-C-178/where/SH-S-0657	the form for complaints about Shopify's financial products
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2171	Balance, a product on the financial complaint form's list
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2174	Capital - US loan, on the form's list
+CM-TRU-012	shopify	shows	SH-C-178/boundary/SH-S-2177	Capital - Canada MCA, on the form's list
+CM-TRU-012	shopify	shows	SH-C-177/decides/SH-S-0655	the P2B regulation retained by the United Kingdom
+CM-ACC-002	shopify	shows	SH-C-177/responsible/SH-S-0207	in the EU merchants' P2B Terms, Shopify means Shopify International Limited
+CM-ACC-002	shopify	shows	SH-C-177/responsible/SH-S-0211	the EU Terms governed by the laws of Ireland
+CM-TRU-013	shopify	core	SH-C-180/responsible/SH-S-0186	the DPA: the merchant as Data Controller, Shopify as Data Processor
+CM-TRU-013	shopify	core	SH-C-180/boundary/SH-S-0072	Terms 12: Shopify's processing of Your Customer Personal Data subject to the Terms, Privacy Policy and DPA
+CM-TRU-013	shopify	core	SH-C-180/decides/SH-S-7261	the Terms with the DPA are the merchant's documented instructions to Shopify
+CM-TRU-013	shopify	core	SH-I-1363	legal page: View data processing addendum
+CM-TRU-013	shopify	core	SH-I-1376	legal page: View privacy policy
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0187	the DPA is between the merchant and the Shopify Contracting Entity
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0192	Shopify as Data Controller where it provides Enhanced Services
+CM-TRU-013	shopify	shows	SH-C-180/responsible/SH-S-0244	Shopify as data controller when a customer uses Shop or Shop Pay
+CM-TRU-013	salla	core	SA-C-171/where/SA-S-2209	Salla's own privacy policy page, salla.com/privacy
+CM-TRU-013	salla	shows	SA-C-171/responsible/SA-S-0029	everyone bound by Salla's published privacy policy and the PDPL
+CM-TRU-013	salla	shows	SA-C-066/responsible/SA-S-0168	the controller's obligations: the merchant who sees its customers' data
+CM-TRU-014	shopify	core	SH-C-181/where/SH-S-0636	Shopify rebalances storage between Google Cloud Platform regions
+CM-TRU-014	shopify	core	SH-C-181/where/SH-S-0638	new merchants in Europe have their data stored at rest in Europe by default
+CM-TRU-014	shopify	core	SH-C-181/decides/SH-S-0637	Shopify moves data geographically, with mechanisms under the law
+CM-TRU-014	shopify	core	SH-C-181/decides/SH-S-0639	international transfers even where data is stored in Europe
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0227	EEA, UK and Swiss data received by the Irish affiliate
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0194	EEA, UK and Swiss customers' data first processed by Shopify International
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0641	Shopify International Limited as main establishment for GDPR
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0640	transfers to Canada on the Commission's adequacy decision
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0175	a Canadian company that may send personal data outside the person's region
+CM-TRU-014	shopify	core	SH-C-181/responsible/SH-S-0226	data sent to other Shopify locations and service providers, Canada included
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0188	the DPA: customer data may be processed wherever Shopify, affiliates or providers are
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0191	Shopify International may transfer data outside Europe under the DPA's Appendix C
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0643	transfer agreements incorporating the Standard Contractual Clauses
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0648	Shopify's Binding Corporate Rules, in effect 8 July 2026
+CM-TRU-014	shopify	core	SH-C-181/boundary/SH-S-0176	transfers to Shopify entities outside the EEA or Switzerland
+CM-TRU-014	shopify	outside	SH-C-181/where/SH-S-0196	Google Cloud Canada: cloud hosting and data processing
+CM-TRU-014	shopify	outside	SH-C-181/where/SH-S-0198	Amazon Web Services and Google Cloud rows: all platform data
+CM-TRU-015	shopify	core	SH-C-182/decides/SH-S-0645	Shopify limits subprocessors to technical services
+CM-TRU-015	shopify	core	SH-C-182/decides/SH-S-0189	the merchant may object to a subprocessor, or terminate
+CM-TRU-015	shopify	core	SH-C-182/responsible/SH-S-0190	Shopify fully liable for its subprocessors' acts
+CM-TRU-015	shopify	core	SH-C-182/boundary/SH-S-0206	Sign up for notifications about new subprocessors
+CM-TRU-015	shopify	shows	SH-C-182/where/SH-S-0184	Shopify works with third-party subprocessors for hosting, delivery, logging and more
+CM-TRU-015	shopify	outside	SH-C-182/where/SH-S-0199	Cloudflare: load balancing and DDoS protection
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0197	Amazon Web Services, a row of the third-party subprocessors
+CM-TRU-015	shopify	shows	SH-C-181/responsible/SH-S-0195	Google Cloud Canada Corporation, a row of the third-party subprocessors
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0203	Shopify Inc., an affiliated subprocessor providing the platform
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0204	Shopify Capital Inc., an affiliated subprocessor
+CM-TRU-015	shopify	shows	SH-C-182/responsible/SH-S-0205	Shopify Payments (USA) Inc., an affiliated subprocessor
+CM-TRU-016	shopify	core	SH-C-183/decides/SH-S-0182	store information retained for two years after closure before deletion begins
+CM-TRU-016	shopify	core	SH-C-183/decides/SH-S-0209	EU merchants: personal information deleted within 90 days of termination
+CM-TRU-016	shopify	core	SH-C-183/reason/SH-S-7290	Shopify may retain customer data as the law or its backup policies require
+CM-TRU-016	shopify	shows	SH-C-183/decides/SH-S-0183	the merchant decides how long its customers' information is kept
+CM-TRU-017	shopify	core	SH-C-179/where/SH-S-7250	legal requests submitted through the Legal Access Request form
+CM-TRU-017	shopify	core	SH-C-179/boundary/SH-S-0653	all legal access requests from third parties through the form
+CM-TRU-017	shopify	core	SH-C-179/boundary/SH-S-0647	public authorities' requests handled by Shopify's guidelines
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0650	information shared only on valid and enforceable legal process
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0651	affected people notified before production unless prohibited
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0652	requestors sent to the merchant first for its customers' data
+CM-TRU-017	shopify	core	SH-C-179/decides/SH-S-0185	Shopify refuses to share personal data unless permitted or required
+CM-TRU-017	shopify	core	SH-C-179/reason/SH-S-0675	the guidelines balance legal obligations and merchants' interests
+CM-TRU-017	shopify	outside	SH-C-179/decides/SH-S-0123	the Payment Processor or Financial Services Provider may deliver or hold data under legal process
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-0073	Shopify responsible for securing Account Data under PCI DSS
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-0097	the same responsibility for the Payments Services
+CM-TRU-018	shopify	core	SH-C-184/decides/SH-S-7202	Level 1 PCI DSS certified; stores PCI compliant by default
+CM-TRU-018	shopify	core	SH-C-184/responsible/SH-S-7481	Shopify's service provider PCI DSS Attestation of Compliance
+CM-TRU-019	shopify	extension-point	SH-C-196/where/SH-S-2715	App Store category Security apps
+CM-TRU-019	shopify	extension-point	SH-C-196/where/SH-S-2719	App Store category Legal apps
+CM-TRU-019	shopify	extension-point	SH-I-1953	App Store category Anti theft apps
+CM-TRU-019	shopify	extension-point	SH-I-1956	App Store category Security - Other
+CM-TRU-019	shopify	shows	SH-C-196/decides/SH-S-0755	merchants approve an app's scopes when they install it
+CM-TRU-019	shopify	shows	SH-C-196/responsible/SH-S-0058	use of Third Party Services is between the merchant and the provider
+CM-TRU-019	shopify	shows	SH-C-196/boundary/SH-S-7284	Third Party Services, App Store apps included, may access the store's data
+CM-TRU-020	salla	core	SA-C-178/where/SA-S-5085	Salla's complaints system page: open a new complaint
+CM-TRU-020	salla	core	SA-C-178/responsible/SA-S-5087	Salla as link and mediator between merchant and customer
+CM-TRU-020	salla	core	SA-C-178/boundary/SA-S-5088	first status: under verification by Salla's team, after the customer opens it
+CM-TRU-020	salla	shows	SA-C-178/decides/SA-S-5086	only the customer can close the complaint
+CM-TRU-009	salla	core	SA-C-232/where/SA-S-3533	dashboard app @salla.sa/ui-merchant-manage, its path manage/violation
+CM-TRU-010	salla	core	SA-C-231/boundary/SA-S-5147	store data the merchant updates: the Business platform certificate and customer-service channels
+CM-TRU-010	salla	shows	SA-C-231/reason/SA-S-0131	store verification serves e-commerce regulatory requirements (Saudi Arabia)
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0136	UAE trade licence types accepted in store verification
+CM-TRU-010	salla	shows	SA-C-231/decides/SA-S-0142	the UAE store's legal entity, for compliance and the licences verification needs
+CM-PLN-001	salla	shows	SA-C-180/where/SA-S-2213	Salla policy page /policies/nd96; its text, not held, a plan discount campaign (reading from context)
+CM-ACC-006	salla	core	SA-C-231/boundary/SA-S-5147	the store details the merchant can update: identity, customer service channels, the Business platform certificate, social accounts, the store app (the coordinator, from batch 7's lead)
+CM-TRU-008	salla	core	SA-C-232/decides/SA-S-0110	cash on delivery hidden from customers banned in Salla's other stores: Salla using what it knows across its stores to protect a store (the coordinator, a reading, after batch 7)
+CM-TRU-008	salla	core	SA-C-122/boundary/SA-S-5052	the tag عميل غير جاد rests on Salla's AI anti-fraud system analysing customers' data across Salla's stores (the coordinator, a reading, from C-anchor batch 7's lead)
+CM-ACC-008	salla	core	S02-SA-492	Salla's own onboarding turns away 'Other country': available in Saudi Arabia and the UAE (observed) (the coordinator, from the subjects' points: P-3 S02-VP-02, S02-VP-03)

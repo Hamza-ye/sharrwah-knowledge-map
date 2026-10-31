@@ -1,0 +1,11 @@
+cap_id	platform	supports	key	why
+CM-MIG-001	zid	core	ZD-C-044/boundary/ZD-S-0018	Merchant API Products > Product Export, Email All Products to Store Owner: its own API for its own feature (C1)
+CM-MIG-001	zid	core	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2)
+CM-MIG-001	zid	core	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2)
+CM-MIG-001	zid	core	ZD-I-0263	plan line Bulk Export Orders, placed in ZD-C-080 (C2)
+CM-MIG-001	zid	core	ZD-I-0345	plan line Export Customer Data, placed in ZD-C-091 (C2)
+CM-MIG-004	zid	core	ZD-C-044/where/ZD-S-0803	settings page Export requests, from the dashboard's settings icon
+CM-MIG-004	zid	core	ZD-I-0132	settings entry General › طلبات التصدير, new dashboard
+CM-MIG-004	zid	core	ZD-C-044/decides/ZD-S-0804	requested exported files downloaded in the browser; option to protect them with a password
+CM-MIG-004	zid	shows	ZD-C-044/reason/ZD-S-0805	the password sent to the merchant's email, to protect the data: the reason
+CM-MIG-005	zid	shows	ZD-C-102/reason/ZD-S-0968	names moving to Zid from another platform; no service named

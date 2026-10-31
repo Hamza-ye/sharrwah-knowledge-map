@@ -5,7 +5,8 @@ Usage: python3 -I method/check_register.py studies/subjects/S-01/register.tsv
 It checks that each cited id exists where it says, and that each path cited at a commit is there:
 - the subject's statement, variant and variation point ids (S01-SH-019, S01-V-528, S01-VP-01);
 - Stage 1's ids (YA-62, YK-203) and the concern map's (SH-C-057);
-- observed-sh@<commit>:<path> and observed-sa@<commit>:<path>, with any line a citation names (L11). Where a
+- observed-sh@<commit>:<path>, observed-sa@<commit>:<path> and other-product-class@<commit>:<path>, with any line a
+  citation names (L11). Where a
   name stands before the line, as "OrderTransaction L2447" or "POST /settlements/instant" after "L64", that
   line must contain it;
 - Salla's help articles cited as "record N" (line N + 1 of their texts.jsonl);
@@ -17,7 +18,8 @@ import csv, os, re, subprocess, sys
 csv.field_size_limit(10**9)
 SKM = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ROOTS = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
-         "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa")}
+         "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+         "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class")}
 PLATFORMS = {"SH": "shopify", "SA": "salla", "ZD": "zid", "WC": "woocommerce", "BC": "bigcommerce"}
 
 
@@ -39,7 +41,7 @@ def main(reg):
         f = os.path.join(subj, p, "statements.tsv")
         if os.path.exists(f):
             ids |= first_column(f)
-    for f in ("variants.tsv", "analysis.tsv"):
+    for f in ("variants.tsv", "analysis.tsv", "variation-points.tsv"):
         if os.path.exists(os.path.join(subj, f)):
             ids |= first_column(os.path.join(subj, f))
     for f in ("axes.tsv", "constants.tsv"):
@@ -60,7 +62,7 @@ def main(reg):
             if i not in concerns:
                 problems.append(f"{where}: concern {i} not found")
         for seg in r["evidence"].split(";"):
-            found = list(re.finditer(r"(observed-s[ah])@([0-9a-f]{7,40}):(\S+?)(?=[\s:;,(]|$)", seg))
+            found = list(re.finditer(r"(observed-s[ah]|other-product-class)@([0-9a-f]{7,40}):(\S+?)(?=[\s:;,(]|$)", seg))
             for k, m in enumerate(found):
                 repo, sha, path = m.groups()
                 checked += 1

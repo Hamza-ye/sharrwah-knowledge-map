@@ -1,0 +1,18 @@
+{
+ "n": 13,
+ "url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile.md",
+ "dir": "items/013-docs.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:15:01Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/get-settings-store-profile.md",
+ "content_type": "text/markdown; charset=utf-8",
+ "bytes": 2506,
+ "cited_in": [
+  "S-02 A2 BC-1, read"
+ ],
+ "raw_file": "raw.txt",
+ "sha256": "b3d3e61189e22400f1fa128a28705ad4145723292e517f957a2f9c9c7a1b188c",
+ "raw_ext": "txt"
+}

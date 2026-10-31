@@ -1,0 +1,150 @@
+cap_id	platform	supports	key	why
+CM-ACC-001	bigcommerce	shows	BC-C-086/where/BC-S-0469	the MSA's Store, configured with its own settings, payment methods and apps
+CM-ACC-001	bigcommerce	shows	BC-C-086/responsible/BC-S-0471	the merchant is solely responsible for its Stores and Your Materials
+CM-ACC-001	bigcommerce	shows	BC-C-055/boundary/BC-S-0300	the scope account_read: View account details
+CM-ACC-001	bigcommerce	shows	BC-C-063/decides/BC-S-0344	only a store owner can enable MCP on a store
+CM-ACC-002	bigcommerce	shows	BC-C-079/where/BC-S-0425	the MSA is between Commerce.com US, Inc. and any of Commerce's affiliates
+CM-ACC-002	bigcommerce	shows	BC-C-079/decides/BC-S-0426	the governing law is the one the Contracting Entity table gives
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0427	Commerce is the entity the merchant contracts with
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0428	Commerce.com US, Inc. for merchants resident in the United States
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0429	Commerce Software UK Ltd. for the United Kingdom
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0430	Commerce Software Ireland Ltd. for the European Union
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0431	Commerce.com Pty. Ltd. for Australia
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0432	Commerce.com Pty. Ltd. for any other jurisdiction
+CM-ACC-002	bigcommerce	shows	BC-C-079/responsible/BC-S-0433	Commerce Software Ireland Ltd for customers domiciled in Germany
+CM-ACC-002	bigcommerce	shows	BC-C-079/boundary/BC-S-0434	arbitration agreement and class action waiver for US customers only
+CM-ACC-002	bigcommerce	shows	BC-I-0547	Feedonomics Holdings, LLC contracts worldwide for the Feedonomics Platform
+CM-ACC-002	bigcommerce	shows	BC-I-0548	Makeswift, Inc. contracts worldwide for the Makeswift visual editor
+CM-ACC-003	bigcommerce	shows	BC-C-055/boundary/BC-S-0301	account-level credentials reach all the account's stores
+CM-ACC-006	bigcommerce	core	BC-C-047/where/BC-S-0009	its own Settings V3 API: settings and configuration of hosted stores
+CM-ACC-006	bigcommerce	core	BC-C-047/where/BC-S-0263	Settings APIs manage the control panel's settings, such as the store's name and contact information
+CM-ACC-006	bigcommerce	core	BC-C-047/where/BC-S-0262	Store Information V2: the store's global settings, status, domain and timezone
+CM-ACC-006	bigcommerce	core	BC-C-047/decides/BC-S-0264	its own setting Store Profile
+CM-ACC-006	bigcommerce	core	BC-C-047/decides/BC-S-0265	its own setting Storefront Status
+CM-ACC-006	bigcommerce	core	BC-C-047/decides/BC-S-0267	store settings set the global defaults
+CM-ACC-006	bigcommerce	core	BC-C-047/boundary/BC-S-0268	its own scope store_v2_information
+CM-ACC-006	bigcommerce	core	BC-C-047/boundary/BC-S-0269	its own webhook topic store/information/updated
+CM-ACC-008	bigcommerce	shows	BC-C-080/responsible/BC-S-0437	the merchant and its customers are not of regions under comprehensive US sanctions
+CM-ONB-002	bigcommerce	shows	BC-C-059/boundary/BC-S-0329	a client store cancelled and uninstalled from the platform
+CM-ONB-002	bigcommerce	shows	BC-C-080/decides/BC-S-0436	Commerce may terminate the Agreement for cause
+CM-ONB-002	bigcommerce	shows	BC-C-086/decides/BC-S-0470	Commerce may remove any of the merchant's Stores
+CM-ONB-003	bigcommerce	shows	BC-C-066/decides/BC-S-0077	closed-beta access is requested from BigCommerce support
+CM-PLN-001	bigcommerce	core	BC-C-030/decides/BC-S-0185	plan line GMV cap, per plan Core, Growth, Scale and Performance
+CM-PLN-001	bigcommerce	core	BC-C-030/decides/BC-S-0186	Commerce may automatically upgrade to a plan the merchant qualifies for
+CM-PLN-001	bigcommerce	core	BC-C-030/decides/BC-S-0187	Scale upgrades to Performance once TTM GMV reaches $2 million
+CM-PLN-001	bigcommerce	shows	BC-C-066/boundary/BC-S-0363	Powered By's Plans group: Create Store Plan Change
+CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0154	BigCommerce charges a monthly fee on self-service plans for orders through Open Payment Providers
+CM-PLN-003	bigcommerce	core	BC-I-0423	plan line Open Payment Provider Fee
+CM-PLN-004	bigcommerce	shows	BC-I-0462	the legal agreement Fees and Billing Terms
+CM-PLN-004	bigcommerce	shows	BC-C-030/where/BC-S-0184	fees: subscription, GMV overage and Open Payment Provider Fees
+CM-PLN-004	bigcommerce	shows	BC-C-030/decides/BC-S-0188	fees payable in U.S. Dollars
+CM-PLN-004	bigcommerce	shows	BC-C-030/decides/BC-S-0189	interest on fees unpaid on the Billing Date, EU and UK
+CM-PLN-004	bigcommerce	shows	BC-C-029/responsible/BC-S-0178	Commerce invoices Unified Billing merchants for app purchases
+CM-PLN-005	bigcommerce	shows	BC-C-030/boundary/BC-S-0191	fees charged to the merchant's authorized payment method on file
+CM-PLN-007	bigcommerce	shows	BC-C-030/responsible/BC-S-0190	the merchant pays all Taxes on its use of the Services
+CM-STF-001	bigcommerce	core	BC-C-061/decides/BC-S-0334	plan line Staff accounts, on all four plans
+CM-STF-001	bigcommerce	core	BC-C-061/where/BC-S-0333	its own GraphQL Account API creates, edits and deletes control panel users
+CM-STF-001	bigcommerce	core	BC-C-061/boundary/BC-S-0335	its own scope account_users_write
+CM-STF-001	bigcommerce	core	BC-I-0375	its own scope account_users_read
+CM-STF-001	bigcommerce	core	BC-I-0377	its own scope account_users_delete
+CM-TRU-003	bigcommerce	core	BC-C-060/where/BC-S-0331	its own Staff Action Logs endpoint to audit staff users' actions in the control panel
+CM-TRU-005	bigcommerce	shows	BC-C-086/responsible/BC-S-0472	the merchant keeps a privacy policy on how it handles its users' personal information
+CM-TRU-006	bigcommerce	core	BC-C-037/where/BC-S-0215	its own Storefront Cookie Consent API for shoppers' consent preferences
+CM-TRU-006	bigcommerce	core	BC-C-037/decides/BC-S-0216	a storefront-level control panel setting controls cookie consent
+CM-TRU-006	bigcommerce	shows	BC-C-037/boundary/BC-S-0218	the consent API authenticates by CORS headers, no scopes
+CM-TRU-006	bigcommerce	shows	BC-C-037/responsible/BC-S-0217	store owners solely responsible for privacy-law compliance of the storefront
+CM-TRU-007	bigcommerce	shows	BC-C-081/boundary/BC-S-0444	shopper requests forwarded to merchants, not actioned by Commerce
+CM-TRU-009	bigcommerce	shows	BC-C-085/decides/BC-S-0465	Lawful Purposes Only: uses Commerce determines unlawful or offensive barred
+CM-TRU-009	bigcommerce	shows	BC-C-086/decides/BC-S-0470	Commerce may remove Stores or Materials it believes violate Laws or the Agreement
+CM-TRU-009	bigcommerce	shows	BC-I-0460	legal agreement Acceptable Use Policy
+CM-TRU-010	bigcommerce	shows	BC-C-080/where/BC-S-0435	the merchant's anti-corruption, export and sanctions representations
+CM-TRU-010	bigcommerce	shows	BC-C-080/responsible/BC-S-0437	the merchant ensures its parties and customers are not in sanctioned regions
+CM-TRU-010	bigcommerce	shows	BC-C-080/responsible/BC-S-0438	the merchant's risk-based compliance programme and sanctions screenings
+CM-TRU-010	bigcommerce	shows	BC-C-080/boundary/BC-S-0439	the merchant cooperates with Commerce on sanctions and ABAC laws
+CM-TRU-010	bigcommerce	shows	BC-C-085/responsible/BC-S-0466	the merchant verifies the legality of highly regulated products
+CM-TRU-010	bigcommerce	shows	BC-C-085/responsible/BC-S-0467	the merchant solely responsible that its products comply with laws
+CM-TRU-010	bigcommerce	shows	BC-C-085/boundary/BC-S-0468	Commerce not liable for regulatory changes affecting regulated products
+CM-TRU-010	bigcommerce	shows	BC-C-086/boundary/BC-S-0473	the merchant's own agreement with Your Users
+CM-TRU-011	bigcommerce	core	BC-C-088/where/BC-S-0478	Commerce complies with the DMCA for copyright infringement
+CM-TRU-011	bigcommerce	core	BC-C-088/decides/BC-S-0479	Commerce may remove or block Your Materials on notice of infringement
+CM-TRU-011	bigcommerce	core	BC-C-088/boundary/BC-S-0480	written notification to Commerce's Intellectual Property Agent
+CM-TRU-011	bigcommerce	core	BC-I-0463	legal agreement Infringing Materials Protocol
+CM-TRU-011	bigcommerce	shows	BC-C-088/reason/BC-S-0481	the protocol applied to other IP infringement allegations
+CM-TRU-013	bigcommerce	core	BC-C-081/where/BC-S-0440	the DPA's Exhibit B, Commerce.com Specific Data Processing Terms
+CM-TRU-013	bigcommerce	core	BC-C-081/decides/BC-S-0441	the Services not intended to process sensitive personal data
+CM-TRU-013	bigcommerce	core	BC-C-081/responsible/BC-S-0442	a Commerce Entity acts as Processor on the customer's instructions
+CM-TRU-013	bigcommerce	core	BC-C-081/responsible/BC-S-0443	Commerce as Processor of shoppers' information; the Merchant as Controller
+CM-TRU-013	bigcommerce	core	BC-I-0468	legal agreement Data Processing Addendum
+CM-TRU-013	bigcommerce	core	BC-I-0457	legal agreement Privacy Policy (Commerce.com Specific)
+CM-TRU-014	bigcommerce	core	BC-C-082/where/BC-S-0445	Commerce.com transfers, processes and stores Personal Data where it or its Subprocessors operate
+CM-TRU-014	bigcommerce	core	BC-C-082/where/BC-S-0449	Personal Data may be transmitted outside where collected, to the United States included
+CM-TRU-014	bigcommerce	core	BC-C-082/responsible/BC-S-0451	Commerce.com notifies if it can no longer meet the required protection
+CM-TRU-014	bigcommerce	core	BC-C-082/boundary/BC-S-0452	participant in the EU-U.S. Data Privacy Framework and its UK and Swiss Extensions
+CM-TRU-014	bigcommerce	core	BC-C-082/boundary/BC-S-0453	the EU Standard Contractual Clauses of 4 June 2021
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0446	Google: infrastructure hosting, USA, Germany or Australia
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon: data hosting of catalogue, feed data and logs, USA
+CM-TRU-014	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare: DDoS mitigation and CDN, USA with a decentralized CDN
+CM-TRU-015	bigcommerce	core	BC-C-083/where/BC-S-0454	Commerce.com's current Subprocessors set forth on its data-processors page
+CM-TRU-015	bigcommerce	core	BC-C-083/decides/BC-S-0456	the DPA is the general written authorization to engage Subprocessors
+CM-TRU-015	bigcommerce	core	BC-C-083/responsible/BC-S-0458	no PII to subprocessors without security, privacy and transfer assessments and an agreement
+CM-TRU-015	bigcommerce	shows	BC-C-083/responsible/BC-S-0457	third parties provide hosting services essential to the Services
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0446	Google, a subprocessor: infrastructure hosting
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0447	Amazon, a subprocessor: data hosting
+CM-TRU-015	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare, a subprocessor: DDoS mitigation, threat detection and CDN
+CM-TRU-015	bigcommerce	shows	BC-I-0550	subprocessor list entry: Atlassian
+CM-TRU-015	bigcommerce	shows	BC-I-0552	subprocessor list entry: Confluent
+CM-TRU-015	bigcommerce	shows	BC-I-0554	subprocessor list entry: Sentry I/O by Functional Software
+CM-TRU-015	bigcommerce	shows	BC-I-0555	subprocessor list entry: Snowflake
+CM-TRU-015	bigcommerce	shows	BC-I-0556	subprocessor list entry: The Functionary
+CM-TRU-015	bigcommerce	shows	BC-I-0557	subprocessor list entry: Sysdig
+CM-TRU-015	bigcommerce	shows	BC-I-0558	subprocessor list entry: Sumo Logic
+CM-TRU-015	bigcommerce	shows	BC-I-0559	subprocessor list entry: Relyance AI
+CM-TRU-015	bigcommerce	shows	BC-I-0560	subprocessor list entry: ServiceNow Cloud Observability
+CM-TRU-015	bigcommerce	shows	BC-I-0561	subprocessor list entry: Teleport (Gravitational Inc)
+CM-TRU-015	bigcommerce	shows	BC-I-0562	subprocessor list entry: EPAM
+CM-TRU-015	bigcommerce	shows	BC-I-0563	subprocessor list entry: Microsoft
+CM-TRU-015	bigcommerce	shows	BC-I-0564	subprocessor list entry: AgileBits, Inc.
+CM-TRU-015	bigcommerce	shows	BC-I-0565	subprocessor list entry: NewRelic
+CM-TRU-015	bigcommerce	shows	BC-I-0566	subprocessor list entry: Cube27
+CM-TRU-015	bigcommerce	shows	BC-I-0567	subprocessor list entry: Microsourcing
+CM-TRU-015	bigcommerce	shows	BC-I-0568	subprocessor list entry: FDX South Africa
+CM-TRU-015	bigcommerce	shows	BC-I-0569	subprocessor list entry: Noibu
+CM-TRU-018	bigcommerce	core	BC-C-028/where/BC-S-0165	the Payment Processing API uses BigCommerce's PCI-compliant payments server
+CM-TRU-018	bigcommerce	core	BC-C-028/responsible/BC-S-0167	Commerce responsible for cardholder data security to the extent it controls it
+CM-TRU-018	bigcommerce	core	BC-C-028/responsible/BC-S-0169	PCI DSS compliant service provider, validated annually, requirements 1-12
+CM-TRU-018	bigcommerce	core	BC-C-028/reason/BC-S-0171	a secure environment for customer data in the standard checkout
+CM-TRU-018	bigcommerce	shows	BC-C-028/decides/BC-S-0166	the condition: Commerce documentation followed, checkout unmodified
+CM-TRU-018	bigcommerce	shows	BC-C-028/responsible/BC-S-0168	the merchant determines its own PCI merchant requirements
+CM-TRU-018	bigcommerce	shows	BC-C-028/boundary/BC-S-0170	apps handling card data must be PCI compliant and submit SAQs
+CM-TRU-018	bigcommerce	shows	BC-C-078/where/BC-S-0421	Tier 1 certifications, PCI among them
+CM-TRU-019	bigcommerce	extension-point	BC-I-0490	App Marketplace category Payments & Security
+CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0152	plan line Open Payment Provider Fee: 2.0%, 1.0%, 0.6%, 0.0% with contract, by plan (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	core	BC-C-026/decides/BC-S-0153	plan line Orders through Embedded Payment Providers: $0 fee on every plan (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	core	BC-C-026/responsible/BC-S-0158	Open Payment Provider Fees charged by Commerce, not by the payment provider (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-003	bigcommerce	shows	BC-C-026/responsible/BC-S-0159	no payment fees on orders through eligible Embedded Payment Providers; the provider's own fees still apply (the coordinator, after C-bigcommerce batch 2)
+CM-PLN-004	bigcommerce	core	S02-BC-280	its own invoice: a payment not made, or a store in India, is paid by hand (the coordinator, from the subjects' points: P-4 S02-VP-14)
+CM-PLN-004	bigcommerce	core	S02-BC-281	merchants in India pay the invoice by a link emailed on the billing date (the coordinator, from the subjects' points: P-4 S02-VP-14)
+CM-PLN-007	bigcommerce	core	S02-BC-277	the account dashboard validates the merchant's VAT number with its issuing country (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)
+CM-PLN-007	bigcommerce	core	S02-BC-359	the plan checkout: Taxes $0.00 (the store in one country) (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)
+CM-PLN-007	bigcommerce	core	S02-BC-362	the plan checkout: Taxes $22.96 (the store in another country) (the coordinator, from the subjects' points: P-3 S02-VP-05; P-4 S02-VP-15)
+CM-STF-002	bigcommerce	core	S02-BC-345	team permissions: a policy's targets, a store or the account (the coordinator, from the subjects' points: P-7 S02-VP-71)
+CM-STF-002	bigcommerce	core	S02-BC-346	team permissions (the coordinator, from the subjects' points: P-7 S02-VP-71)
+CM-STF-002	bigcommerce	core	S02-BC-347	each user's own account, its permissions limited to its role (the coordinator, from the subjects' points: P-7 S02-VP-71)
+CM-STF-002	bigcommerce	core	S02-BC-348	user permissions (the coordinator, from the subjects' points: P-7 S02-VP-71)
+CM-ACC-002	bigcommerce	shows	BC-E-aac5508c	(the held pass, BC-1) a reading: the terms' row for a merchant resident in United States: the Commerce entity it contracts with and the governing law; gives the agreement's terms, supports no placement, as the cell's other rows: Country of Residence of Merchant: United States; Commerce Entity: Commerce.com US, Inc., a Texas corporation in the Uni…
+CM-ACC-002	bigcommerce	shows	BC-E-34573863	(the held pass, BC-1) a reading: the terms' row for a merchant resident in United Kingdom: the Commerce entity it contracts with and the governing law; gives the agreement's terms, supports no placement, as the cell's other rows: Country of Residence of Merchant: United Kingdom; Commerce Entity: Commerce Software UK Ltd., a United Kingdom limited …
+CM-ACC-002	bigcommerce	shows	BC-E-47462fcf	(the held pass, BC-1) a reading: the terms' row for a merchant resident in European Union: the Commerce entity it contracts with and the governing law; gives the agreement's terms, supports no placement, as the cell's other rows: Country of Residence of Merchant: European Union; Commerce Entity: Commerce Software Ireland Ltd., an Irish limited com…
+CM-ACC-002	bigcommerce	shows	BC-E-22b1b6aa	(the held pass, BC-1) a reading: the terms' row for a merchant resident in Australia: the Commerce entity it contracts with and the governing law; gives the agreement's terms, supports no placement, as the cell's other rows: Country of Residence of Merchant: Australia; Commerce Entity: Commerce.com Pty. Ltd., an Australia proprietary limited …
+CM-ACC-002	bigcommerce	shows	BC-E-b01b6b25	(the held pass, BC-1) a reading: the terms' row for a merchant resident in Any other jurisdiction: the Commerce entity it contracts with and the governing law; gives the agreement's terms, supports no placement, as the cell's other rows: Country of Residence of Merchant: Any other jurisdiction; Commerce Entity: Commerce.com Pty. Ltd., an Australia proprie…
+CM-PLN-003	bigcommerce	core	BC-E-5c661e15	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it: a rate set by plan; what it is charged on isn't in the row, read as the platform's fee on sales by plan, as the cell's values 2.0%, 1.0%, 0.6%, 0.0% (BC-S-0152): feature_text: Surcharge rate; Core: 2%; Growth: 1%; Scale: 0.6%; Performance: 0%
+CM-PLN-003	bigcommerce	core	BC-E-b0fc5c37	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on the four plans): no added platform transaction fee for leading payment gateways: feature_text: No additional transaction fees to use leading payment gateways; Core: [image]; Growth: [image]; Scale: [i…
+CM-ONB-003	bigcommerce	core	BC-E-0f95540a	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on Growth, Scale and Performance, empty on Core): the platform's support for merchants by phone: feature_text: Phone support; Growth: [image]; Scale: [image]; Performance: [image]
+CM-PLN-001	bigcommerce	core	BC-E-aaa76a60	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it: the plan's limit on online sales, 'Calculated on a trailing 12-month basis': feature_text: Online sales per year Calculated on a trailing 12-month basis; Core: Up to $30k; Growth: Up to $100k; Sca…
+CM-PLN-001	bigcommerce	core	BC-E-f167af9a	(the held pass, BC-1) a reading: the plans' prices, which the plan page states above its table (other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T015915Z-plan-upgrade-en/steps/004.text.txt, lines 13 to 38; the structure's meta.json keeps them, read as an entry by the meta: rule): the platform's own plans and their prices, in US dollars: key: prices_above_the_table; value: Core $39 monthly or $29/mo billed annually; Growth $105 or $79; Scale $399 or $299;…
+CM-PLN-002	bigcommerce	core	BC-E-f167af9a	(the held pass, BC-1) a reading: each plan priced monthly or billed annually, 'All prices in US Dollars. Billed annually.' (other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T015915Z-plan-upgrade-en/steps/004.text.txt, lines 13 to 38): the subscription's billing period, which the plan page lets the merchant choose (its toggle Annual (Save 25%) / Monthly, at line 13 of the same step): key: prices_above_the_table; value: Core $39 monthly or $29/mo billed annually; Growth $105 or $79; Scale $399 or $299;…
+CM-ACC-006	bigcommerce	core	BC-E-f4bc804f	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (group Setup, /manage/microapps/store-profile-ui): the store's details: group: Setup; section: Store profile; description: Basic information about your business
+CM-ACC-006	bigcommerce	core	BC-E-e2655528	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (General, viewSettings#MiscellaneousSettingsTab): a tab of the store's general settings page, holding email, advanced store and order settings and the throttler, each a field of it: group: General; section: Miscellaneous; description: Email settings, advanced store settings, order settings, throttler
+CM-TRU-006	bigcommerce	core	BC-E-8e28f7e3	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (General, viewSettings#SecuritySettingsTab): the storefront's privacy settings, where the cell holds the cookie consent setting under Security Settings (BC-S-0216): group: General; section: Security & Privacy; description: Security & privacy settings for storefront and control panel
+CM-TRU-001	bigcommerce	core	BC-E-8e28f7e3	(the held pass, BC-1) a reading: a section of the control panel's own Settings list: the same tab's security settings for the control panel, read as the admin's sign-in security; the tab's fields aren't held: group: General; section: Security & Privacy; description: Security & privacy settings for storefront and control panel
+CM-TRU-003	bigcommerce	core	BC-E-195dc194	(the held pass, BC-1) a reading: a section of the control panel's own Settings list: the same section sets the staff action logs' rules: the audit log of admin activity: group: Advanced; section: Store logs; description: System logs and staff action logs rules
+CM-STF-001	bigcommerce	core	BC-E-36c85b1f	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, ToDo=viewUsers): the people given access to the control panel: group: Advanced; section: Users; description: Providing access to the administration area of your store

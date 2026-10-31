@@ -1,0 +1,18 @@
+{
+ "n": 8,
+ "url": "https://support.bigcommerce.com/s/article/Configuring-Storefronts",
+ "dir": "items/008-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T12:18:57Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Configuring-Storefronts?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191527,
+ "cited_in": [
+  "S-02 A2 BC-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "58cdab1a8d62810db121c846228d60989140340f6ec2ed9d60b717eaf6db63f7",
+ "raw_ext": "html"
+}

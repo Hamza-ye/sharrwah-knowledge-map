@@ -1,0 +1,18 @@
+{
+ "n": 24,
+ "url": "https://zid.eg/ar/",
+ "dir": "items/024-zid.eg",
+ "fetched_at": "2026-10-27T11:21:00Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://zid.eg/ar/",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 41170,
+ "cited_in": [
+  "re-render of a page held as an error text: 20261027T071937Z-s02-a3-zid-sources-2"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "a68ee21fbfe4dab221f73d3ff171b35d037c4bcc24caf4fe7094b3dd090b0956",
+ "raw_ext": "html"
+}

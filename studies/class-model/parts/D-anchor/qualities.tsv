@@ -1,0 +1,4 @@
+cap_id	platform	quality	value	key
+CM-B2B-003	shopify	B2B catalogs per plan	Shopify B2B: Up to 3 catalogs; Up to 3 catalogs; Up to 3 catalogs; Unlimited catalogs	SH-C-044/decides/SH-S-7008
+CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 3	SH-C-037/decides/SH-S-5532
+CM-B2B-003	shopify	B2B catalogs limit (entitlement)	"b2b": {"enabled": true, "catalogs": {"enabled": true, "limit": 75000	SH-C-037/decides/SH-S-5535

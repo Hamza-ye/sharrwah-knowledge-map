@@ -1,0 +1,92 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHK-001	zid	statements	core	صفحة إتمام الشراء > ضمان زد | لوحة التحكم > الاعدادات		ZD-C-099/decides:observation needed;ZD-C-099/responsible:stated only in general terms;ZD-C-099/reason:searched, not found	general
+CM-CHK-002	zid	statements	core			ZD-C-099/decides:observation needed;ZD-C-099/responsible:stated only in general terms;ZD-C-099/reason:searched, not found;ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	general
+CM-CHK-003	zid	none-held					
+CM-CHK-004	zid	none-held					
+CM-CHK-005	zid	none-held					
+CM-CHK-006	zid	none-held					
+CM-CHK-007	zid	statements	core	Merchant APIs > Abandoned Carts	ZD-C-082/decides/ZD-S-0474=staff permission | ZD-C-082/decides/ZD-S-0913=compare-plans: starter, launch, growth, pro | ZD-C-082/decides/ZD-S-1016=الباقات المجانية | ZD-C-082/decides/ZD-S-1017=الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-082/responsible:stated only in general terms;ZD-C-082/reason:searched, not found	general
+CM-CHK-008	zid	statements	core		ZD-C-005/decides/ZD-S-0362=plan Rise		plan Rise
+CM-CHK-009	zid	statements	core	خصائص الطلبات والمنتجات	ZD-C-100/decides/ZD-S-0963=compare-plans: starter, launch, growth, pro	ZD-C-100/responsible:stated only in general terms;ZD-C-100/reason:searched, not found	general
+CM-ORD-001	zid	statements	core	GET /v1/managers/store/orders | Merchant APIs > Orders		ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-002	zid	statements	core		ZD-C-080/decides/ZD-S-0518=staff permission	ZD-C-054/responsible:stated only in general terms;ZD-C-054/decides:searched, not found;ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-003	zid	statements	core;outside			ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-004	zid	statements	not-stated			ZD-C-054/responsible:stated only in general terms;ZD-C-054/decides:searched, not found	
+CM-ORD-005	zid	statements	core	GET /v1/managers/store/orders	ZD-C-080/decides/ZD-S-0904=compare-plans: starter, launch, growth, pro	ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-006	zid	statements	core	Fraud Shield	ZD-C-007/decides/ZD-S-0374=plan Growth	ZD-C-007/boundary:searched, not found;ZD-C-007/reason:searched, not found	general
+CM-ORD-007	zid	none-held					
+CM-ORD-008	zid	statements	core	Merchant APIs > Orders [List Order Credit Notes] | اعدادات الفاتورة	ZD-C-052/decides/ZD-S-0822=compare-plans: starter, launch, growth, pro	ZD-C-052/reason:searched, not found;ZD-C-054/responsible:stated only in general terms;ZD-C-054/decides:searched, not found	general
+CM-ORD-009	zid	none-held					
+CM-ORD-010	zid	statements	core	الاعدادات > المتجر > أوقات العمل الرسمية		ZD-C-104/decides:observation needed;ZD-C-104/responsible:stated only in general terms;ZD-C-104/boundary:searched, not found;ZD-C-104/reason:searched, not found	general
+CM-ORD-011	zid	statements	core		ZD-C-080/decides/ZD-S-0903=compare-plans: starter, launch, growth, pro	ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-012	zid	none-held					
+CM-ORD-013	zid	statements	core			ZD-C-061/reason:searched, not found;ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-ORD-014	zid	none-held					
+CM-ORD-015	zid	statements	core	order.payment_status.update	ZD-C-028/decides/ZD-S-0723=compare-plans: starter, launch, growth, pro | ZD-C-028/decides/ZD-S-0724=compare-plans: starter, launch, growth, pro	ZD-C-028/responsible:stated only in general terms;ZD-C-028/reason:searched, not found	general
+CM-PAY-001	zid	statements	core	Merchant APIs > Store Settings | إدارة طرق الدفع > الحسابات البنكية	ZD-C-011/decides/ZD-S-0610=مستخدمي دول الخليج | ZD-C-012/decides/ZD-S-0616=compare-plans: starter, launch, growth, pro | ZD-C-012/decides/ZD-S-0617=compare-plans: starter, launch, growth, pro	ZD-C-004/boundary:searched, not found;ZD-C-004/reason:searched, not found;ZD-C-011/reason:searched, not found;ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found	general
+CM-PAY-002	zid	statements	core;own-service	إدارة زد باي | الأنشطة المحظورة | المدفوعات > تفعيل الدفع الالكتروني | زد باي (definition)	ZD-C-001/decides/ZD-S-0361=plan Rise; the Starter card lists Basic payment methods (bank transfer, cash on delivery) | ZD-C-001/decides/ZD-S-0529=Zid Pay, Saudi Arabia | ZD-C-001/decides/ZD-S-0530=المملكة العربية السعودية; دولة الكويت | ZD-C-001/responsible/ZD-S-0532=Zid Pay, Saudi Arabia | ZD-C-001/responsible/ZD-S-0533=Zid Pay, Saudi Arabia | ZD-C-007/decides/ZD-S-0581=Zid Pay, Saudi Arabia | ZD-C-009/where/ZD-S-0589=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0766=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0767=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0768=Zid Pay, Kuwait | ZD-C-037/decides/ZD-S-0770=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0771=Zid Pay, Saudi Arabia (English text) | ZD-C-037/responsible/ZD-S-0773=Zid Pay, Saudi Arabia | ZD-C-037/where/ZD-S-0765=Zid Pay, Saudi Arabia	ZD-C-001/reason:observation needed;ZD-C-007/boundary:searched, not found;ZD-C-007/reason:searched, not found;ZD-C-009/responsible:searched, not found;ZD-C-009/reason:searched, not found;ZD-C-037/responsible:observation needed;ZD-C-037/boundary:searched, not found;ZD-C-037/reason:searched, not found	general
+CM-PAY-003	zid	statements	core;extension-point;outside	المدفوعات > تفعيل الدفع الالكتروني	ZD-C-001/decides/ZD-S-0528=متطلبات تفعيل الدفع الالكتروني للسعودية | ZD-C-001/decides/ZD-S-0529=Zid Pay, Saudi Arabia | ZD-C-001/responsible/ZD-S-0532=Zid Pay, Saudi Arabia	ZD-C-001/reason:observation needed;ZD-C-009/responsible:searched, not found;ZD-C-009/reason:searched, not found;ZD-C-038/reason:searched, not found	general
+CM-PAY-004	zid	statements	extension-point;outside	Zid Payments | zidpay.org | زد باي (definition)	ZD-C-005/responsible/ZD-S-0567=Zid Pay, Saudi Arabia | ZD-C-009/decides/ZD-S-0590=Zid Pay, Saudi Arabia | ZD-C-009/responsible/ZD-S-0593=Zid Pay, Saudi Arabia | ZD-C-009/responsible/ZD-S-0594=Zid Pay, Saudi Arabia | ZD-C-009/where/ZD-S-0589=Zid Pay, Saudi Arabia	ZD-C-009/responsible:searched, not found;ZD-C-009/reason:searched, not found;ZD-C-010/responsible:observation needed;ZD-C-010/reason:searched, not found	
+CM-PAY-005	zid	statements	core;own-service	إدارة طرق الدفع > الحسابات البنكية | بوابة الدفع في مزيد | قيد المعالجة | كشف الحساب | لوحة التحكم > منصات البيع > مزيد	ZD-C-003/decides/ZD-S-0546=Zid Pay, Saudi Arabia | ZD-C-003/decides/ZD-S-0547=Zid Pay, Saudi Arabia | ZD-C-003/decides/ZD-S-0548=Zid Pay, Saudi Arabia | ZD-C-003/decides/ZD-S-0549=Zid Pay, Saudi Arabia | ZD-C-003/decides/ZD-S-0550=Zid Pay, Kuwait | ZD-C-003/decides/ZD-S-0551=Zid Pay, Kuwait | ZD-C-003/responsible/ZD-S-0554=Zid Pay, Saudi Arabia | ZD-C-003/responsible/ZD-S-0555=Zid Pay, Saudi Arabia | ZD-C-004/responsible/ZD-S-0562=Zid Pay, Saudi Arabia	ZD-C-003/responsible:observation needed;ZD-C-003/boundary:searched, not found;ZD-C-003/reason:searched, not found;ZD-C-004/boundary:searched, not found;ZD-C-004/reason:searched, not found	general
+CM-PAY-006	zid	statements	own-service		ZD-C-007/decides/ZD-S-0581=Zid Pay, Saudi Arabia | ZD-C-007/decides/ZD-S-0582=Zid Pay, Saudi Arabia | ZD-C-007/decides/ZD-S-0583=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0769=Zid Pay, Saudi Arabia | ZD-C-037/responsible/ZD-S-0772=Zid Pay, Saudi Arabia	ZD-C-007/boundary:searched, not found;ZD-C-007/reason:searched, not found;ZD-C-037/responsible:observation needed;ZD-C-037/boundary:searched, not found;ZD-C-037/reason:searched, not found	general
+CM-PAY-007	zid	statements	core;own-service	اعرف المزيد	ZD-C-006/decides/ZD-S-0573=Zid Pay, Saudi Arabia | ZD-C-006/decides/ZD-S-0574=Zid Pay, Saudi Arabia | ZD-C-006/decides/ZD-S-0576=mada, plan النمو | ZD-C-006/decides/ZD-S-0577=Zid Pay, Saudi Arabia | ZD-C-006/responsible/ZD-S-0578=Zid Pay, Saudi Arabia | ZD-C-006/responsible/ZD-S-0579=Zid Pay, Saudi Arabia	ZD-C-006/boundary:searched, not found;ZD-C-006/reason:searched, not found	general
+CM-PAY-008	zid	none-held					
+CM-PAY-009	zid	statements	not-stated		ZD-C-007/decides/ZD-S-0581=Zid Pay, Saudi Arabia | ZD-C-007/responsible/ZD-S-0584=Zid Pay, Saudi Arabia | ZD-C-007/responsible/ZD-S-0585=Zid Pay, Saudi Arabia	ZD-C-007/boundary:searched, not found;ZD-C-007/reason:searched, not found	
+CM-PAY-010	zid	none-held					
+CM-PAY-011	zid	statements	core;outside	المدفوعات > بوابات الدفع الأُخرى	ZD-C-011/decides/ZD-S-0605=الإمارات، السعودية، عمان | ZD-C-011/decides/ZD-S-0606=عمان | ZD-C-011/decides/ZD-S-0607=السعودية، الكويت، البحرين، الإمارات، قطر، عمان | ZD-C-011/decides/ZD-S-0608=Zid Pay, Saudi Arabia | ZD-C-011/decides/ZD-S-0610=مستخدمي دول الخليج	ZD-C-011/reason:searched, not found	general
+CM-PAY-012	zid	statements	core		ZD-C-005/decides/ZD-S-0362=plan Rise | ZD-C-005/decides/ZD-S-0566=Kuwait | ZD-C-005/responsible/ZD-S-0568=Zid Pay, Saudi Arabia	ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found	general
+CM-PAY-013	zid	none-held					
+CM-PAY-014	zid	none-held					
+CM-PAY-015	zid	statements	core;outside	لوحة التحكم > المدفوعات > الدفع لاحقاً	ZD-C-012/decides/ZD-S-0616=compare-plans: starter, launch, growth, pro | ZD-C-012/decides/ZD-S-0617=compare-plans: starter, launch, growth, pro	ZD-C-011/reason:searched, not found;ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found;ZD-C-013/reason:searched, not found	general
+CM-PAY-016	zid	statements	core			ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found	general
+CM-PAY-017	zid	statements	core		ZD-C-005/decides/ZD-S-0566=Kuwait	ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found	general
+CM-PAY-018	zid	none-held					
+CM-PAY-019	zid	statements	core	الاعدادات > عام > قيود الشحن والدفع	ZD-C-063/decides/ZD-S-0858=باقة النمو; الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-063/responsible:stated only in general terms;ZD-C-063/boundary:searched, not found	general
+CM-PAY-020	zid	statements	core;extension-point;own-service	المدفوعات > العمليات | لوحة التحكم > المدفوعات > العمليات	ZD-C-002/decides/ZD-S-0540=staff permission (الاعدادات > فريق عمل) | ZD-C-002/decides/ZD-S-0541=Zid Pay, Saudi Arabia | ZD-C-002/responsible/ZD-S-0542=Zid Pay, Saudi Arabia | ZD-C-002/responsible/ZD-S-0543=Zid Pay, Saudi Arabia	ZD-C-002/reason:searched, not found	general
+CM-PAY-021	zid	statements	not-stated	تطبيق زد كاشير > الاعدادات > ربط جهاز الدفع		ZD-C-012/responsible:stated only in general terms;ZD-C-012/reason:searched, not found;ZD-C-108/responsible:observation needed;ZD-C-108/reason:searched, not found	
+CM-PAY-022	zid	none-held					
+CM-PAY-023	zid	none-held					
+CM-PAY-024	zid	none-held					
+CM-PAY-025	zid	none-held					
+CM-PAY-026	zid	statements	core;outside;own-service	تمويل زد (definition)	ZD-C-023/decides/ZD-S-0693=المملكة العربية السعودية	ZD-C-023/responsible:searched, not found;ZD-C-023/reason:searched, not found	general
+CM-PAY-027	zid	none-held					
+CM-PAY-028	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-PAY-029	zid	statements	core;outside	لوحة التحكم > اللوجستيات | محفظة التاجر	ZD-C-014/decides/ZD-S-0631=compare-plans: starter, launch, growth, pro | ZD-C-014/decides/ZD-S-0632=compare-plans: starter, launch, growth, pro | ZD-C-015/decides/ZD-S-0637=compare-plans: starter, launch, growth, pro | ZD-C-015/where/ZD-S-0636=الشحن المباشر (زد شب)	ZD-C-015/responsible:observation needed;ZD-C-015/boundary:searched, not found;ZD-C-015/reason:searched, not found	general
+CM-PAY-030	zid	statements	core	صفحة الدفع	ZD-C-016/decides/ZD-S-0645=compare-plans: starter, launch, growth, pro	ZD-C-016/reason:searched, not found	general
+CM-PAY-031	zid	none-held					
+CM-PAY-032	zid	statements	core	الخدمات > المدفوعات > روابط الدفع		ZD-C-008/responsible:stated only in general terms;ZD-C-008/reason:searched, not found	general
+CM-RET-001	zid	statements	core		ZD-C-081/decides/ZD-S-0909=compare-plans: starter, launch, growth, pro	ZD-C-081/responsible:stated only in general terms;ZD-C-081/reason:searched, not found	compare-plans: starter, launch, growth, pro
+CM-RET-002	zid	statements	core;extension-point;own-service	لوحة التحكم > المدفوعات > العمليات	ZD-C-002/decides/ZD-S-0540=staff permission (الاعدادات > فريق عمل) | ZD-C-002/decides/ZD-S-0541=Zid Pay, Saudi Arabia	ZD-C-002/reason:searched, not found;ZD-C-028/responsible:stated only in general terms;ZD-C-028/reason:searched, not found;ZD-C-081/responsible:stated only in general terms;ZD-C-081/reason:searched, not found	general
+CM-RET-003	zid	statements	core;extension-point;outside	Merchant APIs > Reverse Orders | استرجاع يدوي	ZD-C-081/decides/ZD-S-0910=compare-plans: starter, launch, growth, pro	ZD-C-060/responsible:observation needed;ZD-C-070/reason:searched, not found;ZD-C-081/responsible:stated only in general terms;ZD-C-081/reason:searched, not found	general
+CM-RET-004	zid	none-held					
+CM-SHP-001	zid	statements	core	Merchant APIs > Shipping | إعدادات الشحن | الاعدادات > عام > قيود الشحن والدفع | لوحة التحكم > اللوجستيات > طرق الشحن	ZD-C-063/decides/ZD-S-0858=باقة النمو; الباقة الاحترافية; باقة الأعمال الكبيرة	ZD-C-033/responsible:stated only in general terms;ZD-C-033/reason:searched, not found;ZD-C-060/responsible:observation needed;ZD-C-062/decides:observation needed;ZD-C-062/responsible:stated only in general terms;ZD-C-062/reason:searched, not found;ZD-C-063/responsible:stated only in general terms;ZD-C-063/boundary:searched, not found	general
+CM-SHP-002	zid	statements	core;extension-point;outside	الشحن المباشر	ZD-C-060/decides/ZD-S-0365=plan Rise | ZD-C-060/decides/ZD-S-0380=plan Professional | ZD-C-060/decides/ZD-S-0468=staff permission | ZD-C-060/decides/ZD-S-0837=compare-plans: starter, launch, growth, pro	ZD-C-060/responsible:observation needed	general
+CM-SHP-003	zid	none-held					
+CM-SHP-004	zid	none-held					
+CM-SHP-005	zid	none-held					
+CM-SHP-006	zid	none-held					
+CM-SHP-007	zid	none-held					
+CM-SHP-008	zid	none-held					
+CM-SHP-009	zid	statements	core			ZD-C-060/responsible:observation needed;ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-SHP-010	zid	none-held					
+CM-SHP-011	zid	statements	extension-point;outside	category id 5		ZD-C-060/responsible:observation needed;ZD-C-061/reason:searched, not found;ZD-C-085/responsible:stated only in general terms;ZD-C-085/reason:searched, not found	
+CM-SHP-012	zid	none-held					
+CM-SHP-013	zid	none-held					
+CM-SHP-014	zid	none-held					
+CM-SHP-015	zid	statements	core;extension-point;outside	Shipping apps | category id 5	ZD-C-060/decides/ZD-S-0837=compare-plans: starter, launch, growth, pro | ZD-C-061/decides/ZD-S-0848=المملكة العربية السعودية; دول الخليج	ZD-C-060/responsible:observation needed;ZD-C-061/reason:searched, not found	general
+CM-SHP-016	zid	none-held					
+CM-SHP-017	zid	statements	not-stated			ZD-C-060/responsible:observation needed	
+CM-SHP-018	zid	none-held					
+CM-SHP-019	zid	none-held					
+CM-SHP-020	zid	statements	core		ZD-C-060/responsible/ZD-S-0842=Global Shipping	ZD-C-060/responsible:observation needed	general
+CM-SHP-021	zid	statements	not-stated		ZD-C-115/decides/ZD-S-0470=staff permission	ZD-C-115/boundary:searched, not found;ZD-C-115/responsible:observation needed;ZD-C-115/reason:searched, not found	
+CM-SHP-022	zid	statements	core;outside			ZD-C-060/responsible:observation needed	general
+CM-TAX-001	zid	statements	core	اعدادات الضرائب	ZD-C-051/decides/ZD-S-0370=plan Growth | ZD-C-051/decides/ZD-S-0815=compare-plans: starter, launch, growth, pro | ZD-C-051/decides/ZD-S-0816=compare-plans: starter, launch, growth, pro		general
+CM-TAX-002	zid	none-held					
+CM-TAX-003	zid	statements	core		ZD-C-051/reason/ZD-S-0820=المتاجر السعودية		general
+CM-TAX-004	zid	statements	extension-point			ZD-C-070/reason:searched, not found	
+CM-TAX-005	zid	none-held					
+CM-TAX-006	zid	none-held					
+CM-TAX-007	zid	statements	core	الربط مع منصة فاتورة (ZATCA )		ZD-C-053/responsible:stated only in general terms	general
+CM-TAX-008	zid	statements	core		ZD-C-060/responsible/ZD-S-0842=Global Shipping	ZD-C-060/responsible:observation needed	Global Shipping
+CM-TAX-009	zid	none-held					

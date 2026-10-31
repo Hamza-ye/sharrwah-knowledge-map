@@ -1,0 +1,928 @@
+part	file	line	row	check	mine	result	searched
+B-anchor	evidence.tsv	141	CM-SEL-007/shopify/SH-C-187/where/SH-S-2583	13		S6 (flag: SH-C-187 of domain D without also B; scope.tsv should name B; its ruling U-082 is S3)	
+B-anchor	cells.tsv	10	CM-CAT-005/shopify	5		other reviewer (flag: none-held, 9 hits)	
+B-anchor	cells.tsv	18	CM-CAT-009/shopify	5		other reviewer (flag: none-held, 3 hits)	
+B-anchor	cells.tsv	30	CM-SEL-004/shopify	5		other reviewer (flag: none-held, 1 hit); for check 4, SH-C-190's Event booking apps has no statement (S4)	
+B-anchor	cells.tsv	43	CM-INV-003/salla	5		other reviewer (flag: none-held, 2 hits); for check 10, the name's 'stocktakes' (S12)	
+B-anchor	cells.tsv	51	CM-INV-007/salla	5		other reviewer (flag: none-held, 13 hits); for check 8, inventory-order SA-S-3495 (S8)	
+B-anchor	capabilities.tsv	19	CM-SEL-007	3		holds (flag: nothing landed in its tree; a root, neither CM-CAT-001 nor a SEL capability is its parent by the cited statements; its data S15, its ruling S3)	
+B-woocommerce	cells.tsv	5	CM-CAT-004/woocommerce	5		other reviewer (flag: none-held, 1 hit, WordPress taxonomies, a homonym: S12)	
+B-woocommerce	cells.tsv	10	CM-CAT-009/woocommerce	5		other reviewer (flag: none-held, 7 hits)	
+B-woocommerce	cells.tsv	16	CM-SEL-003/woocommerce	5		other reviewer (flag: none-held, 1 hit)	
+B-woocommerce	cells.tsv	25	CM-INV-004/woocommerce	1		other reviewer (flag: core rests only on boundary statements); for check 10, the name's 'alerts' (S12)	
+B-woocommerce	cells.tsv	26	CM-INV-005/woocommerce	5		other reviewer (flag: none-held, 20 hits)	
+B-woocommerce	cells.tsv	27	CM-INV-006/woocommerce	5		other reviewer (flag: none-held, 9 hits)	
+B-woocommerce	cells.tsv	28	CM-INV-007/woocommerce	5		other reviewer (flag: none-held, 2 hits)	
+B-backfill-woocommerce	cells.tsv	2	CM-CAT-012/shopify	5		other reviewer (flag: none-held, 9 hits); my U-070 search found no product cost (S5)	shopify: cost per item; product cost; View cost; cost of goods; COGS; unitCost; unit cost; costs: 1 (SH-C-065/responsible/SH-S-0566, not a product's cost)
+B-backfill-woocommerce	cells.tsv	3	CM-CAT-012/salla	5		other reviewer (flag: none-held, 18 hits)	salla: تكلفة; التكلفة; cost; سعر التكلفة: 12 (shipping costs and fees)
+B-backfill-woocommerce	cells.tsv	4	CM-SEL-008/shopify	5		other reviewer (flag: none-held, 52 hits); for check 11, no core shown	shopify: membership; members only; member-only; members-only; paid member; member pricing; exclusive access: 0
+B-backfill-woocommerce	cells.tsv	5	CM-SEL-008/salla	5		other reviewer (flag: none-held, 48 hits); for check 11, no core shown	salla: membership; عضوية; العضوية; عضويات; العضويات; اشتراك العضوية; للأعضاء; الأعضاء: 0
+B-backfill-woocommerce	cells.tsv	6	CM-INV-008/shopify	5		other reviewer (flag: none-held, 30 hits)	
+B-backfill-woocommerce	cells.tsv	7	CM-INV-008/salla	5		other reviewer (flag: none-held, 92 hits)	
+B-anchor	landings.tsv	2	SH-C-020	3		holds (match:M-011)	
+B-anchor	landings.tsv	3	SA-C-020	3		S1 (clean, but its bundle and donation statements are cited in CM-SEL-006 and CM-SEL-007, other trees)	
+B-anchor	landings.tsv	4	SA-C-021	3		holds (match:M-011)	
+B-anchor	landings.tsv	5	SH-C-189	3		holds (terms: variant names the same object on both)	
+B-anchor	landings.tsv	6	SA-C-022	3		holds (match:M-011)	
+B-anchor	landings.tsv	7	SH-C-021	3		holds (role, a reading: both sides' statements show a store-defined grouping of products)	
+B-anchor	landings.tsv	8	SA-C-023	3		holds (match:M-011)	
+B-anchor	landings.tsv	9	SH-C-038	3		holds (single)	
+B-anchor	landings.tsv	10	SA-C-028	3		holds (single)	
+B-anchor	landings.tsv	11	SH-C-185	3		holds (single)	
+B-anchor	landings.tsv	12	SH-C-186	3		holds (match:M-074)	
+B-anchor	landings.tsv	13	SA-C-125	3		holds (match:M-074)	
+B-anchor	landings.tsv	14	SA-C-024	3		holds (match:M-076)	
+B-anchor	landings.tsv	15	SH-C-190	3		holds (strained, rightly: its event part has no statement, its NFT part is the child CM-SEL-003)	
+B-anchor	landings.tsv	16	SA-C-031	3		holds (single)	
+B-anchor	landings.tsv	17	SA-C-029	3		holds (single)	
+B-anchor	landings.tsv	18	SH-C-188	3		holds (strained, rightly: its statements are bundles; upsell is D's, pre-orders have no statement)	
+B-anchor	landings.tsv	19	SH-C-022	3		holds (match:M-012)	
+B-anchor	landings.tsv	20	SA-C-025	3		holds (match:M-012)	
+B-anchor	landings.tsv	21	SH-C-024	3		holds (role, a reading: both show where stock is held)	
+B-anchor	landings.tsv	22	SA-C-026	3		holds (role, a reading: both show where stock is held; strained if S2 is applied)	
+B-anchor	landings.tsv	23	SH-C-023	3		holds (terms: inventory transfer names the same object on both)	
+B-woocommerce	landings.tsv	2	WC-C-064	3		holds (match:M-011)	
+B-woocommerce	landings.tsv	3	WC-C-066	3		holds (role, a reading: a product delivered as a file; Shopify's side is a category heading only)	
+B-woocommerce	landings.tsv	4	WC-C-068	3		holds (match:M-012)	
+B-woocommerce	landings.tsv	5	WC-C-093	3		holds (single)	
+B-woocommerce	landings.tsv	6	WC-C-100	3		holds (match:M-074)	
+B-woocommerce	landings.tsv	7	WC-C-101	3		holds (match:M-081)	
+B-woocommerce	landings.tsv	8	WC-C-102	3		holds (single)	
+B-woocommerce	landings.tsv	9	WC-C-104	3		holds (strained, rightly: a Marketplace group; its option and variation categories are cited in CM-CAT-002)	
+concern map	matches.tsv		M-011	3		holds (its concerns landed in one tree: CM-CAT-001's tree)	
+concern map	matches.tsv		M-012	3		holds (its concerns landed in one tree: CM-INV-001)	
+concern map	matches.tsv		M-074	3		holds (its concerns landed in one tree: CM-SEL-001)	
+concern map	matches.tsv		M-076	3		holds (its concerns landed in one tree: CM-SEL-002)	
+concern map	matches.tsv		M-081	3		holds (its concerns landed in one tree: CM-SEL-004)	
+B-anchor	evidence.tsv	137	SA-C-020 cited in CM-SEL-006 (lines 137-140)	3		S1	
+B-anchor	evidence.tsv	142	SA-C-020 cited in CM-SEL-007 (lines 142-145)	3		S1	
+B-anchor	evidence.tsv	183	SH-C-022/decides/SH-S-5024 cited in CM-INV-005	3		holds (one route on stock at a location; a reading)	
+B-anchor	evidence.tsv	150	SH-S-5334 under SH-C-022 (line 150, CM-INV-001) and SH-C-023 (line 204, CM-INV-006)	3		S2 (one statement, two keys, two trees)	
+B-anchor	capabilities.tsv	2	CM-CAT-001	4		holds	
+B-anchor	capabilities.tsv	3	CM-CAT-002	4		holds	
+B-anchor	capabilities.tsv	4	CM-CAT-003	4		holds	
+B-anchor	capabilities.tsv	5	CM-CAT-004	4		holds	
+B-anchor	capabilities.tsv	6	CM-CAT-005	4		holds	
+B-anchor	capabilities.tsv	7	CM-CAT-006	4		holds	
+B-anchor	capabilities.tsv	8	CM-CAT-007	4		holds	
+B-anchor	capabilities.tsv	9	CM-CAT-008	4		holds	
+B-anchor	capabilities.tsv	10	CM-CAT-009	4		holds	
+B-anchor	capabilities.tsv	11	CM-CAT-010	4		holds (SH-C-185 landed; other platforms' cells from also concerns)	
+B-anchor	capabilities.tsv	12	CM-CAT-011	4		holds	
+B-anchor	capabilities.tsv	13	CM-SEL-001	4		holds	
+B-anchor	capabilities.tsv	14	CM-SEL-002	4		holds	
+B-anchor	capabilities.tsv	15	CM-SEL-003	4		holds	
+B-anchor	capabilities.tsv	16	CM-SEL-004	4		holds	
+B-anchor	capabilities.tsv	17	CM-SEL-005	4		holds	
+B-anchor	capabilities.tsv	18	CM-SEL-006	4		holds (two strained coarse concerns; Salla's from SA-C-020 of another tree, S1)	
+B-anchor	capabilities.tsv	19	CM-SEL-007	4		holds (nothing landed in its tree: the flag's row)	
+B-anchor	capabilities.tsv	20	CM-INV-001	4		holds	
+B-anchor	capabilities.tsv	21	CM-INV-002	4		holds	
+B-anchor	capabilities.tsv	22	CM-INV-003	4		holds	
+B-anchor	capabilities.tsv	23	CM-INV-004	4		holds	
+B-anchor	capabilities.tsv	24	CM-INV-005	4		holds	
+B-anchor	capabilities.tsv	25	CM-INV-006	4		S2 (parent: Shopify's own grouping puts transfers under inventory)	
+B-anchor	capabilities.tsv	26	CM-INV-007	4		S2 (parent: a permission dependency isn't a part-of relation)	
+B-woocommerce	capabilities.tsv	2	CM-CAT-012	4		holds (WC-C-093, a child: the cost is kept on the product)	
+B-woocommerce	capabilities.tsv	3	CM-SEL-008	4		holds	
+B-woocommerce	capabilities.tsv	4	CM-INV-008	4		holds (finer than WC-C-068: a setting of its own)	
+B-anchor	capabilities.tsv	2	CM-CAT-001	6		holds	
+B-anchor	capabilities.tsv	3	CM-CAT-002	6		holds	
+B-anchor	capabilities.tsv	4	CM-CAT-003	6		holds	
+B-anchor	capabilities.tsv	5	CM-CAT-004	6		holds	
+B-anchor	capabilities.tsv	6	CM-CAT-005	6		holds	
+B-anchor	capabilities.tsv	7	CM-CAT-006	6		holds	
+B-anchor	capabilities.tsv	8	CM-CAT-007	6		holds	
+B-anchor	capabilities.tsv	9	CM-CAT-008	6		holds	
+B-anchor	capabilities.tsv	10	CM-CAT-009	6		holds (a reading: no statement says what a restriction limits; scope.tsv reads limits on buying, CAT)	
+B-anchor	capabilities.tsv	11	CM-CAT-010	6		holds (where products come from, CAT)	
+B-anchor	capabilities.tsv	12	CM-CAT-011	6		holds	
+B-anchor	capabilities.tsv	13	CM-SEL-001	6		holds	
+B-anchor	capabilities.tsv	14	CM-SEL-002	6		holds	
+B-anchor	capabilities.tsv	15	CM-SEL-003	6		holds	
+B-anchor	capabilities.tsv	16	CM-SEL-004	6		holds (Salla's link is under orders; the channel doesn't set the area)	
+B-anchor	capabilities.tsv	17	CM-SEL-005	6		holds	
+B-anchor	capabilities.tsv	18	CM-SEL-006	6		holds	
+B-anchor	capabilities.tsv	19	CM-SEL-007	6		holds	
+B-anchor	capabilities.tsv	20	CM-INV-001	6		holds	
+B-anchor	capabilities.tsv	21	CM-INV-002	6		holds	
+B-anchor	capabilities.tsv	22	CM-INV-003	6		holds	
+B-anchor	capabilities.tsv	23	CM-INV-004	6		holds	
+B-anchor	capabilities.tsv	24	CM-INV-005	6		holds	
+B-anchor	capabilities.tsv	25	CM-INV-006	6		holds	
+B-anchor	capabilities.tsv	26	CM-INV-007	6		holds	
+B-woocommerce	capabilities.tsv	2	CM-CAT-012	6		holds	
+B-woocommerce	capabilities.tsv	3	CM-SEL-008	6		holds (a selling model; a reading)	
+B-woocommerce	capabilities.tsv	4	CM-INV-008	6		holds	
+B-anchor	capabilities.tsv	2	CM-CAT-001	10		holds	
+B-anchor	capabilities.tsv	3	CM-CAT-002	10		holds	
+B-anchor	capabilities.tsv	4	CM-CAT-003	10		S12 ('collections' and 'categories' name other things on WooCommerce and Shopify)	
+B-anchor	capabilities.tsv	5	CM-CAT-004	10		S12 ('taxonomy' names WordPress taxonomies)	
+B-anchor	capabilities.tsv	6	CM-CAT-005	10		holds	
+B-anchor	capabilities.tsv	7	CM-CAT-006	10		holds	
+B-anchor	capabilities.tsv	8	CM-CAT-007	10		holds	
+B-anchor	capabilities.tsv	9	CM-CAT-008	10		holds	
+B-anchor	capabilities.tsv	10	CM-CAT-009	10		S12 ('restrictions' names WooPayments' prohibited products)	
+B-anchor	capabilities.tsv	11	CM-CAT-010	10		holds	
+B-anchor	capabilities.tsv	12	CM-CAT-011	10		holds	
+B-anchor	capabilities.tsv	13	CM-SEL-001	10		holds	
+B-anchor	capabilities.tsv	14	CM-SEL-002	10		S11 (lacks WooCommerce's term, downloadable products)	
+B-anchor	capabilities.tsv	15	CM-SEL-003	10		holds	
+B-anchor	capabilities.tsv	16	CM-SEL-004	10		holds	
+B-anchor	capabilities.tsv	17	CM-SEL-005	10		holds	
+B-anchor	capabilities.tsv	18	CM-SEL-006	10		holds	
+B-anchor	capabilities.tsv	19	CM-SEL-007	10		holds	
+B-anchor	capabilities.tsv	20	CM-INV-001	10		holds	
+B-anchor	capabilities.tsv	21	CM-INV-002	10		holds	
+B-anchor	capabilities.tsv	22	CM-INV-003	10		S12 ('stocktakes' is Salla's جرد, read as its inventory view)	
+B-anchor	capabilities.tsv	23	CM-INV-004	10		S12 ('alerts'; WooCommerce's cell is a list)	shopify: backorder; oversell; continue selling; negative quantit; out of stock; out-of-stock; low stock; low_stock; notify_low: 0 | woocommerce: same terms: 1 (WC-C-105/decides/WC-S-5476, out-of-stock visibility)
+B-anchor	capabilities.tsv	24	CM-INV-005	10		holds	
+B-anchor	capabilities.tsv	25	CM-INV-006	10		S12 ('between locations' narrower than its child and Shopify's transfers)	
+B-anchor	capabilities.tsv	26	CM-INV-007	10		holds	
+B-woocommerce	capabilities.tsv	2	CM-CAT-012	10		holds	
+B-woocommerce	capabilities.tsv	3	CM-SEL-008	10		holds	
+B-woocommerce	capabilities.tsv	4	CM-INV-008	10		holds	
+B-woocommerce	landings.tsv	2	WC-C-064	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	3	WC-C-066	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	4	WC-C-068	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	5	WC-C-093	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	6	WC-C-100	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	7	WC-C-101	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	8	WC-C-102	10		holds (WooCommerce's where grouping cuts as the capability does)	
+B-woocommerce	landings.tsv	9	WC-C-104	10		holds (strained, rightly: WooCommerce's Merchandising group cuts across CM-SEL-006, CM-CAT-002 and other domains)	
+B-anchor	capabilities.tsv	2	CM-CAT-001	11		holds	
+B-anchor	capabilities.tsv	3	CM-CAT-002	11		holds	
+B-anchor	capabilities.tsv	4	CM-CAT-003	11		holds	
+B-anchor	capabilities.tsv	5	CM-CAT-004	11		S14 (count 1 on two flags, one unreleased)	
+B-anchor	capabilities.tsv	6	CM-CAT-005	11		holds	
+B-anchor	capabilities.tsv	7	CM-CAT-006	11		holds	
+B-anchor	capabilities.tsv	8	CM-CAT-007	11		holds	
+B-anchor	capabilities.tsv	9	CM-CAT-008	11		S14 (count 1 on a Plus-only plan row; Q1's where gap)	
+B-anchor	capabilities.tsv	10	CM-CAT-009	11		holds	
+B-anchor	capabilities.tsv	11	CM-CAT-010	11		S13 (count 2 rests only on other domains' statements)	
+B-anchor	capabilities.tsv	12	CM-CAT-011	11		S7 (count 1 rests on one partner-access permission)	
+B-anchor	capabilities.tsv	13	CM-SEL-001	11		holds	
+B-anchor	capabilities.tsv	14	CM-SEL-002	11		holds	
+B-anchor	capabilities.tsv	15	CM-SEL-003	11		S14 (count 1 on a route behind the apps permission; open if shows)	
+B-anchor	capabilities.tsv	16	CM-SEL-004	11		holds	
+B-anchor	capabilities.tsv	17	CM-SEL-005	11		holds	
+B-anchor	capabilities.tsv	18	CM-SEL-006	11		S14 (count 1 on four scoped flags, one unreleased; open if flags are shows)	
+B-anchor	capabilities.tsv	19	CM-SEL-007	11		holds	
+B-anchor	capabilities.tsv	20	CM-INV-001	11		holds	
+B-anchor	capabilities.tsv	21	CM-INV-002	11		holds	
+B-anchor	capabilities.tsv	22	CM-INV-003	11		holds	
+B-anchor	capabilities.tsv	23	CM-INV-004	11		holds	
+B-anchor	capabilities.tsv	24	CM-INV-005	11		holds	
+B-anchor	capabilities.tsv	25	CM-INV-006	11		holds	
+B-anchor	capabilities.tsv	26	CM-INV-007	11		holds	
+B-woocommerce	capabilities.tsv	2	CM-CAT-012	11		holds	
+B-woocommerce	capabilities.tsv	3	CM-SEL-008	11		S14 (slot; class if a statement names Woo the maker, Q1's gap WC-C-102/boundary)	shopify: membership; members only; member-only; members-only; paid member; member pricing; exclusive access: 0 | salla: membership; عضوية; العضوية; عضويات; العضويات; اشتراك العضوية; للأعضاء; الأعضاء: 0
+B-woocommerce	capabilities.tsv	4	CM-INV-008	11		holds	
+B-anchor	rulings.tsv	2	U-002	7		holds (role, a reading; one key of SA-C-020, outside the candidate: S5)	
+B-anchor	rulings.tsv	3	U-003	7		S4 (two pairs: the transfers pair is joined:CM-INV-006)	
+B-anchor	rulings.tsv	4	U-005	7		holds (apart: SH-C-028 domain E, SA-C-042 domain C; scope holds)	
+B-anchor	rulings.tsv	5	U-013	7		holds (apart: SH-C-035 domain E; scope holds)	
+B-anchor	rulings.tsv	6	U-016	7		S3 (other side all in other domains: apart under both briefs)	
+B-anchor	rulings.tsv	7	U-020	7		holds (apart: SH-C-060 and SA-C-143 domain C; scope holds)	
+B-anchor	rulings.tsv	8	U-057	7		holds (apart: SH-C-127 and SA-C-071 domain D; scope holds)	
+B-anchor	rulings.tsv	9	U-059	7		S4 (three pairs: two apart)	
+B-anchor	rulings.tsv	10	U-060	7		holds (apart: SA-C-032 domain D; scope holds)	
+B-anchor	rulings.tsv	11	U-061	7		S4 (two pairs: bookings apart)	
+B-anchor	rulings.tsv	12	U-070	7		S5 (the Shopify key doesn't stand for product cost)	shopify: cost per item; product cost; View cost; cost of goods; COGS; unitCost; unit cost; costs: 1 (SH-C-065/responsible/SH-S-0566) | shopify outscope: cost: SH-I-2578 landedCostIncoterms | salla: تكلفة; التكلفة; cost; سعر التكلفة: 12 (shipping)
+B-anchor	rulings.tsv	13	U-081	7		holds (apart: SA-C-302 domain G; scope holds)	
+B-anchor	rulings.tsv	14	U-082	7		S3 (other side in another domain: apart under both briefs)	
+B-woocommerce	rulings.tsv	2	U-002	7		holds (joined:CM-CAT-003: every key cited there)	
+B-woocommerce	rulings.tsv	3	U-005	7		holds (apart; WC-C-064 should name E under also: S6)	
+B-woocommerce	rulings.tsv	4	U-059	7		S4 (two pairs: options joined:CM-CAT-002)	
+B-woocommerce	rulings.tsv	5	U-061	7		holds (joined:CM-SEL-002, on role)	
+B-woocommerce	rulings.tsv	6	U-061	7		holds (joined:CM-SEL-004, by M-081)	
+B-woocommerce	rulings.tsv	7	U-070	7		S5 (the Shopify key doesn't stand for product cost)	shopify: cost per item; product cost; View cost; cost of goods; COGS; unitCost; unit cost; costs: 1 (SH-C-065/responsible/SH-S-0566) | shopify outscope: cost: SH-I-2578 landedCostIncoterms | salla: تكلفة; التكلفة; cost; سعر التكلفة: 12 (shipping)
+concern map	uncited --domain B		SH-C-020/where/SH-S-5006	8		holds (product scan behind a beta, an admin tool)	
+concern map	uncited --domain B		SH-C-020/where/SH-S-5008	8		holds (product scan behind a beta, an admin tool)	
+concern map	uncited --domain B		SH-C-020/where/SH-S-5011	8		holds (product import, domain G's; U-081)	
+concern map	uncited --domain B		SH-C-020/decides/SH-S-5007	8		holds (product scan behind a beta, an admin tool)	
+concern map	uncited --domain B		SH-C-020/decides/SH-S-5010	8		holds (eligibility of the cited bulk-edit route)	
+concern map	uncited --domain B		SH-C-020/decides/SH-S-5012	8		holds (product import, domain G's; U-081)	
+concern map	uncited --domain B		SH-C-020/decides/SH-S-5017	8		holds (product import, domain G's; U-081)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6099	8		holds (products/delete topic: CM-CAT-001's events, check 12)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6155	8		holds (Storefront API listing scopes, domain E's)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6154	8		holds (Storefront API listing scopes, domain E's)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6156	8		holds (Storefront API listing scopes, domain E's)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6152	8		holds (Storefront API listing scopes, domain E's)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-6157	8		holds (Storefront API listing scopes, domain E's)	
+concern map	uncited --domain B		SH-C-020/responsible/SH-S-0042	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-1319	8		holds (topic value, duplicate of cited SH-S-6098)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-2535	8		holds (UCP catalog search, agent-facing: E or F)	
+concern map	uncited --domain B		SH-C-020/where/SH-S-7193	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-7194	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-020/boundary/SH-S-7245	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-021/where/SH-S-5108	8		holds (collection bulk editor; its entitlement is cited)	
+concern map	uncited --domain B		SH-C-021/decides/SH-S-5109	8		holds (collection bulk editor's eligibility)	
+concern map	uncited --domain B		SH-C-021/where/SH-S-0918	8		holds (the Collection object's label)	
+concern map	uncited --domain B		SH-C-021/boundary/SH-S-6095	8		holds (collections/create topic: CM-CAT-003's events, check 12)	
+concern map	uncited --domain B		SH-C-021/boundary/SH-S-6096	8		holds (collections/delete topic: CM-CAT-003's events, check 12)	
+concern map	uncited --domain B		SH-C-021/decides/SH-S-6279	8		holds (staff permission to add products to a collection, as cited SH-S-6278)	
+concern map	uncited --domain B		SH-C-021/decides/SH-S-6280	8		holds (plan restriction as cited SH-S-6278: a scope, not a quality)	
+concern map	uncited --domain B		SH-C-021/decides/SH-S-5349	8		holds (the products entitlement, cited under SH-C-020)	
+concern map	uncited --domain B		SH-C-021/boundary/SH-S-7231	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-022/where/SH-S-5177	8		holds (variant bulk editor)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-5010	8		holds (variant bulk editor's eligibility)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-5195	8		holds (counts list route, as cited SH-S-5194)	
+concern map	uncited --domain B		SH-C-022/boundary/SH-S-6002	8		holds (inventory_levels/connect topic: CM-INV-001 or CM-INV-005 events, check 12)	
+concern map	uncited --domain B		SH-C-022/boundary/SH-S-6003	8		holds (inventory_levels/disconnect topic: events, check 12)	
+concern map	uncited --domain B		SH-C-022/boundary/SH-S-6005	8		holds (read_inventory scope line)	
+concern map	uncited --domain B		SH-C-022/boundary/SH-S-6006	8		holds (read_inventory scope line)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-6212	8		holds (staff permission on inventory items, as cited SH-S-6213)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-6214	8		holds (staff permission on inventory items, as cited SH-S-6213)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-6215	8		holds (staff permission on inventory items, as cited SH-S-6213)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-6216	8		holds (staff permission on inventory items, as cited SH-S-6213)	
+concern map	uncited --domain B		SH-C-022/where/SH-S-0777	8		holds (Inventory label, as cited SH-S-1511)	
+concern map	uncited --domain B		SH-C-022/boundary/SH-S-1253	8		holds (inventory_items/create topic: CM-INV-001's events, check 12)	
+concern map	uncited --domain B		SH-C-022/decides/SH-S-5349	8		holds (the products entitlement, cited under SH-C-020)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6008	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6010	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6011	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6012	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6013	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6014	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6015	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6017	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-6018	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-6217	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-6218	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-6219	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-6220	8		holds (shipment or transfer topic, scope or permission: CM-INV-006's events or decides, check 12)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-1000	8		holds (scope value, duplicate)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-1260	8		holds (topic value, duplicate)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5180	8		holds (purchase-order route's eligibility: an organization flag or PRODUCTS, with the cited entitlement; CM-INV-007's decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5181	8		holds (purchase-order route's eligibility: an organization flag or PRODUCTS, with the cited entitlement; CM-INV-007's decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5182	8		holds (purchase-order route's eligibility: an organization flag or PRODUCTS, with the cited entitlement; CM-INV-007's decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5183	8		holds (purchase-order route's eligibility: an organization flag or PRODUCTS, with the cited entitlement; CM-INV-007's decides, check 12)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5019	8		holds (supplier create route; the same statement id is SH-C-186's, cited in CM-SEL-001)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5186	8		holds (supplier details route, as cited SH-S-5185)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5189	8		holds (transfer list route, as cited SH-S-5188)	
+concern map	uncited --domain B		SH-C-023/decides/SH-S-5349	8		holds (the products entitlement, cited under SH-C-020)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-7236	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-023/boundary/SH-S-7237	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-024/decides/SH-S-5201	8		S8 (bins inside a location, behind a beta: CM-INV-005)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6024	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6026	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6027	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6028	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6225	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-6209	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/where/SH-S-0925	8		holds (the Location object's label)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-1012	8		holds (locations topic or scope line: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-1278	8		holds (topic value, duplicate of cited SH-S-6025)	
+concern map	uncited --domain B		SH-C-024/decides/SH-S-5762	8		holds (recorded as a quality, B-anchor/qualities.tsv line 12)	
+concern map	uncited --domain B		SH-C-024/decides/SH-S-5763	8		holds (recorded as a quality, B-anchor/qualities.tsv line 13)	
+concern map	uncited --domain B		SH-C-024/decides/SH-S-5764	8		holds (recorded as a quality, B-anchor/qualities.tsv line 14)	
+concern map	uncited --domain B		SH-C-024/boundary/SH-S-7238	8		holds (ServerIntent rows, admin internals)	
+concern map	uncited --domain B		SH-C-185/decides/SH-S-0755	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-185/responsible/SH-S-0236	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-185/boundary/SH-S-7284	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6071	8		holds (subscription billing topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6072	8		holds (subscription billing topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6074	8		holds (subscription billing topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6075	8		holds (subscription billing topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6161	8		holds (storefront selling-plan scope: CM-SEL-001's boundary)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6162	8		holds (storefront selling-plan scope: CM-SEL-001's boundary)	
+concern map	uncited --domain B		SH-C-186/decides/SH-S-6254	8		holds (contract scopes with staff permissions; app-owned contracts, as cited SH-S-6257)	
+concern map	uncited --domain B		SH-C-186/decides/SH-S-6255	8		holds (contract scope with a staff permission)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6256	8		holds (scope line, as cited SH-S-6257)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-6258	8		holds (scope line, as cited SH-S-6257)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-0892	8		holds (subscriptionContractActivate: CM-SEL-001's boundary)	
+concern map	uncited --domain B		SH-C-186/boundary/SH-S-1055	8		holds (scope value, duplicate of cited SH-S-6286)	
+concern map	uncited --domain B		SH-C-188/decides/SH-S-0755	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-188/responsible/SH-S-0058	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-188/boundary/SH-S-2207	8		holds (the boundary twin of cited where/SH-S-2207)	
+concern map	uncited --domain B		SH-C-189/decides/SH-S-0755	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-189/responsible/SH-S-0058	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-189/boundary/SH-S-7284	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-190/decides/SH-S-0755	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-190/responsible/SH-S-0058	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SH-C-190/boundary/SH-S-7284	8		holds (general terms of apps, third-party services or the merchant's materials)	
+concern map	uncited --domain B		SA-C-020/where/SA-S-1749	8		holds (recommendations on the product page: D or E)	
+concern map	uncited --domain B		SA-C-020/where/SA-S-1751	8		S8 (Automatic pricing: a pricing capability the model lacks)	
+concern map	uncited --domain B		SA-C-020/where/SA-S-1753	8		holds (purchase count shown in the store: E)	
+concern map	uncited --domain B		SA-C-020/where/SA-S-1756	8		holds (product filters: E, U-013)	
+concern map	uncited --domain B		SA-C-020/where/SA-S-1759	8		holds (product sorting: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-1977	8		holds (purchase count shown in the store: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-1978	8		holds (sold-out products at the end of the page: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-1979	8		holds (recommendations: D or E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-1981	8		holds (plan line, duplicate of cited SA-S-1952)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-1983	8		holds (product sorting: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2134	8		holds (product custom fields: E, U-005)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2135	8		holds (product filters: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2251	8		holds (product search permission)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2253	8		S8 (staff permission product_browse: CM-CAT-001)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2254	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2258	8		holds (product sorting permission: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2390	8		holds (restore of deleted data; CM-CAT-001's Deleted products, SA-S-1893, is cited)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2395	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2399	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2468	8		holds (product search, partner permission)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2470	8		holds (product browse, partner permission)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2475	8		holds (product sorting permission: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-2607	8		holds (restore of deleted data, partner permission)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3181	8		holds (customer recommendations: D or E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3351	8		S8 (restriction-product-type: for CM-CAT-009, meaning unstated)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3357	8		holds (product sorting: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3377	8		holds (AI personalization: F)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3473	8		holds (product certificates: meaning unstated)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3478	8		holds (product template: meaning unstated)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3479	8		holds (product filters: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3490	8		S8 (product-sale-start: scheduled sale, no capability)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3494	8		holds (advanced product management: meaning unstated)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3501	8		holds (default product weight: shipping, C)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3502	8		holds (SKU shown in the store: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3503	8		holds (product preview: E)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3515	8		S8 (metal-pricing: pricing)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3517	8		holds (product score: meaning unstated)	
+concern map	uncited --domain B		SA-C-020/decides/SA-S-3518	8		holds (AI enhancement: F)	
+concern map	uncited --domain B		SA-C-020/boundary/SA-S-1022	8		holds (API folder, the twin of cited where/SA-S-1022)	
+concern map	uncited --domain B		SA-C-020/boundary/SA-S-1592	8		holds (product.updated topic: CM-CAT-001's events, check 12)	
+concern map	uncited --domain B		SA-C-020/boundary/SA-S-1593	8		holds (product.deleted topic: CM-CAT-001's events, check 12)	
+concern map	uncited --domain B		SA-C-020/boundary/SA-S-1599	8		holds (product.price.updated topic: CM-CAT-001's events, check 12)	
+concern map	uncited --domain B		SA-C-020/boundary/SA-S-1601	8		holds (product.status.updated topic: CM-CAT-001's events, check 12)	
+concern map	uncited --domain B		SA-C-021/boundary/SA-S-1025	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-021/boundary/SA-S-1600	8		holds (product.option.updated topic: CM-CAT-002's events, check 12)	
+concern map	uncited --domain B		SA-C-022/decides/SA-S-2255	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-022/boundary/SA-S-1053	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-022/boundary/SA-S-1612	8		holds (category.updated topic: CM-CAT-003's events, check 12)	
+concern map	uncited --domain B		SA-C-023/decides/SA-S-2259	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-023/decides/SA-S-2260	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-023/boundary/SA-S-1056	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-023/boundary/SA-S-1614	8		holds (brand.updated topic: CM-CAT-005's events, check 12)	
+concern map	uncited --domain B		SA-C-023/boundary/SA-S-1615	8		holds (brand.deleted topic: CM-CAT-005's events, check 12)	
+concern map	uncited --domain B		SA-C-024/decides/SA-S-2261	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-024/boundary/SA-S-1029	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-025/where/SA-S-1750	8		holds (quantity display in the store: E)	
+concern map	uncited --domain B		SA-C-025/where/SA-S-3609	8		holds (inventory UI package, cited under SA-C-026 in CM-INV-005)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2252	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2256	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2307	8		S8 (staff permission in the transfer group: CM-INV-006's decides)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2308	8		S8 (staff permission in the transfer group: CM-INV-006's decides)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2403	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2524	8		holds (partner permission in the transfer group, beside S8's staff one)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-2525	8		holds (partner permission in the transfer group, beside S8's staff one)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-3094	8		holds (print and export of inventory: G)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-3289	8		holds (return to stock by status, as cited SA-S-1742)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-3482	8		holds (hide out-of-stock products: E)	
+concern map	uncited --domain B		SA-C-025/decides/SA-S-3495	8		S8 (inventory-order: for CM-INV-007 or CM-INV-001, meaning unstated)	
+concern map	uncited --domain B		SA-C-025/boundary/SA-S-1030	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-026/where/SA-S-1755	8		holds (branch priority order: C's order routing, U-020)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-2405	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-2521	8		holds (partner transfer permission; the staff one is cited)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-2522	8		holds (partner transfer permission; the staff one is cited)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-2523	8		holds (partner transfer permission; the staff one is cited)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-3469	8		holds (default branch quantity, unreleased: CM-INV-005, adds nothing)	
+concern map	uncited --domain B		SA-C-026/decides/SA-S-3525	8		holds (multi-warehouse link, unreleased: CM-INV-005, adds nothing)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1042	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1549	8		holds (branches app scope: CM-INV-005's boundary, check 12)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1617	8		holds (branch topic: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1618	8		holds (branch topic: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1619	8		holds (branch topic: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SA-C-026/boundary/SA-S-1620	8		holds (branch topic: CM-INV-005's events, check 12)	
+concern map	uncited --domain B		SA-C-029/decides/SA-S-2262	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-031/decides/SA-S-2291	8		S7 (staff permission uncited; the cell cites the partner one)	
+concern map	uncited --domain B		SA-C-031/boundary/SA-S-1023	8		holds (API folder twin)	
+concern map	uncited --domain B		SA-C-125/boundary/SA-S-1100	8		holds (the APIs folder: F)	
+concern map	uncited --domain B		SA-C-125/boundary/SA-S-1567	8		S8 (Salla's subscriptions app scope: CM-SEL-001's boundary)	
+concern map	uncited --domain B		SA-C-125/boundary/SA-S-1641	8		holds (subscription.updated topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		SA-C-125/boundary/SA-S-1644	8		holds (subscription.charge.failed topic: CM-SEL-001's events, check 12)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0096	8		holds (product custom fields: E, U-005; S6)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0166	8		holds (by-id route, repeats a cited one)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0169	8		holds (by-id route, repeats a cited one)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0172	8		holds (collection-data, a homonym of collections: S12)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0176	8		holds (by-id route, repeats a cited one)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0177	8		holds (by-slug route, repeats a cited one)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0213	8		holds (wc-analytics endpoint: D's analytics)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0214	8		holds (wc-analytics endpoint: D's analytics)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0215	8		holds (wc-analytics endpoint: D's analytics)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0216	8		holds (wc-analytics endpoint: D's analytics)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0217	8		holds (wc-analytics endpoint: D's analytics)	
+concern map	uncited --domain B		WC-C-064/boundary/WC-S-0675	8		holds (product custom fields: E, U-005; S6)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0702	8		holds (the Merchandising group's name: a channel)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0729	8		holds (Additional purchases: D's upsell, nothing stated)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0733	8		holds (Gifts: D's gifting)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0734	8		holds (Order options: C)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0735	8		S8 (Pricing category: pricing)	
+concern map	uncited --domain B		WC-C-104/where/WC-S-0736	8		holds (Product display: E)	
+concern map	uncited --domain B		ZD-C-043/where/ZD-S-0801	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-043/where/ZD-S-0022	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-043/decides/ZD-S-0590	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-043/boundary/ZD-S-0802	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-043/boundary/ZD-S-0008	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/where/ZD-S-0914	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/decides/ZD-S-0915	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/decides/ZD-S-0916	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/decides/ZD-S-0496	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/boundary/ZD-S-0097	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-083/boundary/ZD-S-0060	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/where/ZD-S-0009	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/decides/ZD-S-0917	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/decides/ZD-S-0498	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/boundary/ZD-S-0099	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/boundary/ZD-S-0070	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-084/decides/ZD-S-1020	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/where/ZD-S-0023	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-0918	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-0919	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-0493	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/boundary/ZD-S-0100	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-0372	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/responsible/ZD-S-0920	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-1021	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-1022	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/decides/ZD-S-1023	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		ZD-C-085/boundary/ZD-S-1024	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/where/BC-S-0017	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/decides/BC-S-0018	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/decides/BC-S-0019	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/decides/BC-S-0020	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/boundary/BC-S-0021	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/boundary/BC-S-0022	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-001/boundary/BC-S-0023	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-002/where/BC-S-0024	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-002/boundary/BC-S-0021	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-002/boundary/BC-S-0025	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-003/where/BC-S-0026	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-003/where/BC-S-0027	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-003/decides/BC-S-0028	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-003/boundary/BC-S-0021	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-003/boundary/BC-S-0029	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/where/BC-S-0030	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/where/BC-S-0031	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/decides/BC-S-0032	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/decides/BC-S-0033	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/boundary/BC-S-0034	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/boundary/BC-S-0035	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-004/reason/BC-S-0036	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/where/BC-S-0037	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/decides/BC-S-0038	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/decides/BC-S-0039	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/decides/BC-S-0040	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/boundary/BC-S-0041	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-005/boundary/BC-S-0042	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-008/where/BC-S-0053	8		holds (not read: for the Zid or BigCommerce mapping part)	
+concern map	uncited --domain B		BC-C-008/boundary/BC-S-0054	8		holds (not read: for the Zid or BigCommerce mapping part)	
+B-anchor	qualities.tsv	2	CM-CAT-001/shopify/products a store may sell	9		holds	
+B-anchor	qualities.tsv	3	CM-CAT-001/salla/number of products	9		holds	
+B-anchor	qualities.tsv	4	CM-CAT-002/shopify/variants per product	9		holds	
+B-anchor	qualities.tsv	5	CM-CAT-002/shopify/maxProductVariants	9		holds	
+B-anchor	qualities.tsv	6	CM-CAT-002/shopify/maxProductOptions	9		holds	
+B-anchor	qualities.tsv	7	CM-CAT-006/shopify/tagsPerProductLimitEnabled	9		holds	
+B-anchor	qualities.tsv	8	CM-CAT-007/salla/maximum-uploaded-images	9		holds	
+B-anchor	qualities.tsv	9	CM-SEL-006/salla/bundle-section-products-limit	9		holds	
+B-anchor	qualities.tsv	10	CM-INV-001/salla/max_inventory_types	9		S9 (may bear on CM-INV-005: enable_branch_inventories beside it)	
+B-anchor	qualities.tsv	11	CM-INV-005/shopify/Inventory locations	9		holds	
+B-anchor	qualities.tsv	12	CM-INV-005/shopify/maximumLocations	9		holds	
+B-anchor	qualities.tsv	13	CM-INV-005/shopify/maximumLocations	9		holds	
+B-anchor	qualities.tsv	14	CM-INV-005/shopify/maximumLocations	9		holds	
+B-anchor	qualities.tsv	15	CM-INV-005/salla/store-branch limit	9		holds	
+B-anchor	qualities.tsv	16	CM-INV-005/salla/more branches	9		holds	
+B-anchor	slot-fillers.tsv	2	CM-CAT-004/salla/Google (its taxonomy, google-taxonomy)	9		S10 (a flag's name; no market in its scope)	
+B-anchor	slot-fillers.tsv	3	CM-SEL-001/salla/Apple Pay (recurring-apple-pay)	9		S10 (a flag's name; no market in its scope)	
+B-woocommerce	qualities.tsv	2	CM-INV-008/woocommerce/minutes stock is held for an unpaid order, by default	9		holds (a default its statement calls 'this limit')	
+B-anchor	cells.tsv	2	CM-CAT-001/shopify	12		holds [landed SH-C-020; boundary by landing 13, cited 2; decides by landing 11, cited 5]	
+B-anchor	cells.tsv	3	CM-CAT-001/salla	12		holds [landed SA-C-020; boundary by landing 13, cited 2; decides by landing 53, cited 3]	
+B-woocommerce	cells.tsv	2	CM-CAT-001/woocommerce	12		holds [landed WC-C-064; boundary by landing 39, cited 10; decides by landing 1, cited 1]	
+B-anchor	cells.tsv	4	CM-CAT-002/shopify	12		holds [landed SH-C-189; boundary by landing 1, cited 0; decides by landing 1, cited 2]	
+B-anchor	cells.tsv	5	CM-CAT-002/salla	12		holds [landed SA-C-021; boundary by landing 6, cited 4; decides by landing 3, cited 3]	
+B-woocommerce	cells.tsv	3	CM-CAT-002/woocommerce	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 9; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	6	CM-CAT-003/shopify	12		holds [landed SH-C-021; boundary by landing 6, cited 3; decides by landing 7, cited 3]	
+B-anchor	cells.tsv	7	CM-CAT-003/salla	12		holds [landed SA-C-022; boundary by landing 4, cited 3; decides by landing 6, cited 3]	
+B-woocommerce	cells.tsv	4	CM-CAT-003/woocommerce	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 3; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	8	CM-CAT-004/shopify	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 1; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	9	CM-CAT-004/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 2]	
+B-anchor	cells.tsv	11	CM-CAT-005/salla	12		holds [landed SA-C-023; boundary by landing 5, cited 3; decides by landing 5, cited 3]	
+B-woocommerce	cells.tsv	6	CM-CAT-005/woocommerce	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 2; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	12	CM-CAT-006/shopify	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 1; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	13	CM-CAT-006/salla	12		holds (events from cited keys only: S15) [landed -; boundary by landing 0, cited 2; decides by landing 0, cited 2]	
+B-woocommerce	cells.tsv	7	CM-CAT-006/woocommerce	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 3; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	14	CM-CAT-007/shopify	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 1; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	15	CM-CAT-007/salla	12		holds (events from cited keys only: S15) [landed -; boundary by landing 0, cited 2; decides by landing 0, cited 6]	
+B-woocommerce	cells.tsv	8	CM-CAT-007/woocommerce	12		S15 (NO DATA OR EVENTS derivable; NO DECIDES derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	16	CM-CAT-008/shopify	12		holds [landed SH-C-038; boundary by landing 1, cited 1; decides by landing 1, cited 1]	
+B-anchor	cells.tsv	19	CM-CAT-009/salla	12		S15 (NO DATA OR EVENTS derivable) [landed SA-C-028; boundary by landing 0, cited 0; decides by landing 2, cited 2]	
+B-anchor	cells.tsv	20	CM-CAT-010/shopify	12		holds [landed SH-C-185; boundary by landing 1, cited 0; decides by landing 1, cited 1]	
+B-anchor	cells.tsv	21	CM-CAT-010/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 3]	
+B-woocommerce	cells.tsv	11	CM-CAT-010/woocommerce	12		S15 (NO DATA OR EVENTS derivable; NO DECIDES derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	23	CM-CAT-011/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 2]	
+B-woocommerce	cells.tsv	13	CM-CAT-012/woocommerce	12		holds [landed WC-C-093; boundary by landing 1, cited 1; decides by landing 2, cited 2]	
+B-anchor	cells.tsv	38	CM-INV-001/shopify	12		holds [landed SH-C-022; boundary by landing 7, cited 2; decides by landing 18, cited 4]	
+B-anchor	cells.tsv	39	CM-INV-001/salla	12		holds [landed SA-C-025; boundary by landing 3, cited 1; decides by landing 20, cited 6]	
+B-woocommerce	cells.tsv	22	CM-INV-001/woocommerce	12		holds [landed WC-C-068; boundary by landing 3, cited 2; decides by landing 3, cited 1]	
+B-anchor	cells.tsv	40	CM-INV-002/shopify	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 1]	
+B-anchor	cells.tsv	41	CM-INV-002/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 2]	
+B-anchor	cells.tsv	42	CM-INV-003/shopify	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 5]	
+B-anchor	cells.tsv	45	CM-INV-004/salla	12		holds (events from cited keys only: S15) [landed -; boundary by landing 0, cited 1; decides by landing 0, cited 1]	
+B-woocommerce	cells.tsv	25	CM-INV-004/woocommerce	12		S15 (events only from cited keys (nothing landed); NO DECIDES derivable) [landed -; boundary by landing 0, cited 1; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	46	CM-INV-005/shopify	12		holds [landed SH-C-024; boundary by landing 11, cited 2; decides by landing 6, cited 3]	
+B-anchor	cells.tsv	47	CM-INV-005/salla	12		holds [landed SA-C-026; boundary by landing 8, cited 2; decides by landing 18, cited 7]	
+B-anchor	cells.tsv	48	CM-INV-006/shopify	12		holds [landed SH-C-023; boundary by landing 15, cited 2; decides by landing 21, cited 4]	
+B-anchor	cells.tsv	49	CM-INV-006/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 5]	
+B-anchor	cells.tsv	50	CM-INV-007/shopify	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 5]	
+B-woocommerce	cells.tsv	29	CM-INV-008/woocommerce	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 2]	
+B-anchor	cells.tsv	24	CM-SEL-001/shopify	12		holds [landed SH-C-186; boundary by landing 14, cited 4; decides by landing 5, cited 3]	
+B-anchor	cells.tsv	25	CM-SEL-001/salla	12		holds [landed SA-C-125; boundary by landing 7, cited 3; decides by landing 3, cited 3]	
+B-woocommerce	cells.tsv	14	CM-SEL-001/woocommerce	12		holds [landed WC-C-100; boundary by landing 1, cited 1; decides by landing 1, cited 1]	
+B-anchor	cells.tsv	26	CM-SEL-002/shopify	12		holds [landed SH-C-190; boundary by landing 1, cited 0; decides by landing 2, cited 0]	
+B-anchor	cells.tsv	27	CM-SEL-002/salla	12		holds [landed SA-C-024; boundary by landing 1, cited 0; decides by landing 6, cited 5]	
+B-woocommerce	cells.tsv	15	CM-SEL-002/woocommerce	12		holds [landed WC-C-066; boundary by landing 6, cited 6; decides by landing 3, cited 3]	
+B-anchor	cells.tsv	28	CM-SEL-003/shopify	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 1]	
+B-anchor	cells.tsv	31	CM-SEL-004/salla	12		holds [landed SA-C-031; boundary by landing 1, cited 0; decides by landing 4, cited 3]	
+B-woocommerce	cells.tsv	17	CM-SEL-004/woocommerce	12		holds [landed WC-C-101; boundary by landing 2, cited 2; decides by landing 1, cited 1]	
+B-anchor	cells.tsv	33	CM-SEL-005/salla	12		S15 (NO DATA OR EVENTS derivable) [landed SA-C-029; boundary by landing 0, cited 0; decides by landing 3, cited 2]	
+B-anchor	cells.tsv	34	CM-SEL-006/shopify	12		holds [landed SH-C-188; boundary by landing 2, cited 1; decides by landing 1, cited 0]	
+B-anchor	cells.tsv	35	CM-SEL-006/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 4]	
+B-woocommerce	cells.tsv	19	CM-SEL-006/woocommerce	12		S15 (NO DECIDES derivable) [landed WC-C-104; boundary by landing 1, cited 1; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	36	CM-SEL-007/shopify	12		S15 (NO DATA OR EVENTS derivable; NO DECIDES derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 0]	
+B-anchor	cells.tsv	37	CM-SEL-007/salla	12		S15 (NO DATA OR EVENTS derivable) [landed -; boundary by landing 0, cited 0; decides by landing 0, cited 3]	
+B-woocommerce	cells.tsv	21	CM-SEL-008/woocommerce	12		S15 (NO DATA OR EVENTS derivable; NO DECIDES derivable) [landed WC-C-102; boundary by landing 0, cited 0; decides by landing 0, cited 0]	
+B-anchor	evidence.tsv	2	CM-CAT-001/shopify/SH-C-020/where/SH-S-1509	13		holds	
+B-anchor	evidence.tsv	3	CM-CAT-001/shopify/SH-C-020/where/SH-S-5015	13		holds	
+B-anchor	evidence.tsv	4	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5016	13		holds	
+B-anchor	evidence.tsv	5	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5018	13		holds	
+B-anchor	evidence.tsv	6	CM-CAT-001/shopify/SH-C-020/where/SH-S-5009	13		holds	
+B-anchor	evidence.tsv	7	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5349	13		holds	
+B-anchor	evidence.tsv	8	CM-CAT-001/shopify/SH-C-020/decides/SH-S-7004	13		holds	
+B-anchor	evidence.tsv	9	CM-CAT-001/shopify/SH-C-020/boundary/SH-S-6098	13		holds	
+B-anchor	evidence.tsv	10	CM-CAT-001/shopify/SH-C-020/boundary/SH-S-1051	13		holds	
+B-anchor	evidence.tsv	11	CM-CAT-001/shopify/SH-C-020/where/SH-S-0931	13		holds	
+B-anchor	evidence.tsv	12	CM-CAT-001/shopify/SH-C-020/responsible/SH-S-0236	13		holds	
+B-anchor	evidence.tsv	13	CM-CAT-001/shopify/SH-C-020/decides/SH-S-0031	13		holds	
+B-anchor	evidence.tsv	14	CM-CAT-001/salla/SA-C-020/where/SA-S-1791	13		holds	
+B-anchor	evidence.tsv	15	CM-CAT-001/salla/SA-C-020/where/SA-S-1690	13		holds	
+B-anchor	evidence.tsv	16	CM-CAT-001/salla/SA-C-020/where/SA-S-1796	13		holds	
+B-anchor	evidence.tsv	17	CM-CAT-001/salla/SA-C-020/where/SA-S-1793	13		holds	
+B-anchor	evidence.tsv	18	CM-CAT-001/salla/SA-C-020/where/SA-S-1893	13		holds	
+B-anchor	evidence.tsv	19	CM-CAT-001/salla/SA-C-020/where/SA-S-3530	13		holds	
+B-anchor	evidence.tsv	20	CM-CAT-001/salla/SA-C-020/decides/SA-S-2471	13		holds	
+B-anchor	evidence.tsv	21	CM-CAT-001/salla/SA-C-020/decides/SA-S-1949	13		holds	
+B-anchor	evidence.tsv	22	CM-CAT-001/salla/SA-C-020/decides/SA-S-1952	13		holds	
+B-anchor	evidence.tsv	23	CM-CAT-001/salla/SA-C-020/where/SA-S-1022	13		holds	
+B-anchor	evidence.tsv	24	CM-CAT-001/salla/SA-C-020/boundary/SA-S-1552	13		holds	
+B-anchor	evidence.tsv	25	CM-CAT-001/salla/SA-C-020/boundary/SA-S-1591	13		holds	
+B-anchor	evidence.tsv	26	CM-CAT-002/shopify/SH-C-020/decides/SH-S-7214	13		holds	
+B-anchor	evidence.tsv	27	CM-CAT-002/shopify/SH-C-020/decides/SH-S-5021	13		holds	
+B-anchor	evidence.tsv	28	CM-CAT-002/shopify/SH-C-189/where/SH-S-2644	13		holds	
+B-anchor	evidence.tsv	29	CM-CAT-002/salla/SA-C-021/where/SA-S-1794	13		holds	
+B-anchor	evidence.tsv	30	CM-CAT-002/salla/SA-C-021/decides/SA-S-1973	13		holds	
+B-anchor	evidence.tsv	31	CM-CAT-002/salla/SA-C-021/decides/SA-S-3462	13		holds	
+B-anchor	evidence.tsv	32	CM-CAT-002/salla/SA-C-021/decides/SA-S-3477	13		holds	
+B-anchor	evidence.tsv	33	CM-CAT-002/salla/SA-C-021/where/SA-S-1025	13		holds	
+B-anchor	evidence.tsv	34	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1027	13		holds	
+B-anchor	evidence.tsv	35	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1031	13		holds	
+B-anchor	evidence.tsv	36	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1051	13		holds	
+B-anchor	evidence.tsv	37	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1605	13		holds	
+B-anchor	evidence.tsv	38	CM-CAT-003/shopify/SH-C-021/where/SH-S-1510	13		holds	
+B-anchor	evidence.tsv	39	CM-CAT-003/shopify/SH-C-021/where/SH-S-5110	13		holds	
+B-anchor	evidence.tsv	40	CM-CAT-003/shopify/SH-C-021/decides/SH-S-5111	13		holds	
+B-anchor	evidence.tsv	41	CM-CAT-003/shopify/SH-C-021/decides/SH-S-5580	13		holds	
+B-anchor	evidence.tsv	42	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-6097	13		holds	
+B-anchor	evidence.tsv	43	CM-CAT-003/shopify/SH-C-021/decides/SH-S-6278	13		holds	
+B-anchor	evidence.tsv	44	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-0784	13		holds	
+B-anchor	evidence.tsv	45	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-1171	13		holds	
+B-anchor	evidence.tsv	46	CM-CAT-003/salla/SA-C-022/where/SA-S-1794	13		holds	
+B-anchor	evidence.tsv	47	CM-CAT-003/salla/SA-C-022/decides/SA-S-1974	13		holds	
+B-anchor	evidence.tsv	48	CM-CAT-003/salla/SA-C-022/decides/SA-S-2472	13		holds	
+B-anchor	evidence.tsv	49	CM-CAT-003/salla/SA-C-022/decides/SA-S-3484	13		holds	
+B-anchor	evidence.tsv	50	CM-CAT-003/salla/SA-C-022/where/SA-S-1053	13		holds	
+B-anchor	evidence.tsv	51	CM-CAT-003/salla/SA-C-022/boundary/SA-S-1550	13		holds	
+B-anchor	evidence.tsv	52	CM-CAT-003/salla/SA-C-022/boundary/SA-S-1611	13		holds	
+B-anchor	evidence.tsv	53	CM-CAT-003/salla/SA-C-020/boundary/SA-S-1597	13		holds	
+B-anchor	evidence.tsv	54	CM-CAT-004/shopify/SH-C-028/boundary/SH-S-6240	13		holds (domain E, names B under also)	
+B-anchor	evidence.tsv	55	CM-CAT-004/salla/SA-C-022/decides/SA-S-3506	13		holds	
+B-anchor	evidence.tsv	56	CM-CAT-004/salla/SA-C-022/decides/SA-S-3507	13		holds	
+B-anchor	evidence.tsv	57	CM-CAT-005/salla/SA-C-023/where/SA-S-1757	13		holds	
+B-anchor	evidence.tsv	58	CM-CAT-005/salla/SA-C-023/decides/SA-S-2477	13		holds	
+B-anchor	evidence.tsv	59	CM-CAT-005/salla/SA-C-023/decides/SA-S-2476	13		holds	
+B-anchor	evidence.tsv	60	CM-CAT-005/salla/SA-C-023/decides/SA-S-3460	13		holds	
+B-anchor	evidence.tsv	61	CM-CAT-005/salla/SA-C-023/where/SA-S-1056	13		holds	
+B-anchor	evidence.tsv	62	CM-CAT-005/salla/SA-C-023/boundary/SA-S-1551	13		holds	
+B-anchor	evidence.tsv	63	CM-CAT-005/salla/SA-C-023/boundary/SA-S-1613	13		holds	
+B-anchor	evidence.tsv	64	CM-CAT-005/salla/SA-C-020/boundary/SA-S-1603	13		holds	
+B-anchor	evidence.tsv	65	CM-CAT-006/shopify/SH-C-020/boundary/SH-S-6160	13		holds	
+B-anchor	evidence.tsv	66	CM-CAT-006/salla/SA-C-020/decides/SA-S-1982	13		holds	
+B-anchor	evidence.tsv	67	CM-CAT-006/salla/SA-C-020/decides/SA-S-3470	13		holds	
+B-anchor	evidence.tsv	68	CM-CAT-006/salla/SA-C-020/boundary/SA-S-1024	13		holds	
+B-anchor	evidence.tsv	69	CM-CAT-006/salla/SA-C-020/boundary/SA-S-1604	13		holds	
+B-anchor	evidence.tsv	70	CM-CAT-007/shopify/SH-C-020/where/SH-S-5025	13		holds	
+B-anchor	evidence.tsv	71	CM-CAT-007/shopify/SH-C-028/boundary/SH-S-6240	13		holds (domain E, names B under also)	
+B-anchor	evidence.tsv	72	CM-CAT-007/salla/SA-C-020/decides/SA-S-3520	13		holds	
+B-anchor	evidence.tsv	73	CM-CAT-007/salla/SA-C-020/decides/SA-S-3483	13		holds	
+B-anchor	evidence.tsv	74	CM-CAT-007/salla/SA-C-020/decides/SA-S-3463	13		holds	
+B-anchor	evidence.tsv	75	CM-CAT-007/salla/SA-C-020/decides/SA-S-3521	13		holds	
+B-anchor	evidence.tsv	76	CM-CAT-007/salla/SA-C-020/decides/SA-S-3475	13		holds	
+B-anchor	evidence.tsv	77	CM-CAT-007/salla/SA-C-020/decides/SA-S-3476	13		holds	
+B-anchor	evidence.tsv	78	CM-CAT-007/salla/SA-C-020/boundary/SA-S-1026	13		holds	
+B-anchor	evidence.tsv	79	CM-CAT-007/salla/SA-C-020/boundary/SA-S-1602	13		holds	
+B-anchor	evidence.tsv	80	CM-CAT-008/shopify/SH-C-038/decides/SH-S-7071	13		holds	
+B-anchor	evidence.tsv	81	CM-CAT-008/shopify/SH-C-038/boundary/SH-S-7455	13		holds	
+B-anchor	evidence.tsv	82	CM-CAT-009/salla/SA-C-028/where/SA-S-1801	13		holds	
+B-anchor	evidence.tsv	83	CM-CAT-009/salla/SA-C-028/decides/SA-S-2136	13		holds	
+B-anchor	evidence.tsv	84	CM-CAT-009/salla/SA-C-028/decides/SA-S-3505	13		holds	
+B-anchor	evidence.tsv	85	CM-CAT-010/shopify/SH-C-185/where/SH-S-2568	13		holds	
+B-anchor	evidence.tsv	86	CM-CAT-010/shopify/SH-C-185/where/SH-S-2566	13		holds	
+B-anchor	evidence.tsv	87	CM-CAT-010/shopify/SH-C-141/decides/SH-S-7013	13		holds (domain E, names B under also)	
+B-anchor	evidence.tsv	88	CM-CAT-010/shopify/SH-C-141/where/SH-S-0729	13		holds (domain E, names B under also)	
+B-anchor	evidence.tsv	89	CM-CAT-010/shopify/SH-C-185/responsible/SH-S-0058	13		holds	
+B-anchor	evidence.tsv	90	CM-CAT-010/salla/SA-C-124/where/SA-S-1193	13		holds (domain C, names B under also)	
+B-anchor	evidence.tsv	91	CM-CAT-010/salla/SA-C-124/decides/SA-S-0179	13		holds (domain C, names B under also)	
+B-anchor	evidence.tsv	92	CM-CAT-010/salla/SA-C-098/decides/SA-S-2069	13		holds (domain D, names B under also)	
+B-anchor	evidence.tsv	93	CM-CAT-010/salla/SA-C-098/decides/SA-S-2456	13		holds (domain D, names B under also)	
+B-anchor	evidence.tsv	94	CM-CAT-010/salla/SA-C-124/responsible/SA-S-5054	13		holds (domain C, names B under also)	
+B-anchor	evidence.tsv	95	CM-CAT-011/salla/SA-C-020/decides/SA-S-2612	13		holds	
+B-anchor	evidence.tsv	96	CM-CAT-011/salla/SA-C-020/decides/SA-S-3461	13		holds	
+B-anchor	evidence.tsv	97	CM-SEL-001/shopify/SH-C-186/where/SH-S-2657	13		holds	
+B-anchor	evidence.tsv	98	CM-SEL-001/shopify/SH-C-186/where/SH-S-0763	13		holds	
+B-anchor	evidence.tsv	99	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6257	13		holds	
+B-anchor	evidence.tsv	100	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6286	13		holds	
+B-anchor	evidence.tsv	101	CM-SEL-001/shopify/SH-C-186/decides/SH-S-5019	13		holds	
+B-anchor	evidence.tsv	102	CM-SEL-001/shopify/SH-C-186/decides/SH-S-5144	13		holds	
+B-anchor	evidence.tsv	103	CM-SEL-001/shopify/SH-C-186/responsible/SH-S-0762	13		holds	
+B-anchor	evidence.tsv	104	CM-SEL-001/shopify/SH-C-186/decides/SH-S-0593	13		holds	
+B-anchor	evidence.tsv	105	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-1351	13		holds	
+B-anchor	evidence.tsv	106	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6073	13		holds	
+B-anchor	evidence.tsv	107	CM-SEL-001/salla/SA-C-125/decides/SA-S-3301	13		holds	
+B-anchor	evidence.tsv	108	CM-SEL-001/salla/SA-C-125/decides/SA-S-3302	13		holds	
+B-anchor	evidence.tsv	109	CM-SEL-001/salla/SA-C-125/decides/SA-S-0195	13		holds	
+B-anchor	evidence.tsv	110	CM-SEL-001/salla/SA-C-125/where/SA-S-1173	13		holds	
+B-anchor	evidence.tsv	111	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1642	13		holds	
+B-anchor	evidence.tsv	112	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1643	13		holds	
+B-anchor	evidence.tsv	113	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1645	13		holds	
+B-anchor	evidence.tsv	114	CM-SEL-002/shopify/SH-C-190/where/SH-S-2648	13		holds	
+B-anchor	evidence.tsv	115	CM-SEL-002/salla/SA-C-024/where/SA-S-1894	13		holds	
+B-anchor	evidence.tsv	116	CM-SEL-002/salla/SA-C-024/decides/SA-S-1999	13		holds	
+B-anchor	evidence.tsv	117	CM-SEL-002/salla/SA-C-024/decides/SA-S-2478	13		holds	
+B-anchor	evidence.tsv	118	CM-SEL-002/salla/SA-C-024/decides/SA-S-3496	13		holds	
+B-anchor	evidence.tsv	119	CM-SEL-002/salla/SA-C-024/decides/SA-S-3498	13		holds	
+B-anchor	evidence.tsv	120	CM-SEL-002/salla/SA-C-024/decides/SA-S-3499	13		holds	
+B-anchor	evidence.tsv	121	CM-SEL-002/salla/SA-C-024/where/SA-S-1029	13		holds	
+B-anchor	evidence.tsv	122	CM-SEL-003/shopify/SH-C-190/where/SH-S-5094	13		holds	
+B-anchor	evidence.tsv	123	CM-SEL-003/shopify/SH-C-190/where/SH-S-1550	13		holds	
+B-anchor	evidence.tsv	124	CM-SEL-003/shopify/SH-C-190/decides/SH-S-5095	13		holds	
+B-anchor	evidence.tsv	125	CM-SEL-004/salla/SA-C-031/where/SA-S-1779	13		holds	
+B-anchor	evidence.tsv	126	CM-SEL-004/salla/SA-C-031/decides/SA-S-1994	13		holds	
+B-anchor	evidence.tsv	127	CM-SEL-004/salla/SA-C-031/decides/SA-S-2508	13		holds	
+B-anchor	evidence.tsv	128	CM-SEL-004/salla/SA-C-031/decides/SA-S-3474	13		holds	
+B-anchor	evidence.tsv	129	CM-SEL-004/salla/SA-C-031/where/SA-S-1023	13		holds	
+B-anchor	evidence.tsv	130	CM-SEL-004/salla/SA-C-031/reason/SA-S-5012	13		holds	
+B-anchor	evidence.tsv	131	CM-SEL-005/salla/SA-C-029/where/SA-S-1799	13		holds	
+B-anchor	evidence.tsv	132	CM-SEL-005/salla/SA-C-029/decides/SA-S-2479	13		holds	
+B-anchor	evidence.tsv	133	CM-SEL-005/salla/SA-C-029/decides/SA-S-3508	13		holds	
+B-anchor	evidence.tsv	134	CM-SEL-006/shopify/SH-C-188/where/SH-S-2604	13		holds	
+B-anchor	evidence.tsv	135	CM-SEL-006/shopify/SH-C-188/where/SH-S-2207	13		holds	
+B-anchor	evidence.tsv	136	CM-SEL-006/shopify/SH-C-188/boundary/SH-S-1100	13		holds	
+B-anchor	evidence.tsv	137	CM-SEL-006/salla/SA-C-020/decides/SA-S-3510	13		holds	
+B-anchor	evidence.tsv	138	CM-SEL-006/salla/SA-C-020/decides/SA-S-3385	13		holds	
+B-anchor	evidence.tsv	139	CM-SEL-006/salla/SA-C-020/decides/SA-S-3297	13		holds	
+B-anchor	evidence.tsv	140	CM-SEL-006/salla/SA-C-020/decides/SA-S-3522	13		holds	
+B-anchor	evidence.tsv	141	CM-SEL-007/shopify/SH-C-187/where/SH-S-2583	13		S6 (domain D, B not under also)	
+B-anchor	evidence.tsv	142	CM-SEL-007/salla/SA-C-020/where/SA-S-1760	13		holds	
+B-anchor	evidence.tsv	143	CM-SEL-007/salla/SA-C-020/decides/SA-S-2616	13		holds	
+B-anchor	evidence.tsv	144	CM-SEL-007/salla/SA-C-020/decides/SA-S-3118	13		holds	
+B-anchor	evidence.tsv	145	CM-SEL-007/salla/SA-C-020/decides/SA-S-3481	13		holds	
+B-anchor	evidence.tsv	146	CM-INV-001/shopify/SH-C-022/where/SH-S-1511	13		holds	
+B-anchor	evidence.tsv	147	CM-INV-001/shopify/SH-C-022/where/SH-S-5192	13		holds	
+B-anchor	evidence.tsv	148	CM-INV-001/shopify/SH-C-022/where/SH-S-5178	13		holds	
+B-anchor	evidence.tsv	149	CM-INV-001/shopify/SH-C-022/decides/SH-S-5022	13		holds	
+B-anchor	evidence.tsv	150	CM-INV-001/shopify/SH-C-022/decides/SH-S-5334	13		holds	
+B-anchor	evidence.tsv	151	CM-INV-001/shopify/SH-C-022/decides/SH-S-7009	13		holds	
+B-anchor	evidence.tsv	152	CM-INV-001/shopify/SH-C-022/boundary/SH-S-6004	13		holds	
+B-anchor	evidence.tsv	153	CM-INV-001/shopify/SH-C-022/decides/SH-S-6213	13		holds	
+B-anchor	evidence.tsv	154	CM-INV-001/shopify/SH-C-022/boundary/SH-S-0997	13		holds	
+B-anchor	evidence.tsv	155	CM-INV-001/salla/SA-C-025/where/SA-S-1688	13		holds	
+B-anchor	evidence.tsv	156	CM-INV-001/salla/SA-C-025/where/SA-S-1797	13		holds	
+B-anchor	evidence.tsv	157	CM-INV-001/salla/SA-C-025/where/SA-S-1803	13		holds	
+B-anchor	evidence.tsv	158	CM-INV-001/salla/SA-C-025/decides/SA-S-1976	13		holds	
+B-anchor	evidence.tsv	159	CM-INV-001/salla/SA-C-025/decides/SA-S-1975	13		holds	
+B-anchor	evidence.tsv	160	CM-INV-001/salla/SA-C-025/decides/SA-S-2096	13		holds	
+B-anchor	evidence.tsv	161	CM-INV-001/salla/SA-C-025/decides/SA-S-2473	13		holds	
+B-anchor	evidence.tsv	162	CM-INV-001/salla/SA-C-025/decides/SA-S-3504	13		holds	
+B-anchor	evidence.tsv	163	CM-INV-001/salla/SA-C-025/decides/SA-S-2620	13		holds	
+B-anchor	evidence.tsv	164	CM-INV-001/salla/SA-C-025/where/SA-S-1742	13		holds	
+B-anchor	evidence.tsv	165	CM-INV-001/salla/SA-C-025/where/SA-S-1758	13		holds	
+B-anchor	evidence.tsv	166	CM-INV-001/salla/SA-C-025/where/SA-S-1030	13		holds	
+B-anchor	evidence.tsv	167	CM-INV-001/salla/SA-C-025/boundary/SA-S-1594	13		holds	
+B-anchor	evidence.tsv	168	CM-INV-002/shopify/SH-C-022/decides/SH-S-5193	13		holds	
+B-anchor	evidence.tsv	169	CM-INV-002/salla/SA-C-025/where/SA-S-1891	13		holds	
+B-anchor	evidence.tsv	170	CM-INV-002/salla/SA-C-025/decides/SA-S-3472	13		holds	
+B-anchor	evidence.tsv	171	CM-INV-002/salla/SA-C-025/decides/SA-S-2469	13		holds	
+B-anchor	evidence.tsv	172	CM-INV-002/salla/SA-C-025/reason/SA-S-5011	13		holds	
+B-anchor	evidence.tsv	173	CM-INV-003/shopify/SH-C-022/decides/SH-S-5194	13		holds	
+B-anchor	evidence.tsv	174	CM-INV-003/shopify/SH-C-022/decides/SH-S-5196	13		holds	
+B-anchor	evidence.tsv	175	CM-INV-003/shopify/SH-C-022/decides/SH-S-7158	13		holds	
+B-anchor	evidence.tsv	176	CM-INV-003/shopify/SH-C-022/decides/SH-S-7159	13		holds	
+B-anchor	evidence.tsv	177	CM-INV-003/shopify/SH-C-022/decides/SH-S-7160	13		holds	
+B-anchor	evidence.tsv	178	CM-INV-004/salla/SA-C-025/decides/SA-S-3471	13		holds	
+B-anchor	evidence.tsv	179	CM-INV-004/salla/SA-C-025/boundary/SA-S-1595	13		holds	
+B-anchor	evidence.tsv	180	CM-INV-005/shopify/SH-C-024/where/SH-S-1493	13		holds	
+B-anchor	evidence.tsv	181	CM-INV-005/shopify/SH-C-024/decides/SH-S-5200	13		holds	
+B-anchor	evidence.tsv	182	CM-INV-005/shopify/SH-C-024/decides/SH-S-7010	13		holds	
+B-anchor	evidence.tsv	183	CM-INV-005/shopify/SH-C-022/decides/SH-S-5024	13		holds	
+B-anchor	evidence.tsv	184	CM-INV-005/shopify/SH-C-024/boundary/SH-S-6025	13		holds	
+B-anchor	evidence.tsv	185	CM-INV-005/shopify/SH-C-024/boundary/SH-S-6206	13		holds	
+B-anchor	evidence.tsv	186	CM-INV-005/salla/SA-C-026/where/SA-S-1808	13		holds	
+B-anchor	evidence.tsv	187	CM-INV-005/salla/SA-C-026/where/SA-S-1810	13		holds	
+B-anchor	evidence.tsv	188	CM-INV-005/salla/SA-C-026/where/SA-S-3609	13		holds	
+B-anchor	evidence.tsv	189	CM-INV-005/salla/SA-C-026/decides/SA-S-2622	13		holds	
+B-anchor	evidence.tsv	190	CM-INV-005/salla/SA-C-026/decides/SA-S-3338	13		holds	
+B-anchor	evidence.tsv	191	CM-INV-005/salla/SA-C-026/decides/SA-S-3341	13		holds	
+B-anchor	evidence.tsv	192	CM-INV-005/salla/SA-C-026/decides/SA-S-3516	13		holds	
+B-anchor	evidence.tsv	193	CM-INV-005/salla/SA-C-026/decides/SA-S-2028	13		holds	
+B-anchor	evidence.tsv	194	CM-INV-005/salla/SA-C-026/decides/SA-S-2190	13		holds	
+B-anchor	evidence.tsv	195	CM-INV-005/salla/SA-C-026/decides/SA-S-3468	13		holds	
+B-anchor	evidence.tsv	196	CM-INV-005/salla/SA-C-026/where/SA-S-1042	13		holds	
+B-anchor	evidence.tsv	197	CM-INV-005/salla/SA-C-026/boundary/SA-S-1043	13		holds	
+B-anchor	evidence.tsv	198	CM-INV-005/salla/SA-C-026/boundary/SA-S-1616	13		holds	
+B-anchor	evidence.tsv	199	CM-INV-006/shopify/SH-C-023/where/SH-S-1513	13		holds	
+B-anchor	evidence.tsv	200	CM-INV-006/shopify/SH-C-023/where/SH-S-5187	13		holds	
+B-anchor	evidence.tsv	201	CM-INV-006/shopify/SH-C-023/decides/SH-S-5188	13		holds	
+B-anchor	evidence.tsv	202	CM-INV-006/shopify/SH-C-023/decides/SH-S-5190	13		holds	
+B-anchor	evidence.tsv	203	CM-INV-006/shopify/SH-C-023/decides/SH-S-5191	13		holds	
+B-anchor	evidence.tsv	204	CM-INV-006/shopify/SH-C-023/decides/SH-S-5334	13		holds	
+B-anchor	evidence.tsv	205	CM-INV-006/shopify/SH-C-023/boundary/SH-S-6016	13		holds	
+B-anchor	evidence.tsv	206	CM-INV-006/shopify/SH-C-023/boundary/SH-S-6009	13		holds	
+B-anchor	evidence.tsv	207	CM-INV-006/shopify/SH-C-023/where/SH-S-0924	13		holds	
+B-anchor	evidence.tsv	208	CM-INV-006/salla/SA-C-026/where/SA-S-1798	13		holds	
+B-anchor	evidence.tsv	209	CM-INV-006/salla/SA-C-026/decides/SA-S-2303	13		holds	
+B-anchor	evidence.tsv	210	CM-INV-006/salla/SA-C-026/decides/SA-S-2304	13		holds	
+B-anchor	evidence.tsv	211	CM-INV-006/salla/SA-C-026/decides/SA-S-2305	13		holds	
+B-anchor	evidence.tsv	212	CM-INV-006/salla/SA-C-026/decides/SA-S-2306	13		holds	
+B-anchor	evidence.tsv	213	CM-INV-006/salla/SA-C-026/decides/SA-S-2520	13		holds	
+B-anchor	evidence.tsv	214	CM-INV-007/shopify/SH-C-023/where/SH-S-1512	13		holds	
+B-anchor	evidence.tsv	215	CM-INV-007/shopify/SH-C-023/where/SH-S-5179	13		holds	
+B-anchor	evidence.tsv	216	CM-INV-007/shopify/SH-C-023/where/SH-S-5184	13		holds	
+B-anchor	evidence.tsv	217	CM-INV-007/shopify/SH-C-023/decides/SH-S-5185	13		holds	
+B-anchor	evidence.tsv	218	CM-INV-007/shopify/SH-C-023/decides/SH-S-7156	13		holds	
+B-anchor	evidence.tsv	219	CM-INV-007/shopify/SH-C-023/decides/SH-S-7157	13		holds	
+B-anchor	evidence.tsv	220	CM-INV-007/shopify/SH-C-023/decides/SH-S-6007	13		holds	
+B-anchor	evidence.tsv	221	CM-INV-007/shopify/SH-C-023/decides/SH-S-6221	13		holds	
+B-anchor	cells.tsv	2	CM-CAT-001/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	3	CM-CAT-001/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	4	CM-CAT-002/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	5	CM-CAT-002/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	6	CM-CAT-003/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	7	CM-CAT-003/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	8	CM-CAT-004/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	9	CM-CAT-004/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	10	CM-CAT-005/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	11	CM-CAT-005/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	12	CM-CAT-006/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	13	CM-CAT-006/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	14	CM-CAT-007/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	15	CM-CAT-007/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	16	CM-CAT-008/shopify	13		S17 (Q1's SH-C-038/where gap, observation needed, not named in the reading)	
+B-anchor	cells.tsv	17	CM-CAT-008/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	18	CM-CAT-009/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	19	CM-CAT-009/salla	13		holds (Q1 gaps SA-C-028/boundary:page not read: no claim of the cell rests on them)	
+B-anchor	cells.tsv	20	CM-CAT-010/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	21	CM-CAT-010/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	22	CM-CAT-011/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	23	CM-CAT-011/salla	13		S17 (the reading's 'a permission' is one a partner can request)	
+B-anchor	cells.tsv	24	CM-SEL-001/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	25	CM-SEL-001/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	26	CM-SEL-002/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	27	CM-SEL-002/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	28	CM-SEL-003/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	29	CM-SEL-003/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	30	CM-SEL-004/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	31	CM-SEL-004/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	32	CM-SEL-005/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	33	CM-SEL-005/salla	13		holds (Q1 gaps SA-C-029/boundary:page not read: no claim of the cell rests on them)	
+B-anchor	cells.tsv	34	CM-SEL-006/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	35	CM-SEL-006/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	36	CM-SEL-007/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	37	CM-SEL-007/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	38	CM-INV-001/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	39	CM-INV-001/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	40	CM-INV-002/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	41	CM-INV-002/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	42	CM-INV-003/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	43	CM-INV-003/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	44	CM-INV-004/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	45	CM-INV-004/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	46	CM-INV-005/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	47	CM-INV-005/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	48	CM-INV-006/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	49	CM-INV-006/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	50	CM-INV-007/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-anchor	cells.tsv	51	CM-INV-007/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	evidence.tsv	2	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0049	13		holds	
+B-woocommerce	evidence.tsv	3	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0050	13		holds	
+B-woocommerce	evidence.tsv	4	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0051	13		holds	
+B-woocommerce	evidence.tsv	5	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0002	13		holds	
+B-woocommerce	evidence.tsv	6	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0012	13		holds	
+B-woocommerce	evidence.tsv	7	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-5388	13		holds	
+B-woocommerce	evidence.tsv	8	CM-CAT-001/woocommerce/WC-C-064/decides/WC-S-5387	13		holds	
+B-woocommerce	evidence.tsv	9	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0907	13		holds	
+B-woocommerce	evidence.tsv	10	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0670	13		holds	
+B-woocommerce	evidence.tsv	11	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0100	13		holds	
+B-woocommerce	evidence.tsv	12	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0132	13		holds	
+B-woocommerce	evidence.tsv	13	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0143	13		holds	
+B-woocommerce	evidence.tsv	14	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0175	13		holds	
+B-woocommerce	evidence.tsv	15	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0265	13		holds	
+B-woocommerce	evidence.tsv	16	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0266	13		holds	
+B-woocommerce	evidence.tsv	17	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0267	13		holds	
+B-woocommerce	evidence.tsv	18	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0268	13		holds	
+B-woocommerce	evidence.tsv	19	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0269	13		holds	
+B-woocommerce	evidence.tsv	20	CM-CAT-002/woocommerce/WC-C-064/where/WC-S-0055	13		holds	
+B-woocommerce	evidence.tsv	21	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0672	13		holds	
+B-woocommerce	evidence.tsv	22	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0673	13		holds	
+B-woocommerce	evidence.tsv	23	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0671	13		holds	
+B-woocommerce	evidence.tsv	24	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0094	13		holds	
+B-woocommerce	evidence.tsv	25	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0093	13		holds	
+B-woocommerce	evidence.tsv	26	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0101	13		holds	
+B-woocommerce	evidence.tsv	27	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0118	13		holds	
+B-woocommerce	evidence.tsv	28	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0165	13		holds	
+B-woocommerce	evidence.tsv	29	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0167	13		holds	
+B-woocommerce	evidence.tsv	30	CM-CAT-002/woocommerce/WC-C-104/where/WC-S-0737	13		holds	
+B-woocommerce	evidence.tsv	31	CM-CAT-002/woocommerce/WC-C-104/where/WC-S-0738	13		holds	
+B-woocommerce	evidence.tsv	32	CM-CAT-003/woocommerce/WC-C-064/where/WC-S-0052	13		holds	
+B-woocommerce	evidence.tsv	33	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0674	13		holds	
+B-woocommerce	evidence.tsv	34	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0095	13		holds	
+B-woocommerce	evidence.tsv	35	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0168	13		holds	
+B-woocommerce	evidence.tsv	36	CM-CAT-005/woocommerce/WC-C-064/where/WC-S-0054	13		holds	
+B-woocommerce	evidence.tsv	37	CM-CAT-005/woocommerce/WC-C-064/boundary/WC-S-0170	13		holds	
+B-woocommerce	evidence.tsv	38	CM-CAT-005/woocommerce/WC-C-064/boundary/WC-S-0171	13		holds	
+B-woocommerce	evidence.tsv	39	CM-CAT-006/woocommerce/WC-C-064/where/WC-S-0053	13		holds	
+B-woocommerce	evidence.tsv	40	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0677	13		holds	
+B-woocommerce	evidence.tsv	41	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0099	13		holds	
+B-woocommerce	evidence.tsv	42	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0174	13		holds	
+B-woocommerce	evidence.tsv	43	CM-CAT-007/woocommerce/WC-C-107/where/WC-S-0742	13		holds (domain E, names B under also)	
+B-woocommerce	evidence.tsv	44	CM-CAT-010/woocommerce/WC-C-061/where/WC-S-0713	13		holds (domain C, names B under also)	
+B-woocommerce	evidence.tsv	45	CM-CAT-012/woocommerce/WC-C-093/where/WC-S-5446	13		holds	
+B-woocommerce	evidence.tsv	46	CM-CAT-012/woocommerce/WC-C-093/decides/WC-S-5445	13		holds	
+B-woocommerce	evidence.tsv	47	CM-CAT-012/woocommerce/WC-C-093/decides/WC-S-0940	13		holds	
+B-woocommerce	evidence.tsv	48	CM-CAT-012/woocommerce/WC-C-093/boundary/WC-S-5447	13		holds	
+B-woocommerce	evidence.tsv	49	CM-SEL-001/woocommerce/WC-C-100/where/WC-S-0739	13		holds	
+B-woocommerce	evidence.tsv	50	CM-SEL-001/woocommerce/WC-C-100/decides/WC-S-5351	13		holds (its note's inference isn't carried into a placement: shows)	
+B-woocommerce	evidence.tsv	51	CM-SEL-001/woocommerce/WC-C-100/where/WC-S-5350	13		holds	
+B-woocommerce	evidence.tsv	52	CM-SEL-001/woocommerce/WC-C-100/boundary/WC-S-5469	13		holds	
+B-woocommerce	evidence.tsv	53	CM-SEL-002/woocommerce/WC-C-066/where/WC-S-0014	13		holds	
+B-woocommerce	evidence.tsv	54	CM-SEL-002/woocommerce/WC-C-066/where/WC-S-0073	13		holds	
+B-woocommerce	evidence.tsv	55	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5393	13		holds	
+B-woocommerce	evidence.tsv	56	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5394	13		holds	
+B-woocommerce	evidence.tsv	57	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5395	13		holds	
+B-woocommerce	evidence.tsv	58	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0087	13		holds	
+B-woocommerce	evidence.tsv	59	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0242	13		holds	
+B-woocommerce	evidence.tsv	60	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0243	13		holds	
+B-woocommerce	evidence.tsv	61	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0211	13		holds	
+B-woocommerce	evidence.tsv	62	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0359	13		holds	
+B-woocommerce	evidence.tsv	63	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0363	13		holds	
+B-woocommerce	evidence.tsv	64	CM-SEL-004/woocommerce/WC-C-101/where/WC-S-0731	13		holds	
+B-woocommerce	evidence.tsv	65	CM-SEL-004/woocommerce/WC-C-101/decides/WC-S-5352	13		holds	
+B-woocommerce	evidence.tsv	66	CM-SEL-004/woocommerce/WC-C-101/boundary/WC-S-5353	13		holds	
+B-woocommerce	evidence.tsv	67	CM-SEL-004/woocommerce/WC-C-101/boundary/WC-S-5470	13		holds	
+B-woocommerce	evidence.tsv	68	CM-SEL-006/woocommerce/WC-C-104/where/WC-S-0732	13		holds	
+B-woocommerce	evidence.tsv	69	CM-SEL-006/woocommerce/WC-C-104/boundary/WC-S-5474	13		holds	
+B-woocommerce	evidence.tsv	70	CM-SEL-008/woocommerce/WC-C-102/where/WC-S-0728	13		holds	
+B-woocommerce	evidence.tsv	71	CM-INV-001/woocommerce/WC-C-068/where/WC-S-0013	13		holds	
+B-woocommerce	evidence.tsv	72	CM-INV-001/woocommerce/WC-C-068/decides/WC-S-5400	13		holds	
+B-woocommerce	evidence.tsv	73	CM-INV-001/woocommerce/WC-C-068/where/WC-S-0074	13		holds	
+B-woocommerce	evidence.tsv	74	CM-INV-001/woocommerce/WC-C-068/boundary/WC-S-0240	13		holds	
+B-woocommerce	evidence.tsv	75	CM-INV-001/woocommerce/WC-C-068/boundary/WC-S-0241	13		holds	
+B-woocommerce	evidence.tsv	76	CM-INV-004/woocommerce/WC-C-068/boundary/WC-S-0219	13		holds	
+B-woocommerce	evidence.tsv	77	CM-INV-008/woocommerce/WC-C-068/decides/WC-S-5401	13		holds	
+B-woocommerce	evidence.tsv	78	CM-INV-008/woocommerce/WC-C-068/decides/WC-S-5402	13		holds	
+B-woocommerce	cells.tsv	2	CM-CAT-001/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	3	CM-CAT-002/woocommerce	13		holds (Q1 gaps WC-C-104/decides:stated only in general terms: no claim of the cell rests on them)	
+B-woocommerce	cells.tsv	4	CM-CAT-003/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	5	CM-CAT-004/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	6	CM-CAT-005/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	7	CM-CAT-006/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	8	CM-CAT-007/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	9	CM-CAT-008/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	10	CM-CAT-009/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	11	CM-CAT-010/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	12	CM-CAT-011/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	13	CM-CAT-012/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	14	CM-SEL-001/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	15	CM-SEL-002/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	16	CM-SEL-003/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	17	CM-SEL-004/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	18	CM-SEL-005/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	19	CM-SEL-006/woocommerce	13		holds (Q1 gaps WC-C-104/decides:stated only in general terms: no claim of the cell rests on them)	
+B-woocommerce	cells.tsv	20	CM-SEL-007/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	21	CM-SEL-008/woocommerce	13		holds (Q1 gaps WC-C-102/decides:stated only in general terms; WC-C-102/boundary:searched, not found: named in the reading; the maker gap turns the kind, S14)	
+B-woocommerce	cells.tsv	22	CM-INV-001/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	23	CM-INV-002/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	24	CM-INV-003/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	25	CM-INV-004/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	26	CM-INV-005/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	27	CM-INV-006/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	28	CM-INV-007/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	cells.tsv	29	CM-INV-008/woocommerce	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	2	CM-CAT-012/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	3	CM-CAT-012/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	4	CM-SEL-008/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	5	CM-SEL-008/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	6	CM-INV-008/shopify	13		holds (no Q1 gap on where, decides or boundary)	
+B-backfill-woocommerce	cells.tsv	7	CM-INV-008/salla	13		holds (no Q1 gap on where, decides or boundary)	
+B-woocommerce	notes.md	97	- **U-005 `joined:CM-CAT-001`:** WC-C-064 and SA-C-020 are b	13		S16 (stale: rulings.tsv now reads apart)	
+B-woocommerce	notes.md	106	- **U-070 `joined:CM-CAT-012`, by grain:** WC-C-093 lands in	13		S16 (stale: rulings.tsv now reads apart)	
+B-woocommerce	notes.md	248	- **`joined` is forced by the model's trees.** For U-005 and	13		S16 (stale: rulings.tsv now reads apart)	
+B-woocommerce	notes.md	268	7. Making CM-CAT-012 a child of CM-CAT-001, which makes U-07	13		S16 (stale: rulings.tsv now reads apart)	

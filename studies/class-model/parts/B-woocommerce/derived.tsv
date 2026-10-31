@@ -1,0 +1,30 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CAT-001	woocommerce	statements	core	Installing and Uninstalling WooCommerce | Products | Products > Add New | Products > All Products | Products > General | product (post type)		WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-CAT-002	woocommerce	statements	core;extension-point	Extensions > Merchandising > Product options | Extensions > Merchandising > Product variations | Products > Attributes		WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found;WC-C-104/decides:stated only in general terms;WC-C-104/responsible:stated only in general terms;WC-C-104/reason:searched, not found	general
+CM-CAT-003	woocommerce	statements	core	Products > Categories		WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-CAT-004	woocommerce	none-held					
+CM-CAT-005	woocommerce	statements	core	Products > Brands		WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-CAT-006	woocommerce	statements	core	Products > Tags		WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-CAT-007	woocommerce	statements	extension-point	Extensions > Store content and customizations > Product images and media		WC-C-107/responsible:stated only in general terms	
+CM-CAT-008	woocommerce	none-held					
+CM-CAT-009	woocommerce	none-held					
+CM-CAT-010	woocommerce	statements	extension-point	Extensions > Shipping, delivery and fulfillment > Fulfillment and dropshipping		WC-C-061/reason:searched, not found	
+CM-CAT-011	woocommerce	none-held					
+CM-CAT-012	woocommerce	statements	core	_cogs_value		WC-C-093/responsible:stated only in general terms;WC-C-093/reason:searched, not found	general
+CM-CAT-013	woocommerce	statements	extension-point	Extensions > Merchandising > Pricing		WC-C-104/decides:stated only in general terms;WC-C-104/responsible:stated only in general terms;WC-C-104/reason:searched, not found	
+CM-INV-001	woocommerce	statements	core	Analytics > Stock | Products > Inventory		WC-C-068/responsible:stated only in general terms;WC-C-068/reason:searched, not found	general
+CM-INV-002	woocommerce	none-held					
+CM-INV-003	woocommerce	none-held					
+CM-INV-004	woocommerce	statements	core			WC-C-068/responsible:stated only in general terms;WC-C-068/reason:searched, not found	general
+CM-INV-005	woocommerce	none-held					
+CM-INV-006	woocommerce	none-held					
+CM-INV-007	woocommerce	none-held					
+CM-INV-008	woocommerce	statements	core			WC-C-068/responsible:stated only in general terms;WC-C-068/reason:searched, not found	general
+CM-SEL-001	woocommerce	statements	extension-point	Extensions > Merchandising > Subscriptions | WooCommerce > Settings > Subscriptions	WC-C-100/boundary/WC-S-5469=WooCommerce Subscriptions | WC-C-100/decides/WC-S-5351=WooCommerce Subscriptions | WC-C-100/where/WC-S-5350=WooCommerce Subscriptions	WC-C-100/responsible:stated only in general terms;WC-C-100/reason:searched, not found	
+CM-SEL-002	woocommerce	statements	core	Analytics > Downloads | Products > Downloadable products		WC-C-066/responsible:stated only in general terms;WC-C-066/reason:searched, not found	general
+CM-SEL-003	woocommerce	none-held					
+CM-SEL-004	woocommerce	statements	extension-point	Extensions > Merchandising > Bookings and appointments	WC-C-101/boundary/WC-S-5353=WooCommerce Bookings | WC-C-101/boundary/WC-S-5470=WooCommerce Bookings | WC-C-101/decides/WC-S-5352=WooCommerce Bookings	WC-C-101/responsible:stated only in general terms;WC-C-101/reason:searched, not found	
+CM-SEL-005	woocommerce	none-held					
+CM-SEL-006	woocommerce	statements	extension-point	Extensions > Merchandising > Bundles	WC-C-104/boundary/WC-S-5474=Product Bundles	WC-C-104/decides:stated only in general terms;WC-C-104/responsible:stated only in general terms;WC-C-104/reason:searched, not found	
+CM-SEL-007	woocommerce	none-held					
+CM-SEL-008	woocommerce	statements	extension-point	Extensions > Merchandising > Memberships		WC-C-102/decides:stated only in general terms;WC-C-102/responsible:stated only in general terms;WC-C-102/boundary:searched, not found;WC-C-102/reason:searched, not found	

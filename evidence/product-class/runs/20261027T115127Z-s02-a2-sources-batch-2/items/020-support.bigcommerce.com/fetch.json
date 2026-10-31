@@ -1,0 +1,18 @@
+{
+ "n": 20,
+ "url": "https://support.bigcommerce.com/s/article/Store-Owner",
+ "dir": "items/020-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:51:40Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Store-Owner?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191525,
+ "cited_in": [
+  "S-02 A2 BC-1b, read"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "c1153792ff79f67415707a117ef416074fb24a49b64a10ea3f02414a2c93092d",
+ "raw_ext": "html"
+}

@@ -1,0 +1,18 @@
+{
+ "n": 3,
+ "url": "https://docs.stripe.com/api/tax/registrations/object",
+ "dir": "items/003-docs.stripe.com",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://docs.stripe.com/api/tax/registrations/object",
+ "content_type": "text/html; charset=utf-8",
+ "bytes": 122973,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "dd543864b8b86bc9503d9651b9063780243b29ea116c87a872c112f50f43de0c",
+ "raw_ext": "html"
+}

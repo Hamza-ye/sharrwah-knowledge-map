@@ -1,0 +1,154 @@
+cap_id	platform	supports	key	why
+CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0197	its own Customers V3 API: create and manage customers
+CM-CUS-001	bigcommerce	core	BC-C-032/where/BC-S-0198	its own Storefront Customers API on hosted storefronts
+CM-CUS-001	bigcommerce	core	BC-I-0039	its own API group Customers V2 (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0010	its own API group Storefront Form Fields (C2)
+CM-CUS-001	bigcommerce	core	BC-C-032/boundary/BC-S-0199	its scope store_v2_customers: view and modify customer information
+CM-CUS-001	bigcommerce	core	BC-C-032/boundary/BC-S-0200	webhook topic store/customer/created
+CM-CUS-001	bigcommerce	core	BC-I-0143	webhook topic store/customer/updated (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0144	webhook topic store/customer/deleted (C2)
+CM-CUS-001	bigcommerce	core	BC-I-0285	webhook topic for a channel's customer settings (C2)
+CM-CUS-001	bigcommerce	extension-point	BC-I-0483	App Marketplace category CRM & Customer Service
+CM-CUS-002	bigcommerce	core	BC-C-034/decides/BC-S-0209	plan line Customer groups and segmentation
+CM-CUS-002	bigcommerce	core	BC-C-034/where/BC-S-0207	its own Customer Segmentation API: group customers into segments
+CM-CUS-002	bigcommerce	core	BC-C-034/where/BC-S-0208	manual segments shown in the Promotions standard editor's Targeting section
+CM-CUS-002	bigcommerce	core	BC-C-034/decides/BC-S-0210	the Segmentation API is available to enterprise customers
+CM-CUS-002	bigcommerce	core	BC-C-034/boundary/BC-S-0211	the endpoints use the Customers OAuth scope
+CM-CUS-002	bigcommerce	core	BC-I-0532	product line Customer groups (C2)
+CM-CUS-007	bigcommerce	core	BC-C-035/where/BC-S-0212	its own Subscribers API: newsletter subscriber records
+CM-CUS-007	bigcommerce	core	BC-C-035/boundary/BC-S-0213	webhook topic store/subscriber/created
+CM-CUS-007	bigcommerce	core	BC-I-0217	webhook topic store/subscriber/updated (C2)
+CM-CUS-007	bigcommerce	core	BC-I-0218	webhook topic store/subscriber/deleted (C2)
+CM-CUS-007	bigcommerce	core	BC-I-0009	its own API group Storefront Subscriptions (C2)
+CM-CUS-007	bigcommerce	core	BC-C-032/where/BC-S-0197	Customers V3 manages customers' consent settings
+CM-CUS-008	bigcommerce	core	BC-C-032/where/BC-S-0197	Customers V3 manages customers' addresses
+CM-CUS-008	bigcommerce	core	BC-I-0146	webhook topic store/customer/address/created (C2)
+CM-CUS-008	bigcommerce	core	BC-I-0147	webhook topic store/customer/address/updated (C2)
+CM-CUS-008	bigcommerce	core	BC-I-0148	webhook topic store/customer/address/deleted (C2)
+CM-CUS-010	bigcommerce	core	BC-C-033/where/BC-S-0202	its own Current Customer API identifies signed-in customers
+CM-CUS-010	bigcommerce	core	BC-C-033/boundary/BC-S-0204	webhook topic on a customer's login access per channel
+CM-CUS-011	bigcommerce	core	BC-C-033/where/BC-S-0201	its own Customer Login API: single sign-on for shoppers
+CM-CUS-011	bigcommerce	core	BC-C-033/boundary/BC-S-0203	its scope store_v2_customers_login: sign customers in
+CM-CUS-011	bigcommerce	extension-point	BC-C-033/boundary/BC-S-0205	your application generates the JWT and sends the login token
+CM-CUS-011	bigcommerce	shows	BC-C-033/reason/BC-S-0206	private tokens recommended for server-side sign-in
+CM-B2B-001	bigcommerce	own-service	BC-C-065/where/BC-S-0354	B2B Edition, BigCommerce's add-on for business-to-business commerce
+CM-B2B-001	bigcommerce	core	BC-C-065/where/BC-S-0355	its own B2B Edition Management APIs for managing B2B storefronts
+CM-B2B-001	bigcommerce	core	BC-C-065/decides/BC-S-0357	the APIs are available to stores with B2B Edition enabled
+CM-B2B-001	bigcommerce	core	BC-C-065/boundary/BC-S-0196	its scope store_b2b_manage for B2B Edition data
+CM-B2B-001	bigcommerce	core	BC-I-0095	B2B Edition's Orders management API (C2)
+CM-B2B-001	bigcommerce	core	BC-I-0503	product line B2B Edition (C2)
+CM-B2B-001	bigcommerce	extension-point	BC-I-0479	App Marketplace category B2B/Wholesale
+CM-B2B-001	bigcommerce	shows	BC-C-065/where/BC-S-0356	B2B Edition extends the native B2B capabilities of BigCommerce
+CM-B2B-002	bigcommerce	core	BC-C-065/boundary/BC-S-0358	webhook store/company/created: company accounts from storefront, control panel or API
+CM-B2B-002	bigcommerce	core	BC-I-0093	B2B Edition's Company Management API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0101	B2B Edition's Users API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0089	B2B Edition's Addresses API (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0081	B2B storefront API Companies and Users (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0303	webhook topic store/company/user/created (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0307	webhook topic store/company/address/created (C2)
+CM-B2B-002	bigcommerce	core	BC-I-0508	product line Company account hierarchy (C2)
+CM-B2B-003	bigcommerce	core	BC-C-007/where/BC-S-0048	its own Price Lists API: pricing assigned to customer groups
+CM-B2B-003	bigcommerce	core	BC-C-007/decides/BC-S-0049	plan line Price Lists: custom pricing for B2B customers
+CM-B2B-003	bigcommerce	core	BC-C-007/decides/BC-S-0050	price list assigned to a channel or customer group
+CM-B2B-003	bigcommerce	core	BC-C-007/boundary/BC-S-0051	webhook topic store/priceList/created
+CM-B2B-003	bigcommerce	core	BC-C-007/boundary/BC-S-0052	the Products OAuth scope is required
+CM-B2B-003	bigcommerce	core	BC-I-0505	product line Customer-specific pricing (C2)
+CM-B2B-003	bigcommerce	core	BC-I-0506	product line Customer-specific catalogs (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0097	B2B Edition's Quotes management API (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0083	B2B storefront API Quotes, path request-for-quote (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0314	webhook topic store/quote/created (C2)
+CM-B2B-004	bigcommerce	core	BC-I-0316	webhook topic store/quote/statusUpdated (C2)
+CM-B2B-004	bigcommerce	core	BC-C-065/boundary/BC-S-0196	scope store_b2b_manage names quotes
+CM-B2B-004	bigcommerce	core	BC-I-0509	product line Quoting & CPQ (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0099	B2B Edition's Shopping List management API (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0085	B2B storefront API Shopping List (C2)
+CM-B2B-005	bigcommerce	core	BC-I-0511	product line Requisition lists & reordering (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0098	B2B Edition's Sales Staff API (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0100	B2B Edition's Super Admin management API (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0084	B2B storefront API Super Admin, path sales-rep (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0310	webhook topic store/superadmin/created (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0306	webhook topic store/company/superadmin/assignmentUpdated (C2)
+CM-B2B-006	bigcommerce	core	BC-I-0507	product line Sales rep ordering (C2)
+CM-B2B-007	bigcommerce	core	BC-I-0504	product line Buyer portal (C2)
+CM-B2B-007	bigcommerce	core	BC-I-0078	B2B Edition's Storefront API group (C2)
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0055	its own Promotions API: a promotion is a condition a customer satisfies
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0056	its own Promotion Settings API: how promotions apply
+CM-MKT-001	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel Marketing > Promotions
+CM-MKT-001	bigcommerce	core	BC-C-009/boundary/BC-S-0060	scope store_v2_marketing for promotions
+CM-MKT-001	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards: 70 discount options
+CM-MKT-001	bigcommerce	core	BC-C-009/decides/BC-S-0058	plan line Advanced promotions management
+CM-MKT-001	bigcommerce	shows	BC-C-009/decides/BC-S-0059	recommended limit on active promotions and rules
+CM-MKT-001	bigcommerce	shows	BC-C-009/reason/BC-S-0061	the limit prevents a slowdown of checkout
+CM-MKT-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create coupons; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
+CM-MKT-002	bigcommerce	core	BC-C-010/boundary/BC-S-0064	its scope store_v2_marketing
+CM-MKT-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
+CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0057	control panel list Marketing > Promotions > Automatic
+CM-MKT-003	bigcommerce	core	BC-C-009/where/BC-S-0055	a promotion's condition: cart value or an item added
+CM-MKT-005	bigcommerce	extension-point	BC-I-0487	App Marketplace category Marketing
+CM-MKT-009	bigcommerce	core	BC-C-062/boundary/BC-S-0341	enable BODL in the control panel or by its own GraphQL Admin API
+CM-MKT-009	bigcommerce	extension-point	BC-C-062/decides/BC-S-0340	your script subscribes to BODL events once enabled
+CM-MKT-010	bigcommerce	core	BC-C-067/decides/BC-S-0365	plan line Feedonomics Surface connects the store to ad channels
+CM-MKT-022	bigcommerce	core	BC-C-015/decides/BC-S-0090	plan line Abandoned cart saver sends shoppers emails
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0089	setting under Settings > General > Miscellaneous
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0088	its own Abandoned Cart Emails V3 API
+CM-MKT-022	bigcommerce	core	BC-C-015/where/BC-S-0087	the abandoned cart token from the email link
+CM-MKT-022	bigcommerce	core	BC-I-0501	product line Abandoned cart recovery (C2)
+CM-MKT-023	bigcommerce	core	BC-C-013/where/BC-S-0075	its own API group Beta Product Recommendations
+CM-MKT-023	bigcommerce	core	BC-C-013/where/BC-S-0076	BigCommerce integrates with Google Vertex AI to generate recommendations
+CM-MKT-023	bigcommerce	core	BC-C-013/boundary/BC-S-0080	recommendations queried through its GraphQL Storefront API
+CM-MKT-023	bigcommerce	core	BC-C-013/decides/BC-S-0078	only on BigCommerce Enterprise plans
+CM-MKT-023	bigcommerce	shows	BC-C-013/decides/BC-S-0077	closed beta, not available by default
+CM-MKT-023	bigcommerce	shows	BC-C-013/responsible/BC-S-0079	merchant responsible for Google's fees
+CM-MKT-023	bigcommerce	shows	BC-C-013/reason/BC-S-0081	models trained on BigCommerce Analytics data
+CM-LOY-002	bigcommerce	shows	BC-C-010/where/BC-S-0062	its own Marketing APIs create gift certificates; core in E's CM-SFR-007, whose BigCommerce cell rests on it, so it counts once (the coordinator, convention 8)
+CM-LOY-002	bigcommerce	core	BC-C-010/decides/BC-S-0063	plan line Coupons, discounts, and gift cards
+CM-LOY-005	bigcommerce	core	BC-C-036/where/BC-S-0214	its own Wishlist API
+CM-LOY-005	bigcommerce	core	BC-I-0066	API group Wishlist (C2)
+CM-SUP-001	bigcommerce	core	BC-C-012/where/BC-S-0072	its GraphQL Storefront API creates and queries product reviews
+CM-SUP-001	bigcommerce	core	BC-C-012/decides/BC-S-0073	plan line Product ratings and reviews, all four plans
+CM-SUP-001	bigcommerce	core	BC-C-012/decides/BC-S-0074	setting the merchant enables for review submission
+CM-SUP-001	bigcommerce	core	BC-I-0415	plan line Google customer reviews (C2)
+CM-SUP-005	bigcommerce	extension-point	BC-I-0483	App Marketplace category CRM & Customer Service
+CM-ANL-001	bigcommerce	core	BC-C-062/decides/BC-S-0339	Commerce Analytics Service charged with the store plan
+CM-ANL-001	bigcommerce	core	BC-C-013/reason/BC-S-0081	the native BigCommerce Analytics, turned off or on
+CM-ANL-001	bigcommerce	core	BC-I-0531	product line Reporting & analytics (C2)
+CM-ANL-001	bigcommerce	extension-point	BC-C-062/decides/BC-S-0337	settings for Web analytics providers
+CM-ANL-001	bigcommerce	extension-point	BC-I-0478	App Marketplace category Analytics & Reporting
+CM-ANL-002	bigcommerce	core	BC-C-062/decides/BC-S-0338	plan line Professional reporting tools, all four plans
+CM-ANL-007	bigcommerce	core	BC-C-062/where/BC-S-0336	Big Open Data Solutions connects commerce data to outside platforms
+CM-ANL-007	bigcommerce	core	BC-I-0541	product line Big Open Data Solutions (C2)
+CM-NTF-001	bigcommerce	core	BC-C-046/where/BC-S-0259	control panel Marketing › Transactional Emails
+CM-NTF-001	bigcommerce	core	BC-C-046/where/BC-S-0258	its own Email Templates API
+CM-NTF-001	bigcommerce	core	BC-C-046/decides/BC-S-0260	Settings V3 Email Statuses: transactional email settings
+CM-NTF-001	bigcommerce	core	BC-C-046/boundary/BC-S-0261	webhook topic email/templates/updated
+CM-NTF-001	bigcommerce	core	BC-I-0242	webhook topic email/templates/deleted (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0239	webhook topic settings/emailStatus/updated (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0240	webhook topic settings/emailStatus/deleted (C2)
+CM-NTF-001	bigcommerce	core	BC-I-0248	webhook topic notifications/order/updated (C2)
+CM-CUS-009	bigcommerce	core	S02-BC-304	Google Autocomplete for Addresses, in its checkout settings (the coordinator, from the subjects' points: P-7 S02-VP-70 (the coordinator's own conflict))
+CM-NTF-002	bigcommerce	core	S02-BC-144	internal notifications configured for each storefront, in the control panel (the coordinator, from the subjects' points: P-8 S02-VP-89, S02-VP-90)
+CM-MKT-010	bigcommerce	own-service	BC-E-34d2cd26	(the held pass, BC-1) a reading: a channel card of the Channel Manager's own Create channel catalog, its region named 'Featured channels by Feedonomics': Feedonomics provides the channel through the catalog; 'enabling targeted ads': advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Featured channels by Feedonomics; name: Meta: Facebook and Instagram; description: Connect your products to Met…
+CM-MKT-010	bigcommerce	own-service	BC-E-5081e7d4	(the held pass, BC-1) a reading: a channel card of the Channel Manager's own Create channel catalog, its region named 'Featured channels by Feedonomics': Feedonomics provides the channel through the catalog; Microsoft Ads: advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Featured channels by Feedonomics; name: Microsoft Ads; description: Showcase your BigCommerce products on Micro…
+CM-MKT-010	bigcommerce	own-service	BC-E-31cb69c5	(the held pass, BC-1) a reading: a channel card of the Channel Manager's own Create channel catalog, its region named 'Featured channels by Feedonomics': Feedonomics provides the channel through the catalog; TikTok Ads, video ads: advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Featured channels by Feedonomics; name: TikTok Ads; description: Sync your products to TikTok Ads to tap into t…
+CM-MKT-010	bigcommerce	own-service	BC-E-a62c8fa8	(the held pass, BC-1) a reading: the same card as in 'Featured channels by Feedonomics', with the same Learn more article (support.bigcommerce.com Feedonomics-for-Meta, source step 002.frame-0), so read as Feedonomics' channel through the catalog; 'enabling targeted ads': advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Ads and social; name: Meta: Facebook and Instagram; description: Connect your products to Meta effortlessly, en…
+CM-MKT-010	bigcommerce	own-service	BC-E-da35319c	(the held pass, BC-1) a reading: the same card as in 'Featured channels by Feedonomics', with the same Learn more article (support.bigcommerce.com Feedonomics-for-Microsoft-Ads, source step 002.frame-0), so read as Feedonomics' channel through the catalog; advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Ads and social; name: Microsoft Ads; description: Showcase your BigCommerce products on Microsoft Bing to reach…
+CM-MKT-010	bigcommerce	own-service	BC-E-4b394fb7	(the held pass, BC-1) a reading: the same card as in 'Featured channels by Feedonomics', with the same Learn more article (support.bigcommerce.com Feedonomics-for-TikTok, source step 002.frame-0), so read as Feedonomics' channel through the catalog; advertising on an ad platform; the terms name Feedonomics Holdings, LLC among 'any of Commerce’s affiliates, subsidiaries' (https://www.commerce.com/terms/, other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024622Z-legal-pricing-docs/fetch.warc.gz, offset 1160): own-service, the channel its filler (the coordinator's ruling M-1): region: Ads and social; name: TikTok Ads; description: Sync your products to TikTok Ads to tap into the power of discov…
+CM-MKT-013	bigcommerce	extension-point	BC-E-2f578482	(the held pass, BC-1) a reading: impact.com, a third party, offers affiliate and influencer marketing to the store through the Channel Manager's catalog, in its category Affiliate and Influencer: region: Affiliate and Influencer; name: impact.com; description: Grow your store and drive more revenue with Affiliate …
+CM-B2B-001	bigcommerce	shows	BC-E-225790d9	(the held pass, BC-1) (the review, R2) A reading. The entry's asterisk points to the footnote '*B2B Edition adopts the Check offline payment method to enable the Purchase Order (PO) payment method.' (other-product-class@0d79b794f:bigcommerce/raw/runs/20261029T024758Z-help-center-en/steps/001.text.txt:155), which the line's reading quotes but no line places: a payment method of B2B Edition, CM-B2B-001's (whose BigCommerce cell holds B2B Edition), or CM-PAY-008's if the coordinator reads a PO method as payment terms, which the source doesn't define. shows: it says nothing of who does it. H-held rule 1 doesn't say whether a footnote an entry's mark points to is the entry's. CM-B2B-001's cell is core;extension-point;own-service already: no cell's placement changes.: table: 4; section: OFFLINE PAYMENT METHODS; name: Check*
+CM-ANL-001	bigcommerce	core	BC-E-84b056a9	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it: the store includes 'robust analytics': feature_text: Full-featured storefront included Your online store includes a fully responsive site, one-page checkout, …
+CM-MKT-002	bigcommerce	core	BC-E-77c72bb6	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on the four plans): coupons: feature_text: Coupons, discounts, and gift cards; Core: [image]; Growth: [image]; Scale: [image]; Performance: [image]
+CM-MKT-002	bigcommerce	core	BC-E-7b80a15e	(the held pass, BC-1) (the review, R3) A reading. The section names coupons in its title and 'coupon limits' in its description (other-product-class@0d79b794f:bigcommerce/structures/settings-list/items.jsonl:22): CM-MKT-002's thing, a code the buyer enters. The batch splits 'Coupons, discounts, and gift cards' across CM-MKT-002 and CM-MKT-001 (lines 106, 107), and does not here. The cell is already core, so no count changes.: group: Marketing; section: Promotions and coupons; description: Promotion calculation rules and coupon limits
+CM-MKT-001	bigcommerce	core	BC-E-77c72bb6	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on the four plans): discounts: feature_text: Coupons, discounts, and gift cards; Core: [image]; Growth: [image]; Scale: [image]; Performance: [image]
+CM-MKT-001	bigcommerce	core	BC-E-7b80a15e	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Marketing, /manage/microapps/promotions-settings-ui): settings for discounts and coupons: group: Marketing; section: Promotions and coupons; description: Promotion calculation rules and coupon limits
+CM-LOY-002	bigcommerce	core	BC-E-77c72bb6	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on the four plans): gift cards: feature_text: Coupons, discounts, and gift cards; Core: [image]; Growth: [image]; Scale: [image]; Performance: [image]
+CM-MKT-022	bigcommerce	core	BC-E-eedf37f8	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on Growth, Scale and Performance, empty on Core): automated emails to buyers who left without buying: feature_text: Abandoned cart saver Win back customers who left your site without buying through automated email marketi…
+CM-CUS-002	bigcommerce	core	BC-E-5c67f76a	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on Growth, Scale and Performance, empty on Core): feature_text: Customer groups and segmentation Reward frequent shoppers and keep them coming back by segmenting and bui…
+CM-LOY-004	bigcommerce	shows	BC-E-5c67f76a	(the held pass, BC-1) (the review, R3) A reading. The tooltip says 'Reward frequent shoppers and keep them coming back by segmenting and building unique customer groups or even a loyalty program' (other-product-class@0d79b794f:bigcommerce/structures/plan-comparison/items.jsonl:9 feature_text; source.html row 9). CM-LOY-004's BigCommerce cell is none-held, searched for 'loyalty; loyalty program; points; reward; rewards' ('Nothing found is a loyalty programme'). The row shows a loyalty program the merchant builds from the plan's customer groups: shows, since no points, rewards or programme of the platform's are named. core is the other reading, the plan line including a loyalty programme, as line 121 reads entry 98's 'including in-store pick up and curbside'; a method ruling. The cell turns from none-held to held, placed not-stated (count, if ruled core).: feature_text: Customer groups and segmentation Reward frequent shoppers and keep them coming back by segmenting and bui…
+CM-SUP-001	bigcommerce	core	BC-E-69d9bce5	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on Scale and Performance); what it does isn't stated, and Google is named only in the line's name, as the cell reads it: feature_text: Google Customer Reviews; Scale: [image]; Performance: [image]
+CM-SUP-001	bigcommerce	core	BC-E-3b8c8427	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Products, ToDo=viewCommentSystemSettings): shoppers' comments on products, the comment system the cell's product reviews go through (BC-S-0072): group: Products; section: Comments; description: Shoppers comments about products
+CM-B2B-003	bigcommerce	core	BC-E-5d8219b8	(the held pass, BC-1) a reading: a row of the plan table, a plan line that includes it (checked on Scale and Performance): feature_text: Price lists; Scale: [image]; Performance: [image]
+CM-NTF-002	bigcommerce	core	BC-E-fd253939	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Orders, ToDo=viewNotificationSettings): notices to the merchant of new orders: group: Orders; section: Order notifications; description: Brief messages informing you that an order has been placed, e…
+CM-LOY-006	bigcommerce	core	BC-E-59e62e63	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Products, ToDo=viewGiftWrapping): gift wrapping options with a price, a part of gifting (Shopify's Gift wrap and message apps in the capability): group: Products; section: Gift wrapping; description: Name your gift wrapping option, set a price, etc.
+CM-ANL-007	bigcommerce	core	BC-E-13b75e83	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, /manage/microapps/data-solutions-ui): the store's data sent to outside analytics platforms and data warehouses: group: Advanced; section: Data solutions; description: Web analytics, data warehouses, business intelligence platforms,…
+CM-CUS-010	bigcommerce	core	BC-E-0c012476	(the held pass, BC-1) a reading: a section of the control panel's own Settings list (Advanced, ToDo=viewFormFields): the buyer's account sign-up form fields: group: Advanced; section: Account sign up form; description: List of form fields for signup, addresses on checkout etc.
+CM-CUS-008	bigcommerce	core	BC-E-0c012476	(the held pass, BC-1) a reading: a section of the control panel's own Settings list: the same section lists the address form fields on checkout: fields the buyer fills in when ordering: the address form's fields, CM-CUS-008's thing, not CM-CHK-009's fields the merchant adds (the review, R3): group: Advanced; section: Account sign up form; description: List of form fields for signup, addresses on checkout etc.

@@ -1,0 +1,74 @@
+[
+{
+"n": 1,
+"url": "https://zid.sa/ar/solutions/financing/",
+"dir": "items/001-zid.sa",
+"keep_body": false
+},
+{
+"n": 2,
+"url": "https://zid.eg/ar/legal/terms-conditions/",
+"dir": "items/002-zid.eg",
+"keep_body": false
+},
+{
+"n": 3,
+"url": "https://zid.sa/en/solutions/financing/",
+"dir": "items/003-zid.sa",
+"keep_body": false
+},
+{
+"n": 4,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7%d9%87%d9%8a-%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%9f/",
+"dir": "items/004-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 5,
+"url": "https://help.zid.sa/faqs/%d9%85%d8%a7-%d9%87%d9%88-%d8%aa%d9%85%d9%88%d9%8a%d9%84-%d8%b2%d8%af%d8%9f/",
+"dir": "items/005-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 6,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d9%8a%d8%b4%d8%aa%d8%b1%d8%b7-%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d9%84%d9%84%d8%ad%d8%b5%d9%88%d9%84-%d8%b9%d9%84%d9%89-%d8%a7%d9%84%d8%aa%d9%85%d9%88%d9%8a/",
+"dir": "items/006-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 7,
+"url": "https://help.zid.sa/faqs/%d9%87%d9%84-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%aa%d8%af%d8%b9%d9%85-%d8%ae%d8%a7%d8%b5%d9%8a%d8%a9-%d8%a7%d9%84%d8%b9%d9%85%d9%84%d8%a7%d8%aa-%d8%a7%d9%84%d9%85%d8%aa%d8%a7%d8%ad%d8%a9-%d9%81%d9%8a/",
+"dir": "items/007-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 8,
+"url": "https://help.zid.sa/faqs/%d9%83%d9%8a%d9%81%d9%8a%d8%a9-%d8%aa%d8%b2%d9%88%d9%8a%d8%af-%d8%b2%d8%af-%d8%a8%d8%a7%d9%8a-%d8%a8%d8%a7%d9%84%d9%85%d8%aa%d8%b7%d9%84%d8%a8%d8%a7%d8%aa-%d9%84%d8%aa%d9%81%d8%b9%d9%8a%d9%84-%d8%a7/",
+"dir": "items/008-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 9,
+"url": "https://help.zid.sa/national-address/",
+"dir": "items/009-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 10,
+"url": "https://help.zid.sa/business-verification/",
+"dir": "items/010-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 11,
+"url": "https://help.zid.sa/zidfinance-requirements/",
+"dir": "items/011-help.zid.sa",
+"keep_body": false
+},
+{
+"n": 12,
+"url": "https://help.zid.sa/finance-management/",
+"dir": "items/012-help.zid.sa",
+"keep_body": false
+}
+]

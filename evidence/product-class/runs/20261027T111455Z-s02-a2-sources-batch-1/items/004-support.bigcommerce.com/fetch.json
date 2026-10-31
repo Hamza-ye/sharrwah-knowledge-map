@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://support.bigcommerce.com/s/article/Invoices",
+ "dir": "items/004-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:14:58Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Invoices?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191529,
+ "cited_in": [
+  "S-02 BigCommerce gap G07"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "7f0a0ba7818bcfcd35118537c31198f4e10b7121d396a249cb5b2e8dccf03b54",
+ "raw_ext": "html"
+}

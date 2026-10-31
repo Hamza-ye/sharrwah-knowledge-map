@@ -1,0 +1,13 @@
+cap_id	platform	quality	value	key	scope
+CM-SFR-002	zid	SDK template designs	Store - SDK Template Design (Up to 2)	ZD-C-113/decides/ZD-S-1001	compare-plans: starter, launch, growth, pro
+CM-SFR-003	zid	Themes in the themes store, plan Rise	Access to themes store (Over 50 professional themes)	ZD-C-076/decides/ZD-S-0363	plan Rise
+CM-SFR-003	zid	Partner's share of a theme sale	Partner Share = (Paid Amount by Merchant Excluding VAT) × Partner Rate	ZD-C-076/boundary/ZD-S-0899	
+CM-CHN-003	zid	Zid's share of Amazon sales by plan	نسبة زد من أمازون حسب الباقة : النمو: 5% الانطلاقة : 8% الاحترافية:0.95%	ZD-C-110/decides/ZD-S-1060	النمو; الانطلاقة; الاحترافية
+CM-CHN-003	zid	Wallet balance for the connection's fees	يتم فرض الرسوم باستخدام المحفظة. نسمح بحد أقصى 500 ريال سعودي كرصيد. بعد ذلك، سيتوقف التطبيق عن العمل حتى تقوم بإعادة شحن محفظتك.	ZD-C-110/decides/ZD-S-1061	
+CM-CHN-003	zid	Jahez joining conditions	1- سجل تجاري او وثيقة عمل حر. 2-تفعيل مزيد. 3-المنتجات سريعة التحضير او الجاهزة التي لا يتعدى تحضيرها 10 دقائق. 4-موقع المتجر او المخزون في احد مدن المملكة.	ZD-C-110/decides/ZD-S-1064	احد مدن المملكة
+CM-CHN-006	zid	Subscription term	مدة الاشتراك في التطبيق سنة واحدة، وعند انتهاء فترة التجديد ينتهي الاشتراك.	ZD-C-116/decides/ZD-S-1083	
+CM-POS-001	zid	Zid POS on plan Professional	Completely free Zid POS - two cashiers	ZD-C-108/decides/ZD-S-0382	plan Professional
+CM-POS-001	zid	E-invoicing approval	نعم ، كفوترة إلكترونية مع العلم أن زد حاصلة على جوائز واعتماد من الهيئة	ZD-C-108/boundary/ZD-S-0983	
+CM-MKS-001	zid	Markets by plan	خاصية الأسواق تتيح لك عدد من الأسواق حسب باقتك: باقة الانطلاقة سوق واحد افتراضي باقة النمو سوقين افتراضي وجديد الباقة الاحترافية خمس أسواق	ZD-C-034/decides/ZD-S-0749	باقة الانطلاقة; باقة النمو; الباقة الاحترافية
+CM-MKS-004	zid	Geo-Based Currency Settings by plan	plans:{starter:"1",launch:"1",growth:!0,pro:!0}	ZD-C-050/decides/ZD-S-0807	compare-plans: starter, launch, growth, pro
+CM-MKS-006	zid	Payment currency with Zid Payments	في مرحلة الدفع النهائي سيتم الدفع بالعملة الأساسية للمتجر (الريال السعودي\ الدينار الكويتي) لجميع الشبكات ما عدا “كي نت” سيتم الدفع بالدينار الكويتي	ZD-C-050/decides/ZD-S-0808	مدفوعات زد (السعودية، الكويت)

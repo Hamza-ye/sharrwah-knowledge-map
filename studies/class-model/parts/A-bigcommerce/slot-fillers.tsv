@@ -1,0 +1,24 @@
+cap_id	platform	filler	key
+CM-ACC-002	bigcommerce	the law of New York (governing law in the Contracting Entity table for merchants resident in the United States)	BC-C-079/responsible/BC-S-0428
+CM-ACC-002	bigcommerce	the law of England and Wales (governing law for merchants resident in the United Kingdom)	BC-C-079/responsible/BC-S-0429
+CM-ACC-002	bigcommerce	the law of Ireland (governing law for merchants resident in the European Union)	BC-C-079/responsible/BC-S-0430
+CM-ACC-002	bigcommerce	the law of New South Wales, Australia (governing law for merchants resident in Australia)	BC-C-079/responsible/BC-S-0431
+CM-ACC-002	bigcommerce	the law of New York (governing law for merchants in any other jurisdiction)	BC-C-079/responsible/BC-S-0432
+CM-TRU-006	bigcommerce	the GDPR, with which store owners ensure their storefront complies (Catalyst storefronts)	BC-C-037/responsible/BC-S-0217
+CM-TRU-006	bigcommerce	the CCPA, with which store owners ensure their storefront complies (Catalyst storefronts)	BC-C-037/responsible/BC-S-0217
+CM-TRU-010	bigcommerce	comprehensive U.S. sanctions, setting the regions the merchant's Relevant Parties and customers may not be nationals, residents, agents or representatives of	BC-C-080/responsible/BC-S-0437
+CM-TRU-011	bigcommerce	the Digital Millennium Copyright Act (DMCA), with which Commerce's protocol for copyright infringement complies	BC-C-088/where/BC-S-0478
+CM-TRU-014	bigcommerce	Google (infrastructure hosting, USA, Germany or Australia)	BC-C-082/where/BC-S-0446
+CM-TRU-014	bigcommerce	Amazon (data hosting, USA)	BC-C-082/where/BC-S-0447
+CM-TRU-014	bigcommerce	Cloudflare (DDoS mitigation, threat detection and CDN, USA)	BC-C-082/where/BC-S-0448
+CM-TRU-014	bigcommerce	the EU-U.S. Data Privacy Framework, with its UK and Swiss Extensions	BC-C-082/boundary/BC-S-0452
+CM-TRU-014	bigcommerce	the Standard Contractual Clauses approved by the European Commission (Implementing Decision (EU) 2021/914)	BC-C-082/boundary/BC-S-0453
+CM-TRU-015	bigcommerce	Google (subprocessor: infrastructure hosting, document management and communications)	BC-C-082/where/BC-S-0446
+CM-TRU-015	bigcommerce	Amazon (subprocessor: data hosting)	BC-C-082/where/BC-S-0447
+CM-TRU-015	bigcommerce	Cloudflare (subprocessor: DDoS mitigation, threat detection and CDN)	BC-C-082/where/BC-S-0448
+CM-TRU-018	bigcommerce	PCI DSS (the standard BigCommerce validates annually as a service provider)	BC-C-028/responsible/BC-S-0169
+CM-ACC-002	bigcommerce	the law of New York (Governing Law)	BC-E-aac5508c
+CM-ACC-002	bigcommerce	the law of England and Wales (Governing Law)	BC-E-34573863
+CM-ACC-002	bigcommerce	the law of Ireland (Governing Law)	BC-E-47462fcf
+CM-ACC-002	bigcommerce	the law of New South Wales, Australia (Governing Law)	BC-E-22b1b6aa
+CM-ACC-002	bigcommerce	the law of New York (Governing Law)	BC-E-b01b6b25

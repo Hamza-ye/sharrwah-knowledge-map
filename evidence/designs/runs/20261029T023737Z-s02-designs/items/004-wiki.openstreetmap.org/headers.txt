@@ -1,0 +1,18 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+x-content-type-options: nosniff
+content-language: en
+accept-ch: 
+vary: Accept-Encoding,Accept-Language,Cookie
+expires: Thu, 01 Jan 1970 00:00:00 GMT
+cache-control: private, must-revalidate, max-age=0
+x-request-id: b326ee911c729e6c37ae53b2
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+last-modified: Wed, 28 Oct 2026 21:31:48 GMT
+content-encoding: br
+content-length: 14086
+content-type: text/html; charset=UTF-8
+date: Thu, 29 Oct 2026 02:37:43 GMT
+server: Apache
+

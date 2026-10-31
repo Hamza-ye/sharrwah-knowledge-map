@@ -1,0 +1,13 @@
+HTTP/1.1 200 Connection Established
+
+HTTP/2 200 
+server: AkamaiNetStorage
+content-type: text/html
+akamai-grn: 0.2934d517.1793241463.ee4a75d
+etag: "23d8ec744975ff227d0a7fe8c66ef1df:1768914574.288589"
+vary: Accept-Encoding
+content-encoding: gzip
+cache-control: max-age=21218
+date: Thu, 29 Oct 2026 02:37:43 GMT
+content-length: 6670
+

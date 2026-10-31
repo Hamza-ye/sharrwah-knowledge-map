@@ -1,0 +1,42 @@
+domain	area_id	area	shopify_own_groupings	salla_own_groupings
+A Merchant and platform	ACC	Accounts, organizations and stores	accounts.shopify.com; Settings > Organization, Users, Billing; store picker; Create store	Settings > Account: Your profile, General, Store plan, Manage stores; accounts.salla.sa
+A Merchant and platform	STF	Staff, roles and permissions	Settings > Users > Roles, Security; collaborator access; API category Access	Employees (API); 10 built-in roles; 192 permissions in 16 groups
+A Merchant and platform	PLN	Plans, entitlements and platform billing	Settings > Plan, Billing; admin Billing section; betas; feature previews	Settings > Store plan, Balance & billing; salla.com plans; nav feature flags
+A Merchant and platform	ONB	Onboarding and store lifecycle	signup; onboarding question; home setup; trial, inactive and pending-termination states	onboarding vocabulary; help: New store; store_status
+A Merchant and platform	TRU	Security, privacy, trust and audit	account Security; MerchantAuditLog; Customer privacy; API category Privacy; finance risk; bot protection	Logs > Activity history; Payment > Store Verification; deleted orders and products; two-factor methods
+B Catalog and inventory	CAT	Products and catalog	Products, Collections; API category Products and collections	Products, Categories & options, Brands, Product Tags, Product Options, Variants
+B Catalog and inventory	SEL	Product types and selling models	purchase options and selling plans; gift cards; subscriptions	Bookings; Pre-order campaigns; digital products and cards; Gifting; Charity stores
+B Catalog and inventory	INV	Inventory, locations and stock movement	Inventory (transfers, purchase orders, counts, adjustments); Settings > Locations	Inventory management, Inventory transfer, Warehouses & branches, Multi-Warehouse, Inventory audit
+C Selling and order management	CHK	Cart and checkout	Settings > Checkout; checkout editor; abandoned checkouts; API categories Cart, Checkout	Settings > Checkout; Checkout APIs; Cart options; Quick checkout; Abandoned carts
+C Selling and order management	ORD	Orders and order management	Orders, Drafts, order detail; API categories Orders, Timeline events	Orders: All orders, Order statuses, Auto assignment, Invoice settings, Custom fields, Auto tags
+C Selling and order management	PAY	Payments, payouts and money	Settings > Payments; Shopify Payments; balance and finances; disputes	Payment: Payment methods, Wallet, Payment restrictions, Transactions; Settlements (API)
+C Selling and order management	TAX	Taxes, duties and invoicing	Settings > Taxes and duties; tax filing; tax providers; duties	Payment > Tax settings; Taxes (API); Invoice settings; ZATCA in plans
+C Selling and order management	SHP	Shipping, delivery and fulfilment	Settings > Shipping and delivery; shipping labels; order routing; local delivery; pickup	Shipping & delivery: zones, routes, Packaging, Shipment log, Delivery promises, International
+C Selling and order management	RET	Returns, refunds and exchanges	Return and exchange; return reasons; return rules	order.refunded and shipment return events; return policy
+D Customers and growth	CUS	Customers and buyer accounts	Customers; Settings > Customer accounts; Customer events	Customers; Customer Groups; customer login and OTP events
+D Customers and growth	B2B	B2B and wholesale	Companies; Catalogs; API category B2B	Souq Eljomla (wholesale channel)
+D Customers and growth	MKT	Marketing, discounts and promotions	Discounts; Growth (campaigns, Autopilot); Marketing	Marketing: Coupons, Promotional offers, Campaigns, Salla Ads, Pixels & feeds, SEO, Marketing calendar, Affiliates, Influencers
+D Customers and growth	LOY	Loyalty, wallet and gifting	gift cards; store credit (schema); loyalty through apps	Loyalty program; Customer wallet; Gifting; Reorder reminder
+D Customers and growth	SUP	Customer service and feedback	Inbox; Reviews	Help Desk: Reviews & questions, Self-service system, Salla Chat, Complaints, Quality gateway
+D Customers and growth	ANL	Analytics and reports	Analytics; API category Analytics	Reports: Store performance, Smart analytics, Reports
+D Customers and growth	NTF	Notifications and messaging	Settings > Notifications (customer, staff, webhooks, SMS)	Settings > Notifications; Logs > SMS log
+E Store presence and channels	SFR	Online store, themes and storefront	Online Store (themes, editor, pages, preferences); theme store; Storefront API; Hydrogen	Store design; Theme Marketplace; Twilight; Landing pages; storefront API
+E Store presence and channels	CNT	Content, custom data and SEO	Content (metaobjects, files, menus, blogs); Metafields and metaobjects; redirects	Information pages; Blog; Custom URLs; Custom fields; SEO
+E Store presence and channels	CHN	Sales channels and marketplaces	Sales channels (Online Store, Shop, POS, Agentic, Inbox); Listings	Store & Channels: Salla Point, Mobile app, Mahally, Souq Eljomla
+E Store presence and channels	POS	In-person selling	Shopify POS app and settings; POS roles	Salla Point; Retail stores
+E Store presence and channels	MKS	Markets, currencies and languages	Markets; Settings > Languages; Translate & Adapt; API categories Shopify Markets, Localizations	Settings > Markets; Multi Market; Currencies, Languages, Countries (API); Translation log
+F Platform and ecosystem	APP	Apps and extensibility	Apps; Dev Dashboard; extensions; Functions; app store	App Store; My apps; App Functions; Embedded SDK; Developer tools
+F Platform and ecosystem	API	APIs, webhooks and events	Admin, Storefront, Customer Account, Partner, Payments Apps APIs; webhooks	Merchant API; storefront API; webhooks; Conditional Webhooks
+F Platform and ecosystem	DVT	Developer tooling	Shopify CLI; development stores; shopify.dev; changelog	Salla CLI; demo stores; docs.salla.dev
+F Platform and ecosystem	PTN	Partners and services	Partner Dashboard; referrals; payouts; client transfer	partners.salla.com; Merchant Services (experts); Referral program
+F Platform and ecosystem	AUT	Automation and workflows	Flow	Auto assignment; Auto tags; Conditional webhooks
+F Platform and ecosystem	AIA	AI and agentic commerce	Sidekick; Agentic channel; UCP and MCP endpoints	AI Agent Kit; Smart analytics
+G Cross-cutting	SRF	Admin surfaces and navigation	admin router; main and settings navigation; merchant mobile app	dashboard navigation segments; modules; settings navigation
+G Cross-cutting	LNG	Vocabulary and Arabic	route titles; help in ar	dashboard vocabulary ar+en
+G Cross-cutting	MIG	Import, export and migration	CSV imports; bulk operations; Move existing store	Import from platforms; Advanced import; Export templates; Export log
+G Cross-cutting	EVO	Evolution and release model	merchant and developer changelogs; betas; router versions; feature previews	isBeta and isNewFeature flags; docs Change Log
+G Cross-cutting	OPS	Operations, reliability and limits	status page; published limits	rate limiting and versioning pages
+H Beyond the references	WLD	World and market context		
+H Beyond the references	ENG	Engineering an instance		
+H Beyond the references	INT	Sharrwah's decisions		
+H Beyond the references	MTH	Method		

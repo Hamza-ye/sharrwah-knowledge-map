@@ -1,0 +1,276 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Update Store Profile Settings
+
+PUT https://api.bigcommerce.com/stores/{store_hash}/v3/settings/store/profile
+Content-Type: application/json
+
+Updates store profile settings.
+
+ - Channel ID can be used as a query parameter for updating channel-specific settings. If omitted, you will interact with the global settings only. 
+
+ - `null` should be supplied to delete overrides per given channel and to inherit values from global level. Partial updates are not supported and all settings should be supplied with `null` value in order to delete overrides per channel.
+
+Reference: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-profile/update-settings-store-profile
+
+## Authentication
+
+- `X-Auth-Token` header (required) — ### OAuth scopes | UI Name | Permission | Parameter | |:--------|:-----------|:----------| | Information &amp; Settings | modify | `store_v2_information` | | Information &amp; Settings | read-only | `store_v2_information_read_only` | NOTE: Analytics endpoints require the Content (`store_v2_content` and `store_v2_content_read_only`) OAuth scope. ### Authentication header | Header | Argument | Description | |:-------|:---------|:------------| | `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). | ### Further reading For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests). For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes). For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+
+## Request
+
+### Path parameters
+
+- `store_hash` (string, required) — Permanent ID of the BigCommerce store.
+
+### Query parameters
+
+- `channel_id` (integer, optional) — Channel ID to use for channel-specific settings. If omitted, you will interact with the global settings only.
+
+### Headers
+
+- `Accept` (string, required, default: application/json) — The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+
+### Body (application/json)
+
+This endpoint expects a StoreProfile.
+
+- `store_address` (string, optional)
+- `store_address_type` (enum, optional, default: Home Office) — Only supports manipulation on a global level.
+  - Allowed values: `Home Office`, `Commercial Office`, `Retail`, `Warehouse`
+- `store_email` (string, optional)
+- `store_name` (string, optional)
+- `store_phone` (string, optional)
+
+## Response
+
+### 200
+
+OK
+
+- `data` (StoreProfile, optional) — The basic profile settings for a store, used to give the shopper information about the business from which they are purchasing.
+- `meta` (MetaOpen, optional) — Response metadata.
+
+## Errors
+
+### 422 Unprocessable Entity Error
+
+Provided settings could not be applied for some reason - detailed errors in the response.
+
+- `errors` (DetailedErrors, optional)
+- `instance` (string, optional)
+- `status` (integer, optional) — The HTTP status code.
+- `title` (string, optional) — The error title describing the particular error.
+- `type` (string, optional)
+
+## Types
+
+### StoreProfile
+
+The basic profile settings for a store, used to give the shopper information about the business from which they are purchasing.
+
+- `store_address` (string, optional)
+- `store_address_type` (enum, optional, default: Home Office) — Only supports manipulation on a global level.
+  - Allowed values: `Home Office`, `Commercial Office`, `Retail`, `Warehouse`
+- `store_email` (string, optional)
+- `store_name` (string, optional)
+- `store_phone` (string, optional)
+
+### MetaOpen
+
+Response metadata.
+
+### DetailedErrors
+
+## Examples
+
+**Request**
+
+```json
+{}
+```
+
+**Response**
+
+```json
+{
+  "data": {
+    "store_address": "string",
+    "store_address_type": "Home Office",
+    "store_email": "string",
+    "store_name": "string",
+    "store_phone": "string"
+  },
+  "meta": {}
+}
+```
+
+**SDK Code**
+
+```python
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile"
+
+payload = {}
+headers = {
+    "Accept": "application/json",
+    "X-Auth-Token": "&lt;apiKey&gt;",
+    "Content-Type": "application/json"
+}
+
+response = requests.put(url, json=payload, headers=headers)
+
+print(response.json())
+```
+
+```javascript
+const url = 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile';
+const options = {
+  method: 'PUT',
+  headers: {
+    Accept: 'application/json',
+    'X-Auth-Token': '&lt;apiKey&gt;',
+    'Content-Type': 'application/json'
+  },
+  body: '{}'
+};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"strings"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile"
+
+	payload := strings.NewReader("{}")
+
+	req, _ := http.NewRequest("PUT", url, payload)
+
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+	req.Header.Add("Content-Type", "application/json")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Put.new(url)
+request["Accept"] = 'application/json'
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+request["Content-Type"] = 'application/json'
+request.body = "{}"
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.put("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile")
+  .header("Accept", "application/json")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .header("Content-Type", "application/json")
+  .body("{}")
+  .asString();
+```
+
+```php
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('PUT', 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile', [
+  'body' =&gt; '{}',
+  'headers' =&gt; [
+    'Accept' =&gt; 'application/json',
+    'Content-Type' =&gt; 'application/json',
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile");
+var request = new RestRequest(Method.PUT);
+request.AddHeader("Accept", "application/json");
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+request.AddHeader("Content-Type", "application/json");
+request.AddParameter("application/json", "{}", ParameterType.RequestBody);
+IRestResponse response = client.Execute(request);
+```
+
+```swift
+import Foundation
+
+let headers = [
+  "Accept": "application/json",
+  "X-Auth-Token": "&lt;apiKey&gt;",
+  "Content-Type": "application/json"
+]
+let parameters = [] as [String : Any]
+
+let postData = JSONSerialization.data(withJSONObject: parameters, options: [])
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/profile")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "PUT"
+request.allHTTPHeaderFields = headers
+request.httpBody = postData as Data
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```</pre></body></html>

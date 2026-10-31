@@ -1,0 +1,18 @@
+{
+ "n": 15,
+ "url": "https://support.bigcommerce.com/s/article/Starting-a-Bigcommerce-Trial",
+ "dir": "items/015-support.bigcommerce.com",
+ "fetched_at": "2026-10-27T11:51:35Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://support.bigcommerce.com/s/article/Starting-a-Bigcommerce-Trial?language=en_US",
+ "content_type": "text/html;charset=UTF-8",
+ "bytes": 191518,
+ "cited_in": [
+  "S-02 A2 BC-1b"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "e0e3d9bdfe35fbac555752c6f74be124bceb706402c7e0536f345afaedad83cf",
+ "raw_ext": "html"
+}

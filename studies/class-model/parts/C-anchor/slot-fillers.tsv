@@ -1,0 +1,103 @@
+cap_id	platform	filler	key
+CM-CHK-008	shopify	Apple Pay	SH-C-078/where/SH-S-0419
+CM-CHK-008	shopify	Google Pay	SH-C-078/where/SH-S-0419
+CM-CHK-008	shopify	Amazon Pay	SH-C-078/where/SH-S-0419
+CM-CHK-008	shopify	PayPal	SH-C-078/where/SH-S-0419
+CM-PAY-004	shopify	Stripe, Inc.	SH-C-064/responsible/SH-S-0152
+CM-PAY-004	shopify	PayPal, Inc.	SH-C-064/responsible/SH-S-0153
+CM-PAY-004	shopify	Stripe Payments Canada, Ltd.	SH-C-064/responsible/SH-S-0154
+CM-PAY-004	shopify	Stripe Payments Mexico, S. de RL de CV.	SH-C-064/responsible/SH-S-0155
+CM-PAY-004	shopify	Adyen N.V.	SH-C-064/responsible/SH-S-0156
+CM-PAY-004	shopify	PayPal (Europe) S.à r.l. et Cie, S.C.A.	SH-C-064/responsible/SH-S-0157
+CM-PAY-004	shopify	Stripe Payments Europe, Limited	SH-C-064/responsible/SH-S-0158
+CM-PAY-004	shopify	Stripe Payments Europe, Limited	SH-C-064/responsible/SH-S-0159
+CM-PAY-004	shopify	AIHK Markets Limited	SH-C-064/responsible/SH-S-0160
+CM-PAY-004	shopify	Stripe Japan, Ltd.	SH-C-064/responsible/SH-S-0161
+CM-PAY-004	shopify	Stripe Payments Australia Pty Ltd.	SH-C-064/responsible/SH-S-0162
+CM-PAY-004	shopify	Stripe Payments Singapore Pte. Ltd.	SH-C-064/responsible/SH-S-0163
+CM-PAY-004	shopify	The Bridge entity (an affiliate of Stripe)	SH-C-064/responsible/SH-S-0151
+CM-PAY-004	shopify	Adyen N.V. (Acquirer)	SH-C-066/responsible/SH-S-0141
+CM-PAY-004	shopify	Retail Payment Activities Act (Canada)	SH-C-067/responsible/SH-S-0125
+CM-PAY-003	shopify	MasterCard (MATCH List)	SH-C-068/decides/SH-S-0098
+CM-PAY-006	shopify	Stripe, PayPal or Adyen, depending on region	SH-C-070/decides/SH-S-0354
+CM-PAY-004	shopify	Global-e	SH-C-065/responsible/SH-S-0566
+CM-PAY-012	shopify	Apple Pay	SH-C-078/responsible/SH-S-0025
+CM-PAY-012	shopify	Google Pay	SH-C-078/responsible/SH-S-0026
+CM-PAY-012	shopify	Meta Pay	SH-C-078/responsible/SH-S-0027
+CM-PAY-012	shopify	Amazon Pay	SH-C-078/responsible/SH-S-0028
+CM-PAY-012	salla	Apple Pay	SA-C-110/decides/SA-S-1962
+CM-PAY-012	salla	Google Pay	SA-C-110/decides/SA-S-1964
+CM-PAY-012	salla	stc pay	SA-C-119/decides/SA-S-1963
+CM-PAY-013	shopify	PayPal	SH-C-077/where/SH-S-0023
+CM-PAY-013	salla	PayPal	SA-C-119/where/SA-S-0199
+CM-PAY-015	shopify	Affirm	SH-C-075/responsible/SH-S-0126
+CM-PAY-015	shopify	Affirm	SH-C-075/responsible/SH-S-7219
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-1965
+CM-PAY-015	salla	Tamara	SA-C-118/decides/SA-S-1965
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-0058
+CM-PAY-015	salla	Tamara	SA-C-118/decides/SA-S-0058
+CM-PAY-015	salla	Tabby	SA-C-118/decides/SA-S-0064
+CM-PAY-015	salla	Deema	SA-C-118/decides/SA-S-0064
+CM-PAY-011	salla	Moyasar (ميسر)	SA-C-120/where/SA-S-0069
+CM-PAY-011	salla	HyperPay (هايبر باي)	SA-C-120/where/SA-S-0069
+CM-PAY-011	salla	Tap (تاب)	SA-C-120/decides/SA-S-0100
+CM-PAY-017	shopify	MB WAY	SH-C-080/decides/SH-S-7025
+CM-PAY-017	shopify	Bizum	SH-C-080/decides/SH-S-7026
+CM-PAY-017	salla	KNET	SA-C-110/decides/SA-S-0065
+CM-PAY-018	shopify	Coinbase	SH-C-081/responsible/SH-S-0087
+CM-PAY-018	shopify	Bridge (an affiliate of Stripe)	SH-C-081/responsible/SH-S-0151
+CM-PAY-021	salla	Geidea	SA-C-095/responsible/SA-S-5039
+CM-PAY-021	salla	NearPay	SA-C-095/reason/SA-S-5042
+CM-PAY-023	shopify	Stripe Payments Company	SH-C-088/responsible/SH-S-7217
+CM-PAY-023	shopify	Evolve Bank & Trust	SH-C-088/responsible/SH-S-7217
+CM-PAY-023	shopify	Fifth Third Bank N.A.	SH-C-088/responsible/SH-S-7195
+CM-PAY-024	shopify	Stripe	SH-C-089/responsible/SH-S-0457
+CM-PAY-024	shopify	Celtic Bank	SH-C-089/responsible/SH-S-0457
+CM-PAY-024	shopify	Visa U.S.A. Inc.	SH-C-089/responsible/SH-S-0457
+CM-PAY-025	shopify	Celtic Bank Corporation	SH-C-090/responsible/SH-S-7278
+CM-PAY-025	shopify	Stripe, Inc.	SH-C-090/responsible/SH-S-7277
+CM-PAY-026	shopify	WebBank	SH-C-091/responsible/SH-S-0483
+CM-PAY-026	shopify	YouLend	SH-C-092/responsible/SH-S-0485
+CM-PAY-026	shopify	Banking Circle S.A.	SH-C-095/responsible/SH-S-0490
+CM-PAY-026	shopify	YouLend SAS	SH-C-095/responsible/SH-S-0490
+CM-PAY-026	shopify	Bankers' Automated Clearing System (BACS) Direct Debit regulations	SH-C-092/decides/SH-S-0486
+CM-PAY-026	salla	Tanami (تنامي)	SA-C-128/responsible/SA-S-0112
+CM-PAY-026	shopify	YouLend GmbH	SH-C-096/responsible/SH-S-0492
+CM-PAY-026	shopify	YouLend	SH-C-097/responsible/SH-S-0494
+CM-PAY-026	shopify	YouLend	SH-C-097/responsible/SH-S-0495
+CM-PAY-026	shopify	YouLend	SH-C-097/responsible/SH-S-0496
+CM-PAY-027	shopify	Melio	SH-C-098/responsible/SH-S-7200
+CM-PAY-027	shopify	Melio	SH-C-098/responsible/SH-S-0499
+CM-PAY-002	shopify	Payment Network Rules	SH-C-173/decides/SH-S-0108
+CM-PAY-028	salla	هيئة الزكاة والضريبة	SA-C-210/decides/SA-S-2148
+CM-PAY-030	salla	SARIE (سريع)	SA-C-117/decides/SA-S-1957
+CM-TAX-003	shopify	Global-e	SH-C-101/decides/SH-S-0564
+CM-TAX-003	salla	هيئة الزكاة والضريبة والجمارك (ZATCA)	SA-C-160/responsible/SA-S-5073
+CM-TAX-006	shopify	Sovos Compliance, LLC	SH-C-104/responsible/SH-S-0602
+CM-TAX-007	salla	هيئة الزكاة والضريبة والجمارك (ZATCA)	SA-C-161/boundary/SA-S-0148
+CM-TAX-008	shopify	customs authorities	SH-C-105/decides/SH-S-0537
+CM-TAX-009	shopify	Internal Revenue Service (IRS)	SH-C-099/decides/SH-S-0502
+CM-TAX-009	shopify	US tax laws on Payment Settlement Entities (Form 1099-K)	SH-C-099/decides/SH-S-0502
+CM-SHP-002	shopify	Popout, Inc., d.b.a Shippo (Third-Party Integrator)	SH-C-116/responsible/SH-S-0610
+CM-SHP-002	shopify	Auctane, Inc. (Third-Party Integrator)	SH-C-116/responsible/SH-S-0611
+CM-SHP-002	shopify	Easyship Fulfillment Services Ltd. (Third-Party Integrator)	SH-C-116/responsible/SH-S-0612
+CM-SHP-002	salla	سمسا (SMSA)	SA-C-140/decides/SA-S-2019
+CM-SHP-002	salla	البريد السعودي (Saudi Post)	SA-C-140/decides/SA-S-2019
+CM-SHP-002	salla	DHL Express	SA-C-140/decides/SA-S-2019
+CM-SHP-002	salla	أي مكان (Aymakan)	SA-C-140/decides/SA-S-2019
+CM-SHP-002	salla	J&T Express	SA-C-140/decides/SA-S-2019
+CM-SHP-002	salla	مندوبي	SA-C-140/decides/SA-S-2020
+CM-SHP-002	salla	ريدبوكس (RedBox)	SA-C-140/decides/SA-S-2020
+CM-SHP-015	salla	سمسا	SA-C-139/decides/SA-S-2019
+CM-SHP-015	salla	البريد السعودي	SA-C-139/decides/SA-S-2019
+CM-SHP-015	salla	DHL Express	SA-C-139/decides/SA-S-2019
+CM-SHP-015	salla	أي مكان	SA-C-139/decides/SA-S-2019
+CM-SHP-015	salla	J&T Express	SA-C-139/decides/SA-S-2019
+CM-SHP-015	salla	مندوبي	SA-C-139/decides/SA-S-2020
+CM-SHP-015	salla	ريدبوكس (RedBox)	SA-C-139/decides/SA-S-2020
+CM-SHP-015	salla	سمسا	SA-C-139/decides/SA-S-2020
+CM-SHP-015	salla	أرامكس (Aramex), scope UAE	SA-C-141/responsible/SA-S-5063
+CM-SHP-015	salla	امباور, scope Kuwait	SA-C-141/responsible/SA-S-5064
+CM-PAY-011	salla	Mokafaa Al Rajhi (مكافأة الراجحي)	S01-SA-107
+CM-PAY-003	shopify	WorldFirst (China)	S02-SH-582
+CM-TAX-008	shopify	Avalara	S02-SH-295

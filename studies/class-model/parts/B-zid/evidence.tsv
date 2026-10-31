@@ -1,0 +1,68 @@
+cap_id	platform	supports	key	why
+CM-CAT-001	zid	core	ZD-C-083/where/ZD-S-0914	Zid's own API group Merchant APIs > Products > Managing Products (C1)
+CM-CAT-001	zid	core	ZD-C-083/boundary/ZD-S-0097	Zid's own API (C1): POST /v1/products/ under scope products.read_write
+CM-CAT-001	zid	core	ZD-C-083/boundary/ZD-S-0060	Zid's own API (C1): webhook product.create
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0915	plan line Add Products / إضافة منتجات, all four plans
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0916	plan line Product Management - Bulk Add Products, growth and pro
+CM-CAT-001	zid	core	ZD-C-083/decides/ZD-S-0496	staff permission list.store.products
+CM-CAT-001	zid	shows	ZD-I-0229	plan line Import Products, placed in ZD-C-083 (C2) (the coordinator, 30 October: an import or export plan line counts in domain G's CM-MIG-001; here it shows the catalogue only)
+CM-CAT-001	zid	shows	ZD-I-0250	plan line Export Products, placed in ZD-C-083 (C2) (the coordinator, 30 October: an import or export plan line counts in domain G's CM-MIG-001; here it shows the catalogue only)
+CM-CAT-001	zid	core	ZD-I-0246	plan line Quick Bulk Edit, placed in ZD-C-083 (C2)
+CM-CAT-002	zid	core	ZD-I-0012	Zid's own API group Products > Product Attributes, placed in ZD-C-083 (C1, C2)
+CM-CAT-002	zid	core	ZD-I-0013	Zid's own API group Products > Product Attribute Presets, placed in ZD-C-083 (C1, C2)
+CM-CAT-002	zid	core	ZD-I-0014	Zid's own API group Products > Product Variants, placed in ZD-C-083 (C1, C2)
+CM-CAT-003	zid	core	ZD-C-084/where/ZD-S-0009	Zid's own API group Products > Product Categories (C1)
+CM-CAT-003	zid	core	ZD-C-084/boundary/ZD-S-0099	Zid's own API (C1): categories nesting endpoint, scope third_categories_write
+CM-CAT-003	zid	core	ZD-C-084/boundary/ZD-S-0070	Zid's own API (C1): webhook category.create
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-0917	plan line Product Categories / تصنيف المنتجات, all four plans
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-0498	staff permission list.store.categories
+CM-CAT-003	zid	core	ZD-C-084/decides/ZD-S-1020	a category's search-engine feature not in the free plan
+CM-CAT-005	zid	core	ZD-I-0010	Zid's own API group Products > Product Brands, placed in ZD-C-083 (C1, C2)
+CM-CAT-007	zid	core	ZD-I-0016	Zid's own API group Products > Product Images, placed in ZD-C-083 (C1, C2)
+CM-CAT-010	zid	extension-point	ZD-I-0446	App Market category إيجاد المنتجات (Dropshipping), placed in ZD-C-070 (C2)
+CM-CAT-012	zid	shows	ZD-I-0253	plan line Product Cost Report, placed in ZD-C-105: products carry a cost
+CM-CAT-013	zid	core	ZD-I-0227	plan line Custom Product Pricing, placed in ZD-C-083 (C2)
+CM-CAT-013	zid	core	ZD-I-0238	plan line Update Product Prices, placed in ZD-C-083 (C2)
+CM-CAT-014	zid	core	ZD-I-0011	Zid's own API group Products > Product Badge, placed in ZD-C-083 (C1, C2)
+CM-CAT-015	zid	core	ZD-I-0249	plan line Barcode Printing, placed in ZD-C-083 (C2)
+CM-INV-001	zid	core	ZD-I-0019	Zid's own API group Products > Product Stock, placed in ZD-C-085 (C1, C2)
+CM-INV-001	zid	core	ZD-C-085/decides/ZD-S-0918	plan line Inventory Management / إدارة المخزون, growth and pro
+CM-INV-001	zid	core	ZD-I-0241	plan line Export Full Quantities, placed in ZD-C-085 (C2)
+CM-INV-001	zid	core	ZD-I-0247	plan line Product Management - Update Product Quantities, placed in ZD-C-085 (C2)
+CM-INV-001	zid	core	ZD-I-0468	product line Inventory Management, placed in ZD-C-085 (C2)
+CM-INV-002	zid	core	ZD-I-0244	plan line Inventory Management Logs, placed in ZD-C-085 (C2)
+CM-INV-003	zid	core	ZD-I-0252	plan line Inventory Count / جرد المخزون, placed in ZD-C-085 (C2)
+CM-INV-003	zid	core	ZD-I-0405	Professional plan card: inventory counting, placed in ZD-C-085 (C2)
+CM-INV-005	zid	core	ZD-C-085/where/ZD-S-0023	Zid's own API (C1): Inventories group's Create Location
+CM-INV-005	zid	core	ZD-C-085/boundary/ZD-S-0100	Zid's own API (C1): POST /v1/locations/
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-0493	staff permission manage.store.inventory.addresses, Manage inventory locations
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-0372	plan line: inventory across 2 branches or warehouses, Growth
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-1021	Professional plan: 5 warehouses, one more per Zid Cashier device
+CM-INV-005	zid	core	ZD-C-085/decides/ZD-S-1022	large-business plan: unlimited warehouses
+CM-INV-005	zid	core	ZD-I-0402	Professional plan card: 5 branches or warehouses, placed in ZD-C-085 (C2)
+CM-INV-005	zid	core	ZD-C-085/boundary/ZD-S-1024	more than one stock location; the shipping company goes to the chosen one
+CM-INV-005	zid	core	ZD-I-0243	plan line Sales by Inventory Location, placed in ZD-C-085 (C2)
+CM-INV-005	zid	outside	ZD-C-085/responsible/ZD-S-0920	Zid doesn't store products; fulfillment services provide storage
+CM-INV-006	zid	core	ZD-I-0254	plan line Transfer Inventory Between Branches, placed in ZD-C-085 (C2)
+CM-INV-006	zid	core	ZD-I-0405	Professional plan card: inventory transfer, placed in ZD-C-085 (C2)
+CM-INV-008	zid	core	ZD-C-100/decides/ZD-S-0965	built-in: the product held 30 minutes while card payment is entered
+CM-INV-009	zid	core	ZD-C-085/decides/ZD-S-0919	plan line Inventory Withdrawal Priority, growth and pro
+CM-INV-009	zid	core	ZD-I-0240	plan line Inventory Withdrawal Priority, placed in ZD-C-085 (C2)
+CM-INV-009	zid	core	ZD-C-085/decides/ZD-S-1023	not in the free plans
+CM-INV-010	zid	core	ZD-I-0257	plan line Display Products by Customer City, placed in ZD-C-085 (C2)
+CM-INV-010	zid	core	ZD-I-0405	Professional plan card: display by customer city, placed in ZD-C-085 (C2)
+CM-SEL-001	zid	extension-point	ZD-I-0438	App Market category الحجوزات والاشتراكات, placed in ZD-C-070 (C2)
+CM-SEL-002	zid	core	ZD-C-043/where/ZD-S-0022	Zid's own API group Products > Digital Products, Create Downloadable Product (C1)
+CM-SEL-002	zid	core	ZD-C-043/boundary/ZD-S-0008	Zid's own API group Products > Digital Vouchers (C1)
+CM-SEL-002	zid	core	ZD-C-043/boundary/ZD-S-0802	Zid's own API (C1): downloadables pre-signed upload URL, products.read_write
+CM-SEL-002	zid	core	ZD-C-043/where/ZD-S-0801	Zid's own API (C1): upload a file directly to Amazon S3 storage
+CM-SEL-002	zid	shows	ZD-C-043/decides/ZD-S-0590	Zid Pay accepts some digital products on the provider's assessment
+CM-SEL-004	zid	extension-point	ZD-I-0438	App Market category الحجوزات والاشتراكات, placed in ZD-C-070 (C2)
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-0928	plan line Add Dynamic Bundle, growth and pro
+CM-SEL-006	zid	core	ZD-I-0242	the plan line under Product & Inventory Management, placed in ZD-C-089 (C2)
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-0475	staff permission manage.store.bundleoffers
+CM-SEL-006	zid	core	ZD-C-089/decides/ZD-S-1031	the flexible bundle on the Growth plan
+CM-SEL-006	zid	core	ZD-C-089/where/ZD-S-0026	Zid's own API group Marketing > Bundle Offers (C1)
+CM-SEL-006	zid	core	ZD-C-089/boundary/ZD-S-0106	Zid's own API (C1): scope third_bundle_offers_read
+CM-SEL-006	zid	shows	ZD-C-089/decides/ZD-S-1032	bundles rest on the number of pieces, not the cart's value
+CM-SEL-006	zid	shows	ZD-C-089/reason/ZD-S-1033	bundles are not ordinary discounts

@@ -1,0 +1,18 @@
+{
+ "n": 4,
+ "url": "https://wiki.openstreetmap.org/wiki/Key:admin_level",
+ "dir": "items/004-wiki.openstreetmap.org",
+ "fetched_at": "2026-10-29T02:37:41Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://wiki.openstreetmap.org/wiki/Key:admin_level",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 14086,
+ "cited_in": [
+  "studies/subjects/S-02/designs.tsv"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "98c19c4d3d768956089c8d4fd44eb22cbc24794e8bc67880caa69740fc8ac4cf",
+ "raw_ext": "html"
+}

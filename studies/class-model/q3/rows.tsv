@@ -1,0 +1,261 @@
+set	row_id	needed_by	question
+km	ACC-01	model	How do a person's login, an organization or merchant entity, and one or more stores relate, and which settings live at each level?
+km	ACC-02	model	What states can a store be in (trial, active, paused, inactive, frozen, closing, closed, transferred), what moves it between them, and what can the merchant and buyers do in each?
+km	ACC-03	model	Which kinds of identity exist besides merchant staff (buyers, partners and developers, collaborators, apps, agents), and how does each authenticate?
+km	ACC-04	slice	What must a merchant declare about itself (country, business entity, legal identity, verification), when is it asked, and what does each declaration unlock or restrict?
+km	ACC-05	model	Can one merchant run several stores, how are they switched and billed, and what is shared between them (staff, billing, products, customers)?
+km	STF-01	model	Which staff roles does each platform ship, and what can each role do, stated as a permission set?
+km	STF-02	model	What is each platform's permission vocabulary (granularity, grouping, access levels), and how do the two vocabularies map onto each other and onto the capability areas?
+km	STF-03	model	What can the owner do that no delegated role can, and what are those owner-only capabilities?
+km	STF-04	slice	How does a missing permission show itself (hidden navigation, a withheld page, a disabled control, an API error), and is it consistent across web, mobile and API?
+km	STF-05	slice	How is a staff member invited, accepted, changed and removed, what does the invitee go through, and do plans limit the number of staff?
+km	STF-06	model	Can merchants create custom roles, and under what constraints (which permissions are assignable, POS-only roles, access scoped to a location)?
+km	STF-07	model	How should authorization be modelled so that roles, owner-only capabilities, plan entitlements and location scope compose without contradiction?
+km	PLN-01	model	Which plans does each platform sell, at what prices and billing cycles, and what differs between them as the platform states it?
+km	PLN-02	model	Which capabilities are gated by plan, and where does the gate appear (navigation, page, control, API)?
+km	PLN-03	model	What gates exist besides plan: region, beta flag, store state, verification, an add-on purchase?
+km	PLN-04	model	What is the platform's own billing lifecycle for a merchant: trial, subscription, invoices, failed payment, retry, suspension, termination, reactivation?
+km	PLN-05	slice	What is a merchant billed for besides the plan (transaction fees, app charges, shipping labels, domains, add-ons), and how is it presented?
+km	PLN-06	model	How should entitlements be built so plans, add-ons, betas and regional availability can change without code changes?
+km	PLN-07	launch	Which plan structure will Sharrwah offer at launch, and which capabilities sit behind which tier?
+km	PLN-08	launch	Which contracts govern the platform's relationship with merchants, partners and app developers (terms of service, acceptable use, API and partner terms), and what do they oblige each side to do?
+km	ONB-01	slice	What does signup ask, in what order, and what does a new store contain before the merchant touches it (defaults, sample data, a setup guide)?
+km	ONB-02	slice	How does the platform guide a merchant from an empty store to the first sale, and what does it use to decide what to suggest next?
+km	ONB-03	model	What happens when a trial ends, a plan is cancelled or a store is closed: what is kept, what buyers see, and how is the store reactivated?
+km	ONB-04	slice	Which merchant intents does onboarding branch on (sell online, in person, dropshipping, digital, migrate), and what changes downstream for each?
+km	TRU-01	slice	Which account-security controls exist for merchants and staff (two-factor methods, passkeys, sessions, sign-in alerts, verification)?
+km	TRU-02	model	What does the platform record as an audit trail (who did what, when), and what can the merchant see or export?
+km	TRU-03	model	What can be undone or restored after deletion (orders, products, other records), and for how long?
+km	TRU-04	launch	What privacy capabilities does the product class give merchants and buyers (consent, cookie banner, data access requests, erasure, policy text)?
+km	TRU-05	later	How are fraud and risk handled on orders and payouts (risk assessments, holds, chargeback protection)?
+km	TRU-06	launch	What do data-protection and data-residency rules in the target market (for example Saudi PDPL) require of a platform that holds merchants' customer data?
+km	TRU-07	launch	What protects storefronts and checkout from bots and abuse (bot protection, captchas, rate limits), and what can the merchant configure?
+km	CAT-01	model	What is a product: its fields, variants, options, media and identifiers, and what invariants hold between them?
+km	CAT-02	model	How are products grouped (collections, categories, brands, tags, a standard taxonomy), and is grouping manual, rule-based or both?
+km	CAT-03	slice	Which validation rules apply when a product is created or edited, as the platform enforces them (required fields, limits, uniqueness)?
+km	CAT-04	slice	How do merchants work on many products at once (bulk editor, bulk actions, import and export), and what are the limits?
+km	CAT-05	model	Which events does a catalog change emit, and with what payloads?
+km	CAT-06	spine	Which catalog capabilities exist in only one platform (product restrictions, option templates, product SEO fields, ...), and is each a class feature or a vendor choice?
+km	SEL-01	model	Which product types and selling models does the class support (physical, digital, services and bookings, subscriptions, pre-orders, gift cards, bundles, donations), and how is each modelled?
+km	SEL-02	model	How do gift cards and store credit work: issued, sold, redeemed, expired, refunded to?
+km	SEL-03	later	How do subscriptions work end to end: who bills, contract states, skips, pauses, cancellations?
+km	SEL-04	later	How do bookings, reservations and pre-orders work (capacity, dates, deposits, fulfilment timing)?
+km	INV-01	model	What is the inventory model: where stock is held (locations, warehouses, branches), which quantity states exist (available, committed, reserved, incoming, damaged), and how they attach to variants?
+km	INV-02	model	How does stock move (adjustments with reasons, transfers, purchase orders, counts), and what states does each movement pass through?
+km	INV-03	model	When is stock reserved or decremented (cart, checkout, payment, fulfilment), what happens at zero (oversell, keep selling, hide), and how are low-stock alerts raised?
+km	INV-04	model	In a store with several locations, how is the fulfilling location chosen (routing rules, priorities, pickup locations)?
+km	INV-05	slice	What history of stock changes does each platform keep, and who can see it?
+km	CHK-01	model	What are the steps and states from cart to order as a buyer experiences them, and what does each step collect?
+km	CHK-02	slice	What can a merchant configure about checkout (required fields, guest or account, tipping, order notes, terms), and what is fixed by the platform?
+km	CHK-03	model	Where can apps or merchants customise checkout (branding, UI extensions, payment, delivery and discount rules, validation), and where is it locked?
+km	CHK-04	slice	How are abandoned carts and checkouts detected, shown to the merchant, and recovered?
+km	CHK-05	later	Which accelerated or alternative checkouts exist (express wallets, quick checkout, buy as a gift, agent checkout), and how do they reuse the standard checkout?
+km	CHK-06	model	What consistency and availability must checkout guarantee under peak load (stock, price, idempotent payment), and how is that tested?
+km	ORD-01	model	What states does an order pass through, on which separate axes (payment, fulfilment, return, cancellation, archive), and which transitions are allowed?
+km	ORD-02	model	What does an order contain (lines, prices, discounts, taxes, shipping, payments, fulfilments, notes, attributes, history), and which parts are fixed once it is placed?
+km	ORD-03	model	How are orders created other than by checkout (draft or manual orders, invoices sent to buyers, external or imported orders, POS), and where do the paths converge?
+km	ORD-04	model	What can be edited after an order is placed (items, quantities, address, prices), and how are the money consequences handled?
+km	ORD-05	slice	How do merchants work the order queue: views, filters, tags, assignment to staff, custom fields, bulk actions, exports?
+km	ORD-06	slice	Which documents does an order produce (invoice, tax invoice, packing slip, receipt), and who configures them?
+km	ORD-07	model	Which order events exist, and how do the two event catalogs line up (names, granularity, payloads)?
+km	PAY-01	model	How does a payment method plug in (the platform's own processor, third-party gateways, manual methods), and what contract does a provider implement (authorize, capture, refund, void, 3-D Secure)?
+km	PAY-02	model	What states does a payment transaction pass through (pending, authorized, captured, partly refunded, voided, failed), and how do they drive the order's payment status?
+km	PAY-03	later	How is the merchant's money shown and moved: balance, payouts or settlements, wallet, fees, statements?
+km	PAY-04	slice	What rules can a merchant put on payment methods (by amount, country, customer group, product, delivery method; cash-on-delivery fees)?
+km	PAY-05	later	How are disputes and chargebacks handled, with what evidence and deadlines?
+km	PAY-06	launch	Which payment methods and providers does the target market expect (mada, Apple Pay, STC Pay, BNPL such as Tabby and Tamara, bank transfer, cash on delivery), and what does each need from the platform?
+km	PAY-07	later	Who may hold or settle merchants' funds in the target market, and what licences or partnerships would Sharrwah need to offer its own payments or wallet?
+km	TAX-01	model	How does the class model tax: rates by region, product tax categories, prices with or without tax, exemptions, tax lines on orders?
+km	TAX-02	model	Where does an external tax engine or tax partner plug in, and what does it calculate or file?
+km	TAX-03	later	How are duties and import taxes handled on cross-border orders (collected at checkout or not, harmonized codes, country of origin)?
+km	TAX-04	launch	What does the target market's VAT and e-invoicing regime require of the platform (for ZATCA: invoice fields, QR codes, clearance or reporting, archiving), and which party is responsible?
+km	SHP-01	model	How are shipping rates defined: zones, profiles, rate tables (flat, weight, price), carrier-calculated rates, free-shipping rules?
+km	SHP-02	model	How does a carrier or shipping company plug in (rates, labels, tracking, pickup), and what contract does it implement?
+km	SHP-03	model	What is the fulfilment lifecycle (fulfilment orders or shipments, partial fulfilment, holds, labels, tracking, delivery)?
+km	SHP-04	slice	Which delivery modes exist besides parcels (local delivery, pickup in store, pickup points, scheduled delivery, delivery promises), and how is each configured?
+km	SHP-05	slice	What does the merchant do physically to ship (packing slips, packages and box sizes, pick lists, batch labels)?
+km	SHP-06	launch	Which carriers, address systems and delivery practices does the target market use (national or short address, cash-on-delivery collection, local couriers), and how do they fill the carrier slot?
+km	RET-01	model	What is the return lifecycle (requested, approved, in transit, received, restocked, refunded, exchanged, declined), and who can start one?
+km	RET-02	slice	How are return rules set (window, reasons, fees, restocking, final sale) and shown to buyers?
+km	RET-03	model	How are refunds computed and paid (partial, to the original method, to store credit or wallet, shipping and tax refunds)?
+km	CUS-01	model	What is a customer record (identity, addresses, consent, tags, notes, groups, metrics), and how are guests and duplicates handled?
+km	CUS-02	slice	What can buyers do in their own account (orders, returns, addresses, profile, subscriptions, wishlist), and how do they sign in (password, one-time code, social)?
+km	CUS-03	model	How are customers segmented or grouped, and what can depend on a group (prices, payment methods, discounts, shipping)?
+km	CUS-04	model	What buyer behaviour does the storefront report (page views, add to cart, checkout steps), to whom (merchant analytics, pixels, apps), and under what consent?
+km	B2B-01	spine	Is B2B part of the class (company accounts, locations, buyers, price lists, payment terms, quantity rules), or a vendor choice?
+km	B2B-02	model	How do catalogs and price lists decide which buyer sees which products at which price?
+km	MKT-01	model	Which discount and promotion types exist (code, automatic, buy X get Y, free shipping, tiered, bundles), how do they combine, and how are conflicts resolved?
+km	MKT-02	spine	Which marketing capabilities are built in (campaigns, email and SMS, ads, pixels and feeds, SEO, a marketing calendar) and which are left to apps?
+km	MKT-03	later	Which referral, affiliate and influencer programs does the class include, and how is attribution recorded?
+km	MKT-04	later	Where do ad platforms and marketing channels plug in (pixels, product feeds, audiences, conversion APIs)?
+km	LOY-01	spine	Are loyalty points, customer wallet or store credit, gifting and reorder reminders part of the class, or app territory?
+km	SUP-01	later	How do merchants talk with buyers (chat inbox, email, tickets, complaints), and is it built in?
+km	SUP-02	later	How are product reviews and questions collected, moderated and shown?
+km	SUP-03	later	Can buyers complain about a merchant to the platform, and what is the platform's role as intermediary (complaints, a quality gateway for shipping)?
+km	ANL-01	later	Which reports and metrics does the class provide (sales, orders, customers, products, traffic, conversion, finance), at what granularity, and can merchants build their own?
+km	ANL-02	later	What data architecture serves merchant analytics at scale (event capture, aggregation, freshness)?
+km	NTF-01	slice	Which notifications does the platform send, to whom (buyer, staff, merchant), on which channels (email, SMS, push, WhatsApp), triggered by what?
+km	NTF-02	slice	What can a merchant change in notifications (templates and their code, languages, sender identity, on or off)?
+km	NTF-03	launch	Which messaging channels and sender rules apply in the market (SMS sender registration, WhatsApp Business), and which providers fill the slot?
+km	SFR-01	model	How is a storefront built: theme structure (layouts, templates, sections, blocks, settings), the template language, and what data a theme can read?
+km	SFR-02	slice	Which page types does a storefront have, and what URL scheme do they use?
+km	SFR-03	slice	How does a merchant change the storefront without code (theme editor, sections, landing pages), and what is previewed versus published?
+km	SFR-04	later	How do themes reach merchants (theme store, free and paid, versions, updates), and who builds them?
+km	SFR-05	model	Can a storefront be built outside the platform (storefront API, SDKs, hosting), and what does the platform still own (checkout, accounts)?
+km	SFR-06	slice	How do password protection, maintenance mode and store visibility work for buyers and search engines?
+km	SFR-07	model	What rendering architecture serves many stores' storefronts fast and cheaply (caching, CDN, edge rendering, theme sandboxing)?
+km	CNT-01	model	How can merchants extend the data model (metafields, metaobjects, custom fields on orders and products), and where do extensions appear (admin, storefront, API)?
+km	CNT-02	slice	Which content does a store hold (pages, blogs, menus, files, policies, redirects or custom URLs), and how is it managed?
+km	CNT-03	slice	Which SEO controls exist (titles, descriptions, handles, redirects, sitemaps, structured data)?
+km	CNT-04	launch	Which store policies does the platform require or generate (refund, privacy, terms, shipping, contact), and where are they shown?
+km	CHN-01	model	What is a sales channel in the class (online store, POS, marketplace, social, a merchant's app, an agent), and what does each channel take from the store (products, stock, orders)?
+km	CHN-02	model	How is product availability per channel controlled (publications, prices per channel, listing rules)?
+km	CHN-03	later	Does the platform run its own buyer marketplace or app (Shop, Mahally), and what does a merchant gain or give up by joining?
+km	CHN-04	later	Can a merchant get a branded buyer mobile app built by the platform?
+km	CHN-05	later	How does an external channel integrate (catalog sync, order import, stock sync)?
+km	POS-01	later	What does in-person selling include (registers, cash, receipts, staff PINs, hardware, offline mode), and how does it share catalog, stock, customers and orders with online selling?
+km	POS-02	later	Which roles and permissions apply at the counter, and how do they relate to admin roles?
+km	POS-03	later	Which in-store hardware (card readers, printers, scanners) and in-person payment providers are available in the market?
+km	MKS-01	model	What is a market, and which settings vary per market (currency, language, domain, prices, catalog, duties, payment and delivery methods)?
+km	MKS-02	model	How are prices set or converted per currency (rates, rounding, fixed prices), and in which currency is an order recorded?
+km	MKS-03	model	How is content translated (which resources, manual or machine, adapted per market), and how does the storefront pick a language?
+km	MKS-04	model	Which capabilities change with the store's country (payment providers, tax, shipping, features unavailable), and how does the platform tell the merchant?
+km	APP-01	model	What can an app do on the platform: which surfaces it can extend (admin, checkout, storefront, POS, customer account, automation, AI assistant), and by which mechanisms (embedded UI, extensions, functions, webhooks, APIs)?
+km	APP-02	model	How does an app get access: authorization flow, scopes, consent screen, data-access categories, token lifetimes?
+km	APP-03	model	What is an app's lifecycle: create, develop on a test store, review, publish, install, change scopes, uninstall, delete data?
+km	APP-04	later	How do apps charge merchants (one-time, recurring, usage, trials), and how does the platform take its share?
+km	APP-05	spine	What do the app stores show the core leaves to apps: which categories hold the most apps, and which built-in features do apps replace or extend?
+km	APP-06	model	How should third-party code be isolated (sandboxed functions, iframes, quotas, data access) so an app cannot harm a store or the platform?
+km	API-01	model	Which API surfaces does each platform expose (admin or merchant, storefront, customer account, partner, payments), in what style, and with what versioning and deprecation policy?
+km	API-02	model	What is the full event catalog, how is delivery secured, retried and ordered, and can subscriptions be filtered?
+km	API-03	model	Which limits apply (rate limits, query cost, bulk operations, pagination), and how are they communicated?
+km	API-04	model	Where do the two platforms' API resource models line up, and where do they differ (naming, granularity, which resources exist)?
+km	DVT-01	later	What does a developer get (CLI, test stores, local development with tunnels, scaffolds, docs, AI tooling), and what is the inner loop?
+km	DVT-02	later	How do platforms tell developers about change (changelogs, API versions, deprecation notices, CLI notices)?
+km	PTN-01	later	Which partner types does the class recognise (app developers, theme designers, agencies and experts, referrers), and what does each get (dashboard, revenue share, test stores)?
+km	PTN-02	later	How does an agency build a store for a client and hand it over (client transfer, collaborator access, ownership and billing transfer)?
+km	PTN-03	later	Does the platform run a marketplace where merchants hire experts, and how does it work?
+km	AUT-01	later	What is the automation model (triggers, conditions, actions, waits, loops), which events and actions are available, and what limits apply?
+km	AUT-02	spine	Which recurring merchant tasks do the platform's own automation templates target, ranked by install count?
+km	AIA-01	later	What does the built-in AI assistant do (answer, navigate, act, generate content, build apps), what can it reach, and when does it ask to confirm?
+km	AIA-02	model	How do external AI agents shop a store (discovery files, agent profiles, MCP tools, cart and checkout calls, agent identity and payment)?
+km	AIA-03	later	How fast is the AI surface changing, and which parts look stable enough to model now?
+km	SRF-01	spine	What is the shape of the merchant's workspace (top-level sections, settings, search), and where do the two platforms group things the same way?
+km	SRF-02	model	What does each admin route do (list, create, update, view), which operations does it call, and what does it lead to next?
+km	SRF-03	later	What can merchants do from the mobile app versus the web, and what is mobile-only?
+km	SRF-04	slice	What are the shared UI conventions (save bar, unsaved changes, validation messages, empty states, bulk actions, confirmations)?
+km	SRF-05	spine	How does each platform organise its own offering across its self-descriptions (admin navigation, API reference grouping, help centre taxonomy, plan tables, marketing site), and where do those groupings agree?
+km	LNG-01	spine	For each concept, what is Shopify's term, Salla's term in Arabic and English, and the term Sharrwah will use?
+km	LNG-02	model	How do the platforms handle Arabic and right-to-left (translated admin, RTL layout, Arabic storefront, numerals, dates, mixed-direction text)?
+km	MIG-01	slice	What can be imported and exported (products, customers, orders, stock, redirects), in which formats, with what validation and error reporting?
+km	MIG-02	launch	How do platforms help a merchant move from a competitor (importers, URL redirects, customer accounts)?
+km	MIG-03	launch	From which platforms will Sharrwah's first merchants come, and what must move with them for switching to be worth it?
+km	EVO-01	later	What has each platform added, changed or removed recently, by area, and where is the class heading?
+km	EVO-02	spine	Which capabilities are new or in beta (unstable to copy), and which are long established?
+km	EVO-03	later	What did the reference platforms offer at earlier stages, say five and ten years ago, as a guide to sequencing a younger platform?
+km	OPS-01	later	What reliability does the class promise and deliver (status components, incident frequency and duration)?
+km	OPS-02	model	Which hard limits does each platform publish (variants per product, API rates, workflow sizes, file sizes), and which are product decisions versus engineering limits?
+km	WLD-01	launch	Which laws govern online selling in the target market (e-commerce law, consumer protection, cooling-off, required disclosures), and what must the platform enforce rather than the merchant?
+km	WLD-02	launch	Which business registrations do merchants in the market hold (commercial registration, freelance document, e-commerce authentication), and must the platform collect or display them?
+km	WLD-03	model	Which standards should the data model adopt from the start (ISO 4217, ISO 3166, GS1 identifiers, units, address and phone formats)?
+km	WLD-04	launch	Which providers fill each slot in the market (payments, shipping, tax and e-invoicing, SMS and WhatsApp, maps and addresses), and which does Salla already integrate?
+km	WLD-05	later	What do merchants complain about on existing platforms (missing features, fees, support), as seen in reviews and forums?
+km	ENG-01	model	Which tenancy model should hold many stores (shared tables with tenant keys, schema or database per tenant, cells or pods), given isolation, scale and cost?
+km	ENG-02	model	Which quality-attribute scenarios define a mature platform for Sharrwah (peak orders per minute, admin and storefront latency, availability, recovery time, isolation)?
+km	ENG-03	model	Which capabilities are commodities to buy or integrate (payment processing, tax calculation, search, email and SMS delivery, CDN, maps), and which are core to build?
+km	ENG-04	model	How should the system be decomposed (modular monolith or services; bounded contexts from the domain model), and in what order should modules be built?
+km	ENG-05	model	How should money, currencies and time zones be represented and computed to avoid rounding and reconciliation errors?
+km	ENG-06	slice	How will Sharrwah be validated against the reference: which captured journeys become executable acceptance examples, and how are differences recorded?
+km	ENG-07	model	How should the event backbone be built (outbox, ordering, retries, webhook fan-out) so internal events and public webhooks stay consistent?
+km	ENG-08	model	Which security baseline must hold from day one (PCI DSS scope reduction, secrets, encryption, tenant-isolation tests, penetration testing)?
+km	INT-01	spine	Which market and merchant segments does Sharrwah serve first, and does that change which slots must be filled at launch?
+km	INT-02	spine	What does parity with the product class mean in practice: which areas must be at parity for launch, and in what order do the rest follow (sequencing, not narrowing)?
+km	INT-03	model	Which capabilities belong in Sharrwah's core and which are left to apps on purpose, given what the reference platforms leave to their ecosystems (APP-05)?
+km	INT-04	later	Will Sharrwah run its own payments, marketplace or buyer app, or rely on partners for each?
+km	INT-05	model	Which team, budget and timeline constraints bound the first version, and which architecture choices do they rule out?
+km	MTH-01	spine	What counts as part of the product class: a capability both references have, one either has, or one a third reference confirms?
+km	MTH-02	spine	What is the stopping rule for capture in each area, and how is saturation measured?
+km	MTH-03	spine	How are disagreements handled: between a platform's declarations and its behaviour, between the two platforms, and between evidence and an agent's claim?
+km	MTH-04	spine	Which third reference platform should be read at declaration level, and which open-source implementations should be studied for internals?
+km	MTH-05	later	How is evidence kept fresh as platforms change (router versions, betas, API versions), and how is a claim's age tracked?
+pay	PAY-01	spine	Which roles take part in commerce money (payer, seller, merchant of record, platform, credential holder, processor, network or issuer, lender, cash collector, app developer), which party fills each role in each arrangement, and which roles can one organization hold at once?
+pay	PAY-02	model	Which events create, change or end what a buyer owes (placing an order, sending a draft or invoice, editing, returning or exchanging, cancelling, adding a fee, tip or duty), and is each change recorded as its own agreement, separate from any money that moves?
+pay	PAY-03	model	Is the amount still owed held as one signed balance between buyer and seller (positive when the buyer owes, negative when a refund is owed), and is every payment status derived from it and the money records rather than stored on its own?
+pay	PAY-04	model	When does an obligation fall due (at checkout, on receipt of an invoice, a number of days after issue, on a fixed date, on fulfilment or delivery, or in scheduled parts with a deposit), what is each part's basis, and what happens when a part falls due: a charge, a reminder, or only a status change?
+pay	PAY-05	model	How do purchase options that separate buying from paying (pre-order, try before you buy, subscription, instalments) state what is charged now, what later and on which trigger, and how do stock reservation and delivery timing relate to payment timing?
+pay	PAY-06	spine	Which obligations sit outside the buyer and seller order (stored value owed to its holders, a buyer's debt to a lender, the seller's debts to the platform, providers, lenders and app developers), and does one money model hold them all?
+pay	PAY-07	model	What is frozen when an obligation is accepted (prices, exchange rate, tax, discounts, return rules, payment rules), and which later events may still change it?
+pay	PAY-08	spine	Along which dimensions do payment arrangements differ (who acquires the credential or proof, who establishes the outcome, how fast it arrives, whether funds can be reserved before they are taken, how it is reversed, which dispute process applies, who holds the funds, who carries the risk), so that cards, wallets, transfers, vouchers, cash on delivery and stored value are points in one space rather than separate features?
+pay	PAY-09	model	How is the set of arrangements offered for one obligation decided (seller configuration, market, buyer location, currency, amount, cart contents, buyer group, delivery method, channel, plan), who may hide, reorder, rename or attach terms to them, and which floor does the platform fix?
+pay	PAY-10	slice	How are several arrangements combined on one obligation (a gift card with a card, a wallet deposit with cash on delivery for the rest, split tender at a counter), in what order are amounts allocated, what caps each part, and what happens to completed parts when one fails?
+pay	PAY-11	model	What standing permission lets a seller charge a buyer later without the buyer present (a stored instrument, a mandate, a billing agreement), who grants it, what is it scoped to, how is it revoked, and how is it replaced?
+pay	PAY-12	later	How does a seller publish the arrangements it accepts so that surfaces other than its own checkout (a marketplace, a buyer app, an AI agent) can use them, with credentials bound to one obligation and recipient and eligibility decided by the seller?
+pay	PAY-13	model	What is a payment attempt, which states can it pass through (awaiting buyer action, redirecting, confirming, pending, succeeded, rejected), which are final, which are enough for an order to exist, and what closed set of reasons accompanies the rejected and pending states?
+pay	PAY-14	model	Who may establish an outcome for each arrangement (a network or provider, the platform's own stored-value ledger, or a person: staff at a counter, a courier, a seller marking an order paid, a buyer uploading proof of a transfer), and what evidence must each kind of outcome carry?
+pay	PAY-15	model	Which arrangements let funds be reserved before they are taken (authorize, capture, void, partial and repeated capture), how is the moment of taking chosen (at checkout, on fulfilment, per shipment, by hand), and what happens when an arrangement lacks the capability the seller's policy needs?
+pay	PAY-16	model	For each waiting state (buyer action, pending provider result, authorization, voucher or transfer window, confirmation gate), what is the deadline and what does the platform do when it passes: expire, cancel, release stock, notify?
+pay	PAY-17	model	How is an attempt with an unknown result (after a timeout, a lost response or a crash) driven to a definite outcome, through idempotency keys, retry schedules, first-writer-wins, provider callbacks, platform status queries or manual reconciliation, so that no buyer is charged twice or charged without an order?
+pay	PAY-18	model	What must be re-checked between the buyer's approval and the irreversible debit (stock, price, discounts), how long does the go-ahead stay valid, and how is a debit that lands after it lapses undone?
+pay	PAY-19	model	Which records are authoritative for what was agreed, what was attempted with a provider, what money actually moved, what falls due when, and what a processor credited net of fees, and how are differences between them stored as explicit records rather than overwritten?
+pay	PAY-20	model	How is an order's payment status derived from its money records, which statuses are distinct and which are only filters, and how does the payment axis relate to the fulfilment, return and order-life axes?
+pay	PAY-21	model	What ceilings bound collecting and refunding (the authorized amount, the outstanding balance, the amount paid with each tender, the shipping charged), how is a refund split across tenders and destinations (original method, store credit, cash), and under what explicit override may a ceiling be exceeded?
+pay	PAY-22	model	In which currency is each amount recorded, at which money events is an exchange rate fixed (acceptance, capture or collection, refund, dispute, payout), where does each rate come from, and who bears the difference between them?
+pay	PAY-23	slice	Which order states block which money actions (pending outcome, partial fulfilment, imported or app-owned orders, open dispute, closed cash session), and which money states block which order actions (fulfilling unpaid goods, cancelling after fulfilment)?
+pay	PAY-24	model	For each arrangement, who holds the money between the buyer's payment and the seller's receipt (the platform, a processor, a bank, a wallet operator, a courier, the seller itself), and how does the platform learn when it moved?
+pay	PAY-25	model	When the platform holds or tracks a seller's funds, what is the unit entry (gross, fee, tax on fee, net, source, order link, payout link, currency, rate), which balances does it feed (pending, available, reserved, held), and is every correction a new reversing entry?
+pay	PAY-26	model	What moves a seller's funds from collected to available to paid out (settlement delay by market, risk and arrangement; minimum payout; schedule; holds), which states does a payout pass through, and how is a failed payout retried?
+pay	PAY-27	model	What claims are netted from a seller's money before payout (processing fees, reserves, dispute holds, platform bills, lender remittances, seller-defined splits), in what order, and how is a debt recovered when the balance goes negative and the platform has no right to debit the seller's account?
+pay	PAY-28	model	How is money collected outside any processor (cash at a counter, cash on delivery by a courier, a bank transfer, cash handed to an agent) counted, handed over and remitted, who is accountable for a shortfall, and how is that recorded without rewriting orders?
+pay	PAY-29	slice	Which identifiers must cross every boundary so that orders, attempts, provider references, ledger entries, payouts and bank or wallet statements reconcile, and which reconciliation reports does each party need?
+pay	PAY-30	later	Which channels can a buyer use to contest a payment (a card chargeback, a provider's dispute process, a platform complaint, refusal at delivery), how does an inquiry differ from a chargeback in its money effect, and how do refunds and disputes interact so money is never returned twice?
+pay	PAY-31	later	Where can loss move away from the seller (strong buyer authentication, a platform protection program, a lender, a courier's guarantee), and how is each move recorded?
+pay	PAY-32	later	Which signals measure a seller's payment risk, over what window and denominator, and what ladder of consequences follows (slower payouts, reserves, holds, suspended charging, termination)?
+pay	PAY-33	model	What contract must a payment provider implement (operations, request and outcome messages, states, capability declaration, binding of the seller's own provider account, service duties), which decisions stay with the platform, and how can a provider add buyer interaction such as fields, codes or one-time passwords inside checkout?
+pay	PAY-34	slice	What must a seller declare and prove before it may take payments and before it may be paid out, how do the two gates differ, and what happens to money collected before verification completes?
+pay	PAY-35	model	Which payment properties are set per market (arrangements by buyer location and currency, settlement delay, payout schedule and minimum, debit or offset recovery, onboarding evidence, business-day calendar, tax on fees), on which composite keys, and where is the single source of truth?
+pay	PAY-36	slice	How can every payment outcome (approval, decline, error, pending, expiry, dispute) be simulated per arrangement without blocking live sales or mixing test money into balances and reports?
+pay	PAY-37	launch	Which arrangements do buyers and sellers in Yemen use (cash on delivery, mobile wallets confirmed by one-time password, buyer-made vouchers, bank and money-transfer payments, cash handed to agents), and where does each sit on the dimensions of PAY-08?
+pay	PAY-38	launch	Which currencies and exchange-rate regimes apply to commerce in Yemen, which rate source is authoritative in which place, and how fast do rates move?
+pay	PAY-39	launch	Who may hold or settle sellers' funds in Yemen (collect cash on delivery, keep seller balances, operate a wallet), what licence or partnership would each role need, and what reporting duties follow?
+pay	PAY-40	launch	Which business days, holidays and cut-off times govern settlement with banks, wallets and couriers in Yemen?
+pay	PAY-41	model	How should the money ledgers be built (signed append-only entries or double entry, one per currency, idempotent posting, reversal instead of edit) so that the order, custody, platform-balance, stored-value and billing ledgers reconcile with each other?
+pay	PAY-42	spine	Which money roles will Sharrwah take at launch (technical intermediary only, collector of cash on delivery through couriers, holder of seller balances, wallet operator), and which does it leave to providers and sellers?
+pay	PAY-43	spine	Which authority zone does Sharrwah serve at launch: the Aden zone, the Sana'a zone, or both as separate ecosystems? May a seller in one zone sell to buyers in the other?
+pay	PAY-44	spine	Which legal entity and domicile contracts with Yemeni sellers and payment partners, and what US nexus (cloud, app stores, investors, staff) will it carry under the 2025 FTO designation?
+pay	PAY-45	spine	Is Sharrwah's launch position record-only plus technical integrator on sellers' own accounts, in every zone and arrangement, never receiving buyer money? (Restates PAY-42 at the setup-option level.)
+pay	PAY-46	slice	Which rails does Sharrwah integrate first in each zone, and which does it refuse on sanctions or licensing grounds (Floosak through Yemen Kuwait Bank, IBY's Al-Dawli Money, wallets on CBY-Aden's June 2024 list)?
+pay	PAY-47	launch	Who holds cash on delivery at launch: the seller and its own courier, or Sharrwah-contracted couriers who remit to Sharrwah for netted payouts?
+pay	PAY-48	model	In which currency edition does a seller price and a buyer's obligation arise? Which reference currency (SAR or USD) anchors cross-zone prices? Which rate source governs order, collection, refund and payout, and who bears moves between them?
+pay	PAY-49	model	How are refunds made and recorded on rails with no reversal API (seller transfer, cash, seller-specific credit)? Will Sharrwah ever issue credit usable across sellers?
+pay	PAY-50	slice	Will Sharrwah's checkout collect buyer wallet secrets (OTP, PIN, online purchase code), or only hand buyers to partner-hosted pages and apps?
+pay	PAY-51	model	How will Sharrwah earn from payments: a separately billed subscription, a commission netted by a licensed partner, or fees on its own collections? Netting requires custody or a partner.
+pay	PAY-52	later	Which trigger (volume, demand for netted cash on delivery, partner refusal, merger offer) would lead Sharrwah to apply for a CBY-Aden PSP or e-money licence, or merge with a licensed issuer, and what capital will it commit?
+pay	PAY-53	later	Will Sharrwah serve diaspora buyers paying by card at launch or later, through MEPS Yemen or an offshore entity?
+pay	PAY-54	spine	Under CBY-Aden's 2022 PSP and 2023 e-money instructions, are recording outcomes and initiating OTP-confirmed debits into each seller's own wallet outside "payment services" and "payment initiation"? Will CBY-Aden confirm that in writing?
+pay	PAY-55	launch	What approval must a licensed wallet or bank obtain to contract Sharrwah as a technical third party, how long does it take, and does the onshore data-centre rule reach Sharrwah's components that handle payment data?
+pay	PAY-56	launch	Does collecting cash on delivery for sellers and paying them out require a PSP licence, or fall under Decision 23/2024 on domestic cash transfers, when the collector is a platform or courier rather than an exchange company? Does holding an exchange-transfer code until delivery count as handling the transfer?
+pay	PAY-57	later	Is seller-specific or platform-wide store credit (refund balance, cashback) e-money under the 2023 instructions? Is any limited-network exemption available?
+pay	PAY-58	launch	What do CBY-Sana'a's Decision 1/2020 and later instructions require of a software platform that integrates Sana'a-licensed wallets, and what commercial registration does it need in the Sana'a zone?
+pay	PAY-59	spine	Can one company or group lawfully integrate rails in both zones, given CBY-Aden's June 2024 circular, CBY-Sana'a's June 2025 action against Al-Kuraimi, and US material-support rules on fees and taxes paid to Houthi authorities?
+pay	PAY-60	launch	Which wallets and PSPs does each central bank license in 2026, and is Circular CBY/L/282/2024 (the 12-wallet ban) still in force?
+pay	PAY-61	launch	What sanctions screening and KYC must Sharrwah itself run on sellers, beneficial owners and partners (UN, OFAC, EU, UK), given CBY-Aden Circular 4/2025 binds its banks and exchangers?
+pay	PAY-62	launch	Is Sharrwah's subscription or commission subject to 5% sales tax, from which threshold and in which rial edition, with which invoice fields? What extra levies apply in the Sana'a zone?
+pay	PAY-63	slice	For each candidate rail (Kuraimi E-Pay, Aden Cash, Shamil Money, ONE Cash, CashPay, SabaCash, Jawali, Al-Qutaibi), what are the integrator terms and technical facts? Platform or per-seller credentials; seller onboarding steps and whether informal sellers qualify; merchant fees and legal-entity caps; settlement to bank; refund, status and callback APIs; sandbox; idempotency; OTP window; currencies, editions and zones.
+pay	PAY-64	model	Will any CBY-Aden-licensed wallet or bank offer partner-held merchant accounts for sellers onboarded through Sharrwah, settling to sellers directly and netting Sharrwah's fee?
+pay	PAY-65	later	Does any Yemeni bank offer escrow or trust accounts that release funds to a seller on a platform's delivery instruction, and on what terms?
+pay	PAY-66	later	For MEPS Yemen: which acquiring bank (and its sanctions status), currencies, 3-D Secure, authorise and capture, fees, settlement, sub-merchant support, and acceptance of foreign and Saudi mada cards?
+pay	PAY-67	launch	Do UNMONEY or its members offer a third-party API or reference lookup? How are unpaid transfers cancelled or refunded, what are the fees and limits, and can transfers be paid into wallets or accounts and into the Sana'a zone?
+pay	PAY-68	launch	Which couriers will collect cash on delivery for sellers, and on what terms: remittance cycle, fee, statements, API, cash limits, note-edition handling, refusals and returns?
+pay	PAY-69	later	When will YPCC's fast payment system and the national QR standard go live? Can platforms connect directly or only through banks, and will they carry request-to-pay and merchant references?
+pay	PAY-70	launch	Which wallets and banks actually serve customers in both zones in 2026 (ONE Cash, Al-Kuraimi after June 2025), in which rial edition, and at what cross-zone cost?
+pay	PAY-71	launch	How do Yemeni sellers split payments across cash on delivery, wallet transfers, Kuraimi and exchange transfers? How do they verify? How often do fake receipts, refusals and returns occur, and how do they serve buyers in the other zone?
+pay	PAY-72	launch	Do buyers' preferences (cash on delivery versus prepaid, choice of wallet) differ between zones and cities?
+pay	PAY-73	model	How is money represented so that a currency edition (YER-old, YER-new) and a zone travel with every amount, every rate records source, side, time and validity, and every conversion is an explicit FX entry? (Extends PAY-22.)
+pay	PAY-74	model	Which records carry a zone (buyer, seller, delivery address, instrument, partner, ledger, rate)? How is the governorate-to-zone map versioned when front lines move, and what does checkout do when buyer and seller zones differ? (Extends PAY-35.)
+pay	PAY-75	model	Which outcome sources exist (rail response, rail status query, courier event, seller attestation, buyer claim, Sharrwah ledger)? What evidence must each carry, and which payment states may each produce? (Extends PAY-14.)
+pay	PAY-76	model	What capability profile must every arrangement adapter declare: initiation style, buyer-input steps and their order, how the outcome is discovered, hold semantics, reversal, dispute path, currencies and editions, zones, limits, idempotency, seller prerequisites, licence basis? (Extends PAY-08 and PAY-33.)
+pay	PAY-77	model	How is custody tracked when the custodian is a courier, exchange network, partner or Sharrwah: expected against remitted amounts, exposure limit per custodian, and who is accountable for a shortfall? (Extends PAY-24 and PAY-28.)
+pay	PAY-78	model	How does a seller's receiving profile hold several instruments per zone and currency (wallet numbers, accounts, Hasib points, exchange beneficiary names, merchant credentials), each with readiness and verification state?
+pay	PAY-79	slice	How are buyer secrets (OTP, PIN, purchase code) and per-seller rail credentials collected, stored and isolated, given rail clients that use MD5 tokens, zero-IV AES and bare-IP endpoints?
+pay	PAY-80	model	How is Sharrwah's position recorded per payment setup instance and zone, so the same rail can run under different positions and a partner cut-off can drop sellers to record-only without rewriting orders? (Extends PAY-42.)
+pay	PAY-81	model	How should the rate service take in CBY-Aden board decisions (no machine-readable feed), ACAPS and exchanger quotes for both zones, flag stale or diverging sources, and refuse global FX feeds?

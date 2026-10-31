@@ -1,0 +1,244 @@
+cap_id	platform	supports	key	why
+CM-CAT-001	shopify	core	SH-C-020/where/SH-S-1509	the admin's main navigation item Products
+CM-CAT-001	shopify	core	SH-C-020/where/SH-S-5015	admin route products
+CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-5016	the route's eligibility: PRODUCTS permission, products entitlement
+CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-5018	route products:create needs MANAGE_PRODUCTS
+CM-CAT-001	shopify	core	SH-C-020/where/SH-S-5009	bulk editor route bulk/product
+CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-5349	entitlement products true on every store of its scope
+CM-CAT-001	shopify	core	SH-C-020/decides/SH-S-7004	plan row Sell unlimited products, Included on all four plans
+CM-CAT-001	shopify	core	SH-C-020/boundary/SH-S-6098	Shopify's own API for its own feature (C1): webhook topic products/create, read_products scope
+CM-CAT-001	shopify	core	SH-C-020/boundary/SH-S-1051	Shopify's own API for its own feature (C1): access scope write_products
+CM-CAT-001	shopify	core	SH-C-020/where/SH-S-0931	Shopify's own API for its own feature (C1): Product in the Events API's navigation
+CM-CAT-001	shopify	shows	SH-C-020/responsible/SH-S-0236	the merchant is responsible for the goods it sells
+CM-CAT-001	shopify	shows	SH-C-020/decides/SH-S-0031	Shopify may refuse or remove goods that violate its AUP
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1791	main navigation link All products (/products)
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1690	settings menu link ProductsNew (/products)
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1796	link Product editor (/products/editor)
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1793	link Product settings
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1893	link Deleted products (/products/trash)
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-3530	the dashboard's own products app @salla.sa/ui-merchant-products at /products
+CM-CAT-001	salla	shows	SA-C-020/decides/SA-S-2471	products_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-CAT-001	salla	core	SA-C-020/decides/SA-S-2254	staff permission products_management, group المنتجات (S7)
+CM-CAT-001	salla	core	SA-C-020/decides/SA-S-1949	plan line عدد لا محدود من المنتجات, Salla Plus
+CM-CAT-001	salla	core	SA-C-020/decides/SA-S-1952	plan line إضافة كل أنواع المنتجات, Salla Plus
+CM-CAT-001	salla	core	SA-C-020/where/SA-S-1022	Salla's own API for its own feature (C1): Merchant API folder Products
+CM-CAT-001	salla	core	SA-C-020/boundary/SA-S-1552	Salla's own API for its own feature (C1): app scope products (المنتجات), read and read_write
+CM-CAT-001	salla	core	SA-C-020/boundary/SA-S-1591	Salla's own API for its own feature (C1): webhook product.created (إنشاء منتج)
+CM-CAT-001	salla	core	SA-C-020/decides/SA-S-2253	staff permission product_browse, group المنتجات (S8)
+CM-CAT-002	shopify	core	SH-C-020/decides/SH-S-7214	the plan creates up to 100 variants for each product
+CM-CAT-002	shopify	core	SH-C-020/decides/SH-S-5021	route products:variants:update:barcodes, PRODUCTS and MANAGE_INVENTORY
+CM-CAT-002	shopify	extension-point	SH-C-189/where/SH-S-2644	App Store category Custom product apps
+CM-CAT-002	salla	core	SA-C-021/where/SA-S-1794	link Categories & options (/products/options)
+CM-CAT-002	salla	core	SA-C-021/decides/SA-S-1973	plan line إضافة خيارات متعددة للمنتج الواحد, Salla Plus
+CM-CAT-002	salla	core	SA-C-021/decides/SA-S-3462	feature product-option-color-and-image, enabled
+CM-CAT-002	salla	core	SA-C-021/decides/SA-S-3477	feature default-product-option-value, plans plus, pro, special
+CM-CAT-002	salla	core	SA-C-021/where/SA-S-1025	Salla's own API for its own feature (C1): Merchant API folder Product Options
+CM-CAT-002	salla	core	SA-C-021/boundary/SA-S-1027	Salla's own API for its own feature (C1): Merchant API folder Product Option Values
+CM-CAT-002	salla	core	SA-C-021/boundary/SA-S-1031	Salla's own API for its own feature (C1): Merchant API folder Product Variants
+CM-CAT-002	salla	core	SA-C-021/boundary/SA-S-1051	Salla's own API for its own feature (C1): Merchant API folder Product Option Templates
+CM-CAT-002	salla	core	SA-C-021/boundary/SA-S-1605	Salla's own API for its own feature (C1): webhook product.variant.updated (تم تحديث إصدار المنتج)
+CM-CAT-003	shopify	core	SH-C-021/where/SH-S-1510	the admin's main navigation item Collections
+CM-CAT-003	shopify	core	SH-C-021/where/SH-S-5110	admin route collections
+CM-CAT-003	shopify	core	SH-C-021/decides/SH-S-5111	eligibility: PRODUCTS permission; entitlements products, productsCollections.eligible
+CM-CAT-003	shopify	core	SH-C-021/decides/SH-S-5580	entitlement productsCollections eligible and publishable on every store of its scope
+CM-CAT-003	shopify	core	SH-C-021/boundary/SH-S-6097	Shopify's own API for its own feature (C1): collections/update: a product added or removed by hand, or the collection's rules change
+CM-CAT-003	shopify	core	SH-C-021/decides/SH-S-6278	Shopify's own API for its own feature (C1): collectionAddProducts: not on the Starter or Retail plans; a permission adds products to a collection
+CM-CAT-003	shopify	core	SH-C-021/boundary/SH-S-0784	Shopify's own API for its own feature (C1): GraphQL Admin API category Products and collections
+CM-CAT-003	shopify	core	SH-C-021/boundary/SH-S-1171	Shopify's own API for its own feature (C1): webhook topic collections/create
+CM-CAT-003	salla	core	SA-C-022/where/SA-S-1794	link Categories & options (/products/options)
+CM-CAT-003	salla	core	SA-C-022/decides/SA-S-1974	plan line تصنيفات المنتجات, Salla Plus
+CM-CAT-003	salla	shows	SA-C-022/decides/SA-S-2472	categories_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-CAT-003	salla	core	SA-C-022/decides/SA-S-2255	staff permission categories_management, group المنتجات (S7)
+CM-CAT-003	salla	core	SA-C-022/decides/SA-S-3484	feature category-image, plans plus, pro, special
+CM-CAT-003	salla	core	SA-C-022/where/SA-S-1053	Salla's own API for its own feature (C1): Merchant API folder Categories
+CM-CAT-003	salla	core	SA-C-022/boundary/SA-S-1550	Salla's own API for its own feature (C1): app scope categories (الاقسام)
+CM-CAT-003	salla	core	SA-C-022/boundary/SA-S-1611	Salla's own API for its own feature (C1): webhook category.created (انشاء تصنيف)
+CM-CAT-003	salla	core	SA-C-020/boundary/SA-S-1597	Salla's own API for its own feature (C1): webhook product.category.updated (تم تحديث تصنيف المنتج)
+CM-CAT-004	shopify	core	SH-C-028/boundary/SH-S-6240	Shopify's own API for its own feature (C1): write_metaobjects for taxonomy linking, in a product guide
+CM-CAT-004	salla	core	SA-C-022/decides/SA-S-3506	feature google-taxonomy, released, plans plus, pro, special
+CM-CAT-004	salla	shows	SA-C-022/decides/SA-S-3507	feature salla-taxonomy, not released: Salla names the feature (C6)
+CM-CAT-005	salla	core	SA-C-023/where/SA-S-1757	settings key products/brand_options: Brand settings
+CM-CAT-005	salla	shows	SA-C-023/decides/SA-S-2477	brands_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-CAT-005	salla	core	SA-C-023/decides/SA-S-2260	staff permission brands_management, group المنتجات (S7)
+CM-CAT-005	salla	shows	SA-C-023/decides/SA-S-2476	brands_browse in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-CAT-005	salla	core	SA-C-023/decides/SA-S-2259	staff permission brands_browse, group المنتجات (S7)
+CM-CAT-005	salla	core	SA-C-023/decides/SA-S-3460	feature brands, plans plus, pro, special
+CM-CAT-005	salla	core	SA-C-023/where/SA-S-1056	Salla's own API for its own feature (C1): Merchant API folder Brands
+CM-CAT-005	salla	core	SA-C-023/boundary/SA-S-1551	Salla's own API for its own feature (C1): app scope brands (الماركات التجارية)
+CM-CAT-005	salla	core	SA-C-023/boundary/SA-S-1613	Salla's own API for its own feature (C1): webhook brand.created (إنشاء علامة تجارية)
+CM-CAT-005	salla	core	SA-C-020/boundary/SA-S-1603	Salla's own API for its own feature (C1): webhook product.brand.updated (تم تحديث ماركة المنتج)
+CM-CAT-006	shopify	core	SH-C-020/boundary/SH-S-6160	Shopify's own API for its own feature (C1): Storefront API scope unauthenticated_read_product_tags
+CM-CAT-006	salla	core	SA-C-020/decides/SA-S-1982	plan line وسوم المنتجات, Salla Plus
+CM-CAT-006	salla	core	SA-C-020/decides/SA-S-3470	feature product-tags, plans plus, pro, special
+CM-CAT-006	salla	core	SA-C-020/boundary/SA-S-1024	Salla's own API for its own feature (C1): Merchant API folder Product Tags
+CM-CAT-006	salla	core	SA-C-020/boundary/SA-S-1604	Salla's own API for its own feature (C1): webhook product.tags.updated (تم تحديث وسم المنتج)
+CM-CAT-007	shopify	core	SH-C-020/where/SH-S-5025	route product:try-media-gen in the Products section
+CM-CAT-007	shopify	core	SH-C-028/boundary/SH-S-6240	Shopify's own API for its own feature (C1): write_files for media, in a product guide
+CM-CAT-007	salla	core	SA-C-020/decides/SA-S-3520	feature media-center, enabled, plans basic, plus, pro, special
+CM-CAT-007	salla	shows	SA-C-020/decides/SA-S-3483	feature upload-gif-image, not released: Salla names the feature (C6)
+CM-CAT-007	salla	shows	SA-C-020/decides/SA-S-3463	feature promote-product-video, not released: Salla names the feature (C6)
+CM-CAT-007	salla	core	SA-C-020/decides/SA-S-3521	setting maximum-uploaded-images: 40
+CM-CAT-007	salla	shows	SA-C-020/decides/SA-S-3475	three-dimension-image: type app, with an App Store install link
+CM-CAT-007	salla	shows	SA-C-020/decides/SA-S-3476	virtooal: type app, with an App Store install link
+CM-CAT-007	salla	core	SA-C-020/boundary/SA-S-1026	Salla's own API for its own feature (C1): Merchant API folder Product Images
+CM-CAT-007	salla	core	SA-C-020/boundary/SA-S-1602	Salla's own API for its own feature (C1): webhook product.image.updated (تم تحديث صور المنتج)
+CM-CAT-008	shopify	core	SH-C-038/decides/SH-S-7071	plan row Merchandise with Shopify Combined Listings, Included on Plus only
+CM-CAT-008	shopify	core	SH-C-038/boundary/SH-S-7455	Shopify's own API for its own feature (C1): GraphQL object CombinedListing: A combined listing of products.
+CM-CAT-009	salla	core	SA-C-028/where/SA-S-1801	link Product restrictions (/products/restrictions)
+CM-CAT-009	salla	core	SA-C-028/decides/SA-S-2136	plan line قيود المنتج, Salla Pro
+CM-CAT-009	salla	core	SA-C-028/decides/SA-S-3505	feature sales-restrictions, plans pro, special
+CM-CAT-010	shopify	extension-point	SH-C-185/where/SH-S-2568	App Store category Dropshipping apps
+CM-CAT-010	shopify	extension-point	SH-C-185/where/SH-S-2566	App Store category Finding products apps
+CM-CAT-010	shopify	shows	SH-C-141/decides/SH-S-7013	plan row Sell and source products with Shopify Collective, Included on all four plans; core in E's CM-CHN-005, Shopify Collective, where its concern lands, so it counts once (the coordinator, convention 8)
+CM-CAT-010	shopify	shows	SH-C-141/where/SH-S-0729	stores connect with other Shopify stores and sell each other's products; core in E's CM-CHN-005, Shopify Collective, so it counts once (the coordinator, convention 8)
+CM-CAT-010	shopify	shows	SH-C-185/responsible/SH-S-0058	the use of a third-party service is solely between the merchant and its provider
+CM-CAT-010	salla	extension-point	SA-C-124/where/SA-S-1193	App Store category Drop shipping (type app)
+CM-CAT-010	salla	extension-point	SA-C-124/decides/SA-S-0179	an endpoint allowed only for dropshipping applications
+CM-CAT-010	salla	core	SA-C-098/decides/SA-S-2069	plan line سوق الجملة (wholesale market), Salla Plus
+CM-CAT-010	salla	core	SA-C-098/decides/SA-S-2456	staff permission vendors_buy_products in the wholesale market's group
+CM-CAT-010	salla	shows	SA-C-124/responsible/SA-S-5054	Salla disclaims products, returns, shipping and delivery between the merchant and the partner app
+CM-CAT-011	salla	shows	SA-C-020/decides/SA-S-2612	size_guides_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-CAT-011	salla	core	SA-C-020/decides/SA-S-2395	staff permission size_guides_management, group إعدادات المتجر (S7)
+CM-CAT-011	salla	shows	SA-C-020/decides/SA-S-3461	size-guides: type app, plans plus, pro, special, with an install link
+CM-SEL-001	shopify	extension-point	SH-C-186/where/SH-S-2657	App Store category Subscription apps
+CM-SEL-001	shopify	extension-point	SH-C-186/where/SH-S-0763	subscription apps build subscription experiences into Shopify's ecosystem
+CM-SEL-001	shopify	extension-point	SH-C-186/boundary/SH-S-6257	an app has the read_own and write_own_subscription_contracts scopes
+CM-SEL-001	shopify	extension-point	SH-C-186/boundary/SH-S-6286	an app adds write_purchase_options to create selling plans
+CM-SEL-001	shopify	core	SH-C-186/decides/SH-S-5019	admin route product:purchase_options:update, PRODUCTS permission
+CM-SEL-001	shopify	core	SH-C-186/decides/SH-S-5144	admin route customer-subscriptions:show, ORDERS permission
+CM-SEL-001	shopify	shows	SH-C-186/responsible/SH-S-0762	a subscription contract is between a customer and a merchant
+CM-SEL-001	shopify	shows	SH-C-186/decides/SH-S-0593	subscriptions on POS require Shopify Payments
+CM-SEL-001	shopify	extension-point	SH-C-186/boundary/SH-S-1351	Shopify's API, whose statements say apps do the work (C1; SH-S-0763: subscription apps build subscription experiences): webhook topic selling_plan_groups/create
+CM-SEL-001	shopify	extension-point	SH-C-186/boundary/SH-S-6073	Shopify's API, whose statements say apps do the work (C1; SH-S-0763: subscription apps build subscription experiences): webhook topic subscription_billing_attempts/success
+CM-SEL-001	salla	shows	SA-C-125/decides/SA-S-3301	feature recurring-payment, not released: Salla names the feature (C6)
+CM-SEL-001	salla	shows	SA-C-125/decides/SA-S-3302	feature recurring-apple-pay, enabled, not released: Salla names the feature (C6)
+CM-SEL-001	salla	core	SA-C-125/decides/SA-S-0195	recurring payments are Salla's own feature, disabled for all stores by default, which merchants can enable (C6: re-read with the flags as shows)
+CM-SEL-001	salla	extension-point	SA-C-125/where/SA-S-1173	Salla's API, whose statements say apps do the work (C1; SA-S-0195: authorized third-party apps enable it; the API is listed under extension-points): developer docs folder Recurring Payments API
+CM-SEL-001	salla	extension-point	SA-C-125/boundary/SA-S-1642	Salla's API, whose statements say apps do the work (C1; SA-S-0195: authorized third-party apps enable it; the API is listed under extension-points): webhook subscription.created (تم انشاء اشتراك)
+CM-SEL-001	salla	extension-point	SA-C-125/boundary/SA-S-1643	Salla's API, whose statements say apps do the work (C1; SA-S-0195: authorized third-party apps enable it; the API is listed under extension-points): webhook subscription.charge.succeeded
+CM-SEL-001	salla	extension-point	SA-C-125/boundary/SA-S-1645	Salla's API, whose statements say apps do the work (C1; SA-S-0195: authorized third-party apps enable it; the API is listed under extension-points): webhook subscription.cancelled, by the system or the user
+CM-SEL-001	salla	extension-point	SA-C-125/boundary/SA-S-1567	Salla's app scope subscriptions (الاشتراك), of the Recurring Payments API that apps use (C1, S8)
+CM-SEL-002	shopify	extension-point	SH-C-190/where/SH-S-2648	App Store category Digital goods and service apps
+CM-SEL-002	salla	core	SA-C-024/where/SA-S-1894	link Digital card history (/products/card-logs)
+CM-SEL-002	salla	core	SA-C-024/decides/SA-S-1999	plan line إرسال محتوى المنتجات الرقمية, Salla Plus
+CM-SEL-002	salla	shows	SA-C-024/decides/SA-S-2478	browse_digital_codes_logs in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-SEL-002	salla	core	SA-C-024/decides/SA-S-2261	staff permission browse_digital_codes_logs, group المنتجات (S7)
+CM-SEL-002	salla	core	SA-C-024/decides/SA-S-3496	feature digital-code, plans plus, pro, special
+CM-SEL-002	salla	core	SA-C-024/decides/SA-S-3498	feature digital-file, plans plus, pro, special
+CM-SEL-002	salla	core	SA-C-024/decides/SA-S-3499	feature digital-product-settings, plans plus, pro, special
+CM-SEL-002	salla	core	SA-C-024/where/SA-S-1029	Salla's own API for its own feature (C1): Merchant API folder Digitals Product
+CM-SEL-003	shopify	extension-point	SH-C-190/where/SH-S-5094	admin route nft-application, named for an application and gated only by the apps permission: the app's page (C4)
+CM-SEL-003	shopify	shows	SH-C-190/where/SH-S-1550	the admin router's section Blockchain, whose one held route is the app's page nft-application (C4)
+CM-SEL-003	shopify	shows	SH-C-190/decides/SH-S-5095	the route needs only the apps permission APPLICATIONS (C4)
+CM-SEL-003	shopify	extension-point	SH-I-1888	App Store category NFT and tokengating apps, placed in SH-C-190 (C2, C4)
+CM-SEL-004	salla	core	SA-C-031/where/SA-S-1779	link Bookings (/orders/reservations)
+CM-SEL-004	salla	core	SA-C-031/decides/SA-S-1994	plan line إدارة الحجوزات, Salla Plus
+CM-SEL-004	salla	shows	SA-C-031/decides/SA-S-2508	order_reservation_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-SEL-004	salla	core	SA-C-031/decides/SA-S-2291	staff permission order_reservation_management, group الطلبات (S7)
+CM-SEL-004	salla	core	SA-C-031/decides/SA-S-3474	feature product-booking, plans plus, pro, special
+CM-SEL-004	salla	core	SA-C-031/where/SA-S-1023	Salla's own API for its own feature (C1): Merchant API folder Order Reservations
+CM-SEL-004	salla	shows	SA-C-031/reason/SA-S-5012	a booking product (منتج الحجز) is separate from a normal product
+CM-SEL-004	shopify	extension-point	SH-I-1887	App Store category Event booking apps, placed in SH-C-190 (C2)
+CM-SEL-005	salla	core	SA-C-029/where/SA-S-1799	link Pre-order campaigns (/products/campaigns)
+CM-SEL-005	salla	shows	SA-C-029/decides/SA-S-2479	pre_order_campaigns_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-SEL-005	salla	core	SA-C-029/decides/SA-S-2262	staff permission pre_order_campaigns_management, group المنتجات (S7)
+CM-SEL-005	salla	core	SA-C-029/decides/SA-S-3508	feature pre-order-campaigns, plans pro, special
+CM-SEL-005	shopify	extension-point	SH-I-1842	App Store category Pre-order apps, placed in SH-C-188 (C2)
+CM-SEL-006	shopify	extension-point	SH-C-188/where/SH-S-2604	App Store category Upsell and bundle apps
+CM-SEL-006	shopify	extension-point	SH-C-188/where/SH-S-2207	Shopify CLI extension template product_configuration
+CM-SEL-006	shopify	core	SH-C-188/boundary/SH-S-1100	Shopify's own API for its own feature (C1): Storefront API scope unauthenticated_read_bundles
+CM-SEL-006	salla	core	SA-C-020/decides/SA-S-3510	feature advance-bundle-product, plans plus, pro, special
+CM-SEL-006	salla	core	SA-C-020/decides/SA-S-3385	feature ai-bundles, released, plans special, pro, plus
+CM-SEL-006	salla	shows	SA-C-020/decides/SA-S-3297	feature bundle-zero-price-guard, not released: Salla names the feature (C6)
+CM-SEL-006	salla	core	SA-C-020/decides/SA-S-3522	setting bundle-section-products-limit: 5
+CM-SEL-007	shopify	extension-point	SH-C-187/where/SH-S-2583	App Store category Donation apps
+CM-SEL-007	salla	core	SA-C-020/where/SA-S-1760	settings key products/quick_donation: Quick donation
+CM-SEL-007	salla	shows	SA-C-020/decides/SA-S-2616	quick_donation_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-SEL-007	salla	core	SA-C-020/decides/SA-S-2399	staff permission quick_donation_management, group إعدادات المتجر (S7)
+CM-SEL-007	salla	core	SA-C-020/decides/SA-S-3118	feature quick-donation, plans plus, pro, special
+CM-SEL-007	salla	core	SA-C-020/decides/SA-S-3481	feature product-donation-options, enabled
+CM-INV-001	shopify	core	SH-C-022/where/SH-S-1511	the admin's main navigation item Inventory
+CM-INV-001	shopify	core	SH-C-022/where/SH-S-5192	admin route products:inventory (products/inventory)
+CM-INV-001	shopify	core	SH-C-022/where/SH-S-5178	admin route inventoryMovement (inventory_movements), section Inventory
+CM-INV-001	shopify	core	SH-C-022/decides/SH-S-5022	eligibility: PRODUCTS; entitlements products, inventory.enabled
+CM-INV-001	shopify	core	SH-C-022/decides/SH-S-5334	entitlement inventory enabled on every store of its scope
+CM-INV-001	shopify	core	SH-C-022/decides/SH-S-7009	plan row Inventory management, Included on all four plans
+CM-INV-001	shopify	core	SH-C-022/boundary/SH-S-6004	Shopify's own API for its own feature (C1): webhook topic inventory_levels/update
+CM-INV-001	shopify	core	SH-C-022/decides/SH-S-6213	Shopify's own API for its own feature (C1): inventoryAdjustQuantities: a permission to apply changes to inventory quantities
+CM-INV-001	shopify	core	SH-C-022/boundary/SH-S-0997	Shopify's own API for its own feature (C1): access scope write_inventory
+CM-INV-001	shopify	core	SH-C-023/decides/SH-S-5334	entitlement inventory: enabled, counts, purchaseOrders, transferLocation, as SH-C-023's statement (S2)
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1688	settings menu link Inventory (/inventory)
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1797	link Inventory management (/products/quantities/bulk)
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1803	link Inventory audit (/products/quantities)
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-1976	plan line إدارة المخزون, Salla Plus
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-1975	plan line تعديل الكميات, Salla Plus
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-2096	plan line جرد المنتجات والمخزون: tracking stock status and the numbers sold and remaining
+CM-INV-001	salla	shows	SA-C-025/decides/SA-S-2473	products_stock_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-2256	staff permission products_stock_management, group المنتجات (S7)
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-3504	feature inventory-management, plans plus, pro, special
+CM-INV-001	salla	shows	SA-C-025/decides/SA-S-2620	stock_settings_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-INV-001	salla	core	SA-C-025/decides/SA-S-2403	staff permission stock_settings_management, group إعدادات المتجر (S7)
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1742	settings key orders/auto-restock: Auto restock based on order status
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1758	settings key products/sync_ignore_sku: Exclude products from inventory sync
+CM-INV-001	salla	core	SA-C-025/where/SA-S-1030	Salla's own API for its own feature (C1): Merchant API folder Product Quantity
+CM-INV-001	salla	core	SA-C-025/boundary/SA-S-1594	Salla's own API for its own feature (C1): webhook product.available (المنتج متاح)
+CM-INV-002	shopify	core	SH-C-022/decides/SH-S-5193	route products:inventory:history, behind beta 10c5f657
+CM-INV-002	salla	core	SA-C-025/where/SA-S-1891	link Inventory log (/products/quantities/audit)
+CM-INV-002	salla	core	SA-C-025/decides/SA-S-3472	feature product-quantity-log, plans plus, pro, special
+CM-INV-002	salla	shows	SA-C-025/decides/SA-S-2469	product_browse_quantity_logs in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-INV-002	salla	core	SA-C-025/decides/SA-S-2252	staff permission product_browse_quantity_logs, group المنتجات (S7)
+CM-INV-002	salla	shows	SA-C-025/reason/SA-S-5011	a reason is mandatory when a quantity is reduced, to track inventory movement
+CM-INV-003	shopify	core	SH-C-022/decides/SH-S-5194	route products:inventory:counts: beta, PRODUCTS, entitlement inventory.counts
+CM-INV-003	shopify	core	SH-C-022/decides/SH-S-5196	route products:inventory:counts:create: MANAGE_INVENTORY, inventory.counts
+CM-INV-003	shopify	core	SH-C-022/decides/SH-S-7158	staff permission View inventory counts
+CM-INV-003	shopify	core	SH-C-022/decides/SH-S-7159	staff permission Manage inventory counts
+CM-INV-003	shopify	core	SH-C-022/decides/SH-S-7160	staff permission Perform inventory counts
+CM-INV-003	salla	core	SA-C-025/decides/SA-S-2096	plan line جرد المنتجات والمخزون (stocktake of products and inventory), Salla Plus (C3)
+CM-INV-003	salla	core	SA-C-025/where/SA-S-1803	dashboard link Inventory audit (/products/quantities) (C3)
+CM-INV-004	salla	core	SA-C-025/decides/SA-S-3471	feature product-quantity-notify, plans plus, pro, special
+CM-INV-004	salla	core	SA-C-025/boundary/SA-S-1595	Salla's own API for its own feature (C1): webhook product.quantity.low (قرب نفاذ كمية منتج)
+CM-INV-005	shopify	core	SH-C-024/where/SH-S-1493	the admin's settings navigation item Locations
+CM-INV-005	shopify	core	SH-C-024/decides/SH-S-5200	route location: LOCATIONS permission, entitlement maximumLocations
+CM-INV-005	shopify	core	SH-C-024/decides/SH-S-7010	plan row Inventory locations: 10, 10, 10, 200
+CM-INV-005	shopify	core	SH-C-022/decides/SH-S-5024	route products:update:locations needs MANAGE_INVENTORY
+CM-INV-005	shopify	core	SH-C-024/boundary/SH-S-6025	Shopify's own API for its own feature (C1): webhook topic locations/create
+CM-INV-005	shopify	extension-point	SH-C-024/boundary/SH-S-6206	apps edit the locations of their fulfillment services through write_fulfillments
+CM-INV-005	salla	core	SA-C-026/where/SA-S-1808	link Warehouses & branches (/products/branches)
+CM-INV-005	salla	core	SA-C-026/where/SA-S-1810	link Retail stores (/products/branches/stock-management)
+CM-INV-005	salla	core	SA-C-026/where/SA-S-3609	the dashboard's inventory app at /inventory/branches
+CM-INV-005	salla	shows	SA-C-026/decides/SA-S-2622	branches_management in the permissions a partner can request on a merchant's store: shows an interface for apps (S7)
+CM-INV-005	salla	core	SA-C-026/decides/SA-S-2405	staff permission branches_management, group إعدادات المتجر (S7)
+CM-INV-005	salla	core	SA-C-026/decides/SA-S-3338	feature store-branch, plans plus, pro, special, limit 5
+CM-INV-005	salla	shows	SA-C-026/decides/SA-S-3341	feature multi-warehouses, plans special, pro, not released: Salla names the feature (C6)
+CM-INV-005	salla	shows	SA-C-026/decides/SA-S-3516	feature unlimited-quantity-by-branch, not released: Salla names the feature (C6)
+CM-INV-005	salla	core	SA-C-026/decides/SA-S-2028	plan line زيادة عدد الفروع *برسوم إضافية, Salla Plus
+CM-INV-005	salla	core	SA-C-026/decides/SA-S-2190	Special plan line إدارة مخزون متقدمة (advanced inventory management)
+CM-INV-005	salla	shows	SA-C-026/decides/SA-S-3468	manage-products-by-branches: type app, plan special, with an install link
+CM-INV-005	salla	core	SA-C-026/where/SA-S-1042	Salla's own API for its own feature (C1): Merchant API folder Branches
+CM-INV-005	salla	core	SA-C-026/boundary/SA-S-1043	Salla's own API for its own feature (C1): Merchant API folder Branches Allocations
+CM-INV-005	salla	core	SA-C-026/boundary/SA-S-1616	Salla's own API for its own feature (C1): webhook store.branch.created (إنشاء فرع / مستودع)
+CM-INV-006	shopify	core	SH-C-023/where/SH-S-1513	the admin's main navigation item Transfers
+CM-INV-006	shopify	core	SH-C-023/where/SH-S-5187	admin route transfers
+CM-INV-006	shopify	core	SH-C-023/decides/SH-S-5188	eligibility: PRODUCTS, VIEW_INVENTORY_TRANSFERS; entitlement inventory.transferLocation
+CM-INV-006	shopify	core	SH-C-023/decides/SH-S-5190	route inventoryTransfer:create needs CREATE_AND_EDIT_INVENTORY_TRANSFERS
+CM-INV-006	shopify	core	SH-C-023/decides/SH-S-5191	route inventoryTransfer:createShipment needs MANAGE_INVENTORY_SHIPMENTS
+CM-INV-006	shopify	core	SH-C-023/decides/SH-S-5334	entitlement inventory transferLocation true on every store of its scope
+CM-INV-006	shopify	core	SH-C-023/boundary/SH-S-6016	Shopify's own API for its own feature (C1): webhook topic inventory_transfers/complete
+CM-INV-006	shopify	core	SH-C-023/boundary/SH-S-6009	Shopify's own API for its own feature (C1): webhook topic inventory_shipments/create
+CM-INV-006	shopify	core	SH-C-023/where/SH-S-0924	Shopify's own API for its own feature (C1): InventoryTransfer in the Events API's navigation
+CM-INV-006	salla	core	SA-C-026/where/SA-S-1798	link Inventory transfer (/products/inventory-transfer)
+CM-INV-006	salla	core	SA-C-026/decides/SA-S-2303	staff permission inventory_transfer_create
+CM-INV-006	salla	core	SA-C-026/decides/SA-S-2304	staff permission inventory_transfer_browse
+CM-INV-006	salla	core	SA-C-026/decides/SA-S-2305	staff permission inventory_transfer_management
+CM-INV-006	salla	core	SA-C-026/decides/SA-S-2306	staff permission inventory_transfer_show
+CM-INV-006	salla	shows	SA-C-026/decides/SA-S-2520	inventory_transfer_create (إنشاء طلب) in the permissions a partner can request: shows an interface for apps (S7); its staff permission SA-S-2303 is cited
+CM-INV-006	salla	core	SA-C-025/decides/SA-S-2307	staff permission inventory_browse, group نقل المخزون (inventory transfer) (S8)
+CM-INV-006	salla	core	SA-C-025/decides/SA-S-2308	staff permission inventory_management, group نقل المخزون (inventory transfer) (S8)
+CM-INV-007	shopify	core	SH-C-023/where/SH-S-1512	the admin's main navigation item Purchase orders
+CM-INV-007	shopify	core	SH-C-023/where/SH-S-5179	admin route purchaseOrder (purchase_orders)
+CM-INV-007	shopify	core	SH-C-023/where/SH-S-5184	admin route suppliers
+CM-INV-007	shopify	core	SH-C-023/decides/SH-S-5185	suppliers: PRODUCTS, MANAGE_INVENTORY; entitlement inventory.purchaseOrders
+CM-INV-007	shopify	core	SH-C-023/decides/SH-S-7156	staff permission View purchase orders, depends on VIEW_INVENTORY_TRANSFERS
+CM-INV-007	shopify	core	SH-C-023/decides/SH-S-7157	staff permission Manage purchase orders, depends on CREATE_AND_EDIT_INVENTORY_TRANSFERS
+CM-INV-007	shopify	core	SH-C-023/decides/SH-S-6007	Shopify's own API for its own feature (C1): InventoryPurchaseOrder needs read_inventory_purchase_orders
+CM-INV-007	shopify	core	SH-C-023/decides/SH-S-6221	Shopify's own API for its own feature (C1): creating a transfer can link related purchase orders

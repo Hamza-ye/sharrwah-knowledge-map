@@ -1,0 +1,18 @@
+{
+ "n": 2,
+ "url": "https://help.zid.sa/facebook-pixel/",
+ "dir": "items/002-help.zid.sa",
+ "fetched_at": "2026-10-27T11:51:28Z",
+ "curl_exit": 0,
+ "curl_error": "",
+ "http_code": 200,
+ "final_url": "https://help.zid.sa/facebook-pixel/",
+ "content_type": "text/html; charset=UTF-8",
+ "bytes": 25904,
+ "cited_in": [
+  "S-02 A2 ZD-3"
+ ],
+ "raw_file": "raw.html",
+ "sha256": "ccbfda711ab1ad9159fd88973866a186bacf305ccc4d3eaed09df2406e54c761",
+ "raw_ext": "html"
+}

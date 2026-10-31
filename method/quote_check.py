@@ -3,6 +3,17 @@
 # <repo>[@<commit>]:<path> for a repository named in roots (observed-sh, observed-sa, woocommerce-11.2.1,
 # sharrwah-knowledge-map). Matching tries the text exactly, then with markup removed, then ignoring case and
 # Arabic diacritics, after Unicode and whitespace normalization.
+#
+# Usage as a command, to test a statement or a quote before writing it:
+#   python3 -I method/quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]
+#   python3 -I method/quote_check.py --batch FILE [CAPTURE_RUN ...]
+# SOURCE and LOCATOR as a citation gives them (LOCATOR matters only for a fetch archive: its record's offset).
+# Prints "found", "found (<how>)" or "not found", with the share of the text's six-word runs the source holds.
+# --batch reads FILE's lines, each SOURCE<tab>LOCATOR<tab>TEXT, and tests them all in one process, reading each
+# source once: much faster for several quotes from one large file.
+#   python3 -I method/quote_check.py --text SOURCE [LOCATOR] [CAPTURE_RUN ...]
+# prints the source's text with its markup removed, as the checker matches quotes against it: a page held only as
+# raw HTML reads as text, so it costs a reader far less than the HTML.
 import csv, html, io, json, os, re, subprocess, sys, unicodedata
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
@@ -51,12 +62,12 @@ def json_strings(o, out):
 
 def json_unescaped(raw):
     out = []
-    for line in raw.splitlines():
+    for line in raw.split("\n"):   # not splitlines(): it also breaks on U+2028 inside a JSON string
         try:
             out.append("\n".join(json_strings(json.loads(line), [])))
         except Exception:
             pass
-    for line in raw.splitlines():
+    for line in raw.split("\n"):
         try:
             out.append(json.dumps(json.loads(line), ensure_ascii=False))
         except Exception:
@@ -138,11 +149,19 @@ class Sources:
             return None, f"no readable record at offset {off.group(1)}: {e}"
         cs = re.search(r"charset=([\w-]+)", headers.get("content-type", ""))
         text = body.decode(cs.group(1) if cs else "utf-8", "replace")
-        return [text, html_text(text), warc_html_text(text)], ""
+        texts = [text, html_text(text), warc_html_text(text)]
+        if "json" in headers.get("content-type", "").lower():   # its strings decoded, as a held .json file's are
+            texts.append(json_unescaped(text))
+        return texts, ""
 
-    def web_texts(self, url):
+    def web_texts(self, url, with_origin=False):
         """The texts of every capture of the address: a quote is found if any capture holds it, since an earlier
-        capture may hold an empty shell where a later one holds the page."""
+        capture may hold an empty shell where a later one holds the page. With with_origin, each text comes with
+        where it came from: "shown" for the page as it rendered (its visible text, text.txt, and the text of the
+        page after its scripts ran, rendered.html, hidden parts such as a closed FAQ answer included), "source"
+        for the markup as stored (the body as served, raw.* and raw-browser.*, and the rendered markup's scripts
+        and data). The source can hold what the page doesn't show: zid.eg's Terms page holds the Saudi Terms in
+        its body and its data, and its scripts show the Terms of Zid Egypt."""
         key = url.split("#")[0]
         if key not in self.manifest:            # the same page under its .md endpoint, or with or without a slash
             base = key[:-3] if key.endswith(".md") else key.rstrip("/")
@@ -155,29 +174,38 @@ class Sources:
             d = os.path.join(cap, r["dir"])
             if not os.path.isdir(d):
                 continue
-            for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt
+            for name in sorted(os.listdir(d)):  # raw.*, raw-browser.*, rendered.html, text.txt, expanded.txt
                 fp = os.path.join(d, name)
-                if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text")):
+                if not os.path.isfile(fp) or not name.startswith(("raw", "rendered", "text", "expanded")):
                     continue
                 if name.endswith((".pdf", ".bin", ".png", ".jpg", ".jpeg", ".gif", ".webp")):
                     continue
                 raw = open(fp, encoding="utf-8", errors="replace").read()
-                texts.append(raw)
-                if name.endswith(".html"):
-                    texts.append(html_text(raw))
+                if name.startswith(("text", "expanded")):   # the page as first shown, and the lines a click shows
+                    texts.append(("shown", raw))
+                    continue
+                texts.append(("source", raw))       # the markup as stored, its scripts and data included
+                if name.endswith(".html"):          # the text of the page after its scripts ran, hidden parts too
+                    texts.append(("shown" if name.startswith("rendered") else "source", html_text(raw)))
                 if name.endswith(".json"):
-                    texts.append(json_unescaped(raw))
+                    texts.append(("source", json_unescaped(raw)))
         if not texts:
             return None, f"captured as '{'; '.join(results)}' with no readable text"
-        return texts, ""
+        return (texts if with_origin else [t for _, t in texts]), ""
 
     def texts(self, source, locator=""):
-        key = (source, locator if source.endswith(".warc.gz") else "")
+        off = re.search(r"(\d{3,})", locator or "") if source.endswith(".warc.gz") else None
+        key = (source, off.group(1) if off else (locator if source.endswith(".warc.gz") else ""))   # a record, by offset
         if key in self.cache:
             return self.cache[key]
-        res = self.web_texts(source) if re.match(r"^https?://", source) else self.local_texts(source, locator)
-        if res[0] is not None:
-            res = ([v for t in res[0] for v in variants(t)], res[1])
+        if re.match(r"^https?://", source):
+            res = self.web_texts(source, with_origin=True)
+            if res[0] is not None:
+                res = ([(k, v, o) for o, t in res[0] for k, v in variants(t)], res[1])
+        else:
+            res = self.local_texts(source, locator)
+            if res[0] is not None:
+                res = ([(k, v, "file") for t in res[0] for k, v in variants(t)], res[1])
         self.cache[key] = res
         return res
 
@@ -186,9 +214,59 @@ class Sources:
         if texts is None:
             return "unresolved", why, ""
         qv = variants(quote)
+        # a capture that rendered the page: its visible text runs past 1,500 characters, where a failed render
+        # shows an error text or nothing
+        rendered = any(o == "shown" and k == "exact" and len(re.sub(r"\s+", "", t)) > 1500 for k, t, o in texts)
         for (kind, q), level in zip(qv, range(3)):
-            for (tkind, t) in texts:
-                if tkind == kind and q and q in t:
-                    return ("found" if level == 0 else f"found ({kind})"), "", ""
-        best = max((shingle_share(qv[2][1], t) for tk, t in texts if tk == "case and diacritics ignored"), default=0.0)
+            hits = {o for (tkind, t, o) in texts if tkind == kind and q and q in t}
+            if hits:
+                res = "found" if level == 0 else f"found ({kind})"
+                if hits == {"source"} and rendered:  # in the markup as stored, but not in the page as it renders
+                    res += " in the page's source only"
+                return res, "", ""
+        best = max((shingle_share(qv[2][1], t) for tk, t, o in texts if tk == "case and diacritics ignored"),
+                   default=0.0)
         return "not found", "", f"{best:.2f}"
+
+
+if __name__ == "__main__":
+    if len(sys.argv) >= 3 and sys.argv[1] == "--text":
+        src, loc = sys.argv[2], (sys.argv[3] if len(sys.argv) > 3 and not os.path.isdir(sys.argv[3]) else "")
+        caps = [a for a in sys.argv[3:] if os.path.isdir(a)]
+        here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        S = Sources({"observed-sh": "/home/user/observed-sh", "observed-sa": "/home/user/observed-sa",
+                     "other-product-class": "/home/user/other-product-class",
+                     "woocommerce-11.2.1": "/home/user/woocommerce-release/11.2.1/woocommerce",
+                     "sharrwah-knowledge-map": here}, caps)
+        texts, why = (S.web_texts(src) if re.match(r"^https?://", src) else S.local_texts(src, loc))
+        if texts is None:
+            sys.exit(f"not readable: {why}")
+        # a capture may hold several files (raw, rendered, text): print the one with the most text, so that a
+        # page's "Loading" shell gives way to its rendered text
+        cands = [html_text(t) if re.search(r"(?i)<(html|body|div|p|span)\b", t) else t for t in texts]
+        txt = max(cands, key=lambda t: len(re.sub(r"\s+", "", t)))
+        print(re.sub(r"[ \t]+", " ", re.sub(r"\n\s*\n+", "\n", txt)).strip())
+        sys.exit(0)
+    if len(sys.argv) < 4 and not (len(sys.argv) >= 3 and sys.argv[1] == "--batch"):
+        sys.exit("usage: quote_check.py SOURCE LOCATOR TEXT [CAPTURE_RUN ...]; or --batch FILE [CAPTURE_RUN ...]; "
+                 "or --text SOURCE [LOCATOR] [CAPTURE_RUN ...]")
+    here = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    roots = {"observed-sh": os.environ.get("OBSERVED_SH", "/home/user/observed-sh"),
+             "observed-sa": os.environ.get("OBSERVED_SA", "/home/user/observed-sa"),
+             "other-product-class": os.environ.get("OTHER_PRODUCT_CLASS", "/home/user/other-product-class"),
+             "woocommerce-11.2.1": os.environ.get("WOO_RELEASE", "/home/user/woocommerce-release/11.2.1/woocommerce"),
+             "sharrwah-knowledge-map": here}
+    def show(res, why, share):
+        return res + (f"; {why}" if why else "") + (f"; {share} of its six-word runs are in the source" if share else "")
+    if sys.argv[1] == "--batch":
+        S = Sources(roots, sys.argv[3:])
+        for n, line in enumerate(open(sys.argv[2], encoding="utf-8"), start=1):
+            if not line.strip():
+                continue
+            parts = line.rstrip("\n").split("\t")
+            if len(parts) != 3:
+                print(f"{n}\tline has {len(parts)} fields, not 3 (SOURCE, LOCATOR, TEXT)")
+                continue
+            print(f"{n}\t" + show(*S.check_quote(parts[2], parts[0], parts[1])))
+    else:
+        print(show(*Sources(roots, sys.argv[4:]).check_quote(sys.argv[3], sys.argv[1], sys.argv[2])))

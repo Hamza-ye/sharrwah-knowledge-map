@@ -1,0 +1,402 @@
+part	file	line	row	check	mine	result	searched
+B-anchor	cells.tsv	2	CM-CAT-001/shopify	1	core	holds	sample: shopify Products (where) 9 hits, none against
+B-anchor	evidence.tsv	2	CM-CAT-001/shopify/SH-C-020/where/SH-S-1509	2	core	holds	
+B-anchor	evidence.tsv	3	CM-CAT-001/shopify/SH-C-020/where/SH-S-5015	2	core	holds	
+B-anchor	evidence.tsv	4	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5016	2	core	holds	
+B-anchor	evidence.tsv	5	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5018	2	core	holds	
+B-anchor	evidence.tsv	6	CM-CAT-001/shopify/SH-C-020/where/SH-S-5009	2	core	holds	
+B-anchor	evidence.tsv	7	CM-CAT-001/shopify/SH-C-020/decides/SH-S-5349	2	core	holds	
+B-anchor	evidence.tsv	8	CM-CAT-001/shopify/SH-C-020/decides/SH-S-7004	2	core	holds	
+B-anchor	evidence.tsv	9	CM-CAT-001/shopify/SH-C-020/boundary/SH-S-6098	2	core	C1	
+B-anchor	evidence.tsv	10	CM-CAT-001/shopify/SH-C-020/boundary/SH-S-1051	2	core	C1	
+B-anchor	evidence.tsv	11	CM-CAT-001/shopify/SH-C-020/where/SH-S-0931	2	core	C1	
+B-anchor	evidence.tsv	12	CM-CAT-001/shopify/SH-C-020/responsible/SH-S-0236	2	shows	holds	
+B-anchor	evidence.tsv	13	CM-CAT-001/shopify/SH-C-020/decides/SH-S-0031	2	shows	holds	
+B-anchor	cells.tsv	3	CM-CAT-001/salla	1	core	holds	
+B-anchor	evidence.tsv	14	CM-CAT-001/salla/SA-C-020/where/SA-S-1791	2	core	holds	
+B-anchor	evidence.tsv	15	CM-CAT-001/salla/SA-C-020/where/SA-S-1690	2	core	holds	
+B-anchor	evidence.tsv	16	CM-CAT-001/salla/SA-C-020/where/SA-S-1796	2	core	holds	
+B-anchor	evidence.tsv	17	CM-CAT-001/salla/SA-C-020/where/SA-S-1793	2	core	holds	
+B-anchor	evidence.tsv	18	CM-CAT-001/salla/SA-C-020/where/SA-S-1893	2	core	holds	
+B-anchor	evidence.tsv	19	CM-CAT-001/salla/SA-C-020/where/SA-S-3530	2	core	holds	
+B-anchor	evidence.tsv	20	CM-CAT-001/salla/SA-C-020/decides/SA-S-2471	2	core	holds	
+B-anchor	evidence.tsv	21	CM-CAT-001/salla/SA-C-020/decides/SA-S-1949	2	core	holds	
+B-anchor	evidence.tsv	22	CM-CAT-001/salla/SA-C-020/decides/SA-S-1952	2	core	holds	
+B-anchor	evidence.tsv	23	CM-CAT-001/salla/SA-C-020/where/SA-S-1022	2	core	C1	
+B-anchor	evidence.tsv	24	CM-CAT-001/salla/SA-C-020/boundary/SA-S-1552	2	core	C1	
+B-anchor	evidence.tsv	25	CM-CAT-001/salla/SA-C-020/boundary/SA-S-1591	2	core	C1	
+B-woocommerce	cells.tsv	2	CM-CAT-001/woocommerce	1	core	holds	sample: woocommerce Products (where) 21 hits, none against
+B-woocommerce	evidence.tsv	2	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0049	2	core	holds	
+B-woocommerce	evidence.tsv	3	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0050	2	core	holds	
+B-woocommerce	evidence.tsv	4	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0051	2	core	holds	
+B-woocommerce	evidence.tsv	5	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0002	2	core	holds	
+B-woocommerce	evidence.tsv	6	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0012	2	core	holds	
+B-woocommerce	evidence.tsv	7	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-5388	2	core	holds	
+B-woocommerce	evidence.tsv	8	CM-CAT-001/woocommerce/WC-C-064/decides/WC-S-5387	2	core	holds	
+B-woocommerce	evidence.tsv	9	CM-CAT-001/woocommerce/WC-C-064/where/WC-S-0907	2	core	holds	
+B-woocommerce	evidence.tsv	10	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0670	2	core	holds	
+B-woocommerce	evidence.tsv	11	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0100	2	core	holds	
+B-woocommerce	evidence.tsv	12	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0132	2	core	holds	
+B-woocommerce	evidence.tsv	13	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0143	2	core	holds	
+B-woocommerce	evidence.tsv	14	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0175	2	core	holds	
+B-woocommerce	evidence.tsv	15	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0265	2	core	holds	
+B-woocommerce	evidence.tsv	16	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0266	2	core	holds	
+B-woocommerce	evidence.tsv	17	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0267	2	core	holds	
+B-woocommerce	evidence.tsv	18	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0268	2	core	holds	
+B-woocommerce	evidence.tsv	19	CM-CAT-001/woocommerce/WC-C-064/boundary/WC-S-0269	2	core	holds	
+B-anchor	cells.tsv	4	CM-CAT-002/shopify	1	core;extension-point	holds	shopify variant;product option;product options 4 hits (SH-C-022/where/SH-S-5177 bulk/product_variant, a further core route, uncited)
+B-anchor	evidence.tsv	26	CM-CAT-002/shopify/SH-C-020/decides/SH-S-7214	2	core	holds	
+B-anchor	evidence.tsv	27	CM-CAT-002/shopify/SH-C-020/decides/SH-S-5021	2	core	holds	
+B-anchor	evidence.tsv	28	CM-CAT-002/shopify/SH-C-189/where/SH-S-2644	2	extension-point	holds	
+B-anchor	cells.tsv	5	CM-CAT-002/salla	1	core	holds	
+B-anchor	evidence.tsv	29	CM-CAT-002/salla/SA-C-021/where/SA-S-1794	2	core	holds	
+B-anchor	evidence.tsv	30	CM-CAT-002/salla/SA-C-021/decides/SA-S-1973	2	core	holds	
+B-anchor	evidence.tsv	31	CM-CAT-002/salla/SA-C-021/decides/SA-S-3462	2	core	holds	
+B-anchor	evidence.tsv	32	CM-CAT-002/salla/SA-C-021/decides/SA-S-3477	2	core	holds	
+B-anchor	evidence.tsv	33	CM-CAT-002/salla/SA-C-021/where/SA-S-1025	2	core	C1	
+B-anchor	evidence.tsv	34	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1027	2	core	C1	
+B-anchor	evidence.tsv	35	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1031	2	core	C1	
+B-anchor	evidence.tsv	36	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1051	2	core	C1	
+B-anchor	evidence.tsv	37	CM-CAT-002/salla/SA-C-021/boundary/SA-S-1605	2	core	C1	
+B-woocommerce	cells.tsv	3	CM-CAT-002/woocommerce	1	core;extension-point	holds	woocommerce variation;attribute;product option;add-on;addon 30 hits, none against
+B-woocommerce	evidence.tsv	20	CM-CAT-002/woocommerce/WC-C-064/where/WC-S-0055	2	core	holds	
+B-woocommerce	evidence.tsv	21	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0672	2	core	holds	
+B-woocommerce	evidence.tsv	22	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0673	2	core	holds	
+B-woocommerce	evidence.tsv	23	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0671	2	core	holds	
+B-woocommerce	evidence.tsv	24	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0094	2	core	holds	
+B-woocommerce	evidence.tsv	25	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0093	2	core	holds	
+B-woocommerce	evidence.tsv	26	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0101	2	core	holds	
+B-woocommerce	evidence.tsv	27	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0118	2	core	holds	
+B-woocommerce	evidence.tsv	28	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0165	2	core	holds	
+B-woocommerce	evidence.tsv	29	CM-CAT-002/woocommerce/WC-C-064/boundary/WC-S-0167	2	core	holds	
+B-woocommerce	evidence.tsv	30	CM-CAT-002/woocommerce/WC-C-104/where/WC-S-0737	2	extension-point	holds	
+B-woocommerce	evidence.tsv	31	CM-CAT-002/woocommerce/WC-C-104/where/WC-S-0738	2	extension-point	holds	
+B-anchor	cells.tsv	6	CM-CAT-003/shopify	1	core	holds	
+B-anchor	evidence.tsv	38	CM-CAT-003/shopify/SH-C-021/where/SH-S-1510	2	core	holds	
+B-anchor	evidence.tsv	39	CM-CAT-003/shopify/SH-C-021/where/SH-S-5110	2	core	holds	
+B-anchor	evidence.tsv	40	CM-CAT-003/shopify/SH-C-021/decides/SH-S-5111	2	core	holds	
+B-anchor	evidence.tsv	41	CM-CAT-003/shopify/SH-C-021/decides/SH-S-5580	2	core	holds	
+B-anchor	evidence.tsv	42	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-6097	2	core	C1	
+B-anchor	evidence.tsv	43	CM-CAT-003/shopify/SH-C-021/decides/SH-S-6278	2	core	C1	
+B-anchor	evidence.tsv	44	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-0784	2	core	C1	
+B-anchor	evidence.tsv	45	CM-CAT-003/shopify/SH-C-021/boundary/SH-S-1171	2	core	C1	
+B-anchor	cells.tsv	7	CM-CAT-003/salla	1	core	holds	
+B-anchor	evidence.tsv	46	CM-CAT-003/salla/SA-C-022/where/SA-S-1794	2	core	holds	
+B-anchor	evidence.tsv	47	CM-CAT-003/salla/SA-C-022/decides/SA-S-1974	2	core	holds	
+B-anchor	evidence.tsv	48	CM-CAT-003/salla/SA-C-022/decides/SA-S-2472	2	core	holds	
+B-anchor	evidence.tsv	49	CM-CAT-003/salla/SA-C-022/decides/SA-S-3484	2	core	holds	
+B-anchor	evidence.tsv	50	CM-CAT-003/salla/SA-C-022/where/SA-S-1053	2	core	C1	
+B-anchor	evidence.tsv	51	CM-CAT-003/salla/SA-C-022/boundary/SA-S-1550	2	core	C1	
+B-anchor	evidence.tsv	52	CM-CAT-003/salla/SA-C-022/boundary/SA-S-1611	2	core	C1	
+B-anchor	evidence.tsv	53	CM-CAT-003/salla/SA-C-020/boundary/SA-S-1597	2	core	C1	
+B-woocommerce	cells.tsv	4	CM-CAT-003/woocommerce	1	core	holds	sample: woocommerce categories;category 11 hits, none against
+B-woocommerce	evidence.tsv	32	CM-CAT-003/woocommerce/WC-C-064/where/WC-S-0052	2	core	holds	
+B-woocommerce	evidence.tsv	33	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0674	2	core	holds	
+B-woocommerce	evidence.tsv	34	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0095	2	core	holds	
+B-woocommerce	evidence.tsv	35	CM-CAT-003/woocommerce/WC-C-064/boundary/WC-S-0168	2	core	holds	
+B-anchor	cells.tsv	8	CM-CAT-004/shopify	1	core	C1	shopify taxonomy;taxonomies 2 hits (SH-S-6240 under SH-C-028 and SH-C-158); product category;product categories;standard product 2 hits (SH-C-100 Shopify Tax, not a taxonomy statement)
+B-anchor	evidence.tsv	54	CM-CAT-004/shopify/SH-C-028/boundary/SH-S-6240	2	core	C1	
+B-anchor	cells.tsv	9	CM-CAT-004/salla	1	core	holds	salla taxonomy 2; google 15; جوجل 2; تصنيف 9; تصنيفات 4; التصنيف 2; التصنيفات 2: none against (google-merchant-feed SA-S-3201 is a feed, not a taxonomy)
+B-anchor	evidence.tsv	55	CM-CAT-004/salla/SA-C-022/decides/SA-S-3506	2	core	holds	
+B-anchor	evidence.tsv	56	CM-CAT-004/salla/SA-C-022/decides/SA-S-3507	2	core	holds	
+B-woocommerce	cells.tsv	5	CM-CAT-004/woocommerce	1;5	none-held	holds	woocommerce taxonomy 0; taxonomies 1 (WC-S-0907, WordPress taxonomies); google 2 (WC-C-110 feed sync, no category); product category 0; classification 0; product type 2 (WC-C-011 prohibited types)
+B-woocommerce	cells.tsv	5	CM-CAT-004/woocommerce	5	none-held	holds	checker flag: WC-C-064/where/WC-S-0907 matches; it names WordPress taxonomies for products (the mechanism of categories and tags), not a standard taxonomy: resolved, holds
+B-anchor	cells.tsv	10	CM-CAT-005/shopify	1;5	none-held	holds	shopify brand 8 (checkout branding SH-C-048/140/158); brands 0; vendor 1 (Bill Pay vendor SH-C-098); vendors 0; manufacturer 0; Arabic: none held (ال;ة 0)
+B-anchor	cells.tsv	10	CM-CAT-005/shopify	5	none-held	holds	checker flag: 9 statements match; all are checkout branding (SH-C-048, SH-C-140, SH-C-158) or a Bill Pay vendor (SH-C-098/boundary/SH-S-0501), not a product brand: resolved, holds
+B-anchor	cells.tsv	11	CM-CAT-005/salla	1	core	holds	
+B-anchor	evidence.tsv	57	CM-CAT-005/salla/SA-C-023/where/SA-S-1757	2	core	holds	
+B-anchor	evidence.tsv	58	CM-CAT-005/salla/SA-C-023/decides/SA-S-2477	2	core	holds	
+B-anchor	evidence.tsv	59	CM-CAT-005/salla/SA-C-023/decides/SA-S-2476	2	core	holds	
+B-anchor	evidence.tsv	60	CM-CAT-005/salla/SA-C-023/decides/SA-S-3460	2	core	holds	
+B-anchor	evidence.tsv	61	CM-CAT-005/salla/SA-C-023/where/SA-S-1056	2	core	C1	
+B-anchor	evidence.tsv	62	CM-CAT-005/salla/SA-C-023/boundary/SA-S-1551	2	core	C1	
+B-anchor	evidence.tsv	63	CM-CAT-005/salla/SA-C-023/boundary/SA-S-1613	2	core	C1	
+B-anchor	evidence.tsv	64	CM-CAT-005/salla/SA-C-020/boundary/SA-S-1603	2	core	C1	
+B-woocommerce	cells.tsv	6	CM-CAT-005/woocommerce	1	core	holds	
+B-woocommerce	evidence.tsv	36	CM-CAT-005/woocommerce/WC-C-064/where/WC-S-0054	2	core	holds	
+B-woocommerce	evidence.tsv	37	CM-CAT-005/woocommerce/WC-C-064/boundary/WC-S-0170	2	core	holds	
+B-woocommerce	evidence.tsv	38	CM-CAT-005/woocommerce/WC-C-064/boundary/WC-S-0171	2	core	holds	
+B-anchor	cells.tsv	12	CM-CAT-006/shopify	1	core	C1	shopify tags 7; product_tags 3 (all SH-S-6160 or script tags); productTags 0
+B-anchor	evidence.tsv	65	CM-CAT-006/shopify/SH-C-020/boundary/SH-S-6160	2	core	C1	
+B-anchor	cells.tsv	13	CM-CAT-006/salla	1	core	holds	
+B-anchor	evidence.tsv	66	CM-CAT-006/salla/SA-C-020/decides/SA-S-1982	2	core	holds	
+B-anchor	evidence.tsv	67	CM-CAT-006/salla/SA-C-020/decides/SA-S-3470	2	core	holds	
+B-anchor	evidence.tsv	68	CM-CAT-006/salla/SA-C-020/boundary/SA-S-1024	2	core	C1	
+B-anchor	evidence.tsv	69	CM-CAT-006/salla/SA-C-020/boundary/SA-S-1604	2	core	C1	
+B-woocommerce	cells.tsv	7	CM-CAT-006/woocommerce	1	core	holds	
+B-woocommerce	evidence.tsv	39	CM-CAT-006/woocommerce/WC-C-064/where/WC-S-0053	2	core	holds	
+B-woocommerce	evidence.tsv	40	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0677	2	core	holds	
+B-woocommerce	evidence.tsv	41	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0099	2	core	holds	
+B-woocommerce	evidence.tsv	42	CM-CAT-006/woocommerce/WC-C-064/boundary/WC-S-0174	2	core	holds	
+B-anchor	cells.tsv	14	CM-CAT-007/shopify	1	core	holds	shopify media 7; image 12; images 12; video 1; 3D 3; model 3 (file scopes SH-C-027/158; SH-C-027/reason/SH-S-7494 Imagery service, domain not B): none against
+B-anchor	evidence.tsv	70	CM-CAT-007/shopify/SH-C-020/where/SH-S-5025	2	core	holds	
+B-anchor	evidence.tsv	71	CM-CAT-007/shopify/SH-C-028/boundary/SH-S-6240	2	core	C1	
+B-anchor	cells.tsv	15	CM-CAT-007/salla	1	core	holds	sample: salla media 12; image 11; video 3; 3d 0; صورة 0; صور 3; الصورة 0; الصور 1; فيديو 0; الفيديو 0; ثلاثية الأبعاد 0; ثلاثي الأبعاد 0: outside SA-C-020 only reviews, ads, settings: none against
+B-anchor	evidence.tsv	72	CM-CAT-007/salla/SA-C-020/decides/SA-S-3520	2	core	holds	
+B-anchor	evidence.tsv	73	CM-CAT-007/salla/SA-C-020/decides/SA-S-3483	2	core	holds	
+B-anchor	evidence.tsv	74	CM-CAT-007/salla/SA-C-020/decides/SA-S-3463	2	core	holds	
+B-anchor	evidence.tsv	75	CM-CAT-007/salla/SA-C-020/decides/SA-S-3521	2	core	holds	
+B-anchor	evidence.tsv	76	CM-CAT-007/salla/SA-C-020/decides/SA-S-3475	2	shows	holds	
+B-anchor	evidence.tsv	77	CM-CAT-007/salla/SA-C-020/decides/SA-S-3476	2	shows	holds	
+B-anchor	evidence.tsv	78	CM-CAT-007/salla/SA-C-020/boundary/SA-S-1026	2	core	C1	
+B-anchor	evidence.tsv	79	CM-CAT-007/salla/SA-C-020/boundary/SA-S-1602	2	core	C1	
+B-woocommerce	cells.tsv	8	CM-CAT-007/woocommerce	1	extension-point	holds	woocommerce image 1; images 1; gallery 0; media 4 (3 are substrings of immediately/intermediary); video 0; 3D 0; thumbnail 0; photo 0: only WC-S-0742; no decides statement shows WooCommerce's own media
+B-woocommerce	evidence.tsv	43	CM-CAT-007/woocommerce/WC-C-107/where/WC-S-0742	2	extension-point	holds	
+B-anchor	cells.tsv	16	CM-CAT-008/shopify	1	core (scope: Plus)	holds	shopify combined 2 (both SH-C-038); listing 42; listings 34 (product listings scopes, sales channels): none against
+B-anchor	evidence.tsv	80	CM-CAT-008/shopify/SH-C-038/decides/SH-S-7071	2	core	holds	
+B-anchor	evidence.tsv	81	CM-CAT-008/shopify/SH-C-038/boundary/SH-S-7455	2	core	C1	
+B-anchor	cells.tsv	17	CM-CAT-008/salla	1;5	none-held	holds	salla combined listing 0; combined 0; قائمة مدمجة 0; مدمج 0; مدمجة 0; المدمجة 0; منتج مجمع 0; مجمع 0; مجمعة 0; تجميع 0; دمج 1 (account merge SA-S-5150); listing 1 (event Product List Viewed)
+B-woocommerce	cells.tsv	9	CM-CAT-008/woocommerce	1;5	none-held	holds	woocommerce combined 0; grouped 0; group 4 (settings groups, tracking); linked products 0; listing 0; listings 0; parent product 0
+B-anchor	cells.tsv	18	CM-CAT-009/shopify	1;5	none-held	holds	shopify restrict 19; restriction 7 (account, country and business restrictions); add-to-cart limit 3 (SH-C-046, domain C: one store-wide cart limit, Reading: not this capability, since Salla's statements don't say what a restriction limits); purchase limit 0; limit 89 (sampled via restrict hits)
+B-anchor	cells.tsv	18	CM-CAT-009/shopify	5	none-held	holds	checker flag: SH-C-046/decides/SH-S-7483, SH-S-7484, reason/SH-S-7489 (Add-to-cart limit, a cart setting of domain C); Reading: not shown to be this capability, since no Salla statement defines a product restriction: resolved, holds
+B-anchor	cells.tsv	19	CM-CAT-009/salla	1	core (scope: Pro; feature plans pro, special)	holds	salla restriction 8; restrictions 6; قيود 14; قيد 10; القيود 0; تقييد 1; الحد الأقصى 1; حد أقصى 1: others are payment and shipping restrictions; SA-C-020/decides/SA-S-3351 restriction-product-type (feature, not released) bears on it, uncited
+B-anchor	evidence.tsv	82	CM-CAT-009/salla/SA-C-028/where/SA-S-1801	2	core	holds	
+B-anchor	evidence.tsv	83	CM-CAT-009/salla/SA-C-028/decides/SA-S-2136	2	core	holds	
+B-anchor	evidence.tsv	84	CM-CAT-009/salla/SA-C-028/decides/SA-S-3505	2	core	holds	
+B-woocommerce	cells.tsv	10	CM-CAT-009/woocommerce	1;5	none-held	holds	woocommerce restrict 19 (WooPayments, sanctions, a readme, a function name); limit 16; quantity 0; sold individually 0; purchasable 0; minimum 4; maximum 1: none is a store's restriction on its products
+B-woocommerce	cells.tsv	10	CM-CAT-009/woocommerce	5	none-held	holds	checker flag: WC-C-010/decides/WC-S-0513, reason/WC-S-0513, WC-S-0514, WC-C-011/decides/WC-S-0523, reason/WC-S-0523, WC-C-032/decides/WC-S-0588, WC-C-087/boundary/WC-S-0454: payment-account and business restrictions, a readme and a function name; none shows the capability: resolved, holds
+B-anchor	cells.tsv	20	CM-CAT-010/shopify	1	core;extension-point	holds	shopify dropship 1; drop ship 0; print on demand 2 (SH-C-119/where/SH-S-0702: fulfillment service apps provide print on demand, a further extension-point, uncited, domain C); wholesale 1 (B2B selling, SH-C-044); sourcing 0; source products 1; supplier 8 (purchase-order suppliers SH-C-023; Collective); Collective 9: none against
+B-anchor	evidence.tsv	85	CM-CAT-010/shopify/SH-C-185/where/SH-S-2568	2	extension-point	holds	
+B-anchor	evidence.tsv	86	CM-CAT-010/shopify/SH-C-185/where/SH-S-2566	2	extension-point	holds	
+B-anchor	evidence.tsv	87	CM-CAT-010/shopify/SH-C-141/decides/SH-S-7013	2	core	holds	
+B-anchor	evidence.tsv	88	CM-CAT-010/shopify/SH-C-141/where/SH-S-0729	2	core	holds	
+B-anchor	evidence.tsv	89	CM-CAT-010/shopify/SH-C-185/responsible/SH-S-0058	2	shows	holds	
+B-anchor	cells.tsv	21	CM-CAT-010/salla	1	core;extension-point	holds	salla dropship 1; drop shipping 1; دروب شيبنج 0; دروبشيبنق 0; الجملة 3; جملة 3; مورد 0; موردين 0; الموردين 0; المورد 0; vendor 13 (all SA-C-098 or the channel app); supplier 0; print on demand 0; طباعة 4 (order printing): none against
+B-anchor	evidence.tsv	90	CM-CAT-010/salla/SA-C-124/where/SA-S-1193	2	extension-point	holds	
+B-anchor	evidence.tsv	91	CM-CAT-010/salla/SA-C-124/decides/SA-S-0179	2	extension-point	holds	
+B-anchor	evidence.tsv	92	CM-CAT-010/salla/SA-C-098/decides/SA-S-2069	2	core	holds	
+B-anchor	evidence.tsv	93	CM-CAT-010/salla/SA-C-098/decides/SA-S-2456	2	core	holds	
+B-anchor	evidence.tsv	94	CM-CAT-010/salla/SA-C-124/responsible/SA-S-5054	2	shows	holds	
+B-woocommerce	cells.tsv	11	CM-CAT-010/woocommerce	1	extension-point	holds	woocommerce dropship 1 (WC-S-0713); drop ship 0; print on demand 0; print-on-demand 0; wholesale 0; sourcing 0; supplier 0; vendor 3 (Marketplace vendor agreement, PCI vendor, third-party vendors); fulfillment 17: no decides statement shows WooCommerce doing it
+B-woocommerce	evidence.tsv	44	CM-CAT-010/woocommerce/WC-C-061/where/WC-S-0713	2	extension-point	holds	
+B-anchor	cells.tsv	22	CM-CAT-011/shopify	1;5	none-held	holds	shopify size chart 0; size guide 0; sizing 0; size 1 (API rate-limit bucket SH-S-0689); fit finder 0
+B-anchor	cells.tsv	23	CM-CAT-011/salla	1	core (Reading: on the permission; the feature itself is an app whose maker isn't stated)	holds	salla size 8; مقاس 2; مقاسات 2; المقاسات 2; المقاس 2; جدول المقاسات 2: staff permission SA-C-020/decides/SA-S-2395 (uncited; the cited SA-S-2612 is the partner-requestable one) and Twilight component SA-C-091/boundary/SA-S-1502 salla-product-size-guide (domain E, no also B) bear on it
+B-anchor	evidence.tsv	95	CM-CAT-011/salla/SA-C-020/decides/SA-S-2612	2	core	holds	
+B-anchor	evidence.tsv	96	CM-CAT-011/salla/SA-C-020/decides/SA-S-3461	2	shows	holds	
+B-woocommerce	cells.tsv	12	CM-CAT-011/woocommerce	1;5	none-held	holds	woocommerce size guide 0; size chart 0; sizing 0; size 0
+B-backfill-woocommerce	cells.tsv	2	CM-CAT-012/shopify	1;5	none-held on statements; core on the inventory's placed entries SH-I-0902, SH-I-0904, SH-I-1057, SH-I-1129 (Shopify's own staff permissions to view and edit product cost) once Q1 holds them as statements	C2	shopify cost 8 (service fees, insurance, ads, installments); cost per item 0; unit cost 0; unitCost 0; cost of goods 0; COGS 0; margin 0; profit 1 (Non-Profit entity); inventory entries without a statement: cost 7 (four product-cost permissions placed in SH-C-010;SH-C-020)
+B-backfill-woocommerce	cells.tsv	2	CM-CAT-012/shopify	5	none-held	holds	checker flag: SH-C-018/reason/SH-S-0272, SH-C-019/boundary/SH-S-0269, SH-C-065/responsible/SH-S-0566, SH-C-117/decides/SH-S-0722, SH-C-133/decides/SH-S-0726, SH-C-004/decides/SH-S-7191, SH-C-075/responsible/SH-S-7219, SH-C-117/decides/SH-S-7220 and one more: costs of Shopify's services and a Non-Profit entity, none a product's cost: resolved, holds (the product-cost evidence is outside the statements: C2)
+B-backfill-woocommerce	cells.tsv	3	CM-CAT-012/salla	1;5	none-held	holds	salla cost 4; cost price 0; cost_price 0; تكلفة 8; التكلفة 2; سعر التكلفة 0; تكاليف 3; ربح 0; الربح 0; أرباح 5; الأرباح 4; هامش 0; profit 0; margin 0; سعر الشراء 0: shipping costs, fees, partner earnings; SA-C-220/decides/SA-S-2044 تحليلات الأرباح (profit analytics, Plus) is a report and names no cost entered on a product (Reading)
+B-backfill-woocommerce	cells.tsv	3	CM-CAT-012/salla	5	none-held	holds	checker flag: 18 statements (SA-C-065, SA-C-140, SA-C-142, SA-C-145, SA-C-146, SA-C-173, SA-C-195, SA-C-196, SA-C-220): shipping costs, fees, App Functions, partner earnings and report plan lines; none names a product's cost: resolved, holds
+B-woocommerce	cells.tsv	13	CM-CAT-012/woocommerce	1	core	holds	woocommerce cost 4; cogs 1: all WC-C-093, none against
+B-woocommerce	evidence.tsv	45	CM-CAT-012/woocommerce/WC-C-093/where/WC-S-5446	2	core	holds	
+B-woocommerce	evidence.tsv	46	CM-CAT-012/woocommerce/WC-C-093/decides/WC-S-5445	2	core	holds	
+B-woocommerce	evidence.tsv	47	CM-CAT-012/woocommerce/WC-C-093/decides/WC-S-0940	2	core	holds	
+B-woocommerce	evidence.tsv	48	CM-CAT-012/woocommerce/WC-C-093/boundary/WC-S-5447	2	core	holds	
+B-anchor	cells.tsv	38	CM-INV-001/shopify	1	core	holds	sample: shopify inventory;stock (where) 6 hits; outside SH-C-022/023/024 only SH-C-137 marketplaces: none against
+B-anchor	evidence.tsv	146	CM-INV-001/shopify/SH-C-022/where/SH-S-1511	2	core	holds	
+B-anchor	evidence.tsv	147	CM-INV-001/shopify/SH-C-022/where/SH-S-5192	2	core	holds	
+B-anchor	evidence.tsv	148	CM-INV-001/shopify/SH-C-022/where/SH-S-5178	2	core	holds	
+B-anchor	evidence.tsv	149	CM-INV-001/shopify/SH-C-022/decides/SH-S-5022	2	core	holds	
+B-anchor	evidence.tsv	150	CM-INV-001/shopify/SH-C-022/decides/SH-S-5334	2	core	holds	
+B-anchor	evidence.tsv	151	CM-INV-001/shopify/SH-C-022/decides/SH-S-7009	2	core	holds	
+B-anchor	evidence.tsv	152	CM-INV-001/shopify/SH-C-022/boundary/SH-S-6004	2	core	C1	
+B-anchor	evidence.tsv	153	CM-INV-001/shopify/SH-C-022/decides/SH-S-6213	2	core	C1	
+B-anchor	evidence.tsv	154	CM-INV-001/shopify/SH-C-022/boundary/SH-S-0997	2	core	C1	
+B-anchor	cells.tsv	39	CM-INV-001/salla	1	core	holds	sample: salla مخزون;inventory;stock (where) 12 hits; outside SA-C-025/026 only back-in-stock alerts (SA-C-032) and Salla Point (SA-C-095): none against
+B-anchor	evidence.tsv	155	CM-INV-001/salla/SA-C-025/where/SA-S-1688	2	core	holds	
+B-anchor	evidence.tsv	156	CM-INV-001/salla/SA-C-025/where/SA-S-1797	2	core	holds	
+B-anchor	evidence.tsv	157	CM-INV-001/salla/SA-C-025/where/SA-S-1803	2	core	holds	
+B-anchor	evidence.tsv	158	CM-INV-001/salla/SA-C-025/decides/SA-S-1976	2	core	holds	
+B-anchor	evidence.tsv	159	CM-INV-001/salla/SA-C-025/decides/SA-S-1975	2	core	holds	
+B-anchor	evidence.tsv	160	CM-INV-001/salla/SA-C-025/decides/SA-S-2096	2	core	holds	
+B-anchor	evidence.tsv	161	CM-INV-001/salla/SA-C-025/decides/SA-S-2473	2	core	holds	
+B-anchor	evidence.tsv	162	CM-INV-001/salla/SA-C-025/decides/SA-S-3504	2	core	holds	
+B-anchor	evidence.tsv	163	CM-INV-001/salla/SA-C-025/decides/SA-S-2620	2	core	holds	
+B-anchor	evidence.tsv	164	CM-INV-001/salla/SA-C-025/where/SA-S-1742	2	core	holds	
+B-anchor	evidence.tsv	165	CM-INV-001/salla/SA-C-025/where/SA-S-1758	2	core	holds	
+B-anchor	evidence.tsv	166	CM-INV-001/salla/SA-C-025/where/SA-S-1030	2	core	C1	
+B-anchor	evidence.tsv	167	CM-INV-001/salla/SA-C-025/boundary/SA-S-1594	2	core	C1	
+B-woocommerce	cells.tsv	22	CM-INV-001/woocommerce	1	core	holds	
+B-woocommerce	evidence.tsv	71	CM-INV-001/woocommerce/WC-C-068/where/WC-S-0013	2	core	holds	
+B-woocommerce	evidence.tsv	72	CM-INV-001/woocommerce/WC-C-068/decides/WC-S-5400	2	core	holds	
+B-woocommerce	evidence.tsv	73	CM-INV-001/woocommerce/WC-C-068/where/WC-S-0074	2	core	holds	
+B-woocommerce	evidence.tsv	74	CM-INV-001/woocommerce/WC-C-068/boundary/WC-S-0240	2	core	holds	
+B-woocommerce	evidence.tsv	75	CM-INV-001/woocommerce/WC-C-068/boundary/WC-S-0241	2	core	holds	
+B-anchor	cells.tsv	40	CM-INV-002/shopify	1	core (scope: beta 10c5f657)	holds	
+B-anchor	evidence.tsv	168	CM-INV-002/shopify/SH-C-022/decides/SH-S-5193	2	core	holds	
+B-anchor	cells.tsv	41	CM-INV-002/salla	1	core	holds	sample: salla سجل 24; السجل 6; سجلات 1; history 11; log 66; quantity_logs 4; quantity-log 1: outside SA-C-025 other logs (activity, exports, payments, digital codes): none against
+B-anchor	evidence.tsv	169	CM-INV-002/salla/SA-C-025/where/SA-S-1891	2	core	holds	
+B-anchor	evidence.tsv	170	CM-INV-002/salla/SA-C-025/decides/SA-S-3472	2	core	holds	
+B-anchor	evidence.tsv	171	CM-INV-002/salla/SA-C-025/decides/SA-S-2469	2	core	holds	
+B-anchor	evidence.tsv	172	CM-INV-002/salla/SA-C-025/reason/SA-S-5011	2	shows	holds	
+B-woocommerce	cells.tsv	23	CM-INV-002/woocommerce	1;5	none-held	holds	woocommerce history 1 (order attribution); log 18 (logging, logins); movement 0; adjust 1 (refund policies); stock 17 (stock settings, reports, back-in-stock); audit 0; ledger 0
+B-anchor	cells.tsv	42	CM-INV-003/shopify	1	core (scope: beta 4d3efaac, entitlement inventory.counts)	holds	shopify inventory count 3; counts 153 (mostly other counts); stocktake 0; audit 10 (audit logs): none against
+B-anchor	evidence.tsv	173	CM-INV-003/shopify/SH-C-022/decides/SH-S-5194	2	core	holds	
+B-anchor	evidence.tsv	174	CM-INV-003/shopify/SH-C-022/decides/SH-S-5196	2	core	holds	
+B-anchor	evidence.tsv	175	CM-INV-003/shopify/SH-C-022/decides/SH-S-7158	2	core	holds	
+B-anchor	evidence.tsv	176	CM-INV-003/shopify/SH-C-022/decides/SH-S-7159	2	core	holds	
+B-anchor	evidence.tsv	177	CM-INV-003/shopify/SH-C-022/decides/SH-S-7160	2	core	holds	
+B-anchor	cells.tsv	43	CM-INV-003/salla	1;5	core (Reading: SA-C-025/decides/SA-S-2096 plan line جرد المنتجات والمخزون, Salla Plus, and SA-C-025/where/SA-S-1803 link Inventory audit name the stocktake in Salla's own words)	C3	salla جرد 3 (SA-S-2096; SA-S-0074 بمجرد, a substring); الجرد 0; audit 8 (SA-S-1803 Inventory audit; SA-S-1891 Inventory log; audit logs of SA-C-010); stocktake 0; عد المخزون 0; stock count 0
+B-anchor	cells.tsv	43	CM-INV-003/salla	5	core (Reading)	C3	checker flag: SA-C-025/where/SA-S-1803 and SA-C-025/decides/SA-S-2096 match; the anchor reads both as the inventory view of CM-INV-001; I read them as naming the stocktake (جرد = stocktake; Inventory audit), as the anchor reads Shopify's inventory counts by their names: not resolved in the part's favour, C3
+B-woocommerce	cells.tsv	24	CM-INV-003/woocommerce	1;5	none-held	holds	woocommerce stocktake 0; stock take 0; inventory count 0; stock count 0; counts 20 (accounts, activity panel counts); audit 0; cycle count 0
+B-anchor	cells.tsv	44	CM-INV-004/shopify	1;5	none-held	holds	shopify low stock 0; low inventory 0; stock alert 0; low-stock 0; threshold 7 (chargebacks, tax, DSA); out of stock 0; out_of_stock 0; in_stock 0; inventory entry SH-I-1844 Stock alert apps (SH-C-188) is customer back-in-stock alerts (its page's intro: Notify customers when their favorite products are back and ready to buy), not this capability
+B-anchor	cells.tsv	45	CM-INV-004/salla	1	core	holds	sample: salla quantity.low 1; quantity-notify 1; low 29; تنبيه 10; تنبيهات 4; نفاد 0; قاربت 1 (SA-S-2096); الكمية المنخفضة 0; منخفض 0: none against
+B-anchor	evidence.tsv	178	CM-INV-004/salla/SA-C-025/decides/SA-S-3471	2	core	holds	
+B-anchor	evidence.tsv	179	CM-INV-004/salla/SA-C-025/boundary/SA-S-1595	2	core	C1	
+B-woocommerce	cells.tsv	25	CM-INV-004/woocommerce	1	core (Reading: the fit to alerts rests on the API's name, a list of products low in stock)	holds	woocommerce low stock 0; lowinstock 2 (WC-S-0219 under WC-C-038 and WC-C-068); low in stock 0; threshold 3; notify 0; notification 14 (back-in-stock, emails); out of stock 1 (WC-C-105)
+B-woocommerce	evidence.tsv	76	CM-INV-004/woocommerce/WC-C-068/boundary/WC-S-0219	2	core	holds	
+B-woocommerce	cells.tsv	25	CM-INV-004/woocommerce	1	core	holds	checker flag: core rests only on boundary statements; WC-C-068/boundary/WC-S-0219 Automattic\WooCommerce\Admin\API\ProductsLowInStock is WooCommerce Admin's own API namespace, and no statement says apps or partners use it: core (its own API for its own feature); resolved, holds
+B-backfill-woocommerce	cells.tsv	6	CM-INV-008/shopify	1;5	none-held	holds	shopify reserve 11 (Shopify Payments reserves); reserved 0; hold stock 0; on hold 1 (account hold); unpaid 1 (SH-C-079 manual payments); pending 17; committed 0; allocat 0: none holds stock for an order
+B-backfill-woocommerce	cells.tsv	6	CM-INV-008/shopify	5	none-held	holds	checker flag: 30 statements (SH-C-050 abandoned checkouts, SH-C-014 restricted access, SH-C-064/065/068/070 payment reserves and holds, SH-C-079 unpaid manual payments, others): none holds stock for an unpaid order: resolved, holds
+B-backfill-woocommerce	cells.tsv	7	CM-INV-008/salla	1;5	none-held	holds	salla حجز 5; محجوز 2; المحجوزة 2; انتظار الدفع 3; بانتظار الدفع 3; غير مدفوع 0; auto-restock 1 (SA-S-1742); restock 1; return-to-stock 1 (SA-S-3289); reserve 0; unpaid 0; pending 2: Reading: restock by order status, no hold for an unpaid order or time limit
+B-backfill-woocommerce	cells.tsv	7	CM-INV-008/salla	5	none-held	holds	checker flag: 92 statements (bookings SA-C-031, wallet holds SA-C-124/145, order statuses SA-C-040/041, stock permissions, SA-C-025/where/SA-S-1742 and decides/SA-S-3289 restock by status): Reading: none holds stock for an unpaid order; resolved, holds
+B-woocommerce	cells.tsv	29	CM-INV-008/woocommerce	1	core	holds	woocommerce hold 18; unpaid 1 (WC-S-5401); pending 7: no stock hold beyond WC-S-5401 and WC-S-5402
+B-woocommerce	evidence.tsv	77	CM-INV-008/woocommerce/WC-C-068/decides/WC-S-5401	2	core	holds	
+B-woocommerce	evidence.tsv	78	CM-INV-008/woocommerce/WC-C-068/decides/WC-S-5402	2	core	holds	
+B-anchor	cells.tsv	46	CM-INV-005/shopify	1	core;extension-point	holds	shopify location 94 (19 in SH-C-024; the rest shipping, tax, fulfillment); warehouse 0; warehousing 2 (SH-C-119/where/SH-S-0702 fulfillment service apps provide third-party warehousing: a further extension-point, domain C, uncited); branch 0
+B-anchor	evidence.tsv	180	CM-INV-005/shopify/SH-C-024/where/SH-S-1493	2	core	holds	
+B-anchor	evidence.tsv	181	CM-INV-005/shopify/SH-C-024/decides/SH-S-5200	2	core	holds	
+B-anchor	evidence.tsv	182	CM-INV-005/shopify/SH-C-024/decides/SH-S-7010	2	core	holds	
+B-anchor	evidence.tsv	183	CM-INV-005/shopify/SH-C-022/decides/SH-S-5024	2	core	holds	
+B-anchor	evidence.tsv	184	CM-INV-005/shopify/SH-C-024/boundary/SH-S-6025	2	core	C1	
+B-anchor	evidence.tsv	185	CM-INV-005/shopify/SH-C-024/boundary/SH-S-6206	2	extension-point	holds	
+B-anchor	cells.tsv	47	CM-INV-005/salla	1	core	holds	
+B-anchor	evidence.tsv	186	CM-INV-005/salla/SA-C-026/where/SA-S-1808	2	core	holds	
+B-anchor	evidence.tsv	187	CM-INV-005/salla/SA-C-026/where/SA-S-1810	2	core	holds	
+B-anchor	evidence.tsv	188	CM-INV-005/salla/SA-C-026/where/SA-S-3609	2	core	holds	
+B-anchor	evidence.tsv	189	CM-INV-005/salla/SA-C-026/decides/SA-S-2622	2	core	holds	
+B-anchor	evidence.tsv	190	CM-INV-005/salla/SA-C-026/decides/SA-S-3338	2	core	holds	
+B-anchor	evidence.tsv	191	CM-INV-005/salla/SA-C-026/decides/SA-S-3341	2	core	holds	
+B-anchor	evidence.tsv	192	CM-INV-005/salla/SA-C-026/decides/SA-S-3516	2	core	holds	
+B-anchor	evidence.tsv	193	CM-INV-005/salla/SA-C-026/decides/SA-S-2028	2	core	holds	
+B-anchor	evidence.tsv	194	CM-INV-005/salla/SA-C-026/decides/SA-S-2190	2	core	holds	
+B-anchor	evidence.tsv	195	CM-INV-005/salla/SA-C-026/decides/SA-S-3468	2	shows	holds	
+B-anchor	evidence.tsv	196	CM-INV-005/salla/SA-C-026/where/SA-S-1042	2	core	C1	
+B-anchor	evidence.tsv	197	CM-INV-005/salla/SA-C-026/boundary/SA-S-1043	2	core	C1	
+B-anchor	evidence.tsv	198	CM-INV-005/salla/SA-C-026/boundary/SA-S-1616	2	core	C1	
+B-woocommerce	cells.tsv	26	CM-INV-005/woocommerce	1;5	none-held	holds	woocommerce location 20 (geolocation WC-C-046, selling and shipping locations WC-C-030/075, tax WC-C-055, payouts, privacy); locations 5; warehouse 0; branch 0; multi-location 0; stock location 0; inventory location 0; store address 2
+B-woocommerce	cells.tsv	26	CM-INV-005/woocommerce	5	none-held	holds	checker flag: 20 statements (WC-C-007, WC-C-024, WC-C-030, WC-C-046, WC-C-055, WC-C-075, WC-C-091, WC-C-118): customer, selling, shipping, tax and legal locations; none a place where stock is held: resolved, holds
+B-anchor	cells.tsv	48	CM-INV-006/shopify	1	core	holds	
+B-anchor	evidence.tsv	199	CM-INV-006/shopify/SH-C-023/where/SH-S-1513	2	core	holds	
+B-anchor	evidence.tsv	200	CM-INV-006/shopify/SH-C-023/where/SH-S-5187	2	core	holds	
+B-anchor	evidence.tsv	201	CM-INV-006/shopify/SH-C-023/decides/SH-S-5188	2	core	holds	
+B-anchor	evidence.tsv	202	CM-INV-006/shopify/SH-C-023/decides/SH-S-5190	2	core	holds	
+B-anchor	evidence.tsv	203	CM-INV-006/shopify/SH-C-023/decides/SH-S-5191	2	core	holds	
+B-anchor	evidence.tsv	204	CM-INV-006/shopify/SH-C-023/decides/SH-S-5334	2	core	holds	
+B-anchor	evidence.tsv	205	CM-INV-006/shopify/SH-C-023/boundary/SH-S-6016	2	core	C1	
+B-anchor	evidence.tsv	206	CM-INV-006/shopify/SH-C-023/boundary/SH-S-6009	2	core	C1	
+B-anchor	evidence.tsv	207	CM-INV-006/shopify/SH-C-023/where/SH-S-0924	2	core	C1	
+B-anchor	cells.tsv	49	CM-INV-006/salla	1	core	holds	sample: salla transfer 11; نقل 9; نقل المخزون 0; تحويل المخزون 0: outside SA-C-025/026, domain transfers, data migration, accounts: none against
+B-anchor	evidence.tsv	208	CM-INV-006/salla/SA-C-026/where/SA-S-1798	2	core	holds	
+B-anchor	evidence.tsv	209	CM-INV-006/salla/SA-C-026/decides/SA-S-2303	2	core	holds	
+B-anchor	evidence.tsv	210	CM-INV-006/salla/SA-C-026/decides/SA-S-2304	2	core	holds	
+B-anchor	evidence.tsv	211	CM-INV-006/salla/SA-C-026/decides/SA-S-2305	2	core	holds	
+B-anchor	evidence.tsv	212	CM-INV-006/salla/SA-C-026/decides/SA-S-2306	2	core	holds	
+B-anchor	evidence.tsv	213	CM-INV-006/salla/SA-C-026/decides/SA-S-2520	2	core	holds	
+B-woocommerce	cells.tsv	27	CM-INV-006/woocommerce	1;5	none-held	holds	woocommerce transfer 9 (bank transfer WC-C-002, payouts, data transfers WC-C-043); transfers 0; stock transfer 0
+B-woocommerce	cells.tsv	27	CM-INV-006/woocommerce	5	none-held	holds	checker flag: WC-C-002/where/WC-S-0032, WC-S-0280, WC-S-0603, decides/WC-S-5001, WC-C-007/where/WC-S-0529, boundary/WC-S-0529, WC-C-043/where/WC-S-0659, responsible/WC-S-0499 and one more: bank transfers, payouts and data transfers, none of stock between locations: resolved, holds
+B-anchor	cells.tsv	50	CM-INV-007/shopify	1	core	holds	shopify purchase order 7; purchase orders 7; supplier 8; suppliers 3: all SH-C-023 or Collective, none against
+B-anchor	evidence.tsv	214	CM-INV-007/shopify/SH-C-023/where/SH-S-1512	2	core	holds	
+B-anchor	evidence.tsv	215	CM-INV-007/shopify/SH-C-023/where/SH-S-5179	2	core	holds	
+B-anchor	evidence.tsv	216	CM-INV-007/shopify/SH-C-023/where/SH-S-5184	2	core	holds	
+B-anchor	evidence.tsv	217	CM-INV-007/shopify/SH-C-023/decides/SH-S-5185	2	core	holds	
+B-anchor	evidence.tsv	218	CM-INV-007/shopify/SH-C-023/decides/SH-S-7156	2	core	holds	
+B-anchor	evidence.tsv	219	CM-INV-007/shopify/SH-C-023/decides/SH-S-7157	2	core	holds	
+B-anchor	evidence.tsv	220	CM-INV-007/shopify/SH-C-023/decides/SH-S-6007	2	core	C1	
+B-anchor	evidence.tsv	221	CM-INV-007/shopify/SH-C-023/decides/SH-S-6221	2	core	C1	
+B-anchor	cells.tsv	51	CM-INV-007/salla	1;5	none-held	holds	salla inventory-order 1 (SA-C-025/decides/SA-S-3495, a flag whose name alone states nothing); purchase 21; مشتريات 7; المشتريات 3; توريد 0; التوريد 0; شراء 27; الشراء 22; مورد 0; vendor 13 (wholesale market SA-C-098); supplier 0: Reading: buying in the wholesale market is CM-CAT-010's, not a store's purchase order
+B-anchor	cells.tsv	51	CM-INV-007/salla	5	none-held	holds	checker flag: 13 statements, all vendor: SA-C-098's wholesale-market permissions and dashboard app, and SA-C-093/097/where/SA-S-3551, a path that excludes /channel/vendors: Reading: orders in Salla's wholesale market, not a store's orders to its suppliers; resolved, holds
+B-woocommerce	cells.tsv	28	CM-INV-007/woocommerce	1;5	none-held	holds	woocommerce purchase order 2; purchase orders 1 (WC-C-103 Purchase Order Gateway, a buyer's way to pay); supplier 0; suppliers 0
+B-woocommerce	cells.tsv	28	CM-INV-007/woocommerce	5	none-held	holds	checker flag: WC-C-103/decides/WC-S-5471, boundary/WC-S-5473 (Purchase Order Gateway, domain D): a buyer's purchase order as a payment method, not a store's order to a supplier: resolved, holds
+B-anchor	cells.tsv	24	CM-SEL-001/shopify	1	core;extension-point	holds	shopify subscription 57 (17 SH-C-186; others Shopify's own billing SH-C-015/016/019 and app scopes SH-C-158/159: homonyms); selling plan 4; recurring 2; purchase option 0: none against
+B-anchor	evidence.tsv	97	CM-SEL-001/shopify/SH-C-186/where/SH-S-2657	2	extension-point	holds	
+B-anchor	evidence.tsv	98	CM-SEL-001/shopify/SH-C-186/where/SH-S-0763	2	extension-point	holds	
+B-anchor	evidence.tsv	99	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6257	2	extension-point	holds	
+B-anchor	evidence.tsv	100	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6286	2	extension-point	holds	
+B-anchor	evidence.tsv	101	CM-SEL-001/shopify/SH-C-186/decides/SH-S-5019	2	core	holds	
+B-anchor	evidence.tsv	102	CM-SEL-001/shopify/SH-C-186/decides/SH-S-5144	2	core	holds	
+B-anchor	evidence.tsv	103	CM-SEL-001/shopify/SH-C-186/responsible/SH-S-0762	2	shows	holds	
+B-anchor	evidence.tsv	104	CM-SEL-001/shopify/SH-C-186/decides/SH-S-0593	2	shows	holds	
+B-anchor	evidence.tsv	105	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-1351	2	extension-point	C1	
+B-anchor	evidence.tsv	106	CM-SEL-001/shopify/SH-C-186/boundary/SH-S-6073	2	extension-point	C1	
+B-anchor	cells.tsv	25	CM-SEL-001/salla	1	core;extension-point	holds	salla subscription 17; recurring 4; اشتراك 20; الاشتراك 14; اشتراكات 2; الاشتراكات 0; متكرر 0; المتكررة 0; دفع متكرر 0: outside SA-C-125 app subscriptions and lifecycle (SA-C-191/193/194/195/208): none against. Reading: both core rows are unreleased flags; SA-S-0195 (merchants can enable it) also bears core
+B-anchor	evidence.tsv	107	CM-SEL-001/salla/SA-C-125/decides/SA-S-3301	2	core	holds	
+B-anchor	evidence.tsv	108	CM-SEL-001/salla/SA-C-125/decides/SA-S-3302	2	core	holds	
+B-anchor	evidence.tsv	109	CM-SEL-001/salla/SA-C-125/decides/SA-S-0195	2	extension-point	holds	
+B-anchor	evidence.tsv	110	CM-SEL-001/salla/SA-C-125/where/SA-S-1173	2	extension-point	C1	
+B-anchor	evidence.tsv	111	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1642	2	extension-point	C1	
+B-anchor	evidence.tsv	112	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1643	2	extension-point	C1	
+B-anchor	evidence.tsv	113	CM-SEL-001/salla/SA-C-125/boundary/SA-S-1645	2	extension-point	C1	
+B-woocommerce	cells.tsv	14	CM-SEL-001/woocommerce	1	extension-point	holds	woocommerce subscription 13 (4 WC-C-100; WooCommerce.com extension subscriptions WC-C-050/063, MailPoet WC-C-113: homonyms); recurring 1; renewal 4: no decides statement shows WooCommerce doing it; WC-S-5350 is the extension's (its scope)
+B-woocommerce	evidence.tsv	49	CM-SEL-001/woocommerce/WC-C-100/where/WC-S-0739	2	extension-point	holds	
+B-woocommerce	evidence.tsv	50	CM-SEL-001/woocommerce/WC-C-100/decides/WC-S-5351	2	shows	holds	
+B-woocommerce	evidence.tsv	51	CM-SEL-001/woocommerce/WC-C-100/where/WC-S-5350	2	shows	holds	
+B-woocommerce	evidence.tsv	52	CM-SEL-001/woocommerce/WC-C-100/boundary/WC-S-5469	2	shows	holds	
+B-anchor	cells.tsv	26	CM-SEL-002/shopify	1	extension-point	holds	shopify digital 3 (ads audiences, DSA, SH-S-2648); download 0; downloadable 0; file 77 (file scopes): no decides statement shows Shopify delivering digital goods; inventory entry SH-I-1886 Digital product apps (SH-C-190) has no statement (C2, same placement)
+B-anchor	evidence.tsv	114	CM-SEL-002/shopify/SH-C-190/where/SH-S-2648	2	extension-point	holds	
+B-anchor	cells.tsv	27	CM-SEL-002/salla	1	core	holds	
+B-anchor	evidence.tsv	115	CM-SEL-002/salla/SA-C-024/where/SA-S-1894	2	core	holds	
+B-anchor	evidence.tsv	116	CM-SEL-002/salla/SA-C-024/decides/SA-S-1999	2	core	holds	
+B-anchor	evidence.tsv	117	CM-SEL-002/salla/SA-C-024/decides/SA-S-2478	2	core	holds	
+B-anchor	evidence.tsv	118	CM-SEL-002/salla/SA-C-024/decides/SA-S-3496	2	core	holds	
+B-anchor	evidence.tsv	119	CM-SEL-002/salla/SA-C-024/decides/SA-S-3498	2	core	holds	
+B-anchor	evidence.tsv	120	CM-SEL-002/salla/SA-C-024/decides/SA-S-3499	2	core	holds	
+B-anchor	evidence.tsv	121	CM-SEL-002/salla/SA-C-024/where/SA-S-1029	2	core	C1	
+B-woocommerce	cells.tsv	15	CM-SEL-002/woocommerce	1	core	holds	sample: woocommerce digital 2 (POS, VAT on digital goods WC-C-118); download 24 (11 WC-C-066; analytics, privacy, geolocation database); downloadable 2: none against
+B-woocommerce	evidence.tsv	53	CM-SEL-002/woocommerce/WC-C-066/where/WC-S-0014	2	core	holds	
+B-woocommerce	evidence.tsv	54	CM-SEL-002/woocommerce/WC-C-066/where/WC-S-0073	2	core	holds	
+B-woocommerce	evidence.tsv	55	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5393	2	core	holds	
+B-woocommerce	evidence.tsv	56	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5394	2	core	holds	
+B-woocommerce	evidence.tsv	57	CM-SEL-002/woocommerce/WC-C-066/decides/WC-S-5395	2	core	holds	
+B-woocommerce	evidence.tsv	58	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0087	2	core	holds	
+B-woocommerce	evidence.tsv	59	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0242	2	core	holds	
+B-woocommerce	evidence.tsv	60	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0243	2	core	holds	
+B-woocommerce	evidence.tsv	61	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0211	2	core	holds	
+B-woocommerce	evidence.tsv	62	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0359	2	shows	holds	
+B-woocommerce	evidence.tsv	63	CM-SEL-002/woocommerce/WC-C-066/boundary/WC-S-0363	2	shows	holds	
+B-anchor	cells.tsv	28	CM-SEL-003/shopify	1	core (Reading, borderline: the admin's own Blockchain section and route; the route's name nft-application and its APPLICATIONS permission point to an application whose maker isn't stated)	C4	shopify nft 1; blockchain 3 (all SH-C-190); tokengat 0; token gat 0; APPLICATIONS-gated routes 10 (apps lists, Shopify Fulfillment Network SH-C-120/decides/SH-S-5095, plan subscriptions): inventory entry SH-I-1888 NFT and tokengating apps has no statement
+B-anchor	evidence.tsv	122	CM-SEL-003/shopify/SH-C-190/where/SH-S-5094	2	core	holds	
+B-anchor	evidence.tsv	123	CM-SEL-003/shopify/SH-C-190/where/SH-S-1550	2	core	holds	
+B-anchor	evidence.tsv	124	CM-SEL-003/shopify/SH-C-190/decides/SH-S-5095	2	shows	holds	
+B-anchor	cells.tsv	29	CM-SEL-003/salla	1;5	none-held	holds	salla nfts 0; non-fungible 0; blockchain 0; token-gat 0; tokengat 0; بلوكتشين 0; بلوك تشين 0; سلسلة الكتل 0; رمز غير قابل 0; crypto 0; كريبتو 0; عملات رقمية 0
+B-woocommerce	cells.tsv	16	CM-SEL-003/woocommerce	1;5	none-held	holds	woocommerce nft 0; blockchain 0; token-gat 0; tokengat 0; crypto 1 (WC-C-005/where/WC-S-0709 Crypto payments, a payment method); web3 0
+B-woocommerce	cells.tsv	16	CM-SEL-003/woocommerce	5	none-held	holds	checker flag: WC-C-005/where/WC-S-0709 (Marketplace category Crypto payments): a way to pay, not NFTs or token-gating: resolved, holds
+B-anchor	cells.tsv	30	CM-SEL-004/shopify	1;5	none-held on statements; extension-point on the inventory's placed entry SH-I-1887 Event booking apps (SH-C-190) once Q1 holds it as a statement	C2	shopify booking 1 (SH-C-079/decides/SH-S-0583, a manual payment example); bookings 0; appointment 0; reservation 0; reserv 11 (payment reserves); event booking 0; inventory entries without a statement: booking 1 (SH-I-1887)
+B-anchor	cells.tsv	30	CM-SEL-004/shopify	5	none-held	holds	checker flag: SH-C-079/decides/SH-S-0583 (booking a service and paying in person, as a reason for a custom manual payment method): not a booking capability: resolved, holds (the App Store category is outside the statements: C2)
+B-anchor	cells.tsv	31	CM-SEL-004/salla	1	core	holds	salla booking 4; reservation 9; حجز 5; الحجز 1; حجوزات 5; الحجوزات 5; موعد 2; مواعيد 1: outside SA-C-031 domain reservations (SA-C-007), order-status permissions, and Twilight's Booking folder and salla-booking-field (SA-C-091, domain E, no also B): none against
+B-anchor	evidence.tsv	125	CM-SEL-004/salla/SA-C-031/where/SA-S-1779	2	core	holds	
+B-anchor	evidence.tsv	126	CM-SEL-004/salla/SA-C-031/decides/SA-S-1994	2	core	holds	
+B-anchor	evidence.tsv	127	CM-SEL-004/salla/SA-C-031/decides/SA-S-2508	2	core	holds	
+B-anchor	evidence.tsv	128	CM-SEL-004/salla/SA-C-031/decides/SA-S-3474	2	core	holds	
+B-anchor	evidence.tsv	129	CM-SEL-004/salla/SA-C-031/where/SA-S-1023	2	core	C1	
+B-anchor	evidence.tsv	130	CM-SEL-004/salla/SA-C-031/reason/SA-S-5012	2	shows	holds	
+B-woocommerce	cells.tsv	17	CM-SEL-004/woocommerce	1	extension-point	holds	woocommerce booking 3; appointment 1; reservation 0; availability 1: all WC-C-101; no decides statement shows WooCommerce doing it (WC-S-5352 is the extension's, its scope)
+B-woocommerce	evidence.tsv	64	CM-SEL-004/woocommerce/WC-C-101/where/WC-S-0731	2	extension-point	holds	
+B-woocommerce	evidence.tsv	65	CM-SEL-004/woocommerce/WC-C-101/decides/WC-S-5352	2	shows	holds	
+B-woocommerce	evidence.tsv	66	CM-SEL-004/woocommerce/WC-C-101/boundary/WC-S-5353	2	shows	holds	
+B-woocommerce	evidence.tsv	67	CM-SEL-004/woocommerce/WC-C-101/boundary/WC-S-5470	2	shows	holds	
+B-anchor	cells.tsv	32	CM-SEL-005/shopify	1;5	none-held on statements; extension-point on the inventory's placed entry SH-I-1842 Pre-order apps (SH-C-188) once Q1 holds it as a statement	C2	shopify pre-order 0; preorder 0; pre order 0; deferred 0; try before 0; inventory entries without a statement: pre-order 1 (SH-I-1842)
+B-anchor	cells.tsv	33	CM-SEL-005/salla	1	core (scope: plans pro, special)	holds	salla pre-order 2; pre_order 5; طلب مسبق 0; الطلب المسبق 2; الطلبات المسبقة 0; حجز مسبق 0: all SA-C-029, none against
+B-anchor	evidence.tsv	131	CM-SEL-005/salla/SA-C-029/where/SA-S-1799	2	core	holds	
+B-anchor	evidence.tsv	132	CM-SEL-005/salla/SA-C-029/decides/SA-S-2479	2	core	holds	
+B-anchor	evidence.tsv	133	CM-SEL-005/salla/SA-C-029/decides/SA-S-3508	2	core	holds	
+B-woocommerce	cells.tsv	18	CM-SEL-005/woocommerce	1;5	none-held	holds	woocommerce pre-order 0; preorder 0; pre order 0; pre-sale 0; presale 0; backorder 0
+B-anchor	cells.tsv	34	CM-SEL-006/shopify	1	core;extension-point	C1	shopify bundle 5; bundles 2 (SH-S-1100 under SH-C-139/188; UI extension bundle size, a homonym); cart transform 5 (SH-C-053, no bundle words); product_configuration 2 (SH-S-2207)
+B-anchor	evidence.tsv	134	CM-SEL-006/shopify/SH-C-188/where/SH-S-2604	2	extension-point	holds	
+B-anchor	evidence.tsv	135	CM-SEL-006/shopify/SH-C-188/where/SH-S-2207	2	extension-point	holds	
+B-anchor	evidence.tsv	136	CM-SEL-006/shopify/SH-C-188/boundary/SH-S-1100	2	core	C1	
+B-anchor	cells.tsv	35	CM-SEL-006/salla	1	core	holds	salla bundle 20 (outside SA-C-020: Twilight bundle-product components SA-C-091, theme component bundles SA-C-203/208, apps-bundles SA-C-194, a coupon flag: homonyms or further core); باقة 11; باقات 4; الباقة 1 (plans); حزمة 0; حزم 0; الحزمة 0; مجموعة منتجات 0
+B-anchor	evidence.tsv	137	CM-SEL-006/salla/SA-C-020/decides/SA-S-3510	2	core	holds	
+B-anchor	evidence.tsv	138	CM-SEL-006/salla/SA-C-020/decides/SA-S-3385	2	core	holds	
+B-anchor	evidence.tsv	139	CM-SEL-006/salla/SA-C-020/decides/SA-S-3297	2	core	holds	
+B-anchor	evidence.tsv	140	CM-SEL-006/salla/SA-C-020/decides/SA-S-3522	2	core	holds	
+B-woocommerce	cells.tsv	19	CM-SEL-006/woocommerce	1	extension-point	holds	woocommerce bundle 3; bundles 2 (WC-C-104); grouped 0: no decides statement shows WooCommerce doing it; WC-S-5474's second citation lists Product Bundles under Developed by Woo, held only in its note (C5)
+B-woocommerce	evidence.tsv	68	CM-SEL-006/woocommerce/WC-C-104/where/WC-S-0732	2	extension-point	holds	
+B-woocommerce	evidence.tsv	69	CM-SEL-006/woocommerce/WC-C-104/boundary/WC-S-5474	2	shows	holds	
+B-anchor	cells.tsv	36	CM-SEL-007/shopify	1	extension-point	holds	shopify donation 1 (SH-S-2583); donate 0; charity 0; non-profit 1 (a business-entity category, SH-C-004); nonprofit 0: no decides statement of SH-C-187 shows Shopify doing it (SH-S-0755 is app scopes)
+B-anchor	evidence.tsv	141	CM-SEL-007/shopify/SH-C-187/where/SH-S-2583	2	extension-point	holds	
+B-anchor	evidence.tsv	141	CM-SEL-007/shopify/SH-C-187/where/SH-S-2583	13	extension-point	not mine (check 13)	checker flag: a statement of SH-C-187, domain D without B under also: left to the other reviewer (check 13); the placement extension-point holds on its words (an App Store category)
+B-anchor	cells.tsv	37	CM-SEL-007/salla	1	core	holds	salla donation 10; تبرع 3; التبرع 3; تبرعات 1; التبرعات 1; خيري 2; الجمعيات الخيرية 2; جمعية 0: outside SA-C-020 permission lists and charities' Apple Pay and app policies (SA-C-127, SA-C-174): none against
+B-anchor	evidence.tsv	142	CM-SEL-007/salla/SA-C-020/where/SA-S-1760	2	core	holds	
+B-anchor	evidence.tsv	143	CM-SEL-007/salla/SA-C-020/decides/SA-S-2616	2	core	holds	
+B-anchor	evidence.tsv	144	CM-SEL-007/salla/SA-C-020/decides/SA-S-3118	2	core	holds	
+B-anchor	evidence.tsv	145	CM-SEL-007/salla/SA-C-020/decides/SA-S-3481	2	core	holds	
+B-woocommerce	cells.tsv	20	CM-SEL-007/woocommerce	1;5	none-held	holds	woocommerce donation 0; donate 0; charity 0; charities 0; non-profit 0; nonprofit 0; fundrais 0
+B-anchor	capabilities.tsv	-	CM-SEL-007	3	-	not mine (check 3)	checker flag: CM-SEL-007 has no concern landed in its tree: left to the other reviewer (check 3)
+B-backfill-woocommerce	cells.tsv	4	CM-SEL-008/shopify	1;5	none-held	holds	shopify membership 0; member 44 (staff members, Member FDIC, finance-app staff); gated 1 (no product gating); exclusive 4 (B2B exclusive features SH-C-041, payment terms); paywall 0; loyalty 1 (Customer loyalty apps, no membership words); VIP 0
+B-backfill-woocommerce	cells.tsv	4	CM-SEL-008/shopify	5	none-held	holds	checker flag: 52 statements (SH-C-158 scopes, SH-C-135, staff members, loyalty apps, B2B): none shows a membership: resolved, holds
+B-backfill-woocommerce	cells.tsv	5	CM-SEL-008/salla	1;5	none-held	holds	salla membership 0; member 1 (Staff members); عضوية 0; العضوية 0; عضويات 0; عضو 0; أعضاء 0; الأعضاء 0; ولاء 8; الولاء 6 (loyalty points, not memberships); اشتراك العضوية 0; VIP 0
+B-backfill-woocommerce	cells.tsv	5	CM-SEL-008/salla	5	none-held	holds	checker flag: 48 statements (SA-C-009 staff, SA-C-064 loyalty program and its components, reports, events): loyalty points, which no statement calls a membership: resolved, holds
+B-woocommerce	cells.tsv	21	CM-SEL-008/woocommerce	1	extension-point	holds	woocommerce membership 1 (WC-S-0728); member 3 (Member FDIC, staff); members 2; restrict content 0; access plan 0: the concern has one statement; no decides statement shows WooCommerce doing it
+B-woocommerce	evidence.tsv	70	CM-SEL-008/woocommerce/WC-C-102/where/WC-S-0728	2	extension-point	holds	

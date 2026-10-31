@@ -8,6 +8,11 @@ The table below is how the pilot ran. From Stage 4, the pilot's own changes appl
 
 Each step has a brief in `<subject>/briefs/`. A separate agent inspects every brief before it runs. `method/check_subject.py` checks the files after every step.
 
+From S-02, a subject's folder also holds:
+- `frame.md`: the coordinator's frame, written before any agent runs: the subject, its root decisions, the concerns it starts from, how it runs, and its budget;
+- `bullets.tsv`: the questions its phase A brief asks of each platform, with the root decision each serves, and their roles for the checker; and `limits.tsv`, where it sets a limit of its own, such as how many variation points phase B may make before it stops and reports;
+- `concerns.tsv` and `subjects-from.tsv`: what `method/seed_subject.py` copies into each platform's `recorded.tsv` and `recorded-citations.tsv`, the statements its phase A starts from.
+
 | Step | Brief | Who | Writes |
 | --- | --- | --- | --- |
 | 1A. What each platform states | `A-one-platform.md` | one agent per platform, each blind to the others | `<platform>/statements.tsv`, `terms.tsv`, `absences.tsv`, `gaps.tsv`, `citations.tsv`, `notes.md` |

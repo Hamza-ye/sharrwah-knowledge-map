@@ -1,0 +1,371 @@
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">&gt; This page is for Developer.
+
+&gt; For clean Markdown of any page, append .md to the page URL.
+&gt; For a complete documentation index, see https://docs.bigcommerce.com/llms.txt.
+&gt; For AI client integration (Claude Code, Cursor, etc.), connect to the MCP server at https://docs.bigcommerce.com/_mcp/server.
+
+# Get Locale Settings
+
+GET https://api.bigcommerce.com/stores/{store_hash}/v3/settings/store/locale
+
+Returns global locale settings.
+
+For stores with Catalyst channels, the `shopper_language_selection_method` field is deprecated. Using this endpoint on those stores will return a warning about the deprecation. For additional information, refer to [Locale Configuration](/developer/docs/admin/store-configuration/settings/locales-configuration).
+
+Reference: https://docs.bigcommerce.com/developer/api-reference/rest/admin/management/settings/store-locale/get-settings-locale
+
+## Authentication
+
+- `X-Auth-Token` header (required) — ### OAuth scopes | UI Name | Permission | Parameter | |:--------|:-----------|:----------| | Information &amp; Settings | modify | `store_v2_information` | | Information &amp; Settings | read-only | `store_v2_information_read_only` | NOTE: Analytics endpoints require the Content (`store_v2_content` and `store_v2_content_read_only`) OAuth scope. ### Authentication header | Header | Argument | Description | |:-------|:---------|:------------| | `X-Auth-Token` | `access_token` | For more about API accounts that generate `access_token`s, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#api-accounts). | ### Further reading For example requests and more information about authenticating BigCommerce APIs, see [Authentication and Example Requests](/developer/docs/overview/api-fundamentals/api-accounts#x-auth-token-header-example-requests). For more about BigCommerce OAuth scopes, see our [Guide to API Accounts](/developer/docs/overview/api-fundamentals/api-accounts#oauth-scopes). For a list of API status codes, see [API Status Codes](/developer/api-reference/rest/overview#rest-http-status-codes).
+
+## Request
+
+### Path parameters
+
+- `store_hash` (string, required) — Permanent ID of the BigCommerce store.
+
+### Headers
+
+- `Accept` (string, required, default: application/json) — The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the response body.
+
+## Response
+
+### 200
+
+OK
+
+- `data` (Locale, optional) — The basic locale settings for a store, used to give shopper information about languages, countries, etc.
+- `meta` (MetaOpen, optional) — Response metadata.
+
+## Types
+
+### Locale
+
+The basic locale settings for a store, used to give shopper information about languages, countries, etc.
+
+- `default_shopper_language` (string, required, default: en)
+- `shopper_language_selection_method` (enum, optional, default: default_shopper_language) — Determines whether to display the storefront content in the shopperʼs browser language or the shopperʼs selected default language. Available values: * `browser` - language updates automatically based on the shopper browser language. Multiple languages are supported. * `default_shopper_language` - content is displayed in a single language based on the set `default_shopper_language`. Only the selected language is supported.
+  - Allowed values: `browser`, `default_shopper_language`
+- `store_country` (string, optional, default: United States)
+
+### MetaOpen
+
+Response metadata.
+
+## Examples
+
+### Default Example
+
+**Response**
+
+```json
+{
+  "data": {
+    "default_shopper_language": "en",
+    "shopper_language_selection_method": "default_shopper_language",
+    "store_country": "United States"
+  },
+  "meta": {}
+}
+```
+
+**SDK Code**
+
+```python Default Example
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale"
+
+headers = {
+    "Accept": "application/json",
+    "X-Auth-Token": "&lt;apiKey&gt;"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
+```
+
+```javascript Default Example
+const url = 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale';
+const options = {
+  method: 'GET',
+  headers: {Accept: 'application/json', 'X-Auth-Token': '&lt;apiKey&gt;'}
+};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go Default Example
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby Default Example
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["Accept"] = 'application/json'
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java Default Example
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.get("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")
+  .header("Accept", "application/json")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .asString();
+```
+
+```php Default Example
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('GET', 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale', [
+  'headers' =&gt; [
+    'Accept' =&gt; 'application/json',
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp Default Example
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale");
+var request = new RestRequest(Method.GET);
+request.AddHeader("Accept", "application/json");
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+IRestResponse response = client.Execute(request);
+```
+
+```swift Default Example
+import Foundation
+
+let headers = [
+  "Accept": "application/json",
+  "X-Auth-Token": "&lt;apiKey&gt;"
+]
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```
+
+### Multi-Language Example
+
+**Response**
+
+```json
+{
+  "data": {
+    "default_shopper_language": "en",
+    "shopper_language_selection_method": "default_shopper_language",
+    "store_country": "United States"
+  },
+  "meta": {
+    "deprecated_fields": "shopper_language_selection_method property has been replaced for the stores with Catalyst channels by the explicit list of languages enabled on a channel. For additional information please check /developer/docs/admin/store-configuration/settings/locales-configuration."
+  }
+}
+```
+
+**SDK Code**
+
+```python Multi-Language Example
+import requests
+
+url = "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale"
+
+headers = {
+    "Accept": "application/json",
+    "X-Auth-Token": "&lt;apiKey&gt;"
+}
+
+response = requests.get(url, headers=headers)
+
+print(response.json())
+```
+
+```javascript Multi-Language Example
+const url = 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale';
+const options = {
+  method: 'GET',
+  headers: {Accept: 'application/json', 'X-Auth-Token': '&lt;apiKey&gt;'}
+};
+
+try {
+  const response = await fetch(url, options);
+  const data = await response.json();
+  console.log(data);
+} catch (error) {
+  console.error(error);
+}
+```
+
+```go Multi-Language Example
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"io"
+)
+
+func main() {
+
+	url := "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale"
+
+	req, _ := http.NewRequest("GET", url, nil)
+
+	req.Header.Add("Accept", "application/json")
+	req.Header.Add("X-Auth-Token", "&lt;apiKey&gt;")
+
+	res, _ := http.DefaultClient.Do(req)
+
+	defer res.Body.Close()
+	body, _ := io.ReadAll(res.Body)
+
+	fmt.Println(res)
+	fmt.Println(string(body))
+
+}
+```
+
+```ruby Multi-Language Example
+require 'uri'
+require 'net/http'
+
+url = URI("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")
+
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
+
+request = Net::HTTP::Get.new(url)
+request["Accept"] = 'application/json'
+request["X-Auth-Token"] = '&lt;apiKey&gt;'
+
+response = http.request(request)
+puts response.read_body
+```
+
+```java Multi-Language Example
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.Unirest;
+
+HttpResponse&lt;String&gt; response = Unirest.get("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")
+  .header("Accept", "application/json")
+  .header("X-Auth-Token", "&lt;apiKey&gt;")
+  .asString();
+```
+
+```php Multi-Language Example
+&lt;?php
+require_once('vendor/autoload.php');
+
+$client = new \GuzzleHttp\Client();
+
+$response = $client-&gt;request('GET', 'https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale', [
+  'headers' =&gt; [
+    'Accept' =&gt; 'application/json',
+    'X-Auth-Token' =&gt; '&lt;apiKey&gt;',
+  ],
+]);
+
+echo $response-&gt;getBody();
+```
+
+```csharp Multi-Language Example
+using RestSharp;
+
+var client = new RestClient("https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale");
+var request = new RestRequest(Method.GET);
+request.AddHeader("Accept", "application/json");
+request.AddHeader("X-Auth-Token", "&lt;apiKey&gt;");
+IRestResponse response = client.Execute(request);
+```
+
+```swift Multi-Language Example
+import Foundation
+
+let headers = [
+  "Accept": "application/json",
+  "X-Auth-Token": "&lt;apiKey&gt;"
+]
+
+let request = NSMutableURLRequest(url: NSURL(string: "https://api.bigcommerce.com/stores/store_hash/v3/settings/store/locale")! as URL,
+                                        cachePolicy: .useProtocolCachePolicy,
+                                    timeoutInterval: 10.0)
+request.httpMethod = "GET"
+request.allHTTPHeaderFields = headers
+
+let session = URLSession.shared
+let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -&gt; Void in
+  if (error != nil) {
+    print(error as Any)
+  } else {
+    let httpResponse = response as? HTTPURLResponse
+    print(httpResponse)
+  }
+})
+
+dataTask.resume()
+```</pre></body></html>
