@@ -125,3 +125,13 @@ None.
 - `entries.tsv` cuts a long entry's text with '…', and `show --width 4000` can't print past it. The checker tests terms against that text, so a permission the table holds beyond the cut can't be a term. I named those in `reading` (P8).
 - The checker accepts a capability line with empty terms (entry 54's CM-ORD-004 and CM-B2B-004 lines). Such a line was needed by P8.
 - The brief's reading list doesn't name `staff-permission-groups` or the navigation answers, which a `permission-gates` row is built from. I read them only for the permissions' labels and each address's item, as the brief's "cite the step or file it was built from" asks.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **A badge decides nothing about support.** SA-28's rule D1 means that a 'NEW' badge doesn't make an item `shows`; the item keeps the support of what it is. That is how this batch reads it, so the Influencer item stays `extension-point`, with its siblings, and no SA-28 line rests on a badge.
+- **'روابط مساعدة' ('Others') is `out`,** by the ruling after SA-28.
+- **The two-line groups stand:** Influencer, My Subscriptions and Payments. Each title names two things the model keeps apart, and the ruling after SA-22 gives a second line for a page that is itself two things.
+- **The performance reports stand on CM-ANL-003,** as tabs of Store performance.
+- **The permission rows stand** by rules P1 to P8. SA-30 and SA-31 keep to them. `custom_fields_management` on product rows is a lead for Custom Product Fields, decided with the new things.
+- **Four entries are cut at 3,000 characters** (54, 101 to 103): the build's limit for an entry's text. The permissions past the cut are in the readings, and the checker accepts the lines.
+- **Cost:** 18.0 million tokens over 90 requests, about 138,000 an entry. No cell changes.
