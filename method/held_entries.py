@@ -59,6 +59,8 @@
 #   long:<n>                  the structure's entries are prose, each one statement the platform publishes whole (a
 #                             changelog post, a feature's dialog): an entry up to n characters is not taken for a list
 #   drop-match:<pattern>      drops the items whose rendering matches
+#   read-as:<structure> <tag> an item of that tag whose text heads a row the model cites in <structure>, the same
+#                             record's other structure, is read: the public pricing page's row headings (SH-92)
 #   translate:<en>,<ar>       resolves values that are keys of those translation files (paths from the structures folder)
 #
 # Usage:
@@ -289,7 +291,7 @@ def selection():
     return rows(path) if os.path.exists(path) else []
 
 
-RULE = re.compile(r";(?=\s*(?:rows|text|files|json1?|changes|label|prune|wrap|pick|dict|name|nested|new-vs|merge|where|labels|latest|group|drop|drop-match|translate|release|meta|long|nodes):)")
+RULE = re.compile(r";(?=\s*(?:rows|text|files|json1?|changes|label|prune|wrap|pick|dict|name|nested|new-vs|merge|where|labels|latest|group|drop|drop-match|translate|release|meta|long|nodes|read-as):)")
 
 
 def pruned(o, keys, wrap=()):
@@ -778,6 +780,22 @@ def strings_of(o, out, drop=()):
         out.add(" ".join(o.split()))
 
 
+def read_as(platform, spec, cited):
+    """For `read-as:<structure> <tag>`: the tag, and the texts of the <tag> cells of the rows the model cites in
+    <structure>."""
+    other, tag = spec.split()
+    repo, root, sub = REPOS[platform]
+    texts = set()
+    for f in sorted(glob.glob(os.path.join(folder(platform, other), "*", "items.jsonl"))):
+        rel = os.path.relpath(f, root)
+        for ln, l in enumerate(open(f, encoding="utf-8"), 1):
+            if (rel, ln) in cited and l.strip():
+                for c in json.loads(l).get("cells") or []:
+                    if isinstance(c, dict) and c.get("tag") == tag and (c.get("text") or "").strip():
+                        texts.add(c["text"].strip())
+    return tag, texts
+
+
 def cmd_build(a):
     sel = [r for r in selection() if r["read"] == "yes" and (not a.platform or r["platform"] == a.platform)]
     by_p = collections.defaultdict(list)
@@ -794,6 +812,7 @@ def cmd_build(a):
             rd = dict(rl)
             drop = set(rd.get("drop", "").split(",")) - {""}
             tr = translations(p, rd["translate"]) if "translate" in rd else None
+            ra = read_as(p, rd["read-as"], cited) if "read-as" in rd else None
             its = items_of(p, r["structure"], rl)
             groups = collections.OrderedDict()
             n_empty = n_match = n_read = 0
@@ -810,6 +829,8 @@ def cmd_build(a):
                 if label not in g["labels"]:
                     g["labels"].append(label)
                 if (f, ln) in cited and not ptr:
+                    g["read"] = True
+                if ra and isinstance(o, dict) and o.get("tag") == ra[0] and (o.get("text") or "").strip() in ra[1]:
                     g["read"] = True
                 if g["at"] is None:
                     g["at"] = (f, ln, ptr)

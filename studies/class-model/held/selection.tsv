@@ -44,7 +44,7 @@ shopify	partners-dashboard-routes	yes		where		the Partner Dashboard's routes: it
 shopify	plan-comparison-admin	yes		decides		the plan table the admin shows: its plan lines; the rows not cited
 shopify	plan-feature-set	yes	json1:raw/runs/*/answers/admin.shopify.com/PlanFeatureSetQuery/*.json;nested:planFeatureSet,features,planAddOnFeatureSet	decides		the admin's plan by feature data, from its latest answer: each section and feature, with its values per plan
 shopify	plan-page-admin	yes		decides		the plan selection page as each store rendered it: plan cards and lines
-shopify	plan-page-public	yes	drop-match:^tag: td	decides		the public pricing page: its plan cards and FAQs; its comparison cells repeat plan-comparison-public, which the model read
+shopify	plan-page-public	yes	drop-match:^tag: td;read-as:plan-comparison-public th	decides		the public pricing page: its plan cards and FAQs; its comparison cells repeat plan-comparison-public, the same record, which the model read, and so do the headings of the rows it cites
 shopify	play-publisher-apps	yes		where		the Android apps Google Play lists for the publisher query pub:Shopify Inc.: the ones not cited
 shopify	pos-app-navigation	yes		where		the POS app's navigation: its places
 shopify	pos-settings	yes		where		the POS app's settings: its places
