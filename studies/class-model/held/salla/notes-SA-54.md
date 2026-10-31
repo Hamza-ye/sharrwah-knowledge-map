@@ -131,3 +131,11 @@ The Back in stock alerts channel 'Store notification' / 'إشعارات المت
 - `show` renders an option label given under an `if` without its condition (48, above). This is one more case of the `if:` gap the coordinator noted after SA-52.
 - `held_entries.py earlier` still takes some control names as keys (`method`, `description`, `hours`, `window`, `days`, `duration`, `types`, `content_title`) and the mistranslated `Sales` (77). They printed unrelated capabilities and cost little.
 - No other problem. The entries carried their sections' `features`, `flag:` and `if:`, so the gates needed no body, apart from 48's option.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **No cell changes and no new things.** The 19 `shows` lines are everything behind the five features no held store has released, and the Pro store's pages read 'Access restricted'.
+- **X1 to X4 stand for SA-55 and SA-56.** X1's help link is on CM-ONB-003, as S8 places an `s:link`. The open cases (54, 64, 48, 6, 5, 38) stand as placed.
+- **SA-56's entries 50 to 55** are the real store's twins of this batch's 50 to 54, with its extra item `hide_out_of_stock_products`. SA-56's prompt says to take these lines.
+- **`held_entries.py earlier`** no longer takes control names (`method`, `description`, `hours`, `window`, `days`, `duration`, `types`, `content_title`) or the mistranslated `Sales` as keys.
+- **Cost:** 16.5 million tokens over 85 requests, about 206,000 an entry.
