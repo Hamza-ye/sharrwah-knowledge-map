@@ -190,3 +190,11 @@ From 4.8.3's manifest (`raw/runs/20260930T093750Z-npm-shopify-cli-tarball/fetch.
 - **No rule covered a command's `hidden` key** or a version a later complete list replaces. R98.4 and R98.5 are mine, for the coordinator.
 - **The checker's `NOTE` on a new thing whose entry has leads** names the line before the `new` line (line 51 for line 52, and the like).
 - **No rule of the brief read differently from B-extent.md here.**
+
+## The coordinator's check
+
+Measured: 25.0 million tokens over 103 requests, about 192,000 an entry. The checker prints no problem.
+- **Kept:** S97's rules for the last store flags; R98.1 to R98.11, which SH-99 keeps for the rest of the CLI; both `CHANGES` lines (CM-DVT-004 `core` by the commands' own words; CM-DVT-006 `core` as the marked reading SH-11 and SH-56 made of Hydrogen's environments); and `new:App versions` on its place of its own, the Dev Dashboard's Versions (SH-23).
+- **The quotes the checker finds nowhere held** (lines 52, 174 and 198): they are the CLI manifest's own words, `package/oclif.manifest.json` inside the held tarball, whose sha256 matches the structure's `meta.json`. The checker can't search inside the tarball, so they stand.
+- **R98.7 and SH-61:** Functions commands are CM-APP-005 `extension-point` here and `core;extension-point` in SH-61's card. Both stand: the CLI builds what apps provide, and SH-61's card names the platform's runtime too. No cell changes.
+- **The items' cut of the source** (each command's first paragraph only, and no flag descriptions) goes to `amendment-notes.md` for the omission review.
