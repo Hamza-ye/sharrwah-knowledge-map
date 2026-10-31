@@ -923,6 +923,75 @@ def cmd_show(a):
                     print("       leads: " + "; ".join(f"{c} {clip(idx[2].get(c, ''), 50)} [cell: {idx[4].get(c, 'none')}] (by {', '.join(w)})" for c, w in cs))
 
 
+# earlier: an entry's own keys, looked up in the platform's other batches' readings and terms
+EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path): (/[^\s;,\]}]*)")
+EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,-]{3,})")
+EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
+EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|text|name|aria_label): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
+
+
+def earlier_keys(text):
+    keys = []
+    for m in EARLIER_PATH.finditer(text):
+        if len(m.group(1)) > 1:
+            keys.append(("path", m.group(1).rstrip("/") or "/"))
+    keys += [("name", m.group(1)) for m in EARLIER_NAME.finditer(text) if not m.group(1).isdigit()]
+    keys += [("key", m.group(1)) for m in EARLIER_KEY.finditer(text)]
+    # a one-word label (Orders, الطلبات) is cited for too many things to say anything; its address does
+    keys += [("label", m.group(1).strip()) for m in EARLIER_LABEL.finditer(text) if len(m.group(1).split()) >= 2]
+    seen, out = set(), []
+    for k in keys:
+        if k[1] not in seen and len(k[1]) >= 3:
+            seen.add(k[1]); out.append(k)
+    return out[:6]
+
+
+def earlier_pattern(kind, v):
+    if kind == "path":
+        # the address alone, or with a host before it; never as the start of a longer address
+        return re.compile(re.escape(v) + r"(?![\w/-])")
+    if kind == "label":
+        return re.compile(r"['‘“]" + re.escape(v) + r"(?:['’”]| \(| /)")
+    return re.compile(r"(?<![\w.-])" + re.escape(v) + r"(?![\w-])")
+
+
+def cmd_earlier(a):
+    """For each entry of a batch: the lines of the platform's other batches whose reading or terms cite one of the
+    entry's own keys (its address, route or app name, translation key, or its label quoted), grouped by capability
+    and support. A batch whose notes hold no coordinator's check is marked unchecked."""
+    by = {e["entry_id"]: e for e in entries(a.platform)}
+    lines = []
+    for path in sorted(glob.glob(os.path.join(HELD, a.platform, "placements-*.tsv"))):
+        b = os.path.basename(path)[len("placements-"):-len(".tsv")]
+        if b == a.batch:
+            continue
+        notes = os.path.join(HELD, a.platform, f"notes-{b}.md")
+        checked = os.path.exists(notes) and "## The coordinator's check" in open(notes, encoding="utf-8").read()
+        for n, r in enumerate(rows(path), 2):
+            lines.append((b if checked else b + "?", n, r.get("cap_id") or r.get("placement", ""),
+                          r.get("supports", ""), (r.get("reading") or "") + " " + (r.get("terms") or "")))
+    for i, eid in enumerate(batch_ids(a.batch), 1):
+        if eid not in by or (a.__dict__.get("from") and i < a.__dict__["from"]) or (a.to and i > a.to):
+            continue
+        keys = earlier_keys(by[eid]["text"])
+        found = []
+        for kind, v in keys:
+            pat = earlier_pattern(kind, v)
+            g = collections.OrderedDict()
+            for b, n, cap, sup, txt in lines:
+                if pat.search(txt):
+                    g.setdefault((cap, sup), []).append(f"{b}:{n}")
+            if g:
+                parts = [f"{cap} {sup} ×{len(refs)} ({', '.join(refs[:3])}{' …' if len(refs) > 3 else ''})"
+                         for (cap, sup), refs in sorted(g.items(), key=lambda x: -len(x[1]))[:a.groups]]
+                found.append(f"   {kind} {v}: " + "; ".join(parts))
+        head = f"{i} {eid}"
+        if found:
+            print(head); print("\n".join(found))
+        else:
+            print(f"{head}  (no earlier line cites {', '.join(v for _, v in keys) or 'a key of it'})")
+
+
 PARTNER = re.compile(r"collaborator|partner-api|app-install|stores-access-requests|portal-app-scopes", re.I)
 # The companies of each platform's group, as its CM-ACC-002 cell names them: a group company is never a filler, and a
 # line that names one as a third party is read again (the dry run's review, R1).
@@ -1280,6 +1349,11 @@ def main():
     s.add_argument("--candidates", action="store_true", help="each entry's leads: capabilities whose cited statements share its identifiers, or whose terms it holds")
     s.add_argument("--code", type=int, default=0, help="for a bundle route structure: this many characters of the bundle's code at each item's path, for the items that are more than a path")
     s.set_defaults(f=cmd_show)
+    s = sub.add_parser("earlier", help="each entry's keys (address, route or app name, translation key, quoted label) as the platform's other batches' lines cite them")
+    s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("--batch", required=True)
+    s.add_argument("--from", type=int); s.add_argument("--to", type=int)
+    s.add_argument("--groups", type=int, default=3, help="at most this many capability-and-support groups a key")
+    s.set_defaults(f=cmd_earlier)
     s = sub.add_parser("cells", help="each named capability's cell on the platform, compact")
     s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("cap_ids", nargs="+")
     s.add_argument("--width", type=int, default=500); s.add_argument("--rows", type=int, default=12)
