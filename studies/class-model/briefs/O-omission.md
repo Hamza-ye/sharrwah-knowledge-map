@@ -24,7 +24,7 @@ You write one row per item you read, and a finding row for each miss that can la
    Then grep, never read whole: `structures/REGISTER.tsv`, `index/runs.tsv`, `index/run-notes.tsv`, `index/ledger-summary.tsv` and `index/ledger/*.tsv` where your repository has them, `index/instruments.json` where it exists, and observed-sh's `derived/journey-catalog.jsonl`. The founder's rule of 30 October: "what the evidence repositories hold is read through their own reading guides and indexes, not by search alone ... Search (method/held_index.py, method/corpus_search.py) follows the guides" (`founder-decisions.tsv`, 30 October, "Method (standing)").
 3. **The model's rules:**
    - `studies/class-model/briefs/B-extent.md`: "Build capabilities", "Cells and evidence" and "Conventions from the dry run", with "What a place of its own is";
-   - `briefs/S2-held.md`, its sections "The outcomes", "The row" and "Sources and locators". They govern your finding rows, as they govern the second stage's;
+   - `briefs/S2-held.md`, its sections "For each cell" (how a cell is searched, for group 5), "The outcomes", "The row" and "Sources and locators". They govern your finding rows, as they govern the second stage's;
    - `briefs/H-held.md`, "For each entry", rules 2, 4 and 5: a new thing's line, `supports`, and the columns `scope`, `terms`, `filler` and `quality`. The rulings they name (M-1 to M-14, and those in `held/review-H-rulings.md`) apply to a finding row.
 
    The rules marked (ruling, proposed) below are the coordinator's, each listed for the founder's veto. Where any other rule of this brief reads differently from B-extent.md, S2-held.md or H-held.md, those govern: say so in your notes.
