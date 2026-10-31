@@ -9,7 +9,7 @@
 
 ## Where to start, per repository
 
-**observed-sh, Shopify** (`/home/user/observed-sh`, at `9b047b08c`, which added `shopify/editions`):
+**observed-sh, Shopify** (`/home/user/observed-sh`, at `9b047b08c`, which added `shopify/editions`; now at `e38dc17e3`, with the founder's eight new kinds of evidence, `held-vs-read.tsv`):
 1. `README.md`, its "Starting points";
 2. `docs/READING.md`, for what each kind of file holds and how it reads;
 3. `docs/GAPS.md`, for what isn't held and why;
@@ -30,6 +30,12 @@ Its denominators, by the ledger's own statuses:
 | Themes sitemaps | 1,564 captured; 50,048 not attempted |
 | `shopify.com` sitemap | 530 captured |
 | Community sitemaps | 340,642 not attempted |
+
+**Shopify's prices by country** are held at observed-sh `e38dc17e3`, in `structures/shopify/pricing-page-data/20261031T003815Z-shopify-com-pricing-by-country/items.jsonl`. It has 207 pages from 61 country sites: plans, POS and international.
+- **What the pages hold:** each page's `loaderData.*.pricing` states its prices and terms: the Basic annual price, the minimum monthly price and its currency, the paid trial, the POS Pro price and the trial length. Each plan page's cards hold the plans' monthly prices.
+- **What the held pass reads:** the 18 English-language sites and the 3 Arabic ones (`held/selection.tsv`). The other 40 sites state the same lines in their own languages, as the coordinator measured on 31 October.
+- **Where the sites differ:** the comparison table has 103 rows on `www.shopify.com` and fewer on the other sites. The rows of the 40 sites in other languages aren't matched to the English ones.
+- **For a subject comparing prices across markets:** read every site's prices and terms from this file, as a table.
 
 **observed-sa, Salla** (`/home/user/observed-sa`, at `b0bd0b163`): the same files and order. Its denominators:
 

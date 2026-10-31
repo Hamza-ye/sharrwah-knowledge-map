@@ -17,17 +17,42 @@
 #   rows:<path from the repository's root>:<pattern>   a table's rows (tab-separated, with a header), the first column
 #                                                      matching the pattern
 #   text:                     one item per non-empty line of each text.txt of the structure
+#   files:<n1>,<n2>           the structure's JSONL files so named are its items, not items.jsonl alone (a CLI's
+#                             topics.jsonl beside its commands)
 #   json:<glob>               the JSON files the glob names (from the repository's root), each one item; json1: the
 #                             last of them only
 #   changes:<path>            a route manifest's changes, before and after, from the repository's derived file
+#   label:<key>=<pattern>     an item's label is what the pattern's first group matches in its field (a page's country
+#                             site, from its uri), so the entries it renders carry every site that states them
+#   prune:<k1>,<k2>           leaves out what sits under those keys, at any depth, before the rules below read it (a
+#                             page's own copies of its words: its translations, the site's header and footer)
+#   wrap:<k1>,<k2>            the dicts at those keys, at any depth, are lists of one, so nested: can name them (a
+#                             card that stands alone: a plan card, a table's column headers)
+#   pick:<p1>,<p2>            adds, before each item, one item of only the fields at those paths (`/`-separated):
+#                             what a page states beside its lists (its prices and terms, the variant it was served)
 #   dict:<key>                one item per key of the dict at <key>, with its value
+#   name:<k1>,<k2>            the fields that name an item for nested:, ahead of the usual name, title, label and the
+#                             like (a page's uri, a section's heading), so the elements under it carry them
 #   nested:<k1>,<k2>          one item per element of each list so named, at any depth, carrying its ancestors' names
 #   new-vs:<structure>        the items whose name the named structure lacks
+#   merge:<key>               the items of one source line (a page) that state the same value of the key are one item:
+#                             the first's fields, then each field it lacks from the others; a field they state
+#                             differently keeps each distinct value, ` | `-separated (a feature listed in two sections),
+#                             a value that only begins another giving way to it
 #   where:<key>=<v1>|<v2>     the items whose field has one of the values; where:<key>!= keeps those where it is set
 #   labels:<pattern>          the items of the labels that match
+#   latest:<k1>,<k2>          of the items that state the same value of the first of those keys they have, only those
+#                             in the words of the latest version (the label, after any `@`) are kept: a target or a
+#                             command once, as its newest version states it, under each version that states it so
+#   group:<key>=<v1>|<v2>[/<h1>|<h2>]   a rendered page's items in order: each one whose field has one of the values
+#                             begins an item that holds those after it (`then`), up to the next; one with an h value
+#                             stays alone and names the groups after it (a feature's heading, its paragraph and links,
+#                             under its section's heading)
 #   meta:<k1>,<k2>            adds one item per value of those keys of the structure's meta.json, where the extractor
 #                             kept what the platform states beside its items
 #   drop:<k1>,<k2>            leaves those fields out of the rendering
+#   long:<n>                  the structure's entries are prose, each one statement the platform publishes whole (a
+#                             changelog post, a feature's dialog): an entry up to n characters is not taken for a list
 #   drop-match:<pattern>      drops the items whose rendering matches
 #   translate:<en>,<ar>       resolves values that are keys of those translation files (paths from the structures folder)
 #
@@ -121,10 +146,10 @@ def says_something(o):
     return isinstance(o, dict) and any(k not in SKIP and k not in LAYOUT and v not in (None, "", [], {}) for k, v in o.items())
 
 
-def name_of(o):
+def name_of(o, names=()):
     # a country, a package or a variant names a list's element too, so a nested entry carries it (inspection-H2, MF-5)
     if isinstance(o, dict):
-        for k in ("name", "title", "label", "key", "slug", "handle", "id", "path", "url", "display_name", "location",
+        for k in (*names, "name", "title", "label", "key", "slug", "handle", "id", "path", "url", "display_name", "location",
                   "store_country", "duration_code"):
             v = o.get(k)
             if isinstance(v, dict):
@@ -134,24 +159,24 @@ def name_of(o):
     return ""
 
 
-def flatten(o, keys, trail=()):
+def flatten(o, keys, trail=(), names=()):
     """One item per element of each list named in keys, at any depth, carrying its ancestors' names."""
     out = []
     if isinstance(o, dict):
-        here = trail + ((name_of(o),) if name_of(o) else ())
+        here = trail + ((name_of(o, names),) if name_of(o, names) else ())
         for k, v in o.items():
             if k in keys and isinstance(v, list):
                 for i, x in enumerate(v):
                     if isinstance(x, dict):
                         out.append(({"within": " > ".join(here), "list": k, **{kk: vv for kk, vv in x.items() if kk not in keys}}, f"/{k}/{i}"))
-                        out += [(it, f"/{k}/{i}{p}") for it, p in flatten(x, keys, here + ((name_of(x),) if name_of(x) else ()))]
+                        out += [(it, f"/{k}/{i}{p}") for it, p in flatten(x, keys, here + ((name_of(x, names),) if name_of(x, names) else ()), names)]
                     else:
                         out.append(({"within": " > ".join(here), "list": k, "value": x}, f"/{k}/{i}"))
             elif isinstance(v, (dict, list)):
-                out += [(it, f"/{k}{p}") for it, p in flatten(v, keys, here)]
+                out += [(it, f"/{k}{p}") for it, p in flatten(v, keys, here, names)]
     elif isinstance(o, list):
         for i, x in enumerate(o):
-            out += [(it, f"/{i}{p}") for it, p in flatten(x, keys, trail)]
+            out += [(it, f"/{i}{p}") for it, p in flatten(x, keys, trail, names)]
     return out
 
 
@@ -160,7 +185,34 @@ def selection():
     return rows(path) if os.path.exists(path) else []
 
 
-RULE = re.compile(r";(?=\s*(?:rows|text|json1?|changes|dict|nested|new-vs|where|labels|drop|drop-match|translate|release|meta):)")
+RULE = re.compile(r";(?=\s*(?:rows|text|files|json1?|changes|label|prune|wrap|pick|dict|name|nested|new-vs|merge|where|labels|latest|group|drop|drop-match|translate|release|meta|long):)")
+
+
+def pruned(o, keys, wrap=()):
+    if isinstance(o, dict):
+        return {k: ([pruned(v, keys, wrap)] if k in wrap and isinstance(v, dict) else pruned(v, keys, wrap)) for k, v in o.items() if k not in keys}
+    if isinstance(o, list):
+        return [pruned(x, keys, wrap) for x in o]
+    return o
+
+
+def merged(a, b):
+    """b's statements added to a's: the fields a lacks, and each value a states otherwise."""
+    for k, v in b.items():
+        if k not in a or a[k] in (None, "", [], {}):
+            a[k] = v
+        elif a[k] != v and v not in (None, "", [], {}):
+            if isinstance(a[k], list) and isinstance(v, list):
+                a[k] = a[k] + [x for x in v if x not in a[k]]
+            elif isinstance(a[k], dict) and isinstance(v, dict):
+                a[k] = merged(dict(a[k]), v)
+            elif isinstance(a[k], (str, int, float)) and isinstance(v, (str, int, float)):
+                had = str(a[k]).split(" | ")
+                if any(h.startswith(str(v)) for h in had):        # said already, or the start of what was said
+                    continue
+                kept = [h for h in had if not str(v).startswith(h)]  # a value v continues (an ancestor's name) gives way
+                a[k] = " | ".join(kept + [str(v)])
+    return a
 
 
 def rules(r):
@@ -230,7 +282,7 @@ def items_of(platform, structure, rs):
                         "eligibility before": json.dumps(elig(o.get("before")), ensure_ascii=False),
                         "eligibility after": json.dumps(elig(o.get("after")), ensure_ascii=False)}))
     else:
-        files = sorted(glob.glob(os.path.join(base, "**", "items.jsonl"), recursive=True))
+        files = sorted(f for n in rd.get("files", "items.jsonl").split(",") for f in glob.glob(os.path.join(base, "**", n), recursive=True))
         for f in files:
             label = os.path.relpath(os.path.dirname(f), base)
             here = []
@@ -262,6 +314,30 @@ def items_of(platform, structure, rs):
                 d = o.get("data") if isinstance(o, dict) and isinstance(o.get("data"), dict) else o
                 out.append((os.path.relpath(os.path.dirname(f), base), os.path.relpath(f, root), 0, "",
                             {"page": os.path.splitext(os.path.basename(f))[0].replace("~", " > "), **(d if isinstance(d, dict) else {"value": d})}))
+    if "label" in rd:
+        k, pat = rd["label"].split("=", 1)
+        def site(label, o):
+            m = re.search(pat, str(o.get(k, ""))) if isinstance(o, dict) else None
+            return (next((g for g in m.groups() if g), m.group(0)) if m.groups() else m.group(0)) if m else label
+        out = [(site(label, o), f, ln, ptr, o) for label, f, ln, ptr, o in out]
+    if "prune" in rd or "wrap" in rd:
+        keys, wrap = set(rd.get("prune", "").split(",")) - {""}, set(rd.get("wrap", "").split(",")) - {""}
+        out = [(label, f, ln, ptr, pruned(o, keys, wrap)) for label, f, ln, ptr, o in out]
+    if "pick" in rd:
+        nxt = []
+        for label, f, ln, ptr, o in out:
+            got, at = {}, []
+            for p in rd["pick"].split(","):
+                v = o
+                for step in p.split("/"):
+                    v = v.get(step) if isinstance(v, dict) else None
+                if v not in (None, "", [], {}):
+                    got[p.split("/")[-1]] = v
+                    at.append(f"{ptr}/{p}")
+            if says_something(got):
+                nxt.append((label, f, ln, " + ".join(at), got))
+            nxt.append((label, f, ln, ptr, o))
+        out = nxt
     if "dict" in rd:
         nxt = []
         for label, f, ln, ptr, o in out:
@@ -275,7 +351,7 @@ def items_of(platform, structure, rs):
         keys = set(rd["nested"].split(","))
         nxt = []
         for label, f, ln, ptr, o in out:
-            fl = flatten(o, keys)
+            fl = flatten(o, keys, (), tuple(rd.get("name", "").split(",")) if rd.get("name") else ())
             # an item the platform names (its name, title or label) is an entry of its own, without its lists, before
             # its elements: Salla's navigation sections, with their permissions, had none (SA-20's check)
             if fl and isinstance(o, dict) and any(o.get(k) and isinstance(o.get(k), (str, dict)) for k in ("name", "title", "label")):
@@ -285,6 +361,18 @@ def items_of(platform, structure, rs):
     if "new-vs" in rd:
         old = {name_of(o) for _, _, _, _, o in items_of(platform, rd["new-vs"], [])}
         out = [x for x in out if name_of(x[4]) not in old]
+    if "merge" in rd:
+        k, nxt, at = rd["merge"], [], {}
+        for label, f, ln, ptr, o in out:
+            v = o.get(k) if isinstance(o, dict) else None
+            if not isinstance(v, (str, int)) or isinstance(v, bool) or str(v).strip() == "":
+                nxt.append((label, f, ln, ptr, o))
+            elif (label, f, ln, v) in at:
+                merged(at[(label, f, ln, v)], o)
+            else:
+                at[(label, f, ln, v)] = dict(o)
+                nxt.append((label, f, ln, ptr, at[(label, f, ln, v)]))
+        out = nxt
     if "where" in rd:
         k, op, vals = re.match(r"^([^=!]+)(!?=)(.*)$", rd["where"]).groups()
         if op == "!=":
@@ -294,6 +382,40 @@ def items_of(platform, structure, rs):
             out = [x for x in out if isinstance(x[4], dict) and str(x[4].get(k, "")) in vs]
     if "labels" in rd:
         out = [x for x in out if re.search(rd["labels"], x[0])]
+    if "latest" in rd:
+        def version(label):
+            v = label.rsplit("@", 1)[-1]
+            main, _, pre = v.partition("-")
+            nums = lambda s: tuple(int(x) if x.isdigit() else -1 for x in re.split(r"[.]", s) if x)
+            return (nums(main), 0 if pre else 1, nums(pre))
+        ks = rd["latest"].split(",")
+        def what(o):
+            return next(((k, str(o[k])) for k in ks if isinstance(o, dict) and str(o.get(k) or "").strip()), None)
+        drop = set(rd.get("drop", "").split(",")) - {""}
+        best = {}
+        for x in out:
+            w = what(x[4])
+            if w and (w not in best or version(x[0]) > version(best[w][0])):
+                best[w] = (x[0], fold(render(x[4], drop)))
+        # an earlier version that states it in the same words stays, so its label and a citation of it still count
+        out = [x for x in out if not what(x[4]) or fold(render(x[4], drop)) == best[what(x[4])][1]]
+    if "group" in rd:
+        k, vals = rd["group"].split("=", 1)
+        starts, _, heads = vals.partition("/")
+        starts, heads = set(starts.split("|")), set(heads.split("|")) - {""}
+        nxt, cur, head = [], None, {}
+        for label, f, ln, ptr, o in out:
+            v = str(o.get(k, "")) if isinstance(o, dict) else ""
+            if v in heads:
+                head[(label, f)] = str(o.get("text") or name_of(o)).strip()
+                nxt.append((label, f, ln, ptr, o))
+                cur = None
+            elif v in starts or cur is None or cur[0] != (label, f):
+                cur = ((label, f), {**({"within": head[(label, f)]} if head.get((label, f)) else {}), **o})
+                nxt.append((label, f, ln, ptr, cur[1]))
+            else:
+                cur[1].setdefault("then", []).append(o)
+        out = nxt
     if "meta" in rd:
         # What the platform states beside its items, which the extractor kept in meta.json (BigCommerce's plan prices
         # above its plan table): one entry per value of each named key, at its JSON pointer.
@@ -565,7 +687,7 @@ def cmd_build(a):
                     strings_of(o, unread_strings, drop)
                 f, ln, ptr = g["at"]
                 n_entries += 1
-                if len(g["text"]) > MAX_TEXT:
+                if len(g["text"]) > int(rd.get("long") or MAX_TEXT):
                     report.append(f"PROBLEM {p} {r['structure']}: an entry of {len(g['text'])} characters holds a list: give the structure a nested: rule ({clip(g['text'], 120)})")
                     failed = True
                 text_all.append(fold(g["text"]))

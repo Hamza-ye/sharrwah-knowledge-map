@@ -71,6 +71,16 @@ The rules marked (M-n) or (ruling) are the coordinator's, on cases B-extent.md l
 
        A feature's `released` and `enabled` can differ by store, as `paypal` does. Read each store's value in its label, and a feature that no store has released is `shows` (SA-32's rule 6).
      - A `parent` or `within` that is still a number is the `position` of an item with no name of its own: an Android layout node, whose screen is its label, or a route whose path is a constant (Salla's `parent: 2388`, a route at `T.inventoryTransfer`). Find the item by that `position` in the same `items.jsonl`.
+     - A nested entry's `within` can name its parent twice ('Basic > Basic'). This is a fault of the build, kept so that placed entries keep their ids: read the name once.
+     - **Shopify's Editions:**
+       - An entry of `editions-page-data` is one feature of one edition. Its page (the edition) and section are in `within`, and its dialog's text is the feature's own description.
+       - `editions` holds fall 2026 only, from the rendered page: a feature's heading with the paragraph and links under it.
+       - A feature is the platform's announcement, read as the brief reads a changelog post (rule 2's titles and posts). Its edition goes in `reading`.
+     - **Shopify's `merchant-changelog`:** an entry is one post (`@posts`), with its date, type tags and area. A post states what changed on its date, so the date goes in `reading` with any release marker. A post that retires or replaces a feature says so in `reading`.
+     - **Shopify's `pricing-page-data`:** an entry's labels are the country sites that state it in those words. The held pass reads the 18 English-language sites and the 3 Arabic ones (`selection.tsv`).
+       - A line that every read site of its page states takes no scope. A line that only some state takes those sites as its scope, in the labels' words (`www.shopify.com/uk`).
+       - A page's `pricing` entry states its prices, its trial and the variant it was served. Its prices are qualities of the plans' cell, with the site as their scope.
+       - The comparison table's rows differ by site (103 rows on `www.shopify.com`, fewer elsewhere). A row's absence from a site is not a statement: place each row by what it states.
 2. **Place it**, one of three:
    - **`capability`:** the model's capability whose thing the entry is. Name one cap_id.
      - **Search for its place first.** Before you place a section, a route or a setting, search the model for its own place (such as "Settings > API and MCP > MCP") and its address, where its own identifier (a route id, a path, a key) gave no lead. Where another capability's cell already cites that place, the entry is that capability's.
