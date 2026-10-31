@@ -66,3 +66,12 @@ One section, 'General Settings' / 'الاعدادات العامة', with three 
 - **Apostrophes:** as SA-44 did, I wrote ’ in prose, so that each ' … ' in a reading is a quote, and quoted no string that holds an ASCII apostrophe.
 
 The checker’s last line, for SA-45: `80 of 80 entries placed; 0 problems` (after this file was written).
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **CM-MKT-008 gains `core`, and it stands.** The widgets 'Order sources' and 'Ad campaign performance' credit orders to their sources and paid campaigns, as the ruling after SA-25 reads Order Source. It is the one exception to 'a report kind stays with the reports', since the widget's words state the attribution itself.
+- **The report builder stays on CM-ANL-002.** Salla puts it under Store performance ('Store performance | Create report'), but a report the merchant composes is a report. SA-29 keeps Store performance's own tabs on CM-ANL-003. SA-46 and SA-47 keep to this batch's lines.
+- **The gates `charity` and `t1`** stay as scope, with what they mean not stated.
+- **The market tooltip** stays in `reading`: a widget shown where the store has `multi-countries` states nothing of markets itself.
+- **App Widget's second line,** `extension-point` on CM-ANL-006, stands: widgets published by an app, with the maker a gap.
+- **Cost:** 9.6 million tokens over 56 requests, about 120,000 an entry. One cell changes, CM-MKT-008, as SA-25's already does.
