@@ -220,7 +220,35 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - `show` prints each route entry's items, their bundle record and the code at their path: SA-11 cost 262,000 tokens an entry, SA-12 91,000 with it;
       - the build keeps a nested list's named parents, which adds 21 Salla entries to batches not yet run;
       - the quote test opens `.jsonl` files and paths with `@`.
-    - **Running:** SA-14, SA-23, SA-28 and SA-37.
+    - **Running at 00:50:** SA-14, SA-23, SA-28 and SA-37, all checked since.
+  - **Since 00:50 UTC on 31 October, to about 03:10:**
+    - **Salla:** SA-1 to SA-42 and SA-44 to SA-48 are placed and checked.
+      - Rulings since:
+        - things a page names only in a list take no line;
+        - a second line follows the page, not the link's words;
+        - a portal permission is a gate on the user, so SA-30's three group lines that rested on one are dropped.
+      - The settings centre is rebuilt with `nodes:section`. Each entry now carries its section's answer: links, gates, plan gates, controls and options. A setting held in each store's answer is one entry, so the centre has 715 entries, not 1,298. SA-48 is re-keyed, and SA-49 to SA-57 are cut again.
+    - **Shopify's selection** for the founder's eight new kinds of evidence:
+      - Editions from each page's data;
+      - every merchant changelog post;
+      - pricing on the 18 English-language and 3 Arabic sites, since the other 40 state the same lines in their own languages, as measured;
+      - the CLI and extension targets in their latest words.
+
+      Shopify has 10,286 entries in 103 batches. A structure of 300 entries or more has batches of its own (`batches --alone 300`), and its later batches run side by side once its first is checked.
+    - **Tools:**
+      - `held_entries.py earlier` prints the lines earlier batches gave an entry's own keys;
+      - the rules `files:`, `label:`, `prune:`, `wrap:`, `pick:`, `name:`, `merge:`, `latest:`, `group:`, `long:` and `nodes:`;
+      - the quote test reads Arabic vowel marks.
+    - **The projection, re-measured at about 02:45** (method report, section 18): about 2,360 million spent and 11,110 entries left, so the extent is about 4.0 to 5.0 billion.
+    - **Running:**
+      - SA-43, the rest of the portal's menus;
+      - SA-49, the settings centre after Orders and Products;
+      - SH-8, the admin router's first batch;
+      - SH-34, the changelog's first.
+    - **Next:**
+      - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
+      - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
+      - then the new things, decided across platforms, and the amendments.
   - **The projection, re-measured at about 23:45 UTC** (method report, section 18): about 1,690 million spent; 12,846 entries left, Salla's 5,232 and Shopify's 7,614; the extent about 3.3 to 4.5 billion. Salla's lists cost 45,000 to 156,000 an entry and, after SA-1, change almost no cell, and the coordinator's checks cost about a third of the agents' tokens at this context. The work goes on, re-planned to cost less, by the founder's standing decision of 27 October.
   - **Found on the way:** BigCommerce's `settings-list` structure pairs each section with the next one's address, and its source step holds the right ones (handoff H-009). Its `contracting-entities` holds 5 of its page's 7 rows; the concern map holds the other two, so no cell loses them. Zid's page index holds 119 of its source's 137 pages: the routes of the others are in the route manifest, but their titles are not, the charity store's among them, and the second stage reads them for the cells that hold nothing (`evidence-map.md`).
 - **Domain C's notes from D, now settled:** C's anchor landed Shopify's and Salla's abandoned checkouts and carts in CM-CHK-007, beside D's CM-MKT-022, recovery: the merge flags them as `one capability?` for the final review. SH-S-0097, Shopify's PCI responsibility, stays `core` in A's CM-TRU-018, and no C cell cites it.

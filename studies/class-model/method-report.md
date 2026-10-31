@@ -368,12 +368,13 @@ No higher plan is needed so far: no agent has been stopped by the usage limit.
 | Item | Million tokens |
 | --- | --- |
 | Spent, by about 02:45 UTC: about 1,690 at 23:45 and 669 since | about 2,360 |
-| The held pass's other 11,693 entries (Shopify's 10,286; Salla's 1,407 after SA-48), at 90,000 to 140,000 an entry | 1,050 to 1,640 |
+| The held pass's other 11,110 entries (Shopify's 10,286; Salla's 824 after SA-48, its settings centre rebuilt from 1,298 entries to 715), at 90,000 to 140,000 an entry | 1,000 to 1,560 |
 | The coordinator's checks of those batches: 20 to 30 percent of the agents' tokens (28 percent since 23:45) | 210 to 490 |
 | The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
-| **The extent, in all** | **about 4.0 to 5.1 billion** |
+| **The extent, in all** | **about 4.0 to 5.0 billion** |
 
 **Re-planned to cost less:**
+- **The settings centre rebuilt:** each entry carries what its section's answer states beside it, and a setting held in each store's answer is one entry. That is 583 fewer entries, and none of them needs its section's body read. SA-48 cost 455,000 an entry reading those bodies.
 - **Pricing on 21 sites, not 61:** about 7,200 entries are not read, the same lines in other languages, about 650 million to 1 billion tokens.
 - **One lookup of earlier lines:** `held_entries.py earlier` prints, for a chunk of entries, the lines earlier batches gave the same address, route or label, in one call. SA-19 and SA-42 spent most of their requests on these lookups.
 - **A large structure's batches side by side:** once its first batch is checked, its other batches run in parallel, each keeping to the first batch's rules, and the coordinator aligns them at its checks. This saves hours, not tokens.
