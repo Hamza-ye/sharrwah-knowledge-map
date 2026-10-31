@@ -110,7 +110,8 @@ The Editions digest's table, with the changelog's additions; each app's plan lin
 | Shopify Balance | `core`, the admin's own account | not a separate product |
 | Customer View app | `core`, part of POS (check SH-38) | not a separate app |
 | Pixel Helper | `core`, opened from the admin's Customer events (check SH-58) | SH-E-0a66f16d names its maker; a built-in tool, not a separate product |
-| Forms, Marketplace Connect, Order Printer, Privacy & Compliance, Launch Check, SimGym, Product Network, Google & YouTube, Shopify Capital | `core` by what the post shows, the maker a gap (rule 13; SH-35) | none held |
+| Forms, Marketplace Connect, Order Printer, Privacy & Compliance, Launch Check, SimGym, Product Network, Shopify Capital | `core` by what the post shows, the maker a gap (rule 13; SH-35) | none held |
+| Google & YouTube app | its channel `extension-point`, YouTube or Google the venue (filler); the admin's Publishing section `core` | none held; the Editions' and SH-39's lines (the check after SH-42) |
 | Bill Pay | `core` at `finances/billpay`, `shows` at `apps/bill-pay` | none held |
 
 The Editions also hold a maker statement for Shopify Lending (SH-E-797024ee). Managed Markets is `core`, Global-e `outside` (rule 39), and POS Terminal `own-service` on every line (the row above). `held_entries.py makers --platform shopify NAME …` settles any other app, such as Oberlo or Shopify Chat.
@@ -130,3 +131,21 @@ The Editions' other new things keep their names (Editions digest). Batches wrote
 ## 5. Where to look for more
 
 Each batch's notes (`shopify/notes-SH-34.md` to `notes-SH-41.md`) hold the cases behind its rules and its open entries, and `review-H-rulings.md` each ruling in full; read them only where a case is needed. The notes also hold the rules left out here, on what no remaining post has: title-only posts, Sidekick, quick sale, Collective, Stocky, store credit, headless storefronts.
+
+## 6. Rules added since the digest, as the coordinator kept them
+
+From SH-42 (its notes give the cases):
+- **C42.1:** a post making Shopify Payments available in a country is CM-PAY-002 `core`, scoped to the country, and each local method it names CM-PAY-017 `core`, the method its filler.
+- **C42.2:** Payments for POS on a card reader takes CM-PAY-021 `core`, CM-POS-002 `own-service` and CM-POS-001 `core`.
+- **C42.3:** an API field, object or topic is `core` on its feature's capability, `extension-point` where its words say apps do the work.
+- **C42.4:** an API version's support notice is CM-API-006 `core`; the breaking changes it lists take no line.
+- **C42.5:** the admin's own address is its frame and takes no line; embedded apps that must update take CM-APP-007 `extension-point`.
+- **C42.6:** a first-party app's launch post takes CM-APP-011 and an `own-service` line for each feature it names.
+- **C42.7:** analytics an app gives about its own feature are CM-ANL-001 `own-service`.
+- **C42.8:** a country's subdivisions added to shipping zones take CM-SHP-001, CM-MKS-009, CM-CUS-008 and CM-CHK-001.
+- **C42.9:** SCIM provisioning: the roles are CM-STF-002 `core`, the identity providers that assign them `extension-point`, and their fillers.
+- **C42.10:** a capability's note governs over a shared word: a draft order's invoice email is CM-ORD-005.
+- **A third party that syncs the store's data from its own admin, through the platform's sign-in, is `extension-point`**, as QuickBooks with Shopify Balance (the check after SH-42; B-extent).
+
+The next batches number their rules C43.1 and on, by batch.
+

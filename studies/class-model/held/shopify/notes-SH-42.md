@@ -58,3 +58,19 @@ Each entry's text agreed with its post as `show` printed it; I found no item tha
 ## Problems with the brief or the script
 
 None with the script. The digest's rule 7 says a learn-more link isn't read, and I read one (above). It is named here so that the coordinator can drop it.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 130 of 130 entries, no problem.
+- **Two lines corrected,** both decided against the sources:
+  - **Balance with QuickBooks (line 3):** `extension-point`, not `core`. The held help page has QuickBooks Online make the connection from its own admin, through the merchant's Shopify sign-in and a list of their Balance accounts (lines 7 to 14). The cell already holds `extension-point`, so it doesn't change.
+  - **YouTube through the Google app (line 205):** `extension-point`. Six lines of the Editions and of SH-39 read the same channel as 'a sales channel through an app', and the app's maker isn't held. SH-35's line on the same app is aligned too: `core;extension-point`, its Publishing section the admin's own.
+
+  The digest's table is corrected to match.
+- **The other `CHANGES` stand,** each on the digest's table or rules. Among them:
+  - Translate & Adapt's content by market is CM-MKS-001 `own-service`, since the app provides per-market versions of the content (the ruling after SH-57), and adapting content isn't CM-MKS-008's translation.
+  - SCIM's providers are `extension-point` (C42.9).
+  - SMS partners in place of Shopify's own SMS are CM-NTF-004 `extension-point`.
+- **The rules C42.1 to C42.10 stand** and join the digest's section 6.
+- **The new things** keep their names. Staff sales attribution's support is decided with the thing.
+- **Cost:** 19.8 million tokens over 84 requests, about 152,000 an entry, against SH-41's 189,000 before the digest. The context reached about 429,000 tokens.
