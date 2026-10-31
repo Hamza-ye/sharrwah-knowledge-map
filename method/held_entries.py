@@ -1195,7 +1195,8 @@ def cmd_show(a):
 
 # earlier: an entry's own keys, looked up in the platform's other batches' readings and terms
 EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path|to): (/[^\s;,\]}]*)")
-EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,:-]{3,})|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
+# a key is a whole value: an ARIA name's first word ('Add' of 'Add your first product') is no key (SH-1)
+EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,:-]{3,})(?=\s*(?:[;}\]|]|$))|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
 EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
 EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|heading|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
 
@@ -1339,11 +1340,14 @@ def structure_text(platform, structure, cache={}):
     base = folder(platform, structure)
     paths = [f for f in glob.glob(os.path.join(base, "**", "*"), recursive=True)
              if os.path.isfile(f) and (os.path.basename(f).startswith("source") or f.endswith((".jsonl", ".txt")))]
+    titles = []
     for m in glob.glob(os.path.join(base, "**", "meta.json"), recursive=True):
         try:
             src = json.load(open(m, encoding="utf-8")).get("source") or {}
         except Exception:
             continue
+        if isinstance(src, dict) and isinstance(src.get("title"), str):
+            titles.append(quote_norm(src["title"]))     # the page's own title, as the capture held it (SH-1)
         for k in ("held_as", "answer"):
             v = src.get(k) if isinstance(src, dict) else None
             if isinstance(v, str):
@@ -1353,7 +1357,7 @@ def structure_text(platform, structure, cache={}):
     for f in dict.fromkeys(paths):
         if os.path.isfile(f) and os.path.getsize(f) < 30_000_000:
             out.append(quote_norm(open(f, encoding="utf-8", errors="replace").read()))
-    cache[(platform, structure)] = "\n".join(out)
+    cache[(platform, structure)] = "\n".join(out + titles)
     return cache[(platform, structure)]
 
 

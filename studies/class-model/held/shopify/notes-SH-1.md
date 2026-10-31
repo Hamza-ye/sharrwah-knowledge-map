@@ -77,7 +77,11 @@ No batch had placed these two structures before. **SH-2 hasn't run.** It holds t
 
 - **CM-ONB-004 holds nothing, and becomes held, `core`** (54 lines). Its reading said no statement showed 'steps or a checklist the admin gives a new store'. This structure is that checklist: the Home's setup tasks and guides, the tasks' progress ('N of M tasks completed', 'Next task'), the Home feed holding them and the onboarding status indicator. The cell's own note names Shopify's 'home setup'. Each line rests on a card the platform shows in its own admin, so it is `core`.
 - **CM-MIG-005, from `not-stated` to `core`** (6 lines). The migration guide 'Complete your migration to Shopify' reads 'Import your remaining data from your previous platform, including customers and orders. Then, connect your domain to your new Shopify store.' It has 6 tasks on the Plus store and 5 on the trial store, whose next task is 'Import your orders'. It is Shopify's own guide in its admin for moving a store from another platform. CM-MIG-001 keeps the imports, and CM-SFR-008 keeps the domain.
-- **CM-RET-004: no change, by the checker.** `cells` prints its Shopify cell as 'placed core' while its reading says 'shows only … (derived not-stated)'. My lines put Shopify's own guide for the EU right of withdrawal there as `core` (SH-E-bec81020, SH-E-28bb0660, SH-E-7e9da2b2), and its help link and requirements as `shows`. If the cell is in fact `not-stated`, these lines change it: read them with that in mind. The guide's five tasks aren't held, so whether Shopify takes the buyer's withdrawal request itself, which is the capability's thing, isn't stated. What is held is the guide and its action, the Policies settings' new return and cancellation rule.
+- **CM-RET-004: no change.** Its Shopify cell is `core` already: `land_points.py cell CM-RET-004 shopify` shows the coordinator's row from the subjects' points, S02-SH-492, which is Managed Markets' right of withdrawal feature, at Settings > Customer accounts, for the EU. Only the cell's `reading` text is stale, since it still says 'shows only'. My lines add a second place of Shopify's own:
+  - `core`: its guide for the EU right of withdrawal on the Home (SH-E-bec81020, SH-E-28bb0660, SH-E-7e9da2b2);
+  - `shows`: its help link and the requirements it names.
+
+  The guide's five tasks aren't held, so whether Shopify takes the buyer's withdrawal request itself, which is the capability's thing, isn't stated. What is held is the guide and its action, the Policies settings' new return and cancellation rule (CM-CNT-008).
 
 ## Entries I couldn't tell, and what would settle each
 
@@ -115,5 +119,21 @@ Their texts are held in their parts' entries, so no cell loses a thing. The extr
 
 - **The `earlier` lookup matches on an entry's first word** (its key `name`): Add, Set, Get, Review, Choose and the like. In this structure that word is a verb, and its lines ('Add' on POS, 'Get' on Flow) are no lead. I filtered them out. Only 'Home feed' (a label), 'Voice', 'Live', 'Fulfill' and 'Select' gave a lead.
 - **The checker's quote test doesn't read a structure's `meta.json`.** The account page's title, Shopify account profile, is held there (`source.title`), so I wrote it without quotes.
-- **`cells` prints CM-RET-004's Shopify cell as 'placed core'** while its reading says it supports no placement. One of the two is stale.
+- **CM-RET-004's Shopify `reading` says 'shows only'** while its rows hold a `core` from the subjects' points (S02-SH-492). The reading is stale, and `cells` prints both.
 - Nothing in this brief read differently from B-extent.md for these entries.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 130 of 130 entries, no problem.
+- **The cell changes stand, each read again:**
+  - CM-ONB-004 is held, `core`, by 54 lines. Its reading looked for 'steps or a checklist the admin gives a new store', and its note names Shopify's 'home setup': the Home's setup tasks and guides are that checklist.
+  - CM-MIG-005 gains `core` from the Home's guide 'Complete your migration to Shopify', the admin's own guide for moving a store from another platform. CM-MIG-001 keeps the imports. The paid store's prompt 'Install a migration app' is a lead for an `extension-point` line, in the second stage.
+- **A1 and H1 to H15 stand for SH-2.**
+- **`new:sales events` stays `shows`.** It has no place of its own, as the brief has it. It is decided with the other new things.
+- **The Digital Products app stays `shows`,** since no held statement names its maker.
+- **The tools:**
+  - `held_entries.py earlier` takes a name only as a whole value, so an ARIA name's first word is no longer a key;
+  - the quote test reads a page's title from its `meta.json`, so line 2 now quotes 'Shopify account profile'.
+- **The Home's dropped ARIA lines** are in `evidence-map.md`.
+- **CM-RET-004's Shopify reading** still says 'shows only', while its rows hold a `core` from S02-SH-492. It is read again at Shopify's amendment.
+- **Cost:** 13.6 million tokens over 67 requests, about 105,000 an entry. The context reached about 332,000 tokens.
