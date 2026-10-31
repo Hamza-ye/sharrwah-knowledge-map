@@ -83,9 +83,9 @@ SA-17	salla	80	dashboard-features,dashboard-main-navigation
 SA-18	salla	85	dashboard-main-navigation
 SA-19	salla	86	dashboard-main-navigation,dashboard-menu-marketing,dashboard-menu-orders,dashboard-menu-products
 SA-20	salla	82	dashboard-menu-reports,dashboard-menu-store-channels,dashboard-nav
-SA-21	salla	80	dashboard-nav,dashboard-nav-segments
+SA-21	salla	85	dashboard-nav,dashboard-nav-segments
 SA-22	salla	80	dashboard-nav-segments
-SA-23	salla	127	dashboard-nav-segments,dashboard-quick-actions,dashboard-restrictions,dashboard-settings-menu,dashboard-staff-roles,dashboard-webhook-events
+SA-23	salla	132	dashboard-nav-segments,dashboard-quick-actions,dashboard-restrictions,dashboard-settings-menu,dashboard-staff-roles,dashboard-webhook-events
 SA-24	salla	130	design-page-types,design-settings,docs-event-lists
 SA-25	salla	102	docs-event-lists,docs-navigation,docs-sidebar,expert-service-categories,export-columns
 SA-26	salla	94	export-columns,importer-schema-fields,importer-schemas,invoice-settings
@@ -101,9 +101,9 @@ SA-35	salla	129	portal-app-routes
 SA-36	salla	130	portal-app-routes
 SA-37	salla	130	portal-app-routes
 SA-38	salla	81	portal-app-routes
-SA-39	salla	80	portal-app-routes,portal-apps,portal-help-center-article
+SA-39	salla	86	portal-app-routes,portal-apps,portal-help-center-article
 SA-40	salla	81	portal-help-center-article
-SA-41	salla	80	portal-help-center-article,portal-help-center-resource
+SA-41	salla	85	portal-help-center-article,portal-help-center-resource
 SA-42	salla	130	portal-help-center-resource,portal-menu-definitions
 SA-43	salla	100	portal-menu-definitions
 SA-44	salla	88	portal-private-settings,portal-report-builder-tags,portal-report-builder-widgets

@@ -116,3 +116,20 @@ None. Every entry's thing is a capability the model holds, and the cells already
 - **The brief doesn't name the features list** among what may clarify an entry. Without it, a nav item's `feature` can't be read as released or not. SA-32 read it as a source of `plan-gates`. I read it to clarify `supports` only, and cite it in each reading.
 
 The checker's last line, for SA-20: `82 of 82 entries placed; 0 problems` (after this file was written).
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The navigation's five sections are entries now.** The nested rule had dropped every item that holds a list, so Orders, Products, Marketing, Store & Channels and Reports, with their permission lists, had none. The build now keeps an item the platform names (its name, title or label) as an entry of its own, without its lists (`method/held_entries.py`). Salla gains 21 entries:
+  - these five sections, added to SA-21;
+  - the restriction groups, added to SA-23;
+  - the partners' help centre's categories, added to SA-39;
+  - the resource sections, added to SA-41.
+
+  No placed structure gains or loses one. Shopify's Flow connectors gain three when Shopify is rebuilt after the founder's pushes.
+- **Reading the features list was right,** for whether a nav item's feature is released. The brief now names it among what may clarify an entry.
+- **The lines stand:**
+  - each item on the cell that cites its link;
+  - `shows` where its feature isn't released;
+  - its feature as scope and its permissions in `reading`;
+  - Sales Channels as a container on CM-CHN-001.
+- **Cost:** 8.9 million tokens over 52 requests, about 109,000 an entry. No cell changes.

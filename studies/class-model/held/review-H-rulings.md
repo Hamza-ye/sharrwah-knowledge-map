@@ -71,3 +71,7 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - 'Custom pricing that matches your needs' is 'رسوم دفع مرنة تدعم توسُّع أعمالك', the payment service's fees (CM-PAY-007).
 
   A thing that only one language names takes its own line, since either language is the platform's statement. An example is SA-4's 'multiple stores' and 'teams', which the Arabic card doesn't name.
+- **A category of the platform's services marketplace is CM-PTN-005's** (after SA-25). It is `extension-point` on CM-PTN-005, and `shows` on the capability whose work it names. Examples are Salla's Merchant Services and Shopify's Partner Directory.
+  - B-extent's "marketplace category" is a marketplace of apps, themes or extensions, which third parties plug into the platform.
+  - An expert hired for theme customization or product preparation does a person's service, with the platform's own tools.
+  - The four cells SA-25's categories would have given `extension-point` (CM-CAT-001, CM-CNT-008, CM-MKT-010, CM-SFR-002) keep their placement.

@@ -276,6 +276,10 @@ def items_of(platform, structure, rs):
         nxt = []
         for label, f, ln, ptr, o in out:
             fl = flatten(o, keys)
+            # an item the platform names (its name, title or label) is an entry of its own, without its lists, before
+            # its elements: Salla's navigation sections, with their permissions, had none (SA-20's check)
+            if fl and isinstance(o, dict) and any(o.get(k) and isinstance(o.get(k), (str, dict)) for k in ("name", "title", "label")):
+                nxt.append((label, f, ln, ptr, {k: v for k, v in o.items() if k not in keys}))
             nxt += [(label, f, ln, ptr + p, it) for it, p in fl] if fl else [(label, f, ln, ptr, o)]
         out = nxt
     if "new-vs" in rd:
@@ -990,7 +994,8 @@ def whole_text(platform, e, cache={}):
                         break
         cache[k] = out
     return cache[k]
-CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.-]+/)+[\w.-]+\.(?:json|jsonl|js|php|txt|tsv|html|yaml|md))")
+# a structure's label folder holds an @ (`ui-partners-portal-layout@prod`, `partner@en`), so a path segment may too
+CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.@-]+/)+[\w.@-]+\.(?:json|jsonl|js|php|txt|tsv|html|yaml|md))")
 STATEMENT_ID = re.compile(r"\b(SH|SA|WC|ZD|BC)-S-\d{4}\b")
 CITED_RECORD = re.compile(r"((?:[\w.-]+/)*[\w.-]+\.warc\.gz)@(\d+)")
 
