@@ -3,7 +3,7 @@
 **What this is:** an inspection, before it runs, of `briefs/S2-held.md`, its design `briefs/S2-held-design.md` with the coordinator's decisions and the plain words of the rulings `S2-R1` and `S2-R2`, the tool `method/s2_held.py`, and this stage's changes to `class_slice.py`, `held_entries.py`, `held_amend.py` and `q3_misses.py` (`git diff 0b5a37d0 3d0f032f -- method/`), as `PLAN.md`, section 3 asks. The inspector wrote none of them, and changed no file except this one.
 
 **What was read, and at which commits:**
-- The brief, the design and the tools at `3d0f032f`. None of them changed up to `843d118a`, while this inspection ran (nine commits, to `STATE.md`, the veto list, the architecture plan and `held/shopify/amendment-notes.md`).
+- The brief, the design and the tools at `3d0f032f`. None of them changed up to `0c1b3ad6`, while this inspection ran (ten commits, to `STATE.md`, the veto list, the architecture plan, `held/shopify/amendment-notes.md` and a draft of this file).
 - The evidence at observed-sh `04de369da`, observed-sa `b0bd0b163`, other-product-class `0d79b794f`, and WooCommerce's release 11.2.1.
 - Every test that writes ran on scratch copies of `studies/class-model` (`CLASS_MODEL_DIR`), with fixtures that cite real held files at those commits ("What I ran").
 
@@ -51,7 +51,7 @@ Severity: **must fix** means an agent following the brief would write wrong rows
   - Two real cases:
     - `corpus_search.py zid "suited to the Syrian market" --brief --max 3` printed `…/20261027T135846Z-s02-a2-sources-batch-4/items/002-zid.sa/text.txt`. The sentence 'We provide shipping and delivery solutions suited to the Syrian market through:' is in that item's `expanded.txt`, line 2. `quote_check.py` on `text.txt`: "not found; 0.00 of its six-word runs"; on `expanded.txt`: "found". The checker refused the `text.txt` citation and passed the `expanded.txt` one.
     - The Zid search for `ملفات تعريف الارتباط` printed `…/20261027T121854Z-s02-a2-sources-batch-3/items/016-zid.eg/raw (the page as served…)`. Cited at that path: "the source doesn't resolve: git show 3d0f032f6:…/016-zid.eg/raw failed". At `text.txt`: not found. At `raw.html`: found.
-  - How many captures this touches: 17 items hold an `expanded.txt` (9 of zid.sa, 5 of woocommerce.com, 3 of developer.woocommerce.com). 190 hold a `text.txt` of under 1,500 characters besides spaces, where `corpus_search.py` points to the raw page: 55 of help.zid.sa, 42 of docs.bigcommerce.com, 34 of zid.sa, 10 of help.shopify.com and others.
+  - How many captures this touches: 17 items hold an `expanded.txt` (9 of zid.sa, 5 of woocommerce.com, 3 of developer.woocommerce.com). 190 hold a `text.txt` of under 1,500 characters besides spaces: 55 of help.zid.sa, 42 of docs.bigcommerce.com, 34 of zid.sa, 10 of help.shopify.com and others. For such a page, unless another capture of its address rendered, `corpus_search.py` prints `text.txt (and the raw page beside it…)` (lines 339 to 344).
   - Neither the brief, the evidence map ("This repository's own evidence") nor `evidence/product-class/README.md` says which file of a capture holds what.
   - A reading: Zid runs first because it "exercises the most source forms in one part", this repository's captured help.zid.sa, docs.zid.sa and zid.sa pages among them (design, section 4). An agent following line 154 gets a refusal for a passage that is held, and may write `not-found` or `unclear` for it.
 - *Fix:*
@@ -64,7 +64,7 @@ Severity: **must fix** means an agent following the brief would write wrong rows
   - Zid's register, line 18: "Zid's other surfaces: help.zid.sa, docs.zid.sa, zid.sa, the app and theme markets, the mobile apps | not captured here; sharrwah-knowledge-map holds some of their pages". Lines 11 and 12 cover "The dashboard routes the ledger marks `not opened`" and "The routes whose path takes an id (… 112 of the manifest's 437)".
   - The fixture's `not-held` row citing only "zid/GAPS.md row 18" passed the checker.
   - What hangs on the split:
-    - every `not-held` row carries a capture lead, and `could_change` routes most of them to a handoff (S2I-11);
+    - every `not-held` row carries a capture lead, and by S2I-11's count `could_change` would send most of them to a handoff;
     - the omission review samples this stage's `not-found` rows (the coordinator's decision 9), so a cell written `not-held` leaves its sample.
   - A reading: on Zid, where help and docs are held only in part, one careful agent writes `not-found` (it searched what is held), another `not-held` (the help centre isn't captured). Both follow the brief.
 - *Fix:* replace the three cases with: "`not-held`: as `not-found`, and you name the place, by its address or row, where your platform would state the thing and that isn't held: a ledger row marked `not attempted` or `not opened`; a sitemap entry not captured; a held page's link to a page not held; or a `GAPS.md` row that names that place. A `GAPS.md` row that names a whole surface, such as `zid/GAPS.md`'s 'Zid's other surfaces', isn't enough: write `not-found`, with the row in `read`. That the named page would state the thing is an assumption: say so."
@@ -108,8 +108,8 @@ Severity: **must fix** means an agent following the brief would write wrong rows
 - *Found:*
   - `near_problem` takes `" ".join(loose(quote).split()[:5])` (line 272).
   - Zid's `mokafaa.json` holds 'Overview of customers’ points rule (earn & redeem).' at line 29 and 'Overview of customers’ points rule (earn & redeem) and your plan usage fees.' at line 74. The second, cited at `line 29`, passed the checker, as it did at `line 74`.
-  - Other pairs like it, far apart, in Zid's English locales alone: `analytics.json` lines 138 and 1083, `payments.json` 186 and 1217, `settings.json` 930 and 934.
-  - A reading: `held_entries.py check` runs the same test on a landed entry. The page then links a wrong line, and the coordinator reads the wrong place.
+  - Other pairs like it, far apart, in Zid's English locales alone: `analytics.json` lines 138 and 1083, `payments.json` 186 and 1217, `orders.json` 634 and 726.
+  - `held_entries.py check` runs the same test on a landed entry (it calls `source_problems`). A reading: the page then links a wrong line, and the coordinator reads the wrong place.
 - *Fix:* test that the whole quote, as `loose()` folds it, begins within the window, or that its first 12 words do (all of them where it is shorter). Message: "the quote begins at line M, not within three lines of N".
 
 **S2I-7. `line N` in `quote_check.py --text`'s output isn't the line the checker counts.**
@@ -151,7 +151,7 @@ Severity: **must fix** means an agent following the brief would write wrong rows
     - a `not-held` row with no Arabic search: no note;
     - `corpus_search arabic: باركود` and `corpus_search AR: باركود`: the note, though Arabic was searched.
   - The brief asks for every language the platform holds, "English, and Arabic too for Salla and Zid" (line 70). `not-held` is "as `not-found`" (line 86).
-- *Fix:* for Salla and Zid, note each `not-found`, `not-held` and `absent` row with no piece that names `corpus_search` and holds a term in Arabic script (`[؀-ۿ]`), whatever its label. Message: "no corpus_search in Arabic: the held pages' Arabic was not searched".
+- *Fix:* for Salla and Zid, note each `not-found`, `not-held` and `absent` row with no piece that names `corpus_search` and holds a term in Arabic script (U+0600 to U+06FF), whatever its label. Message: "no corpus_search in Arabic: the held pages' Arabic was not searched".
 
 **S2I-10. `searched`: the form of `nothing` isn't given, and a chunk's search recorded in each row would put other cells' terms in each cell's `searched` in the model.**
 - *Found:*
@@ -242,7 +242,7 @@ Severity: **must fix** means an agent following the brief would write wrong rows
   - Of Shopify's 16 group-1 leads, 6 set capabilities aside. WooCommerce's parts each have one.
   - The brief: "A lead is only a lead: what it says a file states, you read in the file" (line 22). That covers what a file states, not a held-pass agent's judgment that it isn't the thing.
   - The cut, as asked:
-    - Shopify: 16 leads name its cells, 256 name no capability (printed whole: 89,683 characters with group 1), 272 name only cells already held;
+    - Shopify: 16 leads name its cells, 256 name no capability (printed whole: 89,683 bytes with group 1), 272 name only cells already held;
     - Salla: `S2-SA-1` 4, 106 and 267, and `S2-SA-2` 5, 106 and 266. The 106 that name no capability print in both parts;
     - a run's label paragraph prints as a lead of its own, apart from its bullets, such as `notes-ZD-CH.md` line 85, "Run 20261028T150740Z-settings-gaps-en:". A bullet naming a held cell then prints in `--held` without its run. Its `batch:line` leads back to it.
 - *Fix:*
@@ -258,22 +258,24 @@ Severity: **must fix** means an agent following the brief would write wrong rows
   - In `cells`: "<platform>'s reading, from the concern map only:" and "the held pass on <platform> (leads for your search, never evidence for your platform):".
   - In the brief, line 84: add M-5's sentence.
 
-**S2I-19. The held pass's selection sends twelve structures to "the second stage". The brief names two, and one serves cells already held, which S2-R2 leaves out.**
+**S2I-19. Twelve rows of the held pass's selection send something to "the second stage". The brief names two of them, and one serves cells already held, which S2-R2 leaves out.**
 - *Found:*
-  - `held/selection.tsv` sends these to the second stage:
+  - `held/selection.tsv` sends these structures, which the held pass doesn't read, to the second stage:
     - Shopify's `dev-changelog`, `help-section-children` ("Help titles are read in the second stage, by cell, on every platform"), `status-page`, `legal-documents`, `compliance-reports` and `dev-mcp-instructions`;
     - Salla's `help-articles`, `help-tree`, `help-embedded-tree` and `marketplace-apps` ("third parties' listings … by cell in the second stage");
     - BigCommerce's `standard-formats`: "Read by the second stage for Q3's miss M-04 and the cells that need it".
-  - The brief names only the Help Center and Salla's help articles ("Where the held pages are").
+
+    The twelfth is a gap in one it reads, Shopify's `pricing-page-data`: "which of the 103 comparison rows each of those 40 sites lists (76 to 101, not matched across languages: a gap for the second stage)".
+  - The brief names only Shopify's Help Center pages and Salla's help articles ("Where the held pages are").
   - `compliance-reports`: "certifications, read as the qualities of the trust and payments cells in the second stage". CM-TRU-018 (PCI DSS) is held on Shopify (`core`), so S2-R2 puts it out of this stage.
-  - A reading: BigCommerce's formats are held as fields (`display_date_format`, `decimal_token`, `standard-formats/items.jsonl`). A search for "date format" listed no structure (`corpus_search.py bigcommerce "date format" "decimal separator" "thousands separator" --brief`).
+  - BigCommerce's formats are held as fields (`display_date_format`, `decimal_token`, in `standard-formats/items.jsonl`), and a search for "date format" listed no structure (`corpus_search.py bigcommerce "date format" "decimal separator" "thousands separator" --brief`). A reading: a search in the miss's words misses the structure the selection sends here.
 - *Fix:*
   - In "Where the held pages are", per platform: "and the structures `held/selection.tsv` sends to the second stage: <the list>, read where your cells or misses need them".
   - For `compliance-reports`: say in `STATE.md` who reads the held cells' qualities, since this stage doesn't.
 
 **S2I-20. The brief applies the rulings in `held/review-H-rulings.md` but doesn't list the file, and some of its leads for this stage are outside `leads`.**
 - *Found:*
-  - Line 31: "the rulings they name (M-1 to M-14, and the rulings in `held/review-H-rulings.md`) apply to it". The reading list (lines 15 to 41) doesn't include the file (37,842 characters).
+  - Line 31: "the rulings they name (M-1 to M-14, and the rulings in `held/review-H-rulings.md`) apply to it". The reading list (lines 15 to 41) doesn't include the file (37,842 bytes).
   - Its section "What the corrections leave for the second stage" (lines 36 to 43), and the lead "for CM-APP-011, the platform's own apps, which holds nothing on Salla. The App Store's listing is read with the second stage" (line 97), aren't in `notes-*.md`, the only files `leads` reads (line 392).
   - The two cells that section names are held now (CM-PLN-002 on BigCommerce, CM-SEL-007 on Zid). CM-APP-011 holds nothing on Salla.
 - *Fix:*
@@ -286,14 +288,15 @@ Severity: **must fix** means an agent following the brief would write wrong rows
     - A reading: stopping also drops what later passages state that isn't a support or a scope: a quality (a limit, a fee, a price), a slot filler (a provider, a law) and the platform's other terms. The model records those in `qualities.tsv` and `slot-fillers.tsv` (B-extent, "Qualities and slot fillers").
     - The brief puts two orders side by side: "Quote the passage that states it most plainly … a help page or an API reference over a title or a list entry" (line 82), then "Write first the passage that shows the strongest placement" (line 83).
   - **S2-R2** (line 369): "this stage reads only the cells that hold nothing. A passage that would correct a cell already held is noted, not placed, and the final review reads those notes. *What it risks:* such a correction waits for the final review, which reads by risk …".
-    - Its scope: 1,215 cells are held. 85 of them hold only `shows` or no placement that counts (`placed_as` `not-stated`: BigCommerce 20, Salla 12, Shopify 8, WooCommerce 29, Zid 16), and this stage never searches them. A passage for one is noted only if an agent meets it while reading another cell.
-    - Decision 7 has the notes read at the final review. Decision 1 has the leads naming held cells go to its selection by risk. The plain words say both.
+    - Its scope: 1,215 cells are held. 85 of them hold only `shows` or no placement that counts (`placed_as` `not-stated`: BigCommerce 20, Salla 12, Shopify 8, WooCommerce 29, Zid 16), and this stage never searches them. A reading: a passage for one is noted only if an agent meets it while reading another cell.
+    - The plain words say the final review "reads those notes", then that it "reads by risk, so one it doesn't select could stay uncorrected". Decision 7 says the first; decision 1 says the second, of the leads naming held cells. A reading: the founder can't tell whether every noted correction is read.
     - A miss's `found` row lands on the capability decided, held or not. That is the one place the stage adds to held cells.
     - The qualities the selection sends here for held cells fall out of the stage (S2I-19).
 - *Fix:*
   - S2-R1's risk: add "and the limits, fees, prices, providers and the platform's own terms that only a later passage states aren't collected". Make the rule "a support value, a scope, a quality or a slot filler not shown yet".
   - The brief's line 82: "the strongest placement first; among passages of one placement, the plainest".
   - S2-R2's plain words: "This stage doesn't search the 1,215 cells already held, among them 85 that hold only a mention (`shows`) or no placement that counts, whose count a held page could raise. A passage met by chance is noted for the final review, whose selection takes it by risk. Q3's misses are the exception: their passages land on the capability decided, held or not. Shopify's compliance reports, sent here for held cells' qualities, aren't read."
+  - The veto list reuses the design's text (`briefs/V-veto.md`, line 89: "Reuse that text, and keep its meaning"), in `reports/GM-rulings.md`, lines 1562 to 1576. Carry the corrected words there too.
 
 **S2I-22. A correction batch updates `s2-captures.tsv` but not `s2-outcomes.tsv` or the model, and nothing says which capture leads are new.**
 - *Found* (a copy, after `S2-ZD` was applied; `S2-ZD-1`'s rows corrected, `S2-ZD-2` added, then `land --batch S2-ZD-R1` and `apply`):
@@ -339,7 +342,7 @@ Severity: **must fix** means an agent following the brief would write wrong rows
 ## Notes
 
 - **S2I-26.** `cells --left` lists only the cells with no row (line 464), not a miss's parts. A fresh agent continuing a part wouldn't see which parts of its misses are left. Add them, as `M-nn: <part>`.
-- **S2I-27.** `corpus_search.py` prints this repository's `HEAD` (line 292), which moved nine times during this inspection. The checker refuses it with a clear message ("sharrwah-knowledge-map@02932549… is not a commit allowed here: the run fixed sharrwah-knowledge-map@3d0f032f6"). The brief could say so in "Sources and locators": "corpus_search prints the current commit: write the one your message names."
+- **S2I-27.** `corpus_search.py` prints this repository's `HEAD` (line 292), which moved ten times during this inspection. The checker refuses it with a clear message ("sharrwah-knowledge-map@02932549… is not a commit allowed here: the run fixed sharrwah-knowledge-map@3d0f032f6"). The brief could say so in "Sources and locators": "corpus_search prints the current commit: write the one your message names."
 - **S2I-28.** `PLAN.md`, section 3: "A rule it adds is marked as a ruling and listed for the founder's veto." The brief marks S2-R1 and S2-R2. It doesn't mark the rules the design lists for veto, or others the brief adds:
   - `not-held`'s three cases;
   - `unclear`;
@@ -349,25 +352,25 @@ Severity: **must fix** means an agent following the brief would write wrong rows
 - **S2I-29.** `held_amend.py` prints "check it with python3 -I method/check_class_part.py <part>". `check_class_part.py` takes the part's path (its usage: `studies/class-model/parts/<domain>-<part>`), and with the name alone it failed ("No such file or directory: 'A-zid/derived.tsv'"). The message predates this stage (`0b5a37d0`).
 - **S2I-30.** A cell that a correction batch makes held loses the earlier batch's outcome sentence and the concern map's reading. `apply` writes "Nothing in the concern map; …" over a cell holding nothing (`held_amend.py` line 271), as the held pass did. CM-CHK-012 on the copy: "Nothing in the concern map; the held pass's second stage (S2-ZD-R1) adds 1 shows …". The record of what was searched, at which commit, stays in `s2-outcomes.tsv` (S2I-22).
 - **S2I-31.** `held_amend.py`'s `searched` for a cell holding nothing keeps its pieces' language prefixes (`en: payment terms`), while the second stage's terms come bare. So 'payment terms' was added beside 'en: payment terms' on CM-PAY-008. It is harmless, and the cell's list grows.
-- **S2I-32.** For the record: the brief's guide sizes are right (observed-sh 53,247 characters, observed-sa 49,855, Zid 20,624, BigCommerce 18,953, WooCommerce 18,011). The part list matches the brief: 620 cells in 9 parts, 56, 51 and 35, 62 and 76, 75 and 86, 97 and 82.
+- **S2I-32.** For the record: the brief's guide sizes are right (by `wc -c`: observed-sh 53,247 bytes, observed-sa 49,855, Zid 20,624, BigCommerce 18,953, WooCommerce 18,011). The part list matches the brief: 620 cells in 9 parts, 56, 51 and 35, 62 and 76, 75 and 86, 97 and 82.
 
 ---
 
 ## What I ran
 
-All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. Everything that writes ran on copies of `studies/class-model` in `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/` (`studies/class-model`, `before/`, `colA/`, `colB/`), with `CLASS_MODEL_DIR` set and `studies/concern-map` linked beside each.
+All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. Everything that writes ran on copies of `studies/class-model` in `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/studies/class-model`, `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/before/`, `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/colA/` and `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/colB/`, with `CLASS_MODEL_DIR` set and `studies/concern-map` linked beside each.
 
 **The agents' side, on the real model (read only):**
-- `s2_held.py parts`; `leads --part P` and `leads --part P --held`, `cells --part P` and `misses --part P` for all nine parts. The outputs are in `…/S2-inspect/out/`.
+- `s2_held.py parts`; `leads --part P` and `leads --part P --held`, `cells --part P` and `misses --part P` for all nine parts. The outputs are in `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/out/`.
 - A count over the `cells` outputs: the cells with a Q3 row or a point, by result, and by kind.
 - `corpus_search.py` on Zid (`"3D Secure" "cookie" "ملفات تعريف الارتباط" "إكرامية" "بقشيش" "tip"`, and `"suited to the Syrian market"`) and on BigCommerce (`"date format" "decimal separator" "thousands separator"`), all with `--brief`.
 - `quote_check.py` and `quote_check.py --text` on captured pages (`text.txt`, `expanded.txt`, `raw`, `raw.html`, `rendered.html`), a Shopify HTML page, a Zid help page and a BigCommerce PDF save.
 - `class_slice.py search` and `caps --terms`.
 
 **The checker:**
-- The baseline is `…/S2-inspect/fx.py`.
-- The 72 one-fault variants are `…/S2-inspect/variants.py`, with their results in `…/S2-inspect/out/variants.txt`.
-- The markup cases are `…/S2-inspect/markup.py`, with their results in `…/S2-inspect/out/markup.txt`.
+- The baseline is `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/fx.py`.
+- The 72 one-fault variants are `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/variants.py`, with their results in `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/out/variants.txt`.
+- The markup cases are `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/markup.py`, with their results in `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/out/markup.txt`.
 
 **The coordinator's side:**
 - On the copy:
@@ -379,9 +382,9 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. Everything that
   - then the correction: `land --batch S2-ZD-R1`, `held_entries.py check`, `plan` and `apply`, `check_class_part.py` on C-amend, D-backfill-bigcommerce and D-zid, and the merge.
 - `misses-join --miss M-12`.
 - A second landing compared by md5.
-- The id collisions: `…/S2-inspect/collide.py A` (an id of `entries.tsv`) and `B` (a correction after an applied batch, `sha1` wrapped for one forced collision).
+- The id collisions: `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/collide.py A` (an id of `entries.tsv`) and `B` (a correction after an applied batch, `sha1` wrapped for one forced collision).
 - A miss decided against its proposal, and two rows giving one passage two supports, each landed on `colA`.
-- `km_page.py --out …/S2-inspect/out/km.html` on the amended copy, its merged files committed in a scratch repository at `…/S2-inspect`, and its data read for three citations and one reading.
+- `km_page.py --out /tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/out/km.html` on the amended copy, its merged files committed in a scratch repository at `/tmp/claude-0/-home-user/b5f6fd52-6a6c-57d7-8515-c0ac88ba557c/scratchpad/S2-inspect/`, and its data read for three citations and one reading.
 
 ## What I didn't check
 
@@ -389,6 +392,6 @@ All from `/home/user/sharrwah-knowledge-map`, with `python3 -I`. Everything that
 - I ran no agent on the brief, so its cost per row is not measured.
 - I didn't run a Shopify or Salla search, nor `--runs-only`, `held_index.py` or `schema_type.py`. The Shopify and Salla tests read their files directly.
 - I didn't check that each miss's parts cut its thing completely, beyond the three in S2I-16.
-- I read B-extent's sections the brief names, H-held's rules 4 and 5 with its "Rules", output and notes, and `review-H-rulings.md`'s second-stage section and one ruling, not the rest. I didn't read `STATE.md`.
+- I read `H-held.md` whole, B-extent's sections the brief names, and `review-H-rulings.md`'s second-stage section and one ruling, not the rest. I didn't read `STATE.md`.
 - I built the Knowledge Map's page and read its data, but didn't view it in a browser.
 - The collision's likelihood in S2I-23 is an assumption.
