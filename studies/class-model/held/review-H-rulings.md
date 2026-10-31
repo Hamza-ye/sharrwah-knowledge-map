@@ -75,3 +75,7 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - B-extent's "marketplace category" is a marketplace of apps, themes or extensions, which third parties plug into the platform.
   - An expert hired for theme customization or product preparation does a person's service, with the platform's own tools.
   - The four cells SA-25's categories would have given `extension-point` (CM-CAT-001, CM-CNT-008, CM-MKT-010, CM-SFR-002) keep their placement.
+- **An export's column or an importer's field is a field the platform keeps on its records** (after SA-25 and SA-26). It is `core` on the capability whose data it holds.
+  - An order's Order Source (`utm_source`) is CM-MKT-008's, as WooCommerce's Order Attribution keeps the same.
+  - A product's Cost Price (`cost_price`) is CM-CAT-012's, as WooCommerce's Cost of Goods Sold keeps the same.
+  - SA-25's rule E2 had made such a column `shows` on a capability whose thing its title names. Its lines on cells that are already `core` change nothing and stand.
