@@ -192,19 +192,49 @@ SETTINGS_SKIP = {"_", "$", "class", "className", "slot", "loading", "overlayAlig
                  "action", "method", "path", "permissions", "flag", "title"}
 
 
+def store_cond(c):
+    """A settings `if`'s condition as a gate on the store, in the answer's identifiers (a feature, the store's plan), or
+    None where it isn't one (a form's value, a query's state)."""
+    if not isinstance(c, dict):
+        return None
+    k, v = c.get("_"), c.get("$")
+    if k == "useFeature" and isinstance(v, list) and v and all(isinstance(x, str) for x in v):
+        return " and ".join(v)
+    if k == "not":
+        inner = store_cond(v)
+        return f"not {inner}" if inner else None
+    if (k in ("eq", "neq") and isinstance(v, list) and len(v) == 2 and isinstance(v[0], dict)
+            and v[0].get("_") == "getStorePlan" and isinstance(v[1], str)):
+        return f"plan {'' if k == 'eq' else 'not '}{v[1]}"
+    if k in ("and", "or") and isinstance(v, list):
+        parts = [store_cond(x) for x in v if x is not None]
+        if k == "or":
+            return " or ".join(parts) if parts and all(parts) else None
+        parts = [x for x in parts if x]
+        return " and ".join(parts) if parts else None
+    return None
+
+
 def settings_nodes(path, cache={}):
-    """A settings section's answer: its s: nodes in document order, the order the structure's items list them in."""
+    """A settings section's answer: its s: nodes in document order, the order the structure's items list them in,
+    each with the store gates of the `if`s it sits under (an `else` under the condition's negation, SA-50's T2)."""
     if path not in cache:
         seq = []
-        def walk(o):
+        def walk(o, conds=()):
             if isinstance(o, dict):
                 if isinstance(o.get("_"), str) and o["_"].startswith("s:"):
-                    seq.append(o)
-                for v in o.values():
-                    walk(v)
+                    seq.append((o, conds))
+                c = store_cond(o.get("condition")) if o.get("_") == "if" else None
+                for kk, v in o.items():
+                    if c and kk == "else":
+                        walk(v, conds + (f"not ({c})" if " " in c else f"not {c}",))
+                    elif c and kk != "condition":
+                        walk(v, conds + (c,))
+                    else:
+                        walk(v, conds)
             elif isinstance(o, list):
                 for v in o:
-                    walk(v)
+                    walk(v, conds)
         try:
             walk(json.load(open(path, encoding="utf-8")))
         except Exception:
@@ -384,10 +414,12 @@ def items_of(platform, structure, rs):
                         continue
                     seq = settings_nodes(os.path.join(os.path.dirname(f), sec.replace("/", "~") + ".json"))
                     i = k_of[sec]; k_of[sec] += 1
-                    node = seq[i] if i < len(seq) else None
+                    node, conds = seq[i] if i < len(seq) else (None, ())
                     if node is None or node.get("_") != o.get("kind"):
                         off[sec] += 1
                         continue
+                    if conds and not o.get("if"):
+                        o["if"] = " and ".join(dict.fromkeys(conds))
                     own = {v.get("$") for v in (node.get("label"), node.get("description")) if isinstance(v, dict) and v.get("_") == "t"}
                     for kk, vv in settings_extra(node, own).items():
                         if o.get(kk) in (None, "", [], {}):
