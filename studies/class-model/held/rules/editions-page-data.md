@@ -134,3 +134,30 @@ Batches wrote different supports for Staff sales attribution, Saved views, Admin
 ## 5. Where to look for more
 
 Each batch's notes (`shopify/notes-SH-50.md` to `notes-SH-57.md`) hold the cases behind its rules, the cases left open and the leads no line takes, and `review-H-rulings.md` holds each ruling in full. Read a batch's notes only where a case is needed.
+
+## 6. Rules added since the digest, as the coordinator kept them
+
+From SH-58 (its notes give the cases):
+- **E59:** a Top 10 card repeats a card placed elsewhere and takes its twin's lines, matched by words where the handles differ.
+- **E60:** a component's own feature takes its capability, `own-service`, scoped by the component (the ruling after SH-57).
+- **E61:** a feature told twice, by a merchant card and a developer card, takes the same capabilities, each line's support and scope by its own words.
+- **E62:** a buyer's tax ID at checkout is CM-TAX-005.
+- **E63:** payment extensions are CM-PAY-011 `extension-point`.
+- **E64:** a partners' protocol for the checkout is CM-CHK-001 `extension-point`, the partners its filler.
+- **E65:** a kind of store named as the condition is the scope.
+- **E66:** a card's own staff permissions are CM-STF-002 `core`.
+- **E67:** an API's field names its thing's capability.
+- **E68:** places named in a card's own news take their line, not those named in passing.
+
+From SH-59 (its E59.1 to E59.8):
+- **E69:** the summary's 'We're rolling out' makes its cards `shows`.
+- **E70:** the App Store's developer features are CM-APP-002, `core;extension-point` where third parties' apps are marked or matched.
+- **E71:** Functions' developer tools are CM-DVT-001 and CM-DVT-002, the card's Functions line CM-APP-005.
+- **E72:** the Subscription API is `extension-point`, by its own statements.
+- **E73:** marketing automations powered by Flow are CM-MKT-006 `own-service`.
+- **E74:** in 'X works with Y', each thing takes its line.
+- **E75:** Search & Discovery's recommendations are CM-MKT-023 `own-service`.
+- **E76:** a Shop Pay Component feature is scoped by the businesses its card names and the component.
+
+The next batches number their rules from E77.
+
