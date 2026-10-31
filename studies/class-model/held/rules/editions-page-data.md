@@ -228,6 +228,18 @@ From SH-47, the rendered Fall 2026 page (`editions`):
 - **R47.5:** a card repeating a changelog post takes that post's capabilities, but a plan named only in the post isn't the card's scope.
 - **R47.6:** a card's linked page is read only where its own words leave its capability or support open.
 
+From SH-65:
+- **E125 to E132:** SH-65's notes give each with its case:
+  - Dev MCP cards;
+  - the Admin Intents API (`extension-point`, the ruling after SH-8);
+  - Polaris on other surfaces;
+  - developer twins of Function cards;
+  - a linked page settling a card's support;
+  - the Agentic plan's scopes;
+  - lines for the places a feature now runs;
+  - a release marker inside a card.
+- **A tool of the platform's company that no merchant or app uses on a store** (Tangle, an open-source ML pipeline tool; the Shopify Keyboard) is `out` (the check after SH-65).
+
 From SH-66 (it numbered its rules from E135; SH-65's are E125 on):
 - **E135:** R47.3 holds for the page data's 'Plugins' cards; 'Plugins' as an eyebrow is its group's title.
 - **E136 to E144:** discounts limited to a sales channel; multi-entity selling as a payment feature's condition; how analytics, reports and overview cards map; an inventory audit trail on CM-INV-002; cancellation and return requests from the order status page; carriers that tracking numbers detect as CM-SHP-017's fillers; bundles published to channels; Shop Campaigns' charges on the Shopify invoice; the admin's app settings page. SH-66's notes give each with its case.

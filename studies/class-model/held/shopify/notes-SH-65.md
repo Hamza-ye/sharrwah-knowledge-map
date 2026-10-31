@@ -116,3 +116,13 @@ Two lines I first wrote changed a cell, and I took them back:
 - **`show` prints a non-breaking space as a space.** Every description of this batch ends with a non-breaking space before its last word (as do 'Shopify Markets' inside SH-E-0d54922a's link and 'Azure ID' in SH-E-3bd4da2b). I copied each quote, term and filler with the character itself; a scratch script (`marks.py`) found where they are.
 - SH-E-395a3886's 'audit‑ready' holds a non-breaking hyphen. I didn't quote it.
 - The checker refuses a second line on one capability under a release marker of its own, since a marker is not a scope (E132). That is consistent with rule 52's 'two supports on it where stated', so I merged the line.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 81 of 81 entries, no problem.
+- **One line changed:** Tangle (SH-E-0c55a64f) is `out`, not a new thing. It is an open-source tool for machine-learning and data pipelines, at its own site, which no merchant or app uses on a store. So it is no capability of the class, as SH-57 placed the Shopify Keyboard `out`.
+- **The 15 `CHANGES` stand,** each on the digest's table, its rules or a twin's line. The three lines the batch took back stay taken back.
+- **The new thing** Sponsored products is `shows`, in developer preview, with no place of its own. CM-MKT-012 is a candidate parent, which no held statement ties to it.
+- **The rules E125 to E132 stand** and join the digest's section 6.
+- **The open cases stay as placed:** Rollouts on CM-MKS-002 alone, retail locations on CM-POS-001, per-channel pricing on CM-B2B-003, and the Agentic Storefronts insights on CM-ANL-001.
+- **Cost:** 23.8 million tokens over 104 requests, about 294,000 an entry. The context reached about 387,000 tokens.
