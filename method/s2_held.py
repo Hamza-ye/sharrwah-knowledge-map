@@ -1,8 +1,10 @@
 """The held pass's second stage (PLAN.md, Stage 4A: "each cell still holding nothing is read against the held pages";
 the brief studies/class-model/briefs/S2-held.md, its design briefs/S2-held-design.md with the coordinator's decisions
 of 31 October): each cell holding nothing, and each part of Q3's candidate misses, read against what the evidence
-repositories hold, one row per finding. The coordinator lands the `found` rows as held entries and placements, which
-the model then cites as it cites the held pass's entries.
+repositories hold, one row per finding. "Holding nothing" here takes in the 85 held cells whose statements state no
+placement (`placed_as` only `not-stated`): a held page could give them a placement that counts, as it could an empty
+cell (the coordinator's decision of 31 October on inspection-S2.md, S2I-21). The coordinator lands the `found` rows as
+held entries and placements, which the model then cites as it cites the held pass's entries.
 
 Usage: python3 -I method/s2_held.py COMMAND [options]
 
@@ -11,11 +13,15 @@ For the agents (a part, such as S2-ZD-1, as studies/class-model/held/s2-parts.ts
          the part's cells holding nothing, I to J (counted from 1): each capability's definition, parent and note, its
          kind and count; the cell's searched terms and reading; the other platforms' terms, Shopify's names in Arabic
          and the held pass's lines on the other platforms; the Q3 rows and the subjects' points that name the cell or
-         the capability; the leads that name it. --left lists the cells the part's file has no row for yet
+         the capability; the leads that name it. --left lists the cells, and the parts of the part's misses
+         (`M-nn: <part>`), that the part's file has no row for yet
   leads  --part P [--held]
          what the held pass's notes (held/<platform>/notes-*.md, calibrations included) sent to the second stage, each
          with its batch, file and line: those naming one of the part's cells, those naming no capability, and a count
-         of those naming only cells already held or another part's, which --held prints one line each, to grep
+         of those naming only cells already held or another part's, which --held prints one line each, to grep. Also
+         read: held/review-H-rulings.md's leads for the second stage, on the platform they name. A lead that sets a
+         passage aside (a homonym, 'no lead', 'none is the entry's thing') is marked "set aside by <batch>", and a
+         bullet prints with the label paragraph it sits under (such as a run's id)
   misses --part P
          the part's misses: each thing, its parts (each the subject `M-nn: <part>` of its own rows), its Q3 rows with
          their questions and what each row's rest says, and the capabilities whose names or terms share its words
@@ -23,10 +29,11 @@ For the agents (a part, such as S2-ZD-1, as studies/class-model/held/s2-parts.ts
   check  --part P
          tests held/<platform>/s2/<part>.tsv and <part>.md: the form; that every cell and miss part has its rows, one
          or more `found` or exactly one other; the values; each cap_id; each source (its form, the platform's
-         repository, the part's commit, `line N` with the quote's first words within three lines of N, an archive's
-         offset) with the quote found in it, or an id already held; the columns each outcome takes; the reading's
-         quotes; the notes' first line and names. Prints NOTE lines to read again, then PROBLEM lines; exits 1 on a
-         problem
+         repository, the part's commit, `line N` with the quote beginning within three lines of N, an archive's
+         offset) with the quote found in it, or an id already held; two rows citing one passage on one capability
+         with the same supports, terms, filler and quality; the columns each outcome takes; a not-held row's place;
+         capture's form and repository; could_change's value; the reading's quotes; the notes' first line and
+         names. Prints NOTE lines to read again, then PROBLEM lines; exits 1 on a problem
 
 For the coordinator:
   parts  [--write]
@@ -40,14 +47,18 @@ For the coordinator:
          each miss's rows on the five platforms, part by part: the outcomes, the proposals and the places, with `held`
          per platform (yes where every part is found, part where some are, no where none is). Writes nothing
   check-misses
-         tests held/s2-misses.tsv (miss, capability, as, reading): one decision per miss; `as` one of its thing,
-         feature, new, not a capability; the capability a cap_id of the merged model, new:<name>, or empty only with
-         not a capability; new only where some platform's found row names a place
+         tests held/s2-misses.tsv (miss, capability, as, supports, reading): one decision per miss, made only once
+         every platform has its rows for every part of the miss; `as` one of its thing, feature, new, not a
+         capability; the capability a cap_id of the merged model, new:<name>, or empty only with not a capability;
+         new only where some platform's found row names a place; supports, where the decision differs from a
+         platform's proposal, as `<platform>: <value>[, <value>]` pieces (or one value for every platform)
   land   --platform P [--batch B] [--dry-run]
          lands the platform's parts at `checked` (or `landed`) into its batch S2-<XX>, the parts' rows in turn; a part
          still open waits, and lands on a later run. Each part is checked again first. It refuses a part with a
-         problem, a found miss row whose miss has no decision, and a batch already applied to the model (B names a
-         correction batch, S2-<XX>-R<n>, which takes only what no earlier S2 batch of the platform holds). Writes:
+         problem, a batch already applied to the model (B names a correction batch, S2-<XX>-R<n>, which takes only
+         what no earlier S2 batch of the platform holds), and an id an applied batch names given to another passage.
+         A miss's found rows wait, unlanded, until held/s2-misses.tsv decides the miss, and where the decision differs
+         from the row's proposal, until it gives their supports; they land in a correction batch then. Writes:
            held/<platform>/entries-s2.tsv   each passage quoted by a `found` row (and an `absent` or `unclear` row's,
                                             entries of no batch): <PREFIX>-E-<8 hex of sha1("second-stage", the
                                             repository and path without the commit, the locator, the folded quote)>,
@@ -57,8 +68,11 @@ For the coordinator:
                                             notes-<B>.md (its first line the parts' commits)
            held/<platform>/s2-keys.tsv      a found row naming a concern-map statement, a placed inventory entry or a
                                             subject's statement: an evidence row held_amend.py applies
-           held/<platform>/s2-outcomes.tsv  the other outcomes, which held_amend.py writes into the cells' readings
-           held/s2-captures.tsv             every row with a capture lead, across the platforms
+           held/<platform>/s2-outcomes.tsv  the other outcomes, which held_amend.py writes into the cells' readings;
+                                            a row a later batch changes, or whose subject it finds, is marked
+                                            `superseded` by that batch
+           held/s2-captures.tsv             every row with a capture lead, across the platforms, with its `read`,
+                                            `searched` and the batch in which it first landed
          and sets the parts it landed to `landed`. A second run writes the same files. Then:
          held_entries.py check --platform P --batch B, and held_amend.py plan / apply --platform P --batch B
 
@@ -67,7 +81,7 @@ cap_id, as, source, locator, quote, identifier, place, supports, scope, terms, f
 could_change, reading. The model's folder is studies/class-model, or CLASS_MODEL_DIR (for tests); the evidence
 repositories' roots are q3_misses.py's ROOTS. Run with python3 -I from the repository's root.
 """
-import argparse, collections, glob, hashlib, os, re, subprocess, sys
+import argparse, bisect, collections, glob, hashlib, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from class_slice import MODEL, PLATFORMS, PREFIX, rows, citable, key as skey, fold as cfold
 import quote_check
@@ -75,21 +89,26 @@ from q3_misses import MISSES, PARTS as MISS_PARTS, ROOTS, KINDS, REST_LABEL
 import held_entries as he
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+CLASS_DIR = os.path.join(ROOT, "studies", "class-model")
 HELD = os.path.join(MODEL, "held")
 MERGED = os.path.join(MODEL, "merged")
 PARTS_TSV = os.path.join(HELD, "s2-parts.tsv")
 PARTS_HEAD = ["part", "platform", "domains", "cells", "misses", "commits", "model", "state"]
 HEAD = ["subject", "outcome", "cap_id", "as", "source", "locator", "quote", "identifier", "place", "supports", "scope",
         "terms", "filler", "quality", "read", "searched", "capture", "could_change", "reading"]
-MISSES_HEAD = ["miss", "capability", "as", "reading"]
+MISSES_HEAD = ["miss", "capability", "as", "supports", "reading"]
 KEYS_HEAD = ["batch", "cap_id", "platform", "supports", "key", "why", "terms", "filler", "quality"]
 OUT_HEAD = ["batch", "subject", "outcome", "part", "line", "commits", "entry_id", "source", "locator", "quote", "read",
-            "searched", "capture", "could_change", "reading"]
-CAPTURES_HEAD = ["platform", "part", "line", "subject", "outcome", "could_change", "capture", "reading"]
+            "searched", "capture", "could_change", "reading", "superseded"]
+CAPTURES_HEAD = ["platform", "batch", "part", "line", "subject", "outcome", "could_change", "capture", "read", "searched",
+                 "reading"]
 OUTCOMES = ("found", "not-found", "not-held", "absent", "unreadable", "unclear")
 CITING = ("found", "absent", "unclear")          # the outcomes that cite a passage
 AS = ("its thing", "feature", "new", "not a capability")
-COULD = ("kind", "count", "decision", "no")
+NO_PROPOSAL = "none"                              # a miss's row where nothing of the miss is held (S2I-13)
+NOT_HELD_OUTCOMES = ("not-found", "not-held", "unreadable", "unclear")
+COULD = ("kind", "count", "decision: <id>", "no")
+DECISION = re.compile(r"^decision: (\S+)$")
 SEMI_FIELDS = ("supports", "scope", "terms", "filler", "quality", "read", "searched")
 EVIDENCE = ("observed-sh", "observed-sa", "other-product-class", "sharrwah-knowledge-map")
 RELEASE = "woocommerce-11.2.1"
@@ -97,11 +116,24 @@ OWN = {"shopify": ("observed-sh", "sharrwah-knowledge-map"), "salla": ("observed
        "zid": ("other-product-class", "sharrwah-knowledge-map"),
        "bigcommerce": ("other-product-class", "sharrwah-knowledge-map"),
        "woocommerce": ("other-product-class", "sharrwah-knowledge-map", RELEASE)}
-SPLIT_AT = 60                                    # a platform of more cells is cut in two by domain (design, section 4)
+CAPTURE_REPO = {"shopify": "observed-sh", "salla": "observed-sa", "zid": "other-product-class",
+                "bigcommerce": "other-product-class", "woocommerce": "other-product-class"}   # who captures (S2I-12)
+# a GAPS.md row that names a whole surface, which doesn't name the place a not-held row needs (S2I-2): its file's
+# line, as the guides number it, and the words it names the surface by
+WHOLE_SURFACE = {"zid": {18: "Zid's other surfaces"}, "shopify": {13: "Community"}, "salla": {9: "community.salla.sa", 24: "the mobile apps"}}
+GAPS_FILE = {"zid": "zid/GAPS.md", "bigcommerce": "bigcommerce/GAPS.md", "woocommerce": "woocommerce/GAPS.md",
+             "shopify": "docs/GAPS.md", "salla": "docs/GAPS.md"}
+# a platform of more cells is cut in two by domain where it has "more than about 60" (design, section 4): Shopify's
+# 64, with the 8 held cells whose statements state no placement, stay one part, as the design has Shopify
+SPLIT_AT = 65
 HALVES = (("1", "ABC"), ("2", "DEFG"))
 MISS_HALF = {"1": ["M-01", "M-02", "M-05", "M-06", "M-07", "M-10", "M-11", "M-12", "M-13"],
              "2": ["M-03", "M-04", "M-08", "M-09"]}
 SECOND = re.compile(r"second[ -]stage", re.I)
+# a lead that sets a passage aside: the held pass agent's reading, which the second stage reads again (S2I-17)
+ASIDE = re.compile(r"leads? no line takes|homonym|\bno lead\b|none is the entry's thing|(?:is not|isn't) the entry's thing|ruled apart|set aside", re.I)
+ARABIC = re.compile(r"[\u0600-\u06FF]")
+PLATFORM_NAME = {"shopify": "Shopify", "salla": "Salla", "zid": "Zid", "bigcommerce": "BigCommerce", "woocommerce": "WooCommerce"}
 CAP = re.compile(r"\bCM-[A-Z]{3}-\d{3}\b")
 ENTRY_ID = re.compile(r"^[A-Z]{2}-E-[0-9a-f]{8,40}$")
 FILE_SOURCE = re.compile(r"^(?:(observed-sh|observed-sa|other-product-class|sharrwah-knowledge-map)@([0-9a-f]{7,40})|(woocommerce-11\.2\.1)):(\S.*)$")
@@ -136,7 +168,7 @@ def read_tsv(path, head, problems, name=None):
         if not l.strip():
             continue
         if '"' in l:
-            problems.append(f"{name} line {i}: holds a double quote (\"), which these files can't carry: quote with ' or “ ”")
+            problems.append(f"{name} line {i}: holds a double quote (\"), which these files can't carry: write it as “ or ”, which the checker reads as the same")
             continue
         f = l.split("\t")
         if len(f) != len(head):
@@ -181,6 +213,17 @@ def caps_table():
 
 def merged_cells():
     return {(r["cap_id"], r["platform"]): r for r in rows(os.path.join(MERGED, "cells.tsv"))}
+
+
+def not_placed(cell):
+    """A held cell whose statements state no placement (`placed_as` only `not-stated`): this stage reads it as it reads
+    a cell holding nothing (the coordinator's decision on inspection-S2.md, S2I-21)."""
+    return cell.get("held") == "statements" and set(semi((cell.get("placed_as") or "").replace(",", ";"))) <= {"not-stated"}
+
+
+def holds_nothing(cell):
+    """A cell this stage reads: one holding nothing, or held with no placement stated."""
+    return cell.get("held") == "none-held" or not_placed(cell)
 
 
 def git(root, *a):
@@ -261,19 +304,50 @@ def loose(s):
     return quote_check.variants(s)[2][1]          # markup removed, case and Arabic diacritics ignored
 
 
+FIRST_WORDS = 12                                   # the quote's first words that must begin near its line (S2I-6)
+VIEWS = (lambda x: x, unescape, quote_check.html_text, lambda x: quote_check.html_text(unescape(x)))
+
+
+def begins_at(ls, first):
+    """The lines (counted from 1) where `first`, folded as loose() folds it, begins: each line read on its own in each
+    view (as held, unescaped, as markup's text), joined to the next, so a quote may run on past its first line."""
+    out = set()
+    for view in VIEWS:
+        starts, parts, at = [], [], 0
+        for l in ls:
+            t = " ".join(loose(view(l)).split())
+            starts.append(at)
+            if t:
+                parts.append(t)
+                at += len(t) + 1
+        joined = " ".join(parts)
+        i = joined.find(first)
+        while i >= 0:
+            out.add(bisect.bisect_right(starts, i))
+            i = joined.find(first, i + 1)
+    return sorted(out)
+
+
 def near_problem(S, source, n, quote):
-    """The quote's first words within three lines of line n (the brief: "the line where the quote begins")."""
+    """The quote begins within three lines of line n (the brief: "the line where the quote begins"): the whole quote,
+    as loose() folds it, or its first 12 words, all of them where it is shorter (inspection-S2.md, S2I-6)."""
     ls = file_lines(S, source)
     if ls is None:
         return None                               # the source's own problem is reported by the quote test
     if not 1 <= n <= len(ls):
         return f"line {n}: the file has {len(ls)} lines"
+    first = " ".join(loose(quote).split()[:FIRST_WORDS])
     win = "\n".join(ls[max(0, n - 4):n + 3])
-    first = " ".join(loose(quote).split()[:5])
-    hays = (win, unescape(win), quote_check.html_text(win), quote_check.html_text(unescape(win)))
-    if any(first in loose(h) for h in hays):
-        return None
-    return f"line {n}: the quote's first words ('{clip(first, 60)}') are not within three lines of it: the locator is the line where the quote begins"
+    if any(first in " ".join(loose(view(win)).split()) for view in VIEWS):
+        return None                               # it begins, and its first words run, within the window
+    at = begins_at(ls, first)
+    if any(abs(m - n) <= 3 for m in at):
+        return None                               # it begins within the window and runs on past it
+    if at:
+        m = min(at, key=lambda m: abs(m - n))
+        return f"the quote begins at line {m}, not within three lines of {n}: the locator is the line where the quote begins"
+    return (f"line {n}: the quote's first {FIRST_WORDS} words ('{clip(first, 60)}') are not found beginning within three "
+            f"lines of it, read line by line: the locator is the line where the quote begins")
 
 
 def source_problems(p, source, locator, quote, commits, S):
@@ -383,10 +457,45 @@ def blocks(lines):
 _leads = {}
 
 
+def note_leads(path, batch, keep=None):
+    """The leads for the second stage in one notes file: in a section whose heading names the second stage, each
+    top-level bullet with its nested lines and each paragraph, up to the next heading of its level; outside one, a
+    bullet or paragraph that names it. A bullet carries the label paragraph it sits under (a paragraph ending in ':',
+    such as a run's id), which then prints with it rather than as a lead of its own; a lead that sets a passage aside
+    is marked (inspection-S2.md, S2I-17). keep(text) filters the leads (a shared file's, by the platform it names)."""
+    out, used = [], set()
+    lines = open(path, encoding="utf-8").read().split("\n")
+    sec, label = None, None
+    for kind, s, e, lev, title in blocks(lines):
+        if kind == "h":
+            if sec is not None and lev <= sec:
+                sec = None
+            if sec is None and SECOND.search(title):
+                sec = lev
+            label = None
+            continue
+        text = "\n".join(lines[s:e]).rstrip()
+        lab = None
+        if kind == "p":
+            label = (s + 1, text) if text.endswith(":") else None
+        elif label:
+            lab = label
+        if sec is not None or SECOND.search(text) or (lab and SECOND.search(lab[1])):
+            if keep and not keep(text + "\n" + (lab[1] if lab else "")):
+                continue
+            if lab:
+                used.add(lab[0])
+            out.append({"batch": batch, "file": rel(path), "line": s + 1, "text": text,
+                        "label": lab[1] if lab else "", "aside": bool(ASIDE.search(text)),
+                        "caps": list(dict.fromkeys(CAP.findall(text)))})
+    # a label paragraph whose bullets carry it isn't a lead of its own
+    return [L for L in out if not (L["line"] in used and not L["label"] and L["text"].endswith(":"))]
+
+
 def leads_of(p):
-    """The held pass's leads for the second stage on a platform: in a section whose heading names the second stage,
-    each top-level bullet with its nested lines and each paragraph, up to the next heading of its level; outside one,
-    a bullet or paragraph that names it."""
+    """The held pass's leads for the second stage on a platform, from held/<platform>/notes-*.md, then the leads of
+    held/review-H-rulings.md (its section "What the corrections leave for the second stage", and the leads elsewhere
+    in it that name the second stage) that name the platform (inspection-S2.md, S2I-20)."""
     if p not in _leads:
         out = []
         paths = glob.glob(os.path.join(HELD, p, "notes-*.md"))
@@ -394,19 +503,11 @@ def leads_of(p):
             batch = os.path.basename(path)[6:-3]
             if batch.startswith("S2-"):
                 continue                          # the landing's own notes
-            lines = open(path, encoding="utf-8").read().split("\n")
-            sec = None
-            for kind, s, e, lev, title in blocks(lines):
-                if kind == "h":
-                    if sec is not None and lev <= sec:
-                        sec = None
-                    if sec is None and SECOND.search(title):
-                        sec = lev
-                    continue
-                text = "\n".join(lines[s:e]).rstrip()
-                if sec is not None or SECOND.search(text):
-                    out.append({"batch": batch, "file": rel(path), "line": s + 1, "text": text,
-                                "caps": list(dict.fromkeys(CAP.findall(text)))})
+            out += note_leads(path, batch)
+        rulings = os.path.join(HELD, "review-H-rulings.md")
+        if os.path.exists(rulings):
+            name = re.compile(rf"\b{PLATFORM_NAME[p]}\b", re.I)
+            out += note_leads(rulings, "review-H-rulings", keep=lambda t: name.search(t) is not None)
         _leads[p] = out
     return _leads[p]
 
@@ -421,8 +522,15 @@ def grouped(pr):
     return g
 
 
+def aside_mark(L):
+    return (f" [set aside by {L['batch']}: the held pass agent's reading; read the passage yourself before you agree]"
+            if L["aside"] else "")
+
+
 def show_lead(L):
-    print(f"-- {L['batch']} {L['file']} line {L['line']}{' [' + ', '.join(L['caps']) + ']' if L['caps'] else ''}")
+    print(f"-- {L['batch']} {L['file']} line {L['line']}{' [' + ', '.join(L['caps']) + ']' if L['caps'] else ''}{aside_mark(L)}")
+    if L["label"]:
+        print(f"(under: {L['label']})")
     print(L["text"])
 
 
@@ -431,7 +539,8 @@ def cmd_leads(a):
     g1, g2, g3 = grouped(pr)
     print(f"{a.part} ({pr['platform']}): {len(g1)} leads name one of its cells, {len(g2)} name no capability, "
           f"{len(g3)} name only cells already held or another part's. A lead is only a lead: read what it says a file "
-          f"states in the file.")
+          f"states in the file. A lead marked 'set aside' is the held pass agent's reading: read the passage yourself "
+          f"before you agree.")
     print(f"\n== {len(g1)} naming one of {a.part}'s cells")
     for L in g1:
         show_lead(L)
@@ -441,7 +550,8 @@ def cmd_leads(a):
     if a.held:
         print(f"\n== {len(g3)} naming only cells already held or another part's (batch:line, cap_ids, first 100 characters)")
         for L in g3:
-            print(f"{L['batch']}:{L['line']} {','.join(L['caps'])} {clip(L['text'], 100)}")
+            print(f"{L['batch']}:{L['line']} {','.join(L['caps'])} {'(under: ' + clip(L['label'], 60) + ') ' if L['label'] else ''}"
+                  f"{'[set aside] ' if L['aside'] else ''}{clip(L['text'], 100)}")
     else:
         print(f"\n== {len(g3)} naming only cells already held or another part's: they take no row here; "
               f"`leads --part {a.part} --held` prints them one line each, to grep with a chunk's terms")
@@ -465,6 +575,10 @@ def cmd_cells(a):
         print(f"{len(left)} of {len(ids)} cells of {a.part} have no row in {rel(rows_file(pr))}")
         for n, c in left:
             print(f"   {n} {c} [{caps.get(c, {}).get('domain', '?')} {caps.get(c, {}).get('area', '?')}] {clip(caps.get(c, {}).get('capability', ''), 120)}")
+        mleft = [f"{m}: {x}" for m in semi(pr["misses"]) for x in MISS_PARTS[m] if f"{m}: {x}" not in done]
+        print(f"{len(mleft)} of {sum(len(MISS_PARTS[m]) for m in semi(pr['misses']))} parts of {a.part}'s misses have no row")
+        for x in mleft:
+            print(f"   {x}")
         return
     lo, hi = max(1, a.from_ or 1), min(len(ids), a.to or len(ids))
     kinds = {r["cap_id"]: r for r in rows(os.path.join(MERGED, "kinds.tsv"))}
@@ -495,8 +609,12 @@ def cmd_cells(a):
         print(f"   kind: {k.get('kind', '?')}, count {k.get('count', '?')}{', ' + k['class_scope'] if k.get('class_scope') else ''}; "
               + "; ".join(f"{q} {k.get(q, '')}" for q in PLATFORMS))
         cell = cells.get((c, p), {})
-        print(f"   {p}: {cell.get('held', 'no cell')}; searched: {cell.get('searched') or '-'}")
-        print(f"   {p} reading: {cell.get('reading') or '-'}")
+        state = cell.get("held", "no cell")
+        if not_placed(cell):
+            state += (", none stating a placement (placed_as not-stated): a held page could give it one that counts; "
+                      "its statements are in its reading")
+        print(f"   {p}: {state}; searched: {cell.get('searched') or '-'}")
+        print(f"   {p}'s reading, from the concern map only: {cell.get('reading') or '-'}")
         print("   other platforms' terms: " + " | ".join(f"{q}: {cells.get((c, q), {}).get('terms') or '-'}" for q in PLATFORMS if q != p))
         if names.get(c):
             ar = [x for x in names[c] if x.get("name_ar")]
@@ -507,7 +625,7 @@ def cmd_cells(a):
             for x in ev[c]:
                 by[x["platform"]].append(x)
             for q, xs in by.items():
-                print(f"   the held pass on {q}, {len(xs)} rows: " + "; ".join(f"{x['supports']} {x['key']}: {clip(x['why'], 150)}" for x in xs[:3]) + (" …" if len(xs) > 3 else ""))
+                print(f"   the held pass on {q} (leads for your search, never evidence for your platform), {len(xs)} rows: " + "; ".join(f"{x['supports']} {x['key']}: {clip(x['why'], 150)}" for x in xs[:3]) + (" …" if len(xs) > 3 else ""))
         for f, x in q3:
             toks = semi(x.get("basis", "")) + semi(x.get("cap_ids", ""))
             if c in toks or any(t.startswith(c + "@") for t in toks):
@@ -519,7 +637,9 @@ def cmd_cells(a):
                 print(f"   point {x['vp_id']} ({x.get('subject', '')}, {x.get('status', '')}): {clip(x.get('question', ''), 180)}")
         for L in g1:
             if c in L["caps"]:
-                print(f"   lead: {L['batch']} {L['file']} line {L['line']}")
+                print(f"   lead: {L['batch']} {L['file']} line {L['line']}{aside_mark(L)}")
+                if L["label"]:
+                    print(f"      (under: {L['label']})")
                 print("      " + L["text"].replace("\n", "\n      "))
         print()
 
@@ -557,6 +677,64 @@ def cmd_misses(a):
 
 # ---------------------------------------------------------------- the check
 
+_dec = []
+
+
+def decision_rows():
+    """The Q3 rows and the subjects' points that `cells` prints: [(id, result, tokens)], a Q3 row's id `<set>:<row_id>`
+    and a point's its vp_id."""
+    if not _dec:
+        out = []
+        for path in sorted(glob.glob(os.path.join(MODEL, "q3", "check-*.tsv"))):
+            for x in rows(path):
+                if "set" in x and "row_id" in x:
+                    out.append((f"{x['set']}:{x['row_id']}", x.get("result", ""), semi(x.get("basis", "")) + semi(x.get("cap_ids", ""))))
+        for path in sorted(glob.glob(os.path.join(MODEL, "points", "P-*.tsv")), key=natural):
+            for x in rows(path):
+                out.append((x["vp_id"], "point", semi(x.get("cap_ids", ""))))
+        _dec.append(out)
+    return _dec[0]
+
+
+def decision_ids(cap, miss=None):
+    """The ids a `decision: <id>` may name for a cell or a miss's proposal: a Q3 row whose result isn't `covered`, or a
+    subject's point, naming the capability (inspection-S2.md, S2I-11); for a miss, its own Q3 rows too."""
+    out = set(MISSES[miss][0]) if miss else set()
+    if cap:
+        for i, res, toks in decision_rows():
+            if res != "covered" and (cap in toks or any(t.startswith(cap + "@") for t in toks)):
+                out.add(i)
+    return out
+
+
+def passage_key(src, loc, quote):
+    """One passage, whatever the commit: the repository and path, the locator and the folded quote; or an id."""
+    m = FILE_SOURCE.match(src)
+    if not m:
+        return (src,)
+    return (f"{m.group(1) or m.group(3)}:{m.group(4).strip()}", loc.strip(), he.fold(quote))
+
+
+def not_held_place(p, r):
+    """A not-held row names the place, by its address or row, where the platform would state the thing and that isn't
+    held (inspection-S2.md, S2I-2): a problem, or None."""
+    text = " ; ".join(r[f] for f in ("read", "capture", "reading"))
+    gaps = [int(n) for n in re.findall(r"GAPS\.md,? (?:row|line) (\d+)", text)]
+    whole = WHOLE_SURFACE.get(p, {})
+    named = (re.search(r"https?://\S+|\b(?:[a-z0-9-]+\.)+[a-z]{2,}/\S+", text)
+             or re.search(r"\bledger\b|index/ledger/|\bnot attempted\b|\bnot opened\b|\bsitemap\b|\blinks? to\b", text, re.I)
+             or any(n not in whole for n in gaps))
+    if named:
+        return None
+    if gaps:
+        return (f"not-held names a GAPS.md row that names a whole surface ({GAPS_FILE[p]} row {gaps[0]}, "
+                f"'{whole[gaps[0]]}'): that isn't enough; name the place, by its address or row, or write not-found, "
+                f"with the row in read")
+    return ("not-held names the place, by its address or row, where your platform would state the thing and that isn't "
+            "held: a ledger row marked `not attempted` or `not opened`, a sitemap entry not captured, a held page's link "
+            "to a page not held, or a GAPS.md row that names that place (as `<platform>/GAPS.md row N`)")
+
+
 def check_part(pr):
     """Tests a part's rows and notes: (rows, problems, notes)."""
     p, part = pr["platform"], pr["part"]
@@ -578,6 +756,9 @@ def check_part(pr):
     new_names = collections.defaultdict(list)
     proposals = collections.defaultdict(set)
     placed = collections.defaultdict(list)
+    miss_rows = collections.defaultdict(list)
+    passages = collections.defaultdict(list)
+    kinds = {r["cap_id"]: r for r in rows(os.path.join(MERGED, "kinds.tsv"))}
     for i, r in rs:
         w = f"{name} line {i}"
         for fld in SEMI_FIELDS:
@@ -610,8 +791,12 @@ def check_part(pr):
                 problems.append(f"{w}: a new row's cap_id is new:<its name, in the platform's words>")
         else:
             m = msubj[subj]
-            if as_ not in AS:
-                problems.append(f"{w}: a miss's row carries as: one of {', '.join(AS)}")
+            miss_rows[m].append((i, oc, as_))
+            if as_ == NO_PROPOSAL:
+                if cap:
+                    problems.append(f"{w}: as none (no proposal: nothing held) leaves cap_id empty")
+            elif as_ not in AS:
+                problems.append(f"{w}: a miss's row carries as: one of {', '.join(AS)}, or none where no part of the miss is found")
             elif as_ in ("its thing", "feature") and cap not in caps:
                 problems.append(f"{w}: as {as_} names a cap_id of the merged model in cap_id")
             elif as_ == "new" and not re.match(r"^new:\S", cap):
@@ -629,6 +814,8 @@ def check_part(pr):
             ss = semi(r["supports"])
             if not ss or any(x not in he.SUPPORTS for x in ss) or len(ss) > 2 or len(set(ss)) != len(ss):
                 problems.append(f"{w}: supports is one value of {', '.join(he.SUPPORTS)}, or two different ones, `;`-separated")
+            elif kind == "new" and r["place"].strip() == "none" and ss != ["shows"]:
+                problems.append(f"{w}: a new thing with no place of its own (place none) takes supports shows only")
             elif ss == ["shows"]:
                 notes.append(f"{w}: {subj}: found, and its only support is shows")
         else:
@@ -671,6 +858,12 @@ def check_part(pr):
             for fld in ("source", "locator", "quote"):
                 if r[fld].strip():
                     problems.append(f"{w}: {fld} is for found, absent and unclear rows only")
+        if oc == "found" and r["source"].strip():
+            on = subj if kind == "cell" else cap
+            if on:
+                passages[(passage_key(r["source"].strip(), r["locator"], r["quote"]), on)].append(
+                    (i, frozenset(semi(r["supports"])), frozenset(he.fold(t) for t in semi(r["terms"])),
+                     frozenset(he.fold(t) for t in semi(r["filler"])), frozenset(he.fold(t) for t in semi(r["quality"]))))
         if text is not None:
             ft = (cfold(text), he.fold(text))
             for t in semi(r["terms"]):
@@ -695,27 +888,50 @@ def check_part(pr):
             for x in semi(r["searched"]):
                 if ":" not in x:
                     problems.append(f"{w}: each search is `<tool> <language>: <terms>` (or `held_index: <address>`): {clip(x, 60)!r}")
-            if oc == "not-found" and p in ("salla", "zid") and not any(re.search(r"\bar:", x) for x in semi(r["searched"])):
-                notes.append(f"{w}: {subj}: not-found on {p} with no Arabic search")
+            if oc in ("not-found", "not-held", "absent") and p in ("salla", "zid") and not any(
+                    "corpus_search" in x and ARABIC.search(x) for x in semi(r["searched"])):
+                notes.append(f"{w}: {subj}: no corpus_search in Arabic: the held pages' Arabic was not searched")
         cap_s, cc = r["capture"].strip(), r["could_change"].strip()
         if oc == "not-held":
             pcs = [x.strip() for x in cap_s.split(";")]
             if cap_s == "none" or (cap_s.startswith("none") and not re.match(r"^none: \S", cap_s)):
                 problems.append(f"{w}: capture is `none: <why>` only where no run can capture it at all, never none alone")
-            elif not cap_s.startswith("none: ") and not (len(pcs) == 5 and pcs[0] in EVIDENCE[:3] and all(pcs[:3])
-                                                          and pcs[3].startswith("stop at ") and pcs[4].startswith("needs:")):
-                problems.append(f"{w}: capture is `<repository>; <instrument>; <the run>; stop at <...>; needs: <...>` "
-                                f"(the repository one of {', '.join(EVIDENCE[:3])}), or `none: <why>`")
+            elif not cap_s.startswith("none: ") and not (len(pcs) == 6 and pcs[0] in EVIDENCE[:3] and all(pcs[:3])
+                                                          and pcs[3].startswith("stop at ") and pcs[4].startswith("needs:")
+                                                          and re.match(r"^done when: \S", pcs[5])):
+                problems.append(f"{w}: capture is `<repository>; <instrument>; <the run>; stop at <...>; needs: <...>; "
+                                f"done when: <what the run must hold>` (the repository {CAPTURE_REPO[p]}), or `none: <why>`")
+            elif not cap_s.startswith("none: ") and pcs[0] != CAPTURE_REPO[p]:
+                problems.append(f"{w}: capture's repository is {p}'s, {CAPTURE_REPO[p]}, not {pcs[0]}")
+            x = not_held_place(p, r)
+            if x:
+                problems.append(f"{w}: {x}")
         elif oc in ("unreadable", "unclear"):
             if not cap_s or cap_s == "none":
                 problems.append(f"{w}: capture says {'the file and where it is held' if oc == 'unreadable' else 'what would settle it'}")
         elif cap_s:
             problems.append(f"{w}: capture is for not-held, unreadable and unclear rows only")
         if oc in ("not-held", "unreadable", "unclear"):
-            if cc not in COULD:
+            dm = DECISION.match(cc)
+            on = subj if kind == "cell" else cap
+            kind_applies = kind == "cell" and kinds.get(subj, {}).get("kind") in ("slot", "open")
+            ids = decision_ids(on, msubj.get(subj)) if kind != "new" else set()
+            if cc not in ("kind", "count", "no") and not dm:
                 problems.append(f"{w}: could_change is one of {', '.join(COULD)}")
-            elif cc in ("kind", "decision"):
-                notes.append(f"{w}: {subj}: could_change {cc}: {clip(cap_s, 120)}")
+            elif cc == "decision" or (dm and dm.group(1) not in ids):
+                problems.append(f"{w}: could_change decision names the Q3 row whose result isn't covered, or the subject's "
+                                f"point, that names {on or 'the miss'} (`decision: <id>`, as `cells` prints it): "
+                                f"{', '.join(sorted(ids)) or 'none names it, so decision does not apply'}")
+            elif cc == "kind" and kind == "cell" and not kind_applies:
+                problems.append(f"{w}: could_change kind is for a capability whose kind is slot or open; {subj}'s is "
+                                f"{kinds.get(subj, {}).get('kind', '?')}")
+            else:
+                first = "kind" if kind_applies else "decision" if ids else None
+                if first and not cc.startswith(first):
+                    notes.append(f"{w}: {subj}: could_change {cc}, where {first} applies: where several apply, write the "
+                                 f"first of kind, decision, count")
+                if cc == "kind" or dm:
+                    notes.append(f"{w}: {subj}: could_change {cc}: {clip(cap_s, 120)}")
         elif cc:
             problems.append(f"{w}: could_change is for not-held, unreadable and unclear rows only")
         if oc == "absent":
@@ -738,6 +954,20 @@ def check_part(pr):
         ocs = [o for _, o in xs]
         if not (all(o == "found" for o in ocs) or len(ocs) == 1):
             problems.append(f"{sj}: its rows are one or more found, or exactly one of another outcome (lines {', '.join(str(i) for i, _ in xs)})")
+    for m, xs in miss_rows.items():
+        held_any = any(o == "found" for _, o, _ in xs)
+        nothing = all(o in NOT_HELD_OUTCOMES for _, o, _ in xs)
+        for i, o, a_ in xs:
+            if a_ == NO_PROPOSAL and not nothing:
+                problems.append(f"{name} line {i}: {m}: as none (no proposal: nothing held) only where every part of the "
+                                f"miss is not-found, not-held, unreadable or unclear")
+            if a_ == "not a capability" and not held_any:
+                problems.append(f"{name} line {i}: {m}: as not a capability is for a miss your platform holds; no part of "
+                                f"it is found here: write none (no proposal: nothing held)")
+    for (pk, on), xs in passages.items():
+        if len(xs) > 1 and len({x[1:] for x in xs}) > 1:
+            problems.append(f"rows {', '.join(str(x[0]) for x in xs)} cite one passage on {on}: give them the same "
+                            f"supports, terms and quality (and filler)")
     for m, ps in proposals.items():
         if len(ps) > 1:
             problems.append(f"{m}: its rows propose one capability, one way: {sorted(ps)}")
@@ -823,7 +1053,7 @@ def compute_parts():
     caps = caps_table()
     by_p = collections.defaultdict(list)
     for r in rows(os.path.join(MERGED, "cells.tsv")):
-        if r["held"] == "none-held":
+        if holds_nothing(r):
             by_p[r["platform"]].append(r["cap_id"])
     commits = commits_now()
     model = commits.split("sharrwah-knowledge-map@")[1].split(";")[0]
@@ -845,7 +1075,10 @@ def cmd_parts(a):
         cs = semi(r["cells"])
         by = collections.Counter(caps[c]["domain"] for c in cs)
         print(f"{r['part']}\t{r['platform']}\t{len(cs)} cells ({', '.join(f'{d} {by[d]}' for d in semi(r['domains']) if by[d])})\t{len(semi(r['misses']))} misses\t{r['commits']}")
-    print(f"{len(ps)} parts, {sum(len(semi(r['cells'])) for r in ps)} cells holding nothing")
+    cells = merged_cells()
+    held_np = sum(1 for r in ps for c in semi(r["cells"]) if not_placed(cells[(c, r["platform"])]))
+    print(f"{len(ps)} parts, {sum(len(semi(r['cells'])) for r in ps)} cells: {sum(len(semi(r['cells'])) for r in ps) - held_np} "
+          f"holding nothing, and {held_np} held whose statements state no placement")
     if a.write:
         old = parts_rows()
         if any(r["state"] != "open" for r in old):
