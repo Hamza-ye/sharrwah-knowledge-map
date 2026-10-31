@@ -178,3 +178,23 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 2. **The checker didn't find a quote of an inventory entry's title** cited by its id in `reading` (SH-I-2109, 'Setting up tipping options for online orders', which `class_slice.py search` prints). I took it out of quotes.
 3. **The rulings file changed during the batch.** The three rulings after SA-49 change no line here.
 4. **Cost:** I kept to chunks of 10 posts, with one lookup call for each chunk's cells and terms.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The cell changes stand, each read again:**
+  - CM-PAY-032 (payment links) is held at last, `core`, from quick sale's links and Plus's payment requests;
+  - CM-MKT-023 is `core`, from the Product Network's recommendations;
+  - CM-POS-003, CM-CHN-002, CM-MKT-006 and CM-SHP-002 gain `extension-point`, the last two weak, as the notes say;
+  - Shop's things are `own-service` on CM-CUS-010, CM-MKT-005 and CM-SHP-007, by the ruling after SH-34.
+- **Checkout Blocks is Shopify's own app,** by the ruling after SH-35: 'we’re upgrading the Checkout Blocks app'. Three lines that rest on what it does become `own-service`: this batch's order value limits (CM-CHK-005) and its upgrade (CM-CHK-003), and SH-34's address format validation (CM-CHK-005). CM-CHK-005 now gains `own-service`, not `core` as SH-34's check said. The apps' blocks line (CM-CHK-004) stays `shows`.
+- **New things:**
+  - Saved views;
+  - Tips, renamed Tipping, the name SH-50 gave the same thing. It is decided with the others.
+- **This batch's rules stand for SH-36 to SH-46:**
+  - quick sale on CM-SRF-001;
+  - features opened to more plans take those plans as their scope, and a Plus-only item a second line;
+  - a feature's listed countries are its scope, as a single-market line's market is;
+  - the POS Hub is `own-service`;
+  - checkout or theme by market takes CM-MKS-001.
+- **SimGym's 'AI Research Preview' stays `core`:** it is open to all eligible merchants, by the ruling on features enabled before release.
+- **Cost:** 20.9 million tokens over 85 requests, about 161,000 an entry. That is cheaper than the structure's first batch (219,000), under the narrowed prompt.
