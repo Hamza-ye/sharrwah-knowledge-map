@@ -1462,7 +1462,7 @@ def whole_text(platform, e, cache={}):
     return cache[k]
 # a structure's label folder holds an @ (`ui-partners-portal-layout@prod`, `partner@en`), so a path segment may too;
 # jsonl is tried before json, or items.jsonl reads as items.json and the file is never opened (SA-12's notes)
-CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.@-]+/)+[\w.@-]+\.(?:jsonl|json|js|php|txt|tsv|html|yaml|md))(?![\w])")
+CITED_FILE = re.compile(r"(?:woocommerce-11\.2\.1:)?((?:[\w.@-]+/)+[\w.@-]+\.(?:jsonl|json|js|php|txt|tsv|html|yaml|md|xml))(?![\w])")   # xml: Android steps' .uia.xml (SH-95)
 STATEMENT_ID = re.compile(r"\b(SH|SA|WC|ZD|BC)-S-\d{4}\b")
 CITED_RECORD = re.compile(r"((?:[\w.-]+/)*[\w.-]+\.warc\.gz)@(\d+)")
 

@@ -128,3 +128,20 @@ The step files are single-line XML, so each is cited by node, in document order.
 - **The checker doesn't read Android steps' `.uia.xml`,** so a quote from one is reported as found nowhere held. A reading can cite only the step, since Android runs have no `.text.txt`.
 - `show` prints an entry's `parent` without its step, as SH-96 noted. The entries' text also drops system ids (`android:id/…`, `com.android.vending:id/…`, `com.shopify.pos:id/…`), so the frame's entries can't be told apart without their items.
 - **Where this brief and the coordinator's message read differently:** the brief makes a new thing with no place of its own `shows`, and the message makes each listed app `own-service`. This applies to Tinker only; I followed the message (above). No rule of the brief read differently from B-extent.md here.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 117 of 117 entries, no problem.
+- **The cell change stands:** CM-POS-002 gains `core` from the Home tile 'Connect a card reader', the POS app connecting its own card reader, as the check after SH-96 placed the POS's device settings.
+- **The app cards' maker statements aren't missing.** The listing's seven app cards (`items.jsonl` lines 6 to 18), which name the developer 'Shopify Inc.', are the concern map's own statements, SH-S-2755 to SH-S-2761. The structure's selection reads 'the ones not cited', so they have no entries by design; a reading cites them by statement id. No build fault.
+- **The quote test now reads an Android step's `.uia.xml`** where a reading cites it, so this batch's quotes from the Play run's and the POS walk's steps pass.
+- **The rules stand,** for the later batches of these structures, with SH-96's for the POS. The open choices stay as placed:
+  - Customer View `core`, as part of POS;
+  - Shop's tagline 'Track, Pay, Discover' named in passing, with no line;
+  - the POS Home search on CM-POS-001, the POS app's own search, not the admin's;
+  - 'Add custom sale' on CM-POS-001;
+  - a list's filters on the list's capability.
+- **Read again at Shopify's amendment:** CM-POS-001's `own-service`, which rests on the concern map's SH-S-2757, the POS app's listing. The POS is the plans' own channel, `core`, by the ruling after SH-55.
+- **New things:** Tinker by Shopify, `own-service` on its listing's developer, with no place of its own, and Staff sales attribution. They are decided with the others.
+- **For the second stage:** the Play run's seven listing pages (steps 3 to 19), and the POS walk's Customers, Register, Staff and Support pages.
+- **Cost:** 14.7 million tokens over 73 requests, about 126,000 an entry. The context reached about 335,000 tokens.
