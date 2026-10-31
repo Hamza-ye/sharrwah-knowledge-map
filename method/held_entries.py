@@ -1391,7 +1391,9 @@ def cmd_makers(a):
     entry that holds the name in one sentence with a maker's cue ('we’ve', 'our', 'first-party', 'from <brand>',
     'by <brand>', a company of its group), with that sentence and the lines its batch gave the entry. A batch finds an
     app's maker statement in one call (SH-55). A cue is a lead: 'our APIs' beside an app's name doesn't make the app."""
-    cue = re.compile(MAKER_CUE + rf"|\b(?:from|by) (?:{BRAND[a.platform]})\b"
+    # and the platform's possessive before the thing, 'Shopify's Geolocation app', as 'Shopify's flexible iPad stand'
+    # names the stand's provider (SH-70's rule 4; the check after SH-43)
+    cue = re.compile(MAKER_CUE + rf"|\b(?:from|by) (?:{BRAND[a.platform]})\b|\b(?:{BRAND[a.platform]})['’]s\b"
                      + "".join("|" + re.escape(g) for g in GROUP.get(a.platform, [])), re.I)
     placed = collections.defaultdict(list)
     for path in sorted(glob.glob(os.path.join(HELD, a.platform, "placements-*.tsv"))):

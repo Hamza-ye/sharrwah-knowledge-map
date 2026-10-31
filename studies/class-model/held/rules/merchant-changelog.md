@@ -25,7 +25,7 @@ Each entry is one post as its page states it: date, title, type tags, area, text
 10. `own-service` needs held words naming Shopify the maker of a separate app, product or service: 'we' making, upgrading or shipping it, 'we’ve added … to X', 'our … in X', 'first-party', 'from Shopify', 'we built', a store listing's developer. Naming an app, or 'our help docs', is none (rulings SH-35, SH-2, SH-55, SH-41).
 11. Such words in any held post make every line on the app's own features `own-service`, renames included; its plan lines, admin page and the plans' sales channels stay `core`, others' extensions `extension-point` (rulings SH-37, SH-55).
 12. This holds for a separate product or service too, its admin routes and plan rows `core`, and a post filed under Apps naming Shopify its feature's maker makes the app Shopify's (ruling SH-41, overturning SH-41/3).
-13. A Shopify-branded app or tool with no maker statement held, or one no held words call an app (the Pixel Helper), is `core` by what the post shows, the maker a gap (ruling SH-36; check SH-39).
+13. An app or a separate product with no maker statement held is `shows` on its feature's capability, the maker a gap, whatever its name; its admin page (CM-APP-007), its admin route or section and a plan line that includes it are `core`; it is `extension-point` only where a third party is shown making it (the ruling after SH-43, which replaces ruling SH-36's 'core by what the post shows'). A built-in tool no held words call an app, such as the Pixel Helper, is the admin's own, `core` (check SH-58).
 14. A first-party app's feature takes another capability's `own-service` line only where the app provides that thing, not for a means such as an API it uses (ruling SH-57; check SH-41).
 15. A first-party app's own release takes CM-APP-011, a post on its features none; its use of an extension interface is `shows` on that interface's capability (SH-41/1; SH-38/5).
 16. Shop's things are `own-service` on SH-S-0056 (its app, sign-in, synced carts, Shop Cash, Shop Campaigns); what it does in its own channel stays on CM-CHN-002, and it is no filler (ruling SH-34; SH-34/11; checks SH-36, SH-37).
@@ -147,5 +147,18 @@ From SH-42 (its notes give the cases):
 - **C42.10:** a capability's note governs over a shared word: a draft order's invoice email is CM-ORD-005.
 - **A third party that syncs the store's data from its own admin, through the platform's sign-in, is `extension-point`**, as QuickBooks with Shopify Balance (the check after SH-42; B-extent).
 
-The next batches number their rules C43.1 and on, by batch.
+From SH-43:
+- **C43.1:** a customer notification option retired, with third parties' apps named as the way to keep it, takes those apps' `extension-point` line.
+- **C43.2:** a refund paid as a gift card is CM-LOY-002 `core` and CM-RET-002 `shows`.
+- **C43.3:** Handshake's posts have no maker statement held, so they are `shows` on their capabilities: the suppliers' side CM-B2B-001, the retailers' side CM-CAT-010, its own listings CM-CHN-004, its discounts CM-MKT-003 (the ruling after SH-43).
+- **C43.4:** a feature available only 'on some stores', with no reason given, is `shows`. The words go in `reading`.
+- **C43.5:** an App Store app with no maker held is `shows` on its feature's capability, the maker a gap. The cases are the Store Importer and the Customer Privacy app (the ruling after SH-43).
+- **C43.6:** third parties' financial apps that reach Balance through the platform's partner take CM-PAY-023 `core;extension-point`, the partner and the apps its fillers.
+- **C43.7:** a free theme's launch, or a version of one, is CM-SFR-001 `core`.
+- **C43.8:** card networks that Shopify Payments starts taking in a country are CM-PAY-002 `core`, the networks its fillers.
+- **C43.9:** a post that names only some of the tasks new staff permissions delegate gives each named permission a `core` line on what it gates.
+- **C43.10:** a post making Flow available on more plans is a plan line, `core`. Flow's own features stay `own-service`.
+- **The platform's possessive before a thing ('Shopify's Geolocation app') names it as the provider:** `own-service` (the check after SH-43).
+
+The next batches number their rules C44.1 and on, by batch.
 
