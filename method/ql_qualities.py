@@ -13,7 +13,8 @@ For the agents (a part, such as QL-SA, as studies/class-model/qualities/parts.ts
          first decisions it drives and the capabilities it lands on by default; the model's quality rows of the
          platform that qualities/labels.tsv labels as the kind; the default capabilities' cells on the platform (held,
          placed as, reading) and the second stage's rows on them where landed; the places qualities/sources.tsv names
-         for the platform and kind; then each ask with its question. --left lists the asks the part's file has no row
+         for the platform and kind (the coordinator's file: platform, kind, place, note); then each ask with its
+         question. --left lists the asks the part's file has no row
          for yet
   check  --part P
          tests qualities/<platform>/<part>.tsv and <part>.md: the form (the header, the field counts, no double
@@ -209,7 +210,7 @@ SYSTEM = [   # Q1: the label names a measure of the system; the first kind whose
     ("AUD", r"audit log|activity log|\blogs?\b"),
     ("AVL", r"uptime|platform availability|service level|\bsla\b|backup|disaster recovery|data recovery|outage|incident|downtime|status page"),
     ("IDN", r"session|(?<!ai )\btokens?\b|password|two-step|two-factor|\b2fa\b|sign-?in|log-?in attempts|inactivity|\block\b|verification attempts|nafath|passkey"),
-    ("IFB", r"rate limit|\brequests?\b|per second|per minute|throttl|timeout|retr(?:y|ies)|webhook|payload|query cost|\bbulk\b|\bapis?\b|execution time|\bmemory\b"),
+    ("IFB", r"rate limit|\brequests\b|requests? per|api requests?|per second|per minute|throttl|timeout|retr(?:y|ies)|webhook|payload|query cost|\bbulk\b|\bapis?\b|execution time|\bmemory\b"),
     ("CAP", r"bandwidth|response time|latency|page load|\bpeak\b|\bcdn\b|transactions? (?:a|per|in)|orders? (?:a|per) (?:minute|second|day)"),
     ("SUP", r"\bsupport\b|response within"),
     ("CHG", r"\bapi versions?\b|deprecat|breaking change|\bsunset"),
