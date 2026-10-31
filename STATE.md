@@ -22,6 +22,34 @@
   - **The architecture plan** grades its sources by the Knowledge Map's source types.
   - **At GM,** the Knowledge Map's page comes too, rebuilt by script from the model's files.
 
+## Risks now (the live register; updated at every milestone and before anything reaches the founder)
+
+*Started 31 October, about 22:00 UTC, after the founder's message: "if we didn't address risks, and manage them early and orient me well with what is going, this work is bound to turn into a horse shit". The plan's own risk table (`PLAN.md`, section 7) states each risk's control. This register says which are showing, how badly, what is watched, and what is done. Each status is the coordinator's reading; each count is from the files.*
+
+| # | Risk | Status | What shows it, now | What is done about it | Changed since the morning |
+| --- | --- | --- | --- | --- | --- |
+| R1 | **The work doesn't converge.** Steps keep being added, each grows when measured, and GM recedes (`PLAN.md` risk 1). | Red | The extent's budget was 250 million agent tokens. About 5,580 million are spent (by 22:00), at about 160 million an hour. The projection was 5.4 to 5.6 billion at 18:40 and 6.3 to 6.9 billion at 21:00. The final review's new estimate, not yet measured, would put its top past 7 billion. Four steps remain, and none is measured yet. | From 22:00, nothing is added or widened without the founder's go. Each remaining step runs one measured part first, and a step whose part runs past its estimate's top goes to the founder before the rest runs, to pay, trim or stop. As a change to who decides, this awaits the founder's go to enter the plan. | New: the qualities pass, the 85 cells and the final review's doubled estimate. |
+| R2 | **One wrong ruling spreads to hundreds of placements.** | Amber | Eleven rulings each place 100 or more held lines, one over 500 (`reports/GM-rulings.md`). Twelve rulings were overturned during the held pass and their lines aligned, so rulings do turn out wrong. | The final review samples each high-weight ruling's lines: at least one per platform, then up to 4 or 2% (`briefs/R-extent.md`). Each ruling is in plain words for the founder's veto. | The veto list states each ruling's weight. |
+| R3 | **Architecture starts blind where it matters most:** how stores are kept apart, identity, and where data lives. | Red | The model's 3,881 quality rows are mostly prices and plan allowances, with none on isolation or identity. Salla and Zid may not publish where data lives or their certifications. | The qualities pass (`PLAN.md`, Stage 4A). At GM, a plain list of what architecture must decide without evidence. Whether to ask Salla or Zid directly is the founder's. | Found today, from the founder's question. |
+| R4 | **Other gaps of the same kind:** a definition or a list that quietly narrowed what was looked for. | Amber | The architecture plan's review: 572 of the 1,215 held cells have no data or events from their own platform, and 74 of 367 capabilities none at all (`architecture/plan-review.md`, APR-6). | Before GM, each thing the architecture plan says it needs is checked against what the model holds, and the gaps are reported plainly. | New. |
+| R5 | **The empty cells stay empty because held pages are read poorly.** | Amber | 705 cells hold nothing or no placement: Shopify 64, Salla 98, Zid 154, WooCommerce 190, BigCommerce 199. The second stage's inspection found 4 must-fix faults, which an agent following the brief would have hit. | All 25 inspection findings are taken. Zid's first part runs alone and is checked before the other eight. The omission review measures the miss rate. | The stage was inspected and fixed, and runs on Zid now. |
+| R6 | **The region's platforms are held more thinly than Shopify.** | Amber | Held runs: Shopify 446, Salla 215, Zid 20, BigCommerce 15, WooCommerce 14 (`studies/class-model/held-vs-read.tsv`). Zid's and BigCommerce's empty cells are two to three times Shopify's. | The model counts the five alike, and names each gap per platform. Capture requests go out only where a gap could change the model or a decision. | Counted today. |
+| R7 | **The coordinator's own errors, and its cost.** | Amber | Today the coordinator wrote wrong counts or times into the record five times; checks and agents caught each. Its own share is about 43 million tokens an hour, rising with its context. | Counts by script only, re-run before they reach the founder. Context kept lean, and the session resumes from this file. | New. |
+| R8 | **The founder can't steer:** reports read as logs, things reach the founder unexplained, and the orientation page goes stale. | Red, being fixed | The founder's message tonight, and their question on S2-R1 and S2-R2. The orientation page was last updated this morning. | The orientation page is rebuilt around this register, the path to GM and what needs the founder, and updated at every milestone and before anything reaches them. Every ruling is in plain words. Messages lead with risks and decisions. | The founder's message, 22:00. |
+| R9 | **Agents work on tools mid-change.** | Green | A landing that runs while a build agent edits the scripts it uses. | One build agent at a time per tool. A landing runs only on committed tools. | Controlled. |
+
+**The path to GM** (each figure the step's own estimate, an assumption until its first part is measured; times are hours of running, a reading):
+
+| Step | State | Million tokens | Hours |
+| --- | --- | --- | --- |
+| The second stage: the 705 empty or unplaced cells, with Q3's misses | Zid's first part running; 8 parts to follow, four at a time | 115 to 285 | 6 to 10 |
+| The qualities pass | Its tools being built; then inspected; 7 parts | 75 to 180 | 4 to 6, beside the second stage |
+| The omission review | Designed; tools, inspection, then 7 parts | 160 to 330 | 6 to 8, after the second stage |
+| The final review by risk, and its corrections | Revised, under inspection; 55 batches | 220 to 500 | 12 to 18, after the omission review |
+| GM: the report, the Knowledge Map's page, the veto list, the architecture plan's counts, the orientation page | | 30 to 60 | 3 to 4 |
+
+In all, about 0.6 to 1.4 billion more, and about 1.5 days of running to GM if nothing is added (a reading).
+
 **Open gate:** GM, after the class's model's extent: its report with the Knowledge Map's page rebuilt from the model, and the founder's go on the architecture plan. S-02 has reached its end; the founder vetoed none of its rulings.
 
 **Waiting on the founder:** nothing until GM. The founder may veto any ruling at any time.
