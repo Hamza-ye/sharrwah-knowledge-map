@@ -136,3 +136,20 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 2. **The checker's brand NOTE fires on 41 lines,** nearly every post that isn't an app's, since nearly every post names 'Shopify …'.
 3. **The checker doesn't flag a single-quoted quote that holds an apostrophe.** SH-34's rule 14 puts such quotes in “ ”. I found 17 in my readings with a scan of my own and changed them.
 4. **How I kept the cost down:** chunks of 10 posts, each printed once with its leads and `earlier`, and one lookup call per chunk for its cells and searches.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 130 of 130 entries, no problem.
+- **The rulings after SH-2 and SH-55 are already kept,** as the agent aligned to them before its last check:
+  - Flow's 11 lines and Collective's 14 are `own-service`;
+  - Shopify Inbox is `own-service`;
+  - Forms, the Combined Listings app and the Pixel Helper stay `core`, since no held words call the Pixel Helper an app.
+- **The cell changes stand, each read again:**
+  - CM-CUS-012 is held, `core`, a marked reading. The storefront's CAPTCHA moved from reCAPTCHA to hCaptcha, its filler; the posts don't name which forms it guards, and the cell's thing is buyers' sign-in and registration.
+  - CM-CAT-013 gains `core` from Unit Pricing, scope EU and Switzerland, a marked reading. With SH-3's Edit price, it goes to the final review, since no platform defines what 'product pricing' does.
+  - CM-INV-007 gains `own-service`, from Stocky's purchase orders ('We’ve introduced the option to 'Edit' purchase orders in Stocky').
+  - CM-MKT-015 gains `extension-point`, from YouTube's affiliate programme through the Google & YouTube app.
+  - CM-SHP-018 gains `own-service` beside `core`, from Shop Promise: dates 'predicted by Shopify' and 'backed by Shop'.
+- **New thing:** Finance, the admin's section over Capital, Credit, Balance, Payments, Bill Pay and Taxes (M-13), decided with the others.
+- **Rules 1 to 14 stand for SH-40 to SH-46.** Among them: Markets Pro is Managed Markets, by the rename SH-E-dc501d64 states; a post whose link opens a Shop help page is about Shop's feature, by the ruling after SH-38.
+- **Cost:** 29.9 million tokens over 102 requests, about 230,000 an entry. The context reached about 504,000 tokens, with 20 runs of the checker.
