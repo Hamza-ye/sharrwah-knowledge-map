@@ -5,7 +5,7 @@ CM-APP-013	shopify	statements	core	dev-dashboard-nav | dev-nav | editions-page-d
 CM-APP-013	woocommerce	none-held					
 CM-APP-013	zid	none-held					
 CM-PTN-011	bigcommerce	none-held					
-CM-PTN-011	salla	none-held					
+CM-PTN-011	salla	statements	core	portal-app-routes | portal-apps | portal-help-center-article | portal-menu-definitions			general
 CM-PTN-011	shopify	none-held					
 CM-PTN-011	woocommerce	none-held					
 CM-PTN-011	zid	none-held					

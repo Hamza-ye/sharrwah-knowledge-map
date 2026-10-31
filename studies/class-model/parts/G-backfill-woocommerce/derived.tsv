@@ -9,5 +9,5 @@ CM-OPS-004	salla	none-held
 CM-OPS-004	shopify	none-held					
 CM-OPS-005	salla	none-held					
 CM-OPS-005	shopify	statements	core;extension-point	admin-router | editions-page-data	SH-E-f0bed13e=Shopify Plus		general
-CM-SRF-001	salla	statements	core		SA-C-001/decides/SA-S-2082=plan: سلة بلس	SA-C-001/responsible:page not read;SA-C-001/reason:page not read	plan: سلة بلس
+CM-SRF-001	salla	statements	core	onboarding-missions	SA-C-001/decides/SA-S-2082=plan: سلة بلس | SA-E-97efd95e=basic | SA-E-c97a8313=basic	SA-C-001/responsible:page not read;SA-C-001/reason:page not read	basic | plan: سلة بلس
 CM-SRF-001	shopify	statements	core	admin-router | admin-router-changes | editions | editions-page-data | merchant-changelog | mobile-app-navigation | mobile-app-settings-index | play-publisher-apps	SH-E-1d43f378=US;Canada;Australia | SH-E-1fa0501d=US | SH-E-3efa7510=Shopify Payments-eligible countries | SH-E-5891678f=US only | SH-E-afb4bb9c=capture-advanced;capture-client-store-vny2vy5w;capture-gb-plus;capture-grow;capture-plus-dev;capture-plus;ctcbwa-r1;demo-fake-dev-store;fake-demo-sharrwah | SH-E-e6b1e0c3=US only	SH-C-043/reason:searched, not found;SH-C-079/responsible:stated only in general terms;SH-C-079/reason:searched, not found;SH-C-118/reason:searched, not found	general

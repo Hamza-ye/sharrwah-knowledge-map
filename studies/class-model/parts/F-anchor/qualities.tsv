@@ -109,3 +109,45 @@ CM-API-005	shopify	API rate limits	Up to 2x on select APIs	SH-E-fb08b5fb
 CM-API-005	shopify	API rate limits	Up to 10x on select APIs	SH-E-cbbb2d75
 CM-API-005	shopify	API call limits	Up to 500% higher	SH-E-84e91ffb
 CM-PTN-008	shopify	earning period	for four years	SH-E-43ac022a
+CM-AUT-001	salla	price	129 ر.س / شهريا	SA-E-9614fd57
+CM-AUT-001	salla	struck-through price	149 ر.س	SA-E-9614fd57
+CM-AUT-001	salla	price	170 ر.س / شهريا	SA-E-d40da897
+CM-AUT-001	salla	trial	(فترة تجريبية 3 أيام)	SA-E-d40da897
+CM-AIA-001	salla	price	يبدأ من 19 ر.س / شهريا	SA-E-9a61f50c
+CM-AIA-001	salla	price	39 ر.س / شهريا	SA-E-9284dc3e
+CM-AIA-001	salla	trial	(فترة تجريبية 7 أيام)	SA-E-9284dc3e
+CM-AIA-001	salla	price	49 ر.س / شهريا	SA-E-b7803381
+CM-AIA-001	salla	trial	(فترة تجريبية 7 أيام)	SA-E-b7803381
+CM-AIA-001	salla	price	100 ر.س / شهريا	SA-E-9653cd5d
+CM-AIA-001	salla	struck-through price	199 ر.س	SA-E-9653cd5d
+CM-AIA-001	salla	price	75 ر.س / شهريا	SA-E-de07cf16
+CM-AIA-001	salla	trial	(فترة تجريبية 7 أيام)	SA-E-de07cf16
+CM-AIA-001	salla	price	100 ر.س / شهريا	SA-E-f99f4279
+CM-AIA-001	salla	struck-through price	199 ر.س	SA-E-f99f4279
+CM-APP-002	salla	application administration fees	free	SA-E-2cc5e663
+CM-APP-002	salla	rating an App	14 days after it's installed	SA-E-e8d99491
+CM-PTN-005	salla	review of a service for publishing	3 to 4 working days	SA-E-2a10c5f8
+CM-AIA-003	salla	price	يبدأ من 19 ر.س / شهريا	SA-E-9a61f50c
+CM-AIA-003	salla	price	39 ر.س / شهريا	SA-E-9284dc3e
+CM-AIA-003	salla	trial	(فترة تجريبية 7 أيام)	SA-E-9284dc3e
+CM-AIA-003	salla	price	يبدأ من 19 ر.س / شهريا	SA-E-235448bb
+CM-AIA-003	salla	price	24 ر.س / شهريا	SA-E-7f9c04e5
+CM-AIA-003	salla	trial	(فترة تجريبية 7 أيام)	SA-E-7f9c04e5
+CM-AIA-003	salla	price	39 ر.س / شهريا	SA-E-3379ed59
+CM-AIA-003	salla	trial	(فترة تجريبية 7 أيام)	SA-E-3379ed59
+CM-PTN-008	salla	commission	0.4% of the invited merchants' sales in their first year	SA-E-f97eef18
+CM-PTN-008	salla	maximum commission	قد تصل إلى ١٠٠ ألف ريال	SA-E-d3750e95
+CM-PTN-008	salla	maximum commission	up to SAR 100K	SA-E-b73502f8
+CM-PTN-008	salla	maximum commission	قد تصل إلى ١٠٠ ألف ريال	SA-E-f2811e8c
+CM-PTN-008	salla	maximum commission	up to SAR 100K	SA-E-8f1bb734
+CM-PTN-009	salla	followers of an influencer	a high number of followers (3k+)	SA-E-3b434326
+CM-PTN-009	salla	setting up an influencer profile	not more than 5 minutes	SA-E-9074d315
+CM-APP-005	salla	execution type	Synchronous Action	SA-E-ea99dacc
+CM-APP-005	salla	execution type	creating (sync)	SA-E-c4dc960c
+CM-PTN-002	salla	registration	free	SA-E-2cc5e663
+CM-DVT-004	salla	demo stores	a maximum of 10 demo stores	SA-E-e666d1d8
+CM-DVT-005	salla	Plus or Pro plan during setup	without any cost to you	SA-E-d8b42001
+CM-DVT-005	salla	Salla-developed themes and App Store apps for a ready store	completely free of charge	SA-E-b279d587
+CM-DVT-005	salla	number of ready stores a partner can develop and list	no limit	SA-E-d4a9b396
+CM-PTN-003	salla	transfer	after the end of the financial cycle	SA-E-4a3a4455
+CM-API-002	salla	access token validity	valid for 14 days	SA-E-35a61e11

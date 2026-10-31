@@ -1,6 +1,6 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-CAT-016	bigcommerce	none-held					
-CM-CAT-016	salla	statements	core		SA-C-020/decides/SA-S-3473=plans: plus, pro, special	SA-C-020/responsible:page not read;SA-C-020/reason:page not read	plans: plus, pro, special
+CM-CAT-016	salla	statements	core	dashboard-nav-segments	SA-C-020/decides/SA-S-3473=plans: plus, pro, special | SA-E-d5262bab=plus;pro;special	SA-C-020/responsible:page not read;SA-C-020/reason:page not read	general
 CM-CAT-016	shopify	none-held					
 CM-CAT-016	woocommerce	none-held					
 CM-CAT-016	zid	none-held					

@@ -10,12 +10,12 @@ CM-OPS-007	shopify	statements	core	dev-docs-nav			general
 CM-OPS-007	woocommerce	statements	not-stated	Amazon Pay fees	WC-C-012/where/WC-S-5297=Amazon Pay non-card payments	WC-C-091/reason:searched, not found	
 CM-OPS-007	zid	statements	core			ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
 CM-SRF-002	bigcommerce	none-held					
-CM-SRF-002	salla	statements	core		SA-C-002/decides/SA-S-2087=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read;SA-C-020/responsible:page not read;SA-C-020/reason:page not read;SA-C-040/responsible:page not read;SA-C-040/reason:page not read;SA-C-060/responsible:page not read;SA-C-060/reason:page not read	plan: سلة بلس
+CM-SRF-002	salla	statements	core	dashboard-quick-actions	SA-C-002/decides/SA-S-2087=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read;SA-C-020/responsible:page not read;SA-C-020/reason:page not read;SA-C-040/responsible:page not read;SA-C-040/reason:page not read;SA-C-060/responsible:page not read;SA-C-060/reason:page not read	plan: سلة بلس
 CM-SRF-002	shopify	statements	core	editions | editions-page-data | merchant-changelog | mobile-app-navigation | mobile-app-settings-index			general
 CM-SRF-002	woocommerce	statements	not-stated			WC-C-033/responsible:stated only in general terms	
 CM-SRF-002	zid	statements	core	dashboard-route-manifest | العملاء		ZD-C-091/reason:searched, not found	general
 CM-SRF-003	bigcommerce	none-held					
-CM-SRF-003	salla	none-held					
+CM-SRF-003	salla	statements	core	partners-portal-header | settings-center			general
 CM-SRF-003	shopify	statements	core	editions-page-data | merchant-changelog | mobile-app-settings-index	SH-E-19b0178e=Europe;Japan		general
 CM-SRF-003	woocommerce	none-held					
 CM-SRF-003	zid	none-held					

@@ -691,3 +691,90 @@ CM-PAY-018	shopify	USDC rates	2.9% + 30¢ (Basic), 2.7% + 30¢ (Grow), 2.5% + 30
 CM-PAY-018	shopify	USDC rates	2% + 25p GBP (Basic), 1.7% + 25p GBP (Grow), 1.5% + 25p GBP (Advanced), 1.3% + 25p GBP (Plus)	SH-E-86a16661
 CM-PAY-018	shopify	USDC rates	5% + 30¢ (starter_2022), 2.9% + 30¢ (basic), 2.7% + 30¢ (professional), 2.5% + 30¢ (unlimited), 2.25% + 30¢ (shopify_plus)	SH-E-fcdc55a5
 CM-PAY-010	shopify	price	free	SH-E-d29ff0ba
+CM-SHP-015	salla	maximum weight	الحد الأقصى للوزن 30 كجم لكل شحنة	SA-E-10a73c2b
+CM-SHP-015	salla	coverage	نغطي جميع مناطق المملكة	SA-E-598ec7ad
+CM-SHP-015	salla	price (مبرد)	24	SA-E-e0239281
+CM-SHP-015	salla	duration (مبرد)	الشحن 1 - 5 ايام عمل	SA-E-e0239281
+CM-SHP-015	salla	coverage	نغطي جميع مناطق المملكة	SA-E-4b5473da
+CM-TAX-001	salla	countries per market, for tax by market country	one country only	SA-E-ab1789cb
+CM-SHP-011	salla	price	يبدأ من 50 ر.س / شهريا	SA-E-6fe49ee1
+CM-SHP-011	salla	coverage	في دول الخليج	SA-E-283875b7
+CM-SHP-011	salla	coverage	في دول الخليج	SA-E-d1b11f66
+CM-ORD-001	salla	orders	with no limits	SA-E-0472b18b
+CM-ORD-001	salla	orders	unlimited	SA-E-d782a733
+CM-ORD-002	salla	edits per order	only once	SA-E-e73f43a4
+CM-SHP-002	salla	price (عادي)	24	SA-E-11ed4792
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-11ed4792
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-11ed4792
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-11ed4792
+CM-SHP-002	salla	price (مؤمن)	24	SA-E-11ed4792
+CM-SHP-002	salla	duration (مؤمن)	الشحن 2 - 7 ايام عمل	SA-E-11ed4792
+CM-SHP-002	salla	price (عادي)	24	SA-E-598ec7ad
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-598ec7ad
+CM-SHP-002	salla	price (اقتصادي)	13	SA-E-598ec7ad
+CM-SHP-002	salla	duration (اقتصادي)	الشحن 2 - 5 ايام عمل	SA-E-598ec7ad
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-598ec7ad
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-598ec7ad
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-17df0221
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-17df0221
+CM-SHP-002	salla	price (عادي)	24	SA-E-283875b7
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-283875b7
+CM-SHP-002	salla	price (اقتصادي)	13	SA-E-095f9ee4
+CM-SHP-002	salla	duration (اقتصادي)	الشحن 2 - 5 ايام عمل	SA-E-095f9ee4
+CM-SHP-002	salla	price (عادي)	24	SA-E-7bbfaa2f
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-7bbfaa2f
+CM-SHP-002	salla	price (مبرد)	24	SA-E-e0239281
+CM-SHP-002	salla	duration (مبرد)	الشحن 1 - 5 ايام عمل	SA-E-e0239281
+CM-SHP-002	salla	price (عادي)	24	SA-E-2d4e7b96
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-2d4e7b96
+CM-SHP-002	salla	price (عادي)	24	SA-E-6deada8c
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-6deada8c
+CM-SHP-002	salla	price (عادي)	24	SA-E-4e96aedb
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-4e96aedb
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-4e96aedb
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-4e96aedb
+CM-SHP-002	salla	price (مؤمن)	24	SA-E-4e96aedb
+CM-SHP-002	salla	duration (مؤمن)	الشحن 2 - 7 ايام عمل	SA-E-4e96aedb
+CM-SHP-002	salla	price (عادي)	24	SA-E-4b5473da
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-4b5473da
+CM-SHP-002	salla	price (اقتصادي)	13	SA-E-4b5473da
+CM-SHP-002	salla	duration (اقتصادي)	الشحن 2 - 5 ايام عمل	SA-E-4b5473da
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-4b5473da
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-4b5473da
+CM-SHP-002	salla	price (دولي)	34.5	SA-E-8ea9db52
+CM-SHP-002	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-8ea9db52
+CM-SHP-002	salla	price (عادي)	24	SA-E-d1b11f66
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-d1b11f66
+CM-SHP-002	salla	price (اقتصادي)	13	SA-E-e0d8226b
+CM-SHP-002	salla	duration (اقتصادي)	الشحن 2 - 5 ايام عمل	SA-E-e0d8226b
+CM-SHP-002	salla	price (عادي)	24	SA-E-ef621889
+CM-SHP-002	salla	duration (عادي)	الشحن 2 - 7 ايام عمل	SA-E-ef621889
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-11ed4792
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-11ed4792
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-598ec7ad
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-598ec7ad
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-17df0221
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-17df0221
+CM-SHP-020	salla	coverage	نغطي 220 دولة	SA-E-17df0221
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-4e96aedb
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-4e96aedb
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-4b5473da
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-4b5473da
+CM-SHP-020	salla	price (دولي)	34.5	SA-E-8ea9db52
+CM-SHP-020	salla	duration (دولي)	الشحن 5 - 15 ايام عمل	SA-E-8ea9db52
+CM-SHP-020	salla	coverage	نغطي 220 دولة	SA-E-8ea9db52
+CM-SHP-021	salla	price	مجانية	SA-E-11ed4792
+CM-SHP-021	salla	price	مجانية	SA-E-4e96aedb
+CM-SHP-009	salla	execution type	Synchronous Action	SA-E-ea99dacc
+CM-SHP-009	salla	execution type	creating (sync)	SA-E-c4dc960c
+CM-PAY-005	salla	sales deposit	كل 24 ساعة	SA-E-a6b6746b
+CM-PAY-005	salla	sales deposits	daily	SA-E-df25a9b0
+CM-PAY-029	salla	cash on delivery minimum order value, with a Salla Shipping Label carrier	SAR 20	SA-E-0f38122b
+CM-PAY-029	salla	cash on delivery maximum order value, with a Salla Shipping Label carrier	SAR 1,000	SA-E-cd4e97dd
+CM-CHK-008	salla	product maxLength	1	SA-E-7ecd049c
+CM-SHP-003	salla	price (مؤمن)	24	SA-E-11ed4792
+CM-SHP-003	salla	duration (مؤمن)	الشحن 2 - 7 ايام عمل	SA-E-11ed4792
+CM-SHP-003	salla	price (مؤمن)	24	SA-E-4e96aedb
+CM-SHP-003	salla	duration (مؤمن)	الشحن 2 - 7 ايام عمل	SA-E-4e96aedb
+CM-SHP-019	salla	availability	على مدار الـ24 ساعة	SA-E-095f9ee4
+CM-SHP-019	salla	availability	على مدار الـ24 ساعة	SA-E-e0d8226b

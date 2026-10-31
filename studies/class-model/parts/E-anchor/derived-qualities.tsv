@@ -586,3 +586,51 @@ CM-MKS-007	shopify	exchange rates on international returns, with Managed Markets
 CM-MKS-007	shopify	currency conversion fee	1.5% per transaction	SH-E-c5e393a1	
 CM-MKS-007	shopify	exchange rates on international returns, with Managed Markets	Exchange rates are locked for up to 30 days on international returns	SH-E-c5e393a1	
 CM-POS-002	shopify	ports	3 USB-A ports and 1 USB‑C port	SH-E-d6e18200	
+CM-SFR-001	salla	price	100 ر.س / شهريا	SA-E-9653cd5d	
+CM-SFR-001	salla	struck-through price	199 ر.س	SA-E-9653cd5d	
+CM-SFR-001	salla	price	100 ر.س / شهريا	SA-E-f99f4279	
+CM-SFR-001	salla	struck-through price	199 ر.س	SA-E-f99f4279	
+CM-SFR-001	salla	templates	أكثر من 100 قالب احترافي	SA-E-b3567aaf	سلة سبيشل
+CM-SFR-001	salla	templates	over 100 professional templates	SA-E-68825198	Salla Special
+CM-CHN-006	salla	time to build the app	خلال 72 ساعة فقط	SA-E-e3b60d18	سلة سبيشل
+CM-CHN-006	salla	extra cost	دون تحمُّل تكاليف إضافية	SA-E-e3b60d18	سلة سبيشل
+CM-CHN-006	salla	time to build the app	in just 72 hours	SA-E-576082ba	Salla Special
+CM-CHN-006	salla	extra cost	without incurring extra costs	SA-E-576082ba	Salla Special
+CM-SFR-005	salla	price	39 ر.س / شهريا	SA-E-91325167	
+CM-SFR-005	salla	trial	(فترة تجريبية 7 أيام)	SA-E-91325167	
+CM-SFR-013	salla	price	5150 ر.س / سنويا	SA-E-0fa6f94c	
+CM-SFR-013	salla	trial	(فترة تجريبية 7 أيام)	SA-E-0fa6f94c	
+CM-SFR-008	salla	price	57.5 SAR, Annually	SA-E-6800218c	giftshop2024
+CM-SFR-008	salla	transfer time	usually 7 to 10 days, but it can take longer in some cases	SA-E-fb7a8a6a	
+CM-SFR-008	salla	days left before expiration	at least 60 days	SA-E-fb7a8a6a	
+CM-SFR-008	salla	time registered	at least 60 days	SA-E-fb7a8a6a	
+CM-MKS-001	salla	multi-countries limit	10	SA-E-706d44d1	special;pro
+CM-SFR-006	salla	page title maxLength	100	SA-E-5e86ea4f	
+CM-SFR-006	salla	product maxLength	1	SA-E-7ecd049c	
+CM-SFR-006	salla	main button text maxLength	50	SA-E-f120f0c1	
+CM-SFR-003	salla	number of themes a developer can create	no limits	SA-E-bb2ba5b9	
+CM-SFR-003	salla	minimal price of a theme	150 SAR	SA-E-3c8803d2	
+CM-SFR-003	salla	price	1200 SAR	SA-E-92aa5394	
+CM-SFR-003	salla	sale_price	1000 SAR	SA-E-92aa5394	
+CM-SFR-003	salla	price	999 SAR	SA-E-6509c476	
+CM-SFR-003	salla	sale_price	250 SAR	SA-E-6509c476	
+CM-SFR-003	salla	price	599 SAR	SA-E-114e7f7c	
+CM-SFR-003	salla	sale_price	347 SAR	SA-E-114e7f7c	
+CM-SFR-003	salla	components	49 ready-to-use components	SA-E-114e7f7c	
+CM-SFR-003	salla	price	799 SAR	SA-E-f0c56f2b	
+CM-SFR-003	salla	sale_price	250 SAR	SA-E-f0c56f2b	
+CM-SFR-003	salla	price	799 SAR	SA-E-7b0cc5e6	
+CM-SFR-003	salla	sale_price	250 SAR	SA-E-7b0cc5e6	
+CM-SFR-003	salla	price	999 SAR	SA-E-58fec373	
+CM-SFR-003	salla	sale_price	250 SAR	SA-E-58fec373	
+CM-SFR-003	salla	price	1099 SAR	SA-E-8858145a	
+CM-SFR-003	salla	sale_price	450 SAR	SA-E-8858145a	
+CM-SFR-003	salla	price	799 SAR	SA-E-7aa42346	
+CM-SFR-003	salla	sale_price	250 SAR	SA-E-7aa42346	
+CM-CHN-002	salla	price	for free	SA-E-111ee2b0	
+CM-POS-001	salla	price	كاشير مجاني	SA-E-3b59c0bc	
+CM-POS-001	salla	Salla Point app price	مجانًا	SA-E-39908893	سلة بلس;سلة برو
+CM-POS-001	salla	price	كاشير مجاني	SA-E-2fe19cf8	
+CM-POS-001	salla	price	Free Cashier	SA-E-921d0690	
+CM-POS-001	salla	price	Free Cashier	SA-E-e3401984	app_pos
+CM-POS-001	salla	Salla Point app price	for free	SA-E-11290ce9	Salla Plus;Salla Pro

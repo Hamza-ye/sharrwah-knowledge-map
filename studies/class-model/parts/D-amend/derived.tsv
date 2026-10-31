@@ -1,6 +1,6 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-LOY-008	bigcommerce	none-held					
-CM-LOY-008	salla	none-held					
+CM-LOY-008	salla	statements	extension-point	app-store-tabs | report-widgets			
 CM-LOY-008	shopify	none-held					
 CM-LOY-008	woocommerce	none-held					
 CM-LOY-008	zid	statements	core	dashboard-page-index | dashboard-route-manifest	ZD-E-117aeca6=new_professional		general

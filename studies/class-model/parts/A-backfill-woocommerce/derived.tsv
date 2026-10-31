@@ -1,11 +1,11 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
-CM-ACC-009	salla	none-held					
+CM-ACC-009	salla	statements	not-stated	dashboard-app-routes | onboarding-status			
 CM-ACC-009	shopify	statements	core	admin-home-setup | editions | merchant-changelog | mobile-app-navigation	SH-E-e1ac6967=newly created development stores		general
 CM-ACC-010	salla	none-held					
 CM-ACC-010	shopify	none-held					
 CM-ACC-011	salla	none-held					
 CM-ACC-011	shopify	none-held					
-CM-ONB-004	salla	none-held					
+CM-ONB-004	salla	statements	core	dashboard-app-routes | onboarding-missions | onboarding-status | portal-help-center-resource	SA-E-03f4344c=plus | SA-E-07385a20=basic | SA-E-1011d797=basic | SA-E-11480cde=basic | SA-E-19926139=basic | SA-E-285fe87c=basic | SA-E-3184db25=plus | SA-E-31c83f71=plus | SA-E-396be06c=plus | SA-E-39aca380=plus | SA-E-3d0d322c=basic | SA-E-4252d137=basic | SA-E-4a4415b2=basic | SA-E-4db694d6=basic | SA-E-52a3ccb3=basic | SA-E-5a5585ec=basic | SA-E-5aa3d1c6=plus | SA-E-66b31d36=plus | SA-E-69d95148=basic | SA-E-6df493a5=basic | SA-E-76529341=basic | SA-E-7811b65d=basic | SA-E-802f4e25=pro | SA-E-815b9524=plus | SA-E-855c5a72=basic | SA-E-889a8f78=basic | SA-E-94420aa5=basic | SA-E-97d13c29=basic | SA-E-97efd95e=basic | SA-E-a20cb4db=basic | SA-E-baf80fbd=plus | SA-E-c329f4c7=basic | SA-E-c41d1461=plus | SA-E-c7d44f5a=basic | SA-E-c97a8313=basic | SA-E-cbcf4348=plus | SA-E-cd793571=basic | SA-E-cdff705c=basic | SA-E-cf961467=basic | SA-E-d4242b73=basic | SA-E-d91a74ae=plus | SA-E-debfc2d8=plus | SA-E-e4421895=plus | SA-E-e4a554d4=basic | SA-E-e9c7d73e=basic | SA-E-ee302783=plus | SA-E-f86accb4=basic | SA-E-fe141d0f=plus		general
 CM-ONB-004	shopify	statements	core	admin-home-setup | admin-main-nav | merchant-changelog | mobile-app-navigation | mobile-app-settings-index | shopify-com-header-nav | signup-onboarding-questions | signup-router	SH-E-17a20b41=Plus | SH-E-21c1d264=ctcbwa-r1@2026-09-30;fake-demo-sharrwah@2026-09-30 | SH-E-220db6fa=Plus | SH-E-28bb0660=EU | SH-E-35ba470e=ibx5bt-xy@2026-09-30;ibx5bt-xy@2026-10-01-trial | SH-E-5c0b8880=fake-demo-sharrwah@2026-10-01-trial | SH-E-60f56793='basic plan and up' | SH-E-b1fd7a12=Plus | SH-E-bec81020=EU | SH-E-fd8fb9f8=fake-demo-sharrwah@2026-10-04-paid-failed-bill;fake-demo-sharrwah@2026-10-05-staff-customer-support		general
 CM-TRU-021	salla	none-held					
 CM-TRU-021	shopify	none-held					

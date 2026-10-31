@@ -5,7 +5,7 @@ CM-CAT-014	woocommerce	none-held
 CM-CAT-015	salla	none-held					
 CM-CAT-015	shopify	statements	not-stated	merchant-changelog			
 CM-CAT-015	woocommerce	none-held					
-CM-INV-009	salla	statements	core	Branch and warehouse priority order		SA-C-026/responsible:page not read;SA-C-026/reason:page not read	general
+CM-INV-009	salla	statements	core	Branch and warehouse priority order | settings-center	SA-E-07e296e8=team;special;pro | SA-E-852b6b0f=team;special;pro | SA-E-8a91367e=team;special;pro | SA-E-8c9eb7fe=team;special;pro | SA-E-bbc88eae=team;special;pro | SA-E-da218a04=team;special;pro	SA-C-026/responsible:page not read;SA-C-026/reason:page not read	general
 CM-INV-009	shopify	none-held					
 CM-INV-009	woocommerce	none-held					
 CM-INV-010	salla	none-held					
