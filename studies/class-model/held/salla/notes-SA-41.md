@@ -163,3 +163,22 @@ I read no run step beyond the entries.
 - **Leads by 'support'** come from every resource's name ('Apps Support', 'Themes Support'), which each article entry carries in its `category`. They point to CM-SUP-005, a homonym, on 25 entries.
 
 The checker's last line, for SA-41: `85 of 85 entries placed; 0 problems`.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **Seven `shows` lines are dropped,** for things the ready stores' FAQ answers only list in passing:
+  - entry 16: the plan, theme design and products;
+  - entries 20 and 21: the design, products and apps;
+  - entry 12: the App Store.
+
+  Each page's own thing keeps its line on CM-DVT-005, and none of the seven changed a cell. The ruling after SA-41 records the rule. Entry 12's CM-SFR-001 line stands: 'any Salla-developed theme' says who makes the themes.
+- **The cell changes stand:**
+  - CM-APP-009 takes the private apps' `extension-point`, as SA-35's check accepted.
+  - CM-ONB-004 takes entry 31's video `shows`: it is a guide, by the tree's rules. SA-27's setup tasks already make the cell `core`.
+- **The other open points stand as placed:**
+  - entry 22, Get Started, on CM-PTN-001 `shows`, the page it is a tab of;
+  - entry 44 on CM-PTN-003 `core`;
+  - entry 47 on CM-PAY-031 `core`.
+- **Trusted IP Address** is decided with the other new things in `held/new.tsv`.
+- **SA-42 keeps to the tree's rules** in these notes and to the ruling after SA-41.
+- **Cost:** 12.3 million tokens over 63 requests, about 145,000 an entry. The resource tree's sections carry all their children's titles, so the entries are long.
