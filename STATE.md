@@ -203,7 +203,24 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
 
     New things to decide with every platform's since: Bullet Delivery, Product certificates and Custom Product Fields (Salla), and Zid POS's employee attendance and commission.
 
-    **Zid's and WooCommerce's amendments wait** until Salla's and Shopify's batches are placed: several of their new things may be held by other platforms too (speed and caching, a payment service's test account, direct debit, a dashboard's search and demo store), and are decided once, with every platform's entries. No later batch reads their cells. Running: SA-4, SA-11, SA-24 and SA-33.
+    **Zid's and WooCommerce's amendments wait** until Salla's and Shopify's batches are placed: several of their new things may be held by other platforms too (speed and caching, a payment service's test account, direct debit, a dashboard's search and demo store), and are decided once, with every platform's entries. No later batch reads their cells. Since then, to about 00:50 UTC on 31 October: SA-4, SA-11 to SA-13, SA-20 to SA-22, SA-24 to SA-27 and SA-33 to SA-36 are checked and committed. Salla's plans pages, plan gates, export columns, invoice settings and store verification are placed whole.
+    - **Cells changed:**
+      - Salla's sales attribution and product cost gain `core`, from its export and importer fields;
+      - custom apps gain `extension-point`, from the partners' portal's private apps;
+      - identity verification gains `core`, from its own owner check by an Absher code;
+      - so do taxes on its own charges;
+      - the AI connector and product feeds to TikTok gain `extension-point`.
+    - **Rulings** (`held/review-H-rulings.md`):
+      - a card line in a page's two languages is one thing;
+      - a services marketplace's category is CM-PTN-005's;
+      - an export's column or an importer's field is `core` on the data it holds;
+      - a container over the whole admin, or over several of its sections with no title of its own, is `out`;
+      - a second line on an address is for a page that is itself two things.
+    - **Tools** (`method/held_entries.py`):
+      - `show` prints each route entry's items, their bundle record and the code at their path: SA-11 cost 262,000 tokens an entry, SA-12 91,000 with it;
+      - the build keeps a nested list's named parents, which adds 21 Salla entries to batches not yet run;
+      - the quote test opens `.jsonl` files and paths with `@`.
+    - **Running:** SA-14, SA-23, SA-28 and SA-37.
   - **The projection, re-measured at about 23:45 UTC** (method report, section 18): about 1,690 million spent; 12,846 entries left, Salla's 5,232 and Shopify's 7,614; the extent about 3.3 to 4.5 billion. Salla's lists cost 45,000 to 156,000 an entry and, after SA-1, change almost no cell, and the coordinator's checks cost about a third of the agents' tokens at this context. The work goes on, re-planned to cost less, by the founder's standing decision of 27 October.
   - **Found on the way:** BigCommerce's `settings-list` structure pairs each section with the next one's address, and its source step holds the right ones (handoff H-009). Its `contracting-entities` holds 5 of its page's 7 rows; the concern map holds the other two, so no cell loses them. Zid's page index holds 119 of its source's 137 pages: the routes of the others are in the route manifest, but their titles are not, the charity store's among them, and the second stage reads them for the cells that hold nothing (`evidence-map.md`).
 - **Domain C's notes from D, now settled:** C's anchor landed Shopify's and Salla's abandoned checkouts and carts in CM-CHK-007, beside D's CM-MKT-022, recovery: the merge flags them as `one capability?` for the final review. SH-S-0097, Shopify's PCI responsibility, stays `core` in A's CM-TRU-018, and no C cell cites it.
