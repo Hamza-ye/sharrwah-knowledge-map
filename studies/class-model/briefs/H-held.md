@@ -63,6 +63,13 @@ The rules marked (M-n) or (ruling) are the coordinator's, on cases B-extent.md l
        A row's address is the step's requested path. A settings address (`/?settings=/orders`) opens a drawer over the home page, so a store's lines at that address can be the home page's, such as its Abandoned carts widget's 'Not included in your plan'. Read the step to see which element each line belongs to, and place the row by its own address's gate. A row whose only lines are another page's states nothing of its own: it is `out`, its reading naming the entry that holds the statement (SA-33's check).
 
        The repository's own columns, such as `held` (whether the staff permission groups hold each permission) and `steps`, are its observations: never the platform's terms, a scope or a quote. Where a placement rests on a row, cite the step or file it was built from. (Corrected after SA-32: `demo` was listed as the repository's own.)
+     - Salla's `dashboard-features`, its features list, answers for four stores, each with its plan (observed-sa's `docs/PLAN.md`):
+       - `merchant@en`: store-1-da, on Basic, not activated;
+       - `demo@en`: store-sherawya, on Pro, a development store in maintenance;
+       - `public-demo@en`: giftshop2024, the shared public demo, whose badge read Basic until 9 October and Special on 28 October;
+       - `real-merchant@en`: dandye-dandy-ksa, a real store on Pro.
+
+       A feature's `released` and `enabled` can differ by store, as `paypal` does. Read each store's value in its label, and a feature that no store has released is `shows` (SA-32's rule 6).
      - A `parent` or `within` that is still a number is the `position` of an item with no name of its own: an Android layout node, whose screen is its label, or a route whose path is a constant (Salla's `parent: 2388`, a route at `T.inventoryTransfer`). Find the item by that `position` in the same `items.jsonl`.
 2. **Place it**, one of three:
    - **`capability`:** the model's capability whose thing the entry is. Name one cap_id.

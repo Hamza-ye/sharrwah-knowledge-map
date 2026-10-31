@@ -83,3 +83,9 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
 - **A container over several sections of the admin, with no title of its own, is `out` too** (after SA-22). Salla's `/tools` and `/more` menus answer with five and six groups: Help Desk, Shipping, Payment, Tools, Logs and Customers. Like the whole admin's container, they name only a grouping, and each page in them is placed by its own entry. A group inside them whose own address is the menu's (the Shipping group at `/more`) keeps M-13 where an entry is about it, as SA-32's plan gate is.
 - **A second line on an address is for a page that is itself two things** (after SA-22). A line that would rest only on a gate's feature goes in `reading`, as M-6 refined has it. This settles SA-21's rule for SA-23.
 - **A title that names only a grouping, over several capabilities' pages, is `out` like the menus after SA-22** (after SA-28). Examples are a portal navigation group 'Others' and a menu 'More'. M-13's container line is for a title that names a capability or one part of the platform.
+- **A feature listed for a partner's account takes the support of the page it gates** (after SA-44). The partners' portal's features gate the partner's own tools. The thing a tool does sets the support, as the routes placed it:
+  - the expert marketplace is `extension-point`, third parties offering services;
+  - Salla's own billing is `core`.
+
+  So a feature line changes nothing the routes didn't, and the brief's 'a released flag supports `core`' stays for a store's features over the platform's own capabilities.
+- **A later answer of the same account governs** (after SA-44). The partner's features of 28 October include `temp-services-redesign` and `temp-influencer-redesign`, which the structure's answer of 8 October lacks. The 20 lines that were `shows` behind them in SA-34, SA-35, SA-37 and SA-38 take their capability's `extension-point`, and the feature stays their scope.
