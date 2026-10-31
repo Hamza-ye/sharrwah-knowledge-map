@@ -562,3 +562,41 @@ The top stays under the 6.04 billion the founder was given at 14:00, so no new p
 | Spent, by about 18:40 UTC | about 5,170 |
 | The second stage, the omission review, the final review and its corrections, the architecture plan's review | 270 to 370 |
 | **The extent, in all** | **about 5.4 to 5.6 billion** |
+
+**Re-measured at about 21:10 UTC, after the inspections** (`method/count_tokens.py --since 2026-10-31T18:40` over the coordinator's transcript and the agents').
+- **Spent since 18:40:** about 249 million tokens. The coordinator spent 53 million over 156 requests. The agents spent the rest:
+  - the second stage's inspection, 69 million;
+  - the architecture plan's review, 24;
+  - the omission review's draft, 18;
+  - the veto list's two drafts, 30;
+  - the second stage's draft and build, finishing, 46;
+  - the three agents still running, 9 so far.
+
+  In all, about 5,420 million.
+- **Why the projection rises:**
+  - At 18:40 the coordinator put four steps at 270 to 370 million together, but the second stage's design puts that stage alone at 100 to 250 (`briefs/S2-held-design.md`).
+  - Since then, two steps were added:
+    - a qualities pass (the founder's question of 31 October; `PLAN.md`, section 11);
+    - 85 held cells for the second stage (S2I-21).
+  - The omission review's design puts its first phase at 80 to 250 million (`briefs/O-omission-design.md`), against about 50 assumed on 30 October.
+  - Each figure below is its step's own estimate: an assumption, to be measured on that step's first agent.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 21:10 UTC | about 5,420 |
+| The second stage, 705 cells (its design's estimate, with the 85 cells) | 115 to 285 |
+| The qualities pass: its brief, tools, inspection and run | 155 to 230 |
+| The omission review: its tools, inspection and first phase | 160 to 330 |
+| The final review by risk and its corrections (the estimate of 30 October) | 180 to 230 |
+| The final review's brief brought up to the held pass, and its inspection | 30 to 50 |
+| The inspections' fixes and the architecture plan's revision, now running | 40 to 80 |
+| GM: the Knowledge Map's page, the veto list, the orientation page and the report | 30 to 60 |
+| The coordinator's own, at about a fifth of the agents' | 140 to 250 |
+| **The extent, in all** | **about 6.3 to 6.9 billion** |
+
+- **Its top passes 6.04 billion, so it goes to the founder** (their standing instruction: a new projection only if its top passes 6.04 billion). The work goes on by the founder's standing decision of 27 October, that the budget never costs evidence.
+- **What keeps it down,** none of it costing evidence:
+  - the second stage is measured on its first part, S2-ZD-1, before the other eight run;
+  - the omission review runs its full sample on Zid first, then the lean one (about 550 items) wherever its design's measure allows;
+  - the final review's selection doesn't read again what the omission review sampled;
+  - the coordinator checks by script first.
