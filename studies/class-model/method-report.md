@@ -542,7 +542,7 @@ The top falls back under the 6.04 billion the founder was given at 14:00, so no 
 **Re-measured at about 17:20 UTC, when Shopify's last batch was checked** (`method/count_tokens.py --since 2026-10-31T16:00` over the coordinator's transcript and the agents').
 - **Spent since 16:00:** 240 million tokens: the coordinator 36 million over 67 requests (15 percent), the agents the rest, the two still running (the new things' proposals and the alignment of the no-maker lines) included so far. In all about 5,080 million.
 - **Checked since 16:00:** SH-25, SH-99, SH-88, SH-22, SH-100, SH-26, SH-103, SH-89, SH-90 and SH-27, and SH-91 by script (`method/held_plan_frame.py`). **Every batch of the held pass is placed and checked, on all five platforms;** Shopify's 104 with 10,089 entries.
-- **The held pass's batches cost, in all, about 3,400 million tokens for about 22,000 entries** (Salla 5,750, Shopify 10,089, the others the rest), checks included; the scripts placed about 700 of them.
+- **The held pass's entries, counted from the files:** 18,339 in 181 batches: Shopify 10,089 in 104, Salla 5,750 in 57, Zid 1,551 in 11, WooCommerce 801 in 8, BigCommerce 148 in 1.
 
 | Item | Million tokens |
 | --- | --- |
