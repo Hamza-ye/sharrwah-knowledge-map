@@ -152,3 +152,19 @@ SA-2:82's `core` for SPL on CM-SHP-015 rests on Salla's changelog post. Entries 
 
 - **The checker's quote finder reads a plural possessive's apostrophe as a quote mark.** In 'the carriers' ratings', following a quote, it took the text between the quote and the possessive as a quote and reported it found nowhere. I rephrased the readings ('the ratings of the carriers').
 - **No rule of this brief reads differently from B-extent.md here.**
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The checker passes:** 67 of 67 entries, no problem, after the one change below.
+- **The cell changes stand, each read again, but one:**
+  - **CM-CHK-008's line is dropped** (line 114). The theme's 'Sticky mobile purchase bar to streamline the checkout process' doesn't state what the bar holds, a quick purchase or the cart, so it can't carry quick checkout. It is a lead for the second stage, noted on the theme's CM-SFR-003 line; the theme's preview would settle it.
+  - **The carriers' own services** in Salla's shipping page are `extension-point` beside each carrier's line (M-8; SA-49's R1): international (CM-SHP-020), insured (CM-SHP-003, held from nothing), cash on delivery (CM-PAY-029), free packaging (CM-SHP-021) and Redbox's lockers (CM-SHP-019, held from nothing). Who insures, and for what cover, isn't stated, and the line says so.
+  - **The theme's listed features** are `extension-point` on their cells (M-8): the offer bar (CM-SFR-007), social proof and trust badges (CM-SUP-003, held from nothing) and its editable settings (CM-SFR-002). Salla's own storefront component `salla-trust-badges`, which no statement defines, is a lead for CM-SUP-003.
+- **The carriers' support stands as the page gives it.** A carrier of `type` `salla` under 'Salla Shipping Labels' is `core`, as the cell and SA-13 and SA-18 have it. A carrier of `type` `app` is `extension-point`: SPL, departing from SA-2's changelog line by the page's own field. The App Store's carrier apps whose company is سلة are Salla's own (the ruling after SA-17). Their listings are other entries, and change no line here.
+- **New thing:** Refrigerated shipping (Prolo's `cold` / مبرد), decided with the others.
+- **Gaps, for the second stage:**
+  - the public demo's 17th carrier, on the list's second page, isn't held;
+  - the theme Raed's maker isn't stated;
+  - the editor's `bundles` and `store_blocks` reach no entry.
+- **Salla is placed whole:** 57 batches, 5,750 entries, each checked. Its amendment waits for the new things, decided across the platforms once Shopify's batches are placed, as Zid's and WooCommerce's do.
+- **Cost:** 24.9 million tokens over 101 requests, about 372,000 an entry. The context reached about 429,000 tokens.
