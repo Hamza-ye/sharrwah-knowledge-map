@@ -552,3 +552,13 @@ The top falls back under the 6.04 billion the founder was given at 14:00, so no 
 | **The extent, in all** | **about 5.5 to 5.7 billion** |
 
 The top stays under the 6.04 billion the founder was given at 14:00, so no new projection goes to the founder.
+
+**Re-measured at about 18:40 UTC, when the amendments were applied** (`method/count_tokens.py --since 2026-10-31T17:20`).
+- **Spent since 17:20:** 93 million tokens: the coordinator 36 million over 52 requests, the agents the rest (the new things' proposals, the two amendment parts' agents, the alignment of the no-maker lines). In all about 5,170 million.
+- **Done since 17:20:** the new things decided across the five platforms (`held/new.tsv`), 16 capabilities made in A-, B-, C-, F- and G-amend and 7 widened, Shopify's no-maker lines aligned, its names given their Arabic (`names-ar.tsv`), and the amendments of Shopify, Zid, WooCommerce and Salla applied, each part checked; the model merged complete with no problem.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 18:40 UTC | about 5,170 |
+| The second stage, the omission review, the final review and its corrections, the architecture plan's review | 270 to 370 |
+| **The extent, in all** | **about 5.4 to 5.6 billion** |
