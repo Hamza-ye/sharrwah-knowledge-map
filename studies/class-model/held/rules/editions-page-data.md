@@ -159,5 +159,19 @@ From SH-59 (its E59.1 to E59.8):
 - **E75:** Search & Discovery's recommendations are CM-MKT-023 `own-service`.
 - **E76:** a Shop Pay Component feature is scoped by the businesses its card names and the component.
 
-The next batches number their rules from E77.
+From SH-60:
+- **E77:** a Managed Markets feature goes on its own capability, scoped 'Managed Markets'. Where the card's title names Managed Markets, it also takes CM-MKS-003 `core`.
+- **E78:** a B2B line's support is that of the B2B thing the card shows. Apps that serve business buyers make it `extension-point`.
+- **E79:** twins across sections, such as Wholesale against Checkout and developer against merchant, keep the twin's capabilities. Each line's support and scope follow its own words.
+- **E80:** a list in a card's news gives each item its line (SH-60's notes).
+- **E81:** a first-party app's card is read by its title.
+  - The app's own feature takes no line for the platform's thing it acts on.
+  - A platform feature the app automates takes `core` beside the app's `own-service`.
+- **E82:** Collective's work with third parties stays in its CM-CHN-005 line, and the third parties' apps take their own `extension-point`.
+- **E83:** a card whose title names the API it extends takes CM-API-001 `core`, beside the capabilities of what the API now covers.
+- **E84:** events the platform sends to pixels are CM-MKT-009 `core`. Pixels that developers build are `extension-point`.
+- **E85:** a Hydrogen card takes CM-SFR-011 `core`, and what Hydrogen now supports takes its own line.
+- **A third party doing the work with no platform interface named is `outside`, its name the filler** (B-extent; the check after SH-60, for Shipbob's labels).
+
+The next batches number their rules from E86.
 
