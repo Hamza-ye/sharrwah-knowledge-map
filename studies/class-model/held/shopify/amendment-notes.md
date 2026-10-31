@@ -31,6 +31,7 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 
 - **Earn 1% back on all sales** (SH-68's new thing): the concern map read the 30 September row as SH-I-1141 (SH-S-1905) and put it in Shopify's plans concern SH-C-015. The model may already hold it under CM-PLN-001, by that concern.
 - **CM-MKT-023 and CM-MKT-021:** pk's plan line 'Upsell with bundles and recommendations' calls recommendations a means of upsell, which bears on the reviewer's nesting of the two (the check after SH-78).
+- **Tinker by Shopify** (SH-95, SH-63, SH-101's 40 lines): a separate app with a maker statement but no place of its own by B-extent's kinds. The brief writes such a new thing `shows`, while the maker statement gives `own-service`; its lines are `own-service`. Decide its support, with Planet's and the other new things that are separate products.
 - **Supports that differ between batches** are decided with each thing:
   - Staff sales attribution;
   - Tipping;

@@ -166,8 +166,8 @@ SH-96	shopify	130	pos-settings
 SH-97	shopify	80	pos-settings,return-reasons,settings-panel,shop-request-details
 SH-98	shopify	130	shop-request-details,shopify-cli-commands
 SH-99	shopify	87	shopify-cli-commands,shopify-com-header-nav,sidekick-composer
-SH-100	shopify	130	sidekick-quotas,sign-in-methods,signup-onboarding-questions,signup-router,theme-editor-templates,tinker-tools
-SH-101	shopify	20	tinker-tools
+SH-100	shopify	61	sidekick-quotas,sign-in-methods,signup-onboarding-questions,signup-router,theme-editor-templates
+SH-101	shopify	89	tinker-tools
 SH-102	shopify	203	tracking-carriers
 SH-103	shopify	42	translatable-resources,ui-extension-targets
 SA-49	salla	96	settings-center
