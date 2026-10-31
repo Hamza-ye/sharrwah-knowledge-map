@@ -523,3 +523,18 @@ The top stays at the band's 6.0 billion, so no new projection goes to the founde
 - the remaining structures' first batches set rules that their later batches keep, as the digests did;
 - scripts and selection rules take exact repeats (the router's changes, the Tinker catalog, lists the concern map read whole);
 - the coordinator's checks combine their reads and measures in fewer requests.
+
+**Re-measured at about 16:00 UTC** (`method/count_tokens.py --since 2026-10-31T14:00` over the coordinator's transcript and the agents', and each checked batch's transcript with the scratchpad's `turns.py`).
+- **Spent since 14:00:** 382 million tokens: the coordinator 50 million over 157 requests (13 percent), the agents the rest. In all about 4,840 million.
+- **Placed since 14:00:** about 2,050 entries, 257 of them by script (SH-81, SH-84, SH-104: `method/held_mobile_repeats.py`, `method/held_scope_apis.py`). Checked since: SH-48, SH-49, SH-67, SH-97, SH-20, SH-23, SH-28, SH-80, SH-85, SH-82, SH-98, SH-86, SH-29, SH-83, SH-24, SH-87 and SH-21. Placed whole since: Editions, Flow's connectors, the mobile app's two structures, the scope picker and the notification templates.
+- **The rates of the batches checked since:** 118,000 to 303,000 an entry, most between 120,000 and 225,000. A later batch that keeps its first batch's rules costs least (SH-87 118,000 after SH-86's 303,000; SH-29 155,000 after SH-28).
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 16:00 UTC | about 4,840 |
+| The 922 entries left, 11 batches (4 running), at 150,000 to 250,000 | 140 to 230 |
+| The coordinator's checks, 13 to 18 percent of the agents' | 20 to 40 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.4 to 5.7 billion** |
+
+The top falls back under the 6.04 billion the founder was given at 14:00, so no new projection goes to the founder.

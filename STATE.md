@@ -249,12 +249,13 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
-  - **Since 14:00, to about 15:45 UTC on 31 October:**
-    - **Shopify, checked since:** SH-48, SH-49 and SH-67 (so Editions is placed whole), SH-97, SH-20, SH-23, SH-28, SH-80, SH-85, SH-82 and SH-98, and SH-81 by script. 85 of its 104 batches are checked, counted from the files; 19 are left, with 1,738 entries.
+  - **Since 14:00, to about 16:05 UTC on 31 October:**
+    - **Shopify, checked since:** SH-48, SH-49 and SH-67 (so Editions is placed whole), SH-97, SH-20, SH-23, SH-28, SH-80, SH-85, SH-82, SH-98, SH-86, SH-29, SH-83, SH-24, SH-87 and SH-21, and SH-81, SH-84 and SH-104 by script. 93 of its 104 batches are checked, counted from the files; 11 are left, with 922 entries.
     - **Scripts that place later batches from an agent's lines** (the re-plan): `method/held_mobile_repeats.py` gives the mobile app's repeated nodes their first occurrence's lines (SH-81 placed, SH-84 next), and `method/held_scope_apis.py` gives the scope picker's API labels their heading's (SH-104, cut from SH-24).
     - **Aligned across batches:** the carriers of the platform's own labels to CM-SHP-015 `shows` (the Editions digest's rule 42, the changelog digest's C47); Marketplace Connect to `own-service`, its developer named on its install page (SH-20's R20.6); the App Events API to CM-DVT-001.
     - **Shopify's words in Arabic** (the founder's note of 31 October; observed-sh at `04de369da`): three vocabularies, the admin's, checkout's and shopify.com's, each paired with English by Shopify's own keys. They join the held pass's selection as vocabularies, read through the model's Shopify names at Shopify's amendment, each name's Arabic by its key, and searched by the omission review; the admin's language list (49 languages, Arabic as a beta) is evidence for the new thing Admin languages (`held/shopify/amendment-notes.md`). Coverage is measured again at the new commit (`held-vs-read.tsv`): only Shopify's rows change, by the three vocabularies and the Saudi site's pages.
-    - **Running:** SH-24, SH-29, SH-83 and SH-86.
+    - **The projection, re-measured at about 16:00** (method report, section 18): about 4,840 million spent, the extent about 5.4 to 5.7 billion, its top back under the 6.04 given to the founder at 14:00.
+    - **Running:** SH-22, SH-25, SH-88 and SH-99. Next: SH-26 and SH-27 after SH-25, SH-89 to SH-91 after SH-88, SH-100 and SH-103; then Shopify's amendment, with its words in Arabic, and the new things decided across platforms.
   - **Since 11:40, to about 14:00 UTC on 31 October:**
     - **Shopify, checked since:** SH-14 to SH-19 (the router whole, and its changes between versions, 50 of them by script), SH-32, SH-33 (help notes whole), SH-43 to SH-46 (the changelog whole), SH-47 (the rendered Fall 2026 Edition's first batch), SH-61 to SH-66 (Editions' page data), and SH-101 (the Tinker catalog, by script).
     - **Rulings since** (`held/review-H-rulings.md`):
