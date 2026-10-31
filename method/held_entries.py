@@ -1163,7 +1163,7 @@ def cmd_show(a):
 
 # earlier: an entry's own keys, looked up in the platform's other batches' readings and terms
 EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path|to): (/[^\s;,\]}]*)")
-EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,-]{3,})|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
+EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,:-]{3,})|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
 EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
 EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
 
@@ -1190,7 +1190,8 @@ def earlier_pattern(kind, v):
         return re.compile(re.escape(v) + r"(?![\w/-])")
     if kind == "label":
         return re.compile(r"['‘“]" + re.escape(v) + r"(?:['’”]| \(| /)")
-    return re.compile(r"(?<![\w.-])" + re.escape(v) + r"(?![\w-])")
+    # a route's id whole: balance:root is never matched inside balance:root:statements (SH-8)
+    return re.compile(r"(?<![\w.:-])" + re.escape(v) + r"(?![\w:-])")
 
 
 def cmd_earlier(a):
