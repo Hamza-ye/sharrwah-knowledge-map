@@ -7,7 +7,7 @@
 - observed-sh's `README.md`, `docs/READING.md`, `docs/GAPS.md`, `structures/README.md`, and its `REGISTER.tsv` row for `shopify/merchant-changelog`. The changelog has no ledger denominator ('no sitemap: 404'): `index/ledger-summary.tsv` holds no `changelog.shopify.com` row;
 - `show --meta`, `selection.tsv`'s row (`placement` `where`, rule `labels:@posts;drop:run,status,class;long:20000`) and `@posts/meta.json`;
 - B-extent's "Cells and evidence" and its conventions, with "What a place of its own is";
-- the coordinator's rulings, again at the end. Four were added while I worked: after SH-70 (an add-on's offer and what comes with it), after SA-53 (`;` and ` and ` in a scope), and two after SH-53 (the Editions speak as Shopify; the platform's own free themes are `core`). The last changed two of my lines (rule 1 below); my scopes are lists of alternatives, as the second asks; the third agrees with rule 14;
+- the coordinator's rulings, again at the end. The ruling after SH-69 (a line takes its own scope where its thing is stated under its own condition) was new to me at the end: two of my lines then took their own condition as scope, SH-E-ec277bb3's POS line ('POS Pro locations') and SH-E-9dce3280's companies line ('… and Plus merchants'), where I had kept it in reading by SH-34's rule 10. Four rulings were added while I worked: after SH-70 (an add-on's offer and what comes with it), after SA-53 (`;` and ` and ` in a scope), and two after SH-53 (the Editions speak as Shopify; the platform's own free themes are `core`). The last changed two of my lines (rule 1 below); my scopes are lists of alternatives, and the one condition added to a list takes ` and `, as the second asks; the third agrees with rule 14;
 - SH-34's, SH-35's and SH-36's notes with the coordinator's checks, and their placements, summed by capability and support, and read by line where an entry of mine was of the same kind.
 
 `held_entries.py earlier` printed no line for any key of the batch, at the start and at the end. No placements of SH-38 to SH-46 existed when I finished.
@@ -147,3 +147,20 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 4. **A row can't hold a straight double quote,** so text that holds one is named unquoted (the rules above).
 5. **The rulings changed during the batch** (four, listed above). The one on the platform's free themes changed two lines, which I corrected before the final check.
 6. **How I kept the cost down:** chunks of 10 posts, each printed once with its leads; one lookup call for each chunk's cells, printing only their names, notes and placements; one archived page read.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The cell changes stand, each read again:**
+  - CM-ORD-014 is `core`, from the customers' Buy again button;
+  - CM-ORD-011 is `core`. It is order tags as well as automatic tagging, so draft orders' tags are its thing;
+  - CM-MKT-007 is `own-service`;
+  - CM-CHK-005 and CM-CUS-010 are `own-service`;
+  - CM-MKT-006, CM-SHP-002 and CM-INV-006 gain `extension-point`, the last the weakest, as the notes say.
+- **Shopify Messaging, formerly Shopify Email, is Shopify's own app** (the ruling after SH-37). This batch's three lines are `own-service`, and the nine earlier lines on it in SH-34 to SH-36 are aligned.
+- **The admin's frame is `out`:** Admin loading (SH-E-0fcc4288) and Admin navigation (SH-E-7f9c4c73), by the ruling after SH-37. Admin search stays a new thing.
+- **Kept as the agent corrected them:**
+  - the Horizon themes are `core`, by the ruling after SH-53;
+  - Shop's subscriptions sit on its channel only;
+  - two lines take their own scope, by the ruling after SH-69.
+- **Rules 1 to 14 stand for SH-38 to SH-46,** with rule 1 changed by the ruling on the admin's frame.
+- **Cost:** 31.8 million tokens over 98 requests, about 245,000 an entry. The context reached about 530,000 tokens, past the prompt's 250,000.
