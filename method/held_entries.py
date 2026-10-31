@@ -1162,10 +1162,10 @@ def cmd_show(a):
 
 
 # earlier: an entry's own keys, looked up in the platform's other batches' readings and terms
-EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path): (/[^\s;,\]}]*)")
-EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,-]{3,})")
+EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path|to): (/[^\s;,\]}]*)")
+EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,-]{3,})|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
 EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
-EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|text|name|aria_label): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
+EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
 
 
 def earlier_keys(text):
@@ -1173,7 +1173,7 @@ def earlier_keys(text):
     for m in EARLIER_PATH.finditer(text):
         if len(m.group(1)) > 1:
             keys.append(("path", m.group(1).rstrip("/") or "/"))
-    keys += [("name", m.group(1)) for m in EARLIER_NAME.finditer(text) if not m.group(1).isdigit()]
+    keys += [("name", m.group(1) or m.group(2)) for m in EARLIER_NAME.finditer(text) if not (m.group(1) or m.group(2)).isdigit()]
     keys += [("key", m.group(1)) for m in EARLIER_KEY.finditer(text)]
     # a one-word label (Orders, الطلبات) is cited for too many things to say anything; its address does
     keys += [("label", m.group(1).strip()) for m in EARLIER_LABEL.finditer(text) if len(m.group(1).split()) >= 2]
