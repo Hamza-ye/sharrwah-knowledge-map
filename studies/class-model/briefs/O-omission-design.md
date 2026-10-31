@@ -373,3 +373,33 @@ Each is the coordinator's to confirm, and listed in one plain line at the next r
 12. **The second stage's inspection.** S2I-2, S2I-10 (a row's `searched` records "only this cell's terms") and S2I-22 (a correction batch replaces a cell's outcome) bear on group 5 and on this landing, which uses the correction batch. *Proposed:* this review's tools are built after those fixes are taken, and `om-parts` is tested against them.
 13. **The final review's sample.** *Proposed:* no change to `review_select.py`'s `--sample` by default. Where a platform's group 5 bound passes 10% after phase 2, the coordinator raises that platform's sample of cells for the final review, and says so in the extent's report.
 14. **What the second stage leaves of the structures sent to it** (S2I-19, `inspection-S2.md` at `0c1b3ad6`): Shopify's `compliance-reports` serves "the qualities of the trust and payments cells", and CM-TRU-018 is held on Shopify, so the second stage's S2-R2 puts it out of reach; and `pricing-page-data`'s 40 other sites leave "which of the 103 comparison rows each of those 40 sites lists ... a gap for the second stage". *Proposed:* `compliance-reports` is read whole by `OM-SH-1` (58 items), each quality a held cell lacks noted for the final review, outside the rate; the 40 sites' rows are group 2a's `pricing-page-data` stratum, sampled, and a row a site lists that no English or Arabic site does is a miss of kind `new` or `cell`.
+
+## 11. The coordinator's decisions (31 October)
+
+**On the open questions (section 10):**
+1. **Group 5 takes the `not-held` rows and the misses' parts as strata of their own.** Yes.
+2. **Group 6, the lines the held pass placed `out`.** Yes.
+3. **Group 7, what isn't held at all.** Yes.
+4. **The sizes.** The full sizes on `OM-ZD`, measured per item. The other parts take the full sizes where the review in all stays within 150 million at the measured rate, and the lean sizes otherwise. The choice is recorded in `omission/parts.tsv` with the measure behind it.
+5. **Effort.** `high` for every part. The founder's rule is that reading evidence, reviewing and judging never runs at medium or low.
+6. **Timing.** Yes: what the script can land, lands before the final review's selection, and the rest is corrected with the final review's findings.
+7. **Commits.** Yes: the second stage's fixed commits. A newer capture goes to the held pass's selection first.
+8. **What triggers phase 2.** Yes: a miss of kind `cell`, `support`, `new` or `out`, or a capture of kind `kind` or `decision`.
+9. **A stratum with a high rate.**
+   - Where it could change a kind or a decision, it is read whole before the final review if its estimated cost fits the projection reported to the founder.
+   - Otherwise its rate, its cost to read whole and what it could change go to the founder, with the coordinator's recommendation.
+10. **New capabilities from this review.** Yes: one more second-stage part reads their cells.
+11. **The re-reading of `held` verdicts.** It isn't the coordinator's. The final review's selection takes a seeded tenth of them, read by its agents, and counts them as this review's own miss rate. Add it to `review_select.py`'s `omission` reason.
+12. **The tools wait for the second stage's fixes** (S2I-2, S2I-10, S2I-22). Yes, and they build on the second stage's tools as fixed.
+13. **The final review's sample.** Yes: it stays as it is by default, and is raised for a platform whose group 5 bound passes 10%.
+14. **S2I-19.**
+    - Shopify's `compliance-reports`, `status-page` and `legal-documents` are read for their qualities by the qualities pass (`PLAN.md`, Stage 4A; `briefs/QL-qualities.md`), not by `OM-SH-1`. This review samples them in group 1 only for what they show of capabilities.
+    - Pricing's 40 other sites are sampled in group 2. Yes.
+
+**On the rulings (section 9):** `O-R1` to `O-R5` are confirmed. Each is listed for the founder's veto in `reports/GM-rulings.md`, in the four parts given here.
+
+**Order:**
+1. The second stage's fixes are checked and committed.
+2. A build agent builds `method/om_sample.py` and the changes of section 8 on the fixed tools, tested on fixtures.
+3. An agent that made none of them inspects the brief and the tools.
+4. `OM-ZD` runs after the second stage's parts have landed, since group 5 is their rows.
