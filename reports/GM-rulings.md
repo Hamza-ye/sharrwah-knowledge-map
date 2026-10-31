@@ -12,7 +12,7 @@ You asked for this on 31 October. A ruling's code (M-6, S2-R1, `the ruling after
 - the rulings of the held pass's second stage, the omission review and the final review are added;
 - a ruling the final review corrects is rewritten.
 
-The architecture plan's own decisions are listed with the plan. Your own decisions are in `founder-decisions.tsv`, not here.
+The architecture plan's own three decisions are listed in its section 7 ([`architecture/plan.md`](../architecture/plan.md)), in this same form. Your own decisions are in `founder-decisions.tsv`, not here.
 
 **How to veto.** Name a ruling by its title. A vetoed ruling stops. Engineering then takes its alternative, or the one you name, amends the model where the ruling placed lines, and tells you what moved. A ruling you don't veto stands.
 
