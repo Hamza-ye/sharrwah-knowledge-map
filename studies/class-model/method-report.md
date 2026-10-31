@@ -563,7 +563,7 @@ The top stays under the 6.04 billion the founder was given at 14:00, so no new p
 | The second stage, the omission review, the final review and its corrections, the architecture plan's review | 270 to 370 |
 | **The extent, in all** | **about 5.4 to 5.6 billion** |
 
-**Re-measured at about 21:10 UTC, after the inspections** (`method/count_tokens.py --since 2026-10-31T18:40` over the coordinator's transcript and the agents').
+**Re-measured at about 21:00 UTC, after the inspections** (`method/count_tokens.py --since 2026-10-31T18:40` over the coordinator's transcript and the agents').
 - **Spent since 18:40:** about 249 million tokens. The coordinator spent 53 million over 156 requests. The agents spent the rest:
   - the second stage's inspection, 69 million;
   - the architecture plan's review, 24;
@@ -583,7 +583,7 @@ The top stays under the 6.04 billion the founder was given at 14:00, so no new p
 
 | Item | Million tokens |
 | --- | --- |
-| Spent, by about 21:10 UTC | about 5,420 |
+| Spent, by about 21:00 UTC | about 5,420 |
 | The second stage, 705 cells (its design's estimate, with the 85 cells) | 115 to 285 |
 | The qualities pass: its brief, tools, inspection and run | 155 to 230 |
 | The omission review: its tools, inspection and first phase | 160 to 330 |
