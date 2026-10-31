@@ -150,3 +150,11 @@ No new thing is proposed. Two entries join earlier batches' new things:
 - **`NOTE` on footnote marks** (lines 55, 77, 93 and 95: Built-in fraud analysis, Shipping insurance, Show prices in local currencies, Accept local payment methods). Each reading quotes the footnote '*Requires Shopify Payments' (SH-E-389f0e29) and the answer's `requiresShopifyPayments: true` (R88.5).
 - **`NOTE` on a new thing whose entry has leads** (lines 4 and 13). The leads are read above, with SH-86's and SH-68's notes. None holds sandbox organizations or credits to the merchant.
 - **`NEW`:** Sandbox organizations and Earn 1% back on all sales as subscription credits, 1 line each. Both are earlier batches' new things.
+
+## The coordinator's check
+
+Measured: 21.0 million tokens over 94 requests, about 247,000 an entry. The checker prints no problem.
+- **Kept:** R88.1 to R88.6, which SH-89 keeps; the routes by R86; the one `CHANGES` line, CM-POS-002 `core`, as SH-68:122 and SH-71:33 placed the same plan line; and the two entries joining earlier new things.
+- **The plans in scope, aligned:** the 80 lines that named Shopify's identifiers now name the plans as the pricing lines do (Starter, Basic, Grow, Advanced, Plus), the identifiers paired with them by the pricing data's own answer (`pricing-page-data` items.jsonl, line 162) and named in each reading. The cells' scopes then compare across the admin's and the public tables.
+- **The open choices:** a plan that lacks a feature stays out of the `core` line's scope, named in its reading, with no extra `shows` line; the US store `tuu1u4-v0` stays in scope only where the stores' answers differ; Grow's 'Add on' stays as its twin has it.
+- **The price differences** (Grow's and Advanced's yearly prices, Plus's monthly) and the register's stale count of answers are leads for the second stage, in this batch's notes; the register is observed-sh's own, read-only here.
