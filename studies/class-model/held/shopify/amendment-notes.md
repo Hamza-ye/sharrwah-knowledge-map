@@ -8,6 +8,8 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
   - Each such line becomes `shows`. Admin pages (CM-APP-007), the admin's own routes or sections (Shopify Capital's among them) and plan lines stay `core`.
   - To find them: readings that match `maker (is )?a gap|no maker|makers: none`.
 
+- **Shopify Capital** (the check after SH-21): the router digest's table holds its maker (SH-S-0484, SH-S-0491, SH-S-0493), so its own features are `own-service`, its admin section and application `core`. The Editions lines that have it `shows` by rule 21, the brand alone (E156 and the others), are aligned with the rest.
+
 ## The concern map's placements to read again
 
 - **SH-S-5205:** `option-definition:create`'s eligibility on CM-MKS-001. Its twin route in SH-14 stands on CM-SHP-001 alone (the check after SH-14).
