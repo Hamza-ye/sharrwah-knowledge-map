@@ -135,7 +135,7 @@ No new thing is proposed. Seven entries join SH-68's new thing:
 
 ## What a source states that no entry holds (for the second stage)
 
-- **The trial stores' answers at step 98** request the plan RETAIL too (ibx5bt-xy's `…/PlanFeatureSetQuery/ac6d38….json`, the file that `answers.jsonl` names for step 98). They state Retail's values: pay_monthly '$89 USD/mo', pay_yearly_savings '$79 USD/mo', and pos_pro '1 location included per location'. These are leads for CM-PLN-001, CM-PLN-002 and CM-POS-001 on the Retail plan. The selection reads only the latest answer.
+- **The trial stores' answers at step 98** request the plan RETAIL too (`answers/admin.shopify.com/PlanFeatureSetQuery/c6039bbf4031394b363a50a844539c551b88b63ac6d382197e7eaeb92a376006.json`, the same file in both runs, which their `answers.jsonl` names for step 98). They state Retail's values: pay_monthly '$89 USD/mo', pay_yearly_savings '$79 USD/mo', and pos_pro '1 location included per location'. These are leads for CM-PLN-001, CM-PLN-002 and CM-POS-001 on the Retail plan. The selection reads only the latest answer.
 - **The rows' descriptions,** which the page shows only as tooltips. They are in the trial stores' answers, and most in the US store's, which SH-88 placed: Sell in AI chats' ChatGPT and Gemini; Unlimited web hosting's 'unlimited bandwidth'; Casual, in-person sales' Tap to Pay or a card reader.
 - **The dialogs the page doesn't hold:** the credits' (three buttons) and the variable platform fee's. Their words would settle 77 (above). Only a capture holds them, and this pass sends no request.
 
@@ -154,3 +154,9 @@ No new thing is proposed. Seven entries join SH-68's new thing:
   - For Capital, Credit, Combined Listings and Collective, whose own features are `own-service` by held maker statements, the plan line stays `core`: the rulings after SH-55 and SH-41, and the corrections with the changelog digest.
 - **`NOTE` on line 97,** the new thing's row, whose first lead CM-PTN-008 holds nothing. Its cell was read (above), and the reading names it.
 - **`NEW`:** Earn 1% back on all sales as subscription credits, 7 lines, SH-68's new thing.
+
+## The coordinator's check
+
+Measured: 25.6 million tokens over 101 requests, about 197,000 an entry. The checker prints no problem and no `CHANGES` line.
+- **Kept:** SH-88's rules for `plan-feature-set`'s last 29, so that structure is placed whole; R89.1 to R89.9, which SH-90 keeps; the seven entries joining SH-68's new thing; and the open choices as placed (each cell its own line, the marks `out`, '+ variable fees' on CM-PLN-001, entry 116 on CM-POS-001, pos_lite read as five plans, the descriptions' lists taking no line).
+- **R89.9, the veto not used:** the navigation and the keyboard shortcuts are the admin's frame on this page, `out`, as a page's frame is elsewhere (SH-20's built-in feature pages, the mobile app's R80.1); the other reading would repeat `admin-main-nav`'s lines and change no cell. SH-91, which holds nearly all of that frame, is placed by `method/held_plan_frame.py` under this rule.
