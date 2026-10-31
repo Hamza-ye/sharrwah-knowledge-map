@@ -376,3 +376,31 @@ Each is the coordinator's to confirm, and each is listed in plain words at the n
 12. **The cost.** The estimate's top, 180 million, is above the plan's 150. *Proposed:* go on, re-project after `QL-SA`, and bring it to the founder only if the extent's projection passes 6.04 billion, the founder's standing rule since 27 October ("The budget must never cost evidence about the references").
 13. **`SUP` and `ACS`,** which drive none of the six first decisions. *Proposed:* read, at one ask each, since the quality scenarios need them and the founder's order ranks user experience second.
 14. **`STATE.md`.** The second stage's inspection asked it to "say ... who reads the held cells' qualities, since this stage doesn't" (S2I-19). *Proposed:* `STATE.md` names this pass as the reader of `compliance-reports`, `status-page`, `legal-documents` and `dev-changelog` for qualities, and of Salla's `com-policies` and `partners-legal`.
+
+## 12. The coordinator's decisions (31 October)
+
+**On the open questions (section 11):**
+1. **Each platform's `QL` batch lands after its second-stage batch,** so a passage the two share is quoted once. Yes.
+2. **Platform-wide qualities go in `qualities/platform.tsv`,** not in new capabilities. Yes. The Knowledge Map's page shows them in its "Qualities by kind" table.
+3. **The third label, `other`.** Yes.
+4. **`QL-L` reviews the rows the rules leave unsettled,** and the coordinator checks a seeded 40 per rule. Yes.
+5. **`merged/terms.tsv`, a separate file.** Yes.
+6. **A cell that held nothing becomes held through a quality's `shows` row,** where its passage shows the thing exists. Yes: no count changes, and the cell's reading names the quality.
+7. **The engineering writing.** Yes: the 436 posts' titles and tags are searched first, then up to about 40 posts are read.
+8. **What Salla and Zid don't publish.** It is recorded as `not-found` at its commits. Whether to ask the platform is the founder's, as a commercial contact, and it is listed in the extent's report. Meanwhile, the architecture keeps where data lives open, bound per market (`architecture/plan.md`, section 3).
+9. **The ISO/IEC 25010 column stays a reading,** and decides no row. Yes.
+10. **Effort.** `high`, with `QL-SA`'s re-search of a third of its `not-found` rows. Yes.
+11. **The model's existing quality rows are cited by key,** not quoted again. Yes.
+12. **The cost.** Go on, by the founder's standing decision of 27 October. The projection reported at about 21:00 is 6.3 to 6.9 billion (`method-report.md`, section 18). It is re-projected after `QL-SA`. A new projection goes to the founder if its top passes 6.9 billion.
+13. **Support and accessibility.** Yes: one ask each.
+14. **`STATE.md` names this pass as the reader of the held cells' qualities.** Yes. That covers Shopify's `compliance-reports`, `status-page`, `legal-documents` and `dev-changelog`, and Salla's `com-policies` and `partners-legal`, and answers S2I-19.
+
+**On the rulings (section 10):** `QL-R1` to `QL-R9` are confirmed. Each is listed for the founder's veto in `reports/GM-rulings.md`, in the four parts given here.
+
+**On the capture request:** H-010, for help.zid.sa's and docs.zid.sa's pages not held, stays a draft. It goes out only if `QL-ZD` returns `not-held` on where data lives, attestations or staff sign-in, with first decision 1 or 2 (`QL-R6`).
+
+**Order:**
+1. The second stage's fixes are checked and committed.
+2. One build agent builds `method/ql_qualities.py` and the changes of section 6 to `held_entries.py`, `held_amend.py`, `class_merge.py` and `km_page.py`. It builds on the second stage's fixed tools and is tested on fixtures. No other agent edits those files while it runs.
+3. An agent that made none of them inspects the brief and the tools.
+4. `QL-SA` runs alone, after Salla's second-stage batch has landed, and is landed end to end.
