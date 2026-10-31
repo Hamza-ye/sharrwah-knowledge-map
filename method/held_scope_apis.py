@@ -1,7 +1,9 @@
 """The held pass, Shopify's dev-dashboard-scopes (the coordinator's re-plan of 31 October): the Dev Dashboard's scope
 picker lists each resource as a heading, then under it the API that grants the resource's scopes ('Admin API; parent:
 <heading>'). SH-23's R23.10 places such a label on its heading's capability alone, with the heading's support (E157), and
-all 38 of SH-23's labels take exactly their heading's lines. The script cuts SH-24 again: SH-24 keeps the headings and
+all 38 of SH-23's labels take exactly their heading's lines. One entry can stand for a heading under several APIs, so a
+label takes the heading's lines whose reading names its API's item ('under the <API>', 'over the <API>', or an API a 'lists twice' or 'lists three times' names; SH-24's
+R24.1). The script cuts SH-24 again: SH-24 keeps the headings and
 the picker's other entries, for an agent, and the new batch SH-104 the API labels whose heading is a held entry, which the
 script places once SH-24 is checked: each label takes its heading's lines, the API its term.
 
@@ -69,12 +71,21 @@ if "--apply" in sys.argv:
                 r = dict(zip(hd, l.split("\t")))
                 for x in r["entry_id"].split(";"):
                     lines[x.strip()].append((b, n, r))
+    APIS = ("Admin API", "Storefront API", "Customer Account API", "Shop API")
+    names = lambda r, api: (f"under the {api}" in r["reading"] or f"over the {api}" in r["reading"]
+                            or bool(re.search(r"lists (twice|three times)", r["reading"])) and api in r["reading"])
     out = []
     for e in script:
         api, head = (s.strip() for s in LABEL.match(E[e]["text"]).groups())
         h = heads[head]
         assert lines.get(h), f"{e}: its heading {h} ('{head}') isn't placed yet"
-        for b, n, r in lines[h]:
+        # one heading entry can stand for the heading under several APIs (one entry per distinct text): a label takes
+        # the lines whose reading names its API's item, and all the heading's lines only where none names an API
+        own = [x for x in lines[h] if names(x[2], api)]
+        if not own:
+            assert not any(names(x[2], a) for x in lines[h] for a in APIS), f"{e}: no line of {h} names the {api}'s item"
+            own = lines[h]
+        for b, n, r in own:
             row = {k: "" for k in HEAD}
             row.update(entry_id=e, placement=r["placement"], cap_id=r["cap_id"], supports=r["supports"],
                        scope=r["scope"], terms=api if r["placement"] != "out" else "")
