@@ -159,10 +159,16 @@ def parts_rows():
 
 
 def part_row(part):
-    for r in parts_rows():
+    rs = parts_rows()
+    if not os.path.exists(PARTS_TSV):
+        # before the coordinator writes the part list, a part is read as `parts` computes it: a preview, never checked
+        # or landed, since `mark` and `land` need the file
+        print(f"({rel(PARTS_TSV)} isn't written yet: {part} as `parts` computes it now)", file=sys.stderr)
+        rs = compute_parts()
+    for r in rs:
         if r["part"] == part:
             return r
-    sys.exit(f"no part {part} in {rel(PARTS_TSV)}: its parts are {', '.join(r['part'] for r in parts_rows()) or 'none yet (parts --write)'}")
+    sys.exit(f"no part {part} in {rel(PARTS_TSV)}: its parts are {', '.join(r['part'] for r in rs) or 'none yet (parts --write)'}")
 
 
 def rows_file(pr):
@@ -493,7 +499,9 @@ def cmd_cells(a):
         print(f"   {p} reading: {cell.get('reading') or '-'}")
         print("   other platforms' terms: " + " | ".join(f"{q}: {cells.get((c, q), {}).get('terms') or '-'}" for q in PLATFORMS if q != p))
         if names.get(c):
-            print("   Shopify's names in Arabic: " + "; ".join(f"{x['name_en']} = {x['name_ar']}{' (also ' + x['others'] + ')' if x.get('others') else ''}" for x in names[c]))
+            ar = [x for x in names[c] if x.get("name_ar")]
+            print("   Shopify's names in Arabic: " + ("; ".join(f"{x['name_en']} = {x['name_ar']}{' (also ' + x['others'] + ')' if x.get('others') else ''}" for x in ar)
+                                                     or f"none paired by Shopify's keys ({', '.join(x['name_en'] for x in names[c])}: names-ar.tsv)"))
         if ev.get(c):
             by = collections.defaultdict(list)
             for x in ev[c]:
@@ -855,6 +863,8 @@ def set_state(part, state):
 
 
 def cmd_mark(a):
+    if not os.path.exists(PARTS_TSV):
+        sys.exit(f"no {rel(PARTS_TSV)}: write the part list first (parts --write)")
     pr = part_row(a.part)
     if a.state == "checked":
         _, problems, _ = check_part(pr)
