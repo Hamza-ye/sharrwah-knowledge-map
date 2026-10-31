@@ -126,3 +126,4 @@ Each line quotes its own entry. Which price is charged isn't held. That the page
 - **The twins.** `earlier` prints at most six twins an entry, and il's and in's summaries matched id's beyond them. The twins now carry their words and card rates, so the agent found the right ones, and a seventh twin is rarely the needed one.
 - **The price disagreements** are quoted each in its own line.
 - **Cost:** 16.7 million tokens over 74 requests, about 204,000 an entry. The context reached about 425,000 tokens.
+- **Corrected after SH-77:** two held changelog posts do name Klarna and TWINT among the local payment methods available through Shopify Payments (SH-E-0ecae440 and SH-E-fd124edd, placed in SH-36). They support the CM-PAY-017 lines, whose readings now cite them. The search that missed them read only the concern map.

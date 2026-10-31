@@ -1308,6 +1308,15 @@ def cmd_earlier(a):
                 twins.append((twin, "at the same place"))
         if own:
             twins += [(t, f"by its name {own.group(1)}") for t in at_name.get(name_key(by[eid]), []) if t != eid and t not in dict(twins)]
+        # the twins most like the entry first: by the words they share, and by a plan summary's same card rates
+        # (SH-77: ng's summaries are il's, not the first six of the 20 sites')
+        def kin(t, own_words=set(re.findall(r"[^\W\d_]{3,}", by[eid]["text"].lower())),
+                own_cr=re.search(r"card_rates: \{([^}]*)\}", by[eid]["text"])):
+            cr = re.search(r"card_rates: \{([^}]*)\}", by[t]["text"])
+            keys = lambda m: set(re.findall(r"(?:^|; )(\w+):", m.group(1))) if m else set()
+            return (len(own_words & set(re.findall(r"[^\W\d_]{3,}", by[t]["text"].lower())))
+                    + (25 if own_cr and cr and keys(own_cr) == keys(cr) else 0))
+        twins.sort(key=lambda t: -kin(t[0]))
         for twin, how in [t for t in twins if placed_at.get(t[0])][:6]:
             # with the twin's own words, since one name key can state another kind of thing (SH-74: eg's and sa's
             # card_rates_short state the third-party fee, ae-ar's the card rate)
