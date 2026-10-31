@@ -208,5 +208,17 @@ From SH-63:
 - **E113:** a third party that builds the store, with no platform interface named (Lovable), is `outside` on CM-SFR-011.
 - **E114:** Messaging's planner is CM-MKT-019.
 
-The next batches number their rules from E115.
+From SH-64:
+- **E115:** the merchant's own card disputes and cashback are the account's or the card's (CM-PAY-023, CM-PAY-025), not CM-PAY-009's or CM-LOY-003's.
+- **E116:** carriers named each in its own country take one CM-SHP-002 line and one CM-SHP-015 line per country.
+- **E117:** a Managed Markets card stated 'US only' takes it as scope, and its features 'Managed Markets and US only'.
+- **E118:** the Shopify mobile app's own features are CM-SRF-001 `core`; the payments they take go on their own capabilities.
+- **E119:** a fulfillment card's list gives each item its line.
+- **E120:** Shop personalizing a store's Shop storefront is CM-MKT-023 `own-service`, beside CM-CHN-002.
+- **E121:** Built for Shopify's prioritization, featuring and grace period are CM-APP-002 `core;extension-point`, scoped 'Built for Shopify'.
+- **E122:** commerce agents built on the Catalog API, MCP tools or Checkout Kit are CM-AIA-005 `extension-point`.
+- **E123:** integrations credited to named third parties, with no platform interface named, are `outside`. One 'leveraging our … features' is `extension-point` (SH-55's Acumatica).
+- **E124:** third parties' EDI apps at App Store addresses, the companies named as the work's source, are `extension-point`.
+
+The next batches number their rules from E125.
 
