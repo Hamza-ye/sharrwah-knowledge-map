@@ -434,3 +434,23 @@ No agent has been stopped by the usage limit.
 | **The extent, in all** | **about 5.0 to 5.8 billion** |
 
 The extent stays within the 5.0 to 6.0 billion brought to the founder at 04:05, so no new projection goes to the founder. No agent has been stopped by the usage limit.
+
+**Re-measured at about 08:35 UTC** (`method/count_tokens.py --since 2026-10-31T06:55`, and each checked batch's transcript).
+- **Spent since 06:55:** 369 million tokens: the coordinator 74 million over 141 requests (20 percent), the agents the rest. In all about 3,540 million.
+- **Checked since 06:55:** SH-1 to SH-7 (SH-5 by script, `method/held_role_permissions.py`), SH-11 to SH-13, SH-38 to SH-40, SH-55 and SH-56, SH-74 to SH-76. The first batches of Shopify's other structures cost 105,000 to 269,000 an entry, about 180,000 on average. The agents' contexts still reach 400,000 to 520,000 tokens, against the 250,000 asked, and their own estimates of it are half the measure.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 08:35 UTC | about 3,540 |
+| The measured structures' 2,460 entries left, at their rates (Editions 247,000, changelog 202,000, router 195,000, pricing 191,000 an entry) | about 535 |
+| The other 4,203 entries, at 120,000 to 250,000 | 500 to 1,050 |
+| The coordinator's checks, about a fifth of the agents' | 210 to 320 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.2 to 6.0 billion** |
+
+**Re-planned to cost less.** The top of the range has reached the 6.0 billion of the founder's band. So structures whose entries repeat pages already placed are placed by script, as SH-5 and SH-52 were, wherever the repeat is exact. Candidates:
+- the public plan page, which renders the pricing data's www.shopify.com page;
+- the rendered Editions, which twin their page data;
+- lists of one kind, such as the tracking carriers.
+
+Each script's lines are checked like a batch's, and what it can't match goes to an agent.
