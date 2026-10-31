@@ -96,3 +96,11 @@ None. Each entry's thing is already a capability's: the sub-pages by the concern
 - **The scope column can't tell a plan list from an added feature:** in `team;special;pro;bullet-delivery-v2` the plans are any of three and the feature is required besides (W4). How the coordinator reads the column decides how such a scope is written.
 
 The checker's last line for SA-53, after this file was written: `83 of 83 entries placed; 0 problems`.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **One cell change, kept:** CM-SHP-006 (local pickup and delivery) is `core`. Market selection's option lets the buyer choose delivery or pickup in a pop-up, by the store's branches: both kinds together, the parent's own thing. It is behind `bullet-delivery-v2`, released on all four held stores. Its plan gate makes the content unseen on the Pro and Basic stores, so the line rests on the schema and its translations, as the notes say.
+- **W1 to W8 stand for SA-54 to SA-56.** W3 keeps a form's value in `reading` (the ruling after SA-50). W7 makes a section's `flag:` a gate node, as its `features` are.
+- **The one mixed scope is rewritten** `team;special;pro and bullet-delivery-v2`, by the ruling after SA-53 on `;` and ` and `.
+- **The open cases stand as placed:** 12's stock deduction on CM-INV-009, the IP option on CM-MKS-004, the map key, auto-ship on CM-SHP-009, and 82 as a container.
+- **Cost:** 21.8 million tokens over 79 requests, about 263,000 an entry. Market selection's two versions needed the body read for all 19 of its entries.
