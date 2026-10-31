@@ -103,3 +103,18 @@ Each is decided in `held/new.tsv`:
 ## 5. Where to look for more
 
 Each batch's notes (`shopify/notes-SH-8.md` to `notes-SH-13.md`) hold the cases behind its rules and the entries left open; `review-H-rulings.md` holds each ruling in full. Read a batch's notes only where a case is needed.
+
+## 6. Rules added since the digest, as the coordinator kept them
+
+From SH-14 (its notes give the cases):
+- **R14.1:** a page route that sends ineligible stores back to its section is no redirect, and keeps its own capability.
+- **R14.2:** a callback whose component is named for a redirect, but whose page does work of its own, is `core`.
+- **R14.3:** a route rendered inside its parent's component, with no names saying redirect, is `core` on its title's capability, even where its visit didn't render.
+- **R14.4:** a container whose own loader a visit shows sent elsewhere keeps its own support, `shows` on its target's capability.
+- **R14.5:** two betas in one eligibility object are joined with ` and `.
+- **R14.6:** a settings anchor titled with a first-party app's brand is the admin's own route, `core` (the ruling after SH-41).
+- **R14.7:** a notification template or a group of templates is CM-NTF-001's alone. Marketing consent and its double opt-in go on CM-CUS-007.
+- **R14.8:** a legacy Online Store address with its own loader and component is `core` on its twin's capability.
+
+The next batches number their rules R15.1 and on, by batch.
+
