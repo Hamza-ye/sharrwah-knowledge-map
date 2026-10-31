@@ -173,5 +173,17 @@ From SH-60:
 - **E85:** a Hydrogen card takes CM-SFR-011 `core`, and what Hydrogen now supports takes its own line.
 - **A third party doing the work with no platform interface named is `outside`, its name the filler** (B-extent; the check after SH-60, for Shipbob's labels).
 
-The next batches number their rules from E86.
+From SH-61:
+- **E86:** the App Store's tools for developers' own ads, attribution and support button are CM-APP-002 `core`. They are `core;extension-point` only where third parties' apps are matched, ranked or marked.
+- **E87:** the Partner Dashboard takes CM-PTN-001 `core` where the card's news happens in it.
+- **E88:** a developers' forum is CM-DVT-001.
+- **E89:** an app at an App Store address with no maker held and no brand in its name is `extension-point`. The Knowledge Base app is the case, read again at Shopify's amendment.
+- **E90:** a separate tool at its own site, with no maker held, is `shows`.
+- **E91:** 'Rolling out now for those new to Shopify' is `shows`, the group its scope.
+- **E92:** a condition such as 'select countries without small coins' is a scope, not a release marker.
+- **E93:** a feature's POS and Marketing twins each take both cards' capabilities, each line's support by its own words.
+- **E94:** Managed Markets' list of duties, taxes, customs and restrictions splits by rule 45.
+- **E95:** store credit 'in Liquid' takes a line for each place the card names.
+
+The next batches number their rules from E96.
 
