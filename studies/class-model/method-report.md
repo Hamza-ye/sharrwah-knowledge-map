@@ -538,3 +538,17 @@ The top stays at the band's 6.0 billion, so no new projection goes to the founde
 | **The extent, in all** | **about 5.4 to 5.7 billion** |
 
 The top falls back under the 6.04 billion the founder was given at 14:00, so no new projection goes to the founder.
+
+**Re-measured at about 17:20 UTC, when Shopify's last batch was checked** (`method/count_tokens.py --since 2026-10-31T16:00` over the coordinator's transcript and the agents').
+- **Spent since 16:00:** 240 million tokens: the coordinator 36 million over 67 requests (15 percent), the agents the rest, the two still running (the new things' proposals and the alignment of the no-maker lines) included so far. In all about 5,080 million.
+- **Checked since 16:00:** SH-25, SH-99, SH-88, SH-22, SH-100, SH-26, SH-103, SH-89, SH-90 and SH-27, and SH-91 by script (`method/held_plan_frame.py`). **Every batch of the held pass is placed and checked, on all five platforms;** Shopify's 104 with 10,089 entries.
+- **The held pass's batches cost, in all, about 3,400 million tokens for about 22,000 entries** (Salla 5,750, Shopify 10,089, the others the rest), checks included; the scripts placed about 700 of them.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 17:20 UTC | about 5,080 |
+| The new things decided across platforms, the amendment parts that make them, and the amendments of Shopify, Zid, WooCommerce and Salla | 120 to 220 |
+| The second stage, the omission review, the final review and its corrections, the architecture plan's review | 270 to 370 |
+| **The extent, in all** | **about 5.5 to 5.7 billion** |
+
+The top stays under the 6.04 billion the founder was given at 14:00, so no new projection goes to the founder.

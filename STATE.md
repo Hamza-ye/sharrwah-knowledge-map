@@ -249,6 +249,12 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 16:05, to about 17:20 UTC on 31 October:**
+    - **Shopify's held pass is placed whole:** SH-25, SH-99, SH-88, SH-22, SH-100, SH-26, SH-103, SH-89, SH-90 and SH-27 checked since, and SH-91 by script (`method/held_plan_frame.py`). All 104 batches are checked, counted from the files, so **every platform's held pass is placed and checked.**
+    - **Aligned on the way:** the admin's plan identifiers to the pricing lines' plan names (SH-88, SH-22); Hyperwallet's widget to the payout routes' line, and Partner ads to CM-APP-002 (SH-86); the admin's top-bar search to `new:Admin search` (SH-90).
+    - **The projection, re-measured at about 17:20** (method report, section 18): about 5,080 million spent, the extent about 5.5 to 5.7 billion.
+    - **Running:** the new things' proposals across the five platforms (`briefs/N-new.md`, writing `held/new-proposals.tsv` and `.md`) and the alignment of Shopify's lines resting on a maker not held (`held/shopify/align-no-maker.md`).
+    - **Next:** the coordinator decides the new things in `held/new.tsv`; the amendment parts make the new capabilities, each platform's cells searched; `method/held_amend.py` amends Shopify, Zid, WooCommerce and Salla, with Shopify's amendment items and its names in Arabic; the parts are checked and merged; then the second stage, the omission review and the final review.
   - **Since 14:00, to about 16:05 UTC on 31 October:**
     - **Shopify, checked since:** SH-48, SH-49 and SH-67 (so Editions is placed whole), SH-97, SH-20, SH-23, SH-28, SH-80, SH-85, SH-82, SH-98, SH-86, SH-29, SH-83, SH-24, SH-87 and SH-21, and SH-81, SH-84 and SH-104 by script. 93 of its 104 batches are checked, counted from the files; 11 are left, with 922 entries.
     - **Scripts that place later batches from an agent's lines** (the re-plan): `method/held_mobile_repeats.py` gives the mobile app's repeated nodes their first occurrence's lines (SH-81 placed, SH-84 next), and `method/held_scope_apis.py` gives the scope picker's API labels their heading's (SH-104, cut from SH-24).
