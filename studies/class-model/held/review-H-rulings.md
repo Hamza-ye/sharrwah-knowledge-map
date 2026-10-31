@@ -79,3 +79,4 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - An order's Order Source (`utm_source`) is CM-MKT-008's, as WooCommerce's Order Attribution keeps the same.
   - A product's Cost Price (`cost_price`) is CM-CAT-012's, as WooCommerce's Cost of Goods Sold keeps the same.
   - SA-25's rule E2 had made such a column `shows` on a capability whose thing its title names. Its lines on cells that are already `core` change nothing and stand.
+- **A container over the whole admin is `out`** (after SA-21). This is a limit on M-13. Salla's navigation segments 'main' and 'mega' answer with every section of the dashboard. The class holds no capability that is the admin itself, so the container names none. Each section and item is placed on its own. A container over one part of the admin keeps M-13.

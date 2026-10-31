@@ -127,3 +127,11 @@ Entry numbers below are the batch's order (`held_entries.py show --platform sall
 - **The checker refuses two lines of one entry on one capability.** Products' permission product_sorting_edit, read as CM-CAT-001's, would have repeated the container's line, so the two are one line. Likewise the Messages drawer, a part of the container's capability.
 - **A segment answer stands for the page that asks for it and for the section's sub-navigation together.** The brief's rules for containers (title, group, own path) fit it only through the second choice, and the section is placed by its own root segment and by the nav's section entries. A rule for answers shared byte for byte across a section's pages would make the three batches' lines surely the same.
 - **items.jsonl's rendering leaves out the Arabic labels,** so a segment line's terms can only be English labels and the segment, though the answer gives both languages.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **`new:nav` (30, 53) is `out`,** by the ruling after SA-21. The segments 'main' and 'mega' answer with the dashboard's whole navigation, and the class holds no capability that is the admin itself. Each section and item has its own line.
+- **The navigation's five sections stand** as containers on the capabilities their titles name. Store & Channels takes two lines, the store and its channels. Their permissions that no child holds take `core` on what they gate.
+- **Product sorting** (`product_sorting_edit`) has no capability yet. It stays in the Products container's reading, and goes to the new-thing decisions with the settings-centre's sorting section when SA-48 to SA-63 reach it.
+- **The segment rules stand for SA-22 and SA-23:** a segment is a container on the capability of the page its address opens, with no scope, and its items take no line on it.
+- **Cost:** 13.1 million tokens over 66 requests, about 154,000 an entry. No cell changes.
