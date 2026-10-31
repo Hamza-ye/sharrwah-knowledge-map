@@ -107,6 +107,11 @@ Each links to its entry. Weights are readings; the counts in them are facts from
 - [A line takes its own scope where its thing is stated under its own condition](#a-line-takes-its-own-scope-where-its-thing-is-stated-under-its-own-condition): 137 lines.
 - [Flags, badges and release states](#flags-badges-and-release-states): High together, by the lines they place; each row alone is medium (the table).
 
+### Made since the draft (31 October, evening)
+
+- [What a quality is, and a pass that reads the class's qualities from the evidence's side](#what-a-quality-is-and-a-pass-that-reads-the-classs-qualities-from-the-evidences-side): High, by what it feeds: architecture's first decisions read these qualities.
+- [The cheapest step that keeps a subject's question open may come before the subject runs](#the-cheapest-step-that-keeps-a-subjects-question-open-may-come-before-the-subject-runs): High: it lets an architecture decision come before the subject that covers it.
+
 ## Before the held pass
 
 **Where you saw them first.** The orientation page, version 9 (30 October), listed 21 rulings under the heading *Engineering's rulings since the last report, for your veto*. Each ruling below that the page listed says so, with the page's item number. The page lives outside the repository, so each ruling is cited from its source here. The page's item 8, every amount referring to a currency record, is the architecture plan's decision, and the coordinator lists it with the plan's other decisions. It isn't repeated here.
@@ -1687,6 +1692,186 @@ The new things decided no thing of the class are in the table of group 2.
 - **Weight:** low.
 - **Source:** [method report, lines 295 to 300](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/27ba96d2024dd0b7bbb377a23d79351f5de8c363/studies/class-model/method-report.md?plain=1#L295-L300)
 
+
+## Made since the draft (31 October, evening)
+
+These rulings were made after the two drafts were joined. The architecture plan's own three decisions are listed in its section 7 (`architecture/plan.md`), in this same form.
+
+### The qualities, and a step before its subject
+
+#### What a quality is, and a pass that reads the class's qualities from the evidence's side
+- **Decides:** a quality is how well, how safely, or within what bounds the platform does what it does, as the platform itself states it: a commitment (uptime, a support response), a bound (a rate limit, a size, a scale), an attestation (a certification, an audit), or how data is kept (where, by which subprocessors, isolated how, encrypted, kept how long). Its kinds are ISO/IEC 25010:2023's characteristics, with isolation between stores, where data lives and identity named. A qualities pass reads them for every platform, guides first, beside the second stage. Prices, fees and plan allowances become the plans' terms, kept by script, not qualities.
+- **Why:** you asked what defines a quality and how they were inventoried. They never were, as such: the model recorded them as a by-product of its capabilities, under a definition closed to four kinds, and most of its 3,881 quality rows are prices and plan allowances, with none on how stores are kept apart or on identity. Architecture's first decisions are about exactly those.
+- **Risks:** about 75 to 180 million tokens, an assumption. Salla and Zid may not publish some qualities; those stay recorded as not found, and asking them is yours. The ISO characteristics are named from memory, a reading, and decide no row.
+- **Instead:** leave the qualities as they are, and let each architecture decision read its qualities from the evidence when it is made: cheaper now, but architecture starts without the qualities its first decisions need.
+- **Weight:** high, by what it feeds rather than by the model's counts: architecture's first decisions read these qualities. No count moves.
+- **Source:** [PLAN.md, the qualities pass](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/PLAN.md?plain=1#L223-L231); [PLAN.md, its entry of 31 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/PLAN.md?plain=1#L665-L672)
+
+#### The cheapest step that keeps a subject's question open may come before the subject runs
+- **Decides:** the plan's rule keeps a question open until the subject that covers it has run. It now allows one kind of step first: the cheapest step that keeps that question open, where it closes only what a ruling in force already rules out. Each such step is listed for your veto. Its one use so far: every money amount points to a currency entry, decided before the currency subject (S-09) runs.
+- **Why:** the step costs one reference per amount now, and saves a redesign of every money record later. Without the exception, the architecture plan broke its own rule by taking it.
+- **Risks:** a subject can find part of its question already settled, and a step's shape may need to change once the subject runs.
+- **Instead:** no exception: keep each question fully open until its subject runs, with a review rule meanwhile. That costs a wait and a placeholder in every money record's design.
+- **Weight:** high: it lets an architecture decision come before the subject that covers it.
+- **Source:** [PLAN.md, its entry of 31 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/PLAN.md?plain=1#L674-L677)
+
+### The second stage's other rulings
+
+#### A cell isn't left as not held without the place that would show it
+- **Decides:** a cell can be recorded as not held only by naming the place, by its address or its row in a gap register, where the platform would state the thing and which isn't held. A gap entry that names a whole surface, such as Zid's 'other surfaces', isn't enough: the cell is recorded as searched and not found.
+- **Why:** otherwise two careful agents split one cell between 'not found' and 'not held', and the capture requests and the omission review's sample follow the split.
+- **Risks:** a cell whose page truly isn't held, but can't be named, reads as searched and not found, which looks like more evidence than there is.
+- **Instead:** accept a whole surface as the place.
+- **Weight:** medium: it decides which cells lead to capture requests.
+- **Source:** [S2-held-design.md, line 385](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/S2-held-design.md?plain=1#L385)
+
+#### A passage that may be the thing, but doesn't settle it, is cited and left open
+- **Decides:** where a held passage may show the thing but its words don't settle it, the agent cites it, says what would settle it, and the cell stays holding nothing.
+- **Why:** nothing gets settled that the evidence didn't settle.
+- **Risks:** a real placement waits until someone reads what would settle it.
+- **Instead:** let the agent decide on its reading.
+- **Weight:** low: it keeps cells open, never moves one.
+- **Source:** [S2-held-design.md, line 386](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/S2-held-design.md?plain=1#L386)
+
+#### What a finding could change, and what goes to a capture request
+- **Decides:** each row says what it could change: a capability's kind, a decision (named), its count, or nothing (with why), taking the first that applies. Only a 'not held' row can become a capture request. A page held but unreadable has its reader extended instead, and an unclear one comes to me.
+- **Why:** capture stays the exception: a request only where a gap could change the model or a decision.
+- **Risks:** a gap that changes only one platform's count isn't captured, but is listed among the extent's gaps.
+- **Instead:** a capture request for every gap.
+- **Weight:** medium: it decides what reaches your local agent.
+- **Source:** [S2-held-design.md, line 387](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/S2-held-design.md?plain=1#L387)
+
+#### A cell has one outcome, unless several passages show it
+- **Decides:** a cell takes one or more 'found' rows, or exactly one row of another outcome.
+- **Why:** a cell's outcome is what the model's reading and the omission review take.
+- **Risks:** none of substance; it is a form rule.
+- **Instead:** allow mixed outcomes per cell.
+- **Weight:** low: form only.
+- **Source:** [S2-held-design.md, line 388](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/S2-held-design.md?plain=1#L388)
+
+#### How each of Q3's candidate misses is cut into parts
+- **Decides:** each candidate miss is cut into parts, each the subject of its own rows, cut from the miss's own words; three were reworded after the inspection.
+- **Why:** a part an agent can answer found or not found is easier to check than a whole miss.
+- **Risks:** a cut that is too wide or too narrow asks the wrong question.
+- **Instead:** read each miss whole.
+- **Weight:** low: how the question is asked.
+- **Source:** [S2-held-design.md, line 389](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/S2-held-design.md?plain=1#L389)
+
+### The qualities pass's rulings
+
+#### Where a plan's allowance ends and a quality begins
+- **Decides:** a value is one of the plans' terms when it measures money or a quantity the merchant gets with a plan (staff accounts, locations, stores, credits); it is a quality when it measures how the system behaves (requests in a time, a size, a time, a retention window), even when it differs by plan, and its plans become its scope.
+- **Why:** the plan says plan allowances are terms, and API limits by plan are what architecture's events and extension points must design for.
+- **Risks:** a value that is both, such as a cap on products per plan, is filed by its words, and a reader may file it the other way.
+- **Instead:** everything stated on a plan table is a term.
+- **Weight:** medium: it labels the model's 3,881 quality rows.
+- **Source:** [QL-qualities-design.md, line 353](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L353)
+
+#### A quality goes on the narrowest capability it measures, or on the platform as a whole
+- **Decides:** where a quality's words cover the whole platform or all of a store's data, it sits on the platform, not on a capability, and no capability is made for it.
+- **Why:** the plan puts each quality 'on the capability it bears on', and a certificate of the company bears on no one capability.
+- **Risks:** the platform's qualities are read apart from the capabilities, so a design reading one capability can miss them; the page shows them under each kind for that reason.
+- **Instead:** a capability of their own for isolation, encryption and certifications, which the model's rule for a capability ('a place of its own') doesn't support.
+- **Weight:** medium: it decides where architecture finds each quality.
+- **Source:** [QL-qualities-design.md, line 354](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L354)
+
+#### A figure the platform reports from the past is filed by what it measures, marked as reported
+- **Decides:** a past uptime or a peak the platform says it handled is recorded as a commitment or a bound, marked 'reported', not promised.
+- **Why:** the plan's four forms have no place for a figure of the past, and architecture's scale bands need such figures.
+- **Risks:** a reader takes a reported figure for a promise; the `basis` column says which it is.
+- **Instead:** record only what a platform promises.
+- **Weight:** low: it adds figures, marked.
+- **Source:** [QL-qualities-design.md, line 355](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L355)
+
+#### The plainest passage of the platform's own document, then stop
+- **Decides:** for each question, an agent quotes the passage of the platform's own terms, docs or report that states the value most plainly, and adds another only for a different value, scope, date or holder.
+- **Why:** every further passage costs a read, and one primary statement settles a quality.
+- **Risks:** a second source that would confirm or date the first isn't collected, so a later reviewer has fewer to cross-check.
+- **Instead:** cite every passage found.
+- **Weight:** low: the work's cost and its cross-checks.
+- **Source:** [QL-qualities-design.md, line 356](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L356)
+
+#### Engineering writing and marketing pages are recorded as the platform's own account, dated
+- **Decides:** they are recorded with their dates and source type, and where the platform's terms or docs state another value, both are recorded and the reading says which is the commitment.
+- **Why:** the architecture plan grades a company's blog as that company's own account, and the engineering posts are the only source on how Shopify keeps stores apart.
+- **Risks:** an old post describes a design that has since changed; its date is shown beside it.
+- **Instead:** leave engineering writing to the architecture plan alone.
+- **Weight:** medium: they are the only source on how Shopify keeps stores apart.
+- **Source:** [QL-qualities-design.md, line 357](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L357)
+
+#### A capture request only where it could change one of architecture's six first decisions
+- **Decides:** a quality not held becomes a capture request only where it could change one of architecture's six first decisions; one that would change only a quality scenario is listed among the extent's gaps.
+- **Why:** the plan asks for a request only 'where it could change an architecture decision', and keeps capture the exception.
+- **Risks:** support and accessibility statements not held stay unrequested, though the founder's quality order ranks user experience second.
+- **Instead:** a request for every quality not held.
+- **Weight:** medium: it decides what reaches your local agent.
+- **Source:** [QL-qualities-design.md, line 358](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L358)
+
+#### Who holds a quality: the platform, or the merchant
+- **Decides:** where the platform says the merchant or the merchant's host holds a quality, as WooCommerce's hosting does, it is recorded as found, held by the merchant.
+- **Why:** the model's rule makes a statement that puts something on the merchant a mention, not a third party's work, and architecture needs to know that the platform promises nothing there.
+- **Risks:** a reader counts such a row as the platform's quality; the `holder` column says whose it is.
+- **Instead:** record nothing for it.
+- **Weight:** low: one column.
+- **Source:** [QL-qualities-design.md, line 359](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L359)
+
+#### The qualities pass places nothing
+- **Decides:** the pass records qualities only. Where a passage would change how a capability is placed, it is noted for the final review.
+- **Why:** placements are the held pass's and the second stage's, and one reader per placement keeps the counts consistent.
+- **Risks:** a correction it meets waits for the final review, which reads by risk.
+- **Instead:** let it add placements too, at the cost of a second check on each.
+- **Weight:** low: placements stay with the other steps.
+- **Source:** [QL-qualities-design.md, line 360](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L360)
+
+#### How the existing rows are labelled terms or qualities, and a third label, other
+- **Decides:** the model's existing rows are labelled terms or qualities by stated rules, and the rows the rules can't settle are reviewed once; values that are neither, such as a payout's day or a carrier's delivery time, are labelled 'other' and kept.
+- **Why:** the plan asks for the relabelling 'by script and kept', and some rows are neither.
+- **Risks:** a rule's pattern mislabels a row; a sample of each rule is checked, and every label can be undone.
+- **Instead:** two labels only, with 'other' rows kept as qualities.
+- **Weight:** medium: it labels every existing row, by rules that can be undone.
+- **Source:** [QL-qualities-design.md, line 361](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/QL-qualities-design.md?plain=1#L361)
+
+### The omission review's rulings
+
+#### The reviewer reads the evidence first, before the model's answer
+- **Decides:** the reviewer reads each piece of evidence and says what it states before looking at the model; for a cell the second stage found nothing for, it sees the second stage's search only after its own.
+- **Why:** a reviewer shown the model's answer first tends to agree with it.
+- **Risks:** more reading per item, and a reviewer who searches with weaker words than the second stage did.
+- **Instead:** show the model's lines with each item, at less cost.
+- **Weight:** low: the review's quality and cost.
+- **Source:** [O-omission-design.md, line 354](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L354)
+
+#### A held cell's missing support goes to the final review, not changed here
+- **Decides:** where the review finds that a cell already held should be placed more strongly, it records the passage for the final review, and doesn't change the cell itself.
+- **Why:** the second stage's decision 7 does the same, and the final review rules on placements.
+- **Risks:** a correction the final review doesn't reach waits.
+- **Instead:** land it here, as a finding row on a held cell.
+- **Weight:** medium: corrections to held cells wait for the final review.
+- **Source:** [O-omission-design.md, line 355](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L355)
+
+#### The walk reads in full only the places its flags mark, and a fifth of the rest
+- **Decides:** each place of a platform's top-level lists is read whole only where a flag marks it (no line, only `out`, only `shows`, no word shared with its capability, or one capability taking three or more places), and a fifth of the rest by seed.
+- **Why:** reading every place whole repeats the held pass at its cost.
+- **Risks:** a forced fit whose words happen to overlap passes unread, at the rate the sampled fifth measures.
+- **Instead:** read every place whole.
+- **Weight:** medium: it decides which of a platform's places are read in full.
+- **Source:** [O-omission-design.md, line 356](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L356)
+
+#### The sample's sizes, and doubling a group's sample where it finds a miss
+- **Decides:** section 3.2's sizes, and doubling a stratum's sample where it shows a miss, before deciding whether it is read whole.
+- **Why:** about 100 items a group gives a bound near 3%, and more reading goes where misses are.
+- **Risks:** a group whose misses cluster in strata of one item each is measured loosely.
+- **Instead:** the lean sizes, or a fixed share of every stratum.
+- **Weight:** low: the review's cost and its precision.
+- **Source:** [O-omission-design.md, line 357](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L357)
+
+#### What counts as already read
+- **Decides:** a piece of evidence is read where the concern map, a subject, a held entry or a structure built from it cites it; everything else is in a group to sample.
+- **Why:** it is the measure `held_vs_read.py` makes, extended to the held pass.
+- **Risks:** a page read through a structure that kept only its title counts as read.
+- **Instead:** count as read only what a cell's evidence cites.
+- **Weight:** medium: it decides what the review samples.
+- **Source:** [O-omission-design.md, line 358](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L358)
 
 ## Not listed here
 
