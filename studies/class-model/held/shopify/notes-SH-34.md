@@ -277,3 +277,4 @@ Not qualities: example values (a 14-day window for seasonal items), counts of cu
   - its brand note reads the line's own terms, not every name a post mentions;
   - it prints up to 400 notes.
 - **Cost:** 28.3 million tokens over 99 requests, about 218,000 an entry. A post is long and every request reads the context again; it reached 516,000 tokens.
+- **Aligned with the changelog digest (31 October, the corrections in the rulings):** SH-E-ced38862 also takes `new:Staff sales attribution`, beside CM-POS-001.

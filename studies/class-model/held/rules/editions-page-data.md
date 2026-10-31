@@ -27,7 +27,7 @@ Each entry is one feature card of one edition's Editions page, in observed-sh at
 12. A first-party app (from the App Store, at `apps/<handle>`, or 'the X app') is `own-service` on every line about its own features, renames included, 'wherever held words name the platform as its maker' ('we’ve added … to X', 'from Shopify', a store listing's developer). Its plan lines and admin page stay `core`, others' extensions of it `extension-point` (E3, SH-50, changed by the rulings after SH-35, SH-37, SH-53, SH-2 and SH-55).
 13. With no maker statement held, a Shopify-branded app is `shows` plus CM-APP-007 `core` where the card links its `apps/<handle>` page, and `core`, the maker a gap, where named with no address; a plan statement for it is `core` (the ruling after SH-36; E22, SH-53; E28, SH-54).
 14. CM-APP-011 `own-service` goes only where the card itself calls the app Shopify's (E3, SH-50; E29, SH-54).
-15. A separate device or service whose maker a held card names is `own-service` (POS Go, Managed Markets, Shopify Lending); one with none stays `shows` (POS Terminal) (E35, SH-55; E55, SH-57).
+15. A separate device or service whose maker a held post names is `own-service` (POS Go; POS Terminal, by the changelog's SH-E-dbb979f6; Shopify Lending); one with none stays `shows` (E35, SH-55; E55, SH-57; the coordinator, settling the changelog digest: four POS Terminal lines aligned). Managed Markets is the admin's service, `core` (rule 45).
 16. A first-party app's feature takes another capability's line only where the app provides that thing: Stocky's transfers stand on CM-INV-006, while Collective's rates, inventory and price lists stay in its CM-CHN-005 `own-service` line, its sourcing side CM-CAT-010 `shows` (E35, SH-55; E54, SH-57, decided by the ruling after SH-57).
 17. The platform's own developer tools are `core`, even 'built by Shopify' or for building apps. An API is `extension-point` where the card says apps do the work through it, else `core`, a Function API `extension-point` by definition, and webhooks the platform sends apps `core` on CM-API-008 and the events' capability (E3, SH-50, and its check; E24, SH-53; E45, SH-56).
 18. **An API naming an unnamed outside system is `core`:** the platform's own API for its own feature, `extension-point` only where its words say apps or partners do the work (B-extent). The Inventory States API's 'across external platforms' (SH-51) and 'using APIs to sync cash tracking reports with your accounting software' (SH-57, aligned) are `core` (decided after the digest).
@@ -69,7 +69,7 @@ Each entry is one feature card of one edition's Editions page, in observed-sh at
 42. A Shopify Shipping carrier is the filler of the CM-SHP-002 `core` line and takes CM-SHP-015 `shows`; the merchant's own carrier account is CM-SHP-015 `core` (E15, SH-51; E50, SH-56).
 43. Cards saved for a faster checkout are CM-PAY-014's; cards charged later or kept current are CM-PAY-022's, providers' access to them `extension-point` (E33, SH-54; E38, SH-55).
 44. POS devices are CM-POS-002, receipts CM-ORD-008 `core`, staff credited with a sale `new:Staff sales attribution` (E55, SH-57).
-45. Managed Markets (formerly Markets Pro) is CM-MKS-003 `own-service` on 'Our Merchant of Record capability', `core` too where the card links `settings/markets/pro/apply`, and holds its duties and restricted products; its other features go on their own capabilities, `core`, scoped 'Managed Markets' (E35, E41, SH-55; E53, SH-57).
+45. Managed Markets (formerly Markets Pro) is CM-MKS-003 `core`, Global-e `outside` where named: 'Our Merchant of Record capability' names an admin service, as the cell reads it, not a separate product (the test the correction on Shopify Balance set; the coordinator, settling the changelog digest: thirteen lines aligned). It holds its duties and restricted products; its other features go on their own capabilities, `core`, scoped 'Managed Markets' (E35, E41, SH-55; E53, SH-57).
 46. A card whose words name business buyers also takes CM-B2B-001 (E58, SH-57); a quote request turned into a draft order is CM-B2B-004 `core` (the check after SH-50).
 47. A feature's notices to staff are CM-NTF-002, address validation at checkout CM-CUS-009, an order edit's changes CM-ORD-002, discounts without a code CM-MKT-003 `core`, and a plan's billing currency and payment method CM-PLN-004 and CM-PLN-005 (E42, E48, E49, SH-56; the check after SH-54; E57, SH-57).
 48. Merchant financing, Shopify Lending's term loans and line of credit included, is CM-PAY-026, its repayment a quality (the check after SH-55).
@@ -112,10 +112,11 @@ The table follows the ruling after SH-55 and the batches' lines; each app's plan
 | ShopifyQL Notebooks | `own-service` | SH-E-3f85908b |
 | Shopify Credit | `own-service` on its features; its admin routes and plan rows `core` (the ruling after SH-41) | SH-E-e3a378a2 |
 | Shopify Balance | `core`, the admin's own account (rule 25) | not a separate product |
-| Shopify Forms, Marketplace Connect, Order Printer, the Pixel Helper | `core`, the maker a gap (rule 13) | none held |
+| Shopify Forms, Marketplace Connect, Order Printer | `core`, the maker a gap (rule 13) | none held |
+| Pixel Helper | `core`, opened from the admin's Customer events (check SH-58) | SH-E-0a66f16d names its maker; a built-in tool, not a separate product |
 | Bill Pay | `core` at `finances/billpay`, `shows` at `apps/bill-pay` (E28, SH-54); the maker a gap | none held (SH-56) |
 
-The devices and services with a maker statement are POS Go (SH-E-fc9fba8c), Managed Markets (SH-E-9e3f5c76) and Shopify Lending (SH-E-797024ee). SH-54 kept Shopify Fraud Control, the Privacy & Compliance app and ShopifyQL Notebooks without a maker, before `makers` existed. `held_entries.py makers --platform shopify NAME …` settles them and any app not listed.
+The devices and services with a maker statement are POS Go (SH-E-fc9fba8c), POS Terminal (SH-E-dbb979f6, a changelog post) and Shopify Lending (SH-E-797024ee); Managed Markets' 'Our Merchant of Record capability' names an admin service (rule 45). SH-54 kept Shopify Fraud Control, the Privacy & Compliance app and ShopifyQL Notebooks without a maker, before `makers` existed. `held_entries.py makers --platform shopify NAME …` settles them and any app not listed.
 
 ## 4. The new things named so far
 

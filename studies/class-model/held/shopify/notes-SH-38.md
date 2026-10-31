@@ -196,3 +196,4 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
   - `show --meta` now prints the meta of the label the entries are read under (`@posts`, 1,646 posts), not the feed's;
   - the brief's line on a post's support follows B-extent: `own-service` where held words name the platform as an app's maker, `extension-point` where third parties do it through what the platform provides.
 - **Cost:** 18.7 million tokens over 72 requests, about 144,000 an entry. The context reached about 442,000 tokens.
+- **Aligned with the changelog digest (31 October, the corrections in the rulings):** Combined Listings `own-service` (SH-E-295495f9).

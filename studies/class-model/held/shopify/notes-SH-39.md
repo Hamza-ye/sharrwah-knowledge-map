@@ -153,3 +153,4 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 - **New thing:** Finance, the admin's section over Capital, Credit, Balance, Payments, Bill Pay and Taxes (M-13), decided with the others.
 - **Rules 1 to 14 stand for SH-40 to SH-46.** Among them: Markets Pro is Managed Markets, by the rename SH-E-dc501d64 states; a post whose link opens a Shop help page is about Shop's feature, by the ruling after SH-38.
 - **Cost:** 29.9 million tokens over 102 requests, about 230,000 an entry. The context reached about 504,000 tokens, with 20 runs of the checker.
+- **Aligned with the changelog digest (31 October, the corrections in the rulings):** Combined Listings `own-service` (SH-E-56c538c6); unit pricing on CM-CAT-001 (SH-E-4d3e3dea); SH-E-03c207ce also takes `new:Staff sales attribution`; Collective's two CM-SHP-001 lines dropped (SH-E-2b8f1068, SH-E-c0c04479).

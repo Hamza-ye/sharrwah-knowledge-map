@@ -148,3 +148,11 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
 
   SH-38's, SH-55's, SH-56's and SH-57's lines are aligned.
 - **A help page's plan requirement is its feature's condition, not a plan line** (after SH-30). Its plans are the line's scope, and the line keeps its feature's support. A plan line is a plan page's own row or list, which states what a plan includes: the pricing pages, the plans' feature sets. Checkout Blocks' features under a 'Plan requirement' note stay `own-service`, on Plus or 'Basic plan or higher', as the changelog's posts on them are (SH-35, SH-38).
+- **Corrections with the changelog digest** (`held/rules/merchant-changelog.md`, after SH-41):
+  - Managed Markets is the admin's own service, `core`, with Global-e `outside` where it is named, as CM-MKS-003's cell reads it. 'Our Merchant of Record capability' doesn't make it a separate product, by the test the correction on Shopify Balance set. The Editions' 13 lines are aligned.
+  - POS Terminal is `own-service` on every line, since a held post names its maker: 'POS Terminal, Shopify’s newest, most powerful payment device' (SH-E-dbb979f6). The Editions' 4 lines are aligned.
+  - The Combined Listings app is `own-service`. 'We’ve improved how all products … are listed … From a new app for merchandising products' (SH-E-dc618719) names Shopify as its maker. The changelog's 2 lines are aligned; the plan rows stay `core`.
+  - Unit pricing is CM-CAT-001, a price kept on the product record (the check after SH-34; the ruling after SA-25). SH-39's line is aligned.
+  - A country's address fields are CM-CUS-008, with CM-CHK-001 where the post says at checkout; address validation and autocompletion are CM-CUS-009. A CM-CUS-008 line is added for SH-41's post.
+  - A post crediting a sale to a staff member takes `new:Staff sales attribution` beside CM-POS-001. SH-34's and SH-39's posts are aligned.
+  - Shopify Collective's shipping rates and profiles between suppliers and retailers are Collective's own (the ruling after SH-57). SH-39's 2 CM-SHP-001 lines are dropped, and their words join the CM-CHN-005 lines.

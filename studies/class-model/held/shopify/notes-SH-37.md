@@ -162,5 +162,5 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
   - the Horizon themes are `core`, by the ruling after SH-53;
   - Shop's subscriptions sit on its channel only;
   - two lines take their own scope, by the ruling after SH-69.
-- **Rules 1 to 14 stand for SH-38 to SH-46,** with rule 1 changed by the ruling on the admin's frame.
+- **Rules 1 to 14 stand for SH-38 to SH-46,** with rule 2 changed by the ruling on the admin's frame.
 - **Cost:** 31.8 million tokens over 98 requests, about 245,000 an entry. The context reached about 530,000 tokens, past the prompt's 250,000.

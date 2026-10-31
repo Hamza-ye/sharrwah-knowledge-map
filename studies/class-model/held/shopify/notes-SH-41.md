@@ -187,3 +187,4 @@ Four are this batch's own:
 - **Collective's two CM-CAT-010 `shows` lines stand,** as the cell's note asks. The ruling after SH-57 is for `own-service` lines on another capability.
 - **The rules this batch wrote stand for SH-42 to SH-46:** a first-party app's release on CM-APP-011; Collabs' posts on CM-MKT-014 and CM-MKT-015; Markets Pro's payouts; a kind of store as scope, a sales minimum as a quality.
 - **Cost:** 24.6 million tokens over 96 requests, about 189,000 an entry. The context reached about 424,000 tokens.
+- **Aligned with the changelog digest (31 October, the corrections in the rulings):** SH-E-463eb101 also takes CM-CUS-008, a country's address fields.
