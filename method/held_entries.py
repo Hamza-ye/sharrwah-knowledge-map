@@ -746,19 +746,30 @@ def cmd_batches(a):
     for p in PLATFORMS:
         es = [e for e in entries(p) if e["entry_id"] not in taken]
         k = len(glob.glob(os.path.join(HELD, "batches", f"{PREFIX[p]}-*.txt")))
+        n_of = collections.Counter(e["structure"] for e in es)
         cut, cur = [], []
         for i, e in enumerate(es):
             cur.append(e)
             last = i == len(es) - 1
             nxt = es[i + 1] if not last else None
             boundary = last or nxt["structure"] != e["structure"] or nxt["section"] != e["section"]
-            if last or (boundary and len(cur) >= a.size * a.min) or len(cur) >= a.size * 1.3:
+            # a structure of --alone entries or more starts and ends its own batches, so its batches don't wait on
+            # another structure's, nor another's on its
+            alone = a.alone and not last and nxt["structure"] != e["structure"] and max(n_of[e["structure"]], n_of[nxt["structure"]]) >= a.alone
+            if last or alone or (boundary and len(cur) >= a.size * a.min) or len(cur) >= a.size * 1.3:
                 cut.append(cur)
                 cur = []
-        # a short tail would pay a batch's whole start for a few entries: it joins the batch before it
-        if len(cut) > 1 and len(cut[-1]) < a.size * a.min / 2:
-            tail = cut.pop()
-            cut[-1] = cut[-1] + tail
+        # a short batch (a structure's tail, or a small structure between two of --alone entries) would pay a batch's
+        # whole start for a few entries: it joins the batch before it, the two split evenly where together they would
+        # pass the largest batch
+        joined = []
+        for c in cut:
+            if joined and len(c) < a.size * a.min / 2:
+                both = joined.pop() + c
+                joined += [both[:len(both) // 2], both[len(both) // 2:]] if len(both) > a.size * 1.3 else [both]
+            else:
+                joined.append(c)
+        cut = joined
         for cur in cut:
             k += 1
             b = f"{PREFIX[p]}-{k}"
@@ -1464,6 +1475,7 @@ def main():
     s = sub.add_parser("build"); s.add_argument("--platform", choices=PLATFORMS); s.set_defaults(f=cmd_build)
     s = sub.add_parser("batches"); s.add_argument("--size", type=int, default=300)
     s.add_argument("--min", type=float, default=0.5, help="a batch ends where a structure or section ends once it holds this share of --size")
+    s.add_argument("--alone", type=int, default=0, help="a structure of this many entries or more starts and ends its own batches")
     s.set_defaults(f=cmd_batches)
     s = sub.add_parser("show"); s.add_argument("--platform", choices=PLATFORMS, required=True)
     s.add_argument("--batch"); s.add_argument("--structure"); s.add_argument("--from", type=int); s.add_argument("--to", type=int)
