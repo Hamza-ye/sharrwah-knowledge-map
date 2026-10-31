@@ -23,15 +23,15 @@
 ## Rules followed
 
 **SH-68's R0 to R11, SH-69's rules 1 to 7, SH-70's rules 1 to 9, SH-71's rules 1 to 3, SH-73's rules 1 to 8, and the rulings since, as kept.**
-- **R0:** no entry of mine is on every read site of its language, so every line takes its labels, after its plans. The hero 74 is on eight English sites; the footnote 22 on three; the Tax rows on four; Shop Campaigns, Shipping insurance and Audiences on two (ca and www.shopify.com); the eg and sa entries on two of the three Arabic sites.
-- **R1:** the four terms entries (25, 71, 73; and the POS page's), three `core` lines each. `googleCountryOffer` gives no line.
+- **R0:** no entry of mine is on every read site of its language, so every line takes its labels, after its plans. The hero 74 is on eight English sites; the footnote 22 on three; the Tax rows on four; Shop Campaigns, Shipping insurance and Audiences on two (ca and www.shopify.com); the Arabic entries on eg and sa, or on eg alone (38, 56, 58, 68, 70), of the three Arabic sites.
+- **R1:** the three terms entries (25, 71, 73), three `core` lines each. `googleCountryOffer` gives no line.
 - **R2:** the cards and their features; the POS Pro cards (52) take their sites alone, the offer itself (the ruling after SH-70).
 - **R3:** the rows, each on its twin's capability, matched by its heading, not its pointer (below); the section heading Tax (below).
 - **R4, R6, R7, R9:** the POS summaries and lists, the FAQs, the qualities, the disclaimers' providers (`outside`, with fillers).
 - **SH-73's rules 1 and 2:** ca's summaries state `card_rates.in_person` and the 12-month incentive on Basic, Grow and Advanced, so they take those lines (26 to 31). The eg and sa summaries state neither.
 - **SH-73's rule 7:** ca's Capital footnote names its lender for Canada (24, below).
 - **Twins, by meaning:** `earlier`'s pointer twins were right for the POS and international pages, the terms entries, the disclaimers and the FAQs. They were wrong in two places:
-  - **ca's rows 33 to 59:** ca's table holds rows au's and ae's lack, so from MB WAY rates on, the pointer twin is another row: 8's is Third-party transaction fees, 10's the note row, 13's Checkout customization. I matched each row by its heading, as `earlier`'s labels also show.
+  - **ca's rows from 33 on:** ca's table holds rows au's and ae's lack, so from MB WAY rates (row 33) on, the pointer twin is another row. 8's are ae's Third-party transaction fees and au's Bancontact rates; 10's, ae's note row and au's MB WAY rates; 14's, ae's API rate limits and au's 3rd-party calculated shipping rates. I matched each row by its heading, as `earlier`'s labels also show.
   - **eg's and sa's `card_rates_short`** (41, 44, 47, 50): the pointer twins are card rates (CM-PAY-007), but these cards state the third-party providers' fee (rule 4 below).
 
 **Rules for kinds the earlier rules don't cover, for the coordinator to align with SH-75 to SH-79:**
@@ -66,7 +66,7 @@ Its place of its own (the table's row Earn 1% back on all sales), proposed domai
 - **19, Advanced tax platform `shows`:** kept to the cell's placement of the same row (SH-S-7069), since the row names no provider and the plans don't include it. `core` is the other reading, if 'Add on' is read as the platform offering the add-on itself, as SH-73's rule 5 reads Grow's 'Add on' for calculated rates. The cell's 'Avalara add-on fees' (SH-I-1325) is a lead to its provider, not a statement of this row. CM-TAX-002, by the tooltip's 'Calculate accurate taxes', is a third reading. None would change a cell.
 - **18, the EU and UK:** the tooltip says the row's tools serve 'EU and UK sales'. I read that as the sales they apply to, not a condition on the store, so it stays in reading. If the coordinator reads it as the line's market, the scope would be the plans and sites with ` and EU;UK`, and the ruling after SA-53 doesn't say how ` and ` reads a list after it.
 - **14, the labels named in passing:** 'per eligible label' names Shopify's labels (CM-SHP-002) as what the insurance covers. CM-SHP-003 is CM-SHP-002's child and holds the same statement, so I gave no CM-SHP-002 line.
-- **41, 44, 47 and 50:** rule 4 rests on R2. The eg and sa pages state no card rate anywhere I read: their cards, table rows (SH-68's R0: 76 rows, the English sites' 76) and POS summaries give only the third-party fee. Whether Shopify Payments is offered on those sites isn't stated in these entries. The eg international page's processing row (38) names Shopify Payments' 3.9% for Managed Markets' buyers, which is another statement.
+- **41, 44, 47 and 50:** rule 4 rests on R2. The eg and sa plans pages state no card rate anywhere I read: their cards and POS summaries give only the third-party fee, and their table (76 rows, items.jsonl line 43) has no Accepting payments section, though it keeps 'قبول طرق الدفع المحلية*'. Whether Shopify Payments is offered on those sites isn't stated in these entries. The eg international page's processing row (38) names Shopify Payments' 3.9% beside Managed Markets, which is another statement.
 - **The twins' doubts carry over,** as SH-73's notes list them: the FAQs' 'every paid plan' read as the four plans (36, 69); the iPad stand's `own-service` (35, 68); the transaction fees on CM-PLN-003 (34, 67); the incentive's 'free hardware and more' (26 to 28).
 
 ## A structure whose items and sources disagree
