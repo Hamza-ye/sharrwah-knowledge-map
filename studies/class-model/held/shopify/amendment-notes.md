@@ -59,4 +59,5 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
   - `return-reasons` (in SH-97, not yet placed).
 - **Their lines repeat the model's own reading.** At the amendment they are the list's options, not new evidence of a support; the carriers' names still serve as the cell's fillers.
 - **WooCommerce's citations hold 333 such ranges.** At WooCommerce's amendment, check which of its placed entries they cover. A rebuild should first teach `cited_lines` both forms; the rebuild refuses to drop a placed entry, so placed ones must stay.
+- **Items the build leaves without an entry, for the omission review:** three settings items that are counted as cited because their keys match other sources' statements, with neither an entry nor a model statement of their own (fake-demo-sharrwah's `billing` and `user_permissions`, ibx5bt-xy's `markets`; the check after SH-20), and a node whose id holds `?` and `&` (the mobile app's lesson card, `mobile-app-navigation/tabs-and-more/items.jsonl` line 39; the check after SH-80). Each cell already holds what they show.
 

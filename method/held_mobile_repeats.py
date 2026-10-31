@@ -11,6 +11,7 @@ Usage:
   python3 -I method/held_mobile_repeats.py            prints what it would do
   python3 -I method/held_mobile_repeats.py --cut      re-cuts the five batches
   python3 -I method/held_mobile_repeats.py --apply    writes SH-81's and SH-84's lines, once SH-80, SH-82 and SH-83 are placed
+  python3 -I method/held_mobile_repeats.py --apply SH-81    writes SH-81's alone, whose repeats' first occurrences are all SH-80's
 """
 import csv, collections, glob, os, re, sys
 
@@ -80,7 +81,7 @@ if "--apply" in sys.argv:
                 r = dict(zip(hd, l.split("\t")))
                 for x in r["entry_id"].split(";"):
                     lines[x.strip()].append((b, n, r))
-    for b in (SCRIPT_NAV, SCRIPT_SET):
+    for b in [a for a in sys.argv[1:] if a in (SCRIPT_NAV, SCRIPT_SET)] or (SCRIPT_NAV, SCRIPT_SET):
         p = f"{H}/shopify/placements-{b}.tsv"
         assert not os.path.exists(p), f"{p} exists: the script writes the batch's lines once"
         out = []
