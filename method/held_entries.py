@@ -1641,8 +1641,9 @@ def cmd_check(a):
             if r[fld] and any(not x.strip() for x in r[fld].split(";")):
                 problems.append(f"{w}: {fld} has an empty piece")
         ss = [x.strip() for x in r["supports"].split(";") if x.strip()]
-        if r["placement"] not in PLACEMENTS:
-            problems.append(f"{w}: placement is one of {', '.join(PLACEMENTS)}")
+        allowed = PLACEMENTS if a.batch.startswith("QL-") else PLACEMENTS[:3]   # quality: a QL batch's line only
+        if r["placement"] not in allowed:
+            problems.append(f"{w}: placement is one of {', '.join(allowed)}")
         if r["placement"] == "capability":
             if r["cap_id"] not in caps:
                 problems.append(f"{w}: capability names one cap_id of the merged model (an entry two capabilities' takes two lines)")
