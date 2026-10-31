@@ -170,3 +170,22 @@ That gives about **1,550 to 1,800 items** when the selection runs.
 7. **The inspection.** The brief and the script changed after their inspection, so `PLAN.md`, section 3, asks for another. *Proposed:* an agent that made none of them inspects both, at `high`, on the real files and these fixtures, before the selection runs: about 10 to 20 million of the 30 to 50 the projection holds for this step (an assumption).
 8. **The omission review's `absorbed`.** *Proposed:* the build of `om_sample.py` says in which column the walk's flag lands. The inspection confirms the reason reads it.
 9. **`review/agents.tsv`,** for the record of independence (section 4). *Proposed:* the coordinator writes it as each batch is spawned, as `omission/parts.tsv` does.
+
+## 8. The coordinator's decisions (31 October)
+
+**On the open questions (section 7):**
+1. **Cost.**
+   - The selection runs in full, re-projected after its first four batches.
+   - The projection goes to the founder if its top passes 6.9 billion.
+   - The selection is thinned (`--thin`) only on the founder's word.
+   - Before it runs, the coordinator re-projects the extent with the second stage's measured rate, and brings it to the founder with this estimate beside the lean one (1,328 items, 159 to 332 million).
+2. **Rulings from before the held pass.** As is: the reasons that read their cells test them.
+3. **The ruling sample.** One line per platform, then up to 4 or 2%. Yes.
+4. **The batch sample.** One line per batch. Yes.
+5. **Quality leads in `s2-lead`.** Kept, and the reviewer checks whether `qualities/` holds the quality. Yes.
+6. **Timing.** The selection runs once, after the omission review, S2-NEW and the qualities pass have landed, with `reports/GM-rulings.md` at the same commit. Yes.
+7. **Inspection.** An agent that made none of it inspects the brief and the script before the selection runs. Yes, now, on fixtures, while the steps before it run.
+8. **`absorbed`.** The omission review's builder names the column, and that review's inspection confirms it. Yes.
+9. **`review/agents.tsv`.** The coordinator writes it as each batch is spawned. Yes.
+
+**On the rulings (section 6):** `R-R1` to `R-R5` are confirmed. Each is listed for the founder's veto in `reports/GM-rulings.md`, in the four parts given here.
