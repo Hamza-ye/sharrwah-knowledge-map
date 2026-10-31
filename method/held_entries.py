@@ -813,6 +813,58 @@ def cmd_cells(a):
                   + "; ".join(clip(e["why"], 90) for e in es[: a.rows]) + ("; …" if len(es) > a.rows else ""))
 
 
+# Bundle route structures: an entry stands for every item with its app and path (the brief's known case), so `show`
+# prints them, with the archive record of the bundle each one is in, and an agent needs no search to find either.
+ROUTE_ITEMS = {("salla", "dashboard-app-routes"), ("salla", "portal-app-routes")}
+
+
+def route_items(platform, structure, cache={}):
+    """{(app, path): [(line, keys, has condition, record)]} for a bundle route structure's items, each with the
+    record `raw/runs/<run>/fetch.warc.gz@<offset>` of the bundle file it was read from, by the structure's runs' fetch.cdx."""
+    if (platform, structure) in cache:
+        return cache[(platform, structure)]
+    repo, root, sub = REPOS[platform]
+    base = folder(platform, structure)
+    out = collections.defaultdict(list)
+    for f in sorted(glob.glob(os.path.join(base, "*", "items.jsonl"))):
+        meta = json.load(open(os.path.join(os.path.dirname(f), "meta.json"), encoding="utf-8"))
+        uris = {}
+        for run in meta.get("runs") or []:
+            cdx = os.path.join(root, "raw", "runs", run, "fetch.cdx")
+            if not os.path.exists(cdx):
+                continue
+            for l in open(cdx, encoding="utf-8", errors="replace"):
+                g = l.split()
+                if len(g) > 8 and g[8].isdigit():
+                    uris.setdefault(g[0], f"raw/runs/{run}/fetch.warc.gz@{g[8]}")
+        for i, l in enumerate(open(f, encoding="utf-8"), 1):
+            d = json.loads(l)
+            app, ver, fn = d.get("app") or "", d.get("version") or "", d.get("file") or ""
+            rec = next((r for u, r in uris.items() if u.endswith("/" + fn) and f"/{app}/{ver}/" in u), "") or \
+                next((r for u, r in uris.items() if u.endswith("/" + fn)), "")
+            out[(app, d.get("path"))].append((i, ",".join(d.get("keys") or []) or "none", "condition" in d, rec,
+                                              d.get("path_source") or ""))
+    cache[(platform, structure)] = out
+    return out
+
+
+def bundle_code(platform, rec, path_source, keys, chars, cache={}):
+    """The bundle's code at the places an object literal gives `path` the item's own expression and, near it, the
+    item's own other keys (its `element`, `children`, `redirect`): up to two, a quarter of `chars` before and the rest
+    after, so the route's element, guard or redirect shows beside its path. Where no place holds its keys, the first."""
+    repo, root, sub = REPOS[platform]
+    if rec not in cache:
+        warc, off = rec.rsplit("@", 1)
+        import warc_text
+        body = warc_text.read_record(os.path.join(root, warc), int(off))[-1]
+        cache[rec] = body.decode("utf-8", "replace") if isinstance(body, bytes) else str(body)
+    text = cache[rec]
+    near = re.compile(r"(?<![\w$])(?:" + "|".join(re.escape(k) for k in keys) + r")\s*:") if keys else None
+    hits = [m.start() for m in re.finditer(r"path\s*:\s*" + re.escape(path_source), text)]
+    good = [h for h in hits if near and near.search(text[max(0, h - 200): h + 300])]
+    return [text[max(0, h - chars // 4): h + chars].replace("\n", " ") for h in (good or hits[:1])[:2]]
+
+
 def cmd_show(a):
     es = entries(a.platform)
     if a.batch:
@@ -840,6 +892,21 @@ def cmd_show(a):
         if lo <= i <= hi:
             lab = e["labels"] if e["labels"] not in ("", ".") else ""
             print(f"{i:>4} {e['entry_id']} [{e['structure']}{' @' + clip(lab, 80) if lab else ''}] {clip(e['text'], a.width)}")
+            if (a.platform, e["structure"]) in ROUTE_ITEMS:
+                m = re.match(r"app: ([^;]+); path: (.*)$", e["text"])
+                its = route_items(a.platform, e["structure"]).get((m.group(1).strip(), m.group(2).strip())) if m else None
+                if its:
+                    recs = sorted({r for _, _, _, r, _ in its if r})
+                    print("       items: " + ", ".join(f"line {n} (keys {k}{'; condition' if c else ''})" for n, k, c, _, _ in its)
+                          + ("; bundle " + ", ".join(recs) if recs else ""))
+                    if a.code:
+                        shown = set()
+                        for n, k, c, r, src in its:
+                            if k != "none" and r and src:
+                                for snip in bundle_code(a.platform, r, src, k.split(","), a.code):
+                                    if snip not in shown:
+                                        shown.add(snip)
+                                        print(f"       code, line {n}: {snip}")
             if idx:
                 cs = candidates(e, idx)
                 if cs:
@@ -1199,6 +1266,7 @@ def main():
     s.add_argument("--batch"); s.add_argument("--structure"); s.add_argument("--from", type=int); s.add_argument("--to", type=int)
     s.add_argument("--width", type=int, default=1200); s.add_argument("--meta", action="store_true")
     s.add_argument("--candidates", action="store_true", help="each entry's leads: capabilities whose cited statements share its identifiers, or whose terms it holds")
+    s.add_argument("--code", type=int, default=0, help="for a bundle route structure: this many characters of the bundle's code at each item's path, for the items that are more than a path")
     s.set_defaults(f=cmd_show)
     s = sub.add_parser("cells", help="each named capability's cell on the platform, compact")
     s.add_argument("--platform", choices=PLATFORMS, required=True); s.add_argument("cap_ids", nargs="+")
