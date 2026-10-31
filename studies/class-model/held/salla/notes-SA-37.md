@@ -123,3 +123,17 @@ The values agree: each entry stands for one route object of layout-mf's router a
 - **The serving apps' locales** (ui-partners-portal-apps, -domains) aren't in the records I read. So the fulfillment centers, the store events and the domains' purpose are read from routes, keys and the sweep's pages.
 
 The checker's last line, for SA-37: `130 of 130 entries placed; 0 problems`.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **The lines follow SA-34's to SA-36's rules,** and the CHANGES lines repeat SA-35's (private apps, app onboarding steps), which stand.
+- **The paths no batch had placed stand,** and SA-38 and SA-39 keep to them for the serving apps' own routes:
+  - app lists and pages on CM-APP-002;
+  - fulfillment centers on CM-SHP-011;
+  - store events on CM-API-008;
+  - domains on CM-SFR-008 and CM-SFR-009, `shows`, scope `domain-purchase`;
+  - coupons on CM-APP-003, app coupons by step 048's form, which settles SA-35's question;
+  - payouts and billing behind `temp-payments-billing` as `shows`;
+  - employees on CM-PTN-002.
+- **Domains stay `shows`.** The pages read as Salla selling domains to partners, but whose store a partner's domain serves isn't stated, and the held partner lacks the feature. The cell's `shows` stands until a statement says more.
+- **Cost:** 8.8 million tokens over 56 requests, about 68,000 an entry. No cell changes beyond SA-35's.
