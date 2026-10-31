@@ -1873,6 +1873,48 @@ These rulings were made after the two drafts were joined. The architecture plan'
 - **Weight:** medium: it decides what the review samples.
 - **Source:** [O-omission-design.md, line 358](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/29608133787bbf52aca4fb4a0c262af38a117f9c/studies/class-model/briefs/O-omission-design.md?plain=1#L358)
 
+### The final review's rulings
+
+#### A held line that follows its ruling can still be found wrong
+- **Decides:** where the final review samples the lines a high-weight ruling placed, a line that follows the ruling as worded is still marked wrong if it departs from the extent brief's rules on who does a thing. The finding names the ruling.
+- **Why:** the held pass's dry run found that most of its misses came from a brief that restated the model's rules loosely, so a ruling can carry an error into every line it places.
+- **Risks:** reviewers argue again rulings that were settled.
+- **Instead:** test only whether each line applies its ruling, and leave the ruling to your veto.
+- **Weight:** high: it tests the rulings that many lines rest on.
+- **Source:** [R-extent-design.md, lines 140 to 144](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/9195b096635948b4f4fb7aa50f1dc3bdd2025f42/studies/class-model/briefs/R-extent-design.md?plain=1#L140-L144)
+
+#### The omission review's 'held' verdicts are read blind
+- **Decides:** a reviewer reading a sample of the omission review's 'held' verdicts decides what the item states before reading the verdict's basis.
+- **Why:** the omission review does the same for the second stage's rows; read with the answer first, the measured miss rate would be biased low.
+- **Risks:** more reading per item.
+- **Instead:** read each verdict with its basis first, at less cost.
+- **Weight:** low: the review's precision and cost.
+- **Source:** [R-extent-design.md, lines 145 to 148](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/9195b096635948b4f4fb7aa50f1dc3bdd2025f42/studies/class-model/briefs/R-extent-design.md?plain=1#L145-L148)
+
+#### The cells the second stage read are left to the omission review's sample
+- **Decides:** a cell the second stage read and left holding nothing isn't selected again by the final review's 'nothing held' reason.
+- **Why:** the second stage reads every such cell, and the omission review measures how many it missed.
+- **Risks:** a lead the second stage didn't weigh goes unread, unless the omission review samples it.
+- **Instead:** read them all again, about 146 items more.
+- **Weight:** medium: it decides whether 146 cells are read twice.
+- **Source:** [R-extent-design.md, lines 149 to 153](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/9195b096635948b4f4fb7aa50f1dc3bdd2025f42/studies/class-model/briefs/R-extent-design.md?plain=1#L149-L153)
+
+#### My own corrections to held lines are read by risk
+- **Decides:** the final review reads every correction or alignment I made to a held line where an error could move a count (39), and a seeded third of the other 701.
+- **Why:** the other 701 sit on cells that count through lines I didn't touch.
+- **Risks:** an error of mine in one of the unread two thirds stays, where no count rests on it.
+- **Instead:** read all 740, about 70 items more.
+- **Weight:** medium: it decides how much of my own work is read again.
+- **Source:** [R-extent-design.md, lines 154 to 157](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/9195b096635948b4f4fb7aa50f1dc3bdd2025f42/studies/class-model/briefs/R-extent-design.md?plain=1#L154-L157)
+
+#### Two capabilities that may be one are read by the terms they share
+- **Decides:** a pair the merge flags as possibly one capability is read in full where the two share five or more terms, one was made since 30 October, or it was flagged then; a tenth of the rest is read.
+- **Why:** the held pass grew those flags from about 175 to 1,038, most of them pairs that share a word or two.
+- **Risks:** a real duplicate that shares few terms is read only if the tenth draws it.
+- **Instead:** read all 1,038, about 900 items more.
+- **Weight:** medium: a duplicate doubles a count, but few pairs sharing a word or two are one thing (a reading).
+- **Source:** [R-extent-design.md, lines 158 to 161](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/9195b096635948b4f4fb7aa50f1dc3bdd2025f42/studies/class-model/briefs/R-extent-design.md?plain=1#L158-L161)
+
 ## Not listed here
 
 - **The founder's own rules:** the cost goes to you only if the projection's top passes 6.04 billion ([S2-held-design.md, line 404](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/27ba96d2024dd0b7bbb377a23d79351f5de8c363/studies/class-model/briefs/S2-held-design.md?plain=1#L404)). It rests on your standing decision of 27 October.
