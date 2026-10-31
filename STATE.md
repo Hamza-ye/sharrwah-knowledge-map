@@ -264,7 +264,24 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - `PLAN.md` now has a qualities pass, by ISO/IEC 25010:2023, with isolation between stores, where data lives and identity named (`e8f3a78f`). It is listed for the founder's veto.
       - Its brief is being drafted (`briefs/QL-qualities.md`).
     - **The omission review's brief** is being drafted (`briefs/O-omission.md`).
-    - **Next:** the second stage's fixes checked and committed, then S2-ZD-1 alone, landed end to end; the plan's revision checked and committed; the two drafts decided, then inspected; the new rulings added to `reports/GM-rulings.md`.
+    - **Since about 21:00:**
+      - **The architecture plan is revised** with every finding of its review (`afa4f0b8`). Its section 7 lists its three decisions in plain words, for the founder's veto:
+        - every amount points to a currency entry, decided now;
+        - each part owns its records;
+        - Zid, BigCommerce and WooCommerce are graded as three of the five references.
+
+        `PLAN.md` gains the exception for the cheapest step before its subject runs. Its risk 5 is brought up to date: Zid, BigCommerce and WooCommerce have 20, 15 and 14 observed runs.
+      - **The extent is re-measured** (`method-report.md`, section 18): about 5,420 million spent, and about 6.3 to 6.9 billion projected. That passes 6.04 billion, so it went to the founder.
+      - **The omission review's and the qualities pass's designs are decided** (`O-omission-design.md` section 11, `QL-qualities-design.md` section 12). Their tools wait for the second stage's fixes, since they share scripts.
+      - **The qualities pass reads the held cells' qualities** the second stage doesn't: Shopify's `compliance-reports`, `status-page`, `legal-documents` and `dev-changelog`, and Salla's `com-policies` and `partners-legal`.
+      - **Running:**
+        - the second stage's fixes;
+        - the final review's brief and selection, brought up to the held pass (`briefs/R-extent.md`, `R-extent-design.md`, `method/review_select.py`).
+    - **Next:**
+      1. the second stage's fixes checked and committed;
+      2. S2-ZD-1 alone, landed end to end and measured;
+      3. the qualities pass's tools, then the omission review's, one build agent at a time, each inspected;
+      4. the new rulings added to `reports/GM-rulings.md`.
   - **Since 18:40, to about 20:00 UTC on 31 October: the second stage's brief and tools.**
     - **The brief** `briefs/S2-held.md` and its design `briefs/S2-held-design.md` are drafted (`d91379ee`), with the coordinator's decisions on the design's open questions.
     - **Its two rulings are written in plain words** for the founder's veto (`cc4434f0`): what each decides, why, what it risks and its alternative. The founder asked on 31 October that no ruling be listed by its code alone, so every ruling at GM is written this way.
