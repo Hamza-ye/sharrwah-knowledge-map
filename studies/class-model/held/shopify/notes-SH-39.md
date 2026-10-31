@@ -73,8 +73,8 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 
 ## The other NOTEs
 
-- **`own-service`, 42 lines:** Flow and Collective (the ruling after SH-55); Search & Discovery (SH-E-9b869699); Shopify Email (SH-E-32e5ccc3); Audiences ('We’re releasing Shopify Audiences v2.3'); Translate & Adapt (SH-E-04551fad); the Shopify Bundles app (SH-E-1d272a37, SH-E-88c8359c); Stocky (SH-E-5b89aa16); Shopify Inbox (SH-S-2758); POS hardware (SH-S-7269, SH-S-7251); Shop Cash, Shop Campaigns, Shop Pay and Shop Promise (SH-S-0056, and the cells' own Shop Pay and Shop Campaigns terms).
-- **`core` on a product named with the platform's brand, 48 lines:** each is a feature the post shows in Shopify's own admin, POS, mobile app, checkout, Theme Store or billing (Shopify POS, the Shopify app, Shopify Payments, Shopify Shipping, Shopify Magic, Shopify Balance, Shopify Credit, Shopify Markets, Shopify Account Credits, Shopify Function APIs), or a branded app with no maker statement held (Shopify Forms, the Shopify Combined Listings app, the Shopify Pixel Helper).
+- **`own-service`, 42 lines, and 2 `core;own-service`:** Flow and Collective (the ruling after SH-55); Search & Discovery (SH-E-9b869699); Shopify Email (SH-E-32e5ccc3); Audiences ('We’re releasing Shopify Audiences v2.3'); Translate & Adapt (SH-E-04551fad); the Shopify Bundles app (SH-E-1d272a37, SH-E-88c8359c); Stocky (SH-E-5b89aa16); Shopify Inbox (SH-S-2758); POS hardware (SH-S-7269, SH-S-7251); Shop Cash, Shop Campaigns, Shop Pay and Shop Promise (SH-S-0056, and the cells' own Shop Pay and Shop Campaigns terms).
+- **`core` on a product named with the platform's brand, 41 lines:** each is a feature the post shows in Shopify's own admin, POS, mobile app, checkout, Theme Store or billing (Shopify POS, the Shopify app, Shopify Payments, Shopify Shipping, Shopify Magic, Shopify Balance, Shopify Credit, Shopify Markets, Shopify Account Credits, Shopify Function APIs), or a branded app with no maker statement held (Shopify Forms, the Shopify Combined Listings app, the Shopify Pixel Helper).
 - **The new thing's leads:** above.
 - **First leads that hold nothing and that no line names,** six, none the post's thing:
   - CM-OPS-004 (store status), by 'Order status pages' (line 125, SH-E-7053ec17), 'product status' (line 195, SH-E-4d5c8759) and 'toggling tools' (line 218, SH-E-d5e9541b);
@@ -98,7 +98,7 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 
 ## Items and sources
 
-- **The entries agree with their items.** Every post's text was whole in its item. I printed three long ones whole (`--width 6000`): SH-E-0d34d7bd and SH-E-7ea7c76b, cut in the chunk's print, and SH-E-35e5b666, cut only in its links. I read no archived page and no run step.
+- **The entries agree with their items.** Every post's text was whole in its item. I printed the rest of two long ones (`--width 6000`), SH-E-0d34d7bd and SH-E-7ea7c76b, cut in the chunk's print; SH-E-35e5b666 and SH-E-adae1474 were cut only in their links. I read no archived page and no run step.
 - **`show --meta` now prints the `@posts` label's keys** (1,646 posts, 1,279 with tags, 45 with media), as the coordinator's check after SH-38 said it would.
 
 ## For the second stage: stated, or named in passing, and not placed
@@ -133,6 +133,6 @@ Where a kind of post came up that those rules don't cover, I followed the rule b
 ## Problems with the brief or the scripts
 
 1. **The rulings changed during the batch** (after SH-2 and after SH-55). The second aligned 25 of my lines; I made the change before checking, so the coordinator's alignment of SH-39, which the ruling announces, should find them done.
-2. **The checker's brand NOTE fires on 48 lines,** nearly every post, since nearly every post names 'Shopify …'.
-3. **The checker doesn't flag a single-quoted quote that holds an apostrophe.** SH-34's rule 14 puts such quotes in “ ”. I found 15 in my readings with a scan of my own and changed them.
+2. **The checker's brand NOTE fires on 41 lines,** nearly every post that isn't an app's, since nearly every post names 'Shopify …'.
+3. **The checker doesn't flag a single-quoted quote that holds an apostrophe.** SH-34's rule 14 puts such quotes in “ ”. I found 17 in my readings with a scan of my own and changed them.
 4. **How I kept the cost down:** chunks of 10 posts, each printed once with its leads and `earlier`, and one lookup call per chunk for its cells and searches.
