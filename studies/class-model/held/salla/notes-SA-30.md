@@ -125,3 +125,12 @@ The checker's notes on their leads (CM-STF-002, CM-SHP-001, CM-CAT-001, CM-INV-0
 - **The brief's known case now names the portal rows' columns:** `merchant_or_feature` and `demo_or_admin` are Salla's, and the rendered-menu column, matched by title only, is the repository's.
 - **The other lines stand** by SA-29's rules and the portal's route lines. SA-31 keeps to the rules in the notes (P1 to P7, Q1 to Q7).
 - **Cost:** 8.2 million tokens over 54 requests, about 63,000 an entry. No cell changes.
+
+## The coordinator's correction after SA-42 (31 October 2026)
+
+- **Three group lines that rested only on the group's permission are dropped:**
+  - Stores, CM-DVT-005, `manage-development-stores`;
+  - Themes, CM-SFR-005, `manage-bundles`;
+  - Marketing Tools, CM-APP-003, `manage-coupons`.
+
+  A permission is a gate on the portal's user, so it goes in `reading` (the brief's rule 5; SA-42's M3). Each group's remaining line now names its permission there. The children's own lines stand, so no cell changes.
