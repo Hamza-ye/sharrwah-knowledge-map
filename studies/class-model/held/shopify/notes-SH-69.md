@@ -11,7 +11,7 @@
   - the two sections 'متضمن في كل باقة' (`sideBySideGridContent`) and 'ما هو POS Pro؟' (`posLiteVsProContent`), with their six items each;
   - the casual in-person selling and POS Pro lists (`posLiteVsProContent.plans`).
 
-  SH-70 begins after it, with the POS page's remaining parts (`howToGetStartedContent`, `promoCardsContent`, `faqContent`) or other sites' pages.
+  SH-70 begins with `loaderData.*.posLiteVsProPlans` (its 1 to 4 and on: `name: PosLite`, then PosPro). These are the same two lists, in the same words, that my 71 to 83 hold under `posLiteVsProContent.plans`: they can take the same lines, for the coordinator to align.
 
 **Placed:** 83 entries in 179 lines: 82 entries on capabilities, 1 `out` (the Finance heading), no `new`; 54 entries take more than one line. Supports: 158 `core`, 15 `shows`, 5 `outside`; no `own-service` or `extension-point`. Five filler lines (the disclaimer's providers). 64 lines carry qualities.
 
@@ -79,7 +79,7 @@ None. Each row, FAQ, summary and item had a capability. Searched with `caps --te
 - **63 on CM-POS-001 `core` and CM-POS-004 `shows`:** 'قابل للتوسيع وسهل التخصيص', with low-code and no-code options.
   - It names neither apps nor extension targets, nor who extends the POS app.
   - `core` on CM-POS-004 would change the cell (`extension-point` only), on a reading of the smart grid that the item doesn't name.
-  - Shopify's own POS customization statements would settle it: they are held in shopify.dev's POS pages, outside this structure.
+  - Shopify's own statements of what merchants customize in POS without code would settle it. The cell cites shopify.dev's POS UI extensions pages (SH-S-0713) for apps only.
 - **47, 68, 79 on CM-ANL-001:** rule 7 above.
 
 ## A structure whose items and sources disagree
@@ -128,3 +128,14 @@ None. Each row, FAQ, summary and item had a capability. Searched with `caps --te
 - **`earlier`** keyed the summaries' feature `name` `online_store` (53, 56) to SH-8's admin routes visited as the Online Store app (SH-8:29, :56), a different thing. My lines place the summaries' 'متجر إلكتروني محدود' on CM-SFR-001.
 - **`check`** printed 'SH-E-d9f8d2b2 has no placement' twice while it was unplaced; the batch list holds it once (`held/batches/SH-69.txt`, line 83).
 - **No B-extent conflict:** I found no rule of the brief that reads differently from B-extent.md, beyond the two the brief states (qualities wider than B-extent's list; the rulings). Rule 2 above departs from the brief's own rule 5, for B-extent's slot fillers.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **One cell changes, kept:** CM-INV-004 is `core`, scope POS Pro. POS Pro's item 'واحصل على تنبيهات انخفاض المخزون من مكان واحد' is the low-stock alert, as its English twin, 'get low stock alerts from a single place', is. CM-POS-002's `core` repeats SH-68's.
+- **The rules 1 to 7 stand for SH-70 to SH-79, with R0 to R11:**
+  - rule 2 is made a ruling (after SH-69): a line takes its own scope where its thing is stated under its own condition;
+  - rule 4 stands, since a plan's description states what the plan includes (M-9), unlike a list's examples, which rule 5 gives no line.
+- **SH-70 opens with `posLiteVsProPlans`.** Its two lists are in the same words as this batch's entries 71 to 83, so SH-70's prompt says to take these lines.
+- **The source's disagreement** (Plus's 'يشتمل على POS Pro' with `included_in_plan: false`) is in `reading`.
+- **Lead:** POS Pro's staff performance tracking and 'endless aisle' have no capability. CM-STF-004 (staff targets) is the lead for the first.
+- **Cost:** 13.6 million tokens over 63 requests, about 164,000 an entry.
