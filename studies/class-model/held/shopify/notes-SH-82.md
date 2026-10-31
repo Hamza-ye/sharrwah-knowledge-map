@@ -81,9 +81,9 @@ The second things the descriptions name: Shop Payments Settings' description tak
   - **Names:** English 'Search the app'; the screen's id names it AdminSearch. No Arabic is held: the phone ran in en-AU, and observed-sh holds no Arabic admin (`docs/GAPS.md`).
   - **Searched:** `caps --terms` with "app search" among the batch's terms: nothing; SH-80 searched "admin search; search the app; app search; AdminSearch; quick search": nothing.
 - **`new:Admin languages`:** 3 lines, `core`, on 4 entries: the result Language settings, its cell `SH-E-61c06d73`, button `SH-E-277ba478`, title `SH-E-5e7e4b4d` and description `SH-E-eb426f87`. It is the admin's own interface language, one new thing across the platforms (the ruling after SA-49), under the name Shopify's batches give it (SH-34, SH-45, SH-46, SH-60, SH-67).
-  - **A place of its own:** yes, a settings item the app lists with its own title, which B-extent counts as an admin section. It is a setting of the app on the device ('Change your app's language on this device'), not of the store.
+  - **A place of its own:** yes, a settings item the app lists with its own title, which B-extent counts as an admin section. It is a setting of the app on the device (“Change your app's language on this device”), not of the store.
   - **Proposed:** as decided in `held/new.tsv` with the others; the app's setting sits under CM-SRF-001, the mobile app, a lead for its parent on Shopify.
-  - **Names:** English 'Language settings', 'your app's language'; no Arabic held.
+  - **Names:** English 'Language settings', “your app's language”; no Arabic held.
   - **Searched:** `caps --terms` "admin language; interface language; app language": nothing.
 
 ## Entries I couldn't tell, and what would settle each
@@ -133,3 +133,11 @@ All are in `raw/runs/20261005T022544Z-android-shopify-mobile/steps/`:
 - **`NOTE` line 68, CM-CHK-009:** 'Add a custom field to your store' isn't a buyer's checkout field (above).
 - **`NOTE` line 7:** the false container (above).
 - **`NEW`:** Admin search, 7 lines; Admin languages, 3 lines (above).
+
+## The coordinator's check
+
+Measured: 16.0 million tokens over 82 requests, about 148,000 an entry, the repeats left to `method/held_mobile_repeats.py`. The checker prints no problem and no `CHANGES` line.
+- **Kept:** R82.1 to R82.8, which SH-83 keeps, and both new things on their places of their own (Admin search's tab and screen, the app's Language settings).
+- **Delivery customizations:** the twin's `extension-point` (SH-17:103, SH-49:56) stands. The settings item is the admin's place for apps' delivery customizations, and the capability's work is the apps'.
+- **The open choices** (Shop Payments Settings' four lines, the customer privacy policy's CM-CNT-008, Customer accounts' one line, the filters on Admin search): kept as placed.
+- **SH-84** is placed by the script once SH-83 is checked, since its repeats' first occurrences are in SH-80, SH-82 and SH-83.
