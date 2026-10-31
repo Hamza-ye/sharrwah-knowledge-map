@@ -73,7 +73,7 @@ In all, about 0.9 to 2.0 billion more: the extent at about 6.5 to 7.6 billion, a
 - **How its agents run** ([`method-report.md`](studies/subjects/S-02/method-report.md), what each run taught): no more than two at once, and since 30 October up to four (the founder, `founder-decisions.tsv`: fewer again if agents are stopped mid-run); each writes as it goes; a long reading list is split into parts, each read by a fresh agent that continues from the files, so no context grows large.
 - **The founder's decisions of 10 October, F-01 to F-06 and O-01,** bind nothing (`founder-decisions.tsv`, the reset). What they raise comes with its evidence when a subject reaches it: O-01, which company contracts with sellers, in S-03; F-01, the company's ties, where a subject needs them, such as S-07's sanctions and screening.
 
-**For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone.
+**For the founder:** the orientation page, outside the repository: https://claude.ai/artifact/8fLCxo4JGKmGgPjXSpW1BN. It is updated at each milestone, and before anything reaches the founder. Version 16 (31 October, about 22:30) is rebuilt around the risk register above: what needs the founder, the path to GM, and cost against plan.
 
 **Phase A is finished** for all five platforms (`method/count_tokens.py`; [`method-report.md`](studies/subjects/S-02/method-report.md), sections 2 to 4):
 

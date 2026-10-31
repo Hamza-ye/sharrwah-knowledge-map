@@ -439,7 +439,13 @@ Both sets, by the founder's choice: the 81 payment rows and the Knowledge Map's 
 - **Nothing outside the working files governs.** The work done between G1 and the reset is history. It is outside the working files, at [commit `4923e1c`](https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf), and is reached only through a link pinned to a commit in a working file, saying what it is for.
 - **The founder's messages.** The coordinator states its reading of each message at the top of its reply, so the founder can correct it. Only decisions go in `founder-decisions.tsv`. A question gets an answer, not a row.
 - **Reports** at each milestone and planned pause (the founder, 24 October): what is settled, what is open, the decisions that are the founder's, engineering's rulings for veto, and the cost.
-- **The orientation page** (a claude.ai artifact) is updated at each milestone, and before anything is routed to the founder. It shows where the work is and how it got there, so the founder can follow its structure (the founder, 29 October).
+- **The orientation page** (a claude.ai artifact) is updated at each milestone, and before anything is routed to the founder. It shows where the work is and how it got there, so the founder can follow its structure (the founder, 29 October). It leads with what orients the founder (the founder, 31 October):
+  - the live risk register (`STATE.md`, "Risks now"): each risk's status, what shows it, what is done, and what changed;
+  - what needs the founder;
+  - the path to the next gate, with each step's estimate;
+  - cost against plan, as a trend.
+
+  The repository's registers stay in the repository, linked.
 
 ## 10. Sources
 
@@ -676,3 +682,9 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   **What this change removes or weakens,** with the risk that part controlled:
   - **An area's architecture keeping a subject's variation point open until the subject has run** kept architecture from settling a question before the subject that covers it had read its evidence. Weakened for this kind of step: the cheapest step that keeps the point open may now come first, so a subject can find part of its question already settled, and a step's shape may have to change once the subject has run. Reassigned in part: the step may close only what a ruling in force already rules out, the architecture plan's review rule refuses a step that closes more, and each such step is listed for the founder's veto, with what it decides, why, what it risks and its alternative. The rest is accepted: what such a step costs if its subject finds its shape wrong is stated with it.
 - **31 October 2026, risk 5 brought up to date** (`studies/class-model/held-vs-read.tsv`). Its row said Zid and BigCommerce were held as declarations only, and WooCommerce as code. Since 28 and 29 October, the founder's local agent has held 20, 15 and 14 runs of their admins and stores (other-product-class). Found when the architecture plan's section 7 repeated the old row. **What this change removes or weakens:** nothing. The risk's control stands: absence counts only from a complete list.
+- **31 October 2026, orientation that orients, and a live risk register** (the founder: "orientation is no longer orienting me on anything, and it is no different than the repository registers. if we didn't address risks, and manage them early and orient me well with what is going, this work is bound to turn into a horse shit"). A fix to the method within this plan, listed at the next report.
+  - **Changed in section 9:** the orientation page leads with the live risk register, what needs the founder, the path to the next gate and cost as a trend.
+  - **`STATE.md` holds the register** ("Risks now"), updated at every milestone and before anything reaches the founder. Section 7's table stays the plan's statement of each risk and its control.
+  - **Proposed, not changed:** for risk 1, that nothing is added or widened without the founder's go, and that a step whose first measured part runs past its estimate goes to the founder before the rest runs. It changes who decides, which is the frame (section 9), so it enters the plan on the founder's word. Until then the coordinator keeps to it.
+
+  **What this change removes or weakens:** the page's account of each subject's state, of the founder's decisions and of the plan's structure. Those stay in `STATE.md`, `founder-decisions.tsv` and this plan, linked from the page.
