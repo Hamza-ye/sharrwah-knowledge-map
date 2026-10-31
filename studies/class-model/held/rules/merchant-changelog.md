@@ -186,5 +186,13 @@ From SH-45:
 - **C45.9:** Kit has no maker held: `shows` on CM-MKT-005.
 - **C45.10:** a feature removed and then restored takes its line by the later post.
 
-The next batches number their rules C46.1 and on, by batch.
+From SH-46:
+- **C46.1:** the Shopify Plus wholesale channel is a sales channel the Plus plan includes, so its features are `core`.
+- **C46.2:** an app's own interface languages take `new:Admin languages` `core`.
+- **C46.3:** a channel named for a third party, with no maker held, is `shows` for the channel and `extension-point` for the third party's own feature, the third party the venue as filler (Pinterest, Instagram).
+- **C46.4:** 3D Secure goes on CM-PAY-002 `core`, and on CM-PAY-009 `core` for its stated effect on chargebacks.
+- **C46.5:** a retired app's maker statement doesn't pass to the app that replaces it.
+- **The admin's own tools for advertising on ad platforms are CM-MKT-010 `core`** (the check after SH-46).
+
+The changelog is placed whole.
 
