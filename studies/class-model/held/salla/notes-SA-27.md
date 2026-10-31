@@ -141,3 +141,12 @@
 - None that blocked.
 - `show` collapses double spaces and prints a string "true" as true. The source must be read for an exact quote (above).
 - The brief's rule on `out` names "its subscription records" as one store's data, and the message for this batch says what a subscription names is the platform's offer. Neither says which `supports` an app named in a store's subscriptions takes. I read it by M-3 as refined after WC-3 (S2); the coordinator may rule otherwise.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **CM-TRU-002 gains `core`,** and it stands. Salla's workflow `merchants_saudi_kyc` runs the owner's verification as its own steps: `sync_otp`, `verify_otp` and `resend_otp`, through Salla's KYC API. The code comes from Absher, Saudi Arabia's national identity platform ('Enter the OTP sent to your mobile registered in Absher'). Absher stays in `reading`, since the entries' own text doesn't name it, as the checker requires of a filler. The cell held only `shows`, from help articles. Its market dependence is S-02's kind of point: the check is the Saudi workflow's.
+- **CM-AIA-004 gains `extension-point`,** and it stands. The onboarding task has the merchant link the store to Claude and ChatGPT and work on products by chat, through the cell's `salla-mcp`. It also says whom the assistant acts for, which the cell had found unstated.
+- **CM-CHN-004 gains `extension-point`** by the app 'TikTok Pixel - Catalog', a third party's product named in its app's name (M-3), and it stands.
+- **The store's subscriptions are page 1 of 5** (15 of its 61). The other pages aren't held. The apps they name are leads, and no capture is asked for them: they are one store's choices, and the App Store's own lists are read in SA-1.
+- **New things, decided with every platform's:** Shipment receipt by another person (with SA-26's and ZD-11's), Recently Viewed Products, and تقييم جودة بيانات, the product page's data quality rating.
+- **Cost:** 12.6 million tokens over 69 requests, about 156,000 an entry. Three cells change beyond SA-7's CM-ONB-004: CM-TRU-002, CM-AIA-004 and CM-CHN-004.
