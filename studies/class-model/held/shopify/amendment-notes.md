@@ -19,6 +19,7 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
 - **SH-S-7089:** the return and cancellation policy's create route on CM-CNT-008. Its update twin also takes CM-RET-003 and CM-ORD-004, since the page sets return rules and cancellation rules (the check after SH-17).
 - **SH-S-5262:** the shipping calculator on CM-SHP-001. It calculates Shopify's discounted label rates, which is CM-SHP-002's thing (the check after SH-17).
 - **CM-CNT-007's reading** says no statement shows SEO built into the admin. The native route 'Search engine listing' and the product page's card now show it (the check after SH-17).
+- **The store transfer:** SH-18's route stands on CM-ACC-001, and SH-17's twin anchor also takes CM-ACC-003. One of the two is aligned (the check after SH-18).
 - **SH-S-2757:** CM-POS-001's `own-service`, which rests on the POS app's listing. The POS is the plans' own channel, `core`, by the ruling after SH-55 (the check after SH-95).
 - **Others named in the checks:**
   - CM-RET-004's reading;

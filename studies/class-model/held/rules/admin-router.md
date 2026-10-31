@@ -139,5 +139,15 @@ From SH-17:
 - **R17.5:** an anchor where the merchant adds a third party's service is `extension-point` alone (rule 14).
 - **R17.6:** a modal on one record takes its page's capability. A modal naming another capability's thing takes that capability alone.
 
-The next batches number their rules R18.1 and on, by batch.
+From SH-18:
+- **R18.1:** a catch-all at `*` that only redirects to a named page is `shows` on it; one that throws a 404 or redirects to the root is `out`.
+- **R18.2:** a splat route with a page's own component is that page's, `core`.
+- **R18.3:** a country or state named in a route's path goes in `reading` and `terms`, not `scope`; only gates are scope (rule 22).
+- **R18.4:** the routes with no section are read from the router's own code.
+- **R18.5:** a Taxes page that lists third parties' tax apps takes CM-TAX-004 `extension-point`.
+- **R18.6:** a Managed Markets tax-collection modal takes CM-TAX-003 and CM-MKS-003.
+- **R18.7:** a label's payment authentication takes CM-PLN-005 beside CM-SHP-002.
+- **R18.8:** an `eligibilityMatch` beta that only brings other modules leaves the route `core`, the beta in `reading`.
+
+The router is placed whole. Its changes between versions (`admin-router-changes`, SH-19) take their routes' lines (`method/held_router_changes.py`).
 
