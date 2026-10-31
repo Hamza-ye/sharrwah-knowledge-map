@@ -2,13 +2,18 @@
 the router's versions names a route. Where the route is a held entry the router batches placed, and the change leaves
 its eligibility the same, the change takes the route's own lines: the same capability, support and scope, the route's id
 its term. A removed route takes them as `shows`, no longer served. Every other change (a route the concern map read, an
-eligibility that differs, a route added) is left for an agent, in the same batch.
+eligibility that differs, a route added) is left for an agent, in the same batch. The eligibility compared is the one
+the entries render, the route's `eligibilityMatch`; a change to its own `eligibility` isn't rendered (SH-19's R19.1), so
+the agent checks the placed changes against the derived table.
 
 Usage:
   python3 -I method/held_router_changes.py            prints what it would place and leave
   python3 -I method/held_router_changes.py --apply    writes SH-19's lines for the changes it places
 """
 import csv, collections, glob, os, re, sys
+
+if any(a in ("-h", "--help") for a in sys.argv[1:]):
+    sys.exit(__doc__)
 
 H = "/home/user/sharrwah-knowledge-map/studies/class-model/held"
 BATCH = "SH-19"
