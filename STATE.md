@@ -1,6 +1,6 @@
 # State
 
-**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 30 October 2026.
+**What this file is:** where the work is, on one page (`PLAN.md`, section 9). Updated 31 October 2026.
 
 **The plan:** `PLAN.md`. It is the plan the founder agreed at G0, and on 25 October 2026 the founder reset the work to it, as it stood at G1, with the pilot's own changes and the coordinator's engineering choices (its section 11).
 
@@ -249,6 +249,27 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
+  - **Since 03:10, to about 06:55 UTC on 31 October:**
+    - **Salla is placed whole:** 57 batches, 5,750 entries, each checked. Its amendment waits for the new things, decided across the platforms once Shopify's batches are placed, as Zid's and WooCommerce's do.
+    - **Shopify:** SH-1, SH-8 to SH-10 (the admin router), SH-34 to SH-38 (the changelog), SH-50 to SH-54 (Editions' page data; SH-52 by script) and SH-68 to SH-74 (pricing) are placed and checked.
+      - Cells held for the first time, among others: store setup in the admin (the Home's setup tasks and guides), shipping complaints (claims on the platform's labels) and automatic discounts (through apps).
+      - Rulings since (`held/review-H-rulings.md`):
+        - nested gates are joined with ` and `; ` and ` joins two lists, and a source's own words that hold 'and' are quoted;
+        - an app whose maker the platform names in any held post is `own-service` on every line about it, and a post is about the app its own link opens;
+        - the platform's own free themes are `core`;
+        - a paid add-on's offer takes its site, and what comes with it the add-on;
+        - a line takes its own scope where its thing is stated under its own condition.
+    - **Tools:**
+      - `held_entries.py earlier` prints an entry's twins, with their own words: by place where their name keys agree, and by name key;
+      - `show --meta` reads the entries' own label;
+      - the quote test reads a page's title;
+      - the router's ancestors' gates are added by script (`method/held_router_gates.py`).
+    - **Found on the way:** Shopify's admin Home capture drops the ARIA lines whose names hold a colon. Their parts are entries, so no cell loses a thing (`evidence-map.md`).
+    - **The projection, re-measured at about 06:55** (method report, section 18): about 3,170 million spent; 8,114 entries left, all Shopify's; the extent about 5.0 to 5.8 billion, within the 5.0 to 6.0 brought to the founder at 04:05.
+    - **Running:** SH-2 (the admin Home's last entries and the main navigation), SH-11 (the router), SH-39 (the changelog) and SH-55 (Editions).
+    - **Next:**
+      - Shopify's remaining batches, four agents at a time: pricing SH-75 to SH-79, the changelog SH-40 to SH-46, Editions SH-56 to SH-67, the router SH-12 to SH-18, SH-3 after SH-2, and the other starts;
+      - then the new things, decided across the platforms, and the amendments.
   - **The projection, re-measured at about 23:45 UTC** (method report, section 18): about 1,690 million spent; 12,846 entries left, Salla's 5,232 and Shopify's 7,614; the extent about 3.3 to 4.5 billion. Salla's lists cost 45,000 to 156,000 an entry and, after SA-1, change almost no cell, and the coordinator's checks cost about a third of the agents' tokens at this context. The work goes on, re-planned to cost less, by the founder's standing decision of 27 October.
   - **Found on the way:** BigCommerce's `settings-list` structure pairs each section with the next one's address, and its source step holds the right ones (handoff H-009). Its `contracting-entities` holds 5 of its page's 7 rows; the concern map holds the other two, so no cell loses them. Zid's page index holds 119 of its source's 137 pages: the routes of the others are in the route manifest, but their titles are not, the charity store's among them, and the second stage reads them for the cells that hold nothing (`evidence-map.md`).
 - **Domain C's notes from D, now settled:** C's anchor landed Shopify's and Salla's abandoned checkouts and carts in CM-CHK-007, beside D's CM-MKT-022, recovery: the merge flags them as `one capability?` for the final review. SH-S-0097, Shopify's PCI responsibility, stays `core` in A's CM-TRU-018, and no C cell cites it.

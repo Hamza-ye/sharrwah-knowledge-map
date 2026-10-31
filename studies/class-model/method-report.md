@@ -410,3 +410,27 @@ No agent has been stopped by the usage limit.
 - **The coordinator checks with fewer requests:** the checker's lines, the batch's open cases and a measure, with a sample against the sources only where a cell changes.
 
 No agent has been stopped by the usage limit.
+
+**Re-measured at about 06:55 UTC, by structure** (`method/count_tokens.py --since 2026-10-31T04:05`, and each checked batch's transcript).
+- **Spent since 04:05:** 528 million tokens: the coordinator 93 million over 223 requests (18 percent), the agents the rest.
+- **Salla is placed whole:** 57 batches, 5,750 entries, each checked. Shopify's checked batches are SH-1, SH-8 to SH-10, SH-34 to SH-38, SH-50 to SH-54 and SH-68 to SH-74.
+- **Recent batches' contexts reached about 420,000 to 440,000 tokens,** against the 250,000 their prompts ask, and cost 144,000 to 372,000 an entry: SH-38 144,000, SH-74 248,000, SA-57 372,000 (Salla's carriers and themes, whose App Store listings it read). SH-1, the first of Shopify's other structures, cost 105,000.
+
+| Structure | Entries left (the four running batches' among them) | Tokens an entry, on its checked batches |
+| --- | --- | --- |
+| Shopify `editions-page-data` | 1,124 | about 220,000 |
+| Shopify `merchant-changelog` | 996 | about 193,000 |
+| Shopify `admin-router` | 760 | about 173,000 |
+| Shopify `pricing-page-data` | 434 | about 181,000 |
+| Shopify's other 4,786 entries (permissions, plan pages, the mobile app, help notes and the rest) | 4,786 | not measured, but for SH-1's 105,000 |
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 06:55 UTC: about 2,640 at 04:05 and 528 since | about 3,170 |
+| The measured structures' 3,328 entries, at their rates | about 650 |
+| The other 4,786 entries, at 120,000 to 220,000 | 570 to 1,050 |
+| The coordinator's checks, about a fifth of the agents' (18 percent since 04:05) | 220 to 340 |
+| The amendments and new things, the second stage, the omission review, the final review and its corrections, the architecture plan's review | 390 to 590 |
+| **The extent, in all** | **about 5.0 to 5.8 billion** |
+
+The extent stays within the 5.0 to 6.0 billion brought to the founder at 04:05, so no new projection goes to the founder. No agent has been stopped by the usage limit.
