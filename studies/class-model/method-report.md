@@ -620,3 +620,12 @@ The top stays under the 6.04 billion the founder was given at 14:00, so no new p
 
 - **It goes to the founder** with the orientation page rebuilt around the risks (`STATE.md`, "Risks now", R1).
 - **Control proposed** (`STATE.md`, R1): nothing is added or widened without the founder's go, and a step whose first measured part runs past its estimate's top goes to the founder before the rest runs.
+
+**S2-ZD-1 measured** (`method/count_tokens.py` over its transcript): 59.3 million tokens over 201 requests, for 90 rows covering 72 cells and the 16 parts of 9 misses. That is about 660,000 tokens a row.
+- **Against the design:** it assumed 100,000 to 250,000 a row on Zid (`briefs/S2-held-design.md`, "The estimate"). So the measure is about two and a half times the top.
+- **Its yield:**
+  - 24 `found` rows (20 `core`, 4 `shows`), on cells that held nothing, most from sources the concern map never read: Zid's Arabic terms, its dashboard locales, its settings runs, and this repository's help.zid.sa captures;
+  - 54 `not-found`, 10 `unclear`, 2 `absent`;
+  - no new thing.
+- **What the agent found cheaper than the brief's method** (a reading from its report): grepping the dashboard's locales and the structures directly, then the captures a search named. One combined `corpus_search` per language filled its first 40 documents with dashboard steps that repeat the sidebar.
+- **Not landed yet,** so the model doesn't change while the fitness test reads it (`STATE.md`, F1).
