@@ -600,3 +600,23 @@ The top stays under the 6.04 billion the founder was given at 14:00, so no new p
   - the omission review runs its full sample on Zid first, then the lean one (about 550 items) wherever its design's measure allows;
   - the final review's selection doesn't read again what the omission review sampled;
   - the coordinator checks by script first.
+
+**Re-measured at about 22:00 UTC** (`method/count_tokens.py --since 2026-10-31T21:00` over the coordinator's transcript and the agents').
+- **Spent since 21:00:** about 160 million. The coordinator spent 43 million over 84 requests, about half a million a request. The agents spent the rest: S2-ZD-1 38 million so far, the qualities pass's tools 22, the final review's revision 18, the second stage's fixes 18, and the qualities pass's draft 15. In all, about 5,580 million.
+- **What changed in the projection:**
+  - The final review's revised design puts it at 220 to 500 million with the coordinator's checks and corrections (`briefs/R-extent-design.md`), against 180 to 230 before.
+  - The coordinator's own share, measured at about 43 million an hour while it acts, is counted at 300 to 600 million to GM, against 140 to 250 before. That is a reading: it is spent only while the coordinator acts, and it falls once its context is compacted.
+
+| Item | Million tokens |
+| --- | --- |
+| Spent, by about 22:00 UTC | about 5,580 |
+| The second stage, 705 cells | 115 to 285 |
+| The qualities pass | 75 to 180 |
+| The omission review | 160 to 330 |
+| The final review by risk and its corrections | 220 to 500 |
+| GM's report, page, veto list and orientation | 30 to 60 |
+| The coordinator's own, beyond the steps' checks | 300 to 600 |
+| **The extent, in all** | **about 6.5 to 7.6 billion** |
+
+- **It goes to the founder** with the orientation page rebuilt around the risks (`STATE.md`, "Risks now", R1).
+- **Control proposed** (`STATE.md`, R1): nothing is added or widened without the founder's go, and a step whose first measured part runs past its estimate's top goes to the founder before the rest runs.
