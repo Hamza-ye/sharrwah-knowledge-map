@@ -108,3 +108,12 @@ Entry numbers below are the batch's order (`held_entries.py show --platform sall
 
 - **The checker's "first lead holds nothing" note also fires on an `out` line** (17, tools). There, the lead is a word every Salla tools page shares.
 - **SA-21's rule 2 ("two lines where they gave two") and its practice differ.** Its practice dropped a gate-only second line (logs/export, payments). I followed the practice (rule 3 above). The coordinator may want one statement of it for SA-23.
+
+## The coordinator's check (31 October 2026, after the batch)
+
+- **`tools` and `more` stay `out`,** by the ruling after SA-22. Their answers hold five and six groups across the admin (`dashboard-nav-segments/prod/tools.json`, `more.json`). SA-32's lines for `/more` and `/tools` stand beside them. They read the plan gate of the Shipping group, whose own address is the menu's, with its feature `shipping-policy-archive`: a different thing from the menu.
+- **The two-line rule as the notes practise it** is now the ruling: a second line is for a page that is itself two things.
+- **`/marketing/referrals` is CM-PTN-008's** here, and SA-32's line on its plan gate moves there from CM-MKT-013, by SA-12's check.
+- **The CHANGES line stands:** the UTM builder is `shows` on CM-MKT-008, as SA-8 placed it, and SA-25's Order Source now gives that cell `core`.
+- **New things:** Bullet Delivery and Product certificates, under SA-32's names.
+- **Cost:** 7.6 million tokens over 49 requests, about 95,000 an entry. No cell changes beyond earlier batches'.
