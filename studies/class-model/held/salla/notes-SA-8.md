@@ -113,3 +113,5 @@ None in the values. The items keep only keys. As SA-7 found, a route's element, 
 - **A double quote now has its own message.** The checker said '9 tab-separated fields, no quoting (it has 9)', and the agent's first write lost 57 entries to it. It now says the row holds a double quote and how to quote without one (`method/held_entries.py`).
 - **The cells this batch changes stand:** Salla's setup tasks (CM-ONB-004), as from SA-7's `/persona/*`, and CM-MKT-008, held by a `shows` line only.
 - **Cost:** 15.5 million tokens over 83 requests, about 149,000 an entry. The yield is one cell beyond SA-7's.
+
+**The coordinator, after SA-12 (31 October 2026):** the line above on the Algolia paths was wrong. SA-12 holds 63 more, from a second copy of the client in `ui-merchant-services`, and SA-14 holds 11 in `ui-merchant-utils`. The search had looked for them by app, not by their items' keys. Each is placed `out`, as here.
