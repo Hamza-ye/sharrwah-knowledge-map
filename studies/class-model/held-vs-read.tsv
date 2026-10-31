@@ -1,54 +1,65 @@
 platform	kind	group	held	read	unread	note
-shopify	pages	shopify.dev/docs	8586	25	8561	
+shopify	pages	shopify.dev/docs	8841	25	8816	
 shopify	pages	admin.shopify.com/api	8277	0	8277	
 shopify	pages	help.shopify.com/manual	5438	124	5314	
 shopify	pages	admin.shopify.com/store	3475	0	3475	
+shopify	pages	changelog.shopify.com/posts	1646	0	1646	
 shopify	pages	themes.shopify.com/themes	1300	0	1300	
-shopify	pages	shopify.dev/changelog	827	0	827	
+shopify	pages	shopify.dev/changelog	881	0	881	
 shopify	pages	admin.shopify.com/settings	331	0	331	
-shopify	pages	changelog.shopify.com/posts	305	0	305	
 shopify	pages	apps.shopify.com/categories	168	0	168	
 shopify	pages	apps.shopify.com/collections	164	0	164	
 shopify	pages	help.shopify.com/partners	137	0	137	
 shopify	pages	themes.shopify.com/websites	133	0	133	
 shopify	pages	themes.shopify.com/designers	124	0	124	
+shopify	pages	shopify.com/plus	116	0	116	
 shopify	pages	apps.shopify.com/stories	107	0	107	
+shopify	pages	shopify.com/pos	105	0	105	
+shopify	pages	shopify.com/blog	103	0	103	
+shopify	pages	shopify.com/legal	123	25	98	
+shopify	pages	shopify.com/sitemap	89	0	89	
+shopify	pages	shopify.com/international	88	0	88	
+shopify	pages	shopify.com/sitemap.xml	84	0	84	
+shopify	pages	shopify.com/enterprise	80	0	80	
 shopify	pages	admin.shopify.com/content	63	0	63	
+shopify	pages	shopify.com/pricing	61	0	61	
+shopify	pages	shopify.com/sell	59	0	59	
 shopify	pages	admin.shopify.com/products	57	0	57	
 shopify	pages	admin.shopify.com/apps	56	0	56	
 shopify	pages	admin.shopify.com/access_account	53	0	53	
 shopify	pages	admin.shopify.com/email_templates	52	0	52	
 shopify	pages	partners.shopify.com/5236935	46	0	46	
-shopify	pages	shopify.com/pos	44	0	44	
-shopify	pages	shopify.com/legal	68	25	43	
+shopify	pages	shopify.com/sitemap_blog.xml	45	0	45	
+shopify	pages	shopify.com/partners	45	1	44	
+shopify	pages	shopify.com/tools	40	0	40	
 shopify	pages	shopify.com/print-on-demand	39	0	39	
 shopify	pages	help.shopify.com/cdn	39	0	39	
 shopify	pages	admin.shopify.com/markets	39	0	39	
 shopify	pages	shopify.com/compare	38	0	38	
-shopify	pages	shopify.com/plus	32	0	32	
 shopify	pages	dev.shopify.com/dashboard	31	0	31	
 shopify	pages	apps.shopify.com/built-in-features	29	0	29	
 shopify	pages	shopify.com/first-sale	25	0	25	
 shopify	pages	admin.shopify.com/orders	25	0	25	
 shopify	pages	shopify.com/resources	21	0	21	
 shopify	pages	admin.shopify.com/growth	21	0	21	
+shopify	pages	cdn.shopify.com/static	20	0	20	
 shopify	pages	admin.shopify.com/customers	19	0	19	
-shopify	pages	shopify.com/partners	17	1	16	
-shopify	pages	shopify.com/investors	16	0	16	
+shopify	pages	shopify.com/investors	17	0	17	
 shopify	pages	admin.shopify.com/discounts	16	0	16	
 shopify	pages	admin.shopify.com/analytics	15	0	15	
 shopify	pages	admin.shopify.com/balance	15	0	15	
 shopify	pages	admin.shopify.com/finance	15	0	15	
+shopify	pages	shopify.com/sitemap_blog_partners.xml	14	0	14	
 shopify	pages	admin.shopify.com/taxes	14	0	14	
 shopify	pages	shopify.com/editions	13	0	13	
 shopify	pages	admin.shopify.com/themes	13	0	13	
 shopify	pages	admin.shopify.com/pages	13	0	13	
-shopify	pages	cdn.shopify.com/static	12	0	12	
 shopify	pages	admin.shopify.com/draft_orders	12	0	12	
 shopify	pages	admin.shopify.com/collections	11	0	11	
 shopify	pages	admin.shopify.com/credit	11	0	11	
 shopify	pages	admin.shopify.com/hydrogen	11	0	11	
 shopify	pages	admin.shopify.com/marketing	11	0	11	
+shopify	pages	shopify.com/careers	10	0	10	
 shopify	pages	shopify.com/security	10	0	10	
 shopify	pages	shopify.com/solutions	10	0	10	
 shopify	pages	admin.shopify.com/catalogs	10	0	10	
@@ -56,39 +67,39 @@ shopify	pages	admin.shopify.com/companies	10	0	10
 shopify	pages	admin.shopify.com/gift_cards	10	0	10	
 shopify	pages	admin.shopify.com/organization	10	0	10	
 shopify	pages	help.shopify.com/affiliates	9	0	9	
-shopify	pages	shopify.com/careers	9	0	9	
+shopify	pages	shopify.com/vender	9	0	9	
 shopify	pages	shopify.com/accessibility	8	0	8	
 shopify	pages	shopify.com/bugbounty	8	0	8	
 shopify	pages	hardware.shopify.com/pages	8	0	8	
 shopify	pages	accounts.shopify.com/accounts	8	0	8	
 shopify	pages	admin.shopify.com/capital	8	0	8	
 shopify	pages	shopify.com/101061591336	8	0	8	
-shopify	pages	shopify.com/blog	7	0	7	
+shopify	pages	shopify.dev/admin-graphql-direct-proxy	7	0	7	
+shopify	pages	shopify.dev/storefront-graphql-direct-proxy	7	0	7	
 shopify	pages	admin.shopify.com/account_review	7	0	7	
 shopify	pages	admin.shopify.com/signup	7	0	7	
-shopify	pages	shopify.dev/admin-graphql-direct-proxy	6	0	6	
-shopify	pages	shopify.dev/storefront-graphql-direct-proxy	6	0	6	
-shopify	pages	shopify.com/enterprise	6	0	6	
 shopify	pages	shopify.com/shipping	6	0	6	
 shopify	pages	shopifystatus.com/api	6	0	6	
 shopify	pages	themes.shopify.com/collections	6	0	6	
+shopify	pages	shopify.com/stock-photos	6	0	6	
 shopify	pages	admin.shopify.com/extensibility	6	0	6	
 shopify	pages	admin.shopify.com/transfers	6	0	6	
-shopify	pages	shopify.com/international	5	0	5	
-shopify	pages	shopify.com/sitemap	5	0	5	
 shopify	pages	admin.shopify.com/bulk	5	0	5	
 shopify	pages	admin.shopify.com/headless	5	0	5	
 shopify	pages	admin.shopify.com/payments	5	0	5	
 shopify	pages	admin.shopify.com/rollouts	5	0	5	
+shopify	pages	shopify.com/news	4	0	4	
+shopify	pages	shopify.com/verkaufen	4	0	4	
+shopify	pages	shopify.com/vendre	4	0	4	
 shopify	pages	admin.shopify.com/purchase_orders	4	0	4	
 shopify	pages	admin.shopify.com/redirects	4	0	4	
 shopify	pages	admin.shopify.com/plus	4	0	4	
 shopify	pages	shopify.com/collabs	3	0	3	
 shopify	pages	shopify.com/install	3	0	3	
-shopify	pages	shopify.com/news	3	0	3	
 shopify	pages	shopify.com/toolkit	3	0	3	
 shopify	pages	shopify.com/website	3	0	3	
 shopify	pages	apps.shopify.com/extensions	3	0	3	
+shopify	pages	cdn.shopify.com/shopifycloud	3	0	3	
 shopify	pages	admin.shopify.com/subscribe	3	0	3	
 shopify	pages	admin.shopify.com/extensions-dev	3	0	3	
 shopify	pages	admin.shopify.com/shopify-payments	3	0	3	
@@ -100,20 +111,24 @@ shopify	pages	shopify.com/authentication	3	0	3
 shopify	pages	admin.shopify.com/challenges	3	0	3	
 shopify	pages	accounts.shopify.com/activate	3	0	3	
 shopify	pages	partners.shopify.com/{id}	3	0	3	
-shopify	pages	shopify.com/pricing	2	0	2	
 shopify	pages	help.shopify.com	2	0	2	
 shopify	pages	shopify.com	2	0	2	
 shopify	pages	shopify.com/b2b-demo-store	2	0	2	
 shopify	pages	shopify.com/build-with-ai	2	0	2	
 shopify	pages	shopify.com/climate	2	0	2	
 shopify	pages	shopify.com/event	2	0	2	
-shopify	pages	shopify.com/sell	2	0	2	
 shopify	pages	shopify.com/tech-flexes	2	0	2	
 shopify	pages	shopify.com/ucp	2	0	2	
 shopify	pages	apps.shopify.com/partners	2	0	2	
 shopify	pages	help.shopify.com/contact	2	0	2	
 shopify	pages	cdn.shopify.com/s	2	0	2	
-shopify	pages	cdn.shopify.com/shopifycloud	2	0	2	
+shopify	pages	shopify.com/verkoop	2	0	2	
+shopify	pages	shopify.com/ferramentas	2	0	2	
+shopify	pages	shopify.com/vendere	2	0	2	
+shopify	pages	shopify.com/herramientas	2	0	2	
+shopify	pages	shopify.com/prijzen	2	0	2	
+shopify	pages	shopify.com/precos	2	0	2	
+shopify	pages	shopify.com/priser	2	0	2	
 shopify	pages	admin.shopify.com/checkouts	2	0	2	
 shopify	pages	admin.shopify.com/transaction	2	0	2	
 shopify	pages	admin.shopify.com/reactivation	2	0	2	
@@ -364,7 +379,6 @@ shopify	pages	community.shopify.com/sitemap_19.xml	1	0	1
 shopify	pages	community.shopify.com/sitemap_20.xml	1	0	1	
 shopify	pages	community.shopify.com/sitemap_21.xml	1	0	1	
 shopify	pages	community.shopify.com/sitemap_22.xml	1	0	1	
-shopify	pages	shopify.com/sitemap.xml	1	0	1	
 shopify	pages	shopifystatus.com	1	0	1	
 shopify	pages	shopify.com/about	1	0	1	
 shopify	pages	shopify.com/ads.txt	1	0	1	
@@ -617,6 +631,14 @@ shopify	pages	shopify.com/llms-full.txt	1	0	1
 shopify	pages	admin.shopify.com/llms.txt	1	0	1	
 shopify	pages	cdn.shopify.com/assets	1	0	1	
 shopify	pages	accounts.shopify.com/lookup	1	0	1	
+shopify	pages	changelog.shopify.com/feed	1	0	1	
+shopify	pages	shopify.com/sitemaps_list.xml	1	0	1	
+shopify	pages	shopify.com/saelg	1	0	1	
+shopify	pages	shopify.com/outils	1	0	1	
+shopify	pages	shopify.com/strumenti	1	0	1	
+shopify	pages	shopify.com/hulpmiddelen	1	0	1	
+shopify	pages	shopify.com/salja	1	0	1	
+shopify	pages	shopify.com/sitemap_news.xml	1	0	1	
 shopify	pages	accounts.shopify.com	1	0	1	
 shopify	pages	flow.shopifyapps.com/flow-core	1	0	1	
 shopify	pages	sidekick.shopify.com/api	1	0	1	
@@ -694,16 +716,16 @@ shopify	structure	signup-router	1	0	1	items 19; items cited 0; added since read 
 shopify	structure	web-route-manifests	1	0	1	items 8414; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Each web app's route manifest as the app publishes it (manifest-<hash>.js assigning window.__remixManifest or window.__reactRouterManifest): every route's id, p
 shopify	structure	help-sitemaps	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Sitemap index of 34 locale sitemaps on 2026-09-30 (en 2,592 URLs, ar 2,591); of 47 on 2026-10-16 (en 2,676, ar 2,675, every URL with lastmod 2026-10-16T17:32:41
 shopify	structure	help-section-children	1	1	0	items 2577; items cited 260; added since read 0; read at b46731d0; seen 2026-10-07; status captured; The child list each English Help Center page states under '### In this section': the pages a section names as its own, titles and links as written, in its order
-shopify	structure	dev-sitemap	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; sitemap_standard.xml.gz (8,667 URLs); sitemap_md.xml lists the .md twins
+shopify	structure	dev-sitemap	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; sitemap_standard.xml.gz (8,667 URLs); sitemap_md.xml lists the .md twins
 shopify	structure	dev-section-children	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Section .md pages list their children (e.g. /docs.md, /docs/api.md)
 shopify	structure	dev-docs-nav	1	1	0	items 48; items cited 7; added since read 0; read at b46731d0; seen 2026-10-07; status captured; Each docs area's sidebar as the page's own loader data states it (title, items with key, label, href, isGroup, isHeading, stepIn, children; overview links): App
 shopify	structure	admin-graphql-reference-nav	1	1	0	items 28; items cited 28; added since read 0; read at b46731d0,e49840729; seen 2026-10-07; status captured; The GraphQL Admin API reference's own grouping of its types, queries and mutations: 28 categories (Access, Analytics, Apps, B2B, Billing, Bulk operations, Cart,
 shopify	structure	docs-front-matter	1	0	1	items 7992; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; What every shopify.dev page states about itself at its top: title, description, source URLs (html, md), and for reference pages api_name (37: admin 4,175 pages,
 shopify	structure	web-pixel-events	1	1	0	items 36; items cited 36; added since read 0; read at b46731d0; seen 2026-10-07; status captured; The customer events a web pixel receives and the APIs it uses, as the reference types them: per page (16 standard events such as page_viewed, product_added_to_c
 shopify	structure	dev-nav	1	0	1	items 106; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; Docs navigation: the top bar (Apps, Storefronts, Agents, References, Changelog) and each section's sidebar (group labels, links, collapsed groups as buttons)
-shopify	structure	admin-graphql-schema	1	1	0	items 20453; items cited 13; added since read 0; read at e49840729; seen 2026-09-30; status captured; Admin GraphQL schema by introspection (~3,552 types in 2026-07)
-shopify	structure	storefront-graphql-schema	1	0	1	items 2582; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Storefront API schema (~428 types)
-shopify	structure	dev-mcp-schemas	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Bundled introspection JSON (admin, customer, storefront, partner, payments-apps, 13 Functions APIs × 6 versions) and supported-versions JSON
+shopify	structure	admin-graphql-schema	1	1	0	items 28284; items cited 13; added since read 7897; read at e49840729; seen 2026-10-31; status captured; Admin GraphQL schema by introspection (~3,552 types in 2026-07)
+shopify	structure	storefront-graphql-schema	1	0	1	items 3468; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Storefront API schema (~428 types)
+shopify	structure	dev-mcp-schemas	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Bundled introspection JSON (admin, customer, storefront, partner, payments-apps, 13 Functions APIs × 6 versions) and supported-versions JSON
 shopify	structure	webhook-topics	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; WebhookSubscriptionTopic enum (225 values in 2026-07)
 shopify	structure	webhook-sample-payloads	1	0	1	items 210; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Every webhook topic the reference lists with its sample payload, in its order and naming (app_purchases_one_time/update ... variants/out_of_stock; customer.tags
 shopify	structure	cli-webhook-topics	1	1	0	items 230; items cited 230; added since read 0; read at b46731d0; seen 2026-10-07; status captured; The webhook topics the CLI accepts for an API version, as its error for an unknown topic states them ('Allowed values: app/scopes_update, ...'): 230 for 2026-10
@@ -713,7 +735,7 @@ shopify	structure	translatable-resources	1	1	0	items 55; items cited 19; added s
 shopify	structure	admin-webhook-topics	1	1	0	items 99; items cited 99; added since read 3; read at b46731d0; seen 2026-10-07; status captured; The topics a merchant can choose for a webhook made in the admin, as the page's own query returns them: each topic's label ('Cart creation'), its enum value (CA
 shopify	structure	notification-templates	1	1	0	items 227; items cited 68; added since read 0; read at b46731d0; seen 2026-10-07; status captured; The notifications the store sends, as the admin lists them: customer notifications in 13 groups after the Customer notification settings (Order processing, Loca
 shopify	structure	notification-template-previews	1	0	1	items 48; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Each notification's preview as the admin renders it with sample data: the template's name, its subject line and the email's text
-shopify	structure	dev-changelog	1	0	1	items 768; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Changelog feed with categories (795 items)
+shopify	structure	dev-changelog	1	0	1	items 1570; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Changelog feed with categories (795 items)
 shopify	structure	app-store-taxonomy	1	1	0	items 2795; items cited 161; added since read 0; read at b46731d0; seen 2026-09-30; status captured; App store sitemaps: categories (161), built_in_features, category_features, extensions, collections
 shopify	structure	theme-store	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Theme store sitemaps (165 child sitemaps)
 shopify	structure	theme-files	1	0	1	items 962; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Horizon as the store runs it: its 481 files (assets 125, blocks 95, config 2, layout 2, locales 57, sections 42, snippets 145, templates 13) with sizes and sha2
@@ -727,15 +749,18 @@ shopify	structure	community	1	0	1	items 0; items cited 0; added since read 0; re
 shopify	structure	account-destinations	1	1	0	items 10; items cited 9; added since read 0; read at b46731d0; seen 2026-09-30; status captured; Welcome to Shopify / Where do you want to go?: Your store, Shopify Partners, Shopify Learn, Shopify Community, Shopify Inbox, Shopify Collabs
 shopify	structure	dev-dashboard-nav	1	0	1	items 21; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Dev Dashboard navigation (Home, Apps, Stores, Catalogs, …)
 shopify	structure	admin-ui-copy	0	0	0	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status backlogged; UI strings inside admin route chunks (labels, messages, validation texts)
-shopify	structure	ui-extension-types	1	0	1	items 83; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; The type packages the dev-mcp server loads per API and API version (its types/index.json): polaris-app-home (v1.0, v1.1 and every version: app-bridge), polaris-
+shopify	structure	ui-extension-types	1	0	1	items 180; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; The type packages the dev-mcp server loads per API and API version (its types/index.json): polaris-app-home (v1.0, v1.1 and every version: app-bridge), polaris-
 shopify	structure	dev-mcp-instructions	0	0	0	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status not held; 22 platform-authored markdown guides (admin, app-pricing, app-store-review, custom-data, functions, hydrogen, liquid, onboarding-dev, onboarding-merchant, partn
-shopify	structure	marketing-sitemap	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; www.shopify.com sitemap (555 URLs, incl. /SKILL.md)
+shopify	structure	marketing-sitemap	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; www.shopify.com sitemap (555 URLs, incl. /SKILL.md)
 shopify	structure	polaris-site	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; App design system and admin UI guidance
 shopify	structure	status-page	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Platform status components and incident history
 shopify	structure	legal	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Legal documents index (terms, policies)
+shopify	structure	legal-documents	1	0	1	items 852; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Shopify's legal documents as each page's own data states them, the document as Markdown (contentMd) with its article and English path (enPath): the English docu
+shopify	structure	compliance-reports	1	0	1	items 58; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Shopify's compliance reports, their text page by page: the SOC 3 reports A1-2026 and A2-2025 (17 pages each: management's assertion, the independent service aud
+shopify	structure	product-taxonomy	1	0	1	items 0; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Shopify's Standard Product Taxonomy as the release states it, in English: 26 verticals, 64,292 categories (id, level, name, full name, parent, attributes, retur
 shopify	structure	shopify-com-header-nav	1	1	0	items 59; items cited 28; added since read 0; read at b46731d0; seen 2026-09-30; status captured; Site header navigation: Why Shopify; Products grouped as Build your website, Sell anywhere, Marketing & analytics, Run your business, Get paid, Customize & exte
 shopify	structure	shopify-com-footer	1	0	1	items 173; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; Site footer: Shopify, Ecosystem, Resources, Support groups; region and language list
-shopify	structure	shopify-cli-commands	1	0	1	items 133; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; CLI command manifest: 133 commands (app, theme, hydrogen, doc, organization, plugins, config, …) with flags and args; 16 topics with descriptions
+shopify	structure	shopify-cli-commands	1	0	1	items 271; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; CLI command manifest: 133 commands (app, theme, hydrogen, doc, organization, plugins, config, …) with flags and args; 16 topics with descriptions
 shopify	structure	theme-editor-templates	1	0	1	items 41; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; "Theme editor template picker: lists Home page, Products, Collections, Collections list, Gift card / Cart, Checkout and customer accounts / Pages, Blogs, Blog p
 shopify	structure	checkout-editor-pages	1	0	1	items 10; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; Checkout and accounts editor page picker: Checkout (Checkout), Post purchase (Thank you), Customer accounts (Sign-in, Orders, Order status, Profile), Online sto
 shopify	structure	storefront-menus	1	0	1	items 29; items cited 0; added since read 0; read at -; seen 2026-10-04; status captured; Storefront menus as the theme renders them: header navigation (Home, Catalog, Contact) and footer (Quick links, Resources, payment method icons, the policy link
@@ -754,7 +779,7 @@ shopify	structure	pos-app-navigation	1	0	1	items 149; items cited 0; added since
 shopify	structure	pos-settings	1	0	1	items 699; items cited 0; added since read 0; read at -; seen 2026-10-05; status captured; POS Settings: Display, Checkout, Orders, Devices, Apps, Location, Account sections and their pages (Payments, Payment options, Tips, Screen lock, Dark/light mod
 shopify	structure	tinker-tools	1	0	1	items 95; items cited 0; added since read 0; read at -; seen 2026-10-05; status captured; Tool catalog without sign-in: Featured, 'Make your products shine', 'Have fun with AI', 'Get more done', 'Explore Projects'
 shopify	structure	admin-roles	1	1	0	items 27; items cited 20; added since read 0; read at b46731d0; seen 2026-10-05; status captured; Predefined roles with their descriptions (App developer, Administrator, POS administrator, Customer support, Marketer, Merchandiser, Online store editor, POS fu
-shopify	structure	ui-extension-targets	1	1	0	items 941; items cited 201; added since read 0; read at b46731d0,e49840729; seen 2026-10-05; status captured; UI extension targets per surface (admin, checkout, customer-account, point-of-sale) and version (2025.7.4 to 2026.10.0-rc.11), each with its JSDoc and type
+shopify	structure	ui-extension-targets	1	1	0	items 1343; items cited 201; added since read 6288; read at b46731d0,e49840729; seen 2026-10-31; status captured; UI extension targets per surface (admin, checkout, customer-account, point-of-sale) and version (2025.7.4 to 2026.10.0-rc.11), each with its JSDoc and type
 shopify	structure	admin-role-permissions	1	0	1	items 768; items cited 0; added since read 0; read at -; seen 2026-10-05; status captured; Each role's permissions as the admin's Role operation returns them: permission handle and access level
 shopify	structure	admin-assignable-permissions	1	1	0	items 124; items cited 124; added since read 0; read at b46731d0; seen 2026-10-05; status captured; The store permission handles an organization can assign (OrganizationAssignableStorePermissions)
 shopify	structure	billing-charge-categories	1	1	0	items 72; items cited 37; added since read 0; read at b46731d0; seen 2026-10-05; status captured; Billing charge categories: the Charge categories picker of the expense report (37 options, All first) and the Charge type filter of the charge table (35 checkbo
@@ -792,7 +817,7 @@ shopify	structure	ucp-agent-profile	1	1	0	items 0; items cited 0; added since re
 shopify	structure	cli-extension-template-files	1	0	1	items 966; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Each extension template's files as the CLI copies them (e.g. Sidekick App action: shopify.extension.toml with target admin.app.intent.render, tools.json, instru
 shopify	structure	hydrogen-create-package	1	0	1	items 158; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; The Hydrogen create package's files (templates, skeleton storefront), each member's path, size and sha256; the starter's guides held verbatim; the agent instruc
 shopify	structure	help-notes	1	0	1	items 7870; items cited 0; added since read 0; read at -; seen 2026-09-30; status captured; The notes each Help Center page sets apart, by the class the page gives them: plan requirements (note-plan, 193 in each language), staff permissions (note-staff
-shopify	structure	merchant-changelog	1	0	1	items 1564; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; What's new in Shopify for merchants: each post's date, title, summary, type (New, Feature, ...) and area (Analytics, Balance, ...), as the home page lists them
+shopify	structure	merchant-changelog	1	0	1	items 4855; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; What's new in Shopify for merchants: each post's date, title, summary, type (New, Feature, ...) and area (Analytics, Balance, ...), as the home page lists them 
 shopify	structure	partners-dashboard-routes	1	0	1	items 251; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; The Partner Dashboard's client-side routes as its bundles declare them: signup and organizations, the organization frame (notifications, stores, apps, ads, bugb
 shopify	structure	store-picker-router	1	0	1	items 4; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; The store picker bundle's own router (store-picker-router-23870ac18d64.js): store-picker:root (path o.storeList()) with an index and a * fallback, and store-pic
 shopify	structure	admin-router-versions	1	0	1	items 1374; items cited 0; added since read 0; read at -; seen 2026-10-07; status captured; Later versions of the admin route manifest, each held whole beside the version the ledger counts against (structures/shopify/admin-router/, router-577b0ff35365.
@@ -815,13 +840,20 @@ shopify	structure	help-center	1	1	0	items 5412; items cited 0; added since read 
 shopify	structure	help-pos-hardware-troubleshooter	1	0	1	items 209; items cited 0; added since read 0; read at -; seen 2026-10-17; status captured; The POS hardware troubleshooter as its route modules list it: 4 categories (Card readers, Barcode scanners, Receipt printers, Barcode printers), 23 devices, 122
 shopify	structure	help-locales	0	0	0	items 0; items cited 0; added since read 0; read at -; seen 2026-10-17; status backlogged; The Help Center's languages as its code lists them: 47 codes, each named in its own language (Arabic, Hebrew and Urdu with '(beta)'), sr served as sr-Latn; en a
 shopify	structure	editions	1	0	1	items 7233; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Shopify Editions: 'Everything new across Shopify. Every six months.' The index of editions and each edition's page: its title, its areas (e.g. Sidekick, Agentic
+shopify	structure	editions-page-data	1	0	1	items 12; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; Each Editions page's own data: its sections and nested sections, and each feature (product, card or list entry) with its handle, id, titles, headline, descripti
+shopify	structure	editions-videos	1	0	1	items 36; items cited 0; added since read 0; read at -; seen 2026-10-30; status captured; The videos the Editions pages put on features (summer 2023 12, winter 2024 8, summer 2024 1, summer 2025 4, winter 2026 5, spring 2026 6): each video's title, d
+shopify	structure	open-source	1	0	1	items 4656; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Shopify's open-source code that states its architecture, each repository at its default branch's commit of 2026-10-31: graphql-design-tutorial, packwerk (modula
+shopify	structure	pricing-page-data	1	0	1	items 207; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Each pricing page's own data, country site by country site: the plan pricing pages (61: plan cards with monthly and yearly prices, card rates, features with the
+shopify	structure	engineering-blog	1	0	1	items 436; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; Shopify's engineering blog, every post its sitemap lists (436, 2010-10-15 to 2026-10-22): title, author (283), published date, tags (Development 156, Infrastruc
+shopify	structure	embedded-videos	1	0	1	items 162; items cited 0; added since read 0; read at -; seen 2026-10-31; status captured; The 162 YouTube videos those pages embed or link (151 in 83 engineering posts, 6 in the developer changelog, 5 in merchant changelog posts): each video's title,
 shopify	runs	android	15	0	15	
 shopify	runs	android-apks	1	0	1	
 shopify	runs	cli	64	0	64	
-shopify	runs	fetch	79	0	79	
+shopify	runs	fetch	90	0	90	
 shopify	runs	import	1	1	0	
 shopify	runs	receiver	1	0	1	
-shopify	runs	session	265	7	258	
+shopify	runs	session	266	7	259	
+shopify	runs	youtube	2	0	2	
 shopify	ledger	admin-control: exercised	688			the repository's own count, index/ledger
 shopify	ledger	admin-control: listed	43849			the repository's own count, index/ledger
 shopify	ledger	admin-control: stopped-at-confirm	3			the repository's own count, index/ledger
@@ -853,8 +885,16 @@ shopify	ledger	sitemap:shopify-com-sitemap: attempted-no-response	2			the reposi
 shopify	ledger	sitemap:shopify-com-sitemap: attempted-not-found	7			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-com-sitemap: attempted-redirect	15			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-com-sitemap: captured	530			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-client-error	1			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-no-response	2			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-not-found	7			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: attempted-redirect	148			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: captured	861			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-com-sitemaps: not-attempted	313706			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-dev-sitemap: attempted-redirect	3			the repository's own count, index/ledger
 shopify	ledger	sitemap:shopify-dev-sitemap: captured	8868			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-dev-sitemap-2026-10-31: attempted-redirect	3			the repository's own count, index/ledger
+shopify	ledger	sitemap:shopify-dev-sitemap-2026-10-31: captured	8950			the repository's own count, index/ledger
 shopify	ledger	sitemap:themes-shopify-sitemaps: captured	1564			the repository's own count, index/ledger
 shopify	ledger	sitemap:themes-shopify-sitemaps: not-attempted	50048			the repository's own count, index/ledger
 salla	pages	help.salla.sa/article	2951	66	2885	
