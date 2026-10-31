@@ -1266,15 +1266,34 @@ def cmd_earlier(a):
         m = re.search(r"pointer (\S+)", e.get("locator") or "")
         if m:
             at_ptr[(e["structure"], m.group(1))].append(e["entry_id"])
+    # and by a feature's name key (`card_rates_short`) under the same `within`, on pages laid out differently (SH-73)
+    def name_key(e):
+        m = re.search(r"(?:^|; )name: ([\w.-]+)", e["text"])
+        w = re.search(r"(?:^|; )within: ([^;]+)", e["text"])
+        return (e["structure"], w.group(1).strip() if w else "", m.group(1)) if m and "_" in m.group(1) else None
+    at_name = collections.defaultdict(list)
+    for e in by.values():
+        k = name_key(e)
+        if k:
+            at_name[k].append(e["entry_id"])
     for i, eid in enumerate(batch_ids(a.batch), 1):
         if eid not in by or (a.__dict__.get("from") and i < a.__dict__["from"]) or (a.to and i > a.to):
             continue
         keys = earlier_keys(by[eid]["text"])
         found = []
         m = re.search(r"pointer (\S+)", by[eid].get("locator") or "")
+        own = re.search(r"(?:^|; )name: ([\w.-]+)", by[eid]["text"])
+        twins = []
         for twin in (at_ptr.get((by[eid]["structure"], m.group(1)), []) if m else []):
-            if twin != eid and placed_at.get(twin):
-                found.append(f"   twin {twin} at the same place: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
+            tn = re.search(r"(?:^|; )name: ([\w.-]+)", by[twin]["text"])
+            # the same place is the same thing only where a name key, where either has one, agrees: pages laid out
+            # differently put other features at one place (SH-73)
+            if twin != eid and (not (own or tn) or (own and tn and own.group(1) == tn.group(1))):
+                twins.append((twin, "at the same place"))
+        if own:
+            twins += [(t, f"by its name {own.group(1)}") for t in at_name.get(name_key(by[eid]), []) if t != eid and t not in dict(twins)]
+        for twin, how in [t for t in twins if placed_at.get(t[0])][:6]:
+            found.append(f"   twin {twin} {how}: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
         for kind, v in keys:
             pat = earlier_pattern(kind, v)
             g = collections.OrderedDict()
