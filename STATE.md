@@ -250,7 +250,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
   - **Since 09:45, to about 11:40 UTC on 31 October:**
-    - **Shopify, checked since:** SH-14 (the router, with its digest), SH-30 to SH-32 (help notes), SH-42 and SH-43 (the changelog, with its digest), SH-58 to SH-61 (Editions' page data, with its digest), SH-79 and SH-92 to SH-94. So `pricing-page-data` and `plan-page-public` are placed whole, 63 of Shopify's 103 batches in all.
+    - **Shopify, checked since:** SH-14 (the router, with its digest), SH-30 to SH-32 (help notes), SH-42 and SH-43 (the changelog, with its digest), SH-58 to SH-61 (Editions' page data, with its digest), SH-79 and SH-92 to SH-94. So `pricing-page-data` and `plan-page-public` are placed whole, 57 of Shopify's 103 batches in all, with 4,462 entries left.
     - **Digests:** the changelog's and the router's are written and settled, and each digest's section 6 adds the rules its batches set.
     - **Rulings since** (`held/review-H-rulings.md`):
       - the corrections with the changelog digest: Managed Markets `core`, POS Terminal and the Combined Listings app `own-service`, unit pricing on CM-CAT-001, a country's address fields on CM-CUS-008;
