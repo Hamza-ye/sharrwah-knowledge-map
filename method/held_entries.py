@@ -1165,7 +1165,7 @@ def cmd_show(a):
 EARLIER_PATH = re.compile(r"(?:href|path|url|link|route_path|to): (/[^\s;,\]}]*)")
 EARLIER_NAME = re.compile(r"(?:^|; |\{)(?:route|name|key|id|app|slug): ([\w@./,:-]{3,})|(?:^|; |\{)(?:title|label): ([a-z][\w-]*(?:[._][\w-]+)+)(?=[;}]|$)")
 EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
-EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
+EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|heading|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
 
 
 EARLIER_GENERIC = {"value", "values", "type", "enabled", "status", "true", "false", "default", "data", "items", "item",
