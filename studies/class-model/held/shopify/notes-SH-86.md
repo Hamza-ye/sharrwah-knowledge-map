@@ -178,3 +178,12 @@ The admin router digest's rules are taken where they fit; where they don't, the 
 - **`earlier` matches bare paths** (`/new`, `/:id`, `/bills`, `/:payoutId`, `/:appId/overview`) to the admin's routes, another app's. The readings say so where they matched.
 - **The checker's container note fires on sibling routes** whose paths begin others' (R86.4). The digest's rule 8 counts these as containers by their path alone, keeping their own lines.
 - **No notes file is held for SH-23**, whose placements this batch follows (R23.4 to R23.8): `held/shopify/notes-SH-23.md` isn't in the tree.
+- **The observed-sh clone moved** to `04de369da` during the batch, as the evidence map now says. `git diff e38dc17e3 04de369da` is empty for the four structures and the four runs read here, so the citations hold at either commit.
+
+## The coordinator's check
+
+Measured: 39.4 million tokens over 137 requests, about 303,000 an entry, its context past the brief's 200,000 from about the middle. The checker prints no problem.
+- **Kept:** R86.1 to R86.12, which SH-87 and SH-88 keep; the `CHANGES` lines on CM-PTN-008 (the referral programme, as SH-7's VIEW_PARTNER_REFERRALS), CM-DVT-004, CM-APP-006 and CM-APP-009; and the new things Bug Bounty and Sandbox organizations, with App versions' four routes.
+- **Line 141, corrected:** Hyperwallet's widget is loaded by the platform's own payout method page, a platform interface, so it isn't `outside`. It takes the `/hyperwallet` routes' line, CM-PTN-003 `core`, Hyperwallet its filler (M-4).
+- **SH-7's `new:Partner ads`, aligned:** the Ads routes are the App Store's ads for developers, CM-APP-002's by the Editions digest's E86, so SH-7's two permission lines (81, 83) move to CM-APP-002, keeping their `shows`.
+- **`earlier` and the bare paths:** it matches '/new', '/:id' and '/bills' to the admin's routes, another app's; SH-87 and SH-88 take twins from this batch's lines, not from those matches.
