@@ -1201,7 +1201,9 @@ EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|heading|text|name
 
 
 EARLIER_GENERIC = {"value", "values", "type", "enabled", "status", "true", "false", "default", "data", "items", "item",
-                   "name", "label", "title", "text", "list", "form", "field", "option", "options", "query", "action"}
+                   "name", "label", "title", "text", "list", "form", "field", "option", "options", "query", "action",
+                   "market", "markets", "limit", "limits", "scopes", "statuses", "updates", "community", "partners",
+                   "actions", "settings", "notifications", "general", "checkout", "orders", "products", "customers"}
 
 
 def earlier_keys(text):
