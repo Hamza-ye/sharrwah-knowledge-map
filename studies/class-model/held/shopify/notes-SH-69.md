@@ -138,4 +138,4 @@ None. Each row, FAQ, summary and item had a capability. Searched with `caps --te
 - **SH-70 opens with `posLiteVsProPlans`.** Its two lists are in the same words as this batch's entries 71 to 83, so SH-70's prompt says to take these lines.
 - **The source's disagreement** (Plus's 'يشتمل على POS Pro' with `included_in_plan: false`) is in `reading`.
 - **Lead:** POS Pro's staff performance tracking and 'endless aisle' have no capability. CM-STF-004 (staff targets) is the lead for the first.
-- **Cost:** 13.6 million tokens over 63 requests, about 164,000 an entry.
+- **Cost:** 13.4 million tokens over 65 requests, about 161,000 an entry.
