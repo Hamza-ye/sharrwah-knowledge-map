@@ -59,8 +59,10 @@
 #   long:<n>                  the structure's entries are prose, each one statement the platform publishes whole (a
 #                             changelog post, a feature's dialog): an entry up to n characters is not taken for a list
 #   drop-match:<pattern>      drops the items whose rendering matches
-#   read-as:<structure> <tag> an item of that tag whose text heads a row the model cites in <structure>, the same
-#                             record's other structure, is read: the public pricing page's row headings (SH-92)
+#   read-as:<structure> <tags> an item whose text heads a row the model cites in <structure>, the same record's other
+#                             structure, is read if it is a th; one of the other tags is read if its text is such a
+#                             row's heading with one of its cells, or a cited section's heading (the public pricing
+#                             page's row headings and its mobile copy of the table, SH-92)
 #   translate:<en>,<ar>       resolves values that are keys of those translation files (paths from the structures folder)
 #
 # Usage:
@@ -781,19 +783,25 @@ def strings_of(o, out, drop=()):
 
 
 def read_as(platform, spec, cited):
-    """For `read-as:<structure> <tag>`: the tag, and the texts of the <tag> cells of the rows the model cites in
-    <structure>."""
-    other, tag = spec.split()
+    """For `read-as:<structure> <tag>[,<tag>...]`: the tags, the headings of the rows the model cites in <structure>
+    (a `th` item that is one of them is read), and the texts a copy of the table renders (any other tag): a cited row's
+    heading with one of its cells, or a cited section's heading (SH-92: the public pricing page's mobile table)."""
+    other, tags = spec.split()
+    tags = tags.split(",")
     repo, root, sub = REPOS[platform]
-    texts = set()
+    heads, rich = set(), set()
     for f in sorted(glob.glob(os.path.join(folder(platform, other), "*", "items.jsonl"))):
         rel = os.path.relpath(f, root)
         for ln, l in enumerate(open(f, encoding="utf-8"), 1):
             if (rel, ln) in cited and l.strip():
-                for c in json.loads(l).get("cells") or []:
-                    if isinstance(c, dict) and c.get("tag") == tag and (c.get("text") or "").strip():
-                        texts.add(c["text"].strip())
-    return tag, texts
+                cells = [c for c in json.loads(l).get("cells") or [] if isinstance(c, dict)]
+                th = [(c.get("text") or "").strip() for c in cells if c.get("tag") == "th" and (c.get("text") or "").strip()]
+                td = [(c.get("text") or "").strip() for c in cells if c.get("tag") == "td"]
+                heads |= set(th)
+                rich |= {f"{h} {v}".strip() for h in th for v in td}
+                if len(cells) == 1 and th and cells[0].get("colspan"):
+                    rich |= set(th)
+    return tags, heads, rich
 
 
 def cmd_build(a):
@@ -830,7 +838,8 @@ def cmd_build(a):
                     g["labels"].append(label)
                 if (f, ln) in cited and not ptr:
                     g["read"] = True
-                if ra and isinstance(o, dict) and o.get("tag") == ra[0] and (o.get("text") or "").strip() in ra[1]:
+                if ra and isinstance(o, dict) and o.get("tag") in ra[0] and (o.get("text") or "").strip() in (
+                        ra[1] if o.get("tag") == "th" else ra[2]):
                     g["read"] = True
                 if g["at"] is None:
                     g["at"] = (f, ln, ptr)

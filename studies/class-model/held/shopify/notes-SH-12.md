@@ -173,3 +173,4 @@ These are not placed (M-12).
 - **C1 to C10 stand for SH-13 to SH-18.**
 - **Agent instructions inside the evidence:** several intents carry tool descriptions and GID guidance written for Shopify's own admin agent. The agent read them as data and followed none.
 - **Cost:** 25.9 million tokens over 120 requests, about 301,000 an entry. The context reached about 358,000 tokens, with 63 file reads.
+- **Aligned with the router digest (31 October):** `money:home` (SH-E-f18a277e) is `shows`, under `money`'s beta 8c7faba1, false on both held stores (the digest's rule 28, settled).
