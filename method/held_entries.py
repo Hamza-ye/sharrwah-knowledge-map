@@ -1207,6 +1207,9 @@ EARLIER_KEY = re.compile(r"\[([\w-]+(?:[/#.][\w.-]+)+)\]")
 EARLIER_LABEL = re.compile(r"(?:^|; |\{)(?:section|label|title|heading|text|name|aria_label|en|ar): ([^;\[\]{}()]{3,80}?)\s*(?=[;(\[{}]|$)")
 
 
+EARLIER_NOTE = re.compile(r"(?:^|; )text: (?:Plan requirement|Early access|Staff permissions|Beta|Note)\s+(.{4,90}?)\s+"
+                         r"(?:is|are) (?:only )?(?:available|in early access)")
+NOTE_HEADINGS = {"Plan requirement", "Early access", "Staff permissions"}   # a help note's heading names no feature
 EARLIER_GENERIC = {"value", "values", "type", "enabled", "status", "true", "false", "default", "data", "items", "item",
                    "name", "label", "title", "text", "list", "form", "field", "option", "options", "query", "action",
                    "market", "markets", "limit", "limits", "scopes", "statuses", "updates", "community", "partners",
@@ -1231,7 +1234,13 @@ def earlier_keys(text):
              and not (m.group(1) and re.fullmatch(r"[A-Z][a-z]+", m.group(1)) and "name:" in m.group(0))]
     keys += [("key", m.group(1)) for m in EARLIER_KEY.finditer(text)]
     # a one-word label (Orders, الطلبات) is cited for too many things to say anything; its address does
-    keys += [("label", m.group(1).strip()) for m in EARLIER_LABEL.finditer(text) if len(m.group(1).split()) >= 2]
+    keys += [("label", m.group(1).strip()) for m in EARLIER_LABEL.finditer(text) if len(m.group(1).split()) >= 2
+             and m.group(1).strip() not in NOTE_HEADINGS]
+    # a help note's feature, its words before 'is available' with the heading dropped, which earlier lines hold as a
+    # term: the heading alone is cited for other things (SH-30)
+    h = EARLIER_NOTE.search(text)
+    if h and h.group(1).lower() not in ("this feature", "this app", "these features"):
+        keys.insert(0, ("label", re.sub(r"^(?:The|A|An) ", "", h.group(1)).strip()))
     seen, out = set(), []
     for k in keys:
         if k[1] not in seen and len(k[1]) >= 3:

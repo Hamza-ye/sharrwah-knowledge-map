@@ -147,3 +147,4 @@ The terms page's affiliates clause, for CM-MKT-010 on BigCommerce, is maker evid
   - AI for merchants outside the admin goes on the place's capability, not CM-AIA-001.
 
   SH-38's, SH-55's, SH-56's and SH-57's lines are aligned.
+- **A help page's plan requirement is its feature's condition, not a plan line** (after SH-30). Its plans are the line's scope, and the line keeps its feature's support. A plan line is a plan page's own row or list, which states what a plan includes: the pricing pages, the plans' feature sets. Checkout Blocks' features under a 'Plan requirement' note stay `own-service`, on Plus or 'Basic plan or higher', as the changelog's posts on them are (SH-35, SH-38).
