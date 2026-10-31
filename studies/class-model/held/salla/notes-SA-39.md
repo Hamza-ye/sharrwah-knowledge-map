@@ -122,7 +122,7 @@ The checker's last line, for SA-39: `86 of 86 entries placed; 0 problems`.
 ## The coordinator's check (31 October 2026, after the batch)
 
 - **Seven of the FAQ's 13 categories have no entry by design.** The concern map already cites them: `held-vs-read.tsv` gives the structure 13 items, 7 of them cited. The held pass lists only what the model hasn't read. Their articles are entries, as each article is an item of its own (132 entries in all), and SA-40 and SA-41 place them.
-- **`portal-app-routes` is placed whole** (1,193 entries over SA-34 to SA-39). The domains app's pages announcing themselves are placed where SA-37 put their paths. The search service's client and the drawing path are `out`.
+- **`portal-app-routes` is placed whole** (615 entries over SA-34 to SA-39). The domains app's pages announcing themselves are placed where SA-37 put their paths. The search service's client and the drawing path are `out`.
 - **The registry's lines stand,** by the ruling after SA-39: from the next registry on, one line an app. The services app's lines are `extension-point`, after SA-44's check.
 - **Entry 66's mismatched answer** is placed as the source holds it: the question on CM-APP-002 `shows`, the answer, Pay-As-You-Go, on CM-APP-003 `core`.
 - **The article rules stand for SA-40 and SA-41:** an article's question and answer are read together by what they say the platform does.

@@ -93,4 +93,4 @@ None in the values. Two observations:
 - **The performance report's recommendation buttons** go on the pages they open, as the notes placed them. The recommendations themselves are a lead for CM-ANL-003.
 - **`show` lists items with the same app and path from every bundle.** Entries 5 and 6 each stand for items of two bundle versions. Their lines agree with SA-11's for the same paths, so nothing is placed twice.
 - **The edu rules for SA-15 stand,** keeping to SA-32's reading of `allowedPlans`.
-- **Cost:** 13.4 million tokens over 71 requests, about 168,000 an entry. No cell changes beyond SA-13's. The dashboard's routes, 1,156 entries over SA-7 to SA-14, are placed.
+- **Cost:** 13.4 million tokens over 71 requests, about 168,000 an entry. No cell changes beyond SA-13's. The dashboard's routes, 706 entries over SA-7 to SA-14, are placed.
