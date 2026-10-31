@@ -1417,8 +1417,10 @@ def cmd_check(a):
             if not ss or any(x not in SUPPORTS for x in ss) or len(ss) > 2 or len(set(ss)) != len(ss):
                 problems.append(f"{w}: supports is one value of {', '.join(SUPPORTS)}, or two different ones, `;`-separated")
             for x in ok:
-                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl in seen[x]):
-                    problems.append(f"{w}: {x} placed again on the same capability, or placed out too")
+                # a second line on the same capability is for another thing the entry names with its own condition
+                # (a post's payment methods, each in its own countries: SH-34), never the same scope and filler again
+                if x in seen and any((c == r["cap_id"] and (sc, fl) == (r["scope"], r["filler"])) or pl == "out" for c, pl, sc, fl in seen[x]):
+                    problems.append(f"{w}: {x} placed again on the same capability with the same scope and filler, or placed out too")
         elif r["placement"] == "new":
             m = re.match(r"^new:(\S.*\S|\S)$", r["cap_id"])
             if not m:
@@ -1432,7 +1434,7 @@ def cmd_check(a):
             if not ss or any(x not in SUPPORTS for x in ss):
                 problems.append(f"{w}: a new thing says what the entry supports")
             for x in ok:
-                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl in seen[x]):
+                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl, _, _ in seen[x]):
                     problems.append(f"{w}: {x} placed again as the same new thing, or placed out too")
         elif r["placement"] == "out":
             if any(r[k].strip() for k in ("cap_id", "supports", "scope", "terms", "filler", "quality")):
@@ -1465,7 +1467,8 @@ def cmd_check(a):
                     notes.append(f"line {i}: the quote '{clip(qt, 70)}' is found nowhere held, in the entry, its structure's sources, the platform's run pages, or a file or statement the reading cites: copy it exactly")
             if any(x in ss for x in ("extension-point", "outside")) and any(fold(g) in fold(e0["text"]) for g in GROUP.get(a.platform, ())):
                 notes.append(f"line {i}: {'/'.join(ss)} on an entry that names a company of the platform's group: own-service? (rule 4)")
-            if "core" in ss and re.search(rf"\b(?:{BRAND[a.platform]})\s+[A-Z]\w+", e0["text"]):
+            # the line's own thing, by its terms: a changelog post names the brand's products in passing (SH-34)
+            if "core" in ss and re.search(rf"\b(?:{BRAND[a.platform]})\s+[A-Z]\w+", r["terms"] or ""):
                 notes.append(f"line {i}: core on a product named with the platform's brand, which names no maker: is it core by what the entry shows? (rule 4)")
             if re.search(r"\w\*(?=[\s;,)]|$)", e0["text"]):
                 notes.append(f"line {i}: the entry marks a footnote (*): the footnote is part of the entry (rule 1)")
@@ -1479,7 +1482,7 @@ def cmd_check(a):
         if not r["reading"].strip():
             problems.append(f"{w}: reading says why, as a reading")
         for x in ok:
-            seen[x].append((r["cap_id"], r["placement"]))
+            seen[x].append((r["cap_id"], r["placement"], r["scope"], r["filler"]))
         if "own-service" in ss and ok:
             notes.append(f"own-service on {r['cap_id']}: {clip(es.get(ok[0], {}).get('text', ''), 160)}")
         if "core" in ss and ok and PARTNER.search(es.get(ok[0], {}).get("structure", "")):
@@ -1561,10 +1564,10 @@ def cmd_check(a):
                 problems.append(f"notes-{a.batch}.md doesn't name the new thing {names[0]!r}")
     for (c, what), ls in sorted(changes.items()):
         print(f"CHANGES {c}@{a.platform} {what}, by line{'s' if len(ls) > 1 else ''} {', '.join(map(str, ls))}: read each again")
-    for n in notes[:120]:
+    for n in notes[:400]:
         print("NOTE", n)
-    if len(notes) > 120:
-        print(f"NOTE ... and {len(notes) - 120} more")
+    if len(notes) > 400:
+        print(f"NOTE ... and {len(notes) - 400} more")
     for k, names in sorted(new_names.items()):
         print(f"NEW {names[0]}: {len(names)} lines")
     for p in problems[:200]:
