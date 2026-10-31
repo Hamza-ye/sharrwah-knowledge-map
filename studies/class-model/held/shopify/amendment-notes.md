@@ -36,3 +36,13 @@ The coordinator's list, gathered from the batches' checks. Each item is read whe
   - Sanity integration;
   - Finance.
 - **For CM-B2B-006's cell:** the sales staff page calls them 'sales representatives' (the check after SH-30).
+
+## Lists the concern map read whole
+
+- **The build reads only the first line of some citations.** It takes 'line N' alone from a citation 'from line N (one option per line; first option quoted)', and nothing from 'lines A-B'. So the options after the first line of a list the concern map cites whole became held entries (the check after SH-33). Shopify's three are:
+  - `tracking-carriers` (203 entries, SH-102, placed by script on CM-SHP-017, the line its cell gives the list);
+  - `inventory-adjustment-reasons` (6, SH-33, on CM-INV-001);
+  - `return-reasons` (in SH-97, not yet placed).
+- **Their lines repeat the model's own reading.** At the amendment they are the list's options, not new evidence of a support; the carriers' names still serve as the cell's fillers.
+- **WooCommerce's citations hold 333 such ranges.** At WooCommerce's amendment, check which of its placed entries they cover. A rebuild should first teach `cited_lines` both forms; the rebuild refuses to drop a placed entry, so placed ones must stay.
+
