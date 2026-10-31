@@ -32,8 +32,8 @@
 
 ### The portal's side menu (for the coordinator's alignment with SA-28)
 
-- **N1 (H1).** A link to a portal route takes the capability and support that SA-34 to SA-37 gave the same route, citing that line. Its gate (a permission, a feature, `requiresThemeAccess`) is the route's, so it goes in `reading`, never in `scope`.
-- **N2.** Where no batch has placed the route yet, I placed the link by the cell that already cites the same Partners portal link (SA-S-1905 to SA-S-1947), and by its page in the sweep. These are the layout-mf and affiliate routes SA-38 holds: /affiliates/marketplace, /affiliates/my-opportunities, /affiliates/orders, /affiliates/active-merchants and /affiliates. SA-38 should keep to these lines, or the coordinator aligns them.
+- **N1 (H1).** A link to a portal route takes the capability and support that SA-34 to SA-38 gave the same route, citing that line. Its gate (a permission, a feature, `requiresThemeAccess`) is the route's, so it goes in `reading`, never in `scope`.
+- **N2.** Five links open routes that only SA-38 places: /affiliates/marketplace, /affiliates/my-opportunities, /affiliates/orders, /affiliates/active-merchants and /affiliates. SA-38's placements appeared in the repository while I worked (commit f74183ea). I first placed these links by the cell that already cites the same Partners portal link (SA-S-1905 to SA-S-1947) and by each page in the sweep. I then read SA-38's lines for the same routes. They agree on every capability and support: CM-PTN-009 `extension-point`, with CM-MKT-014 `extension-point` for the marketplace. My readings cite them.
 - **N3 (H2, M-13).** A group with href '#' is a container. It goes on the capability its title names, as the cells' readings show, with the support its children's routes took:
   - My Services is on CM-PTN-005;
   - Affiliates and Marketing Tools are on CM-PTN-009, whose note names both menus;
