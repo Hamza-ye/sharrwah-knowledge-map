@@ -249,7 +249,7 @@ At phase A's end, the checker found every quote, 3,193 of them, and no error. Wi
       - SA-50 to SA-56 side by side once SA-49 is checked, then SA-57;
       - each of Shopify's large structures' first batch (SH-50 Editions' page data, SH-68 pricing, SH-1, SH-5, SH-19 and the other starts), then their later batches side by side, four agents at a time;
       - then the new things, decided across platforms, and the amendments.
-  - **Since 20:00, to about 21:45 UTC on 31 October: the inspections, and the qualities pass.**
+  - **Since 20:00, to about 21:00 UTC on 31 October: the inspections, and the qualities pass.**
     - **The second stage's inspection** (`inspection-S2.md`, `38e7501f`) found 25 things and 7 notes.
       - The 4 must-fix findings were confirmed by the coordinator against the code and the evidence:
         - a capture's passage held outside its `text.txt` can't be cited as the brief said;
