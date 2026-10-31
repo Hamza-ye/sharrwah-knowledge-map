@@ -92,13 +92,13 @@ The values agree: each entry stands for one route object of layout-mf's router a
 ## For the second stage: what the sources state that no entry holds
 
 - **CM-SFR-008:**
-  - a purchased domain is reserved 48 hours for the registrant's verification (`20261008T145200Z-sweep-partner-portal-routes-en/steps/043.text.txt`, line 25);
+  - a purchased domain is reserved 48 hours for the registrant's verification (`20261008T145200Z-sweep-partner-portal-routes-en/steps/043.text.txt`, line 24);
   - 'This transfer includes a mandatory 1-year renewal added to the domain's current expiry date, billed now.' (step 045, line 25);
-  - an assignment is of 'a .sa or .السعودية domain', and the current administrative coordinator must approve it (step 047, lines 26 and 31);
+  - an assignment is of 'a .sa or .السعودية domain', and the current administrative coordinator must approve it (step 047, lines 27 and 36);
   - the partner's features `domain_dnssec` and `domain_variants` (`portal-private-settings/partner@en/items.jsonl`, positions 66 and 67).
 
   These are qualities and scope leads (Saudi domains).
-- **CM-APP-003:** the app coupon form's fields: 'Minimum order amount', 'Maximum discount amount', 'Usage limit', 'Limit per user', 'Included Apps', 'Beneficiary stores' (step 048, lines 31 to 48).
+- **CM-APP-003:** the app coupon form's fields: 'Minimum order amount', 'Maximum discount amount', 'Usage limit', 'Limit per user', 'Included Apps', 'Beneficiary stores' (step 048, lines 36 to 52).
 - **CM-SHP-011:** the fulfillment centers' list keys (name, city, status), chunk @818372; the apps' locale isn't held.
 - **The partner's menu group titles** for Domains, Marketing Tools, Payments and Support Tools are `portal-menu-definitions` items (parents 89, 78, 94, 98), with no route of their own here.
 
