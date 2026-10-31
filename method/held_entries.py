@@ -1157,7 +1157,12 @@ def cmd_show(a):
             if e["structure"] in seen:
                 continue
             seen.add(e["structure"])
-            for m in sorted(glob.glob(os.path.join(folder(a.platform, e["structure"]), "**", "meta.json"), recursive=True))[:1]:
+            # the meta of a label the entries are read under, where the structure has several (the changelog's @posts,
+            # not its @feed: SH-34 to SH-38)
+            labs = {l.strip() for x in es if x["structure"] == e["structure"] for l in x["labels"].split(",") if l.strip()}
+            ms = sorted(glob.glob(os.path.join(folder(a.platform, e["structure"]), "**", "meta.json"), recursive=True))
+            ms = [m for m in ms if os.path.basename(os.path.dirname(m)) in labs] or ms
+            for m in ms[:1]:
                 try:
                     d = json.load(open(m, encoding="utf-8"))
                 except Exception:
