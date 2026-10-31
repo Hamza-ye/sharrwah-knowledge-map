@@ -1,0 +1,38 @@
+# A-amend: capabilities made from the held pass
+
+Written from `briefs/M-amend.md`, 31 October 2026, for the coordinator's decisions in `held/new.tsv`. The part follows `E-amend`'s form: every file `E-amend` has, each with its header row; `derived.tsv` and `derived-qualities.tsv` are the checker's.
+
+## The held pass's new capabilities (31 October)
+
+Five capabilities the coordinator decided new in `held/new.tsv` (N04, N07, N08, N09, N12), with their facts, places of their own and open cases in `held/new-proposals.tsv` and `.md`. Each comes from the held pass's lines, not from a concern of the map, so no concern lands: `landings.tsv`, `rulings.tsv`, `qualities.tsv` and `slot-fillers.tsv` hold only their headers. Each platform's cell is from the concern map's statements, searched with `class_slice.py search` in English and, for Salla and Zid, in Arabic (singular and plural, with and without ال); each placement is a reading. A platform whose held lines name the thing has its cell here too, `none-held` where the concern map holds nothing, and its reading says that `held_amend.py` adds those lines later.
+
+**CM-PLN-008, Credits and cashback on the merchant's sales (N04).** Parent CM-PLN-004, platform billing.
+- Place of its own: Shopify's plan table row 'Earn 1% back on all sales' (SH-76:124).
+- Shopify's cell is `core` on the concern map's own plan lines SH-I-1141 (the public pricing page) and SH-I-1243 (the admin's plan comparison): entries Q1 placed in SH-C-015, the plan, that no statement covers and no cell cited (the proposals' lead). That the 1% is paid as subscription credits, 0.5% on other payment providers, for six months or up to a maximum, is only in the held lines (SH-88:13).
+- Joined with Zid's cashback campaigns on role, a reading: the platform's reward to the merchant for the store's orders. Zid's cell holds nothing in the concern map; its two flags are held lines.
+- Kept apart, a reading: Zid's plan cards' 50% cashback on the annual plan (ZD-I-0374, ZD-I-0383, ZD-I-0396), cited on CM-PLN-002, a return on the plan's price, not a share of sales (the coordinator may read it as this thing); buyers' cashback (CM-LOY-003); the Cryptocurrency Credit Reward Program's Credits (SH-S-0434, SH-I-1368, on CM-PAY-018), which no statement held says are earned on sales. Shopify's help section 'Managing credit notes and billing credits' (SH-I-2348, SH-C-016) is cited by no cell: it doesn't say what the credits are for, so it isn't cited here (a lead for CM-PLN-004).
+- Open (`held/new-proposals.md`, case 11): Zid's nd2026 (N59), decided out, would be this thing's if it is Zid's National Day 2026 offer to merchants.
+
+**CM-STF-006, Sales credited to staff (N07).** Parent CM-STF-001, staff accounts.
+- Place of its own: Zid's POS plan policy zidpos.employee_commision. Joined with Shopify's Staff sales attribution on role, a reading (Shopify's attribution is 'for reporting and staff commission', SH-41:109).
+- Shopify's cell: `core` on the Admin API's requirement that orderUpdate holds the scope write_pos_staff_member_event_attribution_overrides 'to assign events to another staff member' (SH-C-054/boundary/SH-S-6229), the platform's own API for its own feature (the dry run's convention); `shows` on the staff notification template Sales attribution edited (SH-I-2063). Neither concern is domain A or names A under also: SH-C-054 is C, SH-C-150 is D, and SH-S-6229 is also held under SH-C-158, SH-C-159 (F) and SH-C-137 (E). They are the concern map's only statements of the thing, and no other cell cites them.
+- Homonym: Q1 placed the scope's own entry (SH-I-2460) in SH-C-131, marketing attribution (CM-MKT-008), and SH-C-142, the POS, by the word attribution; it credits staff, not marketing. Not CM-B2B-006 either: BigCommerce's Sales Staff and Sales rep ordering are reps who order for buyers.
+- A gap: WooCommerce's feature POS staff (WC-I-0344, WC-C-088 and WC-C-089) is named only. The release's FeaturesController, read as context, describes it as 'Experimental: POS staff management, roles, and order attribution', hidden from the merchant; no statement held says so, so it isn't cited and WooCommerce's cell is `none-held`.
+- Open (`held/new-proposals.md`, case 3): whether Zid's employee commission is commission on sales credited to staff.
+
+**CM-STF-007, Staff attendance (N08).** Parent CM-STF-001.
+- Place of its own: Zid's POS plan policy zidpos.employee_attendeance; what it records is a reading from the key alone (case 3's gap). No platform's statement in the concern map shows it: all five cells are `none-held`.
+- Salla Point's shifts (salla_point_manage_shifts, salla_point_view_shift_reports, SA-S-2453 and SA-S-2452, on CM-POS-001) are the point of sale's shifts and their reports; no statement says a shift records attendance, so they aren't joined (a reading).
+
+**CM-ONB-005, Trying the platform before signing up (N09).** No parent.
+- Place of its own: Zid's route :lang/demo. Joined with Shopify's Store preview on role, a reading; the alternative keeps them apart (case 4).
+- No platform's statement in the concern map shows it: all five cells are `none-held`; Zid's and Shopify's held lines come in by `held_amend.py`. Not partners' and developers' stores (CM-DVT-003, CM-DVT-004, Salla's Demo Stores among them), nor a plan's free trial, which follows sign-up (CM-PLN-001: Salla's plan-free-trial flag), nor BigCommerce's staging environments for existing stores (CM-DVT-006).
+
+**CM-TRU-022, The platform's security research programme (N12).** No parent.
+- Place of its own: the Partner Dashboard's route bugbounty. No platform's statement in the concern map shows one: all five cells are `none-held`; Shopify's two held lines come in by `held_amend.py`.
+
+**The checker's flags** (`check_class_part.py`, 31 October; its last line: '0 problems, 24 flags for the reviewer'), read:
+- evidence lines 4 and 5, SH-C-054/boundary/SH-S-6229 (domain C) and SH-I-2063 (SH-C-150, domain D), neither naming A: cited for CM-STF-006 because no statement of a domain A concern shows the thing; no other cell cites either, so neither supports two domains.
+- cells.tsv line 7, CM-STF-006 for Shopify, core resting only on a boundary statement: it is Shopify's own Admin API for its own feature, `core` by the dry run's convention; the held lines bring its admin evidence (the permission SALE_ATTRIBUTIONS_FOR_ORDERS, the POS's Add staff to sale).
+- cells.tsv lines 3 to 6, 8 to 11, 13 and 17 to 26, `none-held` cells whose searched terms match statements: each match was read and is named in the cell's reading or is another sense of the term: buyers' cashback, wallets and rewards (Salla SA-C-063, SA-C-064, SA-C-091; Zid ZD-C-019; WooCommerce WC-S-0720, WC-S-5479); credit cards, credit notes and credit limits (Zid ZD-S-0616, ZD-S-0832 to ZD-S-0834; BigCommerce BC-S-0129 to BC-S-0194); the platform's, partners' and affiliates' commissions and Salla Point's employees and shifts (Salla SA-C-072, SA-C-095, SA-C-195, SA-C-208); marketing attribution (WooCommerce WC-C-085); the European Commission (WC-S-0499, BC-S-0453); sign-up, trials and previews of other things (Shopify SH-I-1745 to SH-I-1755, SH-S-0285, SH-I-0038; Salla SA-C-090, SA-C-110, SA-C-193, SA-C-209; WooCommerce WC-S-0504, WC-S-5334; BigCommerce BC-S-0413, BC-S-0414); تجربة as experience (Zid's app categories and help); disclosure and reward in other senses (Shopify SH-S-6154, SH-S-0012; Salla SA-S-1965, SA-S-1966; Zid ZD-S-0792, ZD-S-0796; WooCommerce WC-S-0551; BigCommerce BC-S-0305). None shows the capability.
+- CM-ONB-005 and CM-TRU-022 have no concern landed in their tree: they come from the held pass, and no concern of the map is either thing.

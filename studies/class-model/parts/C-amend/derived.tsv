@@ -1,0 +1,21 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-CHK-011	bigcommerce	none-held					
+CM-CHK-011	salla	statements	core		SA-C-002/decides/SA-S-2097=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read	plan: سلة بلس
+CM-CHK-011	shopify	statements	core		SH-C-046/decides/SH-S-7484=stores with fewer than 250 sales	SH-C-046/responsible:stated only in general terms	general
+CM-CHK-011	woocommerce	none-held					
+CM-CHK-011	zid	none-held					
+CM-CHK-012	bigcommerce	none-held					
+CM-CHK-012	salla	none-held					
+CM-CHK-012	shopify	statements	not-stated			SH-C-047/reason:searched, not found	
+CM-CHK-012	woocommerce	none-held					
+CM-CHK-012	zid	none-held					
+CM-PAY-033	bigcommerce	statements	core				general
+CM-PAY-033	salla	none-held					
+CM-PAY-033	shopify	statements	core			SH-C-186/reason:searched, not found	general
+CM-PAY-033	woocommerce	none-held					
+CM-PAY-033	zid	none-held					
+CM-SHP-024	bigcommerce	none-held					
+CM-SHP-024	salla	none-held					
+CM-SHP-024	shopify	none-held					
+CM-SHP-024	woocommerce	none-held					
+CM-SHP-024	zid	none-held					

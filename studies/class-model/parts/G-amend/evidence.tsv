@@ -1,1 +1,15 @@
 cap_id	platform	supports	key	why
+CM-SRF-002	salla	core	SA-C-002/decides/SA-S-2087	سلة بلس plan line ميزة البحث في إعدادات المتجر, search in the store's settings; also core on A's CM-ACC-006
+CM-SRF-002	salla	shows	SA-C-020/decides/SA-S-2251	staff permission product_search, the products list's search; cited by no other cell
+CM-SRF-002	salla	shows	SA-C-040/decides/SA-S-2266	staff permission order_search, the orders list's search; core on C's CM-ORD-001, so it counts once
+CM-SRF-002	salla	shows	SA-C-060/decides/SA-S-2296	staff permission customer_search, the customers list's search; core on D's CM-CUS-001, so it counts once
+CM-SRF-002	zid	shows	ZD-C-091/where/ZD-S-1036	the customers searched from Dashboard > Customers; core on D's CM-CUS-001, so it counts once
+CM-SRF-002	woocommerce	shows	WC-I-0333	feature HPOS Full text search indexes, for the orders' search; experimental (C6)
+CM-OPS-006	salla	core	SA-C-002/decides/SA-S-2092	سلة بلس plan line تفريغ الكاش, clearing the cache; also core on A's CM-ACC-006
+CM-OPS-006	woocommerce	core	WC-I-0334	feature HPOS Data Caching, the order data cached; not experimental (the release, context)
+CM-OPS-006	woocommerce	shows	WC-I-0352	feature Cache Product Objects; experimental (C6)
+CM-OPS-006	bigcommerce	outside	BC-C-082/where/BC-S-0448	Cloudflare's accelerated content delivery with a globally decentralized CDN, a third party
+CM-OPS-007	salla	core	SA-C-040/boundary/SA-S-1018	its own Merchant API folder Order Histories; also core on C's CM-ORD-001
+CM-OPS-007	zid	core	ZD-I-0272	plan line Order Update History / تاريخ تحديثات الطلب; also core on C's CM-ORD-001
+CM-OPS-007	woocommerce	shows	WC-C-012/where/WC-S-5297	an Amazon Pay fee and its refund appear in the order timeline
+CM-OPS-007	woocommerce	shows	WC-C-091/boundary/WC-S-5443	a matching withdrawal request adds an order note; core on C's CM-RET-004

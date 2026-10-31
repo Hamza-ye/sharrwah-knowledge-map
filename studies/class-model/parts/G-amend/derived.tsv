@@ -1,1 +1,21 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-OPS-006	bigcommerce	statements	outside	Cloudflare		BC-C-082/decides:page not read;BC-C-082/reason:searched, not found	
+CM-OPS-006	salla	statements	core		SA-C-002/decides/SA-S-2092=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read	plan: سلة بلس
+CM-OPS-006	shopify	none-held					
+CM-OPS-006	woocommerce	statements	core			WC-C-033/responsible:stated only in general terms;WC-C-064/responsible:stated only in general terms;WC-C-064/reason:searched, not found	general
+CM-OPS-006	zid	none-held					
+CM-OPS-007	bigcommerce	none-held					
+CM-OPS-007	salla	statements	core			SA-C-040/responsible:page not read;SA-C-040/reason:page not read	general
+CM-OPS-007	shopify	none-held					
+CM-OPS-007	woocommerce	statements	not-stated	Amazon Pay fees	WC-C-012/where/WC-S-5297=Amazon Pay non-card payments	WC-C-091/reason:searched, not found	
+CM-OPS-007	zid	statements	core			ZD-C-080/responsible:stated only in general terms;ZD-C-080/reason:searched, not found	general
+CM-SRF-002	bigcommerce	none-held					
+CM-SRF-002	salla	statements	core		SA-C-002/decides/SA-S-2087=plan: سلة بلس	SA-C-002/responsible:page not read;SA-C-002/reason:page not read;SA-C-020/responsible:page not read;SA-C-020/reason:page not read;SA-C-040/responsible:page not read;SA-C-040/reason:page not read;SA-C-060/responsible:page not read;SA-C-060/reason:page not read	plan: سلة بلس
+CM-SRF-002	shopify	none-held					
+CM-SRF-002	woocommerce	statements	not-stated			WC-C-033/responsible:stated only in general terms	
+CM-SRF-002	zid	statements	not-stated	العملاء		ZD-C-091/reason:searched, not found	
+CM-SRF-003	bigcommerce	none-held					
+CM-SRF-003	salla	none-held					
+CM-SRF-003	shopify	none-held					
+CM-SRF-003	woocommerce	none-held					
+CM-SRF-003	zid	none-held					

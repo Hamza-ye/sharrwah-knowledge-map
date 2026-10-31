@@ -1,0 +1,26 @@
+cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
+CM-ONB-005	bigcommerce	none-held					
+CM-ONB-005	salla	none-held					
+CM-ONB-005	shopify	none-held					
+CM-ONB-005	woocommerce	none-held					
+CM-ONB-005	zid	none-held					
+CM-PLN-008	bigcommerce	none-held					
+CM-PLN-008	salla	none-held					
+CM-PLN-008	shopify	statements	core			SH-C-015/reason:searched, not found	general
+CM-PLN-008	woocommerce	none-held					
+CM-PLN-008	zid	none-held					
+CM-STF-006	bigcommerce	none-held					
+CM-STF-006	salla	none-held					
+CM-STF-006	shopify	statements	core			SH-C-054/reason:searched, not found;SH-C-150/responsible:stated only in general terms;SH-C-150/boundary:searched, not found;SH-C-150/reason:searched, not found	general
+CM-STF-006	woocommerce	none-held					
+CM-STF-006	zid	none-held					
+CM-STF-007	bigcommerce	none-held					
+CM-STF-007	salla	none-held					
+CM-STF-007	shopify	none-held					
+CM-STF-007	woocommerce	none-held					
+CM-STF-007	zid	none-held					
+CM-TRU-022	bigcommerce	none-held					
+CM-TRU-022	salla	none-held					
+CM-TRU-022	shopify	none-held					
+CM-TRU-022	woocommerce	none-held					
+CM-TRU-022	zid	none-held					

@@ -1,0 +1,9 @@
+cap_id	platform	supports	key	why
+CM-CHK-011	shopify	core	SH-C-046/decides/SH-S-7483	setting Add-to-cart limit, a suggested maximum quantity limit (a reading on role)
+CM-CHK-011	shopify	core	SH-C-046/decides/SH-S-7484	the Add-to-cart limit's default of 50, for stores with fewer than 250 sales
+CM-CHK-011	shopify	shows	SH-C-046/reason/SH-S-7489	reason: a limit on how many of each product a customer can add to the cart in one order
+CM-CHK-011	shopify	shows	SH-I-2113	help-center section Set a limit to the maximum quantity of items per cart, a title only
+CM-CHK-011	salla	core	SA-C-002/decides/SA-S-2097	plan line تخصيص خيارات المتجر: تخصيص الطلبات (حد أدنى، ...), plan سلة بلس (a reading: an order minimum)
+CM-CHK-012	shopify	shows	SH-I-2109	help-center section Setting up tipping options for online orders, a title only
+CM-PAY-033	shopify	core	SH-C-186/boundary/SH-S-6071	webhook topic subscription_billing_attempts/challenged: the financial institution challenges the charge as per 3D Secure
+CM-PAY-033	bigcommerce	core	BC-C-022/reason/BC-S-0130	Payments API's rule for 3D Secure-enabled cards: saved in a shopper-initiated transaction, then charged as stored
