@@ -1312,6 +1312,10 @@ def cmd_earlier(a):
             # with the twin's own words, since one name key can state another kind of thing (SH-74: eg's and sa's
             # card_rates_short state the third-party fee, ae-ar's the card rate)
             words = clip(re.sub(r"^(?:(?:within|list): [^;]*; )+", "", by[twin]["text"]), 90)
+            # and which rates a plan summary holds, which its line follows (SH-75)
+            cr = re.search(r"card_rates: \{([^}]*)\}", by[twin]["text"])
+            if cr:
+                words += " | card_rates: " + ", ".join(k for k in re.findall(r"(?:^|; )(\w+):", cr.group(1)) if k != "lowest")
             found.append(f"   twin {twin} {how} [{words}]: " + "; ".join(f"{cap} {sup} ({b}:{n})" for b, n, cap, sup in placed_at[twin][:4]))
         for kind, v in keys:
             pat = earlier_pattern(kind, v)
