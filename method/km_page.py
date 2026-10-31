@@ -5,12 +5,19 @@ its cells at a pinned commit, and Q3's check. The script reads only the model's 
 source types, the concern map's statements, inventory and citations, and Q3's check when it has run, so the page
 can't drift from them. A cell with nothing held reads as nothing held, never as absent.
 
+The qualities pass (briefs/QL-qualities-design.md, section 7.4): once merged/qualities.tsv carries its labels
+(class_merge.py, with qualities/labels.tsv), each capability's cell lists its qualities by kind, its other values, and
+"The plans' terms (n)" folded under them (merged/terms.tsv); and the view "Qualities by kind" sets the 16 kinds against
+the five platforms, from merged/qualities.tsv and qualities/coverage.tsv and outcomes.tsv: what is found, with its
+values; "searched, not found at <commit>", with what was read; "not held", with its capture lead; or "not read yet",
+never "absent". The qualities on the platform as a whole sit under their kind.
+
     python3 -I method/km_page.py [--commit <sha>] [--out <file>] [--draft]
 
 --commit is the commit the links pin, by default HEAD; the merged files and Q3's check in the working tree must equal
 it. --draft marks the page as a draft, for a view before every domain and platform has run.
 """
-import argparse, json, os, re, subprocess, sys
+import argparse, collections, json, os, re, subprocess, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from class_slice import MODEL, PLATFORMS, rows, items, key, citable, subject_citations
@@ -22,6 +29,7 @@ NAMES = {"shopify": ("Shopify", "SH"), "salla": ("Salla", "SA"), "woocommerce": 
          "zid": ("Zid", "ZD"), "bigcommerce": ("BigCommerce", "BC")}
 MERGED = os.path.join(MODEL, "merged")
 Q3 = os.path.join(MODEL, "q3-check.tsv")
+QDIR = os.path.join(MODEL, "qualities")
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "km_page_template.html")
 
 
@@ -70,8 +78,9 @@ def main():
         sys.exit(f"no commit {a.commit}")
     commit = r.stdout.strip()
     watched = [os.path.relpath(MERGED, ROOT)] + ([os.path.relpath(Q3, ROOT)] if os.path.exists(Q3) else [])
+    watched += [os.path.relpath(os.path.join(QDIR, f), ROOT) for f in ("coverage.tsv", "outcomes.tsv") if os.path.exists(os.path.join(QDIR, f))]
     if git("diff", "--quiet", commit, "--", *watched).returncode:
-        sys.exit(f"the merged files or Q3's check differ from {commit[:9]}: commit them, then pin that commit")
+        sys.exit(f"the merged files, Q3's check or the qualities' coverage differ from {commit[:9]}: commit them, then pin that commit")
     date = git("show", "-s", "--format=%cs", commit).stdout.strip()
 
     pi = {p: i for i, p in enumerate(PLATFORMS)}
@@ -124,9 +133,32 @@ def main():
             label, url = source(c["source"], c["locator"], commit)
             cites[cid] = [label, url, clip(c["quote"], 220), c.get("source_date", "")]
         ev.setdefault(r["cap_id"], []).append([pi[r["platform"]], r["supports"], k, r["why"], cid if cid in cites else "", ln])
-    qual, fill = {}, {}
-    for r in rows(os.path.join(MERGED, "qualities.tsv")):
-        qual.setdefault(r["cap_id"], []).append([pi[r["platform"]], r["quality"], r["value"], r["key"]])
+    # qualities: each row with its kind, form, scope and label (once labelled), the plans' terms apart, and the
+    # platform-wide rows under their kind (the qualities pass, design section 7.4)
+    qual, fill, terms, qplat = {}, {}, {}, []
+    for r, ln in numbered(os.path.join(MERGED, "qualities.tsv")):
+        x = [pi[r["platform"]], r["quality"], r["value"], r["key"], r.get("kind", ""), r.get("form", ""),
+             r.get("scope", ""), r.get("label", ""), r.get("basis", ""), r.get("holder", ""), r.get("date", ""), ln]
+        if r["cap_id"] == "platform":
+            qplat.append(x)
+        else:
+            qual.setdefault(r["cap_id"], []).append(x)
+    for r, ln in numbered(os.path.join(MERGED, "terms.tsv")):
+        terms.setdefault(r["cap_id"], []).append([pi[r["platform"]], r["quality"], r["value"], r["key"], r.get("scope", ""), ln])
+    labelled = "label" in (rows(os.path.join(MERGED, "qualities.tsv")) or [{}])[0]
+    from ql_qualities import KINDS as QK, ASKS
+    qkinds = [[k, v[0], v[1], ";".join(v[2]), v[4], [a for a in ASKS if a.startswith(k + "-")]] for k, v in QK.items()]
+    outs = {}
+    for r in rows(os.path.join(QDIR, "outcomes.tsv")):
+        outs[(r["platform"], r["part"], r["line"])] = r
+    qcover = []
+    for r, ln in numbered(os.path.join(QDIR, "coverage.tsv")):
+        if r["platform"] not in pi:
+            continue
+        o = [outs.get((r["platform"], r["part"], l), {}) for l in r["lines"].split(";")]
+        o = o[0] if o else {}
+        qcover.append([pi[r["platform"]], r["ask"], r["kind"], r["result"], int(r.get("found") or 0), r["part"], r["lines"],
+                       r["commits"], clip(o.get("read", ""), 300), clip(o.get("capture", ""), 300), o.get("could_change", ""), ln])
     for r in rows(os.path.join(MERGED, "slot-fillers.tsv")):
         fill.setdefault(r["cap_id"], []).append([pi[r["platform"]], r["filler"], r["key"]])
 
@@ -147,6 +179,7 @@ def main():
         "platforms": [[p, *NAMES[p]] for p in PLATFORMS],
         "domains": domains, "areas": areas, "caps": caps, "cells": cells, "ev": ev, "cites": cites,
         "qual": qual, "fill": fill, "q3": q3, "sources": src_types,
+        "terms": terms, "qplat": qplat, "qkinds": qkinds, "qcover": qcover, "qlabelled": labelled,
     }
     data = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = open(TEMPLATE, encoding="utf-8").read()
@@ -155,7 +188,9 @@ def main():
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     open(a.out, "w", encoding="utf-8").write(page)
     print(f"{os.path.relpath(a.out, ROOT)}: {len(caps)} capabilities, {len(cells)} cells, {sum(len(v) for v in ev.values())} evidence rows, "
-          f"{len(cites)} sources, Q3's check {'with ' + str(len(q3['rows'])) + ' rows' if q3 else 'not yet run'}; "
+          f"{len(cites)} sources, {sum(len(v) for v in qual.values()) + len(qplat)} quality rows ({len(qplat)} platform-wide) and "
+          f"{sum(len(v) for v in terms.values())} of the plans' terms, {len(qcover)} coverage rows, "
+          f"Q3's check {'with ' + str(len(q3['rows'])) + ' rows' if q3 else 'not yet run'}; "
           f"links pinned to {commit[:9]}; {len(page) / 1e6:.1f} MB")
 
 

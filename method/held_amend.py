@@ -28,6 +28,14 @@
 # with them, and only their new things wait on held/new.tsv; apply refuses a part only where the same capability,
 # platform and entry or statement are already in its evidence (that batch, or that line, was applied before), since an
 # entry the held pass placed on another capability may take a second line (inspection-Q3M.md, Q3M-19).
+#
+# The qualities pass (briefs/QL-qualities-design.md, section 6.2; method/ql_qualities.py's `land`) lands each platform's
+# found rows as the batch QL-<XX>: its `quality` lines (placement quality, supports shows, quality `<what>: <value>`)
+# and its rows of s2-keys.tsv with a QL batch. A quality is written into the part that holds the cell, as any other; a
+# `shows` evidence row is written only where the cell doesn't already cite the key, so a cell that held nothing becomes
+# held, and its reading says "Nothing in the concern map; the qualities pass (QL-<XX>) adds <what>: <value> (<key>)";
+# `shows` never enters a count. `apply` refuses a quality only where the same row (cap_id, platform, quality, value,
+# key) is already in the part's qualities.tsv, never because the key is already in its evidence.
 import argparse, collections, glob, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from class_slice import MODEL, PLATFORMS, rows, citable, key as skey, fold
@@ -72,6 +80,11 @@ def is_s2(batch):
     return batch.startswith("S2-")
 
 
+def is_ql(batch):
+    """A batch of the qualities pass (method/ql_qualities.py)."""
+    return batch.startswith("QL-")
+
+
 def not_placed(c):
     """A held cell whose statements state no placement (s2_held.not_placed)."""
     return c.get("held") == "statements" and set(semi((c.get("placed_as") or "").replace(",", ";"))) <= {"not-stated"}
@@ -105,7 +118,13 @@ def plan(p, batches=None):
                 sys.exit(f"no {os.path.relpath(path, ROOT)}")
     else:
         paths = sorted(glob.glob(os.path.join(HELD, p, "placements-*.tsv")))
-    take = set(batches) if batches else {b for b in listed if is_s2(b)}
+    take = set(batches) if batches else {b for b in listed if is_s2(b) or is_ql(b)}
+    cited = []                      # the model's evidence, read once a quality line needs it
+
+    def cites(c, e):
+        if not cited:
+            cited.append({(r["cap_id"], r["platform"], r["key"]) for r in rows(os.path.join(MODEL, "merged", "evidence.tsv"))})
+        return (c, p, e) in cited[0] or any(x["key"] == e for x in rowsout[(c, p)])
 
     def place(batch, cap, ids, ss, why, r):
         """One placement on a capability, or on a new thing once decided: its evidence rows and side files."""
@@ -118,6 +137,17 @@ def plan(p, batches=None):
             if d == "out":
                 return
             cs = [d.split(":", 1)[1]]
+        elif r["placement"] == "quality":
+            # the qualities pass: the quality, with a shows row only where the cell doesn't cite the key already
+            if cap not in caps or (cap, p) not in cells:
+                sys.exit(f"{batch}: {cap} has no cell for {p} in the merged model; make it first")
+            for e in ids:
+                if not cites(cap, e):
+                    rowsout[(cap, p)].append({"cap_id": cap, "platform": p, "supports": "shows", "key": e, "why": why(e), "_batch": batch})
+                for q in [t.strip() for t in r.get("quality", "").split(";") if t.strip()]:
+                    what, _, val = q.partition(":")
+                    extra[(cap, p)]["qualities"].append({"cap_id": cap, "platform": p, "quality": what.strip(), "value": val.strip() or what.strip(), "key": e, "_batch": batch})
+            return
         elif r["placement"] != "capability":
             return
         for c in cs:
@@ -141,7 +171,9 @@ def plan(p, batches=None):
         for r in rows(path):
             ids = [x.strip() for x in r["entry_id"].split(";") if x.strip()]
             ss = [s.strip() for s in r["supports"].split(";") if s.strip()]
-            if is_s2(batch):
+            if is_ql(batch):
+                why = lambda e, r=r, batch=batch: f"(the qualities pass, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"
+            elif is_s2(batch):
                 why = lambda e, r=r, batch=batch: f"(the held pass's second stage, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"
             else:
                 why = lambda e, r=r, batch=batch: f"(the held pass, {batch}) {' '.join(r['reading'].split())}: {clip(entries[e]['text'], 120)}"
@@ -149,7 +181,7 @@ def plan(p, batches=None):
     # the second stage's rows that name a statement of the concern map, a placed inventory entry or a subject's statement
     for r in rows(os.path.join(HELD, p, "s2-keys.tsv")):
         if r["batch"] in take and r["batch"] in listed:
-            r = dict(r, placement="new" if r["cap_id"].startswith("new:") else "capability")
+            r = dict(r, placement="new" if r["cap_id"].startswith("new:") else "quality" if is_ql(r["batch"]) else "capability")
             place(r["batch"], r["cap_id"].strip(), [r["key"]], semi(r["supports"]), lambda e, r=r: r["why"], r)
     # and its other outcomes, for the cells they name
     for r in rows(os.path.join(HELD, p, "s2-outcomes.tsv")):
@@ -161,6 +193,7 @@ def plan(p, batches=None):
 def summary(evs, entries, stm):
     """What the batches add to a cell, for its reading: the held pass's entries, then its second stage's passages."""
     out = []
+    evs = [e for e in evs if not is_ql(e["_batch"])]          # the qualities pass says its own (ql_sentence)
     first_pass = [e for e in evs if not is_s2(e["_batch"])]
     if first_pass:
         by = collections.Counter(e["supports"] for e in first_pass)
@@ -188,6 +221,16 @@ def summary(evs, entries, stm):
         out.append(f"The held pass's second stage ({', '.join(bs)}) adds {', '.join(f'{v} {k}' for k, v in by.items())} from "
                    f"{' and '.join(what)} ({', '.join(ids[:6])}{' …' if len(ids) > 6 else ''}: {first})")
     return ". ".join(out)
+
+
+def ql_sentence(quals, held_before, stm, entries):
+    """What the qualities pass adds to a cell, for its reading: its qualities, each with its key."""
+    if not quals:
+        return ""
+    bs = list(dict.fromkeys(q["_batch"] for q in quals))
+    what = "; ".join(f"{q['quality']}: {clip(q['value'], 100)} ({q['key']})" for q in quals[:6]) + (" …" if len(quals) > 6 else "")
+    return (f"Nothing in the concern map; the qualities pass ({', '.join(bs)}) adds {what}" if not held_before
+            else f"The qualities pass ({', '.join(bs)}) adds {what}")
 
 
 def bare(t):
@@ -257,6 +300,11 @@ def main():
     for k in still:
         if not any(k == x for x, _ in by_part[cells[k]["part"]]):
             by_part[cells[k]["part"]].append((k, []))
+    qls = {k: [q for q in x["qualities"] if is_ql(q.get("_batch", ""))] for k, x in extra.items()}
+    qls = {k: v for k, v in qls.items() if v}
+    for k in qls:                     # a quality on a cell that already cites its key adds no evidence row
+        if not any(k == x for x, _ in by_part[cells[k]["part"]]):
+            by_part[cells[k]["part"]].append((k, []))
     became = sum(1 for k in out if holds_nothing(cells[k], s2))
     print(f"{p}: {sum(len(v) for v in out.values())} evidence rows for {len(out)} cells in {len(by_part)} parts; "
           f"{became} cells that held nothing become held"
@@ -269,6 +317,10 @@ def main():
         now = {e["supports"] for e in evs} & PLACED
         if holds_nothing(cells[k], s2) or now - was:
             print(f"   CHANGES {k[0]}@{k[1]}: {cells[k]['held']}, placed {';'.join(sorted(was)) or 'nowhere'} -> adds {';'.join(sorted(now - was)) or 'shows only'} ({len(evs)} rows)")
+    for k, qs in sorted(qls.items()):
+        for q in qs:
+            print(f"   QUALITY {k[0]}@{k[1]} ({q['_batch']}): {q['quality']}: {clip(q['value'], 100)} ({q['key']}"
+                  f"{', a shows row' if any(e['key'] == q['key'] for e in out.get(k, [])) else ', the cell cites it already'})")
     for k, os_ in sorted(still.items()):
         for o in os_:
             print(f"   OUTCOME {k[0]}@{k[1]}: {o['outcome']} ({o['batch']}, s2/{o['part']}.tsv line {o['line']}){', ' + o['could_change'] if o.get('could_change') else ''}")
@@ -279,26 +331,38 @@ def main():
     # every part is tested before any is written, so a refusal leaves the model as it was
     for part, ks in sorted(by_part.items()):
         eh, ev = table(os.path.join(PARTS, part, "evidence.tsv"))
+        # a quality is refused only where the same row is in the part's qualities.tsv already (the qualities pass)
+        qp = os.path.join(PARTS, part, "qualities.tsv")
+        qhave = {tuple(r.get(f, "") for f in ("cap_id", "platform", "quality", "value", "key")) for r in table(qp)[1]} if os.path.exists(qp) else set()
+        qagain = [q for k, _ in ks for q in qls.get(k, []) if (q["cap_id"], q["platform"], q["quality"], q["value"], q["key"]) in qhave]
+        if qagain:
+            q = qagain[0]
+            sys.exit(f"{part}: its qualities.tsv already holds {q['cap_id']}@{p} {q['quality']}: {clip(q['value'], 60)} ({q['key']})"
+                     f"{f' and {len(qagain) - 1} more' if len(qagain) > 1 else ''}: applied before")
         if a.batch:
             have = {(r["cap_id"], r["platform"], r["key"]) for r in ev}
-            again = sorted({(e["cap_id"], e["key"]) for _, evs in ks for e in evs if (e["cap_id"], e["platform"], e["key"]) in have})
+            again = sorted({(e["cap_id"], e["key"]) for _, evs in ks for e in evs if (e["cap_id"], e["platform"], e["key"]) in have and not is_ql(e["_batch"])})
             if again:
                 sys.exit(f"{part}: its evidence already holds {again[0][1]} on {again[0][0]}@{p}"
                          f"{f' and {len(again) - 1} more' if len(again) > 1 else ''}: applied before")
         else:
             have = {r["key"] for r in ev}
-            if any(e["key"] in have for _, evs in ks for e in evs):
+            if any(e["key"] in have for _, evs in ks for e in evs if not is_ql(e["_batch"])):
                 sys.exit(f"{part}: its evidence already cites entries of {p}: applied before")
     for part, ks in sorted(by_part.items()):
         d = os.path.join(PARTS, part)
         eh, ev = table(os.path.join(d, "evidence.tsv"))
         ch, cl = table(os.path.join(d, "cells.tsv"))
         idx = {(r["cap_id"], r["platform"]): r for r in cl}
+        have_now = {(r["cap_id"], r["platform"], r["key"]) for r in ev}
         for k, evs in ks:
+            # a qualities pass's shows row the part's evidence already holds is not written again
+            evs = [e for e in evs if not (is_ql(e["_batch"]) and (e["cap_id"], e["platform"], e["key"]) in have_now)]
             ev += evs
             c = idx[k]
             placed_none = not_placed(cells[k]) and bool(still.get(k))
-            if evs:
+            was_held = c["held"] == "statements"
+            if evs and any(not is_ql(e["_batch"]) for e in evs):
                 note = summary(evs, entries, stm)
                 # the cell's earlier reading, the concern map's and any outcome sentence, is kept and added to (S2I-30)
                 if c["held"] != "statements":
@@ -308,6 +372,13 @@ def main():
                 else:
                     c["reading"] = (c["reading"].rstrip() + " " + note + ".").strip()
                 c["terms"] = ";".join(dict.fromkeys([t for t in c.get("terms", "").split(";") if t] + extra[k]["terms"]))
+            if qls.get(k):
+                # the qualities pass's own sentence; its shows row makes a cell that held nothing held
+                qn = ql_sentence(qls[k], was_held, stm, entries)
+                if qn not in c["reading"]:
+                    c["reading"] = (c["reading"].rstrip() + " " + qn + ".").strip()
+                if c["held"] != "statements" and any(is_ql(e["_batch"]) for e in evs):
+                    c["held"] = "statements"
             for o in still.get(k, []):
                 sentence, ref = outcome_sentence(o, p, placed_none)
                 if sentence in c["reading"]:
@@ -325,7 +396,7 @@ def main():
         write(os.path.join(d, "evidence.tsv"), eh, ev)
         write(os.path.join(d, "cells.tsv"), ch, cl)
         for fname, key in (("slot-fillers.tsv", "fillers"), ("qualities.tsv", "qualities")):
-            add = [x for k, _ in ks for x in extra[k][key]]
+            add = [{h: v for h, v in x.items() if h != "_batch"} for k, _ in ks for x in extra[k][key]]
             path = os.path.join(d, fname)
             if not os.path.exists(path):
                 # a back-fill part may leave the file out (check_class_part.py's BACKFILL_FILES); it is made, with the

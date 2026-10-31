@@ -91,7 +91,7 @@ HELD = os.path.join(MODEL, "held")
 SEL_HEAD = ["platform", "structure", "read", "rule", "placement", "note", "reason"]
 E_HEAD = ["entry_id", "structure", "labels", "source", "locator", "section", "text"]
 P_HEAD = ["entry_id", "placement", "cap_id", "supports", "scope", "terms", "filler", "quality", "reading"]
-PLACEMENTS = ("capability", "new", "out")
+PLACEMENTS = ("capability", "new", "out", "quality")   # quality: the qualities pass's line (ql_qualities.py land)
 SUPPORTS = ("core", "own-service", "extension-point", "outside", "shows")
 MAX_TEXT = 3000          # an entry longer than this holds a list of things: its structure needs a nested: rule
 # the capture's own keys (position, provenance, layout, code), never a statement of the platform's
@@ -1651,7 +1651,7 @@ def cmd_check(a):
             for x in ok:
                 # a second line on the same capability is for another thing the entry names with its own condition
                 # (a post's payment methods, each in its own countries: SH-34), never the same scope and filler again
-                if x in seen and any((c == r["cap_id"] and (sc, fl) == (r["scope"], r["filler"])) or pl == "out" for c, pl, sc, fl in seen[x]):
+                if x in seen and any((c == r["cap_id"] and pl == "capability" and (sc, fl) == (r["scope"], r["filler"])) or pl == "out" for c, pl, sc, fl, _ in seen[x]):
                     problems.append(f"{w}: {x} placed again on the same capability with the same scope and filler, or placed out too")
         elif r["placement"] == "new":
             m = re.match(r"^new:(\S.*\S|\S)$", r["cap_id"])
@@ -1666,8 +1666,26 @@ def cmd_check(a):
             if not ss or any(x not in SUPPORTS for x in ss):
                 problems.append(f"{w}: a new thing says what the entry supports")
             for x in ok:
-                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl, _, _ in seen[x]):
+                if x in seen and any(c == r["cap_id"] or pl == "out" for c, pl, _, _, _ in seen[x]):
                     problems.append(f"{w}: {x} placed again as the same new thing, or placed out too")
+        elif r["placement"] == "quality":
+            # the qualities pass (briefs/QL-qualities-design.md, section 6.2): a quality the platform states, on the
+            # capability it bears on, as `<what>: <value>`; it places nothing, so it supports shows only
+            if r["cap_id"] not in caps:
+                problems.append(f"{w}: a quality names one cap_id of the merged model")
+            if ss != ["shows"]:
+                problems.append(f"{w}: a quality line supports shows only: the qualities pass places nothing (QL-R8)")
+            qs = [x.strip() for x in r["quality"].split(";") if x.strip()]
+            if len(qs) != 1 or not re.match(r"^[^:]*\S[^:]*:\s*\S", qs[0]):
+                problems.append(f"{w}: a quality line holds one quality, `<what>: <value>`")
+            else:
+                changes[(r["cap_id"], f"takes the quality {clip(qs[0], 90)}")].append(i)
+            if r["terms"].strip() or r["filler"].strip():
+                problems.append(f"{w}: a quality line has no terms and no filler")
+            for x in ok:
+                if x in seen and any((c == r["cap_id"] and pl == "quality" and q_ == r["quality"].strip()) or pl == "out"
+                                     for c, pl, _, _, q_ in seen[x]):
+                    problems.append(f"{w}: {x} given the same quality on the same capability again, or placed out too")
         elif r["placement"] == "out":
             if any(r[k].strip() for k in ("cap_id", "supports", "scope", "terms", "filler", "quality")):
                 problems.append(f"{w}: out names no capability, supports nothing, and has no scope, terms, filler or quality")
@@ -1708,7 +1726,7 @@ def cmd_check(a):
                 notes.append(f"line {i}: core on a product named with the platform's brand, which names no maker: is it core by what the entry shows? (rule 4)")
             if re.search(r"\w\*(?=[\s;,)]|$)", e0["text"]):
                 notes.append(f"line {i}: the entry marks a footnote (*): the footnote is part of the entry (rule 1)")
-        if r["placement"] == "capability" and r["cap_id"] in cells:
+        if r["placement"] in ("capability", "quality") and r["cap_id"] in cells:
             c = cells[r["cap_id"]]
             if c["held"] != "statements":
                 changes[(r["cap_id"], "holds nothing: becomes held")].append(i)
@@ -1718,7 +1736,7 @@ def cmd_check(a):
         if not r["reading"].strip():
             problems.append(f"{w}: reading says why, as a reading")
         for x in ok:
-            seen[x].append((r["cap_id"], r["placement"], r["scope"], r["filler"]))
+            seen[x].append((r["cap_id"], r["placement"], r["scope"], r["filler"], r["quality"].strip()))
         if "own-service" in ss and ok:
             notes.append(f"own-service on {r['cap_id']}: {clip(es.get(ok[0], {}).get('text', ''), 160)}")
         if "core" in ss and ok and PARTNER.search(es.get(ok[0], {}).get("structure", "")):
@@ -1793,7 +1811,7 @@ def cmd_check(a):
     notes_path = os.path.join(HELD, a.platform, f"notes-{a.batch}.md")
     # the second stage's entries (briefs/S2-held-design.md, section 3.3): an agent wrote each text, so it is tested
     # against its source at its locator, at a commit the batch's notes name on their first line or the repository's HEAD
-    if a.batch.startswith("S2-") or any(es.get(x, {}).get("structure") == "second-stage" for x in ids):
+    if a.batch.startswith(("S2-", "QL-")) or any(es.get(x, {}).get("structure") == "second-stage" for x in ids):
         from s2_held import source_problems, notes_commits, sources, head_commits
         for x in dict.fromkeys(ids):
             if x not in es:

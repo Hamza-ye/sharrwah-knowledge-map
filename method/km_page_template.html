@@ -122,6 +122,11 @@ dl.kv dd{margin:0;min-width:0;overflow-wrap:anywhere}
 .ev .src{display:block;font-family:var(--f-mono);font-size:11.5px;color:var(--muted);overflow-wrap:anywhere}
 .ev .src a{color:var(--accent)}
 .ev .q{display:block;font-size:12.5px;color:var(--muted);font-style:italic;overflow-wrap:anywhere}
+.s-quality{border:1px solid var(--accent);color:var(--accent)} .s-other{border:1px dotted var(--slate);color:var(--slate)}
+details.terms{margin-top:var(--s2);font-size:13px} details.terms > summary{cursor:pointer;color:var(--muted);font:600 12.5px var(--f-label)}
+details.terms .ev{margin-top:6px}
+.qk td{vertical-align:top;font-size:12.5px} .qk ul{margin:0;padding-left:16px} .qk .muted{font-size:12px}
+.qk th.k{text-align:left;min-width:180px} .qk .gap{color:var(--muted);font-style:italic}
 .nothing{font-size:13.5px;color:var(--ink);border-left:3px solid var(--muted);padding-left:10px}
 .rowlinks{font-size:12px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 12px}
 .empty{padding:var(--s6) 0;color:var(--muted)}
@@ -168,6 +173,7 @@ tr:last-child td{border-bottom:0}
 
   <nav class="tabs" role="tablist" aria-label="Views">
     <button role="tab" id="tab-capabilities" aria-selected="true" data-tab="capabilities">Capabilities</button>
+    <button role="tab" id="tab-qualities" aria-selected="false" data-tab="qualities">Qualities by kind</button>
     <button role="tab" id="tab-q3" aria-selected="false" data-tab="q3">Q3's check</button>
     <button role="tab" id="tab-areas" aria-selected="false" data-tab="areas">Areas</button>
     <button role="tab" id="tab-sources" aria-selected="false" data-tab="sources">Source types</button>
@@ -185,6 +191,10 @@ tr:last-child td{border-bottom:0}
     </div>
     <div class="status"><span id="count"></span><button class="link" id="clear" type="button">Clear filters</button></div>
     <div id="register"></div>
+  </section>
+
+  <section id="view-qualities" role="tabpanel" aria-labelledby="tab-qualities" hidden>
+    <div id="qualities"></div>
   </section>
 
   <section id="view-q3" role="tabpanel" aria-labelledby="tab-q3" hidden>
@@ -255,7 +265,12 @@ const kc = k => caps.filter(c => c.kind === k).length;
 const openN = caps.filter(c => (c.kind || "").startsWith("open")).length;
 const areasWith = new Set(caps.map(c => c.area)).size;
 const evN = Object.values(D.ev).reduce((n, v) => n + v.length, 0);
+const qAll = Object.values(D.qual).flat().concat(D.qplat || []);
+const qN = D.qlabelled ? qAll.filter(q => q[7] === "quality").length : qAll.length;
+const tN = Object.values(D.terms || {}).reduce((n, v) => n + v.length, 0);
+const QKN = Object.fromEntries((D.qkinds || []).map(k => [k[0], k[1]]));
 document.getElementById("totals").innerHTML = [[caps.length, "capabilities"], [kc("class"), "class"], [kc("slot"), "slot"], [openN, "open"], [`${areasWith} of ${D.areas.length}`, "areas"], [D.cells.length, "cells"], [evN, "evidence rows"]]
+  .concat(D.qlabelled ? [[qN, "qualities"], [tN, "plans' terms"]] : [[qN, "quality rows, not yet labelled"]])
   .map(([n, l]) => `<div><b>${esc(n)}</b><span class="muted">${esc(l)}</span></div>`).join("");
 document.getElementById("legend").innerHTML = ["core", "own-service", "extension-point", "outside", "shows", "not-stated", "none-held"].concat(D.meta.draft ? ["not mapped"] : [])
   .map(p => `<span>${glyph(p, WORD[p])}${esc(SHORT[p])}</span>`).join("") + `<span class="muted">· in the order ${PL.map(p => p[1]).join(", ")}</span>`;
@@ -347,17 +362,56 @@ function body(c) {
       return `<li><span class="sup s-${esc(e[1])}">${esc(SHORT[e[1]] || e[1])}</span><span>${esc(e[3])}
         <span class="src">${esc(e[2])}${s ? ` · ${s[1] ? `<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>` : esc(s[0])}${s[3] ? " · " + esc(s[3]) : ""}` : ""} · <a href="${repoFile("studies/class-model/merged/evidence.tsv", e[5])}" target="_blank" rel="noopener">row</a></span>
         ${s && s[2] ? `<span class="q">${esc(s[2])}</span>` : ""}</span></li>`; }).join("");
-    const extra = qual.filter(q => q[0] === i).map(q => `<li><span class="sup s-shows">quality</span><span>${esc(q[1])}: ${esc(q[2])} <span class="src">${esc(q[3])}</span></span></li>`).join("")
+    const extra = qualItems(qual.filter(q => q[0] === i))
       + fill.filter(f => f[0] === i).map(f => `<li><span class="sup s-outside">slot filler</span><span>${esc(f[1])} <span class="src">${esc(f[2])}</span></span></li>`).join("");
+    const tm = (D.terms[c.id] || []).filter(t => t[0] === i);
+    const termsHtml = tm.length ? `<details class="terms"><summary>The plans' terms (${tm.length})</summary><ul class="ev">${tm.map(t => `<li><span class="sup s-shows">term</span><span>${esc(t[1])}: ${esc(t[2])}
+        <span class="src">${esc(t[3])}${t[4] ? " · " + esc(t[4]) : ""} · <a href="${repoFile("studies/class-model/merged/terms.tsv", t[5])}" target="_blank" rel="noopener">row</a></span></span></li>`).join("")}</ul></details>` : "";
     return `<div class="pcell"><header>${glyph(placement(cell), WORD[placement(cell)])}<h3>${esc(p[1])}</h3><span class="pl">${esc(pls.map(x => SHORT[x]).join(", "))}</span></header>
       ${cell[2] === "none-held" ? (/The held pass's second stage/.test(cell[7] || "") ? `<p class="nothing">Nothing held: the concern map holds nothing for it on ${esc(p[1])}, and the held pass's second stage read the held pages (its reading says what it found).</p>` : `<p class="nothing">Nothing held: the part searched the concern map for this capability on ${esc(p[1])} and found nothing that shows it.</p>`) : ""}
       ${kv.length ? `<dl class="kv">${kv.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join("")}</dl>` : ""}
       ${cell[7] ? `<p class="reading">${esc(cell[7])}</p>` : ""}
       ${rows || extra ? `<ul class="ev">${rows}${extra}</ul>` : ""}
+      ${termsHtml}
       <div class="rowlinks"><a href="${repoFile("studies/class-model/merged/cells.tsv", cell[10])}" target="_blank" rel="noopener">The cell at ${esc(D.meta.short)}</a><span>written by ${esc(cell[11])}</span></div></div>`;
   }).join("")}</div>`);
   out.push(`<div class="rowlinks"><a href="${repoFile("studies/class-model/merged/capabilities.tsv", c.line)}" target="_blank" rel="noopener">The capability at ${esc(D.meta.short)}</a></div>`);
   return out.join("");
+}
+// a cell's qualities: by kind, then the other values, then rows not yet labelled (the qualities pass, design 7.4)
+function qualItems(qs) {
+  const li = (q, chip, cls, title) => `<li><span class="sup ${cls}"${title ? ` title="${esc(title)}"` : ""}>${esc(chip)}</span><span>${esc(q[1])}: ${esc(q[2])}
+    <span class="src">${[q[5], q[8], q[6], q[10]].filter(Boolean).map(esc).join(" · ")}${[q[5], q[8], q[6], q[10]].some(Boolean) ? " · " : ""}${esc(q[3])} · <a href="${repoFile("studies/class-model/merged/qualities.tsv", q[11])}" target="_blank" rel="noopener">row</a></span></span></li>`;
+  if (!D.qlabelled) return qs.map(q => li(q, "quality", "s-shows")).join("");
+  const order = (D.qkinds || []).map(k => k[0]);
+  const isQ = qs.filter(q => q[7] === "quality").sort((a, b) => order.indexOf(a[4]) - order.indexOf(b[4]));
+  return isQ.map(q => li(q, `quality · ${q[4] || "?"}`, "s-quality", QKN[q[4]] || "")).join("")
+    + qs.filter(q => q[7] === "other").map(q => li(q, "other value", "s-other", "neither a quality nor one of the plans' terms")).join("")
+    + qs.filter(q => !["quality", "other", "term"].includes(q[7])).map(q => li(q, "not yet labelled", "s-shows", q[7])).join("");
+}
+// qualities by kind: the 16 kinds against the five platforms; a gap reads as what was done, never as absent
+function renderQualities() {
+  const el = document.getElementById("qualities");
+  const all = []; Object.entries(D.qual).forEach(([cid, qs]) => qs.forEach(q => all.push([cid, q]))); (D.qplat || []).forEach(q => all.push(["platform", q]));
+  const cover = D.qcover || [];
+  const cellHtml = (k, i) => {
+    const found = all.filter(([, q]) => q[0] === i && q[7] === "quality" && q[4] === k[0]);
+    const cv = cover.filter(r => r[0] === i && r[2] === k[0]);
+    const out = [];
+    if (found.length) out.push(`<ul>${found.slice(0, 8).map(([cid, q]) => `<li>${cid === "platform" ? "<b>the platform</b>" : `<a href="#cap-${esc(cid)}">${esc(cid)}</a>`} ${esc(q[1])}: ${esc(q[2].length > 120 ? q[2].slice(0, 120) + " …" : q[2])}${q[6] ? ` <span class="muted">(${esc(q[6])})</span>` : ""}</li>`).join("")}${found.length > 8 ? `<li class="muted">and ${found.length - 8} more</li>` : ""}</ul>`);
+    for (const r of cv) {
+      if (r[3] === "found") continue;
+      const at = (r[7] || "").split(";").filter(x => x.includes("@")).join(", ");
+      const words = {"not-found": `searched, not found at ${at}`, "not-held": "not held", "unreadable": "held, but not in a form the tools read", "unclear": "a passage may state it; its words don't settle it", "absent": "not in the complete list the platform publishes"}[r[3]] || r[3];
+      out.push(`<div class="gap">${esc(r[1])}: ${esc(words)}${r[3] === "not-held" && r[9] ? `; capture: ${esc(r[9])}` : ""}${r[3] !== "not-held" && r[8] ? ` <span class="muted">(read: ${esc(r[8])})</span>` : ""}</div>`);
+    }
+    if (!found.length && !cv.length) out.push(`<div class="gap">not read yet</div>`);
+    return out.join("");
+  };
+  const plat = (D.qplat || []);
+  el.innerHTML = `<p class="muted" style="margin:0 0 var(--s3);max-width:85ch">What each platform states on how well, how safely, or within what bounds it does what it does, by the 16 kinds of the qualities pass, its found qualities with their capability (or the platform as a whole), and for each ask it didn't find: searched and not found at the commits read, not held, or not read yet. Nothing here reads as absent: a gap is what was done, at a commit. ${D.qlabelled ? "" : "The model's quality rows aren't labelled yet, so no row is shown by kind."}</p>
+    <div class="tablewrap"><table class="qk"><thead><tr><th class="k">Kind</th>${PL.map(p => `<th>${esc(p[1])}</th>`).join("")}</tr></thead><tbody>${(D.qkinds || []).map(k => `<tr><th class="k"><span class="mono">${esc(k[0])}</span> ${esc(k[1])}<div class="muted">${esc(k[2])} (a reading)</div><div class="muted">drives ${esc(k[3].split(";").join(", "))}; on ${esc(k[4])}</div></th>${PL.map((p, i) => `<td>${cellHtml(k, i)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>
+    <p class="muted" style="margin:var(--s3) 0 0">${plat.filter(q => q[7] === "quality").length} qualities sit on the platform as a whole (QL-R2), each under its kind above.</p>`;
 }
 function render() {
   const shown = caps.filter(pass);
@@ -402,11 +456,12 @@ function renderGuide() {
     <li><b>Slot</b>: every platform that shows it leaves it to apps or partners (an extension point), or says another party does it (outside). What fills a slot in a market is a slot filler, never a capability.</li>
     <li><b>Open</b>: no platform does it itself, and at least one doesn't say who does. It is either third parties where stated (one platform places it with third parties, another doesn't say), or unplaced (no platform that shows it says who does it). It is never folded into class or slot.</li>
     <li>A class that holds only under a plan, a beta or one observed store carries that scope beside it. With fewer than five platforms mapped, a slot or an open is provisional.</li></ul></section>
+  <section><h2>Qualities and the plans' terms</h2><p>A quality is what a platform states about how well, how safely, or within what bounds it does what it does: a commitment, a bound, an attestation, or how data is kept. Each sits on the capability it bears on, or on the platform as a whole, with its kind. Prices, fees and plan allowances are the plans' terms, not qualities: they are kept, folded under each cell as "The plans' terms". The view "Qualities by kind" sets the kinds against the platforms; where nothing is found it says what was searched, at which commit, or that the place isn't held.</p></section>
   <section><h2>Facts and readings</h2><p>An evidence row is a fact: a statement or an inventory entry of the concern map, traced to its source at a commit or on the day it was read. A cell's reading is the part's reading of those facts, marked as one. Your words are never evidence of what a platform does.</p></section>
   <section><h2>What it can't tell</h2><ul><li>What a platform doesn't publish, and why it chose so.</li><li>How it behaves on stores never observed.</li><li>What a market needs: that comes from the subjects' registers.</li><li>Anything about Sharrwah's own design: that is the architecture's, on your go.</li></ul></section>`;
 }
 // tabs and links
-const TABS = ["capabilities", "q3", "areas", "sources", "guide"];
+const TABS = ["capabilities", "qualities", "q3", "areas", "sources", "guide"];
 function show(tab) { TABS.forEach(t => { document.getElementById("view-" + t).hidden = t !== tab; document.getElementById("tab-" + t).setAttribute("aria-selected", t === tab); }); }
 document.querySelector("nav.tabs").addEventListener("click", e => { const b = e.target.closest("button[data-tab]"); if (!b) return; show(b.dataset.tab); try { history.replaceState(null, "", "#" + b.dataset.tab); } catch (_) {} });
 function route() {
@@ -419,5 +474,5 @@ function route() {
   } else show(TABS.includes(h) ? h : "capabilities");
 }
 window.addEventListener("hashchange", route);
-renderMap(); render(); renderQ3(); renderAreas(); renderGuide(); route();
+renderMap(); render(); renderQualities(); renderQ3(); renderAreas(); renderGuide(); route();
 </script>
