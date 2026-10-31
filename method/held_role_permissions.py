@@ -1,6 +1,6 @@
 """The held pass, Shopify's admin-role-permissions (after SH-4): each role permission whose handle is a permission the
-permission tree holds, and SH-3 or SH-4 placed, takes that permission's line or lines, with the same capability,
-support, scope and filler; its access level (ALLOW, DENY) is the role's own setting, in `reading`. A handle the tree
+permission tree holds, and SH-3 or SH-4 placed, takes that permission's line or lines, with the same capability
+and support; the tree's scope and filler are named in `reading`, since the role's answer states no condition; its access level (ALLOW, DENY) is the role's own setting, in `reading`. A handle the tree
 holds more than once with lines that differ, or holds not at all, is left to an agent's batch.
 
 Usage:
@@ -38,8 +38,9 @@ for b in ("SH-3", "SH-4"):
 
 
 def title(e):
-    m = re.search(r"(?:^|; )title: ([^;]+)", E[e]["text"])
-    return m.group(1).strip() if m else ""
+    """The tree entry's title, or its member's name where the code computes the title (a plan's two titles)."""
+    m = re.search(r"(?:^|; )title: ([^;]+)", E[e]["text"]) or re.search(r"(?:^|; )member: ([^;]+)", E[e]["text"])
+    return m.group(1).strip() if m else "untitled"
 
 
 ids = [x.strip() for b in BATCHES for x in open(f"{H}/batches/{b}.txt") if x.strip()]
@@ -55,15 +56,26 @@ for e in ids:
         left.append(e); continue
     t = placed[0]
     matched.append(e)
+    # the tree's rows by capability and support: with no scope, two rows the tree scopes apart (a title the code
+    # computes by plan, 'shopifyPlus' and 'not shopifyPlus') are one line, both scopes named in the reading
+    groups = collections.OrderedDict()
     for b, n, r in lines[t]:
+        groups.setdefault((r["cap_id"], r["supports"]), []).append((b, n, r))
+    for (cap, sup), grp in groups.items():
+        b, n, r = grp[0]
+        scopes = [x["scope"] for _, _, x in grp if x["scope"]]
+        r = dict(r, scope=" or ".join(scopes))
+        n = ",".join(str(m) for _, m, _ in grp)
         row = {h: "" for h in HEAD}
         # the entry's own words are its handle and level: its terms are the handle, and the tree's titles and
         # fillers stay with the tree's line, which the reading cites
-        row.update(entry_id=e, placement="capability", cap_id=r["cap_id"], supports=r["supports"], scope=r["scope"],
+        # and no scope: the role's answer states none, so the tree's condition is named in the reading (SH-6's R6)
+        row.update(entry_id=e, placement="capability", cap_id=r["cap_id"], supports=r["supports"], scope="",
                    terms=handle)
         row["reading"] = (f"a reading: the role's permission {handle}, access level {level}, the role's own setting "
                           f"(store ctcbwa-r1); the same permission's line in the permission tree ({b}:{n}, its entry "
-                          f"{t}, titled {title(t)}{', filler ' + r['filler'] if r['filler'] else ''}), by the rule after "
+                          f"{t}, titled {title(t)}{', filler ' + r['filler'] if r['filler'] else ''}"
+                          f"{', its scope there ' + r['scope'] if r['scope'] else ''}), by the rule after "
                           f"SH-4: a role's permission takes its permission's line")
         out.append(row)
 
