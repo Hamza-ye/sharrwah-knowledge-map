@@ -17,17 +17,10 @@
 5. **A decision is taken when something that rests on it is about to be built,** not before (the last responsible moment, Poppendieck and Poppendieck 2003). Every step ends in a decision for the founder, or it doesn't run.
 
 **The steps:**
-1. **Review the earlier decisions** (`founder-decisions.tsv`, the review column). For each, product line engineering says whether it belongs to the platform, to a market's setup or to the method, and when it binds. It stays if it still holds. Decision 1 and the decisions built on the same frictions go first, for the risk that Yemen's concerns enter the platform at the wrong time.
-
-   The result is one page for the founder.
-2. **Architecture's six first decisions,** one record each, read from Shopify's shape:
-   1. how stores are kept apart, and where their data lives;
-   2. identity and permissions;
-   3. money records and currency;
-   4. markets and the seller's country;
-   5. events, and the places outside services plug in;
-   6. settings held per store, varied per market and limited per plan.
-3. **Then building.** A spike, meaning code thrown away after it answers one stated question, is allowed where a decision raises a question only code can answer. Production code waits for the decisions and their documentation (the founder, 24 October).
+1. **Derive the first decisions:** the concerns every area depends on. They come from two sources, each cited: Shopify's shape, read at its source, and established practice for platforms that many businesses share. The list the coordinator gave on 30 October was its own, carried the old frictions, and was checked against neither (`decisions/first-decisions.md`).
+2. **Review the earlier decisions** (`founder-decisions.tsv`, the review column) against those first decisions. For each, product line engineering says whether it belongs to the platform, to a market's setup, to the method, or to the founder's own list, and when it binds. It stays if it still holds. Decision 1 and the decisions built on the same frictions go first, for the risk that Yemen's concerns enter the platform at the wrong time. The result is one page for the founder.
+3. **The first decisions,** one record each, read from Shopify's shape.
+4. **Then building.** A spike, meaning code thrown away after it answers one stated question, is allowed where a decision raises a question only code can answer. Production code waits for the decisions and their documentation (the founder, 24 October).
 
 **Risks, and what is done about each:**
 - **Sharrwah inherits only the variation Shopify needed.** Where a market needs a place Shopify's shape lacks, Sharrwah adds one, case by case, named in the decision that meets it.

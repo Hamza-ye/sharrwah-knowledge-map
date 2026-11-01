@@ -12,6 +12,7 @@
   - `check_report.py` checks each quote against its source.
   - `count_tokens.py` counts what a run cost.
   - `quote_check.py` and `runs_corpus.py` serve the first two.
+- `decisions/`: the first decisions and their records, as they are made.
 - `HISTORY.md` and `INVENTORY.md`: how the repository got here, and what stays and why.
 - **The evidence:** Shopify's evidence repository, observed-sh, cloned read-only at `/home/user/observed-sh`. Read it through its own guides first: `README.md`, `docs/READING.md` and `index/`.
 
