@@ -22,7 +22,7 @@
 3. **Needed before any area?** The mechanism, yes; the plans themselves can wait.
    - The admin loads the shop's plan, limits and entitlements on every page: "every admin page loads it" (*the capture's* [register, L131](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/REGISTER.tsv?plain=1#L131)).
    - Each route states its entitlements beside its permissions. The route "abandonedCheckouts:parent" states "MANAGE_ABANDONED_CHECKOUTS" and "abandonedCartRecovery" ([admin router, L1](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/admin-router/items.jsonl?plain=1#L1)).
-   - Of the router's 1,364 routes, 515 state an eligibility: 282 name permissions, 89 features, 79 entitlements, 41 betas and 2 plans.
+   - Of the router's 1,364 routes, 515 state an eligibility. At its top level, 282 name permissions, 89 features, 79 entitlements, 41 betas and 2 plans.
    - What a plan holds is data, and it changes: "Shopify increased Admin API rate limits for the Advanced plan by 2x over standard limits." ([merchant changelog, 2023, L971](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/merchant-changelog/changelog.shopify.com@posts/items.jsonl?plain=1#L971)).
    - **Reading:** every area with a screen or an operation is checked against these records, so the mechanism comes before the areas. The plans' contents do not.
 4. **Claims the evidence doesn't bear out.** Nothing found.
@@ -55,7 +55,7 @@
 2. **Citations.**
    - Homer et al. 2014: real. Its Throttling pattern controls the resources used by an application instance, a tenant or a whole service, as the file says.
    - Krebs, Momm & Kounev 2012: real. *Performance Isolation* is among its keywords. Its body was not read.
-   - Weissman & Bobrowski 2009: real, but governor limits were not confirmed in the paper, whose copy answered HTTP 503. Salesforce's Apex documentation and Weissman's QCon 2008 slides do describe them.
+   - Weissman & Bobrowski 2009: real, but governor limits were not confirmed in the paper, whose copy answered HTTP 503. Salesforce's Apex documentation and Weissman's QCon 2008 slides do describe them, as read through search results.
 3. **Needed before any area?** The model, yes; the numbers can wait.
    - Every request has its own cost, and writes cost more: "A higher cost is necessary to account for this increased server load" ([same post, L228](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/engineering-blog/20261031T004307Z-shopify-engineering-posts/items.jsonl?plain=1#L228)).
    - The numbers change with the plan: "Apps installed on Advanced plan stores will now get 100 points/second on the GraphQL Admin API" ([merchant changelog, L971](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/merchant-changelog/changelog.shopify.com@posts/items.jsonl?plain=1#L971)).
@@ -70,7 +70,7 @@
    - Shopify itself added logic inside the platform later, for a stated reason. An app was "an independently hosted web service which communicates with Shopify over the network", and "the network latency incurred when communicating with Shopify precludes the use of Apps for time sensitive use cases" ([How Shopify Uses WebAssembly Outside of the Browser, 2020, L257](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/engineering-blog/20261031T004307Z-shopify-engineering-posts/items.jsonl?plain=1#L257)).
    - A neutral question: may outside developers extend Sharrwah, and if so where, through what, and under which limits and terms?
 2. **Citations.**
-   - Bosch 2009: real (SPLC 2009, pp. 111–119). Its subject is product-line platforms opened beyond the company, as the file says. Its text was not read; the subject is taken from its listing and later citations.
+   - Bosch 2009: real (SPLC 2009, pp. 111–119). Its text was not read here. That it is about product-line platforms opened beyond the company, as the file says, is *cited from memory*; it matches how Bosch's later work describes it.
    - Baldwin & Woodard 2009: real (chapter 2 of Gawer (ed.), 2009, pp. 19–44). The file's paraphrase, a stable core with interfaces through which outside parts vary, is *cited from memory* here: it was not confirmed on the pages read.
    - Weissman & Bobrowski 2009: real, but code running inside the platform under limits was not confirmed in the paper (see 13).
 3. **Needed before any area?** Not shown; it could wait for each area's own design.
@@ -101,7 +101,7 @@
 
 ## The list
 
-Each concern below is named only where Shopify's evidence, or a source the file cites, shows it.
+Each concern below is named only where Shopify's evidence, or a source the file cites, shows it. Each verdict in bold is a reading; the facts under it are its reasons.
 
 - **Consistency of records within a shop: missing. It belongs among the first decisions, or stated inside 3.**
   - Shopify chose one database and one transaction for a flow, and says why: "Moving reservations into the same MySQL database as the ledger meant we could wrap everything in ACID transactions and eliminate these failure modes entirely." ([We replaced Redis with MySQL for inventory reservations, 2026, L20](https://github.com/Hamza-ye/observed-sh/blob/04de369da9ac84ae530ae80a55749167ff4139d4/structures/shopify/engineering-blog/20261031T004307Z-shopify-engineering-posts/items.jsonl?plain=1#L20)).
