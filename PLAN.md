@@ -16,6 +16,9 @@ Sharrwah is one platform for many markets: a merchant platform of the class that
 - **Hide what is likely to change.** Each decision likely to change sits behind its own module (Parnas 1972).
 - **Effort follows risk.** Analysis effort goes where a wrong decision costs most (Fairbanks 2010; Boehm 1988), and each decision is taken at the last responsible moment (Poppendieck & Poppendieck 2003).
 - **The guard on the first market.** The founder asked for a "very visible guard" against Yemen being "used to define the hard to change product decisions" ([24 October](https://github.com/Hamza-ye/sharrwah-knowledge-map/blob/4923e1c96a0296abdaf3f5bdbd8c155e09acfebf/founder-messages/2026-10-24-method-accepted.md?plain=1#L48)). So each subject's analysis is made from the references before its Yemen row (section 6, step 6), a gap only Yemen shows is written without Yemen's name (section 6, step 5), and each decision page says whether its recommendation comes out the same without Yemen, as Decision 1's does. The founder's intent states the rule: a market fills slots and never defines the platform. A need one of the founder's markets shows that the class doesn't meet is a product gap: building it goes with that market's setup, and how the platform keeps room for it is engineering's.
+  - **Yemen is read narrow, never wide** ([the founder, 1 November](founder-messages/2026-11-01-yemen-narrow.md)). A Yemen fact may only make the design keep room for something. It never sets a shape, and never closes one off. So a wrong or changed Yemen fact costs room left unused, not a redesign.
+  - In all the work, tests and architecture's own included, Yemen is read only for the facts a decision's Yemen row needs. Each fact is checked against its source's quote when it is used, and against the captured source where the quote doesn't settle it.
+  - Yemen's own setup (its providers, couriers, wallets and law) is read fresh when the founder decides to set it up.
 
 **The safe shore.** This plan ends when:
 0. the class's model states its extent: each capability the five references show, where each places it, and how many establish it as their own; and the areas whose architecture has been written grow from it;
@@ -118,7 +121,7 @@ Gate G0 comes first: the founder's go on this plan. Stages 0 and 1 don't depend 
 
 ### Stage 1. Yemen's axes and cases
 
-*Done on 17 October 2026, in `studies/yemen-cases/`. Its independent review found errors in `today` on 12 of 45 sampled axes, and later checks found ten of its records that need a correction or a caution: [`corrections.md`](studies/yemen-cases/corrections.md). This is Q2's first step, run on its own. Since 25 October 2026 no more work goes into it: it is a reference, read only for the facts a Yemen row needs, with `corrections.md`.*
+*Done on 17 October 2026, in `studies/yemen-cases/`. Its independent review found errors in `today` on 12 of 45 sampled axes, and later checks found ten of its records that need a correction or a caution: [`corrections.md`](studies/yemen-cases/corrections.md). This is Q2's first step, run on its own. Since 25 October 2026 no more work goes into it: it is a reference, read only for the facts a Yemen row needs, with `corrections.md`. Since 1 November no other work reads it wide either, tests and architecture's own included (section 1, the guard on the first market).*
 
 - It finds the axes Yemen varies along, and builds the cases on them, with today as the anchor case. It uses Yemen evidence only, as Q2 says.
 - Where an axis has no evidence, the case is marked unknown, not inferred. The founder's capture list says what would show it.
@@ -688,3 +691,18 @@ A dated log. Where an entry differs from a later one, the later holds, and the s
   - **Proposed, not changed:** for risk 1, that nothing is added or widened without the founder's go, and that a step whose first measured part runs past its estimate goes to the founder before the rest runs. It changes who decides, which is the frame (section 9), so it enters the plan on the founder's word. Until then the coordinator keeps to it.
 
   **What this change removes or weakens:** the page's account of each subject's state, of the founder's decisions and of the plan's structure. Those stay in `STATE.md`, `founder-decisions.tsv` and this plan, linked from the page.
+- **1 November 2026, Yemen read narrow, never wide** (the founder's go, [verbatim with the proposal it answered](founder-messages/2026-11-01-yemen-narrow.md); `founder-decisions.tsv`). The founder asked whether the baseline test's agent would read the Yemen evidence, and said: "I feel The Yemeni case will be the source of failure of anything we do here, from any side we take it." The record behind the proposal:
+  - **Read wide, Yemen moved nothing.** Stage 1 cost about 1.5 billion tokens, and the pilot's Yemen marks 104 million ([S-01's method report, section 12](studies/subjects/S-01/method-report.md#12-what-a-subject-costs)). Those 183 marks moved no result (25 October, above). Stage 1's review found errors on 12 of 45 sampled axes (Stage 1, above).
+  - **Read narrow, it found the only needs no platform meets.** S-02's Yemen row cost 13.2 million tokens ([S-02's method report, section 15](studies/subjects/S-02/method-report.md#15-s-02s-end-the-register-the-yemen-row-the-scenario-walk-designs-beyond-the-references-and-the-review-29-october)). It found D8 and D9, both costly to change later ([S-02's decisions, "Needs no reference meets"](studies/subjects/S-02/decisions.md#needs-no-reference-meets)).
+  - **The baseline test's agent** read only Stage 1's findings, for 6.3 million tokens, and opened no source. Of its 14 draft questions, 3 came from the Yemen cases alone. Two of those are D8's and D9's needs again.
+
+  **Changed:**
+  - section 1's guard on the first market, which is the frame (section 9). It changes on the founder's go;
+  - Stage 1's note.
+
+  The Yemen row stays one per decision in scope (section 1, the safe shore's item 2; section 6, step 6).
+
+  **What this change removes or weakens,** with the risk each part controlled:
+  - **A Yemen fact setting a shape, or closing one off,** let a design fit one market's facts exactly. Removed. The risk it controlled, building room that is never used, is accepted: room decided early is cheap (S-02's D8: "a dated area costs little now"), while a shape set by a wrong or changed fact costs a redesign.
+  - **Reading Stage 1 as a general input** to a test or to architecture's work, as the baseline test's brief had it until this change (`studies/class-model/briefs/T-baseline.md`, its second input), could raise a need no decision asks about. Reassigned: each decision's Yemen row, and the baseline test's questions, which list where Yemen and the class could collide. Its phase 2 checks each.
+  - **Reading Yemen's providers, couriers, wallets and law now, for its setup,** would show a blocker to launching Yemen early. Reassigned to the founder, whose list holds markets, partners, the company and its licences (`founder-decisions.tsv`, the intent of 29 October). The platform's part is that it keeps room for whatever the founder arranges. A blocker is also read when the founder decides to set Yemen up, since its facts change.
