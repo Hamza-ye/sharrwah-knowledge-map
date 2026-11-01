@@ -11,4 +11,5 @@ Four checkers who made none of it read only `definitions.md`, their items and cl
 **How the result is read, fixed before any result:**
 - a ruling **fails** if 3 or more of its 5 lines are wrong in placement or capability;
 - the model is **unstable** if 10 or more of the 100 cells are wrong in their strongest placement or capability, or if any ruling fails;
+- it is **usable as an index** if 5 or fewer are wrong that way and no ruling fails, and **shaky** in between (6 to 9), which is said as such, never as fine;
 - wrong scope, wrong detail and can't-tell are counted and reported, but don't decide stability.
