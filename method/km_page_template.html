@@ -265,9 +265,11 @@ document.getElementById("asof").textContent = `generated from ${D.meta.short}, $
 if (D.meta.draft) {
   const runs = D.domains.filter(([d]) => D.meta.run[d]).map(([d, n]) => `${d} (${n}): ${D.meta.run[d].map(i => PL[i][1]).join(", ")}`);
   const el = document.getElementById("draft"); el.hidden = false;
-  const all = D.domains.length && D.domains.every(([d]) => (D.meta.run[d] || []).length === PL.length);
+  // A domain that holds no capability (H, beyond the references) has nothing to run, so it doesn't count.
+  const held = new Set(caps.map(c => (areaOf[c.area] || [])[1]));
+  const all = D.domains.length && D.domains.every(([d]) => !held.has(d) || (D.meta.run[d] || []).length === PL.length);
   el.innerHTML = all
-    ? `<b>A draft, before the extent's checks.</b> Every domain has run on all five platforms. The subjects' points, Q3's check and the independent review are still to come, and a cell, a landing or a kind may change after them.`
+    ? `<b>Not yet reviewed.</b> Every entry was read from the evidence, and every quote was checked against its source by script. No one independent has yet checked the readings: where a platform places a thing, which things count as one capability, and the rulings applied to many entries at once. Until then, treat an entry as a pointer to its sources, not a settled fact.`
     : `<b>A draft, built while the extent runs.</b> A platform that hasn't run in a domain shows as not mapped yet, and kinds count only the platforms that have run. Run so far: ${esc(runs.join("; ")) || "none"}. A domain not listed is still being built, and isn't in this draft.`;
 }
 const kc = k => caps.filter(c => c.kind === k).length;
