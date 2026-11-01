@@ -7,8 +7,8 @@
 
 **Done:** step 1 of `PLAN.md`. The first decisions were derived again from Shopify's shape and published practice: fifteen, in the order they can be settled (`decisions/first-decisions.md`, 151 quotes checked).
 
-**Running:** step 2. The review of the earlier decisions against them, with Decision 1 and the decisions built on the same frictions first, written to `decisions/review.md`. Its result is one page for the founder.
+**Done:** step 2's review (`decisions/review.md`), by an agent that made none of the decisions. Of the 33 rows under review: 8 stay, 12 stay with new words, 2 split (the platform's part stays, the market's part waits for its setup), and 11 are retired. Nothing in `founder-decisions.tsv` changes until the founder approves.
 
-**Waiting on the founder:** nothing until the review's page.
+**Waiting on the founder:** the review's page: the new words, the two drops (line 8's last sentence, line 25's exception), and any veto. Then step 3, the first decisions' records, beginning with the first five of the fifteen.
 
 **The branch:** `claude/vibrant-meitner-oh70v4`. PR #8 is open, and it merges only on the founder's word.
