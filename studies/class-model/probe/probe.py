@@ -124,5 +124,33 @@ def sample():
           f"from {sum(1 for t in table if t[2] >= 100)} rulings with 100 or more held lines (of {len(table)} high-weight rulings), seed {SEED}")
 
 
+def rates():
+    """Counts the verdicts against the rule fixed in README.md: by kind, per ruling, and the cells' wrong placements."""
+    items = {r["item"]: r for r in tsv(os.path.join(HERE, "sample.tsv"))}
+    big = [r for r in tsv(os.path.join(HERE, "rulings.tsv")) if int(r["held_lines"]) >= 100]
+    name = {f"R-{n}": r["ruling"] for n, r in enumerate(big, 1)}
+    v = {}
+    for f in sorted(glob.glob(os.path.join(HERE, "verdicts-*.tsv"))):
+        for r in tsv(f):
+            v[r["item"]] = dict(r, _file=os.path.basename(f))
+    missing = sorted(set(items) - set(v))
+    wrong = ("wrong placement", "wrong capability")
+    cells = [i for i in items if items[i]["kind"] == "cell"]
+    lines = [i for i in items if items[i]["kind"] != "cell"]
+    print(f"{len(v)} verdicts of {len(items)} items; missing: {len(missing)} {' '.join(missing[:10])}")
+    for label, ids in (("cells", cells), ("ruling lines", lines)):
+        c = collections.Counter(v[i]["verdict"] for i in ids if i in v)
+        print(f"{label}: " + ", ".join(f"{k} {n}" for k, n in c.most_common()))
+    bad = [i for i in cells if i in v and v[i]["verdict"] in wrong]
+    print(f"cells wrong in strongest placement or capability: {len(bad)} of {sum(1 for i in cells if i in v)}")
+    for i in bad:
+        print(f"  {i}: {v[i]['verdict']}: {v[i]['why'][:220]}")
+    print("rulings (fails at 3 or more of 5 wrong in placement or capability):")
+    for key in sorted(name, key=lambda k: int(k.split('-')[1])):
+        ids = [i for i in lines if i.startswith(key + "-")]
+        w = [i for i in ids if i in v and v[i]["verdict"] in wrong]
+        print(f"  {key} {'FAILS' if len(w) >= 3 else 'holds'} {len(w)}/{len(ids)} {name[key][:80]}")
+
+
 if __name__ == "__main__":
-    {"sample": sample}.get((sys.argv[1:] or ["sample"])[0], sample)()
+    {"sample": sample, "rates": rates}.get((sys.argv[1:] or ["sample"])[0], sample)()
