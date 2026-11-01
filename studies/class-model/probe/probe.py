@@ -46,6 +46,12 @@ def page_data():
     return ev, ci
 
 
+def definition(note):
+    """Nothing of the capability's note: its notes carry the model's own reasoning about who does it, which would steer
+    the checker. The capability's name, with its description and the platforms' terms, is what the checker is given."""
+    return ""
+
+
 def sample():
     rnd = random.Random(SEED)
     M = os.path.join(ROOT, "studies", "class-model", "merged")
@@ -64,7 +70,7 @@ def sample():
         pick = rnd.sample(lines, min(3, len(lines)))
         iid = f"C-{c['cap_id']}-{c['platform']}"
         cap = caps.get(c["cap_id"], {})
-        items.append([iid, "cell", c["cap_id"], cap.get("capability", ""), cap.get("note", ""), c["platform"],
+        items.append([iid, "cell", c["cap_id"], cap.get("capability", ""), definition(cap.get("note", "")), c["platform"],
                       " || ".join(f"[{n+1}] {src(e[4])[0]} | {src(e[4])[1]} | quote: {src(e[4])[2]} | read {src(e[4])[3]}" for n, e in enumerate(pick)) or "(no line gives this placement)"])
         claims.append([iid, f"cell placed as {c['placed_as']}; strongest: {top}; scopes: {c['scopes']}",
                        " || ".join(f"[{n+1}] supports {e[1]}: {e[3]}" for n, e in enumerate(pick)), c["reading"]])
@@ -101,7 +107,7 @@ def sample():
             iid = f"R-{len([t for t in table if t[2] >= 100])}-{k+1}"
             cap = caps.get(L.get("cap_id", ""), {})
             s = src(key_cite.get(L["entry_id"], ""))
-            items.append([iid, "ruling line", L.get("cap_id", ""), cap.get("capability", ""), cap.get("note", ""), L["_platform"],
+            items.append([iid, "ruling line", L.get("cap_id", ""), cap.get("capability", ""), definition(cap.get("note", "")), L["_platform"],
                           f"[1] {s[0]} | {s[1]} | quote: {s[2]} | read {s[3]} (held entry {L['entry_id']})"])
             claims.append([iid, f"line placed as {L['placement']} on {L.get('cap_id', '')}, supports {L.get('supports', '')}; scope: {L.get('scope', '')}; terms: {L.get('terms', '')}",
                            f"{L['_file']} line {L['_line']}", L.get("reading", "")])
