@@ -13,7 +13,7 @@ CM-PAY-033	bigcommerce	statements	core				general
 CM-PAY-033	salla	none-held					
 CM-PAY-033	shopify	statements	core	editions-page-data | merchant-changelog	SH-E-c82212c3=Basic;Grow;Advanced;Plus;www.shopify.com/ie | SH-E-ef05c168=businesses using a custom checkout	SH-C-186/reason:searched, not found	general
 CM-PAY-033	woocommerce	none-held					
-CM-PAY-033	zid	statements	core				general
+CM-PAY-033	zid	none-held					
 CM-SHP-024	bigcommerce	none-held					
 CM-SHP-024	salla	statements	not-stated				
 CM-SHP-024	shopify	none-held					

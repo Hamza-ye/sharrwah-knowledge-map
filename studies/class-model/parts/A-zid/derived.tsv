@@ -1,12 +1,12 @@
 cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
 CM-ACC-001	zid	statements	core	dashboard-page-index | dashboard-route-manifest | لوحة التحكم > الإعدادات > إعدادات الحساب	ZD-C-077/decides/ZD-S-0516=staff permission | ZD-C-077/decides/ZD-S-0901=compare-plans: starter, launch, growth, pro | ZD-E-2186883a=new_starter | ZD-E-5086b098=new_starter	ZD-C-077/reason:searched, not found	general
-CM-ACC-002	zid	statements	not-stated	footer: زد متاحة في	ZD-C-030/decides/ZD-S-0728=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0733=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0734=partner payout invoices | ZD-E-069d1f00=zid.eg | ZD-E-24fce0b4=zid.eg	ZD-C-030/responsible:searched, not found;ZD-C-030/boundary:searched, not found;ZD-C-030/reason:searched, not found;ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found	
-CM-ACC-003	zid	statements	core				general
+CM-ACC-002	zid	statements	not-stated	footer: زد متاحة في	ZD-C-030/decides/ZD-S-0728=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0733=Zid Pay, Kuwait | ZD-C-030/responsible/ZD-S-0734=partner payout invoices	ZD-C-030/responsible:searched, not found;ZD-C-030/boundary:searched, not found;ZD-C-030/reason:searched, not found;ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found	
+CM-ACC-003	zid	none-held					
 CM-ACC-004	zid	statements	core	dashboard-page-index | dashboard-route-manifest | الاعدادات > المتجر > بيانات المتجر | توثيق منصة المركز السعودي للأعمال	ZD-C-035/decides/ZD-S-0753=السعودية | ZD-C-035/where/ZD-S-0752=تجار السعودية | ZD-E-59551690=new_starter | ZD-E-a7c98f3c=new_starter | ZD-E-f43f9e9a=new_starter		general
 CM-ACC-005	zid	none-held					
 CM-ACC-006	zid	statements	core	Merchant APIs > Account > Store | dashboard-page-index | dashboard-route-manifest	ZD-E-3b4783bc=new_starter | ZD-E-bed07ad1=new_starter	ZD-C-033/responsible:stated only in general terms;ZD-C-033/reason:searched, not found;ZD-C-077/reason:searched, not found	general
 CM-ACC-007	zid	statements	core	dashboard-page-index | dashboard-route-manifest | الاعدادات > المتجر > أوقات العمل الرسمية	ZD-E-aac04b14=new_starter	ZD-C-104/decides:observation needed;ZD-C-104/responsible:stated only in general terms;ZD-C-104/boundary:searched, not found;ZD-C-104/reason:searched, not found	general
-CM-ACC-008	zid	statements	not-stated	Egypt | Other countries | Zid Egypt	ZD-C-032/decides/ZD-S-0743=Zid Payments | ZD-E-9ab1bf82=zid.eg	ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found;ZD-C-032/responsible:stated only in general terms;ZD-C-032/boundary:searched, not found;ZD-C-032/reason:searched, not found	
+CM-ACC-008	zid	statements	not-stated	Egypt | Other countries | Zid Egypt	ZD-C-032/decides/ZD-S-0743=Zid Payments	ZD-C-031/responsible:searched, not found;ZD-C-031/decides:observation needed;ZD-C-031/boundary:searched, not found;ZD-C-032/responsible:stated only in general terms;ZD-C-032/boundary:searched, not found;ZD-C-032/reason:searched, not found	
 CM-ACC-009	zid	none-held					
 CM-ACC-010	zid	none-held					
 CM-ACC-011	zid	none-held					
@@ -30,13 +30,13 @@ CM-TRU-001	zid	statements	core	dashboard-page-index | dashboard-route-manifest |
 CM-TRU-002	zid	statements	core	dashboard-route-manifest | خطوة التحقق من نفاذ		ZD-C-001/reason:observation needed;ZD-C-038/reason:searched, not found	general
 CM-TRU-003	zid	statements	core	dashboard-route-manifest	ZD-E-b51f8805=new_growth		general
 CM-TRU-004	zid	none-held					
-CM-TRU-005	zid	statements	core			ZD-C-039/reason:searched, not found	general
-CM-TRU-006	zid	statements	core				general
-CM-TRU-007	zid	statements	core				general
+CM-TRU-005	zid	statements	not-stated			ZD-C-039/reason:searched, not found	
+CM-TRU-006	zid	none-held					
+CM-TRU-007	zid	none-held					
 CM-TRU-008	zid	none-held					
 CM-TRU-009	zid	statements	core	الأنشطة المحظورة	ZD-C-037/decides/ZD-S-0766=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0767=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0768=Zid Pay, Kuwait | ZD-C-037/decides/ZD-S-0769=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0770=Zid Pay, Saudi Arabia | ZD-C-037/decides/ZD-S-0771=Zid Pay, Saudi Arabia (English text) | ZD-C-037/responsible/ZD-S-0772=Zid Pay, Saudi Arabia | ZD-C-037/responsible/ZD-S-0773=Zid Pay, Saudi Arabia | ZD-C-037/where/ZD-S-0765=Zid Pay, Saudi Arabia	ZD-C-001/reason:observation needed;ZD-C-037/responsible:observation needed;ZD-C-037/boundary:searched, not found;ZD-C-037/reason:searched, not found	Zid Pay, Saudi Arabia
 CM-TRU-010	zid	statements	core	ضوابط المتجر الإلكتروني			general
-CM-TRU-011	zid	statements	core				general
+CM-TRU-011	zid	none-held					
 CM-TRU-012	zid	statements	core	تذكرة		ZD-C-114/responsible:stated only in general terms;ZD-C-114/boundary:searched, not found;ZD-C-114/reason:searched, not found	general
 CM-TRU-013	zid	statements	core	Data Protection Officer			general
 CM-TRU-014	zid	statements	core			ZD-C-041/where:searched, not found;ZD-C-041/where:observation needed;ZD-C-041/boundary:searched, not found;ZD-C-041/reason:searched, not found	general

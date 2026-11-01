@@ -24,7 +24,7 @@
 
 ## Risks now (the live register; updated at every milestone and before anything reaches the founder)
 
-*The founder, 31 October, about 21:58 and 22:07 (by the commits around them):*
+*The founder, 31 October, about 22:00 and 22:40:*
 - *"if we didn't address risks, and manage them early and orient me well with what is going, this work is bound to turn into a horse shit";*
 - *"fuck budget, fuck cost, I am talking about fucking risks that will drive the whole work into failure..".*
 
