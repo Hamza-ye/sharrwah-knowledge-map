@@ -11,5 +11,4 @@
 
 **Waiting on the founder:** nothing until the review's page.
 
-
 **The branch:** `claude/vibrant-meitner-oh70v4`. PR #8 is open, and it merges only on the founder's word.

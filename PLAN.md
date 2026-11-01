@@ -26,6 +26,6 @@
 - **Sharrwah inherits only the variation Shopify needed.** Where a market needs a place Shopify's shape lacks, Sharrwah adds one, case by case, named in the decision that meets it.
 - **Shopify's shape is read wrong.** Every claim is cited at its source, and conditions are read there. The accuracy probe found the old model's conditions wrong in 12 of 100 cells (history, `9f3749d0`).
 - **The work grows again.** Nothing stays because it cost something. A step that ends in no decision doesn't run, and each decision reports its cost (`method/count_tokens.py`).
-- **Old frictions come back through earlier decisions.** Step 1 reviews them first.
+- **Old frictions come back through earlier decisions.** Step 2 reviews them before any first decision is recorded.
 
 **Who decides:** as the founder's decisions say. The founder decides business questions. Engineering decides the rest, and the founder may veto any of it.
