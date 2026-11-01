@@ -167,6 +167,7 @@ tr:last-child td{border-bottom:0}
     <h1>Sharrwah Knowledge Map</h1>
     <p class="lede">The commerce-platform class as five reference platforms establish it: each capability, where each platform puts it, and how many establish it. The page is generated from the class's model's files at one commit, and every cell links to its row there, so the page can't drift from the model.</p>
     <div class="draft" id="draft" hidden></div>
+    <div class="draft" id="loading" hidden>Loading the evidence and its sources, about 25 MB…</div>
     <div class="totals" id="totals"></div>
     <div class="legend" id="legend"></div>
   </header>
@@ -218,7 +219,15 @@ tr:last-child td{border-bottom:0}
 
 <script type="application/json" id="data">__DATA__</script>
 <script>
+(async () => {
 const D = JSON.parse(document.getElementById("data").textContent);
+// A page too large to publish as one file carries its evidence and sources in files beside it (km_page.py --split).
+if (D.split) {
+  const note = document.getElementById("loading"); note.hidden = false;
+  const get = f => fetch(f).then(r => { if (!r.ok) throw new Error(`${f}: ${r.status}`); return r.json(); });
+  for (const k of Object.keys(D.split)) { D[k] = {}; for (const part of await Promise.all(D.split[k].map(get))) Object.assign(D[k], part); }
+  note.hidden = true;
+}
 const PL = D.platforms;                      // [id, name, abbr]
 const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const fold = s => String(s ?? "").toLowerCase().normalize("NFKD").replace(/[̀-ًͯ-ٟـ]/g, "").replace(/ة/g, "ه").replace(/ى/g, "ي");
@@ -475,4 +484,5 @@ function route() {
 }
 window.addEventListener("hashchange", route);
 renderMap(); render(); renderQualities(); renderQ3(); renderAreas(); renderGuide(); route();
+})().catch(e => { const n = document.getElementById("loading"); n.hidden = false; n.textContent = "The page couldn't load its evidence files: " + (e && e.message || e); });
 </script>

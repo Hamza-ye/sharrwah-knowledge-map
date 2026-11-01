@@ -28,7 +28,7 @@ REPO = "https://github.com/Hamza-ye/sharrwah-knowledge-map"
 NAMES = {"shopify": ("Shopify", "SH"), "salla": ("Salla", "SA"), "woocommerce": ("WooCommerce", "WC"),
          "zid": ("Zid", "ZD"), "bigcommerce": ("BigCommerce", "BC")}
 MERGED = os.path.join(MODEL, "merged")
-Q3 = os.path.join(MODEL, "q3-check.tsv")
+Q3 = os.path.join(MODEL, "q3")   # Q3's check, as its parts wrote it: check-Q-01.tsv to check-Q-14.tsv, one header
 QDIR = os.path.join(MODEL, "qualities")
 TEMPLATE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "km_page_template.html")
 
@@ -72,12 +72,14 @@ def main():
     ap.add_argument("--commit", default="HEAD")
     ap.add_argument("--out", default=os.path.join(MODEL, "knowledge-map.html"))
     ap.add_argument("--draft", action="store_true")
+    ap.add_argument("--split", action="store_true",
+                    help="put the evidence and its sources in files beside the page, for a host that limits each file to 16 MB")
     a = ap.parse_args()
     r = git("rev-parse", a.commit)
     if r.returncode:
         sys.exit(f"no commit {a.commit}")
     commit = r.stdout.strip()
-    watched = [os.path.relpath(MERGED, ROOT)] + ([os.path.relpath(Q3, ROOT)] if os.path.exists(Q3) else [])
+    watched = [os.path.relpath(MERGED, ROOT)] + ([os.path.relpath(Q3, ROOT)] if os.path.isdir(Q3) else [])
     watched += [os.path.relpath(os.path.join(QDIR, f), ROOT) for f in ("coverage.tsv", "outcomes.tsv") if os.path.exists(os.path.join(QDIR, f))]
     if git("diff", "--quiet", commit, "--", *watched).returncode:
         sys.exit(f"the merged files, Q3's check or the qualities' coverage differ from {commit[:9]}: commit them, then pin that commit")
@@ -168,9 +170,13 @@ def main():
     for c in cells:
         run.setdefault(cap_dom.get(c[0], "?"), set()).add(c[1])
     q3 = None
-    if os.path.exists(Q3):
-        q3r = numbered(Q3)
-        q3 = {"head": list(q3r[0][0].keys()) if q3r else [], "rows": [[*r.values(), ln] for r, ln in q3r]}
+    q3parts = sorted(f for f in os.listdir(Q3) if re.fullmatch(r"check-Q-\d+\.tsv", f)) if os.path.isdir(Q3) else []
+    if q3parts:
+        q3r = [rl for f in q3parts for rl in numbered(os.path.join(Q3, f))]
+        heads = {tuple(r.keys()) for r, _ in q3r}
+        if len(heads) != 1:
+            sys.exit("Q3's parts don't share one header")
+        q3 = {"head": list(q3r[0][0].keys()), "rows": [[*r.values(), ln] for r, ln in q3r]}
     src_types = [[r["code"], r["source_type"], r["authoritative_for"], r["cannot_tell_you"], r["grading"]]
                  for r in rows(os.path.join(MODEL, "seed", "km-source-types.tsv"))]
     D = {
@@ -181,12 +187,31 @@ def main():
         "qual": qual, "fill": fill, "q3": q3, "sources": src_types,
         "terms": terms, "qplat": qplat, "qkinds": qkinds, "qcover": qcover, "qlabelled": labelled,
     }
+    parts = {}
+    if a.split:
+        base = os.path.splitext(os.path.basename(a.out))[0]
+        D["split"] = {}
+        for k in ("ev", "cites"):
+            chunk, size, n = {}, 0, 0
+            names = []
+            for key_, v in D[k].items():
+                b = len(json.dumps({key_: v}, ensure_ascii=False, separators=(",", ":")).encode("utf-8"))
+                if chunk and size + b > 6_000_000:
+                    n += 1; names.append(f"{base}-{k}-{n}.json"); parts[names[-1]] = chunk; chunk, size = {}, 0
+                chunk[key_] = v; size += b
+            if chunk:
+                n += 1; names.append(f"{base}-{k}-{n}.json"); parts[names[-1]] = chunk
+            D["split"][k] = names
+            D[k] = {}
     data = json.dumps(D, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = open(TEMPLATE, encoding="utf-8").read()
     assert page.count("__DATA__") == 1
     page = page.replace("__DATA__", data)
     os.makedirs(os.path.dirname(os.path.abspath(a.out)), exist_ok=True)
     open(a.out, "w", encoding="utf-8").write(page)
+    for name, chunk in parts.items():
+        open(os.path.join(os.path.dirname(os.path.abspath(a.out)), name), "w", encoding="utf-8").write(
+            json.dumps(chunk, ensure_ascii=False, separators=(",", ":")))
     print(f"{os.path.relpath(a.out, ROOT)}: {len(caps)} capabilities, {len(cells)} cells, {sum(len(v) for v in ev.values())} evidence rows, "
           f"{len(cites)} sources, {sum(len(v) for v in qual.values()) + len(qplat)} quality rows ({len(qplat)} platform-wide) and "
           f"{sum(len(v) for v in terms.values())} of the plans' terms, {len(qcover)} coverage rows, "
