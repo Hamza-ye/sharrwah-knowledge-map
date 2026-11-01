@@ -1,5 +1,7 @@
 # Decision 1: who holds sellers' money
 
+> **To review (1 November 2026).** Built on the same frictions as the work's Yemen concerns, so Yemen's concerns could enter the platform through it at the wrong time. It is reviewed by product line engineering, as `founder-decisions.tsv` marks it: whether it belongs to the platform, to a market's setup or to the method, and when it binds. It stays if it still holds.
+
 **What this file is:** a decision page for the founder, in the plan's form (`PLAN.md`, section 5). It rests on the pilot's register entry ([`entry.md`](entry.md)), unchanged since G1, and on the facts found since, each linked to its source. Links into the pilot and into Stage 1 open them as they stood at G1.
 
 ## The question

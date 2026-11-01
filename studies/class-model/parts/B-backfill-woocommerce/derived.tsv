@@ -1,9 +1,0 @@
-cap_id	platform	held	placed_as	where	scopes	gaps	own_scopes
-CM-CAT-012	salla	statements	core	report-widgets | report-widgets-legacy			general
-CM-CAT-012	shopify	statements	core;extension-point	merchant-changelog	SH-E-4a3399da=Shopify Plan or higher	SH-C-010/reason:searched, not found	general
-CM-CAT-013	salla	statements	core;extension-point	Automatic pricing | app-categories | app-store-tabs | dashboard-nav-segments | settings-center	SA-C-020/decides/SA-S-3515=plans: plus, pro, special | SA-E-6c2170cb=metal-pricing | SA-E-6f2bccd8=metal-pricing | SA-E-761d611c=plus;pro;special | SA-E-7e66f749=Plus;Pro;Special | SA-E-b01b56f6=metal-pricing | SA-E-cc5bd05c=metal-pricing | SA-E-e8caae54=metal-pricing | SA-E-eebc6b39=metal-pricing	SA-C-020/responsible:page not read;SA-C-020/reason:page not read	general
-CM-CAT-013	shopify	statements	core;extension-point	dev-nav | editions | editions-page-data		SH-C-020/reason:searched, not found	general
-CM-INV-008	salla	none-held					
-CM-INV-008	shopify	statements	core	app-store-built-in-features			general
-CM-SEL-008	salla	none-held					
-CM-SEL-008	shopify	none-held					

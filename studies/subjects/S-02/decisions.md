@@ -1,5 +1,7 @@
 # S-02, what a market is: engineering's rulings, for the founder's veto
 
+> **To review (1 November 2026).** Built on the same frictions as the work's Yemen concerns, so Yemen's concerns could enter the platform through it at the wrong time. It is reviewed by product line engineering, as `founder-decisions.tsv` marks it: whether it belongs to the platform, to a market's setup or to the method, and when it binds. It stays if it still holds.
+
 *The founder vetoed none of D1 to D9 or E1 to E5 on 30 October (`founder-decisions.tsv`), and moved RD2's plan items to their plans (below).*
 
 **What this page is:** the draft of S-02's register (`register.tsv`), for you. Phase C left 143 items: 85 are settled here as seven rulings (D1 to D7), and 58 go to the subjects that decide them. D8 and D9 are needs the Yemen row found that no platform meets. Each ruling gives what the platforms do, engineering's ruling and why, what it rules out, and what changing course later costs.

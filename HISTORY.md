@@ -64,3 +64,7 @@ On 25 October 2026 the founder reset the work to the plan as it stood at G1, wit
 - **One pull request per milestone.** Each one closes with its milestone report, is merged into `main` with a merge commit, and gets a row here.
 - **Superseded work stays in history.** At the reset of 25 October, the work done between G1 and the reset left the working files, so that no search of them finds it. It is read at its commit. Nothing was rewritten.
 - **Named by commit, not by tag.** This session's git access can push its working branch but not tags, so the baselines are named here by commit. A session or person allowed to push tags can turn each row into one.
+
+## 1 November 2026: the working files cut to the minimum
+
+On the founder's decision of 1 November (Sharrwah built on Shopify's model), everything no decision needs now left the working files (`INVENTORY.md`). Commit `9f3749d0` is the last that holds all of it: the concern map, the class model and its passes, the subjects, Stage 1's Yemen study, this repository's evidence, the architecture plan, the fitness test, the reports, the handoffs and the old tools. It opens at https://github.com/Hamza-ye/sharrwah-knowledge-map/tree/9f3749d0.
