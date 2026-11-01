@@ -9,8 +9,6 @@ It runs in two phases:
 **What you read, and only this.** Nothing else in this repository is an input. That includes its plan, its state, its model of the class, its architecture plan and its earlier tests, so that the work's own assumptions can't steer this test.
 1. **The founder's decisions:** `founder-decisions.tsv`. Read the rows that say what Sharrwah is and does: its intent, its markets, its scope, who holds sellers' money (Decision 1, with E1, E2 and the defaults), and the guard on money. These say what Sharrwah needs. They are never evidence of what a platform does.
 2. **The Yemen cases:** `studies/yemen-cases/`, with its `corrections.md`, for one market's realities read from its own sources.
-   - Read them narrow, never wide (the founder's decision of 1 November, in `founder-decisions.tsv`). A Yemen fact may only show where the design must keep room for something. It never sets a shape, and never closes one off.
-   - In phase 2, read only the facts a question needs. Check each against its quote, and against its captured source under `evidence/yemen/` where the quote doesn't settle it.
 3. **The evidence,** only to answer a question, and only in phase 2. It is held in:
    - the evidence repositories `/home/user/observed-sh` (Shopify), `/home/user/observed-sa` (Salla) and `/home/user/other-product-class` (Zid, WooCommerce, BigCommerce);
    - this repository's own captures, in `evidence/`.
