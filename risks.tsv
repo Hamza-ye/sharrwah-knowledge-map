@@ -1,10 +1,15 @@
 id	risk	likelihood	impact	shows_as	response	owner	status
-R-1	Old decisions, or one market's frictions, shape the platform through rows that merely survived	3	3	A deliverable before stage 6 carries a market-specific requirement or cites an earlier decision without a proven case	Reduce: stage 0's test; every review flags market-specific content before stage 6	coordinator	open
-R-2	Shopify's shape is read wrong: a claim beyond its evidence, or a condition misread	2	3	A review finds a claim its citation doesn't bear out	Reduce: every quote checked by script; independent review of every deliverable; conditions read at their source	coordinator	open
-R-3	The work turns back into process instead of product	2	3	A file appears that no work item delivers, or a stage passes its gate with no deliverable	Reduce: every item names what it serves; one file per subject; status by script	coordinator	open
-R-4	Release 1's scope is too large to reach production	2	3	Stage 4's increments run past the plan made at its gate	Reduce: scope decided at stage 1 with the founder; the walking skeleton first; cut by priority	founder	open
-R-5	Sharrwah inherits only the variation Shopify needed, and a market needs a place Shopify lacks	2	2	A market's setup finds a need no variation point holds	Reduce: the variability model at stage 2; an extension only with a proven case, at the setup	coordinator	open
-R-6	Agents' output is unreliable without review	2	3	An independent review or an audit of reads finds an error or a read outside the brief	Reduce: checkable briefs, audited reads, independent review, a small trial first	coordinator	open
-R-7	Evidence a decision needs isn't held	2	2	A work item can't meet its acceptance check from observed-sh	Reduce: a capture request to the founder's local agent, naming what it serves	coordinator	open
-R-8	The first market's law or licensing blocks the launch	2	3	Stage 6's research finds a requirement the company can't meet in time	Transfer: to the founder, whose company, licences and partners these are; raised at stage 5 and 6	founder	open
-R-9	The coordinator loses context between sessions and makes errors	2	2	A count, a time or a decision is stated wrongly	Reduce: everything in files; status generated; stable ids; counts from files only	coordinator	open
+RISK-01	Copying Shopify's breadth swamps v1	5	4	v1's scope grows at G1 or after	A catalogue with default dispositions; v1 by MoSCoW at G1	founder	open
+RISK-04	No local payment provider with a usable API at launch	3	4	The short list or S5's study finds none	The short list in S1, the full study in S5; manual methods first; the interface is built regardless	founder	open
+RISK-05	Capabilities coupled to Shopify Payments, multi-currency above all	5	3	A v1 capability needs Shopify Payments	Dispositions at G1	founder	open
+RISK-06	No accountable humans for production security and operations	4	5	G2 arrives with Q6 undecided	Q6 decided by G2; a condition of G6	founder	open
+RISK-07	Defects or vulnerabilities written by agents go unnoticed	4	4	Defects found after acceptance	Layered checks; independent review; an external test	coordinator	open
+RISK-08	One merchant's data exposed to another	2	5	A cross-shop test passes, or an incident	A shop-scoped access layer; negative tests; a penetration test	coordinator	open
+RISK-09	Yemen-specific logic leaks into the core	4	3	A fitness function fails, or the desk check finds a core change	Fitness functions; the desk check at G2; S8	coordinator	open
+RISK-10	Slow founder decisions stall the work	3	4	A decision passes its deadline	Decision cards with recommendations, defaults and deadlines; Q8 sets the cadence	founder	open
+RISK-11	The reference drifts as Shopify changes	5	2	A cited behaviour differs at a later capture	A pinned baseline per stage; later changes adopted by decision	coordinator	open
+RISK-12	Limits on connectivity, power and devices degrade use (an assumption until the short list and S5)	4	3	Quality scenarios fail on constrained profiles	Performance budgets; tests on constrained profiles	coordinator	open
+RISK-13	Merchant abuse, such as illegal goods or fraud	3	4	Abuse reports	Onboarding checks and a takedown process; the policy's text from the founder	founder	open
+RISK-14	Cloud, service or AI costs overrun	3	3	Spending passes a stage's budget	A budget per stage; token counts; a monthly review	coordinator	open
+RISK-15	Secrets found in the evidence spread into new artifacts	2	3	Secret scanning finds one	Never copy them; secret scanning with push protection	coordinator	open
+RISK-16	Agents spend their budgets rediscovering what observed-sh holds	4	3	Discovery logs show repeated searches for what is held	observed-sh's guides and indexes; every evidence brief keeps a discovery log for its local agent	coordinator	open
