@@ -27,7 +27,7 @@
 
 **Legal matters are the founder's.** Don't raise legal concerns in the work, put them into the evidence capture, or turn them into decisions. The founder consults a lawyer. Where the platform needs legal content, the founder supplies it.
 
-**Evidence capture continues throughout the work.** Capture whenever a gap needs closing, above all a gap that could change a decision. A capture request is an issue on `Hamza-ye/observed-sh`, for its local agent. It states:
+**Evidence capture serves the decisions.** Capture when a gap could change a decision that is coming up, or when an observation would be lost if it isn't taken now. A capture tool found faulty is fixed before the next capture. A capture request is an issue on `Hamza-ye/observed-sh`, for its local agent. It states:
 - what to capture;
 - why: the decision it could change;
 - how;
