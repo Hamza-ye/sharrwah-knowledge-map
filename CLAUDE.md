@@ -44,4 +44,4 @@
   - a fact, traced to its source at a commit;
   - a reading, marked as one;
   - an assumption, marked as one.
-- Evidence that contains credentials, cookies or tokens is read and cited like any other evidence. They come from synthetic environments the founder rotates. Never copy them into new artifacts.
+- Evidence that contains credentials, cookies or tokens is read, cited and used like any other evidence, including to check how a mechanism works. It comes from environments and accounts made only for capture. Don't redact it or avoid capturing it. Cite it by locator; Sharrwah's own documents don't need the values.

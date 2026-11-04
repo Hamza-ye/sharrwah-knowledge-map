@@ -12,6 +12,8 @@
 7. **Merchant interviews are the founder's choice.** The plan needs the founder's answer on who the first merchants are and what they need (Q2), not interviews.
 8. **What Sharrwah calls a market is the founder's decision (Q17).** How a country's setup is structured is decided in S2, from the reference's evidence.
 
+**The amendment of 4 November 2026:** the secrets in the evidence stay. They come from environments and accounts made only for capture, and they are part of the mechanisms observed. §5 item 6 is withdrawn, and RISK-15 now concerns Sharrwah's own production secrets.
+
 **Evidence baseline.** Shopify's evidence repository `observed-sh` at commit `04de369da9ac84ae530ae80a55749167ff4139d4` (31 October 2026), and from the amendments of 3 November at `cc5d3f26404f403cd71b5222078a8827dfa35831`. Each Shopify fact cites **[E-n]**, which §7.1 resolves to `path:line` at its commit. Published practice and other sources cite **[P-n]** (§7.2). "Brief" marks a fact given in the request for this plan.
 
 **How claims are labelled.** A statement with a citation is a fact. **Reading:** marks my interpretation; recommendations are readings. **Assumption:** marks something unverified and says how to verify it. "My count" marks a number I computed from the cited file.
@@ -410,7 +412,7 @@ Ask Q17, Q1–Q3 and Q6–Q8 at G0, which is now, one at a time. Q4 is removed a
   - Security findings block a release according to severity: critical and high block.
 - **Manage** each risk with an owner, a response (avoid, reduce, transfer or accept), a trigger and a status, all in `risks.tsv`. The top five appear in `STATE.md`.
 
-Initial register. The risks are my assessment, and every score is a **Reading**. RISK-02 and RISK-03 were removed by amendment 2, and RISK-16 is the coordinator's:
+Initial register. The risks are my assessment, and every score is a **Reading**. RISK-02 and RISK-03 were removed by amendment 2, RISK-15 was reworded on 4 November, and RISK-16 is the coordinator's:
 
 | ID | Risk | L | I | Route | First treatment |
 |---|---|---|---|---|---|
@@ -426,7 +428,7 @@ Initial register. The risks are my assessment, and every score is a **Reading**.
 | RISK-12 | Limits on connectivity, power and devices degrade use (**Assumption**) | 4 | 3 | Coordinator | Performance budgets; tests on constrained profiles |
 | RISK-13 | Merchant abuse, such as illegal goods or fraud | 3 | 4 | Founder | Onboarding checks and a takedown process; the policy's text from the founder |
 | RISK-14 | Cloud, service or AI costs overrun | 3 | 3 | Coordinator; founder at threshold | A budget per stage; token counts; a monthly review |
-| RISK-15 | Secrets found in the evidence [E7] spread into new artifacts | 2 | 3 | Coordinator | Never copy them; secret scanning with push protection |
+| RISK-15 | Sharrwah's own production secrets reach a repository | 2 | 5 | Coordinator | A secrets manager, and secret scanning with push protection, from S3 |
 | RISK-16 | Agents spend their budgets rediscovering what observed-sh holds | 4 | 3 | Coordinator | observed-sh's guides and indexes (§3); every evidence brief keeps a discovery log for its local agent |
 
 ### 2.4 The founder's decisions, and when
@@ -586,7 +588,7 @@ tools/                     evidence search, quote check, status and traceability
 
 **Evidence handling.**
 - The evidence is read-only, and Python that reads it runs with `python3 -I`.
-- Secrets found in the evidence [E7] are never copied into any artifact. The new repository has push protection and secret scanning.
+- Secrets in the evidence [E7] come from environments made only for capture. They are evidence, cited by locator like any other. Sharrwah's own repository keeps its production secrets out of git, with push protection and secret scanning, from S3.
 - A capture request is an issue on `observed-sh` (amendment 3). It states:
   - what to capture: the surface, store, plan, role and locale;
   - why: the decision, C, REQ or Q it could change;
@@ -623,7 +625,7 @@ What stays:
 3. *Removed by amendment 2.*
 4. **Reading "No other platform's reading shapes the model" too broadly.** It should exclude other commerce platforms' evidence, as the brief does. It should not exclude standards, published engineering practice, or the first market's own laws, providers and conditions, all of which the plan needs. I recommend the founder confirm this boundary when answering Q1.
 5. **Using one word, "market", for two things.** Keep "Markets" for a merchant's groups of buyers, as Shopify uses it [E26a], and give the country-level configuration its own name: the founder's decision, Q17.
-6. **Tolerating secrets in the evidence.** Even if they are synthetic and rotated, keep them out of every new artifact and scan for them. Habits formed on test data carry over into production.
+6. *Withdrawn on 4 November.* The secrets in the evidence come from environments made only for capture, and they are part of the mechanisms observed: how Shopify signs app launches and webhooks, and how sessions change hands. Keeping them keeps those mechanisms visible and checkable. Sharrwah's own production secrets are a separate matter (RISK-15).
 
 ---
 

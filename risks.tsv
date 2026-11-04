@@ -11,5 +11,5 @@ RISK-11	The reference drifts as Shopify changes	5	2	A cited behaviour differs at
 RISK-12	Limits on connectivity, power and devices degrade use (an assumption until the short list and S5)	4	3	Quality scenarios fail on constrained profiles	Performance budgets; tests on constrained profiles	coordinator	open
 RISK-13	Merchant abuse, such as illegal goods or fraud	3	4	Abuse reports	Onboarding checks and a takedown process; the policy's text from the founder	founder	open
 RISK-14	Cloud, service or AI costs overrun	3	3	Spending passes a stage's budget	A budget per stage; token counts; a monthly review	coordinator	open
-RISK-15	Secrets found in the evidence spread into new artifacts	2	3	Secret scanning finds one	Never copy them; secret scanning with push protection	coordinator	open
+RISK-15	Sharrwah's own production secrets reach a repository	2	5	Secret scanning finds one	A secrets manager, and secret scanning with push protection, from S3	coordinator	open
 RISK-16	Agents spend their budgets rediscovering what observed-sh holds	4	3	Discovery logs show repeated searches for what is held	observed-sh's guides and indexes; every evidence brief keeps a discovery log for its local agent	coordinator	open
