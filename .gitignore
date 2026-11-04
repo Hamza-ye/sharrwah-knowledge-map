@@ -2,3 +2,5 @@ __pycache__/
 .obsidian/
 .review/
 .vscode/
+# variants_edit.py's lock, one per root decision's folder
+.edit.lock
